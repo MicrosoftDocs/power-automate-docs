@@ -21,23 +21,21 @@ search.audienceType:
 
 Manage files and folders on an FTP server
 
-|<!-- --> |
-|-----|
-|[Open FTP connection](#openconnection)|
-|[List FTP directory](#listdirectory)|
-|[Open secure FTP connection](#opensecureconnection)|
-|[Close connection](#closeconnection)|
-|[Change working directory](#changeworkingdirectory)|
-|[Download file(s) from FTP](#downloadfiles)|
-|[Download folder(s) from FTP](#downloadfolders)|
-|[Upload File(s) to FTP](#uploadfiles)|
-|[Upload folder(s) to FTP](#uploadfolders)|
-|[Delete FTP file](#deletefiles)|
-|[Rename FTP File](#renamefile)|
-|[Create FTP directory](#createdirectory)|
-|[Delete FTP directory](#deletedirectory)|
-|[Invoke FTP command](#invokecommand)|
-|[Synchronize directories](#synchronizedirectoryaction)|
+[Open FTP connection](#openconnection)  
+[List FTP directory](#listdirectory)  
+[Open secure FTP connection](#opensecureconnection)  
+[Close connection](#closeconnection)  
+[Change working directory](#changeworkingdirectory)  
+[Download file(s) from FTP](#downloadfiles)  
+[Download folder(s) from FTP](#downloadfolders)  
+[Upload File(s) to FTP](#uploadfiles)  
+[Upload folder(s) to FTP](#uploadfolders)  
+[Delete FTP file](#deletefiles)  
+[Rename FTP File](#renamefile)  
+[Create FTP directory](#createdirectory)  
+[Delete FTP directory](#deletedirectory)  
+[Invoke FTP command](#invokecommand)  
+[Synchronize directories](#synchronizedirectoryaction)  
 
 ## Getting started with FTP actions
 

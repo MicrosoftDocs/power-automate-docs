@@ -443,6 +443,8 @@
       href: ./desktop-flows/use-conditionals.md
     - name: Automate web flows
       href: ./desktop-flows/automation-web.md
+    - name: Create custom forms
+      href: ./desktop-flows/custom-forms.md     
     - name: Use browsers and manage extensions
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
@@ -533,8 +535,8 @@
       items: 
       - name: Convert a text variable to datetime
         href: ./desktop-flows/how-to/convert-text-datetime.md        
-      - name: Convert a file to Base64 string format
-        href: ./desktop-flows/how-to/convert-file-base64-format.md
+      - name: Convert data using PowerShell
+        href: ./desktop-flows/how-to/convert-data-powershell.md
       - name: Convert Base64 text to hexadecimal format
         href: ./desktop-flows/how-to/convert-base64-hexadecimal-format.md
     - name: Run and troubleshoot SQL queries    
@@ -545,6 +547,8 @@
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
     - name: Use logical operations on conditional statements  
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md  
+    - name: Handle custom forms
+      href: ./desktop-flows/how-to/handle-custom-forms.md  
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Run SQL queries to Microsoft Access

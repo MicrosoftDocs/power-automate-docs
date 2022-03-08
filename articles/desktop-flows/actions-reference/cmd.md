@@ -21,13 +21,11 @@ search.audienceType:
 
 Automate a CMD session
 
-|<!-- --> |
-|-----|
-|[Open CMD session](#open)|
-|[Read from CMD session](#readfromcmdsession)|
-|[Write to CMD session](#write)|
-|[Wait for text on CMD session](#waitfortext)|
-|[Close CMD session](#close)|
+[Open CMD session](#open)  
+[Read from CMD session](#readfromcmdsession)  
+[Write to CMD session](#write)  
+[Wait for text on CMD session](#waitfortext)  
+[Close CMD session](#close)  
 
 ## Getting started with CMD actions
 

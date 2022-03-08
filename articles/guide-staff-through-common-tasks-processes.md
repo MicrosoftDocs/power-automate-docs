@@ -79,9 +79,9 @@ Only people with the System Administrator, System Customizer, or CEO-Business Ma
   
 The following table shows the access level of processes based on default security roles.  
   
-|||  
-|-|-|  
-|**Security role**|**Access level**|  
+
+|Security role|Access level| 
+|---|---|   
 |CEO-Business Manager|Organization|  
 |System Administrator|Organization|  
 |System Customizer|Organization|  

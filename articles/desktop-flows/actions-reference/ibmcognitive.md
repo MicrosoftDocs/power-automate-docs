@@ -19,13 +19,11 @@ search.audienceType:
 
 IBM's cognitive actions
 
-|<!-- --> |
-|-----|
-|[Convert document](#convertdocumentibm)|
-|[Translate](#translateibm)|
-|[Identify language](#identifylanguage)|
-|[Analyze tone](#analyzetoneibm)|
-|[Classify Image](#classifyimageibm)|
+[Convert document](#convertdocumentibm)  
+[Translate](#translateibm)  
+[Identify language](#identifylanguage)  
+[Analyze tone](#analyzetoneibm)  
+[Classify Image](#classifyimageibm)  
 
 ## Getting started with IBM cognitive actions
 

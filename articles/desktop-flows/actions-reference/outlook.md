@@ -21,15 +21,13 @@ search.audienceType:
 
 Automate sending, receiving, and managing emails of an Outlook account
 
-|<!-- --> |
-|-----|
-|[Launch Outlook](#launch)|
-|[Retrieve email messages from Outlook](#retrieveemailmessages)|
-|[Send email through Outlook](#sendemailthroughoutlook)|
-|[Process email messages in Outlook](#processemailmessages)|
-|[Save Outlook email messages](#saveoutlookemailmessages)|
-|[Respond to Outlook mail message](#respondtomailmessage)|
-|[Close Outlook](#close)|
+[Launch Outlook](#launch)  
+[Retrieve email messages from Outlook](#retrieveemailmessages)  
+[Send email through Outlook](#sendemailthroughoutlook)  
+[Process email messages in Outlook](#processemailmessages)  
+[Save Outlook email messages](#saveoutlookemailmessages)  
+[Respond to Outlook mail message](#respondtomailmessage)  
+[Close Outlook](#close)  
 
 ## Getting started with Outlook actions
 

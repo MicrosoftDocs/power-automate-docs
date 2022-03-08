@@ -19,28 +19,26 @@ search.audienceType:
 
 Connect to Azure Cloud and automate the management of resources like virtual machines, disks, snapshots and resource groups
 
-|<!-- --> |
-|-----|
-|[Get resource groups](#getresourcegroups)|
-|[Create resource group](#createresourcegroup)|
-|[Delete resource group](#deleteresourcegroup)|
-|[Get disks](#getdisksaction)|
-|[Attach disk](#attachdisk)|
-|[Detach disk](#detachdisk)|
-|[Create managed disk](#createmanageddiskaction)|
-|[Delete disk](#deletedisk)|
-|[Get snapshots](#getsnapshotsaction)|
-|[Create snapshot](#createsnapshot)|
-|[Delete snapshot](#deletesnapshot)|
-|[Get virtual machines](#getvirtualmachines)|
-|[Describe virtual machine](#describevirtualmachineaction)|
-|[Start virtual machine](#startvirtualmachine)|
-|[Stop virtual machine](#stopvirtualmachine)|
-|[Shut down virtual machine](#shutdownvirtualmachine)|
-|[Restart virtual machine](#restartvirtualmachine)|
-|[Create session](#createsessionaction)|
-|[Get subscriptions](#getsubscriptions)|
-|[End session](#endsession)|
+[Get resource groups](#getresourcegroups)  
+[Create resource group](#createresourcegroup)  
+[Delete resource group](#deleteresourcegroup)  
+[Get disks](#getdisksaction)  
+[Attach disk](#attachdisk)  
+[Detach disk](#detachdisk)  
+[Create managed disk](#createmanageddiskaction)  
+[Delete disk](#deletedisk)  
+[Get snapshots](#getsnapshotsaction)  
+[Create snapshot](#createsnapshot)  
+[Delete snapshot](#deletesnapshot)  
+[Get virtual machines](#getvirtualmachines)  
+[Describe virtual machine](#describevirtualmachineaction)  
+[Start virtual machine](#startvirtualmachine)  
+[Stop virtual machine](#stopvirtualmachine)  
+[Shut down virtual machine](#shutdownvirtualmachine)  
+[Restart virtual machine](#restartvirtualmachine)  
+[Create session](#createsessionaction)  
+[Get subscriptions](#getsubscriptions)  
+[End session](#endsession)  
 
 ## Getting started with Azure actions
 

@@ -21,23 +21,21 @@ search.audienceType:
 
 Connect to Amazon web services and automate a variety of tasks
 
-|<!-- --> |
-|-----|
-|[Start EC2 instance](#startec2instance)|
-|[Stop EC2 instance](#stopec2instance)|
-|[Reboot EC2 instance](#rebootec2instance)|
-|[Get available EC2 instances](#getavailableec2instances)|
-|[Describe instances](#describeec2instance)|
-|[Create snapshot](#createsnapshot)|
-|[Describe snapshots](#describesnapshots)|
-|[Delete snapshot](#deletesnapshot)|
-|[Create volume](#createvolumeaction)|
-|[Attach volume](#attachvolume)|
-|[Detach volume](#detachvolume)|
-|[Describe volumes](#describevolumes)|
-|[Delete volume](#deletevolume)|
-|[Create EC2 session](#createec2sessionaction)|
-|[End EC2 session](#endec2session)|
+[Start EC2 instance](#startec2instance)  
+[Stop EC2 instance](#stopec2instance)  
+[Reboot EC2 instance](#rebootec2instance)  
+[Get available EC2 instances](#getavailableec2instances)  
+[Describe instances](#describeec2instance)  
+[Create snapshot](#createsnapshot)  
+[Describe snapshots](#describesnapshots)  
+[Delete snapshot](#deletesnapshot)  
+[Create volume](#createvolumeaction)  
+[Attach volume](#attachvolume)  
+[Detach volume](#detachvolume)  
+[Describe volumes](#describevolumes)  
+[Delete volume](#deletevolume)  
+[Create EC2 session](#createec2sessionaction)  
+[End EC2 session](#endec2session)  
 
 ## Getting started with AWS actions
 

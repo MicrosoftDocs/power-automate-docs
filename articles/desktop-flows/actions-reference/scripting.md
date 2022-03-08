@@ -19,13 +19,11 @@ search.audienceType:
 
 Incorporate scripting languages code in you automation
 
-|<!-- --> |
-|-----|
-|[Run DOS command](#rundoscommand)|
-|[Run VBScript](#runvbscript)|
-|[Run JavaScript](#runjavascript)|
-|[Run PowerShell script](#runpowershellscript)|
-|[Run Python script](#runpythonscript)|
+[Run DOS command](#rundoscommand)  
+[Run VBScript](#runvbscript)  
+[Run JavaScript](#runjavascript)  
+[Run PowerShell script](#runpowershellscript)  
+[Run Python script](#runpythonscript)  
 
 
 ## Getting started with scripting actions

@@ -21,11 +21,9 @@ search.audienceType:
 
 Automate sending, receiving and managing emails through imap/smtp
 
-|<!-- --> |
-|-----|
-|[Retrieve email messages](#retrieveemails)|
-|[Process email messages](#processemails)|
-|[Send email](#sendemail)|
+[Retrieve email messages](#retrieveemails)  
+[Process email messages](#processemails)  
+[Send email](#sendemail)  
 
 ## Getting started with email actions
 

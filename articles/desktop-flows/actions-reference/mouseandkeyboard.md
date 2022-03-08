@@ -21,20 +21,18 @@ search.audienceType:
 
 Take control of the mouse and keyboard
 
-|<!-- --> |
-|-----|
-|[Block Input](#blockinput)|
-|[Get mouse position](#getmouseposition)|
-|[Move mouse](#movemouse)|
-|[Move mouse to image](#movemousetoimagebase)|
-|[Move mouse to text on screen (OCR)](#movemousetotextonscreenwithocraction)|
-|[Send mouse click](#sendmouseclick)|
-|[Send keys](#sendkeys)|
-|[Press/release key](#pressreleasekey)|
-|[Set key state](#setkeystate)|
-|[Wait for mouse](#waitformouseaction)|
-|[Get keyboard identifier](#getkeyboardlayout)|
-|[Wait for shortcut key](#waitforshortcutkeyaction)|
+[Block Input](#blockinput)  
+[Get mouse position](#getmouseposition)  
+[Move mouse](#movemouse)  
+[Move mouse to image](#movemousetoimagebase)  
+[Move mouse to text on screen (OCR)](#movemousetotextonscreenwithocraction)  
+[Send mouse click](#sendmouseclick)  
+[Send keys](#sendkeys)  
+[Press/release key](#pressreleasekey)  
+[Set key state](#setkeystate)  
+[Wait for mouse](#waitformouseaction)  
+[Get keyboard identifier](#getkeyboardlayout)  
+[Wait for shortcut key](#waitforshortcutkeyaction)  
 
 ## Getting started with mouse and keyboard actions
 

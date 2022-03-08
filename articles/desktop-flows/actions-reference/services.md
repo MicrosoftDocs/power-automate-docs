@@ -21,14 +21,12 @@ search.audienceType:
 
 Control the workstation's installed services
 
-|<!-- --> |
-|-----|
-|[If service](#ifserviceaction)|
-|[Wait for service](#waitforserviceaction)|
-|[Start service](#start)|
-|[Stop service](#stop)|
-|[Pause service](#pause)|
-|[Resume service](#resume)|
+[If service](#ifserviceaction)  
+[Wait for service](#waitforserviceaction)  
+[Start service](#start)  
+[Stop service](#stop)  
+[Pause service](#pause)  
+[Resume service](#resume)  
 
 ## Getting started with services
 

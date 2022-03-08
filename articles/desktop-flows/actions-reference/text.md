@@ -21,24 +21,22 @@ search.audienceType:
 
 Control and manipulate text
 
-|<!-- --> |
-|-----|
-|[Append line to text](#appendline)|
-|[Get subtext](#getsubtextbase)|
-|[Pad text](#pad)|
-|[Trim text](#trim)|
-|[Change text case](#changecase)|
-|[Convert text to number](#tonumber)|
-|[Convert number to text](#fromnumber)|
-|[Convert text to datetime](#converttexttodatetime)|
-|[Convert datetime to text](#convertdatetimetotext)|
-|[Create random text](#random)|
-|[Join text](#jointext)|
-|[Split text](#splittext)|
-|[Parse text](#parsetext)|
-|[Replace text](#replace)|
-|[Escape text for regular expression](#escapeforregularexpression)|
-|[Recognize entities in text](#recognizeentitiesintext)|
+[Append line to text](#appendline)  
+[Get subtext](#getsubtextbase)  
+[Pad text](#pad)  
+[Trim text](#trim)  
+[Change text case](#changecase)  
+[Convert text to number](#tonumber)  
+[Convert number to text](#fromnumber)  
+[Convert text to datetime](#converttexttodatetime)  
+[Convert datetime to text](#convertdatetimetotext)  
+[Create random text](#random)  
+[Join text](#jointext)  
+[Split text](#splittext)  
+[Parse text](#parsetext)  
+[Replace text](#replace)  
+[Escape text for regular expression](#escapeforregularexpression)  
+[Recognize entities in text](#recognizeentitiesintext)  
 
 ## Getting started with text actions
 
