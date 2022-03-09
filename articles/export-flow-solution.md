@@ -9,7 +9,7 @@ manager: kvivek
 
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 09/28/2021
+ms.date: 03/09/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -24,7 +24,7 @@ search.audienceType:
 Follow these steps to move your solution and its dependencies to a new environment:
 
 1. Select **Solutions** from the navigation bar.
-1. Select the unmanaged solution that you want to export, select the **Overview** page (in the left navigation strip), and then click **Export**. 
+1. Select the unmanaged solution that you want to export, select the **Overview** page (in the left navigation), and then select **Export**. 
 1. The **Before you export** right pane appears. Choose from the following options, and then select **Next**:  
     - **Publish all changes**. Notice that, when you export an unmanaged solution, only published components are exported. We recommend that you select **Publish all changes** to make sure all components are included in the exported solution. 
     - **Check for issues**. Run the solution checker against the solution to detect performance and stability issues.
