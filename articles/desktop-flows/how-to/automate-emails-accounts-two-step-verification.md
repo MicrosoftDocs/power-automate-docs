@@ -2,7 +2,7 @@
 title: Automate email accounts with two-step verification | Microsoft Docs
 description: Automate email accounts with two-step verification
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/22/2021
@@ -25,4 +25,4 @@ To create app passwords for Microsoft personal or organizational accounts, follo
 
 After creating an app password, populate it in the **Password** field of the **IMAP server** or **SMTP server** section of the email actions.
 
-![The Password field in the Send email action.](media/automate-emails-accounts-two-step-verification/send-email-action.png)
+![Screenshot of the Password field in the Send email action.](media/automate-emails-accounts-two-step-verification/send-email-action.png)

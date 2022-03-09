@@ -2,7 +2,7 @@
 title: Making phase for Power Automate projects | Microsoft Docs
 description: This article lists the relevant documentation to help you set up a Power Automate cloud or desktop automation.
 author: taiki-yoshida
-ms.service: power-automate
+
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
@@ -32,15 +32,15 @@ More information: [Create a cloud flow in Power Automate](../../overview-cloud.m
 
 ## Basic steps for desktop flows
 
-1.  Create a new desktop flow in [Power Automate Desktop](../../desktop-flows/introduction.md).
+1. Create a new desktop flow in [Power Automate Desktop](../../desktop-flows/introduction.md).
 
-2.  Add actions and set up configuration.
+1. Add actions and set up configuration.
 
-3.  Define inputs and outputs.
+1. Define inputs and outputs.
 
-4.  Test the desktop flow you created.
+1. Test the desktop flow you created.
 
-5.  If needed, set up triggers and links between cloud flows and Power Automate Desktop.
+1. If needed, set up triggers and links between cloud flows and Power Automate Desktop.
 
 > [!div class="nextstepaction"]
 > [Next step: Testing strategy](testing-strategy.md)

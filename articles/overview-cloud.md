@@ -1,21 +1,21 @@
 ---
-title: Overview of the cloud flows| Microsoft Docs
+title: Overview of the cloud flows(contains video) | Microsoft Docs
 description: Provides an overview of cloud flows.
 services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-ms.custom: intro-internal
+
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/09/2020
+ms.date: 10/09/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -26,6 +26,10 @@ search.audienceType:
 # Overview of cloud flows
 
 Create a cloud flow when you want your automation to be triggered either automatically, instantly, or via a schedule.
+
+This video gives an overview of cloud flows.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWL2mo]
 
 | **Flow type**                                                                       | **Use case**                                                                                  | **Automation target**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

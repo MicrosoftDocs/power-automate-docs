@@ -2,9 +2,9 @@
 title: Outlook | Microsoft Docs
 description: Outlook Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,15 +21,13 @@ search.audienceType:
 
 Automate sending, receiving, and managing emails of an Outlook account
 
-|<!-- --> |
-|-----|
-|[Launch Outlook](#launch)|
-|[Retrieve email messages from Outlook](#retrieveemailmessages)|
-|[Send email through Outlook](#sendemailthroughoutlook)|
-|[Process email messages in Outlook](#processemailmessages)|
-|[Save Outlook email messages](#saveoutlookemailmessages)|
-|[Respond to Outlook mail message](#respondtomailmessage)|
-|[Close Outlook](#close)|
+[Launch Outlook](#launch)  
+[Retrieve email messages from Outlook](#retrieveemailmessages)  
+[Send email through Outlook](#sendemailthroughoutlook)  
+[Process email messages in Outlook](#processemailmessages)  
+[Save Outlook email messages](#saveoutlookemailmessages)  
+[Respond to Outlook mail message](#respondtomailmessage)  
+[Close Outlook](#close)  
 
 ## Getting started with Outlook actions
 
@@ -37,7 +35,7 @@ For PCs with an installation of Outlook, users can manage the mailboxes of their
 
 After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder. In the figure below, the action retrieves all the email messages from the folder **Tickets** which is in a subfolder of the Inbox. The filters have been configured to search for email messages from a specific address, further specifying the contents of the subject with a previously defined variable. Any attachments are also saved.
 
-![Retrieve outlook emails action properties screenshot.](\media\outlook\retrieve-messages-example.png)
+![Screenshot of the Retrieve outlook emails action.](\media\outlook\retrieve-messages-example.png)
 
 The **Process email messages in Outlook** action processes email messages retrieved by the **Retrieve email messages from Outlook** action. The Outlook instance, account, and retrieved emails variable are required to use this action. Select whether to Move, delete or mark as read as the operation to perform.
 
@@ -135,7 +133,7 @@ Move or deletes an email (or a list of email messages) retrieved by a 'Retrieve 
 |Outlook instance|No|Outlook instance||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
 |Account|No|Text value||The name of the Outlook account (data file name) to work with|
 |Email messages to process|No|List of Outlook mail messages||The email message(s) to process. Use a variable populated by a 'Retrieve email messages from Outlook' action|
-|Operation|N/A|Delete email messages, Move email messages to mail fodler, Mark as unread|Move email messages to mail fodler|Specifies which operation to perform on the specified email messages|
+|Operation|N/A|Delete email messages, Move email messages to mail folder, Mark as unread|Move email messages to mail folder|Specifies which operation to perform on the specified email messages|
 |Mail folder|No|Text value||The name of the folder to retrieve messages from. Enter the full folder path for subfolders (e.g., Inbox\Work)|
 
 

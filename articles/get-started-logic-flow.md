@@ -8,7 +8,7 @@ author: msftman
 manager: KVivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
@@ -21,6 +21,7 @@ search.app:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: intro-internal
 ---
 # Create a cloud flow in Power Automate
 

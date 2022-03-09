@@ -2,9 +2,9 @@
 title: Variables | Microsoft Docs
 description: Variables Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,41 +21,40 @@ search.audienceType:
 
 All variable-related actions for different datatypes
 
-|<!-- --> |
-|-----|
-|[Truncate number](#truncatenumber)|
-|[Generate random number](#generaterandomnumber)|
-|[Clear list](#clearlist)|
-|[Remove item from list](#removeitemfromlist)|
-|[Sort list](#sortlistbase)|
-|[Shuffle list](#shufflelist)|
-|[Merge lists](#mergelists)|
-|[Reverse list](#reverselist)|
-|[Remove duplicate items from list](#removeduplicateitemsfromlist)|
-|[Find common list items](#findcommonlistitems)|
-|[Subtract lists](#subtractlists)|
-|[Retrieve data table column into list](#retrievedatatablecolumnintolist)|
-|[Convert JSON to custom object](#convertjsontocustomobject)|
-|[Convert custom object to JSON](#convertcustomobjecttojson)|
-|[Add item to list](#additemtolist)|
-|[Create new list](#createnewlist)|
-|[Increase variable](#increasevariable)|
-|[Decrease variable](#decreasevariable)|
-|[Set variable](#assign)|
+
+[Truncate number](#truncatenumber)  
+[Generate random number](#generaterandomnumber)  
+[Clear list](#clearlist)  
+[Remove item from list](#removeitemfromlist)  
+[Sort list](#sortlistbase)  
+[Shuffle list](#shufflelist)  
+[Merge lists](#mergelists)  
+[Reverse list](#reverselist)  
+[Remove duplicate items from list](#removeduplicateitemsfromlist)  
+[Find common list items](#findcommonlistitems)  
+[Subtract lists](#subtractlists)  
+[Retrieve data table column into list](#retrievedatatablecolumnintolist)  
+[Convert JSON to custom object](#convertjsontocustomobject)  
+[Convert custom object to JSON](#convertcustomobjecttojson)  
+[Add item to list](#additemtolist)  
+[Create new list](#createnewlist)  
+[Increase variable](#increasevariable)  
+[Decrease variable](#decreasevariable)  
+[Set variable](#assign)  
 
 ## Getting started with variable actions
 
 Create variables manually with the **Set variable** action. Provide a name and a value for the variable to use it in other actions.
 
-![Screenshot of set variable action properties.](\media\variables\set-var-action-properties.png)
+![Screenshot of Set variable action.](\media\variables\set-var-action-properties.png)
 
 To increase or decrease the numeric value of a variable, use the **Increase variable** or **Decrease variable** actions respectively.
 
-![Screenshot of increase variable action properties.](\media\variables\increase-var-action-properties.png)
+![Screenshot of the Increase variable action.](\media\variables\increase-var-action-properties.png)
 
 Most actions output their result into a variable. For example, create a blank list-type variable with the **Create new list** action. The **Generate random number** action outputs the random number to a variable. Select **Generate multiple numbers** to create a list-type variable with multiple random numbers.
 
-![Screenshot of generate random number action properties.](\media\variables\generate-random-num-action-properties.png)
+![Screenshot of Generate random number action.](\media\variables\generate-random-num-action-properties.png)
 
 Add items to the list with **Add item to list**. Enter the value to add, or use a variable to add its value to the list. Similarly, remove items items from the list with **Remove item from list**. Enter the index of the item to remove.
 

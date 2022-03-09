@@ -2,7 +2,7 @@
 title: Automation in the web | Microsoft Docs
 description: Automation in the web
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
@@ -16,94 +16,99 @@ search.audienceType:
 ---
 # Automate web flows
 
-
-
-The flow designer includes a number of actions under the **Browser automation** category, each of them corresponding to an interaction between a user and a web browser.
+Power Automate offers several actions under the **Browser automation** group to enable users to interact with web browsers.
 
 Four web browsers are currently supported:
+- Microsoft Edge
+- Microsoft Internet Explorer
+- Google Chrome
+- Mozilla Firefox
 
-* Internet Explorer
-* A chromium-based version of Edge
-* Firefox
-* Chrome
-
-Browser automation is achieved by launching, or attaching to, one of the aforementioned browsers, then performing browser automation actions on them. Development may be performed manually, or through the use of the web recorder.
+Browser automation is achieved by launching or attaching to one of the supported browsers and then deploying browser automation actions. Development may be performed manually or through the [use of the recorder](recording-flow.md).
 
 ## Building a browser automation flow
 
-To begin a browser automation flow, use one of the Launch web browser actions (**Launch new Internet Explorer**, **Launch new Edge**, **Launch new Firefox**, or **Launch new Chrome**) to start a new browser session, or attach to an already existing one:
+To begin a browser automation flow, use one of the browser-launching actions: **Launch new Microsoft Edge**, **Launch new Internet Explorer**, **Launch new Chrome**, or **Launch new Firefox**). You can start a new browser session or attach to an existing one.
 
-![Launch web browser.](.\media\web-automation\launch-web-browser-action.png)
+![Screenshot of the Launch new Microsoft Edge action.](.\media\web-automation\launch-new-microsoft-edge-action.png)
 
 > [!NOTE]
-> Some browsers may require configuration before they can be used in Power Automate. Refer to the [relevant article](using-browsers.md) for more information.
+> To interact with browsers, you need to install the appropriate browser extension and configure the browser accordingly. You can find more information regarding the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
-After the browser session is stored in a variable, add other browser automation actions to interact with the browser's content. The **Web form filling** action group focuses on providing input to web pages, while **Web data extraction** actions draw data from web pages, to be used in the flow.
 
-Most browser automation actions require a browser instance as input, as well as a web element with which to interact:
+After the browser instance is stored in a variable, you can deploy other browser automation actions to interact with the browser's content. The **Web form filling** actions focus on providing input to web pages, while **Web data extraction** actions draw data from web pages.
 
-![Web action inputs.](.\media\web-automation\web-action-inputs.png)
+Most browser automation actions require you to specify a browser instance and a UI element to interact with. 
 
-Existing web elements may be added from the repository, while new ones may also be added directly from the action's properties:
+> [!NOTE]
+> You can find a list with all the available browser automation actions in the [Browser automation actions reference](actions-reference/webautomation.md).
 
-![Adding new elements through a web action.](.\media\web-automation\adding-new-elements-through-a-web-action.png)
+![Screenshot of the inputs of the Populate text field on web page action.](.\media\web-automation\web-action-inputs.png)
 
-To add a new element, highlight it and press **Ctrl & left-click**:
+Existing UI elements are displayed in the UI element pane, while new ones can be added directly through the action's properties or the pane. To find more information about UI elements nad their different types, refer to [Automate using UI elements](ui-elements.md).
 
-![Capturing new elements.](.\media\web-automation\capturing-new-elements.png)
+> [!NOTE]
+> Browser automation actions accept exclusively UI elements captured from web pages. Therefore, existing UI elements captured from desktop applications aren't displayed in the browser automation actions.
 
-After adding all the required elements, select **Done** to save them to the repository.
+
+![Screenshot of the available UI elements in the Populate text field on web page action.](.\media\web-automation\adding-new-elements-through-a-web-action.png)
+
+To add a new UI element, highlight the appropriate web element and press **Ctrl & left-click**. After adding all the required elements, select **Done** to save them to the UI elements pane.
+
+> [!NOTE]
+> When the browser extension isn't able to communicate with Power Automate, the browser window is identified as a desktop application. As a result, Power Automate tries to grab UI elements for a desktop application and not a web page.
+
+![Screenshot of the highlighted UI elements to capture.](.\media\web-automation\capturing-new-elements.png)
 
 ## Data population on the web
 
-To provide input to a web page, select the appropriate **Web form filling** action depending on the nature of the element to interact with, and specify the browser instance:
+To provide input to a web page, select the appropriate **Web form filling** action depending on the nature of the element, and specify the browser instance.
 
-![Set drop down list value on web page action.](.\media\web-automation\set-drop-down-list-value-on-web-page-action.png)
-
-![Populate text field on web page action.](.\media\web-automation\populate-text-field-on-web-page-action.png)
+![Screemshot of the Set drop-down list value on web page action.](.\media\web-automation\set-drop-down-list-value-on-web-page-action.png)
 
 ## Web data extraction
 
-To extract a piece of data from a web page, use the appropriate action, depending on whether the data in question concerns the entire web page, or an element inside it:
+To extract a piece of data from a web page, use the **Get details of web page** or the **Get details of element on web page** action, depending on whether the data in question concerns the entire web page or an element inside it.
 
-![Get details of web page action.](.\media\web-automation\get-details-of-web-page-action.png)
+> [!NOTE]
+> You can find more information regarding details extraction from web pages in [Retrieve details from a web page](how-to/retrieve-details-web-page.md).
 
-![Get details of element on web page action.](.\media\web-automation\get-details-of-element-on-web-page-action.png)
+![Screenshot of the Get details of web page action.](.\media\web-automation\get-details-of-web-page-action.png)
 
-To extract larger amounts of data, use the **Extract data from web page** action, then right-click on the required data on the web page to view the available options:
+![Screenshot of the Get details of element on web page action.](.\media\web-automation\get-details-of-element-on-web-page-action.png)
 
-![Extracting data from web page.](.\media\web-automation\extracting-data-from-web-page.png)
+To extract large amounts of structured data, use the **Extract data from web page** action. After deploying the action, right-click on the required data on the web page to view the available options.
 
- Note that any lists or tables of data will be automatically identified after two of their elements are designated for extraction:
+![Screenshot of a web page while extracting data from it.](.\media\web-automation\extracting-data-from-web-page.png)
 
-![Extracting data table from web page.](.\media\web-automation\extracting-data-table-from-web-page.png)
+Any lists or tables of data will be automatically identified after two of their elements are designated for extraction.
 
-
-You'll find the list of browser automation actions available in the [Actions reference](actions-reference/webautomation.md).
-
+![Screenshot of a web page while extracting a data table from it.](.\media\web-automation\extracting-data-table-from-web-page.png)
 
 ## Interacting with the web and web services
 
-It is possible to communicate directly with web resources, such as web pages, files, and APIs, without using a web browser.
+Power Automate provides various HTTP actions to allow users to communicate directly with web resources, such as web pages, files, and APIs, without the need of a web browser.
 
-## Downloading web resources
+> [!NOTE]
+> You can find a list with all the available HTTP actions in the [HTTTP actions reference](actions-reference/web.md).
 
-Use the **Download from web** action to directly download web page content, or files on the web:
+### Downloading web resources
 
-![The Download from web action.](./media/interacting-web-services/download-from-web-action.png)
+Use the **Download from web** action to directly download web page content or files stored on the web.
 
-Both the **GET** and **POST** methods may be used with this action; files can be downloaded directly to the disk, while web page contents are saved into a variable.
+Both the **GET** and **POST** methods can be used with this action. The files can be downloaded directly to the disk, while web page contents are saved into a variable.
 
-## Accessing web APIs
+![Screenshot of the Download from web action.](./media/interacting-web-services/download-from-web-action.png)
 
-Use the **Invoke web service** action to access web APIs:
+### Accessing web APIs
 
-![The Invoke web service action.](./media/interacting-web-services/invoke-web-service-action.png)
+Use the **Invoke web service** action to access web APIs. Various methods are compatible with this action, which is fully customizable in order to accommodate virtually any API.
 
-A variety of methods are compatible with this action, which is fully customizable in order to accommodate virtually any API.
+> [!NOTE]
+> Before using the **Invoke web service** action, refer to the documentation page of the web service you want to use. The example presented in the following screenshot can't be applied to all scenarios, as each web service requires a different configuration and syntax. 
 
+![Screenshot of the Invoke web service action.](./media/interacting-web-services/invoke-web-service-action.png)
 
-You'll find the list of web related actions available in the [Actions reference](actions-reference/web.md).
-
+Apart from the **Invoke web service** action, Power Automate provides the **Invoke SOAP web service** action to interact with SOAP web services.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

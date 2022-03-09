@@ -2,7 +2,7 @@
 title: Identify a window by its handle | Microsoft Docs
 description: Identify a window by its handle
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/03/2021
@@ -23,13 +23,13 @@ Power Automate enables users to distinguish identical windows using handles. Han
 
 To retrieve the handle of a window, launch the application with the **Run application** action and set the **After application launch** drop-down menu to **Wait for application to load**. The handle is stored by default in a variable named **WindowHandle**.
 
-![The WindowHandle variable in the Run application action.](media/identify-window-handle/run-application-action-handle.png)
+![Screenshot of the WindowHandle variable in the Run application action.](media/identify-window-handle/run-application-action-handle.png)
 
 Alternatively, you can use the **Get details of a UI element in window** action to retrieve the handle from an already open window. 
 
 Select to retrieve the attribute **parentwindowhandle** from a random element within the window. The retrieved attribute is stored by default in a variable named **AttributeValue**.
 
-![The AttributeValue variable in the Get details of a UI element in window action.](media/identify-window-handle/get-details-ui-element-action.png)
+![Screenshot of the AttributeValue variable in the Get details of a UI element in window action.](media/identify-window-handle/get-details-ui-element-action.png)
 
 > [!NOTE]
 > The **Get details of a UI element in window** action requires a UI element that specifies the selected element in the window. You can find more information regarding UI elements in [Automate using UI elements](../ui-elements.md).

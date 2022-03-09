@@ -2,7 +2,7 @@
 title: Authentication and security for planning a Power Automate project | Microsoft Docs
 description: Different automation scenarios require Power Automate to use different authentication methods. This article explains them.
 author: taiki-yoshida
-ms.service: power-automate
+
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
@@ -31,9 +31,7 @@ or when using [desktop flows](../../desktop-flows/introduction.md).
 
 ## On-premises data gateway
 
-For desktop and website automation, an on-premises data gateway is required so that
-programs that are installed on the on-premises computers (for example, browser extensions
-and Power Automate Desktop) can be accessed from the Power Automate cloud-based
+For desktop and website automation, an on-premises data gateway is required so that programs that are installed on the on-premises computers (for example, browser extensions and Power Automate Desktop) can be accessed from the Power Automate cloud-based
 service. More information: [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install)
 
 ## Authentication by using Microsoft 365 and Azure AD
@@ -53,14 +51,11 @@ Twitter all have their own methods for authentication. Some enterprise systems p
 
 ![Browser sign-in pop-up window.](media/browser-login.png "Browser sign-in popup window")
 
-In the expense reporting example, the online banking system has its own
-sign-in ID and password.
+In the expense reporting example, the online banking system has its own sign-in ID and password.
 
 ## Authentication by using an on-premises system or Windows sign-in
 
-This type of authentication will be required if you're planning to automate
-with the Power Automate Desktop application or desktop flows. It's separate from
-Microsoft 365 or Azure AD. If a computer is connected to a corporate
+This type of authentication will be required if you're planning to automate with the Power Automate Desktop application or desktop flows. It's separate from Microsoft 365 or Azure AD. If a computer is connected to a corporate
 network, it's highly likely that it uses Windows Server Active Directory.
 
 ![Windows sign-in screen.](media/windows-login.jpg "Windows sign-in screen")

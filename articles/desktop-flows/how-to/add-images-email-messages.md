@@ -2,7 +2,7 @@
 title: Add images to email messages | Microsoft Docs
 description: Add images to email messages
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/03/2021
@@ -25,7 +25,7 @@ To attach images to an email, use the **Attachment(s)** field in the **Send emai
 
 You can populate the **Attachment(s)** field with file paths or a variable containing files. To populate multiple file paths, enclose them in double quotes (**""**) and separate them by a space character.
 
-![Two example paths in the Attachment(s) field of the Send email action.](media/add-images-email-messages/attach-images-email.png)
+![Screenshot of two example paths in the Attachment(s) field of the Send email action.](media/add-images-email-messages/attach-images-email.png)
 
 ## Embed images to email body
 
@@ -46,4 +46,4 @@ To embed an image, check the **Body is HTML** option in the appropriate email ac
 </html>
  ```
 
- ![The populated HTML code in the Send email action.](media/add-images-email-messages/emded-images-email.png)
+ ![Screenshot of the populated HTML code in the Send email action.](media/add-images-email-messages/emded-images-email.png)

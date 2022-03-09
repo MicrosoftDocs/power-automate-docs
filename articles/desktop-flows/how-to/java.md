@@ -2,7 +2,7 @@
 title: Automate Java applications  | Microsoft Docs
 description: Automate Java applications 
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/08/2021

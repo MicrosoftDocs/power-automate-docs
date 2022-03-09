@@ -1,8 +1,8 @@
 ---
-title: Identify automation opportunities in process advisor | Microsoft Docs
+title: Identify automation opportunities in process advisor (contains video) | Microsoft Docs
 description: Identify opportunities to automate your processes with automation recommendations in the process advisor feature.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.date: 11/02/2021

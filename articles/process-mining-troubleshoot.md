@@ -2,7 +2,7 @@
 title: Troubleshoot issues in process advisor (preview) | Microsoft Docs
 description: This topic explains how to troubleshoot issues with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.date: 11/02/2021
@@ -19,7 +19,7 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-Once you are done with setup, select **Analyze**. You'll be able to view the Analytics page when the analysis is complete. Analysis typically takes a few minutes but may be faster or slower depending on how much data needs to be analyzed.
+Once you're done with setup, select **Analyze**. You'll be able to view the Analytics page when the analysis is complete. Analysis typically takes a few minutes but may be faster or slower depending on how much data needs to be analyzed.
 
 *If you don't visit the Analytics page for 14 days, you'll need to re-analyze the process to access the Analytics page again.*
 
@@ -28,17 +28,21 @@ Once you are done with setup, select **Analyze**. You'll be able to view the Ana
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-For more information and a short video of analytics, go to [Visualize and analyze processes with process mining (preview)](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
+
+
+<!-- from editor: I changed the link text to the heading that the link opens to. -->
+
+For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
 
 ## Issues with dataflow refresh
 
 ### "There was an issue with a recent dataflow refresh, check your dataflow refresh history."
 
-When you go through setup, process advisor creates a dataflow that's tied to the process. Normally you don’t need to interact with the dataflow, but if there are issues with the dataflow refresh, you might need to troubleshoot the issue. Dataflow refresh is what reads the data source and makes it ready to be analyzed.
+When you go through setup, process advisor creates a dataflow that's tied to the process. Normally you don’t need to interact with the dataflow, but if there are issues with the dataflow refresh, you might need to troubleshoot them. Dataflow refresh is what reads the data source and makes it ready to be analyzed.
 
 To troubleshoot:
 
-1. Make a note of the environment in the environment display on the top-right of the page.
+1. Make a note of the environment in the environment display on the upper-right corner of the page.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the environment name.](media/process-mining-troubleshoot/environment.png "Environment name")
@@ -99,7 +103,7 @@ One possibility is that although the *timestamp* column has a valid datetime for
     > [!div class="mx-imgBorder"]
     > ![Screenshot of Options, Project options.](media/process-mining-troubleshoot/project-options.png "Options, Project options")
 
-1. On the **Locale** dropdown, select the correct locale > **OK**.
+1. On the **Locale** dropdown list, select the correct locale and then select **OK**.
 
 1. Use the same method to set the *timestamp* column to the **Date/Time** data type again.
 
@@ -119,11 +123,11 @@ This issue should occur only if there is no data. Either the data source that yo
 
 ### "The number of rows in your data exceeds the limit. [x] rows have been ignored."
 
-For public preview, we support only up to 150K rows of data. To learn how to fix this using power query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
+For preview, we support only up to 150,000 rows of data. To learn how to fix this using Power Query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
 
 ### "There are too many columns in your data. Please select no more than 5 columns."
 
-For public preview, we support only up to five columns in addition to your mapped columns. To learn how to fix this using power query, go to [Select additional columns](process-mining-transform.md#select-additional-columns).
+For preview, we support only up to five columns in addition to your mapped columns. To learn how to fix this using Power Query, go to [Select additional columns](process-mining-transform.md#select-additional-columns).
 
 ### "Analysis failed, please try again."
 

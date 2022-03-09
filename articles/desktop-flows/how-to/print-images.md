@@ -2,7 +2,7 @@
 title: Print images | Microsoft Docs
 description: Print images
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/08/2021
@@ -42,7 +42,7 @@ taskkill /IM "mspaint.exe"
 
 To run the script, use the **Run application** action and populate the path of the batch file in the **Application path** field.
 
-![The Run Application action.](media/print-images/run-application-action.png)
+![Screenshot of the Run Application action.](media/print-images/run-application-action.png)
 
 Alternatively, you can print image files using the **Run DOS command** action with the following command as an input:
 

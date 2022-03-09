@@ -2,7 +2,7 @@
 title: Scroll on a web page | Microsoft Docs
 description: Scroll on a web page
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/23/2021
@@ -30,7 +30,7 @@ In the action's properties, you have to create a UI element that selects the tar
 > [!NOTE]
 > You can find more information about UI elements in [Automate using UI elements](..\ui-elements.md).
 
-![The Focus text field on web page action.](media/scroll-web-page/focus-text-field-action.png)
+![Screenshot of the Focus text field on web page action.](media/scroll-web-page/focus-text-field-action.png)
 
 Usually, web applications contain **loading more** elements at the bottom of pages that display many elements. In these cases, you can target the **loading more** element to scroll at the bottom of the page.
 
@@ -49,7 +49,7 @@ window.scrollTo(xpos, ypos);
 
 You can replace both placeholders with hardcoded values, properties, or variables. In the following example, the function contains hardcoded values.
 
-![The Execute Javascript function on web page action with the scrollTo function.](media/scroll-web-page/run-javascript-scroll-page.png)
+![Screenshot of the Execute Javascript function on web page action with the scrollTo function.](media/scroll-web-page/run-javascript-scroll-page.png)
 
 If you want to scroll to the bottom of a web page, you can replace the **ypos** placeholder with the **document.body.scrollHeight** property.
 
@@ -60,7 +60,7 @@ window.scrollTo(0, document.body.scrollHeight);
 }
 ```
 
-![The Execute Javascript function on web page action with the scrollHeight property.](media/scroll-web-page/run-javascript-scroll-page-bottom.png)
+![Screenshot of the Execute Javascript function on web page action with the scrollHeight property.](media/scroll-web-page/run-javascript-scroll-page-bottom.png)
 
 If you want to scroll inside an element of a web page, not the page itself, you can use the HTML DOM property **scrollTop**. In the following example, the function locates the **divElem** and scrolls vertically 10 pixels down.
 
@@ -71,4 +71,4 @@ document.getElementById('divElem').scrollTop -= 10;
 }
 ```
 
-![The Execute Javascript function on web page action with the scrollTop property.](media/scroll-web-page/run-javascript-scroll-element.png)
+![Screenshot of the Execute Javascript function on web page action with the scrollTop property.](media/scroll-web-page/run-javascript-scroll-element.png)

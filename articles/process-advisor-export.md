@@ -2,7 +2,7 @@
 title: Export and import your process in process advisor | Microsoft Docs
 description: This topic explains how to import and export a process in the process advisor feature in Power Automate.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021

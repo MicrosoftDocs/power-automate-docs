@@ -1,5 +1,5 @@
 ---
-title: Create an approval flow that requires everyone to approve| Microsoft Docs
+title: Create an approval flow that requires everyone to approve(contains video) | Microsoft Docs
 description: Create an approval flow that requires everyone to approve or one person to reject a request.
 services: ''
 suite: flow
@@ -8,13 +8,13 @@ author: msftman
 manager: KVivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 10/07/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -33,6 +33,10 @@ This type of approval workflow is useful in an organization that requires a pers
 > While this walkthrough highlights a vacation approval scenario, you can use this type of approval flow in any situation where multiple approvers are required to approve a request.
 >
 >
+
+Here's a quick video tutorial about approvals.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdq]
 
 ## Prerequisites
 

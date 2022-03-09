@@ -2,9 +2,9 @@
 title: Microsoft Cognitive | Microsoft Docs
 description: Microsoft Cognitive Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -18,16 +18,14 @@ search.audienceType:
 
 Microsoft's cognitive actions
 
-|<!-- --> |
-|-----|
-|[Spell check](#spellcheck)|
-|[Analyze image](#analyzeimagemicrosoft)|
-|[Describe image](#describeimagemicrosoft)|
-|[OCR](#ocrmicrosoft)|
-|[Tag image](#tagimagemicrosoft)|
-|[Detect language](#detectlanguage)|
-|[Key phrases](#keyphrases)|
-|[Sentiment](#sentiment)|
+[Spell check](#spellcheck)  
+[Analyze image](#analyzeimagemicrosoft)  
+[Describe image](#describeimagemicrosoft)  
+[OCR](#ocrmicrosoft)  
+[Tag image](#tagimagemicrosoft)  
+[Detect language](#detectlanguage)  
+[Key phrases](#keyphrases)  
+[Sentiment](#sentiment)  
 
 ## Getting started with Microsoft cognitive actions
 

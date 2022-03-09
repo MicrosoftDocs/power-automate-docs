@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: teams
 ms.topic: article
@@ -40,11 +40,11 @@ This article shows you how to:
 
 -  One of the following subscriptions:
 
-    -  [Power Automate](/power-automate/sign-up-sign-in)
+    -  [Power Automate](../sign-up-sign-in.md)
 
     -  [Power Apps](/powerapps/signup-for-powerapps)
 
--  Basic experience building [flows](/power-automate/get-started-logic-flow) and [custom connectors](/connectors/custom-connectors/define-openapi-definition).
+-  Basic experience building [flows](../get-started-logic-flow.md) and [custom connectors](/connectors/custom-connectors/define-openapi-definition).
 
 ## Create a custom connector
 
