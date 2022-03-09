@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -72,7 +72,7 @@ The approver sees the approval request like this.
 
 Markdown is a language that's used to format text into Webpages like headers, tables, or bold text. In an approval request, you can use markdown in the **Details** field to format the information presented to approvers.
 
-You can learn more about how to use markdown and the supported apps in the [Use Markdown in Power Automate approval requests](https://docs.microsoft.com/power-automate/approvals-markdown-support) article.
+You can learn more about how to use markdown and the supported apps in the [Use Markdown in Power Automate approval requests](./approvals-markdown-support.md) article.
 
 Here is an example of its usage. 
   
@@ -149,7 +149,7 @@ If you are the maker of a flow that requests approvals, and the approval request
 
 ## Do sequential approvals  
   
-Some processes require pre-approval before the final approver is required to sign off. For example, an organization may have a sequential approval policy that requires pre-approval for invoices over $1,000.00 before they're approved by the Finance department. This [walkthrough guides you on how to manage sequential approvals with Power Automate](https://docs.microsoft.com/power-automate/sequential-modern-approvals).
+Some processes require pre-approval before the final approver is required to sign off. For example, an organization may have a sequential approval policy that requires pre-approval for invoices over $1,000.00 before they're approved by the Finance department. This [walkthrough guides you on how to manage sequential approvals with Power Automate](./sequential-modern-approvals.md).
 
 ## Post an approval request in Microsoft Teams
 

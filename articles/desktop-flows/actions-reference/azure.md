@@ -2,9 +2,9 @@
 title: Azure | Microsoft Docs
 description: Azure Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
@@ -19,28 +19,26 @@ search.audienceType:
 
 Connect to Azure Cloud and automate the management of resources like virtual machines, disks, snapshots and resource groups
 
-|<!-- --> |
-|-----|
-|[Get resource groups](#getresourcegroups)|
-|[Create resource group](#createresourcegroup)|
-|[Delete resource group](#deleteresourcegroup)|
-|[Get disks](#getdisksaction)|
-|[Attach disk](#attachdisk)|
-|[Detach disk](#detachdisk)|
-|[Create managed disk](#createmanageddiskaction)|
-|[Delete disk](#deletedisk)|
-|[Get snapshots](#getsnapshotsaction)|
-|[Create snapshot](#createsnapshot)|
-|[Delete snapshot](#deletesnapshot)|
-|[Get virtual machines](#getvirtualmachines)|
-|[Describe virtual machine](#describevirtualmachineaction)|
-|[Start virtual machine](#startvirtualmachine)|
-|[Stop virtual machine](#stopvirtualmachine)|
-|[Shut down virtual machine](#shutdownvirtualmachine)|
-|[Restart virtual machine](#restartvirtualmachine)|
-|[Create session](#createsessionaction)|
-|[Get subscriptions](#getsubscriptions)|
-|[End session](#endsession)|
+[Get resource groups](#getresourcegroups)  
+[Create resource group](#createresourcegroup)  
+[Delete resource group](#deleteresourcegroup)  
+[Get disks](#getdisksaction)  
+[Attach disk](#attachdisk)  
+[Detach disk](#detachdisk)  
+[Create managed disk](#createmanageddiskaction)  
+[Delete disk](#deletedisk)  
+[Get snapshots](#getsnapshotsaction)  
+[Create snapshot](#createsnapshot)  
+[Delete snapshot](#deletesnapshot)  
+[Get virtual machines](#getvirtualmachines)  
+[Describe virtual machine](#describevirtualmachineaction)  
+[Start virtual machine](#startvirtualmachine)  
+[Stop virtual machine](#stopvirtualmachine)  
+[Shut down virtual machine](#shutdownvirtualmachine)  
+[Restart virtual machine](#restartvirtualmachine)  
+[Create session](#createsessionaction)  
+[Get subscriptions](#getsubscriptions)  
+[End session](#endsession)  
 
 ## Getting started with Azure actions
 
@@ -57,11 +55,11 @@ Lastly, choose the environment you want to use for authentication and populate t
 
 Apart from manual configuration, you can select **With file** in **Authentication type** and use a file containing all the required information.
 
-![Screenshot of the Create session action](media/azure/create-session-action.png)
+![Screenshot of the Create session action.](media/azure/create-session-action.png)
 
 After creating the session and deploying all the needed Azure actions, use the **End session** action to terminate the Azure session. 
 
-![Screenshot of the End session action](media/azure/end-session-action.png)
+![Screenshot of the End session action.](media/azure/end-session-action.png)
 
 ## Azure actions
 

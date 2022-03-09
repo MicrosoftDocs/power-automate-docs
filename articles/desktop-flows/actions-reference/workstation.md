@@ -2,9 +2,9 @@
 title: Workstation | Microsoft Docs
 description: Workstation Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -19,21 +19,19 @@ search.audienceType:
 
 Perform a variety of tasks on the workstation
 
-|<!-- --> |
-|-----|
-|[Print document](#printdocument)|
-|[Get default printer](#getdefaultprinter)|
-|[Set default printer](#setdefaultprinter)|
-|[Log off user](#logoffuser)|
-|[Shutdown computer](#shutdowncomputer)|
-|[Show desktop](#showdesktop)|
-|[Lock workstation](#lockworkstation)|
-|[Play sound](#playsoundbase)|
-|[Empty recycle bin](#emptyrecyclebin)|
-|[Take screenshot](#takescreenshotbase)|
-|[Control screen saver](#controlscreensaver)|
-|[Get screen resolution](#getscreenresolution)|
-|[Set screen resolution](#setscreenresolution)|
+[Print document](#printdocument)  
+[Get default printer](#getdefaultprinter)  
+[Set default printer](#setdefaultprinter)  
+[Log off user](#logoffuser)  
+[Shutdown computer](#shutdowncomputer)  
+[Show desktop](#showdesktop)  
+[Lock workstation](#lockworkstation)  
+[Play sound](#playsoundbase)  
+[Empty recycle bin](#emptyrecyclebin)  
+[Take screenshot](#takescreenshotbase)  
+[Control screen saver](#controlscreensaver)  
+[Get screen resolution](#getscreenresolution)  
+[Set screen resolution](#setscreenresolution)  
 
 ## Getting started with workstation actions
 
@@ -41,7 +39,7 @@ The workstation group of actions provides a collection of actions that automate 
 
 To print a document, deploy the **Print document** action and populate the path of the file you want to print.
 
-![screenshot of the Print document action.](\media\workstation\print-document-action.png)
+![Screenshot of the Print document action.](\media\workstation\print-document-action.png)
 
 To change the default printer of the workstation, use the **Set default printer** action. To check which is the current default printer, use the  **Get default printer** action.
 
@@ -49,7 +47,7 @@ If you want to sign out of your Windows account, use the **Log off user** action
 
 To change the resolution of any of your screens, use the **Set screen resolution**. The action requires you to populate the ID number of the screen, the width and height, the bit count, and the frequency. You can click the **Available screen resolutions** button to see all the available resolutions for each screen. Also, you can retrieve the current values of the mentioned attributes with the **Get screen resolution** action. 
 
-![screenshot of the Set screen resolution action.](\media\workstation\set-screen-resolution-action.png)
+![Screenshot of the Set screen resolution action.](\media\workstation\set-screen-resolution-action.png)
 
 ## Workstation actions
 
@@ -111,6 +109,9 @@ Sets a printer as the default printer
 ### <a name="logoffuser"></a> Log off user
 Logs off the current user
 
+>[!NOTE]
+> When you run the **Log off user** action through the flow designer, the action prompts you to verify that you want to log off the current user. However, the action doesn't require confirmation when the flow is run through the console or the portal. In all cases, the action will terminate the flow. 
+
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
@@ -127,7 +128,13 @@ Logs off the current user
 |Can't log off the current user|Indicates a problem logging off the current user|
 
 ### <a name="shutdowncomputer"></a> Shutdown computer
-Shuts down the computer
+Instructs the computer to shut down
+
+> [!IMPORTANT]
+> Although a flow containing the **Shutdown computer** action is set to shut down the machine, some unrelated factors, such as other running Windows processes, may prevent it from achieving it.
+
+>[!NOTE]
+> When you run the **Shutdown computer** action through the flow designer, the action prompts you to verify that you want to shut down the computer. However, the action doesn't require confirmation when the flow is run through the console or the portal. In all cases, the action will terminate the flow. 
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

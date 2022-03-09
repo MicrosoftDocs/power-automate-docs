@@ -2,7 +2,7 @@
 title: Send physical clicks on a web element | Microsoft Docs
 description: Send physical clicks on a web element
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/23/2021
@@ -28,7 +28,7 @@ After completing this step, the flow must be similar to the following one:
 > [!NOTE]
 > The **Windows state** of the browser must be set to **Maximized**. The flow requires additional steps to work with any browser window size.
 
-![The current state of the flow that gets the coordinates of a web element.](media\send-physical-clicks-web-element\get-coordinates-web-element-flow.png)
+![Screenshot of the current state of the flow that gets the coordinates of a web element.](media\send-physical-clicks-web-element\get-coordinates-web-element-flow.png)
 
 Now, you can use the **Send mouse click** action to send the wanted type of physical click on the web element.
 
@@ -38,11 +38,11 @@ The **List[0]** and **List[1]** variables contain the previously retrieved coord
 
 The addition of these two values calculates the exact screen position of the element in a maximized browser window.
 
-![The Send mouse click action with populated fields.](media\send-physical-clicks-web-element\send-mouse-click-action.png)
+![Screenshot of the Send mouse click action with populated fields.](media\send-physical-clicks-web-element\send-mouse-click-action.png)
 
 
 To make the flow work with any browser window size, you have to retrieve the top-left coordinates of the browser window and add them to the **X** and **Y** coordinates. You can find more information about retrieving the position of a window in [Get the position and size of a window](get-position-size-window.md).
 
 Alternatively, you can use the **Focus windows** action to focus on the browser window, and then select **Active window** in the **Relative to** option of the **Send mouse click** action.
 
-![The Relative to option in the Send mouse click action.](media\send-physical-clicks-web-element\send-mouse-click-action-relative-to-option.png)
+![Screenshot of the Relative to option in the Send mouse click action.](media\send-physical-clicks-web-element\send-mouse-click-action-relative-to-option.png)

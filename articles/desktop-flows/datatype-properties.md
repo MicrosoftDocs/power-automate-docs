@@ -2,7 +2,7 @@
 title: Datatype properties | Microsoft Docs
 description: Datatype properties
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
@@ -27,7 +27,7 @@ The value of these properties can be accessed directly through the following not
 
 For example, if you have a list of files called **Files**, you can get the number of the stored files using the expression: **%Files.Count%**
 
-![The Count variable property of the file datatype.](media\datatype-properties\files-count.png)
+![Screenshot of the Set variable action populated with the Count property of the file datatype.](media\datatype-properties\files-count.png)
 
 The data types that have properties are displayed in the following lists.
 
@@ -179,11 +179,12 @@ The data types that have properties are displayed in the following lists.
 
 ## Datatables
 
-|Property  |Description                                                                           |
-|----------|--------------------------------------------------------------------------------------|
-|RowsCount |The number of rows of the data table.                                                 |
-|Columns   |A list that contains the names of the columns of the data table.                      | 
-|IsEmpty   |This property is true if the datatable is empty or false if it is contains elements. | 
+|Property         |Description                                                                           |
+|-----------------|--------------------------------------------------------------------------------------|
+|RowsCount        |The number of rows of the data table.                                                 |
+|Columns          |A list that contains the names of the columns of the data table.                      | 
+|IsEmpty          |This property is true if the datatable is empty or false if it is contains elements.  | 
+|ColumnHeadersRow |A datarow that contains the table headers.                                            |
 
 ## Datarows
 
@@ -220,6 +221,15 @@ The data types that have properties are displayed in the following lists.
 |------------------------|------------------------------------------------------------------------------|
 |ConnectionString        |The connection string used for the database connection.                       |
 |IsClosed                |This property is true if the browser window is closed or false if it is open. |
+
+## PDF table info
+
+|Property          |Description                              |
+|------------------|-----------------------------------------|
+|DataTable         |The extracted data table of the specified item.|
+|TableStartingPage |The index of the file page that contains the start of the table.|
+|TableEndingPage   |the index of the file page that contains the end of the table.|
+|TableOrderInPage  |The order of the table on the page. |
 
 ## CMD session
 

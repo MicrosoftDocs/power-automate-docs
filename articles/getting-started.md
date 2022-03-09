@@ -1,5 +1,5 @@
 ---
-title: Get started with Power Automate | Microsoft Docs
+title: Get started with Power Automate (contains video) | Microsoft Docs
 description: Quick ways to start automating your work and life with Power Automate.
 services: ''
 suite: flow
@@ -8,19 +8,20 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/09/2021
+ms.date: 10/01/2021
 ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: intro-internal
 ---
 
 # Get started with Power Automate
@@ -33,11 +34,13 @@ Welcome! What can you expect from Power Automate? Here are a few examples of wha
 * Connect to more than 500 data sources or any publicly available API
 * You can even automate tasks on your local computer like computing data in Excel. 
 
-Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation. 
+Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
 
 <br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qNQm]
+The following video shows you how to get started building your first flow.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKUx1]
 
 ## Who is Power Automate for?
 
@@ -94,7 +97,7 @@ Each template is designed for a specific purpose. For example, there are templat
 
 ## Get creative
 
-Now that you've created your first flow from a template, use any of the more than [380 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
+Now that you've created your first flow from a template, use any of the more than [500 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
 ![Building a cloud flow.](./media/getting-started/build-a-flow.png)
 

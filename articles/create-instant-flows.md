@@ -4,7 +4,7 @@ description: "Learn how to create instant flows in business process flows"
 ms.custom: ""
 ms.date: 09/24/2020
 ms.reviewer: "dean-haas"
-ms.service: power-automate
+
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
@@ -38,7 +38,7 @@ To do this, you'll need to do two things:
 1. Add the instant flow as a step in the **Lead to Opportunity Sales Process**.
 
 > [!TIP]
-> Only [solution-aware flows](/power-automate/overview-solution-flows) can be added as a step in a business process. 
+> Only [solution-aware flows](./overview-solution-flows.md) can be added as a step in a business process. 
 
 ## Build an instant flow
 
@@ -149,4 +149,3 @@ Now that you've created the instant flow, all that's needed is for you to add it
 
 ## Flow step considerations
 The status of your flow step might be **Processing** even after your flow successfully ran to completion, if you are not writing to the process log. In order to mark a cloud flow step as completed, add the **Update a row** action of the Microsoft Dataverse connector under the **If yes** path. Set the **Table** to **Process Logs**. Then set **Row ID** to **FlowsWorkflowLogId** by picking it from the list of dynamic values. Finally, set **Status Value** to **Succeeded** by selecting it from the dropdown.
-

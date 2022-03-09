@@ -2,7 +2,7 @@
 title: Run a Power Automate desktop flow | Microsoft Docs
 description: Run a flow in the Power Automate desktop console
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/11/2021
@@ -48,7 +48,8 @@ When you add a desktop flow to a cloud flow, you can choose whether you want you
 To run unattended desktop flows, the target machine needs to be available with all users signed out. 
 
 >[!IMPORTANT]
->Locked Windows user sessions will prevent desktop flows from running.
+> - Locked Windows user sessions will prevent desktop flows from running.
+> - Flows run in unattended mode can't be launched with elevated privileges
 
 Power Automate performs the following:
 1. Power Automate creates, manages, and then releases the Windows user session on the target devices.
@@ -112,7 +113,7 @@ To provide load balancing from the Power Automate gateway details page, navigate
 
 In the gateway details page, toggle Run on all gateways in cluster. This will distribute the desktop flows runs on all the gateways within that cluster.
 
-   ![Distribute desktop flow run on gateway cluster.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
+   ![Screenshot of the gateway details page.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
    
 >[!NOTE]
 >In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin accross cluster members.
@@ -150,7 +151,7 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 
 1.	Select the ellipsis (…) on the top right corner of the desktop flows action. And select Settings.
 
-    ![The settings option .](media/run-pad-portal/timeout_settings.png "The settings option")
+    ![Screenshot of the settings option.](media/run-pad-portal/timeout_settings.png "The settings option")
 
 1.  Select the **Timeout** property and update the duration to correctly handle your dekstop flow run. 
 1.	Select **Done**.
@@ -173,17 +174,29 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 ## Learn more
 
  - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
- - [Use the on-premises data gateway app](/power-automate/gateway-manage) documentation.
+ - [Use the on-premises data gateway app](../gateway-manage.md) documentation.
  - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 ## Runtime notifications
 
-A notification popup appears by default when a desktop flow is downloading or running, when it is cancelled, when it finishes running successfully, or when it encounters an error.
-
-![Notification window.](\media\run-pad-flow\notification-window.png)
+Power Automate provides two different types of notifications while running a desktop flow, depending on the user's preferences. 
 
 > [!NOTE]
 > Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate doesn't display notifications.
 
+Through the **Monitoring/Notifications** option of the console settings, you can choose between the integrated Windows notifications, the flow monitoring window, or disabling the notifications.
+
+The **Windows notifications** option displays a Windows notification pop-up when a desktop flow is running, paused, stopped, finished running successfully, or encountered an error. Additionally, the notification pop-up enables users to pause or stop the flow through the respective buttons. 
+
+![Screenshot of a notification window.](media\run-pad-flow\notification-window.png)
+
+The **Flow monitoring window** option provides the same functionality as the windows notifications, while it offers some additional functionality.
+
+Instead of displaying separate notifications for each desktop flow, the monitoring window displays the state of all running flows in a single window. Further, it shows which subflow and action are running at any given time for each desktop flow. If an error occurs, you can copy the error details directly through the monitoring window for easier debugging.
+
+> [!NOTE]
+> When Power Automate pop-up dialogs appear, like input variable dialogs or update notifications, users can't interact with the flow monitoring window until they close the displayed dialog.
+
+![Screenshot of the flow monitoring window.](media\run-pad-flow\flow-monitoring-window.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

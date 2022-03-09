@@ -4,11 +4,11 @@ description: Provides information about Power Automate US Government service des
 services: ''
 suite: flow
 author: msftman
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/27/2021
+ms.date: 02/04/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -20,7 +20,7 @@ search.audienceType:
 # Power Automate US Government
 
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](/power-automate/getting-started) topic. For brevity, this service is commonly referred to as Power Automate Government Community Cloud (GCC), Power Automate Government Community Cloud – High (GCC High), or Power Automate Department of Defense (DoD).
+In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](./getting-started.md) topic. For brevity, this service is commonly referred to as Power Automate Government Community Cloud (GCC), Power Automate Government Community Cloud – High (GCC High), or Power Automate Department of Defense (DoD).
 
 The Power Automate US Government Service Description serves as an overlay to the general Power Automate Service Description. It defines the unique commitments and differences compared to the general Power Automate offerings that have been available to our customers since October 2016.
 
@@ -242,7 +242,7 @@ focusing attention on AzureCloud.usgovtexas, and AzureCloud.usgovvirginia, and/o
 
 ## On-premises Data Gateway configuration
 
-Install an [on-premises data gateway](/power-automate/gateway-manage) to transfer data quickly and securely between a canvas app that's built in Power Automate and a data source that isn't in the cloud. Examples include on-premises SQL Server databases or on-premises SharePoint sites.
+Install an [on-premises data gateway](./gateway-manage.md) to transfer data quickly and securely between a canvas app that's built in Power Automate and a data source that isn't in the cloud. Examples include on-premises SQL Server databases or on-premises SharePoint sites.
 
 If your organization (tenant) has configured and successfully connected the nn-premises data gateway for PowerBI US Government, then the process your organization followed to enable that also enables on-premises connectivity for Power Automate.
 
@@ -256,10 +256,11 @@ Some of the features available in the commercial version of Flow are not availab
 
 - [Approvals](./modern-approvals.md) are available, subject to the following:
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
+    * Guest users cannot access the approvals center so they cannot serve as approvers.
   * There is no markdown support for approval email.
   * Approvals are not available in DoD tenants. 
 
-- [Submitting Templates](/power-automate/publish-a-template)
+- [Submitting Templates](./publish-a-template.md)
 
 - [Connectors](/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support and we will review your request.
 
@@ -271,7 +272,7 @@ Microsoft is investigating the data loss prevention (DLP) feature, considering t
 - [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
 
 - [Power Platform admin center](/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
-- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateay**. 
+- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**. 
 
 ### See also
 

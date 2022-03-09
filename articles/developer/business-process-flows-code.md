@@ -4,8 +4,8 @@ description: "Learn how to programmatically work with business process flows to 
 ms.custom: ""
 ms.date: 04/19/2021
 ms.reviewer: ""
-ms.service: "flow"
-ms.subservice: developer
+
+ms.subservice: ""
 ms.topic: "article"
 ms.assetid: 67d8cf80-9f77-4804-97a1-cf9f61417e83
 author: "msftman"

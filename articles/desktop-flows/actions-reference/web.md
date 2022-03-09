@@ -2,9 +2,9 @@
 title: HTTP | Microsoft Docs
 description: HTTP Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,12 +21,9 @@ Communicate with web applications and services directly
 
 You can find more information on how to use the web actions [here](../automation-web.md)
 
-
-|<!-- --> |
-|-----|
-|[Download from web](#downloadfromweb)|
-|[Invoke SOAP web service](#invokesoapserviceaction)|
-|[Invoke web service](#invokewebservicebase)|
+[Download from web](#downloadfromweb)  
+[Invoke SOAP web service](#invokesoapserviceaction)  
+[Invoke web service](#invokewebservicebase)  
 
 ## Getting started with web actions
 

@@ -2,7 +2,7 @@
 title: Use logical operations on conditional statements  | Microsoft Docs
 description: Use logical operations on conditional statements 
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/06/2021

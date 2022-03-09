@@ -2,7 +2,7 @@
 title: Convert Base64 text to hexadecimal format | Microsoft Docs
 description: Convert Base64 text to hexadecimal format
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/13/2021
@@ -30,4 +30,4 @@ To convert the Base64 text to hexadecimal format, use the **Run PowerShell scrip
 
 The action produces the PowershellOutput variable that stores the encrypted or hashed value in hexadecimal format.
 
-![The Run PowerShell script action.](media/convert-base64-hexadecimal-format/run-powershell-script-action.png)
+![Screenshot of the Run PowerShell script action.](media/convert-base64-hexadecimal-format/run-powershell-script-action.png)

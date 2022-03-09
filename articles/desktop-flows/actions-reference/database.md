@@ -2,9 +2,9 @@
 title: Database | Microsoft Docs
 description: Database Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -19,11 +19,9 @@ search.audienceType:
 
 Connect to databases and execute SQL statements
 
-|<!-- --> |
-|-----|
-|[Open SQL connection](#connect)|
-|[Execute SQL statement](#executesqlstatement)|
-|[Close SQL connection](#close)|
+[Open SQL connection](#connect)  
+[Execute SQL statement](#executesqlstatement)  
+[Close SQL connection](#close)  
 
 ## Getting started with database actions
 
@@ -46,7 +44,7 @@ Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb; Pe
 
 To manually build a connection string, select **Build connections string** to open the **Data Link Properties** window. The data link tool helps the user compose the required connection string step by step.
 
-![Screenshot of label in action.](\media\database\data-link-properties.png)
+![Screenshot of the Data Link Properties dialog.](\media\database\data-link-properties.png)
 
 > [!NOTE]
 > Power Automate for desktop is a 64-bit application, only 64-bit installed drivers will be available for selection in the **Open SQL connection** action.
@@ -121,15 +119,15 @@ SQL actions require a database connection. To connect to a database, enter the s
 
 2. Once you access the wizard, select the correct driver for the database under the **Provider** tab.
 
-   ![data link properties provider tab.](..\media\database\data-link-properties-provider-tab.png)
+   ![Screenshot of the data link properties provider tab.](..\media\database\data-link-properties-provider-tab.png)
 
 3. Next, under the **Connection** tab, enter the remaining details such as the server name, the username, password, and database name. Select the **Test Connection** button to test that the connection string connects to a database successfully. Alternatively, copy a ready-made connection string.
 
-   ![data link properties connection tab.](..\media\database\data-link-properties-connection-tab.png)
+   ![Screenshot of the data link properties connection tab.](..\media\database\data-link-properties-connection-tab.png)
 
 4. Specify a connection timeout and additional network settings in the **Advanced** tab.
 
-   ![data link properties advanced tab.](..\media\database\data-link-properties-advanced-tab.png)
+   ![Screenshot of the data link properties advanced tab.](..\media\database\data-link-properties-advanced-tab.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

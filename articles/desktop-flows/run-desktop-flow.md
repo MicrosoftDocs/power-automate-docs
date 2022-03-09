@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: article
@@ -120,7 +120,7 @@ To retrieve sensitive content from another connector, turn on **Secure Inputs** 
 1.	Select **…** on the top right corner of the action.
 1.	Select **Settings**.
 
-    ![The settings option .](../media/run-desktop-flow/settings.png "The settings option")
+    ![The settings option](../media/run-desktop-flow/settings.png "The settings option")
 
 1. Turn on the **Secure Inputs** and **Secure Outputs** properties to prevent these settings from being shown in the logs.
 
@@ -276,7 +276,7 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 ## Learn more
 
  - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
- - [Use the on-premises data gateway app](/power-automate/gateway-manage) documentation.
+ - [Use the on-premises data gateway app](../gateway-manage.md) documentation.
  - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 

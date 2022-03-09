@@ -9,7 +9,7 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -51,18 +51,19 @@ Take a look at the following examples or review the full list of features at [Se
 
 The simple query syntax supports the following functionality:
 
-Operator|Description
----------|-----------
-Boolean operators| AND operator; denoted by + </br>OR operator; denoted by \|</br>NOT operator; denoted by -
+|Operator|Description|
+|---------|-----------|
+|Boolean operators| AND operator; denoted by + </br>OR operator; denoted by \|</br>NOT operator; denoted by -
 | Precedence operators | A search term "hotel+(wifi \| luxury)" will search for results containing the term "hotel" and either "wifi" or "luxury" (or both). |
 | Wildcards            | Trailing wildcards are supported; for example, "Alp\*" searches for "alpine".                                                        |
 | Exact matches        | A query enclosed in quotation marks " ".                                                                                            |
 
 The Lucene query syntax supports the following functionality:<!-- Edit note: Can you confirm that the Proximity search example below is correct. Expected quotes after the 5. -->
 
-Operator|Description
----------|-----------
-Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, –
+
+|Operator|Description|
+|---------|-----------|
+|Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, –
 | Precedence operators              | The same functionality as simple query syntax.                       |
 | Wildcards                         | In addition to a trailing wildcard, also supports a leading wildcard.</br>Trailing wildcard – "alp*"</br>Leading wildcard - “/.*pine/”                                 |
 | Fuzzy search                      | Supports queries misspelled by up to two characters. </br>"Uniersty~" will return "University"</br>"Blue~1" will return "glue", "blues"                                            |         |
@@ -103,8 +104,8 @@ See [Search across table data using Dataverse search](/developer/data-platform/w
 
 You can use the outputs of the action directly from **Dynamic content**. Here's the meaning of each of the parameters.
 
-Parameter name|Description
---------------|-----------
+|Parameter name|Description|
+|--------------|-----------|
 Body|The object that represents the entire response. It contains the list of rows, total row count, and facet results.
 List of rows|An object that represents all the rows returned.
 List of rows item|An individual row in the list of rows, when used inside a loop.

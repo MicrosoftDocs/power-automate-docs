@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -20,6 +20,7 @@ search.app:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: intro-internal
 ---
 
 # Get started

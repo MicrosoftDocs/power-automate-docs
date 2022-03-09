@@ -2,7 +2,7 @@
 title: Get started with process mining in process advisor (preview) | Microsoft Docs
 description: This topic is a tutorial with sample data in process mining using the process advisor feature in Power Automate.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.custom: intro-internal
@@ -60,7 +60,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of blank table selection.](media/process-mining-tutorial/blank-table.png "Blank table selection")
 
-1. Open the sample event log CSV file that you downloaded in Microsoft Windows Notepad (or any text editor).
+1. Use Notepad or any other text editor to open the sample event log CSV file that you downloaded.
 
 1. Select all contents of the CSV file by pressing **Ctrl** + **A**.
 
@@ -102,4 +102,9 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of an analyzed process.](media/process-mining-tutorial/analytics.png "Process status is 'Analyzed'")
 
-1. For a description of how to analyze the process map and a short video, go to [Visualize and analyze processes with process mining (preview)](process-mining-visualize.md).
+
+<!-- editor note: I changed the link text to match the title of the page it opens. -->
+
+For a description of how to analyze the process map and a short video, go to [Visualize and gain insights from processes in process advisor (preview)](process-mining-visualize.md).
+
+

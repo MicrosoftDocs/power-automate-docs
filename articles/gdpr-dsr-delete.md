@@ -9,7 +9,7 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -267,7 +267,7 @@ As an admin you have two decisions to make when processing a DSR delete request 
 
 ## Give access to a user’s environments from the Power Automate admin center
 
-An admin can grant Admin access to an environment created by a specific user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For more information on administrating environments, please navigate to [Using environments within Power Automate](/power-automate/environments-overview-admin).>!-- Edit note: Kind of confusing that Power Automate is in the heading but Power Platform is in the first sentence. -->
+An admin can grant Admin access to an environment created by a specific user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). For more information on administrating environments, please navigate to [Using environments within Power Automate](./environments-overview-admin.md).>!-- Edit note: Kind of confusing that Power Automate is in the heading but Power Platform is in the first sentence. -->
 
 ## Delete the user’s permissions to all other environments
 
@@ -275,7 +275,7 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 
 With the introduction of Microsoft Dataverse, if a database is created within the environment, these “role assignments” are stored as records within Microsoft Dataverse.
 
-For more information on removing a user's permission in an  environment, navigate to [Using environments within Power Automate](/power-automate/environments-overview-admin).
+For more information on removing a user's permission in an  environment, navigate to [Using environments within Power Automate](./environments-overview-admin.md).
 
 ## Delete Gateway Settings
 

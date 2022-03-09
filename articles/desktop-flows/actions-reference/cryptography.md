@@ -2,9 +2,9 @@
 title: Cryptography | Microsoft Docs
 description: Cryptography Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
@@ -19,16 +19,14 @@ search.audienceType:
 
 Encrypt and decrypt text and files
 
-|<!-- --> |
-|-----|
-|[Encrypt text with AES](#encrypttextaction)|
-|[Decrypt text with AES](#decrypttextaction)|
-|[Encrypt from file with AES](#encryptfromfileaction)|
-|[Decrypt to file with AES](#decrypttofileaction)|
-|[Hash text](#hashtext)|
-|[Hash from file](#hashfromfile)|
-|[Hash text with key](#hashtextwithkey)|
-|[Hash from file with key](#hashfromfilewithkey)|
+[Encrypt text with AES](#encrypttextaction)  
+[Decrypt text with AES](#decrypttextaction)  
+[Encrypt from file with AES](#encryptfromfileaction)  
+[Decrypt to file with AES](#decrypttofileaction)  
+[Hash text](#hashtext)  
+[Hash from file](#hashfromfile)  
+[Hash text with key](#hashtextwithkey)  
+[Hash from file with key](#hashfromfilewithkey)  
 
 ## Getting started with cryptography actions
 

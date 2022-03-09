@@ -2,7 +2,7 @@
 title: UI elements and controls | Microsoft Docs
 description: UI elements and controls
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
@@ -16,52 +16,58 @@ search.audienceType:
 ---
 # Automate using UI elements
 
-Actions under the **UI automation** group are designed to directly interact with windows and applications. To achieve this result without resorting to image recognition or absolute coordinates, Power Automate utilizes **UI elements** to identify windows and their elements.
+Power Automate for desktop utilizes UI elements to interact with applications and web pages without resorting to image recognition and absolute coordinates. UI elements are used as input in most UI automation and browser automation actions and identify specific elements on windows and web pages.
 
 ## UI elements
 
-When using a UI automation action, a UI element will have to be provided as input. You can add a new UI element either directly from the action properties, or from the UI elements pane on the right-hand side of the designer:
+When deploying a UI automation or browser automation action, you may be required to provide a UI element as input. To add a new UI element, you can do it directly from the action properties or through the UI elements pane of the flow designer.
 
-![The Press button in window action.](./media/ui-elements/ui-element-input.png)
+Each one of these action groups accepts a different category of UI elements. UI automation actions accept UI elements captured from desktop applications, while browser automation actions accept UI  elements captured from web pages.
 
-To add an element to the flow, highlight it and press **Ctrl & Left click**:
+> [!NOTE]
+> UI automation actions can use only UI elements for desktop applications, while the browser automation actions can use only UI elements for webpages. Therefore, incompatible UI elements aren't available for selection. 
 
-![Capturing an UI element.](./media/ui-elements/capturing-ui-elements.png)
+![Screenshot of the available UI elements in the Press button in window action.](media/ui-elements/ui-element-input.png)
 
-When finished, press **Done**. Any UI elements captured will be added to the UI elements pane.
+To add a new UI element to your flow, select to add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**. 
 
-To access the UI elements pane, select the **UI elements** tab on the right-hand side of the flow designer:
+![Screenshot of a highlighted element.](./media/ui-elements/capturing-ui-elements.png)
 
-![The UI elements pane.](./media/ui-elements/access-ui-elements-pane.png)
+Any captured UI elements will be added to the UI elements pane. To access the UI elements pane, select the UI elements tab on the right-hand side of the flow designer.
 
-Elements can be sorted alphabetically by selecting the **Sort** option. To remove all the UI elements that aren't used in any action, select the dots icon next to the **Sort** option and then select **Remove unused UI elements**.
+![Screenshot of the UI elements tab.](./media/ui-elements/ui-elements-tab.png)
 
-To rename or delete UI elements, right-click on an item and select the appropriate function. 
+Elements can be sorted alphabetically through the **Sort** option of the  UI elements tab. To remove all the UI elements that aren't used in any action, select the dots icon next to the **Sort** option and then **Remove unused UI elements**.
 
-To use a captured element in an action, simply select it from the drop-down list:
+To rename or delete a UI element, right-click on the respective item and select the appropriate function.
 
-![Adding a UI elemen as input in an action.](./media/ui-elements/add-ui-element-as-input.png)
+To find where a specific UI element is being used in the flow, right-click on it and select **Find usages**. The results will display all the actions that use this UI element. Double-click on a result to highlight the action on the workspace.
 
+![Screenshot of the UI elements pane.](./media/ui-elements/ui-elements-pane.png)
 
-To find where the element is being used in the flow, right-click the element and select **Find usages**. The results will show the actions which use the it. Double-clicking on a result will highlight the action in the workspace.
+## UI elements types
 
-![The option to find the usages of a UI element.](./media/ui-elements/ui-element-right-click.png)
+UI automation and browser automation actions accept two different kinds of UI elements. UI automation actions accept only UI elements captured from desktop applications, while browser automation actions accept only UI elements captured from web pages.
 
-## Element Types
+To distinguish a UI element for a desktop application from a UI element for a web page, check its parent selector element. UI elements for desktop applications usually have the desktop as their parent element, while the UI elements for web pages have a webpage as their parent element.
 
-Captured elements are divided into two main categories, based on the type of application they were captured from: **UI controls** and **Web controls**.
+![Screenshot of a selector of a UI element for destop applications.](./media/ui-elements/ui-element-desktop-selector.png)
 
-Any captured elements that are part of a web page displayed in a compatible web browser (Internet Explorer, Microsoft Edge, Firefox, Google Chrome) are automatically saved as web controls, and may be used as input to **Browser automation** actions. All other elements are considered UI controls, and may be used in the respective actions.
+### UI elements for web pages
 
-## Element properties
+To capture a UI element from a webpage, you need to install the appropriate browser extension. You can find more information about the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
-Manage an element’s selectors by right-clicking any UI element and selecting **Edit selector**. This brings up the Selector builder, where the selector can be edited with a visual editor.
+When the browser extension isn't able to communicate with Power Automate, the browser window is identified as a desktop application. As a result, Power Automate tries to grab UI elements for a desktop application and not a web page.
 
-![The visual selector builder.](./media/ui-elements/visual-selector-editor.png)
+## UI elements properties
 
-To manually enter the selector’s value, toggle off Visual editor, and the text value of the selector will become editable:
+To manage a UI element’s selectors, right-click on the element and select **Edit selector**. This option brings up the Selector builder, where the selector can be edited with a visual editor.
 
-![The manual selector builder.](./media/ui-elements/manual-selector-editor.png)
+![Screenshot of the visual selector builder.](./media/ui-elements/visual-selector-editor.png)
+
+To manually enter the selector’s value, toggle off Visual editor, and the text value of the selector will become editable. You can find more information about selectors in [Build a custom selector](build-custom-selectors.md).
+
+![Screenshot of the manual selector builder.](./media/ui-elements/manual-selector-editor.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 

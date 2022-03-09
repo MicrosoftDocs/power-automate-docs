@@ -1,5 +1,5 @@
 ---
-title: Use the apply to each action to loop through an array of items. | Microsoft Docs
+title: Use the apply to each action to loop through an array of items. (contains video) | Microsoft Docs
 description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
 services: ''
 suite: flow
@@ -8,13 +8,13 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/06/2021
+ms.date: 10/06/2021
 ms.author: deonhe
 search.app: 
   - Flow
@@ -28,7 +28,7 @@ Many triggers can immediately start a cloud flow based on an event such as when 
 
 Watch this video for a demo of the **Apply to each** action.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFQLQ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7EL]
 
 In this walk-through, we'll create a cloud flow that runs every 15 minutes and does the following:
 

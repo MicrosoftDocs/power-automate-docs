@@ -7,7 +7,7 @@ ms.date: 04/21/2021
 ms.assetid: 6e6d3c34-b209-ea11-a811-000d3a4f1cdd
 ms.subservice: cloud-flow
 ms.topic: article
-ms.service: power-automate
+
 ms.author: deonhe
 dynamics365pdf: True
 ---
