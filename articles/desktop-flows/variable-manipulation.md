@@ -47,12 +47,12 @@ To make mathematical operations, use all the essential, arithmetic operators, su
 
 Arithmetic operations are predominantly used with numerical values and variables. However, you can also use the addition operator to concatenate strings. Adding numbers and text strings in the same expression will convert the numbers into text, and concatenate them with the other text strings.
 
-| Expression                  | Result                                              |
-|-----------------------------|-----------------------------------------------------|
-| %5 * 3%                     | 15 (number)                                         |
-| %4 / Var%                   | 4 divided by the value of the Variable named “Var”  |
-| %'this is ' + 'text'%       | this is text (text)                                 |
-| %'This is the number ' + 5% | This is the number 5 (text)                         |
+| Expression                  | Result                                              | Result variable type |
+|-----------------------------|-----------------------------------------------------|----------------------|
+| %5 * 3%                     | 15                                                  | Number               |
+| %4 / Var%                   | 4 divided by the value of the Variable named “Var”  | Number               |
+| %'this is ' + 'text'%       | this is text                                        | Text                 |
+| %'This is the number ' + 5% | This is the number 5                                | Text                 |
 
 ## Comparisons
 
