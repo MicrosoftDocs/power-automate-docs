@@ -23,15 +23,17 @@ search.audienceType:
 Follow these steps to move your solution and its dependencies to a new environment.
 
 1. Select **Solutions** from the navigation bar.
-1. Select the unmanaged solution that you want to export, select the **Overview** page (in the left navigation), and then select **Export**. 
-1. The **Before you export** right pane appears. Choose from the following options, and then select **Next**. 
-    - **Publish all changes** - Notice that, when you export an unmanaged solution, only published components are exported. We recommend that you select **Publish all changes** to make sure all components are included in the exported solution. 
+1. Select the unmanaged solution that you want to export.
+1. Select **Export** from the menu at the top of the screen. 
+3. The **Before you export** right pane appears. Choose from the following options.
+    - **Publish all changes** - Notice that, when you export an unmanaged solution, only published components are exported. We recommend that you select **Publish** to make sure all components are included in the exported solution. 
     - **Check for issues** - Run the solution checker against the solution to detect performance and stability issues.
-1. The **Export this solution** right pane appears. Enter or select from the following options, and then select **Export**.  
+1. Select **Next**. 
+4. The **Export this solution** page appears on the right. Enter or select from the following options, and then select **Export**.  
     - **Version number** - Power Automate automatically increments your solution version. You can accept the default version or enter your own. 
     - **Export as** - Select the package type, either **Managed** or **Unmanaged**. More information: [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 
-The export can take several minutes to complete. Once finished, the **exported solution zip file** is available in the download folder for your web browser.
+The export can take several minutes to complete. Once finished, the **exported solution zip file** is available in the downloads folder for your web browser.
 
 The flows will be in a **Workflows** folder in the solution zip file. Each exported workflow is represented as a JSON file. Flow definitions were traditionally a compact block of JSON in a single line, but in February 2022 the export format was changed to multi-line formatted JSON to make them easier to read and make them friendlier to revision tracking in source control.
 
