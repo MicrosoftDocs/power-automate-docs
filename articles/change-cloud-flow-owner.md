@@ -65,9 +65,8 @@ If the flow is a **manual** flow, the flow runs under the license of the user wh
 ![Graphical user interface, application Description automatically generated](media/change-cloud-flow-owner/bc757289d2a3f7e6da27acf3d527cc90.png)
 
 >[!NOTE]
->This change is limited to solution flows. For changing the owner of a non-solution flow, the flow must be exported and imported by the new owner.
+>This change is limited to solution-aware flows. To change the owner of a non-solution-aware flow, the new owner must export, and then import the flow.
 
-Check out this [video](https://www.youtube.com/watch?v=K7_xWJvEPUc) to learn how to export and import as new owner.
+Check out this [video](https://www.youtube.com/watch?v=K7_xWJvEPUc) to learn how to export and import flows.
 
 ![Graphical user interface, application Description automatically generated](media/change-cloud-flow-owner/b8d02d26e97291e65373eb118158c77e.png)
-
