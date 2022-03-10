@@ -45,7 +45,7 @@ You can use dynamic content from a previous step in the flow to parameterize the
 
 Use the **Search type** option to provide the syntax for the search query. Use **simple** to indicate that you want to use the simple query syntax. Or, use **full** if you prefer to use the Lucene query syntax. The default query syntax is **simple**.
 
-Take a look at the following examples or review the full list of features at [Search across table data using Dataverse search](/powerapps/developer/data-platform/webapi/relevance-search#searchmode-any--all-optional).
+Take a look at the following examples or review the full list of features at [Search across table data using Dataverse search](/powerapps/developer/data-platform/webapi/relevance-search).
 
 <!--Todo ![](../media/search-row/8d7cf1f6a3e6bfa4ea34c8c0e4938368.png) -->
 
@@ -90,7 +90,7 @@ Go to [Search across table data using Dataverse search](/powerapps/developer/dat
 ### Advanced Options
 
 You can optimize your search by using other advanced options as described is this section.
-See [Search across table data using Dataverse search](/developer/data-platform/webapi/relevance-search#query-parameters) for more examples.
+See [Search across table data using Dataverse search](/powerapps/developer/data-platform/webapi/relevance-search) for more examples.
 
 - **Row filter**: You can narrow your search by specifying filters as shown in the following image.
 
