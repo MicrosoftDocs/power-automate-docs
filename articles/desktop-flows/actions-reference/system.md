@@ -85,6 +85,9 @@ Suspends the execution until a process starts or stops
 ### <a name="runapplicationbase"></a> Run application
 Executes an application or opens a document by executing the associated application
 
+> [!IMPORTANT]
+> The **Run application** action may not launch an application successfully if the application requires elevated privileges, while Power Automate doesn't run with administrator rights.
+
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|

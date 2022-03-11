@@ -48,6 +48,9 @@ To conclude the CMD session, use the **Close CMD session** action.
 ### <a name="open"></a> Open CMD session
 Open a new CMD session
 
+> [!IMPORTANT]
+> The **Open CMD session** action may not work as expected if the selected working folder requires elevated privileges, while Power Automate doesn't run with administrator rights.
+
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|

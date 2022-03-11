@@ -58,6 +58,9 @@ The **Write text to file** action adds text to an existing .txt file or creates 
 
 ## File actions
 
+> [!IMPORTANT]
+> The file actions may not work as expected if they access files that require elevated privileges, while Power Automate doesn't run with administrator rights.
+
 
 ### <a name="iffileaction"></a> If file exists
 Marks the beginning of a conditional block of actions depending on whether a file exists or not

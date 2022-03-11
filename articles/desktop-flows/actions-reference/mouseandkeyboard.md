@@ -62,6 +62,9 @@ In the **Advanced** section, the action has been set to wait 30 seconds for the 
 ### <a name="blockinput"></a> Block Input
 Blocks user mouse and keyboard input, so that the flow can perform mouse and keyboard actions without interference from the user
 
+> [!IMPORTANT]
+> The **Block input** action won't work as expected if you run Power Automate without administrator rights. Run Power Automate as administrator to use this action. 
+
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
@@ -228,6 +231,9 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 ### <a name="sendmouseclick"></a> Send mouse click
 Sends a mouse click event
 
+> [!IMPORTANT]
+> The **Send mouse click** action may not run successfully if the target application requires elevated privileges, while Power Automate doesn't run with administrator rights.
+
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
@@ -252,6 +258,9 @@ Sends a mouse click event
 
 ### <a name="sendkeys"></a> Send keys
 Sends keys to the application that is currently active
+
+> [!IMPORTANT]
+> The **Send keys** action may not run successfully if the target application requires elevated privileges, while Power Automate doesn't run with administrator rights.
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

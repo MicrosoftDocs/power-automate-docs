@@ -85,6 +85,9 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 
 ## UI automation actions
 
+> [!IMPORTANT]
+> The UI automation actions (except for the **Use desktop** action) may not be able to interact with an application if the application requires elevated privileges, while Power Automate doesn't run with administrator rights.
+
 ## Data extraction
 Extract data from desktop applications, from a single value up to tables or custom multiple pieces of data
 ### <a name="getwindowdetails"></a> Get details of window

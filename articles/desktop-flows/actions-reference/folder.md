@@ -48,6 +48,10 @@ To get a list of a folder's contents, use the **Get subfolders in folder** actio
 Copying, moving, renaming and deleting or emptying folders each has its respective action. 
 
 ## Folder actions
+
+> [!IMPORTANT]
+> The folder actions may not work as expected if they access folders that require elevated privileges, while Power Automate doesn't run with administrator rights.
+
 ### <a name="iffolderexistsaction"></a> If folder exists
 Mark the beginning of a conditional block of actions depending on whether a folder exists or not
 
