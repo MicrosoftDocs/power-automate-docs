@@ -32,7 +32,7 @@ search.audienceType:
 
 - System requirements:
 
-   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, or Windows Server 2019. ARM devices are not supported.
+   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022. ARM devices are not supported.
       
       - Minimum hardware
          - Storage: 1GB
