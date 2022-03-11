@@ -50,7 +50,7 @@ Copying, moving, renaming and deleting or emptying folders each has its respecti
 ## Folder actions
 
 > [!IMPORTANT]
-> The folder actions may not work as expected if they access folders that require elevated privileges, while Power Automate doesn't run with administrator rights.
+> The folder actions may not work as expected if they access folders that require elevated privileges, while Power Automate doesn't run with administrator rights. You can find more information regarding running Power Automate as administrator in [Run Power Automate with elevated rights](../how-to/run-as-administrator.md).
 
 ### <a name="iffolderexistsaction"></a> If folder exists
 Mark the beginning of a conditional block of actions depending on whether a folder exists or not

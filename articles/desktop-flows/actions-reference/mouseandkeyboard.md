@@ -63,7 +63,7 @@ In the **Advanced** section, the action has been set to wait 30 seconds for the 
 Blocks user mouse and keyboard input, so that the flow can perform mouse and keyboard actions without interference from the user
 
 > [!IMPORTANT]
-> Before using the **Block input** action, ensure that you have run Power Automate as administrator. Running Power Automate as administrator provides the appropriate rights for the action to work as expected.
+> Before using the **Block input** action, ensure that you have run Power Automate as administrator. You can find more information regarding running Power Automate as administrator in [Run Power Automate with elevated rights](../how-to/run-as-administrator.md).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -232,7 +232,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 Sends a mouse click event
 
 > [!IMPORTANT]
-> The **Send mouse click** action may not run successfully if the target application requires elevated privileges, while Power Automate doesn't run with administrator rights.
+> The **Send mouse click** action may not run successfully if the target application requires elevated privileges, while Power Automate doesn't run with administrator rights. You can find more information regarding running Power Automate as administrator in [Run Power Automate with elevated rights](../how-to/run-as-administrator.md).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -260,7 +260,7 @@ Sends a mouse click event
 Sends keys to the application that is currently active
 
 > [!IMPORTANT]
-> The **Send keys** action may not run successfully if the target application requires elevated privileges, while Power Automate doesn't run with administrator rights.
+> The **Send keys** action may not run successfully if the target application requires elevated privileges, while Power Automate doesn't run with administrator rights. You can find more information regarding running Power Automate as administrator in [Run Power Automate with elevated rights](../how-to/run-as-administrator.md).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

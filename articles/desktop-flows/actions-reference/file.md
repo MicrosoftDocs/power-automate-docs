@@ -59,7 +59,7 @@ The **Write text to file** action adds text to an existing .txt file or creates 
 ## File actions
 
 > [!IMPORTANT]
-> The file actions may not work as expected if they access files that require elevated privileges, while Power Automate doesn't run with administrator rights.
+> The file actions may not work as expected if they access files that require elevated privileges, while Power Automate doesn't run with administrator rights. You can find more information regarding running Power Automate as administrator in [Run Power Automate with elevated rights](../how-to/run-as-administrator.md).
 
 
 ### <a name="iffileaction"></a> If file exists

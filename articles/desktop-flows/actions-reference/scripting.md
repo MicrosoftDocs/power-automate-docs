@@ -69,7 +69,7 @@ To use Power Automate variables in scripting actions, use the percentage notatio
 ## Scripting actions
 
 > [!IMPORTANT]
-> The scripting actions may not work as expected if they access resources (such as files) that require elevated privileges, while Power Automate doesn't run with administrator rights.
+> The scripting actions may not work as expected if they access resources (such as files) that require elevated privileges, while Power Automate doesn't run with administrator rights. You can find more information regarding running Power Automate as administrator in [Run Power Automate with elevated rights](../how-to/run-as-administrator.md).
 
 
 ### <a name="rundoscommand"></a> Run DOS command
