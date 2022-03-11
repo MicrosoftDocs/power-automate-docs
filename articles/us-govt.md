@@ -258,20 +258,20 @@ Some of the features available in the commercial version of Flow are not availab
   * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
     * Guest users cannot access the approvals center so they cannot serve as approvers.
   * There is no markdown support for approval email.
-  * Approvals are not available in DoD tenants. 
 
 - [Submitting Templates](./publish-a-template.md)
 
 - [Connectors](/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support and we will review your request.
 
 >[!NOTE]
->Third-party connectors will not be added to GCC High nor DoD. 
+>Third-party connectors are not yet available for GCC High nor DoD. 
 
 Microsoft is investigating the data loss prevention (DLP) feature, considering the possibility for connectors to be *blocked by default*. Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
 - [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
 
-- [Power Platform admin center](/power-platform/admin/admin-documentation) – You can use the admin center to [open support tickets](/power-platform/admin/get-help-support), but other functionality is currently not available in US Government tenants.
+- [Power Platform admin center](/power-platform/admin/admin-documentation) – Some functionality, such as managing Data Gateways and certain analytics reports, is not yet available.
+
 - [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**. 
 
 ### See also
