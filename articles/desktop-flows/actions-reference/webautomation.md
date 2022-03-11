@@ -86,6 +86,8 @@ You can find more information on how to use this action [here](../automation-web
 |Extraction mode|N/A|Undefined, Single value, Handpicked values, List, Table, Entire HTML table|Single value|Specify what to extract from the web page|
 |Use paging|N/A|Boolean value|False|Specify whether to use paging|
 |Get all web pages|N/A|Boolean value|False|Specify whether to get all web pages|
+|Process data upon extraction|N/A|Boolean value|False|Specify whether to process extracted data to present them exactly as displayed in the webpage. Processing of extracted data includes displaying of the information nested in iframes and filtering through hidden or visible elements. For larger datasets, having this option enabled isn't recommended as it will increase the extraction time.|
+|Timeout|Yes|Numeric value|60|Set the time in seconds that you want to wait for the extraction to be completed before the action fails|
 |Store data mode|N/A|Variable, Excel spreadsheet|Variable|Specify whether to store the extracted data in a variable or an Excel spreadsheet|
 
 
