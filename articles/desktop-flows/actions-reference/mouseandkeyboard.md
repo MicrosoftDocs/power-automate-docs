@@ -63,7 +63,7 @@ In the **Advanced** section, the action has been set to wait 30 seconds for the 
 Blocks user mouse and keyboard input, so that the flow can perform mouse and keyboard actions without interference from the user
 
 > [!IMPORTANT]
-> The **Block input** action won't work as expected if you run Power Automate without administrator rights. Run Power Automate as administrator to use this action. 
+> Before using the **Block input** action, ensure that you have run Power Automate as administrator. Running Power Automate as administrator provides the appropriate rights for the action to work as expected.
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
