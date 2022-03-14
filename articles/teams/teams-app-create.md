@@ -23,6 +23,7 @@ ms.author: hamenon
 There are multiple ways in which you can create flows within Microsoft Teams.
 
 - Power automate flow templates are directly integrated into the Microsoft Teams store. Users can browse and acquire flows directly from this new entrypoint in Teams.
+- You can also create flows from the overflow menu of  Teams message. 
 - You can also use the [Power Automate app](./install-teams-app.md) to create from a template or from scratch
 
 Flows created from either of these entrypoints can be managed directly within the Power Automate portal or from within the [Power Automate app](./install-teams-app.md) in Teams
@@ -61,7 +62,33 @@ Follow these steps to create a flow from the Microsoft Teams Store
 9.	Flows can be managed from within the Power Automate app in Teams or using the Power Automate portal. Hit “Manage workflows” in the top header of the Workflows section to quickly take you to the Power Automate app in teams to manage flows.
 ![Manage your flows in Teams](../media/power-automate-teams-app-create/Store-8.png) 
 
-## Create a cloud flow from a template
+## Create a flow from the message menu in Microsoft Teams
+
+Microsoft Teams users can also create manually triggered flows from the overflow menu of a Microsoft teams message. 
+
+Follow these steps to create a manually triggered flow from the Microsoft Teams Store
+1.	Sign in to Microsoft Teams
+
+2.	Hit the ellipses (…) menu of any message in Teams
+![Ellipses menu in Teams](../media/power-automate-teams-app-create/create-action1.png) 
+3.	Click on More actions
+![More actions entrpoint](../media/power-automate-teams-app-create/create-action2.png) 
+ 
+4.	Click on + Create new action
+![Create a new action entrypoint](../media/power-automate-teams-app-create/create-action3.png) 
+5.	This brings up a dialog that displays templates that you can setup that use the “For a selected message” manual trigger
+![Message action templates](../media/power-automate-teams-app-create/create-action35.png) 
+ 
+6.	Click on any template to set up the connections needed
+![Setup template connections](../media/power-automate-teams-app-create/create-action4.png) 
+
+7.	Click next to setup the parameters needed for the template
+![Setup template parameters](../media/power-automate-teams-app-create/create-action5.png)
+
+8.	You will see a confirmation page once your flow is created successfully!
+![Flow creation confirmation](../media/power-automate-teams-app-create/create-action6.png)
+
+## Create a cloud flow from a template in the Power Automate App
 
 >[!NOTE]
 >By default, the Power Automate app shows you templates that have been created for Microsoft Teams. You can switch filters on the top right to view all Power Automate templates, if desired.
