@@ -31,7 +31,7 @@ To send a physical click:
 
    ![Screenshot of the Send physical click option in the Click link on web page action.](media\send-physical-clicks-web-element\click-link-web-page-action-advanced.png)
 
-## Send other physical clicks on a web element
+## Send any type of physical clicks on a web element
 
 Apart from left-clicks, you may meet automation cases that require right-clicks, double-clicks, or other kinds of physical clicks on web elements.
 
