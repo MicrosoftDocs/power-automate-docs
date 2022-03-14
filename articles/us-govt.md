@@ -8,7 +8,7 @@ author: msftman
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 02/04/2022
+ms.date: 03/14/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -270,7 +270,7 @@ Microsoft is investigating the data loss prevention (DLP) feature, considering t
 
 - [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
 
-- [Power Platform admin center](/power-platform/admin/admin-documentation) – Some functionality, such as managing Data Gateways and certain analytics reports, is not yet available.
+- [Power Platform admin center](/power-platform/admin/admin-documentation) – Some functionality, such as managing data gateways and certain analytics reports, are not available.
 
 - [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**. 
 
