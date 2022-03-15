@@ -68,7 +68,7 @@ Follow these steps to create a flow from the Microsoft Teams store.
 
    ![Flow creation confirmation page](../media/power-automate-teams-app-create/Store-7.png)
 
-1.	Flows can be managed from within the Power Automate app in Teams or using the Power Automate. Select **Manage workflows** in the **Workflows** section to quickly open the Power Automate app in Teams to manage flows.
+1. You can manage your flows from within the Power Automate app in Teams or via Power Automate. Select **Manage workflows** in the **Workflows** section to quickly open the Power Automate app in Teams to manage your flows.
 
    ![Manage your flows in Teams](../media/power-automate-teams-app-create/Store-8.png)
 
@@ -164,18 +164,16 @@ This brings up the full Power Automate designer experience within Microsoft Team
 
    ![Create from blank.](../media/power-automate-teams-app-create/full-editor.png)
 
-
 ## Known issues
 
-- Any flow that you create from within the Power Automate app is located in your organization's default environment.
-- The Power Automate app and Power Automate Actions app need to be enabled in the Microsoft Teams admin center [https://admin.teams.microsoft.com/policies/manage-apps](https://admin.teams.microsoft.com/policies/manage-apps) in order for this functionality to work.
+- All flows that you create from within the Power Automate app are located in your organization's default environment.
+
+- The Power Automate app and Power Automate Actions app must be  enabled in the [Microsoft Teams admin center](https://admin.teams.microsoft.com/policies/manage-apps) in order for this functionality to work.
 
 ## Related articles
+
 - [Manage your flows in Microsoft Teams](./teams-app-home.md).
 
 - Visit the [Microsoft Teams connector documentation](/connectors/teams/).
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
