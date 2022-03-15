@@ -214,6 +214,6 @@ In the meantime, there is a workaround:
 12. Select **Assign**.
 
 ### How can I change the owner of a non-solution cloud flow?
-Ownership change for non-solution cloud flows involves creating a new flow using export/import, Save As, or the Send a copy mechanism. In-place ownership change for non-solution cloud flows is available because the owner is part of the flow identify. 
+Ownership change for non-solution cloud flows involves creating a new flow using export/import, Save As, or the Send a copy mechanism. In-place ownership change for non-solution cloud flows is not available because the owner is part of the flow identify. 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
