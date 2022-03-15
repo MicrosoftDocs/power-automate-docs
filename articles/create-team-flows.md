@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/15/2021
+ms.date: 03/15/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -196,12 +196,12 @@ If the shared flow still has an active owner, the flow continues to run.
 
  If there's no active owner for a flow, you should change the owner. To change the owner of a flow, make a copy of the flow, and then let the intended owner create the flow from the copy.
 
-### How can I change the owner of a solution cloud flow?
-It is currently not possible to change the owner of a solution cloud flow in the modern solution explorer. That capability will be added in the future.
-In the meantime, there is a workaround:
+### How can I change the owner of a solution-aware cloud flow?
+It is currently not possible to change the owner of a solution-aware cloud flow in the modern solution explorer. That capability will be added in the future.
+In the meantime, use the following steps as a a workaround.
 
-1. Obtain the environment organization URL by selecting "Switch to classic" in the Solutions Explorer and copying the host name from the URL. This is an example: https://org123456.crm10.dynamics.com/.
-2. Open environment using organization URL
+1.Get the environment organization URL by selecting **Switch to classic** in the Solutions Explorer and then copy the host name from the URL. Here's an example. https://org123456.crm10.dynamics.com/.
+2. Open the environment using organization URL.
 3. Select **Settings** > **Advanced Settings**.
 4. Select **Advanced Find**.
 5. In the **Look for lookup**, select **Processes**.
@@ -213,7 +213,7 @@ In the meantime, there is a workaround:
 11. Use the **User or team** lookup to provide the new owner.
 12. Select **Assign**.
 
-### How can I change the owner of a non-solution cloud flow?
-Ownership change for non-solution cloud flows involves creating a new flow using export/import, Save As, or the Send a copy mechanism. In-place ownership change for non-solution cloud flows is not available because the owner is part of the flow identify. 
+### How can I change the owner of a non-solution-aware cloud flow?
+To change the ownership of a non-solution-aware cloud flow, you must create a new flow with the export/import feature, and **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
