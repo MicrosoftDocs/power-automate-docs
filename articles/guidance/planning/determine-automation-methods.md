@@ -30,14 +30,14 @@ connector. For example, a connector for an email system will need actions for
 
 If there are no connectors available, you have the following options to choose from:
 - **Create a custom connector**: This is the preferred method of automation if you're a developer or your organization has a developer who can create
-custom connectors. More information: [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
+custom connectors. A custom connector will allow the automation to interact with the target system via a published API and therefore should be fairly resilient to system changes. More information: [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
 
 - **Use the HTTP connector**: If you're a developer and have one-off scenarios where you need to connect to
 systems that have no connectors available&mdash;but you don't want to set up custom
 connectors&mdash;your next-best method is to use an HTTP connector. More information from Azure Logic Apps documentation: [Add an HTTP trigger](/azure/connectors/connectors-native-http#add-an-http-trigger)
 
 - **Create a web browser automation**: If you can't find a connector, and if the system is a web browser&ndash;based
-application or a website, you should consider web browser automation.
+application or a website, you should consider web browser automation. 
 Web browser automation mimics keyboard inputs and mouse movements as if a human were using the browser. You can [build a browser automation](../../desktop-flows/actions-reference/webautomation.md) process with Power Automate Desktop.
 
 - **Create a desktop application automation**: If you can't find a connector, and if the system is a desktop application on
