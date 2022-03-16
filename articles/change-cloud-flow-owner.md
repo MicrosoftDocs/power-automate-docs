@@ -1,6 +1,6 @@
 ---
-title: Learn how to share a cloud flow with other users | Microsoft Docs
-description: Power Automate makes it easy automate repetitive tasks. You can add users or groups as owners, and collaborate with them to design and manage flows.
+title: Change the owner of cloud flow | Microsoft Docs
+description: Learn how to change the owner of a solution-aware cloud flow.
 services: ''
 suite: flow
 documentationcenter: na
