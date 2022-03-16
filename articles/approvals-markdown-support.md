@@ -243,17 +243,27 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 <td>
 <p>To insert one of the following characters, prefix with a backslash:</p>
 
-<p>```\   backslash ``` </p>
-<p ><code>\`</code>   `backtick`</p>
-<p >```_   underscore  ```</p>
-<p >```{}  curly braces  ``` </p>
-<p >```[]  square brackets ```</p>
-<p >```()  parentheses  ```</p>
-<p >```#   hash mark  ``` </p>
-<p >```+   plus sign  ```</p>
-<p >```-   minus sign (hyphen) ```</p>
-<p >```.   dot  ``` </p>
-<p >```!   exclamation mark ```</p>
+```\   backslash ```
+
+``` ` backtick```
+
+```_   underscore  ```
+
+```{}  curly braces  ```
+
+```[]  square brackets ```
+
+```()  parentheses  ```
+
+```#   hash mark  ```
+
+```+   plus sign  ```
+
+```-   minus sign (hyphen) ```
+
+```.   dot  ```
+
+```!   exclamation mark ```
 
 
 </td>
