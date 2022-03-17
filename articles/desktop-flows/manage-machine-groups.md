@@ -17,9 +17,14 @@ search.audienceType:
 
 # Manage machine groups
 
+Machine groups allow you to organize multiple machines together to help distribute your automation workload and optimize productivity. Desktop flows can be assigned to a given machine group and then will be queued to it when triggered to run. When a machine in the group is available, it will be assigned the next desktop flow to be executed in the queue. Learn more about [the desktop flow queues](monitor-desktop-flow-queues.md).
+
 ## Create a machine group 
 
-Machine groups allow you to organize multiple machines together to help distribute your automation workload and optimize productivity. 
+Machine groups can either be created from the Power Automate machine runtime app or from the Power Automate portal. 
+
+From the Power Automate machine runtime application:
+
 
 1. Sign into **Power Automate machine runtime**
 
@@ -33,7 +38,7 @@ Machine groups allow you to organize multiple machines together to help distribu
 
  ![Screenshot of the dialog to create a new machine group.](./media/manage-machine-groups/new-machine-groups.png)
 
-You can also create a machine group directly from Power Automate:
+From the Power Automate portal:
 
 1.	Sign into Power Automate.
 1.	Select **Monitor**, then select **Machines**.
