@@ -45,7 +45,7 @@
       href: process-advisor-visualize.md
     - name: Identify automation opportunities
       href: process-advisor-automation.md 
-    - name: Share processes
+    - name: Share task mining processes
       href: process-advisor-share.md
   - name: Process mining (preview)
     items:
@@ -61,6 +61,8 @@
       href: process-mining-troubleshoot.md
     - name: Visualize and gain insights from processes
       href: process-mining-visualize.md
+    - name: Share process mining processes
+      href: process-mining-share.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
   - name: Administration and security
