@@ -6,7 +6,7 @@ author: taiki-yoshida
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance
-ms.date: 12/10/2020
+ms.date: 03/16/2022
 ms.author: tayoshi
 ms.reviewer: kathyos
 
@@ -30,7 +30,7 @@ connector. For example, a connector for an email system will need actions for
 
 If there are no connectors available, you have the following options to choose from:
 - **Create a custom connector**: This is the preferred method of automation if you're a developer or your organization has a developer who can create
-custom connectors. A custom connector will allow the automation to interact with the target system via a published API and therefore should be fairly resilient to system changes. More information: [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
+custom connectors. A custom connector allows the automation to interact with the target system via a published API. This API should be resilient to system changes. More information: [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
 
 - **Use the HTTP connector**: If you're a developer and have one-off scenarios where you need to connect to
 systems that have no connectors available&mdash;but you don't want to set up custom
