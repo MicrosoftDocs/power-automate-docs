@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/08/2021
+ms.date: 03/16/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -54,7 +54,7 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
 ## More info
 
-- Read guidance on [determining which automation method (flow type) to use](./guidance/planning/determine-automation-methods)
+- Read guidance to [determining which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
 - Get started with [cloud flows](overview-cloud.md). 
 - Get started with [desktop flows](./desktop-flows/introduction.md).
 - Get started with [business process flows](business-process-flows-overview.md) in conditions in advanced mode.
