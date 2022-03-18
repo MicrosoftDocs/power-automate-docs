@@ -7,7 +7,7 @@ ms.subservice: process-advisor
 ms.topic: article
 ms.date: 11/02/2021
 ms.author: tatn
-ms.reviewer: v-aangie
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -22,6 +22,8 @@ On the left navigation pane in Power Automate, select **Process advisor** > **Pr
 > [!NOTE]
 > The [TDS endpoint setting](/power-platform/admin/settings-features) for your organization needs to be enabled. This feature is enabled by default, but if it's disabled for any reason, contact your Microsoft Power Platform administrator to enable it in the Power Platform admin center.
 
+## View your process map and related analytics
+
 Some key things to do here are to view the status of the recordings and analyze your process. The **Analyze** option in the menu gets you started. The analyze feature adds a selected recording into the process map and associated analytics. If a recording's status isn't *analyzed*, it won't be part of the analytics reports.
 
 - After the process is analyzed, the process map and related analytics are available when you select **Analytics** in the menu.
@@ -33,7 +35,7 @@ Here's a short video on how to view analytics with process advisor:<br>
 </br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMYVy ]
 
-## Recording status
+## View your recording status
 
 Each recording can have one of the following statuses:
 
