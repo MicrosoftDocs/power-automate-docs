@@ -151,7 +151,9 @@
     - name: Publish a template
       href: publish-a-template.md
     - name: Turn a cloud flow on or off
-      href: disable-flow.md 
+      href: disable-flow.md
+    - name: Change the owner of cloud flow
+      href: change-cloud-flow-owner.md 
   - name: Popular cloud flows scenarios
     items:
     - name: Use flows with approvals

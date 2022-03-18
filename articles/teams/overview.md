@@ -33,7 +33,7 @@ Trigger [flows from Teams messages](../trigger-flow-teams-message.md).| In this 
 Use flows with [adaptive cards](../create-adaptive-cards.md).| Here, adaptive cards can be used as the trigger for flows. The full set of rich adaptive cards is available to you.
 Create flows from within the [Power Apps app in Teams](./create-flows-power-apps-app.md).|Use the Power Apps app in Teams to create flows that use [Project Oakdale](/powerapps/teams/overview). Project Oakdale is a built-in, low-code data platform for Teams that empowers users to build custom apps and workflows within Teams by using Power Apps and Power Automate.
 
-Learn more about how to use Power Autoamte with Teams in the following video.
+Learn more about how to use Power Automate with Teams in the following video.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWL2mp]
 
