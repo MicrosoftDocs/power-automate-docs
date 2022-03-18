@@ -43,7 +43,7 @@ To control services, use the Windows services group of actions. These actions al
 ## Windows services actions
 
 > [!IMPORTANT]
-> The Windows services actions may not handle a service successfully if the service's access control doesn't include the appropriate user and Power Automate doesn't run with administrator rights. You can find more information regarding running Power Automate as administrator in [Run Power Automate with elevated rights](../how-to/run-as-administrator.md).
+> To prevent unauthorized access, Windows require administrator rights to manage services. To handle services using the Windows services actions, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ### <a name="ifserviceaction"></a> If service
 Marks the beginning of a conditional block of actions depending on whether a service is running, paused, stopped or installed on the computer
