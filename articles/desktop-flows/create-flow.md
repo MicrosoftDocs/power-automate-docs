@@ -30,8 +30,6 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
    >[!IMPORTANT]
    >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
 
-<!--
-
 ## Start creating desktop flows using examples
 
 Power Automate provides an extensive collection of examples to introduce users to RPA. You can find all the available examples under the **Examples** tab in the console. 
@@ -39,8 +37,6 @@ Power Automate provides an extensive collection of examples to introduce users t
 To copy an example to your flows, right-click on it and select **Create a copy**. The copied flow will be stored under the **My flows** tab.
 
 If you've opened and edited an example in the flow designer, select the **Save as** button to copy the edited example to your flows. The changes can't be saved to the original example flow. 
-
--->
 
 ## Create a new desktop flow in Power Automate
 
