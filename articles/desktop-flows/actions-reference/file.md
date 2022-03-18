@@ -58,6 +58,9 @@ The **Write text to file** action adds text to an existing .txt file or creates 
 
 ## File actions
 
+> [!IMPORTANT]
+> To prevent unauthorized access, Windows require administrator rights to access protected files. To access these resources using the file actions, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+
 
 ### <a name="iffileaction"></a> If file exists
 Marks the beginning of a conditional block of actions depending on whether a file exists or not
