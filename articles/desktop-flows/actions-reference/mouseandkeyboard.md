@@ -232,7 +232,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 Sends a mouse click event
 
 > [!IMPORTANT]
-> The **Send mouse click** action may not run successfully if the target application requires elevated privileges, while Power Automate doesn't run with administrator rights. You can find more information regarding running Power Automate as administrator in [Run Power Automate with elevated rights](../how-to/run-as-administrator.md).
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send mouse click** action to interact with applications that run with elevated privileges, run Power Automate as administrator. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -260,7 +260,7 @@ Sends a mouse click event
 Sends keys to the application that is currently active
 
 > [!IMPORTANT]
-> The **Send keys** action may not run successfully if the target application requires elevated privileges, while Power Automate doesn't run with administrator rights. You can find more information regarding running Power Automate as administrator in [Run Power Automate with elevated rights](../how-to/run-as-administrator.md).
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send keys** action to interact with applications that run with elevated privileges, run Power Automate as administrator. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
