@@ -45,7 +45,7 @@ In general, logical operators can check multiple conditions simultaneously, allo
 The **Second operand** field is populated with the value **TRUE**, while the selected **Operator** is **Equals to**. This configuration makes the action check if the expression in the **First operand** field is valid. If it's valid, the actions inside the if block will run. To check if an expression is invalid, populate the value **FALSE** in the **Second operand** field.
 
 > [!NOTE]
-> The logical expression must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables and expressions. You can find more information regarding percentage notation in [Use variables and the % notation](../variable-manipulation.md).
+> Logical expression must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables and expressions. You can find more information regarding the percentage notation and logical expressions in [Use variables and the % notation](../variable-manipulation.md).
 
 To handle more demanding validation scenarios, use multiple logical operators and parentheses. Parentheses allow you to change the order of operations and work the same way as in algebra and programming languages.
 
