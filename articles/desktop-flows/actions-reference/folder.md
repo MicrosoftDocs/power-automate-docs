@@ -48,6 +48,10 @@ To get a list of a folder's contents, use the **Get subfolders in folder** actio
 Copying, moving, renaming and deleting or emptying folders each has its respective action. 
 
 ## Folder actions
+
+> [!IMPORTANT]
+> To prevent unauthorized access, Windows require administrator rights to access protected folders. To access these resources using the folder actions, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+
 ### <a name="iffolderexistsaction"></a> If folder exists
 Mark the beginning of a conditional block of actions depending on whether a folder exists or not
 

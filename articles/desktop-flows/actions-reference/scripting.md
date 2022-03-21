@@ -68,6 +68,10 @@ To use Power Automate variables in scripting actions, use the percentage notatio
 
 ## Scripting actions
 
+> [!IMPORTANT]
+> To prevent unauthorized access, Windows require administrator rights to access protected resources. To access protected resources (such as files) using the scripting actions, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+.
+
 
 ### <a name="rundoscommand"></a> Run DOS command
 Executes a DOS command or console application in invisible mode and retrieves its output upon completion
