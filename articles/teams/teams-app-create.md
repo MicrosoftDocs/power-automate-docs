@@ -14,7 +14,7 @@ ms.subservice: teams
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/16/2022
+ms.date: 03/21/2022
 ms.author: hamenon
 ---
 
@@ -62,7 +62,7 @@ Follow these steps to create a flow from the Microsoft Teams store.
 
 1. Provide the parameters that the flow requires, and then select **Add workflow** to create the flow.
 
-   ![Setup template parameters](../media/power-automate-teams-app-create/Store-6.png)
+   ![Add workflow template](../media/power-automate-teams-app-create/Store-6.png)
 
 1. You will see a confirmation page that states that your flow was created successfully.
 
@@ -102,7 +102,7 @@ Follow these steps to create a manually triggered flow from the Microsoft Teams 
 
 1. Select **Next** to setup the parameters that the template needs.
 
-   ![Setup template parameters](../media/power-automate-teams-app-create/create-action5.png)
+   ![Setup template parameters for the flow](../media/power-automate-teams-app-create/create-action5.png)
 
 1. You will see a confirmation page once your flow is created successfully.
 
@@ -158,7 +158,7 @@ Follow these steps to create a cloud flow from a Microsoft Teams template.
 
 If you want full control over the flow that you create, select **Create from blank** from the top right side of the screen, instead of using a template.
 
-   ![Create from blank.](../media/power-automate-teams-app-create/create-blank.png)
+   ![Create from blank screenshot.](../media/power-automate-teams-app-create/create-blank.png)
 
 This brings up the full Power Automate designer experience within Microsoft Teams where you can [create a fully customized flow](../get-started-logic-flow.md).
 
