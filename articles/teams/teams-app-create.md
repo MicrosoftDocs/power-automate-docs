@@ -86,7 +86,7 @@ Follow these steps to create a manually triggered flow from the Microsoft Teams 
 
 1. Select **More actions**.
 
-   [More actions entrypoint](../media/power-automate-teams-app-create/create-action2.png)
+   ![More actions entrypoint](../media/power-automate-teams-app-create/create-action2.png)
 
 1. Select **Create new action**.
 
@@ -98,7 +98,7 @@ Follow these steps to create a manually triggered flow from the Microsoft Teams 
 
 1. Select any template to set up the connections you need.
 
-   [Setup template connections](../media/power-automate-teams-app-create/create-action4.png)
+   ![Setup template connections](../media/power-automate-teams-app-create/create-action4.png)
 
 1. Select **Next** to setup the parameters that the template needs.
 
