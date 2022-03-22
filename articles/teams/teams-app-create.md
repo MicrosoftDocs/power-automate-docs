@@ -58,7 +58,7 @@ Follow these steps to create a flow from the Microsoft Teams store.
 
 1. Select **Next** after all the connections are setup.
 
-   ![Setup template connections](../media/power-automate-teams-app-create/Store-5.png)
+   ![Select Next to setup template connections](../media/power-automate-teams-app-create/Store-5.png)
 
 1. Provide the parameters that the flow requires, and then select **Add workflow** to create the flow.
 
