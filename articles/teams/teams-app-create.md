@@ -52,7 +52,7 @@ Follow these steps to create a flow from the Microsoft Teams store.
 
    ![Flow templates in the Teams Store](../media/power-automate-teams-app-create/store.jpg)
 
-   When you select a template, a new dialog opens. Name the flow and then sign into the apps and services the flow uses (if you are not alread signed into them).
+   When you select a template, a new dialog opens. Name the flow and then sign into the apps and services the flow uses (if you are not already signed into them).
 
    ![Template details page in Teams](../media/power-automate-teams-app-create/Store-4.png)
 
