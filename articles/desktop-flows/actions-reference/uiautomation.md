@@ -85,6 +85,9 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 
 ## UI automation actions
 
+> [!IMPORTANT]
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the UI automation actions (except for the **Use desktop** action) to interact with applications that run with elevated privileges, run Power Automate as administrator. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+
 ## Data extraction
 Extract data from desktop applications, from a single value up to tables or custom multiple pieces of data
 ### <a name="getwindowdetails"></a> Get details of window
