@@ -69,7 +69,7 @@ conceptualContent:
         - text: Scheduled flows
           url: ./run-scheduled-tasks.md
           itemType: overview
-        - text: Button flows
+        - text: Instant flows
           url: ./introduction-to-button-flows.md
           itemType: overview
     
