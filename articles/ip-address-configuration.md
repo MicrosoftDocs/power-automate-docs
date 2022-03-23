@@ -55,8 +55,8 @@ The following table lists the services to which Power Automate connects. Ensure 
 | nps.onyx.azure.net | https | Access to NPS (Net Promoter Score). |
 | webshell.suite.office.com | https | Access to Office for header and search. Please see [the Office 365 urls and ranges](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details. |
 | *.dynamics.com | https | Access to Dataverse tables |
-|go.microsoft.com|https|Access to the Power Automate for desktop updater|
-|download.microsoft.com|https|Access to the Power Automate for desktop updater|
+|go.microsoft.com|https|Access to the Power Automate to check for updates|
+|download.microsoft.com|https|Access to the Power Automate to check for updates|
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
 
 ## Approval email delivery
