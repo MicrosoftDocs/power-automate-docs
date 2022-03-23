@@ -25,7 +25,7 @@ search.audienceType:
 
 Owners, co-owners, and admins can change the owner of a solution-aware flow to enable business continuity when the original owner isn't available.
 
-You can change the owner to an individual (not a distribution list) or a service account. If the flow uses a service account, it's considered as a department/organization flow and will need a per flow license.
+You can change the owner to an individual (not a distribution list) or a service account. Make sure to evaluate if the new owner is properly [licensed](/power-platform/admin/power-automate-licensing/overview).
 
 >[!NOTE]
 >You cannot change the owner to a service principal.
