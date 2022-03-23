@@ -32,7 +32,7 @@ search.audienceType:
 
 - System requirements:
 
-   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, or Windows Server 2019. ARM devices are not supported.
+   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022. ARM devices are not supported.
       
       - Minimum hardware
          - Storage: 1GB
@@ -116,7 +116,8 @@ Below you can find detailed comparison on what each user will have access to. Yo
 While creating desktop flows, some actions may need to access resources with elevated rights, such as files and applications. To run these actions successfully, launch Power Automate as administrator:
 
 > [!IMPORTANT]
-> You should launch Power Automate as administrator to run desktop flows through the flow designer or the console. If you trigger desktop flows through the cloud, the deployed UI automation actions can't interact with applications with elevated rights.
+> - To run desktop flows through the flow designer or the console to interact with an application running with elevated rights, launch Power Automate as an administrator. 
+> - When running desktop flows through the cloud, actions can't perform with elevated privileges and thus interact with applications running with elevated rights.
 
 1. Before launching Power Automate, ensure that the application is closed and doesn't appear on the Windows system tray.
 
