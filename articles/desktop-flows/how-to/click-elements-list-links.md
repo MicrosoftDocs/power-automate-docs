@@ -29,7 +29,7 @@ To automate these scenarios, use the **Extract data from web page** action and e
 
 After the extraction, you can use the **DataFromWebPage.RowsCount** property to get the number of the elements in the list.
 
-To make the flow iterate through all the links on the page, use a **Loop** action. The loop should start from 0 and end at **%DataFromWebPage.Count-1%**.
+To make the flow iterate through all the links on the page, use a **Loop** action. The loop should start from 0 and end at **%DataFromWebPage.RowsCount-1%**.
 
 ![Screenshot of the Loop action.](media/click-elements-list-links/loop-action.png)
 
