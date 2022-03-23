@@ -118,7 +118,7 @@ While creating desktop flows, some actions may need to access resources with ele
 
 > [!IMPORTANT]
 > - To run desktop flows through the flow designer or the console to interact with an application running with elevated rights, launch Power Automate as an administrator. 
-> - When running desktop flows through the cloud, actions can't perform with elevated privileges and thus interact with applications running with elevated rights.
+> - When a desktop flow is triggered by a cloud flow, the actions contained in the desktop flow that require elevated privileges won't have any effect. Therefore, Power Automate won't be able to access applications that run with elevated rights and their elements.
 
 1. Before launching Power Automate, ensure that the application is closed and doesn't appear on the Windows system tray.
 
