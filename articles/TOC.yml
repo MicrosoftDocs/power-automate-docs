@@ -718,6 +718,8 @@
     href: experimental-features.md
   - name: Pricing and billing
     href: billing-questions.md
+  - name: Licensing
+    href: /power-platform/admin/power-automate-licensing/overview
   - name: Admin center
     href: admin-center-introduction.md
   - name: Administer environments
