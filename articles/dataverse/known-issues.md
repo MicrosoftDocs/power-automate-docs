@@ -9,7 +9,7 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -26,7 +26,7 @@ search.audienceType:
 
 Here's a list of known issues with Microsoft Dataverse and Microsoft Power Automate.
 
-- **Localization of metadata** – When you change the Power Automate language and regional locale settings, there's no change to metadata like table and column names. There is no change in the metadata because they display in the language and regional locale settings of your Microsoft Dataverse environment. See [Languages](https://docs.microsoft.com/powerapps/user/set-personal-options#languages-tab-options) to view your Dataverse settings.
+- **Localization of metadata** – When you change the Power Automate language and regional locale settings, there's no change to metadata like table and column names. There is no change in the metadata because they display in the language and regional locale settings of your Microsoft Dataverse environment. See [Languages](/powerapps/user/set-personal-options#languages-tab-options) to view your Dataverse settings.
 
 - **Working with lookup fields** – When working with the [Add a new row](./create.md) and [Update a row](./update.md) actions, you must enter lookup fields in the following syntax – **entity_unique_name(Item_ID)**.
 

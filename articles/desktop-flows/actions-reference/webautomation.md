@@ -2,9 +2,9 @@
 title: Browser automation | Microsoft Docs
 description: Browser automation Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,31 +21,29 @@ Start and manage web applications on browsers
 
 You can find more information on how to use the browser automation actions [here](../automation-web.md)
 
-|<!-- --> |
-|-----|
-|[Extract data from web page](#extractdata)|
-|[Get details of web page](#getdetailsofwebpage)|
-|[Get details of element on web page](#getdetailsofelement)|
-|[Take screenshot of web page](#takescreenshotbase)|
-|[Focus text field on web page](#focusbase)|
-|[Populate text Field on web page](#populatetextfieldbase)|
-|[Set check box state on web page](#setcheckboxstatebase)|
-|[Select radio button on web page](#selectradiobuttonbase)|
-|[Set drop-down list value on web page](#setdropdownlistvaluebase)|
-|[Press button on web page](#pressbuttonbase)|
-|[If web page contains](#ifwebpagecontainsaction)|
-|[Wait for web page content](#waitforwebpagecontentaction)|
-|[Launch new Internet Explorer](#launchinternetexplorerbase)|
-|[Launch new Firefox](#launchfirefoxbase)|
-|[Launch new Chrome](#launchchromebase)|
-|[Launch new Microsoft Edge](#launchedgebase)|
-|[Create new tab](#createnewtabbase)|
-|[Go to web page](#gotowebpagebase)|
-|[Click link on web page](#clickbase)|
-|[Click download link on web page](#clickdownloadlink)|
-|[Run JavaScript function on web page](#executejavascript)|
-|[Hover mouse over element on web page](#hoveroverelement)|
-|[Close web browser](#closewebbrowser)|
+[Extract data from web page](#extractdata)  
+[Get details of web page](#getdetailsofwebpage)  
+[Get details of element on web page](#getdetailsofelement)  
+[Take screenshot of web page](#takescreenshotbase)  
+[Focus text field on web page](#focusbase)  
+[Populate text Field on web page](#populatetextfieldbase)  
+[Set check box state on web page](#setcheckboxstatebase)  
+[Select radio button on web page](#selectradiobuttonbase)  
+[Set drop-down list value on web page](#setdropdownlistvaluebase)  
+[Press button on web page](#pressbuttonbase)  
+[If web page contains](#ifwebpagecontainsaction)  
+[Wait for web page content](#waitforwebpagecontentaction)  
+[Launch new Internet Explorer](#launchinternetexplorerbase)  
+[Launch new Firefox](#launchfirefoxbase)  
+[Launch new Chrome](#launchchromebase)  
+[Launch new Microsoft Edge](#launchedgebase)  
+[Create new tab](#createnewtabbase)  
+[Go to web page](#gotowebpagebase)  
+[Click link on web page](#clickbase)  
+[Click download link on web page](#clickdownloadlink)  
+[Run JavaScript function on web page](#executejavascript)  
+[Hover mouse over element on web page](#hoveroverelement)  
+[Close web browser](#closewebbrowser)  
 
 ## Getting started with browser automation
 

@@ -81,6 +81,8 @@
       href: publish-a-template.md
     - name: Turn a cloud flow on or off
       href: disable-flow.md
+    - name: Change the owner of cloud flow
+      href: change-cloud-flow-owner.md 
   - name: Popular cloud flows scenarios
     items:
     - name: Use flows with approvals
@@ -432,10 +434,14 @@
       href: ./desktop-flows/use-conditionals.md
     - name: Automate web flows
       href: ./desktop-flows/automation-web.md
+    - name: Create custom forms
+      href: ./desktop-flows/custom-forms.md     
     - name: Use browsers and manage extensions
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
+    # - name: Automate on virtual desktops
+    #  href: ./desktop-flows/automate-virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
   - name: How to
@@ -443,7 +449,7 @@
     - name: Handle and manipulate variables
       items:
       - name: Check if a variable is numeric
-        href: ./desktop-flows/how-to/check-if-variable-numeric.md 
+        href: ./desktop-flows/how-to/check-if-variable-numeric.md        
       - name: Delete a row/column from a datatable
         href: ./desktop-flows/how-to/delete-row-column-datatable.md 
     - name: Handle email messages in desktop flows
@@ -489,7 +495,9 @@
       - name: Get the position and size of a window
         href: ./desktop-flows/how-to/get-position-size-window.md 
       - name: Automate applications using keyboard shortcuts
-        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md  
+        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md 
+      - name: Automate with mouse, keyboard, and OCR actions
+        href: ./desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md  
       - name: Access elements that depend on how the window appears on the screen
         href: ./desktop-flows/how-to/access-elements-depend-window.md  
       - name: Automate Java applications
@@ -498,6 +506,8 @@
       items:
       - name: Handle links that open new tabs
         href: ./desktop-flows/how-to/links-open-new-tabs.md 
+      - name: Retrieve details from a web page
+        href: ./desktop-flows/how-to/retrieve-details-web-page.md
       - name: Get the coordinates and size of a web element
         href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
       - name: Send physical clicks on a web element
@@ -514,8 +524,10 @@
         href: ./desktop-flows/how-to/populate-text-fields-click-links-javascript.md
     - name: Convert data and files
       items: 
-      - name: Convert a file to Base64 string format
-        href: ./desktop-flows/how-to/convert-file-base64-format.md
+      - name: Convert a text variable to datetime
+        href: ./desktop-flows/how-to/convert-text-datetime.md        
+      - name: Convert data using PowerShell
+        href: ./desktop-flows/how-to/convert-data-powershell.md
       - name: Convert Base64 text to hexadecimal format
         href: ./desktop-flows/how-to/convert-base64-hexadecimal-format.md
     - name: Run and troubleshoot SQL queries    
@@ -526,6 +538,8 @@
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
     - name: Use logical operations on conditional statements  
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md  
+    - name: Handle custom forms
+      href: ./desktop-flows/how-to/handle-custom-forms.md  
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Run SQL queries to Microsoft Access
@@ -536,6 +550,8 @@
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Extract text from a Word document using VBScript
       href: ./desktop-flows/how-to/extract-text-word-document.md
+    - name: Pass a datatable from a cloud flow to a desktop flow
+      href: ./desktop-flows/how-to/passing-datatable.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -700,6 +716,8 @@
       href: use-cds-for-apps-dialogs.md
     - name: Replace classic Dataverse dialogs
       href: replace-dialogs.md
+- name: AI Builder
+  href: use-ai-builder.md
 - name: For developers
   items:
   - name: Enterprise developers, partners, and ISVs
@@ -721,6 +739,8 @@
   items:
   - name: Flows in your organization Q&A
     href: organization-q-and-a.md
+  - name: Enable experimental features
+    href: experimental-features.md
   - name: Pricing and billing
     href: billing-questions.md
   - name: Admin center

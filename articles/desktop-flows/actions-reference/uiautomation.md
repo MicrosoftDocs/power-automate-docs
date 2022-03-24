@@ -2,9 +2,9 @@
 title: UI automation | Microsoft Docs
 description: UI automation Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -22,39 +22,38 @@ Interact with desktop/windows applications
 
 You can find more information on how to use the UI automation actions [here](../desktop-automation.md)
 
-|<!-- --> |
-|-----|
-|[Get details of window](#getwindowdetails)|
-|[Get details of a UI element in window](#getelementdetails)|
-|[Get selected checkboxes in window](#getselectedcheckboxesinwindow)|
-|[Get selected radio button in window](#getselectedradiobuttoninwindow)|
-|[Extract data from window](#extractdatafromwindow)|
-|[Take screenshot of UI element](#takescreenshot)|
-|[Focus text field in window](#focustextfield)|
-|[Populate text field in window](#populatetextfield)|
-|[Press button in window](#pressbutton)|
-|[Select radio button in window](#selectradiobutton)|
-|[Set checkbox state in window](#setcheckboxstate)|
-|[Set drop-down list value in window](#setdropdownlistvalueinwindow)|
-|[Get window](#getwindowbase)|
-|[Focus window](#focuswindowbase)|
-|[Set window state](#setwindowstatebase)|
-|[Set window visibility](#setwindowvisibilitybase)|
-|[Move window](#movewindowbase)|
-|[Resize window](#resizewindowbase)|
-|[Close window](#closewindowbase)|
-|[If window contains](#ifwindowcontainsaction)|
-|[Wait for window content](#waitforwindowcontentaction)|
-|[If image](#ifimageaction)|
-|[Use desktop](#usedesktop)|
-|[Select tab in window](#selecttab)|
-|[Wait for image](#waitforimageaction)|
-|[Click UI element in window](#click)|
-|[Select menu option in window](#selectmenuoption)|
-|[Drag and drop UI element in window](#draganddropelement)|
-|[Expand/collapse tree node in window](#expandcollapsetreenode)|
-|[If window](#ifwindowaction)|
-|[Wait for window](#waitforwindowaction)|
+
+[Get details of window](#getwindowdetails)  
+[Get details of a UI element in window](#getelementdetails)  
+[Get selected checkboxes in window](#getselectedcheckboxesinwindow)  
+[Get selected radio button in window](#getselectedradiobuttoninwindow)  
+[Extract data from window](#extractdatafromwindow)  
+[Take screenshot of UI element](#takescreenshot)  
+[Focus text field in window](#focustextfield)   
+[Populate text field in window](#populatetextfield)   
+[Press button in window](#pressbutton)  
+[Select radio button in window](#selectradiobutton)  
+[Set checkbox state in window](#setcheckboxstate)  
+[Set drop-down list value in window](#setdropdownlistvalueinwindow)  
+[Get window](#getwindowbase)  
+[Focus window](#focuswindowbase)  
+[Set window state](#setwindowstatebase)  
+[Set window visibility](#setwindowvisibilitybase)  
+[Move window](#movewindowbase)  
+[Resize window](#resizewindowbase)  
+[Close window](#closewindowbase)  
+[If window contains](#ifwindowcontainsaction)  
+[Wait for window content](#waitforwindowcontentaction)  
+[If image](#ifimageaction)  
+[Use desktop](#usedesktop)  
+[Select tab in window](#selecttab)  
+[Wait for image](#waitforimageaction)  
+[Click UI element in window](#click)  
+[Select menu option in window](#selectmenuoption)  
+[Drag and drop UI element in window](#draganddropelement)  
+[Expand/collapse tree node in window](#expandcollapsetreenode)  
+[If window](#ifwindowaction)  
+[Wait for window](#waitforwindowaction)  
 
 ## Getting started with UI automation
 
@@ -85,6 +84,9 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 > You can find more information about developing UI automation flows and creating custom selectors in [Automate desktop flows](../desktop-automation.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
 
 ## UI automation actions
+
+> [!IMPORTANT]
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the UI automation actions (except for the **Use desktop** action) to interact with applications that run with elevated privileges, run Power Automate as administrator. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ## Data extraction
 Extract data from desktop applications, from a single value up to tables or custom multiple pieces of data

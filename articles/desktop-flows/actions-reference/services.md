@@ -2,9 +2,9 @@
 title: Windows services | Microsoft Docs
 description: Windows services Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,14 +21,12 @@ search.audienceType:
 
 Control the workstation's installed services
 
-|<!-- --> |
-|-----|
-|[If service](#ifserviceaction)|
-|[Wait for service](#waitforserviceaction)|
-|[Start service](#start)|
-|[Stop service](#stop)|
-|[Pause service](#pause)|
-|[Resume service](#resume)|
+[If service](#ifserviceaction)  
+[Wait for service](#waitforserviceaction)  
+[Start service](#start)  
+[Stop service](#stop)  
+[Pause service](#pause)  
+[Resume service](#resume)  
 
 ## Getting started with services
 
@@ -36,13 +34,16 @@ Power Automate allows users to handle Windows services through the Windows servi
 
 To control services, use the Windows services group of actions. These actions allow flows to start, stop, pause and resume Windows services. In the figure below, the **Start service** action starts **UIFlowService**. For this group of actions, only the service name is required, and no output is returned.
 
-![screenshot of start service action properties.](\media\services\start-service-example.png)
+![Screenshot of the Start service action.](\media\services\start-service-example.png)
 
 > [!NOTE]
 > Please note that Windows services are essential to the smooth operation of the operating system. Managing Windows services incorrectly could adversely affect your PC. 
 
 
 ## Windows services actions
+
+> [!IMPORTANT]
+> To prevent unauthorized access, Windows require administrator rights to manage services. To handle services using the Windows services actions, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ### <a name="ifserviceaction"></a> If service
 Marks the beginning of a conditional block of actions depending on whether a service is running, paused, stopped or installed on the computer

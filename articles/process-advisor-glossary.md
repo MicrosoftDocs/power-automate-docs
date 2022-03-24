@@ -2,7 +2,7 @@
 title:  Glossary in process advisor | Microsoft Docs
 description: Terminology used in the process advisor feature in Power Automate.
 author: nijemcevic 
-ms.service: power-automate
+
 ms.subservice: process-advisor
 ms.topic: article
 ms.date: 5/25/2021
@@ -35,7 +35,7 @@ search.audienceType:
 
 **Power Query**&mdash;A data transformation and data preparation engine. Power Query comes with a graphical interface for getting data from sources and a Power Query Editor for applying transformations. Learn more: [What is Power Query?](/power-query/power-query-what-is-power-query)
 
-**Process**&mdash;A series of activities taken to accomplishes a goal. Planning demand and converting purchase requisition to purchase orders are examples of processes. 
+**Process**&mdash;A series of activities taken to accomplish a goal. Planning demand and converting purchase requisition to purchase orders are examples of processes. 
 
 **Process map**&mdash;Visualizes the actual flow of your process based on the imported user or system data.
 

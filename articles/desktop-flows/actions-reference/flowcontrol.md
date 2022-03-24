@@ -2,9 +2,9 @@
 title: Flow control | Microsoft Docs
 description: Flow control Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,18 +21,16 @@ search.audienceType:
 
 Control the automation flow
 
-|<!-- --> |
-|-----|
-|[Comment](#comment)|
-|[End](#end)|
-|[Exit subflow](#exitfunction)|
-|[Get last error](#getlasterror)|
-|[Go to](#goto)|
-|[Label](#label)|
-|[On block error](#block)|
-|[Run subflow](#callfunction)|
-|[Stop flow](#exit)|
-|[Wait](#wait)|
+[Comment](#comment)  
+[End](#end)  
+[Exit subflow](#exitfunction)  
+[Get last error](#getlasterror)  
+[Go to](#goto)  
+[Label](#label)  
+[On block error](#block)  
+[Run subflow](#callfunction)  
+[Stop flow](#exit)  
+[Wait](#wait)  
 
 ## Getting started with flow control
 
@@ -40,11 +38,11 @@ Flow control refers to controlling the order in which actions and subflows run. 
 
 **Labels** are used to create points of reference for the **Go to** action to direct the flow to. In the figure below, the flow is directed to a label earlier in the flow to repeat a series of actions.
 
-![Screenshot of label in action.](\media\flowcontrol\label-example.png)
+![Screenshot of a deployed label action in a flow.](\media\flowcontrol\label-example.png)
 
 The **Run subflow** action interrupts the subflow in which it is placed and runs another subflow. When the second subflow completes, the flow reverts to the original subflow to continue running. In the figure below, the subflow **Calculate Discount** has been created to run multiple times throughout the runtime of the flow, to avoid repeating the same code.
 
-![Screenshot of subflow in action.](\media\flowcontrol\subflows-example.png)
+![Screenshot of a deployed Run subflow action.](\media\flowcontrol\subflows-example.png)
 
 
 ## Flow control actions
@@ -91,7 +89,9 @@ Exits current subflow and returns to the point it was called from
 Retrieves the last error that occured in the flow
 
 ##### Input Parameters
-- This action doesn't require any input
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Clear error|N/A|Boolean value|False|After the error is stored in the variable, it's cleared so that next time the error is retrieved, it won't retrieve the same error value|
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -136,6 +136,7 @@ Marks the beginning of a block to handle actions errors
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Name|No|Text value||The name of the Exception Block for Visual purposes only.|
+|Capture unexpected logic errors|N/A|Boolean value|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, diving a number by zero or trying to access an item from an out of bounds position.|
 
 
 ##### Variables Produced

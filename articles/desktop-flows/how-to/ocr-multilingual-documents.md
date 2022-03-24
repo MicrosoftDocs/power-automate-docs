@@ -2,7 +2,7 @@
 title: Perform OCR on multilingual documents | Microsoft Docs
 description: Perform OCR on multilingual documents
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/08/2021
@@ -23,14 +23,14 @@ Although most scenarios require you to handle text in a specific language, there
 
 To perform OCR on these sources, use a Tesseract engine in the respective OCR action and enable the **Use other languages** option in the engine settings.
 
-![The Use other languages option in the Exctract text witg OCR action.](media/ocr-multilingual-documents/use-other-languages-extract-text-ocr-action.png)
+![Screenshot of the Use other languages option in the Exctract text witg OCR action.](media/ocr-multilingual-documents/use-other-languages-extract-text-ocr-action.png)
 
 When the **Use other languages** option is enabled, the action displays two additional settings: the **Language abbreviation** and **Language data path** fields.
 
 The **Language abbreviation** field indicates to the engine which language to look for during OCR. 
 The **Language data path** field contains the language data files (**.traineddata**) used to train the OCR engine.
 
-![The Language abbreviation and Language data path fields in the Exctract text witg OCR action.](media/ocr-multilingual-documents/language-abbreviation-extract-text-ocr-action.png)
+![Screenshot of the Language abbreviation and Language data path fields in the Exctract text witg OCR action.](media/ocr-multilingual-documents/language-abbreviation-extract-text-ocr-action.png)
 
 After downloading the data files for the needed languages, move them to a common folder to make them available under the same path.
 
@@ -39,4 +39,4 @@ Next, select the created folder in the **Language data path** field, and populat
 > [!NOTE]
 > You can find all the available language codes in the source of the language data files. In the following example, the used codes represent Telugu, Hindi, and English.
 
-![The populated Language abbreviation and Language data path fields in the Exctract text witg OCR action.](media/ocr-multilingual-documents/populated-language-abbreviation-extract-text-ocr-action.png)
+![Screenshot of the populated Language abbreviation and Language data path fields in the Exctract text witg OCR action.](media/ocr-multilingual-documents/populated-language-abbreviation-extract-text-ocr-action.png)

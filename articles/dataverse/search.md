@@ -9,7 +9,7 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -45,24 +45,25 @@ You can use dynamic content from a previous step in the flow to parameterize the
 
 Use the **Search type** option to provide the syntax for the search query. Use **simple** to indicate that you want to use the simple query syntax. Or, use **full** if you prefer to use the Lucene query syntax. The default query syntax is **simple**.
 
-Take a look at the following examples or review the full list of features at [Search across table data using Dataverse search](/powerapps/developer/data-platform/webapi/relevance-search#searchmode-any--all-optional).
+Take a look at the following examples or review the full list of features at [Search across table data using Dataverse search](/powerapps/developer/data-platform/webapi/relevance-search).
 
 <!--Todo ![](../media/search-row/8d7cf1f6a3e6bfa4ea34c8c0e4938368.png) -->
 
 The simple query syntax supports the following functionality:
 
-Operator|Description
----------|-----------
-Boolean operators| AND operator; denoted by + </br>OR operator; denoted by \|</br>NOT operator; denoted by -
+|Operator|Description|
+|---------|-----------|
+|Boolean operators| AND operator; denoted by + </br>OR operator; denoted by \|</br>NOT operator; denoted by -
 | Precedence operators | A search term "hotel+(wifi \| luxury)" will search for results containing the term "hotel" and either "wifi" or "luxury" (or both). |
 | Wildcards            | Trailing wildcards are supported; for example, "Alp\*" searches for "alpine".                                                        |
 | Exact matches        | A query enclosed in quotation marks " ".                                                                                            |
 
 The Lucene query syntax supports the following functionality:<!-- Edit note: Can you confirm that the Proximity search example below is correct. Expected quotes after the 5. -->
 
-Operator|Description
----------|-----------
-Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, –
+
+|Operator|Description|
+|---------|-----------|
+|Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, –
 | Precedence operators              | The same functionality as simple query syntax.                       |
 | Wildcards                         | In addition to a trailing wildcard, also supports a leading wildcard.</br>Trailing wildcard – "alp*"</br>Leading wildcard - “/.*pine/”                                 |
 | Fuzzy search                      | Supports queries misspelled by up to two characters. </br>"Uniersty~" will return "University"</br>"Blue~1" will return "glue", "blues"                                            |         |
@@ -89,7 +90,7 @@ Go to [Search across table data using Dataverse search](/powerapps/developer/dat
 ### Advanced Options
 
 You can optimize your search by using other advanced options as described is this section.
-See [Search across table data using Dataverse search](/developer/data-platform/webapi/relevance-search#query-parameters) for more examples.
+See [Search across table data using Dataverse search](/powerapps/developer/data-platform/webapi/relevance-search) for more examples.
 
 - **Row filter**: You can narrow your search by specifying filters as shown in the following image.
 
@@ -103,8 +104,8 @@ See [Search across table data using Dataverse search](/developer/data-platform/w
 
 You can use the outputs of the action directly from **Dynamic content**. Here's the meaning of each of the parameters.
 
-Parameter name|Description
---------------|-----------
+|Parameter name|Description|
+|--------------|-----------|
 Body|The object that represents the entire response. It contains the list of rows, total row count, and facet results.
 List of rows|An object that represents all the rows returned.
 List of rows item|An individual row in the list of rows, when used inside a loop.

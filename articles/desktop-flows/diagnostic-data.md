@@ -2,7 +2,7 @@
 title: Data Collection in Power Automate | Microsoft Docs
 description: Data Collection in Power Automate
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/21/2021

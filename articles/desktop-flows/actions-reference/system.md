@@ -2,9 +2,9 @@
 title: System | Microsoft Docs
 description: System Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -21,16 +21,14 @@ search.audienceType:
 
 Perform a variety of tasks in a Windows environment and retrieve information from the system
 
-|<!-- --> |
-|-----|
-|[If process](#ifprocessaction)|
-|[Wait for process](#waitprocessaction)|
-|[Run application](#runapplicationbase)|
-|[Terminate process](#terminateprocess)|
-|[Ping](#ping)|
-|[Set Windows environment variable](#setenvironmentvariable)|
-|[Get Windows environment variable](#getenvironmentvariable)|
-|[Delete Windows environment variable](#deleteenvironmentvariable)|
+[If process](#ifprocessaction)  
+[Wait for process](#waitprocessaction)  
+[Run application](#runapplicationbase)  
+[Terminate process](#terminateprocess)  
+[Ping](#ping)  
+[Set Windows environment variable](#setenvironmentvariable)  
+[Get Windows environment variable](#getenvironmentvariable)  
+[Delete Windows environment variable](#deleteenvironmentvariable)  
 
 ## Getting started with system actions
 
@@ -38,11 +36,11 @@ Use system actions to automate tasks which are fundamental to the Windows operat
 
 Launch any of your installed applications with the **Run application** action. Command line arguments require placement in quotes and a space among them. In the figure below, the **Run application** actions opens a specific document in Word in quiet mode:
 
-![screenshot of the Run application action properties window.](\media\system\run-application-example.png)
+![Screenshot of the Run application action.](\media\system\run-application-example.png)
 
 Apart from running applications, Power Automate for desktop enables you to terminate processes by name or ID through the **Terminate process** action and wait for processes to start or stop through the **Wait for process** action.
 
-![screenshot of the Wait for process action properties window.](\media\system\wait-process-action.png)
+![Screenshot of the Wait for process action.](\media\system\wait-process-action.png)
 
 If you want to handle Windows environment variables, use the **Set Windows environment variable**, **Get Windows environment variable**, and **Delete Windows environment variable** actions for the respective tasks.
 
@@ -86,6 +84,9 @@ Suspends the execution until a process starts or stops
 
 ### <a name="runapplicationbase"></a> Run application
 Executes an application or opens a document by executing the associated application
+
+> [!IMPORTANT]
+> Many applications with advanced functionality require elevated rights to prevent unauthorized access to system resources. To launch these applications using the **Run application** action, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|

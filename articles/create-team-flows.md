@@ -8,13 +8,13 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/15/2021
+ms.date: 03/15/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -188,27 +188,32 @@ You can share a copy of a cloud flow with another user, who can then use the def
 
 ### What happens if the user who created a shared flow leaves the organization?
 
-If the shared flow still has an active owner, the flow will continue to run. 
+If the shared flow still has an active owner, the flow continues to run. 
 
 >[!NOTE]
 >If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
 <!--markdownlint-enable MD036-->
 
-### How can I change the owner of a solution flow?
-It is currently not possible to change the owner of a solution flow in the modern solution explorer. That capability will be added in the future.
-In the meantime, there is a workaround:
+ If there's no active owner for a flow, you should change the owner. To change the owner of a flow, make a copy of the flow, and then let the intended owner create the flow from the copy.
 
-1. Obtain the environment organization URL by selecting "Switch to classic" in the Solutions Explorer and copying the host name from the URL. This is an example: https://org123456.crm10.dynamics.com/.
-2. Open environment using organization URL
-3. Select **Settings** > **Advanced Settings**.
-4. Select **Advanced Find**.
-5. In the **Look for lookup**, select **Processes**.
-6. Select **Clear** to clear the existing filter.
-7. In the filter area, add a filter for Category Equals "Modern Flow"
-8. Select **Results** to see the list of flows that you own.
-9. Select the check box next to the desired flow and then select **Assign Processes**.
-10. Change **Assign to** to **User or team**.
-11. Use the **User or team** lookup to provide the new owner.
-12. Select **Assign**.
+### How can I change the owner of a solution-aware cloud flow?
+It is currently not possible to change the owner of a solution-aware cloud flow in the modern solution explorer. That capability will be added in the future.
+In the meantime, use the following steps as a a workaround.
+
+1. Get the environment organization URL by selecting **Switch to classic** in the Solutions Explorer and then copy the host name from the URL. Here's an example. https://org123456.crm10.dynamics.com/.
+1. Open the environment using organization URL.
+1. Select **Settings** > **Advanced Settings**.
+1. Select **Advanced Find**.
+1. In the **Look for lookup**, select **Processes**.
+1. Select **Clear** to clear the existing filter.
+1. In the filter area, add a filter for Category Equals "Modern Flow"
+1. Select **Results** to see the list of flows that you own.
+1. Select the check box next to the desired flow and then select **Assign Processes**.
+1. Change **Assign to** to **User or team**.
+1. Use the **User or team** lookup to provide the new owner.
+1. Select **Assign**.
+
+### How can I change the owner of a non-solution-aware cloud flow?
+To change the ownership of a non-solution-aware cloud flow, you must create a new flow with the export/import feature, and **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

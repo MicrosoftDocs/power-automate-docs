@@ -2,9 +2,9 @@
 title: File | Microsoft Docs
 description: File Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -20,20 +20,20 @@ search.audienceType:
 
 Manage and manipulate files
 
-|<!-- --> |
-|-----|
-|[If file exists](#iffileaction)|
-|[Wait for file](#waitforfileaction)|
-|[Copy file(s)](#copy)|
-|[Move file(s)](#move)|
-|[Delete file(s)](#delete)|
-|[Rename file(s)](#renamefiles)|
-|[Read text from file](#readtextfromfile)|
-|[Write text to file](#writetext)|
-|[Read from CSV file](#readfromcsvfile)|
-|[Write to CSV file](#writetocsvfile)|
-|[Get file path part](#getpathpart)|
-|[Get temporary file](#gettemppath)|
+[If file exists](#iffileaction)  
+[Wait for file](#waitforfileaction)  
+[Copy file(s)](#copy)  
+[Move file(s)](#move)  
+[Delete file(s)](#delete)  
+[Rename file(s)](#renamefiles)  
+[Read text from file](#readtextfromfile)  
+[Write text to file](#writetext)  
+[Read from CSV file](#readfromcsvfile)  
+[Write to CSV file](#writetocsvfile)  
+[Get file path part](#getpathpart)  
+[Get temporary file](#gettemppath)  
+[Convert file to Base64](#convertfiletobase64action)  
+[Convert Base64 to file](#convertbase64tofileaction)
 
 ## Getting started with file actions
 
@@ -41,13 +41,13 @@ Power Automate provides the files actions to automate managing files and manipul
 
 To get a list of all files in a specified folder, you can use the **Get files in folder** action. You can filter files by using the File filter action. Add keywords, along with the asterisk (*) wildcard character, and separate multiple terms with a semicolon (;). In the figure below, the file filter is set to **.png**, and **Include subfolders** has been enabled. This means that the resulting variable will only contain PNG format files stored in the specified folder and its subfolders. 
 
-  ![Screenshot of the get files in folder action properties window.](\media\file\get-files-in-folder-example.png)
+  ![Screenshot of the Get files in folder action.](\media\file\get-files-in-folder-example.png)
 
 To copy or move files, use the Copy file(s) and Move file(s) actions, respectively. 
 
 Rename a file or multiple files with the **Rename file(s)** action. Select to either set a new name or add, replace or remove a string of text to the existing filename. In the figure below, a list of files has been selected and the string **backup_** will be appended to the beginning of each file.
 
-  ![Screenshot of the rename files action properties window.](\media\file\rename-files-example.png)
+  ![Screenshot of the Rename files action.](\media\file\rename-files-example.png)
 
 The same action can be used to remove this string of text should the backed up files be restored.
 
@@ -57,6 +57,9 @@ The **Write text to file** action adds text to an existing .txt file or creates 
 
 
 ## File actions
+
+> [!IMPORTANT]
+> To prevent unauthorized access, Windows require administrator rights to access protected files. To access these resources using the file actions, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 
 ### <a name="iffileaction"></a> If file exists
@@ -328,7 +331,7 @@ Retrieve one or more parts (directory, filename, extension etc) from a text that
 ##### <a name="getpathpart_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|File path doesn't exist|Indicates that the file path doesn't exist|
+|File path contains invalid characters|Indicates that the file path doesn't exist|
 
 ### <a name="gettemppath"></a> Get temporary file
 Create a uniquely named, empty temporary file on disk, and get the file object (which is a representation, and can access the file and all its information)
@@ -347,7 +350,43 @@ Create a uniquely named, empty temporary file on disk, and get the file object (
 |-----|-----|
 |Failed to create temporary file|Indicates a problem creating a temporary file|
 
+### <a name="convertfiletobase64action"></a> Convert file to Base64
+Convert a file to Base64 encoded text
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|File path|No|File||The file path to read from|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|Base64Text|Text value|The Base64 encoded text|
+
+##### <a name="gettemppath_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|File not found|Indicates that the file doesn't exist|
+|Can't convert file to Base64|Indicates that the provided file can't be converted into Base64 encoded text|
+
+### <a name="convertbase64tofileaction"></a> Convert Base64 to file
+Convert a Base64 encoded text to file
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Base64 encoded text|No|Text value||The Base64 encoded text|
+|File path|No|File||The file to write to|
+|If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
+
+##### Variables Produced
+- This action doesn't produce any variables
 
 
+##### <a name="gettemppath_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Invalid directory for file|Indicates that the directory is invalid|
+|Can't convert Base64 to file|Indicates that the provided Base64 encoded text can't be converted into a file|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

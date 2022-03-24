@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -20,6 +20,7 @@ search.app:
   - Flow
 search.audienceType: 
   - flowadmin
+ms.custom: intro-internal
 ---
 
 

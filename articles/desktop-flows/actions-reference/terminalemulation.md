@@ -2,9 +2,9 @@
 title: Terminal emulation | Microsoft Docs
 description: Terminal emulation Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 09/03/2021
 ms.author: marleon
 ms.reviewer:
@@ -19,15 +19,13 @@ search.audienceType:
 
 Take control of terminal emulators for automating mainframes and legacy systems
 
-|<!-- --> |
-|-----|
-|[Open terminal session](#openterminalsession)|
-|[Close terminal session](#closesession)|
-|[Move cursor on terminal session](#movecursor)|
-|[Get text from terminal session](#gettextfromterminalsession)|
-|[Set text on terminal session](#settextonterminalsession)|
-|[Send key to terminal session](#sendkey)|
-|[Wait for text on terminal session](#waitfortextonterminalsession)|
+[Open terminal session](#openterminalsession)  
+[Close terminal session](#closesession)  
+[Move cursor on terminal session](#movecursor)  
+[Get text from terminal session](#gettextfromterminalsession)  
+[Set text on terminal session](#settextonterminalsession)  
+[Send key to terminal session](#sendkey)  
+[Wait for text on terminal session](#waitfortextonterminalsession)  
 
 ## Getting started with terminal emulation actions
 
@@ -55,7 +53,7 @@ Depending on the provider you're using, select the appropriate HLLAPI DLL file l
 
 After opening a terminal session and completing all the wanted operations, terminate the connection using the **Close terminal session** action. If you don't close the connection, some providers won't let you connect again to the already open session without restarting the software or the connection.
 
-![Screenshot of the Close terminal sessionaction.](media/terminalemulation/close-terminal-session-action.png)
+![Screenshot of the Close terminal session action.](media/terminalemulation/close-terminal-session-action.png)
 
 ## Terminal emulation actions
 

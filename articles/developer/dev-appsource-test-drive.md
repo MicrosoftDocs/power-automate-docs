@@ -8,9 +8,9 @@ author: MSFTMAN
 manager: KVivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
-ms.subservice: developer
+ms.subservice: Developer
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na

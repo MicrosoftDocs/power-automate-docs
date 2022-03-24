@@ -1,5 +1,5 @@
 ---
-title: Add a condition to a cloud flow | Microsoft Docs
+title: Add a condition to a cloud flow (contains video) | Microsoft Docs
 description: Specify that a cloud flow performs one or more tasks only if a condition is true.
 services: ''
 suite: flow
@@ -8,13 +8,13 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/08/2020
+ms.date: 10/08/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,8 +25,11 @@ search.audienceType:
 # Add a condition to a cloud flow
 
 
-Specify that a cloud flow performs one or more tasks only if a condition is true. For example, specify that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
+Use a **Condition** to specify that a cloud flow performs one or more tasks only if a condition is true or false. For example, you can use a **Condition** that indicates that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
 
+Check out the following video tutorial to learn more about conditions.
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWKUx0]
 ## Prerequisites
 
 * [Create a cloud flow](get-started-logic-template.md) from a template - this tutorial [uses this template](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) as the example

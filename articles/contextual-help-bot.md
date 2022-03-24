@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -55,7 +55,7 @@ Now that you've displayed the in-product help, follow these steps to use the var
 
    The corresponding documentation opens.
 
-   ![](./media/contextual-help-bot/help-doc.png)
+   ![Screenshot showing an example help article opened alongside the navigation panel.](./media/contextual-help-bot/help-doc.png)
 
 1. Expand the **Community** section.
 
@@ -63,7 +63,7 @@ Now that you've displayed the in-product help, follow these steps to use the var
    
 1. Select an item to go to specific community thread.
 
-   ![](./media/contextual-help-bot/community-thread.png)
+   ![Screenshot showing choices of community thread available in the help menu.](./media/contextual-help-bot/community-thread.png)
 
 
 You can also get conversational self-help from the bot.
@@ -72,7 +72,7 @@ You can also get conversational self-help from the bot.
 
    The chat box shows the most requested topics and provides a field that you can use to ask the bot questions.
 
-   ![](./media/contextual-help-bot/chat-bot.png)
+   ![Screenshot showing the most requested topics and a field in which to type a message.](./media/contextual-help-bot/chat-bot.png)
 
 1. Choose one of the topics.
 
@@ -82,26 +82,26 @@ You can also get conversational self-help from the bot.
 
    The bot provides the steps and links to the corresponding documentation with a detailed explanation, showing examples and images.
 
-   ![](./media/contextual-help-bot/find-topic.png)
+   ![Screenshot showing the bot chat with a list of example articles and links.](./media/contextual-help-bot/find-topic.png)
 
 
 1. Select **Yes** to go back to the previous topic list to continue your chat.
 
 1. Select **No** if the bot helped answer the question and you don't need more help.
 
-   ![](./media/contextual-help-bot/yes-no.png)
+   ![Screenshot showing the bot chat with an option to terminate a successful query.](./media/contextual-help-bot/yes-no.png)
 
 1. Select **Yes** to check the knowledge database and enter another question.
 
-   ![](./media/contextual-help-bot/bot-chat-1.png)
+   ![Screenshot showing the bot chat with an option to continue and ask another question.](./media/contextual-help-bot/bot-chat-1.png)
 
-   ![](./media/contextual-help-bot/bot-chat-2.png)
+   ![Screenshot showing the bot chat with a prompt to search the knowledge database.](./media/contextual-help-bot/bot-chat-2.png)
 
 1. Select a category to see the corresponding results
 
-   ![](./media/contextual-help-bot/bot-category-1.png)
+   ![Screenshot showing the bot chat displaying the number of items found, grouped by category such as community answers, articles, and blogs.](./media/contextual-help-bot/bot-category-1.png)
 
-   ![](./media/contextual-help-bot/bot-category-2.png)
+   ![Screenshot showing the bot chat displaying items in the group selected.](./media/contextual-help-bot/bot-category-2.png)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

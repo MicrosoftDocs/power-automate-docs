@@ -1,5 +1,5 @@
 ---
-title: Overview of the types of flows in Power Automate| Microsoft Docs
+title: Overview of the types of flows in Power Automate(contains video) | Microsoft Docs
 description: Provides an overview of cloud, dekstop, business process flows.
 services: ''
 suite: flow
@@ -8,13 +8,13 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/08/2020
+ms.date: 03/16/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -27,6 +27,10 @@ search.audienceType:
 Power Automate is a service that you can use to automate repetitive tasks to bring efficiencies to any organizations.
 
 You can create [cloud flows](#cloud-flows), [desktop flows](#desktop-flows), or [business process flows](#business-process-flows).
+
+Check out this video about the different types of flows.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKUwZ]
 
 ## Cloud flows
 
@@ -50,9 +54,9 @@ Desktop flows are used to automate tasks on the Web or the desktop. Using [Power
 
 ## More info
 
+- Read guidance to [determining which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
 - Get started with [cloud flows](overview-cloud.md). 
 - Get started with [desktop flows](./desktop-flows/introduction.md).
 - Get started with [business process flows](business-process-flows-overview.md) in conditions in advanced mode.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -9,12 +9,12 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/06/2021
+ms.date: 03/06/2022
 search.app: 
   - Flow
   - Powerplatform
@@ -46,7 +46,7 @@ Follow these steps to use **Row ID** to get a row from the Accounts table.
    ![Completed Get row by ID card.](../media/dataverse-how-tos/get-row-by-id-action-complete.png "Completed Get row by ID card")
 
    >[!NOTE]
-   >The **Item ID** column is the unique ID of the row that you are retrieving, as shown in the following image.<!-- Edit note: Please review this note. I am not sure about the image mentioned, and should it be Item ID or Row ID. -->
+   >The **Row ID** column is the unique ID of the row that you are retrieving, as shown in the following image. You can get the row Id by using a query in the actions in your flow before you need to use the row id.
 
 ## Advanced options
 

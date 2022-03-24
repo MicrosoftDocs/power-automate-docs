@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -80,6 +80,10 @@ Approvers receive an email whenever there's a page approval request. They can ei
 ## Customize page approval flows
 
 Because page approvals use Power Automate behind the scenes, the page approval flow is available for site owners to modify and add any custom business logic in the flow. To modify the flow, the site owner can select **Flows** and then select **See your flows** in the pages library to find the page approval flow.
+
+## Limitations
+
+Only the specific triggers and actions that are used by a page approval flow are supported for use on a Pages library. All other SharePoint triggers and actions are not supported.
 
 ## Learn more
 

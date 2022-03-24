@@ -2,9 +2,9 @@
 title: IBM Cognitive | Microsoft Docs
 description: IBM Cognitive Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -19,13 +19,11 @@ search.audienceType:
 
 IBM's cognitive actions
 
-|<!-- --> |
-|-----|
-|[Convert document](#convertdocumentibm)|
-|[Translate](#translateibm)|
-|[Identify language](#identifylanguage)|
-|[Analyze tone](#analyzetoneibm)|
-|[Classify Image](#classifyimageibm)|
+[Convert document](#convertdocumentibm)  
+[Translate](#translateibm)  
+[Identify language](#identifylanguage)  
+[Analyze tone](#analyzetoneibm)  
+[Classify Image](#classifyimageibm)  
 
 ## Getting started with IBM cognitive actions
 

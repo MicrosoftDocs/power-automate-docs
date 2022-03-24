@@ -7,7 +7,7 @@ documentationcenter: na
 author: hamenon-ms
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -243,23 +243,33 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 <td>
 <p>To insert one of the following characters, prefix with a backslash:</p>
 
-<p style="margin-bottom:2px;">```\   backslash ``` </p>
-<p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>
-<p style="margin-bottom:2px;">```_   underscore  ```</p>
-<p style="margin-bottom:2px;">```{}  curly braces  ``` </p>
-<p style="margin-bottom:2px;">```[]  square brackets ```</p>
-<p style="margin-bottom:2px;">```()  parentheses  ```</p>
-<p style="margin-bottom:2px;">```#   hash mark  ``` </p>
-<p style="margin-bottom:2px;">```+   plus sign  ```</p>
-<p style="margin-bottom:2px;">```-   minus sign (hyphen) ```</p>
-<p style="margin-bottom:2px;">```.   dot  ``` </p>
-<p style="margin-bottom:2px;">```!   exclamation mark ```</p>
+```\   backslash ```
+
+``` ` backtick```
+
+```_   underscore  ```
+
+```{}  curly braces  ```
+
+```[]  square brackets ```
+
+```()  parentheses  ```
+
+```#   hash mark  ```
+
+```+   plus sign  ```
+
+```-   minus sign (hyphen) ```
+
+```.   dot  ```
+
+```!   exclamation mark ```
 
 
 </td>
 <td>Some examples on inserting special characters
 <p>Enter ```\\``` to get \\ </p>
-<p>Enter ```\_``` to get _ </p>
+<p>Enter ```\_``` to get \_ </p>
 <p>Enter ```\#``` to get \# </p>
 <p>Enter ```\(``` to get \( </p>
 <p>Enter ```\.``` to get \. </p>

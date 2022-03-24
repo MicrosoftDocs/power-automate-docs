@@ -7,7 +7,7 @@ documentationcenter: na
 author: mariosleon
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: article
@@ -32,7 +32,7 @@ The installer contains all the components you need to record, edit, and test you
 Follow these steps to install the Power Automate for desktop:
 
 1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.PowerAutomateDesktop.exe** file. 
+1. Open the **Setup.Microsoft.PowerAutomate.exe** file. 
 
    This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 
@@ -51,7 +51,7 @@ By default, both are installed on your device.
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also install the Power Automate app and third-party components.
 
-![Installation options image.](../media/desktop-flows-setup/installer-checkboxes.png)
+![Screenshot of the installation details.](../media/desktop-flows-setup/installer-checkboxes.png)
 
 >[!IMPORTANT]
 >In order to register your machine, you need to have an Organization premium account.
@@ -84,7 +84,7 @@ During installation, you can change the default settings if you don't want to se
 
 After the installation completes, you will need to install and enable the extension for Power Automate for desktop. This extension will allow you to record and run web actions in your desktop flows.
 
-![Installation success image.](../media/desktop-flows-setup/screen.png)
+![Screenshot of the Installation success dialog.](../media/desktop-flows-setup/screen.png)
 
 Select one of the links displayed in the installer. For example, if you want to record your browser automations on Microsoft Edge, select the **Microsoft Edge** link.
 
@@ -129,14 +129,14 @@ Follow these steps if you want to silently install Power Automate.
 
    For example, enter:
    
-   ```
+   ```CMD
     cd C:\Users\Nvarga\Downloads\
    ```
 
 1. Enter:
 
-   ```
-   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA
+   ```CMD
+   Setup.Microsoft.PowerAutomate.exe -Silent -Install -ACCEPTEULA
    ```
    
    The installer runs and completes the setup of Power Automate.
@@ -150,30 +150,33 @@ Follow these steps if you want to silently install Power Automate.
 
 You can also retrieve the details of all the command line arguments from the help menu in the command prompt:
 
-   ```
-   Setup.Microsoft.PowerAutomateDesktop.exe -HELP
+   ```CMD
+   Setup.Microsoft.PowerAutomate.exe -HELP
    ```
 
 |Command|Description|
 |----|----|
-|-INSTALLPATH:Value|The full path of the installation folder that will be created. The default <br />is `%PROGRAMFILES(X86)%\Power Automate`.|
-|-DISABLEPADSHORTCUT|By default, a shortcut of Power Automate  app is created on the desktop. Use this<br /> argument to indicate that you don't want it to be created.|
-|-DISABLETURNONRD|Use the argument if you don't want the installer to turn on Remote Desktop on the device. <br />You must turn on Remote Desktop if you want support for unattended runs.|
-|-ACCEPTEULA|Use this argument to indicate that you accept the terms of use for Power Automate.|
-|-HELP|This argument displays all details about the arguments for the installer prompt.|
+|-INSTALLPATH:Value|The full path of the installation folder that will be created. Default: <br />is `%PROGRAMFILES(X86)%\Power Automate`.|
+|-ALLOWOPTIONALDATACOLLECTION|Enable sending optional telemetry data to Microsoft.|
+|-DISABLEPADSHORTCUT|Doesn't create a shortcut for Power Automate for desktop.|
+|-DISABLETURNONRDP|Doesn't turn on Remote Desktop on the machine|
+|-ACCEPTEULA|Accepts the end user license agreement, needed for the installation.|
+|-RESTOREDEFAULTCONFIG|Restores to the default installation settings during an upgrade.|
+|-DONOTINSTALLPAD|Skips installing Power Automate for desktop.|
+|-DONOTINSTALLMACHINERUNTIME|Skips installing Power Automate machine-runtime app|
 
 Here's an example of a command line argument that installs Power Automate: 
 
-   ```
-   Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
+   ```CMD
+   Setup.Microsoft.PowerAutomate.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
    ```
 
 ### Uninstall Power Automate for desktop using the command line
 
 Use the following command to silently uninstall Power Automate:
    
-   ```
-   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall
+   ```CMD
+   Setup.Microsoft.PowerAutomate.exe -Silent -Uninstall
    ```
 
 ### Update your version of Power Automate
@@ -185,12 +188,10 @@ To update Power Automate for desktop, use the same command line arguments that y
 
 ### Install the gateway with PowerShell Cmdlets
 
-> [!NOTE]
+> [!IMPORTANT]
 > Power Automate for desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
 
-You will need the on-premises data gateway to trigger your desktop flows from a cloud flow.
-
-You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-ps) to install, configure, and manage your gateway.
+Apart from direct connectivity, you can establish communication with a  machine using on-premises data gateways. To install, configure, and manage a gateway, use [PowerShell Cmdlets](/powershell/gateway/overview).
 
 >[!IMPORTANT]
 >To use PowerShell cmdlets, you will need to run them from PowerShell 7.0.0 or higher in an elevated access.
@@ -216,11 +217,11 @@ You can use [PowerShell Cmdlets](/powershell/gateway/overview?view=datagateway-p
  
    - To connect to a machine or a machine group, select **Directly to machine** in the **Connect** field, and choose the respective machine or machine group in the **Machine or machine group** field.
 
-      ![The Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-machine.png)
+      ![Screenshot of the Directly to machine option in the Connect field.](media/desktop-flows-setup/choose-machine.png)
 
    - To connect to a gateway, select **Using an on-premises data gateway** in the **Connect** field, and choose the respective gateway in the **Choose a gateway** field.
 
-      ![The Choose a gateway field.](media/desktop-flows-setup/choose-gateway.png)
+      ![Screenshot of the Choose a gateway field.](media/desktop-flows-setup/choose-gateway.png)
 
    - **Domain and Username**: Provide your device account. You can use a local account by using the name of the user (for example, “MACHINENAME\\User” or “local\\User”), or an Active Directory account such as “DOMAIN\\User”.
 

@@ -4,7 +4,7 @@ description: "Learn the best practices for using business process flow table col
 ms.custom: 
 ms.date: 04/23/2019
 ms.reviewer: 
-ms.service: power-automate
+
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.subservice: cloud-flow

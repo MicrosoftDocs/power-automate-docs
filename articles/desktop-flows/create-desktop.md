@@ -8,7 +8,7 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: article
@@ -26,7 +26,9 @@ search.audienceType:
 # Create and test Windows recorder (V1) flows
 
 >[!IMPORTANT]
->From November 30th, Windows recorder (V1) desktop flows will no longer be supported. [**Migrate**](migrate.md) your flows to Power Automate or **delete** them.  
+>This section covers topics to develop automations using legacy systems:
+> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
+> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
 
 In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 
@@ -41,19 +43,19 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Select **My flows** > **Desktop flows** > **New**.
 
-   ![Create new Windows recorder (V1) flow.](../media/create-windows-desktop-flow/create-new-windowsrecorder.png "Create new Windows recorder (V1) flow")
+   ![Screenshot of the option to create new Windows recorder (V1) flow.](../media/create-windows-desktop-flow/create-new-windowsrecorder.png "Create new Windows recorder (V1) flow")
 
 1. Click **Additional desktop flow options**.
 
-   ![Additional desktop flow options.](../media/create-windows-desktop-flow/click-Additional-desktop-flow-options.png "Additional desktop flow options") 
+   ![Screenshot of the Additional desktop flow options.](../media/create-windows-desktop-flow/click-Additional-desktop-flow-options.png "Additional desktop flow options") 
 
 1. Select Windows recorder (V1), and then click **Next**.
 
-   ![Select Windows recorder.](../media/create-windows-desktop-flow/select-windowsrecorderV1.png "Select Windows recorder") 
+   ![Screenshot of the Windows recorder (V1) option in the Build a desktop flow dialog.](../media/create-windows-desktop-flow/select-windowsrecorderV1.png "Select Windows recorder") 
 
 1. Enter a name for your Windows recoder (V1) flow into the **Flow name** field, and then select **Next**.
 
-   ![Select desktop.](../media/create-windows-desktop-flow/Create-new-windowsrecorderV1.png "Select desktop") 
+   ![Screenshot of the field to populate the flow name.](../media/create-windows-desktop-flow/Create-new-windowsrecorderV1.png "Select desktop") 
 
 1. Select **Next** at the bottom to skip the optional **Set up inputs** screen since we aren't using inputs in this walkthrough.
 
@@ -66,15 +68,15 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Select the **Record app** card to expand it.
 
-   ![Select record app.](../media/create-windows-desktop-flow/select-record-app.png "Select record app")
+   ![Screenshot of the Record app card.](../media/create-windows-desktop-flow/select-record-app.png "Select record app")
 
 1. Select **Launch recorder**.
 
-   ![Select launch recorder.](../media/create-windows-desktop-flow/select-launch-recorder.png "Select launch recorder")
+   ![Screenshot of the Launch recorder option in the Record app card.](../media/create-windows-desktop-flow/select-launch-recorder.png "Select launch recorder")
 
    The recorder control displays at the top of your screen.
 
-   ![The recorder control.](../media/create-windows-desktop-flow/recorder-control.png "The recorder control")
+   ![Screenshot of the recorder control.](../media/create-windows-desktop-flow/recorder-control.png "The recorder control")
 
 1. Start the calculator app.
 
@@ -86,7 +88,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 1. Select **Record** from the recorder control.
 1. Select the first number, select **+**, select the second number, and then select **=**.
 
-    ![The calculator app.](../media/create-windows-desktop-flow/app-to-record.png "The calculator app")
+    ![Screenshot of the calculator application.](../media/create-windows-desktop-flow/app-to-record.png "The calculator app")
 
      > [!TIP]
      > You will improve automation reliability by:
@@ -102,7 +104,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
      >[!TIP]
      >Select **...** > **Delete** to remove any duplicate steps.
 
-    ![Show recorded steps.](../media/create-windows-desktop-flow/show-recorded-steps.png "Show recorded steps")
+    ![Screenshot of the recorded steps.](../media/create-windows-desktop-flow/show-recorded-steps.png "Show recorded steps")
 
 1. Select **Next**. 
 

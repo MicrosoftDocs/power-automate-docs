@@ -2,7 +2,7 @@
 title: Variable data types | Microsoft Docs
 description: Variable data types
 author: georgiostrantzas
-ms.service: power-automate
+
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
@@ -130,9 +130,30 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![Screenshot of a flow that uses variables to add a new property to a custom object.](media\variable-data-types\add-property-custom-object-dynamically.png)  
 
+- **List of PDF table info** - A variable of this data type can be produced only through the **Extract tables from PDF** action.
+
+  Each item on the list describes an extracted table and provides all the essential information about it. To access a specific datatable info item, use the **%VariableName[ItemNumber]%** notation.
+
+  ![Screenshot of a List of PDF table info.](media\variable-data-types\list-pdf-table-info.png) 
+
+  Every list item provides four properties that allow you to get a specific detail independently. The available properties are the following:
+
+  - **DataTable** - Returns the extracted table.
+  - **TableStartingPage** - Returns the index of the file page that contains the start of the table.
+  - **TableEndingPage** - Returns the index of the file page that contains the end of the table.
+  - **TableOrderInPage** - Returns the order of the table on the page. 
+
+  You can find more information regarding the properties of this data type in [Variables datatype properties](datatype-properties.md#pdf-table-info).
+
+  ![Screenshot of the properties of a list of PDF table info.](media\variable-data-types\list-pdf-table-info-properties.png) 
+
+  To access the value of a specific property, use the **%VariableName[ItemNumber].PropertyName%** notation. For example, the following expression returns the datatable value of the first item of the **ExtractedPDFTables** variable.
+
+  ![Screenshot of the data table contained in a list of PDF table info vatiable.](media\variable-data-types\list-pdf-table-info-data-table-notation.png) 
+
 ### Known issues and limitations
 
-- **Issue**: The values for datarow and datatable variables are not displayed properly in the variables pane.
+- **Issue**: When a datatable or datarow cell contains a multi-line entry, the variable viewer displays only the first line of it. 
 - **Workarounds**: None.
 
 ## Instances

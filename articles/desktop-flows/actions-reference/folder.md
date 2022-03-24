@@ -2,9 +2,9 @@
 title: Folder | Microsoft Docs
 description: Folder Actions Reference
 author: mariosleon
-ms.service: power-automate
+
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: reference
 ms.date: 12/02/2020
 ms.author: marleon
 ms.reviewer:
@@ -19,18 +19,16 @@ search.audienceType:
 
 Manage and manipulate folders
 
-|<!-- --> |
-|-----|
-|[If folder exists](#iffolderexistsaction)|
-|[Get files in folder](#getfiles)|
-|[Get subfolders in folder](#getsubfolders)|
-|[Create folder](#create)|
-|[Delete folder](#delete)|
-|[Empty folder](#empty)|
-|[Copy folder](#copy)|
-|[Move folder](#move)|
-|[Rename folder](#rename)|
-|[Get special folder](#getspecialfolder)|
+[If folder exists](#iffolderexistsaction)  
+[Get files in folder](#getfiles)  
+[Get subfolders in folder](#getsubfolders)  
+[Create folder](#create)  
+[Delete folder](#delete)  
+[Empty folder](#empty)  
+[Copy folder](#copy)  
+[Move folder](#move)  
+[Rename folder](#rename)  
+[Get special folder](#getspecialfolder)  
 
 ## Getting started with folder actions
 
@@ -38,18 +36,22 @@ Manipulate and organize folders with the Power Automate folders actions.
 
 The **Get special folder** action retrieves the paths for commonly used directories which vary among different users and computers. In the figure below, the desktop directory is retrieved and stored into a variable. The variable **%SpecialFolderPath%** can now be used any time it is necessary to use the desktop path, regardless of the user who runs the flow or the computer which it runs on.
 
-  ![Screenshot of the get special folder action properties window.](\media\folder\get-special-folder-example.png)
+  ![Screenshot of the Get special folder action.](\media\folder\get-special-folder-example.png)
 
 Create new folders with the **Create folder** action.
 
 To get a list of a folder's contents, use the **Get subfolders in folder** action. This action provides a list of folders located within the specified folder. In the figure below, the variable for the path of a special folder is used as input and include subfolders has been enabled. In the expanded Advanced section, folders are to be sorted by creation time in ascending order and name in descending order.
 
-  ![Screenshot of the get subfolders action properties window.](\media\folder\get-subfolders-example.png)
+  ![Screenshot of the Get subfolders in folder action.](\media\folder\get-subfolders-example.png)
 
 
 Copying, moving, renaming and deleting or emptying folders each has its respective action. 
 
 ## Folder actions
+
+> [!IMPORTANT]
+> To prevent unauthorized access, Windows require administrator rights to access protected folders. To access these resources using the folder actions, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+
 ### <a name="iffolderexistsaction"></a> If folder exists
 Mark the beginning of a conditional block of actions depending on whether a folder exists or not
 

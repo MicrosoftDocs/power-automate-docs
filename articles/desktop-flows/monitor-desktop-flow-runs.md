@@ -8,13 +8,13 @@ author: mariosleon
 manager: 
 editor: ''
 tags: ''
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/12/2020
+ms.date: 03/07/2021
 ms.author: marleon
 search.app: 
   - Flow
@@ -27,7 +27,7 @@ search.audienceType:
 
 As you scale the automations in your business, you may need an easy way to ensure all your desktop flows are running as expected. Monitor all your desktop flow runs in just one location to keep your automations running smoothly. 
 
- ![Desktop flow runs.](media\monitoring\monitor-desktop-flow-queues-4.png)
+ ![Screenshot of the list with the desktop flow runs.](media\monitoring\monitor-desktop-flow-queues-4.png)
 
 ## View list of all desktop flow runs 
 1. Sign into Power Automate 
@@ -44,6 +44,9 @@ In order to see runs in this list, one of the following must be true:
 
 > [!TIP]
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources. 
+
+> [!NOTE]
+> There is a limit of 10,000 actions in the actions log for a desktop flow. If there are more than 10,000 actions in your desktop flow, divide it into multiple flows if you want to see all actions in the logs.
 
  
 
@@ -68,13 +71,13 @@ You can make changes to your view to narrow the list of runs to only those you a
 
 You may have several desktop flow runs that were triggered by one flow run. Click the three dots next to the desktop flow name, then select See all desktop flow runs in the parent flow. 
 
-  ![View flow runs from parent flow.](media\monitoring\monitor-desktop-flow-queues-5.png)
+  ![Screenshot of the flow runs from a parent flow.](media\monitoring\monitor-desktop-flow-queues-5.png)
 
 ## View the run queue for a queued run 
 
 Machines and gateways can be used to run multiple desktop flows. To see the placement of a desktop flow in the run queue, click the three dots next to the name of the desktop flow and select **See desktop flow in run queue**.
 
-![The See desktop flow in run queue option in Desktop flows run.](media\monitoring\monitor-desktop-see-desktop-flow-run-queue.png)
+![Screenshot of the See desktop flow in run queue option in Desktop flows run.](media\monitoring\monitor-desktop-see-desktop-flow-run-queue.png)
 
 ## Live updates 
 

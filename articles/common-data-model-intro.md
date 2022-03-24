@@ -6,7 +6,7 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: kvivek
-ms.service: power-automate
+
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -22,7 +22,7 @@ search.audienceType:
 ---
 # Create a cloud flow that uses Microsoft Dataverse
 
-[!INCLUDE[cc-data-platform-banner](./includes/cc-data-platform-banner.md)]
+
 
 Improve operational efficiency with a unified view of business data by creating flows that use [Dataverse](https://powerapps.microsoft.com/tutorials/data-platform-intro/).
 
@@ -65,7 +65,7 @@ In this article, you will create a cloud flow that sends an email notification w
 
 1. On the **When an Opportunity is created** card, select the **Environment**, **Table Name**, and **Scope** that you want to use.
    
-   For more information on scope, see [Trigger flows&mdash;scope](/power-automate/dataverse/create-update-delete-trigger#scope).
+   For more information on scope, see [Trigger flows&mdash;scope](./dataverse/create-update-delete-trigger.md#scope).
    
     ![Specify the details for the table.](./media/common-data-model-intro/specify-instance.png)
 
