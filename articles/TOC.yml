@@ -77,6 +77,7 @@
       href: /azure/logic-apps/workflow-definition-language-functions-reference
     - name: Manage flows on a phone
       href: mobile-manage-flows.md
+      displayName: Manage flows on mobile devices
     - name: Publish a template
       href: publish-a-template.md
     - name: Turn a cloud flow on or off
@@ -255,10 +256,11 @@
     #   href: ./dataverse/troubleshoot-issues.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md  
-  - name: Solutions
+  - name: Use solutions for ALM
     items:
     - name: Overview
       href: overview-solution-flows.md
+      displayName: Use solutions for ALM of flows
     - name: Create a cloud flow in a solution
       href: create-flow-solution.md
     - name: Create child flows
@@ -279,6 +281,7 @@
       href: see-a-flow-run.md
     - name: Monitor flow activity on a phone
       href: mobile-monitor-activity.md
+      displayName: Monitor flow activity on mobile devices
     - name: Troubleshoot a cloud flow
       href: fix-flow-failures.md
     - name: Find and fix errors with the error checker
@@ -634,30 +637,6 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: Classic Dataverse
-  items:
-  - name: Classic Dataverse workflows
-    items:
-    - name: Overview
-      href: workflow-processes.md
-    - name: Configure background workflow stages and steps
-      href: configure-workflow-steps.md
-    - name: Monitor and manage background workflow processes
-      href: monitor-manage-processes.md
-    - name: Best practices for background workflow processes
-      href: best-practices-workflow-processes.md
-    - name: Replace background workflows with flows
-      href: replace-workflows-with-flows.md
-  - name: Classic Dataverse task flows
-    items:
-    - name: Create mobile task flows
-      href: create-mobile-task-flow.md
-  - name: Classic Dataverse dialogs
-    items:
-    - name: Use classic Dataverse dialogs
-      href: use-cds-for-apps-dialogs.md
-    - name: Replace classic Dataverse dialogs
-      href: replace-dialogs.md
 - name: Process advisor
   items:
   - name: Overview    
@@ -794,6 +773,30 @@
     href: frequently-asked-questions.yml
   - name: Power Automate glossary
     href: glossary.md
+  - name: Classic Dataverse
+    items:
+    - name: Classic Dataverse workflows
+      items:
+      - name: Overview
+        href: workflow-processes.md
+      - name: Configure background workflow stages and steps
+        href: configure-workflow-steps.md
+      - name: Monitor and manage background workflow processes
+        href: monitor-manage-processes.md
+      - name: Best practices for background workflow processes
+        href: best-practices-workflow-processes.md
+      - name: Replace background workflows with flows
+        href: replace-workflows-with-flows.md
+    - name: Classic Dataverse task flows
+      items:
+      - name: Create mobile task flows
+        href: create-mobile-task-flow.md
+    - name: Classic Dataverse dialogs
+      items:
+      - name: Use classic Dataverse dialogs
+        href: use-cds-for-apps-dialogs.md
+      - name: Replace classic Dataverse dialogs
+        href: replace-dialogs.md
 - name: Learning catalog
   items:
   - name: Overview
