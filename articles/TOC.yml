@@ -627,16 +627,6 @@
     href: custom-controls-business-process-flows.md
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
-- name: Connect to data
-  items:
-  - name: Available connections
-    href: /connectors/
-  - name: Manage connections
-    href: add-manage-connections.md
-  - name: Manage gateways
-    href: gateway-manage.md
-  - name: Understand gateways
-    href: gateway-reference.md
 - name: Process advisor
   items:
   - name: Overview    
@@ -691,6 +681,16 @@
   - name: Glossary
     href: process-advisor-glossary.md
     displayName: Process advisor glossary
+- name: Connect to data
+  items:
+  - name: Available connections
+    href: /connectors/
+  - name: Manage connections
+    href: add-manage-connections.md
+  - name: Manage gateways
+    href: gateway-manage.md
+  - name: Understand gateways
+    href: gateway-reference.md
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
