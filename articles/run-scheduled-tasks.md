@@ -1,5 +1,5 @@
 ---
-title: Run flows on a schedule | Microsoft Docs
+title: Run flows on a schedule in Power Automate | Microsoft Docs
 description: Automate recurring tasks by running flows on a schedule, such as every day or every hour.
 services: ''
 suite: flow
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Run flows on a schedule
+# Run flows on a schedule in Power Automate
 
 Create a cloud flow that performs one or more tasks (such as sending a report in email).
 
