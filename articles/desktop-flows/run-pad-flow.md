@@ -75,7 +75,8 @@ By using the “reuse Windows session” functionality, desktop flows are allowe
 1. Select Edit details 
 1. Select “Yes” 
 
->[!NOTE] When adding a machine in a group, the machine will use the same settings as defined in the group. When removing from a machine group, the machine keeps the setting defined at the group level.
+>[!NOTE]
+>When adding a machine in a group, the machine will use the same settings as defined in the group. When removing from a machine group, the machine keeps the setting defined at the group level.
 
 ###### Known issues and limitations
 
