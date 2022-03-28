@@ -62,6 +62,9 @@ In the **Advanced** section, the action has been set to wait 30 seconds for the 
 ### <a name="blockinput"></a> Block Input
 Blocks user mouse and keyboard input, so that the flow can perform mouse and keyboard actions without interference from the user
 
+> [!IMPORTANT]
+> Because of its critical functionality, the **Block input** action requires elevated rights to run. Therefore, before using the action, ensure that Power Automate runs with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
@@ -228,6 +231,9 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 ### <a name="sendmouseclick"></a> Send mouse click
 Sends a mouse click event
 
+> [!IMPORTANT]
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send mouse click** action to interact with applications that run with elevated privileges, run Power Automate as administrator. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
@@ -252,6 +258,9 @@ Sends a mouse click event
 
 ### <a name="sendkeys"></a> Send keys
 Sends keys to the application that is currently active
+
+> [!IMPORTANT]
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send keys** action to interact with applications that run with elevated privileges, run Power Automate as administrator. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
