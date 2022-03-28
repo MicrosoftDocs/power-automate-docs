@@ -127,7 +127,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "https://docs.microsoft.com/power-automate/guided-learning",
+            "source_path": "/power-automate/guided-learning",
             "redirect_url": "/learn/paths/automate-process-power-automate/",
             "redirect_document_id": false
         },
