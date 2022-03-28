@@ -60,6 +60,27 @@ Power Automate performs the following:
 
 1. On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow is supposed to run as, you will receive the same error: *Cannot execute desktop flow. There is a locked or inactive Windows user session on the target device*.
 
+#### Reuse a Windows session in unattended mode
+
+Desktop flows can run on a Windows session as long as it exists and isn't unlocked for unattended runs.
+
+By default, for each unattended run, a new session is created on the machine (using the credentials provided in the connection), the flow is run on this session and at the end of the flow, the session is signed-off.
+
+By using the “reuse Windows session” functionality, desktop flows are allowed to run on an existing session. At the end of the flow run, the session is locked and can be reused for another desktop flow run.  
+
+##### Allow reusing Windows session 
+
+1. Sign into Power Automate 
+1. Select Machines then select a machine or a machine group 
+1. Select Edit details 
+1. Select “Yes” 
+
+> [!NOTE]] When adding a machine in a group, the machine will use the same settings as defined in the group. When removing from a machine group, the machine keeps the setting defined at the group level.
+
+###### Known issues and limitations
+
+"Reuse sessions" isn't supported on machines that a user can have multiple sessions (user isn't restricted to a single session). 
+
 ### Attended mode
 To run an attended desktop flow, you need to have an active Windows user session that matches the name of the user configured for your connection. The session must not be locked.
 
