@@ -27,7 +27,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 * Once a day, an hour, or a minute.
 * On a date that you specify.
-* After a number of days, hours, or minutes that you specify.
+* After many days, hours, or minutes that you specify.
 
 ## Create a recurring flow
 
@@ -55,12 +55,12 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
     >[!NOTE]
     >These options change based on the values to which **Interval** and **Frequency** are set. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
 
-1. In the **Time zone** field, select a time zone from the dropdown menu to specify whether the **Start time** reflects a local time zone, Coordinated Universal Time (UTC), or other time zone.
+1. In the **Time zone** field, select a time zone from the dropdown list to specify whether the **Start time** reflects a local time zone, Coordinated Universal Time (UTC), or other time zone.
 1. In the **Start time** field, enter a start time in this format: YYYY-MM-DDTHH:MM:SSZ
-1. If you specified **Day** under **Frequency**, select the time of day when the flow should run from the **At these hours** and **At these minutes** dropdown menus.
-1. If you specified **Week** under **Frequency**, do the following:<br/>
-    - Select the day or days of the week on which the flow should run and the time or times of day when the flow should run from the **On these days** and **At these hours** dropdown menus.
-    - In the **At these minutes** dropdown menu, enter the minute values (from 0 to 59) separated by a comma.
+1. If you specified **Day** under **Frequency**, select the time of day when the flow should run in the **At these hours** and **At these minutes** dropdown lists.
+1. If you specified **Week** under **Frequency**, do the following.<br/>
+    - In the **On these days** and **At these hours** dropdown lists, select the day or days of the week on which the flow should run and the time or times of day when the flow should run.
+    - In the **At these minutes** field, enter the minute values (from 0 to 59) separated by a comma.
 
     For example, configure the options as shown to start a cloud flow no sooner than 3:00 PM (Pacific time) on Thursday, March 24, 2022, and run it every two weeks on Tuesdays at 5:30 PM (Pacific time).
 

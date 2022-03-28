@@ -63,7 +63,7 @@ Here are the requirements for successfully performing the steps in this tutorial
     >![Screenshot of a schedule run.](./media/apply-to-each/foreach-3.png "Schedule run") 
 
 1. Select **+ New step**.
-1. Type **outlook** in the search field to find all connectors and actions related to Microsoft Outlook.
+1. In the **Search** field, type **outlook** to find all connectors and actions related to Microsoft Outlook.
 1. Select the **Get emails (V3)** action. The **Get emails (V3)** card opens.
 1. Configure the **Get emails (V3)** card to select the top 10 unread emails from the **Inbox** folder.
    
@@ -87,7 +87,7 @@ Here are the requirements for successfully performing the steps in this tutorial
 
     * Select the first field and then select **Subject** in the **Dynamic content** list.
     * In the dropdown list of operators in the second field, select **contains**.
-    * In the the third field, enter **meet now**.
+    * In the third field, enter **meet now**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of a condition configuration.](./media/apply-to-each/foreach-subject-condition.png "Configured condition")
@@ -97,7 +97,7 @@ Here are the requirements for successfully performing the steps in this tutorial
 
     * Select the first field and then select **Importance** in the **Dynamic content** list.
     * (If not already selected) In the dropdown list of operators in the second field, select **is equal to**.
-    * In the the third field, enter **high**.
+    * In the third field, enter **high**.
 
 1. In the **If yes** branch, select **Add an action**. This opens the **Choose an action** card, where you'll define what happens if the search condition (the **meet now** email was sent with high importance) is true.
 1. Search for **notification**, and then select the **Send me a mobile notification** action.
@@ -125,7 +125,7 @@ Here are the requirements for successfully performing the steps in this tutorial
 
     * Select the first field and then select **From** in the **Dynamic content** list.
     * In the dropdown list of operators in the second field, select **contains**.
-    * In the the third field, enter **mail**.
+    * In the third field, enter **mail**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of Condition 3 configuration.](./media/apply-to-each/foreach-condition3-card.png "Condition 3 configuration")
@@ -160,15 +160,15 @@ Next, you'll define what should happen if the search condition (the email was se
 1. Confirm the email is in your inbox and it's unread.
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Select **My flows**. A list of your flows displays.
-1. Place a check the circle for the flow you just created to select it.
-1.Select the **Run** icon to the right of the flow name.
+1. Place a check in the circle for the flow you just created to select it.
+1. Select the **Run** icon to the right of the flow name.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of run now.](./media/apply-to-each/run-flow.png "Run your flow")
 
-1. Select **Run flow**.
+1. On the panel to the right, select **Run flow**.
 1. When the run flow has successfully started, select **Done**.
-1. Select the flow run in which you are interested to view the results.
+1. Select the flow run in which you're interested to view the results.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of flows you can run to view results.](./media/apply-to-each/foreach-run-3.png "Select a flow run to view results")
