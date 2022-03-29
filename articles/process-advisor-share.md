@@ -82,7 +82,7 @@ Adding a co-owner to a process allows others to help you label and validate the 
 
 - [Delete the process](process-advisor-security.md)
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >- Only the owners of a process can analyze it.
 >- Removing all process roles from a user (such as co-owner and contributor) doesn't remove that process from the user's process list view. They can't perform any actions on the process.

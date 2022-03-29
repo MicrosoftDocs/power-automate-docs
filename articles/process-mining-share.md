@@ -49,7 +49,7 @@ When sharing a process with others, the option to automatically send an email in
 
 - Share the process with other viewers.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >- The admin experience for processes they don't own isn't supported.
 >- Removing all process roles from a user (such as viewer) does not remove that process from the user's process list view. They can't perform any actions on the process.
