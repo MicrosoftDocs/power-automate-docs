@@ -23,12 +23,12 @@ search.audienceType:
 ---
 # Change the owner of cloud flow
 
-Owners, co-owners, and admins can change the owner of a solution-aware flow to enable business continuity when the original owner isn't available.
+A owner of the flow (original creator/owner) or a co-owner or an admin can change the owner of a solution-aware flow to another user to ensure business continuity. Once the change is complete, the original owner becomes a co-owner of the flow along with the new owner.
 
-You can change the owner to an individual (not a distribution list) or a service account. If the flow uses a service account, it's considered as a department/organization flow and will need a per flow license.
+You can change the owner to an individual (not a distribution list) or a user account used as a service account. If the flow uses a service account, please make sure it is licensed correctly to avoid [Multiplexing](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/faqs#multiplexing).
 
 >[!NOTE]
->You cannot change the owner to a service principal.
+>You cannot change the owner to a service principal yet and the [feature](https://docs.microsoft.com/en-us/power-platform-release-plan/2022wave1/power-automate/ownership-supported-service-principals) is coming soon. 
 
 Follow these steps to change the owner of a flow.
 
@@ -53,7 +53,9 @@ Follow these steps to change the owner of a flow.
 
    ![Screenshot that shows a warning about incorrect license](media/change-cloud-flow-owner/667f46314ac1b6d6255c0a502589b723.png)
 
-The flow can still be assigned to the new owner. Once assigned, the new owner will have access to the run history, connection references and they can update the flow or reassign to other users.
+The flow can still be assigned to the new owner.The flow will continue to run for 30days to allow time for the new owner to purchase a license. If the new owner doesnt have a premium license after the grace period, the flow will be turned off. They can turn it on anytime after purchasing the license. 
+
+Once assigned, the new owner will have access to the run history, connection references and they can update the flow or reassign to other users.
 
 ![Screenshot that shows confirmation for the owner change](media/change-cloud-flow-owner/e5cc876b0834b6d166215a8e8941f169.png)
 
