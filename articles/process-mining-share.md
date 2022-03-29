@@ -1,5 +1,5 @@
 ---
-title: Share process mining processes in process advisor | Microsoft Docs
+title: Share process mining processes in process advisor (preview) | Microsoft Docs
 description: Share a process mining process with others so that they can glean insights to make decisions.
 author: arashurara 
 ms.subservice: process-advisor
@@ -14,9 +14,16 @@ search.audienceType:
   - enduser
 ---
 
-# Share process mining processes in process advisor
+# Share process mining processes in process advisor (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 When you create a process in process advisor, only you can see it. But you may want to share the analytics and insights with others. Share your process mining processes with others in your organization so they can also glean insights to make decisions.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Share action
 
