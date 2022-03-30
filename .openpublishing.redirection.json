@@ -124,12 +124,7 @@
         "source_path": "articles/guided-learning/index.md",
         "redirect_url": "/learn/paths/automate-process-using-flow",
         "redirect_document_id": false
-    },
-    {
-        "source_path": "/power-automate/guided-learning",
-        "redirect_url": "/learn/paths/automate-process-power-automate/",
-        "redirect_document_id": false
-    },
+    },   
     {
         "source_path": "articles/ui-flows/overview.md",
         "redirect_url": "/power-automate/desktop-flows/overview",
