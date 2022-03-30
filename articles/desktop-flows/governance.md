@@ -94,10 +94,10 @@ IT administrators, may set the following registry keys, to configure the Power A
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
-|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|EnableOrganizationPicker|DWORD|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|ProxyServer|String|
 
 ***Value***
-- **1**: The proxy server and port configured, will override the proxy server and port configured in Windows.
+- **ProxyAddress:Port (e.g.: myproxy.com:3128)**: The proxy server and port configured, will override the proxy server and port configured in Windows.
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
