@@ -86,6 +86,8 @@ You can find more information on how to use this action [here](../automation-web
 |Extraction mode|N/A|Undefined, Single value, Handpicked values, List, Table, Entire HTML table|Single value|Specify what to extract from the web page|
 |Use paging|N/A|Boolean value|False|Specify whether to use paging|
 |Get all web pages|N/A|Boolean value|False|Specify whether to get all web pages|
+|Process data upon extraction|N/A|Boolean value|False|Specify whether to process extracted data to present them exactly as displayed in the webpage. Processing of extracted data includes displaying of the information nested in iframes and filtering through hidden or visible elements. For larger datasets, having this option enabled isn't recommended as it will increase the extraction time.|
+|Timeout|Yes|Numeric value|60|Set the time in seconds that you want to wait for the extraction to be completed before the action fails|
 |Store data mode|N/A|Variable, Excel spreadsheet|Variable|Specify whether to store the extracted data in a variable or an Excel spreadsheet|
 
 
@@ -539,6 +541,7 @@ Click on a link or any other element of a web page
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|WebControl||Select the UI element on web page to click|
+|Send physical click|N/A|Boolean value|False|Specify whether to physically move the mouse cursor over the element prior to clicking. A physical click is required for cases that emulated clicks don't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after clicking on the link|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after clicking on the link|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
