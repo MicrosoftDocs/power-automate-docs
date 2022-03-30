@@ -66,7 +66,7 @@ If the flow is a **manual** flow, the flow runs under the license of the user wh
 >[!NOTE]
 >This change is limited to solution-aware flows. To change the owner of a non-solution-aware flow, the new owner must export, and then import the flow.
 
-## Related articles
+## Related information
 
 Check out this [video](https://www.youtube.com/watch?v=K7_xWJvEPUc) to learn how to export and import flows non-solution-aware flows.
 
