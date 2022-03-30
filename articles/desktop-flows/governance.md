@@ -86,7 +86,7 @@ You can use the following registry entry to prevent users from selecting a Power
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|RestrictOrgIDAccountsSignIns|DWORD|
 
 ***Value***
-- **1**: Users will not be able to sign-in using their work or school account or organization premium account
+- **1**: Users will be able to select the cloud service of their preference prior to login.
 
 ## Configure Power Automate for desktop to interact with a corporate proxy server
 
@@ -97,7 +97,7 @@ IT administrators, may set the following registry keys, to configure the Power A
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|EnableOrganizationPicker|DWORD|
 
 ***Value***
-- **1**: Users will be able to select the cloud service of their preference prior to login.
+- **1**: The proxy server and port configured, will override the proxy server and port configured in Windows.
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
