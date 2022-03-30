@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/15/2022
+ms.date: 03/29/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -23,12 +23,12 @@ search.audienceType:
 ---
 # Change the owner of cloud flow
 
-A owner of the flow (original creator/owner) or a co-owner or an admin can change the owner of a solution-aware flow to another user to ensure business continuity. Once the change is complete, the original owner becomes a co-owner of the flow along with the new owner.
+An owner, co-owner, or an admin can change the owner of a solution-aware flow to another user to ensure business continuity. After the change of ownership completes, the original owner and the new owner both become co-owners of the flow.
 
-You can change the owner to an individual (not a distribution list) or a user account used as a service account. If the flow uses a service account, please make sure it is licensed correctly to avoid [Multiplexing](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/faqs#multiplexing).
+You can change the owner to an individual (not a distribution list) or a user account used as a service account. If the flow uses a service account, ensure it's licensed correctly to avoid [multiplexing](/power-platform/admin/power-automate-licensing/faqs#multiplexing).
 
 >[!NOTE]
->You cannot change the owner to a service principal yet and the [feature](https://docs.microsoft.com/en-us/power-platform-release-plan/2022wave1/power-automate/ownership-supported-service-principals) is coming soon. 
+>You cannot change the owner of a flow to a service principal. 
 
 Follow these steps to change the owner of a flow.
 
