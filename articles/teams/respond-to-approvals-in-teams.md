@@ -14,7 +14,7 @@ ms.subservice: teams
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/30/2020
+ms.date: 03/30/2022
 ms.author: hamenon
 ---
 
@@ -55,11 +55,6 @@ Follow these steps to respond to an approval in a chat or channel in Microsoft T
 >If the approver has chosen to send an approval with custom responses, the actions at the bottom can differ. For example:
 
 ![Custom responses.](../media/native-approvals-in-teams/custom-responses-respond.png)
-
-
-## Known issues
-
-Currently, only approvals sent in your organization's default environment are listed within the approvals app in Teams.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
