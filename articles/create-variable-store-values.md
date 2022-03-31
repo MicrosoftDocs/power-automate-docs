@@ -46,7 +46,7 @@ When you reference a variable, use the variable's name as the token, not the act
 
 
 >[!NOTE]
->Before you can add actions for creating and working with variables, your flow must start with a trigger.
+>Before you can add actions for creating and working with variables, your flow must start with a trigger. You cannot use a mobile device to add variables.
 
 ## Initialize variable
 
@@ -54,7 +54,7 @@ You can create a variable and declare its data type and initial value - all with
 
 1. Sign into [Power Automate](sign-up-sign-in.md).
 
-1. Create a cloud flow and under the step where you want to add a variable, follow one of these steps: 
+1. Create a cloud flow and under the step where you want to add a variable, follow one of these steps.
 
    * To add an action under the last step, select **New step**.
 
