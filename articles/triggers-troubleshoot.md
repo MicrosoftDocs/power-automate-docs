@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/10/2021
+ms.date: 03/30/2022
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -261,5 +261,9 @@ You can try one of the following:
    A Power Automate license is required for the user to perform any actions like save, turn off, etc. A Power Apps, Dynamics 365, or Office 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate **Per User** or **Per Flow** license to edit or manually trigger the flow. If the user was previously able to save/modify the flow, it's possible that their license has expired.
 
    Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run/edit flows that use premium connectors. See the [licensing page](https://flow.microsoft.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
+
+### My flows don't trigger after I change the environment URL
+
+To resolve this issue, edit each flow and save it. The triggers should start firing again.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
