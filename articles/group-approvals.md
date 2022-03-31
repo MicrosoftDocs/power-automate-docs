@@ -24,11 +24,6 @@ search.audienceType:
 ---
 # Request approvals from Microsoft 365 groups
 
-> [!NOTE]
-> Effective February 2022, support for Microsoft 365 Groups (previously known as Office Groups) and Yammer in Dynamics 365 will be deprecated. This will impact customers who use Microsoft 365 Groups and/or Yammer for collaboration in Dynamics 365. We recommend that customers transition to Microsoft Teams for more advanced collaboration functionalities. For information about integrating Dynamics 365 with Teams, see [Integrate customer engagement apps in Dynamics 365 with Microsoft Teams](/dynamics365/teams-integration/teams-integration).
-> 
-> If you've questions about the deprecation, contact your Microsoft Customer Service representative or Microsoft Partner.
-
 You can send approvals to [Microsoft 365 groups](/microsoftteams/office-365-groups) and to individuals. It's useful to send approvals to groups in scenarios where you need an approval from **any one** person in the group. For instance:
 
 * You need the approval of a representative of the leadership team for a project.
