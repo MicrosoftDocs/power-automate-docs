@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/15/2021
+ms.date: 03/30/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -24,11 +24,10 @@ search.audienceType:
 ---
 # Billing and metering questions
 
-
 This article answers frequently asked questions regarding billing and metering in Power Automate.
 
 >[!NOTE]
-> Power Apps and Power Automate started to use a [new licensing model](/power-platform/admin/powerapps-flow-licensing-faq) on October 1, 2019. 
+> Power Apps and Power Automate started to use a [new licensing model](/power-platform/admin/powerapps-flow-licensing-faq) on October 1, 2019.
 
 ## Where can I find out what pricing plans are available?
 
@@ -45,39 +44,30 @@ See this [subscription page](https://portal.office.com/account/#subscriptions).
 
 ![Help > Pricing.](./media/billing-questions/help-pricing.png)
 
-## How do I know how much I've used?
-
-1. If you're on a free plan or a trial plan, sign into [Power Automate](https://powerautomate.com).
-1. Select the gear icon in the top right of the screen.
-
-![Settings button.](./media/billing-questions/settings.png)
-
-If you're on a paid plan, runs are pooled across all users in your organization. We're working on features to expose available quota and usage across an organization.
-
 ## What happens if my usage exceeds the limits?
 
 Power Automate throttles your flow runs.
 
 ## Where can I find more information regarding the usage limits?
 
-- On the [pricing page](https://flow.microsoft.com/pricing/), see the **FAQ** section.
-- The [limits and config page](limits-and-config.md).
+- On the [pricing page](https://flow.microsoft.com/pricing/).
+- On the [limits and config page](limits-and-config.md).
 
-## What happens if I try to execute runs too frequently?
+## What happens if I try to run flows too frequently?
 
-Your plan determines how often your flows run. For example, your flows may run every 15 minutes if you're on the free plan. If a cloud flow is triggered less than 15 minutes after its last run, it's queued until 15 minutes have elapsed.
+Your plan determines how often your flows run. For example, your flows may run every 15 minutes if you're on the free plan. If a cloud flow is triggered less than 15 minutes after its last run, it's queued until 15 minutes elapses.
 
 ## What counts as a run?
 
-Whenever a cloud flow is triggered, whether by an automatic trigger or by manually starting it, this is considered a run. Checks for new data don't count as runs.
+Whenever a cloud flow is triggered, whether by an automatic trigger or manually, this is considered a run. Checks for new data don't count as runs.
 
 ## Are there differences between Microsoft Accounts and work or school accounts for billing?
 
 Yes. If you sign in with a Microsoft Account (such as an account that ends with @outlook.com or @gmail.com), you can use only the free plan. To take advantage of the features in the paid plan, sign in with a work or school email address.
 
-## I'm trying to upgrade, but I'm told my account isn't eligible.
+## I'm trying to upgrade, but I'm told my account isn't eligible
 
-To upgrade, use a work or school account, or create an [Office 365 trial account](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
+To upgrade, use a work or school account, or create a [Microsoft 365 trial account](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
 
 ## Why did I run out of runs when my flow only ran a few times?
 
@@ -97,7 +87,7 @@ You can work around this issue by putting all the filtering you need into the tr
 If you have one of the following licenses, you can [submit a support ticket in Power Automate](https://flow.microsoft.com/support/)
 * Power Automate per flow plan 
 * Power Automate per user plan
-* Power Automate per user with Attended RPA plan 
+* Power Automate per user with Attended RPA plan
 * PowerApps per user plan
 * Dynamics Enterprise plan
 * Dynamics Professional plan
