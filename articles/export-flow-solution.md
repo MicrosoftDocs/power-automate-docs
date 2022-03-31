@@ -9,7 +9,7 @@ manager: kvivek
 
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 03/30/2022
+ms.date: 03/31/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -22,7 +22,7 @@ search.audienceType:
 
 Follow these steps to move your solution and its dependencies to a new environment.
 
->[!NOTE]
+>[!IMPORTANT]
 >Before you export a solution, you must delete any environment variables in the solution.
 
 1. Select **Solutions** from the navigation bar.
