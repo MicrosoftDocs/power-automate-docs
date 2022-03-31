@@ -24,7 +24,7 @@ If a user sends you an approval in a chat or channel message or from the approva
 
 The approvals app also shows you any approvals that were sent using a flow in the same environment. So, you can use the approvals app in Teams to manage all your approvals.
 
-## Approve or reject an request in Teams
+## Approve or reject a request in Teams
 
 Follow these steps to respond to an approval in a chat or channel in Microsoft Teams.
 
@@ -34,11 +34,11 @@ Follow these steps to respond to an approval in a chat or channel in Microsoft T
 
    You should see a card with the approval.
 
-   ![Approval in a chat.](../media/native-approvals-in-teams/approval-received.png)
+   ![Approval in a chat in Teams.](../media/native-approvals-in-teams/approval-received.png)
 
    Alternately, you can open the approvals app in Teams and go to the **Received** tab.
 
-   ![Approval in a chat.](../media/native-approvals-in-teams/approval-app-received.png)
+   ![Approvals app received tab.](../media/native-approvals-in-teams/approval-app-received.png)
 
 
 3. Select **View details** on the card or select the approval to open the approval form.
