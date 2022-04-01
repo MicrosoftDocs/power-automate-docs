@@ -1,5 +1,5 @@
 ---
-title: Prepare processes and recordings in process advisor (contains video) | Microsoft Docs
+title: Prepare processes and recordings in process advisor (contains videos) | Microsoft Docs
 description: Before you can use process advisor task mining, learn how to create a process, record the activities, and prepare the recording for analysis.
 author: nijemcevic 
 ms.subservice: process-advisor
@@ -48,8 +48,8 @@ Create a recording in one of two ways:
 - [Right after process creation](#create-a-recording-right-after-process-creation).
 - [From the process details page](#create-a-recording-from-the-process-details-screen).
 
-Here's a short video on how to record a process in process advisor.<br>
-</br>
+Here's a short video on how to record a process in process advisor.
+
 > [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RWN6PR>]
 
 ### Create a recording right after process creation
