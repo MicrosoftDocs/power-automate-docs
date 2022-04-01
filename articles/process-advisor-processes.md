@@ -50,7 +50,7 @@ Create a recording in one of two ways:
 
 Here's a short video on how to record a process in process advisor.
 
-> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RWN6PR>]
+>[!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RWN6PR>]
 
 ### Create a recording right after process creation
 
