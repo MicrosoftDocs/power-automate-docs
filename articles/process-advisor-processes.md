@@ -23,9 +23,9 @@ Before you can use process advisor task mining to visualize and analyze your pro
 - [Prepare the recording for analysis](#prepare-a-recording-for-analysis).
 - (Optional) [Create recommended activity names](#create-recommended-activity-names) to make it easier for you and others to prepare the recording for analysis.
 
-Learn more about process advisor processes in the following video.<br/>
-<br/>
->[!VIDEO <https://www.microsoft.com/videoplayer/embed/RWKx7r>]
+Learn more about process advisor processes in the following video.
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKx7r]
 
 ## Create a process
 
