@@ -46,7 +46,7 @@ In general, processes you think might be inefficient or repetitive are good cand
 Create a recording in one of two ways:
 
 - [Right after process creation](#create-a-recording-right-after-process-creation).
-- [From the process details page](#create-a-recording-from-the-process-details-screen).
+- [From the process details page](#create-a-recording-from-the-process-details-screen)
 
 Here's a short video on how to record a process in process advisor.
 
