@@ -21,7 +21,7 @@ Before you can use process advisor task mining to visualize and analyze your pro
 - [Create your process](#create-a-process) in process advisor.
 - [Record the activities](#record-your-process) that make up the process using the Power Automate recorder.
 - [Prepare the recording for analysis](#prepare-a-recording-for-analysis).
-- (Optional) [Manage activity names](#manage-activity-names) to make it easier for you and others to prepare the recording for analysis.
+- (Optional) [Create recommended activity names](#create-recommended-activity-names) to make it easier for you and others to prepare the recording for analysis.
 
 Learn more about process advisor processes in the following video.<br/>
 <br/>
