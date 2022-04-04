@@ -4,7 +4,7 @@ description: Share a task mining process with others so that they can offer inpu
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 03/31/2022
+ms.date: 04/01/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -70,7 +70,7 @@ Adding a co-owner to a process allows others to help you label and validate the 
 
 - [View your process map and related analytics](process-advisor-analyze.md#view-your-process-map-and-related-analytics)
 
-- [Update properties, such as name and description](process-advisor-processes.md#manage-activity-names)
+- [Update properties, such as name and description](process-advisor-processes.md#create-recommended-activity-names)
 
 - [Invite co-owners and contributors](process-advisor-share.md#share-action)
 
