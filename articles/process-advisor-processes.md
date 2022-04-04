@@ -125,7 +125,7 @@ What does this mean?
 
 Here's a short video on how to prepare a recording for analysis with process advisor.</br>
 </br>
->[!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RWN6PQ>]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6PQ]
 
 ### Grouping actions into activities
 
