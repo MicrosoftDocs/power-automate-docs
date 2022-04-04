@@ -83,7 +83,7 @@ You can use the following registry entry to prevent users from selecting a speci
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
-|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|RestrictOrgIDAccountsSignIns|DWORD|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|EnableOrganizationPicker|DWORD|
 
 ***Value***
 - **1**: Users will be able to select the organization of their preference.
