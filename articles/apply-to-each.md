@@ -31,7 +31,7 @@ Watch this video for a demo of the **Apply to each** action.
 
 In this tutorial, we'll create a cloud flow that runs every 15 minutes and does the following:
 
-1. Gets the last 10 unread messages in your Office 365 Outlook Inbox.
+1. Gets the last 10 unread messages in your Microsoft 365 Outlook Inbox.
 2. Checks each of the 10 messages to confirm if any has **meet now** in the subject.
 3. Checks if the email is from your boss or was sent with high importance.
 4. Sends a push notification and marks as read, any email that has **meet now** in the subject and is either from your boss or was sent with high importance.
@@ -45,9 +45,9 @@ This diagram shows the details of the flow we'll create.
 Here are the requirements for successfully performing the steps in this tutorial.
 
 * An account that's registered to use [Power Automate](https://flow.microsoft.com).
-* An Office 365 Outlook account.
+* A Microsoft 365 Outlook account.
 * The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
-* Connections to Office 365 Outlook and the push notification service.
+* Connections to Microsoft 365 Outlook and the push notification service.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
