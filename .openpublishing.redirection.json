@@ -129,37 +129,6 @@
         "source_path": "articles/ui-flows/overview.md",
         "redirect_url": "/power-automate/desktop-flows/overview",
         "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/guided-learning/build-flows.md",
-            "redirect_url": "/learn/modules/get-started-with-flow/2-create-first-flow",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/guided-learning/get-started.md",
-            "redirect_url": "/learn/modules/get-started-with-flow/1-introduction",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/guided-learning/work-with-approvals.md",
-            "redirect_url": "/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/guided-learning/index.md",
-            "redirect_url": "/learn/paths/automate-process-using-flow",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "/power-automate/guided-learning",
-            "redirect_url": "/learn/paths/automate-process-power-automate/",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/ui-flows/overview.md",
-            "redirect_url": "/power-automate/desktop-flows/overview",
-            "redirect_document_id": false
-        },
   {
     "source_path": "articles/ui-flows/upgrade.md",
     "redirect_url": "/power-automate/desktop-flows/upgrade",
