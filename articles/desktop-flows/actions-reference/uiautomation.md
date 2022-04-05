@@ -552,16 +552,16 @@ This action marks the beginning of a conditional block of actions depending on w
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If image|N/A|exists, doesn't exist|exists|Whether to check for the existence or absence of the selected image|
-|Image to check|No|List of Image||The image/s that the action will check if it/they exist|
+|Image|No|List of Image||The image/s that the action will check if it/they exist|
 |Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified image in the foremost window only or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
-|Search Mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
+|Search mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
 |Find all images in the list|N/A|Boolean value|False|Check whether all images on the list exist or don't exist|
 |X1|Yes|Numeric value||The start X coordinate of the subregion to scan for the supplied text|
 |X2|Yes|Numeric value||The end X coordinate of the subregion to scan for the supplied text|
 |Y1|Yes|Numeric value||The start Y coordinate of the subregion to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
 |Tolerance|Yes|Numeric value|10|Specify how much the image(s) searched for can differ from the originally chosen image|
-
+|Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 
 ##### Variables Produced
 - This action doesn't produce any variables
@@ -622,13 +622,15 @@ This action waits until a specific image appears on the screen or on the foregro
 |Wait for image to|N/A|Appear, Disappear|Appear|Check whether to wait for the image(s) to appear or disappear|
 |Image to wait for|No|List of Image||The image/s that the action will check if it/they exist|
 |Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified image in the foremost window only or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
-|Search Mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
+|Search mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
 |Wait for all images|N/A|Boolean value|False|Whether to wait for all the images on the list to appear(disappear), or just one of them|
 |X1|Yes|Numeric value||The start X coordinate of the subregion to scan for the supplied text|
 |X2|Yes|Numeric value||The end X coordinate of the subregion to scan for the supplied text|
 |Y1|Yes|Numeric value||The start Y coordinate of the subregion to scan for the supplied text|
 |Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
 |Tolerance|Yes|Numeric value|10|Specify how much the image(s) searched for can differ from the originally chosen image|
+|Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
+|Fail with timeout error|N/A|Boolean value|False|Specify whether you want the action to wait indefinitely or fail after a set time period|
 
 
 ##### Variables Produced
