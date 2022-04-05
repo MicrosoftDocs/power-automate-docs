@@ -25,7 +25,7 @@ search.audienceType:
 
 # Customize email in flows
 
-Here are the top how-to scenarios about email in Power Automate, with examples of how to achieve them:
+Here are the top how-to scenarios about email in Power Automate, with examples of how to achieve them.
 
 1. Send a [beautifully formatted email](#send-a-beautifully-formatted-email).
 
@@ -37,7 +37,7 @@ Here are the top how-to scenarios about email in Power Automate, with examples o
 
 1. Change the [date and time format](#change-the-date-and-time-format-of-an-email) of an email.
 
-## Send a beautifully formatted email 
+## Send a beautifully formatted email
 
 You can use HTML to beautify your email. Following are two options that you can use to beautify your messages with HTML:
 
@@ -64,7 +64,9 @@ Alternatively, if you don't know HTML or don't feel like playing with HTML, foll
 
 1. Find **\<html\>** in the file. 
 1. Copy the content between **\<html\>** and **\</html\>**. 
-1. Back in Power Automate, select the **\</\>** button in the rich text editor of the **Send an email** action, and then paste the contents that you copied from Outlook.
+1. Back in Power Automate, select the **\</\>** button in the rich text editor of the **Send an email (V2)** action, and then paste the contents that you copied from Outlook.
+1. Select **Save** at the bottom of the flow steps to save your flow.
+1. Be sure to test your flow to confirm it works as intended.
 
 ## Add an image to your email
 

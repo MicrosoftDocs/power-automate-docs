@@ -1,11 +1,11 @@
 {
-    "redirections": [
-      {
-        "source_path": "articles/actions.md",
-        "redirect_url": "/powerapps/maker/common-data-service/actions",
-        "redirect_document_id": "false"
-      },
-      {
+  "redirections": [
+    {
+      "source_path": "articles/actions.md",
+      "redirect_url": "/powerapps/maker/common-data-service/actions",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/create-actions.md",
       "redirect_url": "/powerapps/maker/common-data-service/actions",
       "redirect_document_id": "false"
@@ -50,101 +50,95 @@
       "redirect_url": "/power-automate/developer/register-custom-api",
       "redirect_document_id": "false"
     },
-
-        {
-        "source_path": "articles/guided-learning/administer-flows.yml",
+    {
+      "source_path": "articles/guided-learning/administer-flows.yml",
+      "redirect_url": "/learn/paths/automate-process-using-flow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/postman-collection.md",
+      "redirect_url": "/connectors/custom-connectors/define-postman-collection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/customapi-how-to-swagger.md",
+      "redirect_url": "/connectors/custom-connectors/openapi-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/customapi-azure-resource-manager-tutorial.md",
+      "redirect_url": "/connectors/custom-connectors/azure-active-directory-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/dev-isv-partner-intro.md",
+      "redirect_url": "/power-automate/dev-enterprise-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/customapi-web-api-tutorial.md",
+      "redirect_url": "/connectors/custom-connectors/create-web-api-connector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/api-connector-overview.md",
+      "redirect_url": "/connectors/custom-connectors/submit-certification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/api-connector-dev.md",
+      "redirect_url": "/connectors/custom-connectors/submit-certification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/api-connector-submission.md",
+      "redirect_url": "/connectors/custom-connectors/submit-certification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/api-connector-faq.md",
+      "redirect_url": "/connectors/custom-connectors/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/customapi-webhooks.md",
+      "redirect_url": "/connectors/custom-connectors/create-webhook-trigger",
+      "redirect_document_id": false
+    },
+    {
+        "source_path": "articles/guided-learning/build-flows.md",
+        "redirect_url": "/learn/modules/get-started-with-flow/2-create-first-flow",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "articles/guided-learning/get-started.md",
+        "redirect_url": "/learn/modules/get-started-with-flow/1-introduction",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "articles/guided-learning/work-with-approvals.md",
+        "redirect_url": "/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "articles/guided-learning/index.md",
         "redirect_url": "/learn/paths/automate-process-using-flow",
         "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/postman-collection.md",
-        "redirect_url": "/connectors/custom-connectors/define-postman-collection",
+    },   
+    {
+        "source_path": "articles/ui-flows/overview.md",
+        "redirect_url": "/power-automate/desktop-flows/overview",
         "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/customapi-how-to-swagger.md",
-        "redirect_url": "/connectors/custom-connectors/openapi-extensions",
-        "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/customapi-azure-resource-manager-tutorial.md",
-        "redirect_url": "/connectors/custom-connectors/azure-active-directory-authentication",
-        "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/dev-isv-partner-intro.md",
-        "redirect_url": "/power-automate/dev-enterprise-intro",
-        "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/customapi-web-api-tutorial.md",
-        "redirect_url": "/connectors/custom-connectors/create-web-api-connector",
-        "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/api-connector-overview.md",
-        "redirect_url": "/connectors/custom-connectors/submit-certification",
-        "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/api-connector-dev.md",
-        "redirect_url": "/connectors/custom-connectors/submit-certification",
-        "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/api-connector-submission.md",
-        "redirect_url": "/connectors/custom-connectors/submit-certification",
-        "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/api-connector-faq.md",
-        "redirect_url": "/connectors/custom-connectors/faq",
-        "redirect_document_id": false
-        },
-        {
-        "source_path": "articles/customapi-webhooks.md",
-        "redirect_url": "/connectors/custom-connectors/create-webhook-trigger",
-        "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/guided-learning/build-flows.md",
-            "redirect_url": "/learn/modules/get-started-with-flow/2-create-first-flow",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/guided-learning/get-started.md",
-            "redirect_url": "/learn/modules/get-started-with-flow/1-introduction",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/guided-learning/work-with-approvals.md",
-            "redirect_url": "/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/guided-learning/index.md",
-            "redirect_url": "/learn/paths/automate-process-using-flow",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "/power-automate/guided-learning",
-            "redirect_url": "/learn/paths/automate-process-power-automate/",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "articles/ui-flows/overview.md",
-            "redirect_url": "/power-automate/desktop-flows/overview",
-            "redirect_document_id": false
-        },
+
   {
     "source_path": "articles/ui-flows/upgrade.md",
     "redirect_url": "/power-automate/desktop-flows/upgrade",
     "redirect_document_id": false
   },
   {
-    "source_path": "articles/ui-flows/setup.md",
-    "redirect_url": "/power-automate/desktop-flows/setup",
-    "redirect_document_id": false
+      "source_path": "articles/ui-flows/setup.md",
+      "redirect_url": "/power-automate/desktop-flows/setup",
+      "redirect_document_id": false
   },
   {
     "source_path": "articles/ui-flows/create-desktop.md",
