@@ -250,7 +250,7 @@ Extract text from a given source using the given OCR engine
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|OCR engine|No|Windows OCR engine, Tesseract engine, OCR engine variable|OCR engine variable|The OCR engine type to use. Select a preconfigured OCR engine or set up a new one.|
+|OCR engine|No|Windows OCR engine, Tesseract engine, OCR engine variable|OCR engine variable|The OCR engine type to use. Select a preconfigured OCR engine or set up a new one|
 |OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
 |OCR source|N/A|Screen, Foreground window, Image on disk|Screen|The source of the image to perform the OCR operation on|
 |Image file path|No|File||The path of the image to perform the OCR operation on|
@@ -268,7 +268,7 @@ Extract text from a given source using the given OCR engine
 |Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
 |Image width multiplier|No|Numeric value|1|The width multiplier of the image|
 |Image height multiplier|No|Numeric value|1|The height multiplier of the image|
-|Wait for image to appear||N/A|Boolean value|True|Specifies whether to wait or not for the image to appear on the screen or foreground window|
+|Wait for image to appear|N/A|Boolean value|True|Specifies whether to wait or not for the image to appear on the screen or foreground window|
 |Timeout|No|Numeric value|5|Specifies the time to wait for the operation to complete before the action fails|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 
