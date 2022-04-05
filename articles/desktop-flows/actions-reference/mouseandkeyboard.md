@@ -129,23 +129,24 @@ Moves the mouse over an image found on screen or on the foreground window
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Image to move mouse to|No|List of Image||The list of Images to move the mouse to|
+|Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
+|Occurence|Yes|Numeric value|1|The occurence of the image found to move the mouse to|
+|Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the image|
+|Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click to send to the image|
+|Wait for image to appear|N/A|Boolean value|True|Choose whether you want the action to wait if the image isn't found on the screen or foreground window|
+|Fail timeout|Yes|Numeric value|0|The fail timeout in seconds|
+|Seconds before click|Yes|Numeric value|0|The number of seconds to wait before sending the click|
+|Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
+|Mouse position relative to image|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|The section of the image the mouse will be moved to|
+|Offset X|Yes|Text value|0|The pixels to offset the mouse from the position to the right|
+|Offset Y|Yes|Text value|0|The pixels to offset the mouse from the position down|
+|Tolerance|Yes|Numeric value|10|Specify how much the specified image can differ from the originally chosen image|
 |Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Specify whether to search for the specified Image in the foremost window only, or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
 |Search mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Specify whether to scan the entire screen (or window) to find the supplied image or only a subregion of it|
 |X1|Yes|Numeric value||The starting X of the subregion to search in|
 |Y1|Yes|Numeric value||The starting Y of the subregion to search in|
 |X2|Yes|Numeric value||The ending X of the subregion to search in|
 |Y2|Yes|Numeric value||The ending Y of the subregion to search in|
-|Mouse position relative to image|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|The section of the image the mouse will be moved to|
-|Offset X|Yes|Text value|0|The pixels to offset the mouse from the position to the right|
-|Offset Y|Yes|Text value|0|The pixels to offset the mouse from the position down|
-|Tolerance|Yes|Numeric value|10|Specify how much the specified image can differ from the originally chosen image|
-|Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
-|Occurence|Yes|Numeric value|1|The occurence of the image found to move the mouse to|
-|Fail timeout|Yes|Numeric value|0|The fail timeout in seconds|
-|Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the image|
-|Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click to send to the image|
-|Seconds before click|Yes|Numeric value|0|The number of seconds to wait before sending the click|
-
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -202,6 +203,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Mouse position relative to text|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the text the mouse will be moved to|
 |Offset X|Yes|Text value|0|Offset the mouse from the position by this many pixels to the right|
 |Offset Y|Yes|Text value|0|Offset the mouse from the position by this many pixels down|
+|Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 
 > [!NOTE]
 > Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
