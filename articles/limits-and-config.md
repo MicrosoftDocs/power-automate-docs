@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/09/2022
+ms.date: 03/31/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -35,7 +35,7 @@ Flows have different limits depending on their *performance profile*. There are 
 
 | Performance profile | Plans |
 |---------------------|-------|
-| Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>Dynamics 365 Team Member | 
+| Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member | 
 | Medium              | - Power Apps triggered flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate per user, Power Automate per user with Attended RPA plans <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
 | High                | - Power Automate per flow plan |
 
@@ -220,12 +220,11 @@ Here are the limits for custom connectors that you can create from web APIs.
 
 | Name | Limit |  Notes |
 |------|-------|-------|
-| Number of custom connectors | 50 per user |Microsoft 365 users can run one flow with a custom connector.  |
+| Number of custom connectors | 50 per user ||
 | Number of requests per minute for a custom connector | 500 requests per minute per connection |  |
 
 >[!NOTE]
->To run any flow that has a custom connector, a premium license (or trial) is required.
-
+>You must have a premium (or trial) license to run any flow that has a custom connector.
 
 ## SharePoint limits
 

@@ -6,7 +6,7 @@ manager: KVIVEK
 ms.author: Deonhe
 
 ms.topic: article
-ms.date: 01/31/2022
+ms.date: 03/31/2022
 search.app: 
   - Flow
   - Powerplatform
@@ -84,11 +84,11 @@ to construct **Filter Query** expressions.
 >[!IMPORTANT]
 >Filter expressions cannot contain this string, **\$filter=**, because it only applies when you use the APIs directly.
 
-### Sort By
+### Sort by
 
 Use to define an OData-style expression that defines the order in which items are returned, such as "name desc". Use the **asc** or **desc** suffix to indicate ascending or descending order, respectively. The default order is ascending.
 
-### Expand Query
+### Expand query
 
 Use to specify an OData-style expression that defines the data that Dataverse returns from the related tables, such as "primarycontactid($select=contactid,fullname)" to use the account's **primarycontactid** to retrieve the **fullname** column from the related contact with ID **contactid** in the response.
 
@@ -102,18 +102,20 @@ If you include only the name of the navigation property, you’ll receive all th
 
 To use it in a flow step, enter an Odata expression as shown in the following image. This example shows how to get the *contactid* and *fullname* columns for the *primarycontactid* of each *account*.
 
+![Screenshot of an image that displays how to get the contactid and fullname](../media/list-rows/contactid-fullname-query.png)
+
 ### Row count
 
 Use to indicate the specific number of rows for Dataverse to return. Here's an example that shows how to request 10 rows.
 
-### Fetch Xml Query
+### Fetch Xml query
 
 > [!IMPORTANT]
-> The distinct operator and [aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) are not currently supported in FetchXML queries from the List rows connector. 
+> The distinct operator and [aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) are not currently supported in FetchXML queries from the List rows connector.
 
 Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows additional flexibility in building custom queries. These can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
 
-![List accounts example with FetchXML.](https://user-images.githubusercontent.com/469480/123689706-6160bd80-d808-11eb-83e6-936e22850d9b.PNG)
+![List accounts example with FetchXML.](../media/list-rows/fetch-sml-example.png)
 
 Example FetchXML query for the Account table: 
 
