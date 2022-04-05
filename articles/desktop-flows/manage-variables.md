@@ -75,7 +75,7 @@ To create an input variable:
 
     - **Variable type**: Defines if the variable is input or output.
     - **Variable name**: The name of the variable in the flow.
-    - **Data type**: The type of the variable, like number, text, or datetime.
+    - **Data type**: The type of the variable, text.
     - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
