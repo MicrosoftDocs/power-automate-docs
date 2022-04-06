@@ -127,12 +127,16 @@ Within the list, for each machine you can view:
 
 - The name of the machine. 
 - The description of the machine. 
+- The version of the machine
 - The group that the machine is a part of, if applicable. 
 - The status of the machine. 
 - The number of flows running on the machine. 
 - The number of flows queued on the machine, if applicable. 
 - The type of access you have to the machine. 
 - The owner of the machine. 
+
+> [!NOTE]
+> The version of the machine is updated with the first registration and after each desktop flow run. 
 
 ## Share a machine 
 
