@@ -42,7 +42,7 @@ To copy an example to your flows, right-click on it and select **Create a copy**
 
 If you've opened and edited an example in the flow designer, select the **Save as** button to copy the edited example to your flows. The changes can't be saved to the original example flow. 
 
-![[Screenshot of the Save as button in an open example.](media\create-flow-console\save-as-example.png)
+![Screenshot of the Save as button in an open example.](media\create-flow-console\save-as-example.png)
 
 ## Create a new desktop flow in Power Automate
 
