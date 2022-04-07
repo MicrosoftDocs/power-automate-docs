@@ -56,7 +56,7 @@ Although you can update variables' names manually through actions, the name will
 
 ## Input and output variables
 
-Power Automate enables data exchange with the Power Automate platform through the input and output variables. These variables are passed to and from Power Automate for desktop, allowing you to create sophisticated flows.
+Power Automate enables data exchange with the Power Automate platform through the input and output variables. These variables are passed to and from Power Automate desktop flows, allowing you to create sophisticated flows.
 
 Additionally, you can use input variables to set values manually when the flows are triggered through the console.
 
@@ -143,7 +143,7 @@ To update an input/output variable:
 > [!IMPORTANT]
 > Flows developed in older versions of Power Automate for desktop (v.2.13 or older) remain unaffected from the sensitive variables functionality, as long as they aren't edited. If users run existing flows from the console and the portal without editing them, they will still have the old behavior and work in the same way as before. To migrate flows to the new functionality, edit and save them at least once with Power Automate for desktop v.2.14 or above. This will convert past encrypted type input variables, as well as encrypted type variables produced by the 'Get password from CyberArk' action, to text type variables marked as sensitive.
 
-There are scenarios where flows handle sensitive information that needs to be hidden while debugging and running the flow. Power Automate for desktop allows users to create sensitive variables that aren't visible when a flow runs from within the flow designer. 
+There are scenarios where flows handle sensitive information that needs to be hidden while debugging and running the flow. Desktop flows allow users to create sensitive variables that aren't visible when the flows run from within the flow designer. 
 
 If you have logged in with an organization premium account, the values of sensitive variables aren't logged in the desktop flow logs of the Power Automate portal when the flow runs from the console or a cloud flow. 
 

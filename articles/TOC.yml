@@ -296,9 +296,9 @@
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Setup Power Automate
     items:
-    - name: Power Automate prerequisites & limitations 
+    - name: Power Automate for desktop prerequisites & limitations 
       href: ./desktop-flows/setup.md
-    - name: Install Power Automate
+    - name: Install Power Automate on your device
       href: ./desktop-flows/install.md
     - name: Governance in Power Automate
       href: ./desktop-flows/governance.md     
@@ -306,7 +306,7 @@
       href: ./desktop-flows/troubleshoot.md
     - name: Data Collection in Power Automate
       href: ./desktop-flows/diagnostic-data.md      
-  - name: Power Automate architecture
+  - name: Power Automate for desktop architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
@@ -318,7 +318,7 @@
     href: ./desktop-flows/getting-started-org.md
   - name: Create a desktop flow
     href: ./desktop-flows/create-flow.md
-  - name: Run desktop flows
+  - name: Run attended and unattended desktop flows
     href: ./desktop-flows/run-pad-flow.md
   - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md

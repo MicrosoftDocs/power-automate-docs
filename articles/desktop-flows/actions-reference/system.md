@@ -38,7 +38,7 @@ Launch any of your installed applications with the **Run application** action. C
 
 ![Screenshot of the Run application action.](\media\system\run-application-example.png)
 
-Apart from running applications, Power Automate for desktop enables you to terminate processes by name or ID through the **Terminate process** action and wait for processes to start or stop through the **Wait for process** action.
+Apart from running applications, Power Automate desktop flows enable you to terminate processes by name or ID through the **Terminate process** action and wait for processes to start or stop through the **Wait for process** action.
 
 ![Screenshot of the Wait for process action.](\media\system\wait-process-action.png)
 
