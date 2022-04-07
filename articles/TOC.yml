@@ -290,7 +290,7 @@
       href: error-checker.md
 - name: Power Automate desktop flows
   items: 
-  - name: Introduction to Power Automate desktop flows
+  - name: Introduction to desktop flows
     href: ./desktop-flows/introduction.md
   - name: Getting started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md

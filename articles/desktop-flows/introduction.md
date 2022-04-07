@@ -1,6 +1,6 @@
 ---
-title: Introduction to Power Automate desktop flows | Microsoft Docs
-description: Introduction to Power Automate desktop flows
+title: Introduction to desktop flows | Microsoft Docs
+description: Introduction to desktop flows
 author: mariosleon
 
 ms.subservice: desktop-flow
@@ -16,9 +16,9 @@ search.audienceType:
   - enduser
 ---
 
-# Introduction to Power Automate desktop flows
+# Introduction to desktop flows
 
-Power Automate desktop flows broaden the existing robotic process automation (RPA) capabilities in Power Automate and enable you to automate all repetitive desktop processes. It’s quicker and easier than ever to automate with the new intuitive Power Automate desktop flow designer using the prebuilt drag-and-drop actions or recording your own [desktop flows](create-flow.md) to run later. 
+Desktop flows broaden the existing robotic process automation (RPA) capabilities in Power Automate and enable you to automate all repetitive desktop processes. It’s quicker and easier than ever to automate with the new intuitive Power Automate desktop flow designer using the prebuilt drag-and-drop actions or recording your own [desktop flows](create-flow.md) to run later. 
 
 Leverage automation capabilities in Power Automate. Create flows, interact with everyday tools such as email and excel or work with modern and legacy applications. Examples of simple and complex tasks you can automate are: 
 
@@ -28,7 +28,7 @@ Leverage automation capabilities in Power Automate. Create flows, interact wit
 
 - Apply desktop automation capabilities to put your work on autopilot  
 
-Power Automate desktops flows are addressed to home users, small businesses, enterprises or larger companies. They're addressed essentially to everyone who is performing simple or complex rule-based tasks on their workstations.
+Desktop flows are addressed to home users, small businesses, enterprises or larger companies. They're addressed essentially to everyone who is performing simple or complex rule-based tasks on their workstations.
 
 In case you are a home user who is accessing a weather website to see tomorrow's forecast, or a self-employed businessperson who extracts information from vendors' invoices or even an employee of a large enterprise who automates data entry on an ERP system, Power Automate is designed for you. 
 
