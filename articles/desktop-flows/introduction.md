@@ -1,6 +1,6 @@
 ---
-title: Introduction to Power Automate for desktop  | Microsoft Docs
-description: Introduction to Power Automate for desktop
+title: Introduction to Power Automate desktop flows | Microsoft Docs
+description: Introduction to Power Automate desktop flows
 author: mariosleon
 
 ms.subservice: desktop-flow
@@ -16,7 +16,7 @@ search.audienceType:
   - enduser
 ---
 
-# Introduction to Power Automate for desktop
+# Introduction to Power Automate desktop flows
 
 Power Automate for desktop broadens the existing robotic process automation (RPA) capabilities in Power Automate and enables you to automate all repetitive desktop processes. It’s quicker and easier than ever to automate with the new intuitive Power Automate desktop flow designer using the prebuilt drag-and-drop actions or recording your own [desktop flows](create-flow.md) to run later. 
 
