@@ -1,6 +1,6 @@
 ---
-title: Power Automate for desktop architecture | Microsoft Docs
-description: Power Automate for desktop architecture
+title: Power Automate architecture | Microsoft Docs
+description: Power Automate architecture
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Power Automate for desktop architecture
+# Power Automate architecture
 
 There are two different methods that Power Automate can use to connect to the cloud services in order to receive flow execution jobs. The first option is direct connectivity, while the second option requires the on-premises data gateway to be installed.
 

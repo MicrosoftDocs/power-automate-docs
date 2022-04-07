@@ -71,7 +71,7 @@ search.audienceType:
 
 - An active connection to the Internet.
 
-## Set the display language for Power Automate
+## Set the display language for Power Automate for desktop
 
 The language used in Power Automate for desktop is the display language selected on your Windows OS. Get more details on how to [manage display language settings in Windows 10](https://support.microsoft.com/windows/manage-display-language-settings-in-windows-10-219f28b0-9881-cd4c-75ca-dba919c52321).
 
