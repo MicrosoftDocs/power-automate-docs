@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/16/2022
+ms.date: 03/31/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -35,7 +35,7 @@ Flows have different limits depending on their *performance profile*. There are 
 
 | Performance profile | Plans |
 |---------------------|-------|
-| Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>Dynamics 365 Team Member | 
+| Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member | 
 | Medium              | - Power Apps triggered flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate per user, Power Automate per user with Attended RPA plans <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
 | High                | - Power Automate per flow plan |
 
@@ -89,8 +89,8 @@ Limits on how long flows will remain turned on before they expire and get turned
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
 | Flows with errors    | 14 days |  A cloud flow that has a trigger or actions which fail continuously will be turned off. Fix your trigger or actions and turn on the  flow. |
-| Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans.No expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivity, the flow creator will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off and the creator will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. |
-| Consistently throttled flows | 14 days |A cloud flow that is consistently throttled for 14 days will be turned off. The flow creator will get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
+| Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans.No expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivity, the flow creator and co-creators will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off and the creator and co-creators will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. |
+| Consistently throttled flows | 14 days |A cloud flow that is consistently throttled for 14 days will be turned off. The flow creator and co-creators will get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
 
 ## Concurrency, looping, and debatching limits
 
@@ -220,12 +220,11 @@ Here are the limits for custom connectors that you can create from web APIs.
 
 | Name | Limit |  Notes |
 |------|-------|-------|
-| Number of custom connectors | 50 per user |Microsoft 365 users can run one flow with a custom connector.  |
+| Number of custom connectors | 50 per user ||
 | Number of requests per minute for a custom connector | 500 requests per minute per connection |  |
 
 >[!NOTE]
->To run any flow that has a custom connector, a premium license (or trial) is required.
-
+>You must have a premium (or trial) license to run any flow that has a custom connector.
 
 ## SharePoint limits
 

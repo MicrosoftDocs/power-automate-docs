@@ -32,7 +32,7 @@ The installer contains all the components you need to record, edit, and test you
 Follow these steps to install the Power Automate for desktop:
 
 1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
-1. Open the **Setup.Microsoft.PowerAutomateDesktop.exe** file. 
+1. Open the **Setup.Microsoft.PowerAutomate.exe** file. 
 
    This file is likely in your **Downloads** folder after you downloaded it in the previous step.
 
@@ -136,7 +136,7 @@ Follow these steps if you want to silently install Power Automate.
 1. Enter:
 
    ```CMD
-   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Install -ACCEPTEULA
+   Setup.Microsoft.PowerAutomate.exe -Silent -Install -ACCEPTEULA
    ```
    
    The installer runs and completes the setup of Power Automate.
@@ -151,21 +151,24 @@ Follow these steps if you want to silently install Power Automate.
 You can also retrieve the details of all the command line arguments from the help menu in the command prompt:
 
    ```CMD
-   Setup.Microsoft.PowerAutomateDesktop.exe -HELP
+   Setup.Microsoft.PowerAutomate.exe -HELP
    ```
 
 |Command|Description|
 |----|----|
-|-INSTALLPATH:Value|The full path of the installation folder that will be created. The default <br />is `%PROGRAMFILES(X86)%\Power Automate`.|
-|-DISABLEPADSHORTCUT|By default, a shortcut of Power Automate  app is created on the desktop. Use this<br /> argument to indicate that you don't want it to be created.|
-|-DISABLETURNONRD|Use the argument if you don't want the installer to turn on Remote Desktop on the device. <br />You must turn on Remote Desktop if you want support for unattended runs.|
-|-ACCEPTEULA|Use this argument to indicate that you accept the terms of use for Power Automate.|
-|-HELP|This argument displays all details about the arguments for the installer prompt.|
+|-INSTALLPATH:Value|The full path of the installation folder that will be created. Default: <br />is `%PROGRAMFILES(X86)%\Power Automate`.|
+|-ALLOWOPTIONALDATACOLLECTION|Enable sending optional telemetry data to Microsoft.|
+|-DISABLEPADSHORTCUT|Doesn't create a shortcut for Power Automate for desktop.|
+|-DISABLETURNONRDP|Doesn't turn on Remote Desktop on the machine|
+|-ACCEPTEULA|Accepts the end user license agreement, needed for the installation.|
+|-RESTOREDEFAULTCONFIG|Restores to the default installation settings during an upgrade.|
+|-DONOTINSTALLPAD|Skips installing Power Automate for desktop.|
+|-DONOTINSTALLMACHINERUNTIME|Skips installing Power Automate machine-runtime app|
 
 Here's an example of a command line argument that installs Power Automate: 
 
    ```CMD
-   Setup.Microsoft.PowerAutomateDesktop.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
+   Setup.Microsoft.PowerAutomate.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
    ```
 
 ### Uninstall Power Automate for desktop using the command line
@@ -173,7 +176,7 @@ Here's an example of a command line argument that installs Power Automate:
 Use the following command to silently uninstall Power Automate:
    
    ```CMD
-   Setup.Microsoft.PowerAutomateDesktop.exe -Silent -Uninstall
+   Setup.Microsoft.PowerAutomate.exe -Silent -Uninstall
    ```
 
 ### Update your version of Power Automate

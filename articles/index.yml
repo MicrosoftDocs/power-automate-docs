@@ -69,7 +69,7 @@ conceptualContent:
         - text: Scheduled flows
           url: ./run-scheduled-tasks.md
           itemType: overview
-        - text: Button flows
+        - text: Instant flows
           url: ./introduction-to-button-flows.md
           itemType: overview
     
@@ -197,7 +197,7 @@ conceptualContent:
           url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
           itemType: reference     
         - text: Power Automate licensing
-          url: ./billing-questions.md
+          url: /power-platform/admin/power-automate-licensing/overview
           itemType: reference       
 
     - title: Get project guidance on...

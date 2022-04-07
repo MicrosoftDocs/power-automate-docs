@@ -28,7 +28,7 @@ search.audienceType:
 ## Prerequisites
 
 - A Microsoft work or school account to sign into Power Automate
-- An account with administrator privileges to sign in to your Windows device
+
 
 - System requirements:
 
@@ -43,7 +43,8 @@ search.audienceType:
      - .NET Framework 4.7.2 or later 
 
 > [!NOTE]
-> The system requirements do not include the resources required for the applications involved in the flows.
+> - The system requirements do not include the resources required for the applications involved in the flows.
+> - To install Power Automate, an account with administrator privileges to sign in to your Windows device is required.
      
 > [!TIP]
 > If your device runs Windows 10 Home, you can use Power Automate to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows 10 Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) are not supported.
@@ -110,6 +111,22 @@ Below you can find detailed comparison on what each user will have access to. Yo
 |**Sharing and Collaboration**: Share flows between team members and select access level such as co-development or run-only.|No|No|Yes| 
 |**Centralized management and reporting**: New flows and any execution logs are automatically saved to Power Automate service to provide centralized management and reporting.|No|No|Yes|
 |**Additional capabilities** such as AI Builder, integration with cloud flows, use of over 400+ premium and custom connectors, unattended RPA (with unattended addon) and much more.|No|No|Yes| 
+
+## Run Power Automate with elevated rights
+
+While creating desktop flows, some actions may need to access resources with elevated rights, such as files and applications. To run these actions successfully, launch Power Automate as administrator:
+
+> [!IMPORTANT]
+> - To run desktop flows through the flow designer or the console to interact with an application running with elevated rights, launch Power Automate as an administrator. 
+> - When a desktop flow is triggered by a cloud flow, the actions contained in the desktop flow that require elevated privileges won't have any effect. Therefore, Power Automate won't be able to access applications that run with elevated rights and their elements.
+
+1. Before launching Power Automate, ensure that the application is closed and doesn't appear on the Windows system tray.
+
+1. Right-click on the Power Automate icon and select **Run as administrator**. 
+
+1. To confirm that Power Automate is launched with administrator rights, open the Windows Task Manager, navigate to the **Details** tab, and check that Power Automate runs with elevated privileges.
+
+    ![Screenshot of the Power Automate processes in the Windows Task Manager.](media/run-as-administrator/task-manager.png)
 
 ## Known issues and limitations
 

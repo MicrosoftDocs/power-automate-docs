@@ -46,7 +46,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | Domains | Protocols | Uses |
 | --------|  ---------| ---- |
 | management.azure.com | https | Access to the Azure Resource Manager. |
-| login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to authentication and authorization endpoints. |
+| login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />login.live.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to authentication and authorization endpoints. |
 | graph.microsoft.com | https | Access to Microsoft graph - for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for Connectors. |
 | *.flow.microsoft.com | https | Access to the Power Automate site. |
@@ -55,6 +55,9 @@ The following table lists the services to which Power Automate connects. Ensure 
 | nps.onyx.azure.net | https | Access to NPS (Net Promoter Score). |
 | webshell.suite.office.com | https | Access to Office for header and search. Please see [the Office 365 urls and ranges](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details. |
 | *.dynamics.com | https | Access to Dataverse tables |
+|go.microsoft.com|https|Access to the Power Automate to check for updates|
+|download.microsoft.com|https|Access to the Power Automate to check for updates|
+|login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
 
 ## Approval email delivery
 Please see the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
