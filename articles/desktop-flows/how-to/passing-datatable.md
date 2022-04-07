@@ -23,7 +23,7 @@ Some automation scenarios require users to pass data in tabular form from a clou
 
     ![Screenshot of the Add a new input variable dialog.](media/passing-datatable/creating-new-input-variable.png)
 
-    This variable will be used in your cloud flow to pass data to your Power Automate desktop flow. The data must be in JSON format for this flow to run successfully. In the following example, you can see the structure of a JSON block.
+    This variable will be used in your cloud flow to pass data to your desktop flow. The data must be in JSON format for this flow to run successfully. In the following example, you can see the structure of a JSON block.
 
     ``` JSON
     [

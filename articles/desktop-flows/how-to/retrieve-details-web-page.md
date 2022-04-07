@@ -17,7 +17,7 @@ search.audienceType:
 
 # Retrieve details from a web page 
 
-Extracting information regarding web pages is an essential function in most web-related flows. Desktop flows enable you to retrieve various details from web pages through the **Get details of web page** action.
+Extracting information regarding web pages is an essential function in most web-related flows. The **Get details of web page** action allows you to retrieve various details from web pages and handle them in your desktop flows.
 
 To use the action, you need an already created browser instance that specifies the web page you want to extract details from. A browser instance can be created with any [browser-launching action](../actions-reference/webautomation.md). 
 
