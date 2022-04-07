@@ -48,7 +48,7 @@ You can find more information on how to use the UI automation actions [here](../
 [Use desktop](#usedesktop)  
 [Select tab in window](#selecttab)  
 [Wait for image](#waitforimageaction)  
-[Hover mouse over UI element in window](#hoveronelement) 
+[Hover mouse over UI element in window](#hoveronelement)  
 [Click UI element in window](#click)  
 [Select menu option in window](#selectmenuoption)  
 [Drag and drop UI element in window](#draganddropelement)  
