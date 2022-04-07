@@ -48,6 +48,7 @@ You can find more information on how to use the UI automation actions [here](../
 [Use desktop](#usedesktop)  
 [Select tab in window](#selecttab)  
 [Wait for image](#waitforimageaction)  
+[Hover mouse over UI element in window](#hoveronelement)
 [Click UI element in window](#click)  
 [Select menu option in window](#selectmenuoption)  
 [Drag and drop UI element in window](#draganddropelement)  
@@ -642,6 +643,21 @@ This action waits until a specific image appears on the screen or on the foregro
 |Can't check image in non interactive mode|Indicates that an image can't be identified in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
 
+### <a name="hoveronelement"></a> Hover mouse over UI element in window
+Hover the mouse over any UI element on window
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|UI element|No|UIControl||Select the UI element in window to hover|
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="hoveronelement_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to hover over element|Indicates that the hover over the element failed|
 
 
 ### <a name="click"></a> Click UI element in window
