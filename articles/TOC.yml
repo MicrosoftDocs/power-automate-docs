@@ -288,7 +288,7 @@
       href: fix-flow-failures.md
     - name: Find and fix errors with the error checker
       href: error-checker.md
-- name: Power Automate desktop flows
+- name: Desktop flows
   items: 
   - name: Introduction to desktop flows
     href: ./desktop-flows/introduction.md
