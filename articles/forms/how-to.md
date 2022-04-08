@@ -50,7 +50,7 @@ Once you choose the Microsoft Forms trigger and action, you can add a [condition
 
 ## Convert an attachment in Microsoft Forms to PDF
 
-After creating the Forms trigger and action, add a [Select data](/data-operations#use-the-select-action) operation, Create HTML table, [Create file](/connectors/onedrive/#create-file) in OneDrive for Business, and then [Convert file](/connectors/onedrive/#convert-file) in OneDrive for Business to a PDF or other type of file.
+After creating the Forms trigger and action, add a [Select data](/power-automate/data-operations#use-the-select-action) operation, Create HTML table, [Create file](/connectors/onedrive/#create-file) in OneDrive for Business, and then [Convert file](/connectors/onedrive/#convert-file) in OneDrive for Business to a PDF or other type of file.
 
 ## Upload forms responses to a Power BI data set to visualize responses
 
