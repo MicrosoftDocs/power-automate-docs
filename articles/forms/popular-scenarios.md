@@ -36,7 +36,7 @@ Here are some of the top scenarios in which you can use Power Automate with form
 
 Although you can enable a notification to “Get email notification of each response” within the Microsoft Form settings, you can create a customized email notification with Power Automate.
 
-First, add the [When a response is submitted](/connectors/microsoftforms.md/#triggers) trigger.
+First, add the [When a response is submitted](/connectors/microsoftforms#triggers) trigger.
 
 If your form is only for people in your organization, that means that the form is automatically recording the responder’s email and you need to use the 'Apply to Each' control. This demo will demonstrate this scenario and require you to choose “List of response notifications Response Id.” However, if your form is public and anyone with the link can respond, you will need to ask for their email as a response in the form and you will not need to add the 'Apply to Each' control.
 
@@ -56,7 +56,7 @@ This is similar to top scenario #1, except the [Send an email (V2)](/connectors/
 
 Create an approval with dynamic content from the form. In this example, the content will be the feedback, which is denoted by the question “What can we improve about our product?”
 
-After adding the Microsoft Forms trigger and action, the third step is to add the [Start and wait for an approval](/modern-approvals#add-an-approval-action.md) action.
+After adding the Microsoft Forms trigger and action, the third step is to add the [Start and wait for an approval](/power-automate/modern-approvals#add-an-approval-action.md) action.
 
    > [!div class="mx-imgBorder"]
    > ![Start and wait for approval flow screen.](..\media\forms\flow-start-and-wait-for-approval.png "Screen showing the completed flow to start and wait for an approval")
