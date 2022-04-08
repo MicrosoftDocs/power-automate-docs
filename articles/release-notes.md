@@ -51,7 +51,7 @@ search.audienceType:
 
 For information about new features released for Power Automate, visit:
 - [2020 release wave 1 plan](/power-platform-release-plan/2020wave1/power-automate/planned-features) for new features releasing over the next few months.
-- [Weekly release notes](/business-applications-release-notes/powerplatform/released-versions/flow) for new features, fixes, and improvements released in the past few weeks.
+- [Weekly release notes](/business-applications-release-notes/powerplatform/released-versions) for new features, fixes, and improvements released in the past few weeks.
 
 ### Release 2018-09-24
 
