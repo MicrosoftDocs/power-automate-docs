@@ -41,7 +41,7 @@ On the [PowerApps](https://make.powerapps.com) site, select **Model-driven** (lo
 
 Open the business process flow designer. You can do this in one of two ways.
 - If the business process flow is already added to an app, go to **Apps**, next to the app you want select **…**, and then select **Edit**. In the app designer, select the business process flow, and then select ![Open business process flow designer.](media/dynamics365-open-designer.PNG).  
-- Otherwise, open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation.md#solution-explorer), in the left navigation pane select **Processes**, and then select the business process flow that you want. 
+- Otherwise, open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer), in the left navigation pane select **Processes**, and then select the business process flow that you want. 
 
 Decide whether you want the on-demand workflow to be triggered by one of the following business process flow events. 
 - On-demand stage processes. Triggers the workflow on entry or on exit of the stage. 
