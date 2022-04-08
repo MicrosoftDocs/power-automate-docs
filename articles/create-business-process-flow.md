@@ -112,7 +112,7 @@ You need a [per user plan](https://flow.microsoft.com/pricing/) in order to crea
         1. Search for an existing on-demand active workflow that matches the stage table or create a new workflow by selecting **New**.  
         1. Select **Apply** when you're done.  
   
-    For more information on workflows, see [Workflow processes](/common-data-service/workflow-processes.md).  
+    For more information on workflows, see [Workflow processes](/power-automate/workflow-processes).  
   
 1. To validate the business process flow, select **Validate** on the action bar.  
 1. To save the process as a draft while you continue to work on it, select **Save** in the action bar.  
