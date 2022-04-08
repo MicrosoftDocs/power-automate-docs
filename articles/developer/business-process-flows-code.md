@@ -372,7 +372,7 @@ The only exception to this is programmatically modifying the **ProcessId** colum
 
 <a name="BKMK_clientSideScript"></a>   
 ## Client-side programmability support for business process flows  
- There is a client-side object you can use to interact with business process flows in your form scripts. Business process flows trigger client-side events every time a process is either applied to a row, the stage is changed, or its status is changed to `Active`, `Finished`, or `Aborted`. More information: [formContext.data.process (Client API reference)](power-apps/developer/model-driven-apps/clientapi/reference/formcontext-data-process)  
+ There is a client-side object you can use to interact with business process flows in your form scripts. Business process flows trigger client-side events every time a process is either applied to a row, the stage is changed, or its status is changed to `Active`, `Finished`, or `Aborted`. More information: [formContext.data.process (Client API reference)](/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-data-process)  
   
 <a name="BKMK_MaxSettings"></a>   
 ## Maximum number of processes, stages, and steps  
