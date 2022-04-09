@@ -44,7 +44,7 @@ You need to have at least one solution before you can create a solution-aware fl
 
    ![Screen showing the different types of items that can be created with flow highlighted.](./media/create-flow-solution/select-new-flow.png)
 
-   >![TIP]
+   >[!TIP]
    >If an automated cloud flow doesn't meet your requirements, you can create any other [type of flow](./flow-types.md).
 
    Power Automate opens.
