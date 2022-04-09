@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/02/2022
+ms.date: 04/08/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -39,8 +39,6 @@ You need to have at least one solution before you can create a solution-aware fl
    ![Screen showing the left navigation bar with the Solutions option hightlighted.](./media/create-flow-solution/select-solutions-from-left-nav.png)
 
 1. Select the solution in which you'll create your flow.
-
-   ![Screen showing the list of solutions.](./media/create-flow-solution/new-solution-created.png)
 
 1. Select **New** > **Automation** > **Cloud flow** > **Automated**.
 
@@ -67,7 +65,7 @@ You need to have at least one solution before you can create a solution-aware fl
 1. Add the **Subject** dynamic token to the **Text** field of the **Send me a mobile notification** card.
 1. Select **Save** to save your flow.
 
-   Your flow should appear like this:
+   Your flow should appear like the following image.
 
    ![Screenshot showing the flow that's created.](./media/create-flow-solution/new-email-notification-flow.png)
 
