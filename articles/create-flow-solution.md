@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/11/2020
+ms.date: 04/02/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,14 +25,13 @@ search.audienceType:
 
 # Create a cloud flow in a solution
 
-
 Flows you create in a solution are known as *solution-aware* flows. Follow these steps to create a solution-aware flow.
 
 ## Prerequisites
 
 You need to have at least one solution before you can create a solution-aware flow.
 
-## Create the flow 
+## Create the flow
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 1. Select **Solutions** from the navigation bar.
@@ -62,7 +61,7 @@ You need to have at least one solution before you can create a solution-aware fl
    Your flow should appear like this:
 
    ![Screenshot showing the flow that's created.](./media/create-flow-solution/new-email-notification-flow.png)
-   
+
 1. Select **Solutions** to see your flow in the solution:
 
    ![Screenshot that shows your flow inside the solution.](./media/create-flow-solution/new-flow-inside-solution.png)
@@ -74,6 +73,5 @@ You need to have at least one solution before you can create a solution-aware fl
 * [Import a solution](./import-flow-solution.md)
 * [Edit a solution-aware flow](./edit-solution-aware-flow.md)
 * [Remove a solution-aware flow](./remove-solution-aware-flow.md)
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
