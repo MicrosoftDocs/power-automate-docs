@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/10/2020
+ms.date: 04/07/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,13 +25,12 @@ search.audienceType:
 
 # Import a solution
 
-
 > [!TIP]
 > If you want to have your flows start automatically after you import a solution, use the Microsoft Dataverse connector in your flow when you create it.
 
-After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution:
+After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution.
 
-1. Sign into Power Automate, and then select **Solutions** from the navigation bar on the left side of the screen.
+1. Sign into [Power Automate](https://powerautomate.com), and then select **Solutions** from the navigation bar on the left side of the screen.
 
    ![A image showing "Solutions" selected in the navigation bar](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
@@ -43,7 +42,7 @@ After you've exported your solution, you can import it into any environment that
 1. Find, and then select the solution that you want to import.
 1. Select **Open**.
 
-   You should now see the **Select Solution Package** page similar to this image:
+   You should now see the **Import a Solution** page similar to the following image.
 
    ![Screenshot of the Import a solution dialog box.](./media/import-flow-solution/import-solution.png)
 
@@ -54,7 +53,6 @@ After you've exported your solution, you can import it into any environment that
 > [!NOTE]
 > You cannot import a solution into an environment in which the solution already exists.
 
-
 ## Learn more
 
 - [Create a solution](./overview-solution-flows.md)
@@ -62,6 +60,5 @@ After you've exported your solution, you can import it into any environment that
 - [Export a solution](./export-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
 - [Remove a solution-aware flow](.//remove-solution-aware-flow.md)
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
