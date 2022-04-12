@@ -21,13 +21,13 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Run flows on a schedule in Power Automate
+# Run flows on a schedule
 
 Create a cloud flow that performs one or more tasks (such as sending a report in email).
 
 * Once a day, an hour, or a minute.
 * On a date that you specify.
-* After many days, hours, or minutes that you specify.
+* After a number days, hours, or minutes that you specify.
 
 ## Create a recurring flow
 
