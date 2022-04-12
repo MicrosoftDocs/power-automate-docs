@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/05/2018
+ms.date: 04/05/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,22 +25,21 @@ search.audienceType:
 
 # Edit a solution-aware flow
 
-
 Follow these steps to edit a solution-aware flow.
 
 > [!IMPORTANT]
 > Stop your flow before you begin editing it, or you might lose your changes.
 
-1. Sign in to Power Automate, and then select **Solutions** from the navigation bar.
+1. Sign into [Power Automate](https://powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
 1. Select the solution that contains the flow you want to edit.
 
    ![Displays a new flow inside a solution.](./media/edit-solution-aware-flow/new-flow-inside-solution.png "Displays a new flow inside a solution")
 
-1. Select **...** (More Commands) for your flow, and then select **Turn off**.
-1. Select **...** (More Commands) for your flow, and then select **Edit**.
+1. Select **...** (Commands) for your flow, and then select **Turn off**.
+1. Select **...** (Commands) for your flow, and then select **Edit**.
 
    ![Displays editing a cloud flow.](./media/edit-solution-aware-flow/edit-flow.png "Displays editing a cloud flow")
-   
+
 1. Make your edits in the Power Automate designer, test your changes, and then save your flow.
 1. Turn on your flow if you'd like it to run.
 
@@ -51,6 +50,5 @@ Follow these steps to edit a solution-aware flow.
 * [Export a solution](./export-flow-solution.md)
 * [Import a solution](./import-flow-solution.md)
 * [Remove a solution-aware flow](./remove-solution-aware-flow.md)
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
