@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 08/04/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -50,8 +50,8 @@ search.audienceType:
 ## What's new
 
 For information about new features released for Power Automate, visit:
-- [2020 release wave 1 plan](/power-platform-release-plan/2020wave1/power-automate/planned-features) for new features releasing over the next few months.
-- [Weekly release notes](/business-applications-release-notes/powerplatform/released-versions/flow) for new features, fixes, and improvements released in the past few weeks.
+- [2022 release wave 1 plan](/power-platform-release-plan/2022wave1/power-automate/planned-features) for new features releasing over the next few months.
+- [Weekly release notes](/business-applications-release-notes/powerplatform/released-versions) for new features, fixes, and improvements released in the past few weeks.
 
 ### Release 2018-09-24
 

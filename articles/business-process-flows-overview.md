@@ -205,7 +205,7 @@ Recent rows are visible in a lookup column in the unified interface. To prevent 
 ### Limitations of using business process flow tables
 
 - Currently, you can’t create custom forms for tables based on a business process flow.
-- If a solution includes a business process flow table, the business process flow table must be manually added to the solution before you export it. Otherwise, the business process flow table will not be included in the solution package. More information: [create and edit tables](/powerapps/maker/common-data-service/create-edit-tables-solution-explorer).
+- If a solution includes a business process flow table, the business process flow table must be manually added to the solution before you export it. Otherwise, the business process flow table will not be included in the solution package. More information: [create and edit tables](/power-apps/maker/data-platform/create-edit-entities-solution-explorer).
 - Adding the process table to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](./create-business-process-flow.md). 
 
 ### Next steps  
