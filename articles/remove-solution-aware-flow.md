@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/12/2020
+ms.date: 04/08/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -38,13 +38,13 @@ Delete from this environment|The flow is deleted; it is not available in the env
 1. Select the solution that contains the flow you want to remove from the solution.
 
    ![A screenshot that shows a flow inside a solution selected.](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
-   
-1. Select **...** (More Commands) for your flow, select **Remove**, and then select either **Remove from this solution**.
+
+1. Select **...** (Commands) for your flow, select **Remove**, and then select either **Remove from this solution**.
 
    ![A screenshot that shows the option to remove a flow from a solution hightlighted.](./media/remove-solution-aware-flow/delete-flow-from-solution.png)
 
 >[!IMPORTANT]
->When you remove a cloud flow, it gets moved to the **Default Solution**, where you can edit or delete the flow, or add it to another solution. 
+>When you remove a cloud flow, it gets moved to the **Default Solution**, where you can edit or delete the flow, or add it to another solution.
 
 ## Delete a cloud flow from an environment
 
@@ -52,11 +52,10 @@ Delete from this environment|The flow is deleted; it is not available in the env
 1. Select the solution that contains the flow you want to delete from the environment.
 
    ![A screenshot that shows the flow to be removed from the environment selected.](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
-   
-1. Select **...** (More Commands) for your flow, select **Remove**, and then select **Delete from this environment**.
+
+1. Select **...** (Commands) for your flow, select **Remove**, and then select **Delete from this environment**.
 
    ![A screenshot that shows the option to delete a flow from an environment hightlighted.](./media/remove-solution-aware-flow/delete-flow-from-environment.png)
-
 
 ## Learn more
 
@@ -65,6 +64,5 @@ Delete from this environment|The flow is deleted; it is not available in the env
 - [Export a solution](./export-flow-solution.md)
 - [Import a solution](./import-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

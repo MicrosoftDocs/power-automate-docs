@@ -47,7 +47,7 @@ Here are a few tips and tricks for troubleshooting issues with triggers.
 
    One of the common reasons for the failure is that the Power Automate service end points are not part of the allow list. To fix it, confirm that your IT department has added these endpoint to the allow list.
 
-   Here is the list of [IP addresses](/powerapps/maker/canvas-apps/limits-and-config%23ip-addresses#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate) that need to be added to your allow list.
+   Here is the list of [IP addresses](/power-apps/limits-and-config#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate) that need to be added to your allow list.
 
    Refer to this [support article](https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger) to know more about how to fix issues with triggers.
 
