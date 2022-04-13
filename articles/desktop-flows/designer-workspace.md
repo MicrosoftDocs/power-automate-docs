@@ -57,7 +57,10 @@ Drag actions to rearrange them and change the order in which they run. Right-cli
 
 Hold down **Ctrl** to select multiple actions. Hold down **Shift** and select the first and last actions to select a range of actions. Copy and paste any selected actions in the workspace. 
 
-When copying actions, all their parameters, images, and UI elements are copied as well. You can copy and paste actions within the same subflow, among different subflows, or other flow designer instances. Apart from flows, you can paste actions in other applications, such as chats and text files.
+When copying actions, all their parameters, images, and UI elements are copied as well. You can copy and paste actions within the same subflow, among different subflows, or other flow designer instances. Apart from flows, you can paste actions in other applications, such as text files or chats to share flows' sections with others.
+
+> [!NOTE]
+> As an action might change from one Power Automate for desktop to another, make sure when copying flows that they are on the same version. If an action is changed and a different versions' flow is pasted, the action might not be recognized.
 
 ## Searching in the flow
 

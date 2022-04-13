@@ -80,13 +80,30 @@ In order to restrict access to Power Automate for desktop on a workstation with 
 ## Prevent users selecting a particular organization in Power Automate for desktop
 
 You can use the following registry entry to prevent users from selecting a specific organization in Power Automate for desktop.
-
+<!---
 |Hive|Key|Name|Type|
 |---|---|---|---|
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|EnableOrganizationPicker|DWORD|
 
 ***Value***
 - **1**: Users will be able to select the organization of their preference.
+--->
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|EnableOrganizationPicker|String|
+
+***Values***
+- **"isEnabled":1**: Users will be able to select the organization of their preference.
+- **"isEnabled":0**: Users won't be able to select the organization of their preference.
+
+- **organizationList:OrgID (e.g.: organizationList:29d529e2-c1f8-4ce0-a4c3-a828de91041e)**: The organization with the specified ID, will be used to connect.
+
+- **"selectOrganizationFromListIsEnabled":1**: Users will be able to select the organization from a list and it won't be selected automatically.
+- **"selectOrganizationFromListIsEnabled":0**: Users won't be able to select the organization from a list and it will be selected automatically.
+
+> [!NOTE]
+> It's not mandatory to specify values for all fields. The following example uses all options **""isEnabled": 1, "organizationList": ["29d529e2-c0f8-4ce0-a4c3-a828de91041e"], "selectOrganizationFromListIsEnabled": 1""**
 
 ## Configure Power Automate for desktop to interact with a corporate proxy server
 
