@@ -129,8 +129,8 @@
         "source_path": "articles/ui-flows/overview.md",
         "redirect_url": "/power-automate/desktop-flows/overview",
         "redirect_document_id": false
-    },
-  {
+  },
+  {  
     "source_path": "articles/ui-flows/upgrade.md",
     "redirect_url": "/power-automate/desktop-flows/upgrade",
     "redirect_document_id": false
