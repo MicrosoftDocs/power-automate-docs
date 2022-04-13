@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/28/2022
+ms.date: 04/13/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -37,7 +37,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
     >[!div class="mx-imgBorder"]
     >![Screenshot of create a scheduled cloud flow.](./media/run-scheduled-tasks/create-flow.png "Create a scheduled cloud flow")
 
-3. In the fields next to **Starting**, specify the date and time when your flow should start.
+1. In the fields next to **Starting**, specify the date and time when your flow should start.
 1. In the fields next to **Repeat every**, specify the flow's recurrence.
 1. Select **Create**.
 
