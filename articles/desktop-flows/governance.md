@@ -97,13 +97,28 @@ You can use the following registry entry to prevent users from selecting a speci
 - **"isEnabled":1**: Users will be able to select the organization of their preference.
 - **"isEnabled":0**: Users won't be able to select the organization of their preference.
 
-- **"organizationList":OrgID (e.g.: organizationList:["29d529e2-c1f8-4ce0-a4c3-a828de91041e","45d569e2-c1f8-4ce0-a4c3-a828de91041e"])**: The organization with the specified ID, will be used to connect.
+- **"organizationList":[OrgID(s)] (e.g.: organizationList:["29d529e2-c1f8-4ce0-a4c3-a828de91041e","45d569e2-c1f8-4ce0-a4c3-a828de91041e"])**: The organizations with the specified IDs listed, will be available to connect.
 
 - **"selectOrganizationFromListIsEnabled":1**: Users will be able to select the organization to connect from a list and it won't be selected automatically.
 - **"selectOrganizationFromListIsEnabled":0**: Users won't be able to select the organization to connect from a list and it will be selected automatically.
 
 > [!NOTE]
 > It's not mandatory to specify values for all fields. The following example uses all options **"{"isEnabled": 1, "organizationList": ["29d529e2-c0f8-4ce0-a4c3-a828de91041e"], "selectOrganizationFromListIsEnabled": 1"}"**
+
+## Configure Power Automate for desktop to connect to a cloud
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|Cloud|DWORD|
+
+***Value***
+- **0**: The user will have the option to select the cloud of their preference to connect to. 
+- **1**: The user will be connected to the cloud they are registered.
+- **2**: The user will connect to the global public cloud.
+- **3**: The user will connect to the US Government GCC cloud.
+- **4**: The user will connect to the US Government GCC High cloud.
+- **5**: The user will connect to the US Government DoD cloud.
+- **6**: The user will connect to the China (operated by 21Vianet) cloud.
 
 ## Configure Power Automate for desktop to interact with a corporate proxy server
 
