@@ -113,7 +113,7 @@ You can use the following registry entry to prevent users from selecting a speci
 
 ***Value***
 - **0**: The user will have the option to select the cloud of their preference to connect to. 
-- **1**: The user will be connected to the cloud they are registered.
+- **1**: The user will be automatically connected to the first available cloud they are registered to.
 - **2**: The user will connect to the global public cloud.
 - **3**: The user will connect to the US Government GCC cloud.
 - **4**: The user will connect to the US Government GCC High cloud.
