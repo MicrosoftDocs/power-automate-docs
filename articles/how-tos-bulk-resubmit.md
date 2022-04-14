@@ -60,7 +60,7 @@ Follow these steps to bulk resubmit flow runs.
 
 To cancel flow runs that are in progress, follow the steps to resubmit flow runs as outlined earlier in this article, but select **Cancel flow run(s)** as shown in the following image.
 
-![A screenshot that displays resubmit button](./media/cancel-resubmit-how-to/cancel-runs.png)
+![A screenshot that displays the cancel button](./media/cancel-resubmit-how-to/cancel-runs.png)
 
 >[!NOTE]
 >The resbumit and cancel features aren't available for sovereign cloud customers.
