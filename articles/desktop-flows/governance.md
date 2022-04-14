@@ -97,13 +97,13 @@ You can use the following registry entry to prevent users from selecting a speci
 - **"isEnabled":1**: Users will be able to select the organization of their preference.
 - **"isEnabled":0**: Users won't be able to select the organization of their preference.
 
-- **"organizationList":[OrgID(s)] (e.g.: organizationList:["29d529e2-c1f8-4ce0-a4c3-a828de91041e","45d569e2-c1f8-4ce0-a4c3-a828de91041e"])**: The organizations with the specified IDs listed, will be available to connect.
+- **"organizationList":[OrgID(s)] (e.g.: organizationList:["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k","86d487j7-y1t2-9gk7-k7n2-x5079jq4619r"])**: The organizations with the specified IDs listed, will be available to connect.
 
 - **"selectOrganizationFromListIsEnabled":1**: Users will be able to select the organization to connect from a list and it won't be selected automatically.
 - **"selectOrganizationFromListIsEnabled":0**: Users won't be able to select the organization to connect from a list and it will be selected automatically.
 
 > [!NOTE]
-> It's not mandatory to specify values for all fields. The following example uses all options **"{"isEnabled": 1, "organizationList": ["29d529e2-c0f8-4ce0-a4c3-a828de91041e"], "selectOrganizationFromListIsEnabled": 1"}"**
+> It's not mandatory to specify values for all fields. The following example uses all options **"{"isEnabled": 1, "organizationList": ["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k"], "selectOrganizationFromListIsEnabled": 1"}"**
 
 ## Configure Power Automate for desktop to connect to a cloud
 
