@@ -60,7 +60,7 @@ Hold down **Ctrl** to select multiple actions. Hold down **Shift** and select th
 When copying actions, all their parameters, images, and UI elements are copied as well. You can copy and paste actions within the same subflow, among different subflows, or other flow designer instances. Apart from flows, you can paste actions in other applications in a text format, such as a text editor, to share flows' sections with others.
 
 > [!NOTE]
-> As an action might change from one Power Automate for desktop to another, make sure when copying flows that they are on the same version. If an action is changed and a different versions' flow is pasted, the action might not be recognized.
+> As the underlying schema of an action or the UI elements or images repository might change from one version of Power Automate for desktop to another, make sure when copying flows's sections that the source and target flow designers are on the same version. If the schema is updated on a new version and a different version's flow contents are pasted, the action or the associated UI elements or images might not be recognized.
 
 ## Searching in the flow
 
