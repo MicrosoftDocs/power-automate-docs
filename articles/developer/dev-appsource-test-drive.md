@@ -22,7 +22,7 @@ search.audienceType:
   - developer
 ---
 # Let customers test drive your flows on AppSource
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
+
 Do you want to show off how your app integrates with Power Automate? We now Test Drive solutions on [AppSource.com](https://appsource.microsoft.com) as a way for you to share Power Automate integration with customers, and generate leads for your business.
 
 ## What is a Test Drive solution?

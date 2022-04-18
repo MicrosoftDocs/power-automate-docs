@@ -18,7 +18,6 @@ search.audienceType:
   - developer
 ---
 # Custom Dataverse workflow activities (workflow assemblies)
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Dataverse supports the registration and execution of custom workflow activities in addition to the out-of-box activities provided by [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/). 
 

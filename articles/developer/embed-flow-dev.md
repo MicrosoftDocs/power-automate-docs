@@ -22,7 +22,6 @@ search.audienceType:
   - developer
 ---
 # Integrate Power Automate with websites and apps
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Embed Power Automate into your app or website using *flow widgets* to give your users a simple way to automate their personal or professional tasks.
 
