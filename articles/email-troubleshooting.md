@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot common issues with Microsoft 365 Email | Microsoft Docs
-description: Troubleshoot common issues with Microsoft 365, Outlook Email, or mail notifications.
+title: Troubleshoot common issues with Microsoft 365 email in Power Automate | Microsoft Docs
+description: Troubleshoot common issues with Microsoft 365, Outlook email, or mail notifications.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,6 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -33,7 +32,7 @@ For known limitations of the **Send an email** action, go to [Office 365 Outlook
 
 **I didn't get an email. Why?**
 
-1.  Confirm that your IT department has approved all Power Automate endpoints to allow it to send email to your email servers. These endpoints include [IP addresses](/powerapps/maker/canvas-apps/limits-and-config\#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate).
+1.  Confirm your IT department has approved all Power Automate endpoints to allow it to send email to your email servers. These endpoints include [IP addresses](/powerapps/maker/canvas-apps/limits-and-config\#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate).
 
 1. Double-check whether you have any Outlook rules that are moving the email to a different folder.
 

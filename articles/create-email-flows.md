@@ -1,5 +1,5 @@
 ---
-title: Create flows to manage email | Microsoft Docs
+title: Create flows to manage email in Power Automate | Microsoft Docs
 description: Create flows to manage email.
 services: ''
 suite: flow
@@ -8,7 +8,6 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -25,25 +24,26 @@ search.audienceType:
 
 # Create flows to manage email
 
-There are four ways to create flows to manage your email:<!--note from editor: There is no order here.-->
+There are four methods to create flows to manage your email.
 
-1. Use a template&mdash;Most likely, there's already a [template](https://flow.microsoft.com/templates) accomplishes your scenario. Search for your scenario among the templates and then follow the steps to create a cloud flow from the template.
+ Use the method that best suits your needs. Power Automate offers many templates that will help you create a flow by using them "as is" or with slight adjustments. If you don't find a template to use with your scenario, you can create a cloud flow from scratch. You can also create a flow using connectors to use with your scenario.
 
-1. Tweak a template&mdash;If you find a template that is similar to your scenario, but it doesn’t do exactly what you are want, you can create a cloud flow from that template and then tweak the flow to your liking. You can extend a cloud flow that's created from template by adding, editing, or removing, triggers and actions.
+1. **Use a template:** Most likely, there's already a [template](https://preview.flow.microsoft.com/en-us/templates/) that accomplishes your scenario. Search for your scenario among the templates and then follow the steps to create a cloud flow from the template.
+ 
+1. **Tweak a template** If you find a template that is similar to your scenario, but it doesn’t do exactly what you are want, you can create a cloud flow from that template and then tweak the flow to your liking. You can extend a cloud flow that's created from template by adding, editing, or removing, triggers and actions.
+
+    >[!TIP]
+    >You can [**copy and paste**](https://flow.microsoft.com/en-us/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) actions in the same flow or across flows to speed up the process. <!--Todo use a link in the docs, not a blog-->
+
+1. **Create a cloud flow from scratch:** If you can't find a template that's similar to your scenario, you can [create a cloud flow from scratch](./get-started-logic-flow.md) and then connect the services you want.
+
+1. **Create a cloud flow from a connector:** In Power Automate, select **Connectors** from the left side of the screen, search for the connector you want, and then select it to create your flow. For example, search for "outlook" to find connectors for Office 365 Outlook.
+
+### See also
 
 
-   <!--Todo use a link in the docs, not a blog-->
-   >[!TIP]
-   >You can [copy and paste](https://flow.microsoft.com/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) actions in the same flow or across flows to speed up the process.
-
-1. Create a cloud flow from scratch&mdash;If you can't find a template that's similar to your scenario, you can [create a cloud flow from scratch](./get-started-logic-flow.md) and then connect the services you want.
-
-1. Create a cloud flow from a connector&mdash;In Power Automate, select **Connectors** from the left side of the screen, search for the connector you want, and then select it to create your flow. For example, search for "outlook" to find connectors for Office 365 Outlook.
-
-## More information
-
-- Overview of [email with flows](email-overview.md)
+- [Overview of Microsoft 365 Outlook email use with Power Automate](email-overview.md)
 - [Customize email in flows](email-customization.md)
-- Create the top [email scenarios](email-top-scenarios.md)
+- [Create flows for popular email scenarios](email-top-scenarios.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
