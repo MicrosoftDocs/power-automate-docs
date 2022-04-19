@@ -45,7 +45,7 @@ You can use HTML to beautify your email. Following are two options that you can 
 1. Select the **\</\>** button inside the rich text editor in the Power Automate designer. 
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the button you can use to enter HTML into the body of the email.](./media/email/html-button.png "Button you can use to enter HTML into the body of the email")
+    > ![Screenshot of the button you can use to enter HTML into the body of the email.](./media/email/html-button.png "Button you can use to enter HTML into the body of the email.")
 
 1. Enter any HTML content into the body of the email.
 
