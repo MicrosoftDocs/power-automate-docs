@@ -1,5 +1,5 @@
 ---
-title: Use the apply to each action in Power Automate to loop through an array of items. (contains video) | Microsoft Docs
+title: Use the apply to each action in Power Automate to loop through an array of items. (contains video) | Microsoft Docs 
 description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
 services: ''
 suite: flow
@@ -21,18 +21,18 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use the apply to each action to process a list of items periodically
+# Use the apply to each action to process a list of items periodically <!--Note from Sweeny: Capitalize the first word of labels and terms that appear in UI. In this case, change apply to Apply-->
 
 Many triggers can immediately start a cloud flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a cloud flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
 
-Watch this video for a demo of the **Apply to each** action.
+Watch this video for a demo of the **Apply to each** action. <!--Note from Sweeny: Can we reupload this video with a better cover image?-->
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7EL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7EL] 
 
 In this tutorial, we'll create a cloud flow that runs every 15 minutes and does the following:
 
 1. Gets the last 10 unread messages in your Microsoft 365 Outlook Inbox.
-2. Checks each of the 10 messages to confirm if any has **meet now** in the subject.
+2. Checks each of the 10 messages to confirm if any have **meet now** in the subject. <!--Note from Sweeny: Changed the verb form here-->
 3. Checks if the email is from your boss or was sent with high importance.
 4. Sends a push notification and marks as read, any email that has **meet now** in the subject and is either from your boss or was sent with high importance.
 
@@ -52,7 +52,7 @@ Here are the requirements for successfully performing the steps in this tutorial
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Create a cloud flow
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **New flow** > **Scheduled cloud flow**.
 1. In the **Flow name** field, enter a name for your flow.
 1. In the **Starting** fields, select the date and time to indicate when the flow should start running.
@@ -64,7 +64,7 @@ Here are the requirements for successfully performing the steps in this tutorial
 
 1. Select **+ New step**.
 1. In the **Search** field, type **outlook** to find all connectors and actions related to Microsoft Outlook.
-1. Select the **Get emails (V3)** action. The **Get emails (V3)** card opens.
+1. Select the **Get emails (V3)** action. The **Get emails (V3)** card opens. <!--Note from Sweeny: Combine both sentences to "Select the **Get emails (V3)** action to open the **Get emails (V3)** card -->
 1. Configure the **Get emails (V3)** card to select the top 10 unread emails from the **Inbox** folder.
    
    Don't include attachments because they won't be used in the flow.
@@ -77,7 +77,7 @@ Here are the requirements for successfully performing the steps in this tutorial
 
 ## Add actions and conditions
 1. Select **+ New step** > **Built-in** > **Apply to each** action.
-1. Select the field and then select **value** from the **Dymanic content** list to place it in the **Select an output from previous steps** field on the **Apply to each** card. This pulls in the body of the emails to be used in the **Apply to each** action.
+1. Select the field and then select **value** from the **Dynamic content** list to place it in the **Select an output from previous steps** field on the **Apply to each** card. This pulls in the body of the emails to be used in the **Apply to each** action. <!--Note from Sweeny: Corrected the spelling of Dynamic here-->
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the dynamic content value token.](./media/apply-to-each/foreach-7.png "Dynamic content value token")
