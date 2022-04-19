@@ -23,11 +23,11 @@ search.audienceType:
 ---
 # Run flows on a schedule
 
-Create a cloud flow that performs one or more tasks (such as sending a report in email).
+Create a cloud flow that performs one or more tasks (such as sending a report in email). <!--Note from Sweeny: Can we add an introductory paragraph about scheduled flows here? An introduction will provide essential context, and lead the reader forward.-->
 
 * Once a day, an hour, or a minute.
 * On a date that you specify.
-* After a number days, hours, or minutes that you specify.
+* After a number of days, hours, or minutes that you specify. <!--Note from Sweeny: Added a preposition here -->
 
 ## Create a recurring flow
 
@@ -53,9 +53,9 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
     >![Screenshot of show/hide advanced options.](./media/run-scheduled-tasks/select-recurrence1.png "Show/hide advanced options")
 
     >[!NOTE]
-    >These options change based on the values to which **Interval** and **Frequency** are set. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
+    >These options change based on the values **Interval** and **Frequency**. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
 
-1. In the **Time zone** field, select a time zone from the dropdown list to specify whether the **Start time** reflects a local time zone, Coordinated Universal Time (UTC), or other time zone.
+1. In the **Time zone** field, select a time zone from the dropdown list to specify whether the **Start time** reflects a local time zone, Coordinated Universal Time (UTC), or any other time zone.
 1. In the **Start time** field, enter a start time in this format: YYYY-MM-DDTHH:MM:SSZ
 1. If you specified **Day** under **Frequency**, select the time of day when the flow should run in the **At these hours** and **At these minutes** dropdown lists.
 1. If you specified **Week** under **Frequency**, do the following.<br/>
