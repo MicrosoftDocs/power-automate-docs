@@ -58,23 +58,23 @@ Ok, let's get started.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-1. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
+9. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
 
      In this example, we're interested in any email that has the word "lottery" in the subject.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of advanced options.](./media/email-triggers/email-triggers-subject-text.png "Advanced options")
 
-    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
+3. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot that displays the details of a notification.](./media/email-triggers/email-triggers-4.png "Details of a notification")
 
-    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-1. Select **Save** at the top of the page.
+4. Select **Save** at the top of the page.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot that displays the save flow option.](./media/email-triggers/email-triggers-subject-notification.png "Save flow option")
@@ -87,23 +87,23 @@ In this tutorial, we create a cloud flow that sends a push notification to your 
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-1. In the **From** box, enter the email address of the sender. 
+9. In the **From** box, enter the email address of the sender. 
 
      Your flow takes action on any emails that are sent from this address.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of email property.](./media/email-triggers/email-triggers-from.png "Email property")
 
-    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address that you entered earlier.
+3. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address that you entered earlier.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of mobile notification details.](./media/email-triggers/email-triggers-sender-notification.png "Mobile notification details")
 
-    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
+4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of create flow.](./media/email-triggers/email-triggers-sender-5.png "Create flow")
@@ -119,21 +119,21 @@ Let's get started.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
-1. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **when a new email arrives (V3)** card.
+9. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **when a new email arrives (V3)** card.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of select folder.](./media/email-triggers/email-triggers-2.png "Select folder")
 
-    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Enter the details for the mobile notification you'd like to receive when an email arrives in the folder you selected earlier. If you haven't already, enter the credentials for the notifications service.
+3. Enter the details for the mobile notification you'd like to receive when an email arrives in the folder you selected earlier. If you haven't already, enter the credentials for the notifications service.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of notification details.](./media/email-triggers/email-triggers-folder-notification.png "Notification details")
 
-    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
+4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the option to save the cloud flow.](./media/email-triggers/email-triggers-7.png "Save the cloud flow")
