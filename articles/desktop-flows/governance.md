@@ -80,17 +80,52 @@ In order to restrict access to Power Automate for desktop on a workstation with 
 ## Prevent users selecting a particular organization in Power Automate for desktop
 
 You can use the following registry entry to prevent users from selecting a specific organization in Power Automate for desktop.
-
+<!---
 |Hive|Key|Name|Type|
 |---|---|---|---|
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|EnableOrganizationPicker|DWORD|
 
 ***Value***
 - **1**: Users will be able to select the organization of their preference.
+--->
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|EnableOrganizationPicker|String|
+
+***Values***
+- **"isEnabled":1**: Users will be able to select the organization of their preference.
+- **"isEnabled":0**: Users won't be able to select the organization of their preference.
+
+- **"organizationList":[OrgID(s)] (e.g.: organizationList:["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k","86d487j7-y1t2-9gk7-k7n2-x5079jq4619r"])**: The organizations with the specified IDs listed, will be available to connect.
+
+- **"selectOrganizationFromListIsEnabled":1**: Users will be able to select the organization to connect from a list and it won't be selected automatically.
+- **"selectOrganizationFromListIsEnabled":0**: Users won't be able to select the organization to connect from a list and it will be selected automatically.
+
+> [!NOTE]
+> It's not mandatory to specify values for all fields. The following example uses all options **"{"isEnabled": 1, "organizationList": ["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k"], "selectOrganizationFromListIsEnabled": 1"}"**
+
+## Allow users of Power Automate for desktop to connect to a cloud
+
+You can use the following registry entry to allow users to select the cloud they want to connect to.
+
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|Cloud|DWORD|
+
+***Value***
+- **0**: The user will have the option to select the cloud of their preference to connect to through an additional option in the sign in screen.
+- **1**: The user will be automatically connected to the first available cloud they are registered to.
+- **2**: The user will connect to the global public cloud.
+- **3**: The user will connect to the US Government GCC cloud.
+- **4**: The user will connect to the US Government GCC High cloud.
+- **5**: The user will connect to the US Government DoD cloud.
+- **6**: The user will connect to the China (operated by 21Vianet) cloud.
 
 ## Configure Power Automate for desktop to interact with a corporate proxy server
 
-IT administrators, may set the following registry keys, to configure the Power Automate’s interaction with a corporate proxy server.
+IT administrators, may set the following registry key, to configure the Power Automate’s interaction with a corporate proxy server.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
@@ -101,6 +136,8 @@ IT administrators, may set the following registry keys, to configure the Power A
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
+IT administrators, may set the following registry key, to configure the Power Automate’s bypassing of a corporate proxy server.
+
 |Hive|Key|Name|Type|
 |---|---|---|---|
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|DisableWindowsProxy|DWORD|
@@ -109,6 +146,8 @@ IT administrators, may set the following registry keys, to configure the Power A
 - **1**: Power Automate for desktop will not honor the Windows Proxy settings and the proxy server will be bypassed for Power Automate's traffic. 
 
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using the current user's credentials
+
+IT administrators, may set the following registry key, to configure the Power Automate’s authentication with a corporate proxy server.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
@@ -119,6 +158,7 @@ IT administrators, may set the following registry keys, to configure the Power A
 
 ## Configure Power Automate for desktop to prevent clean up of run files
 
+You can use the following registry entry to configure the cleanup of Power Automates' run files. 
 
 |Hive|Key|Name|Type|
 |---|---|---|---|

@@ -1,5 +1,5 @@
 ---
-title: Use the apply to each action in Power Automate to loop through an array of items. (contains video) | Microsoft Docs
+title: Use the apply to each action in Power Automate to loop through an array of items. (contains video) | Microsoft Docs 
 description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
 services: ''
 suite: flow
@@ -21,11 +21,11 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use the apply to each action to process a list of items periodically
+# Use the Apply to each action to process a list of items periodically
 
 Many triggers can immediately start a cloud flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a cloud flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
 
-Watch this video for a demo of the **Apply to each** action.
+Watch this video for a demo of the **Apply to each** action. <!--Note from Sweeny: Can we reupload this video with a better cover image?-->
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7EL]
 
@@ -42,6 +42,7 @@ This diagram shows the details of the flow we'll create.
 >![Screenshot of an overview of the flow being built.](./media/apply-to-each/foreach-flow-visio.png "Overview of the flow being built")
 
 ## Prerequisites
+
 Here are the requirements for successfully performing the steps in this tutorial.
 
 * An account that's registered to use [Power Automate](https://flow.microsoft.com).
@@ -52,32 +53,34 @@ Here are the requirements for successfully performing the steps in this tutorial
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Create a cloud flow
-1. Sign into [Power Automate](https://flow.microsoft.com).
+
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 1. Select **My flows** > **New flow** > **Scheduled cloud flow**.
 1. In the **Flow name** field, enter a name for your flow.
 1. In the **Starting** fields, select the date and time to indicate when the flow should start running.
-1. In the **Repeat every** fields, set the schedule to run the flow. In this example, type 15 and select **Minute** from the dropdown list to run the flow every 15 minutes. 
+1. In the **Repeat every** fields, set the schedule to run the flow. In this example, type 15 and select **Minute** from the dropdown list to run the flow every 15 minutes.
 1. Select **Create**.
 
-    >[!div class="mx-imgBorder"]   
-    >![Screenshot of a schedule run.](./media/apply-to-each/foreach-3.png "Schedule run") 
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of a schedule run.](./media/apply-to-each/foreach-3.png "Schedule run")
 
 1. Select **+ New step**.
 1. In the **Search** field, type **outlook** to find all connectors and actions related to Microsoft Outlook.
-1. Select the **Get emails (V3)** action. The **Get emails (V3)** card opens.
+1. Select the **Get emails (V3)** action to open the **Get emails (V3)** card.
 1. Configure the **Get emails (V3)** card to select the top 10 unread emails from the **Inbox** folder.
-   
+
    Don't include attachments because they won't be used in the flow.
-   
+
     >[!div class="mx-imgBorder"]  
     >![Screenshot of a configured email card.](./media/apply-to-each/foreach-5.png "Configured email card")
-   
+
     > [!NOTE]
     > So far, you've created a simple flow that gets some emails from your inbox. These emails will be returned in an array. The **Apply to each** action requires an array, so this is exactly what's needed.
 
 ## Add actions and conditions
+
 1. Select **+ New step** > **Built-in** > **Apply to each** action.
-1. Select the field and then select **value** from the **Dymanic content** list to place it in the **Select an output from previous steps** field on the **Apply to each** card. This pulls in the body of the emails to be used in the **Apply to each** action.
+1. Select the field and then select **value** from the **Dynamic content** list to place it in the **Select an output from previous steps** field on the **Apply to each** card. This pulls in the body of the emails to be used in the **Apply to each** action.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the dynamic content value token.](./media/apply-to-each/foreach-7.png "Dynamic content value token")
@@ -174,8 +177,9 @@ Next, you'll define what should happen if the search condition (the email was se
     >![Screenshot of flows you can run to view results.](./media/apply-to-each/foreach-run-3.png "Select a flow run to view results")
 
 ## View results of the run
+
 Now that you've run the flow successfully, you should receive the push notification on your mobile device.
-   
+
 > [!NOTE]
 > If you don't receive the push notification, confirm that your mobile device has a working data connection.
 

@@ -1,19 +1,10 @@
 ---
 title: Power Automate for enterprise developers, ISVs, and partners | Microsoft Docs
 description: An introduction to developing solutions for Power Automate.
-services: ''
-suite: flow
-documentationcenter: na
 author: MSFTMan
 manager: KVivek
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: Developer
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 09/10/2021
 ms.author: Deonhe
 search.app: 
@@ -22,7 +13,6 @@ search.audienceType:
   - developer
 ---
 # Power Automate for enterprise developers, ISVs, and partners
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 As a developer, you can extend Power Automate, enabling even more powerful solutions for organizations and customers.
 
@@ -78,7 +68,9 @@ To give end users access to flows that they can use automatically, deploy the fl
 
 If your customers already have either Office 365 or Dynamics 365, and these licenses are associated with the identities that users log in with Azure AD, there are no additional licensing requirements for them to use standard connectors. Your users will need one of the [Power Automate licenses](https://flow.microsoft.com/pricing/) to use premium and custom connectors. If your customers do not use Office 365 or Dynamics 365, then you must acquire use rights on their behalf for Power Automate, so that they are licensed to leverage those embedded components in your application.
 
-We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) program to acquire licenses on behalf of your customers. There are two different [pricing plans](https://flow.microsoft.com/pricing/) available for Power Automate, which you should check for plan and feature details.
+We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) program to acquire licenses on behalf of your customers. There are different [pricing plans](https://flow.microsoft.com/pricing/) available for Power Automate, which you should check for plan and feature details.
+
+See also: [Overview of Power Automate licensing](/power-platform/admin/power-automate-licensing/overview)
 
 ### 7. List on AppSource
 

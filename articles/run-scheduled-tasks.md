@@ -66,6 +66,10 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of specified advanced options.](./media/run-scheduled-tasks/advanced-options.png "Specify advanced options")
+
+   >[!NOTE]
+   >If you run a flow on the month frequency, the flow runs on the same date each month.
+
 1. Add the action or actions that you want the flow to take, as described in [Create a cloud flow from scratch](get-started-logic-flow.md).
 
 ## Learn more

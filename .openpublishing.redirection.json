@@ -494,6 +494,11 @@
     "source_path": "articles/desktop-flows/how-to/convert-file-base64-format.md",
     "redirect_url": "/power-automate/desktop-flows/how-to/convert-data-powershell",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/developer/index.md",
+    "redirect_url": "/power-automate/developer/dev-enterprise-intro",
+    "redirect_document_id": false
   }
 ]
 }
