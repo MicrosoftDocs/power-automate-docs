@@ -31,6 +31,9 @@ The [IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from
 
 You should also consult the [Limits and Configuration](limits-and-config.md) article for a supplemental listing for known IP addresses that Power Automate uses.
 
+>[!NOTE]
+> Starting May 15, 2022, we'll be enabling new IP addresses for Logic apps and Connectors to allow for availability zones. [Learn more](https://techcommunity.microsoft.com/t5/integrations-on-azure-blog/azure-logic-apps-availability-zone-support-is-coming-soon/ba-p/3254456) about availability zones. You'll need to update firewall configurations to include updated IP addresses for both [Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-limits-and-config?tabs=azure-portal#firewall-ip-configuration) and [Connectors](https://docs.microsoft.com/connectors/common/outbound-ip-addresses) to ensure that flows continue to work after this date.
+
 ## Logic Apps
 Calls made from a cloud flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Please reference [the Logic apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) for which IP addresses are used by that service.
 
