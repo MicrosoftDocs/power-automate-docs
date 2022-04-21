@@ -19,7 +19,7 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-Process mining in process advisor allows you to take the event data from your system of records and visualize the processes happening in your organization. Process mining provides novel insights that can help you identify automation opportunities, and address performance and compliance opportunities.
+Process mining in process advisor allows you to take the event data from your system of records and visualize the processes happening in your organization. Process mining provides novel insights that can help you identify automation opportunities, and address performance and compliance opportunities with *flows*. To learn more about flows, go to [Overview of the types of flows in Power Automate](flow-types.md).
 
 > [!IMPORTANT]
 > - This is a preview feature.
