@@ -24,7 +24,7 @@ After signing in, your username will be displayed in the top-right corner, while
 
 ## Starting a desktop flow
 
-Users may run any Power Automate desktop flows available to them through the console, by hovering the cursor over a desktop flow and pressing the "Start" button. The status of the flow is also displayed:
+Power Automate allows users to run any available desktop flow through the console. To run a desktop flow as local attended, hover the cursor over it and select the **Start** button. You can find the current status of each flow in the **Status** column of the desktop flows list.
 
 ![Screenshot of the status field in the console.](./media/console/start-flow.png)
 
@@ -38,7 +38,7 @@ Through the console, users may also create a new flow by pressing the "New flow"
 
 ![Screenshot of the button to edit a desktop flow.](./media/console/create-edit-flow.png)
 
-In both scenarios, the flow designer will be launched; this is where flow creation and editing takes place.
+In both scenarios, the flow designer will be launched; this is where flow creation and editing take place.
 
 >[!NOTE]
 > When more than one people make changes to a shared desktop flow, the last one that saves the flow overrides all previous actions.
@@ -62,11 +62,11 @@ To decide whether Microsoft may collect diagnostic data to improve user experien
 
 ## Update Power Automate for desktop
 
-Power Automate will frequently check for updates and display a notification dialog. In order not to disrupt your work, the update dialog offers you the option to delay the update and proceed with it at a later time. If you don't wish to receive any update notifications, you may uncheck the **Show update notifications** option in the general settings. To manually update, you may click on the **Check for updates** button in the general settings.
+Power Automate will frequently check for updates and display a notification dialog. In order not to disrupt your work, the update dialog offers you the option to delay the update and proceed with it at a later time. If you don't wish to receive any update notifications, you may uncheck the **Show update notifications** option in the general settings. To manually update, you may select the **Check for updates** button in the general settings.
 
 ## Switch organization
 
-For cases that a user is member of more than one tenants, they can switch between them by selecting their alias at the top right of the console window and clicking on **Switch organization**.
+For cases that a user is member of more than one tenant, they can switch between them by selecting their alias at the top right of the console window and clicking on **Switch organization**.
 
 ![Screenshot of the switch tenants option.](./media/console/switch-tenant.png)
 
