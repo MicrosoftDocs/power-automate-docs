@@ -103,6 +103,7 @@ It is recommended to use a gateway for desktop flows only by one environment. Ho
 With multiple environments, in some cases no flows may appear to be running even with a full list of queued runs, as the gateway may be running flows in another environment. Run queues are per environment and cannot be prioritized one over the other. A message will be shown to indicate if the gateway is being used in another environment. 
 
 ## Known issues
-- Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still view the desktop flow queue for your gateways by visiting the Desktop flow queues page under the Monitor section in the left navigation.
+- We recommend to avoid queuing too many short desktop flows (~under 1 min) in large machine groups.
+- Machines and machine groups are not available in China regions. You can still view the desktop flow queue for your gateways by visiting the Desktop flow queues page under the Monitor section in the left navigation.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
