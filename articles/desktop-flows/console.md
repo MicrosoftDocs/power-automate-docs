@@ -24,7 +24,7 @@ After signing in, your username will be displayed in the top-right corner, while
 
 ## Starting a desktop flow
 
-Power Automate allows users to run any available desktop flow through the console. To run a desktop flow as local attended, hover the cursor over it and select the **Start** button. You can find the current status of each flow in the **Status** column of the desktop flows list.
+Power Automate users can run any available desktop flow through the console. To run a desktop flow as local attended, hover the cursor over it and select the **Start** button. You can find the current status of each flow in the **Status** column of the desktop flows list.
 
 ![Screenshot of the status field in the console.](./media/console/start-flow.png)
 
