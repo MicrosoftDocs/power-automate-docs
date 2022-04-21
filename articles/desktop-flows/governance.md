@@ -33,19 +33,19 @@ Using the following registry entry you can prevent users to manually update Powe
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|DisableOptionalUpdates|DWORD|
 
 ***Value***
-- **1**: Users will not be able to manually update Power Automate for Desktop.
+- **1**: Users won't be able to manually update Power Automate for Desktop.
 
 
 ## Prevent users accessing Power Automate for desktop using their Microsoft accounts
 
-Using the following registry entry you can prevent users to login on Power Automate for desktop on their machines using a Microsoft account.
+Using the following registry entry you can prevent users to sign in on Power Automate for desktop on their machines using a Microsoft account.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|RestrictMSAAccountsSignIns|DWORD|
 
 ***Value***
-- **1**: Users will not be able to sign-in using their Microsoft account
+- **1**: Users won't be able to sign-in using their Microsoft account
 
 
 ## Prevent users accessing Power Automate for desktop using their work or school accounts
@@ -57,7 +57,7 @@ You can use the following registry entry to prevent users from logging into Powe
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|RestrictNoLicenseOrgIDAccountsSignIns|DWORD|
 
 ***Value***
-- **1**: Users will not be able to sign-in using their work or school account without a per user plan with attended RPA license
+- **1**: Users won't be able to sign-in using their work or school account without a per user plan with attended RPA license
 
 ## Prevent users accessing Power Automate for desktop using their work or school accounts or organization premium accounts
 
@@ -68,7 +68,7 @@ You can use the following registry entry to prevent users from logging into Powe
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|RestrictOrgIDAccountsSignIns|DWORD|
 
 ***Value***
-- **1**: Users will not be able to sign-in using their work or school account or organization premium account
+- **1**: Users won't be able to sign-in using their work or school account or organization premium account
 
 >[!Note]
 >- Setting any value other than 1, or not setting a value at all will allow users to access for desktop. When all registry keys are set to 1, users will not be able to login to Power Automate for desktop with any type of account.
@@ -143,7 +143,7 @@ IT administrators, may set the following registry key, to configure the Power Au
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|DisableWindowsProxy|DWORD|
 
 ***Value***
-- **1**: Power Automate for desktop will not honor the Windows Proxy settings and the proxy server will be bypassed for Power Automate's traffic. 
+- **1**: Power Automate for desktop won't honor the Windows Proxy settings and the proxy server will be bypassed for Power Automate's traffic. 
 
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using the current user's credentials
 
@@ -156,7 +156,7 @@ IT administrators, may set the following registry key, to configure the Power Au
 ***Value***
 - **1**: Power Automate for desktop will authenticate to the corporate proxy server using the current user's credentials.
 
-## Configure Power Automate for desktop to prevent clean up of run files
+## Configure Power Automate for desktop to prevent cleaning up of run files
 
 You can use the following registry entry to configure the cleanup of Power Automates' run files. 
 

@@ -17,7 +17,7 @@ search.audienceType:
 
 # Configure actions and the actions pane
 
-Upon opening the flow designer, the actions pane on the left side of the window shows all the action groups. 
+In the flow designer, the actions pane on the left side of the window shows all the action groups. 
 
 ![Screenshot of the actions pane.](\media\actions-pane\actions-pane.png)
 
@@ -80,7 +80,7 @@ To continue the flow's execution, even if the retry option fails, select the **C
 
 ![Screenshot of the continue flow run option in the action.](media/configuring-actions-errors/continue-flow-run.png)
 
-Power Automate offers two additional error handling options. Select the **New rule** button to:
+Power Automate offers two more error handling options. Select the **New rule** button to:
 - **Set variable**: Sets the desired value to a specified variable.
 - **Run subflow**: Executes a specified subflow. 
 
