@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2022
+ms.date: 04/24/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -24,20 +24,20 @@ search.audienceType:
 
 # Create flows to manage email
 
-There are four methods to create flows to manage your email.
+Here are some of the most frequently used ways to create flows to manage your email.
 
- Use the method that best suits your needs. Power Automate offers many templates that will help you create a flow by using them "as is" or with slight adjustments. If you don't find a template to use with your scenario, you can create a cloud flow from scratch. You can also create a flow using connectors to use with your scenario.
+ Power Automate offers many templates for you to create flows. You can use these templates "as is" or you can make any adjustments that your scenario needs. If you don't find a template that matches your scenario, you can create a cloud flow without a template. You can also create a flow from connectors.
 
-1. **Use a template:** Most likely, there's already a [template](https://preview.flow.microsoft.com/en-us/templates/) that accomplishes your scenario. Search for your scenario among the templates and then follow the steps to create a cloud flow from the template.
+1. **Use a template:** Most likely, there's already a [template](https://flow.microsoft.com/en-us/templates/) that accomplishes your scenario. Search for your scenario among the templates and then follow the steps to create a cloud flow from the template.
  
-1. **Tweak a template:** If you find a template that is similar to your scenario, but it doesn’t do exactly what you are want, you can create a cloud flow from that template and then tweak the flow to your liking. You can extend a cloud flow that's created from template by adding, editing, or removing, triggers and actions.
+1. **Tweak a template:** If you find a template that is similar to your scenario, but it doesn’t do exactly what you are want, you can create a cloud flow from that template and then tweak the flow to your liking. You can extend a cloud flow that you created from a template by adding, editing, or removing, triggers and actions.
 
     >[!TIP]
-    >You can [**copy and paste**](https://flow.microsoft.com/en-us/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) actions in the same flow or across flows to speed up the process. <!--Todo use a link in the docs, not a blog-->
+    >You can [**copy and paste**](./multi-step-logic-flow.md#copy-and-paste-actions) actions in the same flow or across flows to speed up the process. <!--Todo use a link in the docs, not a blog-->
 
 1. **Create a cloud flow from scratch:** If you can't find a template that's similar to your scenario, you can [create a cloud flow from scratch](./get-started-logic-flow.md) and then connect the services you want.
 
-1. **Create a cloud flow from a connector:** In Power Automate, select **Connectors** from the left side of the screen, search for the connector you want, and then select it to create your flow. For example, search for "outlook" to find connectors for Office 365 Outlook.
+1. **Create a cloud flow from a connector:** In Power Automate, select **Connectors** from the left side of the screen, search for the connector you want, and then select it to create your flow. For example, search for "outlook" to find connectors for Microsoft 365 Outlook.
 
 ## More information
 
