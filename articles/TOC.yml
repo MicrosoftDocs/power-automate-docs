@@ -120,7 +120,7 @@
         href: create-approval-response-options.md
       - name: Known issues and limitations
         href: approvals-known-issues.md
-    - name: Use flows with Office 365 Outlook email
+    - name: Use flows with Microsoft 365 Outlook email
       items:
       - name: Overview
         href: email-overview.md
