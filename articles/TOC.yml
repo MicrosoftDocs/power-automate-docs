@@ -65,6 +65,7 @@
     items:
     - name: Add an action
       href: multi-step-logic-flow.md
+      displayName: Copy and paste actions
     - name: Add a condition
       href: add-condition.md
     - name: Use data operations
