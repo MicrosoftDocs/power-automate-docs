@@ -65,6 +65,7 @@
     items:
     - name: Add an action
       href: multi-step-logic-flow.md
+      displayName: Copy and paste actions
     - name: Add a condition
       href: add-condition.md
     - name: Use data operations
@@ -120,7 +121,7 @@
         href: create-approval-response-options.md
       - name: Known issues and limitations
         href: approvals-known-issues.md
-    - name: Use flows with Office 365 Outlook email
+    - name: Use flows with Microsoft 365 Outlook email
       items:
       - name: Overview
         href: email-overview.md
