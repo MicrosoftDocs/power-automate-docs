@@ -2,7 +2,7 @@
 title: "Create a business process flow in Power Apps | MicrosoftDocs"
 description: "Learn how to create a business process flow"
 ms.custom: ""
-ms.date: 09/10/2021
+ms.date: 04/26/2022
 ms.reviewer: "msftman"
 
 ms.suite: ""
@@ -46,14 +46,14 @@ You need a [per user plan](https://flow.microsoft.com/pricing/) in order to crea
 ## Create a business process flow  
   
 1. In Power Automate, select **My flows** from the navigation bar on the left.
-3. Select **Business process flows**
-4. Select **New** tab
-   a. Enter your Flow Name 
-   b. System flow name will be automatically generated.
-   c. Choose a Table the flow will be used in.
-   d. Select **Create** button
+3. Select **Business process flows**.
+4. Select **New**.
+   a. Give your flow a name. 
+   b. Optionally, change the **Name** if you don't want to use the name that the system generates.
+   c. Select the table in which the flow will be used.
+   d. Select **Create**.
   
-     The new process flow is created.  You can now edit it with a first single stage created for you.  
+     The new business process flow is created.  You can now edit it with a first single stage created for you.  
      ![Business process flow window showing main elements.](media/business-process-flow-window-showing-main-elements.png "Business process flow window showing main elements")  
 1. **Add stages.** If your users will progress from one business stage to another in the  process:
   
