@@ -14,11 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# Share process mining processes in process advisor (preview)
+# Share process mining processes in process advisor (preview) <!-- Note from Sweeny: This topic title has too many instances of the word "process". Can it be modified? -->
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-When you create a process in process advisor, only you can see it. But you may want to share the analytics and insights with others. Share your process mining processes with others in your organization so they can also glean insights to make decisions.
+When you create a process in process advisor, only you can see it. But you may want to share the analytics and insights with others. Share your process mining processes with others in your organization so they can also glean insights to make decisions.  <!-- Note from Sweeny: Can we add a sentence on how we can share a process mining process? This would complete the introductory paragraph and lead the reader forward. -->
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -27,7 +27,7 @@ When you create a process in process advisor, only you can see it. But you may w
 
 ## Share action
 
-The share action is available on the **Processes** screen for the following.
+The share action is available on the **Processes** screen for the following: 
 
 - Each process where you're an owner.
 
@@ -35,7 +35,7 @@ The share action is available on the **Processes** screen for the following.
 
 - Any security role that has share permissions on process advisor system entities.
 
-The share action is also available on the process details page with the same conditions. For process mining, only the viewer role is available for sharing to.
+The share action is also available on the process details page with the same conditions. For process mining, only the viewer role is available for sharing to. <!-- Note from Sweeny: It seems the preposition use may be incorrect here at the end of the sentence. It makes the sentence look incomplete. Please rephrase. -->
 
 > [!div class="mx-imgBorder"]
 > ![!Manage viewer access.](media/process-mining-share/manage-viewer-access.png "Manage viewer access")
@@ -44,11 +44,13 @@ The share action is also available on the process details page with the same con
 
 When you select the share action, a share panel is displayed. The share panel is where you select Microsoft Dataverse users in your organization, and share your process with them. You can search for any user to invite to your process in the Dataverse tenant.  
 
-When sharing a process with others, the option to automatically send an email invitation is selected. Viewers are invited to view the process's analytics. There's a link in the email invitation that leads them to the shared process's analytics.  
+When you share a process with others, the option to automatically send an email invitation is selected. Viewers are invited to view the process's analytics. There's a link in the email invitation that leads them to the shared process's analytics.  <!-- Note from Sweeny: Can we add a screenshot of the
+Share Panel here for more clarity? -->
 
 ## Share a process with a viewer
 
-  Adding a viewer to a process shares analytics and insights with other people. If the analytics have not been generated, the viewer would land on the process details page instead. A viewer can perform the following actions.  
+  Adding a viewer to a process shares analytics and insights with other people. <!-- Note from Sweeny: This sentence sounds incorrect. Please check. -->
+  If the analytics have not been generated, the viewer would land on the process details page instead. A viewer can perform the following actions:    
 
 - View the process details.
 
