@@ -51,17 +51,17 @@ Browser automation actions enable users to interact with web applications and co
 
 To add a new UI element, select **Add UI element** through the deployed browser automation action or the **UI elements** tab of the flow designer.
 
-![Screenshot of the options to create a new UI element.](\media\webautomation\create-ui-element.png)
+![Screenshot of the options to create a new UI element.](media\webautomation\create-ui-element.png)
 
 All web-related UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
 
 Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you have the option to edit an existing selector or build one from scratch. 
 
-![Screenshot of the options to edit and create selectors.](\media\webautomation\create-selector.png)
+![Screenshot of the options to edit and create selectors.](media\webautomation\create-selector.png)
 
 To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
 
-![Screenshot of the available operators in the selector builder.](\media\webautomation\selector-operators.png)
+![Screenshot of the available operators in the selector builder.](media\webautomation\selector-operators.png)
 
 >[!NOTE]
 > You can find more information about developing web flows and creating custom selectors in [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
@@ -184,6 +184,7 @@ Set the focus on an input element of a web page and scroll it into view
 |Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|WebControl||Select the UI element on web page to focus|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 
@@ -211,6 +212,7 @@ Fill a text field in a web page with the specified text
 |Emulate typing|N/A|Boolean value|True|Specify whether to fill the text field at once by simply setting the value of the text box, or emulate a user typing by sending characters one by one. The latter method is slower, but required in some complex web pages.|
 |Unfocus text box after filling it|N/A|Boolean value|False|Choose whether to unfocus the text box right after this action fills it with the specified text. In case of scraping autocompletion lists, this parameter should be set to "False".|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after populating the text field|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after populating the text field|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 
@@ -235,6 +237,7 @@ Check or uncheck a check box in a web form
 |UI element|No|WebControl||Select the check box to set the state of|
 |Check box state|N/A|Checked, Unchecked|Checked|Select the check box state|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after setting the check box state|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after setting the check box state|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 
@@ -257,6 +260,7 @@ Select a radio button on the web page
 |Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|WebControl||The radio button to select|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after selecting the radio button|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after selecting the radio button|
 |Dialog button to press|Yes|Text value|OK|The dialog button to press if a pop-up dialog appears|
 
@@ -282,6 +286,7 @@ Set or clear the selected option for a drop-down list in a web form
 |Option name(s)|No|List of Text values||Enter one or more options (one per line if more than one) to be selected in the drop-down list. Multiple options make sense only when working with multi-select lists. If the list is single-selection, then only the first option specified will be used.|
 |Option indices|No|List of Numeric values||Type a space-separated list of 1-based indices (e.g. 1 3 4)|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after setting the drop-down list value|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after setting the drop-down list value|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 
@@ -304,6 +309,7 @@ Press a web page button
 |Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|WebControl||Select the button to press|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after pressing the button|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after pressing the button|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 
@@ -375,6 +381,7 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 |Clear cache|N/A|Boolean value|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|Boolean value|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Custom user agent string|Yes|Text value||Specify the custom user agent string for the runtime web helper. If this field remains empty, the runtime web helper uses by default the user agent string of Internet Explorer installed on the machine.|
@@ -409,6 +416,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Clear cache|N/A|Boolean value|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|Boolean value|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
@@ -440,6 +448,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Clear cache|N/A|Boolean value|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|Boolean value|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
@@ -471,6 +480,7 @@ Launch a new instance or attach to a running instance of Edge for automating web
 |Clear cache|N/A|Boolean value|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|Boolean value|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
@@ -496,6 +506,7 @@ Create a new tab and navigate to the given URL (supported in Edge, Chrome and Fi
 |Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
 |URL to navigate to|No|Text value||Enter the URL, or a variable containing the URL, to navigate to|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 
@@ -522,6 +533,7 @@ Navigate the web browser to a new page
 |Navigate|N/A|To URL, Back, Forward, Reload web page|To URL|Specify where to navigate to|
 |URL|No|Text value||Enter the URL to navigate to|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the web page to load completely before proceeding|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the web page|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 
@@ -545,6 +557,7 @@ Click on a link or any other element of a web page
 |UI element|No|WebControl||Select the UI element on web page to click|
 |Send physical click|N/A|Boolean value|False|Specify whether to physically move the mouse cursor over the element prior to clicking. A physical click is required for cases that emulated clicks don't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after clicking on the link|
+|Timeout for webpage to load|No|Numeric value|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after clicking on the link|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
 
