@@ -76,26 +76,26 @@ You can use the following registry entry to prevent users from logging into Powe
 ## Restricting access to Power Automate for desktop
 
 In order to restrict access to Power Automate for desktop on a workstation with Windows 10, use [Applocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
-<!---
-## Prevent users selecting a particular organization in Power Automate for desktop
 
-You can use the following registry entry to prevent users from selecting a specific organization in Power Automate for desktop.
+## Allow users to select a particular organization in Power Automate for desktop
+
+You can use the following registry entry to allow users to select the organization of their preference in Power Automate for desktop.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|EnableOrganizationPicker|String|
 
 ***Values***
-- **"isEnabled":1**: Users will be able to select the organization of their preference.
-- **"isEnabled":0**: Users won't be able to select the organization of their preference.
+- **"isEnabled":1**: Signed in users will be able to select the organization of their preference through the “Switch organization” option in the Power Automate for desktop console.
+- **"isEnabled":0**: Signed in users won't be able to select the organization of their preference and the “Switch organization” option will be disabled.
 
-- **"organizationList":[OrgID(s)] (e.g.: organizationList:["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k","86d487j7-y1t2-9gk7-k7n2-x5079jq4619r"])**: The organizations with the specified IDs listed, will be available to connect.
+- **"organizationList":[OrgID(s)] (e.g.: organizationList:["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k","86d487j7-y1t2-9gk7-k7n2-x5079jq4619r"])**: The organizations with the specified IDs listed, will be available to connect during sign in. 
 
-- **"selectOrganizationFromListIsEnabled":1**: Users will be able to select the organization to connect from a list and it won't be selected automatically.
-- **"selectOrganizationFromListIsEnabled":0**: Users won't be able to select the organization to connect from a list and it will be selected automatically.
+- **"selectOrganizationFromListIsEnabled":1**: Power Automate for desktop will try to connect to each one of the organizations specified in the "organizationList" value based on their order, during sign in.
+- **"selectOrganizationFromListIsEnabled":0**: The specified list in the "organizationList" value won’t be taken into consideration during sign in.
 
 > [!NOTE]
-> It's not mandatory to specify values for all fields. The following example uses all options **"{"isEnabled": 1, "organizationList": ["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k"], "selectOrganizationFromListIsEnabled": 1"}"**
+> The "isEnabled” values aren't related to the "organizationList" and "selectOrganizationFromListIsEnabled" values. The "isEnabled” values define if the “Switch organization” option will be available to signed in users, whereas the "organizationList" and "selectOrganizationFromListIsEnabled" values define the organizations that Power Automate for desktop will try to connect to automatically during the sign in procedure.
 
 ## Allow users of Power Automate for desktop to connect to a cloud
 
@@ -114,7 +114,8 @@ You can use the following registry entry to allow users to select the cloud they
 - **4**: The user will connect to the US Government GCC High cloud.
 - **5**: The user will connect to the US Government DoD cloud.
 - **6**: The user will connect to the China (operated by 21Vianet) cloud.
---->
+
+
 ## Configure Power Automate for desktop to interact with a corporate proxy server
 
 IT administrators, may set the following registry key, to configure the Power Automate’s interaction with a corporate proxy server.
