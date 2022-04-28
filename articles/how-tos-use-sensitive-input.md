@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/20/2022
+ms.date: 04/28/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -31,7 +31,7 @@ Some inputs like passwords need to be obfuscated or omitted from the logs. Power
 Follow these steps to turn on **Secure Inputs** and **Secure Outputs** to work with sensitive content from connectors.
 
 1. Select **…** on the top right corner of an action.
-1.Select **Settings**.
+1. Select **Settings**.
 
     ![The settings option](./media/manage-sensitive-input/settings.png "The settings option")
 
@@ -43,7 +43,7 @@ Follow these steps to turn on **Secure Inputs** and **Secure Outputs** to work w
 
   You will notice that the action now has a lock icon on the top right, indicating special handling for input and output values.
 
-  ![The lock icon.](./media/manage-sensitive-input/lock-icon.png "The lock icon")
+  ![The lock icon.](./media/manage-sensitive-input/lock-icon.png "The lock icon")]
 
       >[!TIP]
       >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a desktop flow, and then turn on **Secure Text** in the **Settings**.
