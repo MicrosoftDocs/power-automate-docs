@@ -14,11 +14,16 @@ search.audienceType:
   - enduser
 ---
 
-# Share process mining processes in process advisor (preview) <!-- Note from Sweeny: This topic title has too many instances of the word "process". Can it be modified? -->
+# Share process mining processes in process advisor (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-When you create a process in process advisor, only you can see it. But you may want to share the analytics and insights with others. Share your process mining processes with others in your organization so they can also glean insights to make decisions.  <!-- Note from Sweeny: Can we add a sentence on how we can share a process mining process? This would complete the introductory paragraph and lead the reader forward. -->
+When you create a process in process advisor, only you can see it. But you may want to share the analytics and insights with others. Share your process mining processes with others in your organization so they can also glean insights to make decisions.
+
+To share your process with others, select **Process mining** on the left navigation bar, select your process, and then select the **Processes** tab. Highlight your process, select **More commands** (the three vertical dots), and then select **Share**.
+
+> [!div class="mx-imgBorder"]
+> ![!Manage viewer access.](media/process-mining-share/share-button.png "Manage viewer access")
 
 > [!IMPORTANT]
 > - This is a preview feature.
