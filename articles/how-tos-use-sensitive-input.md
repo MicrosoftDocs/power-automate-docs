@@ -26,20 +26,20 @@ search.audienceType:
 
 # Manage sensitive input like passwords
 
-Some inputs like passwords need to be obfuscated and omitted from the logs. Power Automate supports inputs called **Sensitive text inputs** for storing these "private" values.
+Some inputs like passwords need to be obfuscated or omitted from the logs. Power Automate uses **Sensitive text inputs** to store these "confidential" values.
 
-To retrieve sensitive content from another connector, turn on **Secure Inputs** and **Secure Outputs** by following these steps.
+Follow these steps to turn on **Secure Inputs** and **Secure Outputs** to work with sensitive content from connectors.
 
-1. Select **…** on the top right corner of the action.
+1. Select **…** on the top right corner of an action.
 1.Select **Settings**.
 
     ![The settings option](./media/manage-sensitive-input/settings.png "The settings option")
 
-1. Turn on the **Secure Inputs** and **Secure Outputs** properties to prevent these settings from being shown in the logs.
+1. Turn on the **Secure Inputs** and **Secure Outputs** properties to prevent these values from being shown in the logs.
 
    ![Secure inputs and outputs.](./media/manage-sensitive-input/secure-outputs-secure-inputs.png "Secure inputs and outputs")
 
-1.Select **Done**.
+1. Select **Done**.
 
   You will notice that the action now has a lock icon on the top right, indicating special handling for input and output values.
 
