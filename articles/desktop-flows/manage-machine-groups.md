@@ -24,8 +24,9 @@ Machine groups allow you to organize multiple machines together to help distribu
 Machine groups can either be created from the Power Automate machine runtime app or from the Power Automate portal. 
 
 From the Power Automate machine runtime application: 
-(To install: **Power Automate Desktop Application > Settings> Open Machine Settings**, this will prompt you to install the Power Automate machine runtime)
 
+> [!NOTE]
+> To install the Power Automate machine runtime application, launch Power Automate for desktop and naviagte to **Settings** > **Open machine settings**.
 
 1. Sign into **Power Automate machine runtime**
 
