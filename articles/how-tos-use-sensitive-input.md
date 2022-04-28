@@ -43,11 +43,11 @@ Follow these steps to turn on **Secure Inputs** and **Secure Outputs** to work w
 
   You will notice that the action now has a lock icon on the top right, indicating special handling for input and output values.
 
-  ![The lock icon.](./media/manage-sensitive-input/lock-icon.png "The lock icon")]
+  ![The lock icon.](./media/manage-sensitive-input/lock-icon.png "The lock icon")
 
-      >[!TIP]
-      >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a desktop flow, and then turn on **Secure Text** in the **Settings**.
+  >[!TIP]
+  >Follow the same steps to configure inputs as given earlier in this article to pass the output from this connector to a desktop flow, and then turn on **Secure Text** in the **Settings**.
 
-      ![Pass outputs to a flow .](./media/manage-sensitive-input/pass-to-desktop-flow.png "Desktop flow inputs")
+  ![Pass outputs to a flow .](./media/manage-sensitive-input/pass-to-desktop-flow.png "Desktop flow inputs")
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
