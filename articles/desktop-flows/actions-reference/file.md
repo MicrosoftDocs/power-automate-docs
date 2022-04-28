@@ -219,7 +219,7 @@ Read the contents of a text file
 |-----|-----|-----|-----|-----|
 |File path|No|File||The file to read|
 |Store content as|N/A|Single text value, List (each is a list item)|Single text value|Specifies how to store the text. Choose 'Single text value' to store the entire text as a single text value. Choose 'List' to store each line of the original text as a text item in a list|
-|Encoding|N/A|Default, ANSI, Unicode, Unicode (big-endian), UTF-8|UTF-8|The encoding to read the specified text from the text file with.|
+|Encoding|N/A|Default, ASCII, Unicode, Unicode (big-endian), UTF-8|UTF-8|The encoding to read the specified text from the text file with.|
 
 
 ##### Variables Produced
@@ -246,7 +246,7 @@ Write or appends text to a file
 |Text to write|Yes|General value||The text to write in the specified file|
 |Append new line|N/A|Boolean value|True|Specifies whether to append a new line at the end of the overall text to write to the file|
 |If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies whether to overwrite the existing content, or to append to the end of the existing content. If the file doesn't exist, this action automatically creates it|
-|Encoding|N/A|Default, ANSI, Unicode, Unicode (big-endian), UTF-8, Unicode (without byte order mask), UTF-8 (without byte order mask)|Unicode|The encoding to use for the specified text to write into the text file|
+|Encoding|N/A|Default, ASCII, Unicode, Unicode (big-endian), UTF-8, Unicode (without byte order mask), UTF-8 (without byte order mask)|Unicode|The encoding to use for the specified text to write into the text file|
 
 
 ##### Variables Produced
@@ -265,7 +265,7 @@ Read a CSV file into a data table
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|File||The CSV file to read. This can be a file path, or a variable containing a file or a textual path|
-|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte οrder mark), System default, ANSI|UTF-8|The encoding be use for reading the specified CSV file|
+|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte οrder mark), System default, ASCII|UTF-8|The encoding be use for reading the specified CSV file|
 |Trim fields|N/A|Boolean value|True|Specifies whether to automatically trim off the leading and trailing whitespaces of the extracted cells|
 |First line contains column names|N/A|Boolean value|False|Specifies whether to use the first row of the CSV resource to set the column names of the resulting data table variant. Enable this option to avoid reading the names as data into the table. Subsequent actions may access the data held by the data table using column names (instead of column numbers)|
 |Columns separator|N/A|Predefined, Custom, Fixed column widths|Predefined|Specifies whether to use a predefined columns separator, a custom one or fixed column widths|
@@ -293,7 +293,7 @@ Write a data table, data row or list to a CSV file
 |-----|-----|-----|-----|-----|
 |Variable to write|No|General value||The data table, data row variable or list variable to write into the target CSV file|
 |File path|No|File||The CSV file to export the variable to. This can be a file path, or a variable containing a file or a textual path|
-|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte οrder mark), System default, ANSI|UTF-8|The encoding to use for writing to the specified CSV file |
+|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte οrder mark), System default, ASCII|UTF-8|The encoding to use for writing to the specified CSV file |
 |Include column names|N/A|Boolean value|False|Specifies whether the column names of the variant specified should become the very first row of the CSV file. This option takes effect if and only if the target CSV file either doesn't intially exist or exists but is otherwise empty of text|
 |If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies the desired behaviour when the targeted CSV file already exists in the filesystem|
 |Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column separator to use in the specified CSV file|

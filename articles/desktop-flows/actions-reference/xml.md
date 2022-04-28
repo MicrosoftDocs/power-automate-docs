@@ -57,7 +57,7 @@ Read the contents of an XML file into a variable
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path:|No|File||The file that contains the XML document to read|
-|Encoding:|N/A|Default, ANSI, Unicode, Unicode big endian, UTF-8|Default|The encoding used for the specified file|
+|Encoding:|N/A|Default, ASCII, Unicode, Unicode big endian, UTF-8|Default|The encoding used for the specified file|
 
 
 ##### Variables Produced
@@ -82,7 +82,7 @@ Write the contents of an XML node variable into a file
 |-----|-----|-----|-----|-----|
 |File path:|No|File||The file to write the XML document into|
 |XML to write:|No|Text value||The XML node or document to write into the file|
-|Encoding:|N/A|Default, ANSI, Unicode, Unicode big endian, UTF-8|Default|The encoding used for the specified file|
+|Encoding:|N/A|Default, ASCII, Unicode, Unicode big endian, UTF-8|Default|The encoding used for the specified file|
 |Format XML:|N/A|Boolean value|True|Specifies whether to format the XML|
 |Indentation per level:|Yes|Numeric value|2|Specifies by how many spaces to indent each level of the XML|
 
