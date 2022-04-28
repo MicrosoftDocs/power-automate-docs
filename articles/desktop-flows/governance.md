@@ -105,9 +105,9 @@ You can use the following registry entry to prevent users from selecting a speci
 > [!NOTE]
 > It's not mandatory to specify values for all fields. The following example uses all options **"{"isEnabled": 1, "organizationList": ["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k"], "selectOrganizationFromListIsEnabled": 1"}"**
 
-## Allow users of Power Automate for desktop to connect to a cloud
+## Allow users of Power Automate for desktop to connect to a region
 
-You can use the following registry entry to allow users to select the cloud they want to connect to.
+You can use the following registry entry to allow users to select the region they want to connect to.
 
 
 |Hive|Key|Name|Type|
@@ -115,13 +115,13 @@ You can use the following registry entry to allow users to select the cloud they
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|Cloud|DWORD|
 
 ***Value***
-- **0**: The user will have the option to select the cloud of their preference to connect to through an additional option in the sign in screen.
-- **1**: The user will be automatically connected to the first available cloud they are registered to.
-- **2**: The user will connect to the global public cloud.
-- **3**: The user will connect to the US Government GCC cloud.
-- **4**: The user will connect to the US Government GCC High cloud.
-- **5**: The user will connect to the US Government DoD cloud.
-- **6**: The user will connect to the China (operated by 21Vianet) cloud.
+- **0**: The user will have the option to select the region of their preference to connect to through an additional option in the sign in screen.
+- **1**: The user will be automatically connected to the first available region they are registered to.
+- **2**: The user will connect to the global public region.
+- **3**: The user will connect to the US Government GCC region.
+- **4**: The user will connect to the US Government GCC High region.
+- **5**: The user will connect to the US Government DoD region.
+- **6**: The user will connect to the China (operated by 21Vianet) region.
 
 ## Configure Power Automate for desktop to interact with a corporate proxy server
 
