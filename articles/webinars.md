@@ -2,11 +2,10 @@
 title: Power Automate webinars | Microsoft Docs
 description: Power Automate webinars
 author: KumarVivek
-
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.custom: 
-ms.date: 12/21/2021
+ms.date: 04/28/2022
 ms.author: kvivek
 ms.reviewer: kvivek
 ---
@@ -61,6 +60,14 @@ by Debraj Ghosh, Stefan Buffner, and Shivani Agarwal<br/>
 **Automate Mundane Tasks with Robotic Process Automation on Windows 11**  
 by John Anastasopoulos and Stephanie Whitaker<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-How-to-use-Power-Automate-in-Windows-11.html?lcid=en-us)
+
+**Automation Through Conversation with Power Automate and Power Virtual Agents**  
+by Jack Rowbotham and Kent Weare<br/>
+[Register and watch now](https://info.microsoft.com/ww-landing-automateconversevirtualagents.html?lcid=en-us)
+
+**Increase Business Impact & Scale with an Automation Center of Excellence**  
+by Pranav Rastogi and Apostolis Papaioannou<br/>
+[Register and watch now](https://info.microsoft.com/ww-landing-businesscenterexcellencerpa.html?lcid=en-us)
 
 
 ### See also

@@ -74,6 +74,8 @@
       href: use-expressions-in-conditions.md
     - name: Store and manage values in variables
       href: create-variable-store-values.md
+    - name: Manage sensitive input like passwords
+      href: how-tos-use-sensitive-input.md
     - name: Cancel or resubmit flow runs in bulk
       href: how-tos-bulk-resubmit.md
     - name: Use Visio to model flows
