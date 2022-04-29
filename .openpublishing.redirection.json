@@ -502,7 +502,7 @@
     },
     {
       "source_path": "articles/desktop-flows/how-to/run-desktop-flow.md",
-      "redirect_url": "/power-automate/desktop-flows/link-pad-flow-portal",
+      "redirect_url": "/power-automate/desktop-flows/run-pad-flow",
       "redirect_document_id": false
     }
 ]
