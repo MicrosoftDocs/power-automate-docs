@@ -34,7 +34,7 @@ The PDF group of actions enables you to extract images, text, and tables from PD
 
 To extract text from a PDF file, use the **Extract text from PDF** action. In the following example, the action has been configured to extract text from a specific range of pages. The file is password-protected, so a password has been populated in the **Advanced** settings. 
 
-If you want to extract texts arranged in a tabular form, enable the **Optimize for structured data** to improve extracted result format and accuracy. 
+If you want to extract texts arranged in a tabular form, enable the **Optimize for structured data** option to improve the results' format and accuracy. 
 
 ![Screenshot of the Extract text from PDF action.](media\pdf\extract-text-pdf-example.png)
 
