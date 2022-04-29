@@ -65,12 +65,12 @@ Extract text from a PDF file
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|File||The PDF file to extract text from. Enter a file path, a variable containing a file or a text path|
-|Password|Yes|Encrypted value||The password of the PDF file. Leave this blank if the PDF isn't password protected|
 |Page(s) to extract|N/A|All, Single, Range|All|Specifies how many pages to extract: All pages, a single page or a range of pages|
 |Single page number|No|Numeric value||The number of the single page to extract text from|
 |From page number|No|Numeric value||The first page number from the range of pages to extract text from|
 |To page number|No|Numeric value||The last page number from the range of pages to extract text from|
-
+|Password|Yes|Encrypted value||The password of the PDF file. Leave this blank if the PDF isn't password protected|
+|Optimize for structured data|N/A|Boolean value|True|Specify whether to detect formatted layout in the document and extract text accordingly|
 
 ##### Variables Produced
 |Argument|Type|Description|
