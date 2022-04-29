@@ -1,6 +1,6 @@
 ---
-title: Automate with mouse, keyboard, and OCR actions | Microsoft Docs
-description: Automate with mouse, keyboard, and OCR actions
+title: Automate using mouse & keyboard and OCR actions (recommended for automation in VDI) | Microsoft Docs
+description: Automate using mouse & keyboard and OCR actions (recommended for automation in VDI)
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Automate with mouse, keyboard, and OCR actions
+# Automate with mouse, keyboard, and OCR actions (recommended for automation in VDI)
 
 For cases that a user isn’t able to access the UI elements of web or UI applications and thus can’t automate using Browser or UI actions or the recorders, it’s strongly recommended to use alternative methods of automation such as the use of Images or mouse and keyboard.
 
