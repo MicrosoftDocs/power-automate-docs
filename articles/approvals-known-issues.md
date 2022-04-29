@@ -48,3 +48,7 @@ Anchor links are not supported. Unexpected results will occur if you use anchors
 **Data Templating**
 
 Data templating isn't fully supported for adaptive cards in Power Automate. As a workaround, use actions like compose, filter, select, and apply to each to manually construct the card within your flows.
+
+**Approvals with Custom responses set to Everyone must Approve**
+
+Approvals that rely on custom responses can fail if sent to many users with the type set to "Everyone must approve", due to data size limitations of the results field.
