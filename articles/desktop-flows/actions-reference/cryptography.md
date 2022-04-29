@@ -54,7 +54,7 @@ Encrypt a string with AES, using a key and a specified encoding format
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Encoding|N/A|Default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to encrypt|
+|Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to encrypt|
 |Text to encrypt|No|Text value||The text to encrypt|
 |Encryption key|No|Encrypted value||The encryption key to use|
 |Padding|N/A|None, PKCS7, Zeros, ANSIX923, ISO10126|PKCS7|The padding to use for the selected encryption algorithm|
@@ -82,7 +82,7 @@ Decrypt a string with AES based on a specified key and an encoding format
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Encoding|N/A|Default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding for the decrypted text|
+|Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding for the decrypted text|
 |Text to decrypt|No|Text value||The text to decrypt in the form of a base64 string|
 |Decryption key|No|Encrypted value||The decryption key to use|
 |Padding|N/A|None, PKCS7, Zeros, ANSIX923, ISO10126|PKCS7|The padding to use for the selected decryption algorithm|
@@ -110,7 +110,7 @@ Encrypt the contents of a file with AES, using a key and a specified encoding fo
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Encoding|N/A|Default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to encrypt|
+|Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to encrypt|
 |File to encrypt|No|File||The text file that stores the contents to encrypt|
 |Encryption key|No|Encrypted value||The encryption key to use|
 |Padding|N/A|None, PKCS7, Zeros, ANSIX923, ISO10126|PKCS7|The padding to use for the selected encryption algorithm|
@@ -139,7 +139,7 @@ Decrypt a string to a file with AES based on a specified key and an encoding for
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Encoding|N/A|Default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to decrypt|
+|Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to decrypt|
 |Text to decrypt|No|Text value||The text to decrypt in the form of a base64 string|
 |Decryption key|No|Encrypted value||The decryption key to use|
 |Decrypt to file|No|File||The file to save the decrypted text into|
@@ -170,7 +170,7 @@ Hash a string, using a specified algorithm and an encoding format
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|SHA256, SHA384, SHA512|SHA256|The algorithm to use for hashing|
-|Encoding|N/A|Default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to hash|
+|Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to hash|
 |Text to hash|No|Text value||The text to hash|
 
 
@@ -192,7 +192,7 @@ Hash the contents of a file, using a specified algorithm and an encoding format
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|SHA256, SHA384, SHA512|SHA256|The algorithm to use for hashing|
-|Encoding|N/A|Default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to hash|
+|Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to hash|
 |File to hash|No|File||The file to hash the contents of|
 
 
@@ -215,7 +215,7 @@ Hash a string with a key, using a specified algorithm and an encoding format
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|HMAC SHA256, HMAC SHA384, HMAC SHA512|HMAC SHA256|The algorithm to use for hashing|
-|Encoding|N/A|Default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to hash|
+|Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to hash|
 |Text to hash|No|Text value||The text to hash|
 |Hash key|No|Encrypted value||The key to hash the text with|
 
@@ -238,7 +238,7 @@ Hash the contents of a file with a key, using a specified algorithm and an encod
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|HMAC SHA256, HMAC SHA384, HMAC SHA512|HMAC SHA256|The algorithm to use for hashing|
-|Encoding|N/A|Default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to hash|
+|Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to hash|
 |File to hash|No|File||The file to hash the contents of|
 |Hash key|No|Encrypted value||The hash key to hash the text with|
 

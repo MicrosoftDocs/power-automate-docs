@@ -219,7 +219,7 @@ Read the contents of a text file
 |-----|-----|-----|-----|-----|
 |File path|No|File||The file to read|
 |Store content as|N/A|Single text value, List (each is a list item)|Single text value|Specifies how to store the text. Choose 'Single text value' to store the entire text as a single text value. Choose 'List' to store each line of the original text as a text item in a list|
-|Encoding|N/A|Default, ASCII, Unicode, Unicode (big-endian), UTF-8|UTF-8|The encoding to read the specified text from the text file with.|
+|Encoding|N/A|System default, ASCII, Unicode, Unicode (big-endian), UTF-8|UTF-8|The encoding to read the specified text from the text file with.|
 
 
 ##### Variables Produced
@@ -246,7 +246,7 @@ Write or appends text to a file
 |Text to write|Yes|General value||The text to write in the specified file|
 |Append new line|N/A|Boolean value|True|Specifies whether to append a new line at the end of the overall text to write to the file|
 |If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies whether to overwrite the existing content, or to append to the end of the existing content. If the file doesn't exist, this action automatically creates it|
-|Encoding|N/A|Default, ASCII, Unicode, Unicode (big-endian), UTF-8, Unicode (without byte order mask), UTF-8 (without byte order mask)|Unicode|The encoding to use for the specified text to write into the text file|
+|Encoding|N/A|System default, ASCII, Unicode, Unicode (big-endian), UTF-8, Unicode (without byte order mask), UTF-8 (without byte order mask)|Unicode|The encoding to use for the specified text to write into the text file|
 
 
 ##### Variables Produced
