@@ -495,11 +495,16 @@
     "redirect_url": "/power-automate/desktop-flows/how-to/convert-data-powershell",
     "redirect_document_id": false
   },
-  {
-    "source_path": "articles/developer/index.md",
-    "redirect_url": "/power-automate/developer/dev-enterprise-intro",
-    "redirect_document_id": false
-  }
+    {
+      "source_path": "articles/developer/index.md",
+      "redirect_url": "/power-automate/developer/dev-enterprise-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/how-to/run-desktop-flow.md",
+      "redirect_url": "/power-automate/desktop-flows/link-pad-flow-portal",
+      "redirect_document_id": false
+    }
 ]
 }
 
