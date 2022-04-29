@@ -106,6 +106,8 @@ Approvers receive approval requests in email. The requests are also displayed in
 
 Outlook and Outlook Web Access(OWA) actionable messages have a limit of five custom responses. This means that only the first five responses that are defined within the flow will be visible in the actionable section of Power Automate approval emails. You can submit the remaining options via a non-actionable HTML email, the Power Automate approval center, the Power Automate mobile application, or Teams.
 
+Approvals that rely on custom responses can fail if sent to many users with the type set to "Everyone must approve", due to data size limitations of the results field.
+
 >[!NOTE]
 >For approvals using a single custom response, Outlook and OWA expand the response field so users do not need to select a button before they can respond like they do when there are multiple approval options.
 
