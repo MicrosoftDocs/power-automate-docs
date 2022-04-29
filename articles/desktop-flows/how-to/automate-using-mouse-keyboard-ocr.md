@@ -17,11 +17,13 @@ search.audienceType:
 
 # Automate with mouse, keyboard, and OCR actions
 
-In some cases, certain web pages and applications don't allow external software to interact with them. As a result, you can't automate them using the browser and UI automation actions or the recorder.
+For cases that a user isn’t able to access the UI elements of web or UI applications and thus can’t automate using Browser or UI actions or the recorders, it’s strongly recommended to use alternative methods of automation such as the use of Images or mouse and keyboard.
 
-Although you can use [image-based recording](../recording-flow.md#image-based-recording) to automate some of these applications, it may not be the best option in some scenarios. For example, some applications change their interface dynamically, while the texts remain the same.
+The image method, captures sections of the screen which are then used as references to perform clicks, send text and mouse clicks. Image-based automation can be either recorded by the [image-based recorder](../recording-flow.md#image-based-recording) or developed manually. Read more on how to automate using images in [this topic](../images.md).
 
-To bypass this issue, you can use a combination of keys, images, mouse clicks, and OCR extraction. 
+Conversely, for cases that an image can't be used as a point of reference, consider using the OCR capabilities to navigate through the screen. Information on OCR capabilities can be found in the respective [actions reference](../actions-reference/ocr.md).
+
+In both alternatives described above, the best way to navigate is using mouse clicks and keystrokes which are explained in the [actions reference](../actions-reference/mouseandkeyboard.md).
 
 Before building your automation, ensure that the appropriate window is focused and maximized using the **Focus window** and **Set window state** actions.
 
