@@ -106,405 +106,400 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/guided-learning/build-flows.md",
-      "redirect_url": "/learn/modules/get-started-with-flow/2-create-first-flow",
-      "redirect_document_id": false
+        "source_path": "articles/guided-learning/build-flows.md",
+        "redirect_url": "/learn/modules/get-started-with-flow/2-create-first-flow",
+        "redirect_document_id": false
     },
     {
-      "source_path": "articles/guided-learning/get-started.md",
-      "redirect_url": "/learn/modules/get-started-with-flow/1-introduction",
-      "redirect_document_id": false
+        "source_path": "articles/guided-learning/get-started.md",
+        "redirect_url": "/learn/modules/get-started-with-flow/1-introduction",
+        "redirect_document_id": false
     },
     {
-      "source_path": "articles/guided-learning/work-with-approvals.md",
-      "redirect_url": "/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request",
-      "redirect_document_id": false
+        "source_path": "articles/guided-learning/work-with-approvals.md",
+        "redirect_url": "/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request",
+        "redirect_document_id": false
     },
     {
-      "source_path": "articles/guided-learning/index.md",
-      "redirect_url": "/learn/paths/automate-process-using-flow",
-      "redirect_document_id": false
-    },
+        "source_path": "articles/guided-learning/index.md",
+        "redirect_url": "/learn/paths/automate-process-using-flow",
+        "redirect_document_id": false
+    },   
     {
-      "source_path": "articles/ui-flows/overview.md",
-      "redirect_url": "/power-automate/desktop-flows/overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/upgrade.md",
-      "redirect_url": "/power-automate/desktop-flows/upgrade",
-      "redirect_document_id": false
-    },
-    {
+        "source_path": "articles/ui-flows/overview.md",
+        "redirect_url": "/power-automate/desktop-flows/overview",
+        "redirect_document_id": false
+  },
+  {  
+    "source_path": "articles/ui-flows/upgrade.md",
+    "redirect_url": "/power-automate/desktop-flows/upgrade",
+    "redirect_document_id": false
+  },
+  {
       "source_path": "articles/ui-flows/setup.md",
       "redirect_url": "/power-automate/desktop-flows/setup",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/create-desktop.md",
-      "redirect_url": "/power-automate/desktop-flows/create-desktop",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/edit-desktop.md",
-      "redirect_url": "/power-automate/desktop-flows/edit-desktop",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/inputs-outputs-desktop.md",
-      "redirect_url": "/power-automate/desktop-flows/inputs-outputs-desktop",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/use-ime.md",
-      "redirect_url": "/power-automate/desktop-flows/use-ime",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/create-web.md",
-      "redirect_url": "/power-automate/desktop-flows/create-web",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/create-processes.md",
-      "redirect_url": "/power-automate/desktop-flows/create-processes",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/edit-web.md",
-      "redirect_url": "/power-automate/desktop-flows/edit-web",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/inputs-outputs-web.md",
-      "redirect_url": "/power-automate/desktop-flows/inputs-outputs-web",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/run-ui-flow.md",
-      "redirect_url": "/power-automate/desktop-flows/run-desktop-flow",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/manage.md",
-      "redirect_url": "/power-automate/desktop-flows/manage",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/introduction.md",
-      "redirect_url": "/power-automate/desktop-flows/introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/create-flow.md",
-      "redirect_url": "/power-automate/desktop-flows/create-flow",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/run-pad-flow.md",
-      "redirect_url": "/power-automate/desktop-flows/run-pad-flow",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/link-pad-flow-portal.md",
-      "redirect_url": "/power-automate/desktop-flows/link-pad-flow-portal",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/console.md",
-      "redirect_url": "/power-automate/desktop-flows/console",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/flow-designer.md",
-      "redirect_url": "/power-automate/desktop-flows/flow-designer",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-pane.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-pane",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/designer-workspace.md",
-      "redirect_url": "/power-automate/desktop-flows/designer-workspace",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/debugging-flow.md",
-      "redirect_url": "/power-automate/desktop-flows/debugging-flow",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/manage-variables.md",
-      "redirect_url": "/power-automate/desktop-flows/manage-variables",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/variable-data-types.md",
-      "redirect_url": "/power-automate/desktop-flows/variable-data-types",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/datatype-properties.md",
-      "redirect_url": "/power-automate/desktop-flows/datatype-properties",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/variable-manipulation.md",
-      "redirect_url": "/power-automate/desktop-flows/variable-manipulation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/ui-elements.md",
-      "redirect_url": "/power-automate/desktop-flows/ui-elements",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/images.md",
-      "redirect_url": "/power-automate/desktop-flows/images",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/errors.md",
-      "redirect_url": "/power-automate/desktop-flows/errors",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/finding-usages.md",
-      "redirect_url": "/power-automate/desktop-flows/finding-usages",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/recording-flow.md",
-      "redirect_url": "/power-automate/desktop-flows/recording-flow",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/use-loops.md",
-      "redirect_url": "/power-automate/desktop-flows/use-loops",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/use-conditionals.md",
-      "redirect_url": "/power-automate/desktop-flows/use-conditionals",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/automation-web.md",
-      "redirect_url": "/power-automate/desktop-flows/automation-web",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/using-browsers.md",
-      "redirect_url": "/power-automate/desktop-flows/using-browsers",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/desktop-automation.md",
-      "redirect_url": "/power-automate/desktop-flows/desktop-automation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/variables.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/variables",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/conditionals.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/conditionals",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/loops.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/loops",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/wait.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/wait",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/flowcontrol.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/flowcontrol",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/system.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/system",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/file.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/file",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/folder.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/folder",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/compression.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/compression",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/uiautomation.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/uiautomation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/web.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/web",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/webautomation.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/webautomation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/excel.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/excel",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/database.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/database",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/email.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/email",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/exchange.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/exchange",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/outlook.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/outlook",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/display.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/display",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/mouseandkeyboard.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/mouseandkeyboard",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/clipboard.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/clipboard",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/text.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/text",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/datetime.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/datetime",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/pdf.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/pdf",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/cmd.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/cmd",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/terminalemulation.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/terminalemulation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/ocr.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/ocr",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/cryptography.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/cryptography",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/services.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/services",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/xml.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/xml",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/activedirectory.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/activedirectory",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/aws.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/aws",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/azure.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/azure",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/cognitive.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/cognitive",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/desktop/actions-reference/ftp.md",
-      "redirect_url": "/power-automate/desktop-flows/actions-reference/ftp",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/ui-flows/overview-analytics.md",
-      "redirect_url": "/power-automate/desktop-flows/overview-analytics",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/connection-cds-native.md",
-      "redirect_url": "/power-automate/dataverse/overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/desktop-flows/how-to/convert-file-base64-format.md",
-      "redirect_url": "/power-automate/desktop-flows/how-to/convert-data-powershell",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/developer/index.md",
-      "redirect_url": "/power-automate/developer/dev-enterprise-intro",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/desktop-flows/how-to/run-desktop-flow.md",
-      "redirect_url": "/power-automate/desktop-flows/link-pad-flow-portal",
-      "redirect_document_id": false
-    }
-  ]
+  },
+  {
+    "source_path": "articles/ui-flows/create-desktop.md",
+    "redirect_url": "/power-automate/desktop-flows/create-desktop",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/edit-desktop.md",
+    "redirect_url": "/power-automate/desktop-flows/edit-desktop",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/inputs-outputs-desktop.md",
+    "redirect_url": "/power-automate/desktop-flows/inputs-outputs-desktop",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/use-ime.md",
+    "redirect_url": "/power-automate/desktop-flows/use-ime",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/create-web.md",
+    "redirect_url": "/power-automate/desktop-flows/create-web",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/create-processes.md",
+    "redirect_url": "/power-automate/desktop-flows/create-processes",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/edit-web.md",
+    "redirect_url": "/power-automate/desktop-flows/edit-web",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/inputs-outputs-web.md",
+    "redirect_url": "/power-automate/desktop-flows/inputs-outputs-web",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/run-ui-flow.md",
+    "redirect_url": "/power-automate/desktop-flows/run-desktop-flow",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/manage.md",
+    "redirect_url": "/power-automate/desktop-flows/manage",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/introduction.md",
+    "redirect_url": "/power-automate/desktop-flows/introduction",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/create-flow.md",
+    "redirect_url": "/power-automate/desktop-flows/create-flow",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/run-pad-flow.md",
+    "redirect_url": "/power-automate/desktop-flows/run-pad-flow",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/link-pad-flow-portal.md",
+    "redirect_url": "/power-automate/desktop-flows/link-pad-flow-portal",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/console.md",
+    "redirect_url": "/power-automate/desktop-flows/console",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/flow-designer.md",
+    "redirect_url": "/power-automate/desktop-flows/flow-designer",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-pane.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-pane",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/designer-workspace.md",
+    "redirect_url": "/power-automate/desktop-flows/designer-workspace",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/debugging-flow.md",
+    "redirect_url": "/power-automate/desktop-flows/debugging-flow",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/manage-variables.md",
+    "redirect_url": "/power-automate/desktop-flows/manage-variables",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/variable-data-types.md",
+    "redirect_url": "/power-automate/desktop-flows/variable-data-types",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/datatype-properties.md",
+    "redirect_url": "/power-automate/desktop-flows/datatype-properties",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/variable-manipulation.md",
+    "redirect_url": "/power-automate/desktop-flows/variable-manipulation",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/ui-elements.md",
+    "redirect_url": "/power-automate/desktop-flows/ui-elements",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/images.md",
+    "redirect_url": "/power-automate/desktop-flows/images",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/errors.md",
+    "redirect_url": "/power-automate/desktop-flows/errors",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/finding-usages.md",
+    "redirect_url": "/power-automate/desktop-flows/finding-usages",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/recording-flow.md",
+    "redirect_url": "/power-automate/desktop-flows/recording-flow",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/use-loops.md",
+    "redirect_url": "/power-automate/desktop-flows/use-loops",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/use-conditionals.md",
+    "redirect_url": "/power-automate/desktop-flows/use-conditionals",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/automation-web.md",
+    "redirect_url": "/power-automate/desktop-flows/automation-web",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/using-browsers.md",
+    "redirect_url": "/power-automate/desktop-flows/using-browsers",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/desktop-automation.md",
+    "redirect_url": "/power-automate/desktop-flows/desktop-automation",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/variables.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/variables",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/conditionals.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/conditionals",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/loops.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/loops",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/wait.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/wait",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/flowcontrol.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/flowcontrol",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/system.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/system",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/file.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/file",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/folder.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/folder",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/compression.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/compression",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/uiautomation.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/uiautomation",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/web.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/web",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/webautomation.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/webautomation",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/excel.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/excel",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/database.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/database",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/email.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/email",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/exchange.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/exchange",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/outlook.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/outlook",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/display.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/display",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/mouseandkeyboard.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/mouseandkeyboard",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/clipboard.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/clipboard",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/text.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/text",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/datetime.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/datetime",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/pdf.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/pdf",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/cmd.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/cmd",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/terminalemulation.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/terminalemulation",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/ocr.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/ocr",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/cryptography.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/cryptography",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/services.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/services",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/xml.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/xml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/activedirectory.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/activedirectory",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/aws.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/aws",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/azure.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/azure",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/cognitive.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/cognitive",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/desktop/actions-reference/ftp.md",
+    "redirect_url": "/power-automate/desktop-flows/actions-reference/ftp",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/ui-flows/overview-analytics.md",
+    "redirect_url": "/power-automate/desktop-flows/overview-analytics",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/connection-cds-native.md",
+    "redirect_url": "/power-automate/dataverse/overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/desktop-flows/how-to/convert-file-base64-format.md",
+    "redirect_url": "/power-automate/desktop-flows/how-to/convert-data-powershell",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "articles/developer/index.md",
+    "redirect_url": "/power-automate/developer/dev-enterprise-intro",
+    "redirect_document_id": false
+  }
+]
 }
 
