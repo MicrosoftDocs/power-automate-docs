@@ -47,7 +47,7 @@ You must be a SharePoint site admin to perform the activities in this article.
 
 1. Select **Create flow**.
 
-1. Optionally, you might need to sign into the the services that this Power Automate template uses.
+1. Optionally, you might need to sign into the services that this Power Automate template uses.
 
 1. Select **Continue**.
 
@@ -79,7 +79,7 @@ Now that you've created a page approval flow, anyone who adds or changes a page 
     
 ## Approve a page
 
-Approvers receive an email whenever there's a page approval request. They can either approve the requests directly in the email (if their email client supports actionable messages) or open the page from the email to review, and then approve the page in SharePoint.
+Approvers receive an email whenever there's a page approval request. They can approve the requests directly in the email if their email client supports actionable messages. Alternatively, they can open the page from the email to review, and then approve the page in SharePoint.
 
 ## Customize page approval flows
 

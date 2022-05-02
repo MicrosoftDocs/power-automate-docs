@@ -37,7 +37,7 @@ Lists created with Microsoft Lists and SharePoint libraries allow you to define 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of how to select a reminder flow.](media/create-sharepoint-reminder-flows/select-reminder-flow.png "Select a reminder flow")
 
-1. Optionally, you might need to sign into the the services that this Power Automate template uses.
+1. Optionally, you might need to sign into the services that this Power Automate template uses.
      
 1. Select **Continue**.
 
