@@ -719,6 +719,8 @@
       href: ./developer/sample-work-business-process-flows.md
   - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
+  - name: Power Automate Desktop APIs
+    href: ./developer/public-power-automate-desktop-apis.md
 - name: Administration
   items:
   - name: Flows in your organization Q&A
