@@ -191,22 +191,3 @@ HTTP/1.1 403 Forbidden
 }
 
 ```
-
-
-# Cancel a Desktop Flow Run (Preview)
-Similarly to the [Trigger](#trigger-a-desktop-flow-run-(preview)) functionality, you can also cancel a queued/running Desktop Flow. For this, you need to use the 
-By leveraging Dataverse, you can add the functionaility of triggering a Desktop Flow through your application. To do this, you need to use the [CancelDesktopFlowRun action](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/canceldesktopflowrun?view=dataverse-latest)
-
-## Example
-#####Request
-```http
-Authorization: Bearer eyJ0eXAiOi...
-Accept: application/json
-
-POST https://[Organization URI]/api/data/v9.2/flowsessions(d9687093-d0c0-ec11-983e-0022480b428a)/Microsoft.Dynamics.CRM.CancelDesktopFlowRun HTTP/1.1  
-```
-#####Response
-```json
-HTTP/1.1 204 No Content
-```
-
