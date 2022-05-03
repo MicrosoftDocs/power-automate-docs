@@ -35,11 +35,15 @@ search.audienceType:
    - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022. ARM devices are not supported.
       
       - Minimum hardware
-         - Storage: 1GB
-	      - RAM: 2GB
-     - Recommended hardware
+        - CPU: 2-cores 1.00GHz or higher
+        - Storage: 1GB
+	     - RAM: 2GB
+
+      - Recommended hardware
+        - CPU: 2-cores 1.60GHz or higher 
         - Storage: 2GB
 	     - RAM: 4GB
+	     - GPU acceleration
      - .NET Framework 4.7.2 or later 
 
 > [!NOTE]
