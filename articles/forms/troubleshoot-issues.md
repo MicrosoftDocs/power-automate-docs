@@ -2,7 +2,7 @@
 title: Troubleshoot known issues with Forms in Power Automate flows | Microsoft Docs
 description: FAQs using Forms in Power Automate - Get response details, when a new response is submitted.
 services: ''
-suite: flow
+suite: i
 documentationcenter: na
 author: Dean-Haas
 manager: kvivek
@@ -35,7 +35,7 @@ Make sure that the form being referenced hasn’t been deleted or the name of th
 
 You might have reached a limit for the connector or for the product. For the Microsoft Forms connector, the limits on API calls per connection are 300 API calls per connection within 60 seconds and a frequency of one (1) trigger poll every 86,400 seconds. Also view the [response limits](https://support.microsoft.com/office/form-question-response-and-character-limits-in-microsoft-forms-ec15323d-92a4-4c33-bf88-3fdb9e5b5fea) for Microsoft Forms.
 
-### I am experiencing an invalid connection error
+### I'm experiencing an invalid connection error
 
 Check throttling limits for all connectors in your flow.
 
@@ -43,7 +43,7 @@ Disable any plug-ins, such as the Chrome plug-in Privacy Badger, as it may be bl
 
 ### When the email sends form responses, the files are corrupt
 
-Make sure you are not using a `base64()` function as this may corrupt the files.
+Make sure you aren't using a `base64()` function as it might corrupt the files.
 
 ### Flow with form only works sometimes
 
@@ -63,11 +63,10 @@ Go to your form. Copy the Form Id from the URL of the form and add it as a custo
 
 ### I don’t get an attachment for some of my approvals
 
-Approval action will attach the file in notification email until the size is 5 MB. Beyond that, approval action in Power Automate won’t be able to attach the file in notification email. It will redirect user/approver to check the attachment in Microsoft Flow portal.
+Approval action will attach the file in notification email until the size is 5 MB. Beyond this limit, approval action in Power Automate won’t be able to attach the file in notification email. It will redirect user/approver to check the attachment in Microsoft Flow portal.
 
 ### Send email action looks stuck in my flow
 
-If you're using Mail connector as part of your flow, it has a limit of 100 API calls per 24 hours. Try the Office 365 Outlook connector, which has a limit of 300 API calls per 60 seconds. If you do this, you're less likely to reach the limit.
-
+If you're using Mail connector as part of your flow, it has a limit of 100 API calls per 24 hours. Try the Office 365 Outlook connector, which has a limit of 300 API calls per 60 seconds. When you do this, you're less likely to reach the limit.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
