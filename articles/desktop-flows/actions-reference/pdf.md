@@ -72,7 +72,7 @@ Extract text from a PDF file
 |From page number|No|Numeric value||The first page number from the range of pages to extract text from|
 |To page number|No|Numeric value||The last page number from the range of pages to extract text from|
 |Password|Yes|Encrypted value||The password of the PDF file. Leave this blank if the PDF isn't password protected|
-|Optimize for structured data|N/A|Boolean value|True|Specify whether to detect formatted layout in the document and extract text accordingly|
+|Optimize for structured data|N/A|Boolean value|False|Specify whether to detect formatted layout in the document and extract text accordingly|
 
 ##### Variables Produced
 |Argument|Type|Description|
