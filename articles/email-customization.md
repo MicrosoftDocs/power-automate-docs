@@ -24,7 +24,7 @@ search.audienceType:
 
 # Customize email in flows
 
-Here are the top how-to scenarios about email in Microsoft Power Automate, with examples of how to achieve them.
+Here are the top how-to scenarios for email in Microsoft Power Automate, with examples of how to achieve them.
 
 1. Send a [beautifully formatted email](#send-a-beautifully-formatted-email).
 
@@ -51,12 +51,12 @@ You can use HTML to beautify your email. Following are two options that you can 
 
 ### Option 2: Copy HTML from an Outlook email
 
-Alternatively, if you don't know HTML or don't feel like playing with HTML, follow these steps.
+Alternatively, if you don't know—or don't feel like playing with—HTML<!--note from editor: Suggested.-->, follow these steps:
 
 1. Create an email in Outlook, styling it with colors, content placeholders, images, and tables.
 1. Send the email to yourself.
 1. Open the email you sent to yourself in Outlook. Be sure to use a new window; don't use the preview window in Outlook.
-1. Go to the **Message** tab > **More commands** (**...**) > **Actions** > **Other Actions** > **View Source**.
+1. On the **Message** tab, select **More commands** (**...**) > **Actions** > **Other Actions** > **View Source**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot that displays the steps to view the **other actions** menu in Outlook.](./media/email/other-actions.png "View other actions")
@@ -67,7 +67,7 @@ Alternatively, if you don't know HTML or don't feel like playing with HTML, foll
 1. Copy the content between **\<html\>** and **\</html\>**. 
 1. Back in [Power Automate](https://flow.microsoft.com), select the **\</\>** button in the rich text editor of the **Send an email (V2)** action, and then paste the contents that you copied from Outlook.
 1. Select **Save** at the bottom of the flow steps to save your flow.
-1. Be sure to test your flow to confirm it works as intended.
+1. Be sure to test your flow to confirm that it works as intended.
 
 ## Add an image to your email
 
@@ -75,7 +75,7 @@ Outlook takes the image you included in your email and converts it to plain text
 
 1. Upload the image to cloud-based storage, such as Google Drive or OneDrive for Business.
 1. Get the anonymous visitor URL to the image. 
-1. In the Power Automate **Send an email** action, do the following steps.
+1. In the Power Automate **Send an email** action, do the following:
     1. Go to the HTML section of the rich text editor.
     1. Look for **\<image src=** in the HTML.
     1. Change the value of the **src** property to the URL of the image from the cloud-based storage provider where you uploaded the image.
@@ -93,18 +93,18 @@ Alternatively, follow these steps if you want users to receive the email in thei
 
 1. Add the [Get group members](/connectors/azuread/#get-group-members) action from the [Azure AD](/connectors/azuread/) connector, and then select the distribution list.
 
-1. Add an **Apply to each** action under the action **Azure AD-Get group members**.
+1. Under the action **Azure AD-Get group members**, add an **Apply to each** action.
 
-1. Inside the **Apply to each**, add the **Send an email** action, and then add the group members from the **Get group members** action as dynamic content in the **To** field.
+1. Inside the **Apply to each** action, add the **Send an email** action, and then add the group members from the **Get group members** action as dynamic content in the **To** field.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of a cloud flow that gets all group members and then sends email to each member.](./media/email/group-members-flow.png "Cloud flow that gets all group members and then sends email to each member")
 
 ## Send automatic replies from a shared mailbox
 
-You can do this in the Outlook Web App.
+You can do this in the web version of Outlook.<!--note from editor: Please see Microsoft 365 Style Guide, https://styleguides.azurewebsites.net/Styleguide/Read?id=2869&topicid=47869 and verify whether this is the best alternative to "Web App."-->
 
-1.  Sign in to the Outlook Web App at [https://outlook.office365.com](https://outlook.office365.com/) with your Office 365 credentials.
+1.  Sign in to the web version of Outlook at [https://outlook.office365.com](https://outlook.office365.com/) with your Office 365 credentials.
 
 1.  Select your profile image (or placeholder image) in the upper-right corner.
 
@@ -112,19 +112,19 @@ You can do this in the Outlook Web App.
 
 1.  Enter the name or email address of the shared mailbox, and then select it.
 
-1.  Select the **settings icon** in the upper-right corner, and then select **Automatic replies**.
+1.  Select **Settings** in the upper-right corner, and then select **Automatic replies**.
 
 1.  Configure your automatic reply.
 
 ### Change the date and time format of an email 
 
-By default, the email you receive shows Coordinated Universal Time (UTC) time zone. However, your users might want to change it to their local time zone. For instructions, go to  [Converting time zone in Microsoft Power Automate](https://support.microsoft.com/help/4557244/converting-time-zone-in-microsoft-power-automate) to convert the time zone.
+By default, the email you receive shows the Coordinated Universal Time (UTC) time zone. However, your users might want to change it to their local time zone. For instructions, go to  [Converting time zone in Microsoft Power Automate](https://support.microsoft.com/help/4557244/converting-time-zone-in-microsoft-power-automate) to convert the time zone.
 
-## More information
+### See also
 
-- Overview of [email with flows](email-overview.md)
-- Create [flows to manage email](create-email-flows.md)
-- Top [email scenarios](email-top-scenarios.md)
+[Overview of using Outlook with Power Automate](email-overview.md)  
+[Create flows to manage email](create-email-flows.md)  
+[Create flows for popular email scenarios](email-top-scenarios.md)  
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

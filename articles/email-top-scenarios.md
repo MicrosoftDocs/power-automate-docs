@@ -19,7 +19,7 @@ Here are some of the top scenarios in which you can use Power Automate to manage
 
 - Send an email from your account.
 
-- Send an email from a distribution list (DL) or shared mailbox.
+- Send an email from a distribution list or shared mailbox.
 
 - Send an email with voting options.
 
@@ -53,18 +53,18 @@ The recipients receive an email similar to the following screenshot.
 > [!div class="mx-imgBorder"]
 > ![Screenshot of an email with voting buttons.](./media/email/voting-buttons.png "Email with voting buttons")
 
-In your flow, you must capture that response and save it somewhere. You might email it to yourself, save it to Excel, or post it to Teams. Don't forget to save it, otherwise you won't know how people voted.
+In your flow, you must capture that response and save it somewhere. You might email it to yourself, save it to Excel, or post it to Microsoft Teams. Don't forget to save it, otherwise you won't know how people voted.
 
 ## Send an email from a distribution list or shared mailbox
 
-Use the [Send an email from a shared mailbox (V2) ](/connectors/office365/) action and specify the shared mailbox address to send email from a shared mailbox. 
+Use the [Send an email from a shared mailbox (V2)](/connectors/office365/) action, and specify the shared mailbox address to send email from a shared mailbox. 
 
 The distribution list admin must first give you [permissions](/microsoft-365/admin/manage/send-email-as-distribution-list?view=o365-worldwide) to the shared mailbox. When you use this action, email appears in the Sent folder of your shared mailbox because you're sending it from that account directly.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows the Send an email from a shared mailbox (V2) card.](./media/email/shared-mailbox.png "Send an email from a shared mailbox (V2) card")
 
-## Build an approval process and send notifications via email 
+## Build an approval process and send notifications via email
 
 You can use Power Automate to [build an approval process that notifies users via email](https://o365hq.com/blog/build-an-approval-process-with-power-automate).
 
@@ -76,7 +76,7 @@ You can also send [reminder emails for approval requests](https://flow.microsoft
 
 Here are three ways you can send a daily digest email with a table.
 
-- Use the [Data Operation – Select ](./data-operations.md#use-the-select-action) action to create a table with the column names and data you'd like to see in the email.
+- Use the [Data Operation – Select](./data-operations.md#use-the-select-action) action to create a table with the column names and data you'd like to see in the email.
 You can further format the data by using expressions. In following example, the flow gets calendar events within a certain timeframe, converts the time zones, and then creates a table with the events.<!--note from editor: If the reader is going to learn how to do this by looking at the image, there needs to be descriptive alt text here.-->
 
     > [!div class="mx-imgBorder"]
@@ -86,10 +86,10 @@ You can further format the data by using expressions. In following example, the 
 
 - Add the [Send an email (V2)](/connectors/office365/) action, and then add the output from an HTML table into the body of the email.
 
-## More information
+### See also
 
-- [Overview of Office 365 Outlook email use with Power Automate](email-overview.md)
-- [Create flows to manage email](create-email-flows.md)
-- [Customize email in flows](email-customization.md)
+[Overview of using Outlook with Power Automate](email-overview.md)  
+[Create flows to manage email](create-email-flows.md)  
+[Customize email in flows](email-customization.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

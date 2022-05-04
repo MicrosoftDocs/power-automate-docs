@@ -1,6 +1,6 @@
 ---
 title: Trigger a cloud flow based on email properties in Power Automate | Microsoft Docs
-description: Start a cloud flow based on properties such as the subject, the sender's address, or the recipient's address of an email - When a new email arrives (V3), On new email
+description: Start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email
 services: ''
 suite: flow
 documentationcenter: na
@@ -31,9 +31,9 @@ Use the **When a new email arrives (V3)** trigger to create a cloud flow that ru
 | To |Trigger a cloud flow based on the address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox. |
 |CC|Trigger a cloud flow based on the CC address to which an email was sent. This property can be useful if you receive email that was sent to different email addresses in the same inbox.
 | From |Trigger a cloud flow based on the sender's email address. |
-| Importance |Trigger a cloud flow based on the importance with which emails were sent. Email can be sent with high, normal, or low importance. |
+| Importance |Trigger a cloud flow based on the importance with which emails were sent. Emails can be sent with high, normal, or low importance. |
 | Has Attachment |Trigger a cloud flow based on the presence of attachments in incoming emails. |
-| Subject Filter |Search for the presence of specific words in the subject of an email. Your flow then runs *actions* that are based on the results of your search. |
+| Subject Filter |Search for the presence of specific words in the subject of an email. Your flow then runs actions that are based on the results of your search. |
 
 > [!IMPORTANT]
 > Each [Power Automate plan](https://flow.microsoft.com/pricing/) includes a run quota. Always check properties in the flow's trigger when possible. Doing so avoids using your run quota unnecessarily. If you check a property in a condition, each run counts against your plan's run quota, even if the filter condition that you defined isn't met.<br><br>For example, if you check an email's From address in a condition, each run counts against your plan's run quota, even if it's not from the address that interests you.
@@ -43,18 +43,18 @@ In the following tutorials, we check all properties in the **when a new email ar
 ## Prerequisites
 
 - An account with access to [Power Automate](https://flow.microsoft.com).
-- A Microsoft 365 Outlook account.
+- An email account with Outlook for Microsoft 365 or Outlook.com<!--note from editor: Edit okay? Or does this only apply to the enterprise app?-->.
 - The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
-- Connections to Office, Outlook, and the push notification service.
+- Connections to Office, Outlook, and the push notification service.<!--note from editor: By "connections," do you mean the Office 365 Outlook and Outlook.com connectors?-->
 
 ## Trigger a cloud flow based on an email's subject
 
-In this tutorial, we create a cloud flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
+In this tutorial, we create a cloud flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as **read**.
 
 >[!NOTE]
 >Although this tutorial sends a push notification, you're free to use any other action that suits your workflow needs. For example, you might store the email contents in another repository such as Google Sheets or a Microsoft Excel workbook stored on Dropbox.
 
-Ok, let's get started.
+OK, let's get started.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
@@ -83,7 +83,7 @@ Congratulations! You now receive a push notification each time you receive an em
 
 ## Trigger a cloud flow based on an email's sender
 
-In this tutorial, we create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
+In this tutorial, we create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as Read.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
@@ -106,7 +106,7 @@ In this tutorial, we create a cloud flow that sends a push notification to your 
 4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of create flow.](./media/email-triggers/email-triggers-sender-5.png "Create flow")
+    > ![Screenshot of creating a flow.](./media/email-triggers/email-triggers-sender-5.png "Create flow")
 
 ## Trigger a cloud flow when emails arrive in a specific folder
 
@@ -122,7 +122,7 @@ Let's get started.
 5. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **when a new email arrives (V3)** card.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of select folder.](./media/email-triggers/email-triggers-2.png "Select folder")
+    > ![Screenshot of selecting a folder.](./media/email-triggers/email-triggers-2.png "Select folder")
 
 [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 

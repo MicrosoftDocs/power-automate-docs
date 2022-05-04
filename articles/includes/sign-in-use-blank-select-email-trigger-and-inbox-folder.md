@@ -1,6 +1,6 @@
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 
-1. On the navigation pane to the left, select **My flows**.
+1. On the left pane, select **My flows**.
 
 1. Select **New flow** > **Automated cloud flow**.
 
