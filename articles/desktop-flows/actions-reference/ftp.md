@@ -382,7 +382,7 @@ Synchronize the files and subdirectories of a given Folder with a given remote F
 |FTP connection|No|FTP connection||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
 |Synchronization direction|N/A|Remote -> local (Download), Local -> remote (Upload)|Remote -> local (Download)|Direction of the Synchronization method. Whether the local folder will be synchronized to the remote directory (DOWNLOAD) or the remote directory will be synchronized to the local folder (UPLOAD)|
 |Files to sync|N/A|All files, Only files matching the file filter, Only files not matching the file filter|All files|Choose whether you want to synchronize all files, or you want to use a file filter to include or exclude a specific set of files|
-|File filter|Yes|Text value|*|File-name pattern that controls which files will be included or excluded. This option allows wildcards such as "*.txt" , "document?.doc". The option also allows for multiple filters by using coma as a separator, "*.txt,*.pdf,document?"|
+|File filter|No|Text value|*|File-name pattern that controls which files will be included or excluded. This option allows wildcards such as "*.txt" , "document?.doc". The option also allows for multiple filters by using coma as a separator, "*.txt,*.pdf,document?"|
 |Local folder|No|Folder||Name of the local folder to be syncronized|
 |FTP directory|Yes|FTP directory|/|Name of the FTP directory to be synchronized|
 |Delete if source is absent|N/A|Boolean value|False|This option will delete a file or folder which exists in the target directory and not the source.|

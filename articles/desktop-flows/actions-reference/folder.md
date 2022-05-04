@@ -75,7 +75,7 @@ Retrieve the list of files in a folder
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Folder|No|Folder||Enter or choose the full path of the folder, or a variable containing the folder, to retrieve the list of files from|
-|File filter|Yes|Text value|*|Choose a filter to limit the files retrieved. This allows wild cards, for example, *.txt or document?.doc. To allow for multiple file filters, separate the choices with a semi-colon, for example, *.txt;*.exe.|
+|File filter|No|Text value|*|Choose a filter to limit the files retrieved. This allows wild cards, for example, *.txt or document?.doc. To allow for multiple file filters, separate the choices with a semi-colon, for example, *.txt;*.exe.|
 |Include subfolders|N/A|Boolean value|False|Specify whether to look into subfolders as well|
 |Fail upon denied access to any subfolder|N/A|Boolean value|True|Specify whether to throw an error when trying to get files of a folder with no access rights or ignore those folders|
 |Sort by|N/A|No sort, Full name, Root path, Directory, Name, Name without extension, Extension, Size, Creation time, Last accessed, Last modified, Is hidden, Is system, Is read-only, Is archive, Exists|No sort|Specify whether to sort the results and by which criterion|
@@ -105,7 +105,7 @@ Retrieve the list of subfolders in a folder
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Folder|No|Folder||Enter or choose the full path of the folder, or a variable containing the folder, to retrieve the list of subfolders from|
-|Folder filter|Yes|Text value|*|Choose a filter to limit the subfolders retrieved. This allows wild cards, for example, Doc* or Document?. To allow for multiple folder filters, separate the choices with a semi-colon, for example, Doc*;*.|
+|Folder filter|No|Text value|*|Choose a filter to limit the subfolders retrieved. This allows wild cards, for example, Doc* or Document?. To allow for multiple folder filters, separate the choices with a semi-colon, for example, Doc*;*.|
 |Include subfolders|N/A|Boolean value|False|Specify whether to look into the subfolders and retrieve their subfolders (and so on) as well|
 |Fail upon denied access to any subfolder|N/A|Boolean value|True|Specify whether to throw an error when trying to get subfolders of a folder with no access rights or ignore those folders|
 |Sort by|N/A|No sort, Full name, Root path, Directory, Name, Name without extension, Extension, Size, Creation time, Last accessed, Last modified, Is hidden, Is system, Is read-only, Is archive, Exists|No sort|Specify whether to sort the results and by which criterion|
