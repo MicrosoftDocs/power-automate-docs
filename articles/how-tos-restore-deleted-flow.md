@@ -25,7 +25,7 @@ search.audienceType:
 
 # Restore deleted flows with PowerShell
 
-If you or someoneelse accidentally deletes a non-solution aware flow, you can use PowerShell to restore it.
+If you or someone else accidentally deletes a non-solution aware flow, you can use PowerShell to restore it.
 
 >[!NOTE]
 >The steps that this article outlines apply only to non-solution flows. If you deleted a flow which was part of a solution, you need to file a support ticket with Microsoft for assistance.
