@@ -39,12 +39,9 @@ If you or someoneelse accidentally deletes a non-solution aware flow, you can us
 
 1. Open PowerShell with elevated priviliges to begin.
 
-   ![A screenshot that shows PowerShell being launched from Windows](./media/restore-deleted-flow/open-powershell.png)
+   ![A screenshot that shows PowerShell being launched from Windows](./media/restore-deleted-flow/open-powershell-script.png)
 
 1. Install the [PowerShell cmdlets for PowerApps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
-1. Open PowerShell.
-
-   ![A screenshot that shows PowerShell being launched from Windows](./media/restore-deleted-flow/open-powershell.png)
 
 1. Sign into your Power Apps environment.
 
@@ -58,7 +55,7 @@ If you or someoneelse accidentally deletes a non-solution aware flow, you can us
 
    ```Get-AdminFlow -EnvironmentName 41a90621-d489-4c6f-9172-81183bd7db6c IncludeDeleted $true```
 
-   ![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow.png)
+   ![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png)
 
 1. Make a note of the flowID of the flow you want to restore.
 
