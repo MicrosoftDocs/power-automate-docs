@@ -37,7 +37,7 @@ Here are the top how-to topics about forms in Power Automate with examples of ho
 By default, the form submission time will show the UTC time zone but users might want to change it to their local time zone. 
 
 - For information about how to convert the time zone, go to [Converting time zone in Microsoft Power Automate](https://support.microsoft.com/help/4557244/converting-time-zone-in-microsoft-power-automate).
-- For information about how to customize date formats in the flow, go to [How to customize/format Date and Time values in a flow](https://support.microsoft.com/help/4534778/how-to-customize-format-date-and-time-values-in-a-flow).
+- For information about how to customize date formats in a flow, go to [How to customize/format Date and Time values in a flow](https://support.microsoft.com/help/4534778/how-to-customize-format-date-and-time-values-in-a-flow).
 
 
 ## Configure a flow with a group form
