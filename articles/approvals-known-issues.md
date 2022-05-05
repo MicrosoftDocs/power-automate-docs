@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 2/12/2021
+ms.date: 05/05/2022
 ms.author: tatn
 search.app: 
   - Flow
@@ -51,4 +51,4 @@ Data templating isn't fully supported for adaptive cards in Power Automate. As a
 
 **Approvals with Custom responses set to Everyone must Approve**
 
-Approvals that rely on custom responses can fail if sent to many users with the type set to "Everyone must approve", due to data size limitations of the results field.
+Approvals that rely on custom responses can fail if they're sent to many users with the type set to "Everyone must approve". This failure is due to data size limitations of the results field.
