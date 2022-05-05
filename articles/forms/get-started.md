@@ -30,7 +30,7 @@ A good way to get started is to use a template that is suited to your business s
  > [!div class="mx-imgBorder"]
  > ![Templates screen.](..\media\forms\templates-screen.png "Search for a template")
 
-Perhaps you found a template that is similar to what you are looking for, but isn't quite right for your scenario. No problem - just create your own flow from that template and tweak the it to your liking. You can extend a flow created from template by adding, editing, removing trigger and actions. You can [copy paste actions](https://flow.microsoft.com/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) in the same flow or across flows to speed up the process.
+Perhaps you found a template that is similar to what you are looking for, but isn't quite right for your scenario. No problem - just create your own flow from that template and tweak the it to your liking. You can extend a flow created from template by adding, editing, removing trigger and actions. You can [copy paste actions](/power-automate/multi-step-logic-flow#copy-and-paste-actions) in the same flow or across flows to speed up the process.
 
 Did you not find a template you like? You can create a flow from scratch and connect the services you want to use. More information: [How to create a flow from scratch](/power-automate/get-started-logic-flow).  
 
