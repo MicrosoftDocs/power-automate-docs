@@ -134,7 +134,7 @@ Get the value of an element's attribute on a web page
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|WebControl||Select the UI element on web page to get details from|
-|Attribute name|Yes|Text value|Own Text|Enter or select the attribute whose value to retrieve|
+|Attribute name|No|Text value|Own Text|Enter or select the attribute whose value to retrieve|
 
 
 ##### Variables Produced

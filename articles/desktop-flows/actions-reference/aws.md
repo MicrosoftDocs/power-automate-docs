@@ -422,7 +422,7 @@ Create an EC2 client to automate EC2 web services
 |Access key ID|No|Text value||The AWS access key ID|
 |Secret|No|Encrypted value||The AWS secret access key|
 |Region endpoint|No|Text value||The region constant to use that determines the endpoint to use|
-|Profile name|Yes|Text value|default|The name of the profile to use |
+|Profile name|No|Text value|default|The name of the profile to use |
 |Profile location|Yes|Text value||The location of the credentials file that contains the profile to use|
 
 
