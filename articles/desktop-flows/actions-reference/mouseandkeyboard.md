@@ -138,8 +138,8 @@ Moves the mouse over an image found on screen or on the foreground window
 |Seconds before click|Yes|Numeric value|0|The number of seconds to wait before sending the click|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 |Mouse position relative to image|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|The section of the image the mouse will be moved to|
-|Offset X|Yes|Text value|0|The pixels to offset the mouse from the position to the right|
-|Offset Y|Yes|Text value|0|The pixels to offset the mouse from the position down|
+|Offset X|No|Text value|0|The pixels to offset the mouse from the position to the right|
+|Offset Y|No|Text value|0|The pixels to offset the mouse from the position down|
 |Tolerance|Yes|Numeric value|10|Specify how much the specified image can differ from the originally chosen image|
 |Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Specify whether to search for the specified Image in the foremost window only, or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
 |Search mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Specify whether to scan the entire screen (or window) to find the supplied image or only a subregion of it|
@@ -201,8 +201,8 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click type to send to the text|
 |Wait before clicking for|Yes|Numeric value|1|The number of seconds to wait before clicking|
 |Mouse position relative to text|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the text the mouse will be moved to|
-|Offset X|Yes|Text value|0|Offset the mouse from the position by this many pixels to the right|
-|Offset Y|Yes|Text value|0|Offset the mouse from the position by this many pixels down|
+|Offset X|No|Text value|0|Offset the mouse from the position by this many pixels to the right|
+|Offset Y|No|Text value|0|Offset the mouse from the position by this many pixels down|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: Trigger a flow when a new email arrives | Microsoft Docs
+title: Trigger a cloud flow based on email properties in Power Automate | Microsoft Docs
 description: Start a cloud flow based on properties such as the subject, the sender's address, or the recipient's address of an email - When a new email arrives (V3), On new email
 services: ''
 suite: flow
@@ -8,7 +8,6 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -24,7 +23,7 @@ search.audienceType:
 ---
 # Trigger a cloud flow based on email properties
 
-Use the **When a new email arrives (V3)** trigger to create a cloud flow that runs when one or more of the following email properties match criteria that you provide:
+Use the **When a new email arrives (V3)** trigger to create a cloud flow that runs when one or more of the following email properties match criteria that you provide.
 
 | Property | When to use |
 | --- | --- |
@@ -39,67 +38,75 @@ Use the **When a new email arrives (V3)** trigger to create a cloud flow that ru
 > [!IMPORTANT]
 > Each [Power Automate plan](https://flow.microsoft.com/pricing/) includes a run quota. Always check properties in the flow's trigger when possible. Doing so avoids using your run quota unnecessarily. If you check a property in a condition, each run counts against your plan's run quota, even if the filter condition that you defined isn't met.<br><br>For example, if you check an email's From address in a condition, each run counts against your plan's run quota, even if it's not from the address that interests you.
 
-In the following walkthroughs, we check all properties in the **when a new email arrives (V3)** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
+In the following tutorials, we check all properties in the **when a new email arrives (V3)** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
 
 ## Prerequisites
 
-* An account with access to [Power Automate](https://flow.microsoft.com)
-* A Microsoft 365 Outlook account<!--note from editor: Not Office 365 Outlook? I can't say which is correct, I'm sorry, but I imagine it ought to match the name in email-overview.md? Unless it doesn't have to.-->
-* The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows)
-* Connections to Office, Outlook, and the push notification service
+- An account with access to [Power Automate](https://flow.microsoft.com).
+- A Microsoft 365 Outlook account.
+- The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+- Connections to Office, Outlook, and the push notification service.
 
 ## Trigger a cloud flow based on an email's subject
-In this walkthrough, we create a cloud flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
+
+In this tutorial, we create a cloud flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as *read*.
 
 >[!NOTE]
->Although this walkthrough sends a push notification, you're free to use any other action that suits your workflow needs. For example, you might store the email contents in another repository such as Google Sheets or a Microsoft Excel workbook stored on Dropbox.
+>Although this tutorial sends a push notification, you're free to use any other action that suits your workflow needs. For example, you might store the email contents in another repository such as Google Sheets or a Microsoft Excel workbook stored on Dropbox.
 
 Ok, let's get started.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-1. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
-   
+9. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
+
      In this example, we're interested in any email that has the word "lottery" in the subject.
-   
-    ![Advanced options.](./media/email-triggers/email-triggers-subject-text.png)
 
-    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of advanced options.](./media/email-triggers/email-triggers-subject-text.png "Advanced options")
 
-1. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
-   
-    ![A screenshot that displays the details of a notification.](./media/email-triggers/email-triggers-4.png)
+[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+3. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
 
-1. Select **Save** at the top of the page.
-   
-    ![A screenshot that displays the save flow option.](./media/email-triggers/email-triggers-subject-notification.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot that displays the details of a notification.](./media/email-triggers/email-triggers-4.png "Details of a notification")
+
+[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+
+4. Select **Save** at the top of the page.
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot that displays the save flow option.](./media/email-triggers/email-triggers-subject-notification.png "Save flow option")
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
 ## Trigger a cloud flow based on an email's sender
-In this walkthrough, we create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
+
+In this tutorial, we create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as *read*.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-1. In the **From** box, enter the email address of the sender. 
-   
+9. In the **From** box, enter the email address of the sender. 
+
      Your flow takes action on any emails that are sent from this address.
-   
-    ![Email property.](./media/email-triggers/email-triggers-from.png)
 
-    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of email property.](./media/email-triggers/email-triggers-from.png "Email property")
 
-1. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address that you entered earlier.
-   
-    ![Mobile notification details.](./media/email-triggers/email-triggers-sender-notification.png)
+[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+3. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address that you entered earlier.
 
-1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
-   
-    ![Create flow.](./media/email-triggers/email-triggers-sender-5.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of mobile notification details.](./media/email-triggers/email-triggers-sender-notification.png "Mobile notification details")
+
+[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+
+4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of create flow.](./media/email-triggers/email-triggers-sender-5.png "Create flow")
 
 ## Trigger a cloud flow when emails arrive in a specific folder
 
@@ -110,26 +117,27 @@ Let's get started.
 > [!NOTE]
 > If you don't already have a rule that routes email to a folder other than your inbox, create such a rule and confirm it works by sending a test email.
 
-
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
-1. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **when a new email arrives (V3)** card.
+5. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **when a new email arrives (V3)** card.
 
-    ![Select folder.](./media/email-triggers/email-triggers-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of select folder.](./media/email-triggers/email-triggers-2.png "Select folder")
 
-    [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
+[!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-1. Enter the details for the mobile notification you'd like to receive when an email arrives in the folder you selected earlier. If you haven't already, enter the credentials for the notifications service.
+3. Enter the details for the mobile notification you'd like to receive when an email arrives in the folder you selected earlier. If you haven't already, enter the credentials for the notifications service.
 
-    ![Notification details.](./media/email-triggers/email-triggers-folder-notification.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of notification details.](./media/email-triggers/email-triggers-folder-notification.png "Notification details")
 
-    [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
+[!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-1. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
-   
-    ![A screenshot showing the option to save the cloud flow.](./media/email-triggers/email-triggers-7.png)
+4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
-Test the flow by sending an email that gets routed to the folder you selected earlier in this walkthrough.
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot showing the option to save the cloud flow.](./media/email-triggers/email-triggers-7.png "Save the cloud flow")
 
+Test the flow by sending an email that gets routed to the folder you selected earlier in this tutorial.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
