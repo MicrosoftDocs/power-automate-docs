@@ -23,7 +23,7 @@ search.audienceType:
 
 # How-to
 
-Here are the top how-to topics about forms in Power Automate with examples of how you can achieve them:
+Here are the top how-to topics about forms in Power Automate with examples of how you can achieve them.
 
 - Change the date and time format of the forms response.
 - Configure a flow with a group form. 
