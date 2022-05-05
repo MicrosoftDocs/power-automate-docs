@@ -21,6 +21,8 @@ ms.author: hamenon
 # Install the Power Automate app in Microsoft Teams
 
 The Power Automate app lets you automate your Microsoft Teams activities or and connect Microsoft Teams to other apps and services. 
+>[!NOTE]
+>The Power Automate app is not yet available in Microsoft 365 Government tenants.
 
 1. Sign into [Microsoft Teams](https://teams.microsoft.com).
 
