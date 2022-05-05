@@ -78,8 +78,6 @@
       href: how-tos-use-sensitive-input.md
     - name: Cancel or resubmit flow runs in bulk
       href: how-tos-bulk-resubmit.md
-    - name: Restore deleted flows with PowerShell
-      href: how-tos-restore-deleted-flows.md
     - name: Use Visio to model flows
       href: visio-flows.md
     - name: "Reference: Use functions in expressions"
