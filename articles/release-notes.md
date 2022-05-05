@@ -19,7 +19,7 @@ ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 
-  - flowmaker
+  - flowmaker 
   - enduser
 ---
 # Release notes
@@ -159,7 +159,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 ### Release 2018-03-13
 
 - **Approval history** - See all the approval requests you've sent out, including the responses, the comments that were sent, and the exact time they happened.
-- **Four new connectors** - Added Excel Online (Business), Excel Online (OneDrive), Azure SQL Data Warehouse, and Pitney Bowes Tax Calculator.
+- **Four new connectors** - Added Excel Online (Business), Excel Online (OneDrive), Azure Synapse Analytics, and Pitney Bowes Tax Calculator.
 - **Dynamic content tooltips** - Hover over dynamic content to see where it came from inside of actions, and preview expressions without opening the full expression editor.
 - **Concurrency control** - Enable concurrency control to have a given flow have only one run at a time.
 - **Exponential retry** - A new type of retry policy that spaces out retries exponentially over time.
