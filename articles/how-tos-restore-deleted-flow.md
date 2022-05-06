@@ -34,7 +34,7 @@ If you or someone else accidentally deletes a non-solution aware flow, you can u
 
 - You must install the [PowerShell cmdlets for PowerApps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
 - You must be an environment admin.
-- There must be an [execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.2) set on your device to run PowerShell scripts.
+- There must be an [execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) set on your device to run PowerShell scripts.
 
 ## Restore deleted flow
 
