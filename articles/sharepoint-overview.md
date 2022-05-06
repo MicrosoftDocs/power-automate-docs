@@ -1,6 +1,6 @@
 ---
-title: Use SharePoint and Power Automate to build workflows(contains video) | Microsoft Docs
-description: Provides an overview of the many ways you can use flows with SharePoint lists and files.
+title: Use SharePoint and Power Automate to build workflows (contains video) | Microsoft Docs
+description: Provides an overview of the many ways you can use flows with lists created with Microsoft Lists and files.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,13 +8,12 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/08/2021
+ms.date: 05/02/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -35,9 +34,9 @@ Learn more about how to use Power Automate with SharePoint in the following vide
 
 Here are some of the top scenarios in which you can use Power Automate with SharePoint:
 
-- Manage approval flows
-- Work with files and lists
-- Migrate from workflows to Power Automate
+- Manage approval flows.
+- Work with files and lists created with Microsoft Lists.
+- Migrate from workflows to Power Automate.
 
 ### Manage approval flows
 
@@ -61,13 +60,15 @@ Here are some of the top scenarios in which you can use Power Automate with Shar
 
 ## SharePoint triggers and actions
 
-You can use SharePoint triggers to start flows that monitor changes made to a SharePoint list or library. For a full list, go to [SharePoint triggers](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-triggers).
+You can use SharePoint triggers to start flows that monitor changes made to a list or library. For a full list, go to [SharePoint triggers](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-triggers).
 
-![A screenshot that shows some SharePoint triggers such as "When an item is created."](./media/overview-sharepoint/sharepoint-triggers.png)
+> [!div class="mx-imgBorder"]
+> ![A screenshot that shows some SharePoint triggers such as "When an item is created."](./media/overview-sharepoint/sharepoint-triggers.png)
 
-As soon as your flow starts, you can use any of the more than [40 *actions*](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-actions) to manipulate your SharePoint lists.
+As soon as your flow starts, you can use any of the more than [40 *actions*](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-actions) to manipulate your lists.
 
-![A screenshot that shows some SharePoint actions such as "Add attachment" and "Check in file."](./media/overview-sharepoint/sharepoint-actions.png)
+> [!div class="mx-imgBorder"]
+> ![A screenshot that shows some SharePoint actions such as "Add attachment" and "Check in file."](./media/overview-sharepoint/sharepoint-actions.png)
 
 ## Migrate from workflows to Power Automate
 
@@ -78,6 +79,5 @@ As soon as your flow starts, you can use any of the more than [40 *actions*](/sh
 - Get started with [Power Automate and SharePoint](/sharepoint/dev/business-apps/power-automate/get-started/create-your-first-flow). 
 - Get started with [approvals](./get-started-approvals.md).
 - Create modern [approval flows](use-expressions-in-conditions.md) in conditions in advanced mode.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
