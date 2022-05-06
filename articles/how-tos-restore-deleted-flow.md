@@ -34,6 +34,7 @@ If you or someone else accidentally deletes a non-solution aware flow, you can u
 
 - You must install the [PowerShell cmdlets for PowerApps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
 - You must be an environment admin.
+- There must be an [execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) set on your device to run PowerShell scripts.
 
 ## Restore deleted flow
 
@@ -45,7 +46,7 @@ If you or someone else accidentally deletes a non-solution aware flow, you can u
 
 1. Sign into your Power Apps environment.
 
-   Use this command to authenticate to an environment. This opens a separate window that prompts for your AAD authentication details.
+   Use this command to authenticate to an environment. This command opens a separate window that prompts for your Azure Active Directory (AAD) authentication details.
 
    ```Add-PowerAppsAccount```
 
@@ -57,10 +58,13 @@ If you or someone else accidentally deletes a non-solution aware flow, you can u
 
    ![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png)
 
+1. Optionally, you can filter the list of flows that were soft-deleted if you know part of the name of the deleted flow whose flowID you want to find. To do this, use a script similar to this one that finds all flows in environment 3c2f7648-ad60-4871-91cb-b77d7ef3c239 that contain the string "Foobar" in their display name.
+   ```Get-AdminFlow Foobar -EnvironmentName 3c2f7648-ad60-4871-91cb-b77d7ef3c239```
+
 1. Make a note of the flowID of the flow you want to restore.
 
    >[!TIP]
-   >Navigate to the URL of any of the flows in your environment to get your environment ID. Do not omit the prefixed words in the URL for example, Default-8ae09283902-….
+   >Navigate to the URL of any of the flows in your environment to get your environment ID. Do not omit the prefixed words in the URL for example, Default-8ae09283902-....
 
 1. Run the following script to restore the soft-deleted flow with flowID 4d1f7648-ad60-4871-91cb-b77d7ef3c239 in an environment named Default-55abc7e5-2812-4d73-9d2f-8d9017f8c877.
 
