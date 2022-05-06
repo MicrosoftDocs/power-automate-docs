@@ -172,30 +172,29 @@ When your tenant is opted into the user experience in the Power Platform, your a
 > [!NOTE]
 >  If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
  
-### Background jobs
-- Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, and then suspends the flows that violate the updated policy.
-- After a data loss prevention policy changes, the background job automatically turns on all the desktop flows that no longer violate any policies. However, the background job will not automatically turn on cloud flows. Makers have to turn them on manually.
+## DLP enforcement background jobs
+- **Enforcement and suspension** - Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, evaluates flows, and then suspends the flows that violate the updated policy.
+- **Reactivation** - If the DLP enforcement background job finds a flow that no longer violates any DLP data policies, such as when a data loss prevention policy changes, then the background job will automatically turn on a desktop flow, but it will not automatically turn on a cloud flow since makers have to turn them on manually.
 
-### Known limitations
-1. There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. That function is planned to be available during the first quarter of 2022.
-1. There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This feature is planned for general availability.
-1. There's no support for "Set default group" from admin center for future added new destkop flow modules that allows admin to specify a different default group for any future added new connectors. This support is planned for general availability.  
+## DLP enforcement change process
+From time to time, DLP enforcement changes are needed. These changes can be a result of adding a new DLP capability, an enforcement gap being filled, or a bug fix.
+When changes can impact existing flows, a staged DLP enforcement change management process will be followed:
+1. **Investigating** - The need for a DLP enforcement change has been identified and the product team is investigating the specifics of the change.
+2. **Learning** - The product team will implement the change and gather data about the breadth of effects of the change. DLP enforcement changes will be documented here to explain the scope of the change. If the data suggests that some customers will be greatly affected, then a communication will be sent to those customers to let them know that a  change is coming.
+5. **Soft enforcement** - Turn on soft enforcement of DLP violations so owners of existing flows have some notice about the change.
+    1. When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed.
+    2. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended in the future.
+6. **Hard enforcement** - Turn on hard enforcement of DLP violations, so DLP policies are fully enforced. The DLP policies will be fully enforced during flow save and during DLP enforcement background job evaluation.
 
-### Original release schedule
+## DLP enforcement change list
+A list of DLP enforcement changes made and the date the change was made. 
 
-> [!NOTE]
-> Below is the original release schedule that was first published on November 2nd, 2022. It is no longer applicable.
+| Date | Description | Reason for change | Stage |
+|-|-|-|-|
+|May 2022 | Delegated authorization background job enforcement | Flows that use delegated authorization have DLP policies enforced during flow save, but not during  background job evaluation | Learning |
 
-|Region|Date Available|
-|---|---|
-|Canada|2021/11/1|
-|Switzerland, Brazil|2021/11/30|
-|Asia, UK, Australia, Japan|2021/12/6|
-|Europe|2022/02/17|
-|US(NAM)|2022/02/17| 
-|Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions|2022/2/17| 
-
-
+## Known limitations
+[Learn about DLP known issues](/power-platform/admin/dlp-known-issues)
 
 ## Next steps
 
