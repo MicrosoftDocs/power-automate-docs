@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/22/2021
+ms.date: 04/27/2021
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -28,17 +28,16 @@ search.audienceType:
 
 Real-time, in-product help is available from the [documentation](./index.yml) and the Power Virtual Agent bot to solve the most common workflow scenarios. While building your flows, you can access content from the documentation, community, blogs, and templates.
 
-
 ## Use in-product help
 
 >[!NOTE]
->In-product help is available while you create or edit cloud and desktop flows. 
+>In-product help is available while you create or edit cloud and desktop flows.
 
-Select the **?** on a connector, action, or trigger to see the in-product help experience.
+1. Select the **?** on a connector, action, or trigger to start the in-product help experience.
 
    ![Help icon.](./media/contextual-help-bot/help-icon.png)
 
-   The right pane opens with details about the action and provides documentation links for that action. 
+1. The right pane opens with details about the action and provides documentation links for that action.
 
    In the following example, the **Send an email (V2)** action is selected, showing help topics regarding the top email scenarios, an overview of the action, and more.
 
@@ -47,7 +46,7 @@ Select the **?** on a connector, action, or trigger to see the in-product help e
    >[!TIP]
    >In product help is contextual, always displaying content that's relevant to the currently selected action, trigger, or connector.
 
-   ![Contextual help.](./media/contextual-help-bot/contextual-help.png)
+   ![A screenshot that displays contextual help.](./media/contextual-help-bot/contextual-help.png)
 
 Now that you've displayed the in-product help, follow these steps to use the various topics.
 
