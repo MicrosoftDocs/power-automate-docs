@@ -1,19 +1,10 @@
 ---
 title: Restore deleted flows with PowerShell in Power Automate | Microsoft Docs
 description: Learn how to restore deleted flows with PowerShell in Power Automate.
-services: ''
-suite: flow
-documentationcenter: na
 author: msftman
 manager: kVivek
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 05/04/2022
 ms.author: deonhe
 search.app: 
@@ -25,10 +16,10 @@ search.audienceType:
 
 # Restore deleted flows with PowerShell
 
-If you or someone else accidentally deletes a non-solution aware flow, you can use PowerShell to restore it.
+If you or someone else accidentally deletes a flow that is not part of a solution, you can use PowerShell to restore it.
 
 >[!NOTE]
->The steps that this article outlines apply only to non-solution flows. If you deleted a flow which was part of a solution, you need to file a support ticket with Microsoft for assistance.
+>The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to file a support ticket with Microsoft for assistance.
 
 ## Prerequisites
 
