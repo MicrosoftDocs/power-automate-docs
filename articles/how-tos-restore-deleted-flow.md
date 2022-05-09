@@ -48,7 +48,7 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 1. Run the following script to get a list of flows that were soft-deleted within the past 28 days.
 
    ``` PowerShell
-   Get-AdminFlow -EnvironmentName 41a90621-d489-4c6f-9172-81183bd7db6c IncludeDeleted $true
+   Get-AdminFlow -EnvironmentName 41a90621-d489-4c6f-9172-81183bd7db6c -IncludeDeleted $true
    ```
 
    ![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png)
@@ -73,5 +73,5 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 1. Optionally, you can run the ```Restore-AdminFlow``` script with the following arguments to restore multiple deleted flows.
 
    ``` PowerShell
-   foreach ($id in @( "4d1f7648-ad60-4871-91cb-b77d7ef3c239", "eb2266a8-67b6-4919-8afd-f59c3c0e4131" )) { Restore-AdminFlow -EnvironmentName Default-55abc7e5-2812-4d73-9d2f-8d9017f8c877 -FlowName $id Start-Sleep -Seconds 1 }
+   foreach ($id in @( "4d1f7648-ad60-4871-91cb-b77d7ef3c239", "eb2266a8-67b6-4919-8afd-f59c3c0e4131" )) { Restore-AdminFlow -EnvironmentName Default-55abc7e5-2812-4d73-9d2f-8d9017f8c877 -FlowName $id; Start-Sleep -Seconds 1 }
    ```
