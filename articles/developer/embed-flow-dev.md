@@ -14,7 +14,7 @@ ms.subservice: Developer
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/29/2020
+ms.date: 05/09/2022
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -494,5 +494,6 @@ If the initialized locale isn't listed, Flow will default to the closest support
 | uk-ua      | Ukrainian (Ukraine)        | 
 | vi-vn      | Vietnamese (Viet Nam)      |
 
+Use of the Power Automate Embed SDK is covered under [the Microsoft Software License Terms](https://dynamics.microsoft.com/legaldocs/slt-dynamics365-sdk/).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
