@@ -122,7 +122,7 @@ By default, the email you receive shows the Coordinated Universal Time (UTC) tim
 
 ### More information
 
-[Overview of Microsoft 365 Outlook email use with Power Automate](email-overview.md)  
+[Overview of using email with flows](email-overview.md)  
 [Create flows to manage email](create-email-flows.md)  
 [Create flows for popular email scenarios](email-top-scenarios.md)  
 
