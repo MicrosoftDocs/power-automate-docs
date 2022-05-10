@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/16/2020
+ms.date: 05/10/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -43,9 +43,9 @@ In the following tutorials, we check all properties in the **when a new email ar
 ## Prerequisites
 
 - An account with access to [Power Automate](https://flow.microsoft.com).
-- An email account with Outlook for Microsoft 365 or Outlook.com<!--note from editor: Edit okay? Or does this only apply to the enterprise app?-->.
+- An email account with Outlook for Microsoft 365 or Outlook.com.
 - The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
-- Connections to Office, Outlook, and the push notification service.<!--note from editor: By "connections," do you mean the Office 365 Outlook and Outlook.com connectors?-->
+- Connections to Office, Outlook, and the push notification service.
 
 ## Trigger a cloud flow based on an email's subject
 
