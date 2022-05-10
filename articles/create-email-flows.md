@@ -41,7 +41,7 @@ Here are some of the most frequently used ways to create flows to manage your em
 
 ### More information
 
-[Overview of Outlook with Power Automate](email-overview.md)  
+[Overview of using Outlook with Power Automate](email-overview.md)  
 [Customize email in flows](email-customization.md)  
 [Create flows for popular email scenarios](email-top-scenarios.md)  
 
