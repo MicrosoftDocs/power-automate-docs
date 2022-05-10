@@ -21,12 +21,12 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Overview of using Outlook with Power Automate
-<!--note from editor: "Microsoft 365 Outlook" isn't listed anywhere in branding guidelines. Please see https://styleguides.azurewebsites.net/Styleguide/Read?id=2869&topicid=47869.-->
-Connectors represent the service to which you want to connect. For example, you can use the OneDrive, SharePoint, or Twitter connectors to use those services. Two of the most popular connectors used in flows to send or receive email are the [Outlook.com](/connectors/outlook/) connector and the [Office 365 Outlook](/connectors/office365/#connector-in-depth) connector. Both connectors offer similar operations that you can use to manage your mail, calendars, and contacts. You can perform actions such as send mail, schedule meetings, add contacts, and more with either<!--note from editor: Suggested.--> of these connectors.
+# Overview of using Outlook for Microsoft 365 and Power Automate
+
+Connectors represent the service to which you want to connect. For example, you can use the OneDrive, SharePoint, or Twitter connectors to use those services. Two of the most popular connectors used in flows to send or receive email are the [Outlook.com](/connectors/outlook/) connector and the [Office 365 Outlook](/connectors/office365/#connector-in-depth) connector. Both connectors offer similar operations that you can use to manage your mail, calendars, and contacts. You can perform actions such as send mail, schedule meetings, add contacts, and more with either of these connectors.
 
 ## Outlook.com or Office 365 Outlook: Which connector should I use?
-<!--note from editor: Via Writing Style Guide: "If a title or heading includes a colon, capitalize the first word after it."-->
+
 If you're using a work or school email account, use the Office 365 Outlook connector. If you're using a personal account (Microsoft account), use the Outlook.com connector. In this article, we refer only to the Office 365 Outlook [triggers](/connectors/office365/#triggers) and [actions](/connectors/office365/#actions). You can also use the same techniques for the Outlook.com connector.
 
 ## Triggers
