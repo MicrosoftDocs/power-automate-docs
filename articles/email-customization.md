@@ -102,7 +102,7 @@ Alternatively, follow these steps if you want users to receive the email in thei
 
 ## Send automatic replies from a shared mailbox
 
-You can do this in the web version of Outlook.<!--note from editor: Please see Microsoft 365 Style Guide, https://styleguides.azurewebsites.net/Styleguide/Read?id=2869&topicid=47869 and verify whether this is the best alternative to "Web App."-->
+You can do this in the web version of Outlook.
 
 1.  Sign in to the web version of Outlook at [https://outlook.office365.com](https://outlook.office365.com/) with your Office 365 credentials.
 
@@ -120,9 +120,9 @@ You can do this in the web version of Outlook.<!--note from editor: Please see M
 
 By default, the email you receive shows the Coordinated Universal Time (UTC) time zone. However, your users might want to change it to their local time zone. For instructions, go to  [Converting time zone in Microsoft Power Automate](https://support.microsoft.com/help/4557244/converting-time-zone-in-microsoft-power-automate) to convert the time zone.
 
-### See also
+### More information
 
-[Overview of using Outlook with Power Automate](email-overview.md)  
+[Overview of Microsoft 365 Outlook email use with Power Automate](email-overview.md)  
 [Create flows to manage email](create-email-flows.md)  
 [Create flows for popular email scenarios](email-top-scenarios.md)  
 
