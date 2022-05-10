@@ -50,11 +50,9 @@ Power Automate provides the ability to create and enforce DLP policies that clas
 
 Data loss prevention (DLP) for desktop flows is now available to all customers in Public Preview at no cost. Administrators can configure their DLP policies and enforce them on desktop flows with PowerShell. 
 
-
-
 >[!WARNING]
 >- Your administrators can also classify the new desktop flow modules in their DLP policies directly in the Power Platform admin center, but they must opt-in by creating a support ticket. 
->- Your tenant might already have access to the new desktop flow modules in the Power Platform’s DLP experience. This is the case for all customers who were already given access to the feature per the [original release schedule](#original-release-schedule) and who have created or updated a DLP policy with desktop flow modules since. 
+>- Your tenant might already have access to the new desktop flow modules in the Power Platform’s DLP experience. 
 
 ### PowerShell support 
 
