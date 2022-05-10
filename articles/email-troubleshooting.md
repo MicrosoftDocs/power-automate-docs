@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/04/2021
+ms.date: 05/10/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -78,14 +78,12 @@ To resolve the issue, go to ["REST API is not yet supported for this mailbox" er
 
 Use expressions to encode the attachment with base64. The attachment will be recognized after you're done.
 
-### See also
+### More information
 
 [Overview of using Outlook with Power Automate](email-overview.md)  
 [Create flows to manage email](create-email-flows.md)  
 [Customize email in flows](email-customization.md)  
 [Create flows for popular email scenarios](email-top-scenarios.md)  
-
-
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
