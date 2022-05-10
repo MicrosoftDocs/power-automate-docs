@@ -39,7 +39,7 @@ Here are some of the most frequently used ways to create flows to manage your em
 
 1. **Create a cloud flow from a connector:** In Power Automate, select **Connectors** from the left side of the screen, search for the connector you want, and then select it to create your flow. For example, search for **outlook** to find connectors for Outlook for Microsoft 365.
 
-## More information
+### More information
 
 [Overview of Outlook with Power Automate](email-overview.md)  
 [Customize email in flows](email-customization.md)  
