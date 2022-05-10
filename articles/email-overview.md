@@ -1,5 +1,5 @@
 ---
-title: Overview of Outlook for Microsoft 365 and Power Automate | Microsoft Docs
+title: Overview of using Outlook for Microsoft 365 and Power Automate | Microsoft Docs
 description: Overview of using Power Automate with Outlook for Microsoft 365 and Power Automate.
 services: ''
 suite: flow
