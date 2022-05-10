@@ -1,6 +1,6 @@
 ---
-title: Overview of using Outlook for Microsoft 365 and Power Automate | Microsoft Docs
-description: Overview of using Power Automate with Outlook for Microsoft 365 and Power Automate.
+title: Overview of using Outlook and Power Automate | Microsoft Docs
+description: Overview of using Outlook and Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/05/2022
+ms.date: 05/10/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Overview of using Outlook for Microsoft 365 and Power Automate
+# Overview of using Outlook and Power Automate
 
 Connectors represent the service to which you want to connect. For example, you can use the OneDrive, SharePoint, or Twitter connectors to use those services. Two of the most popular connectors used in flows to send or receive email are the [Outlook.com](/connectors/outlook/) connector and the [Office 365 Outlook](/connectors/office365/#connector-in-depth) connector. Both connectors offer similar operations that you can use to manage your mail, calendars, and contacts. You can perform actions such as send mail, schedule meetings, add contacts, and more with either of these connectors.
 
