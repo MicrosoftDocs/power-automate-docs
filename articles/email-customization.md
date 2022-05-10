@@ -51,7 +51,7 @@ You can use HTML to beautify your email. Following are two options that you can 
 
 ### Option 2: Copy HTML from an Outlook email
 
-Alternatively, if you don't know—or don't feel like playing with—HTML<!--note from editor: Suggested.-->, follow these steps:
+Alternatively, if you don't know—or don't feel like playing with—HTML, follow these steps:
 
 1. Create an email in Outlook, styling it with colors, content placeholders, images, and tables.
 1. Send the email to yourself.
