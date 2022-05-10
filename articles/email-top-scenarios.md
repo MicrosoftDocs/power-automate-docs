@@ -5,7 +5,7 @@ author: msftman
 manager: kvivek
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 05/10/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -42,7 +42,6 @@ For example, if you have a cloud flow that sends you an email as soon as your it
 
 ## Send email with voting options
 
-<!--todo add a link to actionable email-->
 Use the **Send email with options** action to send an email with voting options using actionable email. Provide voting options in the **User Options** field.
 
 > [!div class="mx-imgBorder"]
@@ -76,11 +75,11 @@ You can also send [reminder emails for approval requests](https://flow.microsoft
 
 Here are three ways you can send a daily digest email with a table.
 
-- Use the [Data Operation – Select](./data-operations.md#use-the-select-action) action to create a table with the column names and data you'd like to see in the email.
-You can further format the data by using expressions. In following example, the flow gets calendar events within a certain timeframe, converts the time zones, and then creates a table with the events.<!--note from editor: If the reader is going to learn how to do this by looking at the image, there needs to be descriptive alt text here.-->
+- Use the [Data Operation – Select](./data-operations.md#use-the-select-action) action to create a table with the column names and data you'd like to appear in the email.
+You can further format the data by using expressions. In following example, the flow gets calendar events within a certain timeframe, converts the time zones, and then creates a table with the events.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of an example flow with a table.](./media/email/table.png "Example flow with a table")
+    > ![Screenshot of an example flow with a table that has column names and data you'd like to appear in the email.](./media/email/table.png "Example flow with a table")
 
 - Add the [Create HTML Table](./data-operations.md#use-the-create-html-table-action) action, and then add the output from the select action to the HTML action.
 
@@ -88,7 +87,7 @@ You can further format the data by using expressions. In following example, the 
 
 ### More information
 
-[Overview of using Outlook for Microsoft 365 and Power Automate](email-overview.md)  
+[Overview of using Outlook and Power Automate](email-overview.md)  
 [Create flows to manage email](create-email-flows.md)  
 [Customize email in flows](email-customization.md)  
 
