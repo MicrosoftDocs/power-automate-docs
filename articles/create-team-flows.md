@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/15/2022
+ms.date: 05/05/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -215,5 +215,8 @@ In the meantime, use the following steps as a a workaround.
 
 ### How can I change the owner of a non-solution-aware cloud flow?
 To change the ownership of a non-solution-aware cloud flow, you must create a new flow with the export/import feature, and **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
+
+### What happens when ownership of a solution-aware cloud flow is shared with a user who isn't Dataverse?
+When you share ownership of a solution-aware cloud flow with a user who isn't in Dataverse, that user gets added into Dataverse automatically to facilitate sharing. In a default environment, Azure Active Directory (AAD) users have the EnvironmentMaker role. In a non-default environment, AAD users and groups are added into Dataverse but they aren't assigned the EnvironmentMaker role automatically. Therefore, they may only be able to run the flow until an administrator assigns them a role. If the user doesn't have an appropriate role, they will see a detailed error message.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

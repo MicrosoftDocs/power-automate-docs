@@ -53,6 +53,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | graph.microsoft.com | https | Access to Microsoft graph - for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for Connectors. |
 | *.flow.microsoft.com | https | Access to the Power Automate site. |
+| *.powerautomate.com | https | Access to Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
 | *.azureedge.net | https | Access to the Power Automate CDN. |
 | nps.onyx.azure.net | https | Access to NPS (Net Promoter Score). |
