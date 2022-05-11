@@ -5,7 +5,7 @@ author: msftman
 manager: kVivek
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 05/04/2022
+ms.date: 05/11/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -46,7 +46,7 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
 1. Provide the credentials you want to use to connect to your environment.
 
-1. Run the following script to get a list of flows in the environment including those that were soft-deleted within the past 28 days.
+1. Run the following script to get a list of flows in the environment, including flows that were soft-deleted within the past 28 days.
 
    ``` PowerShell
    Get-AdminFlow -EnvironmentName 41a90621-d489-4c6f-9172-81183bd7db6c -IncludeDeleted $true
