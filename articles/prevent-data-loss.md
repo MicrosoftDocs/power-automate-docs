@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/16/2021
+ms.date: 05/11/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -52,7 +52,7 @@ Data loss prevention (DLP) for desktop flows is now available to all customers i
 
 >[!WARNING]
 >- Your administrators can also classify the new desktop flow modules in their DLP policies directly in the Power Platform admin center, but they must opt-in by creating a support ticket. 
->- Your tenant might already have access to the new desktop flow modules in the Power Platform’s DLP experience. 
+>- Your tenant might already have access to the new desktop flow modules in the DLP experience. 
 
 ### PowerShell support 
 
