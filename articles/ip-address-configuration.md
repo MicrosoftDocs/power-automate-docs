@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/18/2022
+ms.date: 05/09/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -32,7 +32,7 @@ The [IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from
 You should also consult the [Limits and Configuration](limits-and-config.md) article for a supplemental listing for known IP addresses that Power Automate uses.
 
 >[!NOTE]
-> Starting June 2022, Logic Apps will enable availability zones in phases based on region. New IP addresses for this support are already available for the Logic Apps service and managed connectors. To make sure flows still work after this date, update your firewall configurations to include both the [IP addresses for Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the corresponding region. For more information about availability zones, see [Azure Logic Apps - Availability Zone support is coming soon](https://techcommunity.microsoft.com/t5/integrations-on-azure-blog/azure-logic-apps-availability-zone-support-is-coming-soon/ba-p/3254456). 
+> Starting May 2022, Azure Logic Apps begins to enable availability zones in select regions for new Consumption logic apps. To support this capability, new IP addresses have been published for the Azure Logic Apps service and managed connectors. To ensure flows continue to work after this date, update your firewall configuration to include both the [IP addresses for Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. For more information, see [Azure Logic Apps - Set up zone redundancy with availability zones(/azure/logic-apps/set-up-zone-redundancy-availability-zones).
 
 ## Logic Apps
 Calls made from a cloud flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Please reference [the Logic apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) for which IP addresses are used by that service.
