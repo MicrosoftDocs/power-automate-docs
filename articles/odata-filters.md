@@ -105,14 +105,14 @@ On the condition card:
    
     The **Condition** card now resembles this image:
    
-    ![configure a condition.](media/odata-filters/configure-condition.png)
+    ![Screenshot dislays the condition card.](media/odata-filters/configure-condition.png)
 5. Select **Edit in advanced mode**.
    
     When advanced mode opens, you see **\@equals(body('Get_rows')?['value'], 0)** expression in the box. Edit this expression by adding **length()** around the **body('Get_items')?['value']** function. The entire expression now appears like this: **@equals(length(body('Get_rows')?['value']), 0)**
    
     The **Condition** card now resembles this image:
    
-    ![configure a condition.](media/odata-filters/configure-condition-add-length.png)
+    ![Screenshot displays the updated condition card.](media/odata-filters/configure-condition-add-length.png)
    
    > [!TIP]
    > Adding the **length()** function allows the flow to check the **value** list and determine if it contains any items.
@@ -148,7 +148,7 @@ On the **If yes** branch of the **Condition**:
    
     The **Insert row** card now resembles this image:
    
-    ![configure a condition.](media/odata-filters/insert-row.png)
+    ![Screenshot displays the condition card in the new state.](media/odata-filters/insert-row.png)
 
 ## Update the item in the destination
 If the item exists in the destination, update it with the changes.
