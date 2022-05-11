@@ -26,7 +26,7 @@ search.audienceType:
 
 This walkthrough shows you how to create a cloud flow that monitors a source for new or changed items and then copies those changes to a destination. You may create a cloud flow like this one if your users enter data in one location, but your team needs it in a different location or format.
 
-While this walkthrough copies data from a Microsoft SharePoint [list](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (the source) to an [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) table (the destination), you can copy data among any of the more than [380 connectors](https://flow.microsoft.com/connectors/) that Power Automate supports.
+While this walkthrough copies data from a Microsoft SharePoint [list](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) (the source) to an [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) table (the destination), you can copy data among any of the more than [700 connectors](https://flow.microsoft.com/connectors/) that Power Automate supports.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
@@ -105,14 +105,14 @@ On the condition card:
    
     The **Condition** card now resembles this image:
    
-    ![configure a condition.](media/odata-filters/configure-condition.png)
+    ![Screenshot dislays the condition card.](media/odata-filters/configure-condition.png)
 5. Select **Edit in advanced mode**.
    
     When advanced mode opens, you see **\@equals(body('Get_rows')?['value'], 0)** expression in the box. Edit this expression by adding **length()** around the **body('Get_items')?['value']** function. The entire expression now appears like this: **@equals(length(body('Get_rows')?['value']), 0)**
    
     The **Condition** card now resembles this image:
    
-    ![configure a condition.](media/odata-filters/configure-condition-add-length.png)
+    ![Screenshot displays the updated condition card.](media/odata-filters/configure-condition-add-length.png)
    
    > [!TIP]
    > Adding the **length()** function allows the flow to check the **value** list and determine if it contains any items.
@@ -148,7 +148,7 @@ On the **If yes** branch of the **Condition**:
    
     The **Insert row** card now resembles this image:
    
-    ![configure a condition.](media/odata-filters/insert-row.png)
+    ![Screenshot displays the condition card in the new state.](media/odata-filters/insert-row.png)
 
 ## Update the item in the destination
 If the item exists in the destination, update it with the changes.

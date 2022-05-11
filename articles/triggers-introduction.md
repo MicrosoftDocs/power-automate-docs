@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/10/2021
+ms.date: 05/10/2022
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -103,7 +103,7 @@ change to SharePoint items but you might want the flow to only trigger when an i
 created or the status is marked as *Approved*. While you can filter other events by
 adding conditions to the flow, the flow still runs and the calls are
 counted as an API request, causing you to reach your API request limits faster.
-To avoid it, you can write expressions in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
+To avoid it, you can write [expressions](./use-expressions-in-conditions.md) in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
 
 You may also need to secure the trigger inputs/outputs in the run history of a cloud flow. To do this, you can turn on the secure input and/or secure output setting in the trigger. A great community article of how to do it is [here](https://d365demystified.com/2019/12/19/secure-input-output-in-power-automate-run-history/).
 
