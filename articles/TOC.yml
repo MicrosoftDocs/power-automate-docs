@@ -303,9 +303,9 @@
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Setup Power Automate
     items:
-    - name: Power Automate for desktop prerequisites & limitations 
+    - name: Power Automate prerequisites & limitations 
       href: ./desktop-flows/setup.md
-    - name: Install Power Automate on your device
+    - name: Install Power Automate
       href: ./desktop-flows/install.md
     - name: Governance in Power Automate
       href: ./desktop-flows/governance.md     
@@ -313,7 +313,7 @@
       href: ./desktop-flows/troubleshoot.md
     - name: Data Collection in Power Automate
       href: ./desktop-flows/diagnostic-data.md      
-  - name: Power Automate for desktop architecture
+  - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
@@ -325,9 +325,9 @@
     href: ./desktop-flows/getting-started-org.md
   - name: Create a desktop flow
     href: ./desktop-flows/create-flow.md
-  - name: Run attended and unattended desktop flows
+  - name: Run desktop flows
     href: ./desktop-flows/run-pad-flow.md
-  - name: Trigger a desktop flow from a cloud flow
+  - name: Trigger a desktop flow from another flow
     href: ./desktop-flows/link-pad-flow-portal.md
   - name: Manage machines and machine groups
     items:
@@ -597,29 +597,6 @@
       href: ./desktop-flows/dynamics365-fin-rpa.md
     - name: Use RPA with Dynamics 365 Customer Service
       href: ./desktop-flows/dynamics365-cs-rpa.md   
-- name: Other types of desktop flows (Legacy)
-  items:
-  - name: Introduction to other types of desktop flows
-    href: ./desktop-flows/overview.md
-  - name: Create and test desktop flows with Windows recorder (V1)
-    href: ./desktop-flows/create-desktop.md
-  - name: Edit desktop flows with Windows recorder (V1)
-    href: ./desktop-flows/edit-desktop.md
-  - name: Migrate from Windows recorder (V1) to Power Automate
-    href: ./desktop-flows/migrate.md
-  - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
-    href: ./desktop-flows/inputs-outputs-desktop.md
-    items:
-    - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/use-ime.md
-    - name: Use WinAutomation with desktop flows
-      href: ./desktop-flows/create-processes.md
-  - name: Create and test Selenium IDE flows
-    href: ./desktop-flows/create-web.md
-  - name: Edit desktop flows with Selenium IDE
-    href: ./desktop-flows/edit-web.md
-  - name: Use inputs and outputs in desktop flows with Selenium IDE
-    href: ./desktop-flows/inputs-outputs-web.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -808,6 +785,29 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
+  - name: Other types of desktop flows (Legacy)
+    items:
+    - name: Introduction to other types of desktop flows
+      href: ./desktop-flows/overview.md
+    - name: Create and test desktop flows with Windows recorder (V1)
+      href: ./desktop-flows/create-desktop.md
+    - name: Edit desktop flows with Windows recorder (V1)
+      href: ./desktop-flows/edit-desktop.md
+    - name: Migrate from Windows recorder (V1) to Power Automate
+      href: ./desktop-flows/migrate.md
+    - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
+      href: ./desktop-flows/inputs-outputs-desktop.md
+      items:
+      - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
+        href: ./desktop-flows/use-ime.md
+      - name: Use WinAutomation with desktop flows
+        href: ./desktop-flows/create-processes.md
+    - name: Create and test Selenium IDE flows
+      href: ./desktop-flows/create-web.md
+    - name: Edit desktop flows with Selenium IDE
+      href: ./desktop-flows/edit-web.md
+    - name: Use inputs and outputs in desktop flows with Selenium IDE
+      href: ./desktop-flows/inputs-outputs-web.md
 - name: Learning catalog
   items:
   - name: Overview
