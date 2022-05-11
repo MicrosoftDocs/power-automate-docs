@@ -20,7 +20,7 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
 >[!NOTE]
 > - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to file a support ticket with Microsoft for assistance.
-> - Flows are not recoverable after 28 days have passed since the deletion.
+> - Flows that have been deleted earlier than 28 days can't be recovered either by using PowerShell script or Microsoft support.
 
 ## Prerequisites
 
