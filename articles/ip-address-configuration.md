@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/18/2022
+ms.date: 05/09/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -30,6 +30,9 @@ The [IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from
 > Some calls a cloud flow makes may come from IP addresses that are listed in the [Logic apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) documentation. Some examples of these calls include HTTP or HTTP + OpenAPI.
 
 You should also consult the [Limits and Configuration](limits-and-config.md) article for a supplemental listing for known IP addresses that Power Automate uses.
+
+>[!NOTE]
+> Starting May 2022, Azure Logic Apps begins to enable availability zones in select regions for new Consumption logic apps. To support this capability, new IP addresses have been published for the Azure Logic Apps service and managed connectors. To ensure flows continue to work after this date, update your firewall configuration to include both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. For more information, see [Azure Logic Apps - Set up zone redundancy with availability zones(/azure/logic-apps/set-up-zone-redundancy-availability-zones).
 
 ## Logic Apps
 Calls made from a cloud flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Please reference [the Logic apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) for which IP addresses are used by that service.
@@ -50,6 +53,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | graph.microsoft.com | https | Access to Microsoft graph - for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for Connectors. |
 | *.flow.microsoft.com | https | Access to the Power Automate site. |
+| *.powerautomate.com | https | Access to Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
 | *.azureedge.net | https | Access to the Power Automate CDN. |
 | nps.onyx.azure.net | https | Access to NPS (Net Promoter Score). |
