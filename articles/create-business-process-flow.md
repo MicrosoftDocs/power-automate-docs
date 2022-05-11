@@ -2,7 +2,7 @@
 title: "Create a business process flow in Power Apps | MicrosoftDocs"
 description: "Learn how to create a business process flow"
 ms.custom: ""
-ms.date: 09/10/2021
+ms.date: 04/26/2022
 ms.reviewer: "msftman"
 
 ms.suite: ""
@@ -45,23 +45,15 @@ You need a [per user plan](https://flow.microsoft.com/pricing/) in order to crea
 
 ## Create a business process flow  
   
-1. Open [solution explorer](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
-1. On the left navigation pane, select **Processes**. 
-1. On the **Actions** toolbar, select **New**.  
-1. In the **Create Process**  dialog box, complete the required columns:  
+1. In Power Automate, select **My flows** from the navigation bar on the left.
+3. Select **Business process flows**.
+4. Select **New**.
+   a. Give your flow a name. 
+   b. Optionally, change the **Name** if you don't want to use the name that the system generates.
+   c. Select the table in which the flow will be used.
+   d. Select **Create**.
   
-    - Enter a process name. The name of the process doesn’t need to be unique, but it should be meaningful for people who need to choose a process. You can change this later.  
-  
-    - In the **Category** list, select **Business Process Flow**.  
-  
-         You cannot change the category after you create the process.  
-  
-    - In the **Table** list, select the table on which you want to base the process.  
-  
-         The table you select affects the columns available for steps that can be added to the first stage of the process flow. If you don’t find the table you want, make sure the table has the business process flows (columns will be created) choice in the table definition. You cannot change this after you save the process.  
-1. Select **OK**.  
-  
-     The new process is created, and the business process flow designer opens with a single stage created for you.  
+     The new business process flow is created.  You can now edit it with a first single stage created for you.  
      ![Business process flow window showing main elements.](media/business-process-flow-window-showing-main-elements.png "Business process flow window showing main elements")  
 1. **Add stages.** If your users will progress from one business stage to another in the  process:
   
@@ -112,7 +104,7 @@ You need a [per user plan](https://flow.microsoft.com/pricing/) in order to crea
         1. Search for an existing on-demand active workflow that matches the stage table or create a new workflow by selecting **New**.  
         1. Select **Apply** when you're done.  
   
-    For more information on workflows, see [Workflow processes](/common-data-service/workflow-processes.md).  
+    For more information on workflows, see [Workflow processes](/power-automate/workflow-processes).  
   
 1. To validate the business process flow, select **Validate** on the action bar.  
 1. To save the process as a draft while you continue to work on it, select **Save** in the action bar.  

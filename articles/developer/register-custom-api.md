@@ -20,7 +20,6 @@ search.audienceType:
   - developer
 ---
 # Custom connectors in Power Automate
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 Without writing any code, you can build workflows and apps with [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Power Automate](https://flow.microsoft.com), and [Power Apps](https://powerapps.microsoft.com). To help you integrate your data and business processes, these services offer [180+ connectors](/connectors/) - for Microsoft services and products, as well as other services, like GitHub, Salesforce, Twitter, and more. 
 

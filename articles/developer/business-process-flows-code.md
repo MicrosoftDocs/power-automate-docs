@@ -159,8 +159,8 @@ At this point, you might not get any instances in your response as there are non
 Create a business process flow table row (process instance) programmatically if you want to switch to another business process flow for a table row without using the UI. 
 
 To create a business process flow table row, you need to specify the following values: 
-- Associate the business process flow table row to a primary table row by setting the single-valued navigation property using the `@odata.bind` annotation. To find out the navigation-property name that points to the primary table row for your business process flow definition, use the [CSDL $metadata document](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document). 
-- Associate the business process flow table row to a valid stage specified in the business process flow definition by setting the single-valued navigation property using the `@odata.bind` annotation. To find out the navigation-property name (typically `activestageid`) that points to the stage row for your business process flow definition, use the [CSDL $metadata document](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document).
+- Associate the business process flow table row to a primary table row by setting the single-valued navigation property using the `@odata.bind` annotation. To find out the navigation-property name that points to the primary table row for your business process flow definition, use the [CSDL $metadata document](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#csdl-metadata-document). 
+- Associate the business process flow table row to a valid stage specified in the business process flow definition by setting the single-valued navigation property using the `@odata.bind` annotation. To find out the navigation-property name (typically `activestageid`) that points to the stage row for your business process flow definition, use the [CSDL $metadata document](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#csdl-metadata-document).
 
     Also, you can retrieve information about all the stages for a business process flow definition by using the following Web API request assuming that the ID of your business process flow definition is 2669927e-8ad6-4f95-8a9a-f1008af6956f:
 
@@ -372,7 +372,7 @@ The only exception to this is programmatically modifying the **ProcessId** colum
 
 <a name="BKMK_clientSideScript"></a>   
 ## Client-side programmability support for business process flows  
- There is a client-side object you can use to interact with business process flows in your form scripts. Business process flows trigger client-side events every time a process is either applied to a row, the stage is changed, or its status is changed to `Active`, `Finished`, or `Aborted`. More information: [formContext.data.process (Client API reference)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md)  
+ There is a client-side object you can use to interact with business process flows in your form scripts. Business process flows trigger client-side events every time a process is either applied to a row, the stage is changed, or its status is changed to `Active`, `Finished`, or `Aborted`. More information: [formContext.data.process (Client API reference)](/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-data-process)  
   
 <a name="BKMK_MaxSettings"></a>   
 ## Maximum number of processes, stages, and steps  

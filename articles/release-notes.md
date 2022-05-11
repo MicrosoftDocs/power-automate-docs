@@ -14,12 +14,12 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 08/04/2022
 ms.author: deonhe
 search.app: 
   - Flow
 search.audienceType: 
-  - flowmaker
+  - flowmaker 
   - enduser
 ---
 # Release notes
@@ -50,8 +50,8 @@ search.audienceType:
 ## What's new
 
 For information about new features released for Power Automate, visit:
-- [2020 release wave 1 plan](/power-platform-release-plan/2020wave1/power-automate/planned-features) for new features releasing over the next few months.
-- [Weekly release notes](/business-applications-release-notes/powerplatform/released-versions/flow) for new features, fixes, and improvements released in the past few weeks.
+- [2022 release wave 1 plan](/power-platform-release-plan/2022wave1/power-automate/planned-features) for new features releasing over the next few months.
+- [Weekly release notes](/business-applications-release-notes/powerplatform/released-versions) for new features, fixes, and improvements released in the past few weeks.
 
 ### Release 2018-09-24
 
@@ -159,7 +159,7 @@ The Power Automate Preview program is the way to get early access to the upcomin
 ### Release 2018-03-13
 
 - **Approval history** - See all the approval requests you've sent out, including the responses, the comments that were sent, and the exact time they happened.
-- **Four new connectors** - Added Excel Online (Business), Excel Online (OneDrive), Azure SQL Data Warehouse, and Pitney Bowes Tax Calculator.
+- **Four new connectors** - Added Excel Online (Business), Excel Online (OneDrive), Azure Synapse Analytics, and Pitney Bowes Tax Calculator.
 - **Dynamic content tooltips** - Hover over dynamic content to see where it came from inside of actions, and preview expressions without opening the full expression editor.
 - **Concurrency control** - Enable concurrency control to have a given flow have only one run at a time.
 - **Exponential retry** - A new type of retry policy that spaces out retries exponentially over time.

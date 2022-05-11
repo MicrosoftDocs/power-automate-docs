@@ -1,5 +1,5 @@
 ---
-title: Run flows on a schedule | Microsoft Docs
+title: Run flows on a schedule in Power Automate | Microsoft Docs
 description: Automate recurring tasks by running flows on a schedule, such as every day or every hour.
 services: ''
 suite: flow
@@ -8,13 +8,12 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/29/2020
+ms.date: 04/13/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -24,42 +23,57 @@ search.audienceType:
 ---
 # Run flows on a schedule
 
-Create a cloud flow that performs one or more tasks (such as sending a report in email):
+Create a cloud flow that performs one or more tasks (such as sending a report in email).
 
-* Once a day, an hour, or a minute
-* On a date that you specify
-* After a number of days, hours, or minutes that you specify
+* Once a day, an hour, or a minute.
+* On a date that you specify.
+* After a number days, hours, or minutes that you specify.
 
 ## Create a recurring flow
 
-1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows** on the left navigation pane.
-1. Select **New** and then **Scheduled-from blank**.
-    ![Create a cloud flow from blank.](./media/run-scheduled-tasks/create-flow.png)
-1. Specify when your flow should start by editing **Starting** boxes, and specify the flow's recurrence by editing **Repeat every** boxes then select **Create**.
-    ![Set recurrence.](./media/run-scheduled-tasks/select-recurrence.png)
+1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Select **My flows** > **New flow** > **Scheduled cloud flow**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of create a scheduled cloud flow.](./media/run-scheduled-tasks/create-flow.png "Create a scheduled cloud flow")
+
+1. In the fields next to **Starting**, specify the date and time when your flow should start.
+1. In the fields next to **Repeat every**, specify the flow's recurrence.
+1. Select **Create**.
+
+    >[!div class="mx-imgBorder"]
+    >![Set recurrence.](./media/run-scheduled-tasks/select-recurrence.png "Set recurrence")
 
 ## Configure advanced options
 
-1. Follow the steps in the previous section. and then select **Recurrence** > **Show advanced options**.
+1. Follow the steps in the previous section.
+1. Select **Recurrence** > **Show advanced options**. When you select **Show advanced options**, the dropdown name changes to **Hide advanced options**.
 
-    ![Show advanced recurrence options.](./media/run-scheduled-tasks/select-recurrence1.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of show/hide advanced options.](./media/run-scheduled-tasks/select-recurrence1.png "Show/hide advanced options")
 
-   > [!NOTE]
-   > These options change based on the values to which **Interval** and **Frequency** are set. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
-1. Select a **Time zone** to specify whether the **Start time** reflects a local time zone, Universal Coordinated Time (UTC), etc.
-1. Specify a **Start time** in this format:
-   <br>YYYY-MM-DDTHH:MM:SSZ
-1. If you specified **Day** under **Frequency**, specify the time of day when the flow should run.
-1. If you specified **Week** under **Frequency**, specify the day or days of the week on which the flow should run and the time or times of day when the flow should run.
+    >[!NOTE]
+    >These options change based on the values to which **Interval** and **Frequency** are set. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
 
-    For example, configure the options as shown to start a cloud flow no sooner than noon (Pacific time) on Monday, January 1, 2018, and run it every two weeks on Tuesdays at 5:30p (Pacific time).
+1. In the **Time zone** field, select a time zone from the dropdown list to specify whether the **Start time** reflects a local time zone, Coordinated Universal Time (UTC), or other time zone.
+1. In the **Start time** field, enter a start time in this format: YYYY-MM-DDTHH:MM:SSZ
+1. If you specified **Day** under **Frequency**, select the time of day when the flow should run in the **At these hours** and **At these minutes** dropdown lists.
+1. If you specified **Week** under **Frequency**, do the following.<br/>
+    - In the **On these days** and **At these hours** dropdown lists, select the day or days of the week on which the flow should run and the time or times of day when the flow should run.
+    - In the **At these minutes** field, enter the minute values (from 0 to 59) separated by a comma.
 
-    ![Specify advanced options.](./media/run-scheduled-tasks/advanced-options.png)
-1. Add the action or actions that you want the flow to take, as [Create a cloud flow from scratch](get-started-logic-flow.md) describes.
+    For example, configure the options as shown to start a cloud flow no sooner than 3:00 PM (Pacific time) on Thursday, March 24, 2022, and run it every two weeks on Tuesdays at 5:30 PM (Pacific time).
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of specified advanced options.](./media/run-scheduled-tasks/advanced-options.png "Specify advanced options")
+
+   >[!NOTE]
+   >If you run a flow on the month frequency, the flow runs on the same date each month.
+
+1. Add the action or actions that you want the flow to take, as described in [Create a cloud flow from scratch](get-started-logic-flow.md).
 
 ## Learn more
 
 Learn more about the [advanced options](/azure/connectors/connectors-native-recurrence) and how to configure them.
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

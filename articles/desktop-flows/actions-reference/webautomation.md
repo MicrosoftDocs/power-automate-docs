@@ -134,7 +134,7 @@ Get the value of an element's attribute on a web page
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|WebControl||Select the UI element on web page to get details from|
-|Attribute name|Yes|Text value|Own Text|Enter or select the attribute whose value to retrieve|
+|Attribute name|No|Text value|Own Text|Enter or select the attribute whose value to retrieve|
 
 
 ##### Variables Produced
@@ -206,12 +206,14 @@ Fill a text field in a web page with the specified text
 |Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|WebControl||Select the text field to populate|
 |Text|No|Encrypted value||Enter the text to fill in the text field|
+|If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
+|Populate text using physical keystrokes|N/A|Boolean value|False|Emulate using physical keystrokes when populating text to UI text field elements. Physical keystrokes are required for cases that emulated text population doesn't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
 |Emulate typing|N/A|Boolean value|True|Specify whether to fill the text field at once by simply setting the value of the text box, or emulate a user typing by sending characters one by one. The latter method is slower, but required in some complex web pages.|
 |Unfocus text box after filling it|N/A|Boolean value|False|Choose whether to unfocus the text box right after this action fills it with the specified text. In case of scraping autocompletion lists, this parameter should be set to "False".|
 |Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after populating the text field|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after populating the text field|
 |Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-|If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
+
 
 
 ##### Variables Produced

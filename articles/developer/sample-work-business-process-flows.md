@@ -21,7 +21,6 @@ search.audienceType:
   - developer
 ---
 # Sample: Work with business process flows
-[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
 This sample demonstrates how to programmatically work with business process flows such as retrieving the business process flow instances for a table row, retrieving active path for a business process flow instance and its process stages, and changing the active stage. For information about these concepts, see [Work with business process flows using code](business-process-flows-code.md)  
 

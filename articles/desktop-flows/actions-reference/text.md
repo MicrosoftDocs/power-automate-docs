@@ -183,7 +183,7 @@ Reverses the order of letters in a text string
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Text to reverse|Yes|Text value||The text to reverse|
+|Text to reverse|No|Text value||The text to reverse|
 
 ##### Variables Produced
 |Argument|Type|Description|
