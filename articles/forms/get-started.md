@@ -1,6 +1,6 @@
 ---
-title: Get started using flows with Microsoft Forms in Power Automated | Microsoft Docs
-description: Use templates to get started. 
+title: Get started using flows with Microsoft Forms
+description: Learn how to use a Power Automate template to add a form to a flow. 
 services: ''
 suite: flow
 documentationcenter: na
@@ -12,7 +12,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/03/2022
+ms.date: 05/11/2022
 ms.author: napienko
 search.app: 
   - Flow
@@ -22,20 +22,17 @@ search.audienceType:
 ms.custom: intro-internal
 ---
 
-# Get started
+# Get started using flows with Microsoft Forms
 
-A good way to get started is to use a template that's suited to your business scenario. You can choose from our collection of templates to find the right one to accomplish your scenario. [Search our templates](https://flow.microsoft.com/templates/) or browse by category to find your scenario, and then follow steps in the template to create a flow from the template.
+The easiest way to add a form to a flow is to start with a template. [Search the template gallery](https://flow.microsoft.com/templates/) for "Microsoft Forms," or browse by category, to find a template that meets your needs. Follow the steps in the template to create your flow.
 
-> [!div class="mx-imgBorder"]
- > ![Screenshot of the templates screen.](..\media\forms\templates-screen.png "Search for a template")
+:::image type="content" source="../media/forms/templates-screen.png" alt-text="Screenshot of Power Automate templates related to Microsoft Forms.":::
 
-Perhaps you found a template that is similar to what you are looking for, but isn't quite right for your scenario. No problem - just create your own flow from that template and tweak the it to your liking. You can extend a flow created from template by adding, editing, removing trigger and actions. You can [copy paste actions](/power-automate/multi-step-logic-flow#copy-and-paste-actions) in the same flow or across flows to speed up the process.
+What if you found a template that's similar to what you want to do but isn't quite right for your scenario? No problem. Create a flow from the template and customize it. You can add, edit, and remove triggers and actions. You can even [copy and paste actions](/power-automate/multi-step-logic-flow#copy-and-paste-actions) in the same flow or across flows to speed up the process.
 
-Can't find a template you like? You can create a flow from scratch and connect the services you want to use. To learn more, go to [How to create a flow from scratch](/power-automate/get-started-logic-flow).  
+Can't find a template you like? [Create a flow from scratch](/power-automate/get-started-logic-flow), connect the services you want to use, and add triggers and actions as needed.
 
-## Next step
-
-[Top scenarios](popular-scenarios.md)
+If you need inspiration, check out our list of some of the most [common ways to use forms in a flow](popular-scenarios.md).
 
 ## More information
 

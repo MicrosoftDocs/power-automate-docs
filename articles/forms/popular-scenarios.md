@@ -1,6 +1,6 @@
 ---
-title: Top forms scenarios in Power Automate | Microsoft Docs
-description: Top scenarios in Power Automate using forms in flows-Get response details, when a new response is submitted.
+title: Common ways to use Microsoft Forms in Power Automate
+description: Learn some of the most popular ways to use a form in an automated flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -12,7 +12,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/03/2022
+ms.date: 05/11/2022
 ms.author: napienko
 search.app: 
   - Flow
@@ -21,56 +21,145 @@ search.audienceType:
   - enduser
 ---
 
-# Top scenarios
+# Common ways to use a form in a flow
 
-Here are some of the top scenarios in which you can use Power Automate with forms:
+If you're not sure where to start, these are some of the most common ways people use Microsoft Forms with Power Automate:
 
-- Send an email when there's a new form response.
-- Send an email to the form responder after they've submitted a response.
-- Send an approval with contents of the form.
-- Upload Microsoft Forms responses to Excel.
-- Get an attachment from a form and send an email with the attachment.
+- [Send an email when there's a new form response](#send-an-email-when-theres-a-new-form-response)
+- [Send an email to the form responder after they submit a response](#send-an-email-to-the-form-responder-after-they-submit-a-response)
+- [Send an approval request with the form details](#send-an-approval-request-with-the-form-details)
+- [Add form responses to an Excel worksheet](#add-form-responses-to-an-excel-worksheet)
+- Get an attachment from a form and send an email with the attachment
 
 ## Send an email when there's a new form response
 
-Although you can enable a notification to "Get email notification of each response” within the Microsoft Form settings, you can create a customized email notification with Power Automate.
+You can turn on email notifications in your form settings. If you want someone else to be notified when a response is submitted, create a custom email notification with Power Automate.
 
-First, add the [When a response is submitted](/connectors/microsoftforms#triggers) trigger.
+We'll start with a pre-built template and customize it to help our managers plan for employees' summer vacations.
 
-If your form is only for people in your organization, that means that the form is automatically recording the responder’s email and you need to use the **Apply to Each** control. This demo will demonstrate this scenario and require you to choose **List of response notifications Response Id**. However, if your form is public and anyone with the link can respond, you'll need to ask for their email as a response in the form. In this scenario, you won't need to add the **Apply to Each** control.
+1. Search for "Microsoft Forms" in the [Power Automate template gallery](https://flow.microsoft.com/templates/) and select the template named "Notify me in Outlook when a student completes a quiz."
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of the Settings screen.](..\media\forms\only-people-in-my-org-setting.png "Screen showing who can fill out this form")
+1. Sign in to the connectors, if needed, and select **Continue**.
 
-Then, add the [Get response details](/connectors/microsoftforms/#actions) action. Select **Response Id** to view the dynamic content. Select the Response Id option, which means that you’ll get the response details for the responses that caused the trigger. After that, choose the [Send an email (V2)](/connectors/office365/#send-an-email-(v2)) action. Within the action card, select **Add dynamic content** so that you can use the forms responses in your email.
+1. In the first step in the flow, "When a new response is submitted," select your form in the **Form Id** box.
+
+    :::image type="content" source="../media/forms/email-flow-step1.png" alt-text="Screenshot of a Forms trigger in a flow under construction, with the form ID highlighted.":::
+
+1. In the next step in the flow, "Apply to each," select your form again in the **Form Id** box. Leave everything else as it is.
+
+    :::image type="content" source="../media/forms/email-flow-step2.png" alt-text="Screenshot of a Forms action in a flow under construction, with the form ID highlighted.":::
+
+1. Skip the Microsoft Office "[Get my profile (V2)](/connectors/office365/)" step. (If you don't need to send the email to yourself, you may delete the step if you like.)
+
+1. In the final step in the flow, "[Send an email](/connectors/office365/)," enter the recipients, subject, and body of the email. Select dynamic content to include details from the form response in your email.
+
+    :::image type="content" source="../media/forms/email-flow-step3.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with custom information highlighted.":::
+
+1. Select the flow name at the top of the Power Automate canvas and change it as you like.
+
+1. Save and test your flow.
 
 ## Send an email to the form responder after they submit a response
 
-Although you can enable a notification to [Send email receipt to respondents](https://support.microsoft.com/office/send-an-email-receipt-of-responses-951f29b7-dbd8-446b-8ebe-b924cc620bb20) within the Microsoft Form settings, you can create a customized email notification with Power Automate.
-This is similar to the first scenario in [Top scenarios](#top-scenarios), except the [Send an email (V2)](/connectors/office365/) action is now being sent to the responder.
+You can turn on [email receipts for respondents](https://support.microsoft.com/office/send-an-email-receipt-of-responses-951f29b7-dbd8-446b-8ebe-b924cc620bb20) in your form settings. If you want to customize the email they receive, use Power Automate.
 
-## Send an approval with contents of the form
+Follow the steps to [send an email when there's a new form response](#send-an-email-when-theres-a-new-form-response), but send the email to the responder.
 
-Create an approval with dynamic content from the form. In this example, the content will be the feedback, which is denoted by the question “What can we improve about our product?”
+:::image type="content" source="../media/forms/responder-email-flow.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with the responder's email address highlighted.":::
 
-After adding the Microsoft Forms trigger and action, the third step is to add the [Start and wait for an approval](/power-automate/modern-approvals#add-an-approval-action.md) action.
+## Send an approval request with the form details
 
-   > [!div class="mx-imgBorder"]
-   > ![Start and wait for approval flow screen.](..\media\forms\flow-start-and-wait-for-approval.png "Completed flow to start and wait for an approval")
+In this example, we'll start with another pre-built template and customize it to create a vacation approval request.
 
-You can view more examples with approvals in the [documentation](../sequential-modern-approvals.md).
+1. Search for "Microsoft Forms" in the [Power Automate template gallery](https://flow.microsoft.com/templates/) and select the template named "Send form responses for approval."
 
-## Upload Microsoft Forms responses to Excel
+1. Sign in to or create the connectors, as needed, and select **Continue**.
 
-Create a new Excel Online sheet and add a table to the sheet. Learn more about tables in the [Excel documentation](https://support.microsoft.com/en-us/office/overview-of-excel-tables-7ab0bb7d-3a9e-4b56-a3c9-6c94334e492c).
+1. In the first step in the flow, "When a new response is submitted," select your form in the **Form Id** box.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Excel screen.](..\media\forms\excel.png "Blank Excel table with the example columns")
+    :::image type="content" source="../media/forms/email-flow-step1.png" alt-text="Screenshot of a Forms trigger in a flow under construction, with the form ID highlighted.":::
 
-> [!div class="mx-imgBorder"]
-> ![Screenahot of the Excel flow screen.](..\media\forms\excel-flow.png "Completed Excel flow")
+1. In the next step in the flow, "Apply to each," select your form again in the **Form Id** box. Leave everything else as it is.
 
-You can also add an approval to approve a response before it enters the Excel sheet. The [Approve a Microsoft Forms response to add a row to an Excel spreadsheet](https://flow.microsoft.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/) template can help you do this!
+    :::image type="content" source="../media/forms/approval-flow-step2.png" alt-text="Screenshot of a Forms action in a flow under construction, with the form ID highlighted.":::
+
+1. In the next step in the flow, "[Start and wait for an approval](/power-automate/modern-approvals#add-an-approval-action.md)," select the **Approval type**, enter a **Title**, and enter the approvers' email addresses in **Assigned to**. Select dynamic content to include details from the form response in the approval request.
+
+    :::image type="content" source="../media/forms/approval-flow-step3.png" alt-text="Screenshot of an approval action in a flow under construction, with custom information highlighted.":::
+
+1. Skip the "Condition" action.
+
+1. In the "If yes" step:
+
+    - Delete the SharePoint action that comes with the template.
+    - Add an Outlook 365 "Send an email (V2)" action.
+    - In the **To** box, select the dynamic content **Responders' Email**.
+    - Enter the subject and body of the email.
+
+    :::image type="content" source="../media/forms/approval-flow-step-yes.png" alt-text="Screenshot of a 'request approved' email in a flow under construction, with custom information highlighted.":::
+
+1. In the "If no" step:
+
+    - Delete the Microsoft Office "Get my profile (V2)" step that comes with the template.
+    - In the "Send an email (V2)" action, in the **To** box, select the dynamic content **Responders' Email**.
+    - Enter the subject and body of the email.
+
+    :::image type="content" source="../media/forms/approval-flow-step-no.png" alt-text="Screenshot of a 'request denied' email in a flow under construction, with custom information highlighted.":::
+
+1. Select the flow name at the top of the Power Automate canvas and change it as you like.
+
+1. Save and test your flow.
+
+More examples of approval flows are in the [documentation](../sequential-modern-approvals.md).
+
+## Add form responses to an Excel worksheet
+
+In this example, we'll create a flow from blank. We'll use it to record employees' names and summer vacation dates in an Excel table.
+
+1. Create a workbook in Excel Online. Add a table with one column for each question on your form. Save and close the workbook.
+
+    :::image type="content" source="../media/forms/excel-flow-table.png" alt-text="Screenshot of an Excel table with three columns titled Name, Vacation Start, and Return.":::
+
+1. In Power Automate, create an automated cloud flow from blank. Select the Microsoft Forms "When a new response is submitted" trigger.
+
+    :::image type="content" source="../media/forms/excel-flow-step1.png" alt-text="Screenshot of creating a cloud flow with a Microsoft Forms trigger.":::
+
+1. In the first step in the flow, "When a new response is submitted," select your form in the **Form Id** box.
+
+1. Add a step to your flow:
+
+    - Search for "forms" and select **Microsoft Forms**.
+    - Select **Get response details**.
+    - Select your form in the **Form Id** box.
+
+    :::image type="content" source="../media/forms/excel-flow-step2.png" alt-text="Screenshot of a Forms trigger and action in a flow under construction, with the form ID highlighted in each.":::
+
+1. Add a step to your flow:
+
+    - Search for "profile" and select **Office 365 Users**.
+    - Select **Get user profile (V2)**.
+    - In the **User (UPN)** box, select the dynamic content **Responders' Email**. This will look up the responder's name by their email address.
+
+    :::image type="content" source="../media/forms/excel-flow-step3.png" alt-text="Screenshot of an Office 365 Get user profile action in a flow under construction, with the dynamic content Responders' Email highlighted.":::
+
+1. Add a step to your flow:
+
+    - Search for "excel" and select **Excel Online (Business)**.
+    - Select **Add a row into a table**.
+    - Select the **Location** and **Document Library**.
+    - Select the folder icon and browse to the Excel workbook you created earlier.
+    - Select the **Table**.
+    - In each column in the table, select the corresponding dynamic content.
+
+:::image type="content" source="../media/forms/excel-flow-step4.png" alt-text="Screenshot of an Excel Add row into a table action in a flow under construction, with dynamic content highlighted.":::
+
+1. Select the flow name at the top of the Power Automate canvas and change it as you like.
+
+1. Save and test your flow.
+
+    :::image type="content" source="../media/forms/excel-flow-table-after.png" alt-text="Screenshot of an Excel table with Name, Vacation Start, and Return columns filled with form data.":::
+
+You can also add an approval step before a form response is added to the Excel table. The [Approve a Microsoft Forms response to add a row to an Excel spreadsheet](https://flow.microsoft.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/) template can help you do this!
 
 ## Get an attachment from a form and send it in an email message
 
