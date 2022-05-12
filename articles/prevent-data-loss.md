@@ -179,7 +179,7 @@ Periodically, DLP enforcement changes are needed. These changes can be a due to 
 When changes can impact existing flows, the following staged DLP enforcement change management process is used.
 
 1. Investigating - Confirm the need for a DLP enforcement change and investigate the specifics of the change.
-1. Learning - The product team implements the change and gathers data about the breadth of the effects of the change. DLP enforcement changes are documented here to explain the scope of the change. If the data suggests that some customers will be greatly affected, then communication is sent to those customers letting them know that a  change is coming.
+1. Learning - Implement the change and gather data about the breadth of the effects of the change. DLP enforcement changes are documented to explain the scope of the change. If the data suggests that some customers will be greatly affected, then communication is sent to those customers letting them know that a change is coming.
 1. Soft enforcement - Turn on soft enforcement of DLP violations so owners of existing flows get notified about the change.
     1. When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed.
     1. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended.
