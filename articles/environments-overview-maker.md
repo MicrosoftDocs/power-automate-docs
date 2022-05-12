@@ -60,11 +60,11 @@ You’ve created a cloud flow named *NewEmployee* in the *Human Resources* envir
 Follow these steps to switch environments:
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
-1. In the top right corner, you see an image that represents your profile.
+1. In the top right corner, you will see the environment to which you are currently connect.
 
    ![profile image.](./media/environments-overview-maker/default-environment.png)
 
-1. Select the image. A drop-down list displays all the environments available to you. The environment in which you're currently signed in is checked:
+1. Select the environment name. A drop-down list displays all the environments available to you. The environment in which you're currently signed in is checked:
 
    ![list of environments image.](./media/environments-overview-maker/all-environments.png)
 1. To switch to another environment, select that environment in the list:
