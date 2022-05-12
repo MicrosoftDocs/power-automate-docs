@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot known issues with Forms in Power Automate flows | Microsoft Docs
-description: FAQs using Forms in Power Automate - Get response details, when a new response is submitted.
+title: Troubleshoot known issues with Forms in Power Automate flows
+description: Learn how to fix known issues with using forms in automated flows.
 services: ''
 suite: i
 documentationcenter: na
@@ -12,7 +12,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/03/2022
+ms.date: 05/12/2022
 ms.author: napienko
 search.app: 
   - Flow
@@ -21,41 +21,47 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot known issues with Forms in flows
+# Troubleshoot known issues with forms in flows
+
+If a form in a flow isn't working as you expect it to, start here for troubleshooting tips.
 
 ## Limitations
 
-For information about limitations of forms, go to [Microsoft Forms - known issues and limitations](/connectors/microsoftforms/#known-issues-and-limitations).
+Make sure you aren't trying to make a form do something it can't. For information about the limitations of forms, go to [Microsoft Forms - known issues and limitations](/connectors/microsoftforms/#known-issues-and-limitations).
 
 ## Known issues
 
 ### My flow doesn’t work or has stopped working
 
-Make sure that the form being referenced hasn’t been deleted or the name of the form hasn’t changed.
+Make sure that your form hasn’t been deleted or its name changed.
 
-You might have reached a limit for the connector or for the product. For the Microsoft Forms connector, the limits on API calls per connection are 300 API calls per connection within 60 seconds and a frequency of one (1) trigger poll every 86,400 seconds. Also view the [response limits](https://support.microsoft.com/office/form-question-response-and-character-limits-in-microsoft-forms-ec15323d-92a4-4c33-bf88-3fdb9e5b5fea) for Microsoft Forms.
+You might have reached a limit for the connector or for the product. For the Microsoft Forms connector, you're limited to 300 API calls per connection within 60 seconds and one trigger poll every 86,400 seconds. Also check the [response limits](https://support.microsoft.com/office/form-question-response-and-character-limits-in-microsoft-forms-ec15323d-92a4-4c33-bf88-3fdb9e5b5fea) for Microsoft Forms.
 
-### I'm experiencing an invalid connection error
+### I'm getting an invalid connection error
 
 Check throttling limits for all connectors in your flow.
+<!-- Since this documentation is for non-technical folks, please include a link to more information about what throttling limits are and where to check for them. I did a quick search, but didn't find anything that obviously fit the bill. Thanks! -->
 
-Disable any plug-ins, such as the Chrome plug-in Privacy Badger, as it may be blocking the cookies that Power Automate uses.
+Try temporarily turning off browser plug-ins such as Privacy Badger that may be blocking the cookies that Power Automate uses.
 
 ### When the email sends form responses, the files are corrupt
 
-Make sure you aren't using a `base64()` function as it might corrupt the files.
+Make sure you aren't using a `base64()` function, since it might corrupt the files.
+<!-- Can you include a link to more information? -->
 
 ### Flow with form only works sometimes
 
-One reason this might be happening is that some users input more than 255 characters in the single line of text field in the form. Enable long answer in the text field.  
+One common reason this happens is that a user entered more than 255 characters in a single-line text field in the form. Try using a multi-line text field instead.
 
 ### Form created by another team isn’t listed as an option in Form Id
 
-Check that the form is listed in the Microsoft Forms **Shared with me** tab. You might also want to [transfer ownership of the form](https://support.microsoft.com/office/transfer-ownership-of-a-form-921a6361-a4e5-44ea-bce9-c4ed63aa54b4), especially if members of the team will be leaving the company.
+Check whether the form is listed in the Microsoft Forms **Shared with me** tab.
 
-### The Forms Id field lists duplicate form names
+You might also want to [transfer ownership of the form](https://support.microsoft.com/office/transfer-ownership-of-a-form-921a6361-a4e5-44ea-bce9-c4ed63aa54b4), especially if members of the team will be leaving the company.
 
-The list will propagate all forms until the form is deleted from the recycling bin. Due to this propagation, go back into Microsoft Forms and ensure that the forms you no longer need are deleted.
+### The Form Id field lists duplicate form names
+
+The Form Id list picks up forms that you have deleted but which are still in the Recycle Bin. In Microsoft Forms, make sure to delete forms you no longer need and empty the Recycle Bin.
 
 ### Unable to find the correct Form Id
 
@@ -63,10 +69,10 @@ Go to your form. Copy the Form Id from the URL of the form and add it as a custo
 
 ### I don’t get an attachment for some of my approvals
 
-Approval action will attach the file in notification email until the size is 5 MB. Beyond this limit, approval action in Power Automate won’t be able to attach the file in notification email. It will redirect user/approver to check the attachment in Microsoft Flow portal.
+The approval action limits the size of file attachments in email to 5 MB. For attachments that are larger than 5 MB, the approval action redirects approvers to check for the attachment on the Power Automate **Action items > Approvals** page.
 
 ### Send email action looks stuck in my flow
 
-If you're using Mail connector as part of your flow, it has a limit of 100 API calls per 24 hours. Try the Office 365 Outlook connector, which has a limit of 300 API calls per 60 seconds. When you do this, you're less likely to reach the limit.
+If you're using the Mail connector as part of your flow, try using the Office 365 Outlook connector instead. The Mail connector has a limit of 100 API calls per 24 hours. The Outlook connector has a limit of 300 API calls per 60 seconds, which means that you're much less likely to reach the limit.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
