@@ -171,25 +171,26 @@ When your tenant is opted into the user experience in the Power Platform, your a
 >  If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
  
 ## DLP enforcement background jobs
-- **Enforcement and suspension** - Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, evaluates flows, and then suspends the flows that violate the updated policy.
-- **Reactivation** - If the DLP enforcement background job finds a flow that no longer violates any DLP data policies, such as when a data loss prevention policy changes, then the background job will automatically turn on a desktop flow, but it will not automatically turn on a cloud flow since makers have to turn them on manually.
+- Enforcement and suspension - Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, evaluates them, and then suspends the flows that violate the updated policy.
+- Reactivation - If the DLP enforcement background job finds a desktop flow that no longer violates any DLP, then the background job automatically turns it on. However,  the DLP enforcement background job won't automatically turn on cloud flows.
 
 ## DLP enforcement change process
-From time to time, DLP enforcement changes are needed. These changes can be a result of adding a new DLP capability, an enforcement gap being filled, or a bug fix.
-When changes can impact existing flows, a staged DLP enforcement change management process will be followed:
-1. **Investigating** - The need for a DLP enforcement change has been identified and the product team is investigating the specifics of the change.
-2. **Learning** - The product team will implement the change and gather data about the breadth of effects of the change. DLP enforcement changes will be documented here to explain the scope of the change. If the data suggests that some customers will be greatly affected, then a communication will be sent to those customers to let them know that a  change is coming.
-5. **Soft enforcement** - Turn on soft enforcement of DLP violations so owners of existing flows have some notice about the change.
+Periodically, DLP enforcement changes are needed. These changes can be a due to new DLP capabilities, an enforcement gap being filled, or a bug fix.
+When changes can impact existing flows, the following staged DLP enforcement change management process is used.
+
+1. Investigating - The need for a DLP enforcement change confirmed and the product team investigates the specifics of the change.
+1. Learning - The product team implements the change and gathers data about the breadth of the effects of the change. DLP enforcement changes are documented here to explain the scope of the change. If the data suggests that some customers will be greatly affected, then communication is sent to those customers letting them know that a  change is coming.
+1. Soft enforcement - Turn on soft enforcement of DLP violations so owners of existing flows get notified about the change.
     1. When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed.
-    2. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended in the future.
-6. **Hard enforcement** - Turn on hard enforcement of DLP violations, so DLP policies are fully enforced. The DLP policies will be fully enforced during flow save and during DLP enforcement background job evaluation.
+    1. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended.
+1. Hard enforcement - Turn on hard enforcement of DLP violations, so DLP policies are fully enforced. The DLP policies will be fully enforced when flows are saved  during DLP enforcement background job evaluation.
 
 ## DLP enforcement change list
-A list of DLP enforcement changes made and the date the change was made. 
+A list of DLP enforcement changes and the date the changes were made. 
 
 | Date | Description | Reason for change | Stage |
 |-|-|-|-|
-|May 2022 | Delegated authorization background job enforcement | Flows that use delegated authorization have DLP policies enforced during flow save, but not during  background job evaluation | Learning |
+|May 2022 | Delegated authorization background job enforcement | Flows that use delegated authorization have DLP policies enforced whilte the flow is being saved, but not during background job evaluation | Learning |
 
 ## Known limitations
 [Learn about DLP known issues](/power-platform/admin/dlp-known-issues)
