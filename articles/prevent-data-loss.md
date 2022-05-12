@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/16/2021
+ms.date: 05/11/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -50,11 +50,9 @@ Power Automate provides the ability to create and enforce DLP policies that clas
 
 Data loss prevention (DLP) for desktop flows is now available to all customers in Public Preview at no cost. Administrators can configure their DLP policies and enforce them on desktop flows with PowerShell. 
 
-
-
 >[!WARNING]
 >- Your administrators can also classify the new desktop flow modules in their DLP policies directly in the Power Platform admin center, but they must opt-in by creating a support ticket. 
->- Your tenant might already have access to the new desktop flow modules in the Power Platform’s DLP experience. This is the case for all customers who were already given access to the feature per the [original release schedule](#original-release-schedule) and who have created or updated a DLP policy with desktop flow modules since. 
+>- Your tenant might already have access to the new desktop flow modules in the DLP experience. 
 
 ### PowerShell support 
 
@@ -172,30 +170,30 @@ When your tenant is opted into the user experience in the Power Platform, your a
 > [!NOTE]
 >  If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
  
-### Background jobs
-- Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, and then suspends the flows that violate the updated policy.
-- After a data loss prevention policy changes, the background job automatically turns on all the desktop flows that no longer violate any policies. However, the background job will not automatically turn on cloud flows. Makers have to turn them on manually.
+## DLP enforcement background jobs
+- Enforcement and suspension - Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, evaluates them, and then suspends the flows that violate the updated policy.
+- Reactivation - If the DLP enforcement background job finds a desktop flow that no longer violates any DLP, then the background job automatically turns it on. However,  the DLP enforcement background job won't automatically turn on cloud flows.
 
-### Known limitations
-1. There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. That function is planned to be available during the first quarter of 2022.
-1. There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This feature is planned for general availability.
-1. There's no support for "Set default group" from admin center for future added new destkop flow modules that allows admin to specify a different default group for any future added new connectors. This support is planned for general availability.  
+## DLP enforcement change process
+Periodically, DLP enforcement changes are needed. These changes can be a due to new DLP capabilities, an enforcement gap being filled, or a bug fix.
+When changes can impact existing flows, the following staged DLP enforcement change management process is used.
 
-### Original release schedule
+1. Investigating - The need for a DLP enforcement change confirmed and the product team investigates the specifics of the change.
+1. Learning - The product team implements the change and gathers data about the breadth of the effects of the change. DLP enforcement changes are documented here to explain the scope of the change. If the data suggests that some customers will be greatly affected, then communication is sent to those customers letting them know that a  change is coming.
+1. Soft enforcement - Turn on soft enforcement of DLP violations so owners of existing flows get notified about the change.
+    1. When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed.
+    1. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended.
+1. Hard enforcement - Turn on hard enforcement of DLP violations, so DLP policies are fully enforced. The DLP policies will be fully enforced when flows are saved  during DLP enforcement background job evaluation.
 
-> [!NOTE]
-> Below is the original release schedule that was first published on November 2nd, 2022. It is no longer applicable.
+## DLP enforcement change list
+A list of DLP enforcement changes and the date the changes were made. 
 
-|Region|Date Available|
-|---|---|
-|Canada|2021/11/1|
-|Switzerland, Brazil|2021/11/30|
-|Asia, UK, Australia, Japan|2021/12/6|
-|Europe|2022/02/17|
-|US(NAM)|2022/02/17| 
-|Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), China regions|2022/2/17| 
+| Date | Description | Reason for change | Stage |
+|-|-|-|-|
+|May 2022 | Delegated authorization background job enforcement | Flows that use delegated authorization have DLP policies enforced whilte the flow is being saved, but not during background job evaluation | Learning |
 
-
+## Known limitations
+[Learn about DLP known issues](/power-platform/admin/dlp-known-issues)
 
 ## Next steps
 
