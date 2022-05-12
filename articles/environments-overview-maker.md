@@ -22,7 +22,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Choosing an environment
+# Learn about Power Automate environments
 
 This article introduces you to Power Automate **environments** in which you can create, and securely isolate your flows, gateways, connections, and other resources.
 
