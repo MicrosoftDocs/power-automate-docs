@@ -179,7 +179,7 @@ Merges multiple PDF files into a new one
 |Merged PDF path|No|File||The path to store the merged PDF|
 |If file exists|N/A|Overwrite, Don't overwrite, Add sequential suffix|Add sequential suffix|Specifies what to do in case the destination file already exists|
 |Passwords|Yes|Encrypted value||The delimited passwords. The order should be the same as the order of the input PDFs. Leave this blank if the PDFs aren't password protected|
-|Delimiter|Yes|Text value|,|A custom password delimiter. This delimiter shouldn't be part of any of the passwords|
+|Delimiter|No|Text value|,|A custom password delimiter. This delimiter shouldn't be part of any of the passwords|
 
 
 ##### Variables Produced

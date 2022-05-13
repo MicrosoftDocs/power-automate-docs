@@ -65,6 +65,7 @@
     items:
     - name: Add an action
       href: multi-step-logic-flow.md
+      displayName: Copy and paste actions
     - name: Add a condition
       href: add-condition.md
     - name: Use data operations
@@ -73,6 +74,8 @@
       href: use-expressions-in-conditions.md
     - name: Store and manage values in variables
       href: create-variable-store-values.md
+    - name: Manage sensitive input like passwords
+      href: how-tos-use-sensitive-input.md
     - name: Cancel or resubmit flow runs in bulk
       href: how-tos-bulk-resubmit.md
     - name: Use Visio to model flows
@@ -120,7 +123,7 @@
         href: create-approval-response-options.md
       - name: Known issues and limitations
         href: approvals-known-issues.md
-    - name: Use flows with Office 365 Outlook email
+    - name: Use flows with Microsoft 365 Outlook email
       items:
       - name: Overview
         href: email-overview.md
@@ -421,8 +424,6 @@
         href: ./desktop-flows/how-to/autofit-excel-columns-vbscript.md 
       - name: Unhide worksheets in Excel using VBScript
         href: ./desktop-flows/how-to/unhide-excel-worksheets-vbscript.md 
-      - name: Convert Excel to PDF using VBScript
-        href: ./desktop-flows/how-to/convert-excel-pdf-vbscript.md 
     - name: Use images, image recognition and OCR
       items:
       - name: Use image recognition on machines with different screen resolutions
@@ -477,6 +478,8 @@
         href: ./desktop-flows/how-to/convert-text-datetime.md        
       - name: Convert data using PowerShell
         href: ./desktop-flows/how-to/convert-data-powershell.md
+      - name: Convert Excel to PDF using VBScript
+        href: ./desktop-flows/how-to/convert-excel-pdf-vbscript.md 
       - name: Convert Base64 text to hexadecimal format
         href: ./desktop-flows/how-to/convert-base64-hexadecimal-format.md
     - name: Run and troubleshoot SQL queries    
@@ -491,8 +494,6 @@
       href: ./desktop-flows/how-to/handle-custom-forms.md  
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
-    - name: Run SQL queries to Microsoft Access
-      href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
     - name: Run desktop flow from other desktop flows
       href: ./desktop-flows/how-to/run-desktop-flow-action.md
     - name: Set screen resolution on unattended mode

@@ -83,7 +83,7 @@ Retrieves the current date or the current date and time
 |-----|-----|-----|-----|-----|
 |Retrieve|N/A|Current date and time, Current date only|Current date and time|Specify whether to get the date and time, or just the date. If the latter is chosen, the time value will be stored as midnight (0:00:00)|
 |Time zone|N/A|System time zone, Specific time zone|System time zone|Whether to use the system's time zone or a custom one|
-|Country/region|Yes|Text value|Europe/Bucharest|The country/region to get the time of or add a numeric value as the hours that will be added in the UTC time zone|
+|Country/region|No|Text value|Europe/Bucharest|The country/region to get the time of or add a numeric value as the hours that will be added in the UTC time zone|
 
 
 ##### Variables Produced

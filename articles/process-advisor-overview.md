@@ -18,7 +18,7 @@ search.audienceType:
 
 # Overview of process advisor
 
- The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. It can also help you improve how you work by finding opportunities for automation. Process advisor offers *task mining* and *process mining* capabilities to do this.
+ The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them with *flows*. It can also help you improve how you work by finding opportunities for automation. Process advisor offers *task mining* and *process mining* capabilities to do this. To learn more about flows, go to [Overview of the types of flows in Power Automate](flow-types.md).
 
 Task mining and process mining share the same goal of improving process efficiency. The main difference is their area of focus:
 
@@ -26,11 +26,9 @@ Task mining and process mining share the same goal of improving process efficien
 
 - **Process mining:** Enables you to gain a deep understanding of your processes using event log files that you can get from your system of record (apps you use in your processes). Process mining displays maps of your processes with data and metrics to recognize performance issues.
 
-## When to use task mining or process mining
+## When to use task mining
 
-Here are some reasons to help you decide to use task mining or process mining:
-
-### Use task mining to:
+Here are some reasons to help you decide to use task mining.
 
 - Understand what employees actually do while performing each task.
 
@@ -40,8 +38,9 @@ Here are some reasons to help you decide to use task mining or process mining:
 
 - Automate tasks that would accelerate processes and reduce human errors.
 
+## When to use process mining
 
-### Use process mining to:
+Here are some reasons to help you decide to use process mining.
 
 - See the actual steps to perform a process.
 

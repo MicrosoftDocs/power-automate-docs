@@ -193,7 +193,7 @@ Change the name of one or more files
 |Separator|N/A|Nothing, Space, Dash, Period, Underscore|Space|Specifies what to use to separate the original file name and the number added, including the option to not use a separator|
 |Separator|N/A|Nothing, Space, Dash, Period, Underscore|Space|Specifies what to use to separate the original file name and the datetime value added, including the option to not use a separator|
 |Use padding|N/A|Boolean value|False|Specifies whether to use padding|
-|Datetime format|Yes|Text value|yyyyMMdd|The format of the datetime value to add to the file name, such as MM/dd/yyyy for date, and hh:mm:sstt for time|
+|Datetime format|No|Text value|yyyyMMdd|The format of the datetime value to add to the file name, such as MM/dd/yyyy for date, and hh:mm:sstt for time|
 |Make each number at least|Yes|Numeric value|3|The minimum length for each number added|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the folder|
 

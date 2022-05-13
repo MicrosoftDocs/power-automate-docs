@@ -81,7 +81,7 @@ Retrieve email messages from the specified Exchange server
 |Shared mailbox address|No|Text value||The address of the shared mailbox to retrieve email messages from|
 |Retrieve email messages from custom folder|N/A|Boolean value|False|Specifies whether to retrieve email messages from a custom folder or a predefined Exchange folder|
 |Exchange folder|N/A|Inbox, Deleted items, Drafts, Outbox, Sent items, Junk email|Inbox|A predefined Exchange folder to retrieve email messages from|
-|Mail folder|Yes|Text value|Inbox|The name or path (e.g. folder1\folder2) of the mail-folder to retrieve email messages from|
+|Mail folder|No|Inbox|The name or path (e.g. folder1\folder2) of the mail-folder to retrieve email messages from|
 |Retrieve|N/A|All email messages, Unread email messages only, Read email messages only|Unread email messages only|Specifies whether to retrieve all email messages in the folder or only the unread ones|
 |Mark as read|N/A|Boolean value|True|Specifies whether to mark as read the retrieved email messages or leave them as is|
 |From contains|Yes|Text value||The full email address of the sender to retrieve messages from. Leave this attribute blank to retrieve all messages regardless of the sender|
@@ -145,7 +145,7 @@ Move, delete or mark as unread an email message (or a list of email messages)
 |Shared mailbox address|No|Text value||The address of the shared mailbox to retrieve email messages from|
 |Move to custom folder|N/A|Boolean value|False|Specifies whether to move email messages to a custom folder or a predefined Exchange folder|
 |Exchange folder|N/A|Inbox, Deleted items, Drafts, Outbox, Sent items, Junk email|Inbox|A predefined Exchange folder to move email messages from|
-|Mail folder|Yes|Text value|Inbox|The name or path (e.g. folder1\folder2) of the mail-folder to move email messages to|
+|Mail folder|No|Text value|Inbox|The name or path (e.g. folder1\folder2) of the mail-folder to move email messages to|
 
 
 ##### Variables Produced
