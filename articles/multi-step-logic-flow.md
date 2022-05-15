@@ -135,7 +135,7 @@ Follow these steps to add a comment to any action or trigger in your flow.
 1. Enter a comment to your action with an @mention to others. If you do this, an email notification will be sent to them when you select the **Send** icon.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the @mention or comment box.](./media/multi-step-logic-flow/mention.png "Mention or comment")
+    >![Screenshot of the mention or comment box.](./media/multi-step-logic-flow/mention.png "Mention or comment")
 
     If the person you want to @mention isn't a co-owner of the flow, they'll get the **Share and notify** option. Select this option to share the flow with the other user, and send an email notification automatically.
 
