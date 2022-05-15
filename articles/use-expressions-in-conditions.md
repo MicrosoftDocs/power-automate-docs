@@ -48,7 +48,7 @@ Here's what you'll need to complete this walkthrough.
 * Your own spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
 * Microsoft 365 Outlook (While we use Outlook here, you can use any supported email service in your flows.)
 
-## Use the or expression
+## Use the 'or' expression
 
 Sometimes your workflow needs to take an action if the value of an item is valueA *or* valueB. For example, you may be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
 
@@ -60,7 +60,7 @@ Sometimes your workflow needs to take an action if the value of an item is value
 Here's an example of what the spreadsheet might look like:
 
 >[!div class="mx-imgBorder"]
->![Screenshot of a sample spreadsheet.](./media/use-expressions-in-conditions/spreadsheet-table.png "Sample spreadsheet")
+>![Screenshot of a sample spreadsheet with a Status column.](./media/use-expressions-in-conditions/spreadsheet-table.png "Sample spreadsheet")
 
 Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that's set to **completed** or **unnecessary**.
 
@@ -73,7 +73,7 @@ Let's create the flow.
 1. On the left pane, select **My flows**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the menu with the My flows option.](includes/media/modern-approvals/select-my-flows.png "Mey flows option")
+    >![Screenshot of the menu with the My flows option.](includes/media/modern-approvals/select-my-flows.png "My flows option")
 
 1. Select **New flow** > **Scheduled cloud flow**.
 
@@ -96,7 +96,7 @@ Let's create the flow.
 1. Select **New step**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the Next step button.](includes/media/new-step/action.png "Next step")
+    >![Screenshot of the New step button.](includes/media/new-step/action.png "New step")
 
 1. Search for **rows**, and then select **Excel Online (Business)**.
 
@@ -161,13 +161,13 @@ Let's create the flow.
 1. In the **Key Value** field, insert the **\_PowerAppsId_** dynamic value.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the Key Column and Key Value fields in the Delete a row card.](includes/media/new-step/delete-excel-row.png "Delete a row")
+    >![Screenshot of the Key Column and Key Value fields in the Delete a row card.](includes/media/new-step/delete-excel-row.png "Delete a row card fields")
 
 1. Save your flow.
 
 ### Run the flow with the 'or' expression
 
-The flow runs after you save it. If you created the spreadsheet shown earlier in this tutorial, here's what the it looks like after the run completes.
+The flow runs after you save it. If you created the spreadsheet shown earlier in this tutorial, here's what it looks like after the run completes.
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of the spreadsheet when the 'Or'expression completes.](./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png "Spreadsheet after the 'or' expression completes")
@@ -246,7 +246,7 @@ Use the **and** expression with the **less** expression since there are two cond
 
 ## Combine the 'greater' and 'less' expressions in an 'and' expression
 
-Use the **greater** expression to identify the employees who have paid less than the full amount due and use the **less** expression to determine if the payment due date is less than one day away from the current date. You can then the **Send an email** action to send reminder emails to those who haven't paid in full and the due date is less than one day away.
+Use the **greater** expression to identify the employees who have paid less than the full amount due and use the **less** expression to determine if the payment due date is less than one day away from the current date. You can then use the **Send an email** action to send reminder emails to those employees who haven't paid in full and the due date is less than one day away.
 
 Here's a view of the spreadsheet table.
 

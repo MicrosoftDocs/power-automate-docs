@@ -1,5 +1,5 @@
 ---
-title: Understand data operations in Power Automate (contains video) | Microsoft Docs
+title: Use data operations in Power Automate (contains video) | Microsoft Docs
 description: Learn to perform operations such as create HTML tables, create CSV tables, compose, join, select, and filter arrays with Power Automate.
 services: ''
 suite: flow
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use data operations in Power Automate
+# Use data operations
 
 In this tutorial, you'll learn about some common data operations in Power Automate such as compose, join, select, filter arrays, create tables, and parse JSON. These are available to manipulate data when you create flows.
 
@@ -34,11 +34,11 @@ Here's a quick video about data operations.
 * Access to Power Automate.
 * A tool such as [PostMan](https://www.getpostman.com/postman) to send HTTP POST requests with a JSON array to your flow.
 
-## Use the compose action
+## Use the 'compose' action
 
 Use the **Data Operation - Compose** <!--note from editor: Here and throughout, you don't need to repeat the name of the action. The name in the UI isn't confusing, but these parenthetical phrases kind of are. Edits to the rest of this sentence are suggested.-->action to save yourself from having to enter the same data multiple times as you're designing a cloud flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
 
-1. Search for **Compose**, and then select the **Compose - Data Operation** action.
+1. Search for **compose**, and then select the **Compose - Data Operation** action.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of searching for and selecting the Compose action.](./media/data-operations/search-select-compose-2.png "Compose - Data Operation action")
@@ -51,9 +51,9 @@ Use the **Data Operation - Compose** <!--note from editor: Here and throughout, 
 > [!TIP]
 > To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
 
-When you need to access the contents of the compose action, do so by following these steps:
+When you need to access the contents of the compose action, do so by following these steps.
 
-1. Add an action, such as **Data Operation – Join**.
+1. Add an action, such as **Join - Data Operation**.
 
 1. Select the control to which you'd like to add the contents you saved in the compose action.
 
@@ -62,9 +62,9 @@ When you need to access the contents of the compose action, do so by following t
 1. On the **Dynamic content** tab, in the **Compose** section, select **Outputs**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of using output from the compose action.](./media/data-operations/use-compose-output-2.png "Use output from the compose action")
+    >![Screenshot of using Outputs from the Compose action.](./media/data-operations/use-compose-output-2.png "Use Outputs from the Compose action")
 
-## Use the join action
+## Use the 'join' action
 
 Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You'll use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
 
@@ -85,7 +85,7 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
     >[!div class="mx-imgBorder"]
     >![Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.](./media/data-operations/join-output-2.png "Output of the Data Operation – Join action")
 
-## Use the select action
+## Use the 'select' action
 
 Use the **Data Operation – Select** action to transform the shape of objects in an array. For example, you can add, remove, or rename elements in each object in an array.
 
@@ -123,9 +123,9 @@ To do this:
    > [!TIP]
    > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
 
-## Use the filter array action
+## Use the 'filter array' action
 
-Use the **Data Operation - Filter array** action to reduce the number of objects in an array to a subset that matches the criteria you provide.
+Use the **Filter array - Data Operation** action to reduce the number of objects in an array to a subset that matches the criteria you provide.
 
 > [!NOTE]
 >
@@ -148,7 +148,7 @@ Let's do this:
     >[!div class="mx-imgBorder"]
     >![Screenshot of in the From section, the first line is set to Body. In the second line, first is set equal to Eugenia.](./media/data-operations/add-configure-filter-array-2.png "Configure the Filter array")
 3. Save, and then run your flow.
-   
+
     You can use [PostMan](https://www.getpostman.com/postman) to generate a web request that sends a JSON array to your flow.
 4. When your flow runs, the output looks like the following array. Notice that only objects in which `first` is set to `Eugenia` are included in the output of the action.
 
@@ -156,15 +156,15 @@ Let's do this:
     [ { "first": "Eugenia", "last": "Lopez" }]
     ```
 
-## Use the create CSV table action
+## Use the 'create CSV table' action
 
-Use the **Data Operation - Create CSV table** action to change a JSON array input into a comma-separated value (CSV) table. You can keep the headers visible in the CSV output. In this example, you convert the following array into a CSV table:
+Use the **Create CSV table - Data Operation** action to change a JSON array input into a comma-separated value (CSV) table. You can keep the headers visible in the CSV output. In this example, you convert the following array into a CSV table:
 
 ``` JSON
 [ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
 ```
 
-1. Find, add, and then configure the **Data Operation - Create CSV table** action to resemble the following image.
+1. Find, add, and then configure the **Create CSV table - Data Operation** action to resemble the following image.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of Configuring the Create CSV table action. From is set to Body, and Columns is set to Automatic.](./media/data-operations/create-csv-table-2.png "Configure the CSV table action")
@@ -177,11 +177,11 @@ Use the **Data Operation - Create CSV table** action to change a JSON array inpu
     >[!div class="mx-imgBorder"]
     >![Screenshot of the output from the create CSV table action, showing "first,last" in the first row followed by "Eugenia,Lopez" and "Elizabeth,Moore."](./media/data-operations/create-csv-table-output-2.png "CSV table output in the Body section")
 
-## Use the create HTML table action
+## Use the 'create HTML table' action
 
-Use the **Data Operation - Create HTML table** action to change a JSON array input into an HTML table. You can keep the headers visible in the HTML output.
+Use the **Create HTML table - Data Operation** action to change a JSON array input into an HTML table. You can keep the headers visible in the HTML output.
 
-To do this, follow the steps in previous section for creating a CSV table, but use the **Data Operation - Create HTML table** action instead of **Create CSV table**.
+To do this, follow the steps in previous section for creating a CSV table, but use the **Create HTML table - Data Operation** action instead of **Create CSV table**.
 
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.

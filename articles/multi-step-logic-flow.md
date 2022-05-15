@@ -28,7 +28,7 @@ Customize a cloud flow by adding one or more advanced options and multiple actio
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Prerequisites
-* [Create a cloud flow](get-started-logic-flow.md)
+[Create a cloud flow](get-started-logic-flow.md)
 
 ## Add another action
 In this procedure, you'll add an action in the middle of the flow. This action will save a file in your Dropbox, archiving the item in the list.
@@ -56,7 +56,7 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 1. Add the text that you want the file to contain by typing into the **File content** box. You can also add tokens into the **File content** box.
 
     > [!div class="mx-imgBorder"]
-    >![Screenshot of a sample file name and content.](./media/multi-step-logic-flow/create-file-name-and-contents.png "File name and content")
+    >![Screenshot of a sample file name and content.](./media/multi-step-logic-flow/create-file-name-and-contents.png "File name and file content")
    
    > [!IMPORTANT]
    > If the file name you enter matches an existing file's name in the selected folder, the existing file will be overwritten.
@@ -85,10 +85,10 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 
 ## Copy and paste actions
 
-If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you are building a condition and want similar actions in the **If yes** side and the **If no** side, you can build the first action in one side and then copy it to the other side. This is an alternative to creating both actions from scratch.
+If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you're building a condition and want similar actions in the **If yes** side and the **If no** side, you can build the first action in one side and then copy it to the other side. This is an alternative to creating both actions from scratch.
 
 ### To copy an action
-1. On the action menu heading, select **...** (the elipses).
+1. On the action menu heading, select **...** (the ellipses).
 1. Select **Copy to my clipboard**. 
 1. Select **New step** where you want your action to go. 
 
@@ -129,15 +129,15 @@ Follow these steps to add a comment to any action or trigger in your flow.
 1. Select **New Comment**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the menu that contains the New Comment option.](./media/multi-step-logic-flow/comments-actions-triggers.png "New comment option")
+    >![Screenshot of the menu that contains the New Comment option.](./media/multi-step-logic-flow/comments-actions-triggers.png "New Comment option")
 
    The comments pane opens.
 1. Enter a comment to your action with an @mention to others. If you do this, an email notification will be sent to them when you select the **Send** icon.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the @mention or comment box.](./media/multi-step-logic-flow/mention.png "@mention or comment")
+    >![Screenshot of the @mention or comment box.](./media/multi-step-logic-flow/mention.png "Mention or comment")
 
-    If the person you want to @mention is not a co-owner of the flow, they'll get the **Share and notify** option. Select this option to share the flow with the other user, and send an email notification automatically.
+    If the person you want to @mention isn't a co-owner of the flow, they'll get the **Share and notify** option. Select this option to share the flow with the other user, and send an email notification automatically.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the Grant access box with the Share and notify button.](./media/multi-step-logic-flow/grant.png "Share and notify button")
@@ -183,6 +183,6 @@ Do you struggle with writing expressions in your flow actions? You can make use 
     >![Screenshot of an expression with an error.](media/ErroredExpression.png "Expression with an error")
  
 > [!NOTE]
-> Some actions may not support the new expression editor.
+> Some actions might not support the new expression editor.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -24,7 +24,7 @@ search.audienceType:
 
 # Add a condition to a cloud flow
 
-Use a **Condition** to specify that a cloud flow performs one or more tasks only if a condition is true or false. For example, you can use a **Condition** that indicates that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
+Use a *condition* to specify that a cloud flow performs one or more tasks only if a condition is true or false. For example, you can use a condition that indicates that you'll get an email only if a tweet that contains a keyword is retweeted at least 10 times.
 
 Here's a video tutorial about conditions.
 
@@ -44,7 +44,7 @@ This tutorial uses an example with a Twitter trigger and a SharePoint action.
 1. On the list of flows, select the flow you want to edit by placing a check mark in the circle and then selecting **More commands** (the three dots).
 
   >[!div class="mx-imgBorder"]
-  >![Screenshot of the More commands icon.](./media/add-condition/select-edit.png "Select More commands")
+  >![Screenshot of the More commands icon.](./media/add-condition/select-edit.png "More commands")
 
 4. Select **Edit**.
 
@@ -85,7 +85,7 @@ This tutorial uses an example with a Twitter trigger and a SharePoint action.
 
 Learn about all the available [expressions](/azure/logic-apps/logic-apps-workflow-definition-language).
 
-## Next steps
+## Next step
 
 Learn how to [use expressions](use-expressions-in-conditions.md) in conditions in advanced mode.
 
