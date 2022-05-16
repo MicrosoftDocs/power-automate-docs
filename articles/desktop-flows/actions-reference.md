@@ -21,7 +21,7 @@ search.audienceType:
 
 In this section, you can find a reference to all actions of the Power Automate. 
 
-Click on any of the action groups and the list of actions will appear along with their parameters to assist you configure them.
+Select on any of the action groups and the list of actions will appear along with their parameters to assist you configure them.
 
 |A - C|D - G|H - R|S - Z|
 |----|----|----|----|
