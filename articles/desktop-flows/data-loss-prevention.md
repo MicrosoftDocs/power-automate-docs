@@ -5,7 +5,7 @@ author: mariosleon
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/10/2021
+ms.date: 05/16/2022
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -68,7 +68,7 @@ To be able to launch the desktop flow from a cloud flow, edit the desktop flow i
 >[!IMPORTANT]
 > In case a data loss prevention (DLP) policy rule is set to a desktop flow after it has been used in a cloud flow, there won't be any notification and the cloud flow will error out at that step. In case a desktop flow violates any rules and you correct it you will need to go back to the cloud flow and reselect it from the list.
 
-## Next steps
+### More info
 
 * [Learn more about Power Automate DLP](../prevent-data-loss.md)
 * [Learn more about DLP policies](/power-platform/admin/wp-data-loss-prevention)
