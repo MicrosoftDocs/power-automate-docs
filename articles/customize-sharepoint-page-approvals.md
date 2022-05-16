@@ -17,6 +17,10 @@ ms.date: 05/02/2022
 ms.author: deonhe
 ---
 
+<!-- question from editor: In the first note, does it mean approvals isn't available in ANY government cloud environments, or is it available in SOME but not ALL government cloud environments? -->
+<!-- Do the two steps under line 72 need to be done in that order? If so, change to a numbered list. -->
+
+
 # Manage SharePoint page approvals with Power Automate
 
 SharePoint site admins can use Power Automate to require new or updated site pages to be approved before being published.
@@ -47,16 +51,16 @@ You must be a SharePoint site admin to perform the activities in this article.
 
 1. Select **Create flow**.
 
-1. Optionally, you might need to sign into the services that this Power Automate template uses.
+1. Optionally, you might need to sign in to the services that this Power Automate template uses.
 
 1. Select **Continue**.
 
-1. Provide a **Flow name**, at least one name in the  **Approvers** box, and then select **Create**.
+1. Provide a **Flow name**, at least one name in the **Approvers** box, and then select **Create**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot that shows the create menu item.](media/customize-sharepoint-page-approvals/flow-name-approvers-create.png "Create menu item")
 
-That's it! Now, each time a page is added or modified, an approval request goes to the **Approvers** you listed in the flow.
+Your flow is complete. Now, each time a page is added or modified, an approval request goes to the **Approvers** you listed in the flow.
 
 The page approval flow is just like any other flow, so it's listed in the **My flows** tab.
 
@@ -65,7 +69,7 @@ The page approval flow is just like any other flow, so it's listed in the **My f
 
 ## Submit a page for approval
 
-Now that you've created a page approval flow, anyone who adds or changes a page will need to do the following steps.
+Now that you've created a page approval flow, anyone who adds or changes a page will need to do the following steps:
 
  - Make a change to the site (add a new page, for example) and then save the change.
 
