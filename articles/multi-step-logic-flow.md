@@ -151,7 +151,7 @@ Follow these steps to add a comment to any action or trigger in your flow.
 
 ### Limitations
 
-- Makers must save the flow at least once before a comment can be added.
+- Makers must save the flow at least once before they can add a comment.
 - The comment thread count icons don't appear for control actions such as condition, switch, and scope.
 - Comments aren't allowed for managed solution flows.
 - The **Share and notify** option is available only for non-solution aware flows. For solution aware flows, @mentioning is limited to users who are already co-owners of the flow.
