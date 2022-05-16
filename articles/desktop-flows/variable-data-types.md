@@ -100,7 +100,7 @@ Some of these data types are widely used throughout the application, such as **n
   > [!NOTE]
   > The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.
 
-  If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']** notation.
+  If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']%** notation.
 
   If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a datarow. 
 
@@ -228,7 +228,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 ### Dates and time
 
-- **Datetime** - Contains date and time information. To create a datetime variable through the **Set Variable action**, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
+- **Datetime** - Contains date and time information. To create a datetime variable through the **Set Variable** action, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
 
   | Notation | Description |
   |----------|-------------|
