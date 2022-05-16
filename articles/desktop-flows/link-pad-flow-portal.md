@@ -22,7 +22,7 @@ search.audienceType:
 ## Prerequisites
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md).
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 - To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
 

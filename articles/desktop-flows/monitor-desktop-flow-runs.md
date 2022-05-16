@@ -76,7 +76,7 @@ You may have several desktop flow runs that were triggered by one flow run. Clic
 ## View the run queue for a queued run 
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md).
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 Machines and gateways can be used to run multiple desktop flows. To see the placement of a desktop flow in the run queue, click the three dots next to the name of the desktop flow and select **See desktop flow in run queue**.
 
