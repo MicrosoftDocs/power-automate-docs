@@ -1,6 +1,6 @@
 ---
 title: Power Automate for desktop prerequisites & limitations | Microsoft Docs
-description: Power Automate prerequisites & limitations
+description: Power Automate for desktop prerequisites & limitations
 services: ''
 suite: flow
 documentationcenter: na

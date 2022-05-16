@@ -6,7 +6,7 @@ author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: overview
 
-ms.date: 11/02/2021
+ms.date: 05/02/2022
 ms.author: tatn
 ms.reviewer: v-aangie
 search.app: 
@@ -56,14 +56,14 @@ Explore the sections in [Task mining](task-mining-overview.md) and [Process mini
 
 - Business scenarios
 - Tutorials
--  Guided procedures
+- Guided procedures
 - Videos
 
 ## Licensing
 
 Process advisor is licensed as part of Power Automate user licenses. If you don’t have a license, you can start a Power Automate trial to try process advisor.
 
-For more information about process advisor licensing, go to [Power Automate pricing](https://us.flow.microsoft.com/en-us/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
+For more information about process advisor licensing, go to [Power Automate pricing](https://us.flow.microsoft.com/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
 
 For complete licensing details, go to the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
 
@@ -77,6 +77,6 @@ Before you start using process advisor, make sure you have the following prerequ
 
 - A [Power Automate](https://powerautomate.microsoft.com/) license.
 
-- [Power Automate for desktop](desktop-flows/introduction.md).
+- [Desktop flows](desktop-flows/introduction.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
