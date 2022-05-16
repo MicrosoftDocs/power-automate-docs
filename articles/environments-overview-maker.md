@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/07/2020
+ms.date: 05/16/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -60,7 +60,7 @@ You’ve created a cloud flow named *NewEmployee* in the *Human Resources* envir
 Follow these steps to switch environments:
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
-1. In the top right corner, you will see the environment to which you are currently connect.
+1. In the top right corner, you will see the environment to which you are currently connected.
 
    ![profile image.](./media/environments-overview-maker/default-environment.png)
 
