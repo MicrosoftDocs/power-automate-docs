@@ -228,7 +228,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 ### Dates and time
 
-- **Datetime** - Contains date and time information. To create a datetime variable through the **Set Variable action**, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
+- **Datetime** - Contains date and time information. To create a datetime variable through the **Set Variable** action, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
 
   | Notation | Description |
   |----------|-------------|
