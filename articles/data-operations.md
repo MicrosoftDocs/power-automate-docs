@@ -64,7 +64,7 @@ When you need to access the contents of the compose action, do so by following t
     >[!div class="mx-imgBorder"]
     >![Screenshot of using Outputs from the Compose action.](./media/data-operations/use-compose-output-2.png "Use Outputs from the Compose action")
 
-## Use the 'join' action
+## Use the join action
 
 Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You'll use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
 
@@ -85,7 +85,7 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
     >[!div class="mx-imgBorder"]
     >![Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.](./media/data-operations/join-output-2.png "Output of the Data Operation – Join action")
 
-## Use the 'select' action
+## Use the select action
 
 Use the **Data Operation – Select** action to transform the shape of objects in an array. For example, you can add, remove, or rename elements in each object in an array.
 
@@ -123,7 +123,7 @@ To do this:
    > [!TIP]
    > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
 
-## Use the 'filter array' action
+## Use the filter array action
 
 Use the **Filter array - Data Operation** action to reduce the number of objects in an array to a subset that matches the criteria you provide.
 
@@ -156,7 +156,7 @@ Let's do this:
     [ { "first": "Eugenia", "last": "Lopez" }]
     ```
 
-## Use the 'create CSV table' action
+## Use the create CSV table action
 
 Use the **Create CSV table - Data Operation** action to change a JSON array input into a comma-separated value (CSV) table. You can keep the headers visible in the CSV output. In this example, you convert the following array into a CSV table:
 
