@@ -5,7 +5,7 @@ author: msftman
 manager: kVivek
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 05/11/2022
+ms.date: 05/16/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -19,8 +19,8 @@ search.audienceType:
 If you or someone else accidentally deletes a flow that is not part of a solution, you can use PowerShell to restore it within 28 days of deletion.
 
 >[!NOTE]
-> - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to file a support ticket with Microsoft for assistance.
-> - Flows that have been deleted earlier than 28 days can't be recovered either by using PowerShell script or Microsoft support.
+> - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to create a support ticket with Microsoft for assistance.
+> - Flows that have been deleted more than 28 days ago can't be recovered, neither with PowerShell script nor Microsoft support.
 
 ## Prerequisites
 
@@ -50,7 +50,12 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
    ``` PowerShell
    Get-AdminFlow -EnvironmentName 41a90621-d489-4c6f-9172-81183bd7db6c -IncludeDeleted $true
+   //To view examples: Get-Help Get-AdminFlow -Examples
    ```
+
+   >[!TIP]
+   >Navigate to the URL of any of the flows in your environment to get your environment name (flow.microsoft.com/Environments/<**EnvironmentName**>/Flows) which is required for subsequent steps. Don't omit the prefixed words in the URL for example, Default-8ae09283902-.... 
+
 
    ![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png)
 
@@ -60,15 +65,14 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
    Get-AdminFlow Testing -EnvironmentName 3c2f7648-ad60-4871-91cb-b77d7ef3c239 -IncludeDeleted $true
    ```
 
-1. Make a note of the flowID of the flow you want to restore.
+1. Make a note of the flowID of the flow you want to restore from the previous step.
 
-   >[!TIP]
-   >Navigate to the URL of any of the flows in your environment to get your environment ID. Do not omit the prefixed words in the URL for example, Default-8ae09283902-....
 
 1. Run the following script to restore the soft-deleted flow with flowID 4d1f7648-ad60-4871-91cb-b77d7ef3c239 in an environment named Default-55abc7e5-2812-4d73-9d2f-8d9017f8c877.
 
    ``` PowerShell
    Restore-AdminFlow -EnvironmentName Default-55abc7e5-2812-4d73-9d2f-8d9017f8c877 -FlowName 4d1f7648-ad60-4871-91cb-b77d7ef3c239
+    //To view examples: Get-Help Restore-AdminFlow -Examples
    ```
 
 1. Optionally, you can run the ```Restore-AdminFlow``` script with the following arguments to restore multiple deleted flows.
