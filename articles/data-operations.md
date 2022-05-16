@@ -34,7 +34,7 @@ Here's a quick video about data operations.
 * Access to Power Automate.
 * A tool such as [PostMan](https://www.getpostman.com/postman) to send HTTP POST requests with a JSON array to your flow.
 
-## Use the 'compose' action
+## Use the compose action
 
 Use the **Data Operation - Compose** <!--note from editor: Here and throughout, you don't need to repeat the name of the action. The name in the UI isn't confusing, but these parenthetical phrases kind of are. Edits to the rest of this sentence are suggested.-->action to save yourself from having to enter the same data multiple times as you're designing a cloud flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
 
