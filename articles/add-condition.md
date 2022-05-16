@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/13/2022
+ms.date: 05/16/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -37,7 +37,7 @@ Here's a video tutorial about conditions.
 
 This tutorial uses an example with a Twitter trigger and a SharePoint action.
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://flow.microsoft.com).
 
 1. On the left pane, select **My flows**.
 
