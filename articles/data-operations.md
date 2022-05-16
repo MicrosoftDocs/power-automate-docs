@@ -177,7 +177,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
     >[!div class="mx-imgBorder"]
     >![Screenshot of the output from the create CSV table action, showing "first,last" in the first row followed by "Eugenia,Lopez" and "Elizabeth,Moore."](./media/data-operations/create-csv-table-output-2.png "CSV table output in the Body section")
 
-## Use the 'create HTML table' action
+## Use the create HTML table action
 
 Use the **Create HTML table - Data Operation** action to change a JSON array input into an HTML table. You can keep the headers visible in the HTML output.
 
