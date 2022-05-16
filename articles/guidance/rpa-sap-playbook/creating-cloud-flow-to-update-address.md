@@ -12,7 +12,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/01/2021
+ms.date: 05/01/2022
 ms.author: kathyos
 ms.reviewer: deonhe
 ---
@@ -90,7 +90,6 @@ We highly recommended that you create cloud flows, desktop flows and other Micro
     :::image type="complex" source="media/add-4-get-secret-Azure-Key-Vault-actions.png" alt-text="Add Get secret actions to the canvas.":::
     Screenshot showing four actions: Get SAP System Id, renamed SAP-HCM-SystemId; Get SAP Client, renamed SAP-HCM-Client; Get SAP User, renamed SAPUser; and Get SAP Password, renamed SAPPassword.
     :::image-end:::
-<!--![Screenshot of Get SAP User action with SAPUser secret  Get SAP Password action with SAPPassword secret  Get SAP System ID action with SAP HCM SystemId secret  and Get SAP Client action with SAP HCM Client secret.](media/add-4-get-secret-Azure-Key-Vault-actions.png)-->
 
 15. Select **More** (**…**) next to the action name, select **Settings**, turn on **Secure Inputs** and **Secure Outputs**, and then select **Done**. Repeat this step for the other three **Get secret** actions.
 
@@ -172,7 +171,7 @@ We highly recommended that you create cloud flows, desktop flows and other Micro
 
     ![Screenshot of the Send an email action being configured.](media/send-email-action-being-configured.png)
 
-32. In the **Try** container, select **New step**. Search for **Desktop flows**, and then select the **Run a flow built by<!--note from editor: Is it okay that some screenshots show this as "with"?--> Power Automate Desktop** action to add it to the flow.
+32. In the **Try** container, select **New step**. Search for **Desktop flows**, and then select the **Run a flow built by Power Automate Desktop** action to add it to the flow.
    
     ![Screenshot of adding the Run flow built by Power Automate Desktop action.](media/adding-run-flow-built-by-power-automate-desktop.png)
 
@@ -207,8 +206,6 @@ We highly recommended that you create cloud flows, desktop flows and other Micro
     Screenshot of the Run a flow built by Power Automate Desktop dialog with the following variables and their settings: SystemId, Client, SAPUser, SAPPassword all set as secret values; EffectiveDate as formatDateTime, Street as New Street, City as New City, State as New State, ZipCode as New ZIP Code, EmployeeId as Employee ID, AddressType as Address Type, and CountryCode as New Country.
     :::image-end:::
 
-<!--![Screenshot of Run a UI flow built by Power Automate Desktop box with all variables set.](media/run-a-UI-flow-built-by-PAD-with-variables-set.png)-->
-
 38. Select **Save** to save the flow.
 
     ![Screenshot of Save button in the Power Automate flow designer.](media/save-button-in-flow-designer.png)
@@ -217,17 +214,15 @@ We highly recommended that you create cloud flows, desktop flows and other Micro
 
     ![Screenshot of Test button in the Power Automate flow designer.](media/test-button-in-flow-designer.png)
 
-    <!--Todo: save and test... is it in the UI?-->
-
 40. Select **I'll perform the trigger action**, and then select **Save & Test**.
 
     ![Screenshot of the Test Flow dialog in the Power Automate portal.](media/test-flow-dialog-box.png)
 
-41. Authenticate if needed, and then select **Continue**.<!--note from editor: Please remove Apostolis's name from the image.  Also, should "UI flows" be "Desktop flows"?-->
+41. Authenticate if needed, and then select **Continue**.
 
     ![Screenshot of the Run flow dialog in the Power Automate portal with a sign-in area for connection authorization and Continue selected.](media/run-flow-dialog-with-sign-in-area.png)
 
-42. Supply values for all variables, and then select **Run flow**.<!--note from editor: Please remove Apostolis's name from the image. Also, should "UI flows" be "Desktop flows"?-->
+42. Supply values for all variables, and then select **Run flow**.
 
     ![Screenshot of the Run flow dialog in the Power Automate portal with values entered and the Run flow button selected.](media/run-flow-dialog-with-variables-and-run-flow-button.png)
 

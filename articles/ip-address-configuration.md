@@ -24,6 +24,7 @@ search.audienceType:
 ---
 
 # IP address configuration
+
 The [IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from which Power Automate requests are sent depends on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
 
 >[!IMPORTANT]
@@ -35,15 +36,17 @@ You should also consult the [Limits and Configuration](limits-and-config.md) art
 > Starting May 2022, Azure Logic Apps begins to enable availability zones in select regions for new Consumption logic apps. To support this capability, new IP addresses have been published for the Azure Logic Apps service and managed connectors. To ensure flows continue to work after this date, update your firewall configuration to include both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. For more information, see [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones).
 
 ## Logic Apps
+
 Calls made from a cloud flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Please reference [the Logic apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) for which IP addresses are used by that service.
 
 ## Connectors
-Calls made from a connector in a cloud flow (for example, the SQL API or the SharePoint API) come from these [IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
 
+Calls made from a connector in a cloud flow (for example, the SQL API or the SharePoint API) come from these [IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
 
 If you must authorize IP addresses for your Azure SQL database, you should use these addresses.
 
 ## Required services
+
 The following table lists the services to which Power Automate connects. Ensure none of these services are blocked on your network.
 
 | Domains | Protocols | Uses |
@@ -64,9 +67,11 @@ The following table lists the services to which Power Automate connects. Ensure 
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
 
 ## Approval email delivery
+
 Please see the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
 
 ## Desktop flows services required for runtime
+
 The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs.
 
 | Endpoint type | Domains | Protocols | Uses |

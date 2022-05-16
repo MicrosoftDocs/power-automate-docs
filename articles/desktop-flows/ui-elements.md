@@ -16,7 +16,7 @@ search.audienceType:
 ---
 # Automate using UI elements
 
-Power Automate for desktop utilizes UI elements to interact with applications and web pages without resorting to image recognition and absolute coordinates. UI elements are used as input in most UI automation and browser automation actions and identify specific elements on windows and web pages.
+Desktop flows utilize UI elements to interact with applications and web pages without resorting to image recognition and absolute coordinates. UI elements are used as input in most UI automation and browser automation actions and identify specific elements on windows and web pages.
 
 ## UI elements
 
