@@ -29,7 +29,7 @@ Each one of these action groups accepts a different category of UI elements. UI 
 
 ![Screenshot of the available UI elements in the Press button in window action.](media/ui-elements/ui-element-input.png)
 
-To add a new UI element to your flow, select to add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**. 
+To add a new UI element to your flow, select to add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Left Ctrl + Left click**. When the selection is finished, select **Done**. 
 
 ![Screenshot of a highlighted element.](./media/ui-elements/capturing-ui-elements.png)
 

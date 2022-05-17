@@ -241,6 +241,8 @@ Some of these data types are widely used throughout the application, such as **n
   | **ff**   | Milliseconds |
   | **zzz**  | UTC Offset	 |
 
+  For example, **%d"2022-03-25"%** assigns the 25th of March 2022 date to the target variable.
+
 [Dates and time data type properties](datatype-properties.md#dates)
 
 ### Email
