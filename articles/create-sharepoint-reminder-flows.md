@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/02/2022
+ms.date: 05/17/2022
 ms.author: deonhe
 ---
 
@@ -31,13 +31,13 @@ Lists created with Microsoft Lists and SharePoint libraries allow you to define 
 
 ## Create a reminder flow
 
- 1. [Create a list in Microsoft Lists](https://support.office.com/article/Create-a-list-in-SharePoint-0D397414-D95F-41EB-ADDD-5E6EFF41B083) with at least one DateTime column in the current view. 
+ 1. [Create a list in Microsoft Lists](https://support.office.com/article/Create-a-list-in-SharePoint-0D397414-D95F-41EB-ADDD-5E6EFF41B083) with at least one DateTime column in the current view.
  1. Select **Automate** > **Set a reminder** > **Date deactivated** (this is the column with the DateTime for the reminder).
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of how to select a reminder flow.](media/create-sharepoint-reminder-flows/select-reminder-flow.png "Select a reminder flow")
 
-1. Optionally, you might need to sign into the services that this Power Automate template uses.
+1. Optionally, you might need to sign in to the services that this Power Automate template uses.
      
 1. Select **Continue**.
 
