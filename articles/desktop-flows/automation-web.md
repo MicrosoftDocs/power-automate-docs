@@ -75,6 +75,10 @@ To extract a piece of data from a web page, use the **Get details of web page** 
 
 ![Screenshot of the Get details of web page action.](.\media\web-automation\get-details-of-web-page-action.png)
 
+Apart from the prepopulated options, you can manually select to retrieve any HTML attribute the selected web element may have. 
+
+Additionally, the **Get details of element on web page** action supports the **waelementrectangle** attribute that retrieves the top-left point and the dimensions of a web element. You can find more information regarding this attribute in [Get the coordinates and size of a web element](how-to/get-coordinates-size-web-element.md).
+
 ![Screenshot of the Get details of element on web page action.](.\media\web-automation\get-details-of-element-on-web-page-action.png)
 
 To extract large amounts of structured data, use the **Extract data from web page** action. After deploying the action, right-click on the required data on the web page to view the available options.
