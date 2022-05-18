@@ -76,8 +76,9 @@ Before you start using process advisor, make sure you have the following prerequ
   - For information about how to create an environment, go to [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
   - For information about how to add a database to an environment, go to [Add a Microsoft Dataverse database](/power-platform/admin/create-database).
 
-- An Environment Maker security role or similar if you want to set up dataflows for process mining.
-
+- An Environment Maker security role if you want to set up dataflows for process mining.
+    - If you're assigned an Environment Admin or System Admin role, go to [What are dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) to learn more.
+   
 - [Power Automate for desktop](desktop-flows/introduction.md) for task mining. You can download it from process advisor.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -28,10 +28,6 @@ Once you're done with setup, select **Analyze**. You'll be able to view the Anal
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-
-
-<!-- from editor: I changed the link text to the heading that the link opens to. -->
-
 For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
 
 ## Issues with dataflow refresh
@@ -119,7 +115,7 @@ This issue should occur only if you didn't properly map the columns in your data
 
 ### "Your entity contains no data, check your dataflow and try again."
 
-This issue should occur only if there is no data. Either the data source that you are connecting to has no data, or the power query expression you used filtered out all the data. Check your query and ensure that you can see some data rows in the preview table.
+This issue should occur only if there is no data. Either the data source that you're connecting to has no data, or the power query expression you used filtered out all the data. Check your query and ensure that you can see some data rows in the preview table.
 
 ### "The number of rows in your data exceeds the limit. [x] rows have been ignored."
 

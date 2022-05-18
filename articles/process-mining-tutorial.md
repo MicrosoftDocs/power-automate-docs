@@ -32,7 +32,6 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-
 ## Create a process
 
 1. Sign in to [Power Automate](https://flow.microsoft.com/).

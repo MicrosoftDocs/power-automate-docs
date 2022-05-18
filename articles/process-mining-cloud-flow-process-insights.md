@@ -65,6 +65,6 @@ On your flow details page, you can see a process insights card. When you engage 
 
 1. To get the most run path in your automation. select the most frequent variant.
 
-1. Customize your insights based on custom filters for your flow like flow version and flow success status.
+1. Customize your insights based on custom filters for your flow like flow version, action status, action status code, or action error.
 
 1. Select time analysis report to drill down into bottlenecks based on cases, variants, and time.
