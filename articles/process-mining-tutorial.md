@@ -2,13 +2,12 @@
 title: Get started with process mining in process advisor (preview) | Microsoft Docs
 description: This topic is a tutorial with sample data in process mining using the process advisor feature in Power Automate.
 author: nijemcevic 
-
 ms.subservice: process-advisor
 ms.topic: article
 ms.custom: intro-internal
-ms.date: 11/02/2021
+ms.date: 05/18/2022
 ms.author: tatn
-ms.reviewer: v-aangie
+ms.reviewer: angieandrews
 search.app: 
   - Flow[https://preview.flow.microsoft.com/en-us/?processinsights-core.tabularData=true](https://preview.flow.microsoft.com/en-us/?processinsights-core.tabularData=true)
 search.audienceType: 
@@ -102,9 +101,4 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of an analyzed process.](media/process-mining-tutorial/analytics.png "Process status is 'Analyzed'")
 
-
-<!-- editor note: I changed the link text to match the title of the page it opens. -->
-
 For a description of how to analyze the process map and a short video, go to [Visualize and gain insights from processes in process advisor (preview)](process-mining-visualize.md).
-
-
