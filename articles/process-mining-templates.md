@@ -103,7 +103,7 @@ To learn more, go to [Power Virtual Agents overview](/power-virtual-agents/funda
 
 Before you can visualize your Power Virtual Agents, you must have a Power Virtual Agent license. To learn more, go to [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 
-### Crete and run the Power Virtual Agents template
+### Create and run the Power Virtual Agents template
 
 The process of running a template is similar for all templates. Once you know how to run one template, it should be easy to run any template.
 
@@ -112,7 +112,7 @@ The process of running a template is similar for all templates. Once you know ho
     > [!div class="mx-imgBorder"]
     > ![!Screenshot of the Power Virtual Agents tile.](media/process-mining-templates/pva.png "Power Virtual Agents tile")
 
-1. Repeat steps 2 trough 14 in the [Create and run the Desktop Flows template](#create-and-run-the-desktop-flows-template) section in this article.
+1. Repeat steps 2 trough 14 in the [Create and run the Desktop Flows template](#create-and-run-the-desktop-flows-template) section earlier in this article.
 
 ### Visualize the process map and variants
 
