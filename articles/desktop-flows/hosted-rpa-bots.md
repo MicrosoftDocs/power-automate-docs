@@ -75,9 +75,9 @@ Hosted RPA bots (preview) can be created from the Power Automate portal:
 >[!NOTE]
 >
 > - You cannot go beyond the total number of bots assigned to your environment.
-> - If multiple Hosted RPA bots (preview) groups are used in the same environment, bots will be automatically load balanced between the groups. Learn more about [Hosted RPA bots (preview) load balancing](./HostedRPABots.md#load-balance-hosted-rpa-bots-preview).
+> - If multiple Hosted RPA bots (preview) groups are used in the same environment, bots will be automatically load balanced between the groups. Learn more about [Hosted RPA bots (preview) load balancing](./hosted-rpa-bots.md#load-balance-hosted-rpa-bots-preview).
 
-7. Select a **VM image** from the ones you have access to. We propose a default Windows 11 image called "Default Windows Desktop Image". if you don't see it, make sure you follow the steps described in the [prerequisites](./HostedRPABots.md#prerequisites) section.
+7. Select a **VM image** from the ones you have access to. We propose a default Windows 11 image called "Default Windows Desktop Image". if you don't see it, make sure you follow the steps described in the [prerequisites](./hosted-rpa-bots.md#prerequisites) section.
 8. Provide the local admin account you want to be created and that would be used to run your automations by the bots.
 9. Click **Create**.
 
@@ -85,7 +85,7 @@ Hosted RPA bots (preview) can be created from the Power Automate portal:
 
 ## Hosted RPA bots (preview) availability
 
- Bots in a group are created when needed. Whenever a desktop flow is waiting in the queue and no bot is available, a bot will be created as long as the maximum number of bots for this group is not reached and you have enough unattended add-ons assigned to your environment. See more information about the [licensing requirements](./HostedRPABots.md#licensing-requirements).
+ Bots in a group are created when needed. Whenever a desktop flow is waiting in the queue and no bot is available, a bot will be created as long as the maximum number of bots for this group is not reached and you have enough unattended add-ons assigned to your environment. See more information about the [licensing requirements](./hosted-rpa-bots.md#licensing-requirements).
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ One key feature of hosted RPA bots (preview) is the ability re-assign them to di
 2. Select **Monitor > Machines**.
 3. Select **Machine groups**.
 4. Select one of your hosted RPA bots (preview) group
-1. Click on **Edit details** button at the top
+5. Click on **Edit details** button at the top
 
  ![bots-edition.png](./media/hosted-rpa-bots/edit-rpa-bots.png)
 
@@ -269,18 +269,71 @@ By default, Environment Maker role can create Hosted RPA Bots in their environme
 
  ![environment maker role.jpg](./media/hosted-rpa-bots/hosted-rpa-bots-roles.jpg)
 
-Environment Maker role can create and share custom VM Images (see also [Use custom VM Images for your hosted RPA bots](./HostedRPABots.md#use-custom-vm-images-preview-for-your-hosted-rpa-bots-preview), as this requires create and append privileges on the Flow Machine Image.
+Environment Maker role can create and share custom VM Images (see also [Use custom VM Images for your hosted RPA bots](./hosted-rpa-bots.md#use-custom-vm-images-preview-for-your-hosted-rpa-bots-preview), as this requires create and append privileges on the Flow Machine Image.
 
 Admins can also use the roles provided as part of Desktop Flows ( see [Manage Machines - Update permissions based on security roles](./manage-machines.md#update-permissions-based-on-security-role).
 
 ### Desktop Flows Machine Owner Role
 
-By default, Desktop Flows Machine owner can create Hosted RPA Bots groups but cannot create custom VM images  - they can only used previously shared custom VM images in their own Hosted RPA Bots groups (see also [Use custom VM images (preview) for your hosted RPA bots (preview)](./HostedRPABots.md#use-custom-vm-images-preview-for-your-hosted-rpa-bots-preview).
+By default, Desktop Flows Machine owner can create Hosted RPA Bots groups but cannot create custom VM images  - they can only used previously shared custom VM images in their own Hosted RPA Bots groups (see also [Use custom VM images (preview) for your hosted RPA bots (preview)](./hosted-rpa-bots.md#use-custom-vm-images-preview-for-your-hosted-rpa-bots-preview).
 
 ![machine owner role.jpg](./media/hosted-rpa-bots/hosted-rpa-bots-roles-2.jpg)
 
 ### Desktop Flows Machine Image Admin Role
 
-The Desktop Flows Machine Image Admin role only brings full privileges on the Flow Machine Image entity. In particular, it allows users with this role to share / unshare VM images to be used for created Hosted RPA Bots in their environment. See also [Create Hosted RPA bots](./Create-Hosted-RPA-bots-(preview)) for information about sharing pre-provisioned VM Images before creating your first Hosted RPA Bots group.
+The Desktop Flows Machine Image Admin role only brings full privileges on the Flow Machine Image entity. In particular, it allows users with this role to share / unshare VM images to be used for created Hosted RPA Bots in their environment. See also [Create Hosted RPA bots](./hosted-rpa-bots.md#create-hosted-rpa-bots-preview) for information about sharing pre-provisioned VM Images before creating your first Hosted RPA Bots group.
 
 ![image admin role.jpg](./media/hosted-rpa-bots/hosted-rpa-bots-roles-3.jpg)
+
+## Hosted RPA bots limitations
+
+### Geographical availabilities/restrictions
+
+Here is the list of supported geographies in the public clouds:
+
+- United States
+- Germany
+- Brazil
+- Canada
+- Europe
+- France
+- Asia Pacific
+- Australia
+- Japan
+- India
+- United Kingdom
+- Switzerland
+- Norway
+
+   >[!Important]
+   >
+   > Hosted RPA bots is not yet available in sovereign clouds and is not yet available in the following public cloud geographies:
+
+   > - United Arab Emirates
+   > - Korea
+
+### Setup desktop flows connections for hosted RPA bots
+
+Hosted RPA bots can be accessed only with local windows accounts.
+   >[!Note]
+   >
+   > When creating Hosted RPA bots, you are asked to provide credentials for a local account. You can use this account to setup connections targeting the Hosted RPA bots.
+
+Active Directory and Azure Active Directory accounts are not supported yet. This feature will be available in a next release.
+
+### Network limitations for hosted RPA bots (preview)
+
+Hosted RPA bots do not have access to on-premises data sources or other on-premises resources.
+Hosted RPA bots can't be accessed from internet, the inbound traffic is blocked.
+
+   >[!Note]
+   >
+   > Connecting on-premises network to hosted RPA bots will be available in a next release.
+
+### Remote desktop to Hosted RPA bots (preview)
+
+Remote desktop to Hosted RPA bots is not supported to connect to a Hosted RPA bot). Adding support for remote desktop to Hosted RPA bots is not planned. Hosted RPA bots (preview) are meant to be used for unattended runs only, remote desktop access from internet is not required to execute Power Automate desktop flows.
+
+### Limit on the number of Hosted RPA bots (preview) group per environment during Public preview
+
+During the Public preview, number of bot groups is limited to 10 for each environment. If you reach this limit, please delete existing hosted RPA bots group to create new ones.
