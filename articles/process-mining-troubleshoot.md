@@ -68,15 +68,15 @@ To troubleshoot:
 
 ### "You must have one case with at least two activities to analyze your process. Please change your data."
 
-Process mining will normally not be helpful when there is only one activity name in the data. This is because the process map visualizes the flow of the process from one activity to the next. In this case, you should do the following:
+Process mining will normally not be helpful when there's only one activity name in the data. This is because the process map visualizes the flow of the process from one activity to the next. In this case, you should do the following:
 
 - Check the column that's been mapped to activity name.
-- Confirm that there is only one value for that column.
+- Confirm that there's only one value for that column.
 - Determine if there's another column that contains something with more than one possible value that can represent activities of the process.
 
 ### "Following column(s) do not have the right data types: [x]. Please check your data and try again."
 
-The *case ID* and *activity name* columns should be of the **Text** data type. The *timestamp* columns should be of the **Date/Time** data type. One of the most frequent causes of invalid format is in the *timestamp* column. To fix this, return to setup and select the icon next to the *timestamp* column and ensure it's been mapped to **Date/Time**.
+The *case ID* and *activity name* columns should be of the **Text** data type. The *timestamp* columns should be of the **Date/Time** data type. One of the most frequent causes of invalid format is in the *timestamp* column. To fix the format, return to setup and select the icon next to the *timestamp* column and ensure it's been mapped to **Date/Time**.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Date/Time data type for StartTimestamp.](media/process-mining-troubleshoot/timestamp.png "Date/Time data type for StartTimestamp")
@@ -86,7 +86,7 @@ If the format is incorrect, you'll see something like this:
 > [!div class="mx-imgBorder"]
 > ![Screenshot of errors in StartTimestamp.](media/process-mining-troubleshoot/timestamp-error.png "Errors in StartTimestamp")
 
-One possibility is that although the *timestamp* column has a valid datetime format, the format is valid for a different locale than the locale that the process is created in. A typical example is this datetime format being used in the United States locale: **dd/mm/yyyy hh:mm:ss**. In this case, we won't automatically detect that column as a datetime column. One way to fix this is by manually changing the locale. To do this:
+One possibility is that although the *timestamp* column has a valid datetime format, the format is valid for a different locale than the locale that the process is created in. A typical example is this datetime format being used in the United States locale: **dd/mm/yyyy hh:mm:ss**. In this case, we won't automatically detect that column as a datetime column. One way to fix this issue is by manually changing the locale. To do this:
 
 1. Delete the **Changed column** type step that you did previously. Do this by selecting **X** next to the last applied step in the Query settings pane on the right.
 
@@ -106,7 +106,7 @@ Where the format is **dd/mm/yyyy hh:mm:ss**, setting the locale to **English (Ca
 
 ### "More than 50% of your data has invalid format. Please check your data and try again."
 
-To fix this, go to ["Following column(s) do not have the right data types: [x]. Please check your data and try again."](#following-columns-do-not-have-the-right-data-types-x-please-check-your-data-and-try-again)
+To fix this issue, go to ["Following column(s) do not have the right data types: [x]. Please check your data and try again."](#following-columns-do-not-have-the-right-data-types-x-please-check-your-data-and-try-again)
 
 ### "Following column(s) are missing from your dataflow: [x]. Please check your data and try again."
 
@@ -114,15 +114,15 @@ This issue should occur only if you didn't properly map the columns in your data
 
 ### "Your entity contains no data, check your dataflow and try again."
 
-This issue should occur only if there is no data. Either the data source that you're connecting to has no data, or the power query expression you used filtered out all the data. Check your query and ensure that you can see some data rows in the preview table.
+This issue should occur only if there's no data. Either the data source that you're connecting to has no data, or the power query expression you used filtered out all the data. Check your query and ensure that you can see some data rows in the preview table.
 
 ### "The number of rows in your data exceeds the limit. [x] rows have been ignored."
 
-For preview, we support only up to 150,000 rows of data. To learn how to fix this using Power Query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
+For preview, we support only up to 150,000 rows of data. To learn how to fix this issue using Power Query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
 
 ### "There are too many columns in your data. Please select no more than 5 columns."
 
-For preview, we support only up to five (5) columns in addition to your mapped columns. To learn how to fix this using Power Query, go to [Select additional columns](process-mining-transform.md#select-additional-columns).
+For preview, we support only up to five (5) columns in addition to your mapped columns. To learn how to fix this issue using Power Query, go to [Select additional columns](process-mining-transform.md#select-additional-columns).
 
 ### "Analysis failed, please try again."
 

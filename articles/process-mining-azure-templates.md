@@ -55,7 +55,7 @@ Before you can visualize your Azure DevOps work items, you must have an Azure De
 
 1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
-1. Select **Sign in** and authenticate through AAD. 
+1. Select **Sign in** and authenticate through AAD.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Connect to data source screen.](media/process-mining-azure-templates/connect.png "Connect to data source screen")
@@ -134,7 +134,7 @@ Before you can visualize your Logic Apps, you must have an Azure Logic Apps Stan
 
 1. In the **Process name** field, enter a name for your process.
 
-1. Go to the Application Insights Azure Resource you created in step 1 to find the find the information you'll need to enter in the **Create a new process** screen.
+1. Go to the Application Insights Azure Resource you created in step 1 to find the information you'll need to enter in the **Create a new process** screen.
 
 1. On left panel, select **Configure** > **API Access**.
 
@@ -160,7 +160,7 @@ Before you can visualize your Logic Apps, you must have an Azure Logic Apps Stan
 1. Select **Sign in** and authenticate through AAD.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Connect to data source screen.](media/process-mining-templates/connect.png "Connect to data source screen")
+    > ![Screenshot of the Connect to data source for the Logic Apps with App Insights template.](media/process-mining-templates/connect.png "Connect to data source screen")
 
 1. After connection credentials are established, select **Save**. Process advisor will analyze your process. This might take at least two minutes to complete.
 
@@ -256,7 +256,7 @@ Before you can visualize your Azure durable functions, you must have an Azure Du
     1. Copy the Url, and then paste it in the **Table Storage Account URL** field in the **Create a new process** screen.
 
         > [!div class="mx-imgBorder"]
-        > ![Screenshot of the table names.](media/process-mining-azure-templates/durable-functions-url.png "Table names")
+        > ![Screenshot of the Url name.](media/process-mining-azure-templates/durable-functions-url.png "Url name")
 
     1. (Optional) Enter a description of the process in the **Description** field.
 
@@ -270,7 +270,7 @@ Before you can visualize your Azure durable functions, you must have an Azure Du
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Connection setting section.](media/process-mining-azure-templates/durable-functions-settings.png "Connection setting section")
 
-1. Go back to your Azure Durable Functions Storage Account in the Azure portal, anf select **Security + Networking** > **Access keys** on the left panel.
+1. Go back to your Azure Durable Functions Storage Account in the Azure portal, and select **Security + Networking** > **Access keys** on the left panel.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Access keys menu option.](media/process-mining-azure-templates/durable-functions-access-keys.png "Access keys menu option")

@@ -62,11 +62,11 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select all contents of the CSV file by pressing **Ctrl** + **A**.
 
-1. Copy the selection by pressing **Ctrl** + **C**. 
+1. Copy the selection by pressing **Ctrl** + **C**.
 
-1. Paste the selection you copied into the blank table in process advisor by pressing **Ctrl** + **V**. 
+1. Paste the selection you copied into the blank table in process advisor by pressing **Ctrl** + **V**.
 
-1. Select **Use first row as headers**. 
+1. Select **Use first row as headers**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of first row as headers selection.](media/process-mining-tutorial/headers.png "First row as headers selection")
