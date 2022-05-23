@@ -1,6 +1,6 @@
 ---
-title: Process mining Azure templates in process advisor | Microsoft Docs
-description: This topic describes an overview of the Azure templates you can use in process mining in the process advisor feature in Power Automate.
+title: Azure templates for process mining in process advisor | Microsoft Docs
+description: This topic describes the Azure templates you can use for process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Azure templates in process mining
+# Azure templates for process mining
 
 Process advisor templates allow you to easily onboard your data with a few selections, which avoids the traditional data identification and manipulation required in traditional process mining tools. Templates will enable users to reach their insights quickly and without the previously required data mastery. Our templates like ADO, Power Apps, Bot Framework, and more, will empower all to reach process insights and implement optimizations and automations.
 
@@ -104,7 +104,7 @@ Before you can visualize your Azure pipelines, you must have an Azure DevOps Ind
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Create a new process screen using the Azure Pipelines template.](media/process-mining-azure-templates/create-az-pipelines.png "Create a new process screen")
 
-1. Repeat steps 4 through 6 in the **Create and run the Azure DevOps Work Tracking template** section earlier in this article.
+1. Complete the **Connect to data source** screen by doing steps 4 through 6 in the **Create and run the Azure DevOps Work Tracking template** section earlier in this article.
 
 ### Visualize the process map for the Azure Pipelines template
 
@@ -123,7 +123,7 @@ To learn more about Logic Apps, go to the [Azure Logic Apps documentation](/azur
 
 Before you can visualize your Logic Apps, you must have an Azure Logic Apps Standard Plan (Single-tenant) license. To learn more, go to [Logic Apps pricing](https://azure.microsoft.com/pricing/details/logic-apps/).
 
-## Create and run the Logic Apps with App Insights template
+### Create and run the Logic Apps with App Insights template
 
 1. In order to deploy template, you'll need to create an Application Insights Resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
@@ -206,7 +206,7 @@ Before you can visualize your Logic Apps, you must have an Azure Logic Apps Cons
         > [!div class="mx-imgBorder"]
         > ![Screenshot of the Create a new process screen for the Azure Logic App Consumption Plan template.](media/process-mining-azure-templates/create-az-logic-app-cp.png "Create a new process screen")
 
-1. Repeat steps 4 through 6 in the **Create and run the Azure DevOps Work Tracking template** section earlier in this article.
+1. Complete the Connect to data source screen by doing steps 4 through 6 in the **Create and run the Azure DevOps Work Tracking template** section earlier in this article.
 
 ### Visualize the process map for the Azure Logic App Consumption Plan template
 

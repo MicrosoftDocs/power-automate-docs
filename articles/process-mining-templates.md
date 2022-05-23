@@ -1,6 +1,6 @@
 ---
-title: Process mining Power Platform templates in process advisor | Microsoft Docs
-description: This topic describes an overview of the Power Platform templates you can use in process mining in the process advisor feature in Power Automate.
+title: Power Platform templates for process mining in process advisor | Microsoft Docs
+description: This topic describes the Power Platform templates you can use for process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Power Platform templates in process mining
+# Power Platform templates for process mining
 
 Process advisor templates allow you to easily onboard your data with a few selections, which avoids the traditional data identification and manipulation required in traditional process mining tools. Templates will enable users to reach their insights quickly and without the previously required data mastery. Our templates like ADO, Power Apps, Bot Framework, and more, will empower all to reach process insights and implement optimizations and automations.
 
@@ -121,7 +121,7 @@ The process of creating and running a template is similar for all templates.
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Power Virtual Agents tile.](media/process-mining-templates/pva.png "Power Virtual Agents tile")
 
-1. Repeat steps 2 through 15 in the **Create and run the Desktop Flows template** section earlier in this article.
+1. Do steps 2 through 15 in the **Create and run the Desktop Flows template** section earlier in this article.
 
 ### Visualize the process map for the Power Virtual Agents template
 
@@ -176,7 +176,7 @@ In order to deploy the **Power Apps Insights** template, you'll need to create a
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Create a new process screen for the Power Apps Insights template.](media/process-mining-templates/create-app-process.png "Create a new process screen for the Power Apps Insights template")
 
-1. Repeat steps 13 through 15 in the Create and run the Desktop Flows template section earlier in this article.
+1. Complete the **Connect data source** screen by doing steps 13 through 15 in the **Create and run the Desktop Flows template** section earlier in this article.
 
 ### Visualize the process map for the Power Apps Insights template
 

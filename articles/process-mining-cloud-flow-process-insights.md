@@ -18,9 +18,9 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial shows you how to display and customize your workflows.
+This tutorial allows you to experience how to improve your flows with process insights.
 
-You can gain insights and improve your cloud flows with the help of process mining. With a few easy selections, you can visualize your flow’s performance, identify bottlenecks and optimization opportunities, and monitor for business drifts. You can generate these insights directly from the flow details page by having a process advisor analyze your flow-run history with process mining techniques.
+You can gain insights and improve your cloud flows with the help of process mining. With a few selections, you can visualize your flow’s performance, identify bottlenecks and optimization opportunities, and monitor for business drifts. You can generate these insights directly from the flow details page by having process advisor analyze your flow-run history with process mining techniques.
 
 > [!IMPORTANT]
 > - This is a preview feature.
