@@ -94,7 +94,7 @@ Hosted RPA bots (preview) can be created from the Power Automate portal:
 > [!NOTE]
 > - If you would like to use this feature, which is still in private preview, please contact us through this form: <https://forms.office.com/r/JhGRsZbTWX>.
 
-You can personalize your **Hosted RPA bots (preview)** by providing your own Windows image directly from your [Azure Compute Gallery](https://docs.microsoft.com/azure/virtual-machines/shared-image-galleries), it will allow you to have all your application installed on the Hosted RPA bots that we provision for you.
+You can personalize your **Hosted RPA bots (preview)** by providing your own Windows image directly from your [Azure Compute Gallery](../azure/virtual-machines/shared-image-galleries), it will allow you to have all your application installed on the Hosted RPA bots that we provision for you.
 
 ### Add a new custom VM image (preview)
 
