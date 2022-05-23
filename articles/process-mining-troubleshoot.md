@@ -2,10 +2,9 @@
 title: Troubleshoot issues in process advisor (preview) | Microsoft Docs
 description: This topic explains how to troubleshoot issues with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
-
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/18/2022
+ms.date: 05/25/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -123,7 +122,7 @@ For preview, we support only up to 150,000 rows of data. To learn how to fix thi
 
 ### "There are too many columns in your data. Please select no more than 5 columns."
 
-For preview, we support only up to five columns in addition to your mapped columns. To learn how to fix this using Power Query, go to [Select additional columns](process-mining-transform.md#select-additional-columns).
+For preview, we support only up to five (5) columns in addition to your mapped columns. To learn how to fix this using Power Query, go to [Select additional columns](process-mining-transform.md#select-additional-columns).
 
 ### "Analysis failed, please try again."
 

@@ -1,10 +1,10 @@
 ---
-title: Gain insights from cloud flow processes in process advisor (preview) | Microsoft Docs
-description: This topic describes how to gain insights and improve your cloud flows with the help of process mining in the process advisor feature in Power Automate.
+title: Tutorial: Get started with process insights in process advisor (preview) | Microsoft Docs
+description: This topic describes how to improve your flows with process mining insights in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/18/2022
+ms.date: 05/25/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -14,11 +14,18 @@ search.audienceType:
   - enduser
 ---
 
-# Gain insights from cloud flow processes (preview)
+# Tutorial: Get started with process insights (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+This tutorial show you how to display and customize your workflows.
 
 You can gain insights and improve your cloud flows with the help of process mining. With a few easy selections, you can visualize your flow’s performance, identify bottlenecks and optimization opportunities, and monitor for business drifts. You can generate these insights directly from the flow details page by having a process advisor analyze your flow-run history with process mining techniques.
 
-On your flow details page, you can see a process insights card. When you engage with it, you'll be taken to the process advisor analytics page to see your flow process visualization and analytics.
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
@@ -30,40 +37,42 @@ On your flow details page, you can see a process insights card. When you engage 
 
 ## Known limitations
 
-- After a flow run, it takes about 15 to 30 minutes for data to be available for analysis.
+- After a flow runs, it takes about 15 to 30 minutes for data to be available for analysis.
 
-- The feature is not supported for Dataverse for Microsoft Teams environments.
+- The feature isn't supported for Dataverse for Microsoft Teams environments.
 
 ## Terminology
 
-- The flow runs translate to the cases shown in analytics view
+- The flow runs translate to the cases shown in analytics view.
 
-- A process variant is a specific activity sequence, like a "trace" through the process, from start to end. Each variant differs from the others by at least one activity. In case of flow, each action is an activity.
+- A process variant is a specific activity sequence, like a "trace" through the process, from start to end. Each variant differs from the others by at least one activity. In a flow, each action is an activity.
 
-- Custom metrics/filters allow you to generate custom insights like based on your flow version or successful versus failed flow run.
+- Custom metrics and filters allow you to generate custom insights such as based on your flow version, or successful versus failed flow run.
 
-## Step-by-step tutorial
+## Improve your flow with process insights
+
+On your flow details page, you can see the **Process insights (preview)** card. When you engage with it, you'll be taken to the process advisor analytics page to see your flow process visualization and analytics.
   
 1. Go to your flow details page.
 
-1. Generate flow runs if the flow has not run in the last 28 days.
+1. Generate flow runs if the flow hasn't run in the last 28 days.
 
     > [!div class="mx-imgBorder"]
-    > ![!Screenshot of the Desktop Flows tile.](media/process-mining-cloud-flow-process-insights/cloud-flow-details.png)
+    > ![Screenshot of the flow details page.](media/process-mining-cloud-flow-process-insights/cloud-flow-details.png "Flow details page")
 
 1. On the process advisor tile, select **improve your workflows**.
 
 1. Wait for analysis to complete.
 
     > [!div class="mx-imgBorder"]
-    > ![!Screenshot of the Desktop Flows tile.](media/process-mining-cloud-flow-process-insights/analyze-process.png)
+    > ![!Screenshot of the analyzing your process.](media/process-mining-cloud-flow-process-insights/analyze-process.png "Analyzing your process")
 
 1. Display flow process analytics.
 
     > [!div class="mx-imgBorder"]
-    > ![!Screenshot of the Desktop Flows tile.](media/process-mining-cloud-flow-process-insights/flow-process-analytics.png)
+    > ![Screenshot of the flow process analytics.](media/process-mining-cloud-flow-process-insights/flow-process-analytics.png "Flow process analytics")
 
-1. To get the most run path in your automation. select the most frequent variant.
+1. To get the most run path in your automation, select the most frequent variant.
 
 1. Customize your insights based on custom filters for your flow like flow version, action status, action status code, or action error.
 

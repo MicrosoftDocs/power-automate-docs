@@ -4,7 +4,7 @@ description: This topic describes how to transform and map data with process min
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/18/2022
+ms.date: 05/25/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 

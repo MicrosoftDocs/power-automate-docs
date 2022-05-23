@@ -4,7 +4,7 @@ description: This topic is an overview of process mining in the process advisor 
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 05/18/2022
+ms.date: 05/25/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 

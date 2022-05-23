@@ -4,7 +4,7 @@ description: This topic explains how to visualize and gain insights from process
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/18/22
+ms.date: 05/25/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -33,9 +33,9 @@ Activities describe tasks or actions, the sequence of which makes up a business 
 
 Different activity combinations and variants are shown separately on the process map. A process variant is a unique path from the beginning to the end of the process. In other words, a process variant is a specific activity sequence, like a "trace" through the process, from start to end. Each variant differs from the others by at least one activity.
 
-You can see additional metrics, frequency of the activities, as well as process throughput time (case duration), on the process map.
+You can see more metrics, frequency of the activities, and process throughput time (case duration), on the process map.
 
-Frequency shows you the total number of workflows (also known as cases) passing through it. Case duration is the time between the very first event of the case and the last. Time analysis report allows you to drill down into time bottlenecks by cases, variants, and activity. It also shows you average time spent per activity as well as how activities occur over time.
+Frequency shows you the total number of workflows (also known as cases) passing through it. Case duration is the time between the first event of the case and the last. Time analysis report allows you to drill down into time bottlenecks by cases, variants, and activity. It also shows you average time spent per activity and how activities occur over time.
 
 To drill down into the process, various filters are available:
 
@@ -61,9 +61,9 @@ Out of the box, you'll get several KPIs and visualizations to help you to unders
 
 ### KPIs
 
-- **Average case duration:** Shows you the average time it takes for a process to be completed across all cases you are analyzing. It is one of the most important data points when analyzing your process. The reason is that understanding how long a process lasts, how it changes over time, and further investigating the root cause of the process duration could make a great starting point in speeding up your process.
+- **Average case duration:** Shows you the average time it takes for a process to be completed across all cases you're analyzing. It's one of the most important data points when analyzing your process. The reason is that understanding how long a process lasts, how it changes over time, and further investigating the root cause of the process duration could make a great starting point in speeding up your process.
 
-- **Median case duration:** Median in general shows the most frequent duration for a task to complete. It's a very useful metric in cases where a small number of cases (or even a single activity) are so different from most cases that the average time for completion would look skewed toward this offending case. To prevent the user from misinterpreting the time to completing the process, this measure shows the most frequent time as opposed to a simple average.
+- **Median case duration:** Median in general shows the most frequent duration for a task to complete. It's a useful metric in cases where a small number of cases (or even a single activity) are so different from most cases that the average time for completion would look skewed toward this offending case. To prevent the user from misinterpreting the time to completing the process, this measure shows the most frequent time as opposed to a simple average.
 
 - **Number of variants:** Shows how many different paths were taken to accomplish a process. For example, one case of a process might have 10 steps to complete a purchase order, while another only nine.
 

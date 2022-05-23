@@ -4,7 +4,7 @@ description: This topic explains how to prepare processes and data with process 
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/18/2022
+ms.date: 05/25/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-Before you can use process advisor process mining effectively, you need to understand:
+Before you can use process mining effectively, you need to understand:
 
 - [Data requirements](#data-requirements).
 
@@ -30,8 +30,6 @@ Here's a short video on how to upload data for process mining:<br>
 </br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWNG85]
 
-This topic explains these requirements in detail.
-
 > [!IMPORTANT]
 > - This is a preview feature.
 >
@@ -39,31 +37,31 @@ This topic explains these requirements in detail.
 
 ## Data requirements
 
-Event logs and activity logs are tables stored in your system of record that document when an event or activity occurs. For example, activities you perform in your customer relationship management (CRM) app are saved as an event log in your CRM app. For process mining to take place, the following fields are necessary:
+Event logs and activity logs are tables stored in your system of record that document when an event or activity occurs. For example, activities you perform in your customer relationship management (CRM) app are saved as an event log in your CRM app. For process mining to analyze the event log, the following fields are necessary:
 
 - **Case ID (caseId when mapping)**
 
-  Case ID should represent an instance of your process and is often the object that the process acts on. It doesn't need to be a case. It can be a "patient ID" for an inpatient check-in process, an "order ID" for an order submission process, or a "request ID" for an approval process. This ID must be present for all activities in the log.
+  Case ID should represent an instance of your process and is often the object that the process acts on. It can be a "patient ID" for an inpatient check-in process, an "order ID" for an order submission process, or a "request ID" for an approval process. This ID must be present for all activities in the log.
 
 - **Activity Name (activityName when mapping)**
 
-  Activities are the steps of your process, and activity names describe each step. For example, in a typical approval process, the activity names may be "submit request," "request approved," "request rejected," and "revise request."
+  Activities are the steps of your process, and activity names describe each step. In a typical approval process, the activity names may be "submit request," "request approved," "request rejected," and "revise request."
 
 - **Start Timestamp (startTimestamp) and End Timestamp (endTimestamp)**
 
-  Timestamps indicate the exact time that an event or activity took place. Event logs have only one timestamp. This indicates the time that an event occurred in the system. Activity logs have two timestamps: a start timestamp and an end timestamp. These indicate the start and end of each activity.
+  Timestamps indicate the exact time that an event or activity took place. Event logs have only one timestamp. This indicates the time that an event or activity occurred in the system. Activity logs have two timestamps: a start timestamp and an end timestamp. These indicate the start and end of each event or activity.
 
 ## Where to get log data from your application
 
-Regardless of your application, it's important to note that process advisor needs log data. Many of the tables that exist in your application’s database will contain the current state of the data. It might not contain a historical record of the events that happened, which is what an event log is. Fortunately, in many larger applications, this historical record or log is often stored in a separate table. For example, many Dynamics applications keep this record in the Activities table. Other applications, like SAP or Salesforce, have similar concepts, but the name may be different.
+Process advisor needs event log data to perform process mining. While many tables that exist in your application’s database contain the current state of the data, they might not contain a historical record of the events that happened, which is the required event log format. Fortunately, in many larger applications, this historical record or log is often stored in a specific table. For example, many Dynamics applications keep this record in the Activities table. Other applications, like SAP or Salesforce, have similar concepts, but the name may be different.
 
-While there may be tables that log historical records, the way that data is structured can be complex. You might need to join the log table with other tables in the application database to get specific IDs or names. Also, not all events that you're interested in are logged. You may need to determine what events should be kept or filtered out. If you need help, you should contact the IT team that manages this application to understand more.
+In these tables that log historical records, the data structure can be complex. You might need to join the log table with other tables in the application database to get specific IDs or names. Also, not all events that you're interested in are logged. You may need to determine what events should be kept or filtered out. If you need help, you should contact the IT team that manages this application to understand more.
 
 ## Connect to a data source
 
-The benefit of connecting to a database directly is the ability to keep process advisor up to date with the latest data from the data source.
+The benefit of connecting to a database directly is keeping process advisor up to date with the latest data from the data source.
 
-[Power Query](/power-query/power-query-what-is-power-query) supports a large variety of connectors. A connector provides a way for process advisor to connect and import data from the corresponding data source. Common connectors include Text/CSV, Microsoft Dataverse, and SQL Server database. If you're using an application like SAP or Salesforce, you might be able to connect to those data sources directly. For information on supported connectors and how to use them, go to [Connectors in Power Query](/power-query/connectors/).
+[Power Query](/power-query/power-query-what-is-power-query) supports a large variety of connectors that provide a way for process advisor to connect and import data from the corresponding data source. Common connectors include Text/CSV, Microsoft Dataverse, and SQL Server database. If you're using an application like SAP or Salesforce, you might be able to connect to those data sources directly via their connectors. For information on supported connectors and how to use them, go to [Connectors in Power Query](/power-query/connectors/).
 
 ### Try out process advisor with the Text/CSV connector
 

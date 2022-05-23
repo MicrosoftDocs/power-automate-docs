@@ -4,7 +4,7 @@ description: Terminology used in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/18/2022
+ms.date: 05/25/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 

@@ -5,7 +5,7 @@ author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: article
 ms.custom: intro-internal
-ms.date: 05/18/2022
+ms.date: 05/25/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Tutorial: Get started with process mining in process advisor (preview)
+# Tutorial: Get started with process mining (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 

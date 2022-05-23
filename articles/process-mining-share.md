@@ -4,7 +4,7 @@ description: Share a process mining process with others so that they can glean i
 author: arashurara 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/18/22
+ms.date: 05/25/2022
 ms.author: wangroy
 ms.reviewer: angieandrews
 search.app: 
@@ -20,10 +20,10 @@ search.audienceType:
 
 When you create a process in process advisor, only you can see it. But you may want to share the analytics and insights with others. Share your process mining processes with others in your organization so they can also glean insights to make decisions.
 
-To share your process with others, select **Process mining** on the left navigation bar, select your process, and then select the **Processes** tab. Highlight your process, select **More commands** (the three vertical dots), and then select **Share**. You can also share from a process’s process details page and analytics page.
+To share your process with others from the process list, highlight your process, select **More commands** (the three vertical dots), and then select **Share**. You can also share from a process’s process details page and analytics page. 
 
 > [!div class="mx-imgBorder"]
-> ![!Screenshot of the Share option.](media/process-mining-share/share-option.png "Share option")
+> ![Screenshot of the Share option.](media/process-mining-share/share-option.png "Share option")
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -32,12 +32,12 @@ To share your process with others, select **Process mining** on the left navigat
 
 ## Share panel
 
-When you select the share action, a share panel is displayed. The share panel is where you select Microsoft Dataverse users in your organization, and share your process with them. You can search for any user to invite to your process in the Dataverse tenant.  
+When you select the share action, a share panel is displayed. The share panel is where you select Microsoft Dataverse users in your organization and share your process with them. You can search for any user to invite to your process in the Dataverse tenant.  
 
-When you share a process with others, the option to automatically send an email invitation is selected. Viewers are invited to view the process's analytics. There's a link in the email invitation that leads them to the shared process's analytics.
+When you share a process with others, the option to send an email invitation is automatically selected for convenience. Viewers are invited to view the process's analytics. There's a link in the email invitation that leads them to the shared process's analytics.
 
 > [!div class="mx-imgBorder"]
-> ![!Screenshot of the Share panel, Manage access screen.](media/process-mining-share/manage-viewer-access.png "Share panel, Manage access screen")
+> ![Screenshot of the Share panel, Manage access screen.](media/process-mining-share/manage-viewer-access.png "Share panel, Manage access screen")
 
 ## Share action
 

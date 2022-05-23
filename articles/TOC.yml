@@ -621,7 +621,11 @@
     - name: Overview
       href: process-mining-overview.md
     - name: Templates overview
-      href: process-mining-templates.md
+      items:
+      - name: Power Platform templates
+        href: process-mining-templates.md
+      - name: Azure templates
+        href: process-mining-azure-templates.md    
     - name: Get started with process mining
       href: process-mining-tutorial.md
     - name: Prepare processes and data
@@ -632,7 +636,7 @@
       href: process-mining-troubleshoot.md
     - name: Visualize and gain insights from processes
       href: process-mining-visualize.md
-    - name: Gain insights from cloud flow processes
+    - name: Get started with process insights
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
       href: process-mining-share.md      
