@@ -100,7 +100,7 @@ The process of creating and running a template is similar for all templates.
 After your process report has been published, you can visualize the process map and use the custom attributes filter to dig deeper into your insights.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Desktop Flows template.](media/process-mining-templates/insights,png.png "Process map for the Desktop Flows template")
+> ![Screenshot of the process map for the Desktop Flows template.](media/process-mining-templates/insights.png "Process map for the Desktop Flows template")
 
 ## Power Virtual Agents template
 

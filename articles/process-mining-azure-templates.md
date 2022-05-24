@@ -108,7 +108,7 @@ Before you can visualize your Azure pipelines, you must have an Azure DevOps Ind
 
 ### Visualize the process map for the Azure Pipelines template
 
-After your process report has been published, you can visualize the process map and use the **Custom attributes** filter to dig deeper into your insights.
+After your process report has been published, you can visualize the process map.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the process map for the Azure Pipelines template.](media/process-mining-azure-templates/pipelines-map.png "Process map for the Azure Pipelines template")
