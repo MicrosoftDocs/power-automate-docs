@@ -171,7 +171,7 @@ You can share hosted RPA bots with other users so they can create connections to
 
    >[!IMPORTANT]
    > To trigger desktop flows to run on hosted RPA bots, you need:
-   > - A machine group of type "Hosted RPA bots". To create a machine group of type "Hosted RPA bots", please refer to the [Create hosted RPA bots (preview)](./hosted-rpa-bots.md#create-hosted-rpa-bots-preview)) section.
+   > - A machine group of type "Hosted RPA bots". To create a machine group of type "Hosted RPA bots", please refer to the [Create hosted RPA bots (preview)](./hosted-rpa-bots.md#create-hosted-rpa-bots-preview) section.
    > - A connection targeting your hosted RPA bots.
    >
    > Hosted RPA bots setup limitations:
