@@ -45,9 +45,10 @@ Trial users can create up to 10 hosted RPA bots groups and can have up to 2 bots
 To be able to create hosted RPA bots, you need to have access to the default VM image that is part of your environment. You can view the default image from **Monitors** > **Machines** > **VM images (preview)**
 
 ![vm-images-preview-list.png](./media/hosted-rpa-bots/vm-images-preview.png)
-    > [!NOTE]
-    > - Users will need either the **System Administrator** or **Desktop Flow Machine Image Admin** role to be able to see and manage the default image.
-    > - For other users, the System Administrator or Desktop Flow Machine Image Admin will need to first share the default image with them before they can use it.
+
+> [!NOTE]
+> - Users will need either the **System Administrator** or **Desktop Flow Machine Image Admin** role to be able to see and manage the default image.
+> - For other users, the System Administrator or Desktop Flow Machine Image Admin will need to first share the default image with them before they can use it.
 
 ### Sharing the default image
 
