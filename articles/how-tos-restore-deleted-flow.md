@@ -24,7 +24,7 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
 ## Prerequisites
 
-- You must install the [PowerShell cmdlets for PowerApps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
+- You must install the latest version of [PowerShell cmdlets for Power Apps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
 - You must be an environment admin.
 - There must be an [execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) set on your device to run PowerShell scripts.
 
@@ -34,7 +34,7 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
    ![A screenshot that shows PowerShell being launched from Windows](./media/restore-deleted-flow/open-powershell-script.png)
 
-1. Install the [PowerShell cmdlets for PowerApps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
+1. Install the latest version of [PowerShell cmdlets for Power Apps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
 
 1. Sign into your Power Apps environment.
 
@@ -46,7 +46,9 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
 1. Provide the credentials you want to use to connect to your environment.
 
-1. Run the following script to get a list of flows in the environment, including flows that were soft-deleted within the past 28 days.
+1. Run the following script to get a list of flows in the environment, including flows that were soft-deleted within the past 28 days. 
+
+    If the `IncludeDeleted` parameter is not recognized, you might be working with an older version of the PowerShell scripts. Ensure that you are using the [latest version](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147) of the script modules and retry the steps.
 
    ``` PowerShell
    Get-AdminFlow -EnvironmentName 41a90621-d489-4c6f-9172-81183bd7db6c -IncludeDeleted $true
