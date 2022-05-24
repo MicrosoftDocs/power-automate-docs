@@ -95,7 +95,7 @@ Hosted RPA bots can be created from the Power Automate portal:
 > [!NOTE]
 > If you would like to use this feature, which is still in private preview, please contact us through this form: <https://forms.office.com/r/JhGRsZbTWX>.
 
-You can personalize your **Hosted RPA bots (preview)** by providing your own Windows image directly from your [Azure Compute Gallery](/azure/virtual-machines/shared-image-galleries), it will allow you to have all your application installed on the hosted RPA bots that we provision for you.
+You can personalize your hosted RPA bots by providing your own Windows image directly from your [Azure Compute Gallery](/azure/virtual-machines/shared-image-galleries), it will allow you to have all your application installed on the hosted RPA bots that we provision for you.
 
 ### Add a new custom VM image (preview)
 
@@ -173,7 +173,8 @@ You can share hosted RPA bots with other users so they can create connections to
    > To trigger desktop flows to run on hosted RPA bots, you need:
    > - A machine group of type "Hosted RPA bots". To create a machine group of type "Hosted RPA bots", please refer to the [Create hosted RPA bots (preview)](./hosted-rpa-bots.md#create-hosted-rpa-bots-preview)) section.
    > - A connection targeting your hosted RPA bots.
-   > **Hosted RPA bots (preview) setup limitations**:
+   >
+   > **Hosted RPA bots setup limitations**:
    > - Only direct connectivity connections are supported.
    > - Only local account credentials are supported for now. E.g.: the credentials that were provided upon hosted RPA bots creation.
    > - Only available for [unattended run mode](./run-pad-flow.md#unattended-mode).
