@@ -266,13 +266,13 @@ Admins can also use the roles provided as part of Desktop Flows ( see [Manage Ma
 
 ### Desktop Flows Machine Owner Role
 
-By default, Desktop Flows Machine owner can create hosted RPA bots groups but cannot create custom VM images  - they can only used previously shared custom VM images in their own hosted RPA bots groups (see also [Use custom VM images for your hosted RPA bots](./hosted-rpa-bots.md#use-custom-vm-images-preview-for-your-hosted-rpa-bots-preview).
+By default, Desktop Flows Machine owner can create hosted RPA bots groups but cannot create custom VM images  - they can only used previously shared custom VM images in their own hosted RPA bots groups (see also [Use custom VM images for your hosted RPA bots](./hosted-rpa-bots.md#use-custom-vm-images-preview-for-your-hosted-rpa-bots-preview)).
 
 ![machine owner role.jpg](./media/hosted-rpa-bots/hosted-rpa-bots-roles-2.jpg)
 
 ### Desktop Flows Machine Image Admin Role
 
-The Desktop Flows Machine Image Admin role only brings full privileges on the Flow Machine Image entity. In particular, it allows users with this role to share / unshare VM images to be used for created hosted RPA bots in their environment. See also [Create hosted RPA bots ](./hosted-rpa-bots.md#create-hosted-rpa-bots-preview) for information about sharing pre-provisioned VM Images before creating your first hHosted RPA bots group.
+The Desktop Flows Machine Image Admin role only brings full privileges on the Flow Machine Image entity. In particular, it allows users with this role to share / unshare VM images to be used for created hosted RPA bots in their environment. See also [Create hosted RPA bots ](./hosted-rpa-bots.md#create-hosted-rpa-bots-preview) for information about sharing pre-provisioned VM Images before creating your first hosted RPA bots group.
 
 ![image admin role.jpg](./media/hosted-rpa-bots/hosted-rpa-bots-roles-3.jpg)
 
