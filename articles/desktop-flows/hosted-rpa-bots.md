@@ -62,7 +62,7 @@ To be able to create hosted RPA bots, you need to have access to the default VM 
 
 ![share-vm-image-panel.png](./media/hosted-rpa-bots/share-vm-image.png)
 
-## Create hosted RPA bots
+## Create hosted RPA bots (preview)
 
 Hosted RPA bots can be created from the Power Automate portal:
 
