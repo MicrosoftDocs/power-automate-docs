@@ -29,6 +29,7 @@ Learn more about how to use Power Automate with Teams in the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL2mp]
 
+[!NOTE] Using Power Automate actions to post as the Flow bot are not yet supported in Governement COmmunity Cloud (GCC) environments.
 
 ## Licensing
 
