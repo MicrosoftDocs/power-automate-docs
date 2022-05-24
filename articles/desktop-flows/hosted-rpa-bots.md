@@ -174,7 +174,7 @@ You can share hosted RPA bots with other users so they can create connections to
    > - A machine group of type "Hosted RPA bots". To create a machine group of type "Hosted RPA bots", please refer to the [Create hosted RPA bots (preview)](./hosted-rpa-bots.md#create-hosted-rpa-bots-preview)) section.
    > - A connection targeting your hosted RPA bots.
    >
-   > **Hosted RPA bots setup limitations**:
+   > Hosted RPA bots setup limitations:
    > - Only direct connectivity connections are supported.
    > - Only local account credentials are supported for now. E.g.: the credentials that were provided upon hosted RPA bots creation.
    > - Only available for [unattended run mode](./run-pad-flow.md#unattended-mode).
