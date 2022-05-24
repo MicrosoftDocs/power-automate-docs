@@ -49,10 +49,10 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 1. Run the following script to get a list of flows in the environment, including flows that were soft-deleted within the past 28 days. 
 
     > [!NOTE]
-    > If `includeDeleted` parameter is not recognized, you might be working with an older version of the PowerShell scripts. Ensure that you are using the [latest version](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147) of the script modules and retry the steps.
+    > If the `IncludeDeleted` parameter is not recognized, you might be working with an older version of the PowerShell scripts. Ensure that you are using the [latest version](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147) of the script modules and retry the steps.
 
    ``` PowerShell
-   Get-AdminFlow -EnvironmentName 41a90621-d489-4c6f-9172-81183bd7db6c -includeDeleted $true
+   Get-AdminFlow -EnvironmentName 41a90621-d489-4c6f-9172-81183bd7db6c -IncludeDeleted $true
    //To view examples: Get-Help Get-AdminFlow -Examples
    ```
 
