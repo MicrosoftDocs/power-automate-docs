@@ -61,7 +61,7 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
    ![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png)
 
-1. Optionally, you can filter the list of flows if you know part of the name of the deleted flow whose flowName you want to find. To do this, use a script similar to this one that finds all flows(including those that were soft-deleted) in environment 3c2f7648-ad60-4871-91cb-b77d7ef3c239 that contain the string "Testing" in their display name.
+1. Optionally, you can filter the list of flows if you know part of the name of the deleted flow whose flowName you want to find. To do this, use a script similar to this one that finds all flows (including those that were soft deleted) in environment 3c2f7648-ad60-4871-91cb-b77d7ef3c239 that contain the string "Testing" in their display name.
 
    ``` PowerShell
    Get-AdminFlow Testing -EnvironmentName 3c2f7648-ad60-4871-91cb-b77d7ef3c239 -IncludeDeleted $true
