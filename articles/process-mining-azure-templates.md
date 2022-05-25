@@ -22,7 +22,7 @@ Process advisor templates allow you to easily onboard your data with a few selec
 
 The process advisor **Azure DevOps Work Tracking template** will enable you to visualize the execution process and handling of tracked Azure DevOps work items. Insights will allow you to maximize your development processes and manage dependencies.
 
-To learn more about Azure DevOps, go to the [Azure DevOps documentation](/azure/devops/?view=azure-devops).
+To learn more about Azure DevOps, go to the [Azure DevOps documentation](/azure/devops).
 
 ### Prerequisites
 
@@ -75,7 +75,7 @@ After your process report has been published, you can visualize the process map 
 
 The process advisor **Azure Pipelines** template will enable you to visualize the execution process and handling of tracked Azure pipelines and boards. Insights will allow you to maximize your development processes and manage dependencies.
 
-To learn more about Azure DevOps, go to the [Azure DevOps documentation](/azure/devops/?view=azure-devops).
+To learn more about Azure DevOps, go to the [Azure DevOps documentation](/azure/devops).
 
 ### Prerequisite
 
