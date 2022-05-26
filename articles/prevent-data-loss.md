@@ -191,6 +191,7 @@ A list of DLP enforcement changes and the date the changes were made.
 | Date | Description | Reason for change | Stage |
 |-|-|-|-|
 |May 2022 | Delegated authorization background job enforcement | Flows that use delegated authorization have DLP policies enforced while the flow is being saved, but not during background job evaluation | Learning |
+|May 2022 | Request apiConnection trigger enforcement | Some triggers have not had DLP policies enforced correctly. The affected triggers have type=Request and kind=apiConnection. Many of these triggers are instant triggers, used in manually triggered flows. Affected triggers include: [Power BI]([url](/connectors/powerbi))-Power BI button clicked, [Teams](/connectors/teams)-From the compose box, [OneDrive for Business](/connectors/onedriveforbusiness)-For a selected file, [Dataverse](/connectors/commondataserviceforapps)-When a flow step is executed, [Dataverse (legacy)](/connectors/commondataservice)-When a record is selected, [Excel Online (Business)](/connectors/excelonlinebusiness)-For a selected row, [SharePoint](/connectors/sharepointonline)-For a selected item, [Power Virtual Agents](/connectors/powervirtualagents)-When Power Virtual agents calls a flow | Learning |
 
 ## Known limitations
 [Learn about DLP known issues](/power-platform/admin/dlp-known-issues)
