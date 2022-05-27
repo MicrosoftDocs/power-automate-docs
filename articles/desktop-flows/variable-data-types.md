@@ -25,7 +25,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 ## Simple data types
 
-#### **Text value** 
+### **Text value** 
 
 Any kind of text, from email addresses to the text contents of a .txt file. 
 
@@ -57,105 +57,115 @@ Additionally, you can create complex expressions using logical operators, variab
 
 ## Advanced data types
 
-- **List** - Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
+### **List** 
 
-  You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.  
+Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
 
-  ![Screenshot of a flow that creates a list.](media\lists\create-list.png)
+You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.  
 
-  You can also create a list through actions that generate lists as output. For example, the **Read text from file** action can return a list of text values and the **Get files in folder** action returns a list of files.
+![Screenshot of a flow that creates a list.](media\lists\create-list.png)
 
-  To retrieve a specific item of a list, use the following notation: **%VariableName\[ItemNumber\]%**
+You can also create a list through actions that generate lists as output. For example, the **Read text from file** action can return a list of text values and the **Get files in folder** action returns a list of files.
 
-  In the example below, the flow stores the first number of the previously displayed list to a new variable. Keep in mind that the index should be 0 for the first item of the list.
+To retrieve a specific item of a list, use the following notation: **%VariableName\[ItemNumber\]%**
 
-  ![Screenshot of an expression that accesses the first item of a list.](media\lists\list-first-item.png)
+In the example below, the flow stores the first number of the previously displayed list to a new variable. Keep in mind that the index should be 0 for the first item of the list.
 
-  A common practice is to use a **For each** action to iterate through the items of a list.
+![Screenshot of an expression that accesses the first item of a list.](media\lists\list-first-item.png)
 
-  [List data type properties](datatype-properties.md#lists)
+A common practice is to use a **For each** action to iterate through the items of a list.
 
-- **Datatable** - A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
+[List data type properties](datatype-properties.md#lists)
 
-  A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain datarows as items.
+### **Datatable** 
 
-  ![Screenshot of the contents of a datatable variable.](media\data-tables\create-data-table.png)
+A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
-  Power Automate provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
+A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain datarows as items.
 
-  Alternatively, while Power Automate doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
+![Screenshot of the contents of a datatable variable.](media\data-tables\create-data-table.png)
 
-  This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
+Power Automate provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
 
-  ![Screenshot of Set variable action that creates a datatable.](media\data-tables\create-data-table-variable.png)
+Alternatively, while Power Automate doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
 
-  If you want to add column headers while creating a new datatable, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
+This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
-  ![Screenshot of a Set variable action that creates a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
+![Screenshot of Set variable action that creates a datatable.](media\data-tables\create-data-table-variable.png)
 
-  To add a new row to an existing table, create an expression containing the variable name of the datatable, a plus character (**+**), and the values you want to add in brackets.
+If you want to add column headers while creating a new datatable, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
 
-  ![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
+![Screenshot of a Set variable action that creates a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
 
-  To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
+To add a new row to an existing table, create an expression containing the variable name of the datatable, a plus character (**+**), and the values you want to add in brackets.
 
-  For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
+![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
 
-  ![Screenshot of an expression that accesses the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
+To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
-  > [!NOTE]
-  > The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.
+For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
 
-  If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']%** notation.
+![Screenshot of an expression that accesses the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
 
-  If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a datarow. 
+> [!NOTE]
+> The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.
 
-  [Datatable data type properties](datatype-properties.md#datatables) 
+If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']%** notation.
 
-- **Datarow** - A datarow contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a datarow. 
+If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a datarow. 
 
-  To retrieve a specific item of a datarow, use the following notation: **%VariableName[ItemNumber]%**
+[Datatable data type properties](datatype-properties.md#datatables) 
 
-  Alternatively, you can use the **%VariableName['ColumnName']%** notation. The name of each column is defined by the datatable from which you retrieved the datarow.
+### **Datarow** 
 
-  [Datarow data type properties](datatype-properties.md#datarows)
+A datarow contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a datarow. 
 
-  ![Screenshot of the contents of a datarow variable.](media\data-rows\data-row-data-type.png) 
+To retrieve a specific item of a datarow, use the following notation: **%VariableName[ItemNumber]%**
 
-- **Custom object** – Contains pairs of properties and values, which can be easily converted to JSON format. 
+Alternatively, you can use the **%VariableName['ColumnName']%** notation. The name of each column is defined by the datatable from which you retrieved the datarow.
 
-  To create a new empty **Custom object**, use the **Set variable** action and populate the following expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
+[Datarow data type properties](datatype-properties.md#datarows)
 
-  ![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
+![Screenshot of the contents of a datarow variable.](media\data-rows\data-row-data-type.png) 
 
-  To update the value of an existing property or add a new one, deploy a **Set variable** action, populate the property's name in the **Set** field, and enter its value in the **To** field. 
+### **Custom object** 
 
-  ![Screenshot of a Set variable action that add a new property to a custom object.](media\variable-data-types\add-property-custom-object.png)
+Contains pairs of properties and values, which can be easily converted to JSON format. 
 
-  Apart from literal values, you can use variables to dynamically set the properties and values of custom objects. For example, the following flow uses two variables to add a new property to a new empty custom object.
+To create a new empty **Custom object**, use the **Set variable** action and populate the following expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
 
-  ![Screenshot of a flow that uses variables to add a new property to a custom object.](media\variable-data-types\add-property-custom-object-dynamically.png)  
+![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
 
-- **List of PDF table info** - A variable of this data type can be produced only through the **Extract tables from PDF** action.
+To update the value of an existing property or add a new one, deploy a **Set variable** action, populate the property's name in the **Set** field, and enter its value in the **To** field. 
 
-  Each item on the list describes an extracted table and provides all the essential information about it. To access a specific datatable info item, use the **%VariableName[ItemNumber]%** notation.
+![Screenshot of a Set variable action that add a new property to a custom object.](media\variable-data-types\add-property-custom-object.png)
 
-  ![Screenshot of a List of PDF table info.](media\variable-data-types\list-pdf-table-info.png) 
+Apart from literal values, you can use variables to dynamically set the properties and values of custom objects. For example, the following flow uses two variables to add a new property to a new empty custom object.
 
-  Every list item provides four properties that allow you to get a specific detail independently. The available properties are the following:
+![Screenshot of a flow that uses variables to add a new property to a custom object.](media\variable-data-types\add-property-custom-object-dynamically.png)  
 
-  - **DataTable** - Returns the extracted table.
-  - **TableStartingPage** - Returns the index of the file page that contains the start of the table.
-  - **TableEndingPage** - Returns the index of the file page that contains the end of the table.
-  - **TableOrderInPage** - Returns the order of the table on the page. 
+### **List of PDF table info** 
 
-  You can find more information regarding the properties of this data type in [Variables datatype properties](datatype-properties.md#pdf-table-info).
+A variable of this data type can be produced only through the **Extract tables from PDF** action.
 
-  ![Screenshot of the properties of a list of PDF table info.](media\variable-data-types\list-pdf-table-info-properties.png) 
+Each item on the list describes an extracted table and provides all the essential information about it. To access a specific datatable info item, use the **%VariableName[ItemNumber]%** notation.
 
-  To access the value of a specific property, use the **%VariableName[ItemNumber].PropertyName%** notation. For example, the following expression returns the datatable value of the first item of the **ExtractedPDFTables** variable.
+![Screenshot of a List of PDF table info.](media\variable-data-types\list-pdf-table-info.png) 
 
-  ![Screenshot of the data table contained in a list of PDF table info vatiable.](media\variable-data-types\list-pdf-table-info-data-table-notation.png) 
+Every list item provides four properties that allow you to get a specific detail independently. The available properties are the following:
+
+- **DataTable** - Returns the extracted table.
+- **TableStartingPage** - Returns the index of the file page that contains the start of the table.
+- **TableEndingPage** - Returns the index of the file page that contains the end of the table.
+- **TableOrderInPage** - Returns the order of the table on the page. 
+
+You can find more information regarding the properties of this data type in [Variables datatype properties](datatype-properties.md#pdf-table-info).
+
+![Screenshot of the properties of a list of PDF table info.](media\variable-data-types\list-pdf-table-info-properties.png) 
+
+To access the value of a specific property, use the **%VariableName[ItemNumber].PropertyName%** notation. For example, the following expression returns the datatable value of the first item of the **ExtractedPDFTables** variable.
+
+![Screenshot of the data table contained in a list of PDF table info vatiable.](media\variable-data-types\list-pdf-table-info-data-table-notation.png) 
 
 ### Known issues and limitations
 
