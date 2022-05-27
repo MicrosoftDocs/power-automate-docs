@@ -17,15 +17,15 @@ search.audienceType:
 
 # Variable datatypes
 
-
-
 When you create variables in your flows, Power Automate converts them to a specific type based on their content.
 
 Some of these data types are widely used throughout the application, such as **numbers**, while others, such as **browser instances**, require explicit actions or groups of actions.
 
 ## Simple data types
 
-### **Text value** 
+Simple data types represent single values, such as texts and numbers. You can use these data types independently or utilize them to create more complex data structures, such as lists and datatables.
+
+### Text value
 
 Any kind of text, from email addresses to the text contents of a .txt file. 
 
@@ -35,7 +35,7 @@ To create a **Text value** variable, use the **Set variable** action and populat
 
 ![Screenshot of a Set variable action that creates a Text value variable.](media\variable-data-types\create-text-variable.png)
 
-### **Numeric value**
+### Numeric value
 
 This is the type applied to numbers. Only this data type can be used in mathematical operations. 
 
@@ -57,7 +57,9 @@ Additionally, you can create complex expressions using logical operators, variab
 
 ## Advanced data types
 
-### **List** 
+Advanced data types represent complex data structures. They function as collections of other data types that you can access as one entity.
+
+### List
 
 Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
 
@@ -77,7 +79,7 @@ A common practice is to use a **For each** action to iterate through the items o
 
 [List data type properties](datatype-properties.md#lists)
 
-### **Datatable** 
+### Datatable 
 
 A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
 
@@ -116,7 +118,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 
 [Datatable data type properties](datatype-properties.md#datatables) 
 
-### **Datarow** 
+### Datarow*
 
 A datarow contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a datarow. 
 
@@ -128,7 +130,7 @@ Alternatively, you can use the **%VariableName['ColumnName']%** notation. The na
 
 ![Screenshot of the contents of a datarow variable.](media\data-rows\data-row-data-type.png) 
 
-### **Custom object** 
+### Custom object
 
 Contains pairs of properties and values, which can be easily converted to JSON format. 
 
@@ -144,7 +146,7 @@ Apart from literal values, you can use variables to dynamically set the properti
 
 ![Screenshot of a flow that uses variables to add a new property to a custom object.](media\variable-data-types\add-property-custom-object-dynamically.png)  
 
-### **List of PDF table info** 
+### List of PDF table info
 
 A variable of this data type can be produced only through the **Extract tables from PDF** action.
 
