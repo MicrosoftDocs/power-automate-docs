@@ -25,29 +25,35 @@ Some of these data types are widely used throughout the application, such as **n
 
 ## Simple data types
 
-- #### **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. 
+#### **Text value** 
 
-  [Text data type properties](datatype-properties.md#texts)
+Any kind of text, from email addresses to the text contents of a .txt file. 
+
+[Text data type properties](datatype-properties.md#texts)
+
+To create a **Text value** variable, use the **Set variable** action and populate the input parameter with the desired text without any notation.
+
+![Screenshot of a Set variable action that creates a Text value variable.](media\variable-data-types\create-text-variable.png)
+
+### **Numeric value**
+
+This is the type applied to numbers. Only this data type can be used in mathematical operations. 
+
+Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation. 
+
+Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. You can find more information about the mathematical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
+
+![Screenshot of a Set variable action that creates a Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
+
+### Boolean value
+
+The value can be either **True** or **False**. 
   
-  To create a **Text value** variable, use the **Set variable** action and populate the input parameter with the desired text without any notation.
+Τo create a **Boolean value** variable, use the **Set variable** action and populate the input parameter with the expressions **%True%** or  **%False%**. 
 
-  ![Screenshot of a Set variable action that creates a Text value variable.](media\variable-data-types\create-text-variable.png)
+Additionally, you can create complex expressions using logical operators, variables and the percentage notation. You can find more information about the logical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
 
-- #### **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. 
-
-  Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation. 
-  
-  Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. You can find more information about the mathematical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
-
-  ![Screenshot of a Set variable action that creates a Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
-
-- #### **Boolean value** - The value can be either **True** or **False**. 
-  
-  Τo create a **Boolean value** variable, use the **Set variable** action and populate the input parameter with the expressions **%True%** or  **%False%**. 
-  
-  Additionally, you can create complex expressions using logical operators, variables and the percentage notation. You can find more information about the logical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
-
-  ![Screenshot of a Set variable action that creates a Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
+![Screenshot of a Set variable action that creates a Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
 
 ## Advanced data types
 
