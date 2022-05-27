@@ -1,6 +1,6 @@
 ---
-title: Get started with process insights in process advisor (preview) | Microsoft Docs
-description: This topic describes how to improve your flows with process mining insights in the process advisor feature in Power Automate.
+title: Get started with cloud flow process insights in process advisor (preview) | Microsoft Docs
+description: This topic describes how to improve your flows with cloud flow process insights in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
@@ -14,11 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# Tutorial: Get started with process insights (preview)
+# Tutorial: Get started with cloud flow process insights (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial allows you to experience how to improve your flows with process insights.
+This tutorial allows you to experience how to improve your flows with cloud flow process insights.
 
 You can gain insights and improve your cloud flows with the help of process mining. With a few selections, you can visualize your flow’s performance, identify bottlenecks and optimization opportunities, and monitor for business drifts. You can generate these insights directly from the flow details page by having process advisor analyze your flow-run history with process mining techniques.
 
@@ -31,9 +31,11 @@ You can gain insights and improve your cloud flows with the help of process mini
 
 - Flow runs generated in the last 28 days.
 
-- Owner of flow to generate process insights.
+- Owner of a flow to generate process insights.
 
 - Access to Microsoft Dataverse.
+
+- Environment maker role.
 
 ## Known limitations
 
@@ -77,3 +79,6 @@ On your flow details page, you can see the **Process insights (preview)** card. 
 1. Customize your insights based on custom filters for your flow like flow version, action status, action status code, or action error.
 
 1. Select time analysis report to drill down into bottlenecks based on cases, variants, and time.
+
+> [!NOTE]
+> To re-analyze the process based on your latest flow runs, go to the process advisor analytics page and select **Refresh**. This will update your data and re-analyze the process. You can continue viewing the analytics while the analysis is processing.
