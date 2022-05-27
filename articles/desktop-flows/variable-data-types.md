@@ -118,7 +118,7 @@ If you loop through a datatable with a **For Each** action, the variable that wi
 
 [Datatable data type properties](datatype-properties.md#datatables) 
 
-### Datarow*
+### Datarow
 
 A datarow contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a datarow. 
 
