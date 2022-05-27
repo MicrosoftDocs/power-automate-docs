@@ -31,12 +31,11 @@ You can gain insights and improve your cloud flows with the help of process mini
 
 - Flow runs generated in the last 28 days.
 
-- Owner of flow to generate process insights.
+- Owner of a flow to generate process insights.
 
 - Access to Microsoft Dataverse.
 
-- An Environment Maker security role if you want to set up dataflows for process mining.
-    - If you're assigned an Environment Admin or System Admin role, go to [What are dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) to learn more.
+- Environment maker role.
 
 ## Known limitations
 
