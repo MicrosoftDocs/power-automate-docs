@@ -193,7 +193,7 @@ Some of these data types are widely used throughout the application, such as **n
 - **Active Directory entry** - Contains a connection to an Active Directory server established through the **Connect to server** action.
 - **Group info** - Contains the name, the display name, a description, and the members of a specified Active Directory group.
 - **Group member** - Represents a member of a specified Active Directory group.
-- **User info** - Contains information about a specified Active Directory user, such as his first and last name, his initials and a distinguished name, his work (company, department and title), his contact information (telephone number, extension and email), and his location (country, city, state, street address and postal code).
+- **User info** - Contains information about a specified Active Directory user, such as first and last name, initials and a distinguished name, work details (company, department and title), contact information (telephone number, extension and email), and location (country, city, state, street address and postal code).
 
 [Active Directory data type properties](datatype-properties.md#active-directory-entry)
 
