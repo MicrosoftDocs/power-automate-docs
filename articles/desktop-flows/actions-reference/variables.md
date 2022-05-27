@@ -78,7 +78,7 @@ Get the integral or fractional digits of a numeric value, or round up the value 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|TruncatedValue|Numeric value|The truncated or rounded number|
+|TruncatedValue|[Numeric value](../variable-data-types.md#simple-data-types)|The truncated or rounded number|
 
 
 ##### <a name="truncatenumber_onerror"></a> Exceptions
@@ -99,8 +99,8 @@ Generate a random number or a list of random numbers that fall between a minimum
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|RandomNumber|Numeric value|The newly generated random number|
-|RandomNumbers|List of Numeric values|The newly generated list of random numbers|
+|RandomNumber|[Numeric value](../variable-data-types.md#simple-data-types)|The newly generated random number|
+|RandomNumbers|[List of Numeric values](../variable-data-types.md#advanced-data-types)|The newly generated list of random numbers|
 
 
 ##### <a name="generaterandomnumber_onerror"></a> Exceptions
@@ -196,7 +196,7 @@ Merge two lists into one
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|OutputList|List of General values|The merged list. The initial lists aren't affected|
+|OutputList|[List of General values](../variable-data-types.md#advanced-data-types)|The merged list. The initial lists aren't affected|
 
 
 ##### <a name="mergelists_onerror"></a> Exceptions
@@ -248,7 +248,7 @@ Compare two lists and create a new list with the items that are common to both
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|IntersectionList|List of General values|The new list of common items|
+|IntersectionList|[List of General values](../variable-data-types.md#advanced-data-types)|The new list of common items|
 
 
 ##### <a name="findcommonlistitems_onerror"></a> Exceptions
@@ -266,7 +266,7 @@ Compare two lists and create a new list with the items that are in the first lis
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ListDifference|List of General values|The new resulting list|
+|ListDifference|[List of General values](../variable-data-types.md#advanced-data-types)|The new resulting list|
 
 
 ##### <a name="subtractlists_onerror"></a> Exceptions
@@ -284,7 +284,7 @@ Convert the contents of a data table column into a list
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ColumnAsList|List of General values|The new list that holds the contents of the specified data table|
+|ColumnAsList|[List of General values](../variable-data-types.md#advanced-data-types)|The new list that holds the contents of the specified data table|
 
 
 ##### <a name="retrievedatatablecolumnintolist_onerror"></a> Exceptions
@@ -325,7 +325,7 @@ Convert a custom object to a JSON string
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|CustomObjectAsJson|Text value|The converted JSON from the provided custom object|
+|CustomObjectAsJson|[Text value](../variable-data-types.md#simple-data-types)|The converted JSON from the provided custom object|
 
 
 ##### <a name="convertcustomobjecttojson_onerror"></a> Exceptions
@@ -346,7 +346,7 @@ Convert a custom object to a JSON string
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|NewList|List of General values|The new list|
+|NewList|[List of General values](../variable-data-types.md#advanced-data-types)|The new list|
 
 
 ##### <a name="additemtolist_onerror"></a> Exceptions
@@ -360,7 +360,7 @@ Create a new empty list
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|List|List of General values|The new list|
+|List|[List of General values](../variable-data-types.md#advanced-data-types)|The new list|
 
 
 ##### <a name="createnewlist_onerror"></a> Exceptions
