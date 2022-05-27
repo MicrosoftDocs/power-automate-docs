@@ -346,7 +346,6 @@ Gets a user's information in the Active Directory
 |-----|-----|-----|
 |UserInfo|User info|The user's info|
 
-
 ##### <a name="getuserinfo_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
