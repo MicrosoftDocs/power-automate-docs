@@ -6,7 +6,7 @@ author: msftman
 manager: kvivek
 ms.subservice: teams
 ms.topic: overview
-ms.date: 05/10/2022
+ms.date: 05/25/2022
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -29,6 +29,8 @@ Learn more about how to use Power Automate with Teams in the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL2mp]
 
+>[!NOTE]
+>Government Communinty Cloud (GCC) environments do not support the use of Power Automate actions to post as the bot.
 
 ## Licensing
 

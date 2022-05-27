@@ -15,7 +15,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/22/2017
+ms.date: 05/27/2022
 search.app: 
   - Flow
 search.audienceType: 
@@ -45,16 +45,7 @@ Follow this tutorial to learn how to [create and use custom APIs](/power-apps/de
 
 ## Share a custom connector with all Power Automate users
 
-After you fully test your custom connector, start the [review process](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/) to have it approved by Microsoft for sharing with all other Power Automate users.
-
-Here's what you'll need for the review process:
-
-* An OpenAPI file that represents your API and any authentication information.
-* An icon for your connector.
-* A description of your connector.
-* Approximately 10 ideas for how your connector could benefit other users through templates.
-
-After you submit this information, Microsoft starts assessing your API's functionality in Power Automate and Microsoft Power Apps.
+After you fully test your custom connector, [get your connector certified](/connectors/custom-connectors/submit-certification) to have it approved by Microsoft for sharing with all other Power Automate users.
 
 ## Embed the flow experience into your website or app
 
