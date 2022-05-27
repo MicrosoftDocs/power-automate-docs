@@ -340,7 +340,7 @@ Convert a custom object to a JSON string
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Add item|No|General value||A value or a variable to add to the list. Provide a list of values to append multiple elements. If the list has a specific type of elements, the new element is converted over to that type|
-|Into list|No|[List of General values]((../variable-data-types.md#list))||A list variable to append the new elements to|
+|Into list|No|[List of General values](../variable-data-types.md#list)||A list variable to append the new elements to|
 
 
 ##### Variables Produced
