@@ -56,8 +56,8 @@ Read the contents of an XML file into a variable
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File path:|No|File||The file that contains the XML document to read|
-|Encoding:|N/A|Default, ANSI, Unicode, Unicode big endian, UTF-8|Default|The encoding used for the specified file|
+|File path|No|File||The file that contains the XML document to read|
+|Encoding|N/A|System default, ASCII, Unicode, Unicode big endian, UTF-8|System default|The encoding used for the specified file|
 
 
 ##### Variables Produced
@@ -80,11 +80,11 @@ Write the contents of an XML node variable into a file
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File path:|No|File||The file to write the XML document into|
-|XML to write:|No|Text value||The XML node or document to write into the file|
-|Encoding:|N/A|Default, ANSI, Unicode, Unicode big endian, UTF-8|Default|The encoding used for the specified file|
-|Format XML:|N/A|Boolean value|True|Specifies whether to format the XML|
-|Indentation per level:|Yes|Numeric value|2|Specifies by how many spaces to indent each level of the XML|
+|File path|No|File||The file to write the XML document into|
+|XML to write|No|Text value||The XML node or document to write into the file|
+|Encoding|N/A|System default, ASCII, Unicode, Unicode big endian, UTF-8|System default|The encoding used for the specified file|
+|Format XML|N/A|Boolean value|True|Specifies whether to format the XML|
+|Indentation per level|Yes|Numeric value|2|Specifies by how many spaces to indent each level of the XML|
 
 
 ##### Variables Produced
@@ -102,9 +102,9 @@ Extract values from an XML document based on the provided XPath query
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|XML document to parse:|No|Text value||The XML as text or a previously defined variable that contains the XML document to parse|
-|XPath query:|No|Text value||The XPath expression to execute against the XML document|
-|Get first value only:|N/A|Boolean value|False|Specifies whether to retrieve a single value (the first value only) or all the values that match the provided XPath expression|
+|XML document to parse|No|Text value||The XML as text or a previously defined variable that contains the XML document to parse|
+|XPath query|No|Text value||The XPath expression to execute against the XML document|
+|Get first value only|N/A|Boolean value|False|Specifies whether to retrieve a single value (the first value only) or all the values that match the provided XPath expression|
 
 
 ##### Variables Produced
@@ -126,10 +126,10 @@ Get the value of an attribute of an XML element
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|XML document:|No|XML node||The XML document or XML element to retrieve its attribute|
+|XML document|No|XML node||The XML document or XML element to retrieve its attribute|
 |XPath query|Yes|Text value||The XPath expression to locate the sub-element and retrieve its attribute|
-|Attribute name:|No|Text value||The name of the attribute to retrieve its value|
-|Get value as:|N/A|Text value, Numeric value, Datetime value, Boolean value|Text value|Specifies the data type for the attribute value|
+|Attribute name|No|Text value||The name of the attribute to retrieve its value|
+|Get value as|N/A|Text value, Numeric value, Datetime value, Boolean value|Text value|Specifies the data type for the attribute value|
 
 
 ##### Variables Produced
@@ -155,10 +155,10 @@ Set the value of an attribute of an XML element
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|XML document:|No|XML node||The XML document or XML element to set its attribute|
-|XPath query:|Yes|Text value||The XPath expression to locate the sub-element and set its attribute|
-|Attribute name:|No|Text value||The name of the attribute to set its value|
-|Attribute value:|No|Text value||The new value for the attribute|
+|XML document|No|XML node||The XML document or XML element to set its attribute|
+|XPath query|Yes|Text value||The XPath expression to locate the sub-element and set its attribute|
+|Attribute name|No|Text value||The name of the attribute to set its value|
+|Attribute value|No|Text value||The new value for the attribute|
 
 
 ##### Variables Produced
@@ -177,9 +177,9 @@ Remove an attribute from an XML element
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|XML document:|No|XML node||The XML document or XML element to remove its attribute|
-|XPath query:|Yes|Text value||The XPath expression to locate the sub-element and remove its attribute|
-|Attribute name:|No|Text value||The name of the attribute to remove|
+|XML document|No|XML node||The XML document or XML element to remove its attribute|
+|XPath query|Yes|Text value||The XPath expression to locate the sub-element and remove its attribute|
+|Attribute name|No|Text value||The name of the attribute to remove|
 
 
 ##### Variables Produced
@@ -199,9 +199,9 @@ Get the value of an XML element
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|XML document:|No|XML node||The XML document or XML element to retrieve its value|
-|XPath query:|Yes|Text value||The XPath expression to locate the sub-element and retrieve its value|
-|Get value as:|N/A|Text value, Numeric value, Datetime value, Boolean value|Text value|Specifies the data type for the XML element value|
+|XML document|No|XML node||The XML document or XML element to retrieve its value|
+|XPath query|Yes|Text value||The XPath expression to locate the sub-element and retrieve its value|
+|Get value as|N/A|Text value, Numeric value, Datetime value, Boolean value|Text value|Specifies the data type for the XML element value|
 
 
 ##### Variables Produced
@@ -226,9 +226,9 @@ Set the value of an XML element
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|XML document:|No|XML node||The XML document or XML element to retrieve it value|
-|XPath query:|Yes|Text value||The XPath expression to locate the sub-element and retrieve its value|
-|XML element value:|No|Text value||The new value for the XML element|
+|XML document|No|XML node||The XML document or XML element to retrieve it value|
+|XPath query|Yes|Text value||The XPath expression to locate the sub-element and retrieve its value|
+|XML element value|No|Text value||The new value for the XML element|
 
 
 ##### Variables Produced
@@ -247,9 +247,9 @@ Insert a new XML element into an XML document
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|XML document:|No|XML node||The XML document to insert the new XML element|
-|XPath query:|No|Text value||The XPath expression to locate the parent XML element and insert the new element into it|
-|XML element to insert:|No|XML node||The new XML element to insert into the XML document|
+|XML document|No|XML node||The XML document to insert the new XML element|
+|XPath query|No|Text value||The XPath expression to locate the parent XML element and insert the new element into it|
+|XML element to insert|No|XML node||The new XML element to insert into the XML document|
 
 
 ##### Variables Produced
@@ -268,8 +268,8 @@ Remove one or more XML elements from an XML document
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|XML document:|No|XML node||The XML document that contains the XML element(s) to remove|
-|XPath query:|No|Text value||The XPath expression to locate the element(s) to remove|
+|XML document|No|XML node||The XML document that contains the XML element(s) to remove|
+|XPath query|No|Text value||The XPath expression to locate the element(s) to remove|
 
 
 ##### Variables Produced

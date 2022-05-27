@@ -34,6 +34,8 @@ The PDF group of actions enables you to extract images, text, and tables from PD
 
 To extract text from a PDF file, use the **Extract text from PDF** action. In the following example, the action has been configured to extract text from a specific range of pages. The file is password-protected, so a password has been populated in the **Advanced** settings. 
 
+If you want to extract texts arranged in a tabular form, enable the **Optimize for structured data** option to improve the results' format and accuracy. 
+
 ![Screenshot of the Extract text from PDF action.](media\pdf\extract-text-pdf-example.png)
 
 To extract images, deploy the **Extract images from PDF** action. This action has a similar structure as the previous one, but it contains an additional option to specify a prefix for the image names.
@@ -65,12 +67,12 @@ Extract text from a PDF file
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|File||The PDF file to extract text from. Enter a file path, a variable containing a file or a text path|
-|Password|Yes|Encrypted value||The password of the PDF file. Leave this blank if the PDF isn't password protected|
 |Page(s) to extract|N/A|All, Single, Range|All|Specifies how many pages to extract: All pages, a single page or a range of pages|
 |Single page number|No|Numeric value||The number of the single page to extract text from|
 |From page number|No|Numeric value||The first page number from the range of pages to extract text from|
 |To page number|No|Numeric value||The last page number from the range of pages to extract text from|
-
+|Password|Yes|Encrypted value||The password of the PDF file. Leave this blank if the PDF isn't password protected|
+|Optimize for structured data|N/A|Boolean value|False|Specify whether to detect formatted layout in the document and extract text accordingly|
 
 ##### Variables Produced
 |Argument|Type|Description|
@@ -134,7 +136,7 @@ Extract images from a PDF file
 |Exception|Description|
 |-----|-----|
 |Invalid password|The given password is invalid|
-|Failed to extract images |Indicates that an error occured while extracting images from the given pages of the PDF|
+|Failed to extract images |Indicates that an error occurred while extracting images from the given pages of the PDF|
 |Folder doesn't exist|Indicates that the folder doesn't exist|
 |PDF file doesn't exist|File doesn't exist on the given path|
 
@@ -147,7 +149,7 @@ Extract pages from a PDF file to a new PDF file
 |-----|-----|-----|-----|-----|
 |PDF file|No|File||The PDF file to extract pages from. Enter a file path, a variable containing a file or a text path|
 |Password|Yes|Encrypted value||The password of the PDF file. Leave this blank if the PDF isn't password protected|
-|Page selection|No|Text value||The index numbers of the pages to keep (eg 1,3,17-24 )|
+|Page selection|No|Text value||The index numbers of the pages to keep (eg 1,3,17-24)|
 |Extracted PDF path|No|File||The path to store the extracted PDF file|
 |If file exists|N/A|Overwrite, Don't overwrite, Add sequential suffix|Add sequential suffix|Specifies what to do in case the output PDF file already exists|
 
@@ -165,7 +167,7 @@ Extract pages from a PDF file to a new PDF file
 |PDF file doesn't exist|File doesn't exist on the given path|
 |Page out of bounds|Indicates that one or more pages are out of bounds of the PDF file|
 |Invalid page selection|Indicates that the given pages aren't valid for the PDF file|
-|Failed to extract new PDF |Indicates that an error occured while trying to extract new PDF |
+|Failed to extract new PDF |Indicates that an error occurred while trying to extract new PDF |
 
 ### <a name="mergefiles"></a> Merge PDF files
 Merges multiple PDF files into a new one
@@ -191,7 +193,7 @@ Merges multiple PDF files into a new one
 |-----|-----|
 |PDF file doesn't exist|File doesn't exist on the given path|
 |Invalid password|The given password is invalid|
-|Failed to merge PDF files|Indicates that an error occured while merging the files|
+|Failed to merge PDF files|Indicates that an error occurred while merging the files|
 
 
 

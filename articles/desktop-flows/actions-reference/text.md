@@ -58,7 +58,7 @@ Similarly, the actions **Convert text to datetime** and **Convert datetime to te
 
 ### Use the Recognize entities in text action
 
-Power Automate for desktop enables users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
+Desktop flows enable users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
 
 ![Screenshot of the Recognize entities in text action](\media\text\recognize-entities-text-action.png)
 

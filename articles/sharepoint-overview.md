@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/02/2022
+ms.date: 05/17/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -24,7 +24,6 @@ search.audienceType:
 # Use SharePoint and Power Automate to build workflows
 
 Power Automate is deeply integrated with SharePoint. You can start with any of the more than [100 SharePoint templates](https://flow.microsoft.com/templates/), or create your own flow that integrates with SharePoint from scratch.
-
 
 Learn more about how to use Power Automate with SharePoint in the following video.
 
@@ -63,12 +62,12 @@ Here are some of the top scenarios in which you can use Power Automate with Shar
 You can use SharePoint triggers to start flows that monitor changes made to a list or library. For a full list, go to [SharePoint triggers](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-triggers).
 
 > [!div class="mx-imgBorder"]
-> ![A screenshot that shows some SharePoint triggers such as "When an item is created."](./media/overview-sharepoint/sharepoint-triggers.png)
+> ![A screenshot that shows some SharePoint triggers such as "When an item is created."](./media/overview-sharepoint/sharepoint-triggers.png "Some SharePoint triggers such as When an item is created")
 
 As soon as your flow starts, you can use any of the more than [40 *actions*](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers#sharepoint-actions) to manipulate your lists.
 
 > [!div class="mx-imgBorder"]
-> ![A screenshot that shows some SharePoint actions such as "Add attachment" and "Check in file."](./media/overview-sharepoint/sharepoint-actions.png)
+> ![A screenshot that shows some SharePoint actions such as "Add attachment" and "Check in file."](./media/overview-sharepoint/sharepoint-actions.png "Some SharePoint actions such as Add attachment and Check in file")
 
 ## Migrate from workflows to Power Automate
 

@@ -1,11 +1,10 @@
 ---
-title: Overview of process mining in process advisor (preview) (contains video) | Microsoft Docs
+title: Overview of process mining in process advisor (preview) in Power Automate (contains video) | Microsoft Docs
 description: This topic is an overview of process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
-
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/02/2021
+ms.date: 05/25/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
