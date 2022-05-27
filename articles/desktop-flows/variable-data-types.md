@@ -25,7 +25,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 ## Simple data types
 
-- **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. 
+- #### **Text value** - Any kind of text, from email addresses to the text contents of a .txt file. 
 
   [Text data type properties](datatype-properties.md#texts)
   
@@ -33,7 +33,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![Screenshot of a Set variable action that creates a Text value variable.](media\variable-data-types\create-text-variable.png)
 
-- **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. 
+- #### **Numeric value** - This is the type applied to numbers. Only this data type can be used in mathematical operations. 
 
   Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation. 
   
@@ -41,7 +41,7 @@ Some of these data types are widely used throughout the application, such as **n
 
   ![Screenshot of a Set variable action that creates a Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
 
-- **Boolean value** - The value can be either **True** or **False**. 
+- #### **Boolean value** - The value can be either **True** or **False**. 
   
   Τo create a **Boolean value** variable, use the **Set variable** action and populate the input parameter with the expressions **%True%** or  **%False%**. 
   
