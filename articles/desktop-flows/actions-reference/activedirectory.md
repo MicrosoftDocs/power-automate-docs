@@ -111,6 +111,9 @@ Gets information about a group from the Active Directory server
 |-----|-----|-----|
 |GroupInfo|Group info|The group's info|
 
+> [!NOTE]
+> You can find more information regarding the contents of **Group info** variables in [Variable datatypes](../variable-data-types.md#active-directory).
+
 
 ##### <a name="getgroupinfo_onerror"></a> Exceptions
 |Exception|Description|
@@ -345,6 +348,9 @@ Gets a user's information in the Active Directory
 |Argument|Type|Description|
 |-----|-----|-----|
 |UserInfo|User info|The user's info|
+
+> [!NOTE]
+> You can find more information regarding the contents of **User info** variables in [Variable datatypes](../variable-data-types.md#active-directory).
 
 
 ##### <a name="getuserinfo_onerror"></a> Exceptions
