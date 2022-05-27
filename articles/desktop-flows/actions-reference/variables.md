@@ -70,15 +70,15 @@ Get the integral or fractional digits of a numeric value, or round up the value 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Number to truncate|No|Numeric value||The number or variable that holds the numeric value to truncate/round up|
+|Number to truncate|No|[Numeric value](../variable-data-types.md#numeric-value)||The number or variable that holds the numeric value to truncate/round up|
 |Operation|N/A|Get integer part, Get decimal part, Round number|Get integer part|Specifies the operation to perform on the given number|
-|Decimal places|Yes|Numeric value|3|The number of decimal places to round the given number up to. Enter 0 to return an integer as a result|
+|Decimal places|Yes|[Numeric value](../variable-data-types.md#numeric-value)|3|The number of decimal places to round the given number up to. Enter 0 to return an integer as a result|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|TruncatedValue|[Numeric value](../variable-data-types.md#simple-data-types)|The truncated or rounded number|
+|TruncatedValue|[Numeric value](../variable-data-types.md#numeric-value)|The truncated or rounded number|
 
 
 ##### <a name="truncatenumber_onerror"></a> Exceptions
@@ -89,18 +89,18 @@ Generate a random number or a list of random numbers that fall between a minimum
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Minimum value|Yes|Numeric value|0|The lower boundary for the random number(s) to generate|
-|Maximum value|Yes|Numeric value|100|The upper boundary for the random number(s) to generate|
-|Generate multiple numbers|N/A|Boolean value|False|Specifies whether to generate a single random number or a list of random numbers|
-|How many numbers|Yes|Numeric value|10|Specifies how many random numbers to generate|
-|Allow duplicates|N/A|Boolean value|False|Specifies whether to permit or prevent the same number from appearing more than once in the random numbers list|
+|Minimum value|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The lower boundary for the random number(s) to generate|
+|Maximum value|Yes|[Numeric value](../variable-data-types.md#numeric-value)|100|The upper boundary for the random number(s) to generate|
+|Generate multiple numbers|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to generate a single random number or a list of random numbers|
+|How many numbers|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specifies how many random numbers to generate|
+|Allow duplicates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to permit or prevent the same number from appearing more than once in the random numbers list|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|RandomNumber|[Numeric value](../variable-data-types.md#simple-data-types)|The newly generated random number|
-|RandomNumbers|[List of Numeric values](../variable-data-types.md#advanced-data-types)|The newly generated list of random numbers|
+|RandomNumber|[Numeric value](../variable-data-types.md#numeric-value)|The newly generated random number|
+|RandomNumbers|[List of Numeric values](../variable-data-types.md#list)|The newly generated list of random numbers|
 
 
 ##### <a name="generaterandomnumber_onerror"></a> Exceptions
@@ -114,7 +114,7 @@ Remove all items from a list
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to clear|No|List of General values||A list variable to remove its elements|
+|List to clear|No|[List of General values](../variable-data-types.md#list)||A list variable to remove its elements|
 
 
 ##### Variables Produced
@@ -130,10 +130,10 @@ Remove one or multiple items from a list
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Remove item by|N/A|Index, Value|Index|Specifies whether to remove the item at a specified index or the item(s) with a specific value|
-|At index|No|Numeric value||The index number of the item to remove|
+|At index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index number of the item to remove|
 |With value|No|General value||The item to remove|
-|Remove all item occurrences|N/A|Boolean value|False|Removes all the occurrences that match the item specified|
-|From list|No|List of General values||The list with items to remove|
+|Remove all item occurrences|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Removes all the occurrences that match the item specified|
+|From list|No|[List of General values](../variable-data-types.md#list)||The list with items to remove|
 
 
 ##### Variables Produced
@@ -152,13 +152,13 @@ Sort the items of a list. Use items of the same type
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to sort|No|List of General values||The variable that holds the list to sort|
-|Sort by list item's properties|N/A|Boolean value|False|If the list items are objects (such are files, folders, etc), enable this option to sort the item by a specific property. Leave this option disabled to sort the elements by their default property (e.g., file objects will be sorted by their full path)|
-|First property to sort by|Yes|Text value||The name of an item's property to sort the list by. Refer to the help file for the property names of each object|
+|List to sort|No|[List of General values](../variable-data-types.md#list)||The variable that holds the list to sort|
+|Sort by list item's properties|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|If the list items are objects (such are files, folders, etc), enable this option to sort the item by a specific property. Leave this option disabled to sort the elements by their default property (e.g., file objects will be sorted by their full path)|
+|First property to sort by|Yes|[Text value](../variable-data-types.md#text-value)||The name of an item's property to sort the list by. Refer to the help file for the property names of each object|
 |Sort|N/A|Ascending, Descending|Ascending|Specifies whether to sort by the first property ascending or descending|
-|Second property to sort by|Yes|Text value||The name of a second property to sort the list by|
+|Second property to sort by|Yes|[Text value](../variable-data-types.md#text-value)||The name of a second property to sort the list by|
 |Sort|N/A|Ascending, Descending|Ascending|Specifies whether to sort by the second property ascending or descending|
-|Third property to sort by|Yes|Text value||The name of a third property to sort the list by|
+|Third property to sort by|Yes|[Text value](../variable-data-types.md#text-value)||The name of a third property to sort the list by|
 |Sort|N/A|Ascending, Descending|Ascending|Specifies whether to sort by the third property ascending or descending|
 
 
@@ -174,7 +174,7 @@ Create a random permutation of a list
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to shuffle|No|List of General values||The variable that contains the list to shuffle|
+|List to shuffle|No|[List of General values](../variable-data-types.md#list)||The variable that contains the list to shuffle|
 
 
 ##### Variables Produced
@@ -189,14 +189,14 @@ Merge two lists into one
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First list|No|List of General values||The first list of items to merge|
-|Second list|No|List of General values||The second list of items to merge|
+|First list|No|[List of General values](../variable-data-types.md#list)||The first list of items to merge|
+|Second list|No|[List of General values](../variable-data-types.md#list)||The second list of items to merge|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|OutputList|[List of General values](../variable-data-types.md#advanced-data-types)|The merged list. The initial lists aren't affected|
+|OutputList|[List of General values](../variable-data-types.md#list)|The merged list. The initial lists aren't affected|
 
 
 ##### <a name="mergelists_onerror"></a> Exceptions
@@ -210,7 +210,7 @@ Reverse the order of the items of a list
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to reverse|No|List of General values||The list whose items order to reverse|
+|List to reverse|No|[List of General values](../variable-data-types.md#list)||The list whose items order to reverse|
 
 
 ##### Variables Produced
@@ -225,8 +225,8 @@ Remove the multiple occurrences of items in a list, so that in the resulting lis
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to remove duplicate items from|No|List of General values||The list variable to remove duplicate items from|
-|Ignore text case while searching for duplicate items|N/A|Boolean value|False|Specifies whether to perform case insensitive comparison of text while searching for duplicate items (only applies to lists made of text items)|
+|List to remove duplicate items from|No|[List of General values](../variable-data-types.md#list)||The list variable to remove duplicate items from|
+|Ignore text case while searching for duplicate items|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to perform case insensitive comparison of text while searching for duplicate items (only applies to lists made of text items)|
 
 
 ##### Variables Produced
@@ -241,14 +241,14 @@ Compare two lists and create a new list with the items that are common to both
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First list|No|List of General values||The variable that contains the first list to compare|
-|Second list|No|List of General values||The variable that contains the second list to compare|
+|First list|No|[List of General values](../variable-data-types.md#list)||The variable that contains the first list to compare|
+|Second list|No|[List of General values](../variable-data-types.md#list)||The variable that contains the second list to compare|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|IntersectionList|[List of General values](../variable-data-types.md#advanced-data-types)|The new list of common items|
+|IntersectionList|[List of General values](../variable-data-types.md#list)|The new list of common items|
 
 
 ##### <a name="findcommonlistitems_onerror"></a> Exceptions
@@ -259,14 +259,14 @@ Compare two lists and create a new list with the items that are in the first lis
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First list|No|List of General values||The variable that holds the first list to compare|
-|Second list|No|List of General values||The variable that holds the second list to compare|
+|First list|No|[List of General values](../variable-data-types.md#list)||The variable that holds the first list to compare|
+|Second list|No|[List of General values](../variable-data-types.md#list)||The variable that holds the second list to compare|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ListDifference|[List of General values](../variable-data-types.md#advanced-data-types)|The new resulting list|
+|ListDifference|[List of General values](../variable-data-types.md#list)|The new resulting list|
 
 
 ##### <a name="subtractlists_onerror"></a> Exceptions
@@ -277,14 +277,14 @@ Convert the contents of a data table column into a list
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|Datatable||The data table with the column to convert into a list|
-|Column name or index|No|Text value||The column name, if column names are defined, or the index number of the column to retrieve|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table with the column to convert into a list|
+|Column name or index|No|[Text value](../variable-data-types.md#text-value)||The column name, if column names are defined, or the index number of the column to retrieve|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ColumnAsList|[List of General values](../variable-data-types.md#advanced-data-types)|The new list that holds the contents of the specified data table|
+|ColumnAsList|[List of General values](../variable-data-types.md#list)|The new list that holds the contents of the specified data table|
 
 
 ##### <a name="retrievedatatablecolumnintolist_onerror"></a> Exceptions
@@ -299,7 +299,7 @@ Convert a JSON string to a custom object
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|JSON|No|Text value||A JSON text, or a previously created variable containing one, to convert it to a custom object|
+|JSON|No|[Text value](../variable-data-types.md#text-value)||A JSON text, or a previously created variable containing one, to convert it to a custom object|
 
 
 ##### Variables Produced
@@ -319,13 +319,13 @@ Convert a custom object to a JSON string
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Custom object|No|Custom object||The custom object to convert to JSON|
+|Custom object|No|[Custom object](../variable-data-types.md#custom-object)||The custom object to convert to JSON|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|CustomObjectAsJson|[Text value](../variable-data-types.md#simple-data-types)|The converted JSON from the provided custom object|
+|CustomObjectAsJson|[Text value](../variable-data-types.md#text-value)|The converted JSON from the provided custom object|
 
 
 ##### <a name="convertcustomobjecttojson_onerror"></a> Exceptions
@@ -340,13 +340,13 @@ Convert a custom object to a JSON string
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Add item|No|General value||A value or a variable to add to the list. Provide a list of values to append multiple elements. If the list has a specific type of elements, the new element is converted over to that type|
-|Into list|No|List of General values||A list variable to append the new elements to|
+|Into list|No|[List of General values]((../variable-data-types.md#list))||A list variable to append the new elements to|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|NewList|[List of General values](../variable-data-types.md#advanced-data-types)|The new list|
+|NewList|[List of General values](../variable-data-types.md#list)|The new list|
 
 
 ##### <a name="additemtolist_onerror"></a> Exceptions
@@ -360,7 +360,7 @@ Create a new empty list
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|List|[List of General values](../variable-data-types.md#advanced-data-types)|The new list|
+|List|[List of General values](../variable-data-types.md#list)|The new list|
 
 
 ##### <a name="createnewlist_onerror"></a> Exceptions
@@ -371,8 +371,8 @@ Increase the value of a variable by a specific amount
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Variable name|No|Numeric value||The numeric value to increase|
-|Increase by|No|Numeric value||A numeric value, or a previously created variable containing one, to increase the variable by|
+|Variable name|No|[Numeric value](../variable-data-types.md#numeric-value)||The numeric value to increase|
+|Increase by|No|[Numeric value](../variable-data-types.md#numeric-value)||A numeric value, or a previously created variable containing one, to increase the variable by|
 
 
 ##### Variables Produced
@@ -387,8 +387,8 @@ Decrease the value of a variable by a specific amount
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Variable name|No|Numeric value||A numeric value, or a previously created variable containing one, to decrease the variable by|
-|Decrease by|No|Numeric value||A numeric value, or a previously created variable containing one, to decrease the variable by|
+|Variable name|No|[Numeric value](../variable-data-types.md#numeric-value)||A numeric value, or a previously created variable containing one, to decrease the variable by|
+|Decrease by|No|[Numeric value](../variable-data-types.md#numeric-value)||A numeric value, or a previously created variable containing one, to decrease the variable by|
 
 
 ##### Variables Produced
