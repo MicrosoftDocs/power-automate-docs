@@ -23,7 +23,7 @@ search.audienceType:
 Follow these steps to move your solution and its dependencies to a new environment.
 
 >[!IMPORTANT]
->Before you export a solution, you must delete any environment variables in the solution.
+>Before you export a solution, consider removing environment variable values in the solution.
 
 1. Sign into [Power Automate](https://powerautomate.com.)
 1. Select **Solutions** from the navigation bar on the left side of Power Automate.
@@ -43,6 +43,7 @@ Find the flows within the **Workflows** folder in the solution zip file. Each ex
 
 ## Tips
 
+- Solutions can also be found and accessed via the **Solutions** card in the flow details page of solution-aware cloud flows. An alternate path is to click on the desired solution in the **Solutions** card, select the Overview tab, and use the **Export** button there.
 - You can't export managed solutions. More information: [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 - Once a flow is solution-aware and in Dataverse, it must be exported in a solution as described earlier in this article. You cannot export a solution-aware flow from the flow details page.
 - To implement healthy application lifecycle management (ALM) in your organization, consider using a source control system to store and collaborate on your solutions, and automate the solution export process. More information: [ALM basics](/power-platform/alm/basics-alm) in the Power Platform ALM guide.
