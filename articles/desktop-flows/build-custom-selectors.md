@@ -51,14 +51,14 @@ Selectors use a tree structure that describes the exact location of a component 
 
 This functionality enables Power Automate to distinguish a component from components with similar attributes in the same application. Disabling or enabling levels of selectors allows you to change the location in which Power Automate will search for the component.
 
-For example, the following selector pinpoints the **File** menu option in an untitled Notepad window. The first level of the selector describes the menu bar of the window, while the second level describes the **File** option.
+For example, the following selector pinpoints the **File** menu option in a Notepad window. The first two levels of the selector describe the pane and menu bar of the window, while the third level describes the **File** option.
 
 > [!NOTE]
-> The Notepad window and the menu option are different UI elements, but they have a parent-child relationship. 
+> The Notepad window and the pane are different UI elements, but they have a parent-child relationship. 
 
 ![Screenshot of a selector that pinpoints the **File** menu option in an Notepad window.](media/build-custom-selectors/file-option-notepad-selector.png)
 
-Assume that you want to edit the selector to work with a Notepad window named **Notes**. To achieve this functionality, change the **Name** attribute of the selector to **Notes - Notepad**. The new selector should be: **:desktop > window[Name="Notes - Notepad"][Process="notepad"]**.
+Assume that you want to edit the selector to work with a Notepad window named **Notes.txt**. To achieve this functionality, change the **Name** attribute of the selector to **Notes.txt - Notepad**. The new selector should be: **:desktop > window[Name="Notes.txt - Notepad"][Process="Notepad"]**.
 
 ![Screenshot of the updated Notepad selector.](media/build-custom-selectors/notepad-selector.png)
 
@@ -89,7 +89,7 @@ If the value of a selector's attribute depends on calculations and results of pr
 
 To use a variable in a selector, launch the **Custom selector builder** and populate the variable's name enclosed by percentage signs (**%**). You can find more information about the percentage notation in [Use variables and the % notation](variable-manipulation.md).
 
-If you use a variable in the **Name** attribute of the Notepad example, the selector should be **:desktop > window[Name="%WindowName%"][Process="notepad"]**.
+If you use a variable in the **Name** attribute of the Notepad example, the selector should be **:desktop > window[Name="%WindowName%"][Process="Notepad"]**.
 
 ![Screenshot of a variable in the Notepad selector .](media/build-custom-selectors/variable-notepad-selector.png)
 

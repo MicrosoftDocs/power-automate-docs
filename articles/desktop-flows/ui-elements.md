@@ -16,7 +16,7 @@ search.audienceType:
 ---
 # Automate using UI elements
 
-Power Automate for desktop utilizes UI elements to interact with applications and web pages without resorting to image recognition and absolute coordinates. UI elements are used as input in most UI automation and browser automation actions and identify specific elements on windows and web pages.
+Desktop flows utilize UI elements to interact with applications and web pages without resorting to image recognition and absolute coordinates. UI elements are used as input in most UI automation and browser automation actions and identify specific elements on windows and web pages.
 
 ## UI elements
 
@@ -29,7 +29,7 @@ Each one of these action groups accepts a different category of UI elements. UI 
 
 ![Screenshot of the available UI elements in the Press button in window action.](media/ui-elements/ui-element-input.png)
 
-To add a new UI element to your flow, select to add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**. 
+To add a new UI element to your flow, select to add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Left Ctrl + Left click**. When the selection is finished, select **Done**. 
 
 ![Screenshot of a highlighted element.](./media/ui-elements/capturing-ui-elements.png)
 

@@ -17,7 +17,7 @@ search.audienceType:
 
 # Handle links that open new tabs
 
-Power Automate for desktop uses browser instances to pinpoint specific web pages located in specific tabs on browser windows. 
+Desktop flows use browser instances to pinpoint specific web pages located in specific tabs on browser windows. 
 
 If a flow clicks a link that opens a new tab, you have to apply additional configuration to continue automating inside this new tab.
 

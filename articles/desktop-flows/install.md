@@ -29,7 +29,7 @@ The installer contains all the components you need to record, edit, and test you
 
 ## Install Power Automate
 
-Follow these steps to install the Power Automate for desktop:
+Follow these steps to install Power Automate for desktop:
 
 1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 1. Open the **Setup.Microsoft.PowerAutomate.exe** file. 
@@ -82,7 +82,7 @@ During installation, you can change the default settings if you don't want to se
 
 ## Install the Power Automate browser extension 
 
-After the installation completes, you will need to install and enable the extension for Power Automate for desktop. This extension will allow you to record and run web actions in your desktop flows.
+After the installation completes, you will need to install and enable the browser extension for Power Automate. This extension will allow you to record and run web actions in your desktop flows.
 
 ![Screenshot of the Installation success dialog.](../media/desktop-flows-setup/screen.png)
 

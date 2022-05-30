@@ -1,5 +1,5 @@
 ---
-title: Add an advanced option and multiple actions | Microsoft Docs
+title: Add an advanced option and multiple actions in Power Automate | Microsoft Docs
 description: Expand a cloud flow to include an advanced option, such as how to add collaboration comments to actions and triggers, set email to high priority, and add another action for the same event.
 services: ''
 suite: flow
@@ -8,13 +8,12 @@ author: msftman
 manager: kvivek
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/9/2021
+ms.date: 05/14/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -24,39 +23,46 @@ search.audienceType:
 ---
 # Add multiple actions and advanced options to a cloud flow
 
-Customize a cloud flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a SharePoint list, create a file in Dropbox that contains the same information.
+Customize a cloud flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a list created in Microsoft Lists, create a file in Dropbox that contains the same information.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Prerequisites
-* [Create a cloud flow](get-started-logic-flow.md)
+[Create a cloud flow](get-started-logic-flow.md)
 
 ## Add another action
 In this procedure, you'll add an action in the middle of the flow. This action will save a file in your Dropbox, archiving the item in the list.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **My flows** in the top navigation bar.
-2. In the list of flows, select the flow that you want to edit.
-3. Select **New step**, and then select **Add an action**.
-   
-    ![Collapsed add.](./media/multi-step-logic-flow/add-action.png)
-4. In the list of possible actions, search for **Create file**, and then select **Dropbox - Create file**.
-   
-    ![search create file.](./media/multi-step-logic-flow/create-file-search.png)
-5. If prompted, provide your Dropbox credentials.
-6. Select the folder icon on the right side of the **Folder path** box.
-7. Find and then select the folder in which you want to place the new file.
-   
-    ![search create folder.](./media/multi-step-logic-flow/create-file-folder.png)
-8. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files. You may have to select **See more** to find the **TweetId** token.
-9. Add the text that you want the file to contain by typing into the **File content** box. You can also add tokens into the **File content** box.
-   
-    ![file name and contents.](./media/multi-step-logic-flow/create-file-name-and-contents.png)
+1. Sign into [Power Automate](https://flow.microsoft.com).
+1. On the left pane, select **My flows**.
+1. In the list of flows, select the **Edit** icon next to the flow you want to edit.
+
+    > [!div class="mx-imgBorder"]
+    >![Screenshot of the edit icon.](./media/multi-step-logic-flow/edit-icon.png "Edit icon")
+
+1. Select **New step**, enter **dropbox** in the search field, and select **Create file - Dropdown** in the **Actions** list.
+
+    > [!div class="mx-imgBorder"]  
+    >![Screenshot of creating a Dropbox file.](./media/multi-step-logic-flow/create-file-search.png "Create a Dropbox file")
+
+1. If prompted, provide your Dropbox credentials.
+1. Select the folder icon on the right side of the **Folder path** box.
+1. Select **>** and then choose the folder in which you want to place the new file.
+
+    > [!div class="mx-imgBorder"]
+    >![Screenshot of selecting a Dropbox folder path.](./media/multi-step-logic-flow/create-file-folder.png "Select a Dropbox folder path")
+
+1. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files. You may have to select **See more** to find the **TweetId** token.
+1. Add the text that you want the file to contain by typing into the **File content** box. You can also add tokens into the **File content** box.
+
+    > [!div class="mx-imgBorder"]
+    >![Screenshot of a sample file name and content.](./media/multi-step-logic-flow/create-file-name-and-contents.png "File name and file content")
    
    > [!IMPORTANT]
-   > If you give the file a name that matches an existing file's name (in the selected folder), the existing file will be overwritten.
- 
-10. Select **Update flow**, which is located on the menu at the top of the screen.
-11. Send a tweet that contains the keyword you specified.
+   > If the file name you enter matches an existing file's name in the selected folder, the existing file will be overwritten.
+
+1. Save your flow.
+1. Send a tweet that contains the keyword you specified.
     
      Within a minute, a file is created in your Dropbox account.
 
@@ -66,23 +72,23 @@ In this procedure, you'll add an action in the middle of the flow. This action w
   
   > [!NOTE]
   > You can't move a step before another if you're using any outputs from that step.
-  > 
-  > 
-  
-    ![Dragging action in the flow](./media/multi-step-logic-flow/draggingaction.png)
-* To delete an action, select the ellipsis (...) near the right edge of the title bar for the action you want to delete, select **Delete**, and then select **OK**.
-  
-    ![Delete the menu.](./media/multi-step-logic-flow/deletemenu.png)
+
+    > [!div class="mx-imgBorder"]  
+    >![Screenshot of dragging an action in the flow.](./media/multi-step-logic-flow/draggingaction.png "Drag an action in the flow")
+
+* To delete an action, select **...** (the ellipsis) near the right edge of the title bar for the action you want to delete, select **Delete**, and then select **OK**.
+
+    > [!div class="mx-imgBorder"]
+    >![Screenshot of deleting an action from the menu.](./media/multi-step-logic-flow/deletemenu.png "Delete an action")
   
      **Note:** You can't delete an action if you're using any outputs from it anywhere in the flow. First, remove those outputs from the fields, and then you can delete the action.
 
 ## Copy and paste actions
 
-If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you are building a condition and want similar actions in the **If yes** side and the **If no** side, instead of creating both actions from scratch you can build the first action in one side and then copy it to the other side.
-
+If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you're building a condition and want similar actions in the **If yes** side and the **If no** side, you can build the first action in one side and then copy it to the other side. This is an alternative to creating both actions from scratch.
 
 ### To copy an action
-1. Select the action menu (the ... at the top-right of the action).
+1. On the action menu heading, select **...** (the ellipses).
 1. Select **Copy to my clipboard**. 
 1. Select **New step** where you want your action to go. 
 
@@ -90,23 +96,25 @@ If you want to duplicate actions while designing a cloud flow, you can copy and 
 1. Select the item you want to paste.
 
 ## Add advanced options
-Start with a cloud flow that has a **Send an email** action.
+Start with a cloud flow that has a **Send an email (V2)** action.
 
-1. Select **Show advanced options**, which is located at the bottom of the **Send an email** card.
-   
-     You'll then see the advanced options for sending an email.
-   
-    ![SharePoint triggers.](./media/multi-step-logic-flow/advanced.png)
-2. Select **High** from the **Importance** list, and then select **Hide advanced options** to hide the advanced options.
-3. Select **Update flow**, which is located on the menu at the top of the screen.
-   
-     This step saves your changes.
+1. On the bottom of the **Send an email (V2)** card, select **Show advanced options**.
 
-## Use co-presence to see all editors
+     You'll see the advanced options for sending an email. The word **Show** changes to **Hide** so that you can toggle the advanced options.
+
+    > [!div class="mx-imgBorder"]
+    >![Screenshot of showing advanced options.](./media/multi-step-logic-flow/advanced.png "Show/hide advanced options")
+
+1. From the **Importance** dropdown list, select **High**.
+1. Select **Hide advanced options**.
+1. Save your flow.
+
+## Use co-presence to get notified of all editors
 
 Power Automate displays the list of other makers who are editing a flow simultaneously. The list of editors is updated periodically.
 
-![List of editors](./media/multi-step-logic-flow/editors-list.png)
+>[!div class="mx-imgBorder"]
+>![Screenshot of the list of other editors.](./media/multi-step-logic-flow/editors-list.png "List of other editors")
 
 ## Add comments to actions and triggers
 
@@ -117,29 +125,33 @@ Makers can have threaded comments with colleagues as they build their flows. The
 
 Follow these steps to add a comment to any action or trigger in your flow.
 
-1. Select the ellipsis on the trigger or action.
+1. On the trigger or action heading, select **...** (the ellipsis).
 1. Select **New Comment**.
 
-   ![Image that displays the new comments button](./media/multi-step-logic-flow/comments-actions-triggers.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the menu that contains the New Comment option.](./media/multi-step-logic-flow/comments-actions-triggers.png "New Comment option")
 
    The comments pane opens.
 1. Enter a comment to your action with an @mention to others. If you do this, an email notification will be sent to them when you select the **Send** icon.
 
-    ![@mention or comment.](./media/multi-step-logic-flow/mention.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the mention or comment box.](./media/multi-step-logic-flow/mention.png "Mention or comment")
 
-    If the person you want to @mention is not a co-owner of the flow, they'll see the **Share and notify** option. This would automatically share the flow with the other user, and send an email notification.
+    If the person you want to @mention isn't a co-owner of the flow, they'll get the **Share and notify** option. Select this option to share the flow with the other user, and send an email notification automatically.
 
-   ![Image that displays the @mention or comment dialog.](./media/multi-step-logic-flow/grant.png "@mention or comment dialog")
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the Grant access box with the Share and notify button.](./media/multi-step-logic-flow/grant.png "Share and notify button")
 
 1. Enter your comments in the **Start a conversation** box on the **Comments** pane, and then post it.
 
   The Power Automate designer provides visual cues on the action cards to display the number of comment threads contained within each.
 
-![Image that displays the Grant access dialog.](./media/multi-step-logic-flow/comments-count-icon.png "Grant access")
+>[!div class="mx-imgBorder"]
+>![Screenshot of the number of comments in an action.](./media/multi-step-logic-flow/comments-count-icon.png "Number of comments in an action")
 
 ### Limitations
 
-- Makers must save the flow at least once before a comment could be added.
+- Makers must save the flow at least once before they can add a comment.
 - The comment thread count icons don't appear for control actions such as condition, switch, and scope.
 - Comments aren't allowed for managed solution flows.
 - The **Share and notify** option is available only for non-solution aware flows. For solution aware flows, @mentioning is limited to users who are already co-owners of the flow.
@@ -148,24 +160,29 @@ Follow these steps to add a comment to any action or trigger in your flow.
 
 If multiple users make changes to the flow simultaneously, Power Automate presents appropriate options to the maker to minimize conflicts during a save operation. A maker can choose to refresh the flow definition or save a copy of the flow to keep their changes.
 
-![Options to resolve conflicts](./media/multi-step-logic-flow/address-conflits.png)
-
+>[!div class="mx-imgBorder"]
+>![Screenshot of the options to resolve conflicts.](./media/multi-step-logic-flow/address-conflits.png "Options to resolve conflicts")
 
 ## New expression editor for actions (experimental feature)
 
-Do you struggle with writing expressions in your flow actions? Now, you can make use of the improved expression editor in experimental mode. To use the improved expression editor, [enable the Experimental Features setting](experimental-features.md) and select **fx** on an action.<br>
+Do you struggle with writing expressions in your flow actions? You can make use of the improved expression editor in experimental mode. To use the improved expression editor, [enable the Experimental Features setting](experimental-features.md) and select **fx** on an action.<br>
 
-- The expression editor view is larger to help you manage richer and complex expressions.
-    ![Skittles on an action editor](media/skittleEditor.png)
+- The large expression editor view helps you manage rich and complex expressions.
 
-- Ability to choose dynamic content in the expressions without having to switch tabs.
-    ![Expression editor](media/ExpressionEditor.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the dynamic content and expression buttons on an action editor.](media/skittleEditor.png "Dynamic content and expression buttons")
 
-- Ability to preserve expressions with errors and unblock the view to work in parallel on other parts of flow.
+- The expression editor allows you to choose dynamic content in the expressions without having to switch tabs.
 
-    ![Expression with error](media/ErroredExpression.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the Expression editor.](media/ExpressionEditor.png "Expression editor")
+
+- The expression editor preserves expressions with errors and unblocks the view to work in parallel on other parts of flow.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of an expression with an error.](media/ErroredExpression.png "Expression with an error")
  
 > [!NOTE]
-> Some actions may not support the new expression editor.
+> Some actions might not support the new expression editor.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

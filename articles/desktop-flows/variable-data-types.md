@@ -100,7 +100,7 @@ Some of these data types are widely used throughout the application, such as **n
   > [!NOTE]
   > The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.
 
-  If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']** notation.
+  If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']%** notation.
 
   If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a datarow. 
 
@@ -191,9 +191,9 @@ Some of these data types are widely used throughout the application, such as **n
 ### Active Directory
 
 - **Active Directory entry** - Contains a connection to an Active Directory server established through the **Connect to server** action.
-- **Group info** - Contains information about a specified Active Directory group.
+- **Group info** - Contains the name, the display name, a description, and the members of a specified Active Directory group.
 - **Group member** - Represents a member of a specified Active Directory group.
-- **User info** - Contains information about a specified Active Directory user.
+- **User info** - Contains information about a specified Active Directory user, such as first and last name, initials and a distinguished name, work details (company, department and title), contact information (telephone number, extension and email), and location (country, city, state, street address and postal code).
 
 [Active Directory data type properties](datatype-properties.md#active-directory-entry)
 
@@ -228,7 +228,7 @@ Some of these data types are widely used throughout the application, such as **n
 
 ### Dates and time
 
-- **Datetime** - Contains date and time information. To create a datetime variable through the **Set Variable action**, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
+- **Datetime** - Contains date and time information. To create a datetime variable through the **Set Variable** action, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
 
   | Notation | Description |
   |----------|-------------|
@@ -240,6 +240,8 @@ Some of these data types are widely used throughout the application, such as **n
   | **ss**   | Seconds     |
   | **ff**   | Milliseconds |
   | **zzz**  | UTC Offset	 |
+
+  For example, **%d"2022-03-25"%** assigns the 25th of March 2022 date to the target variable.
 
 [Dates and time data type properties](datatype-properties.md#dates)
 

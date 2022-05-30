@@ -91,7 +91,7 @@ Power Automate for desktop enables you to record actions in real time through th
 
 To record a flow, select **Recorder** in the toolbar of the flow designer. When the recorder dialog is launched, select **Record** to start recording. To suspend the recording, select **Pause**. To add a comment to the recorded actions, select **+ Comment**.
 
-Select the bin icon to remove individual actions, or select **Reset** to delete all the actions recorded so far. When the recording is completed, select **Finish** to convert the recorded steps to Power Automate for desktop actions.
+Select the bin icon to remove individual actions, or select **Reset** to delete all the actions recorded so far. When the recording is completed, select **Finish** to convert the recorded steps to desktop flow actions.
 
 ![Screenshot of the recorder dialog.](\media\making-use-recorders\recorder.png)
 

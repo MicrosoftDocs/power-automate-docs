@@ -15,7 +15,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/22/2017
+ms.date: 05/27/2022
 search.app: 
   - Flow
 search.audienceType: 
@@ -41,20 +41,11 @@ Here are some of the ways you can extend your application with Power Automate:
 
 If you have a web service to which you want to connect from Power Automate, you'll first need to create a custom connector. When you register a custom connector, you teach Power Automate about the characteristics of your web service, including the authentication it requires, the triggers and actions that it supports, and the parameters and outputs for each of those actions.
 
-Follow this tutorial to learn how to [Register and use custom connectors](https://powerapps.microsoft.com/tutorials/register-custom-api/). After you register your custom connector, you can share it within your organization for testing.
+Follow this tutorial to learn how to [create and use custom APIs](/power-apps/developer/data-platform/custom-api). After you register your custom connector, you can share it within your organization for testing.
 
 ## Share a custom connector with all Power Automate users
 
-After you fully test your custom connector, start the [review process](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/) to have it approved by Microsoft for sharing with all other Power Automate users.
-
-Here's what you'll need for the review process:
-
-* An OpenAPI file that represents your API and any authentication information.
-* An icon for your connector.
-* A description of your connector.
-* Approximately 10 ideas for how your connector could benefit other users through templates.
-
-After you submit this information, Microsoft starts assessing your API's functionality in Power Automate and Microsoft Power Apps.
+After you fully test your custom connector, [get your connector certified](/connectors/custom-connectors/submit-certification) to have it approved by Microsoft for sharing with all other Power Automate users.
 
 ## Embed the flow experience into your website or app
 

@@ -44,7 +44,7 @@ If you encounter errors while signing in or signing out, try to delete this file
 
 If you have installed Power Automate in another drive, replace **C** with the letter of the respective drive. Also, replace **Username** with the name of your user folder.
 
-After deleting the **msalcache.bin3** file, restart the Power Automate service and sing in to your account.
+After deleting the **msalcache.bin3** file, restart the Power Automate service and sign in to your account.
 
 ![Screenshot of the msalcache.bin3 file in the file explorer.](media/troubleshoot/msal-file.png)
 

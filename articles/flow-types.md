@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/16/2022
+ms.date: 05/06/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -43,9 +43,8 @@ Create a cloud flow when you want your automation to be triggered either automat
 | [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.                                                                            |
 
 ## Desktop flows
-    
-Desktop flows are used to automate tasks on the Web or the desktop. Using [Power Automate for desktop](./desktop-flows/introduction.md) you can automate tasks on the desktop as well as the Web. Alternatively, you can use the two legacy methods of creating desktop flows: [Windows recorder (V1) and Selenium IDE](./desktop-flows/overview.md).
 
+Use [desktop flows](./desktop-flows/introduction.md) to automate tasks on the Web or the desktop.
 
 ## Business process flows
 
