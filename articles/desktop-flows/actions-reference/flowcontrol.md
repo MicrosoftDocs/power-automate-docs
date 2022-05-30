@@ -166,7 +166,7 @@ Terminates the flow
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |End flow|No|Successfully, With error message|Successfully|Terminate the execution of the flow, either successfully or with an error|
-|Error message|No|[Text value](../variable-data-types.md#text-value||The error message to return to the flow caller upon exit|
+|Error message|No|[Text value](../variable-data-types.md#text-value)||The error message to return to the flow caller upon exit|
 
 ##### Variables Produced
 - This action doesn't produce any variables
