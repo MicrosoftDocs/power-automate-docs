@@ -78,7 +78,7 @@ Open a new terminal session
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|TerminalSession|Terminal session|The specific terminal session for use with later terminal emulation commands|
+|TerminalSession|[Terminal session](../variable-data-types.md#terminal)|The specific terminal session for use with later terminal emulation commands|
 
 
 ##### <a name="openterminalsession_onerror"></a> Exceptions
