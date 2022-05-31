@@ -68,7 +68,7 @@ Blocks user mouse and keyboard input, so that the flow can perform mouse and key
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Block it|N/A|Boolean value|True|Specify whether to block or unblock mouse and keyboard input|
+|Block it|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to block or unblock mouse and keyboard input|
 
 
 ##### Variables Produced
@@ -92,8 +92,8 @@ Retrieves the current position of the mouse cursor on the screen in pixel coordi
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|MousePosX|Numeric value|The horizontal (X) value of the mouse position|
-|MousePosY|Numeric value|The vertical (Y) value of the mouse position|
+|MousePosX|[Numeric value](../variable-data-types.md#numeric-value)|The horizontal (X) value of the mouse position|
+|MousePosY|[Numeric value](../variable-data-types.md#numeric-value)|The vertical (Y) value of the mouse position|
 
 
 ##### <a name="getmouseposition_onerror"></a> Exceptions
@@ -107,8 +107,8 @@ Moves the mouse to a specific position
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Position X|No|Numeric value||The horizontal (X) value of the position to send the mouse to|
-|Position Y|No|Numeric value||The vertical (Y) value of the position to send the mouse to|
+|Position X|No|[Numeric value](../variable-data-types.md#numeric-value)||The horizontal (X) value of the position to send the mouse to|
+|Position Y|No|[Numeric value](../variable-data-types.md#numeric-value)||The vertical (Y) value of the position to send the mouse to|
 |Relative to|N/A|Screen, Active window, Current mouse position|Screen|Specify whether the new mouse position will be relative to the top left corner of the screen, the foremost window, or the current mouse position|
 |Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify how to move the mouse|
 
@@ -128,31 +128,31 @@ Moves the mouse over an image found on screen or on the foreground window
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Image to move mouse to|No|List of Image||The list of Images to move the mouse to|
+|Image to move mouse to|No|[List of Image](../images.md)||The list of Images to move the mouse to|
 |Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
-|Occurence|Yes|Numeric value|1|The occurence of the image found to move the mouse to|
-|Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the image|
+|Occurence|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|The occurence of the image found to move the mouse to|
+|Send a click after moving mouse|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to send a click after the mouse is positioned over the image|
 |Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click to send to the image|
-|Wait for image to appear|N/A|Boolean value|True|Choose whether you want the action to wait if the image isn't found on the screen or foreground window|
-|Fail timeout|Yes|Numeric value|0|The fail timeout in seconds|
-|Seconds before click|Yes|Numeric value|0|The number of seconds to wait before sending the click|
+|Wait for image to appear|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Choose whether you want the action to wait if the image isn't found on the screen or foreground window|
+|Fail timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The fail timeout in seconds|
+|Seconds before click|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The number of seconds to wait before sending the click|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 |Mouse position relative to image|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|The section of the image the mouse will be moved to|
-|Offset X|No|Text value|0|The pixels to offset the mouse from the position to the right|
-|Offset Y|No|Text value|0|The pixels to offset the mouse from the position down|
-|Tolerance|Yes|Numeric value|10|Specify how much the specified image can differ from the originally chosen image|
+|Offset X|No|[Text value](../variable-data-types.md#text-value)|0|The pixels to offset the mouse from the position to the right|
+|Offset Y|No|[Text value](../variable-data-types.md#text-value)|0|The pixels to offset the mouse from the position down|
+|Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify how much the specified image can differ from the originally chosen image|
 |Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Specify whether to search for the specified Image in the foremost window only, or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
 |Search mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Specify whether to scan the entire screen (or window) to find the supplied image or only a subregion of it|
-|X1|Yes|Numeric value||The starting X of the subregion to search in|
-|Y1|Yes|Numeric value||The starting Y of the subregion to search in|
-|X2|Yes|Numeric value||The ending X of the subregion to search in|
-|Y2|Yes|Numeric value||The ending Y of the subregion to search in|
+|X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The starting X of the subregion to search in|
+|Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The starting Y of the subregion to search in|
+|X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The ending X of the subregion to search in|
+|Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The ending Y of the subregion to search in|
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|X|Numeric value|The X coordinate of the point where the image is found on the screen. If the image is being searched for on the foreground window, the coordinate returned is relative to the top left corner of the window|
-|Y|Numeric value|The Y coordinate of the point where the image is found on the screen. If the image is being searched for on the foreground window, the coordinate returned is relative to the top left corner of the window|
+|X|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the image is found on the screen. If the image is being searched for on the foreground window, the coordinate returned is relative to the top left corner of the window|
+|Y|[Numeric value](../variable-data-types.md#numeric-value)|The Y coordinate of the point where the image is found on the screen. If the image is being searched for on the foreground window, the coordinate returned is relative to the top left corner of the window|
 
 
 ##### <a name="movemousetoimagebase_onerror"></a> Exceptions
@@ -171,38 +171,38 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
-|OCR engine variable|No|OCREngineObject||The OCR engine to search for the text with|
-|Text to find|No|Text value||The text to move the mouse over|
-|Is regular expression|N/A|Boolean value|False|Whether to use a regular expression to look for the text on screen|
-|Occurence|Yes|Numeric value|1|A positive number that will be used as the occurence of the input text on screen|
+|OCR engine variable|No|[OCREngineObject](../variable-data-types.md#ocr)||The OCR engine to search for the text with|
+|Text to find|No|[Text value](../variable-data-types.md#text-value)||The text to move the mouse over|
+|Is regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether to use a regular expression to look for the text on screen|
+|Occurence|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|A positive number that will be used as the occurence of the input text on screen|
 |Search for text on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified text in the foremost window only or the entire visible screen. Neither choice will find the text if it isn't clearly visible on the screen|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Whether to scan the entire screen (or window) to find the supplied text or only a narrows down subregion of it|
-|Image(s)|No|List of Image||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
-|X1|Yes|Numeric value||The start X coordinate of the subregion to scan for the supplied text|
-|Tolerance|Yes|Numeric value|10|Specify how much the image(s) searched for can differ from the originally chosen image|
-|Y1|Yes|Numeric value||The start Y coordinate of the subregion to scan for the supplied text|
-|X1|Yes|Numeric value||The start X coordinate of the subregion relative to the specified image to scan for the supplied text|
-|X2|Yes|Numeric value||The end X coordinate of the subregion to scan for the supplied text|
-|Y1|Yes|Numeric value||The start Y coordinate of the subregion relative to the specified image to scan for the supplied text|
-|Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
-|X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
-|Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Image(s)|No|[List of Image](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
+|X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion to scan for the supplied text|
+|Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify how much the image(s) searched for can differ from the originally chosen image|
+|Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion to scan for the supplied text|
+|X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion to scan for the supplied text|
+|Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end Y coordinate of the subregion to scan for the supplied text|
+|X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to its final position|
 |Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
-|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Use other language|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a language not given in the 'Tesseract language' field|
 |Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
-|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
-|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
-|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
-|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
-|Wait for text to appear|N/A|Boolean value|False|Specify whether to wait if the text isn't found on the screen or foreground window|
-|Fail if text doesn't appear within|Yes|Numeric value|10|The number of seconds to wait for the supplied text to appear|
-|Send a click after moving mouse|N/A|Boolean value|False|Specify whether to send a click after the mouse is positioned over the text|
+|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|[Text value](../variable-data-types.md#text-value)||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The width multiplier of the image|
+|Image height multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The height multiplier of the image|
+|Wait for text to appear|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to wait if the text isn't found on the screen or foreground window|
+|Fail if text doesn't appear within|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|The number of seconds to wait for the supplied text to appear|
+|Send a click after moving mouse|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to send a click after the mouse is positioned over the text|
 |Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click type to send to the text|
-|Wait before clicking for|Yes|Numeric value|1|The number of seconds to wait before clicking|
+|Wait before clicking for|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|The number of seconds to wait before clicking|
 |Mouse position relative to text|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the text the mouse will be moved to|
-|Offset X|No|Text value|0|Offset the mouse from the position by this many pixels to the right|
-|Offset Y|No|Text value|0|Offset the mouse from the position by this many pixels down|
+|Offset X|No|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels to the right|
+|Offset Y|No|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels down|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 
 > [!NOTE]
@@ -212,10 +212,10 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|LocationOfTextFoundX|Numeric value|The X coordinate of the point where the text is found on the screen. If the text is searched for in the foreground window, this is relative to the top left corner of the window|
-|LocationOfTextFoundY|Numeric value|The Y coordinate of the point where the text is found on the screen. If the text is searched for in the foreground window this is relative to the top left corner of the window|
-|WidthOfTextFound|Numeric value|The width of the area the text was found on|
-|HeightOfTextFound|Numeric value|The width of the area the text was found on|
+|LocationOfTextFoundX|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the text is found on the screen. If the text is searched for in the foreground window, this is relative to the top left corner of the window|
+|LocationOfTextFoundY|[Numeric value](../variable-data-types.md#numeric-value)|The Y coordinate of the point where the text is found on the screen. If the text is searched for in the foreground window this is relative to the top left corner of the window|
+|WidthOfTextFound|[Numeric value](../variable-data-types.md#numeric-value)|The width of the area the text was found on|
+|HeightOfTextFound|[Numeric value](../variable-data-types.md#numeric-value)|The width of the area the text was found on|
 
 
 ##### <a name="movemousetotextonscreenwithocraction_onerror"></a> Exceptions
@@ -240,10 +240,10 @@ Sends a mouse click event
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Mouse event to send|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|Specify what form of mouse event to send|
-|Wait|Yes|Numeric value|0|The time to delay before sending the mouse event in 1/1000 of a second|
-|Move mouse|N/A|Boolean value|False|Move mouse|
-|X|No|Numeric value||The horizontal (X) position of the mouse in pixel coordinates|
-|Y|No|Numeric value||The vertical (Y) position of the mouse in pixel coordinates|
+|Wait|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The time to delay before sending the mouse event in 1/1000 of a second|
+|Move mouse|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Move mouse|
+|X|No|[Numeric value](../variable-data-types.md#numeric-value)||The horizontal (X) position of the mouse in pixel coordinates|
+|Y|No|[Numeric value](../variable-data-types.md#numeric-value)||The vertical (Y) position of the mouse in pixel coordinates|
 |Relative to|N/A|Screen, Active window, Current mouse position|Screen|Specify whether the new mouse position will be relative to the top left corner of the screen, the foremost window, or the current mouse position|
 |Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
 
@@ -269,8 +269,8 @@ Sends keys to the application that is currently active
 |-----|-----|-----|-----|-----|
 |Send keys to|N/A|Foreground window, By UI element, By window instance/handle, By title and/or class|Foreground window|Specify whether to send the keys to the foreground window or to a UI element or to a window instance or a combination of window title/class|
 |Text to send|No|Encrypted value||The text to send to the application|
-|Delay between keystrokes|Yes|Numeric value|10|Specify the delay in milliseconds between sending keystrokes to avoid input errors|
-|Send Text as hardware keys|N/A|Boolean value|False|Emulate the actual keystrokes on keyboard when sending whole Text|
+|Delay between keystrokes|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify the delay in milliseconds between sending keystrokes to avoid input errors|
+|Send Text as hardware keys|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Emulate the actual keystrokes on keyboard when sending whole Text|
 
 
 ##### Variables Produced
@@ -317,10 +317,10 @@ Presses (and holds) or releases one or more modifier keys (Alt, Control, or Shif
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Action to perform|N/A|Press, Release|Press|Specify whether to press or release keys with this action|
-|Control|N/A|Boolean value|False|Specify whether the Ctrl key will be pressed/released or not|
-|Alt|N/A|Boolean value|False|Specify whether the Alt key will be pressed/released or not|
-|Shift|N/A|Boolean value|False|Specify whether the Shift key will be pressed/released or not|
-|Win|N/A|Boolean value|False|Specify whether the Windows key will be pressed/released or not|
+|Control|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Ctrl key will be pressed/released or not|
+|Alt|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Alt key will be pressed/released or not|
+|Shift|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Shift key will be pressed/released or not|
+|Win|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Windows key will be pressed/released or not|
 
 
 ##### Variables Produced
@@ -377,7 +377,7 @@ Retrieves the active keyboard identifier from the machine's registry
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|KeyboardLayoutId|Numeric value|The registry key of the active keyboard identifier|
+|KeyboardLayoutId|[Numeric value](../variable-data-types.md#numeric-value)|The registry key of the active keyboard identifier|
 
 
 ##### <a name="getkeyboardlayout_onerror"></a> Exceptions
@@ -392,14 +392,14 @@ Pause the flow run until a specific shortcut key is pressed. Shortcut keys must 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Shortcut keys|N/A|Keys combination|Ctrl + A|Specify the shortcut keys to wait for. Shortcut keys must contain exactly one key or a key and a combination of (ctrl, alt, shift). To add more than one shortcut key, select 'New shortcut key'|
-|Continue flow run on timeout|N/A|Boolean value|False|Specify whether the flow run will continue anyway when the set period of time waiting for the shortcut key expires|
-|Continue after|Yes|Numeric value|10|The time in seconds before continuing the flow run|
+|Continue flow run on timeout|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the flow run will continue anyway when the set period of time waiting for the shortcut key expires|
+|Continue after|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|The time in seconds before continuing the flow run|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|IndexOfShortcutKeyPressed|Numeric value|The index of the shortcut key if the shortcut keys are in a list format.|
+|IndexOfShortcutKeyPressed|[Numeric value](../variable-data-types.md#numeric-value)|The index of the shortcut key if the shortcut keys are in a list format.|
 
 
 ##### <a name="waitforshortcutkeyaction_onerror"></a> Exceptions
