@@ -100,7 +100,7 @@ Generate a random number or a list of random numbers that fall between a minimum
 |Argument|Type|Description|
 |-----|-----|-----|
 |RandomNumber|[Numeric value](../variable-data-types.md#numeric-value)|The newly generated random number|
-|RandomNumbers|[List of Numeric values](../variable-data-types.md#list)|The newly generated list of random numbers|
+|RandomNumbers|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)|The newly generated list of random numbers|
 
 
 ##### <a name="generaterandomnumber_onerror"></a> Exceptions
@@ -114,7 +114,7 @@ Remove all items from a list
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to clear|No|[List of General values](../variable-data-types.md#list)||A list variable to remove its elements|
+|List to clear|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||A list variable to remove its elements|
 
 
 ##### Variables Produced
@@ -131,9 +131,9 @@ Remove one or multiple items from a list
 |-----|-----|-----|-----|-----|
 |Remove item by|N/A|Index, Value|Index|Specifies whether to remove the item at a specified index or the item(s) with a specific value|
 |At index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index number of the item to remove|
-|With value|No|General value||The item to remove|
+|With value|No|[General value](../variable-data-types.md##general-value)||The item to remove|
 |Remove all item occurrences|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Removes all the occurrences that match the item specified|
-|From list|No|[List of General values](../variable-data-types.md#list)||The list with items to remove|
+|From list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The list with items to remove|
 
 
 ##### Variables Produced
@@ -152,7 +152,7 @@ Sort the items of a list. Use items of the same type
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to sort|No|[List of General values](../variable-data-types.md#list)||The variable that holds the list to sort|
+|List to sort|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The variable that holds the list to sort|
 |Sort by list item's properties|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|If the list items are objects (such are files, folders, etc), enable this option to sort the item by a specific property. Leave this option disabled to sort the elements by their default property (e.g., file objects will be sorted by their full path)|
 |First property to sort by|Yes|[Text value](../variable-data-types.md#text-value)||The name of an item's property to sort the list by. Refer to the help file for the property names of each object|
 |Sort|N/A|Ascending, Descending|Ascending|Specifies whether to sort by the first property ascending or descending|
@@ -174,7 +174,7 @@ Create a random permutation of a list
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to shuffle|No|[List of General values](../variable-data-types.md#list)||The variable that contains the list to shuffle|
+|List to shuffle|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The variable that contains the list to shuffle|
 
 
 ##### Variables Produced
@@ -189,14 +189,14 @@ Merge two lists into one
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First list|No|[List of General values](../variable-data-types.md#list)||The first list of items to merge|
-|Second list|No|[List of General values](../variable-data-types.md#list)||The second list of items to merge|
+|First list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The first list of items to merge|
+|Second list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The second list of items to merge|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|OutputList|[List of General values](../variable-data-types.md#list)|The merged list. The initial lists aren't affected|
+|OutputList|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)|The merged list. The initial lists aren't affected|
 
 
 ##### <a name="mergelists_onerror"></a> Exceptions
@@ -210,7 +210,7 @@ Reverse the order of the items of a list
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to reverse|No|[List of General values](../variable-data-types.md#list)||The list whose items order to reverse|
+|List to reverse|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The list whose items order to reverse|
 
 
 ##### Variables Produced
@@ -225,7 +225,7 @@ Remove the multiple occurrences of items in a list, so that in the resulting lis
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to remove duplicate items from|No|[List of General values](../variable-data-types.md#list)||The list variable to remove duplicate items from|
+|List to remove duplicate items from|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The list variable to remove duplicate items from|
 |Ignore text case while searching for duplicate items|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to perform case insensitive comparison of text while searching for duplicate items (only applies to lists made of text items)|
 
 
@@ -241,14 +241,14 @@ Compare two lists and create a new list with the items that are common to both
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First list|No|[List of General values](../variable-data-types.md#list)||The variable that contains the first list to compare|
-|Second list|No|[List of General values](../variable-data-types.md#list)||The variable that contains the second list to compare|
+|First list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The variable that contains the first list to compare|
+|Second list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The variable that contains the second list to compare|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|IntersectionList|[List of General values](../variable-data-types.md#list)|The new list of common items|
+|IntersectionList|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)|The new list of common items|
 
 
 ##### <a name="findcommonlistitems_onerror"></a> Exceptions
@@ -259,14 +259,14 @@ Compare two lists and create a new list with the items that are in the first lis
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First list|No|[List of General values](../variable-data-types.md#list)||The variable that holds the first list to compare|
-|Second list|No|[List of General values](../variable-data-types.md#list)||The variable that holds the second list to compare|
+|First list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The variable that holds the first list to compare|
+|Second list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||The variable that holds the second list to compare|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ListDifference|[List of General values](../variable-data-types.md#list)|The new resulting list|
+|ListDifference|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)|The new resulting list|
 
 
 ##### <a name="subtractlists_onerror"></a> Exceptions
@@ -284,7 +284,7 @@ Convert the contents of a data table column into a list
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ColumnAsList|[List of General values](../variable-data-types.md#list)|The new list that holds the contents of the specified data table|
+|ColumnAsList|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)|The new list that holds the contents of the specified data table|
 
 
 ##### <a name="retrievedatatablecolumnintolist_onerror"></a> Exceptions
@@ -305,7 +305,7 @@ Convert a JSON string to a custom object
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JsonAsCustomObject|General value|Τhe converted custom object from the provided JSON|
+|JsonAsCustomObject|[General value](../variable-data-types.md##general-value)|Τhe converted custom object from the provided JSON|
 
 
 ##### <a name="convertjsontocustomobject_onerror"></a> Exceptions
@@ -339,14 +339,14 @@ Convert a custom object to a JSON string
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Add item|No|General value||A value or a variable to add to the list. Provide a list of values to append multiple elements. If the list has a specific type of elements, the new element is converted over to that type|
-|Into list|No|[List of General values](../variable-data-types.md#list)||A list variable to append the new elements to|
+|Add item|No|[General value](../variable-data-types.md##general-value)||A value or a variable to add to the list. Provide a list of values to append multiple elements. If the list has a specific type of elements, the new element is converted over to that type|
+|Into list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)||A list variable to append the new elements to|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|NewList|[List of General values](../variable-data-types.md#list)|The new list|
+|NewList|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)|The new list|
 
 
 ##### <a name="additemtolist_onerror"></a> Exceptions
@@ -360,7 +360,7 @@ Create a new empty list
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|List|[List of General values](../variable-data-types.md#list)|The new list|
+|List|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md##general-value)|The new list|
 
 
 ##### <a name="createnewlist_onerror"></a> Exceptions
