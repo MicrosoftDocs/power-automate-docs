@@ -168,7 +168,7 @@ Executes Python 2 script code and retrieves its output
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Python script to run|No|[Text value](../variable-data-types.md#text-value)||Τhe Python script code to execute|
-|Module folder paths|Yes|[List of Folders](../variable-data-types.md#list)||The path(s) of folder(s) where external Python modules lie|
+|Module folder paths|Yes|[List](../variable-data-types.md#list) of [Folders](../variable-data-types.md#files-and-folders)||The path(s) of folder(s) where external Python modules lie|
 
 
 ##### Variables Produced
