@@ -206,6 +206,10 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 ## Others
 
+### General value
+
+- **General value**  - This data type is used during design time when Power Automate can't define the data type of a variable or an input parameter. General values get converted to other data types during run time based on their data. 
+
 ### Active Directory
 
 - **Active Directory entry** - Contains a connection to an Active Directory server established through the **Connect to server** action.
