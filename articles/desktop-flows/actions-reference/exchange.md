@@ -120,7 +120,7 @@ Create and send a new email message
 |Subject|Yes|[Text value](../variable-data-types.md#text-value)||The subject of the email|
 |Body|Yes|[Text value](../variable-data-types.md#text-value)||The text of the body|
 |Body is HTML|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to interpret the body of the email as HTML coding|
-|Attachment(s)|Yes|[List](../variable-data-types.md#files) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
+|Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
 
 ##### Variables Produced
