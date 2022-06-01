@@ -308,6 +308,11 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 ### XML 
 - **XML node** - Contains the content of an XML document. The **Read XML from file** action populates these variables.
 
-[XML data type properties.](datatype-properties.md#xml-node) 
+[XML data type properties](datatype-properties.md#xml-node) 
+
+### Error
+- **Error** - Contains information about the last occurred error in the desktop flow. The **Get last error** action creates this type of variables.
+
+[Error properties](datatype-properties.md#error) 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
