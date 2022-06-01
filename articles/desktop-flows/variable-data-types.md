@@ -279,6 +279,7 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 - **File** - Represents a file.
 - **Folder** - Represents a folder.
+- **FileSystemObject** - Represents either a folder or a file. This data type is used in input parameters that accept folders and files.
 
 [Files and folders data type properties](datatype-properties.md#files)
 
