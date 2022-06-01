@@ -79,7 +79,7 @@ Downloads text or a file from the web and stores it
 |Accept untrusted certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether untrusted certificates will be accepted|
 |Use credentials|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the web server requires authentication. This property refers to HTTP authentication (that is, when the browser displays a popup window asking for user name and password)|
 |User name|No|[Text value](../variable-data-types.md#text-value)||The user name for the web server|
-|Password|No|Encrypted value||The password for the web server|
+|Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the web server|
 
 
 ##### Variables Produced
@@ -114,7 +114,7 @@ Invokes a method from a SOAP web service
 |Accept untrusted certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether untrusted certificates will be accepted
 |HTTP Authentication|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the web server requires HTTP authentication (that is, the browser displays a popup window asking for a username and password)
 |User name|No|[Text value](../variable-data-types.md#text-value)||The user name for the web server
-|Password|No|Encrypted value||The password for the web server
+|Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the web server
 
 ##### <a name="invokesoapserviceaction_builder"></a> Request Builder Parameters
 |Argument|Accepts|Description|
@@ -129,7 +129,7 @@ Invokes a method from a SOAP web service
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|SoapServiceResponseHeaders|[List of Text values](../variable-data-types.md#list)|The HTTP headers of the response|
+|SoapServiceResponseHeaders|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The HTTP headers of the response|
 |SoapServiceResponse|[Text value](../variable-data-types.md#text-value)|The web service response text|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
@@ -166,13 +166,13 @@ Invokes a web service by sending data and retrieves the response from the web se
 |Accept untrusted certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether untrusted certificates will be accepted|
 |HTTP Authentication|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the web server requires authentication. This property refers to HTTP authentication (that is, when the browser displays a popup window asking for user name and password)|
 |User name|No|[Text value](../variable-data-types.md#text-value)||The user name for the web server|
-|Password|No|Encrypted value||The password for the web server|
+|Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the web server|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|WebServiceResponseHeaders|[List of Text values](../variable-data-types.md#list)|The HTTP headers of the response|
+|WebServiceResponseHeaders|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The HTTP headers of the response|
 |DownloadedFile|[File](../variable-data-types.md#files-and-folders)|The downloaded file|
 |WebServiceResponse|[Text value](../variable-data-types.md#text-value)|The web service response text|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
