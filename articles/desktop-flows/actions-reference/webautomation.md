@@ -206,7 +206,7 @@ Fill a text field in a web page with the specified text
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|[UI element](../ui-elements.md)||Select the text field to populate|
-|Text|No|Encrypted value||Enter the text to fill in the text field|
+|Text|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||Enter the text to fill in the text field|
 |If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
 |Populate text using physical keystrokes|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Emulate using physical keystrokes when populating text to UI text field elements. Physical keystrokes are required for cases that emulated text population doesn't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
 |Emulate typing|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to fill the text field at once by simply setting the value of the text box, or emulate a user typing by sending characters one by one. The latter method is slower, but required in some complex web pages.|
@@ -283,8 +283,8 @@ Set or clear the selected option for a drop-down list in a web form
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|[UI element](../ui-elements.md)||Select the drop-down list to set its value|
 |Operation|N/A|Clear all options, Select options by name, Select options by index|Clear all options|Select whether to select a value or clear the selected value of the drop-down list|
-|Option name(s)|No|[List of Text values](../variable-data-types.md#list)||Enter one or more options (one per line if more than one) to be selected in the drop-down list. Multiple options make sense only when working with multi-select lists. If the list is single-selection, then only the first option specified will be used.|
-|Option indices|No|[List of Numeric values](../variable-data-types.md#list)||Type a space-separated list of 1-based indices (e.g. 1 3 4)|
+|Option name(s)|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||Enter one or more options (one per line if more than one) to be selected in the drop-down list. Multiple options make sense only when working with multi-select lists. If the list is single-selection, then only the first option specified will be used.|
+|Option indices|No|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)||Type a space-separated list of 1-based indices (e.g. 1 3 4)|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after setting the drop-down list value|
 |Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after setting the drop-down list value|
