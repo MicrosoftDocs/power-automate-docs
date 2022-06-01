@@ -96,7 +96,7 @@ Retrieves the last error that occured in the flow
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|LastError|Error|The details of the error that last occured in the flow|
+|LastError|[Error](../variable-data-types.md#error)|The details of the error that last occured in the flow|
 
 ##### <a name="getlasterror_onerror"></a> Exceptions
 - This action doesn't include any exceptions
@@ -180,7 +180,7 @@ Suspends the execution of the flow for a specified amount of seconds
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Duration|No|[Numeric value](../variable-data-types.md#numeric-value||Time duration in seconds|
+|Duration|No|[Numeric value](../variable-data-types.md#numeric-value)||Time duration in seconds|
 
 
 ##### Variables Produced
