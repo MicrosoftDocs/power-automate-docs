@@ -71,14 +71,14 @@ Gets the resource groups based on the specified criteria
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Resource group name|Yes|Text value||The name of the resource group|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Resource group name|Yes|[Text value](../variable-data-types.md#text-value)||The name of the resource group|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ResourceGroups|List of Azure resource groups|The retrieved resource groups|
+|ResourceGroups|[List](../variable-data-types.md#list) of [Azure resource groups](../variable-data-types.md#azure)|The retrieved resource groups|
 
 
 ##### <a name="getresourcegroups_onerror"></a> Exceptions
@@ -92,15 +92,15 @@ Creates a new resource group
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Resource group name|No|Text value||The name of the resource group|
-|Location|No|Text value||The location where the new disk will be created|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Resource group name|No|[Text value](../variable-data-types.md#text-value)||The name of the resource group|
+|Location|No|[Text value](../variable-data-types.md#text-value)||The location where the new disk will be created|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ResourceGroup|Azure resource group|The created resource group|
+|ResourceGroup|[Azure resource group](../variable-data-types.md#azure)|The created resource group|
 
 
 ##### <a name="createresourcegroup_onerror"></a> Exceptions
@@ -115,8 +115,8 @@ Deletes the specified resource group and all the contained resources
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Resource group name|No|Text value||The name of the resource group|
+|Azure client|No|[](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Resource group name|No|[Text value](../variable-data-types.md#text-value)||The name of the resource group|
 
 
 ##### Variables Produced
@@ -137,16 +137,16 @@ Gets the disks based on the specified criteria
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
 |Retrieve disks|N/A|All, With the specified resource group, With the specified name in all resource groups, With specific name in the specified resource group|All|Specify which disks to retrieve|
-|Resource group|No|Text value||The resource group where the disks reside|
-|Disk name|No|Text value||The name of the disk|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group where the disks reside|
+|Disk name|No|[Text value](../variable-data-types.md#text-value)||The name of the disk|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Disks|List of Azure managed disks|The retrieved disks with all the related information|
+|Disks|[List](../variable-data-types.md#list) of [Azure managed disks](../variable-data-types.md#azure)|The retrieved disks with all the related information|
 
 
 ##### <a name="getdisksaction_onerror"></a> Exceptions
@@ -162,15 +162,15 @@ Attaches an existing disk to the virtual machine with the specified name and res
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client |No|Azure clients||The client used to connect to Azure|
-|Virtual machine name|No|Text value||The VM where the disk will be attached|
-|VM resource group|No|Text value||The resource group of the VM|
-|Disk is managed|N/A|Boolean value|True|Specify whether the disk to attach is managed|
-|Disk name|No|Text value||The name of the disk to attach|
-|Disk's resource group|No|Text value||The resource group of the disk|
-|Storage account |No|Text value||The storage account where VHD file is located|
-|Container |No|Text value||The container that holds the VHD file|
-|VHD file|No|Text value||The name of the VHD file|
+|Azure client |No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Virtual machine name|No|[Text value](../variable-data-types.md#text-value)||The VM where the disk will be attached|
+|VM resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the VM|
+|Disk is managed|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether the disk to attach is managed|
+|Disk name|No|[Text value](../variable-data-types.md#text-value)||The name of the disk to attach|
+|Disk's resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the disk|
+|Storage account |No|[Text value](../variable-data-types.md#text-value)||The storage account where VHD file is located|
+|Container |No|[Text value](../variable-data-types.md#text-value)||The container that holds the VHD file|
+|VHD file|No|[Text value](../variable-data-types.md#text-value)||The name of the VHD file|
 
 
 ##### Variables Produced
@@ -190,11 +190,11 @@ Detaches the disk from the virtual machine with the specified name and resource 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Virtual machine name|No|Text value||The VM from where the disk will be detached|
-|Virtual machine's resource group|No|Text value||The resource group of the VM|
-|Disk name|No|Text value||The name of the disk to detach|
-|Disk is managed|N/A|Boolean value|True|Specify whether the disk to detach is managed|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Virtual machine name|No|[Text value](../variable-data-types.md#text-value)||The VM from where the disk will be detached|
+|Virtual machine's resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the VM|
+|Disk name|No|[Text value](../variable-data-types.md#text-value)||The name of the disk to detach|
+|Disk is managed|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether the disk to detach is managed|
 
 
 ##### Variables Produced
@@ -213,25 +213,25 @@ Creates a managed disk with the specified settings
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Disk name|No|Text value||The name of the managed disk to create|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Disk name|No|[Text value](../variable-data-types.md#text-value)||The name of the managed disk to create|
 |Resource group option|N/A|Use existing , Create new|Use existing |Specify whether a new resource group will be created or an existing one will be used|
-|Resource group name|No|Text value||The resource group of the disk|
-|Location|No|Text value||The location where the new disk is created|
+|Resource group name|No|[Text value](../variable-data-types.md#text-value)||The resource group of the disk|
+|Location|No|[Text value](../variable-data-types.md#text-value)||The location where the new disk is created|
 |Source type|N/A|None, Snapshot, Storage blob|None|Specifies whether to create an empty disk or use the snapshot of another disk  or use a blob in a storage account|
-|Snapshot name|No|Text value||The managed snapshot to use as a source|
-|Snapshot's resource group|No|Text value||The resource group of the snapshot|
-|Blob URL|No|Text value||The URL of the blob|
-|Disk size in GB|No|Numeric value||Size of the disk in GB|
+|Snapshot name|No|[Text value](../variable-data-types.md#text-value)||The managed snapshot to use as a source|
+|Snapshot's resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the snapshot|
+|Blob URL|No|[Text value](../variable-data-types.md#text-value)||The URL of the blob|
+|Disk size in GB|No|[Numeric value](../variable-data-types.md#numeric-value)||Size of the disk in GB|
 |Storage account type|N/A|Standard HDD, Premium SSD, Standard SSD, Ultra disk SSD|Standard HDD|The disk type|
-|Storage account name|No|Text value||The name of the storage account where VHD file is stored|
-|Availability zone|Yes|Text value||The availability zone for the managed disk|
+|Storage account name|No|[Text value](../variable-data-types.md#text-value)||The name of the storage account where VHD file is stored|
+|Availability zone|Yes|[Text value](../variable-data-types.md#text-value)||The availability zone for the managed disk|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ManagedDisk|Azure managed disk|The created managed disk|
+|ManagedDisk|[Azure managed disk](../variable-data-types.md#azure)|The created managed disk|
 
 
 ##### <a name="createmanageddiskaction_onerror"></a> Exceptions
@@ -249,9 +249,9 @@ Deletes the managed disk with the specified name and resource group
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Disk name|No|Text value||The name of the managed disk to delete|
-|Resource group|No|Text value||The resource group of the disk|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Disk name|No|[Text value](../variable-data-types.md#text-value)||The name of the managed disk to delete|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the disk|
 
 
 ##### Variables Produced
@@ -272,16 +272,16 @@ Gets the snapshots based on the specified criteria
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
 |Retrieve snapshots|N/A|All, With the specified resource group, With the specified name in all resource groups, With specific name in the specified resource group|All|Specify which snapshots to retrieve|
-|Resource group|No|Text value||The resource group where the snapshots reside|
-|Snapshot name|No|Text value||The name of the snapshot|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group where the snapshots reside|
+|Snapshot name|No|[Text value](../variable-data-types.md#text-value)||The name of the snapshot|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Snapshots|List of Azure snapshots|The retrieved snapshots with all the related information|
+|Snapshots|[List](../variable-data-types.md#list) of [Azure snapshots](../variable-data-types.md#azure)|The retrieved snapshots with all the related information|
 
 
 ##### <a name="getsnapshotsaction_onerror"></a> Exceptions
@@ -297,19 +297,19 @@ Creates a snapshot from the specified disk
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client |No|Azure clients||The client used to connect to Azure|
-|Snapshot name|No|Text value||The name of the snapshot to create|
+|Azure client |No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Snapshot name|No|[Text value](../variable-data-types.md#text-value)||The name of the snapshot to create|
 |Resource group option|N/A|Use existing , Create new|Use existing |Specifies whether a new resource group will be created or an existing one will be used|
-|Resource group|No|Text value||The resource group where the snapshot will be created|
-|Location|No|Text value||The location where the new disk will be created|
-|Source disk|No|Text value||The name of the managed disk that will be used as source data|
-|Source disk's resource group|No|Text value||The resource group of the managed disk that will be used as source data|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group where the snapshot will be created|
+|Location|No|[Text value](../variable-data-types.md#text-value)||The location where the new disk will be created|
+|Source disk|No|[Text value](../variable-data-types.md#text-value)||The name of the managed disk that will be used as source data|
+|Source disk's resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the managed disk that will be used as source data|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Snapshot|Azure snapshot|The created snapshot|
+|Snapshot|[Azure snapshot](../variable-data-types.md#azure)|The created snapshot|
 
 
 ##### <a name="createsnapshot_onerror"></a> Exceptions
@@ -327,9 +327,9 @@ Deletes the snapshot with the specified name and resource group
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Snapshot name|No|Text value||The name of the snapshot to delete|
-|Resource group|No|Text value||The resource group of the snapshot|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Snapshot name|No|[Text value](../variable-data-types.md#text-value)||The name of the snapshot to delete|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the snapshot|
 
 
 ##### Variables Produced
@@ -347,15 +347,15 @@ Gets the basic information for the virtual machines
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Resource group|Yes|Text value||The resource group of the virtual machine|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Resource group|Yes|[Text value](../variable-data-types.md#text-value)||The resource group of the virtual machine|
 |Status|N/A|Running, Deallocating, Deallocated, Starting, Stopped, Stopping, Unknown, Any|Any|The status of the virtual machine|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|VirtualMachinesInfo|List of Azure virtual machine info|The retrieved virtual machines with basic information|
+|VirtualMachinesInfo|[List](../variable-data-types.md#list) of [Azure virtual machine info](../variable-data-types.md#azure)|The retrieved virtual machines with basic information|
 
 
 ##### <a name="getvirtualmachines_onerror"></a> Exceptions
@@ -370,17 +370,17 @@ Gets all the information for the virtual machine(s) based on the specified crite
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
 |Describe virtual machines|N/A|All, With the specified resource group, With the specified name in all resource groups, With specific name in the specified resource group|All|Specify which virtual machines to describe|
-|Resource group|No|Text value||The resource group of the virtual machine|
-|Virtual machine name|No|Text value||The name of the virtual machine|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the virtual machine|
+|Virtual machine name|No|[Text value](../variable-data-types.md#text-value)||The name of the virtual machine|
 |Status|N/A|Running, Deallocating, Deallocated, Starting, Stopped, Stopping, Unknown, Any|Any|The status of the virtual machine|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|VirtualMachines|List of Azure virtual machines|The retrieved virtual machines with all the related information|
+|VirtualMachines|[List](../variable-data-types.md#list) of [Azure virtual machines](../variable-data-types.md#azure)|The retrieved virtual machines with all the related information|
 
 
 ##### <a name="describevirtualmachineaction_onerror"></a> Exceptions
@@ -396,9 +396,9 @@ Starts the virtual machine
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Virtual machine name|No|Text value||The name of the virtual machine|
-|Resource group|No|Text value||The resource group of the virtual machine|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Virtual machine name|No|[Text value](../variable-data-types.md#text-value)||The name of the virtual machine|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the virtual machine|
 
 
 ##### Variables Produced
@@ -416,9 +416,9 @@ Stops the virtual machine and deallocates the related hardware (CPU and memory) 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Virtual machine name|No|Text value||The name of the virtual machine|
-|Resource group|No|Text value||The resource group of the virtual machine|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Virtual machine name|No|[Text value](../variable-data-types.md#text-value)||The name of the virtual machine|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the virtual machine|
 
 
 ##### Variables Produced
@@ -436,9 +436,9 @@ Shuts down the operating system of a virtual machine
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Virtual machine name|No|Text value||The name of the virtual machine|
-|Resource group|No|Text value||The resource group of the virtual machine|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Virtual machine name|No|[Text value](../variable-data-types.md#text-value)||The name of the virtual machine|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the virtual machine|
 
 
 ##### Variables Produced
@@ -456,9 +456,9 @@ Restarts a virtual machine
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
-|Virtual machine name|No|Text value||The name of the virtual machine|
-|Resource group|No|Text value||The resource group of the virtual machine|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Virtual machine name|No|[Text value](../variable-data-types.md#text-value)||The name of the virtual machine|
+|Resource group|No|[Text value](../variable-data-types.md#text-value)||The resource group of the virtual machine|
 
 
 ##### Variables Produced
@@ -477,18 +477,18 @@ Creates an Azure session
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Authentication type|N/A|With service principal, With file|With service principal|Specify the way to authenticate|
-|Client ID |No|Text value||The client Id of the application, also known as application Id, which identifies the application that is using the token|
+|Client ID |No|[Text value](../variable-data-types.md#text-value)||The client Id of the application, also known as application Id, which identifies the application that is using the token|
 |Client secret|No|Encrypted value||The secret for the client ID|
-|Tenant ID|No|Text value||The directory ID of the Azure Active Directory|
+|Tenant ID|No|[Text value](../variable-data-types.md#text-value)||The directory ID of the Azure Active Directory|
 |Environment|N/A|Global cloud, China cloud, US Government, German cloud|Global cloud|The environment to authenticate to|
-|Authentication file|No|Text value||The path of the file with all the required information to authenticate|
-|Subscription ID|Yes|Text value||The Azure subscription ID. If not provided, the default subscription will be used|
+|Authentication file|No|[Text value](../variable-data-types.md#text-value)||The path of the file with all the required information to authenticate|
+|Subscription ID|Yes|[Text value](../variable-data-types.md#text-value)||The Azure subscription ID. If not provided, the default subscription will be used|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|AzureClient|Azure clients|The created Azure client |
+|AzureClient|[Azure client](../variable-data-types.md#azure)|The created Azure client |
 
 
 ##### <a name="createsessionaction_onerror"></a> Exceptions
@@ -502,13 +502,13 @@ Gets subscriptions that the current account can access
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|Azure clients||The client used to connect to Azure|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Subscriptions|List of Azure subscriptions|The retrieved subscriptions with all the related information|
+|Subscriptions|[List](../variable-data-types.md#list) of [Azure subscriptions](../variable-data-types.md#azure)|The retrieved subscriptions with all the related information|
 
 
 ##### <a name="getsubscriptions_onerror"></a> Exceptions
@@ -522,7 +522,7 @@ Ends an Azure session
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client |No|Azure clients||The client used to connect to Azure|
+|Azure client |No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
 
 
 ##### Variables Produced
