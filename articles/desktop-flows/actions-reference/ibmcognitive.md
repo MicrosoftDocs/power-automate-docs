@@ -45,21 +45,21 @@ Invokes the IBM service named 'Convert Document'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Username|No|Text value||The username to be used for this call|
+|Username|No|[Text value](../variable-data-types.md#text-value)||The username to be used for this call|
 |Password|No|Encrypted value||The password to use for this call|
-|Version date|No|Text value||The release date of the API to use|
-|File path|No|File||The path to the file to analyze|
+|Version date|No|[Text value](../variable-data-types.md#text-value)||The release date of the API to use|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The path to the file to analyze|
 |Mime type|N/A|text/html, text/xhtml+xml, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document|text/html|The MIME type of the file|
 |Conversion target|N/A|Answer units, Normalized HTML, Normalized text|Answer units|The output format of the conversion|
-|Answer units|Yes|Text value||The heading levels as a comma-separated string|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Answer units|Yes|[Text value](../variable-data-types.md#text-value)||The heading levels as a comma-separated string|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The results of the API call|
-|StatusCode|Numeric value|The status code of the  API call|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code of the  API call|
 
 
 ##### <a name="convertdocumentibm_onerror"></a> Exceptions
@@ -76,23 +76,23 @@ Invokes the IBM service named 'Translate'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The API key to use for this call|
-|Version date|No|Text value||The release date of the API to use|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
+|Version date|No|[Text value](../variable-data-types.md#text-value)||The release date of the API to use|
 |Service endpoint location|N/A|US South, US East, Europe, Australia, Japan, UK, Korea|US East|The account's service location. Can be seen through IBM "Manage" in the resources section|
-|Instance ID|No|Text value||The Instance ID of the service.|
+|Instance ID|No|[Text value](../variable-data-types.md#text-value)||The Instance ID of the service.|
 |Translate mode|N/A|Model ID, Source and target|Model ID|Specify the mode to be used for this call|
-|Model ID|No|Text value||The unique model_id of the translation model that will be used to translate the text|
-|Source|No|Text value||The source language of the text|
-|Target|No|Text value||The translation target language in 2 or 5 letter language code|
-|Text|No|List of Text values||The text to send or list of words to be separately translated|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Model ID|No|[Text value](../variable-data-types.md#text-value)||The unique model_id of the translation model that will be used to translate the text|
+|Source|No|[Text value](../variable-data-types.md#text-value)||The source language of the text|
+|Target|No|[Text value](../variable-data-types.md#text-value)||The translation target language in 2 or 5 letter language code|
+|Text|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The text to send or list of words to be separately translated|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The results of the API call|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="translateibm_onerror"></a> Exceptions
@@ -107,20 +107,20 @@ Invokes the IBM service named 'Identify Language'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The API key to use for this call|
-|Version date|No|Text value||The release date of the API to use|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
+|Version date|No|[Text value](../variable-data-types.md#text-value)||The release date of the API to use|
 |Service endpoint location|N/A|US South, US East, Europe, Australia, Japan, UK, Korea|US East|The account's service location. Can be seen through IBM "Manage" in the resources section|
-|Instance ID|No|Text value||The Instance ID of the service.|
-|Text|No|Text value||The text to analyze|
-|Content type|Yes|Text value|text/plain|The format of the requested values|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Instance ID|No|[Text value](../variable-data-types.md#text-value)||The Instance ID of the service.|
+|Text|No|[Text value](../variable-data-types.md#text-value)||The text to analyze|
+|Content type|Yes|[Text value](../variable-data-types.md#text-value)|text/plain|The format of the requested values|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The results of the API call|
-|StatusCode|Numeric value|The status code of the  API call|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code of the  API call|
 
 
 ##### <a name="identifylanguage_onerror"></a> Exceptions
@@ -137,24 +137,24 @@ Invokes the IBM service named 'Analyze Tone'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The API key to use for this call|
-|Version date|No|Text value||The release date of the API to use|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
+|Version date|No|[Text value](../variable-data-types.md#text-value)||The release date of the API to use|
 |Service endpoint location|N/A|US South, US East, Europe, Australia, Japan, UK, Korea|US East|The account's service location. Can be seen through IBM "Manage" in the resources section|
-|Instance ID|No|Text value||The Instance ID of the service.|
+|Instance ID|No|[Text value](../variable-data-types.md#text-value)||The Instance ID of the service.|
 |Provide text|N/A|From text, From file|From text|Specify how the text to be analyzed will be provided|
-|Text|No|Text value||The text to analyze|
-|File path|No|File||The path to the file to analyze|
+|Text|No|[Text value](../variable-data-types.md#text-value)||The text to analyze|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The path to the file to analyze|
 |Content type|N/A|text/plain, text/html, application/json|text/plain|The content type of the text that will be sent|
-|Tones|Yes|Text value||The tone with which the results will be filtered (optional)|
-|Sentences|Yes|Text value||Specify whether to remove the sentence analysis|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Tones|Yes|[Text value](../variable-data-types.md#text-value)||The tone with which the results will be filtered (optional)|
+|Sentences|Yes|[Text value](../variable-data-types.md#text-value)||Specify whether to remove the sentence analysis|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The results of the API call|
-|StatusCode|Numeric value|The status code of the  API call|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code of the  API call|
 
 
 ##### <a name="analyzetoneibm_onerror"></a> Exceptions
@@ -171,25 +171,25 @@ Invokes the IBM service named 'Classify Image'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The API key to use for this call|
-|Version date|No|Text value||The release date of the API to use|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
+|Version date|No|[Text value](../variable-data-types.md#text-value)||The release date of the API to use|
 |Service endpoint location|N/A|US South, Europe, Korea|US South|The account's service location. Can be seen through IBM "Manage" in the resources section|
-|Instance ID|No|Text value||The Instance ID of the service.|
+|Instance ID|No|[Text value](../variable-data-types.md#text-value)||The Instance ID of the service.|
 |Provide image|N/A|From file, From GCS|From file|Specify how the image will be provided|
-|Image file path|No|File||The path to the image to be analyzed|
-|Image URL|No|Text value||The URL of the image to be analyzed|
-|Owners|Yes|Text value|me|The classifiers to be used as a comma separated list|
-|Classifier IDs|Yes|Text value|default|The classifier Ids to be used as a comma separated list|
-|Threshold|Yes|Text value||The minimum score a class must have to be displayed in the response as a floating value|
-|Language|Yes|Text value||The language of the output|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Image file path|No|[File](../variable-data-types.md#files-and-folders)||The path to the image to be analyzed|
+|Image URL|No|[Text value](../variable-data-types.md#text-value)||The URL of the image to be analyzed|
+|Owners|Yes|[Text value](../variable-data-types.md#text-value)|me|The classifiers to be used as a comma separated list|
+|Classifier IDs|Yes|[Text value](../variable-data-types.md#text-value)|default|The classifier Ids to be used as a comma separated list|
+|Threshold|Yes|[Text value](../variable-data-types.md#text-value)||The minimum score a class must have to be displayed in the response as a floating value|
+|Language|Yes|[Text value](../variable-data-types.md#text-value)||The language of the output|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The results of the API call|
-|StatusCode|Numeric value|The status code of the  API call|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code of the  API call|
 
 
 ##### <a name="classifyimageibm_onerror"></a> Exceptions
