@@ -53,7 +53,7 @@ Retrieves email messages from an IMAP server
 |Port|Yes|[Numeric value](../variable-data-types.md#numeric-value)|993|The port to use for the IMAP server. Usually this is port 993|
 |Enable SSL|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to use a secure connection to communicate with the IMAP Server|
 |User name|No|[Text value](../variable-data-types.md#text-value)||The username of the email account to access|
-|Password|No|Encrypted value||The password of the email account to access|
+|Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password of the email account to access|
 |Accept untrusted certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether untrusted certificates will be accepted|
 |Mail folder|No|[Text value](../variable-data-types.md#text-value)||The name of the IMAP mail-folder (also known as 'mailBox') to retrieve messages from|
 |Retrieve|N/A|All email messages, Unread email messages only, Read email messages only|All email messages|Specify whether to retrieve all messages in the folder or only the unread ones|
@@ -69,7 +69,7 @@ Retrieves email messages from an IMAP server
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|RetrievedEmails|[List of Mail Messages](../variable-data-types.md#list)|The retrieved emails for later processing as a list of mail message objects|
+|RetrievedEmails|[List](../variable-data-types.md#list) of [Mail Messages](../variable-data-types.md#email)|The retrieved emails for later processing as a list of mail message objects|
 
 
 ##### <a name="retrieveemails_onerror"></a> Exceptions
@@ -91,9 +91,9 @@ Moves, deletes or marks as unread an email (or a list of emails) retrieved by a 
 |Port|Yes|[Numeric value](../variable-data-types.md#numeric-value)|993|The port to use for the IMAP server. Usually this is port 993|
 |Enable SSL|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to use a secure connection to communicate with the IMAP server|
 |Username|No|[Text value](../variable-data-types.md#text-value)||The username of the email account to access|
-|Password|No|Encrypted value||The password of the email account to access|
+|Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password of the email account to access|
 |Accept Untrusted Certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether untrusted certificates will be accepted|
-|Email(s) to process|No|[List of Mail Messages](../variable-data-types.mdlist)||The email or list of emails to process. This should be a variable populated by a Retrieve emails action|
+|Email(s) to process|No|[List](../variable-data-types.md#list) of [Mail Messages](../variable-data-types.md#email)||The email or list of emails to process. This should be a variable populated by a Retrieve emails action|
 |Operation|N/A|Delete emails from server, Mark emails as unread, Move emails to mail folder, Mark emails as unread and move to mail folder|Move emails to mail folder|The operation you want to perform on the specified email messages|
 |Mail folder|No|[Text value](../variable-data-types.md#text-value)||The name of the mail folder to which the emails will be moved|
 
@@ -119,7 +119,7 @@ Creates and sends a new email message
 |Enable SSL|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether or not to communicate with the server through a secure connection|
 |SMTP Server needs authentication|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the server requires authentication|
 |User name|No|[Text value](../variable-data-types.md#text-value)||The username of the email account to access|
-|Password|No|Encrypted value||The password of the email account to access|
+|Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password of the email account to access|
 |Accept untrusted certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether untrusted certificates will be accepted|
 |From|No|[Text value](../variable-data-types.md#text-value)||The sender's email address|
 |Sender display name|Yes|[Text value](../variable-data-types.md#text-value)||The sender's display name|
@@ -129,7 +129,7 @@ Creates and sends a new email message
 |Subject|Yes|[Text value](../variable-data-types.md#text-value)||The subject of the email|
 |Body|Yes|[Text value](../variable-data-types.md#text-value)||The body of the email|
 |Body Is HTML|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the body of the email will be interpreted as HTML coding|
-|Attachment(s)|Yes|[List of Files](../variable-data-types.md#list)||The full path of any attachment(s), or a file or a list of files. Multiple files should be enclosed in double quotes (") and separated by a space character|
+|Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s), or a file or a list of files. Multiple files should be enclosed in double quotes (") and separated by a space character|
 
 
 ##### Variables Produced
