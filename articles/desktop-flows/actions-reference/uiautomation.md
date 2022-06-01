@@ -104,7 +104,7 @@ Gets a property of a window such as its title or its source text
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|WindowProperty|General value|The retrieved information of the window|
+|WindowProperty|[General value](../variable-data-types.md#general-value)|The retrieved information of the window|
 
 
 ##### <a name="getwindowdetails_onerror"></a> Exceptions
@@ -147,7 +147,7 @@ Retrieves the names of the selected checkboxes in a checkbox group or the state 
 |Argument|Type|Description|
 |-----|-----|-----|
 |IsChecked|[Boolean value](../variable-data-types.md#boolean-value)|The state of the selected checkbox|
-|SelectedCheckboxes|[List of Text values](../variable-data-types.md#list)|The names of selected checkboxes inside the specified checkbox group|
+|SelectedCheckboxes|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The names of selected checkboxes inside the specified checkbox group|
 
 
 ##### <a name="getselectedcheckboxesinwindow_onerror"></a> Exceptions
@@ -191,7 +191,7 @@ Extracts data from specific parts of a window in the form of single values, list
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExcelInstance|[Excel instance](../variable-data-types.md#instances)|The Excel instance with the extracted data. Use this instance to manipulate the spreadsheet (or save and close it) by using the dedicated Excel actions.|
-|DataFromWindow|General value|The extracted data in the form of a datatable|
+|DataFromWindow|[General value](../variable-data-types.md#general-value)|The extracted data in the form of a datatable|
 
 
 ##### <a name="extractdatafromwindow_onerror"></a> Exceptions
@@ -248,7 +248,7 @@ Fills a text box in a window with the specified text
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text box|No|[UI element](../ui-elements.md)||The text box to populate|
-|Text to fill-in|No|Encrypted value||The text to fill in the text field|
+|Text to fill-in|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to fill in the text field|
 |If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
 |Click before populating|Yes|Left click, Double click, No|Left click|Specify whether a left mouse click is performed before populating the text field or not.|
 
@@ -553,7 +553,7 @@ This action marks the beginning of a conditional block of actions depending on w
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If image|N/A|exists, doesn't exist|exists|Whether to check for the existence or absence of the selected image|
-|Image|No|[List of Image](../images.md)||The image/s that the action will check if it/they exist|
+|Image|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image/s that the action will check if it/they exist|
 |Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified image in the foremost window only or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
 |Search mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
 |Find all images in the list|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Check whether all images on the list exist or don't exist|
@@ -621,7 +621,7 @@ This action waits until a specific image appears on the screen or on the foregro
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for image to|N/A|Appear, Disappear|Appear|Check whether to wait for the image(s) to appear or disappear|
-|Image to wait for|No|[List of Image](../images.md)||The image/s that the action will check if it/they exist|
+|Image to wait for|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image/s that the action will check if it/they exist|
 |Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified image in the foremost window only or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
 |Search mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
 |Wait for all images|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether to wait for all the images on the list to appear(disappear), or just one of them|
