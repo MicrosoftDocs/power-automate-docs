@@ -152,7 +152,7 @@ Displays a dialog box with options that lets the user select from a list
 |-----|-----|-----|-----|-----|
 |Dialog title|Yes|[Text value](../variable-data-types.md#text-value)||The dialog title|
 |Dialog message|Yes|[Text value](../variable-data-types.md#text-value)||The dialog message|
-|List to choose from|No|General value||The list to display as a drop-down menu for the user to choose from|
+|List to choose from|No|[General value](../variable-data-types.md#general-value)||The list to display as a drop-down menu for the user to choose from|
 |Keep select dialog always on top|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the select dialog should always remain on top of all other windows|
 |Limit to list|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Whether to allow the user to enter their own answer outside of the list being displayed|
 |Allow empty selection|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Allow the user to not select anything, creating an empty selected item output|
@@ -164,9 +164,9 @@ Displays a dialog box with options that lets the user select from a list
 |Argument|Type|Description|
 |-----|-----|-----|
 |SelectedItem|[Text value](../variable-data-types.md#text-value)|The item selected from the list as text|
-|SelectedItems|[List of Text values](../variable-data-types.md#list)|The items selected from the list as a list of text|
+|SelectedItems|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The items selected from the list as a list of text|
 |SelectedIndex|[Numeric value](../variable-data-types.md#numeric-value)|The index number of the item selected from the list. This allows the user to use the item number instead of the full text of the user's choice|
-|SelectedIndexes|[List of Numeric values](../variable-data-types.md#list)|The index number of the items selected from the list. This allows the user to use the item number instead of the full text of the user's choice|
+|SelectedIndexes|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)|The index number of the items selected from the list. This allows the user to use the item number instead of the full text of the user's choice|
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The name of the button pressed by the user (OK or Cancel)|
 
 
@@ -194,7 +194,7 @@ Displays the select file dialog and prompts the user to select one or more files
 |Argument|Type|Description|
 |-----|-----|-----|
 |SelectedFile|[File](../variable-data-types.md#files-and-folders)|The file that will be selected through the dialog|
-|SelectedFiles|[List of Files](../variable-data-types.md#list)|The file(s) selected|
+|SelectedFiles|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|The file(s) selected|
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The text of the button pressed. The user will automatically be given the choice of Open or Cancel|
 
 
