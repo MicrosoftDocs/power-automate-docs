@@ -89,7 +89,7 @@ Retrieve the list of files in a folder
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Files|[List of Files](../variable-data-types.md#list)|The retrieved files as a list of file objects|
+|Files|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|The retrieved files as a list of file objects|
 
 
 ##### <a name="getfiles_onerror"></a> Exceptions
@@ -119,7 +119,7 @@ Retrieve the list of subfolders in a folder
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Folders|[List of Folders](../variable-data-types.md#list)|The retrieved subfolders as a list of folder objects|
+|Folders|[List](../variable-data-types.md#list) of [Folders](../variable-data-types.md#files-and-folders)|The retrieved subfolders as a list of folder objects|
 
 
 ##### <a name="getsubfolders_onerror"></a> Exceptions
