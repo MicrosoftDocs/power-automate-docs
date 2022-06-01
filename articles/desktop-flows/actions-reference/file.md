@@ -102,7 +102,7 @@ Copy one or more files into a destination folder
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File(s) to copy|No|[List of Files](../variable-data-types.md#list)||The file(s) to copy. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
+|File(s) to copy|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to copy. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
 |Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||The destination folder for the copied files|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
@@ -110,7 +110,7 @@ Copy one or more files into a destination folder
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|CopiedFiles|[List of Files](../variable-data-types.md#list)|The copied file(s) as a list of files|
+|CopiedFiles|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|The copied file(s) as a list of files|
 
 
 ##### <a name="copy_onerror"></a> Exceptions
@@ -127,7 +127,7 @@ Move one or more files into a destination folder
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File(s) to move|No|[List of Files](../variable-data-types.md#list)||The file(s) to move. This can be a file path, or a variable containing a file, a list of files, a textual path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
+|File(s) to move|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to move. This can be a file path, or a variable containing a file, a list of files, a textual path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
 |Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||The destination folder for the moved files|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
@@ -135,7 +135,7 @@ Move one or more files into a destination folder
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|MovedFiles|[List of Files](../variable-data-types.md#list)|The moved file(s) as a list of files|
+|MovedFiles|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|The moved file(s) as a list of files|
 
 
 ##### <a name="move_onerror"></a> Exceptions
@@ -152,7 +152,7 @@ Delete one or more files
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File(s) to delete|No|[List of Files](../variable-data-types.md#list)||The file(s) to delete. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' to populate a variable with a list of files|
+|File(s) to delete|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to delete. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' to populate a variable with a list of files|
 
 
 ##### Variables Produced
@@ -171,7 +171,7 @@ Change the name of one or more files
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File to rename|No|[List of Files](../variable-data-types.md#list)||The file(s) to rename. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
+|File to rename|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to rename. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
 |Add number to|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to add the number to the existing file name(s) or a new name|
 |Rename scheme|N/A|Set new name, Add text, Remove text, Replace text, Change extension, Add datetime, Make sequential|Set new name|Specifies how to rename the file(s)|
 |New file name|No|[Text value](../variable-data-types.md#text-value)||The new name of the file(s)|
@@ -201,7 +201,7 @@ Change the name of one or more files
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|RenamedFiles|[List of Files](../variable-data-types.md#list)|The renamed file(s) as a list of files|
+|RenamedFiles|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|The renamed file(s) as a list of files|
 
 
 ##### <a name="renamefiles_onerror"></a> Exceptions
@@ -226,7 +226,7 @@ Read the contents of a text file
 |Argument|Type|Description|
 |-----|-----|-----|
 |FileContents|[Text value](../variable-data-types.md#text-value)|The contents as a text|
-|FileContents|[List of Text values](../variable-data-types.md#list)|The contents as a list of texts|
+|FileContents|[List](../variable-data-types.md#list) of Text values](../variable-data-types.md#text-value)|The contents as a list of texts|
 
 
 ##### <a name="readtextfromfile_onerror"></a> Exceptions
@@ -243,7 +243,7 @@ Write or appends text to a file
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write the text. This can be a file path, or a variable containing a file or a textual path|
-|Text to write|Yes|General value||The text to write in the specified file|
+|Text to write|Yes|[General value](../variable-data-types.md#general-value)||The text to write in the specified file|
 |Append new line|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to append a new line at the end of the overall text to write to the file|
 |If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies whether to overwrite the existing content, or to append to the end of the existing content. If the file doesn't exist, this action automatically creates it|
 |Encoding|N/A|System default, ASCII, Unicode, Unicode (big-endian), UTF-8, Unicode (without byte order mask), UTF-8 (without byte order mask)|Unicode|The encoding to use for the specified text to write into the text file|
@@ -291,7 +291,7 @@ Write a data table, data row or list to a CSV file
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Variable to write|No|General value||The data table, data row variable or list variable to write into the target CSV file|
+|Variable to write|No|[General value](../variable-data-types.md#general-value)||The data table, data row variable or list variable to write into the target CSV file|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The CSV file to export the variable to. This can be a file path, or a variable containing a file or a textual path|
 |Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte οrder mark), System default, ASCII|UTF-8|The encoding to use for writing to the specified CSV file |
 |Include column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether the column names of the variant specified should become the very first row of the CSV file. This option takes effect if and only if the target CSV file either doesn't intially exist or exists but is otherwise empty of text|
