@@ -133,7 +133,7 @@ Retrieves all worksheet names of an Excel document
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|SheetNames|[List of Text values](../variable-data-types.md#list)|The names of all worksheets|
+|SheetNames|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The names of all worksheets|
 
 
 ##### <a name="getallworksheets_onerror"></a> Exceptions
@@ -220,7 +220,7 @@ Selects a range of cells in the active worksheet of an Excel instance
 |Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number. The numbering starts from 1|
 |End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column|
 |Y Axis Direction|N/A|Above, Below|Above|The Y-axis offset direction. Where to look along the vertical axis, based on the position of the currently active cell|
-|End row|No|[N]umeric value](../variable-data-types.md#numeric-value)||The last row number. The numbering starts from 1|
+|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number. The numbering starts from 1|
 |Y Offset|No|[Numeric value](../variable-data-types.md#numeric-value)||The Y-axis offset|
 
 
@@ -453,7 +453,7 @@ Launches a new Excel instance or opens an Excel document
 |Document path|No|[File](../variable-data-types.md#files-and-folders)||The full path of the existing Excel document to open|
 |Make instance visible|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to make the Excel window visible or hide it|
 |Nest under a new Excel process|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Excel spreadsheet should be under a unique Excel process. Macros and add-ins from other spreadsheets won't be accesible.|
-|Password|Yes|Encrypted value||The password on the Excel document, if it is password protected|
+|Password|Yes|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password on the Excel document, if it is password protected|
 |Open as ReadOnly|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to open the stored document in read-only mode or not|
 |Load add-ins and macros|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to load add-ins and macros into the new Excel instance|
 
@@ -510,7 +510,7 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ExcelData|General value|The value of the single cell|
+|ExcelData|[General value](../variable-data-types.md#general-value)|The value of the single cell|
 |ExcelData|[Datatable](../variable-data-types.md#datatable)|The value of the range of cells as a DataTable|
 
 
@@ -565,7 +565,7 @@ Writes a value into a cell or a range of cells of an Excel instance
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
-|Value to write|No|General value||Enter the text, number or variable to insert. If the variable contains a table, it will fill in cells to the right and below writing over other cell data if need be and a list will fill in cells below|
+|Value to write|No|[General value](../variable-data-types.md#general-value)||Enter the text, number or variable to insert. If the variable contains a table, it will fill in cells to the right and below writing over other cell data if need be and a list will fill in cells below|
 |Write mode|N/A|On specified cell, On currently active cell|On specified cell|Whether to write into a specified cell or the currently active cell|
 |Column|No|[Text value](../variable-data-types.md#text-value)||The column number or letter for the cell to write to|
 |Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row of the cell to write to. The numbering starts from 1, meaning that the index of the fist worksheet is 1, of the second is 2 etc.|
