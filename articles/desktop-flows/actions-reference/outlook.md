@@ -84,7 +84,7 @@ Retrieve email messages from an Outlook account
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|RetrievedEmails|[List of Outlook mail messages](../variable-data-types.md#list)|The retrieved email messages for later processing. The variable contain a list of Outlook message objects|
+|RetrievedEmails|[List](../variable-data-types.md#list) of [Outlook mail messages](../variable-data-types.md#outlook)|The retrieved email messages for later processing. The variable contain a list of Outlook message objects|
 
 
 ##### <a name="retrieveemailmessages_onerror"></a> Exceptions
@@ -111,7 +111,7 @@ Create and send a new email message through Outlook
 |Subject|Yes|[Text value](../variable-data-types.md#text-value)||The subject of the email|
 |Body|Yes|[Text value](../variable-data-types.md#text-value)||The text of the body|
 |Body is HTML|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to interpret the body of the email as HTML coding|
-|Attachment(s)|Yes|[List of Files](../variable-data-types.md#list)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
+|Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
 
 ##### Variables Produced
@@ -132,7 +132,7 @@ Move or deletes an email (or a list of email messages) retrieved by a 'Retrieve 
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
 |Account|No|[Text value](../variable-data-types.md#text-value)||The name of the Outlook account (data file name) to work with|
-|Email messages to process|No|[List of Outlook mail messages](../variable-data-types.md#list)||The email message(s) to process. Use a variable populated by a 'Retrieve email messages from Outlook' action|
+|Email messages to process|No|[List](../variable-data-types.md#list) of [Outlook mail messages](../variable-data-types.md#outlook)||The email message(s) to process. Use a variable populated by a 'Retrieve email messages from Outlook' action|
 |Operation|N/A|Delete email messages, Move email messages to mail folder, Mark as unread|Move email messages to mail folder|Specifies which operation to perform on the specified email messages|
 |Mail folder|No|[Text value](../variable-data-types.md#text-value)||The name of the folder to retrieve messages from. Enter the full folder path for subfolders (e.g., Inbox\Work)|
 
@@ -155,7 +155,7 @@ Save Outlook email messages given an account
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
 |Account|No|[Text value](../variable-data-types.md#text-value)||The name of the Outlook account (data file name) to work with|
-|Email message(s) to save|No|[List of Outlook mail messages](../variable-data-types.md#list)||The email message(s) to save. Use a variable populated by a 'Retrieve email messages from Outlook' action|
+|Email message(s) to save|No|[List](../variable-data-types.md#list) of [Outlook mail messages](../variable-data-types.md#outlook)||The email message(s) to save. Use a variable populated by a 'Retrieve email messages from Outlook' action|
 |Save format|N/A|Text only (*.txt), Outlook template (*.oft), Outlook message format (*.msg), Outlook message format - Unicode (*.msg), HTML (*.html), MHT files (*.mht)|Outlook message format (*.msg)|Specifies the format to save the messages|
 |File name|N/A|Default, Custom|Default|Specifies whether to save the messages using the default name (subject) or provide another|
 |Save as|No|[Text value](../variable-data-types.md#text-value)||Specifies the custom name for messages' name which differs from message to message by an automatically added suffix|
@@ -165,7 +165,7 @@ Save Outlook email messages given an account
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|StoredMessagesFiles|[List of Text values](../variable-data-types.md#list)|The file paths of the saved email messages for later processing|
+|StoredMessagesFiles|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The file paths of the saved email messages for later processing|
 
 
 ##### <a name="saveoutlookemailmessages_onerror"></a> Exceptions
@@ -190,7 +190,7 @@ Respond to an Outlook message, by replying, replying to all or forwarding it
 |CC|Yes|[Text value](../variable-data-types.md#text-value)||The email address(es) of the CC recipient(s). To enter more than one email address, separate the list of addresses by spaces or semicolons|
 |BCC|Yes|[Text value](../variable-data-types.md#text-value)||The email address(es) of the BCC (hidden) recipient(s). To enter more than one email address, separate the list of addresses by spaces or semicolons|
 |Body|Yes|[Text value](../variable-data-types.md#text-value)||The text of the body|
-|Attachment(s)|Yes|[List of Files](../variable-data-types.mdlist)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
+|Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#s#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
 
 ##### Variables Produced
