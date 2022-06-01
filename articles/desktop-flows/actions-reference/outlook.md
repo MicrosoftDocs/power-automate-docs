@@ -190,7 +190,7 @@ Respond to an Outlook message, by replying, replying to all or forwarding it
 |CC|Yes|[Text value](../variable-data-types.md#text-value)||The email address(es) of the CC recipient(s). To enter more than one email address, separate the list of addresses by spaces or semicolons|
 |BCC|Yes|[Text value](../variable-data-types.md#text-value)||The email address(es) of the BCC (hidden) recipient(s). To enter more than one email address, separate the list of addresses by spaces or semicolons|
 |Body|Yes|[Text value](../variable-data-types.md#text-value)||The text of the body|
-|Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#s#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
+|Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
 
 ##### Variables Produced
