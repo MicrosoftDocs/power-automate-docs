@@ -420,7 +420,7 @@ Create an EC2 client to automate EC2 web services
 |-----|-----|-----|-----|-----|
 |Access keys|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use access key ID  and secret access key in order to create the EC2 session|
 |Access key ID|No|[Text value](../variable-data-types.md#text-value)||The AWS access key ID|
-|Secret|No|Encrypted value||The AWS secret access key|
+|Secret|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The AWS secret access key|
 |Region endpoint|No|[Text value](../variable-data-types.md#text-value)||The region constant to use that determines the endpoint to use|
 |Profile name|No|[Text value](../variable-data-types.md#text-value)|default|The name of the profile to use |
 |Profile location|Yes|[Text value](../variable-data-types.md#text-value)||The location of the credentials file that contains the profile to use|
