@@ -115,7 +115,7 @@ Deletes the specified resource group and all the contained resources
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Azure client|No|[](../variable-data-types.md#azure)||The client used to connect to Azure|
+|Azure client|No|[Azure client](../variable-data-types.md#azure)||The client used to connect to Azure|
 |Resource group name|No|[Text value](../variable-data-types.md#text-value)||The name of the resource group|
 
 
