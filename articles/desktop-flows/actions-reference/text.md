@@ -321,7 +321,7 @@ Converts a list into a text value by separating its items with a specified delim
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Specify the list to join|No|[List of Text values](../variable-data-types.md#list)||The list to convert to text|
+|Specify the list to join|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The list to convert to text|
 |Delimiter to separate list items|N/A|None, Standard, Custom|None|Specify whether to use no delimiter, a standard delimiter or a custom one|
 |Custom delimiter|No|[Text value](../variable-data-types.md#text-value)||The character(s) to use as delimiter|
 |Standard delimiter|N/A|Space, Tab, New line|Space|Specify the delimiter to use|
@@ -355,7 +355,7 @@ Creates a list containing the substrings of a text that are separated by a speci
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|TextList|[List of Text values](../variable-data-types.md#list)|The new list|
+|TextList|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The new list|
 
 
 ##### <a name="splittext_onerror"></a> Exceptions
@@ -383,9 +383,9 @@ Parses a text to find the first or all occurrences of a specified subtext or a r
 |Argument|Type|Description|
 |-----|-----|-----|
 |Position|[Numeric value](../variable-data-types.md#numeric-value)|The position of the 'Text to find' into the 'Text to parse'. If the text isn't found within the original text, this variable will hold the value -1|
-|Positions|[List of Numeric values](../variable-data-types.md#list)|The positions of the 'Text to find' into the 'Text to parse'. If the text isn't found within the original text, this variable will hold the value -1|
+|Positions|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)|The positions of the 'Text to find' into the 'Text to parse'. If the text isn't found within the original text, this variable will hold the value -1|
 |Match|[Text value](../variable-data-types.md#text-value)|The result that matches the given regular expression|
-|Matches|[List of Text values](../variable-data-types.md#list)|The results that match the given regular expression|
+|Matches|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The results that match the given regular expression|
 
 
 ##### <a name="parsetext_onerror"></a> Exceptions
