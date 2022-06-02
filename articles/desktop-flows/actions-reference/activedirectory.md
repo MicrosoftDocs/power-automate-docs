@@ -305,7 +305,7 @@ Creates a user in the Active Directory
 |Initials|Yes|[Text value](../variable-data-types.md#text-value)||The initials of the user|
 |Last name|Yes|[Text value](../variable-data-types.md#text-value)||The last name of the user|
 |Username|No|[Text value](../variable-data-types.md#text-value)||The username of the user|
-|Password|No|Encrypted value||The password of the user|
+|Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password of the user|
 |Password never expires|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the password of the user will expire|
 |Disabled account|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the account will be disabled|
 
@@ -368,7 +368,7 @@ Modify a user in the Active Directory
 |Operation|N/A|Enable/disable user, Rename user, Delete user, Reset password|Enable/disable user|Select the operation to be performed|
 |Enable user|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Enable or disable the user|
 |New name|No|[Text value](../variable-data-types.md#text-value)||Type the new name for the group|
-|New password|No|Encrypted value||Type the new password for the group|
+|New password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||Type the new password for the group|
 
 
 ##### Variables Produced
@@ -460,7 +460,7 @@ Connects to an Active Directory server
 |LDAP path|No|[Text value](../variable-data-types.md#text-value)||The LDAP path of the Active Directory server|
 |Use authentication|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether authentication is needed to connect to the server|
 |Username|No|[Text value](../variable-data-types.md#text-value)||The user's username|
-|Password|No|Encrypted value||The user's password|
+|Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The user's password|
 |Authentication type|N/A|None, Secure, Encryption, Secure sockets layer, Read-only server, Anonymous, Fast bind, Signing, Sealing, Delegation, Server bind|Secure|Specify the type of authentication to be used|
 
 
