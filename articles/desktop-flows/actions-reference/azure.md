@@ -478,7 +478,7 @@ Creates an Azure session
 |-----|-----|-----|-----|-----|
 |Authentication type|N/A|With service principal, With file|With service principal|Specify the way to authenticate|
 |Client ID |No|[Text value](../variable-data-types.md#text-value)||The client Id of the application, also known as application Id, which identifies the application that is using the token|
-|Client secret|No|Encrypted value||The secret for the client ID|
+|Client secret|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The secret for the client ID|
 |Tenant ID|No|[Text value](../variable-data-types.md#text-value)||The directory ID of the Azure Active Directory|
 |Environment|N/A|Global cloud, China cloud, US Government, German cloud|Global cloud|The environment to authenticate to|
 |Authentication file|No|[Text value](../variable-data-types.md#text-value)||The path of the file with all the required information to authenticate|
