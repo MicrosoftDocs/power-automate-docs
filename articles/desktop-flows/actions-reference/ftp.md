@@ -64,7 +64,7 @@ This action establishes a specific connection to a remote FTP server, and stores
 |Port|Yes|[Numeric value](../variable-data-types.md#numeric-value)|21|Enter the FTP server port here.|
 |Active mode|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify the mode of the connection|
 |Username|No|[Text value](../variable-data-types.md#text-value)||Specify the username of the FTP account to use|
-|Password|Yes|Encrypted value||Specify the password of the FTP account to use|
+|Password|Yes|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||Specify the password of the FTP account to use|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Set the time in seconds that you want to wait for the connection to be established before the action fails|
 
 
@@ -93,8 +93,8 @@ This action returns the subdirectories and files contained in the current direct
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Directories|[List of FTP directories](../variable-data-types.md#list)|The listed directories|
-|Files|[List of FTP Files](../variable-data-types.md#list)|The listed files|
+|Directories|[List](../variable-data-types.md#list) of [FTP directories](../variable-data-types.md#ftp)|The listed directories|
+|Files|[List](../variable-data-types.md#list) of [FTP files](../variable-data-types.md#ftp)|The listed files|
 
 
 ##### <a name="listdirectory_onerror"></a> Exceptions
@@ -116,9 +116,9 @@ This action establishes a specific secure connection to a remote FTP server, and
 |Secure FTP Protocol|N/A|SFTP, FTPS explicit, FTPS implicit|SFTP|Choose the FTP protocol you wish to use to encrypt your connection|
 |Authentication method|N/A|Username and password, Private key, Private key and passphrase|Username and password|Choose the method you wish to use to authenticate yourself on the FTP server|
 |User name|No|[Text value](../variable-data-types.md#text-value)||Specify the username of the FTP account to use|
-|Password|Yes|Encrypted value||Specify the password of the FTP account you wish to use|
+|Password|Yes|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||Specify the password of the FTP account you wish to use|
 |Path to private key|No|[Text value](../variable-data-types.md#text-value)||Enter the file path to the private-key to be used for authentication|
-|Private key pass phrase|Yes|Encrypted value||Enter a variable containing the private-key pass phrase here|
+|Private key pass phrase|Yes|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||Enter a variable containing the private-key pass phrase here|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Set the time in seconds that you want to wait for the connection to be established before the action fails|
 
 
@@ -179,7 +179,7 @@ Downloads one or more files from an FTP server
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
 |Download into folder|No|[Folder](../variable-data-types.md#files-and-folders)||The folder to be the destination of the file(s) that will be downloaded|
-|File(s) to download|No|[List of FTP Files](../variable-data-types.md#list)||The file(s) to download|
+|File(s) to download|No|[List](../variable-data-types.md#list) of [FTP files](../variable-data-types.md#ftp)||The file(s) to download|
 |Transfer type|N/A|Auto, Binary, ASCII|Auto|Enter ASCII or binary to specify the method for downloading a single file. If the file type is uncertain, or more than one is dowloaded, choose Auto to follow the transfer rules specified in options|
 |If file exists|N/A|Overwrite, Do not download, Download with unique name|Overwrite|Specify what to do if the file already exists. Overwrite writes over the original file so you can't access it any more, and download with unique name adds an underscore and a sequential number to the end|
 
@@ -203,7 +203,7 @@ Downloads one or more folders from an FTP server
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
-|Folder(s) to download|No|[List of FTP directories](../variable-data-types.md#list)||The name of the folder path(s), or FTP folder(s) to download|
+|Folder(s) to download|No|[List](../variable-data-types.md#list) of [FTP directories](../variable-data-types.md#ftp)||The name of the folder path(s), or FTP folder(s) to download|
 |Download into local folder|No|[Folder](../variable-data-types.md#files-and-folders)||The full path of the destination of the FTP folder(s) you are downloading|
 
 
@@ -226,7 +226,7 @@ Uploads one or more files to an FTP server
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
-|File(s) to upload|No|[List of Files](../variable-data-types.md#list)||The file(s) to upload|
+|File(s) to upload|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to upload|
 |Remote location|Yes|[Text value](../variable-data-types.md#text-value)||The location where the filesshould be uploaded|
 |Transfer type|N/A|Auto, Binary, ASCII|Auto|Enter ASCII or binary to specify the method for downloading a single file. If you're not sure what type the file will be, or if you are downloading more than one, choose Auto to follow the transfer rules specified in Options|
 |If file exists|N/A|Overwrite, Do not download, Download with unique name|Overwrite|Specify what to do if the file already exists. Overwrite writes over the original file so you can't access it any more, and Download with Unique Name adds an underscore and a sequential number to the end|
@@ -250,7 +250,7 @@ Uploads one or more folders to an FTP server
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
-|Folder(s) to upload|No|[List of Folders](../variable-data-types.md#list)||The folder(s) to upload. The folders being uploaded should not already exist within the active directory of the FTP server|
+|Folder(s) to upload|No|[List](../variable-data-types.md#list) of [Folders](../variable-data-types.md#files-and-folders)||The folder(s) to upload. The folders being uploaded should not already exist within the active directory of the FTP server|
 |Remote location|No|[Text value](../variable-data-types.md#text-value)||The location where the folders should be uploaded|
 
 
@@ -272,7 +272,7 @@ Deletes one or more files from an FTP server
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
-|Files to delete|No|[List of FTP Files](../variable-data-types.md#list)||The files to delete|
+|Files to delete|No|[List](../variable-data-types.md#list) of [FTP files](../variable-data-types.md#ftp)||The files to delete|
 
 
 ##### Variables Produced
@@ -292,7 +292,7 @@ Renames a file that resides on an FTP server
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
-|File to rename|No|[FTP File](../variable-data-types.md#ftp)||The file to rename|
+|File to rename|No|[FTP file](../variable-data-types.md#ftp)||The file to rename|
 |New file name|No|[Text value](../variable-data-types.md#text-value)||The new name for the file. If you enter a name with a path, the file will also be moved to that location. If the location doesn't exist, it will throw an exception|
 
 
@@ -395,12 +395,12 @@ Synchronize the files and subdirectories of a given Folder with a given remote F
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|FtpFilesAdded|[List of FTP Files](../variable-data-types.md#list)|List of FTP files that initially existed in the source and after the syncronzation process were added to the target.|
-|FtpFilesModified|[List of FTP Files](../variable-data-types.md#list)|List of FTP files that initially existed in both the source and the target and after the syncronzation process were added to the target.|
-|FtpFilesDeleted|[List of FTP Files](../variable-data-types.md#list)|List of FTP files that initially existed in the target directory and after the synchronzation process were deleted.|
-|FilesAdded|[List of Files](../variable-data-types.md#list)|List of files that initially existed in the source and after the syncronzation process were added to the target.|
-|FilesModified|[List of Files](../variable-data-types.md#list)|List of files that initially existed in both the source and the target and after the syncronzation process were added to the target.|
-|FilesDeleted|[List of Files](../variable-data-types.md#list)|List of files that initially existed in the target directory and after the synchronzation process were deleted.|
+|FtpFilesAdded|[List](../variable-data-types.md#list) of [FTP files](../variable-data-types.md#ftp)|List of FTP files that initially existed in the source and after the syncronzation process were added to the target.|
+|FtpFilesModified|[List](../variable-data-types.md#list) of [FTP files](../variable-data-types.md#ftp)|List of FTP files that initially existed in both the source and the target and after the syncronzation process were added to the target.|
+|FtpFilesDeleted|[List](../variable-data-types.md#list) of [FTP files](../variable-data-types.md#ftp)|List of FTP files that initially existed in the target directory and after the synchronzation process were deleted.|
+|FilesAdded|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|List of files that initially existed in the source and after the syncronzation process were added to the target.|
+|FilesModified|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|List of files that initially existed in both the source and the target and after the syncronzation process were added to the target.|
+|FilesDeleted|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|List of files that initially existed in the target directory and after the synchronzation process were deleted.|
 
 
 ##### <a name="synchronizedirectoryaction_onerror"></a> Exceptions
