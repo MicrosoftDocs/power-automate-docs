@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/09/2022
+ms.date: 05/27/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -33,7 +33,7 @@ The [IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from
 You should also consult the [Limits and Configuration](limits-and-config.md) article for a supplemental listing for known IP addresses that Power Automate uses.
 
 >[!NOTE]
-> Starting May 2022, Azure Logic Apps begins to enable availability zones in select regions for new Consumption logic apps. To support this capability, new IP addresses have been published for the Azure Logic Apps service and managed connectors. To ensure flows continue to work after this date, update your firewall configuration to include both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. For more information, see [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones).
+> Starting May 2022, Azure Logic Apps begins to enable availability zones in select regions for new Consumption logic apps. To support this capability, new IP addresses have been published for the Azure Logic Apps service and managed connectors. If you are restricting inbound or outbound IP addresses on your network (via a firewall, for example), to ensure flows continue to work after this date, update your network configuration to allow both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. For more information, see [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones).
 
 ## Logic Apps
 

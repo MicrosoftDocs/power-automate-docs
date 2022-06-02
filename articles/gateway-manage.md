@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/10/2021
+ms.date: 05/27/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,20 +25,22 @@ search.audienceType:
 
 # Manage an on-premises data gateway in Power Automate
 
-
 Install and manage an on-premises data gateway to securely integrate a variety of cloud-based apps with your on-premises data and apps through Power Automate.
 
 With a gateway, you can connect to on-premises data over the following connections.
 
 * Apache Impala
+* BizTalk Server
 * Custom connectors that you create
 * DB2
+* Desktop flows
 * File System
 * Http with Azure AD
 * Informix
 * MySQL
 * Oracle Database
 * PostgreSQL
+* SAP ERP
 * SharePoint
 * SQL Server
 * Teradata
