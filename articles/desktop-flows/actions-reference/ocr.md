@@ -73,7 +73,7 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |Is regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a regular expression to find the specified text|
 |Search for text on|N/A|Entire screen, Foreground window|Entire screen|Specifies whether to search for the specified text on the entine visible screen or just the foreground window|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Specifies whether to scan the entire screen (or window) or a narrowed down subregion of it|
-|Image(s)|No|[List of Image](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
+|Image(s)|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
 |X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion to scan for the supplied text|
 |Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specifies how much the image(s) searched for can differ from the originally chosen image|
 |Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion to scan for the supplied text|
@@ -129,7 +129,7 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Is regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a regular expression to find the specified text|
 |Search for text on|N/A|Entire screen, Foreground window|Entire screen|Specifies whether to search for the specified text on the entine visible screen or just the foreground window|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Specifies whether to scan the entire screen (or window) or a narrowed down subregion of it|
-|Image(s)|No|[List of Image](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
+|Image(s)|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
 |X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion to scan for the supplied text|
 |Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specifies how much the image(s) searched for can differ from the originally chosen image|
 |Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion to scan for the supplied text|
@@ -255,7 +255,7 @@ Extract text from a given source using the given OCR engine
 |OCR source|N/A|Screen, Foreground window, Image on disk|Screen|The source of the image to perform the OCR operation on|
 |Image file path|No|[File](../variable-data-types.md#files-and-folders)||The path of the image to perform the OCR operation on|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|The selected mode for the OCR operation|
-|Image|No|[List of Image](../images.md)||The image to use for narrowing down the scan to a subregion that is relative to the specified image|
+|Image|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image to use for narrowing down the scan to a subregion that is relative to the specified image|
 |Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specifies how much the image can differ from the originally chosen image|
 |X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion to narrow down the scan|
 |X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion to narrow down the scan|
