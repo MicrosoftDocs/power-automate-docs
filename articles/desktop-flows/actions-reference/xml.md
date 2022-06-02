@@ -111,7 +111,7 @@ Extract values from an XML document based on the provided XPath query
 |Argument|Type|Description|
 |-----|-----|-----|
 |XPathResult|[XML node](../variable-data-types.md#xml)|The extracted node(s) as an XML node|
-|XPathResults|[List of XML nodes](../variable-data-types.md#list)|The extracted node(s) as a list of XML nodes|
+|XPathResults|[List](../variable-data-types.md#list) of [XML nodes](../variable-data-types.md#xml)|The extracted node(s) as a list of XML nodes|
 
 
 ##### <a name="executexpathquery_onerror"></a> Exceptions
