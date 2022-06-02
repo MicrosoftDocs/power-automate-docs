@@ -46,7 +46,7 @@ Invokes the IBM service named 'Convert Document'
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Username|No|[Text value](../variable-data-types.md#text-value)||The username to be used for this call|
-|Password|No|Encrypted value||The password to use for this call|
+|Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password to use for this call|
 |Version date|No|[Text value](../variable-data-types.md#text-value)||The release date of the API to use|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The path to the file to analyze|
 |Mime type|N/A|text/html, text/xhtml+xml, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document|text/html|The MIME type of the file|
