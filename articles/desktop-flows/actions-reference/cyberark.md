@@ -57,7 +57,7 @@ Retrieves a password for a specific application from CyberArk
 |Use only valid certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to load only valid certificates from the store|
 |Store certificate path|No|[Text value](../variable-data-types.md#text-value)||The path of the certificate in the certificate store|
 |Certificates path|No|[File](../variable-data-types.md#files-and-folders)||The path of the certificate selected from the store|
-|Certificate password|No|Encrypted value||The password for the certificate file|
+|Certificate password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the certificate file|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The waiting time (in seconds) to get results from CyberArk|
 
 ##### Variables Produced
