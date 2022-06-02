@@ -128,7 +128,7 @@ Moves the mouse over an image found on screen or on the foreground window
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Image to move mouse to|No|[List of Image](../images.md)||The list of Images to move the mouse to|
+|Image to move mouse to|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The list of Images to move the mouse to|
 |Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
 |Occurence|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|The occurence of the image found to move the mouse to|
 |Send a click after moving mouse|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to send a click after the mouse is positioned over the image|
@@ -177,7 +177,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Occurence|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|A positive number that will be used as the occurence of the input text on screen|
 |Search for text on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified text in the foremost window only or the entire visible screen. Neither choice will find the text if it isn't clearly visible on the screen|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Whether to scan the entire screen (or window) to find the supplied text or only a narrows down subregion of it|
-|Image(s)|No|[List of Image](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
+|Image(s)|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
 |X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion to scan for the supplied text|
 |Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify how much the image(s) searched for can differ from the originally chosen image|
 |Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion to scan for the supplied text|
@@ -268,7 +268,7 @@ Sends keys to the application that is currently active
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Send keys to|N/A|Foreground window, By UI element, By window instance/handle, By title and/or class|Foreground window|Specify whether to send the keys to the foreground window or to a UI element or to a window instance or a combination of window title/class|
-|Text to send|No|Encrypted value||The text to send to the application|
+|Text to send|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to send to the application|
 |Delay between keystrokes|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify the delay in milliseconds between sending keystrokes to avoid input errors|
 |Send Text as hardware keys|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Emulate the actual keystrokes on keyboard when sending whole Text|
 
