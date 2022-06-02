@@ -167,7 +167,7 @@ Set text on a terminal session
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Terminal session|No|[Terminal session](../variable-data-types.md#terminal)||The terminal session to work with|
-|Text|No|Encrypted value||The text to set on the specified location|
+|Text|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to set on the specified location|
 |Set text|N/A|Cursor position, Field|Field|The location to set the text to|
 |Get field by|N/A|Label, Index, Position|Label|Specifies the way by which to look for the field|
 |Label|No|[Text value](../variable-data-types.md#text-value)||The label of the field to look for|
