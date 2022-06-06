@@ -61,7 +61,7 @@ When the browser extension isn't able to communicate with Power Automate, the br
 
 ## UI elements properties
 
-To manage a UI element’s selectors, right-click on the element and select **Edit**. This option brings up the Selector builder, where the selector can be edited with a visual editor.
+To manage a UI element’s selectors, right-click on the element and select **Edit**. This option brings up the selector builder, where the selector can be edited with a visual editor.
 
 ![Screenshot of the visual selector builder.](./media/ui-elements/visual-selector-editor.png)
 
