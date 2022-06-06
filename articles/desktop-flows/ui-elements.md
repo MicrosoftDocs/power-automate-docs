@@ -67,7 +67,7 @@ To manage a UI element’s selectors, right-click on the element and select **Ed
 
 To manually enter the selector’s value, enable the **Text editor** toggle button, and the text value of the selector will become editable. You can find more information about selectors in [Build a custom selector](build-custom-selectors.md).
 
-![Screenshot of the manual selector builder.](./media/ui-elements/manual-selector-editor.png)
+![Screenshot of a selector's text editor.](./media/ui-elements/manual-selector-editor.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 

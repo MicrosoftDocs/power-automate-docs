@@ -30,11 +30,11 @@ When a custom selector is needed, you can modify an existing selector or build o
 
 To edit an existing selector, select the appropriate UI element and choose the selector you want to edit. 
 
-![Screenshot of the option to edit an existing selector.](media/build-custom-selectors/edit-selector.png)
+![Screenshot of a selector's dialog.](media/build-custom-selectors/edit-selector.png)
 
-To add more selectors for a UI element, select **Selector with recapture** to capture a new one or create a copy of an existing selector and edit it. To create a copy, right-click on the existing selector and select **Create a copy**.
+To add more selectors for a UI element, capture a new selector using the **Selector with recapture** button or create a copy of an existing selector. To create a copy, right-click on the existing selector and select **Create a copy**.
 
-![Screenshot of the button to create a new selector.](media/build-custom-selectors/create-new-selector.png)
+![Screenshot of the buttons to capture a new selector and create a copy of an existing selector.](media/build-custom-selectors/create-new-selector.png)
 
 In selectors, use the **>** notation to indicate the hierarchical structure of the selected elements. Each element in the selector is contained within the element on its left and displayed in the following form: 
 
@@ -56,7 +56,7 @@ For example, the following selector pinpoints the **File** menu option in a Note
 > [!NOTE]
 > The Notepad window and the pane are different UI elements, but they have a parent-child relationship. 
 
-![Screenshot of a selector that pinpoints the **File** menu option in an Notepad window.](media/build-custom-selectors/file-option-notepad-selector.png)
+![Screenshot of a selector that pinpoints the File menu option in an Notepad window.](media/build-custom-selectors/file-option-notepad-selector.png)
 
 Assume that you want to edit the selector to work with a Notepad window named **Notes.txt**. To achieve this functionality, change the **Name** attribute of the selector to **Notes.txt - Notepad**. The new selector should be: **:desktop > window[Name="Notes.txt - Notepad"][Process="Notepad"]**.
 
