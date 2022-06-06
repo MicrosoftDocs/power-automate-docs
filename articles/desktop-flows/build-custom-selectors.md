@@ -32,7 +32,7 @@ To edit an existing selector, select the appropriate UI element and choose the s
 
 ![Screenshot of the option to edit an existing selector.](media/build-custom-selectors/edit-selector.png)
 
-To add more selectors for a UI element, select the appropriate UI element and then the **New** button.
+To add more selectors for a UI element, select **Selector with recapture** to capture a new one or create a copy of an existing selector and edit it. To create a copy, right-click on the existing selector and select **Create a copy**.
 
 ![Screenshot of the button to create a new selector.](media/build-custom-selectors/create-new-selector.png)
 
@@ -87,7 +87,7 @@ Apart from various operators, Power Automate enables you to create dynamic selec
 
 If the value of a selector's attribute depends on calculations and results of previous actions, replace the hard-coded value with a variable.
 
-To use a variable in a selector, launch the **Custom selector builder** and populate the variable's name enclosed by percentage signs (**%**). You can find more information about the percentage notation in [Use variables and the % notation](variable-manipulation.md).
+To use a variable in a selector, launch the **Text editor** and populate manually the variable's name enclosed by percentage signs (**%**) or use the **Select variable** button. You can find more information about the percentage notation in [Use variables and the % notation](variable-manipulation.md).
 
 If you use a variable in the **Name** attribute of the Notepad example, the selector should be **:desktop > window[Name="%WindowName%"][Process="Notepad"]**.
 
