@@ -49,7 +49,7 @@ Gets clipboard text
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ClipboardText|Text value|The text stored in the clipboard|
+|ClipboardText|[Text value](../variable-data-types.md#text-value)|The text stored in the clipboard|
 
 
 ##### <a name="gettext_onerror"></a> Exceptions
@@ -63,7 +63,7 @@ Sets clipboard text
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Clipboard text|No|Text value||The text to set to the clipboard|
+|Clipboard text|No|[Text value](../variable-data-types.md#text-value)||The text to set to the clipboard|
 
 
 ##### Variables Produced

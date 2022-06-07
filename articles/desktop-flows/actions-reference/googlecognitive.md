@@ -51,20 +51,20 @@ Invokes the Google Cloud Natural Language service named 'Analyze Sentiment'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The Google Cloud API key to be used for this API call|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
 |Document type|N/A|Plain text, HTML|Plain text|The type of document to transmit|
 |Provide document|N/A|From file, From GCS|From file|Specify whether the document will be provided by a full path or a Google Cloud Storage URI|
-|File path|No|File||The full path (folder plus filename) of the document to transmit|
-|GCS Content URI|No|Text value||The URI of the image residing on Google Cloud Storage|
-|Language|Yes|Text value||The language of the text|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The full path (folder plus filename) of the document to transmit|
+|GCS Content URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
+|Language|Yes|[Text value](../variable-data-types.md#text-value)||The language of the text|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response results|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="analyzesentimentgoogle_onerror"></a> Exceptions
@@ -79,20 +79,20 @@ Invokes the Google Cloud Natural Language service named 'Analyze Entities'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The Google Cloud API key to be used for this API call|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
 |Document type|N/A|Plain text, HTML|Plain text|The type of the document to transmit|
 |Provide file|N/A|From file, From GCS|From file|Specify whether the document will be provided by a full path or a Google Cloud Storage URI|
-|File path|No|File||The full path (folder plus filename) of the document to transmit|
-|GCS URL|No|Text value||The URI of the document residing on Google Cloud Storage|
-|Language|Yes|Text value||The language of the text|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The full path (folder plus filename) of the document to transmit|
+|GCS URL|No|[Text value](../variable-data-types.md#text-value)||The URI of the document residing on Google Cloud Storage|
+  |Language|Yes|[Text value](../variable-data-types.md#text-value)||The language of the text|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response results|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="analyzeentitiesgoogle_onerror"></a> Exceptions
@@ -107,20 +107,20 @@ Invokes the Google Cloud Natural Language service named 'Analyze Syntax'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The Google Cloud API key to be used for this API call|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
 |Document type|N/A|Plain text, HTML|Plain text|The type of document to transmit|
 |Provide document|N/A|From file, From GCS|From file|Specify whether the document will be provided by a full path or a Google Cloud Storage URI|
-|File path|No|File||The full path (folder plus filename) of the document to transmit|
-|GCS Content URI|No|Text value||The URI of the image residing on Google Cloud Storage|
-|Language|Yes|Text value||The language of the text|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The full path (folder plus filename) of the document to transmit|
+|GCS Content URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
+|Language|Yes|[Text value](../variable-data-types.md#text-value)||The language of the text|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response results|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="analyzesyntaxgoogle_onerror"></a> Exceptions
@@ -137,18 +137,18 @@ Invokes the Google Cloud Vision service named 'Label Detection'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The Google Cloud API key to be used for this API call|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
 |Provide image|N/A|From file, From GCS|From file|Specify whether the image will be provided by a full path or a Google Cloud Storage URI|
-|Image file|No|File||The full path (folder plus filename) of the image file to transmit|
-|GCS Image URI|No|Text value||The URI of the image residing on Google Cloud Storage|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Image file|No|[File](../variable-data-types.md#files-and-folders)||The full path (folder plus filename) of the image file to transmit|
+|GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response results|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="labeldetectiongoogle_onerror"></a> Exceptions
@@ -163,18 +163,18 @@ Invokes the Google Cloud Vision service named 'Landmark Detection'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The Google Cloud API key to be used for this API call|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
 |Provide image|N/A|From file, From GCS|From file|Specify whether the image will be provided by a full path or a Google Cloud Storage URI|
-|Image file path|No|File||The full path (folder plus filename) of the image file to transmit|
-|GCS Image URI|No|Text value||The URI of the image residing on Google Cloud Storage|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Image file path|No|[File](../variable-data-types.md#files-and-folders)||The full path (folder plus filename) of the image file to transmit|
+|GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response results|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="landmarkdetectiongoogle_onerror"></a> Exceptions
@@ -189,18 +189,18 @@ Invokes the Google Cloud Vision service named 'Text Detection'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The Google Cloud API key to be used for this API call|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
 |Provide image|N/A|From file, From GCS|From file|Specify whether the image will be provided by a full path or a Google Cloud Storage URI|
-|Image file|No|File||The full path (folder plus filename) of the image file to transmit|
-|GCS Image URI|No|Text value||The URI of the image residing on Google Cloud Storage|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Image file|No|[File](../variable-data-types.md#files-and-folders)||The full path (folder plus filename) of the image file to transmit|
+|GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response results|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="textdetectiongoogle_onerror"></a> Exceptions
@@ -215,18 +215,18 @@ Invokes the Google Cloud Vision service named 'Logo Detection'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The Google Cloud API key to be used for this API call|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
 |Provide image|N/A|From file, From GCS|From file|Specify whether the image will be provided by a full path or a Google Cloud Storage URI|
-|Image file|No|File||The full path (folder plus filename) of the image file to transmit|
-|GCS Image URI|No|Text value||The URI of the image residing on Google Cloud Storage|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Image file|No|[File](../variable-data-types.md#files-and-folders)||The full path (folder plus filename) of the image file to transmit|
+|GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response results|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="logodetectiongoogle_onerror"></a> Exceptions
@@ -241,18 +241,18 @@ Invokes the Google Cloud Vision service named 'Image Properties Detection'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The Google Cloud API key to be used for this API call|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
 |Provide image|N/A|From file, From GCS|From file|Specify whether the image will be provided by a full path or a Google Cloud Storage URI|
-|Image file|No|File||The full path (folder plus filename) of the image file to transmit|
-|GCS Image URI|No|Text value||The URI of the image residing on Google Cloud Storage|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Image file|No|[File](../variable-data-types.md#files-and-folders)||The full path (folder plus filename) of the image file to transmit|
+|GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response results|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="imagepropertiesdetectiongoogle_onerror"></a> Exceptions
@@ -267,18 +267,18 @@ Invokes the Google Cloud Vision service named 'Safe Search Detection'
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|API key|No|Text value||The Google Cloud API key to be used for this API call|
+|API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
 |Provide image|N/A|From file, From GCS|From file|Specify whether the image will be provided by a full path or a Google Cloud Storage URI|
-|Image file|No|File||The full path (folder plus filename) of the image file to transmit|
-|GCS Image URI|No|Text value||The URI of the image residing on Google Cloud Storage|
-|Timeout|Yes|Numeric value|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
+|Image file|No|[File](../variable-data-types.md#files-and-folders)||The full path (folder plus filename) of the image file to transmit|
+|GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response results|
-|StatusCode|Numeric value|The status code returned|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
+|StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
 
 ##### <a name="safesearchdetectiongoogle_onerror"></a> Exceptions
