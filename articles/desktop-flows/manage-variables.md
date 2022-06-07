@@ -71,11 +71,14 @@ To create an input variable:
 
      ![Screenshot of the plus button in the variables pane that creates a new input variable.](media\input-output-variables\create-input-variable.png)
 
-1. When the **Add a new input variable** dialog is appeared, populate the following fields:
+1. When the **New input variable** dialog is appeared, populate the following fields:
 
     - **Variable name**: The name of the variable in the flow.
     - **Data type**: The type of the variable: text, number, boolean, custom object, list or datatable.
-    - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
+    - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console. When creating a custom object, list, or datatable input variable, Power Automate allows you to construct the default value through a visual editor or a JSON editor.
+
+        ![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
+
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
@@ -88,11 +91,7 @@ To create an input variable:
 
      ![Screenshot of the Add a new input variable dialog box.](media\input-output-variables\Add-new-input-variable-dialog.png)
 
-When creating a custom object, list, or datatable input variable, Power Automate lets you construct a default value through a visual editor or a JSON editor.
-
-![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
-
-If you run a flow containing input variables through the console, the **Flow inputs** dialog will prompt you to set their values manually. For custom objects, lists, or datatables, the dialog allow you to create the variables using a visual or JSON editor. You can find more information about running flows in [Run attended and unattended desktop flows](run-pad-flow.md). 
+If you run a flow containing input variables through the console, the **Flow inputs** dialog will prompt you to set their values manually. For custom objects, lists, and datatables, the dialog allow you to populate a value using a visual editor or a JSON editor. You can find more information about running flows in [Run attended and unattended desktop flows](run-pad-flow.md). 
 
 ![Screenshot of the Flow inputs dialog.](media\input-output-variables\flow-input-dialog.png)
 
