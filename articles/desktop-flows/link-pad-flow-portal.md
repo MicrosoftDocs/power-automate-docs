@@ -50,7 +50,7 @@ search.audienceType:
 
    ![Screenshot of the New step action.](media\link-pad-flow-portal\new-step.png)
 
-1. In the **Choose an action** prompt search field, enter **power automate desktop**. Under **Actions**, select **Run a flow built with Power Automate desktop**.
+1. In the **Choose an action** prompt search field, enter **Power Automate for desktop**. Under **Actions**, select **Run a flow built with Power Automate for desktop**.
 
    ![Screenshot of the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\action-search.png)
 
