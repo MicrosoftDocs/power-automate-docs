@@ -382,6 +382,16 @@ The data types that have properties are displayed in the following lists.
 |Tags               |The tags of the snapshot.                   |
 
 
+## Error
+
+|Property     |Description                                                                     |
+|-------------|--------------------------------------------------------------------------------|
+|ActionIndex  |The index of the action that caused the error.                                  |
+|ActionName   |The name of the action that caused the error.                                   |
+|ErrorDetails |The details of the occurred error.                                              |
+|Location     |The name and index information of the action and subflow that caused the error. |
+|Message      |The message of the occurred error.                                              |
+|SubflowName  |The name of the subflow that contains the action caused the error.              |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

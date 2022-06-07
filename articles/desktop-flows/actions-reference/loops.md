@@ -71,9 +71,9 @@ Iterates a block of actions for a specified number of times
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Start from|No|Numeric value||Set the starting point of the loop counter.|
-|Increment by|No|Numeric value||Set the increment that the loop counter variable is increased by.|
-|End to|No|Numeric value||Set the ending point of the loop counter.|
+|Start from|No|[Numeric value](../variable-data-types.md#numeric-value)||Set the starting point of the loop counter.|
+|Increment by|No|[Numeric value](../variable-data-types.md#numeric-value)||Set the increment that the loop counter variable is increased by.|
+|End to|No|[Numeric value](../variable-data-types.md#numeric-value)||Set the ending point of the loop counter.|
 
 
 ##### Variables Produced
