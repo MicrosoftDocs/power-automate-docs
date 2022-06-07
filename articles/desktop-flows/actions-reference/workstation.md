@@ -58,7 +58,7 @@ Prints a document on the default printer
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Document to print|No|File||The path of the document to print|
+|Document to print|No|[File](../variable-data-types.md#files-and-folders)||The path of the document to print|
 
 
 ##### Variables Produced
@@ -80,7 +80,7 @@ Gets the name of the default printer
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|PrinterName|Text value|The name of the default printer|
+|PrinterName|[Text value](../variable-data-types.md#text-value)|The name of the default printer|
 
 
 ##### <a name="getdefaultprinter_onerror"></a> Exceptions
@@ -94,7 +94,7 @@ Sets a printer as the default printer
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Printer name|No|Text value||The name of the printer to set as default|
+|Printer name|No|[Text value](../variable-data-types.md#text-value)||The name of the printer to set as default|
 
 
 ##### Variables Produced
@@ -115,7 +115,7 @@ Logs off the current user
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Force log off|N/A|Boolean value|False|Specify whether to force the user account to log off, regardless of unsaved files or programs that won't close|
+|Force log off|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to force the user account to log off, regardless of unsaved files or programs that won't close|
 
 
 ##### Variables Produced
@@ -140,7 +140,7 @@ Instructs the computer to shut down
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Action to perform|N/A|Shutdown, Restart, Suspend, Hibernate|Shutdown|Specify which shutdown option the computer will perform|
-|Force|N/A|Boolean value|False|Specify whether to force the computer to shut down, regardless of unsaved files or programs that won't close|
+|Force|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to force the computer to shut down, regardless of unsaved files or programs that won't close|
 
 
 ##### Variables Produced
@@ -188,7 +188,7 @@ Plays a system sound or a wav file
 |-----|-----|-----|-----|-----|
 |Play sound from|N/A|System, WAV file|System|The type of sound to play|
 |Sound to play|N/A|Asterisk, Beep, Exclamation, Hand, Question|Asterisk|The specific sound to play|
-|File to play|No|File||The full path of the specific WAV file to play|
+|File to play|No|[File](../variable-data-types.md#files-and-folders)||The full path of the specific WAV file to play|
 
 
 ##### Variables Produced
@@ -218,9 +218,9 @@ Takes a screenshot of the foreground window or the specified screen and saves th
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Capture|N/A|All screens, Primary screen, Select screen, Foreground window|All screens|The area to capture|
-|Screen to capture|No|Numeric value||Specify which screen to capture|
+|Screen to capture|No|[Numeric value](../variable-data-types.md#numeric-value)||Specify which screen to capture|
 |Save screenshot to|N/A|Clipboard, File|Clipboard|The location to save the screenshot to|
-|Image file|No|File||The full path of the file name where the captured image will be saved|
+|Image file|No|[File](../variable-data-types.md#files-and-folders)||The full path of the file name where the captured image will be saved|
 |Image format|N/A|BMP, EMF, EXIF, GIF, JPG, PNG, TIFF, WMF|BMP|The format for the image file to save|
 
 
@@ -257,16 +257,16 @@ Gets the width, height, bit count and frequency of a selected monitor
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Monitor number|No|Numeric value||The number of the monitor to get the resolution of|
+|Monitor number|No|[Numeric value](../variable-data-types.md#numeric-value)||The number of the monitor to get the resolution of|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|MonitorWidth|Numeric value|The width of the monitor|
-|MonitorHeight|Numeric value|The height of the monitor|
-|MonitorBitCount|Numeric value|The monitor bit count|
-|MonitorFrequency|Numeric value|The monitor frequency|
+|MonitorWidth|[Numeric value](../variable-data-types.md#numeric-value)|The width of the monitor|
+|MonitorHeight|[Numeric value](../variable-data-types.md#numeric-value)|The height of the monitor|
+|MonitorBitCount|[Numeric value](../variable-data-types.md#numeric-value)|The monitor bit count|
+|MonitorFrequency|[Numeric value](../variable-data-types.md#numeric-value)|The monitor frequency|
 
 
 ##### <a name="getscreenresolution_onerror"></a> Exceptions
@@ -283,11 +283,11 @@ Sets the width, height, bit count and frequency of a selected monitor during an 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Monitor number|No|Numeric value||The number of monitor to set the resolution of|
-|Monitor width|No|Numeric value||The value to set the monitor width to|
-|Monitor height|No|Numeric value||The value to set the monitor height to|
-|Monitor bit count|No|Numeric value||The value to set the monitor bit count to|
-|Monitor frequency|No|Numeric value||The value to set the monitor frequency to|
+|Monitor number|No|[Numeric value](../variable-data-types.md#numeric-value)||The number of monitor to set the resolution of|
+|Monitor width|No|[Numeric value](../variable-data-types.md#numeric-value)||The value to set the monitor width to|
+|Monitor height|No|[Numeric value](../variable-data-types.md#numeric-value)||The value to set the monitor height to|
+|Monitor bit count|No|[Numeric value](../variable-data-types.md#numeric-value)||The value to set the monitor bit count to|
+|Monitor frequency|No|[Numeric value](../variable-data-types.md#numeric-value)||The value to set the monitor frequency to|
 
 
 ##### Variables Produced
