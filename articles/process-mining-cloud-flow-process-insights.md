@@ -1,10 +1,10 @@
 ---
-title: Get started with cloud flow process insights in process advisor (preview) | Microsoft Docs
-description: This topic describes how to improve your flows with cloud flow process insights in the process advisor feature in Power Automate.
+title: Improve cloud flows with process insights in process advisor (preview) | Microsoft Docs
+description: This topic describes how to improve your cloud flows with process insights in the process advisor feature in Power Automate.
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/25/2022
+ms.date: 06/07/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -14,11 +14,11 @@ search.audienceType:
   - enduser
 ---
 
-# Tutorial: Get started with cloud flow process insights (preview)
+# Improve cloud flows with process insights (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-This tutorial allows you to experience how to improve your flows with cloud flow process insights.
+This article allows you to experience how to improve your cloud flows with process insights.
 
 You can gain insights and improve your cloud flows with the help of process mining. With a few selections, you can visualize your flow’s performance, identify bottlenecks and optimization opportunities, and monitor for business drifts. You can generate these insights directly from the flow details page by having process advisor analyze your flow-run history with process mining techniques.
 
