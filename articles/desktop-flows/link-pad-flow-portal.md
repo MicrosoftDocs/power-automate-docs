@@ -70,22 +70,22 @@ search.audienceType:
 
    ![Screenshot of the flow designer.](media\link-pad-flow-portal\flow-designer-blank.png)
 
-1. Optionally, create Input/output variables to pass data back and forth from the Power Automate web portal to your desktop flow. In the Variables pane, select **+** to add an input or output variable.
+1. Optionally, create input/output variables to pass data back and forth from the Power Automate web portal to your desktop flow. In the Variables pane, select **+** to add an input or output variable.
 
    ![Screenshot of the option to create a new input variable.](media\link-pad-flow-portal\new-input-output-var.png)
 
-1. To create an input or output variable, the Edit variable dialog box will require filling in the fields as follows:
-   * Variable type—input or output
-   * Variable name—the name of the variable in flow designer
-   * Default value—the value which the variable holds if none is assigned
-   * Data type—the type of the variable (integer, string, datetime, and so on.)
-   * External name—the name used outside flow designer. This name appears in Power    Automate.
-   * Description—a description of the variable. This mandatory field appears in Power Automate
-   * Mark as sensitive-enable this option to set the variable as sensitive and hide its content in the flow designer and the Power Automate logs.
+1. To create an input or output variable, the **New input/output variable** dialog requires filling in the fields as follows:
+
+   - **Variable name**: The name of the variable in the flow.
+   - **Data type**: The type of the variable: text, number, boolean, custom object, list or datatable.
+   - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
+   - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
+   - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
+   - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
 
    ![Screenshot of the Add a new input variable dialog.](media\link-pad-flow-portal\add-new-input-var.png)
 
-1. Create an Input variable to pass data from Power Automate web portal to your desktop flow. The variable can be used anywhere in the desktop flow.
+1. Create an input variable to pass data from Power Automate web portal to your desktop flow. The variable can be used anywhere in the desktop flow.
 
 1. To pass data from your desktop flow to Power Automate web portal, create an Output variable.
 
