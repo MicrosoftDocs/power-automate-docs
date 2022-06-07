@@ -134,7 +134,7 @@ To update an input/output variable:
 
     ![Screenshot of the Edit option for input/output variables.](media\renaming-variables\rename-input-variable.png)
 
-2. In the **Edit variable** dialog, update the desired fields and select **Update** to apply the changes.
+2. In the **Edit input/output variable** dialog, update the desired fields and select **Save** to apply the changes.
 
     ![Screenshot of the Edit variable dialog box.](media\renaming-variables\edit-variable-dialog.png)
 
