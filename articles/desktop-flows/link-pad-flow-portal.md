@@ -81,7 +81,7 @@ search.audienceType:
    - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
    - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
    - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
-   - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
+   - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](manage-variables.md#sensitive-variables).
 
    ![Screenshot of the Add a new input variable dialog.](media\link-pad-flow-portal\add-new-input-var.png)
 
