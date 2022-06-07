@@ -73,9 +73,8 @@ To create an input variable:
 
 1. When the **Add a new input variable** dialog is appeared, populate the following fields:
 
-    - **Variable type**: Defines if the variable is input or output.
     - **Variable name**: The name of the variable in the flow.
-    - **Data type**: The type of the variable, text.
+    - **Data type**: The type of the variable: text, number, boolean, custom object, list or datatable.
     - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
@@ -89,9 +88,13 @@ To create an input variable:
 
      ![Screenshot of the Add a new input variable dialog box.](media\input-output-variables\Add-new-input-variable-dialog.png)
 
-If you run a flow containing input variables through the console, the **Flow inputs** dialog will prompt you to set their values manually. You can find more information about running flows in [Run attended and unattended desktop flows](run-pad-flow.md). 
+When creating a custom object, list, or datatable input variable, Power Automate lets you construct a default value through a visual editor or a JSON editor.
 
-   ![Screenshot of the Flow inputs dialog.](media\input-output-variables\flow-input-dialog.png)
+![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
+
+If you run a flow containing input variables through the console, the **Flow inputs** dialog will prompt you to set their values manually. For custom objects, lists, or datatables, the dialog allow you to create the variables using a visual or JSON editor. You can find more information about running flows in [Run attended and unattended desktop flows](run-pad-flow.md). 
+
+![Screenshot of the Flow inputs dialog.](media\input-output-variables\flow-input-dialog.png)
 
 ### Create an output variable
 
@@ -103,8 +106,8 @@ To create an output variable:
 
 1. When the **Add a new output variable** dialog is appeared, populate the following fields:
 
-    - **Variable type**: Defines if the variable is input or output.
     - **Variable name**: The name of the variable in the flow.
+    - **Data type**: The type of the variable: text, number, boolean, custom object, list or datatable.
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
@@ -116,6 +119,8 @@ To create an output variable:
     > If you choose an existing flow variable name for a new output variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
 
     ![Screenshot of the Add a new output variable dialog box.](media\input-output-variables\Add-new-output-variable-dialog.png)
+
+When creating a custom object, list, or datatable input variable, Power Automate lets you construct a default value through a visual builder or a JSON editor.
 
 ### Manage input and output variables
 
