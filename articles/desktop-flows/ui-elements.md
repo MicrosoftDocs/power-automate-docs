@@ -61,13 +61,24 @@ When the browser extension isn't able to communicate with Power Automate, the br
 
 ## UI elements properties
 
-To manage a UI element’s selectors, right-click on the element and select **Edit**. This option brings up the selector builder, where the selector can be edited with a visual editor.
+All UI elements consist of one or more selectors that pinpoint the UI or web component that Power Automate interacts with.
+
+>[!NOTE]
+> Users can create multiple selectors for a UI element. Whenever a selector fails, Power Automate uses the following selector in order.
+
+To manage the selectors of a UI element, right-click on it and select **Edit**. This option brings up the selector builder, where you can edit the selectors with a visual editor or a text editor.
+
+Each selector consists of multiple elements representing the hierarchical structure of the UI element in the application or web page. The attributes describe each element uniquely and distinguish it from other elements.
 
 ![Screenshot of the visual selector builder.](./media/ui-elements/visual-selector-editor.png)
 
-To manually enter the selector’s value, enable the **Text editor** toggle button, and the text value of the selector will become editable. You can find more information about selectors in [Build a custom selector](build-custom-selectors.md).
+All selectors are displayed with a default friendly name that makes them easily accessible. To rename a selector, right-click on its name and select **Rename**. 
 
-![Screenshot of a selector's text editor.](./media/ui-elements/manual-selector-editor.png)
+When you edit a UI element with multiple selectors, you are able to disable a selector by right-clicking on it and selecting **Disable**. This functionality can be helpful during testing.
+
+![Screenshot of the rename and disable options for a selector.](./media/ui-elements/rename-disable-selector.png)
+
+You can find more information regarding selectors and how to build them manually in [Build a custom selector](build-custom-selectors.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
