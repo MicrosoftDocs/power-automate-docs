@@ -53,7 +53,7 @@ User comment
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Comment|Yes|Text value||User comment|
+|Comment|Yes|[Text value](../variable-data-types.md#text-value)||User comment|
 
 
 ##### Variables Produced
@@ -91,12 +91,12 @@ Retrieves the last error that occured in the flow
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Clear error|N/A|Boolean value|False|After the error is stored in the variable, it's cleared so that next time the error is retrieved, it won't retrieve the same error value|
+|Clear error|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|After the error is stored in the variable, it's cleared so that next time the error is retrieved, it won't retrieve the same error value|
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|LastError|Error|The details of the error that last occured in the flow|
+|LastError|[Error](../variable-data-types.md#error)|The details of the error that last occured in the flow|
 
 ##### <a name="getlasterror_onerror"></a> Exceptions
 - This action doesn't include any exceptions
@@ -107,7 +107,7 @@ Transfers the flow of execution to another point, indicated by a label
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Go to label|No|Text value||Label in the flow|
+|Go to label|No|[Text value](../variable-data-types.md#text-value)||Label in the flow|
 
 
 ##### Variables Produced
@@ -121,7 +121,7 @@ Acts as the destination of a 'go to' statement
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Label name|No|Text value||Label in the program|
+|Label name|No|[Text value](../variable-data-types.md#text-value)||Label in the program|
 
 
 ##### Variables Produced
@@ -135,8 +135,8 @@ Marks the beginning of a block to handle actions errors
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Name|No|Text value||The name of the Exception Block for Visual purposes only.|
-|Capture unexpected logic errors|N/A|Boolean value|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, diving a number by zero or trying to access an item from an out of bounds position.|
+|Name|No|[Text value](../variable-data-types.md#text-value)||The name of the Exception Block for Visual purposes only.|
+|Capture unexpected logic errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, diving a number by zero or trying to access an item from an out of bounds position.|
 
 
 ##### Variables Produced
@@ -151,7 +151,7 @@ Run a subflow specifying any required arguments
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Subflow name|No|Subflow||The name of the subflow to call|
+|Subflow name|No|[Subflow](../designer-workspace.md#setting-up-subflows)||The name of the subflow to call|
 
 
 ##### Variables Produced
@@ -166,7 +166,7 @@ Terminates the flow
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |End flow|No|Successfully, With error message|Successfully|Terminate the execution of the flow, either successfully or with an error|
-|Error message|No|Text value||The error message to return to the flow caller upon exit|
+|Error message|No|[Text value](../variable-data-types.md#text-value)||The error message to return to the flow caller upon exit|
 
 ##### Variables Produced
 - This action doesn't produce any variables
@@ -180,7 +180,7 @@ Suspends the execution of the flow for a specified amount of seconds
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Duration|No|Numeric value||Time duration in seconds|
+|Duration|No|[Numeric value](../variable-data-types.md#numeric-value)||Time duration in seconds|
 
 
 ##### Variables Produced
