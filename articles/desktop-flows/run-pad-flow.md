@@ -213,7 +213,7 @@ Some of your desktop flows might run for long durations, for example more than 2
 
 Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using external links.
 
-You can use the external links in browsers, the Run application, and the Command Prompt to trigger specified flows. If a triggered flow requires input variables, the console will ask users to populate the appropriate values.
+You can use the external links in browsers, the Run application, and the Command Prompt to trigger specified flows. If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
 
 By default, Power Automate always prompts you to confirm the triggering of a desktop flow through an external link. To disable this functionality, navigate to the console settings and disable the option **Prompt me before running flows triggered by URL**.
 
@@ -248,7 +248,7 @@ To generate an external link that triggers a desktop flow, use one of the follow
 >[!Important]
 > If a flow is already running, it won't run again when the external link attempts to trigger it.
 
-The first two formats don't define a specific environment, so Power Automate automatically uses the currently selected console environment. The command will be neglected if both a flow ID and a flow name aren't specified.
+The first two formats don't define a specific environment, so Power Automate automatically uses the currently selected console environment. The command will be neglected if both flow ID and flow name aren't specified.
 
 If the console is set to another environment than the one specified in the link, the console environment will automatically change.
 
