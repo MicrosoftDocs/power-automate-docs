@@ -77,7 +77,7 @@ search.audienceType:
 1. To create an input or output variable, the **New input/output variable** dialog requires filling in the fields as follows:
 
    - **Variable name**: The name of the variable in the flow.
-   - **Data type**: The type of the variable: text, number, boolean, custom object, list or datatable.
+   - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
    - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
    - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
    - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.

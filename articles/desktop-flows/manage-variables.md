@@ -74,7 +74,7 @@ To create an input variable:
 1. When the **New input variable** dialog is appeared, populate the following fields:
 
     - **Variable name**: The name of the variable in the flow.
-    - **Data type**: The type of the variable: text, number, boolean, custom object, list or datatable.
+    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
     - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console. When creating a custom object, list, or datatable input variable, Power Automate allows you to construct the default value through a visual editor or a JSON editor.
         ![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
@@ -104,7 +104,7 @@ To create an output variable:
 1. When the **New output variable** dialog is appeared, populate the following fields:
 
     - **Variable name**: The name of the variable in the flow.
-    - **Data type**: The type of the variable: text, number, boolean, custom object, list or datatable.
+    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
     - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
     - **Description**: A description of the variable that will appear in Power Automate.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
