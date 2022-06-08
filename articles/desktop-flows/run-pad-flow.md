@@ -215,6 +215,53 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
  - [Use the on-premises data gateway app](../gateway-manage.md) documentation.
  - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
+## Run desktop flows using external links
+
+Apart from triggering flows through the console, the flow designer, and cloud flows, Power Automate enables you to run desktop flows using external links.
+
+You can use the external links in browsers, the **Run** application, and the Command Prompt to trigger specified flows. If a triggered flow requires input variables, the console will ask users to populate the appropriate values.
+
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow through an external link. To disable this functionality, navigate to the console settings and disable the option **Prompt me before running flows triggered by URL**.
+
+## Prerequisites 
+
+- Power Automate for desktop needs to be installed on the machine. 
+- The user must be signed in.
+- The user needs a trial or paid organization subscription or a pay-as-you-go environment.
+
+## Create an external link
+
+To generate an external link that triggers a desktop flow, use one of the following formats:
+
+```"ms-powerautomate:/console/flow/run?workflowName=[workflowName]"```
+
+```"ms-powerautomate:/console/flow/run?workflowId=[workflowId]"```
+ 
+```"ms-powerautomate:/console/flow/run?environmentId=[environmentId]&workflowId=[workflowId]"``` 
+
+```" ms-powerautomate:/console/flow/run?environmentId=[environmentId]&workflowName=[workflowIName]"``` 
+
+>[!Important]
+> If a flow is already running, it won't run when the external link attempts to trigger it. The command will be neglected if neither a flow ID nor a flow name is specified.
+
+The first two formats don't define a specific environment, so Power Automate automatically uses the currently selected console environment.
+
+If the console is set to another environment than the one specified in the link, the console environment will automatically change.
+
+## Find environment and desktop flow IDs
+
+To find the ID of an environment, navigate to the [Power Automate portal](https://flow.microsoft.com/) and select the desired environment. Then, navigate to the **My flows** tab and copy the environment ID from the address line. 
+
+To find the ID of a desktop flow, navigate to the **My flows** tab of the [Power Automate portal](https://flow.microsoft.com/), select the desired flow, and copy its ID from the address line. 
+
+## Use an external link in the Command Prompt 
+
+To trigger a flow using the Command prompt, use a command with the following syntax:
+
+You can replace the second part of the command with any of the previously presented external link formats.
+
+```"C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe" "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"```   
+
 ## Runtime notifications
 
 Power Automate provides two different types of notifications while running a desktop flow, depending on the user's preferences. 
