@@ -24,6 +24,8 @@ To install the Java configuration manually, after Power Automate for desktop has
 
 Logs for Java automation with Power Automate for desktop can be found in the **%temp%/ java_automation_log** folder (e.g. **C:\Users\username\AppData\Local\Temp\java_automation_log**). 
 
+Το prevent the [recorder](../recording-flow.md) and the [UI element picker](../ui-elements.md) from recognizing SWT elements (Java elements) and make it work with UI Elements (simple desktop UI elements), edit the configuration file **Power Automate Desktop\Microsoft.Flow.RPA.Desktop.UIAutomation.Plugin.Java.dll.config** and set the **BlockSwt** property to **true**. 
+
 ## Uninstalling Java configuration
 
 To uninstall the Java configuration (revert all changes applied to the machine by the Java installer): 
