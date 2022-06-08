@@ -56,7 +56,7 @@ Check out how some companies implemented Microsoft Power Platform solutions usin
   * [Insurance](https://customers.microsoft.com/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
   * [Healthcare](https://customers.microsoft.com/story/vnshs-health-provider-microsoft-flow) 
 
-Find [examples from your industry](https://customers.microsoft.com/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
+Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
 
 
 The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
