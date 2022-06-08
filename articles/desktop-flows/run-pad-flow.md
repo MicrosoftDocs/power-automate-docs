@@ -209,17 +209,11 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 
    - Restart the service on your device.
 
-## Learn more
-
- - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
- - [Use the on-premises data gateway app](../gateway-manage.md) documentation.
- - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
-
 ## Run desktop flows using external links
 
 Apart from triggering flows through the console, the flow designer, and cloud flows, Power Automate enables you to run desktop flows using external links.
 
-You can use the external links in browsers, the **Run** application, and the Command Prompt to trigger specified flows. If a triggered flow requires input variables, the console will ask users to populate the appropriate values.
+You can use the external links in browsers, the Run application, and the Command Prompt to trigger specified flows. If a triggered flow requires input variables, the console will ask users to populate the appropriate values.
 
 By default, Power Automate always prompts you to confirm the triggering of a desktop flow through an external link. To disable this functionality, navigate to the console settings and disable the option **Prompt me before running flows triggered by URL**.
 
@@ -250,9 +244,9 @@ To generate an external link that triggers a desktop flow, use one of the follow
 ``` 
 
 >[!Important]
-> If a flow is already running, it won't run when the external link attempts to trigger it. The command will be neglected if neither a flow ID nor a flow name is specified.
+> If a flow is already running, it won't run again when the external link attempts to trigger it.
 
-The first two formats don't define a specific environment, so Power Automate automatically uses the currently selected console environment.
+The first two formats don't define a specific environment, so Power Automate automatically uses the currently selected console environment. The command will be neglected if neither a flow ID nor a flow name is specified.
 
 If the console is set to another environment than the one specified in the link, the console environment will automatically change.
 
@@ -266,7 +260,8 @@ To find the ID of a desktop flow, navigate to the **My flows** tab of the [Power
 
 To trigger a flow using the Command prompt, use a command with the following syntax:
 
-You can replace the second part of the command with any of the previously presented external link formats.
+>[!NOTE]
+> You can replace the second part of the command with any of the previously presented external link formats.
 
 ```
 "C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe" "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"
@@ -293,5 +288,11 @@ Instead of displaying separate notifications for each desktop flow, the monitori
 > When Power Automate pop-up dialogs appear, like input variable dialogs or update notifications, users can't interact with the flow monitoring window until they close the displayed dialog.
 
 ![Screenshot of the flow monitoring window.](media\run-pad-flow\flow-monitoring-window.png)
+
+## Learn more
+
+ - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
+ - [Use the on-premises data gateway app](../gateway-manage.md) documentation.
+ - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
