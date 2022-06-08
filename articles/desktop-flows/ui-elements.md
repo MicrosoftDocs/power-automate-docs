@@ -74,7 +74,7 @@ Each selector consists of multiple elements representing the hierarchical struct
 
 All selectors are displayed with a default friendly name that makes them easily accessible. To rename a selector, right-click on its name and select **Rename**. 
 
-When you edit a UI element with multiple selectors, you are able to disable a selector by right-clicking on it and selecting **Disable**. This functionality can be helpful during testing.
+When you edit a UI element with multiple selectors, you're able to disable a selector by right-clicking on it and selecting **Disable**. This functionality can be helpful during testing.
 
 ![Screenshot of the rename and disable options for a selector.](./media/ui-elements/rename-disable-selector.png)
 

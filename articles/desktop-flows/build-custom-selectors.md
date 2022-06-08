@@ -17,13 +17,6 @@ search.audienceType:
 
 # Build a custom selector
 
-Power Automate enables users to interact with web and desktop applications through UI elements. Consider UI elements as application components, such as buttons and text fields.
-
-To specify a UI element, you have to create selectors that pinpoint the specific component you want to interact with.
-
-> [!NOTE]
-> Power Automate supports the creation of multiple selectors for a UI element. If a selector fails to access the element, the following selector is used.
-
 Although Power Automate enables users to create selectors automatically, some particular scenarios need manually created selectors. A common scenario is the automation of applications that display dynamic content.
 
 When a custom selector is needed, you can modify an existing selector or build one from scratch.
@@ -83,20 +76,10 @@ Apart from the **Equal to** and **Contains** operators, Power Automate provides 
 
 ## Use variables in a custom selector
 
-Apart from various operators, Power Automate enables you to create dynamic selectors using variables.
+Apart from various operators, Power Automate enables you to create dynamic selectors using variables. If the value of a selector's attribute depends on calculations and results of previous actions, replace the hard-coded value with a variable.
 
-If the value of a selector's attribute depends on calculations and results of previous actions, replace the hard-coded value with a variable.
-
-To use a variable in a selector, launch the **Text editor** and populate manually the variable's name enclosed by percentage signs (**%**) or use the **Select variable** button. You can find more information about the percentage notation in [Use variables and the % notation](variable-manipulation.md).
+To use a variable in a selector, populate manually its name enclosed by percentage signs (**%**) or use the variables button. Variables can be used in both visual editor and text editor. You can find more information about the percentage notation in [Use variables and the % notation](variable-manipulation.md).
 
 If you use a variable in the **Name** attribute of the Notepad example, the selector should be **:desktop > window[Name="%WindowName%"][Process="Notepad"]**.
 
 ![Screenshot of a variable in the Notepad selector .](media/build-custom-selectors/variable-notepad-selector.png)
-
-
-
-
-
-
-
-
