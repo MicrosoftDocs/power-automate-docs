@@ -52,7 +52,7 @@ Marks the beginning of a conditional block of actions depending on whether a pro
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If process|N/A|Is running, Isn't running|Is running|State of the process to check|
-|Process name|No|Text value||The name of the process to check|
+|Process name|No|[Text value](../variable-data-types.md#text-value)||The name of the process to check|
 
 
 ##### Variables Produced
@@ -69,7 +69,7 @@ Suspends the execution until a process starts or stops
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Process name|No|Text value||The name of the process to check|
+|Process name|No|[Text value](../variable-data-types.md#text-value)||The name of the process to check|
 |Wait for process to|N/A|Start, Stop|Start|Whether to wait until a certain process starts or stops|
 
 
@@ -91,20 +91,20 @@ Executes an application or opens a document by executing the associated applicat
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Application path|No|File||The executable file as a complete file path|
-|Command line arguments|Yes|Text value||Add extra arguments that would go after the executable file name. For example, enter notepad.exe in the application path and a specific text file in the command line arguments|
-|Working folder|Yes|Folder||The full path of the folder to work out of, if applicable.|
+|Application path|No|[File](../variable-data-types.md#files-and-folders)||The executable file as a complete file path|
+|Command line arguments|Yes|[Text value](../variable-data-types.md#text-value)||Add extra arguments that would go after the executable file name. For example, enter notepad.exe in the application path and a specific text file in the command line arguments|
+|Working folder|Yes|[Folder](../variable-data-types.md#files-and-folders)||The full path of the folder to work out of, if applicable.|
 |Window style|N/A|Normal, Hidden, Minimized, Maximized|Normal|Choose the appearance and size of the application window when it opens|
 |After application launch|N/A|Continue immediately, Wait for application to load, Wait for application to complete|Continue immediately|Whether the next action execute immediately, or wait until the program loads or completes|
-|Timeout|Yes|Numeric value|0|The maximum wait time, and how long before forcing a continue|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The maximum wait time, and how long before forcing a continue|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|AppProcessId|Numeric value|The process ID output|
-|AppExitCode|Numeric value|The application exit code|
-|WindowHandle|Numeric value|The window handle. When opening a new window, this will catch the value of the window handle, and store it in this variable. A window handle is useful to specifically identify a window in a later action|
+|AppProcessId|[Numeric value](../variable-data-types.md#numeric-value)|The process ID output|
+|AppExitCode|[Numeric value](../variable-data-types.md#numeric-value)|The application exit code|
+|WindowHandle|[Numeric value](../variable-data-types.md#numeric-value)|The window handle. When opening a new window, this will catch the value of the window handle, and store it in this variable. A window handle is useful to specifically identify a window in a later action|
 
 
 ##### <a name="runapplicationbase_onerror"></a> Exceptions
@@ -131,8 +131,8 @@ Immediately stops a running process
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Specify process by|N/A|Process ID, Process name|Process name|Specify whether the process to terminate will be specified by its name, or by its ID|
-|Process ID|No|Numeric value||The ID of the process to terminate|
-|Process name|No|Text value||The name of the process to terminate. If more than one processes with the same name are running, all of them will be terminated|
+|Process ID|No|[Numeric value](../variable-data-types.md#numeric-value)||The ID of the process to terminate|
+|Process name|No|[Text value](../variable-data-types.md#text-value)||The name of the process to terminate. If more than one processes with the same name are running, all of them will be terminated|
 
 
 ##### Variables Produced
@@ -150,15 +150,15 @@ Sends a message to determine whether a remote computer is accessible over the ne
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Host name|No|Text value||The name of the remote computer or an IP address|
-|Timeout|Yes|Numeric value|5000|The maximum number of milliseconds to wait for the Ping reply message|
+|Host name|No|[Text value](../variable-data-types.md#text-value)||The name of the remote computer or an IP address|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|5000|The maximum number of milliseconds to wait for the Ping reply message|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|PingResult|Text value|The status of the ping message (success or failure)|
-|RoundTripTime|Numeric value|The number of milliseconds taken for the Ping to complete|
+|PingResult|[Text value](../variable-data-types.md#text-value)|The status of the ping message (success or failure)|
+|RoundTripTime|[Numeric value](../variable-data-types.md#numeric-value)|The number of milliseconds taken for the Ping to complete|
 
 
 ##### <a name="ping_onerror"></a> Exceptions
@@ -172,8 +172,8 @@ Sets an environment variable to a given value
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Environment variable name|No|Text value||The name of the environment variable|
-|New environment variable value|No|Text value||The value that is set to the environment variable|
+|Environment variable name|No|[Text value](../variable-data-types.md#text-value)||The name of the environment variable|
+|New environment variable value|No|[Text value](../variable-data-types.md#text-value)||The value that is set to the environment variable|
 |Type|N/A|User, System|User|The type of the environment variable|
 
 
@@ -192,15 +192,15 @@ Retrieves the value of an environment variable
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Environment variable name|No|Text value||The name of the environment variable whose value will be retrieved|
-|Search for variable only in scope|N/A|Boolean value|False|Specify whether to search for the variable only in a specific scope|
+|Environment variable name|No|[Text value](../variable-data-types.md#text-value)||The name of the environment variable whose value will be retrieved|
+|Search for variable only in scope|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to search for the variable only in a specific scope|
 |Scope|N/A|User, System|User|The scope from which the environment variable should be retrieved|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|EnvironmentVariableValue|Text value|The environment variable's value|
+|EnvironmentVariableValue|[Text value](../variable-data-types.md#text-value)|The environment variable's value|
 
 
 ##### <a name="getenvironmentvariable_onerror"></a> Exceptions
@@ -215,7 +215,7 @@ Deletes an environment variable from a given scope
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Environment variable name|No|Text value||The name of the environment variable to delete|
+|Environment variable name|No|[Text value](../variable-data-types.md#text-value)||The name of the environment variable to delete|
 |Type|N/A|User, System|User|The type of the environment variable to delete|
 
 

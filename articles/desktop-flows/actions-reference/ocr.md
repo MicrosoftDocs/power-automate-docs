@@ -68,28 +68,28 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |-----|-----|-----|-----|-----|
 |If text|N/A|Exists, Doesn't exist|Exists|Specifies whether to check if the text exists or not on the given source to analyze|
 |OCR engine type|No|Windows OCR engine, Tesseract engine, OCR engine variable|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
-|OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
-|Text to find|No|Text value||The text to search for in the specified source|
-|Is regular expression|N/A|Boolean value|False|Specifies whether to use a regular expression to find the specified text|
+|OCR engine variable|No|[OCREngineObject](../variable-data-types.md#ocr)||The engine to use for the OCR operation|
+|Text to find|No|[Text value](../variable-data-types.md#text-value)||The text to search for in the specified source|
+|Is regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a regular expression to find the specified text|
 |Search for text on|N/A|Entire screen, Foreground window|Entire screen|Specifies whether to search for the specified text on the entine visible screen or just the foreground window|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Specifies whether to scan the entire screen (or window) or a narrowed down subregion of it|
-|Image(s)|No|List of Image||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
-|X1|Yes|Numeric value||The start X coordinate of the subregion to scan for the supplied text|
-|Tolerance|Yes|Numeric value|10|Specifies how much the image(s) searched for can differ from the originally chosen image|
-|Y1|Yes|Numeric value||The start Y coordinate of the subregion to scan for the supplied text|
-|X1|Yes|Numeric value||The start X coordinate of the subregion relative to the specified image to scan for the supplied text|
-|X2|Yes|Numeric value||The end X coordinate of the subregion to scan for the supplied text|
-|Y1|Yes|Numeric value||The start Y coordinate of the subregion relative to the specified image to scan for the supplied text|
-|Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
-|X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
-|Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Image(s)|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
+|X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion to scan for the supplied text|
+|Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specifies how much the image(s) searched for can differ from the originally chosen image|
+|Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion to scan for the supplied text|
+|X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion to scan for the supplied text|
+|Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end Y coordinate of the subregion to scan for the supplied text|
+|X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
-|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Use other language|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a language not given in the 'Tesseract language' field|
 |Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
-|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
-|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
-|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
-|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
+|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|[Text value](../variable-data-types.md#text-value)||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The width multiplier of the image|
+|Image height multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The height multiplier of the image|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 
 > [!NOTE]
@@ -100,8 +100,8 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|LocationOfTextFoundX|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
-|LocationOfTextFoundY|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
+|LocationOfTextFoundX|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
+|LocationOfTextFoundY|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
 
 
 ##### <a name="iftextonscreenaction_onerror"></a> Exceptions
@@ -124,30 +124,30 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |-----|-----|-----|-----|-----|
 |Wait for text to|N/A|Appear, Disappear|Appear|Specifies whether to wait for the text to appear or disappear|
 |OCR engine type|No|Windows OCR engine, Tesseract engine, OCR engine variable|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
-|OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
-|Text to find|No|Text value||The text to search for in the specified source|
-|Is regular expression|N/A|Boolean value|False|Specifies whether to use a regular expression to find the specified text|
+|OCR engine variable|No|[OCREngineObject](../variable-data-types.md#ocr)||The engine to use for the OCR operation|
+|Text to find|No|[Text value](../variable-data-types.md#text-value)||The text to search for in the specified source|
+|Is regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a regular expression to find the specified text|
 |Search for text on|N/A|Entire screen, Foreground window|Entire screen|Specifies whether to search for the specified text on the entine visible screen or just the foreground window|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Specifies whether to scan the entire screen (or window) or a narrowed down subregion of it|
-|Image(s)|No|List of Image||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
-|X1|Yes|Numeric value||The start X coordinate of the subregion to scan for the supplied text|
-|Tolerance|Yes|Numeric value|10|Specifies how much the image(s) searched for can differ from the originally chosen image|
-|Y1|Yes|Numeric value||The start Y coordinate of the subregion to scan for the supplied text|
-|X1|Yes|Numeric value||The start X coordinate of the subregion relative to the specified image to scan for the supplied text|
-|X2|Yes|Numeric value||The end X coordinate of the subregion to scan for the supplied text|
-|Y1|Yes|Numeric value||The start Y coordinate of the subregion relative to the specified image to scan for the supplied text|
-|Y2|Yes|Numeric value||The end Y coordinate of the subregion to scan for the supplied text|
-|X2|Yes|Numeric value||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
-|Y2|Yes|Numeric value||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Image(s)|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
+|X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion to scan for the supplied text|
+|Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specifies how much the image(s) searched for can differ from the originally chosen image|
+|Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion to scan for the supplied text|
+|X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion to scan for the supplied text|
+|Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end Y coordinate of the subregion to scan for the supplied text|
+|X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
+|Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
-|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Use other language|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a language not given in the 'Tesseract language' field|
 |Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
-|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
-|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
-|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
-|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
+|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|[Text value](../variable-data-types.md#text-value)||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The width multiplier of the image|
+|Image height multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The height multiplier of the image|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
-|Fail with timeout error|N/A|Boolean value|False|Specify whether you want the action to wait indefinitely or fail after a set time period|
+|Fail with timeout error|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether you want the action to wait indefinitely or fail after a set time period|
 
 > [!NOTE]
 > - Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
@@ -157,8 +157,8 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|LocationOfTextFoundX|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
-|LocationOfTextFoundY|Numeric value|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
+|LocationOfTextFoundX|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
+|LocationOfTextFoundY|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
 
 
 ##### <a name="waittextonscreenaction_onerror"></a> Exceptions
@@ -251,25 +251,25 @@ Extract text from a given source using the given OCR engine
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |OCR engine|No|Windows OCR engine, Tesseract engine, OCR engine variable|OCR engine variable|The OCR engine type to use. Select a preconfigured OCR engine or set up a new one|
-|OCR engine variable|No|OCREngineObject||The engine to use for the OCR operation|
+|OCR engine variable|No|[OCREngineObject](../variable-data-types.md#ocr)||The engine to use for the OCR operation|
 |OCR source|N/A|Screen, Foreground window, Image on disk|Screen|The source of the image to perform the OCR operation on|
-|Image file path|No|File||The path of the image to perform the OCR operation on|
+|Image file path|No|[File](../variable-data-types.md#files-and-folders)||The path of the image to perform the OCR operation on|
 |Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|The selected mode for the OCR operation|
-|Image|No|List of Image||The image to use for narrowing down the scan to a subregion that is relative to the specified image|
-|Tolerance|Yes|Numeric value|10|Specifies how much the image can differ from the originally chosen image|
-|X1|Yes|Numeric value||The start X coordinate of the subregion to narrow down the scan|
-|X2|Yes|Numeric value||The end X coordinate of the subregion to narrow down the scan|
-|Y1|Yes|Numeric value||The start Y coordinate of the subregion to narrow down the scan|
-|Y2|Yes|Numeric value||The end Y coordinate of the subregion to narrow down the scan|
+|Image|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image to use for narrowing down the scan to a subregion that is relative to the specified image|
+|Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specifies how much the image can differ from the originally chosen image|
+|X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion to narrow down the scan|
+|X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion to narrow down the scan|
+|Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion to narrow down the scan|
+|Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end Y coordinate of the subregion to narrow down the scan|
 |Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
-|Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the 'Tesseract language' field|
+|Use other language|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a language not given in the 'Tesseract language' field|
 |Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
-|Language abbreviation|No|Text value||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
-|Language data path|No|Text value||The path of the folder that holds the specified language's Tesseract data|
-|Image width multiplier|No|Numeric value|1|The width multiplier of the image|
-|Image height multiplier|No|Numeric value|1|The height multiplier of the image|
-|Wait for image to appear|N/A|Boolean value|True|Specifies whether to wait or not for the image to appear on the screen or foreground window|
-|Timeout|No|Numeric value|5|Specifies the time to wait for the operation to complete before the action fails|
+|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language data path|No|[Text value](../variable-data-types.md#text-value)||The path of the folder that holds the specified language's Tesseract data|
+|Image width multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The width multiplier of the image|
+|Image height multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The height multiplier of the image|
+|Wait for image to appear|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to wait or not for the image to appear on the screen or foreground window|
+|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|5|Specifies the time to wait for the operation to complete before the action fails|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 
 
@@ -279,7 +279,7 @@ Extract text from a given source using the given OCR engine
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|OcrText|Text value|The result after the text extraction|
+|OcrText|[Text value](../variable-data-types.md#text-value)|The result after the text extraction|
 
 
 ##### <a name="extracttextwithocr_onerror"></a> Exceptions

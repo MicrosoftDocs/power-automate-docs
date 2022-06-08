@@ -46,24 +46,24 @@ Retrieves a password for a specific application from CyberArk
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Server address|No|Text value||The base URI for the web request|
-|Application ID|No|Text value||The application ID to use for the web request|
-|Safe|No|Text value||The safe on CyberArk in which the application belongs|
-|Folder|No|Text value||The folder necessary for the web request query|
-|Object|No|Text value||The object necessary for the web request query|
-|Extra data|Yes|Text value||The extra data (if any) for the web request's query|
-|Accept untrusted certificates|N/A|Boolean value|False|Specifies whether to accept untrusted certificates|
+|Server address|No|[Text value](../variable-data-types.md#text-value)||The base URI for the web request|
+|Application ID|No|[Text value](../variable-data-types.md#text-value)||The application ID to use for the web request|
+|Safe|No|[Text value](../variable-data-types.md#text-value)||The safe on CyberArk in which the application belongs|
+|Folder|No|[Text value](../variable-data-types.md#text-value)||The folder necessary for the web request query|
+|Object|No|[Text value](../variable-data-types.md#text-value)||The object necessary for the web request query|
+|Extra data|Yes|[Text value](../variable-data-types.md#text-value)||The extra data (if any) for the web request's query|
+|Accept untrusted certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to accept untrusted certificates|
 |Certificate location|N/A|Don't use certificate, Load certificate from Windows Store, Load certificate from file|Don't use certificate|Specifies how to load (if needed) the certificate for the request|
-|Use only valid certificates|N/A|Boolean value|False|Specifies whether to load only valid certificates from the store|
-|Store certificate path|No|Text value||The path of the certificate in the certificate store|
-|Certificates path|No|File||The path of the certificate selected from the store|
-|Certificate password|No|Encrypted value||The password for the certificate file|
-|Timeout|Yes|Numeric value|30|The waiting time (in seconds) to get results from CyberArk|
+|Use only valid certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to load only valid certificates from the store|
+|Store certificate path|No|[Text value](../variable-data-types.md#text-value)||The path of the certificate in the certificate store|
+|Certificates path|No|[File](../variable-data-types.md#files-and-folders)||The path of the certificate selected from the store|
+|Certificate password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the certificate file|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The waiting time (in seconds) to get results from CyberArk|
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JSONResponse|Custom object|The API response result|
+|JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response result|
 |CyberArkPassword|Encrypted value|The password retrieved from CyberArk|
 
 ##### <a name="getpasswordbase_onerror"></a> Exceptions

@@ -9,13 +9,12 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/02/2021
+ms.date: 05/12/2022
 search.app: 
   - Flow
 search.audienceType: 
@@ -30,7 +29,6 @@ A good way to get started is to use a template that is suited to your organizati
 The following video gives insights into using templates to create your flows.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKZQv]
-
 
 You can tweak templates by adding, editing, or removing triggers and actions to create your own flows. You can [copy paste actions](/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the your tweaks.
 

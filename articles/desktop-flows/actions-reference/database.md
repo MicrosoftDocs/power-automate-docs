@@ -57,13 +57,13 @@ Open a new connection to a database
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Connection string|No|Text value||The connection string to use to connect to the database|
+|Connection string|No|[Text value](../variable-data-types.md#text-value)||The connection string to use to connect to the database|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|SQLConnection|SQL connection|A handle for the new SQL connection|
+|SQLConnection|[SQL connection](../variable-data-types.md#connections)|A handle for the new SQL connection|
 
 
 ##### <a name="connect_onerror"></a> Exceptions
@@ -78,17 +78,17 @@ Connect to a database and execute a SQL statement
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Get connection by|N/A|Connection string, SQL connection variable|SQL connection variable|Specifies whether to create a new connection from a given connection string or select an already open connection|
-|SQL connection|No|SQL connection||The handle for the new SQL connection|
-|Connection string|No|Text value||The connection string to use to connect to the database|
-|SQL statement|No|Text value||The SQL statement to execute to the database|
-|Timeout|Yes|Numeric value|30|The maximum amount of time to wait for a result from the database|
+|Get connection by|N/A|Connection string, [SQL connection variable]|SQL connection variable|Specifies whether to create a new connection from a given connection string or select an already open connection|
+|SQL connection|No|[SQL connection](../variable-data-types.md#connections)||The handle for the new SQL connection|
+|Connection string|No|[Text value](../variable-data-types.md#text-value)||The connection string to use to connect to the database|
+|SQL statement|No|[Text value](../variable-data-types.md#text-value)||The SQL statement to execute to the database|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The maximum amount of time to wait for a result from the database|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|QueryResult|Datatable|The result from the database in the form of a data table, with rows and columns|
+|QueryResult|[Datatable](../variable-data-types.md#datatable)|The result from the database in the form of a data table, with rows and columns|
 
 ##### <a name="executesqlstatement_onerror"></a> Exceptions
 |Exception|Description|
@@ -103,7 +103,7 @@ Close an open connection to a database
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|SQL connection|No|SQL connection||The handle for the new SQL connection|
+|SQL connection|No|[SQL connection](../variable-data-types.md#connections)||The handle for the new SQL connection|
 
 
 ##### Variables Produced
