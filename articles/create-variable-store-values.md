@@ -1,5 +1,5 @@
 ---
-title: Store and manage values in variables in Power Automate
+title: Store and manage values in variables in Power Automate | Microsoft Docs
 description: Learn how to store, manage, use, and pass values by using variables in your flows
 sservices: ''
 suite: flow
