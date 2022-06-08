@@ -2,10 +2,10 @@
 title: Restore deleted flows with PowerShell in Power Automate | Microsoft Docs
 description: Learn how to restore deleted flows with PowerShell in Power Automate.
 author: msftman
-manager: kVivek
+manager: tapanm-MSFT
 ms.subservice: cloud-flow
-ms.topic: article
-ms.date: 05/16/2022
+ms.topic: conceptual
+ms.date: 06/08/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -30,9 +30,10 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
 ## Restore deleted flow
 
-1. Open PowerShell with elevated priviliges to begin.
+1. Open PowerShell with elevated privileges to begin.
 
-   ![A screenshot that shows PowerShell being launched from Windows](./media/restore-deleted-flow/open-powershell-script.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot that shows PowerShell being launched from Windows.](./media/restore-deleted-flow/open-powershell-script.png "Windows PowerShell option")
 
 1. Install the [PowerShell cmdlets for PowerApps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
 
@@ -40,9 +41,9 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
    Use this command to authenticate to an environment. This command opens a separate window that prompts for your Azure Active Directory (AAD) authentication details.
 
-   ``` PowerShell
+    ``` PowerShell
     Add-PowerAppsAccount
-   ```
+    ```
 
 1. Provide the credentials you want to use to connect to your environment.
 
@@ -56,8 +57,8 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
    >[!TIP]
    >Navigate to the URL of any of the flows in your environment to get your environment name (flow.microsoft.com/Environments/<**EnvironmentName**>/Flows) which is required for subsequent steps. Don't omit the prefixed words in the URL for example, Default-8ae09283902-.... 
 
-
-   ![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png "Get-AdminFlow output")
 
 1. Optionally, you can filter the list of flows if you know part of the name of the deleted flow whose flowID you want to find. To do this, use a script similar to this one that finds all flows(including those that were soft-deleted) in environment 3c2f7648-ad60-4871-91cb-b77d7ef3c239 that contain the string "Testing" in their display name.
 
@@ -66,7 +67,6 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
    ```
 
 1. Make a note of the flowID of the flow you want to restore from the previous step.
-
 
 1. Run the following script to restore the soft-deleted flow with flowID 4d1f7648-ad60-4871-91cb-b77d7ef3c239 in an environment named Default-55abc7e5-2812-4d73-9d2f-8d9017f8c877.
 
