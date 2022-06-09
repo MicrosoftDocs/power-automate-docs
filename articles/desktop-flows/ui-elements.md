@@ -78,7 +78,7 @@ When you edit a UI element with multiple selectors, you're able to disable a sel
 
 ![Screenshot of the rename and disable options for a selector.](./media/ui-elements/rename-disable-selector.png)
 
-After editing the selectors, press **Save** to apply the implemented changes. Saving applies the changes of all the selectors in a single step.
+After editing the selectors, press **Save** to apply the implemented changes. Saving applies the changes in all the selectors in a single step.
 
 You can find more information regarding selectors and how to build them manually in [Build a custom selector](build-custom-selectors.md).
 
