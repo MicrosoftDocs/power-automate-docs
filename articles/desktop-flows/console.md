@@ -28,7 +28,7 @@ Power Automate users can run any available desktop flow through the console. To 
 
 ![Screenshot of the status field in the console.](./media/console/start-flow.png)
 
-If the flow contains [input variables](/manage-variables.md#input-and-output-variables), a dialog box prompts the user to provide values for each input variable.
+If the flow contains [input variables](manage-variables.md#input-and-output-variables), a dialog box prompts the user to provide values for each input variable.
 
 ![Screenshot of the Flow inputs dialog.](./media/console/start-flow-inputs.png)
 
