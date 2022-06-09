@@ -54,6 +54,8 @@ Under the **Application** category, select whether Power Automate should launch 
 
 Using the **Monitoring/Notifications** drop-down menu, you can choose whether Power Automate will display integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, refer to [Runtime notifications](run-pad-flow.md#runtime-notifications).
 
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow through an external link. The **Prompt me before running flows triggered by URL** allows you to disable this functionality. You can find more information about external links in [Run desktop flows using external links](run-pad-flow.md#run-desktop-flows-using-external-links).  
+
 To decide whether Microsoft may collect diagnostic data to improve user experience, navigate to the **Data collection** settings tab. 
 
 >[!NOTE]
