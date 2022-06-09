@@ -78,7 +78,7 @@ Apart from the **Equal to** and **Contains** operators, Power Automate provides 
 
 Apart from various operators, Power Automate enables you to create dynamic selectors using variables. If the value of a selector's attribute depends on calculations and results of previous actions, replace the hard-coded value with a variable.
 
-To use a variable in a selector, populate manually its name enclosed by percentage signs (**%**) or use the variables button. Variables can be used in both visual editor and text editor. You can find more information about the percentage notation in [Use variables and the % notation](variable-manipulation.md).
+To use a variable in a selector, populate its name manually enclosed by percentage signs (**%**) or use the variables button. Variables can be used in both the visual and text editor. You can find more information about the percentage notation in [Use variables and the % notation](variable-manipulation.md).
 
 If you use a variable in the **Name** attribute of the Notepad example, the selector should be **:desktop > window[Name="%WindowName%"][Process="Notepad"]**.
 

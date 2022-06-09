@@ -64,9 +64,9 @@ When the browser extension isn't able to communicate with Power Automate, the br
 All UI elements consist of one or more selectors that pinpoint the UI or web component that Power Automate interacts with.
 
 >[!NOTE]
-> Users can create multiple selectors for a UI element. Whenever a selector fails, Power Automate uses the following selector in order.
+> Users can create multiple selectors for a UI element. Whenever a selector fails, Power Automate uses the following selector in the defined order.
 
-To manage the selectors of a UI element, right-click on it and select **Edit**. This option brings up the selector builder, where you can edit the selectors with a visual editor or a text editor.
+To manage the selectors of a UI element, right-click on it and select **Edit**. This option brings up the selector builder, where you can edit the selectors with a visual or a text editor.
 
 Each selector consists of multiple elements representing the hierarchical structure of the UI element in the application or web page. The attributes describe each element uniquely and distinguish it from other elements.
 
