@@ -1,6 +1,6 @@
 ---
-title: Edit solution-aware flows | Microsoft Docs
-description: Learn how to edit flows in solutions.
+title: Edit a solution-aware cloud flow | Microsoft Docs
+description: Learn how to edit solution-aware cloud flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/05/2022
+ms.date: 06/09/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -23,12 +23,14 @@ search.audienceType:
   - enduser
 ---
 
-# Edit a solution-aware flow
+# Edit a solution-aware cloud flow
 
-Follow these steps to edit a solution-aware flow.
+You can edit solution-aware cloud flows via [solutions](#edit-a-solution-aware-cloud-flow-via-solutions) or via [my flows](#edit-a-solution-aware-cloud-flow-via-my-flows).
 
 > [!IMPORTANT]
-> Stop your flow before you begin editing it, or you might lose your changes.
+> Stop your flow before you edit it so that you don't lose your changes.
+
+## Edit a solution-aware cloud flow via Solutions
 
 1. Sign into [Power Automate](https://powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
 1. Select the solution that contains the flow you want to edit.
@@ -43,8 +45,18 @@ Follow these steps to edit a solution-aware flow.
 1. Make your edits in the Power Automate designer, test your changes, and then save your flow.
 1. Turn on your flow if you'd like it to run.
 
+## Edit a solution-aware cloud flow via My flows
+
+1. In [Power Automate](https://powerautomate.com), select **My flows** from the navigation bar on the left side.
+1. Find the flow you want to edit. Cloud flows you own will be in the **Cloud flows** tab and flows you have co-ownership of will be in the **Shared with me** tab.
+1. Select **...** (Commands) for your flow, and then select **Turn off**.
+1. Select **...** (Commands) for your flow, and then select **Edit**.
+1. Make your edits in the Power Automate designer, test your changes, and then save your flow.
+1. Turn on your flow if you'd like it to run.
+
 ## Learn more
 
+* [Manage and edit a cloud flow](/power-automate/get-started-logic-flow#manage-a-cloud-flow)
 * [Create a solution](./overview-solution-flows.md)
 * [Create a cloud flow in a solution](./create-flow-solution.md)
 * [Export a solution](./export-flow-solution.md)
