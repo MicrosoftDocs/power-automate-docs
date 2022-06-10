@@ -321,8 +321,8 @@ Sets or clears the selected option(s) for a drop-down list in a window form
 |-----|-----|-----|-----|-----|
 |Drop-down list|No|[UI element](../ui-elements.md)||The drop-down list whose value to set|
 |Operation|N/A|Clear selected options, Select option(s) by name, Select option(s) by index|Clear selected options|Specify whether you want to select a value by name or by ordinal position (1 2 3 ...) or clear the selected value of the drop-down list|
-|Options indices|No|[Text value](../variable-data-types.md#text-value)||Enter an index or a list of indices to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified will be used.|
-|Options names|No|[Text value](../variable-data-types.md#text-value)||Enter an option or a list of options to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified will be used.|
+|Options indices|No|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)||Enter an index or a list of indices to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified will be used.|
+|Options names|No|[List](../variable-data-types.md#list) of [Text values]||Enter an option or a list of options to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified will be used.|
 |Use regular expressions|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the option names values to interpret as a regular expression|
 
 
