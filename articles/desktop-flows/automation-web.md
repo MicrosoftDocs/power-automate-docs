@@ -35,7 +35,8 @@ By default, browser automation actions don't move the actual mouse on the screen
 
 Browser automation actions can run even when the web browser is minimized, or the target tab isn't the focused tab. This functionality allows you to perform other activities on your computer while a browser automation flow is running. 
 
-If you enable physical interaction in a browser automation action, the browser can't be minimized, and the target tab must be focused.
+> [!IMPORTANT]
+> If you enable physical interaction in a browser automation action, the browser can't be minimized, and the target tab must be focused.
 
 ## Building a browser automation flow
 
@@ -72,10 +73,7 @@ To provide input to a web page, select the appropriate web form filling action d
 
 ## Web data extraction
 
-To extract a piece of data from a web page, use the **Get details of web page** or the **Get details of element on web page** action, depending on whether the data in question concerns the entire web page or an element inside it.
-
-> [!NOTE]
-> You can find more information regarding details extraction from web pages in [Retrieve details from a web page](how-to/retrieve-details-web-page.md).
+To extract a piece of data from a web page, use the **Get details of web page** or the **Get details of element on web page** action, depending on whether the data in question concerns the entire web page or an element inside it. You can find more information regarding details extraction from web pages in [Retrieve details from a web page](how-to/retrieve-details-web-page.md).
 
 ![Screenshot of the Get details of web page action.](.\media\web-automation\get-details-of-web-page-action.png)
 
