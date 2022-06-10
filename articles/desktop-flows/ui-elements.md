@@ -77,6 +77,16 @@ Another method to check the type of a UI element is to review its selectors. Des
 
 ![Screenshot of a selector of a desktop UI element.](./media/ui-elements/ui-element-desktop-selector.png)
 
+### UI elements in browser windows
+
+Browsers as applications (1) should be automated using desktop UI elements. For example, you can use UI automation actions to interact with the address bar or the tabs. 
+
+On the other hand, the loaded web pages (2) inside the browser should be automated using web UI elements and browser automation actions.
+
+When recording desktop flows, the recorder will automatically distinguish the browser application area from the web pages and generate the appropriate UI elements and actions.
+
+![Screenshot of a Microsoft edge window with highlighted the browser application and web page areas.](./media/ui-elements/browser-window.png)
+
 ## UI elements properties
 
 All UI elements consist of one or more selectors that pinpoint the UI or web component that Power Automate interacts with.
