@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/10/2022
+ms.date: 06/10/2022
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -37,11 +37,11 @@ offer prebuilt triggers that you can use to start your flows. Here's a partial l
 
 ## Choose the right trigger
 
-Triggers can be started instantly or manually, on a schedule, or automatically when some other even occurs.
+Triggers can be started instantly or manually, on a schedule, or automatically when an external event (such as when an email arrives) occurs.
 
 ### Triggers for instant/manual flows
 
-If you'd like to run a cloud flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow (button flow). You can trigger these flows manually from any device. 
+If you'd like to run a cloud flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow (button flow). You can trigger these flows manually from any device.
 
 [Learn more about instant flows](./introduction-to-button-flows.md#trigger-an-instant-flow).
 
