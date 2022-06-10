@@ -16,7 +16,7 @@ search.audienceType:
 ---
 # Automate web flows
 
-Power Automate offers several actions under the browser automation group to enable users to interact with web browsers. Browser automation is a special case of UI automation used for interacting with web elements..
+Power Automate offers several actions under the browser automation group to enable users to interact with web browsers. Browser automation is a special case of UI automation used for interacting with web elements.
 
 Four web browsers are currently supported:
 - Microsoft Edge
