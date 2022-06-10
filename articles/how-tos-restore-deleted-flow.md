@@ -28,6 +28,10 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 - You must be an environment admin.
 - There must be an [execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) set on your device to run PowerShell scripts.
 
+## Remarks
+
+After being restored, each flow will be in Disabled state and it must be manually re-enabled.
+
 ## Restore deleted flow
 
 1. Open PowerShell with elevated priviliges to begin.
