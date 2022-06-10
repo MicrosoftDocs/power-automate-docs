@@ -57,6 +57,8 @@ Web UI elements can be captured from web pages and used only in browser automati
 
 Browser automation actions accept exclusively UI elements captured from web pages. Therefore, existing UI elements captured from desktop applications aren't displayed in the UI elements picker of these actions.
 
+To find more information regarding desktop and web automation , refer to [Automate desktop flows](desktop-automation.md) and [Automate web flows](automation-web.md). 
+
 ### UI elements for web pages
 
 To capture a UI element from a webpage, you need to install the appropriate browser extension. You can find more information about the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
