@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/11/2022
+ms.date: 06/09/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -186,11 +186,13 @@ When changes can impact existing flows, the following staged DLP enforcement cha
 1. Hard enforcement - Turn on hard enforcement of DLP violations, so DLP policies are fully enforced on all existing and new flows. The DLP policies will be fully enforced when flows are saved during DLP enforcement background job evaluation.
 
 ## DLP enforcement change list
-A list of DLP enforcement changes and the date the changes were made. 
+Following is a list of DLP enforcement changes and the date the changes were effective. 
 
-| Date | Description | Reason for change | Stage |
-|-|-|-|-|
-|May 2022 | Delegated authorization background job enforcement | Flows that use delegated authorization have DLP policies enforced while the flow is being saved, but not during background job evaluation | Learning |
+| Date | Description | Reason for change | Stage | Soft Enforcement ETA* | Hard Enforcement ETA*
+|-|-|-|-|-|-| 
+|May 2022 | Delegated authorization background job enforcement | Flows that use delegated authorization have DLP policies enforced while the flow is being saved, but not during background job evaluation. | Learning |June 2, 2022|July 28, 2022|
+|May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have type=Request and kind=apiConnection. Many of the affected triggers are instant triggers which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Learning |June 2, 2022|July 28, 2022|
+* *ETA is subject to change and depends on the release schedule. ETA is for the start of the release to production. Release to preview station 1 is approximately 5 days later and release to NAM/US station 5 is approximately 3 weeks later.
 
 ## Known limitations
 [Learn about DLP known issues](/power-platform/admin/dlp-known-issues)
