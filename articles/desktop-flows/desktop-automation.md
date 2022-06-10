@@ -36,9 +36,9 @@ To configure a UI automation action, determine the specific element it will inte
 Existing UI elements are displayed in the UI element pane, while new ones can be added directly through the action's properties or the pane. You can find more information regarding UI elements and their different types in [Automate using UI elements](ui-elements.md).
 
 > [!NOTE]
-> UI automation actions accept exclusively UI elements captured from Windows and desktop applications. Therefore, UI elements captured from web applications through the UI elements pane aren't displayed in the UI automation actions.
+> UI automation actions accept exclusively desktop UI elements. Therefore, UI elements captured from web applications using the UI elements pane aren't displayed in the UI automation actions.
 >
->Users can capture desktop elements from web pages throught the UI element picker of UI automation action. However, the selector will represent a desktop element, not a web element.
+>Users can capture desktop elements from web pages through the UI element picker of UI automation action. However, the selector will represent a desktop element, not a web element.
 
 ![Screenshot of the available UI elemets in the Press button in window action.](./media/ui-automation/adding-new-elements-through-a-ui-action.png)
 
