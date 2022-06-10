@@ -38,7 +38,7 @@ Existing UI elements are displayed in the UI element pane, while new ones can be
 > [!NOTE]
 > UI automation actions accept exclusively desktop UI elements. Therefore, UI elements captured from web applications using the UI elements pane aren't displayed in the UI automation actions.
 >
->Users can capture elements from web pages through the UI element picker of UI automation actions. However, the selector will represent a desktop element, not a web element.
+>Users can capture elements from web pages through the UI element picker of UI automation actions. However, their selector will represent a desktop element, not a web element.
 
 ![Screenshot of the available UI elemets in the Press button in window action.](./media/ui-automation/adding-new-elements-through-a-ui-action.png)
 

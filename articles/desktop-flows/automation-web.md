@@ -16,7 +16,7 @@ search.audienceType:
 ---
 # Automate web flows
 
-Power Automate offers several actions under the browser automation group to enable users to interact with web browsers.
+Power Automate offers several actions under the browser automation group to enable users to interact with web browsers. Browser automation is a special case of UI automation used for interacting with web elements..
 
 Four web browsers are currently supported:
 - Microsoft Edge
@@ -24,12 +24,12 @@ Four web browsers are currently supported:
 - Google Chrome
 - Mozilla Firefox
 
-> [!NOTE]
+> [!IMPORTANT]
 > To interact with browsers, you need to install the appropriate browser extension and configure the browser accordingly. You can find more information regarding the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
 Browser automation is achieved by launching or attaching to one of the supported browsers and then deploying browser automation actions. Development may be performed manually or through the [use of the recorder](recording-flow.md).
 
-Browser automation is a special case of UI automation used for automating web pages. It enables users to interact with web pages and emulate events, such as clicking, using JavaScript scripts.
+The actions of this group enable users to interact with web pages and emulate events, such as clicking, using JavaScript scripts. 
 
 By default, browser automation actions don't move the actual mouse on the screen. However, some actions like the **Click link on web page** and **Populate text field on web page** support physical interactions for cases where JavaScript events don't work as expected.
 
