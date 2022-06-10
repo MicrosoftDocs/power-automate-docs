@@ -22,10 +22,7 @@ Desktop flows utilize UI elements to interact with applications and web pages wi
 
 When deploying a UI automation or browser automation action, you may be required to provide a UI element as input. To add a new UI element, you can do it directly from the action properties or through the UI elements pane of the flow designer.
 
-Each one of these action groups accepts a different category of UI elements. UI automation actions accept UI elements captured from desktop applications, while browser automation actions accept UI  elements captured from web pages.
-
-> [!NOTE]
-> UI automation actions can use only UI elements for desktop applications, while the browser automation actions can use only UI elements for webpages. Therefore, incompatible UI elements aren't available for selection. 
+Each one of these action groups accepts a different type of UI elements. UI automation actions accept desktop UI elements, while browser automation actions accept web UI elements.
 
 ![Screenshot of the available UI elements in the Press button in window action.](media/ui-elements/ui-element-input.png)
 
@@ -47,13 +44,14 @@ To find where a specific UI element is being used in the flow, right-click on it
 
 ## UI elements types
 
-Desktop flows support two types of UI elements based on their source desktop UI elements and web UI elements.
+Desktop flows support two types of UI elements based on their source: desktop UI elements and web UI elements.
 
 Desktop UI elements can be captured from any Windows application, including the non-web page part of browsers, such as the address bar.
 
 You can use these UI elements as input in UI automation actions to indicate the component you want to interact with. The UI element picker of UI automation actions displays and allows you to capture only desktop UI elements.
 
-Users are able to capture elements from web pages through the UI element picker of UI automation actions. However, their selector will represent a desktop element, not a web element.
+>[!IMPORTANT]
+> Users can capture elements from web pages through the UI element picker of UI automation actions. However, their selectors will represent desktop elements, not web elements.
 
 Web UI elements can be captured from web pages and used only in browser automation actions.
 
@@ -63,7 +61,7 @@ Browser automation actions accept exclusively UI elements captured from web page
 
 To capture a UI element from a webpage, you need to install the appropriate browser extension. You can find more information about the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
-When the browser extension isn't able to communicate with Power Automate, the browser window is identified as a desktop application. As a result, Power Automate tries to grab UI elements for a desktop application and not a web page.
+When the browser extension isn't able to communicate with Power Automate, the browser window is identified as a desktop application. As a result, Power Automate grabs desktop UI elements, not web UI elements.
 
 ### Distinguish desktop from web UI elements 
 
@@ -75,7 +73,7 @@ The same icons are also displayed during capturing, so you can confirm the type 
 
 ![Screenshot of a UI element type visual indication during capturing.](./media/ui-elements/ui-element-type-visual-indication-capturing.png)
 
-Another method to check the type of a UI element is to review its selectors. Desktop UI elements usually have the desktop as their parent element, while web UI elements have a web page as their parent element.
+Another method to check the type of a UI element is to review its selectors. Desktop UI elements usually have the desktop as their parent element, while web UI elements have a web page as their root element.
 
 ![Screenshot of a selector of a desktop UI element.](./media/ui-elements/ui-element-desktop-selector.png)
 
