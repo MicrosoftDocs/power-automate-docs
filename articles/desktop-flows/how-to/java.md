@@ -28,7 +28,8 @@ Logs for Java automation with Power Automate for desktop can be found in the **%
 
 Το prevent the [recorder](../recording-flow.md) and the [UI element picker](../ui-elements.md) from recognizing Java elements built with the SWT framework and make them work with the default desktop UI elements: 
 
-- Edit the configuration file located under the machine’s **Program Files**: **Power Automate Desktop\Microsoft.Flow.RPA.Desktop.UIAutomation.Plugin.Java.dll.config**.
+- Edit the configuration file located under the machine’s **Program Files**: 
+  **Power Automate Desktop\Microsoft.Flow.RPA.Desktop.UIAutomation.Plugin.Java.dll.config**.
 - Set the **BlockSwt** property to **true**. 
 
 ## Uninstalling Java configuration
