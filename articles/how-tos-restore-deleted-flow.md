@@ -5,7 +5,7 @@ author: msftman
 manager: kVivek
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 05/16/2022
+ms.date: 06/10/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -28,7 +28,8 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 - You must be an environment admin.
 - There must be an [execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) set on your device to run PowerShell scripts.
 
-## Restore deleted flow
+>[!NOTE]
+>After you restore a flow, it defaults to the disabled state. You must manually enable the flow, per your requirements.
 
 1. Open PowerShell with elevated priviliges to begin.
 
