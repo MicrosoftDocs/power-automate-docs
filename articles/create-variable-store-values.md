@@ -8,10 +8,9 @@ author: msftman
 manager: tapanm-MSFT
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: cpnceptual
-ms.date: 06/08/2022
+ms.topic: conceptual
+ms.date: 06/13/2022
 ms.author: deonhe
 ---
 
@@ -55,7 +54,7 @@ You can create a variable and declare its data type and initial value all within
 
 1. Under the step where you want to add a variable, follow one of these steps.
 
-   * To add an action under the last step, select **New step**.
+   * To add an action under the last step, select **+New step**.
 
    >[!div class="mx-imgBorder"]
    >![Screenshot of the "New Step" action selected in the power automate designer.](./media/create-variables-store-values/add-action.png "New step")
@@ -139,7 +138,7 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 >[!IMPORTANT]
 >This action works only with integer and float variables.
 
-1. In the Power Automate designer, under the step where you want to increase an existing variable, select **New step**. 
+1. In the Power Automate designer, under the step where you want to increase an existing variable, select **+New step**. 
 
    For example, this cloud flow already has a trigger and an action that created a variable. So, add a new action under these steps:
 
@@ -274,7 +273,6 @@ Here are the properties for the **Append to...** actions:
 | **Value** | Yes | <*append-value*> | The value you want to append, which can have any type |
 |||||
 
+### More information
 
-## Next step
-
-* Learn about [Power Automate connectors](/connectors/connectors)
+Learn about [Power Automate connectors](/connectors/connectors)

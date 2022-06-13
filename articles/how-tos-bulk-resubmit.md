@@ -28,15 +28,15 @@ You can resubmit previous runs of a flow in bulk. You can also cancel runs that 
 Follow these steps to bulk resubmit flow runs.
 
 1. Sign into [Power Automate](https://powerautomate.com).
-1. Select **My flows** page from the left side of the screen.
-1. Select the cloud flow that you would like to resubmit or cancel.
-1. Select **All runs** on the flow proprieties page.
+1. On the left panel, select **My flows**.
+1. On the right panel, select the cloud flow that you would like to resubmit or cancel.
+1. Select **All runs**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot that displays all runs for the selected flow.](./media/cancel-resubmit-how-to/all-runs.png "All runs for the selected flow")
 
    >[!TIP]
-   >The flow must have runs in order to cancel or resubmit the flow runs
+   >The flow must have runs in order to cancel or resubmit the flow runs.
 
 1. Select the flow runs that you would like to resubmit or cancel on the **Run history** page.
 
@@ -56,12 +56,12 @@ Follow these steps to bulk resubmit flow runs.
 
 ## Cancel flow runs
 
-To cancel flow runs that are in progress, follow the steps to resubmit flow runs as outlined earlier in this article, but select **Cancel flow run(s)** as shown in the following image.
+To cancel flow runs that are in progress, follow the steps to resubmit flow runs as outlined earlier in this article with one exception: In step 6, select **Cancel flow run(s)** as shown in the following image.
 
 >[!div class="mx-imgBorder"]
 >![Screenshot that displays the Cancel flow run(s) button.](./media/cancel-resubmit-how-to/cancel-runs.png "Cancel flow run(s) button")
 
 >[!NOTE]
->The resbumit and cancel features aren't available for sovereign cloud customers.
+>The resubumit and cancel features aren't available for sovereign cloud customers.
  
 [!INCLUDE[footer-include](includes/footer-banner.md)]
