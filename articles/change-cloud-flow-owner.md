@@ -27,9 +27,6 @@ An owner, co-owner, or an admin can change the owner of a solution-aware flow to
 
 You can change the owner to an individual (not a distribution list) or a user account used as a service account. If the flow uses a service account, ensure it's licensed correctly to avoid [multiplexing](/power-platform/admin/power-automate-licensing/faqs#multiplexing).
 
->[!NOTE]
->You cannot change the owner of a flow to a service principal. 
-
 Follow these steps to change the owner of a flow.
 
 1. Select **Solutions** in the left navigation bar, and then select the solution that contains the flow you want to change.
