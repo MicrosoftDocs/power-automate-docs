@@ -1,20 +1,15 @@
 ---
-title: Design flows with Microsoft Visio | Microsoft Docs
+title: Design flows with Microsoft Visio in Power Automate | Microsoft Docs
 description: Leverage your organization's Visio expertise to build common models as a starting point to create flows.
 services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
 editor: ''
 tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 08/25/2019
+ms.topic: conceptual
+ms.date: 06/16/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -23,9 +18,7 @@ search.audienceType:
   - enduser
 ---
 
-
-# Design flows in Microsoft Visio
-
+# Design flows with Microsoft Visio
 
 The Power Automate designer is a rich tool in which you can configure every detail of your logic. However, sometimes you may want to just sketch your flow logic before you start building your flow. To do this, use Microsoft Visio directly from within Power Automate.
 
@@ -41,31 +34,37 @@ The Power Automate designer is a rich tool in which you can configure every deta
 ## Design a workflow in Visio
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
-1. Select **Templates** from the left side panel.
 
-     ![Select templates from the left panel.](./media/visio-flows/templates-from-left-panel.png)
+1. From the left pane, select **Templates**.
 
-1. Select **Visio** from the list.
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the templates menu option.](./media/visio-flows/templates-from-left-panel.png "Templates menu option")
 
-     ![Filter to Visio templates.](./media/visio-flows/select-visio.png) 
+1. From the menu at the top, select **Visio**.
 
-1. Select the **Basic Flow BPMN Diagram** template from the list of **Visio** templates that displays.
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the Visio templates menu option.](./media/visio-flows/select-visio.png "Visio templates menu option") 
 
-     ![Select a Visio Template.](./media/visio-flows/visio-templates.png) 
+1. From the list of **Visio** templates, select **Basic Flow BPMN Diagram**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the Basic Flow BPMN Diagram template option.](./media/visio-flows/visio-templates.png "Basic Flow BPMN Diagram template option") 
 
      >[!IMPORTANT]
      >Visio warns you that files from the Internet could harm your device. If you are comfortable, select **YES** on the warning message.
 
-     ![Note warning about files from the Internet.](./media/visio-flows/visio-warning.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the warning about files from the Internet.](./media/visio-flows/visio-warning.png "Warning about files from the Internet")
 
-1. The Visio designer launches.
+1. The Visio designer opens.
 
-     ![View of the Visio designer.](./media/visio-flows/visio-designer.png)
-
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the Visio designer.](./media/visio-flows/visio-designer.png "Visio designer")
 
 1. Use the BPMN basic shapes to [design your workflow](https://support.office.com/article/design-a-microsoft-flow-in-visio-35f0c9a9-912b-486d-88f7-4fc68013ad1a).
 
-   ![BPMN basic shapes.](./media/visio-flows/bpmn-basic-shapes.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the BPMN basic shapes.](./media/visio-flows/bpmn-basic-shapes.png "BPMN basic shapes")
 
 ## Prepare to export your workflow to Power Automate
 
@@ -74,42 +73,44 @@ Follow these steps to prepare your workflow so that you can export it to Power A
 1. Select the **Process** tab.
 1. Select **Prepare to Export** from the **Power Automate** group of icons.
 
-   ![Select the prepare to export icon.](./media/visio-flows/prepare-export-icon.png)
-   
+    >[!div class="mx-imgBorder"]
+    >![Screenshot od the Prepare to export icon.](./media/visio-flows/prepare-export-icon.png "Prepare to Export icon")
+
    The **Prepare to Export** group opens.
 
-   ![Prepare export group.](./media/visio-flows/prepare-export-group.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the Prepare to Export group.](./media/visio-flows/prepare-export-group.png "Prepare to Export group")
 
-1. On the **Flow Mapping** tab of the **Prepare to Export** group, map your BPMN diagram to Power Automate controls. 
+1. On the **Flow Mapping** tab of the **Prepare to Export** group, map your BPMN diagram to Power Automate controls.
 
-1. On the **Triggers and Actions** tab of the **Prepare to Export** group, map your BPMN diagram to Power Automate triggers and actions by selecting each shape and then selecting either a trigger or action to represent that shape in Power Automate.
+1. On the **Triggers and Actions** tab of the **Prepare to Export** group, map your BPMN diagram to Power Automate triggers and actions by selecting each shape, and then selecting either a trigger or action to represent that shape in Power Automate.
 
 Your workflow is ready to be exported when there are no issues remaining on the **Prepare to Export** control.
 
-![No issues.](./media/visio-flows/prepare-export-no-issues.png) 
+>[!div class="mx-imgBorder"]
+>![Screenshot of no issues on the Prepare to Export control.](./media/visio-flows/prepare-export-no-issues.png "No issues on the Prepare to Export control") 
 
 ## Export your workflow
 1. Select the **Export to Flow** button to export your workflow diagram to Power Automate.
 1. Name your flow and then select the **Create flow** button.
-   
-   ![Create the flow.](./media/visio-flows/export-create-flow.png)
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the Create a flow screen.](./media/visio-flows/export-create-flow.png "Create a flow screen")
 
 1. You should see a success report similar to this one.
 
-    ![Success.](./media/visio-flows/export-create-flow-success.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of a success report.](./media/visio-flows/export-create-flow-success.png "Success report")
 
 You can now run or make edits to your flow from the Power Automate designer, just like any other flow.
 
 >[!TIP]
 > Use Visio’s sharing and commenting capabilities to collaborate with multiple stakeholders and create a complete workflow quickly.
 
-## Learn more
+### More information
 
 - [Get started with Power Automate](getting-started.md) 
 - [Build multi-step flows](multi-step-logic-flow.md)
 - [Design a cloud flow with Microsoft Visio](https://support.office.com/article/design-a-microsoft-flow-in-visio-35f0c9a9-912b-486d-88f7-4fc68013ad1a)
-
-     
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
