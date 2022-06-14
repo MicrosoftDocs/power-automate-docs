@@ -5,7 +5,7 @@ sservices: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: tapanm-MSFT
+manager: tapanm
 editor: ''
 tags: ''
 ms.subservice: cloud-flow
