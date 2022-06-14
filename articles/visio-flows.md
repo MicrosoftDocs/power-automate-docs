@@ -83,9 +83,9 @@ Follow these steps to prepare your workflow so that you can export it to Power A
 
 1. On the **Flow Mapping** tab of the **Prepare to Export** group, map your BPMN diagram to Power Automate controls.
 
-1. On the **Triggers and Actions** tab of the **Prepare to Export** group, map your BPMN diagram to Power Automate triggers and actions by selecting each shape, and then selecting either a trigger or action to represent that shape in Power Automate.
+1. On the **Triggers and Actions** tab of the **Prepare to Export** group, select each shape, and then select either a trigger or an action to map your BPMN diagram to Power Automate triggers and actions. This mapping is to represent that shape in Power Automate.
 
-Your workflow is ready to be exported when there are no issues remaining on the **Prepare to Export** control.
+You can export your workflow when no issues remain on the **Prepare to Export** control.
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of no issues on the Prepare to Export control.](./media/visio-flows/prepare-export-no-issues.png "No issues on the Prepare to Export control") 
@@ -105,7 +105,7 @@ Your workflow is ready to be exported when there are no issues remaining on the 
 You can now run or make edits to your flow from the Power Automate designer, just like any other flow.
 
 >[!TIP]
-> Use Visio’s sharing and commenting capabilities to collaborate with multiple stakeholders and create a complete workflow quickly.
+> Use the sharing and commenting capabilities in Visio to collaborate with multiple stakeholders and create a complete workflow quickly.
 
 ### More information
 
