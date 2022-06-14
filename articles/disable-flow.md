@@ -36,7 +36,7 @@ After you create a cloud flow, it is turned on by default. Follow these steps to
 1. Verify the new status on the **Details** page by selecting the **More commands** (...) icon, and then selecting **Details**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of flow status on Details page.](./media/disable-flow/flow-details-page-new-status.png "Details page")
+    >![Screenshot of flow status on Details page.](./media/disable-flow/flow-details-page-new-status.png "Flow status on the Details page")
 
 >[!NOTE]
 >If you turn off a flow, its runs are queued and they'll run when you turn the flow on.
@@ -48,7 +48,7 @@ If you've turned a cloud flow off, but want to turn it back on so that it will r
 - If you are on the **Details** page, in the menu at the top, select **Turn on**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of flow status on Details page.](./media/disable-flow/flow-details-page-new-status-on.png "Details page")
+    >![Screenshot of the 'Turn on' menu option.](./media/disable-flow/flow-details-page-new-status-on.png "'Turn on' menu option")
 
 - If you are on the **Flows** page:
 
