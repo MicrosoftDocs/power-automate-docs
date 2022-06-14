@@ -33,7 +33,7 @@ After you create a cloud flow, it is turned on by default. Follow these steps to
     
 1. On the menu that appears, select **Turn off**.
 
-1. Verify the new status on the **Details** page by selecting the **More commands** (...) icon, and then selecting **Details**.
+1. On the **Details** page, select the **More commands** (...) icon, and then select **Details** to Verify the new status.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of flow status on Details page.](./media/disable-flow/flow-details-page-new-status.png "Flow status on the Details page")
@@ -43,7 +43,7 @@ After you create a cloud flow, it is turned on by default. Follow these steps to
 
 ## Turn flows on
 
-If you've turned a cloud flow off, but want to turn it back on so that it will run again, follow one of these procedures.
+If you've turned a cloud flow off, but want to turn it back on so that it will run again, follow one of these steps.
 
 - If you are on the **Details** page, in the menu at the top, select **Turn on**.
 
