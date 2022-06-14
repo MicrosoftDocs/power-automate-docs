@@ -24,16 +24,16 @@ View a list of all flows that you created and, for each flow, view its events an
 ## Prerequisites
 
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the graphics on Android and Windows Phone look similar.
-* If you don't already have a cloud flow, create one on [the website for Power Automate](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
+* If you don't already have a cloud flow, create one on [Power Automate](https://flow.microsoft.com/). For easier testing, use a flow that you can trigger yourself instead of waiting for an external event.
 
-The flow in this article runs when you receive mail from a specific address.
+The flow in this article runs when you receive mail from a specific email address.
 
 >[!div class="mx-imgBorder"]
 >![TScreenshot of a trigger flow on receipt of mail from specific address.](./media/mobile-manage-flows/create-trigger.png "Trigger flow on receipt of mail")
 
 You could configure such a cloud flow with your personal email address for testing and a different address (for example, your manager's) when the flow is ready for real use.
 
-When the flow runs, it sends a custom push notification, with the syntax in the following screenshot, to your phone.
+When the flow runs, it sends a custom push notification with the syntax in the following screenshot to your phone.
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of a custom push notification.](./media/mobile-manage-flows/create-event.png "Custom push notification")
@@ -50,7 +50,7 @@ When the flow runs, it sends a custom push notification, with the syntax in the 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the list of flows.](./media/mobile-manage-flows/flow-list.png "List of flows")
 
-1. Tap a cloud flow to show options for managing it.
+1. Tap a cloud flow to show the options to manage it.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of options to manage a cloud flow.](./media/mobile-manage-flows/flow-details.png "Options to manage a cloud flow")
