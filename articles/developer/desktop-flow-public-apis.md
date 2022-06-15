@@ -1,6 +1,6 @@
 ---
 title: Public APIs integration for desktop flows | Microsoft Docs
-description: Developer guide to integrate desktop flow capabilities within their applications.
+description: Developer guide to integrate desktop flows capabilities within their applications.
 author: benabbon
 ms.topic: article
 ms.date: 06/16/2022
@@ -12,20 +12,20 @@ search.audienceType:
 ---
 # Public API integration for desktop flows
 
-As a developer, you can leverage [desktop flow](/power-automate/desktop-flows/introduction) functionalities within your applications such as programatically triggering and cancelling a Desktop Flow.
+As a developer, you can leverage [desktop flows](/power-automate/desktop-flows/introduction) functionalities within your applications such as programatically triggering and cancelling a desktop flow.
 
 Theses capabilities are offered as part of the Microsoft Dataverse platform.
 
 ## Pre-requisites
 1. Knowledge of [Dataverse Web API](/power-apps/developer/data-platform/webapi/perform-operations-web-api), [authentication with Dataverse](/power-apps/developer/data-platform/authentication) and [using OAuth with Dataverse](/power-apps/developer/data-platform/authenticate-oauth)
 2. Knowledge of Dataverse environment and organization notions, and [how to retrieve the organization URL](/power-apps/developer/data-platform/webapi/discover-url-organization-web-api) manually or programatically
-3. Knowledge of [desktop flow notions](/power-automate/desktop-flows/run-pad-flow) and of what [connections are and how to create them](/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials)
+3. Knowledge of [desktop flows notions](/power-automate/desktop-flows/run-pad-flow) and of what [connections are and how to create them](/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials)
 
 > [!NOTE]
 > When following this documentation, all brackets [...] in URLs and input/output data should be replaced with values specific to your case.
 
 ## List available desktop flows
-Desktop flow scripts are stored in Dataverse, as part of the [workflow entity](/power-apps/developer/data-platform/reference/entities/workflow).
+Desktop flows scripts are stored in Dataverse, as part of the [workflow entity](/power-apps/developer/data-platform/reference/entities/workflow).
 
 Listing the desktop flows is done through listing workflows and filtering on the category.
 ### Example
@@ -55,7 +55,7 @@ GET https://[Organization URI]/api/data/v9.2/workflows?$filter=category+eq+6&$se
 }
 ```
 
-#### Desktop flow schema
+#### Desktop flows schema
 If you need to retrieve the flow schema for inputs and/or outputs, you can leverage the clientData field for the target workflow.
 ##### Request
 ```http
@@ -125,7 +125,7 @@ GET https://[Organization URI]/api/data/v9.2/workflows([Workflow Id])/clientdata
 }
 ```
 ## Retrieve status of a desktop flow run
-Desktop flow runs are stored in Dataverse, as part of the [flowsession entity](/power-apps/developer/data-platform/reference/entities/flowsession).
+Desktop flows runs are stored in Dataverse, as part of the [flowsession entity](/power-apps/developer/data-platform/reference/entities/flowsession).
 ### Example
 ##### Request
 ```http
