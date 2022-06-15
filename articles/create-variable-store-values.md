@@ -138,7 +138,7 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 >[!IMPORTANT]
 >This action works only with integer and float variables.
 
-1. In the Power Automate designer, under the step where you want to increase an existing variable, select **+New step**. 
+1. In the Power Automate designer, under the step where you want to increase an existing variable, select **New step**. 
 
    For example, this cloud flow already has a trigger and an action that created a variable. So, add a new action under these steps:
 
