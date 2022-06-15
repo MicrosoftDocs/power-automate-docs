@@ -324,3 +324,10 @@ Remote desktop to hosted RPA bots is not supported. Hosted RPA bots are meant to
 ### Limit on the number of hosted RPA bots (preview) group per environment during Public preview
 
 During the Public preview, number of bot groups is limited to 10 for each environment. If you reach this limit, please delete an existing hosted RPA bots group to create a new one.
+
+### Delete of unused resources
+During the Public preview, we currently clean unused resources to ensure the availability of our service for everyone. A Hosted RPA bots group that has been inactive for more than 28 days will be automatically deleted. The group will still be visible but cannot be used anymore. A group that is inactive is a group that didn't run any Desktop Flow for the last 28 days.
+
+> [!Note]
+> 
+> You will need to delete the group and re-create a new one to continue using the Hosted RPA bots feature. You will need to reconfigure the connection associated with your Cloud Flow.
