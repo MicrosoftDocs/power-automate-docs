@@ -57,11 +57,11 @@ To learn more, follow the step-by-step instructions in [Create an automated work
 
 ## Convert an attachment on a form to PDF or other file type
 
-Add your form to a flow. Add the following actions:
+Add your form to a flow. Add the following actions.
 
-- [Data Operation - Select](../data-operations#use-the-select-action)
-- [Data Operation - Create HTML table](../data-operations#use-the-create-html-table-action)
-- [OneDrive for Business - Create file](connectors/onedrive/#create-file)
+- [Data Operation - Select](../data-operations/#use-the-select-action)
+- [Data Operation - Create HTML table](../data-operations/#use-the-create-html-table-action)
+- [OneDrive for Business - Create file](/connectors/onedrive/#create-file)
 - [OneDrive for Business - Convert file](/connectors/onedrive/#convert-file)
 
 ## Upload form responses to a Power BI dataset

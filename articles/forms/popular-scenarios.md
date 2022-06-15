@@ -81,7 +81,7 @@ In this example, we'll start with another pre-built template and customize it to
 
 1. In the next step in the flow, "Apply to each," select your form again in the **Form Id** box. Leave everything else as it is.
 
-    :::image type="content" source="../media/forms/approval-flow-step2.png" alt-text="Screenshot of a Forms action in a flow under construction, with the form ID highlighted.":::
+    :::image type="content" source="../media/forms/approval-flow-step2.png" alt-text="Screenshot of a Forms action in a flow under construction. The  form ID is highlighted.":::
 
 1. In the next step in the flow, "[Start and wait for an approval](/power-automate/modern-approvals#add-an-approval-action.md)," select the **Approval type**, enter a **Title**, and enter the approvers' email addresses in **Assigned to**. Select dynamic content to include details from the form response in the approval request.
 
@@ -122,7 +122,7 @@ In this example, we'll create a flow from blank. Continuing with the scenario fr
 
 1. In Power Automate, create an automated cloud flow from blank. Select the Microsoft Forms "When a new response is submitted" trigger.
 
-    :::image type="content" source="../media/forms/excel-flow-step1.png" alt-text="Screenshot of creating a cloud flow with a Microsoft Forms trigger.":::
+    :::image type="content" source="../media/forms/excel-flow-step1.png" alt-text="Screenshot of a cloud flow with a Microsoft Forms trigger displayed.":::
 
 1. In the first step in the flow, "When a new response is submitted," select your form in the **Form Id** box.
 
