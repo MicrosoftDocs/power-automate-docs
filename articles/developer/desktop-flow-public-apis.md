@@ -162,17 +162,17 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])/out
 ```
 
 ## Trigger a desktop flow run (preview)
-By leveraging Dataverse, you can add the functionaility of triggering a desktop flow through your application. To do this, you need to use the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow?view=dataverse-latest).
+By leveraging Dataverse, you can add the functionaility of triggering a desktop flow through your application. To do this, you need to use the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
 
 To call the action, you'll need: 
 - ID of the Desktop flow to run (programatic retrieval detailled in the [listing](#list-available-desktop-flows) section above)
   >[!TIP] 
   > Alternatively, you can retrieve the ID manually from the desktop flow details URL in the Power Automate portal. The URL format is: `https://flow.microsoft.com/manage/environments/[Environment ID]/uiflows/[Desktop Flow ID]/details`
-  > >[!INCLUDE](/power-automate/desktop-flows/manage)
+  > >[!NOTE] See [Manage desktop flows](/power-automate/desktop-flows/manage) for more info.
 
 - Name of the desktop flow connection to use (i.e which target machine/machine group to use for running your flow). This can be retrieved from the URL of the said connection page in the Power Automate portal. The URL format is:  
 `https://flow.microsoft.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`
-  >[!INCLUDE](/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials)
+  > [!NOTE] See [Setup desktop flows connections and machine credentials](/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials) for more info.
 
 ### Example
 ##### Request
