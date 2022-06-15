@@ -706,6 +706,8 @@
   items:
   - name: Enterprise developers, partners, and ISVs
     href: ./developer/dev-enterprise-intro.md
+  - name: Power Automate desktop flow APIs
+    href: ./developer/desktop-flow-public-apis.md
   - name: Build and certify custom connectors
     href: ./developer/register-custom-api.md
   - name: Integrate with websites and other technologies
@@ -719,8 +721,6 @@
       href: ./developer/sample-work-business-process-flows.md
   - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
-  - name: Power Automate desktop flow APIs
-    href: ./developer/desktop-flow-public-apis.md
 - name: Administration
   items:
   - name: Flows in your organization Q&A
