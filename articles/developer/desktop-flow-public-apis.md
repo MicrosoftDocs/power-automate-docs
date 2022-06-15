@@ -1,31 +1,34 @@
 ---
-title: Public APIs integration for Desktop Flow (Preview) | Microsoft Docs
-description: add description.
+title: Public APIs integration for desktop flows | Microsoft Docs
+description: Developer guide to integrate desktop flow capabilities within their applications.
 author: benabbon
 ms.topic: article
-ms.date: 05/03/2022
+ms.date: 06/16/2022
 ms.author: nabena
 search.app: 
   - Flow
 search.audienceType: 
   - developer
 ---
-# Public APIs integration for desktop flows (preview)
+# Public API integration for desktop flows
 
-As a developer, you can leverage [Desktop Flows](https://docs.microsoft.com/power-automate/desktop-flows/introduction) functionalities within your applications such as programatically triggering and cancelling a Desktop Flow.
+As a developer, you can leverage [desktop flow](https://docs.microsoft.com/power-automate/desktop-flows/introduction) functionalities within your applications such as programatically triggering and cancelling a Desktop Flow.
 
-Theses capabilities are offered as part of the Dataverse platform.
+Theses capabilities are offered as part of the Microsoft Dataverse platform.
 
-# Pre-requisites
-1. Knowledge of [Dataverse Web API](https://docs.microsoft.com/power-apps/developer/data-platform/webapi/perform-operations-web-api), [Authentication with Dataverse](https://docs.microsoft.com/power-apps/developer/data-platform/authentication) and [Using OAuth with Dataverse](https://docs.microsoft.com/power-apps/developer/data-platform/authenticate-oauth)
-2. Knowledge of Dataverse environment and organization notions, and how to retrieve the organization URL manually or programatically ([List environments](https://docs.microsoft.com/power-platform/admin/list-environments)]
-3. Knowledge of Desktop Flows notions ([Run Desktop Flow](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow))
-4. Knowledge of what connections are and how to create them ([Setup desktop flows connections and machine credentials](https://docs.microsoft.com/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials))
+## Pre-requisites
+1. Knowledge of [Dataverse Web API](https://docs.microsoft.com/power-apps/developer/data-platform/webapi/perform-operations-web-api), [authentication with Dataverse](https://docs.microsoft.com/power-apps/developer/data-platform/authentication) and [using OAuth with Dataverse](https://docs.microsoft.com/power-apps/developer/data-platform/authenticate-oauth)
+2. Knowledge of Dataverse environment and organization notions, and [how to retrieve the organization URL](https://docs.microsoft.com/en-us/power-apps/developer/data-platform/webapi/discover-url-organization-web-api) manually or programatically
+3. Knowledge of [desktop flow notions](https://docs.microsoft.com/power-automate/desktop-flows/run-pad-flow) and of what [connections are and how to create them](https://docs.microsoft.com/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials)
 
-# List available Desktop Flows
-Desktop Flow scripts are stored in Dataverse, as part of the [workflow entity](https://docs.microsoft.com/power-apps/developer/data-platform/reference/entities/workflow)
-Listing the Desktop Flows is done through listing workflows and filtering on the category.
-## Example
+> [!NOTE]
+> When following this documentation, all brackets [...] in URLs and input/output data should be replaced with values specific to your case.
+
+## List available desktop flows
+Desktop flow scripts are stored in Dataverse, as part of the [workflow entity](https://docs.microsoft.com/power-apps/developer/data-platform/reference/entities/workflow).
+
+Listing the desktop flows is done through listing workflows and filtering on the category.
+### Example
 ##### Request
 ```http
 Authorization: Bearer eyJ0eXAiOi...
@@ -39,12 +42,12 @@ GET https://[Organization URI]/api/data/v9.2/workflows?$filter=category+eq+6&$se
     "@odata.context": "https://[Organization URI]/api/data/v9.2/$metadata#workflows(name,workflowid)",
     "value": [
         {
-            "@odata.etag": "W/\"1069462\"",
-            "name": "Desktop flow 1,
+            "@odata.etag": "W1069462",
+            "name": "Desktop flow 1",
             "workflowid": "f091ffab-58bb-4630-a115-659453d56f59",
         },
         {
-            "@odata.etag": "W/\"1028555\"",
+            "@odata.etag": "W1028555",
             "name": "Desktop flow 2",
             "workflowid": "eafba1a2-e8d4-4efa-b549-11d4dfd9a3d1",
         }
@@ -52,7 +55,7 @@ GET https://[Organization URI]/api/data/v9.2/workflows?$filter=category+eq+6&$se
 }
 ```
 
-### Desktop Flow Schema
+#### Desktop flow schema
 If you need to retrieve the flow schema for inputs and/or outputs, you can leverage the clientData field for the target workflow.
 ##### Request
 ```http
@@ -121,9 +124,9 @@ GET https://[Organization URI]/api/data/v9.2/workflows([Workflow Id])/clientdata
     }
 }
 ```
-# Retrieve status of a Desktop Flow run
-Desktop Flow runs are stored in Dataverse, as part of the [flowsession entity](https://docs.microsoft.com/power-apps/developer/data-platform/reference/entities/flowsession)
-## Example
+## Retrieve status of a desktop flow run
+Desktop flow runs are stored in Dataverse, as part of the [flowsession entity](https://docs.microsoft.com/power-apps/developer/data-platform/reference/entities/flowsession).
+### Example
 ##### Request
 ```http
 Authorization: Bearer eyJ0eXAiOi...
@@ -135,15 +138,15 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])?$se
 ```json
 {
     "@odata.context": "https://[Organization URI]/api/data/v9.2/$metadata#flowsessions(statuscode,statecode,startedon,completedon)/$entity",
-    "@odata.etag": "W/\"1276122\"",
+    "@odata.etag": "W1276122",
     "statuscode": 8,
     "statecode": 0,
-    "startedon": "2022-04-22T12:54:40Z",
-    "completedon": "2022-04-22T12:57:46Z",
+    "startedon": "2022-06-16T12:54:40Z",
+    "completedon": "2022-06-16T12:57:46Z",
 }
 ```
-### Outputs
-If the Desktop Flow has outputs, you can retrieve them by querying the outputs field.
+#### Outputs
+If the desktop flow has outputs, you can retrieve them by querying the outputs field.
 ##### Request
 ```http
 Authorization: Bearer eyJ0eXAiOi...
@@ -158,17 +161,22 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])/out
 }
 ```
 
-# Trigger a Desktop Flow Run (Preview)
-By leveraging Dataverse, you can add the functionaility of triggering a Desktop Flow through your application. To do this, you need to use the [RunDesktopFlow action](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/rundesktopflow?view=dataverse-latest)
+## Trigger a desktop flow run (preview)
+By leveraging Dataverse, you can add the functionaility of triggering a desktop flow through your application. To do this, you need to use the [RunDesktopFlow action](https://docs.microsoft.com/dynamics365/customer-engagement/web-api/rundesktopflow?view=dataverse-latest).
 
-To do this, you'll need: 
-- ID of the Desktop flow to run (Programatic retrieval detailled in the [listing](#list-available-desktop-flows) section above)
-  - Alternatively, you can retrieve the ID manually from the Desktop Flow details URL in the Power Automate portal (More info on how to [manage Desktop Flows](https://docs.microsoft.com/power-automate/desktop-flows/manage)). The URL format is: 
-`https://flow.microsoft.com/manage/environments/[Environment ID]/uiflows/[Desktop Flow ID]/details`
-- Name of the Desktop Flow connection to use (i.e which machine/machine group to use). This can be retrieved from the URL of the said connection page in the Power Automate portal (More info on [Setup desktop flows connections and machine credentials](https://docs.microsoft.com/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials)). The URL format is:  
+To call the action, you'll need: 
+- ID of the Desktop flow to run (programatic retrieval detailled in the [listing](#list-available-desktop-flows) section above)
+  >[!TIP] 
+  > Alternatively, you can retrieve the ID manually from the desktop flow details URL in the Power Automate portal. The URL format is: `https://flow.microsoft.com/manage/environments/[Environment ID]/uiflows/[Desktop Flow ID]/details`
+  > >[!INCLUDE]
+  > > https://docs.microsoft.com/power-automate/desktop-flows/manage
+
+- Name of the desktop flow connection to use (i.e which target machine/machine group to use for running your flow). This can be retrieved from the URL of the said connection page in the Power Automate portal. The URL format is:  
 `https://flow.microsoft.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`
+  >[!INCLUDE]
+  > https://docs.microsoft.com/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials
 
-## Example
+### Example
 ##### Request
 ```http
 Authorization: Bearer eyJ0eXAiOi...
@@ -190,8 +198,8 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
     "flowsessionId": "d9687093-d0c0-ec11-983e-0022480b428a"
 }
 ```
-## Errors
-When hitting an error, the response will have a different format matching Dataverse error messages. The http error code and the message should provide enough information to understand the issue. Example:
+### Errors
+When an error occurs, the response will have a different format matching Dataverse error messages. The http error code and the message should provide enough information to understand the issue. Example:
 ```http
 HTTP/1.1 403 Forbidden
 
@@ -203,3 +211,5 @@ HTTP/1.1 403 Forbidden
 }
 
 ```
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]
