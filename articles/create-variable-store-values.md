@@ -10,7 +10,7 @@ editor: ''
 tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/13/2022
+ms.date: 06/15/2022
 ms.author: deonhe
 ---
 
@@ -54,7 +54,7 @@ You can create a variable and declare its data type and initial value all within
 
 1. Under the step where you want to add a variable, follow one of these steps.
 
-   * To add an action under the last step, select **+New step**.
+   * To add an action under the last step, select **New step**.
 
    >[!div class="mx-imgBorder"]
    >![Screenshot of the "New Step" action selected in the power automate designer.](./media/create-variables-store-values/add-action.png "New step")
@@ -66,7 +66,7 @@ You can create a variable and declare its data type and initial value all within
     >[!div class="mx-imgBorder"]
     >![Screenshot of the Initialize variable action.](./media/create-variables-store-values/select-initialize-variable-action.png "Initialize variable - Variable action")
 
-1. Provide this information about your variable:
+1. Provide the following information about your variable.
 
    | Property | Required | Value |  Description |
    |----------|----------|-------|--------------|
@@ -80,12 +80,12 @@ You can create a variable and declare its data type and initial value all within
     >[!div class="mx-imgBorder"]
     >![Screenshot of the Initialize variable example.](./media/create-variables-store-values/initialize-variable.png "Initialize variable example")
 
-1. Now continue adding the actions you want. When you're done, select **Save**.
+1. Now, add  the other actions that you want. When you're done, select **Save**.
 
 > [!NOTE]
 > Although the **Initialize variable** action has a `variable` section that's structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
 
-Here are examples for some other variable types:
+Here are examples for some other variable types.
 
 *String variable*
 
@@ -122,7 +122,7 @@ Here are examples for some other variable types:
 
 ## Get the variable's value
 
-To retrieve or reference a variable's contents, you can use the variables() function in the Power Automate designer.
+To retrieve or reference a variable's contents, you can use the `variables()` function in the Power Automate designer.
 
 <!--confirm earlier creation-->
 For example, this expression gets the items from the array variable by using the `variables()` function. The `string()` function returns the variable's contents in string format: `"1, 2, 3, red"`
