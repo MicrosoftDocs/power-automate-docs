@@ -84,7 +84,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | U.S. Goverment endpoints| *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for new machine connectivity. |
 |Worldwide telemetry endpoints|server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, US Government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 |EMEA telemetry endpoints|emea.events.data.microsoft.com|https|Handles telemetry for EMEA users.|
-|U.S. Government telemetry endpoints|tb.events.data.microsoft.com|https|Handles telemetry for US Government users.|
+|U.S. Government telemetry endpoints|tb.events.data.microsoft.com|https|Handles telemetry for U.S. Government users.|
 |Chinese telemetry endpoints|apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
