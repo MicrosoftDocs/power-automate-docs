@@ -1,5 +1,5 @@
 ---
-title: Public APIs integration for desktop flows | Microsoft Docs
+title: Public API integration for desktop flows | Microsoft Docs
 description: Developer guide to integrate desktop flows capabilities within their applications.
 author: benabbon
 ms.topic: article
