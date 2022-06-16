@@ -174,7 +174,7 @@ To call the action, you'll need:
 - Name of the desktop flow connection to use (i.e which target machine/machine group to use for running your flow). The name can be retrieved from the URL of the said connection page in the Power Automate portal. The URL format is:  
 `https://flow.microsoft.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`
   > [!NOTE]
-  > See [Setup desktop flows connections and machine credentials](/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials) for more info.
+  > See [Setup desktop flows connections and machine credentials](/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials) for more information.
 
 ### Example
 ##### Request
