@@ -96,6 +96,9 @@ All UI elements consist of one or more selectors that pinpoint the UI or web com
 
 To manage the selectors of a UI element, right-click on it and select **Edit**. This option brings up the selector builder, where you can edit the selectors with a visual or a text editor.
 
+>[!IMPORTANT]
+> Web elements captured via the recorder produce selectors that can be presented only in the text editor. Switching to the visual editor will temporarily navigate to an empty visual builder  and should be avoided to prevent loss of work. Clicking on **Cancel** may restore any work lost.
+
 Each selector consists of multiple elements representing the hierarchical structure of the UI element in the application or web page. The attributes describe each element uniquely and distinguish it from other elements.
 
 ![Screenshot of the visual selector builder.](./media/ui-elements/visual-selector-editor.png)
