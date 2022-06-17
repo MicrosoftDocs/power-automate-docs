@@ -58,11 +58,11 @@ GET https://[Organization URI]/api/data/v9.2/workflows?$filter=category+eq+6&$se
 }
 ```
 
-## Desktop flows schema
+## Get the schema for desktop flows
 
 If you need to retrieve the flow schema for inputs and/or outputs, you can use the clientData field for the target workflow.
 
-### Request desktop flows schema
+### Request schema for desktop flows
 
 ```http
 Authorization: Bearer eyJ0eXAiOi...
@@ -159,7 +159,7 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])?$se
 }
 ```
 
-## Outputs
+## Get desktop flow outputs
 
 If the desktop flow has outputs, you can query the outputs field to retrieve them.
 
