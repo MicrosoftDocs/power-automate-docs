@@ -16,7 +16,7 @@ ms.author: deonhe
 
 # Store and manage values in variables
 
-This article shows how to create and work with variables to store values in your cloud flows. For example, variables can help you track the number of times that a loop runs. To iterate over an array or check an array for a specific item, you can use a variable to reference the index number 'apply to each' array item.
+This article shows how to create and work with variables to store values in your cloud flows. For example, variables can help you track the number of times a loop runs. To iterate over an array or check an array for a specific item, you can use a variable to reference the index number 'apply to each' array item.
 
 You can create variables for data types such as integer, float, boolean, string, array, and object. After you create a variable, you can perform other tasks, for example:
 
@@ -48,7 +48,7 @@ When you reference a variable, use the variable's name as the token, not the act
 
 You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
 
-1. Sign into [Power Automate](sign-up-sign-in.md).
+1. Sign in to [Power Automate](sign-up-sign-in.md).
 
 1. Create or open a cloud flow.
 
