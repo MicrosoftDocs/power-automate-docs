@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/27/2022
+ms.date: 06/17/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -79,12 +79,12 @@ The following table lists endpoint data requirements for connectivity from a use
 | Worldwide endpoints|ocsp.digicert.com<br>ocsp.msocsp.com<br>mscrl.microsoft.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for the public cloud.<br>Needed when connecting through the on-premises data gateway.|
 | U.S. Government GCC and GCC High endpoints|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud.<br>Needed when connecting through the on-premises data gateway.|
 | 21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
-| All endpoints|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to UI Flows WebDriver downloaders. |
+| All endpoints|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. |
 | Worldwide endpoints| *.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for new machine connectivity. |
 | U.S. Goverment endpoints| *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for new machine connectivity. |
-|Worldwide telemetry endpoints|server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, US Government, and Chinese clouds. Works as the fallback telemetry endpoint.|
+|Worldwide telemetry endpoints|server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, U.S. government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 |EMEA telemetry endpoints|emea.events.data.microsoft.com|https|Handles telemetry for EMEA users.|
-|U.S. Government telemetry endpoints|tb.events.data.microsoft.com|https|Handles telemetry for U.S. Government users.|
+|U.S. Government telemetry endpoints|tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
 |Chinese telemetry endpoints|apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
