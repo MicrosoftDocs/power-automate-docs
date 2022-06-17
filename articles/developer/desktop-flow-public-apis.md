@@ -182,7 +182,8 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])/out
 
 ## Trigger a desktop flow run (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+>[!NOTE]
+>Triggering a desktop flow using Web API is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 By using Dataverse, you can add the functionality of triggering a desktop flow through your application. To do this, you need to use the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
 
