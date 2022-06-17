@@ -1,5 +1,5 @@
 ---
-title: Public API integration for desktop flows | Microsoft Docs
+title: Work with desktop flows using code | Microsoft Docs
 description: Developer guide to integrate desktop flows capabilities within their applications.
 author: benabbon
 ms.topic: article
@@ -10,7 +10,7 @@ search.app:
 search.audienceType: 
   - developer
 ---
-# Public API integration for desktop flows
+# Work with desktop flows using code
 
 Developers can add [desktop flows](/power-automate/desktop-flows/introduction) functionality to their applications, including programmatically triggering and canceling desktop flows. These capabilities are offered as part of the Microsoft Dataverse platform.
 
