@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/08/2022
+ms.date: 06/17/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,7 +25,7 @@ search.audienceType:
 
 # Create a cloud flow in a solution
 
-Cloud flows you create in a solution are known as *solution-aware flows* or simply *solution cloud flows*. Follow these steps to create a solution-aware cloud flow.
+Cloud flows you create in a solution are known as *solution-aware flows*. Follow these steps to create a solution-aware cloud flow.
 
 ## Prerequisites
 
