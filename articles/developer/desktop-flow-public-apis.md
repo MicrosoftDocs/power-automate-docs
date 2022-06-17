@@ -182,6 +182,8 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])/out
 
 ## Trigger a desktop flow run (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 By using Dataverse, you can add the functionality of triggering a desktop flow through your application. To do this, you need to use the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
 
 To call the action, you'll need the following information.
