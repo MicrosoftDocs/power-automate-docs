@@ -197,7 +197,7 @@ To call the action, you'll need the following information.
 `https://flow.microsoft.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`.
   
   > [!NOTE]
-  > See [Setup desktop flows connections and machine credentials](../desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials) for more information.
+  > See [Setup desktop flows connections and machine credentials](../desktop-flows/install.md#setup-desktop-flows-connections-and-machine-credentials) for more information.
 
 ### Request to trigger a desktop flow
 
