@@ -226,7 +226,7 @@ Read the contents of a text file
 |Argument|Type|Description|
 |-----|-----|-----|
 |FileContents|[Text value](../variable-data-types.md#text-value)|The contents as a text|
-|FileContents|[List](../variable-data-types.md#list) of Text values](../variable-data-types.md#text-value)|The contents as a list of texts|
+|FileContents|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The contents as a list of texts|
 
 
 ##### <a name="readtextfromfile_onerror"></a> Exceptions
