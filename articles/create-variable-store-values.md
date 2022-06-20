@@ -30,7 +30,7 @@ Variables exist and are global only within the cloud flow that creates them. Als
 When you reference a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
 
 > [!WARNING]
-> By default, each iteration in 'apply to each' loops run sequentially. You can run the loop iterations in parallel to improve performance. If you use variables in 'apply to each' loops, you *must* run the loop iterations sequentially if it's important for your loop variables to return predictable results.
+> By default, each iteration in 'apply to each' loops run sequentially. You can run the loop iterations in parallel to improve performance. If you use variables in the 'apply to each' loops, you *must* run the loop iterations sequentially if it's important for your loop variables to return predictable results.
 
 ## Prerequisites
 
@@ -83,9 +83,9 @@ You can create a variable and declare its data type and initial value all within
 1. Now, add  the other actions that you want. When you're done, select **Save**.
 
 > [!NOTE]
-> Although the **Initialize variable** action has a `variable` section that's structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
+> Although the **Initialize variable** action has a `variable` section structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
 
-Here are examples for some other variable types.
+Here are examples of other variable types:
 
 *String variable*
 
@@ -171,7 +171,7 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
 Variables are commonly used for counting the number of times that a loop runs. This example shows how to create and use variables for this task by creating a loop that counts the attachments in an email.
 
-1. In the Power Automate, create a cloud flow. Add a trigger that checks for new email and any attachments.
+1. In Power Automate, create a cloud flow. Add a trigger that checks for new email and any attachments.
 
    This example uses the Office 365 Outlook trigger for **When a new email arrives**. You can set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
 
