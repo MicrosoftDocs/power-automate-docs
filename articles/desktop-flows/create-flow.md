@@ -131,7 +131,7 @@ If you've opened and edited an example in the flow designer, select the **Save a
 
    ![Screenshot of the Get special folder action.](media\design-flow\get-special-folder-action-properties.png)
 
-1. Add the **Create Folder** action and set **Create new folder into** to **%SpecialFolderPath%\Countries** and **New folder name** to **%CountryName%**. This action creates a new folder with the specified name, in the specified location.
+1. Add the **Create folder** action and set **Create new folder into** to **%SpecialFolderPath%\Countries** and **New folder name** to **%CountryName%**. This action creates a new folder with the specified name, in the specified location.
 
    ![Screenshot of the Create folder action.](media\design-flow\create-folder-action-properties.png)
 
