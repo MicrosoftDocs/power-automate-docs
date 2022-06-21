@@ -209,15 +209,15 @@ Some of your desktop flows might run for long durations, for example more than 2
 
    - Restart the service on your device.
 
-## Run desktop flows using external links
+## Run desktop flows via console run URLs
 
-Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using external links.
+Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using console run URLs.
 
-You can use the external links in browsers, the Run application, and the Command Prompt to trigger specified flows. If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
+You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, and the Command Prompt. If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
 
-By default, Power Automate always prompts you to confirm the triggering of a desktop flow through an external link. To disable this functionality, navigate to the console settings and disable the option **Prompt me before running flows triggered by URL**.
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow via a URL. To disable this functionality, navigate to the console settings and disable the option **Display confirmation dialog when invoking flows via URL**.
 
-![Screenshot of the Prompt me before running flows triggered by URL option in the console settings.](media/run-flow-external-link/external-links-console-settings.png)
+![Screenshot of the Prompt me before running flows triggered by URL option in the console settings.](media/run-flow-url/console-run-url-console-settings.png)
 
 ### Prerequisites 
 
@@ -225,9 +225,9 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 - The user must be signed in.
 - The user needs a trial or paid organization subscription or a pay-as-you-go environment.
 
-### Create an external link
+### Create a console run URL 
 
-To generate an external link that triggers a desktop flow, use one of the following formats:
+To generate a URL that triggers a desktop flow, use one of the following formats:
 
 ```
 "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"
@@ -246,28 +246,28 @@ To generate an external link that triggers a desktop flow, use one of the follow
 ``` 
 
 >[!Important]
-> If a flow is already running, it won't run again when the external link attempts to trigger it.
+> If a flow is already running, it won't run again when the URL is invoked.
 
 The first two formats don't define a specific environment, so Power Automate automatically uses the currently selected console environment. The command will be neglected if both flow ID and flow name aren't specified.
 
-If the console is set to another environment than the one specified in the link, the console environment will automatically change.
+If the console is set to another environment than the one specified in the URL, the console environment will automatically change.
 
 ### Find environment and desktop flow IDs
 
 To find the ID of an environment, navigate to the [Power Automate portal](https://flow.microsoft.com/) and select the desired environment. Then, navigate to the **My flows** tab and copy the environment ID from the address line. 
 
-![Screenshot of the environment ID in the address line.](media/run-flow-external-link/find-environment-id.png)
+![Screenshot of the environment ID in the address line.](media/run-flow-url/find-environment-id.png)
 
 To find the ID of a desktop flow, navigate to the **My flows** tab of the [Power Automate portal](https://flow.microsoft.com/), select the desired flow, and copy its ID from the address line. 
 
-![Screenshot of the desktop flow ID in the address line.](media/run-flow-external-link/find-desktop-flow-id.png)
+![Screenshot of the desktop flow ID in the address line.](media/run-flow-url/find-desktop-flow-id.png)
 
-### Use an external link in the Command Prompt 
+### Use a console run URL in the Command Prompt 
 
 To trigger a flow using the Command Prompt, use a command with the following syntax:
 
 >[!NOTE]
-> You can replace the second part of the command with any of the previously presented external link formats.
+> You can replace the second part of the command with any of the previously presented external URL formats.
 
 ```
 "C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe" "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"
