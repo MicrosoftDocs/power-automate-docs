@@ -17,13 +17,13 @@ search.audienceType:
 
 # Pass a datatable from a cloud flow to a desktop flow
 
-Some automation scenarios require users to pass data in tabular form from a cloud flow to a desktop flow. To implement this functionality, replicate the following flow:
+Some automation scenarios require users to pass data in tabular form from a cloud flow to a desktop flow. To implement this functionality, replicate the following steps:
 
-1. Create a new input variable](../manage-variables.md#create-an-input-variable) of a [datatable datatype](../variable-data-types.md#datatable). In this example, the input variable is named **DataInput**.
+1. Create a new [input variable](../manage-variables.md#create-an-input-variable) of a [datatable datatype](../variable-data-types.md#datatable). In this example, the input variable is named **DataInput**.
 
     ![Screenshot of the Add a new input variable dialog.](media/passing-datatable/creating-new-input-variable.png)
 
-1. Inside your cloud flow, initialize a new string variable with the JSON text. Then, parse it and use the result as an input value in the **Run a flow built with Power Automate for desktop** action.
+1. Inside your cloud flow, initialize a new string variable with a JSON text representing your datatable. Then, parse it and use the result as an input value in the **Run a flow built with Power Automate for desktop** action.
 
     ![Screenshot of the created cloud flow that passes the datatable in a JSON format.](media/passing-datatable/cloud-flow-pass-datatable.png)
 
