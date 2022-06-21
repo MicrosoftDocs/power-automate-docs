@@ -85,18 +85,18 @@ search.audienceType:
 
    ![Screenshot of the Add a new input variable dialog.](media\link-pad-flow-portal\add-new-input-var.png)
 
-1. Create an input variable to pass data from Power Automate web portal to your desktop flow. The variable can be used anywhere in the desktop flow.
+1. Create an input variable to pass data from cloud flows to your desktop flow. The variable can be used anywhere in the desktop flow.
 
-1. To pass data from your desktop flow to Power Automate web portal, create an Output variable.
+1. To pass data from your desktop flow to a cloud flow, create an output variable.
 
-1. Back in Power Automate, any input variables appear as fields in the UI action.
+1. Back in the Power Automate portal, any input variables appear as fields in the **Run a flow built with Power Automate for desktop** action.
 
    > [!NOTE]
    > If an input variable contains sensitive data, you may want to obfuscate or omit it from the logs. To find more information regarding sensitive text inputs, refer to [Manage sensitive input like passwords](../how-tos-use-sensitive-input.md).
 
-   ![Screenshot of the input variables in the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\run-desktop-flow-v2-action-properties-2.png)
+   ![Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.](media\link-pad-flow-portal\run-desktop-flow-v2-action-properties-2.png)
 
-1. Output variables from desktop flows can be used in other Power Automate actions.
+1. Output variables from desktop flows can be used in most cloud flow actions.
 
 
 
