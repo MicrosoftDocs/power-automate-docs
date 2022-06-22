@@ -99,7 +99,7 @@
       items:
       - name: Get started with approvals
         href: get-started-approvals.md
-      - name: Trigger approvals from SharePoint lists
+      - name: Trigger approvals from lists
         href: trigger-sharepoint-list.md
       - name: Trigger approvals from SharePoint library
         href: trigger-sharepoint-library.md
