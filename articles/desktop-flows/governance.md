@@ -175,9 +175,9 @@ You can use the following registry entry to configure how Power Automate for des
 - **3**: Power Automate for desktop won't display notifications.
 
 
-## Disable confirmation when invoking Power Automate desktop flows via URL
+## Disable confirmation dialog when invoking Power Automate desktop flows via URL
 
-You can use the following registry entry to allow Power Automate for desktop to display a confirmation dialog when invoking desktop flows via URL.
+You can use the following registry entry to prevent Power Automate for desktop from displaying a confirmation dialog when invoking desktop flows via URL.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
