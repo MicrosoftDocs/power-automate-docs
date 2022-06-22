@@ -693,6 +693,8 @@
   items:
   - name: Enterprise developers, partners, and ISVs
     href: ./developer/dev-enterprise-intro.md
+  - name: Work with desktop flows using code
+    href: ./developer/desktop-flow-public-apis.md
   - name: Build and certify custom connectors
     href: ./developer/register-custom-api.md
   - name: Integrate with websites and other technologies
