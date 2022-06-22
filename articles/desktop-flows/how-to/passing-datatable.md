@@ -23,12 +23,12 @@ Some automation scenarios require users to pass data in tabular form from a clou
 
     ![Screenshot of the Add a new input variable dialog.](media/passing-datatable/creating-new-input-variable.png)
 
-1. Inside your cloud flow, initialize a new string variable with a JSON text representing your datatable. Then, parse it and use the result as an input value in the **Run a flow built with Power Automate for desktop** action.
+1. Inside your cloud flow, initialize a new variable of type array with an array of objects (JSON) representing your datatable. Then, use it as an input value in the **Run a flow built with Power Automate for desktop** action.
 
     ![Screenshot of the created cloud flow that passes the datatable in a JSON format.](media/passing-datatable/cloud-flow-pass-datatable.png)
 
 
-      In the following example, you can see the structure of a JSON block.
+      In the following example, you can see the structure of a JSON block:
 
     ``` JSON
     [
