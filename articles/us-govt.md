@@ -8,7 +8,7 @@ author: msftman
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 03/14/2022
+ms.date: 06/22/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -268,8 +268,6 @@ Some of the features available in the commercial version of Flow are not availab
 >Third-party connectors are not yet available for GCC High nor DoD.
 
 Microsoft is investigating the data loss prevention (DLP) feature, considering the possibility for connectors to be *blocked by default*. Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
-
-- [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
 
 - [Power Platform admin center](/power-platform/admin/admin-documentation) – Some functionality, such as managing data gateways and certain analytics reports, are not available.
 
