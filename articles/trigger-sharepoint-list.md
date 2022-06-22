@@ -8,7 +8,7 @@ author: msftman
 manager: tapanm
 ms.subservice: cloud-flow
 ms.topic: condeptual
-ms.date: 06/17/2022
+ms.date: 06/22/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -84,7 +84,7 @@ Once you have a list for which you want to create an approval process:
     >[!div class="mx-imgBorder"]  
     >![Screenshot of save and test the flow.](media/trigger-sharepoint-list/save-test.png "Save and test the flow")
 
-1. Power Automate alerts you once the flow is in test mode. When it is, create a new item on your list and then look at your flow to see it.  
+1. Power Automate alerts you after the flow enters test mode. When it is in test mode, create a new item on your list and then look at your flow to see it.  
 
    You'll see that once your flow starts, it runs to the approval action where it shows an orange circle on the top right of the approval action step. This means that the assigned approvers need to respond to the approval request for the flow to continue.
 
