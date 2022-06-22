@@ -79,19 +79,28 @@ Solution-aware cloud flows can be found either via the **My flows** lists or via
 ### Find a solution-aware cloud flow via My flows
 
 1. In [Power Automate](https://powerautomate.com), select **My flows** from the navigation bar on the left side.
-1. Find the flow you want to edit. Cloud flows you own will be in the **Cloud flows** tab and flows you have co-ownership of will be in the **Shared with me** tab.
+1. Find the flow you want to edit.
+   >[!TIP]
+   >Cloud flows you own are on the **Cloud flows** tab and flows for which you are a co-owner are on the **Shared with me** tab.
 
-The **Shared with me** tab shows solution cloud flows that you are a co-owner of, that are owned by a Dataverse team you are a member of, or that are co-owned by a Dataverse team you are a member of. If you are the owner of a solution cloud flow, then it will always show in the **Cloud flows** tab. Flows you are added to as a 'run only' user will not be displayed in the **My flows** lists, unless you are an owner or a co-owner.
+The **Shared with me** tab shows the following solution cloud flows.
+
+   - Flows you co-own.
+   - Flows that are owned by a Dataverse team in whcih you are a member.
+   - Flows that are co-owned by a Dataverse team in which you are a member. 
+
+If you are the owner of a solution cloud flow, you can always find it on the **Cloud flows** tab. If you have the 'run only' permission to a flow, you will only see that flow on the **My flows** tab if you are an owner or a co-owner too.
 
 ### Find a solution-aware cloud flow via Solutions
 
 1. Sign into [Power Automate](https://powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
 1. Select the solution that contains the flow you want to edit.
 
-## Find a solution containing a solution-aware cloud flow
-Solution-aware cloud flows have a **Solutions** card in the flow details page that provides a list of the solutions that reference that cloud flow. To open the solution, click on the solution name. 
+## Find a solution that contains a solution-aware cloud flow
 
-The **Objects** tab of a solution will show all the solution objects in the solution such as connection references, environment variables, or child flows that the flow might reference. The **Overview** tab will show the details of the solution, such as the description and status, and provide access to solution actions, such as [export](./export-flow-solution.md).
+Solution-aware cloud flows have a **Solutions** card in the flow details page that provides a list of the solutions that reference that cloud flow. To open the solution, select the solution name. 
+
+The **Objects** tab of a solution shows all the solution objects in the solution, such as connection references, environment variables, or child flows that the flow might reference. The **Overview** tab shows the details of the solution, such as the description and status, and provides access to solution actions, such as [export](./export-flow-solution.md).
 
 ## Learn more
 
