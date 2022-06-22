@@ -178,7 +178,7 @@ The default value of an input variable is visible in the creating or editing dia
 
 On the other hand, the default value isn't visible in the variables pane. Additionally, the default value of a sensitive input variable is hidden in the **Flow input** dialog, which appears when a flow containing input variables is run through the console.
 
-The eye icon to reveal the value isn't available unless the user deletes a default text value and provides a new one. This icon doesn't appear when populating other datatypes besides text.
+The eye icon to reveal the value isn't available unless the user deletes a default text value and provides a new one. New values are visible when populating other datatypes besides text.
 
 ![Screenshot of the Flow inputs dialog with a sensitive variable.](media\sensitive-variables\flow-inputs-dialog-sensitive-variable.png)
 
