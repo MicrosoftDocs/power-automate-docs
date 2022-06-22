@@ -77,8 +77,8 @@ To create an input variable:
     - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
     - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console. When creating a custom object, list, or datatable input variable, Power Automate allows you to construct the default value through a visual editor or a JSON editor.
         ![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
-    - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
-    - **Description**: A description of the variable that will appear in Power Automate and the Flow inputs dialog.
+    - **External name**: The name of the variable used outside the flow designer. The external name is the name that will appear in the cloud or desktop flow designer while calling the flow.
+    - **Description**: A description of the variable that will appear in the cloud or desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
 
     > [!NOTE]
@@ -105,8 +105,8 @@ To create an output variable:
 
     - **Variable name**: The name of the variable in the flow.
     - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
-    - **External name**: The name used outside the flow. The external name is the name that will appear in Power Automate.
-    - **Description**: A description of the variable that will appear in Power Automate.
+    - **External name**: The name of the variable used outside the flow designer. The external name is the name that will appear in the cloud or desktop flow designer while calling the flow.A description of the variable that will appear in the cloud or desktop flow designer while calling the flow.
+    - **Description**: A description of the variable that will appear in the cloud or desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](#sensitive-variables).
 
     > [!NOTE]
