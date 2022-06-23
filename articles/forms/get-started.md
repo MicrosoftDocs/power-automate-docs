@@ -12,7 +12,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/11/2022
+ms.date: 06/23/2022
 ms.author: napienko
 search.app: 
   - Flow
@@ -28,11 +28,11 @@ The easiest way to add a form to a flow is to start with a template. [Search the
 
 :::image type="content" source="../media/forms/templates-screen.png" alt-text="Screenshot of Power Automate templates related to Microsoft Forms.":::
 
-What if you found a template that's similar to what you want to do but isn't quite right for your scenario? No problem. Create a flow from the template and customize it. You can add, edit, and remove triggers and actions. You can even [copy and paste actions](/power-automate/multi-step-logic-flow#copy-and-paste-actions) in the same flow or across flows to speed up the process.
+If you find a template that's similar to what you want to do but it isn't exactly right for your scenario, you can still create a flow from the template and then customize it. You can add, edit, and remove triggers and actions. You can even [copy and paste actions](/power-automate/multi-step-logic-flow#copy-and-paste-actions) in the same flow or across flows to speed up the process.
 
-Can't find a template you like? [Create a flow from scratch](/power-automate/get-started-logic-flow), connect the services you want to use, and add triggers and actions as needed.
+If you can't find a template that you like, [Create a flow from scratch](/power-automate/get-started-logic-flow), connect the services you want to use, and then add the triggers and actions that your scenario requires.
 
-If you need inspiration, check out our list of some of the most [common ways to use forms in a flow](popular-scenarios.md).
+If you need inspiration, check out the list of the most [common ways to use forms in a flow](popular-scenarios.md).
 
 ## More information
 
