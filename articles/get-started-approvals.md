@@ -1,20 +1,15 @@
 ---
-title: Get started with Power Automate approvals. | Microsoft Docs
+title: Get started with Power Automate approvals | Microsoft Docs
 description: Learn about the permissions and general details about Power Automate approvals.
 services: ''
 suite: flow
-documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/12/2021
+ms.topic: conceptual
+ms.date: 06/17/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -26,7 +21,7 @@ ms.custom: intro-internal
 
 # Get started with approvals
 
-Whether you need written acknowledgment from your manager or a formal authorization from a diverse group of stakeholders, getting things approved is part of almost every organization. 
+Whether you need written acknowledgment from your manager or a formal authorization from a diverse group of stakeholders, getting things approved is part of almost every organization.
 
 With the approvals capability in Power Automate, you can automate sign-off requests and combine human decision-making for workflows. Some popular cases where approvals can be used include:
 
@@ -40,17 +35,18 @@ When you submit an approval in a flow, approvers are notified and can review and
 
 ## Approvals actions  
   
-*Actions* are the events you want your flow to perform after the trigger starts the flow. For example, when a new item is added to a SharePoint list, trigger an approval to have somebody review the new item. 
+*Actions* are the events you want your flow to perform after the trigger starts the flow. For example, when a new item is added to a list created with Microsoft Lists, trigger an approval to have somebody review the new item.
 
 The following image shows the full list of [approval actions](/connectors/approvals/#actions) that you can use in your flows.  
-  
-![Screenshot showing the actions Create an approval, Start and wait for an approval, and Wait for an approval.](media/get-started-approvals/list-approval-actions.png)
+
+>[!div class="mx-imgBorder"]  
+>![Screenshot showing the actions Create an approval, Start and wait for an approval, and Wait for an approval.](media/get-started-approvals/list-approval-actions.png "Approvals actions")
 
 If you want to quickly get started with approvals, use the **Start and wait for an approval** action. This action lets you provide the information that should be in the approval request and the approvers who will receive the request. 
 
 When you use the **Start and wait for an approval** action, the flow starts and then waits for the approvers' response before it completes the run.  
 
-There are four approval types you can use:
+There are four approval types you can use.
 
 | **Approval type**                         | **Behavior**          |
 |-------------------------------------------|-----------------------------------------------|
@@ -79,7 +75,7 @@ It can take a few minutes for the database provisioning to be completed, and you
 
 Because the approvals connector is a standard connector, any license that grants access to Power Automate and the ability to use standard connectors is sufficient to create approval flows.
 
-Here are the licenses that grant rights to use standard connectors.
+Here are the licenses that grant rights to use standard connectors:
 
 - [Power Automate](https://powerautomate.microsoft.com/pricing/).
 - Office 365.
@@ -119,16 +115,8 @@ The following tenant configurations don't allow this:
 
 After you assign an approval request to a user, they can respond directly from an Outlook email, a Microsoft Teams adaptive card, or the Power Automate action center if they have a Power Automate license or an Office 365 or a Dynamics 365 license with built-in Power Automate capabilities. You can find a list of these Office 365 and Dynamics 365 licenses in the Microsoft Power Apps and Power Automate licensing guide.
 
-## Next steps
+## Next step
 
-- Create [approval flows](modern-approvals.md).
-
-
-
-
-
-
- 
-
+Create [approval flows](modern-approvals.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
