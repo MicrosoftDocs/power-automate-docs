@@ -4,8 +4,8 @@ description: Learn how to restore deleted flows with PowerShell in Power Automat
 author: msftman
 manager: tapanm
 ms.subservice: cloud-flow
+ms.date: 06/23/2022
 ms.topic: conceptual
-ms.date: 06/13/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -19,6 +19,7 @@ search.audienceType:
 If you or someone else accidentally deletes a flow that isn't part of a solution, you can use PowerShell to restore it within 28 days of deletion.
 
 >[!NOTE]
+>
 > - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to create a support ticket with Microsoft for assistance.
 > - Flows that have been deleted more than 28 days ago can't be recovered, neither with PowerShell script nor Microsoft support.
 
