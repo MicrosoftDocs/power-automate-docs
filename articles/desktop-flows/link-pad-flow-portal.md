@@ -1,5 +1,5 @@
 ---
-title: Trigger a Power Automate desktop flow from another flow | Microsoft Docs
+title: Trigger a desktop flow from a cloud flow | Microsoft Docs
 description: Link a Power Automate desktop flow with a cloud flow in the Power Automate portal
 author: georgiostrantzas
 
@@ -16,10 +16,13 @@ search.audienceType:
 ---
 
 
-# Trigger a Power Automate desktop flow from another flow
+# Trigger a desktop flow from a cloud flow
 
 
 ## Prerequisites
+
+> [!IMPORTANT]
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 - To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
 
@@ -67,7 +70,7 @@ search.audienceType:
 
    ![Screenshot of the flow designer.](media\link-pad-flow-portal\flow-designer-blank.png)
 
-1. Optionally, create Input/output variables to pass data back and forth from the Power Automate web portal to Power Automate for desktop. In the Variables pane, select **+** to add an input or output variable.
+1. Optionally, create Input/output variables to pass data back and forth from the Power Automate web portal to your desktop flow. In the Variables pane, select **+** to add an input or output variable.
 
    ![Screenshot of the option to create a new input variable.](media\link-pad-flow-portal\new-input-output-var.png)
 
@@ -82,9 +85,9 @@ search.audienceType:
 
    ![Screenshot of the Add a new input variable dialog.](media\link-pad-flow-portal\add-new-input-var.png)
 
-1. Create an Input variable to pass data from Power Automate web portal to Power Automate for desktop. The variable can be used anywhere in the desktop flow.
+1. Create an Input variable to pass data from Power Automate web portal to your desktop flow. The variable can be used anywhere in the desktop flow.
 
-1. To pass data from Power Automate for desktop to Power Automate web portal, create an Output variable.
+1. To pass data from your desktop flow to Power Automate web portal, create an Output variable.
 
 1. Back in Power Automate, any input variables appear as fields in the UI action.
 
@@ -93,7 +96,7 @@ search.audienceType:
 
    ![Screenshot of the input variables in the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\run-desktop-flow-v2-action-properties-2.png)
 
-1. Output variables from Power Automate for desktop can be used in other Power Automate actions.
+1. Output variables from desktop flows can be used in other Power Automate actions.
 
 
 

@@ -29,7 +29,7 @@ The installer contains all the components you need to record, edit, and test you
 
 ## Install Power Automate
 
-Follow these steps to install the Power Automate for desktop:
+Follow these steps to install Power Automate for desktop:
 
 1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
 1. Open the **Setup.Microsoft.PowerAutomate.exe** file. 
@@ -82,7 +82,7 @@ During installation, you can change the default settings if you don't want to se
 
 ## Install the Power Automate browser extension 
 
-After the installation completes, you will need to install and enable the extension for Power Automate for desktop. This extension will allow you to record and run web actions in your desktop flows.
+After the installation completes, you will need to install and enable the browser extension for Power Automate. This extension will allow you to record and run web actions in your desktop flows.
 
 ![Screenshot of the Installation success dialog.](../media/desktop-flows-setup/screen.png)
 
@@ -189,7 +189,7 @@ To update Power Automate for desktop, use the same command line arguments that y
 ### Install the gateway with PowerShell Cmdlets
 
 > [!IMPORTANT]
-> Power Automate for desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 Apart from direct connectivity, you can establish communication with a  machine using on-premises data gateways. To install, configure, and manage a gateway, use [PowerShell Cmdlets](/powershell/gateway/overview).
 
@@ -198,6 +198,9 @@ Apart from direct connectivity, you can establish communication with a  machine 
 
 
 ## Setup desktop flows connections and machine credentials
+
+> [!IMPORTANT]
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 1. Sign into [Power Automate](https://powerautomate.microsoft.com).
 1. Expand **Data** on the left side of the screen.
@@ -261,8 +264,8 @@ Follow these steps to install Selenium IDE:
 
 ## Install the on-premises data gateway to run your desktop flows from the cloud
 
-> [!NOTE]
-> Power Automate for desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
+> [!IMPORTANT]
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 You will need the gateway to trigger your desktop from an [event, schedule, or button flow.](..\flow-types.md) on a remote device.
 
@@ -279,8 +282,8 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 
 ## Troubleshoot missing gateway
 
-> [!NOTE]
-> Power Automate for desktop now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Manage machines](manage-machines.md).
+> [!IMPORTANT]
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 You might not find the gateway in the list while creating the connection for the following reasons:
 

@@ -2,12 +2,11 @@
 title: Transform and map data in process advisor (preview) | Microsoft Docs
 description: This topic describes how to transform and map data with process mining in the process advisor feature in Power Automate.
 author: nijemcevic 
-
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 11/02/2021
+ms.date: 05/25/2022
 ms.author: tatn
-ms.reviewer: v-aangie
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 

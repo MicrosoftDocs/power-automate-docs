@@ -45,7 +45,7 @@ Most browser automation actions require you to specify a browser instance and a 
 
 ![Screenshot of the inputs of the Populate text field on web page action.](.\media\web-automation\web-action-inputs.png)
 
-Existing UI elements are displayed in the UI element pane, while new ones can be added directly through the action's properties or the pane. To find more information about UI elements nad their different types, refer to [Automate using UI elements](ui-elements.md).
+Existing UI elements are displayed in the UI element pane, while new ones can be added directly through the action's properties or the pane. To find more information about UI elements and their different types, refer to [Automate using UI elements](ui-elements.md).
 
 > [!NOTE]
 > Browser automation actions accept exclusively UI elements captured from web pages. Therefore, existing UI elements captured from desktop applications aren't displayed in the browser automation actions.
@@ -74,6 +74,10 @@ To extract a piece of data from a web page, use the **Get details of web page** 
 > You can find more information regarding details extraction from web pages in [Retrieve details from a web page](how-to/retrieve-details-web-page.md).
 
 ![Screenshot of the Get details of web page action.](.\media\web-automation\get-details-of-web-page-action.png)
+
+Apart from the prepopulated options, you can manually select to retrieve any HTML attribute the selected web element may have. 
+
+Additionally, the **Get details of element on web page** action supports the **waelementrectangle** attribute that retrieves the top-left point and the dimensions of a web element. You can find more information regarding this attribute in [Get the coordinates and size of a web element](how-to/get-coordinates-size-web-element.md).
 
 ![Screenshot of the Get details of element on web page action.](.\media\web-automation\get-details-of-element-on-web-page-action.png)
 

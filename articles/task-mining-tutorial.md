@@ -2,21 +2,20 @@
 title: Get started with task mining in process advisor  | Microsoft Docs
 description: Walk through a tutorial with demo data to experience task mining in the process advisor feature of Power Automate.
 author: nijemcevic 
-
 ms.subservice: process-advisor
 ms.topic: article
 ms.custom: intro-internal
-ms.date: 11/02/2021
+ms.date: 05/25/2022
 ms.author: tatn
-ms.reviewer: v-aangie
+ms.reviewer: angieandrews
 search.app: 
-  - Flow[https://preview.flow.microsoft.com/en-us/?processinsights-core.tabularData=true](https://preview.flow.microsoft.com/en-us/?processinsights-core.tabularData=true)
+  - Flow[https://preview.flow.microsoft.com/?processinsights-core.tabularData=true](https://preview.flow.microsoft.com/?processinsights-core.tabularData=true)
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Tutorial: Get started with task mining in process advisor
+# Tutorial: Get started with task mining
 
 This tutorial with sample data allows you to experience task mining in the process advisor feature. In this tutorial, you will:
 
@@ -29,7 +28,7 @@ This tutorial with sample data allows you to experience task mining in the proce
 
 For the task mining tutorial, download [User recording demo data](https://go.microsoft.com/fwlink/?linkid=2175600). For the process mining tutorial, go to [Tutorial: Get started with process mining (preview)](process-mining-tutorial.md).
 
-## Get process advisor ready 
+## Get process advisor ready
 
 1. Sign in to [Power Automate](https://flow.microsoft.com/).
 
@@ -86,7 +85,7 @@ For the task mining tutorial, download [User recording demo data](https://go.mic
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the process advisor home screen.](media/task-mining-tutorial/select-processes.png "Process advisor home screen")
 
-11.	Select the **Invoice submission process**.
+1. Select the **Invoice submission process**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the invoice submission process.](media/task-mining-tutorial/invoice-submission.png "Invoice submission process")
@@ -127,7 +126,7 @@ You'll see the following features:
 - **Analyze**: Analyze a process.
 
 - **Create activity names**: Create activity names for your process.
- 
+
 - **Delete process**: Delete your process.
 
 ## Analyze a process
@@ -165,7 +164,7 @@ This section explains what you can do on the Analytics screen.
 
 - **Process**: Provides detailed information about the analyzed process. This is where users can find the process map and general information about the process (time analytics per variant and per the recording’s author).
 
-- **Application (preview)**: Provides information about the apps used in recordings. This includes what apps were used by authors, how often were they used, and what the transitions were between them. This report explains which connectors should be used when implementing automation for the process, and where potentially to use Power Automate for desktop as there’s no existing connector.
+- **Application (preview)**: Provides information about the apps used in recordings. This includes what apps were used by authors, how often were they used, and what the transitions were between them. This report explains which connectors should be used when implementing automation for the process, and where potentially to use desktop flows as there’s no existing connector.
 
 ### Business process step relationships
 

@@ -51,17 +51,17 @@ Browser automation actions enable users to interact with web applications and co
 
 To add a new UI element, select **Add UI element** through the deployed browser automation action or the **UI elements** tab of the flow designer.
 
-![Screenshot of the options to create a new UI element.](\media\webautomation\create-ui-element.png)
+![Screenshot of the options to create a new UI element.](media\webautomation\create-ui-element.png)
 
 All web-related UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
 
 Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you have the option to edit an existing selector or build one from scratch. 
 
-![Screenshot of the options to edit and create selectors.](\media\webautomation\create-selector.png)
+![Screenshot of the options to edit and create selectors.](media\webautomation\create-selector.png)
 
 To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
 
-![Screenshot of the available operators in the selector builder.](\media\webautomation\selector-operators.png)
+![Screenshot of the available operators in the selector builder.](media\webautomation\selector-operators.png)
 
 >[!NOTE]
 > You can find more information about developing web flows and creating custom selectors in [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
@@ -78,24 +78,24 @@ You can find more information on how to use this action [here](../automation-web
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the UI element on web page to extract data from|
-|Extraction parameters|No|Datatable||The parameters to use when extracting data. Depending on the extraction mode, this accepts different data.|
-|Max web pages to process|No|Numeric value||The maximum number of web pages to process|
-|Pager CSS selector|No|Text value||The pager CSS selector|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to extract data from|
+|Extraction parameters|No|[Datatable](../variable-data-types.md#datatable)||The parameters to use when extracting data. Depending on the extraction mode, this accepts different data.|
+|Max web pages to process|No|[Numeric value](../variable-data-types.md#numeric-value)||The maximum number of web pages to process|
+|Pager CSS selector|No|[Text value](../variable-data-types.md#text-value)||The pager CSS selector|
 |Extraction mode|N/A|Undefined, Single value, Handpicked values, List, Table, Entire HTML table|Single value|Specify what to extract from the web page|
-|Use paging|N/A|Boolean value|False|Specify whether to use paging|
-|Get all web pages|N/A|Boolean value|False|Specify whether to get all web pages|
-|Process data upon extraction|N/A|Boolean value|False|Specify whether to process extracted data to present them exactly as displayed in the webpage. Processing of extracted data includes displaying of the information nested in iframes and filtering through hidden or visible elements. For larger datasets, having this option enabled isn't recommended as it will increase the extraction time.|
-|Timeout|Yes|Numeric value|60|Set the time in seconds that you want to wait for the extraction to be completed before the action fails|
+|Use paging|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to use paging|
+|Get all web pages|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to get all web pages|
+|Process data upon extraction|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to process extracted data to present them exactly as displayed in the webpage. Processing of extracted data includes displaying of the information nested in iframes and filtering through hidden or visible elements. For larger datasets, having this option enabled isn't recommended as it will increase the extraction time.|
+|Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the extraction to be completed before the action fails|
 |Store data mode|N/A|Variable, Excel spreadsheet|Variable|Specify whether to store the extracted data in a variable or an Excel spreadsheet|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|ExcelInstance|Excel instance|The Excel instance with the extracted data. Use this instance to manipulate the spreadsheet (or save and close it) by using the dedicated Excel actions.|
-|DataFromWebPage|Datatable|The extracted data in the form of a single value, list, datarow or datatable|
+|ExcelInstance|[Excel instance](../variable-data-types.md#instances)|The Excel instance with the extracted data. Use this instance to manipulate the spreadsheet (or save and close it) by using the dedicated Excel actions.|
+|DataFromWebPage|[Datatable](../variable-data-types.md#datatable)|The extracted data in the form of a single value, list, datarow or datatable|
 
 
 ##### <a name="extractdata_onerror"></a> Exceptions
@@ -111,14 +111,14 @@ Get a property of a web page, such as its title or its source text
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |Get|N/A|Web page description, Web page meta keywords, Web page title, Web page text, Web page source, Web browser's current URL address|Web page description|Select the information to retrieve from the web page|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|WebPageProperty|Text value|The details retrieved from the web page|
+|WebPageProperty|[Text value](../variable-data-types.md#text-value)|The details retrieved from the web page|
 
 
 ##### <a name="getdetailsofwebpage_onerror"></a> Exceptions
@@ -132,15 +132,15 @@ Get the value of an element's attribute on a web page
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the UI element on web page to get details from|
-|Attribute name|No|Text value|Own Text|Enter or select the attribute whose value to retrieve|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to get details from|
+|Attribute name|No|[Text value](../variable-data-types.md#text-value)|Own Text|Enter or select the attribute whose value to retrieve|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|AttributeValue|Text value|The value of the web element's attribute|
+|AttributeValue|[Text value](../variable-data-types.md#text-value)|The value of the web element's attribute|
 
 
 ##### <a name="getdetailsofelement_onerror"></a> Exceptions
@@ -154,11 +154,11 @@ Take a screenshot of the web page (or an element of the web page) currently disp
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |Capture|N/A|Entire web page, Specific element|Entire web page|Specify whether to capture the entire web page or only a specific element of it|
-|UI element|No|WebControl||Select the UI element on web page to capture|
+|UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to capture|
 |Save mode|N/A|Clipboard, File|Clipboard|Specify whether to save the image into a file or store it into the clipboard|
-|Image file|No|File||Set the full path for the file to save the image capture|
+|Image file|No|[File](../variable-data-types.md#files-and-folders)||Set the full path for the file to save the image capture|
 |File format|N/A|BMP, EMF, EXIF, GIF, JPG, PNG, TIFF, WMF|BMP|Select the format of the image file|
 
 
@@ -181,11 +181,12 @@ Set the focus on an input element of a web page and scroll it into view
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the UI element on web page to focus|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to focus|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
 ##### Variables Produced
@@ -203,16 +204,17 @@ Fill a text field in a web page with the specified text
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the text field to populate|
-|Text|No|Encrypted value||Enter the text to fill in the text field|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the text field to populate|
+|Text|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||Enter the text to fill in the text field|
 |If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
-|Populate text using physical keystrokes|N/A|Boolean value|False|Emulate using physical keystrokes when populating text to UI text field elements. Physical keystrokes are required for cases that emulated text population doesn't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
-|Emulate typing|N/A|Boolean value|True|Specify whether to fill the text field at once by simply setting the value of the text box, or emulate a user typing by sending characters one by one. The latter method is slower, but required in some complex web pages.|
-|Unfocus text box after filling it|N/A|Boolean value|False|Choose whether to unfocus the text box right after this action fills it with the specified text. In case of scraping autocompletion lists, this parameter should be set to "False".|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after populating the text field|
+|Populate text using physical keystrokes|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Emulate using physical keystrokes when populating text to UI text field elements. Physical keystrokes are required for cases that emulated text population doesn't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
+|Emulate typing|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to fill the text field at once by simply setting the value of the text box, or emulate a user typing by sending characters one by one. The latter method is slower, but required in some complex web pages.|
+|Unfocus text box after filling it|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Choose whether to unfocus the text box right after this action fills it with the specified text. In case of scraping autocompletion lists, this parameter should be set to "False".|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after populating the text field|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after populating the text field|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
 
@@ -231,12 +233,13 @@ Check or uncheck a check box in a web form
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the check box to set the state of|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the check box to set the state of|
 |Check box state|N/A|Checked, Unchecked|Checked|Select the check box state|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after setting the check box state|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after setting the check box state|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after setting the check box state|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
 ##### Variables Produced
@@ -254,11 +257,12 @@ Select a radio button on the web page
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||The radio button to select|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after selecting the radio button|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||The radio button to select|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after selecting the radio button|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after selecting the radio button|
-|Dialog button to press|Yes|Text value|OK|The dialog button to press if a pop-up dialog appears|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|The dialog button to press if a pop-up dialog appears|
 
 
 ##### Variables Produced
@@ -276,14 +280,15 @@ Set or clear the selected option for a drop-down list in a web form
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the drop-down list to set its value|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the drop-down list to set its value|
 |Operation|N/A|Clear all options, Select options by name, Select options by index|Clear all options|Select whether to select a value or clear the selected value of the drop-down list|
-|Option name(s)|No|List of Text values||Enter one or more options (one per line if more than one) to be selected in the drop-down list. Multiple options make sense only when working with multi-select lists. If the list is single-selection, then only the first option specified will be used.|
-|Option indices|No|List of Numeric values||Type a space-separated list of 1-based indices (e.g. 1 3 4)|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after setting the drop-down list value|
+|Option name(s)|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||Enter one or more options (one per line if more than one) to be selected in the drop-down list. Multiple options make sense only when working with multi-select lists. If the list is single-selection, then only the first option specified will be used.|
+|Option indices|No|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)||Type a space-separated list of 1-based indices (e.g. 1 3 4)|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after setting the drop-down list value|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after setting the drop-down list value|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
 ##### Variables Produced
@@ -301,11 +306,12 @@ Press a web page button
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the button to press|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after pressing the button|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the button to press|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after pressing the button|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after pressing the button|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
 ##### Variables Produced
@@ -324,10 +330,10 @@ Mark the beginning of a conditional block of actions, depending on whether a spe
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |Check if web page|N/A|Contains element, Doesn't contain element, Contains text, Doesn't contain text|Contains element|Check whether a specific text or web page element exists in a web page|
-|UI element|No|WebControl||Select the UI element on web page to check for|
-|Text|No|Text value||Enter the text on web page to check for|
+|UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to check for|
+|Text|No|[Text value](../variable-data-types.md#text-value)||Enter the text on web page to check for|
 
 
 ##### Variables Produced
@@ -344,10 +350,10 @@ Suspend the flow until a specific piece of text or web page element appears or d
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |Wait for web page to|N/A|Contain element, Not contain element, Contain text, Not contain text|Contain element|Specify whether to wait for a specific text or web page element to (dis)appear in a web page|
-|UI element|No|WebControl||Select the UI element on web page to check for|
-|Text|No|Text value||Enter the text on web page to check for|
+|UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to check for|
+|Text|No|[Text value](../variable-data-types.md#text-value)||Enter the text on web page to check for|
 
 
 ##### Variables Produced
@@ -368,16 +374,17 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch automation browser, Launch new Internet Explorer, Attach to running Internet Explorer|Launch automation browser|Specify whether to launch the automation browser or a new instance of Internet Explorer or attach to an existing one|
 |Attach to Internet Explorer tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to an Internet Explorer tab by its title, URL, or attach to the active tab of Internet Explorer running as the foreground window|
-|Initial URL|No|Text value||Enter the URL of the web site to visit when the web browser is launched|
-|Tab title|No|Text value||Enter the title (or part of it) of the Internet Explorer tab to attach to|
-|Tab URL|No|Text value||Enter the URL (or part of it) of the Internet Explorer tab to attach to|
+|Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
+|Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Internet Explorer tab to attach to|
+|Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Internet Explorer tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized of maximized state|
-|Clear cache|N/A|Boolean value|False|Specify whether to clear the entire cache of the web browser right after launching it|
-|Clear cookies|N/A|Boolean value|False|Specify whether to clear all stored cookies in the web browser right after launching it|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
+|Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-|Custom user agent string|Yes|Text value||Specify the custom user agent string for the runtime web helper. If this field remains empty, the runtime web helper uses by default the user agent string of Internet Explorer installed on the machine.|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Custom user agent string|Yes|[Text value](../variable-data-types.md#text-value)||Specify the custom user agent string for the runtime web helper. If this field remains empty, the runtime web helper uses by default the user agent string of Internet Explorer installed on the machine.|
 
 > [!NOTE]
 > The **Clear cache** and **Clear cookies** options only work as intended if running in Protected Mode is disabled in the Internet options menu.
@@ -385,7 +392,7 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|InternetExplorer|Web browser instance|The Internet Explorer instance to use with browser automation actions|
+|InternetExplorer|[Web browser instance](../variable-data-types.md#instances)|The Internet Explorer instance to use with browser automation actions|
 
 
 ##### <a name="launchinternetexplorerbase_onerror"></a> Exceptions
@@ -402,21 +409,22 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Firefox or attach to an existing one|
 |Attach to Firefox tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to a Firefox tab by its title, URL, or attach to the active tab of Firefox running as the foreground window|
-|Initial URL|No|Text value||Enter the URL of the web site to visit when the web browser is launched|
-|Tab title|No|Text value||Enter the title (or part of it) of the Firefox tab to attach to|
-|Tab URL|No|Text value||Enter the URL (or part of it) of the Firefox tab to attach to|
+|Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
+|Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Firefox tab to attach to|
+|Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Firefox tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized of maximized state|
-|Clear cache|N/A|Boolean value|False|Specify whether to clear the entire cache of the web browser right after launching it|
-|Clear cookies|N/A|Boolean value|False|Specify whether to clear all stored cookies in the web browser right after launching it|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
+|Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-|Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|Web browser instance|The Firefox instance to use with browser automation actions|
+|Browser|[Web browser instance](../variable-data-types.md#instances)|The Firefox instance to use with browser automation actions|
 
 
 ##### <a name="launchfirefoxbase_onerror"></a> Exceptions
@@ -433,21 +441,22 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Chrome or attach to an existing one|
 |Attach to Chrome tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to a Chrome tab by its title, URL, or attach to the active tab of Chrome running as the foreground window|
-|Initial URL|No|Text value||Enter the URL of the web site to visit when the web browser is launched|
-|Tab title|No|Text value||Enter the title (or part of it) of the Chrome tab to attach to|
-|Tab URL|No|Text value||Enter the URL (or part of it) of the Chrome tab to attach to|
+|Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
+|Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Chrome tab to attach to|
+|Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Chrome tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized of maximized state|
-|Clear cache|N/A|Boolean value|False|Specify whether to clear the entire cache of the web browser right after launching it|
-|Clear cookies|N/A|Boolean value|False|Specify whether to clear all stored cookies in the web browser right after launching it|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
+|Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-|Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|Web browser instance|The Chrome instance to use with browser automation actions|
+|Browser|[Web browser instance](../variable-data-types.md#instances)|The Chrome instance to use with browser automation actions|
 
 
 ##### <a name="launchchromebase_onerror"></a> Exceptions
@@ -464,21 +473,22 @@ Launch a new instance or attach to a running instance of Edge for automating web
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Edge or attach to an existing one|
 |Attach to Edge tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to an Edge tab by its title, URL, or attach to the active tab of Edge running as the foreground window|
-|Initial URL|No|Text value||Enter the URL of the web site to visit when the web browser is launched|
-|Tab title|No|Text value||Enter the title (or part of it) of the Edge tab to attach to|
-|Tab URL|No|Text value||Enter the URL (or part of it) of the Edge tab to attach to|
+|Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
+|Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Edge tab to attach to|
+|Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Edge tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized of maximized state|
-|Clear cache|N/A|Boolean value|False|Specify whether to clear the entire cache of the web browser right after launching it|
-|Clear cookies|N/A|Boolean value|False|Specify whether to clear all stored cookies in the web browser right after launching it|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
+|Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
-|Timeout|No|Numeric value|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|Web browser instance|The Edge instance to use with browser automation actions|
+|Browser|[Web browser instance](../variable-data-types.md#instances)|The Edge instance to use with browser automation actions|
 
 
 ##### <a name="launchedgebase_onerror"></a> Exceptions
@@ -493,17 +503,18 @@ Create a new tab and navigate to the given URL (supported in Edge, Chrome and Fi
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|URL to navigate to|No|Text value||Enter the URL, or a variable containing the URL, to navigate to|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|URL to navigate to|No|[Text value](../variable-data-types.md#text-value)||Enter the URL, or a variable containing the URL, to navigate to|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the web page|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|NewBrowser|Web browser instance|The new web browser instance to use with browser automation actions|
+|NewBrowser|[Web browser instance](../variable-data-types.md#instances)|The new web browser instance to use with browser automation actions|
 
 
 ##### <a name="createnewtabbase_onerror"></a> Exceptions
@@ -518,12 +529,13 @@ Navigate the web browser to a new page
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |Navigate|N/A|To URL, Back, Forward, Reload web page|To URL|Specify where to navigate to|
-|URL|No|Text value||Enter the URL to navigate to|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the web page to load completely before proceeding|
+|URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL to navigate to|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the web page to load completely before proceeding|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the web page|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
 ##### Variables Produced
@@ -541,12 +553,14 @@ Click on a link or any other element of a web page
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the UI element on web page to click|
-|Send physical click|N/A|Boolean value|False|Specify whether to physically move the mouse cursor over the element prior to clicking. A physical click is required for cases that emulated clicks don't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
-|Wait for page to load|N/A|Boolean value|True|Specify whether to wait for the new web page to load completely after clicking on the link|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to click|
+|Click type|N/A|Left click, Right click, Double click, Left button down, Left button up, Right button down, Right button up, Middle click|Left click|The kind of click to perform|
+|Send physical click|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the element prior to clicking. A physical click is required for cases that emulated clicks don't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after clicking on the link|
+|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after clicking on the link|
-|Dialog button to press|Yes|Text value|OK|Enter the dialog button to press if a pop-up dialog appears|
+|Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
 ##### Variables Produced
@@ -564,15 +578,15 @@ Click on a link in a web page that results in downloading a file
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the UI element on web page to click|
-|Destination folder|No|Folder||Enter or choose the full path of the folder, or a variable containing the folder, to save the downloaded file to|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to click|
+|Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to save the downloaded file to|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|DownloadedFile|File|The file on the disk where the download is saved. This is a filepath that consists of the download folder as specified above plus the name of the file as provided by the web server.|
+|DownloadedFile|[File](../variable-data-types.md#files-and-folders)|The file on the disk where the download is saved. This is a filepath that consists of the download folder as specified above plus the name of the file as provided by the web server.|
 
 
 ##### <a name="clickdownloadlink_onerror"></a> Exceptions
@@ -589,14 +603,14 @@ Run a JavaScript function on the web page and get the returned result
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|JavaScript function|Yes|Text value|function ExecuteScript() { /*your code here, return something (optionally); */ }|Enter the JavaScript function to run on the web page|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|JavaScript function|Yes|[Text value](../variable-data-types.md#text-value)|function ExecuteScript() { /*your code here, return something (optionally); */ }|Enter the JavaScript function to run on the web page|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Result|Text value|The result of the JavaScript function that run|
+|Result|[Text value](../variable-data-types.md#text-value)|The result of the JavaScript function that run|
 
 
 ##### <a name="executejavascript_onerror"></a> Exceptions
@@ -610,8 +624,8 @@ Hover the mouse over an element of a web page
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to work with|
-|UI element|No|WebControl||Select the UI element on web page to hover|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
+|UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to hover|
 
 
 ##### Variables Produced
@@ -628,7 +642,7 @@ Close a web browser window
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Web browser instance|No|Web browser instance||Enter or choose the variable that contains the web browser instance to close|
+|Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to close|
 
 
 ##### Variables Produced

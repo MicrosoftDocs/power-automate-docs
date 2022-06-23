@@ -8,7 +8,7 @@ author: msftman
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 03/14/2022
+ms.date: 06/22/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -18,7 +18,6 @@ search.audienceType:
 ---
 
 # Power Automate US Government
-
 
 In response to the unique and evolving requirements of the United States public sector, Microsoft has created Power Automate US Government plans. This section provides an overview of features that are specific to Power Automate US Government. We recommend that you read this supplementary section as well as the Power Automate service [getting started](./getting-started.md) topic. For brevity, this service is commonly referred to as Power Automate Government Community Cloud (GCC), Power Automate Government Community Cloud – High (GCC High), or Power Automate Department of Defense (DoD).
 
@@ -186,6 +185,7 @@ Commercial version | US Government version
 [https://flow.microsoft.com](https://flow.microsoft.com) | [https://gov.flow.microsoft.us (GCC)](https://gov.flow.microsoft.us), [https://high.flow.microsoft.us (GCC High)](https://high.flow.microsoft.us), and [https://flow.appsplatform.us (DoD)](https://flow.appsplatform.us (DoD))
 [https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com/) | [ https://gcc.admin.powerplatform.microsoft.us/ (GCC)](https://gcc.admin.powerplatform.microsoft.us/), [https://high.admin.powerplatform.microsoft.us/ (GCC High)](https://high.admin.powerplatform.microsoft.us/), and [https://admin.appsplatform.us](https://admin.appsplatform.us) (DoD)
 [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors (GCC)](https://gov.flow.microsoft.us/connectors), [https://high.flow.microsoft.us/connectors (GCC High)](https://high.flow.microsoft.us/connectors), [https://flow.appsplatform.us/connectors/](https://flow.appsplatform.us/connectors/) (DoD)
+|[https://make.powerautomate.com](https://make.powerautomate.com)|[https://make.gov.powerautomate.us (GCC)](https://make.gov.powerautomate.us), [https://make.high.powerautomate.us (GCC High)](https://make.high.powerautomate.us), and [https://make.powerautomate.appsplatform.us (DoD)](https://make.powerautomate.appsplatform.us)
 
 
 For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users’ access points:
@@ -201,6 +201,7 @@ For those customers that implement network restrictions, please ensure access to
 * .azureedge.net
 * .azure.net
 * .crm9.dynamics.com
+* .powerautomate.us
 
 Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Dataverse instances that users and administrators may create within your Tenant. 
 
@@ -264,15 +265,13 @@ Some of the features available in the commercial version of Flow are not availab
 - [Connectors](/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support and we will review your request.
 
 >[!NOTE]
->Third-party connectors are not yet available for GCC High nor DoD. 
+>Third-party connectors are not yet available for GCC High nor DoD.
 
 Microsoft is investigating the data loss prevention (DLP) feature, considering the possibility for connectors to be *blocked by default*. Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
 
-- [Power BI](/connectors/powerbi/) – Power Automate US Government doesn’t support Power BI.
-
 - [Power Platform admin center](/power-platform/admin/admin-documentation) – Some functionality, such as managing data gateways and certain analytics reports, are not available.
 
-- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**. 
+- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**.
 
 ### See also
 

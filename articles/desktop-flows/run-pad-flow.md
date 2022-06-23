@@ -21,6 +21,9 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 
 ## Prerequisites
 
+> [!IMPORTANT]
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+
 - To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
 
    As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device. 
@@ -108,6 +111,10 @@ You can [view the real-time execution order](monitor-desktop-flow-queues.md#view
 >A timeout will occur if desktop flows don’t run within three hours after being requested.
 
 ## Run desktop flows concurrently on Windows Server devices
+
+> [!IMPORTANT]
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+
 Multiple users can be signed in simultaneously on Windows Server 2016 and Windows Server 2019. Power Automate leverages this OS capability to simultaneously run multiple desktop flows on such devices. With this feature, your organization can save on its infrastructure costs.
 
 Perform the following steps to benefit from multiple desktop flows on a single device:
@@ -123,6 +130,9 @@ Power Automate automatically scales the number of concurrent desktop flows runs 
 >Running multiple concurrent desktop flows by the **same user** is not supported. You will need to have different users running desktop flows at the same time to benefit from this feature.
 
 ## Load balance requests across gateways in a cluster
+
+> [!IMPORTANT]
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 You can choose to distribute desktop flows runs evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
 
@@ -145,6 +155,9 @@ In the gateway details page, toggle Run on all gateways in cluster. This will di
 >If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be using in the desktop flows connection can access all machines in the cluster.
    
 ## Best practices to avoid timeouts and distribute load across machines
+
+> [!IMPORTANT]
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 If you plan to run multiple desktop flows, there are a set of strategies you can adopt to distribute load and ensure that all your desktop flows run successfully without overloading the target machine(s) or running into timeouts because multiple desktop flows are running at the same time. You can either:
 
@@ -179,6 +192,9 @@ Some of your desktop flows might run for long durations (e.g. more than 24 hours
 1.	Select **Done**.
 
 ## Troubleshoot failures
+
+> [!IMPORTANT]
+> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 1. If your unattended desktop flow fails with the **cannot create new session** message, follow these steps to resolve the issue:
 

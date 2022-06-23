@@ -21,7 +21,7 @@ search.audienceType:
 > [!IMPORTANT]
 > Power Automate Desktop has been renamed to Power Automate for desktop. To find more information about the renaming, please visit the respective blog post. 
 --->
-Windows 11 allow users to create automations through the preinstalled Power Automate for desktop app. Power Automate is a low-code platform that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
+Windows 11 allow users to create automations through the preinstalled Power Automate app. Power Automate is a low-code platform that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
 
    ![Screenshot of the Windows 11 search menu.](media\getting-started-windows-11\launching.png)
 
@@ -31,12 +31,12 @@ Using the available actions, you can automate virtually any Microsoft and third-
 
 For example, you can extract prices from shopping websites, compare them, and store them to Excel spreadsheets by deploying some easy-to-configure actions. 
 
-Using Power Automate, you can populate any form and reduce the time needed to enter data on regularly used applications. Performing repetitive online orders, tracking price changes, populating fields on web pages and desktop applications, creating backups, and converting files are all tasks that can be fully automated with Power Automate for desktop.
+Using Power Automate, you can populate any form and reduce the time needed to enter data on regularly used applications. Performing repetitive online orders, tracking price changes, populating fields on web pages and desktop applications, creating backups, and converting files are all tasks that can be fully automated with desktop flows.
 
    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLTqj]
 
-Apart from the pre-made actions, Power Automate for desktop enables you to record your activity and automatically convert these steps into actions. The recording feature makes RPA friendly to all non-technical users and allows you to develop simple flows effortlessly.
+Apart from the pre-made actions, Power Automate enables you to record your activity and automatically convert these steps into actions. The recording feature makes RPA friendly to all non-technical users and allows you to develop simple flows effortlessly.
 
-To start your journey with Power Automate for desktop, follow our [getting started guide](getting-started-msa.md). More technical starting guides are available for users with a [work or school account](getting-started-freeorg.md) and [organization premium account](getting-started-org.md). Check the [Sign-in account comparison](setup.md#sign-in-account-comparison) to view what each version offers.
+To start your journey with desktop flows, follow our [getting started guide](getting-started-msa.md). More technical starting guides are available for users with a [work or school account](getting-started-freeorg.md) and [organization premium account](getting-started-org.md). Check the [Sign-in account comparison](setup.md#sign-in-account-comparison) to view what each version offers.
 
 

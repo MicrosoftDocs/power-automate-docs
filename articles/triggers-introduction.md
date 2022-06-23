@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/28/2021
+ms.date: 06/22/2022
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -37,11 +37,13 @@ offer prebuilt triggers that you can use to start your flows. Here's a partial l
 
 ## Choose the right trigger
 
-Triggers can be started instantly or manually, on a schedule, or automatically when an event occurs.
+Triggers can be started instantly or manually, on a schedule, or automatically when an external event (such as when an email arrives) occurs.
 
 ### Triggers for instant/manual flows
 
-If you'd like to run a cloud flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an [instant flow (button flow)](./introduction-to-button-flows.md#trigger-an-instant-flow). You can trigger these flows manually from any device.
+If you'd like to run a cloud flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow (button flow). You can trigger these flows manually from any device.
+
+[Learn more about instant flows](./introduction-to-button-flows.md#trigger-an-instant-flow).
 
 ### Triggers for scheduled flows
 
@@ -89,9 +91,8 @@ Follow these steps to find your license.
 ## Customize a trigger by adding conditions
 
 Sometimes, you may need to customize a trigger so that it fires only when certain conditions are met. For example, you may be using SharePoint's **When an item is created or modified** trigger in Power Automate. This trigger fires for every
-change to SharePoint items but you might want the flow to only trigger when an item is
-created or the status is marked as *Approved*. While you can add conditions to filter other events, the flow still runs and each call is counted as an API request, causing you to reach your API request limits faster.
-To avoid using requests unnecessarily, you can write expressions in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
+change to SharePoint items but you might want the flow to only trigger when an item is created or the status is marked as *Approved*. While you can filter other events by adding conditions to the flow, the flow still runs and the calls are counted as an API request, causing you to reach your API request limits faster.
+To avoid it, you can write [expressions](./use-expressions-in-conditions.md) in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
 
 You may also need to secure the trigger inputs and outputs in the run history of a cloud flow. To do this, you can turn on the secure input or secure output setting in the trigger.
 

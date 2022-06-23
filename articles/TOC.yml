@@ -99,7 +99,7 @@
       items:
       - name: Get started with approvals
         href: get-started-approvals.md
-      - name: Trigger approvals from SharePoint lists
+      - name: Trigger approvals from lists
         href: trigger-sharepoint-list.md
       - name: Trigger approvals from SharePoint library
         href: trigger-sharepoint-library.md
@@ -295,9 +295,9 @@
       href: fix-flow-failures.md
     - name: Find and fix errors with the error checker
       href: error-checker.md
-- name: Power Automate for desktop
+- name: Desktop flows
   items: 
-  - name: Introduction to Power Automate for desktop
+  - name: Introduction to desktop flows
     href: ./desktop-flows/introduction.md
   - name: Getting started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
@@ -335,6 +335,8 @@
       href: ./desktop-flows/manage-machines.md
     - name: Manage machine groups
       href: ./desktop-flows/manage-machine-groups.md
+    - name: Hosted RPA bots (preview)
+      href: ./desktop-flows/hosted-rpa-bots.md
     - name: Silent registration for machines
       href: ./desktop-flows/machines-silent-registration.md
     - name: Scale with AVD starter kit
@@ -597,29 +599,6 @@
       href: ./desktop-flows/dynamics365-fin-rpa.md
     - name: Use RPA with Dynamics 365 Customer Service
       href: ./desktop-flows/dynamics365-cs-rpa.md   
-- name: Other types of desktop flows (Legacy)
-  items:
-  - name: Introduction to other types of desktop flows
-    href: ./desktop-flows/overview.md
-  - name: Create and test desktop flows with Windows recorder (V1)
-    href: ./desktop-flows/create-desktop.md
-  - name: Edit desktop flows with Windows recorder (V1)
-    href: ./desktop-flows/edit-desktop.md
-  - name: Migrate from Windows recorder (V1) to Power Automate
-    href: ./desktop-flows/migrate.md
-  - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
-    href: ./desktop-flows/inputs-outputs-desktop.md
-    items:
-    - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/use-ime.md
-    - name: Use WinAutomation with desktop flows
-      href: ./desktop-flows/create-processes.md
-  - name: Create and test Selenium IDE flows
-    href: ./desktop-flows/create-web.md
-  - name: Edit desktop flows with Selenium IDE
-    href: ./desktop-flows/edit-web.md
-  - name: Use inputs and outputs in desktop flows with Selenium IDE
-    href: ./desktop-flows/inputs-outputs-web.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -639,6 +618,32 @@
   - name: Overview    
     href: process-advisor-overview.md
     displayName: Overview of process advisor
+  - name: Process mining (preview)
+    items:
+    - name: Overview
+      href: process-mining-overview.md
+    - name: Templates overview
+      items:
+      - name: Power Platform templates
+        href: process-mining-templates.md
+      - name: Azure templates
+        href: process-mining-azure-templates.md    
+    - name: Get started with process mining
+      href: process-mining-tutorial.md
+    - name: Prepare processes and data
+      href: process-mining-processes-and-data.md
+    - name: Transform and map data
+      href: process-mining-transform.md      
+    - name: Troubleshoot issues
+      href: process-mining-troubleshoot.md
+    - name: Visualize and gain insights from processes
+      href: process-mining-visualize.md
+    - name: Improve cloud flows with process insights (preview)
+      href: process-mining-cloud-flow-process-insights.md
+    - name: Share process mining processes
+      href: process-mining-share.md      
+    - name: Edit and refresh processes
+      href: process-mining-data-source.md
   - name: Task mining
     items:
     - name: Overview
@@ -654,25 +659,7 @@
     - name: Identify automation opportunities
       href: process-advisor-automation.md 
     - name: Share task mining processes
-      href: process-advisor-share.md
-  - name: Process mining (preview)
-    items:
-    - name: Overview
-      href: process-mining-overview.md
-    - name: Get started with process mining
-      href: process-mining-tutorial.md
-    - name: Prepare processes and data
-      href: process-mining-processes-and-data.md
-    - name: Transform and map data
-      href: process-mining-transform.md      
-    - name: Troubleshoot issues
-      href: process-mining-troubleshoot.md
-    - name: Visualize and gain insights from processes
-      href: process-mining-visualize.md
-    - name: Share process mining processes
-      href: process-mining-share.md      
-    - name: Edit and refresh processes
-      href: process-mining-data-source.md
+      href: process-advisor-share.md  
   - name: Administration and security
     items: 
     - name: Security and privacy
@@ -706,6 +693,8 @@
   items:
   - name: Enterprise developers, partners, and ISVs
     href: ./developer/dev-enterprise-intro.md
+  - name: Work with desktop flows using code
+    href: ./developer/desktop-flow-public-apis.md
   - name: Build and certify custom connectors
     href: ./developer/register-custom-api.md
   - name: Integrate with websites and other technologies
@@ -808,6 +797,29 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
+  - name: Other types of desktop flows (Legacy)
+    items:
+    - name: Introduction to other types of desktop flows
+      href: ./desktop-flows/overview.md
+    - name: Create and test desktop flows with Windows recorder (V1)
+      href: ./desktop-flows/create-desktop.md
+    - name: Edit desktop flows with Windows recorder (V1)
+      href: ./desktop-flows/edit-desktop.md
+    - name: Migrate from Windows recorder (V1) to Power Automate
+      href: ./desktop-flows/migrate.md
+    - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
+      href: ./desktop-flows/inputs-outputs-desktop.md
+      items:
+      - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
+        href: ./desktop-flows/use-ime.md
+      - name: Use WinAutomation with desktop flows
+        href: ./desktop-flows/create-processes.md
+    - name: Create and test Selenium IDE flows
+      href: ./desktop-flows/create-web.md
+    - name: Edit desktop flows with Selenium IDE
+      href: ./desktop-flows/edit-web.md
+    - name: Use inputs and outputs in desktop flows with Selenium IDE
+      href: ./desktop-flows/inputs-outputs-web.md
 - name: Learning catalog
   items:
   - name: Overview

@@ -70,14 +70,14 @@ Start EC2 instance(s)
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Instance IDs|No|List of Text values||The instance IDs to start|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Instance IDs|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The instance IDs to start|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|StartingEc2Instances|List of Instance state changes|The returned information for the started instances|
+|StartingEc2Instances|[List](../variable-data-types.md#list) of [Instance state changes](../variable-data-types.md#aws)|The returned information for the started instances|
 
 
 ##### <a name="startec2instance_onerror"></a> Exceptions
@@ -95,16 +95,16 @@ Stop EC2 instance(s)
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Instance IDs|No|List of Text values||The instance IDs to stop|
-|Force stop|N/A|Boolean value|False|Specifies whether to force the instances to stop. The instances don't have an opportunity to flush file system caches or file system metadata|
-|Hibernatation: |N/A|Boolean value|False|Specifies whether to hibernate the instance, if it was enabled for hibernation at launch. If the instance can't hibernate successfully, a normal shutdown occurs|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Instance IDs|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The instance IDs to stop|
+|Force stop|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to force the instances to stop. The instances don't have an opportunity to flush file system caches or file system metadata|
+|Hibernatation: |N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to hibernate the instance, if it was enabled for hibernation at launch. If the instance can't hibernate successfully, a normal shutdown occurs|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|StoppingEc2Instances|List of Instance state changes|The returned information for the stopped instances|
+|StoppingEc2Instances|[List](../variable-data-types.md#list) of [Instance state changes](../variable-data-types.md#aws)|The returned information for the stopped instances|
 
 
 ##### <a name="stopec2instance_onerror"></a> Exceptions
@@ -122,8 +122,8 @@ Reboot EC2 instance(s)
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Instance IDs|No|List of Text values||The instance IDs to reboot|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Instance IDs|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The instance IDs to reboot|
 
 
 ##### Variables Produced
@@ -145,15 +145,15 @@ Get information for the relevant EC2 instances
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Availability zone|Yes|Text value||Specifies the availability zone,  a region code followed by a letter identifier|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Availability zone|Yes|[Text value](../variable-data-types.md#text-value)||Specifies the availability zone,  a region code followed by a letter identifier|
 |Instance state|N/A|Pending, All, Unknown, Running, Shutting down, Terminated, Stopping, Stopped|All|The state of the instance (pending, running, shutting down, terminated, stopping, stopped)|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Ec2InstancesInfo|List of EC2 instances info|The list of the EC2 instances|
+|Ec2InstancesInfo|[List](../variable-data-types.md#list) of [EC2 instances info](../variable-data-types.md#aws)|The list of the EC2 instances|
 
 
 ##### <a name="getavailableec2instances_onerror"></a> Exceptions
@@ -169,16 +169,16 @@ Returns all the information for the specified EC2 instance(s)
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Instance IDs|Yes|List of Text values||The instance IDs be describe|
-|Availability zone|Yes|Text value||Specifies the availability zone, a region code followed by a letter identifier|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Instance IDs|Yes|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The instance IDs be describe|
+|Availability zone|Yes|[Text value](../variable-data-types.md#text-value)||Specifies the availability zone, a region code followed by a letter identifier|
 |Instance state|N/A|Pending, All, Unknown, Running, Shutting down, Terminated, Stopping, Stopped|All|The current state of the instance|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Ec2Instances|List of EC2 instances|The retrieved instance(s) with all the relevant information|
+|Ec2Instances|[List](../variable-data-types.md#list) of [EC2 instances](../variable-data-types.md#aws)|The retrieved instance(s) with all the relevant information|
 
 
 ##### <a name="describeec2instance_onerror"></a> Exceptions
@@ -197,17 +197,17 @@ Create a snapshot of an EBS volume and stores it in Amazon S3
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Volume ID|No|Text value||The ID of the EBS volume|
-|Name|Yes|Text value||The name of the snapshot|
-|Description|Yes|Text value||A description for the snapshot|
-|Purpose|Yes|Text value||The purpose of the snapshot|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Volume ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the EBS volume|
+|Name|Yes|[Text value](../variable-data-types.md#text-value)||The name of the snapshot|
+|Description|Yes|[Text value](../variable-data-types.md#text-value)||A description for the snapshot|
+|Purpose|Yes|[Text value](../variable-data-types.md#text-value)||The purpose of the snapshot|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Snapshot|EBS snapshot|The created snapshot|
+|Snapshot|[EBS snapshot](../variable-data-types.md#aws)|The created snapshot|
 
 
 ##### <a name="createsnapshot_onerror"></a> Exceptions
@@ -226,17 +226,17 @@ Describes the specified EBS snapshots available
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
 |Describe snapshots mode|N/A|All snapshots, Snapshots by ID, Snapshots by owner ID, Snapshots by restorable user ID, Snapshots by custom filter|All snapshots|Specifies whether to get all snapshots of the defined region or filter snapshots by their ID, owner or user by which they are restorable|
-|Snapshot IDs|Yes|List of Text values||The snapshot IDs to describe|
-|Owner IDs|Yes|List of Text values||The owner IDs who own the snapshots|
-|Restorable by user IDs|Yes|List of Text values||The IDs of the AWS accounts that can create volumes from the snapshot|
+|Snapshot IDs|Yes|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The snapshot IDs to describe|
+|Owner IDs|Yes|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The owner IDs who own the snapshots|
+|Restorable by user IDs|Yes|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The IDs of the AWS accounts that can create volumes from the snapshot|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|EBSSnapshots|List of EBS snapshots|The retrieved snapshot(s) with all the relevant information|
+|EBSSnapshots|[List](../variable-data-types.md#list) of [EBS snapshots](../variable-data-types.md#aws)|The retrieved snapshot(s) with all the relevant information|
 
 
 ##### <a name="describesnapshots_onerror"></a> Exceptions
@@ -254,8 +254,8 @@ Delete the specified snapshot
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Snapshot ID|No|Text value||The ID of the EBS snapshot to delete|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Snapshot ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the EBS snapshot to delete|
 
 
 ##### Variables Produced
@@ -278,22 +278,22 @@ Create an EBS volume
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Name|Yes|Text value||The desired name for the volume|
-|Purpose|Yes|Text value||The purpose of the volume, if any|
-|Availability zone|No|Text value||Specifies the availability zone, a region code followed by a letter identifier|
-|From snapshot|N/A|Boolean value|False|Specifies whether to create the volume from a specified snapshot|
-|Snapshot ID|No|Text value||The snapshot from to create the volume from|
-|Volume size|No|Text value||The size of the volume in GBs|
-|Size|Yes|Text value||The size must be equal to or larger than the snapshot size|
-|Encrypted|N/A|Boolean value|False|Specifies whether to encrypt the volume|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Name|Yes|[Text value](../variable-data-types.md#text-value)||The desired name for the volume|
+|Purpose|Yes|[Text value](../variable-data-types.md#text-value)||The purpose of the volume, if any|
+|Availability zone|No|[Text value](../variable-data-types.md#text-value)||Specifies the availability zone, a region code followed by a letter identifier|
+|From snapshot|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to create the volume from a specified snapshot|
+|Snapshot ID|No|[Text value](../variable-data-types.md#text-value)||The snapshot from to create the volume from|
+|Volume size|No|[Text value](../variable-data-types.md#text-value)||The size of the volume in GBs|
+|Size|Yes|[Text value](../variable-data-types.md#text-value)||The size must be equal to or larger than the snapshot size|
+|Encrypted|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to encrypt the volume|
 |Volume type|N/A|Gp2, Standard, Io1, Sc1, St1|Gp2|The type of the volume|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Volume|EBS volume|The created volume|
+|Volume|[EBS volume](../variable-data-types.md#aws)|The created volume|
 
 
 ##### <a name="createvolumeaction_onerror"></a> Exceptions
@@ -313,10 +313,10 @@ Attach an EBS volume to an EC2 instance
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Volume ID|No|Text value||The ID of the EBS volume|
-|Instance ID|No|Text value||The ID of the instance|
-|Device name|No|Text value||The name of the device|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Volume ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the EBS volume|
+|Instance ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the instance|
+|Device name|No|[Text value](../variable-data-types.md#text-value)||The name of the device|
 
 
 ##### Variables Produced
@@ -340,11 +340,11 @@ Detach an EBS volume from an EC2 instance
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Volume ID|No|Text value||The ID of the EBS volume|
-|Instance ID|Yes|Text value||The ID of the instance|
-|Device name|Yes|Text value||The name of the device|
-|Force detachment|N/A|Boolean value|False|Specifies whether to force detachment, if the previous detachment attempt didn't occur cleanly|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Volume ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the EBS volume|
+|Instance ID|Yes|[Text value](../variable-data-types.md#text-value)||The ID of the instance|
+|Device name|Yes|[Text value](../variable-data-types.md#text-value)||The name of the device|
+|Force detachment|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to force detachment, if the previous detachment attempt didn't occur cleanly|
 
 
 ##### Variables Produced
@@ -367,16 +367,16 @@ Describe the specified EBS volumes
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
 |Describe volumes mode|N/A|All volumes, Volumes of the specified instance, Volumes with the specified IDs|All volumes|Specifies whether to describe all volumes, volumes specified by ID or volumes of an instance|
-|Volume IDs|No|List of Text values||The volume IDs to describe|
-|Instance ID|No|Text value||The ID of the instance that the volume is attached to|
+|Volume IDs|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The volume IDs to describe|
+|Instance ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the instance that the volume is attached to|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|EBSVolumes|List of EBS volumes|The retrieved EBS volumes with all the relevant information|
+|EBSVolumes|[List](../variable-data-types.md#list) of [EBS volumes](../variable-data-types.md#aws)|The retrieved EBS volumes with all the relevant information|
 
 
 ##### <a name="describevolumes_onerror"></a> Exceptions
@@ -393,8 +393,8 @@ Delete the specified EBS volume
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
-|Volume ID|No|Text value||The ID of the EBS volume to delete|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
+|Volume ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the EBS volume to delete|
 
 
 ##### Variables Produced
@@ -418,18 +418,18 @@ Create an EC2 client to automate EC2 web services
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Access keys|N/A|Boolean value|False|Specifies whether to use access key ID  and secret access key in order to create the EC2 session|
-|Access key ID|No|Text value||The AWS access key ID|
-|Secret|No|Encrypted value||The AWS secret access key|
-|Region endpoint|No|Text value||The region constant to use that determines the endpoint to use|
-|Profile name|No|Text value|default|The name of the profile to use |
-|Profile location|Yes|Text value||The location of the credentials file that contains the profile to use|
+|Access keys|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use access key ID  and secret access key in order to create the EC2 session|
+|Access key ID|No|[Text value](../variable-data-types.md#text-value)||The AWS access key ID|
+|Secret|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The AWS secret access key|
+|Region endpoint|No|[Text value](../variable-data-types.md#text-value)||The region constant to use that determines the endpoint to use|
+|Profile name|No|[Text value](../variable-data-types.md#text-value)|default|The name of the profile to use |
+|Profile location|Yes|[Text value](../variable-data-types.md#text-value)||The location of the credentials file that contains the profile to use|
 
 
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Ec2Client|EC2 client|The EC2 client|
+|Ec2Client|[EC2 client](../variable-data-types.md#aws)|The EC2 client|
 
 
 ##### <a name="createec2sessionaction_onerror"></a> Exceptions
@@ -445,7 +445,7 @@ Dispose an open EC2 client
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|EC2 client|No|EC2 client||The EC2 client|
+|EC2 client|No|[EC2 client](../variable-data-types.md#aws)||The EC2 client|
 
 
 ##### Variables Produced
