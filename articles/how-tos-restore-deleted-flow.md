@@ -37,7 +37,7 @@ If you or someone else accidentally deletes a flow that isn't part of a solution
 
 1. Install the latest version of [PowerShell cmdlets for Power Apps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
 
-1. Sign into your Power Apps environment.
+1. Sign in to your Power Apps environment.
 
    Use this command to authenticate to an environment. This command opens a separate window that prompts for your Azure Active Directory (AAD) authentication details.
 
@@ -57,7 +57,7 @@ If you or someone else accidentally deletes a flow that isn't part of a solution
    ```
 
    >[!TIP]
-   >Navigate to the URL of any of the flows in your environment to get your environment name (flow.microsoft.com/Environments/<**EnvironmentName**>/Flows) which is required for subsequent steps. Don't omit the prefixed words in the URL if your environment name contains it for example, Default-8ae09283902-.... 
+   >Navigate to the URL of any of the flows in your environment to get your environment name (flow.microsoft.com/Environments/<**EnvironmentName**>/Flows) which is required for subsequent steps. Don't omit the prefixed words in the URL if your environment name contains it, for example, Default-8ae09283902-.... 
 
     >[!div class="mx-imgBorder"]
     >![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png "Get-AdminFlow output")
