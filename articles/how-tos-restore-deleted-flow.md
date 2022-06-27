@@ -2,10 +2,10 @@
 title: Restore deleted flows with PowerShell in Power Automate | Microsoft Docs
 description: Learn how to restore deleted flows with PowerShell in Power Automate.
 author: msftman
-manager: kVivek
+manager: tapanm
 ms.subservice: cloud-flow
-ms.topic: article
-ms.date: 06/10/2022
+ms.date: 06/23/2022
+ms.topic: conceptual
 ms.author: deonhe
 search.app: 
   - Flow
@@ -16,9 +16,10 @@ search.audienceType:
 
 # Restore deleted flows with PowerShell
 
-If you or someone else accidentally deletes a flow that is not part of a solution, you can use PowerShell to restore it within 28 days of deletion.
+If you or someone else accidentally deletes a flow that isn't part of a solution, you can use PowerShell to restore it within 28 days of deletion.
 
 >[!NOTE]
+>
 > - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to create a support ticket with Microsoft for assistance.
 > - Flows that have been deleted more than 28 days ago can't be recovered, neither with PowerShell script nor Microsoft support.
 
@@ -31,9 +32,10 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 >[!NOTE]
 >After you restore a flow, it defaults to the disabled state. You must manually enable the flow, per your requirements.
 
-1. Open PowerShell with elevated priviliges to begin.
+1. Open PowerShell with elevated privileges to begin.
 
-   ![A screenshot that shows PowerShell being launched from Windows](./media/restore-deleted-flow/open-powershell-script.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot that shows PowerShell being launched from Windows.](./media/restore-deleted-flow/open-powershell-script.png "Windows PowerShell option")
 
 1. Install the latest version of [PowerShell cmdlets for Power Apps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
 
@@ -41,9 +43,9 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
 
    Use this command to authenticate to an environment. This command opens a separate window that prompts for your Azure Active Directory (AAD) authentication details.
 
-   ``` PowerShell
+    ``` PowerShell
     Add-PowerAppsAccount
-   ```
+    ```
 
 1. Provide the credentials you want to use to connect to your environment.
 
@@ -59,17 +61,17 @@ If you or someone else accidentally deletes a flow that is not part of a solutio
    >[!TIP]
    >Navigate to the URL of any of the flows in your environment to get your environment name (flow.microsoft.com/Environments/<**EnvironmentName**>/Flows) which is required for subsequent steps. Don't omit the prefixed words in the URL if your environment name contains it for example, Default-8ae09283902-.... 
 
+    >[!div class="mx-imgBorder"]
+    >![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png "Get-AdminFlow output")
 
-   ![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png)
-
-1. Optionally, you can filter the list of flows if you know part of the name of the deleted flow whose `FlowName` value you want to find. To do this, use a script similar to this one that finds all flows (including those that were soft deleted) in environment 3c2f7648-ad60-4871-91cb-b77d7ef3c239 that contain the string "Testing" in their display name.
+1. Optionally, you can filter the list of flows if you know part of the name of the deleted flow whose flowID you want to find. To do this, use a script similar to this one that finds all flows (including those that were soft-deleted) in environment 3c2f7648-ad60-4871-91cb-b77d7ef3c239 that contain the string "Testing" in their display name.
+256fe2cd306052f68b89f96bc6be643
 
    ``` PowerShell
    Get-AdminFlow Testing -EnvironmentName 3c2f7648-ad60-4871-91cb-b77d7ef3c239 -IncludeDeleted $true
    ```
 
 1. Make a note of the `FlowName` value of the flow you want to restore from the previous step.
-
 
 1. Run the following script to restore the soft-deleted flow with `FlowName` value as 4d1f7648-ad60-4871-91cb-b77d7ef3c239 in an environment named Default-55abc7e5-2812-4d73-9d2f-8d9017f8c877.
 

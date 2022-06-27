@@ -12,7 +12,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/12/2022
+ms.date: 06/22/2022
 ms.author: napienko
 search.app: 
   - Flow
@@ -23,7 +23,7 @@ search.audienceType:
 
 # How to do more with forms in Power Automate
 
-Learn some less-common things you can do with a form in your automated flows:
+Here are some less-common things you can do with a form in your automated flows:
 
 - Change the format of dates in a flow
 - Change the response submission time zone
@@ -43,35 +43,28 @@ By default, the form shows the response submission timestamp in the UTC time zon
 
 ## Add a group form to a flow
 
-If the form you want to add to a flow is owned by a group, Power Automate doesn't list it in the Form Id.
+If a group is the owner of the form you want to add to a flow, Power Automate doesn't list it in the Form Id.
 
-Go to the form. Copy the Form Id from the URL of the form and add it as a custom value.
+Go to the form. Copy the Form Id from the URL of the form, and then add it as a custom value.
 
 ## Send an email based on a conditional form response
 
 When you use a form in a flow, you can add a [condition](/power-automate/add-condition#add-a-condition) that's based on how a user responds to a question in the form. The condition can test a text value or a numerical value. The condition creates two parallel branches, *If yes* and *If no*, to which you can add actions.
 
-For example, you can use a condition to email details about a specific event or a general calendar of events, depending on how customers respond on an interest form.
+For example, you can use a condition to email details about a specific event or a general calendar of events, depending on how customers respond on an interest form. To learn more, follow the step-by-step instructions in [Create an automated workflow for Microsoft Forms](https://support.microsoft.com/office/create-an-automated-workflow-for-microsoft-forms-dee28c00-503a-48b3-89df-91a5084e6e43).
 
-To learn more, follow the step-by-step instructions in [Create an automated workflow for Microsoft Forms](https://support.microsoft.com/office/create-an-automated-workflow-for-microsoft-forms-dee28c00-503a-48b3-89df-91a5084e6e43).
+## Convert an attachment on a form to PDF or another file type
 
-## Convert an attachment on a form to PDF or other file type
-
-Add your form to a flow. Add the following actions:
+Add your form to a flow, and then add the following actions.
 
 - [Data Operation - Select](../data-operations#use-the-select-action)
 - [Data Operation - Create HTML table](../data-operations#use-the-create-html-table-action)
-- [OneDrive for Business - Create file](connectors/onedrive/#create-file)
+- [OneDrive for Business - Create file](/connectors/onedrive/#create-file)
 - [OneDrive for Business - Convert file](/connectors/onedrive/#convert-file)
 
 ## Upload form responses to a Power BI dataset
 
-Learn how to [turn Forms surveys into insights with Flow and Power BI](https://flow.microsoft.com/blog/forms-and-flow-and-powerbi/).
-
-## Create a lead from a form response
-
-Learn how to [convert Web forms to Dynamics 365 leads with Microsoft Flow and Forms](https://www.preact.co.uk/blog/converting-web-forms-to-dynamics-365-leads-with-microsoft-flow-forms).
-<!-- Linking to non-Microsoft sites is really not a good idea. If you can't find an internal source, I strongly recommend that you remove this suggestion. -->
+Learn how to [turn Forms surveys into insights with Power Automate and Power BI](https://flow.microsoft.com/blog/forms-and-flow-and-powerbi/).
 
 ## More information
 

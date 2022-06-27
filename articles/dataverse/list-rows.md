@@ -1,12 +1,11 @@
 ---
 title: Use lists of rows in flows| Microsoft Docs
-description: "Learn how to use flows to work with lists of rows from Microsoft Dataverse."
+description: Learn how to use flows to work with lists of rows from Microsoft Dataverse.
 author: MSFTMAN
-manager: KVIVEK
+manager: tapanm
 ms.author: Deonhe
-
-ms.topic: article
-ms.date: 03/31/2022
+ms.topic: conceptual
+ms.date: 06/08/2022
 search.app: 
   - Flow
   - Powerplatform
@@ -113,7 +112,7 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 > [!IMPORTANT]
 > The distinct operator and [aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) are not currently supported in FetchXML queries from the List rows connector.
 
-Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows additional flexibility in building custom queries. These can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
+Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
 
 ![List accounts example with FetchXML.](../media/list-rows/fetch-sml-example.png)
 
@@ -137,16 +136,16 @@ Example FetchXML query for the Account table:
 </fetch>
 ```
 
-As the distinct operator is not currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
+As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
 
 ### Skip token
 
-Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it is often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of table rows returned](/power-apps/developer/data-platform/webapi/query-data-web-api#limits-on-number-of-table-rows-entities-returned).
+Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it's often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of table rows returned](/power-apps/developer/data-platform/webapi/query-data-web-api#limits-on-number-of-table-rows-entities-returned).
 
-The default page limit of 5,000 rows applies if you do not use pagination.
+The default page limit of 5,000 rows applies if you don't use pagination.
 
 <!--todo: what is "it"?-->
-To use it, implement a loop to parse the *\@odata.nextLink* value in the JSON response, extract the **skip token**, and then send another request until you have listed the number of rows that you need.
+To use it, implement a loop to parse the *\@odata.nextLink* value in the JSON response, extract the **skip token**, and then send another request until you've listed the number of rows that you need.
 
 ```json
 HTTP/1.1 200 OK  
