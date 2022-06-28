@@ -49,7 +49,7 @@ If you or someone else accidentally deletes a flow that isn't part of a solution
 
 1. Run the following script to get a list of flows in the environment, including flows that were soft-deleted within the past 28 days. 
 
-    If the `IncludeDeleted` parameter is not recognized, you might be working with an older version of the PowerShell scripts. Ensure that you are using the [latest version](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147) of the script modules and retry the steps.
+    If the `IncludeDeleted` parameter isn't recognized, you might be working with an older version of the PowerShell scripts. Ensure that you're using the [latest version](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147) of the script modules and retry the steps.
 
    ``` PowerShell
    Get-AdminFlow -EnvironmentName 41a90621-d489-4c6f-9172-81183bd7db6c -IncludeDeleted $true
@@ -62,7 +62,7 @@ If you or someone else accidentally deletes a flow that isn't part of a solution
     >[!div class="mx-imgBorder"]
     >![Screenshot that displays the output of Get-AdminFlow.](./media/restore-deleted-flow/get-admin-flow-script.png "Get-AdminFlow output")
 
-1. Optionally, you can filter the list of flows if you know part of the name of the deleted flow whose flowID you want to find. To do this, use a script similar to this one that finds all flows (including those that were soft-deleted) in environment 3c2f7648-ad60-4871-91cb-b77d7ef3c239 that contain the string "Testing" in their display name.
+1. Optionally, you can filter the list of flows if you know part of the name of the deleted flow whose flowID you want to find. To do this, use a script similar to this one that finds all flows (including flows that were soft-deleted) in environment 3c2f7648-ad60-4871-91cb-b77d7ef3c239 that contain the string "Testing" in their display name.
 256fe2cd306052f68b89f96bc6be643
 
    ``` PowerShell
