@@ -22,7 +22,7 @@ ms.author: hamenon
 
 There are multiple ways in which you can create flows within Microsoft Teams.
 
-- Power Automate flow templates - The Microsoft Teams store has templates directly integrated, making it easy fir you to get flow templates to get started quickly.
+- Power Automate flow templates - The Microsoft Teams store has templates directly integrated, making it easy for you to get flow templates to get started quickly.
 - Team overflow messages - You can also create flows from the overflow menu of Teams message.
 - Power Automate app - You can also use the [Power Automate app](./install-teams-app.md) to create flows from a template or from scratch.
 
