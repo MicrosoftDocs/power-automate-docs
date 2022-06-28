@@ -10,7 +10,7 @@ editor: ''
 tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/08/2022
+ms.date: 06/28/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -36,7 +36,7 @@ Follow these steps to resubmit flow runs in bulk:
     >![Screenshot that displays all runs for the selected flow.](./media/cancel-resubmit-how-to/all-runs.png "All runs for the selected flow")
 
    >[!TIP]
-   >The flow must have runs to cancel or resubmit the flow runs. <!--Note from Sweeny: Should this be placed in a note instead of a tip?-->
+   >The flow must have runs to cancel or resubmit the flow runs.
 
 1. Select the flow runs that you would like to resubmit or cancel on the **Run history** page.
 
