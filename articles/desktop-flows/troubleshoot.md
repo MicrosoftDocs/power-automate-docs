@@ -92,12 +92,12 @@ Most environments wouldn't require to change the default configuration. If your 
 1. Provide the new account. Ex: DOMAIN\AlexJohnson  
 1. Provide the password of this account and select Configure
  
-![Screenshot of the Power Automate troubleshoot dialog.](media/troubleshoot/image001.png)
+![Screenshot of the Power Automate troubleshoot dialog.](media/troubleshoot/power-automate-troubleshoot-dialog.png)
 
 ## Collect Machine logs 
 There are several logs you can collect for the machine’s configuration and service logs, and you should always start with the logs. 
 In the Troubleshoot tool, select Exports logs link, as shown in the following image.
 
-![Screenshot of the Machine logs.](media/troubleshoot/image003.png)
+![Screenshot of the Machine logs.](media/troubleshoot/power-automate-machine-logs.png)
 
 This file is saved to the desktop as a zip file.
