@@ -33,6 +33,7 @@ Your machine will be automatically registered on the currently selected environm
 1. [Install the latest version](install.md) of Power Automate on your device. If you already have the latest version, skip to step 3. 
 
 1. Make sure you have checked **Install the machine-runtime app to connect to the Power Automate cloud portal**
+
  ![Screenshot of the option to accept the terms.](./media/register-machines/acceptterms.png)
 
 1. When the installation completes, launch the **Power Automate machine-runtime app**
