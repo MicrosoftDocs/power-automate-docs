@@ -145,7 +145,7 @@ To provide load balancing from the Power Automate gateway details page, navigate
 
 In the gateway details page, toggle **Run on all gateways in cluster**. This option will distribute the desktop flows runs on all the gateways within that cluster.
 
-   ![Screenshot of the gateway details page.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
+   ![Screenshot of the gateway details page.](media/run-pad-portal/gw-cluster.png "Distribute desktop flows run on gateway cluster")
    
 >[!NOTE]
 >In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin accross cluster members.
@@ -186,7 +186,7 @@ Some of your desktop flows might run for long durations, for example more than 2
 
 1.	Select the ellipsis (…) on the top right corner of the desktop flows action. And select Settings.
 
-    ![Screenshot of the settings option.](media/run-pad-portal/timeout_settings.png "The settings option")
+    ![Screenshot of the settings option.](media/run-pad-portal/timeout-settings.png "The settings option")
 
 1.  Select the **Timeout** property and update the duration to correctly handle your desktop flow run. 
 1.	Select **Done**.
