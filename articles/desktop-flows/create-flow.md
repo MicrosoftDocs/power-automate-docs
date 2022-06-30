@@ -105,7 +105,7 @@ If you've opened and edited an example in the flow designer, select the **Save a
    ![Screenshot of the button to add a new input variable.](media\design-flow\add-new-input-variable.png)
 
 1. Configure the variable as follows:
-   * Variable type: **Input**
+
    * Variable name: **CountryName**
    * Data type: **Text**
    * Default value: **France**
@@ -131,7 +131,7 @@ If you've opened and edited an example in the flow designer, select the **Save a
 
    ![Screenshot of the Get special folder action.](media\design-flow\get-special-folder-action-properties.png)
 
-1. Add the **Create Folder** action and set **Create new folder into** to **%SpecialFolderPath%\Countries** and **New folder name** to **%CountryName%**. This action creates a new folder with the specified name, in the specified location.
+1. Add the **Create folder** action and set **Create new folder into** to **%SpecialFolderPath%\Countries** and **New folder name** to **%CountryName%**. This action creates a new folder with the specified name, in the specified location.
 
    ![Screenshot of the Create folder action.](media\design-flow\create-folder-action-properties.png)
 
@@ -151,15 +151,15 @@ If you've opened and edited an example in the flow designer, select the **Save a
    ![Screenshot of the Get files folder action.](media\design-flow\get-files-folder-action-properties.png)
 
 1. In the **Variables** pane, create two Output variables as follows:
-   * Variable type: **Output**
    * Variable name: **FileCount**
+   * Data type: **Number**
    * External name: **FileCount**
    * Description: **This is the file count output variable.**
 
    and
 
-   * Variable type: **Output**
    * Variable name: **FilePath**
+   * Data type: **Text**
    * External name: **FilePath**
    * Description: **This is the file path output variable.**
 

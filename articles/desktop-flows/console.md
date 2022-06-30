@@ -28,7 +28,7 @@ Power Automate users can run any available desktop flow through the console. To 
 
 ![Screenshot of the status field in the console.](./media/console/start-flow.png)
 
-If the flow contains input variables, a dialog box prompts the user to provide values for each input variable.
+If the flow contains [input variables](manage-variables.md#input-and-output-variables), a dialog box prompts the user to provide values for each input variable.
 
 ![Screenshot of the Flow inputs dialog.](./media/console/start-flow-inputs.png)
 
@@ -53,6 +53,8 @@ Press the **Settings** button to configure Power Automate for desktop to your li
 Under the **Application** category, select whether Power Automate should launch automatically, and whether closing the console will close the application as well. You may also set a hotkey combination to instantly stop a running flow.
 
 Using the **Monitoring/Notifications** drop-down menu, you can choose whether Power Automate will display integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, refer to [Runtime notifications](run-pad-flow.md#runtime-notifications).
+
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL. The **Display confirmation dialog when invoking flows via URL** option allows you to disable this functionality. You can find more information about external links in [Run desktop flows via URL](run-pad-flow.md#run-desktop-flows-via-url).  
 
 To decide whether Microsoft may collect diagnostic data to improve user experience, navigate to the **Data collection** settings tab. 
 

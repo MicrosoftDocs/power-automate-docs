@@ -50,7 +50,7 @@ search.audienceType:
 
    ![Screenshot of the New step action.](media\link-pad-flow-portal\new-step.png)
 
-1. In the **Choose an action** prompt search field, enter **power automate desktop**. Under **Actions**, select **Run a flow built with Power Automate desktop**.
+1. In the **Choose an action** prompt search field, enter **Power Automate for desktop**. Under **Actions**, select **Run a flow built with Power Automate for desktop**.
 
    ![Screenshot of the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\action-search.png)
 
@@ -70,33 +70,33 @@ search.audienceType:
 
    ![Screenshot of the flow designer.](media\link-pad-flow-portal\flow-designer-blank.png)
 
-1. Optionally, create Input/output variables to pass data back and forth from the Power Automate web portal to your desktop flow. In the Variables pane, select **+** to add an input or output variable.
+1. Optionally, create input/output variables to pass data back and forth from the Power Automate web portal to your desktop flow. In the Variables pane, select **+** to add an input or output variable.
 
    ![Screenshot of the option to create a new input variable.](media\link-pad-flow-portal\new-input-output-var.png)
 
-1. To create an input or output variable, the Edit variable dialog box will require filling in the fields as follows:
-   * Variable type—input or output
-   * Variable name—the name of the variable in flow designer
-   * Default value—the value which the variable holds if none is assigned
-   * Data type—the type of the variable (integer, string, datetime, and so on.)
-   * External name—the name used outside flow designer. This name appears in Power    Automate.
-   * Description—a description of the variable. This mandatory field appears in Power Automate
-   * Mark as sensitive-enable this option to set the variable as sensitive and hide its content in the flow designer and the Power Automate logs.
+1. To create an input or output variable, the **New input/output variable** dialog requires filling in the fields as follows:
+
+   - **Variable name**: The name of the variable in the flow.
+   - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
+   - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
+   - **External name**: The name of the variable used outside the flow designer. The external name is the name that will appear in the cloud or desktop flow designer while calling the flow.
+   - **Description**: A description of the variable that will appear in the cloud or desktop flow designer while calling the flow.
+   - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](manage-variables.md#sensitive-variables).
 
    ![Screenshot of the Add a new input variable dialog.](media\link-pad-flow-portal\add-new-input-var.png)
 
-1. Create an Input variable to pass data from Power Automate web portal to your desktop flow. The variable can be used anywhere in the desktop flow.
+1. Create an input variable to pass data from cloud flows to your desktop flow. The variable can be used anywhere in the desktop flow.
 
-1. To pass data from your desktop flow to Power Automate web portal, create an Output variable.
+1. To pass data from your desktop flow to a cloud flow, create an output variable.
 
-1. Back in Power Automate, any input variables appear as fields in the UI action.
+1. Back in the Power Automate portal, any input variables appear as fields in the **Run a flow built with Power Automate for desktop** action.
 
    > [!NOTE]
    > If an input variable contains sensitive data, you may want to obfuscate or omit it from the logs. To find more information regarding sensitive text inputs, refer to [Manage sensitive input like passwords](../how-tos-use-sensitive-input.md).
 
-   ![Screenshot of the input variables in the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\run-desktop-flow-v2-action-properties-2.png)
+   ![Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.](media\link-pad-flow-portal\run-desktop-flow-v2-action-properties-2.png)
 
-1. Output variables from desktop flows can be used in other Power Automate actions.
+1. Output variables from desktop flows can be used in most cloud flow actions.
 
 
 
