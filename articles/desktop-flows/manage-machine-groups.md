@@ -32,7 +32,7 @@ From the Power Automate machine runtime application:
 
 1. Select **Machine group**
 
-1. Select **Create a new group** 
+1. Select **New machine group** 
 
 1. Enter a name for your machine group, then optionally enter a description.
 
@@ -178,7 +178,7 @@ Power Automate allows you to create groups of machines that can be accessed all 
 
 If you want to change the machine group that contains your machine, select another group in the list of available machine groups and fill in the required credentials
 
-If you want to remove the machine from a group without adding it to a new one, select **Leave group**.
+If you want to remove the machine from a group without adding it to a new one, select **Remove from group**.
 
 
 
@@ -189,8 +189,7 @@ If you want to remove the machine from a group without adding it to a new one, s
 
 To change the password of the currently used machine group, click on the ellipses next to the machine group and select **Edit group password**.
 
-Next, populate the **New password** and **Confirm password** fields, and select the **Change** button to confirm the changes.
-
+Next, select **Re-generate password**, copy the automatically generated password, and save the changes.
 
 
 ![Screenshot of the fields for the new mahcine group password.](./media/manage-machine-groups/machine-group-new-password.png)
