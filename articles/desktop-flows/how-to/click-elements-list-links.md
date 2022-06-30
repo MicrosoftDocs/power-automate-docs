@@ -39,14 +39,14 @@ Inside the loop, use the **Click link on web page** action and select a UI eleme
 
 To make the action click all the links, modify the selector to click a different link in each loop iteration. 
 
-To achieve this functionality, edit the selector with the **Custom selector builder**. In this step, the right part of the selector should look something like the following example:
+To achieve this functionality, edit the selector with the **Text editor**. In this step, the right part of the selector should look something like the following example:
 **ul[properties] > li[properties]:eq(0) > a[properties]**
 
-![Screenshot of the original selector in the Custom selector builder.](media/click-elements-list-links/custom-selector-builder.png)
+![Screenshot of the original selector in the Text editor.](media/click-elements-list-links/custom-selector-builder.png)
 
 To make it select a different link in each iteration, change the **tr:eq(0)** part to **tr:eq(%LoopIndex%)**.
 
-![Screenshot of the modified selector n the Custom selector builder.](media/click-elements-list-links/modified-selector.png)
+![Screenshot of the modified selector n the selector's Text editor.](media/click-elements-list-links/modified-selector.png)
 
 > [!NOTE]
 > You can find more information regarding custom selectors in [Build a custom selector](../build-custom-selectors.md).

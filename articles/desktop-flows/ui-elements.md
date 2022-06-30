@@ -22,10 +22,7 @@ Desktop flows utilize UI elements to interact with applications and web pages wi
 
 When deploying a UI automation or browser automation action, you may be required to provide a UI element as input. To add a new UI element, you can do it directly from the action properties or through the UI elements pane of the flow designer.
 
-Each one of these action groups accepts a different category of UI elements. UI automation actions accept UI elements captured from desktop applications, while browser automation actions accept UI  elements captured from web pages.
-
-> [!NOTE]
-> UI automation actions can use only UI elements for desktop applications, while the browser automation actions can use only UI elements for webpages. Therefore, incompatible UI elements aren't available for selection. 
+Each one of these action groups accepts a different type of UI elements. UI automation actions accept desktop UI elements, while browser automation actions accept web UI elements.
 
 ![Screenshot of the available UI elements in the Press button in window action.](media/ui-elements/ui-element-input.png)
 
@@ -47,27 +44,74 @@ To find where a specific UI element is being used in the flow, right-click on it
 
 ## UI elements types
 
-UI automation and browser automation actions accept two different kinds of UI elements. UI automation actions accept only UI elements captured from desktop applications, while browser automation actions accept only UI elements captured from web pages.
+Desktop flows support two types of UI elements based on their source: desktop UI elements and web UI elements.
 
-To distinguish a UI element for a desktop application from a UI element for a web page, check its parent selector element. UI elements for desktop applications usually have the desktop as their parent element, while the UI elements for web pages have a webpage as their parent element.
+Desktop UI elements can be captured from any Windows application, including the non-web page part of browsers, such as the address bar.
 
-![Screenshot of a selector of a UI element for destop applications.](./media/ui-elements/ui-element-desktop-selector.png)
+You can use these UI elements as input in UI automation actions to indicate the component you want to interact with. The UI element picker of UI automation actions displays and allows you to capture only desktop UI elements.
+
+>[!IMPORTANT]
+> Users can capture elements from web pages through the UI element picker of UI automation actions. However, their selectors will represent desktop elements, not web elements.
+
+Web UI elements can be captured from web pages and used only in browser automation actions.
+
+Browser automation actions accept exclusively UI elements captured from web pages. Therefore, existing UI elements captured from desktop applications aren't displayed in the UI elements picker of these actions.
+
+To find more information regarding desktop and web automation, refer to [Automate desktop flows](desktop-automation.md) and [Automate web flows](automation-web.md). 
 
 ### UI elements for web pages
 
 To capture a UI element from a webpage, you need to install the appropriate browser extension. You can find more information about the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
-When the browser extension isn't able to communicate with Power Automate, the browser window is identified as a desktop application. As a result, Power Automate tries to grab UI elements for a desktop application and not a web page.
+### Distinguish desktop from web UI elements 
+
+The UI elements pane displays distinctive visual indications to help users quickly recognize desktop and web UI elements.
+
+![Screenshot of the UI element type visual indications in the UI element pane.](./media/ui-elements/ui-element-type-visual-indication.png)
+
+The same icons are also displayed during capturing, so you can confirm the type of an element before even saving it.
+
+![Screenshot of a UI element type visual indication during capturing.](./media/ui-elements/ui-element-type-visual-indication-capturing.png)
+
+Another method to check the type of a UI element is to review its selectors. Desktop UI elements usually have the desktop as their parent element, while web UI elements have a web page as their root element.
+
+![Screenshot of a selector of a desktop UI element.](./media/ui-elements/ui-element-desktop-selector.png)
+
+### UI elements in browser windows
+
+The application part of a browser (1) should be automated using desktop UI elements. For example, you can use UI automation actions to interact with the address bar or the tabs. 
+
+On the other hand, the loaded web pages inside the browser (2) should be automated using web UI elements and browser automation actions.
+
+When recording desktop flows, the recorder will automatically distinguish the browser application area from the web pages and generate the appropriate UI elements and actions.
+
+![Screenshot of a Microsoft edge window with highlighted the browser application and web page areas.](./media/ui-elements/browser-window.png)
 
 ## UI elements properties
 
-To manage a UI element’s selectors, right-click on the element and select **Edit selector**. This option brings up the Selector builder, where the selector can be edited with a visual editor.
+All UI elements consist of one or more selectors that pinpoint the UI or web component that Power Automate interacts with.
+
+>[!NOTE]
+> Users can create multiple selectors for a UI element. Whenever a selector fails, Power Automate uses the following selector in the defined order.
+
+To manage the selectors of a UI element, right-click on it and select **Edit**. This option brings up the selector builder, where you can edit the selectors with a visual or a text editor.
+
+>[!IMPORTANT]
+> Web elements captured via the recorder produce selectors that can be presented only in the text editor. Switching to the visual editor will temporarily navigate to an empty visual builder  and should be avoided to prevent loss of work. Selecting **Cancel** may restore any lost work.
+
+Each selector consists of multiple elements representing the hierarchical structure of the UI element in the application or web page. The attributes describe each element uniquely and distinguish it from other elements.
 
 ![Screenshot of the visual selector builder.](./media/ui-elements/visual-selector-editor.png)
 
-To manually enter the selector’s value, toggle off Visual editor, and the text value of the selector will become editable. You can find more information about selectors in [Build a custom selector](build-custom-selectors.md).
+All selectors are displayed with a default friendly name that makes them easily accessible. To rename a selector, right-click on its name and select **Rename**. 
 
-![Screenshot of the manual selector builder.](./media/ui-elements/manual-selector-editor.png)
+When you edit a UI element with multiple selectors, you're able to disable a selector by right-clicking on it and selecting **Disable**. This functionality can be helpful during testing.
+
+![Screenshot of the rename and disable options for a selector.](./media/ui-elements/rename-disable-selector.png)
+
+After editing the selectors, press **Save** to apply the implemented changes. Saving applies the changes in all the selectors in a single step.
+
+You can find more information regarding selectors and how to build them manually in [Build a custom selector](build-custom-selectors.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
