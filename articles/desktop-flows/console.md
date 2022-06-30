@@ -63,7 +63,7 @@ To decide whether Microsoft may collect diagnostic data to improve user experien
 
 ## Desktop flow details
 
-To see the details of a desktop flow, right-click on it and select **Details**. Through the **Details** dialog, you can edit the name and description of the flow, as well as see the owner, the creation and last modification date, and the flow ID.
+To review the details of a desktop flow, right-click on it and select **Details**. Through the **Details** dialog, you can edit the name and description of the flow, as well as see the owner, the creation and last modification dates, and the flow ID.
 
 ![Screenshot of the details of a desktop flow.](media/console/desktop-flow-details.png)
 
