@@ -258,9 +258,9 @@ To find the ID of an environment, navigate to the [Power Automate portal](https:
 
 ![Screenshot of the environment ID in the address line.](media/run-flow-url/find-environment-id.png)
 
-To find the ID of a desktop flow, navigate to the **My flows** tab of the [Power Automate portal](https://flow.microsoft.com/), select the desired flow, and copy its ID from the address line. 
+To find the ID of a desktop flow, launch the Power Automate console, right-click on the appropriate flow, and select **Details**. 
 
-![Screenshot of the desktop flow ID in the address line.](media/run-flow-url/find-desktop-flow-id.png)
+![Screenshot of the desktop flow details.](media/run-flow-url/find-desktop-flow-id.png)
 
 ### Use a console run URL in the Command Prompt 
 
