@@ -264,12 +264,12 @@ To find the ID of a desktop flow, launch the Power Automate console, right-click
 
 ### Save logs for desktop flows run via URL
 
-Apart from the mandatory input parameters, you can add the **runId** parameter to a console run URL to define a unique GUID for the its logs. 
+Apart from the mandatory input parameters, you can add the **runId** parameter to a console run URL to define a unique GUID for the desktop flow logs. 
 
-Power Automate uses this GUID to create a folder and store the logs of the running desktop flow. The created folder is stored in: **C:\Users\[Username]\AppData\Local\Microsoft\Power Automate Desktop\Console\Scripts\[Flow ID]\Runs\[Run ID]**
+Power Automate uses this GUID to create a folder and store the logs of the running desktop flow. The created folder is stored in: **C:\Users\[Username]\AppData\Local\Microsoft\Power Automate Desktop\Console\Scripts\[Flow ID]\Runs\\[Run ID]**
 
 > [!NOTE]
-> A GUID is a 128-bit value consisting of one group of 8 hexadecimal digits, three groups of 4 digits each, and one group of 12 digits, for example, **e6f82a20-47f7-4dd8-a97f-63df36797d0f**.
+> A GUID is a 128-bit value consisting of one group of 8 hexadecimal digits, three groups of 4 digits each, and one group of 12 digits, for example: **e6f82a20-47f7-4dd8-a97f-63df36797d0f**.
 
 A URL containing the **runId** input parameter should have the following structure. The parameter can be added to any of the previously mentioned URLs.
 
