@@ -274,7 +274,7 @@ Power Automate uses this GUID to create a folder and store the logs inside it. T
 A URL containing the **runId** input parameter should have the following structure. The parameter can be added to any of the previously mentioned URLs.
 
 ```
-"ms-powerautomate:/console/flow/run?workflowId=[workflowId]&runId]=[GUID]"
+"ms-powerautomate:/console/flow/run?workflowId=[workflowId]&runId=[GUID]"
 ```
 
 ### Use a console run URL in the Command Prompt 
