@@ -78,7 +78,9 @@
         "guidance/**.*": "guidance",
         "developer/**.*": "developer",
         "desktop-flows/**.*": "desktop-flow",
-        "teams/**.*": "teams"
+        "teams/**.*": "teams",
+        "dataverse/**.*": "cloud-flow",
+        "forms/**.*": "cloud-flow"
       }
     },
     "template": [],
