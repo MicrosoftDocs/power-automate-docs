@@ -77,6 +77,17 @@ You can use the following registry entry to prevent users from logging into Powe
 
 In order to restrict access to Power Automate for desktop on a workstation with Windows 10, use [Applocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
+## Allow users to authenticate in Power Automate for desktop using Web Account Manager (WAM)
+
+You can use the following registry entry to allow users to sign in to Power Automate for desktop using Windows Web Account Manager (WAM).
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|UseMsalWindowsBroker|DWORD|
+
+***Values***
+- **1**: Power Automate for desktop will authenticate users using the WAM funcionality.
+
 ## Allow users to select a particular organization in Power Automate for desktop
 
 You can use the following registry entry to allow users to select the organization of their preference in Power Automate for desktop.
