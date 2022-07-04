@@ -48,6 +48,16 @@ After deleting the **msalcache.bin3** file, restart the Power Automate service a
 
 ![Screenshot of the msalcache.bin3 file in the file explorer.](media/troubleshoot/msal-file.png)
 
+### Sign in using Web Account Manager (WAM)
+
+By default, Power Automate for desktop uses a Microsoft Edge client to facilitate user authentication.
+
+If you encounter errors while signing in, try setting Power Automate for desktop to authenticate users through WAM.
+
+WAM allows signing in using accounts already registered to Windows without requiring passwords. You can find more information regarding WAM in [this article](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-acquire-token-wam).
+
+To enable the WAM functionality in Power Automate for desktop, modify the [appropriate registry entry](). 
+
 ## Resolve failed connection between Power Automate components
 
 In some cases, Power Automate may display an error indicating that the connection between its components couldn't be established.
@@ -77,16 +87,16 @@ To identify whether another process is indeed the issue:
 
 - Identify whether a process displaying the string **EbmV0LnBpcGU6Ly8rLw==** exists.
 
-- If such a process exists, stop the process identified in the previous step and try again to launch Power Automate.
+- If such a process exists, stop the process identified in the previous step, and try again to launch Power Automate.
 
 As a permanent fix, you can stop the process causing the issue from running. Alternatively,  if it's an internal process, you can change it to use a more specific endpoint, such as **net.pipe://localhost/something**. 
 
 If none of the above is possible, specify Power Automate executables to run as administrator. However, this solution may not solve the issue in all cases, and it will cause a UAC prompt to appear each time.
 
 ## Change the on-premises Service account
-The UIFlowService uses the virtual account “NT SERVICE\UIFlowService”. This account needs the ability to “Logon as a service” in order to successfully startup.
+The UIFlowService uses the virtual account “NT SERVICE\UIFlowService”. This account needs the ability to “Log on as a service” in order to successfully startup.
 
-Most environments wouldn't require to change the default configuration. If your company has some restrictions in place, you can either ask your domain administrator to grant “NT SERVICE\UIFlowService” the right to “Logon as a service” or change the account here with an allowed one.
+Most environments wouldn't require to change the default configuration. If your company has some restrictions in place, you can either ask your domain administrator to grant “NT SERVICE\UIFlowService” the right to “Log on as a service” or change the account here with an allowed one.
 1. Select **Change account**
 1. Select **This account**
 1. Provide the new account. Ex: DOMAIN\AlexJohnson  
