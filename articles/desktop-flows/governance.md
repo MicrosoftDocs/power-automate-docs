@@ -190,7 +190,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ## Configure Power Automate for desktop to keep local logs
 
-You can use the following registry entry to enable Power Automate for desktop to keep logs in a local folder and prevent the cleanup of the **RunDefinition.json** file. 
+You can use the following registry entry to enable Power Automate for desktop to keep logs in a local folder.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
