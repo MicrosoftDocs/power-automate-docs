@@ -50,9 +50,7 @@ After deleting the **msalcache.bin3** file, restart the Power Automate service a
 
 ### Sign in using Web Account Manager (WAM)
 
-By default, Power Automate for desktop uses a Microsoft Edge client to facilitate user authentication.
-
-If you encounter errors while signing in, try setting Power Automate for desktop to authenticate users through WAM.
+By default, Power Automate for desktop uses a Microsoft Edge client to facilitate user authentication. If you encounter errors while signing in, try setting it to authenticate users through WAM.
 
 WAM allows signing in using accounts already registered to Windows without requiring passwords. You can find more information regarding WAM in [this article](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-acquire-token-wam).
 
