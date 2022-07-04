@@ -54,6 +54,10 @@ search.audienceType:
 
    ![Screenshot of the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\action-search.png)
 
+1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flows connections in [Setup desktop flows connections and machine credentials](install.md#setup-desktop-flows-connections-and-machine-credentials).
+
+   ![Screenshot of the fields of a new desktop flow connection.](media\link-pad-flow-portal\desktop-flow-connection.png)
+
 1. In the action parameters, set Run mode to **Attended - Runs when you're signed in**, and in the desktop flow drop-down select **Create a new desktop flow**.
 
    ![Screenshot of the fields of the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\run-desktop-flow-v2-action-properties.png)
