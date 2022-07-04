@@ -186,6 +186,19 @@ You can use the following registry entry to prevent Power Automate for desktop f
 ***Value***
 
 - **0**: Power Automate for desktop won't display a confirmation dialog when invoking desktop flows via URL.
+
+
+## Configure Power Automate for desktop to keep local logs
+
+You can use the following registry entry to enable Power Automate for desktop to keep logs in a local folder and prevent the cleanup of the **RunDefinition.json** file. 
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|KeepRunDefinitionFilesCopy|DWORD|
+
+***Value***
+
+- **1**: Power Automate for desktop creates a copy of the **RunDefinition.json** file, preventing the local logs from getting cleaned up.
  
 ## Learn more
 
