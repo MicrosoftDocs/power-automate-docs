@@ -37,7 +37,7 @@ To create a **Text value** variable, use the **Set variable** action and populat
 
 ### Numeric value
 
-This is the type applied to numbers. Only this data type can be used in mathematical operations. 
+Numeric is the type applied to numbers. Only this data type can be used in mathematical operations. 
 
 Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation. 
 
@@ -138,7 +138,7 @@ Alternatively, you can use the **%VariableName['ColumnName']%** notation. The na
 
 Contains pairs of properties and values, which can be easily converted to JSON format. 
 
-To create a new empty **Custom object**, use the **Set variable** action and populate the following expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
+To create a new empty **Custom object**, use the **Set variable** action and populate the following expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an expression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
 
 ![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
 
