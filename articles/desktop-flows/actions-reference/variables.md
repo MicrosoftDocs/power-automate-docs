@@ -96,9 +96,9 @@ Inserts a row at the end or before a specific index value
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Into location|N/A|End of data table, Before row index|End of data table|Specify whether variable to insert the new row at the end of the data table or before a specified row index|
+|Into location|N/A|End of data table, Before row index|End of data table|Specify whether to insert the new row at the end of the data table or before a specified row index|
 |Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||Insert the row index value to be used when before row index is specified as the into location parameter|
-|New value(s)|No|[List](../variable-data-types.md#list),[Datarow](../variable-data-types.md#datarow)||This parameter accepts a list or datarow variable where the column count should match the column count in the data table|
+|New value(s)|No|[List](../variable-data-types.md#list), [Datarow](../variable-data-types.md#datarow)||This parameter accepts a list or datarow variable where the column count should match the column count in the data table|
 
 ##### Variables Produced
 This action doesn't produce any variables
@@ -136,8 +136,8 @@ Finds and/or replaces data table values
 |Exception|Description|
 |-----|-----|
 |Provided regular expression is invalid|Indicates that the provided regular expression is invalid|
-|Column name doesn't exist|Indicates that the provided column name dosn't exist|
-|Column index is out of range|Indicates that the provided column index dis out of range|
+|Column name doesn't exist|Indicates that the provided column name doesn't exist|
+|Column index is out of range|Indicates that the provided column index is out of range|
 |Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
 
 ### <a name="modifydatatableitem"></a> Update data table item
@@ -158,8 +158,8 @@ This action doesn't produce any variables
 |Exception|Description|
 |-----|-----|
 |Item index is out of range|Indicates that the specified data table item is out of range|
-|Column name doesn't exist|Indicates that the provided column name dosn't exist|
-|Column index is out of range|Indicates that the provided column index dis out of range|
+|Column name doesn't exist|Indicates that the provided column name doesn't exist|
+|Column index is out of range|Indicates that the provided column index is out of range|
 |Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
 
 ### <a name="deleterowfromdatatable"></a> Delete row from data table
