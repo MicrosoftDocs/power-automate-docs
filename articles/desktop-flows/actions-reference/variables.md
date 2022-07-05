@@ -21,12 +21,13 @@ search.audienceType:
 
 All variable-related actions for different datatypes
 
-[Create new data table](#createnewdatatable)
-[Insert row into data table](#addrowtodatatable)
-[Find or replace in data table](#findorreplaceindatatable)
-[Update data table item](#modifydatatableitem)
-[Delete row from data table](#deleterowfromdatatable)
-[Truncate number](#truncatenumber)  
+
+[Create new data table](#createnewdatatable)  
+[Insert row into data table](#addrowtodatatable)  
+[Find or replace in data table](#findorreplaceindatatable)  
+[Update data table item](#modifydatatableitem)  
+[Delete row from data table](#deleterowfromdatatable)  
+[Truncate number](#truncatenumber)    
 [Generate random number](#generaterandomnumber)  
 [Clear list](#clearlist)  
 [Remove item from list](#removeitemfromlist)  
