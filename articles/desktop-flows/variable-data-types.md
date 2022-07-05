@@ -87,19 +87,19 @@ A datatable contains rows and columns that describe the position of each item un
 
 ![Screenshot of the contents of a datatable variable.](media\data-tables\create-data-table.png)
 
-Power Automate provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
+Power Automate provides the **Create new data table** action to generate datatables. Additionally, three more actions produce datatables from extracted data: the **Read from Excel worksheet**, **Execute SQL statement**, and **Extract data from web page** actions.
 
-Alternatively, while Power Automate doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
+Alternatively, you can create a datatable using the **Set variable** action and the programming array notation. 
 
 This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
 ![Screenshot of Set variable action that creates a datatable.](media\data-tables\create-data-table-variable.png)
 
-If you want to add column headers while creating a new datatable, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
+If you want to add column headers while creating a new datatable using the array notation, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
 
 ![Screenshot of a Set variable action that creates a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
 
-To add a new row to an existing table, create an expression containing the variable name of the datatable, a plus character (**+**), and the values you want to add in brackets.
+To add a new row to an existing table, use the **Insert row into data table** action or create an expression containing the variable name of the datatable, a plus character (**+**), and the values you want to add in brackets.
 
 ![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
 
