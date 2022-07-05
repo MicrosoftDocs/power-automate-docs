@@ -264,6 +264,9 @@ To find the ID of a desktop flow, launch the Power Automate console, right-click
 
 ### Save logs for desktop flows run via URL
 
+> [!IMPORTANT]
+> To enable the following funcionality, configure the [appropriate registry keys](governance.md#configure-power-automate-for-desktop-to-keep-the-flow-run-details).
+
 Apart from the mandatory input parameters, you can add the **runId** parameter to a console run URL to define a unique GUID for the desktop flow logs. 
 
 Power Automate uses this GUID to create a folder and store the logs inside it. The logs are stored in: **C:\Users\\[Username]\AppData\Local\Microsoft\Power Automate Desktop\Console\Scripts\\[Flow ID]\Runs\\[Run ID]**
