@@ -49,23 +49,26 @@ All variable-related actions for different datatypes
 
 ## Getting started with variable actions
 
-Create variables manually with the **Set variable** action. Provide a name and a value for the variable to use it in other actions.
+To manually create a variable in a Power Automate desktop flow, deploy the **Set variable** action. The action requires you to provide a name and a value for the new variable.
 
-![Screenshot of Set variable action.](\media\variables\set-var-action-properties.png)
+![Screenshot of the Set variable action.](media\variables\set-var-action-properties.png)
 
-To increase or decrease the numeric value of a variable, use the **Increase variable** or **Decrease variable** actions respectively.
+To increase or decrease the numeric value of a variable, use the **Increase variable** and **Decrease variable** actions respectively.
 
-![Screenshot of the Increase variable action.](\media\variables\increase-var-action-properties.png)
+![Screenshot of the Increase variable action.](media\variables\increase-var-action-properties.png)
 
-Most actions output their result into a variable. For example, create a blank list-type variable with the **Create new list** action. The **Generate random number** action outputs the random number to a variable. Select **Generate multiple numbers** to create a list-type variable with multiple random numbers.
+Most actions output their result into a variable. For example, the **Create new list** action produces an empty list. Similarly, the **Generate random number** action produces a random numeric value. If you enable the *Generate multiple numbers** option in this action, you can create a list variable containing multiple random numeric values.
 
-![Screenshot of Generate random number action.](\media\variables\generate-random-num-action-properties.png)
+![Screenshot of the Generate random number action.](media\variables\generate-random-num-action-properties.png)
 
-Add items to the list with **Add item to list**. Enter the value to add, or use a variable to add its value to the list. Similarly, remove items items from the list with **Remove item from list**. Enter the index of the item to remove.
+To add items to an existing list, use the **Add item to list** action. Populate a hard-coded value or a variable to define the item to add. Likewise, you can remove items from a list with the **Remove item from list** action.
 
 >[!NOTE]
->The index of the list starts from 0, meaning that the first item in the list will have an index of 0.
->Use the notation %ListName[0]% to refer to the first item in the list, %ListName[1]% to the second, and so on.
+>List indexes start from 0, meaning that the first item in the list always has an index of 0. Use the notation %ListName[0]% to refer to the first item in the list, %ListName[1]% to the second, and so on.
+
+If you want to create a datatable variable, deploy the **Create new data table** action and define the initial items of the list using the visual builder. To manipulate a datatable variable, use the actions of the respective action subgroup, such as the **Find or replace in data table** and **Update data table item** actions.
+
+![Screenshot of the Create new data table action.](media\variables\create-new-data-table-action-properties.png)
 
 ## Variable actions
 
@@ -107,7 +110,7 @@ This action doesn't produce any variables
 |Exception|Description|
 |-----|-----|
 |Item index is out of range|Indicates that the provided item index is out of range|
-|Invalid input arguments|Indicates that there is an invalid input parameter|
+|Invalid input arguments|Indicates that there's an invalid input parameter|
 |Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
 
 ### <a name="findorreplaceindatatable"></a> Find or replace in data table
@@ -221,7 +224,7 @@ Generate a random number or a list of random numbers that fall between a minimum
 ##### <a name="generaterandomnumber_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Failed to generate random number|Indicates that there is an error generating a random number|
+|Failed to generate random number|Indicates that there's an error generating a random number|
 
 ### <a name="clearlist"></a> Clear list
 Remove all items from a list
@@ -420,13 +423,13 @@ Convert a JSON string to a custom object
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|JsonAsCustomObject|[General value](../variable-data-types.md#general-value)|Τhe converted custom object from the provided JSON|
+|JsonAsCustomObject|[General value](../variable-data-types.md#general-value)|The converted custom object from the provided JSON|
 
 
 ##### <a name="convertjsontocustomobject_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Error parsing the JSON|Indicates that there is an error parsing the specified JSON|
+|Error parsing the JSON|Indicates that there's an error parsing the specified JSON|
 
 ### <a name="convertcustomobjecttojson"></a> Convert custom object to JSON
 Convert a custom object to a JSON string
@@ -446,10 +449,10 @@ Convert a custom object to a JSON string
 ##### <a name="convertcustomobjecttojson_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Error parsing the custom object|Indicates that there is an error parsing the custom object|
+|Error parsing the custom object|Indicates that there's an error parsing the custom object|
 
 ### <a name="additemtolist"></a> Add item to list
-Αppend a new item to a list
+Append a new item to a list
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
