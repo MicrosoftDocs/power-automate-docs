@@ -160,17 +160,6 @@ IT administrators, may set the following registry key, to configure the Power Au
 ***Value***
 - **1**: Power Automate for desktop will authenticate to the corporate proxy server using the current user's credentials.
 
-## Configure Power Automate for desktop to prevent cleaning up of run files
-
-You can use the following registry entry to configure the cleanup of Power Automates' run files. 
-
-|Hive|Key|Name|Type|
-|---|---|---|---|
-|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableRunFilesCleanup|DWORD|
-
-***Value***
-- **1**: Run files won't be deleted from the local disk after the run is completed.
-
 ## Configure Power Automate for desktop notification settings 
 
 You can use the following registry entry to configure how Power Automate for desktop displays notifications and monitoring information. 
