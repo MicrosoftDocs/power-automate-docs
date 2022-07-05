@@ -53,11 +53,13 @@ To manually create a variable in a Power Automate desktop flow, deploy the **Set
 
 ![Screenshot of the Set variable action.](media\variables\set-var-action-properties.png)
 
-To increase or decrease the numeric value of a variable, use the **Increase variable** and **Decrease variable** actions respectively.
+To increase or decrease the value of a numeric variable, use the **Increase variable** and **Decrease variable** actions respectively.
 
 ![Screenshot of the Increase variable action.](media\variables\increase-var-action-properties.png)
 
-Most actions output their result into a variable. For example, the **Create new list** action produces an empty list. Similarly, the **Generate random number** action produces a random numeric value. If you enable the *Generate multiple numbers** option in this action, you can create a list variable containing multiple random numeric values.
+Most actions output their result into a variable. For example, the **Create new list** action produces an empty list. 
+
+Similarly, the **Generate random number** action produces a random numeric value. If you enable the **Generate multiple numbers** option in this action, you can create a list variable containing multiple random numeric values.
 
 ![Screenshot of the Generate random number action.](media\variables\generate-random-num-action-properties.png)
 
@@ -66,7 +68,9 @@ To add items to an existing list, use the **Add item to list** action. Populate 
 >[!NOTE]
 >List indexes start from 0, meaning that the first item in the list always has an index of 0. Use the notation %ListName[0]% to refer to the first item in the list, %ListName[1]% to the second, and so on.
 
-If you want to create a datatable variable, deploy the **Create new data table** action and define the initial items of the list using the visual builder. To manipulate a datatable variable, use the actions of the respective action subgroup, such as the **Find or replace in data table** and **Update data table item** actions.
+If you want to create a datatable variable, deploy the **Create new data table** action and define the initial items of it using the visual builder. 
+
+To manipulate a datatable variable, use the actions of the respective action subgroup, such as the **Find or replace in data table** and **Update data table item** actions.
 
 ![Screenshot of the Create new data table action.](media\variables\create-new-data-table-action-properties.png)
 
