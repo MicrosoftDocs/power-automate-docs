@@ -89,7 +89,9 @@ A datatable contains rows and columns that describe the position of each item un
 
 Power Automate provides the **Create new data table** action to generate new datatables. After deploying the action, you can use the visual builder to populate values and rename the column headers.
 
-Apart from the **Create new data table** actionn, three more actions produce datatables to store extracted data: the **Read from Excel worksheet**, **Execute SQL statement**, and **Extract data from web page** actions.
+![Screenshot of the visual builder of the Create new data table action.](media\data-tables\create-new-data-table-action-visual-builder.png)
+
+Apart from the **Create new data table** action, three more actions produce datatables to store extracted data: the **Read from Excel worksheet**, **Execute SQL statement**, and **Extract data from web page** actions.
 
 Additionally, you can create a datatable using the **Set variable** action and the programming array notation. This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
@@ -103,7 +105,7 @@ To add a new row to an existing table, use the **Insert row into data table** ac
 
 ![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
 
-Besides inserting rows into datatables, desktop flows offer various actions that manipulate datatables. You can find the full list with these actions in the [variables actions reference](actions-reference/variables.md#data-table).
+Besides inserting rows into datatables, desktop flows offer various actions that manipulate datatables. You can find a full list with these actions in the [variables actions reference](actions-reference/variables.md#data-table).
 
 To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
