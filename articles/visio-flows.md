@@ -27,13 +27,13 @@ The Power Automate designer is a rich tool in which you can configure every deta
 
 ## Prerequisites
 
-- A Power Automate account.
+- A [Power Automate](https://flow.microsoft.com) account.
 - The Microsoft Visio desktop app (English version).
 - Expertise in using Microsoft Visio.
 
 ## Design a workflow in Visio
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 
 1. From the left pane, select **Templates**.
 
