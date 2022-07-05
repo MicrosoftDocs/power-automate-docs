@@ -406,7 +406,7 @@
       items:
       - name: Check if a variable is numeric
         href: ./desktop-flows/how-to/check-if-variable-numeric.md        
-      - name: Delete a column from a datatable
+      - name: Delete columns from a datatable
         href: ./desktop-flows/how-to/delete-column-datatable.md 
     - name: Handle email messages in desktop flows
       items:

@@ -1,6 +1,6 @@
 ---
-title: Delete a column from a datatable | Microsoft Docs
-description: Delete a column from a datatable
+title: Delete columns from a datatable | Microsoft Docs
+description: Delete columns from a datatable
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Delete a column from a datatable
+# Delete columns from a datatable
 
 Although Power Automate doesn't provide a direct way to delete columns from datatables, this functionality is feasible with the following workaround:
 
