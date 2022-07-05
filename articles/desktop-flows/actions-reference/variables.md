@@ -21,7 +21,11 @@ search.audienceType:
 
 All variable-related actions for different datatypes
 
-
+[Create new data table](#createnewdatatable)
+[Insert row into data table](#addrowtodatatable)
+[Find or replace in data table](#findorreplaceindatatable)
+[Update data table item](#modifydatatableitem)
+[Delete row from data table](#deleterowfromdatatable)
 [Truncate number](#truncatenumber)  
 [Generate random number](#generaterandomnumber)  
 [Clear list](#clearlist)  
@@ -63,6 +67,116 @@ Add items to the list with **Add item to list**. Enter the value to add, or use 
 >Use the notation %ListName[0]% to refer to the first item in the list, %ListName[1]% to the second, and so on.
 
 ## Variable actions
+
+## Data table
+
+Create and manipulate data in table variables
+
+### <a name="createnewdatatable"></a> Create new data table
+Creates a new data table variable
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|New table|No|[Datatable](../variable-data-types.md#datatable)||The input data table|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|DataTable|[Datatable](../variable-data-types.md#datatable)|The new data table|
+
+##### <a name="truncatenumber_onerror"></a> Exceptions
+- This action doesn't include any exceptions
+
+### <a name="addrowtodatatable"></a> Insert row into data table
+Inserts a row at the end or before a specific index value
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Into location|N/A|End of data table, Before row index|End of data table|Specify whether variable to insert the new row at the end of the data table or before a specified row index|
+|Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||Insert the row index value to be used when before row index is specified as the into location parameter|
+|New value(s)|No|[List](../variable-data-types.md#list),[Datarow](../variable-data-types.md#datarow)||This parameter accepts a list or datarow variable where the column count should match the column count in the data table|
+
+##### Variables Produced
+This action doesn't produce any variables
+
+##### <a name="truncatenumber_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Item index is out of range|Indicates that the provided item index is out of range|
+|Invalid input arguments|Indicates that there is an invalid input parameter|
+|Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
+
+### <a name="findorreplaceindatatable"></a> Find or replace in data table
+Finds and/or replaces data table values
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Search mode|N/A|Find, Find and replace|Find|The mode to search with (find or find and replace)|
+|All matches|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to find or replace text in all the matching cells found or the first matching cell only|
+|Text to find|No|[Text value](../variable-data-types.md#text-value)||The text to find in the data table|
+|Find using a regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to use a regular expression to match the cell contents with the text to find|
+|Match case|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to search for case-sensitive data|
+|Match entire cell contents|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to search for cells that contain just the specified text|
+|Text to replace with|No|[Text value](../variable-data-types.md#text-value)||The text used to replace the matching cells|
+|Search by|N/A|Everywhere, On column|Everywhere|The order in which to search for the text (everywhere, or on column)|
+|Column index or name|No|[Text value](../variable-data-types.md#text-value)||The column header or index value|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|DataTableMatches|[Datatable](../variable-data-types.md#datatable)|The data table containing the row and column indexes for matches|
+
+##### <a name="truncatenumber_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Provided regular expression is invalid|Indicates that the provided regular expression is invalid|
+|Column name doesn't exist|Indicates that the provided column name dosn't exist|
+|Column index is out of range|Indicates that the provided column index dis out of range|
+|Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
+
+### <a name="modifydatatableitem"></a> Update data table item
+Update a data table row item on a defined column
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Column|No|[Text value](../variable-data-types.md#text-value)||The column name or index of the item to update|
+|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index of the item to update|
+|New value|No|[Text value](../variable-data-types.md#text-value)||The new value to update at the specified row index and column|
+
+##### Variables Produced
+This action doesn't produce any variables
+
+##### <a name="truncatenumber_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Item index is out of range|Indicates that the specified data table item is out of range|
+|Column name doesn't exist|Indicates that the provided column name dosn't exist|
+|Column index is out of range|Indicates that the provided column index dis out of range|
+|Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
+
+### <a name="deleterowfromdatatable"></a> Delete row from data table
+Update a data table row item on a defined column
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index within a data table that should be deleted|
+
+##### Variables Produced
+This action doesn't produce any variables
+
+##### <a name="truncatenumber_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Item index is out of range|Indicates that the specified data table item is out of range|
 
 ### <a name="truncatenumber"></a> Truncate number
 Get the integral or fractional digits of a numeric value, or round up the value to a specified number of decimal places
