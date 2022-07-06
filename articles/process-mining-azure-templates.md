@@ -125,7 +125,7 @@ Before you can visualize your Logic Apps, you must have an Azure Logic Apps Stan
 
 ### Create and run the Logic Apps with App Insights template
 
-1. In order to deploy the template, you'll need to create an Application Insights Resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
+1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
 1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic Apps with App Insights** tile.
 
