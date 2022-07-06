@@ -1,11 +1,11 @@
 ---
-title: Automating in virtual desktops (Preview) | Microsoft Docs
-description: This section describes how to automate in virtual desktops.
+title: Automating on virtual desktops (Preview) | Microsoft Docs
+description: This section describes how to automate on virtual desktops.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/06/2022
-ms.author: gtrantzas
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -14,14 +14,14 @@ search.audienceType:
   - enduser
 ---
 
-# Automating in virtual desktops (Preview)
+# Automating on virtual desktops (Preview)
 
 Apart from physical machines, desktop flows enable you to automate the operating system and applications in Citrix and RDP (Microsoft Remote Desktop Protocol) virtual desktops.
 
-Automating in virtual desktops works precisely as in physical machines. You can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md).
+Automating on virtual desktops works precisely as in physical machines. You can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md).
 
 > [!IMPORTANT]
-> Automating in virtual desktops doesn't support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md) or [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md).
+> Automating on virtual desktops doesn't support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md) or [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md).
 
 To enable this functionality, you must install the **Power Automate agent for virtual desktops** on your virtual desktop. The agent communicates with the Power Automate for desktop application and facilitates the required interaction with it.
 
@@ -42,7 +42,7 @@ Communication is performed through the same channel that the Citrix/RDP virtual 
 - When the installation is complete, check that the agent for virtual desktops is visible in the System Tray of the virtual desktop. 
 - Sync Power Automate for desktop and agent for virtual desktops versions 
 
-To automate in virtual desktops, the version of Power Automate for desktop must be the same as the version of the agent for virtual desktops.
+To automate on virtual desktops, the version of Power Automate for desktop must be the same as the version of the agent for virtual desktops.
 
 If the versions aren't synced during recording or UI element capturing, a dialog will prompt you to sync the versions. In this case, select **Sync** to sync the two products. 
 
