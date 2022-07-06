@@ -52,7 +52,7 @@ If the versions are out of sync during the runtime of a desktop flow, Power Auto
 > [!IMPORTANT]
 > The DLLs of the synced version used by the agent can be found in **...\AppData\Local\Microsoft\Power Automate Desktop\RDP Automation Agents**. If you want to test the sync process while the products are already synced, stop any process of the running agent and delete the file. 
 
-## Distinguish UI elements captured in virtual desktops
+## Distinguish UI elements captured on virtual desktops
 
 Capturing elements in UI elements in virtual desktops works the same way as in physical machines. You can find more information regarding UI elements in Automate using UI elements.
 
