@@ -29,6 +29,14 @@ Communication is performed through the same channel that the Citrix/RDP virtual 
 
 ## Prerequisites
 
+* Windows 10 Pro, Windows 10 Enterprise, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022
+
+*	Power Automate for desktop should be installed in the user’s physical machine.  
+
+*	Power Automate agent for virtual desktops should be installed in the Citrix/RDP virtual desktop.  
+
+*	Power Automate agent for virtual desktops should be up and running.  
+
 ## Install the Power Automate agent for virtual desktops 
 
 > [!IMPORTANT]
@@ -65,5 +73,29 @@ UI elements captured in a Citrix virtual desktop are located under a **Citrix** 
 Every individual virtual desktop has its own tree, while numeric prefixes allow you to distinguish virtual desktops of the same type.
 
 ## Known issues and limitations
+
+*	**Issue:** Citrix/RDP automation doesn't support the use of web automation actions.
+
+* **Workarounds:** [Handle web components as desktop UI elements](desktop-automation.md) or [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md).
+
+*	**Issue:** During runtime, the Citrix/RDP window shouldn't be minimized otherwise the element won't be found. 
+
+* **Workarounds:** None 
+
+*	**Issue:** When the Citrix/RDP window is maximized and the recorder is in use, the **Populate text field in window** and **Send keys** actions might not work as expected. 
+
+* **Workarounds:** None
+
+*	**Issue:** UI automation of Java applets running on virtual desktops isn't supported yet. 
+
+* **Workarounds:** None
+
+*	**Issue:** Citrix/RDP UI automation doesn't work correctly when using Citrix Desktop and Citrix App from the same session. 
+
+* **Workarounds:** None
+
+*	**Issue:** Defining a window on virtual desktops using the **Window instance/handle** or **Window title/class** options isn't supported yet.
+
+* **Workarounds:** None
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
