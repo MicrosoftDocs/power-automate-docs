@@ -27,6 +27,8 @@ To enable this functionality, you must install the **Power Automate agent for vi
 
 Communication is performed through the same channel that the Citrix/RDP virtual desktop uses to connect to your machine. When the agent isn't running on your virtual desktop, the connection with Power Automate for desktop can't be established. In this case, relaunch the agent.  
 
+## Prerequisites
+
 ## Install the Power Automate agent for virtual desktops 
 
 > [!IMPORTANT]
@@ -49,17 +51,19 @@ If the versions aren't synced during recording or UI element capturing, a dialog
 
 If the versions are out of sync during the runtime of a desktop flow, Power Automate for desktop will sync the versions of the two products automatically.
 
-> [!IMPORTANT]
+> [!NOTE]
 > The DLLs of the synced version used by the agent can be found in **...\AppData\Local\Microsoft\Power Automate Desktop\RDP Automation Agents**. If you want to test the sync process while the products are already synced, stop any process of the running agent and delete the file. 
 
 ## Distinguish UI elements captured on virtual desktops
 
-Capturing elements in UI elements in virtual desktops works the same way as in physical machines. You can find more information regarding UI elements in Automate using UI elements.
+Capturing elements in UI elements in virtual desktops works the same way as in physical machines. You can find more information regarding UI elements in [Automate using UI elements](ui-elements.md).
 
 To distinguish the UI elements captured in virtual desktops, check the visual indications and the tree structure in the UI elements pane.
 
 UI elements captured in a Citrix virtual desktop are located under a **Citrix** parent, while the UI elements captured in a virtual machine connected through RDP are located under an **RDP** parent. 
 
 Every individual virtual desktop has its own tree, while numeric prefixes allow you to distinguish virtual desktops of the same type.
+
+## Known issues and limitations
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
