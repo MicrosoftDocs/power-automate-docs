@@ -4,7 +4,7 @@ description: This topic describes the Azure templates you can use for process mi
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 07/05/2022
+ms.date: 07/06/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -183,7 +183,7 @@ Before you can visualize your Logic Apps, you must have an Azure Logic Apps Cons
 
 ### Create and run the Azure Logic App Consumption Plan template
 
-1. In order to deploy the template, you'll need to create an Application Insights Resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
+1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
 1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic App Consumption Plan** tile.
 
