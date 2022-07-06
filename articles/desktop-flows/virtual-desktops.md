@@ -40,7 +40,8 @@ Communication is performed through the same channel that the Citrix/RDP virtual 
 - Use [this link](https://go.microsoft.com/fwlink/?linkid=2188766) to download the agent. Alternatively, launch Power Automate for desktop and navigate to **Tools-> Power Automate for virtual desktops (Preview)**
 - Copy the installer to the virtual desktop and run it as administrator.
 - When the installation is complete, check that the agent for virtual desktops is visible in the System Tray of the virtual desktop. 
-- Sync Power Automate for desktop and agent for virtual desktops versions 
+
+## Sync Power Automate for desktop and agent for virtual desktops versions 
 
 To automate on virtual desktops, the version of Power Automate for desktop must be the same as the version of the agent for virtual desktops.
 
