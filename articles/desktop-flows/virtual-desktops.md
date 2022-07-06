@@ -31,9 +31,9 @@ Communication is performed through the same channel that the Citrix/RDP virtual 
 
 * Windows 10 Pro, Windows 10 Enterprise, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022
 
-*	Power Automate for desktop should be installed in the user’s physical machine.  
+*	Power Automate for desktop should be installed on the user’s physical machine.  
 
-*	Power Automate agent for virtual desktops should be installed in the Citrix/RDP virtual desktop.  
+*	Power Automate agent for virtual desktops should be installed on the Citrix/RDP virtual desktop.  
 
 *	Power Automate agent for virtual desktops should be up and running.  
 
