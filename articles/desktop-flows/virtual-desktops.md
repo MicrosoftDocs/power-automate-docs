@@ -60,7 +60,7 @@ The agent starts running every time the user logs in to the machine. The launchi
 
 - When the installation is complete, check that the agent for virtual desktops is visible in the System Tray of the virtual desktop. 
 
-If there's an unexpected issue, you can restart the agent using the shortcut in the System Tray.
+If there's an unexpected issue, you can restart the agent using the shortcut in the System Tray. If encounter errors while launching the agent, refer to [Resolve Power Automate agent for virtual desktops issues](troubleshoot.md#resolve-power-automate-agent-for-virtual-desktops-issues).
 
 ## Sync Power Automate for desktop and agent for virtual desktops versions 
 
