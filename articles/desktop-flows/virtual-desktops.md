@@ -48,7 +48,11 @@ Communication is performed through the same channel that the Citrix/RDP virtual 
 Το install the Power Automate agent for virtual desktops:
 
 - Use [this link](https://go.microsoft.com/fwlink/?linkid=2188766) to download the agent. Alternatively, launch Power Automate for desktop and navigate to **Tools-> Power Automate for virtual desktops (Preview)**
+
 - Copy the installer to the virtual desktop and run it as administrator.
+
+  ![Screenshot of the Power Automate agent for virtual desktops installer.](media\virtual-desktops\virtual-desktops-agent-installer.png)
+
 - When the installation is complete, check that the agent for virtual desktops is visible in the System Tray of the virtual desktop. 
 
 ## Sync Power Automate for desktop and agent for virtual desktops versions 
@@ -56,6 +60,8 @@ Communication is performed through the same channel that the Citrix/RDP virtual 
 To automate on virtual desktops, the version of Power Automate for desktop must be the same as the version of the agent for virtual desktops.
 
 If the versions aren't synced during recording or UI element capturing, a dialog will prompt you to sync the versions. In this case, select **Sync** to sync the two products. 
+
+  ![Screenshot of a dialog prompting you to sync Power Automate for desktop and the agent for virtual desktops.](media\virtual-desktops\virtual-desktops-agent-sync-dialog.png)
 
 If the versions are out of sync during the runtime of a desktop flow, Power Automate for desktop will sync the versions of the two products automatically.
 
@@ -68,7 +74,9 @@ Capturing elements in UI elements in virtual desktops works the same way as in p
 
 To distinguish the UI elements captured in virtual desktops, check the visual indications and the tree structure in the UI elements pane.
 
-UI elements captured in a Citrix virtual desktop are located under a **Citrix** parent, while the UI elements captured in a virtual machine connected through RDP are located under an **RDP** parent. 
+UI elements captured on a Citrix virtual desktop are located under a **Citrix** parent, while the UI elements captured in a virtual machine connected through RDP are located under an **RDP** parent. 
+
+![Screenshot of some UI elements captured on an RDP virtual desktop.](media\virtual-desktops\ui-elements-rdp.png)
 
 Every individual virtual desktop has its own tree, while numeric prefixes allow you to distinguish virtual desktops of the same type.
 
