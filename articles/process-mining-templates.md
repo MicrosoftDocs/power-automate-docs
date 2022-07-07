@@ -4,7 +4,7 @@ description: This topic describes the Power Platform templates you can use for p
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/25/2022
+ms.date: 07/06/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -167,7 +167,14 @@ In order to deploy the **Power Apps Insights** template, you'll need to create a
 
 1. Go back to the process advisor **Create a new process** screen and paste it in the **Power App Application Insights App Id** field.
 
-1. Identify the parameter you are looking to analyze from your Power Apps and enter it in the **Case Id Field Name** and **Activity Field Name** fields. This can be identified by navigating to the trace details of your Power App.
+1. Identify the parameter that you want to analyze from your app and enter it in the **Case Id field name** and **Activity field name** fields in the **Create a new process** screen.
+
+    These field names can be either the name of a custom parameter (defined in customDimensions) or one of the following parameters: `appId`, `appName`, `client_Browser`, `client_City`,  `client_CountryOrRegion`, `client_StateOrProvince`, `client_Type`, `message`, `operation_Name`, `operation_Id`, `session_Id`, `severityLevel`, or `user_Id`. You can find these parameters in the dropdown lists in the **Case ID field name** and **Activity field name** dropdown lists in the **Create a new process** screen.
+
+    These fields can be tested by navigating to the **Log Analytics** menu in your Application Insights resource with this query:
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of the query in the Application Insights resource.](media/process-mining-templates/query.png "Application Insights resource query")
 
 1. (Optional) Enter a description of the process in the **Description** field.
 
