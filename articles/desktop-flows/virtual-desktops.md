@@ -16,16 +16,21 @@ search.audienceType:
 
 # Automating on virtual desktops (Preview)
 
-Apart from physical machines, desktop flows enable you to automate the operating system and applications in Citrix and RDP (Microsoft Remote Desktop Protocol) virtual desktops.
+Apart from physical machines, desktop flows enable you to automate the operating system and applications in Citrix and RDP (Microsoft Remote Desktop Protocol) virtual desktops, and interact with Citrix virtual apps.
 
 Automating on virtual desktops works precisely as in physical machines. You can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md).
 
 > [!IMPORTANT]
-> Automating on virtual desktops doesn't support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md) or [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md).
+> Automating on virtual desktops doesn't currently support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md) or [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md).
 
-To enable this functionality, you must install the **Power Automate agent for virtual desktops** on your virtual desktop. The agent communicates with the Power Automate for desktop application and facilitates the required interaction with it.
+To enable this functionality, you must install the **Power Automate agent for virtual desktops** on your virtual desktop. The agent communicates with the Power Automate for desktop application and facilitates the required interaction with it. The same agent can work with both Citric and RDP virtual desktops.
 
-Communication is performed through the same channel that the Citrix/RDP virtual desktop uses to connect to your machine. When the agent isn't running on your virtual desktop, the connection with Power Automate for desktop can't be established. In this case, relaunch the agent.  
+Communication is performed through the same channel that the Citrix/RDP virtual desktop uses to connect to your machine. Therefore, a running agent is necessary for desktops flow to interact with a virtual desktop. So, the agent should be up and running for both design and run time.
+
+The agent starts running every time the user logs in to the machine. The launching of the agent is set as a scheduled task in the virtual desktop. If the agent isn't running on your virtual desktop, the connection with Power Automate for desktop can't be established. In this case, relaunch the agent.  
+
+> [!NOTE]
+> The virtual machine might have or not installed the Power Automate for desktop. 
 
 ## Prerequisites
 
@@ -33,7 +38,7 @@ Communication is performed through the same channel that the Citrix/RDP virtual 
 
 *	Power Automate for desktop should be installed on the user’s physical machine.  
 
-*	Power Automate agent for virtual desktops should be installed on the Citrix/RDP virtual desktop.  
+*	Power Automate agent for virtual desktops should be installed on the Citrix/RDP virtual desktop. Agent installation requires admin rights.
 
 *	Power Automate agent for virtual desktops should be up and running.  
 
@@ -55,9 +60,11 @@ Communication is performed through the same channel that the Citrix/RDP virtual 
 
 - When the installation is complete, check that the agent for virtual desktops is visible in the System Tray of the virtual desktop. 
 
+If there's an unexpected issue, you can restart the agent using the shortcut in the System Tray.
+
 ## Sync Power Automate for desktop and agent for virtual desktops versions 
 
-To automate on virtual desktops, the version of Power Automate for desktop must be the same as the version of the agent for virtual desktops.
+To automate on virtual desktops, the version of Power Automate for desktop used to interact with the virtual desktop's UI elements must be the same as the version of the agent for virtual desktops.
 
 If the versions aren't synced during recording or UI element capturing, a dialog will prompt you to sync the versions. In this case, select **Sync** to sync the two products. 
 
@@ -66,19 +73,19 @@ If the versions aren't synced during recording or UI element capturing, a dialog
 If the versions are out of sync during the runtime of a desktop flow, Power Automate for desktop will sync the versions of the two products automatically.
 
 > [!NOTE]
-> The DLLs of the synced version used by the agent can be found in **...\AppData\Local\Microsoft\Power Automate Desktop\RDP Automation Agents**. If you want to test the sync process while the products are already synced, stop any process of the running agent and delete the file. 
+> The DLLs of the synced version used by the agent can be found in **C:\Users\\[Username]]\AppData\Local\Microsoft\Power Automate Desktop\RDP Automation Agents**.
 
 ## Distinguish UI elements captured on virtual desktops
 
-Capturing elements in UI elements in virtual desktops works the same way as in physical machines. You can find more information regarding UI elements in [Automate using UI elements](ui-elements.md).
+Capturing elements in UI elements in virtual desktops works the same way as in physical machines. The generated selectors of windows and UI elements are the same, independently of whether they've been captured on a physical machine or a virtual desktop. You can find more information regarding UI elements and selectors in [Automate using UI elements](ui-elements.md).
 
 To distinguish the UI elements captured in virtual desktops, check the visual indications and the tree structure in the UI elements pane.
 
 UI elements captured on a Citrix virtual desktop are located under a **Citrix** parent, while the UI elements captured in a virtual machine connected through RDP are located under an **RDP** parent. 
 
-![Screenshot of some UI elements captured on an RDP virtual desktop.](media\virtual-desktops\ui-elements-rdp.png)
-
 Every individual virtual desktop has its own tree, while numeric prefixes allow you to distinguish virtual desktops of the same type.
+
+![Screenshot of some UI elements captured on an RDP virtual desktop.](media\virtual-desktops\ui-elements-rdp.png)
 
 ## Known issues and limitations
 
@@ -88,11 +95,11 @@ Every individual virtual desktop has its own tree, while numeric prefixes allow 
 
 *	**Issue:** During runtime, the Citrix/RDP window shouldn't be minimized otherwise the element won't be found. 
 
-* **Workarounds:** None 
+* **Workarounds:** Use a **Focus window** action on the Citrix/RDP window before the UI automation actions that interact with the virtual desktop. 
 
-*	**Issue:** When the Citrix/RDP window is maximized and the recorder is in use, the **Populate text field in window** and **Send keys** actions might not work as expected. 
+*	**Issue:** When the Citrix/RDP window is maximized and the recorder is used, the **Populate text field in window** and **Send keys** actions might not work as expected. 
 
-* **Workarounds:** None
+* **Workarounds:** Ensure that the Citrix/RDP window isn't maximized during recording.
 
 *	**Issue:** UI automation of Java applets running on virtual desktops isn't supported yet. 
 
