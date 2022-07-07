@@ -33,7 +33,7 @@ The agent starts running every time the user logs in to the virtual desktop, as 
 
 * Windows 10 Pro, Windows 10 Enterprise, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022
 
-*	Power Automate for desktop should be installed on the user’s physical machine.  
+*	Power Automate for desktop should be installed on the user’s physical machine. Users must download the installer from the Power Automate portal and install it manually. This feature isn't available in Power Automate for desktop installed through the Microsoft Store.
 
 *	Power Automate agent for virtual desktops should be installed on the Citrix/RDP virtual desktop. The agent installation requires admin rights.
 
