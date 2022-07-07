@@ -120,7 +120,7 @@ If you encounter errors while launching the Power Automate agent for virtual des
 1. Restart the Power Automate agent for virtual desktops.
 
 
-If the agent for virtual desktops can't communicate with Power Automate for desktop, the agent will be closed. If you're sure that the correct Power Automate for desktop version, which supports UI automation in virtual desktops, is installed, try the following remediation steps:
+If the agent for virtual desktops can't communicate with Power Automate for desktop, the agent will be closed. If you're sure that a correct Power Automate for desktop version is installed, one that supports UI automation in virtual desktops, try the following remediation steps:
 
 1. Open PowerShell
 1. Navigate to the appropriate directory using the following command:
