@@ -39,54 +39,19 @@ The process of creating and running a template is similar for all templates.
 
 1. In the **Process name** field, enter a name for your process.
 
-1. Select the gear icon, and then select **Admin Center**.
+1. If you know your flow ID, enter it in the **Flow ID (optional)** field. If you don't know your flow ID, go to the next step.
 
-    > [!NOTE]
-    > - Open this in a new window or instance so that you don't close the template wizard.
-    > - If you don't have admin rights for your environment, contact your admin for support.
+    To learn more about the flow ID, go to the [General Power Automate Discussion](https://powerusers.microsoft.com/t5/General-Power-Automate/Flow-ID/m-p/83160#M19806).
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Admin Center option in the Settings screen.](media/process-mining-templates/admin-center.png "Admin Center option")
-
-1. On the left pane, select **Environments**.
-
-1. On the right pane, select your environment.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Admin Center Environments screen.](media/process-mining-templates/environment.png "Admin Center Environments screen")
-
-1. Select **Settings** > **Resources** > **All legacy settings**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Resources option in the Setting screen.](media/process-mining-templates/admin-resources.png "Resources option in the Setting screen")
-
-1. On the toolbar, select **Settings** > **Customizations**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Customizations option in the Setting screen.](media/process-mining-templates/settings-cust.png "Customizations option in the Setting screen")
-
-1. On the **Customization** screen, select **Developer Resources**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Developer Resources option in the Settings screen.](media/process-mining-templates/devel-resources.png "Developer Resources option in the Settings screen")
-
-1. Copy the **Service Root URL**. You'll use this as your Dataverse API. To learn more about Dataverse API, go to [Discover the URL for your organization](/power-apps/developer/data-platform/webapi/discover-url-organization-web-api).
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Service Root URL field.](media/process-mining-templates/service-root.png "Service Root URL field")
-
-1. Go back to your Template and paste this in the **Dataverse API URL** field.
-
-1. (Optional) Enter a description of the process in the **Description** field.
+1. (Optional) In the **Description** field, enter a description for the process.
 
 1. Select **Create**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Create a new process screen.](media/process-mining-templates/create-process.png "Create a new process screen")
-
 1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
-1. Select **Sign in** and authenticate through AAD.
+1. If you're signed in, you'll see your credentials. You can choose to switch accounts.
+
+    If you're not signed in, select **Sign in** and authenticate through AAD.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Connect to data source screen.](media/process-mining-templates/connect.png "Connect to data source screen")
@@ -121,7 +86,11 @@ The process of creating and running a template is similar for all templates.
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Power Virtual Agents tile.](media/process-mining-templates/pva.png "Power Virtual Agents tile")
 
-1. Do steps 2 through 15 in the **Create and run the Desktop Flows template** section earlier in this article.
+1. In the **Process name** field, enter a name for your process.
+
+1. If you know your bot ID, enter it in the **Bot ID (optional)** field. If you don't know your bot ID, go to the next step.
+
+1. Do steps 4 through 8 in the **Create and run the Desktop Flows template** section earlier in this article.
 
 ### Visualize the process map for the Power Virtual Agents template
 
@@ -165,7 +134,7 @@ In order to deploy the **Power Apps Insights** template, you'll need to create a
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Application ID in the API Access screen.](media/process-mining-templates/app-id.png "Application ID in the API Access screen")
 
-1. Go back to the process advisor **Create a new process** screen and paste it in the **Power App Application Insights App Id** field.
+1. Go back to the process advisor **Create a new process** screen and paste it in the **Power apps application insights app Id** field.
 
 1. Identify the parameter that you want to analyze from your app and enter it in the **Case Id field name** and **Activity field name** fields in the **Create a new process** screen.
 
@@ -176,14 +145,7 @@ In order to deploy the **Power Apps Insights** template, you'll need to create a
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the query in the Application Insights resource.](media/process-mining-templates/query.png "Application Insights resource query")
 
-1. (Optional) Enter a description of the process in the **Description** field.
-
-1. Select **Create**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Create a new process screen for the Power Apps Insights template.](media/process-mining-templates/create-app-process.png "Create a new process screen for the Power Apps Insights template")
-
-1. Complete the **Connect data source** screen by doing steps 13 through 15 in the **Create and run the Desktop Flows template** section earlier in this article.
+1. Do steps 4 through 8 in the **Create and run the Desktop Flows template** section earlier in this article.
 
 ### Visualize the process map for the Power Apps Insights template
 
