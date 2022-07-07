@@ -79,7 +79,7 @@ Capturing UI elements on virtual desktops works the same way as on physical mach
 
 To distinguish the UI elements captured on virtual desktops, check the visual indications and the tree structure in the UI elements pane.
 
-UI elements captured on a Citrix virtual desktop are located under a **Citrix** parent, while the UI elements captured on a virtual machine connected through RDP are located under an **RDP** parent. 
+UI elements captured in the host machine are located under the **Computer** parent, while the UI elements captured on a virtual desktop are located under an **RDP** parent.
 
 Every individual virtual desktop has its own tree, while numeric prefixes allow you to distinguish virtual desktops of the same type.
 

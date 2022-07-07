@@ -118,3 +118,22 @@ If you encounter errors while launching the Power Automate agent for virtual des
 1. Ensure you've installed the correct version of Power Automate of desktop.
 1. Connect again to the RDP or Citrix virtual desktop.
 1. Restart the Power Automate agent for virtual desktops.
+
+
+If the agent for virtual desktops can't communicate with Power Automate for desktop, the agent will be closed. If you are sure that the correct  Power Automate for desktop version that supports UI automation in virtual desktops is installed, try the following remediation steps:
+
+1. Open PowerShell
+1. Navigate to the appropriate directory using the following command:
+
+    ``` PowerShell
+    cd "C:\Program Files (x86)\Power Automate Desktop\RDP\DVCPlugin\x64"
+    ```
+1. Run the following two commands:
+
+    ``` PowerShell
+    regsvr32 /u .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll
+    ```
+
+    ``` PowerShell
+    regsvr32  .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll"
+    ```
