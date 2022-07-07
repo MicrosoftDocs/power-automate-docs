@@ -21,19 +21,20 @@ Apart from physical machines, desktop flows enable you to automate the operating
 Automating on virtual desktops works precisely as on physical machines. You can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md).
 
 > [!IMPORTANT]
-> Automating on virtual desktops doesn't currently support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md) or [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md).
+> Automating on virtual desktops doesn't currently support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md), [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md), or [automate using images](images.md).
+
 
 To enable this functionality, install the **Power Automate agent for virtual desktops** on your virtual desktop. The agent communicates with the Power Automate for desktop application and facilitates the required interaction with it. The same agent can work with both Citric and RDP virtual desktops.
 
 Communication is performed through the same channel that the Citrix/RDP virtual desktop uses to connect to your machine. Therefore, a running agent is necessary for desktop flows to interact with a virtual desktop, and the agent should be up and running for both design and run time.
 
-The agent starts running every time the user logs in to the virtual desktop, as the launching of the agent is set as a scheduled task. If the agent isn't running on your virtual desktop, the connection with Power Automate for desktop can't be established. In this case, relaunch the agent.  
+The agent starts running every time the user logs in to the virtual desktop, as the launching of the agent is set as a scheduled task. If the agent isn't running on your virtual desktop, the connection with Power Automate for desktop can't be established. In this case, relaunch the agent manually.  
 
 ## Prerequisites
 
 * Windows 10 Pro, Windows 10 Enterprise, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022
 
-*	Power Automate for desktop should be installed on the user’s physical machine. Users must download the installer from the Power Automate portal and install it manually. This feature isn't available in Power Automate for desktop installed through the Microsoft Store.
+*	Power Automate for desktop should be installed on the user’s host machine. Users must download the installer from the Power Automate portal and install it manually.
 
 *	Power Automate agent for virtual desktops should be installed on the Citrix/RDP virtual desktop. The agent installation requires admin rights.
 
@@ -42,7 +43,7 @@ The agent starts running every time the user logs in to the virtual desktop, as 
 ## Install the Power Automate agent for virtual desktops 
 
 > [!IMPORTANT]
-> Power Automate for desktop should be installed on your physical machine before installing the agent on your virtual desktop. The virtual machine might have or not installed the Power Automate for desktop. 
+> Power Automate for desktop should be installed on your host machine before installing the agent on your virtual desktop. The virtual machine might have or not installed the Power Automate for desktop. 
 
 > [!IMPORTANT]
 > During the installation of Power Automate for desktop, the Citrix/RDP connection to the virtual desktop should be closed.  
@@ -74,7 +75,7 @@ If the versions are out of sync during the runtime of a desktop flow, Power Auto
 
 ## Distinguish UI elements captured on virtual desktops
 
-Capturing UI elements on virtual desktops works the same way as on physical machines. The generated selectors of windows and UI elements are the same, independently of whether they've been captured on a physical machine or a virtual desktop. You can find more information regarding UI elements and selectors in [Automate using UI elements](ui-elements.md).
+Capturing UI elements on virtual desktops works the same way as on physical machines. The generated selectors of windows and UI elements are the same, independently of whether they've been captured on a host machine or a virtual desktop. You can find more information regarding UI elements and selectors in [Automate using UI elements](ui-elements.md).
 
 To distinguish the UI elements captured on virtual desktops, check the visual indications and the tree structure in the UI elements pane.
 
@@ -86,9 +87,13 @@ Every individual virtual desktop has its own tree, while numeric prefixes allow 
 
 ## Known issues and limitations
 
+*	**Issue:** Virtual desktop automation isn't supported in Power Automate for desktop installed through the Microsoft store.
+
+* **Workarounds:** Download the Power Automate for desktop installer through the Power Automate portal and install it manually.
+
 *	**Issue:** Citrix/RDP automation doesn't support the use of web automation actions.
 
-* **Workarounds:** [Handle web components as desktop UI elements](desktop-automation.md) or [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md).
+* **Workarounds:** [Handle web components as desktop UI elements](desktop-automation.md), [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md), or [automate using images](images.md).
 
 *	**Issue:** During runtime, the Citrix/RDP window shouldn't be minimized otherwise the element won't be found. 
 
