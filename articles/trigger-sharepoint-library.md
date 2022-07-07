@@ -1,20 +1,15 @@
 ---
-title: Trigger approvals from a SharePoint document library | Microsoft Docs
-description: Learn how to create an approval flow that triggers when new files are added to a SharePoint library.
+title: Trigger approvals from a SharePoint document library in Power Automate | Microsoft Docs
+description: Learn how to create an approval flow that triggers when new files are added to a SharePoint library in Power Automate.
 services: ''
 suite: flow
-documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/01/2021
+ms.date: 06/16/2022
 ms.author: deonhe
 search.app: 
   - Flow

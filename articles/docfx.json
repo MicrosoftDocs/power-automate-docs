@@ -73,6 +73,12 @@
       },
       "ms.service": {
         "**.*": "power-automate"
+      },
+      "ms.subservice": {
+        "guidance/**.*": "guidance",
+        "developer/**.*": "developer",
+        "desktop-flows/**.*": "desktop-flow",
+        "teams/**.*": "teams"
       }
     },
     "template": [],

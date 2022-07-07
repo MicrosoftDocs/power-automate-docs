@@ -4,7 +4,7 @@ description: This topic describes the Azure templates you can use for process mi
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 05/25/2022
+ms.date: 07/06/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -47,7 +47,7 @@ Before you can visualize your Azure DevOps work items, you must have an Azure De
     > ![Screenshot of  Azure DevOps Boards screen.](media/process-mining-azure-templates/az-boards.png "Azure DevOps Boards screen")
 
     c. (Optional) Enter a description of the process in the **Description** field.
-    
+
     d. Select **Create**.
 
     > [!div class="mx-imgBorder"]
@@ -125,7 +125,7 @@ Before you can visualize your Logic Apps, you must have an Azure Logic Apps Stan
 
 ### Create and run the Logic Apps with App Insights template
 
-1. In order to deploy template, you'll need to create an Application Insights Resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
+1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
 1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic Apps with App Insights** tile.
 
@@ -182,6 +182,8 @@ To learn more about Logic Apps, go to the [Azure Logic Apps documentation](/azur
 Before you can visualize your Logic Apps, you must have an Azure Logic Apps Consumption Plan (Multi-tenant) license. Find out more, go to [Logic Apps pricing](https://azure.microsoft.com/pricing/details/logic-apps/).
 
 ### Create and run the Azure Logic App Consumption Plan template
+
+1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
 1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic App Consumption Plan** tile.
 

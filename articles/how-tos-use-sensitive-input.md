@@ -21,7 +21,7 @@ search.audienceType:
 
 # Manage sensitive input like passwords
 
-Some inputs like passwords need to be obfuscated or omitted from the logs. Power Automate uses **Sensitive text inputs** to store these "confidential" values.
+Some inputs like passwords need to be omitted from the logs. Power Automate uses **Sensitive text inputs** to store these "confidential" values.
 
 Follow these steps to turn on **Secure Inputs** and **Secure Outputs** to work with sensitive content from connectors.
 
