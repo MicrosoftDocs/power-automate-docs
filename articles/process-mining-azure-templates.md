@@ -1,10 +1,10 @@
 ---
-title: Azure templates for process mining in process advisor | Microsoft Docs
-description: This topic describes the Azure templates you can use for process mining in the process advisor feature in Power Automate.
+title: Azure templates for process mining in process advisor
+description: Learn how to use Azure templates for process mining in the Power Automate process advisor.
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 07/05/2022
+ms.date: 07/08/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -16,36 +16,40 @@ search.audienceType:
 
 # Azure templates for process mining
 
-Process advisor templates allow you to easily onboard your data with a few selections, which avoids the traditional data identification and manipulation required in traditional process mining tools. Templates will enable users to reach their insights quickly and without the previously required data mastery. Our templates like ADO, Power Apps, Bot Framework, and more, will empower all to reach process insights and implement optimizations and automations.
+Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps Work Tracking](#azure-devops-work-tracking-template), [Azure Pipelines](#azure-devops-pipelines-template), [Logic Apps with App Insights](#logic-apps-with-app-insights-template), and [Logic App Consumption Plan](#logic-app-consumption-plan-template) templates provide insights that help you identify opportunities and optimize your development processes.
+
+Creating and running a template is similar for all the process advisor templates.
 
 ## Azure DevOps Work Tracking template
 
-The process advisor **Azure DevOps Work Tracking template** will enable you to visualize the execution process and handling of tracked Azure DevOps work items. Insights will allow you to maximize your development processes and manage dependencies.
+The Azure DevOps Work Tracking template analyzes the execution and handling of tracked Azure DevOps (ADO) work items to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure DevOps?](/azure/devops/what-is-azure-devops).
 
-To learn more about Azure DevOps, go to the [Azure DevOps documentation](/azure/devops).
+<!-- I removed the Prerequisites sections because users won't have anything to analyze in the first place if they don't have the proper licenses. -->
 
-### Prerequisites
+The Azure DevOps Work Tracking template uses data from your Azure DevOps boards to analyze your work items. That means you'll need to gather some information from ADO before you can run the template.
 
-Before you can visualize your Azure DevOps work items, you must have an Azure DevOps account and user license. To learn more, go to [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+### Gather information from ADO
+
+1. In your Azure DevOps environment in the left panel, select **Project settings**. Under **Boards**, select **Team configuration**. Then select the **Area** tab.
+
+    :::image type="content" source="media/process-mining-azure-templates/az-boards.png" alt-text="Screenshot of an Azure DevOps Project Settings page with organization, project name, and other information highlighted.":::
+
+1. Find the organization name and project name at the top of the Project Settings page. Take note of the area name.
 
 ### Create and run the Azure DevOps Work Tracking template
 
-1. On the **Azure** tab in the **Start with a popular template** section, select the **Azure DevOps Work Tracking** tile.
+1. In Power Automate in the left panel, select **Process advisor**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Azure DevOps Work Tracking tile.](media/process-mining-azure-templates/az-devops.png "Azure DevOps Work Tracking tile")
+1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps Work Tracking** tile.
 
-1. In the **Process name** field, enter a name for your process.
+1. In the **Process name** box, enter a name for your process.
 
-1. Go to your Azure DevOps environment and select **Boards** on the left panel to find the information you'll need to enter in the **Create a new process** screen.
+1. In the **Organization name** box, enter the organization name from ADO.
 
-    1. Find the names for the **Organization name** and **Project name** fields (as indicated at the top of the following screenshot).
+1. In the **Project name** box, enter the project name from ADO.
 
-    1. On the **Boards** tab to the right, scroll down to the **Area** heading to find the name you'll use in the **Area Name** field.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of  Azure DevOps Boards screen.](media/process-mining-azure-templates/az-boards.png "Azure DevOps Boards screen")
-
+1. In the **Area name** box, enter the area name from ADO.
+<!-- I stopped here -->
     c. (Optional) Enter a description of the process in the **Description** field.
 
     d. Select **Create**.
@@ -71,7 +75,7 @@ After your process report has been published, you can visualize the process map 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the process map for the Azure DevOps Work Tracking template.](media/process-mining-azure-templates/devops-map.png "Process map for the Azure DevOps Work Tracking template")
 
-## Azure Pipelines template
+## Azure DevOps (pipelines) template
 
 The process advisor **Azure Pipelines** template will enable you to visualize the execution process and handling of tracked Azure pipelines and boards. Insights will allow you to maximize your development processes and manage dependencies.
 
