@@ -56,3 +56,9 @@ Approvals that rely on custom responses can fail if they're sent to many users w
 **Power Apps V2 trigger limitation**
 
 The Power Apps V2 trigger doesn't support non-open API flows. Therefore, if you update your Power Apps V1 trigger to the Power Apps V2 trigger, your flow will break with a connection error. As a workaround, after you update your flow to the Power Apps V2 trigger, remove and then re-add the flow, then save the app.
+
+**Splitting create and wait actions**
+It is possible to create flows using the approval connector where you use the "Create an approval" and "Wait for an approval" as independant actions. If a user immediatly responds to an approval before the flow has a chance to reach the wait action it is possible for the flow to be stuck in the wait stage. To avoid this please ensure that create and wait are called as close together within the flow as feasible or alternately to change the status of the approval in Dataverse before calling the wait action. 
+
+**Using approval outcomes in loops**
+When using approvals with Do until loops, users need to account for all possible outcomes of a flow. If not the flows could be stuck in infinite loops. For basic and await all approvals the final states can be Approved, Rejected or Cancelled. For custom approvals its based on what the user chose to have as the options for the approval. It is recommended to use a condition or switch statement with Approvals instead of do until loops.
