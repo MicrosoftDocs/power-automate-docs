@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/07/2021
+ms.date: 07/11/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -107,7 +107,7 @@ Sign into [Power Automate](https://flow.microsoft.com), and then perform the fol
     When a cloud flow with the **Start and wait for an approval** action is configured with **Approve/Reject - Everyone must approve**, it waits until all **Assigned to** approve or at least one **Assigned to** rejects the approval request.
 
     >[!TIP]
-    >Add a **Condition** step if you want your flow to check the response of the approval request and perform different actions based on the **Outcome**. The **Outcome** can be **Approve** or **Reject**. 
+    >Add a **Condition** step if you want your flow to check the response of the approval request and perform different actions based on the **Outcome**. The **Outcome** is an array of **Approve** or **Reject** elements, based on the number of responses to the request. 
 
     Let's continue with the flow and send an email when a decision is made on the approval request.
 
