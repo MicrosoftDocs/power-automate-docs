@@ -22,7 +22,7 @@ At times, you might want to turn off a cloud flow to prevent it from running. Fo
 
 ## Turn flows off
 
-After you create a cloud flow, it is turned on by default. Follow these steps to turn off a cloud flow.
+After you create a cloud flow, it's turned on by default. Follow these steps to turn off a cloud flow.
 
 1. On the left pane, select **My Flows**.
 
@@ -31,7 +31,7 @@ After you create a cloud flow, it is turned on by default. Follow these steps to
     >[!div class="mx-imgBorder"]
     >![Screenshot of the More commands icon.](./media/disable-flow/flows-collapsed-menu.png "More commands icon")
     
-1. On the menu that appears, select **Turn off**.
+1. On the menu that appears, select **Turn off**. <!--Note from Sweeny: Can we add the screenshot here as well for more clarity-->
 
 1. On the **Details** page, select the **More commands** (...) icon, and then select **Details** to Verify the new status.
 
@@ -43,7 +43,7 @@ After you create a cloud flow, it is turned on by default. Follow these steps to
 
 ## Turn flows on
 
-If you've turned a cloud flow off, but want to turn it back on so that it will run again, follow one of these steps.
+If you've turned off a cloud flow, but want to turn it back on so that it will run again, follow one of these steps.
 
 - If you are on the **Details** page, in the menu at the top, select **Turn on**.
 

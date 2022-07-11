@@ -18,7 +18,7 @@ search.audienceType:
 
 # Submit a template to the Power Automate gallery
 
-Submit a cloud flow template to the gallery of templates for Power Automate. Templates help people not only to create flows more easily, but also to imagine additional scenarios that would benefit from a cloud flow.
+Follow the steps shown below to submit a cloud flow template to the Power Automate gallery. Templates help people not only to create flows more easily, but also to imagine additional scenarios that would benefit from a cloud flow.
 
 1. On the left pane, select **My flows**.
 
@@ -39,7 +39,7 @@ Submit a cloud flow template to the gallery of templates for Power Automate. Tem
     >[!div class="mx-imgBorder"]
     >![Screenshot showing warning message of no successful runs.](./media/publish-a-template/need-successful-run-warning.png "Warning message of no successful runs")
 
-1. Provide a meaningful title, a clear description of the scenario that your template automates, the biggest benefit, the number of users, number of runs, and the categories that apply for the template.
+1. Provide a meaningful title, a clear description of the scenario that your template automates, the biggest benefit, the number of users, the number of runs, and the categories that apply for the template.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of template options.](./media/publish-a-template/template-options.png "Template options")
@@ -49,6 +49,6 @@ Submit a cloud flow template to the gallery of templates for Power Automate. Tem
      The Power Automate team verifies and *possibly modifies* your template. If the team approves your template, it appears in the gallery of templates for Power Automate.
 
 >[!NOTE]
->Templates are for use in the public gallery only. They are not supported for private use.
+>Templates are for use in the public gallery only. They aren't supported for private use.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
