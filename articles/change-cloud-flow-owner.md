@@ -60,7 +60,7 @@ Once assigned, the new owner gets access to the run history and connection refer
 >[!div class="mx-imgBorder"]
 >![Screenshot that shows confirmation for the owner change.](media/change-cloud-flow-owner/e5cc876b0834b6d166215a8e8941f169.png "Change owner confirmation message")
 
-If the flow is a **scheduled** or **automated** flow, after the owner changes, the flow runs under the license of the new owner and uses their Power Platform request limits. This change can take up to seven (7) days to become effective. If you need the new owner to take effect immediately, edit the flow and then save it to force the flow to use the new owner’s license.
+If the flow is a **scheduled** or **automated** flow, after the owner changes, the flow runs under the license of the new owner and uses their Power Platform request limits. This change can take up to seven (7) days to become effective. If you need the new owner to take effect immediately, edit the flow, and then save it to force the flow to use the new owner’s license.
 
 If the flow is a **manual** flow, the flow runs under the license of the user who runs the flow. The plan section shows whose license plan the flow uses.
 
