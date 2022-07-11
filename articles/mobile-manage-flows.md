@@ -67,7 +67,7 @@ When the flow runs, it sends a custom push notification with the syntax shown in
     >[!div class="mx-imgBorder"]
     >![Screenshot of a list of runs.](./media/mobile-manage-flows/history-mixed.png "List of runs")
 
-1. Tap a run to show whether each event and action succeeded and, if so, how much time in seconds it took.
+1. Tap on a run to show whether each event and action succeeded and, if so, how much time in seconds it took.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of run details.](./media/mobile-manage-flows/flow-run.png "Run details")
