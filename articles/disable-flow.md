@@ -31,7 +31,7 @@ After you create a cloud flow, it is turned on by default. Follow these steps to
     >[!div class="mx-imgBorder"]
     >![Screenshot of the More commands icon.](./media/disable-flow/flows-collapsed-menu.png "More commands icon")
     
-1. On the menu that appears, select **Turn off**.
+1. On the menu that appears, select **Turn off**. <!--Note from Sweeny: Can we add the screenshot here as well for more clarity-->
 
 1. On the **Details** page, select the **More commands** (...) icon, and then select **Details** to Verify the new status.
 
