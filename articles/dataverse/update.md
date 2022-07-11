@@ -33,6 +33,8 @@ For example, you can create a flow that updates an **Account** in Dataverse when
 
 ![Image that shows a flow that updates a row when an email arrives.](../media/update-row/update-row-new-email.png)
 
-After you select a table, new columns appear. All mandatory columns display an asterisk (\*). It's not necessary to enter a value for optional columns. Columns that are left blank are skipped in the update unless you provide a null value explicitly.
+## Update a row 
 
-The **Row ID** column is the unique ID of the row that you are updating. If you do not see a column, you can select **Show advanced options** at the bottom of the card.
+After selecting a table, the action card will display a list of inputs for the Row ID and related columns of the table to update, columns, with mandatory columns marked as required with an asterisk (\*). The **Row ID** column is the unique ID of the row that will be updated; if a row ID is provided that does not exist, or generated with the **guid()** expression, the action wili perform an update-or-insert (upsert) operation and will create a new row with the specified ID. 
+
+If you do not see a column, you can select **Show advanced options** at the bottom of the card. Columns that are left blank are skipped in the update unless you provide a null value explicitly.
