@@ -105,7 +105,7 @@ You can export your workflow when no issues remain on the **Prepare to Export** 
 You can now run or make edits to your flow from the Power Automate designer, just like any other flow.
 
 >[!TIP]
-> Use the sharing and commenting capabilities in Visio to collaborate with multiple stakeholders and create a complete workflow quickly.
+> Use Visio's sharing and commenting capabilities to collaborate with multiple stakeholders and quickly create a complete workflow .
 
 ### More information
 
