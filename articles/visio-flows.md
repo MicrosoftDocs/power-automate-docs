@@ -1,6 +1,6 @@
 ---
 title: Design flows with Microsoft Visio in Power Automate | Microsoft Docs
-description: Leverage your organization's Visio expertise to build common models as a starting point to create flows.
+description: Use your organization's Visio expertise to build common models as a starting point to create flows.
 services: ''
 suite: flow
 documentationcenter: na
