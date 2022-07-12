@@ -196,7 +196,7 @@ To call the action, you'll need the following information.
   >
   > Refer to [Manage desktop flows](/power-automate/desktop-flows/manage) for more information.
 
-- The `name` of the desktop flow connection (target machine/machine group) to use to run your flow. The name can be retrieved from the URL of the same connection page in Power Automate. The URL format is:  
+- The `name` of the desktop flow connection (targeting a machine/machine group) to use to run your flow. The name can be retrieved from the URL of the same connection page in Power Automate. The URL format is:  
 `https://flow.microsoft.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`.
   
   > [!NOTE]
@@ -226,6 +226,29 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
     "flowsessionId": "d9687093-d0c0-ec11-983e-0022480b428a"
 }
 ```
+
+## Cancel a desktop flow run (preview)
+
+>[!NOTE]
+>Canceling a desktop flow run using Web API is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+Similarly to the [Trigger](#trigger-a-desktop-flow-run-(preview)) functionality, you can also cancel a queued/running desktop flow. To do this, you need to use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun)
+
+### Request to cancel a desktop flow run
+
+```http
+Authorization: Bearer eyJ0eXAiOi...
+Accept: application/json
+
+POST https://[Organization URI]/api/data/v9.2/flowsessions(d9687093-d0c0-ec11-983e-0022480b428a)/Microsoft.Dynamics.CRM.CancelDesktopFlowRun HTTP/1.1  
+```
+
+### Response from request to cancel a desktop flow
+
+```json
+HTTP/1.1 204 No Content
+```
+
 
 ### Errors
 
