@@ -1,6 +1,6 @@
 ---
 title: Design flows with Microsoft Visio in Power Automate | Microsoft Docs
-description: Leverage your organization's Visio expertise to build common models as a starting point to create flows.
+description: Use your organization's Visio expertise to build common models as a starting point to create flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -27,13 +27,13 @@ The Power Automate designer is a rich tool in which you can configure every deta
 
 ## Prerequisites
 
-- A Power Automate account.
+- A [Power Automate](https://flow.microsoft.com) account.
 - The Microsoft Visio desktop app (English version).
 - Expertise in using Microsoft Visio.
 
 ## Design a workflow in Visio
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 
 1. From the left pane, select **Templates**.
 
@@ -105,7 +105,7 @@ You can export your workflow when no issues remain on the **Prepare to Export** 
 You can now run or make edits to your flow from the Power Automate designer, just like any other flow.
 
 >[!TIP]
-> Use the sharing and commenting capabilities in Visio to collaborate with multiple stakeholders and create a complete workflow quickly.
+> Use Visio's sharing and commenting capabilities to collaborate with multiple stakeholders and quickly create a complete workflow .
 
 ### More information
 
