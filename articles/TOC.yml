@@ -105,6 +105,8 @@
         href: trigger-sharepoint-library.md
       - name: How to - Top scenarios with approval flows
         href: approvals-howto.md
+      - name: Manage approval requests in Power Automate
+        href: approve-reject-requests.md
       - name: Single approvals
         href: modern-approvals.md
       - name: Approvals with attachments
