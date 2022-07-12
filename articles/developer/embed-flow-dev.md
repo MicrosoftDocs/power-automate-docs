@@ -241,7 +241,6 @@ Applies to ApprovalCenter widgets.
  approvalCenterSettings?: {
     approvalsFilter?: string;
     tab?: string;but
-    autoNavigateToDetails?: boolean;
     showSimpleEmptyPage? boolean;
     hideLink?: boolean
 };
@@ -249,7 +248,6 @@ Applies to ApprovalCenter widgets.
 | Parameter | Required/Optional | Description | 
 |------------|-------------------|--------------| 
 | `hideLink`| Optional | When set to `true`, the widget hides the received and the sent approval links | 
-| `autoNavigateToDetails`| Optional | When set to `true`, the widget automatically opens the approval details when only one approval exists | 
 | `approvalsFilter`| Optional | The approval widget will apply the specified approval filter when listing the approvals, for example:    The approval widget will apply the specified approval filter when listing the approvals, for example: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
 | `tab`| Optional | Default active tab to show in the Flow widget. <br/> Valid values : 'receivedApprovals', 'sentApprovals' | 
 | `showSimpleEmptyPage`| Optional | Shows an empty page when there are no approvals | 
