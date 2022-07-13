@@ -3,7 +3,7 @@ title: Work with desktop flows using code | Microsoft Docs
 description: Developer guide to integrate desktop flows capabilities within their applications.
 author: benabbon
 ms.topic: article
-ms.date: 06/16/2022
+ms.date: 07/13/2022
 ms.author: nabena
 search.app: 
   - Flow
@@ -230,9 +230,9 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
 ## Cancel a desktop flow run (preview)
 
 >[!NOTE]
->Canceling a desktop flow run using Web API is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+>Canceling a desktop flow run using Web API is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access to the features and provide feedback.
 
-Similarly to the [Trigger](#trigger-a-desktop-flow-run-preview) functionality, you can also cancel a queued/running desktop flow. To do this, you need to use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun)
+Similar to the [Trigger](#trigger-a-desktop-flow-run-preview) functionality, you can also cancel a queued/running desktop flow. To do this, you use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun).
 
 ### Request to cancel a desktop flow run
 
@@ -243,7 +243,7 @@ Accept: application/json
 POST https://[Organization URI]/api/data/v9.2/flowsessions(d9687093-d0c0-ec11-983e-0022480b428a)/Microsoft.Dynamics.CRM.CancelDesktopFlowRun HTTP/1.1  
 ```
 
-### Response from request to cancel a desktop flow
+### Response from a request to cancel a desktop flow
 
 ```json
 HTTP/1.1 204 No Content
