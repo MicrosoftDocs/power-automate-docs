@@ -54,6 +54,10 @@ search.audienceType:
 
    ![Screenshot of the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\action-search.png)
 
+1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flows connections in [Setup desktop flows connections and machine credentials](install.md#setup-desktop-flows-connections-and-machine-credentials).
+
+   ![Screenshot of the fields of a new desktop flow connection.](media\link-pad-flow-portal\desktop-flow-connection.png)
+
 1. In the action parameters, set Run mode to **Attended - Runs when you're signed in**, and in the desktop flow drop-down select **Create a new desktop flow**.
 
    ![Screenshot of the fields of the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\run-desktop-flow-v2-action-properties.png)
@@ -81,7 +85,7 @@ search.audienceType:
    - **Default value**: The default value when the flow runs from the Power Automate flow designer or the Power Automate console.
    - **External name**: The name of the variable used outside the flow designer. The external name is the name that will appear in the cloud or desktop flow designer while calling the flow.
    - **Description**: A description of the variable that will appear in the cloud or desktop flow designer while calling the flow.
-   - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding senstive variables in [Sensitive variables](manage-variables.md#sensitive-variables).
+   - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](manage-variables.md#sensitive-variables).
 
    ![Screenshot of the Add a new input variable dialog.](media\link-pad-flow-portal\add-new-input-var.png)
 

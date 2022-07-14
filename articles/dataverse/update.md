@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/13/2021
+ms.date: 07/11/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -33,6 +33,8 @@ For example, you can create a flow that updates an **Account** in Dataverse when
 
 ![Image that shows a flow that updates a row when an email arrives.](../media/update-row/update-row-new-email.png)
 
-After you select a table, new columns appear. All mandatory columns display an asterisk (\*). It's not necessary to enter a value for optional columns. Columns that are left blank are skipped in the update unless you provide a null value explicitly.
+## Update a row 
 
-The **Row ID** column is the unique ID of the row that you are updating. If you do not see a column, you can select **Show advanced options** at the bottom of the card.
+After you select a table, the action card displays a list of inputs for the row Id that's related to the columns in the table to update. An asterisk (\*) indicates the mandatory columns. The **Row Id** column is the unique Id for the row that's being updated. If you provide a row Id that doesn't exist or generated with the **guid()** expression, the action performs an update or insert (upsert) operation, creating a new row with the Id you provide. 
+
+If you don't see a column, select **Show advanced options** at the bottom of the card. The update doesn't include columns left blank, unless a null value is provided explicitly.

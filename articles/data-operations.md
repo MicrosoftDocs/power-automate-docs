@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/12/2022
+ms.date: 07/14/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -23,7 +23,10 @@ search.audienceType:
 ---
 # Use data operations
 
-In this tutorial, you'll learn about some common data operations in Power Automate such as compose, join, select, filter arrays, create tables, and parse JSON. These are available to manipulate data when you create flows.
+In this article, you'll learn about some common data operations in Power Automate, such as compose, join, select, filter arrays, create tables, and parse JSON. These are available to manipulate data when you create flows.
+
+>[!NOTE]
+>The different sections in this article aren't related and are not dependent upon each other. The different sections use different examples.
 
 Here's a quick video about data operations.
 
@@ -36,7 +39,7 @@ Here's a quick video about data operations.
 
 ## Use the compose action
 
-Use the **Data Operation - Compose** <!--note from editor: Here and throughout, you don't need to repeat the name of the action. The name in the UI isn't confusing, but these parenthetical phrases kind of are. Edits to the rest of this sentence are suggested.-->action to save yourself from having to enter the same data multiple times as you're designing a cloud flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
+Use the **Data Operation - Compose** action to save yourself from having to enter the same data multiple times as you're designing a cloud flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
 
 1. Search for **compose**, and then select the **Compose - Data Operation** action.
 

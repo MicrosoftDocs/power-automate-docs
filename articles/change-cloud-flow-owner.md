@@ -32,7 +32,7 @@ Follow these steps to change the owner of a flow.
 
 1. Select the flow for which you're changing the owner.
 
-1. Select **Edit** on the **Details** section.
+1. In the **Details** section, select **Edit** 
 
     >[!div class="mx-imgBorder"]
     >![Screenshot showing where the edit button is located in the details section.](media/change-cloud-flow-owner/04084e3f1600f61f723714a54329c54f.png "Edit button on the Details section")
@@ -42,7 +42,7 @@ Follow these steps to change the owner of a flow.
     >[!div class="mx-imgBorder"]
     >![Screenshot showing the owner section.](media/change-cloud-flow-owner/d8a0028209878ca39c8ab6932a138a3d.png "Owner section")
 
-1. Enter the email address for the new owner.
+1. Enter the email address of the new owner.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot showing where to enter the owner email address.](media/change-cloud-flow-owner/eab1c2f164b2df4c5904e02d77f19814.png "Owner's email address")
@@ -55,12 +55,12 @@ Follow these steps to change the owner of a flow.
 
 The flow can still be assigned to the new owner. The flow continues to run for 30 days, allowing time for the new owner to purchase a license. If the new owner doesn't have a premium license after the grace period, Power Automate turns off the flow. They can turn it on anytime after purchasing the license. 
 
-Once assigned, the new owner gets access to the run history and connection references. The new owner can update the flow or reassign to other users too.
+Once assigned, the new owner gets access to the run history and connection references. The new owner can update the flow or reassign it to other users too.
 
 >[!div class="mx-imgBorder"]
 >![Screenshot that shows confirmation for the owner change.](media/change-cloud-flow-owner/e5cc876b0834b6d166215a8e8941f169.png "Change owner confirmation message")
 
-If the flow is a **scheduled** or **automated** flow, after the owner changes, the flow runs under the license of the new owner and uses their Power Platform request limits. This change can take up to seven (7) days to become effective. If you need the new owner to take effect immediately, edit the flow and then save it to force the flow to use the new owner’s license.
+If the flow is a **scheduled** or **automated** flow, after the owner changes, the flow runs under the license of the new owner and uses their Power Platform request limits. This change can take up to seven (7) days to become effective. If you need the new owner to take effect immediately, edit the flow, and then save it to force the flow to use the new owner’s license.
 
 If the flow is a **manual** flow, the flow runs under the license of the user who runs the flow. The plan section shows whose license plan the flow uses.
 
@@ -68,7 +68,7 @@ If the flow is a **manual** flow, the flow runs under the license of the user wh
 >![A screenshot that shows the license plan being used.](media/change-cloud-flow-owner/bc757289d2a3f7e6da27acf3d527cc90.png "Plan section showing the license plan being used")
 
 >[!NOTE]
->This change is limited to solution-aware flows. To change the owner of a non-solution-aware flow, the new owner must export, and then import the flow.
+>This change is limited to solution-aware flows. To change the owner of a non-solution-aware flow, the new owner must export and then import the flow.
 
 ### More information
 

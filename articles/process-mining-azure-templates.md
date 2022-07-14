@@ -18,15 +18,13 @@ search.audienceType:
 
 Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps Work Tracking](#azure-devops-work-tracking-template), [Azure Pipelines](#azure-devops-pipelines-template), [Logic Apps with App Insights](#logic-apps-with-app-insights-template), [Logic App Consumption Plan](#logic-app-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
 
-Creating and running a template is similar for all the process advisor templates.
+Creating and running a template is similar for all the process advisor Azure templates.
 
-## Azure DevOps Work Tracking template
+## Azure DevOps (work tracking) template
 
-The Azure DevOps Work Tracking template analyzes the execution and handling of tracked Azure DevOps (ADO) work items to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure DevOps?](/azure/devops/what-is-azure-devops).
+The Azure DevOps (work tracking) template analyzes the execution and handling of tracked Azure DevOps (ADO) work items to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure DevOps?](/azure/devops/what-is-azure-devops).
 
-<!-- I removed the Prerequisites sections because users won't have anything to analyze in the first place if they don't have the proper licenses. -->
-
-The Azure DevOps Work Tracking template uses data from your Azure Boards to analyze your work items. You'll need to gather some information from ADO before you can run the template.
+The Azure DevOps (work tracking) template uses data from your Azure Boards to analyze your work items. You'll need to gather some information from ADO before you can run the template.
 
 ### Gather information from ADO Boards
 
@@ -36,11 +34,11 @@ The Azure DevOps Work Tracking template uses data from your Azure Boards to anal
 
 1. Find the organization name and project name at the top of the Project Settings page. Take note of the area name.
 
-### Create and run the Azure DevOps Work Tracking template
+### Create and run the Azure DevOps (work Tracking) template
 
 1. In Power Automate in the left panel, select **Process advisor**.
 
-1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps Work Tracking** tile.
+1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps (work tracking** tile.
 
 1. In the **Process name** box, enter a name for your process.
 
@@ -50,7 +48,7 @@ The Azure DevOps Work Tracking template uses data from your Azure Boards to anal
 
 1. Select **Create**.
 
-    :::image type="content" source="media/process-mining-azure-templates/create-az-devops.png" alt-text="Screenshot of the Create a new process screen using the Azure DevOps Work Tracking template.":::
+    :::image type="content" source="media/process-mining-azure-templates/create-az-devops.png" alt-text="Screenshot of the Create a new process screen using the Azure DevOps (work tracking) template.":::
 
 1. In the **Connect to data source** screen in the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
 
@@ -62,12 +60,11 @@ Process advisor will analyze your process. It may take a few minutes for the ana
 
 [Learn how to interpret process advisor analytics](process-advisor-visualize.md).
 
-## Azure DevOps Pipelines template
-<!-- According to the Cloud + AI Style Guide, "Azure DevOps Pipelines" is incorrect. It should be "Azure Pipelines." See https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=44177 Can you please let the dev team know? I'll leave it as-is for now for consistency with the UI. -->
+## Azure DevOps (pipelines) template
 
-The Azure DevOps Pipelines template analyzes the execution and handling of tracked pipelines and boards to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines).
+The Azure DevOps (pipelines) template analyzes the execution and handling of tracked pipelines and boards to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines).
 
-The Azure DevOps Pipelines template uses data from Azure DevOps to analyze your pipelines. You'll need to gather some information from ADO before you can run the template.
+The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze your pipelines. You'll need to gather some information from ADO before you can run the template.
 
 ### Gather information from ADO Pipelines
 
@@ -77,22 +74,21 @@ The Azure DevOps Pipelines template uses data from Azure DevOps to analyze your 
 
 1. Find the organization name and project name at the top of the Pipelines page. Take note of the pipeline name.
 
-### Create and run the Azure Pipelines template
+### Create and run the Azure DevOp (pipelines) template
 
 1. In Power Automate in the left panel, select **Process advisor**.
 
-1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps Pipelines** tile.
+1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps (pipelines)** tile.
 
 1. In the **Process name** box, enter a name for your process.
 
-1. In the **Organization name**, **Project name**, and **Pipeline name** boxes, enter the information from ADO.
-<!-- There's inconsistent capitalization in the field names on this dialog. Can you please inform the dev team? -->
+1. In the **Organization Name**, **Project name**, and **Pipeline Name** boxes, enter the information from ADO.
 
 1. (Optional) In the **Description** box, enter a description of the process.
 
 1. Select **Create**.
 
-    :::image type="content" source="media/process-mining-azure-templates/create-az-pipelines.png" alt-text="Screenshot of the Create a new process screen using the Azure DevOps Pipelines template.":::
+    :::image type="content" source="media/process-mining-azure-templates/create-az-pipelines.png" alt-text="Screenshot of the Create a new process screen using the Azure DevOps (pipelines) template.":::
 
 1. In the **Connect to data source** screen in the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
 
@@ -115,6 +111,12 @@ The Logic Apps with App Insights template uses telemetry data from [Azure Monito
 **If you're not an Azure admin:** Ask your Azure admin to create an Application Insights resource for your app and give you the app's Application ID and the dimensions to enter for Case ID and Activity.
 
 **If you're an Azure admin:**
+
+### Create and run the Logic Apps with App Insights template
+
+1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
+
+1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic Apps with App Insights** tile.
 
 1. [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource) for your app.
 
@@ -150,6 +152,18 @@ Process advisor will analyze your process. It may take up to two minutes for the
 ## Logic App Consumption Plan template
 
 The Logic App Consumption Plan template analyzes the execution of your Logic Apps to help you identify opportunities and optimize your Logic App Consumption Plan usage. To learn more, go to [Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing).
+
+The process advisor **Logic App Consumption Plan** template will enable you to visualize the execution and orchestration of your Logic Apps. Insights will allow you to maximize your automated processes and manage dependencies.
+
+To learn more about Logic Apps, go to the [Azure Logic Apps documentation](/azure/logic-apps/).
+
+### Prerequisite
+
+Before you can visualize your Logic Apps, you must have an Azure Logic Apps Consumption Plan (Multi-tenant) license. Find out more, go to [Logic Apps pricing](https://azure.microsoft.com/pricing/details/logic-apps/).
+
+### Create and run the Azure Logic App Consumption Plan template
+
+1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
 The Logic App Consumption Plan template uses data from Azure DevOps to analyze your consumption. You'll need to gather some information from ADO before you can run the template.
 
@@ -241,3 +255,7 @@ Process advisor will analyze your process. It may take a few minutes for the ana
 [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)  
 [Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing)  
 [What are Durable Functions?](/azure/azure-functions/durable/durable-functions-overview)
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the process map for the Durable Functions template.](media/process-mining-azure-templates/durable-functions-map.png "Process map for the Durable Functions template")
+

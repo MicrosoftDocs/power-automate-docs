@@ -24,8 +24,6 @@ Creating and running a template is similar for all the process advisor templates
 
 The Desktop flows template analyzes the run history of flows that you create with [robotic process automation (RPA)](https://powerautomate.microsoft.com/robotic-process-automation/) in Power Automate. To learn more, go to [Introduction to desktop flows](desktop-flows/introduction.md).  
 
-<!-- I removed the Prerequisites sections because users won't have anything to analyze in the first place if they don't have the proper licenses. -->
-
 ### Create and run the Desktop flows template
 
 1. In Power Automate in the left panel, select **Process advisor**.
@@ -34,7 +32,7 @@ The Desktop flows template analyzes the run history of flows that you create wit
 
 1. In the **Process name** box, enter a name for your process.
 
-1. If you know the Flow ID of the flow you want to analyze, enter it in the **Flow ID (optional)** box. If you don't know the Flow ID, you can skip this step. <!-- If you don't provide the Flow ID, how does process advisor know which flow to analyze? Does it just analyze all your flows?? -->
+1. If you know the Flow ID of the flow you want to analyze, enter it in the **Flow ID (optional)** box. If you don't know the Flow ID, you can skip this step.
 
     > [!TIP]
     > To find the Flow ID, edit the flow and look at the URL in your browser's address bar. Everything between "flows/" and "/details" is the Flow ID:
@@ -50,6 +48,20 @@ The Desktop flows template analyzes the run history of flows that you create wit
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
 1. Select **Save**.
+
+1. If you know your flow ID, enter it in the **Flow ID (optional)** field. If you don't know your flow ID, go to the next step.
+
+    To learn more about the flow ID, go to the [General Power Automate Discussion](https://powerusers.microsoft.com/t5/General-Power-Automate/Flow-ID/m-p/83160#M19806).
+
+1. (Optional) In the **Description** field, enter a description for the process.
+
+1. Select **Create**.
+
+1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
+
+1. If you're signed in, you'll see your credentials. You can choose to switch accounts.
+
+    If you're not signed in, select **Sign in** and authenticate through AAD.
 
 Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
@@ -67,7 +79,7 @@ The Power Virtual Agents template analyzes your bots to help you better understa
 
 1. In the **Process name** box, enter a name for your process.
 
-1. (Optional) In the **Description** box, enter a description for the process. <!-- There's no way to provide a Bot ID. Does process advisor analyze all your bots?? -->
+1. (Optional) In the **Description** box, enter a description for the process.
 
 1. Select **Create**.
 
@@ -82,6 +94,12 @@ Process advisor will analyze your process. It may take several minutes for the a
 [Learn how to interpret process advisor analytics](process-advisor-visualize.md).
 
 ## Power Apps insights template
+
+1. In the **Process name** field, enter a name for your process.
+
+1. If you know your bot ID, enter it in the **Bot ID (optional)** field. If you don't know your bot ID, go to the next step.
+
+1. Do steps 4 through 8 in the **Create and run the Desktop Flows template** section earlier in this article.
 
 The Power Apps insights template analyzes your apps to help you maximize their functionality and success rate. To learn more, go to [What is Power Apps?](/power-apps/powerapps-overview.md). <!-- Wow. We went from user-friendly, relatively non-techie to straight-up, hardcore Azure admin in this section. We have to do more for non-admin users than point them to this really unfriendly, technical procedure [Create an Application Insights resource]. Can we say something like, if you're an admin, go create an Application Insights resource and here's how, and if you're not an admin, get your app's Azure Application Insights Application ID from your admin? -->
 
@@ -143,6 +161,10 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
+1. Go back to the process advisor **Create a new process** screen and paste it in the **Power apps application insights app Id** field.
+
+1. Identify the parameter that you want to analyze from your app and enter it in the **Case Id field name** and **Activity field name** fields in the **Create a new process** screen.
+
 1. Select **Save**.
 
 Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
@@ -156,6 +178,8 @@ You can view the results of your process mining later without running a template
 1. Find the process in the process advisor's **Recent** list.
 
 1. Select the analytics icon to the right of the process name.
+
+1. Do steps 4 through 8 in the **Create and run the Desktop Flows template** section earlier in this article.
 
     :::image type="content" source="media/process-mining-templates/view-analytics.png" alt-text="Screenshot of the Recent list in process advisor, with an analytics icon highlighted.":::
 
