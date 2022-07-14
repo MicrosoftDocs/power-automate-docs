@@ -200,7 +200,7 @@ If the shared flow still has an active owner, the flow continues to run.
 It is currently not possible to change the owner of a solution-aware cloud flow in the modern solution explorer. That capability will be added in the future.
 In the meantime, use the following steps as a a workaround.
 
-1. Get the environment organization URL by selecting **Switch to classic** in the Solutions Explorer and then copy the host name from the URL. Here's an example. https://org123456.crm10.dynamics.com/.
+1. Get the environment organization URL by selecting **Switch to classic** in the Solutions Explorer and then copy the host name from the URL. Here's an example. `https://org123456.crm10.dynamics.com/`.
 1. Open the environment using organization URL.
 1. Select **Settings** > **Advanced Settings**.
 1. Select **Advanced Find**.
