@@ -58,7 +58,7 @@ The Azure DevOps (work tracking) template uses data from your Azure Boards to an
 
 Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-[Learn how to interpret process advisor analytics](process-advisor-visualize.md).
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Azure DevOps (pipelines) template
 
@@ -98,13 +98,13 @@ The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze you
 
 Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-[Learn how to interpret process advisor analytics](process-advisor-visualize.md).
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-## Logic Apps with App Insights template
+## Logic Apps (standard plan) template
 
-The Logic Apps with App Insights template analyzes the execution of your Logic Apps to help you maximize your automated processes and manage dependencies. To learn more, go to [What is Azure Logic Apps?](/azure/logic-apps/logic-apps-overview).
+The Logic Apps (standard plan) template analyzes the execution of your Logic Apps to help you maximize your automated processes and manage dependencies. To learn more, go to [What is Azure Logic Apps?](/azure/logic-apps/logic-apps-overview).
 
-The Logic Apps with App Insights template uses telemetry data from [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze your apps. You'll need to get an Application ID for your app in an Application Insights resource before you can run the template.
+The Logic Apps with App (standard plan) template uses telemetry data from [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze your apps. You'll need to get an Application ID for your app in an Application Insights resource before you can run the template.
 
 ### Get your app's Application Insights Application ID
 
@@ -116,7 +116,7 @@ The Logic Apps with App Insights template uses telemetry data from [Azure Monito
 
 1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
-1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic Apps with App Insights** tile.
+1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic Apps (standard plan)** tile.
 
 1. [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource) for your app.
 
@@ -124,16 +124,15 @@ The Logic Apps with App Insights template uses telemetry data from [Azure Monito
 
 1. Copy the **Application ID**.
 
-### Create and run the Logic Apps with App Insights template
+### Create and run the Logic Apps (standard plan) template
 
 1. In Power Automate in the left panel, select **Process advisor**.
 
-1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic Apps with App Insights** tile.
+1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic Apps (standard plan)** tile.
 
 1. In the **Process name** box, enter a name for your process.
 
 1. In the **Logic App Application Insights Application Id** box, paste the Application ID from Application Insights.
-<!-- The capitalization and naming of this field is different from the same field in the Power Apps insights template dialog. -->
 
 1. (Optional) In the **Description** box, enter a description of the process.
 
@@ -147,13 +146,13 @@ The Logic Apps with App Insights template uses telemetry data from [Azure Monito
 
 Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-[Learn how to interpret process advisor analytics](process-advisor-visualize.md).
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-## Logic App Consumption Plan template
+## Logic Apps (consumption plan) template
 
-The Logic App Consumption Plan template analyzes the execution of your Logic Apps to help you identify opportunities and optimize your Logic App Consumption Plan usage. To learn more, go to [Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing).
+The Logic Apps (consumption plan) template analyzes the execution of your Logic Apps to help you identify opportunities and optimize your Logic Apps (consumption plan) usage. To learn more, go to [Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing).
 
-The process advisor **Logic App Consumption Plan** template will enable you to visualize the execution and orchestration of your Logic Apps. Insights will allow you to maximize your automated processes and manage dependencies.
+The process advisor **Logic Apps (consumption plan)** template will enable you to visualize the execution and orchestration of your Logic Apps. Insights will allow you to maximize your automated processes and manage dependencies.
 
 To learn more about Logic Apps, go to the [Azure Logic Apps documentation](/azure/logic-apps/).
 
@@ -161,7 +160,7 @@ To learn more about Logic Apps, go to the [Azure Logic Apps documentation](/azur
 
 Before you can visualize your Logic Apps, you must have an Azure Logic Apps Consumption Plan (Multi-tenant) license. Find out more, go to [Logic Apps pricing](https://azure.microsoft.com/pricing/details/logic-apps/).
 
-### Create and run the Azure Logic App Consumption Plan template
+### Create and run the Logic Apps (consumption plan) template
 
 1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
@@ -175,11 +174,11 @@ The Logic App Consumption Plan template uses data from Azure DevOps to analyze y
 
 1. Take note of the app name, resource group, and Subscription ID.
 
-### Create and run the Logic App Consumption Plan template
+### Create and run the Logic Apps (consumption plan) template
 
 1. In Power Automate in the left panel, select **Process advisor**.
 
-1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic App Consumption Plan** tile.
+1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic Apps (consumption plan)** tile.
 
 1. In the **Process name** box, enter a name for your process.
 
@@ -197,7 +196,7 @@ The Logic App Consumption Plan template uses data from Azure DevOps to analyze y
 
 Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-[Learn how to interpret process advisor analytics](process-advisor-visualize.md).
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Durable Functions template
 
@@ -240,22 +239,21 @@ The Durable Functions template uses data from your Azure Durable Functions stora
 1. Select **Show keys**. Copy the value of **Key1** or **Key2**.
 
 1. In process advisor, paste the key value in the **Account key** box.
-<!-- The instructions stop here. I don't have a way to follow along in this template, so I can't verify for myself. Does the user have to sign in and select Save to kick off the analysis, as with the other templates? -->
+
+1. Once the connection credentials are established, select **Save**.
 
 Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-[Learn how to interpret process advisor analytics](process-advisor-visualize.md).
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the process map for the Durable Functions template.](media/process-mining-azure-templates/durable-functions-map.png "Process map for the Durable Functions template")
 
 ### See also
 
 [What is Azure DevOps?](/azure/devops/what-is-azure-devops)  
-[Learn how to interpret process advisor analytics](process-advisor-visualize.md)  
 [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines)  
 [What is Azure Logic Apps?](/azure/logic-apps/logic-apps-overview)  
 [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)  
 [Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing)  
 [What are Durable Functions?](/azure/azure-functions/durable/durable-functions-overview)
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Durable Functions template.](media/process-mining-azure-templates/durable-functions-map.png "Process map for the Durable Functions template")
-
