@@ -16,7 +16,7 @@ search.audienceType:
 
 # Azure templates for process mining
 
-Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps Work Tracking](#azure-devops-work-tracking-template), [Azure Pipelines](#azure-devops-pipelines-template), [Logic Apps with App Insights](#logic-apps-with-app-insights-template), [Logic App Consumption Plan](#logic-app-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
+Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps (work tracking)](#azure-devops-work-tracking-template), [Azure DeOps (pipelines)](#azure-devops-pipelines-template), [Logic Apps (standard plan)](#logic-apps-standard-plan-template), [Logic Apps (consumption plan)](#logic-apps-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
 
 Creating and running a template is similar for all the process advisor Azure templates.
 
@@ -74,7 +74,7 @@ The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze you
 
 1. Find the organization name and project name at the top of the Pipelines page. Take note of the pipeline name.
 
-### Create and run the Azure DevOp (pipelines) template
+### Create and run the Azure DevOps (pipelines) template
 
 1. In Power Automate in the left panel, select **Process advisor**.
 

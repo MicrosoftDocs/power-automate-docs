@@ -16,7 +16,7 @@ search.audienceType:
 
 # Power Platform templates for process mining
 
-Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. Templates for [desktop flows](#desktop-flows-template), [Power Virtual Agents](#power-virtual-agents-template), and [Power Apps](#power-apps-insights-template) provide insights that help you identify automation opportunities and address performance and compliance opportunities in your flows.
+Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. Templates for [Desktop flows](#desktop-flows-template), [Power Virtual Agents](#power-virtual-agents-template), and [Power Apps Insights](#power-apps-insights-template) provide insights that help you identify automation opportunities and address performance and compliance opportunities in your flows.
 
 Creating and running a template is similar for all the process advisor Power Platform templates.
 
@@ -95,13 +95,7 @@ Process advisor will analyze your process. It may take several minutes for the a
 
 ## Power Apps insights template
 
-1. In the **Process name** field, enter a name for your process.
-
-1. If you know your bot ID, enter it in the **Bot ID (optional)** field. If you don't know your bot ID, go to the next step.
-
-1. Do steps 4 through 8 in the **Create and run the Desktop flows template** section earlier in this article.
-
-The Power Apps insights template analyzes your apps to help you maximize their functionality and success rate. To learn more, go to [What is Power Apps?](/power-apps/powerapps-overview.md). <!-- Wow. We went from user-friendly, relatively non-techie to straight-up, hardcore Azure admin in this section. We have to do more for non-admin users than point them to this really unfriendly, technical procedure [Create an Application Insights resource]. Can we say something like, if you're an admin, go create an Application Insights resource and here's how, and if you're not an admin, get your app's Azure Application Insights Application ID from your admin? -->
+The Power Apps insights template enables you to visualize the actions and success of your Power Apps. It allows you to maximize your apps' functionality and manage its success rate. To learn more, go to [What is Power Apps?](/power-apps/powerapps-overview.md).
 
 The Power Apps insights template uses telemetry data from [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze your apps. That means you'll need to get an Application ID for your app in an Application Insights resource before you can run the Power Apps insights template.
 
@@ -170,18 +164,6 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
 [Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
-
-## View process advisor analytics
-
-You can view the results of your process mining later without running a template again.
-
-1. Find the process in the process advisor's **Recent** list.
-
-1. Select the analytics icon to the right of the process name.
-
-1. Do steps 4 through 8 in the **Create and run the Desktop Flows template** section earlier in this article.
-
-    :::image type="content" source="media/process-mining-templates/view-analytics.png" alt-text="Screenshot of the Recent list in process advisor, with an analytics icon highlighted.":::
 
 ### See also
 
