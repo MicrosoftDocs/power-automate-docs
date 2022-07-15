@@ -16,13 +16,13 @@ search.audienceType:
 
 # Azure templates for process mining
 
-Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps (work tracking)](#azure-devops-work-tracking-template), [Azure DeOps (pipelines)](#azure-devops-pipelines-template), [Logic Apps (standard plan)](#logic-apps-standard-plan-template), [Logic Apps (consumption plan)](#logic-apps-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
+Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps (work tracking)](#azure-devops-work-tracking-template), [Azure DevOps (pipelines)](#azure-devops-pipelines-template), [Logic Apps (standard plan)](#logic-apps-standard-plan-template), [Logic Apps (consumption plan)](#logic-apps-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
 
 Creating and running a template is similar for all the process advisor Azure templates.
 
 ## Azure DevOps (work tracking) template
 
-The Azure DevOps (work tracking) template analyzes the execution and handling of tracked Azure DevOps (ADO) work items to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops)
+The Azure DevOps (work tracking) template analyzes the execution and handling of tracked Azure DevOps (ADO) work items to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?)
 
 The Azure DevOps (work tracking) template uses data from your Azure Boards to analyze your work items. You'll need to gather some information from ADO before you can run the template.
 
@@ -62,7 +62,7 @@ Process advisor will analyze your process. It may take a few minutes for the ana
 
 ## Azure DevOps (pipelines) template
 
-The Azure DevOps (pipelines) template analyzes the execution and handling of tracked pipelines and boards to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines?branch=main&view=azure-devops)
+The Azure DevOps (pipelines) template analyzes the execution and handling of tracked pipelines and boards to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines?)
 
 The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze your pipelines. You'll need to gather some information from ADO before you can run the template.
 
@@ -251,8 +251,8 @@ Process advisor will analyze your process. It may take a few minutes for the ana
 
 ### See also
 
-[What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops)
-[What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines?branch=main&view=azure-devops)  
+[What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?)
+[What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines?)  
 [What is Azure Logic Apps?](/azure/logic-apps/logic-apps-overview)  
 [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)  
 [Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing)  
