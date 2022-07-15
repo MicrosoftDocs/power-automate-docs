@@ -251,9 +251,9 @@ Process advisor will analyze your process. It may take a few minutes for the ana
 
 ### See also
 
-[What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?)
-[What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines?)  
-[What is Azure Logic Apps?](/azure/logic-apps/logic-apps-overview)  
-[Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)  
-[Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing)  
+[What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?)<br/>
+[What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines?)<br/>
+[What is Azure Logic Apps?](/azure/logic-apps/logic-apps-overview)<br/>
+[Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)<br/>
+[Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing)<br/> 
 [What are Durable Functions?](/azure/azure-functions/durable/durable-functions-overview)
