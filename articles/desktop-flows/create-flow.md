@@ -67,7 +67,7 @@ If you've opened and edited an example in the flow designer, select the **Save a
 
 1. Create a new folder on the desktop, and name it **Countries**.
 
-1. Go to **flow.microsoft.com**, select **My flows**, then **+New flow**, and **Instant cloud flow**.
+1. Go to **make.microsoft.com**, select **My flows**, then **+New flow**, and **Instant cloud flow**.
 
    ![Screenshot of the Instant cloud flow option in the Power Automate portal.](media\design-flow\my-flows-instant-blank.png)
 
@@ -96,7 +96,7 @@ If you've opened and edited an example in the flow designer, select the **Save a
 
    ![Screenshot of flow name field in the Build a desktop flow dialog.](media\design-flow\build-desktop-flow-dialog.png)
 
-1. A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate for desktop.
+1. A message from the browser may appear, asking whether to allow make.microsoft.com to open an application. Allow this action to continue to Power Automate for desktop.
 
    ![Screenshot of a browser message asking whether to allow to open an application.](media\design-flow\browser-open-application.png)
 
