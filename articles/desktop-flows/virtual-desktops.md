@@ -89,7 +89,7 @@ Every individual virtual desktop has its own tree, while numeric prefixes allow 
 
 *	**Issue:** Virtual desktop automation isn't supported in Power Automate for desktop installed through the Microsoft store.
 
-* **Workarounds:** Download and install the Microsoft Visual C++ Redistributable, that installs Microsoft C and C++ (MSVC) runtime libraries. You can find the x68 version [here](https://aka.ms/vs/17/release/vc_redist.x86.exe) and the x64 version [here](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+* **Workarounds:** Download and install the Microsoft Visual C++ Redistributable, that installs Microsoft C and C++ (MSVC) runtime libraries. You can find the x86 version [here](https://aka.ms/vs/17/release/vc_redist.x86.exe) and the x64 version [here](https://aka.ms/vs/17/release/vc_redist.x64.exe).
 
 *	**Issue:** Citrix/RDP automation doesn't support the use of web automation actions.
 
