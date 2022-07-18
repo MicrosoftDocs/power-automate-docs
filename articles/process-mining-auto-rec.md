@@ -43,7 +43,7 @@ If the data quality indicator shows **Low quality** or **Medium quality**, you s
 
 The confidence rating provides an indicator of how relevant we think the *insight category* (for example, **Common path** is the insight category in the following screenshot), is to your process. Having a lower number of candidate variants and high event log data quality lead to higher confidence ratings. To learn more about variants, go to [Visiualize processes](process-advisor-visualize.md).
 
-For example, having ten potential variants for the *shortest paths* insight category doesn't have a highly confident level, especially if the event log data only has 10 sample cases captured. Shortest paths represent the paths with the fastest runtime or cycle time that your process takes.
+For example, having 10 potential variants for the *shortest paths* insight category doesn't have a highly confident level, especially if the event log data only has 10 sample cases captured. Shortest paths represent the paths with the fastest runtime or cycle time that your process takes.
 
 
 
