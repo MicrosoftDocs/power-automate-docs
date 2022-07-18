@@ -57,7 +57,7 @@ Understanding the insight category assigned to your process will help you determ
 
 |Path name  |Description  |Recommended evaluation  |
 |---------|---------|---------|
-|Common    | Common paths represent the most common paths that your process takes. If this insight is found with medium or high confidence, the default process map and analytics will filter to show one or more common path variants.   | Evaluate these paths for optimization potential, since they are the most used. They are also great candidates for standardization.        |
+|Common    | Common paths represent the most common paths that your process takes. If this insight is found with medium or high confidence, the default process map and analytics will filter to show one or more common path variants.   | Evaluate these paths for optimization potential, since they're the most used. They're also great candidates for standardization.        |
 |Complex     |  Complex paths represent the paths with the greatest number of activities that your process takes.        | Evaluate these paths for process inefficiencies, especially if activities are looping or erratic.  |
 |Simple     | Simple paths represent the paths with the fewest number of activities that your process takes. | Evaluate these paths to check if they might be optimal path(s) that others should adopt. They may also represent incomplete process executions.        |
 |Longest     | Longest paths represent the paths with the longest runtime or cycle time that your process takes.  | Evaluate these paths for process inefficiencies, especially if certain activities seem to be bottlenecks.        |
