@@ -1,10 +1,10 @@
 ---
-title: Azure templates for process mining in process advisor | Microsoft Docs
-description: This topic describes the Azure templates you can use for process mining in the process advisor feature in Power Automate.
+title: Azure templates for process mining in process advisor
+description: Learn how to use Azure templates for process mining in the Power Automate process advisor.
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 07/06/2022
+ms.date: 07/11/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -16,164 +16,143 @@ search.audienceType:
 
 # Azure templates for process mining
 
-Process advisor templates allow you to easily onboard your data with a few selections, which avoids the traditional data identification and manipulation required in traditional process mining tools. Templates will enable users to reach their insights quickly and without the previously required data mastery. Our templates like ADO, Power Apps, Bot Framework, and more, will empower all to reach process insights and implement optimizations and automations.
+Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps (work tracking)](#azure-devops-work-tracking-template), [Azure DevOps (pipelines)](#azure-devops-pipelines-template), [Logic Apps (standard plan)](#logic-apps-standard-plan-template), [Logic Apps (consumption plan)](#logic-apps-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
 
-## Azure DevOps Work Tracking template
+Creating and running a template is similar for all the process advisor Azure templates.
 
-The process advisor **Azure DevOps Work Tracking template** will enable you to visualize the execution process and handling of tracked Azure DevOps work items. Insights will allow you to maximize your development processes and manage dependencies.
+## Azure DevOps (work tracking) template
 
-To learn more about Azure DevOps, go to the [Azure DevOps documentation](/azure/devops).
+The Azure DevOps (work tracking) template analyzes the execution and handling of tracked Azure DevOps (ADO) work items to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?)
 
-### Prerequisites
+The Azure DevOps (work tracking) template uses data from your Azure Boards to analyze your work items. You'll need to gather some information from ADO before you can run the template.
 
-Before you can visualize your Azure DevOps work items, you must have an Azure DevOps account and user license. To learn more, go to [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+### Gather information from ADO Boards
 
-### Create and run the Azure DevOps Work Tracking template
+1. In your Azure DevOps environment in the left panel, select **Project settings**. Under **Boards**, select **Team configuration**. Then select the **Area** tab.
 
-1. On the **Azure** tab in the **Start with a popular template** section, select the **Azure DevOps Work Tracking** tile.
+    :::image type="content" source="media/process-mining-azure-templates/az-boards.png" alt-text="Screenshot of an Azure DevOps Project Settings page with organization, project name, and other information highlighted.":::
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Azure DevOps Work Tracking tile.](media/process-mining-azure-templates/az-devops.png "Azure DevOps Work Tracking tile")
+1. Find the organization name and project name at the top of the Project Settings page. Take note of the area name.
 
-1. In the **Process name** field, enter a name for your process.
+### Create and run the Azure DevOps (work Tracking) template
 
-1. Go to your Azure DevOps environment and select **Boards** on the left panel to find the information you'll need to enter in the **Create a new process** screen.
+1. In Power Automate in the left panel, select **Process advisor**.
 
-    1. Find the names for the **Organization name** and **Project name** fields (as indicated at the top of the following screenshot).
+1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps (work tracking** tile.
 
-    1. On the **Boards** tab to the right, scroll down to the **Area** heading to find the name you'll use in the **Area Name** field.
+1. In the **Process name** box, enter a name for your process.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of  Azure DevOps Boards screen.](media/process-mining-azure-templates/az-boards.png "Azure DevOps Boards screen")
+1. In the **Organization name**, **Project name**, and **Area name** boxes, enter the information from ADO.
 
-    c. (Optional) Enter a description of the process in the **Description** field.
+1. (Optional) In the **Description** box, enter a description of the process.
 
-    d. Select **Create**.
+1. Select **Create**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Create a new process screen using the Azure DevOps Work Tracking template.](media/process-mining-azure-templates/create-az-devops.png "Create a new process screen")
+    :::image type="content" source="media/process-mining-azure-templates/create-az-devops.png" alt-text="Screenshot of the Create a new process screen using the Azure DevOps (work tracking) template.":::
 
-1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
+1. In the **Connect to data source** screen in the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
 
-1. Select **Sign in** and authenticate through AAD.
+    If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Connect to data source screen.](media/process-mining-azure-templates/connect.png "Connect to data source screen")
+1. Select **Save**.
 
-1. After connection credentials are established, select **Save**. Process advisor will analyze your process.
+Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-   The process might take at least two minutes to complete.
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-### Visualize the process map for the Azure DevOps Work Tracking template
+## Azure DevOps (pipelines) template
 
-After your process report has been published, you can visualize the process map and use the **Custom attributes** filter to dig deeper into your insights.
+The Azure DevOps (pipelines) template analyzes the execution and handling of tracked pipelines and boards to help you maximize your development processes and manage dependencies. To learn more, go to [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines?)
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Azure DevOps Work Tracking template.](media/process-mining-azure-templates/devops-map.png "Process map for the Azure DevOps Work Tracking template")
+The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze your pipelines. You'll need to gather some information from ADO before you can run the template.
 
-## Azure Pipelines template
+### Gather information from ADO Pipelines
 
-The process advisor **Azure Pipelines** template will enable you to visualize the execution process and handling of tracked Azure pipelines and boards. Insights will allow you to maximize your development processes and manage dependencies.
+1. In your Azure DevOps environment in the left panel, select **Pipelines**, and then select **Pipelines** again.
 
-To learn more about Azure DevOps, go to the [Azure DevOps documentation](/azure/devops).
+    :::image type="content" source="media/process-mining-azure-templates/az-pipelines-names.png" alt-text="Screenshot of the Azure Pipelines page with organization and pipeline name highlighted.":::
 
-### Prerequisite
+1. Find the organization name and project name at the top of the Pipelines page. Take note of the pipeline name.
 
-Before you can visualize your Azure pipelines, you must have an Azure DevOps Individual or User license. To learn more, go to [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+### Create and run the Azure DevOps (pipelines) template
 
-### Create and run the Azure Pipelines template
+1. In Power Automate in the left panel, select **Process advisor**.
 
-1. On the **Azure** tab in the **Start with a popular template** section, select the **Azure Pipelines** tile.
+1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps (pipelines)** tile.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Azure Pipelines tile.](media/process-mining-azure-templates/az-pipelines.png "Azure Pipelines tile")
+1. In the **Process name** box, enter a name for your process.
 
-1. In the **Process name** field, enter a name for your process.
+1. In the **Organization Name**, **Project name**, and **Pipeline Name** boxes, enter the information from ADO.
 
-1. Go to your Azure DevOps environment and select **Pipelines** on the left panel to find the information you'll need to enter in the **Create a new process** screen.
+1. (Optional) In the **Description** box, enter a description of the process.
 
-    1. Find the names for the **Organization name**, **Project name**, ad **Pipeline Name** fields (as indicated in the following screenshot).
+1. Select **Create**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Azure DevOps Pipelines screen.](media/process-mining-azure-templates/az-pipelines-names.png "Azure DevOps Pipelines screen")
+    :::image type="content" source="media/process-mining-azure-templates/create-az-pipelines.png" alt-text="Screenshot of the Create a new process screen using the Azure DevOps (pipelines) template.":::
 
-    c. (Optional) Enter a description of the process in the **Description** field.
-    
-    d. Select **Create**.
+1. In the **Connect to data source** screen in the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Create a new process screen using the Azure Pipelines template.](media/process-mining-azure-templates/create-az-pipelines.png "Create a new process screen")
+    If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
-1. Complete the **Connect to data source** screen by doing steps 4 through 6 in the **Create and run the Azure DevOps Work Tracking template** section earlier in this article.
+1. Select **Save**.
 
-### Visualize the process map for the Azure Pipelines template
+Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-After your process report has been published, you can visualize the process map.
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Azure Pipelines template.](media/process-mining-azure-templates/pipelines-map.png "Process map for the Azure Pipelines template")
+## Logic Apps (standard plan) template
 
-## Logic Apps with App Insights template
+The Logic Apps (standard plan) template analyzes the execution of your Logic Apps to help you maximize your automated processes and manage dependencies. To learn more, go to [What is Azure Logic Apps?](/azure/logic-apps/logic-apps-overview).
 
-The process advisor **Logic Apps with App Insights** template will enable you to visualize the execution and orchestration of your Logic Apps. Insights will allow you to maximize your automated processes and manage dependencies.
+The Logic Apps with App (standard plan) template uses telemetry data from [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze your apps. You'll need to get an Application ID for your app in an Application Insights resource before you can run the template.
 
-To learn more about Logic Apps, go to the [Azure Logic Apps documentation](/azure/logic-apps/).
+### Get your app's Application Insights Application ID
 
-### Prerequisite
+**If you're not an Azure admin:** Ask your Azure admin to create an Application Insights resource for your app and give you the app's Application ID and the dimensions to enter for Case ID and Activity.
 
-Before you can visualize your Logic Apps, you must have an Azure Logic Apps Standard Plan (Single-tenant) license. To learn more, go to [Logic Apps pricing](https://azure.microsoft.com/pricing/details/logic-apps/).
+**If you're an Azure admin:**
 
 ### Create and run the Logic Apps with App Insights template
 
 1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
-1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic Apps with App Insights** tile.
+1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic Apps (standard plan)** tile.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Logic Apps with App Insights tile.](media/process-mining-azure-templates/az-logic-apps.png "Logic Apps with App Insights tile")
+1. [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource) for your app.
 
-1. In the **Process name** field, enter a name for your process.
+1. In the left panel, select **Configure** > **API Access**.
 
-1. Go to the Application Insights Azure Resource you created in step 1 to find the information you'll need to enter in the **Create a new process** screen.
+1. Copy the **Application ID**.
 
-1. On left panel, select **Configure** > **API Access**.
+### Create and run the Logic Apps (standard plan) template
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the API Access option in the Configure menu.](media/process-mining-templates/api-access.png "API Access option in the Configure menu")
+1. In Power Automate in the left panel, select **Process advisor**.
 
-1. Copy the Power App **Application ID**.
+1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic Apps (standard plan)** tile.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Application ID in the API Access screen.](media/process-mining-templates/app-id.png "Application ID in the API Access screen")
+1. In the **Process name** box, enter a name for your process.
 
-1. Go back to the process advisor **Create a new process** screen and paste it in the **Logic App Application Insights Application Id** field.
+1. In the **Logic App Application Insights Application Id** box, paste the Application ID from Application Insights.
 
-1. (Optional) Enter a description of the process in the **Description** field.
+1. (Optional) In the **Description** box, enter a description of the process.
 
 1. Select **Create**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Create a new process screen for the Logic Apps with App Insights template.](media/process-mining-azure-templates/create-az-logic-apps-insights.png "Create a new process screen")
+1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
 
-1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
+    If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
-1. Select **Sign in** and authenticate through AAD.
+1. Select **Save**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Connect to data source for the Logic Apps with App Insights template.](media/process-mining-templates/connect.png "Connect to data source screen")
+Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-1. After connection credentials are established, select **Save**. Process advisor will analyze your process. This might take at least two minutes to complete.
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-### Visualize the process map for the Logic Apps with App Insights template
+## Logic Apps (consumption plan) template
 
-After your process report has been published, you can visualize the process map and use the **Custom attributes** filter to dig deeper into your insights.
+The Logic Apps (consumption plan) template analyzes the execution of your Logic Apps to help you identify opportunities and optimize your Logic Apps (consumption plan) usage. To learn more, go to [Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing).
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Logic Apps with App Insights template.](media/process-mining-azure-templates/logic-apps-insights-map.png "Process map for the Logic Apps with App Insights template")
-
-## Logic App Consumption Plan template
-
-The process advisor **Logic App Consumption Plan** template will enable you to visualize the execution and orchestration of your Logic Apps. Insights will allow you to maximize your automated processes and manage dependencies.
+The process advisor **Logic Apps (consumption plan)** template will enable you to visualize the execution and orchestration of your Logic Apps. Insights will allow you to maximize your automated processes and manage dependencies.
 
 To learn more about Logic Apps, go to the [Azure Logic Apps documentation](/azure/logic-apps/).
 
@@ -181,110 +160,100 @@ To learn more about Logic Apps, go to the [Azure Logic Apps documentation](/azur
 
 Before you can visualize your Logic Apps, you must have an Azure Logic Apps Consumption Plan (Multi-tenant) license. Find out more, go to [Logic Apps pricing](https://azure.microsoft.com/pricing/details/logic-apps/).
 
-### Create and run the Azure Logic App Consumption Plan template
+### Create and run the Logic Apps (consumption plan) template
 
 1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
-1. On the **Azure** tab in the **Start with a popular template** section, select the **Logic App Consumption Plan** tile.
+The Logic App Consumption Plan template uses data from Azure DevOps to analyze your consumption. You'll need to gather some information from ADO before you can run the template.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Logic App Consumption Plan tile.](media/process-mining-azure-templates/az-logicapp-cp.png "Logic App Consumption Plan tile")
+### Gather information from ADO Logic Apps
 
-1. In the **Process name** field, enter a name for your process.
+1. In your Azure Logic Apps environment, select your app, and then in the left panel, select **Overview**.
 
-1. Go to the Application Insights Azure Resource you created in step 1 to find the information you'll need to enter in the **Create a new process** screen.
+    :::image type="content" source="media/process-mining-azure-templates/az-overview.png" alt-text="Screenshot of the Logic Apps Overview page with resource group and subscription information highlighted.":::
 
-    1. Go to your Azure DevOps environment and select **Overview** on the left panel.
+1. Take note of the app name, resource group, and Subscription ID.
 
-    1. Find the names for the **Azure subscription Id**, **Resource Group Name**, and **Logic App Name** fields (as indicated in the following screenshot).
+### Create and run the Logic Apps (consumption plan) template
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot of the Azure DevOps Overview screen.](media/process-mining-azure-templates/az-overview.png "Azure DevOps Overview screen")
+1. In Power Automate in the left panel, select **Process advisor**.
 
-    1. (Optional) Enter a description of the process in the **Description** field.
+1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic Apps (consumption plan)** tile.
 
-    1. Select **Create**.
+1. In the **Process name** box, enter a name for your process.
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot of the Create a new process screen for the Azure Logic App Consumption Plan template.](media/process-mining-azure-templates/create-az-logic-app-cp.png "Create a new process screen")
+1. In the **Azure subscription Id**, **Resource group name**, and **Logic app name** boxes, enter the information from ADO.
 
-1. Complete the Connect to data source screen by doing steps 4 through 6 in the **Create and run the Azure DevOps Work Tracking template** section earlier in this article.
+1. (Optional) In the **Description** box, enter a description of the process.
 
-### Visualize the process map for the Azure Logic App Consumption Plan template
+1. Select **Create**.
 
-After your process report has been published, you can visualize the process map and use the **Custom attributes** filter to dig deeper into your insights.
+1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
 
-If a map doesn't load, you'll get this message: **The data was too complex to load. Please select a variant to proceed.**
+    If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Azure Logic App Consumption Plan process map message.](media/process-mining-azure-templates/logic-app-cp-map1.png "Azure Logic App Consumption Plan process map message")
+1. Select **Save**.
 
-You can select a variant to get the map to show with filtered data.
+Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Azure Logic App Consumption Plan template.](media/process-mining-azure-templates/logic-app-cp-map2.png "Process map for the Azure Logic App Consumption Plan template")
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Durable Functions template
 
-The Process advisor **Durable Functions** template will enable you to visualize the execution process and handling of your durable functions. Insights will allow you to maximize your development processes and manage dependencies.
+The Durable Functions template analyzes the execution of your Durable Functions to help you identify opportunities and optimize states, checkpoints, and restarts. To learn more, go to [What are Durable Functions?](/azure/azure-functions/durable/durable-functions-overview).
 
-To learn more, go to [What are Durable Functions?](/azure/azure-functions/durable/durable-functions-overview)
-
-### Prerequisite
-
-Before you can visualize your Azure durable functions, you must have an Azure Durable Functions license. To learn more, go to [What are Durable Functions?](/azure/azure-functions/durable/durable-functions-overview)
+The Durable Functions template uses data from your Azure Durable Functions storage account for its analysis. You'll need to gather some information from Azure before you can run the template.
 
 ### Create and run the Durable Functions template
 
-1. On the **Azure** tab in the **Start with a popular template** section, select the **Durable Functions** tile.
+1. Have both Power Automate process advisor and Azure portal open in separate browser tabs.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Durable Functions tile.](media/process-mining-azure-templates/az-durable-functions.png "Durable Functions tile")
+1. In Power Automate process advisor, in the **Start with a popular template** section, select the **Azure** tab, and then select the **Durable Functions** tile.
 
-1. In the **Process name** field, enter a name for your process.
+1. In the **Process name** box, enter a name for your process.
 
-1. Go to your Azure Durable Functions Storage Account in the Azure portal to find the information you'll need to enter in the **Create a new process** screen.
+    :::image type="content" source="media/process-mining-azure-templates/create-durable-functions.png" alt-text="Screenshot of the Create a new process screen for the Durable Functions template.":::
 
-    1. On the left panel under **Data storage**, select **Tables**.
+1. In Azure portal, go to your Azure Durable Functions storage account. In the left panel under **Data storage**, select **Tables**. Copy the table names that end with **Instances** and **History**.
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot of the Data storage, Tables option.](media/process-mining-azure-templates/durable-functions-tables.png "Data storage, Tables option")
+    :::image type="content" source="media/process-mining-azure-templates/durable-functions-tables.png" alt-text="Screenshot of the Azure storage account Tables page with two table names highlighted.":::
 
-    1. You'll find at least two tables names. Copy the tables named (*your function app name*)**History** and (*your function app name*)**Instances**, and then paste them in the **Instance Table Storage Name** and **History Table Storage Name** in the **Create a new process** screen.
+1. In process advisor, paste the **Instances** table name in the **Instance Table Storage Name** box and the **History** table name in the **History Table Storage Name** box.
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot of the table names.](media/process-mining-azure-templates/durable-functions-names.png "Table names")
+1. In Azure portal, copy the value in the **Url** column.
 
-    1. Copy the Url, and then paste it in the **Table Storage Account URL** field in the **Create a new process** screen.
+1. In process advisor, paste the URL in the **Table Storage Account URL** box.
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot of the Url name.](media/process-mining-azure-templates/durable-functions-url.png "Url name")
+1. (Optional) In the **Description** box, enter a description of the process.
 
-    1. (Optional) Enter a description of the process in the **Description** field.
+1. Select **Create**.
 
-    1. Select **Create**.
+1. On the **Connect to data source** screen, paste the URL from Step 6 in the **Account name or URL** box.
 
-        > [!div class="mx-imgBorder"]
-        > ![Screenshot of the Create a new process screen for the Durable Functions template.](media/process-mining-azure-templates/create-durable-functions.png "Create a new process screen")
+    :::image type="content" source="media/process-mining-azure-templates/durable-functions-settings.png" alt-text="Screenshot of the Connection settings screen, with the Account name or URL box highlighted.":::
 
-1. On the **Connect to data source** screen, copy the URL from the **Table Storage Account URL** field you just pasted in the **Create a new process** screen, and then paste it in the **Account name or URL** field in the **Connection settings** section.
+1. In Azure portal in the left pane, select **Security + Networking** > **Access keys**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Connection setting section.](media/process-mining-azure-templates/durable-functions-settings.png "Connection setting section")
+    :::image type="content" source="media/process-mining-azure-templates/durable-functions-access-keys.png" alt-text="Screenshot of the Security + Networking menu with Access keys highlighted.":::
 
-1. Go back to your Azure Durable Functions Storage Account in the Azure portal, and select **Security + Networking** > **Access keys** on the left panel.
+1. Select **Show keys**. Copy the value of **Key1** or **Key2**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Access keys menu option.](media/process-mining-azure-templates/durable-functions-access-keys.png "Access keys menu option")
+1. In process advisor, paste the key value in the **Account key** box.
 
-1. Select **Show keys**, copy **Key1** or **Key2**, and then paste it into the **Account key** field in the **Connect to data source screen** screen.
+1. Once the connection credentials are established, select **Save**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Access keys screen.](media/process-mining-azure-templates/durable-functions-key-page.png "Access keys screen")
+Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-### Visualize the process map for the Durable Functions template
-
-After your process report has been published, you can visualize the process map and use the **Custom attributes** filter to dig deeper into your insights.
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the process map for the Durable Functions template.](media/process-mining-azure-templates/durable-functions-map.png "Process map for the Durable Functions template")
+
+### See also
+
+[What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?)<br/>
+[What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines?)<br/>
+[What is Azure Logic Apps?](/azure/logic-apps/logic-apps-overview)<br/>
+[Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)<br/>
+[Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing)<br/> 
+[What are Durable Functions?](/azure/azure-functions/durable/durable-functions-overview)

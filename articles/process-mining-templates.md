@@ -1,10 +1,10 @@
 ---
-title: Power Platform templates for process mining in process advisor | Microsoft Docs
-description: This topic describes the Power Platform templates you can use for process mining in the process advisor feature in Power Automate.
+title: Power Platform templates for process mining in process advisor
+description: Learn how to use Power Platform templates for process mining in the Power Automate process advisor.
 author: nijemcevic 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 07/06/2022
+ms.date: 07/08/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -16,28 +16,38 @@ search.audienceType:
 
 # Power Platform templates for process mining
 
-Process advisor templates allow you to easily onboard your data with a few selections, which avoids the traditional data identification and manipulation required in traditional process mining tools. Templates will enable users to reach their insights quickly and without the previously required data mastery. Our templates like ADO, Power Apps, Bot Framework, and more, will empower all to reach process insights and implement optimizations and automations.
+Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. Templates for [Desktop flows](#desktop-flows-template), [Power Virtual Agents](#power-virtual-agents-template), and [Power Apps insights](#power-apps-insights-template) provide insights that help you identify automation opportunities and address performance and compliance opportunities in your flows.
 
-## Desktop Flows template
+Creating and running a template is similar for all the process advisor Power Platform templates.
 
-The process advisor Power Automate **Desktop Flows** template will enable you to visualize the actions your RPA bots are executing. Insights will allow you to maximize your RPA functionality and manage bot success rate.
+## Desktop flows template
 
-To learn more about Power Automate desktop flows, go to [Introduction to desktop flows](desktop-flows/introduction.md).  
+The Desktop flows template analyzes the run history of flows that you create with [robotic process automation (RPA)](https://powerautomate.microsoft.com/robotic-process-automation/) in Power Automate. To learn more, go to [Introduction to desktop flows](desktop-flows/introduction.md).  
 
-### Prerequisites
+### Create and run the Desktop flows template
 
-Before you can visualize your Power Automate Desktop Flows, you must have a Power Automate RPA license. To learn more, go to [Introduction to desktop flows](desktop-flows/introduction.md).
+1. In Power Automate in the left panel, select **Process advisor**.
 
-### Create and run the Desktop Flows template
+1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Desktop flows** tile.
 
-The process of creating and running a template is similar for all templates.
+1. In the **Process name** box, enter a name for your process.
 
-1. On the **Power Platform** tab in the **Start with a popular template** section, select the **Desktop Flows** tile.
+1. If you know the Flow ID of the flow you want to analyze, enter it in the **Flow ID (optional)** box. If you don't know the Flow ID, you can skip this step.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Desktop Flows tile](media/process-mining-templates/desktop-flows.png "Desktop Flows tile")
+    > [!TIP]
+    > To find the Flow ID, edit the flow and look at the URL in your browser's address bar. Everything between "flows/" and "/details" is the Flow ID:
+    >
+    >:::image type="content" source="media/process-mining-templates/find-flow-id.png" alt-text="Screenshot of a flow URL with the Flow ID highlighted.":::
 
-1. In the **Process name** field, enter a name for your process.
+1. (Optional) In the **Description** box, enter a description for the process.
+
+1. Select **Create**.
+
+1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
+
+    If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
+
+1. Select **Save**.
 
 1. If you know your flow ID, enter it in the **Flow ID (optional)** field. If you don't know your flow ID, go to the next step.
 
@@ -53,103 +63,111 @@ The process of creating and running a template is similar for all templates.
 
     If you're not signed in, select **Sign in** and authenticate through AAD.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Connect to data source screen.](media/process-mining-templates/connect.png "Connect to data source screen")
+Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-1. After connection credentials are established, select **Save**. Process advisor will analyze your process.
-
-   The process for the **Desktop flows** and **Power Apps Insights** templates might take at least two minutes to complete. The process for the **Power Virtual Agents** template will take longer to complete. You can leave the page and return later while it is processing.
-
-### Visualize the process map for the Desktop Flows template
-
-After your process report has been published, you can visualize the process map and use the custom attributes filter to dig deeper into your insights.
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Desktop Flows template.](media/process-mining-templates/insights.png "Process map for the Desktop Flows template")
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Power Virtual Agents template
 
-The Power Virtual Agents template will enable you to visualize the process map and variant use of your virtual agents. Insights will allow you to better understand your users' journey and be able to maximize the bots effectiveness.
-
-To learn more, go to [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
-
-### Prerequisites
-
-Before you can visualize your Power Virtual Agents, you must have a Power Virtual Agent license. To learn more, go to [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+The Power Virtual Agents template analyzes your bots to help you better understand your users' journey and maximize the bots' effectiveness. To learn more, go to [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 
 ### Create and run the Power Virtual Agents template
 
-The process of creating and running a template is similar for all templates.
+1. In Power Automate in the left panel, select **Process advisor**.
 
-1. On the **Power Platform** tab in the **Start with a popular template** section, select the **Power Virtual Agents** tile.
+1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Virtual Agents** tile.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Power Virtual Agents tile.](media/process-mining-templates/pva.png "Power Virtual Agents tile")
+1. In the **Process name** box, enter a name for your process.
 
-1. In the **Process name** field, enter a name for your process.
+1. (Optional) In the **Description** box, enter a description for the process.
 
-1. If you know your bot ID, enter it in the **Bot ID (optional)** field. If you don't know your bot ID, go to the next step.
+1. Select **Create**.
 
-1. Do steps 4 through 8 in the **Create and run the Desktop Flows template** section earlier in this article.
+1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
 
-### Visualize the process map for the Power Virtual Agents template
+    If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
-After your process report has been published, you can visualize the process map and the variants of the customer journey through your virtual agents. You can also leverage the custom attributes filter to dig deeper into your insights.
+1. Select **Save**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Power Virtual Agents template.](media/process-mining-templates/pva-insights.png "Process map for the Power Virtual Agents template")
+Process advisor will analyze your process. It may take several minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-## Power Apps Insights template
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-The **Power Apps Insights** template will enable you to visualize the actions and success of your Power Apps. The template will enable you to maximize your apps' functionality and manage its success rate.
+## Power Apps insights template
 
-To learn more about Power Apps, go to the [Microsoft Power Apps documentation](/power-apps/).
+The Power Apps insights template enables you to visualize the actions and success of your Power Apps. It allows you to maximize your apps' functionality and manage its success rate. To learn more, go to [What is Power Apps?](/power-apps/powerapps-overview)
 
-### Prerequisites
+The Power Apps insights template uses telemetry data from [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze your apps. That means you'll need to get an Application ID for your app in an Application Insights resource before you can run the Power Apps insights template.
 
-Before you can visualize your Power Apps, you must have a Power Apps license. To learn more, go to the [Microsoft Power Apps documentation](/power-apps/).
+### Get your app's Application Insights Application ID
 
-### Create and run the Power Apps Insights template
+**If you're not an Azure admin:** Ask your Azure admin to create an Application Insights resource for your app and give you the app's Application ID and the dimensions to enter for Case ID and Activity.
 
-In order to deploy the **Power Apps Insights** template, you'll need to create an Application Insights resource.
+**If you're an Azure admin:**
 
-1.	Create an Application Insights resource by following the instructions in [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
+1. [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource) for your app.
 
-1. On the **Power Platform** tab in the **Start with a popular template** section, select the **Power Apps Insights** tile.
+1. In the left panel, select **Configure** > **API Access**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Power Apps Insights tile.](media/process-mining-templates/power-apps-insights.png "Power Apps Insights tile")
+1. Copy the **Application ID**.
 
-1. In the **Process name** field, enter a name for your process.
+1. Take note of the dimensions you'll want to map to Case ID and Activity in the Power Apps insights template.
 
-1. Go to the Application Insights Azure Resource you created in step 1.
+    To test the dimensions, go to **Log Analytics** and enter the following query:
 
-1. On left panel, select **Configure** > **API Access**.
+    ```azurecli
+        traces
+        | where timestamp > ago(30d)
+        | project
+            timestamp,
+            message,
+            severityLevel,
+            operation_Name,
+            operation_Id,
+            session_Id,
+            user_Id,
+            client_Type,
+            client_City,
+            client_StateOrProvince,
+            client_CountryOrRegion,
+            client_Browser,
+            appId,
+            customDimensions
+    ```
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the API Access option in the Configure menu.](media/process-mining-templates/api-access.png "API Access option in the Configure menu")
+### Create and run the Power Apps insights template
 
-1. Copy the Power App **Application ID**.
+1. In Power Automate in the left panel, select **Process advisor**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Application ID in the API Access screen.](media/process-mining-templates/app-id.png "Application ID in the API Access screen")
+1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Apps insights** tile.
+
+1. In the **Process name** box, enter a name for your process.
+
+1. In the **Power Apps application insights app ID** box, paste the Application ID from Application Insights.
+
+1. In the **Case ID field name** and **Activity field name** boxes, select the dimensions that represent the Case ID and Activity you want to analyze.
+
+1. (Optional) In the **Description** box, enter a description for the process.
+
+1. Select **Create**.
+
+1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
+
+    If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
 1. Go back to the process advisor **Create a new process** screen and paste it in the **Power apps application insights app Id** field.
 
 1. Identify the parameter that you want to analyze from your app and enter it in the **Case Id field name** and **Activity field name** fields in the **Create a new process** screen.
 
-    These field names can be either the name of a custom parameter (defined in customDimensions) or one of the following parameters: `appId`, `appName`, `client_Browser`, `client_City`,  `client_CountryOrRegion`, `client_StateOrProvince`, `client_Type`, `message`, `operation_Name`, `operation_Id`, `session_Id`, `severityLevel`, or `user_Id`. You can find these parameters in the dropdown lists in the **Case ID field name** and **Activity field name** dropdown lists in the **Create a new process** screen.
+1. Select **Save**.
 
-    These fields can be tested by navigating to the **Log Analytics** menu in your Application Insights resource with this query:
+Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the query in the Application Insights resource.](media/process-mining-templates/query.png "Application Insights resource query")
+[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-1. Do steps 4 through 8 in the **Create and run the Desktop Flows template** section earlier in this article.
+### See also
 
-### Visualize the process map for the Power Apps Insights template
-
-After your process report has been published, you can visualize the process map and use the custom attributes filter to dig deeper into your insights.
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Power Apps Insights template.](media/process-mining-templates/visualize-insights.png "Process map for the Power Apps Insights template")
+[Introduction to desktop flows](desktop-flows/introduction.md)  
+[Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)<br/>
+[Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)<br/>
+[What is Power Apps?](/power-apps/powerapps-overview)
