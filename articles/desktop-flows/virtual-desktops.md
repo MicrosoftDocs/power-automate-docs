@@ -87,6 +87,10 @@ Every individual virtual desktop has its own tree, while numeric prefixes allow 
 
 ## Known issues and limitations
 
+*	**Issue:** Power Automate agent for virtual desktops isn't compatible with Windows 10 and Windows 11 Home editions as the Remote Desktop Connection isn't supported in these Windows editions.
+
+* **Workarounds:** None
+
 *	**Issue:** Virtual desktop automation isn't supported in Power Automate for desktop installed through the Microsoft store.
 
 * **Workarounds:** Download and install the Microsoft Visual C++ Redistributable, that installs Microsoft C and C++ (MSVC) runtime libraries. You can find the x86 version [here](https://aka.ms/vs/17/release/vc_redist.x86.exe) and the x64 version [here](https://aka.ms/vs/17/release/vc_redist.x64.exe).
