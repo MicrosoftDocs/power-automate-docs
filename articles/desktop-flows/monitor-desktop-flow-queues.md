@@ -26,7 +26,7 @@ search.audienceType:
 # Monitor desktop flow queues 
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 As you scale the automations in your business, you may need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine, machine group, or a gateway.
 
