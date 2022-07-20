@@ -51,6 +51,21 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/flows-teams.md",
+      "redirect_url": "/power-automate/articles/teams/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/environments-overview-maker.md",
+      "redirect_url": "/power-automate/articles/environments-overview-admin",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/create-adaptive-cards-teams.md",
+      "redirect_url": "/power-automate/articles/create-adaptive-cards",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/guided-learning/administer-flows.yml",
       "redirect_url": "/learn/paths/automate-process-using-flow",
       "redirect_document_id": false
