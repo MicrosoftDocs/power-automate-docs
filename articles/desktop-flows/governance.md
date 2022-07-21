@@ -212,12 +212,23 @@ You can use the following registry entry to configure the cleanup of local flow 
 ***Value***
 
 - **1**: Flow run action details stored in the **Actions.log** file won't be deleted from the local disk after the run is completed.
+
+## Prevent Power Automate for desktop from running flows containing cloud connectors
+
+You can use the following registry entry to disable the execution of flows containing cloud connectors.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableOptionalUpdates|DWORD|
+
+***Value***
+
+- **1**: The machine won't be able to run desktop flows containing cloud connector flows. An appropriate error message will inform users about the set limitation.
  
 ## Learn more
 
 - Learn to [create Power Automate desktop flows](create-flow.md).
 - Learn how to run [desktop flows](run-desktop-flow.md).
 - Learn to [manage desktop flows](manage.md).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
