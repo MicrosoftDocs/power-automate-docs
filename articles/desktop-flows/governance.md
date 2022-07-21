@@ -219,11 +219,11 @@ You can use the following registry entry to disable the execution of flows conta
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
-|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableOptionalUpdates|DWORD|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableCloudConnectors|DWORD|
 
 ***Value***
 
-- **1**: The machine won't be able to run desktop flows containing cloud connector flows. An appropriate error message will inform users about the set limitation.
+- **1**: The machine won't be able to run desktop flows containing cloud connectors. An appropriate error message will inform users about the set limitation.
  
 ## Learn more
 
