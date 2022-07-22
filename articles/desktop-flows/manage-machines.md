@@ -29,7 +29,7 @@ The easiest way to connect your machine to the cloud is with our direct connecti
 
 ## Register a new machine 
 
-Your machine is automatically registered on the currently selected environment in the application. If you don't have permission to register your machine in that environment or want to use another environment, update the environment.
+Your machine is automatically registered on the currently selected environment in the application. If you don't have permission to register your machine in that environment or want to use another environment, update the environment manually.
 
 1. [Install the latest version](install.md) of Power Automate on your device. If you already have the latest version, skip to step 3. 
 
@@ -83,11 +83,11 @@ You can update the running environment in which your machine can run desktop flo
 
 1. Select **+ New step**. 
 
-1. Select the **Run a flow built with Power Automate for desktop** action. 
+1. Deploy the **Run a flow built with Power Automate for desktop** action. 
 
 1. If you’ve already created a connection with desktop flows, select the three dots on the top right of the action, and under **My connections** select **+Add new connection**. 
 
-1. Next to Connect, select **Directly to machine**. 
+1. Select **Directly to machine** in the **Connect** field.
 
 1. Select the name of your machine. 
 
@@ -201,7 +201,7 @@ You can edit the connection or create a new one for each of the desktop flow act
 
 1. Select the name of your machine. 
 
-1. Enter the username and password you would use to sign in to your machines. 
+1. Enter the username and password you would use to sign in to your machine. 
 
 1. Select **Create**. 
 
