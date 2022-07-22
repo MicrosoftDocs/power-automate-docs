@@ -77,6 +77,17 @@ You can use the following registry entry to prevent users from logging into Powe
 
 In order to restrict access to Power Automate for desktop on a workstation with Windows 10, use [Applocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
+## Allow users to sign in to Power Automate for desktop using Web Account Manager (WAM)
+
+You can use the following registry entry to allow users to sign in to Power Automate for desktop using Windows Web Account Manager (WAM).
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|UseMsalWindowsBroker|DWORD|
+
+***Values***
+- **1**: Power Automate for desktop will authenticate users using the WAM funcionality.
+
 ## Allow users to select a particular organization in Power Automate for desktop
 
 You can use the following registry entry to allow users to select the organization of their preference in Power Automate for desktop.
@@ -149,17 +160,6 @@ IT administrators, may set the following registry key, to configure the Power Au
 ***Value***
 - **1**: Power Automate for desktop will authenticate to the corporate proxy server using the current user's credentials.
 
-## Configure Power Automate for desktop to prevent cleaning up of run files
-
-You can use the following registry entry to configure the cleanup of Power Automates' run files. 
-
-|Hive|Key|Name|Type|
-|---|---|---|---|
-|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableRunFilesCleanup|DWORD|
-
-***Value***
-- **1**: Run files won't be deleted from the local disk after the run is completed.
-
 ## Configure Power Automate for desktop notification settings 
 
 You can use the following registry entry to configure how Power Automate for desktop displays notifications and monitoring information. 
@@ -186,6 +186,32 @@ You can use the following registry entry to prevent Power Automate for desktop f
 ***Value***
 
 - **0**: Power Automate for desktop won't display a confirmation dialog when invoking desktop flows via URL.
+
+
+## Configure Power Automate for desktop to keep the flow run details
+
+You can use the following registry entry to configure Power Automate for desktop to keep the flow run details logs in a local folder.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|KeepRunDefinitionFilesCopy|DWORD|
+
+***Value***
+
+- **1**: Power Automate for desktop creates a copy of the **RunDefinition.json** file, preventing the local flow run details from getting cleaned up.
+
+
+## Configure Power Automate for desktop to prevent cleanup of flow run action details
+
+You can use the following registry entry to configure the cleanup of local flow run action details logs.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableRunFilesCleanup|DWORD|
+
+***Value***
+
+- **1**: Flow run action details stored in the **Actions.log** file won't be deleted from the local disk after the run is completed.
  
 ## Learn more
 
