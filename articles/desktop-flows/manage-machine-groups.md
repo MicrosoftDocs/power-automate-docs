@@ -21,7 +21,7 @@ Machine groups allow you to organize multiple machines together to help distribu
 
 ## Create a machine group 
 
-Machine groups can either be created from the Power Automate machine runtime application or from the Power Automate portal. 
+Machine groups can either be created from the Power Automate machine runtime application or the Power Automate portal. 
 
 From the Power Automate machine runtime application: 
 
@@ -44,9 +44,9 @@ From the Power Automate portal:
 
 1. Sign in to the Power Automate portal.
 
-1. Select **Monitor**, then select **Machines**.
+1. Select **Monitor**, then **Machines**.
 
-1. Select **New machine**, then select **Group**.
+1. Select **New machine**, then **Group**.
 
 1. Enter a name for your machine group, and optionally add a description.
 
