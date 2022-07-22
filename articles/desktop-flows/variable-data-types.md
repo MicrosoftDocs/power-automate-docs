@@ -37,7 +37,7 @@ To create a **Text value** variable, use the **Set variable** action and populat
 
 ### Numeric value
 
-This is the type applied to numbers. Only this data type can be used in mathematical operations. 
+Numeric is the type applied to numbers. Only this data type can be used in mathematical operations. 
 
 Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation. 
 
@@ -81,27 +81,31 @@ A common practice is to use a **For each** action to iterate through the items o
 
 ### Datatable 
 
-A datatable contains data in a tabular form. Datatables are the equivalent of two-dimensional arrays in programming terms. 
+Datatables contain data in a tabular form and are the equivalent of two-dimensional arrays in programming terms. 
 
 A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain datarows as items.
 
 ![Screenshot of the contents of a datatable variable.](media\data-tables\create-data-table.png)
 
-Power Automate provides three actions to generate datatables: the **Read from Excel worksheet** action, the **Execute SQL statement** action and the **Extract data from web page** action.
+Power Automate provides the **Create new data table** action to generate new datatables. After deploying the action, you can use the visual builder to populate values and rename the column headers.
 
-Alternatively, while Power Automate doesn't provide an action to form your own datatables, you can create a datatable using the **Set variable** action and the programming array notation. 
+![Screenshot of the visual builder of the Create new data table action.](media\data-tables\create-new-data-table-action-visual-builder.png)
 
-This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
+Apart from the **Create new data table** action, three more actions produce datatables to store extracted data: the **Read from Excel worksheet**, **Execute SQL statement**, and **Extract data from web page** actions.
+
+Additionally, you can create a datatable using the **Set variable** action and the programming array notation. This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
 ![Screenshot of Set variable action that creates a datatable.](media\data-tables\create-data-table-variable.png)
 
-If you want to add column headers while creating a new datatable, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
+If you want to add column headers while creating a new datatable using the array notation, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
 
 ![Screenshot of a Set variable action that creates a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
 
-To add a new row to an existing table, create an expression containing the variable name of the datatable, a plus character (**+**), and the values you want to add in brackets.
+To add a new row to an existing table, use the **Insert row into data table** action. Alternatively, create an expression containing the variable name of the datatable, a plus character (**+**), and the values you want to add in brackets.
 
 ![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
+
+Besides inserting rows into datatables, desktop flows offer various actions that manipulate datatables. You can find a full list with these actions in the [variables actions reference](actions-reference/variables.md#data-table).
 
 To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
@@ -134,7 +138,7 @@ Alternatively, you can use the **%VariableName['ColumnName']%** notation. The na
 
 Contains pairs of properties and values, which can be easily converted to JSON format. 
 
-To create a new empty **Custom object**, use the **Set variable** action and populate the following expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an epxression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
+To create a new empty **Custom object**, use the **Set variable** action and populate the following expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an expression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**. 
 
 ![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
 

@@ -145,7 +145,7 @@ To provide load balancing from the Power Automate gateway details page, navigate
 
 In the gateway details page, toggle **Run on all gateways in cluster**. This option will distribute the desktop flows runs on all the gateways within that cluster.
 
-   ![Screenshot of the gateway details page.](../media/run-desktop-flow/gw_cluster.png "Distribute desktop flows run on gateway cluster")
+   ![Screenshot of the gateway details page.](media/run-pad-portal/gw-cluster.png "Distribute desktop flows run on gateway cluster")
    
 >[!NOTE]
 >In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin accross cluster members.
@@ -186,7 +186,7 @@ Some of your desktop flows might run for long durations, for example more than 2
 
 1.	Select the ellipsis (…) on the top right corner of the desktop flows action. And select Settings.
 
-    ![Screenshot of the settings option.](media/run-pad-portal/timeout_settings.png "The settings option")
+    ![Screenshot of the settings option.](media/run-pad-portal/timeout-settings.png "The settings option")
 
 1.  Select the **Timeout** property and update the duration to correctly handle your desktop flow run. 
 1.	Select **Done**.
@@ -258,9 +258,24 @@ To find the ID of an environment, navigate to the [Power Automate portal](https:
 
 ![Screenshot of the environment ID in the address line.](media/run-flow-url/find-environment-id.png)
 
-To find the ID of a desktop flow, navigate to the **My flows** tab of the [Power Automate portal](https://flow.microsoft.com/), select the desired flow, and copy its ID from the address line. 
+To find the ID of a desktop flow, launch the Power Automate console, right-click on the appropriate flow, and select **Details**. 
 
-![Screenshot of the desktop flow ID in the address line.](media/run-flow-url/find-desktop-flow-id.png)
+![Screenshot of the desktop flow details.](media/run-flow-url/find-desktop-flow-id.png)
+
+### Save logs for desktop flows run via URL
+
+Apart from the mandatory input parameters, you can add the **runId** parameter to a console run URL to define a unique GUID for the desktop flow logs. 
+
+Power Automate uses this GUID to create a folder and store the logs inside it. The logs are stored in: **C:\Users\\[Username]\AppData\Local\Microsoft\Power Automate Desktop\Console\Scripts\\[Flow ID]\Runs\\[Run ID]**
+
+> [!NOTE]
+> A GUID is a 128-bit value consisting of one group of 8 hexadecimal digits, three groups of 4 digits each, and one group of 12 digits, for example: **e6f82a20-47f7-4dd8-a97f-63df36797d0f**.
+
+A URL containing the **runId** input parameter should have the following structure. The parameter can be added to any of the previously mentioned URLs.
+
+```
+"ms-powerautomate:/console/flow/run?workflowId=[workflowId]&runId=[GUID]"
+```
 
 ### Use a console run URL in the Command Prompt 
 
