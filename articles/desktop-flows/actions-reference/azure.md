@@ -51,9 +51,7 @@ To implement Azure functionality in your desktop flows, create a new Azure sessi
 
 This action requires you to populate the **Client ID** that works as an authentication key for the specific application and the respective password. Additionally, populate the **Tenant ID** that is the Azure Active Directory in which you've created the application.
 
-Lastly, choose the environment you want to use for authentication and populate the **Subscription ID**. The subscription ID is a GUID that uniquely identifies your subscription to  Azure services.
-
-Apart from manual configuration, you can select **With file** in **Authentication type** and use a file containing all the required information.
+Lastly, populate the appropriate **Subscription ID**. The subscription ID is a GUID that uniquely identifies your subscription to  Azure services.
 
 ![Screenshot of the Create session action.](media/azure/create-session-action.png)
 
@@ -476,14 +474,10 @@ Creates an Azure session
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Authentication type|N/A|With service principal, With file|With service principal|Specify the way to authenticate|
 |Client ID |No|[Text value](../variable-data-types.md#text-value)||The client Id of the application, also known as application Id, which identifies the application that is using the token|
 |Client secret|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The secret for the client ID|
 |Tenant ID|No|[Text value](../variable-data-types.md#text-value)||The directory ID of the Azure Active Directory|
-|Environment|N/A|Global cloud, China cloud, US Government, German cloud|Global cloud|The environment to authenticate to|
-|Authentication file|No|[Text value](../variable-data-types.md#text-value)||The path of the file with all the required information to authenticate|
 |Subscription ID|Yes|[Text value](../variable-data-types.md#text-value)||The Azure subscription ID. If not provided, the default subscription will be used|
-
 
 ##### Variables Produced
 |Argument|Type|Description|

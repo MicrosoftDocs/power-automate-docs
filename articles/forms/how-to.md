@@ -57,8 +57,8 @@ For example, you can use a condition to email details about a specific event or 
 
 Add your form to a flow, and then add the following actions.
 
-- [Data Operation - Select](../data-operations#use-the-select-action)
-- [Data Operation - Create HTML table](../data-operations#use-the-create-html-table-action)
+- [Data Operation - Select](../data-operations.md#use-the-select-action)
+- [Data Operation - Create HTML table](../data-operations.md#use-the-create-html-table-action)
 - [OneDrive for Business - Create file](/connectors/onedrive/#create-file)
 - [OneDrive for Business - Convert file](/connectors/onedrive/#convert-file)
 

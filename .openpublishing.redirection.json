@@ -515,11 +515,16 @@
     "redirect_url": "/power-automate/developer/dev-enterprise-intro",
     "redirect_document_id": false
   },
-  {
-    "source_path": "articles/desktop-flows/run-desktop-flow.md",
-    "redirect_url": "/power-automate/desktop-flows/run-pad-flow",
-    "redirect_document_id": false
-  }
+    {
+      "source_path": "articles/desktop-flows/run-desktop-flow.md",
+      "redirect_url": "/power-automate/desktop-flows/run-pad-flow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/how-to/delete-row-column-datatable.md",
+      "redirect_url": "/power-automate/desktop-flows/how-to/delete-column-datatable",
+      "redirect_document_id": false
+    }
 ]
 }
 
