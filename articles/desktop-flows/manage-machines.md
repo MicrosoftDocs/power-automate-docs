@@ -33,23 +33,25 @@ Your machine will be automatically registered on the currently selected environm
 1. [Install the latest version](install.md) of Power Automate on your device. If you already have the latest version, skip to step 3. 
 
 1. Make sure you have checked **Install the machine-runtime app to connect to the Power Automate cloud portal**
- ![Screenshot of the option to accept the terms.](./media/register-machines/acceptterms.png)
+
+    ![Screenshot of the option to accept the terms.](./media/register-machines/acceptterms.png)
 
 1. When the installation completes, launch the **Power Automate machine-runtime app**
- ![Screenshot of the Windows search menu.](./media/register-machines/runapp.png)
+
+    ![Screenshot of the Windows search menu.](./media/register-machines/runapp.png)
 
 1.	Sign into Power Automate machine runtime. Your machine should be automatically registered in the currently selected environment 
 
 1.	If the machine hasn't been registered yet, a message will prompt you to select a Machine running environment. Power Automate will use this environment to run all the triggered desktop flows.
 
- ![Screenshot of the the Machine isn't registered message.](./media/register-machines/machine-not-registered.png)
+     ![Screenshot of the the Machine isn't registered message.](./media/register-machines/machine-not-registered.png)
 
 When the connection is established successfully, the machine settings section will display the following fields regarding the machine:
 - **Machine name:** A unique name to identify the machine.
 - **Machine description:** An optional description of the machine.
 - **Machine running environment:** The running environment of the machine.
 
- ![Screenshot of the the Machine settings.](./media/register-machines/registered-machine.png)
+![Screenshot of the the Machine settings.](./media/register-machines/registered-machine.png)
 
 
 
@@ -191,7 +193,7 @@ Follow these steps to delete a machine.
 ## Switch from gateways to direct connectivity 
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities.
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities.
 
 You can easily switch to using direct connectivity by changing the desktop flow connection and use one with the direct to machine option.  
 

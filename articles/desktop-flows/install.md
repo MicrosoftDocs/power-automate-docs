@@ -51,7 +51,7 @@ By default, both are installed on your device.
 >The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also install the Power Automate app and third-party components.
 
-![Screenshot of the installation details.](../media/desktop-flows-setup/installer-checkboxes.png)
+![Screenshot of the installation details.](media/desktop-flows-setup/installer-checkboxes.png)
 
 >[!IMPORTANT]
 >In order to register your machine, you need to have an Organization premium account.
@@ -84,7 +84,7 @@ During installation, you can change the default settings if you don't want to se
 
 After the installation completes, you will need to install and enable the browser extension for Power Automate. This extension will allow you to record and run web actions in your desktop flows.
 
-![Screenshot of the Installation success dialog.](../media/desktop-flows-setup/screen.png)
+![Screenshot of the Installation success dialog.](media/desktop-flows-setup/screen.png)
 
 Select one of the links displayed in the installer. For example, if you want to record your browser automations on Microsoft Edge, select the **Microsoft Edge** link.
 
@@ -121,9 +121,9 @@ Follow these steps if you want to silently install Power Automate.
 
 1. Open **Start**.
 
-1. Search for **command prompt**, and then run it as the administrator.
+1. Search for **Command Prompt**, and then run it as the administrator.
 
-   ![A screenshot that displays the command prompt on the start menu.](../media/desktop-flows-setup/command-prompt.png)
+   ![A screenshot that displays the command prompt on the start menu.](media/desktop-flows-setup/command-prompt.png)
 
 1. Change the directory to **Downloads** (or to the directory into which you downloaded Power Automate):
 
@@ -189,7 +189,7 @@ To update Power Automate for desktop, use the same command line arguments that y
 ### Install the gateway with PowerShell Cmdlets
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 Apart from direct connectivity, you can establish communication with a  machine using on-premises data gateways. To install, configure, and manage a gateway, use [PowerShell Cmdlets](/powershell/gateway/overview).
 
@@ -200,21 +200,15 @@ Apart from direct connectivity, you can establish communication with a  machine 
 ## Setup desktop flows connections and machine credentials
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 1. Sign into [Power Automate](https://powerautomate.microsoft.com).
 1. Expand **Data** on the left side of the screen.
-1. Select **Connections**.
+1. Select **Connections** and then **New connection**.
 
-   ![A screenshot of the connections tab.](media/desktop-flows-setup/connections-tab.png)
-
-1. Select New connection.
-
-   ![A screenshot of a connection.](media/desktop-flows-setup/new-connection.png)
+   ![A screenshot of the option to create a new connection.](media/desktop-flows-setup/new-connection.png)
 
 1. Search for *Desktop flow*, and then select **Desktop flows**.
-
-   <!-- ![A screenshot of the search box.](../media/desktop-flows-setup/search-desktop-flow.png) -->
 
 1. Provide the machine or gateway information and device credentials: 
  
@@ -265,7 +259,7 @@ Follow these steps to install Selenium IDE:
 ## Install the on-premises data gateway to run your desktop flows from the cloud
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 You will need the gateway to trigger your desktop from an [event, schedule, or button flow.](..\flow-types.md) on a remote device.
 
@@ -283,7 +277,7 @@ You will need the gateway to trigger your desktop from an [event, schedule, or b
 ## Troubleshoot missing gateway
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 You might not find the gateway in the list while creating the connection for the following reasons:
 

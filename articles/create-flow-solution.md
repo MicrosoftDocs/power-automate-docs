@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/17/2022
+ms.date: 07/21/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -86,7 +86,7 @@ Solution-aware cloud flows can be found either via the **My flows** lists or via
 The **Shared with me** tab shows the following solution cloud flows.
 
    - Flows you co-own.
-   - Flows that are owned by a Dataverse team in whcih you are a member.
+   - Flows that are owned by a Dataverse team in which you are a member.
    - Flows that are co-owned by a Dataverse team in which you are a member. 
 
 If you are the owner of a solution cloud flow, you can always find it on the **Cloud flows** tab. If you have the 'run only' permission to a flow, you will only see that flow on the **My flows** tab if you are an owner or a co-owner too.

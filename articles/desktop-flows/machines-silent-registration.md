@@ -35,11 +35,11 @@ To silently register your machine and join a group, we recommend you to use a se
     a.	Go to Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
 
     b.	Search **app registrations**
-    ![Screenshot of the Azure portal.](./media/machines-silent-registration/image001.png)
+    ![Screenshot of the Azure portal.](./media/machines-silent-registration/azure-portal.png)
     
 
     c.	Select **new registration**
-     ![Screenshot of the New registration option.](./media/machines-silent-registration/image003.png)
+     ![Screenshot of the New registration option.](./media/machines-silent-registration/azure-portal-new-registration.png)
 
     d.	Define a name and select **Single tenant** (or multi-tenant) then select **register**
 1.	Give your app the following permissions
@@ -60,7 +60,7 @@ To silently register your machine and join a group, we recommend you to use a se
     b.	Directory (tenant) Id
     c.	Client credentials (certificate or thumbprint)
  
-    ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/image005.png)
+    ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.png)
 
 ## How to use the Machine registration App?
 1.	Open **Start** menu
@@ -74,7 +74,7 @@ To silently register your machine and join a group, we recommend you to use a se
     ```
     .\PAD.MachineRegistration.Silent.exe -help
     ```
-    ![Screenshot of the PowerShell window.](./media/machines-silent-registration/image007.png)
+    ![Screenshot of the PowerShell window.](./media/machines-silent-registration/powershell-window.png)
 
     
 ## Silently register a new machine
@@ -111,7 +111,7 @@ To join a group silently with the service principal account, use the join group 
 1.	Groupid: the id of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
 1.	Grouppassword: the password of your machine. If this is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. This input isn’t expected to be specified as an input of the command line. See “Secure input” section to see options you can choose to provide it
  
-![groupresults.](./media/machines-silent-registration/image009.png)
+![groupresults.](./media/machines-silent-registration/environment-id.png)
 
 ```
 .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
