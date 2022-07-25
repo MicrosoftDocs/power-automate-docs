@@ -31,13 +31,13 @@ Here's a video tutorial about conditions.
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWKUx0]
 ## Prerequisites
 
-[Create a cloud flow](get-started-logic-template.md) from a template. This tutorial [uses this template](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) as the example.
+[Create a cloud flow](get-started-logic-template.md) from a template. This tutorial [uses this template](https://make.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) as the example.
 
 ## Add a condition
 
 This tutorial uses an example with a Twitter trigger and a SharePoint action.
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.microsoft.com).
 
 1. On the left pane, select **My flows**.
 
