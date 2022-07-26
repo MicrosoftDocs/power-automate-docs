@@ -22,7 +22,8 @@ search.audienceType:
 Control and manipulate text
 
 [Append line to text](#appendline)  
-[Get subtext](#getsubtextbase)  
+[Get subtext](#getsubtextbase)
+[Crop text](#croptextaction)   
 [Pad text](#pad)  
 [Trim text](#trim)  
 [Change text case](#changecase)  
@@ -137,6 +138,29 @@ Retrieve a subtext from a text value
 |Exception|Description|
 |-----|-----|
 |Start index or length are out of range|Indicates that the start index or length are out of range|
+
+
+### <a name="croptextaction"></a> Crop text
+Retrieves a text value that occurs before, after or between the specified text flag(s) in a given text.
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Original text|No|[Text value](../variable-data-types.md#text-value)||The text to retrieve a section of text from|
+|Mode|N/A|Get text before the specified flag, Get text after the specified flag, Get text between the two specified flags|Get text before the specified flag|Specify whether to retrieve the text before, after, or between flags.|
+|Start flag|No|[Text value](../variable-data-types.md#text-value)||The retrieved text will be after this flag. The flag can be any character or text|
+|End flag|No|[Text value](../variable-data-types.md#text-value)||The retrieved text will be before this flag. The flag can be any character or text|
+|Ignore case|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to find the flags using case-sensitive or case-insensitive matching|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|CroppedText|[Text value](../variable-data-types.md#text-value)|The new cropped text|
+|IsFlagFound|[Boolean value](../variable-data-types.md#boolean-value)|Indicates if flag(s) found or not|
+
+
+##### <a name="croptextaction_onerror"></a> Exceptions
+- This action doesn't include any exceptions
 
 ### <a name="pad"></a> Pad text
 Creates a fixed length text by adding characters to the left or to the right of an existing text
