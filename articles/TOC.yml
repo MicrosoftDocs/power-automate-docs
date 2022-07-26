@@ -646,6 +646,8 @@
       href: process-mining-troubleshoot.md
     - name: Visualize and gain insights from processes
       href: process-mining-visualize.md
+    - name: Get automated recommendations to improve processes
+      href: process-mining-auto-rec.md
     - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
