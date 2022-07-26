@@ -35,7 +35,7 @@ The Data quality panel provides an indicator for the *event log* data used to ge
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the data quality indicator.](media/process-mining-auto-rec/data-quality.png "Data quality indicator")
 
-If the data quality indicator shows **Low quality** or **Medium quality**, you should re-import an event log with the recommended elements. The dot in the indicator represents the category and isn't a sliding scale.  
+If the data quality indicator shows **Low quality** or **Medium quality**, you should reimport an event log with the recommended elements. The dot in the indicator represents the category and isn't a sliding scale.  
 
 ## Confidence rating
 
