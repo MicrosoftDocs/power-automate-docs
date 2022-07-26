@@ -22,7 +22,7 @@ search.audienceType:
 Control and manipulate text
 
 [Append line to text](#appendline)  
-[Get subtext](#getsubtextbase)
+[Get subtext](#getsubtextbase)  
 [Crop text](#croptextaction)   
 [Pad text](#pad)  
 [Trim text](#trim)  
@@ -41,17 +41,27 @@ Control and manipulate text
 
 ## Getting started with text actions
 
-To combine a list of text values into a single text value, use the **Join text** action. Specify a list variable, and separate the list items by using a delimiter. To separate a single text value into a list of items, use the **Split text** action. Specify a text value that has recognizable delimiters by which to separate the list items. 
+To combine a list of text values into a single text value, use the **Join text** action. Specify a list variable, and separate the list items using a delimiter. To separate a single text value into a list, use the **Split text** action. Specify a text value with recognizable delimiters to separate the list items.
 
-To find a string in a text and replace it with another string or character, use the **Replace text** action. The following figure demonstrates a replacement of the string "Product Characteristics" with "Characteristics".
+To find a subtext in a text and replace it with another text or character, use the **Replace text** action. For example, the following example demonstrates the replacement of the text **Product Characteristics** with **Characteristics**.
 
-![Screenshot of the Replace text action.](\media\text\replace-text-example.png)
+![Screenshot of the Replace text action.](media\text\replace-text-example.png)
 
-Search a text value for a string of text with the **Parse text** action. Certain text actions contain the option to use regular expressions. Enable the option **Is regular expression** to search for text specifying a regular expression in **Text to find**. Additionally, disable **First occurence only** for the action to return a list of positions of the matched text. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+Search a text value inside another text with the **Parse text** action. 
 
-In the figure below, the action searches for all occurences of words starting with a capital letter in "Items detected in Stock", and will return "Items" and "Stock" in the **Matches** list, and the position they are found at (1 and 18) in the **Positions** list.
+Some text actions contain the option to use regular expressions. Enable the **Is regular expression** option in the **Parse text** action to search for a text specified by a regular expression. You can find more information regarding regular expressions in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-![Screenshot of Parse text action.](\media\text\parse-text-example.png)
+Additionally, disable the **First occurrence only** to make the action return a list of positions of all the matched texts.
+
+The following example searches all the words in **Items detected in Stock** starting with a capital letter. The produced list named **Matches** stores the values **Items** and **Stock**. The **Positions** list stores the positions in which the values were found (1 and 18).
+
+![Screenshot of the Parse text action.](media\text\parse-text-example.png)
+
+Besides searching in texts, Power Automate enables you to crop text values from other texts using the **Crop text** action. The text to crop is defined by flags that can be single characters of texts. You can crop values before, after, or between the specified text flag(s).
+
+The cropped text is stored in the **CroppedText** variable, while you can use the **IsFlagFound** variable to check if the action found the set flags.
+
+![Screenshot of the Crop text action.](media\text\crop-text-example.png)
 
 To ensure that numbers are stored as numerical values, use the **Convert text to number** action. To perform the reverse conversion, use **Convert number to text**.
 
@@ -61,7 +71,7 @@ Similarly, the actions **Convert text to datetime** and **Convert datetime to te
 
 Desktop flows enable users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
 
-![Screenshot of the Recognize entities in text action](\media\text\recognize-entities-text-action.png)
+![Screenshot of the Recognize entities in text action](media\text\recognize-entities-text-action.png)
 
 The **Recognize entities in text** action gets a text or a variable containing text as input and returns a datable containing the results. Each entity returns different results based on its structure, but all the datatables contain an **Original text** field that stores the entity part of the input text.
 
@@ -71,10 +81,10 @@ The following table displays various examples of entities that the **Recognize e
 |------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 |Date time   |I'll go back 04th Jan 2019                                            |**Value:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019             |
 |Date time   |Schedule a meeting tonight at 7pm                                     |**Value:** 9/30/2021 7:00:00 PM </br> **Original text:** tonight at 7pm            |
-|Dimension   |You weight 200lbs                                                     |**Value:** 200 </br> **Unit:** Pound </br> **Original text:** 200lbs               |
+|Dimension   |You weight 200 lbs                                                     |**Value:** 200 </br> **Unit:** Pound </br> **Original text:** 200 lbs               |
 |Dimension   |Α twister roared through an area about ten miles long there           |**Value:** 10 </br> **Unit:** Mile </br> **Original text:** ten miles              |
-|Temperature |Τhe temperature outside is 40 deg celsius                             |**Value:** 40 </br> **Unit:** C </br> **Original text:** 40 deg celsius            |
-|Currency    |Νet interest income sank 27 percent in the quarter to /$ 254 million  |**Value:** 254000000 </br> **Unit:** Dollar </br> **Original text:** $ 254 million |
+|Temperature |The temperature outside is 40 deg celsius                             |**Value:** 40 </br> **Unit:** C </br> **Original text:** 40 deg celsius            |
+|Currency    |Net interest income sank 27 percent in the quarter to /$ 254 million  |**Value:** 254000000 </br> **Unit:** Dollar </br> **Original text:** $ 254 million |
 |Number range|This number is larger than twenty and less or equal than thirty five  |**From:** 20 </br> **To:** 35 </br> **Original text:** larger than twenty and less or equal than thirty five |
 |Number range|From 5 to 10                                                          |**From:** 5 </br> **To:** 10 </br> **Original text:** From 5 to 10                 |
 |Number range|Less than 4.565                                                       |**From:** 0 </br> **To:** 4.565 </br> **Original text:** Less than 4.565           |
@@ -141,7 +151,7 @@ Retrieve a subtext from a text value
 
 
 ### <a name="croptextaction"></a> Crop text
-Retrieves a text value that occurs before, after or between the specified text flag(s) in a given text.
+Retrieves a text value that occurs before, after or between the specified text flag(s) in a given text
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -370,7 +380,7 @@ Creates a list containing the substrings of a text that are separated by a speci
 |Delimiter type|N/A|Standard, Custom|Standard|Whether the used delimiter is of a standard or custom format|
 |Custom delimiter|No|[Text value](../variable-data-types.md#text-value)||The character(s) that were used as a delimiter|
 |Standard delimiter|N/A|Space, Tab, New line|Space|The delimiter used|
-|Times|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|Specify how many times is the delimiter used|
+|Times|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|Specify how many times the delimiter is used|
 |Is regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the delimiter will be a regular expression. A regular expression creates a range of possibilities for the delimiter. For example, '\d' means that the delimiter could be any digit|
 
 > [!NOTE]
@@ -460,7 +470,7 @@ Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and wh
 - This action doesn't include any exceptions
 
 ### <a name="recognizeentitiesintext"></a> Recognize entities in text
-Recognizes entities in text, such as numbers, units, data/time and others expressed in natural language accross multiple languages
+Recognizes entities in text, such as numbers, units, data/time and others expressed in natural language across multiple languages
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
