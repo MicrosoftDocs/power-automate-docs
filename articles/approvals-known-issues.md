@@ -53,9 +53,13 @@ Data templating isn't fully supported for adaptive cards in Power Automate. As a
 
 Approvals that rely on custom responses can fail if they're sent to many users with the type set to "Everyone must approve". This failure is due to data size limitations of the results field.
 
-**Power Apps V2 trigger limitation**
+**Power Apps V2 trigger doesn't support non-open API flows**
 
-The Power Apps V2 trigger doesn't support non-open API flows. Therefore, if you update your Power Apps V1 trigger to the Power Apps V2 trigger, your flow will break with a connection error. As a workaround, after you update your flow to the Power Apps V2 trigger, remove and then re-add the flow, then save the app.
+If you update your Power Apps V1 trigger to the Power Apps V2 trigger, your flow will break with a connection error. As a workaround, after you update your flow to the Power Apps V2 trigger, remove and re-add the flow, then save the app.
+
+**Updating Power Apps v2 trigger to invoker connection**
+
+The Power Apps V2 trigger supports both embedded and invoker connections. When updating the connections in your Power Apps V2 trigger to invoker connections, you must refresh or remove and re-add the flow in the app and save the app. 
 
 **Splitting create and wait actions**
 It's possible to create flows with the approval connector where you use the *Create an approval* and *Wait for an approval* as independant actions. If a user immediatly responds to an approval request before the flow reaches the wait action, it's possible for the flow to become stuck in the wait stage. To avoid getting the flow stuck, please ensure that the create and the wait actions are called close together within the flow. Alternately, change the status of the approval in Dataverse before you call the wait action. 
