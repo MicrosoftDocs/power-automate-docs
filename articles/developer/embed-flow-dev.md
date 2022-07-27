@@ -166,7 +166,7 @@ These are the parameters for `renderWidget()`:
 
 ### Access tokens
 
-After the JS SDK `renderWidget()` runs, the JS SDK initializes an iframe which points to the Power Automate widget URL. This URL contains all the settings in the query string parameters. The host application needs to get a Power Automate access token for the user (Azure Active Directory JWT token with audience https://service.flow.microsoft.com) before it initializes the widget. The widget raises a `GET_ACCESS_TOKEN` event to request an access token from the host. The host needs to handle the event and pass the token to the widget:
+After the JS SDK `renderWidget()` runs, the JS SDK initializes an iframe which points to the Power Automate widget URL. This URL contains all the settings in the query string parameters. The host application needs to get a Power Automate access token for the user (Azure Active Directory JWT token with audience `https://service.flow.microsoft.com`) before it initializes the widget. The widget raises a `GET_ACCESS_TOKEN` event to request an access token from the host. The host needs to handle the event and pass the token to the widget:
 
 ```javascript
 widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
