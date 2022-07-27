@@ -38,11 +38,11 @@ Flow control refers to controlling the order in which actions and subflows run. 
 
 **Labels** are used to create points of reference for the **Go to** action to direct the flow to. In the figure below, the flow is directed to a label earlier in the flow to repeat a series of actions.
 
-![Screenshot of a deployed label action in a flow.](\media\flowcontrol\label-example.png)
+![Screenshot of a deployed label action in a flow.](media/flowcontrol/label-example.png)
 
 The **Run subflow** action interrupts the subflow in which it is placed and runs another subflow. When the second subflow completes, the flow reverts to the original subflow to continue running. In the figure below, the subflow **Calculate Discount** has been created to run multiple times throughout the runtime of the flow, to avoid repeating the same code.
 
-![Screenshot of a deployed Run subflow action.](\media\flowcontrol\subflows-example.png)
+![Screenshot of a deployed Run subflow action.](media/flowcontrol/subflows-example.png)
 
 
 ## Flow control actions

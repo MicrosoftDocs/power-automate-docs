@@ -92,7 +92,7 @@ If different errors require different error handling behaviors, select the **Adv
 
 To disable or enable an action, right-click on it and select **Disable action** or **Enable action**, respectively. 
 
-![Screenshot of the disable action option.](media\enabling-disabling-actions\enable-disable-action.png)
+![Screenshot of the disable action option.](media/enabling-disabling-actions/enable-disable-action.png)
 
 Disabling an action allows you to remove it from the flow without erasing it. This feature is commonly applied to test different versions of a desktop flow and decide which one is the most efficient. 
 
