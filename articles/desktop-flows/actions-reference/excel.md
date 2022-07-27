@@ -92,7 +92,7 @@ Resizes a selection of columns or rows in the active worksheet of an Excel insta
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
 |Resize target|N/A|Column, Row|Column|Specify whether to resize columns or rows|
-|Selection range|N/A|Single, Range, All available|Single|Specify whether to select a single column/row, a range of columns/rows or all the available column/rows in the active worksheet|
+|Selection range|N/A|Single, Range, All available|Single|Specify whether to select a single column/row, a range of columns/rows or all the available columns/rows in the active worksheet|
 |Column|No|[Text value](../variable-data-types.md#text-value)||The column's index number or letter. Column numbering starts from index 1|
 |Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column. Column numbering starts from index 1|
 |End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column. Column numbering starts from index 1|
