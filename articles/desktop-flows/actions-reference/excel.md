@@ -21,6 +21,7 @@ search.audienceType:
 
 Automate any Excel related activity
 
+[Resize columns/rows in Excel worksheet](#resizecolumnsorrowsaction)  
 [Run Excel Macro](#runmacro)  
 [Get active Excel worksheet](#getactiveworksheet)  
 [Get all Excel worksheets](#getallworksheets)  
@@ -82,6 +83,34 @@ Each cell in the workbook is populated with its corresponding cell in the datata
 
 ## Advanced
 Advanced Excel automation actions
+
+### <a name="resizecolumnsorrowsaction"></a> Resize columns/rows in Excel worksheet
+Resizes a selection of columns or rows in the active worksheet of an Excel instance
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
+|Resize target|N/A|Column, Row|Column|Specify whether to resize columns or rows|
+|Selection range|N/A|Single, Range, All available|Single|Specify whether to select a single column/row, a range of columns/rows or all the available column/rows in the active worksheet|
+|Column|No|[Text value](../variable-data-types.md#text-value)||The column's index number or letter. Column numbering starts from index 1|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column. Column numbering starts from index 1|
+|End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column. Column numbering starts from index 1|
+|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row's index number. The numbering starts from 1|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The index or the first row. The numbering starts from 1|
+|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The index or the last row. The numbering starts from 1|
+|Resize type|N/A|Autofit, Custom size|Autofit|Specify whether to autofit selected columns/rows or set a custom size|
+|Width|No|[Numeric value](../variable-data-types.md#numeric-value)||The width of the selected columns|
+|Height|No|[Numeric value](../variable-data-types.md#numeric-value)||The height of the selected rows|
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="resizecolumnsorrowsaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to resize columns/rows|Indicates a problem while resizing columns/rows|
+
 ### <a name="runmacro"></a> Run Excel Macro
 Runs a specified macro on the document of an Excel instance
 
