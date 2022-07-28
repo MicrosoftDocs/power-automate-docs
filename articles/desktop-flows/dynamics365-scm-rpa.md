@@ -102,7 +102,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     ![Screenshot of the Power Automate for desktop machine settings.](./media/dynamics365-RPA/image001.png)
 
-1. Log in `https://powerautomate.microsoft.com/manage/flows` to create a test cloud flow with manual trigger 
+1. [Log in](https://powerautomate.microsoft.com/signin) to create a test cloud flow with manual trigger 
 
     ![Screenshot of the option to create a new cloud flow.](./media/dynamics365-RPA/image003.png)
     ![Screenshot of the Build an instant cloud flow dialog.](./media/dynamics365-RPA/image005.png)
