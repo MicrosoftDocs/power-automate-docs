@@ -408,7 +408,7 @@ Here is an example of what the **elementStack** might look like.
 ![Element stack.](../media/edit-desktop/elementstack.png "Element stack")
 
 You can capture the **elementXPath** using the [WinAppDriver UI
-Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-desktop-recorder/).
+Recorder](https://blogs.windows.com/windowsdeveloper/2018/06/20/introducing-winappdriver-ui-recorder/).
 
 ![WAD tool.](../media/edit-desktop/wad-tool.png "WAD tool")
 
