@@ -58,7 +58,7 @@ To read and extract data from an Excel document, use the **Read from Excel works
 
 In the following example, to read the cells A1 through E5 as seen in the selection below:
 
-![Screenshot of some Excel sample data.](\media\excel\excel-data.png)
+![Screenshot of some Excel sample data.](media/excel/excel-data.png)
 
 The action has to have the following configuration:
 
@@ -66,17 +66,17 @@ The action has to have the following configuration:
 
 When the flow runs, the action stores the data in a datatable type variable:
 
-![Screenshot of the a datatable displayed in the value viewer.](\media\excel\datatable-values.png)
+![Screenshot of the a datatable displayed in the value viewer.](media/excel/datatable-values.png)
 
 Write data from the flow to Excel by using the **Write to Excel worksheet** action. This action can write any static data or variable to a specified cell, or multiple cells in an Excel worksheet. 
 
 In the following example, the action writes the above mentioned datatable variable to cell A51.
 
-![Screenshot of the Write to Excel worksheet action.](\media\excel\write-to-excel-action-properties.png)
+![Screenshot of the Write to Excel worksheet action.](media/excel/write-to-excel-action-properties.png)
 
 Each cell in the workbook is populated with its corresponding cell in the datatable. The result is that the A51 to E55 cell range is filled with the contents of the datatable.
 
-![Screenshot of written Excel data.](\media\excel\excel-data-written.png)
+![Screenshot of written Excel data.](media/excel/excel-data-written.png)
 
 ## Excel actions
 

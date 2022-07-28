@@ -62,7 +62,7 @@ Once you have a connector, you should publish templates that demonstrate how to 
 
 ### 5. Deployment
 
-To give end users access to flows that they can use automatically, deploy the flows into the Azure AD tenant of the user. Use a deployment package that you deploy using our REST APIs or PowerShell. [Learn more]( //powerapps/administrator/export-import-packages)
+To give end users access to flows that they can use automatically, deploy the flows into the Azure AD tenant of the user. Use a deployment package that you deploy using our REST APIs or PowerShell. [Learn more](/powerapps/administrator/export-import-packages)
 
 ### 6. Licensing
 

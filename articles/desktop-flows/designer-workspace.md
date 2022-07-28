@@ -66,7 +66,7 @@ When copying actions, all their parameters, images, and UI elements are copied a
 
 To search for a text string, an action or variable within the flow, use the search field at the top right of the flow designer window. The results pane will show all occurrences of text string by action and subflow. Double-click on a result to highlight the action that contains it.
 
-![Screenshot of the field to search in the flow.](\media\searching-flow\search.png)
+![Screenshot of the field to search in the flow.](media/searching-flow/search.png)
 
 ## Using the Go to line option
 
@@ -74,7 +74,7 @@ The Go to line function navigates to a specific line within the current subflow.
 
 Select **Edit**, then **Go to line** and enter a line. The corresponding action will be highlighted.
 
-![Screenshot of the Go to line dialog.](\media\using-line-option\go-to-line.png)
+![Screenshot of the Go to line dialog.](media/using-line-option/go-to-line.png)
 
 ## Using the Run from here option
 
@@ -83,7 +83,7 @@ To run the flow starting from a specific action, right-click the action and sele
 > [!NOTE]
 > The **Run from here** option isn't available for actions located in loops, conditionals, or the **On block error** action.
 
-![Screenshot of the Run from here option.](\media\run-stop-pause\run-from-here.png)
+![Screenshot of the Run from here option.](media/run-stop-pause/run-from-here.png)
 
 ## Record desktop flows
 
@@ -93,7 +93,7 @@ To record a flow, select **Recorder** in the toolbar of the flow designer. When 
 
 Select the bin icon to remove individual actions, or select **Reset** to delete all the actions recorded so far. When the recording is completed, select **Finish** to convert the recorded steps to desktop flow actions.
 
-![Screenshot of the recorder dialog.](\media\making-use-recorders\recorder.png)
+![Screenshot of the recorder dialog.](media/making-use-recorders/recorder.png)
 
 > [!NOTE]
 > You can find more information regarding the built-in recorder in [Record flows in Power Automate Desktop](recording-flow.md).

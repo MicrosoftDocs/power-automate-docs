@@ -31,13 +31,13 @@ Before deploying any email action, you have to configure the server that will ha
 
 To retrieve emails that meet specific criteria from your mailbox, use the **Retrieve email messages** action. In the example below, the filter has been configured to retrieve only unread messages from the inbox. The filter further specifies that the email should be from b.friday, the subject contains the word "Report" and the body contains "Tuesday". Attachments from any retrieved emails which match these criteria will be saved locally.
 
-![Screenshot of the Retrieve email messages action.](\media\email\retrieve-email-messages-example.png)
+![Screenshot of the Retrieve email messages action.](media/email/retrieve-email-messages-example.png)
 
 Manage your email messages with the **Process email messages** action. Using the variable created by the Retrieve e-mail messages action, select whether you would like to move, delete, or mark email messages as read/unread.
 
 The **Send email** action in the figure below has been configured to send an e-mail from N. Varga to B. Friday, with invoicing in the BCC field. The subject and body contain the **%ReportID%** variable, and the attachment is a file which has been processed by the flow. 
 
-![Screenshot of the Send email action.](\media\email\send-email-messages-example.png)
+![Screenshot of the Send email action.](media/email/send-email-messages-example.png)
 
 
 
