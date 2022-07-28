@@ -19,21 +19,21 @@ search.audienceType:
 
 In the flow designer, the actions pane on the left side of the window shows all the action groups. 
 
-![Screenshot of the actions pane.](\media\actions-pane\actions-pane.png)
+![Screenshot of the actions pane.](media/actions-pane/actions-pane.png)
 
 To quickly find a specific action, enter the name of the action in the search bar. Searching also returns partial matches.
 
-![Screenshot of the search field in the actions pane.](\media\actions-pane\actions-search.png)
+![Screenshot of the search field in the actions pane.](media/actions-pane/actions-search.png)
 
 ## Adding an action to the workspace
 
 To begin developing a desktop flow, select an action and double-click on it, or drag it into the workspace. 
 
-![Screenshot of an action while dragging it into the workspace.](\media\adding-actions\add-action.png)
+![Screenshot of an action while dragging it into the workspace.](media/adding-actions/add-action.png)
 
 A dialog box opens with the parameters of the action. Actions have certain parameters such as variable names and default values. Other actions will require user input to be initialized. After selecting **Save**, the action appears in the workspace.
 
-![Screenshot of the properties of an action.](\media\adding-actions\action-properties.png)
+![Screenshot of the properties of an action.](media/adding-actions/action-properties.png)
 
 ## Configuring an action
 
@@ -92,7 +92,7 @@ If different errors require different error handling behaviors, select the **Adv
 
 To disable or enable an action, right-click on it and select **Disable action** or **Enable action**, respectively. 
 
-![Screenshot of the disable action option.](media\enabling-disabling-actions\enable-disable-action.png)
+![Screenshot of the disable action option.](media/enabling-disabling-actions/enable-disable-action.png)
 
 Disabling an action allows you to remove it from the flow without erasing it. This feature is commonly applied to test different versions of a desktop flow and decide which one is the most efficient. 
 
@@ -100,6 +100,6 @@ When an action is disabled, all variables defined in it are hidden from the **Va
 
 In the example below, two actions threw an error because they contain variables defined in a disabled action.
 
-![Screenshot of an example in which disabling an action hides some varibales.](media\enabling-disabling-actions\enable-disable-action-variables.png)
+![Screenshot of an example in which disabling an action hides some varibales.](media/enabling-disabling-actions/enable-disable-action-variables.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

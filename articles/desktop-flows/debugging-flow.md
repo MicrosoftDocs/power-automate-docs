@@ -32,13 +32,13 @@ Debug a desktop flow using the following tools:
 
 Select **Run** or press **F5** to run the flow. When the flow runs, **Run** becomes **Pause**. Select **Pause** or press **Ctrl + Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while the flow is paused to resume it. The **Run next action** button and the **F10** shortcut run the flow action by action and pause it after each action completes. The **Stop** button and the **Shift + F5** shortcut stop the flow completely.
 
-![Screenshot of the toolbar.](\media\run-stop-pause\toolbar.png)
+![Screenshot of the toolbar.](media/run-stop-pause/toolbar.png)
 
 ## Adding breakpoints
 
 Click to the left of the running order number in the workspace to place a breakpoint in the flow, which appears as a red dot. Add a breakpoint to specify at which action to pause the flow. Resume running the flow by selecting **Run** or **Run next action**. Select the breakpoint to remove it.
 
-![Screenshot of an added breakpoint.](\media\adding-breakpoints\add-breakpoint.png)
+![Screenshot of an added breakpoint.](media/adding-breakpoints/add-breakpoint.png)
 
 ## Run a desktop flow by action
 
@@ -54,13 +54,13 @@ The status bar also displays the number of errors, if any are present. Select th
 
 If you search inside the flow, the status bar shows an additional field containing the number of the results. Select this field to pop up the **Find in code** pane.
 
-![Screenshot of the status bar.](\media\status-bar\status-bar.png)
+![Screenshot of the status bar.](media/status-bar/status-bar.png)
 
 ## Run from here
 
 To run the flow starting from a specific action, right-click the action and select **Run from here**. This ignores all previous actions and runs the flow from the selected action onwards.
 
-![Screenshot of the Run from here option.](\media\run-stop-pause\run-from-here.png)
+![Screenshot of the Run from here option.](media/run-stop-pause/run-from-here.png)
 
 ## Power Automate reserved keywords
 

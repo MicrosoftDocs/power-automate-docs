@@ -37,25 +37,25 @@ To display a message to the user while a flow runs, use the **Display message** 
 
 The message box has been set to display the question icon and always be on top of other windows. The user's selection is stored in the **ButtonPressed** variable. 
 
-![Screenshot of the Display message action.](\media\display\display-message-example.png)
+![Screenshot of the Display message action.](media/display/display-message-example.png)
 
 The displayed message box looks like the following figure:
 
-![Screenshot of a message box.](\media\display\message-box-example.png)
+![Screenshot of a message box.](media/display/message-box-example.png)
 
 To display a dialog that requests input data, use the **Display input dialog** action. This action requires a title for the dialog window and a message as a prompt for the user. Optionally, you can set a default value and an input type (single line, multiline, or password).
 
 Use the **Display select file dialog** to prompt users to browse for a file. In the following example, the action prompts the user to select an image file. The initial folder has been set to a variable, and the file filter allows specific file extensions.
 
-![Screenshot of the Display select file dialog action.](\media\display\display-select-file-example.png)
+![Screenshot of the Display select file dialog action.](media/display/display-select-file-example.png)
 
 The select file dialog looks like the following figure. Note that the file filter in the bottom right cornoner of the dialog is specified in the action properties. 
 
-![Screenshot of a Select file dialog example.](\media\display\select-file-example.png)
+![Screenshot of a Select file dialog example.](media/display/select-file-example.png)
 
 To create a custom form that accepts multiple elements, use the **Display custom form** action. Using this action, you can create custom forms that contain various input types and buttons. You can find more information regarding custom forms in [Create custom forms](../custom-forms.md).
 
-![Screenshot of the custom form designer.](\media\display\custom-form-designer.png)
+![Screenshot of the custom form designer.](media/display/custom-form-designer.png)
 
 
 ## Message boxes actions

@@ -44,7 +44,7 @@ Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb; Pe
 
 To manually build a connection string, select **Build connections string** to open the **Data Link Properties** window. The data link tool helps the user compose the required connection string step by step.
 
-![Screenshot of the Data Link Properties dialog.](\media\database\data-link-properties.png)
+![Screenshot of the Data Link Properties dialog.](media/database/data-link-properties.png)
 
 > [!NOTE]
 > Power Automate for desktop is a 64-bit application, only 64-bit installed drivers will be available for selection in the **Open SQL connection** action.
