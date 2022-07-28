@@ -102,6 +102,13 @@ You can choose to send an approval to multiple groups, or even a combination of 
 * The **First to respond** approval sent to group 1 and user 1: At least user 1 or one member from group 1 needs to approve.
 * The **Everyone must respond** approval sent to user 1 and group 1: Both user 1 and at least one member from group 1 needs to approve.
 
+## Known issues and limitations
+
+1. Only mail enabled Microsoft 365 groups and Security groups are supported
+2. Teams notification are not supported with group approvals. Teams notification gets sent only for approvals assigned to individual users
+3. The group must have the setting for allowing external senders to email the group turned on in order to receive email notifications
+4. When creating an approval for a newly created Microsoft 365 group that can be a small time period where outlook actionable emails can throw an error
+
 ## Learn more
 
 In most approval flows, you'd want to notify the person who requests the approval of the decision. Follow the [modern approvals article](modern-approvals.md#add-an-email-action-for-approvals) to learn how to add a **condition** to an approval flow to take specific actions based on the **outcome** of the request.
