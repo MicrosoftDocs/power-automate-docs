@@ -339,7 +339,7 @@ Each business process flow instance row returned for a table row as a result of 
   
  Once you have the active stage and the active path information for a business process flow instance, you can use the information to move to a previous or next stage in the active path. Forward navigation of stages must be done in sequence, that is, you should only move forward to the next stage in the active path.   
   
- For the complete sample that code demonstrates the usage of these two methods and stage navigation using the [Organization service](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata), see [Sample: Work with business process flows](sample-work-business-process-flows.md). 
+ For the complete sample that code demonstrates the usage of these two methods and stage navigation using the [Organization service](/dynamics365/customerengagement/on-premises/developer/org-service/use-organization-service-read-write-data-metadata), see [Sample: Work with business process flows](sample-work-business-process-flows.md). 
 
 <a name="ApplyBPF"></a>   
 ## Apply business process flow while creating a table row

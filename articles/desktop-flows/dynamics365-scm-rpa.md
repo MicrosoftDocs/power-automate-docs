@@ -102,7 +102,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     ![Screenshot of the Power Automate for desktop machine settings.](./media/dynamics365-RPA/image001.png)
 
-1. Log in https://powerautomate.microsoft.com/manage/flows to create a test cloud flow with manual trigger 
+1. Log in `https://powerautomate.microsoft.com/manage/flows` to create a test cloud flow with manual trigger 
 
     ![Screenshot of the option to create a new cloud flow.](./media/dynamics365-RPA/image003.png)
     ![Screenshot of the Build an instant cloud flow dialog.](./media/dynamics365-RPA/image005.png)
@@ -151,7 +151,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     |Environment variable name|Description|
     |----|----|
-    |QOrder Parameter - SCM Portal URL|URL for the SCM environment including parameters for company and form for the InventQualityOrderTable *Example: https://hxoshmyfoodus9o1mf.sandbox.operations.int.dynamics.com/?cmp=USMF&mi=InventQualityOrderTable*|
+    |QOrder Parameter - SCM Portal URL|URL for the SCM environment including parameters for company and form for the InventQualityOrderTable *Example: `https://hxoshmyfoodus9o1mf.sandbox.operations.int.dynamics.com/?cmp=USMF&mi=InventQualityOrderTable`*|
     |SCM SignIn User|user account to sign into Dynamics 365 SCM *example: helloworld@contoso.com*|
     |QOrder Parameter – Site|Name of the site to use for filling in the quality order creation form.|
     |QOrder Parameter – Test Group|Configure the Testgroup for the quality order creation|
