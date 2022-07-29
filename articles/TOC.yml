@@ -595,6 +595,8 @@
       href: ./desktop-flows/actions-reference/ibmcognitive.md
     - name: Microsoft cognitive
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
+    - name: Sharepoint (preview)
+      href: ./desktop-flows/actions-reference/sharepoint.md
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
   - name: Use RPA with Dynamics 365
