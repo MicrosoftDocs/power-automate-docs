@@ -136,4 +136,5 @@ Then add the mention token generated from that action in any of the **Post a mes
 
 - By default Teams only lists the 50 most recent **named** group chats in the drop-down list. If you want to send a message to a new group chat use the option below.
 - The **Get @mention token for a user** can only be used for mentioning users, mentioning channels/teams is currently not supported.
+- Sending a message in private channels are not currently supported
 
