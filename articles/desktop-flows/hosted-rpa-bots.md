@@ -96,7 +96,7 @@ You can personalize your **Hosted RPA bots (preview)** by providing your own Win
 
 ### Create an Azure compute gallery in Azure and add an image
 >[!NOTE]
-> - To know more about shared image gallery, you can follow documentation here: [link](https://docs.microsoft.com/en-us/azure/virtual-machines/share-gallery-direct).
+> - To know more about shared image gallery, you can follow documentation here: [link](/azure/virtual-machines/share-gallery-direct).
 
 >[!IMPORTANT]
 > - During the preview, the gallery must be created as a private gallery. You can't use an existing gallery; the property can't currently be updated.
@@ -122,7 +122,7 @@ You can personalize your **Hosted RPA bots (preview)** by providing your own Win
 > - Asia: East Asia
 > - Norway: Norway East
 
-Once you have created a gallery, you can create an image definition, you can follow [documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/image-version?tabs=portal).
+Once you have created a gallery, you can create an image definition, you can follow [documentation](/azure/virtual-machines/image-version).
 
 ### Share the gallery with Microsoft
 To be able to use the image in Power Automate, you need to share the image with Microsoft, in the Azure Portal.
