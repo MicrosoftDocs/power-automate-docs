@@ -24,7 +24,7 @@ SharePoint is a type of actions that invokes the [SharePoint connector](https://
 
 - Sharing desktop flows with SharePoint cloud actions isn't supported. Co-owners won't be able to run such desktop flows unless they overwrite the connection references with their own. **Users** with read access are unable to run such flows. 
 
-- DLPs that include SharePoint cloud actions aren't enforced within desktop flows. During preview, machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors). 
+- DLPs that include SharePoint cloud actions aren't enforced within desktop flows. During preview, machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors). 
 
 ## Why should I use SharePoint actions inside desktop flows instead of cloud flows? 
 
