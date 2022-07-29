@@ -57,7 +57,7 @@ The following example searches all the words in **Items detected in Stock** star
 
 ![Screenshot of the Parse text action.](media\text\parse-text-example.png)
 
-Besides searching in texts, Power Automate enables you to crop text values from other texts using the **Crop text** action. The text to crop is defined by flags that can be single characters of texts. You can crop values before, after, or between the specified text flag(s).
+Besides searching in texts, Power Automate enables you to crop text values from other texts using the **Crop text** action. The text to crop is defined by flags that are the first occurring given character or string markers. You can crop values before, after, or between the specified text flag(s).
 
 The cropped text is stored in the **CroppedText** variable, while you can use the **IsFlagFound** variable to check if the action found the set flags.
 
