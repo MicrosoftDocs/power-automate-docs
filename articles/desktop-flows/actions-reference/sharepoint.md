@@ -28,9 +28,7 @@ SharePoint is a type of actions that invokes the [SharePoint connector](https://
 
 ## Why should I use SharePoint actions inside desktop flows instead of cloud flows? 
 
-Users can still combine SharePoint actions with the **Run a flow built with Power Automate for desktop** action.
-
-However, SharePoint actions inside desktop flows improve performance and ease of use for users that need to loop between cloud and desktop actions. 
+Users can still combine SharePoint actions with the **Run a flow built with Power Automate for desktop** action. However, SharePoint actions inside desktop flows improve performance and ease of use for users that need to loop between cloud and desktop actions. 
 
 ## List of SharePoint actions
 
@@ -74,8 +72,8 @@ s
 
 1. Select an existing connection reference and fill in the required parameters. Here's an example about how to fill the fields: 
 
-    >![IMPORTANT]
-    >Don't forget to add the appropriate file extension after the file name.
+    > [!IMPORTANT]
+    > Don't forget to add the appropriate file extension after the file name.
 
     - **Site address**: <https://contoso.sharepoint.com/sites/sitename>
     - **File path**: /Shared Documents/MyFolderName
@@ -86,8 +84,8 @@ s
 
 Until dynamic suggestions of input fields become available, here's guidance on what data to fill in for each action. 
 
->![NOTE]
->Another way to see which properties are expected as input and output is to create a cloud flow with the same action and observe its dynamic data properties. To find more information regarding the SharePoint cloud actions, refer to [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/).
+> [!NOTE]
+> Another way to see which properties are expected as input and output is to create a cloud flow with the same action and observe its dynamic data properties. To find more information regarding the SharePoint cloud actions, refer to [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/).
 
 ### Get file content using path 
 
