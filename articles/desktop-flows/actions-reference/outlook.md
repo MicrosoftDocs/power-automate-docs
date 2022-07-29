@@ -120,7 +120,7 @@ Create and send a new email message through Outlook
 ##### <a name="sendemailthroughoutlook_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist. Power Automate doesn't throw this error for the email addressed populated in the **Send from** input parameter.|
+|Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist. Power Automate doesn't throw this error for the email addresses populated in the **Send from** input parameter|
 |Failed to send email|Indicates a problem sending the email|
 |Attachment not found|Indicates that the specified attachment(s) don't exist|
 
