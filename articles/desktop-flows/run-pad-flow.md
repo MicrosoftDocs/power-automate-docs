@@ -241,7 +241,7 @@ To generate a URL that triggers a desktop flow, use one of the following formats
 "ms-powerautomate:/console/flow/run?environmentId=[environmentId]&workflowId=[workflowId]"
 ``` 
 > [!NOTE]
-You can find an automatically created run URL consisting of the environment and flow IDs on the details page of the desktop flow. You can find more information about flow details in [Desktop flow details](console#desktop-flow-details).
+> You can find an automatically created run URL consisting of the environment and flow IDs on the details page of the desktop flow. You can find more information about flow details in [Desktop flow details](console.md#desktop-flow-details).
 
 ```
 "ms-powerautomate:/console/flow/run?environmentId=[environmentId]&workflowName=[workflowIName]"
