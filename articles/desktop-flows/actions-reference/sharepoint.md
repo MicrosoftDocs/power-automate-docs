@@ -16,11 +16,11 @@ search.audienceType:
 
 # SharePoint (preview)
 
-SharePoint is a type of actions that invokes the [SharePoint connector](https://docs.microsoft.com/connectors/sharepointonline/) from within desktop flows instead of running locally on the desktop. This connector is the same that is used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data. 
+SharePoint is a type of actions that invokes the [SharePoint connector](https://docs.microsoft.com/connectors/sharepointonline/) from within desktop flows instead of running locally on the desktop. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data. 
 
 ## Prerequisites and limitations
 
-- During preview, you need an Attended with RPA license.
+- During preview, you need an Attended RPA license.
 
 - Sharing desktop flows with SharePoint cloud actions isn't supported. Co-owners won't be able to run such desktop flows unless they overwrite the connection references with their own. **Users** with read access are unable to run such flows. 
 
@@ -32,21 +32,21 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 ## List of SharePoint actions
 
-- Get file content by path 
-- Get folder by path 
-- Get file metadata by path 
-- Create file 
-- Update file 
-- Delete file 
-- List folder 
+- [Get file content by path](#get-file-content-using-path)
+- [Get folder by path](#get-folder-metadata-using-path)
+- [Get file metadata by path](#get-file-metadata-using-path)
+- [Create file](#create-file)
+- [Update file](#update-file)
+- [Delete file](#delete-file)
+- [List folder](#list-folder)
 
-## Getting started with SharePoint actions in Desktop flow 
+## Getting started with SharePoint actions in desktop flows
 
 ### How to download the content of a SharePoint folder 
 
 1. Create a SharePoint connection reference in any solution.
 
-1. Download the [latest Power Automate for desktop version](../install.md).
+1. Download the [latest version of Power Automate for desktop ](../install.md).
 
 1. Create a new desktop flow.
 
@@ -62,8 +62,8 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 1. Create a SharePoint connection reference in any solution.
 
-1. Download the [latest Power Automate for desktop version](../install.md).
-s
+1. Download the [latest version of Power Automate for desktop ](../install.md).
+
 1. Create a new desktop flow.
 
 1. Deploy the **Convert file to binary data** action and select the desired file on your local drive. The action stores the converted file in the **BinaryData** variable.
@@ -266,12 +266,12 @@ Returns files contained in a SharePoint folder.
 
 - Dynamic suggestion of input fields 
 - Dynamic content for output variables: cloud actions’ output variables can be expanded to show its underlying properties
-- Create new connection reference from within Power Automate for desktop.
+- Create new connection reference from within Power Automate for desktop
 - Share to **users** brings their own connection references upon each run
 - Co-owners can use the same connection references
 - ALM dependencies management (dependency checker upon import, add required objects, show dependencies)
 - Connection references are visible in desktop flows details pages
-- Exponential / manual retry policies in case the connector responds an error
+- Exponential/manual retry policies in case the connector responds an error
 - DLPs that include SharePoint cloud actions are enforced in desktop flows
 - New SharePoint actions
 - New actions from other connectors
