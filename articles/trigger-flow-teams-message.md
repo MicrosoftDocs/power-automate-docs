@@ -90,7 +90,8 @@ Here's an example of a cloud flow that creates a work item in Azure DevOps and t
 
 ## Known issues and limitations
 
-You must create these flows within the default environment to ensure they get listed in Teams.
+* You must create these flows within the default environment to ensure they get listed in Teams.
+* Only the flow author will be able to trigger the flow. It will not be available to other members of the channel/chat. 
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
