@@ -1,6 +1,6 @@
 ---
-title: Premium desktop flow features | Microsoft Docs
-description: Premium desktop flow features
+title: Premium RPA features | Microsoft Docs
+description: Premium RPA features
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Premium desktop flow features
+# Premium RPA features
 
 This article lists the premium features/benefits of desktop flows that are available to [organization premium accounts](getting-started-org.md). 
 
@@ -27,7 +27,7 @@ This article lists the premium features/benefits of desktop flows that are avail
 |Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](https://docs.microsoft.com/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](https://docs.microsoft.com/connectors/custom-connectors)|
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder**.|[Learn about AI Builder](https://docs.microsoft.com/ai-builder)|
 |Access to Process advisor|Visualize and analyze your business processes with Process advisor.|[Learn about Process advisor](https://docs.microsoft.com/power-automate/process-advisor-overview)|
-|Access to cloud connectors from desktop flows|Use cloud connectors directly from Power Automate for desktop.|SharePoint cloud connector in Power Automate for desktop|
+|Access to cloud connectors from desktop flows|Use cloud connectors directly from Power Automate for desktop.|[Learn how to invoke SharePoint cloud connector from desktop flows](actions-reference/sharepoint.md)|
 |Sharing and collaboration|Share flows between team members and select access levels such as co-owner or user. View and manage the flows shared with you.|[Learn how to share desktop flows](manage.md#share-desktop-flows)|
 |Access to multiple environments|Organize, store and manage flows across multiple environments, and benefit from environment isolation and role-based access.|[Learn about environments](https://docs.microsoft.com/power-platform/admin/environments-overview)|
 |Centralized flow management and reporting|Manage desktop flows and view their detailed execution logs centrally from the Power Automate portal.|[Learn how to manage desktop flows](manage.md)|
