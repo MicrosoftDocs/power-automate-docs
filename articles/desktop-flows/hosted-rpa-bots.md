@@ -92,10 +92,54 @@ Hosted RPA bots can be created from the Power Automate portal:
 
 ## Use custom VM images (preview) for your hosted RPA bots (preview)
 
-> [!NOTE]
-> If you would like to use this feature, which is still in private preview, please contact us through this form: <https://forms.office.com/r/JhGRsZbTWX>.
+You can personalize your **Hosted RPA bots (preview)** by providing your own Windows image directly from your **Azure Compute Gallery**, it will allow you to have all your application installed on the Hosted RPA bots that we provision for you. 
 
-You can personalize your hosted RPA bots by providing your own Windows image directly from your [Azure Compute Gallery](/azure/virtual-machines/shared-image-galleries), it will allow you to have all your application installed on the hosted RPA bots that we provision for you.
+### Create an Azure compute gallery in Azure and add an image
+>[!NOTE]
+> - To know more about shared image gallery, you can follow documentation here: [link](https://docs.microsoft.com/en-us/azure/virtual-machines/share-gallery-direct).
+
+>[!IMPORTANT]
+> - During the preview, the gallery must be created as a private gallery. You can't use an existing gallery; the property can't currently be updated.
+> - You need to first register to the public preview program https://aka.ms/directsharedgallery-preview
+
+1. Go to the [Azure portal](https://portal.azure.com).
+2. Create a new Azure Compute Gallery, in the 'Sharing' tab, select 'RBAC + share directly (Preview)'
+3. Click on 'Review + create', once you have validated all the settings, you can click on 'Create.'
+
+>[!NOTE]
+> Before creating your image, please note that the image need to be created in the same location as we deploy your Hosted RPA bots. You can find the following mapping with your environment Geo:
+> - US: West US
+> - Europe: North Europe
+> - Canada: Canada Central
+> - Australia: Australia East
+> - Brazil: Brazil South
+> - France: France Central
+> - India: Central India
+> - Germany: Germany West Central
+> - Switzerland: Switzerland North
+> - Japan: Japan East
+> - UK: UK West
+> - Asia: East Asia
+> - Norway: Norway East
+
+Once you have created a gallery, you can create an image definition, you can follow [documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/image-version?tabs=portal).
+
+### Share the gallery with Microsoft
+To be able to use the image in Power Automate, you need to share the image with Microsoft, in the Azure Portal.
+
+1. In your gallery, go to the 'Sharing' settings.
+2. Click on the 'Add' button and select tenant outside of my organization in the type list. 
+3. Enter the following tenant id: `975f013f-7f24-47e8-a7d3-abc4752bf346`. It is the Microsoft tenant on which your Hosted RPA bots are being deployed.
+
+### Share the gallery with Power Automate makers
+The last step before being able to reference your image from Power Automate is to share the image with the Power Automate makers.
+
+1. In the Azure Portal, go to your gallery.
+2. Go to Access Control (IAM) settings.
+3. Click on the Add > Add role assignment button.
+4. You need to assign at least Reader permissions access to the Power Automate makers you want to share the gallery with. Then click 'Next'
+5. Click on 'Select members' button and search for the Power Automate makers you want to share with.
+6. Once you have selected all the members to add, you can review the permissions and users and assign them.
 
 ### Add a new custom VM image (preview)
 
