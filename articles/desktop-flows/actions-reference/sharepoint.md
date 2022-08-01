@@ -55,38 +55,48 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 1. If the identifier of the target folder is unknown, use the **Get folder metadata using path** SharePoint action to retrieve it. This action requires the folder's path and produces a custom object containing the folder's metadata. You can access the identifier using the **Id** property.
 
-![Screenshot of the Get folder metadata using path action.](media\sharepoint\sharepoint-get-folder-metadata-using-path-action.png)
+    ![Screenshot of the Get folder metadata using path action.](media\sharepoint\sharepoint-get-folder-metadata-using-path-action.png)
 
 1. Deploy the **List folder** SharePoint action and populate the appropriate SharePoint URL and the previously retrieved identifier. The produced list contains custom objects representing items in the target folder.
 
-![Screenshot of the List folder action.](media\sharepoint\sharepoint-list-folder-action.png)
+    ![Screenshot of the List folder action.](media\sharepoint\sharepoint-list-folder-action.png)
 
 1. After retrieving the list, use a **For each** loop to iterate through the objects inside it.
 
-![Screenshot of the For each loop that iterates through the retrieved custom objects.](media\sharepoint\for-each-action.png)
+    ![Screenshot of the For each loop that iterates through the retrieved custom objects.](media\sharepoint\for-each-action.png)
 
 1. If the items in the target folder are only files, use the **Get file content using path** action and the **Path** property inside the block to retrieve the current file's contents.
 
-![Screenshot of the Get file content using path action.](media\sharepoint\sharepoint-get-file-content-using-path-action.png)
+    ![Screenshot of the Get file content using path action.](media\sharepoint\sharepoint-get-file-content-using-path-action.png)
 
 1. Then, deploy the **Convert binary data to file** action to store the retrieved data in a local file. You can use the **Name** property to name the new file with the same name as the original SharePoint file.
 
-![Screenshot of the Convert binary data to file action.](media\sharepoint\convert-binary-data-file-action.png)
+    ![Screenshot of the Convert binary data to file action.](media\sharepoint\convert-binary-data-file-action.png)
 
 The previous steps cover the case where the target folder contains only files. However, if the folder contains subfolders with files inside them, modify your desktop flow accordingly:   
 
 1. Add an **If** condition inside the previously deployed loop to check whether the currently selected item is a folder. To perform this check, use the **IsFolder** property of the current item. 
 
+    ![Screenshot of the if action that checks whether the current item is a folder.](media\sharepoint\if-action-folder.png)
+
 1. Inside the if-block, use the **Get folder metadata using path** action to get the identifier of the currently selected folder. The folder path is the same as the one you used at the beginning of the flow, plus the folder's name. You can access the folder using the **Name** property of the current item.
+
+    ![Screenshot of the second Get folder metadata using path action.](media\sharepoint\sharepoint-get-folder-metadata-using-path-actio-name-property.png)
 
 1.  As you did before, deploy the **List folder** SharePoint action and populate the appropriate SharePoint URL and the previously retrieved identifier.
 
-1. Deploy a **For each** loop to iterate through the files inside the selected subfolder, and use the **Get file content using path** and the **Convert binary data to file** actions to retrieve and save locally the contents of each file.
+    ![Screenshot of the second List folder action.](media\sharepoint\sharepoint-list-folder-action-second.png)
+
+1. Deploy a **For each** loop to iterate through the files inside the selected subfolder, and move and modify the previously deployed **Get file content using path** and **Convert binary data to file** actions to retrieve and save locally the contents of each file.
+
+    ![Screenshot of the final flow.](media\sharepoint\final-flow.png)
 
 If you want to download files of specific subfolders, modify the previously deployed conditional to check the desired condition. For example, the following condition checks whether the current item's name is any other than 2022.
 
 > [!NOTE]
 > Although you could use a new nested **If** action, combining the checks in only one conditional makes the desktop flow less complicated and easier to read.
+
+![Screenshot of a conditional that checks the current item's name.](media\sharepoint\sharepoint-list-folder-action-second.png)
 
 If you want to download only files of a specific type, add a conditional before retrieving the file contents to check whether the file name contains a particular extension.
 
