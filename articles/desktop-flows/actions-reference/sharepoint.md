@@ -44,7 +44,7 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 ### How to download the content of a SharePoint folder 
 
-1. Create a SharePoint connection reference in any solution.
+1. Create a SharePoint connection reference in any solution. You can find information regarding how to create connection references in [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
 
 1. Download the [latest version of Power Automate for desktop ](../install.md).
 
@@ -60,7 +60,7 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 ### How to upload a local file to SharePoint 
 
-1. Create a SharePoint connection reference in any solution.
+1. Create a SharePoint connection reference in any solution. You can find information regarding how to create connection references in [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
 
 1. Download the [latest version of Power Automate for desktop ](../install.md).
 
