@@ -55,13 +55,13 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 1. If the identifier of the target folder is unknown, use the **Get folder metadata using path** SharePoint action to retrieve it. This action requires the folder's path and produces a custom object containing the folder's metadata. You can access the identifier using the **Id** property.
 
-1. Deploy the **List folder** SharePoint action and populate the appropriate SharePoint URL and the previously retrieved identifier. The produced list contains custom objects representing each item in the target folder.
+1. Deploy the **List folder** SharePoint action and populate the appropriate SharePoint URL and the previously retrieved identifier. The produced list contains custom objects representing items in the target folder.
 
 1. After retrieving the list, use a **For each** loop to iterate through the objects inside it.
 
-1. If the items in the target folder are only files, use the **Get file content using path** action and the **Path** property to retrieve the selected file's contents.
+1. If the items in the target folder are only files, use the **Get file content using path** action and the **Path** property inside the block to retrieve the current file's contents.
 
-1. Then, deploy the **Convert binary data to file** action to store the retrieved data in a local file. You can use the **Name** property to name the new files with the same name as the original SharePoint file.
+1. Then, deploy the **Convert binary data to file** action to store the retrieved data in a local file. You can use the **Name** property to name the new file with the same name as the original SharePoint file.
 
 The previous steps cover the case where the target folder contains only files. However, if the folder contains subfolders with files inside them, modify your desktop flow accordingly:   
 
@@ -76,9 +76,9 @@ The previous steps cover the case where the target folder contains only files. H
 If you want to download files of specific subfolders, modify the previously deployed conditional to check the desired condition. For example, the following condition checks whether the current item's name is any other than 2022.
 
 > [!NOTE]
-> Although you could use a new nested **If** action, combining the checks in only one conditional makes the desktop flow easier to read.  
+> Although you could use a new nested **If** action, combining the checks in only one conditional makes the desktop flow less complicated and easier to read.
 
-If you want to download only files of a specific type, add a conditional before retrieving the file contents that check whether the file name contains a particular extension.
+If you want to download only files of a specific type, add a conditional before retrieving the file contents to check whether the file name contains a particular extension.
 
 ### How to upload a local file to SharePoint 
 
