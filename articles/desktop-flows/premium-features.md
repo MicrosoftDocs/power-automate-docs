@@ -53,7 +53,7 @@ The Power Automate per user with attended RPA plan (paid or trial) gives full ac
 
 ### Pay-as-you-go plan 
 
-Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription, which allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to all the premium features in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](../../power-platform/admin/pay-as-you-go-overview.md).
+Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription, which allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to all the premium features in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview.md).
 
 ## More information about Power Automate licensing 
 
