@@ -96,9 +96,11 @@ If you want to download files of specific subfolders, modify the previously depl
 > [!NOTE]
 > Although you could use a new nested **If** action, combining the checks in only one conditional makes the desktop flow less complicated and easier to read.
 
-![Screenshot of a conditional that checks the current item's name.](media\sharepoint\sharepoint-list-folder-action-second.png)
+![Screenshot of a conditional that checks the current item's name.](media\sharepoint\if-action-item-name.png)
 
 If you want to download only files of a specific type, add a conditional before retrieving the file contents to check whether the file name contains a particular extension.
+
+![Screenshot of a conditional that checks the current item's file type.](media\sharepoint\if-action-item-type.png)
 
 ### How to upload a local file to SharePoint 
 
