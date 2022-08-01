@@ -44,25 +44,47 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 ### How to download the content of a SharePoint folder 
 
+> [!IMPORTANT]
+> Before replicating the following steps, ensure that you are familiar with [lists](variable-data-type.md#custom-list), [custom objects](../variable-data-type.md#custom-object), [loops](../use-loops.md), [conditionals](../use-conditionals.md), and the [percentage notation](../variable-manipulation.md).
+
 1. Create a SharePoint connection reference in any solution. You can find information regarding how to create connection references in [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
 
-1. Download the [latest version of Power Automate for desktop ](../install.md).
+1. Ensure tha you've installed the [latest version of Power Automate for desktop ](../install.md).
 
 1. Create a new desktop flow.
 
-1. Find the **SharePoint (preview)** group of actions in the flow designer.
+1. If the identifier of the target folder is unknown, use the **Get folder metadata using path** SharePoint action to retrieve it. This action requires the folder's path and produces a custom object containing the folder's metadata. You can access the identifier using the **Id** property.
 
-1. Drag and drop the **List folder** action in the workspace. 
+1. Deploy the **List folder** SharePoint action and populate the appropriate SharePoint URL and the previously retrieved identifier. The produced list contains custom objects representing each item in the target folder.
 
-1. [STEPS WILL BE ADDED HERE WHEN I HAVE A BUILD]
+1. After retrieving the list, use a **For each** loop to iterate through the objects inside it.
 
-1. Now, you can further process the local files using other actions. For example, you can run Excel macros to those files, save them, and upload them back to SharePoint. 
+1. If the items in the target folder are only files, use the **Get file content using path** action and the **Path** property to retrieve the selected file's contents.
+
+1. Then, deploy the **Convert binary data to file** action to store the retrieved data in a local file. You can use the **Name** property to name the new files with the same name as the original SharePoint file.
+
+The previous steps cover the case where the target folder contains only files. However, if the folder contains subfolders with files inside them, modify your desktop flow accordingly:   
+
+1. Add an **If** condition inside the previously deployed loop to check whether the currently selected item is a folder. To perform this check, use the **IsFolder** property of the current item. 
+
+1. Inside the if-block, use the **Get folder metadata using path** action to get the identifier of the currently selected folder. The folder path is the same as the one you used at the beginning of the flow, plus the folder's name. You can access the folder using the **Name** property of the current item.
+
+1.  As you did before, deploy the **List folder** SharePoint action and populate the appropriate SharePoint URL and the previously retrieved identifier.
+
+1. Deploy a **For each** loop to iterate through the files inside the selected subfolder, and use the **Get file content using path** and the **Convert binary data to file** actions to retrieve and save locally the contents of each file.
+
+If you want to download files of specific subfolders, modify the previously deployed conditional to check the desired condition. For example, the following condition checks whether the current item's name is any other than 2022.
+
+> [!NOTE]
+> Although you could use a new nested **If** action, combining the checks in only one conditional makes the desktop flow easier to read.  
+
+If you want to download only files of a specific type, add a conditional before retrieving the file contents that check whether the file name contains a particular extension.
 
 ### How to upload a local file to SharePoint 
 
 1. Create a SharePoint connection reference in any solution. You can find information regarding how to create connection references in [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
 
-1. Download the [latest version of Power Automate for desktop ](../install.md).
+1. Ensure tha you've installed the [latest version of Power Automate for desktop ](../install.md).
 
 1. Create a new desktop flow.
 
