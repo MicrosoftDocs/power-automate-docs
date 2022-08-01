@@ -74,13 +74,8 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 1. Select an existing connection reference and fill in the required parameters. Here's an example about how to fill the fields: 
 
-    > [!IMPORTANT]
-    > Don't forget to add the appropriate file extension after the file name.
-
-    - **Site address**: https://contoso.sharepoint.com/sites/sitename
-    - **File path**: /Shared Documents/Reports
-    - **File name**: report-june.xlsx 
-    - **File content**: %BinaryData%
+      > [!IMPORTANT]
+      > Don't forget to add the appropriate file extension after the file name.
 
       ![Screenshot of the Create file Sharepoint action.](media\sharepoint\sharepoint-create-file-action.png)
 
