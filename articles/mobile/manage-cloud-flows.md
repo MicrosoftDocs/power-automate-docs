@@ -26,4 +26,4 @@ search.audienceType:
 # Manage cloud flows on the go
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

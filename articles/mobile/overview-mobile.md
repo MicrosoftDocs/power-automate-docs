@@ -26,4 +26,4 @@ search.audienceType:
 # Manage cloud flows in the Power Automate mobile apps
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

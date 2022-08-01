@@ -26,4 +26,4 @@ search.audienceType:
 # Run instant flows
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

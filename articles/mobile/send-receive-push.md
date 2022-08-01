@@ -26,4 +26,4 @@ search.audienceType:
 # Send and receive push notifications
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

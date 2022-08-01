@@ -60,15 +60,15 @@
   - name: Power Automate mobile
     items:
     - name: Overview
-    - href: ./mobile/overview-mobile.md
+      href: ./mobile/overview-mobile.md
     - name: Run instant flows
-    - href: ./mobile/run-instant-flows.md
+      href: ./mobile/run-instant-flows.md
     - name: Manage approvals
-    - href: ./mobile/manage-approvals.md
+      href: ./mobile/manage-approvals.md
     - name: Send and receive push notifications
-    - href: ./mobile/send-receive-push.md
+      href: ./mobile/send-receive-push.md
     - name: Manage cloud flows
-    - href: ./mobile/manage-cloud-flows.md
+      href: ./mobile/manage-cloud-flows.md
   - name: How to
     items:
     - name: Add an action
