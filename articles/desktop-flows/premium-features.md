@@ -24,17 +24,17 @@ This article lists the premium RPA features/benefits that are available to [orga
 |----------------|------------|----------------------|
 |Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger a desktop flow from a cloud flow](link-pad-flow-portal.md)|
 |Flow triggering via URL|Trigger local attended desktop flows through run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-pad-flow.md#run-desktop-flows-via-url)|
-|Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](../../connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](../../connectors/custom-connectors)|
-|AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](../../ai-builder.md)|
-|Access to Process advisor|Visualize and analyze your business processes with Process advisor.|[Learn about Process advisor](../../power-automate/process-advisor-overview)|
+|Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
+|AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder.md)|
+|Access to Process advisor|Visualize and analyze your business processes with Process advisor.|[Learn about Process advisor](/power-automate/process-advisor-overview)|
 |Access to cloud connectors from desktop flows|Use cloud connectors directly in desktop flows.|[Learn how to invoke the SharePoint cloud connector from desktop flows](actions-reference/sharepoint.md)|
 |Sharing and collaboration|Share flows between team members and select access levels such as co-owner or user. View and manage the flows shared with you.|[Learn how to share desktop flows](manage.md#share-desktop-flows)|
-|Access to multiple environments|Organize, store and manage flows across multiple environments, and benefit from environment isolation and role-based access.|[Learn about environments](../../power-platform/admin/environments-overview)|
+|Access to multiple environments|Organize, store and manage flows across multiple environments, and benefit from environment isolation and role-based access.|[Learn about environments](/power-platform/admin/environments-overview)|
 |Centralized flow management and reporting|Manage desktop flows and view their detailed logs centrally from the Power Automate portal.|[Learn how to manage desktop flows](manage.md)|
 |Flow monitoring|Monitor all your desktop flow runs centrally from the Power Automate portal.|[Learn about monitoring](monitor-desktop-flow-runs.md)|
 |Flow queues management|Monitor, manage and visualize all your queued desktop flow runs and set priorities.|[Learn about queues](monitor-desktop-flow-queues.md)|
 |Centralized bot orchestration and management|Manage the machines and machine groups that host your desktop flows and run unattended automation at scale with hosted RPA bots.|[Learn about machine management](manage-machines.md)|
-|Desktop flow analytics|Access analytics for desktop flows in the Microsoft Power Platform admin center.|[Learn about analytics](../../power-platform/admin/analytics-ui-flow)|
+|Desktop flow analytics|Access analytics for desktop flows in the Microsoft Power Platform admin center.|[Learn about analytics](/power-platform/admin/analytics-ui-flow)|
 |Customer support|Receive prompt technical assistance from a Microsoft support professional.|[Power Automate support](https://flow.microsoft.com/support/)|
 
 > [!IMPORTANT]
@@ -49,7 +49,7 @@ The Power Automate for desktop free trial plan is available for 90 days. Free us
 
 ### Standalone plan 
 
-The Power Automate per user with attended RPA plan (paid or trial) gives full access to all Power Automate for desktop premium features and benefits. Power Platform admins and individual users/makers can purchase licenses for Power Automate. You can find more information regarding purchasing Power Automate licenses in [Buy Power Automate licenses](./../power-platform/admin/power-automate-licensing/buy-licenses).
+The Power Automate per user with attended RPA plan (paid or trial) gives full access to all Power Automate for desktop premium features and benefits. Power Platform admins and individual users/makers can purchase licenses for Power Automate. You can find more information regarding purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
 
 ### Pay-as-you-go plan 
 
@@ -58,4 +58,4 @@ Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription
 ## More information about Power Automate licensing 
 
 - [Power Automate pricing](https://powerautomate.microsoft.com/pricing/)
-- [Overview of Power Automate licensing](../../power-platform/admin/power-automate-licensing/overview)
+- [Overview of Power Automate licensing](/power-platform/admin/power-automate-licensing/overview)
