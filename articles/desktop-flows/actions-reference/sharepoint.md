@@ -49,7 +49,7 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 1. Create a SharePoint connection reference in any solution. You can find information regarding how to create connection references in [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
 
-1. Ensure tha you've installed the [latest version of Power Automate for desktop ](../install.md).
+1. Ensure that you've installed the [latest version of Power Automate for desktop ](../install.md).
 
 1. Create a new desktop flow.
 
@@ -106,7 +106,7 @@ If you want to download only files of a specific type, add a conditional before 
 
 1. Create a SharePoint connection reference in any solution. You can find information regarding how to create connection references in [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
 
-1. Ensure tha you've installed the [latest version of Power Automate for desktop ](../install.md).
+1. Ensure that you've installed the [latest version of Power Automate for desktop ](../install.md).
 
 1. Create a new desktop flow.
 
