@@ -22,16 +22,12 @@
     href: contextual-help-bot.md
   - name: Share a flow
     href: create-team-flows.md
-  # - name: Create a flow that uses Microsoft Dataverse
-  #   href: common-data-model-intro.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
       href: get-started-logic-template.md
     - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
-    # - name: Create a cloud flow with Microsoft Dataverse connector
-    #   href: connection-cds-native.md
     - name: Create a cloud flow with Dynamics 365
       href: connection-dynamics365.md
     - name: Create a cloud flow with OneDrive for Business
@@ -61,6 +57,18 @@
       href: button-flow-with-user-input-tokens.md
     - name: Share a button
       href: share-buttons.md
+  - name: Power Automate mobile
+    items:
+    - name: Overview
+    - href: ./mobile/overview-mobile.md
+    - name: Run instant flows
+    - href: ./mobile/run-instant-flows.md
+    - name: Manage approvals
+    - href: ./mobile/manage-approvals.md
+    - name: Send and receive push notifications
+    - href: ./mobile/send-receive-push.md
+    - name: Manage cloud flows
+    - href: ./mobile/manage-cloud-flows.md
   - name: How to
     items:
     - name: Add an action
@@ -233,8 +241,6 @@
     - name: Overview 
       href: ./dataverse/overview.md
       displayName: Use flows with Microsoft Dataverse
-    # - name: Get started
-    #   href: ./dataverse/get-started.md # we will do this later. templates need a refresh first.
     - name: Trigger flows when a row changes
       href: ./dataverse/create-update-delete-trigger.md
     - name: Trigger flows with actions
@@ -267,8 +273,6 @@
       href: ./dataverse/known-issues.md
     - name: Use Dataverse-based flows in Power Apps
       href: ./dataverse/flows-power-apps.md      
-    # - name: Troubleshoot known issues with Dataverse
-    #   href: ./dataverse/troubleshoot-issues.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md  
   - name: Use solutions for ALM
