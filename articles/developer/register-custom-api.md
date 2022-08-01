@@ -1,17 +1,9 @@
 ---
 title: Custom connector content links | Microsoft Docs
 description: Links to content for creating, using, sharing, and certifying custom connectors.
-services: ''
-suite: flow
-documentationcenter: ''
 author: msftman
-manager: KVivek
-editor: ''
-
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.subservice: developer
 ms.date: 01/29/2018
 ms.author: deonhe
 search.app: 
