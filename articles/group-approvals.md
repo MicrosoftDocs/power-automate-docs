@@ -104,10 +104,10 @@ You can choose to send an approval to multiple groups, or even a combination of 
 
 ## Known issues and limitations
 
-1. Only mail enabled Microsoft 365 groups and Security groups are supported
-2. Teams notification are not supported with group approvals. Teams notification gets sent only for approvals assigned to individual users
-3. The group must have the setting for allowing external senders to email the group turned on in order to receive email notifications
-4. When creating an approval for a newly created Microsoft 365 group that can be a small time period where outlook actionable emails can throw an error
+1. Only mail-enabled Microsoft 365 groups and security groups are supported.
+2. Teams notifications aren't supported with group approvals. Teams notifications are sent only for approvals that are assigned to individual users.
+3. The group must allow email from external senders to receive email notifications.
+4. When you create an approval for a newly created Microsoft 365 group, there maay be a small time period where Outlook actionable emails can present an error.
 
 ## Learn more
 
