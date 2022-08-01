@@ -16,7 +16,7 @@ search.audienceType:
 
 # SharePoint (preview)
 
-SharePoint is a type of actions that invokes the [SharePoint connector](https://docs.microsoft.com/connectors/sharepointonline/) from within desktop flows instead of running locally on the desktop. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data. 
+SharePoint is a type of actions that invokes the [SharePoint connector](/connectors/sharepointonline) from within desktop flows instead of running locally on the desktop. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data. 
 
 ## Prerequisites and limitations
 
@@ -89,7 +89,7 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 Until dynamic suggestions of input fields become available, here's guidance on what data to fill in for each action. 
 
 > [!NOTE]
-> Another way to see which properties are expected as input and output is to create a cloud flow with the same action and observe its dynamic data properties. To find more information regarding the SharePoint cloud actions, refer to [SharePoint](https://docs.microsoft.com/connectors/sharepointonline/).
+> Another way to see which properties are expected as input and output is to create a cloud flow with the same action and observe its dynamic data properties. To find more information regarding the SharePoint cloud actions, refer to [SharePoint](/connectors/sharepointonline).
 
 ### Get file content using path 
 
