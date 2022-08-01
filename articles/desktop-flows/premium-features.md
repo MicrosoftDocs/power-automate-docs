@@ -24,8 +24,8 @@ This article lists the premium RPA features/benefits that are available to [orga
 |----------------|------------|----------------------|
 |Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger a desktop flow from a cloud flow](link-pad-flow-portal.md)|
 |Flow triggering via URL|Trigger local attended desktop flows through run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-pad-flow.md#run-desktop-flows-via-url)|
-|Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors.md)<br>[Learn about custom connectors](/connectors/custom-connectors.md)|
-|AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder.md)|
+|Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
+|AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
 |Access to Process advisor|Visualize and analyze your business processes with Process advisor.|[Learn about Process advisor](/power-automate/process-advisor-overview)|
 |Access to cloud connectors from desktop flows|Use cloud connectors directly in desktop flows.|[Learn how to invoke the SharePoint cloud connector from desktop flows](actions-reference/sharepoint.md)|
 |Sharing and collaboration|Share flows between team members and select access levels such as co-owner or user. View and manage the flows shared with you.|[Learn how to share desktop flows](manage.md#share-desktop-flows)|
@@ -53,7 +53,7 @@ The Power Automate per user with attended RPA plan (paid or trial) gives full ac
 
 ### Pay-as-you-go plan 
 
-Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription, which allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to all the premium features in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview.md).
+Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription, which allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to all the premium features in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
 
 ## More information about Power Automate licensing 
 
