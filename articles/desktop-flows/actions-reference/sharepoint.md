@@ -55,13 +55,23 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 1. If the identifier of the target folder is unknown, use the **Get folder metadata using path** SharePoint action to retrieve it. This action requires the folder's path and produces a custom object containing the folder's metadata. You can access the identifier using the **Id** property.
 
+![Screenshot of the Get folder metadata using path action.](media\sharepoint\sharepoint-get-folder-metadata-using-path-action.png)
+
 1. Deploy the **List folder** SharePoint action and populate the appropriate SharePoint URL and the previously retrieved identifier. The produced list contains custom objects representing items in the target folder.
+
+![Screenshot of the List folder action.](media\sharepoint\sharepoint-list-folder-action.png)
 
 1. After retrieving the list, use a **For each** loop to iterate through the objects inside it.
 
+![Screenshot of the For each loop that iterates through the retrieved custom objects.](media\sharepoint\for-each-action.png)
+
 1. If the items in the target folder are only files, use the **Get file content using path** action and the **Path** property inside the block to retrieve the current file's contents.
 
+![Screenshot of the Get file content using path action.](media\sharepoint\sharepoint-get-file-content-using-path-action.png)
+
 1. Then, deploy the **Convert binary data to file** action to store the retrieved data in a local file. You can use the **Name** property to name the new file with the same name as the original SharePoint file.
+
+![Screenshot of the Convert binary data to file action.](media\sharepoint\convert-binary-data-file-action.png)
 
 The previous steps cover the case where the target folder contains only files. However, if the folder contains subfolders with files inside them, modify your desktop flow accordingly:   
 
