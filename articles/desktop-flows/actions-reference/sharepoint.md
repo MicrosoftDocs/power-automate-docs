@@ -45,7 +45,7 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 ### How to download the content of a SharePoint folder 
 
 > [!IMPORTANT]
-> Before replicating the following steps, ensure that you are familiar with [lists](variable-data-type.md#custom-list), [custom objects](../variable-data-type.md#custom-object), [loops](../use-loops.md), [conditionals](../use-conditionals.md), and the [percentage notation](../variable-manipulation.md).
+> Before replicating the following steps, ensure that you are familiar with [lists](../variable-data-types.md#list), [custom objects](../variable-data-types.md#custom-object), [loops](../use-loops.md), [conditionals](../use-conditionals.md), and the [percentage notation](../variable-manipulation.md).
 
 1. Create a SharePoint connection reference in any solution. You can find information regarding how to create connection references in [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
 
