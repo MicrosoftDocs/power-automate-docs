@@ -77,6 +77,10 @@ In the example below, the flow stores the first number of the previously display
 
 A common practice is to use a **For each** action to iterate through the items of a list.
 
+If you need to access only a specific part of the list,  use the **%VariableName[StartIndex:StopIndex]%** notation. For example, the expression **%List[2:4]%** retrieves the third and fourth items of the list. The item in the **StopIndex** position is the boundary of the slicing and doesn't get retrieved.
+
+To slice a list from the start to a specific element item, don't set a **StartIndex** value, for example, **%List[:4]%**. To slice a list from a specific index to the end, don't set a **StopIndex** value, for example, **%List[2:]%**. 
+
 [List data type properties](datatype-properties.md#lists)
 
 ### Datatable 
