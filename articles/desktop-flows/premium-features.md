@@ -30,7 +30,7 @@ This article lists the premium RPA features/benefits that are included in the Po
 |Access to cloud connectors from desktop flows|Use cloud connectors directly in desktop flows.|[Learn how to invoke the SharePoint cloud connector from desktop flows](actions-reference/sharepoint.md)|
 |Sharing and collaboration|Share flows between team members and select access levels such as co-owner or user. View and manage the flows shared with you.|[Learn how to share desktop flows](manage.md#share-desktop-flows)|
 |Access to multiple environments|Organize, store and manage flows across multiple environments, and benefit from environment isolation and role-based access.|[Learn about environments](/power-platform/admin/environments-overview)|
-|Centralized flow management and reporting|Manage desktop flows and view their detailed logs centrally from the Power Automate portal.|[Learn how to manage desktop flows](manage.md)|
+|Centralized flow management and reporting|Manage desktop flows and view their detailed run logs centrally from the Power Automate portal.|[Learn how to manage desktop flows](manage.md)|
 |Flow monitoring|Monitor all your desktop flow runs centrally from the Power Automate portal.|[Learn about monitoring](monitor-desktop-flow-runs.md)|
 |Flow queues management|Monitor, manage and visualize all your queued desktop flow runs and set priorities.|[Learn about queues](monitor-desktop-flow-queues.md)|
 |Centralized bot orchestration and management|Manage the machines and machine groups that host your desktop flows and run unattended automation at scale with hosted RPA bots.|[Learn about machine management](manage-machines.md)|
