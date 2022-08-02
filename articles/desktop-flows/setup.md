@@ -51,7 +51,7 @@ search.audienceType:
 > - To install Power Automate, an account with administrator privileges to sign in to your Windows device is required.
      
 > [!TIP]
-> If your device runs Windows 10 Home or Windoows 11 Home, you can use Power Automate to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows 10 Home or Windows 11 Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) aren't supported.
+> If your device runs Windows 10 Home or Windows 11 Home, you can use Power Automate to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) aren't supported.
 
 | Activity |  Description |Windows Home |  Windows Enterprise / Pro / Server  | 
 |---------|------|----------|-----------|
