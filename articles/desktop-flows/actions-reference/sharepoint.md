@@ -16,7 +16,7 @@ search.audienceType:
 
 # SharePoint (preview)
 
-SharePoint is a type of actions that invokes the [SharePoint connector](/connectors/sharepointonline) from within desktop flows instead of running locally on the desktop. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data. 
+The SharePoint (preview) group of actions allows the utilization of the [SharePoint connector](/connectors/sharepointonline) from within desktop flows, alleviating the need to create a cloud flow in order to use its actions. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data. 
 
 ## Prerequisites and limitations
 
@@ -25,6 +25,8 @@ SharePoint is a type of actions that invokes the [SharePoint connector](/connect
 - Sharing desktop flows with SharePoint cloud actions isn't supported. Co-owners won't be able to run such desktop flows unless they overwrite the connection references with their own. **Users** with read access are unable to run such flows. 
 
 - DLPs that include SharePoint cloud actions aren't enforced within desktop flows. During preview, machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors). 
+
+- Refrain from modifying a response’s properties directly as it may lead to an erroneous state after future updates. Instead, opt for storing the properties you want to utilize (from the response retrieved) directly into separate variables.
 
 ## Why should I use SharePoint actions inside desktop flows instead of cloud flows? 
 
@@ -317,4 +319,3 @@ Returns files contained in a SharePoint folder.
 - Exponential/manual retry policies in case the connector responds an error
 - DLPs that include SharePoint cloud actions are enforced in desktop flows
 - New SharePoint actions
-- New actions from other connectors
