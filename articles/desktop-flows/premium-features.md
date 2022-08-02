@@ -16,14 +16,14 @@ search.audienceType:
 
 # Premium RPA features
 
-This article lists the premium RPA features/benefits that are available to [organization premium accounts](getting-started-org.md). 
+This article lists the premium RPA features/benefits that are included in the Power Automate per user with attended RPA plan and are available to [organization premium accounts](getting-started-org.md). 
 
 ## Premium feature list 
 
 |Feature/Benefit | Description|Additional information|
 |----------------|------------|----------------------|
 |Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger a desktop flow from a cloud flow](link-pad-flow-portal.md)|
-|Flow triggering via URL|Trigger local attended desktop flows through run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-pad-flow.md#run-desktop-flows-via-url)|
+|Flow triggering via URL|Trigger local attended desktop flows through their run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-pad-flow.md#run-desktop-flows-via-url)|
 |Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
 |Access to Process advisor|Visualize and analyze your business processes with Process advisor.|[Learn about Process advisor](/power-automate/process-advisor-overview)|
@@ -41,19 +41,19 @@ This article lists the premium RPA features/benefits that are available to [orga
 > - Unattended desktop flow executions require the unattended RPA add-on, which can be applied against a qualifying base license.  
 > - AI Builder is licensed as an add-on for existing subscription plans. A certain number of AI Builder credits are included in the Power Automate per user with attended RPA plan. 
 
-## Plans that provide full entitlements for the premium desktop flow features 
+## Plans that provide entitlements for the premium RPA features 
 
 ### Trial plan 
 
-The Power Automate for desktop free trial plan is available for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option found within the **Go premium** section of Power Automate for desktop or the **desktop flows** section of the Power Automate portal. Free users are also prompted to start a trial while they attempt to add the **Run a flow built with Power Automate for desktop** connector in a cloud flow. 
+The Power Automate for desktop free trial plan is available for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option found within the **Go premium** section of Power Automate for desktop or the **desktop flows** sections of the Power Automate portal. Free users are also prompted to start a trial while they attempt to add the **Run a flow built with Power Automate for desktop** action in a cloud flow. 
 
 ### Standalone plan 
 
-The Power Automate per user with attended RPA plan (paid or trial) gives full access to all Power Automate for desktop premium features and benefits. Power Platform admins and individual users/makers can purchase licenses for Power Automate. You can find more information regarding purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
+The Power Automate per user with attended RPA plan (paid or trial) gives full access to all RPA premium features and benefits. Both Power Platform admins and individual users/makers can purchase licenses for Power Automate. You can find more information regarding purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
 
 ### Pay-as-you-go plan 
 
-Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription, which allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to all the premium features in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
+Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription, which allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to most of the premium features listed above in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
 
 ## More information about Power Automate licensing 
 
