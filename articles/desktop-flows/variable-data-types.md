@@ -79,7 +79,7 @@ A common practice is to use a **For each** action to iterate through the items o
 
 If you need to access only a specific part of a list, use the **%VariableName[StartIndex:StopIndex]%** notation. For example, the expression **%List[2:4]%** retrieves the third and fourth items of the list. The item in the **StopIndex** position is the boundary of the slicing and doesn't get retrieved.
 
-To slice a list from the start to a specific element item, don't set a **StartIndex** value, for example, **%List[:4]%**. To slice a list from a specific index to the end, don't set a **StopIndex** value, for example, **%List[2:]%**. 
+To slice a list from the start to a specific item, don't set a **StartIndex** value, for example, **%List[:4]%**. To slice a list from a specific index to the end, don't set a **StopIndex** value, for example, **%List[2:]%**. 
 
 [List data type properties](datatype-properties.md#lists)
 
@@ -124,9 +124,9 @@ If you want to access a specific column in a datable that contains column header
 
 If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a datarow. 
 
-Similarly to lists, you use the **%VariableName[StartRow:StopRow]%** notation to access a specific part of a datatable. The expression retrieves only the rows defined by the two indexes, while the **StopIndex** position is the boundary of the slicing and doesn't get retrieved.
+Similarly to lists, you use the **%VariableName[StartRow:StopRow]%** notation to access a specific part of a datatable. The expression retrieves only the rows defined by the two indexes, while the **StopRow** position is the boundary of the slicing and doesn't get retrieved.
 
-To slice a datatable from the first row to a specific row, don't use a **StartRow** value, for example, %Datatable[:4]%. Likewise, to slice a datatable from a specific row to the end, don't use a **StopRow** value, for example, %Datatable[2:]%. 
+To slice a datatable from the first row to a specific row, don't use a **StartRow** value, for example, **%Datatable[:4]%**. Likewise, to slice a datatable from a specific row to the end, don't use a **StopRow** value, for example, **%Datatable[2:]**%. 
 
 [Datatable data type properties](datatype-properties.md#datatables) 
 
