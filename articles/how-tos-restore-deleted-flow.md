@@ -96,7 +96,7 @@ Here are the two ways you can restore deleted flows.
 
 ## Restore deleted flows with the management connector
 
-You can also restore a deleted non-solution-aware flow within 30 days of deletion using Power Automate. As an admin, all you need is an instant flow with the Power Automate management connector actions, **Restore Deleted Flow as Admin**.  
+You can also restore a deleted non-solution-aware flow within 28 days of deletion using Power Automate. As an admin, all you need is an instant flow with the Power Automate management connector actions, **Restore Deleted Flow as Admin**.  
 
 Follow these steps to use the **Power Automate Management** connector to restore a deleted flow.
 
