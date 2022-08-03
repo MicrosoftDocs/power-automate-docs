@@ -61,7 +61,7 @@ To download the beta version:
 
 You can run your instant flows in the beta version. Instant flows allow you to easily run repetitive tasks from any place, at any time with your mobile device. Running instant cloud flows are automated, which saves you time. You might also encounter fewer errors than if you performed the tasks manually.
 
-If you've used the previous Power Automate mobile version, you know these as *button* flows. The mobile app also supports widgets. This allows you to create shortcuts to your instant flows on your device’s home screen.
+If you've used the previous Power Automate mobile version, you know instant flows as *button* flows.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of instant flows.](media/android-beta/instant-flows.png "Instant flows")
@@ -103,6 +103,6 @@ You can also view the details (for example, connections and run history) of an i
 
     If you need to create or edit on the go, you can always log in to Power Automate on your mobile’s browser.
 
-## Provide feedback  
+## Share your experience with us  
 
 These changes are based directly on your feedback, so we would love to hear what you think of this new beta version of Power Automate mobile for Android! You can leave a review and rating in the [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.flow). To provide feedback, go to the Power Automate app page, and under **Private feedback to developer**, tap **Write feedback**. Rate the app and describe your experience. Optionally, you can also provide any feedback. We appreciate your response!
