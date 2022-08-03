@@ -26,7 +26,7 @@ search.audienceType:
 
 # Use the beta version of Power Automate mobile for Android (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](/includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Experience the same familiar look and feel of the Power Automate portal with the beta version of Power Automate mobile for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
 
@@ -35,7 +35,7 @@ This article provides an overview of the functionality and limitations in the be
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](/includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Install the beta version
 
