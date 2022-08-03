@@ -25,7 +25,7 @@ search.audienceType:
 ---
 # Run instant flows in Power Automate beta (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Automate mobile enables you to run your instant flows. If you've used the previous Power Automate mobile version, you know these as *button* flows. The mobile app also supports widgets. This allows you to create shortcuts to your instant flows on your device’s home screen.
 

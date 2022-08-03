@@ -25,7 +25,7 @@ search.audienceType:
 ---
 # Send and receive push notifications in Power Automate mobile beta (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Automate mobile beta allows you to send and receive push notifications. You can also view a list of recent notifications and flow alerts from a notification bell. If you've used the previous Power Automate mobile version, you know these as *Activity Feeds*.
 

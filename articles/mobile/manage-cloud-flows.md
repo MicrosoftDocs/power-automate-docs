@@ -1,6 +1,6 @@
 ---
-title: Manage cloud flows on the go in Power Automate mobile (preview) | Microsoft Docs
-description: Manage cloud flows in Power Automate mobile (preview).
+title: Manage cloud flows on the go in Power Automate mobile beta (preview) | Microsoft Docs
+description: Manage cloud flows in Power Automate mobile beta (preview).
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,9 +23,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Manage cloud flows on the go (preview)
+# Manage cloud flows on the go in Power Automate beta (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Automate mobile allows you to view the flows you've created in preview. This includes non-solution and solution-aware flows.
 

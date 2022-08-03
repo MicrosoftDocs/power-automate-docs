@@ -25,7 +25,7 @@ search.audienceType:
 ---
 # Manage approvals on the go beta (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Automate mobile beta allows you to view and respond to approvals while you’re away from your desk.
 

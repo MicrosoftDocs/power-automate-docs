@@ -25,7 +25,7 @@ search.audienceType:
 ---
 # Manage cloud flows in Power Automate mobile beta (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Experience the same familiar look and feel of the Power Automate portal with Power Automate mobile beta. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
 
@@ -42,7 +42,7 @@ Use Power Automate mobile to do the following scenarios:
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Prerequisite
 
