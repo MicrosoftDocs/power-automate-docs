@@ -57,7 +57,7 @@
       href: button-flow-with-user-input-tokens.md
     - name: Share a button
       href: share-buttons.md
-  - name: Power Automate mobile
+  - name: Power Automate mobile beta (preview)
     items:
     - name: Overview
       href: ./mobile/overview-mobile.md
