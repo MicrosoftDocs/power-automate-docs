@@ -61,8 +61,8 @@
       href: button-flow-with-user-input-tokens.md
     - name: Share a button
       href: share-buttons.md
-  - name: Beta version of Power Automate mobile for Android (preview)
-    href: android-beta.md
+    - name: Power Automate (Beta) mobile app for Android (preview)
+      href: android-beta.md
   - name: How to
     items:
     - name: Add an action
