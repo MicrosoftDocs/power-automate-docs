@@ -65,8 +65,8 @@ You can run your instant flows in the beta version. Instant flows allow you to e
 
 If you've used the previous Power Automate mobile version, you know these as *button* flows. The mobile app also supports widgets. This allows you to create shortcuts to your instant flows on your device’s home screen.
 
-[!div class="mx-imgBorder"]
-![Screenshot of instant flows.](media/android-beta/instant-flows.png "Instant flows")
+> [!div class="mx-imgBorder"]
+> > ![Screenshot of instant flows.](media/android-beta/instant-flows.png "Instant flows")
 
 For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen.
 
@@ -88,8 +88,8 @@ You can send and receive push notifications in the beta version. You can also vi
 
 In the beta version, you can view the flows that you've created. This includes non-solution and solution-aware flows.
 
-[!div class="mx-imgBorder"]
-![Screenshot of a list of flows.](media/android-beta/instant-flows.png "Flows")
+> [!div class="mx-imgBorder"]
+> ![Screenshot of a list of flows.](media/android-beta/instant-flows.png "Flows")
 
 You can also view the details (for example, connections and run history) of an individual flow.
 
