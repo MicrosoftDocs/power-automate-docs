@@ -103,6 +103,6 @@ You can also view the details (for example, connections and run history) of an i
 
     If you need to create or edit on the go, you can always log in to Power Automate on your mobile’s browser.
 
-## Share your experience with us  
+## Provide feedback  
 
 These changes are based directly on your feedback, so we would love to hear what you think of this new beta version of Power Automate mobile for Android! You can leave a review and rating in the [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.flow). To provide feedback, go to the Power Automate app page, and under **Private feedback to developer**, tap **Write feedback**. Rate the app and describe your experience. Optionally, you can also provide any feedback. We appreciate your response!
