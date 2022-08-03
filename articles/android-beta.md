@@ -30,7 +30,8 @@ search.audienceType:
 
 Experience the same familiar look and feel of the Power Automate portal with the beta version of Power Automate mobile for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
 
-This article provides an overview of the functionality and limitations in the beta version. You'll also find installation instructions.
+> [!NOTE]
+> This article only applies to the beta version of the Power Automate mobile app for Android devices. If you want to use the Power Automate mobile app versions generally available across different platforms, refer to the previous articles in this section.
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -56,17 +57,14 @@ To download the beta version:
     > [!div class="mx-imgBorder"]
     > ![Screenshot of joining the beta.](media/android-beta/install.png "Joining beta")
 
-> [!NOTE]
-> Plans to update Power Automate mobile for iOS are in the works. | Microsoft Docs
-
 ## Run instant flows
 
 You can run your instant flows in the beta version. Instant flows allow you to easily run repetitive tasks from any place, at any time with your mobile device. Running instant cloud flows are automated, which saves you time. You might also encounter fewer errors than if you performed the tasks manually.
 
 If you've used the previous Power Automate mobile version, you know these as *button* flows. The mobile app also supports widgets. This allows you to create shortcuts to your instant flows on your device’s home screen.
 
-[!div class="mx-imgBorder"]
-![Screenshot of instant flows.](media/android-beta/instant-flows.png "Instant flows")
+> [!div class="mx-imgBorder"]
+> ![Screenshot of instant flows.](media/android-beta/instant-flows.png "Instant flows")
 
 For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen.
 
@@ -88,8 +86,8 @@ You can send and receive push notifications in the beta version. You can also vi
 
 In the beta version, you can view the flows that you've created. This includes non-solution and solution-aware flows.
 
-[!div class="mx-imgBorder"]
-![Screenshot of a list of flows.](media/android-beta/instant-flows.png "Flows")
+> [!div class="mx-imgBorder"]
+> ![Screenshot of a list of flows.](media/android-beta/instant-flows.png "Flows")
 
 You can also view the details (for example, connections and run history) of an individual flow.
 
