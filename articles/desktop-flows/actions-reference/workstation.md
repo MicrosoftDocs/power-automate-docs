@@ -39,7 +39,7 @@ The workstation group of actions provides a collection of actions that automate 
 
 To print a document, deploy the **Print document** action and populate the path of the file you want to print.
 
-![Screenshot of the Print document action.](media\workstation\print-document-action.png)
+![Screenshot of the Print document action.](media/workstation/print-document-action.png)
 
 To change the default printer of the workstation, use the **Set default printer** action. To check which is the current default printer, use the  **Get default printer** action.
 
@@ -47,7 +47,7 @@ If you want to sign out of your Windows account, use the **Log off user** action
 
 To change the resolution of any of your screens, use the **Set screen resolution**. The action requires you to populate the ID number of the screen, the width and height, the bit count, and the frequency. You can click the **Available screen resolutions** button to see all the available resolutions for each screen. Also, you can retrieve the current values of the mentioned attributes with the **Get screen resolution** action. 
 
-![Screenshot of the Set screen resolution action.](media\workstation\set-screen-resolution-action.png)
+![Screenshot of the Set screen resolution action.](media/workstation/set-screen-resolution-action.png)
 
 ## Workstation actions
 

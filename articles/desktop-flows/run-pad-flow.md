@@ -22,7 +22,7 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 ## Prerequisites
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 - To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
 
@@ -40,7 +40,7 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 
 When you create desktop flows, you run them either in **attended** or **unattended** mode. Unattended is best for applications that don't need human supervision.
 
-When Power Automate runs in unattended mode, it automatically signs into the target devices that run Windows 10, Windows Server 2016, or Windows Server 2019. Once the automation completes, Power Automate signs out from the device and reports its activity.
+When Power Automate runs in unattended mode, it automatically signs into the target devices that run Windows 10, Windows 11, Windows Server 2016, Windows Server 2019, or Windows Server 2022. Once the automation completes, Power Automate signs out from the device and reports its activity.
 
 When Power Automate runs in attended mode, it uses an existing Windows user session.
 
@@ -59,7 +59,7 @@ Power Automate performs the following steps:
 
 1. Unattended desktop flows run on devices with the screen locked so that no one can see the flow while it runs.
 
-1. Windows 10 devices can't run unattended if there are any active Windows user sessions present (even a locked one). You'll receive this error: *Cannot execute desktop flow. There is a locked or an inactive Windows user session on the target device*.
+1. Windows 10 and Windows 11 devices can't run unattended if there are any active Windows user sessions present (even a locked one). You'll receive this error: *Cannot execute desktop flow. There is a locked or an inactive Windows user session on the target device*.
 
 1. On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow is supposed to run as, you'll receive the same error: *Cannot execute desktop flow. There is a locked or inactive Windows user session on the target device*.
 
@@ -113,12 +113,12 @@ You can [view the real-time execution order](monitor-desktop-flow-queues.md#view
 ## Run desktop flows concurrently on Windows Server devices
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
-Multiple users can be signed in simultaneously on Windows Server 2016 and Windows Server 2019. Power Automate uses this OS capability to simultaneously run multiple desktop flows on such devices. With this feature, your organization can save on its infrastructure costs.
+Multiple users can be signed in simultaneously on Windows Server 2016, Windows Server 2019, and Windows Server 2022. Power Automate uses this OS capability to simultaneously run multiple desktop flows on such devices. With this feature, your organization can save on its infrastructure costs.
 
 Perform the following steps to benefit from multiple desktop flows on a single device:
-1. Set up a Windows Server 2016 or 2019 device with the on-premises gateway and the latest version of desktop flows installed.
+1. Set up a Windows Server 2016, 2019 or 2022 device with the on-premises gateway and the latest version of desktop flows installed.
 1. Use two or more user accounts to create desktop flows connections targeting the gateway on this device. 
 
 Power Automate automatically scales the number of concurrent desktop flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the remaining runs *wait* as [described here](#run-multiple-desktop-flows-on-the-same-device-sequentially).
@@ -132,7 +132,7 @@ Power Automate automatically scales the number of concurrent desktop flows runs 
 ## Load balance requests across gateways in a cluster
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 You can choose to distribute desktop flows runs evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
 
@@ -157,7 +157,7 @@ In the gateway details page, toggle **Run on all gateways in cluster**. This opt
 ## Best practices to avoid timeouts and distribute load across machines
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 If you plan to run multiple desktop flows, you can adopt either one of the following strategies. These strategies distribute the load and ensure that all desktop flows run successfully without overloading the target machine(s) and running into timeouts because multiple desktop flows are running simultaneously.
 
@@ -194,12 +194,12 @@ Some of your desktop flows might run for long durations, for example more than 2
 ## Troubleshoot failures
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 1. If your unattended desktop flow fails with the **cannot create new session** message, follow these steps to resolve the issue:
 
-    - On Windows 10, confirm that you don’t have an active user session locked or unlocked on your target device.
-    - On Windows Server 2016 or Windows Server 2019, confirm you haven’t reached the maximum number of active user sessions that's configured for your device. Desktop flows won’t be able to run if it can't create new sessions.
+    - On Windows 10 or Windows 11, confirm that you don’t have an active user session locked or unlocked on your target device.
+    - On Windows Server 2016, Windows Server 2019, or Windows Server 2022, confirm you haven’t reached the maximum number of active user sessions that's configured for your device. Desktop flows won’t be able to run if it can't create new sessions.
 
 1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](/data-integration/gateway/service-gateway-tshoot).
 

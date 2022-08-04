@@ -45,7 +45,7 @@ To combine a list of text values into a single text value, use the **Join text**
 
 To find a subtext in a text and replace it with another text or character, use the **Replace text** action. For example, the following example demonstrates the replacement of the text **Product Characteristics** with **Characteristics**.
 
-![Screenshot of the Replace text action.](media\text\replace-text-example.png)
+![Screenshot of the Replace text action.](media/text/replace-text-example.png)
 
 Search a text value inside another text with the **Parse text** action. 
 
@@ -55,13 +55,13 @@ Additionally, disable the **First occurrence only** to make the action return a 
 
 The following example searches all the words in **Items detected in Stock** starting with a capital letter. The produced list named **Matches** stores the values **Items** and **Stock**. The **Positions** list stores the positions in which the values were found (1 and 18).
 
-![Screenshot of the Parse text action.](media\text\parse-text-example.png)
+![Screenshot of the Parse text action.](media/text/parse-text-example.png)
 
 Besides searching in texts, Power Automate enables you to crop text values from other texts using the **Crop text** action. The text to crop is defined by flags that are the first occurring given character or string markers. You can crop values before, after, or between the specified text flag(s).
 
 The cropped text is stored in the **CroppedText** variable, while you can use the **IsFlagFound** variable to check if the action found the set flags.
 
-![Screenshot of the Crop text action.](media\text\crop-text-example.png)
+![Screenshot of the Crop text action.](media/text/crop-text-example.png)
 
 To ensure that numbers are stored as numerical values, use the **Convert text to number** action. To perform the reverse conversion, use **Convert number to text**.
 
@@ -71,7 +71,7 @@ Similarly, the actions **Convert text to datetime** and **Convert datetime to te
 
 Desktop flows enable users to extract various entities from texts in natural language, such as numbers, dates, and measurement units, through the **Recognize entities in text** action.
 
-![Screenshot of the Recognize entities in text action](media\text\recognize-entities-text-action.png)
+![Screenshot of the Recognize entities in text action](media/text/recognize-entities-text-action.png)
 
 The **Recognize entities in text** action gets a text or a variable containing text as input and returns a datable containing the results. Each entity returns different results based on its structure, but all the datatables contain an **Original text** field that stores the entity part of the input text.
 

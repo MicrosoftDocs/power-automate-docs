@@ -57,7 +57,7 @@ To send a message as the Flow bot in a group chat select the **Post as** option 
 
 ![Post a message in group chat](../media/post-a-message/flow-bot-group-chat.png)
 
-![Message in Teams group chat from the Flow bot](../media/post-a-message/flow-bot-group-chat-teams.png)
+![A message in a Teams group chat from the Flow bot](../media/post-a-message/flow-bot-group-chat-teams.png)
 
 > [!IMPORTANT]
 > By default Teams only lists the 50 most recent **named** group chats in the drop down. If you want to send a message to a new group chat use the option below.
@@ -80,7 +80,7 @@ To send a message as the Flow bot in the new created group chat select the **Pos
 
 When sending a message as the Flow bot you have the additional option of posting directly to a user. This is useful in notification scenarios where you want to reach out to an individual user using the Flow bot. For this select the **Chat with Flow bot** option and specify the user you want to message and the specific message you want to send.
 
-![Post a message in group chat as the Flow bot](../media/post-a-message/flow-bot-chat-direct.png)
+![Post a message in a Teams group chat as the Flow bot](../media/post-a-message/flow-bot-chat-direct.png)
 
 ![Message in Teams group chat from the Flow bot](../media/post-a-message/flow-bot-chat-direct-teams.png)
 
@@ -136,4 +136,5 @@ Then add the mention token generated from that action in any of the **Post a mes
 
 - By default Teams only lists the 50 most recent **named** group chats in the drop-down list. If you want to send a message to a new group chat use the option below.
 - The **Get @mention token for a user** can only be used for mentioning users, mentioning channels/teams is currently not supported.
+- Sending a message in private channels isn't supported.
 

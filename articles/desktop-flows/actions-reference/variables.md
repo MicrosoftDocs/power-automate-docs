@@ -51,17 +51,17 @@ All variable-related actions for different datatypes
 
 To manually create a variable in a Power Automate desktop flow, deploy the **Set variable** action. The action requires you to provide a name and a value for the new variable.
 
-![Screenshot of the Set variable action.](media\variables\set-var-action-properties.png)
+![Screenshot of the Set variable action.](media/variables/set-var-action-properties.png)
 
 To increase or decrease the value of a numeric variable, use the **Increase variable** and **Decrease variable** actions respectively.
 
-![Screenshot of the Increase variable action.](media\variables\increase-var-action-properties.png)
+![Screenshot of the Increase variable action.](media/variables/increase-var-action-properties.png)
 
 Most actions output their result into a variable. For example, the **Create new list** action produces an empty list. 
 
 Similarly, the **Generate random number** action produces a random numeric value. If you enable the **Generate multiple numbers** option in this action, you can create a list variable containing multiple random numeric values.
 
-![Screenshot of the Generate random number action.](media\variables\generate-random-num-action-properties.png)
+![Screenshot of the Generate random number action.](media/variables/generate-random-num-action-properties.png)
 
 To add items to an existing list, use the **Add item to list** action. Populate a hard-coded value or a variable to define the item to add. Likewise, you can remove items from a list with the **Remove item from list** action.
 
@@ -72,7 +72,7 @@ If you want to create a datatable variable, deploy the **Create new data table**
 
 To manipulate a datatable variable, use the actions of the respective action subgroup, such as the **Find or replace in data table** and **Update data table item** actions.
 
-![Screenshot of the Create new data table action.](media\variables\create-new-data-table-action-properties.png)
+![Screenshot of the Create new data table action.](media/variables/create-new-data-table-action-properties.png)
 
 ## Variable actions
 

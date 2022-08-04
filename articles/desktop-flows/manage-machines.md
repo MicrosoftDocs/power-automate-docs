@@ -187,7 +187,7 @@ Follow these steps to delete a machine:
 ## Switch from gateways to direct connectivity 
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities.
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities.
 
 You can easily switch to using direct connectivity by changing the desktop flow connection and using one with the **directly to machine** option.   
 

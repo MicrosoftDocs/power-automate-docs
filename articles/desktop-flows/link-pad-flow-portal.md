@@ -22,7 +22,7 @@ search.audienceType:
 ## Prerequisites
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 - To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
 
@@ -36,47 +36,47 @@ search.audienceType:
 
 1. Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**. Select **+ New flow**, and from the drop-down select **Instant cloud flow**.
 
-   ![Screenshot of the option to create an instant cloud flow.](media\link-pad-flow-portal\my-flows-instant-blank.png)
+   ![Screenshot of the option to create an instant cloud flow.](media/link-pad-flow-portal/my-flows-instant-blank.png)
 
    Alternatively, you can select **Automated cloud flow** to create a flow that is triggered by a specific event, like the creation of a new file in an OneDrive for Business account.
 
-   ![Screenshot of the Build an automated cloud flow dialog.](media\link-pad-flow-portal\automated-cloud-flow.png)
+   ![Screenshot of the Build an automated cloud flow dialog.](media/link-pad-flow-portal/automated-cloud-flow.png)
 
 1. Enter a name for the cloud flow, otherwise one will be automatically generated. Select **Manually trigger a flow** and then select **Create**.
 
-   ![Screenshot of the Build an instant cloud flow dialog.](media\link-pad-flow-portal\manually-trigger-flow.png)
+   ![Screenshot of the Build an instant cloud flow dialog.](media/link-pad-flow-portal/manually-trigger-flow.png)
 
 1. Select **+ New Step**.
 
-   ![Screenshot of the New step action.](media\link-pad-flow-portal\new-step.png)
+   ![Screenshot of the New step action.](media/link-pad-flow-portal/new-step.png)
 
 1. In the **Choose an action** prompt search field, enter **Power Automate for desktop**. Under **Actions**, select **Run a flow built with Power Automate for desktop**.
 
-   ![Screenshot of the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\action-search.png)
+   ![Screenshot of the Run a flow built with Power Automate Desktop action.](media/link-pad-flow-portal/action-search.png)
 
 1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flows connections in [Setup desktop flows connections and machine credentials](install.md#setup-desktop-flows-connections-and-machine-credentials).
 
-   ![Screenshot of the fields of a new desktop flow connection.](media\link-pad-flow-portal\desktop-flow-connection.png)
+   ![Screenshot of the fields of a new desktop flow connection.](media/link-pad-flow-portal/desktop-flow-connection.png)
 
 1. In the action parameters, set Run mode to **Attended - Runs when you're signed in**, and in the desktop flow drop-down select **Create a new desktop flow**.
 
-   ![Screenshot of the fields of the Run a flow built with Power Automate Desktop action.](media\link-pad-flow-portal\run-desktop-flow-v2-action-properties.png)
+   ![Screenshot of the fields of the Run a flow built with Power Automate Desktop action.](media/link-pad-flow-portal/run-desktop-flow-v2-action-properties.png)
 
 1. Enter a name for the desktop flow and select **Launch app**.
 
-   ![Screenshot of the Build a desktop flow dialog.](media\link-pad-flow-portal\build-desktop-flow-dialog.png)
+   ![Screenshot of the Build a desktop flow dialog.](media/link-pad-flow-portal/build-desktop-flow-dialog.png)
 
 1. A message from the browser may appear, asking whether to allow flow.microsoft.com to open an application. Allow this action to continue to Power Automate for desktop.
 
-   ![Screenshot of a browser message asking whether to open an application.](media\link-pad-flow-portal\browser-open-application.png)
+   ![Screenshot of a browser message asking whether to open an application.](media/link-pad-flow-portal/browser-open-application.png)
 
 1. The Power Automate Console creates a desktop flow with the selected name and opens the flow designer to edit the new flow.
 
-   ![Screenshot of the flow designer.](media\link-pad-flow-portal\flow-designer-blank.png)
+   ![Screenshot of the flow designer.](media/link-pad-flow-portal/flow-designer-blank.png)
 
 1. Optionally, create input/output variables to pass data back and forth from the Power Automate web portal to your desktop flow. In the Variables pane, select **+** to add an input or output variable.
 
-   ![Screenshot of the option to create a new input variable.](media\link-pad-flow-portal\new-input-output-var.png)
+   ![Screenshot of the option to create a new input variable.](media/link-pad-flow-portal/new-input-output-var.png)
 
 1. To create an input or output variable, the **New input/output variable** dialog requires filling in the fields as follows:
 
@@ -87,7 +87,7 @@ search.audienceType:
    - **Description**: A description of the variable that will appear in the cloud or desktop flow designer while calling the flow.
    - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](manage-variables.md#sensitive-variables).
 
-   ![Screenshot of the Add a new input variable dialog.](media\link-pad-flow-portal\add-new-input-var.png)
+   ![Screenshot of the Add a new input variable dialog.](media/link-pad-flow-portal/add-new-input-var.png)
 
 1. Create an input variable to pass data from cloud flows to your desktop flow. The variable can be used anywhere in the desktop flow.
 
@@ -98,7 +98,7 @@ search.audienceType:
    > [!NOTE]
    > If an input variable contains sensitive data, you may want to obfuscate or omit it from the logs. To find more information regarding sensitive text inputs, refer to [Manage sensitive input like passwords](../how-tos-use-sensitive-input.md).
 
-   ![Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.](media\link-pad-flow-portal\run-desktop-flow-v2-action-properties-2.png)
+   ![Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.](media/link-pad-flow-portal/run-desktop-flow-v2-action-properties-2.png)
 
 1. Output variables from desktop flows can be used in most cloud flow actions.
 
