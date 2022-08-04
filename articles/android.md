@@ -30,13 +30,11 @@ search.audienceType:
 
 Experience the same familiar look and feel of the Power Automate portal with the beta version of Power Automate mobile for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
 
-> [!NOTE]
-> This article only applies to the beta version of the Power Automate mobile app for Android devices. If you want to use the Power Automate mobile app versions generally available across different platforms, refer to the previous articles in this section.
 
 > [!IMPORTANT]
 > - This is a preview feature.
->
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - This article only applies to the beta version of the Power Automate mobile app for Android devices. If you want to use the Power Automate mobile app versions generally available across different platforms, refer to the previous articles in this section.
 
 ## Install the beta version
 
@@ -55,7 +53,7 @@ To download the beta version:
 1. Tap **Join**.  
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of joining the beta.](media/android-beta/install.png "Joining beta")
+    > ![Screenshot of joining the beta.](media/android/install.png "Joining beta")
 
 ## Run instant flows
 
@@ -64,7 +62,7 @@ You can run your instant flows in the beta version. Instant flows allow you to e
 If you've used the previous Power Automate mobile version, you know instant flows as *button* flows.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of instant flows.](media/android-beta/instant-flows.png "Instant flows")
+> ![Screenshot of instant flows.](media/android/instant-flows.png "Instant flows")
 
 For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen.
 
@@ -73,21 +71,21 @@ For quick and easy access to your instant flows, you have the option to create a
 The beta version allows you to view and respond to approvals while you’re away from your desk.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of manage approvals.](media/android-beta/manage-approvals.png "Approvals")
+> ![Screenshot of manage approvals.](media/android/manage-approvals.png "Approvals")
 
 ## Send and receive push notifications
 
 You can send and receive push notifications in the beta version. You can also view a list of recent notifications and flow alerts from a notification bell. If you've used the previous Power Automate mobile version, you know these as *Activity Feeds*.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of push notifications.](media/android-beta/notifications.png "Notifications")
+> ![Screenshot of push notifications.](media/android/notifications.png "Notifications")
 
 ## View a list of your cloud flows
 
 In the beta version, you can view the flows that you've created. This includes non-solution and solution-aware flows.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of a list of flows.](media/android-beta/instant-flows.png "Flows")
+> ![Screenshot of a list of flows.](media/android/instant-flows.png "Flows")
 
 You can also view the details (for example, connections and run history) of an individual flow.
 

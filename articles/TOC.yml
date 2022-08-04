@@ -62,7 +62,7 @@
     - name: Share a button
       href: share-buttons.md
     - name: Power Automate (Beta) mobile app for Android (preview)
-      href: android-beta.md
+      href: android.md
   - name: How to
     items:
     - name: Add an action
