@@ -92,7 +92,7 @@ You can send and receive push notifications. You can also view a list of recent 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of push notifications.](media/android/notifications.png "Notifications")
 
-## Chang environments
+## Change environments
 
 You might have different environments set up depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment so that you can access your flows, approvals, notifications, and more, based on the environment you're in.
 
