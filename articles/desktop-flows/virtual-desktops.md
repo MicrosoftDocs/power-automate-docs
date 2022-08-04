@@ -87,7 +87,7 @@ Every individual virtual desktop has its own tree, while numeric prefixes allow 
 
 ## Known issues and limitations
 
-**Issue:** Virtual desktop automation is available only in Windows RDP (Microsoft Remote Desktop Protocol), Citrix Desktop, and Citrix Virtual Apps. Other platforms of virtual desktop infrastructure aren't currently supported.
+* **Issue:** Virtual desktop automation is available only in Windows RDP (Microsoft Remote Desktop Protocol), Citrix Desktop, and Citrix Virtual Apps. Other platforms of virtual desktop infrastructure aren't currently supported.
 
 * **Workarounds:** None
 
