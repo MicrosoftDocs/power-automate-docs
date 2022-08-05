@@ -70,7 +70,7 @@ If you've used the previous Power Automate mobile version, you know instant flow
 
 ![Screenshot of a list of instant flows.](media/android/instant-flows-1.png "List of instant flows")
 
-To run an instant flow, tap the flow you would like to run from the I**Instant flows** screen, then tap **Run flow**. Some flows might require you to fill in parameters before running the flow.
+To run an instant flow, tap the flow you would like to run from the **Instant flows** screen, then tap **Run flow**. Some flows might require you to fill in parameters before running the flow.
 
 ![Screenshot of instant flows.](media/android/run-flow.png "Run instant flows")
 
@@ -80,7 +80,7 @@ For quick and easy access to your instant flows, you have the option to create a
 
 The approvals feature allows you to manage your approval requests while you’re away from your desk. 
 
-You can approve or reject a request directly from the **Approvals** screen. Alternatively, to view more details of an approval request, tap the verticle (**…**) next to a request and select **Details**.
+You can approve or reject a request directly from the **Approvals** screen. Alternatively, to view more details of an approval request, tap the vertical (**…**) next to a request and select **Details**.
 
 ![Screenshot of a list of approval requests.](media/android/manage-approvals-1.png "List of approval requests")
 
@@ -110,7 +110,7 @@ You might have different environments set up depending on the purpose of your wo
 
 - This feature is being rolled out and may not be available for you yet.
 
-- The beta version doesn't support geofencing (location-based trigger). 
+- The beta version doesn't support geofencing (location-based trigger).
 
 - The beta version doesn't support flow creation and editing in this version; customers told us that they prefer to create and edit in the portal. If you need to create or edit on the go, you can log in to Power Automate on your mobile’s browser.
 
