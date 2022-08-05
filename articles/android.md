@@ -91,17 +91,17 @@ To view details of an approval request, select a request and tap **Approvals** o
 
 The notifications feature allows you to send and receive push notifications. To get to to the **Notifications** screen, tap the bell icon in the **Instant flows** screen.
 
-![Screenshot of push notifications.](media/android/notifications-1.png "Notifications")
+![Screenshot of push notifications icon.](media/android/notifications-1.png "Notifications icon")
 
 When you tap the bell icon, you'll see a list of recent notifications and flow alerts. If you've used the previous Power Automate mobile app version, you know these as activity feeds.
 
-![Screenshot of push notifications.](media/android/notifications.png "Notifications")
+![Screenshot of a push notification.](media/android/notifications.png "Notifications")
 
 ## Change environments
 
 You might have different environments set up depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment so that you can access your flows, approvals, notifications, and more, based on the environment you're in.
 
-![Screenshot of changing environments.](media/android/environment.png "Change environments")
+![Screenshot of environments icon.](media/android/environment.png "Evironments")
 
 ## Limitations
 
