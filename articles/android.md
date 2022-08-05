@@ -9,7 +9,6 @@ author: msftman
 manager: tapanm
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: overview
@@ -33,7 +32,7 @@ Experience the same familiar look and feel of the Power Automate portal with the
 > [!IMPORTANT]
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-> - This article only applies to the beta version of the Power Automate mobile app for Android devices. If you want to use the Power Automate mobile app versions generally available across different platforms, refer to the previous articles in this section in the table of contents to the left.
+> - This article only applies to the beta version of the Power Automate mobile app for Android devices. If you want to use the Power Automate mobile app versions generally available across different platforms, refer to the previous articles in this section in the table of contents.
 
 ## Install the beta version
 
@@ -59,7 +58,7 @@ You can view the flows that you've created as well as flows shared with you. Thi
 
 ![Screenshot of a list of flows.](media/android/instant-flows.png "List of flows")
 
-You can view details of each individual flow. For example, you can display connections and run history.
+You can view details of each individual flow, such as the flow description, run history, and connections. You can also turn the flow on or off.
 
 ![Screenshot of flow details.](media/android/flow-details.png "Flow details")
 
@@ -71,7 +70,7 @@ If you've used the previous Power Automate mobile version, you know instant flow
 
 ![Screenshot of a list of instant flows.](media/android/instant-flows-1.png "List of instant flows")
 
-To run an instant flow, select a flow on the **Instant flows** screen, tap **Instant flows**, and then tap **Run flow**.
+To run an instant flow, tap the flow you would like to run from the I**Instant flows** screen, then tap **Run flow**. Some flows might require you to fill in parameters before running the flow.
 
 ![Screenshot of instant flows.](media/android/run-flow.png "Run instant flows")
 
@@ -79,21 +78,23 @@ For quick and easy access to your instant flows, you have the option to create a
 
 ## Manage approvals
 
-The approvals feature allows you to manage your approval requests while you’re away from your desk.
+The approvals feature allows you to manage your approval requests while you’re away from your desk. 
+
+You can approve or reject a request directly from the **Approvals** screen. Alternatively, to view more details of an approval request, tap the verticle (**…**) next to a request and select **Details**.
 
 ![Screenshot of a list of approval requests.](media/android/manage-approvals-1.png "List of approval requests")
 
-To view details of an approval request, select a request and tap **Approvals** on the **Approvals** screen. Select **Approve** or **Reject**.
+In the following example, you can see the additional details, comments, and attachments. Select **Approve** or **Reject**.
 
 ![Screenshot of manage approvals.](media/android/manage-approvals.png "Approval details")
 
 ## Send and receive push notifications
 
-The notifications feature allows you to send and receive push notifications. To get to to the **Notifications** screen, tap the bell icon in the **Instant flows** screen.
+The notifications feature allows you to send and receive push notifications. To get to the **Notifications** screen, tap the bell icon in the app header.
 
 ![Screenshot of push notifications icon.](media/android/notifications-1.png "Notifications icon")
 
-When you tap the bell icon, you'll see a list of recent notifications and flow alerts. If you've used the previous Power Automate mobile app version, you know these as activity feeds.
+When you tap the bell icon, you'll see a list of recent notifications and flow alerts. If you've used the previous Power Automate mobile app version, you know this as Activity Feed.
 
 ![Screenshot of a push notification.](media/android/notifications.png "Notifications")
 
