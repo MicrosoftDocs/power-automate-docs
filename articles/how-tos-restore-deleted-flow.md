@@ -20,17 +20,17 @@ If you or someone else accidentally deletes a flow that isn't part of a solution
 
 There are the two ways you can restore deleted flows.
 
-- Use the [Power Automate Management connector](#restore-deleted-flows-with-the-management-connector) to restore deleted flows.
-- Use [PowerShell](#restore-deleted-flows-with-powershell).
+- Use the [Power Automate Management connector](#restore-deleted-flows-with-the-management-connector) to restore the deleted flows.
+- Use [PowerShell](#restore-deleted-flows-with-powershell) to restore the deleted flows.
 
 >[!NOTE]
-> - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to create a support ticket with Microsoft for assistance.
-> - Flows that were deleted more than 28 days ago can't be recovered, neither with PowerShell script, the Power Automate Management connector, nor Microsoft support.
+> - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to create a support ticket with Microsoft Support for assistance.
+> - Flows that were deleted more than 28 days ago can't be recovered. Both restore methods (PowerShell script and Power Automate Management connector), as well as Microsoft Support can't help to restore them.
 > - After you restore a flow, it defaults to the disabled state. You must manually enable the flow, per your requirements.
 
 ## Restore deleted flows with the management connector
 
-You can also restore a deleted non-solution-aware flow within 28 days of deletion using Power Automate. As an admin, all you need is an instant flow with the Power Automate management connector actions, **Restore Deleted Flow as Admin**.  
+You can restore a deleted non-solution-aware flow within 28 days of deletion using Power Automate. As an admin, all you need is an instant flow with the Power Automate Management connector actions, **Restore Deleted Flow as Admin**.  
 
 Follow these steps to use the **Power Automate Management** connector to restore a deleted flow.
 
