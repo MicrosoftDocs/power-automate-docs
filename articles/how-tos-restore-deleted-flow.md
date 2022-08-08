@@ -4,7 +4,7 @@ description: Learn how to restore deleted flows in Power Automate.
 author: msftman
 manager: tapanm
 ms.subservice: cloud-flow
-ms.date: 08/05/2022
+ms.date: 08/08/2022
 ms.topic: conceptual
 ms.author: deonhe
 search.app: 
@@ -20,7 +20,7 @@ If you or someone else accidentally deletes a flow that isn't part of a solution
 
 There are the two ways you can restore deleted flows.
 
-- Use the [Power Automate Management connector](#restore-deleted-flows-with-the-management-connector) to restore the deleted flows.
+- Use the [Power Automate Management connector](#restore-deleted-flows-with-the-power-automate-management-connector) to restore the deleted flows.
 - Use [PowerShell](#restore-deleted-flows-with-powershell) to restore the deleted flows.
 
 >[!NOTE]
@@ -28,62 +28,60 @@ There are the two ways you can restore deleted flows.
 > - Flows that were deleted more than 28 days ago can't be recovered. Both restore methods (PowerShell script and Power Automate Management connector), as well as Microsoft Support can't help to restore them.
 > - After you restore a flow, it defaults to the disabled state. You must manually enable the flow, per your requirements.
 
-## Restore deleted flows with the management connector
+## Restore deleted flows with the Power Automate Management connector
 
-You can restore a deleted non-solution-aware flow within 28 days of deletion using Power Automate. As an admin, all you need is an instant flow with the Power Automate Management connector actions, **Restore Deleted Flow as Admin**.  
+You can restore a deleted non-solution flow within 28 days of deletion using Power Automate. A non-solution flow is a flow that wasn't created inside a solution. As an admin, all you need is a button flow with two Power Automate management connector actions&mdash;**List Flows as Admin** and **Restore Deleted Flows as Admin**.  
 
-Follow these steps to use the **Power Automate Management** connector to restore a deleted flow.
+As part of this process, in four easy and quick steps, you'll first list deleted flows in an environment using the **List flows as Admin** action. Then, you'll use the **Restore Deleted Flows as Admin** action to restore the flow using `flowName` property of the flow that you retrieved from the **List flows as Admin** action.
 
-1. Sign in to [Power Automate](https://powerautomate.com).
+1. Build a manual flow with a button trigger.  
 
-1. Create an **Instant cloud flow**.
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of a manual flow with a button trigger.](./media/restore-deleted-flow/build-button-trigger.png "Manually trigger a flow")
 
-    :::image type="content" source="media/restore-deleted-flow/create-instant-flow.png" alt-text="An image that displays a flow with the trigger to manually start it.":::
+1. Add the **List Flows as Admin** action.
 
-1. Add the **Manually trigger a flow** trigger.
+    1. Select **New Step**.
+    1. Search for **Power Automate Management Connector** or **List Flows as Admin** action.
+    1. Select the **List Flows as Admin** action.
+    1. In the **Environment** dropdown menu, select the environment the flow was originally deleted from.
+    1. In the **Include Soft-Deleted Flows** dropdown menu, select **Yes**.
 
-    :::image type="content" source="media/restore-deleted-flow//select-manual-trigger.png" alt-text="An image of the manual trigger.":::
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of adding the 'List Flows as Admin' action.](./media/restore-deleted-flow/list-flows-admin.png "'List Flows as Admin' action")
 
-1. Add a **New step**, and then search for and select the **Power Automate Management** connector.
+1. Run the flow to note the `flowName` of the flow you want to retrieve.
 
-    :::image type="content" source="media/restore-deleted-flow/select-management-connector.png" alt-text="An image that displays the management connector.":::
+    1. Run the flow.
+    1. Expand the flow run.
+    1. Expand the raw **OUTPUTS/value** of the **List Flows as Admin** action.
 
-    <!--- 
-    1. Select the **List flows as an admin** action.
-    
-       ![An image that displays the list flows as an admin action.](./media/restore-deleted-flow/select-list-flows-action.png) 
-    --->
+        You'll see all the flows in that environment you have access to as an admin, including the ones that are soft deleted.
 
-1. Optionally, you can need to sign in to the **Power Automate management** action.
+    1. Using the **"displayName"** among other flow metadata, identify the flow you are trying to recover and note the name in **"name"** field.
 
-    :::image type="content" source="media/restore-deleted-flow/sign-in-to-management-connector.png" alt-text="An image that shows how to sign in to the management connector.":::
+        In the following screenshot, the name of the flow is highlighted in green. You'll use this value for the next step.
 
-    <!---
-    1. Select the environment that contains the flow you want to restore.
-    
-       ![An image that displays the environment that contains the flow you want to restore.](./media/restore-deleted-flow/select-environment.png)
-    
-    1. Perform a test run the flow to note the **name** of the flow that you want to restore.
-    
-       ![An image that displays the name of the flow after a successful test run.](./media/restore-deleted-flow/flowname.png)
-    
-    ### Restore the deleted flow
-    
-    Now that you have the name of the flow, it's time to edit the flow to restore it. 
-    
-    --->
+        >[!div class="mx-imgBorder"]
+        >![Screenshot of the flow name in the action output.](./media/restore-deleted-flow/run-flow-flowname.png "Flow name in the 'name' field")
 
-1. Add the **Restore Deleted Flow as Admin** action as a new step in the flow.
+1. Add the **Restore Deleted Flows as Admin** action and run the flow.
 
-    :::image type="content" source="media/restore-deleted-flow/select-restore-deleted-flows-admin-2.png" alt-text="An image that displays the restore deleted flow as admin action.":::
+    1. Add the **Restore Deleted Flows as Admin** action from the Power Automate Management Connector.
+    1. In the **Flow** field, enter the name value from step 3.
 
-1. Select the **Environment** that contains the flow that you want to restore, and then select the **Flow** that you want to restore.
+        >[!div class="mx-imgBorder"]
+        >![Screenshot of adding the 'Restore Deleted Flows as Admin' action.](./media/restore-deleted-flow/restore-deleted-flow.png "'Restore Deleted Flows as Admin' action")
 
-    :::image type="content" source="media/restore-deleted-flow/restore-deleted-flows-card.png" alt-text="An image that displays the Restore deleted flows as admin action card.":::
+    1. Run the flow.
 
-1. Run the flow to restore the deleted flow. After a successful run, you'll get output that confirms that flow was restored.
+        >[!div class="mx-imgBorder"]
+        >![Screenshot of a successfully run flow.](./media/restore-deleted-flow/run-flow.png "Successfully run flow")
 
-    :::image type="content" source="media/restore-deleted-flow/restored-flow.png" alt-text="An image that displays the results of a successful restore operation on a deleted flow.":::
+    After the run has succeeded, you'll notice that the flow has been restored in a disabled state in the environment it was originally deleted from.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of a restored flow.](./media/restore-deleted-flow/restored-deleted-flow.png "Restored flow")
 
 ## Restore deleted flows with PowerShell
 
