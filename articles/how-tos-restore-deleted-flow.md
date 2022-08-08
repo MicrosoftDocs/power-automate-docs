@@ -7,6 +7,7 @@ ms.subservice: cloud-flow
 ms.date: 08/08/2022
 ms.topic: conceptual
 ms.author: deonhe
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -58,7 +59,7 @@ As part of this process, in four easy and quick steps, you'll first list deleted
 
         You'll see all the flows in that environment you have access to as an admin, including the ones that are soft deleted.
 
-    1. Using the **"displayName"** among other flow metadata, identify the flow you are trying to recover and note the name in **"name"** field.
+    1. Using the **"displayName"** among other flow metadata, identify the flow you're trying to recover and note the name in **"name"** field.
 
         In the following screenshot, the name of the flow is highlighted in green. You'll use this value for the next step.
 
