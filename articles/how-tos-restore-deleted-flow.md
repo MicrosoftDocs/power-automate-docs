@@ -43,9 +43,13 @@ As part of this process, in four easy and quick steps, you'll first list deleted
 1. Add the **List Flows as Admin** action.
 
     1. Select **New Step**.
+    
     1. Search for **Power Automate Management Connector** or **List Flows as Admin** action.
+    
     1. Select the **List Flows as Admin** action.
+    
     1. In the **Environment** dropdown menu, select the environment the flow was originally deleted from.
+    
     1. In the **Include Soft-Deleted Flows** dropdown menu, select **Yes**.
 
     >[!div class="mx-imgBorder"]
