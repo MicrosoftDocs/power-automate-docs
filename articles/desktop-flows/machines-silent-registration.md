@@ -64,7 +64,7 @@ To silently register your machine and join a group, we recommend you to use a se
 
 ## How to use the Machine registration App?
 1.	Open **Start** menu
-1.	Search for command prompt (or PowerShell) and then run it as the administrator
+1.	Search for command prompt (or PowerShell)
 1.	Change the directory to the Power Automate install folder (by default: C:\Program Files (x86)\Power Automate)
 
     ```
