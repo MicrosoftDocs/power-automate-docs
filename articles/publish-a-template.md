@@ -42,7 +42,7 @@ Follow the steps shown below to submit a cloud flow template to the Power Automa
 
 1. On the **Submit as template** screen, provide the following:
     1. A meaningful title. Make sure the title is fewer than 75 characters.
-    1. A clear description of the scenario that your template automates. Make sure the description/summary is fewer than 1,024 characters. Having accurate English text ensures that misunderstandings to our customers aren't multiplied into 42 languages.
+    1. A clear description of the scenario that your template automates. Make sure the description/summary is fewer than 1,024 characters. Having accurate English text ensures that misunderstandings to our customers aren't translated into multiple languages.
     1. The biggest benefit.
     1. The number of users.
     1. The number of runs
