@@ -7,8 +7,9 @@ author: msftman
 manager: tapanm
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/14/2022
+ms.date: 08/10/2022
 ms.author: deonhe
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -22,7 +23,7 @@ Follow the steps shown below to submit a cloud flow template to the Power Automa
 
 1. On the left pane, select **My flows**.
 
-1. Select a cloud flow, and then select the **More commands** (...) icon.
+1. Select a cloud flow, and then select the **More commands** (vertical ellipses) icon.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the More commands icon.](./media/publish-a-template/ellipsis-button.png "More commands icon")
@@ -39,7 +40,13 @@ Follow the steps shown below to submit a cloud flow template to the Power Automa
     >[!div class="mx-imgBorder"]
     >![Screenshot showing warning message of no successful runs.](./media/publish-a-template/need-successful-run-warning.png "Warning message of no successful runs")
 
-1. Provide a meaningful title, a clear description of the scenario that your template automates, the biggest benefit, the number of users, the number of runs, and the categories that apply for the template.
+1. On the **Submit as template** screen, provide the following:
+    1. A meaningful title. Make sure the title is fewer than 75 characters.
+    1. A clear description of the scenario that your template automates. Make sure the description/summary is fewer than 1,024 characters. Having accurate English text ensures that misunderstandings to our customers aren't translated into multiple languages.
+    1. The biggest benefit.
+    1. The number of users.
+    1. The number of runs
+    1. The categories that apply to the template.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of template options.](./media/publish-a-template/template-options.png "Template options")
