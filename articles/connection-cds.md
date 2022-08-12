@@ -5,16 +5,15 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
+manager: tapanm
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/13/2021
+ms.date: 08/12/2022
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -25,25 +24,22 @@ search.audienceType:
 
 # Create an automated flow with Microsoft Dataverse
 
-
-
 >[!IMPORTANT]
->There are three connectors available to connect to Dataverse. Use the recommended [Microsoft Dataverse connector](./dataverse/overview.md). The **Microsoft Dataverse (legacy)** connector, covered in this article, and the [Dynamics 365 connector](/connectors/dynamicscrmonline/) are available if you are unable to use the recommended connector.
+>To connect to Dataverse, use the recommended [Microsoft Dataverse connector](./dataverse/overview.md). The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is also available if you're unable to use the recommended connector.
+>
 
-With the Microsoft Dataverse (legacy) connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on rows within Dataverse.
+With the Microsoft Dataverse connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on rows within Dataverse.
 
 ## Initiate a cloud flow from Dataverse
 
 You can use any of the following triggers to initiate your flow.
 
-- When a flow step is run from a business process flow
-- When a row is added
-- When a row is modified
-- When a row is deleted
-- When a action is performed (preview)
+- When a flow step is run from a business process flow.
+- When a row is added, modified, or deleted.
+- When an action is performed.
 
 > [!div class="mx-imgBorder"]
-> ![Select a trigger.](./media/cds-connector/Triggers.png)
+> ![Select a trigger.](./media/cds-connector/triggers.png)
 
 If the selected trigger requires an environment to be selected, then you can choose `(Current)`, which will always use the database within the environment in which Power Automate runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
 

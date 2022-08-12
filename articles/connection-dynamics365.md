@@ -6,10 +6,9 @@ suite: flow
 documentationcenter: na
 author: JimDaly
 ms.reviewer: deonhe
-
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 05/31/2020
+ms.date: 08/12/2022
 ms.author: jdaly
 search.app: 
   - Flow
@@ -26,10 +25,9 @@ search.audienceType:
 >
 > The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is deprecated, but continues to work until removed. More information: [Dynamics 365 Connector is deprecated](/power-platform/important-changes-coming#dynamics-365-connector-is-deprecated).
 > 
-> Do not use the Dynamics 365 connector for new flows. Use the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) whenever you can. If the Microsoft Dataverse connector does not fit your needs, use the [Microsoft Dataverse (legacy) connector](/connectors/commondataservice/).
+> Don't use the Dynamics 365 connector for new flows. Use the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/).
 >
-> The [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it does not currently provide certain capabilities that the Dynamics 365 and Microsoft Dataverse connectors do, such as the ability to connect to multiple environments. The [Microsoft Dataverse (legacy)](/connectors/commondataservice/) provides the same capabilities as the Dynamics 365 connector, but also provides substantially improved reliability.
-
+> The [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it doesn't currently provide certain capabilities that the Dynamics 365 connector does, such as the ability to connect to multiple environments.
 
 By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
 
