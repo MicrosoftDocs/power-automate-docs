@@ -1,5 +1,5 @@
 ---
-title: Run instant flows in Power Automate mobile for Android | Microsoft Docs
+title: Run instant flows in Power Automate mobile | Microsoft Docs
 description: Provides an overview of running an instant flow Power Automate mobile for Android.
 services: ''
 suite: flow
