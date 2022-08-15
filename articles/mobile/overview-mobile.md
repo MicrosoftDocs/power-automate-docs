@@ -57,7 +57,7 @@ To download the mobile version:
 
 1. Tap **Install**.  
 
-![Screenshot of Power Automate.](media/android/install.png "Install Power Automate")
+<!--![Screenshot of Power Automate.](media/android/install.png "Install Power Automate")-->
 
 > [!NOTE]
 > Plans to update Power Automate mobile for iOS are in the works.
