@@ -2,12 +2,11 @@
 title: Replace classic Microsoft Dataverse workflows with Power Automate | Microsoft Docs
 description: Describes Power Automate capabilities and recommended patterns to use flow instead of a classic workflow.
 author: MSFTMAN
-manager: KVIVEK
+manager: tapanm
 ms.author: Deonhe
-
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 09/25/2020
+ms.date: 08/12/2022
 search.app: 
   - Flow
 search.audienceType: 
@@ -512,7 +511,7 @@ When you run this flow against your quote, it summarizes quote line items for th
 
   - For scenarios where a connector you need isn’t available out-of-the-box, easily create your own custom connector. More information: [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
 
-  - Finally, if there are scenarios where you cannot trigger your flow using Microsoft Dataverse (legacy) connector, one of the out-of-the-box connectors, or by creating a custom connector, leverage the [When an HTTP request is received trigger](/azure/connectors/connectors-native-reqres) to invoke the flow.
+  - Finally, if there are scenarios where you can't trigger your flow using one of the prebuilt connectors or by creating a custom connector, use the [When an HTTP request is received trigger](/azure/connectors/connectors-native-reqres) to invoke the flow.
 
 - **Workflows that run recursively**
 
