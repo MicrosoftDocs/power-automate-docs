@@ -20,13 +20,12 @@ search.audienceType:
 
 Process mining offers insights and recommendations that are designed to guide you in your process optimization journey. These insights and recommendations appear in both the analytics page and the process details page. In this section, you'll learn the benefits of applying them to your flows.
 
-> [!NOTE]
-> These process insights are available for all data processes that load event log data via manual or templated uploads. They aren't currently available for cloud flows.
-
 > [!IMPORTANT]
 > - This is a preview feature.
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+>
+> - These process insights are available for all data processes that load event log data via manual or templated uploads. They aren't currently available for cloud flows.
 
 ## Data quality
 
