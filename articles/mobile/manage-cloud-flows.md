@@ -21,9 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Manage cloud flows on the go in Power Automate
+# Manage cloud flows on the go
 
-Power Automate mobile allows you to view the flows you've created in preview. This includes non-solution and solution-aware flows.
+Power Automate mobile allows you to view the flows you've created. This includes non-solution and solution-aware flows.
 
 Power Automate mobile offers the following additional cloud flow management tools.
 

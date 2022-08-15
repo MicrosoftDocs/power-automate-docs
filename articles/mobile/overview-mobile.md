@@ -21,24 +21,23 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Manage cloud flows in Power Automate mobile
+# Overview of how to manage cloud flows
 
 Experience the same familiar look and feel of the Power Automate portal with Power Automate mobile for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
 
 Use Power Automate mobile to do the following scenarios:
 
-- [Run instant flows](run-instant-flows.md).
+- [Run instant flows](run-instant-flows.md)
 
-- [Manage approvals](manage-approvals.md).
+- [Manage approvals](manage-approvals.md)
 
-- [Send and receive push notifications](send-receive-push.md).
+- [Send and receive push notifications](send-receive-push.md)
 
-- [Manage cloud flows](manage-cloud-flows.md).
+- [Manage cloud flows](manage-cloud-flows.md)
 
 ## Install Power Automate mobile
 
-If you're not signed up for Power Automate, [sign up for free](https://make.powerapps.com/signup?redirect=marketing&email=). Then choose the download link or scan the QR code to download Power Automate mobile.
-
+If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-in.md). Then choose the download link or scan the QR code to download Power Automate mobile.
 
 | Android |
 | :---:   |
@@ -61,5 +60,11 @@ To download the mobile version:
 
 > [!NOTE]
 > Plans to update Power Automate mobile for iOS are in the works.
+
+## Change environments
+
+You might have different environments set up depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment so that you can access your flows, approvals, notifications, and more, based on the environment you're in.
+
+![Screenshot of environments icon.](/articles/media/android/environment.png "Evironments")
  
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
