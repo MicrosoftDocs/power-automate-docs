@@ -26,9 +26,10 @@ search.audienceType:
 ---
 # Tutorial: Create a business process flow
 
+>[!IMPORTANT]
+> As of August 2022, creating and managing business process flows is no longer supported from the Power Automate portal outside of the solution explorer. Business process flows and instances continue to be supoprted through the solution explorer, Power Apps, and Dataverse table views.
 
-
-This tutorial shows you how to create a business process flow with Power Apps. To learn more about why you use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
+This tutorial shows you how to create a business process flow with [Power Apps](/power-apps/powerapps-overview). To learn more about why to use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
  When a user starts a business process flow, the stages and steps of the process are displayed in the process bar at the top of a form:  
   
@@ -41,80 +42,80 @@ This tutorial shows you how to create a business process flow with Power Apps. T
 
 ## Prerequisites
 
-You need a [per user plan](https://flow.microsoft.com/pricing/) in order to create business process flows. Some Dynamics 365 license plans include the per user plan. Business process flows are currently not supported in Dataverse for Teams.
+* To create business process flows, you need a Power Apps or Power Automate per user license, or a [Dynamics 365 license plan](https://go.microsoft.com/fwlink/?linkid=2085130) that includes business process flow use rights. 
+* A table that the business process flow will be associated with. If the business process flow is not related to an existing table, [create a new table](/power-apps/maker/data-platform/create-edit-entities-portal) before creating the flow. 
 
-## Create a business process flow  
+## Create a business process flow
   
-1. In Power Automate, select **My flows** from the navigation bar on the left.
-3. Select **Business process flows**.
-4. Select **New**.
-   a. Give your flow a name. 
-   b. Optionally, change the **Name** if you don't want to use the name that the system generates.
-   c. Select the table in which the flow will be used.
+1. In [Power Apps](https://make.powerapps.com) or [Power Automate](https://make.powerautomate.com), select **Solutions** from the navigation bar on the left. 
+2. Select or create a [solution](/power-apps/maker/data-platform/solutions-overview) to use for the business process flow. 
+3. Within the solution, select **New** > **Automation** > **Process** > **Business process flow**.
+   a. Give your flow a **Display name** and **Name** ([LogicalName](/power-apps/developer/data-platform/entity-metadata)).
+   c. Select the table from which the flow will be used. 
    d. Select **Create**.
   
      The new business process flow is created.  You can now edit it with a first single stage created for you.  
      ![Business process flow window showing main elements.](media/business-process-flow-window-showing-main-elements.png "Business process flow window showing main elements")  
-1. **Add stages.** If your users will progress from one business stage to another in the  process:
+4. **Add stages.** If your users will progress from one business stage to another in the  process:
   
     1. Drag a **Stage** component from the **Components** tab and drop it on a + sign in the designer.  
   
         ![Drag a business process stage.](media/drag-business-process-stage.png "Drag a business process stage")  
-    1. To set the properties for a stage, select the stage, and then set the properties in the **Properties** tab on the right side of the screen:  
+    2. To set the properties for a stage, select the stage, and then set the properties in the **Properties** tab on the right side of the screen:  
   
         - Enter a display name.  
         - If desired, select a category for the stage.  The category  (such as **Qualify** or **Develop**), appears as a chevron in the process bar.  
   
             ![Business process bar chevron.](media/business-process-bar-chevron.png "Business process bar chevron")  
         - When you're done changing properties, select the **Apply** button.  
-1. **Add steps to a stage.** To see the steps in a stage, select **Details** in the lower-right corner of the stage. To add more steps:  
+5. **Add steps to a stage.** To see the steps in a stage, select **Details** in the lower-right corner of the stage. To add more steps:  
   
     1. Drag the **Step** component to the stage from the **Components** tab.  
   
         ![Add step to a stage in a business process.](media/add-step-stage-business-process.png "Add step to a stage in a business process")  
   
-    1. Select the step, and then set properties in the **Properties** tab:  
+    2. Select the step, and then set properties in the **Properties** tab:  
   
         1. Enter a display name for the step.  
-        1. If you want users to enter data to complete a step, select the appropriate column from the drop-down list.  
-        1. Select **Required** if people must fill in the column to complete the step before moving to the next stage of the process.  
-        1. Select **Apply** when you're done.  
+        2. If you want users to enter data to complete a step, select the appropriate column from the drop-down list.  
+        3. Select **Required** if people must fill in the column to complete the step before moving to the next stage of the process.  
+        4. Select **Apply** when you're done.  
 
      > [!NOTE]
      >
      > - If you set a two-option boolean column as **Required**, users can't continue unless the column value is **Yes**. The user is required to mark the column as completed before moving to the next stage.
      > - If either **Yes** or **No** are acceptable column values, then you should make the column a choice instead of a two-option boolean column.
   
-1. **Add a branch (condition) to the process.** To add a branching condition:  
+6. **Add a branch (condition) to the process.** To add a branching condition:  
   
      1. Drag the **Condition** component from the **Components** tab to a + sign between two stages.
      
         ![Add a Condition to a business process flow.](media/add-condition-business-process-flow.png "Add a Condition to a business process flow")
-     1. Select the condition, and then set properties in the **Properties** tab. For more information on branching properties, see [Enhance business process flows with branching](enhance-business-process-flows-branching.md). When you're finished setting properties for the condition, select **Apply**.  
-1. **Add a workflow.** To invoke a workflow:  
+     2. Select the condition, and then set properties in the **Properties** tab. For more information on branching properties, see [Enhance business process flows with branching](enhance-business-process-flows-branching.md). When you're finished setting properties for the condition, select **Apply**.  
+7. **Add a workflow.** To invoke a workflow:  
   
     1. Drag a **Workflow** component from the **Components** tab to a stage or to the **Global Workflow** item in the designer.   Which one you add it to depends on the following:  
   
         - **Drag it to a stage** when you want to trigger the workflow on entry or exit of the stage. The workflow component must be based on the same primary table as the stage.  
         - **Drag it to the Global Workflow item** when you want to trigger the workflow when the process is activated or when the process is archived (when the status changes to **Completed** or **Abandoned**). The workflow component must be based on the same primary table as the process.  
-    1.  Select the workflow, and then set properties in the **Properties** tab:  
+    2.  Select the workflow, and then set properties in the **Properties** tab:  
 
         1. Enter a display name.  
-        1. Select when the workflow should be triggered.  
-        1. Search for an existing on-demand active workflow that matches the stage table or create a new workflow by selecting **New**.  
-        1. Select **Apply** when you're done.  
+        2. Select when the workflow should be triggered.  
+        3. Search for an existing on-demand active workflow that matches the stage table or create a new workflow by selecting **New**.  
+        4. Select **Apply** when you're done.  
   
     For more information on workflows, see [Workflow processes](/power-automate/workflow-processes).  
   
-1. To validate the business process flow, select **Validate** on the action bar.  
-1. To save the process as a draft while you continue to work on it, select **Save** in the action bar.  
+8. To validate the business process flow, select **Validate** on the action bar.  
+9. To save the process as a draft while you continue to work on it, select **Save** in the action bar.  
   
     > [!IMPORTANT]
     >  As long as a process is a draft, people won’t be able to use it.  
   
-12. To activate the process and make it available to your team, select **Activate** on the action bar.  
+10. To activate the process and make it available to your team, select **Activate** on the action bar.  
 
-13. To provide control over who can create, read, update, or delete the business process flow instance, select **Edit Security Roles** on the command bar of the designer. For example, for service-related processes, you could provide full access for customer service reps to change the business process flow instance, but provide read-only access to the instance for sales reps so they can monitor post-sales activities for their customers.
+11. To provide control over who can create, read, update, or delete the business process flow instance, select **Edit Security Roles** on the command bar of the designer. For example, for service-related processes, you could provide full access for customer service reps to change the business process flow instance, but provide read-only access to the instance for sales reps so they can monitor post-sales activities for their customers.
 
   In the **Security Roles** screen, select the name of a role to open the security role information page. Select the Business Process Flows tab, and then assign appropriate privileges on the business process flow for a security role.
 
@@ -132,11 +133,11 @@ You need a [per user plan](https://flow.microsoft.com/pricing/) in order to crea
 >
 > - To take a snapshot of everything in the business process flow window, select **Snapshot** on the action bar. This is useful, for example, if you want to share and get comments on the process from a team member.  
 > - Use the mini-map to navigate quickly to different parts of the process. This is useful when you have a complicated process that scrolls off the screen.  
-> - To add a description for the business process, select **Details** under the process name in the left corner of the business process flow window. You can use up to 2000 characters.  
-  
+> - To add a description for the business process, select **Details** under the process name in the left corner of the business process flow window. You can use up to 2000 characters. 
+
 <a name="BKMK_Editbusinessprocessflows"></a>   
 ## Edit a business process flow  
- To edit business process flows, open solution explorer, select **Processes**, and then select the **Business Process Flow** from the list of processes that you want to edit.  
+ To edit a business process flow, open the solution explorer, select **Processes**, and then select the **Business Process Flow** from the list of processes that you want to edit.  
   
  When you select the name  of the business process flow you want to edit from the list of processes, it opens in the designer, where you can make any updates you want. Expand **Details** under the name of the process to rename it or add a description, and view additional information.  
   
