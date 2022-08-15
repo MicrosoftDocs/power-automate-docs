@@ -1,11 +1,10 @@
 ---
-title: Run instant flows in Power Automate mobile beta | Microsoft Docs
-description: Provides an overview of Power Automate mobile.
+title: Run instant flows in Power Automate mobile for Android | Microsoft Docs
+description: Provides an overview of running an instant flow Power Automate mobile for Android.
 services: ''
 suite: flow
 documentationcenter: na
 author: v-aangie
-
 manager: tapanm
 editor: ''
 tags: ''
@@ -22,17 +21,19 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Run instant flows in Power Automate beta (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Run instant flows
 
-Power Automate mobile enables you to run your instant flows. If you've used the previous Power Automate mobile version, you know these as *button* flows. The mobile app also supports widgets. This allows you to create shortcuts to your instant flows on your device’s home screen.
+The instant flows feature allows you to easily run repetitive tasks from any place, at any time with your mobile device. Running instant cloud flows are automated, which saves you time. You might also encounter fewer errors than if you performed the tasks manually.
 
-## Why create instant flows?
+If you've used the previous Power Automate mobile version, you know instant flows as button flows.
 
-Create instant flows so that you can easily run repetitive tasks from any place, at anytime with your mobile device. Running instant cloud flows are automated, which saves you time. You might also encounter fewer errors than if you performed the tasks manually.
+![Screenshot of a list of instant flows.](/articles/media/android/instant-flows-1.png "List of instant flows")
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of instant flows.](../media/mobile/instant-flows.png "Instant flows")
+To run an instant flow, tap the flow you would like to run from the **Instant flows** screen, then tap **Run flow**. Some flows might require you to fill in parameters before running the flow.
+
+![Screenshot of instant flows.](/articles/media/android/run-flow.png "Run instant flows")
+
+For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -23,26 +23,13 @@ search.audienceType:
 ---
 # Manage approvals on the go
 
-The approvals feature allows you to manage your approval requests while you’re away from your desk.
+The approvals feature allows you to manage your approval requests while you’re away from your desk. 
 
 You can approve or reject a request directly from the **Approvals** screen. Alternatively, to view more details of an approval request, tap the vertical (**…**) next to a request and select **Details**.
 
-![Screenshot of a list of approval requests.](media/android/manage-approvals-1.png "List of approval requests")
+![Screenshot of a list of approval requests.](/articles/media/android/manage-approvals-1.png "List of approval requests")
 
 In the following example, you can see the additional details, comments, and attachments. Select **Approve** or **Reject**.
 
-![Screenshot of manage approvals.](media/android/manage-approvals.png "Approval details")
-
-To respond to approvals:
-
-1. Tap the down arrow to view the entire entry.
-    If there's an attachment, tap the paper clip to open it.
-
-1. Display the approval buttons by tapping the three dots.
-
-1. Tap **Accept** or **Reject**.
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of instant flows.](../media/mobile/manage-approvals.png "Instant flows")
-
+![Screenshot of manage approvals.](/articles/media/android/manage-approvals.png "Approval details")
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
