@@ -4,15 +4,8 @@ description: "The sample demonstrates how to programmatically work with business
 ms.custom: ""
 ms.date: 04/05/2018
 ms.reviewer: ""
-
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.subservice: ""
+ms.subservice: developer
 ms.topic: "article"
-applies_to: 
-  - "Dynamics 365 (online)"
-ms.assetid: 7d378504-b4b2-4a09-838c-69ee094072ef
-caps.latest.revision: 15
 author: "msftman"
 ms.author: "deonhe"
 search.app: 

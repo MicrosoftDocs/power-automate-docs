@@ -61,6 +61,8 @@
       href: button-flow-with-user-input-tokens.md
     - name: Share a button
       href: share-buttons.md
+    - name: Power Automate (Beta) mobile app for Android (preview)
+      href: android.md
   - name: How to
     items:
     - name: Add an action
@@ -78,7 +80,7 @@
       href: how-tos-use-sensitive-input.md
     - name: Cancel or resubmit flow runs in bulk
       href: how-tos-bulk-resubmit.md
-    - name: Restore deleted flows with PowerShell
+    - name: Restore deleted flows
       href: how-tos-restore-deleted-flow.md
     - name: Use Visio to model flows
       href: visio-flows.md

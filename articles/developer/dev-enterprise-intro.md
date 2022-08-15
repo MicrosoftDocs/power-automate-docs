@@ -2,8 +2,7 @@
 title: Power Automate for enterprise developers, ISVs, and partners | Microsoft Docs
 description: An introduction to developing solutions for Power Automate.
 author: MSFTMan
-manager: KVivek
-ms.subservice: Developer
+ms.subservice: developer
 ms.topic: article
 ms.date: 09/10/2021
 ms.author: Deonhe
@@ -62,7 +61,7 @@ Once you have a connector, you should publish templates that demonstrate how to 
 
 ### 5. Deployment
 
-To give end users access to flows that they can use automatically, deploy the flows into the Azure AD tenant of the user. Use a deployment package that you deploy using our REST APIs or PowerShell. [Learn more]( //powerapps/administrator/export-import-packages)
+To give end users access to flows that they can use automatically, deploy the flows into the Azure AD tenant of the user. Use a deployment package that you deploy using our REST APIs or PowerShell. [Learn more](/powerapps/administrator/export-import-packages)
 
 ### 6. Licensing
 

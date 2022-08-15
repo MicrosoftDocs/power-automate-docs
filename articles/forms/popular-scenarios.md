@@ -61,7 +61,7 @@ We'll start with a pre-built template and customize it to help our managers plan
 
 ## Send an email to the form responder
 
-You can turn on [email receipts for respondents](https://support.microsoft.com/office/send-an-email-receipt-of-responses-951f29b7-dbd8-446b-8ebe-b924cc620bb20) in your form settings. If you want to customize the email they receive, use Power Automate.
+You can turn on email receipts for respondents in your form settings. If you want to customize the email they receive, use Power Automate.
 
 Follow the steps to [send an email when there's a new form response](#send-an-email-when-theres-a-new-form-response), but send the email to the responder.
 
