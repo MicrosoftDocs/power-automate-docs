@@ -4,7 +4,7 @@ description: Learn how to optimize your processes with automated insights and re
 author: arashurara 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 07/26/2022
+ms.date: 08/15/2022
 ms.author: wangroy
 ms.reviewer: angieandrews
 search.app: 
