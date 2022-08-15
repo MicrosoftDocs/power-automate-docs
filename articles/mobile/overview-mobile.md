@@ -65,6 +65,6 @@ To download the mobile version:
 
 You might have different environments set up depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment so that you can access your flows, approvals, notifications, and more, based on the environment you're in.
 
-![Screenshot of environments icon.](/articles/media/android/environment.png "Evironments")
+![Screenshot of environments icon.](media/environment.png "Environments")
  
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
