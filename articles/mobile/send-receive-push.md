@@ -25,10 +25,10 @@ search.audienceType:
 
 The notifications feature allows you to send and receive push notifications. To get to the **Notifications** screen, tap the bell icon in the app header.
 
-![Screenshot of push notifications icon.](/articles/media/android/notifications-1.png "Notifications icon")
+![Screenshot of push notifications icon.](media/notifications-1.png "Notifications icon")
 
 When you tap the bell icon, you'll see a list of recent notifications and flow alerts. If you've used the previous Power Automate mobile app version, you know this as Activity Feed.
 
-![Screenshot of a push notification.](/articles/media/android/notifications.png "Notifications")
+![Screenshot of a push notification.](media/notifications.png "Notifications")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

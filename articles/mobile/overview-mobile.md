@@ -42,7 +42,7 @@ If you're not signed up for Power Automate, [sign up for free](https://make.powe
 
 | Android |
 | :---:   |
-| [![Download Power Automate from Google Play.](/articles/media/android/google-play.png "Download Power Automate from Google Play") ](https://play.google.com/store/apps/details?id=com.microsoft.msapps)    |
+| [![Download Power Automate from Google Play.](media/google-play.png "Download Power Automate from Google Play") ](https://play.google.com/store/apps/details?id=com.microsoft.msapps)    |
 |  ***(Insert screenshot of the QR code here)***    |
 
 Before you can install the mobile version, the Power Automate app must be installed on your device.

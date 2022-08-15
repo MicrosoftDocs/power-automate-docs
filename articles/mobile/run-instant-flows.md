@@ -28,11 +28,11 @@ The instant flows feature allows you to easily run repetitive tasks from any pla
 
 If you've used the previous Power Automate mobile version, you know instant flows as button flows.
 
-![Screenshot of a list of instant flows.](/articles/media/android/instant-flows-1.png "List of instant flows")
+![Screenshot of a list of instant flows.](media/instant-flows-1.png "List of instant flows")
 
 To run an instant flow, tap the flow you would like to run from the **Instant flows** screen, then tap **Run flow**. Some flows might require you to fill in parameters before running the flow.
 
-![Screenshot of instant flows.](/articles/media/android/run-flow.png "Run instant flows")
+![Screenshot of instant flows.](media/run-flow.png "Run instant flows")
 
 For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen.
 

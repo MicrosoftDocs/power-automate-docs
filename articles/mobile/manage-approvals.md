@@ -27,9 +27,9 @@ The approvals feature allows you to manage your approval requests while you’re
 
 You can approve or reject a request directly from the **Approvals** screen. Alternatively, to view more details of an approval request, tap the vertical (**…**) next to a request and select **Details**.
 
-![Screenshot of a list of approval requests.](/articles/media/android/manage-approvals-1.png "List of approval requests")
+![Screenshot of a list of approval requests.](media/manage-approvals-1.png "List of approval requests")
 
 In the following example, you can see the additional details, comments, and attachments. Select **Approve** or **Reject**.
 
-![Screenshot of manage approvals.](/articles/media/android/manage-approvals.png "Approval details")
+![Screenshot of manage approvals.](media/manage-approvals.png "Approval details")
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
