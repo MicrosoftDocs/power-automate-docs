@@ -21,7 +21,7 @@ search.audienceType:
 Process mining offers insights and recommendations that are designed to guide you in your process optimization journey. These insights and recommendations appear in both the analytics page and the process details page. In this section, you'll learn the benefits of applying them to your flows.
 
 > [!IMPORTANT]
-> - This is a preview feature.
+> - This is a preview feature and might not be available in your region yet.
 >
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >
