@@ -42,7 +42,7 @@ Existing UI elements are displayed in the UI element pane, while new ones can be
 
 ![Screenshot of the available UI elemets in the Press button in window action.](./media/ui-automation/adding-new-elements-through-a-ui-action.png)
 
-To add a new UI element, highlight the appropriate element and press **Ctrl & left-click**. After adding all the elements, select **Done** to save them.
+To add a new UI element, highlight the appropriate element and press **Ctrl + Left click**. After adding all the elements, select **Done** to save them.
 
 ![Screenshot of an application window while capturing a new UI element.](./media/ui-automation/capturing-new-ui-elements.png)
 

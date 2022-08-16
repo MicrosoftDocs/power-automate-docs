@@ -25,6 +25,6 @@ To retrieve emails from a shared mailbox, use the **Retrieve email messages from
 
 To send emails through a shared mailbox, use the **Send email message through Outlook** action. 
 
-In the action's properties, select **Other mailbox** in the **Send email message from** drop-down menu, and populate the name of the shared mailbox in the **Send from** field. Additionally, populate the **Account** field with the address of your main account.
+In the action's properties, select **Other mailbox** in the **Send email message from** drop-down menu, and populate the name or address of the shared mailbox in the **Send from** field. Additionally, populate the **Account** field with the address of your main account.
 
 ![Screenshot of the configured Send email message through Outlook action for a shared mailbox.](media/outlook-shared-mailbox/send-email-message-outlook-shared-mailbox.png)

@@ -17,9 +17,12 @@ search.audienceType:
 
 # Autofit Excel columns using VBScript
 
+> [!NOTE]
+> Desktop flows provide the **Resize columns/rows in Excel worksheet** action to facilitate the resizing of Excel columns and rows. This article shows an alternative way to resize Excel columns and rows using scripting.  
+
 The autofit feature in Excel enables users to resize cells in worksheets to accommodate different-sized data without manually changing the column width and row height.
 
-To autofit Excel columns using Power Automate:
+To autofit Excel columns using scripting in Power Automate:
 
 1. Use the **Set variable** action to create a new variable containing the path of the Excel file you want to manipulate. In this example, the variable is named **ExcelFile**.
 
