@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: hamenon 
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/09/2022
+ms.date: 08/16/2022
 ms.author: tatn
 search.app: 
   - Flow
@@ -55,11 +55,11 @@ Approvals that rely on custom responses can fail if they're sent to many users w
 
 **Power Apps V2 trigger doesn't support non-open API flows**
 
-If you update your Power Apps V1 trigger to the Power Apps V2 trigger, your flow will break with a connection error. As a workaround, after you update your flow to the Power Apps V2 trigger, remove and re-add the flow, then save the app.
+If you update your Power Apps V1 trigger to the Power Apps V2 trigger, your flow receive a connection error. To workaround this issue, update your flow to the Power Apps V2 trigger, remove and re-add the flow, and then save the app.
 
 **Updating Power Apps v2 trigger to invoker connection**
 
-The Power Apps V2 trigger supports both embedded and invoker connections. When updating the connections in your Power Apps V2 trigger to invoker connections, you must refresh or remove and re-add the flow in the app and save the app. 
+The Power Apps V2 trigger supports both embedded and invoker connections. When you update the connections in your Power Apps V2 trigger to invoker connections, you must refresh or remove and re-add the flow in the app and save the app. 
 
 **Splitting create and wait actions**
 It's possible to create flows with the approval connector where you use the *Create an approval* and *Wait for an approval* as independant actions. If a user immediatly responds to an approval request before the flow reaches the wait action, it's possible for the flow to become stuck in the wait stage. To avoid getting the flow stuck, please ensure that the create and the wait actions are called close together within the flow. Alternately, change the status of the approval in Dataverse before you call the wait action. 
