@@ -21,9 +21,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Overview of how to manage cloud flows
+# Overview of Power Automate mobile app for Android
 
-Experience the same familiar look and feel of the Power Automate portal with Power Automate mobile for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
+Experience the same familiar look and feel of the Power Automate portal with Power Automate mobile app for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
 
 Use Power Automate mobile to do the following scenarios:
 
