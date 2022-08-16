@@ -1,12 +1,13 @@
 ---
-title: Restore deleted flows with PowerShell in Power Automate | Microsoft Docs
-description: Learn how to restore deleted flows with PowerShell in Power Automate.
+title: Restore deleted flows in Power Automate | Microsoft Docs
+description: Learn how to restore deleted flows in Power Automate.
 author: msftman
 manager: tapanm
 ms.subservice: cloud-flow
-ms.date: 06/23/2022
+ms.date: 08/08/2022
 ms.topic: conceptual
 ms.author: deonhe
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -14,23 +15,88 @@ search.audienceType:
   - enduser
 ---
 
-# Restore deleted flows with PowerShell
+# Restore deleted flows
 
-If you or someone else accidentally deletes a flow that isn't part of a solution, you can use PowerShell to restore it within 28 days of deletion.
+If you or someone else accidentally deletes a flow that isn't part of a solution, you can restore it within 28 days of deletion.
+
+There are the two ways you can restore deleted flows.
+
+- Use the [Power Automate Management connector](#restore-deleted-flows-with-the-power-automate-management-connector) to restore the deleted flows.
+- Use [PowerShell](#restore-deleted-flows-with-powershell) to restore the deleted flows.
 
 >[!NOTE]
->
-> - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to create a support ticket with Microsoft for assistance.
-> - Flows that have been deleted more than 28 days ago can't be recovered, neither with PowerShell script nor Microsoft support.
+> - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to create a support ticket with Microsoft Support for assistance.
+> - Flows that were deleted more than 28 days ago can't be recovered. Both restore methods (PowerShell script and Power Automate Management connector), as well as Microsoft Support can't help to restore them.
+> - After you restore a flow, it defaults to the disabled state. You must manually enable the flow, per your requirements.
 
-## Prerequisites
+## Restore deleted flows with the Power Automate Management connector
+
+You can restore a deleted non-solution flow within 28 days of deletion using Power Automate. A non-solution flow is a flow that wasn't created inside a solution. As an admin, all you need is a button flow with two Power Automate management connector actions&mdash;**List Flows as Admin** and **Restore Deleted Flows as Admin**.  
+
+As part of this process, in four easy and quick steps, you'll first list deleted flows in an environment using the **List flows as Admin** action. Then, you'll use the **Restore Deleted Flows as Admin** action to restore the flow using `flowName` property of the flow that you retrieved from the **List flows as Admin** action.
+
+1. Build a manual flow with a button trigger.  
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of a manual flow with a button trigger.](./media/restore-deleted-flow/build-button-trigger.png "Manually trigger a flow")
+
+1. Add the **List Flows as Admin** action.
+
+    1. Select **New Step**.
+    
+    1. Search for **Power Automate Management Connector** or **List Flows as Admin** action.
+    
+    1. Select the **List Flows as Admin** action.
+    
+    1. In the **Environment** dropdown menu, select the environment the flow was originally deleted from.
+    
+    1. In the **Include Soft-Deleted Flows** dropdown menu, select **Yes**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of adding the 'List Flows as Admin' action.](./media/restore-deleted-flow/list-flows-admin.png "'List Flows as Admin' action")
+
+1. Run the flow to note the `flowName` of the flow you want to retrieve.
+
+    1. Run the flow.
+    1. Expand the flow run.
+    1. Expand the raw **OUTPUTS/value** of the **List Flows as Admin** action.
+
+        You'll see all the flows in that environment you have access to as an admin, including the ones that are soft deleted.
+
+    1. Using the **"displayName"** among other flow metadata, identify the flow you're trying to recover and note the name in **"name"** field.
+
+        In the following screenshot, the name of the flow is highlighted in green. You'll use this value for the next step.
+
+        >[!div class="mx-imgBorder"]
+        >![Screenshot of the flow name in the action output.](./media/restore-deleted-flow/run-flow-flowname.png "Flow name in the 'name' field")
+
+1. Add the **Restore Deleted Flows as Admin** action and run the flow.
+
+    1. Add the **Restore Deleted Flows as Admin** action from the Power Automate Management Connector.
+    1. In the **Flow** field, enter the name value from step 3.
+
+        >[!div class="mx-imgBorder"]
+        >![Screenshot of adding the 'Restore Deleted Flows as Admin' action.](./media/restore-deleted-flow/restore-deleted-flow.png "'Restore Deleted Flows as Admin' action")
+
+    1. Run the flow.
+
+        >[!div class="mx-imgBorder"]
+        >![Screenshot of a successfully run flow.](./media/restore-deleted-flow/run-flow.png "Successfully run flow")
+
+    After the run has succeeded, you'll notice that the flow has been restored in a disabled state in the environment it was originally deleted from.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of a restored flow.](./media/restore-deleted-flow/restored-deleted-flow.png "Restored flow")
+
+## Restore deleted flows with PowerShell
+
+In this section, you'll learn about how to restore deleted flows using PowerShell.
+
+### Prerequisites for PowerShell
 
 - You must install the latest version of [PowerShell cmdlets for Power Apps](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147).
 - You must be an environment admin.
 - There must be an [execution policy](/powershell/module/microsoft.powershell.security/set-executionpolicy) set on your device to run PowerShell scripts.
-
->[!NOTE]
->After you restore a flow, it defaults to the disabled state. You must manually enable the flow, per your requirements.
 
 1. Open PowerShell with elevated privileges to begin.
 
@@ -41,7 +107,7 @@ If you or someone else accidentally deletes a flow that isn't part of a solution
 
 1. Sign in to your Power Apps environment.
 
-   Use this command to authenticate to an environment. This command opens a separate window that prompts for your Azure Active Directory (AAD) authentication details.
+   Use this command to authenticate to an environment. This command opens a separate window that prompts for your Azure Active Directory (Azure AD) authentication details.
 
     ``` PowerShell
     Add-PowerAppsAccount

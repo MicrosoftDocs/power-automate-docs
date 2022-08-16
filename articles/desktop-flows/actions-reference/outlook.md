@@ -35,7 +35,7 @@ For PCs with an installation of Outlook, users can manage the mailboxes of their
 
 After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder. In the figure below, the action retrieves all the email messages from the folder **Tickets** which is in a subfolder of the Inbox. The filters have been configured to search for email messages from a specific address, further specifying the contents of the subject with a previously defined variable. Any attachments are also saved.
 
-![Screenshot of the Retrieve outlook emails action.](media\outlook\retrieve-messages-example.png)
+![Screenshot of the Retrieve outlook emails action.](media/outlook/retrieve-messages-example.png)
 
 The **Process email messages in Outlook** action processes email messages retrieved by the **Retrieve email messages from Outlook** action. The Outlook instance, account, and retrieved emails variable are required to use this action. Select whether to Move, delete or mark as read as the operation to perform.
 
@@ -120,7 +120,7 @@ Create and send a new email message through Outlook
 ##### <a name="sendemailthroughoutlook_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
+|Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist. Power Automate doesn't throw this error for the email addresses populated in the **Send from** input parameter|
 |Failed to send email|Indicates a problem sending the email|
 |Attachment not found|Indicates that the specified attachment(s) don't exist|
 

@@ -21,6 +21,7 @@ search.audienceType:
 
 Automate any Excel related activity
 
+[Resize columns/rows in Excel worksheet](#resizecolumnsorrowsaction)  
 [Run Excel Macro](#runmacro)  
 [Get active Excel worksheet](#getactiveworksheet)  
 [Get all Excel worksheets](#getallworksheets)  
@@ -58,7 +59,7 @@ To read and extract data from an Excel document, use the **Read from Excel works
 
 In the following example, to read the cells A1 through E5 as seen in the selection below:
 
-![Screenshot of some Excel sample data.](\media\excel\excel-data.png)
+![Screenshot of some Excel sample data.](media/excel/excel-data.png)
 
 The action has to have the following configuration:
 
@@ -66,22 +67,50 @@ The action has to have the following configuration:
 
 When the flow runs, the action stores the data in a datatable type variable:
 
-![Screenshot of the a datatable displayed in the value viewer.](\media\excel\datatable-values.png)
+![Screenshot of the a datatable displayed in the value viewer.](media/excel/datatable-values.png)
 
 Write data from the flow to Excel by using the **Write to Excel worksheet** action. This action can write any static data or variable to a specified cell, or multiple cells in an Excel worksheet. 
 
 In the following example, the action writes the above mentioned datatable variable to cell A51.
 
-![Screenshot of the Write to Excel worksheet action.](\media\excel\write-to-excel-action-properties.png)
+![Screenshot of the Write to Excel worksheet action.](media/excel/write-to-excel-action-properties.png)
 
 Each cell in the workbook is populated with its corresponding cell in the datatable. The result is that the A51 to E55 cell range is filled with the contents of the datatable.
 
-![Screenshot of written Excel data.](\media\excel\excel-data-written.png)
+![Screenshot of written Excel data.](media/excel/excel-data-written.png)
 
 ## Excel actions
 
 ## Advanced
 Advanced Excel automation actions
+
+### <a name="resizecolumnsorrowsaction"></a> Resize columns/rows in Excel worksheet
+Resizes a selection of columns or rows in the active worksheet of an Excel instance
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
+|Resize target|N/A|Column, Row|Column|Specify whether to resize columns or rows|
+|Selection range|N/A|Single, Range, All available|Single|Specify whether to select a single column/row, a range of columns/rows or all the available columns/rows in the active worksheet|
+|Column|No|[Text value](../variable-data-types.md#text-value)||The column's index number or letter. Column numbering starts from index 1|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column. Column numbering starts from index 1|
+|End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column. Column numbering starts from index 1|
+|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row's index number. The numbering starts from 1|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The index or the first row. The numbering starts from 1|
+|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The index or the last row. The numbering starts from 1|
+|Resize type|N/A|Autofit, Custom size|Autofit|Specify whether to autofit selected columns/rows or set a custom size|
+|Width|No|[Numeric value](../variable-data-types.md#numeric-value)||The width of the selected columns|
+|Height|No|[Numeric value](../variable-data-types.md#numeric-value)||The height of the selected rows|
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="resizecolumnsorrowsaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Failed to resize columns/rows|Indicates a problem while resizing columns/rows|
+
 ### <a name="runmacro"></a> Run Excel Macro
 Runs a specified macro on the document of an Excel instance
 

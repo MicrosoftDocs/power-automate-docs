@@ -1,19 +1,10 @@
 ---
 title: Let customers test drive your flows on AppSource | Microsoft Docs
 description: Use AppSource to share apps with customers, and generate leads for your business.
-services: ''
-suite: flow
-documentationcenter: na
 author: MSFTMAN
-manager: KVivek
-editor: ''
-tags: ''
-
 ms.devlang: na
-ms.subservice: Developer
+ms.subservice: developer
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 05/09/2017
 ms.author: Deonhe
 search.app: 

@@ -109,7 +109,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     ![Screenshot of the Power Automate for desktop settings pane.](./media/dynamics365-cs-rpa/6471971efe1166ab36bcee9a86e77877.png)
 
-1. [Log in](https://powerautomate.microsoft.com/manage/flows) and confirm you can create a test cloud flow with a manual trigger.
+1. [Log in](https://powerautomate.microsoft.com/signin) and confirm you can create a test cloud flow with a manual trigger.
 
     ![Screenshot of the option to create a new cloud flow.](./media/dynamics365-cs-rpa/07e8395e96421fad5c15c3634fe5ec6b.png)
 
@@ -214,7 +214,7 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
 1. Notice that there are multiple child flows. Each child flow uses the keyboard or the mouse to interact with the Contoso CRM app. You need to update the steps to interact with your legacy app.
 
-1. After you test the desktop flow, you can save it. Now open the cloud flow in <https://powerautomate.microsoft.com/manage/solutions> from within the solution tab -\> Customer Service RPA solution
+1. After you test the desktop flow, you can save it. Now open the cloud flow in `https://powerautomate.microsoft.com/manage/solutions` from within the solution tab -\> Customer Service RPA solution
 
     ![Screenshot of the Solution tab in the Power Automate portal.](./media/dynamics365-cs-rpa/4f66650ddfd5e345f0de2499c1f14ede.png)
 
