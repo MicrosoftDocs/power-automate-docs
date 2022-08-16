@@ -315,6 +315,8 @@
       href: ./desktop-flows/setup.md
     - name: Install Power Automate
       href: ./desktop-flows/install.md
+    - name: Premium RPA features
+      href: ./desktop-flows/premium-features.md
     - name: Governance in Power Automate
       href: ./desktop-flows/governance.md     
     - name: Troubleshooting Power Automate
@@ -597,6 +599,8 @@
       href: ./desktop-flows/actions-reference/ibmcognitive.md
     - name: Microsoft cognitive
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
+    - name: SharePoint (preview)
+      href: ./desktop-flows/actions-reference/sharepoint.md
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
   - name: Use RPA with Dynamics 365

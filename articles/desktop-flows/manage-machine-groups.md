@@ -21,52 +21,55 @@ Machine groups allow you to organize multiple machines together to help distribu
 
 ## Create a machine group 
 
-Machine groups can either be created from the Power Automate machine runtime app or from the Power Automate portal. 
+Machine groups can either be created from the Power Automate machine runtime application or the Power Automate portal. 
 
 From the Power Automate machine runtime application: 
 
 > [!NOTE]
 > To install the Power Automate machine runtime application, launch Power Automate for desktop and naviagte to **Settings** > **Open machine settings**.
 
-1. Sign into **Power Automate machine runtime**
+1. Sign in to the **Power Automate machine runtime** application.
 
-1. Select **Machine group**
+1. Select **Machine group**.
 
 1. Select **New machine group** 
 
-1. Enter a name for your machine group, then optionally enter a description.
+1. Enter a name for your machine group, and optionally add a description.
 
-1. Click **Create** 
+1. Select **Create** 
 
  ![Screenshot of the dialog to create a new machine group.](./media/manage-machine-groups/new-machine-groups.png)
 
 From the Power Automate portal:
 
-1.	Sign into Power Automate.
-1.	Select **Monitor**, then select **Machines**.
-1.	Select **New machine**, then select **Group**.
-1.	Enter a name for your machine group, then optionally enter a description.
-1.	Click **Create**.
+1. Sign in to the Power Automate portal.
+
+1. Select **Monitor**, then **Machines**.
+
+1. Select **New machine**, then **Group**.
+
+1. Enter a name for your machine group, and optionally add a description.
+
+1. Select **Create**.
 
 ## Add your machine to a group 
 
-You will need at least one machine in your group to run desktop flows. 
+You need at least one machine in a group to run desktop flows. 
 
-1.	In the Power Automate machine runtime, select **Machine group**
-1.	In the displayed list, you can find all the available machine groups. To add the machine to a machine group, select the desired group and fill in the required credentials.
+1. In the Power Automate machine runtime application, select **Machine group**
+1. In the displayed list, you can find all the available machine groups. To add your machine to a machine group, select the desired group and fill in the required credentials.
 
     ![Screenshot of the dialog to add a machine to a machine group.](./media/manage-machine-groups/add-machine-group.png)
 
+1. If it's the first time adding a machine to your group, you need to create a password for your group. This password is used to limit access for users who can add machines to the group. Make sure you don't lose the password, as you'll be unable to recover it. If you've already added a machine before, enter the password for the group.
 
-1.	If this is the first time adding a machine to your group, you will need to create a password for your group. This password is used to limit access for those who can add machines to the group. Make sure you do not lose the password, as you will be unable to recover it. If you have already added a machine before, enter the password for the group.
+1. Select **Add machine**.
 
-1.	Select **Add machine**.
-
-When you add your machine to a group, any connections currently targeting your machine will break. You will need to update those connections to target the machine group.
+When you add your machine to a group, any connections currently targeting your machine will break. You need to update those connections to target the machine group.
 
 >[!NOTE]
-> - In case of a virtual machine, make sure not to clone the virtual machine after installing the Power Automate machine runtime.
-> - Machines are not affected by a change in the Power Automate for desktop organization.
+> - In the case of a virtual machine, make sure not to clone the virtual machine after installing the Power Automate machine runtime application.
+> - Machines aren't affected by changes in the Power Automate for desktop organization.
 
 >[!IMPORTANT]
 >In order to register your machine, you need to have an Organization premium account.
@@ -77,20 +80,19 @@ When you add your machine to a group, any connections currently targeting your m
 
 1. Select **+New step**. 
 
-1. Select the **Run a flow built with Power Automate for desktop** action. 
+1. Deploy the **Run a flow built with Power Automate for desktop** action. 
 
-1. If you’ve already created a connection with desktop flows, click the three dots in the top right and under **My connections** select **+Add new connection**. 
+1. If you’ve already created a connection with desktop flows, select the three dots on the top right of the action, and under **My connections** select **+Add new connection**. 
 
-1. Next to Connect, select **Direct to machine**. 
+1. Select **Directly to machine** in the **Connect** field.
 
 1. Select the name of your machine group. 
 
 1. Enter the username and password you would use to sign into your machines. 
 
-1. Click **Create**. 
+1. Select **Create**. 
     
    ![Screenshot of the Desktp flows connector.](./media/manage-machine-groups/connect-directly-to-machine.png)
-
 
 1. Select the desktop flow you want to run and the desired run mode. 
 
@@ -99,14 +101,14 @@ When you add your machine to a group, any connections currently targeting your m
 1. You can now trigger your desktop flow to run on your machine group from the cloud. 
 
  >[!IMPORTANT]
->If you are using local Windows accounts, all machines in the group must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
->If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be using in the desktop flows connection can access all machines in the cluster.
+>If you use local Windows accounts, all machines in the group must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
+>If you use Active Directory or Azure AD joined machines, confirm that the user account you use in the desktop flows connection can access all machines in the cluster.
 
 ## View list of machine groups 
 
-Once a machine group is created in an environment, you can view its details at any time in Power Automate. You can also view all other machine groups that you have access to. 
+Once a machine group is created in an environment, you can view its details at any time in the Power Automate portal. You can also view all the other machine groups that you have access to. 
 
-1. Sign into Power Automate. 
+1. Sign in to the Power Automate portal. 
 
 1. Select **Monitor > Machines**. 
 
@@ -115,26 +117,20 @@ Once a machine group is created in an environment, you can view its details at a
 Within the list, for each machine you can view: 
 
 - The name of the machine group. 
-
 - The description of the machine group. 
-
 - The number of the machines in the group. 
-
 - The number of flows running in the machine group. 
-
 - The number of flows queued in the machine group. 
-
 - The type of access you have to the machine group. 
-
 - The owner of the machine group. 
 
 ## Share a machine group 
 
 You can share a machine group with other users in your organization, giving those users specific permissions to access your machine group. 
 
-1. Sign into Power Automate. 
+1. Sign in to the Power Automate portal. 
 
-1. Select **Monitor**, then select **Machines**. 
+1. Select **Monitor**, then **Machines**. 
 
 1. Select **Machine groups**. 
 
@@ -146,7 +142,7 @@ You can share a machine group with other users in your organization, giving thos
 
 1. Select the name of the person to choose with which permissions they can access the machine group. 
 
-1. Click **Save**. 
+1. Select **Save**. 
 
    ![Screenshot of the Manage access pane.](./media/manage-machine-groups/share-machine-group.png)
 
@@ -173,31 +169,25 @@ If the permissions of a machine and its group fall out of sync, for example if y
 
 Power Automate allows you to create groups of machines that can be accessed all together by a name reference. This feature is essential for organizations that want to trigger desktop flows to multiple machines simultaneously.
 
-
 ## Change the machine group of a machine
 
-If you want to change the machine group that contains your machine, select another group in the list of available machine groups and fill in the required credentials
+If you want to change the machine group that contains your machine, select another group in the list of the available machine groups and fill in the required credentials.
 
 If you want to remove the machine from a group without adding it to a new one, select **Remove from group**.
 
-
-
 ![Screenshot of the Leave group option.](./media/manage-machine-groups/change-machines.png)
-
 
 ## Change machine group's password
 
-To change the password of the currently used machine group, click on the ellipses next to the machine group and select **Edit group password**.
+To change the password of the currently used machine group, select the dots on machine group card and then **Edit group password**.
 
 Next, select **Re-generate password**, copy the automatically generated password, and save the changes.
-
 
 ![Screenshot of the fields for the new mahcine group password.](./media/manage-machine-groups/machine-group-new-password.png)
 
 ## Update permissions based on security role 
 
 By default, all users with an Environment Maker role can register their machines in an environment. You can restrict actions on machines and machine groups by modifying the **Flow Machine** and **Flow Machine Group** permissions for a particular security role. 
-
 
   ![Screenshot of the permissions based on security role.](./media/manage-machine-groups/permissions-roles.png)
 
@@ -225,5 +215,5 @@ Environment admins can also restrict machine registration to a specific set of u
 
 ## Other known limitations 
 
-- Machines and machine groups are not available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud using an on-premises data gateway.
-- When triggering multiple desktop flows in parallel on a machine group, there are cases where machine selection will take up to 50 seconds before assigning the desktop flow to machine that is available. In these rare cases, desktop flow runs might seem to be running sequentially if they have very short run durations.
+- Machines and machine groups aren't available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud using on-premises data gateways.
+- When you trigger multiple desktop flows in parallel on a machine group, machine selection may take up to 50 seconds before assigning the desktop flow to an available machine. In these rare cases, desktop flow runs might seem to be running sequentially if they have short run durations.
