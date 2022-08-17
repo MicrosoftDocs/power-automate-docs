@@ -57,8 +57,10 @@ Approvals that rely on custom responses can fail if they're sent to many users w
 
 The Power Apps V2 trigger doesn't support non-open API flows. Therefore, if you update your Power Apps V1 trigger to the Power Apps V2 trigger, your flow will break with a connection error. As a workaround, after you update your flow to the Power Apps V2 trigger, remove and then re-add the flow, then save the app.
 
+To learn more, go to [Known issues with Power Apps V2 trigger](/troubleshoot/power-platform/power-automate/known-issues-power-apps-v2-trigger).
+
 **Splitting create and wait actions**
-It's possible to create flows with the approval connector where you use the *Create an approval* and *Wait for an approval* as independant actions. If a user immediatly responds to an approval request before the flow reaches the wait action, it's possible for the flow to become stuck in the wait stage. To avoid getting the flow stuck, please ensure that the create and the wait actions are called close together within the flow. Alternately, change the status of the approval in Dataverse before you call the wait action. 
+It's possible to create flows with the approval connector where you use the *Create an approval* and *Wait for an approval* as independent actions. If a user immediately responds to an approval request before the flow reaches the wait action, it's possible for the flow to become stuck in the wait stage. To avoid getting the flow stuck, please ensure that the create and the wait actions are called close together within the flow. Alternately, change the status of the approval in Dataverse before you call the wait action.
 
 **Using approval outcomes in loops**
 When you use approvals with *do until* loops, users need to account for all possible outcomes of a flow. If not, the flows could be stuck in infinite loops. For basic and await all approvals, the final states can be *Approved*, *Rejected*, or *Cancelled*. For custom approvals it's based on what the user chooses to have as the options for the approval. Use a condition or switch statement with approval flow instead of *do until* loops.
