@@ -17,7 +17,7 @@ ms.assetid: efe86ab3-430f-485a-b924-6ed82cfbb449
 caps.latest.revision: 39
 author: "vashr"
 ms.author: "vashr"
-ms.manager: KVIVEK
+ms.manager: tapanm
 search.app: 
   - Flow
 search.audienceType: 
@@ -43,7 +43,7 @@ This tutorial shows you how to create a business process flow with [Power Apps](
 ## Prerequisites
 
 * To create business process flows, you need a Power Apps or Power Automate per user license, or a [Dynamics 365 license plan](https://go.microsoft.com/fwlink/?linkid=2085130) that includes business process flow use rights. 
-* A table that the business process flow will be associated with. If the business process flow is not related to an existing table, [create a new table](/power-apps/maker/data-platform/create-edit-entities-portal) before creating the flow. 
+* A table with which the business process flow will be associated. If the business process flow isn't related to an existing table, [create a new table](/power-apps/maker/data-platform/create-edit-entities-portal) before you create the flow. 
 
 ## Create a business process flow
   
