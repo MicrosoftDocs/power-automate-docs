@@ -2,7 +2,7 @@
 title: "Create a business process flow in Power Apps | MicrosoftDocs"
 description: "Learn how to create a business process flow"
 ms.custom: ""
-ms.date: 04/26/2022
+ms.date: 08/17/2022
 ms.reviewer: "msftman"
 
 ms.suite: ""
@@ -27,22 +27,22 @@ search.audienceType:
 # Tutorial: Create a business process flow
 
 >[!IMPORTANT]
-> As of August 2022, creating and managing business process flows is no longer supported from the Power Automate portal outside of the solution explorer. Business process flows and instances continue to be supoprted through the solution explorer, Power Apps, and Dataverse table views.
+> As of August 2022, you can no longer create or manage business process flows from Power Automate outside of the solution explorer. Business process flows and instances continue to be supoprted through the solution explorer, Power Apps, and Dataverse table views.
 
-This tutorial shows you how to create a business process flow with [Power Apps](/power-apps/powerapps-overview). To learn more about why to use business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on creating a mobile task flow, see [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
+This article you how to create a business process flow with [Power Apps](/power-apps/powerapps-overview). To learn more about the benefits of using business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on how to create mobile task flows, see [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
- When a user starts a business process flow, the stages and steps of the process are displayed in the process bar at the top of a form:  
+ When a user starts a business process flow, the stages and steps of the process display in the process bar at the top of a form.  
   
  ![Business process with stages.](media/business-process-stages.png "Business process with stages")  
   
  >[!TIP]
- >After you create a business process flow definition, you can provide control over who can create, read, update, or delete the business process flow instance. For example, for service-related processes, you could provide full access for customer service reps to change the business process flow instance, but provide read-only access to the instance for sales reps so they can monitor post-sales activities for their customers. To set security for a business process flow definition you create, select **Enable Security Roles** on the action bar.  
+ >After you create a business process flow definition, you can control who can create, read, update, or delete the business process flow instance. For example, for service-related processes, you could provide full access for customer service reps to change the business process flow instance, but provide read-only access to the instance for sales reps so that they can monitor post-sales activities for their customers. To set security for a business process flow definition that you create, select **Enable Security Roles** on the action bar.  
   
 <a name="BKMK_Createbusinessprocessflows"></a>
 
 ## Prerequisites
 
-* To create business process flows, you need a Power Apps or Power Automate per user license, or a [Dynamics 365 license plan](https://go.microsoft.com/fwlink/?linkid=2085130) that includes business process flow use rights. 
+* To create business process flows, you need a Power Apps or Power Automate **per user** license, or a [Dynamics 365 license plan](https://go.microsoft.com/fwlink/?linkid=2085130) that includes business process flow use rights. 
 * A table with which the business process flow will be associated. If the business process flow isn't related to an existing table, [create a new table](/power-apps/maker/data-platform/create-edit-entities-portal) before you create the flow. 
 
 ## Create a business process flow
