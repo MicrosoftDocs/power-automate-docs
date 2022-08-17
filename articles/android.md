@@ -103,7 +103,7 @@ You can get help for the following tasks, which are available and supported by P
     - You should be able to sign in with either Azure Active Directory (AAD) or your Microsoft school or work account (MSA).
 - **Notification**
     - Notifications from production cloud are delivered to the device.
-- **Instant flows (formerly known as Buttons)**
+- **Instant flows (formerly known as 'buttons')**
     - You can display instant flows for cloud flows, shared flows, and solution flows on your screen.
     - You can display a list of instant flows.
     - You can invoke an instant flow.
