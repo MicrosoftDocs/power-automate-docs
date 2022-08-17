@@ -118,7 +118,7 @@ In this panel, you can:
 > Administrators of an environment are co-owners of all dekstop flows created in this environment and can't be removed.
 
 >[!NOTE]
-> When a user isn't part of the environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of your desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
 ## More information
 
