@@ -384,4 +384,4 @@ During the public preview, the number of bot groups is limited to 10 for each en
 During the public preview, we delete unused resources to ensure the service is available for everyone. Therefore, all hosted RPA bot groups that are inactive for more than 28 days are automatically deleted. The deleted groups remain visible, but they can't be used. An inactive group is one that hasn't run any desktop flows for the last 28 days.
 
 > [!Note]
-> You must delete the group and create a new one to continue using the hosted RPA bots feature. You'll need to reconfigure the connection associated with your cloud flow too.
+> You must delete the group and create a new one to continue using the hosted RPA bots feature. You'll need to reconfigure the connection that's associated with your cloud flow too.
