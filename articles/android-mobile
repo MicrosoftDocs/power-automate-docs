@@ -1,0 +1,96 @@
+---
+title: Use Power Automate mobile for Android | Microsoft Docs
+description: Provides an overview of the functionality and limitations in Power Automate mobile for Android.
+services: ''
+suite: flow
+documentationcenter: na
+author: msftman
+manager: tapanm
+editor: ''
+tags: ''
+ms.devlang: na
+ms.subservice: cloud-flow
+ms.topic: overview
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 08/05/2022
+ms.author: deonhe
+search.app: 
+  - Flow
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
+# Use Power Automate mobile for Android
+
+Experience the same familiar look and feel of the Power Automate portal with the beta version of Power Automate mobile for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
+
+## Install the mobile app
+
+If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-in.md). Then choose the download link or scan the QR code to download Power Automate mobile.
+
+| Android |
+| :---:   |
+| ![Download Power Automate from Google Play.](media/android/google-play.png "Download Power Automate from Google Play")   |
+| ![Android mobile QR code.](media/android/android-mobile-qrcode.png) "Power Automate mobile for Android QR code" |
+
+## View a list of your cloud flows
+
+You can view the flows that you've created as well as flows shared with you. This includes non-solution and solution-aware flows.
+
+![Screenshot of a list of flows.](media/android/instant-flows.png "List of flows")
+
+You can view details of each individual flow, such as the flow description, run history, and connections. You can also turn the flow on or off.
+
+![Screenshot of flow details.](media/android/flow-details.png "Flow details")
+
+## Run instant flows
+
+The instant flows feature allows you to easily run repetitive tasks from any place, at any time with your mobile device. Running instant cloud flows are automated, which saves you time. You might also encounter fewer errors than if you performed the tasks manually.
+
+If you've used the previous Power Automate mobile version, you know instant flows as button flows.
+
+![Screenshot of a list of instant flows.](media/android/instant-flows-1.png "List of instant flows")
+
+To run an instant flow, tap the flow you would like to run from the **Instant flows** screen, then tap **Run flow**. Some flows might require you to fill in parameters before running the flow.
+
+![Screenshot of instant flows.](media/android/run-flow.png "Run instant flows")
+
+For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen.
+
+## Manage approvals
+
+The approvals feature allows you to manage your approval requests while you’re away from your desk. 
+
+You can approve or reject a request directly from the **Approvals** screen. Alternatively, to view more details of an approval request, tap the vertical (**…**) next to a request and select **Details**.
+
+![Screenshot of a list of approval requests.](media/android/manage-approvals-1.png "List of approval requests")
+
+In the following example, you can see the additional details, comments, and attachments. Select **Approve** or **Reject**.
+
+![Screenshot of manage approvals.](media/android/manage-approvals.png "Approval details")
+
+## Send and receive push notifications
+
+The notifications feature allows you to send and receive push notifications. To get to the **Notifications** screen, tap the bell icon in the app header.
+
+![Screenshot of push notifications icon.](media/android/notifications-1.png "Notifications icon")
+
+When you tap the bell icon, you'll see a list of recent notifications and flow alerts. If you've used the previous Power Automate mobile app version, you know this as Activity Feed.
+
+![Screenshot of a push notification.](media/android/notifications.png "Notifications")
+
+## Change environments
+
+You might have different environments set up depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment so that you can access your flows, approvals, notifications, and more, based on the environment you're in.
+
+![Screenshot of environments icon.](media/android/environment.png "Evironments")
+
+## Limitations
+
+- This version doesn't support geofencing (location-based trigger).
+
+- This version doesn't support flow creation and editing in this version; customers told us that they prefer to create and edit in the portal. If you need to create or edit on the go, you can log in to Power Automate on your mobile’s browser.
+
+## Scenarios
