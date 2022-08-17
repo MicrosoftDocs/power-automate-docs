@@ -28,7 +28,7 @@ Experience the same familiar look and feel of the Power Automate portal with Pow
 
 ## Install the mobile app
 
-If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-in.md). Then choose the download link or scan the QR code to download Power Automate mobile.
+If you're not signed up for Power Automate, [sign up for free](sign-up-sign-in.md). Then choose the download link or scan the QR code to download Power Automate mobile.
 
 | Android |
 | :---:   |
@@ -37,7 +37,7 @@ If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-i
 
 ## View a list of your cloud flows
 
-You can view the flows that you've created as well as flows shared with you. This includes non-solution and solution-aware flows.
+You can view the flows that you've created as well as flows shared with you. This includes non-solution, solution-aware, and shared flows.
 
 ![Screenshot of a list of flows.](media/android/instant-flows.png "List of flows")
 
@@ -47,7 +47,7 @@ You can view details of each individual flow, such as the flow description, run 
 
 ## Run instant flows
 
-The instant flows feature allows you to easily run repetitive tasks from any place, at any time with your mobile device. Running instant cloud flows are automated, which saves you time. You might also encounter fewer errors than if you performed the tasks manually.
+The instant flows feature allows you to easily run repetitive tasks automatically from any place, at any time with your mobile device. You might encounter fewer errors than if you performed these tasks manually.
 
 If you've used the previous Power Automate mobile version, you know instant flows as button flows.
 
@@ -89,10 +89,30 @@ You might have different environments set up depending on the purpose of your wo
 
 ## Limitations
 
+Following are the known limitations for the mobile app for Android: 
+
 - This version doesn't support geofencing (location-based trigger).
 
 - This version doesn't support flow creation and editing in this version; customers told us that they prefer to create and edit in the portal. If you need to create or edit on the go, you can log in to Power Automate on your mobile’s browser.
 
-## Scenarios
+## Supported tasks for the mobile app for Android
 
-Use the following scenarios...
+You can get help for the following tasks, which are available and supported by Power Automate mobile for Android.
+
+- **Authentication**
+    - You should be able to sign in with either Azure Active Directory (AAD) or your Microsoft school or work account (MSA).
+- **Notification**
+    - Notifications from production cloud are delivered to the device.
+- **Instant flows (formerly known as Buttons)**
+    - You can display instant flows for cloud flows, shared flows, and solution flows on your screen.
+    - You can display a list of instant flows.
+    - You can invoke an instant flow.
+- **Approvals list, details**
+- **Flow list**
+    - The flow list displays personal cloud flows, shared flows, and solution flows.
+- **Flow details page**
+- **Widgets**
+    - You should be able to create widget for cloud flow buttons and solution flows buttons.
+    - When running a widget that doesn't require inputs for trigger, it should run without opening a screen.
+    - If flow requires trigger inputs, a screen will be open for inputs.
+    - 
