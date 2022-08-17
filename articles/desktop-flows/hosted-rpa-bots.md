@@ -61,7 +61,7 @@ To be able to create hosted RPA bots, you need to have access to the default VM 
 1. Select **Save**
 
 >[!NOTE]
-> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see the user as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
 ![share-vm-image-panel.png](./media/hosted-rpa-bots/share-vm-image.png)
 
