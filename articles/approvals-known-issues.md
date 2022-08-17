@@ -31,7 +31,7 @@ If you assign a guest user to an approval, that user won't be able to view or ac
   
 **Adaptive Cards mismatch in Microsoft Teams**
 
-There are multiple ways in which you can notify an approver when a flow runs. By default, all flows that handle approvals send an email notification. You can also send an Adaptive Card with the approval to users in Microsoft Teams. If the approver responds through the email notification or through the approval action center, the card in Microsoft Teams will not auto update. This can lead to situations where there's a mismatch between the status shown on the Adaptive Card and that of the flow. 
+There are multiple ways in which you can notify an approver when a flow runs. By default, all flows that handle approvals send an email notification. You can also send an Adaptive Card with the approval to users in Microsoft Teams. If the approver responds through the email notification or through the approval action center, the card in Microsoft Teams won't auto update. This can lead to situations where there's a mismatch between the status shown on the Adaptive Card and that of the flow.
 
 To avoid this, you can choose to disable the default notification email that is sent to the user as part of approval creation. 
 
@@ -39,11 +39,11 @@ To avoid this, you can choose to disable the default notification email that is 
 
 **Abandoned approvals in the approval action center**
 
-As part of the flow you can send an approval request to a user and wait for a response. Today, an approval flow can wait for 28 days. If the wait time exceeds 28 days, that flow will fail. This only impacts the flow itself, meaning that the approval continues to exist in the action center. This can lead to cases where there are abandoned approvals in the approval action center, which have no flow waiting on them. The requestor or environment admin will need to manually delete these approvals from the action center.
+As part of the flow, you can send an approval request to a user and wait for a response. Today, an approval flow can wait for 28 days. If the wait time exceeds 28 days, that flow will fail. This only impacts the flow itself, meaning that the approval continues to exist in the action center. This can lead to cases where there are abandoned approvals in the approval action center, which have no flow waiting on them. The requestor or environment admin will need to manually delete these approvals from the action center.
 
 **Anchors**
 
-Anchor links are not supported. Unexpected results will occur if you use anchors.
+Anchor links aren't supported. Unexpected results will occur if you use anchors.
 
 **Data Templating**
 
@@ -60,7 +60,7 @@ The Power Apps V2 trigger doesn't support non-open API flows. Therefore, if you 
 To learn more, go to [Known issues with Power Apps V2 trigger](/troubleshoot/power-platform/power-automate/known-issues-power-apps-v2-trigger).
 
 **Splitting create and wait actions**
-It's possible to create flows with the approval connector where you use the *Create an approval* and *Wait for an approval* as independent actions. If a user immediately responds to an approval request before the flow reaches the wait action, it's possible for the flow to become stuck in the wait stage. To avoid getting the flow stuck, please ensure that the create and the wait actions are called close together within the flow. Alternately, change the status of the approval in Dataverse before you call the wait action.
+It's possible to create flows with the approval connector where you use the *Create an approval* and *Wait for an approval* as independent actions. If a user immediately responds to an approval request before the flow reaches the wait action, it's possible for the flow to become stuck in the wait stage. To avoid getting the flow stuck, ensure that the 'create' and 'wait' actions are called close together within the flow. Alternately, change the status of the approval in Dataverse before you call the 'wait' action.
 
 **Using approval outcomes in loops**
-When you use approvals with *do until* loops, users need to account for all possible outcomes of a flow. If not, the flows could be stuck in infinite loops. For basic and await all approvals, the final states can be *Approved*, *Rejected*, or *Cancelled*. For custom approvals it's based on what the user chooses to have as the options for the approval. Use a condition or switch statement with approval flow instead of *do until* loops.
+When you use approvals with *do until* loops, users need to account for all possible outcomes of a flow. If not, the flows could be stuck in infinite loops. For 'basic' and 'await all approvals', the final states can be *Approved*, *Rejected*, or *Cancelled*. For custom approvals, it's based on what the user chooses to have as the options for the approval. Use a condition or switch statement with approval flow instead of *do until* loops.
