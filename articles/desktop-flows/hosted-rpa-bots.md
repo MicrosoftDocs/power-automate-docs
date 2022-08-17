@@ -5,7 +5,7 @@ author: mustlaz
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 06/15/2022
+ms.date: 08/18/2022
 ms.author: mustlaz
 ms.reviewer:
 search.app: 
@@ -218,7 +218,7 @@ You can share hosted RPA bots with other users so they can create connections to
 **User** permission will only allow the targeted user to run desktop flows on the selected hosted RPA bots. A **Co-Owner** can also edit the hosted RPA bots details.
 
 >[!NOTE]
-> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the hosted RPA bot if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you may continue to see the user as a deactivated user. You'll be notified in the **Manage access** section of the hosted RPA bot if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Trigger a desktop flow to run on your hosted RPA bots (preview)
 
