@@ -133,7 +133,7 @@ This tutorial shows you how to create a business process flow with [Power Apps](
 >
 > - To take a snapshot of everything in the business process flow window, select **Snapshot** on the action bar. This is useful, for example, if you want to share and get comments on the process from a team member.  
 > - Use the mini-map to navigate quickly to different parts of the process. This is useful when you have a complicated process that scrolls off the screen.  
-> - To add a description for the business process, select **Details** under the process name in the left corner of the business process flow window. You can use up to 2000 characters. 
+> - To add a description for the business process, select **Details** under the process name in the left corner of the business process flow window. You can use up to 2,000 characters. 
 
 <a name="BKMK_Editbusinessprocessflows"></a>   
 ## Edit a business process flow  
