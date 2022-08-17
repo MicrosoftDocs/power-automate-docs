@@ -24,7 +24,7 @@ search.audienceType:
 
 # Use Power Automate mobile for Android
 
-Experience the same familiar look and feel of the Power Automate portal with the beta version of Power Automate mobile for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
+Experience the same familiar look and feel of the Power Automate portal with Power Automate mobile for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
 
 ## Install the mobile app
 
@@ -33,7 +33,7 @@ If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-i
 | Android |
 | :---:   |
 | ![Download Power Automate from Google Play.](media/android/google-play.png "Download Power Automate from Google Play")   |
-| ![Android mobile QR code.](media/android/android-mobile-qrcode.png) "Power Automate mobile for Android QR code" |
+| ![Android mobile QR code.](media/android/android-mobile-qrcode.png "Power Automate mobile for Android QR code")  |
 
 ## View a list of your cloud flows
 
