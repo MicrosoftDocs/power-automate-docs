@@ -202,6 +202,9 @@ Apart from direct connectivity, you can establish communication with a  machine 
 > [!IMPORTANT]
 > Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
+> [!IMPORTANT]
+> Before using a machine to run desktop flows from the cloud, ensure that the machine is secured and the machine's admins are trusted.
+
 1. Sign into [Power Automate](https://powerautomate.microsoft.com).
 1. Expand **Data** on the left side of the screen.
 1. Select **Connections** and then **New connection**.
