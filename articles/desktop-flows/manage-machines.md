@@ -169,6 +169,8 @@ There are two levels of permissions that you can use when managing access to you
 |Edit details|X|| 
 |Delete machine|X|| 
 
+>[!NOTE]
+> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the machine if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Delete a machine
 
