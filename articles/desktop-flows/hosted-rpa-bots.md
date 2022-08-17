@@ -61,7 +61,7 @@ To be able to create hosted RPA bots, you need to have access to the default VM 
 1. Select **Save**
 
 >[!NOTE]
-> When a user isn't part of the environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
 ![share-vm-image-panel.png](./media/hosted-rpa-bots/share-vm-image.png)
 
@@ -169,7 +169,7 @@ The image needs to be replicated in the same Azure region as the hosted RPA bot 
 1. Select **Save**.
 
 >[!NOTE]
-> When a user isn't part of the environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
 ![share-custom-image.png](./media/hosted-rpa-bots/share-custom-vm-image.png)
 
@@ -218,7 +218,7 @@ You can share hosted RPA bots with other users so they can create connections to
 **User** permission will only allow the targeted user to run desktop flows on the selected hosted RPA bots. A **Co-Owner** can also edit the hosted RPA bots details.
 
 >[!NOTE]
-> When a user isn't part of the environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the hosted RPA bot if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the hosted RPA bot if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Trigger a desktop flow to run on your hosted RPA bots (preview)
 
