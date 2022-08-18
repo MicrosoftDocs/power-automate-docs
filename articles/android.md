@@ -35,7 +35,7 @@ If you're not signed up for Power Automate, [sign up for free](sign-up-sign-in.m
 | [![Download Power Automate from Google Play.](media/android/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
 | ![Android mobile QR code.](media/android/android-mobile-qrcode.png "Power Automate mobile for Android QR code")  |
 
-> ![NOTE]
+> [!NOTE]
 > You can sign in with either Azure Active Directory (AAD) or your Microsoft school or work account (MSA).
 
 ## View a list of your cloud flows
