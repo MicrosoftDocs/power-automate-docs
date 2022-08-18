@@ -97,9 +97,11 @@ Any lists or tables of data will be automatically identified after two of their 
 
 ![Screenshot of a web page while extracting a data table from it.](.\media\web-automation\extracting-data-table-from-web-page.png)
 
-Apart from extracting values by picking them in web pages, you can manually create or edit CSS selectors that pinpoint specific elements. To create a CSS selector, select **Advanced settings** in the live web helper and choose the type of value you want to extract. You can choose between extracting a single value, multiple handpicked values (a different selector defines each value), lists, tables, and entire HTML tables.
+Apart from extracting values by picking them on web pages, you can manually create or edit CSS selectors that pinpoint specific elements. 
 
-Each CSS selector consists of the tree structure of the HTML element, the exact attribute to extract from it, and a regular expression to implement more advanced selection.
+To create a CSS selector, select **Advanced settings** in the live web helper and choose the type of value you want to extract. You can choose between extracting a single value, multiple handpicked values (a different selector defines each value), lists, tables, and entire HTML tables.
+
+Each CSS selector consists of the tree structure of the HTML element, the exact attribute to extract from it, and optionally a regular expression to implement more advanced selection.
 
 ![Screenshot of a CSS selector.](.\media\web-automation\extracting-web-data-css-selector.png)
 
