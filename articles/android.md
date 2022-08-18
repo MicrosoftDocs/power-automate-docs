@@ -1,6 +1,6 @@
 ---
-title: Use Power Automate mobile app for Android | Microsoft Docs
-description: Provides an overview of the functionality and limitations in Power Automate mobile app for Android.
+title: Use the Power Automate mobile app for Android | Microsoft Docs
+description: Provides an overview of the functionality and limitations in the Power Automate mobile app for Android.
 services: ''
 suite: flow
 documentationcenter: na
@@ -22,18 +22,18 @@ search.audienceType:
   - enduser
 ---
 
-# Use Power Automate mobile app for Android
+# Use the Power Automate mobile app for Android
 
-Experience the same familiar look and feel of the Power Automate portal with Power Automate mobile app for Android. If you've used the previous mobile app version, you'll notice some improvements, such as quicker response times and easier navigation.
+Experience the same familiar look and feel of the Power Automate portal with the Power Automate mobile app for Android. If you've used the previous mobile app version, you'll notice some improvements, such as quicker response times and easier navigation.
 
 ## Install the mobile app
 
-If you're not signed up for Power Automate, [sign up for free](sign-up-sign-in.md). Then choose the download link or scan the QR code to download Power Automate mobile app.
+If you're not signed up for Power Automate, [sign up for free](sign-up-sign-in.md). Then choose the download link or scan the QR code to download the Power Automate mobile app.
 
 | Android |
 | :---:   |
-| [![Download Power Automate from Google Play.](media/android/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
-| ![Android mobile app QR code.](media/android/android-mobile-qrcode.png "Power Automate mobile app for Android QR code")  |
+| [![Download the Power Automate mobile app for Android from Google Play.](media/android/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
+| ![The Power Automate mobile app for Android QR code.](media/android/android-mobile-qrcode.png "The Power Automate mobile app for Android QR code")  |
 
 > [!NOTE]
 > You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
@@ -97,7 +97,7 @@ You might have different environments set up depending on the purpose of your wo
 
 ## Limitations
 
-Following are the known limitations for the mobile app for Android: 
+Following are the known limitations for the mobile app for Android:
 
 - Geofencing (location-based trigger) isn't supported. This was formerly a preview feature and was never generally available.
 
