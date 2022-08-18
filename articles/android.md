@@ -32,8 +32,11 @@ If you're not signed up for Power Automate, [sign up for free](sign-up-sign-in.m
 
 | Android |
 | :---:   |
-| ![Download Power Automate from Google Play.](media/android/google-play.png "Download Power Automate from Google Play")   |
+| [![Download Power Automate from Google Play.](media/android/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
 | ![Android mobile QR code.](media/android/android-mobile-qrcode.png "Power Automate mobile for Android QR code")  |
+
+> ![NOTE]
+> You can sign in with either Azure Active Directory (AAD) or your Microsoft school or work account (MSA).
 
 ## View a list of your cloud flows
 
@@ -56,6 +59,8 @@ If you've used the previous Power Automate mobile version, you know instant flow
 To run an instant flow, tap the flow you would like to run from the **Instant flows** screen, then tap **Run flow**. Some flows might require you to fill in parameters before running the flow.
 
 ![Screenshot of instant flows.](media/android/run-flow.png "Run instant flows")
+
+## Create widgets
 
 For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen.
 
@@ -94,24 +99,3 @@ Following are the known limitations for the mobile app for Android:
 - Geofencing (location-based trigger) isn't supported. This was formerly a preview feature and wasn't generally available.
 
 - Flow creation and editing aren't supported. Customers told us that they prefer to create and edit in the web portal when building or changing flows. If you’re on the go and need to create or edit, you can log into Power Automate on your mobile’s browser.
-
-## Supported tasks for the mobile app for Android
-
-You can get help for the following tasks, which are available and supported by Power Automate mobile for Android.
-
-- **Authentication**
-    - You should be able to sign in with either Azure Active Directory (AAD) or your Microsoft school or work account (MSA).
-- **Notification**
-    - Notifications from production cloud are delivered to the device.
-- **Instant flows (formerly known as 'buttons')**
-    - You can display instant flows for cloud flows, shared flows, and solution flows on your screen.
-    - You can display a list of instant flows.
-    - You can invoke an instant flow.
-- **Approvals list, details**
-- **Flow list**
-    - The flow list displays personal cloud flows, shared flows, and solution flows.
-- **Flow details page**
-- **Widgets**
-    - You should be able to create widget for cloud flow buttons and solution flows buttons.
-    - When running a widget that doesn't require inputs for trigger, it should run without opening a screen.
-    - If flow requires trigger inputs, a screen will be open for inputs.
