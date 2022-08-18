@@ -80,13 +80,28 @@ Additionally, the **Get details of element on web page** action supports the **w
 
 ![Screenshot of the Get details of element on web page action.](.\media\web-automation\get-details-of-element-on-web-page-action.png)
 
-To extract large amounts of structured data, use the **Extract data from web page** action. After deploying the action, right-click on the required data on the web page to view the available options.
+### Web extraction of structured data
+
+To extract large amounts of structured data, use the **Extract data from web page** action. The extracted data can be stored as single values, lists, and tables or be pasted into Excel worksheets. 
+
+![Screenshot of the Extract data from web page action.](.\media\web-automation\extract-data-from-web-page-action.png)
+
+When the action is deployed, right-click on the desired data on the web page to view the available extraction options. To extract a specific value, select **Extract element value** and choose the appropriate HTML attribute you want to extract. 
 
 ![Screenshot of a web page while extracting data from it.](.\media\web-automation\extracting-data-from-web-page.png)
 
 Any lists or tables of data will be automatically identified after two of their elements are designated for extraction.
 
+>[!NOTE]
+> To extract an entire HTML table faster, you can right-click on it and select **Extract entire HTML table**. This option is available only to elements recognized as HTML tables. If the data are structured as a table but aren't recognized as an HTML table, extract the first two of their elements, as previously described.
+
 ![Screenshot of a web page while extracting a data table from it.](.\media\web-automation\extracting-data-table-from-web-page.png)
+
+Apart from extracting values by picking them in web pages, you can manually create or edit CSS selectors that pinpoint specific elements. To create a CSS selector, select **Advanced settings** in the live web helper and choose the type of value you want to extract. You can choose between extracting a single value, multiple handpicked values (a different selector defines each value), lists, tables, and entire HTML tables.
+
+Each CSS selector consists of the tree structure of the HTML element, the exact attribute to extract from it, and a regular expression to implement more advanced selection.
+
+![Screenshot of a CSS selector.](.\media\web-automation\extracting-web-data-css-selector.png)
 
 ## Interacting with the web and web services
 
