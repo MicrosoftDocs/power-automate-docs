@@ -44,7 +44,7 @@ You can view the flows that you've created as well as flows shared with you. Thi
 
 ![Screenshot of a list of flows.](media/android/instant-flows.png "List of flows")
 
-You can view details of each individual flow, such as the flow description, run history, and connections. You can also turn the flow on or off.
+You can view details of each individual flow, such as the flow description, most recent run history, and connections. You can also turn the flow on or off.
 
 ![Screenshot of flow details.](media/android/flow-details.png "Flow details")
 
@@ -62,7 +62,12 @@ To run an instant flow, tap the flow you would like to run from the **Instant fl
 
 ## Create widgets
 
-For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen.
+Widgets make accessing and running instant flows effortless!
+
+ For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen. Widgets allow you to trigger instant flows straight from your mobile's home screen without having to open the Power Automate app. If your instant flow requires inputs, the flow will open in the app so you can fill in the required fields before triggering the flow.
+
+> [!NOTE]
+> If you haven't previously signed into the app before creating a widget, the app will be opened to allow you to sign in. Once you are signed in, you can create a widget and run your flow straight from your home screen.
 
 ## Manage approvals
 
@@ -96,6 +101,6 @@ You might have different environments set up depending on the purpose of your wo
 
 Following are the known limitations for the mobile app for Android: 
 
-- Geofencing (location-based trigger) isn't supported. This was formerly a preview feature and wasn't generally available.
+- Geofencing (location-based trigger) isn't supported. This was formerly a preview feature and was never generally available.
 
 - Flow creation and editing aren't supported. Customers told us that they prefer to create and edit in the web portal when building or changing flows. If you’re on the go and need to create or edit, you can log into Power Automate on your mobile’s browser.
