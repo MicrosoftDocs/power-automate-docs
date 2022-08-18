@@ -5,7 +5,7 @@ author: mustlaz
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 06/15/2022
+ms.date: 08/18/2022
 ms.author: mustlaz
 ms.reviewer:
 search.app: 
@@ -59,6 +59,9 @@ To be able to create hosted RPA bots, you need to have access to the default VM 
 1. Select the **Add people** field, and then enter the name of the person in your organization with whom you’d like to share the image.
 1. Select the name of the person and which permissions they have to get access to the machine or co-own it as well.
 1. Select **Save**
+
+>[!NOTE]
+> When a user isn't part of an environment anymore, you can continue to see the user as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
 ![share-vm-image-panel.png](./media/hosted-rpa-bots/share-vm-image.png)
 
@@ -165,6 +168,9 @@ The image needs to be replicated in the same Azure region as the hosted RPA bot 
 1. Select the name of the person to choose with which permissions they can access the machine.
 1. Select **Save**.
 
+>[!NOTE]
+> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
+
 ![share-custom-image.png](./media/hosted-rpa-bots/share-custom-vm-image.png)
 
 ## View list of hosted RPA bots (preview)
@@ -210,6 +216,9 @@ You can share hosted RPA bots with other users so they can create connections to
 1. For each user you can grant different permissions: **User** or **Co-owner**.
 
 **User** permission will only allow the targeted user to run desktop flows on the selected hosted RPA bots. A **Co-Owner** can also edit the hosted RPA bots details.
+
+>[!NOTE]
+> When a user isn't part of an environment anymore, you may continue to see the user as a deactivated user. You'll be notified in the **Manage access** section of the hosted RPA bot if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Trigger a desktop flow to run on your hosted RPA bots (preview)
 
@@ -375,4 +384,4 @@ During the public preview, the number of bot groups is limited to 10 for each en
 During the public preview, we delete unused resources to ensure the service is available for everyone. Therefore, all hosted RPA bot groups that are inactive for more than 28 days are automatically deleted. The deleted groups remain visible, but they can't be used. An inactive group is one that hasn't run any desktop flows for the last 28 days.
 
 > [!Note]
-> You must delete the group and create a new one to continue using the hosted RPA bots feature. You'll need to reconfigure the connection associated with your cloud flow too.
+> You must delete the group and create a new one to continue using the hosted RPA bots feature. You'll need to reconfigure the connection that's associated with your cloud flow too.

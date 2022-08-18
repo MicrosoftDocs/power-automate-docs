@@ -135,7 +135,11 @@ You can edit manually any actions created through the recorder once the recordin
 
 - **Issue**: The recorder may not record all steps from the Windows Start menu or system tray.
 
-- **Workarounds**: None.
+- **Workarounds**: None
+
+- **Issue**: Generating drag and drop actions through recording isn't supported.
+
+- **Workarounds**: None
 
 - **Issue**: While running a flow created through image-based recording, the click may be sent to the wrong place. 
 
