@@ -36,7 +36,7 @@ If you're not signed up for Power Automate, [sign up for free](sign-up-sign-in.m
 | ![Android mobile QR code.](media/android/android-mobile-qrcode.png "Power Automate mobile for Android QR code")  |
 
 > [!NOTE]
-> You can sign in with either Azure Active Directory (AAD) or your Microsoft school or work account (MSA).
+> You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
 
 ## View a list of your cloud flows
 
@@ -62,9 +62,7 @@ To run an instant flow, tap the flow you would like to run from the **Instant fl
 
 ## Create widgets
 
-Widgets make accessing and running instant flows effortless!
-
- For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen. Widgets allow you to trigger instant flows straight from your mobile's home screen without having to open the Power Automate app. If your instant flow requires inputs, the flow will open in the app so you can fill in the required fields before triggering the flow.
+Widgets make accessing and running instant flows effortless. For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen. Widgets allow you to trigger instant flows straight from your mobile's home screen without having to open the Power Automate app. If your instant flow requires inputs, the flow will open in the app so you can fill in the required fields before triggering the flow.
 
 > [!NOTE]
 > If you haven't previously signed into the app before creating a widget, the app will be opened to allow you to sign in. Once you are signed in, you can create a widget and run your flow straight from your home screen.
