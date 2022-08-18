@@ -91,9 +91,9 @@ You might have different environments set up depending on the purpose of your wo
 
 Following are the known limitations for the mobile app for Android: 
 
-- This version doesn't support geofencing (location-based trigger).
+- Geofencing (location-based trigger) isn't supported. This was formerly a preview feature and wasn't generally available.
 
-- This version doesn't support flow creation and editing in this version; customers told us that they prefer to create and edit in the portal. If you need to create or edit on the go, you can log in to Power Automate on your mobile’s browser.
+- Flow creation and editing aren't supported. Customers told us that they prefer to create and edit in the web portal when building or changing flows. If you’re on the go and need to create or edit, you can log into Power Automate on your mobile’s browser.
 
 ## Supported tasks for the mobile app for Android
 
@@ -115,4 +115,3 @@ You can get help for the following tasks, which are available and supported by P
     - You should be able to create widget for cloud flow buttons and solution flows buttons.
     - When running a widget that doesn't require inputs for trigger, it should run without opening a screen.
     - If flow requires trigger inputs, a screen will be open for inputs.
-    - 
