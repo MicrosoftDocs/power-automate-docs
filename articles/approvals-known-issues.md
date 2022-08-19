@@ -55,7 +55,7 @@ Approvals that rely on custom responses can fail if they're sent to many users w
 
 **Power Apps V2 trigger doesn't support non-open API flows**
 
-If you update your Power Apps V1 trigger to the Power Apps V2 trigger, your flow receive a connection error. To workaround this issue, update your flow to the Power Apps V2 trigger, remove and re-add the flow, and then save the app.
+If you update your Power Apps V1 trigger to the Power Apps V2 trigger, your flow receives a connection error. To workaround this issue, update your flow to the Power Apps V2 trigger, remove and re-add the flow, and then save the app.
 
 **Updating Power Apps v2 trigger to invoker connection**
 
