@@ -32,17 +32,17 @@ search.audienceType:
 
 - System requirements:
 
-   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022. ARM devices are not supported.
+   - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022. ARM devices aren't supported.
       
       - Minimum hardware
-        - Processor: 1.00GHz or faster with 2 or more cores 
-        - Storage: 1GB
-	     - RAM: 2GB
+        - Processor: 1.00 GHz or faster with two or more cores 
+        - Storage: 1 GB
+	     - RAM: 2 GB
 
       - Recommended hardware
-        - Processor: 1.60GHz or faster with 2 or more cores  
-        - Storage: 2GB
-	     - RAM: 4GB
+        - Processor: 1.60 GHz or faster with two or more cores  
+        - Storage: 2 GB
+	     - RAM: 4 GB
 	     - GPU acceleration
      - .NET Framework 4.7.2 or later 
 
@@ -51,7 +51,7 @@ search.audienceType:
 > - To install Power Automate, an account with administrator privileges to sign in to your Windows device is required.
      
 > [!TIP]
-> If your device runs Windows 10 Home, you can use Power Automate to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows 10 Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) are not supported.
+> If your device runs Windows 10 Home or Windows 11 Home, you can use Power Automate to create your desktop flows and monitor them on [Power Automate](https://powerautomate.com). You can't trigger desktop flows to run from the cloud on Windows Home devices. Other types of desktop flows (Windows recorder V1 and Selenium IDE) aren't supported.
 
 | Activity |  Description |Windows Home |  Windows Enterprise / Pro / Server  | 
 |---------|------|----------|-----------|
@@ -77,7 +77,7 @@ search.audienceType:
 
 ## Set the display language for Power Automate for desktop
 
-The language used in Power Automate for desktop is the display language selected on your Windows OS. Get more details on how to [manage display language settings in Windows 10](https://support.microsoft.com/windows/manage-display-language-settings-in-windows-10-219f28b0-9881-cd4c-75ca-dba919c52321).
+The language used in Power Automate for desktop is the display language selected on your Windows OS. Get more details on how to [manage display language settings in Windows](https://support.microsoft.com/windows/manage-display-language-settings-in-windows-10-219f28b0-9881-cd4c-75ca-dba919c52321).
 
 ## Supported languages
 
@@ -136,7 +136,7 @@ While creating desktop flows, some actions may need to access resources with ele
 
 1. Only work or school account users with Dataverse database provisioned in their default environment can create Power Automate desktop flows. Power Automate desktop flows will be stored in the default environment with the Dataverse database. 
 
-    If the Dataverse database doesn't exist in the default environment, the user will not be able to create desktop flows and be prompted to create a database. There will be no connectivity of Power Automate desktop flows with cloud flows.  
+    If the Dataverse database doesn't exist in the default environment, the user won't be able to create desktop flows and be prompted to create a database. There will be no connectivity of Power Automate desktop flows with cloud flows.  
 
     - After creating the Dataverse in the Power platform admin center, intermittently user might get prompted to create the database again. In this scenario, restart Power Automate for desktop (exit from the system tray icon).
 

@@ -65,8 +65,9 @@ To decide whether Microsoft may collect diagnostic data to improve user experien
 
 To review the details of a desktop flow, right-click on it and select **Details**. Through the **Details** dialog, you can edit the name and description of the flow, as well as see the owner, the creation and last modification dates, and the flow ID.
 
-![Screenshot of the details of a desktop flow.](media/console/desktop-flow-details.png)
+Additionally, there is a **Run URL** that you can use to run the flow through many different sources, such as browsers, the Windows Run application, and the Command Prompt. You can find more information regarding this functionality in [Run desktop flows via URL](run-pad-flow.md#run-desktop-flows-via-url).
 
+![Screenshot of the details of a desktop flow.](media/console/desktop-flow-details.png)
 
 ## Update Power Automate for desktop
 

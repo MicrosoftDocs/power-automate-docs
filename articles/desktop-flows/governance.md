@@ -75,7 +75,7 @@ You can use the following registry entry to prevent users from logging into Powe
 
 ## Restricting access to Power Automate for desktop
 
-In order to restrict access to Power Automate for desktop on a workstation with Windows 10, use [Applocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
+In order to restrict access to Power Automate for desktop on a workstation with Windows 10 or Windows 11, use [Applocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
 ## Allow users to sign in to Power Automate for desktop using Web Account Manager (WAM)
 
@@ -212,12 +212,23 @@ You can use the following registry entry to configure the cleanup of local flow 
 ***Value***
 
 - **1**: Flow run action details stored in the **Actions.log** file won't be deleted from the local disk after the run is completed.
+
+## Prevent Power Automate for desktop from running flows containing cloud connectors
+
+You can use the following registry entry to disable the execution of flows containing cloud connectors.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableCloudConnectors|DWORD|
+
+***Value***
+
+- **1**: The machine won't be able to run desktop flows containing cloud connectors. An appropriate error message will inform users about the set limitation.
  
 ## Learn more
 
 - Learn to [create Power Automate desktop flows](create-flow.md).
 - Learn how to run [desktop flows](run-desktop-flow.md).
 - Learn to [manage desktop flows](manage.md).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -58,7 +58,7 @@ Existing UI elements are displayed in the UI element pane, while new ones can be
 
 ![Screenshot of the available UI elements in the Populate text field on web page action.](.\media\web-automation\adding-new-elements-through-a-web-action.png)
 
-To add a new UI element, highlight the appropriate web element and press **Ctrl & left-click**. After adding all the required elements, select **Done** to save them to the UI elements pane.
+To add a new UI element, highlight the appropriate web element and press **Ctrl + Left click**. After adding all the required elements, select **Done** to save them to the UI elements pane.
 
 ![Screenshot of the highlighted UI elements to capture.](.\media\web-automation\capturing-new-elements.png)
 

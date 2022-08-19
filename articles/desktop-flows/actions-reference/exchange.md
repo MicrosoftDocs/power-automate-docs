@@ -17,7 +17,8 @@ search.audienceType:
 
 # Exchange
 
-
+> [!WARNING]
+> This group of actions is intended for Exchange Server automation scenarios. For automation scenarios regarding Exchange Online, use the corresponding Office 365 cloud connectors through cloud flows.
 
 Automate sending, receiving, and managing emails through Exchange
 
