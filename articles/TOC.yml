@@ -133,6 +133,8 @@
         href: create-approval-response-options.md
       - name: Known issues and limitations
         href: approvals-known-issues.md
+      - name: Debugging issues with Approval emails
+        href: email-notification-status-help.md
     - name: Use flows with Microsoft 365 Outlook email
       items:
       - name: Overview
