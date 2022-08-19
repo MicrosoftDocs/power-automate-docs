@@ -5,7 +5,7 @@ author: mariosleon
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 06/15/2021
+ms.date: 08/19/2021
 ms.author: marleon
 ms.reviewer:
 search.app: 
@@ -62,10 +62,10 @@ To silently register your machine and join a group, we recommend you to use a se
  
     ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.png)
 
-## How to use the Machine registration App?
-1.	Open **Start** menu
-1.	Search for command prompt (or PowerShell) and then run it
-1.	Change the directory to the Power Automate install folder (by default: C:\Program Files (x86)\Power Automate)
+## Use the machine registration app
+1.	Open the **Start** menu.
+1.	Search for "command prompt" (or "PowerShell"), and then run it.
+1.	Change the directory to the Power Automate installation folder (by default: C:\Program Files (x86)\Power Automate).
 
     ```
     cd C:\Program Files (x86)\Power Automate
