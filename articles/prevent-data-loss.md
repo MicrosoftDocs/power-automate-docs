@@ -180,8 +180,8 @@ When changes can impact existing flows, the following staged DLP enforcement cha
 1. Investigating - Confirm the need for a DLP enforcement change and investigate the specifics of the change.
 1. Learning - Implement the change and gather data about the breadth of the effects of the change. DLP enforcement changes are documented to explain the scope of the change. If the data suggests that some customers will be greatly affected, then communication is sent to those customers letting them know that a change is coming.
 1. Soft enforcement - Turn on soft enforcement of DLP violations so owners of existing flows get notified about the change.
-    1. When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed.
-    1. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended.
+    1. Design time - When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed so the maker is immediately aware of the enforcement. 
+    1. Background process - When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended. This enforcement mechanism runs weekly to ensure that policies are enforced.
 1. Hard enforcement - Turn on hard enforcement of DLP violations, so DLP policies are fully enforced on all existing and new flows. The DLP policies will be fully enforced when flows are saved during DLP enforcement background job evaluation.
 
 ## DLP enforcement change list
