@@ -5,8 +5,8 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
-ms.author: Deonhe
+manager: TapanM
+ms.author: Matow
 editor: ''
 tags: ''
 
