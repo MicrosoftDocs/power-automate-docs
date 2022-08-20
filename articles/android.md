@@ -37,7 +37,7 @@ If you're not signed up for Power Automate, [sign up for free](sign-up-sign-in.m
 
 > [!NOTE]
 > - You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
-> - The generally available version of the updated app is currently being rolled out and may not be available for you yet.
+> - The new version of the app is currently being rolled out and may not be available for you yet.
 
 ## View a list of your cloud flows
 
