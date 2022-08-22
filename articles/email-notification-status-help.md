@@ -26,38 +26,32 @@ search.audienceType:
 
 This article contains an explanation of the process for sending an email notification, as well as a description of the possible email notification statuses and troubleshooting.
 
-Sending the email notification is a two-step process, we place a request to the Microsoft Email Orchestrator, and they put the email to be sent in a queue.
+Sending the email notification is a two-step process.
 
-## What does my status mean?
+1. Power Automate places a request to the Microsoft Email Orchestrator.
+1. Microsoft Email Orchestrator places the email to be sent in a queue.
 
-### Pending
+## status definitions
 
-Power Automate is still in the process of requesting the Microsoft Email Orchestrator to send the notification.
+Status|Description
+------------------
+Pending| Power Automate is in the process of requesting that the Microsoft Email Orchestrator sends the notification.
+Requested| Power Automate successfully placed the request, but the Microsoft Email Orchestrator is still in the process of sending the email.
+Sent| The email notification was correctly sent by the Microsoft Email Orchestrator.
+Failed| The email was correctly placed in the queue, but the Microsoft Email Orchestrator couldn’t send it.
 
-### Requested
+## Missing emails
 
-Power Automate correctly placed the request, but the Microsoft Email Orchestrator is still in the process of sending the email.
+If the status of your email notification is **Sent** but you don't see the email notification, try the following options.
 
-### Sent
-
-The email notification was correctly sent by the Microsoft Email Orchestrator.
-
-### Failed
-
-The email was correctly placed in the queue, but the Microsoft Email Orchestrator couldn’t send it.
-
-## Why don't I see my email?
-
-If the status of your email notification is Sent and you are unable to see the email notification try the following options:
-
-- Refresh your inbox and verify that you have an active internet connection.
-- Make sure that the email address is correct to verify you have the right recipient.
-- Review your email settings to verify if there are any filters enabled or blocked addresses.
+- Refresh your inbox and verify that you have an active Internet connection.
+- Confirm that the email address is correct for the recipient to whom you intend to send the notifcaton.
+- Review your email settings and verify if there are any filters or blocked addresses that may prevent you from seeing the notification.
 - Check your spam/promotions folder.
 
-## Why did my request fail?
+## Troubleshoot failed requests
 
-If the status of your email notification is Failed, you can try the following options:
+If the status of your email notification is **Failed**, you can try the following options.
 
-- Try making another request to the same recipients.
-- Raise a ticket to Microsoft support detailing the issue.
+- Make another request to the same recipients.
+- Raise a ticket to Microsoft support, detailing the issue.
