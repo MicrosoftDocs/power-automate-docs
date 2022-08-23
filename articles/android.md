@@ -86,7 +86,7 @@ To create a widget:
       ![Screenshot of the screen with a widget.](media/android/widget-run.png "Select the widget to run flow")
 
 > [!NOTE]
-> You can't run [solution-aware flows](overview-solution-flows.md) using a widget.
+>You can't run shared instant flows using a widget, but you *can* run [solution-aware flows](overview-solution-flows.md) using a widget.
 
 ## Manage approvals
 
