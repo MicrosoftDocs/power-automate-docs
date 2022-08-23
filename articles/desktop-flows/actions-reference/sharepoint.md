@@ -100,7 +100,7 @@ If you want to download files of specific subfolders, modify the previously depl
 
 ![Screenshot of a conditional that checks the current item's name.](media\sharepoint\if-action-item-name.png)
 
-If you want to download only files of a specific type, add a conditional before retrieving the file contents to check whether the file name contains a particular extension.
+If you want to download only files of a specific type, add a conditional before retrieving the file contents to check whether the file name ends with a particular extension.
 
 ![Screenshot of a conditional that checks the current item's file type.](media\sharepoint\if-action-item-type.png)
 
