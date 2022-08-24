@@ -54,6 +54,9 @@ When the connection is established successfully, the machine settings section wi
 - **Machine description:** An optional description of the machine.
 - **Machine environment:** The running environment of the machine.
 
+> [!NOTE]
+> Although you can create and debug desktop flows in Teams environments, you aren't able to register machines in them.
+
 ![Screenshot of the the Machine settings.](./media/register-machines/registered-machine.png)
  
 > [!NOTE]
