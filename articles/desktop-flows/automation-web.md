@@ -5,7 +5,7 @@ author: mariosleon
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 08/23/2022
 ms.author: marleon
 ms.reviewer: 
 search.app: 
@@ -82,18 +82,18 @@ Additionally, the **Get details of element on web page** action supports the **w
 
 ### Web extraction of structured data
 
-To extract large amounts of structured data, use the **Extract data from web page** action. The extracted data can be stored as single values, lists, and tables or be pasted into Excel worksheets. 
+To extract large amounts of structured data, use the **Extract data from web page** action. You can store the extracted data as single values, lists, and tables or you can paste them into Excel worksheets. 
 
 ![Screenshot of the Extract data from web page action.](.\media\web-automation\extract-data-from-web-page-action.png)
 
-When the action is deployed, right-click on the desired data on the web page to view the available extraction options. To extract a specific value, select **Extract element value** and choose the appropriate HTML attribute you want to extract. 
+When you deploy the action, right-click on the data you want from the web page to view the available extraction options. To extract a value, select **Extract element value**, and then choose the HTML attribute you want to extract. 
 
 ![Screenshot of a web page while extracting data from it.](.\media\web-automation\extracting-data-from-web-page.png)
 
 Any lists or tables of data will be automatically identified after two of their elements are designated for extraction.
 
 >[!NOTE]
-> To extract an entire HTML table faster, you can right-click on it and select **Extract entire HTML table**. This option is available only to elements recognized as HTML tables. If the data are structured as a table but aren't recognized as an HTML table, extract the first two of their elements, as previously described.
+> To extract an entire HTML table faster, you can right-click on it and select **Extract entire HTML table**. This option is available only to elements that Power Automate recognizes as HTML tables. If the data is structured as a table but it isn't recognized as an HTML table, extract the first two of their elements, as previously described.
 
 ![Screenshot of a web page while extracting a data table from it.](.\media\web-automation\extracting-data-table-from-web-page.png)
 
