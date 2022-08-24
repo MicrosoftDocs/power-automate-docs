@@ -25,7 +25,7 @@ To edit an existing selector, select the appropriate UI element and choose the s
 
 ![Screenshot of a selector's dialog.](media/build-custom-selectors/edit-selector.png)
 
-To add more selectors for a UI element, capture a new selector using the **Selector with recapture** button or create a copy of an existing selector. To create a copy, right-click on the existing selector and select **Create a copy**.
+You can create multiple selectors for a UI element. Whenever a selector fails, Power Automate uses the next selector in the defined order. To add more selectors for a UI element, capture a new selector using the **Selector with recapture** button or create a copy of an existing selector. To create a copy, right-click on the existing selector and select **Create a copy**.
 
 ![Screenshot of the buttons to capture a new selector and create a copy of an existing selector.](media/build-custom-selectors/create-new-selector.png)
 
