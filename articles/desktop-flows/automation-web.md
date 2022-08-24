@@ -86,22 +86,22 @@ To extract large amounts of structured data, use the **Extract data from web pag
 
 ![Screenshot of the Extract data from web page action.](.\media\web-automation\extract-data-from-web-page-action.png)
 
-When you deploy the action, right-click on the data you want from the web page to view the available extraction options. To extract a value, select **Extract element value**, and then choose the HTML attribute you want to extract. 
+When you deploy the action, right-click on the data you want from the web page to view the available extraction options. To extract a value, select **Extract element value**, and then choose the HTML attribute that you want to extract. 
 
 ![Screenshot of a web page while extracting data from it.](.\media\web-automation\extracting-data-from-web-page.png)
 
-Any lists or tables of data will be automatically identified after two of their elements are designated for extraction.
+Power Automate automatically identifies ny lists or tables of data after you select two or more of their elements for extraction.
 
 >[!NOTE]
-> To extract an entire HTML table faster, you can right-click on it and select **Extract entire HTML table**. This option is available only to elements that Power Automate recognizes as HTML tables. If the data is structured as a table but it isn't recognized as an HTML table, extract the first two of their elements, as previously described.
+> To extract an entire HTML table faster, you can right-click on the table, and then select **Extract entire HTML table**. This option is available only to elements that Power Automate recognizes as HTML tables. If the data is structured as a table but it isn't recognized as an HTML table, extract the first two of their elements, as previously described.
 
 ![Screenshot of a web page while extracting a data table from it.](.\media\web-automation\extracting-data-table-from-web-page.png)
 
-Apart from extracting values by picking them on web pages, you can manually create or edit CSS selectors that pinpoint specific elements. 
+Additionally, you can manually create or edit CSS selectors that pinpoint specific elements. 
 
-To create a CSS selector, select **Advanced settings** in the live web helper and choose the type of value you want to extract. You can choose between extracting a single value, multiple handpicked values (a different selector defines each value), lists, tables, and entire HTML tables.
+To create a CSS selector, select **Advanced settings** in the live web helper, and then choose the type of value you want to extract. You can choose to extract a single value, multiple handpicked values (a different selector defines each value), lists, tables, and entire HTML tables.
 
-Each CSS selector consists of the tree structure of the HTML element, the exact attribute to extract from it, and optionally a regular expression to implement more advanced selection.
+Each CSS selector consists of the tree structure of the HTML element, the attribute to extract from it, and optionally a regular expression to implement more advanced selection.
 
 ![Screenshot of a CSS selector.](.\media\web-automation\extracting-web-data-css-selector.png)
 
