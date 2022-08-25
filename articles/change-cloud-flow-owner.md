@@ -26,6 +26,12 @@ You can change the owner to an individual (not a distribution list) or a user ac
 
 Follow these steps to change the owner of a flow.
 
+>[!WARNING]
+   >To perform this action, the flow must be referenced in a solution.
+
+
+1. Sign in to [Power Automate](https://flow.microsoft.com).
+
 1. On the left pane, select **Solutions**.
 
 1. Select the solution that contains the flow you want to change.
@@ -74,3 +80,4 @@ If the flow is a **manual** flow, the flow runs under the license of the user wh
 
 To learn how to export and import non-solution-aware flows, go to this [video](https://www.youtube.com/watch?v=K7_xWJvEPUc).
 
+The owner of a flow left the company. How can we ensure it works without interruptions?[Learn more.](https://docs.microsoft.com/power-platform/admin/power-automate-licensing/faqs#the-owner-of-a-flow-left-the-company-how-can-we-ensure-it-works-without-interruptions)
