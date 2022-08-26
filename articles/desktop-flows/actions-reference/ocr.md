@@ -1,12 +1,11 @@
 ---
 title: OCR | Microsoft Docs
-description: OCR Actions Reference
-author: mariosleon
-
+description: OCR actions reference
+author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
-ms.author: marleon
+ms.date: 08/26/2022
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -38,9 +37,12 @@ Power Automate supports the Windows OCR engine and the Tesseract engine. To conf
 > [!WARNING]
 > Image multipliers increase the size of the image to make searching and text extraction more effective. Please note that setting values greater than 3 may lead to erroneous results.
 
+> [!NOTE]
+> All the available OCR engines are pre-installed in Power Automate and work locally without connecting to the cloud. However, you may need to download language packs or data files to extract texts in specific languages.  
+
 ### Using the Windows OCR engine
 
-The default OCR engine in Power Automate is the Windows OCR engine that comes pre-installed with it. To extract texts using the Windows OCR engine, you need to install the appropriate languages pack for the language you want to extract. 
+The default OCR engine in Power Automate is the Windows OCR engine. To extract texts using the Windows OCR engine, you need to install the appropriate languages pack for the language you want to extract. 
 
 If the appropriate language pack hasn't been installed, Power Automate will throw an error prompting you to install it. You can find more information regarding downloading and installing language packs in [Language packs for Windows](https://support.microsoft.com/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
 
