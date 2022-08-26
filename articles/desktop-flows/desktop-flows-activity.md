@@ -16,7 +16,7 @@ search.audienceType:
 
 # Desktop flows activity (preview)
 
-As you scale the automation of business processes, you may need access to aggregated data to monitor your desktop flows effectively. The **Desktop flow activity** section of the Power Automate portal provides dashboards, tables, and graphs to monitor desktop flows, measure effectiveness, and quickly identify issues.  
+As you scale the automation of business processes, you may need access to aggregated data to monitor your desktop flows effectively. The **Desktop flow activity** section of the Power Automate portal (**Monitor** -> **Desktop flow activity**) provides dashboards, tables, and graphs to monitor desktop flows, measure effectiveness, and quickly identify issues.  
 
 ## Monitor desktop flow errors
 
