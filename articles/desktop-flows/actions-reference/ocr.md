@@ -30,7 +30,7 @@ To create an OCR engine and extract text from images and documents, use the **Ex
 
 ![Screenshot of the Extract text with OCR action.](media/ocr/extract-text-ocr-example.png)
 
-All OCR actions can create a new OCR engine variable or use an existing one. You can use existing OCR engine variables in any action offering OCR capabilities. 
+All OCR actions can create a new OCR engine variable or use an existing one. You can use existing OCR engine variables in any action that offers OCR capabilities. 
 
 Power Automate supports the Windows OCR engine and the Tesseract engine. To configure the selected OCR  engine, navigate to the **OCR engine settings** of the appropriate action. The available options include the language and the image width and height multipliers. 
 
