@@ -26,7 +26,7 @@ search.audienceType:
 
 As an admin, you'll need to view the overall status of automation that runs in your organization. There are three options to monitor the analytics for automation that's built with desktop flows:
 
-1. [Desktop flows activity](desktop-flows-activity.md) (directly in Power Automate)  
+1. [Desktop flow activity](desktop-flow-activity.md) (directly in Power Automate)  
 1. The Power Platform [admin center](https://aka.ms/ppac).
 1. The [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/setup).
 
