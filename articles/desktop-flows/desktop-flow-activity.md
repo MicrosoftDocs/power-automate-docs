@@ -38,6 +38,8 @@ You can find information regarding each table in the following list:
 
 ![Screenshot of the Desktop flow activity section.](media\desktop-flow-activity\desktop-flow-activity-section.png)
 
+:::image type="content" source="media\desktop-flow-activity\desktop-flow-activity-section.png" lightbox="media\desktop-flow-activity\desktop-flow-activity-section.png" alt=text="":::
+
 ## Available data for admins and makers
 
 The **Desktop flow activity** section is helpful for CoEs (Center of Excellence) who want to monitor all the activity in the environment and makers who want to get an aggregated view of their automations. 
