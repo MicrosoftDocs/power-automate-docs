@@ -1,6 +1,6 @@
 ---
-title: Desktop flows activity (preview) | Microsoft Docs
-description: Desktop flows activity (preview)
+title: Desktop flow activity (preview) | Microsoft Docs
+description: Desktop flow activity (preview)
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Desktop flows activity (preview)
+# Desktop flow activity (preview)
 
 As you scale the automation of business processes, you may need access to aggregated data to monitor your desktop flows effectively. The **Desktop flow activity** section of the Power Automate portal (**Monitor** -> **Desktop flow activity**) provides dashboards, tables, and graphs to monitor desktop flows, measure effectiveness, and quickly identify issues.  
 
@@ -35,6 +35,8 @@ You can find information regarding each table in the following list:
 - **Top machine failures**: This card displays the machine where the desktop flow runnings failed the most. You can select each machine name to reach its details page. 
 
 - **Error trends**: This chart displays the trends day by day. It could help you to see if an error started to appear recently or if the failing is a regular phenomenon. In addition to trends per error, the chart can also present trends per desktop flow and machine. Select the dropdown menu of the table to change the type of pivot you prefer.
+
+![Screenshot of the Desktop flow activity section.](media\desktop-flow-activity\desktop-flow-activity-section.png)
 
 ## Available data for admins and makers
 
