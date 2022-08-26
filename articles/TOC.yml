@@ -366,7 +366,7 @@
     - name: Desktop flow queues
       href: ./desktop-flows/monitor-desktop-flow-queues.md
     - name: Desktop flow activity (preview) 
-      href: ./desktop-flows/desktop-flows-activity.md
+      href: ./desktop-flows/desktop-flow-activity.md
   - name: Data loss prevention (DLP) (preview)
     href: ./desktop-flows/data-loss-prevention.md
   - name: Power Automate console
