@@ -36,7 +36,7 @@ You can find information regarding each table in the following list:
 
 - **Error trends**: This chart displays the trends day by day. It could help you to see if an error started to appear recently or if the failing is a regular phenomenon. In addition to trends per error, the chart can also present trends per desktop flow and machine. Select the dropdown menu of the table to change the type of pivot you prefer.
 
-## Available data
+## Available data for admins and makers
 
 The **Desktop flow activity** section is helpful for CoEs (Center of Excellence) who want to monitor all the activity in the environment and makers who want to get an aggregated view of their automations. 
 
