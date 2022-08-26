@@ -22,11 +22,11 @@ search.audienceType:
   - enduser
 ---
 
-# Introduction
+# Overview of SAP integration with Power Platform
 
 Microsoft Power Platform will be introducing enhanced integration capabilities into complex systems of record, like SAP and Oracle E-Business Suite. The enhanced integrations into Power Apps, Power Automate, and Azure Logic Apps will empower organizations to interact with complex systems of record more easily and build better end-to-end business solutions.
 
-# Overview
+## Overview
 
 During this private preview, we will assign a Power Automate contact to work with you to set up a new prebuilt SAP solution for either purchase orders or sales orders and connect to your SAP development environment to validate functionality. Your feedback will enable our team to gain more insights to make further improvements. Specifically, the goal is to set up and test the following:
 
@@ -37,10 +37,6 @@ During this private preview, we will assign a Power Automate contact to work wit
 -   Power Automate SAP RFC Read Table query action
 
 -   Azure Logic Apps functions
-
-**Get started**
-
-Let's work together to ensure a successful private preview rollout.  Your Power Automate contact is available to assist you along the way.  Please set up a meeting schedule with them.
 
 ## Resources 
 

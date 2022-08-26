@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Test the Power Platform's enhanced SAP Connector 
+# Test and verify SAP integration with Power Platform
 
 The newest version of Power Platform's SAP connector has enhanced functionalities. It enables Message Server support and allows for easier entering of parameters needed when connecting to SAP.
 

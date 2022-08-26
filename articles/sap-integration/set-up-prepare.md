@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-## Requirements 
+# Prepare and set up SAP integration with Power Platform
 
 The following requirements need to be established before testing can begin. Please let your Power Automate contact know if you need any assistance.
 
@@ -37,8 +37,6 @@ The following requirements need to be established before testing can begin. Plea
 -   [Azure AD Single sign-on (SSO) for Gateway](https://docs.microsoft.com/en-us/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) - Your Azure AD tenant must be configured with an on-premises data gateway with constrained delegation to support SSO.
 
 -   [SAP](http://www.sap.com/) – You'll need a current SAP subscription.
-
-# Set up and test 
 
 Work with your Power Automate contact through the following steps: 
 
@@ -92,12 +90,3 @@ SAP has several different connection parameters, and it is cumbersome for makers
 
 ![](media/set-up-prepare/image2.png)
 
-## Test the Power Platform's enhanced SAP Connector 
-
-The newest version of Power Platform's SAP connector has enhanced functionalities. It enables Message Server support and allows for easier entering of parameters needed when connecting to SAP.
-
-There is a minimum of two required fields for this action to begin:
-
--   SAP System: This is a JSON string containing all the necessary SAP connection parameters. For a complete list of all the available properties, refer to the "SAP property guidance" table. The JSON string can be manually entered or chosen from an existing environment variable within a solution.
-
--   RFC name: The name of the remote call function (RFC) you would like to call.
