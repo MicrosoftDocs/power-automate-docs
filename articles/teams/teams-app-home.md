@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: TapanM
 editor: ''
 tags: ''
 ms.custom: intro-internal

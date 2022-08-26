@@ -211,11 +211,14 @@ Some of your desktop flows might run for long durations, for example more than 2
 
 ## Run desktop flows via URL
 
-Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using console run URLs.
+Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using run URLs.
 
 You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, and the Command Prompt. If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
 
 By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL. To disable this functionality, navigate to the console settings and disable the option **Display confirmation dialog when invoking flows via URL** or modify the [appropriate Windows registry entry](governance.md#disable-confirmation-dialog-when-invoking-power-automate-desktop-flows-via-url).
+
+> [!WARNING]
+> Be aware that disabling the confirmation dialog poses security threats, as you could run without notice a questionable flow shared with you by a malicious actor.
 
 ![Screenshot of the Prompt me before running flows triggered by URL option in the console settings.](media/run-flow-url/console-run-url-console-settings.png)
 
@@ -225,7 +228,7 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 - The user must be signed in.
 - The user needs a trial or paid organization subscription or a pay-as-you-go environment.
 
-### Create a console run URL 
+### Create a run URL 
 
 To generate a URL that triggers a desktop flow, use one of the following formats:
 
@@ -240,6 +243,8 @@ To generate a URL that triggers a desktop flow, use one of the following formats
 ```
 "ms-powerautomate:/console/flow/run?environmentId=[environmentId]&workflowId=[workflowId]"
 ``` 
+> [!NOTE]
+> You can find an automatically created run URL consisting of the environment and flow IDs on the details page of the desktop flow. You can find more information about flow details in [Desktop flow details](console.md#desktop-flow-details).
 
 ```
 "ms-powerautomate:/console/flow/run?environmentId=[environmentId]&workflowName=[workflowIName]"
@@ -248,7 +253,7 @@ To generate a URL that triggers a desktop flow, use one of the following formats
 >[!Important]
 > If a flow is already running, it won't run again when the URL is invoked.
 
-The first two formats don't define a specific environment, so Power Automate automatically uses the currently selected console environment. The command will be neglected if both flow ID and flow name aren't specified.
+The first two formats don't define a specific environment, so Power Automate automatically uses the currently selected console environment. The command will be neglected if either flow ID or flow name isn’t specified.
 
 If the console is set to another environment than the one specified in the URL, the console environment will automatically change.
 
@@ -264,7 +269,7 @@ To find the ID of a desktop flow, launch the Power Automate console, right-click
 
 ### Save logs for desktop flows run via URL
 
-Apart from the mandatory input parameters, you can add the **runId** parameter to a console run URL to define a unique GUID for the desktop flow logs. 
+Apart from the mandatory input parameters, you can add the **runId** parameter to a run URL to define a unique GUID for the desktop flow logs. 
 
 Power Automate uses this GUID to create a folder and store the logs inside it. The logs are stored in: **C:\Users\\[Username]\AppData\Local\Microsoft\Power Automate Desktop\Console\Scripts\\[Flow ID]\Runs\\[Run ID]**
 
@@ -277,12 +282,12 @@ A URL containing the **runId** input parameter should have the following structu
 "ms-powerautomate:/console/flow/run?workflowId=[workflowId]&runId=[GUID]"
 ```
 
-### Use a console run URL in the Command Prompt 
+### Use a run URL in the Command Prompt 
 
 To trigger a flow using the Command Prompt, use a command with the following syntax:
 
 >[!NOTE]
-> You can replace the second part of the command with any of the previously presented external URL formats.
+> You can replace the second part of the command with any of the previously presented URL formats.
 
 ```
 "C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe" "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"

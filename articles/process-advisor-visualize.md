@@ -36,6 +36,14 @@ There are various filters available for you to drill down into the process:
 
 - Time filter allows you to see the process visualization in a particular period. Additionally, there are key performance indicators available to help you better understand your process. They're described in more detail below.
 
+There might be situations when you'll select the **Insights** tab to review your flow and then want to return to the previous screen. To go back, select one of the breadcrumbs at the top of the screen. The **Back** button won't work.
+
+Here's an example of the breadcrumbs you can select:
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of breadcrumbs.](media/process-mining-auto-rec/breadcrumbs.png "Breadcrumbs")
+
+
 ### Process KPIs
 
 - **Number (#) of recordings**: Shows you how many recordings of the same process were submitted to analyze this process. The more recordings you have available, the more insights you will get. For example, if you provide only a few recordings of a process that often has different paths to completion, you might not get insights into all the variations that the process could take.

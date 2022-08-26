@@ -13,7 +13,7 @@ ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/09/2021
+ms.date: 08/17/2022
 ms.author: marleon
 search.app: 
   - Flow 
@@ -48,13 +48,13 @@ The installer allows you to install two different apps on your device:
 By default, both are installed on your device.  
 
 >[!IMPORTANT]
->The installer installs the Webdriver component. You need it to run desktop flows created with Selenium IDE.
+>The installer adds the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also install the Power Automate app and third-party components.
 
 ![Screenshot of the installation details.](media/desktop-flows-setup/installer-checkboxes.png)
 
 >[!IMPORTANT]
->In order to register your machine, you need to have an Organization premium account.
+>To register your machine, you must have an organization premium account.
 
 >[!NOTE]
 >Power Automate for desktop by default honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
@@ -78,7 +78,7 @@ There are a few ways to access the most recent version of Power Automate from th
 During installation, you can change the default settings if you don't want to send usage data to Microsoft. To do so, uncheck **Allow Microsoft to collect usage data to improve Power Automate**.
 
 >[!IMPORTANT]
->Sharing usage data to Microsoft, will help the support department to solve a Power Automate issue.
+>Sharing usage data with Microsoft may help the support department to solve a Power Automate issue.
 
 ## Install the Power Automate browser extension 
 
@@ -91,7 +91,7 @@ Select one of the links displayed in the installer. For example, if you want to 
    The store for your browser opens directly to the public page for the extension.
 
 > [!IMPORTANT]
-> If you have already installed the Power Automate extension in the past, you don't need to reinstall it
+> If you have already installed the Power Automate extension, you don't need to reinstall it.
 
 #### Microsoft Edge: 
 - [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151411): select **Get**, and then select **Add extension** when prompted. 
@@ -201,6 +201,9 @@ Apart from direct connectivity, you can establish communication with a  machine 
 
 > [!IMPORTANT]
 > Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
+
+> [!IMPORTANT]
+> Before you use a machine to run desktop flows from the cloud, ensure that the machine is secured and the machine's admins are trusted.
 
 1. Sign into [Power Automate](https://powerautomate.microsoft.com).
 1. Expand **Data** on the left side of the screen.
