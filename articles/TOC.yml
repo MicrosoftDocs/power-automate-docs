@@ -779,6 +779,30 @@
       href: gdpr-dsr-accountclose-msa.md
   - name: Power Automate US Government
     href: us-govt.md
+- name: Guidance
+  items:
+  - name: Automation CoE toolkit setup guide
+    href: ./guidance/automation-coe/overview.md
+  - name: Set up the automation (COE) toolkit
+    href: ./guidance/automation-coe/setup-automation-coe.md
+  - name: Configure the automation COE toolkit
+    href: ./guidance/automation-coe/configure-automation-coe.md
+  - name: Exception rules framework
+    href: ./guidance/automation-coe/exception-rules-framework.md
+  - name: DLP impact analysis for desktop flows
+    href: ./guidance/automation-coe/dlp-impact-analysis.md
+  - name: Use the automation COE toolkit
+    href: ./guidance/automation-coe/use-automation-coe-toolkit.md
+  - name: Testing an end-to-end scenario
+    href: ./guidance/automation-coe/test-coe-end-to-end.md
+  - name: Limitations
+    href: ./guidance/automation-coe/coe-limitations.md
+  - name: FAQs
+    href: ./guidance/automation-coe/coe-faqs.md
+  - name: Release notes
+    href: ./guidance/automation-coe/coe-rel-notes.md
+  - name: Feedback and support
+    href: ./guidance/automation-coe/coe-feedback-support.md
 - name: Reference
   items:
   - name: Regions overview
