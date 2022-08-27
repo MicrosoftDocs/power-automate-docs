@@ -9,7 +9,7 @@ editor: ''
 tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/14/2022
+ms.date: 08/27/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -26,8 +26,8 @@ You can change the owner to an individual (not a distribution list) or a user ac
 
 Follow these steps to change the owner of a flow.
 
->[!WARNING]
-   >To perform this action, the flow must be referenced in a solution.
+>[!IMPORTANT]
+>To perform this action, the flow must be referenced in a solution.
 
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
