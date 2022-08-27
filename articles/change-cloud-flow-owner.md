@@ -80,4 +80,4 @@ If the flow is a **manual** flow, the flow runs under the license of the user wh
 
 To learn how to export and import non-solution-aware flows, go to this [video](https://www.youtube.com/watch?v=K7_xWJvEPUc).
 
-The owner of a flow left the company. How can we ensure it works without interruptions? [Learn more.](https://docs.microsoft.com/power-platform/admin/power-automate-licensing/faqs#the-owner-of-a-flow-left-the-company-how-can-we-ensure-it-works-without-interruptions)
+The owner of a flow left the company. How can we ensure it works without interruptions? [Learn more.](/power-platform/admin/power-automate-licensing/faqs#the-owner-of-a-flow-left-the-company-how-can-we-ensure-it-works-without-interruptions)
