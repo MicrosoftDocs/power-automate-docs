@@ -32,7 +32,7 @@ To create an OCR engine and extract text from images and documents, use the **Ex
 
 All OCR actions can create a new OCR engine variable or use an existing one. You can use existing OCR engine variables in any action that offers OCR capabilities. 
 
-Power Automate supports the Windows OCR engine and the Tesseract engine. To configure the selected OCR  engine, navigate to the **OCR engine settings** of the appropriate action. The available options include the language and the image width and height multipliers. 
+Power Automate supports the Windows OCR engine and the Tesseract engine. To configure the selected OCR engine, navigate to the **OCR engine settings** of the appropriate action. The available options include the language and the image width and height multipliers. 
 
 > [!WARNING]
 > Image multipliers increase the size of the image to make searching and text extraction more effective. Please note that setting values greater than 3 may lead to erroneous results.
@@ -44,9 +44,9 @@ Power Automate supports the Windows OCR engine and the Tesseract engine. To conf
 
 The default OCR engine in Power Automate is the Windows OCR engine. To extract texts using the Windows OCR engine, you need to install the appropriate languages pack for the language you want to extract. 
 
-If the appropriate language pack hasn't been installed, Power Automate will throw an error prompting you to install it. You can find more information regarding downloading and installing language packs in [Language packs for Windows](https://support.microsoft.com/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
+If the appropriate language pack isn't installed, Power Automate throws an error, prompting you to install it. You can find more information regarding downloading and installing language packs in [Language packs for Windows](https://support.microsoft.com/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
 
-After installing the appropriate language pack, extend the **OCR engine settings** of the OCR action and select the desired language. The Windows OCR engine supports 25 languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic and Latin), Slovak, Spanish, Swedish, and Turkish.
+After you install the appropriate language pack, extend the **OCR engine settings** of the OCR action and then select the language you want. The Windows OCR engine supports 25 languages, including Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic and Latin), Slovak, Spanish, Swedish, and Turkish.
 
 ### Using the Tesseract OCR engine
 
