@@ -1,6 +1,6 @@
 ---
-title: Send and receive push notifications in Power Automate mobile | Microsoft Docs
-description: You can send and receive push notifications in Power Automate mobile.
+title: Send and receive push notifications in the Power Automate mobile app for Android | Microsoft Docs
+description: Learn how to send and receive push notifications in the Power Automate mobile app for Android.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/15/2022
+ms.date: 09/09/2022
 ms.author: angieandrews
 search.app: 
   - Flow
@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Send and receive push notifications
+# Send and receive push notifications in the Power Automate mobile app for Android
 
 The notifications feature allows you to send and receive push notifications. To get to the **Notifications** screen, tap the bell icon in the app header.
 

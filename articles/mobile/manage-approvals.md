@@ -1,6 +1,6 @@
 ---
-title: Manage approvals on the go in Power Automate mobile | Microsoft Docs
-description: View, approve, or reject requests in Power Automate mobile.
+title: Manage approvals in the Power Automate mobile app for Android | Microsoft Docs
+description: Learn how to view, approve, or reject requests in the Power Automate mobile app for Android.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/15/2022
+ms.date: 09/09/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -21,15 +21,25 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Manage approvals on the go
+# Manage approvals in the Power Automate mobile app for Android
 
 The approvals feature allows you to manage your approval requests while you’re away from your desk. 
 
-You can approve or reject a request directly from the **Approvals** screen. Alternatively, to view more details of an approval request, tap the vertical (**…**) next to a request and select **Details**.
+You can approve or reject a request directly from the **Approvals** screen.
 
 ![Screenshot of a list of approval requests.](media/manage-approvals-1.png "List of approval requests")
 
-In the following example, you can see the additional details, comments, and attachments. Select **Approve** or **Reject**.
+## View approval details
 
-![Screenshot of manage approvals.](media/manage-approvals.png "Approval details")
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+As an alternative, you can view additional details such as comments and attachments of each approval in a separate screen.
+
+To view approval details:
+
+1. On the **Approvals** screen, select the vertical (**…**) next to a request.
+
+1. Select **Details**.
+
+1. Select **Approve** or **Reject**.
+
+    ![Screenshot of manage approvals.](media/manage-approvals.png "Approval details")
+    [!INCLUDE[footer-include](../includes/footer-banner.md)]
