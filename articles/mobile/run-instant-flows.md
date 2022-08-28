@@ -28,7 +28,7 @@ The instant flows feature allows you to easily run repetitive tasks from any pla
 
 If you've used the previous Power Automate mobile app version, you know instant flows as button flows.
 
-![Screenshot of a list of instant flows.](/articles/media/android/instant-flows-1.png "List of instant flows")
+![Screenshot of a list of instant flows.](media/android/instant-flows-1.png "List of instant flows")
 
 To run an instant flow:
 
@@ -38,7 +38,7 @@ To run an instant flow:
 
     Some flows might require you to fill in parameters before running the flow.
 
-    ![Screenshot of instant flows.](/articles/media/android/run-flow.png "Run instant flows")
+    ![Screenshot of instant flows.](media/android/run-flow.png "Run instant flows")
 
 ## Create widgets
 
@@ -49,11 +49,11 @@ To create a widget:
 1. Select Power Automate mobile app settings.
 1. Select **Widgets**.
 
-    ![Screenshot of the option to add widgets using the android mobile app.](/articles/media/android/widget.png "Create widgets to run flows effortlessly")
+    ![Screenshot of the option to add widgets using the android mobile app.](media/android/widget.png "Create widgets to run flows effortlessly")
 
 1. Choose the location for the widget.
 
-    ![Screenshot of the screen to add widgets.](/articles/media/android/widget-place.png "Choose location for the widget")
+    ![Screenshot of the screen to add widgets.](media/android/widget-place.png "Choose location for the widget")
 
     > [!NOTE]
     > If you haven't previously signed into the app before creating a widget, the app will be opened to allow you to sign in. Once you are signed in, you can create a widget and run your flow straight from your home screen.
@@ -62,7 +62,7 @@ To create a widget:
 
 1. Use the widget to run the flow directly using the widget when needed, without opening the Power Automate mobile app.
 
-      ![Screenshot of the screen with a widget.](/articles/media/android/widget-run.png "Select the widget to run flow")
+      ![Screenshot of the screen with a widget.](media/android/widget-run.png "Select the widget to run flow")
 
 > [!NOTE]
 >You can't run shared instant flows using a widget, but you *can* run [solution-aware flows](../overview-solution-flows.md) using a widget.

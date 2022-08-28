@@ -42,7 +42,7 @@ If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-i
 | Android |
 | :---:   |
 | [![Download the Power Automate mobile app for Android from Google Play.](media/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
-| ![Power Automate mobile app for Android QR code.](media/android-mobile-qrcode.png "Power Automate mobile app for Android QR code")  |
+|![!Power Automate mobile app for Android QR code.](media/android-mobile-qrcode.png "Power Automate mobile app for Android QR code")   |
 
 > [!NOTE]
 > - You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
