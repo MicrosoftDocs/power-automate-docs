@@ -46,7 +46,7 @@
       href: apply-to-each.md
   - name: Power Automate mobile app
     items:
-    - Android
+    - name: Android
       items:
       - name: Overview
         href: ./mobile/overview-mobile.md
@@ -58,7 +58,7 @@
         href: ./mobile/send-receive-push.md
       - name: Manage cloud flows
         href: ./mobile/manage-cloud-flows.md
-    - iOS
+    - name: iOS
       items:
       - name: Create a button flow
         href: introduction-to-button-flows.md
