@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Send and receive push notifications in the Power Automate mobile app for Android
+# Send and receive push notifications
 
 The notifications feature allows you to send and receive push notifications. To get to the **Notifications** screen, tap the bell icon in the app header.
 

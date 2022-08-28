@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Manage approvals in the Power Automate mobile app for Android
+# Manage approvals
 
 The approvals feature allows you to manage your approval requests while you’re away from your desk. 
 

@@ -21,7 +21,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Overview of the Power Automate mobile app for Android
+# Overview
 
 Experience the same familiar look and feel of the Power Automate portal with Power Automate mobile app for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
 
@@ -42,7 +42,7 @@ If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-i
 | Android |
 | :---:   |
 | [![Download the Power Automate mobile app for Android from Google Play.](media/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
-|![!Power Automate mobile app for Android QR code.](media/android-mobile-qrcode.png "Power Automate mobile app for Android QR code")   |
+| ![The Power Automate mobile app for Android QR code.](/articles/media/android/android-mobile-qrcode.png "The Power Automate mobile app for Android QR code")  |
 
 > [!NOTE]
 > - You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
@@ -54,8 +54,6 @@ You might have different environments set up depending on the purpose of your wo
 
 ![Screenshot of environments icon.](media/environment.png "Environments")
  
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
-
 ## Limitations
 
 Following are the known limitations for the mobile app for Android:
@@ -63,3 +61,5 @@ Following are the known limitations for the mobile app for Android:
 - Geofencing (location-based trigger) isn't supported. This was formerly a preview feature and was never generally available.
 
 - Flow creation and editing aren't supported. Customers told us that they prefer to create and edit in the web portal when building or changing flows. If you’re on the go and need to create or edit, you can log into Power Automate on your mobile’s browser.
+- 
+- [!INCLUDE[footer-include](../includes/footer-banner.md)]
