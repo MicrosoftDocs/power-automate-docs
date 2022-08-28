@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/09/20222
+ms.date: 09/09/2022
 ms.author: angieandrews
 search.app: 
   - Flow
@@ -41,8 +41,8 @@ If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-i
 
 | Android |
 | :---:   |
-| [![Download the Power Automate mobile app for Android from Google Play.](/articles/media/android/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
-| ![The Power Automate mobile app for Android QR code.](/articles/media/android/android-mobile-qrcode.png "The Power Automate mobile app for Android QR code")  |
+| [![Download the Power Automate mobile app for Android from Google Play.](media/android/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
+| ![The Power Automate mobile app for Android QR code.](media/android/android-mobile-qrcode.png "The Power Automate mobile app for Android QR code")  |
 
 > [!NOTE]
 > - You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
