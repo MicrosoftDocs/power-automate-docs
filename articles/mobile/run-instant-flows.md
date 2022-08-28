@@ -50,11 +50,11 @@ To create a widget:
 
 1. Select **Widgets**.
 
-![Screenshot of the option to add widgets using the android mobile app.](media/android/widget.png "Create widgets to run flows effortlessly")
+![Screenshot of the option to add widgets using the android mobile app.](android/widget.png "Create widgets to run flows effortlessly")
 
 1. Choose the location for the widget.
 
-    ![Screenshot of the screen to add widgets.](media/android/widget-place.png "Choose location for the widget")
+    ![Screenshot of the screen to add widgets.](android/widget-place.png "Choose location for the widget")
 
     > [!NOTE]
     > If you haven't previously signed into the app before creating a widget, the app will be opened to allow you to sign in. Once you are signed in, you can create a widget and run your flow straight from your home screen.
@@ -63,7 +63,7 @@ To create a widget:
 
 1. Use the widget to run the flow directly using the widget when needed, without opening the Power Automate mobile app.
 
-      ![Screenshot of the screen with a widget.](media/android/widget-run.png "Select the widget to run flow")
+      ![Screenshot of the screen with a widget.](android/widget-run.png "Select the widget to run flow")
 
 > [!NOTE]
 >You can't run shared instant flows using a widget, but you *can* run [solution-aware flows](../overview-solution-flows.md) using a widget.
