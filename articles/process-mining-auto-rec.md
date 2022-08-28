@@ -45,6 +45,13 @@ Having a lower number of candidate variants and high event log data quality lead
 > [!div class="mx-imgBorder"]
 > ![Screenshot of Insight path and confidence sore.](media/process-mining-auto-rec/complex-path.png "Insight path and confidence score")
 
+There might be situations when you'll select the **Insights** tab to review your flow and then want to return to the previous screen. To go back, select one of the breadcrumbs at the top of the screen. The **Back** button won't work.
+
+Here's an example of the breadcrumbs you can select:
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot of breadcrumbs.](media/process-mining-auto-rec/breadcrumbs.png "Breadcrumbs")
+
 ## Insight categories
 
 Understanding the insight category assigned to your process will help you determine how to evaluate the appropriate path or variant for your process. Insight categories are classified according to path characteristics. The following table describes the various paths and their recommended actions to evaluate your process.

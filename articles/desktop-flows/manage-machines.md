@@ -60,6 +60,7 @@ When the connection is established successfully, the machine settings section wi
 > - Users need either an Environment Maker or Desktop Flow Machine Owner role to register machines. Before registering a machine, make sure that you have the required permissions and that there is an available environment to register the new machine.
 > - In the case of a virtual machine, make sure not to clone the virtual machine after installing the **Power Automate machine runtime** application.
 > - Machines aren't affected by changes in the Power Automate for desktop organization.
+> - Although users can create and debug desktop flows in Teams environments, they aren't able to register machines in them.
 
 > [!IMPORTANT]
 > To successfully register a machine, make sure that the services specified in [IP address configuration](../ip-address-configuration.md#desktop-flows-services-required-for-runtime) are accessible.
