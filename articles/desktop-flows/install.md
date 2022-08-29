@@ -25,7 +25,7 @@ search.audienceType:
 
 # Install Power Automate on your device
 
-The installer contains all the components you need to record, edit, and test your automations, as well as connect to the cloud.
+The installer contains all the components you need to record, edit, and test your automations, and connect to the cloud.
 
 ## Install Power Automate
 
@@ -82,7 +82,7 @@ During installation, you can change the default settings if you don't want to se
 
 ## Install the Power Automate browser extension 
 
-After the installation completes, you will need to install and enable the browser extension for Power Automate. This extension will allow you to record and run web actions in your desktop flows.
+After the installation completes, you'll need to install and enable the browser extension for Power Automate. This extension will allow you to record and run web actions in your desktop flows.
 
 ![Screenshot of the Installation success dialog.](media/desktop-flows-setup/screen.png)
 
@@ -94,7 +94,7 @@ Select one of the links displayed in the installer. For example, if you want to 
 > If you have already installed the Power Automate extension, you don't need to reinstall it.
 
 #### Microsoft Edge: 
-- [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151411): select **Get**, and then select **Add extension** when prompted. 
+- [Install Microsoft Edge extension](https://go.microsoft.com/fwlink/?linkid=2151411): select **Get**, and then select **Add extension** when prompted. 
 - If you see the message: *This extension has been turned off in Microsoft Edge*, at the top of the page, select **Turn on extension**.
 
 #### Google Chrome: 
@@ -164,6 +164,7 @@ You can also retrieve the details of all the command line arguments from the hel
 |-RESTOREDEFAULTCONFIG|Restores to the default installation settings during an upgrade.|
 |-DONOTINSTALLPAD|Skips installing Power Automate for desktop.|
 |-DONOTINSTALLMACHINERUNTIME|Skips installing Power Automate machine-runtime app|
+|-SKIPINSTALLINGJAVAAUTOMATION|kips installing files that are required for enabling UI automation in Java applets.|
 
 Here's an example of a command line argument that installs Power Automate: 
 
@@ -233,14 +234,14 @@ Apart from direct connectivity, you can establish communication with a  machine 
 
 ## Install Windows recorder (v1) extension (optional)
 
-The Windows recorder (v1) is another option to record and playback your desktop automations. We recommend you to use Power Automate for desktop since this is the latest RPA solution.
+The Windows recorder (v1) is another option to record and play back your desktop automations. We recommend you to use Power Automate for desktop since it's the latest RPA solution.
 
 Follow these steps to install Windows recorder (v1) extension:
 
-1. Install the extension on Microsoft Edge and/or Google Chrome from the store (Firefox is not supported for Windows recorder (v1))
+1. Install the extension on Microsoft Edge and/or Google Chrome from the store (Firefox isn't supported for Windows recorder (v1))
 
 #### Microsoft Edge: 
-- [Install Edge extension](https://go.microsoft.com/fwlink/?linkid=2151412): select **Get**, and then select **Add extension** when prompted.
+- [Install Microsoft Edge extension](https://go.microsoft.com/fwlink/?linkid=2151412): select **Get**, and then select **Add extension** when prompted.
 
 #### Google Chrome: 
 - [Install Chrome extension](https://go.microsoft.com/fwlink/?linkid=2150930): select **Add to Chrome**, and then select **Enable extension** when prompted. 
@@ -264,7 +265,7 @@ Follow these steps to install Selenium IDE:
 > [!IMPORTANT]
 > Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
-You will need the gateway to trigger your desktop from an [event, schedule, or button flow.](..\flow-types.md) on a remote device.
+You'll need the gateway to trigger your desktop from an [event, schedule, or button flow.](..\flow-types.md) on a remote device.
 
 >[!TIP]
 >The gateway isn't required if you only want to create, edit, and test your flows on your device.
