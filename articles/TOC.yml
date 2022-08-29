@@ -52,6 +52,8 @@
         href: ./mobile/overview-mobile.md
       - name: Run instant flows
         href: ./mobile/run-instant-flows.md
+      - name: Create widgets
+        href: ./mobile/widgets.md
       - name: Manage approvals
         href: ./mobile/manage-approvals.md
       - name: Send and receive push notifications
