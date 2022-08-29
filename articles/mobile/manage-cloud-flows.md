@@ -23,7 +23,7 @@ search.audienceType:
 ---
 # Manage cloud flows
 
-Power Automate mobile allows you to view the flows you've created. This includes non-solution and solution-aware flows.
+Power Automate mobile allows you to view the flows you've created. This includes non-solution and solution-aware flows. You can also view details of each individual flow,
 
 ## View a list of your cloud flows
 
@@ -31,16 +31,18 @@ You can view the flows that you've created as well as flows shared with you. Thi
 
 ![Screenshot of a list of flows.](../media/android/instant-flows.png "List of flows")
 
-You can view details of each individual flow, such as the flow description, most recent run history, and connections. You can also turn the flow on or off.
-
-![Screenshot of flow details.](../media/android/flow-details.png "Flow details")
-
 ## View run history and connections
 
 The Power Automate mobile app offers the following additional cloud flow management tools:
 
+- View the description of your flow.
+
 - View your flow's run history to confirm that it ran successfully.
 
 - Keep track of connections for each cloud flow.
+
+- Turn the flow on or off.
+
+![Screenshot of flow details.](../media/android/flow-details.png "Flow details")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

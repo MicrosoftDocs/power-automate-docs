@@ -50,7 +50,7 @@ To create a widget:
 
 1. Select **Widgets**.
 
-![Screenshot of the option to add widgets using the android mobile app.](../media/android/widget.png "Create widgets to run flows effortlessly")
+    ![Screenshot of the option to add widgets using the android mobile app.](../media/android/widget.png "Create widgets to run flows effortlessly")
 
 1. Choose the location for the widget.
 
