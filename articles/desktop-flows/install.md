@@ -160,13 +160,13 @@ You can also retrieve the details of all the command line arguments from the hel
 |Command|Description|
 |----|----|
 |-INSTALLPATH:Value|The full path of the installation folder that will be created. Default: <br />is `%PROGRAMFILES(X86)%\Power Automate`.|
-|-ALLOWOPTIONALDATACOLLECTION|Enable sending optional telemetry data to Microsoft.|
+|-ALLOWOPTIONALDATACOLLECTION|Enables sending optional telemetry data to Microsoft.|
 |-DISABLEPADSHORTCUT|Doesn't create a shortcut for Power Automate for desktop.|
-|-DISABLETURNONRDP|Doesn't turn on Remote Desktop on the machine|
+|-DISABLETURNONRDP|Doesn't turn on Remote Desktop on the machine.|
 |-ACCEPTEULA|Accepts the end user license agreement, needed for the installation.|
 |-RESTOREDEFAULTCONFIG|Restores to the default installation settings during an upgrade.|
 |-DONOTINSTALLPAD|Skips installing Power Automate for desktop.|
-|-DONOTINSTALLMACHINERUNTIME|Skips installing Power Automate machine-runtime app|
+|-DONOTINSTALLMACHINERUNTIME|Skips installing Power Automate machine-runtime app.|
 |-SKIPINSTALLINGJAVAAUTOMATION|Skips installing files that are required for enabling UI automation in Java applets.|
 
 Here's an example of a command line argument that installs Power Automate: 
