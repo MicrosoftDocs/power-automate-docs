@@ -25,3 +25,5 @@ search.audienceType:
 # Tutorial: Integrate SAP with Power Platform using a sample solution
 
 Step-by-step with screenshots for sample solution
+
+Updates during discussions
