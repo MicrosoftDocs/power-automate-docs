@@ -1,6 +1,6 @@
 ---
-title: Run instant flows in the Power Automate mobile app for Android | Microsoft Docs
-description: Learn how to run an instant flow and create widgets in Power Automate mobile app for Android.
+title: Create widgets in the Power Automate mobile app for Android | Microsoft Docs
+description: Learn how to create a widget in Power Automate mobile app for Android.
 services: ''
 suite: flow
 documentationcenter: na
