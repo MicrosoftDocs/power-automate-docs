@@ -703,22 +703,22 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-- name: SAP integration
-  items:
-  - name: Overview
-    href: ./sap-integration/overview.md
-  - name: Available solutions
-    href: ./sap-integration/solutions.md
-  - name: Set up and prepare
-    href: ./sap-integration/set-up-prepare.md
-  - name: Data sources
-    href: ./sap-integration/data-sources-pane.md
-  - name: Action screens
-    href: ./sap-integration/action-screen.md
-  - name: Test and verify SAP integration
-    href: ./sap-integration/test-setup.md
-  - name: "Tutorial: SAP integration with Power Platform"
-    href: ./sap-integration/tutorial.md
+  - name: SAP integration
+    items:
+    - name: Overview
+      href: ./sap-integration/overview.md
+    - name: Available solutions
+      href: ./sap-integration/solutions.md
+    - name: Set up and prepare
+      href: ./sap-integration/set-up-prepare.md
+    - name: Data sources
+      href: ./sap-integration/data-sources-pane.md
+    - name: Action screens
+      href: ./sap-integration/action-screen.md
+    - name: Test and verify SAP integration
+      href: ./sap-integration/test-setup.md
+    - name: "Tutorial: SAP integration with Power Platform"
+      href: ./sap-integration/tutorial.md
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
