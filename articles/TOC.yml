@@ -703,7 +703,7 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-  - name: SAP integration
+  - name: SAP integration (preview)
     items:
     - name: Overview
       href: ./sap-integration/overview.md

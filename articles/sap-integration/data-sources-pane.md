@@ -1,5 +1,5 @@
 ﻿---
-title: Understand the Data sources pane in Power Automate for SAP integration
+title: Understand the Data sources pane in Power Automate for SAP integration (preview)
 description: Learn about the Data sources pane in Power Automate to configure SAP integration
 services: ''
 suite: flow
@@ -22,39 +22,17 @@ search.audienceType:
   - enduser
 ---
 
-**New Data Sources Page**
+[This article is pre-release documentation and is subject to change.]
 
- 
-
-**ADO IDs: **[Epic 13029271](https://dev.azure.com/msazure/One/_workitems/edit/13029271)
-
-**Owner:** [Jon Gilman](mailto:jongilman@microsoft.com), [David Galitsky](mailto:dgalitsy@microsoft.com)
-
-**Design, Research & XR Timelines:** Not applicable.
-
- 
-
-**Why?** 
+# Understand the Data sources pane in Power Automate for SAP integration (preview)
 
 Currently, connections in Power Automate are attached to specific users and cannot be shared across Flow makers. This makes it difficult for large organizations who have several Flow makers accessing the same enterprise systems. Additionally, when adding a new SAP data connection, many of the key connection parameters are missing for enterprise customers. In order to support Single Sign On and load balanced connections, some changes will need to be made. We are proposing a new page called Data Sources that allows IT admins to configure connection attributes as environment variables that can be shared across many Flow makers.
 
-**Who?**
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
-We are targeting makers of PA flows at large enterprises.
-
-**What?**
-
-3 pages within the Data menu of Power Apps and Power Automate:
-
-[Navigation Menu 2](navigation-menu.md)
-
-[Data Sources Page 2](#data-sources-page)
-
-[Data Source Detail Page 3](#data-source-detail-page)
-
-[Merging Connection Parameters at Run-Time 4](#merging-connection-parameters-at-run-time)
-
-# Navigation Menu
+## Navigation Menu
 
 Add a sub-menu item beneath the Data menu item called Data Sources. On click of the menu item, the user should be navigated to the Data Sources page, where environment variables matching the following conditions will be displayed:
 
@@ -62,7 +40,7 @@ Add a sub-menu item beneath the Data menu item called Data Sources. On click of 
 
 ![](media/data-sources-pane/image1.png)
 
-# Data Sources Page
+## Data Sources Page
 
 Create a new Data Sources page that mirrors the layout of the Connections page, but with some key differences:
 
@@ -82,7 +60,7 @@ Create a new Data Sources page that mirrors the layout of the Connections page, 
 
 ![](media/data-sources-pane/image2.png)
 
-# Data Source Detail Page
+## Data Source Detail Page
 
 Copy the Connection Detail page but add some additional features:
 
@@ -96,7 +74,7 @@ Copy the Connection Detail page but add some additional features:
 
 When the user clicks Create or Save, the data from the System Detail Page should be saved to a JSON-type environment variable.
 
-# Merging Connection Parameters at Run-Time
+## Merging Connection Parameters at Run-Time
 
 Depending on the type of authentication used by an SAP customer, there will be session variables passed from Power Apps that need to be merged with the server-side connection parameters at run-time:
 

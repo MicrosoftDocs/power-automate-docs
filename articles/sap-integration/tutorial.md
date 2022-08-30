@@ -1,5 +1,5 @@
 ﻿---
-title: "Tutorial: Integrate SAP with Power Platform using a sample solution"
+title: "Tutorial: Integrate SAP with Power Platform using a sample solution (preview"
 description: Learn about how to integrate SAP with Power Platform using a sample solution that contains Power Apps and Power Automate components
 services: ''
 suite: flow
@@ -22,8 +22,14 @@ search.audienceType:
   - enduser
 ---
 
-# Tutorial: Integrate SAP with Power Platform using a sample solution
+# Tutorial: Integrate SAP with Power Platform using a sample solution (preview)
+
+[This article is pre-release documentation and is subject to change.]
 
 Step-by-step with screenshots for sample solution
 
-Updates during discussions
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+
+Content to follow

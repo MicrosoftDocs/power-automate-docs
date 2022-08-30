@@ -1,5 +1,5 @@
 ﻿---
-title: Prepare and set up SAP integration with Power Platform
+title: Prepare and set up SAP integration with Power Platform (preview)
 description: Learn about the requirements to configure SAP integration, and prepare your on-premises SAP infrastructure to connect with Power Platform.
 services: ''
 suite: flow
@@ -22,7 +22,9 @@ search.audienceType:
   - enduser
 ---
 
-# Prepare and set up SAP integration with Power Platform
+# Prepare and set up SAP integration with Power Platform (preview)
+
+[This article is pre-release documentation and is subject to change.]
 
 The following requirements need to be established before testing can begin. Please let your Power Automate contact know if you need any assistance.
 
@@ -39,6 +41,10 @@ The following requirements need to be established before testing can begin. Plea
 -   [SAP](http://www.sap.com/) – You'll need a current SAP subscription.
 
 Work with your Power Automate contact through the following steps: 
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Install the private preview OPDG 
 

@@ -1,5 +1,5 @@
 ﻿---
-title: Overview of SAP integration with Power Platform
+title: Overview of SAP integration with Power Platform (preview)
 description: Learn about the SAP integration with Power Platform, and the capabilities of the SAP connector working with Power Automate.
 services: ''
 suite: flow
@@ -22,11 +22,11 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of SAP integration with Power Platform
+# Overview of SAP integration with Power Platform (preview)
+
+[This article is pre-release documentation and is subject to change.]
 
 Microsoft Power Platform will be introducing enhanced integration capabilities into complex systems of record, like SAP and Oracle E-Business Suite. The enhanced integrations into Power Apps, Power Automate, and Azure Logic Apps will empower organizations to interact with complex systems of record more easily and build better end-to-end business solutions.
-
-## Overview
 
 During this private preview, we will assign a Power Automate contact to work with you to set up a new prebuilt SAP solution for either purchase orders or sales orders and connect to your SAP development environment to validate functionality. Your feedback will enable our team to gain more insights to make further improvements. Specifically, the goal is to set up and test the following:
 
@@ -38,7 +38,11 @@ During this private preview, we will assign a Power Automate contact to work wit
 
 -   Azure Logic Apps functions
 
-## Resources 
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+
+## Resources
 
 Secure the following resources to assist with the configuration of the different environments: 
 
@@ -67,4 +71,3 @@ Our team has set up the following to make sharing and collaboration efficient:
     -   A sales order or purchase order template—let your power automate contact know which template you prefer. 
 
     -   More, as needed. 
-
