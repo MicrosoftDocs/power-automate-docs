@@ -166,7 +166,7 @@ You can use the following registry entry to configure how Power Automate for des
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
-|HKEY_CURRENT_USER|SOFTWARE\Microsoft\Power Automate Desktop|EnableAskBeforeRunningAFlowExternally|DWORD|
+|HKEY_CURRENT_USER|SOFTWARE\Microsoft\Power Automate Desktop|NotificationsType|DWORD|
 
 ***Value***
 
@@ -180,25 +180,13 @@ You can use the following registry entry to configure Power Automate for desktop
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
-|HKEY_CURRENT_USER|SOFTWARE\Microsoft\Power Automate Desktop|NotificationsType|DWORD|
+|HKEY_CURRENT_USER|SOFTWARE\Microsoft\Power Automate Desktop|EnableAskBeforeRunningAFlowExternally|DWORD|
 
 ***Value***
 
 - **0**: Power Automate for desktop won't display a confirmation dialog when invoking flows via URL or desktop shortcut. The user can change this option through the console settings.
 - **1**: Power Automate for desktop will display a confirmation dialog when invoking flows via URL or desktop shortcut. The user can change this option through the console settings.
 - **2**: Power Automate for desktop will always display a confirmation dialog when invoking flows via URL or desktop shortcut. The user is not allowed to change this option through the console settings.
-
-## Disable confirmation dialog when invoking Power Automate desktop flows via URL
-
-You can use the following registry entry to prevent Power Automate for desktop from displaying a confirmation dialog when invoking desktop flows via URL.
-
-|Hive|Key|Name|Type|
-|---|---|---|---|
-|HKEY_CURRENT_USER|SOFTWARE\Microsoft\Power Automate Desktop|EnableAskBeforeRunningAFlowExternally|DWORD|
-
-***Value***
-
-- **0**: Power Automate for desktop won't display a confirmation dialog when invoking desktop flows via URL.
 
 
 ## Configure Power Automate for desktop to keep the flow run details
