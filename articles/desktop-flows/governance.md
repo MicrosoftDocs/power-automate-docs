@@ -174,9 +174,9 @@ You can use the following registry entry to configure how Power Automate for des
 - **2**: Power Automate for desktop will use the integrated Windows notifications.
 - **3**: Power Automate for desktop won't display notifications.
 
-## Configure Power Automate for desktop to run flows via URL or desktop shortcut.
+## Configure Power Automate for desktop confirmation dialog when invoking flows via URL or desktop shortcut
 
-You can use the following registry entry to configure Power Automate for desktop’s behavior while invoking flows via URL or desktop shortcut.
+You can use the following registry entry to configure the behavior of the confirmation dialog when invoking flows via URL or desktop shortcut.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
