@@ -116,6 +116,7 @@ Optionally, if you want to change the button text, font color, font size, or fil
 * Power BI data is sent to, and processed in, a geography where the flow is deployed.
 * The Power Automate visual isn't supported for PaaS-embedded scenarios, nor in sovereign cloud scenarios.
 * The Power Automate visual will not work for published reports because the users are unauthenticated.
+* The Power Autonate visual is currently limited to process only 1000 records
 
 
 
