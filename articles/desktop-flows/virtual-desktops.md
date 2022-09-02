@@ -24,9 +24,7 @@ Automating on virtual desktops works precisely as on physical machines. You can 
 
 > [!IMPORTANT]
 > - This is a preview feature.
->
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
->
 > - Automating on virtual desktops doesn't currently support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md), [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md), or [automate using images](images.md).
 
 
