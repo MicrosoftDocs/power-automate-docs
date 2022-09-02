@@ -4,7 +4,7 @@ description: This section describes how to automate on virtual desktops.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 07/06/2022s
+ms.date: 07/06/2022
 ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
