@@ -230,7 +230,7 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 
 ### Create a desktop shortcut
 
-To create a shortcut for a desktop flow, right-click on its name in the console and select **Create desktop shortcut**. All shortcuts are automatically created in your desktop folder, but you can move them in any folder of your machine.
+To create a shortcut for a desktop flow, right-click on its name in the console and select **Create desktop shortcut**. All shortcuts are automatically created in your desktop folder, but you can move them to any folder of your machine.
 
 ### Create a run URL 
 
