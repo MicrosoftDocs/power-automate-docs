@@ -5,14 +5,14 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/06/2022
-ms.author: v-gtrantzas
+ms.author: gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
 search.audienceType: 
   - flowmaker
   - enduser
----s
+---
 
 # Automating on virtual desktops (preview)
 
