@@ -209,13 +209,13 @@ Some of your desktop flows might run for long durations, for example more than 2
 
    - Restart the service on your device.
 
-## Run desktop flows via URL or desktop shortcut
+## Run desktop flows via URL or desktop shortcutss
 
 Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using run URLs and desktop shortcuts.
 
 You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, and the Command Prompt. Alternatively, you can create desktop shortcuts and run your desktop flows directly through them. If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
 
-By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. To disable this functionality, navigate to the console settings and disable the option **Display confirmation dialog when invoking flows via URL** or modify the [appropriate Windows registry entry](governance.md#disable-confirmation-dialog-when-invoking-power-automate-desktop-flows-via-url).
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. To disable this functionality, navigate to the console settings and disable the option **Display confirmation dialog when invoking flows via URL** or modify the [appropriate Windows registry entry](governance.md#configure-power-automate-for-desktop-confirmation-dialog-when-invoking-flows-via-url-or-desktop-shortcut).
 
 > [!WARNING]
 > Be aware that disabling the confirmation dialog poses security threats, as you could run without notice a questionable flow shared with you by a malicious actor.
@@ -230,7 +230,7 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 
 ### Create a desktop shortcut
 
-To create a shortcut for a desktop flow, right-click on its name in the console and select **Create desktop shortcut**. All shortcuts are automatically created in your desktop folder, but you can move and run them from other folders. s
+To create a shortcut for a desktop flow, right-click on its name in the console and select **Create desktop shortcut**. All shortcuts are automatically created in your desktop folder, but you can move them in any folder of your machine.
 
 ### Create a run URL 
 
@@ -271,7 +271,7 @@ To find the ID of a desktop flow, launch the Power Automate console, right-click
 
 ![Screenshot of the desktop flow details.](media/run-flow-url/find-desktop-flow-id.png)
 
-### Save logs for desktop flows run via URL and desktop shortcuts
+### Save logs for desktop flows run via URL
 
 Apart from the mandatory input parameters, you can add the **runId** parameter to a run URL to define a unique GUID for the desktop flow logs. 
 
