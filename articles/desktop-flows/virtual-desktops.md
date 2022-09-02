@@ -16,7 +16,7 @@ search.audienceType:
 
 # Automating on virtual desktops (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Apart from physical machines, desktop flows enable you to automate the operating system and applications in Citrix and RDP (Microsoft Remote Desktop Protocol) virtual desktops, and interact with Citrix virtual apps.
 
@@ -25,7 +25,7 @@ Automating on virtual desktops works precisely as on physical machines. You can 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 >
 > - Automating on virtual desktops doesn't currently support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md), [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md), or [automate using images](images.md).
 
