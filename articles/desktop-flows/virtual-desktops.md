@@ -1,11 +1,11 @@
 ---
-title: Automating on virtual desktops (Preview) | Microsoft Docs
+title: Automating on virtual desktops (preview) | Microsoft Docs
 description: This section describes how to automate on virtual desktops.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/06/2022
-ms.author: v-gtrantzas
+ms.author: gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -14,14 +14,20 @@ search.audienceType:
   - enduser
 ---
 
-# Automating on virtual desktops (Preview)
+# Automating on virtual desktops (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Apart from physical machines, desktop flows enable you to automate the operating system and applications in Citrix and RDP (Microsoft Remote Desktop Protocol) virtual desktops, and interact with Citrix virtual apps.
 
 Automating on virtual desktops works precisely as on physical machines. You can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md).
 
 > [!IMPORTANT]
-> Automating on virtual desktops doesn't currently support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md), [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md), or [automate using images](images.md).
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+>
+> - Automating on virtual desktops doesn't currently support the automation of webpages using browser automation actions. To automate webpages on virtual desktops, you can [handle them as desktop UI elements](desktop-automation.md), [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md), or [automate using images](images.md).
 
 
 To enable this functionality, install the **Power Automate agent for virtual desktops** on your virtual desktop. The agent communicates with the Power Automate for desktop application and facilitates the required interaction with it. The same agent can work with both Citrix and RDP virtual desktops.
