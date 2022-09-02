@@ -215,7 +215,7 @@ Power Automate, apart from triggering flows through the console, flow designer a
 
 You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, and the Command Prompt. Alternatively, you can create desktop shortcuts and run your desktop flows directly through them. If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
 
-By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. To disable this functionality, navigate to the console settings and disable the option **Display confirmation dialog when invoking flows via URL** or modify the [appropriate Windows registry entry](governance.md#configure-power-automate-for-desktop-confirmation-dialog-when-invoking-flows-via-url-or-desktop-shortcut).
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. To disable this functionality, navigate to the console settings and disable the option **Display confirmation dialog when invoking flows externally** or modify the [appropriate Windows registry entry](governance.md#configure-power-automate-for-desktop-confirmation-dialog-when-invoking-flows-via-url-or-desktop-shortcut).
 
 > [!WARNING]
 > Be aware that disabling the confirmation dialog poses security threats, as you could run without notice a questionable flow shared with you by a malicious actor.
