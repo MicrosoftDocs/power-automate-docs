@@ -17,105 +17,79 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Limitations
-===========
+# Limitations and resolutions in the automation CoE toolkit.
 
-Environment variables not editable after import
------------------------------------------------
+This article contains some of the limitations in the automation CoE toolkit.
 
-You cannot update the values for environment variables from within the solution
-since it is **Managed**.
+## Limitations and resolutions
 
-Fix: To update Environment Variables:
+### Environment variables are not editable after you import a solution
 
-1.  Go to [Power Automate](https://flow.microsoft.com/).
+**Issue** - You cannot update the values for environment variables from within the solution because the solution is **Managed**.
+**Resoluton:** - Use the following steps to update environment variables.
 
-2.  On the left pane, select **Solutions**.
+1. Go to [Power Automate](https://flow.microsoft.com/).
+1. On the left pane, select **Solutions**.
+1. Select the **Default Solution** and change the filter to show **Environment Variables**.
+1. Select a variable that you want to update, and then configure its **Current Value**.
 
-3.  Select the **Default Solution** and change the filter to show **Environment
-    Variables**.
+### Environment variables continue to use the old values after a manual change
 
-4.  Select a variable that you want to update, and then configure its **Current
-    Value**.
+**Issue** - When someone changes environment variable values directly within an environment, instead of through an ALM operation like solution import, flows continue to use the previous value.
+**Resolution** - For canvas apps, the new value will be used during the next session. For example, closing the app and then playing it again.
 
-Environment variables using old values if changed manually
-----------------------------------------------------------
+>[!NOTE]
+>You must deactivate and then reactivate cloud flows for them to use the updated value.
 
-When environment variable values are changed directly within an environment
-instead of through an ALM operation like solution import, flows will continue
-using the previous value
+### The resolution in the automation solution manager is enlarged
 
-Fix: **For canvas apps, the new value will be used during the next session. For
-example, closing the app and then playing it again.**
+**Issue** - On certain resolution sizes the screen is automatically enlarges everything. This cuts off some of the buttons in the app.
 
-**With cloud flows, the flows must currently be de-activated and re-activated to
-use the updated value.**
+![Image that shows the enlarged resolution](media/a7e87dc9ccc58541f265f910fbf1770a.png)
 
-Automation Solution Manager Resolution
---------------------------------------
+**Resolution** - Zoom out to fix the issue.
 
-On certain resolution sizes the screen is automatically enlarging everything.
-This cuts off some of the buttons when using the app.
+   ![A screenshot that shows fixed resolution](media/14adcfc6d46d25c84d8de9c92390894c.png)
 
-![](media/a7e87dc9ccc58541f265f910fbf1770a.png)
+### Cannot meter non-solution aware flows
 
-Fix: Zoom out
-
-![](media/14adcfc6d46d25c84d8de9c92390894c.png)
-
-Cannot Meter Non-Solution Aware Flows
--------------------------------------
-
-At this time, the current solution cannot meter any flows that are not inside a
+**Issue** - At this time, the current solution cannot meter any flows that are not inside a
 solution.
+**Resolution** - Put all flows that need to be metered inside a solution.
 
-Fix:
+### Cloud flows don't support metering
 
-All Flows that need to be metered, **need to be put inside a solution**.
+**Issue** - Cloud flows must follow a specific naming convention before they're used for metering.
+**Resolution** - All solution-aware cloud flows that you want to be metered, must follow a new
+naming convention that is internally being validated via **RegEx (_AP-[0-9]{9}_[0-9]{3}\\b)**. Here is the expected format.
 
-Cloud Flows must follow specific naming convention before they can be used for metering 
-----------------------------------------------------------------------------------------
+   [CloudFlowName]_AP-[9digits]_[3digits]
 
-All solution-aware cloud flows that you want to be metered, must follow a new
-naming convention that is internally being validated via **RegEx
-(_AP-[0-9]{9}_[0-9]{3}\\b)**. This is the expected format:
+For example, in **MostLikleyTheBest-CLoUdfLoW_AP-000001013_001.**, you can use the last 3 digits advanced scenarios and are typically 001 if you only have one solution per automation project. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution if you wish to distinguish them.
 
-*[CloudFlowName]_AP-[9digits]_[3digits]*
+>[!TIP]
+>You can select the information button inside the solution manager app to bypass this requirement.
 
-e.g. **MostLikleyTheBest-CLoUdfLoW_AP-000001013_001.** The last 3 digits can be
-used for advanced use cases and are typically 00**1** if you only have **one**
-solution per automation project. If you have multiple solutions for a single
-project, you could increase that number by 1 for each additional solution if you
-wish to distinguish them.
+### Unexpected behaviors with the flow exception framework
 
-This can be bypassed by selecting the information button inside the Solution
-Manager App.
+**Issue** - Uable to disable or suspend desktop flows.
+**Resolution** - Turn off parent cloud flows if they're configured to allow them to be turned off.
 
-Flow Exception Framework
-------------------------
+**Issue** - Flow runs remain in the waiting stage.
+**Resolution** - If you configure your flows to require acknowledgements when they fail, all flow runs remain in a waiting stage until either you acknowledge the email or the flow times out.
 
--   Disabling or suspending Desktop flows is not supported. Only parent cloud
-    flow can be turned off (if this has been configured)
+### Desktop flows impact analysis sync limitation (No data in app)
 
--   If you’ve chosen to require Acknowledgements upon failures, please note that
-    all flow runs remain in a waiting stage until either the email has been
-    acknowledged or the flow timed out.
+**Issue:** - There is a limitation where only new or modified desktop flows will be analyzed and shown in the app.
+**Resolution:** - Do any of the following tasks.
 
-Desktop flows Impact Analysis sync limitation (No data in app)
---------------------------------------------------------------
+- Modify the desktop flow.
+- Import the desktop flow (solution).
+- Create a new desktop flow.
 
-There is a limitation where only new or modified desktop flows will be analysed
-and shown in the app. Either by:
+>[!NOTE]
+>You can use a solution to extend the automation CoE to sync all desktop flows in an environment with the [RPA CLI](https://aka.ms/rpacli).
 
--   Modifying the Desktop flow
-
--   Importing Desktop flow (solution)
-
--   Creating a new Desktop flow
-
-Currently a solution can be used to extend the Automation CoE to sync all
-Desktop flows from an environment using the [RPA CLI](https://aka.ms/rpacli).
-(<https://aka.ms/rpacli>)
-
-[Read more on how to use the RPA CLI for the Automation
-CoE](#how-can-the-rpa-cli-be-used-to-extend-the-automation-coe)
+### More information
+<!--Todo-->
+[Read more on how to use the RPA CLI for the Automation CoE.](#how-can-the-rpa-cli-be-used-to-extend-the-automation-coe)
