@@ -408,7 +408,7 @@
       href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
-    - name: Automate on virtual desktops (Preview)
+    - name: Automate on virtual desktops (preview)
       href: ./desktop-flows/virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
