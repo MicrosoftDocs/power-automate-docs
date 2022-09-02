@@ -209,7 +209,7 @@ Some of your desktop flows might run for long durations, for example more than 2
 
    - Restart the service on your device.
 
-## Run desktop flows via URL or desktop shortcutss
+## Run desktop flows via URL or desktop shortcuts
 
 Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using run URLs and desktop shortcuts.
 
