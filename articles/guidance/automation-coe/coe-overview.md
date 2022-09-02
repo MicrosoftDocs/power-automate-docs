@@ -24,320 +24,224 @@ Introduction
 
 Microsoft Power Platform adoption best practices for Automation Centers of Excellence (CoE) provides proven guidance on how to establish, and then scale an Automation CoE in your organization. It consists of best practices, documentation, and tools.
 
-By using these best practices, organizations can better align their business and technical strategies to ensure success. 
+By using these best practices, organizations can better align their business and technical strategies to ensure success.
 
 Automation CoE members, RPA developers, cloud architects, IT professionals, and business decision makers use this information to achieve their automation adoption goals.
 
-These adoption best practices from Microsoft employees, partners, and customers are a set of tools, guidance, and narratives to help shape your technology, business, and people strategies to get the best business outcomes for your
-automation rollout.
+These adoption best practices from Microsoft employees, partners, and customers are a set of tools, guidance, and narratives to help shape your technology, business, and people strategies to get the best business outcomes for your automation rollout.
 
 ## Functional description
 
-The Automation CoE toolkit is a concept and set of tools
-to accelerate the usage and support of Power Automate Desktop for automation projects, by calculating estimated money saved and ROI for each automation project.
+The Automation CoE toolkit is a concept and set of tools to accelerate the use and support of Power Automate for desktop for automation projects, by calculating estimated money saved and ROI for each automation project.
 
-This Automation CoE Toolkit consists of stages relating to HEAT (Holistic
-Enterprise Automation Techniques). The following blog post describes HEAT in
-more detail: [https://flow.microsoft.com/nl-nl/blog/heat-holistic-
-enterprise-automation-techniques-for-rpa-and-more/](https://flow.microsoft.com/nl-nl/blog/heat-holistic-%20enterprise-automation-techniques-for-rpa-and-more/).
+<!--todo: we should not link to blogs. can this content be looped into these docs?-->
+This Automation CoE toolkit consists of stages that relate to HEAT (Holistic Enterprise Automation Techniques). The following blog post describes [HEAT in more detail](https://flow.microsoft.com/blog/heat-holistic-enterprise-automation-techniques-for-rpa-and-more/).
 
-The Automation CoE Toolkit supports HEAT with the following functional
-components:
+The Automation CoE toolkit supports HEAT with the following functional components.
 
--   Automation CoE
+- [Automation CoE](#automation-coe)
+- [Automation projects](#automation-projects)
+- [Application Lifecycle Management (ALM)](#application-lifecycle-management-alm)
+- [Main environment / Satellite environments](#main-environment--satellite-environments)
+- [Organization structure](#organization-structure)
+- [App roles](#app-roles)
+- Security roles <!--todo: security roles section is missing-->
 
--   Automation projects
+### Automation CoE
 
--   Application Lifecycle Management (ALM)
+This is a team of experts who support automation, like Robotic Process Automation (RPA), within your organization. They have good knowledge on Power Automate for desktop, set up and maintain the Automation CoE tool kit, and maintain the configuration data such as departments, process categories, goals, and more.
 
--   Main environment / Satellite environments
+### Automation projects
 
--   Organization structure
+Employees can submit an idea for an automation project. A business owner is given when an employee submits an automation project. This business owner must approve the automation project before development begins.
 
--   App roles
+There are several fields that the employee must submit they request an automation project. Many of these fields are used to calculate the following items.
 
--   Security roles
+- The complexity score
+- The money saved
 
-#### Automation CoE
+Every automation project maps to a solution and ever solution maps to an environment. It is up to the automation project admins to use the Automation Center Model driven app to map these resources.
 
-This is a team of experts who support automation, like Robotic Process
-Automation (RPA), within your organization. They have good knowledge on Power
-Automate (Desktop), set up/maintain the Automation CoE tool kit, and maintain
-the configuration data such as departments, process categories, goals, and more.
+The main Power BI dashboard contains a scatter plot of all saved or submitted automation projects. The plot is useful to decide which automation projects are good candidates to develop.
 
-#### Automation projects
+### Application Lifecycle Management (ALM)
 
-Employees can submit an idea for an automation project. A business owner is
-provided when submitting an automation project. This business owner must approve
-the automation project before it can be developed.
+One or more developers create approved automation projects in a development environment. One or more automation projects can be part of the same automation solution. More information about solutions can
+be found here: [Solutions overview](/powerapps/maker/data-platform/solutions-overview).
 
-Several fields are required to submit an automation project. Many of these
-fields are used to calculate:
+Organizations can use any of the following three ways to implement application lifecycle management (ALM).
 
--   The complexity score
+1. ALM based on manual actions.
+1. ALM based on automated actions.
+1. ALM based on a combination of manual actions and automated actions.
 
--   The money saved
+Manual activities can include the following.
 
-Every automation project is mapped to a solution, which is mapped to an
-environment. It is up to the Automation Project Admins to map these resources
-using the Automation Center Model driven app.
+1. Export the solution.
+1. Import the solution.
+1. Store the solution in a source control repository.
+1. Download the solution from a source control repository.
 
-The main Power BI dashboard contains a scatter plot of all saved/submitted
-automation projects. The plot is useful to decide which automation projects are
-good candidates to develop.
+Azure DevOps and the [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools) provide a great way to automate manual ALM activities and more. Together with Power Automate, you can orchestrated a complete set of activities.
 
-#### Application Lifecycle Management (ALM)
+Here are a few orchestrations for you to consider.
 
-Approved Automation Projects are developed in a development environment by one
-or more developers. In the concept, one or more automation projects can be part
-of the same solution (Automation Solution). More information about solutions can
-be found here:
+1. Example 1 - Clean start
 
-Solutions overview
-(<https://docs.microsoft.com/en-us/powerapps/maker/data-platform/solutions-overview>).
+    1. Get an unmanaged solution from a source control repository.
 
-Organizations have 3 ways to implement application lifecycle management (ALM):
+    1. Import the unmanaged solution into a development environment.
 
-1.  ALM based on manual actions.
+2. Example 2 - Commit work
 
-2.  ALM based on automated actions.
+    1. Export an unmanaged solution from a development environment.
 
-3.  ALM based on a combination of (1) and (2).
+    1. Store the unmanaged solution in a source control repository.
 
-Manual activities can include:
+3. Example 3 - Create a production version
 
-1.  Exporting the solution.
+    1. Commit work (see the previous example)
 
-2.  Importing the solution.
+    1. Export the managed solution from a development environment.
 
-3.  Storing the solution in a source control repository.
+    1. Store the managed solution in a source control repository.
 
-4.  Downloading the solution from a source control repository.
+4. Example 4 - Update a testing or production environment
 
-Azure DevOps and the Power Platform Build Tools for Azure DevOps
-(<https://docs.microsoft.com/en-us/power-platform/alm/devops-build-tools>)
-provide a great way to automate manual ALM activities and more. Together with
-Power Automate, even a complete set of activities can be orchestrated.
+    1. Get a managed solution from your source control repository.
 
-Below, a few possible orchestrations are given:
+    1. Import the managed solution into a testing or production environment.
 
-1.  Example 1 - Clean start
+For organizations that prefer to use GitHub instead of Azure DevOps, there is a preview version of [GitHub Actions for Microsoft Power Platform](/power-platform/alm/devops-github-actions) which offers a subset of the Azure DevOps functionalities. [Power Platform Build Tools webinar and live demo](https://www.youtube.com/watch?v=Qwue8fwetJA). <!--todo: the video quality is poor. unable to see anything. is it just my pc?-->
 
-    1.  Get an unmanaged solution from a source control repository.
+### Main environment / Satellite environments
 
-    2.  Import the unmanaged solution in a development environment.
+The concept consists of one main environment and it can utilize multiple satellite environments.
 
-2.  Example 2 - Commit work
+A satellite environment is where the automation projects are developed, tested, and then deployed to production. Here, the production satellite is configured to monitor and meter solutions and solution artifacts that are related to an automation project. After a solution is metered, the automation project is monitored based on the runs (flow sessions) to determine the automation projects estimated money saved and ROI.
 
-    1.  Export an unmanaged solution from a development environment.
+The data from the metered solutions syncs to the main environment in near realtime using Power Automate.
 
-    2.  Store the unmanaged solution in a source control repository.
+### Organization structure
 
-3.  Example 3 - Create a production version
+After automation projects receive approval, they are mapped to environments. After the solution is created or imported into the satellite environment, a CoE admin maps the solution to an automation project.
 
-    1.  Commit work (see previous example)
+Data syncs from a satellite environment to the main environment using realtime trigger flows inside of the satellite. Only solutions that have been mapped (metered through the solution manager app) will sync data back to the main satellite environment.
 
-    2.  Export the managed solution from a development environment.
-
-    3.  Store the managed solution in a source control repository.
-
-4.  Example 4 - Update a testing/production environment
-
-    1.  Get a managed solution from your source control repository.
-
-    2.  Import the managed solution in a testing/production environment.
-
-For organizations who prefer to use GitHub instead of Azure DevOps, there is a
-preview version of GitHub Actions for Microsoft Power Platform
-(https://docs.microsoft.com/en-us/power-platform/alm/devops-github- actions)
-which offers a subset of the Azure DevOps functionalities. [Power Platform Build
-Tools webinar and live demo](https://www.youtube.com/watch?v=Qwue8fwetJA)
-
-#### Main environment / Satellite environments
-
-The concept consists of one main environment and can utilize multiple satellite
-environments.
-
-A satellite environment is where the automation projects will be developed,
-tested and deployed to production. Where the production satellite is setup to
-monitor and meter solutions and solution artifacts related to an automation
-project. Once a solution is metered, the automation project is monitored based
-on the runs (flow sessions) to determine the automation projects estimated money
-saved and ROI.
-
-The data from the metered solutions is synced to the main environment near real
-time using Power Automate.
-
-#### Organization structure
-
-Automation Projects once approved are mapped to environments, once the solution
-is created/imported in the satellite environment, a CoE Admin maps the Solution
-to an automation project.
-
-Data is synced from a satellite environment to the main environment using real
-time trigger flows inside of the satellite. Only solutions that have been mapped
-(metered through the Solution Manager app) will sync data back to main.
-
-#### App roles
+### App roles
 
 | **Role**                | **Description**                                                                                                                                                                                                                                                                                                                              |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Business Process Owner  | Process owners, responsible for approving automation project requests                                                                                                                                                                                                                                                                        |
-| CoE Admin               | CoE administrators create/maintain most of the needed automation assets. Depending on your organization, creation/management of certain assets could be the responsibility of other teams. CoE administrators will then become the coordinators for those automation assets. CoE administrator’s setup/maintain the automation CoE tool kit. |
-| CoE Owner               | The CoE Owner oversees setting up the Automation CoE and relevant updates/patches that follow                                                                                                                                                                                                                                                |
-| Developer               | Makers that develop approved automation projects                                                                                                                                                                                                                                                                                             |
-| InfoSec Admin           | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
-| IT Infrastructure Admin | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
-| Line of Business Admin  | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
-| Security Admin          | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
+| CoE admin               | CoE admins create and maintain most of the automation assets. Depending on your organization, creation and management of certain assets could be the responsibility of other teams. CoE admins will then become the coordinators for those automation assets. CoE admins setup and maintain the automation CoE toolkit. |
+| CoE owner               | The CoE owner oversees setting up the automation CoE and relevant updates or patches that follow.                                                                                                                                                                                                                                                |
+| Developer               | Makers who develop approved automation projects.                                                                                                                                                                                                                                                                                             |
+| InfoSec admin           | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
+| IT infrastructure admin | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
+| Line of business admin  | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
+| Security admin          | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
 | Tester                  | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
 
-Technical description
----------------------
+## Technical description
 
-#### Automation CoE
+### Automation CoE technical description
 
-The automation CoE tool kit supports an automation CoE with:
+The automation CoE tool kit supports an automation CoE with the following artifacts.
 
-1.  The canvas app "Automation Project" to support a way to request and submit
-    automation projects for approval
+1. The canvas app "Automation Project" to support a way to request and submit automation projects for approval.
+1. The model driven app "Automation Center" to support the creation and maintenance of automation assets like master data records, mapping resources, environments and assigning roles to employees.
+1. Near realtime cloud flows that sync data from satellite environments to the main environment using Dataverse tables. Data is also stored locally (in the satellite environment) and synced with main in near realtime.
+1. Power BI dashboard to provide insights and monitor your automation assets.
 
-2.  The model driven app "Automation Center" to support the creation/maintenance
-    of automation assets like master data records, mapping resources,
-    environments and assigning roles to employees.
+### Solutions
 
-3.  Near real time cloud flows which sync data from satellite environments to
-    the main environment using Dataverse tables. Data is also stored locally (in
-    the satellite environment) and synced with main near real time.
+The automation CoE toolkit contains the following two solutions.
 
-4.  Power BI dashboard to provide insights and monitor your automation assets.
+- Main solution.
+- Satellite solution.
 
-#### Solutions
+The main solution is deployed in the main environment. The satellite solution is deployed in a satellite environment. A template solution is meant to contain useful assets for makers to utilize when they're developing an automation project.
 
-The automation CoE tool kit contains two (2) solutions:
+### Power BI dashboard
 
--   Main solution
+The setup package contains one (main) Power BI dashboard.
 
--   Satellite solution
-
-The main solution is deployed in the main environment. The satellite solution is
-deployed in a satellite environment. A template solution is meant to contain
-useful assets for makers to utilize when developing an automation project.
-
-#### Power BI dashboard
-
-The setup package contains 1 Power BI dashboard:
-
-Main:
-
-The main dashboard connects to the main environment connecting to Dataverse
-tables where data from all metered solution artifacts gets synced to.
+The main dashboard connects to the main environment connecting to Dataverse tables into which data from all metered solution artifacts gets synced.
 
 <!-- todo: move to the readme/release notes section. Release Notes (What is new)
 ===========================
 
--   Allow bypass of naming convention for metering ([Read How to use Solution
+- Allow bypass of naming convention for metering ([Read How to use Solution
     Manager](#features-3))
 
--   DLP Impact Analysis for Desktop Flows – Addition of new components to allow
+- DLP Impact Analysis for Desktop Flows – Addition of new components to allow
     analysis of DLP impacts for Desktop flows ([Read DLP Impact
     Analysis](#dlp-impact-analysis-for-desktop-flows))
 
--   Introduction to RPA CLI for inventory syncing ([See Extend the Automation
+- Introduction to RPA CLI for inventory syncing ([See Extend the Automation
     CoE](#how-can-the-rpa-cli-be-used-to-extend-the-automation-coe))
 
--   Power BI enhancements and fixes to ROI dashboard
+- Power BI enhancements and fixes to ROI dashboard
 
--   Bug fixes, performance upgrades
+- Bug fixes, performance upgrades
 
--   Environment’s configuration setup not needed anymore, replaced by Sync flow. -->
+- Environment’s configuration setup not needed anymore, replaced by Sync flow. -->
 
-Prerequisites 
-==============
+## Prerequisites
+<!--Todo: are all these items part of preqs like app registration and key valut?-->
+These are the prerequisites you need to install and use the Automation CoE Toolkit
 
-The following prerequisites are required to install and use the Automation CoE
-Toolkit
+- An administrative account, which is called "**Automation CoE Admin**" or similar.
 
--   An administrative account, which is called "**Automation CoE Admin**" or
-    similar.
+The Automation CoE requires access to your tenant's Power Platform environments, and some Azure resources as well. (Key Vault, App registration).
 
-The Automation CoE requires access to your tenant's Power Platform environments,
-and some Azure resources as well. (Key Vault, App registration).
+Therefore, the account you’ve set up “**Automation CoE Admin**” needs the following roles.
 
-Therefore, the account you’ve set up “**Automation CoE Admin**” needs the
-following:
+- Microsoft Power Platform service admin, or Dynamics 365 service admin.
+- The admin account must be mail-enabled.
+- Azure contributor role (For Key Vault and app registration).
 
-Roles
------
+## Azure app registration
 
--   Microsoft Power Platform service admin, or Dynamics 365 service admin
+An Azure app registration will be used for an application user for our Dataverse Web API in each of the satellite environments.
 
--   Account must be mail enabled
+## Azure Key Vault
 
--   Azure contributor role (For Key Vault and App Registration)
+ Based on your requirements, Azure Key Vault(s) is used to store secrets for the Azure app registration(s) mentioned previously. There might be one Key Vault per satellite environment.
 
-Azure App Registration
-----------------------
+Here are example key vault names.
 
-An Azure App Registration, this will be used for an application user for our
-Dataverse Web API, in each of the satellite environments
+- KV-Contoso-Dev
+- KV-Contoso-Test
+- KV-Contoso-Prod
 
-Azure Key Vault
----------------
+The Automation CoE uses the new [Use Azure Key Vault secrets (preview)](/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
 
-Azure Key Vault(s), used to store secrets for the above Azure App
-Registration(s). Depending on your requirements. There might be one Key Vault
-per satellite environment.
+1. Register the **Microsoft.PowerPlatform** resource provider in your Azure subscription. Follow these steps to verify and configure [Azure resource providers and types](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-providers-and-types).
 
-Example:
+1. Select **Add Access Policy**. Azure Key Vault must have **Get** secret access policy set for the Dataverse service principal.
 
--   KV-Contoso-Dev
+   ![A screenshot that displays Add access policy link](media/6f33f896a226966002e2b775bb7f9aa7.png)
 
--   KV-Contoso-Test
+1. In the **Secret permissions** dropdown select **Get**.
+1. Next to **Select principal**, select **None selected** and then search for **Dataverse**
+1. Select the Dataverse service principal with the **00000007-0000-0000-c000-000000000000** identity
+1. Select **Add**.
 
--   KV-Contoso-Prod
+   ![Access policy settings screenshot](media/71f100649c194f9d55ade011a8066ce2.png)
 
-The Automation CoE uses the new [Azure Key Vault secrets environment variable
-types](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
+1. Select **Save**. Once added, the access policy should resemble the following image.
 
-1.  Register the **Microsoft.PowerPlatform** resource provider in your Azure
-    subscription. Follow these steps to verify and configure: [Resource
-    providers and resource
-    types](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types)
+   ![Configured access policy screenshot](media/6dc3945bd91634badee8003305c058d1.png)
 
-2.  Azure Key Vault must have **Get** secret access policy set for the Dataverse
-    service principal. Select **Add Access Policy**.
+## License requirements
 
-![](media/6f33f896a226966002e2b775bb7f9aa7.png)
+Here is a list of the licenses that give you rights you need.
 
-1.  In the **Secret permissions** dropdown select **Get**.
-
-2.  Next to **Select principal**, select **None selected** and then search
-    for **Dataverse**
-
-3.  Select the Dataverse service principal with
-    the **00000007-0000-0000-c000-000000000000** identity
-
-4.  Select **Add**.
-
-![](media/71f100649c194f9d55ade011a8066ce2.png)
-
-1.  Click **Save**. Once added, the access policy should look like this.
-
-![](media/6dc3945bd91634badee8003305c058d1.png)
-
-License requirements
---------------------
-
--   Microsoft 365 license (E3, E5)
-
--   Power Automate per user with attended RPA license (non-trial)
-
--   Power Apps Per User license (non-trial)
-
--   Power BI Pro license
-- 
-
+- Microsoft 365 license (E3, E5).
+- Power Automate per user with attended RPA license (non-trial).
+- Power Apps per user license (non-trial).
+- Power BI Pro license.
 
 <!-- todo: -->
 

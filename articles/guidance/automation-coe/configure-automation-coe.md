@@ -1,6 +1,6 @@
 ---
-title: Overview of the automation CoE setup guidance | Microsoft Docs
-description: Overview of the automation CoE setup guidance.
+title: Configure Automation CoE Toolkit | Microsoft Docs
+description: Configure Automation CoE Toolkit.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -18,31 +18,22 @@ ms.reviewer: deonhe
 ---
 
 # Configure Automation CoE Toolkit
-================================
 
-#### Define configuration data
+## Define configuration data
 
-Using the Automation CoE Admin account, navigate to the Main environment. You
-want to open the app
+Using the Automation CoE Admin account, navigate to the Main environment. You want to open the app **Automation Center**, this is where we configure how several aspects of the Automation CoE will function.
 
-**Automation Center**, this is where we configure how several aspects of the
-Automation CoE will function.
+When the app opens, your left navigation should resemble the following screenshot.
 
-When the app opens, your left navigation should look like this:
+![Screenshot of the left navigation](media/48d4db6f82e02dcd2d699b853064bcbc.png)
 
-![](media/48d4db6f82e02dcd2d699b853064bcbc.png)
+There are a few things we need to setup/configure when you first import the Toolkit.
 
-There are a few things we need to setup/configure when you first import the
-Toolkit.
+First, we are going to add an Automation Goal. Follow these steps to add an Automation Goal.
 
-First, we are going to add an Automation Goal. Follow these steps to add an
-Automation Goal.
-
-1.  Inside the Automation Center Click Corporate Goals tab.
-
-2.  Click + New
-
-3.  Fill in the required fields (Sample data provided below)
+1. Inside the Automation Center Click Corporate Goals tab.
+2. Click + New
+3. Fill in the required fields (Sample data provided below)
 
 | **Field**                | **Value**                       |
 |--------------------------|---------------------------------|
@@ -58,112 +49,81 @@ Next, we will configure some configurations
 
 These configurations are split into **3** sections
 
-1.  General - configurations that are related to resources and processes
-
-2.  ROI Calculation - configurations that will be used as a scoring metric to
-    better determine estimated ROI and complexity of an Automation Project
-
-3.  Configuration - info pertaining to the Automation CoE Toolkit apps. Will be
-    used to build a Console where users can launch related apps
+1. General - configurations that are related to resources and processes
+2. ROI calculation - configurations that will be used as a scoring metric to better determine estimated ROI and complexity of an Automation Project
+3. Configuration - info pertaining to the Automation CoE Toolkit apps. Will be used to build a Console where users can launch related apps
 
 #### Steps to configure general
 
-Select **"Automation Center"** in the bottom navigation bar \> Switch
-to **"Setup"**
+Select **"Automation Center"** in the bottom navigation bar \> Switch to **"Setup"**
 
 #### Environments
 
-1.  Inside the environment tab select a Satellite environment.
+1. Inside the environment tab select a Satellite environment.
+2. Change **Is Satellite Environment** to **Yes**.
+3. Click **Save & Close.**
+4. Do this for all your **Satellite environments** (DEV, TEST, PROD, etc.)
 
-2.  Change **Is Satellite Environment** to **Yes**.
-
-3.  Click **Save & Close.**
-
-4.  Do this for all your **Satellite environments** (DEV, TEST, PROD, Etc.)
-
-![](media/07a8a970def5d0e7a33b226305b05c7d.png)
+   ![Screenshot of satellite environments](media/07a8a970def5d0e7a33b226305b05c7d.png)
 
 #### Departments
 
-1.  Inside the department tab select **+ New**
-
-2.  Create as many departments as your organization may need. Here is a sample
+1. Inside the department tab select **+ New**
+2. Create as many departments as your organization may need. Here is a sample
     of the departments:
 
--   Accounting
+- Accounting
+- Enterprise Integration
+- Finance
+- Human Resources
+- Information Technology
+- Logistics
+- Operational Change Management
+- Purchasing
 
--   Enterprise Integration
+#### Process categories
 
--   Finance
-
--   Human Resources
-
--   Information Technology
-
--   Logistics
-
--   Operational Change Management
-
--   Purchasing
-
-#### Process Categories
-
-1.  Inside the process categories tab select **+ New**
-
-2.  Create top level categories that will have child categories (subcategories).
+1. Inside the process categories tab select **+ New**
+2. Create top level categories that will have child categories (subcategories).
     Here is a sample:
 
--   Artificial Intelligence
+- Artificial Intelligence
+- Claims
+- Invoicing
+- Legacy System
 
--   Claims
+#### Process sub-categories
 
--   Invoicing
+1. Either inside the process sub categories tab or directly inside a Process category. You want to define sub processes that relate in some way.
+2. Click **New Process Sub Category**.
+3. Sample data is below
+4. Artificial Intelligence
 
--   Legacy System
+    - Forms Processing
+    - Forms Validation
 
-#### Process Sub categories
+5. Claims
 
-1.  Either inside the process sub categories tab or directly inside a Process
-    category. You want to define sub processes that relate in some way.
+    - Return
+    - Warranty
 
-2.  Click **New Process Sub Category**.
+6. Invoicing
 
-3.  Sample data is below
+    - Internal
+    - External
+    - Other
 
-4.  Artificial Intelligence
+7. Legacy System
 
-    -   Forms Processing
+    - Complex
+    - No API
+    - Other
 
-    -   Forms Validation
+#### Roles (app roles)
 
-5.  Claims
+These roles do not give access to anything, only used as lookups for the fallback record if needed.
 
-    -   Return
-
-    -   Warranty
-
-6.  Invoicing
-
-    -   Internal
-
-    -   External
-
-    -   Other
-
-7.  Legacy System
-
-    -   Complex
-
-    -   No API
-
-    -   Other
-
-#### Roles (App Roles)
-
-These roles do not give access to anything, only used as lookups for the
-fallback record if needed.
-
-1.  Create the **Automation CoE Admin** account as the **CoE Owner**
+1. Create the **Automation CoE Admin** account as the **CoE Owner**
 
 | **Field**           | **Value**                 |
 |---------------------|---------------------------|
@@ -171,8 +131,7 @@ fallback record if needed.
 | Type                | **CoE Owner**             |
 | User Principal Name | The email of the user     |
 
-2.  Create **CoE Admins** - At least 1 **CoE Admin** must be initialized to
-    configure the **fallback**
+1. Create **CoE Admins** - At least 1 **CoE Admin** must be initialized to configure the **fallback**
 
 | **Field**           | **Value**                 |
 |---------------------|---------------------------|
@@ -180,27 +139,22 @@ fallback record if needed.
 | Type                | **CoE Admin**             |
 | User Principal Name | The email of the user     |
 
-#### Base Configuration - Fallback
+#### Base configuration - fallback
 
-This table should only have 1 record defined. This record is used if any of the
-values that are needed to complete processing is null or not defined
+This table should only have 1 record defined. This record is used if any of the values that are needed to complete processing is null or not defined
 
-1.  Define 1 fallback record (See screenshot below for example)
+1. Define 1 fallback record (See screenshot below for example)
 
 ![](media/b51358ec1c7aa89bbcdf017c3e76cc98.png)
 
 Steps to configure ROI calculation
 ----------------------------------
 
-Still inside the **"Setup"** page you can find the ROI calculation
-configurations. These tables are used to calculate the complexity of
-each **Automation Project** (scores). Some values are also being used for
-estimated ROI and savings
+Still inside the **"Setup"** page you can find the ROI calculation configurations. These tables are used to calculate the complexity of each **Automation Project** (scores). Some values are also being used for estimated ROI and savings
 
-#### Processing Frequency Scores
+#### Processing frequency scores
 
-This table has a value and score for each record. Below are values that should
-be used, scores can be modified.
+This table has a value and score for each record. Below are values that should be used, scores can be modified.
 
 | **Value** | **Score** |
 |-----------|-----------|
@@ -210,12 +164,9 @@ be used, scores can be modified.
 | Quarterly | 1         |
 | Weekly    | 5         |
 
-#### Average Automation Steps Scores
+#### Average automation steps scores
 
-This table can be fully customizable based on your organizations needs/process.
-Table is used to get the **Score** for the **Average Automation Steps** which is
-inputted by the user when a new **Automation Project** is requested. Below are
-some examples, but more or less can be added.
+This table can be fully customizable based on your organizations needs/process. Table is used to get the **Score** for the **Average Automation Steps** which is inputted by the user when a new **Automation Project** is requested. Below are some examples, but more or less can be added.
 
 | **Range**     | **Value From** | **Value To** | **Score** |
 |---------------|----------------|--------------|-----------|
@@ -223,10 +174,9 @@ some examples, but more or less can be added.
 | \>= 250       | 250            | 999999999    | 10        |
 | \>= 5, \< 250 | 5              | 250          | 5         |
 
-#### Processing Peaks Scores
+#### Processing peaks scores
 
-This table has a value and score for each record. Below are values that should
-be used, scores can be modified.
+This table has a value and score for each record. Below are values that should be used, scores can be modified.
 
 | **Value** | **Score** |
 |-----------|-----------|
@@ -236,11 +186,10 @@ be used, scores can be modified.
 | quarterly | 2         |
 | weekly    | 10        |
 
-Configuration - Console
+Configuration - console
 -----------------------
 
-These tables are used by the **Automation Console** app, as well as
-the **Project Approval** automation.
+These tables are used by the **Automation Console** app, as well as the **Project Approval** automation.
 
 | **Name**           | **App Description**                                           | **AppID / App Link**                                        |
 |--------------------|---------------------------------------------------------------|-------------------------------------------------------------|
@@ -251,11 +200,9 @@ the **Project Approval** automation.
 
 Inside the [Maker Portal](https://make.powerapps.com/)
 
-1.  Select **Apps** tab on the left navigation
-
-2.  Click the 3 dots (more commands) on the app
-
-3.  Click details
+1. Select **Apps** tab on the left navigation
+2. Click the 3 dots (more commands) on the app
+3. Click details
 
 ![](media/dd98466696afb5756f04f76d3f87b5b1.png)
 
@@ -263,26 +210,16 @@ Inside the [Maker Portal](https://make.powerapps.com/)
 
 Inside the [Maker Portal](https://make.powerapps.com/)
 
-1.  Select **Apps** tab on the left navigation
-
-2.  Click the 3 dots (more commands) on the app
-
-3.  Click details
-
-4.  Copy **AppID**
-
-5.  Click the **Web Link**
-
-6.  Click Properties
-
-7.  Copy Unified Interface URL (Reference the screenshots below for the steps)
-
-![](media/89667581265544834f969251313d1015.png)
-
-![](media/053912393c43395267e57003ceffbec5.png)
-
-![](media/4bc735c5daa4a0f703d4a0cb1d60f91c.png)
-
+1. Select **Apps** tab on the left navigation
+1. Click the 3 dots (more commands) on the app
+1. Click details
+   ![Steps 1, 2, and 3](media/89667581265544834f969251313d1015.png)
+1. Copy **AppID**
+1. Click the **Web Link**
+   ![Steps 4 and 5](media/053912393c43395267e57003ceffbec5.png)
+1. Click Properties
+1. Copy Unified Interface URL (Reference the screenshots below for the steps)
+   ![steps 6 and 7](media/4bc735c5daa4a0f703d4a0cb1d60f91c.png)
 
 <!-- todo: -->
 

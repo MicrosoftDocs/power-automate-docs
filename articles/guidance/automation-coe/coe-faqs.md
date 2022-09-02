@@ -1,6 +1,6 @@
 ---
-title: Overview of the automation CoE setup guidance | Microsoft Docs
-description: Overview of the automation CoE setup guidance.
+title: Frequently asked questions about the automation CoE setup guidance | Microsoft Docs
+description: Frequently asked questions about the automation CoE setup guidance.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -17,19 +17,17 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# FAQ
-===
+# Frequently asked questions about the automation CoE setup guidance
 
-This section focuses on the most common questions and answers.
+This article provices answers to some of the most common questions about the automation CoE.
 
-What are the datacenter region codes?
--------------------------------------
+**Question** - What are the datacenter region codes?
 
-These values are crucial when configuring Satellite’s environment variables.
-Each region has different URLs. The following is a list of regions and their
-URL:
+**Answer** - These values are crucial when configuring a satellite’s environment variables.
+Each region has a different URL. The following is a list of regions and their
+URLs.
 
-| **Region** | **URL**                  |
+| Region     |            URL           |
 |------------|--------------------------|
 | Region     | URL                      |
 | NAM        | crm.dynamics.com         |
@@ -51,58 +49,38 @@ URL:
 | CHE        | crm17.dynamics.com       |
 | CHN        | crm.dynamics.cn          |
 
-**For more information see** [Datacenter
-regions](https://docs.microsoft.com/en-us/power-platform/admin/new-datacenter-regions)
+For more information review [Datacenter regions](/power-platform/admin/new-datacenter-regions).
 
-How can the RPA CLI be used to extend the Automation CoE?
----------------------------------------------------------
+**Question** - How can the RPA CLI be used to extend the automation CoE?
 
-Read more about the [RPA CLI](https://aka.ms/rpacli)
+**Answer** - Read more about the [RPA CLI](https://aka.ms/rpacli).
 
-The most common errors and fixes
---------------------------------
+**Issue** - No organization matches the given dataset: unq0a5fac6XXXXXXXXXXXXX.crm
 
-#### No Organization is matching the given dataset: unq0a5fac6XXXXXXXXXXXXX.crm
+**Answer** - The issue might be due to a wrongly entered environment variable value for the **Environment Unique Name** of CoE Main. If your environment is provisioned in Australia for instance, you need to enter the Australian region suffix to the crm domain. For example, enter **crm6** instead of **crm**. After you fix this, you can turn on all cloud flows.
 
-The issue might be due to a wrongly entered environment variable value for
-Environment Unique Name of CoE Main. If your environment is provisioned in
-Australia for instance you need to put the Australian region suffix to the crm
-domain eg crm6 instead of crm. Once this is fixed you will be able to Turn On
-all cloud flows. [Read more about
-regions](#what-are-the-datacenter-region-codes).
+Review [How to change environment variables inside managed solution](./coe-limitations.md#environment-variables-are-not-editable-after-you-import-a-solution) and [Force new values of environment variables when changed manually](./coe-limitations.md#environment-variables-continue-to-use-the-old-values-after-a-manual-change) to learn more.
 
-Reference the two links below to:
+**Issue** - GetDataverseSolutionArtifacts.Run failed.
 
-1.  [How to change environment variables inside managed
-    solution](#environment-variables-not-editable-after-import).
-
-2.  [Force new values of environment variables when changed
-    manually](#environment-variables-using-old-values-if-changed-manually).
-
-#### GetDataverseSolutionArtifacts.Run failed
-
-This error happens inside the Automation Solution Manager app (Inside
-Satellite). When trying to view the solution artifacts.
+**Details** - This error happens inside the Automation Solution Manager app (inside satellite) when you try to view the solution artifacts.
 
 ![](media/3ae3267596208403f7a689b512f900b1.png)
 
-First check out these flows:
+**Answer** - First check out these flows.
 
+<!--Todo: what are these?-->
 **Get Dataverse Bearer Token (Azure KeyVault Env)**
 
 **Get Dataverse Solution Artifacts**
 
-The error inside the Flow might be like:
+The error inside the flow might be like the following image.
 
 ![](media/1d0e866fa0bb1c34376cb2cc1bccc829.png)
 
 There could be two (2) main causes of this error.
+<!--todo: fix links-->
+1. Application user not created inside Satellite environment.  
+    [Create application user inside satellite environment](#create-application-user-inside-dataverse-per-satellite-env).
 
-1.  Application user not created inside Satellite environment.  
-    [Create Application user inside satellite
-    environment](#create-application-user-inside-dataverse-per-satellite-env).
-
-2.  Satellite environment variables not configured properly.
-
->   [Check and confirm all values of your environment
->   variables](#environment-variables).
+1. Satellite environment variables not configured properly. [Check and confirm all values for your environment variables](#environment-variables).

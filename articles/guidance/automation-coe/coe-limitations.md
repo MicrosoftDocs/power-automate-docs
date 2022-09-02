@@ -1,6 +1,6 @@
 ---
-title: Overview of the automation CoE setup guidance | Microsoft Docs
-description: Overview of the automation CoE setup guidance.
+title: Limitations and resolutions in the automation CoE toolkit | Microsoft Docs
+description: Limitations and resolutions in the automation CoE toolkit.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -17,7 +17,7 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Limitations and resolutions in the automation CoE toolkit.
+# Limitations and resolutions in the automation CoE toolkit
 
 This article contains some of the limitations in the automation CoE toolkit.
 
@@ -26,6 +26,7 @@ This article contains some of the limitations in the automation CoE toolkit.
 ### Environment variables are not editable after you import a solution
 
 **Issue** - You cannot update the values for environment variables from within the solution because the solution is **Managed**.
+
 **Resoluton:** - Use the following steps to update environment variables.
 
 1. Go to [Power Automate](https://flow.microsoft.com/).
@@ -36,6 +37,7 @@ This article contains some of the limitations in the automation CoE toolkit.
 ### Environment variables continue to use the old values after a manual change
 
 **Issue** - When someone changes environment variable values directly within an environment, instead of through an ALM operation like solution import, flows continue to use the previous value.
+
 **Resolution** - For canvas apps, the new value will be used during the next session. For example, closing the app and then playing it again.
 
 >[!NOTE]
@@ -49,19 +51,19 @@ This article contains some of the limitations in the automation CoE toolkit.
 
 **Resolution** - Zoom out to fix the issue.
 
-   ![A screenshot that shows fixed resolution](media/14adcfc6d46d25c84d8de9c92390894c.png)
+![A screenshot that shows fixed resolution](media/14adcfc6d46d25c84d8de9c92390894c.png)
 
 ### Cannot meter non-solution aware flows
 
-**Issue** - At this time, the current solution cannot meter any flows that are not inside a
-solution.
+**Issue** - At this time, the current solution cannot meter any flows that are not inside a solution.
+
 **Resolution** - Put all flows that need to be metered inside a solution.
 
 ### Cloud flows don't support metering
 
 **Issue** - Cloud flows must follow a specific naming convention before they're used for metering.
-**Resolution** - All solution-aware cloud flows that you want to be metered, must follow a new
-naming convention that is internally being validated via **RegEx (_AP-[0-9]{9}_[0-9]{3}\\b)**. Here is the expected format.
+
+**Resolution** - All solution-aware cloud flows that you want to be metered, must follow a new naming convention that is internally being validated via **RegEx (_AP-[0-9]{9}_[0-9]{3}\\b)**. Here is the expected format.
 
    [CloudFlowName]_AP-[9digits]_[3digits]
 
@@ -72,15 +74,18 @@ For example, in **MostLikleyTheBest-CLoUdfLoW_AP-000001013_001.**, you can use t
 
 ### Unexpected behaviors with the flow exception framework
 
-**Issue** - Uable to disable or suspend desktop flows.
+**Issue** - Unable to disable or suspend desktop flows.
+
 **Resolution** - Turn off parent cloud flows if they're configured to allow them to be turned off.
 
 **Issue** - Flow runs remain in the waiting stage.
+
 **Resolution** - If you configure your flows to require acknowledgements when they fail, all flow runs remain in a waiting stage until either you acknowledge the email or the flow times out.
 
 ### Desktop flows impact analysis sync limitation (No data in app)
 
 **Issue:** - There is a limitation where only new or modified desktop flows will be analyzed and shown in the app.
+
 **Resolution:** - Do any of the following tasks.
 
 - Modify the desktop flow.
