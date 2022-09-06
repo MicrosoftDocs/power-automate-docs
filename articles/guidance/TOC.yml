@@ -100,3 +100,27 @@
         href: rpa-sap-playbook/feature-highlights-per-approach.md
     - name: Conclusion
       href: rpa-sap-playbook/conclusion.md
+  - name: Create an automation center of excellence
+    items:
+    - name: Automation CoE toolkit setup guide
+      href: ./automation-coe/overview.md
+    - name: Set up the automation (CoE) toolkit
+      href: ./automation-coe/setup-automation-coe.md
+    - name: Configure the automation CoE toolkit
+      href: ./automation-coe/configure-automation-coe.md
+    - name: Exception rules framework
+      href: ./automation-coe/exception-rules-framework.md
+    - name: DLP impact analysis for desktop flows
+      href: ./automation-coe/dlp-impact-analysis.md
+    - name: Use the automation CoE toolkit
+      href: ./automation-coe/use-automation-coe-toolkit.md
+    - name: Testing an end-to-end scenario
+      href: ./automation-coe/test-coe-end-to-end.md
+    - name: Limitations
+      href: ./automation-coe/coe-limitations.md
+    - name: FAQs
+      href: ./automation-coe/coe-faqs.md
+    # - name: Release notes
+    #   href: ./automation-coe/coe-rel-notes.md
+    - name: Feedback and support
+      href: ./automation-coe/coe-feedback-support.md

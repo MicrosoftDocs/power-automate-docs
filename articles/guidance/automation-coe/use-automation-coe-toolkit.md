@@ -1,6 +1,6 @@
 ---
-title: Overview of the automation CoE setup guidance | Microsoft Docs
-description: Overview of the automation CoE setup guidance.
+title: How to use the automation CoE toolkit | Microsoft Docs
+description: How to use the automation CoE toolkit.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -17,211 +17,158 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# How to use
-==========
+# How to use the automation CoE toolkit
 
-This section will go over how to use each Component in the Automation CoE
-Toolkit. Each section will contain: Functionality and features.
+This article details how to use each component in the Automation CoE Toolkit. Each section will contains the functionality and the features.
 
-Automation Console
-------------------
+## Automation Console app
 
-#### Functionality
+### Functionality
 
-The Automation Console app is currently only used to launch Automation CoE
-specific apps. The information for the apps must be updated manually. [The setup
-process goes over configuring the Automation Console](#configuration---console)
-
-#### Features
-
--   Console like dashboard of all apps to be launched in one place.
-
--   Documentation linked
-
-Automation Project
-------------------
-
-#### Functionality
-
-The purpose of this app is to request and approve new Automation Projects. The
-automation approver also will receive a deep link to the Project screen to view
-all Automation project details.
+The Automation Console app is used to launch Automation CoE-specific apps. You must update the information for the apps manually. [The setup process goes over configuring the Automation Console](./configure-automation-coe.md#console-configuration)
 
 ### Features
+
+- The automation console is a console-like dashboard of all apps that can launched in one place.
+
+- Documentation linked <!--todo: what's this for?-->
+
+## Automation Project app
+
+### Automation project functionality
+
+The purpose of this app is to request and approve new automation projects. The automation approver receives a deep link to the project screen to view all automation project details.
+
+### Automation project features
 
 #### Project Dashboard (Home Screen)
 
-Depending on your role. When opening the app, you will see:
+Here's a listing of the experience you'll receive when you launch the app, based on your role.
 
 | **Role**            | **What you see**                                          |
 |---------------------|-----------------------------------------------------------|
-| Project Admin       | Every Automation Project request                          |
-| Project Contributor | Only Automation Project requests that were created by you |
-| Project Viewer      | Can see all Automation Projects, only in view mode        |
+| Project Admin       | See all automation project requests.                          |
+| Project Contributor | Sees only automation project requests that you created.|
+| Project Viewer      | Sees all automation projects in view mode.       |
 
 Some features include:
 
-1.  Command bar - Filter Automation project by status. **"+"** bring you to
-    the **New Project** screen.
+- Command bar - Use the command bar to filter automation projects by status. Select **"+"** to open the **New Project** screen.
+- Details side bar - This side bar gives an overview of all the automation projects you can access, based on your role.
+- Automation project details card - Provides an overview of the requested project details.
 
-2.  Details side bar - gives overview of all the Automation projects you can see
-    (based on role).
-
-3.  Automation Project details card - overview of the requested project details.
-    Click the icon to view more or edit.
-
-![](media/c6a01458255512efdbc923e6ba999b65.png)
+   ![This screenshot displays the automation project screen sample.](media/c6a01458255512efdbc923e6ba999b65.png)
+   <!--todo: this screenshot should not have steps. it's just showing the options.-->
 
 #### New Project screen
 
-This screen is used for a couple of different things. The first being creating a
-new Automation project, editing an existing Automation project, and viewing
-details.
+On this screen, you can perform the following tasks.
 
-1.  Project information section - fill out information as it relates to the
-    Automation project.
+- Create a new automation project.
+- Edit an existing automation project.
+- View project details.
 
-2.  Business owner field - this is the approver for the request. If no business
-    owner is selected, the fallback is used.
+1. Project information section - Fill out the information as it relates to the automation project.
+1. Business owner field - This is the approver for the request. If no business owner is selected, the fallback is used.
+1. ROI information section - Provide this information as it relates to ROI for the automation project.
+1. Command bar - Use for new, save, edit, and submit tasks on the form. This submit button is available after the automation project has is saved.
 
-3.  ROI information section - fill out information as it relates to ROI for the
-    Automation project.
+   ![This screenshot displays a view of the automation project screen.](media/389a1560bd0d71eb34101247a678f2be.png)
 
-4.  Command bar - New, save, edit, and submit the form. Submit button is
-    available after the Automation project has been saved.
+Some fields are required to save the form. This is because when you submit a request, a flow (**Calculate ROI saving potential for automation project**) runs. This flow calculates the complexity score and then populates this information when you select the save button.
 
-![](media/389a1560bd0d71eb34101247a678f2be.png)
+## Automation Center app
 
-Some fields are required to save the form. This is because when submitting a
-request, a Flow (**Calculate ROI Saving Potential for Automation Project**) is
-kicked off. This Flow calculates the Complexity score and populates this
-information when the "Save" button is clicked.
+### Functionality of the automation center app
 
-Automation Center
------------------
+CoE admins use the Automation Center app to maintain the configuration and map automation projects to environments. You can also access flow sessions and metered artifacts in the automation center app.
 
-#### Functionality
-
-The Automation Center app is used by CoE Admins to maintain the configuration
-and map Automation projects to environments. Flow sessions and metered artifacts
-can also be viewed here.
-
-### Features
+### Features of the automation center app
 
 #### Create / maintain configuration data
 
-This is explained in more detail when [setting up the Automation CoE
-Toolkit](#_Configure_Automation_CoE)
+Learn more about how to create and maintain the configuration data in [setting up the Automation CoE Toolkit](./configure-automation-coe.md).
 
-![](media/af754212087c3a3530a7482a5ac2a810.png)
+#### Map automation projects to environments
 
-#### Map Automation projects to environments
+CoE admins will map automation projects to environments after the request is approved.
 
-CoE Admins will map Automation projects when the request has been approved.
+1. Select **Automation Projects** tab.
+1. Select the record you want to map.
+1. Select the **Related** tab > **Environments**.
 
-1.  Inside the **Automation Projects** tab.
+   ![This screenshot displays the steps to map a project to a an environment.](media/af754212087c3a3530a7482a5ac2a810.png)
 
-2.  Click on the desired record to map.
+1. Select **Add Existing Environments**.
+1. Select the environment you want to use, or create a new one.
+1. Select **Add** > **"Save & Close"**.
 
-3.  Click "Related" tab \> Environments
+![This screenshot displays the steps to save the mapping.](media/74cb8d1d0475c2006e750aee1428749f.png)
+<!--todo: steps seems missing or screens needs to be updated-->
 
-![](media/af754212087c3a3530a7482a5ac2a810.png)
+## Automation Solution Manager app
 
-1.  Click "Add Existing Environments"
+### Functionality of the solution manager app
 
-2.  Select the desired environment or create a new one.
+The Automation Solution Manager app is used by **System Admins (System Administrator)** to enable the metering of solutions and their artifacts. Once a solution and artifact has been metered, data syncs between the environment and main in near realtime.
 
-3.  Click "Add" \> **"Save & Close"**.
+### Features  of the solution manager app
 
-![](media/74cb8d1d0475c2006e750aee1428749f.png)
+#### Turn on metering for a solution
 
-Automation Solution Manager
----------------------------
+After you create a solution in an environment, it shows up in the list. The **+** icon displays when metering is turned off for a solution.
 
-#### Functionality
+![This screenshot displays the plus icon that indicates that metering is turned off for the solution.](media/ea263020f2637ad732cbe0bdac828036.png)
 
-The Automation Solution Manager app is used by **System Admins (System
-Administrator)** to enable the metering of solutions and its artifacts. Once a
-solution and artifact has been metered. Data will be synced between the
-environment and main in near real time!
+1. Select the **"+"** on the solution you want to meter.
+1. In the new screen, select your automation project from the list. If it's not listed, select the **Refresh** button until it shows up.
+1. Select **Submit**, and then select **Yes** on the confirmation screen that appears.
 
-### Features
+   ![This screenshot displays the steps to turn on metering on a solution](media/f9ec18f8d7d6d717066862f7c3aa693f.png)
 
-#### Meter a Solution
+#### Rename a cloud flow to match convention
 
-Once a solution has been created in the environment it will show up in the list.
-When a solution has metering turned off the icon "+" will show.
+Follow these steps to rename a cloud flow to match the [naming convention](./test-coe-end-to-end.md##cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) from the Automation Solution Manager app home screen.
 
-![](media/ea263020f2637ad732cbe0bdac828036.png)
+1. Select **...**  for the solution that interests you.
+1. Select the cloud flow that you want to rename.
+1. Select the pencil icon that appears.
+   The pencil icon only appears for unmanaged flows only.
 
-1.  Click the **"+"** on the solution you want to meter.
+   ![This screenshot displays the steps in the automation solution manager](media/98135b82b001c28bc777f7c1269619fb.png)
 
-2.  In the new screen, there is a dropdown. Select your Automation project. If
-    its not listed, click the **"Refresh"** button.
+   The [naming convention](./test-coe-end-to-end.md##cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) should apply automatically.
 
-3.  Click "Submit", a popup confirmation appears. Select **"Yes"**
+1. Select the **Save** icon.
 
-![](media/f9ec18f8d7d6d717066862f7c3aa693f.png)
+   ![This screenshot displays the save icon.](media/2d78588c3463c5fc980b6d9f3d6a722d.png)
 
-Next screen is where you meter artifacts.
-
-#### Rename cloud flow to match convention
-
-Renaming a cloud flow to match the [naming
-convention](#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering)
-is easy.
-
-From the Automation Solution Manager app home screen.
-
-1.  Click inside one of the solutions by clicking the 3 dots […].
-
-2.  **Select** the **cloud flow** that you want to rename.
-
-3.  A pencil icon should appear (Only available on unmanaged) **Click the
-    pencil.**
-
-![](media/98135b82b001c28bc777f7c1269619fb.png)
-
-1.  The [naming
-    convention](#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering)
-    should apply automatically, Click the **save button.**
-
-![](media/2d78588c3463c5fc980b6d9f3d6a722d.png)
-
-Note, the last 3 digits will default to 001. If you have multiple solutions for
-a single project, you could increase that number by 1 for each additional
-solution if you wish to distinguish them.  
-Read more about the [naming
-convention](#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering).
+>[!NOTE]
+The last 3 digits will default to 001. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution if you wish to distinguish them. Read more about the [naming convention](./test-coe-end-to-end.md##cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering).
 
 #### Meter solution artifacts
 
-This is where we meter the artifacts for the Flow Sessions to show up in our
-main environment. We can get to the solution screen from the Home screen by
-clicking the 3 dots. **". . ."**
+<!--todo: I don't understand this. please clarify.-->
+This is where we meter the artifacts for the Flow Sessions to show up in our main environment. We can get to the solution screen from the Home screen by clicking the 3 dots. **". . ."**
 
-1.  Under the "Is metered" column, select the **"+"** icon to add to metering.
-    If this option is grayed out, then the cloud flow does not follow the
-    [naming
-    schema](#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering).
-    [Rename the cloud flow](#rename-cloud-flow-to-match-convention) if needed.
+1. Under the **Is metered** column, select the **"+"** icon to add to it metering. If this option is grayed out, then the cloud flow does not follow the [naming schema](./test-coe-end-to-end.md##cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering). [Rename the cloud flow](#rename-a-cloud-flow-to-match-convention), if needed.
 
-![](media/7f4b832d4624313a30f6c95f37220c87.png)
+   ![This screenshot displays the plus icon in the Is metered column.](media/7f4b832d4624313a30f6c95f37220c87.png)
 
-1.  Once selected the **"+"** icon switches to a meter. And now data will
-    be **flowing** to main (flow sessions).
+1. After you select the **+** icon, the meter icon appears.
 
-![](media/5c2fb7dbc19bec6e4708466c2afa890b.png)
+   Now data will be **flowing** to main (flow sessions).
+
+   ![This screenshot displays the meter icon to indicate that metering is turned on.](media/5c2fb7dbc19bec6e4708466c2afa890b.png)
 
 #### Bypass Flow naming convention
 
 There is an option to bypass the naming convention.
 
-To bypass the naming convention, click on the ‘i’ icon. Acknowledge the warning.
+To bypass the naming convention, click on the ‘i’ icon and acknowledge the warning.
 
-![](media/c54e6b83595a28a9c739a7cefd76c1cd.png)
+![This screenshot displays the icon to use to bypass the naming convention.](media/c54e6b83595a28a9c739a7cefd76c1cd.png)
 
-Now you can meter the flow.  
+Now you can meter the flow.
 
-
-![](media/e597c1f3e56077de8037e890db688c02.png)
+![This screenshot displays that a flow can be metered after the naming convention is disabled.](media/e597c1f3e56077de8037e890db688c02.png)

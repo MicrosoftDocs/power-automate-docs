@@ -1,6 +1,6 @@
 ---
-title: Limitations and resolutions in the automation CoE toolkit | Microsoft Docs
-description: Limitations and resolutions in the automation CoE toolkit.
+title: Limitations and resolutions for issues in the automation CoE toolkit | Microsoft Docs
+description: Limitations and resolutions for issues in the automation CoE toolkit.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -17,7 +17,7 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Limitations and resolutions in the automation CoE toolkit
+# Limitations and resolutions for issues in the automation CoE toolkit
 
 This article contains some of the limitations in the automation CoE toolkit.
 
@@ -93,7 +93,7 @@ For example, in **MostLikleyTheBest-CLoUdfLoW_AP-000001013_001.**, you can use t
 - Create a new desktop flow.
 
 >[!NOTE]
->You can use a solution to extend the automation CoE to sync all desktop flows in an environment with the [RPA CLI](https://aka.ms/rpacli).
+>You can use a solution to extend the automation CoE to sync all desktop flows in an  environment with the [RPA CLI](https://aka.ms/rpacli).
 
 ### More information
 <!--Todo-->

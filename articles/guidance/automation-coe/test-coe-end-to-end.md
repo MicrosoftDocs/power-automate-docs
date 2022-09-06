@@ -7,7 +7,6 @@ author: kathyos
 manager: tapanm
 editor: ''
 ms.custom: guidance
-
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -17,64 +16,43 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Project End to End Scenario
-===========================
+# Project end to end scenario
 
-The below test cases are full end to end processes. End to end for an automation
-project consists of:
+The following test cases are full end-to-end processes. End-to-end for an automation project consists of the following. <!--todo: repetition. needed?-->
 
-1.  Create automation project request.
+1. Create an automation project request.
+1. The request is approved or rejected. Approvals are sent to the business process owner or fallback if no business process owner is selected.
+1. Project admin maps the automation project to a new or existing environment.
+1. The maker creates a solution and develops the automation project.
+1. When the solution is deployed to prod (manually for now) <!--todo, when does "for now" end?--> the automation admin maps the solution to project by metering the solution and its artifacts.
+1. After metering is turned on for the solution, he flow / process can be triggered, and data will sync back to main in near real time.
+1. Verify in the main solution that the flow sessions are being synced.
+1. Use Power BI to verify that the data calculations are correct.
 
-2.  Request Approved or Rejected. Approval sent to Business Process Owner or
-    Fallback if none selected.
+## User roles definition
 
-3.  Project Admin maps automation project to a new or existing environment.
-
-4.  Maker creates solution and develops the automation project
-
-5.  When solution is deployed to prod (manually for now) Automation Admin maps
-    solution to project by metering the solution and its artifacts.
-
-6.  After metering has been enabled for the solution. The flow / process can be
-    triggered, and data will sync back to main in near real time.
-
-7.  Verify in the main solution that the Flow Sessions are being synced.
-
-8.  Verify data calculations are correct (Power BI)
-
-Refer to the following table to see what roles and permissions are needed for
-each step
-
-User roles definition
----------------------
+Refer to the following table to see what roles and permissions are needed for each step.
 
 | **Name**                | **Security roles**                                               |
 |-------------------------|------------------------------------------------------------------|
-| Maker                   | Automation Project Contributor, Basic User, Environment Maker    |
-| Approver/Business Owner | Automation Project Viewer                                        |
-| CoE Admin               | Power Platform Admin (Or System Admin for all environments used) |
+| Maker                   | Automation project contributor, basic user, environment maker    |
+| Approver/business owner | Automation project viewer                                        |
+| CoE admin               | Power Platform admin (or system admin for all environments used) |
 
-Order materials and services (Example 1)
-----------------------------------------
+## Order materials and services (example 1)
 
-#### Request automation project (Maker)
+### Request automation project (maker)
 
-As a **Maker** in the **main** environment
+1. Sign into [Power Automate](https://make.powerautomate.com) and then change to your main environment.
+1. Launch [Automation Project](https://github.com/microsoft/automation-coe/wiki/How-to-use-Automation-Project) app from either of the following apps.
 
-1.  Launch [Automation
-    Project](https://github.com/microsoft/automation-coe/wiki/How-to-use-Automation-Project) app
-    from either
+    - **Automation Console** app
+    - **Automation Project** app
 
-    -   **Automation Console** app
+   ![This screenshot displays the automation project app](media/7427497312e410bc17eb10b73e8d3aea.png)
 
-    -   **Automation Project** app directly
-
-![](media/7427497312e410bc17eb10b73e8d3aea.png)
-
-1.  Create a new Automation Project request by clicking the + or selecting the
-    New Project tab.
-
-2.  Fill in the details as follows:
+1. Create a new automation project request by selecting the + or selecting the **New Project** tab.
+1. Fill in the details as the following table indicates.
 
 | **Question**           | **Value**                                     |
 |------------------------|-----------------------------------------------|
@@ -102,141 +80,99 @@ As a **Maker** in the **main** environment
 | Maintenance Overhead % | 10                                            |
 | Development Costs      | 1200                                          |
 
-3.  Click Save
+1. Select **Save**.
 
-![](media/539b7a1b70845f206b3c9e8075b7319c.png)
+   ![This screenshot displays the automation project.](media/539b7a1b70845f206b3c9e8075b7319c.png)
 
-Once saved you will be brought back to the Dashboard screen. When an automation
-project has been saved, a Flow is triggered and used to calculate the ROI
-potential and complexity score, based on the information provided.
+   After the save operation completes, the dashboard displays, a flow is runs and calculates the ROI potential and complexity score, based on the information provided.
 
-1.  Click the Refresh button within the App. Until the ROI and Score shows up.
-    (Should only take a few seconds after save)
+1. Select the **Refresh** button within the app until the ROI and score show up. These should show up in a few seconds.
+1. Now, submit the request for approval, click the icon on the card to open. <!--todo, what's the name of the icon to click?-->
+1. Select  **Submit**.
 
-2.  Now we must submit the request for approval, click the icon on the card to
-    open.
+Now that the request has been submitted, it can be approved or rejected by the business owner, or if none was provided, the fallback approver is used.
 
-3.  Click Submit
+If this is the first time an approval is being used within this environment, it will take around 5 minutes for the approval solutions to initialized. This is only a onetime event and you can avoid if by following the steps laid out in the setup steps.
 
-Now the request has been submitted and can be approved or rejected by the
-Business Owner we specified, or if none was provided the Fallback approver will
-be used.
+### Approve automation project request (approver)
 
-If this is the first time an Approval is being used within this environment, it
-will take around 5 min for the approval solutions to initialized. This is only a
-onetime thing and can be avoided by following the steps laid out in the setup
-steps.
+1. Sign in as an approver in the main environment.
+1. Open the approval from either of the following locations.
 
-#### Approve automation project (Approver)
+    - Microsoft Teams (preferred)
+    - Power Automate actions tab
+    - Outlook Email
 
-As an Approver in the main environment
+1. Approve the request.
 
-1.  Open the approval from either:
+### Map the automation project to an environment (dev)
 
--   Microsoft Teams (preferred)
+1. Sign in as a CoE admin in the main environment.
+1. Open the automation center app.
+1. Select the automation project that was just approved.
+1. Select the **Related** tab > **Environments**.
+1. Map the record to an environment (dev).
 
--   Power Automate Actions tab
+   >[!IMPORTANT]
+   >Perform step five only after the automation project is deployed to the test environment.
 
--   Outlook Email
+1. Map the automation project to the test environment.
 
-1.  Approve request
+   >[!IMPORTANT]
+   >Perform step six only after the automation project has been deployed to the production environment.
 
-#### Map automation project to an environment (DEV)
+1. Map the automation project to the production environment.
 
-As a CoE Admin in the main environment:
+### Create / Export solution (DEV/TEST)
 
-1.  Open the Automation Center App.
+1. Sign in as a maker into the satellite environment.
+1. Go to the DEV environment and create a solution.
+1. If the department publisher does not exist, create one for the department to use.
+1. Create a desktop flow.
+1. Create a cloud flow that will trigger the desktop flow. Name the cloud flow using the following [naming convention](#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering): [CloudFlowName]_[AutomationProjectNumber]_[3digits].
 
-2.  Select the automation project that was just approved.
+    | CloudFlowName           | Your meaningful name for your process                                                                                                                                                                                                                                                   |
+    |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | AutomationProjectNumber | Displayed in the automation project app                                                                                                                                                                                                                                                 |
+    | 3digits                 | The last 3 digits can be used for advanced use cases and are typically 001 if you only have one solution per automation project. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution to distinguish them. |
 
-3.  Click the Related tab \> Environments.
+    ![This screenshot displays the project number.](media/e1483d3a57fe0983632b3132a499e76d.png)
 
-4.  Map the record to an environment (DEV).
+   >[!NOTE]
+   >The renaming process can also be done easier inside the [Automation Solution Manager](#rename-cloud-flow-to-match-convention) app.
 
-**Perform step 5 only when the automation project has been deployed to TEST**
+The cloud flow should trigger the desktop flow based on the frequency defined in the automation request.
 
-1.  Map automation project to TEST
+1. Test by running the cloud or desktop flows.
+1. Deploy to test (manual).
 
-**Perform step 6 only when the automation project has been deployed to PROD**
+### Automation project gets mapped to the test environment
 
-1.  Map automation project to PROD
+1. Maker exports manually and deploys to test.
+1. Automation project gets mapped to the TEST environment manually by the CoE admin.
+1. Maker does basic functional testing.
 
-#### Create / Export solution (DEV/TEST)
+### Automation project gets mapped to PROD app
 
-As a Maker in the satellite environment:
+Perform the following steps as a CoE admin in the satellite environment (PROD).
 
-1.  Maker goes into DEV environment and creates a new solution.
+CoE admin maps the solution to automation project by metering the solution and its artifacts.
 
-2.  If department publisher does not exist. Maker will create one for their
-    department to be used.
+1. Open the **Automation Solution Manager** app.
+1. Select the solution for your automation project and meter by selecting the **+"** icon.
+1. Once metered, meter the artifact (the trigger cloud flow).
+1. Navigate to the metered artifact (cloud flow), and then trigger it. (This will sync a flow session to main).
+1. Wait for run to complete.
 
-3.  Create a Desktop Flow
+### Verify data sync to main
 
-4.  Create a Cloud Flow that will trigger the Desktop Flow. Name the Cloud Flow
-    using the following [naming
-    convention](#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering):  
-    [CloudFlowName]_[AutomationProjectNumber]_[3digits]
+Perform the following steps as a CoE admin in the main environment.
 
-| CloudFlowName           | Your meaningful name for your process                                                                                                                                                                                                                                                   |
-|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AutomationProjectNumber | Displayed in the Automation Project app                                                                                                                                                                                                                                                 |
-| 3digits                 | The last 3 digits can be used for advanced use cases and are typically 001 if you only have one solution per automation project. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution if you wish to distinguish them. |
+1. Open the **Automation Center** app.
+1. Open the flow **Sessions** tab.
+1. Filter on newest complete time if needed, and then verify that the run we triggered is there.
 
-![](media/e1483d3a57fe0983632b3132a499e76d.png)
+Next, we can validate the ROI calculations using **Power BI and the Excel ROI calculator.**
 
-**Note, the renaming process can also be done easier inside the** [Automation
-Solution Manager](#rename-cloud-flow-to-match-convention) **app.**
-
-1.  The Cloud Flow should be triggering the Desktop Flow based on the frequency
-    defined in the automation request.
-
-2.  Test by running the Cloud / Desktop Flows.
-
-3.  Deploy to test (Manual)
-
-#### Automation Project gets mapped to TEST
-
-1.  Maker exports manually and deploys to test.
-
-2.  Automation Project gets mapped to the TEST environment manually by the CoE
-    Admin.
-
-3.  Maker does basic functional testing.
-
-#### Automation Project gets mapped to PROD
-
-As a CoE Admin in the satellite environment (PROD).
-
-CoE Admin maps solution to automation project by metering the solution and its
-artifacts
-
-1.  Open the Automation Solution Manager app.
-
-2.  Select the solution for your automation project and meter by clicking the
-    "+".
-
-3.  Once metered, meter the artifact (The trigger cloud flow).
-
-4.  Navigate to the metered artifact (cloud flow) and trigger it. (This will
-    sync a flow session to main)
-
-5.  Wait for run to complete
-
-#### Verify data sync to main
-
-As a CoE Admin in the main environment.
-
-1.  Open the Automation Center app
-
-2.  Open the Flow Sessions tab
-
-3.  Filter on newest complete time if needed and verify that the run we
-    triggered is there
-
-Next, we can validate the ROI calculations using **Power BI and the Excel ROI
-Calculator.**
-
-1.  Take the same information entered in the Automation Project app, enter it
-    into the Excel ROI Calculator.
-
-2.  Compare Power BI with the results from the Excel ROI Calculator.
+1. Take the same information you entered into the automation project app, enter it into the Excel ROI calculator.
+1. Compare Power BI with the results from the Excel ROI calculator.

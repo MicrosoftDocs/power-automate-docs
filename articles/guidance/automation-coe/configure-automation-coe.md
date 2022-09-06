@@ -1,6 +1,6 @@
 ---
-title: Configure Automation CoE Toolkit | Microsoft Docs
-description: Configure Automation CoE Toolkit.
+title: Configure automation CoE toolkit | Microsoft Docs
+description: Configure automation CoE toolkit.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -17,60 +17,62 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Configure Automation CoE Toolkit
+# Configure automation CoE toolkit
 
 ## Define configuration data
 
-Using the Automation CoE Admin account, navigate to the Main environment. You want to open the app **Automation Center**, this is where we configure how several aspects of the Automation CoE will function.
+Follow these steps to configure the automation CoE for your organization.
 
-When the app opens, your left navigation should resemble the following screenshot.
+1. Sign in with your CoE admin account, and then navigate to the main environment.
+1. Open the **Automation Center** app.
 
-![Screenshot of the left navigation](media/48d4db6f82e02dcd2d699b853064bcbc.png)
+   You will use the automation center app to configure how the automation CoE operates.
 
-There are a few things we need to setup/configure when you first import the Toolkit.
+   When the app opens, your left navigation should resemble the following screenshot.
 
-First, we are going to add an Automation Goal. Follow these steps to add an Automation Goal.
+      ![Screenshot of the left navigation](media/48d4db6f82e02dcd2d699b853064bcbc.png)
 
-1. Inside the Automation Center Click Corporate Goals tab.
-2. Click + New
-3. Fill in the required fields (Sample data provided below)
+There are a few things we need to setup/configure when you first import the toolkit.
 
-| **Field**                | **Value**                       |
-|--------------------------|---------------------------------|
-| Goal Name                | Cost Savings through Automation |
-| Period From              | 11/1/2021                       |
-| Period To                | 11/1/2022                       |
-| Target Efficiency Gain % | 20                              |
-| Target Total Savings     | 50000                           |
+First, we are going to add an automation goal. Follow these steps to add an automation goal.
 
-Click **Save & Close**.
+1. Inside the Automation Center, select the **Corporate Goals** tab.
+1. Select **New**.
+1. Fill in the required fields. Use the following sample data as a guide.
 
-Next, we will configure some configurations
+    | **Field**                | **Value**                       |
+    |--------------------------|---------------------------------|
+    | Goal Name                | Cost Savings through Automation |
+    | Period From              | 11/1/2021                       |
+    | Period To                | 11/1/2022                       |
+    | Target Efficiency Gain % | 20                              |
+    | Target Total Savings     | 50000                           |
 
-These configurations are split into **3** sections
+1. Select **Save & Close**.
 
-1. General - configurations that are related to resources and processes
-2. ROI calculation - configurations that will be used as a scoring metric to better determine estimated ROI and complexity of an Automation Project
-3. Configuration - info pertaining to the Automation CoE Toolkit apps. Will be used to build a Console where users can launch related apps
+Follow the steps in the following three sections to complete the configuration of the automation CoE.
 
-#### Steps to configure general
+1. [General configuration](#general-configuration) - Configuration that's related to resources and processes.
+2. [ROI calculation](#roi-calculations) - Configuration that's used as a scoring metric to better determine the estimated ROI and complexity of an automation project.
+3. [Console configuration](#console-configuration) - Info that pertains to the automation CoE toolkit apps. This configuration is used to build a console where users can launch the related apps.
 
-Select **"Automation Center"** in the bottom navigation bar \> Switch to **"Setup"**
+### General configuration
+
+Select **"Automation Center"** in the bottom navigation bar, and then switch to **"Setup"**.
 
 #### Environments
 
-1. Inside the environment tab select a Satellite environment.
+1. select a **Satellite Environment** on the **Environment** tab.
 2. Change **Is Satellite Environment** to **Yes**.
-3. Click **Save & Close.**
-4. Do this for all your **Satellite environments** (DEV, TEST, PROD, etc.)
+3. Select **Save & Close**.
+4. Repeat the previous three steps for all your **Satellite environments** (DEV, TEST, PROD, etc.).
 
    ![Screenshot of satellite environments](media/07a8a970def5d0e7a33b226305b05c7d.png)
 
 #### Departments
 
-1. Inside the department tab select **+ New**
-2. Create as many departments as your organization may need. Here is a sample
-    of the departments:
+1. Select **New** on the department tab.
+2. Create as many departments as your organization needs. Here is a sample of the departments that an organization may need.
 
 - Accounting
 - Enterprise Integration
@@ -83,9 +85,9 @@ Select **"Automation Center"** in the bottom navigation bar \> Switch to **"S
 
 #### Process categories
 
-1. Inside the process categories tab select **+ New**
+1. Select **New** on the process categories tab.
 2. Create top level categories that will have child categories (subcategories).
-    Here is a sample:
+    Here is a sample of the categories that an organization may need.
 
 - Artificial Intelligence
 - Claims
@@ -94,26 +96,27 @@ Select **"Automation Center"** in the bottom navigation bar \> Switch to **"S
 
 #### Process sub-categories
 
-1. Either inside the process sub categories tab or directly inside a Process category. You want to define sub processes that relate in some way.
-2. Click **New Process Sub Category**.
-3. Sample data is below
-4. Artificial Intelligence
+Define the sub categories that relate in some way.
+
+1. Select **New Process Sub Category** and define the sub-categories as your organization needs. Here are some samples you can use as a guide.
+
+1. Artificial Intelligence
 
     - Forms Processing
     - Forms Validation
 
-5. Claims
+1. Claims
 
     - Return
     - Warranty
 
-6. Invoicing
+1. Invoicing
 
     - Internal
     - External
     - Other
 
-7. Legacy System
+1. Legacy System
 
     - Complex
     - No API
@@ -121,40 +124,39 @@ Select **"Automation Center"** in the bottom navigation bar \> Switch to **"S
 
 #### Roles (app roles)
 
-These roles do not give access to anything, only used as lookups for the fallback record if needed.
+These roles do not give access to anything, they're used as lookups for the fallback record, if needed.
 
-1. Create the **Automation CoE Admin** account as the **CoE Owner**
+1. Create the **automation CoE admin** account as the **CoE Owner**.
 
-| **Field**           | **Value**                 |
-|---------------------|---------------------------|
-| Display Name        | Anything (Auto CoE Owner) |
-| Type                | **CoE Owner**             |
-| User Principal Name | The email of the user     |
+    | **Field**           | **Value**                 |
+    |---------------------|---------------------------|
+    | Display Name        | Anything (Auto CoE Owner) |
+    | Type                | **CoE Owner**             |
+    | User Principal Name | The email of the user     |
 
-1. Create **CoE Admins** - At least 1 **CoE Admin** must be initialized to configure the **fallback**
+1. Create **CoE Admins** - At least 1 **CoE Admin** must be initialized to configure the **fallback**.
 
-| **Field**           | **Value**                 |
-|---------------------|---------------------------|
-| Display Name        | Anything (Auto CoE Admin) |
-| Type                | **CoE Admin**             |
-| User Principal Name | The email of the user     |
+    | **Field**           | **Value**                 |
+    |---------------------|---------------------------|
+    | Display Name        | Anything (Auto CoE Admin) |
+    | Type                | **CoE Admin**             |
+    | User Principal Name | The email of the user     |
 
 #### Base configuration - fallback
 
-This table should only have 1 record defined. This record is used if any of the values that are needed to complete processing is null or not defined
+This table should only have 1 record defined. This record is used if any of the values that are needed to complete processing is null or not defined.
 
-1. Define 1 fallback record (See screenshot below for example)
+You must define 1 fallback record (see screenshot below for example).
 
-![](media/b51358ec1c7aa89bbcdf017c3e76cc98.png)
+![This screenshot display the base configuration sample.](media/b51358ec1c7aa89bbcdf017c3e76cc98.png)
 
-Steps to configure ROI calculation
-----------------------------------
+## ROI calculations
 
-Still inside the **"Setup"** page you can find the ROI calculation configurations. These tables are used to calculate the complexity of each **Automation Project** (scores). Some values are also being used for estimated ROI and savings
+On the **Setup** page you can find the ROI calculation configuration. These tables are used to calculate the complexity of each **Automation Project** (scores). Some values are also being used for the estimated ROI and savings.
 
-#### Processing frequency scores
+### Processing frequency scores
 
-This table has a value and score for each record. Below are values that should be used, scores can be modified.
+The following table has a value and score for each record. Here are values that must be used. You can modify the scores as needed by your organization.
 
 | **Value** | **Score** |
 |-----------|-----------|
@@ -164,9 +166,9 @@ This table has a value and score for each record. Below are values that should b
 | Quarterly | 1         |
 | Weekly    | 5         |
 
-#### Average automation steps scores
+### Average automation steps scores
 
-This table can be fully customizable based on your organizations needs/process. Table is used to get the **Score** for the **Average Automation Steps** which is inputted by the user when a new **Automation Project** is requested. Below are some examples, but more or less can be added.
+This table is fully customizable based on your organization's needs and processes. This table is used to get the **Score** for the **Average Automation Steps** which is inputted by the user when a new **Automation Project** is requested. The follow table contains some examples, but you can modify them to suit the needs of your organization.
 
 | **Range**     | **Value From** | **Value To** | **Score** |
 |---------------|----------------|--------------|-----------|
@@ -174,9 +176,9 @@ This table can be fully customizable based on your organizations needs/process. 
 | \>= 250       | 250            | 999999999    | 10        |
 | \>= 5, \< 250 | 5              | 250          | 5         |
 
-#### Processing peaks scores
+### Processing peaks scores
 
-This table has a value and score for each record. Below are values that should be used, scores can be modified.
+This table has a value and score for each record. Here are the values that should be used, you can modify the scores to suit your needs.
 
 | **Value** | **Score** |
 |-----------|-----------|
@@ -186,40 +188,44 @@ This table has a value and score for each record. Below are values that should b
 | quarterly | 2         |
 | weekly    | 10        |
 
-Configuration - console
------------------------
+## Console configuration
 
 These tables are used by the **Automation Console** app, as well as the **Project Approval** automation.
 
 | **Name**           | **App Description**                                           | **AppID / App Link**                                        |
 |--------------------|---------------------------------------------------------------|-------------------------------------------------------------|
-| Automation Project | Create and manage your automation projects                    | [See Below (Next page)](#how-to-get-canvas-app-urlid)       |
-| Automation Center  | Manage and configure all aspects of your automation resources | [See Below (Next page)](#how-to-get-model-driven-app-urlid) |
+| Automation Project | Create and manage your automation projects                    | [Follow these steps.](#how-to-get-canvas-app-urlid)       |
+| Automation Center  | Manage and configure all aspects of your automation resources | [Follow these steps.](#how-to-get-model-driven-app-urlid) |
 
-#### How to get canvas app URL/ID
+### How to get canvas app URL/ID
+
+Perform the following steps in the [Maker Portal](https://make.powerapps.com/).
+
+1. Select the **Apps** tab on the left navigation bar.
+2. Select the **...** (more commands) on the app.
+3. Select **Details**. <!--todo: what to do now?-->
+
+   ![A screenshot that displays the details option.](media/dd98466696afb5756f04f76d3f87b5b1.png)
+
+### How to get model driven app URL/ID
 
 Inside the [Maker Portal](https://make.powerapps.com/)
 
-1. Select **Apps** tab on the left navigation
-2. Click the 3 dots (more commands) on the app
-3. Click details
+1. Select **Apps** tab on the left navigation bar.
+1. Select the **...** (more commands) on the app.
+1. Select **Details**.
 
-![](media/dd98466696afb5756f04f76d3f87b5b1.png)
+   ![A screenshot that displays steps 1, 2, and 3](media/89667581265544834f969251313d1015.png)
 
-#### How to get model driven app URL/ID
+1. Copy the **AppID**.
+1. Select the **Web Link**.
 
-Inside the [Maker Portal](https://make.powerapps.com/)
+   ![A screenshot that displays steps 4 and 5](media/053912393c43395267e57003ceffbec5.png)
 
-1. Select **Apps** tab on the left navigation
-1. Click the 3 dots (more commands) on the app
-1. Click details
-   ![Steps 1, 2, and 3](media/89667581265544834f969251313d1015.png)
-1. Copy **AppID**
-1. Click the **Web Link**
-   ![Steps 4 and 5](media/053912393c43395267e57003ceffbec5.png)
-1. Click Properties
-1. Copy Unified Interface URL (Reference the screenshots below for the steps)
-   ![steps 6 and 7](media/4bc735c5daa4a0f703d4a0cb1d60f91c.png)
+1. Select **Properties**.
+1. Copy **Unified Interface URL**.
+
+   ![A screenshot that displays steps 6 and 7](media/4bc735c5daa4a0f703d4a0cb1d60f91c.png)
 
 <!-- todo: -->
 

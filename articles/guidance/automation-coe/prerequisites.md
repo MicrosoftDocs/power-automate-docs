@@ -1,13 +1,12 @@
 ---
-title: Prerequisites for automating SAP GUI-based workloads | Microsoft Docs
-description: These prerequisites need to be met before you can start automating your SAP GUI-based workloads with Power Automate.
+title: Prerequisites to install and use the Automation CoE Toolkit | Microsoft Docs
+description: These prerequisites are required to install and use the Automation CoE Toolkit.
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
+manager: tapanm
 editor: ''
 ms.custom: guidance
-
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -17,78 +16,58 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# Prerequisites for automating SAP GUI-based workloads
+# Prerequisites to install and use the Automation CoE Toolkit
 
-The following prerequisites need to be met before you can start automating your SAP GUI–based workloads.
+The following prerequisites are required to install and use the Automation CoE Toolkit
+
+- An administrative account, which is called **Automation CoE Admin** or similar.
+
+  The Automation CoE requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration). Therefore, the account you set up as the **Automation CoE Admin** needs the following.
+
+## Roles
+
+- Microsoft Power Platform service admin, or Dynamics 365 service admin.
+- Account must be mail enabled.
+- Azure contributor role (for Key Vault and app registration).
+
+## Azure app registration
+
+An Azure app registration, this is used for an application user for the Dataverse Web API in each of the satellite environments.
+
+## Azure Key Vault
+
+Azure Key Vault(s) is used to store secrets for the Azure app registration mentioned earlier in the article, depending on your requirements. There might be one Key Vault per satellite environment. Here's an example of how you may name your Key Vaults.
+
+- KV-Contoso-Dev
+- KV-Contoso-Test
+- KV-Contoso-Prod
+
+>[!NOTE]
+>The Automation CoE uses the new [Azure Key Vault secrets (preview)](/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
+
+1. Register the **Microsoft.PowerPlatform** resource provider in your Azure subscription. Follow these steps to verify and configure it: [Azure resource providers and types](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-providers-and-types).
+
+   Azure Key Vault must have **Get** secret access policy set for the Dataverse service principal.
+
+1. Select **Add Access Policy**.
+
+   ![This screenshot displays the add access policy button](media/6f33f896a226966002e2b775bb7f9aa7.png)
+
+1. In the **Secret permissions** dropdown select **Get**.
+1. Next to **Select principal**, select **None selected**, and then search for **Dataverse**.
+1. Select the Dataverse service principal with the **00000007-0000-0000-c000-000000000000** identity.
+1. Select **Add**.
+
+   ![This screenshot displays the add button for service principal.](media/71f100649c194f9d55ade011a8066ce2.png)
+
+1. Select **Save**. Once added, the access policy should look similar to the following image.
+
+   ![This screenshot displays the Dataverse application added.](media/6dc3945bd91634badee8003305c058d1.png)
 
 ## License requirements
 
-To build RPA solutions with Power Automate, you'll need one or more of the following licenses or add-ons:
-
-- Power Automate **per user plan** with **attended** RPA (or trial)
-
-- Power Automate **per user plan** with **attended** RPA + **unattended** RPA add-on
-
-- Power Automate **per flow plan** + **unattended** RPA add-on
-
-## Software requirements
-
-Before you can use your device to create desktop flows and Power Automate Desktop processes, you'll need to ensure that it meets the requirements outlined in [Set up Power Automate Desktop](../../desktop-flows/setup.md).
-
-The following software components are required on Windows 10 Pro devices:
-
-- [The latest version of .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)(a reboot might be required)
-
-- [The latest version of desktop flows](../../desktop-flows/setup.md), which includes Power Automate Desktop and browser extensions (make sure you've enabled the browser extensions)
-
-- [Microsoft Edge](https://www.microsoft.com/edge/) or Google Chrome browser
-
-- [On-premises data gateway](../../gateway-reference.md#use-a-gateway) (make sure the data gateway region matches your environment's region) or use the latest [direct machine connectivity option](../../desktop-flows/manage-machines.md).
-
-- **SAP GUI for Windows** (ask your administrator for details).
-
-## SAP GUI scripting configuration
-
-Before you can use the SAP scripting engine, configure or confirm the following:
-
-1. Enable SAP scripting.
-
-    1. Open SAP GUI.
-
-    1. Open transaction **RZ11**.
-
-    1. Enter **sapgui/user\_scripting** into the **Parameter Name** field.
-
-    1. Select **Display**.
-
-    1. Confirm that under **Value of Profile Parameter sapgui/user\_scripting**, **Current Value** is set to **TRUE**.  If it's **FALSE**, select **Change Value**, enter **TRUE** in the **New Value** field, and then select **Save**.
-
-    1. Confirm with the SAP team that **S\_SCR** authorization is assigned to all automating users.
-
-         >[!NOTE]
-         >After you've changed the value, you might get a warning that says, "Change not permanent, will be lost at server restart." To avoid this issue, make the configuration permanent on the server side by using transaction **RZ10** instead. You'll need to restart the SAP server for these settings to take effect.
-
-2. Open **SAP GUI Options**, go to **Accessibility & Scripting** > **Accessibility** > **Use accessibility mode**, and then select any other checkboxes that you need.
-
-3. Open **SAP GUI Options** > **Accessibility & Scripting** > **Scripting**, and under **User Settings**, select **Enable scripting**. Clear all other options.
-
-4. On the **SAP GUI Options** screen, go to **Security** > **Security Settings**, and under **Security Module**, select **Open Security Configuration**. Change the **Default Action** to meet your specific requirements, and then select **Ok**.
-
-     >[!TIP]
-     >You can select **Allow** as **Default Action** to avoid a security dialog appearing during file save operations.
-
-5. **Gather use-case reference test data**: Search for an active employee in your SAP system and make a note of their **Personnel number**. Also make a note of a valid **Info subtype** (for example, **2 = Temporary address**). 
-
-   >[!NOTE]
-   >The address format we're using in the sample use case is based on US requirements. Depending on your requirements, the field list and mandatory fields might be different, so make sure you select controls that are relevant to your setup.
-
-6. Close all SAP sessions and windows.
-
-## Azure Key Vault credentials (optional)
-
-Although this configuration step isn't mandatory for creating and running desktop flows, we highly recommend that you use [Azure Key Vault](https://azure.microsoft.com/services/key-vault) as a central cloud repository for your secure strings, such as SAP passwords and SAP usernames. For the scenario in this playbook, we've created four use-case–specific secrets on Key Vault. We'll use these secrets later to pass to our desktop flow as secure inputs. More information: [Key Vault](https://azure.microsoft.com/services/key-vault/)
-
-![Screenshot of Azure Key Vault with the following secrets: SAP-HCM-Client, SAP-HCM-SystemId, SAPPassword, and SAPUser.](media/Azure-Key-Vault-window.png)  
-
-> [!div class="nextstepaction"]
-> [Next step: Core components for Power Automate RPA SAP GUI automation](core-components.md)
+<!--todo: confirm if it's any of these licenses needed-->
+- Microsoft 365 license (E3, E5).
+- Power Automate per user with attended RPA license (non-trial).
+- Power Apps Per User license (non-trial).
+- Power BI Pro license.
