@@ -48,7 +48,7 @@ The Automation CoE toolkit supports HEAT with the following functional component
 
 ### Automation CoE
 
-This is a team of experts who support automation, like Robotic Process Automation (RPA), within your organization. They have good knowledge on Power Automate for desktop, set up and maintain the Automation CoE tool kit, and maintain the configuration data such as departments, process categories, goals, and more.
+This is a team of experts who support automation, like Robotic Process Automation (RPA), within your organization. They have good knowledge on Power Automate for desktop, set up and maintain the Automation CoE toolkit, and maintain the configuration data such as departments, process categories, goals, and more.
 
 ### Automation projects
 
@@ -145,7 +145,7 @@ Data syncs from a satellite environment to the main environment using realtime t
 
 ### Automation CoE technical description
 
-The automation CoE tool kit supports an automation CoE with the following artifacts.
+The automation CoE toolkit supports an automation CoE with the following artifacts.
 
 1. The canvas app "Automation Project" to support a way to request and submit automation projects for approval.
 1. The model driven app "Automation Center" to support the creation and maintenance of automation assets like master data records, mapping resources, environments and assigning roles to employees.
