@@ -1,6 +1,6 @@
 ---
-title: Overview of the automation CoE setup guidance | Microsoft Docs
-description: Overview of the automation CoE setup guidance.
+title: Overview of the Automation Center of Excellence toolkit | Microsoft Docs
+description: Overview of the Automation Center of Excellence toolkit.
 suite: flow
 documentationcenter: na
 author: kathyos
@@ -17,10 +17,9 @@ ms.author: kathyos
 ms.reviewer: deonhe
 ---
 
-# CoE overview
+# Overview of the Automation Center of Excellence toolkit
 
 Introduction
-============
 
 Microsoft Power Platform adoption best practices for Automation Centers of Excellence (CoE) provides proven guidance on how to establish, and then scale an Automation CoE in your organization. It consists of best practices, documentation, and tools.
 
