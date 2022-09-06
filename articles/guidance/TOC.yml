@@ -102,7 +102,7 @@
       href: rpa-sap-playbook/conclusion.md
   - name: Create an automation center of excellence
     items:
-    - name: Automation CoE toolkit setup guide
+    - name: Overview
       href: ./automation-coe/coe-overview.md
     - name: Set up the automation (CoE) toolkit
       href: ./automation-coe/setup-automation-coe.md
