@@ -63,6 +63,8 @@ You can create a connection in multiple scenarios, including:
 
    ![List of connections that can be configured.](media/add-manage-connections/new-connections-list.png)
 
+1. To find a particular connection option, put the connector name in the **search box** in the top right corner of the page, below the settings and help buttons.
+
 1. Follow the steps to enter your credentials to configure the connection.
 
    > [!TIP]
@@ -111,11 +113,47 @@ You can update a connection that isn't working because your account details or y
 
 When you update a connection, it's updated for both Power Apps and Power Automate.
 
-## Troubleshoot a connection
+## Find apps and flows using a connection
 
+You can see what apps and flows are using a connection to understand how the connection is being used.
+
+1. Go to **Data** > **Connections**, and select the connection that you want to learn more about.
+
+1. Select **…** to view more commands, and then select **Details** to see the connections details including status and creation date.
+
+1. To view apps using the connection, click Apps using this connection.
+
+1. To view flows using the connection, click Flows using this connection.
+
+## Troubleshooting connections
+
+### Connection ownership by a different account
 Depending on your organization's policies, you might need to use the same account for signing in to Power Automate and creating a connection to SharePoint, Microsoft 365, or OneDrive for Business.
-
 For example, you might sign in to Power Automate with *yourname@outlook.com* but be blocked when you try to connect to SharePoint with *yourname@contoso.com*. You can instead sign in to Power Automate with *yourname@contoso.com* and you'll be able to connect to SharePoint.
 
+### Deprecation of the Power Automate Management connector's third-party authentication option
+
+The [Power Automate Management connector](connectors/flowmanagement/) authentication option of [third party](connectors/flowmanagement/#third-party-deprecated) was deprecated in June 2020 and will fully stop working October 2022.  
+
+The replacement of connections follows a standard pattern using the connection capabilities above:
+
+1. **Find** existing "third party" authentication connections
+2. **Delete** the existing "third party" authentication connection
+3. **Create** new "first party authentication" connection
+4. **Set** the new connection on any flows that use it
+
+#### Finding Power Automate Management connections as a user
+If you are a **user**, you can find your _Power Automate Management_ connections and learn about the apps and flows using each connection before replacement.
+If you don't know what authentication option was used on the _Power Automate Management_ connection, delete it and , delete the existing _Power Automate Management_ connections and replace them with new connections using the **Authentication Type** of **First Party**.
+
+#### Finding Power Automate Management connections as an admin
+If you are an **admin**, you can find these problematic connections using a repeatable pattern that can be automated in a flow with the help of some admin connectors: 
+
+1. **Find environments** using [List environments as admin](connectors/powerplatformforadmins/#list-environments-as-admin)
+2. **Find connections** in those environments using [Get Connections as admin](connectors/powerappsforadmins/#get-connections-as-admin)
+3. **Find connections to be replaced** with id="shared_flowmanagement" and properties.connectionParametersSet.name="thirdParty" using a Parse JSON action with conditions 
+4. Then finally, **Get connection details** including the connection display name and the creator who should replace the connection
+  
+Once you have that list of connections, reach out to the connection owners to let them know that the connections should be replaced.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
