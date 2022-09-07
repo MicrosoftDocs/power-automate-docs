@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/19/2022
+ms.date: 09/07/2022
 ms.author: hamenon
 ---
 
@@ -91,7 +91,7 @@ Here's an example of a cloud flow that creates a work item in Azure DevOps and t
 ## Known issues and limitations
 
 * You must create these flows within the default environment to ensure they get listed in Teams.
-* Only the flow author can trigger the flow. The flow will only be available to other members of the channel/chat if the author explictly shares it with them.
+* Only the flow author can trigger the flow. The flow will only be available to other members of the channel/chat if the author explicitly shares it with them.
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
