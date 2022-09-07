@@ -185,9 +185,6 @@ You can use the following registry entry to configure the behavior of the confir
 ***Value***
 
 - **0**: Power Automate for desktop won't display a confirmation dialog when invoking flows via URL or desktop shortcut. The user can change this option through the console settings.
-- **1**: Power Automate for desktop will display a confirmation dialog when invoking flows via URL or desktop shortcut. The user can change this option through the console settings.
-- **2**: Power Automate for desktop will always display a confirmation dialog when invoking flows via URL or desktop shortcut. The user is not allowed to change this option through the console settings.
-
 
 ## Configure Power Automate for desktop to keep the flow run details
 

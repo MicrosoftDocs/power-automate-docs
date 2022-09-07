@@ -51,8 +51,10 @@ By default, both are installed on your device.
 >The installer adds the Webdriver component. You need it to run desktop flows created with Selenium IDE.
 >It will also install the Power Automate app and third-party components.
 
+<!--
 >[!IMPORTANT]
 > To automate Java applications using UI automation, enable the appropriate installation option that installs the required files for UI automation in Java applets.
+-->
 
 ![Screenshot of the installation details.](media/desktop-flows-setup/installer-checkboxes.png)
 
@@ -167,7 +169,7 @@ You can also retrieve the details of all the command line arguments from the hel
 |-RESTOREDEFAULTCONFIG|Restores to the default installation settings during an upgrade.|
 |-DONOTINSTALLPAD|Skips installing Power Automate for desktop.|
 |-DONOTINSTALLMACHINERUNTIME|Skips installing Power Automate machine-runtime app.|
-|-SKIPINSTALLINGJAVAAUTOMATION|Skips installing files that are required for enabling UI automation in Java applets.|
+<!-- |-SKIPINSTALLINGJAVAAUTOMATION|Skips installing files that are required for enabling UI automation in Java applets.| -->s
 
 Here's an example of a command line argument that installs Power Automate: 
 
