@@ -96,5 +96,5 @@ For example, in **MostLikleyTheBest-CLoUdfLoW_AP-000001013_001.**, you can use t
 >You can use a solution to extend the automation CoE to sync all desktop flows in an  environment with the [RPA CLI](https://aka.ms/rpacli).
 
 ### More information
-<!--Todo-->
-[Read more on how to use the RPA CLI for the Automation CoE.](#how-can-the-rpa-cli-be-used-to-extend-the-automation-coe)
+
+[Read more on how to use the RPA CLI for the Automation CoE.](https://aka.ms/rpaclie)

@@ -21,7 +21,7 @@ ms.reviewer: deonhe
 
 <!--todo: this draft text. Get sign-off from PM for this page. -->
 
-- [Feedback and support SAMPLE](https://docs.microsoft.com/power-platform/guidance/coe/feedback-support)
+- [Feedback and support SAMPLE](/power-platform/guidance/coe/feedback-support)
 
 - Although the underlying features and components used to build the Center of Excellence (CoE) toolKit (such as Microsoft Dataverse, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement a CoE in their organizations.
 

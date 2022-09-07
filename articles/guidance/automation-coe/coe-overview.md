@@ -216,7 +216,7 @@ Here are example key vault names.
 
 The Automation CoE uses the new [Use Azure Key Vault secrets (preview)](/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
 
-1. Register the **Microsoft.PowerPlatform** resource provider in your Azure subscription. Follow these steps to verify and configure [Azure resource providers and types](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-providers-and-types).
+1. Register the **Microsoft.PowerPlatform** resource provider in your Azure subscription. Follow these steps to verify and configure [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
 
 1. Select **Add Access Policy**. Azure Key Vault must have **Get** secret access policy set for the Dataverse service principal.
 
