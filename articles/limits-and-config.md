@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/31/2022
+ms.date: 09/07/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -89,8 +89,10 @@ Limits on how long flows will remain turned on before they expire and get turned
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
 | Flows with errors    | 14 days |  A cloud flow that has a trigger or actions which fail continuously will be turned off. Fix your trigger or actions and turn on the  flow. |
-| Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans.No expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivity, the flow creator and co-creators will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off and the creator and co-creators will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. |
+| Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans.No expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivity, the flow creator and co-owners will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off and the creator and co-owners will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. |
 | Consistently throttled flows | 14 days |A cloud flow that is consistently throttled for 14 days will be turned off. The flow creator and co-creators will get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
+|Premium flows without premium licenses| 14 days | Flows that were created with premium features (premium connectors/custom connectors/HTTP connectors/on premises gateway/business process flows) but don't have a premium Power Automate license will be turned off after 14 days. This situation happens if the original owner leaves the organization or if they have an expired trial or premium license. The flow owner and co-owners will get an email when the trial or premium license expires or when the owner isn't found in Azure Active Directory (AAD). The flow will continue to work for 14 days. If a premium license isn't assigned to the flow within 14 days, the flow is automatically turned off and the owner and co-owners are notified via email. Newly created or edited premium flows without a premium license are saved but turned off. Once a premium Power Automate license is assigned to the owner or flow, you can turn on the flow. Admins can find these flows with the latest version of the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit). Assign a per flow license or a per user license to the owner to keep the flow running.|
+|Power Apps out of context flows| 90 days|Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that are in context of the Power App. See [Power Automate use rights included with Power Apps licenses section](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-power-apps-licenses) for details. Owners and co-owners of premium automated or scheduled flows that aren't linked to an app will get email notifications and they'll have 90 days to assign a license. If you don't provide a license within 90 days, Power Automate turns off the flows. Admins can use the latest version of the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit) to find all flows in this state. Assign a per flow license or a per user license to the owner to keep the flow running. New or edited flows that use premium licenses are saved and turned off by default. You can turn on these flows after you assign a premium Power Automate license to the owner or flow.|
 
 ## Concurrency, looping, and debatching limits
 
