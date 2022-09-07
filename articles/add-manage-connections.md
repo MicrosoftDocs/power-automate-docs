@@ -133,7 +133,7 @@ For example, you might sign in to Power Automate with *yourname@outlook.com* but
 
 ### Deprecation of the Power Automate Management connector's third-party authentication option
 
-The [Power Automate Management connector](connectors/flowmanagement/) authentication option of [third party](connectors/flowmanagement/#third-party-deprecated) was deprecated in June 2020 and will fully stop working October 2022.  
+The [Power Automate Management connector](connectors/flowmanagement/) authentication option of [third party](connectors/flowmanagement/#third-party-deprecated) was deprecated in June 2020 and will fully stop working October 2022.
 
 The replacement of connections follows a standard pattern using the connection capabilities above:
 
@@ -141,10 +141,6 @@ The replacement of connections follows a standard pattern using the connection c
 2. **Delete** the existing "third party" authentication connection
 3. **Create** new "first party authentication" connection
 4. **Set** the new connection on any flows that use it
-
-#### Finding Power Automate Management connections as a user
-If you are a **user**, you can find your _Power Automate Management_ connections and learn about the apps and flows using each connection before replacement.
-If you don't know what authentication option was used on the _Power Automate Management_ connection, delete it and , delete the existing _Power Automate Management_ connections and replace them with new connections using the **Authentication Type** of **First Party**.
 
 #### Finding Power Automate Management connections as an admin
 If you are an **admin**, you can find these problematic connections using a repeatable pattern that can be automated in a flow with the help of some admin connectors: 
@@ -155,5 +151,10 @@ If you are an **admin**, you can find these problematic connections using a repe
 4. Then finally, **Get connection details** including the connection display name and the creator who should replace the connection
   
 Once you have that list of connections, reach out to the connection owners to let them know that the connections should be replaced.
+
+#### Finding Power Automate Management connections as a user
+If you are a **user**, you can find your _Power Automate Management_ connections and learn about the apps and flows using each connection before replacement.
+
+If you don't know what authentication option was used on the _Power Automate Management_ connection, you could create a flow and use the [List my connections](connectors/flowmanagement/#list-my-connections) action to see the advanced connection metadata, or simply delete the existing connection and replace it with a new connection using the **Authentication Type** of **First Party**.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
