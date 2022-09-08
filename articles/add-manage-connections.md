@@ -137,26 +137,26 @@ For example, you might sign in to Power Automate with *yourname@outlook.com* but
 
 The [Power Automate Management connector](/connectors/flowmanagement/) authentication option for [third party](/connectors/flowmanagement/#third-party-deprecated) was deprecated in June 2020 and will no longer work in October 2022.
 
-Follow these steps to replace a deprecated connector with a new connector.
+Follow these steps to replace third party authentication connections.
 
-1. **Find** existing "third party" authentication connections
-1. **Delete** the existing "third party" authentication connection
-1. **Create** new "first party authentication" connection
-1. **Set** the new connection on any flows that use it
+1. Find the third party authentication connection you want to replace, and then delete it.
+1. Create a "first party authentication" connection.
+1. Add the new connection on the flows that need it.
 
-#### Finding Power Automate Management connections as an admin
-If you are an **admin**, you can find these problematic connections using a repeatable pattern that can be automated in a flow with the help of some admin connectors: 
+#### Find Power Automate Management connections as an admin
+
+If you are an admin, you can find these problematic connections using a repeatable pattern that can be automated in a flow with the help of some admin connectors: 
 
 1. **Find environments** using [List environments as admin](/connectors/powerplatformforadmins/#list-environments-as-admin)
-2. **Find connections** in those environments using [Get Connections as admin](/connectors/powerappsforadmins/#get-connections-as-admin)
-3. **Find connections to be replaced** with id="shared_flowmanagement" and properties.connectionParametersSet.name="thirdParty" using a Parse JSON action with conditions 
-4. Then finally, **Get connection details** including the connection display name and the creator who should replace the connection
+1. **Find connections** in those environments using [Get Connections as admin](/connectors/powerappsforadmins/#get-connections-as-admin)
+1. **Find connections to be replaced** with id="shared_flowmanagement" and properties.connectionParametersSet.name="thirdParty" using a Parse JSON action with conditions 
+1. Then finally, **Get connection details** including the connection display name and the creator who should replace the connection
   
 Once you have that list of connections, reach out to the connection owners to let them know that the connections should be replaced.
 
 #### Finding Power Automate Management connections as a user
-If you are a **user**, you can find your _Power Automate Management_ connections and learn about the apps and flows using each connection before replacement.
+If you are a non-admin user, you can find your Power Automate Management connections and learn about the apps and flows that use each connection before replacement.
 
-If you don't know what authentication option was used on the _Power Automate Management_ connection, you could create a flow and use the [List my connections](/connectors/flowmanagement/#list-my-connections) action to see the advanced connection metadata, or simply delete the existing connection and replace it with a new connection using the **Authentication Type** of **First Party**.
+If you don't know what authentication option was used on the Power Automate Management connection, you could create a flow and use the [List my connections](/connectors/flowmanagement/#list-my-connections) action to see the advanced connection metadata, or delete the existing connection and replace it with a new connection using the **Authentication Type** of **First Party**.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
