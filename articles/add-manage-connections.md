@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: KVIVEK
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/09/2021
+ms.date: 09/08/2022
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -63,7 +63,7 @@ You can create a connection in multiple scenarios, including:
 
    ![List of connections that can be configured.](media/add-manage-connections/new-connections-list.png)
 
-1. To find a particular connection option, put the connector name in the **search box** in the top right corner of the page, below the settings and help buttons.
+1. To find a particular connection option, enter the connector name into the search box that's located in the top right corner of the page, below the settings and help buttons.
 
 1. Follow the steps to enter your credentials to configure the connection.
 
