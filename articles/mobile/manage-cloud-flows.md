@@ -43,7 +43,7 @@ The Power Automate mobile app offers the following additional cloud flow managem
 
 To manage your flows, select an option in the vertical ellipses (**...**) dropdown menu on the **Flows** screen.
 
-:::image type="content" source="../media/android/flows-menu.png" alt-text="Screenshot of flow details.":::
+:::image type="content" source="../media/android/flows-menu.png" alt-text="Screenshot of the dropdown menu on the Flows screen.":::
 
 For example, if you select **Details** in the menu, you'll see the flow details and run history.
 

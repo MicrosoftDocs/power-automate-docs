@@ -23,11 +23,11 @@ search.audienceType:
 ---
 # Send and receive push notifications
 
-The notifications feature allows you to send and receive push notifications. To get to the **Notifications** screen, tap the bell icon in the app header.
+The notifications feature allows you to send and receive push notifications. To get to the **Notifications** screen, select the bell icon in the app header.
 
 :::image type="content" source="../media/android/notifications-1.png" alt-text="Screenshot of the push notifications bell icon.":::
 
-When you tap the bell icon, you'll see a list of all notifications and flow alerts. If you've used the previous Power Automate mobile app version, you know this as Activity Feed.
+When you select the bell icon, you'll see a list of all notifications and flow alerts. If you've used the previous Power Automate mobile app version, you know this as Activity Feed.
 
 Notifications that are new since the last time you opened the app are in the **New** list. Notifications that have existed prior to opening the app are in the **Older** list. Notifications will be removed after 14 days.
 
