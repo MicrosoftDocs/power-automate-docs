@@ -3,8 +3,8 @@ title: DLP impact analysis for desktop flows | Microsoft Docs
 description: Learn about the DLP impact analysis for desktop flows.
 suite: flow
 documentationcenter: na
-author: kathyos
-manager: tapanm
+author: grarchib
+manager: marcsc
 editor: ''
 ms.custom: guidance
 
@@ -13,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
-ms.author: kathyos
+ms.author: grarchib
 ms.reviewer: deonhe
 ---
 

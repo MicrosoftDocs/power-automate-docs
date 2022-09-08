@@ -3,8 +3,8 @@ title: Frequently asked questions about the automation CoE setup guidance | Micr
 description: Frequently asked questions about the automation CoE setup guidance.
 suite: flow
 documentationcenter: na
-author: kathyos
-manager: tapanm
+author: grarchib
+manager: marcsc
 editor: ''
 ms.custom: guidance
 
@@ -13,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
-ms.author: kathyos
+ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
