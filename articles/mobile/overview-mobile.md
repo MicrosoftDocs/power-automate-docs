@@ -13,8 +13,8 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/09/2022
-ms.author: angieandrews
+ms.date: 09/12/2022
+ms.author: kewaiss
 search.app: 
   - Flow
 search.audienceType: 
@@ -41,8 +41,8 @@ If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-i
 
 | Android |
 | :---:   |
-| [![Download the Power Automate mobile app for Android from Google Play.](media/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
-| ![The Power Automate mobile app for Android QR code.](../media/android/android-mobile-qrcode.png "The Power Automate mobile app for Android QR code")  |
+| :::image type="content" source="../media/android/google-play.png" alt-text="Screenshot of the Download the Power Automate mobile app for Android from Google Play option.":::  |
+| :::image type="content" source="../media/android/android-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for Android QR code.":::  |
 
 > [!NOTE]
 > - You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
@@ -52,8 +52,14 @@ If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-i
 
 You might have different environments set up depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment so that you can access your flows, approvals, notifications, and more, based on the environment you're in.
 
-![Screenshot of environments icon.](media/environment.png "Environments")
- 
+To change environments:
+
+1. Select the environment icon.
+
+1. Select the environment you want to access. A check mark appears next to the selected environment.
+
+    :::image type="content" source="../media/android/environment.png" alt-text="Screenshot of environments icon.":::
+
 ## Limitations
 
 Following are the known limitations for the mobile app for Android:

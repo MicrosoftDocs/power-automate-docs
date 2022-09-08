@@ -13,8 +13,8 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/09/2022
-ms.author: angieandrews
+ms.date: 09/12/2022
+ms.author: kewaiss
 search.app: 
   - Flow
 search.audienceType: 
@@ -28,7 +28,7 @@ The instant flows feature allows you to easily run repetitive tasks from any pla
 
 If you've used the previous Power Automate mobile app version, you know instant flows as button flows.
 
-![Screenshot of a list of instant flows.](media/instant-flows-1.png "List of instant flows")
+:::image type="content" source="../media/android/instant-flows-1.png" alt-text="Screenshot of a list of instant flows.":::
 
 To run an instant flow:
 
@@ -36,8 +36,10 @@ To run an instant flow:
 
 1. Select **Run flow**.
 
-    Some flows might require you to fill in parameters before running the flow.
+    :::image type="content" source="../media/android/run-flow.png" alt-text="Screenshot of an instant flow.":::
 
-    ![Screenshot of instant flows.](media/run-flow.png "Run instant flows")
+    Some flows might require you to fill in parameters before running the flow. When your flow runs successfully, you'll be notified by the following message at the top of the **Instant flows** screen:
+
+    :::image type="content" source="../media/android/run-flow-message.png" alt-text="Screenshot of the message that your flow ran successfully.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
