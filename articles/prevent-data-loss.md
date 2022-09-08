@@ -169,8 +169,11 @@ When your tenant is opted into the user experience in the Power Platform, your a
 > [!NOTE]
 >  If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
  
-## DLP enforcement background jobs
-- Enforcement and suspension - Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, evaluates them, and then suspends the flows that violate the updated policy.
+## DLP enforcement
+- Enforcement and suspension 
+    - When a flow is created or changed, the flow is evaluated against the current set of DLP policies. If needed, the enforcement will be asynchronous and occur within 24 hours.
+    - When a DLP policy is created or changed, a background job scans all existing flows in the environment, evaluates them, and then suspends the flows that violate the policy. The enforcement will be asynchronous and occur within 24 hours. If a DLP policy change occurs when the previous DLP policy set was still being evaluated, then the evaluation is restarted to ensure the latest policies are enforced. 
+    - Once a week, a background job does a consistency check of all existing flows in the environment against the DLP policies to double check that a DLP policy check wasn't missed. 
 - Reactivation - If the DLP enforcement background job finds a desktop flow that no longer violates any DLP, then the background job automatically turns it on. However,  the DLP enforcement background job won't automatically turn on cloud flows.
 
 ## DLP enforcement change process
