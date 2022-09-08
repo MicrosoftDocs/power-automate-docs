@@ -135,7 +135,7 @@ For example, you might sign in to Power Automate with *yourname@outlook.com* but
 
 ### Deprecation of the Power Automate Management connector's third-party authentication option
 
-The [Power Automate Management connector](/connectors/flowmanagement/) authentication option for [third party](/connectors/flowmanagement/#third-party-deprecated) was deprecated in June 2020 and will no longer work after October 1, 2022.
+The [Power Automate Management connector](/connectors/flowmanagement/) authentication option of [third party](/connectors/flowmanagement/#third-party-deprecated) was deprecated in June 2020 and will no longer work after October 1, 2022.
 
 Follow these steps to replace third party authentication connections.
 
