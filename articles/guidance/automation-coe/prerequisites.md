@@ -50,19 +50,11 @@ Azure Key Vault(s) is used to store secrets for the Azure app registration menti
    Azure Key Vault must have **Get** secret access policy set for the Dataverse service principal.
 
 1. Select **Add Access Policy**.
-
-   ![This screenshot displays the add access policy button](media/6f33f896a226966002e2b775bb7f9aa7.png)
-
 1. In the **Secret permissions** dropdown select **Get**.
 1. Next to **Select principal**, select **None selected**, and then search for **Dataverse**.
 1. Select the Dataverse service principal with the **00000007-0000-0000-c000-000000000000** identity.
 1. Select **Add**.
-
-   ![This screenshot displays the add button for service principal.](media/71f100649c194f9d55ade011a8066ce2.png)
-
-1. Select **Save**. Once added, the access policy should look similar to the following image.
-
-   ![This screenshot displays the Dataverse application added.](media/6dc3945bd91634badee8003305c058d1.png)
+1. Select **Save**.
 
 ## License requirements
 
@@ -71,3 +63,22 @@ Azure Key Vault(s) is used to store secrets for the Azure app registration menti
 - Power Automate per user with attended RPA license (non-trial).
 - Power Apps Per User license (non-trial).
 - Power BI Pro license.
+
+## Enable code components
+
+The automation kit is utilizing the Power Platform creator kit, which was developed to bootstrap and enhance canvas apps look and feel. This kit uses Fluent UI references and guidelines. Read more about Fluent. [Read more about fluent](https://www.microsoft.com/design/fluent/)
+
+The creator Kit uses a Component library and code components. We must enable Code components inside ALL the environments that the automation kit will be installed in.
+
+> [!WARNING]
+> You will have to uninstall and potentially lose all data if Power Apps component framework for canvas apps is not turned on the environments where the automation kit is installed or upgraded.
+Enable component framework before installing or upgrading.
+![A screenshot that displays the environments](media/CodeComponentsTurnedOn.png)
+
+1. Navigate to the Power Platform Admin Center.
+1. Select an environment where you want to enable this feature.
+(We need to do this for both Main and all Satellite environments)
+1. Click the Settings cog in the top nav.
+1. Under Product > Click Features.
+1. Turn on (Enable) Power Apps component framework for canvas apps.
+1. Click Save.

@@ -70,7 +70,6 @@ This is a checklist for initially setting up the Automation CoE Toolkit. **Use t
     1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
     2. Go to the environment you just created in which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Main**.
 
-      ![A screenshot that displays the environments](media/c4670e71d1b2fd29fbae6676e1037f47.png)
 
 1. On the left pane, select **Solutions**.
 1. Select **Import**, and then **Browse**.
@@ -80,11 +79,9 @@ This is a checklist for initially setting up the Automation CoE Toolkit. **Use t
 1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 1. Select **Import**.
 
-   The import process can take 5-10 minutes to complete.
+   The import process can take 10-20 minutes to complete.
 
 1. After importation completes, verify that all the flows are **turned on** and share the apps with the appropriate users.
-
-   ![Screenshot that shows all flows are turned on](media/b8dae15259f4d787c09136d5fb849526.png)
 
 ### Provision the approvals solution (optional)
 
@@ -121,7 +118,6 @@ Review roles and assign roles based on responsibility.
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select your main environment.
 1. Select **See all** under **Security roles** on the **Access** card.
-   ![A screenshot that displays the see all link for security roles](media/3a5f46ffdae69744e5f820965b184d99.png).
 1. Select the security role, and then add members to the security role.
 
 ### Sync environments
@@ -134,38 +130,19 @@ Review roles and assign roles based on responsibility.
 
 Next, we want to import all the desktop flow actions from the csv file into the **Desktop Flow Action** table.
 
-This must be done for all environments to which the Automation CoE syncs, such as main and all satellites.
+This must be done for all environments to which the Automation kit is installed, such as main and all satellites.
 
-1. Open a browser, navigate to [Power Automate](https://flow.microsoft.com), and then sign in.
+1. Open a browser, navigate to [Power Automate](https://flow.microsoft.com) and sign-in with your account.
 1. Navigate to your environment where the solution is installed.
-1. Select the **Solutions** tab.
-1. Find, and then select the **Automation CoE Main** solution**.
-1. Select the **Desktop Flow Action** table.
-1. Select the **Data** tab.
-1. Select the **Data dropdown** near the top.
-1. Under **Get data**, select **Get data from Excel**.
-
-   ![A screenshot that shows the steps to select the option to get data from Excel](media/eca274b494bf842915ab6325ef61aa73.png)
-
+1. Select Solutions tab.
+1. Find and select Automation CoE Main solution.
+1. Select the table, Desktop Flow Action.
+1. Click the Import dropdown near the top.
+1. Select Import data from Excel.
 1. After the popup opens, select the **Upload** button, and then upload the included Excel file (autocoe_desktopflowactions.csv).
-
-   ![A screenshot that displays the upload button](media/de9f4d99e8237715d0c4f0e10b999905.png)
-
-1. Wait for the **Mapping status** to show as successful.
+1. Wait for the **mapping status** to show as successful.
 1. Select **Import**.
-
-   ![A screenshot that displays the mapping was successful and the import button](media/9b6a9bdb7c1ee0a5239c800f19f1048c.png)
-
 1. After the import completes, verify that the data was imported.
-
-   ![A screenshot that displays the importation was successful and data imported](media/d4386a5213a442f04f533c4dbd843273.png)
-
-### Verify the Desktop Flow Actions
-
-1. Under **Tables**, select the **Desktop Flow Action** table.
-2. Verify there is data under the **Data** tab.
-
-   ![A screenshot that displays the data is available.](media/e45e4cfc0dc1d875e8a6140b81a0f825.png)
 
 ## Setup satellites
 
@@ -178,20 +155,12 @@ Use the following steps to create an app registration that will be used by flows
 1. Select **New Registration**.
 1. Enter a name (for example, Automation CoE Dataverse API), leave everything else, and the select **Register**.
 1. In the **Overview tab**, select **Add an Application Id URI**.
-
-   ![A screenshot that displays the application id](media/f589cd35a86eb9debd295ef1e66b998d.png)
-
 1. Select **Set**, leave the default, and then select **Save**.
-
-    ![A screenshot that displays set application id](media/e21d24f573f5401c4a9ea30f5e8a5954.png)
 
 ### Add a new client secret
 
 1. Select **Certificates & secrets.**
 1. Select **New client secret.**
-
-   ![A screenshot that displays the steps to the new client secret button.](media/a6f25357bcaa11f0c49c91bb4f517ee7.png)
-
 1. Enter description (for example, Auto CoE Dataverse), and then select appropriate expiry value.
 1. Select **Add**.
 1. Copy down the secret value that's generated.
@@ -203,16 +172,11 @@ Use the following steps to create an app registration that will be used by flows
     - Application (client) ID
     - Directory (tenant) ID
 
-   ![A screenshot that displays the application and directory Ids](media/af0d7a6b6d83a55079039ddfd56ce531.png)
-
 1. Next go to your Azure Key Vault, this is where we will store the values so that Power Automate can use them to call the Dataverse Web API.
 
 ### Create secrets for the client Id and tenant Id you copied earlier
 
 1. Inside the **Secrets** tab, select **Generate/Import**.
-
-   ![A screenshot that displays the Generate/Import button](media/48fe3244411a9db2a8385fab1c4e0520.png)
-
 1. Use a descriptive name for each secret. Here are a few examples.
 
     - KVS-AutomationCoE-ClientID
@@ -240,8 +204,6 @@ Microsoft recommends that you have the satellite solution imported inside your p
 
    Your application user displays after it's created.
 
-   ![A screenshot that displays the](media/ee7ca5d1c4aa6ebc302fc2439e750652.png)
-
 ### Import the satellite solution into the satellite environment
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
@@ -262,8 +224,6 @@ Microsoft recommends that you have the satellite solution imported inside your p
 2. Navigate to the satellite environment from the [maker portal](https://make.powerapps.com).
 3. Select the **Settings** in the top right nav bar > **Session details Developer resources**.
 
-   ![A screenshot that displays the session details developer resources link](media/a22ea6e5f864bfbcfde3f76d82d4905d.png)
-
 Next, we need to get the **URL path** for our **Azure Key Vault secrets**.
 
 The Azure Key Vault secrets are using the new environment variable type. These environment variables need to be in the following format.
@@ -277,9 +237,6 @@ Follow these steps to get the format.
 1. Go to [Azure Portal](https://portal.azure.com/#home), navigate to your Key Vault with the secrets for your [App Registration](#create-an-azure-ad-app-registration-to-connect-to-dataverse-web-api).
 1. Select the **Secrets** tab.
 1. Copy the **URL**.
-
-    ![A screenshot that displays the the secrets URL](media/7ff5dd01f7ae3ef988b5d70c817d531a.png)
-
 1. Paste the URL into notepad.
 1. Remove everything from **https://** to **/resource**.
 
