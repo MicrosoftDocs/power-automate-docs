@@ -292,7 +292,7 @@ Follow these steps to get the format.
 
 Once the import is complete, assign the following roles, based on responsibility.
 
-- **Flow Session Exception Admin** – Admin role which provides full CRUD permissions to the flow session exception data captured in the tables below. <!--todo where are the tables-->
+- **Flow Session Exception Admin** – Admin role which provides full CRUD permissions to the flow session exception data captured in the tables below. <!--todo where are the tables (in main)-->
 
     - Flow Session Exception Rule Configuration
     - Flow Session Exception
@@ -508,7 +508,7 @@ calculation Formula
 ### Define configuration data for the automation kit
 
 <!--todo: "app" is vague here-->
-Use the Automation CoE admin account, navigate to the main environment and open the app.
+Use the Automation CoE admin account, navigate to the main environment and open the automation center app.
 
 The **Automation Center** is where we configure how several aspects of how the Automation CoE functions.
   
@@ -669,7 +669,7 @@ This table has a value and score for each record. Below are values that should b
 
 ## Configuration - console
 
-The automation console app and the project approval automation use these tables. 
+The automation console app and the project approval automation use these tables.
 
 | **Name**           | **App description**                                           | **AppID / app link**                                        |
 |--------------------|---------------------------------------------------------------|-------------------------------------------------------------|
@@ -699,7 +699,7 @@ Sign into the [maker portal](https://make.powerapps.com/), and then perform the 
 1. Select the **Web Link**.
 
 1. Select Properties.
-1. Copy Unified Interface URL (Reference the screenshots below for the steps).
+1. Copy Unified Interface URL.
 
 <!-- todo: -->
 
