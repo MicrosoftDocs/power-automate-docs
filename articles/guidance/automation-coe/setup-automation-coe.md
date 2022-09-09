@@ -3,8 +3,8 @@ title: Setup the automation CoE toolkit | Microsoft Docs
 description: Setup the automation CoE toolkit.
 suite: flow
 documentationcenter: na
-author: kathyos
-manager: tapanm
+author: grarchib
+manager: marcsc
 editor: ''
 ms.custom: guidance
 
@@ -13,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
-ms.author: kathyos
+ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
@@ -204,6 +204,8 @@ Microsoft recommends that you have the satellite solution imported inside your p
 
    Your application user displays after it's created.
 
+   ![A screenshot that displays the](media/ee7ca5d1c4aa6ebc302fc2439e750652.png)
+
 ### Import the satellite solution into the satellite environment
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
@@ -266,9 +268,9 @@ Follow these steps to get the format.
     | Environment Name                      | Display name of the current environment (satellite)                                                                                                                                                                                                                                                                                                                                                   |   |
     | Environment Region                    | Region of the satellite. Can be found in the Power Platform admin center                                                                                                                                                                                                                                                                                                                              |   |
     | Environment Unique Name               | Use **Session details** to find this value from the current environment that you are importing into (**satellite**) Also must add **.crm** to the end of the string. Example: unq08ed139e532b4edc8f38851fd1bb3279.crm. Please note that the extension 'crm', 'crm[x]' etc. is region dependent.                                                        |   |
-    |                                       | [See Datacenter regions](https://docs.microsoft.com/power-platform/admin/new-datacenter-regions)                                                                                                                                                                                                                                                                                                |   |
+    |                                       | [See Datacenter regions](/power-platform/admin/new-datacenter-regions)                                                                                                                                                                                                                                                                                                |   |
     | \*Environment Unique Name of CoE Main | Use **Session details** to find this value **from Main**. Also must add **.crm** to the end of the string. For example: unq08ed139e532b4edc8f38851fd1bb3279.crm. Please note that the extension 'crm', 'crm[x]' etc. is region dependent.                                                                                                                  |   |
-    |                                       | [See Datacenter regions](https://docs.microsoft.com/power-platform/admin/new-datacenter-regions)                                                                                                                                                                                                                                                                                                |   |
+    |                                       | [See Datacenter regions](/power-platform/admin/new-datacenter-regions)                                                                                                                                                                                                                                                                                                |   |
     | Environment URL                       | Open a new tab > navigate to [Power Platform admin center](https://microsoft.sharepoint.com/teams/AutomationCOE/Shared%20Documents/General/Releases/PAD%20DLP%20Impact%20Analysis/Docs/aka.ms/ppac).                                                                                                                                                  |   |
     | Flow Session Trace Record Owner Id    | This is the UserID (guid) from the Users table inside the satellite environment for the admin account. Select Tables under Data on the left > User > Data > Change view to **"All columns"** Find the **Auto CoE Admin** account and copy the value under **User**. Flow User Id (guid):                                                                                                               |   |
 
@@ -280,7 +282,7 @@ Follow these steps to get the format.
 1. Copy the web address up to …environments/
 1. You can also get the **environment id** from this URL.
 
-   ![A screenshot that displays the](media/ffc481c5614b1cad655d5a77c700d8b1.png)
+   ![A screenshot that displays the environment Id in the URL](media/ffc481c5614b1cad655d5a77c700d8b1.png)
 
 1. Select your environment.
 1. Right click the environment URL.
@@ -432,7 +434,7 @@ The main Power BI dashboard has the following sections.
 
 1. **Goals** - Outlines savings and efficiency goals for the organization, and the status by department and project.
 
-   ![A screenshot that displays the](media/0365178b76c51543398ee3b5b45bba5e.png)
+   ![A screenshot that displays the project goals.](media/0365178b76c51543398ee3b5b45bba5e.png)
 
 1. **ROI** - Overall ROI for the Projects implemented.
 
@@ -448,7 +450,7 @@ The main Power BI dashboard has the following sections.
 
 1. **Machines** - Displays detailed information on machine utilization and activity.
 
-   ![A screenshot that displays the](media/b4b902a7319fe518600896a0ba5b83f4.png)
+   ![A screenshot that displays the utilization for the machines.](media/b4b902a7319fe518600896a0ba5b83f4.png)
 
 1. **Flow Overview** - Summarizes the number flows created, runs, status, and top 10 makers, machines, and flows.
 
@@ -721,7 +723,7 @@ Sign into the [maker portal](https://make.powerapps.com/), and then perform the 
 
 1. Select **Apps** tab on the left navigation.
 1. Select ... (more commands) on the app.
-1. Select details.
+1. Select **Details**.
 
    ![A screenshot that displays the steps to select details.](media/dd98466696afb5756f04f76d3f87b5b1.png)
 
@@ -731,18 +733,18 @@ Sign into the [maker portal](https://make.powerapps.com/), and then perform the 
 
 1. Select the **Apps** tab on the left navigation.
 1. Select ... (more commands) on the app.
-1. Select details.
+1. Select **Details**.
 
-   ![A screenshot that displays the](media/89667581265544834f969251313d1015.png)
+   ![A screenshot that displays the details link.](media/89667581265544834f969251313d1015.png)
 1. Copy the **AppID**.
 1. Select the **Web Link**.
 
-   ![A screenshot that displays the](media/053912393c43395267e57003ceffbec5.png)
+   ![A screenshot that displays the web link](media/053912393c43395267e57003ceffbec5.png)
 
 1. Select Properties.
 1. Copy Unified Interface URL (Reference the screenshots below for the steps).
 
-   ![A screenshot that displays the](media/4bc735c5daa4a0f703d4a0cb1d60f91c.png)
+   ![A screenshot that displays the unified interface url. ](media/4bc735c5daa4a0f703d4a0cb1d60f91c.png)
 
 
 <!-- todo: -->

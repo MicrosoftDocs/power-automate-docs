@@ -3,8 +3,8 @@ title: How to use the automation CoE toolkit | Microsoft Docs
 description: How to use the automation CoE toolkit.
 suite: flow
 documentationcenter: na
-author: kathyos
-manager: tapanm
+author: grarchib
+manager: marcsc
 editor: ''
 ms.custom: guidance
 
@@ -13,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
-ms.author: kathyos
+ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
@@ -128,7 +128,7 @@ After you create a solution in an environment, it shows up in the list. The **+*
 
 #### Rename a cloud flow to match convention
 
-Follow these steps to rename a cloud flow to match the [naming convention](./test-coe-end-to-end.md##cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) from the Automation Solution Manager app home screen.
+Follow these steps to rename a cloud flow to match the [naming convention](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) from the Automation Solution Manager app home screen.
 
 1. Select **...**  for the solution that interests you.
 1. Select the cloud flow that you want to rename.
@@ -137,21 +137,21 @@ Follow these steps to rename a cloud flow to match the [naming convention](./tes
 
    ![This screenshot displays the steps in the automation solution manager](media/98135b82b001c28bc777f7c1269619fb.png)
 
-   The [naming convention](./test-coe-end-to-end.md##cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) should apply automatically.
+   The [naming convention](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) should apply automatically.
 
 1. Select the **Save** icon.
 
    ![This screenshot displays the save icon.](media/2d78588c3463c5fc980b6d9f3d6a722d.png)
 
 >[!NOTE]
-The last 3 digits will default to 001. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution if you wish to distinguish them. Read more about the [naming convention](./test-coe-end-to-end.md##cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering).
+The last 3 digits will default to 001. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution if you wish to distinguish them. Read more about the [naming convention](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering).
 
 #### Meter solution artifacts
 
 <!--todo: I don't understand this. please clarify.-->
 This is where we meter the artifacts for the Flow Sessions to show up in our main environment. We can get to the solution screen from the Home screen by clicking the 3 dots. **". . ."**
 
-1. Under the **Is metered** column, select the **"+"** icon to add to it metering. If this option is grayed out, then the cloud flow does not follow the [naming schema](./test-coe-end-to-end.md##cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering). [Rename the cloud flow](#rename-a-cloud-flow-to-match-convention), if needed.
+1. Under the **Is metered** column, select the **"+"** icon to add to it metering. If this option is grayed out, then the cloud flow does not follow the [naming schema](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering). [Rename the cloud flow](#rename-a-cloud-flow-to-match-convention), if needed.
 
    ![This screenshot displays the plus icon in the Is metered column.](media/7f4b832d4624313a30f6c95f37220c87.png)
 

@@ -3,8 +3,8 @@ title: Prerequisites to install and use the Automation CoE Toolkit | Microsoft D
 description: These prerequisites are required to install and use the Automation CoE Toolkit.
 suite: flow
 documentationcenter: na
-author: kathyos
-manager: tapanm
+author: grarchib
+manager: marcsc
 editor: ''
 ms.custom: guidance
 ms.devlang: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/01/2021
-ms.author: kathyos
+ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
@@ -45,7 +45,7 @@ Azure Key Vault(s) is used to store secrets for the Azure app registration menti
 >[!NOTE]
 >The Automation CoE uses the new [Azure Key Vault secrets (preview)](/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
 
-1. Register the **Microsoft.PowerPlatform** resource provider in your Azure subscription. Follow these steps to verify and configure it: [Azure resource providers and types](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-providers-and-types).
+1. Register the **Microsoft.PowerPlatform** resource provider in your Azure subscription. Follow these steps to verify and configure it: [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
 
    Azure Key Vault must have **Get** secret access policy set for the Dataverse service principal.
 

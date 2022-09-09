@@ -3,8 +3,8 @@ title: Feedback and support for the automation CoE setup guidance | Microsoft Do
 description: Feedback and support for the automation CoE setup guidance.
 suite: flow
 documentationcenter: na
-author: kathyos
-manager: tapanm
+author: grarchib
+manager: marcsc
 editor: ''
 ms.custom: guidance
 
@@ -13,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
-ms.author: kathyos
+ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
@@ -21,7 +21,7 @@ ms.reviewer: deonhe
 
 <!--todo: this draft text. Get sign-off from PM for this page. -->
 
-- [Feedback and support SAMPLE](https://docs.microsoft.com/power-platform/guidance/coe/feedback-support)
+- [Feedback and support SAMPLE](/power-platform/guidance/coe/feedback-support)
 
 - Although the underlying features and components used to build the Center of Excellence (CoE) toolKit (such as Microsoft Dataverse, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to implement a CoE in their organizations.
 

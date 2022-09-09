@@ -3,8 +3,8 @@ title: Overview of the automation CoE setup guidance | Microsoft Docs
 description: Overview of the automation CoE setup guidance.
 suite: flow
 documentationcenter: na
-author: kathyos
-manager: tapanm
+author: grarchib
+manager: marcsc
 editor: ''
 ms.custom: guidance
 ms.devlang: na
@@ -12,7 +12,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
-ms.author: kathyos
+ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
@@ -129,7 +129,7 @@ If this is the first time an approval is being used within this environment, it 
 1. Go to the DEV environment and create a solution.
 1. If the department publisher does not exist, create one for the department to use.
 1. Create a desktop flow.
-1. Create a cloud flow that will trigger the desktop flow. Name the cloud flow using the following [naming convention](#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering): [CloudFlowName]_[AutomationProjectNumber]_[3digits].
+1. Create a cloud flow that will trigger the desktop flow. Name the cloud flow using the following [naming convention]((./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering): [CloudFlowName]_[AutomationProjectNumber]_[3digits].
 
     | CloudFlowName           | Your meaningful name for your process                                                                                                                                                                                                                                                   |
     |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -139,7 +139,7 @@ If this is the first time an approval is being used within this environment, it 
     ![This screenshot displays the project number.](media/e1483d3a57fe0983632b3132a499e76d.png)
 
    >[!NOTE]
-   >The renaming process can also be done easier inside the [Automation Solution Manager](#rename-cloud-flow-to-match-convention) app.
+   >The renaming process can also be done easier inside the [Automation Solution Manager](./use-automation-coe-toolkit.md#rename-a-cloud-flow-to-match-convention) app.
 
 The cloud flow should trigger the desktop flow based on the frequency defined in the automation request.
 
