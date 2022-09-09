@@ -24,7 +24,7 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-# Understand the Data sources pane in Power Automate for SAP integration (preview)
+# TO BE REMOVED - Understand the Data sources pane in Power Automate for SAP integration (preview)
 
 Currently, connections in Power Automate are attached to specific users and cannot be shared across Flow makers. This makes it difficult for large organizations who have several Flow makers accessing the same enterprise systems. Additionally, when adding a new SAP data connection, many of the key connection parameters are missing for enterprise customers. In order to support Single Sign On and load balanced connections, some changes will need to be made. We are proposing a new page called Data Sources that allows IT admins to configure connection attributes as environment variables that can be shared across many Flow makers.
 
