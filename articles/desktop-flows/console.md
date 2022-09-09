@@ -1,12 +1,12 @@
 ---
 title: Power Automate for desktop console | Microsoft Docs
 description: Power Automate for desktop console
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
-ms.author: marleon
+ms.date: 09/09/2022
+ms.author: gtrantzas
 ms.reviewer: 
 search.app: 
   - Flow

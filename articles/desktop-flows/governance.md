@@ -4,7 +4,7 @@ description: Governance in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
-author: mariosleon
+author: georgiostrantzas
 editor: ''
 tags: ''
 
@@ -13,8 +13,8 @@ ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/02/2021
-ms.author: marleon
+ms.date: 09/09/2022
+ms.author: gtrantzas
 search.app: 
   - Flow 
 search.audienceType: 
