@@ -66,8 +66,6 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 1. Select the **Data** tab.
 1. Select **Add record**.
 
-![A screenshot that displays the add record button](media/58b832c05668804d1a137fe770b07154.png)
-
 1. Here is an example configuration rule. If you want to monitor multiple error codes, you must create a record for each error code that you want to monitor.
 
    ![A screenshot that displays the exception rule configuration](media/4ea245b078c32cc743c324685dd31fa1.png)

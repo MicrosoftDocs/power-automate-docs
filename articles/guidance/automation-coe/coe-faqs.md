@@ -63,8 +63,6 @@ You can also review [How to change environment variables inside managed solution
 
 **Details** - This error happens inside the Automation Solution Manager app (inside a satellite) when you try to view the  solution artifacts.
 
-![This screenshot displays the automation CoE ](media/3ae3267596208403f7a689b512f900b1.png)
-
 **Answer** - First check out these flows.
 
 <!--Todo: what are these?-->

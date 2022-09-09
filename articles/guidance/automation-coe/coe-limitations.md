@@ -43,16 +43,6 @@ This article contains some of the limitations in the automation CoE toolkit.
 >[!NOTE]
 >You must deactivate and then reactivate cloud flows for them to use the updated value.
 
-### The resolution in the automation solution manager is enlarged
-
-**Issue** - On certain resolution sizes the screen is automatically enlarges everything. This cuts off some of the buttons in the app.
-
-![Image that shows the enlarged resolution](media/a7e87dc9ccc58541f265f910fbf1770a.png)
-
-**Resolution** - Zoom out to fix the issue.
-
-![A screenshot that shows fixed resolution](media/14adcfc6d46d25c84d8de9c92390894c.png)
-
 ### Cannot meter non-solution aware flows
 
 **Issue** - At this time, the current solution cannot meter any flows that are not inside a solution.

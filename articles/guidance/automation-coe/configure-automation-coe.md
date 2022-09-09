@@ -28,10 +28,6 @@ Follow these steps to configure the automation CoE for your organization.
 
    You will use the automation center app to configure how the automation CoE operates.
 
-   When the app opens, your left navigation should resemble the following screenshot.
-
-      ![Screenshot of the left navigation](media/48d4db6f82e02dcd2d699b853064bcbc.png)
-
 There are a few things we need to setup/configure when you first import the toolkit.
 
 First, we are going to add an automation goal. Follow these steps to add an automation goal.
@@ -220,13 +216,8 @@ Inside the [Maker Portal](https://make.powerapps.com/)
 1. Copy the **AppID**.
 1. Select the **Web Link**.
 
-   ![A screenshot that displays steps 4 and 5](media/053912393c43395267e57003ceffbec5.png)
-
 1. Select **Properties**.
 1. Copy **Unified Interface URL**.
-
-   ![A screenshot that displays steps 6 and 7](media/4bc735c5daa4a0f703d4a0cb1d60f91c.png)
-
 <!-- todo: -->
 
 <!-- > [!div class="nextstepaction"]

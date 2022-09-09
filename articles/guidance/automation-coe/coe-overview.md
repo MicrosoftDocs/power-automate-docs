@@ -38,13 +38,22 @@ This Automation CoE toolkit consists of stages that relate to HEAT (Holistic Ent
 
 The Automation CoE toolkit supports HEAT with the following functional components.
 
-- [Automation CoE](#automation-coe)
-- [Automation projects](#automation-projects)
-- [Application Lifecycle Management (ALM)](#application-lifecycle-management-alm)
-- [Main environment / Satellite environments](#main-environment--satellite-environments)
-- [Organization structure](#organization-structure)
-- [App roles](#app-roles)
-- Security roles <!--todo: security roles section is missing-->
+- [Overview of the Automation Center of Excellence toolkit](#overview-of-the-automation-center-of-excellence-toolkit)
+  - [Functional description](#functional-description)
+    - [Automation CoE](#automation-coe)
+    - [Automation projects](#automation-projects)
+    - [Application Lifecycle Management (ALM)](#application-lifecycle-management-alm)
+    - [Main environment / Satellite environments](#main-environment--satellite-environments)
+    - [Organization structure](#organization-structure)
+    - [App roles](#app-roles)
+  - [Technical description](#technical-description)
+    - [Automation CoE technical description](#automation-coe-technical-description)
+    - [Solutions](#solutions)
+    - [Power BI dashboard](#power-bi-dashboard)
+  - [Prerequisites](#prerequisites)
+  - [Azure app registration](#azure-app-registration)
+  - [Azure Key Vault](#azure-key-vault)
+  - [License requirements](#license-requirements)
 
 ### Automation CoE
 
@@ -220,18 +229,12 @@ The Automation CoE uses the new [Use Azure Key Vault secrets (preview)](/powerap
 
 1. Select **Add Access Policy**. Azure Key Vault must have **Get** secret access policy set for the Dataverse service principal.
 
-   ![A screenshot that displays Add access policy link](media/6f33f896a226966002e2b775bb7f9aa7.png)
-
 1. In the **Secret permissions** dropdown select **Get**.
 1. Next to **Select principal**, select **None selected** and then search for **Dataverse**
 1. Select the Dataverse service principal with the **00000007-0000-0000-c000-000000000000** identity
 1. Select **Add**.
 
-   ![Access policy settings screenshot](media/71f100649c194f9d55ade011a8066ce2.png)
-
 1. Select **Save**. Once added, the access policy should resemble the following image.
-
-   ![Configured access policy screenshot](media/6dc3945bd91634badee8003305c058d1.png)
 
 ## License requirements
 

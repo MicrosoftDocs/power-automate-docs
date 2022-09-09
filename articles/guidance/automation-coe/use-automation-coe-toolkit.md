@@ -43,7 +43,7 @@ The purpose of this app is to request and approve new automation projects. The a
 
 #### Project Dashboard (Home Screen)
 
-Here's a listing of the experience you'll receive when you launch the app, based on your role.
+![This screenshot displays the steps to map a project to a an environment.](media/AutomationProjectApp1.png)
 
 | **Role**            | **What you see**                                          |
 |---------------------|-----------------------------------------------------------|
@@ -51,16 +51,7 @@ Here's a listing of the experience you'll receive when you launch the app, based
 | Project Contributor | Sees only automation project requests that you created.|
 | Project Viewer      | Sees all automation projects in view mode.       |
 
-Some features include:
-
-- Command bar - Use the command bar to filter automation projects by status. Select **"+"** to open the **New Project** screen.
-- Details side bar - This side bar gives an overview of all the automation projects you can access, based on your role.
-- Automation project details card - Provides an overview of the requested project details.
-
-   ![This screenshot displays the automation project screen sample.](media/c6a01458255512efdbc923e6ba999b65.png)
-   <!--todo: this screenshot should not have steps. it's just showing the options.-->
-
-#### New Project screen
+#### Main screen
 
 On this screen, you can perform the following tasks.
 
@@ -71,9 +62,7 @@ On this screen, you can perform the following tasks.
 1. Project information section - Fill out the information as it relates to the automation project.
 1. Business owner field - This is the approver for the request. If no business owner is selected, the fallback is used.
 1. ROI information section - Provide this information as it relates to ROI for the automation project.
-1. Command bar - Use for new, save, edit, and submit tasks on the form. This submit button is available after the automation project has is saved.
-
-   ![This screenshot displays a view of the automation project screen.](media/389a1560bd0d71eb34101247a678f2be.png)
+1. Command bar - Use for new, save, edit, and submit tasks on the form. This submit button is available after the automation project has been saved.
 
 Some fields are required to save the form. This is because when you submit a request, a flow (**Calculate ROI saving potential for automation project**) runs. This flow calculates the complexity score and then populates this information when you select the save button.
 
@@ -130,18 +119,15 @@ After you create a solution in an environment, it shows up in the list. The **+*
 
 Follow these steps to rename a cloud flow to match the [naming convention](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) from the Automation Solution Manager app home screen.
 
-1. Select **...**  for the solution that interests you.
-1. Select the cloud flow that you want to rename.
-1. Select the pencil icon that appears.
-   The pencil icon only appears for unmanaged flows only.
+1.	Click inside one of the solutions by clicking the solution name.
+1.	Select the cloud flow that you want to rename.
+1.	Click rename flow (only available to unmanaged solutions)
+1.	The naming convention should apply automatically, Click the save button.
 
-   ![This screenshot displays the steps in the automation solution manager](media/98135b82b001c28bc777f7c1269619fb.png)
 
    The [naming convention](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) should apply automatically.
 
-1. Select the **Save** icon.
 
-   ![This screenshot displays the save icon.](media/2d78588c3463c5fc980b6d9f3d6a722d.png)
 
 >[!NOTE]
 The last 3 digits will default to 001. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution if you wish to distinguish them. Read more about the [naming convention](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering).
@@ -149,11 +135,12 @@ The last 3 digits will default to 001. If you have multiple solutions for a sing
 #### Meter solution artifacts
 
 <!--todo: I don't understand this. please clarify.-->
-This is where we meter the artifacts for the Flow Sessions to show up in our main environment. We can get to the solution screen from the Home screen by clicking the 3 dots. **". . ."**
+This is where we meter the artifacts for the Flow Sessions to show up in our main environment.
 
-1. Under the **Is metered** column, select the **"+"** icon to add to it metering. If this option is grayed out, then the cloud flow does not follow the [naming schema](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering). [Rename the cloud flow](#rename-a-cloud-flow-to-match-convention), if needed.
+1.	We can get to the solution screen from the home screen by selecting the name of the mapped solution.
 
-   ![This screenshot displays the plus icon in the Is metered column.](media/7f4b832d4624313a30f6c95f37220c87.png)
+1. Once selected the "+" icon switches to a meter. And now data will be flowing to main (flow sessions). If this option is grayed out, then the cloud flow does not follow the [naming schema](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering). [Rename the cloud flow](#rename-a-cloud-flow-to-match-convention), if needed.
+
 
 1. After you select the **+** icon, the meter icon appears.
 
@@ -165,10 +152,8 @@ This is where we meter the artifacts for the Flow Sessions to show up in our mai
 
 There is an option to bypass the naming convention.
 
-To bypass the naming convention, click on the ‘i’ icon and acknowledge the warning.
+1.	To bypass the naming convention, select the “Disable flow naming convention” checkbox. Acknowledge the warning.
 
-![This screenshot displays the icon to use to bypass the naming convention.](media/c54e6b83595a28a9c739a7cefd76c1cd.png)
+2.	Now you can meter the flow.
 
 Now you can meter the flow.
-
-![This screenshot displays that a flow can be metered after the naming convention is disabled.](media/e597c1f3e56077de8037e890db688c02.png)

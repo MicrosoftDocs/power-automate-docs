@@ -49,8 +49,6 @@ Refer to the following table to see what roles and permissions are needed for ea
     - **Automation Console** app
     - **Automation Project** app
 
-   ![This screenshot displays the automation project app](media/7427497312e410bc17eb10b73e8d3aea.png)
-
 1. Create a new automation project request by selecting the + or selecting the **New Project** tab.
 1. Fill in the details as the following table indicates.
 
@@ -81,9 +79,6 @@ Refer to the following table to see what roles and permissions are needed for ea
 | Development Costs      | 1200                                          |
 
 1. Select **Save**.
-
-   ![This screenshot displays the automation project.](media/539b7a1b70845f206b3c9e8075b7319c.png)
-
    After the save operation completes, the dashboard displays, a flow is runs and calculates the ROI potential and complexity score, based on the information provided.
 
 1. Select the **Refresh** button within the app until the ROI and score show up. These should show up in a few seconds.
@@ -135,8 +130,6 @@ If this is the first time an approval is being used within this environment, it 
     |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | AutomationProjectNumber | Displayed in the automation project app                                                                                                                                                                                                                                                 |
     | 3digits                 | The last 3 digits can be used for advanced use cases and are typically 001 if you only have one solution per automation project. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution to distinguish them. |
-
-    ![This screenshot displays the project number.](media/e1483d3a57fe0983632b3132a499e76d.png)
 
    >[!NOTE]
    >The renaming process can also be done easier inside the [Automation Solution Manager](./use-automation-coe-toolkit.md#rename-a-cloud-flow-to-match-convention) app.
