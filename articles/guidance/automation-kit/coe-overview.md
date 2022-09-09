@@ -31,6 +31,8 @@ These adoption best practices from Microsoft employees, partners, and customers 
 
 ## Functional description
 
+![Automation Kit Logo](media/automation-kit.svg)
+
 The automation kit is a concept and set of tools to accelerate the use and support of Power Automate for desktop for automation projects, by calculating estimated money saved and ROI for each automation project.
 
 <!--todo: we should not link to blogs. can this content be looped into these docs?-->
