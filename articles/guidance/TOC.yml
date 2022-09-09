@@ -103,9 +103,33 @@
   - name: Create an automation center of excellence
     items:
     - name: Overview
-      href: ./automation-kit/coe-overview.md
+      items:
+      - name: Introduction
+        href: ./automation-kit/overview/introduction.md
+      - name: Application Lifecycle Management
+        href: ./automation-kit/overview/application-lifecycle-management.md
+      - name: Environments
+        href: ./automation-kit/overview/environments.md
+      - name: Technical description
+        href: ./automation-kit/overview/technical-description.md
+      - name: Release notes
+        href: ./automation-kit/overview/release-notes.md
     - name: Set up the automation kit
-      href: ./automation-kit/setup-automation-kit.md
+      items:
+      - name: Overview
+        href: ./automation-kit/setup/overview.md
+      - name: Main
+        href: ./automation-kit/setup/main.md
+      - name: Satellite
+        href: ./automation-kit/setup/satellite.md
+      - name: Environment variables
+        href: ./automation-kit/setup/environment-variables.md
+      - name: Security
+        href: ./automation-kit/setup/security.md
+      - name: Data
+        href: ./automation-kit/setup/data.md
+      - name: Optional
+        href: ./automation-kit/setup/optional.md
     - name: Configure the automation kit
       href: ./automation-kit/configure-automation-kit.md
     - name: Exception rules framework
@@ -115,12 +139,10 @@
     - name: Use the automation kit
       href: ./automation-kit/use-automation-kit.md
     - name: Testing an end-to-end scenario
-      href: ./automation-kit/test-coe-end-to-end.md
+      href: ./automation-kit/test-end-to-end.md
     - name: Limitations
-      href: ./automation-kit/coe-limitations.md
+      href: ./automation-kit/limitations.md
     - name: FAQs
-      href: ./automation-kit/coe-faqs.md
-    # - name: Release notes
-    #   href: ./automation-kit/coe-rel-notes.md
+      href: ./automation-kit/faqs.md
     - name: Feedback and support
-      href: ./automation-kit/coe-feedback-support.md
+      href: ./automation-kit/feedback-support.md
