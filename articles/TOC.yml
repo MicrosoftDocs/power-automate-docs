@@ -711,14 +711,8 @@
       href: ./sap-integration/solutions.md
     - name: Set up and prepare
       href: ./sap-integration/set-up-prepare.md
-    - name: Data sources (To be removed)
-      href: ./sap-integration/data-sources-pane.md
-    - name: Action screens
+    - name: Configure actions and verify integration
       href: ./sap-integration/action-screen.md
-    - name: Test and verify SAP integration (To be removed)
-      href: ./sap-integration/test-setup.md
-    - name: "Tutorial: SAP integration with Power Platform"
-      href: ./sap-integration/tutorial.md
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
