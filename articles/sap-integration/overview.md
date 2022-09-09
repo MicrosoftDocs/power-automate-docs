@@ -26,48 +26,33 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-Microsoft Power Platform will be introducing enhanced integration capabilities into complex systems of record, like SAP and Oracle E-Business Suite. The enhanced integrations into Power Apps, Power Automate, and Azure Logic Apps will empower organizations to interact with complex systems of record more easily and build better end-to-end business solutions.
+SAP ERP is enterprise resource planning software developed by SAP SE. SAP ERP is a centralized system of record that enables many departments within an organization to share and collaborate on data.
 
-During this private preview, we will assign a Power Automate contact to work with you to set up a new prebuilt SAP solution for either purchase orders or sales orders and connect to your SAP development environment to validate functionality. Your feedback will enable our team to gain more insights to make further improvements. Specifically, the goal is to set up and test the following:
+ SAP Integration offers enhanced connectivity capabilities with SAP ERP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The prebuilt solution offers a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
 
--   Power Apps template for either purchase orders or sales orders
 
--   Enhanced Power Platform SAP connector
+## What's new?
 
--   Power Automate SAP RFC Read Table query action
+SAP Integration offers prebuilt solutions that work with SAP ERP's sales, purchasing, finance, and production workflows. The prebuilt solutions are designed to enable organizations to efficiently get connected to and communicate with their SAP system. The public preview prebuilt solutions contain the following:
 
--   Azure Logic Apps functions
+- Power Apps templates
+- Power Automate flows
+- New technical features
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+Learn more in the [Prebuilt solutions] (<https://www>).
 
-## Resources
+## What value will SAP Integration add?
 
-Secure the following resources to assist with the configuration of the different environments: 
+SAP integration with the Power Platform will help your organization achieve the following:
 
--   Information Technology (IT) System admin 
+- Accelerated automation
+- Enhanced employee productivity and collaboration
+- Intelligent insights
 
--   SAP Basis admin 
+## Get started
 
--   Flow maker (a resource with Power Platform familiarity) 
+Teams are highly encouraged to complete the [public preview signup form](<https://aka.ms/PowerAutomate-SAPIntegration-Signup>). Completing the form may give you access to the team that works on the SAP Integration.
 
-## Provisions
-
-Our team has set up the following to make sharing and collaboration efficient:
-
- 
-
--   Microsoft Teams setup – Use this space to share information and communicate with your Power Automate contact.  
-
--   Provide the names and email addresses of the resources who should be added to the Teams setup. 
-
--   Private preview files 
-
-    -   Prebuilt SAP Solutions reference document 
-
-    -   Private preview version of on-premises data gateway (OPDG) 
-
-    -   A sales order or purchase order template—let your power automate contact know which template you prefer. 
-
-    -   More, as needed. 
+Before accessing and downloading the SAP Integration solution, it is imperative that the following steps be completed:
+1. Administrators [set up and prepare](<https://www>)the required infrastructure.
+2. A maker sets up Power Apps with an appropriate environment and the Microsoft Dataverse and SAP ERP connectors. 
