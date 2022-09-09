@@ -27,7 +27,7 @@ This article contains some of the limitations in the automation kit.
 
 **Issue** - You cannot update the values for environment variables from within the solution because the solution is **Managed**.
 
-**Resoluton:** - Use the following steps to update environment variables.
+**Resolution:** - Use the following steps to update environment variables.
 
 1. Go to [Power Automate](https://flow.microsoft.com/).
 1. On the left pane, select **Solutions**.

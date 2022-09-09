@@ -21,7 +21,7 @@ ms.reviewer: deonhe
 
 ## Feature details
 
-The recently launched preview for DLP support for Power Automate for desktop actions is a critical and highly requested governance feature addition, as most organizations expect the same governance breadth and depth for RPA as we have for the DPA-based flows. <!--todo: dpa? and, need a link to the preview for DLP support for Power Automate for desktop actions-->
+The recently launched preview for [DLP support for Power Automate for desktop actions](../../desktop-flows/data-loss-prevention.md) is a critical and highly requested governance feature addition, as most organizations expect the same governance breadth and depth for RPA as we have for the Desktop Power Automate based flows.
 
 This new DLP support allows even the most risk-averse organizations to enable Power Automate for desktop.  Power Automate for desktop enables citizen automation developers to achieve unprecedented productivity gains and save thousands of hours by automating highly repetitive and error-prone tasks, leading to higher employee and customer satisfaction.
 

@@ -25,7 +25,7 @@ This article details how to use each component in the automation kit. Each secti
 
 ### Functionality
 
-The Automation Console app is used to launch Automation CoE-specific apps. You must update the information for the apps manually. [The setup process goes over configuring the Automation Console](./configure-automation-coe.md#console-configuration)
+The Automation Console app is used to launch Automation kit apps. You must update the information for the apps manually. [The setup process goes over configuring the Automation Console](./configure-automation-coe.md#console-configuration)
 
 ### Features
 
@@ -117,7 +117,7 @@ After you create a solution in an environment, it shows up in the list. The **+*
 
 #### Rename a cloud flow to match convention
 
-Follow these steps to rename a cloud flow to match the [naming convention](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) from the Automation Solution Manager app home screen.
+Follow these steps to rename a cloud flow to match the [naming convention](./test-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) from the Automation Solution Manager app home screen.
 
 1.	Click inside one of the solutions by clicking the solution name.
 1.	Select the cloud flow that you want to rename.
@@ -125,12 +125,12 @@ Follow these steps to rename a cloud flow to match the [naming convention](./tes
 1.	The naming convention should apply automatically, Click the save button.
 
 
-   The [naming convention](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) should apply automatically.
+   The [naming convention](./test-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering) should apply automatically.
 
 
 
 >[!NOTE]
-The last 3 digits will default to 001. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution if you wish to distinguish them. Read more about the [naming convention](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering).
+The last 3 digits will default to 001. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution if you wish to distinguish them. Read more about the [naming convention](./test-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering).
 
 #### Meter solution artifacts
 
@@ -139,7 +139,7 @@ This is where we meter the artifacts for the Flow Sessions to show up in our mai
 
 1.	We can get to the solution screen from the home screen by selecting the name of the mapped solution.
 
-1. Once selected the "+" icon switches to a meter. And now data will be flowing to main (flow sessions). If this option is grayed out, then the cloud flow does not follow the [naming schema](./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering). [Rename the cloud flow](#rename-a-cloud-flow-to-match-convention), if needed.
+1. Once selected the "+" icon switches to a meter. And now data will be flowing to main (flow sessions). If this option is grayed out, then the cloud flow does not follow the [naming schema](./test-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering). [Rename the cloud flow](#rename-a-cloud-flow-to-match-convention), if needed.
 
 
 1. After you select the **+** icon, the meter icon appears.

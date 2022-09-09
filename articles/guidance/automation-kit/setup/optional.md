@@ -34,7 +34,7 @@ Follow these steps in the environment in that contains the solution to disable s
 1. Select **Save**.
 
 >[!NOTE]
->You must stop and then start all flows in an environment after you make changes to environment variables for the flows to get the new environment variable values. [See Limitations](../coe-limitations.md).
+>You must stop and then start all flows in an environment after you make changes to environment variables for the flows to get the new environment variable values. [See Limitations](../limitations.md).
 
 >[!IMPORTANT]
 >The script field isn't synced back to main due to security. You can extend the Automation CoE to configure your environment to sync data back to main, if needed.
