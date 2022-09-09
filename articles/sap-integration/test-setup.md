@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Test and verify SAP integration with Power Platform (preview)
+# TO BE REMOVED - Test and verify SAP integration with Power Platform (preview)
 
 [This article is pre-release documentation and is subject to change.]
 

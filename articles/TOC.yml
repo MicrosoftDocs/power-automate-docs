@@ -715,7 +715,7 @@
       href: ./sap-integration/data-sources-pane.md
     - name: Action screens
       href: ./sap-integration/action-screen.md
-    - name: Test and verify SAP integration
+    - name: Test and verify SAP integration (To be removed)
       href: ./sap-integration/test-setup.md
     - name: "Tutorial: SAP integration with Power Platform"
       href: ./sap-integration/tutorial.md
