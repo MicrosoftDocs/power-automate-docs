@@ -35,8 +35,7 @@ These adoption best practices from Microsoft employees, partners, and customers 
 
 The automation kit is a concept and set of tools to accelerate the use and support of Power Automate for desktop for automation projects, by calculating estimated money saved and ROI for each automation project.
 
-<!--todo: we should not link to blogs. can this content be looped into these docs?-->
-This automation kit consists of stages that relate to HEAT (Holistic Enterprise Automation Techniques). The following blog post describes [HEAT in more detail](https://flow.microsoft.com/blog/heat-holistic-enterprise-automation-techniques-for-rpa-and-more/).
+This automation kit consists of stages that relate to [HEAT (Holistic Enterprise Automation Techniques)](../heat/overview.md).
 
 The automation kit supports HEAT with the following functional components.
 
