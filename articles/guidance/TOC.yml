@@ -103,24 +103,24 @@
   - name: Create an automation center of excellence
     items:
     - name: Overview
-      href: ./automation-coe/coe-overview.md
-    - name: Set up the automation (CoE) toolkit
-      href: ./automation-coe/setup-automation-coe.md
-    - name: Configure the automation CoE toolkit
-      href: ./automation-coe/configure-automation-coe.md
+      href: ./automation-kit/coe-overview.md
+    - name: Set up the automation kit
+      href: ./automation-kit/setup-automation-kit.md
+    - name: Configure the automation kit
+      href: ./automation-kit/configure-automation-kit.md
     - name: Exception rules framework
-      href: ./automation-coe/exception-rules-framework.md
+      href: ./automation-kit/exception-rules-framework.md
     - name: DLP impact analysis for desktop flows
-      href: ./automation-coe/dlp-impact-analysis.md
-    - name: Use the automation CoE toolkit
-      href: ./automation-coe/use-automation-coe-toolkit.md
+      href: ./automation-kit/dlp-impact-analysis.md
+    - name: Use the automation kit
+      href: ./automation-kit/use-automation-kit.md
     - name: Testing an end-to-end scenario
-      href: ./automation-coe/test-coe-end-to-end.md
+      href: ./automation-kit/test-coe-end-to-end.md
     - name: Limitations
-      href: ./automation-coe/coe-limitations.md
+      href: ./automation-kit/coe-limitations.md
     - name: FAQs
-      href: ./automation-coe/coe-faqs.md
+      href: ./automation-kit/coe-faqs.md
     # - name: Release notes
-    #   href: ./automation-coe/coe-rel-notes.md
+    #   href: ./automation-kit/coe-rel-notes.md
     - name: Feedback and support
-      href: ./automation-coe/coe-feedback-support.md
+      href: ./automation-kit/coe-feedback-support.md
