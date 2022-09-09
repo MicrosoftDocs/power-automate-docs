@@ -73,8 +73,8 @@ If the flow is a **manual** flow, the flow runs under the license of the user wh
 >[!div class="mx-imgBorder"]
 >![A screenshot that shows the license plan being used.](media/change-cloud-flow-owner/bc757289d2a3f7e6da27acf3d527cc90.png "Plan section showing the license plan being used")
 
->[!NOTE]
->This change is limited to solution-aware flows. To change the owner of a non-solution-aware flow, the new owner must export and then import the flow.
+### What about changing the owner on a non-solution cloud flow?
+The capability above is limited to solution-aware flows. To change the ownership of a non-solution-aware cloud flow, you must create a new flow via export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
 
 ### More information
 
