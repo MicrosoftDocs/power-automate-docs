@@ -256,47 +256,36 @@ Follow these steps to get the format.
 
    Use this information for the environment variables.
 
-    | **Environment variable name**         | **Description**                                                                                                                                                                                                                                                                                                                                                                                       |   |
-    |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-    | AKV Client Id Secret                  | Azure Key Vault secret for client Id (application Id) from app registration: /subscriptions/{Subscription ID}/resourceGroups/{Resource Group Name}/providers/Microsoft.KeyVault/vaults/{Key Vault Name}/secrets/{Secret Name}                                                                                                                                                                         |   |
-    | AKV Client Secret Secret              | Azure Key Vault secret for secret from app Registration                                                                                                                                                                                                                                                                                                                                               |   |
-    | AKV Tenant Id Secret                  | Azure Key Vault secret for Tenant Id from app Registration                                                                                                                                                                                                                                                                                                                                            |   |
-    | Automation CoE Alert Email Recipient  | The email address where operational reports and alerts should be sent to, for this environment. **(**[See Exception Framework](#flow-exception-rules-framework)**)**                                                                                                                                                                                                                                  |   |
-    | Automation Project app Id             | Enter the **Automation Project** app Id of the Power Apps that is deployed with the main solution (main environment)                                                                                                                                                                                                                                                                                  |   |
-    | Desktop Flows Base URL                | Open a new tab > Navigate to [Power Automate](https://flow.microsoft.com/) . Select the environment where you’re installing the solution.                                                                                                                                                                                                             |   |
-    | Environment Id                        | Use **Session details** to find this value from current environment that you are importing into (satellite)                                                                                                                                                                                                                                                                                           |   |
-    | Environment Name                      | Display name of the current environment (satellite)                                                                                                                                                                                                                                                                                                                                                   |   |
-    | Environment Region                    | Region of the satellite. Can be found in the Power Platform admin center                                                                                                                                                                                                                                                                                                                              |   |
-    | Environment Unique Name               | Use **Session details** to find this value from the current environment that you are importing into (**satellite**) Also must add **.crm** to the end of the string. Example: unq08ed139e532b4edc8f38851fd1bb3279.crm. Please note that the extension 'crm', 'crm[x]' etc. is region dependent.                                                        |   |
-    |                                       | [See Datacenter regions](/power-platform/admin/new-datacenter-regions)                                                                                                                                                                                                                                                                                                |   |
-    | \*Environment Unique Name of CoE Main | Use **Session details** to find this value **from Main**. Also must add **.crm** to the end of the string. For example: unq08ed139e532b4edc8f38851fd1bb3279.crm. Please note that the extension 'crm', 'crm[x]' etc. is region dependent.                                                                                                                  |   |
-    |                                       | [See Datacenter regions](/power-platform/admin/new-datacenter-regions)                                                                                                                                                                                                                                                                                                |   |
-    | Environment URL                       | Open a new tab > navigate to [Power Platform admin center](https://microsoft.sharepoint.com/teams/AutomationCOE/Shared%20Documents/General/Releases/PAD%20DLP%20Impact%20Analysis/Docs/aka.ms/ppac).                                                                                                                                                  |   |
-    | Flow Session Trace Record Owner Id    | This is the UserID (guid) from the Users table inside the satellite environment for the admin account. Select Tables under Data on the left > User > Data > Change view to **"All columns"** Find the **Auto CoE Admin** account and copy the value under **User**. Flow User Id (guid):                                                                                                               |   |
-
-   ![A screenshot that displays the details of the automation project](media/0423dee0f1c9b8a1fd5954076f55cac1.png)
-
-   ![A screenshot that displays the app Id guid](media/6327d7f0c907c05e8e5aa1231558de16.png)
-
+|  | **Environment variable name**         | **Description**                                                                                                                                                                                                                                                                                 |  |
+|--|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
+|  | AKV Client Id Secret                  | Azure Key Vault secret for client Id (application Id) from app registration: /subscriptions/{Subscription ID}/resourceGroups/{Resource Group Name}/providers/Microsoft.KeyVault/vaults/{Key Vault Name}/secrets/{Secret Name}                                                                   |  |
+|  | AKV Client Secret Secret              | Azure Key Vault secret for secret from app Registration                                                                                                                                                                                                                                         |  |
+|  | AKV Tenant Id Secret                  | Azure Key Vault secret for Tenant Id from app Registration                                                                                                                                                                                                                                      |  |
+|  | Automation CoE Alert Email Recipient  | The email address where operational reports and alerts should be sent to, for this environment. **(**[See Exception Framework](#flow-exception-rules-framework)**)**                                                                                                                            |  |
+|  | Automation Project app Id             | Enter the **Automation Project** app Id of the Power Apps that is deployed with the main solution (main environment)                                                                                                                                                                            |  |
+|  | Desktop Flows Base URL                | Open a new tab > Navigate to [Power Automate](https://flow.microsoft.com/) . Select the environment where you’re installing the solution.                                                                                                                                                       |  |
+|  | Environment Id                        | Use **Session details** to find this value from current environment that you are importing into (satellite)                                                                                                                                                                                     |  |
+|  | Environment Name                      | Display name of the current environment (satellite)                                                                                                                                                                                                                                             |  |
+|  | Environment Region                    | Region of the satellite. Can be found in the Power Platform admin center                                                                                                                                                                                                                        |  |
+|  | Environment Unique Name               | Use **Session details** to find this value from the current environment that you are importing into (**satellite**) Also must add **.crm** to the end of the string. Example: unq08ed139e532b4edc8f38851fd1bb3279.crm. Please note that the extension 'crm', 'crm[x]' etc. is region dependent. |  |
+|  |                                       | [See Datacenter regions](/power-platform/admin/new-datacenter-regions)                                                                                                                                                                                                                          |  |
+|  | \*Environment Unique Name of CoE Main | Use **Session details** to find this value **from Main**. Also must add **.crm** to the end of the string. For example: unq08ed139e532b4edc8f38851fd1bb3279.crm. Please note that the extension 'crm', 'crm[x]' etc. is region dependent.                                                       |  |
+|  |                                       | [See Datacenter regions](/power-platform/admin/new-datacenter-regions)                                                                                                                                                                                                                          |  |
+|  | Environment URL                       | Open a new tab > navigate to [Power Platform admin center](https://microsoft.sharepoint.com/teams/AutomationCOE/Shared%20Documents/General/Releases/PAD%20DLP%20Impact%20Analysis/Docs/aka.ms/ppac).                                                                                            |  |
+|  | Flow Session Trace Record Owner Id    | This is the UserID (guid) from the Users table inside the satellite environment for the admin account. Select Tables under Data on the left > User > Data > Change view to **"All columns"** Find the **Auto CoE Admin** account and copy the value under **User**. Flow User Id (guid):        |  |
+<!--below is part of the Desktop Flows Base URL steps-->
 1. Select **My flows** tab.
 1. Copy the web address up to …environments/
 1. You can also get the **environment id** from this URL.
-
-   ![A screenshot that displays the environment Id in the URL](media/ffc481c5614b1cad655d5a77c700d8b1.png)
 
 1. Select your environment.
 1. Right click the environment URL.
 1. Select **Copy link**.
 
-   ![A screenshot that displays the copy link menu option](media/bf599ca22a1005fec4f9e54d670f9194.png)
-
-   <!-- ![A screenshot that displays the](media/19641b8ba68f89eed7250de48cb08092.png) -->
+<!--End-->
 
 1. After you've configured all the environment variables, select **Import**.
 1. After the importation completes, verify and turn on all the flows.
-
-   ![A screenshot that displays the the status of all flows](media/1e8049c3421d8842ea68ac4c0e523d2c.png)
-
 1. Share all apps with the appropriate users.
 
 ### Assign Security Roles
@@ -318,8 +307,6 @@ Once the import is complete, assign the following roles, based on responsibility
 1. Select your main environment.
 1. Select **See all** under **Security roles** on the **Access** card.
 
-   ![A screenshot that displays the access card with security roles highlighted.](media/3a5f46ffdae69744e5f820965b184d99.png)
-
 1. Select the Security role > **Search for and assign roles defined above.** <!--todo: ?-->
 
 ### Assign column security profiles
@@ -337,47 +324,25 @@ The script field is synced and stored inside the Desktop Flow Definition table b
 
    The user should show in the **Selected records** list.
 
-   ![A screenshot that displays the user](media/d0e2086c1fa809c62a5acc752bfe0063.png)
+   ![A screenshot that displays looking up a user record](media/d0e2086c1fa809c62a5acc752bfe0063.png)
 
 1. Select **Add**.
 
-### Import the desktop flow actions csv
-
+### Import the desktop flow actions csv (satellite)
+<!--This section is the exact same as other heading-->
 Follow these steps to import all the desktop flow actions from the included csv file into the **Desktop Flow Action** table.
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
-1. Go to the environment into which you imported the solution.
-1. Select the **Solutions** tab.
-1. Find, and then select the **Automation CoE** satellite solution.
-1. Select the **Desktop Flow Action** table.
-1. Select the **Data** tab.
-
-   ![A screenshot that displays the desktop flow action data icon.](media/1b31a4a8b05e560b8e61541f44c30afa.png)
-
-1. Select the **Data dropdown** near the top.
-1. Under **Get data**, select **Get data from Excel**.
-
-   ![A screenshot that displays the get data from excel link.](media/c31e7c4832c9188716a0714697174120.png)
-
-1. Once the popup opens, click the **Upload** button, and then upload the included Excel file (autocoe_desktopflowactions.csv).
-
-   ![A screenshot that displays the upload button.](media/e32a1f361c37064c9e3c26f87f4c4c27.png)
-
-1. Wait for the **Mapping status** to show as successful.
+1. Open a browser, navigate to [Power Automate](https://flow.microsoft.com) and sign-in with your account.
+1. Navigate to your environment where the solution is installed.
+1. Select Solutions tab.
+1. Find and select Automation CoE satellite solution.
+1. Select the table, Desktop Flow Action.
+1. Click the Import dropdown near the top.
+1. Select Import data from Excel.
+1. After the popup opens, select the **Upload** button, and then upload the included Excel file (autocoe_desktopflowactions.csv).
+1. Wait for the **mapping status** to show as successful.
 1. Select **Import**.
-
-   ![A screenshot that displays the mapping successful.](media/da42249cc5ac8097984b9b2e479975c8.png)
-
-1. Once the import is complete, verify data has been imported.
-
-   ![A screenshot that displays the imported data](media/ee0e627cb50134bb9b12eb8bb95233da.png)
-
-### Verify the desktop flow actions
-
-1. Under Tables, select the Desktop Flow Action table.
-2. Under the Data tab verify there is data.
-
-   ![A screenshot that displays the data is present](media/cc6f5b88ab8fdb6ea2b28c036fca4d46.png)
+1. After the import completes, verify that the data was imported.
 
 ### Disable syncing of desktop flows script (Optional)
 
@@ -391,8 +356,6 @@ Follow these steps in the environment in that contains the solution to disable s
 1. Select the **Solutions** tab.
 1. Select the Default Solution and click Environment Variables. <!--todo: am not seeing this on my login-->
 1. Find, and then select **Store Extracted Script**.
-
-   ![A screenshot that displays the store extracted script link](media/91064410e1f9c4164ac3657402f2c8ce.png)
 
 1. Under **Current value**, click **New value**.
 1. Change to **No**.
@@ -548,18 +511,14 @@ calculation Formula
 Use the Automation CoE admin account, navigate to the main environment and open the app.
 
 The **Automation Center** is where we configure how several aspects of how the Automation CoE functions.
-
-When the app opens, your left navigation should resemble the following screenshot.
-
-   ![A screenshot that displays the left navigation for the app.](media/48d4db6f82e02dcd2d699b853064bcbc.png)
-
+  
 There are a few things you need to configure when you first import the toolkit.
 
 First, add an automation goal. Follow these steps to add an automation goal.
 
 1. Inside the Automation Center, select the **Corporate Goals** tab.
-1. Select **New**.
-1. Fill in the required fields. The following table presents some sample data for these fields.
+2. Select **New**.
+3. Fill in the required fields. The following table presents some sample data for these fields.
 
     | **Field**                | **Value**                       |
     |--------------------------|---------------------------------|
@@ -569,7 +528,7 @@ First, add an automation goal. Follow these steps to add an automation goal.
     | Target Efficiency Gain % | 20                              |
     | Target Total Savings     | 50000                           |
 
-1. Select **Save & Close**.
+4. Select **Save & Close**.
 
 Next, we will make further configurations. This configuration is split into the following three sections.
 
@@ -739,13 +698,8 @@ Sign into the [maker portal](https://make.powerapps.com/), and then perform the 
 1. Copy the **AppID**.
 1. Select the **Web Link**.
 
-   ![A screenshot that displays the web link](media/053912393c43395267e57003ceffbec5.png)
-
 1. Select Properties.
 1. Copy Unified Interface URL (Reference the screenshots below for the steps).
-
-   ![A screenshot that displays the unified interface url. ](media/4bc735c5daa4a0f703d4a0cb1d60f91c.png)
-
 
 <!-- todo: -->
 
