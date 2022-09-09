@@ -40,8 +40,9 @@ This automation kit consists of stages that relate to [HEAT (Holistic Enterprise
 The automation kit supports HEAT with the following functional components.
 
 - [Overview of the Automation Center of Excellence kit](#overview-of-the-automation-center-of-excellence-kit)
+  - [Introduction](#introduction)
   - [Functional description](#functional-description)
-    - [Automation Kit](#automation-kit)
+    - [Automation CoE](#automation-coe)
     - [Automation projects](#automation-projects)
     - [Application Lifecycle Management (ALM)](#application-lifecycle-management-alm)
     - [Main environment / Satellite environments](#main-environment--satellite-environments)
@@ -51,10 +52,6 @@ The automation kit supports HEAT with the following functional components.
     - [Automation CoE technical description](#automation-coe-technical-description)
     - [Solutions](#solutions)
     - [Power BI dashboard](#power-bi-dashboard)
-  - [Prerequisites](#prerequisites)
-  - [Azure app registration](#azure-app-registration)
-  - [Azure Key Vault](#azure-key-vault)
-  - [License requirements](#license-requirements)
 
 ### Automation CoE
 
@@ -195,58 +192,6 @@ The main dashboard connects to the main environment connecting to Dataverse tabl
 - Bug fixes, performance upgrades
 
 - Environment’s configuration setup not needed anymore, replaced by Sync flow. -->
-
-## Prerequisites
-<!--Todo: are all these items part of preqs like app registration and key valut?-->
-These are the prerequisites you need to install and use the automation kit
-
-- An administrative account, which is called "**Automation CoE Admin**" or similar.
-
-The Automation CoE requires access to your tenant's Power Platform environments, and some Azure resources as well. (Key Vault, App registration).
-
-Therefore, the account you’ve set up “**Automation CoE Admin**” needs the following roles.
-
-- Microsoft Power Platform service admin, or Dynamics 365 service admin.
-- The admin account must be mail-enabled.
-- Azure contributor role (For Key Vault and app registration).
-
-## Azure app registration
-
-An Azure app registration will be used for an application user for our Dataverse Web API in each of the satellite environments.
-
-## Azure Key Vault
-
- Based on your requirements, Azure Key Vault(s) is used to store secrets for the Azure app registration(s) mentioned previously. There might be one Key Vault per satellite environment.
-
-Here are example key vault names.
-
-- KV-Contoso-Dev
-- KV-Contoso-Test
-- KV-Contoso-Prod
-
-The Automation CoE uses the new [Use Azure Key Vault secrets (preview)](/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
-
-1. Register the **Microsoft.PowerPlatform** resource provider in your Azure subscription. Follow these steps to verify and configure [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
-
-1. Select **Add Access Policy**. Azure Key Vault must have **Get** secret access policy set for the Dataverse service principal.
-
-1. In the **Secret permissions** dropdown select **Get**.
-1. Next to **Select principal**, select **None selected** and then search for **Dataverse**
-1. Select the Dataverse service principal with the **00000007-0000-0000-c000-000000000000** identity
-1. Select **Add**.
-
-1. Select **Save**. Once added, the access policy should resemble the following image.
-
-## License requirements
-
-Here is a list of the licenses that give you rights you need.
-
-- Microsoft 365 license (E3, E5).
-- Power Automate per user with attended RPA license (non-trial).
-- Power Apps per user license (non-trial).
-- Power BI Pro license.
-
-<!-- todo: -->
 
 <!-- > [!div class="nextstepaction"]
 > [Next step: Core components for Power Automate RPA SAP GUI automation](core-components.md) -->
