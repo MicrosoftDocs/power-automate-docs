@@ -1,6 +1,6 @@
 ---
-title: How to use the automation CoE toolkit | Microsoft Docs
-description: How to use the automation CoE toolkit.
+title: How to use the automation kit | Microsoft Docs
+description: How to use the automation kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,9 +17,9 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# How to use the automation CoE toolkit
+# How to use the automation kit
 
-This article details how to use each component in the Automation CoE Toolkit. Each section will contains the functionality and the features.
+This article details how to use each component in the automation kit. Each section will contains the functionality and the features.
 
 ## Automation Console app
 
@@ -76,7 +76,7 @@ CoE admins use the Automation Center app to maintain the configuration and map a
 
 #### Create / maintain configuration data
 
-Learn more about how to create and maintain the configuration data in [setting up the Automation CoE Toolkit](./configure-automation-coe.md).
+Learn more about how to create and maintain the configuration data in [setting up the automation kit](./configure-automation-kit.md).
 
 #### Map automation projects to environments
 

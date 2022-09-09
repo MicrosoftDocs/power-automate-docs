@@ -1,6 +1,6 @@
 ---
-title: Overview of the automation CoE setup guidance | Microsoft Docs
-description: Overview of the automation CoE setup guidance.
+title: Overview of the automation kit test case guidance | Microsoft Docs
+description: Overview of the automation kit test case guidance.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -132,7 +132,7 @@ If this is the first time an approval is being used within this environment, it 
     | 3digits                 | The last 3 digits can be used for advanced use cases and are typically 001 if you only have one solution per automation project. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution to distinguish them. |
 
    >[!NOTE]
-   >The renaming process can also be done easier inside the [Automation Solution Manager](./use-automation-coe-toolkit.md#rename-a-cloud-flow-to-match-convention) app.
+   >The renaming process can also be done easier inside the [Automation Solution Manager](./use-automation-kit.md#rename-a-cloud-flow-to-match-convention) app.
 
 The cloud flow should trigger the desktop flow based on the frequency defined in the automation request.
 

@@ -1,6 +1,6 @@
 ---
-title: Setup the automation CoE toolkit | Microsoft Docs
-description: Setup the automation CoE toolkit.
+title: Setup the automation kit | Microsoft Docs
+description: Setup the automation kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,11 +17,11 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Setup automation CoE toolkit
+# Setup automation kit
 
 ## Setup Checklist
-<!--todo: get buy-off on the capitalization of several terms like Automation CoE Toolkit-->
-This is a checklist for initially setting up the Automation CoE Toolkit. **Use this checklist with the below docs.**
+
+This is a checklist for initially setting up the automation kit. **Use this checklist with the below docs.**
 
 ### Prerequisites
 
@@ -503,16 +503,16 @@ calculation Formula
 | Successful Run, no errors | \$44.27           | Cost per Instance minus Overhead %              |
 | Failure                   | \-\$28.65         | Cost to Remediate per Instance minus Overhead % |
 
-## Configure Automation CoE toolkit
+## Configure automation kit
 
-### Define configuration data for the toolkit
+### Define configuration data for the automation kit
 
 <!--todo: "app" is vague here-->
 Use the Automation CoE admin account, navigate to the main environment and open the app.
 
 The **Automation Center** is where we configure how several aspects of how the Automation CoE functions.
   
-There are a few things you need to configure when you first import the toolkit.
+There are a few things you need to configure when you first import the kit.
 
 First, add an automation goal. Follow these steps to add an automation goal.
 
@@ -534,7 +534,7 @@ Next, we will make further configurations. This configuration is split into the
 
 1. [General](#steps-to-configure-general) - Configuration that's related to resources and processes.
 1. [ROI Calculation](#steps-to-configure-roi-calculation) - Configuration that's used as a scoring metric to better determine estimated ROI and the complexity of an automation project.
-1. [Configuration](#configuration---console) - Information that pertains to the Automation CoE Toolkit apps. This information is used to build a console from which users can launch related apps.
+1. [Configuration](#configuration---console) - Information that pertains to the automation kit apps. This information is used to build a console from which users can launch related apps.
 
 #### Steps to configure general
 

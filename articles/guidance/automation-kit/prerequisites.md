@@ -1,6 +1,6 @@
 ---
-title: Prerequisites to install and use the Automation CoE Toolkit | Microsoft Docs
-description: These prerequisites are required to install and use the Automation CoE Toolkit.
+title: Prerequisites to install and use the automation kit | Microsoft Docs
+description: These prerequisites are required to install and use the automation kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -16,9 +16,9 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Prerequisites to install and use the Automation CoE Toolkit
+# Prerequisites to install and use the automation kit
 
-The following prerequisites are required to install and use the Automation CoE Toolkit
+The following prerequisites are required to install and use the automation kit
 
 - An administrative account, which is called **Automation CoE Admin** or similar.
 

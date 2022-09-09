@@ -1,6 +1,6 @@
 ---
-title: Limitations and resolutions for issues in the automation CoE toolkit | Microsoft Docs
-description: Limitations and resolutions for issues in the automation CoE toolkit.
+title: Limitations and resolutions for issues in the automation kit | Microsoft Docs
+description: Limitations and resolutions for issues in the automation kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,9 +17,9 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Limitations and resolutions for issues in the automation CoE toolkit
+# Limitations and resolutions for issues in the automation kit
 
-This article contains some of the limitations in the automation CoE toolkit.
+This article contains some of the limitations in the automation kit.
 
 ## Limitations and resolutions
 

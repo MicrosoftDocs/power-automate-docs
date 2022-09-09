@@ -1,6 +1,6 @@
 ---
-title: Overview of the Automation Center of Excellence toolkit | Microsoft Docs
-description: Overview of the Automation Center of Excellence toolkit.
+title: Overview of the Automation Center of Excellence kit | Microsoft Docs
+description: Overview of the Automation Center of Excellence kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,9 +17,9 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Overview of the Automation Center of Excellence toolkit
+# Overview of the Automation Center of Excellence kit
 
-Introduction
+## Introduction
 
 Microsoft Power Platform adoption best practices for Automation Centers of Excellence (CoE) provides proven guidance on how to establish, and then scale an Automation CoE in your organization. It consists of best practices, documentation, and tools.
 
@@ -31,16 +31,16 @@ These adoption best practices from Microsoft employees, partners, and customers 
 
 ## Functional description
 
-The Automation CoE toolkit is a concept and set of tools to accelerate the use and support of Power Automate for desktop for automation projects, by calculating estimated money saved and ROI for each automation project.
+The automation kit is a concept and set of tools to accelerate the use and support of Power Automate for desktop for automation projects, by calculating estimated money saved and ROI for each automation project.
 
 <!--todo: we should not link to blogs. can this content be looped into these docs?-->
-This Automation CoE toolkit consists of stages that relate to HEAT (Holistic Enterprise Automation Techniques). The following blog post describes [HEAT in more detail](https://flow.microsoft.com/blog/heat-holistic-enterprise-automation-techniques-for-rpa-and-more/).
+This automation kit consists of stages that relate to HEAT (Holistic Enterprise Automation Techniques). The following blog post describes [HEAT in more detail](https://flow.microsoft.com/blog/heat-holistic-enterprise-automation-techniques-for-rpa-and-more/).
 
-The Automation CoE toolkit supports HEAT with the following functional components.
+The automation kit supports HEAT with the following functional components.
 
-- [Overview of the Automation Center of Excellence toolkit](#overview-of-the-automation-center-of-excellence-toolkit)
+- [Overview of the Automation Center of Excellence kit](#overview-of-the-automation-center-of-excellence-kit)
   - [Functional description](#functional-description)
-    - [Automation CoE](#automation-coe)
+    - [Automation Kit](#automation-kit)
     - [Automation projects](#automation-projects)
     - [Application Lifecycle Management (ALM)](#application-lifecycle-management-alm)
     - [Main environment / Satellite environments](#main-environment--satellite-environments)
@@ -57,7 +57,7 @@ The Automation CoE toolkit supports HEAT with the following functional component
 
 ### Automation CoE
 
-This is a team of experts who support automation, like Robotic Process Automation (RPA), within your organization. They have good knowledge on Power Automate for desktop, set up and maintain the Automation CoE toolkit, and maintain the configuration data such as departments, process categories, goals, and more.
+This is a team of experts who support automation, like Robotic Process Automation (RPA), within your organization. They have good knowledge on Power Automate for desktop, set up and maintain the automation kit, and maintain the configuration data such as departments, process categories, goals, and more.
 
 ### Automation projects
 
@@ -141,7 +141,7 @@ Data syncs from a satellite environment to the main environment using realtime t
 | **Role**                | **Description**                                                                                                                                                                                                                                                                                                                              |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Business Process Owner  | Process owners, responsible for approving automation project requests                                                                                                                                                                                                                                                                        |
-| CoE admin               | CoE admins create and maintain most of the automation assets. Depending on your organization, creation and management of certain assets could be the responsibility of other teams. CoE admins will then become the coordinators for those automation assets. CoE admins setup and maintain the automation CoE toolkit. |
+| CoE admin               | CoE admins create and maintain most of the automation assets. Depending on your organization, creation and management of certain assets could be the responsibility of other teams. CoE admins will then become the coordinators for those automation assets. CoE admins setup and maintain the automation kit. |
 | CoE owner               | The CoE owner oversees setting up the automation CoE and relevant updates or patches that follow.                                                                                                                                                                                                                                                |
 | Developer               | Makers who develop approved automation projects.                                                                                                                                                                                                                                                                                             |
 | InfoSec admin           | Coming soon.                                                                                                                                                                                                                                                                                                                                 |
@@ -154,7 +154,7 @@ Data syncs from a satellite environment to the main environment using realtime t
 
 ### Automation CoE technical description
 
-The automation CoE toolkit supports an automation CoE with the following artifacts.
+The automation kit supports an automation CoE with the following artifacts.
 
 1. The canvas app "Automation Project" to support a way to request and submit automation projects for approval.
 1. The model driven app "Automation Center" to support the creation and maintenance of automation assets like master data records, mapping resources, environments and assigning roles to employees.
@@ -163,7 +163,7 @@ The automation CoE toolkit supports an automation CoE with the following artifac
 
 ### Solutions
 
-The automation CoE toolkit contains the following two solutions.
+The automation kit contains the following two solutions.
 
 - Main solution.
 - Satellite solution.
@@ -187,7 +187,7 @@ The main dashboard connects to the main environment connecting to Dataverse tabl
     Analysis](#dlp-impact-analysis-for-desktop-flows))
 
 - Introduction to RPA CLI for inventory syncing ([See Extend the Automation
-    CoE](#how-can-the-rpa-cli-be-used-to-extend-the-automation-coe))
+    CoE](#how-can-the-rpa-cli-be-used-to-extend-the-automation-kit))
 
 - Power BI enhancements and fixes to ROI dashboard
 
@@ -197,7 +197,7 @@ The main dashboard connects to the main environment connecting to Dataverse tabl
 
 ## Prerequisites
 <!--Todo: are all these items part of preqs like app registration and key valut?-->
-These are the prerequisites you need to install and use the Automation CoE Toolkit
+These are the prerequisites you need to install and use the automation kit
 
 - An administrative account, which is called "**Automation CoE Admin**" or similar.
 

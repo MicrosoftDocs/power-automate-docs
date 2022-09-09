@@ -1,6 +1,6 @@
 ---
-title: Configure automation CoE toolkit | Microsoft Docs
-description: Configure automation CoE toolkit.
+title: Configure automation kit | Microsoft Docs
+description: Configure automation kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,18 +17,18 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Configure automation CoE toolkit
+# Configure automation kit
 
 ## Define configuration data
 
-Follow these steps to configure the automation CoE for your organization.
+Follow these steps to configure the automation kit for your organization.
 
 1. Sign in with your CoE admin account, and then navigate to the main environment.
 1. Open the **Automation Center** app.
 
    You will use the automation center app to configure how the automation CoE operates.
 
-There are a few things we need to setup/configure when you first import the toolkit.
+There are a few things we need to setup/configure when you first import the kit.
 
 First, we are going to add an automation goal. Follow these steps to add an automation goal.
 
@@ -50,7 +50,7 @@ Follow the steps in the following three sections to complete the configuration o
 
 1. [General configuration](#general-configuration) - Configuration that's related to resources and processes.
 2. [ROI calculation](#roi-calculations) - Configuration that's used as a scoring metric to better determine the estimated ROI and complexity of an automation project.
-3. [Console configuration](#console-configuration) - Info that pertains to the automation CoE toolkit apps. This configuration is used to build a console where users can launch the related apps.
+3. [Console configuration](#console-configuration) - Info that pertains to the automation kit apps. This configuration is used to build a console where users can launch the related apps.
 
 ### General configuration
 

@@ -83,4 +83,4 @@ The following screenshot displays only the Python actions.
 
 ## Advanced Power Automate for desktop DLP Impact Analysis Dashboard
 
-You can visualize the data by using the [Automation CoE main dashboard](./setup-automation-coe.md#main-dashboard).
+You can visualize the data by using the [Automation CoE main dashboard](./setup-automation-kit.md#main-dashboard).

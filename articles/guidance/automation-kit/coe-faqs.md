@@ -1,6 +1,6 @@
 ---
-title: Frequently asked questions about the automation CoE setup guidance | Microsoft Docs
-description: Frequently asked questions about the automation CoE setup guidance.
+title: Frequently asked questions about the automation kit setup guidance | Microsoft Docs
+description: Frequently asked questions about the automation kit setup guidance.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,9 +17,9 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Frequently asked questions about the automation CoE setup guidance
+# Frequently asked questions about the automation kit setup guidance
 
-This article provides answers to some of the most common questions about the automation CoE.
+This article provides answers to some of the most common questions about the automation kit.
 
 **Question** - What are the datacenter region codes?
 
