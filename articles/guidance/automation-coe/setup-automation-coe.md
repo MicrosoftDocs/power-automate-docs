@@ -302,7 +302,7 @@ Follow these steps to get the format.
     | AKV Client Id Secret                  | Azure Key Vault secret for client Id (application Id) from app registration: /subscriptions/{Subscription ID}/resourceGroups/{Resource Group Name}/providers/Microsoft.KeyVault/vaults/{Key Vault Name}/secrets/{Secret Name}                                                                                                                                                                         |   |
     | AKV Client Secret Secret              | Azure Key Vault secret for secret from app Registration                                                                                                                                                                                                                                                                                                                                               |   |
     | AKV Tenant Id Secret                  | Azure Key Vault secret for Tenant Id from app Registration                                                                                                                                                                                                                                                                                                                                            |   |
-    | Automation CoE Alert Email Recipient  | The email address where operational reports and alerts should be sent to, for this environment. **(**[See Exception Framework](#flow-exception-rules-framework)**)**                                                                                                                                                                                                                                  |   |
+    | Automation CoE Alert Email Recipient  | The email address where operational reports and alerts should be sent to, for this environment. **(**[See Exception Framework](./exception-rules-framework.md#flow-exception-rules-framework)**)**                                                                                                                                                                                                                                  |   |
     | Automation Project app Id             | Enter the **Automation Project** app Id of the Power Apps that is deployed with the main solution (main environment)                                                                                                                                                                                                                                                                                  |   |
     | Desktop Flows Base URL                | Open a new tab > Navigate to [Power Automate](https://flow.microsoft.com/) . Select the environment where you’re installing the solution.                                                                                                                                                                                                             |   |
     | Environment Id                        | Use **Session details** to find this value from current environment that you are importing into (satellite)                                                                                                                                                                                                                                                                                           |   |
@@ -344,16 +344,16 @@ Follow these steps to get the format.
 
 Once the import is complete, assign the following roles, based on responsibility.
 
-- **Flow Session Exception Admin** – Admin role which provides full CRUD permissions to the flow session exception data captured in the tables below. <!--todo where are the tables-->
+- **Flow Session Exception Admin** – Admin role which provides full CRUD permissions to the flow session exception data captured in the following tables. <!--todo where are the tables-->
 
-    - Flow Session Exception Rule Configuration
-    - Flow Session Exception
+  - Flow Session Exception Rule Configuration
+  - Flow Session Exception
 
 - **Desktop Flow Definition Admin** – Role which provides full CRUD permissions to these tables.
 
-    - Desktop Flow Action
-    - Desktop Flow Definition
-    - Desktop Flow DLP Impact Profile
+  - Desktop Flow Action
+  - Desktop Flow Definition
+  - Desktop Flow DLP Impact Profile
 
 1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select your main environment.
@@ -367,7 +367,7 @@ Once the import is complete, assign the following roles, based on responsibility
 
 Inside the solution, there is a column security profile. This profile enables users to see the script field inside the **Desktop Flow Definition** table. This role should only be assigned to CoE Admins, due to the sensitive information that may be visible.
 
-The script field is synced and stored inside the Desktop Flow Definition table by default. If you would like to **not** sync this information, follow the [Disabling Sync of Script field](#disable-syncing-of-desktop-flow-script-optional) steps. Otherwise, follow these steps to assign the security profile.
+The script field is synced and stored inside the Desktop Flow Definition table by default. If you would like to **not** sync this information, follow the [Disabling Sync of Script field](#disable-syncing-of-desktop-flows-script-optional) steps. Otherwise, follow these steps to assign the security profile.
 
 1. Select the column security profile, **Desktop Flow Script Field Security**.
 1. Under **Members**, select **Users**.
