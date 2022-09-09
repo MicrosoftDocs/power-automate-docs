@@ -124,7 +124,7 @@ If this is the first time an approval is being used within this environment, it 
 1. Go to the DEV environment and create a solution.
 1. If the department publisher does not exist, create one for the department to use.
 1. Create a desktop flow.
-1. Create a cloud flow that will trigger the desktop flow. Name the cloud flow using the following [naming convention]((./test-coe-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering): [CloudFlowName]_[AutomationProjectNumber]_[3digits].
+1. Create a cloud flow that will trigger the desktop flow. Name the cloud flow using the following [naming convention](./use-automation-coe-toolkit.md#rename-a-cloud-flow-to-match-convention): [CloudFlowName]_[AutomationProjectNumber]_[3digits].
 
     | CloudFlowName           | Your meaningful name for your process                                                                                                                                                                                                                                                   |
     |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
