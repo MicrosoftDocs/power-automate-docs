@@ -197,7 +197,7 @@ If the shared flow still has an active owner, the flow continues to run.
  If there's no active owner for a flow, you should change the owner. To change the owner of a flow, make a copy of the flow, and then let the intended owner create the flow from the copy.
 
 ### How can I change the owner of a solution-aware cloud flow?
-Solution cloud flow ownership can be changed by [editing the flow details](power-automate/change-cloud-flow-owner). 
+Solution cloud flow ownership can be changed by [editing the flow details](change-cloud-flow-owner). 
 
 ### How can I change the owner of a non-solution-aware cloud flow?
 To change the ownership of a non-solution-aware cloud flow, you must create a new flow via export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
