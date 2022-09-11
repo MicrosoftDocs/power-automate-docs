@@ -30,20 +30,25 @@ While custom SAP solutions can be built from scratch in the Power Platform, it c
 
 To enable you to not only quickly and effectively connect your SAP system to the Power Platform, but to also be able to start communicating workflow data between the two systems, a prebuilt solution is available for you to import into Power Apps.
 
-## What is in the prebuilt SAP Integration solution?
+## What's included
 
-The prebuilt SAP Integration solution contains the following:
+The prebuilt SAP Integration solution includes the following:
 
-- Power Apps that enable users to have a streamlined view of core SAP ERP business functions.
+- Apps created using Power Apps that enable users to have a streamlined view of core SAP ERP business functions.
 - Power Automate flows that work behind the scenes automating processes.
 - New technical features that support the user experience.
 
-Once the solution has been imported into Power Apps, click on **Apps** in the left-side panel. you can go into the canvas apps pages will appear clustered into modules that match SAP business functions. All of the other objects in the solution support the functionality
+After importing the solution into Power Apps, select **Apps** from the left-pane, you'll be able to view all canvas apps included with this solution clustered into modules matching the SAP business function.
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
-| Placeholder table with solutions | Description |
-| - | - |
-| Solution 1 | Description 1|
+| App name | Description |
+| Customer Invoices | App description |
+| Customer Payments | App description |
+| Customers | App description |
+| Deliveries | App description |
+| Goods Receipts | App description |
+| Mass Update Pricing | App description |
+| Quotes | App description |
+| Requisitions | App description |
+| Vendor Invoices | App description |
+| Vendor Payments | App description |
+| Vendors | App description |

@@ -707,7 +707,7 @@
     items:
     - name: Overview
       href: ./sap-integration/overview.md
-    - name: Available solutions
+    - name: Prebuilt solution
       href: ./sap-integration/solutions.md
     - name: Set up and prepare
       href: ./sap-integration/set-up-prepare.md
