@@ -77,5 +77,5 @@ After downloading the solution, refer to [Import solutions](/power-apps/maker/da
 
 ### See also
 
-- [Understand pPrebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
+- [Understand prebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
 - [Overview of SAP integration with Power Platform (preview)](overview.md)

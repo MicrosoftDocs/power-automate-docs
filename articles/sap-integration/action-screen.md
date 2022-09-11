@@ -152,5 +152,5 @@ To test and verify SAP integration, use the above fields to configure the connec
 ### See also
 
 - [Prepare and set up SAP integration with Power Platform (preview)](set-up-prepare.md)
-- [Understand pPrebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
+- [Understand prebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
 - [Overview of SAP integration with Power Platform (preview)](overview.md)

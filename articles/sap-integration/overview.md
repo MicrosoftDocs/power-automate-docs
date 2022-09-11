@@ -38,9 +38,8 @@ SAP integration offers prebuilt solutions that work with SAP ERP's sales, purcha
 
 - Power Apps templates
 - Power Automate flows
-- New technical features
 
-Learn more in the [Prebuilt solutions] (<https://www>).
+More information: [Prebuilt solutions](solutions.md)
 
 ## Benefits
 
@@ -61,7 +60,7 @@ Before you get started with SAP integration, ensure you follow the following ste
 
 ## Next steps
 
-[Understand pPrebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
+[Understand prebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
 
 ### See also
 
