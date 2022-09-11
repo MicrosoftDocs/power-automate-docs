@@ -70,3 +70,12 @@ Refer to the following articles to learn about configuring Azure AD and SAP SSO:
 SAP integration for Power Platform includes prebuilt solution containing several apps and flows. To download this solution, go to https://go.microsoft.com.
 
 After downloading the solution, refer to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions) to import the downloaded solution into your Power Platform environment.
+
+## Next steps
+
+[Configure action screens and verify the SAP integration (preview)](action-screen.md)
+
+### See also
+
+- [Understand pPrebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
+- [Overview of SAP integration with Power Platform (preview)](overview.md)

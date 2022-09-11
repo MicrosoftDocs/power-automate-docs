@@ -148,3 +148,9 @@ There is a minimum of two required fields for this action to begin:
 - RFC name: The name of the remote call function (RFC) you would like to call.
 
 To test and verify SAP integration, use the above fields to configure the connection and validate changes from Power Platform to SAP.
+
+### See also
+
+- [Prepare and set up SAP integration with Power Platform (preview)](set-up-prepare.md)
+- [Understand pPrebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
+- [Overview of SAP integration with Power Platform (preview)](overview.md)

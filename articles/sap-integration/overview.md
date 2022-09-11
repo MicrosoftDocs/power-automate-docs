@@ -58,3 +58,12 @@ Before you get started with SAP integration, ensure you follow the following ste
 
 1. Administrators [set up and prepare](set-up-prepare.md)the required infrastructure.
 1. A maker sets up Power Apps with an appropriate environment and the Microsoft Dataverse and SAP ERP connectors.
+
+## Next steps
+
+[Understand pPrebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
+
+### See also
+
+- [Prepare and set up SAP integration with Power Platform (preview)](set-up-prepare.md)
+- [Configure action screens and verify the SAP integration (preview)](action-screen.md)

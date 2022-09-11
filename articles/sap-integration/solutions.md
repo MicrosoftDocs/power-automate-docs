@@ -41,6 +41,7 @@ The prebuilt SAP Integration solution includes the following:
 After importing the solution into Power Apps, select **Apps** from the left-pane, you'll be able to view all canvas apps included with this solution clustered into modules matching the SAP business function.
 
 | App name | Description |
+| - | - |
 | Customer Invoices | App description |
 | Customer Payments | App description |
 | Customers | App description |
@@ -52,3 +53,12 @@ After importing the solution into Power Apps, select **Apps** from the left-pane
 | Vendor Invoices | App description |
 | Vendor Payments | App description |
 | Vendors | App description |
+
+## Next steps
+
+- [Prepare and set up SAP integration with Power Platform (preview)](set-up-prepare.md)
+
+### See also
+
+- [Configure action screens and verify the SAP integration (preview)](action-screen.md)
+- [Overview of SAP integration with Power Platform (preview)](overview.md)
