@@ -138,3 +138,13 @@ The following example shows a state where a user has selected all the parameters
 
 ![](media/action-screen/image8.png)
 
+## Verify SAP integration
+
+The SAP integration with Power Platform enables Message Server support and allows for easier entering of parameters needed when connecting to SAP.
+
+There is a minimum of two required fields for this action to begin:
+
+- SAP System: This is a JSON string containing all the necessary SAP connection parameters. For a complete list of all the available properties, refer to the "SAP property guidance" table. The JSON string can be manually entered or chosen from an existing environment variable within a solution.
+- RFC name: The name of the remote call function (RFC) you would like to call.
+
+To test and verify SAP integration, use the above fields to configure the connection and validate changes from Power Platform to SAP.
