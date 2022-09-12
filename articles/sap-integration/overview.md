@@ -34,12 +34,15 @@ SAP ERP is enterprise resource planning software developed by SAP SE. SAP ERP is
 
 ### SAP ERP connector enhancements
 
-SAP ERP connector (V2) (preview) with the following improvements:
+The SAP ERP (V2) (preview) connector has been updated with the following improvements:
 
-- New environment variables for systems
-- New actions to CAll SAP function
-- New action to Read Table
-- New Logic Apps functions
+- RFC Call now uses environment variables for system connection credentials
+- New RFC Call message server support
+- New action screens for easier entering of connection parameters
+- New Parse RFC Read Table action
+- Maintains distinction between required and optional parameters
+- SAP BAPIs/functions with over 1000 parameters now properly render
+
 
 ### Prebuilt solution
 
