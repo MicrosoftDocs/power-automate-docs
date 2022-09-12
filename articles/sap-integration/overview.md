@@ -26,22 +26,32 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-SAP ERP is enterprise resource planning software developed by SAP SE. SAP ERP is a centralized system of record that enables many departments within an organization to share and collaborate on data.
+SAP ERP is enterprise resource planning software developed by SAP SE. SAP ERP is a centralized system of record that enables many departments within an organization to manage data.
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+ SAP Integration offers enhanced connectivity capabilities with SAP ERP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The prebuilt solution offers a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
 
 ## What's new?
 
-SAP integration offers prebuilt solutions that work with SAP ERP's sales, purchasing, finance, and production workflows. The prebuilt solutions are designed to enable organizations to efficiently get connected to and communicate with their SAP system. The public preview prebuilt solutions contain the following:
+### SAP ERP connector enhancements
+
+SAP ERP connector (V2) (preview) with the following improvements:
+
+- New environment variables for systems
+- New actions to CAll SAP function
+- New action to Read Table
+- New Logic Apps functions
+
+### Prebuilt solution
+
+A prebuilt solution that works with SAP ERP's sales, purchasing, finance, and production workflows. The prebuilt solution is designed to enable organizations to efficiently get connected to and communicate with their SAP system. The public preview prebuilt solution contains the following:
 
 - Power Apps templates
 - Power Automate flows
+- New technical features
 
-More information: [Prebuilt solutions](solutions.md)
+Learn more in the [Prebuilt solutions] (<https://www>).
 
-## Benefits
+## What value will SAP Integration add?
 
 SAP integration with the Power Platform will help your organization achieve the following:
 
@@ -51,18 +61,13 @@ SAP integration with the Power Platform will help your organization achieve the 
 
 ## Get started
 
-Teams are highly encouraged to complete the [public preview signup form](<https://aka.ms/PowerAutomate-SAPIntegration-Signup>). Completing the form may give you access to the team that works on the SAP integration.
+Teams are highly encouraged to complete the [public preview signup form](<https://aka.ms/PowerAutomate-SAPIntegration-Signup>). Completing the form may give you access to the team that works on the SAP Integration.
 
-Before you get started with SAP integration, ensure you follow the following steps:
+Before accessing and downloading the SAP Integration solution, it is imperative that the following steps be completed:
 
 1. Administrators [set up and prepare](set-up-prepare.md)the required infrastructure.
-1. A maker sets up Power Apps with an appropriate environment and the Microsoft Dataverse and SAP ERP connectors.
+2. A maker sets up Power Apps with the following:  
 
-## Next steps
-
-[Understand prebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
-
-### See also
-
-- [Prepare and set up SAP integration with Power Platform (preview)](set-up-prepare.md)
-- [Configure action screens and verify the SAP integration (preview)](action-screen.md)
+- An appropriate environment 
+- The Microsoft Dataverse connector
+- The SAP ERP connector
