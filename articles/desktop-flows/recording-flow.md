@@ -51,19 +51,31 @@ To pause the recording process temporarily, select **Pause**. To add a comment t
 
 ![Screenshot of the comment button.](./media/recording-flow/comment-button.png)
 
+### Handle drop-down lists
+
+While automating desktop and web applications using the recorder, you may need to handle drop-down lists.
+
+The Power Automate recorder displays a custom screen every time you select a drop-down list to help you choose the desired values. This custom screen allows you to choose one or more values depending on whether the drop-down menu is a multi-select.
+
+During runtime, Power Automate automatically chooses the defined values and selects the **OK** button of the list.
+
+![Screenshot of a custom screen for a drop-down list.](./media/recording-flow/drop-down-list-custom-screen.png)
+
 ### Launch a web browser
 
 To launch a web browser instance while recording web flows, you can use three different approaches based on the automation scenario.
 
 The first method is to select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer.
 
-After selecting the proper browser, the recorder will detect the loaded webpage automatically and configure the launching browsing step accordingly.
+After selecting the proper browser, the recorder will detect the loaded web page automatically and configure the launching browsing step accordingly.
 
 ![Screenshot of the Launch new web browser option.](./media/recording-flow/launch-new-web-browser-option.png)
 
 An alternative way to launch a browser is to start recording in an already open web browser. The recorder will automatically detect the loaded page and will create a launching browser action.
 
 The last method to launch a browser is to manually launch it through its shortcut on the desktop, the start menu, the taskbar, or a folder. If you implement this approach, the recorder will generate UI automation actions that click the browser shortcut and launch it.
+
+### Handle date and color pickers on web pages
 
 ### Add text using Input Method Editors (IMEs)
 
