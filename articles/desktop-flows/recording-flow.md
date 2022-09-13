@@ -15,7 +15,7 @@ search.audienceType:
 ---
 # Record flows in Power Automate Desktop
 
-Power Automate for desktop enables you to design flows automatically by replicating the task you wish to automate. 
+Power Automate for desktop enables you to design flows automatically by replicating the task you wish to automate.
 
 ## Record desktop and web flows
 
@@ -50,6 +50,10 @@ To record a flow that automates desktop or/and web applications:
 To pause the recording process temporarily, select **Pause**. To add a comment to the recorded actions, select **Add a comment**.
 
 ![Screenshot of the comment button.](./media/recording-flow/comment-button.png)
+
+### Replicate drag and drop steps
+
+The recorder supports steps related to dragging and dropping the mouse pointer. Therefore, the recorder can generate actions like the **Resize window** and **Move window**. However, the **Drag and drop UI element of a window** action isn't currently supported.
 
 ### Handle drop-down lists
 
