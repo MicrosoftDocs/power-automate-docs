@@ -1,6 +1,6 @@
 ---
-title: Setup the automation kit | Microsoft Docs
-description: Setup the automation kit.
+title: Automation Kit setup checklist | Microsoft Docs
+description: Setup the Automation Kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,15 +17,13 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Setup automation kit
+# Automation Kit setup checklist
 
-## Setup Checklist
-<!--note: This is just a checklist (overview of what the setup is. The thought here was, if anyone is having issues setting up, this checklist will help remediate any errors or missed steps) -->
-The following checklist provides an overview of the key steps that will assist you in setting up the automation kit.
+The following checklist provides an overview of the key steps, to assist you in setting up the Automation Kit.
 
-**Use this checklist with the below docs.**
+**Use this checklist to ensure you have followed the key steps in the setup instructions.**
 
-### Checklist for main
+## Checklist for main
 
 - Imported **AutomationCoEMain_x_x_x_x_managed** into your **main** environment.
 - Provisioned the approvals solution (optional).
@@ -33,7 +31,7 @@ The following checklist provides an overview of the key steps that will assist y
 - Assigned the security roles that follow.
 - Shared the apps with appropriate users, using the guidance that follows.
 
-### Checklist for satellite
+## Checklist for satellite
 
 - Created Azure AD app registration (Dataverse API) for each satellite.
 - Defined satellite environments (new or existing).
@@ -43,7 +41,7 @@ The following checklist provides an overview of the key steps that will assist y
 - Confirmed all flows in the solution are enabled.
 - Shared the app with appropriate users, using the guidance that follows.
 
-### Checklist for configuration data
+## Checklist for configuration data
 
 - Configured the general data defined below
 - Defined the ROI data

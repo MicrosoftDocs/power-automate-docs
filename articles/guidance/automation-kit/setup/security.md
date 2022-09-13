@@ -1,6 +1,6 @@
 ---
-title: Setup the automation kit security roles and permissions | Microsoft Docs
-description: Setup the automation kit security roles and permissions.
+title: Set up the Automation Kit security roles and permissions | Microsoft Docs
+description: Setup the Automation Kit security roles and permissions.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,7 +17,9 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-## Assign Security Roles
+# Set up the Automation Kit security roles and permissions
+
+## Assign security roles
 
 Once the import is complete, assign the following roles, based on responsibility.
 

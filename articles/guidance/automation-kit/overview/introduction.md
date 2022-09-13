@@ -1,6 +1,6 @@
 ---
-title: Overview of the Automation Center of Excellence kit | Microsoft Docs
-description: Overview of the Automation Center of Excellence kit.
+title: Overview of the Automation Kit | Microsoft Docs
+description: Overview of the Automation Center of Excellence Kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,69 +17,34 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Overview of the Automation Center of Excellence kit
-
-## Introduction
-
-Microsoft Power Platform adoption best practices for Automation Centers of Excellence (CoE) provides proven guidance on how to establish, and then scale an Automation CoE in your organization. It consists of best practices, documentation, and tools.
-
-By using these best practices, organizations can better align their business and technical strategies to ensure success.
-
-Automation CoE members, RPA developers, cloud architects, IT professionals, and business decision makers use this information to achieve their automation adoption goals.
-
-These adoption best practices from Microsoft employees, partners, and customers are a set of tools, guidance, and narratives to help shape your technology, business, and people strategies to get the best business outcomes for your automation rollout.
-
-## Functional description
+# Overview of the Automation Kit
 
 ![Automation Kit Logo](../media/automation-kit.svg)
 
-The automation kit is a concept and set of tools to accelerate the use and support of Power Automate for desktop for automation projects, by calculating estimated money saved and ROI for each automation project.
+The Automation Kit is set of tools to accelerate the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI).
 
-This automation kit consists of stages that relate to [HEAT (Holistic Enterprise Automation Techniques)](../../heat/overview.md).
+The Automation Kit conforms to the stages defined in [HEAT (Holistic Enterprise Automation Techniques)](../../heat/overview.md).
 
-The automation kit supports HEAT with the following functional components.
+The kit is especially useful to an Automation Center of Excellence (CoE) team, a team of experts who support automation within your organization. They have good knowledge on Power Automate for desktop, set up and maintain the Automation Kit, and maintain the configuration data such as departments, process categories, goals, and more.
 
-- [Overview of the Automation Center of Excellence kit](#overview-of-the-automation-center-of-excellence-kit)
-  - [Introduction](#introduction)
-  - [Functional description](#functional-description)
-    - [Automation CoE](#automation-coe)
-    - [Automation projects](#automation-projects)
-    - [Application Lifecycle Management (ALM)](./application-lifecycle-management.md)
-    - [Main environment / Satellite environments](environments.md#main-environment--satellite-environments)
-    - [Organization structure](#organization-structure)
-    - [App roles](./app-roles.md)
-  - [Technical description](technical-description.md)
-    - [Automation CoE technical description](technical-description.md#automation-technical-description)
-    - [Solutions](technical-description.md#solutions)
-    - [Power BI dashboard](technical-description.md#power-bi-dashboard)
+## Automation Kit components
 
-### Automation CoE
+The Automation Kit supports an automation CoE with the following components.
 
-This is a team of experts who support automation, like Robotic Process Automation (RPA), within your organization. They have good knowledge on Power Automate for desktop, set up and maintain the automation kit, and maintain the configuration data such as departments, process categories, goals, and more.
+1. Automation Project: A canvas app that supports requesting automation projects and submitting them for approval.
+1. Automation Center: A model-driven app for creating and maintaining automation assets such as master data records, mapping resources and environments, and assigning roles to employees.
+1. Automation Solution Manager: <!--??? -->
+1. Cloud flows that sync data from satellite environments in near real time to the main environment using Dataverse tables.
+1. A Power BI dashboard to provide insights and monitor your automation assets.
 
-### Automation projects
+The components of the kit are contained in the following two solutions.
 
-Employees can submit an idea for an automation project. A business owner is given when an employee submits an automation project. This business owner must approve the automation project before development begins.
+- Main solution, deployed in the main environment
+- Satellite solution, deployed in each satellite environment
 
-There are several fields that the employee must submit they request an automation project. Many of these fields are used to calculate the following items.
+A satellite environment is where the automation projects are developed, tested, and then deployed to production. The production satellite is configured to monitor and meter solutions and solution artifacts for an automation project. 
 
-- The complexity score
-- The money saved
-
-Every automation project maps to a solution and ever solution maps to an environment. It is up to the automation project admins to use the Automation Center Model driven app to map these resources.
-
-The main Power BI dashboard contains a scatter plot of all saved or submitted automation projects. The plot is useful to decide which automation projects are good candidates to develop.
-
-### Organization structure
-
-After automation projects receive approval, they are mapped to environments. After the solution is created or imported into the satellite environment, a CoE admin maps the solution to an automation project.
-
-Data syncs from a satellite environment to the main environment using realtime trigger flows inside of the satellite. Only solutions that have been mapped (metered through the solution manager app) will sync data back to the main satellite environment.
-
-
-<!-- todo: move to the readme/release notes section. Release Notes (What is new)
-===========================
-
+The data from the metered solutions syncs to the main environment in near real time for monitoring on a dashboard.
 
 <!-- > [!div class="nextstepaction"]
 > [Next step: Core components for Power Automate RPA SAP GUI automation](core-components.md) -->

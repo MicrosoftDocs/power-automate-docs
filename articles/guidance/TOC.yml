@@ -100,49 +100,45 @@
         href: rpa-sap-playbook/feature-highlights-per-approach.md
     - name: Conclusion
       href: rpa-sap-playbook/conclusion.md
-  - name: Create an automation center of excellence
+  - name: Application Lifecycle Management for automation projects
+    href: ./planning/application-lifecycle-management.md
+  - name: Power Platform Automation Kit
     items:
-    - name: Overview
-      items:
-      - name: Introduction
-        href: ./automation-kit/overview/introduction.md
-      - name: Application Lifecycle Management
-        href: ./automation-kit/overview/application-lifecycle-management.md
-      - name: Environments
-        href: ./automation-kit/overview/environments.md
-      - name: Technical description
-        href: ./automation-kit/overview/technical-description.md
-      - name: Release notes
-        href: ./automation-kit/overview/release-notes.md
+    - name: Introduction
+      href: ./automation-kit/overview/introduction.md
     - name: Set up the automation kit
       items:
-      - name: Overview
-        href: ./automation-kit/setup/overview.md
-      - name: Main
+      - name: Pre-requisites
+        href: ./automation-kit/setup/prerequisites.md
+      - name: Setup checklist
+        href: ./automation-kit/setup/setup-checklist.md
+      - name: Main environment
         href: ./automation-kit/setup/main.md
-      - name: Satellite
+      - name: Satellite environments
         href: ./automation-kit/setup/satellite.md
       - name: Environment variables
         href: ./automation-kit/setup/environment-variables.md
       - name: Security
         href: ./automation-kit/setup/security.md
-      - name: Data
-        href: ./automation-kit/setup/data.md
-      - name: Optional
+      - name: Disable syncing (optional)
         href: ./automation-kit/setup/optional.md
+      - name: Setup FAQs
+        href: ./automation-kit/faqs.md    
     - name: Configure the automation kit
-      href: ./automation-kit/configure-automation-kit.md
-    - name: Exception rules framework
-      href: ./automation-kit/exception-rules-framework.md
-    - name: DLP impact analysis for desktop flows
-      href: ./automation-kit/dlp-impact-analysis.md
+      items:
+      - name: Initial configuration
+        href: ./automation-kit/configure-automation-kit.md
+      - name: Exception rules framework
+        href: ./automation-kit/exception-rules-framework.md
+      - name: DLP impact analysis for desktop flows
+        href: ./automation-kit/dlp-impact-analysis.md
     - name: Use the automation kit
       href: ./automation-kit/use-automation-kit.md
     - name: Testing an end-to-end scenario
       href: ./automation-kit/test-end-to-end.md
     - name: Limitations
       href: ./automation-kit/limitations.md
-    - name: FAQs
-      href: ./automation-kit/faqs.md
+    - name: Release notes
+      href: ./automation-kit/overview/release-notes.md
     - name: Feedback and support
       href: ./automation-kit/feedback-support.md

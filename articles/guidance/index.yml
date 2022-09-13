@@ -54,6 +54,18 @@ landingContent:
           - text: Conclusion
             url: rpa-sap-playbook/conclusion.md
 
+  # Card 
+  - title: Power Platform Automation kit
+    linkLists:
+       - linkListType: overview
+         links:
+          - text: Overview
+            url: automation-kit/overview/introduction.md       
+          - text: Setup
+            url: automation-kit/setup/main.md
+          - text: Use the Automation kit
+            url: automation-kit/use-automation-kit.md
+
   # Card
   - title: Related content
     linkLists:

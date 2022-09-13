@@ -1,6 +1,6 @@
 ---
-title: Prerequisites to install and use the automation kit | Microsoft Docs
-description: These prerequisites are required to install and use the automation kit.
+title: Prerequisites to install and use the Automation Kit | Microsoft Docs
+description: These prerequisites are required to install and use the Automation Kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -16,13 +16,13 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Prerequisites to install and use the automation kit
+# Prerequisites to install and use the Automation Kit
 
-The following prerequisites are required to install and use the automation kit
+The following prerequisites are required to install and use the Automation Kit
 
 - An administrative account, which is called **Automation CoE Admin** or similar.
 
-  The Automation CoE requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration). Therefore, the account you set up as the **Automation CoE Admin** needs the following.
+  The Automation Kit requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration). Therefore, the account you set up as the **Automation CoE Admin** needs the following.
 
 ## Roles
 
@@ -43,7 +43,7 @@ Azure Key Vault(s) is used to store secrets for the Azure app registration menti
 - KV-Contoso-Prod
 
 >[!NOTE]
->The Automation CoE uses the new [Azure Key Vault secrets (preview)](/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
+>The Automation Kit uses the new [Azure Key Vault secrets (preview)](/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
 
 1. Register the **Microsoft.PowerPlatform** resource provider in your Azure subscription. Follow these steps to verify and configure it: [Azure resource providers and types](/azure/azure-resource-manager/management/resource-providers-and-types).
 
@@ -66,12 +66,12 @@ Azure Key Vault(s) is used to store secrets for the Azure app registration menti
 
 ## Enable code components
 
-The automation kit is utilizing the Power Platform creator kit, which was developed to bootstrap and enhance canvas apps look and feel. This kit uses Fluent UI references and guidelines. Read more about Fluent. [Read more about fluent](https://www.microsoft.com/design/fluent/)
+The Automation Kit uses the Power Platform Creator Kit, which was developed to bootstrap and enhance canvas apps look and feel. The Creator Kit uses Fluent UI references and guidelines. [Read more about fluent](https://www.microsoft.com/design/fluent/)
 
-The creator Kit uses a Component library and code components. We must enable Code components inside ALL the environments that the automation kit will be installed in.
+The Creator Kit uses a component library and code components. We must enable code components inside ALL the environments that the Automation Kit will be installed in.
 
 > [!WARNING]
-> You will have to uninstall and potentially lose all data if Power Apps component framework for canvas apps is not turned on the environments where the automation kit is installed or upgraded.
+> You will have to uninstall and potentially lose all data if Power Apps component framework for canvas apps is not turned on the environments where the Automation Kit is installed or upgraded.
 Enable component framework before installing or upgrading.
 ![A screenshot that displays the environments](media/CodeComponentsTurnedOn.png)
 

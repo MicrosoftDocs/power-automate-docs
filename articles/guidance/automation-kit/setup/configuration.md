@@ -1,6 +1,6 @@
 ---
-title: Post install configuration steps for the automation kit | Microsoft Docs
-description: Post install configuration steps for the automation kit.
+title: Post install configuration steps for the Automation Kit | Microsoft Docs
+description: Post install configuration steps for the Automation Kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,13 +17,13 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Configure automation kit
+# Configure Automation Kit
 
-## Define configuration data for the automation kit
+## Define configuration data for the Automation Kit
 
-Use the Automation CoE admin account, navigate to the main environment and open the automation center app.
+Use the Automation Kit admin account, navigate to the main environment and open the automation center app.
 
-The **Automation Center** is where we configure how several aspects of how the Automation CoE functions.
+The **Automation Center** is where we configure how several aspects of how the Automation Kit functions.
   
 There are a few things you need to configure when you first import the kit.
 
@@ -47,7 +47,7 @@ Next, we will make further configurations. This configuration is split into the
 
 1. [General](#steps-to-configure-general) - Configuration that's related to resources and processes.
 1. [ROI Calculation](#steps-to-configure-roi-calculation) - Configuration that's used as a scoring metric to better determine estimated ROI and the complexity of an automation project.
-1. [Configuration](#configuration---console) - Information that pertains to the automation kit apps. This information is used to build a console from which users can launch related apps.
+1. [Configuration](#configuration---console) - Information that pertains to the Automation Kit apps. This information is used to build a console from which users can launch related apps.
 
 ### Steps to configure general
 

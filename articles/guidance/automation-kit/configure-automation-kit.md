@@ -1,6 +1,6 @@
 ---
-title: Configure automation kit | Microsoft Docs
-description: Configure automation kit.
+title: Configure Automation Kit | Microsoft Docs
+description: Configure Automation Kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,16 +17,16 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Configure automation kit
+# Configure Automation Kit
 
 ## Define configuration data
 
-Follow these steps to configure the automation kit for your organization.
+Follow these steps to configure the Automation Kit for your organization.
 
-1. Sign in with your CoE admin account, and then navigate to the main environment.
+1. Sign in with your Automation CoE Admin account, and then navigate to the main environment.
 1. Open the **Automation Center** app.
 
-   You will use the automation center app to configure how the automation CoE operates.
+   You will use the automation center app to configure how the Automation Kit operates.
 
 There are a few things we need to setup/configure when you first import the kit.
 
@@ -46,11 +46,11 @@ First, we are going to add an automation goal. Follow these steps to add an auto
 
 1. Select **Save & Close**.
 
-Follow the steps in the following three sections to complete the configuration of the automation CoE.
+Follow the steps in the following three sections to complete the configuration of the Automation Kit.
 
 1. [General configuration](#general-configuration) - Configuration that's related to resources and processes.
 2. [ROI calculation](#roi-calculations) - Configuration that's used as a scoring metric to better determine the estimated ROI and complexity of an automation project.
-3. [Console configuration](#console-configuration) - Info that pertains to the automation kit apps. This configuration is used to build a console where users can launch the related apps.
+3. [Console configuration](#console-configuration) - Info that pertains to the Automation Kit apps. This configuration is used to build a console where users can launch the related apps.
 
 ### General configuration
 
@@ -121,8 +121,8 @@ Define the sub categories that relate in some way.
 #### Roles (app roles)
 
 These roles do not give access to anything, they're used as lookups for the fallback record, if needed.
-
-1. Create the **automation CoE admin** account as the **CoE Owner**.
+S
+1. Create the **Automation CoE Admin** account as the **CoE Owner**.
 
     | **Field**           | **Value**                 |
     |---------------------|---------------------------|

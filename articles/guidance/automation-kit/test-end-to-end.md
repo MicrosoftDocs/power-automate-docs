@@ -1,6 +1,6 @@
 ---
-title: Overview of the automation kit test case guidance | Microsoft Docs
-description: Overview of the automation kit test case guidance.
+title: Overview of the Automation Kit test case guidance | Microsoft Docs
+description: Overview of the Automation Kit test case guidance.
 suite: flow
 documentationcenter: na
 author: grarchib

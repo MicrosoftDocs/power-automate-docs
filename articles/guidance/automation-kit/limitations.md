@@ -1,6 +1,6 @@
 ---
-title: Limitations and resolutions for issues in the automation kit | Microsoft Docs
-description: Limitations and resolutions for issues in the automation kit.
+title: Limitations and resolutions for issues in the Automation Kit | Microsoft Docs
+description: Limitations and resolutions for issues in the Automation Kit.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,9 +17,9 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Limitations and resolutions for issues in the automation kit
+# Limitations and resolutions for issues in the Automation Kit
 
-This article contains some of the limitations in the automation kit.
+This article contains some of the limitations in the Automation Kit.
 
 ## Limitations and resolutions
 
@@ -83,8 +83,8 @@ For example, in **MostLikleyTheBest-CLoUdfLoW_AP-000001013_001.**, you can use t
 - Create a new desktop flow.
 
 >[!NOTE]
->You can use a solution to extend the automation CoE to sync all desktop flows in an  environment with the [RPA CLI](https://aka.ms/rpacli).
+>You can use a solution to extend the Automation Kit to sync all desktop flows in an  environment with the [RPA CLI](https://aka.ms/rpacli).
 
 ### More information
 
-[Read more on how to use the RPA CLI for the Automation CoE.](https://aka.ms/rpaclie)
+[Read more on how to use the RPA CLI for the Automation Kit.](https://aka.ms/rpaclie)

@@ -1,6 +1,6 @@
 ---
-title: Frequently asked questions about the automation kit setup guidance | Microsoft Docs
-description: Frequently asked questions about the automation kit setup guidance.
+title: Frequently asked questions about the Automation Kit setup guidance | Microsoft Docs
+description: Frequently asked questions about the Automation Kit setup guidance.
 suite: flow
 documentationcenter: na
 author: grarchib
@@ -17,9 +17,9 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Frequently asked questions about the automation kit setup guidance
+# Frequently asked questions about the Automation Kit setup guidance
 
-This article provides answers to some of the most common questions about the automation kit.
+This article provides answers to some of the most common questions about the Automation Kit.
 
 **Question** - What are the datacenter region codes?
 
@@ -49,7 +49,7 @@ This article provides answers to some of the most common questions about the aut
 
 For more information, review [Datacenter regions](/power-platform/admin/new-datacenter-regions).
 
-**Question** - How can the RPA CLI be used to extend the automation CoE?
+**Question** - How can the RPA CLI be used to extend the Automation Kit?
 
 **Answer** - Read more about how to use the [RPA CLI](https://aka.ms/rpacli).
 

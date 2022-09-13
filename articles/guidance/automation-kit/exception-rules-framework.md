@@ -51,7 +51,7 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 1. Sign into [Power Automate](https://flow.microsoft.com).
 1. Go to your satellite environment.
 1. Select the **Solutions** tab.
-1. Find, and then select **Automation CoE Satellite.**
+1. Find and then select **Automation CoE Satellite.**
 1. Select **Tables**, and then find these tables.
 
     - Flow Session Exception Rule Configuration

@@ -1,6 +1,6 @@
 ---
-title: Configure the automation kit environment variables | Microsoft Docs
-description: Configure the automation kit environment variables.
+title: Configure the Automation Kit environment variables | Microsoft Docs
+description: Configure the Automation Kit environment variables.
 suite: flow
 documentationcenter: na
 author: grarchib
