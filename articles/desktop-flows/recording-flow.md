@@ -77,6 +77,24 @@ The last method to launch a browser is to manually launch it through its shortcu
 
 ### Handle date and color pickers on web pages
 
+Like drop-down lists, the Power Automate recorder displays custom screens to help you handle date and color pickers on web pages.
+
+When you interact with a date picket, the recorder opens a text field where you can insert the desired date in the specified format.
+
+This field supports the following input types:
+
+- date
+- datetime-local
+- month
+- time
+- week
+
+![Screenshot of the date picker custom screen.](./media/recording-flow/date-picket-custom-screen.png)
+
+Similarly, when you interact with a color picker, the recorder opens a text field where you can populate the desired color hex code.
+
+![Screenshot of the color picker custom screen.](./media/recording-flow/color-picket-custom-screen.png)
+
 ### Add text using Input Method Editors (IMEs)
 
 Input Method Editors (IMEs) are software components that enable users to input text in languages that can't be represented easily on a standard QWERTY keyboard. Users can type combinations of keys, and IMEs will generate a character or a list of candidate characters that match the set of keystrokes.
@@ -111,7 +129,7 @@ To record flows using images:
 
     ![Screenshot of the Image recording button.](./media/recording-flow/image-recording-button.png)
 
-     Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover or select the **preview icon**. 
+     Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover or select the **preview icon**.
 
     ![Screenshot of the preview image button.](./media/recording-flow/preview-image-button.png)
 
