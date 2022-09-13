@@ -1,6 +1,6 @@
 ---
-title: Send and receive push notifications in the Power Automate mobile app for Android | Microsoft Docs
-description: Learn how to send and receive push notifications in the Power Automate mobile app for Android.
+title: Send and receive push notifications in the Power Automate mobile app for Android
+description: Learn how to send and receive push notifications in the Microsoft Power Automate mobile app for Android.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/12/2022
+ms.date: 09/13/2022
 ms.author: kewaiss
 search.app: 
   - Flow
@@ -21,30 +21,30 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Send and receive push notifications
+<!--QUESTION: This article doesn't cover how to SEND notifications. Should it? Or should the title be changed?-->
 
-The notifications feature allows you to send and receive push notifications. To get to the **Notifications** screen, select the bell icon in the app header.
+The Power Automate mobile app for Android allows you to send and receive push notifications on your mobile device.  The list of notifications you've received was previously called Activity Feed.
 
-:::image type="content" source="../media/android/notifications-1.png" alt-text="Screenshot of the push notifications bell icon.":::
+To view notifications and alerts from your flows, select the bell icon at the top of the screen.
 
-When you select the bell icon, you'll see a list of all notifications and flow alerts. If you've used the previous Power Automate mobile app version, you know this as Activity Feed.
+:::image type="content" source="../media/android/notifications-1.png" alt-text="Screenshot of part of the Power Automate mobile app for Android screen, with the notification bell icon highlighted.":::
 
-Notifications that are new since the last time you opened the app are in the **New** list. Notifications that have existed prior to opening the app are in the **Older** list. Notifications will be removed after 14 days.
+Notifications that arrived since the last time you opened the app appear in the **New** list. Other notifications appear in the **Older** list.
 
-:::image type="content" source="../media/android/notifications.png" alt-text="Screenshot of a push notification.":::
+A timestamp indicates how long ago the notification arrived. For instance, **5 m** means the notification arrived five minutes ago. Notifications are removed from the **Older** list after 14 days.
+
+:::image type="content" source="../media/android/notifications.png" alt-text="Screenshot of notifications in the Power Automate mobile app for Android.":::
+
+The **Notifications** screen shows notifications from the current environment only. To view notifications from a different environment, [select the environment](overview-mobile.md#change-environments).
 
 ## Filter your notifications
 
-You can narrow down the list of notifications to show only those related to a flow, or only those with a run status error.
+By default, the **Notifications** screen shows all the notifications you've received.
 
-To view notifications that are the result of a flow run, select **From flows**. Here's an example:
+To show only notifications that are related to a flow, select **From flows** at the top of the **Notifications** screen.
 
-:::image type="content" source="../media/android/from-flows.png" alt-text="Screenshot of a push notification in the From flows list.":::
-
-To view notifications with a run status error, select **Run status**. Here's an example:
-
-:::image type="content" source="../media/android/run-status.png" alt-text="Screenshot of a push notification in the Run status list.":::
-
-Notifications are bound to the environment currently selected. You can change environments to see its associated notifications. To learn more, go to [Change environments](overview-mobile.md#change-environments).
+To show only notifications of errors that occurred when a flow ran, select **Run status** at the top of the **Notifications** screen.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

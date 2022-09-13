@@ -1,6 +1,6 @@
 ---
-title: Manage cloud flows in the Power Automate mobile app for Android | Microsoft Docs
-description: Learn how to manage cloud flows in the Power Automate mobile app for Android.
+title: Manage cloud flows in the Power Automate mobile app for Android
+description: Learn how to manage your cloud flows in the Microsoft Power Automate mobile app for Android.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/12/2022
+ms.date: 09/13/2022
 ms.author: kewaiss
 search.app: 
   - Flow
@@ -21,32 +21,35 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Manage cloud flows
 
-Power Automate mobile allows you to view the flows you've created. This includes non-solution and solution-aware flows. You can also view details of each individual flow,
+Use the Power Automate mobile app for Android to view and run your flows, check their run history, turn them on and off, or delete them. You can manage your flows when you're away from your computer whether they're solution-aware or non-solution&ndash;aware. [Learn about solution-aware flows](../overview-solution-flows.md).
 
 ## View a list of your cloud flows
 
-You can view the flows that you've created as well as flows shared with you. This includes non-solution, solution-aware, and shared flows.
+By default, the **Flows** screen shows all the flows that you've created.
 
-:::image type="content" source="../media/android/instant-flows.png" alt-text="Screenshot of a list of flows.":::
+:::image type="content" source="../media/android/instant-flows.png" alt-text="Screenshot of a list of flows in the Power Automate mobile app for Android.":::
 
-## View run history
+To show flows that others have shared with you, select **Shared with me** at the top of the **Flows** screen.
 
-The Power Automate mobile app offers the following additional cloud flow management tools:
+## Run, delete, and turn a flow on or off
 
-- View the description of your flow.
+Select the vertical ellipsis (**...**) next to a flow, and then select one of the options: **Run flow**, **Turn off** (or if the flow is off, **Turn on**), or **Delete**.
 
-- View your flow's run history to confirm that it ran successfully.
+You can also turn a flow on and off in the [**Details** screen](#view-run-history-and-details).
 
-- Turn the flow on or off.
+:::image type="content" source="../media/android/flows-menu.png" alt-text="Screenshot of flow options in the Power Automate mobile app for Android.":::
 
-To manage your flows, select an option in the vertical ellipses (**...**) dropdown menu on the **Flows** screen.
+## View run history and details
 
-:::image type="content" source="../media/android/flows-menu.png" alt-text="Screenshot of the dropdown menu on the Flows screen.":::
+Select the vertical ellipsis (**...**) next to a flow, and then select **Details**.
 
-For example, if you select **Details** in the menu, you'll see the flow details and run history.
+In addition to the flow's run history, you can view a description of the flow if one was provided, how long ago it was modified, and its type.
 
-:::image type="content" source="../media/android/flow-details.png" alt-text="Screenshot of flow details.":::
+You can also toggle **Enable** here to turn the flow on or off.
+
+:::image type="content" source="../media/android/flow-details.png" alt-text="Screenshot of flow details and run history in the Power Automate mobile app for Android.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
