@@ -1,12 +1,11 @@
 ---
 title: Recording in a desktop flow | Microsoft Docs
 description: Recording in a desktop flow
-author: mariosleon
-
+author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
-ms.author: marleon
+ms.date: 09/13/2022
+ms.author: gtrantzas
 ms.reviewer: 
 search.app: 
   - Flow
@@ -37,6 +36,10 @@ To record a flow that automates desktop or/and web applications:
 
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 
+    To see the available actions of a specific element, right-click on it to open its context menu. The available option depend on the nature of the selected element.
+
+    ![Screenshot of recording context menu.](./media/recording-flow/recording-context-menu.png)  
+
 1. When the recording process is completed, select **Finish** to convert the recorded steps to desktop flow actions. All the UI elements used in the generated UI and web automation actions are added automatically to the UI elements pane.
 
     > [!NOTE]
@@ -44,23 +47,23 @@ To record a flow that automates desktop or/and web applications:
 
     ![Screenshot of the generated actions of the recorded flow.](./media/recording-flow/recorded-flow.png)
 
-To pause the recording process temporarily, select **Pause**. To add a comment to the recorded actions, select **+ Comment**.
+To pause the recording process temporarily, select **Pause**. To add a comment to the recorded actions, select **Add a comment**.
 
 ![Screenshot of the comment button.](./media/recording-flow/comment-button.png)
 
 ### Launch a web browser
 
-To launch a web browser instance while recording web flows, you can use three different approaches based on the automation scenario. 
+To launch a web browser instance while recording web flows, you can use three different approaches based on the automation scenario.
 
-The first method is to select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer. 
+The first method is to select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer.
 
-After selecting the proper browser, the recorder will detect the loaded webpage automatically and configure the launching browsing step accordingly. 
+After selecting the proper browser, the recorder will detect the loaded webpage automatically and configure the launching browsing step accordingly.
 
 ![Screenshot of the Launch new web browser option.](./media/recording-flow/launch-new-web-browser-option.png)
 
 An alternative way to launch a browser is to start recording in an already open web browser. The recorder will automatically detect the loaded page and will create a launching browser action.
 
-The last method to launch a browser is to manually launch it through its shortcut on the desktop, the start menu, the taskbar, or a folder. If you implement this approach, the recorder will generate UI automation actions that click the browser shortcut and launch it. 
+The last method to launch a browser is to manually launch it through its shortcut on the desktop, the start menu, the taskbar, or a folder. If you implement this approach, the recorder will generate UI automation actions that click the browser shortcut and launch it.
 
 ### Add text using Input Method Editors (IMEs)
 
@@ -141,7 +144,7 @@ You can edit manually any actions created through the recorder once the recordin
 
 - **Workarounds**: None
 
-- **Issue**: While running a flow created through image-based recording, the click may be sent to the wrong place. 
+- **Issue**: While running a flow created through image-based recording, the click may be sent to the wrong place.
 
 - **Workarounds**: Edit the auto-generated action “Move mouse to image” through the flow designer and decrease the Tolerance parameter in the Advanced settings.
 
