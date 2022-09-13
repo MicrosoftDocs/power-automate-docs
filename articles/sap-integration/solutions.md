@@ -36,23 +36,18 @@ The prebuilt SAP Integration solution includes the following:
 
 - Apps created using Power Apps that enable users to have a streamlined view of core SAP ERP business functions.
 - Power Automate flows that work behind the scenes automating processes.
-- New technical features that support the user experience.
+- Additional components and new technical features that support the user experience.
 
-After importing the solution into Power Apps, select **Apps** from the left-pane, you'll be able to view all canvas apps included with this solution clustered into modules matching the SAP business function.
+After importing the solution into Power Apps, select **Apps** from the left-pane, you'll be able to view all canvas apps included with this solution.
 
-| App name | Description |
-| - | - |
-| Customer Invoices | App description |
-| Customer Payments | App description |
-| Customers | App description |
-| Deliveries | App description |
-| Goods Receipts | App description |
-| Mass Update Pricing | App description |
-| Quotes | App description |
-| Requisitions | App description |
-| Vendor Invoices | App description |
-| Vendor Payments | App description |
-| Vendors | App description |
+| Module name | App name | Description |
+| - | - | - |
+| Sales | |  |
+| |Sales orders | Create, Change, Display |
+|Purchasing| | |
+| |Purchase orders | Create, Change, Display |
+
+
 
 ## Next steps
 

@@ -38,21 +38,21 @@ The SAP ERP (V2) (preview) connector has been updated with the following improve
 
 - RFC Call now uses environment variables for system connection credentials
 - New RFC Call message server support
-- New action screens for easier entering of connection parameters
+- New action screens allow connection parameter input
 - New Parse RFC Read Table action
-- Maintains distinction between required and optional parameters
+- Distinction now maintained between required and optional parameters
 - SAP BAPIs/functions with over 1000 parameters now properly render
 
 
 ### Prebuilt solution
 
-A prebuilt solution that works with SAP ERP's sales, purchasing, finance, and production workflows. The prebuilt solution is designed to enable organizations to efficiently get connected to and communicate with their SAP system. The public preview prebuilt solution contains the following:
+A prebuilt solution that works with SAP ERP's sales and purchasing workflows. The prebuilt solution is designed to enable organizations to efficiently get connected to and communicate with their SAP system. The public preview prebuilt solution contains the following:
 
 - Power Apps templates
 - Power Automate flows
-- New technical features
+- Additional components and new technical features
 
-Learn more in the [Prebuilt solutions] (<https://www>).
+Learn more at [Prebuilt solution available for integrating SAP with Power Platform](solutions.md).
 
 ## What value will SAP Integration add?
 
@@ -64,11 +64,9 @@ SAP integration with the Power Platform will help your organization achieve the 
 
 ## Get started
 
-Teams are highly encouraged to complete the [public preview signup form](<https://aka.ms/PowerAutomate-SAPIntegration-Signup>). Completing the form may give you access to the team that works on the SAP Integration.
+1. Complete the [public preview signup form](<https://aka.ms/PowerAutomate-SAPIntegration-Signup>). Completing the form may give you access to the team that works on the SAP Integration.
 
-Before accessing and downloading the SAP Integration solution, it is imperative that the following steps be completed:
-
-1. Administrators [set up and prepare](set-up-prepare.md)the required infrastructure.
+1. Assemble a team of IT administrators to prepare for and set up the SAP ERP integration with Power Platform. [set up and prepare](set-up-prepare.md) the required infrastructure.
 2. A maker sets up Power Apps with the following:  
 
 - An appropriate environment 
