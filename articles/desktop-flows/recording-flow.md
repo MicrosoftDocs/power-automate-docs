@@ -168,22 +168,18 @@ You can edit manually any actions created through the recorder once the recordin
 
 - **Issue**: The recorder may not record all steps from the Windows Start menu or system tray.
 
-- **Workarounds**: None
-
-- **Issue**: Generating drag and drop actions through recording isn't supported.
-
-- **Workarounds**: None
+    **Workarounds**: None
 
 - **Issue**: While running a flow created through image-based recording, the click may be sent to the wrong place.
 
-- **Workarounds**: Edit the auto-generated action “Move mouse to image” through the flow designer and decrease the Tolerance parameter in the Advanced settings.
+    **Workarounds**: Edit the auto-generated action “Move mouse to image” through the flow designer and decrease the Tolerance parameter in the Advanced settings.
 
 - **Issue**: The “Extract text from image” popup that appears after sending a right-click using the recorder, may hide behind the popup of the application.
 
-- **Workarounds**: Send the right-click to another place on the screen.
+    **Workarounds**: Send the right-click to another place on the screen.
 
 - **Issue**: Any keystrokes sent to a maximized RDP window through an image-based recording are not being recorded.
 
-- **Workarounds**: Resize the RDP window so that it doesn't cover the full screen.
+    **Workarounds**: Resize the RDP window so that it doesn't cover the full screen.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
