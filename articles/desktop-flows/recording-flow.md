@@ -89,11 +89,11 @@ This field supports the following input types:
 - time
 - week
 
-![Screenshot of the date picker custom screen.](./media/recording-flow/date-picket-custom-screen.png)
+![Screenshot of the date picker custom screen.](./media/recording-flow/date-picker-custom-screen.png)
 
 Similarly, when you interact with a color picker, the recorder opens a text field where you can populate the desired color hex code.
 
-![Screenshot of the color picker custom screen.](./media/recording-flow/color-picket-custom-screen.png)
+![Screenshot of the color picker custom screen.](./media/recording-flow/color-picker-custom-screen.png)
 
 ### Add text using Input Method Editors (IMEs)
 
