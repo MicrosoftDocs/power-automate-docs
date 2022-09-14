@@ -75,6 +75,19 @@ Microsoft recommends that you have the satellite solution imported inside your p
 1. Add the **System Administrator** security role.
 1. Select **Create**.
 
+### Creator Kit Import
+
+Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-kit/overview).
+
+1. Download the [Power Platform Creator Kit](https://aka.ms/creatorkitdownload).
+1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
+1. Go to the environment you just created in which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Prod**.
+1. On the left pane, select Solutions.
+1. Select Import, and then Browse.
+1. Select the Creator Kit solution from File Explorer (CreatorKitCore_x_x_x_x_managed.zip).
+1. Select Import.
+Wait for the Creator Kit to finish importing before continuing to next step.
+
 ## Import the satellite solution into the satellite environment
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
