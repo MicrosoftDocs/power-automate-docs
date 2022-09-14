@@ -58,10 +58,12 @@ Azure Key Vault(s) is used to store secrets for the Azure app registration menti
 
 ## License requirements
 
-<!--todo: confirm if it's any of these licenses needed-->
+For ongoing usage by users the following licenses are required:
+
 - Microsoft 365 license (E3, E5).
 - Power Automate per user with attended RPA license (non-trial).
-- Power Apps Per User license (non-trial).
+- Optional Power Automate per user with unattended RPA license (non-trial).
+- Power App Pay As You Go, Per User or Per App license (non-trial).
 - Power BI Pro license.
 
 ## Enable code components

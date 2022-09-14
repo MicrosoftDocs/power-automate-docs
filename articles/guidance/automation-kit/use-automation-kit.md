@@ -98,7 +98,6 @@ CoE admins will map automation projects to environments after the request is app
 1. Select **Add** > **"Save & Close"**.
 
 ![This screenshot displays the steps to save the mapping.](media/74cb8d1d0475c2006e750aee1428749f.png)
-<!--todo: steps seems missing or screens needs to be updated-->
 
 ## Automation Solution Manager app
 
@@ -222,7 +221,7 @@ The main Power BI dashboard has the following sections.
 
    ![A screenshot that displays specific flows organized by categories](media/931ae2e90c21bfd882edcbc8283a3503.png)
 
-- **Action Usage Analysis** – Just like the Power App but with added filters and an email owner button. <!--todo: I am not following this-->
+- **Action Usage Analysis** – Includes functionality similar to the Automation Kit DLP impact analysis Power App but with added Power BI filters.
 
    ![A screenshot that displays dlp policy items](media/e252ea3e2eab49b430a7fe7f77e1cbf2.png)
 

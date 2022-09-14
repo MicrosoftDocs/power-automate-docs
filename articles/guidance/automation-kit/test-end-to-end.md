@@ -82,8 +82,8 @@ Refer to the following table to see what roles and permissions are needed for ea
    After the save operation completes, the dashboard displays, a flow is runs and calculates the ROI potential and complexity score, based on the information provided.
 
 1. Select the **Refresh** button within the app until the ROI and score show up. These should show up in a few seconds.
-1. Now, submit the request for approval, click the icon on the card to open. <!--todo, what's the name of the icon to click?-->
-1. Select  **Submit**.
+
+1. Now, select the project record for approval then select the Submit Project button.
 
 Now that the request has been submitted, it can be approved or rejected by the business owner, or if none was provided, the fallback approver is used.
 

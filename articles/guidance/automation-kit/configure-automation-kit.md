@@ -205,12 +205,12 @@ Sign into the [maker portal](https://make.powerapps.com/), and then perform the 
 
 1. Select the **Apps** tab on the left navigation bar.
 1. Select the **...** (more commands) on the app.
-1. Select **Details**. <!--todo: what to do now?-->
+1. Select **Details**.
 
    ![A screenshot that displays the steps to select details.](media/dd98466696afb5756f04f76d3f87b5b1.png)
 
 1. Copy the AppID.
-1. Select the Web Link.
+1. Copy the Web Link.
 
 ### How to get model driven app URL/ID
 
