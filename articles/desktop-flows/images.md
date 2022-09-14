@@ -5,8 +5,8 @@ author: georgiostrantzas
 
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: v-gtrantzas
-ms.reviewer: v-gtrantzas
+ms.author: gtrantzas
+ms.reviewer: gtrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -56,7 +56,7 @@ After capturing images, you can use them as input in actions that require them, 
 
 In the advanced settings of these actions, you can select which image matching algorithm you want to use. The **Basic** algorithm achieves better results with images less than 200x200 pixels, while the **Advanced** algorithm is more effective with bigger images and more robust to color changes.
 
-The **Tolerance field** defines the acceptable ammount of differences between the provided image and the image is compared with. High tolerance values may affect the precision of image recognition.
+The **Tolerance field** defines the acceptable amount of differences between the provided image and the image is compared with. High tolerance values may affect the precision of image recognition.
 
 ![Screenshot of the advanced settings of the Move mouse to image action.](media\images\move-mouse-image-action-advanced.png)
 

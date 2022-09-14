@@ -1,11 +1,10 @@
 ---
-title: Use the beta version of Power Automate mobile for Android (preview) | Microsoft Docs
-description: Provides an overview of the functionality and limitations in Power Automate mobile for Android (preview).
+title: Use the Power Automate mobile app for Android | Microsoft Docs
+description: Provides an overview of the functionality and limitations in the Power Automate mobile app for Android.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-
+author: v-aangie
 manager: tapanm
 editor: ''
 tags: ''
@@ -14,8 +13,8 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/05/2022
-ms.author: deonhe
+ms.date: 08/26/2022
+ms.author: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -23,50 +22,38 @@ search.audienceType:
   - enduser
 ---
 
-# Use the beta version of Power Automate mobile for Android (preview)
+# Use the Power Automate mobile app for Android
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+Experience the same familiar look and feel of the Power Automate portal with the Power Automate mobile app for Android. If you've used the previous mobile app version, you'll notice some improvements, such as quicker response times and easier navigation.
 
-Experience the same familiar look and feel of the Power Automate portal with the beta version of Power Automate mobile for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
+## Install the mobile app
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-> - This article only applies to the beta version of the Power Automate mobile app for Android devices. If you want to use the Power Automate mobile app versions generally available across different platforms, refer to the previous articles in this section in the table of contents.
+If you're not signed up for Power Automate, [sign up for free](sign-up-sign-in.md). Then choose the download link or scan the QR code to download the Power Automate mobile app.
 
-## Install the beta version
+| Android |
+| :---:   |
+| [![Download the Power Automate mobile app for Android from Google Play.](media/android/google-play.png "Download Power Automate from Google Play")](https://play.google.com/store/apps/details?id=com.microsoft.flow)   |
+| ![The Power Automate mobile app for Android QR code.](media/android/android-mobile-qrcode.png "The Power Automate mobile app for Android QR code")  |
 
-Before you can install the beta version, the Power Automate app must be installed on your device.
-
-To download the beta version:
-
-1. Tap **Play Store**. Depending on the version of your device, the icon might be named Google Play Store.
-
-1. In the search bar at the top, enter **power automate**.
-
-1. Tap **Power Automate** to open the app page.
-
-1. Swipe to the bottom of the page until you reach the **Join the beta** heading.
-
-1. Tap **Join**.  
-
-![Screenshot of joining the beta.](media/android/install.png "Joining beta")
+> [!NOTE]
+> - You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
+> - You'll need the new version of the app (version 3.x.x or later) for the functionality described in this article. This version is currently being rolled out and may not be available for you yet.
 
 ## View a list of your cloud flows
 
-You can view the flows that you've created as well as flows shared with you. This includes non-solution and solution-aware flows.
+You can view the flows that you've created as well as flows shared with you. This includes non-solution, solution-aware, and shared flows.
 
 ![Screenshot of a list of flows.](media/android/instant-flows.png "List of flows")
 
-You can view details of each individual flow, such as the flow description, run history, and connections. You can also turn the flow on or off.
+You can view details of each individual flow, such as the flow description, most recent run history, and connections. You can also turn the flow on or off.
 
 ![Screenshot of flow details.](media/android/flow-details.png "Flow details")
 
 ## Run instant flows
 
-The instant flows feature allows you to easily run repetitive tasks from any place, at any time with your mobile device. Running instant cloud flows are automated, which saves you time. You might also encounter fewer errors than if you performed the tasks manually.
+The instant flows feature allows you to easily run repetitive tasks automatically from any place, at any time with your mobile device. You might encounter fewer errors than if you performed these tasks manually.
 
-If you've used the previous Power Automate mobile version, you know instant flows as button flows.
+If you've used the previous Power Automate mobile app version, you know instant flows as button flows.
 
 ![Screenshot of a list of instant flows.](media/android/instant-flows-1.png "List of instant flows")
 
@@ -74,7 +61,32 @@ To run an instant flow, tap the flow you would like to run from the **Instant fl
 
 ![Screenshot of instant flows.](media/android/run-flow.png "Run instant flows")
 
-For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen.
+## Create widgets
+
+Widgets make accessing and running instant flows effortless. For quick and easy access to your instant flows, you have the option to create a widget as a shortcut on your mobile device’s home screen. Widgets allow you to trigger instant flows straight from your mobile's home screen without having to open the Power Automate app. If your instant flow requires inputs, the flow will open in the app so you can fill in the required fields before triggering the flow.
+
+To create a widget:
+
+1. Select Power Automate mobile app settings.
+1. Select **Widgets**.
+
+    ![Screenshot of the option to add widgets using the android mobile app.](media/android/widget.png "Create widgets to run flows effortlessly")
+
+1. Choose the location for the widget.
+
+    ![Screenshot of the screen to add widgets.](media/android/widget-place.png "Choose location for the widget")
+
+    > [!NOTE]
+    > If you haven't previously signed into the app before creating a widget, the app will be opened to allow you to sign in. Once you are signed in, you can create a widget and run your flow straight from your home screen.
+
+1. Select the flow to run when prompted.
+
+1. Use the widget to run the flow directly using the widget when needed, without opening the Power Automate mobile app.
+
+      ![Screenshot of the screen with a widget.](media/android/widget-run.png "Select the widget to run flow")
+
+> [!NOTE]
+>You can't run shared instant flows using a widget, but you *can* run [solution-aware flows](overview-solution-flows.md) using a widget.
 
 ## Manage approvals
 
@@ -106,18 +118,8 @@ You might have different environments set up depending on the purpose of your wo
 
 ## Limitations
 
-- Downloading the preview version of the app will overwrite the existing version of the Power Automate mobile app if you already have it downloaded on your mobile device.
+Following are the known limitations for the mobile app for Android:
 
-- This feature is being rolled out and may not be available for you yet.
+- Geofencing (location-based trigger) isn't supported. This was formerly a preview feature and was never generally available.
 
-- The beta version doesn't support geofencing (location-based trigger).
-
-- The beta version doesn't support flow creation and editing in this version; customers told us that they prefer to create and edit in the portal. If you need to create or edit on the go, you can log in to Power Automate on your mobile’s browser.
-
-## Provide feedback  
-
-These changes are based directly on your feedback, so we would love to hear what you think of this new beta version of Power Automate mobile for Android! You can leave a review and rating in the [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.flow). To provide feedback, go to the Power Automate app page, and under **Private feedback to developer**, tap **Write feedback**. Rate the app and describe your experience. Optionally, you can also provide any feedback. We appreciate your response!
-
-> [!NOTE]
->
->You can discontinue your role as a beta tester at any time. In the Play Store, find and open the Power Automate app, scroll to the bottom, and tap **Leave** below the **You're a beta tester** heading. If you want to use the version that's in general availability (GA) status, you'll need to uninstall the beta version and install Power Automate (GA). To learn more, go to the [Google Play Help](https://support.google.com/googleplay/answer/7003180?hl=en).]
+- Flow creation and editing aren't supported. Customers told us that they prefer to create and edit in the web portal when building or changing flows. If you’re on the go and need to create or edit, you can log into Power Automate on your mobile’s browser.

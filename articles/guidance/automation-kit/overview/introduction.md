@@ -23,7 +23,8 @@ ms.reviewer: deonhe
 
 The Automation Kit is set of tools to accelerate the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI).
 
-The Automation Kit conforms to the stages defined in [HEAT (Holistic Enterprise Automation Techniques)](../../heat/overview.md).
+
+This automation kit consists of stages that relate to [HEAT (Holistic Enterprise Automation Techniques)](https://docs.microsoft.com/power-platform/guidance/automation-coe/heat).
 
 The kit is especially useful to an Automation Center of Excellence (CoE) team, a team of experts who support automation within your organization. They have good knowledge on Power Automate for desktop, set up and maintain the Automation Kit, and maintain the configuration data such as departments, process categories, goals, and more.
 

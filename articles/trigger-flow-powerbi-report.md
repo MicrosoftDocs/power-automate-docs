@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/11/2021
+ms.date: 09/01/2022
 ms.author: hamenon
 ---
 
@@ -115,6 +115,8 @@ Optionally, if you want to change the button text, font color, font size, or fil
 * Create flows that you will use with the Power BI button trigger directly within the Power BI report. Do not go directly to Power Automate to create these flows as the trigger will not have access to the data fields necessary for creating the flow.
 * Power BI data is sent to, and processed in, a geography where the flow is deployed.
 * The Power Automate visual isn't supported for PaaS-embedded scenarios, nor in sovereign cloud scenarios.
+* The Power Automate visual will not work for published reports because the users are unauthenticated.
+* The Power Autonate visual is limited to process a maximum of 1000 records.
 
 
 
