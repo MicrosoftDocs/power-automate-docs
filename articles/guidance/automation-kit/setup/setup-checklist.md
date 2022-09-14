@@ -3,7 +3,7 @@ title: Automation Kit setup checklist | Microsoft Docs
 description: Setup the Automation Kit.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

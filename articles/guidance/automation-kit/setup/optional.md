@@ -3,7 +3,7 @@ title: Optional setup steps depending on your configuration | Microsoft Docs
 description: Optional setup steps depending on your configuration.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

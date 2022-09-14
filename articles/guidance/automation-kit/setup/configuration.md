@@ -3,7 +3,7 @@ title: Post install configuration steps for the Automation Kit | Microsoft Docs
 description: Post install configuration steps for the Automation Kit.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

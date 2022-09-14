@@ -3,7 +3,7 @@ title: Overview of the Automation Kit test case guidance | Microsoft Docs
 description: Overview of the Automation Kit test case guidance.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

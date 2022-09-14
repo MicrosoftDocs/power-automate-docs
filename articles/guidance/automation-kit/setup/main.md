@@ -3,7 +3,7 @@ title: Set up the Automation Kit main components | Microsoft Docs
 description: Setup the Automation Kit main components.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

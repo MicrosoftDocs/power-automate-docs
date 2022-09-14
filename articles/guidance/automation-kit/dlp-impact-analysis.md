@@ -3,7 +3,7 @@ title: DLP impact analysis for desktop flows | Microsoft Docs
 description: Learn about the DLP impact analysis for desktop flows.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance
@@ -83,4 +83,4 @@ The following screenshot displays only the Python actions.
 
 ## Advanced Power Automate for desktop DLP Impact Analysis Dashboard
 
-You can visualize the data by using the [Automation Kit main dashboard](./setup-automation-kit.md#main-dashboard).
+You can visualize the data by using the [Automation Kit Power BI dashboard](use-automation-kit.md#automation-kit-power-bi-dashboard).

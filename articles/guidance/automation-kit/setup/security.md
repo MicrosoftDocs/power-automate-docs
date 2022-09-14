@@ -3,7 +3,7 @@ title: Set up the Automation Kit security roles and permissions | Microsoft Docs
 description: Setup the Automation Kit security roles and permissions.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

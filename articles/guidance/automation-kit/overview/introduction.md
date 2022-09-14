@@ -3,7 +3,7 @@ title: Overview of the Automation Kit | Microsoft Docs
 description: Overview of the Automation Center of Excellence Kit.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

@@ -3,7 +3,7 @@ title: Flow exception rules framework | Microsoft Docs
 description: Learn to use the flow exception rules framework.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance
@@ -29,7 +29,7 @@ Desktop flow execution results together with their statuses are automatically st
 
 ### Components
 
-These components are part of the [Automation Satellite solution](./setup-automation-kit.md#import-the-satellite-solution-into-the-satellite-environment)
+These components are part of the [Automation Satellite solution](setup/satellite.md#set-up-satellites).
 
 Type|Name|Description
 ----|----|-----
@@ -44,7 +44,7 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 >[!IMPORTANT]
 >These steps must be done with a user with the following roles.
 
-- [Flow Session Exception Admin](./setup-automation-kit.md#assign-security-roles)
+- [Flow Session Exception Admin](setup/security.md#flow-session-exception-admin)
 - Basic User
 - Environment Maker
 

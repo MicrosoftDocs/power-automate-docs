@@ -3,7 +3,7 @@ title: Setup the Automation Kit satellite components | Microsoft Docs
 description: Setup the Automation Kit satellite components.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance
@@ -60,7 +60,7 @@ Use the following steps to create an app registration that will be used by flows
 
 Microsoft recommends that you have the satellite solution imported inside your production environment. Follow the [steps to import the main solution](main.md) if you create a new environment.
 
-### Create application user inside Dataverse (Per satellite Env)
+## Create application user inside Dataverse (Per satellite Env)
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select the satellite environment, and then select **Settings**.

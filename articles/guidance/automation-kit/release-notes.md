@@ -1,7 +1,7 @@
 ---
 title: "Automation Kit Release Notes | MicrosoftDocs"
 description: "Latest version and release notes for the Automation Kit"
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

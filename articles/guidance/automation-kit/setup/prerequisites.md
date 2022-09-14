@@ -3,7 +3,7 @@ title: Prerequisites to install and use the Automation Kit | Microsoft Docs
 description: These prerequisites are required to install and use the Automation Kit.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance
@@ -73,7 +73,7 @@ The Creator Kit uses a component library and code components. We must enable cod
 > [!WARNING]
 > You will have to uninstall and potentially lose all data if Power Apps component framework for canvas apps is not turned on the environments where the Automation Kit is installed or upgraded.
 Enable component framework before installing or upgrading.
-![A screenshot that displays the environments](media/CodeComponentsTurnedOn.png)
+![A screenshot that displays the environments](../media/CodeComponentsTurnedOn.png)
 
 1. Navigate to the Power Platform Admin Center.
 1. Select an environment where you want to enable this feature.

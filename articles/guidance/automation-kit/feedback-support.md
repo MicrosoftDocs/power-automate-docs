@@ -3,7 +3,7 @@ title: Feedback and support for the Automation Kit setup guidance | Microsoft Do
 description: Feedback and support for the Automation Kit setup guidance.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

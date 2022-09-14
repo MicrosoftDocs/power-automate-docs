@@ -3,7 +3,7 @@ title: How to use the Automation Kit | Microsoft Docs
 description: How to use the Automation Kit.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance

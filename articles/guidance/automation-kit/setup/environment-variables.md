@@ -3,7 +3,7 @@ title: Configure the Automation Kit environment variables | Microsoft Docs
 description: Configure the Automation Kit environment variables.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance
@@ -21,11 +21,12 @@ ms.reviewer: deonhe
 
 1. To get the information for the environment variables, open a new tab.
 2. Navigate to the satellite environment from the [maker portal](https://make.powerapps.com).
-3. Select the **Settings** in the top right nav bar > **Session details Developer resources**.
+3. Select the **Settings** in the top right nav bar and select **Developer resources**.
+<!-- There is a missing step here. WHat do I get from the Developer Resources panel?-->
 
 Next, we need to get the **URL path** for our **Azure Key Vault secrets**.
 
-The Azure Key Vault secrets are using the new environment variable type. These environment variables need to be in the following format.
+The Azure Key Vault secrets are using the environment variable type. These environment variables need to be in the following format.
   
    ```azurecli
    /subscriptions/{Subscription ID}/resourceGroups/{Resource Group Name}/providers/Microsoft.KeyVault/vaults/{Key Vault Name}/secrets/{Secret Name}
@@ -33,7 +34,7 @@ The Azure Key Vault secrets are using the new environment variable type. These e
 
 Follow these steps to get the format.
 
-1. Go to [Azure Portal](https://portal.azure.com/#home), navigate to your Key Vault with the secrets for your [App Registration](#create-an-azure-ad-app-registration-to-connect-to-dataverse-web-api).
+1. Go to [Azure Portal](https://portal.azure.com/home), navigate to your Key Vault with the secrets for your app registration.<!--Needs a link for app registration?; the existing link didn't exist-->
 1. Select the **Secrets** tab.
 1. Copy the **URL**.
 1. Paste the URL into notepad.
@@ -55,7 +56,7 @@ Follow these steps to get the format.
 | AKV Client Id Secret                  | Azure Key Vault secret for client Id (application Id) from app registration: /subscriptions/{Subscription ID}/resourceGroups/{Resource Group Name}/providers/Microsoft.KeyVault/vaults/{Key Vault Name}/secrets/{Secret Name}                                                                   |
 | AKV Client Secret Secret              | Azure Key Vault secret for secret from app Registration                                                                                                                                                                                                                                         |
 | AKV Tenant Id Secret                  | Azure Key Vault secret for Tenant Id from app Registration                                                                                                                                                                                                                                      |
-| Automation CoE Alert Email Recipient  | The email address where operational reports and alerts should be sent to, for this environment. **(**[See Exception Framework](#flow-exception-rules-framework)**)**                                                                                                                            |
+| Automation CoE Alert Email Recipient  | The email address where operational reports and alerts should be sent to, for this environment. ([See Flow exception rules framework](../exception-rules-framework.md#flow-exception-rules-framework))                                                                                                                            |
 | Automation Project app Id             | Enter the **Automation Project** app Id of the Power Apps that is deployed with the main solution (main environment)                                                                                                                                                                            |
 | Desktop Flows Base URL                | Follow the steps in [Desktop flows base url steps](#steps-to-get-desktop-flow-base-url)                                                                                                                     |
 | Environment Id                        | Use **Session details** to find this value from current environment that you are importing into (satellite)                                                                                                                                                                                     |
