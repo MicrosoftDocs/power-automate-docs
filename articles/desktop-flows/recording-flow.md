@@ -40,7 +40,7 @@ To record a flow that automates desktop or/and web applications:
 
     ![Screenshot of recording context menu.](./media/recording-flow/recording-context-menu.png)  
 
-1. When the recording process is completed, select **Finish** to convert the recorded steps to desktop flow actions. All the UI elements used in the generated UI and web automation actions are added automatically to the UI elements pane.
+1. When the recording process is completed, select **Done** to convert the recorded steps to desktop flow actions. All the UI elements used in the generated UI and web automation actions are added automatically to the UI elements pane.
 
     > [!NOTE]
     > The UI elements captured from web applications using the recorder are custom and can't be edited through the Visual editor. You can find more information regarding editing UI elements and creating custom selectors in [Build a custom selector](build-custom-selectors.md).
