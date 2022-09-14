@@ -34,7 +34,7 @@ The Automation Kit supports an automation CoE with the following components.
 
 1. Automation Project: A canvas app that supports requesting automation projects and submitting them for approval.
 1. Automation Center: A model-driven app for creating and maintaining automation assets such as master data records, mapping resources and environments, and assigning roles to employees.
-1. Automation Solution Manager: <!--??? -->
+1. Automation Solution Manager: Canvas app in Satellite environments to enable the metering of solutions and their artifacts.
 1. Cloud flows that sync data from satellite environments in near real time to the main environment using Dataverse tables.
 1. A Power BI dashboard to provide insights and monitor your automation assets.
 
@@ -46,6 +46,3 @@ The components of the kit are contained in the following two solutions.
 A satellite environment is where the automation projects are developed, tested, and then deployed to production. The production satellite is configured to monitor and meter solutions and solution artifacts for an automation project. 
 
 The data from the metered solutions syncs to the main environment in near real time for monitoring on a dashboard.
-
-<!-- > [!div class="nextstepaction"]
-> [Next step: Core components for Power Automate RPA SAP GUI automation](core-components.md) -->

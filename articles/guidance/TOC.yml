@@ -108,6 +108,8 @@
       href: ./automation-kit/overview/automation-coe-strategy.md
     - name: Introduction
       href: ./automation-kit/overview/introduction.md
+    - name: App Roles
+      href: ./automation-kit/overview/app-roles.md
     - name: Set up the automation kit
       items:
       - name: Pre-requisites

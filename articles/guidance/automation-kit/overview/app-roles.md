@@ -19,6 +19,8 @@ ms.reviewer: deonhe
 
 # App roles
 
+The following table outlines key application user roles of the Automation Kit.
+
 | **Role**                | **Description**                                                                                                                                                                                                                                                                                                                              |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Business Process Owner  | Process owners, responsible for approving automation project requests                                                                                                                                                                                                                                                                        |

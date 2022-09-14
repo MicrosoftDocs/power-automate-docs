@@ -42,6 +42,8 @@ Once the environment is created, enable the Power Apps component framework.
 5. Turn on (Enable) **Power Apps component framework for canvas apps.**
 6. Click **Save**.
 
+### Creator Kit Import
+
 Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-kit/overview).
 
 1. Download the [Power Platform Creator Kit](https://aka.ms/creatorkitdownload).
@@ -52,6 +54,10 @@ Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-k
 1. Select the Creator Kit solution from File Explorer (CreatorKitCore_x_x_x_x_managed.zip).
 1. Select Import.
 Wait for the Creator Kit to finish importing before continuing to next step.
+
+### Automation Kit Main Solution Import
+
+1. Download the most recent release of the Automation Kit main managed solution from the Assets section of [https://github.com/microsoft/powercat-automation-kit/releases](https://github.com/microsoft/powercat-automation-kit/releases)
 1. On the left pane, select **Solutions**.
 1. Select **Import**, and then **Browse**.
 1. Select the Automation CoE main solution (**AutomationCoEMain_x_x_x_x_managed.zip**).

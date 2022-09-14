@@ -29,7 +29,7 @@ The following checklist provides an overview of the key steps, to assist you in 
 - Provisioned the approvals solution (optional).
 - Confirmed all flows in the solution are turned on.
 - Assigned the security roles that follow.
-- Shared the apps with appropriate users, using the guidance that follows.
+- Shared the Canvas apps with appropriate users, using the guidance that follows.
 
 ## Checklist for satellite
 
@@ -39,7 +39,7 @@ The following checklist provides an overview of the key steps, to assist you in 
 - Imported AutomationCoESatellite_x_x_x_x_managed.
 - Configured environment variables that follow.
 - Confirmed all flows in the solution are enabled.
-- Shared the app with appropriate users, using the guidance that follows.
+- Shared the Canvas apps with appropriate users, using the guidance that follows.
 
 ## Checklist for configuration data
 
@@ -93,6 +93,3 @@ calculation Formula
 |---------------------------|-------------------|-------------------------------------------------|
 | Successful Run, no errors | \$44.27           | Cost per Instance minus Overhead %              |
 | Failure                   | \-\$28.65         | Cost to Remediate per Instance minus Overhead % |
-
-<!-- > [!div class="nextstepaction"]
-> [Next step: Core components for Power Automate RPA SAP GUI automation](core-components.md) -->

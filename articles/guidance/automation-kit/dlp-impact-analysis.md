@@ -53,9 +53,6 @@ Some of the fields in the filter include the following.
 - Module – This is the module to which the action belongs, for example, the scripting module.
 - Action – The individual actions that are under **Module** > **Scripting**. These include, Run DOS command, Run JavaScript, Run Python script, etc.
 
-
-<!--todo: removing this. Why is it needed here, it seems it needs context: **Occurrences** are how many times the action is used in the desktop flow. -->
-
 ### Scenario – Analyze impact of the scripting module
 
 >[!NOTE]

@@ -82,6 +82,7 @@ Microsoft recommends that you have the satellite solution imported inside your p
 
    For this example, we're importing to the environment named **Contoso_Prod.**
 
+1. Download the most recent release of the Automation Kit satellite managed solution from the Assets section of [https://github.com/microsoft/powercat-automation-kit/releases](https://github.com/microsoft/powercat-automation-kit/releases)
 1. On the left pane, select **Solutions**.
 1. Select **Import**, and then **Browse**.
 1. Select the Automation CoE satellite solution (**AutomationCoESatellite_x_x_x_x_managed.zip**).

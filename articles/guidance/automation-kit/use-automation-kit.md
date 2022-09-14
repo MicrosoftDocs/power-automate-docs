@@ -136,8 +136,7 @@ The last 3 digits will default to 001. If you have multiple solutions for a sing
 
 ### Meter solution artifacts
 
-<!--todo: I don't understand this. please clarify.-->
-This is where we meter the artifacts for the Flow Sessions to show up in our main environment.
+The section defined how meter the artifacts for the Flow Sessions so that telemetry shows up in our main environment.
 
 1. We can get to the solution screen from the home screen by selecting the name of the mapped solution.
 

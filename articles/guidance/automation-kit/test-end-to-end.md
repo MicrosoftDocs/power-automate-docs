@@ -18,13 +18,13 @@ ms.reviewer: deonhe
 
 # Project end to end scenario
 
-The following test cases are full end-to-end processes. End-to-end for an automation project consists of the following. <!--todo: repetition. needed?-->
+The following test cases are full end-to-end processes.
 
 1. Create an automation project request.
 1. The request is approved or rejected. Approvals are sent to the business process owner or fallback if no business process owner is selected.
 1. Project admin maps the automation project to a new or existing environment.
 1. The maker creates a solution and develops the automation project.
-1. When the solution is deployed to prod (manually for now) <!--todo, when does "for now" end?--> the automation admin maps the solution to project by metering the solution and its artifacts.
+1. When the solution is deployed to prod (manually until ALM Automation actions are available) the automation admin maps the solution to project by metering the solution and its artifacts.
 1. After metering is turned on for the solution, he flow / process can be triggered, and data will sync back to main in near real time.
 1. Verify in the main solution that the flow sessions are being synced.
 1. Use Power BI to verify that the data calculations are correct.
