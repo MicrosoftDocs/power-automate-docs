@@ -123,7 +123,7 @@
       - name: Disable syncing (optional)
         href: ./automation-kit/setup/optional.md
       - name: Setup FAQs
-        href: ./automation-kit/faqs.md    
+        href: ./automation-kit/setup/faqs.md    
     - name: Configure the automation kit
       items:
       - name: Initial configuration
@@ -139,6 +139,6 @@
     - name: Limitations
       href: ./automation-kit/limitations.md
     - name: Release notes
-      href: ./automation-kit/overview/release-notes.md
+      href: ./automation-kit/release-notes.md
     - name: Feedback and support
       href: ./automation-kit/feedback-support.md
