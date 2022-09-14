@@ -1,6 +1,6 @@
 ---
-title: Recording in a desktop flow | Microsoft Docs
-description: Recording in a desktop flow
+title: Record desktop flows | Microsoft Docs
+description: Record desktop flows
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
@@ -13,7 +13,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Record flows in Power Automate Desktop
+# Record desktop flows
 
 Power Automate for desktop enables you to design flows automatically by replicating the task you wish to automate.
 
@@ -105,9 +105,9 @@ Input Method Editors (IMEs) are software components that enable users to input t
 
 Power Automate for desktop supports the use of IMEs during the flow recording procedure. To populate a text field using an IME:
 
-1. Right-click on the text field and select **Add text with IME** on the displayed menu.
+1. Right-click on the text field and select **Populate text field** on the displayed menu.
 
-    ![Screenshot of the Add text with IME menu option.](./media/recording-flow/add-text-with-ime-option.png)
+    ![Screenshot of the Populate text field menu option.](./media/recording-flow/add-text-with-ime-option.png)
 
 1. Populate the popup dialog with the desired text using an IME.
 
