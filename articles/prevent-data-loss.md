@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/27/2022
+ms.date: 09/14/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -171,10 +171,10 @@ When your tenant is opted into the user experience in the Power Platform, your a
  
 ## DLP enforcement
 - Enforcement and suspension 
-    - When a flow is created or changed, the flow is evaluated against the current set of DLP policies. If needed, the enforcement will be asynchronous and occur within 24 hours.
-    - When a DLP policy is created or changed, a background job scans all existing flows in the environment, evaluates them, and then suspends the flows that violate the policy. The enforcement will be asynchronous and occur within 24 hours. If a DLP policy change occurs when the previous DLP policy set was still being evaluated, then the evaluation is restarted to ensure the latest policies are enforced. 
-    - Once a week, a background job does a consistency check of all existing flows in the environment against the DLP policies to double check that a DLP policy check wasn't missed. 
-- Reactivation - If the DLP enforcement background job finds a desktop flow that no longer violates any DLP, then the background job automatically turns it on. However,  the DLP enforcement background job won't automatically turn on cloud flows.
+    - When you create or edit a flow, Power Automate evaluates it against the current set of DLP policies. If needed, the enforcement is asynchronous and occurs within 24 hours.
+    - When you create or change a DLP policy, a background job scans all existing flows in the environment, evaluates them, and then suspends the flows that violate the policy. The enforcement is asynchronous and occurs within 24 hours. If a DLP policy change occurs when the previous DLP policy is being evaluated, then the evaluation restarts to ensure the latest policies are enforced. 
+    - Weekly, a background job does a consistency check of all existing flows in the environment against the DLP policies to confirm that a DLP policy check wasn't missed. 
+- Reactivation - If the DLP enforcement background job finds a desktop flow that no longer violates any DLP policy, then the background job automatically turns it on. However, the DLP enforcement background job won't automatically turn on cloud flows.
 
 ## DLP enforcement change process
 Periodically, DLP enforcement changes are needed. These changes can be a due to new DLP capabilities, an enforcement gap being filled, or a bug fix.
