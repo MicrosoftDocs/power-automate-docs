@@ -15,7 +15,7 @@ search.audienceType:
 ---
 # Record desktop flows
 
-Power Automate for desktop enables you to design flows automatically by replicating the task you wish to automate.
+Power Automate enables you to design desktop flows automatically by replicating the tasks you wish to automate.
 
 ## Record desktop and web flows
 
@@ -36,7 +36,7 @@ To record a flow that automates desktop or/and web applications:
 
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 
-    To see the available actions of a specific element, right-click on it to open its context menu. The available option depend on the nature of the selected element.
+    To see the available actions for a specific element, right-click on it to open its context menu. The available options depend on the nature of the selected element.
 
     ![Screenshot of recording context menu.](./media/recording-flow/recording-context-menu.png)  
 
@@ -59,7 +59,7 @@ The recorder supports steps related to dragging and dropping the mouse pointer. 
 
 While automating desktop and web applications using the recorder, you may need to handle drop-down lists.
 
-The Power Automate recorder displays a custom screen every time you select a drop-down list to help you choose the desired values. This custom screen allows you to choose one or more values depending on whether the drop-down menu is a multi-select.
+The Power Automate recorder displays a custom screen every time you select a drop-down list and helps you choose the desired values. This custom screen allows you to choose one or more values depending on whether the drop-down list is multi-select.
 
 During runtime, Power Automate automatically chooses the defined values and selects the **OK** button of the list.
 
@@ -71,7 +71,7 @@ To launch a web browser instance while recording web flows, you can use three di
 
 The first method is to select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer.
 
-After selecting the proper browser, the recorder will detect the loaded web page automatically and configure the launching browsing step accordingly.
+After you've selected the proper browser, the recorder will detect the loaded web page automatically and configure the launching browsing step accordingly.
 
 ![Screenshot of the Launch new web browser option.](./media/recording-flow/launch-new-web-browser-option.png)
 
@@ -83,9 +83,9 @@ The last method to launch a browser is to manually launch it through its shortcu
 
 Like drop-down lists, the Power Automate recorder displays custom screens to help you handle date and color pickers on web pages.
 
-When you interact with a date picket, the recorder opens a text field where you can insert the desired date in the specified format.
+When you interact with a date picker, the recorder opens a text field where you can insert the desired date in the specified format.
 
-This field supports the following input types:
+The custom screen appears for the following HTML input types:
 
 - date
 - datetime-local
@@ -176,13 +176,13 @@ You can edit manually any actions created through the recorder once the recordin
 
 - **Issue**: While running a flow created through image-based recording, the click may be sent to the wrong place.
 
-    **Workarounds**: Edit the auto-generated action “Move mouse to image” through the flow designer and decrease the Tolerance parameter in the Advanced settings.
+    **Workarounds**: Edit the auto-generated action **Move mouse to image** through the flow designer and decrease the Tolerance parameter in the Advanced settings.
 
-- **Issue**: The “Extract text from image” popup that appears after sending a right-click using the recorder, may hide behind the popup of the application.
+- **Issue**: The **Extract text from image** popup that appears after sending a right-click using the recorder, may hide behind the popup of the application.
 
     **Workarounds**: Send the right-click to another place on the screen.
 
-- **Issue**: Any keystrokes sent to a maximized RDP window through an image-based recording are not being recorded.
+- **Issue**: Any keystrokes sent to a maximized RDP window through an image-based recording aren't recorded.
 
     **Workarounds**: Resize the RDP window so that it doesn't cover the full screen.
 
