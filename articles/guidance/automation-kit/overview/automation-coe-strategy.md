@@ -1,9 +1,9 @@
 ---
-title: Overview of the Automation Kit Center of Excellence | Microsoft Docs
-description: Overview of Automation Kit Center of Excellence.
+title: Automation Center of Excellence Strategy Using Automation Kit | Microsoft Docs
+description: Automation Center of Excellence Strategy Using Automation Kit.
 suite: flow
 documentationcenter: na
-author: grarchib
+author: Grant-Archibald-MS
 manager: marcsc
 editor: ''
 ms.custom: guidance
@@ -155,7 +155,7 @@ The Automation Kit and components of the CoE Kit including the ALM Accelerator c
 
 ## Automation Maturity Model
 
-The [Power Platform automation maturity model](https://docs.microsoft.com/power-platform/guidance/automation-coe/automation-maturity-model-overview) describes capabilities in oranganizational automation maturity.
+The [Power Platform automation maturity model](https://docs.microsoft.com/power-platform/guidance/automation-coe/automation-maturity-model-overview) describes capabilities in organizational automation maturity.
 
 The model provides a framework to look at how the Automation Kit and the ALM Accelerator can be combined to help customers grow their maturity in adopting Center of Excellence practices.
 
