@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/05/2022
+ms.date: 09/14/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -186,7 +186,7 @@ You can share a copy of a cloud flow with another user, who can then use the def
 
 ## FAQ
 
-### What happens if the user who created a shared flow leaves the organization?
+### Manage flows when the user who created a shared flow leaves the organization
 
 If the shared flow still has an active owner, the flow continues to run. 
 
@@ -196,13 +196,15 @@ If the shared flow still has an active owner, the flow continues to run.
 
  If there's no active owner for a flow, you should change the owner. To change the owner of a flow, make a copy of the flow, and then let the intended owner create the flow from the copy.
 
-### How can I change the owner of a solution-aware cloud flow?
-Solution cloud flow ownership can be changed by [editing the flow details](change-cloud-flow-owner). 
+### Change the owner of a solution-aware cloud flow
 
-### How can I change the owner of a non-solution-aware cloud flow?
+[Edit the details](change-cloud-flow-owner) to change the ownership of a solution-aware cloud flow. 
+
+## Change the owner of a non-solution-aware cloud flow
+
 To change the ownership of a non-solution-aware cloud flow, you must create a new flow via export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
 
-### What happens when ownership of a solution-aware cloud flow is shared with a user who isn't Dataverse?
+### Share ownership of a solution-aware cloud flow with a user who isn't in Dataverse
 When you share ownership of a solution-aware cloud flow with a user who isn't in Dataverse, that user gets added into Dataverse automatically to facilitate sharing. In a default environment, Azure Active Directory (AAD) users have the EnvironmentMaker role. In a non-default environment, AAD users and groups are added into Dataverse but they aren't assigned the EnvironmentMaker role automatically. Therefore, they may only be able to run the flow until an administrator assigns them a role. If the user doesn't have an appropriate role, they will see a detailed error message.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
