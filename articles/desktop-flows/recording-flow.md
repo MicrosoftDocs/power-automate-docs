@@ -31,19 +31,13 @@ To record a flow that automates desktop or/and web applications:
 
     The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately. During each recording session, the recorder can generate both UI and browser automation actions.
 
-    > [!NOTE]
-    > When the browser extension isn't able to communicate with Power Automate, the browser window is identified as a desktop application. As a result, the recorder tries to grab UI elements for a desktop application and not a web page.
-
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 
     To see the available actions for a specific element, right-click on it to open its context menu. The available options depend on the nature of the selected element.
 
     ![Screenshot of recording context menu.](./media/recording-flow/recording-context-menu.png)  
 
-1. When the recording process is completed, select **Done** to convert the recorded steps to desktop flow actions. All the UI elements used in the generated UI and web automation actions are added automatically to the UI elements pane.
-
-    > [!NOTE]
-    > The UI elements captured from web applications using the recorder are custom and can't be edited through the Visual editor. You can find more information regarding editing UI elements and creating custom selectors in [Build a custom selector](build-custom-selectors.md).
+1. When the recording process is completed, select **Done** to convert the recorded steps to desktop flow actions. All the UI elements used in the generated UI and web automation actions are added automatically to the UI elements pane. You can find more information regarding UI elements in [Automate using UI elements](ui-elements.md).
 
     ![Screenshot of the generated actions of the recorded flow.](./media/recording-flow/recorded-flow.png)
 
