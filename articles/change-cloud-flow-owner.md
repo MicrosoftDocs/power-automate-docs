@@ -9,7 +9,7 @@ editor: ''
 tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/14/2022
+ms.date: 08/27/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,6 +25,12 @@ An owner, co-owner, or an admin can change the owner of a solution-aware flow to
 You can change the owner to an individual (not a distribution list) or a user account used as a service account. If the flow uses a service account, ensure it's licensed correctly to avoid [multiplexing](/power-platform/admin/power-automate-licensing/faqs#multiplexing).
 
 Follow these steps to change the owner of a flow.
+
+>[!IMPORTANT]
+>To perform this action, the flow must be referenced in a solution.
+
+
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 
 1. On the left pane, select **Solutions**.
 
@@ -74,3 +80,4 @@ If the flow is a **manual** flow, the flow runs under the license of the user wh
 
 To learn how to export and import non-solution-aware flows, go to this [video](https://www.youtube.com/watch?v=K7_xWJvEPUc).
 
+The owner of a flow left the company. How can we ensure it works without interruptions? [Learn more.](/power-platform/admin/power-automate-licensing/faqs#the-owner-of-a-flow-left-the-company-how-can-we-ensure-it-works-without-interruptions)

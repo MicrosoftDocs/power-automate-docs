@@ -35,16 +35,16 @@ search.audienceType:
    - A device that runs Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, Windows 11 Home, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019 or Windows Server 2022. ARM devices aren't supported.
       
       - Minimum hardware
-        - Processor: 1.00 GHz or faster with two or more cores 
+        - Processor: 1.00 GHz or faster with two or more cores. For unattended mode, four or more cores are needed.
         - Storage: 1 GB
-	     - RAM: 2 GB
+	      - RAM: 2 GB
 
       - Recommended hardware
-        - Processor: 1.60 GHz or faster with two or more cores  
+        - Processor: 1.60 GHz or faster with two or more cores. For unattended mode, four or more cores are needed.
         - Storage: 2 GB
-	     - RAM: 4 GB
-	     - GPU acceleration
-     - .NET Framework 4.7.2 or later 
+        - RAM: 4 GB
+	      - GPU acceleration
+        - .NET Framework 4.7.2 or later 
 
 > [!NOTE]
 > - The system requirements do not include the resources required for the applications involved in the flows.
