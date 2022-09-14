@@ -19,7 +19,7 @@ ms.reviewer: deonhe
 
 # Automation Center of Excellence Strategy Using Automation Kit
 
-As part of setting up your Automation Center of Excellence strategy you can combine the Automation Kit and together with the [ALM Accelerator](http://www.github.com/microsoft/coe-starter-kit) from the CoE Kit to provide.
+As part of setting up your Automation Center of Excellence strategy you can combine the Automation Kit and together with the [ALM Accelerator](http://www.github.com/microsoft/coe-starter-kit) from the CoE Kit to provide key elements of your Automation Center of Excellence strategy.
 
 ## Automation Kit
 
@@ -39,15 +39,15 @@ The goal of Automation Kit is to enable organizations to manage, govern and scal
 
 In order to define impact for automation, it requires executive sponsorship and deep collaboration across many roles across the organization.
 
-The process can start with settings goals for overall automation ambitions like target savings over one, two or three years or  targeted efficiency gains.
+The process can start with settings goals for overall automation ambitions, like target savings over one, two or three years or targeted efficiency gains.
 
-The executive sponsor from a business unit which could be a manager or managing director who is responsible and owns overall business process and improvement ambitions.
+The executive sponsor from a business unit which could be a manager or managing director would collaborate to share responsibility and own overall business process and improvement ambitions.
 
-Individual department leads (For example Finance) or sub departments (For example Accounts Payable) who may be the automation owner. The owners will specify and develop the automation solutions.
+Individual department leads (For example Finance) or sub departments (For example Accounts Payable) who may be the automation owner can specify and develop the automation solutions.
 
-The collaboration needs the Microsoft 365 or Power Platform Center of Excellence team to enable the Automation Center of Excellence with guardrails, governance and setting best practices. For unattended automations will need infrastructure provisioning, networking and security.
+The collaboration often needs collaboration with the Microsoft 365 or Power Platform Center of Excellence team to enable the Automation Center of Excellence. These teams can provide guardrails, governance and setting best practices. For unattended automations they will need infrastructure provisioning, networking and security to support operation of the deployed solutions.
 
-For the Risk and Compliance side of the diagram the corporate rules, regulations, cyber-security, data privacy and auditing requirements.
+For the Risk and Compliance side of the diagram the corporate rules, regulations, cyber-security, data privacy and auditing requirements will need to be consulted and involved in the process.
 
 ## Demo Lifecycle
 
@@ -55,7 +55,7 @@ Using the Automation Kit allows a journey from Project Definition or Ideation to
 
 ![Automation Kit Demo Lifecyle](../media/automation-kit-demo-lifecycle.png)
 
-- **CVP or Area Manager** Define the automation goals
+- **CVP or Area Manager** - Define the automation goals
 
 - **Process Owner** - Create the Automation Projects in the system, defining process volume / frequency, characteristics of current throughput of current automation and the expected ROI.
 
@@ -77,15 +77,15 @@ There are different normally different satellite production environments that ex
 
 Between these environments there is a near real time synchronization process that includes Cloud or Desktop flow telemetry, machine and machine group usage and audit logs.
 
-This information is reflected in the automation kit Power BI dashboard to the impact of the deployed solutions.
+This information is reflected in the Automation Kit Power BI dashboard to the impact of the deployed solutions.
 
 ## Near Real Time Data Synchronization
 
-The synchronization processes on only the bar minimum required to calculate the ROI and SLA, it does not focus on creating complete inventory of all low code assets. 
+The synchronization processes only the bare minimum required to calculate the ROI and SLA, it does not focus on creating complete inventory of all low code assets.
 
 ![Automation Kit Data Synchronization](../media/automation-kit-data-sychronization.png)
 
-The components in the satellite environments that could be organized by geography or capability push information in near real time to the Automation Main environment to metered Cloud and Desktop flows.
+The components in the satellite environments could be organized by geography or capability. Cloud flows in these environments push information in near real time to the Automation Main environment to metered Cloud and Desktop flows.
 
 ## Automation Center Of Excellence
 
@@ -101,13 +101,13 @@ In the center of the diagram contain the specific components within a specific l
 
 #### Bot Development Cycle
 
-Include Citizen developers who need a guides experience in terms of how they go from identifying an opportunity with building a bot, to going ahead and deploying it and maintaining it.
+Include Citizen developers who need a guided experience in terms of how they go from identifying an opportunity with building a bot, to going ahead and deploying it and maintaining it.
 
 #### Automation CoE Members
 
 Automation CoE members can build out patterns and templates that allow Citizen Developers to go ahead and focus on the business problems.
 
-The Automation CoE team can deal with automation of DevOps pipelines and Code review processes to Citizen developer accelerate bot building journey.
+The Automation CoE team can deal with automation of DevOps pipelines and Code review processes to accelerate the Citizen developers bot building journey.
 
 #### Infrastructure Ops
 
@@ -127,17 +127,17 @@ An Automation CoE may not not always have full access to perform these activitie
 
 This is where you get to see the outcomes of the prior stages. It allows projects tracked from early in the Bot development lifecyle. Key elements can include assigning the business case to the project and tracking the impact that the automation project is delivering.
 
-Using Dashboards you can view the outcome for a particular use case and the value is being obtained through the investments.
+Using Dashboards you can view the outcome for a particular use case and the value that is being obtained through the investments.
 
-As the organization grows in size in scale providing the ability to manage and govern data retention and integrate with Data lake to gain long term insights from the results of Automation Projects.
+As the organization grows in size in scale, providing the ability to manage and govern data retention and integrate with Data lake can allow organizations to gain long term insights from the results of Automation Projects.
 
 ### Automation / CoE Kit Mapping
 
-The Automation Kit and components of the CoE Kit including the ALM Accelerator can be mapped to this diagram as follows
+The Automation Kit and components of the CoE Kit including the ALM Accelerator can be mapped to the Automation Center Of Excellence diagram as follows
 
 #### Bot Development Lifecycle
 
-- **Ideation** – The automation kit provides a process to create potential automation projects and approval process to determine which automation projects to invest time in.
+- **Ideation** – The automation kit provides a process to create potential automation projects and give an approval process to determine which automation projects to invest time in.
 
 - **Build** – The ALM Accelerator provides the ability to build a managed deployment of a RPA solution with versioning applied from solutions stored in Source Control.
 
@@ -145,9 +145,9 @@ The Automation Kit and components of the CoE Kit including the ALM Accelerator c
 
 #### ALM Components
 
-- **Code Review** – For solutions stored in Azure DevOps with the ALM Accelerator the ALM Accelerator YAML extension to unpack the robin script definition from the exported solution to an individual file for side.
+- **Code Review** – For solutions stored in Azure DevOps with the ALM Accelerator. ALM Accelerator Azure DevOp extensions allow the solution to be unpacked the script definition from the exported solution versions to be compared for changes side by side.
 
-- **Monitoring** – The Automation kit has a near real time tracking process to use executions information to measure the impact of deployed solutions.
+- **Monitoring** – The Automation kit provides a near real time tracking process to use executions information to measure the impact of deployed solutions.
 
 - **Data Loss Prevention** – Determine the impact of DLP rules on deployed desktop flows using the Automation Kit.
 
