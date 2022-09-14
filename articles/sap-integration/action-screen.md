@@ -24,28 +24,42 @@ search.audienceType:
 contributors:
  - EllenWehrle
  - tapanm-msft
+ - galitskyd
 ---
 
 # Manage complex APIs with new function detail screen (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
-Enterprise software systems like SAP have very complex APIs, often with 30-50 arguments and several hundred fields per argument. In some cases, an API can have 2,000 – 4,000 fields in the definition. 
+Enterprise software systems like SAP have very complex APIs, often with 30-50 arguments and several hundred fields per argument. In some cases, an API can have 2,000 – 4,000 fields in the definition.
 
- The new action screens improve the user experience in Power Automate by establishing the complex API function details to prevent API exceptions being thrown by the flow maker. This will prevent administrators from having manually research and fill in the arguments in raw JSON. 
+ The new action screens improve the user experience in Power Automate by establishing the complex API function details and to prevent API exceptions being thrown by the flow maker. This will prevent administrators from having manually research and fill in the arguments in raw JSON.
 
+## New Call SAP function detail screen
 
-
-## New function detail screen
-
-The new function detail screen requires the following four fields to be completed:
+The new Call SAP function detail screen helps the SAP BASIS administrator easily complete the following four inputs:
 
 - System – the system to be called
-- API/Procedure – the API or published stored procedure to be called
-- Inputs – a tabular list of parameters to be passed to the API/Procedure
-- Outputs – a tabular list of parameters to be returned the API/Procedure. The purpose here is to allow the maker to prune unnecessary data returned by the system of record.
+- RFC API – the API to be called
+- Inputs – a tabular list of parameters to be passed to the API
+- Outputs – a tabular list of parameters to be returned the API. The purpose here is to allow the administrator to prune unnecessary data returned by the system of record.
 
     ![](media/action-screen/image2.png)
+
+## Get started
+An SAP BASIS administrator will need to complete the Call RFC function details.
+
+1. Sign in to [Power Automate](<https://make.powerautomate.com>).
+1. In the left navigation panel, select **Solutions**.
+1. Select the  **SAP Integration** solution.
+1. In the left navigation panel, select **Cloud flows**.
+1. Select a flow.
+1. Go to the command bar and click **Edit**. You will be able to see the flow.
+1. Click the **New step** button.
+1. The "Choose an operation" flow card will appear. Type SAP ERP into the text field to bring up the SAP ERP connector.
+1. Select the **SAP ERP** connector.
+1. In the "SAP system" field, add your JSON string containing system parameters.
+1. In the "RFC name" field, select an RFC API that you want to modify.
 
 ### Access new screen
 
@@ -64,21 +78,19 @@ Click on the **System** field to see a dropdown appear with options to select.
 
 Click on the **API** field to see a list of APIs that match the first three letters entered. Select the API
 
-
-
-    ![](media/action-screen/image4.png)
+![](media/action-screen/image4.png)
 
 ### Load API
 
-Once you have selected the API, the definition of the API should be queried and the required Input and Output parameters should be loaded by default. 
+Once you have selected the API, the definition of the API should be queried and the required Input and Output parameters should be loaded by default.
 
 ### Select Parameter
 
-When you select **Add New Parameter**, display a list of valid parameters for the API, filtering out parameters that have already been added to the table. Depending on the system of record, use the following logic:
+When you select **Add New Parameter**, a display list of valid parameters for the API filters out parameters that have already been added to the table. Use the following logic for SAP API:
 
-- If using SAP API, use the SAP function RFC\_GET\_FUNCTION\_INTERFACE and set parameter FUNCNAME = '**&lt;API/Procedure&gt;**'. The valid parameters are returned in the PARAMS parameter.
-
-- If using Oracle Stored Procedure, use the following SQL: SELECT \* FROM ALL\_ARGUMENTS WHERE OBJECT\_NAME = '**&lt;API/Procedure&gt;**' ORDER BY POSITION.
+- Use the SAP function RFC\_GET\_FUNCTION\_INTERFACE
+- Set parameter FUNCNAME = '**&lt;API/Procedure&gt;**'. 
+The valid parameters are returned in the PARAMS parameter.
 
     ![](media/action-screen/image6.png)
 
@@ -100,6 +112,6 @@ The following example shows a state where a user has selected all the parameters
 
 ### See also
 
-- [Prepare and set up SAP integration with Power Platform (preview)](set-up-prepare.md)
+- [Set up SAP integration with Power Platform (preview)](set-up-prepare.md)
 - [Understand prebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
 - [Overview of SAP integration with Power Platform (preview)](overview.md)

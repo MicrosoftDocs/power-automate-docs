@@ -1,5 +1,5 @@
 ﻿---
-title: Prebuilt solution available for integrating SAP with Power Platform (preview)
+title: Understand prebuilt solution available for integrating SAP with Power Platform (preview)
 description: Learn about the different solutions available for SAP integration with Power Platform.
 services: ''
 suite: flow
@@ -22,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Prebuilt solution available for integrating SAP with Power Platform (preview)
+# Understand prebuilt solution available for integrating SAP with Power Platform (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -38,7 +38,7 @@ The prebuilt SAP Integration solution includes the following:
 - Power Automate flows that work behind the scenes automating processes.
 - Additional components and new technical features that support the user experience.
 
-After importing the solution into Power Apps, select **Apps** from the left-pane, you'll be able to view all canvas apps included with this solution.
+After importing the solution into Power Apps, look to the left-side panel. You can click on **Apps**, **Flows**, and  **Solutions** to explore and get to know the solution from an internal standpoint. 
 
 | Module name | App name | Description |
 | - | - | - |

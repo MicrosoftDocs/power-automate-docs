@@ -34,15 +34,7 @@ SAP ERP is enterprise resource planning software developed by SAP SE. SAP ERP is
 
 ### SAP ERP connector enhancements
 
-The SAP ERP (V2) (preview) connector has been updated with the following improvements:
-
-- RFC Call now uses environment variables for system connection credentials
-- New RFC Call message server support
-- New action screens allow connection parameter input
-- New Parse RFC Read Table action
-- Distinction now maintained between required and optional parameters
-- SAP BAPIs/functions with over 1000 parameters now properly render
-
+The SAP ERP connector has been updated with a new a new function detail screen with dropdowns that ease connection parameter input.
 
 ### Prebuilt solution
 
@@ -64,11 +56,6 @@ SAP integration with the Power Platform will help your organization achieve the 
 
 ## Get started
 
-1. Complete the [public preview signup form](<https://aka.ms/PowerAutomate-SAPIntegration-Signup>). Completing the form may give you access to the team that works on the SAP Integration.
-
-1. Assemble a team of IT administrators to prepare for and set up the SAP ERP integration with Power Platform. [set up and prepare](set-up-prepare.md) the required infrastructure.
-2. A maker sets up Power Apps with the following:  
-
-- An appropriate environment 
-- The Microsoft Dataverse connector
-- The SAP ERP connector
+1. Join the Power Platform + SAP Public Preview Teams site to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
+1. Assemble a team of IT administrators to [set up the SAP ERP integration with Power Platform](set-up-prepare.md).
+1. Review and establish the necessary prerequisites before setting up SAP integration with the Power Platform.
