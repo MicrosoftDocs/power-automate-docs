@@ -23,7 +23,6 @@ search.audienceType:
 ---
 
 # Send and receive push notifications
-<!--QUESTION: This article doesn't cover how to SEND notifications. Should it? Or should the title be changed?-->
 
 The Power Automate mobile app for Android allows you to send and receive push notifications on your mobile device.  The list of notifications you've received was previously called Activity Feed.
 
