@@ -1,12 +1,12 @@
 # Power Automate Documentation
 
-This is the GitHub repository for the technical product documentation for **Power Automate**. This documentation is published at [Microsoft Power Automate documentation](https://docs.microsoft.com/power-automate).
+This is the GitHub repository for the technical product documentation for **Power Automate**. This documentation is published at [Microsoft Power Automate documentation](https://learn.microsoft.com/power-automate).
 
 ## How to contribute
 
-Thanks for your interest in contributing to [Microsoft Docs](https://docs.microsoft.com/), home of technical content for Microsoft products and services.
+Thanks for your interest in contributing to [Microsoft Docs](https://learn.microsoft.com/), home of technical content for Microsoft products and services.
 
-To learn how to make contributions to the content in this repository, start with our [contributor guide](https://docs.microsoft.com/contribute).
+To learn how to make contributions to the content in this repository, start with our [contributor guide](https://learn.microsoft.com/contribute).
 
 ## Code of conduct
 
