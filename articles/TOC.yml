@@ -56,8 +56,8 @@
         href: ./mobile/widgets.md
       - name: Manage approvals
         href: ./mobile/manage-approvals.md
-      - name: Send and receive push notifications
-        href: ./mobile/send-receive-push.md
+      - name: Receive push notifications
+        href: ./mobile/receive-push.md
       - name: Manage cloud flows
         href: ./mobile/manage-cloud-flows.md
     - name: iOS
