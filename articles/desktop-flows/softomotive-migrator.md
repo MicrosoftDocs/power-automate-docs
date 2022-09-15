@@ -192,7 +192,7 @@ Not supported by the migration tool.  Administrators can apply a workaround in t
 
 **Get Global Variable / Set Global Variable** 
 
-Not supported by the migration tool.  Possible workarounds include the ability to [create and manage tables in Dataverse](/learn/modules/create-manage-entities/) create a cloud flow that calls for a global variable (Get Global Variable), passes it to a desktop flow for consumption, then have an output variable from the desktop flow passed back to the Dataverse table if needed (Set Global Variable). 
+Not supported by the migration tool.  Possible workarounds include the ability to [create and manage tables in Dataverse](/training/modules/create-manage-entities/) create a cloud flow that calls for a global variable (Get Global Variable), passes it to a desktop flow for consumption, then have an output variable from the desktop flow passed back to the Dataverse table if needed (Set Global Variable). 
 
 **Enter Locked Region** 
 
@@ -204,7 +204,7 @@ Not supported by the migration tool.
 
 **Add Queue Item in Queue** 
 
-Not supported by migration tool. Review [Monitor desktop flow queues](monitor-desktop-flow-queues.md) for information on queue functionality in Power Automate.  Other possible workarounds include the ability to [create and manage tables in Dataverse](/learn/modules/create-manage-entities/) where cloud flow monitors, schedules, or triggers can be used to load data. 
+Not supported by migration tool. Review [Monitor desktop flow queues](monitor-desktop-flow-queues.md) for information on queue functionality in Power Automate.  Other possible workarounds include the ability to [create and manage tables in Dataverse](/training/modules/create-manage-entities/) where cloud flow monitors, schedules, or triggers can be used to load data. 
 
 **Get Queue Item in Queue** 
 

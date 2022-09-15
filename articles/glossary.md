@@ -136,7 +136,7 @@ Flows can have one or more triggers.
 
 ## Learn more
 
-* Take a [guided learning tour](/learn/paths/automate-process-using-flow) of Power Automate
+* Take a [guided learning tour](/training/paths/automate-process-using-flow) of Power Automate
 * Learn the basics of Power Automate in the [getting started guide](getting-started.md)
 
 
