@@ -1,6 +1,6 @@
 ---
-title: Overview of the Power Automate mobile app for Android | Microsoft Docs
-description: Provides an overview of installing the Power Automate mobile app for Android, changing environments, and limitations of the app.
+title: Power Automate mobile app for Android overview
+description: This article provides an overview of the Microsoft Power Automate mobile app for Android, including installation, changing environments, and limitations of the app.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/12/2022
+ms.date: 09/13/2022
 ms.author: kewaiss
 search.app: 
   - Flow
@@ -21,51 +21,47 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Overview
 
-Experience the same familiar look and feel of the Power Automate portal with Power Automate mobile app for Android. If you've used the previous mobile version, you'll notice some improvements, such as quicker response times and easier navigation.
+# Power Automate mobile app for Android overview
 
-Use Power Automate mobile to do the following scenarios:
+This article provides an overview of the Microsoft Power Automate mobile app for Android, including installation, changing environments, and limitations of the app.
+
+Experience the familiar look and feel of Power Automate on the go with the Power Automate mobile app for Android, where you can:
 
 - [Run instant flows](run-instant-flows.md)
-
 - [Manage approvals](manage-approvals.md)
-
 - [Send and receive push notifications](send-receive-push.md)
-
 - [Manage cloud flows](manage-cloud-flows.md)
+
+&mdash;all from your mobile device.
 
 ## Install the Power Automate mobile app
 
-If you're not signed up for Power Automate, [sign up for free](../sign-up-sign-in.md). Then choose the download link or scan the QR code to download the Power Automate mobile app.
+If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.md). Then scan the QR code below with your mobile device or use the Google Play Store link to install the Power Automate mobile app.
 
 | Android |
 | :---:   |
-| :::image type="content" source="../media/android/google-play.png" alt-text="Screenshot of the Download the Power Automate mobile app for Android from Google Play option.":::  |
+| :::image type="content" source="../media/android/google-play.png" alt-text="Screenshot of the Download the Power Automate mobile app for Android from Google Play button.":::  |
 | :::image type="content" source="../media/android/android-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for Android QR code.":::  |
 
-> [!NOTE]
-> - You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
-> - You'll need the new version of the app (version 3.x.x or later) for the functionality described in the Android articles in this section.
+You'll need version 3.x.x or later to get the functionality that's described in the articles in this section.
 
 ## Change environments
 
-You might have different environments set up depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment so that you can access your flows, approvals, notifications, and more, based on the environment you're in.
+You might have different environments to work in depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment to access your flows, approvals, notifications, and more when you're working on your mobile device.
 
-To change environments:
+1. Open the Power Automate mobile app and sign in with either Azure Active Directory or your Microsoft account.
 
-1. Select the environment icon.
+1. Select the environment icon, and then select the environment you want to access. A check mark appears next to the selected environment.
 
-1. Select the environment you want to access. A check mark appears next to the selected environment.
-
-    :::image type="content" source="../media/android/environment.png" alt-text="Screenshot of environments icon.":::
+    :::image type="content" source="../media/android/environment.png" alt-text="Screenshot of an environment selected in the Power Automate mobile app, with the environment icon highlighted.":::
 
 ## Limitations
 
-Following are the known limitations for the mobile app for Android:
+The Power Automate mobile app for Android has a few limitations:
 
-- Geofencing (location-based trigger) isn't supported. This was formerly a preview feature and was never generally available.
+- Geofencing, or using location-based triggers, isn't supported. This was formerly a preview feature.
 
-- Flow creation and editing aren't supported. Customers told us that they prefer to create and edit in the web portal when building or changing flows. If you’re on the go and need to create or edit, you can log into Power Automate on your mobile’s browser.
+- You can run flows in the mobile app, but not create or edit them. Customers told us that they prefer to create and edit their flows in Power Automate on the web. If you're on the go and need to create or edit a flow, open Power Automate in your mobile device's web browser.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
