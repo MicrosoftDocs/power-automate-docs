@@ -225,6 +225,51 @@ You can use the following registry entry to disable the execution of flows conta
 
 - **1**: The machine won't be able to run desktop flows containing cloud connectors. An appropriate error message will inform users about the set limitation.
  
+ ## Allow users to register their machine to a different tenant in Power Automate machine runtime app
+
+> [!NOTE]
+> - This registry entry applies to Power Automate desktop version 2.24 and later.
+> 
+You can use the following registry entry to allow machine registrations to tenants that are different from the machine joined AAD tenant.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration|AllowedRegistrationTenants|String|
+
+***Value***
+
+- **"AllowedRegistrationTenants": (e.g.: 3EF1D993-CBD4-4DEA-A50E-939AEDB23F21,5B19777D-814C-43F3-9317-CDBAD0846ED8)**: The tenants with the specified IDs listed, will be allowed to be used during machine registration.
+ 
+ ## Allow users to register their machine to any tenant in Power Automate machine runtime app
+
+> [!NOTE]
+> - This registry entry applies to Power Automate desktop version 2.24 and later.
+> 
+You can use the following registry entry to allow machine registrations to any tenant.
+ 
+ |Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration|AllowRegisteringOutsideOfAADJoinedTenant|DWORD|
+
+***Value***
+
+- **1**: To allow machine registration to any tenant.
+
+## Allow users to switch registration of their machine to a different tenant in Power Automate machine runtime app
+
+> [!NOTE]
+> - This registry entry applies to Power Automate desktop version 2.24 and later.
+> 
+You can use the following registry entry to allow switching of machine registration to a different tenant.
+
+ |Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration|AllowTenantSwitching|DWORD|
+
+***Value***
+
+- **1**: To allow switching machine registration to another tenant.
+ 
 ## Learn more
 
 - Learn to [create Power Automate desktop flows](create-flow.md).
