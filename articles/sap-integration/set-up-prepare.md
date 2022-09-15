@@ -71,7 +71,7 @@ SAP integration with the Power Platform requires IT system administrators to est
 
 ### Install on-premises data gateway
 
-The SAP Integration requires that an on-premises data gateway be set up.
+SAP integration with the Power Platform requires that an on-premises data gateway be set up.
 To learn about installing on-premises data gateway, see [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
 [Sign in to the Azure portal](http://www.portal.azure.com) to set up an on-premises data gateway.
