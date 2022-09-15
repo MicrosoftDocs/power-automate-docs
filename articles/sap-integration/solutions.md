@@ -26,27 +26,28 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-SAP is a very complex information system that makes building Power Platform solutions from scratch a very cumbersome processWhile custom SAP solutions can be built from scratch in the Power Platform, it can be a very cumbersome process because SAP is a very complex information system.
+SAP ERP is a complex information business application that often requires custom integration solutions.
 
 To enable you to not only quickly and effectively connect your SAP system to the Power Platform, but to also be able to start communicating and automating workflow data between the two systems, a prebuilt solution is available for you to import into Power Apps.
 
 ## What's included
 
-The prebuilt SAP Integration solution includes the following:
+The prebuilt SAP Integration solution includes a set of components that work together following:
 
-- Power Apps that enable users to have a streamlined view of core SAP ERP business functions.
+### Power Apps
+The Power Apps allow users to have a streamlined view of core SAP ERP business functions on a single screen.
 
 | Canvas App name | Description |
 |-------------------|---------------------|
-| Material Search              | Enables search through SAP materials master   |
-| Purchase Orders              | Contract with vendor to supply goods      |
-| Sales Order Search               | Enables search through SAP sales order master          |
+| Material Search              | Enables search through SAP materials master to find a specific material  |
+| Purchase Orders              | Contracts with vendors to supply goods; the data is retained in SAP to inform internal business units      |
+| Sales Order Search               | Enables search through SAP sales order master to find a specific sales order or to filter for specific set of sales orders that meet defined criteria     |
 | Common Components               |             |
 | Vendor Search                | Enables search through SAP vendor master         |
-| Profit Center Search                |             |
-| Sales Orders               |             |
-| SAP User Search               |             |
-| GL Account Search                |             |
+| Profit Center Search                | Enables search through SAP profit center master            |
+| Sales Orders               | Orders issued by a business to customers; the data is retained in SAP to inform internal business units             |
+| SAP User Search               | Enables the search for SAP users and their IDs            |
+| GL Account Search                | Enables the search through SAP general ledger master data            |
 | Attachments Component                |             |
 | Cost Center Search                |             |
 | Purchase Order Search               |             |

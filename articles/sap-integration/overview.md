@@ -26,9 +26,9 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-SAP ERP is enterprise resource planning software developed by SAP SE. SAP ERP is a centralized system of record that enables many departments within an organization to manage data.
+SAP ERP is a centralized system of record that facilitates the management of data and business processes between many departments within an organization. SAP ERP, developed by SAP SE, serves as the primary enterprise resource planning application for many businesses worldwide.
 
- SAP Integration offers enhanced connectivity capabilities with SAP ERP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The prebuilt solution offers a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
+ SAP integration with the Power Platform offers enhanced connectivity capabilities with SAP ERP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The prebuilt solution offers a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
 
 ## What's new?
 
