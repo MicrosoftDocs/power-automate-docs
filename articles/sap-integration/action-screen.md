@@ -27,24 +27,16 @@ contributors:
  - galitskyd
 ---
 
-# Manage complex APIs with new function detail screen (preview)
+# Add connection references to flows (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
-Enterprise software systems like SAP have very complex APIs, often with 30-50 arguments and several hundred fields per argument. In some cases, an API can have 2,000 – 4,000 fields in the definition.
+Once you have imported the SAP Integration solution in to Power Apps, you will need to sign in to Power Automate to add user- and system-level connection references.
 
- The new action screens improve the user experience in Power Automate by establishing the complex API function details and to prevent API exceptions being thrown by the flow maker. This will prevent administrators from having manually research and fill in the arguments in raw JSON.
 
-## New Call SAP function detail screen
 
-The new Call SAP function detail screen helps the SAP BASIS administrator easily complete the following four inputs:
+The following steps will walk you through this process:
 
-- System – the system to be called
-- RFC API – the API to be called
-- Inputs – a tabular list of parameters to be passed to the API
-- Outputs – a tabular list of parameters to be returned the API. The purpose here is to allow the administrator to prune unnecessary data returned by the system of record.
-
-    ![](media/action-screen/image2.png)
 
 ## Get started
 An SAP BASIS administrator will need to complete the Call RFC function details.

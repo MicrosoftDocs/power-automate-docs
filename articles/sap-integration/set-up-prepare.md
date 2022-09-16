@@ -18,8 +18,9 @@ ms.author: ellenwehrle
 search.app: 
   - Flow
 search.audienceType: 
+  - administrator
+  - stakeholder
   - flowmaker
-  - enduser
 ---
 
 # Set up SAP integration with Power Platform (preview)
@@ -66,7 +67,6 @@ SAP integration with the Power Platform requires IT system administrators to est
 1. Create and configure an environment in Power Platform admin center
 1. Select environment configured for SAP Integration in Power Apps
 1. Set up and manage connections in Power Apps
-1. Add complex API function details to SAP ERP connector
 1. Download and import the SAP Integration solution
 
 ### Install on-premises data gateway
@@ -123,10 +123,13 @@ Sign in to [Power Apps](https://make.powerapps.com) and take the following steps
 1. Go to **Search** in the command bar if you need to search for the connectors.
 1. Select each connector as it appears and follow the prompts to set up the connections.
 
+> [!Important]
+>
+> - After you import the solution into Power Apps, you will need to sign in to Power Automate to enter user- and system- connection reference details.
 
 ### Import prebuilt solution
 
-The SAP Integration prebuilt solution contains apps, flows, and other components that work together to make integrating SAP ERP with the Power Platform much easier.
+The SAP Integration prebuilt solution contains apps, flows, and other components that work together to simplify the SAP ERP integration with the Power Platform.
 
 Take the following steps to download and then import the solution:
 
@@ -142,7 +145,7 @@ Take the following steps to download and then import the solution:
 
 ## Next steps
 
-[Configure action screens and verify the SAP integration (preview)](action-screen.md)
+[Configure complex APIs with new function detail screen (preview)](action-screen.md)
 
 ### See also
 
