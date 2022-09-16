@@ -144,6 +144,14 @@ These roles do not give access to anything, they're used as lookups for the fall
     | Type                | **CoE Admin**             |
     | User Principal Name | The email of the user     |
 
+1. Create **developer** role – This role is optional and is used to sync maker information back to main.
+
+    | **Field**           | **Value**                 |
+    |---------------------|---------------------------|
+    | Display Name        | Anything (Miles Gibbs - Dev) |
+    | Type                | **Developer**             |
+    | User Principal Name | The email of the user     |
+
 #### Base configuration - fallback
 
 This table should only have one record defined. This record is used if any of the values that are needed to complete processing is null or not defined.
@@ -221,6 +229,8 @@ Sign into the [maker portal](https://make.powerapps.com/), and then perform the 
 1. Select **Details**.
 
    ![A screenshot that displays the details link.](media/89667581265544834f969251313d1015.png)
-
 1. Select Properties.
 1. Copy Unified Interface URL.
+
+> [!IMPORTANT]
+> You may need to switch to classic mode to see the properties pane.

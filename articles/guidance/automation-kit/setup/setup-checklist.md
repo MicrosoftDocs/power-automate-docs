@@ -25,6 +25,8 @@ The following checklist provides an overview of the key steps, to assist you in 
 
 ## Checklist for main
 
+- Import the Power Platform Creator Kit (CreatorKitCore_x.x.x.x _managed).
+- Verify Creator Kit is installed correctly.
 - Imported **AutomationCoEMain_x_x_x_x_managed** into your **main** environment.
 - Provisioned the approvals solution (optional).
 - Confirmed all flows in the solution are turned on.
@@ -33,6 +35,8 @@ The following checklist provides an overview of the key steps, to assist you in 
 
 ## Checklist for satellite
 
+- Import the Power Platform Creator Kit (CreatorKitCore_x.x.x.x _managed).
+- Verify Creator Kit is installed correctly.
 - Created Azure AD app registration (Dataverse API) for each satellite.
 - Defined satellite environments (new or existing).
 - Created application users in all satellite environments.
