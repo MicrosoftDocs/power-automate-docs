@@ -144,6 +144,14 @@ These roles do not give access to anything, they're used as lookups for the fall
     | Type                | **CoE Admin**             |
     | User Principal Name | The email of the user     |
 
+1. Create **developer** role – This role is optional and is used to sync maker information back to main.
+
+    | **Field**           | **Value**                 |
+    |---------------------|---------------------------|
+    | Display Name        | Anything (Miles Gibbs - Dev) |
+    | Type                | **Developer**             |
+    | User Principal Name | The email of the user     |
+
 #### Base configuration - fallback
 
 This table should only have one record defined. This record is used if any of the values that are needed to complete processing is null or not defined.
