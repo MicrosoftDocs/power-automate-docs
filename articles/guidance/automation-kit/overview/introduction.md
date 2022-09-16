@@ -19,7 +19,7 @@ ms.reviewer: deonhe
 
 # Overview of the Automation Kit
 
-![Automation Kit Logo](../media/automation-kit.svg)
+![Automation Kit Logo](../media/automation-kit.png)
 
 The Automation Kit is set of tools that accelerates the use and support of Power Automate for desktop for automation projects. The kit provides tools that help you manage automation projects and monitor them to estimate money saved and return on investment (ROI).
 
