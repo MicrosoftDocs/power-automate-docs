@@ -21,8 +21,7 @@ ms.reviewer: deonhe
 
 1. To get the information for the environment variables, open a new tab.
 2. Navigate to the satellite environment from the [maker portal](https://make.powerapps.com).
-3. Select the **Settings** in the top right nav bar and select **Developer resources**.
-<!-- There is a missing step here. WHat do I get from the Developer Resources panel?-->
+3. Select the **Settings** in the top right nav bar and select **Developer resources**. The information on this panel will be copied to the Key Vault secrets that follow.
 
 Next, we need to get the **URL path** for our **Azure Key Vault secrets**.
 
@@ -34,7 +33,7 @@ The Azure Key Vault secrets are using the environment variable type. These envir
 
 Follow these steps to get the format.
 
-1. Go to [Azure Portal](https://portal.azure.com/home), navigate to your Key Vault with the secrets for your app registration.<!--Needs a link for app registration?; the existing link didn't exist-->
+1. Go to [Azure Portal](https://portal.azure.com/home), navigate to your Key Vault with the secrets for your app registration
 1. Select the **Secrets** tab.
 1. Copy the **URL**.
 1. Paste the URL into notepad.
