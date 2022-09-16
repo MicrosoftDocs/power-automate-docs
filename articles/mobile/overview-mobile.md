@@ -30,7 +30,7 @@ Experience the familiar look and feel of Power Automate on the go with the Power
 
 - [Run instant flows](run-instant-flows.md)
 - [Manage approvals](manage-approvals.md)
-- [Receive push notifications](receive-push.md)
+- [Receive notifications](notifications.md)
 - [Manage cloud flows](manage-cloud-flows.md)
 
 &mdash;all from your mobile device.
