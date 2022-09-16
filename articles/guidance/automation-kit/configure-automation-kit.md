@@ -229,6 +229,8 @@ Sign into the [maker portal](https://make.powerapps.com/), and then perform the 
 1. Select **Details**.
 
    ![A screenshot that displays the details link.](media/89667581265544834f969251313d1015.png)
-
 1. Select Properties.
 1. Copy Unified Interface URL.
+
+> [!IMPORTANT]
+> You may need to switch to classic mode to see the properties pane.
