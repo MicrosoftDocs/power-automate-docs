@@ -139,7 +139,7 @@ The section defined how meter the artifacts for the Flow Sessions so that teleme
 
 1. We can get to the solution screen from the home screen by selecting the name of the mapped solution.
 
-1. Once selected the "+" icon switches to a meter. And now data will be flowing to main (flow sessions). If this option is grayed out, then the cloud flow does not follow the [naming schema](./test-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering). [Rename the cloud flow](#rename-a-cloud-flow-to-match-convention), if needed.
+1. Once selected the "+" icon switches to a meter. And now data will be flowing to main (flow sessions). If this option is grayed out, then the cloud flow does not follow the [naming schema](./test-end-to-end.md#cloud-flows-must-follow-specific-naming-convention-before-they-can-be-used-for-metering). [Rename the cloud flow](#rename-a-cloud-flow-to-match-naming-convention), if needed.
 
 1. After you select the **+** icon, the meter icon appears.
 
