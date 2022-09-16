@@ -31,6 +31,9 @@ To record a flow that automates desktop or/and web applications:
 
     The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately. During each recording session, the recorder can generate both UI and browser automation actions.
 
+    > [!NOTE]
+    > When you perform a left or right click on a UI element during the recording, the highlighter displays a **Wait for action** message, instructing you to wait for the recorder to record and insert the action.
+
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 
     To see the available actions for a specific element, right-click on it to open its context menu. The available options depend on the nature of the selected element.
