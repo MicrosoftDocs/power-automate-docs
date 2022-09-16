@@ -31,7 +31,7 @@ This article details how to use each component in the Automation Kit:
 
 ### Functionality
 
-The Automation Console app is used to launch Automation Kit apps. You must update the information for the apps manually. [The setup process goes over configuring the Automation Console](./configure-automation-coe.md#console-configuration)
+The Automation Console app is used to launch Automation Kit apps. You must update the information for the apps manually. [The setup process goes over configuring the Automation Console](./configure-automation-kit.md#console-configuration)
 
 ### Features
 
@@ -41,7 +41,7 @@ The automation console is a console-like dashboard of all apps to enable you to 
 
 The purpose of the Automation Project app is to request and approve new automation projects. The approver receives a deep link to the project screen to view all automation project details.
 
-Employees can submit an idea for an automation project. 
+Employees can submit an idea for an automation project.
 
 The project submitter enters data to enable the solution to calculate:
 
@@ -54,13 +54,13 @@ The [Power BI dashboard](#automation-kit-power-bi-dashboard) contains a scatter 
 
 ### Project Dashboard (Home Screen)
 
-![This screenshot displays the steps to map a project to a an environment.](media/AutomationProjectApp1.png)
+![This screenshot displays the home screen.](media/AutomationProjectApp1.png)
 
 | **Role**            | **What you see**                                          |
 |---------------------|-----------------------------------------------------------|
-| Project Admin       | See all automation project requests.                          |
-| Project Contributor | Sees only automation project requests that you created.|
-| Project Viewer      | Sees all automation projects in view mode.       |
+| Project Admin       | See all automation project requests.                      |
+| Project Contributor | Sees only automation project requests that you created.   |
+| Project Viewer      | Sees all automation projects in view mode.                |
 
 ### Main screen
 
