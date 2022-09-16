@@ -60,6 +60,30 @@ Use the following steps to create an app registration that will be used by flows
 
 Microsoft recommends that you have the satellite solution imported inside your production environment. Follow the [steps to import the main solution](main.md) if you create a new environment.
 
+### Creator Kit Import
+
+First, we need to enable the Power Apps component framework.
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. Select an environment where you want to enable this feature.
+(We need to do this for both **Main** and all **Satellite** environments)
+3. Click the Settings cog in the top nav.
+4. Under Product > Click Features.
+5. Turn on (Enable) **Power Apps component framework for canvas apps.**
+6. Click **Save**.
+
+Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-kit/overview).
+
+1. Download the [Power Platform Creator Kit](https://aka.ms/creatorkitdownload).
+1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
+1. Go to the environment you just created in which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Prod**.
+1. On the left pane, select Solutions.
+1. Select Import, and then Browse.
+1. Select the Creator Kit solution from File Explorer (CreatorKitCore_x_x_x_x_managed.zip).
+1. Select Import.
+Wait for the Creator Kit to finish importing before continuing to next step.
+
+
 ## Create application user inside Dataverse (Per satellite Env)
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -75,19 +99,6 @@ Microsoft recommends that you have the satellite solution imported inside your p
 1. Add the **System Administrator** security role.
 1. Select **Create**.
 
-### Creator Kit Import
-
-Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-kit/overview).
-
-1. Download the [Power Platform Creator Kit](https://aka.ms/creatorkitdownload).
-1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
-1. Go to the environment you just created in which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Prod**.
-1. On the left pane, select Solutions.
-1. Select Import, and then Browse.
-1. Select the Creator Kit solution from File Explorer (CreatorKitCore_x_x_x_x_managed.zip).
-1. Select Import.
-Wait for the Creator Kit to finish importing before continuing to next step.
-
 ## Import the satellite solution into the satellite environment
 
 1. Sign into [Power Automate](https://flow.microsoft.com).
@@ -102,6 +113,7 @@ Wait for the Creator Kit to finish importing before continuing to next step.
 1. When the compressed (.zip) file loads, select **Next**.
 1. Review the information, and then select **Next**.
 1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+1. Next, we configure the [environment variables](./environment-variables.md).
 
 ## Import the desktop flow actions csv
 
