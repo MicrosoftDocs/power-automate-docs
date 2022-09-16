@@ -60,7 +60,7 @@ This article contains some of the limitations in the Automation Kit.
 For example, in **MostLikleyTheBest-CLoUdfLoW_AP-000001013_001.**, you can use the last 3 digits advanced scenarios and are typically 001 if you only have one solution per automation project. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution if you wish to distinguish them.
 
 >[!TIP]
->You can select the information button inside the solution manager app to bypass this requirement.
+>You can select the disable naming convention button inside the solution manager app to bypass this requirement.
 
 ### Unexpected behaviors with the flow exception framework
 
