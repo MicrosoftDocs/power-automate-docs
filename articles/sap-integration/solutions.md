@@ -39,7 +39,7 @@ The public preview prebuilt solution is comprised of a set of components, which 
 
 - Click on **Apps** to view the list of included apps
 - Click on **flows** to view the list of included flows.
-- Click on **Solutions** > **SAP Integration** to view its complete objects list.
+- Click on **Solutions** > **SAP Integration** to view its complete objects list, which includes connection references, environment variables, and tables.
 
 Lists of the apps and cloud flows with short descriptions are provided here for reference.
 
@@ -92,7 +92,7 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 
 ## What does the SAP Integration look like?
 
-Select either the **Sales Orders** or **Purchase Orders** app to open.
+In the left navigational panel in Power Apps, select **Solutions** > **SAP Integration** > **Apps**. Next from the Purchase Orders menu selection.
 
 ## Next steps
 

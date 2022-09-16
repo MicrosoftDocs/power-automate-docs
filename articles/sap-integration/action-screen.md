@@ -20,6 +20,7 @@ search.app:
   - Flow
 search.audienceType: 
   - flowmaker
+  - administrator
   - enduser
 contributors:
  - EllenWehrle
@@ -27,31 +28,38 @@ contributors:
  - galitskyd
 ---
 
-# Add connection references to flows (preview)
+ 
+
+# Create an environment variable with SAP connection parameters (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
-Once you have imported the SAP Integration solution in to Power Apps, you will need to sign in to Power Automate to add user- and system-level connection references.
+SAP has several different connection parameters, and it is cumbersome to have to enter these into each Power Automate cloud flow action. You can now create an environment variable in Power Apps that contains all of the SAP system information. Once the environment variable is defined, you can use the environment variable in your SAP actions without having to re-enter all the system information again.
 
+1. Sign in to [Power Apps](<https://go.microsoft.com/fwlink/p/?linkid=2208506>)
+1. [Create an environment variable in a solution](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution). 
 
+## Review connection references in flows
+
+Once you have imported the SAP Integration solution into Power Apps and create environment variables with SAP connection parameters, you will need to sign in to Power Automate to review your connectors in the cloud flows. 
+
+When you see the warning symbol in a connector, it means the environment variables did not map to the connection. You will need to to add user- and system-level connection references manually.
 
 The following steps will walk you through this process:
 
-
-## Get started
-An SAP BASIS administrator will need to complete the Call RFC function details.
-
-1. Sign in to [Power Automate](<https://make.powerautomate.com>).
+1. Sign in to [Power Automate](<https://go.microsoft.com/fwlink/p/?linkid=2208508>).
 1. In the left navigation panel, select **Solutions**.
 1. Select the  **SAP Integration** solution.
 1. In the left navigation panel, select **Cloud flows**.
 1. Select a flow.
 1. Go to the command bar and click **Edit**. You will be able to see the flow.
-1. Click the **New step** button.
-1. The "Choose an operation" flow card will appear. Type SAP ERP into the text field to bring up the SAP ERP connector.
-1. Select the **SAP ERP** connector.
-1. In the "SAP system" field, add your JSON string containing system parameters.
-1. In the "RFC name" field, select an RFC API that you want to modify.
+1. Select the connector in the flow to add your user- and system-level connection references.
+    ![](media)
+
+First, you will update your user connection references. Select if you will be authenticating through SAP or Windows and you will need to assign your on-premises data gateway to the connector.
+    ![]()
+
+Second, you will
 
 ### Access new screen
 
@@ -81,7 +89,7 @@ Once you have selected the API, the definition of the API should be queried and 
 When you select **Add New Parameter**, a display list of valid parameters for the API filters out parameters that have already been added to the table. Use the following logic for SAP API:
 
 - Use the SAP function RFC\_GET\_FUNCTION\_INTERFACE
-- Set parameter FUNCNAME = '**&lt;API/Procedure&gt;**'. 
+- Set parameter FUNCNAME = '**&lt;API/Procedure&gt;**'.
 The valid parameters are returned in the PARAMS parameter.
 
     ![](media/action-screen/image6.png)
