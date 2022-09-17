@@ -71,4 +71,4 @@ Here are a few orchestrations for you to consider.
 
 For organizations that prefer to use GitHub instead of Azure DevOps, there is a preview version of [GitHub Actions for Microsoft Power Platform](/power-platform/alm/devops-github-actions) which offers a subset of the Azure DevOps functionalities. [Power Platform Build Tools webinar and live demo](https://www.youtube.com/watch?v=Qwue8fwetJA).
 
-The [ALM Accelerator for Power Platform](http://aka.ms/aa4pp) includes a set of prebuilt tools and templates to accelerate your ability to build and deploy automation solutions. 
+The [ALM Accelerator for Power Platform](https://aka.ms/aa4pp) includes a set of prebuilt tools and templates to accelerate your ability to build and deploy automation solutions. 
