@@ -27,19 +27,19 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-SAP ERP is a complex business system that maintains data and manages business processes. It is relied upon by many businesses around the world and requires specialized knowledge—not just to design and implement—but to use. Integrating with such a complex business system has posed many challenges for business that want to integrate its data with other systems to extend its capabilities.
+SAP ERP is a complex business system that maintains data and manages business processes. It's relied upon by many businesses around the world and requires specialized knowledge—not just to design and implement—but to use. Integrating with such a complex business system has posed many challenges for business that want to integrate its data with other systems to extend its capabilities.
 
 The prebuilt SAP Integration solution establishes an easier way to connect your SAP system to the Power Platform and its prebuilt Power Apps and Power Automate flows can work immediately with the core SAP ERP workflows that most businesses utilize.
 
 ## What's included
 
-The public preview prebuilt solution is comprised of a set of components, which includes apps, cloud flows, connection references, environment variables, tables and other technical features that work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
+The public preview prebuilt solution is made up of a set of components, which includes apps, cloud flows, connection references, environment variables, tables and other technical features that work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
 
  After importing the solution into Power Apps, look to the left navigational panel to view all of the different components.
 
-- Click on **Apps** to view the list of included apps
-- Click on **flows** to view the list of included flows.
-- Click on **Solutions** > **SAP Integration** to view its complete objects list, which includes connection references, environment variables, and tables.
+- Select **Apps** to view the list of included apps
+- Select **Flows** to view the list of included flows.
+- Select **Solutions** > **SAP Integration** to view its complete objects list, which includes connection references, environment variables, and tables.
 
 Lists of the apps and cloud flows with short descriptions are provided here for reference.
 
@@ -60,7 +60,7 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 | Customer Search | Enables search through SAP customer master to find a specific customer or to filter for a specific set of customers that meet defined criteria|
 | Header and Menu Components | Reusable UI component used to construct dropdown lists |
 | Common Components | Components that construct common tables and fields for the organization of specific types of data |
-| Attachments Component | Reusable UI component used to attach additional files to Purchase Orders and Sales Orders |
+| Attachments Component | Reusable UI component used to attach more files to Purchase Orders and Sales Orders |
 ||
 
 ## Power Automate flows
@@ -92,13 +92,13 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 
 ## What does the SAP Integration look like?
 
-In the left navigational panel in Power Apps, select **Solutions** > **SAP Integration** > **Apps**. Next from the Purchase Orders menu selection.
+To see the SAP integration components, go to [Power Apps](https://make.powerapps.com) > **Solutions** > **SAP Integration** > **Apps** to view the apps included in this solution.
 
 ## Next steps
 
-- [Prepare and set up SAP integration with Power Platform (preview)](set-up-prepare.md)
+[Set up SAP integration with Power Platform (preview)](set-up-prepare.md)
 
 ### See also
 
-- [Configure action screens and verify the SAP integration (preview)](action-screen.md)
+- [Create an environment variable with SAP connection parameters (preview)](action-screen.md)
 - [Overview of SAP integration with Power Platform (preview)](overview.md)
