@@ -5,7 +5,7 @@ author: kisubedi
 
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 02/02/2022
+ms.date: 09/07/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -15,13 +15,14 @@ search.audienceType:
 ---
 # Enable experimental features in Power Automate
 
-Experimental features provide you early access to functionalities and updates in Power Automate before they are available worldwide.
+Experimental features provide you early access to functionalities and updates in Power Automate before they're available worldwide.
 
 > [!CAUTION]
+>
 > - Experimental features might change, break, or disappear at any time, and shouldn't be enabled in production environments.
 > - Microsoft doesn't provide support for experimental features. Microsoft Power Platform technical support team won’t be able to help you with issues or questions. Use the [Power Automate community forums](https://aka.ms/fl_comm_forums) for feedback and help with experimental features.
 
-To enable experimental features in Power Automate:
+Follow these steps to enable experimental features in Power Automate.
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 
@@ -31,12 +32,15 @@ To enable experimental features in Power Automate:
 
     ![Power Automate Settings](media/pauto-settings.png)
 
-1. Set **Experimental Features** to **On**, and select **Save**.
+1. Set **Experimental Features** to **On**, and then select **Save**.
 
    ![Turn on experimental features](media/experimental-features.png)
 
-You will now be will be able to access all experimental features in Power Automate.
+You will now be able to access all experimental features in Power Automate.
 
-#### See also
+>[!NOTE]
+>Experimental features are available only for the account that turns on experimental features.
+
+### See also
 
 [New expression editor for actions (experimental feature)](multi-step-logic-flow.md#new-expression-editor-for-actions-experimental-feature)

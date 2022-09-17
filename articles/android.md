@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/23/2022
+ms.date: 08/26/2022
 ms.author: angieandrews
 search.app: 
   - Flow
@@ -37,7 +37,7 @@ If you're not signed up for Power Automate, [sign up for free](sign-up-sign-in.m
 
 > [!NOTE]
 > - You can sign in with either Azure Active Directory (AAD) or your Microsoft account (MSA).
-> - The new version of the app is currently being rolled out and may not be available for you yet.
+> - You'll need the new version of the app (version 3.x.x or later) for the functionality described in this article. This version is currently being rolled out and may not be available for you yet.
 
 ## View a list of your cloud flows
 

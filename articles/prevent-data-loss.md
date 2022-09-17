@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/13/2022
+ms.date: 09/14/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -169,9 +169,12 @@ When your tenant is opted into the user experience in the Power Platform, your a
 > [!NOTE]
 >  If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
  
-## DLP enforcement background jobs
-- Enforcement and suspension - Every time a data loss prevention policy changes in your environment, a background job scans all existing flows in the environment, evaluates them, and then suspends the flows that violate the updated policy.
-- Reactivation - If the DLP enforcement background job finds a desktop flow that no longer violates any DLP, then the background job automatically turns it on. However,  the DLP enforcement background job won't automatically turn on cloud flows.
+## DLP enforcement
+- Enforcement and suspension 
+    - When you create or edit a flow, Power Automate evaluates it against the current set of DLP policies. If needed, the enforcement is asynchronous and occurs within 24 hours.
+    - When you create or change a DLP policy, a background job scans all existing flows in the environment, evaluates them, and then suspends the flows that violate the policy. The enforcement is asynchronous and occurs within 24 hours. If a DLP policy change occurs when the previous DLP policy is being evaluated, then the evaluation restarts to ensure the latest policies are enforced. 
+    - Weekly, a background job does a consistency check of all existing flows in the environment against the DLP policies to confirm that a DLP policy check wasn't missed. 
+- Reactivation - If the DLP enforcement background job finds a desktop flow that no longer violates any DLP policy, then the background job automatically turns it on. However, the DLP enforcement background job won't automatically turn on cloud flows.
 
 ## DLP enforcement change process
 Periodically, DLP enforcement changes are needed. These changes can be a due to new DLP capabilities, an enforcement gap being filled, or a bug fix.
@@ -191,7 +194,7 @@ Following is a list of DLP enforcement changes and the date the changes were eff
 |-|-|-|-|-|-| 
 |May 2022 | Delegated authorization background job enforcement | DLP policies enforced are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Hard |June 2, 2022|July 21, 2022|
 |May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have type=Request and kind=apiConnection. Many of the affected triggers are instant triggers which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Soft |June 2, 2022|August 25, 2022|
-|July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies on child flows. If a violation is found in a flow tree, the parent flow is suspended. | Learning |TBD|TBD|
+|July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies on child flows. If a violation is found in a flow tree, the parent flow is suspended. A change to no longer block child flows when the HTTP connector is blocked will roll out along with hard enforcement of DLP policies on child flows. | Learning |TBD|TBD|
 
 *ETA is subject to change and depends on the release schedule. ETA is for the start of the release to production. Release to preview station 1 is approximately five days later. Release to NAM/US station 5 is approximately three weeks later.
 
