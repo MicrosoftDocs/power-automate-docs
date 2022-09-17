@@ -29,13 +29,13 @@ search.audienceType:
 
 SAP ERP is a centralized system of record that facilitates the management of data and business processes between many departments within an organization. SAP ERP, developed by SAP SE, serves as the primary enterprise resource planning application for many businesses worldwide.
 
- SAP integration with the Power Platform offers enhanced connectivity capabilities with SAP ERP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The SAP Integration prebuilt solution offers components that work together to create a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
+ SAP integration with the Power Platform offers enhanced connectivity capabilities with the SAP ERP connector and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The SAP Integration prebuilt solution offers components that work together to create a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
 
 ## What's new?
 
 ### SAP ERP connector enhancements
 
-The SAP ERP connector has been updated with a new a new function detail screen with dropdowns that ease connection parameter input.
+The SAP ERP connector has been updated with 
 
 ### Prebuilt solution
 
