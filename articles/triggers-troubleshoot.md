@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/30/2022
+ms.date: 08/26/2022
 ms.author: DeonHe
 search.app: 
   - Flow
@@ -25,6 +25,34 @@ search.audienceType:
 # Troubleshoot common issues with triggers
 
 Here are a few tips and tricks for troubleshooting issues with triggers.
+
+## Identify specific flow run
+
+Once you build and deploy your flows, you might need to debug specific flow runs to confirm that your flow ran as expected. By default, the flow owner can look at the **Start**, **Duration**, and **Status** columns in the run history view in Power Automate to help them identify the flow run they are interested in debugging. The owner can also expand the troubleshooting section to identify the specific run in which they are interested, however, for flows that run frequently, this can be time-consuming.
+
+To make it more efficient to identify flow runs when debugging, Power Automate provides the ability for flow owners to configure the list of columns that's displayed on the run history page for each flow run. These columns map to the trigger outputs for your flow. When you display the columns you want, you save time since you will see the relevant columns by default on the run history view.
+
+Follow these steps to add one or more columns to your run history view.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Select **My flows** from the left side of the screen.
+1. Select the flow for which you want to get more details.
+1. Select **Edit columns** on the flow details page.
+
+   ![A screenshot that shows the edit columns link on the details view for a flow.](./media/triggers-introduction/edit-columns.png)
+
+1. Select the columns that you want to add to your run history view for the flow that you've selected, and then select **Save**.
+
+   ![A screenshot that displays some of the columns available as trigger output for the flow you've selected](./media/triggers-introduction/select-flow-columns.png).
+
+1. View the list of columns that displays on the run history view for the flow you've selected.
+
+   Note that **hasAttachments** and **isHTML** columns are now visible for the flow so that you can quickly see those values to help you debug the flow.
+
+   ![A screenshot that displays the list of columns that displays on the run history view for the flow you've selected ](./media/triggers-introduction/new-columns-run-history-view.png)
+
+>[!TIP]
+>You can also configure the list of columns that's displayed via the **All runs** view.
 
 ## My trigger doesn’t fire
 
