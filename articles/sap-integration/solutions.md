@@ -92,9 +92,7 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 
 ## What does the SAP Integration look like?
 
-All the components come together on a Power Apps page that a user can interact with. Common SAP workflows (such as order to cash and procure to pay) are organized into modules.
-
-To see the SAP integration modules, go to [Power Apps](https://make.powerapps.com) > **Solutions** > **SAP Integration**.
+All the components come together on a Power Apps page that a user can interact with. 
 
 ## Next steps
 

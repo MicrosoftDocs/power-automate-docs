@@ -46,12 +46,12 @@ Take the following steps to support a successful deployment of the public previe
 
 The assembled a team of IT system administrators to review the following prerequisites and make necessary preparations before connecting your organization's SAP ERP system to the Power Platform:
 
-- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/en-us/pricing/) - Determine if your organization has the necessary licensing to proceed with the setup. It's important to consider:
-  - The Power Apps license that supports using an on-premises data gateway and premium applications, flows, and connectors.
-  - All administrators setting up the integration and functional business users testing the solution have the required license to do so.
-- [SAP](http://www.sap.com/)ERP subscription - Make sure your organization has a current subscription and that the users testing the SAP Integration solution have appropriate access to the corresponding SAP modules.
-- [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant) - Create a new tenant for the SAP Integration.  It's important to consider:
-  - The tenant has at least 1 GB of database storage capacity available for the sandbox environment.
+- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/en-us/pricing/) - Determine if your organization has the necessary licensing to proceed with the setup. It is important to consider:
+  - Power Apps licensure that supports using an on-premises data gateway and premium applications, flows, and connectors.
+  - All administrators setting up the integration and functional business users testing the solution have the required licensure to do so.
+- [SAP ERP](<https://www.sap.com/>)subscription - Make sure your organization has a current subscription and that the users testing the SAP Integration solution have appropriate access to the corresponding SAP modules.
+- [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant) - Create a new tenant for the SAP Integration.  It is important to consider:
+  - The tenant has at least 1GB of database storage capacity available for the sandbox environment.
   - All members of the IT systems team have the necessary administrator roles to perform the setup.
   - All functional business users testing the SAP Integration are added to the tenant.
 - [Windows Virtual Machine](/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine) - Provision a new Windows Virtual Machine to connect to the on-premises data gateway.
@@ -74,7 +74,7 @@ SAP integration with the Power Platform requires IT system administrators to est
 SAP integration with the Power Platform requires that you set up an on-premises data gateway.
 To learn about installing on-premises data gateway, see [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
-[Sign in to the Azure portal](http://www.portal.azure.com) to set up an on-premises data gateway.
+[Sign in to the Azure portal](<https://www.portal.azure.com>) to set up an on-premises data gateway.
 
 While setting up the on-premises data gateway for SAP integration, ensure that you review the following considerations:
 
