@@ -31,7 +31,7 @@ This article details how to use each component in the Automation Kit:
 
 ### Functionality
 
-The Automation Console app is used to launch Automation Kit apps. You must update the information for the apps manually. [The setup process goes over configuring the Automation Console](./configure-automation-kit.md##configuration---console)
+The Automation Console app is used to launch Automation Kit apps. You must update the information for the apps manually. [The setup process goes over configuring the Automation Console](./configure-automation-kit.md#configuration---console)
 
 ### Features
 

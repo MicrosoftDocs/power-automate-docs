@@ -124,7 +124,7 @@ If this is the first time an approval is being used within this environment, it 
 1. Go to the DEV environment and create a solution.
 1. If the department publisher does not exist, create one for the department to use.
 1. Create a desktop flow.
-1. Create a cloud flow that will trigger the desktop flow. Name the cloud flow using the following [naming convention](./use-automation-kit.md/#rename-a-cloud-flow-to-match-naming-convention): [CloudFlowName]_[AutomationProjectNumber]_[3digits].
+1. Create a cloud flow that will trigger the desktop flow. Name the cloud flow using the following [naming convention](./use-automation-kit.md#rename-a-cloud-flow-to-match-naming-convention): [CloudFlowName]_[AutomationProjectNumber]_[3digits].
 
     | CloudFlowName           | Your meaningful name for your process                                                                                                                                                                                                                                                   |
     |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -132,7 +132,7 @@ If this is the first time an approval is being used within this environment, it 
     | 3digits                 | The last 3 digits can be used for advanced use cases and are typically 001 if you only have one solution per automation project. If you have multiple solutions for a single project, you could increase that number by 1 for each additional solution to distinguish them. |
 
    >[!NOTE]
-   >The renaming process can also be done easier inside the [Automation Solution Manager](./use-automation-kit.md#rename-a-cloud-flow-to-match-convention) app.
+   >The renaming process can also be done easier inside the [Automation Solution Manager](./use-automation-kit.md#rename-a-cloud-flow-to-match-naming-convention) app.
 
 The cloud flow should trigger the desktop flow based on the frequency defined in the automation request.
 
