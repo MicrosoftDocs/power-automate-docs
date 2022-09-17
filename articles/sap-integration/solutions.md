@@ -67,32 +67,34 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 
 | Cloud flow name | Description |
 |-----------|-------------------|
-| CreateAttachment | Action attaches file to sales order or purchase order |
-| CreatePurchaseOrder | Action captures and processes purchase order data |
-| CreateSalesOrder | Action captures and processes sales order data |
-| DeleteAttachment | Action removes file from sales order or purchase order |
-| ReadAttachmentList| Action reads data from an attachment list |
-| ReadCostCenterList| Action reads data from a cost center list |
-| ReadCustomer| Action reads customer data |
-| ReadCustomerList | Action reads data from a customer list |
-| ReadGLAccountList | Action reads data from a GL account list |
-| ReadMaterial | Action reads material data |
-| ReadMaterialList | Action reads data from a material list |
-| ReadProfitCenterList | Action reads data from a profit center list |
-| ReadPurchaseOrder | Action reads purchase order data|
-| ReadPurchaseOrderList | Action reads data from a purchase order list |
-| ReadSalesOrder | Action reads sales order data |
-| ReadSalesOrderList | Action reads data from a sales order list|
-| ReadSAPUserList | Action reads data from a SAP user list |
-| ReadVendor | Action reads vendor data |
-| ReadVendorList | Action reads data from a vendor list |
-| UpdatePurchaseOrder | Action updates purchase order data|
-| UpdateSalesOrder | Action updates sales order data |
+| CreateAttachment | Attaches file to sales order or purchase order |
+| CreatePurchaseOrder | Captures and processes purchase order data |
+| CreateSalesOrder | Captures and processes sales order data |
+| DeleteAttachment | Removes file from sales order or purchase order |
+| ReadAttachmentList| Reads data from an attachment list |
+| ReadCostCenterList| Reads data from a cost center list |
+| ReadCustomer| Reads customer data |
+| ReadCustomerList | Reads data from a customer list |
+| ReadGLAccountList | Reads data from a GL account list |
+| ReadMaterial | Reads material data |
+| ReadMaterialList | Reads data from a material list |
+| ReadProfitCenterList | Reads data from a profit center list |
+| ReadPurchaseOrder | Reads purchase order data|
+| ReadPurchaseOrderList | Reads data from a purchase order list |
+| ReadSalesOrder | Reads sales order data |
+| ReadSalesOrderList | Reads data from a sales order list|
+| ReadSAPUserList | Reads data from a SAP user list |
+| ReadVendor | Reads vendor data |
+| ReadVendorList | Reads data from a vendor list |
+| UpdatePurchaseOrder | Updates purchase order data|
+| UpdateSalesOrder | Updates sales order data |
 | |
 
 ## What does the SAP Integration look like?
 
-To see the SAP integration components, go to [Power Apps](https://make.powerapps.com) > **Solutions** > **SAP Integration** > **Apps** to view the apps included in this solution.
+All the components come together on a Power Apps page that a user can interact with. Common SAP workflows (such as order to cash and procure to pay) are organized into modules.
+
+To see the SAP integration modules, go to [Power Apps](https://make.powerapps.com) > **Solutions** > **SAP Integration**.
 
 ## Next steps
 

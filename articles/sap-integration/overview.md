@@ -34,6 +34,7 @@ Integration of SAP with Power Platform offers enhanced connectivity capabilities
 > [!IMPORTANT]
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+ SAP integration with the Power Platform offers enhanced connectivity capabilities with the SAP ERP connector and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The SAP Integration prebuilt solution offers components that work together to create a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
 
 ## What's new?
 
@@ -41,7 +42,7 @@ SAP integration with Power Platform brings in the following new capabilities.
 
 ### SAP ERP connector enhancements
 
-The SAP ERP connector has been updated with a new a new function detail screen with dropdowns that ease connection parameter input.
+The SAP ERP connector has been updated with 
 
 ### Prebuilt solution
 

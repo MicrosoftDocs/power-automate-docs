@@ -31,7 +31,7 @@ search.audienceType:
 
 Take the following steps to support a successful deployment of the public preview SAP Integration solution:
 
-1. Join the [Power Platform + SAP Public Preview Teams site] to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
+1. Join the [Power Platform + SAP Public Preview Teams site[] to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution. The link is: <https://aka.ms/sap-pp-teams>
 1. Assemble a team with the following IT system administrators:
     1. Networking
     1. SAP BASIS
