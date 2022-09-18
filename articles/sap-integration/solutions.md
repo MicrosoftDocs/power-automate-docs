@@ -31,9 +31,58 @@ SAP ERP is a complex business system that maintains data and manages business pr
 
 The prebuilt SAP Integration solution establishes an easier way to connect your SAP system to the Power Platform and its prebuilt Power Apps and Power Automate flows can work immediately with the core SAP ERP workflows that most businesses utilize.
 
-## What's included
+## What does the SAP Integration solution look like?
+### Order to Cash
 
-The public preview prebuilt solution is made up of a set of components, which includes apps, cloud flows, connection references, environment variables, tables and other technical features that work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
+Here's an image of the Sales Order template in the Sales module.
+    :::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App display of sales order page that is part of the sales module.":::
+
+### Procure to Pay
+
+Here's an image of the Purchase Orders template in the Purchasing module.
+    :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of sales order page that is part of the sales module.":::
+
+## How is the prebuilt SAP Integration organized?
+
+All of the screens and data attributes from SAP are streamlined onto one screen in Power Apps.
+ 
+The four key business processes in SAP ERP are organized into modules that contain accessible Power Apps templates. The templates enable users to perform standard workflow functions such as Search, Create, Change, or Display.  
+ 
+| Business Process    | Module     | Power Apps templates   |
+|---------------------|------------|------------------------|
+| Order to Cash       | Sales      |                        |
+|                     |            | Quotes                 |
+|                     |            | Sales Orders           |
+|                     |            | Deliveries             |
+|                     |            | Customer Invoices      |
+|                     |            | Customer Payments      |
+|                     |            | Mass Update Pricing    |
+| Procure to Pay      | Purchasing |                        |
+|                     |            | Requisitions           |
+|                     |            | Purchase Orders        |
+|                     |            | Goods Receipts         |
+|                     |            | Vendor Invoices        |
+|                     |            | Vendor Payments        |
+| Record to Report    | Finance    |                        |
+|                     |            | Cash Application       |
+|                     |            | GL Accounts            |
+|                     |            | Cost Centers           |
+|                     |            | Profit Centers         |
+|                     |            | Upload Journal Entries |
+| Make to Stock/Order | Production |                        |
+|                     |            | Materials              |
+|                     |            | Goods Movement         |
+|                     |            | Equipment              |
+|                     |            | Work Orders            |
+|                     |            | Shipments              |
+|
+
+
+For public preview, the main focus will be testing the Order to Cash and Procure to Pay business processes.
+
+## What's inside the prebuilt SAP Integration solution?
+
+The public preview prebuilt solution is made up of sets of components, which include apps, cloud flows, connection references, environment variables, tables and other technical features that work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
 
  After importing the solution into Power Apps, look to the left navigational panel to view all of the different components.
 
@@ -41,7 +90,7 @@ The public preview prebuilt solution is made up of a set of components, which in
 - Select **Flows** to view the list of included flows.
 - Select **Solutions** > **SAP Integration** to view its complete objects list, which includes connection references, environment variables, and tables.
 
-Lists of the apps and cloud flows with short descriptions are provided here for reference.
+Lists of the apps and cloud flows with short descriptions are provided here for reference. 
 
 ### Power Apps
 
@@ -89,11 +138,7 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 | UpdatePurchaseOrder | Updates purchase order data|
 | UpdateSalesOrder | Updates sales order data |
 | |
-
-## What does the SAP Integration look like?
-
-All the components come together on a Power Apps page that a user can interact with. 
-
+›
 ## Next steps
 
 [Set up SAP integration with Power Platform (preview)](set-up-prepare.md)
