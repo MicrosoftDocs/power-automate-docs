@@ -21,11 +21,20 @@ search.audienceType:
   - administrator
   - stakeholder
   - flowmaker
+contributors:
+ - galitskyd
+ - ryanb58
+ - scottwoodallmsft
+ - microsoft-dustin
+ - Wrighttyler
+
 ---
 
 # Set up SAP integration with Power Platform (preview)
 
 [This article is pre-release documentation and is subject to change.]
+
+A successful SAP integration with the Power Platform requires that you work with your organization's IT administrators. With some planning, setup, and configuration,  they will be able to ensure that your SAP system can communicate with the Power Platform.
 
 ## Get started
 
@@ -44,7 +53,7 @@ Take the following steps to support a successful deployment of the public previe
 
 ## Prerequisites
 
-The assembled a team of IT system administrators need to review the following prerequisites and make necessary preparations before connecting your organization's SAP ERP system to the Power Platform:
+The assembled team of IT system administrators need to review the following prerequisites and make necessary preparations before connecting your organization's SAP ERP system to the Power Platform:
 
 - [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/en-us/pricing/) - Determine if your organization has the necessary licensing to proceed with the setup. It is important to consider:
   - Power Apps licensure that supports using an on-premises data gateway and premium applications, flows, and connectors.
@@ -60,7 +69,7 @@ The assembled a team of IT system administrators need to review the following pr
 
 ## Integrate SAP ERP system with Power Platform
 
-SAP integration with the Power Platform requires IT system administrators to establish a connection and set up security and governance between the two systems. 
+SAP integration with the Power Platform requires IT system administrators to establish a connection and set up security and governance between the two systems.
 
 The initial setup includes the following steps:
 
@@ -73,24 +82,23 @@ The initial setup includes the following steps:
 
 ### Install on-premises data gateway
 
-An on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data that is not in the cloud and Microsoft cloud services. SAP integration with the Power Platform requires that you set up an on-premises data gateway.
-To learn about installing on-premises data gateway, see [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
+An on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data that is not in the cloud and Microsoft cloud services.
 
-[Sign in to the Azure portal](<https://www.portal.azure.com>) to set up an on-premises data gateway.
+SAP integration with the Power Platform requires that you [install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
 While setting up the on-premises data gateway for SAP integration, ensure that you review the following considerations:
 
-- Provision a new Windows Virtual Machine that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended).
-
-    If you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same active directory environment as the data sources.
-
-- Change the gateway service account. More information [Change the on-premises data gateway service account](/data-integration/gateway/service-gateway-service-account)
+- [Provision a new Windows Virtual Machine](/system-center/vmm/provision-vms?view=sc-vmm-2022) that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended).
+  - If you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same active directory environment as the data sources.
+- [Change the on-premises data gateway service account](/data-integration/gateway/service-gateway-service-account)
 
 ### Configure Azure AD and SAP SSO
 
 An [Azure Active Directory (AD) tenant](/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-ad-define) provides identity and access management. The Azure AD tenant created for SAP Integration must be configured with an on-premises data gateway with constrained delegation to support single sign-on (SSO).
 
-Refer to the following articles to learn about configuring Azure AD and SAP SSO:
+[Sign in to the Azure portal](<https://www.portal.azure.com>) to configure Azure AD and SAP SSO.
+
+The following articles will help you configure and manage your tenants and authorizations:
 
 - [Create and configure an Azure Active Directory Domain Services domain](/azure/active-directory-domain-services/tutorial-create-instance)  
 - [SAP ERP Windows Authentication](/connectors/saperp/#authentication)
@@ -118,7 +126,7 @@ The following two connectors need to be set up to allow communication between SA
 1. Microsoft Dataverse
 1. SAP ERP connector
 
-Sign in to [Power Apps](https://make.powerapps.com) and take the following steps to [create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection):
+Sign in to [Power Apps](https://make.powerapps.com) and take the following steps that are more fully documented in [create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection):
 
 1. In the left navigation panel, expand **Data** and select **Connections**.
 1. Select **New connection** in the command bar.

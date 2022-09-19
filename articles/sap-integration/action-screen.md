@@ -25,7 +25,6 @@ search.audienceType:
 contributors:
  - EllenWehrle
  - tapanm-msft
- - galitskyd
 ---
 
 # Create an environment variable with SAP connection parameters (preview)
@@ -53,7 +52,7 @@ The following steps will walk you through this process:
 1. Select a flow.
 1. Go to the command bar and select **Edit**. You'll be able to see the flow.
 1. Select the connectors in the flow with the warning sign to add your user- and system-level connection references.
-    ![](media)
+
 
 Requested user-level connection reference data
     ![]()

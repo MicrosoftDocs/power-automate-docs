@@ -1,7 +1,7 @@
 ﻿---
 title: Understand prebuilt solution available for integrating SAP with Power Platform (preview)
 description: Learn about the different solutions available for SAP integration with Power Platform.
-services: ''
+services: 
 suite: flow
 documentationcenter: na
 author: EllenWehrle
@@ -29,29 +29,27 @@ search.audienceType:
 
 Connecting your SAP system to the Power Platform will extend its functionality and allow you to get more value out of your investment.
 
-The public preview prebuilt SAP Integration solution is available for download. It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate and ease connecting your organization's SAP system to the Power Platform.
+The public preview prebuilt SAP Integration solution is available for download. It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with the Power Platform.
 
-The Power Apps run in your browser and streamline SAP screens and data attributes onto one simple screen. In the apps, users will be able complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
+The Power Apps custom, model-driven app runs in your browser and streamline SAP screens and data attributes onto one simple screen. In the template apps, users will be able complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
 
 ## What does the SAP Integration solution look like?
-### Order to Cash
 
-Sales Order template in the Sales module
-    :::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App display of sales order page that is part of the sales module.":::
+On the surface, you will see a custom, model-driven app that runs in your browser.
 
-### Procure to Pay
-
-Purchase Orders template in the Purchasing module
+Here is the Purchase Orders template in the Purchasing module
     :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of sales order page that is part of the sales module.":::
 
 ## How is the prebuilt SAP Integration organized?
 
 All of the screens and data attributes from SAP are streamlined onto one screen in Power Apps.
- 
-The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Record to Report, and Make to Stock/Order, are organized into modules that contain accessible Power Apps templates. The templates enable users to perform standard workflow functions such as Search, Create, Change, or Display. 
+
+The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Record to Report, and Make to Stock/Order, are organized into modules that contain accessible Power Apps templates. The templates enable users to perform standard workflow functions such as Search, Create, Change, or Display.
+
+For public preview, the main focus will be testing the Order to Cash and Procure to Pay business processes.
 
 ### Order to Cash
- 
+
 |Module | Power Apps templates |
 |--------|----------------------|
 | Sales  |                      |
@@ -64,6 +62,7 @@ The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Recor
 ||
 
 ### Procure to Pay
+
 | Module     | Power Apps templates |
 |------------|----------------------|
 | Purchasing |                      |
@@ -75,6 +74,7 @@ The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Recor
 ||
 
 ### Record to Report
+
 | Module  | Power Apps templates   |
 |---------|------------------------|
 | Finance |                        |
@@ -86,6 +86,7 @@ The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Recor
 ||
 
 ### Make to Stock/Make to Order
+
 | Module     | Power Apps templates |
 |------------|----------------------|
 | Production |                      |
@@ -96,19 +97,18 @@ The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Recor
 |            | Shipments            |
 ||
 
-For public preview, the main focus will be testing the Order to Cash and Procure to Pay business processes.
+## What is the prebuilt solution comprised of?
 
-## What's inside the prebuilt SAP Integration solution?
+When you look the app behind the scenes, you see that the prebuilt solution is made up of sets of components, which include apps, cloud flows, connection references, environment variables, tables and other technical features that work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
 
-The public preview prebuilt solution is made up of sets of components, which include apps, cloud flows, connection references, environment variables, tables and other technical features that work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
+  :::image type="content" source="media/prebuilt-solution/powerapps-nav.png" alt-text="Power App navigation where one can select Apps, Flows, and Solutions.":::
+ After importing the solution into Power Apps, look to the left navigational panel to view all of its different components.
 
- After importing the solution into Power Apps, look to the left navigational panel to view all of the different components.
-
-- Select **Apps** to view the list of included apps
 - Select **Flows** to view the list of included flows.
-- Select **Solutions** > **SAP Integration** to view its complete objects list, which includes connection references, environment variables, and tables.
+- Select **Apps** to view the list of included apps.
+- Select **Solutions** > **SAP Integration** to view its complete objects list.
 
-Lists of the apps and cloud flows with short descriptions are provided here for reference.
+The following Power Apps and Power Automate flows are listed with short descriptions for your reference.  
 
 ### Power Apps
 
@@ -130,7 +130,7 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 | Attachments Component | Reusable UI component used to attach more files to Purchase Orders and Sales Orders |
 ||
 
-## Power Automate flows
+### Power Automate flows
 
 | Cloud flow name | Description |
 |-----------|-------------------|
@@ -156,6 +156,20 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 | UpdatePurchaseOrder | Updates purchase order data|
 | UpdateSalesOrder | Updates sales order data |
 ||
+
+## How do I access the user interface?
+
+After ensuring that the systems are configured to communicate with one another and you have taken a short tour of the imported solution, you are ready to open an app that acts as a user interface and test it.
+
+- Select **Apps**
+- Select **Purchase Orders** or **Sales Orders** 
+- Click the ***more options*** icon
+- Select **Play**
+
+:::image type="content" source="media/prebuilt-solution/play-app-2.png" alt-text="Power App display of the Play button that opens up the application to the user experience.":::
+
+Now, you should see the user's view. If the initial set up is complete, you are ready to test out the communication between your SAP system and the Power Platform.
+:::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App display of the Play button that opens up the application to the user experience.":::
 
 ## Next steps
 

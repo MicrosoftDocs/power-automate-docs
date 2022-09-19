@@ -1,6 +1,6 @@
 ﻿---
-title: Configure complex APIs and verify the SAP integration (preview)
-description: Learn about the different complex API action screens, the configuration parameters for the available action screens, and verify the SAP integration with Power Platform.
+title: Create an environment variable with SAP connection parameters (preview)
+description: Create an environment variable in Power Apps that contains all of your SAP system information.
 services: ''
 suite: flow
 documentationcenter: na
@@ -59,13 +59,18 @@ The following steps will walk you through this process:
 1. Select a flow from the list.
     :::image type="content" source="media/env-refs/cloud-flow-select.png" alt-text="Image shows selecting a cloud flow from the list of solution flows.":::
 1. Go to the command bar and click **Edit**. You will be able to see the flow.
-    :::image type="content" source="media/env-refs/flow-connect-warning.png" alt-text="Flow with connection warning.":::
+    :::image type="content" source="media/env-refs/edit-flow.png" alt-text="Click the edit button to see the whole flow.":::
 1. Select the connectors in the flow with the warning sign to add your user- and system-level connection references.
+    :::image type="content" source="media/env-refs/flow-connect-warning.png" alt-text="Flow with connection warning.":::
 
-Requested user-level connection reference data
+### Enter system information
+
+You will be asked to enter user- and system-level information.
+
+- Requested user-level connection reference data
      :::image type="content" source="media/env-refs/user-auth.png" alt-text="Call SAP function box for user authentication.":::
 
-Requested system-level connection reference data
+- Requested system-level connection reference data
     :::image type="content" source="media/env-refs/system-auth.png" alt-text="Call SAP function box for system authentication.":::
 
 ### See also

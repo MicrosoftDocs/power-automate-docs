@@ -21,6 +21,9 @@ search.audienceType:
   - stakeholder
   - flowmaker
   - enduser
+
+         
+
 ---
 
 # Overview of SAP integration with Power Platform (preview)
@@ -34,7 +37,7 @@ The public preview SAP integration with Power Platform offers enhanced connectiv
 > [!IMPORTANT]
 >
 > - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)] 
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## What's new?
 
@@ -50,6 +53,7 @@ Learn more at [Understanding prebuilt solution available for integrating SAP wit
 
 SAP integration with the Power Platform will help your organization achieve the following capabilities:
 
+- Reduced errors
 - Accelerated automation
 - Enhanced employee productivity and collaboration
 - Intelligent insights
