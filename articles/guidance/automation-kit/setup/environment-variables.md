@@ -38,7 +38,7 @@ Follow these steps to get the format.
 1. Copy the **URL**.
 1. Paste the URL into notepad.
 1. Remove everything from **https://** to **/resource**.
-![A screenshot that displays the the parts of the URL to remove](../media/de7d37307607c10210a3d198898d1f40.png)
+![A screenshot that displays the the parts of the URL to remove](../media/url-parts.png)
 
 1. At the end of the URL, add **/{SecretName}**. Replace **{secretname}** with your **secret name**.
 
@@ -46,7 +46,7 @@ Follow these steps to get the format.
 
     See the example in the screenshot. These reference strings are needed for three environment variables.
 
-   ![A screenshot that displays the environment variables](../media/247d5b62089b726962d20f94ae46e062.png)
+   ![A screenshot that displays the environment variables](../media/environment-vars.png)
 
    Use this information for the environment variables.
 
