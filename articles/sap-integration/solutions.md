@@ -155,8 +155,8 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 | ReadVendorList | Reads data from a vendor list |
 | UpdatePurchaseOrder | Updates purchase order data|
 | UpdateSalesOrder | Updates sales order data |
-| |
-›
+| 
+
 ## Next steps
 
 [Set up SAP integration with Power Platform (preview)](set-up-prepare.md)
