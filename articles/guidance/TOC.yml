@@ -100,3 +100,47 @@
         href: rpa-sap-playbook/feature-highlights-per-approach.md
     - name: Conclusion
       href: rpa-sap-playbook/conclusion.md
+  - name: Application Lifecycle Management for automation projects
+    href: ./planning/application-lifecycle-management.md
+  - name: Power Platform Automation Kit
+    items:
+    - name: Introduction
+      href: ./automation-kit/overview/introduction.md
+    - name: Automation Center of Excellence Strategy Using Automation Kit
+      href: ./automation-kit/overview/automation-coe-strategy.md  
+    - name: Set up the automation kit
+      items:
+      - name: Pre-requisites
+        href: ./automation-kit/setup/prerequisites.md
+      - name: Setup checklist
+        href: ./automation-kit/setup/setup-checklist.md
+      - name: Main environment
+        href: ./automation-kit/setup/main.md
+      - name: Satellite environments
+        href: ./automation-kit/setup/satellite.md
+      - name: Environment variables
+        href: ./automation-kit/setup/environment-variables.md
+      - name: Security
+        href: ./automation-kit/setup/security.md
+      - name: Disable syncing (optional)
+        href: ./automation-kit/setup/optional.md
+      - name: Setup FAQs
+        href: ./automation-kit/setup/faqs.md    
+    - name: Configure the automation kit
+      items:
+      - name: Initial configuration
+        href: ./automation-kit/configure-automation-kit.md
+      - name: Exception rules framework
+        href: ./automation-kit/exception-rules-framework.md
+      - name: DLP impact analysis for desktop flows
+        href: ./automation-kit/dlp-impact-analysis.md
+    - name: Use the automation kit
+      href: ./automation-kit/use-automation-kit.md
+    - name: Testing an end-to-end scenario
+      href: ./automation-kit/test-end-to-end.md
+    - name: Limitations
+      href: ./automation-kit/limitations.md
+    - name: Release notes
+      href: ./automation-kit/release-notes.md
+    - name: Feedback and support
+      href: ./automation-kit/feedback-support.md
