@@ -27,56 +27,74 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-SAP ERP is a complex business system that maintains data and manages business processes. It's relied upon by many businesses around the world and requires specialized knowledge—not just to design and implement—but to use. Integrating with such a complex business system has posed many challenges for business that want to integrate its data with other systems to extend its capabilities.
+Connecting your SAP system to the Power Platform will extend its functionality and allow you to get more value out of your investment.
 
-The prebuilt SAP Integration solution establishes an easier way to connect your SAP system to the Power Platform and its prebuilt Power Apps and Power Automate flows can work immediately with the core SAP ERP workflows that most businesses utilize.
+The public preview prebuilt SAP Integration solution is available for download. It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate and ease connecting your organization's SAP system to the Power Platform.
+
+The Power Apps run in your browser and streamline SAP screens and data attributes onto one simple screen. In the apps, users will be able complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
 
 ## What does the SAP Integration solution look like?
 ### Order to Cash
 
-Here's an image of the Sales Order template in the Sales module.
+Sales Order template in the Sales module
     :::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App display of sales order page that is part of the sales module.":::
 
 ### Procure to Pay
 
-Here's an image of the Purchase Orders template in the Purchasing module.
+Purchase Orders template in the Purchasing module
     :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of sales order page that is part of the sales module.":::
 
 ## How is the prebuilt SAP Integration organized?
 
 All of the screens and data attributes from SAP are streamlined onto one screen in Power Apps.
  
-The four key business processes in SAP ERP are organized into modules that contain accessible Power Apps templates. The templates enable users to perform standard workflow functions such as Search, Create, Change, or Display.  
+The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Record to Report, and Make to Stock/Order, are organized into modules that contain accessible Power Apps templates. The templates enable users to perform standard workflow functions such as Search, Create, Change, or Display. 
+
+### Order to Cash
  
-| Business Process    | Module     | Power Apps templates   |
-|---------------------|------------|------------------------|
-| Order to Cash       | Sales      |                        |
-|                     |            | Quotes                 |
-|                     |            | Sales Orders           |
-|                     |            | Deliveries             |
-|                     |            | Customer Invoices      |
-|                     |            | Customer Payments      |
-|                     |            | Mass Update Pricing    |
-| Procure to Pay      | Purchasing |                        |
-|                     |            | Requisitions           |
-|                     |            | Purchase Orders        |
-|                     |            | Goods Receipts         |
-|                     |            | Vendor Invoices        |
-|                     |            | Vendor Payments        |
-| Record to Report    | Finance    |                        |
-|                     |            | Cash Application       |
-|                     |            | GL Accounts            |
-|                     |            | Cost Centers           |
-|                     |            | Profit Centers         |
-|                     |            | Upload Journal Entries |
-| Make to Stock/Order | Production |                        |
-|                     |            | Materials              |
-|                     |            | Goods Movement         |
-|                     |            | Equipment              |
-|                     |            | Work Orders            |
-|                     |            | Shipments              |
+|Module | Power Apps templates |
+|--------|----------------------|
+| Sales  |                      |
+|        | Quotes               |
+|        | Sales Orders         |
+|        | Deliveries           |
+|        | Customer Invoices    |
+|        | Customer Payments    |
+|        | Mass Update Pricing  |
 |
 
+### Procure to Pay
+| Module     | Power Apps templates |
+|------------|----------------------|
+| Purchasing |                      |
+|            | Requisitions         |
+|            | Purchase Orders      |
+|            | Goods Receipts       |
+|            | Vendor Invoices      |
+|            | Vendor Payments      |
+|
+
+### Record to Report
+| Module  | Power Apps templates   |
+|---------|------------------------|
+| Finance |                        |
+|         | Cash Application       |
+|         | GL Accounts            |
+|         | Cost Centers           |
+|         | Profit Centers         |
+|         | Upload Journal Entries |
+|
+
+### Make to Stock/Make to Order
+| Module     | Power Apps templates |
+|------------|----------------------|
+| Production |                      |
+|            | Materials            |
+|            | Goods Movement       |
+|            | Equipment            |
+|            | Work Orders          |
+|            | Shipments            |
+|
 
 For public preview, the main focus will be testing the Order to Cash and Procure to Pay business processes.
 
@@ -90,7 +108,7 @@ The public preview prebuilt solution is made up of sets of components, which inc
 - Select **Flows** to view the list of included flows.
 - Select **Solutions** > **SAP Integration** to view its complete objects list, which includes connection references, environment variables, and tables.
 
-Lists of the apps and cloud flows with short descriptions are provided here for reference. 
+Lists of the apps and cloud flows with short descriptions are provided here for reference.
 
 ### Power Apps
 

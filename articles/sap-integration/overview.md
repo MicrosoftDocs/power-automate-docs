@@ -29,24 +29,16 @@ search.audienceType:
 
 SAP ERP is a centralized system of record that facilitates the management of data and business processes between many departments within an organization. SAP ERP, developed by SAP SE, serves as the primary enterprise resource planning application for many businesses worldwide.
 
-Integration of SAP with Power Platform offers enhanced connectivity capabilities with SAP ERP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The SAP Integration prebuilt solution offers components that work together to create a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
+The public preview SAP integration with Power Platform offers enhanced connectivity capabilities with SAP ERP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The SAP Integration prebuilt solution offers components that work together to create a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
 
 > [!IMPORTANT]
+>
 > - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
- SAP integration with the Power Platform offers enhanced connectivity capabilities with the SAP ERP connector and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The SAP Integration prebuilt solution offers components that work together to create a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)] 
 
 ## What's new?
 
-SAP integration with Power Platform brings in the following new capabilities.
-
-### SAP ERP connector enhancements
-
-The SAP ERP connector has been updated with 
-
-### Prebuilt solution
-
-A prebuilt solution that works with SAP ERP's sales and purchasing workflows. The prebuilt solution is designed to enable organizations to efficiently get connected to and communicate with their SAP system. The public preview prebuilt solution contains the following artifacts:
+A downloadable prebuilt solution that works with SAP ERP's key business processes, Order to Cash, Procure to Pay, Record to Report, and Make to Stock/Make to Order. The prebuilt solution is designed to enable organizations to digitally transform their SAP system by extending its capabilities through the Power Platform.  The public preview prebuilt solution contains the following artifacts:
 
 - Power Apps templates
 - Power Automate flows
@@ -64,7 +56,7 @@ SAP integration with the Power Platform will help your organization achieve the 
 
 ## Get started
 
-1. Join the [Power Platform + SAP Public Preview Teams] site to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
+1. Join the [Power Automate community forum](<https://aka.ms/sap-powerusers-community>) site to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 1. Assemble a team of IT administrators to [set up the SAP ERP integration with Power Platform](set-up-prepare.md).
 1. Review and establish the necessary prerequisites before setting up SAP integration with the Power Platform.
 
