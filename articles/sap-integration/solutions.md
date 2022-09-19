@@ -61,7 +61,7 @@ The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Recor
 |        | Customer Invoices    |
 |        | Customer Payments    |
 |        | Mass Update Pricing  |
-|
+||
 
 ### Procure to Pay
 | Module     | Power Apps templates |
@@ -72,7 +72,7 @@ The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Recor
 |            | Goods Receipts       |
 |            | Vendor Invoices      |
 |            | Vendor Payments      |
-|
+||
 
 ### Record to Report
 | Module  | Power Apps templates   |
@@ -83,7 +83,7 @@ The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Recor
 |         | Cost Centers           |
 |         | Profit Centers         |
 |         | Upload Journal Entries |
-|
+||
 
 ### Make to Stock/Make to Order
 | Module     | Power Apps templates |
@@ -94,7 +94,7 @@ The four key business processes in SAP ERP, Order to Cash, Procure to Pay, Recor
 |            | Equipment            |
 |            | Work Orders          |
 |            | Shipments            |
-|
+||
 
 For public preview, the main focus will be testing the Order to Cash and Procure to Pay business processes.
 
@@ -155,7 +155,7 @@ Lists of the apps and cloud flows with short descriptions are provided here for 
 | ReadVendorList | Reads data from a vendor list |
 | UpdatePurchaseOrder | Updates purchase order data|
 | UpdateSalesOrder | Updates sales order data |
-| 
+||
 
 ## Next steps
 
