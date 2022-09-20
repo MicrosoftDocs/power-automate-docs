@@ -106,11 +106,12 @@ Follow the directions in [Create and manage an environment](/power-platform/admi
 
 [Connectors](/connectors/connectors) are proxies or wrappers around APIs that allow the underlying service to communicate with the Power Platform or Azure Logic Apps.
 
-The following two connectors need to be set up to allow communication between SAP ERP and the Power Platform:
-
+The following two connectors need to be set up to allow communication between SAP ERP and Power Platform:
 - Microsoft Dataverse
 - SAP ERP connector
- 
+
+To set up connections:
+
 1. Sign in to [Power Apps](https://make.powerapps.com)
 
 1. In the left navigation pane, expand **Data** and select **Connections**.
