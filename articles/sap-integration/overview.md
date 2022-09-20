@@ -45,7 +45,7 @@ The prebuilt solution is designed to enable organizations to digitally transform
 
 Learn more at [Understanding prebuilt solution available for integrating SAP with Power Platform](solutions.md).
 
-## What value will SAP Integration add?
+## What value will SAP integration add?
 
 SAP integration with Power Platform will help your organization achieve the following capabilities:
 
