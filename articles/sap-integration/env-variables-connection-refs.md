@@ -52,7 +52,8 @@ The following steps will walk you through this process:
 
 1. Sign in to [Power Automate](<https://go.microsoft.com/fwlink/p/?linkid=2208508>).
 1. In the left navigation panel, select **Solutions**.
-    :::image type="content" source="media/env-refs/pauto-solutions.png" alt-text="Power Automate navigation panel with Solutions selected." :::
+
+    :::image type="content" source="media/env-refs/pauto-solutions.png" alt-text="Power Automate navigation panel with 'Solutions' selected." :::
 1. Select the  **SAP Integration** solution in the list. You will now go to a page that displays all of the solution's components.
 1. In the left navigation panel, select **Cloud flows**.
     :::image type="content" source="media/env-refs/solution-obj.png" alt-text="SAP Integration solution objects displayed. User selects, 'Cloud flows' to view the list of flows in the solution.":::
