@@ -1,6 +1,6 @@
 ﻿---
 title: Understand prebuilt solution available for integrating SAP with Power Platform (preview)
-description: Learn about the different solutions available for SAP integration with Power Platform.
+description: Learn about the SAP Integration solution available to import into Power Apps.
 services: 
 suite: flow
 documentationcenter: na
@@ -33,14 +33,14 @@ The public preview prebuilt SAP Integration solution is available for download. 
 
 The Power Apps custom, model-driven app runs in your browser and streamline SAP screens and data attributes onto one simple screen. In the template apps, users will be able complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
 
-## What does the SAP Integration solution look like?
+## What does the user interface look like?
 
 On the surface, you will see a custom, model-driven app that runs in your browser.
 
 Here is the Purchase Orders template in the Purchasing module
     :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of sales order page that is part of the sales module.":::
 
-## How is the prebuilt SAP Integration organized?
+## How is it organized?
 
 All of the screens and data attributes from SAP are streamlined onto one screen in Power Apps.
 
@@ -97,7 +97,7 @@ For public preview, the main focus will be testing the Order to Cash and Procure
 |            | Shipments            |
 ||
 
-## What is the prebuilt solution comprised of?
+## What is it comprised of?
 
 When you look the app behind the scenes, you see that the prebuilt solution is made up of sets of components, which include apps, cloud flows, connection references, environment variables, tables and other technical features that work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
 
@@ -169,7 +169,7 @@ After ensuring that the systems are configured to communicate with one another a
 :::image type="content" source="media/prebuilt-solution/play-app-2.png" alt-text="Power App display of the Play button that opens up the application to the user experience.":::
 
 Now, you should see the user's view. If the initial set up is complete, you are ready to test out the communication between your SAP system and the Power Platform.
-:::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App display of the Play button that opens up the application to the user experience.":::
+:::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App Order to Cash screen.":::
 
 ## Next steps
 
@@ -177,5 +177,5 @@ Now, you should see the user's view. If the initial set up is complete, you are 
 
 ### See also
 
-- [Create an environment variable with SAP connection parameters (preview)](action-screen.md)
+- [Create an environment variable with SAP connection parameters (preview)](env-variables-connection-refs.md)
 - [Overview of SAP integration with Power Platform (preview)](overview.md)

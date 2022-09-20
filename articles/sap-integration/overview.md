@@ -71,4 +71,4 @@ SAP integration with the Power Platform will help your organization achieve the 
 ### See also
 
 - [Set up SAP integration with Power Platform (preview)](set-up-prepare.md)
-- [Create an environment variable with SAP connection parameters (preview)](action-screen.md)
+- [Create an environment variable with SAP connection parameters (preview)](env-variables-connection-refs.md)

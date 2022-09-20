@@ -88,7 +88,7 @@ SAP integration with the Power Platform requires that you [install an on-premise
 
 While setting up the on-premises data gateway for SAP integration, ensure that you review the following considerations:
 
-- [Provision a new Windows Virtual Machine](/system-center/vmm/provision-vms?view=sc-vmm-2022) that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended).
+- [Provision a new Windows Virtual Machine](/system-center/vmm/provision-vms) that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended).
   - If you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same active directory environment as the data sources.
 - [Change the on-premises data gateway service account](/data-integration/gateway/service-gateway-service-account)
 
@@ -151,7 +151,7 @@ Take the following steps to download and then import the solution:
 
 ## Next steps
 
-[Create an environment variable with SAP connection parameters (preview)](action-screen.md)
+[Create an environment variable with SAP connection parameters (preview)](env-variables-connection-refs.md)
 
 ### See also
 
