@@ -112,9 +112,13 @@ The following two connectors need to be set up to allow communication between SA
 - SAP ERP connector
  
 1. Sign in to [Power Apps](https://make.powerapps.com)
+
 1. In the left navigation pane, expand **Data** and select **Connections**.
+
 1. Select **New connection** in the command bar.
+
 1. Go to **Search** in the command bar if you need to search for the connectors.
+
 1. Select each connector as it appears and follow the prompts to set up the connections.
 
 More information: [Create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection):
@@ -125,7 +129,7 @@ The SAP Integration prebuilt solution contains apps, flows, and other components
 
 Take the following steps to download and then import the solution:
 
-1. Download the solution from the [GitHub repo](https://github.com/jongilman88/PowerPlatformSAPIntegration).
+1. Download the solution (.zip file) from the [GitHub repo](https://github.com/jongilman88/PowerPlatformSAPIntegration).
   
 1. Sign in to [Power Apps](https://make.powerapps.com).
 
