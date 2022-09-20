@@ -21,13 +21,7 @@ search.audienceType:
   - administrator
   - stakeholder
   - flowmaker
-contributors:
- - jongilman88
- - galitskyd
- - ryanb58
- - scottwoodallmsft
- - microsoft-dustin
- - Wrighttyler
+
 ---
 
 # Set up SAP integration with Power Platform (preview)
