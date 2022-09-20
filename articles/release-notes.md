@@ -387,7 +387,7 @@ You can now view the status of all of the pending approval requests you have sen
 * **Available in Canada** - You can now create your flows in Canada.
 * **Create custom API webhooks** - Custom connector developers can now add triggers to their custom APIs with webhooks.
 * **Manage flow owners in the admin center** - Environment administrators can manage flow owners in the Power Automate admin center.
-* **Connector documentation reference** -  We now have a [full connector reference on docs.microsoft.com](/Connectors/).
+* **Connector documentation reference** -  We now have a [full connector reference](/Connectors/).
 * **Two partner services** - Two new partner services were released: Nexmo and Paylocity.
 
 [Read more and ask questions](https://flow.microsoft.com/blog/canada-mailboxes-aad) about this release.

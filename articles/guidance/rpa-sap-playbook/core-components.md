@@ -28,7 +28,7 @@ Here are the four components needed to automate SAP GUI with Power Automate:
 
 ## Power Automate
 
-Let's start with the core platform service called Power Automate. Power Automate is an enterprise service that helps you create automated workflows by using your favorite apps and services to synchronize files, get notifications, collect data, and more. Learn more on [docs.microsoft.com](../../getting-started.md) and [Microsoft Learn](../../learning-catalog/learning-catalog.md).
+Let's start with the core platform service called Power Automate. Power Automate is an enterprise service that helps you create automated workflows by using your favorite apps and services to synchronize files, get notifications, collect data, and more. Learn more in [Get started with Power Automate](../../getting-started.md) and in our [learning catalog](../../learning-catalog/learning-catalog.md).
 
 ![Screenshot of the Power Automate portal home page.](media/power-automate-website.png)
 

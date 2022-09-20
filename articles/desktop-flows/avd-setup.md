@@ -183,7 +183,7 @@ To update Environment Variables:
 
 ### Coauth and connections
 
-If you have multiple identities managing the CoE Toolkit you may see this error when trying to use the flows:
+If you have multiple identities managing the automation kit you may see this error when trying to use the flows:
 
 The caller with object id '...GUID...' does not have permission for connection. 
 

@@ -29,7 +29,7 @@ search.audienceType:
 >[!IMPORTANT]
 > As of August 2022, you can no longer create or manage business process flows from Power Automate outside of the solution explorer. Business process flows and instances continue to be supoprted through the solution explorer, Power Apps, and Dataverse table views.
 
-This article you how to create a business process flow with [Power Apps](/power-apps/powerapps-overview). To learn more about the benefits of using business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on how to create mobile task flows, see [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
+This article shows you how to create a business process flow with [Power Apps](/power-apps/powerapps-overview). To learn more about the benefits of using business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on how to create mobile task flows, see [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
  When a user starts a business process flow, the stages and steps of the process display in the process bar at the top of a form.  
   
