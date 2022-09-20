@@ -125,7 +125,7 @@ More information: [Create new connections](/power-apps/maker/canvas-apps/add-man
 
 ### Step 5: Import the prebuilt solution
 
-The SAP Integration prebuilt solution contains apps, flows, and other components that work together to simplify the SAP ERP integration with the Power Platform.
+The SAP integration [prebuilt solution](solutions.md) contains apps, flows, and other components that work together to simplify the SAP ERP integration with the Power Platform.
 
 Take the following steps to download and then import the solution:
 
