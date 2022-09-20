@@ -121,7 +121,7 @@ The following two connectors need to be set up to allow communication between SA
 
 1. Select each connector as it appears and follow the prompts to set up the connections.
 
-More information: [Create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection):
+More information: [Create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection).
 
 ### Step 5: Import the prebuilt solution
 
