@@ -56,6 +56,10 @@ The **Table name** list filters the rows to indicate precisely which kind of row
 
    ![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
 
+[!NOTE]
+> Virtual Tables/entities are not supported in **When a row is added, modified or deleted** trigger.
+> Triggering flows on entities having 1:N or N:N relationships is not supported in **When a row is added, modified or deleted** trigger.
+
 ### Scope
 
 The **Scope** list indicates those rows should be monitored to determine if the flow should be run.
