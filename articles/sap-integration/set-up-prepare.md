@@ -22,12 +22,12 @@ search.audienceType:
   - stakeholder
   - flowmaker
 contributors:
+ - jongilman88
  - galitskyd
  - ryanb58
  - scottwoodallmsft
  - microsoft-dustin
  - Wrighttyler
-
 ---
 
 # Set up SAP integration with Power Platform (preview)
@@ -109,7 +109,7 @@ The following articles will help you configure and manage your tenants and autho
 
 [Environments](/power-platform/admin/environments-overview) serve as containers to separate apps that might have different roles, security requirements, stages of deployment, or target audiences.
 
-Sign in to the [Power Platform admin center](<https://admin.powerplatform.microsoft.com>). The admin center provides a unified portal for administrators to manage environments, connectors, gateways, data sources and other settings for Power Apps and Power Automate.
+Sign in to the [Power Platform admin center](<https://go.microsoft.com/fwlink/p/?linkid=2208369>). The admin center provides a unified portal for administrators to manage environments, connectors, gateways, data sources and other settings for Power Apps and Power Automate.
 
 Follow the directions in [Create and manage an environment](/power-platform/admin/create-environment). While creating the environment for public preview SAP Integration, be sure to do the following actions:
 
@@ -126,7 +126,7 @@ The following two connectors need to be set up to allow communication between SA
 1. Microsoft Dataverse
 1. SAP ERP connector
 
-Sign in to [Power Apps](https://make.powerapps.com) and take the following steps that are more fully documented in [create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection):
+Sign in to [Power Apps](<https://go.microsoft.com/fwlink/p/?linkid=2208275>) and take the following steps that are more fully documented in [create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection):
 
 1. In the left navigation panel, expand **Data** and select **Connections**.
 1. Select **New connection** in the command bar.
@@ -140,11 +140,10 @@ The SAP Integration prebuilt solution contains apps, flows, and other components
 Take the following steps to download and then import the solution:
 
 1. To download the solution:
-    1. Go to [PowerPlatformSAPIntegration on Git Hub](<https://github.com/jongilman88/PowerPlatformSAPIntegration>).
-    
-
+    1. Go to [PowerPlatformSAPIntegration on Git Hub](<https://go.microsoft.com/fwlink/p/?/linkid=2208156>).
+  
 1. To import the solution:
-    1. Sign in to [Power Apps](<https://make.preview.powerapps.com>)
+    1. Sign in to [Power Apps](<https://go.microsoft.com/fwlink/p/?/linkid=2208506>)
     1. [Import the solution](/power-apps/maker/data-platform/import-update-export-solutions) into Power Apps.
 
 ## Next steps

@@ -21,6 +21,8 @@ search.audienceType:
   - flowmaker
   - skakeholder
   - enduser
+contributors:
+  - jongilman
 ---
 
 # Understand prebuilt solution available for integrating SAP with Power Platform (preview)
@@ -162,7 +164,7 @@ The following Power Apps and Power Automate flows are listed with short descript
 After ensuring that the systems are configured to communicate with one another and you have taken a short tour of the imported solution, you are ready to open an app that acts as a user interface and test it.
 
 - Select **Apps**
-- Select **Purchase Orders** or **Sales Orders** 
+- Select **Purchase Orders** or **Sales Orders**
 - Click the ***more options*** icon
 - Select **Play**
 
