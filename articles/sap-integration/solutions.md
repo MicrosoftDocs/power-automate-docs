@@ -1,18 +1,9 @@
-﻿---
+---
 title: Understand prebuilt solution available for integrating SAP with Power Platform (preview)
 description: Learn about the SAP Integration solution available to import into Power Apps.
-services: 
-suite: flow
-documentationcenter: na
 author: EllenWehrle
-manager: jongilman
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 09/19/2022
 ms.author: ellenwehrle
 search.app: 
@@ -28,26 +19,26 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-Connecting your SAP system to the Power Platform will extend its functionality and allow you to get more value out of your investment.
+Connecting your SAP system to Microsoft Power Platform will extend its functionality and allow you to get more value out of your investment.
 
-The public preview prebuilt SAP Integration solution is available for download. It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with the Power Platform.
+The preview version of the prebuilt SAP integration solution is available for download [here](https://github.com/jongilman88/PowerPlatformSAPIntegration). It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with Power Platform.
 
-The Power Apps custom, model-driven app runs in your browser and streamline SAP screens and data attributes onto one simple screen. In the template apps, users will be able complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
+The custom model-driven app runs in your browser and streamline SAP screens and data attributes onto one simple screen. In the template apps, users will be able complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
 
 ## What does the user interface look like?
 
-On the surface, you will see a custom, model-driven app that runs in your browser.
+On the surface, you will see a custom model-driven app that runs in your browser.
 
 Here is the Purchase Orders template in the Purchasing module
     :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of sales order page that is part of the sales module.":::
 
 ## How is it organized?
 
-All of the screens and data attributes from SAP are streamlined onto one screen in Power Apps.
+All of the screens and data attributes from SAP are streamlined onto one screen in the app.
 
 Four key business processes in SAP ERP are organized into modules that contain accessible Power Apps templates. The templates enable users to perform standard workflow functions such as Search, Create, Change, or Display.
 
-For public preview, the main focus will be testing the Order to Cash and Procure to Pay business processes.
+In preview, the main focus will be testing the Order to Cash and Procure to Pay business processes.
 
 ### Order to Cash
 
@@ -98,20 +89,20 @@ For public preview, the main focus will be testing the Order to Cash and Procure
 |            | Shipments            |
 ||
 
-## What is it comprised of?
+## What does the solution contain?
 
-When you look the app behind the scenes, you see that the prebuilt solution is made up of sets of components, that include:
+When you look the app behind the scenes, you see that the prebuilt solution is made up of sets of components that include:
 
-- apps
-- cloud flows
-- connection references
-- environment variables
-- tables
-- technical features
+- Apps
+- Cloud flows
+- Connection references
+- Environment variables
+- Tables
+- Technical features
 
 These sets of components work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
 
- After importing the prebuilt solution into Power Apps, look to the left navigational panel to view all of its different components.
+After importing the prebuilt solution into Power Apps, look to the left navigational panel to view all of its different components.
 
   :::image type="content" source="media/prebuilt-solution/powerapps-nav.png" alt-text="Power App navigation where one can select Apps, Flows, and Solutions.":::
 
@@ -119,9 +110,9 @@ These sets of components work together to communicate with your SAP system, auto
 - Select **Apps** to view the list of included apps.
 - Select **Solutions** > **SAP Integration** to view its complete objects list.
 
-The following Power Apps and Power Automate flows are listed with short descriptions for your reference.  
+The following apps and flows are listed with short descriptions for your reference.  
 
-### Power Apps
+### Apps in Power Apps
 
 | App name | Description |
 |------------------|---------------------|
@@ -170,21 +161,17 @@ The following Power Apps and Power Automate flows are listed with short descript
 
 ## How do I access the user interface?
 
-Once the systems are configured to communicate with one another and you explore the internal components of the imported solution, you are ready to open an app that acts as a user interface and test it.
+After the systems are configured to communicate with one another and you explore the internal components of the imported solution, you are ready to open an app that acts as a user interface and test it.
 
-- Select **Apps**
-- Select **Purchase Orders** or **Sales Orders**
-- Click the ***more options*** icon
-- Select **Play**
+1. Select **Apps**
+1. Select **Purchase Orders** or **Sales Orders**
+1. Click the ***more options*** icon
+1. Select **Play**
 
-:::image type="content" source="media/prebuilt-solution/play-app-2.png" alt-text="Power App display of the Play button that opens up the application to the user experience.":::
+    :::image type="content" source="media/prebuilt-solution/play-app-2.png" alt-text="Power App display of the Play button that opens up the application to the user experience.":::
 
-Now, you should see the user's view. If the initial setup is complete, you are ready to test out the communication between your SAP system and the Power Platform.
-:::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App Order to Cash screen.":::
-
-## Next steps
-
-[Set up SAP integration with Power Platform (preview)](set-up-prepare.md)
+    Now, you should see the user's view. If the initial setup is complete, you are ready to test out the communication between your SAP system and the Power Platform.
+    :::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App Order to Cash screen.":::
 
 ### See also
 
