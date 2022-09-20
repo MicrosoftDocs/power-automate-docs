@@ -42,7 +42,16 @@ The public preview SAP integration with Power Platform offers enhanced connectiv
 
 ## What's new?
 
-A downloadable prebuilt solution that works with SAP ERP's key business processes, Order to Cash, Procure to Pay, Record to Report, and Make to Stock/Make to Order. The prebuilt solution is designed to enable organizations to digitally transform their SAP system by extending its capabilities through the Power Platform.  The public preview prebuilt solution contains the following artifacts:
+A downloadable prebuilt solution that works with SAP ERP's key business processes:
+
+- Order to Cash
+- Procure to Pay
+- Record to Report
+- Make to Stock and Make to Order
+
+The prebuilt solution is designed to enable organizations to digitally transform their SAP system by extending its capabilities through the Power Platform.  
+
+The public preview prebuilt solution contains the following components:
 
 - Power Apps templates
 - Power Automate flows
