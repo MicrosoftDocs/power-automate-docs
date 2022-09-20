@@ -40,7 +40,7 @@ A successful SAP integration with the Power Platform requires that you work with
 
 Take the following steps to support a successful deployment of the public preview SAP Integration solution:
 
-1. Join the [Power Automate community forum](<https://aka.ms/sap-powerusers-community>) to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
+1. Join the [Power Apps community forum](<https://aka.ms/sap-powerusers-community>) to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 1. Assemble a team with the following IT system administrators:
     1. Networking
     1. SAP BASIS
@@ -140,10 +140,8 @@ The SAP Integration prebuilt solution contains apps, flows, and other components
 Take the following steps to download and then import the solution:
 
 1. To download the solution:
-    1. Go to [Microsoft Download Center](<https://go.microsoft.com/fwlink/p/?linkid=2208156>).
-    1. Select on **Developer Tools**.
-    1. Select **SAP Integration**.
-    1. Follow the instructions on the page to download the solution to your computer.
+    1. Go to [PowerPlatformSAPIntegration on Git Hub](<https://github.com/jongilman88/PowerPlatformSAPIntegration>).
+    
 
 1. To import the solution:
     1. Sign in to [Power Apps](<https://make.preview.powerapps.com>)
