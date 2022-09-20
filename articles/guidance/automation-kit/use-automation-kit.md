@@ -91,13 +91,13 @@ CoE admins will map automation projects to environments after the request is app
 1. Select the record you want to map.
 1. Select the **Related** tab > **Environments**.
 
-   ![This screenshot displays the steps to map a project to a an environment.](media/af754212087c3a3530a7482a5ac2a810.png)
+   ![This screenshot displays the steps to map a project to a an environment.](media/map-project-environment.png)
 
 1. Select **Add Existing Environments**.
 1. Select the environment you want to use, or create a new one.
 1. Select **Add** > **"Save & Close"**.
 
-![This screenshot displays the steps to save the mapping.](media/74cb8d1d0475c2006e750aee1428749f.png)
+![This screenshot displays the steps to save the mapping.](media/save-mapping.png)
 
 ## Automation Solution Manager app
 
@@ -111,13 +111,13 @@ Data syncs from the satellite environment to the main environment using real-tim
 
 After you create a solution in an environment, it appears in the list. The **+** icon displays when metering is turned off for a solution.
 
-![This screenshot displays the plus icon that indicates that metering is turned off for the solution.](media/ea263020f2637ad732cbe0bdac828036.png)
+![This screenshot displays the plus icon that indicates that metering is turned off for the solution.](media/metering-off.png)
 
 1. Select the **"+"** on the solution you want to meter.
 1. In the new screen, select your automation project from the list. If it's not listed, select the **Refresh** button until it appears.
 1. Select **Submit**, and then select **Yes** on the confirmation screen that appears.
 
-   ![This screenshot displays the steps to turn on metering on a solution](media/f9ec18f8d7d6d717066862f7c3aa693f.png)
+   ![This screenshot displays the steps to turn on metering on a solution](media/metering-steps.png)
 
 ### Rename a cloud flow to match naming convention
 
@@ -145,7 +145,7 @@ The section defined how meter the artifacts for the Flow Sessions so that teleme
 
    Now data will be **flowing** to main (flow sessions).
 
-   ![This screenshot displays the meter icon to indicate that metering is turned on.](media/5c2fb7dbc19bec6e4708466c2afa890b.png)
+   ![This screenshot displays the meter icon to indicate that metering is turned on.](media/metering-on.png)
 
 ### Bypass Flow naming convention
 
@@ -167,71 +167,71 @@ The main Power BI dashboard has the following sections.
 
 - **Home** - This screen provides an overview of key KPIs for the Automation Kit.
 
-   ![A screenshot that displays the KPIs on the dashboard](media/d1618d1e40e6ea8c255bdf4d76911648.png)
+   ![A screenshot that displays the KPIs on the dashboard](media/kpi-dash.png)
 
 - **Project Backlog** - Provides details of the ideas and projects submitted, status, and ranks based on estimated savings and complexity.
 
-   ![A screenshot that displays the details of projects and their status](media/911dbb5c5fc4547383038dff02f8897f.png)
+   ![A screenshot that displays the details of projects and their status](media/project-status.png)
 
 - **Business KPI** - Displays business details for savings realized, efficiency, hours saved, and other business metrics.
 
-   ![A screenshot that displays the business metrics](media/9deb2fb334049b3ddca9f4776fd8ad0b.png)
+   ![A screenshot that displays the business metrics](media/business-metrics.png)
 
 - **Goals** - Outlines savings and efficiency goals for the organization, and the status by department and project.
 
-   ![A screenshot that displays the project goals.](media/0365178b76c51543398ee3b5b45bba5e.png)
+   ![A screenshot that displays the project goals.](media/project-goals.png)
 
 - **ROI** - Overall ROI for the Projects implemented.
 
-   ![A screenshot that displays the savings and efficiency goals for the organization](media/e04475e89e3136d5fc84873d06f5e429.png)
+   ![A screenshot that displays the savings and efficiency goals for the organization](media/efficiency-goals.png)
 
 - **ROI Financials** - Displays information regarding ROI *actual* vs *estimate* by year, quarter, and month.
 
-   ![A screenshot that displays information regarding ROI actual vs estimate](media/845e1b29d89ff2431f60e13656960524.png)
+   ![A screenshot that displays information regarding ROI actual vs estimate](media/roi-estimate.png)
 
 - **Solutions** - Provides an overview of solutions in production, hours saved, error rates, and bot success KPIs.
 
-   ![A screenshot that displays an overview of solutions](media/da3524962ef85c40433f69a762c3ffbb.png)
+   ![A screenshot that displays an overview of solutions](media/solutions-overview.png)
 
 - **Machines** - Displays detailed information on machine utilization and activity.
 
-   ![A screenshot that displays the utilization for the machines.](media/b4b902a7319fe518600896a0ba5b83f4.png)
+   ![A screenshot that displays the utilization for the machines.](media/machine-utilization.png)
 
 - **Flow Overview** - Summarizes the number flows created, runs, status, and top 10 makers, machines, and flows.
 
-   ![A screenshot that displays the summary of flow statistics](media/288ff8ec71655f36b05136ccdd065f30.png)
+   ![A screenshot that displays the summary of flow statistics](media/stats-summary.png)
 
 - **Flow Run Detail** - Detailed information on flow runs, durations, status, run modes, hosts, and errors.
 
-   ![A screenshot that displays detailed information on flow runs](media/93661c6e0fea9d4727cece5162fff3f5.png)
+   ![A screenshot that displays detailed information on flow runs](media/runs-details.png)
 
 - **Run Performance** - Shows a graphical display of run performance day over day.
 
-   ![A screenshot that displays a graphical display of run performance day over day](media/0b3612fa15b68b4f6cd4b6deb6de30ae.png)
+   ![A screenshot that displays a graphical display of run performance day over day](media/perf-day-day.png)
 
 - **Control Chart** - Displays an overview of flow processing time averages and operational performance within control points.
 
-   ![A screenshot that displays flow processing time averages and operational performance](media/c81be1455a2a486a8f34d5fb5bac6789.png)
+   ![A screenshot that displays flow processing time averages and operational performance](media/time-averages.png)
 
 - **Flow Exceptions** – Enables you to filter by date, exception rule, cloud flow name, desktop flow name, or host name.
 
-   ![A screenshot that displays a filter by date and other metrics](media/3fc477111732768db0bc79ce4850166e.png)
+   ![A screenshot that displays a filter by date and other metrics](media/by-date-metrics.png)
 
 - **Flow Exceptions Tree Diagram –** Displays and allows you to drill into specific flows organized by categories, including cloud flow name, desktop flow name, error code, error message, run mode, or host name.
 
-   ![A screenshot that displays specific flows organized by categories](media/931ae2e90c21bfd882edcbc8283a3503.png)
+   ![A screenshot that displays specific flows organized by categories](media/by-categories.png)
 
 - **Action Usage Analysis** – Includes functionality similar to the Automation Kit DLP impact analysis Power App but with added Power BI filters.
 
-   ![A screenshot that displays dlp policy items](media/e252ea3e2eab49b430a7fe7f77e1cbf2.png)
+   ![A screenshot that displays dlp policy items](media/dlp-policy.png)
 
 - **Action Decomposition Tree Analysis** – Tree like diagram that shows how each action module or flow relates in a tree-like diagram.
 
-   ![A screenshot that displays the tree-like diagram](media/3efabd0d706b63c2287f34fbf93a44b1.png)
+   ![A screenshot that displays the tree-like diagram](media/tree-diagram.png)
 
 - **ROI Calculations** - Contains examples on how calculations related to ROI and efficiency are determined throughout the dashboards.
 
-   ![A screenshot that displays ROI and efficiency calculations](media/5821b46c21aaa93fe4b8627a11e49559.png)
+   ![A screenshot that displays ROI and efficiency calculations](media/roi-calculations.png)
 
 ### Detail pages
 

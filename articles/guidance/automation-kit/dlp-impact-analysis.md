@@ -67,13 +67,13 @@ Use the filter pane on the left to filter by **Scripting** module, to see which 
 
 The following screenshot display all scripting actions.
 
-![This screenshot displays the scripting actions](media/4b7ee8531f67966b9ae9d175ca1c97d8.png)
+![This screenshot displays the scripting actions](media/scripting-actions.png)
 
 #### Only Python actions
 
 The following screenshot displays only the Python actions.
 
-![This screenshot displays only Python actions](media/b62e7161a8ab756d31cee58197ad4a8b.png)
+![This screenshot displays only Python actions](media/python-actions.png)
 
 >[!TIP]
 >Select the desktop flow name to go directly to the flow.
