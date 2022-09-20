@@ -55,7 +55,7 @@ landingContent:
             url: rpa-sap-playbook/conclusion.md
 
   # Card 
-  - title: Power Platform Automation kit
+  - title: Automation Kit for Power Platform
     linkLists:
        - linkListType: overview
          links:

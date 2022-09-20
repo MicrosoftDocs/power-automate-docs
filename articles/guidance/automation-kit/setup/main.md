@@ -86,7 +86,7 @@ This process usually takes 5-10 minutes. So, you can easily do this step while t
 
    Here is an example of how you can configure the **Start and wait for approval** action.
 
-   ![A screenshot that displays the start and wait for an approval action card configured.](../media/234ccb521d34e82772e75c627ee0deab.png)
+   ![A screenshot that displays the start and wait for an approval action card configured.](../media/approval-card.png)
 
    [Learn more about Approvals Provisioning](https://support.microsoft.com/topic/power-automate-approvals-provisioning-overview-and-troubleshooting-2306313a-49fa-efde-c716-a34c573ec942).
 

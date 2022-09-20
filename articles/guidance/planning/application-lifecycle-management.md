@@ -1,6 +1,6 @@
 ---
-title: Overview of the Automation kit ALM | Microsoft Docs
-description: Overview of the Automation kit ALM.
+title: Tips for using Automation Kit for Power Platform with ALM | Microsoft Docs
+description: Tips for using Automation Kit for Power Platform with ALM.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
@@ -17,10 +17,9 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Application Lifecycle Management (ALM)
+# Tips for using Automation Kit for Power Platform with ALM
 
-One or more developers create approved automation projects in a development environment. One or more automation projects can be part of the same automation solution. More information about solutions can
-be found here: [Solutions overview](/powerapps/maker/data-platform/solutions-overview).
+One or more developers create approved automation projects in a development environment. One or more automation projects can be part of the same automation solution. More information about solutions can be found here: [Solutions overview](/powerapps/maker/data-platform/solutions-overview).
 
 Organizations can use any of the following three ways to implement application lifecycle management (ALM).
 
@@ -39,7 +38,7 @@ Manual activities can include the following.
 
 ## Automated Actions
 
-Azure DevOps and the [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools) provide a great way to automate manual ALM activities and more. Together with Power Automate, you can orchestrated a complete set of activities.
+Azure DevOps and the [Microsoft Power Platform Build Tools for Azure DevOps](/power-platform/alm/devops-build-tools) provide a great way to automate manual ALM activities and more. Together with Power Automate, you can orchestrate a complete set of activities.
 
 Here are a few orchestrations for you to consider.
 

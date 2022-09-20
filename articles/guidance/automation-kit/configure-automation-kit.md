@@ -69,7 +69,7 @@ Select **"Automation Center"** in the bottom navigation bar, and then switch t
 3. Select **Save & Close.**.
 4. Repeat the previous three steps for all your **Satellite environments** (DEV, TEST, PROD, etc.).
 
-   ![A screenshot that displays the steps to save an environment as a satellite environment](media/07a8a970def5d0e7a33b226305b05c7d.png)
+   ![A screenshot that displays the steps to save an environment as a satellite environment](media/satellite-environment-steps.png)
 
 #### Departments
 
@@ -158,7 +158,7 @@ This table should only have one record defined. This record is used if any of th
 
 1. Define one fallback record. Use the following screenshot as a guide for your fallback record.
 
-   ![A screenshot that displays a sample of the fallback record.](media/b51358ec1c7aa89bbcdf017c3e76cc98.png)
+   ![A screenshot that displays a sample of the fallback record.](media/fall-back-sample.png)
 
 ## Steps to configure ROI calculation
 
@@ -215,7 +215,7 @@ Sign into the [maker portal](https://make.powerapps.com/), and then perform the 
 1. Select the **...** (more commands) on the app.
 1. Select **Details**.
 
-   ![A screenshot that displays the steps to select details.](media/dd98466696afb5756f04f76d3f87b5b1.png)
+   ![A screenshot that displays the steps to select details.](media/select-details.png)
 
 1. Copy the AppID.
 1. Copy the Web Link.
@@ -228,7 +228,8 @@ Sign into the [maker portal](https://make.powerapps.com/), and then perform the 
 1. Select the **...** (more commands) on the app.
 1. Select **Details**.
 
-   ![A screenshot that displays the details link.](media/89667581265544834f969251313d1015.png)
+   ![A screenshot that displays the details link.](media/details-link.png)
+
 1. Select Properties.
 1. Copy Unified Interface URL.
 

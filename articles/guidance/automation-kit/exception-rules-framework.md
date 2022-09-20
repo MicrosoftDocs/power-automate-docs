@@ -60,7 +60,7 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 >[!NOTE]
 >If you don't see the tables mentioned in the previous step, confirm that you have the [roles mentioned](#flow-exception-rules-framework).
 
-![A screenshot that displays the tables](media/c86907a40ab7cb0e09d1565e3e8ee402.png)
+![A screenshot that displays the tables](media/tables.png)
 
 1. Select the **Flow Exception Rule Configuration** table.
 1. Select the **Data** tab.
@@ -68,7 +68,7 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 
 1. Here is an example configuration rule. If you want to monitor multiple error codes, you must create a record for each error code that you want to monitor.
 
-   ![A screenshot that displays the exception rule configuration](media/4ea245b078c32cc743c324685dd31fa1.png)
+   ![A screenshot that displays the exception rule configuration](media/exception-rule.png)
 
     This table contains the field names and the corresponding values.
 
@@ -87,14 +87,14 @@ To visualize and report on the flow exceptions configured, the flow exceptions d
 
 When you launch the Power BI template, enter the URL for the environment you wish to report on:
 
-![This screenshot displays ](media/a7506df60438ae8adfb0ee0cfc2e9eeb.png)
+![This screenshot displays the exception dashboard](media/exception-dash.png)
 
 >[!NOTE]
 >The URL must be entered in the following format: `[organization].crm[N].dynamics.com`. For example, **contosttest.crm.dynamics.com**
 
 The **Flow Exceptions** tab allows you to filter by date, exception rule, cloud flow name, desktop flow name, or host name.
 
-![This screenshot displays the flow exception filters.](media/827e964d210daea59555419457fe84dc.png)
+![This screenshot displays the flow exception filters.](media/exception-filter.png)
 
 Here is a summary of the information provided in this tab.
 
@@ -110,7 +110,7 @@ Here is a summary of the information provided in this tab.
 
 The **Flow Exceptions (Tree)** tab allows you to filter by date, exception rule, cloud flow name, desktop flow name, or host name.
 
-![Screenshot that displays flow exceptions details](media/144bd04884874af01fa0998c98218377.png)
+![Screenshot that displays flow exceptions details](media/exception-details.png)
 
 Here is a summary of the information provided in this tab.
 
