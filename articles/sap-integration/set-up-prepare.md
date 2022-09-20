@@ -63,23 +63,9 @@ The assembled team of IT system administrators need to review the following prer
 
 ## Integrate SAP ERP system with Power Platform
 
-SAP integration with Power Platform requires IT system administrators to establish a connection and set up security and governance between the two systems.
+SAP integration with Power Platform requires IT system administrators to establish a connection and set up security and governance between the two systems. Perform the following steps.
 
-The initial setup includes the following steps:
-
-1. Install the on-premises data gateway
-
-1. Configure Azure Active Directory (AD) and SAP single sign-on (SSO)
-
-1. Create and configure an environment in Power Platform admin center
-
-1. Select environment configured for SAP Integration in Power Apps
-
-1. Set up and manage connections in Power Apps
-
-1. Download and import the SAP integration solution
-
-### Install on-premises data gateway
+### Step 1: Install on-premises data gateway
 
 An on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data that is not in the cloud and Microsoft cloud services.
 
@@ -91,7 +77,7 @@ While setting up the on-premises data gateway for SAP integration, ensure that y
   - If you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same active directory environment as the data sources.
 - [Change the on-premises data gateway service account](/data-integration/gateway/service-gateway-service-account)
 
-### Configure Azure AD and SAP SSO
+### Step 2: Configure Azure AD and SAP SSO
 
 An [Azure Active Directory (AD) tenant](/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-ad-define) provides identity and access management. The Azure AD tenant created for SAP Integration must be configured with an on-premises data gateway with constrained delegation to support single sign-on (SSO).
 
@@ -104,7 +90,7 @@ The following articles will help you configure and manage your tenants and autho
 - [Overview of Kerberos](/data-integration/gateway/service-gateway-service-account)
 - [Configure Kerberos-based SSO to on-premises data sources (SAP)](/power-bi/connect-data/service-gateway-sso-kerberos)
 
-### Create and manage an environment
+### Step 3: Create and manage an environment
 
 [Environments](/power-platform/admin/environments-overview) serve as containers to separate apps that might have different roles, security requirements, stages of deployment, or target audiences.
 
@@ -116,34 +102,36 @@ Follow the directions in [Create and manage an environment](/power-platform/admi
 1. Select **Yes** to create a database for the environment.
 1. Restrict environment access by selecting the newly created Azure AD tenant as the security group. This will ensure that only the resources in that tenant have access to the environment.
 
-### Set up and manage connectors
+### Step 4: Set up and manage connectors
 
 [Connectors](/connectors/connectors) are proxies or wrappers around APIs that allow the underlying service to communicate with the Power Platform or Azure Logic Apps.
 
 The following two connectors need to be set up to allow communication between SAP ERP and the Power Platform:
 
-1. Microsoft Dataverse
-1. SAP ERP connector
-
-Sign in to [Power Apps](<https://go.microsoft.com/fwlink/p/?linkid=2208275>) and take the following steps that are more fully documented in [create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection):
-
-1. In the left navigation panel, expand **Data** and select **Connections**.
+- Microsoft Dataverse
+- SAP ERP connector
+ 
+1. Sign in to [Power Apps](https://make.powerapps.com)
+1. In the left navigation pane, expand **Data** and select **Connections**.
 1. Select **New connection** in the command bar.
 1. Go to **Search** in the command bar if you need to search for the connectors.
 1. Select each connector as it appears and follow the prompts to set up the connections.
 
-### Import prebuilt solution
+More information: [Create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection):
+
+### Step 5: Import the prebuilt solution
 
 The SAP Integration prebuilt solution contains apps, flows, and other components that work together to simplify the SAP ERP integration with the Power Platform.
 
 Take the following steps to download and then import the solution:
 
-1. To download the solution:
-    1. Go to [PowerPlatformSAPIntegration on Git Hub](<https://go.microsoft.com/fwlink/p/?/linkid=2208156>).
+1. Download the solution from the [GitHub repo](https://github.com/jongilman88/PowerPlatformSAPIntegration).
   
-1. To import the solution:
-    1. Sign in to [Power Apps](<https://go.microsoft.com/fwlink/p/?/linkid=2208506>)
-    1. [Import the solution](/power-apps/maker/data-platform/import-update-export-solutions) into Power Apps.
+1. Sign in to [Power Apps](https://make.powerapps.com).
+
+1. Select the environment from the top-right corner where you want to import the solution.
+
+1. Import the solution. More information: [Import solutions in Power Apps](/power-apps/maker/data-platform/import-update-export-solutions).
 
 ## Next steps
 
