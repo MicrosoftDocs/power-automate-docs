@@ -711,6 +711,16 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
+  - name: SAP integration (preview)
+    items:
+    - name: Overview
+      href: ./sap-integration/overview.md
+    - name: Set up and prepare
+      href: ./sap-integration/set-up-prepare.md
+    - name: Create an environment variable with SAP connection parameter
+      href: ./sap-integration/env-variables-connection-refs.md
+    - name: Prebuilt solution
+      href: ./sap-integration/solutions.md
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
