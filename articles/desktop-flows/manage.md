@@ -62,7 +62,7 @@ You can share a desktop flow with other users in your organization, giving those
 
 Follow these steps to share a desktop flow.
 
-1. Sign into [Power Automate](https://powerautomate.com).
+1. Sign into [Power Automate](https://powerautomate.microsoft.com).
 1. Select **My flows** from the left side of the screen.
 1. Select **Desktop flows**.
 1. Select any flow that you own.
@@ -91,7 +91,7 @@ Once a desktop flow has been shared, owners and co-owners can change the access 
 
 To duplicate an existing flow:
 
-1. Sign into [Power Automate](https://powerautomate.com).
+1. Sign into [Power Automate](https://powerautomate.microsoft.com).
 1. Select **My flows** from the left side of the screen.
 1. Select **Desktop flows**.
 1. Select the flow that you want to copy.
@@ -110,6 +110,7 @@ For each of your desktop flows, you can manage its access by selecting manage ac
    ![Screenshot of the Manage access option.](media/manage-desktop-flows/manage-access.png)
 
 In this panel, you can:
+
 - Share the desktop flow with another user
 - Edit users' permissions
 - Remove users' permissions for this flow
@@ -126,7 +127,5 @@ In this panel, you can:
 - Run [desktop flows](run-desktop-flow.md).
 - Create [Windows recorder (V1) flows](create-desktop.md).
 - Create [Selenium IDE flows](create-web.md).
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
