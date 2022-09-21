@@ -58,7 +58,7 @@ The **Table name** list filters the rows to indicate precisely which kind of row
 
 [!NOTE]
 > Virtual Tables/entities are not supported in **When a row is added, modified or deleted** trigger.
-> Triggering flows on entities having 1:N or N:N relationships is not supported in **When a row is added, modified or deleted** trigger.
+> Triggering flows on relationships of type 1:N or N:N is not supported in **When a row is added, modified or deleted** trigger.
 
 ### Scope
 
