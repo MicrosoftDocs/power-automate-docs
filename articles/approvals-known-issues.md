@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/16/2022
+ms.date: 09/22/2022
 ms.author: tatn
 search.app: 
   - Flow
@@ -53,11 +53,11 @@ Data templating isn't fully supported for adaptive cards in Power Automate. As a
 
 Approvals that rely on custom responses can fail if they're sent to many users with the type set to "Everyone must approve". This failure is due to data size limitations of the results field.
 
-**Power Apps V2 trigger doesn't support non-open API flows**
+### Power Apps V2 trigger doesn't support non-open API flows**
 
 If you update your Power Apps V1 trigger to the Power Apps V2 trigger, your flow receives a connection error. To workaround this issue, update your flow to the Power Apps V2 trigger, remove and re-add the flow, and then save the app.
 
-**Updating Power Apps v2 trigger to invoker connection**
+### Updating Power Apps v2 trigger to invoker connection**
 
 The Power Apps V2 trigger supports both embedded and invoker connections. When you update the connections in your Power Apps V2 trigger to invoker connections, you must refresh or remove and re-add the flow in the app and save the app. 
 
@@ -70,3 +70,37 @@ It's possible to create flows with the approval connector where you use the *Cre
 ## Using approval outcomes in loops
 
 When you use approvals with *do until* loops, users need to account for all possible outcomes of a flow. If not, the flows could be stuck in infinite loops. For 'basic' and 'await all approvals', the final states can be *Approved*, *Rejected*, or *Cancelled*. For custom approvals, it's based on what the user chooses to have as the options for the approval. Use a condition or switch statement with approval flow instead of *do until* loops.
+
+## Issues with email notifications
+
+Here's an explanation of the process for sending an approval email notification, as well as a description of the possible email notification statuses and troubleshooting.
+
+Sending approval email notifications is a two-step process.
+
+1. Power Automate places a request for the email to be sent.
+1. The email goes into a queue.
+
+### Email status definitions
+
+Status|Description
+------|------------
+Pending|Power Automate is requesting that the the notification is sent.
+Requested| Power Automate successfully placed the request for the notification to be sent, but the request is still being processed.
+Sent| The email notification was correctly sent.
+Failed| The email notification was correctly placed in the queue, but there was an error sending it.
+
+### Missing emails
+
+If the status of your email notification is **Sent** but you don't see the email notification, try the following options.
+
+- Refresh your inbox and verify that you have an active Internet connection.
+- Confirm that the email address is correct for the intended recipient.
+- Review your email settings and verify if there are any filters or blocked addresses that may prevent you from seeing the notification.
+- Check your spam/promotions folder.
+
+### Troubleshoot failed requests
+
+If the status of your email notification is **Failed**, you can try the following options.
+
+- Make another request to the same recipients.
+- Raise a ticket to Microsoft Support, detailing the issue.
