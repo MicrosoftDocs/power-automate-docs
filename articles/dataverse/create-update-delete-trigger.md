@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/13/2021
+ms.date: 09/22/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -57,8 +57,8 @@ The **Table name** list filters the rows to indicate precisely which kind of row
    ![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
 
 [!NOTE]
-> Virtual Tables/entities are not supported in **When a row is added, modified or deleted** trigger.
-> Triggering flows on relationships of type 1:N or N:N is not supported in **When a row is added, modified or deleted** trigger.
+> The **When a row is added, modified or deleted** trigger doesn't support virtual tables.
+> The **When a row is added, modified or deleted** trigger doesn't support starting flows on relationships of type 1:N or N:N.
 
 ### Scope
 
