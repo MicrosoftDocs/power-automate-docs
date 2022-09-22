@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/13/2021
+ms.date: 09/22/2021
 search.app: 
   - Flow
   - Powerplatform
@@ -55,6 +55,10 @@ When the flow is triggered by the creation, update, or deletion of a row, the va
 The **Table name** list filters the rows to indicate precisely which kind of rows should change before the flow triggers. See [Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview).
 
    ![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
+
+[!NOTE]
+> The **When a row is added, modified or deleted** trigger doesn't support virtual tables.
+> The **When a row is added, modified or deleted** trigger doesn't support starting flows on relationships of type 1:N or N:N.
 
 ### Scope
 
