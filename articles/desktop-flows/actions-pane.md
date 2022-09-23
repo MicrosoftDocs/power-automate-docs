@@ -1,11 +1,12 @@
 ---
 title: Actions and the actions pane | Microsoft Docs
 description: This section describes the actions and the actions pane in flow designer.
-author: georgiostrantzas
+author: mariosleon
+
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/09/2022
-ms.author: gtrantzas
+ms.date: 09/22/2020
+ms.author: marleon
 ms.reviewer:
 search.app: 
   - Flow
@@ -20,10 +21,7 @@ In the flow designer, the actions pane on the left side of the window shows all 
 
 ![Screenshot of the actions pane.](media/actions-pane/actions-pane.png)
 
-To quickly find a specific action, enter the name of the action in the search bar. Searching also returns partial matches, but requires at least two provided characters.
-
-> [!NOTE]
-> If the searching term matches a module name, the results display the module expanded with all its actions available.
+To quickly find a specific action, enter the name of the action in the search bar. Searching also returns partial matches.
 
 ![Screenshot of the search field in the actions pane.](media/actions-pane/actions-search.png)
 

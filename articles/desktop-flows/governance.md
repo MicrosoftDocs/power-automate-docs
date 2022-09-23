@@ -4,7 +4,7 @@ description: Governance in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
-author: georgiostrantzas
+author: mariosleon
 editor: ''
 tags: ''
 
@@ -13,8 +13,8 @@ ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/09/2022
-ms.author: gtrantzas
+ms.date: 03/02/2021
+ms.author: marleon
 search.app: 
   - Flow 
 search.audienceType: 
@@ -174,9 +174,10 @@ You can use the following registry entry to configure how Power Automate for des
 - **2**: Power Automate for desktop will use the integrated Windows notifications.
 - **3**: Power Automate for desktop won't display notifications.
 
-## Configure Power Automate for desktop confirmation dialog when invoking flows via URL or desktop shortcut
 
-You can use the following registry entry to configure the behavior of the confirmation dialog when invoking flows via URL or desktop shortcut.
+## Disable confirmation dialog when invoking Power Automate desktop flows via URL
+
+You can use the following registry entry to prevent Power Automate for desktop from displaying a confirmation dialog when invoking desktop flows via URL.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
@@ -184,7 +185,8 @@ You can use the following registry entry to configure the behavior of the confir
 
 ***Value***
 
-- **0**: Power Automate for desktop won't display a confirmation dialog when invoking flows via URL or desktop shortcut. The user can change this option through the console settings.
+- **0**: Power Automate for desktop won't display a confirmation dialog when invoking desktop flows via URL.
+
 
 ## Configure Power Automate for desktop to keep the flow run details
 
