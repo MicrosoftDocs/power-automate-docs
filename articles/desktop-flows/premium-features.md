@@ -4,8 +4,8 @@ description: Premium RPA features
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/19/2022
-ms.author: gtrantzas
+ms.date: 07/29/2022
+ms.author: v-gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -23,7 +23,7 @@ This article lists the premium RPA features/benefits that are included in the Po
 |Feature/Benefit | Description|Additional information|
 |----------------|------------|----------------------|
 |Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger a desktop flow from a cloud flow](link-pad-flow-portal.md)|
-|Flow triggering via URL|Trigger local attended desktop flows through their run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-pad-flow.md#run-desktop-flows-via-url-or-desktop-shortcuts)|
+|Flow triggering via URL|Trigger local attended desktop flows through their run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-pad-flow.md#run-desktop-flows-via-url)|
 |Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
 |Access to Process advisor|Visualize and analyze your business processes with Process advisor.|[Learn about Process advisor](/power-automate/process-advisor-overview)|

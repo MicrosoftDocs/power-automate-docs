@@ -400,7 +400,7 @@
       href: ./desktop-flows/images.md
     - name: Manage errors
       href: ./desktop-flows/errors.md
-    - name: Record desktop flows
+    - name: Record flows in Power Automate
       href: ./desktop-flows/recording-flow.md
     - name: Use loops
       href: ./desktop-flows/use-loops.md
