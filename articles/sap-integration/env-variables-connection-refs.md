@@ -1,4 +1,4 @@
----
+﻿---
 title: Create an environment variable with SAP connection parameters (preview)
 description: Create an environment variable in Power Apps that contains all of your SAP system information.
 author: EllenWehrle
@@ -17,7 +17,6 @@ search.audienceType:
   - enduser
 
 --- 
-
 # Create an environment variable with SAP connection parameters (preview)
 
 [This article is pre-release documentation and is subject to change.]
