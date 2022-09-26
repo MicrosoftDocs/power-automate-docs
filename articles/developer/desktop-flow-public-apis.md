@@ -204,9 +204,9 @@ To call the action, you'll need the following information.
   > See [Setup desktop flows connections and machine credentials](../desktop-flows/install.md#setup-desktop-flows-connections-and-machine-credentials) for more information.
 
   >[!TIP]
-  > Alternatively, you can use a connection reference's logical name as the input of the connection instead of the connection name. In this case, you should add a ``` "connectionType": 2 ``` parameter to the API Call. The connection references are stored in the Dataverse table connectionreference and can be listed programatically in the same way as desktop flows detailled in the [List available desktop flows](#list-available-desktop-flows) section.
+  > Alternatively, you can use a connection reference's logical name as the input of the connection instead of the connection name (usage example described below). The connection references are stored in the Dataverse table connectionreference and can be listed programatically in the same way as desktop flows detailled in the [List available desktop flows](#list-available-desktop-flows) section.
   >
-  > Refer to [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference) and [connectionreference table/entity reference](power-apps/developer/data-platform/reference/entities/connectionreference) for more information.
+  > Refer to [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference) and [connectionreference table/entity reference](/power-apps/developer/data-platform/reference/entities/connectionreference) for more information.
   
 ### Request to trigger a desktop flow
 
@@ -224,6 +224,23 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
 }
 ```
 
+### Request to trigger a desktop flow with a connection reference
+
+```http
+Authorization: Bearer eyJ0eXAiOi...
+Accept: application/json
+
+POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft.Dynamics.CRM.RunDesktopFlow HTTP/1.1  
+{
+    "runMode": "attended",
+    "runPriority": "normal",
+    "connectionName": "[Connection Reference Logical Name]",
+    "connectionType": 2,
+    "timeout": 7200,
+    "inputs": "{\"Input1\":\"Value\", \"Input2\":\"Value\"}"
+}
+```
+
 ### Response from request to trigger a desktop flow
 
 ```json
@@ -232,7 +249,7 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
     "flowsessionId": "d9687093-d0c0-ec11-983e-0022480b428a"
 }
 ```
->[!LIMITATION]
+>[!NOTE]
 >When triggering a desktop flow run using the API, the inputs of the script are not viewable in the run details page on the power automate portal.
 >The ownership of the flow session representing the run is mapped to the ownership of the workflow entity representing the desktop flow. There will be some limitations when caling the API on a workflow with a "User" privilege when querying the flow session. In this case, canceling the run and querying the status might be blocked for missing privileges on the flow session.
 
