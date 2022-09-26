@@ -27,6 +27,9 @@ Lists created with Microsoft Lists and SharePoint libraries allow you to define 
 - A list, or library with a DateTime column.
 - Access to Power Automate.
 
+> [!NOTE]
+> This feature is not available for GCC, GCC High, DOD, or other sovereign clouds.
+
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Create a reminder flow
