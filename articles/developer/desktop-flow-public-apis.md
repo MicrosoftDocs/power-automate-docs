@@ -21,7 +21,7 @@ Developers can add [desktop flows](/power-automate/desktop-flows/introduction) f
 1. Knowledge of Dataverse environment and organization notions, and [how to retrieve the organization URL](/power-apps/developer/data-platform/webapi/discover-url-organization-web-api) manually or programmatically.
 1. Knowledge of [desktop flows notions](/power-automate/desktop-flows/run-pad-flow) and of what [connections are and how to create them](/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials).
 
-> [!NOTE]
+> [!IMPORTANT]
 > In this article, you must replace all squared brackets [...] in URLs and input/output data with values specific to your scenario.
 
 ## List available desktop flows
@@ -249,7 +249,7 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
     "flowsessionId": "d9687093-d0c0-ec11-983e-0022480b428a"
 }
 ```
->[!NOTE]
+>[!WARNING]
 >When using the API, there are some limitations to be aware of:
 >
 >1. When triggering a desktop flow run using the API, the inputs of the script are not viewable in the run details page on the power automate portal.
