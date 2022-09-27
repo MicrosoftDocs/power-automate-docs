@@ -252,9 +252,9 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
 >[!WARNING]
 >When using the API, there are some limitations to be aware of:
 >
->1. When triggering a desktop flow run using the API, the inputs of the script are not viewable in the run details page on the power automate portal.
+>* When triggering a desktop flow run using the API, the inputs of the script are not viewable in the run details page on the power automate portal.
 >
->2. The ownership of the flow session representing the run is mapped to the ownership of the workflow entity representing the desktop flow. There will be some limitations when caling the API on a workflow with a "User" privilege when querying the flow session. In this case, canceling the run and querying the status might be blocked for missing privileges on the flow session.
+>* The owner of the flow session representing the run is mapped to the owner of the workflow entity representing the desktop flow. There will be some limitations when calling the API on a workflow with a "User" privilege: Canceling the run and querying the status might be blocked for missing privileges on the flow session.
 
 ## Cancel a desktop flow run (preview)
 
