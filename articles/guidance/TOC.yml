@@ -148,11 +148,11 @@
     items:
     - name: Overview
       href: automation-coe/overview.md
-    - name: Strategy
+    - name: Automation adoption strategy
       href: automation-coe/strategy.md
     - name: Holistic enterprise automation techniques
       href: automation-coe/heat.md
-    - name: Automation admin and governance
+    - name: Automation administration and governance
       href: automation-coe/automation-admin-gov.md
     - name: Automation Kit for Power Platform
       href: /power-automate/guidance/automation-kit/overview/introduction
