@@ -144,3 +144,19 @@
       href: ./automation-kit/release-notes.md
     - name: Feedback and support
       href: ./automation-kit/feedback-support.md
+  - name: Automation adoption best practices
+    items:
+    - name: Overview
+      href: automation-coe/overview.md
+    - name: Overview
+      href: automation-coe/automation-admin-gov.md
+    - name: Overview
+      href: automation-coe/automation-maturity-model-details.md
+    - name: Overview
+      href: automation-coe/automation-maturity-model-overview.md
+    - name: Overview
+      href: automation-coe/heat.md
+    - name: Overview
+      href: automation-coe/manage-pad-on-windows.md
+    - name: Overview
+      href: automation-coe/strategy.md
