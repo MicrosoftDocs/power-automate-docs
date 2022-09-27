@@ -5,7 +5,7 @@ author: kathyos
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/6/2021
+ms.date: 09/26/2022
 ms.subservice: guidance
 ms.author: kathyos
 ms.reviewer: deonhe
@@ -41,7 +41,7 @@ Some of common stakeholders and their roles and responsibilities within the auto
 
 ## Getting started with your Automation CoE
 
-To get started, we recommend that you [learn about the HEAT techniques](heat.md) and [how they can be applied for automation administration and governance](automation-admin-gov.md), and that you install the [Automation CoE Starter Kit (Preview)](automation-coe-starter-kit.md).
+To get started, we recommend that you [learn about the HEAT techniques](heat.md) and [how they can be applied for automation administration and governance](automation-admin-gov.md), and that you install the [Automation CoE Starter Kit (Preview)](/power-automate/guidance/automation-kit/overview/introduction).
 
 ## Additional strategy resources
 
