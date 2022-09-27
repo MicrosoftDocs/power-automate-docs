@@ -53,7 +53,7 @@ Watch the video: [Power Automate & Power Platform](https://youtu.be/OmQpIjC2Vlc?
 
 In this stage, CoEs and business collaborate on what processes to automate based on the expected ROI, form the development team, and set up the Power Automate environment.
 
-While automation enables organizations to become more efficient, deciding which processes to automate is still often a challenge. It is impossible to automate every process, so CoEs can use the [Automation Project app](automation-coe-starter-kit.md) to manage the backlog and pick an automation based on ROI.
+While automation enables organizations to become more efficient, deciding which processes to automate is still often a challenge. It is impossible to automate every process, so CoEs can use the [Automation Project app](/power-automate/guidance/automation-kit/overview/introduction) to manage the backlog and pick an automation based on ROI.
 
 Power Automate provides environments of different types (for example, production, sandbox, and trial).  Each environment has a defined set of users and roles. Admins can bring their own compute infrastructure to install Power Automate for desktop and the necessary software.
 
@@ -64,7 +64,7 @@ Watch the video: [Empower, discover, & plan"](https://youtu.be/94Lq15PNDDg)
 Resources for determining ROI, process discovery, and setting up Power Automate environment:
 
 - Discover which process to automate using [process advisor](https://flow.microsoft.com/process-advisor/)
-- Use the [Automation Project app](automation-coe-starter-kit.md) for curating and managing ideas
+- Use the [Automation Project app](/power-automate/guidance/automation-kit/overview/introduction) for curating and managing ideas
 - [Power Automate for desktop](/power-automate/desktop-flows/introduction)
 - [Power Automate IP address configuration](/power-automate/limits-and-config)
 - [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](/power-platform/admin/use-service-admin-role-manage-tenant.md)
