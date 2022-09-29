@@ -104,7 +104,9 @@
     - name: Turn a cloud flow on or off
       href: disable-flow.md
     - name: Change the owner of cloud flow
-      href: change-cloud-flow-owner.md 
+      href: change-cloud-flow-owner.md
+    - name: Create a cloud flow from a description
+      href: easy-automation.md 
   - name: Popular cloud flows scenarios
     items:
     - name: Use flows with approvals
