@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/14/2022
+ms.date: 09/28/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -158,12 +158,12 @@ Congratulations&mdash;the user or group now has access to run the flow.
 
 Congratulations&mdash;the user or group no longer has access to run this flow.
 
-## Share a copy of a cloud flow
+## Send a copy of a cloud flow
 
-You can share a copy of a cloud flow with another user, who can then use the definition of the flow as a template. It provides a good way for you to share the general structure of a cloud flow without sharing any connections, while also allowing the recipient to modify their flow independently of yours, so they can make it fit their needs.
+You can send a copy of a cloud flow to another user, who can then use the definition of the flow as a template. It provides a good way for you to share the general structure of a cloud flow without sharing any connections, while also allowing the recipient to modify their flow independently of yours, so they can make it fit their needs.
 
 > [!NOTE]
-> Sharing a copy creates an independent instance of the flow for the recipient. You can't revoke access to the flow after you share it.
+> Sending a copy creates an independent instance of the flow for the recipient. You can't revoke access to the flow after you share it.
 
 **To send a copy of a cloud flow**
 
@@ -198,7 +198,7 @@ If the shared flow still has an active owner, the flow continues to run.
 
 ### Change the owner of a solution-aware cloud flow
 
-[Edit the details](change-cloud-flow-owner) to change the ownership of a solution-aware cloud flow. 
+[Edit the details](./change-cloud-flow-owner.md) to change the ownership of a solution-aware cloud flow. 
 
 ## Change the owner of a non-solution-aware cloud flow
 
