@@ -147,12 +147,12 @@ Follow these steps to replace third party authentication connections.
 
 If you are an admin, you can find these problematic connections using a repeatable pattern that can be automated in a flow with the help of some admin connectors: 
 
-1. **Find environments** using [List environments as admin](/connectors/powerplatformforadmins/#list-environments-as-admin)
-1. **Find connections** in those environments using [Get Connections as admin](/connectors/powerappsforadmins/#get-connections-as-admin)
-1. **Find connections to be replaced** with **id="shared_flowmanagement" and properties.connectionParametersSet.name="thirdParty"** using a Parse JSON action with conditions 
-1. Then finally, **Get connection details** including the connection display name and the creator who should replace the connection
+1. Find the environments using [List environments as admin](/connectors/powerplatformforadmins/#list-environments-as-admin).
+1. Find the connections in those environments using [Get Connections as admin](/connectors/powerappsforadmins/#get-connections-as-admin).
+1. Find the connections to be replaced with **id="shared_flowmanagement" and properties.connectionParametersSet.name="thirdParty"** using a Parse JSON action with conditions .
+1. Then finally, get the connection details, including the connection display name and the creator who should replace the connection.
   
-Once you have that list of connections, reach out to the connection owners to let them know that the connections should be replaced.
+After you have that list of connections, contact the connection owners to let them know that the connections should be replaced.
 
 #### Find Power Automate Management connections as a user
 If you are a non-admin user, you can find your Power Automate Management connections and learn about the apps and flows that use each connection before replacement.
