@@ -109,6 +109,8 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
   Add-ConnectorsToPolicy -Connectors $desktopFlowModulesToAddToPolicy -PolicyName $dlpPolicy.name -Classification $dlpPolicy.defaultConnectorsClassification -Verbose 
 ```
 ### Below is the list of desktop flow modules that are currently available in DLP: 
+
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.ActiveDirectory ActiveDirectory
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.AWS		AWS 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Azure		Azure
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.WebAutomation	Browser Automation 
