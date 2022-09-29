@@ -70,15 +70,15 @@ In this sample scenario, there's a Microsoft list with products we have purchase
 
 Congratulations! You’ve built an expression by providing examples.  
 
-    ![Screenshot showing the suggested expression applied to an action in the cloud flo](media/reshape-data-expressions/bbbed0faf5cbbb4a401c9021d52e26fc.png)
+![Screenshot showing the suggested expression applied to an action in the cloud flo](media/reshape-data-expressions/bbbed0faf5cbbb4a401c9021d52e26fc.png)
 
 <!-- [format-data-by-examples-expression-in-flow.png](https://microsoft.sharepoint.com/:i:/t/PARIS/EQXwKsxhs8JDl4c4zx3qDvYBCIXj9-1ZouSiEYox7RVQ7A?e=1Qy8OE) (Alt: Screenshot showing the suggested expression applied to an action in the cloud flow) -->
-
-## Behind the tech
-
-Format data by examples is powered by [PROSE](https://www.microsoft.com/research/project/prose-framework/), a technology that enables programming by example.
 
 ## Limitations
 
 - Format data by examples can format one text, number, or date at a time. More complex structures like arrays aren't supported.
-- Format data by examples is currently not available in environments based in South Africa, GCC, GCC High and DoD.
+- Format data by examples isn't available in environments based in South Africa, GCC, GCC High, and DoD.
+
+### See also
+
+[PROSE](https://www.microsoft.com/research/project/prose-framework/), a technology that enables programming by example, powers format data by examples.
