@@ -110,22 +110,24 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
 ```
 ### Below is the list of desktop flow modules that are currently available in DLP: 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.AWS		AWS 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Azure		Azure 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Clipboard		Clipboard 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Azure		Azure
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.WebAutomation	Browser Automation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Cmd		CMD session 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Clipboard		Clipboard 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Compression		Compression 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Cryptography		Cryptography 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.CyberArk		CyberArk 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Database		Database 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Display		Message boxes 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Email		Email 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Excel		Excel 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Exchange		Exchange 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.FTP			FTP 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.File			File 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Folder		Folder 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.FTP			FTP 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.GoogleCognitive	Google cognitive 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Web		HTTP 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.IBMCognitive		IBM cognitive 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Display		Message boxes 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.MicrosoftCognitive	Microsoft cognitive 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.MouseAndKeyboard	Mouse and keyboard 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.OCR			OCR 
@@ -133,12 +135,10 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Pdf			PDF 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Runflow		Run flow 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Scripting		Scripting 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Services		Windows Services 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.System		System 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.TerminalEmulation	Terminal emulation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.UIAutomation		UI automation 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Web		HTTP 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.WebAutomation	Browser Automation 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Services		Windows Services 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Workstation		Workstation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.XML		XML 
 
