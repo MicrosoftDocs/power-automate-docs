@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/08/2022
+ms.date: 09/29/2022
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -161,6 +161,6 @@ If you don't know what authentication option was used on the Power Automate Mana
 
 #### Deprecation of the Power Automate Management connector's legacy default authentication option
 
-The authentication option of [default](connectors/flowmanagement/#default-deprecated) was also deprecated in June 2020, however it was immediately hidden at that time so it couldn't be used any more. Connections with the authentication of [default](connectors/flowmanagement/#default-deprecated) would have been created prior to June 2020. Those connections should also be replaced if found. If using the [Get Connections as admin](/connectors/powerappsforadmins/#get-connections-as-admin) action, those connections will have id="shared_flowmanagement" and properties.connectionParametersSet.name="".
+The [default](connectors/flowmanagement/#default-deprecated) authentication option was also deprecated in June 2020, however, it was immediately hidden so that it couldn't be used from that date. All connections with the authentication of [default](connectors/flowmanagement/#default-deprecated) were created prior to June 2020. Those connections should also be replaced. If you use the [Get Connections as admin](/connectors/powerappsforadmins/#get-connections-as-admin) action, those connections will have id="shared_flowmanagement" and properties.connectionParametersSet.name="".
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
