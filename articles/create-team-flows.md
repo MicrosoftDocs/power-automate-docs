@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -198,7 +198,7 @@ If the shared flow still has an active owner, the flow continues to run.
 
 ### Change the owner of a solution-aware cloud flow
 
-[Edit the details](change-cloud-flow-owner) to change the ownership of a solution-aware cloud flow. 
+[Edit the details](./change-cloud-flow-owner.md) to change the ownership of a solution-aware cloud flow. 
 
 ## Change the owner of a non-solution-aware cloud flow
 
