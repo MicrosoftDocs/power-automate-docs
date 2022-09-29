@@ -86,7 +86,7 @@ You can use the following registry entry to allow users to sign in to Power Auto
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|UseMsalWindowsBroker|DWORD|
 
 ***Values***
-- **1**: Power Automate for desktop will authenticate users using the WAM funcionality.
+- **1**: Power Automate for desktop will authenticate users using the WAM functionality.
 
 ## Allow users to select a particular organization in Power Automate for desktop
 
@@ -100,10 +100,10 @@ You can use the following registry entry to allow users to select the organizati
 - **"isEnabled":1**: Signed in users will be able to select the organization of their preference through the “Switch organization” option in the Power Automate for desktop console.
 - **"isEnabled":0**: Signed in users won't be able to select the organization of their preference and the “Switch organization” option will be disabled.
 
-- **"organizationList":[OrgID(s)] (e.g.: organizationList:["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k","86d487j7-y1t2-9gk7-k7n2-x5079jq4619r"])**: The organizations with the specified IDs listed, will be available to connect during sign in. 
+- **"organizationList":[OrgID(s)] (e.g.: organizationList:["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k","86d487j7-y1t2-9gk7-k7n2-x5079jq4619r"])**: The organizations with the specified IDs listed will be available to connect during sign-in. 
 
-- **"selectOrganizationFromListIsEnabled":1**: Power Automate for desktop will try to connect to each one of the organizations specified in the "organizationList" value based on their order, during sign in.
-- **"selectOrganizationFromListIsEnabled":0**: The specified list in the "organizationList" value won’t be taken into consideration during sign in.
+- **"selectOrganizationFromListIsEnabled":1**: Power Automate for desktop will try to connect to each one of the organizations specified in the "organizationList" value based on their order, during sign-in.
+- **"selectOrganizationFromListIsEnabled":0**: The specified list in the "organizationList" value won’t be taken into consideration during sign-in.
 
 > [!NOTE]
 > The "isEnabled” values aren't related to the "organizationList" and "selectOrganizationFromListIsEnabled" values. The "isEnabled” values define if the “Switch organization” option will be available to signed in users, whereas the "organizationList" and "selectOrganizationFromListIsEnabled" values define the organizations that Power Automate for desktop will try to connect to automatically during the sign in procedure.
@@ -119,7 +119,7 @@ You can use the following registry entry to allow users to select the region the
 
 ***Value***
 - **0**: The user will have the option to select the region of their preference to connect to through an additional option in the sign in screen.
-- **1**: The user will be automatically connected to the first available region they are registered to.
+- **1**: The user will be automatically connected to the first available region they're registered to.
 - **2**: The user will connect to the global public region.
 - **3**: The user will connect to the US Government GCC region.
 - **4**: The user will connect to the US Government GCC High region.
@@ -136,11 +136,11 @@ IT administrators, may set the following registry key, to configure the Power Au
 |HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|ProxyServer|String|
 
 ***Value***
-- **ProxyAddress:Port (e.g.: myproxy.com:3128)**: The proxy server and port configured, will override the proxy server and port configured in Windows.
+- **ProxyAddress:Port (e.g.: myproxy.com:3128)**: The proxy server and port configured will override the proxy server and port configured in Windows.
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
-IT administrators, may set the following registry key, to configure the Power Automate’s bypassing of a corporate proxy server.
+IT administrators may set the following registry key to configure the Power Automate’s bypassing of a corporate proxy server.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
@@ -151,7 +151,7 @@ IT administrators, may set the following registry key, to configure the Power Au
 
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using the current user's credentials
 
-IT administrators, may set the following registry key, to configure the Power Automate’s authentication with a corporate proxy server.
+IT administrators may set the following registry key to configure the Power Automate’s authentication with a corporate proxy server.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
