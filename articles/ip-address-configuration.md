@@ -65,6 +65,8 @@ The following table lists the services to which Power Automate connects. Ensure 
 |go.microsoft.com|https|Access to the Power Automate to check for updates|
 |download.microsoft.com|https|Access to the Power Automate to check for updates|
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
+|s2s.config.skype.com<br>s2s.config.skype.com<br>use.config.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
+|s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
 
 ## Approval email delivery
 
@@ -86,7 +88,5 @@ The following table lists endpoint data requirements for connectivity from a use
 |EMEA telemetry endpoints|emea.events.data.microsoft.com|https|Handles telemetry for EMEA users.|
 |U.S. Government telemetry endpoints|tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
 |Chinese telemetry endpoints|apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
-|Worldwide flighting and configuration endpoints|s2s.config.skype.com<br>s2s.config.skype.com<br>use.config.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
-|U.S. Government GCC and GCC High flighting and configuration endpoints|s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
