@@ -24,8 +24,6 @@ search.audienceType:
 
 # Create a cloud flow from a description
 
-T
-
 When building automation with Power Automate knowing which actions to stitch together might take time, especially when you’re new to the product. Now you can let Artificial Intelligence (AI) do all the hard work by describing what you want to automate in everyday language and see the corresponding flow created instantly.
 
 ## Prerequisites
@@ -63,9 +61,10 @@ In the following example, we'll build an automated cloud flow that sends a notif
 1. Setup all the connections needed to run the flow.
 1. Enter the information needed to run the flow. For example, which form to use and to whom to send the Teams message and email. You can decide to fill in the information on this step or do it later in the designer.
 1. Select **Create flow**.
-1. And there you have it! Your flow has been built – congratulations! You can decide to make any modification and edit the flow or save it and test it.
 
-   ![Power Automate showing a cloud flow that has been built from a description](media/generated-flow.png)
+   And there you have it! Your flow has been built – congratulations! You can decide to make any modification and edit the flow or save it and test it.
+
+   ![Power Automate showing a cloud flow that has been built from a description](media/easy-flow/generated-flow.png)
 
 <!-- Behind the tech
 ===============
