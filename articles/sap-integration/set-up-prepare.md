@@ -28,7 +28,7 @@ Take the following steps to support a successful deployment of the public previe
 1. Join the [Power Apps community forum](https://aka.ms/sap-powerusers-community) to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 
 1. Assemble a team with the following IT system administrators:
-    1. Networking
+    1. Network
     1. SAP BASIS
     1. Power Platform
 
@@ -42,7 +42,7 @@ Take the following steps to support a successful deployment of the public previe
 
 ## Prerequisites
 
-The assembled team of IT system administrators need to review the following prerequisites and make necessary preparations before connecting your organization's SAP ERP system to the Power Platform:
+The assembled team of IT system administrators need to review the following prerequisites and make necessary preparations before connecting your organization's SAP system to the Power Platform:
 
 - [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/) - Determine if your organization has the necessary licensing to proceed with the setup. It is important to consider:
   - Power Apps licensure that supports using an on-premises data gateway and premium applications, flows, and connectors.
@@ -60,6 +60,11 @@ The assembled team of IT system administrators need to review the following prer
 - [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server - Provision a separate Windows VM or server with your SAP system connected to it to connect to the on-premises data gateway.
 
 - [On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127) - Download and [set up](/data-integration/gateway/service-gateway-install) the most recent version (9/23/2022) of the on-premises data gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
+
+    The most recent version of the on premises data gateway handles two SAP integration requirements:
+
+  - Backwards compatibility - customers utilizing the prior version of the SAP connector can still run their flows
+  - Enhanced SSO - Kerberos delegation now ensures that SSO is a seamless experience between Power Apps, Power Automate, and SAP.
 
 - [Azure AD single sign-on (SSO) for Gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) - Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO.
 

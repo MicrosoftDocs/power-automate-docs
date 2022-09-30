@@ -1,4 +1,4 @@
----
+﻿---
 title: Understand prebuilt solution available for integrating SAP with Power Platform (preview)
 description: Learn about the prebuilt SAP Integration solution available to import into Power Apps.
 author: EllenWehrle
@@ -23,14 +23,14 @@ Connecting your SAP system to Microsoft Power Platform will extend its functiona
 
 The preview version of the prebuilt SAP integration solution is available for download [here](https://github.com/jongilman88/PowerPlatformSAPIntegration). It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with Power Platform.
 
-The custom model-driven app runs in your browser and streamline SAP screens and data attributes onto one simple screen. In the template apps, users will be able complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
+The canvas app runs in your browser and streamlines SAP screens and data attributes onto one simple screen that helps users complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
 
 ## What does the user interface look like?
 
-On the surface, you will see a custom model-driven app that runs in your browser.
+On the surface, you will see a canvas app that runs in your browser.
 
 Here is the Purchase Orders template in the Purchasing module
-    :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of sales order page that is part of the sales module.":::
+    :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of purchase order page that is part of the purchasing module.":::
 
 ## How is it organized?
 

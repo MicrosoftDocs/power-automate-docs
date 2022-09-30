@@ -1,4 +1,4 @@
----
+﻿---
 title: Overview of SAP integration with Microsoft Power Platform (preview)
 description: Learn about the SAP integration with Microsoft Power Platform and the capabilities of the SAP connector working with Power Automate.
 author: EllenWehrle
@@ -21,7 +21,7 @@ search.audienceType:
 
 SAP ERP is a centralized system of record that facilitates the management of data and business processes between many departments within an organization. SAP ERP, developed by SAP SE, serves as the primary enterprise resource planning application for many businesses worldwide.
 
-The preview version of SAP integration with Microsoft Power Platform offers enhanced connectivity capabilities with SAP ERP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The prebuilt solution offers components that work together to create a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
+The preview version of SAP integration with Microsoft Power Platform offers enhanced connectivity capabilities with SAP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The prebuilt solution offers components that work together to create a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
 
 > [!IMPORTANT]
 >
@@ -30,7 +30,9 @@ The preview version of SAP integration with Microsoft Power Platform offers enha
 
 ## Prebuilt solution
 
-A downloadable prebuilt solution is available that works with SAP ERP's key business processes:
+:::image type="content" source="media/overview/sales-orders-page.png" alt-text="Power App display of sales order page that is part of the sales module.":::
+
+A downloadable prebuilt solution is available that works with SAP's key business processes:
 
 - Order to Cash
 - Procure to Pay
