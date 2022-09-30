@@ -83,8 +83,10 @@ The following table lists endpoint data requirements for connectivity from a use
 | 21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
 | All endpoints|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. |
 | Worldwide endpoints| \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for new machine connectivity. |
-| Worldwide endpoints|\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
 | U.S. Goverment endpoints| *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for new machine connectivity. |
+| Worldwide endpoints|\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
+| Worldwide endpoints|\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
+| U.S. Government GCC and GCC High endpoints| gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud. |
 |Worldwide telemetry endpoints|server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, U.S. government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 |EMEA telemetry endpoints|emea.events.data.microsoft.com|https|Handles telemetry for EMEA users.|
 |U.S. Government telemetry endpoints|tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
