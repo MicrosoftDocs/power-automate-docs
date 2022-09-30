@@ -83,7 +83,7 @@ When you use approvals with *do until* loops, users need to account for all poss
 
 Here's an explanation of the process for sending an approval email notification, as well as a description of the possible email notification statuses and troubleshooting.
 
-Sending approval email notifications is a two-step process.
+Sending approval email notifications is a two-step process:
 
 1. Power Automate places a request for the email to be sent.
 1. The email goes into a queue.
@@ -99,12 +99,12 @@ Failed| The email notification was correctly placed in the queue, but there was 
 
 ### Missing emails
 
-If the status of your email notification is **Sent** but you don't see the email notification, try the following options.
+If the status of your email notification is **Sent** but you don't see the email notification, try the following options:
 
 - Refresh your inbox and verify that you have an active Internet connection.
 - Confirm that the email address is correct for the intended recipient.
 - Review your email settings and verify if there are any filters or blocked addresses that may prevent you from seeing the notification.
-- Check your spam/promotions folder.
+- Check your spam or promotions folder.
 
 ### Troubleshoot failed requests
 
