@@ -82,7 +82,8 @@ The following table lists endpoint data requirements for connectivity from a use
 | U.S. Government GCC and GCC High endpoints|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud.<br>Needed when connecting through the on-premises data gateway.|
 | 21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
 | All endpoints|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. |
-| Worldwide endpoints| \*.servicebus.windows.net<br>\*.gateway.prod.island.powerapps.com | https | Listens on Service Bus Relay over TCP.<br>Needed for new machine connectivity. |
+| Worldwide endpoints| \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for new machine connectivity and when connecting through the on-premises data gateway. |
+| Worldwide endpoints|\*.gateway.prod.island.powerapps.com | https | Needed for new machine connectivity. |
 | U.S. Goverment endpoints| *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for new machine connectivity. |
 |Worldwide telemetry endpoints|server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, U.S. government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 |EMEA telemetry endpoints|emea.events.data.microsoft.com|https|Handles telemetry for EMEA users.|
