@@ -108,7 +108,7 @@ If the status of your email notification is **Sent** but you don't see the email
 
 ### Troubleshoot failed requests
 
-If the status of your email notification is **Failed**, you can try the following options.
+If the status of your email notification is **Failed**, you can try the following options:
 
 - Make another request to the same recipients.
 - Raise a ticket to Microsoft Support, detailing the issue.
