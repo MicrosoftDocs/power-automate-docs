@@ -24,7 +24,7 @@ search.audienceType:
 
 # Create a cloud flow from a description
 
-When building automation with Power Automate knowing which actions to stitch together might take time, especially when you’re new to the product. Now you can let Artificial Intelligence (AI) do all the hard work by describing what you want to automate in everyday language and see the corresponding flow created instantly.
+When building automation with Power Automate, learning which actions you need to might take valuable time, especially if you’re new to the Power Automate. Now, you can let Artificial Intelligence (AI) do all the hard work by providing a written description of what you want to automate in everyday language and see the corresponding flow created instantly.
 
 ## Prerequisites
 
