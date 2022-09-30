@@ -84,7 +84,7 @@ Sending approval email notifications is a two-step process.
 
 Status|Description
 ------|------------
-Pending|Power Automate is requesting that the the notification is sent.
+Pending|Power Automate is requesting that the notification is sent.
 Requested| Power Automate successfully placed the request for the notification to be sent, but the request is still being processed.
 Sent| The email notification was correctly sent.
 Failed| The email notification was correctly placed in the queue, but there was an error sending it.
