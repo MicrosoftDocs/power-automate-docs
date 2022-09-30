@@ -1,0 +1,112 @@
+- name: Minit desktop application for process advisor (private preview)
+  items:
+  - name: "Minit desktop application for process advisor (private preview)"
+    href: minit-desktop-application-for-process-advisor-private-preview.md
+  - name: "Preview disclaimer"
+    href: preview-disclaimer.md
+  - name: "How to start with Minit desktop application"
+    href: how-to-start-with-minit-desktop-application.md
+  - name: "Process Hub"
+    href: process-hub.md
+  - name: "Process Context"
+    href: process-context.md
+  - name: "Case Categorization"
+    href: case-categorization.md
+  - name: "Process Explorer"
+    href: process-explorer.md
+  - name: "Process map"
+    href: process-map.md
+  - name: "Favorites panel"
+    href: favorites-panel.md
+  - name: "View settings"
+    href: view-settings.md
+  - name: "Hierarchical Process Mining"
+    href: hierarchical-process-mining.md
+  - name: "Rework metrics"
+    href: rework-metrics.md
+  - name: "Process Animation"
+    href: process-animation.md
+  - name: "Statistics"
+    href: statistics.md
+  - name: "Case overview statistics"
+    href: case-overview-statistics.md
+  - name: "Activities (event level) statistics"
+    href: activities-event-level-statistics.md
+  - name: "Edge statistics"
+    href: edge-statistics.md
+  - name: "Variants"
+    href: variants.md
+  - name: "Process compare (compliance)"
+    href: process-compare-compliance.md
+  - name: "Root Cause Analysis"
+    href: root-cause-analysis.md
+  - name: "Filtering"
+    href: filtering.md
+  - name: "Timeframe filter"
+    href: timeframe-filter.md
+  - name: "Case Attributes Filter"
+    href: case-attributes-filter.md
+  - name: "Case Attributes (conditional) filter"
+    href: case-attributes-conditional-filter.md
+  - name: "Edge (conditional) filter"
+    href: edge-conditional-filter.md
+  - name: "Variants Filter"
+    href: variants-filter.md
+  - name: "Case Metrics filter"
+    href: case-metrics-filter.md
+  - name: "Sequence filter"
+    href: sequence-filter.md
+  - name: "End events filter"
+    href: end-events-filter.md
+  - name: "Conflict of interests filter"
+    href: conflict-of-interests-filter.md
+  - name: "Event Attributes filter"
+    href: event-attributes-filter.md
+  - name: "Subprocess filter"
+    href: subprocess-filter.md
+  - name: "Event Metrics filter"
+    href: event-metrics-filter.md
+  - name: "Filters Export & Import"
+    href: filters-export-import.md
+  - name: "Export"
+    href: export.md
+  - name: "Settings"
+    href: settings.md
+  - name: "Options"
+    href: options.md
+  - name: "Working hours"
+    href: working-hours.md
+  - name: "Custom Metrics"
+    href: custom-metrics.md
+  - name: "General Information"
+    href: general-information.md
+  - name: "Requirements for Application"
+    href: requirements-for-application.md
+  - name: "Data Types (custom metrics)"
+    href: data-types-custom-metrics.md
+  - name: "Constants"
+    href: constants.md
+  - name: "Unary Operators"
+    href: unary-operators.md
+  - name: "Aggregations"
+    href: aggregations.md
+  - name: "Date and Time Operations"
+    href: date-and-time-operations.md     
+  - name: "Mathematical Operations"
+    href: mathematical-operations.md
+  - name: "Statistical Operations"
+    href: statistical-operations.md
+  - name: "String Operations"
+    href: string-operations.md
+  - name: "Other Operations"
+    href: other-operations.md
+  - name: "Calculation Context"
+    href: calculation-context.md
+  - name: "Business Rules"
+    href: business-rules.md
+  - name: "Business Rule Scope"
+    href: business-rule-scope.md
+  - name: "Business Rules: Process Map"
+    href: business-rules-process-map.md
+  - name: "Business Rules: Statistics"
+    href: business-rules-statistics.md
