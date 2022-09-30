@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/14/2022
+ms.date: 09/29/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -109,23 +109,27 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
   Add-ConnectorsToPolicy -Connectors $desktopFlowModulesToAddToPolicy -PolicyName $dlpPolicy.name -Classification $dlpPolicy.defaultConnectorsClassification -Verbose 
 ```
 ### Below is the list of desktop flow modules that are currently available in DLP: 
+
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.ActiveDirectory ActiveDirectory
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.AWS		AWS 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Azure		Azure 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Clipboard		Clipboard 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Azure		Azure
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.WebAutomation	Browser Automation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Cmd		CMD session 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Clipboard		Clipboard 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Compression		Compression 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Cryptography		Cryptography 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.CyberArk		CyberArk 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Database		Database 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Display		Message boxes 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Email		Email 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Excel		Excel 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Exchange		Exchange 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.FTP			FTP 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.File			File 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Folder		Folder 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.FTP			FTP 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.GoogleCognitive	Google cognitive 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Web		HTTP 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.IBMCognitive		IBM cognitive 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Display		Message boxes 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.MicrosoftCognitive	Microsoft cognitive 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.MouseAndKeyboard	Mouse and keyboard 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.OCR			OCR 
@@ -133,18 +137,16 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Pdf			PDF 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Runflow		Run flow 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Scripting		Scripting 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Services		Windows Services 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.System		System 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.TerminalEmulation	Terminal emulation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.UIAutomation		UI automation 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Web		HTTP 
-- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.WebAutomation	Browser Automation 
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Services		Windows Services 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Workstation		Workstation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.XML		XML 
 
 
 >[!Note]
->If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy. 
+>If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they're trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy. 
 
 ### Creating a data loss prevention (DLP) policy with desktop flows restrictions in the Power Platform admin center
 
@@ -153,7 +155,7 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
 > When admins edit or create a policy, new Desktop flow connectors will be added to the default group and the policy will be applied once it is saved. If the default group is set to "Blocked" and have Desktop flows running in the target environment(s), these will get suspended.
 
 
-Admins can create data loss prevention policies from https://admin.powerplatform.microsoft.com. They can manage a data loss prevention policy for desktop flows in the same way they manage cloud flow connectors and actions. Desktop flows modules are groups of similar actions as displayed in the Power Automate Desktop user interface. A module is similar to connectors that are used in cloud flows. You can define a data loss prevention policy that manages both desktop flows modules and cloud flows connectors. There are also basic modules such as “Variables” which aren't manageable in the scope of data loss prevention policy because almost all desktop flows need to use those modules. You can learn more about the fundamentals of DLP policies and how to create them in the [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) section.
+Admins can create data loss prevention policies from https://admin.powerplatform.microsoft.com. They can manage a data loss prevention policy for desktop flows in the same way they manage cloud flow connectors and actions. Desktop flows modules are groups of similar actions as displayed in the Power Automate Desktop user interface. A module is similar to connectors that are used in cloud flows. You can define a data loss prevention policy that manages both desktop flows modules and cloud flows connectors. There are also basic modules such as "Variables", which aren't manageable in the scope of data loss prevention policy because almost all desktop flows need to use those modules. You can learn more about the fundamentals of DLP policies and how to create them in the [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) section.
 
 When your tenant is opted into the user experience in the Power Platform, your administrators will automatically see the new desktop flow modules in the default data group of the DLP policy they are creating or updating. 
 
@@ -163,11 +165,11 @@ When your tenant is opted into the user experience in the Power Platform, your a
 > When desktop flow modules are added to DLP policies, your tenant’s existing desktop flows will be evaluated against those DLP policies, and they will become suspended if they are non-compliant. Therefore, if your administrator creates or updates the DLP policy without taking notice of the new modules, desktop flows can become unexpectedly suspended.
 
 ### After the policy is enabled
--	Makers with the latest Power Automate Desktop will not be able to debug, run, or save desktop flows that have data loss prevention policy violations.
-- Makers will not be able to select a desktop flow that is in violation of a data loss prevention policy from a cloud flow step.
+-	Makers with the latest Power Automate Desktop won't be able to debug, run, or save desktop flows that have data loss prevention policy violations.
+- Makers won't be able to select a desktop flow that is in violation of a data loss prevention policy from a cloud flow step.
 
 > [!NOTE]
->  If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users will not see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
+>  If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
  
 ## DLP enforcement
 - Enforcement and suspension 
@@ -193,7 +195,7 @@ Following is a list of DLP enforcement changes and the date the changes were eff
 | Date | Description | Reason for change | Stage | Soft Enforcement ETA* | Hard Enforcement ETA*
 |-|-|-|-|-|-| 
 |May 2022 | Delegated authorization background job enforcement | DLP policies enforced are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Hard |June 2, 2022|July 21, 2022|
-|May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have type=Request and kind=apiConnection. Many of the affected triggers are instant triggers which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Soft |June 2, 2022|August 25, 2022|
+|May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have type=Request and kind=apiConnection. Many of the affected triggers are instant triggers, which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Soft |June 2, 2022|August 25, 2022|
 |July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies on child flows. If a violation is found in a flow tree, the parent flow is suspended. A change to no longer block child flows when the HTTP connector is blocked will roll out along with hard enforcement of DLP policies on child flows. | Learning |TBD|TBD|
 
 *ETA is subject to change and depends on the release schedule. ETA is for the start of the release to production. Release to preview station 1 is approximately five days later. Release to NAM/US station 5 is approximately three weeks later.
