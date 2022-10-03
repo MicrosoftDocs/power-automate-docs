@@ -51,7 +51,7 @@ The trigger condition, **Change type**, precisely defines which combination of c
 When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, or `Delete`, respectively.
 
 >[!NOTE]
-> In case there are multiple updates to same row in a table, flow trigger will be evaluated for each update even if values updated on row is same as previous value. This will result in multiple flow runs. 
+> In case there are multiple updates to same row in a table, flow trigger will be evaluated for each update even if values updated on row is same as previous value. These updates could lead to multiple flow runs. 
 
 ### Table name
 
@@ -60,7 +60,7 @@ The **Table name** list filters the rows to indicate precisely which kind of row
    ![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
 
 >[!NOTE]
-> The **When a row is added, modified or deleted** trigger doesn't support starting flows on relationships of type 1:N or N:N.
+> The **When a row is added, modified or deleted** trigger doesn't support triggering flows on relationships of type 1:N or N:N.
 
 ### Scope
 
