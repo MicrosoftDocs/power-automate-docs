@@ -50,14 +50,16 @@ The trigger condition, **Change type**, precisely defines which combination of c
 
 When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, or `Delete`, respectively.
 
+>[!NOTE]
+> In case there are multiple updates to same row in a table, flow trigger will be evaluated for each update even if values updated on row is same as previous value. This will result in multiple flow runs. 
+
 ### Table name
 
 The **Table name** list filters the rows to indicate precisely which kind of rows should change before the flow triggers. See [Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview).
 
    ![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
 
-[!NOTE]
-> The **When a row is added, modified or deleted** trigger doesn't support virtual tables.
+>[!NOTE]
 > The **When a row is added, modified or deleted** trigger doesn't support starting flows on relationships of type 1:N or N:N.
 
 ### Scope
@@ -87,12 +89,13 @@ Use filter conditions to set conditions for when to trigger flows.
 
 ## Filtering columns
 
-Use the **Column filter** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
+Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
 
    ![Filter columns by firstname.lastname.](../media/create-update-delete-trigger/filter-columns.png "Filter columns by firstname.lastname")
 
 >[!NOTE]
 >This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
+>This property in not supported on virtual tables.
 
 ### Filter expression
 
