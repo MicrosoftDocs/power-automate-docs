@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/22/2021
+ms.date: 10/03/2022
 search.app: 
   - Flow
   - Powerplatform
@@ -51,7 +51,7 @@ The trigger condition, **Change type**, precisely defines which combination of c
 When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, or `Delete`, respectively.
 
 >[!NOTE]
-> In case there are multiple updates to same row in a table, flow trigger will be evaluated for each update even if values updated on row is same as previous value. These updates could lead to multiple flow runs. 
+> If there are multiple updates to a single row in a table, Power Automat evaluates the trigger for each update, even if the values that are being updated on the row are the same as previous value. These updates could lead to multiple flow runs. 
 
 ### Table name
 
