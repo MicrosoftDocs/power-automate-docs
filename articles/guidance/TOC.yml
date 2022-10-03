@@ -144,3 +144,7 @@
       href: ./automation-kit/release-notes.md
     - name: Feedback and support
       href: ./automation-kit/feedback-support.md
+  - name: Business Approvals Kit for Power Platform
+    items:
+    - name: Introduction
+      href: ./automation-kit/overview/introduction.md
