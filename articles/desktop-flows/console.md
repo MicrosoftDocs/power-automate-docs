@@ -17,7 +17,7 @@ search.audienceType:
 
 # Power Automate console
 
-The flow console is the central interface of Power Automate for desktop.
+The console is the central interface of Power Automate for desktop.
 
 The main area of the console contains three tabs that display different kind of desktop flows: your flows, [shared flows](manage.md#share-desktop-flows), and [built-in examples](create-flow.md#start-creating-desktop-flows-using-examples).
 
@@ -52,7 +52,7 @@ To configure Power Automate for desktop to your liking, select the **Settings** 
 
 ![Screenshot of the console settings panel.](media/console/console-settings-panel.png)
 
-Under the **Application** category, select whether Power Automate should launch automatically and whether closing the console will also close the application. You may also set a hotkey combination to stop a running flow instantly.
+Under the **Application** category, select whether Power Automate should launch automatically and whether closing the console will also close the application. You may also set a hotkey combination to stop running flows instantly.
 
 Using the **Monitoring/Notifications** dropdown menu, you can choose whether Power Automate will display integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, refer to [Runtime notifications](run-pad-flow.md#runtime-notifications).
 
