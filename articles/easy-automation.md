@@ -75,6 +75,7 @@ The implementation relies on OpenAI Codex, an AI model descendant of GPT-3 that 
 
 - Power Automate supports descriptions written in the English language only. Writing descriptions in other languages might work but are not officially supported. 
 - Cloud flows are the only type of flow that you can create from a description.
+- In the current version, some parameters might not be automatically filled by the Artificial Intelligence even if they’ve been specified in the provided description.
 - The AI model that transforms a description into a cloud flow is optimized to automate the main actions for the following applications.
 
   - Microsoft Excel
