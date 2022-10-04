@@ -181,10 +181,7 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])/out
 }
 ```
 
-## Trigger a desktop flow run (preview)
-
->[!NOTE]
->Triggering a desktop flow using Web API is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+## Trigger a desktop flow run
 
 By using Dataverse, you can add the functionality of triggering a desktop flow through your application. To do this, you need to use the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
 
@@ -255,13 +252,12 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
 >* When triggering a desktop flow run using the API, the inputs of the script are not viewable in the run details page on the power automate portal.
 >
 >* The owner of the flow session representing the run is mapped to the owner of the workflow entity representing the desktop flow. There will be some limitations when calling the API on a workflow with a "User" privilege: Canceling the run and querying the status might be blocked for missing privileges on the flow session.
+>
+>* Dataverse impersonation is not supported.
 
-## Cancel a desktop flow run (preview)
+## Cancel a desktop flow run
 
->[!NOTE]
->Canceling a desktop flow run using Web API is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access to the features and provide feedback.
-
-Similar to the [Trigger](#trigger-a-desktop-flow-run-preview) functionality, you can also cancel a queued/running desktop flow. To do this, you use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun).
+Similar to the [Trigger](#trigger-a-desktop-flow-run) functionality, you can also cancel a queued/running desktop flow. To do this, you use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun).
 
 ### Request to cancel a desktop flow run
 
