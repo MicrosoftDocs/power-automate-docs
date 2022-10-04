@@ -1,10 +1,10 @@
 ---
-title: Automate on virtual desktops (preview)
+title: Automate on virtual desktops
 description: Learn how to build automated workflows on Citrix and RDP virtual desktops.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/08/2022
+ms.date: 10/04/2022
 ms.author: gtrantzas
 ms.reviewer:
 search.app: 
@@ -14,14 +14,9 @@ search.audienceType:
   - enduser
 ---
 
-# Automate on virtual desktops (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Automate on virtual desktops
 
 With the Power Automate agent for virtual desktops, you can automate processes on virtual desktops just as easily as you can on physical devices. If your virtual desktop uses Citrix or Microsoft Remote Desktop Protocol (RDP), you can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md), just like on your physical desktop.
-
-> [!IMPORTANT]
-> This is a preview feature. [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 The Power Automate agent for virtual desktops must be running both while you're designing a flow and when the flow runs. The agent starts automatically when a user logs in to the virtual desktop. If it isn't running on your virtual desktop, launch the agent manually.  
 
@@ -35,7 +30,7 @@ The Power Automate agent for virtual desktops must be running both while you're 
 
 1. [Download the Power Automate agent for virtual desktops](https://go.microsoft.com/fwlink/?linkid=2188766).
 
-    Alternatively, launch the Power Automate desktop designer and select **Tools** > **Power Automate for virtual desktops (Preview)**.
+    Alternatively, launch the Power Automate desktop designer and select **Tools** > **Power Automate for virtual desktops**.
 
 1. Copy the installer to your Citrix or RDP virtual desktop.
 
