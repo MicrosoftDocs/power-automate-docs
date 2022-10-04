@@ -57,8 +57,7 @@ If the versions are out of sync when a desktop flow is running, Power Automate w
 
 Generated selectors of windows and UI elements are the same regardless of whether they were captured on a physical device or a virtual desktop. Visual indications and the tree structure in the UI elements pane help you to distinguish UI elements captured on virtual desktops from those captured on a physical device. [Learn more about UI elements and selectors](ui-elements.md).
 
-UI elements captured on the physical device are located under the **Computer** parent. UI elements captured on a virtual desktop are located under an **RDP** parent. Every virtual desktop has its own individual tree. A numeric prefix helps you to distinguish virtual desktops of the same type.
-<!--NOTE: Would the parent be called "Citrix" if that was the kind of virtual desktop it was on?-->
+UI elements captured on the physical device are located under the **Computer** parent. UI elements captured on a virtual desktop are located under an **RDP** or **Citrix** parent. Every virtual desktop has its own individual tree. A numeric prefix helps you to distinguish virtual desktops of the same type.
 
 :::image type="content" source="media\virtual-desktops\ui-elements-rdp.png" alt-text="Screenshot of some UI elements captured on an RDP virtual desktop.":::
 
