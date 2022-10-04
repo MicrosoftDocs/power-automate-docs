@@ -24,7 +24,7 @@ search.audienceType:
 
 # Create a cloud flow from a description
 
-When building automation with Power Automate, learning which actions you need to might take valuable time, especially if you’re new to the Power Automate. Now, you can let Artificial Intelligence (AI) do all the hard work by providing a written description of what you want to automate in everyday language and see the corresponding flow created instantly.
+When building automations with Power Automate, learning which actions you need to might take valuable time, especially if you’re new to the Power Automate. Now you can let Artificial Intelligence (AI) be a copilot and do all the hard work by providing a written description of what you want to automate in everyday language and see the corresponding flow created instantly.
 
 ## Prerequisites
 
@@ -73,7 +73,7 @@ The implementation relies on OpenAI Codex, an AI model descendant of GPT-3 that 
 
 ## Limitations
 
-- Power Automate supports descriptions written in the English language only.
+- Power Automate supports descriptions written in the English language only. Writing descriptions in other languages might work but are not officially supported. 
 - Cloud flows are the only type of flow that you can create from a description.
 - The AI model that transforms a description into a cloud flow is optimized to automate the main actions for the following applications.
 
