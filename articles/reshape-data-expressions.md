@@ -31,7 +31,7 @@ search.audienceType:
 
 ## Format dates by examples
 
-In this sample scenario, there's a Microsoft list with products that we've purchased. We want to send an email when the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but we’d like it to display as *September 18** in the email notification message. Let’s see how to change the format of the date with format data by examples.
+In this sample scenario, there's a Microsoft list with products that we've purchased. We want to send an email when the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but we’d like it to display as *September 18* in the email notification message. Let’s see how to change the format of the date with format data by examples.
 
 1. Edit your flow in the Power Automate designer, select the action into which you want to insert the formatted date.
 1. On the window that opens, select **Expression** > **Format data by examples**.
