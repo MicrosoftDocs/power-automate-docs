@@ -21,9 +21,9 @@ search.audienceType:
 
 A successful SAP integration with Microsoft Power Platform requires that you work with your organization's IT administrators. With some planning, setup, and configuration, they will be able to ensure that your SAP system can communicate with Power Platform.
 
-## Get started
+## Prepare for SAP integration
 
-Take the following steps to support a successful deployment of the public preview SAP Integration solution:
+Take the following steps to support a successful deployment of the preview SAP Integration solution:
 
 1. Join the [Power Apps community forum](https://aka.ms/sap-powerusers-community) to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 
@@ -51,6 +51,11 @@ The assembled team of IT system administrators need to review the following prer
 - [SAP](<https://www.sap.com/>) subscription
   - Ensure that the users testing the SAP Integration solution have appropriate access to the appropriate SAP functional modules.
   - The solution can work with any SAP system that utilizes RFC and BAPI calls
+
+- [SAP .NET Connector 3.0 SDK from SAP](https://support.sap.com/en/product/connectors/msnet.html)
+  - Access to the download requires a valid S-user.
+  - Select the 64-bit version of the connector.
+  - Select _Install assemblies to GAC_ in the Optional setup steps window during installation.
 
 - [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant) - Create a new tenant for the SAP Integration.  It is important to consider:
   - The tenant has at least 1GB of database storage capacity available for the sandbox environment.
