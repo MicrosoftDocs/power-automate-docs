@@ -24,19 +24,21 @@ search.audienceType:
 
 # Format data by examples (preview)
 
+[This article is pre-release documentation and is subject to change.]
+
+[Expressions](./use-expressions-in-conditions.md) in Power Automate is a powerful way to perform operations over data. You can use the *Format data by examples* feature to access these expressions without knowing the different functions and corresponding syntax that's needed to create the expressions that you want. To format text, dates, and numbers, you can just provide examples of the output format that you want the flow to produce, and Power Automate will automatically generate the expression formula to use.
+
 > [!IMPORTANT]
 >
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-[Expressions](./use-expressions-in-conditions.md) in Power Automate is a powerful way to perform operations over data. You can use the *Format data by examples* feature to access these expressions without knowing the different functions and corresponding syntax that's needed to create the expressions that you want. To format text, dates, and numbers, you can just provide examples of the output format that you want the flow to produce, and Power Automate will automatically generate the expression formula to use.
-
->[!NOTE]
->While the following example details the steps needed to format a date by example, you can use similar steps to format text and numbers too.
-
 ## Format dates by examples
 
 In this sample scenario, there's a Microsoft list with products that we've purchased. We want to send an email when the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but we’d like it to display as *September 18* in the email notification message. Let’s see how to change the format of the date with format data by examples.
+
+> [!NOTE]
+> While the following example details the steps needed to format a date by example, you can use similar steps to format text and numbers too.
 
 1. Edit your flow in the Power Automate designer, select the action into which you want to insert the formatted date.
 1. On the window that opens, select **Expression** > **Format data by examples**.
