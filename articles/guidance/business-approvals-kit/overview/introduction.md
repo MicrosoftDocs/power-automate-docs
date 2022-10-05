@@ -1,19 +1,12 @@
 ---
 title: Overview of the Business Approvals Kit (Experimental) | Microsoft Docs
 description: Overview of the Business Approvals Kit.
-suite: flow
 documentationcenter: na
 author: taiki-yoshida
-manager: sameerb
-editor: ''
 ms.custom: guidance
-
-ms.devlang: na
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 10/11/2022
-ms.author: taysohi
+ms.author: tayoshi
 ms.reviewer: deonhe
 ---
 
