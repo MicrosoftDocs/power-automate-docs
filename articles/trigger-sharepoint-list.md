@@ -7,7 +7,7 @@ documentationcenter: na
 author: msftman
 manager: tapanm
 ms.subservice: cloud-flow
-ms.topic: condeptual
+ms.topic: conceptual
 ms.date: 06/22/2022
 ms.author: deonhe
 search.app: 
