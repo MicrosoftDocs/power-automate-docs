@@ -1,10 +1,10 @@
 ---
-title: Variants Filter
+title: Variants filter (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# Variants Filter
+# Variants filter (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Use this filter to restrict the mining in the process only to the cases following a certain scenario (variant).
 
 In the center, there is the visualization of the dependence of the number of variants on the number of cases falling in each variant.
 
 :::image type="content" alt-text="media/image-59.png" source="media/image-59.png":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Variant Mining Attribute
 
