@@ -1,10 +1,10 @@
 ---
 title: Process context (preview)
-description:
+description: Learn about analytical definitions and settings in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Process context (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The purpose of Process context is to store the analytical definitions and settings which are valid over the process data and thus are available for sharing across all process views. Definitions like custom metrics are named and can be easily used in a view, without the need to re-create it in single views.
 
@@ -25,7 +25,7 @@ The purpose of Process context is to store the analytical definitions and settin
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 Process context consists of the following sub-sections:
 

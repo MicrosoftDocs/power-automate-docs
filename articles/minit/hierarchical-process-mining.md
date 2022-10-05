@@ -4,7 +4,7 @@ description: Learn how to define the hierarchy in the process map and social cha
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Hierarchical process mining (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 To define the hierarchy in the process map/social chart, go to the **Hierarchy section** of the Customize panel in the Process Map view and use the **Add hierarchy** option in the context menu:
 
@@ -25,7 +25,7 @@ To define the hierarchy in the process map/social chart, go to the **Hierarchy 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 Use the **Edit hierarchy** and **Delete hierarchy** items to modify the defined hierarchies.
 

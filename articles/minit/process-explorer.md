@@ -1,10 +1,10 @@
 ---
 title: Process explorer overview (preview)
-description:
+description: Learn how to use the process and process analysis tasks view in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Process explorer overview (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The process explorer displays a process and process analysis tasks can be performed with it on the process. After opening the process in the explorer, the following may appear:
 
@@ -25,7 +25,7 @@ The process explorer displays a process and process analysis tasks can be perfor
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ### Full screen
 

@@ -1,10 +1,10 @@
 ---
 title: Variants filter (preview)
-description:
+description: Learn how to restrict the mining in the process only to the cases following a certain scenario in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Variants filter (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Use this filter to restrict the mining in the process only to the cases following a certain scenario (variant).
 
@@ -27,7 +27,7 @@ In the center, there is the visualization of the dependence of the number of var
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Variant Mining Attribute
 

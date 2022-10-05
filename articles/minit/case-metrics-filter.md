@@ -4,7 +4,7 @@ description: Learn how to filter cases based on metrics in the minit desktop app
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Case metrics filter (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This case-level filter can be used to filter cases based on various metrics. The case count based on the selected metrics is visualized on the right. The number of intervals (for example, chart detail level), can be changed by the switch. You can select different types of metrics.
 
@@ -26,14 +26,14 @@ This case-level filter can be used to filter cases based on various metrics. The
 
 - **Edge metric:** Evaluation of the case when at least one or all edges meet the edge metric.
 
-   :::image type="content" alt-text="Screenshot of the dropdown containing the types of metriccs." source="media/casemetricselection-v52.png":::
+   :::image type="content" alt-text="Screenshot of the dropdown containing the types of metrics." source="media/casemetricselection-v52.png":::
 
 In all types of metrics, you can select between standard default metrics found in minit and custom metrics created within the process context.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Select the case metric
 

@@ -4,7 +4,7 @@ description: Learn how to define various settings valid for the current process 
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # View settings (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The View settings panel enables defining various settings valid for the current process view. This panel is easily accessible from any Minit screen such as Process Map, Variants, Statistics, and others. The View setting icon can be found in the bottom left corner, above the Filters icon. With no changes applied (i.e. with default settings), the icon remains grey.
 
@@ -31,7 +31,7 @@ The View settings panel consists of three groups of settings - *General setting
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## General settings
 

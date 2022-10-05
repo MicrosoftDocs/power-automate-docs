@@ -4,7 +4,7 @@ description: Learn how to use a process map for process mining in the minit desk
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,14 +16,14 @@ search.audienceType:
 
 # Process map overview (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 A process map represents the behavior of a process captured in data by means of activities and directed edges.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 The displayed process map always corresponds with the mining result of the process, reflects filter settings above the data, and chosen frequency or time metrics. When filters are applied, mining is performed again, metrics are recalculated and a new process map is generated.
 

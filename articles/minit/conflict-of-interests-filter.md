@@ -5,7 +5,7 @@ description: Learn how to use the conflict of interest filter in the minit deskt
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -17,14 +17,14 @@ search.audienceType:
 
 # Conflict of interest filter (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Use this filter to expose cases with conflict of interests. A typical example is the violation of rules for assigning roles in performing critical tasks.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 By means of the filter, you can specify two sets of events which should/should not have the same value of an attribute. All events from the first group are always compared with all events from the second group. If there is the intersection of the two groups, the filter result will always return all such events.
 

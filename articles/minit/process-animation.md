@@ -1,10 +1,10 @@
 ---
 title: Process animation (preview)
-description:
+description: Learn how to visualize the development of the process over time in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Process animation (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 *Process animation* is used to visualize the development of the process over time. The animation is always shown over the displayed process map or social graph. The instructions displayed on the Process map screen equally apply to the process map and social chart settings.
 
@@ -27,7 +27,7 @@ Animation settings are found in the right part of the screen under the **Animat
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Animation Controls
 

@@ -4,7 +4,7 @@ description: Learn how to find hidden connections in your data in the minit desk
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,14 +16,14 @@ search.audienceType:
 
 # Root cause analysis (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Root cause analysis allows you to find hidden connections in your data.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 Have you ever wondered why some cases take longer time to complete than other? Or why some cases get stuck in reworks and others go smoothly through the process?
 **Well, wonder no more. Analyze!**

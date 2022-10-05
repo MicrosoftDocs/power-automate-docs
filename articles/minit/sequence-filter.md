@@ -4,7 +4,7 @@ description: Learn how to define the sequence in which two events with specific 
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,14 +16,14 @@ search.audienceType:
 
 # Sequence filter (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This case level filter applies to the sequence in which events are performed in a case. You can use it to define the sequence in which two events with specific attribute values are performed and to specify further requirements for the progress of events in a case.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 The Sequence filter does not take the waiting time into account, but only the event start sequence.
 

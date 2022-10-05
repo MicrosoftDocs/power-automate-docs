@@ -4,7 +4,7 @@ description: Learn how to define calendar templates in the minit desktop applica
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,15 +16,14 @@ search.audienceType:
 
 # Working hours (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The Working hours section allows you to define calendar templates, which can be applied to process views in the Process explorer in order to influence the performance analysis calculation, which is by default performed on a 24/7 basis.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 You can define a new calendar template by clicking the** Create new calendar template** button in the upper right corner of the screen or by duplicating existing calendar via the **…** button and selecting **Create duplicate** option at the right end of the calendar template entry.
 

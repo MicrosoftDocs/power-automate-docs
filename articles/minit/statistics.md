@@ -4,7 +4,7 @@ description: Get an overview of the properties of the process undergoing analysi
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,14 +16,14 @@ search.audienceType:
 
 # Statistics overview (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This section provides a brief and easy-to-understand overview of the properties of the process undergoing analysis and contains the information about the process through summary charts and statistics. Statistics are shown in the upper part, the bottom part contains the listings of specific records displayed in the statistics.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 The displayed statistics always reflect the data after filters, if any, have been applied.
 

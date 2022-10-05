@@ -1,10 +1,10 @@
 ---
 title: Export and import filters (preview)
-description:
+description: Learn how to export existing filters in the view and re-use them in another view or process in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Export and import filters (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Minit offers an option to export existing filters in the view and re-use them in another view or process. To export or import filters, click the last icon in the Filters header column.
 
@@ -25,7 +25,7 @@ Minit offers an option to export existing filters in the view and re-use them in
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ### Filter export
 

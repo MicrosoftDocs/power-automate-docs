@@ -4,7 +4,7 @@ description: Learn how to see where your metrics are applicable in the minit des
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date:11/15/2022
+ms.date:10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Requirements for application (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Custom metrics can be applied in Process Map, Statistics, and Filters. You can see where your metrics are applicable directly in the editor window.
 
@@ -25,7 +25,7 @@ Custom metrics can be applied in Process Map, Statistics, and Filters. You can s
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 The specific requirements for their application are:
 

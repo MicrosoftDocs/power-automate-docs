@@ -4,7 +4,7 @@ description: Get an overview of minit desktop application for process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,14 +16,14 @@ search.audienceType:
 
 # Minit desktop application overview (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 With minit desktop application for process advisor, you can easily delve into process details. There are many ways you can break down your process cycles into smaller pieces for analysis. It can be a key driver in making intelligent, day-today improvements on every level. Discover and model processes for which you have data readily available, giving you an X-ray visualization of what goes on in your organization.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 With the minit desktop application, you can understand where and why problem occurs and can identify points of inefficiencies. You can also standardize, optimize and improve operations, while staying informed about progress towards defined key process indicators.
 

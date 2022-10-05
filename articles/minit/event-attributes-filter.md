@@ -4,7 +4,7 @@ description: Learn how to use the event attributes filter in the minit desktop a
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Event attributes filter (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Use this event level filter to only select those events in cases that contain/do not contain a specific attribute value – such as only certain activities or events performed by a certain department (e.g. First line support department for ServiceDesk).
 
@@ -25,7 +25,7 @@ Use this event level filter to only select those events in cases that contain/do
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 #### Attribute selection
 

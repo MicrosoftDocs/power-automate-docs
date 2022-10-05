@@ -4,7 +4,7 @@ description: Learn about rework metrics types and more in the minit desktop appl
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -16,14 +16,14 @@ search.audienceType:
 
 # Rework metrics (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Rework metrics represent a layer of data analysis with a focus on identifying various kinds of repetitions found in a process. Rework information is covered in Statistics and can be visualized on the Process map for better understanding the root cause of each repetition and its overall impact. Reducing repetitions is crucial for improving the efficiency of the process as well as reducing costs.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 >
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Types of rework metrics
 
