@@ -1,6 +1,6 @@
 ---
 title: Use format data by examples to change the format of data with Power Automate | Microsoft Docs
-description: Learn to create expressions automatically, based on the output you want.
+description: Learn to use format data by examples to create expressions automatically, based on the output you want.
 services: ''
 suite: flow
 documentationcenter: na
@@ -45,7 +45,7 @@ In this sample scenario, there's a Microsoft list with products that we've purch
 
    A list displays all items in your flow that can be formatted.
 
-   ![Screenshot showing the option to open format data by examples in the expression menu ](media/reshape-data-expressions/format-data-by-examples.png)
+   ![Screenshot showing the option to open format data by examples in the expression menu ](media/format-data-by-examples/format-data-by-examples.png)
 
 1. Select the item that you want to transform.
 1. Provide an example of the original data for the item that you've selected in the previous step.
@@ -55,7 +55,7 @@ In this sample scenario, there's a Microsoft list with products that we've purch
 
 1. Provide a sample of how you’d like the flow to transform the example.  
 
-    ![A screenshot that displays the format data by examples screen](media/reshape-data-expressions/data-examples.png)
+    ![A screenshot that displays the format data by examples screen](media/format-data-by-examples/data-examples.png)
 
 1. select **Get expression** after you enter an example value and the output that you want.
 
@@ -64,7 +64,7 @@ In this sample scenario, there's a Microsoft list with products that we've purch
    >[!TIP]
    >If the expression that Power Automate recommends isn't what you expect, you can add more examples to refine the expression that it recommends.
 
-   ![Screenshot showing the suggested expression and how to test it](media/reshape-data-expressions/expression-test.png)
+   ![Screenshot showing the suggested expression and how to test it](media/format-data-by-examples/expression-test.png)
 
 1. Select **Apply** when the results of the expression match your expectations.
 
@@ -72,19 +72,19 @@ In this sample scenario, there's a Microsoft list with products that we've purch
 
 Congratulations! You’ve built an expression by providing examples.  
 
-![Screenshot showing the suggested expression applied to an action in the cloud flow](media/reshape-data-expressions/suggested-expression.png.png)
+![Screenshot showing the suggested expression applied to an action in the cloud flow](media/format-data-by-examples/suggested-expression.png)
 
 ## Format numbers by examples
 
 In this example, imagine you have a number that comes from a Microsoft Forms survey as 5958. You want to format the number as a currency value before you store it in an Excel file, like this $5,958. To direct your flow to format the number as a currency value, provide an example of how Microsoft Forms returns the number and an example of how you want your flow to format the number. Power Automate uses the information you provide and then it suggests the expression that does the transformation, as the following screenshot displays.
 
-![Screenshot showing how to format a number into a currency just by providing an example. Power Automate suggests the expression to achieve this transformation.](media/reshape-data-expressions/example-number.png)
+![Screenshot showing how to format a number into a currency just by providing an example. Power Automate suggests the expression to achieve this transformation.](media/format-data-by-examples/example-number.png)
 
 ## Format text by examples
 
 In the following scenario, imagine you have a registration form in which participants provide their full name and you want to send a registration confirmation email with just the first name. Instead of greeting the person by their full name, for example Casey Jensen, we just want to say Casey. By just providing an example, Power Automate suggests the right expression to achieve this as the following screenshot displays.
 
-![Screenshot showing how to format text from a person’s full name to only their first name. Power Automate suggests the expression to achieve this transformation.](media/reshape-data-expressions/example-text.png)
+![Screenshot showing how to format text from a person’s full name to only their first name. Power Automate suggests the expression to achieve this transformation.](media/format-data-by-examples/example-text.png)
 
 ## Limitations
 

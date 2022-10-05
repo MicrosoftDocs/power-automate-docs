@@ -105,8 +105,8 @@
       href: disable-flow.md
     - name: Change the owner of cloud flow
       href: change-cloud-flow-owner.md 
-    - name: Provide examples to format data (preview)
-      href: reshape-data-expressions.md 
+    - name: Format data by examples (preview)
+      href: format-data-by-examples.md 
   - name: Popular cloud flows scenarios
     items:
     - name: Use flows with approvals
