@@ -1,5 +1,5 @@
 ---
-title: Overview of the Business Approvals Kit | Microsoft Docs
+title: Overview of the Business Approvals Kit (Experimental) | Microsoft Docs
 description: Overview of the Business Approvals Kit.
 suite: flow
 documentationcenter: na
@@ -17,7 +17,7 @@ ms.author: taysohi
 ms.reviewer: deonhe
 ---
 
-# Overview of the Business Approvals Kit
+# Overview of the Business Approvals Kit (Experimental)
 
 One of the key use cases that we see across every industry and every department
 are approvals. Power Automate allows you to streamline your business by
@@ -62,6 +62,9 @@ instructions on how to set up the kit is available in this GitHub repository:
 https://aka.ms/business-approvals-kit-repo
 
 ## Disclaimer
+
+> [!IMPORTANT]
+> This kit is currently under experimental preview. It can radically change or completely disappear at any time, and shouldn't be enabled in production environments.
 
 Although the underlying features and components used to build the kit (such as
 Dataverse, admin APIs, and connectors) are fully supported, the kit itself
