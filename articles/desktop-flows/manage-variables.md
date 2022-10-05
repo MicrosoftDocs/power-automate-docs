@@ -19,9 +19,9 @@ search.audienceType:
 
 The variables pane shows the input and output variables passed to and from Power Automate desktop flows. It also displays all the variables used in the current desktop flow under **Flow variables**.
 
-![Screenshot of the variables pane.](media\variables-pane\variables-pane.png)
+Through this pane, you can search for variables, rename them, find their usages, pin them, and filter them by type. Filtering allows to select whether the filtering applies to pinned variables or not.
 
-Through this pane, you can search for variables, rename them, find their usages, pin them, and filter them by type.
+![Screenshot of the variables pane.](media\variables-pane\variables-pane.png)
 
 ## The variable value viewer
 
@@ -32,13 +32,11 @@ When a flow runs, the current value of each variable is visible next to its name
 
 ![Screenshot of some values in the variables pane.](media\variables-pane\current-variable-values.png)
 
-To examine the value of a variable in more detail, double-click on it. The variable value viewer displays the datatype of the selected variable and expands any datarows or datatables to show their contents.
+To examine the value of a variable in more detail, double-click on it. The variable value viewer displays the datatype of the selected variable and expands any [datarows](variable-data-types.md#datarow) or [datatables](variable-data-types.md#datatable) to show their contents.
 
 ![Screenshot of the variable value viewer.](media\variables-pane\variable-viewer.png)
 
-Certain data types may contain nested elements. For example, a custom object may contain another custom object in its properties.
-
-The figure below shows the variable **NewVar** which contains **Company**, another custom object. To view the properties of the nested element, select **More**.
+Certain data types may contain nested elements. For example, a [custom object](variable-data-types.md#custom-object) may contain another custom object in its properties. The figure below shows the variable **NewVar** which contains **Company**, another custom object. To view the properties of the nested element, select **More**.
 
 ![Screenshot of a parent custom object in the variable value viewer.](media\variables-pane\custom-object-parent.png)
 
@@ -121,9 +119,9 @@ To create an output variable:
 
 All created input and output variables are available in the appropriate section of the variables pane.
 
-![Screenshot of the variables pane's section that displays input and output variables.](media\input-output-variables\variables-pane-input-output-variables.png)
+You can use this pane to rename, update, delete, find the usages, pin and filter each input/output variable. Filtering allows to select whether the filtering applies to pinned variables or not.
 
-You can use this pane to rename, update, delete, and find the usages of each input/output variable.
+![Screenshot of the variables pane's section that displays input and output variables.](media\input-output-variables\variables-pane-input-output-variables.png)
 
 To update an input/output variable:
 
