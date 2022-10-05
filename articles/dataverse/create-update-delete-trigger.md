@@ -146,8 +146,7 @@ If nothing is specified, it defaults to the flow owner who created the flow&mdas
 
     ![Run as options.](../media/create-update-delete-trigger/11.png "Run as options")
 
-Additionally, instant flows allow running the steps of any other [connector](/connectors/) (such as [Microsoft Teams](/connectors/teams/), [Microsoft 365
-Outlook](/connectors/office365/), or [SharePoint](/connectors/sharepointonline/) in the same flow using the invoker’s connection. To do so, follow these steps:
+Additionally, instant flows allow running the steps of any other [connector](/connectors/) (such as [Microsoft Teams](/connectors/teams/), [Microsoft 365 Outlook](/connectors/office365/), or [SharePoint](/connectors/sharepointonline/) in the same flow using the invoker’s connection. To do so, follow these steps:
 
 1. Go to the flow overview page.
 
