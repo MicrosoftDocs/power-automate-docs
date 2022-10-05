@@ -145,6 +145,5 @@
     - name: Feedback and support
       href: ./automation-kit/feedback-support.md
   - name: Business Approvals Kit for Power Platform
-    items:
-    - name: Introduction
-      href: ./business-approvals-kit/overview/introduction.md
+    href: ./business-approvals-kit/overview/introduction.md  
+      
