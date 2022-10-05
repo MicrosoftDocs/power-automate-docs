@@ -19,7 +19,7 @@ search.audienceType:
 
 The variables pane shows the input and output variables passed to and from Power Automate desktop flows. It also displays all the variables used in the current desktop flow under **Flow variables**.
 
-Through this pane, you can search for variables, rename them, find their usages, pin them, and filter them by type. Filtering allows to select whether the filtering applies to pinned variables or not.
+Through this pane, you can search for variables, rename them, find their usages, pin them, and filter them by type. Filtering allows you to select whether to apply it to the pinned variables or not.
 
 ![Screenshot of the variables pane.](media\variables-pane\variables-pane.png)
 
@@ -36,11 +36,11 @@ To examine the value of a variable in more detail, double-click on it. The varia
 
 ![Screenshot of the variable value viewer.](media\variables-pane\variable-viewer.png)
 
-Certain data types may contain nested elements. For example, a [custom object](variable-data-types.md#custom-object) may contain another custom object in its properties. The figure below shows the variable **NewVar** which contains **Company**, another custom object. To view the properties of the nested element, select **More**.
+Certain data types may contain nested elements. For example, a [custom object](variable-data-types.md#custom-object) may contain another custom object in its properties. To view the properties of the nested element, select **More**.
 
 ![Screenshot of a parent custom object in the variable value viewer.](media\variables-pane\custom-object-parent.png)
 
-Select the arrow icon on the top of the dialog to return to the parent custom object.
+Select the arrow icon on the top of the dialog to return to the parent element.
 
 ![Screenshot of a child custom object example the variable value viewer.](media\variables-pane\custom-object-child.png)
 
@@ -48,12 +48,12 @@ Select the arrow icon on the top of the dialog to return to the parent custom ob
 
 To rename a desktop flow variable, right-click on its name and select **Rename**. Power Automate automatically updates the name of the variable in all its occurrences.
 
-![Screenshot of the Rename variable option.](media\renaming-variables\rename-flow-variable.png)
-
 Although you can update variable names through action properties, the changes apply only to these specific actions, not globally.
 
 > [!IMPORTANT]
 > If you try to rename a variable to an existing name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.
+
+![Screenshot of the Rename variable option.](media\renaming-variables\rename-flow-variable.png)
 
 ## Input and output variables
 
@@ -119,7 +119,7 @@ To create an output variable:
 
 All created input and output variables are available in the appropriate section of the variables pane.
 
-You can use this pane to rename, update, delete, find the usages, pin and filter each input/output variable. Filtering allows to select whether the filtering applies to pinned variables or not.
+You can use this pane to rename, update, delete, find the usages, pin and filter each input/output variable. Filtering allows you to select whether to apply it to the pinned variables or not.
 
 ![Screenshot of the variables pane's section that displays input and output variables.](media\input-output-variables\variables-pane-input-output-variables.png)
 
@@ -151,7 +151,7 @@ Any variable can become sensitive, independently of its type. Sensitivity applie
 
 You can use, manipulate and process sensitive variables in every action without any limitation, like every other variable. Additionally, you can combine them with other variables and include them in expressions. In this case, logs will handle the whole expression as sensitive.
 
-The flow designer handles sensitivity as a mask you can set on and off. Thus, you can unmask sensitive variables to see their values and mask them again to hide their values.
+The flow designer handles sensitivity as a mask that you can set on and off. Thus, you can unmask sensitive variables to see their values and mask them again to hide their values.
 
 > [!NOTE]
 >
