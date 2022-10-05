@@ -1,10 +1,10 @@
 ---
 title: Requirements for application (preview)
-description: Learn how to see where your metrics are applicable in the minit desktop application in process advisor.
+description: Learn how where your metrics are applicable in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date:10/15/2022
+ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:

@@ -1,6 +1,6 @@
 ---
 title: Business rule scope (preview)
-description:
+description: Learn about the business rule scope mandatory field for business rule definition in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual

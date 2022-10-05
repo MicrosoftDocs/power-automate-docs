@@ -29,8 +29,7 @@ search.audienceType:
 | Returns negation of the value x (its opposite value) | INT, FLOAT, TIME | INT, FLOAT, TIME |
 | Returns negation of the value x (produces a value of true when its operand is false and a value of false when its operand is true) | BOOL | BOOL |
 
-## Binary Operators<br/>
-<br/> 
+## Binary Operators
 
 | Operator | Description | Input data type | Output data type |
 | - | - | - | - |
