@@ -1,10 +1,10 @@
 ---
-title: General Information
-description:
+title: Tips and examples (preview)
+description: Get tips on how to define a metric formula, reference an attribute name, and more in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# General Information
+# Tips and examples (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Metric formula
 
 The metric formula can currently be defined in a text form and can consist of predefined operations.
 
-Individual operations are divided into 2 basic groups:
+Individual operations are divided into two basic groups:
 
 - [**Aggregation operations**](aggregations.md) - input of aggregation operation is a set of values for which the resulting value will be calculated (e.g. average, maximum, ...)
 
@@ -66,7 +73,7 @@ The purpose of scalar operations is to get one value and its transformation to t
 
 ## Attribute names
 
-If an attribute name is used as a parameter for operation, there are 3 ways how to reference it:
+If an attribute name is used as a parameter for operation, there are three ways for how to reference it:
 
 - Using **the attribute name directly **(e.g. Resource)
 

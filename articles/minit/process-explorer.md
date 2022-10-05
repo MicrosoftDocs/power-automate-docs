@@ -1,10 +1,10 @@
 ---
-title: Process Explorer
+title: Process explorer overview (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: overview
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,18 @@ search.audienceType:
 - enduser
 ---
 
-# Process Explorer
+# Process explorer overview (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 The process explorer displays a process and process analysis tasks can be performed with it on the process. After opening the process in the explorer, the following may appear:
 
 :::image type="content" alt-text="media/image-8.png" source="media/image-8.png":::
 
-
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ### Full screen
 

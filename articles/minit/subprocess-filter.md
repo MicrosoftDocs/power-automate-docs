@@ -1,10 +1,10 @@
 ---
-title: Subprocess filter
+title: Subprocess filter (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,9 +14,16 @@ search.audienceType:
 - enduser
 ---
 
-# Subprocess filter
+# Subprocess filter (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Use this event level filter to „cut out" a part of the process from all the cases (where the criteria for subprocess do not apply, case is completely excluded). For example, in a purchase order approval process we want to focus on the part from purchase order creation until the purchase order is marked as approved, or in a service center ticket solving process we want to see only the part being dealt by the second level support department.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 In general, this filter can be defined as:
 

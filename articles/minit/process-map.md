@@ -1,10 +1,10 @@
 ---
-title: Process map
-description:
+title: Process map overview (preview)
+description: Learn how to use a process map for process mining in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: overview
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,15 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# Process map
+# Process map overview (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 A process map represents the behavior of a process captured in data by means of activities and directed edges.
 
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
 The displayed process map always corresponds with the mining result of the process, reflects filter settings above the data, and chosen frequency or time metrics. When filters are applied, mining is performed again, metrics are recalculated and a new process map is generated.
 
-## Process map overview
-
-### Process map nodes
+## Process map nodes
 
 :::image type="content" alt-text="media/image001-7.png" source="media/image001-7.png":::
 
@@ -32,19 +37,19 @@ Frequency metric, time metric or finance metric can be displayed for nodes/activ
 
 The size and color of the highlight (halo effect) expresses the total proportion of the (frequency, time) metric in question in relation to the other nodes in the process map.
 
-### Process map edges
+## Process map edges
 
 :::image type="content" alt-text="media/image002-8.png" source="media/image002-8.png":::
 
 Chart edges represent transitions between individual events and describe the sequence of activities in the process. A transition between events means that they directly follow one after the other. The thickness of the edge and the number displayed next to it depend on the selected display metric (frequency, time, finance) and its value.
 
-### Start and end node
+## Start and end node
 
 :::image type="content" alt-text="media/image003-6.png" source="media/image003-6.png":::
 
 All nodes/activities starting process instances are connected to the start node. All nodes/activities ending process instances are connected to the end node. These nodes do not represent process nodes/activities, but the input and output points of the process under analysis. Their purpose is to facilitate the identification of the start and end nodes/activities of the process. The display of these nodes and edges related to them can be turned off in the Process Map Display Settings panel.
 
-### Start and end identifier
+## Start and end identifier
 
 :::image type="content" alt-text="media/image004-4.png" source="media/image004-4.png":::
 

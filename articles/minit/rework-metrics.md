@@ -1,10 +1,10 @@
 ---
-title: Rework metrics
-description:
+title: Rework metrics (preview)
+description: Learn about rework metrics types and more in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,11 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# Rework metrics
+# Rework metrics (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Rework metrics represent a layer of data analysis with a focus on identifying various kinds of repetitions found in a process. Rework information is covered in Statistics and can be visualized on the Process map for better understanding the root cause of each repetition and its overall impact. Reducing repetitions is crucial for improving the efficiency of the process as well as reducing costs.
 
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
 ## Types of rework metrics
+
+The following sections list the types of rework metrics.
 
 ### Self-loop
 
@@ -70,7 +79,7 @@ This activity metric represents the difference between *Loop outflow* and *Lo
 
 :::image type="content" alt-text="media/example6-v56-1.png" source="media/example6-v56-1.png":::
 
-## Rework metrics - Process map
+## Rework metrics - process map
 
 To display the rework information, open the Customize panel and select **Rework**. The map displays information representing the volume of repetitions for activities and edges the process involves.
 
@@ -86,7 +95,7 @@ By clicking on an activity or edge, you can display rework details about the par
 
 :::image type="content" alt-text="media/detail-v56-1.png" source="media/detail-v56-1.png":::
 
-## Rework metrics - Statistics
+## Rework metrics - statistics
 
 In the Statistics section, the rework information is available for Case overview, Activities, Edge statistics, Resources, and all event-level attribute statistics.
 
@@ -102,7 +111,7 @@ In this example, one case contains one self-loop and one loop. The other one doe
 
 :::image type="content" alt-text="media/statistics3.png" source="media/statistics3.png":::
 
-## Rework metrics - Filters
+## Rework metrics - filters
 
 The Metrics filter supports filtering per case according to the amount of self-loops, loops and reworks.
 
@@ -111,5 +120,3 @@ The Metrics filter supports filtering per case according to the amount of self-l
 Filters Attributes (conditional) and Edge (conditional) allow using rework metrics filter per event.
 
 :::image type="content" alt-text="media/image-56.png" source="media/image-56.png":::
-
-

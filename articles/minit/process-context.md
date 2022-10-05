@@ -1,10 +1,10 @@
 ---
-title: Process Context
+title: Process context (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# Process Context
+# Process context (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 The purpose of Process context is to store the analytical definitions and settings which are valid over the process data and thus are available for sharing across all process views. Definitions like custom metrics are named and can be easily used in a view, without the need to re-create it in single views.
 
 :::image type="content" alt-text="media/PC-overview.png" source="media/PC-overview.png":::
 
-It consists of the following sub-sections:
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+Process context consists of the following sub-sections:
 
 - **Custom metrics:** This allows you to manage custom metrics available in the process and also to create new ones. For more information about custom metrics, see [Custom Metrics](custom-metrics.md).
 

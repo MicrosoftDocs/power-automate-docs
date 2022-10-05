@@ -1,10 +1,10 @@
 ---
-title: Process Hub
-description:
+title: Process hub overview (preview)
+description: Learn how to launch the process hub, choose an environment, and learn about view tiles in minit desktop application in process advisor. 
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: overview
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,57 +14,75 @@ search.audienceType:
 - enduser
 ---
 
-# Process Hub
+# Process hub overview (preview)
 
-**Process Hub** is the main and starting screen of Minit. It gives you an overview of created processes and process views, and it allows you to analyze them.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-Launch Minit Desktop Application for Process Advisor, sign-in with your Azure DevOps account and access Process Hub.
+*Process hub* is the main and starting screen of minit. It gives you an overview of created processes and process views, and it allows you to analyze them.
 
-:::image type="content" alt-text="media/image-25.png" source="media/image-25.png":::
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-The center of the screen shows you the currently open process, indicates the user, and project views associated with the respective processes. To open a view, click on its tile. To create a new process view from the process, click the tile labeled as **Create new view**. The process will open in a default form and a view will be automatically created.
+## Launch Process hub
 
-:::image type="content" alt-text="media/image-13.png" source="media/image-13.png":::
+1. sign in with your Azure DevOps account.
 
-## Environment
+   :::image type="content" alt-text="Screenshot of minit sign-in screen." source="./media/minit-sign-in.png":::
 
-### Environment Selection
+    The **Process hub** screen opens. 
 
-To select/open an Environment, click on the **Menu** icon in the white collapsible panel on the right side. A panel will show a list of existing environments. To select an environment, just click on its name.
+   The center of the screen shows you the currently open process, indicates the user, and project views associated with the respective processes. 
 
+1. To open a view, select its tile.
 
+1. To create a new process view from the process, select the **Create new view** tile.
 
-:::image type="content" alt-text="media/image-5.png" source="media/image-5.png":::
+   The process will open in a default form and a view will be automatically created.
 
+   :::image type="content" alt-text="Screenshot of Create a new view tiles under Demo and New process test headings." source="media/minit-create-new-view.png":::
 
+## Select an environment
 
-## Views
+In the Create a new view screen, you can select an environment.
 
-A view is the representation of a single process you can work with on your own or in cooperation with your colleagues. View stores all your settings for the analysis of the process. If you want to analyze one process from several viewpoints, just create multiple views.
+1. Select the **Menu** icon in the white collapsible panel on the right. A panel will show a list of existing environments.
 
-### View Tile
+1. In the **Environments** dropdown menu, select an environment name.
 
-The view tile contains view name, view state preview, date and time of the last modification, indicators of whether it is private/public view, and the overall number of comments in the view discussion.
+   :::image type="content" alt-text="Screenshot of the environments dropdown menu." source="media/image-5.png":::
 
-It also contains an identifier of unsaved changes. This is indicated by the circular icon to the left of the view name, which changes colour:
+## Understand view tiles
 
-- **RED** – unsaved changes in the view
+A view is the representation of a single process you can work with on your own or with your colleagues. View stores all your settings for the analysis of the process. If you want to analyze one process from several viewpoints, create multiple views.
 
-- **BLUE** – the view is saved
+The view tile contains the following information:
 
-- **ORANGE **- unsaved changes in the view and view is not updated to the actual process version
+- View name.
+- View state preview.
+- Date and time of the last modification.
+- Indicators of whether it is private or public view.
+- The overall number of comments in the view discussion.
 
-- **VIOLET **- the view is not updated to the actual process version
+The view tile also contains a circular icon to the left of the view name. Its color identifies the save status.
 
-### Opening a View
+|Color  | Description  |
+|---------|---------|
+|Red     |  There are unsaved changes in the view.       |
+|Blue     | The view is saved.        |
+|Orange     | There are unsaved changes in the view, and view is not updated to the actual process version.        |
+|Violet   | The view is not updated to the actual process version.        |
 
-To open a view, just click its tile. If the view is not updated to the actual process version user will be notified.
+### Open a view
 
-### Process and View Organization
+To open a view, select its tile. If the view is not updated to the actual process version, you'll be notified.
 
-The center of the screen is dedicated to the list of processes and process views. It is possible to organize the list in 3 ways, clicking the icons on the right side of the screen:
+### Process and view organization
 
-:::image type="content" alt-text="media/image-1.png" source="media/image-1.png":::
+The center of the screen lists the processes and process views. It's possible to organize the list in three ways, selecting the icons on the right side of the screen.
+
+:::image type="content" alt-text="Screenshot of processes and process views." source="media/image-1.png":::
 
 - **Processes** – grouped view in which a process is indicated by the name and all corresponding views are located below the process. The structure is collapsible/expandable by clicking the circle icon next to the process name.
 
@@ -74,26 +92,17 @@ The center of the screen is dedicated to the list of processes and process views
 
 You can sort the selected display form by clicking the **sort indicator** on the top of the list. Availability of sorting criteria depends on the selected display form.
 
-## Process Management
+## Choose how to manage your process
 
 The process hub is used to manage the processes. The management menu is accessible by clicking the **…** icon next to the process name.
 
 The menu contains the following options:
 
-:::image type="content" alt-text="media/image-3.png" source="media/image-3.png":::
+:::image type="content" alt-text="Screenshot of options for how to manage your process." source="media/image-3.png":::
 
-### Create New View
+- **Create new view:** Open the original state of the process with the possibility to apply changes and save it as a new view.
 
-Opens the original state of the process with the possibility to apply changes and save it as a new view.
+- **Process configuration:** Display the available information about the process.
 
-### Process Configuration
-
-Process Configuration displays the available information about the process.
-
-### Process Context
-
-Process context is used to define settings that are available in all process views.
-
-
-
+- **Process context:** Define settings that are available in all process views.
 

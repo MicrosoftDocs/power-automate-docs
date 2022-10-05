@@ -1,10 +1,10 @@
 ---
-title: Statistical Operations
-description:
+title: List of statistical operations (preview)
+description: Learn the statistical operations in the minute desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,113 +14,86 @@ search.audienceType:
 - enduser
 ---
 
-# Statistical Operations
+# List of statistical operations (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+This article lists statistical operations in the minute desktop application.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## START()
 
 returns the start of a process/event/case/path
 
-
-
 **Supported context:** process, event, case, edge
 
 **Output Data Type**: DATE
-
-
 
 ## END()
 
 returns the end of a process/event/case/path
 
-
-
 **Supported context:** process, event, case, edge
 
 **Output Data Type**: DATE
-
-
 
 ## DURATION()
 
 returns the duration of a process/event/case/path
 
-
-
 **Supported context:** process, event, case, edge
 
 **Output Data Type**: TIME
-
-
 
 ## EVENTCOUNT()
 
 returns number of the events in the case/process
 
-
-
 **Supported context:** process, event
 
 **Output Data Type**: INT
-
-
 
 ## CASECOUNT()
 
 returns number of the cases in the process
 
-
-
 **Supported context:** process
 
 **Output Data Type**: INT
-
-
 
 ## ACTIVETIME()
 
 returns case active time
 
-
-
 **Supported context:** case
 
 **Output Data Type**: TIME
-
-
 
 ## WAITINGTIME()
 
 returns case waiting time
 
-
-
 **Supported context:** case
 
 **Output Data Type**: TIME
-
-
 
 ## ISPARALLEL()
 
 In the case context, it returns TRUE if at least one event occurred in parallel with another event, otherwise FALSE. In the event context, it returns TRUE if the event occurred in parallel with another event, otherwise FALSE.
 
-
-
 **Supported context:** case, event
 
 **Output Data Type**: BOOL
-
-
 
 ## ISPARALLELWITH([condition])
 
 returns TRUE if the event occurred in parallel with another event which fullfilla given condition, otherwise FALSE
 
-
-
 **Supported context:** event
-
-
 
 **Parameters:**
 
@@ -129,37 +102,25 @@ Data type: BOOLEAN
 
 **Output Data Type**: BOOL
 
-
-
 ## UTILIZATION()
 
-returns case utilization (number from 0 to 1)
-
-
+Returns case utilization (number from 0 to 1)
 
 **Supported context:** case
 
 **Output Data Type**: FLOAT
-
-
 
 ## PARALLELUTILIZATION()
 
-returns the cumulative case utilization (a number from 0 to 1 to N). A value above 1 is due to parallel events that last longer than the case itself.
-
-
+Returns the cumulative case utilization (a number from 0 to 1 to N). A value above 1 is due to parallel events that last longer than the case itself.
 
 **Supported context:** case
 
 **Output Data Type**: FLOAT
 
-
-
 ## REWORKCOUNT([attributeName])
 
-returns the total count of all reworks (loops and self-loops) within the case
-
-
+Returns the total count of all reworks (loops and self-loops) within the case
 
 **Supported context:** case
 

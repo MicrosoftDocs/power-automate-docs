@@ -1,10 +1,10 @@
 ---
-title: Filters Export & Import
+title: Export and import filters (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,11 +14,18 @@ search.audienceType:
 - enduser
 ---
 
-# Filters Export & Import
+# Export and import filters (preview)
 
-Minit offers option to export existing filters in the view and re-use them in another view or process. To export or import filters, click the last icon in the Filters header column.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+Minit offers an option to export existing filters in the view and re-use them in another view or process. To export or import filters, click the last icon in the Filters header column.
 
 :::image type="content" alt-text="media/expicon.png" source="media/expicon.png":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ### Filter export
 

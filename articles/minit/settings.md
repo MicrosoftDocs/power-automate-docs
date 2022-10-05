@@ -1,10 +1,10 @@
 ---
-title: Settings
-description:
+title: Settings (preview)
+description: Learn how to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,9 +14,16 @@ search.audienceType:
 - enduser
 ---
 
-# Settings
+# Settings (preview)
 
-The Settings section allows users to set the general options and default configuration of Minit, define the Working Hours calendar templates, and update the application or license.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+The Settings section allows you to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 Settings are accessible from the Project Hub by clicking on the cogwheel button in the application toolbar.
 

@@ -1,10 +1,10 @@
 ---
-title: Other Operations
-description:
+title: List of operations (preview)
+description: Get a list of operations and what they return in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,18 @@ search.audienceType:
 - enduser
 ---
 
-# Other Operations
+# List of operations (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## attributeName
 
 returns the event/case attribute value
-
-
 
 **Output Data Type**: BOOL, INT, STRING, FLOAT, TIME, DATE
 

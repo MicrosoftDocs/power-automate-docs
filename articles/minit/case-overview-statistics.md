@@ -1,10 +1,10 @@
 ---
-title: Case overview statistics
-description:
+title: Case overview statistics (preview)
+description: Learn how to gather case overview statistics in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,9 +14,16 @@ search.audienceType:
 - enduser
 ---
 
-# Case overview statistics
+# Case overview statistics (preview)
 
-Case overview statistics provide information for case-level attributes and metrics. They also contain a table of cases in the actual view with standard and custom case-level metrics, including generated case cost metrics (based on the financial attributes in the process).
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+Gather case overview statistics (preview)Case overview statistics provide information for case-level attributes and metrics. They also contain a table of cases in the actual view with standard and custom case-level metrics, including generated case cost metrics (based on the financial attributes in the process).
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ### Statistical chart
 

@@ -1,10 +1,10 @@
 ---
-title: Case Categorization
-description:
+title: Case categorization (preview)
+description: Learn how to define categories for cases in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptuaL
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,11 +14,18 @@ search.audienceType:
 - enduser
 ---
 
-# Case Categorization
+# Case categorization (preview)
 
-Case categorization allows the user to define which cases are **Finished**, **Running**, **Stuck**, and **Incompletely imported**. These settings can then be used in any custom metric.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-Definition of the case categories can be done in the **Process Context** window available within the **Project hub**, using the Process context menu.
+Case categorization allows you to define which cases are **Finished**, **Running**, **Stuck**, and **Incompletely imported**. These settings can then be used in any custom metric.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+Definition of the case categories can be done in the **Process Context** window in the **Project hub**, using the Process context menu.
 
 Case categories are split into two groups:
 - Exclusive (Finished, Running, Stuck)

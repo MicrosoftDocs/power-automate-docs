@@ -1,10 +1,10 @@
 ---
-title: Options
-description:
+title: Application settings (preview)
+description: Learn how to change application settings such as user interface language or set where the exported files will be stored in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# Options
+# Application settings (preview)
 
-Here you can change the application settings. After the settings are changed, the changes are only applied after pressing the Save button.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+Here you can change the application settings. After the settings are changed, the changes are applied after you select **Save**.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## General
 
-Here you can change general settings such as the user interface language or set where the exported files will be stored. Furthermore, you can define the default duration format used for all newly created processes and views. See [View settings](view-settings.md) for more information.
+Here you can change general settings such as the user interface language or set where the exported files will be stored. You can also define the default duration format used for all newly created processes and views. To learn more, go to [View settings](view-settings.md).
 
 :::image type="content" alt-text="media/image-37.png" source="media/image-37.png":::
 

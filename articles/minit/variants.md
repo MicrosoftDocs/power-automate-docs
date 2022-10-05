@@ -1,10 +1,10 @@
 ---
-title: Variants
-description:
+title: Variants overview (preview)
+description: Learn about the process performance variants in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: overview
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,9 +14,16 @@ search.audienceType:
 - enduser
 ---
 
-# Variants
+# Variants overview (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 This section deals with process performance variants.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## What Is a Variant?
 

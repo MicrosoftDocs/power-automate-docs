@@ -1,10 +1,10 @@
 ---
-title: Filtering
+title: Filtering (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,9 +14,16 @@ search.audienceType:
 - enduser
 ---
 
-# Filtering
+# Filtering (preview)
 
-In this section, filters can be used to adjust which cases will be included in the process analysis.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+Use filters to adjust which cases will be included in the process analysis.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## What is a filter
 

@@ -1,10 +1,10 @@
 ---
-title: Business Rule Scope
+title: Business rule scope (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,11 +14,19 @@ search.audienceType:
 - enduser
 ---
 
-# Business Rule Scope
+# Business rule scope (preview)
 
-Business rule scope is a mandatory field for business rule definition. It determines the scope to which is the output result delivered. On the contrary, custom metric context determines the input data set used for metric calculations, here the business rule scope determines the output scope.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+Business rule scope is a mandatory field for business rule definition. It determines the scope to which the output result is delivered. On the contrary, where custom metric context determines the input data set used for metric calculations, here the business rule scope determines the output scope.
 
 :::image type="content" alt-text="media/brheader-1.png" source="media/brheader-1.png":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
 
 ## Process scope
 

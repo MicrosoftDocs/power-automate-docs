@@ -1,10 +1,10 @@
 ---
-title: Process Animation
+title: Process animation (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# Process Animation
+# Process animation (preview)
 
-Process animation is used to visualize the development of the process over time. The animation is always shown over the displayed process map or social graph. The instructions displayed on the Process map screen equally apply to the process map and social chart settings.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+*Process animation* is used to visualize the development of the process over time. The animation is always shown over the displayed process map or social graph. The instructions displayed on the Process map screen equally apply to the process map and social chart settings.
 
 :::image type="content" alt-text="media/image001-v53-1.png" source="media/image001-v53-1.png":::
 
 Animation settings are found in the right part of the screen under the **Animation** heading or the button.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Animation Controls
 

@@ -1,6 +1,6 @@
 ---
-title: "Business Rules: Process Map"
-description:
+title: Business rules for process maps (preview)
+description: Learn how to select various process map views in minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: article
@@ -14,15 +14,22 @@ search.audienceType:
 - enduser
 ---
 
-# Business Rules: Process Map
+# Business rules for process maps (preview)
 
-Process Map in the **Customize **panel under the tab **Business rules **allows the user to select from two main display modes:
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+Process map in the **Customize** panel under the **Business rules** tab allows you to select from two main display modes:
 
 - Single business rule - displays results per single business rule
 
 - Severity display - displays the total count of all business rules results over elements in Process Map with given severity.
 
-:::image type="content" alt-text="media/brpmmodes.png" source="media/brpmmodes.png":::
+   :::image type="content" alt-text="media/brpmmodes.png" source="media/brpmmodes.png":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 In Process Map, it is possible to display all business rules except for process scope business rules.
 

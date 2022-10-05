@@ -1,10 +1,10 @@
 ---
-title: Business Rules
-description:
+title: Business rules overview (preview)
+description: Learn how to define and evaluate KPIs in minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: overview
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,23 +14,30 @@ search.audienceType:
 - enduser
 ---
 
-# Business Rules
+# Business rules overview (preview)
 
-Business Rules module allows the user to define and evaluate KPIs based on given thresholds and limits. Each defined threshold contains also a category flag – Error, Warning, or OK – for a quick visualization of the resulted value. Except for thresholds definitions, each business rule can have its own calculation formula and/or set of its own filters, which are applied over the data set in the actual view. Business rules are defined in the process context of the current process, therefore are available in any view for the given process. In application, business rules are displayed in Process Map and Statistics.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+The **Business rules** module allows you to define and evaluate KPIs based on given thresholds and limits. Each defined threshold contains also a category flag – Error, Warning, or OK – for a quick visualization of the resulted value. Except for thresholds definitions, each business rule can have its own calculation formula and/or set of its own filters, which are applied over the data set in the actual view. Business rules are defined in the process context of the current process, therefore are available in any view for the given process. In application, business rules are displayed in Process Map and Statistics.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 Definition of a business rule can be done in the **Process Context** window available within the **Project hub**, using the Process context menu.
 
 :::image type="content" alt-text="media/image-61.png" source="media/image-61.png":::
 
-The Business rules panel provides the list of custom metrics and their properties defined in the context of this process. If there is no business rule defined yet, you are encouraged to create one by clicking the **Create New Business Rule** button. Context menu for each business rule allows you to **Delete** the item or **Create a duplicate** of that metric, then modify and save it with a different name.
+The **Business rules** panel provides the list of custom metrics and their properties defined in the context of this process. If there's no business rule defined yet, you're encouraged to create one by selecting **Create New Business Rule**. Context menu for each business rule allows you to delete the item or create a duplicate of that metric, then modify and save it with a different name.
 
-Another option is to use context menu in the Customize panel directly in the Process Map. To access the window, click the ... icon under the **Business rules** tab.
+Another option is to use context menu in the **Customize** panel directly in the process map. To access the window, select (**...**) under the **Business rules** tab.
 
 :::image type="content" alt-text="media/brshortcut.png" source="media/brshortcut.png":::
 
 ## Business rule panel
 
-The business rules panel is divided into two parts. The top half contains the rule header fields. The middle part consists of three tabs defining the rule filters, custom output (custom formula) and severities (thresholds & limits).
+The **Business rule** panel is divided into two parts. The top half contains the rule header fields. The middle part consists of three tabs defining the rule filters, custom output (custom formula) and severities (thresholds & limits).
 
 :::image type="content" alt-text="media/brdefinition0.png" source="media/brdefinition0.png":::
 

@@ -1,10 +1,10 @@
 ---
-title: "Business Rules: Statistics"
-description:
+title: Business rules statistics (preview)
+description: Learn how to use the business rules summary and detailed views in minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# Business Rules: Statistics
+# Business rules statistics (preview)
 
-Withing the Statistics view, a new **Business rules **panel was added to display business rule results in the form of a table. As in Process Map, the main display modes are:
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+Within the Statistics view, a new **Business rules **panel was added to display business rule results in the form of a table. As in Process Map, the main display modes are:
 
 - Summary view - a display list of business rules for a given scope or for all.
 
 - Detailed view - displayed results of a single business rule per scope element - activity or edge.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Summary view
 

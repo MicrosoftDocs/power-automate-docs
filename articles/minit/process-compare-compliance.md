@@ -1,10 +1,10 @@
 ---
-title: Process compare (compliance)
-description:
+title: Process compare for compliance (preview)
+description: Learn how to compare various process views in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,11 +14,18 @@ search.audienceType:
 - enduser
 ---
 
-# Process compare (compliance)
+# Process compare for compliance (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Comparison of the processes allows an intuitive and efficient comparison of processes. You can compare the processes at the level of the process map, where the generated visualization allows you to identify the differences in the flow and frequency or time metrics. By using the **Detail** panel, you can also compare in detail values of metrics and attributes at the level of activities and edges.
 
-You can compare the views of various processes or different views generated from a single process (e.g. for different periods of time). It is important to remember that you can compare only saved views.
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+You can compare the views of various processes or different views generated from a single process (for example, for different periods of time). It's important to remember that you can compare only saved views.
 
 :::image type="content" alt-text="media/image-18.png" source="media/image-18.png":::
 

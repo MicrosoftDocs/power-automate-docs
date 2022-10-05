@@ -1,10 +1,10 @@
 ---
-title: Aggregations
-description:
+title: List of aggregations (preview)
+description: Learn the syntax to use for various aggregations in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,17 +14,25 @@ search.audienceType:
 - enduser
 ---
 
-# Aggregations
+# List of aggregations (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+This article provides the syntax to use for various aggregations.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## AVG([context],[value])
 
 Calculates the average of values grouped according to the defined context
 
+- **[context]:** Defines the context in which the operation is calculated.
 
+- **[value]:** Attribute name, nested operation, or expression whose values ​​are input for the average calculation.
 
-- ***[context]*** - defines the context in which the operation is calculated
-
-- ***[value]*** - attribute name, nested operation, or expression whose values ​​are input for the average calculation
 Data Type: INT, FLOAT, DATE, TIME
 
 **Output Data Type**: FLOAT, DATE, TIME

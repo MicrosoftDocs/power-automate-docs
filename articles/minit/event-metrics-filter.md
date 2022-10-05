@@ -1,10 +1,10 @@
 ---
-title: Event Metrics filter
+title: Event metrics filter (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# Event Metrics filter
+# Event metrics filter (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 This event level filter can be used to filter events based on various metrics. Only event metrics are applicable here:
 
 :::image type="content" alt-text="media/eventmetricfilter-v52.png" source="media/eventmetricfilter-v52.png":::
 
-The user can choose between standard - **Default** metrics found in Minit and custom metrics created in the process context.
+You can choose between standard - **Default** metrics found in Minit and custom metrics created in the process context.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Specification of metrics values
 

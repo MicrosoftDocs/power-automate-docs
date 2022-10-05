@@ -1,10 +1,10 @@
 ---
-title: Edge statistics
-description:
+title: Edge statistics (preview)
+description: View edges in the process undergoing analysis and display their various properties in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,9 +14,17 @@ search.audienceType:
 - enduser
 ---
 
-# Edge statistics
+# Edge statistics (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 These statistics refer to edges in the process undergoing analysis and display their various properties. Edge statistics can be reviewed from the perspective of activities (process map-related edges) as well as from the viewpoint of resources (social chart-related edges).
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
 You can select the desired attribute in the title of the view:
 
 :::image type="content" alt-text="media/image011-3.png" source="media/image011-3.png":::

@@ -1,10 +1,10 @@
 ---
-title: View settings
-description:
+title: View settings (preview)
+description: Learn how to define various settings valid for the current process in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,7 +14,9 @@ search.audienceType:
 - enduser
 ---
 
-# View settings
+# View settings (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 The View settings panel enables defining various settings valid for the current process view. This panel is easily accessible from any Minit screen such as Process Map, Variants, Statistics, and others. The View setting icon can be found in the bottom left corner, above the Filters icon. With no changes applied (i.e. with default settings), the icon remains grey.
 
@@ -25,6 +27,11 @@ Once the default settings are modified, the icon color changes to teal. The actu
 :::image type="content" alt-text="media/image002-v48.png" source="media/image002-v48.png":::
 
 The View settings panel consists of three groups of settings - *General settings*, *Activity label* and *Working hours*.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## General settings
 

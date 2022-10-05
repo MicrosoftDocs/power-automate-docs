@@ -1,10 +1,10 @@
 ---
-title: Calculation Context
-description:
+title: Calculation context (preview)
+description: Learn how to define the data scope which is used as the source for a given aggregation function in minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,9 +14,16 @@ search.audienceType:
 - enduser
 ---
 
-# Calculation Context
+# Calculation context (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Calculation context in aggregation functions defines the data scope which is used as the source for a given aggregation function. In Minit, there are several different data calculation modes which are well described in [**Custom metrics requirements for application**](requirements-for-application.md).
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 Custom Metrics also support nested aggregations, i.e. aggregations used within an expression. For example expression AVG(DURATION()/AVG(AllInView,DURATION())) returns the average of ratios between activities'/edges' durations versus average of duration over all activities/edges.
 

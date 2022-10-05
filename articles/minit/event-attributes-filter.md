@@ -1,10 +1,10 @@
 ---
-title: Event Attributes filter
-description:
+title: Event attributes filter (preview)
+description: Learn how to use the event attributes filter in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,11 +14,18 @@ search.audienceType:
 - enduser
 ---
 
-# Event Attributes filter
+# Event attributes filter (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Use this event level filter to only select those events in cases that contain/do not contain a specific attribute value – such as only certain activities or events performed by a certain department (e.g. First line support department for ServiceDesk).
 
 :::image type="content" alt-text="media/image013.png" source="media/image013.png":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 #### Attribute selection
 

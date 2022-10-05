@@ -1,10 +1,10 @@
 ---
-title: Timeframe filter
+title: Timeframe filter (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,13 +14,20 @@ search.audienceType:
 - enduser
 ---
 
-# Timeframe filter
+# Timeframe filter (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 You can use this filter to select the timeframe of interest in your analysis. On the left side, you can edit the filter rule, the right side shows the visualization of the course of the process divided into equal time intervals. The number of time intervals, i.e. chart detail level, can be changed by the switch.
 
 :::image type="content" alt-text="media/image007.png" source="media/image007.png":::
 
 :::image type="content" alt-text="media/image-57.png" source="media/image-57.png":::
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Evaluation of presence in a timeframe
 

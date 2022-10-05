@@ -1,10 +1,10 @@
 ---
-title: Statistics
-description:
+title: Statistics overview (preview)
+description: Get an overview of the properties of the process undergoing analysis in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: overview
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,11 +14,18 @@ search.audienceType:
 - enduser
 ---
 
-# Statistics
+# Statistics overview (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 This section provides a brief and easy-to-understand overview of the properties of the process undergoing analysis and contains the information about the process through summary charts and statistics. Statistics are shown in the upper part, the bottom part contains the listings of specific records displayed in the statistics.
 
-**The displayed statistics always reflect the data after filters, if any, have been applied.**
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+The displayed statistics always reflect the data after filters, if any, have been applied.
 
 #### Detailed table information
 

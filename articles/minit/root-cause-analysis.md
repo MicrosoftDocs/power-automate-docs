@@ -1,10 +1,10 @@
 ---
-title: Root Cause Analysis
-description:
+title: Root cause analysis (preview)
+description: Learn how to find hidden connections in your data in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,9 +14,16 @@ search.audienceType:
 - enduser
 ---
 
-# Root Cause Analysis
+# Root cause analysis (preview)
 
-### Root Cause Analysis allows you to find hidden connections in your data.
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+Root cause analysis allows you to find hidden connections in your data.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 Have you ever wondered why some cases take longer time to complete than other? Or why some cases get stuck in reworks and others go smoothly through the process?
 **Well, wonder no more. Analyze!**
@@ -30,14 +37,18 @@ Best way is to include all data you can as a case level attribute and let RCA do
 ## How does RCA work?
 
 RCA is a custom implementation of one of the most used machine learning algorithm, the Decision Tree.
+
 The algorithm will compute a tree structure where each node will split the dataset into two smaller parts based on one variable where it finds the best correlation between that variable split and the target metric. From this, you can see the hidden connections in the data, where it will tell you which combination of attributes will influence the case in which way.
 
-### **Simple show case**
+### Simple show case
 
 "Let's say we want to see the root cause behind the Case Duration. In the data, we have case level attributes *supplier country*, *supplier city*, *material*,*total amount* and *cost center* and the average Case Duration is 46 hours.
+
 By looking at each value of each attribute separately, we can say that the highest influencer of case duration is when *supplier city* is *Graz* which on average increases the duration of the case by additional 15 hours. From this initial analysis, we can see that the other values of attributes influence the target metric far less.
 However, when we compute the tree model (figure 1), we can see that the computation above is misleading.
+
 The tree structure looks like this: First split the data along the *material* variable, with *aluminium* on one side and all other materials on the other side. Now the *aluminium* branch is split further by *supplier country* into Germany and Austria. In Austria, the branch continues with split by city, with *Graz* on one side and *Vienna* on another. In the node *Graz*, the average case was 36 hours slower than the overall average duration of 46 hours.
+
 In the same tree, we can see that if we have another material than *aluminium*, it also splits by the variable *supplier city*, where on one side is *Graz* and on the other is *Vienna, Munich or Frankfurt*. But here, the values are the opposite. *Graz* has much better statistics than Vienna or any German city, with average case in Graz being 15 hours faster than the overall average for all cases.
 From this, we can clearly see, that the initial statistics is misleading, because *Graz* is performing poorly when the material is aluminium, but is performing above average when the material is other than aluminium and its completely opposite for other cities."
 

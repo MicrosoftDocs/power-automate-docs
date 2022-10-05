@@ -1,10 +1,10 @@
 ---
-title: Activities (event level) statistics
+title: Activities - Event level statistics (preview)
 description:
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,9 +14,16 @@ search.audienceType:
 - enduser
 ---
 
-# Activities (event level) statistics
+# Activities: Event level statistics (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 These statistics refer to activities or event-level attributes in the process undergoing analysis, and they display their various properties. All event-level attributes (including activities) share the same event-level statistics.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ### Statistical chart
 

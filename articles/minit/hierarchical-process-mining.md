@@ -1,10 +1,10 @@
 ---
-title: Hierarchical Process Mining
-description:
+title: Hierarchical process mining (preview)
+description: Learn how to define the hierarchy in the process map and social chart in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/08/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -14,15 +14,22 @@ search.audienceType:
 - enduser
 ---
 
-# Hierarchical Process Mining
+# Hierarchical process mining (preview)
 
-To define the hierarchy in the process map/social chart, navigate to the **Hierarchy section** of the Customize panel in the Process Map view and use the **Add hierarchy** option in the context menu:
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+To define the hierarchy in the process map/social chart, go to the **Hierarchy section** of the Customize panel in the Process Map view and use the **Add hierarchy** option in the context menu:
 
 :::image type="content" alt-text="media/addhierarchy.png" source="media/addhierarchy.png":::
 
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
 Use the **Edit hierarchy** and **Delete hierarchy** items to modify the defined hierarchies.
 
-You can do the same via the **Process Context **menu item in the process context menu directly from the Project Hub (use **Map Hierarchies** tab). The opened dialog window allows you to define the name of the hierarchy and automatically identifies all clustering attributes in the process, specifying the number of unique attribute values - levels. To define the hierarchy, select and move the desired attributes to the right part of the window. Use drag & drop to reorder the items in the final list. The list of hierarchies is validated for correctness - the same rules that apply for the individual clustering attributes (see below) must be applied for the levels in the hierarchy - the lower level of the hierarchy must act as a clustering attribute for the higher hierarchy level.
+You can do the same via the **Process Context** menu item in the process context menu directly from the Project Hub (use **Map Hierarchies** tab). The opened dialog window allows you to define the name of the hierarchy and automatically identifies all clustering attributes in the process, specifying the number of unique attribute values - levels. To define the hierarchy, select and move the desired attributes to the right part of the window. Use drag & drop to reorder the items in the final list. The list of hierarchies is validated for correctness - the same rules that apply for the individual clustering attributes (see below) must be applied for the levels in the hierarchy - the lower level of the hierarchy must act as a clustering attribute for the higher hierarchy level.
 
 The user is informed, if the validation rules are not met and saving of the hierarchy is not allowed.
 
