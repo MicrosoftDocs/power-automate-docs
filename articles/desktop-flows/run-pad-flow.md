@@ -1,12 +1,12 @@
 ---
 title: Run a Power Automate desktop flow | Microsoft Docs
 description: Run a flow in the Power Automate desktop console
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/11/2021
-ms.author: marleon
+ms.date: 09/27/2022
+ms.author: gtrantzas
 ms.reviewer:
 search.app: 
   - Flow
@@ -209,13 +209,17 @@ Some of your desktop flows might run for long durations, for example more than 2
 
    - Restart the service on your device.
 
-## Run desktop flows via URL
+## Run desktop flows via URL or desktop shortcuts
 
-Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using run URLs.
+Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using run URLs and desktop shortcuts.
 
-You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, and the Command Prompt. If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
+You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, and the Command Prompt. 
 
-By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL. To disable this functionality, navigate to the console settings and disable the option **Display confirmation dialog when invoking flows via URL** or modify the [appropriate Windows registry entry](governance.md#disable-confirmation-dialog-when-invoking-power-automate-desktop-flows-via-url).
+Alternatively, you can create desktop shortcuts and run your desktop flows directly through them. Desktop shortcuts also enable you to automatically trigger or schedule desktop flows directly through your desktop using the Windows Task Scheduler.
+
+If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
+
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. To disable this functionality, navigate to the console settings and disable the option **Display confirmation dialog when invoking flows externally** or modify the [appropriate Windows registry entry](governance.md#configure-power-automate-for-desktop-confirmation-dialog-when-invoking-flows-via-url-or-desktop-shortcut).
 
 > [!WARNING]
 > Be aware that disabling the confirmation dialog poses security threats, as you could run without notice a questionable flow shared with you by a malicious actor.
@@ -227,6 +231,13 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 - Power Automate for desktop needs to be installed on the machine. 
 - The user must be signed in.
 - The user needs a trial or paid organization subscription or a pay-as-you-go environment.
+
+### Create a desktop shortcut
+
+To create a shortcut for a desktop flow, right-click on its name in the console and select **Create desktop shortcut**. All shortcuts are automatically created in your desktop folder, but you can move them to any folder of your machine.
+
+![Screenshot of the Create desktop shortcut option.](media/run-flow-url/console-create-desktop-shortcut.png)
+
 
 ### Create a run URL 
 
@@ -269,15 +280,12 @@ To find the ID of a desktop flow, launch the Power Automate console, right-click
 
 ### Save logs for desktop flows run via URL
 
-Apart from the mandatory input parameters, you can add the **runId** parameter to a run URL to define a unique GUID for the desktop flow logs.
+Apart from the mandatory input parameters, you can add the **runId** parameter to a run URL to define a unique GUID for the desktop flow logs. 
 
 Power Automate uses this GUID to create a folder and store the logs inside it. The logs are stored in: **C:\Users\\[Username]\AppData\Local\Microsoft\Power Automate Desktop\Console\Scripts\\[Flow ID]\Runs\\[Run ID]**
 
 > [!NOTE]
 > A GUID is a 128-bit value consisting of one group of 8 hexadecimal digits, three groups of 4 digits each, and one group of 12 digits, for example: **e6f82a20-47f7-4dd8-a97f-63df36797d0f**.
-
-> [!IMPORTANT]
-> To enable this functionality, you need to modify the appropriate [registry entry](governance.md#configure-power-automate-for-desktop-to-keep-the-flow-run-details).  
 
 A URL containing the **runId** input parameter should have the following structure. The parameter can be added to any of the previously mentioned URLs.
 

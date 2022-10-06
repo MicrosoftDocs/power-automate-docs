@@ -1,12 +1,12 @@
 ---
 title: Power Automate for desktop console | Microsoft Docs
 description: Power Automate for desktop console
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
-ms.author: marleon
+ms.date: 09/27/2022
+ms.author: gtrantzas
 ms.reviewer: 
 search.app: 
   - Flow
@@ -54,7 +54,7 @@ Under the **Application** category, select whether Power Automate should launch 
 
 Using the **Monitoring/Notifications** drop-down menu, you can choose whether Power Automate will display integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, refer to [Runtime notifications](run-pad-flow.md#runtime-notifications).
 
-By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL. The **Display confirmation dialog when invoking flows via URL** option allows you to disable this functionality. You can find more information about external links in [Run desktop flows via URL](run-pad-flow.md#run-desktop-flows-via-url).  
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. The **Display confirmation dialog when invoking flows externally** option allows you to disable this functionality. You can find more information about external links in [Run desktop flows via URL or desktop shortcuts](run-pad-flow.md#run-desktop-flows-via-url-or-desktop-shortcuts).  
 
 To decide whether Microsoft may collect diagnostic data to improve user experience, navigate to the **Data collection** settings tab. 
 
@@ -65,7 +65,7 @@ To decide whether Microsoft may collect diagnostic data to improve user experien
 
 To review the details of a desktop flow, right-click on it and select **Details**. Through the **Details** dialog, you can edit the name and description of the flow, as well as see the owner, the creation and last modification dates, and the flow ID.
 
-Additionally, there is a **Run URL** that you can use to run the flow through many different sources, such as browsers, the Windows Run application, and the Command Prompt. You can find more information regarding this functionality in [Run desktop flows via URL](run-pad-flow.md#run-desktop-flows-via-url).
+Additionally, there is a **Run URL** that you can use to run the flow through many different sources, such as browsers, the Windows Run application, and the Command Prompt. You can find more information regarding this functionality in [Run desktop flows via URL or desktop shortcuts](run-pad-flow.md#run-desktop-flows-via-url-or-desktop-shortcuts).
 
 ![Screenshot of the details of a desktop flow.](media/console/desktop-flow-details.png)
 
