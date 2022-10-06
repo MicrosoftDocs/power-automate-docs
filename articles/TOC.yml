@@ -26,6 +26,8 @@
     items:
     - name: Create a cloud flow from a template
       href: get-started-logic-template.md
+    - name: Create a cloud flow from a description (preview)
+      href: easy-automation.md
     - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
     - name: Create a cloud flow with Dynamics 365
@@ -105,8 +107,6 @@
       href: disable-flow.md
     - name: Change the owner of cloud flow
       href: change-cloud-flow-owner.md
-    - name: Create a cloud flow from a description
-      href: easy-automation.md 
   - name: Popular cloud flows scenarios
     items:
     - name: Use flows with approvals
