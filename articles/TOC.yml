@@ -671,7 +671,7 @@
   - name: Minit desktop application for process advisor (preview)
     items:
     - name: Overview
-      href: ./minit/minit-desktop-application-for-process-advisor -private-preview.md
+      href: ./minit/minit-desktop-application-for-process-advisor-private-preview.md
     - name: Install minit desktop application
       href: ./minit/how-to-start-with-minit-desktop-application.md
     - name: Process hub

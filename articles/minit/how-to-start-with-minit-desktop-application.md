@@ -29,38 +29,23 @@ Install minit for desktop to edit your processes created in process advisor.
 
 1. Below **Record, analyze, and refine commonly performed processes**, select **Download Minit**.
 
-   :::image type="content" alt-text="media/3.png" source="media/minit-install-a1.png":::
+   :::image type="content" alt-text="Screenshot of the Download Mint button." source="media/minit-install-a1.png":::
 
 1. Depending on your configuration, you might see the following two screens:
 
    1.  In the **Open this file?** screen, select **Open**.
 
-    :::image type="content" alt-text="media/3.png" source="media/minit-install-1.png":::
+    :::image type="content" alt-text="Screenshot of the Open button." source="media/minit-install-1.png":::
 
-    1. In the **Appliccation Install - Security Warning** screen, select **Install**.
+    1. In the **Application Install - Security Warning** screen, select **Install**.
 
-    :::image type="content" alt-text="media/3.png" source="media/minit-install-2.png":::
+    :::image type="content" alt-text="Screenshot of the Install button." source="media/minit-install-2.png":::
 
    The installation will start.
 
-   :::image type="content" alt-text="media/3.png" source="media/minit-install-3.png":::
+   :::image type="content" alt-text="Screenshot of the installation in progress." source="media/minit-install-3.png":::
 
-1. 
-
-
-
-
-
-1. Download and install application with OneClick installer.
-
-1. Go through easy-to navigate application wizard:
-
-   :::image type="content" alt-text="media/1.png" source="media/1.png":::
-
-   :::image type="content" alt-text="media/2.png" source="media/2.png":::
-
-   :::image type="content" alt-text="media/3.png" source="media/3.png":::
-
+ 
 1. Sign in into application with your Azure DevOps account:
 
 :::image type="content" alt-text="media/image-26.png" source="media/image-26.png":::
@@ -68,5 +53,4 @@ Install minit for desktop to edit your processes created in process advisor.
 1. Start process mining from your Process Hub:
 
 :::image type="content" alt-text="media/image-27.png" source="media/image-27.png":::
-
 
