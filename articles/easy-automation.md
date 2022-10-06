@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 ms.devlang: na
@@ -26,7 +26,7 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-When you build automation with Power Automate, learning which actions and triggers you need might take valuable time, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can just write a description of what you want to automate in everyday language and let Artificial Intelligence (AI) do all the hard work by providing a written description of what you want to automate in everyday language and see the corresponding flow created instantly.
+When you build automation with Power Automate, it might take valuable time to learn which actions and triggers you need, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can just write a description of what you want to automate in everyday language and let Power Automate provide a list of corresponding flows that you can create instantly.
 
 > [!IMPORTANT]
 >
@@ -49,31 +49,41 @@ When you build automation with Power Automate, learning which actions and trigge
 
 In the following example, we'll build an automated cloud flow that sends a notification via Teams and an email each time someone responds to a Microsoft Forms survey.
 
-1. Navigate to the **Create** page for Power Automate, and select **You describe it, AI Builds it**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), select **Create** on the left side of the screen, and then select **You describe it, AI Builds it**.
 
    A screen opens where you can enter a description of what you want to automate. You will also see examples you can use for inspiration and that you can try right away.
 
 1. For this example, enter *Every time someone responds to a Microsoft Forms survey, post a message to Teams and send an email*.
-1. Select the **Submit** button.
+1. Select the **Confirm** button.
 
-   Power Automate returns up to three suggested flows that correspond to what you've entered. You can select the preview icon to the right of each flow to see a preview of the flow.  
+   Power Automate returns up to three suggested flows that correspond to what you've entered. You can select the **See flow** icon to the right of each flow to see a preview of the flow.  
 
-    ![A screenshot that displays a suggested flow after providing a description of what to automate](media/easy-flow/describe-flow.png)
+   >[!div class="mx-imgBorder"]
+   >![A screenshot that displays a suggested flow after providing a description of what to automate](media/easy-flow/describe-flow.png)
 
    >[!NOTE]
-   >If none of the suggestions correspond to what you’re looking to automate, you can select **This is not what I want**. You will see additional guidance on what you can do next, and this signal will help us improve the AI behind this feature.
+   >If none of the suggestions correspond to what you’re looking to automate, you can select **This is not what I want**. You will see additional guidance on what you can do next, and this signal helps Microsoft to improve the AI behind this feature.
 
 1. Select that flow that best suits your needs.
 1. Select **Next**.
 1. Setup all the connections needed to run the flow.
+   >[!div class="mx-imgBorder"]
+   >![A screenshot that displays the connections that you may need to set up.](media/easy-flow/set-up-connections.png)
+
+1. Select **Next**.
 1. Enter the information needed to run the flow. For example, which form to use and to whom to send the Teams message and email. You can decide to fill in the information on this step or do it later in the designer.
+
+   >[!div class="mx-imgBorder"]
+   >![A screenshot that displays the settings you must configure for the flow.](media/easy-flow/settings.png)
+
 1. Select **Create flow**.
 
-   And there you have it! Your flow has been built – congratulations! You can decide to make any modification and edit the flow or save it and test it.
+   And there you have it! Your flow has been built. Congratulations! You can decide to make any modification and edit the flow or save it and test it.
 
-   ![Power Automate showing a cloud flow that has been built from a description](media/easy-flow/generated-flow.png)
+   >[!div class="mx-imgBorder"]
+   >![Power Automate showing a cloud flow that has been built from a description](media/easy-flow/generated-flow.png)
 
-<!-- Behind the tech
+<!-- todo: deonhe Behind the tech
 ===============
 
 The implementation relies on OpenAI Codex, an AI model descendant of GPT-3 that can translate natural language to code, in this case descriptions to cloud flows. Its training data contains both natural language and a large number of sample cloud flows. -->
