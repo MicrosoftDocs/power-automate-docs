@@ -158,7 +158,7 @@ To extract a text value while using image recording:
 
     ![Screenshot of a anchor text area.](./media/recording-flow/anchor-area.png)
 
- ## Recording vs building a desktop flow
+## Recording vs building a desktop flow
 
 You can edit manually any actions created through the recorder once the recording is finished. Use the recorder in a desktop flow that is already under development to add the recorded steps to it.
 
