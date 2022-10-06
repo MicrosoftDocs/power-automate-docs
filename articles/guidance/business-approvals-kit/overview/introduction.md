@@ -1,6 +1,6 @@
 ---
-title: Overview of the Business Approvals Kit (Experimental) | Microsoft Docs
-description: Overview of the Business Approvals Kit.
+title: Overview of the Business Approvals template (Experimental) | Microsoft Docs
+description: Overview of the Business Approvals template.
 documentationcenter: na
 author: taiki-yoshida
 ms.custom: guidance
@@ -10,21 +10,21 @@ ms.author: tayoshi
 ms.reviewer: deonhe
 ---
 
-# Overview of the Business Approvals Kit (Experimental)
+# Overview of the Business Approvals template (Private Preview)
 
 One of the key use cases that we see across every industry and every department
 are approvals. Power Automate allows you to streamline your business by
 digitalizing the approval experience.
 
-“Business approvals kit” – is a kit that will accelerate building your approvals
-faster than ever - available as an experimental preview. Business approvals kit
+“Business Approvals template” – is a kit that will accelerate building your approvals
+faster than ever - available as an private preview. Business Approvals template
 is a no-code ready-made template built on top of Power Platform components that
 allows your organization to configure sophisticated approvals such as
 conditional branching, delegation, admin overrides and more – all without the
 need to write a single code – empowering every person in your organization to
 "do more with less" for your organizations approval needs.
 
-![Business Approvals Kit screenshot](../media/business-approvals-kit.png)
+![Business Approvals template screenshot](../media/business-approvals-kit.png)
 
 Organizations require approvals for variety of different business processes such
 as expense reporting, work-time management, business travel requests,
@@ -32,7 +32,7 @@ procurement orders, sales discounts etc. With Microsoft Power Platform, you can
 meet these approval needs by combining components from Microsoft Power Apps and
 Microsoft Power Automate. However, as your complexity of your approvals
 increases, so does your configuration. In order to quickly set up approvals for
-your business needs, the Business Approvals Kit for Power Platform was created
+your business needs, the Business Approvals template for Power Platform was created
 as a collection of components and tools that are designed to help organizations
 digitalize the process.
 
@@ -50,7 +50,7 @@ The kit covers some of the typical requirements in any organization such as:
 
 ## Start using the kit
 
-Business approvals kit is currently under experimental preview, and all
+Business Approvals template is currently under experimental preview, and all
 instructions on how to set up the kit is available in this GitHub repository:
 https://aka.ms/business-approvals-kit-repo
 
