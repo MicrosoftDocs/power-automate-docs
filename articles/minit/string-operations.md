@@ -20,11 +20,6 @@ Following are the string operations that you can use in the minit desktop applic
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 ## CONCAT([string1],...,[stringN])
 
 concatenates given strings

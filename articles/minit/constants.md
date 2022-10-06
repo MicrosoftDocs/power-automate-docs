@@ -18,14 +18,9 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
-| CONSTANT | DATA TYPE | DESCRIPTION |
+| Constant | Data type | Description |
 | - | - | - |
-| **PI** | FLOAT | Mathematical constant π = 3.14159265358979 |
-| **E** | FLOAT | Euler's number e = 2.71828182845905 |
+| PI | FLOAT | Mathematical constant π = 3.14159265358979 |
+| E | FLOAT | Euler's number e = 2.71828182845905 |
 
 

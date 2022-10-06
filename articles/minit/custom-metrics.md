@@ -1,9 +1,9 @@
 ---
-title: Custom metrics (preview)
+title: Custom metrics overview (preview)
 description: Learn how to use predefined metrics to define your own metrics in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
@@ -14,18 +14,13 @@ search.audienceType:
 - enduser
 ---
 
-# Custom metrics (preview)
+# Custom metrics overview (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Custom Metrics (Calculated Metrics) module allows you to use pre-defined metrics in the application, different aggregations, mathematical, datetime, string and other operations and functions and constants in a formula editor to define your own custom metrics. It is then possible to visualize them for example in the process map or according to their context in other parts of the application in a similar way as the static ones.
 
 These metrics are defined by the users in the context of the current process and of course they can be used and evaluated only if they are valid in the particular context.
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Definition
 

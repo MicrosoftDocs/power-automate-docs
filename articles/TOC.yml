@@ -668,6 +668,130 @@
       href: process-mining-share.md      
     - name: Edit and refresh processes
       href: process-mining-data-source.md
+  - name: Minit desktop application for process advisor (preview)
+    items:
+    - name: Overview
+      href: ./minit/minit-desktop-application-for-process-advisor -private-preview.md
+    - name: Install minit desktop application
+      href: ./minit/how-to-start-with-minit-desktop-application.md
+    - name: Process hub
+      items:
+      - name: Process hub overview    
+        href: ./minit/process-hub.md
+      - name: Process context
+        href: ./minit/process-context.md
+      - name: Case categorization
+        href: ./minit/case-categorization.md
+    - name: Process explorer overview
+      href: ./minit/process-explorer.md
+    - name: Process map
+      items:
+      - name: Process map overview
+        href: ./minit/process-map.md
+      - name: Favorites panel
+        href: ./minit/favorites-panel.md
+      - name: View settings
+        href: ./minit/view-settings.md
+      - name: Hierarchical process mining
+        href: ./minit/hierarchical-process-mining.md
+      - name: Rework metrics
+        href: ./minit/rework-metrics.md
+    - name: Process animation
+      href: ./minit/process-animation.md
+    - name: Statistics
+      items:  
+      - name: Statistics overview
+        href: ./minit/statistics.md
+      - name: Case overview statistics
+        href: ./minit/case-overview-statistics.md
+      - name: Activities (event level) statistics
+        href: ./minit/activities-event-level-statistics.md
+      - name: Edge statistics
+        href: ./minit/edge-statistics.md
+    - name: Variants
+      href: ./minit/variants.md
+    - name: Process compare for compliance
+      href: ./minit/process-compare-compliance.md
+    - name: Root cause analysis
+      href: ./minit/root-cause-analysis.md
+    - name: Filtering
+      items:
+      - name: Filtering overview
+        href: ./minit/filtering.md
+      - name: Timeframe filter
+        href: ./minit/timeframe-filter.md
+      - name: Case attributes filter
+        href: ./minit/case-attributes-filter.md
+      - name: Case attributes conditional filter
+        href: ./minit/case-attributes-conditional-filter.md
+      - name: Edge conditional filter
+        href: ./minit/edge-conditional-filter.md
+      - name: Variants filter
+        href: ./minit/variants-filter.md
+      - name: Case metrics filter
+        href: ./minit/case-metrics-filter.md
+      - name: Sequence filter
+        href: ./minit/sequence-filter.md
+      - name: End events filter
+        href: ./minit/end-events-filter.md
+      - name: Conflict of interests filter
+        href: ./minit/conflict-of-interests-filter.md
+      - name: Event attributes filter
+        href: ./minit/event-attributes-filter.md
+      - name: Subprocess filter
+        href: ./minit/subprocess-filter.md
+      - name: Event metrics filter
+        href: ./minit/event-metrics-filter.md
+      - name: Filters export and import
+        href: ./minit/filters-export-import.md
+    - name: Export
+      href: ./minit/export.md
+    - name: Settings
+      items:
+      - name: Settings overview
+        href: ./minit/settings.md
+      - name: Options
+        href: ./minit/options.md
+      - name: Working hours
+        href: ./minit/working-hours.md
+    - name: Custom metrics
+      items:
+      - name: Custom metrics overview
+        href: ./minit/custom-metrics.md
+      - name: Tips and examples
+        href: ./minit/general-information.md
+      - name: Requirements for application
+        href: ./minit/requirements-for-application.md
+      - name: List of data types-custom metrics
+        href: ./minit/data-types-custom-metrics.md
+      - name: Constants
+        href: ./minit/constants.md
+      - name: List of unary operators
+        href: ./minit/unary-operators.md
+      - name: Aggregations
+        href: ./minit/aggregations.md
+      - name: Date and time operations
+        href: ./minit/date-and-time-operations.md     
+      - name: Mathematical operations
+        href: ./minit/mathematical-operations.md
+      - name: Statistical operations
+        href: ./minit/statistical-operations.md
+      - name: List of string operations
+        href: ./minit/string-operations.md
+      - name: List of other operations
+        href: ./minit/other-operations.md
+      - name: Calculation context
+        href: ./minit/calculation-context.md
+    - name: Business rules
+      items:
+      - name: Business rules overview
+        href: ./minit/business-rules.md
+      - name: Business rule scope
+        href: ./minit/business-rule-scope.md
+      - name: Business rules for process maps
+        href: ./minit/business-rules-process-map.md
+      - name: Business rules for statistics
+        href: ./minit/business-rules-statistics.md
   - name: Task mining
     items:
     - name: Overview

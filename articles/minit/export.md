@@ -22,11 +22,6 @@ Here you can export process data to an external file. After filling in all requi
 
 :::image type="content" alt-text="media/Export.png" source="media/Export.png":::
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 ### Apply filters
 
 This setting specifies if preset filters should be applied to the process before export. If the filters are not applied, all records in the process will be exported.

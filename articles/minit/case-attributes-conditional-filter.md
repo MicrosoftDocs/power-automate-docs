@@ -25,11 +25,6 @@ To do that, select the additional criteria type Attribute/Metric/Process Metric:
 
 :::image type="content" alt-text="media/image016-v52.png" source="media/image016-v52.png":::
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 Process metric option calculates results not per a single case, but total value for all case in the existing process. In the View filtering, it returns either empty (0% cases) or full (100% cases) data set coverage. The usage of Process metrics is reasonable for filters in Business rules - it is possible to deactivate or activate the business rule by filtering out the whole data set.
 
 Also specify the value(s) or custom expression for it:

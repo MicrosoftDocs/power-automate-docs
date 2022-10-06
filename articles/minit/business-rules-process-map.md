@@ -26,11 +26,6 @@ Process map in the **Customize** panel under the **Business rules** tab allows 
 
    :::image type="content" alt-text="media/brpmmodes.png" source="media/brpmmodes.png":::
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 In Process Map, it is possible to display all business rules except for process scope business rules.
 
 ## Single business rule display

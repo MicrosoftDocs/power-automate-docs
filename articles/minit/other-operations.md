@@ -1,5 +1,5 @@
 ---
-title: List of operations (preview)
+title: List of other operations (preview)
 description: Get a list of operations and what they return in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
@@ -14,14 +14,9 @@ search.audienceType:
 - enduser
 ---
 
-# List of operations (preview)
+# List of other operations (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## attributeName
 

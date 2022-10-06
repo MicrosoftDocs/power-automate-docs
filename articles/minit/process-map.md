@@ -20,11 +20,6 @@ search.audienceType:
 
 A process map represents the behavior of a process captured in data by means of activities and directed edges.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 The displayed process map always corresponds with the mining result of the process, reflects filter settings above the data, and chosen frequency or time metrics. When filters are applied, mining is performed again, metrics are recalculated and a new process map is generated.
 
 ## Process map nodes

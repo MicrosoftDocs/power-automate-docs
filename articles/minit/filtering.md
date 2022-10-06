@@ -1,9 +1,9 @@
 ---
-title: Filtering (preview)
+title: Filtering overview (preview)
 description: Learn how to adjust which cases will be included in the process analysis in the minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 10/15/2022
 ms.author: tatn
 ms.reviewer: angieandrews
@@ -20,12 +20,7 @@ search.audienceType:
 
 Use filters to adjust which cases will be included in the process analysis.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
-## What is a filter
+## What's a filter?
 
 A filter is a rule or a set of rules determining which cases and/or events from the process will be later included in process mining. There are two groups of filters available in Minit:
 

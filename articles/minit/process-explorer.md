@@ -22,11 +22,6 @@ The process explorer displays a process and process analysis tasks can be perfor
 
 :::image type="content" alt-text="media/image-8.png" source="media/image-8.png":::
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 ### Full screen
 
 You can hide the top toolbar and view the process browser in full screen by clicking **FullScreen Mode** icon at the top right corner of the application.

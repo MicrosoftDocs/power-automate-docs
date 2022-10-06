@@ -20,11 +20,6 @@ search.audienceType:
 
 Comparison of the processes allows an intuitive and efficient comparison of processes. You can compare the processes at the level of the process map, where the generated visualization allows you to identify the differences in the flow and frequency or time metrics. By using the **Detail** panel, you can also compare in detail values of metrics and attributes at the level of activities and edges.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 You can compare the views of various processes or different views generated from a single process (for example, for different periods of time). It's important to remember that you can compare only saved views.
 
 :::image type="content" alt-text="media/image-18.png" source="media/image-18.png":::

@@ -20,11 +20,6 @@ search.audienceType:
 
 This section provides a brief and easy-to-understand overview of the properties of the process undergoing analysis and contains the information about the process through summary charts and statistics. Statistics are shown in the upper part, the bottom part contains the listings of specific records displayed in the statistics.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 The displayed statistics always reflect the data after filters, if any, have been applied.
 
 #### Detailed table information

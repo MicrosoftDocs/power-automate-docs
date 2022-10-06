@@ -18,11 +18,6 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 | Data type | Description | Allowed value range |
 | - | - | - |
 | INT | Integer | -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807 |

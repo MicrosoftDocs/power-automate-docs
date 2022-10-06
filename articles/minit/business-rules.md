@@ -20,11 +20,6 @@ search.audienceType:
 
 The **Business rules** module allows you to define and evaluate KPIs based on given thresholds and limits. Each defined threshold contains also a category flag – Error, Warning, or OK – for a quick visualization of the resulted value. Except for thresholds definitions, each business rule can have its own calculation formula and/or set of its own filters, which are applied over the data set in the actual view. Business rules are defined in the process context of the current process, therefore are available in any view for the given process. In application, business rules are displayed in Process Map and Statistics.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 Definition of a business rule can be done in the **Process Context** window available within the **Project hub**, using the Process context menu.
 
 :::image type="content" alt-text="media/image-61.png" source="media/image-61.png":::
