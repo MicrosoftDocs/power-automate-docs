@@ -22,7 +22,7 @@ The following prerequisites are required to install and use the Automation Kit
 
 - An administrative account, which is called **Automation CoE Admin** or similar.
 
-  The Automation Kit requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration). Therefore, the account you set up as the **Automation CoE Admin** needs the following.
+- The Automation Kit requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration. Therefore, the account you set up as the **Automation CoE Admin** needs the following.
 
 ## Roles
 
@@ -78,7 +78,7 @@ Enable component framework before installing or upgrading.
 ![A screenshot that displays the environments](../media/CodeComponentsTurnedOn.png)
 
 1. Sign in to the Power Platform admin center.
-1. Select an environment where you want to enable this feature. This is needed in both the [main](https://learn.microsoft.com/power-automate/guidance/automation-kit/setup/main) and all [satellite](https://learn.microsoft.com/power-automate/guidance/automation-kit/setup/satellite) environments.
+1. Select an environment where you want to enable this feature. This is needed in both the [main](/power-automate/guidance/automation-kit/setup/main) and all [satellite](/power-automate/guidance/automation-kit/setup/satellite) environments.
 1. Select **Settings** at the top of the screen.
 1. Select **Features** from below **Product**.
 1. Turn on **Allow publishing of canvas apps with code components**.
