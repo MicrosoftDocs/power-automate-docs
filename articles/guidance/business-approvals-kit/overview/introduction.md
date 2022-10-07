@@ -48,7 +48,7 @@ The kit covers some of the typical requirements in any organization such as:
 
 -   Out of office management
 
-## Sign up to start using the kit
+## Sign up to the private preview
 
 Business Approvals templates is currently under private preview, we look forward for you to sign-up from the [sign up form](https://aka.ms/business-approvals-kit-privatepreview)
 
