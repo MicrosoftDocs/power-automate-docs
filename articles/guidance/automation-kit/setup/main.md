@@ -113,18 +113,18 @@ Review roles and assign roles based on responsibility.
 
 ## Import the desktop flow actions csv
 
-Next, we want to import all the desktop flow actions from the csv file into the **Desktop Flow Action** table.
+Import all the desktop flow actions from the csv file into the **Desktop Flow Action** table.
 
-This must be done for all environments to which the Automation Kit is installed, such as main and all satellites.
+This must be done for all environments in which the Automation Kit is installed, such as main and all satellites.
 
-1. Open a browser, navigate to [Power Automate](https://flow.microsoft.com) and sign-in with your account.
-1. Navigate to your environment where the solution is installed.
-1. Select Solutions tab.
-1. Find and select Automation COE Main solution.
-1. Select the table, Desktop Flow Action.
-1. Click the Import dropdown near the top.
-1. Select Import data from Excel.
-1. After the popup opens, select the **Upload** button, and then upload the included Excel file (autocoe_desktopflowactions.csv).
+1. Sign in to [Power Automate](https://flow.microsoft.com) with your account.
+1. Go to your environment where the solution is installed.
+1. Select the **Solutions** tab.
+1. Find, and then select the Automation COE Main solution.
+1. Select the **Desktop Flow Action** table.
+1. Expand the **Import** list near the top.
+1. Select **Import data from Excel**.
+1. After the popup opens, select the **Upload** button, and then upload the included Excel file named autocoe_desktopflowactions.csv.
 1. Wait for the **mapping status** to show as successful.
 1. Select **Import**.
 1. After the import completes, verify that the data was imported.

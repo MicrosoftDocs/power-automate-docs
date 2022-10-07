@@ -21,7 +21,7 @@ ms.reviewer: deonhe
 
 ## Define configuration data for the Automation Kit
 
-Use the Automation Kit admin account, navigate to the main environment and open the automation center app.
+Use the Automation Kit admin account, go to the main environment, and then open the automation center app.
 
 The **Automation Center** is where we configure how several aspects of how the Automation Kit functions.
 
@@ -29,7 +29,7 @@ There are a few things you need to configure when you first import the kit.
 
 First, add an automation goal. Follow these steps to add an automation goal.
 
-1. Sign in with your Automation CoE Admin account, and then navigate to the main environment.
+1. Sign in with your Automation CoE Admin account, and then go to the main environment.
 1. Open the **Automation Center** app.
 
    You will use the automation center app to configure how the Automation Kit operates.

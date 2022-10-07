@@ -43,8 +43,8 @@ Refer to the following table to see what roles and permissions are needed for ea
 
 ### Request automation project (maker)
 
-1. Sign into [Power Automate](https://make.powerautomate.com) and then change to your main environment.
-1. Launch [Automation Project](https://github.com/microsoft/automation-coe/wiki/How-to-use-Automation-Project) app from either of the following apps.
+1. Sign in to [Power Automate](https://make.powerautomate.com) and then change to your main environment.
+1. Launch the [Automation Project](https://github.com/microsoft/automation-coe/wiki/How-to-use-Automation-Project) app from either of the following apps.
 
     - **Automation Console** app
     - **Automation Project** app
@@ -79,20 +79,20 @@ Refer to the following table to see what roles and permissions are needed for ea
 | Development Costs      | 1200                                          |
 
 1. Select **Save**.
-   After the save operation completes, the dashboard displays, a flow is runs and calculates the ROI potential and complexity score, based on the information provided.
+   After the save operation completes, the dashboard displays a list of flow runs and then calculates the ROI potential and complexity score, based on the information provided.
 
 1. Select the **Refresh** button within the app until the ROI and score show up. These should show up in a few seconds.
 
-1. Now, select the project record for approval then select the Submit Project button.
+1. Now, select the project record for approval, and then select the **Submit Project** button.
 
 Now that the request has been submitted, it can be approved or rejected by the business owner, or if none was provided, the fallback approver is used.
 
-If this is the first time an approval is being used within this environment, it will take around 5 minutes for the approval solutions to initialized. This is only a onetime event and you can avoid if by following the steps laid out in the setup steps.
+If this is the first time an approval is being used within this environment, it will take around 5 minutes for the approval solutions to initialize. This is only a onetime event and you can avoid it by following the steps laid out in the setup steps.
 
 ### Approve automation project request (approver)
 
 1. Sign in as an approver in the main environment.
-1. Open the approval from either of the following locations.
+1. Open the approval from one of the following locations.
 
     - Microsoft Teams (preferred)
     - Power Automate actions tab
@@ -154,7 +154,7 @@ CoE admin maps the solution to automation project by metering the solution and i
 1. Open the **Automation Solution Manager** app.
 1. Select the solution for your automation project and meter by selecting the **+"** icon.
 1. Once metered, meter the artifact (the trigger cloud flow).
-1. Navigate to the metered artifact (cloud flow), and then trigger it. (This will sync a flow session to main).
+1. Go to the metered artifact (cloud flow), and then trigger it. (This will sync a flow session to main).
 1. Wait for run to complete.
 
 ### Verify data sync to main
