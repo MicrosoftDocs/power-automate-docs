@@ -11,7 +11,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/01/2021
+ms.date: 10/06/2022
 ms.author: grarchib
 ms.reviewer: deonhe
 ---
@@ -77,10 +77,9 @@ The Creator Kit uses a component library and code components. We must enable cod
 Enable component framework before installing or upgrading.
 ![A screenshot that displays the environments](../media/CodeComponentsTurnedOn.png)
 
-1. Navigate to the Power Platform Admin Center.
-1. Select an environment where you want to enable this feature.
-(We need to do this for both Main and all Satellite environments)
-1. Click the Settings cog in the top nav.
-1. Under Product > Click Features.
-1. Turn on (Enable) Power Apps component framework for canvas apps.
-1. Click Save.
+1. Sign in to the Power Platform admin center.
+1. Select an environment where you want to enable this feature. This is needed in both the [main](https://learn.microsoft.com/power-automate/guidance/automation-kit/setup/main) and all [satellite](https://learn.microsoft.com/power-automate/guidance/automation-kit/setup/satellite) environments.
+1. Select **Settings** at the top of the screen.
+1. Select **Features** from below **Product**.
+1. Turn on **Allow publishing of canvas apps with code components**.
+1. Select **Save**.
