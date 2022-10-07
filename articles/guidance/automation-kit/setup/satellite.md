@@ -60,27 +60,27 @@ Use the following steps to create an app registration that will be used by flows
 
 Microsoft recommends that you have the satellite solution imported inside your production environment. Follow the [steps to import the main solution](main.md) if you create a new environment.
 
-### Creator Kit Import
+### Import the Creator Kit
 
 First, we need to enable the Power Apps component framework.
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Select an environment where you want to enable this feature.
-(We need to do this for both **Main** and all **Satellite** environments)
-3. Click the Settings cog in the top nav.
-4. Under Product > Click Features.
-5. Turn on (Enable) **Power Apps component framework for canvas apps.**
-6. Click **Save**.
+(We need to do this for both the **Main** and all **Satellite** environments)
+3. Select **Settings** in the top pane.
+4. Select **Product** > **Features**.
+5. Turn on **Allow publishing of canvas apps with code components**.
+6. Select **Save**.
 
 Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-kit/overview).
 
 1. Download the [Power Platform Creator Kit](https://aka.ms/creatorkitdownload).
 1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
-1. Go to the environment you just created in which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Prod**.
-1. On the left pane, select Solutions.
-1. Select Import, and then Browse.
-1. Select the Creator Kit solution from File Explorer (CreatorKitCore_x_x_x_x_managed.zip).
-1. Select Import.
+1. Go to the environment you just created into which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Prod**.
+1. On the left pane, select **Solutions**.
+1. Select **Import**, and then select **Browse**.
+1. Select the Creator Kit solution named CreatorKitCore_x_x_x_x_managed.zip.
+1. Select **Import**.
 Wait for the Creator Kit to finish importing before continuing to next step.
 
 
@@ -88,10 +88,11 @@ Wait for the Creator Kit to finish importing before continuing to next step.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select the satellite environment, and then select **Settings**.
-1. Select Users + permissions > Application Users > New app user.
+1. Select **Users + permissions** > **Application Users** > **New app user**.
 1. Select **Add an app**.
 
 1. Select the app registration that was created in previous steps.
+
     >[!TIP]
     >Verify the AppID if you're unsure.
 
@@ -109,26 +110,26 @@ Wait for the Creator Kit to finish importing before continuing to next step.
 1. Download the most recent release of the Automation Kit satellite managed solution from the Assets section of [https://github.com/microsoft/powercat-automation-kit/releases](https://github.com/microsoft/powercat-automation-kit/releases)
 1. On the left pane, select **Solutions**.
 1. Select **Import**, and then **Browse**.
-1. Select the Automation CoE satellite solution (**AutomationCoESatellite_x_x_x_x_managed.zip**).
+1. Select the Automation CoE satellite solution named AutomationCoESatellite_x_x_x_x_managed.zip**.
 1. When the compressed (.zip) file loads, select **Next**.
 1. Review the information, and then select **Next**.
-1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
-1. Next, we configure the [environment variables](./environment-variables.md).
+1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**.    You won't lose your import progress.
+1. Configure the [environment variables](./environment-variables.md).
 
 ## Import the desktop flow actions csv
 
-Next, we want to import all the desktop flow actions from the csv file into the **Desktop Flow Action** table.
+Import all the desktop flow actions from the csv file into the **Desktop Flow Action** table.
 
-This must be done for all environments to which the Automation Kit is installed, such as main and all satellites.
+This must be done for all environments in which the Automation Kit is installed, such as main and all satellites.
 
-1. Open a browser, navigate to [Power Automate](https://flow.microsoft.com) and sign-in with your account.
-1. Navigate to your environment where the solution is installed.
-1. Select Solutions tab.
-1. Find and select Automation CoE Main solution.
-1. Select the table, Desktop Flow Action.
-1. Click the Import dropdown near the top.
-1. Select Import data from Excel.
-1. After the popup opens, select the **Upload** button, and then upload the included Excel file (autocoe_desktopflowactions.csv).
+1. Sign in to [Power Automate](https://flow.microsoft.com) with your account.
+1. Select the environment where the solution is installed.
+1. Select the **Solutions** tab.
+1. Find, and then select the Automation CoE main solution.
+1. Select the **Desktop Flow Action** table.
+1. Expand the **Import** list near the top.
+1. Select **Import data from Excel**.
+1. After the popup opens, select the **Upload** button, and then upload the included Excel file named autocoe_desktopflowactions.csv.
 1. Wait for the **mapping status** to show as successful.
 1. Select **Import**.
 1. After the import completes, verify that the data was imported.
