@@ -35,17 +35,15 @@ search.audienceType:
 
 ## Format dates by examples
 
-In this sample scenario, there's a Microsoft list with products that we've purchased. We want to send an email when the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but we’d like it to display as *September 18* in the email notification message. Let’s see how to change the format of the date with format data by examples.
+In this sample scenario, imagine that there's a Microsoft list with products that you've purchased. You want to send an email whenever the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but you'd like it to display as *September 18* in the email notification message. Let’s see how to change the format of the date with format data by examples.
 
-> [!NOTE]
-> While the following example details the steps needed to format a date by example, you can use similar steps to format text and numbers too.
-
-1. Edit your flow in the Power Automate designer, select the action into which you want to insert the formatted date.
+1. Edit your flow in the Power Automate designer.
+1. Select the action into which you want to insert the formatted date, and then select any text field on the card.
 1. On the window that opens, select **Expression** > **Format data by examples**.
 
-   A list displays all items in your flow that can be formatted.
-
    ![Screenshot showing the option to open format data by examples in the expression menu ](media/format-data-by-examples/format-data-by-examples.png)
+
+   A list displays all items in your flow that can be formatted.
 
 1. Select the item that you want to transform.
 1. Provide an example of the original data for the item that you've selected in the previous step.
@@ -57,9 +55,9 @@ In this sample scenario, there's a Microsoft list with products that we've purch
 
     ![A screenshot that displays the format data by examples screen](media/format-data-by-examples/data-examples.png)
 
-1. select **Get expression** after you enter an example value and the output that you want.
+1. Select **Get expression**.
 
-   Power Automate displays the expression that it recommends you use to get the output you want. You can test it with another value to confirm that the expression does what you expect.
+   Power Automate displays the expression that it recommends that you use to get the output you want. You can test it with another value to confirm that the expression does what you expect.
 
    >[!TIP]
    >If the expression that Power Automate recommends isn't what you expect, you can add more examples to refine the expression that it recommends.
@@ -70,7 +68,7 @@ In this sample scenario, there's a Microsoft list with products that we've purch
 
    Power Automate adds the expression to the flow.
 
-Congratulations! You’ve built an expression by providing examples.  
+Congratulations! You’ve built an expression by providing an example.  
 
 ![Screenshot showing the suggested expression applied to an action in the cloud flow](media/format-data-by-examples/suggested-expression.png)
 
