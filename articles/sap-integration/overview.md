@@ -1,10 +1,10 @@
 ﻿---
 title: Overview of SAP integration with Microsoft Power Platform (preview)
-description: Learn about the SAP integration with Microsoft Power Platform and the capabilities of the SAP connector working with Power Automate.
+description: Learn how SAP integration with Microsoft Power Platform is improved with a prebuilt SAP Integration solution that works with enhanced connection features, new Logic Apps functions, and an updated on-premises data gateway.
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 09/19/2022
+ms.date: 10/06/2022
 ms.author: ellenwehrle
 search.app: 
   - Flow
@@ -21,40 +21,91 @@ search.audienceType:
 
 SAP ERP is a centralized system of record that facilitates the management of data and business processes between many departments within an organization. SAP ERP, developed by SAP SE, serves as the primary enterprise resource planning application for many businesses worldwide.
 
-The preview version of SAP integration with Microsoft Power Platform offers enhanced connectivity capabilities with SAP and a prebuilt solution supported by Power Apps, Power Automate, and Azure Logic Apps. The prebuilt solution offers components that work together to create a streamlined view of SAP ERP's core business functions while automating the workflows behind the scenes.
+The preview version of SAP integration with Microsoft Power Platform is built on a broad set of new functionality designed to make it easier for organizations that rely on SAP to digitally transform and automate their business processes. The enhancements include:
+
+- Prebuilt SAP Integration solution
+- Advanced SAP system connections support
+- Updated On-premises data gateway
+- New Logic Apps Functions
 
 > [!IMPORTANT]
 >
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
-## Prebuilt solution
+## Prebuilt SAP Integration solution
 
 :::image type="content" source="media/overview/sales-orders-page.png" alt-text="Power App display of sales order page that is part of the sales module.":::
 
-A downloadable prebuilt solution is available that works with SAP's key business processes:
+The prebuilt SAP Integration solution is a set of Power Platform components that work together to communicate with SAP ECC or SAP S/4HANA systems. The prebuilt solution contains the following components:
+
+- Power Automate flows
+- Power Apps templates
+- More components and new technical features
+
+The Power Automate flows automate the business rules behind the scenes while the Power Apps simplify the view of SAP ERP's core business functions:
 
 - Order to Cash
 - Procure to Pay
 - Record to Report
 - Make to Stock and Make to Order
 
-The prebuilt solution is designed to enable organizations to digitally transform their SAP system by extending its capabilities through the Power Platform. The preview version of the prebuilt solution contains the following components:
-
-- Power Apps templates
-- Power Automate flows
-- More components and new technical features
+> [!NOTE]
+>
+> Testing focuses on the Order to Cash and Procure to Pay business processes during preview.
 
 Learn more at [Understanding prebuilt solution available for integrating SAP with Power Platform](solutions.md).
 
+## Advanced SAP system connections support
+
+Many enterprise organizations need to utilize advanced connection parameters to govern user sessions. SAP integration with Power Platform now supports:
+
+- message servers that support load balancing among users
+- gateway servers
+- advanced SSO configurations
+
+Your SAP system's connection parameters are set up by following the established guidance:
+
+- The JSON string template inside the solution's environment variable value field
+- The SAP property guidance table
+
+Learn more at [Create an environment variable with SAP connection parameters](env-variables-connection-refs.md)
+
+## Updated on-premises data gateway
+
+The on-premises data gateway acts as a bridge that provides secure data transfer between your on-premises SAP data and Microsoft's cloud services that include the Power Platform and Azure Logic Apps.
+
+ The most recent version of the on premises data gateway handles two SAP integration requirements:
+
+- Backwards compatibility - customers utilizing the prior version of the SAP connector can still run their flows
+- Enhanced SSO - Kerberos delegation now ensures that SSO is a seamless experience between Power Apps, Power Automate, and SAP.
+
+## New Logic Apps Functions
+
+Power Automate's expression language is based on Logic Apps functions. New functions have been added to enable more efficient processing of SAP data.
+
+| Logic App function | Description |
+|--------------------|-------------|
+| [isInt](/azure/logic-apps/workflow-definition-language-functions-reference#isint)   | Returns True if a data attribute in an integer. This allows Flow makers to determine if leading zeroes should be added to SAP data before sending to SAP APIs, or to remove from SAP data after retrieving records from SAP.   |
+| [chunk](/azure/logic-apps/workflow-definition-language-functions-reference#chunk)   | Splits text areas, long string, or file contents into an array of fixed length strings for SAP's APIs.     |
+| [sort](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)   | Sorts an array of objects by a key found in each object.     |
+| [reverse](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)  | Reverse sorts an array of objects by a key found in each object.    |
+| [dateDifference](/azure/logic-apps/workflow-definition-language-functions-reference#datedifference)     | Determines the difference between two dates and returns in the time unit specified in the function. This is especially useful for customers who use time-based billing.         |
+| [isFloat](/azure/logic-apps/workflow-definition-language-functions-reference#isfloat)            | There is a unique edge case where some SAP APIs return currency strings in a user's localized format, which causes problems for mathematical operations. This function combined with float() removes the formatting so that math can do math. |
+| [parseDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#parsedatetime)   | Converts the string representation of a timestamp to its a standard ISO 8601 format. This output of this function can be used reliably to do additional operations on the timestamp like the functions defined in Date and time functions.    |
+| [formatDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)  | A new optional parameter locale has been added to the existing formatDateTime. If not specified, the default locale is used.    |
+| [nthIndexOf](/azure/logic-apps/workflow-definition-language-functions-reference#nthindexof)  | Allows finding the nth occurrence of a substring.    |
+| [slice](/azure/logic-apps/workflow-definition-language-functions-reference#slice)  | Provides a new way to extract a substring. The existing function substring already allows such capability by providing start index and length.                                                                                    ||
+
+Learn more at [Azure Logic Apps documentation](/azure/logic-apps/)
 ## What value will SAP integration add?
 
-SAP integration with Power Platform will help your organization achieve the following capabilities:
+SAP integration with Power Platform will help your organization:
 
-- Reduced errors
-- Accelerated automation
-- Enhanced employee productivity and collaboration
-- Intelligent insights
+- Reduce errors
+- Accelerate automation
+- Gain intelligent insights
+- Enhance employee productivity and collaboration
 
 ## Get started
 
@@ -72,3 +123,5 @@ SAP integration with Power Platform will help your organization achieve the foll
 
 - [Understand prebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
 - [Create an environment variable with SAP connection parameters (preview)](env-variables-connection-refs.md)
+- [On-premises data gateway documentation](/data-integration/gateway/)
+- [Azure Logic Apps documentation](/azure/logic-apps/)
