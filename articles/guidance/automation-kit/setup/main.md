@@ -34,28 +34,28 @@ Create an environment in which to set up the Automation Kit.
 
 Once the environment is created, enable the Power Apps component framework.
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Select an environment where you want to enable this feature.
-(We need to do this for both **Main** and all **Satellite** environments)
-3. Click the Settings cog in the top nav.
-4. Under Product > Click Features.
-5. Turn on (Enable) **Power Apps component framework for canvas apps.**
-6. Click **Save**.
+(We need to do this for both the **Main** and all **Satellite** environments)
+3. Select **Settings** in the top pane.
+4. Select **Product** > **Features**.
+5. Turn on **Allow publishing of canvas apps with code components**.
+6. Select **Save**.
 
-### Creator Kit Import
+### Import the Creator Kit
 
 Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-kit/overview).
 
 1. Download the [Power Platform Creator Kit](https://aka.ms/creatorkitdownload).
 1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
 1. Go to the environment you just created in which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Main**.
-1. On the left pane, select Solutions.
-1. Select Import, and then Browse.
-1. Select the Creator Kit solution from File Explorer (CreatorKitCore_x_x_x_x_managed.zip).
-1. Select Import.
+1. On the left pane, select **Solutions**.
+1. Select **Import**, and then select **Browse**.
+1. Select the Creator Kit solution named CreatorKitCore_x_x_x_x_managed.zip.
+1. Select **Import**.
 Wait for the Creator Kit to finish importing before continuing to next step.
 
-### Automation Kit Main Solution Import
+### Import the Automation Kit main solution
 
 1. Download the most recent release of the Automation Kit main managed solution from the Assets section of [https://github.com/microsoft/powercat-automation-kit/releases](https://github.com/microsoft/powercat-automation-kit/releases)
 1. On the left pane, select **Solutions**.
