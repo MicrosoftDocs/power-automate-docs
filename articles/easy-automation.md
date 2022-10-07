@@ -79,9 +79,6 @@ In the following example, we'll build an automated cloud flow that sends a notif
 1. Select **Next**.
 1. Enter the information needed to run the flow. For example, which form to use and to whom to send the Teams message and email. You can decide to fill in the information on this step or do it later in the designer.
 
-   >[!div class="mx-imgBorder"]
-   >![A screenshot that displays the settings you must configure for the flow.](media/easy-flow/settings.png)
-
 1. Select **Create flow**.
 
    And there you have it! Your flow has been built. Congratulations! You can decide to make any modification and edit the flow or save it and test it.
