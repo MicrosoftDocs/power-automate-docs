@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 ms.devlang: na
@@ -80,7 +80,7 @@ In this example, imagine you have a number that comes from a Microsoft Forms sur
 
 ## Format text by examples
 
-In the following scenario, imagine you have a registration form in which participants provide their full name and you want to send a registration confirmation email with just the first name. Instead of greeting the person by their full name, for example Casey Jensen, we just want to say Casey. By just providing an example, Power Automate suggests the right expression to achieve this as the following screenshot displays.
+In the following scenario, imagine you have a registration form in which participants provide their full name and you want to send a registration confirmation email with just the first name. Instead of greeting the person by their full name, for example Casey Jensen, we just want to say Casey. Just provide an example and Power Automate suggests the right expression to achieve this transformation, as the following screenshot displays.
 
 ![Screenshot showing how to format text from a person’s full name to only their first name. Power Automate suggests the expression to achieve this transformation.](media/format-data-by-examples/example-text.png)
 
