@@ -26,7 +26,7 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-When you build automation with Power Automate, it might take valuable time to learn which actions and triggers you need, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can just write a description of what you want to automate in everyday language. Power Automate then uses OpenAI Codex to translate natural language into code and provide a list of corresponding flows that you can create instantly.
+When you build automation with Power Automate, it might take valuable time to learn which actions and triggers you need, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can just write a description of what you want to automate in everyday language. Power Automate then uses OpenAI Codex to translate your description into code, and then provides a list of corresponding flows that you can create instantly.
 
 > [!IMPORTANT]
 >
