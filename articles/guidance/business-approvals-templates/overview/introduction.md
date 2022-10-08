@@ -10,13 +10,20 @@ ms.author: tayoshi
 ms.reviewer: deonhe
 ---
 
-# Overview of the Business Approvals templates (Private Preview)
+# Overview of the Business Approvals templates (Preview)
+
+[This topic is pre-release documentation and is subject to change.]
 
 One of the key use cases that we see across every industry and every department
 are approvals. Power Automate allows you to streamline your business by
 digitalizing the approval experience.
 
-“Business Approvals templates” – is a kit that will accelerate building your approvals
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+
+“Business Approvals templates” – is a template that will accelerate building your approvals
 faster than ever - available as a private preview. Business Approvals templates
 is a no-code ready-made template built on top of Power Platform components that
 allows your organization to configure sophisticated approvals such as
@@ -48,14 +55,18 @@ The kit covers some of the typical requirements in any organization such as:
 
 -   Out of office management
 
-## Sign up to the private preview
+## Sign up to the preview
 
-Business Approvals templates is currently under private preview, we look forward for you to sign-up from the [sign up form](https://aka.ms/business-approvals-templates-privatepreview)
+We are pleased to announce a limited public preview of the template. We are actively looking to work closely with customers to learn and improve the product. If you're interested in joining the limited preview, [fill out the Busines Approvals templates preview form](https://aka.ms/business-approvals-templates-preview).
 
 ## Disclaimer
 
 Although the underlying features and components used to build the kit (such as
-Dataverse, admin APIs, and connectors) are fully supported, the kit itself
+Dataverse, admin APIs, and connectors) are fully supported, the template itself
 represents sample implementations of these features. Our customers and community
-can use and customize these features to implement admin and governance
+can use and customize these features to implement business approvals
 capabilities in their organizations.
+
+If you face issues with:
+- **Using the kit**: Report your issue here: https://aka.ms/business-approvals-templates-issues. (Microsoft Support won't help you with issues related to this kit, but they will help with related, underlying platform and feature issues.)
+- **The core features in Microsoft Power Platform**: Use your standard channel to contact Microsoft Support.
