@@ -1,6 +1,6 @@
 ---
-title: Find and fix errors with Flow Checker in Power Automate | Microsoft Docs
-description: Find and fix errors quickly with Flow checker in Power Automate.
+title: Use Power Automate Embed Pay-as-you-go | Microsoft Docs
+description: Learn about how the Power Automate Embed pay-as-you-go feature works.
 services: ''
 suite: flow
 documentationcenter: na
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/05/2019
+ms.date: 10/05/2020
 ms.author: deonhe
 search.app: 
   - Flow
@@ -23,36 +23,24 @@ search.audienceType:
   - flowmaker
 ---
 
-# Find and fix errors with Flow Checker
+# Power Automate Embed Pay-as-you-Go
 
+<!--todo: Rakesh, in the opening sentence, you refer to 'Power Automate ISV Embed PayGo', however, am not able to find this term in our style guide, so I can't use it with the capitalization you used. Also, I notice you use 'Microsoft Cloud Embed program' later in this article. Did you mean to use 'Microsoft Cloud Embed program' in the opening sentence? -->
+With Power Automate ISV embed pay-as-you-go, Independent Software Vendors (ISVs) can integrate Power Automate into their solutions, and make it frictionless for their customers to use premium Power Automate capabilities in their own flows. With this program, ISVs pay for their customers’ consumption of Power Automate through the [pay-as-you-go meters](https://www.microsoft.com/licensing/news/powerautomate_payg_pricing). Since ISVs pay for their customers' use of premium connectors, there's no need for these customers to purchase standalone Power Automate licenses to build and run flows with premium capabilities that the ISV offers.
 
-Flow Checker in Power Automate promotes higher quality flows by ensuring you follow best practices when you design flows. When you run the checker, you get insights into questions like "which areas of my flow's implementation pose a performance or reliability risk?"
+You can learn more about the ISV Cloud Embed program here. <!--todo: deon to decide what to do with this sentence, based on response from PM about using the 'Microsoft Cloud Embed program'-->
 
-For each issue the checker identifies, the checker points to specific occurrences within the flow where you should consider making improvements. And, you learn how to implement these improvements by following detailed guidance.
+With the connector-based approach, ISVs with premium connectors on Power Platform can make their connectors available to any Power Automate user. After the ISV starts their participation in this embed program, users without premium licenses can build premium flows with connectors that the ISV provides. This enables any user to leverage the premium capabilities of Power Automate and build flows to enhance the ISV’s products that they use.
 
-The checker is always active, appearing in the command bar in the designer. The checker shows a red dot when it finds one or more errors, potential errors, or warnings in your flow.
+As customers build and run flows with these premium connectors, Microsoft sends aggregate usage reports (flow runs involving this connector) at the tenant level with ISVs. No personal data or end user data will be shared as part of this program.
 
-![Flow Checker.](media/checker/checker-in-designer.png "Flow Checker")
+>[!NOTE]
+>If a customer already has premium Power Automate licenses, the ISVs will not be billed for that consumption, and no aggregated usage reports are shared with ISVs.
 
+After the ISV’s participation in the program ends, customers get advance notice to acquire a paid Power Automate license to keep their flows running.
 
-## View errors or warnings in the checker
-
-While designing your flow, you can select the **Flow Checker** button to open the checker to view errors and warnings. 
-
-The checker also opens automatically when you save the flow if there are errors or warnings.  Once the checker opens, it shows all errors and warnings in your flow. In each section, the checker calls out the actions where the error or warning occurs. 
-
-## Learn to fix errors and warnings
-
-Expand each section to learn more about how to fix the errors or warnings.
-
-![Checker details.](media/checker/checker-detail.png "Checker details")
-
-## Learn more
-
-[Get started with Power Automate](getting-started.md)
-
-
-
-
+<!-- Rakesh: I am happy to include a list of the partners who are in this program. Have you thought about how this list will be maintained? Is there an automated way that someone can be notified with parnters join or leave this program so that this list can be updated?
+Connectors that are included in the ISV program:
+Docusign -->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
