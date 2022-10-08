@@ -31,7 +31,7 @@ conditional branching, delegation, admin overrides and more – all without the
 need to write a single code – empowering every person in your organization to
 "do more with less" for your organizations approval needs.
 
-![Business Approvals templates screenshot](/media/business-approvals-templates.png)
+![Business Approvals templates screenshot](media/business-approvals-templates.png)
 
 Organizations require approvals for variety of different business processes such
 as expense reporting, work-time management, business travel requests,
