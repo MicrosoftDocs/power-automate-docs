@@ -1,5 +1,5 @@
 ---
-title: Overview of the business approvals templates (Preview) | Microsoft Docs
+title: Overview of the business approvals templates (preview) | Microsoft Docs
 description: Overview of the business approvals templates.
 documentationcenter: na
 author: taiki-yoshida
@@ -10,7 +10,7 @@ ms.author: tayoshi
 ms.reviewer: deonhe
 ---
 
-# Overview of the business approvals templates (Preview)
+# Overview of the business approvals templates (preview)
 
 [This topic is pre-release documentation and is subject to change.]
 
