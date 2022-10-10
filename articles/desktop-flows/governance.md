@@ -166,6 +166,19 @@ IT administrators may set the following registry key to configure the Power Auto
 
 - **1**: Power Automate for desktop will authenticate to the corporate proxy server using the current user's credentials.
 
+## Configure optional diagnostic usage data collection in Power Automate for desktop
+
+You can use the following registry entry to enable or disable the collection of optional diagnostic usage data in Power Automate for desktop.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\LogShipper|AllowOptionalDataCollection|DWORD|
+
+***Value***
+
+- **0**: Power Automate for desktop doesn't collect optional diagnostic usage data.
+- **1**: Power Automate for desktop collects optional diagnostic usage data.
+
 ## Configure Power Automate for desktop notification settings
 
 You can use the following registry entry to configure how Power Automate for desktop displays notifications and monitoring information.
