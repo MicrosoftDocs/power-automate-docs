@@ -40,25 +40,24 @@ SAP has multiple connection parameters, and manually entering the parameters int
 
 ### SAP property guidance
 
-| Property             | Description                                                                                                                                                                                                                                 |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AppServerHost        | The hostname of the SAP application Server.                                                                                                                                                                                                 |
-| AppServerService     | The service name or port number of the specific SAP application server to connect to (Optional if connection type (Logon) is A - Application Server).                                                                                         |
-| Client               | The SAP client ID to connect to the SAP system. The SAP backends' client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999.                                                                                       |
-| LogonGroup           | The logon group for the SAP system, from which the message server selects an application server (Only available if connection type (Logon) is B - Message Server (Group)).                                                             |
-| LogonType            | The type of logon to the SAP system. The allowed values are either Application Server Logon (Type A) or Group Logon (Type B, also known as Message Server).|
-| MessageServerHost    | The hostname of the SAP system's message server (central instance) also known as R3 system name (Mandatory if connection type (Logon) is B - Message Server (Group)).                                                                                 |
+| Property  |Description |
+|-|-|
+| AppServerHost        | The hostname of the SAP application Server. |
+| AppServerService     | The service name or port number of the specific SAP application server to connect to (Optional if connection type (Logon) is A - Application Server). |
+| Client  | The SAP client ID to connect to the SAP system. The SAP backends' client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. |
+| LogonGroup  | The logon group for the SAP system, from which the message server selects an application server (Only available if connection type (Logon) is B - Message Server (Group)). |
+| LogonType   | The type of logon to the SAP system. The allowed values are either Application Server Logon (Type A) or Group Logon (Type B, also known as Message Server).|
+| MessageServerHost  | The hostname of the SAP system's message server (central instance) also known as R3 system name (Mandatory if connection type (Logon) is B - Message Server (Group)).  |
 | MessageServerService | The service name (as defined in etc/services) or the port number under which the message server is listening for load-balancing requests (Mandatory if connection type (Logon) is B - Message Server (Group) and system ID isn't present). |
-| SncCertificate       | The X.509 certificate in Base64 encoded form, without the begin or end certificate tags.                                                                                                                                                        |
-| SncMyName            | The installed SNC solution usually knows its own SNC name. For solutions supporting multiple identities, you may need to specify the identity to be used for this destination/server (optional).                                     |
-| SncLibraryPath       | The name or path of the SNC library to be used. With the on-premises data gateway, the path can be an absolute or relative to the NCo library.                                                                                                   |
-| SncPartnerName       | The backends' SNC name (Required when type of logon is Application Server).                                                                                                                                                                    |
-| SncQop               | The quality of service to be used for SNC communication of this destination/server. The allowed values are Authentication, Integrity, Privacy, Default, and Maximum.                                                                                        |
-| SncSso               | The SNC SSO specifies whether to use SNC identity or credentials provided on RFC level.                                                                                                                                                     |
-| SystemId             | The SAP system's three-letter system ID (Mandatory if connection type (Logon) is B - Message Server (Group) and message server service isn't present).                                                                                     |
-| SystemNumber         | The SAP system's system number. It's a number ranging from 00 to 99 (Mandatory if connection type (Logon) is A - Application Server).                                                                                                      |
-| UseSnc           |
- ||
+| SncCertificate  | The X.509 certificate in Base64 encoded form, without the begin or end certificate tags. |
+| SncMyName  | The installed SNC solution usually knows its own SNC name. For solutions supporting multiple identities, you may need to specify the identity to be used for this destination/server (optional). |
+| SncLibraryPath  | The name or path of the SNC library to be used. With the on-premises data gateway, the path can be an absolute or relative to the NCo library.  |
+| SncPartnerName  | The backends' SNC name (Required when type of logon is Application Server). |
+| SncQop | The quality of service to be used for SNC communication of this destination/server. The allowed values are Authentication, Integrity, Privacy, Default, and Maximum. |
+| SncSso  | The SNC SSO specifies whether to use SNC identity or credentials provided on RFC level.  |
+| SystemId  | The SAP system's three-letter system ID (Mandatory if connection type (Logon) is B - Message Server (Group) and message server service isn't present).  |
+| SystemNumber  | The SAP system's system number. It's a number ranging from 00 to 99 (Mandatory if connection type (Logon) is A - Application Server).   |
+| UseSnc | When selected, the connections will be secured with SNC. The allowed value is Yes.||
 
 ## Use the environment variable in a flow
 

@@ -4,7 +4,7 @@ description: Learn about the requirements to configure SAP integration, and prep
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 09/19/2022
+ms.date: 10/07/2022
 ms.author: ellenwehrle
 search.app: 
   - Flow
@@ -64,12 +64,7 @@ The assembled team of IT system administrators need to review the following prer
 
 - [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server - Provision a separate Windows VM or server with your SAP system connected to it to connect to the on-premises data gateway.
 
-- [On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127) - Download and [set up](/data-integration/gateway/service-gateway-install) the most recent version (9/23/2022) of the on-premises data gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
-
-    The most recent version of the on premises data gateway handles two SAP integration requirements:
-
-  - Backwards compatibility - customers utilizing the prior version of the SAP connector can still run their flows
-  - Enhanced SSO - Kerberos delegation now ensures that SSO is a seamless experience between Power Apps, Power Automate, and SAP.
+- [On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127) - Download and [set up](/data-integration/gateway/service-gateway-install) the most recent version (9/23/2022 or newer) of the on-premises data gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
 
 - [Azure AD single sign-on (SSO) for Gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) - Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO.
 
@@ -81,13 +76,17 @@ SAP integration with Power Platform requires IT system administrators to establi
 
 An on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data that is not in the cloud and Microsoft cloud services.
 
-SAP integration with the Power Platform requires that you [install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
+SAP integration with the Power Platform requires that you install the latest version (9/23/2022 or newer) of the [on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
 While setting up the on-premises data gateway for SAP integration, ensure that you review the following considerations:
 
-- Provision a new Windows VM or server that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended).
+- Provision a new or repurposed Windows VM or server specifically for SAP integration with the Power Platform that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended).
   - If you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same active directory environment as the data sources.
 - [Change the on-premises data gateway service account](/data-integration/gateway/service-gateway-service-account)
+- [Install SAP .NET Connector 3.0 SDK from SAP](https://support.sap.com/en/product/connectors/msnet.html)onto the data gateway
+  - Access to the download requires a valid S-user.
+  - Select the 64-bit version of the connector.
+  - Select _Install assemblies to GAC_ in the Optional setup steps window during installation.
 
 ### Step 2: Configure Azure AD and SAP SSO
 
@@ -159,3 +158,4 @@ Take the following steps to download and then import the solution:
 
 - [Overview of SAP integration with Power Platform (preview)](overview.md)
 - [Understand prebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
+- [SAP ERP connector](/connectors/saperp/#sap-authentication)
