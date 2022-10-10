@@ -51,7 +51,7 @@ Here are the limits for a single flow definition:
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
-| Actions per workflow | 500 | To extend this limit, you can add child flows as needed. |
+| Actions per workflow | 500 | To extend this limit, you can add child flows as needed. Flows with large numbers of actions may face performance issues in the flow editor, even if they are below 500 actions.  In this case, we recommend using child flows to reduce flow size. |
 | Allowed nesting depth for actions | 8 | To extend this limit, you can add child flows as needed. |
 | Switch scope cases limit | 25 | |
 | Variables per workflow | 250 | |
