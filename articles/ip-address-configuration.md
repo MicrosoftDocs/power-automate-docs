@@ -37,7 +37,7 @@ You should also consult the [Limits and Configuration](limits-and-config.md) art
 
 ## Logic Apps
 
-Calls made from a cloud flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Please reference [the Logic apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) for which IP addresses are used by that service.
+Calls made from a cloud flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Refer to [the Logic apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) for which IP addresses are used by that service.
 
 ## Connectors
 
@@ -60,15 +60,17 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.powerapps.com | https | Access to the Power Apps site. |
 | *.azureedge.net | https | Access to the Power Automate CDN. |
 | nps.onyx.azure.net | https | Access to NPS (Net Promoter Score). |
-| webshell.suite.office.com | https | Access to Office for header and search. Please see [the Office 365 urls and ranges](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details. |
+| webshell.suite.office.com | https | Access to Office for header and search. Refer to [the Office 365 urls and ranges](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details. |
 | *.dynamics.com | https | Access to Dataverse tables |
 |go.microsoft.com|https|Access to the Power Automate to check for updates|
 |download.microsoft.com|https|Access to the Power Automate to check for updates|
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
+|s2s.config.skype.com<br>s2s.config.skype.com<br>use.config.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
+|s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
 
 ## Approval email delivery
 
-Please see the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
+Refer to the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
 
 ## Desktop flows services required for runtime
 
@@ -80,8 +82,10 @@ The following table lists endpoint data requirements for connectivity from a use
 | U.S. Government GCC and GCC High endpoints|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud.<br>Needed when connecting through the on-premises data gateway.|
 | 21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
 | All endpoints|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. |
-| Worldwide endpoints| *.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for new machine connectivity. |
+| Worldwide endpoints| \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for new machine connectivity. |
 | U.S. Goverment endpoints| *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for new machine connectivity. |
+| Worldwide endpoints|\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
+| U.S. Government GCC and GCC High endpoints| gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud. |
 |Worldwide telemetry endpoints|server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, U.S. government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 |EMEA telemetry endpoints|emea.events.data.microsoft.com|https|Handles telemetry for EMEA users.|
 |U.S. Government telemetry endpoints|tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
