@@ -1,6 +1,6 @@
 ---
-title: Use Power Automate Embed pay-as-you-go | Microsoft Docs
-description: Learn about how the Power Automate Embed pay-as-you-go feature works.
+title: Use Power Automate embed pay-as-you-go | Microsoft Docs
+description: Learn about how the Power Automate embed pay-as-you-go feature works.
 services: ''
 suite: flow
 documentationcenter: na
