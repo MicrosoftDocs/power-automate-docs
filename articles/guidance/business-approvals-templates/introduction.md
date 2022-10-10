@@ -1,5 +1,5 @@
 ---
-title: Overview of the business approvals templates (Private preview) | Microsoft Docs
+title: Overview of the business approvals templates (Preview) | Microsoft Docs
 description: Overview of the business approvals templates.
 documentationcenter: na
 author: taiki-yoshida
@@ -10,63 +10,31 @@ ms.author: tayoshi
 ms.reviewer: deonhe
 ---
 
-# Overview of the Business Approvals templates (Preview)
+# Overview of the business approvals templates (Preview)
 
 [This topic is pre-release documentation and is subject to change.]
 
-One of the key use cases that we see across every industry and every department
-are approvals. Power Automate allows you to streamline your business by
-digitalizing the approval experience.
+Approvals is a key use case that's present across every industry, organization, and department. You can use Power Automate to streamline your business processes by digitalizing the approvals experience.
 
 > [!IMPORTANT]
+>
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+> - This feature is being gradually rolled out across regions and might not be available in your region.
 
-“Business Approvals templates” – is a template that will accelerate building your approvals
-faster than ever - available as a private preview. Business Approvals templates
-is a no-code ready-made template built on top of Power Platform components that
-allows your organization to configure sophisticated approvals such as
-conditional branching, delegation, admin overrides and more – all without the
-need to write a single code – empowering every person in your organization to
-"do more with less" for your organizations approval needs.
+Business approvals templates provide no-code templates that are built on top of Microsoft Power Platform components. Your organization can use these templates to accelerate the speed at which it creates sophisticated approvals workflows that include conditional branching, delegation, administrative overrides, and more. Since these are no-code templates, almost anyone in your organization can use them to meet your approval needs.
 
-![Business Approvals templates screenshot](media/business-approvals-templates.png)
+![Business approvals templates screenshot](media/business-approvals-templates.png)
 
-Organizations require approvals for variety of different business processes such
-as expense reporting, work-time management, business travel requests,
-procurement orders, sales discounts etc. With Microsoft Power Platform, you can
-meet these approval needs by combining components from Microsoft Power Apps and
-Microsoft Power Automate. However, as your complexity of your approvals
-increases, so does your configuration. In order to quickly set up approvals for
-your business needs, the Business Approvals templates for Power Platform was created
-as a collection of components and tools that are designed to help organizations
-digitalize the process.
+Organizations need approvals for a variety of business processes, including expense reporting, time sheet management, business travel requests, procurement orders, sales discounts, etc. With Power Platform, you can meet these approval needs by combining components from [Power Apps](https://make.powerapps.com) and Power Automate. However, as the complexity of your approvals increases, so does your configuration. The business approvals templates are available with a collection of components and tools that are designed to help organizations automate their approvals processes quickly.
 
-The template covers some of the typical requirements in any organization such as:
+These templates cover some of the typical requirements in most organizations, including the following:
 
--   Configuration of multi-stage approvals
-
--   Delegation
-
--   Approval history
-
--   Progress visibility
-
--   Out of office management
+- The ability to configure multi-stage approvals
+- Delegate others to approve
+- View approvals progress and history
+- Manage out of office for employees
 
 ## Sign up to the preview
 
-We are pleased to announce a limited public preview of the template. We are actively looking to work closely with customers to learn and improve the product. If you're interested in joining the limited preview, [fill out the Busines Approvals templates preview form](https://aka.ms/business-approvals-templates-preview).
-
-## Disclaimer
-
-Although the underlying features and components used to build the template (such as
-Dataverse, admin APIs, and connectors) are fully supported, the template itself
-represents sample implementations of these features. Our customers and community
-can use and customize these features to implement business approvals
-capabilities in their organizations.
-
-If you face issues with:
-- **Using the template**: Report your issue here: https://aka.ms/business-approvals-templates-issues. (Microsoft Support won't help you with issues related to this template, but they will help with related, underlying platform and feature issues.)
-- **The core features in Microsoft Power Platform**: Use your standard channel to contact Microsoft Support.
+We'd like to work closely with customers to learn and improve these templates. If you're interested in joining the preview, start by [completing the business approvals templates preview form](https://aka.ms/business-approvals-templates-preview).
