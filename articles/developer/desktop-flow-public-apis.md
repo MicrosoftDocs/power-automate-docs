@@ -290,11 +290,11 @@ If no callback URL parameter is provided, the flow session status should be poll
   > - The POST request will be retried 3 times with a 1 second interval if your endpoint responds with a Server Error response (code 500 and above) or a "Request Timeout" response (code 408).
 
 Requirements for the callback URL parameter
-- Your server must have the current [TLS and cipher suites](https://docs.microsoft.com/en-us/power-platform/admin/server-cipher-tls-requirements).
+- Your server must have the current [TLS and cipher suites](/power-platform/admin/server-cipher-tls-requirements).
 - Only the HTTPS protocols is allowed.
 - Access to localhost (loopback) is not permitted.
 - IP addresses cannot be used. You must use a named web address that requires DNS name resolution.
-- Your server must allow connections from [Power Platform and Dynamics 365 services IP address values specified under the AzureCloud service tag](https://docs.microsoft.com/en-us/power-platform/admin/online-requirements#ip-addresses-required).
+- Your server must allow connections from [Power Platform and Dynamics 365 services IP address values specified under the AzureCloud service tag](/power-platform/admin/online-requirements#ip-addresses-required).
 
   >[!TIP]
   > As the callback call is not authenticated, some precautions should be taken
