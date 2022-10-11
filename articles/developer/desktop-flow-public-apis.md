@@ -255,6 +255,54 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
 >
 >* Dataverse impersonation is not supported.
 
+### Receive notification on script completion
+
+An optional parameter "callbackUrl" is available in the body of the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
+You can use it if you want to be notified of your script completion.
+A POST request will be sent to the provided URL when the script is complete.
+
+#### Request received by the callback endpoint
+
+```http
+User-Agent: EnterpriseConnectors/1.0
+Content-type: application/json; charset=utf-8
+x-ms-workflow-id: [Workflow ID]
+x-ms-run-id: [Flow session ID]
+
+POST [yourCallbackURL]  
+```
+
+```json
+{
+    "statuscode": 4,
+    "statecode": 0,
+    "startedon": "2022-09-05T08:04:11Z",
+    "completedon": "2022-09-05T08:04:41Z",
+    "flowsessionid": "d9687093-d0c0-ec11-983e-0022480b428a"
+}
+```
+If no callback URL parameter is provided, the flow session status should be polled from Dataverse (refers to [Get the status of a desktop flow run](#get-the-status-of-a-desktop-flow-run)).
+
+
+  >[!NOTE]
+  > - You can still use the status polling as a fallback mechanism even if you provide a callback URL parameter.
+  > - Your callback endpoint operation should be idempotent.
+  > - The POST request will be retried 3 times with a 1 second interval if your endpoint responds with a Server Error response (code 500 and above) or a "Request Timeout" response (code 408).
+
+Requirements for the callback URL parameter
+- Your server must have the current [TLS and cipher suites](https://docs.microsoft.com/en-us/power-platform/admin/server-cipher-tls-requirements).
+- Only the HTTPS protocols is allowed.
+- Access to localhost (loopback) is not permitted.
+- IP addresses cannot be used. You must use a named web address that requires DNS name resolution.
+- Your server must allow connections from [Power Platform and Dynamics 365 services IP address values specified under the AzureCloud service tag](https://docs.microsoft.com/en-us/power-platform/admin/online-requirements#ip-addresses-required).
+
+  >[!TIP]
+  > As the callback call is not authenticated, some precautions should be taken
+  > - Check the flow session Id validity when the callback notification is received. Dataverse is the source of truth.
+  > - Implement a rate limit strategy on your server side.
+  > - Try to limit the callback URL sharing between several organizations.
+
+
 ## Cancel a desktop flow run
 
 Similar to the [Trigger](#trigger-a-desktop-flow-run) functionality, you can also cancel a queued/running desktop flow. To do this, you use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun).
