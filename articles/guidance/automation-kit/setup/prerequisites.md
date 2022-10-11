@@ -78,6 +78,7 @@ The Creator Kit uses a component library and code components. You must enable co
 ![A screenshot that displays the environments](../media/CodeComponentsTurnedOn.png)
 
 1. Sign in to the Power Platform admin center.
+
 1. Select an environment where you want to enable this feature. This is needed in both the [main](/power-automate/guidance/automation-kit/setup/main) and all [satellite](/power-automate/guidance/automation-kit/setup/satellite) environments.
 1. Select **Settings** at the top of the screen.
 1. Select **Features** from below **Product**.
