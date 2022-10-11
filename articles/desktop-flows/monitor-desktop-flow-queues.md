@@ -4,8 +4,7 @@ description: Monitor desktop flow queues
 services: ''
 suite: flow
 documentationcenter: na
-author: mariosleon
-manager: 
+author: georgiostrantzas
 editor: ''
 tags: ''
 
@@ -15,7 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2022
-ms.author: marleon
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

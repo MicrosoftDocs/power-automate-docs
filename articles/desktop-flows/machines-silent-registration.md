@@ -1,13 +1,17 @@
 ---
 title: Silent registration for machines  | Microsoft Docs
 description: Silent registration for machines 
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 08/19/2021
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
