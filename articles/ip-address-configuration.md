@@ -74,21 +74,39 @@ Refer to the [approvals email delivery article](https://go.microsoft.com/fwlink/
 
 ## Desktop flows services required for runtime
 
-The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs.
+The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs. You need to ensure that you authorize Global endpoints and the endpoints corresponding to your cloud.
+
+### Global endpoints
 
 | Endpoint type | Domains | Protocols | Uses |
 | ------------- | ------- |  -------- | ---- |
-| Worldwide endpoints|ocsp.digicert.com<br>ocsp.msocsp.com<br>mscrl.microsoft.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for the public cloud.<br>Needed when connecting through the on-premises data gateway.|
-| U.S. Government GCC and GCC High endpoints|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud.<br>Needed when connecting through the on-premises data gateway.|
-| 21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
+| Worldwide telemetry endpoints|server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, U.S. government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 | All endpoints|msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. |
-| Worldwide endpoints| \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for new machine connectivity. |
+
+
+### Public endpoints
+
+| Endpoint type | Domains | Protocols | Uses |
+| ------------- | ------- |  -------- | ---- |
+| Public endpoints |ocsp.digicert.com<br>ocsp.msocsp.com<br>mscrl.microsoft.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for the public cloud.<br>Needed when connecting through the on-premises data gateway.|
+| Public endpoints | \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for new machine connectivity. |
+| Public endpoints |\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
+| EMEA telemetry endpoints|emea.events.data.microsoft.com|https|Handles telemetry for EMEA users.|
+
+### U.S. Government endpoints
+
+| Endpoint type | Domains | Protocols | Uses |
+| ------------- | ------- |  -------- | ---- |
+| U.S. Government GCC and GCC High endpoints|ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud.<br>Needed when connecting through the on-premises data gateway.|
 | U.S. Goverment endpoints| *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for new machine connectivity. |
-| Worldwide endpoints|\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
 | U.S. Government GCC and GCC High endpoints| gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud. |
-|Worldwide telemetry endpoints|server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, U.S. government, and Chinese clouds. Works as the fallback telemetry endpoint.|
-|EMEA telemetry endpoints|emea.events.data.microsoft.com|https|Handles telemetry for EMEA users.|
-|U.S. Government telemetry endpoints|tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
-|Chinese telemetry endpoints|apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
+| U.S. Government telemetry endpoints|tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
+
+### 21Vinaet endpoints
+
+| Endpoint type | Domains | Protocols | Uses |
+| ------------- | ------- |  -------- | ---- |
+| 21Vianet operated endpoints|crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
+| Chinese telemetry endpoints|apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
