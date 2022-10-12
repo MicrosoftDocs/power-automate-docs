@@ -1,146 +1,166 @@
 - name: Guidance
-  items: 
-  - name: Power Automate guidance documentation
-    href: index.yml
-  - name: Plan a Power Automate project
-    items:
-    - name: Introduction
-      href: planning/introduction.md
-    - name: Various types of process automation
-      href: planning/various-types-process-automation.md
-    - name: Planning phase
-      href: planning/planning-phase.md
-    - name: Designing phase
+  items:
+    - name: Power Automate guidance documentation
+      href: index.yml
+    - name: Plan a Power Automate project
       items:
-      - name: Process design
-        href: planning/process-design.md
-      - name: Architectural design
-        items:
-        - name: Determining which automation method to use
-          href: planning/determine-automation-methods.md
-        - name: Attended and unattended scenarios
-          href: planning/attended-unattended.md
-        - name: Separate flows into smaller automated processes
-          href: planning/separate-flows.md
-        - name: Authentication and security
-          href: planning/authentication-security.md
-        - name: Defining inputs and outputs
-          href: planning/define-input-output.md
-        - name: Transforming and formatting data
-          href: planning/transforming-formatting-data.md
-        - name: Formalizing messages and alerts
-          href: planning/formalizing-messages-alerts.md
-        - name: Reducing risk and planning for error handling
-          href: planning/reducing-risk.md
-        - name: Adding analytical data to Microsoft Dataverse
-          href: planning/adding-analytical-data.md
-        - name: Decision-making flowchart for your design
-          href: planning/decision-making-flow.md
-    - name: Making phase
-      href: planning/making-phase.md
-    - name: Testing phase
-      items: 
-        - name: Testing strategy
-          href: planning/testing-strategy.md
-        - name: Tools and settings to test your automation
-          href: planning/tools-and-settings.md
-    - name: Deploying and refining phase
+        - name: Introduction
+          href: planning/introduction.md
+        - name: Various types of process automation
+          href: planning/various-types-process-automation.md
+        - name: Planning phase
+          href: planning/planning-phase.md
+        - name: Designing phase
+          items:
+            - name: Process design
+              href: planning/process-design.md
+            - name: Architectural design
+              items:
+                - name: Determining which automation method to use
+                  href: planning/determine-automation-methods.md
+                - name: Attended and unattended scenarios
+                  href: planning/attended-unattended.md
+                - name: Separate flows into smaller automated processes
+                  href: planning/separate-flows.md
+                - name: Authentication and security
+                  href: planning/authentication-security.md
+                - name: Defining inputs and outputs
+                  href: planning/define-input-output.md
+                - name: Transforming and formatting data
+                  href: planning/transforming-formatting-data.md
+                - name: Formalizing messages and alerts
+                  href: planning/formalizing-messages-alerts.md
+                - name: Reducing risk and planning for error handling
+                  href: planning/reducing-risk.md
+                - name: Adding analytical data to Microsoft Dataverse
+                  href: planning/adding-analytical-data.md
+                - name: Decision-making flowchart for your design
+                  href: planning/decision-making-flow.md
+        - name: Making phase
+          href: planning/making-phase.md
+        - name: Testing phase
+          items:
+            - name: Testing strategy
+              href: planning/testing-strategy.md
+            - name: Tools and settings to test your automation
+              href: planning/tools-and-settings.md
+        - name: Deploying and refining phase
+          items:
+            - name: Deploying your automation to production
+              href: planning/deploy-to-production.md
+            - name: Assessing the business impact
+              href: planning/analyze-and-assess.md
+            - name: Discovering performance issues
+              href: planning/discover-performance-issues.md
+    - name: Robotic Process Automation (RPA) with SAP
       items:
-      - name: Deploying your automation to production
-        href: planning/deploy-to-production.md
-      - name: Assessing the business impact
-        href: planning/analyze-and-assess.md
-      - name: Discovering performance issues
-        href: planning/discover-performance-issues.md
-  - name: Robotic Process Automation (RPA) with SAP
-    items:
-    - name: Introduction to SAP GUI-based RPA in Power Automate
-      href: rpa-sap-playbook/introduction.md
-    - name: Prerequisites for automating SAP GUI-based workloads
-      href: rpa-sap-playbook/prerequisites.md
-    - name: Core components for Power Automate RPA SAP GUI automation
-      href: rpa-sap-playbook/core-components.md
-    - name: Sample SAP GUI automation for this tutorial
-      href: rpa-sap-playbook/sample-sap-scenario.md
-    - name: Pro-code automation with SAP GUI
+        - name: Introduction to SAP GUI-based RPA in Power Automate
+          href: rpa-sap-playbook/introduction.md
+        - name: Prerequisites for automating SAP GUI-based workloads
+          href: rpa-sap-playbook/prerequisites.md
+        - name: Core components for Power Automate RPA SAP GUI automation
+          href: rpa-sap-playbook/core-components.md
+        - name: Sample SAP GUI automation for this tutorial
+          href: rpa-sap-playbook/sample-sap-scenario.md
+        - name: Pro-code automation with SAP GUI
+          items:
+            - name: Use pro-code RPA with SAP GUI
+              href: rpa-sap-playbook/vbscript-based-sap-gui-automation-overview.md
+            - name: Use SAP GUI automation engine to record VBScript
+              href: rpa-sap-playbook/recording-vbscript-using-sap-gui-automation-engine.md
+            - name: Review the generated code
+              href: rpa-sap-playbook/reviewing-generated-code.md
+            - name: Add variables to your VBScript
+              href: rpa-sap-playbook/adding-variables-to-vbscript.md
+            - name: Create a desktop flow that connects to SAP
+              href: rpa-sap-playbook/creating-sap-desktop-flow-vbscript.md
+            - name: Create the cloud flow
+              href: rpa-sap-playbook/creating-cloud-flow-to-launch-desktop-flow.md
+            - name: Validate data with the SAP ERP connector
+              href: rpa-sap-playbook/data-pre-validation-sap-erp.md
+        - name: Low-code automation with SAP GUI
+          items:
+            - name: Use low-code RPA with SAP GUI
+              href: rpa-sap-playbook/action-based-sap-gui-automation-manually-overview.md
+            - name: Create an SAP desktop flow
+              href: rpa-sap-playbook/creating-sap-desktop-flow-action-based-gui.md
+            - name: Create a subflow for SAP GUI automation
+              href: rpa-sap-playbook/flow-refactoring.md
+            - name: Get ready to debug
+              href: rpa-sap-playbook/getting-ready-to-debug.md
+            - name: Create the cloud flow to update an address
+              href: rpa-sap-playbook/creating-cloud-flow-to-update-address.md
+        - name: No-code automation with SAP GUI
+          items:
+            - name: Use no-code RPA with SAP GUI
+              href: rpa-sap-playbook/action-based-sap-gui-automation-recorder-overview.md
+            - name: Extract data from the SAP GUI
+              href: rpa-sap-playbook/extracting-information-from-sap-gui-ui.md
+            - name: Benefits of VBScript vs. actions for SAP GUI automation
+              href: rpa-sap-playbook/feature-highlights-per-approach.md
+        - name: Conclusion
+          href: rpa-sap-playbook/conclusion.md
+    - name: Application Lifecycle Management for automation projects
+      href: ./planning/application-lifecycle-management.md
+    - name: Automation Kit for Power Platform
       items:
-      - name: Use pro-code RPA with SAP GUI
-        href: rpa-sap-playbook/vbscript-based-sap-gui-automation-overview.md
-      - name: Use SAP GUI automation engine to record VBScript
-        href: rpa-sap-playbook/recording-vbscript-using-sap-gui-automation-engine.md
-      - name: Review the generated code
-        href: rpa-sap-playbook/reviewing-generated-code.md
-      - name: Add variables to your VBScript
-        href: rpa-sap-playbook/adding-variables-to-vbscript.md
-      - name: Create a desktop flow that connects to SAP
-        href: rpa-sap-playbook/creating-sap-desktop-flow-vbscript.md
-      - name: Create the cloud flow
-        href: rpa-sap-playbook/creating-cloud-flow-to-launch-desktop-flow.md
-      - name: Validate data with the SAP ERP connector
-        href: rpa-sap-playbook/data-pre-validation-sap-erp.md
-    - name: Low-code automation with SAP GUI
+        - name: Introduction
+          href: ./automation-kit/overview/introduction.md
+        - name: Automation Center of Excellence Strategy using the automation kit
+          href: ./automation-kit/overview/automation-coe-strategy.md
+        - name: Set up the automation kit
+          items:
+            - name: Prerequisites
+              href: ./automation-kit/setup/prerequisites.md
+            - name: Setup checklist
+              href: ./automation-kit/setup/setup-checklist.md
+            - name: Main environment
+              href: ./automation-kit/setup/main.md
+            - name: Satellite environments
+              href: ./automation-kit/setup/satellite.md
+            - name: Environment variables
+              href: ./automation-kit/setup/environment-variables.md
+            - name: Security
+              href: ./automation-kit/setup/security.md
+            - name: Disable syncing (optional)
+              href: ./automation-kit/setup/optional.md
+            - name: Setup FAQs
+              href: ./automation-kit/setup/faqs.md
+        - name: Configure the automation kit
+          items:
+            - name: Initial configuration
+              href: ./automation-kit/configure-automation-kit.md
+            - name: Exception rules framework
+              href: ./automation-kit/exception-rules-framework.md
+            - name: DLP impact analysis for desktop flows
+              href: ./automation-kit/dlp-impact-analysis.md
+        - name: Use the automation kit
+          href: ./automation-kit/use-automation-kit.md
+        - name: Testing an end-to-end scenario
+          href: ./automation-kit/test-end-to-end.md
+        - name: Limitations
+          href: ./automation-kit/limitations.md
+        - name: Release notes
+          href: ./automation-kit/release-notes.md
+        - name: Feedback and support
+          href: ./automation-kit/feedback-support.md
+    - name: Automation adoption best practices
       items:
-      - name: Use low-code RPA with SAP GUI
-        href: rpa-sap-playbook/action-based-sap-gui-automation-manually-overview.md
-      - name: Create an SAP desktop flow
-        href: rpa-sap-playbook/creating-sap-desktop-flow-action-based-gui.md
-      - name: Create a subflow for SAP GUI automation
-        href: rpa-sap-playbook/flow-refactoring.md
-      - name: Get ready to debug
-        href: rpa-sap-playbook/getting-ready-to-debug.md
-      - name: Create the cloud flow to update an address
-        href: rpa-sap-playbook/creating-cloud-flow-to-update-address.md
-    - name: No-code automation with SAP GUI
-      items:
-      - name: Use no-code RPA with SAP GUI
-        href: rpa-sap-playbook/action-based-sap-gui-automation-recorder-overview.md
-      - name: Extract data from the SAP GUI
-        href: rpa-sap-playbook/extracting-information-from-sap-gui-ui.md
-      - name: Benefits of VBScript vs. actions for SAP GUI automation 
-        href: rpa-sap-playbook/feature-highlights-per-approach.md
-    - name: Conclusion
-      href: rpa-sap-playbook/conclusion.md
-  - name: Application Lifecycle Management for automation projects
-    href: ./planning/application-lifecycle-management.md
-  - name: Automation Kit for Power Platform
-    items:
-    - name: Introduction
-      href: ./automation-kit/overview/introduction.md
-    - name: Automation Center of Excellence Strategy using the automation kit
-      href: ./automation-kit/overview/automation-coe-strategy.md  
-    - name: Set up the automation kit
-      items:
-      - name: Prerequisites
-        href: ./automation-kit/setup/prerequisites.md
-      - name: Setup checklist
-        href: ./automation-kit/setup/setup-checklist.md
-      - name: Main environment
-        href: ./automation-kit/setup/main.md
-      - name: Satellite environments
-        href: ./automation-kit/setup/satellite.md
-      - name: Environment variables
-        href: ./automation-kit/setup/environment-variables.md
-      - name: Security
-        href: ./automation-kit/setup/security.md
-      - name: Disable syncing (optional)
-        href: ./automation-kit/setup/optional.md
-      - name: Setup FAQs
-        href: ./automation-kit/setup/faqs.md    
-    - name: Configure the automation kit
-      items:
-      - name: Initial configuration
-        href: ./automation-kit/configure-automation-kit.md
-      - name: Exception rules framework
-        href: ./automation-kit/exception-rules-framework.md
-      - name: DLP impact analysis for desktop flows
-        href: ./automation-kit/dlp-impact-analysis.md
-    - name: Use the automation kit
-      href: ./automation-kit/use-automation-kit.md
-    - name: Testing an end-to-end scenario
-      href: ./automation-kit/test-end-to-end.md
-    - name: Limitations
-      href: ./automation-kit/limitations.md
-    - name: Release notes
-      href: ./automation-kit/release-notes.md
-    - name: Feedback and support
-      href: ./automation-kit/feedback-support.md
+        - name: Overview
+          href: automation-coe/overview.md
+        - name: Automation adoption strategy
+          href: automation-coe/strategy.md
+        - name: Holistic enterprise automation techniques
+          href: automation-coe/heat.md
+        - name: Automation administration and governance
+          href: automation-coe/automation-admin-gov.md
+        - name: Automation Kit for Power Platform
+          href: /power-automate/guidance/automation-kit/overview/introduction
+        - name: Manage Power Automate for desktop on Windows
+          href: automation-coe/manage-pad-on-windows.md
+        - name: Automation Maturity Model overview
+          href: automation-coe/automation-maturity-model-overview.md
+        - name: Automation Maturity Model details
+          href: automation-coe/automation-maturity-model-details.md
+    - name: Overview of the business approvals templates (preview)
+      href: ./business-approvals-templates/introduction.md

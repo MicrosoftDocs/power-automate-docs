@@ -1,12 +1,11 @@
 ---
-title: Recording in a desktop flow | Microsoft Docs
-description: Recording in a desktop flow
-author: mariosleon
-
+title: Record desktop flows | Microsoft Docs
+description: Record desktop flows
+author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
-ms.author: marleon
+ms.date: 09/27/2022
+ms.author: gtrantzas
 ms.reviewer: 
 search.app: 
   - Flow
@@ -14,9 +13,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Record flows in Power Automate Desktop
+# Record desktop flows
 
-Power Automate for desktop enables you to design flows automatically by replicating the task you wish to automate. 
+Power Automate enables you to design desktop flows automatically by replicating the tasks you wish to automate.
 
 ## Record desktop and web flows
 
@@ -33,34 +32,69 @@ To record a flow that automates desktop or/and web applications:
     The recorder keeps track of mouse and keyboard activity in relation to UI elements, and records each action separately. During each recording session, the recorder can generate both UI and browser automation actions.
 
     > [!NOTE]
-    > When the browser extension isn't able to communicate with Power Automate, the browser window is identified as a desktop application. As a result, the recorder tries to grab UI elements for a desktop application and not a web page.
+    > When you perform a left or right click on a UI element during the recording, the highlighter displays a **Wait for action** message, instructing you to wait for the recorder to record and insert the action.
 
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png)
 
-1. When the recording process is completed, select **Finish** to convert the recorded steps to desktop flow actions. All the UI elements used in the generated UI and web automation actions are added automatically to the UI elements pane.
+    To see the available actions for a specific element, right-click on it to open its context menu. The available options depend on the nature of the selected element.
 
-    > [!NOTE]
-    > The UI elements captured from web applications using the recorder are custom and can't be edited through the Visual editor. You can find more information regarding editing UI elements and creating custom selectors in [Build a custom selector](build-custom-selectors.md).
+    ![Screenshot of recording context menu.](./media/recording-flow/recording-context-menu.png)  
+
+1. When the recording process is completed, select **Done** to convert the recorded steps to desktop flow actions. All the UI elements used in the generated UI and web automation actions are added automatically to the UI elements pane. You can find more information regarding UI elements in [Automate using UI elements](ui-elements.md).
 
     ![Screenshot of the generated actions of the recorded flow.](./media/recording-flow/recorded-flow.png)
 
-To pause the recording process temporarily, select **Pause**. To add a comment to the recorded actions, select **+ Comment**.
+To pause the recording process temporarily, select **Pause**. To add a comment to the recorded actions, select **Add a comment**.
 
 ![Screenshot of the comment button.](./media/recording-flow/comment-button.png)
 
+### Replicate drag and drop steps
+
+The recorder supports steps related to dragging and dropping the mouse pointer. Therefore, the recorder can generate actions like the **Resize window** and **Move window**. However, the **Drag and drop UI element of a window** action isn't currently supported.
+
+### Handle drop-down lists
+
+While automating desktop and web applications using the recorder, you may need to handle drop-down lists.
+
+The Power Automate recorder displays a custom screen every time you select a drop-down list and helps you choose the desired values. This custom screen allows you to choose one or more values depending on whether the drop-down list is multi-select.
+
+During runtime, Power Automate automatically chooses the defined values and selects the **OK** button of the list.
+
+![Screenshot of a custom screen for a drop-down list.](./media/recording-flow/drop-down-list-custom-screen.png)
+
 ### Launch a web browser
 
-To launch a web browser instance while recording web flows, you can use three different approaches based on the automation scenario. 
+To launch a web browser instance while recording web flows, you can use three different approaches based on the automation scenario.
 
-The first method is to select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer. 
+The first method is to select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer.
 
-After selecting the proper browser, the recorder will detect the loaded webpage automatically and configure the launching browsing step accordingly. 
+After you've selected the proper browser, the recorder will detect the loaded web page automatically and configure the launching browsing step accordingly.
 
 ![Screenshot of the Launch new web browser option.](./media/recording-flow/launch-new-web-browser-option.png)
 
 An alternative way to launch a browser is to start recording in an already open web browser. The recorder will automatically detect the loaded page and will create a launching browser action.
 
-The last method to launch a browser is to manually launch it through its shortcut on the desktop, the start menu, the taskbar, or a folder. If you implement this approach, the recorder will generate UI automation actions that click the browser shortcut and launch it. 
+The last method to launch a browser is to manually launch it through its shortcut on the desktop, the start menu, the taskbar, or a folder. If you implement this approach, the recorder will generate UI automation actions that click the browser shortcut and launch it.
+
+### Handle date and color pickers on web pages
+
+Like drop-down lists, the Power Automate recorder displays custom screens to help you handle date and color pickers on web pages.
+
+When you interact with a date picker, the recorder opens a text field where you can insert the desired date in the specified format.
+
+The custom screen appears for the following HTML input types:
+
+- date
+- datetime-local
+- month
+- time
+- week
+
+![Screenshot of the date picker custom screen.](./media/recording-flow/date-picker-custom-screen.png)
+
+Similarly, when you interact with a color picker, the recorder opens a text field where you can populate the desired color hex code.
+
+![Screenshot of the color picker custom screen.](./media/recording-flow/color-picker-custom-screen.png)
 
 ### Add text using Input Method Editors (IMEs)
 
@@ -68,9 +102,9 @@ Input Method Editors (IMEs) are software components that enable users to input t
 
 Power Automate for desktop supports the use of IMEs during the flow recording procedure. To populate a text field using an IME:
 
-1. Right-click on the text field and select **Add text with IME** on the displayed menu.
+1. Right-click on the text field and select **Populate text field** on the displayed menu.
 
-    ![Screenshot of the Add text with IME menu option.](./media/recording-flow/add-text-with-ime-option.png)
+    ![Screenshot of the Populate text field menu option.](./media/recording-flow/add-text-with-ime-option.png)
 
 1. Populate the popup dialog with the desired text using an IME.
 
@@ -96,7 +130,7 @@ To record flows using images:
 
     ![Screenshot of the Image recording button.](./media/recording-flow/image-recording-button.png)
 
-     Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover or select the **preview icon**. 
+     Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover or select the **preview icon**.
 
     ![Screenshot of the preview image button.](./media/recording-flow/preview-image-button.png)
 
@@ -135,22 +169,18 @@ You can edit manually any actions created through the recorder once the recordin
 
 - **Issue**: The recorder may not record all steps from the Windows Start menu or system tray.
 
-- **Workarounds**: None
+    **Workarounds**: None
 
-- **Issue**: Generating drag and drop actions through recording isn't supported.
+- **Issue**: While running a flow created through image-based recording, the click may be sent to the wrong place.
 
-- **Workarounds**: None
+    **Workarounds**: Edit the auto-generated action **Move mouse to image** through the flow designer and decrease the Tolerance parameter in the Advanced settings.
 
-- **Issue**: While running a flow created through image-based recording, the click may be sent to the wrong place. 
+- **Issue**: The **Extract text from image** popup that appears after sending a right-click using the recorder, may hide behind the popup of the application.
 
-- **Workarounds**: Edit the auto-generated action “Move mouse to image” through the flow designer and decrease the Tolerance parameter in the Advanced settings.
+    **Workarounds**: Send the right-click to another place on the screen.
 
-- **Issue**: The “Extract text from image” popup that appears after sending a right-click using the recorder, may hide behind the popup of the application.
+- **Issue**: Any keystrokes sent to a maximized RDP window through an image-based recording aren't recorded.
 
-- **Workarounds**: Send the right-click to another place on the screen.
-
-- **Issue**: Any keystrokes sent to a maximized RDP window through an image-based recording are not being recorded.
-
-- **Workarounds**: Resize the RDP window so that it doesn't cover the full screen.
+    **Workarounds**: Resize the RDP window so that it doesn't cover the full screen.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

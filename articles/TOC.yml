@@ -107,6 +107,8 @@
       href: disable-flow.md
     - name: Change the owner of cloud flow
       href: change-cloud-flow-owner.md
+    - name: Format data by examples (preview)
+      href: format-data-by-examples.md 
   - name: Popular cloud flows scenarios
     items:
     - name: Use flows with approvals
@@ -402,7 +404,7 @@
       href: ./desktop-flows/images.md
     - name: Manage errors
       href: ./desktop-flows/errors.md
-    - name: Record flows in Power Automate
+    - name: Record desktop flows
       href: ./desktop-flows/recording-flow.md
     - name: Use loops
       href: ./desktop-flows/use-loops.md
