@@ -63,7 +63,7 @@ Here are the limits for a single flow definition:
 
 ## My flows limit
 
-Here is the limit for the My flow and Team flows tab:
+Here is the limit for the My flows and Team flows tab:
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
@@ -182,8 +182,8 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 ### Character limits
 
-| Name | Notes |
-|------|-------|
+| Name | Limit | Notes |
+|------|-------|-------|
 | Expression evaluation limit | 131,072 characters | The `@concat()`, `@base64()`, `@string()` expressions can't be longer than this limit. |
 | Request URL character limit | 16,384 characters |
 
