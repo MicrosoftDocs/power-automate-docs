@@ -192,7 +192,7 @@ To call the action, you'll need the following information.
   >[!TIP]
   > Alternatively, you can retrieve the ID manually from the desktop flow details URL in Power Automate. The URL format is: `https://flow.microsoft.com/manage/environments/[Environment ID]/uiflows/[Desktop Flow ID]/details`.
   >
-  > For more information, refer to [Manage desktop flows](/power-automate/desktop-flows/manage).
+  > For more information, see [Manage desktop flows](/power-automate/desktop-flows/manage).
 
 - The `name` of the desktop flow connection (targeting a machine/machine group) to use to run your flow. The name can be retrieved from the URL of the same connection page in Power Automate. The URL format is:  
 `https://flow.microsoft.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`.
@@ -203,7 +203,7 @@ To call the action, you'll need the following information.
   >[!TIP]
   > Alternatively, you can use a connection reference's logical name as the input of the connection instead of the connection name (usage example described below). The connection references are stored in the Dataverse table connectionreference and can be listed programatically in the same way as desktop flows detailled in the [List available desktop flows](#list-available-desktop-flows) section.
   >
-  > For more information, refer to [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference) and [connectionreference table/entity reference](/power-apps/developer/data-platform/reference/entities/connectionreference).
+  > For more information, see [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference) and [connectionreference table/entity reference](/power-apps/developer/data-platform/reference/entities/connectionreference).
   
 ### Request to trigger a desktop flow
 
