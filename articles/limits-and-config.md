@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/07/2022
+ms.date: 10/10/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -51,7 +51,7 @@ Here are the limits for a single flow definition:
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
-| Actions per workflow | 500 | To extend this limit, you can add child flows as needed. |
+| Actions per workflow | 500 | You can add child flows to extend this limit, as needed. Flows with a large number of actions may encounter performance issues while you edit them, even if they have less than 500 actions. If you encounter performance issues while you edit your flow, consider using child flows to reduce the number of actions in a single flow. |
 | Allowed nesting depth for actions | 8 | To extend this limit, you can add child flows as needed. |
 | Switch scope cases limit | 25 | |
 | Variables per workflow | 250 | |
@@ -63,7 +63,7 @@ Here are the limits for a single flow definition:
 
 ## My flows limit
 
-Here is the limit for the My flow and Team flows tab:
+Here is the limit for the My flows and Team flows tab:
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
@@ -182,8 +182,8 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 ### Character limits
 
-| Name | Notes |
-|------|-------|
+| Name | Limit | Notes |
+|------|-------|-------|
 | Expression evaluation limit | 131,072 characters | The `@concat()`, `@base64()`, `@string()` expressions can't be longer than this limit. |
 | Request URL character limit | 16,384 characters |
 
