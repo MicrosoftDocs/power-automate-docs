@@ -53,7 +53,7 @@ The Power Automate flows automate the business rules behind the scenes while the
 
 > [!NOTE]
 >
-> Testing focuses on the Order to Cash and Procure to Pay business processes during preview.
+> Preview focuses on testing out the Order to Cash and Procure to Pay business processes.
 
 ## Advanced SAP system connections support
 
@@ -79,22 +79,24 @@ The on-premises data gateway acts as a bridge that provides secure data transfer
 - Backwards compatibility - customers utilizing the prior version of the SAP connector can still run their flows
 - Enhanced SSO - Kerberos delegation now ensures that SSO is a seamless experience between Power Apps, Power Automate, and SAP.
 
-## New Logic Apps Functions
+Learn more at [On-premises data gateway documentation](/data-integration/gateway/)
+
+## New Logic Apps functions
 
 Power Automate's expression language is based on Logic Apps functions. New functions have been added to enable more efficient processing of SAP data.
 
-| Logic App function | Description |
+| Logic Apps function | Description |
 |-|-|
-| [isInt](/azure/logic-apps/workflow-definition-language-functions-reference#isint) | Returns True if a data attribute in an integer. This allows Flow makers to determine if leading zeroes should be added to SAP data before sending to SAP APIs, or to remove from SAP data after retrieving records from SAP.   |
+| [isInt](/azure/logic-apps/workflow-definition-language-functions-reference#isint) | Returns true if a data attribute in an integer. This allows flow makers to determine if leading zeroes should be added to SAP data before sending to SAP APIs, or to remove from SAP data after retrieving records from SAP.   |
 | [chunk](/azure/logic-apps/workflow-definition-language-functions-reference#chunk)   | Splits text areas, long string, or file contents into an array of fixed length strings for SAP's APIs.     |
 | [sort](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)   | Sorts an array of objects by a key found in each object.  |
 | [reverse](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)  | Reverse sorts an array of objects by a key found in each object. |
 | [dateDifference](/azure/logic-apps/workflow-definition-language-functions-reference#datedifference)  | Determines the difference between two dates and returns in the time unit specified in the function. This is especially useful for customers who use time-based billing. |
 | [isFloat](/azure/logic-apps/workflow-definition-language-functions-reference#isfloat)  | There is a unique edge case where some SAP APIs return currency strings in a user's localized format, which causes problems for mathematical operations. This function combined with float() removes the formatting so that math can do math. |
-| [parseDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#parsedatetime)   | Converts the string representation of a timestamp to its a standard ISO 8601 format. This output of this function can be used reliably to do additional operations on the timestamp like the functions defined in Date and time functions.    |
-| [formatDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)  | A new optional parameter locale has been added to the existing formatDateTime. If not specified, the default locale is used.    |
-| [nthIndexOf](/azure/logic-apps/workflow-definition-language-functions-reference#nthindexof)  | Allows finding the nth occurrence of a substring.    |
-| [slice](/azure/logic-apps/workflow-definition-language-functions-reference#slice)  | Provides a new way to extract a substring. The existing function substring already allows such capability by providing start index and length. ||
+| [parseDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#parsedatetime)   | Converts the string representation of a timestamp to its a standard ISO 8601 format. This output of this function can be used reliably to do additional operations on the timestamp like the functions defined in date and time functions.    |
+| [formatDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)  | A new optional parameter locale has been added to the existing **formatDateTime**. If not specified, the default locale is used.    |
+| [nthIndexOf](/azure/logic-apps/workflow-definition-language-functions-reference#nthindexof)  | Allows finding the **nth** occurrence of a substring.    |
+| [slice](/azure/logic-apps/workflow-definition-language-functions-reference#slice)  | Provides a new way to extract a substring. The existing function substring already allows such capability by providing start index and length. |
 
 Learn more at [Azure Logic Apps documentation](/azure/logic-apps/)
 

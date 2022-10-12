@@ -34,7 +34,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
     - **Name**. This name is automatically generated as you enter the display name, but you can change it.
     - **Data Type**. Select **Text** (_don't_ select JSON). Once selected, the value fields will appear.
         - **Default Value**. Offers a environment variable template.
-        -  **Current Value**. Update the JSON blob with SAP system's SAP properties. Not all properties are necessary—your SAP environment will determine which ones are applicable. Refer to the SAP property guidance.
+        - **Current Value**. Update the JSON blob with SAP system's SAP properties. Not all properties are necessary—your SAP environment will determine which ones are applicable. Refer to the SAP property guidance.
 
  :::image type="content" source="media/env-refs/env-var-panel.png" alt-text="The environment panel in Power Apps.":::
 
@@ -57,7 +57,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
 | SncSso  | The SNC SSO specifies whether to use SNC identity or credentials provided on RFC level.  |
 | SystemId  | The SAP system's three-letter system ID (Mandatory if connection type (Logon) is B - Message Server (Group) and message server service isn't present).  |
 | SystemNumber  | The SAP system's system number. It's a number ranging from 00 to 99 (Mandatory if connection type (Logon) is A - Application Server).   |
-| UseSnc | When selected, the connections will be secured with SNC. The allowed value is Yes.||
+| UseSnc | When selected, the connections will be secured with SNC. The allowed value is Yes.|
 
 ## Use the environment variable in a flow
 
