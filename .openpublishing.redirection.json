@@ -1,8 +1,8 @@
 {
   "redirections": [
     {
-      "source_path": "articles/mobile/overview-mobile.md",
-      "redirect_url": "../android",
+      "source_path": "articles/android.md",
+      "redirect_url": "mobile/overview-mobile",
       "redirect_document_id": "false"
     },
     {
