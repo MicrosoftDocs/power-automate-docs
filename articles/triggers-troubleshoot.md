@@ -191,7 +191,7 @@ Follow these steps to check the trigger wake up frequency:
 1. Go to your flow trigger, and then select the … (ellipsis).
 1. Select **Peek code**.
 
-   ![A screenshot of the peek code setting.](./media/triggers-introduction/peek.png)
+   ![A screenshot of the peek code setting.](./media/triggers-introduction/peek-code.png)
 
 1. Find the interval frequency.
 

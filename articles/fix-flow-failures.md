@@ -84,9 +84,9 @@ If your flow fails, you can also troubleshoot it directly in Power Automate.  He
    Details about the flow appear, and at least one step shows a red exclamation icon.
 1. Open that failed step, and then review the error message.
 
-   On the right pane, you can see the **details** of the error and **How to fix** the error 
+   On the right pane, you can see the **details** of the error and **How to fix** the error.
 
-   ![Error message.](./media/fix-flow-failures/identify-error.png)
+   ![Error message for a failed flow run.](./media/fix-flow-failures/identify-error.png)
 
 
 ## Authentication failures
@@ -97,7 +97,7 @@ In many cases, flows fail because of an authentication error. If you have this t
 1. Next to the connection, click or tap the **Fix connection** link in the message about the connection not being authenticated.
 1. Verify your credentials by following the instructions that appear, return to your flow-run failure, and then click or tap **Resubmit**.
 
-   ![Error message.](./media/fix-flow-failures/resubmit.png)
+   ![A screenshot that displays the resubmit button.](./media/fix-flow-failures/resubmit.png)
    
  The flow should now run as expected.
 
@@ -118,7 +118,7 @@ When you need help, you can use our **Self Help** options, or you can **Ask for 
 1. Go to the [support site](https://flow.microsoft.com/support/).
 1. Go to the **Self Help** category and select one of the self-help options.
 
-    ![Ask for help section. Contact support.](media/fix-flow-failures/self-help-section.png)
+    ![A screenshot that displays the self-help option.](media/fix-flow-failures/self-help-section.png)
 
 ### Ask for help from others
 
