@@ -172,7 +172,7 @@ Follow these steps to determine the type of trigger that your flow uses.
 
 1. Find the recurrence section with an interval frequency element. If this section is available, the trigger is a polling trigger.
 
-   ![A screenshot of the recurrence section.](./media/triggers-introduction/reference.png)
+   ![A screenshot of the recurrence section.](./media/triggers-introduction/frequency.png)
 
 ## My recurrence trigger runs ahead of schedule
 
