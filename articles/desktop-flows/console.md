@@ -25,7 +25,7 @@ The console is the central interface of Power Automate for desktop.
 
 The main area of the console contains three tabs that display different kind of desktop flows: your flows, [shared flows](manage.md#share-desktop-flows), and [built-in examples](create-flow.md#start-creating-desktop-flows-using-examples).
 
-On the top of the window, you can see the current user, while on the command bar, you can see all the available bulk actions, a dropdown list to switch environments, the **Settings** and **Help** buttons, and a search bar.
+On the top of the window, you can see the current user, while on the command bar, you can see all the available actions, a dropdown list to switch environments, the **Settings** and **Help** buttons, and a search bar.
 
 ![Screenshot of the Power Automate for desktop console.](media/console/pad-console.png)
 
