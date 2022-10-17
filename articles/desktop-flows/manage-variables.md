@@ -157,12 +157,16 @@ You can use, manipulate and process sensitive variables in every action without 
 
 The flow designer handles sensitivity as a mask that you can set on and off. Thus, you can unmask sensitive variables to see their values and mask them again to hide their values.
 
+> [!IMPORTANT]
+> Sensitive variables aren't meant to provide protection over hardcoded data. You shouldn't use hardcode critical data, like passwords and PINs, in the properties of actions, as they are visible in the modal and the flow definition in Dataverse.
+
 > [!NOTE]
 >
 > - The value of a sensitive variable is visible when you send it outside desktop flows or displayed through the **Display message**  action.
 > - Sensitivity isn't inheritable in variables. If you add or assign a sensitive variable to another variable, the resulting variable won't be sensitive by default.
 > - Marking a variable as sensitive hides its values from the summary of the **Set variable** action.
 > - The input details of the **Set variable** action aren't visible in the desktop flow logs when the contained variables have been marked as sensitive.
+> - Masking sensitive variables during debugging provides only a basic form of protection to developers from third parties looking at their screens.
 
 To mark a variable as sensitive, right-click on it in the variables pane and select **Mark as sensitive**. To stop a variable from being sensitive, right-click on it and select **Mark as not sensitive**.
 
@@ -178,7 +182,7 @@ When you create or edit an input or output variable, you can select **Mark as se
 
 ![Screenshot of the dialog to add a new input variable.](media\sensitive-variables\create-sensitive-input-variable.png)
 
-The default value of an input variable is visible in the creating or editing dialog when sensitivity is enabled. This value exists only for testing and debugging purposes, as you have to initialize each input in production runs through the portal or the console.
+The default value of an input variable is visible in the creating or editing dialog when sensitivity is enabled. This value exists only for testing and debugging purposes, as you have to initialize each input in production runs through the portal or the console. The default values aren't protected in the action modals and the flow definition in Dataverse.
 
 On the other hand, the default value isn't visible in the variables pane and the **Flow input** dialog, which appears when you run a desktop flow with input variables through the console.
 
