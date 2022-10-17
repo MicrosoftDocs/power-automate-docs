@@ -118,8 +118,8 @@ You can [view the real-time execution order](monitor-desktop-flow-queues.md#view
 Multiple users can be signed in simultaneously on Windows Server 2016, Windows Server 2019, and Windows Server 2022. Power Automate uses this OS capability to simultaneously run multiple desktop flows on such devices. With this feature, your organization can save on its infrastructure costs.
 
 Perform the following steps to benefit from multiple desktop flows on a single device:
-1. Set up a Windows Server 2016, 2019 or 2022 device with the on-premises gateway and the latest version of desktop flows installed.
-1. Use two or more user accounts to create desktop flows connections targeting the gateway on this device. 
+1. Set up a Windows Server 2016, 2019 or 2022 device with the latest version of desktop flows installed.
+1. Use two or more user accounts to create desktop flows connections targeting this device. 
 
 Power Automate automatically scales the number of concurrent desktop flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the remaining runs *wait* as [described here](#run-multiple-desktop-flows-on-the-same-device-sequentially).
 
