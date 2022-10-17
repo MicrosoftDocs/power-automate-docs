@@ -212,7 +212,7 @@ You can use the following registry entry to configure the behavior of the confir
 
 ## Configure Power Automate for desktop to invoke flows via URL or desktop shortcut
 
-You can use the following registry entry to enable or disable invoking flows via URL or desktop shortcut.
+You can use the following registry entry to enforce the confirmation dialog or disable invoking flows via URL or desktop shortcut.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
