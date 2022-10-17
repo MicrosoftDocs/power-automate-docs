@@ -59,8 +59,8 @@ To silently register your machine and join a group, we recommend you to use a se
 >Regarding their security roles, the user need to grant at least Environment Maker (or Desktop Flows Machine Owner) to be able to register a machine and join a group.
 
 1. Get the following information that will be used in the Machine Registration app:
-    a. Applicationid
-    b. Directory (tenant) Id
+    a. Application ID
+    b. Directory (tenant) ID
     c. Client credentials (certificate or thumbprint)
 
     ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.png)
@@ -69,7 +69,7 @@ To silently register your machine and join a group, we recommend you to use a se
 
 1. Open the **Start** menu.
 1. Search for "command prompt" (or "PowerShell"), and then run it.
-1. Change the directory to the Power Automate installation folder (by default: C:\Program Files (x86)\Power Automate).
+1. Change the directory to the Power Automate installation folder (by default: C:\Program Files (x86)\Power Automate Desktop).
 
     ```CMD
     cd C:\Program Files (x86)\Power Automate Desktop
@@ -90,7 +90,7 @@ Connection arguments (for service principal account):
 
    1. Applicationid: The application to use.
 
-   1. Clientsecret: The secret of the applicationid (you can also use the certificateThumbprint). This input isn’t expected to be specified as an input to the command line. See “Secure input” section to see options you can choose to provide it.
+   1. Clientsecret: The secret of the applicationid (you can also use the certificateThumbprint). You shouldn't use this input as an input to the command line. See “Secure input” section to see options you can choose to provide it.
 
    1. Tenantid: The tenant identifier to use.  
 
@@ -118,7 +118,7 @@ To join a group silently with the service principal account, use the join group 
 
 1. Environmentid: The environment where the machine group is registered. You can retrieve it in the URL of Power Automate. 
 1. Groupid: the id of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
-1. Grouppassword: the password of your machine. If this is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. This input isn’t expected to be specified as an input of the command line. See “Secure input” section to see options you can choose to provide it
+1. Grouppassword: the password of your machine. If this machine is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. You shouldn't use this input as an input to the command line. See “Secure input” section to see options you can choose to provide it
 
 ![groupresults.](./media/machines-silent-registration/environment-id.png)
 
@@ -128,24 +128,24 @@ To join a group silently with the service principal account, use the join group 
 
 ## Secure input
 
-In the machine registration tool, you will have to provide secure inputs for registration and joining group.
+In the machine registration tool, you'll have to provide secure inputs for registration and joining group.
 You have two options to provide a secure input:
 
-1. type when asked: you will be prompted to enter this data when needed. This is an interactive action that is not adapted if you need to do mass deployment
+1. Type when asked: you'll be prompted to enter this data when needed. This option is an interactive action that isn't adapted if you need to do mass deployment.
 
-2. redirect string/file to the silent registration application
+2. Redirect string/file to the silent registration application:
   
-    a. redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
+    a. Redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
   
     ```PowerShell
         echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
     ```
   
-    b. redirect file:
+    b. Redirect file:
   
-      i. create a txt file that contains your password and save it in Power Automate folder (you will need to have admin privileges
+      i. Create a txt file that contains your password and save it in Power Automate folder (you'll need to have admin privileges.
 
-      ii. use the following:
+      ii. Use the following command:
   
       1. For cmd prompt:
   
@@ -153,7 +153,7 @@ You have two options to provide a secure input:
            grouppassword < pwd.txt
           ```
 
-      2. For Powershell:
+      2. For PowerShell:
 
           ```CMD
           Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
