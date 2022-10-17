@@ -23,7 +23,7 @@ search.audienceType:
 
 The variables pane shows the input and output variables passed to and from Power Automate desktop flows. It also displays all the variables used in the current desktop flow under **Flow variables**.
 
-Through this pane, you can search for variables, rename them, find their usages, pin them, and filter them by type. Filtering allows you to select whether to apply it to the pinned variables or not.
+Through this pane, you can search for variables, rename them, find their usages, marking them as sensitive, pin them, and filter them by type. Filtering allows you to select whether to apply it to the pinned variables or not.
 
 ![Screenshot of the variables pane.](media\variables-pane\variables-pane.png)
 
@@ -51,8 +51,6 @@ Select the arrow icon on the top of the dialog to return to the parent element.
 ## Renaming a desktop variable
 
 To rename a desktop flow variable, right-click on its name and select **Rename**. Power Automate automatically updates the name of the variable in all its occurrences.
-
-Although you can update variable names through action properties, the changes apply only to these specific actions, not globally.
 
 > [!IMPORTANT]
 > If you try to rename a variable to an existing name, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors, so ensure that the merging is desirable.
