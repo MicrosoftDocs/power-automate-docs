@@ -154,7 +154,7 @@ What is we care about total time spend not by activities but by users?
 
 This example sounds similar to previous one, doesn't it? We again take into consideration distribution of events among one of its attributes. This time is it user attribute. We have users 'Peter', 'Michal' and 'Denis'. Per each set of events, we calculate result separately - sum of event durations.
 
-**Result: Peter = 0:50h; Michal = 0:40h; Denis = 3:00h **
+**Result: Peter = 0:50h; Michal = 0:40h; Denis = 3:00h**
 
 :::image type="content" alt-text="media/image-10-1.png" source="media/image-10-1.png":::
 
