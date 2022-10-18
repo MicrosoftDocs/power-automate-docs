@@ -1,6 +1,6 @@
 ---
 title: Learn how to automate repetitive tasks with button flows that take user input | Microsoft Docs
-description: Power Automate makes it easy automate repetitive tasks. Your flows can even take user input when running a repetitive task.
+description: Power Automate makes it easy to automate repetitive tasks. Your flows can even take user input when running a repetitive task.
 services: ''
 suite: flow
 documentationcenter: na
@@ -102,16 +102,16 @@ In this walk-through, you'll use the mobile app for Power Automate to run the bu
 1. In the mobile app for Power Automate, tap the **Buttons** tab, and then tap the **Create bug report with steps** button.
    
     ![Tap to run the button flow.](./media/button-flow-with-user-input-tokens/runmt1.png)  
-2. Enter the title for the bug you are reporting, and then tap **Next**. For example:
+2. Enter the title for the bug you're reporting, and then tap **Next**. For example:
    
     ![Enter the title of the bug.](./media/button-flow-with-user-input-tokens/runmt2.png)  
-3. Enter the description of the bug you are reporting, and then tap **Next**. For example:
+3. Enter the description of the bug you're reporting, and then tap **Next**. For example:
    
     ![Enter the description of the bug.](./media/button-flow-with-user-input-tokens/runmt3.png)  
-4. Enter the steps to reproduce the bug you are reporting, and then tap **Next**. For example:
+4. Enter the steps to reproduce the bug you're reporting, and then tap **Next**. For example:
    
     ![Enter the steps to reproduce the bug.](./media/button-flow-with-user-input-tokens/runmt3-1.png)  
-5. Enter the severity of the bug you are reporting, and then tap **Done**:  
+5. Enter the severity of the bug you're reporting, and then tap **Done**:  
     ![Enter the severity of the bug.](./media/button-flow-with-user-input-tokens/runmt3-2.png)  
    
     The flow runs.

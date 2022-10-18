@@ -48,25 +48,24 @@ The experience in this tutorial is the similar for all smartphones.
 
 1. Tap the small icon next to the button you want to share.
    
-    ![share button.](./media/share-buttons/share-button-flows-buttons-tab.png)
+    ![Screenshot of the share button.](./media/share-buttons/share-button-flows-buttons-tab.png)
 2. Tap **Invite others** from the **Button users** page.
    
-    ![share button.](./media/share-buttons/share-button-flows-button-users.png)
+    ![Screenshot of the Invite others button.](./media/share-buttons/share-button-flows-button-users.png)
 3. Search for, and then select the group or person with whom you'd like to share the button.
    
-    ![share button.](./media/share-buttons/share-button-flows-invite-others-select.png)
+    ![Screenshot of the Invite others screen.](./media/share-buttons/share-button-flows-invite-others-select.png)
 4. Tap **SEND** on the **Invite others** page.
    
-    ![share button.](./media/share-buttons/share-button-flows-invite-others-send.png)
+    ![Screenshot of the Send button.](./media/share-buttons/share-button-flows-invite-others-send.png)
 5. Tap **DONE** on the page that indicates the button sharing operation completed successfully.
    
-    ![share button.](./media/share-buttons/share-button-flows-invite-others-done.png)
+    ![Screenshot that shows your operation has completed successfully.](./media/share-buttons/share-button-flows-invite-others-done.png)
 
 ## Require users to use their own connections
 > [!NOTE]
+>
 > When you share a button, you can allow persons with whom you've shared the button to use all connections that your button uses. You can also require them to use their own connections. If you allow others to use your connections, they can't access the credentials in your connection, or reuse them in any other flow.
-> 
-> 
 
 Follow these steps to require persons with whom you've shared your buttons to use their own connections.
 
@@ -76,11 +75,11 @@ Follow these steps to require persons with whom you've shared your buttons to us
    
     Your choice indicates whose connections must be used in the shared button.
    
-    ![share button.](./media/share-buttons/share-button-select-connection-provided-by-user.png)
+    ![Screenshot of the Provided by user selection.](./media/share-buttons/share-button-select-connection-provided-by-user.png)
    
-    You can view or change your choice any time. To do so, select the **Flows** tab > the flow you shared > **Users and connections** > the **CONNECTIONS** tab > **EDIT** on the button you want to manage.
+    You can view or change your choice at any time. To do so, select the **Flows** tab > the flow you shared > **Users and connections** > the **CONNECTIONS** tab > **EDIT** on the button you want to manage.
    
-    ![share button.](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
+    ![Screenshot of the Connections button.](./media/share-buttons/share-button-flows-conn-provided-by-user.png)
 
 ## View the list of button users
 You can view all groups or users with whom a button is shared by following these steps from the **Buttons** tab:
@@ -88,7 +87,7 @@ You can view all groups or users with whom a button is shared by following these
 1. Tap the small icon next to the button in which you're interested.
 2. On the **Button users** page, view all groups or users with whom the button is shared.
    
-    ![view button users.](./media/share-buttons/share-button-flows-button-users-list.png)
+    ![View button users.](./media/share-buttons/share-button-flows-button-users-list.png)
 
 ## Stop sharing a button
 You can stop sharing a button by following these steps from the **Buttons** tab:
@@ -96,13 +95,13 @@ You can stop sharing a button by following these steps from the **Buttons** tab:
 1. Tap the small icon next to the button you no longer want to share.
 2. On the **Button users** page, tap the user or group with whom you want to stop sharing the button.
    
-    ![stop sharing button.](./media/share-buttons/share-button-flows-remove-user-list.png)
+    ![Stop sharing button.](./media/share-buttons/share-button-flows-remove-user-list.png)
 3. Tap **Remove user** when the user's page is displayed.
    
-    ![stop sharing button.](./media/share-buttons/share-button-flows-remove-user.png)
+    ![Remove user button.](./media/share-buttons/share-button-flows-remove-user.png)
 4. Wait for the remove operation to complete. Notice the **Button users** list refreshes, and the user or group you removed is no longer listed.
    
-    ![stop sharing button.](./media/share-buttons/share-button-flows-remove-user-result.png)
+    ![Screenshot of the 'button is not shared with anyone' message.](./media/share-buttons/share-button-flows-remove-user-result.png)
 
 ## Monitor the run history
 All run history, including the runs initiated by a person with whom a button is shared, appear only on the **Activity** tab of the button creator's Power Automate mobile app.
@@ -112,12 +111,12 @@ Before you can run a button that someone has shared with you, you must add it to
 
 1. Tap **GET MORE** (or the **New buttons are available** banner if it appears) on the **Buttons** tab.
    
-    ![new button shared with me.](./media/share-buttons/share-button-flows-banner.png)
+    ![Screenshot of Get more button.](./media/share-buttons/share-button-flows-banner.png)
 2. Tap the button you want to use.
    
     The tapped button is immediately added to the **Buttons** tab of the Power Automate app. You can then use the button from the **Buttons** tab, just like any other button that's listed there.
    
-    ![new button shared with me.](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
+    ![Screenshot of Add buttons screen.](./media/share-buttons/share-button-flows-buttons-shared-with-me.png)
 
 ## Re-share a button
 You can share a link to a button that's been shared with you.
@@ -140,9 +139,5 @@ That's it. The button no longer appears on the **Buttons** tab of the Power Auto
 
 > [!NOTE]
 > After you remove a shared button, you can add it back by selecting **GET MORE** from the **Buttons** tab.
-> 
-> 
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

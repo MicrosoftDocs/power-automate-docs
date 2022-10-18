@@ -32,8 +32,7 @@ This article provides an overview of the Microsoft Power Automate mobile app, in
 > - Power Automate mobile app for Android (generally available)
 > - Power Automate mobile app for iOS (preview)
 >
-> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](introduction-to-button-flows.md).
-
+> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](../introduction-to-button-flows.md).
 
 Experience the familiar look and feel of Power Automate on the go with the Power Automate mobile app, where you can:
 
@@ -47,7 +46,7 @@ Experience the familiar look and feel of Power Automate on the go with the Power
 
 ## Install the Power Automate mobile app
 
-If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.md). Then scan one of the QR codes below with your mobile device. As an alternative, you can use the Google Play Store link or the to install the Power Automate mobile app.
+If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.md). Then scan one of the QR codes below with your mobile device. As an alternative, you can use the **Google Play** link or the **App store** link to install the Power Automate mobile app.
 
 | Android | iOS  |
 | :---:   | :---:  |

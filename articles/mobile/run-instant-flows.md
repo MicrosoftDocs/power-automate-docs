@@ -32,7 +32,7 @@ search.audienceType:
 > - Power Automate mobile app for Android (generally available)
 > - Power Automate mobile app for iOS (preview)
 >
-> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](introduction-to-button-flows.md).
+> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](../introduction-to-button-flows.md).
 
 1. In the Power Automate mobile app, select **Instant flows**, and then select the flow you want to run.
 

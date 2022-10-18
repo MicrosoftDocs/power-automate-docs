@@ -68,37 +68,37 @@ Let's get started:
 
 1. Launch Power Automate and select **Browse**.
  
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/1.png)  
+   ![Screenshot of browse screen.](./media/introduction-to-button-trigger-tokens/1.png)  
 
 1. Select the **Send a 'Working from home today' email to your manager** service under the **Button** category.
  
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/2.png)  
+   ![Screenshot of the button Heading.](./media/introduction-to-button-trigger-tokens/2.png)  
 1. Select **USE THIS TEMPLATE**.
 
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/3.png)  
+   ![Screenshot of the template.](./media/introduction-to-button-trigger-tokens/3.png)  
 
 1. Select **Edit** on the **Send an email** card.  
 
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/3-5.png)  
+   ![Screenshot of the Edit button.](./media/introduction-to-button-trigger-tokens/3-5.png)  
 
 1. Tap the **Subject** text box and enter **today -** into the text box after the **WFH** text. Notice that when you tapped on the text box, a list of parameters/tokens also opened. We'll use one of these tokens in the next step to add the date to the subject of the email.  
 
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/4.png)  
+   ![Screenshot of the Subject field.](./media/introduction-to-button-trigger-tokens/4.png)  
 
 1. With the cursor still in the subject text box, scroll to the **manual** list of parameters and tap **Date**. Notice the date parameter is now in the **Subject** text box.  
 
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/6.png)  
+   ![Screenshot of the Date parameter.](./media/introduction-to-button-trigger-tokens/6.png)  
 
 1. Scroll to the **Body** text box and tap after the default message so that additional tokens can be included there.  
 
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/7.png)  
+   ![Screenshot of the Body field.](./media/introduction-to-button-trigger-tokens/7.png)  
 
 1. Tap the **Full address** parameter, then tap **Create**.
 
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/8.png)  
+   ![Screenshot of the Full address parameter.](./media/introduction-to-button-trigger-tokens/8.png)  
 
 1. Tap **Done**. Your button flow is now created.  
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/9.png)  
+   ![Screenshot confirming your button flow is created.](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## Run the button flow
 
@@ -106,15 +106,15 @@ Let's get started:
 
 1. Tap the **Buttons** category at the bottom of the screen. You will see a list of the buttons that you have permissions to use. Tap the button that represents the button flow you just created.
 
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/10.png)  
+   ![Screenshot of the list of buttons.](./media/introduction-to-button-trigger-tokens/10.png)  
 
 2. Tap **ALLOW** to indicate that it's OK for the button flow to access your device's location information.
 
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/11.png)  
+   ![Screenshot of Allow flow question.](./media/introduction-to-button-trigger-tokens/11.png)  
 
 3. Within a few moments, notice that the email was sent to your boss.  
 
-   ![button trigger token.](./media/introduction-to-button-trigger-tokens/12.png)  
+   ![Screenshot that your email was sent.](./media/introduction-to-button-trigger-tokens/12.png)  
 
 Congratulations, you've just created a button flow that uses both the date and full address trigger tokens. 
 

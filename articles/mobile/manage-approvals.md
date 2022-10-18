@@ -32,7 +32,7 @@ Manage your approval requests on your mobile device when you're away from your d
 > - Power Automate mobile app for Android (generally available)
 > - Power Automate mobile app for iOS (preview)
 >
-> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](introduction-to-button-flows.md).
+> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](../introduction-to-button-flows.md).
 
 You can quickly approve or reject approval requests in the Power Automate mobile app, right from the **Approvals** screen.
 

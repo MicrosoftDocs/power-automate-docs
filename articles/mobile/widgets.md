@@ -26,6 +26,15 @@ search.audienceType:
 
 For quick and easy access to your instant flows, create a widget. Widgets make running instant flows effortless. You can trigger an instant flow from the home screen of your mobile device, without having to open the Power Automate app.
 
+> [!NOTE]
+>
+> The features described in this article apply to the following apps:
+> - Power Automate mobile app for Android (generally available)
+> - Power Automate mobile app for iOS (preview)
+>
+> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](../introduction-to-button-flows.md).
+
+
 If your flow requires you to enter information, the widget will open the flow in the app. The flow will continue after you fill in the information.
 
 Widgets can only run instant flows that you created. They can't run other kinds of flows or flows that have been shared with you. However, you can run [solution-aware flows](../overview-solution-flows.md) using a widget.

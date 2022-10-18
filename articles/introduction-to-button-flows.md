@@ -34,7 +34,7 @@ There are many repetitive tasks that we all wish we could run with just a tap of
 ![Overview image.](./media/introduction-to-button-flows/buttons-montage.png) 
 
 ## Why create buttons?
-Create buttons so that you can easily run repetitive tasks from any place, at anytime via your mobile device. Running buttons saves you time and, since the tasks they perform are automated, there will be less errors than if you manually did them.  
+Create buttons so that you can easily run repetitive tasks from any place, at any time via your mobile device. Running buttons saves you time and, since the tasks they perform are automated, there will be fewer errors than if you manually did them.  
 
 ## Create a button
 ### Prerequisites
@@ -72,7 +72,7 @@ In this tutorial, let's create a button that starts a Visual Studio Codespaces b
 11. You should see this success message within a few moments:  
     ![Success message.](./media/introduction-to-button-flows/create-button-11.png)  
 
-Congratulations, you've created a instant flow! You can now run this instant flow anytime, any place, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Power Automate mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+Congratulations, you've created an instant flow! You can now run this instant flow anytime, any place, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Power Automate mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### From your mobile device
 
@@ -100,12 +100,12 @@ In the app:
 9. View all your flows on the **My flows** tab  
    ![View all flows image.](./media/introduction-to-button-flows/create-button-from-mobile-9.png)  
 
-Congratulations, you've created a instant flow! You can now run this instant flow anytime, any place, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Flow app is currently available on Android and iOS mobile devices.  
+Congratulations, you've created an instant flow! You can now run this instant flow anytime, any place, from the **Buttons** tab in the Flow app. Simply press the "button" and it will run! The Flow app is currently available on Android and iOS mobile devices.  
 
 ![New instant flow image.](./media/introduction-to-button-flows/create-button-from-mobile-10.png)  
 
 ## Trigger an instant flow
-Now that you've created a instant flow, it's time to run it. Since you can only run instant flows from the Flow app, be sure you've installed Flow on your Android or iOS mobile device.  
+Now that you've created an instant flow, it's time to run it. Since you can only run instant flows from the Flow app, be sure you've installed Flow on your Android or iOS mobile device.  
 
 1. Now, launch the flow app, tap the **Buttons** tab that's located at the bottom of the page, and tap the *button* that represents the instant flow you wish to trigger:  
    ![Trigger the flow.](./media/introduction-to-button-flows/trigger-button-1.png)   
@@ -144,7 +144,7 @@ On the **My flows** tab of the Flow app:
 
       ![Delete flow warning image.](./media/introduction-to-button-flows/manage-flow-2.png)   
 
-   Tap **Update** after you are done editing a instant flow, to save your changes:   
+   Tap **Update** after you are done editing an instant flow, to save your changes:   
    ![Update flow image.](./media/introduction-to-button-flows/manage-flow-3.png)   
 
    Tap **Run history** to see the results of all runs of a particular instant flow:    
