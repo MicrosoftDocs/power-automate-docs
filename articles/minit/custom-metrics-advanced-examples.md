@@ -22,37 +22,12 @@ In previous part we have shown list of very basic examples how to create custom 
 
 ## **​Recap**itulation of previous examples
 
-
-
-| **Aggregation per Attribute value**
-(e.g., result per activity = all events with the same activity value) | AVG(Duration())​
-​
-AVG(EventsPerAttribute, Duration())​
-AVG(EdgesPerAttribute, Duration())​
-| :::image type="content" alt-text="aggregation-per-attribute-value.png" source="media/aggregation-per-attribute-value.png" :::
-
-|
-| **Aggregation within Cases**​
-(result per single case) | AVG(CaseEvents, Duration()) | :::image type="content" alt-text="aggregation-within-cases.png" source="media/aggregation-within-cases.png" :::
-
-|
-| **Aggregation Over Cases**​
-(aggregation per attribute value, case is taken into calculation one time) | SUM(CasesPerAttribute, invoTotal)​
-​
-​
-AVG(CasesPerAttribute, Duration()) | :::image type="content" alt-text="aggregation-over-cases.png" source="media/aggregation-over-cases.png" :::
-
-|
-| **Global aggregation**​
-(over all elements in view/process/business rule) | COUNTIF(ProcessEvents, user == "Peter")​
-​
-​
-AVG(ProcessEvents, Duration()) | :::image type="content" alt-text="global-aggregation.png" source="media/global-aggregation.png" :::
-
-|
-
-
-​​​
+| | | |
+| - | - | - |
+| **Aggregation per Attribute value**<br/>(e.g., result per activity = all events with the same activity value) | AVG(Duration())​<br/>AVG(EventsPerAttribute, Duration())​<br/>AVG(EdgesPerAttribute, Duration())​<br/>| :::image type="content" alt-text="aggregation-per-attribute-value.png" source="media/aggregation-per-attribute-value.png" ::: |
+| **Aggregation within Cases**<br/>(result per single case) | AVG(CaseEvents, Duration()) | :::image type="content" alt-text="aggregation-within-cases.png" source="media/aggregation-within-cases.png" ::: |
+| **Aggregation Over Cases**​<br/>(aggregation per attribute value, case is taken into calculation one time) | SUM(CasesPerAttribute, invoTotal)​<br/>AVG(CasesPerAttribute, Duration()) | :::image type="content" alt-text="aggregation-over-cases.png" source="media/aggregation-over-cases.png" ::: |
+| **Global aggregation**​<br/>(over all elements in view/process/business rule) | COUNTIF(ProcessEvents, user == "Peter")​<br/>AVG(ProcessEvents, Duration()) | :::image type="content" alt-text="global-aggregation.png" source="media/global-aggregation.png" ::: |
 
 ## ​Dataset Description
 
