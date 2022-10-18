@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/18/2020
+ms.date: 10/31/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -27,6 +27,11 @@ search.audienceType:
 
 Create a cloud flow from your phone by using a Power Automate template. On the **Templates** screen in Power Automate, you can select the **Mobile** category to find templates designed to work on your mobile phone.
 
+> [!NOTE]
+> You can create a flow on your phone from the generally available version of Power Automate mobile app for iOS. You can't create a flow from the Power Automate mobile app for iOS (preview) version.
+>
+> If you're using the Power Automate mobile app for iOS (preview) version, go to [Power Automate mobile app overview](./mobile/overview-mobile.md).
+
 In this topic, we'll follow an example to create a flow that sends a push notification to your phone when you get mail from your boss.
 
 If you're unfamiliar with Power Automate, [get an overview](getting-started.md).
@@ -36,7 +41,7 @@ If you're unfamiliar with Power Automate, [get an overview](getting-started.md).
 To complete the example in this topic, you'll need the following:
 
 * Access to [Power Automate](sign-up-sign-in.md).
-* The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the interface on an Android device or Windows Phone is similar.
+* The generally available version of Power Automate mobile app for [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app).
 * To use the template demonstrated in this topic, you'll also need:
   
   * Office 365 credentials.

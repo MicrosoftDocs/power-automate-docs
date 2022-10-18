@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/15/2017
+ms.date: 10/31/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -25,6 +25,11 @@ search.audienceType:
 # Introducing button flows with user input
 
 Create a button flow to run routine tasks by simply tapping a button. Customize your flow by allowing the user to provide specific details that will be used when the flow runs. This topic walks you through creating a button flow that takes input from the user and then running the button flow, highlighting how to provide the user input.
+
+> [!NOTE]
+> You can create a button flow on your phone from the generally available version of Power Automate mobile app for iOS. You can't create a button flow from the Power Automate mobile app for iOS (preview) version.
+>
+> If you're using the Power Automate mobile app for iOS (preview) version, go to [Power Automate mobile app overview](./mobile/overview-mobile.md).
 
 You can create a button flow in the Power Automate website or the mobile app for Power Automate. For this topic, you'll use the website.
 

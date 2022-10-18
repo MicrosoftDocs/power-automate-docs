@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/19/2022
+ms.date: 10/31/2022
 ms.author: kewaiss
 search.app: 
   - Flow
@@ -32,7 +32,7 @@ Widgets can only run instant flows that you created. They can't run other kinds 
 
 1. Long-press the home screen where you want to place the widget and select **Widgets**.
 
-    The procedure may be different depending on which version of Android you have. Check your device manual for exact instructions.
+    The procedure may be different depending on which version you have. Check your device manual for exact instructions.
 
 1. Select the Power Automate app.
 
@@ -40,6 +40,6 @@ Widgets can only run instant flows that you created. They can't run other kinds 
 
 1. Select the flow to run when you tap the widget on your home screen.
 
-    :::image type="content" source="../media/android/widget-run.png" alt-text="Screenshot of an instant flow widget placed on an Android device home screen.":::
+    :::image type="content" source="../media/android/widget-run.png" alt-text="Screenshot of an instant flow widget placed on a device home screen.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

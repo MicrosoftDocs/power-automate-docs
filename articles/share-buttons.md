@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/21/2017
+ms.date: 10/31/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -26,11 +26,12 @@ search.audienceType:
 
 In the Power Automate mobile app, you can share [button flows](introduction-to-button-flows.md) (buttons) with other users or groups within your organization. When you share a button, the person or group with whom you share can run your button, the same way they run their own buttons. You can also [share a link](share-buttons.md#re-share-a-button) to buttons that another person shared with you. You can [stop sharing](share-buttons.md#stop-sharing-a-button) your buttons at any time.
 
-> The screenshots used in this document were taken from an Android device. If you're using an iPhone, the images may appear differently, but the functionality is the same.
-> 
-> 
+> [!NOTE]
+> You can share button flows on your phone from the generally available version of Power Automate mobile app for iOS. You can't share button flows from the Power Automate mobile app for iOS (preview) version.
+>
+> If you're using the Power Automate mobile app for iOS (preview), go to [Power Automate mobile app overview](./mobile/overview-mobile.md).
 
-Follow [these steps](share-buttons.md#use-shared-buttons) to use a button that someone shared with you.
+Follow [these steps](share-buttons.md#use-shared-buttons) to use a button that someone shared with you. The experience in this tutorial is the similar for all smartphones.
 
 ## Prerequisites
 To share buttons, you need:
@@ -42,6 +43,8 @@ To share buttons, you need:
 
 ## Share a button
 You can share a button from the **Buttons** tab of the Power Automate mobile app.
+
+The experience in this tutorial is the similar for all smartphones.
 
 1. Tap the small icon next to the button you want to share.
    

@@ -48,10 +48,10 @@
       href: apply-to-each.md
   - name: Power Automate mobile app
     items:
+    - name: Overview
+      href: ./mobile/overview-mobile.md
     - name: Android
       items:
-      - name: Overview
-        href: ./mobile/overview-mobile.md
       - name: Run instant flows
         href: ./mobile/run-instant-flows.md
       - name: Create widgets

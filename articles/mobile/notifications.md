@@ -1,6 +1,6 @@
 ---
-title: Receive notifications in the Power Automate mobile app for Android
-description: Learn how to receive notifications in the Microsoft Power Automate mobile app for Android.
+title: Receive notifications in the Power Automate mobile app
+description: Learn how to receive notifications in the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS (preview).
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/19/2022
+ms.date: 10/31/2022
 ms.author: kewaiss
 search.app: 
   - Flow
@@ -24,19 +24,27 @@ search.audienceType:
 
 # Receive notifications
 
-The Power Automate mobile app for Android allows you to receive notifications on your mobile device. You'll get a notification whenever you run a flow that uses either the Microsoft [Notifications](/connectors/flowpush/) connector or the [Approvals](/connectors/approvals/) connector. You'll also get a notification when a flow encounters a run error.
+The Power Automate mobile appallows you to receive notifications on your mobile device. You'll get a notification whenever you run a flow that uses either the Microsoft [Notifications](/connectors/flowpush/) connector or the [Approvals](/connectors/approvals/) connector. You'll also get a notification when a flow encounters a run error.
+
+> [!NOTE]
+>
+> The features described in this article apply to the following apps:
+> - Power Automate mobile app for Android (generally available)
+> - Power Automate mobile app for iOS (preview)
+>
+> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](introduction-to-button-flows.md).
 
 The list of notifications you've received was previously called Activity Feed.
 
 To view all notifications that correspond to your flows, select the bell icon at the top of the screen.
 
-:::image type="content" source="../media/android/notifications-1.png" alt-text="Screenshot of part of the Power Automate mobile app for Android screen, with the notification bell icon highlighted.":::
+:::image type="content" source="../media/android/notifications-1.png" alt-text="Screenshot of part of the Power Automate mobile app screen, with the notification bell icon highlighted.":::
 
 Notifications that arrived since the last time you opened the app appear in the **New** list. Other notifications appear in the **Older** list.
 
 A timestamp indicates how long ago the notification arrived. For instance, **5 m** means the notification arrived five minutes ago. Notifications are removed from the **Older** list after 14 days.
 
-:::image type="content" source="../media/android/notifications.png" alt-text="Screenshot of notifications in the Power Automate mobile app for Android.":::
+:::image type="content" source="../media/android/notifications.png" alt-text="Screenshot of notifications in the Power Automate mobile app.":::
 
 The **Notifications** screen shows notifications from the current environment only. To view notifications from a different environment, [select the environment](overview-mobile.md#change-environments).
 
