@@ -29,25 +29,25 @@ In previous part we have shown list of very basic examples how to create custom 
 ​
 AVG(EventsPerAttribute, Duration())​
 AVG(EdgesPerAttribute, Duration())​
-| :::image type="content" alt-text="aggregation-per-attribute-value.png" src="media/aggregation-per-attribute-value.png" :::
+| :::image type="content" alt-text="aggregation-per-attribute-value.png" source="media/aggregation-per-attribute-value.png" :::
 
 |
 | **Aggregation within Cases**​
-(result per single case) | AVG(CaseEvents, Duration()) | :::image type="content" alt-text="aggregation-within-cases.png" src="media/aggregation-within-cases.png" :::
+(result per single case) | AVG(CaseEvents, Duration()) | :::image type="content" alt-text="aggregation-within-cases.png" source="media/aggregation-within-cases.png" :::
 
 |
 | **Aggregation Over Cases**​
 (aggregation per attribute value, case is taken into calculation one time) | SUM(CasesPerAttribute, invoTotal)​
 ​
 ​
-AVG(CasesPerAttribute, Duration()) | :::image type="content" alt-text="aggregation-over-cases.png" src="media/aggregation-over-cases.png" :::
+AVG(CasesPerAttribute, Duration()) | :::image type="content" alt-text="aggregation-over-cases.png" source="media/aggregation-over-cases.png" :::
 
 |
 | **Global aggregation**​
 (over all elements in view/process/business rule) | COUNTIF(ProcessEvents, user == "Peter")​
 ​
 ​
-AVG(ProcessEvents, Duration()) | :::image type="content" alt-text="global-aggregation.png" src="media/global-aggregation.png" :::
+AVG(ProcessEvents, Duration()) | :::image type="content" alt-text="global-aggregation.png" source="media/global-aggregation.png" :::
 
 |
 
