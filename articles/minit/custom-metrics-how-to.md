@@ -68,7 +68,7 @@ As you remember we have seen value 95 for activities 'Get lowest approval level'
 
 Calculation for all three metrics is the same, the only difference is calculation scope. While first example uses all view events and calculates single result, the second one generates result per single case and uses per each result only events within given case. The last one generates result per each activity and uses per each result only events with the given activity value.
 
-### **Non-aggregated metrics **
+### Non-aggregated metrics
 
 The major difference to aggregated metrics is that calculation is done per single element – either case, event or edge.  For example, if event has assigned Resource attribute or if case duration is outside defined working hours. There are only a few places where non-aggregated metrics (and attribute values) and displayed and available to user:
 

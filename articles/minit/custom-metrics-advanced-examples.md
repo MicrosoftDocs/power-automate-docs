@@ -20,7 +20,7 @@ search.audienceType:
 
 In previous part we have shown list of very basic examples how to create custom metrics for usage across Minit desktop application.​ In this (last) part of the series we pass through the remaining options from perspective of result applications.  Due to more complex examples, some specific custom operators have been used (like DURATIONCALENDAR or FIRSTIF) but again no specific knowledge for these operators is required. For complete reference for custom operators see relevant help pages.
 
-## **​Recap**itulation of previous examples
+## ​Recapitulation of previous examples
 
 | | | |
 | - | - | - |
@@ -51,7 +51,7 @@ Evaluate single events and remove the ones with corrupted timestamps.
 
 ​Run & evaluate each event one by one.​ Generate single result per event, no aggregation operation is required. Just simple compare end and start attribute values in each event.
 
-**Result:** Per each event **1x False****; 11x True**
+**Result:** Per each event **1x False;** **11x True**
 
 :::image type="content" alt-text="media/image-16.png" source="media/image-16.png":::
 
@@ -110,7 +110,7 @@ After we removed corrupted events, we need get rid of invalid cases. Remove comp
 
 ​Run & evaluate each case one by one.​ Generate single result per case. As there is operator *Duration()* which is applied on case level, no aggregation operation is required.
 
-**Result:** Per each event **Case 1 - true ****; Case 2 - true****; ****Case 3 - true****; Case 4 - false**
+**Result:** Per each event **Case 1 - true ;** **Case 2 - true;** **Case 3 - true;** **Case 4 - false**
 
 :::image type="content" alt-text="media/image-17.png" source="media/image-17.png":::
 
@@ -148,7 +148,7 @@ Edge (path) - transition between two directly followed events.
 
 We are evaluating how often user has changed when case was progressing though events. We want to identify on which transitions (edges) occurs user switching. At first identify set of edges in our data. For case 1 there are two edges A->B and B->C. In case 2 we have A->C and C->C. For case 3 we only one edge C->C. In total we have 4 unique edges (based on activity values) - A->B, B->C, A->C and C->C. Per each of these edges we need to aggregate number of user changes. For example, we have only one instance of edge B->C where user Michal on starting event and also on the on ending event so there is no user change for this edge at all.
 
-**Result:****A->B = 1;****B->C = 0;****A->C = 1;****C->C = 2**
+**Result:A->B = 1;B->C = 0;A->C = 1;C->C = 2**
 
 :::image type="content" alt-text="media/image-18.png" source="media/image-18.png":::
 
@@ -184,7 +184,7 @@ We are looking for result per case and to do some conditional aggregation over c
 
 Run across all available events within its case. Get the first and last activity 'C' in a case and measure the duration between start of first one and end of last one.
 
-**Result:****Case 1 =1h00m;****Case 2 = 1h20m;****Case 3 = 2h00m;**
+**Result:Case 1 =1h00m;Case 2 = 1h20m;Case 3 = 2h00m;**
 
 :::image type="content" alt-text="media/image-19.png" source="media/image-19.png":::
 
@@ -214,7 +214,7 @@ Example is the same as the previous one, but this this we want to calculate time
 
 Run across all available events within its case. Get the first and last activity 'C' in a case and measure the duration between start of first one and end of last one. For measuring the duration use working hours defined in in applied calendar.
 
-**Result:****Case 1 = ???;****Case 2 = ???;****Case 3 = ???**
+**Result:Case 1 = ???;Case 2 = ???;Case 3 = ???**
 Exact values can't be calculated we the calendar properties are not defined. But it is not important here.
 
 Expression in custom metric editor:
@@ -239,7 +239,7 @@ This is simple question, when we need to categorize single cases based on existe
 
 Run across all available edges within its case. If case contains C->C edge it passes the criteria. Results are generated per case. Count of such edges is not important.
 
-**Result:****Case 1 = False;****Case 2 = True;****Case 3 = True**  ​
+**Result:Case 1 = False;Case 2 = True;Case 3 = True**  ​
 
 :::image type="content" alt-text="media/image-22.png" source="media/image-22.png":::
 
@@ -273,7 +273,7 @@ Change the previous question from if case contains edge C->C to how many such ed
 
 Run across all edges within its case. Count any edges C->C found. If no such edge is found, count is zero for given case.
 
-**Result:****Case 1 =0;****Case 2 = 1;****Case 3 = 2**
+**Result:Case 1 =0;Case 2 = 1;Case 3 = 2**
 
 :::image type="content" alt-text="media/image-22.png" source="media/image-22.png":::
 
@@ -309,7 +309,7 @@ Now the calculation consists of two steps. At first run though each case and che
 
 Both cases for country attribute 'SK' contains 'C->C' edge so result for 'SK' is 2. Total number of edges is 3, but we don't count number of edges.
 
-**Result:****DE = 0;****SK = 2**
+**Result:DE = 0;SK = 2**
 
 :::image type="content" alt-text="media/06-data-set-result.png" source="media/06-data-set-result.png":::
 
@@ -350,7 +350,7 @@ Again, the calculation consists of two steps. At first run though each case and 
 
 Both cases for country attribute 'SK' contains 'C->C' edges. Result for 'SK' and total count for these edges is 3 (1 + 2).
 
-**Result:****DE =0;****SK = 3**
+**Result:DE =0;SK = 3**
 
 :::image type="content" alt-text="media/06-data-set-result.png" source="media/06-data-set-result.png":::
 
@@ -382,7 +382,7 @@ Do the calculation for activity 'A', for case 1 the ratio is 10/90, for case 2 t
 
 In terms of aggregation is it nothing new, we generate results per attribute value, but for calculation we used metric (value) from case.
 
-**Result:****A =0.21;****B = 0.22;****C = 0.39**
+**Result:A =0.21;B = 0.22;C = 0.39**
 
 :::image type="content" alt-text="media/07-data-set-result.png" source="media/07-data-set-result.png":::
 
@@ -413,7 +413,7 @@ How many events per user were done in cases with Peter?
 
 Event is valid for this question, if is within case, where there is at least one event done by user 'Peter'. Evaluate each event and group results per attribute user value - 'Michal', 'Peter' and 'Denis'.
 
-**Result:****Michal = 1;****Peter = 2;****Denis = 3**
+**Result:Michal = 1;Peter = 2;Denis = 3**
 
 :::image type="content" alt-text="media/image-19.png" source="media/image-19.png":::
 
@@ -450,7 +450,7 @@ Evaluate each event and group results per attribute user value - 'Michal', 'Pete
 
 In case 1 there are not repeated activities 'C', in case 2 is one repeated activity 'C' done by 'Michal' and in case 3 are two repeated activities 'C' done by 'Denis'.
 
-**Result:****Michal = 1;****Peter = 0;****Denis = 2**
+**Result:Michal = 1;Peter = 0;Denis = 2**
 
 :::image type="content" alt-text="media/08_1-data-set-result.png" source="media/08_1-data-set-result.png":::
 
