@@ -226,7 +226,7 @@ The number of events with activity C is not important inside the case. The only 
 
 The question requires to evaluate data set by single cases. In each case we look into total duration of all events with activity C and compare it defined limit 1h 30mins. Case may contain zero, one or multiple events with activity C, but it is not relevant.
 
-**Result:**Case2
+**Result:** Case2
 
 :::image type="content" alt-text="media/data-cond-filter-selection.png" source="media/data-cond-filter-selection.png":::
 
