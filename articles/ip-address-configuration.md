@@ -81,7 +81,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, U.S. government, and Chinese clouds. Works as the fallback telemetry endpoint.|
-| msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. |
+| msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver are used to automate your browser (Edge and Chrome).|
 
 
 ### Public endpoints
@@ -89,7 +89,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | ocsp.digicert.com<br>ocsp.msocsp.com<br>mscrl.microsoft.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for the public cloud.<br>Needed when connecting through the on-premises data gateway.|
-| \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for new machine connectivity. |
+| \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for machine connectivity. |
 |\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
 | emea.events.data.microsoft.com|https| Handles telemetry for EMEA users.|
 
@@ -98,7 +98,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 |ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud.<br>Needed when connecting through the on-premises data gateway.|
-| *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for new machine connectivity. |
+| *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for machine connectivity. |
 | gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud (GCC and GCCH). |
 |tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
 
