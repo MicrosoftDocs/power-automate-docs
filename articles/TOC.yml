@@ -782,6 +782,12 @@
         href: ./minit/other-operations.md
       - name: Calculation context
         href: ./minit/calculation-context.md
+      - name: Custom Metrics - How to
+        href: ./minit/custom-metrics-how-to.md
+      - name: Custom Metrics - Beginner Examples
+        href: ./minit/custom-metrics-beginner-examples.md
+      - name: Custom Metrics - Advanced Examples
+        href: ./minit/custom-metrics-advanced-examples.md
     - name: Business rules
       items:
       - name: Business rules overview
