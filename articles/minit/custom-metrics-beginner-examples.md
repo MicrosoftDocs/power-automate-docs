@@ -156,7 +156,7 @@ This example sounds similar to previous one, doesn't it? We again take into cons
 
 **Result: Peter = 0:50h; Michal = 0:40h; Denis = 3:00h **
 
-:::image type="content" alt-text="media/image-10.png" source="media/image-10.png":::
+:::image type="content" alt-text="media/image-10-1.png" source="media/image-10-1.png":::
 
 Expression in custom metric editor:
 
