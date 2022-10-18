@@ -94,7 +94,7 @@ As shown earlier, you can get the list of workflows by calling `GET` on `workflo
 | _createdby_value  | The user who created the flow. This is an id from the systemusers table in Dataverse. |
 | type              | Indicates if the flow is a running flow, or a template that can be used to create additional flows. 1 - flow, 2 - activation or 3 - template. |
 | description       | The user-provided description of the flow. |
-| clientdata        | A string-encoded JSON of an object that contains the connectionReferences and the definition of the flow. |
+| clientdata        | A string-encoded JSON of the flow definition and its connectionReferences. |
 
 The [documentation for the Dataverse workflow](/powerapps/developer/data-platform/reference/entities/workflow) has additional information about properties/fields and their usage.
 
