@@ -31,11 +31,11 @@ This topic contains information about the current limits and configuration detai
 
 ## Performance profiles
 
-Flows have different limits depending on their *performance profile*. There are five possible values, depending on the flow owner's plan.
+Flows have different limits depending on their *performance profile*. There are three possible values, depending on the flow owner's plan.
 
 | Performance profile | Plans |
 |---------------------|-------|
-| Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member | 
+| Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member<br>- Microsoft Power Apps for Developer | 
 | Medium              | - Power Apps triggered flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate per user, Power Automate per user with Attended RPA plans <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
 | High                | - Power Automate per flow plan |
 
