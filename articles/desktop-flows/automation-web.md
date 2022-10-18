@@ -107,7 +107,7 @@ Each CSS selector consists of the tree structure of the HTML element, the attrib
 
 ## Interacting with the web and web services
 
-Power Automate provides various HTTP actions to allow users to communicate directly with web resources, such as web pages, files, and APIs, without the need of a web browser. You can find a list with all the available HTTP actions in the [HTTTP actions reference](actions-reference/web.md).
+Power Automate provides various HTTP actions to allow users to communicate directly with web resources, such as web pages, files, and APIs, without the need of a web browser. You can find a list with all the available HTTP actions in the [HTTP actions reference](actions-reference/web.md).
 
 ### Downloading web resources
 
