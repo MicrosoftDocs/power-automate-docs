@@ -116,8 +116,8 @@ Machine registration arguments:
 
 To join a group silently with the service principal account, use the join group operation -joinmachinegroup  with the following arguments:
 
-1. Environmentid: The environment where the machine group is registered. You can retrieve it in the URL of Power Automate. 
-1. Groupid: the id of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
+1. Environmentid: The environment where the machine group is registered. You can retrieve it in the URL of Power Automate.
+1. Groupid: the ID of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
 1. Grouppassword: the password of your machine. If this machine is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. You shouldn't use this input as an input to the command line. See “Secure input” section to see options you can choose to provide it
 
 ![groupresults.](./media/machines-silent-registration/environment-id.png)

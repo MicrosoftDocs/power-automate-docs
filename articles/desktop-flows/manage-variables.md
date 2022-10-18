@@ -59,7 +59,9 @@ To rename a desktop flow variable, right-click on its name and select **Rename**
 
 ## Input and output variables
 
-Power Automate enables data exchange between cloud and desktop flows through the input and output variables, allowing you to expand automation capabilities.
+Power Automate enables data exchange between cloud and desktop flows through the input and output variables, allowing you to expand automation capabilities 
+
+Additionally, you can use input variables to set values manually when the flows are triggered through the console.
 
 To find more information regarding passing data between cloud and desktop flows, refer to [Trigger a desktop flow from another flow](link-pad-flow-portal.md).
 
@@ -77,7 +79,8 @@ To create an input variable:
     - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
     - **Default value**: The default value when the flow runs through the flow designer or console. When you create a custom object, list, or datatable input variable, Power Automate allows you to construct the default value through a visual or JSON editor.
         ![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
-    - **External name**: The name of the variable used outside the flow designer. The external name is the name that appears in the cloud or desktop flow designer while calling the flow.
+    - **External name**: The external name is the name that appears in the cloud flow designer and the flow inputs dialog when calling the flow from the console.
+    - The name of the variable used outside the flow designer. The external name is the name that appears in the cloud or desktop flow designer while calling the flow.
     - **Description**: The description of the variable that appears in the cloud and desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
 
@@ -105,7 +108,7 @@ To create an output variable:
 
     - **Variable name**: The name of the variable in the desktop flow.
     - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
-    - **External name**: The name of the variable used outside the flow designer. The external name is the name that appears in the cloud or desktop flow designer while calling the flow.
+    - **External name**: The external name is the name that appears in the cloud flow designer.
     - **Description**: The description of the variable that appears in the cloud or desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
 
@@ -145,9 +148,9 @@ To update an input/output variable:
 >
 > To apply the new functionality, edit and save the flows with Power Automate for desktop v.2.14 or above. Power Automate will convert past encrypted input variables and encrypted variables produced by the **Get password from CyberArk** action to text variables marked as sensitive.
 
-Some automation scenarios handle confidential information and require special handling of variables that store sensitive data. Desktop flows support the creation of sensitive variables that aren't visible during design time, runtime, and debugging.
+Some automation scenarios handle confidential information and require special handling of variables that store and use sensitive data during runtime. Desktop flows support the creation of sensitive variables, whose values are masked during debugging in the variables pane of the flow designer.
 
-If you've logged in with an organization premium account, the Power Automate portal doesn't keep logs with the values of sensitive variables when desktop flows run through the console or cloud flows.
+Additionally, if you've logged in with an organization premium account, the values of sensitive variables aren't stored in the Run history in the portal, when the desktop flows run through the console or cloud flows.
 
 Any variable can become sensitive, independently of its type. Sensitivity applies at the variable level, so lists, datarows, datatables, and custom objects, get sensitive as a whole. There's no way to mark a list item, a datatable column, or a variable property as sensitive in an otherwise non-sensitive variable.
 
@@ -156,7 +159,9 @@ You can use, manipulate and process sensitive variables in every action without 
 The flow designer handles sensitivity as a mask that you can set on and off. Thus, you can unmask sensitive variables to see their values and mask them again to hide their values.
 
 > [!IMPORTANT]
-> Sensitive variables aren't meant to provide protection over hardcoded data. You shouldn't use hardcode critical data, like passwords and PINs, in the properties of actions, as they are visible in the modal and the flow definition in Dataverse.
+> Sensitive variables aren't meant to provide protection over hardcoded data. You shouldn't hardcode critical data in plain text, like passwords and PINs, in the properties of actions like **Set variable**, even if the said variables are marked as sensitive. The desktop flow logs will be protected, but the hardcoded values are visible in the modal and the flow definition in Dataverse.
+>
+>To find more information regarding sensitive inputs in cloud flows, see [Manage sensitive input like passwords](../how-tos-use-sensitive-input.md).
 
 > [!NOTE]
 >
