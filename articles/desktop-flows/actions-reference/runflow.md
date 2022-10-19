@@ -1,13 +1,17 @@
 ---
 title: Run desktop flow | Microsoft Docs
 description: Run desktop flow Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/13/2021
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
