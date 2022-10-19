@@ -81,7 +81,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, U.S. government, and Chinese clouds. Works as the fallback telemetry endpoint.|
-| msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver are used to automate your browser (Edge and Chrome).|
+| msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Edge and Chrome).|
 
 
 ### Public endpoints
