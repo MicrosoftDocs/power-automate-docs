@@ -16,6 +16,8 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/25/2020
 ms.author: DeonHe
+contributors:
+- georgiostrantzas
 search.app: 
   - Flow
 search.audienceType: 

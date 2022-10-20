@@ -4,18 +4,21 @@ description: Create a Microsoft Dataverse database.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: georgiostrantzas
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/02/2021
-ms.author: DeonHe
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow 
 search.audienceType: 

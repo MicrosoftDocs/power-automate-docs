@@ -1,13 +1,17 @@
 ---
 title: UI elements and controls | Microsoft Docs
 description: UI elements and controls
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

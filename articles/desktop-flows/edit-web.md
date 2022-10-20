@@ -4,8 +4,7 @@ description: Learn to how to edit Selenium IDE flows.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: georgiostrantzas
 editor: ''
 tags: ''
 
@@ -15,7 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/04/2019
-ms.author: DeonHe
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
