@@ -71,9 +71,9 @@ You might have different environments to work in depending on the purpose of you
 
 The Power Automate mobile app  has a few limitations:
 
-- (Android) Geofencing, or using location-based triggers, isn't supported. This was formerly a preview feature.
+- (Android) Geofencing, or using location-based triggers, isn't supported in the generally available version of the mobile app for Android. This was formerly a preview feature.
 
-   - (iOS) Geofencing is supported in the mobile app for iOS. This capability will be removed when the mobile app for iOS is generally available in November 2022.
+   - (iOS) Geofencing is supported in the mobile app for iOS (preview). This capability will be removed when the mobile app for iOS is generally available in November 2022.
 
 - You can run flows in the mobile app, but not create or edit them. Customers told us that they prefer to create and edit their flows in Power Automate on the web. If you're on the go and need to create or edit a flow, open Power Automate in your mobile device's web browser.
 
