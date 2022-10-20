@@ -51,7 +51,7 @@ If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.m
 | Android | iOS  |
 | :---:   | :---:  |
 | :::image type="content" source="../media/android/google-play.png" alt-text="Screenshot of the Download the Power Automate mobile app for Android from Google Play button.":::  | :::image type="content" source="../media/android/app-store.png" alt-text="Screenshot of the Download the Power Automate mobile app for iOS from the Apple App store button."::: |
-| :::image type="content" source="../media/android/android-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for Android QR code.":::  | <!--(placeholder)-->   |
+| :::image type="content" source="../media/android/android-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for Android QR code.":::  | :::image type="content" source="../media/android/ios-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for iOS QR code.":::    |
 
 > [!NOTE]
 >
@@ -69,9 +69,11 @@ You might have different environments to work in depending on the purpose of you
 
 ## Limitations
 
-The Power Automate mobile app for Android has a few limitations:
+The Power Automate mobile app  has a few limitations:
 
-- Geofencing, or using location-based triggers, isn't supported. This was formerly a preview feature. <!--10/17 Natalie/Kartik to LMK if this applies to iOS-->
+- (Android) Geofencing, or using location-based triggers, isn't supported. This was formerly a preview feature.
+
+   - (iOS) Geofencing is supported in the mobile app for iOS. This capability will be removed when the mobile app for iOS is generally available in November 2022.
 
 - You can run flows in the mobile app, but not create or edit them. Customers told us that they prefer to create and edit their flows in Power Automate on the web. If you're on the go and need to create or edit a flow, open Power Automate in your mobile device's web browser.
 
