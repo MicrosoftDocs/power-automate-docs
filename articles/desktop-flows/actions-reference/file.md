@@ -35,6 +35,7 @@ Manage and manipulate files
 [Convert file to Base64](#convertfiletobase64action)  
 [Convert Base64 to file](#convertbase64tofileaction)
 [Convert file to binary data](#convertfiletobinaryaction)
+[Convert binary data to file](#convertbinarytofileaction)
 
 ## Getting started with file actions
 
@@ -385,5 +386,24 @@ Convert a file to binary data
 |-----|-----|
 |File not found|Indicates that the file doesn't exist|
 |Can't convert file to binary data|Indicates that the provided file can't be converted to binary data|
+
+### <a name="convertfiletobinaryaction"></a> Convert binary data to file
+Convert binary data to file
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Binary data|No|[Text value](../variable-data-types.md#text-value)||The binary data|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write to|
+|If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="gettemppath_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Invalid directory for file|Indicates that the directory is invalid|
+|Can't convert binary file to file|Indicates that the provided binary data can't be converted into a file|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
