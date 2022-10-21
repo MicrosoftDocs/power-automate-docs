@@ -1,6 +1,6 @@
 ---
 title: Install the minit desktop application (preview)
-description: Learn how to install the minit desktop application within process advisor.
+description: Learn how to install the Minit desktop application within process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: how-to
@@ -14,16 +14,13 @@ search.audienceType:
 - enduser
 ---
 
-<!--Replace with Neeraj's private preview instructions.-->
-
 # Install the minit desktop application (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Install minit for desktop to edit your processes created in process advisor. 
+Install the Minit desktop application to edit your processes created in process advisor. 
 
-
-1.	Sign in to Power Automate.
+1.	Sign in to [Power Automate](https://flow.microsoft.com).
 
 1. On the navigation bar to the left, select **Process advisor**.
 
@@ -33,11 +30,11 @@ Install minit for desktop to edit your processes created in process advisor.
 
 1. Depending on your configuration, you might see the following two screens:
 
-   1.  In the **Open this file?** screen, select **Open**.
+   a. In the **Open this file?** screen, select **Open**.
 
     :::image type="content" alt-text="Screenshot of the Open button." source="media/minit-install-1.png":::
 
-    1. In the **Application Install - Security Warning** screen, select **Install**.
+    b. In the **Application Install - Security Warning** screen, select **Install**.
 
     :::image type="content" alt-text="Screenshot of the Install button." source="media/minit-install-2.png":::
 
@@ -45,12 +42,11 @@ Install minit for desktop to edit your processes created in process advisor.
 
    :::image type="content" alt-text="Screenshot of the installation in progress." source="media/minit-install-3.png":::
 
- 
-1. Sign in into application with your Azure DevOps account:
+ 1. Sign in in with your Azure DevOps account.
 
-:::image type="content" alt-text="media/image-26.png" source="media/image-26.png":::
+    :::image type="content" alt-text="Screenshot of the Sign in to Minit screen." source="media/image-26.png":::
 
-1. Start process mining from your Process Hub:
+1. Start process mining from your **Process hub**:
 
-:::image type="content" alt-text="media/image-27.png" source="media/image-27.png":::
+   :::image type="content" alt-text="media/image-27.png" source="media/image-27.png":::
 

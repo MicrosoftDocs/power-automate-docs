@@ -1,6 +1,6 @@
 ---
-title: Custom Metrics - Beginner Examples
-description:
+title: Basic examples (preview)
+description: Get examples of various calculation methods for custom metrics with a focus on proper context and aggregation selection in the Minit desktop application.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: article
@@ -14,19 +14,23 @@ search.audienceType:
 - enduser
 ---
 
-# Custom Metrics - Beginner Examples
+# Basic examples (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The following examples shows various calculation methods for custom metrics with focus on proper context/aggregation selection. The examples are done over tiny data example which can be calculated by user manually. ​The examples don't focus on custom metrics operators, so no additional knowledge of specific operators is required. For complete list of supported operators (like statistical, calendar or math functions) please see Custom metrics help pages which contain the full references.​
 
-## ​Dataset Description
+## ​Dataset description
 
 ​The examples will use the tiny data set. It contains 3 cases, 10 events, there is defined one view – 2 out of 3 cases. For easy manual calculations we assume zero waiting time between events, therefor case duration is simple sum of events duration. Also, there is no parallelism among events.​
 
-:::image type="content" alt-text="media/image-4.png" source="media/image-4.png":::
+:::image type="content" alt-text="Screenshot of a tiny dataset." source="media/image-4.png":::
 
 ## 1. Event level aggregation (view)
 
-:::image type="content" alt-text="This image has an empty alt attribute; its file name is image-4.pngmedia/image-4.png" source="media/image-4.png":::
+Following is an example of the event level aggregation view.
+
+:::image type="content" alt-text="Screenshot of the event level aggregation." source="media/image-4.png":::
 
 **What is total duration of events in view?**
 
@@ -38,19 +42,21 @@ We need to run across all available events in view. Assignment of events to case
 
 **Result: 4:30h**
 
-:::image type="content" alt-text="This image has an empty alt attribute; its file name is image-5.pngmedia/image-5.png" source="media/image-5.png":::
+:::image type="content" alt-text="Screenshot of the 4:30 result." source="media/image-5.png":::
 
 Expression in custom metric formula:
 
-:::image type="content" alt-text="media/01-event-level-view.png" source="media/01-event-level-view.png":::
+:::image type="content" alt-text="Screenshot of an expression in a custom metric formula." source="media/01-event-level-view.png":::
 
 **Usage in Minit desktop application:**
 
 Custom metric editor indicates the result is applicable everywhere in Minit. Why is it?​ Single result is numerical constant which can be used in any expression and any place where metric is displayed. Such metric - returning single value may be displayed in process map, statistics for case overview, statistics for attributes, filters or root cause analysis.
 
-## ​2. Event level aggregation (Process)
+## ​2. Event level aggregation (process)
 
-:::image type="content" alt-text="This image has an empty alt attribute; its file name is image-4.pngmedia/image-4.png" source="media/image-4.png":::
+Following is an example of event level aggregation.
+
+:::image type="content" alt-text="Screenshot of event level aggregation." source="media/image-4.png":::
 
 **What is total duration of events in process?​**
 
@@ -62,11 +68,11 @@ In this example we need to run across all available events in process regardless
 
 **Result: 8:00h**
 
-:::image type="content" alt-text="media/image-8.png" source="media/image-8.png":::
+:::image type="content" alt-text="Screenshot of result 0 8:00h." source="media/image-8.png":::
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="media/02-event-level-process.png" source="media/02-event-level-process.png":::
+:::image type="content" alt-text="Screenshot of an expression in the custom metric editor." source="media/02-event-level-process.png":::
 
 **Usage in Minit desktop application:**
 
@@ -74,7 +80,7 @@ Result is applicable everywhere in Minit. The same logic for application as for 
 
 ## 3. Case events aggregation
 
-:::image type="content" alt-text="This image has an empty alt attribute; its file name is image-4.pngmedia/image-4.png" source="media/image-4.png":::
+:::image type="content" alt-text="Screenshot of case events aggregation." source="media/image-4.png":::
 
 **What is total duration of events per case?**
 
@@ -86,11 +92,11 @@ We need to calculate events duration per single case. As view contains two cases
 
 **Result:****Case1 = 1:30h****; Case2 = 3:00h**
 
-:::image type="content" alt-text="media/image-7.png" source="media/image-7.png":::
+:::image type="content" alt-text="Screenshot of the result for case 1." source="media/image-7.png":::
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="media/03-case-event-1.png" source="media/03-case-event-1.png":::
+:::image type="content" alt-text="Screenshot of the expression in the custom metric editor." source="media/03-case-event-1.png":::
 
 Calculation context *CaseEvents* (and *CaseEvents*) is very useful as it allows to create additional case level metric calculated using the case events. User is then able to evaluate the single cases based on calculated value.
 
@@ -106,11 +112,9 @@ As we have single result per each case in current view,​ results are available
 
 Results for CaseEvents or CaseEdges are not applicable on Process map. Theoretically Process map is able to display results per case, but default aggregation (industry standard) is per activity.
 
-
-
 ## 4. Attribute aggregation
 
-:::image type="content" alt-text="This image has an empty alt attribute; its file name is image-4.pngmedia/image-4.png" source="media/image-4.png":::
+:::image type="content" alt-text="Screenshot of attribute aggregation" source="media/image-4.png":::
 
 **What is total duration per activities?**
 
@@ -122,11 +126,11 @@ How to calculate results per activity properly? We don't care about distribution
 
 **Result: A = 0:50h; B = 0:40h; C = 3:00h **
 
-:::image type="content" alt-text="media/image-9.png" source="media/image-9.png":::
+:::image type="content" alt-text="Screenshot of the calculation result." source="media/image-9.png":::
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="media/04-event-per-attribute.png" source="media/04-event-per-attribute.png":::
+:::image type="content" alt-text="Screenshot of the expression in the custom metric editor." source="media/04-event-per-attribute.png":::
 
 **Usage in Minit desktop application:**
 
@@ -136,15 +140,15 @@ We have single result per activity in current view.​ Results are available on 
 
 - Statistics – Activities​
 
-- Attribute Conditional filter (see chapter 7)​
+- Attribute conditional filter (To learn more, go to [​7 Bonus: Attribute conditional filter](#7-bonus-attribute-conditional-filter).)​
 
 Process map and Statistics panels for any attribute (including activity) share the same calculation scope. Despite different visuals, both screens display results grouped by activity value.
 
-Attribute conditional filter contains the attribute aggregation inside the single case. E.g. Case 2 contains two events with activity 'C'. Attribute conditional filter does aggregation over these events and aggregated value is evaluated. More about behavior for this filter in chapter 7.
+Attribute conditional filter contains the attribute aggregation inside the single case.  For example, Case 2 contains two events with activity 'C'. Attribute conditional filter does aggregation over these events and aggregated value is evaluated. To learn more about behavior for this filter go to [​7 Bonus: Attribute conditional filter](#7-bonus-attribute-conditional-filter).
 
 ## 5 Generic attribute aggregation
 
-:::image type="content" alt-text="This image has an empty alt attribute; its file name is image-4.pngmedia/image-4.png" source="media/image-4.png":::
+:::image type="content" alt-text="Screenshot of a generic attribute aggregation." source="media/image-4.png":::
 
 **What is total duration per user?**
 
@@ -156,11 +160,11 @@ This example sounds similar to previous one, doesn't it? We again take into cons
 
 **Result: Peter = 0:50h; Michal = 0:40h; Denis = 3:00h**
 
-:::image type="content" alt-text="media/image-10-1.png" source="media/image-10-1.png":::
+:::image type="content" alt-text="Screenshot of the result." source="media/image-10-1.png":::
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="media/04-event-per-attribute.png" source="media/04-event-per-attribute.png":::
+:::image type="content" alt-text="Screenshot of the expression." source="media/04-event-per-attribute.png":::
 
 Why the expression is the same as for previous one? It's simple. The calculation per attribute value is the same for any event attribute. Activity is just a special mandatory event attribute. All metrics calculations are applied in the same way for activity as for any other attribute.
 
@@ -172,13 +176,13 @@ We again have single result per attribute value in current view.​ Results are 
 
 - Statistics – any attribute
 
-- Attribute Conditional filter (see chapter 7)
+- Attribute Conditional filter ((To learn more, go to [​7 Bonus: Attribute conditional filter](#7-bonus-attribute-conditional-filter).)
 
-If we want to see results per user in Minit desktop application, we need to go to Statistics for user attribute. There are displayed events aggregated by user attribute. What if we open process map or statistic panel for another attribute. In such case the results will be aggregated by selected attribute. E.g., in Process map it is by default activity attribute.
+If we want to see results per user in Minit desktop application, we need to go to Statistics for user attribute. There are displayed events aggregated by user attribute. What if we open process map or statistic panel for another attribute. In such case the results will be aggregated by selected attribute. For example, in **Process map**, it's by default activity attribute.
 
 ## 6 Attribute by case aggregation
 
-:::image type="content" alt-text="This image has an empty alt attribute; its file name is image-4.pngmedia/image-4.png" source="media/image-4.png":::
+:::image type="content" alt-text="Screenshot of an attribute by case aggregation." source="media/image-4.png":::
 
 **What is total duration of cases processed per user?**
 
@@ -190,7 +194,7 @@ The calculation logic for this request is very similar to previous one. We group
 
 **Result: Peter = 4:30h; Michal = 4:30h; Denis = 3:00h **
 
-:::image type="content" alt-text="media/image-11.png" source="media/image-11.png":::
+:::image type="content" alt-text="Screenshot of the result." source="media/image-11.png":::
 
 As you can see we don't care how many events were done by user in case. One or multiple events done by given user, the length of case is not obviously changed. We don't want to take duration of single case multiple times for the same user. Result is calculated per user (attribute value), takes case level metric (duration of case, no duration of events) and takes each case into result once at most.
 
@@ -198,7 +202,7 @@ While this calculation seems odd, it is a very basic calculation used for standa
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="media/06-event-per-attribute-case.png" source="media/06-event-per-attribute-case.png":::
+:::image type="content" alt-text="Screenshot of the expression." source="media/06-event-per-attribute-case.png":::
 
 ****Usage in Minit desktop application:****
 
@@ -216,7 +220,7 @@ The results are not calculated per single case, but per attribute value, so Case
 
 Attribute conditional filter contains the attribute aggregation inside the single case. This explains the applicability of metrics using aggregation by attribute value in this filter.
 
-:::image type="content" alt-text="This image has an empty alt attribute; its file name is image-4.pngmedia/image-4.png" source="media/image-4.png":::
+:::image type="content" alt-text="Screenshot of the bonus attribute conditional filter." source="media/image-4.png":::
 
 ****How to filter cases with total duration for C activities longer than 1 hour and 30 minutes?****
 
@@ -228,13 +232,13 @@ The question requires to evaluate data set by single cases. In each case we look
 
 **Result:** Case2
 
-:::image type="content" alt-text="media/data-cond-filter-selection.png" source="media/data-cond-filter-selection.png":::
+:::image type="content" alt-text="Screenshot of the Case2 result." source="media/data-cond-filter-selection.png":::
 
 Attribute conditional filter is case level filter, it evaluates the single cases. For each case it calculates the result per selected attribute value (activity C in our example) and compares the calculated result to filter requirement (greater than 1h 30mins). As case may contain multiple events which fits the criteria (activity C) these event level values are (have to be) aggregated according to filter requirements (total of all events) to provide single value before comparison to filter requirement.
 
 Filter definition:
 
-:::image type="content" alt-text="media/07-conditional-filter-1.png" source="media/07-conditional-filter-1.png":::
+:::image type="content" alt-text="Screenshot of the filter definition." source="media/07-conditional-filter-1.png":::
 
 Basically, the filter evaluation at first calculates aggregated result (total) per attribute value(activity C) per case and afterward this result is compared to filter requirements (greater than 1h 30mins). Therefor any standard/custom metric which aggregates the results per attribute value is applicable also in Attribute Conditional filter.
 

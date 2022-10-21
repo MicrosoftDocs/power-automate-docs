@@ -1,6 +1,6 @@
 ---
 title: List of data types - custom metrics (preview)
-description: Get a list of data types in the minit desktop application in process advisor.
+description: Get a list of data types in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual

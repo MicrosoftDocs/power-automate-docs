@@ -1,6 +1,6 @@
 ---
 title: Constants (preview)
-description: Get a list of constants in the minit desktop application in process advisor.
+description: Get a list of constants in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual

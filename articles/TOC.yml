@@ -676,7 +676,7 @@
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-for-process-advisor-private-preview.md
-    - name: Install minit desktop application
+    - name: Install Minit desktop application
       href: ./minit/how-to-start-with-minit-desktop-application.md
     - name: Process hub
       items:
@@ -786,12 +786,14 @@
         href: ./minit/other-operations.md
       - name: Calculation context
         href: ./minit/calculation-context.md
-      - name: Custom Metrics - How to
-        href: ./minit/custom-metrics-how-to.md
-      - name: Custom Metrics - Beginner Examples
-        href: ./minit/custom-metrics-beginner-examples.md
-      - name: Custom Metrics - Advanced Examples
-        href: ./minit/custom-metrics-advanced-examples.md
+      - name: Calculation methods
+        items:
+        - name: Calculation methods
+          href: ./minit/custom-metrics-how-to.md
+        - name: Basic examples
+          href: ./minit/custom-metrics-beginner-examples.md
+        - name: Advanced examples
+          href: ./minit/custom-metrics-advanced-examples.md
     - name: Business rules
       items:
       - name: Business rules overview

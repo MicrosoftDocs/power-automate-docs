@@ -1,6 +1,6 @@
 ---
 title: Case categorization (preview)
-description: Learn how to define categories for cases in the minit desktop application in process advisor.
+description: Learn how to define categories for cases in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptuaL
@@ -20,11 +20,6 @@ search.audienceType:
 
 Case categorization allows you to define which cases are **Finished**, **Running**, **Stuck**, and **Incompletely imported**. These settings can then be used in any custom metric.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 Definition of the case categories can be done in the **Process Context** window in the **Project hub**, using the Process context menu.
 
 Case categories are split into two groups:
@@ -35,13 +30,11 @@ In the Exclusive group, a case may belong to only one of the three categories: e
 
 As for Incompletely imported, this category can be combined with any of the above-mentioned categories, for any case.
 
-Initialization and Setup
-
-:::image type="content" alt-text="media/image-49.png" source="media/image-49.png":::
+## Initialization and setup
 
 After initialization, all cases are categorized as **Finished**.
 
-The user can set rules for categorization in a simple or advanced mode. Any rule set in simple mode will be translated into advanced mode, however,** switching from advanced mode back to simple mode will reset the settings to the default**.
+You can set rules for categorization in a simple or advanced mode. Any rule set in simple mode will be translated into advanced mode, however, *switching from advanced mode back to simple mode will reset the settings to the default*.
 
 In simple mode, to set finished cases, please select which activities are finishing activities. Cases that end in one of these activities are considered **Finished**.
 
@@ -54,11 +47,13 @@ Incompletely imported cases are independent of this sequence, and any case that 
 
 The goal of the Incompletely imported category is to mark those cases where the export from the original database split the case in half and only included the latter part of the case.
 
-Advanced settings
+:::image type="content" alt-text="Screenshot of initialization and setup." source="media/image-49.png":::
+
+## Advanced settings
 
 For advanced settings, the logic with evaluation in the sequence is the same. Each category can be set in simple or advanced settings, irrelevant of the settings in other categories.
 
-Using Case Categorization
+## Use case categorization
 
 After defining the case categorization, each category has its own function within custom metrics, returning True or False for each case.
 
@@ -69,6 +64,3 @@ ISSTUCK()
 ISRUNNING()
 ISINCOMPLETEIMPORT()
 ```
-
-
-

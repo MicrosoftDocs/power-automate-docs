@@ -1,6 +1,6 @@
 ---
 title: Process animation (preview)
-description: Learn how to visualize the development of the process over time in the minit desktop application in process advisor.
+description: Learn how to visualize the development of the process over time in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -20,14 +20,9 @@ search.audienceType:
 
 *Process animation* is used to visualize the development of the process over time. The animation is always shown over the displayed process map or social graph. The instructions displayed on the Process map screen equally apply to the process map and social chart settings.
 
-:::image type="content" alt-text="media/image001-v53-1.png" source="media/image001-v53-1.png":::
-
 Animation settings are found in the right part of the screen under the **Animation** heading or the button.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+:::image type="content" alt-text="Screenshot of Animation setting button." source="media/image001-v53-1.png":::
 
 ## Animation Controls
 
@@ -37,7 +32,7 @@ The animation playback control is located in the bottom part of the screen, and 
 
 The information about the actual time in the process is shown on the left.
 
-:::image type="content" alt-text="media/image002-9.png" source="media/image002-9.png":::
+:::image type="content" alt-text="Screenshot of the playback time." source="media/image002-9.png":::
 
 ### Animation Speed
 
@@ -57,39 +52,42 @@ This setting can be used to hide the connections that are not presently active t
 
 ### Instant Animation Level
 
-:::image type="content" alt-text="media/image003-7.png" source="media/image003-7.png":::
+Setting the animation level to **Immediate** means that actual dynamics in the process will be shown during playback.
 
-Setting the animation level to **Immediate** means that actual dynamics in the process will be shown during playback. The purpose of the animation elements is as follows:
+:::image type="content" alt-text="Screenshot of an instant animation level." source="media/image003-7.png":::
+
+ The following sections explain the purpose of the animation elements.
 
 ### Number and Color Highlight of the Node
 
-:::image type="content" alt-text="media/image004-5.png" source="media/image004-5.png":::
+:::image type="content" alt-text="Screenshot of the number and color highlight of the node." source="media/image004-5.png":::
 
 The number at the chart node represents how many events of the given activity are currently in progress. The color highlight makes it possible to easily distinguish how many events are dealing with the activity at the moment. During the animation, it can be easily seen, which activities often take place in parallel.
 
-Refer to **Displaying the significance of values** to find out more about color highlighting.
+To learn more about color highlighting, go to [Display the significance of values](#display-the-significance-of-values) in this topic.
 
 ### Number and Color Highlight of the Edge
 
-:::image type="content" alt-text="media/image005-3.png" source="media/image005-3.png":::
-
 The number at the chart edge represents how many transitions between activities are currently in progress or, in other words, how many pending cases are waiting for the next event to take place. The color highlight of the edge allows to easily identify if there are too many cases concurrently waiting for an activity to take place.
 
-Refer to **Displaying the significance of values** to find out more about color highlighting.
+To learn more about color highlighting, go to [Display the significance of values](#display-the-significance-of-values) in this topic.
+
+:::image type="content" alt-text="Screenshot of the number and color highlight of the edge." source="media/image005-3.png":::
+
 
 ### Activity Progress
 
-:::image type="content" alt-text="media/image006-2.png" source="media/image006-2.png":::
+The following example shows the highlighted progress indicator for an activity in the process. This indicates the proportion of the count of already performed events of the activity compared to the total count of events of this activity in the process. If all events of the given activity being present in the process in question have already been played back in the animation, the indicator will fill the entire circle.
 
-The picture shows the highlighted progress indicator for an activity in the process, which indicates the proportion of the count of already performed events of the activity compared to the total count of events of this activity in the process. If all events of the given activity being present in the process in question have already been played back in the animation, the indicator will fill the whole circle.
+:::image type="content" alt-text="Screenshot of the progress indicator." source="media/image006-2.png":::
 
 ### Aggregated Animation Level
 
-:::image type="content" alt-text="media/image003-8.png" source="media/image003-8.png":::
+Setting the animation level to **Aggregated** means that during playback the process dynamics aggregated in the time period around the currently monitored time point will be shown. The length of the time period used to aggregate information for the current view is part of process mining. It depends on the duration of the process and the simulation speed setting. For example, the higher the simulation speed, the longer the time period is aggregated.
 
-Setting the animation level to **Aggregated** means that during playback the process dynamics aggregated in the time period around the currently monitored time point will be shown. The length of the time period used to aggregate information for the current view is part of process mining and depends on the duration of the process and the simulation speed setting (the higher is the simulation speed, the longer time period is aggregated) The purpose of animation elements is as follows:
+:::image type="content" alt-text="Screenshot of the aggregated animation level." source="media/image003-8.png":::
 
-## Displaying the Significance of Values
+## Display the significance of values
 
 The value significance display switch can be used to set the mode with the color highlighting of edges and nodes in the animation.
 

@@ -1,6 +1,6 @@
 ---
 title: Case metrics filter (preview)
-description: Learn how to filter cases based on metrics in the minit desktop application in process advisor.
+description: Learn how to filter cases based on metrics in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -26,14 +26,9 @@ This case-level filter can be used to filter cases based on various metrics. The
 
 - **Edge metric:** Evaluation of the case when at least one or all edges meet the edge metric.
 
-   :::image type="content" alt-text="Screenshot of the dropdown containing the types of metrics." source="media/casemetricselection-v52.png":::
+   :::image type="content" alt-text="Screenshot of the dropdown menu containing the types of metrics." source="media/casemetricselection-v52.png":::
 
-In all types of metrics, you can select between standard default metrics found in minit and custom metrics created within the process context.
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+In all types of metrics, you can select between standard default metrics found in Minit and custom metrics created within the process context.
 
 ## Select the case metric
 

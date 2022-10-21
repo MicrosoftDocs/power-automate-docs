@@ -1,6 +1,6 @@
 ---
 title: Export (preview)
-description: Learn how to export process data to an external file in the minit desktop application in process advisor.
+description: Learn how to export process data to an external file in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -20,7 +20,7 @@ search.audienceType:
 
 Here you can export process data to an external file. After filling in all required data, press the Export button.
 
-:::image type="content" alt-text="media/Export.png" source="media/Export.png":::
+:::image type="content" alt-text="Screenshot of Export screen." source="media/Export.png":::
 
 ### Apply filters
 

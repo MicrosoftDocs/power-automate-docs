@@ -1,6 +1,6 @@
 ---
 title: Tips and examples (preview)
-description: Get tips on how to define a metric formula, reference an attribute name, and more in the minit desktop application in process advisor.
+description: Get tips on how to define a metric formula, reference an attribute name, and more in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -24,17 +24,17 @@ The metric formula can currently be defined in a text form and can consist of pr
 
 Individual operations are divided into two basic groups:
 
-- [**Aggregation operations**](aggregations.md) - input of aggregation operation is a set of values for which the resulting value will be calculated (e.g. average, maximum, ...)
+- [**Aggregation operations:**](aggregations.md) Input of aggregation operation is a set of values for which the resulting value will be calculated (for example, average, maximum, and more.)
 
-- **Scalar operations** - the input of scalar operation is one or more values for which the resulting value will be calculated (e.g. absolute value of the number, obtaining part of the tax, ...)
+- **Scalar operations:** The input of scalar operation is one or more values for which the resulting value will be calculated (for example, absolute value of the number, obtaining part of the tax, and more.)
 
-Operations can use [constants](constants.md), can be combined using [unary or binary operators](unary-operators.md) (addition, subtraction, ...) or nested. Exceptions are aggregation operations that are not be able to be nested further.
+Operations can use [constants](constants.md), can be combined using [unary or binary operators](unary-operators.md) (for example, addition, subtraction, and more) or nested. Exceptions are aggregation operations that are not be able to be nested further.
 
 Scalar operations also include operations to obtain a value (event, case, ...), either directly available in the form of an attribute or in the form of derived statistics (event duration).
 
-Some operations also support specifying the context for which the operation is evaluated. This is particularly important for aggregation operations that can aggregate values e.g. only for specific activity, or for all activities or events. The implicit context resulting from the metric context or the parent operation context is also supported.
+Some operations also support specifying the context for which the operation is evaluated. This is important for aggregation operations that can aggregate values, for example, only for specific activity, or for all activities or events. The implicit context resulting from the metric context or the parent operation context is also supported.
 
-Metric formula can return one of the [supported data types](data-types-custom-metrics.md) (data types for specific formulas are defined in the corresponding section of this chapter next to the formula syntax definition).
+Metric formula can return one of the [supported data types](data-types-custom-metrics.md) (data types for specific formulas are defined in the corresponding section of this topic next to the formula syntax definition).
 
 ### Aggregation operations
 
@@ -70,13 +70,13 @@ The purpose of scalar operations is to get one value and its transformation to t
 
 If an attribute name is used as a parameter for operation, there are three ways for how to reference it:
 
-- Using **the attribute name directly **(e.g. Resource)
+- Use **the attribute name directly **(for example, Resource).
 
-- Using the **GETVALUE("attribute name")** operation (e.g. GETVALUE("Resource"))
+- Use the **GETVALUE("attribute name")** operation (for example, `GETVALUE("Resource")`).
 
-- Using the **shortened attribute name** directly (e.g. attribute "Resource ID" may be referenced as ResourceID)
+- Use the **shortened attribute name** directly (for example, attribute "Resource ID" might be referenced as **ResourceID**).
 
-The second form is used, when the attribute name does not fullfill the naming convention. Attribute naming convention is defined as following:
+The second form is used, when the attribute name doesn't fulfill the naming convention. Attribute naming convention is defined as following:
 
 - The Attribute name should start with a letter character or underscore
 
@@ -84,7 +84,7 @@ The second form is used, when the attribute name does not fullfill the naming co
 
 The third form is (optionally) used when the attribute name fulfills the naming convention, but also contains space characters. Instead of using the second form GETVALUE("attribute name"), it is possible to remove space characters and use shortened version attributename. Both forms are equivalent. Notice the IntelliSense proposal to shorten the space-less version of attribute names.
 
-:::image type="content" alt-text="media/attributeName.png" source="media/attributeName.png":::
+:::image type="content" alt-text="Screenshot of the 'Custom metric' screen showing the Attribute-name custom metric name." source="media/attributeName.png":::
 
 ## Examples of VALID attribute names
 
@@ -105,7 +105,6 @@ The third form is (optionally) used when the attribute name fulfills the naming 
 ## Metric formula examples
 
 To calculate the relative duration of activity in a map:
-
 
 ```
 AVG (DURATION()) / AVG (VIEWCASES, DURATION())

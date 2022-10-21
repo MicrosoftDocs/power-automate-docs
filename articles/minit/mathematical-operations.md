@@ -1,6 +1,6 @@
 ---
 title: List of mathematical operations (preview)
-description: Get a list of the parameters and output data types for mathematical features in the minit desktop application in process advisor.
+description: Get a list of the parameters and output data types for mathematical features in the init desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -18,17 +18,15 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 ## ABS([value])
 
 returns the absolute value of the number
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+**Parameters:**
+
+- **[value]** - input value
+
+   Data type: FLOAT, INT
 
 **Output Data Type**: FLOAT, INT
 
@@ -36,8 +34,11 @@ Data type: FLOAT, INT
 
 returns the smallest integer greater that or equal to the given number
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+**Parameters:**
+
+- **[value]** - input value
+
+   Data type: FLOAT, INT
 
 **Output Data Type**: FLOAT, INT
 
@@ -45,8 +46,11 @@ Data type: FLOAT, INT
 
 returns the greatest integer smaller than or equal to the given number
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+**Parameters:**
+
+- **[value]** - input value
+
+   Data type: FLOAT, INT
 
 **Output Data Type**: FLOAT, INT
 
@@ -54,8 +58,11 @@ Data type: FLOAT, INT
 
 returns the maximum of the given values (value1 and value2)
 
-**Parameters:**- **[value1]** - input value
-Data type: FLOAT, INT, DATE, TIME
+**Parameters:**
+
+- **[value1]** - input value
+
+   Data type: FLOAT, INT, DATE, TIME
 
 - **[value2]** - input value
 Date type: FLOAT, INT, DATE, TIME
@@ -66,11 +73,15 @@ Date type: FLOAT, INT, DATE, TIME
 
 returns the minimum of the given values (value1 and value2)
 
-**Parameters:**- **[value1]** - input value
-Data type: FLOAT, INT, DATE, TIME
+**Parameters:**
 
-- [value2] - input value
-Data type: FLOAT, INT, DATE, TIME
+- **[value1]** - input value
+
+   Data type: FLOAT, INT, DATE, TIME
+
+- **[value2]** - input value
+
+   Data type: FLOAT, INT, DATE, TIME
 
 **Output Data Type**: FLOAT, INT
 
@@ -78,11 +89,15 @@ Data type: FLOAT, INT, DATE, TIME
 
 returns the logarithm of the number to the specified base
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+**Parameters:**
+
+- **[value]** - input value
+
+   Data type: FLOAT, INT
 
 - **[base]** - base of the logarithm
-Data type: FLOAT, INT
+
+   Data type: FLOAT, INT
 
 **Output Data Type**: FLOAT
 
@@ -90,13 +105,15 @@ Data type: FLOAT, INT
 
 returns the value of the specified expression to the specified power
 
+**Parameters:**
 
+- **[value]** - input value
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+   Data type: FLOAT, INT
 
 - **[exponent]** - specified power
-Data type: FLOAT, INT
+
+   Data type: FLOAT, INT
 
 **Output Data Type**: FLOAT
 
@@ -104,11 +121,15 @@ Data type: FLOAT, INT
 
 rounds a number to a specified number of digits
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+**Parameters:**
+
+- **[value]** - input value
+
+   Data type: FLOAT, INT
 
 - **[digits]** - number of digits
-Data type: INT
+
+   Data type: INT
 
 **Output Data Type**: FLOAT
 
@@ -116,8 +137,11 @@ Data type: INT
 
 returns -1 if value is smaller than 0, 0 if value is 0, 1 if value is greater than 0
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+**Parameters:
+
+**- **[value]** - input value
+
+   Data type: FLOAT, INT
 
 **Output Data Type**: INT
 
@@ -125,8 +149,11 @@ Data type: FLOAT, INT
 
 calculates the square of the value (second power)
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+**Parameters:
+
+**- **[value]** - input value
+
+   Data type: FLOAT, INT
 
 **Output Data Type**: FLOAT
 
@@ -134,8 +161,11 @@ Data type: FLOAT, INT
 
 calculates the square root of the value
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+**Parameters:**
+
+- **[value]** - input value
+
+   Data type: FLOAT, INT
 
 **Output Data Type**: FLOAT
 
@@ -143,8 +173,11 @@ Data type: FLOAT, INT
 
 returns the integer part of the number (rounded to the nearest integer toward zero)
 
-**Parameters:**- **[value]** - input value
-Data type: FLOAT, INT
+**Parameters:**
+
+- **[value]** - input value
+
+   Data type: FLOAT, INT
 
 **Output Data Type**: FLOAT
 

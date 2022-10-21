@@ -1,6 +1,6 @@
 ---
 title: List of unary operators (preview)
-description: Get a list of unary operators in the minit desktop application in process advisor.
+description: Get a list of unary operators in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -17,6 +17,8 @@ search.audienceType:
 # List of unary operators (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+The following tables describe unary and binary operators.
 
 | Operator | Description | Input data type | Output data type |
 | - | - | - | - |

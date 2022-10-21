@@ -1,6 +1,6 @@
 ---
 title: Timeframe filter (preview)
-description: Learn how to select the timeframe of interest in your analysis in the minit desktop application in process advisor.
+description: Learn how to select the timeframe of interest in your analysis in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -18,22 +18,19 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-You can use this filter to select the timeframe of interest in your analysis. On the left side, you can edit the filter rule, the right side shows the visualization of the course of the process divided into equal time intervals. The number of time intervals, i.e. chart detail level, can be changed by the switch.
+Use this filter to select the time frame of interest in your analysis. 
 
-:::image type="content" alt-text="media/image007.png" source="media/image007.png":::
+:::image type="content" alt-text="Screenshot of the timeframe filter interval icons." source="media/image007.png":::
 
-:::image type="content" alt-text="media/image-57.png" source="media/image-57.png":::
+On the left side, you can edit the filter rule. The right side shows the visualization of the course of the process divided into equal time intervals. The number of time intervals, (for example, chart detail level), can be changed by the switch.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+:::image type="content" alt-text="Screenshot of the course of the process divided into equal time intervals." source="media/image-57.png":::
 
 ## Evaluation of presence in a timeframe
 
 Here it is necessary to specify the evaluation method to determine if a case falls in the specified timeframe.
 
-:::image type="content" alt-text="media/image009-1-1.png" source="media/image009-1-1.png":::
+:::image type="content" alt-text="Screenshot of the evaluation method." source="media/image009-1-1.png":::
 
 ### Fit in
 
@@ -59,17 +56,17 @@ The case must start before the beginning of the specified timeframe and finish a
 
 To specify a timeframe, enter its start and finish time in the filter rule.
 
-:::image type="content" alt-text="media/duration1.png" source="media/duration1.png":::
+:::image type="content" alt-text="Screenshot of the start and finish timeframe." source="media/duration1.png":::
 
 Or you can specify a timeframe by marking it on the chart showing the course of the process.
 
-:::image type="content" alt-text="media/image-58.png" source="media/image-58.png":::
+:::image type="content" alt-text="Screenshot of marking the timeframe on the chart." source="media/image-58.png":::
 
 ### Selecting which cases to display in the chart
 
 Here you can select the information to be displayed in the chart.
 
-:::image type="content" alt-text="media/image012-3.png" source="media/image012-3.png":::
+:::image type="content" alt-text="Screenshot of selecting the cades to display in the chart." source="media/image012-3.png":::
 
 #### Ongoing cases
 

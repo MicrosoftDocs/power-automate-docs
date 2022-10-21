@@ -1,6 +1,6 @@
 ---
 title: Activities - Event level statistics (preview)
-description: Learn about statistics for activities or event-level attributes in the process undergoing analysis in the minit desktop application in process advisor.
+description: Learn about statistics for activities or event-level attributes in the process undergoing analysis in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -20,10 +20,7 @@ search.audienceType:
 
 These statistics refer to activities or event-level attributes in the process undergoing analysis, and they display their various properties. All event-level attributes (including activities) share the same event-level statistics.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+
 
 ### Statistical chart
 
@@ -91,7 +88,7 @@ This item displays the difference between the longest and shortest duration of t
 
 This chart is available if there are two timestamps recorded in the data and imported with the process.
 
-#### Duration std. dev.
+#### Duration standard deviation
 
 This item displays the standard deviation of each activity in the process.
 
@@ -137,11 +134,11 @@ This item displays the value of loop outflow of an activity in the process.
 
 This item displays the percentage of loop outflow of an activity relative to the total occurrence of that activity in the process.
 
-#### Net Loop Gain
+#### Net loop gain
 
 This item displays the value of net loop gain of an activity in the process.
 
-#### Net Loop Gain (%)
+#### Net loop gain percentage
 
 This item displays the percentage of net loop gain of an activity relative to the total occurrences of that activity in the process.
 
@@ -151,11 +148,11 @@ Besides these standard statistics, the list contains all defined Event-level cus
 
 The summary provides an overview of standard metrics provided by Minit. The list of these metrics is not configurable and no additional metrics can be included in this summary row. The table of activities (or attribute values) contains standard event-level metrics, and custom metrics applicable on the event level. In the table, all event-level custom metrics are available regardless of their discrete or continuous output data type.
 
-:::image type="content" alt-text="media/event-table.png" source="media/event-table.png":::
+:::image type="content" alt-text="Screenshot of the summary header and table of activities." source="media/event-table.png":::
 
-The summary header contains the following metrics:
+The summary header contains the metrics in the following sections.
 
-#### Activities (Values)
+#### Activities (values)
 
 The total number of unique values for activities or event-level attributes. Activity attribute is defined in process import/configuration and is not affected by the selection of mining attribute on the process map.
 
@@ -179,7 +176,7 @@ The mean number of occurrences of a given activity (attribute value) in a single
 
 Standard deviation of activity (attribute value) occurrences in a view.
 
-#### Minimum duration, Maximum duration
+#### Minimum duration and maximum duration
 
 The global minimum and maximum duration of a single event.
 
@@ -187,7 +184,7 @@ The global minimum and maximum duration of a single event.
 
 The average duration of events.
 
-#### Duration std. deviation
+#### Duration standard deviation
 
 Standard deviation of activity (attribute value) durations in a view.
 

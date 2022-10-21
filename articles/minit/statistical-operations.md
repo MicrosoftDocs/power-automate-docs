@@ -1,6 +1,6 @@
 ---
 title: List of statistical operations (preview)
-description: Learn the statistical operations in the minute desktop application in process advisor.
+description: Learn the statistical operations in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -19,11 +19,6 @@ search.audienceType:
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This article lists statistical operations in the minute desktop application.
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## START()
 
@@ -98,7 +93,8 @@ returns TRUE if the event occurred in parallel with another event which fullfill
 **Parameters:**
 
 - ***[condition]*** - condition under which is parallelism accepted
-Data type: BOOLEAN
+
+   Data type: BOOLEAN
 
 **Output Data Type**: BOOL
 
@@ -127,137 +123,113 @@ Returns the total count of all reworks (loops and self-loops) within the case
 **Parameters:**
 
 - ***[attributeName]*** - Attribute to calculate repetitions. If none is entered, the default attribute is mining attribute (activity attribute), optional.
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: INT
-
-
 
 ## LOOPCOUNT([attributeName])
 
 returns count of loops within the case
 
-
-
 **Supported context:** case
 
 **Parameters:**
 
 - ***[attributeName]*** - Attribute to calculate repetitions. If none is entered, the default attribute is mining attribute (activity attribute), optional
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: INT
-
-
 
 ## SELFLOOPCOUNT([attributeName])
 
 returns count of self-loops within the case
 
-
-
 **Supported context:** case
 
 **Parameters:**
 
 - ***[attributeName]*** - Attribute to calculate repetitions. If none is entered, the default attribute is mining attribute (activity attribute), optional
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: INT
-
-
 
 ## OCCURRENCE([attributeName])
 
 returns occurrence index of a given event attribute value within the case
-
-
 
 **Supported context:** event
 
 **Parameters:**
 
 - ***[attributeName]*** - Attribute to calculate repetitions. If none is entered, the default attribute is mining attribute (activity attribute), optional
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: INT
-
-
 
 ## ISSELFLOOP([attributeName])
 
 returns true when event/edge has self-loop repetition
-
-
 
 **Supported context:** event, edge
 
 **Parameters:**
 
 - ***[attributeName]*** - Attribute to calculate repetitions. If none is entered, default attribute is mining attribute (activity attribute), optional
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: BOOL
-
-
 
 ## ISLOOP([attributeName])
 
 returns true when event/edge has loop repetition
-
-
 
 **Supported context:** event, edge
 
 **Parameters:**
 
 - ***[attributeName]*** - Attribute to calculate repetitions. If none is entered, the default attribute is mining attribute (activity attribute), optional
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: BOOL
-
-
 
 ## ISREWORK([attributeName])
 
 returns true when event/edge has any kind of rework (self-loop or loop).
-
-
 
 **Supported context:** event, edge
 
 **Parameters:**
 
 - ***[attributeName]*** - Attribute name to calculate repetitions. If none is entered, the default attribute is mining attribute (activity attribute), optional
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: BOOL
-
-
 
 ## ISLOOPINFLOW([attributeName])
 
 returns true when event/edge has loop inflow
 
-
-
 **Supported context:** event, edge
 
 **Parameters:**
 
 - ***[attributeName]*** - Attribute to calculate repetitions. If none is entered, the default attribute is mining attribute (activity attribute), optional
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: BOOL
-
-
 
 ## ISLOOPOUTFLOW([attributeName])
 
 returns true when event/edge has loop outflow
 
-
-
 **Supported context:** event, edge
 
 **Parameters:**
@@ -266,153 +238,128 @@ returns true when event/edge has loop outflow
 
 **Output Data Type**: BOOL
 
-
-
 ## LOOPGAIN([attributeName])
 
 returns difference between the event's loop outflow and loop inflow. Value +1 when the event has loop outflow and no loop inflow. Value -1 when the event has no loop outflow and loop inflow. Otherwise returns 0.
-
-
 
 **Supported context:** event
 
 **Parameters:**
 
 - ***[attributeName]*** - Attribute name to calculate repetitions. If none is entered, the default attribute is mining attribute (activity attribute), optional
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: INT
-
-
 
 ## MEDIAN([context],[value],[compression])
 
 calculates the approximate median of values grouped according to the defined context.
 
-
-
 **Supported context:** process, case, event, edge
 
 **Parameters:**
 
 - ***[context]*** - defines the context in which the operation is calculated
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 - ***[value]*** - value over which the median is calculated
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 - ***[compression]*** - controls the estimation accuracy and memory utilization. High compression values increase the accuracy of estimation but make the operation slower. The value must be between 20 and 1000, the default value is 200.
-Data type: FLOAT
+
+   Data type: FLOAT
 
 **Output Data Type**: INT, FLOAT, DATE, TIME
-
-
 
 ## QUANTILE([context],[value],[q],[compression])
 
 Calculates the approximate q-th quantile of values grouped according to defined context. The q-th quantile of a data set is defined as that value where a q fraction of the data is below that value and (1-q) fraction of the data above that value.
 
-
-
 **Supported context:** process, case, event, edge
 
 **Parameters:**
 
 - ***[context]*** - defines the context in which the operation is calculated
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 - ***[value]*** - value for evaluation
-Data type: INT, FLOAT, DATE, TIME
+
+   Data type: INT, FLOAT, DATE, TIME
 
 - ***[q]*** - quantile to compute, must be between 0 and 1 inclusive.
-Data type: FLOAT (only constant value is allowed)
+
+   Data type: FLOAT (only constant value is allowed)
 
 - ***[compression]*** - controls the estimation accuracy and memory utilization. High compression values increase the accuracy of estimation but make the operation slower. The value must be between 20 and 1000, the default value is 200.
-Data type: FLOAT
+
+   Data type: FLOAT
 
 **Output Data Type**: INT, FLOAT, DATE, TIME
-
-
 
 ## CDF([context],[value],[x],[compression])
 
 calculates the estimated cumulative distribution function (cdf) for the given value from values grouped according to the defined context.
-
-
 
 **Supported context:** case, event, edge
 
 **Parameters:**
 
 - ***[context]*** - defines the context in which the operation is calculated
-Data type: STRING (only fixed string is allowed)
+
+   Data type: STRING (only fixed string is allowed)
 
 - ***[value]*** - value for evaluation for cumulative distribution.
-Data type: INT, FLOAT, DATE, TIME
+
+   Data type: INT, FLOAT, DATE, TIME
 
 - ***[x]*** - threshold value
 Data type: INT, FLOAT, DATE, TIME (need to be the same data type as [value] parameter)
 
 - ***[compression]*** - controls the estimation accuracy and memory utilization. High compression values increase the accuracy of estimation but make the operation slower. The value must be between 20 and 1000, the default value is 200.
-Data type: FLOAT
+
+   Data type: FLOAT
 
 **Output Data Type**: INT, FLOAT, DATE, TIME
-
-
 
 ## ISFINISHED()
 
 returns true when the case is categorized as finished (as defined in Process Context – Case Categorization)
 
-
-
 **Supported context:** case
 
 **Output Data Type**: BOOL
-
-
 
 ## ISRUNNING()
 
 returns true when the case is categorized as running (as defined in Process Context – Case Categorization)
 
-
-
 **Supported context:** case
 
 **Output Data Type**: BOOL
-
-
 
 ## ISSTUCK()
 
 returns true when the case is categorized as stuck (as defined in Process Context – Case Categorization)
 
-
-
 **Supported context:** case
 
 **Output Data Type**: BOOL
-
-
 
 ## ISINCOMPLETEIMPORT()
 
 returns true when the case is categorized as import incomplete (as defined in Process Context – Case Categorization)
 
-
-
 **Supported context:** case
 
 **Output Data Type**: BOOL
 
-
-
 ## STATS([Aggregate]*,[Type]**)
 
 returns calculated process statistics according to the selected aggregation and type of statistics
-
-
 
 **Supported context:** process
 
@@ -424,11 +371,9 @@ returns calculated process statistics according to the selected aggregation and 
 
 **Output Data Type**: INT, FLOAT, TIME, DATE
 
+## Types of Aggregations
 
-
-## * Types of Aggregations
-
-Allowed aggregation types are:
+Following are the allowed aggregation types:
 
 - Sum
 
@@ -442,18 +387,14 @@ Allowed aggregation types are:
 
 - Stdev
 
-## ** Types of Statistics
+## Types of Statistics
 
-| NAME | DESCRIPTION |
+| Name | Description |
 | - | - |
-| **CaseStart** | Case start |
-| **CaseEnd** | Case end |
-| **CaseDuration** | Case Duration |
-| **CaseActiveTime** | Case Active Time |
-| **CaseWaitingTime** | Case Waiting Time |
-| **CaseUtilization** | Case Utilization |
-| **EventCount** | Event Count |
-
-
-
-
+| CaseStart | Case start |
+| CaseEnd | Case end |
+| CaseDuration | Case Duration |
+| CaseActiveTime | Case Active Time |
+| CaseWaitingTime | Case Waiting Time |
+| CaseUtilization | Case Utilization |
+| EventCount | Event Count |

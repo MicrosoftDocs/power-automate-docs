@@ -1,7 +1,6 @@
 ---
 title: Case attributes conditional filter (preview)
-description: Learn how to use the case attributes conditional filter in minit desktop application in process advisor.
-
+description: Learn how to use the case attributes conditional filter in Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -19,17 +18,17 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-This filter enhances the Attribute filter with additional criteria se the case attributes conditional filter. E.g. you still want to find all cases where activity Approval occurs, but only those where this Approval was executed by a specific resource or the duration of this Approval exceeds a certain KPI.
+This filter enhances the **Attribute** filter with additional criteria. For example, you still want to find all cases where activity approval occurs, but only those where this approval was executed by a specific resource or the duration of this approval exceeds a certain KPI.
 
-To do that, select the additional criteria type Attribute/Metric/Process Metric:
+1. Select the additional criteria type Attribute/Metric/Process Metric.
 
-:::image type="content" alt-text="media/image016-v52.png" source="media/image016-v52.png":::
+   :::image type="content" alt-text="Screenshot of the additional criteria type screen." source="media/image016-v52.png":::
 
-Process metric option calculates results not per a single case, but total value for all case in the existing process. In the View filtering, it returns either empty (0% cases) or full (100% cases) data set coverage. The usage of Process metrics is reasonable for filters in Business rules - it is possible to deactivate or activate the business rule by filtering out the whole data set.
+   Process metric option calculates results not per a single case, but total value for all case in the existing process. In the View filtering, it returns either empty (0% cases) or full (100% cases) data set coverage. The usage of Process metrics is reasonable for filters in Business rules. It's possible to deactivate or activate the business rule by filtering out the whole data set.
 
-Also specify the value(s) or custom expression for it:
+1. Specify the value or values, or custom expression for it.
 
-:::image type="content" alt-text="media/image017-v52.png" source="media/image017-v52.png":::
+   :::image type="content" alt-text="Screenshot of values or expressions." source="media/image017-v52.png":::
 
 
 

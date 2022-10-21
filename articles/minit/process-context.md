@@ -1,6 +1,6 @@
 ---
 title: Process context (preview)
-description: Learn about analytical definitions and settings in the minit desktop application in process advisor.
+description: Learn about analytical definitions and settings in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -20,12 +20,7 @@ search.audienceType:
 
 The purpose of Process context is to store the analytical definitions and settings which are valid over the process data and thus are available for sharing across all process views. Definitions like custom metrics are named and can be easily used in a view, without the need to re-create it in single views.
 
-:::image type="content" alt-text="media/PC-overview.png" source="media/PC-overview.png":::
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+:::image type="content" alt-text="Screenshot of the Custom metrics tab." source="media/PC-overview.png":::
 
 Process context consists of the following sub-sections:
 
@@ -37,7 +32,7 @@ Process context consists of the following sub-sections:
 
 - **Case categorization**: Manage case categorization, for more information, see [Case categorization](case-categorization.md).
 
-- **General settings:** Can be used to select the default **Activity label**. For more information about activity labels, see chapter [View Settings](view-settings.md).
+- **General settings:** Can be used to select the default **Activity label**. To learn more about activity labels, go to [View Settings](view-settings.md).
 
 
 

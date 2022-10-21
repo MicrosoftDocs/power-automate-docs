@@ -20,11 +20,6 @@ search.audienceType:
 
 *Process hub* is the main and starting screen of minit. It gives you an overview of created processes and process views, and it allows you to analyze them.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 ## Launch Process hub
 
 1. sign in with your Azure DevOps account.
@@ -84,19 +79,19 @@ The center of the screen lists the processes and process views. It's possible to
 
 :::image type="content" alt-text="Screenshot of processes and process views." source="media/image-1.png":::
 
-- **Processes** – grouped view in which a process is indicated by the name and all corresponding views are located below the process. The structure is collapsible/expandable by clicking the circle icon next to the process name.
+- **Processes** – grouped view in which a process is indicated by the name and all corresponding views are located below the process. The structure is collapsible/expandable by selecting the circle icon next to the process name.
 
 - **Views** – plain list of view tiles from all processes.
 
 - **List** – a view similar to Processes but without the view tiles. Views have a form of an item in a list with more details.
 
-You can sort the selected display form by clicking the **sort indicator** on the top of the list. Availability of sorting criteria depends on the selected display form.
+You can sort the selected display form by selecting the **sort indicator** icon on the top of the list. Availability of sorting criteria depends on the selected display form.
 
 ## Choose how to manage your process
 
-The process hub is used to manage the processes. The management menu is accessible by clicking the **…** icon next to the process name.
+Use the process hub to manage your processes. Access the management menu by selecting (**...**) next to the process name.
 
-The menu contains the following options:
+
 
 :::image type="content" alt-text="Screenshot of options for how to manage your process." source="media/image-3.png":::
 

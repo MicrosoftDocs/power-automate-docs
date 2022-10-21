@@ -1,6 +1,6 @@
 ---
 title: Case attributes filter (preview)
-description: Learn how to use the case attributes filter in minit desktop application in process advisor.
+description: Learn how to use the case attributes filter in Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -20,18 +20,11 @@ search.audienceType:
 
 Use this filter to select only those cases that contain or don't contain a specific attribute. For example, select cases in which a specific activity is being performed, or cases in which a specific resource is present.
 
-:::image type="content" alt-text="media/image013-3.png" source="media/image013-3.png":::
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 ## Attribute selection
 
 Here you need to select an attribute for the filter rule. All available attributes in the process are selectable.
 
-:::image type="content" alt-text="media/image014-3.png" source="media/image014-3.png":::
+:::image type="content" alt-text="Screenshot of attribute selection." source="media/image014-3.png":::
 
 ### Select attribute values
 
@@ -41,12 +34,12 @@ Select attribute values for the filter rule on the right side of the screen. The
 
    :::image type="content" alt-text="Screenshot of attribute values list." source="media/image015a.png":::
 
-- **Expression:** (Available for both string and numeric attributes.) In this tab, you can specify an expression such as `„Starts with", „Contains"` for string, and an expression such as `„Greater than", „Equal"` also for numeric attributes.
+- **Expression:** Available for both string and numeric attributes. In this tab, you can specify an expression such as `„Starts with", „Contains"` for string, and an expression such as `„Greater than", „Equal"` also for numeric attributes.
 
-   :::image type="content" alt-text="media/expression.png" source="media/expression.png":::
+   :::image type="content" alt-text="Screenshot of attribute values." source="media/expression.png":::
 
    For an expression, it's possible to use custom expression as in custom metrics. To switch between constant value and custom expression, select **Fx**.
 
-   :::image type="content" alt-text="media/expressioncm.png" source="media/expressioncm.png":::
+   :::image type="content" alt-text="Screenshot of Expression tab." source="media/expressioncm.png":::
 
 

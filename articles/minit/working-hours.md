@@ -1,6 +1,6 @@
 ---
 title: Working hours (preview)
-description: Learn how to define calendar templates in the minit desktop application in process advisor.
+description: Learn how to define calendar templates in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -20,14 +20,9 @@ search.audienceType:
 
 The Working hours section allows you to define calendar templates, which can be applied to process views in the Process explorer in order to influence the performance analysis calculation, which is by default performed on a 24/7 basis.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+You can define a new calendar template by selecting ** Create new calendar template** in the upper right corner of the screen or by duplicating existing calendar via the **…** button and selecting **Create duplicate** option at the right end of the calendar template entry.
 
-You can define a new calendar template by clicking the** Create new calendar template** button in the upper right corner of the screen or by duplicating existing calendar via the **…** button and selecting **Create duplicate** option at the right end of the calendar template entry.
-
-To edit the calendar template, simply click the template name. To delete it choose the **Delete** option available in the … context menu. When a calendar template, which is in use by any process view, is deleted, user is informed when opening the view.
+To edit the calendar template, select the template name. To delete it, select **Delete** in the **...** context menu. When a calendar template that's in use by any process view is deleted, you're informed when opening the view.
 
 ## Calendar template definition
 
@@ -45,9 +40,9 @@ The name of the calendar template.
 
 You can choose from two options, which influence how calendar template influences the performance calculations, when applied to the process view:
 
-- **Resource specific** - the calendar template is applied only to work performed by resources, i.e. activities/nodes in the process map (relevant for eventlogs with 2 timestamps). Waiting times between activities are calculated on a 24/7 basis.
+- **Resource specific:** The calendar template is applied only to work performed by resources (activities/nodes) in the process map (relevant for event logs with two timestamps). Waiting times between activities are calculated on a 24 hour, seven days a week basis.
 
-- **SLA specific** - the calendar template is applied to both activities and edges (relevant for all eventlogs). Both active and waiting time is recalculated with the applied calendar template configuration.
+- **SLA specific:** The calendar template is applied to both activities and edges (relevant for all event logs). Both active and waiting time is recalculated with the applied calendar template configuration.
 
 ### Template privacy
 
@@ -59,36 +54,34 @@ In the working week section you are defining the structure of your working time 
 
 ### Calendar type
 
-This allows you to specify the behaviour of the working time setting controls:
+This allows you to specify the behavior of the working time setting controls:
 
-- **Mo, Tu, We, Th, Fr, Sa, Su** - time for each working day is set separately
+- **Mo, Tu, We, Th, Fr, Sa, Su:** Time for each working day is set separately.
 
-- **Mo-Fr, Sa, Su** - Monday to Friday share the same settings, time for Saturday and Sunday is set separately
+- **Mo-Fr, Sa, Su:** Monday through Friday share the same settings. Time for Saturday and Sunday is set separately.
 
-- **Mo-Su** - Monday to Sunday share the same settings
+- **Mo-Su:** Monday through Sunday share the same settings.
 
 ### Settings
 
 To set the specific day as non-working, uncheck the Working checkbox on the right side of the item. To set the working time, drag the left and right side of the blue slider corresponding to the respective working day.
 
-## Non-Working days
+## Non-working days
 
 Non-Working days section is used to define special non-working days such as bank holidays, national holidays or company specific holidays.
 
 There are 2 main types of non-working days:
 
-- **Recurring** - the day marked as Non-working day (recurring) is defined as non-working for each year, no matter where you set it
+- **Recurring:** The day marked as non-working day (recurring) is defined as non-working for each year, regardless of where you set it.
 
-- **Non-recurring** - the day marked as Non-working day is defined as non-working only for the respective year
+- **Non-recurring:** The day marked as non-working day is defined as non-working only for the respective year.
 
-To set the day(s) as Working or Non-working, select the desired day or range of days in the calendar view and click on the relevant item below the calendar.
+To set the day(s) as Working or Non-working, select the desired day or range of days in the calendar view and select the relevant item below the calendar.
 
-To switch the displayed year, click the arrows next to the year label above the calendar view.
+To switch the displayed year, select the arrows next to the year label above the calendar view.
 
 ### Holidays
 
-Minit allows you to simplify the definition of bank and national holidays by importing them all at once. To initialise the import, click on the Import holidays button below the calendar view. A dialog window is displayed, where you can choose the specific calendar and specify the year range. Minit will automatically set holidays for the defined range and allows you to import as many countries as needed.
+Minit allows you to simplify the definition of bank and national holidays by importing them all at once. To initialize the import, select **Import holidays** below the calendar view. A window is displayed where you can choose the specific calendar and specify the year range. Minit will automatically set holidays for the defined range and allows you to import as many countries as needed.
 
-If you, by mistake, imported a set of holidays, you can also easily delete them from the calendar template by clicking the Remove holidays button below the calendar view.
-
-
+If you imported a set of holidays by mistake, you can also easily delete them from the calendar template by selecting **Remove holidays** below the calendar view.

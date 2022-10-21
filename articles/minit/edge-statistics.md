@@ -1,6 +1,6 @@
 ---
 title: Edge statistics (preview)
-description: View edges in the process undergoing analysis and display their various properties in the minit desktop application in process advisor.
+description: View edges in the process undergoing analysis and display their various properties in the Minit desktop application in process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -20,14 +20,9 @@ search.audienceType:
 
 These statistics refer to edges in the process undergoing analysis and display their various properties. Edge statistics can be reviewed from the perspective of activities (process map-related edges) as well as from the viewpoint of resources (social chart-related edges).
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+You can select the desired attribute in the title of the view.
 
-You can select the desired attribute in the title of the view:
-
-:::image type="content" alt-text="media/image011-3.png" source="media/image011-3.png":::
+:::image type="content" alt-text="Screenshot of selecting the attribute in the title of the view." source="media/image011-3.png":::
 
 ### Statistical chart
 
@@ -151,7 +146,7 @@ The mean number of occurrences of a given edge in a single case.
 
 The standard deviation of edge occurrences in a view.
 
-#### Minimum duration, Maximum duration
+#### Minimum duration, maximum duration
 
 The global minimum and maximum duration of a single edge.
 
