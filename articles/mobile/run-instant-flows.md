@@ -4,17 +4,19 @@ description: Learn how to run an instant flow in the Microsoft Power Automate mo
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
-manager: tapanm
+author: natalie-pienkowska
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 10/31/2022
-ms.author: kewaiss
+ms.author: napienko
+ms.reviewer: angieandrews
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
 search.app: 
   - Flow
 search.audienceType: 

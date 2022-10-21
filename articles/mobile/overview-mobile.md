@@ -4,17 +4,19 @@ description: This article provides an overview of the Microsoft Power Automate m
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
-manager: tapanm
+author: natalie-pienkowska
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 10/31/2022
-ms.author: kewaiss
+ms.author: napienko
+ms.reviewer: angieandrews
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
 search.app: 
   - Flow
 search.audienceType: 
@@ -55,7 +57,7 @@ If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.m
 
 > [!NOTE]
 >
-> If you're installing the Power Automate mobile app for Android, you'll need version 3.x.x or later to get the functionality that's described in the articles in this section.
+> If you're installing the Power Automate mobile app, you'll need version 3.x.x or later to get the functionality that's described in the articles in this section.
 
 ## Change environments
 
@@ -71,10 +73,10 @@ You might have different environments to work in depending on the purpose of you
 
 The Power Automate mobile app  has a few limitations:
 
-- (Android) Geofencing, or using location-based triggers, isn't supported in the generally available version of the mobile app for Android. This was formerly a preview feature.
+- (Android) Geofencing, or using location-based triggers, isn't supported in the mobile app for Android. This was formerly a preview feature.
 
-   - (iOS) Geofencing is supported in the mobile app for iOS (preview). This capability will be removed when the mobile app for iOS is generally available in November 2022.
+- (iOS) Geofencing is supported in the mobile app for iOS (preview).
 
-- You can run flows in the mobile app, but not create or edit them. Customers told us that they prefer to create and edit their flows in Power Automate on the web. If you're on the go and need to create or edit a flow, open Power Automate in your mobile device's web browser.
+- You can run flows in the mobile app, but not create or edit them. If you're on the go and need to create or edit a flow, open Power Automate in your mobile device's web browser.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
