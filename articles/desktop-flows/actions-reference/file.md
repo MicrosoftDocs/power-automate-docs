@@ -33,8 +33,8 @@ Manage and manipulate files
 [Get file path part](#getpathpart)  
 [Get temporary file](#gettemppath)  
 [Convert file to Base64](#convertfiletobase64action)  
-[Convert Base64 to file](#convertbase64tofileaction)
-[Convert file to binary data](#convertfiletobinaryaction)
+[Convert Base64 to file](#convertbase64tofileaction)  
+[Convert file to binary data](#convertfiletobinaryaction)  
 [Convert binary data to file](#convertbinarytofileaction)
 
 ## Getting started with file actions
