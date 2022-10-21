@@ -4,8 +4,7 @@ description: Use inputs and outputs in Selenium IDE flows.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: georgiostrantzas
 editor: ''
 tags: ''
 
@@ -15,7 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/30/2020
-ms.author: DeonHe
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
