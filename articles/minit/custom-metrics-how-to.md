@@ -108,27 +108,33 @@ Aggregated formulas contain aggregation operator (for example, `AVG`) at a top e
 
 Let's have a generic overview of (aggregated) metrics in Minit. Consider the following task:​
 
-​Calculate **average** **revenue per hour for invoice processing** in cases when **order number was entered manually, and invoice status was never rejected.**
+​Calculate **average revenue per hour for invoice processing** in cases when **order number** was entered manually, and **invoice status** was never rejected.
 
-**Logical breakdown:**
+**Logical breakdown**
 
-|  |  |
-| - | - |
-| **Aggregation**​ | Aggregation converts multiple results (for example, per case) into single value.​If the aggregation part is missing, we have scalar, non-aggregated metric.​ |
-| **Calculation​** | Standard calculations in Minit are: Total (sum), Mean(avg), min, max.​Advanced calculations like ratio of two attributes need to be done via custom metric.​ |
-| **Data filtration​** | Filtration in Minit can be done via: Filters, CM with conditional operators or Business rules with filters.      |
+The following table provides examples and descriptions of custom metrics.
+
+| Example  | Description    | 
+| --- | --- |
+| Aggregation​ | Aggregation converts multiple results (for example, per case) into single value. ​If the aggregation part is missing, we have scalar, non-aggregated metric.​ |
+| Calculation | Standard calculations in Minit are: Total (sum), Mean(avg), min, max.​Advanced calculations like ratio of two attributes need to be done via custom metric.​ |
+| Data filtration | Filtration in Minit can be done via: Filters, CM with conditional operators or Business rules with filters.      |
 
 The given example shows possibility to perform advanced filtering in custom metrics. To make example easier let simplify the filtering part so we can focus on aggregation & calculation part. When we create view filters which fit the requirements of **"order number was entered manually, and invoice status was never rejected" **we may simplify the task.​
 
-**The simplified task:​**
-Calculate **average** **revenue per hour for invoice processing **for cases **in actual view**.​
-**​Logical breakdown:​**
+**The simplified task​**
 
-|  |  |
-| - | - |
-| **Aggregation​** | Aggregation converts multiple results (for example, per case) into a single value. Scope of aggregation is defined by context definition.​​ |
-| **Calculation​** | Standard calculations in Minit are: Total (sum), Mean(avg), min, max.​Advanced calculations like ratio of two attributes need to be done via custom metric.​ |
-| **Data filtration​** | Simplified filtering here basically means scope/context definition.​ |
+Calculate **average revenue per hour for invoice processing** for cases in actual view.​
+
+**​Logical breakdown​**
+
+The following table provides examples and descriptions of custom metrics.
+
+| Example  | Description    | 
+| --- | --- |
+| Aggregation | Aggregation converts multiple results (for example, per case) into a single value. Scope of aggregation is defined by context definition.​​ |
+| Calculation | Standard calculations in Minit are: Total (sum), Mean(avg), min, max.​Advanced calculations like ratio of two attributes need to be done via custom metric.​ |
+| Data filtration | Simplified filtering here basically means scope/context definition.​ |
 
 ​Generic formula for aggregated custom metrics:​
 

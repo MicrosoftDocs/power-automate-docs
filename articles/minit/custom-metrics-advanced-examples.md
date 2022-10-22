@@ -24,12 +24,14 @@ For easy examples of how to create custom metrics, go to [Basic examples](custom
 
 ## ​Recapitulation of previous examples
 
-| | | |
-| - | - | - |
-| **Aggregation per Attribute value**<br/>(For example, result per activity = all events with the same activity value) | AVG(Duration())​<br/>AVG(EventsPerAttribute, Duration())​<br/>AVG(EdgesPerAttribute, Duration())​<br/>| :::image type="content" alt-text="Screenshot of aggregation per attribute value." source="media/aggregation-per-attribute-value.png" ::: |
-| **Aggregation within Cases**<br/>(result per single case) | AVG(CaseEvents, Duration()) | :::image type="content" alt-text="Screenshot of aggregation within cases." source="media/aggregation-within-cases.png" ::: |
-| **Aggregation Over Cases**​<br/>(aggregation per attribute value, case is taken into calculation one time) | SUM(CasesPerAttribute, invoTotal)​<br/>AVG(CasesPerAttribute, Duration()) | :::image type="content" alt-text="Screenshot of aggregation over cases." source="media/aggregation-over-cases.png" ::: |
-| **Global aggregation**​<br/>(over all elements in view/process/business rule) | COUNTIF(ProcessEvents, user == "Peter")​<br/>AVG(ProcessEvents, Duration()) | :::image type="content" alt-text="Screenshot of global aggregation." source="media/global-aggregation.png" ::: |
+The following table provides descriptions and examples of custom metrics.
+
+| Description  | Example    | Image    |
+| --- | --- | --- |
+| Aggregation per Attribute value<br/>(For example, result per activity = all events with the same activity value) | AVG(Duration())​<br/>AVG(EventsPerAttribute, Duration())​<br/>AVG(EdgesPerAttribute, Duration())​<br/>| :::image type="content" alt-text="Screenshot of aggregation per attribute value." source="media/aggregation-per-attribute-value.png" ::: |
+| Aggregation within cases<br/>(result per single case) | AVG(CaseEvents, Duration()) | :::image type="content" alt-text="Screenshot of aggregation within cases." source="media/aggregation-within-cases.png" ::: |
+| Aggregation over cases​<br/>(aggregation per attribute value, case is taken into calculation one time) | SUM(CasesPerAttribute, invoTotal)​<br/>AVG(CasesPerAttribute, Duration()) | :::image type="content" alt-text="Screenshot of aggregation over cases." source="media/aggregation-over-cases.png" ::: |
+| Global aggregation​<br/>(over all elements in view/process/business rule) | COUNTIF(ProcessEvents, user == "Peter")​<br/>AVG(ProcessEvents, Duration()) | :::image type="content" alt-text="Screenshot of global aggregation." source="media/global-aggregation.png" ::: |
 
 ## ​Dataset description
 
@@ -98,7 +100,7 @@ Use generic metrics instead of process attributes.​
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="Screenshot of the expression." source="media/image-7.jpg":::
+:::image type="content" alt-text="Screenshot of the expression in the editor." source="media/image-7.jpg":::
 
 ## 2 Case level non-aggregation
 
@@ -114,11 +116,11 @@ After we removed corrupted events, we need get rid of invalid cases. Remove comp
 
 **Result:** Per each event **Case 1 - true ;** **Case 2 - true;** **Case 3 - true;** **Case 4 - false**
 
-:::image type="content" alt-text="Screenshot of the result." source="media/image-17.png":::
+:::image type="content" alt-text="Screenshot of the result for a single run per case." source="media/image-17.png":::
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="Screenshot of the expression." source="media/image-8.jpg":::
+:::image type="content" alt-text="Screenshot of the expression metric formula." source="media/image-8.jpg":::
 
 **Usage in Minit desktop application:**
 
@@ -152,7 +154,7 @@ We're evaluating how often user has changed when case was progressing though eve
 
 **Result:A->B = 1;B->C = 0;A->C = 1;C->C = 2**
 
-:::image type="content" alt-text="Screenshot of the result." source="media/image-18.png":::
+:::image type="content" alt-text="Screenshot of the result per edge." source="media/image-18.png":::
 
 Expression in custom metric editor:
 
@@ -172,17 +174,15 @@ Defined custom metrics generates result per edge (attribute) value, so it is app
 
 ## 4 Case events aggregation II
 
-In previous part we have had simple example of using *CaseEvents* aggregation. Here we take another example with more complex formula.
+In the previous part, we've had a simple example of using *CaseEvents* aggregation. Here we take another example with more complex formula.
 
-:::image type="content" alt-text="Screenshot of case events aggregation II." source="media/03-data-set-1.png":::
+:::image type="content" alt-text="Screenshot of case events aggregation II complex formula." source="media/03-data-set-1.png":::
 
 **What is duration from first C start and last C end activity in cases?**
 
 We are looking for result per case and to do some conditional aggregation over case events.
 
-​
-
-**Calculation:**
+​**Calculation:**
 
 Run across all available events within its case. Get the first and last activity 'C' in a case and measure the duration between start of first one and end of last one.
 
@@ -199,8 +199,6 @@ This time the expression is little more complicated but shows how to combine mul
 **Usage in Minit desktop application:**
 
 Application of custom metric follows the standard requirements for single case aggregation (regardless complexity of expression).
-
-
 
 ## 4.1 Case events aggregation II (alternative)
 
@@ -335,7 +333,7 @@ For expression with nested aggregations, the most outer aggregation context dete
 
 Let convert previous example from categorical evaluation to quantitative.
 
-:::image type="content" alt-text="Screenshot of event and edge case aggregation.":::
+:::image type="content" alt-text="Screenshot of event and edge case aggregation." source="media/image-aggregation-alt-aa.png":::
 
 **How many C->C edges are in cases in DE?**
 

@@ -58,7 +58,7 @@ Context menu available next to the dropdown offers a shortcut to add a new custo
 
 The process map visualization will accommodate to the selected metric based on the context and datatype and show the calculated values.
 
-:::image type="content"Screenshot of process map visualization." source="media/5-v56.png":::
+:::image type="content" alt-text="Screenshot of process map visualization." source="media/5-v56.png":::
 
 ## Apply a custom metric to filters
 

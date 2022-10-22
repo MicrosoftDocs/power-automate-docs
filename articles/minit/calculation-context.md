@@ -74,7 +74,7 @@ Custom Metrics also support nested aggregations, or aggregations used within an 
 
 **AVG(CasesPerAttribute,DURATION())** - The same metric as the one above, now used in the Statistics Case level attribute. It returns the average duration of all cases (in the actual view) whith the same value for attribute Supplier.City, while each such case is taken into the calculation once. See the last column CasesPerAttribute-Avg).
 
-:::image type="content" alt-text="Screenshot of the AVG(CasesPerAttribute,DURATION()) calculation context." source="media/casesperattributestats.png":::
+:::image type="content" alt-text="Screenshot of the AVG(CasesPerAttribute,DURATION()) calculation context in the Statistics Case level attribute." source="media/casesperattributestats.png":::
 
 **AVG(EventsPerAttribute,DURATION())** - Returns the average duration of all events (in the actual view) with the same activity value. This is a standard metric in the Performance view - Mean Duration. Notice that this metric is unavailable for edges, as the calculation context is limited to events only.
 
@@ -82,10 +82,9 @@ Custom Metrics also support nested aggregations, or aggregations used within an 
 
 **AVG(EventsPerAttribute,DURATION())** - The same metric as the previous one, now used in the Statistics Event level attribute. It returns the average duration of all events (in the actual view) with the same value for the attribute Resource (see last column EventsPerAttribute-Avg).
 
-:::image type="content" alt-text="AVG(EventsPerAttribute,DURATION()) calculation context." source="media/eventsperattributestats.png":::
+:::image type="content" alt-text="Screenshot of the AVG(EventsPerAttribute,DURATION()) calculation context in the Statistics Event level attribute." source="media/eventsperattributestats.png":::
 
 **AVG(EdgesPerAttribute,DURATION())** - Returns the average duration of all edges (in the actual view) per a process map path. This is the a standard metric in the Performance view - Mean Duration on edges. Notice this metric is unavailable for events, as the calculation context is limited to edges only.
 
 :::image type="content" alt-text="Screenshot of the AVG(EdgesPerAttribute,DURATION()) calculation context." source="media/edgesperattribute.png":::
-
 

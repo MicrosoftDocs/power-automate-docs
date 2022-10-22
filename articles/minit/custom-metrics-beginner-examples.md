@@ -94,13 +94,13 @@ We need to calculate events duration per single case. As view contains two cases
 
 :::image type="content" alt-text="Screenshot of the result for case 1." source="media/image-7.png":::
 
-Expression in custom metric editor:
+The following screenshot shows the expression in the custom metric editor.
 
 :::image type="content" alt-text="Screenshot of the expression in the custom metric editor." source="media/03-case-event-1.png":::
 
 Calculation context *CaseEvents* (and *CaseEvents*) is very useful as it allows to create additional case level metric calculated using the case events. User is then able to evaluate the single cases based on calculated value.
 
-**Usage in Minit desktop application:**
+**Usage in Minit desktop application**
 
 As we have single result per each case in current view,​ results are available only in screens with results per single case:​
 
@@ -122,7 +122,7 @@ We are interested in evaluation of activities. This is different calculation in 
 
 **Calculation**:
 
-How to calculate results per activity properly? We don't care about distribution of events among cases. All we take into consideration is distribution of events among activities. All events in view are grouped according to activity value. We have activities 'A', 'B' and 'C'. Per each set of events, we calculate result separately - sum of event durations.
+How do you calculate results per activity properly? We don't care about distribution of events among cases. All we take into consideration is distribution of events among activities. All events in view are grouped according to activity value. We have activities 'A', 'B' and 'C'. Per each set of events, we calculate result separately - sum of event durations.
 
 **Result: A = 0:50h; B = 0:40h; C = 3:00h **
 
@@ -130,7 +130,7 @@ How to calculate results per activity properly? We don't care about distribution
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="Screenshot of the expression in the custom metric editor." source="media/04-event-per-attribute.png":::
+:::image type="content" alt-text="Screenshot of the expression in the custom metric editor per activity." source="media/04-event-per-attribute.png":::
 
 **Usage in Minit desktop application:**
 
@@ -156,15 +156,15 @@ What is we care about total time spend not by activities but by users?
 
 **Calculation**:
 
-This example sounds similar to previous one, doesn't it? We again take into consideration distribution of events among one of its attributes. This time is it user attribute. We have users 'Peter', 'Michal' and 'Denis'. Per each set of events, we calculate result separately - sum of event durations.
+This example is similar to previous one. We again take into consideration distribution of events among one of its attributes. This time, it's user attribute. We have users 'Peter', 'Michal' and 'Denis'. Per each set of events, we calculate result separately - sum of event durations.
 
 **Result: Peter = 0:50h; Michal = 0:40h; Denis = 3:00h**
 
-:::image type="content" alt-text="Screenshot of the result." source="media/image-10-1.png":::
+:::image type="content" alt-text="Screenshot of the result per user attribute." source="media/image-10-1.png":::
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="Screenshot of the expression." source="media/04-event-per-attribute.png":::
+:::image type="content" alt-text="Screenshot of the expression metric formula." source="media/04-event-per-attribute.png":::
 
 Why the expression is the same as for previous one? It's simple. The calculation per attribute value is the same for any event attribute. Activity is just a special mandatory event attribute. All metrics calculations are applied in the same way for activity as for any other attribute.
 
@@ -194,15 +194,15 @@ The calculation logic for this request is very similar to previous one. We group
 
 **Result: Peter = 4:30h; Michal = 4:30h; Denis = 3:00h **
 
-:::image type="content" alt-text="Screenshot of the result." source="media/image-11.png":::
+:::image type="content" alt-text="Screenshot of the result per duration of cases." source="media/image-11.png":::
 
-As you can see we don't care how many events were done by user in case. One or multiple events done by given user, the length of case is not obviously changed. We don't want to take duration of single case multiple times for the same user. Result is calculated per user (attribute value), takes case level metric (duration of case, no duration of events) and takes each case into result once at most.
+As you can see, we don't care how many events were done by user in case. One or multiple events done by given user, the length of case isn't obviously changed. We don't want to take duration of single case multiple times for the same user. Result is calculated per user (attribute value), takes case level metric (duration of case, no duration of events), and takes each case into result once at most.
 
 While this calculation seems odd, it is a very basic calculation used for standard financial case level metrics. Total of invoice is still the same regardless how many events, how many reworks occurred in the case. Invoice total is not multiplied because some events - activities or users occurred multiple times in invoice processing.
 
 Expression in custom metric editor:
 
-:::image type="content" alt-text="Screenshot of the expression." source="media/06-event-per-attribute-case.png":::
+:::image type="content" alt-text="Screenshot of the expression for standard financial case level metrics." source="media/06-event-per-attribute-case.png":::
 
 ****Usage in Minit desktop application:****
 
