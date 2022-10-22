@@ -265,9 +265,7 @@ Application of custom metric follows the standard requirements for single case a
 
 Change the previous question from if case contains edge C->C to how many such edges are there.
 
-​
-
-**Calculation:**
+​**Calculation:**
 
 Run across all edges within its case. Count any edges C->C found. If no such edge is found, count is zero for given case.
 
@@ -289,7 +287,7 @@ Application of custom metric follows the standard requirements for single case a
 
 Event/edge aggregation using case-wide context.
 
-:::image type="content" alt-text="Screenshot of event and edge case aggregation." source="media/03-data-set-1.png":::
+:::image type="content" alt-text="Screenshot of event and edge case aggregation using case-wide context." source="media/03-data-set-1.png":::
 
 **How many cases in DE contains edge C->C?**
 
@@ -333,7 +331,7 @@ For expression with nested aggregations, the most outer aggregation context dete
 
 Let convert previous example from categorical evaluation to quantitative.
 
-:::image type="content" alt-text="Screenshot of event and edge case aggregation." source="media/image-aggregation-alt-aa.png":::
+:::image type="content" alt-text="Screenshot of event and edge case aggregation alternative." source="media/image-aggregation-alt-aa.png":::
 
 **How many C->C edges are in cases in DE?**
 
