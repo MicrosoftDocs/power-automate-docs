@@ -37,6 +37,10 @@ The installer contains all the components you need to record, edit, and test you
 Follow these steps to install Power Automate for desktop:
 
 1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+
+    >[!IMPORTANT]
+    >Although deploying MSI and Microsoft Store installations on the same machine is possible, duplicate installations may cause issues and aren't recommended.
+
 1. Open the **Setup.Microsoft.PowerAutomate.exe** file. 
 
    This file is likely in your **Downloads** folder after you downloaded it in the previous step.
