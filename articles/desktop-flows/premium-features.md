@@ -27,7 +27,7 @@ This article lists the premium RPA features/benefits that are included in the Po
 |Feature/Benefit | Description|Additional information|
 |----------------|------------|----------------------|
 |Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger a desktop flow from a cloud flow](link-pad-flow-portal.md)|
-|Flow triggering via desktop shortcut|Trigger local attended desktop flows through their desktop shortcuts.|[Learn how to trigger a desktop flow via shortcut](run-pad-flow#run-desktop-flows-via-url-or-desktop-shortcuts)|
+|Flow triggering via desktop shortcut|Trigger local attended desktop flows through their desktop shortcuts.|[Learn how to trigger a desktop flow via shortcut](run-pad-flow.md#run-desktop-flows-via-url-or-desktop-shortcuts)|
 |Flow triggering via URL|Trigger local attended desktop flows through their run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-pad-flow.md#run-desktop-flows-via-url-or-desktop-shortcuts)|
 |Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
