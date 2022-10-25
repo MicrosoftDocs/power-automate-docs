@@ -46,7 +46,7 @@ Handling files and their content is essential for most automation scenarios. Usi
 Most file actions require paths that specify the files you want to manipulate. These paths can be hardcoded values or [file datatype variables](../variable-data-types.md#files-and-folders).
 
 >[!NOTE]
->If you want to provide many files as input, use a list variable with file items. A method to create a [list](../variable-data-types.md#list) of files is the **Get files in folder** action.
+>If you want to provide many files as input, use a [list variable](../variable-data-types.md#list) with file items. A method to create a list of files is the **Get files in folder** action.
 
 Similarly, you can populate a hardcoded value or a [folder datatype variable](../variable-data-types.md#files-and-folders) to specify a destination folder in the actions that need one.
 
