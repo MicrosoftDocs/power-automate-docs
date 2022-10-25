@@ -4,13 +4,13 @@ description: Premium RPA features
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/27/2022
+ms.date: 10/25/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
-- PetrosFeleskouras
+- PetrosFeleskourass
 search.app: 
   - Flow
 search.audienceType: 
