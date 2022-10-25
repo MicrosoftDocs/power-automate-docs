@@ -20,9 +20,9 @@ search.audienceType:
 
 # Premium RPA features
 
-This article lists the premium RPA features/benefits that are included in the Power Automate per user with attended RPA plan and are available to [organization premium accounts](getting-started-org.md). 
+This article lists the premium RPA features/benefits that are included in the Power Automate per user with attended RPA plan and are available to [organization premium accounts](getting-started-org.md).
 
-## Premium feature list 
+## Premium feature list
 
 |Feature/Benefit | Description|Additional information|
 |----------------|------------|----------------------|
@@ -43,24 +43,25 @@ This article lists the premium RPA features/benefits that are included in the Po
 |Customer support|Receive prompt technical assistance from a Microsoft support professional.|[Power Automate support](https://flow.microsoft.com/support/)|
 
 > [!IMPORTANT]
-> - Unattended desktop flow executions require the unattended RPA add-on, which can be applied against a qualifying base license.  
-> - AI Builder is licensed as an add-on for existing subscription plans. A certain number of AI Builder credits are included in the Power Automate per user with attended RPA plan. 
+>
+> - Unattended desktop flow executions require the unattended RPA add-on, which can be applied against a qualifying base license.
+> - AI Builder is licensed as an add-on for existing subscription plans. A certain number of AI Builder credits are included in the Power Automate per user with attended RPA plan.
 
-## Plans that provide entitlements for the premium RPA features 
+## Plans that provide entitlements for the premium RPA features
 
-### Trial plan 
+### Trial plan
 
-The Power Automate for desktop free trial plan is available for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option found within the **Go premium** section of Power Automate for desktop or the **desktop flows** sections of the Power Automate portal. Free users are also prompted to start a trial while they attempt to add the **Run a flow built with Power Automate for desktop** action in a cloud flow. 
+The Power Automate for desktop free trial plan is available for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option found within the **Go premium** section of Power Automate for desktop or the **desktop flows** sections of the Power Automate portal. Free users are also prompted to start a trial while they attempt to add the **Run a flow built with Power Automate for desktop** action in a cloud flow.
 
-### Standalone plan 
+### Standalone plan
 
 The Power Automate per user with attended RPA plan (paid or trial) gives full access to all RPA premium features and benefits. Both Power Platform admins and individual users/makers can purchase licenses for Power Automate. You can find more information regarding purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
 
-### Pay-as-you-go plan 
+### Pay-as-you-go plan
 
 Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription, which allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to most of the premium features listed above in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
 
-## More information about Power Automate licensing 
+## More information about Power Automate licensing
 
 - [Power Automate pricing](https://powerautomate.microsoft.com/pricing/)
 - [Overview of Power Automate licensing](/power-platform/admin/power-automate-licensing/overview)
