@@ -28,11 +28,11 @@ Within the Statistics view, a new **Business rules** panel was added to display
 
 In the summary view, it's possible to display all business rules or select a specific business rule scope to limit the list of displayed business rules. The summary view displays a single result per view for each business rule. For process and case scoped business rules, it's a standard evaluation. For event and edge scoped business rules, it's an alternative evaluation to calculate results per all events/edges. As explained in the [Business rules scope](business-rule-scope.md) article, category isn't evaluated for event and edge business rules when displayed in the summary view. If you want to display detailed results per activity or edge, go to the following **Detailed view** section.
 
-:::image type="content" alt-text="Screenshot of the summary view wil all business rules selected." source="media/image-64.png":::
+:::image type="content" alt-text="Screenshot of the summary view with all business rules selected." source="media/image-64.png":::
 
 When selecting a scope other than **All**, the list of business rules will be limited to the rules of the given scope.
 
-:::image type="content" alt-text="Screenshot of the summary view wil a scope other than all business rules selected." source="media/image-65.png":::
+:::image type="content" alt-text="Screenshot of the summary view with a scope other than all business rules selected." source="media/image-65.png":::
 
 ## Detailed view
 
