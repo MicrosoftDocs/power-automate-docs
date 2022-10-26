@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Within the Statistics view, a new **Business rules **panel was added to display business rule results in the form of a table. As in Process Map, the main display modes are:
+Within the Statistics view, a new **Business rules** panel was added to display business rule results in the form of a table. As in Process Map, the main display modes are:
 
 - **Summary view:** Displays a list of business rules for a given scope or for all.
 
@@ -30,7 +30,7 @@ In the summary view, it's possible to display all business rules or select a spe
 
 :::image type="content" alt-text="Screenshot of the summary view wil all business rules selected." source="media/image-64.png":::
 
-When selecting  other a scope other than **All**, the list of business rules will be limited to the rules of the given scope.
+When selecting a scope other than **All**, the list of business rules will be limited to the rules of the given scope.
 
 :::image type="content" alt-text="Screenshot of the summary view wil a scope other than all business rules selected." source="media/image-65.png":::
 
