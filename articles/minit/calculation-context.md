@@ -52,7 +52,7 @@ Custom Metrics also support nested aggregations, or aggregations used within an 
 
 :::image type="content" alt-text="Screenshot of the AVG(DURATION()) calculation context." source="media/example1.png":::
 
-**AVG(AllInView, DURATION())** - Returns the average duration of all activities/edges in the actual view. When visualized in the process map, one value is used for all activities,t and one for all edges (for example, two different values).
+**AVG(AllInView, DURATION())** - Returns the average duration of all activities/edges in the actual view. When visualized in the process map, one value is used for all activities, and one for all edges (for example, two different values).
 
 :::image type="content" alt-text="Screenshot of the AVG(AllInView, DURATION()) calculation context." source="media/example2.png":::
 
@@ -72,7 +72,7 @@ Custom Metrics also support nested aggregations, or aggregations used within an 
 
 :::image type="content" alt-text="Screenshot of the AVG(CasesPerAttribute,DURATION()) calculation context." source="media/casesperattribute.png":::
 
-**AVG(CasesPerAttribute,DURATION())** - The same metric as the one above, now used in the Statistics Case level attribute. It returns the average duration of all cases (in the actual view) whith the same value for attribute Supplier.City, while each such case is taken into the calculation once. See the last column CasesPerAttribute-Avg).
+**AVG(CasesPerAttribute,DURATION())** - The same metric as the one above, now used in the Statistics Case level attribute. It returns the average duration of all cases (in the actual view) with the same value for attribute Supplier.City, while each such case is taken into the calculation once. See the last column CasesPerAttribute-Avg).
 
 :::image type="content" alt-text="Screenshot of the AVG(CasesPerAttribute,DURATION()) calculation context in the Statistics Case level attribute." source="media/casesperattributestats.png":::
 
@@ -84,7 +84,7 @@ Custom Metrics also support nested aggregations, or aggregations used within an 
 
 :::image type="content" alt-text="Screenshot of the AVG(EventsPerAttribute,DURATION()) calculation context in the Statistics Event level attribute." source="media/eventsperattributestats.png":::
 
-**AVG(EdgesPerAttribute,DURATION())** - Returns the average duration of all edges (in the actual view) per a process map path. This is the a standard metric in the Performance view - Mean Duration on edges. Notice this metric is unavailable for events, as the calculation context is limited to edges only.
+**AVG(EdgesPerAttribute,DURATION())** - Returns the average duration of all edges (in the actual view) per a process map path. This is the standard metric in the Performance view - Mean Duration on edges. Notice this metric is unavailable for events, as the calculation context is limited to edges only.
 
 :::image type="content" alt-text="Screenshot of the AVG(EdgesPerAttribute,DURATION()) calculation context." source="media/edgesperattribute.png":::
 
