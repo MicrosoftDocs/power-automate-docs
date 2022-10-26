@@ -42,7 +42,7 @@ Install the Minit desktop application to edit your processes created in process 
 
    :::image type="content" alt-text="Screenshot of the installation in progress." source="media/minit-install-3.png":::
 
- 1. Sign in in with your Azure DevOps account.
+ 1. Sign in with your Azure DevOps account.
 
     :::image type="content" alt-text="Screenshot of the Sign in to Minit screen." source="media/image-26.png":::
 
