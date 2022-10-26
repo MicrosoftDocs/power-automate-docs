@@ -4,7 +4,7 @@ description: Learn how to adjust which cases will be included in the process ana
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/15/2022
+ms.date: 10/26/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app:
@@ -19,6 +19,8 @@ search.audienceType:
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Use filters to adjust which cases will be included in the process analysis.
+
+For example, it can be used to define only a certain time period, only specific resources or scenarios in the process, or modify cases by excluding activities that are not important for the current analytical problem. It can also be helpful in identifying and focusing on the problematic parts of the process.
 
 ## What's a filter?
 
@@ -147,5 +149,3 @@ When you select the data size indicator, a message appears describing the filter
 By means of this message, you can select items in the list of filters on the **Filter**s** screen.
 
 :::image type="content" alt-text="Screenshot of filters for the data size indicator." source="media/image047.png":::
-
-
