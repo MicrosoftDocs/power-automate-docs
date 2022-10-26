@@ -82,4 +82,4 @@ If the business rule doesn't have a defined custom output (custom formula), seve
 
 ## Application in Minit
 
-Bussiness rules are displayed in [Process](business-rules-process-map.md) map and in [Statistics](business-rules-statistics.md).
+Business rules are displayed in [Process](business-rules-process-map.md) map and in [Statistics](business-rules-statistics.md).
