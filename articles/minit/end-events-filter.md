@@ -36,7 +36,7 @@ Here you choose permissible attribute values for the starting event. Only the va
 
 If the attribute values of the starting event are of no interest, all values should remain active.
 
-:::image type="content" alt-text="Screenshot of the permissable attribute of 'Start'." source="media/image033.png":::
+:::image type="content" alt-text="Screenshot of the permissible attribute of 'Start'." source="media/image033.png":::
 
 ### Select permissible attribute values for the finishing event
 
@@ -44,6 +44,6 @@ Here you choose permissible attribute values for the finishing event. Only the v
 
 If the attribute values of the finishing event are of no interest, all values should remain active.
 
-:::image type="content" alt-text="Screenshot of the permissable attribute of 'Process end'." source="media/image034.png":::
+:::image type="content" alt-text="Screenshot of the permissible attribute of 'Process end'." source="media/image034.png":::
 
 
