@@ -89,7 +89,7 @@ To specify a range:
 
 The selection options differ according to the selected metrics type.
 
-1. Go to to the **Expression** tab.
+1. Go to the **Expression** tab.
 
 2. Select one of the available operators (for example, **Equal to**).
  
