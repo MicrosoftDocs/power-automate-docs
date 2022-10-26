@@ -220,7 +220,7 @@ Some of your desktop flows might run for long durations, for example more than 2
 
 Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using run URLs and desktop shortcuts.
 
-You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, the [Command Prompt](#use-a-run-url-in-the-command-prompt), and the Windows [Task [Scheduler](#trigger-flows-automatically-with-task-scheduler). Alternatively, you can create desktop shortcuts and run your desktop flows directly through them.
+You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, the [Command Prompt](#use-a-run-url-in-the-command-prompt), and the Windows [Task Scheduler](#trigger-flows-automatically-with-task-scheduler). Alternatively, you can create desktop shortcuts and run your desktop flows directly through them.
 
 If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
 
@@ -313,7 +313,7 @@ To trigger a flow using the Command Prompt, use a command with the following syn
 
 To trigger a flow using the Task Scheduler application of Windows:
 
-1. Create a new task, navigate to the **Action** tab of the **Create Task** dialog, and add a new action.
+1. Create a new task, navigate to the **Actions** tab of the **Create Task** dialog, and add a new action.
 
 1. Populate the following value in the **Program/script** field.
 
