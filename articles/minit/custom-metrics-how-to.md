@@ -94,7 +94,7 @@ Simple scalar formulas don't contain aggregation operation in its formula. In mo
 
 :::image type="content" alt-text="Screenshot of a calculation over a certain calculation scope or ‘context'" source="media/image-3.png":::
 
-Aggregated formulas contain aggregation operator (for example, `AVG`) at a top evaluation level. Minit Desktop application offer set of standard aggreation operators - see Custom metrics help for reference. Aggregation operation as first argument takes calculation scope. This determines two properties:
+Aggregated formulas contain aggregation operator (for example, `AVG`) at a top evaluation level. Minit Desktop application offer set of standard aggregation operators - see Custom metrics help for reference. Aggregation operation as first argument takes calculation scope. This determines two properties:
 
 - Input set of data taken into account
 
