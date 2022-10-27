@@ -26,12 +26,12 @@ There are the two ways you can restore deleted flows.
 
 >[!NOTE]
 > - The steps in this article apply only to non-solution flows. If you deleted a flow that was part of a solution, you need to create a support ticket with Microsoft Support for assistance.
-> - Flows that were deleted more than 28 days ago can't be recovered. Both restore methods (PowerShell script and Power Automate Management connector), as well as Microsoft Support can't help to restore them.
+> - Flows that were deleted more than 20 days ago can't be recovered. Both restore methods (PowerShell script and Power Automate Management connector), as well as Microsoft Support can't help to restore them.
 > - After you restore a flow, it defaults to the disabled state. You must manually enable the flow, per your requirements.
 
 ## Restore deleted flows with the Power Automate Management connector
 
-You can restore a deleted non-solution flow within 28 days of deletion using Power Automate. A non-solution flow is a flow that wasn't created inside a solution. As an admin, all you need is a button flow with two Power Automate management connector actions&mdash;**List Flows as Admin** and **Restore Deleted Flows as Admin**.  
+You can restore a deleted non-solution flow within 20 days of deletion using Power Automate. A non-solution flow is a flow that wasn't created inside a solution. As an admin, all you need is a button flow with two Power Automate management connector actions&mdash;**List Flows as Admin** and **Restore Deleted Flows as Admin**.  
 
 As part of this process, in four easy and quick steps, you'll first list deleted flows in an environment using the **List flows as Admin** action. Then, you'll use the **Restore Deleted Flows as Admin** action to restore the flow using `flowName` property of the flow that you retrieved from the **List flows as Admin** action.
 
@@ -115,7 +115,7 @@ In this section, you'll learn about how to restore deleted flows using PowerShel
 
 1. Provide the credentials you want to use to connect to your environment.
 
-1. Run the following script to get a list of flows in the environment, including flows that were soft-deleted within the past 28 days. 
+1. Run the following script to get a list of flows in the environment, including flows that were soft-deleted within the past 20 days. 
 
     If the `IncludeDeleted` parameter isn't recognized, you might be working with an older version of the PowerShell scripts. Ensure that you're using the [latest version](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.147) of the script modules and retry the steps.
 
