@@ -94,7 +94,7 @@ Simple scalar formulas don't contain aggregation operation in its formula. In mo
 
 :::image type="content" alt-text="Screenshot of a calculation over a certain calculation scope or ‘context'" source="media/image-3.png":::
 
-Aggregated formulas contain aggregation operator (for example, `AVG`) at a top evaluation level. Minit Desktop application offer set of standard aggreation operators - see Custom metrics help for reference. Aggregation operation as first argument takes calculation scope. This determines two properties:
+Aggregated formulas contain aggregation operator (for example, `AVG`) at a top evaluation level. Minit Desktop application offer set of standard aggregation operators - see Custom metrics help for reference. Aggregation operation as first argument takes calculation scope. This determines two properties:
 
 - Input set of data taken into account
 
@@ -120,13 +120,13 @@ The following table provides examples and descriptions of custom metrics.
 | Calculation | Standard calculations in Minit are: Total (sum), Mean(avg), min, max.​Advanced calculations like ratio of two attributes need to be done via custom metric.​ |
 | Data filtration | Filtration in Minit can be done via: Filters, CM with conditional operators or Business rules with filters.      |
 
-The given example shows possibility to perform advanced filtering in custom metrics. To make example easier let simplify the filtering part so we can focus on aggregation & calculation part. When we create view filters which fit the requirements of **"order number was entered manually, and invoice status was never rejected" **we may simplify the task.​
+The given example shows possibility to perform advanced filtering in custom metrics. To make example easier let simplify the filtering part so we can focus on aggregation & calculation part. When we create view filters which fit the requirements of **"order number was entered manually, and invoice status was never rejected"** we may simplify the task.​
 
-**The simplified task​**
+**The simplified task**
 
 Calculate **average revenue per hour for invoice processing** for cases in actual view.​
 
-**​Logical breakdown​**
+**Logical breakdown**
 
 The following table provides examples and descriptions of custom metrics.
 
@@ -142,7 +142,7 @@ The following table provides examples and descriptions of custom metrics.
 
 Replace the generic placeholders with actual operators and expressions:
 
-**​​Avg**(**ViewCases**,** 1.0 * InvoiceTotalAmountWithoutVAT / TOTALHOURS(Duration()**))​
+**Avg**(**ViewCases**,** 1.0 * InvoiceTotalAmountWithoutVAT / TOTALHOURS(Duration()**))​
 
 Aggregation part is represented by simple average operator (avg).
 

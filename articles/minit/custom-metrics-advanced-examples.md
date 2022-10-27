@@ -398,7 +398,7 @@ Generic relation between events inside case.
 
 **How many events done by Michal were in cases touched by Peter?**
 
-Image 'Peter' is senior team member who is usually involved only in some troubles. We want to know how many times 'Peter' had to perform action when another user 'Michal' was involved in the same case.
+Imagine 'Peter' is senior team member who is usually involved only in some troubles. We want to know how many times 'Peter' had to perform action when another user 'Michal' was involved in the same case.
 
 ​Change question to generic form:
 How many events per user were done in cases with Peter?
