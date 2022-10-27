@@ -4,7 +4,7 @@ description: Learn how to install the Minit desktop application in Microsoft Pow
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 10/26/2022
+ms.date: 10/27/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -25,15 +25,21 @@ Before you can start using Minit, you need to install the Minit desktop applicat
 
 1. In the left side panel, select **Process advisor**.
 
-1. Under **Record, analyze, and refine commonly performed processes**, select **Download Minit**.
+1. At the top of the process advisor page, select **Install Minit**.
 
-   :::image type="content" alt-text="Screenshot of the Download Minit button." source="media/minit-install-a1.png":::
+   :::image type="content" alt-text="Screenshot of the Install Minit button on the process advisor page." source="media/minit-install-a1.png":::
 
-1. The installation prompt may vary, depending on your system configuration. If the prompt is **Open this file?**, select **Open**. If the prompt is **Do you want to install this application?**, select **Install**.
+1. Open the installer file when prompted, and then select **Install** to run the installer when prompted.
 
-   Allow a few minutes for the installer to run.
+   Allow a few minutes for the installer to download and install the application files.
 
-1. Sign in to Minit with your Azure DevOps account.
+1. When the Minit welcome screen opens, select **NEXT STEP** to start the guided configuration wizard.
+
+1. By default, Minit will store process mining data in a new **Minit** folder in the **Documents** folder in your OneDrive. Change the location if necessary, and then select **NEXT STEP**.
+
+1. Select **APPLY AND MINE!** to finish the wizard.
+
+1. Sign in to Minit with your work account.
 
 1. Start process mining from the **Process hub**.
 

@@ -1,12 +1,13 @@
 ---
 title: Process context (preview)
-description: Learn about analytical definitions and settings in the Minit desktop application in process advisor.
+description: Learn about the process settings you can change in the Minit desktop application for Microsoft Power Automate process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 10/15/2022
+ms.topic: overview
+ms.date: 10/27/2022
 ms.author: tatn
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.app:
 - Flow
 search.audienceType:
@@ -18,22 +19,22 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The purpose of Process context is to store the analytical definitions and settings which are valid over the process data and thus are available for sharing across all process views. Definitions like custom metrics are named and can be easily used in a view, without the need to re-create it in single views.
+The **Process context** page is where you can create and manage settings that you want to apply to the views you create for a process.
+
+To open the process context, either select the icon below the process name, or select (**...**) to the right of the process name and then select **Process context**.
+
+:::image type="content" source="media/PC-overview-1.png" alt-text="Screenshot of the process hub, with the process context icon highlighted.":::
+
+The **Process context** page contains the following subsections:
+
+- **Custom metrics**: Create and manage [custom metrics](custom-metrics.md).
+
+- **Map hierarchies**: Create and manage [hierarchies](hierarchical-process-mining.md).
+
+- **Business rules**: Create and manage [business rules](business-rules.md).
+
+- **Case categorization**: [Categorize cases](case-categorization.md) as Running, Finished, or Stuck.
+
+- **General settings**: Select the [default **Activity label**](view-settings.md).
 
 :::image type="content" alt-text="Screenshot of the Custom metrics tab." source="media/PC-overview.png":::
-
-Process context consists of the following sub-sections:
-
-- **Custom metrics:** This allows you to manage custom metrics available in the process and also to create new ones. For more information about custom metrics, see [Custom Metrics](custom-metrics.md).
-
-- **Map hierarchies:** Manage hierarchies. For more information about hierarchies, see [Hierarchical Process Mining](hierarchical-process-mining.md).
-
-- **Business rules:** Manage Business rules, for more information about business rules, see [Business rules](business-rules.md).
-
-- **Case categorization**: Manage case categorization, for more information, see [Case categorization](case-categorization.md).
-
-- **General settings:** Can be used to select the default **Activity label**. To learn more about activity labels, go to [View Settings](view-settings.md).
-
-
-
-
