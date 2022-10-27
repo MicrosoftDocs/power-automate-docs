@@ -31,7 +31,7 @@ The **Last runs** section provides graphs and tables to get meaningful insights 
 
 You can find information regarding each table in the following list.
 
-- **Completed desktop flows**: This card provides the number of desktop flow runs in a select period of time.
+- **Completed desktop flows**: This card provides the number of desktop flow runs in a selected period of time.
 
 - **Desktop flows runs and error rate**:  This chart shows the number of desktop flows runs and the error percentage by date. If no desktop flows run for one or several days, the corresponding data aren't available in the table.
 
