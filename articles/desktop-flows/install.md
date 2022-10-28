@@ -46,7 +46,7 @@ Follow these steps to install Power Automate for desktop:
 
 The installer allows you to install two different apps on your device: 
 
-- **Power Automate for desktop** is the app to build your desktop flows. With it, you can create, edit, and run your automations. To learn more about the desktop flows designer, go to [Power Automate flow designer](./flow-designer.md). 
+- **Power Automate for desktop** is the app to build your desktop flows. With it, you can create, edit, and run your automations. To learn more about the desktop flows designer, go to [Power Automate desktop flow designer](./flow-designer.md). 
 
 - **Power Automate machine runtime app** allows you to connect your machine to the Power Automate cloud. It allows you to harness the full power of your robotic process automation (RPA). To learn more about machine management, go to [Manage machines](./manage-machines.md). 
 
@@ -69,7 +69,6 @@ By default, both are installed on your device.
 >[!NOTE]
 >By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
 
-<!--TO BE ADDED AFTER Oct 5th-->
 ## Install Power Automate desktop app from the Microsoft Store 
 
 There are a few ways to access the most recent version of Power Automate from the Microsoft Store. 
@@ -80,7 +79,7 @@ There are a few ways to access the most recent version of Power Automate from th
 
     - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/), and then select **Download Free**. 
 
-1. After you've landed on the Power Automate page of the Microsoft Store, select **Install**.-->
+1. After you've landed on the Power Automate page of the Microsoft Store, select **Install**.
 
 ### Set data collection options
 
@@ -221,7 +220,7 @@ Apart from direct connectivity, you can establish communication with a machine u
 ## Setup desktop flows connections and machine credentials
 
 > [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. To learn more, to to [Switch from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. To learn more, go to [Switch from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 > [!IMPORTANT]
 > Before you use a machine to run desktop flows from the cloud, ensure that the machine is secured and the machine's admins are trusted.
