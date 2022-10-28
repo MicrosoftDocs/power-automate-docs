@@ -6,9 +6,11 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/23/2022
+ms.date: 10/28/2022
 ms.author: ellenwehrle
-ms.reviewer: ellenwehrle
+ms.reviewer: 
+  - jongilman
+  - dgalitsky
 search.app: 
   - Flow
 search.audienceType: 
@@ -65,9 +67,13 @@ Environment variables can be used in solution cloud flows since they're availabl
 
  For more information: [Use environment variables in Power Automate solution cloud flows](/power-apps/maker/data-platform/environmentvariables#use-environment-variables-in-power-automate-solution-cloud-flows)
 
-### Known issue
+> [!IMPORTANT]
+>
+> If an environment variable is updated after it has been used in a flow, the updated values won't be used the next time the flow runs. **The flow must be edited or resaved** for the updated values in the environment variable to take effect.
 
-If an environment variable is updated after it has been used in a flow, the updated values won't be used the next time the flow runs. **The flow must be edited or resaved** for the updated values in the environment variable to take effect.
+## Reuse environment variables in SAP actions
+
+Environment variables can be selected from the dynamic content selector in Power Automate solution cloud flows.
 
 ### See also
 

@@ -4,8 +4,11 @@ description: Learn about the requirements to configure SAP integration, and prep
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/07/2022
+ms.date: 10/28/2022
 ms.author: ellenwehrle
+ms.reviewer:
+  - jongilman
+  - dgalitsky
 search.app: 
   - Flow
 search.audienceType: 
@@ -40,9 +43,9 @@ Take the following steps to support a successful deployment of the preview SAP I
 
 1. Invite functional business users to work with SAP data via Power Apps, and to provide feedback.
 
-## Prerequisites
+## Requirements
 
-The assembled team of IT system administrators need to review the following prerequisites and make necessary preparations before connecting your organization's SAP system to the Power Platform:
+The assembled team of IT system administrators need to review the following requirements and make necessary preparations before connecting your organization's SAP system to the Power Platform:
 
 - [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/) - Determine if your organization has the necessary licensing to proceed with the setup. It is important to consider:
   - Power Apps licensure that supports using an on-premises data gateway and premium applications, flows, and connectors.
@@ -64,7 +67,7 @@ The assembled team of IT system administrators need to review the following prer
 
 - [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server - Provision a separate Windows VM or server with your SAP system connected to it to connect to the on-premises data gateway.
 
-- [On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127) - Download and [set up](/data-integration/gateway/service-gateway-install) the most recent version (9/23/2022 or newer) of the on-premises data gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
+- [On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127) - Download and [install](/data-integration/gateway/service-gateway-install) the most recent version (9/23/2022 or newer) of the on-premises data gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
 
 - [Azure AD single sign-on (SSO) for Gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) - Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO.
 

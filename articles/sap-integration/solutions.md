@@ -4,8 +4,11 @@ description: Learn about the prebuilt SAP Integration solution available to impo
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 09/19/2022
+ms.date: 10/28/2022
 ms.author: ellenwehrle
+ms.reviewer: 
+  - jongilman
+  - dgalitsky    
 search.app: 
   - Flow
 search.audienceType: 
@@ -102,7 +105,7 @@ When you look the app behind the scenes, you see that the prebuilt solution is m
 
 These sets of components work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
 
-After importing the prebuilt solution into Power Apps, look to the left navigational panel to view all of its different components.
+After importing the prebuilt solution into Power Apps, look to the left-side navigation panel to view all of its different components.
 
   :::image type="content" source="media/prebuilt-solution/powerapps-nav.png" alt-text="Power App navigation where one can select Apps, Flows, and Solutions.":::
 

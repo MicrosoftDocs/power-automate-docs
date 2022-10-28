@@ -6,9 +6,13 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 10/06/2022
 ms.author: ellenwehrle
+ms.reviewer: 
+  - jongilmand
+  - galitsky
 search.app: 
   - Flow
 search.audienceType: 
+  - administrator
   - stakeholder
   - flowmaker
   - enduser
@@ -59,8 +63,7 @@ The Power Automate flows automate the business rules behind the scenes while the
 
 Many enterprise organizations need to utilize advanced connection parameters to govern user sessions. SAP integration with Power Platform now supports:
 
-- message servers that support load balancing among users
-- gateway servers
+- message servers that support load balancing between multiple SAP systems
 - advanced SSO configurations
 
 Your SAP system's connection parameters are set up by following the established guidance:
@@ -105,11 +108,10 @@ Learn more at [Azure Logic Apps documentation](/azure/logic-apps/)
 The SAP ERP connector for Power Automate and Power Apps allows you to invoke RFC and BAPI functions through the on-premises data gateway. The following improvements have been made to the SAP ERP connector:
 
 - Incorporates advanced connections
-- Loads complex APIs
+- Loads large APIs
 - Unifies Logic Apps and Power Automate connectors
-- Adds XML support
-- Special action for RFC_READ_TABLE
-- Better performance
+- Special action for RFC_READ_TABLE with parsing
+- Higher rate limits on the operations per second
 
 Learn more at [SAP ERP connector](/connectors/saperp/).
 
