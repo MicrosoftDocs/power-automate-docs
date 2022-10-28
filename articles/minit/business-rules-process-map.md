@@ -1,12 +1,13 @@
 ---
 title: Business rules for process maps (preview)
-description: Learn how to select various process map views in Minit desktop application in process advisor.
+description: Learn how to display business rules in the process map in the Minit desktop application for Microsoft Power Automate process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 10/15/2022
+ms.date: 10/28/2022
 ms.author: tatn
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.app:
 - Flow
 search.audienceType:
@@ -18,36 +19,35 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Process map in the **Customize** panel under the **Business rules** tab allows you to select from two main display modes:
-
-- Single business rule - displays results per single business rule
-
-- Severity display - displays the total count of all business rules results over elements in Process Map with given severity.
+Use the **Customize** pane in the process explorer right side panel to select business rules to view in the process map. You can display results per single business rule or by severity over all business rules. Process scope business rules aren't available in the process map.
 
    :::image type="content" alt-text="Screenshot of the Customize screen display modes." source="media/brpmmodes.png":::
 
-In Process Map, it is possible to display all business rules except for process scope business rules.
-
 ## Single business rule display
 
-In the single business rule mode, the results are displayed for a selected business rule. The user is able to select a different business rule for activities and edges. Case scope business rules can be displayed for both activities and edges dropdown menus, as they represent complete cases (including activities and edges). Event and edge scope business rules are available only from the relevant dropdown menus.
+If you select **Single business rule**, results are displayed for the business rule you select in the events and edges lists. You can select different business rules for events and edges.
 
 :::image type="content" alt-text="Screenshot of the Customize screen in the single business rule mode." source="media/brpmdropdowns.png":::
 
-Using the value switch icon next to the business rule dropdown menu, it's possible to choose between default output (count) and custom output (custom formula). In the following screenshot, the same case scope business rule is selected. For activities, it displays custom output&mdash;a sum of the financial attributes. For edges it displays default output&mdash;count of cases.
+Legend:
 
-:::image type="content" alt-text="Screenshot of a single business rule process map." source="media/brpmsingle.png":::
+1. Business rule views
+1. Event scope and case scope business rules
+1. Edge scope and case scope business rules
+1. Value switch icon and business rule actions (**...**)
+
+Because case scope business rules represent complete cases, you can select case scope business rules from both the events and edges lists. Event scope and edge scope business rules are available only in the corresponding list.
+
+To switch between the default output&mdash;count&mdash;and a custom formula result, select the value switch icon to the right of the business rule list. Hover over the icon to show which value is being displayed in the process map. You can show any combination of default and custom output values for the business rules you selected.
 
 ## Severity display
 
-For each activity and edge, the business rule severity display mode over Process map shows the total number of occurrences of such element when business rule resulted in chosen severity. The result doesn't represent the number of applied business rules with a given severity, but number of elements (cases, activities and edges) which fit into the data sets for each business rule that resulted in the chosen severity.
+If you select a severity, the process map displays the total number of occurrences of each element with that severity. That is, it shows the total number of cases, activities, and edges that are in the data sets for each business rule that resulted in the selected severity.
 
-:::image type="content" alt-text="Screenshot of a process map severity display mode." source="media/brpmseverity.png":::
+:::image type="content" alt-text="Screenshot of a process map displaying severity." source="media/brpmseverity.png":::
 
 ## Details display
 
-In the details panel, it is possible to define several business rules to be displayed. In the detailed view, both default and custom results are displayed.
+Select an activity in the process map to view its details. In the **Business rules** section of the **Details** panel, you can select one or more business rules to display for the activity. The detailed view shows both default and custom results.
 
 :::image type="content" alt-text="Screenshot of a process map details display mode." source="media/brpmdetails.png":::
-
-
