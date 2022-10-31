@@ -22,21 +22,21 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-A successful SAP integration with Microsoft Power Platform requires that you work with your organization's IT administrators. With some planning, setup, and configuration, they will be able to ensure that your SAP system can communicate with Power Platform.
+A successful SAP integration with Microsoft Power Platform requires coordination with your organization's IT administrators. With some planning, setup, and configuration, you'll be able to ensure that your SAP system can communicate with Power Platform.
 
 ## Prepare for SAP integration
 
 Take the following steps to support a successful deployment of the preview SAP Integration solution:
 
-1. Join the [Power Apps community forum](https://aka.ms/sap-powerusers-community) to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
+1. Join the [Power Apps community forum](https://aka.ms/sap-powerusers-community). Ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 
 1. Assemble a team with the following IT system administrators:
     1. Network
     1. SAP BASIS
     1. Power Platform
 
-1. Review the following with the team to make necessary preparations:
-    1. SAP Integration prerequisites
+1. Review the following with your team:
+    1. SAP Integration requirements
     1. [Administer Power Platform](/power-platform/admin/admin-documentation)
 
 1. Assign setup tasks to the appropriate IT system team members and track progress.
@@ -47,9 +47,9 @@ Take the following steps to support a successful deployment of the preview SAP I
 
 The assembled team of IT system administrators need to review the following requirements and make necessary preparations before connecting your organization's SAP system to the Power Platform:
 
-- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/) - Determine if your organization has the necessary licensing to proceed with the setup. It is important to consider:
-  - Power Apps licensure that supports using an on-premises data gateway and premium applications, flows, and connectors.
-  - All administrators setting up the integration and functional business users testing the solution have the required licensure to do so.
+- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/) - Determine if your organization has the necessary licensing to proceed with the setup. It's important to consider:
+  - Power Apps licensing that supports using an on-premises data gateway and premium applications, flows, and connectors.
+  - All administrators setting up the integration and functional business users testing the solution have the required licenses to do so.
 
 - [SAP](<https://www.sap.com/>) subscription
   - Ensure that the users testing the SAP Integration solution have appropriate access to the appropriate SAP functional modules.
@@ -60,8 +60,8 @@ The assembled team of IT system administrators need to review the following requ
   - Select the 64-bit version of the connector.
   - Select _Install assemblies to GAC_ in the Optional setup steps window during installation.
 
-- [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant) - Create a new tenant for the SAP Integration.  It is important to consider:
-  - The tenant has at least 1GB of database storage capacity available for the sandbox environment.
+- [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant) - Create a new tenant for the SAP Integration.  It's important to consider:
+  - The tenant has at least 1 GB of database storage capacity available for the sandbox environment.
   - All members of the IT systems team have the necessary administrator roles to perform the setup.
   - All functional business users testing the SAP Integration are added to the tenant.
 
@@ -77,7 +77,7 @@ SAP integration with Power Platform requires IT system administrators to establi
 
 ### Step 1: Install on-premises data gateway
 
-An on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data that is not in the cloud and Microsoft cloud services.
+An on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services.
 
 SAP integration with the Power Platform requires that you install the latest version (9/23/2022 or newer) of the [on-premises data gateway](/data-integration/gateway/service-gateway-install).
 

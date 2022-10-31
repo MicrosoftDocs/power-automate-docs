@@ -35,7 +35,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
     - **Display name**. Enter a display name for the environment variable.
     - **Name**. This name is automatically generated as you enter the display name, but you can change it.
     - **Data Type**. Select **Text** (_don't_ select JSON). Once selected, the value fields will appear.
-        - **Default Value**. Offers a environment variable template.
+        - **Default Value**. Offers an environment variable template.
         - **Current Value**. Update the JSON blob with SAP system's SAP properties. Not all properties are necessary—your SAP environment will determine which ones are applicable. Refer to the SAP property guidance.
 
  :::image type="content" source="media/env-refs/env-var-panel.png" alt-text="The environment panel in Power Apps.":::
@@ -51,7 +51,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
 | LogonType   | The type of logon to the SAP system. The allowed values are either Application Server Logon (Type A) or Group Logon (Type B, also known as Message Server).|
 | MessageServerHost  | The hostname of the SAP system's message server (central instance) also known as R3 system name (Mandatory if connection type (Logon) is B - Message Server (Group)).  |
 | MessageServerService | The service name (as defined in etc/services) or the port number under which the message server is listening for load-balancing requests (Mandatory if connection type (Logon) is B - Message Server (Group) and system ID isn't present). |
-| SncCertificate  | The X.509 certificate in Base64 encoded form, without the begin or end certificate tags. |
+| SncCertificate  | The secure network connector (SNC) X.509 certificate in Base64 encoded form, without the begin or end certificate tags. |
 | SncMyName  | The installed SNC solution usually knows its own SNC name. For solutions supporting multiple identities, you may need to specify the identity to be used for this destination/server (optional). |
 | SncLibraryPath  | The name or path of the SNC library to be used. With the on-premises data gateway, the path can be an absolute or relative to the NCo library.  |
 | SncPartnerName  | The backends' SNC name (Required when type of logon is Application Server). |
@@ -63,12 +63,12 @@ SAP has multiple connection parameters, and manually entering the parameters int
 
 ## Reuse the environment variable in a flow
 
-Environment variables are available in a flow's dynamic content selector. Go into a SAP Integration cloud flow to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
+Environment variables are available in a flow's dynamic content selector. Go into an SAP Integration cloud flow to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
 
 1. Open a flow in the SAP Integration solution.
-1. In a flow action, click on **Add dynamic content** to open the dynamic content selector. All environment variables that you have access to are listed.
+1. In a flow action, select **Add dynamic content** to open the dynamic content selector. All environment variables that you have access to are listed.
 1. Select the desired environment variable.
-1. Click **Save**.
+1. Select **Save**.
 
  :::image type="content" source="media/env-refs/header-dynamic-content.png" alt-text="The header's dynamic content selector list in a solution-aware cloud flow.":::
 

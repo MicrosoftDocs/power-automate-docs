@@ -93,8 +93,8 @@ Power Automate's expression language is based on Logic Apps functions. New funct
 | [sort](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)   | Sorts an array of objects by a key found in each object.  |
 | [reverse](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)  | Reverse sorts an array of objects by a key found in each object. |
 | [dateDifference](/azure/logic-apps/workflow-definition-language-functions-reference#datedifference)  | Determines the difference between two dates and returns in the time unit specified in the function. This is especially useful for customers who use time-based billing. |
-| [isFloat](/azure/logic-apps/workflow-definition-language-functions-reference#isfloat)  | There is a unique edge case where some SAP APIs return currency strings in a user's localized format, which causes problems for mathematical operations. This function combined with float() removes the formatting so that math can do math. |
-| [parseDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#parsedatetime)   | Converts the string representation of a timestamp to its a standard ISO 8601 format. This output of this function can be used reliably to do additional operations on the timestamp like the functions defined in date and time functions.    |
+| [isFloat](/azure/logic-apps/workflow-definition-language-functions-reference#isfloat)  | There's a unique edge case where some SAP APIs return currency strings in a user's localized format, which causes problems for mathematical operations. This function combined with float() removes the formatting so that math can do math. |
+| [parseDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#parsedatetime)   | Converts the string representation of a timestamp to a standard ISO 8601 format. The output of this function can be used reliably to do additional operations on the timestamp like the functions defined in date and time functions.    |
 | [formatDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)  | A new optional parameter locale has been added to the existing **formatDateTime**. If not specified, the default locale is used.    |
 | [nthIndexOf](/azure/logic-apps/workflow-definition-language-functions-reference#nthindexof)  | Allows finding the **nth** occurrence of a substring.    |
 | [slice](/azure/logic-apps/workflow-definition-language-functions-reference#slice)  | Provides a new way to extract a substring. The existing function substring already allows such capability by providing start index and length. |
@@ -124,7 +124,7 @@ SAP integration with Power Platform will help your organization:
 
 ## Get started
 
-1. Join the [Power Automate community forum](<https://aka.ms/sap-powerusers-community>) site to ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
+1. Join the [Power Automate community forum](<https://aka.ms/sap-powerusers-community>) site. Ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 
 1. Assemble a team of IT administrators to [set up the SAP ERP integration with Power Platform](set-up-prepare.md).
 
