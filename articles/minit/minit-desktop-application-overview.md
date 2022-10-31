@@ -1,11 +1,14 @@
 ---
 title: Minit desktop application overview (preview)
 description: Get an overview of Minit desktop application for process advisor.
-author: nijemcevic
+author: mmaslejova
+contributors:
+  - mmaslejova
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/15/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
 - Flow
