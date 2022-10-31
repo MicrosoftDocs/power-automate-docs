@@ -25,6 +25,10 @@ The Power Automate designer is a rich tool in which you can configure every deta
 >[!TIP]
 > Many processes share a common model but have minor variations throughout an organization. You can save time within your organization by using Visio to create a master workflow model that others will then adjust with specialized parameters.
 
+
+>[!NOTE]
+> This feature is not available for GCC, GCC High, or DoD customers.
+
 ## Prerequisites
 
 - A [Power Automate](https://flow.microsoft.com) account.
