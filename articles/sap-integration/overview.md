@@ -4,11 +4,11 @@ description: Learn how SAP integration with Microsoft Power Platform is improved
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/06/2022
+ms.date: 10/31/2022
 ms.author: ellenwehrle
 ms.reviewer: 
-  - jongilmand
-  - galitsky
+  - jongilman
+  - dgalitsky
 search.app: 
   - Flow
 search.audienceType: 
@@ -34,7 +34,6 @@ The preview version of SAP integration with Microsoft Power Platform is built on
 - Updated SAP ERP connector
 
 > [!IMPORTANT]
->
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
@@ -55,9 +54,8 @@ The Power Automate flows automate the business rules behind the scenes while the
 - Record to Report
 - Make to Stock and Make to Order
 
-> [!NOTE]
->
-> Preview focuses on testing out the Order to Cash and Procure to Pay business processes.
+> [!IMPORTANT]
+> In preview, the focus is on testing the Order to Cash and Procure to Pay business processes.
 
 ## Advanced SAP system connections support
 

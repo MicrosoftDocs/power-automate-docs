@@ -6,7 +6,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/28/2022
+ms.date: 10/31/2022
 ms.author: ellenwehrle
 ms.reviewer: 
   - jongilman
@@ -61,19 +61,27 @@ SAP has multiple connection parameters, and manually entering the parameters int
 | SystemNumber  | The SAP system's system number. It's a number ranging from 00 to 99 (Mandatory if connection type (Logon) is A - Application Server).   |
 | UseSnc | When selected, the connections will be secured with SNC. The allowed value is Yes.|
 
-## Use the environment variable in a flow
+## Reuse the environment variable in a flow
 
-Environment variables can be used in solution cloud flows since they're available in the dynamic content selector.
+Environment variables are available in a flow's dynamic content selector. Go into a SAP Integration cloud flow to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
 
- For more information: [Use environment variables in Power Automate solution cloud flows](/power-apps/maker/data-platform/environmentvariables#use-environment-variables-in-power-automate-solution-cloud-flows)
+1. Open a flow in the SAP Integration solution.
+1. In a flow action, click on **Add dynamic content** to open the dynamic content selector. All environment variables that you have access to are listed.
+1. Select the desired environment variable.
+1. Click **Save**.
+
+ :::image type="content" source="media/env-refs/header-dynamic-content.png" alt-text="The header's dynamic content selector list in a solution-aware cloud flow.":::
+
+For more information:
+
+- [Edit a solution-aware cloud flow](/power-automate/edit-solution-aware-flow)
+
+- [Use environment variables in Power Automate solution cloud flows](/power-apps/maker/data-platform/environmentvariables#use-environment-variables-in-power-automate-solution-cloud-flows)
+
 
 > [!IMPORTANT]
 >
 > If an environment variable is updated after it has been used in a flow, the updated values won't be used the next time the flow runs. **The flow must be edited or resaved** for the updated values in the environment variable to take effect.
-
-## Reuse environment variables in SAP actions
-
-Environment variables can be selected from the dynamic content selector in Power Automate solution cloud flows.
 
 ### See also
 

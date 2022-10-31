@@ -90,8 +90,13 @@ While setting up the on-premises data gateway for SAP integration, ensure that y
   - Access to the download requires a valid S-user.
   - Select the 64-bit version of the connector.
   - Select _Install assemblies to GAC_ in the Optional setup steps window during installation.
+  
+More information: [About on-premises gateway](/power-platform/admin/wp-onpremises-gateway)
 
 ### Step 2: Configure Azure AD and SAP SSO
+
+> [!NOTE]
+> A direct connection with your credentials is all that is necessary for preview and testing.
 
 An [Azure Active Directory (AD) tenant](/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-ad-define) provides identity and access management. The Azure AD tenant created for SAP Integration must be configured with an on-premises data gateway with constrained delegation to support single sign-on (SSO).
 
@@ -103,6 +108,7 @@ The following articles will help you configure and manage your tenants and autho
 - [SAP ERP Windows Authentication](/connectors/saperp/#authentication)
 - [Overview of Kerberos](/data-integration/gateway/service-gateway-service-account)
 - [Configure Kerberos-based SSO to on-premises data sources (SAP)](/power-bi/connect-data/service-gateway-sso-kerberos)
+- [Establish DLP policies](/power-platform/guidance/adoption/dlp-strategy)
 
 ### Step 3: Create and manage an environment
 
@@ -115,6 +121,8 @@ Follow the directions in [Create and manage an environment](/power-platform/admi
 1. Select **Sandbox** for environment type.
 1. Select **Yes** to create a database for the environment.
 1. Restrict environment access by selecting the newly created Azure AD tenant as the security group. This will ensure that only the resources in that tenant have access to the environment.
+
+More information: [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
 ### Step 4: Set up and manage connectors
 
@@ -162,3 +170,5 @@ Take the following steps to download and then import the solution:
 - [Overview of SAP integration with Power Platform (preview)](overview.md)
 - [Understand prebuilt solution available for integrating SAP with Power Platform (preview)](solutions.md)
 - [SAP ERP connector](/connectors/saperp/#sap-authentication)
+- [Microsoft Power Platform guidance documentation](/power-platform/guidance/)
+- [Microsoft Power Platform Center of Excellence (COE) Starter Kit](/power-platform/guidance/coe/starter-kit)

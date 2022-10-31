@@ -41,7 +41,8 @@ All of the screens and data attributes from SAP are streamlined onto one screen 
 
 Four key business processes in SAP ERP are organized into modules that contain accessible Power Apps templates. The templates enable users to perform standard workflow functions such as Search, Create, Change, or Display.
 
-In preview, the main focus will be testing the Order to Cash and Procure to Pay business processes.
+> [!IMPORTANT]
+> In preview, the focus is on testing the Order to Cash and Procure to Pay business processes.
 
 ### Order to Cash
 
