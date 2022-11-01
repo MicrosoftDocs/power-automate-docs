@@ -672,10 +672,10 @@
       href: process-mining-share.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
-  - name: Minit desktop application for process advisor (preview)
+  - name: Minit desktop application (preview)
     items:
     - name: Overview
-      href: ./minit/minit-desktop-application-for-process-advisor-private-preview.md
+      href: ./minit/minit-desktop-application-overview.md
     - name: Install the Minit desktop application
       href: ./minit/how-to-start-with-minit-desktop-application.md
     - name: Process hub

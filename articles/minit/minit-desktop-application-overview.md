@@ -4,8 +4,8 @@ description: Get an overview of the Minit desktop application for Microsoft Powe
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/26/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:
