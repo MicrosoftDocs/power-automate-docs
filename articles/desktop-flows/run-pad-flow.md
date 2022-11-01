@@ -81,7 +81,7 @@ The **reuse Windows session** functionality allows desktop flows to run on an ex
 
 1. Sign into Power Automate
 1. Select **Machines** then select a machine or a machine group
-1. Select Edit details
+1. Select **Edit details**
 1. Select **Yes**
 
 >[!NOTE]
@@ -171,7 +171,7 @@ If you plan to run multiple desktop flows, you can adopt either one of the follo
 1. Create clusters of machines that can run desktop flows with identical configurations in parallel.
 1. Create multiple flows that each use a separate connection to target different machines.
 
-By following these strategies, you can avoid having desktop flows competing to run on the same device and in some cases failing due to timeouts.
+By following these strategies, you can avoid having desktop flows competing to run on the same device and in some cases, failing due to timeouts.
 
 >[!NOTE]
 >If you are running desktop flows in unattended mode, you will need to anticipate the number of desktop flows your organization plans to run in parallel, and then purchase an adequate amount of Unattended Add-ons.
@@ -191,7 +191,7 @@ If a desktop flow run fails, correct the issue, and then try the following steps
 
 Some of your desktop flows might run for long durations, for example more than 24 hours. To ensure that those flows run successfully and don't fail due to the default timeout values, perform the following steps:
 
-1. Select the ellipsis (…) on the top right corner of the desktop flows action. And select Settings.
+1. Select the ellipsis (…) on the top right corner of the desktop flows action. And select **Settings**.
 
     ![Screenshot of the settings option.](media/run-pad-portal/timeout-settings.png "The settings option")
 
@@ -279,7 +279,7 @@ To find the ID of an environment, navigate to the [Power Automate portal](https:
 
 ![Screenshot of the environment ID in the address line.](media/run-flow-url/find-environment-id.png)
 
-To find the ID of a desktop flow, launch the Power Automate console, right-click on the appropriate flow, and select **Details**.
+To find the ID of a desktop flow, launch the Power Automate console, select or right-click on the appropriate flow, and select **Details**.
 
 ![Screenshot of the desktop flow details.](media/run-flow-url/find-desktop-flow-id.png)
 
@@ -298,9 +298,9 @@ A URL containing the **runId** input parameter should have the following structu
 "ms-powerautomate:/console/flow/run?workflowId=[workflowId]&runId=[GUID]"
 ```
 
-### Use a run URL in the Command Prompt
+### Use a run URL in the command prompt
 
-To trigger a flow using the Command Prompt, use a command with the following syntax:
+To trigger a flow using the command prompt, use a command with the following syntax:
 
 >[!NOTE]
 > You can replace the second part of the command with any of the previously presented URL formats.
