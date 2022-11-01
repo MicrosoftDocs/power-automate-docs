@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/27/2022
+ms.date: 10/26/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -31,15 +31,14 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 
 - To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
 
-   As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device. 
+   As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device.
 
 - If you use the on-premises data gateway to trigger desktop flows, you also need to [setup a desktop flow connection](install.md#setup-desktop-flows-connections-and-machine-credentials).
 
-- A work or school account. 
+- A work or school account.
 
    >[!IMPORTANT]
    >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
-   
 
 ## Run desktop flows unattended or attended
 
@@ -53,13 +52,15 @@ When you add a desktop flow to a cloud flow, you can choose whether you want you
 
 ### Unattended mode
 
-To run unattended desktop flows, the target machine needs to be available with all users signed out. 
+To run unattended desktop flows, the target machine needs to be available with all users signed out.
 
 >[!IMPORTANT]
+>
 > - Locked Windows user sessions will prevent desktop flows from running.
 > - Flows run in unattended mode can't be launched with elevated privileges
 
 Power Automate performs the following steps:
+
 1. Power Automate creates, manages, and then releases the Windows user session on the target devices.
 
 1. Unattended desktop flows run on devices with the screen locked so that no one can see the flow while it runs.
@@ -76,36 +77,35 @@ A new session is created on the machine for each unattended run using the creden
 
 The **reuse Windows session** functionality allows desktop flows to run on an existing session. At the end of the flow run, the session is locked and can be reused for another desktop flow run.  
 
-##### Allow reusing Windows session 
+##### Allow reusing Windows session
 
-1. Sign into Power Automate 
-1. Select Machines then select a machine or a machine group 
-1. Select Edit details 
-1. Select “Yes” 
+1. Sign into Power Automate
+1. Select **Machines** then select a machine or a machine group
+1. Select **Edit details**
+1. Select **Yes**
 
 >[!NOTE]
 >When adding a machine in a group, the machine will use the same settings as defined in the group. When removing from a machine group, the machine keeps the setting defined at the group level.
 
 ###### Known issues and limitations
 
-"Reuse sessions" isn't supported on machines that a user can have multiple sessions (user isn't restricted to a single session). 
+"Reuse sessions" isn't supported on machines that a user can have multiple sessions (user isn't restricted to a single session).
 
 ### Attended mode
+
 To run an attended desktop flow, you need to have an active Windows user session that matches the name of the user configured for your connection. The session must not be locked.
 
 When an attended desktop flow starts on the target machine, we recommend that you avoid interacting with your device until the run completes.
 
-
-## Run multiple desktop flows on the same device sequentially 
+## Run multiple desktop flows on the same device sequentially
 
 You can schedule multiple desktop flows to run on one or more devices. If more than one desktop flow is triggered to run on the same device, Power Automate follows these rules:
 
-1.  The first desktop flow runs on the target device based on [priority](monitor-desktop-flow-queues.md#setting-a-priority) and time requested.
+1. The first desktop flow runs on the target device based on [priority](monitor-desktop-flow-queues.md#setting-a-priority) and time requested.
 
-1.  Queues other desktop flows and then displays them as **Queued**.
+1. Queues other desktop flows and then displays them as **Queued**.
 
-1.  Picks the next desktop flow when each run completes based on priority and time requested, shown as **Next to run**.
-
+1. Picks the next desktop flow when each run completes based on priority and time requested, shown as **Next to run**.
 
 You can [view the real-time execution order](monitor-desktop-flow-queues.md#view-run-queue-for-a-machine-or-machine-group) of a device by its run queue. You can also manually [change the order](monitor-desktop-flow-queues.md#actions-on-a-run) of the desktop flows in the run queue at run-time, either by changing the priority or moving them to the top of the queue.
 
@@ -123,8 +123,9 @@ You can [view the real-time execution order](monitor-desktop-flow-queues.md#view
 Multiple users can be signed in simultaneously on Windows Server 2016, Windows Server 2019, and Windows Server 2022. Power Automate uses this OS capability to simultaneously run multiple desktop flows on such devices. With this feature, your organization can save on its infrastructure costs.
 
 Perform the following steps to benefit from multiple desktop flows on a single device:
+
 1. Set up a Windows Server 2016, 2019 or 2022 device with the latest version of desktop flows installed.
-1. Use two or more user accounts to create desktop flows connections targeting this device. 
+1. Use two or more user accounts to create desktop flows connections targeting this device.
 
 Power Automate automatically scales the number of concurrent desktop flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the remaining runs *wait* as [described here](#run-multiple-desktop-flows-on-the-same-device-sequentially).
 
@@ -146,19 +147,19 @@ Follow [these steps to add a gateway to create a cluster](/data-integration/gate
 >[!NOTE]
 >Offline gateway members within a cluster will negatively impact performance. Disable or remove these members.
 
-To provide load balancing from the Power Automate gateway details page, navigate to **Data** -> **Gateways**, and then select your gateway cluster. 
+To provide load balancing from the Power Automate gateway details page, navigate to **Data** > **Gateways**, and then select your gateway cluster.
 
 In the gateway details page, toggle **Run on all gateways in cluster**. This option will distribute the desktop flows runs on all the gateways within that cluster.
 
    ![Screenshot of the gateway details page.](media/run-pad-portal/gw-cluster.png "Distribute desktop flows run on gateway cluster")
-   
+
 >[!NOTE]
->In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin accross cluster members.
+>In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin across cluster members.
 
 >[!IMPORTANT]
 >If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
 >If you are using Active Directory or Azure AD joined machines, confirm that the user account you will be using in the desktop flows connection can access all machines in the cluster.
-   
+
 ## Best practices to avoid timeouts and distribute load across machines
 
 > [!IMPORTANT]
@@ -167,34 +168,35 @@ In the gateway details page, toggle **Run on all gateways in cluster**. This opt
 If you plan to run multiple desktop flows, you can adopt either one of the following strategies. These strategies distribute the load and ensure that all desktop flows run successfully without overloading the target machine(s) and running into timeouts because multiple desktop flows are running simultaneously.
 
 1. Spread the load over time by planning your desktop flows to run at different times of the day. This practice works best if you've a limited set of machines that run workloads, and you can control the triggers that start your desktop flows.
-1. Create clusters of machines that can run desktop flows with identical configurations in parallel. 
+1. Create clusters of machines that can run desktop flows with identical configurations in parallel.
 1. Create multiple flows that each use a separate connection to target different machines.
 
-By following these strategies, you can avoid having desktop flows competing to run on the same device and in some cases failing due to timeouts. 
+By following these strategies, you can avoid having desktop flows competing to run on the same device and in some cases, failing due to timeouts.
 
 >[!NOTE]
->If you are running desktop flows in unattended mode, you will need to anticipate the number of desktop flows your organization plans to run in parallel, and then purchase an adequate amount of Unattended Add-ons. 
+>If you are running desktop flows in unattended mode, you will need to anticipate the number of desktop flows your organization plans to run in parallel, and then purchase an adequate amount of Unattended Add-ons.
 
 >[!NOTE]
->If a target device or gateway becomes offline due to either a restart or connectivity issues, desktop flows will wait for up to three hours before it fails. This wait time allows for transient machine states and allows you to successfully run automation even even if the devices go through restart or update cycles. 
+>If a target device or gateway becomes offline due to either a restart or connectivity issues, desktop flows will wait for up to three hours before it fails. This wait time allows for transient machine states and allows you to successfully run automation even even if the devices go through restart or update cycles.
 
 ## Rerun failed desktop flows
 
-If a desktop flow run fails, correct the issue, and then try the following steps to rerun it: 
+If a desktop flow run fails, correct the issue, and then try the following steps to rerun it:
 
    1. Go to the details page and identify the failed run.
 
    1. Select the **Resubmit** button from the action menu.
 
 ## Support long running desktop flows
+
 Some of your desktop flows might run for long durations, for example more than 24 hours. To ensure that those flows run successfully and don't fail due to the default timeout values, perform the following steps:
 
-1.	Select the ellipsis (…) on the top right corner of the desktop flows action. And select Settings.
+1. Select the ellipsis (…) on the top right corner of the desktop flows action. And select **Settings**.
 
     ![Screenshot of the settings option.](media/run-pad-portal/timeout-settings.png "The settings option")
 
-1.  Select the **Timeout** property and update the duration to correctly handle your desktop flow run. 
-1.	Select **Done**.
+1. Select the **Timeout** property and update the duration to correctly handle your desktop flow run.
+1. Select **Done**.
 
 ## Troubleshoot failures
 
@@ -218,9 +220,7 @@ Some of your desktop flows might run for long durations, for example more than 2
 
 Power Automate, apart from triggering flows through the console, flow designer and cloud flows, enables you to run desktop flows using run URLs and desktop shortcuts.
 
-You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, and the Command Prompt. 
-
-Alternatively, you can create desktop shortcuts and run your desktop flows directly through them. Desktop shortcuts also enable you to automatically trigger or schedule desktop flows directly through your desktop using the Windows Task Scheduler.
+You can use URLs to trigger desktop flows through many different sources, such as browsers, the Windows Run application, the [Command Prompt](#use-a-run-url-in-the-command-prompt), and the [Windows Task Scheduler](#trigger-flows-automatically-with-task-scheduler). Alternatively, you can [create desktop shortcuts](#create-a-desktop-shortcut) and run your desktop flows directly through them.
 
 If a triggered flow requires input variables, the console will ask you to populate the appropriate values.
 
@@ -231,7 +231,7 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 
 ![Screenshot of the Prompt me before running flows triggered by URL option in the console settings.](media/run-flow-url/console-run-url-console-settings.png)
 
-### Prerequisites 
+### Prerequisites
 
 - Power Automate for desktop needs to be installed on the machine. 
 - The user must be signed in.
@@ -243,8 +243,7 @@ To create a shortcut for a desktop flow, right-click on its name in the console 
 
 ![Screenshot of the Create desktop shortcut option.](media/run-flow-url/console-create-desktop-shortcut.png)
 
-
-### Create a run URL 
+### Create a run URL
 
 To generate a URL that triggers a desktop flow, use one of the following formats:
 
@@ -255,16 +254,17 @@ To generate a URL that triggers a desktop flow, use one of the following formats
 ```
 "ms-powerautomate:/console/flow/run?workflowId=[workflowId]"
 ```
- 
+
 ```
 "ms-powerautomate:/console/flow/run?environmentId=[environmentId]&workflowId=[workflowId]"
-``` 
+```
+
 > [!NOTE]
 > You can find an automatically created run URL consisting of the environment and flow IDs on the details page of the desktop flow. You can find more information about flow details in [Desktop flow details](console.md#desktop-flow-details).
 
 ```
 "ms-powerautomate:/console/flow/run?environmentId=[environmentId]&workflowName=[workflowIName]"
-``` 
+```
 
 >[!Important]
 > If a flow is already running, it won't run again when the URL is invoked.
@@ -275,17 +275,17 @@ If the console is set to another environment than the one specified in the URL, 
 
 ### Find environment and desktop flow IDs
 
-To find the ID of an environment, navigate to the [Power Automate portal](https://flow.microsoft.com/) and select the desired environment. Then, navigate to the **My flows** tab and copy the environment ID from the address line. 
+To find the ID of an environment, navigate to the [Power Automate portal](https://flow.microsoft.com/) and select the desired environment. Then, navigate to the **My flows** tab and copy the environment ID from the address line.
 
 ![Screenshot of the environment ID in the address line.](media/run-flow-url/find-environment-id.png)
 
-To find the ID of a desktop flow, launch the Power Automate console, right-click on the appropriate flow, and select **Details**. 
+To find the ID of a desktop flow, launch the Power Automate console, select or right-click on the appropriate flow, and select **Details**.
 
 ![Screenshot of the desktop flow details.](media/run-flow-url/find-desktop-flow-id.png)
 
 ### Save logs for desktop flows run via URL
 
-Apart from the mandatory input parameters, you can add the **runId** parameter to a run URL to define a unique GUID for the desktop flow logs. 
+Apart from the mandatory input parameters, you can add the **runId** parameter to a run URL to define a unique GUID for the desktop flow logs.
 
 Power Automate uses this GUID to create a folder and store the logs inside it. The logs are stored in: **C:\Users\\[Username]\AppData\Local\Microsoft\Power Automate Desktop\Console\Scripts\\[Flow ID]\Runs\\[Run ID]**
 
@@ -298,27 +298,48 @@ A URL containing the **runId** input parameter should have the following structu
 "ms-powerautomate:/console/flow/run?workflowId=[workflowId]&runId=[GUID]"
 ```
 
-### Use a run URL in the Command Prompt 
+### Use a run URL in the command prompt
 
-To trigger a flow using the Command Prompt, use a command with the following syntax:
+To trigger a flow using the command prompt, use a command with the following syntax:
 
 >[!NOTE]
 > You can replace the second part of the command with any of the previously presented URL formats.
 
 ```
 "C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe" "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"
-```   
+```
+
+### Trigger flows automatically with Task Scheduler
+
+To trigger a flow using the Task Scheduler application of Windows:
+
+1. Create a new task, navigate to the **Actions** tab of the **Create Task** dialog, and add a new action.
+
+1. Populate the following value in the **Program/script** field.
+
+    ```
+    C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe
+    ```
+
+1. Populate the following value in the **Add arguments** field.
+
+    ```
+    ms-powerautomate:/console/flow/run?workflowName=[workflowName]
+    ```
+
+    >[!NOTE]
+    > You can replace the given argument with any of the previously presented URL formats.
 
 ## Runtime notifications
 
-Power Automate provides two different types of notifications while running a desktop flow, depending on the user's preferences. 
+Power Automate provides two different types of notifications while running a desktop flow, depending on the user's preferences.
 
 > [!NOTE]
 > Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate doesn't display notifications.
 
 Through the **Monitoring/Notifications** option of the console settings, you can choose between the integrated Windows notifications, the flow monitoring window, or disabling the notifications.
 
-The **Windows notifications** option displays a Windows notification pop-up when a desktop flow is running, paused, stopped, finished running successfully, or encountered an error. Additionally, the notification pop-up enables users to pause or stop the flow through the respective buttons. 
+The **Windows notifications** option displays a Windows notification pop-up when a desktop flow is running, paused, stopped, finished running successfully, or encountered an error. Additionally, the notification pop-up enables users to pause or stop the flow through the respective buttons.
 
 ![Screenshot of a notification window.](media\run-pad-flow\notification-window.png)
 
@@ -333,8 +354,8 @@ Instead of displaying separate notifications for each desktop flow, the monitori
 
 ## Learn more
 
- - Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
- - [Use the on-premises data gateway app](../gateway-manage.md) documentation.
- - [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
+- Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
+- [Use the on-premises data gateway app](../gateway-manage.md) documentation.
+- [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
