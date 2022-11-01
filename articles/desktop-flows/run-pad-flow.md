@@ -80,9 +80,9 @@ The **reuse Windows session** functionality allows desktop flows to run on an ex
 ##### Allow reusing Windows session
 
 1. Sign into Power Automate
-1. Select Machines then select a machine or a machine group
+1. Select **Machines** then select a machine or a machine group
 1. Select Edit details
-1. Select “Yes”
+1. Select **Yes**
 
 >[!NOTE]
 >When adding a machine in a group, the machine will use the same settings as defined in the group. When removing from a machine group, the machine keeps the setting defined at the group level.
@@ -147,7 +147,7 @@ Follow [these steps to add a gateway to create a cluster](/data-integration/gate
 >[!NOTE]
 >Offline gateway members within a cluster will negatively impact performance. Disable or remove these members.
 
-To provide load balancing from the Power Automate gateway details page, navigate to **Data** -> **Gateways**, and then select your gateway cluster.
+To provide load balancing from the Power Automate gateway details page, navigate to **Data** > **Gateways**, and then select your gateway cluster.
 
 In the gateway details page, toggle **Run on all gateways in cluster**. This option will distribute the desktop flows runs on all the gateways within that cluster.
 
