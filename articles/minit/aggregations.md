@@ -2,22 +2,22 @@
 title: Aggregations (preview)
 description: Learn the aggregations you can use in custom metrics in the Minit desktop application for Microsoft Power Automate process advisor
 author: nijemcevic
-mssubservice: process-advisor
-mstopic: conceptual
-msdate: 10/28/2022
-msauthor: tatn
-msreviewer: angieandrews
-mscustom: bap-template
-searchapp:
+ms.subservice: process-advisor
+ms.topic: conceptual
+ms.date: 11/01/2022
+ms.author: tatn
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.app:
 - Flow
-searchaudienceType:
+search.audienceType:
 - flowmaker
 - enduser
 ---
 
 # Aggregations (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](/includes/cc-beta-prerelease-disclaimermd)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](/includes/cc-beta-prerelease-disclaimer.md)]
 
 This article describes the aggregations you can use in custom metrics
 
@@ -505,4 +505,4 @@ Can be used on case metrics filters or case overview statistics. Returns true if
 
 ### See also
 
-For a list of all calculation contexts for aggregation operations, go to [Calculation context](calculation-contextmd)
+For a list of all calculation contexts for aggregation operations, go to [Calculation context](calculation-context.md)

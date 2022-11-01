@@ -4,7 +4,7 @@ description: Learn about statistics for process activities (events) in the Minit
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/28/2022
+ms.date: 11/01/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -82,7 +82,7 @@ The table summary row provides a summary overview of the standard metrics that M
 
 You can't add metrics to the summary row. However, you can hide those you don't need to view. Select the hamburger menu at the right side of the summary row, and then select or clear the selection of columns to customize your view of the summary.
 
-:::image type="content" source="media/activity-stats-table-columns.png" alt-text="Screenshot of the table column selection panel.":::
+:::image type="content" source="media/activity-stats-table-columns.png" alt-text="Screenshot of the table summary row column selection panel.":::
 
 The following table describes the metrics that are available in the summary row.
 
