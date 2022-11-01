@@ -6,8 +6,12 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: v-gtrantzas
-ms.reviewer: v-gtrantzas
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -97,6 +101,10 @@ search.audienceType:
 
    > [!NOTE]
    > If an input variable contains sensitive data, you may want to obfuscate or omit it from the logs. To find more information regarding sensitive text inputs, refer to [Manage sensitive input like passwords](../how-tos-use-sensitive-input.md).
+
+
+   > [!NOTE]
+   > The limit of the input size for a desktop flow is 2MB (1MB for Chinese regions)
 
    ![Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.](media/link-pad-flow-portal/run-desktop-flow-v2-action-properties-2.png)
 

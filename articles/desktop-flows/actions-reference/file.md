@@ -1,13 +1,17 @@
 ---
 title: File | Microsoft Docs
 description: File Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.date: 10/25/2022
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -33,87 +37,96 @@ Manage and manipulate files
 [Get file path part](#getpathpart)  
 [Get temporary file](#gettemppath)  
 [Convert file to Base64](#convertfiletobase64action)  
-[Convert Base64 to file](#convertbase64tofileaction)
+[Convert Base64 to file](#convertbase64tofileaction)  
+[Convert file to binary data](#convertfiletobinaryaction)  
+[Convert binary data to file](#convertbinarytofileaction)  
 
 ## Getting started with file actions
 
-Power Automate provides the files actions to automate managing files and manipulate their properties.
+Handling files and their content is essential for most automation scenarios. Using the file actions, you create desktop flows that manage files, retrieve their properties, read and write data, and convert them to other types.
 
-To get a list of all files in a specified folder, you can use the **Get files in folder** action. You can filter files by using the File filter action. Add keywords, along with the asterisk (*) wildcard character, and separate multiple terms with a semicolon (;). In the figure below, the file filter is set to **.png**, and **Include subfolders** has been enabled. This means that the resulting variable will only contain PNG format files stored in the specified folder and its subfolders. 
+Most file actions require paths that specify the files you want to manipulate. These paths can be hardcoded values or [file datatype variables](../variable-data-types.md#files-and-folders).
 
-  ![Screenshot of the Get files in folder action.](media/file/get-files-in-folder-example.png)
+>[!NOTE]
+>If you want to provide many files as input, use a [list variable](../variable-data-types.md#list) with file items. A method to create a list of files is the **Get files in folder** action.
 
-To copy or move files, use the Copy file(s) and Move file(s) actions, respectively. 
+Similarly, you can populate a hardcoded value or a [folder datatype variable](../variable-data-types.md#files-and-folders) to specify a destination folder in the actions that need one.
 
-Rename a file or multiple files with the **Rename file(s)** action. Select to either set a new name or add, replace or remove a string of text to the existing filename. In the figure below, a list of files has been selected and the string **backup_** will be appended to the beginning of each file.
+![Screenshot of the Move files action.](media/file/move-files-example.png)
 
-  ![Screenshot of the Rename files action.](media/file/rename-files-example.png)
+Some file actions provide an extensive configuration, allowing you to automate virtually any scenario. For example, the **Rename file(s)** includes options to set a new name or add, replace or remove a text string to the existing file name.
 
-The same action can be used to remove this string of text should the backed up files be restored.
+![Screenshot of the Rename files action.](media/file/rename-files-example.png)
 
-The **Read text from file** action stores text from a .txt file in a variable. Specify a .txt file, and the file contents are stored as a single text value or as a list. 
+To append text content or overwrite text files, deploy the **Write text to file** action. To read the content of a text file, use the **Read text from file** action.
 
-The **Write text to file** action adds text to an existing .txt file or creates a new file with the specified text. 
+Likewise, if you need to read or write content to CSV files, use the **Read from CSV file** and **Write to CSV file** actions. You can find an example desktop flow that handles CSV files in [Convert a CSV file into an Excel spreadsheet](../how-to/convert-csv-excel.md).
 
+If you want to check if a file exists in a specific folder, use the **If file exists** action. This action is a conditional and allows you to run different blocks of code depending on whether the file exists. You can find more information regarding conditionals in [Use conditionals](../use-conditionals.md).
 
 ## File actions
 
 > [!IMPORTANT]
 > To prevent unauthorized access, Windows require administrator rights to access protected files. To access these resources using the file actions, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
-
 ### <a name="iffileaction"></a> If file exists
+
 Marks the beginning of a conditional block of actions depending on whether a file exists or not
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If file|N/A|Exists, Doesn't exist|Exists|The state of the file to check|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The full path to look for the file|
 
-
 ##### Variables Produced
+
 - This action doesn't produce any variables
 
 ##### <a name="iffileaction_onerror"></a> Exceptions
+
 - This action doesn't include any exceptions
 
-
 ### <a name="waitforfileaction"></a> Wait for file
+
 Suspend the execution of the automation until a file is created or deleted
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for file to be|N/A|Created, Deleted|Created|Specifies whether to pause the flow on the creation or deletion of a certain file|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The full path to look for the file|
 
-
 ##### Variables Produced
+
 - This action doesn't produce any variables
 
 ##### <a name="waitforfileaction_onerror"></a> Exceptions
+
 - This action doesn't include any exceptions
 
-
 ### <a name="copy"></a> Copy file(s)
+
 Copy one or more files into a destination folder
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File(s) to copy|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to copy. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
 |Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||The destination folder for the copied files|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
-
 ##### Variables Produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |CopiedFiles|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|The copied file(s) as a list of files|
 
-
 ##### <a name="copy_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Source folder doesn't exist|Indicates that the source folder doesn't exist|
@@ -122,23 +135,25 @@ Copy one or more files into a destination folder
 |Can't copy file|Indicates a problem copying the file|
 
 ### <a name="move"></a> Move file(s)
+
 Move one or more files into a destination folder
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File(s) to move|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to move. This can be a file path, or a variable containing a file, a list of files, a textual path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
 |Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||The destination folder for the moved files|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
-
 ##### Variables Produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |MovedFiles|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|The moved file(s) as a list of files|
 
-
 ##### <a name="move_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Source folder doesn't exist|Indicates that the source folder doesn't exist|
@@ -147,18 +162,21 @@ Move one or more files into a destination folder
 |Can't move file|Indicates a problem moving the file|
 
 ### <a name="delete"></a> Delete file(s)
+
 Delete one or more files
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File(s) to delete|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to delete. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' to populate a variable with a list of files|
 
-
 ##### Variables Produced
+
 - This action doesn't produce any variables
 
 ##### <a name="delete_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |File path doesn't exist|Indicates that the file path doesn't exist|
@@ -166,9 +184,11 @@ Delete one or more files
 |Can't delete file|Indicates a problem deleting the file|
 
 ### <a name="renamefiles"></a> Rename file(s)
+
 Change the name of one or more files
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File to rename|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to rename. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
@@ -197,14 +217,14 @@ Change the name of one or more files
 |Make each number at least|Yes|[Numeric value](../variable-data-types.md#numeric-value)|3|The minimum length for each number added|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the folder|
 
-
 ##### Variables Produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |RenamedFiles|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|The renamed file(s) as a list of files|
 
-
 ##### <a name="renamefiles_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Directory not found|Indicates that the directory wasn't found|
@@ -212,24 +232,26 @@ Change the name of one or more files
 |Can't rename file|Indicates a problem renaming the file|
 
 ### <a name="readtextfromfile"></a> Read text from file
+
 Read the contents of a text file
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file to read|
 |Store content as|N/A|Single text value, List (each is a list item)|Single text value|Specifies how to store the text. Choose 'Single text value' to store the entire text as a single text value. Choose 'List' to store each line of the original text as a text item in a list|
 |Encoding|N/A|System default, ASCII, Unicode, Unicode (big-endian), UTF-8|UTF-8|The encoding to read the specified text from the text file with.|
 
-
 ##### Variables Produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |FileContents|[Text value](../variable-data-types.md#text-value)|The contents as a text|
 |FileContents|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The contents as a list of texts|
 
-
 ##### <a name="readtextfromfile_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Directory not found|Indicates that the directory wasn't found|
@@ -237,9 +259,11 @@ Read the contents of a text file
 |Failed to read from file|Indicates a problem reading from the file|
 
 ### <a name="writetext"></a> Write text to file
+
 Write or appends text to a file
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write the text. This can be a file path, or a variable containing a file or a textual path|
@@ -248,77 +272,85 @@ Write or appends text to a file
 |If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies whether to overwrite the existing content, or to append to the end of the existing content. If the file doesn't exist, this action automatically creates it|
 |Encoding|N/A|System default, ASCII, Unicode, Unicode (big-endian), UTF-8, Unicode (without byte order mask), UTF-8 (without byte order mask)|Unicode|The encoding to use for the specified text to write into the text file|
 
-
 ##### Variables Produced
+
 - This action doesn't produce any variables
 
 ##### <a name="writetext_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Failed to write text to file|Indicates a problem writing to the file|
 |Invalid directory for file|Indicates that the directory is invalid|
 
 ### <a name="readfromcsvfile"></a> Read from CSV file
+
 Read a CSV file into a data table
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The CSV file to read. This can be a file path, or a variable containing a file or a textual path|
-|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte οrder mark), System default, ASCII|UTF-8|The encoding be use for reading the specified CSV file|
+|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte order mark), System default, ASCII|UTF-8|The encoding be used for reading the specified CSV file|
 |Trim fields|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to automatically trim off the leading and trailing whitespaces of the extracted cells|
 |First line contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use the first row of the CSV resource to set the column names of the resulting data table variant. Enable this option to avoid reading the names as data into the table. Subsequent actions may access the data held by the data table using column names (instead of column numbers)|
 |Columns separator|N/A|Predefined, Custom, Fixed column widths|Predefined|Specifies whether to use a predefined columns separator, a custom one or fixed column widths|
-|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column-separator to parse the the CSV file|
+|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column-separator to parse the CSV file|
 |Custom separator|No|[Text value](../variable-data-types.md#text-value)||The custom column-separator to use for parsing the CSV resource specified|
 |Fixed column widths|No|[Text value](../variable-data-types.md#text-value)||The fixed column-widths to use for parsing the CSV resource specified. Separate the widths using commas, spaces, tabs or newlines|
 
-
 ##### Variables Produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |CSVTable|[Datatable](../variable-data-types.md#datatable)|The contents of the CSV file as a data table|
 
-
 ##### <a name="readfromcsvfile_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Read from CSV failed|Indicates a problem reading from the CSV file|
 
 ### <a name="writetocsvfile"></a> Write to CSV file
+
 Write a data table, data row or list to a CSV file
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Variable to write|No|[General value](../variable-data-types.md#general-value)||The data table, data row variable or list variable to write into the target CSV file|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The CSV file to export the variable to. This can be a file path, or a variable containing a file or a textual path|
-|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte οrder mark), System default, ASCII|UTF-8|The encoding to use for writing to the specified CSV file |
-|Include column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether the column names of the variant specified should become the very first row of the CSV file. This option takes effect if and only if the target CSV file either doesn't intially exist or exists but is otherwise empty of text|
-|If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies the desired behaviour when the targeted CSV file already exists in the filesystem|
+|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte order mark), System default, ASCII|UTF-8|The encoding to use for writing to the specified CSV file |
+|Include column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether the column names of the variant specified should become the very first row of the CSV file. This option takes effect if and only if the target CSV file either doesn't initially exist or exists but is otherwise empty of text|
+|If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies the desired behavior when the targeted CSV file already exists in the filesystem|
 |Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column separator to use in the specified CSV file|
 |Custom columns separator|No|[Text value](../variable-data-types.md#text-value)||The custom column separator to use in the CSV file|
 |Use custom columns separator|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a custom columns separator or a predefined one|
 
-
 ##### Variables Produced
+
 - This action doesn't produce any variables
 
 ##### <a name="writetocsvfile_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Write failed|Indicates a problem writing to the CSV file|
 
 ### <a name="getpathpart"></a> Get file path part
-Retrieve one or more parts (directory, filename, extension etc) from a text that represents a file path
+
+Retrieve one or more parts (directory, filename, extension etc.) from a text that represents a file path
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file path to use as the source|
 
-
 ##### Variables Produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |RootPath|[File](../variable-data-types.md#files-and-folders)|The root path of the source file|
@@ -327,52 +359,61 @@ Retrieve one or more parts (directory, filename, extension etc) from a text that
 |FileNameNoExtension|[Text value](../variable-data-types.md#text-value)|The file name (without the extension) of the source file|
 |FileExtension|[Text value](../variable-data-types.md#text-value)|The extension (for example, .doc) of the source file|
 
-
 ##### <a name="getpathpart_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |File path contains invalid characters|Indicates that the file path doesn't exist|
 
 ### <a name="gettemppath"></a> Get temporary file
+
 Create a uniquely named, empty temporary file on disk, and get the file object (which is a representation, and can access the file and all its information)
 
 ##### Input Parameters
+
 - This action doesn't require any input
 
 ##### Variables Produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |TempFile|[File](../variable-data-types.md#files-and-folders)|The temporary file object|
 
-
 ##### <a name="gettemppath_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Failed to create temporary file|Indicates a problem creating a temporary file|
 
 ### <a name="convertfiletobase64action"></a> Convert file to Base64
+
 Convert a file to Base64 encoded text
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file path to read from|
 
 ##### Variables Produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |Base64Text|[Text value](../variable-data-types.md#text-value)|The Base64 encoded text|
 
 ##### <a name="gettemppath_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |File not found|Indicates that the file doesn't exist|
 |Can't convert file to Base64|Indicates that the provided file can't be converted into Base64 encoded text|
 
 ### <a name="convertbase64tofileaction"></a> Convert Base64 to file
+
 Convert a Base64 encoded text to file
 
 ##### Input Parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Base64 encoded text|No|[Text value](../variable-data-types.md#text-value)||The Base64 encoded text|
@@ -380,13 +421,52 @@ Convert a Base64 encoded text to file
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
 ##### Variables Produced
+
 - This action doesn't produce any variables
 
-
 ##### <a name="gettemppath_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Invalid directory for file|Indicates that the directory is invalid|
 |Can't convert Base64 to file|Indicates that the provided Base64 encoded text can't be converted into a file|
+
+### <a name="convertfiletobinaryaction"></a> Convert file to binary data
+Convert a file to binary data
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The file to read from|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|BinaryData|[Text value](../variable-data-types.md#text-value)|The binary data to write|
+
+##### <a name="convertfiletobinaryaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|File not found|Indicates that the file doesn't exist|
+|Can't convert file to binary data|Indicates that the provided file can't be converted to binary data|
+
+### <a name="convertbinarytofileaction"></a> Convert binary data to file
+Convert binary data to file
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Binary data|No|[Text value](../variable-data-types.md#text-value)||The binary data|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write to|
+|If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="convertbinarytofileaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Invalid directory for file|Indicates that the directory is invalid|
+|Can't convert binary file to file|Indicates that the provided binary data can't be converted into a file|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

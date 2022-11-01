@@ -4,7 +4,7 @@ This is the GitHub repository for the technical product documentation for **Powe
 
 ## How to contribute
 
-Thanks for your interest in contributing to [Microsoft Docs](https://learn.microsoft.com/), home of technical content for Microsoft products and services.
+Thanks for your interest in contributing to [Microsoft Learn](https://learn.microsoft.com/), home of technical content for Microsoft products and services.
 
 To learn how to make contributions to the content in this repository, start with our [contributor guide](https://learn.microsoft.com/contribute).
 

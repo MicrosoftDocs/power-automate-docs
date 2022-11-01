@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: KVivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/22/2021
+ms.date: 10/18/2022
 ms.author: hamenon
 search.app: 
   - Flow
@@ -24,9 +24,9 @@ search.audienceType:
 ---
 # Power Automate regions overview
 
-In Power Automate, your flows are created within your Microsoft Power Platform environment. These environments are specific to a region, which corresponds to the location of the datacenters where your Microsoft Power Platform environment is stored.
+In Power Automate, your flows are created within your Microsoft Power Platform environment. These environments are specific to a region, which corresponds to the location of the data centers where your Microsoft Power Platform environment is stored.
 
-In other words, your flows are deployed in the [datacenter region](https://azure.microsoft.com/regions/) that hosts your Microsoft [Power Platform environment](environments-overview-admin.md).
+In other words, your flows are deployed in the [data center region](https://azure.microsoft.com/regions/) that hosts your Microsoft [Power Platform environment](environments-overview-admin.md).
 
 ## More information about Microsoft Power Platform regions
 
@@ -36,29 +36,35 @@ In other words, your flows are deployed in the [datacenter region](https://azure
 
 ## Region mappings for Power Automate and gateways
 
-The region where the gateway is installed must map to your Power Automate region. Cross geographic boundaries aren't supported. 
+The region where the gateway is installed must map to your Power Automate region. Cross geographic boundaries aren't supported.
 
 Here's the mapping information:
 
 Power Platform region|Gateway region
 -----|-----
 Asia|East Asia, Southeast Asia
-Australia|Australia East, Australia Southeast
+Australia|Australia East, Australia Southeast, Australia Central
 Canada|Canada Central, Canada East
 Europe|North Europe, West Europe
 France|France Central, France South
-India|Central India, South India, West India
+Germany | Germany North, Germany West Central
+India|Central India, South India, West India, North India
 Japan|Japan East, Japan West
+Korea | Korea South
+Norway | Norway East, Norway West
+Singapore | Southeast Asia, East Asia
+South Africa | South Africa North
 South America|Brazil South
-Switzerland|Switzerland North
-United Kingdom|UK South, UK West
-United States including Preview|Central US, East US 2, East US, North Central US, South Central US, West US 2, West Central US, West US
+Switzerland|Switzerland North, Switzerland West
+United Arab Emirates | UAE Central, UAE North
+United Kingdom|UK South, UK West, UK East
+United States including Preview|Central US, East US, East US 2, East US 3, North Central US, South Central US, West US, West US 2, West US 3, West Central US
 
 ## Frequently asked questions
 
 ### What region should I use?
 
-It's a good idea to create your flow in an environment that's in the region closest to your customers. When the datacenters that host your environment are closer to the people accessing the information, you're likely to see better performance.
+It's a good idea to create your flow in an environment that's in the region closest to your customers. When the data centers that host your environment are closer to the people accessing the information, you're likely to see better performance.
 
 ### How can I find out the region where my flow is deployed?
 
@@ -71,6 +77,5 @@ Yes. [Learn more](./us-govt.md).
 ### What outbound IP addresses are used in each region?
 
 See [Limits and configuration](limits-and-config.md).
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

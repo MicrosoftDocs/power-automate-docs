@@ -4,7 +4,7 @@ description: Power Automate for desktop prerequisites & limitations
 services: ''
 suite: flow
 documentationcenter: na
-author: mariosleon
+author: georgiostrantzas
 manager: ''
 editor: ''
 tags: ''
@@ -15,7 +15,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/02/2021
-ms.author: marleon
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow 
 search.audienceType: 

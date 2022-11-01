@@ -6,8 +6,12 @@ author: mariosleon
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/08/2021
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

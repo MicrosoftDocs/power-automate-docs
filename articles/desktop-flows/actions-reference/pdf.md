@@ -1,13 +1,17 @@
 ---
 title: PDF | Microsoft Docs
 description: PDF Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

@@ -4,11 +4,10 @@ description: Provides information about Power Automate US Government service des
 services: ''
 suite: flow
 author: msftman
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 06/22/2022
+ms.date: 09/27/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -251,27 +250,9 @@ Formerly, US Government customers needed to contact support before configuring t
 
 ## Power Automate US Government feature limitations
 
-Some of the features available in the commercial version of Flow are not available in Flow US Government customers. The Power Automate team is actively working on making these features available to US Government customers and will update this article when these features become available.
+Microsoft strives to maintain functional parity between our commercially available service and those enabled through our US Government clouds. These services are referred to as Power Automate Government Community Cloud (GCC) and GCC High. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where Power Automate is available throughout the world, including approximate availability timelines. 
 
-- [AI Builder](/ai-builder/) is not yet available in DoD tenants.
-
-- [Approvals](./modern-approvals.md) are available, subject to the following:
-  * There is no actionable approval support. Approval emails will contain links to the Power Automate approvals center for users to respond.
-    * Guest users cannot access the approvals center so they cannot serve as approvers.
-  * There is no markdown support for approval email.
-
-- [Submitting Templates](./publish-a-template.md)
-
-- [Connectors](/connectors/index) – The most popular connectors in use in our commercial service (based on usage telemetry) have been published; if there is a connector available in the commercial offering that you do not see deployed, contact support and we will review your request.
-
->[!NOTE]
->Third-party connectors are not yet available for GCC High nor DoD.
-
-Microsoft is investigating the data loss prevention (DLP) feature, considering the possibility for connectors to be *blocked by default*. Until this is possible, third-party connectors pose a measurable threat to organizations relying on the GCC High environment to maintain requisite data exfiltration controls.
-
-- [Power Platform admin center](/power-platform/admin/admin-documentation) – Some functionality, such as managing data gateways and certain analytics reports, are not available.
-
-- [Desktop flows](./desktop-flows/overview.md) - To install the on-premises data gateway in DoD, go to **Data > Gateways** in the left navigation, and then select **New gateway**.
+There are exceptions to the principle of maintaining product functional parity within the US Government clouds. For more information about feature availability, download this file: [Business Applications US Government - Availability Summary](https://aka.ms/BAPFunctionalParity).
 
 ### See also
 

@@ -4,8 +4,7 @@ description: Use RPA with Dynamics 365 Customer Service.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: KVivek
+author: georgiostrantzas
 editor: ''
 tags: ''
 
@@ -15,7 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/27/2021
-ms.author: DeonHe
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
