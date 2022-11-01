@@ -37,6 +37,10 @@ The installer contains all the components you need to record, edit, and test you
 Follow these steps to install Power Automate for desktop:
 
 1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+
+    >[!IMPORTANT]
+    >Although deploying MSI and Microsoft Store installations on the same machine is possible, duplicate installations may cause issues and aren't recommended.
+
 1. Open the **Setup.Microsoft.PowerAutomate.exe** file. 
 
    **Note**: This file is likely in your **Downloads** folder after you downloaded it in the previous step.
@@ -62,9 +66,6 @@ By default, both are installed on your device.
 -->
 
 ![Screenshot of the installation details.](media/desktop-flows-setup/installer-checkboxes.png "Screenshot of the installation details.")
-
->[!IMPORTANT]
->To register your machine, you must have an organization premium account.
 
 >[!NOTE]
 >By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
