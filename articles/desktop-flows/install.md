@@ -67,9 +67,6 @@ By default, both are installed on your device.
 
 ![Screenshot of the installation details.](media/desktop-flows-setup/installer-checkboxes.png "Screenshot of the installation details.")
 
->[!IMPORTANT]
->To register your machine, you must have an organization premium account.
-
 >[!NOTE]
 >By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
 
