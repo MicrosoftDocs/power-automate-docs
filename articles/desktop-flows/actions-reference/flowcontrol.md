@@ -42,7 +42,7 @@ Flow control refers to controlling the order in which actions and subflows run. 
 
 ![Screenshot of a deployed label action in a flow.](media/flowcontrol/label-example.png)
 
-The **Run subflow** action interrupts the subflow in which it's placed and runs another subflow. When the second subflow completes, the flow reverts to the original subflow to continue running. In the figure below, the subflow **Calculate Discount** has been created to run multiple times throughout the runtime of the flow, to avoid repeating the same code.
+The **Run subflow** action interrupts the subflow in which it's placed and runs another subflow. When the second subflow completes, the flow reverts to the original subflow to continue running. In the figure below, the subflow **Calculate Discount** has been created to run multiple times throughout the runtime of the flow to avoid repeating the same code.
 
 ![Screenshot of a deployed Run subflow action.](media/flowcontrol/subflows-example.png)
 
