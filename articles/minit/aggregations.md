@@ -17,7 +17,7 @@ search.audienceType:
 
 # Aggregations (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](/includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 This article describes the aggregations you can use in custom metrics
 
