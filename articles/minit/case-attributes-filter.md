@@ -1,12 +1,13 @@
 ---
 title: Case attributes filter (preview)
-description: Learn how to use the case attributes filter in Minit desktop application in process advisor.
+description: Learn how to use the case attributes filter in the Minit desktop application for Microsoft Power Automate process advisor.
 author: nijemcevic
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 10/15/2022
+ms.topic: how-to
+ms.date: 11/01/2022
 ms.author: tatn
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.app:
 - Flow
 search.audienceType:
@@ -18,28 +19,24 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use this filter to select only those cases that contain or don't contain a specific attribute. For example, select cases in which a specific activity is being performed, or cases in which a specific resource is present.
+The **Attributes** filter selects cases that contain&mdash;or don't contain&mdash;a specific attribute. Use it, for example, to select cases that include a certain activity or resource.
 
-## Attribute selection
+1. Select the filter **Attributes**.
 
-Here you need to select an attribute for the filter rule. All available attributes in the process are selectable.
+    :::image type="content" source="media/image014.png" alt-text="Screenshot of the Attributes (conditional) filter.":::
 
-:::image type="content" alt-text="Screenshot of attribute selection." source="media/image014-3.png":::
+1. Select an attribute.
 
-### Select attribute values
+1. Select either the **List** tab or the **Expression** tab and select or enter the attribute value.
 
-Select attribute values for the filter rule on the right side of the screen. There are two ways to define the values for filter criteria. Select the respective tab to switch.
+    - **List**: Select, or search for and select, values. It may take a moment for the list to populate after you select the **List** tab.
 
-- **List:** (Available for string attributes.) In this tab, you can select and remove values to and from the list. You can also search for specific values in the list of possible values in case the list is too long.
+       :::image type="content" alt-text="Screenshot of an attribute values list." source="media/image015a.png":::
 
-   :::image type="content" alt-text="Screenshot of attribute values list." source="media/image015a.png":::
+    - **Expression**: You can include both string and numeric attributes in an expression.
 
-- **Expression:** Available for both string and numeric attributes. In this tab, you can specify an expression such as `„Starts with", „Contains"` for string, and an expression such as `„Greater than", „Equal"` also for numeric attributes.
+       :::image type="content" alt-text="Screenshot of an attribute value specified as an expression." source="media/expression.png":::
 
-   :::image type="content" alt-text="Screenshot of attribute values." source="media/expression.png":::
+       You can include custom metrics in an expression, too. To switch between a constant value and a custom expression, select **Fx**.
 
-   For an expression, it's possible to use custom expression as in custom metrics. To switch between constant value and custom expression, select **Fx**.
-
-   :::image type="content" alt-text="Screenshot of Expression tab." source="media/expressioncm.png":::
-
-
+       :::image type="content" alt-text="Screenshot of an attribute value specified as a custom expression." source="media/expressioncm.png":::

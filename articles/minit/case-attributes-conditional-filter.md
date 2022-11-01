@@ -4,7 +4,7 @@ description: Learn how to use the case attributes conditional filter in the Mini
 author: nijemcevic
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 10/15/2022
+ms.date: 11/01/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -25,12 +25,12 @@ The **Attributes (conditional)** filter adds conditions to the **Attribute** fil
 
     :::image type="content" source="media/image016-v52.png" alt-text="Screenshot of the Attributes (conditional) filter.":::
 
-1. In the **and at the same time** list, select the additional criteria type, either **Attribute**, **Metric**, or **Process Metric**.
+1. In the **and at the same time** list, select a criteria type, either **Attribute**, **Metric**, or **Process Metric**.
 
    :::image type="content" alt-text="Screenshot of specifying the additional criteria type." source="media/image017-v52.png":::
 
-   Process metric option calculates results not per a single case, but total value for all case in the existing process. In the View filtering, it returns either empty (0% cases) or full (100% cases) data set coverage. The usage of Process metrics is reasonable for filters in Business rules. It's possible to deactivate or activate the business rule by filtering out the whole data set.
+   **Process metric** calculates the total value for all cases in the process. In the view filtering, it returns either empty (0% cases) or full (100% cases) for data set coverage. It's reasonable to use process metrics for filters in business rules, where you can deactivate or activate the business rule by filtering out the whole data set.
 
-1. Specify the value or values, or custom expression for it.
+1. Select an attribute, metric, or process metric and the corresponding value or values.
 
-   :::image type="content" alt-text="Screenshot of values or expressions." source="media/image017-v52.png":::
+    :::image type="content" source="media/image017-v52-2.png"" alt-text="Screenshot of specifying additional criteria for a metric.":::
