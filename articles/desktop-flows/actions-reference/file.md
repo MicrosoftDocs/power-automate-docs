@@ -37,7 +37,9 @@ Manage and manipulate files
 [Get file path part](#getpathpart)  
 [Get temporary file](#gettemppath)  
 [Convert file to Base64](#convertfiletobase64action)  
-[Convert Base64 to file](#convertbase64tofileaction)
+[Convert Base64 to file](#convertbase64tofileaction)  
+[Convert file to binary data](#convertfiletobinaryaction)  
+[Convert binary data to file](#convertbinarytofileaction)  
 
 ## Getting started with file actions
 
@@ -428,5 +430,43 @@ Convert a Base64 encoded text to file
 |-----|-----|
 |Invalid directory for file|Indicates that the directory is invalid|
 |Can't convert Base64 to file|Indicates that the provided Base64 encoded text can't be converted into a file|
+
+### <a name="convertfiletobinaryaction"></a> Convert file to binary data
+Convert a file to binary data
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The file to read from|
+
+##### Variables Produced
+|Argument|Type|Description|
+|-----|-----|-----|
+|BinaryData|[Text value](../variable-data-types.md#text-value)|The binary data to write|
+
+##### <a name="convertfiletobinaryaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|File not found|Indicates that the file doesn't exist|
+|Can't convert file to binary data|Indicates that the provided file can't be converted to binary data|
+
+### <a name="convertbinarytofileaction"></a> Convert binary data to file
+Convert binary data to file
+
+##### Input Parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Binary data|No|[Text value](../variable-data-types.md#text-value)||The binary data|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write to|
+|If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
+
+##### Variables Produced
+- This action doesn't produce any variables
+
+##### <a name="convertbinarytofileaction_onerror"></a> Exceptions
+|Exception|Description|
+|-----|-----|
+|Invalid directory for file|Indicates that the directory is invalid|
+|Can't convert binary file to file|Indicates that the provided binary data can't be converted into a file|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
