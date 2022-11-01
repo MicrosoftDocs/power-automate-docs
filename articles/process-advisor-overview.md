@@ -22,19 +22,25 @@ Task mining and process mining share the same goal of improving process efficien
 
 - **Process mining:** Process mining is better suited for discovery of inefficiencies in organization-wide processes. It enables you to gain a deep understanding of your processes using event log files that you can get from your system of record (apps you use in your processes). Process mining displays maps of your processes with data and metrics to recognize performance issues. Example processes suitable for process mining include *accounts receivable* and *order-to-cash*.
 
+   Process mining can be a key driver in making intelligent, day-today improvements on every level. You can discover and model processes for which you have data readily available, which gives you an X-ray visualization of what goes on in your organization. Process mining allows you to standardize, optimize, and improve operations, while staying informed about progress towards defined key process indicators.
+
 - **Task mining:** Task mining is better suited to discover tasks happening on the desktop. It enables you to zoom-in to specific desktop tasks you might have discovered during your process mining analysis. You can understand how your company performs its process tasks through monitoring recorded user actions and collecting data from these actions. You'll gain insights from this data that will let you know how processes are performed, find common mistakes while performing tasks, and identify tasks that can be automated.
 
 ## When to use process mining
 
 Here are some reasons to help you decide to use process mining.
 
-- See the actual steps needed to perform your organization’s operation process and remove any guesswork.
+- See the actual steps needed to perform your organization’s operation process and remove any guesswork&mdash;Check you process reality as it is.
 
-- Optimize processes by reducing time to completion.
+- Save time and money by optimizing processes.
 
-- Detect non-compliant processes.
+- Detect non-compliant processes and/or tasks.
 
 - Discover automation opportunities.
+
+- Compare processes.
+
+- Understand where and why problems occur.
 
 Explore the topics in [**Process mining (preview)**](process-mining-overview.md) and [**Task mining**](task-mining-overview.md) in this documentation for the following:
 
@@ -67,6 +73,10 @@ Process advisor is licensed as part of Power Automate per-user licenses. If you 
 For more information about process advisor licensing, go to [Power Automate pricing](https://us.flow.microsoft.com/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
 
 For complete licensing details, go to the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
+
+Currently, only the task mining recording feature is generally available and will require either a license or trial. The process mining data feature and all the templates are in public preview, and don't require a license or trial. However, a license or trial is needed if you're using this feature in an environment that isn't the default environment. 
+
+To customize your report, you need to link the process to your own workspace, and a paid Power BI license is needed. The specific license you need depends on the data size of the process data. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/). 
 
 ## Prerequisites
 
