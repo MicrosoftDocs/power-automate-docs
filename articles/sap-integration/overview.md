@@ -1,4 +1,4 @@
-﻿---
+---
 title: Overview of SAP integration with Microsoft Power Platform (preview)
 description: Learn how SAP integration with Microsoft Power Platform is improved with a prebuilt solution that works with enhanced connection features.
 author: EllenWehrle
@@ -6,14 +6,11 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 10/31/2022
 ms.author: ellenwehrle
-
 ms.reviewer: 
   - jongilman
   - dgalitsky
-
 search.app: 
   - Flow
-
 search.audienceType: 
   - administrator
   - stakeholder
