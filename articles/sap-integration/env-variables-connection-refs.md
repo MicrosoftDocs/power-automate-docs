@@ -1,6 +1,6 @@
 ﻿---
 title: Create an environment variable with SAP connection parameters (preview)
-description: Create an environment variable in Power Apps that contains all of your SAP system information.
+description: Define an environment variable in Power Apps that contains all of your SAP system information then reuse it in your SAP flow actions.
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
@@ -65,23 +65,18 @@ SAP has multiple connection parameters, and manually entering the parameters int
 
 Environment variables are available in a flow's dynamic content selector. Go into an SAP Integration cloud flow to select the environment variables to reuse in [SAP actions](/connectors/sap/#actions).
 
-1. Open a flow in the SAP Integration solution.
+1. [Edit a solution-aware cloud flow.](/power-automate/edit-solution-aware-flow)
 1. In a flow action, select **Add dynamic content** to open the dynamic content selector. All environment variables that you have access to are listed.
 1. Select the desired environment variable.
 1. Select **Save**.
 
  :::image type="content" source="media/env-refs/header-dynamic-content.png" alt-text="The header's dynamic content selector list in a solution-aware cloud flow.":::
 
-For more information:
-
-- [Edit a solution-aware cloud flow](/power-automate/edit-solution-aware-flow)
-
-- [Use environment variables in Power Automate solution cloud flows](/power-apps/maker/data-platform/environmentvariables#use-environment-variables-in-power-automate-solution-cloud-flows)
-
+Learn more at: [Use environment variables in Power Automate solution cloud flows](/power-apps/maker/data-platform/environmentvariables#use-environment-variables-in-power-automate-solution-cloud-flows)
 
 > [!IMPORTANT]
 >
-> If an environment variable is updated after it has been used in a flow, the updated values won't be used the next time the flow runs. **The flow must be edited or resaved** for the updated values in the environment variable to take effect.
+> Any time an environment variable is updated in a cloud flow, the updated values are not automatically used the next time the flow runs. The updated flow must be **deactivated and reactivated** for the updated values to take effect.
 
 ### See also
 

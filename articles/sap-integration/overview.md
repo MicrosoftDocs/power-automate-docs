@@ -1,6 +1,6 @@
 ﻿---
 title: Overview of SAP integration with Microsoft Power Platform (preview)
-description: Learn how SAP integration with Microsoft Power Platform is improved with a prebuilt SAP Integration solution that works with enhanced connection features, new Logic Apps functions, and an updated on-premises data gateway.
+description: Learn how SAP integration with Microsoft Power Platform is improved with a prebuilt solution that works with enhanced connection features.
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
@@ -28,12 +28,13 @@ SAP ERP is a centralized system of record that facilitates the management of dat
 The preview version of SAP integration with Microsoft Power Platform is built on a broad set of new functionality designed to make it easier for organizations that rely on SAP to digitally transform and automate their business processes. The enhancements include:
 
 - Prebuilt SAP Integration solution
-- Advanced SAP system connections
+- Advanced SAP system connection support
 - Updated On-premises data gateway
 - New Logic Apps Functions
 - Updated SAP ERP connector
 
 > [!IMPORTANT]
+>
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
