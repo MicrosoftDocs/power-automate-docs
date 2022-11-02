@@ -51,7 +51,7 @@ Follow these steps to install Power Automate for desktop:
 
     - **Power Automate machine runtime app** allows you to connect your machine to the Power Automate cloud. It allows you to harness the full power of your robotic process automation (RPA). To learn more about machine management, go to [Manage machines](./manage-machines.md).
 
-    Additionally, there are option to:
+    Additionally, there are options to:
 
     - Add the WebDriver and ChromeDriver components to run desktop flows created with Selenium IDE.
     - Install the required files for UI automation in Java applets.
