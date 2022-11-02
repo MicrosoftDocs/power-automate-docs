@@ -4,8 +4,11 @@ description: Learn about the prebuilt SAP Integration solution available to impo
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 09/19/2022
+ms.date: 11/01/2022
 ms.author: ellenwehrle
+ms.reviewer: 
+  - jongilman
+  - dgalitsky    
 search.app: 
   - Flow
 search.audienceType: 
@@ -23,14 +26,14 @@ Connecting your SAP system to Microsoft Power Platform will extend its functiona
 
 The preview version of the prebuilt SAP integration solution is available for download [here](https://github.com/jongilman88/PowerPlatformSAPIntegration). It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with Power Platform.
 
-The custom model-driven app runs in your browser and streamline SAP screens and data attributes onto one simple screen. In the template apps, users will be able complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
+The canvas app runs in your browser and streamlines SAP screens and data attributes onto one simple screen that helps users complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
 
 ## What does the user interface look like?
 
-On the surface, you will see a custom model-driven app that runs in your browser.
+On the surface, you will see a canvas app that runs in your browser.
 
 Here is the Purchase Orders template in the Purchasing module
-    :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of sales order page that is part of the sales module.":::
+    :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of purchase order page that is part of the purchasing module.":::
 
 ## How is it organized?
 
@@ -38,7 +41,8 @@ All of the screens and data attributes from SAP are streamlined onto one screen 
 
 Four key business processes in SAP ERP are organized into modules that contain accessible Power Apps templates. The templates enable users to perform standard workflow functions such as Search, Create, Change, or Display.
 
-In preview, the main focus will be testing the Order to Cash and Procure to Pay business processes.
+> [!IMPORTANT]
+> In preview, the focus is on testing the Order to Cash and Procure to Pay business processes.
 
 ### Order to Cash
 
@@ -102,7 +106,7 @@ When you look the app behind the scenes, you see that the prebuilt solution is m
 
 These sets of components work together to communicate with your SAP system, automate your processes, and offer an accessible, streamlined view of your data.
 
-After importing the prebuilt solution into Power Apps, look to the left navigational panel to view all of its different components.
+After importing the prebuilt solution into Power Apps, look to the left-side navigation panel to view all of its different components.
 
   :::image type="content" source="media/prebuilt-solution/powerapps-nav.png" alt-text="Power App navigation where one can select Apps, Flows, and Solutions.":::
 
