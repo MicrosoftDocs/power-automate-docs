@@ -1,4 +1,4 @@
-﻿---
+---
 title: Create an environment variable with SAP connection parameters (preview)
 description: Define an environment variable in Power Apps that contains all of your SAP system information then reuse it in your SAP flow actions.
 author: EllenWehrle
@@ -8,7 +8,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/01/2022
 ms.author: ellenwehrle
-ms.reviewer: dgalitsky
+ms.reviewer: 
+  - jongilman
+  - dgalitsky
 search.app: Flow
 search.audienceType: 
   - flowmaker
