@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/09/2022
+ms.date: 10/12/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -53,6 +53,9 @@ You can edit solution-aware cloud flows via [solutions](#edit-a-solution-aware-c
 1. Select **...** (Commands) for your flow, and then select **Edit**.
 1. Make your edits in the Power Automate designer, test your changes, and then save your flow.
 1. Turn on your flow if you'd like it to run.
+
+>[!WARNING]
+>When you edit solution-aware flows, it's possible for you to introduce unmanaged customization layers into your managed solution-aware flows. Unmanaged customization layers can impact your ability to update these flows in the future.
 
 ## Learn more
 

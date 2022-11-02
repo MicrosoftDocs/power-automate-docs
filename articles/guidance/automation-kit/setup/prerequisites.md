@@ -11,18 +11,18 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/01/2021
+ms.date: 10/06/2022
 ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
 # Prerequisites to install and use the Automation Kit
 
-The following prerequisites are required to install and use the Automation Kit
+The following prerequisites are required to install and use the Automation Kit.
 
 - An administrative account, which is called **Automation CoE Admin** or similar.
 
-  The Automation Kit requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration). Therefore, the account you set up as the **Automation CoE Admin** needs the following.
+- The Automation Kit requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration. Therefore, the account you set up as the **Automation CoE Admin** needs the following.
 
 ## Roles
 
@@ -58,7 +58,7 @@ Azure Key Vault(s) is used to store secrets for the Azure app registration menti
 
 ## License requirements
 
-For ongoing usage by users the following licenses are required:
+All users must have one of the following licenses.
 
 - Microsoft 365 license (E3, E5).
 - Power Automate per user with attended RPA license (non-trial).
@@ -68,19 +68,18 @@ For ongoing usage by users the following licenses are required:
 
 ## Enable code components
 
-The Automation Kit uses the Power Platform Creator Kit, which was developed to bootstrap and enhance canvas apps look and feel. The Creator Kit uses Fluent UI references and guidelines. [Read more about fluent](https://www.microsoft.com/design/fluent/)
+The Automation Kit uses the Power Platform Creator Kit, which was developed to bootstrap and enhance the canvas apps look and feel. The Creator Kit uses Fluent UI references and guidelines. [Read more about fluent](https://www.microsoft.com/design/fluent/).
 
-The Creator Kit uses a component library and code components. We must enable code components inside ALL the environments that the Automation Kit will be installed in.
+The Creator Kit uses a component library and code components. You must enable code components inside all the environments into which the the Automation Kit will be installed.
 
 > [!WARNING]
-> You will have to uninstall and potentially lose all data if Power Apps component framework for canvas apps is not turned on the environments where the Automation Kit is installed or upgraded.
-Enable component framework before installing or upgrading.
+> You will have to uninstall and potentially lose all data if the Power Apps component framework for canvas apps isn't turned on for the environments where the Automation Kit is installed or upgraded. Enable the component framework before installing or upgrading.
+
 ![A screenshot that displays the environments](../media/CodeComponentsTurnedOn.png)
 
-1. Navigate to the Power Platform Admin Center.
-1. Select an environment where you want to enable this feature.
-(We need to do this for both Main and all Satellite environments)
-1. Click the Settings cog in the top nav.
-1. Under Product > Click Features.
-1. Turn on (Enable) Power Apps component framework for canvas apps.
-1. Click Save.
+1. Sign in to the Power Platform admin center.
+1. Select an environment where you want to enable this feature. This is needed in both the [main](/power-automate/guidance/automation-kit/setup/main) and all [satellite](/power-automate/guidance/automation-kit/setup/satellite) environments.
+1. Select **Settings** at the top of the screen.
+1. Select **Features** from below **Product**.
+1. Turn on **Allow publishing of canvas apps with code components**.
+1. Select **Save**.

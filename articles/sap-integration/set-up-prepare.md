@@ -4,7 +4,7 @@ description: Learn about the requirements to configure SAP integration, and prep
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/28/2022
+ms.date: 11/01/2022
 ms.author: ellenwehrle
 ms.reviewer:
   - jongilman

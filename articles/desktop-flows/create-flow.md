@@ -6,8 +6,12 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 01/15/2022
-ms.author: v-gtrantzas
-ms.reviewer: v-gtrantzas
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

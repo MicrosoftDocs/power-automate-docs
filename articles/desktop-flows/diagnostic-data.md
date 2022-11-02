@@ -1,13 +1,17 @@
 ---
 title: Data Collection in Power Automate | Microsoft Docs
 description: Data Collection in Power Automate
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/21/2021
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
