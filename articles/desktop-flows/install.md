@@ -45,19 +45,20 @@ Follow these steps to install Power Automate for desktop:
 1. Follow the instructions in the **Power Automate for desktop setup** installer to complete the installation.
 1. Make your selections for each feature for the installation to complete.
 
-The installer allows you to install two different apps on your device:
+    The installer allows you to install two different applications on your device.
 
-- **Power Automate for desktop** is the app to build your desktop flows. With it, you can create, edit, and run your automations. To learn more about the desktop flows designer, go to [Power Automate desktop flow designer](./flow-designer.md).
+    - **Power Automate for desktop** is the app to build your desktop flows. With it, you can create, edit, and run your automations. To learn more about the desktop flows designer, go to [Power Automate desktop flow designer](./flow-designer.md).
 
-- **Power Automate machine runtime app** allows you to connect your machine to the Power Automate cloud. It allows you to harness the full power of your robotic process automation (RPA). To learn more about machine management, go to [Manage machines](./manage-machines.md).
+    - **Power Automate machine runtime app** allows you to connect your machine to the Power Automate cloud. It allows you to harness the full power of your robotic process automation (RPA). To learn more about machine management, go to [Manage machines](./manage-machines.md).
 
-By default, both are installed on your device.  
+    Additionally, there are option to:
+
+    - Add the WebDriver and ChromeDriver components to run desktop flows created with Selenium IDE.
+    - Install the required files for UI automation in Java applets.
 
 >[!IMPORTANT]
 >
 >- Although deploying MSI and Microsoft Store installations on the same machine is possible, duplicate installations may cause issues and aren't recommended.
->- The installer installs the Power Automate app and third-party components. It also adds the WebDriver component to run desktop flows created with Selenium IDE.
->- To automate Java applications using UI automation, enable the appropriate installation option that installs the required files for UI automation in Java applets.
 >- By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
 
 ![Screenshot of the installation details.](media/desktop-flows-setup/installer-checkboxes.png "Screenshot of the installation details.")
