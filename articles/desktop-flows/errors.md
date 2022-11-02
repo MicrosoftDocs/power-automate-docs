@@ -17,25 +17,29 @@ search.audienceType:
 
 # Handle errors in desktop flows
 
-During developing and running desktop flows, users may encounter errors and warnings. This article presents the different error and warning types, the **Errors** pane, and the available error handling functionality.
+During developing and running, you may encounter errors and warnings in your desktop flows. This article presents the different error and warning types, the **Errors** pane, and the available error handling functionality.
 
 ## Desktop flows error types
 
 Desktop flows can cause two kinds of errors:
 
-- **Design-time errors** are associated with the configuration of the deployed actions. These errors appear during development and prevent the desktop flow from running. For example, an empty mandatory field or an undefined variable can cause this type of error.
+- **Design-time errors** are associated with the configuration of the deployed actions. These errors appear during development and prevent desktop flows from running. For example, an empty mandatory field or an undefined variable can cause this type of error.
 
-- **Run-time errors**, also known as exceptions, occur during execution and make desktop flows fail. For example, an invalid file path can cause this kind of error. Use any of the available error-handling options to prevent your desktop flows from falling.
+- **Run-time errors**, also known as exceptions, occur during execution and make desktop flows fail. For example, an invalid file path can cause this kind of error. Use any of the [available error-handling options](#configure-error-handling-functionality) to prevent your desktop flows from falling.
 
-When an action throws an error, the flow designer displays an icon next to it and a pop-up pane with relevant information. If the error occurred is a design-time error,  the flow designer also displays an error description in the action modal.
+When an action throws an error, the flow designer displays an icon next to it and a pop-up pane with relevant information. If the error occurred is a design-time error,  the flow designer also displays an error description in the action's modal.
+
+![Screenshot of some errors in the errors pane.](media/errors/example-errors.png)
 
 ## Desktop flows warnings
 
-Apart from errors, the flow designer also displays warnings that indicate non-critical issues in your desktop flows. Warnings don't prevent desktop flows from running but indicate possible unwanted functionality, such as infinite recursions of subflows.
+Apart from errors, the flow designer displays warnings that indicate non-critical issues in your desktop flows. Warnings don't prevent desktop flows from running but indicate possible unwanted functionality, such as infinite recursions of subflows.
+
+![Screenshot of a warning in the errors pane.](media/errors/example-warning.png)
 
 ## Review errors and warnings using the errors pane
 
-The errors pane is the flow designer component responsible for displaying information regarding occurred errors and warnings.
+The errors pane is the flow designer's component responsible for displaying information regarding occurred errors and warnings.
 
 It consists of three columns:
 
@@ -43,27 +47,31 @@ It consists of three columns:
 - **Action**: The line number of the erroneous action or the action that causes the warning.
 - **Error**: The message of the occurred error or warning.
 
-To see additional information regarding a thrown error or warning double-click on the respective item in the error pane.
+The pane also provides filters to display errors, warnings, and/or items related to specific subflows.
 
-Once you do so, a dialog will display information about:
+![Screenshot of the available filter in the errors pane.](media/errors/errors-pane-filters.png)
+
+To see additional information regarding a thrown error or warning, double-click on the respective item in the errors pane. Once you do so, a dialog will display information about:
 
 - **Location**: The subflow and the action that threw the error or warning.
 - **Error message**: The message of the occurred error or warning.
 - **Error details**: A long description of the occurred run-time error. These details give a clear message about why the run-time error happened.
 
+![Screenshot of the error details dialog.](media/errors/error-details.png)
+
 ## Configure error-handling functionality
 
-Power Automate enables you to configure error-handling for single actions and blocks of actions in your desktop flows.
+Power Automate enables you to configure error-handling functionality for single actions and blocks of actions in your desktop flows.
 
 ### Handle errors of single actions
 
-Desktop flows stop their execution by default when an error occurs. To configure a custom error-handling functionality for a specific action, select **On error** in its modal.
+By default, desktop flows stop their execution when an error occurs. To configure a custom error-handling functionality for a specific action, select On error in its modal.
 
-![Screenshot of the on On error option in the action.](media/configuring-actions-errors/on-error-option-action.png)
+![Screenshot of the on On error option in the action.](media/errors/on-error-option-action.png)
 
 The first available option is the **Retry action if an error occurs** checkbox. This option makes the flow run the action a set number of times after a set number of seconds. The default value is one retrying with an interval of two seconds.
 
-![Screenshot of the Retry action checkbox in the action.](media/configuring-actions-errors/retry-action.png)
+![Screenshot of the Retry action checkbox in the action.](media/errors/retry-action.png)
 
 To keep your desktop flow running even if the retry option fails, select **Continue flow run**. Through the displayed ​drop-down list, you can:
 
@@ -71,14 +79,14 @@ To keep your desktop flow running even if the retry option fails, select **Conti
 - **Repeat action**: Repeats the action until it runs successfully.
 - **Go to label**: Run the desktop flow from a point defined by a **Label** action.
 
-![Screenshot of the continue flow run option in the action.](media/configuring-actions-errors/continue-flow-run.png)
+![Screenshot of the continue flow run option in the action.](media/errors/continue-flow-run.png)
 
 Desktop flows offer two more error handling options. Select **New rule** to:
 
 - **Set variable**: Sets the specified value to a selected variable.
 - **Run subflow**: Runs a specified subflow.
 
-![Screenshot of the New rule option in the action.](media/configuring-actions-errors/new-rule.png)
+![Screenshot of the New rule option in the action.](media/errors/new-rule.png)
 
 If different errors require different error handling functionality, select **Advanced** and configure each possible error separately.
 
@@ -88,7 +96,9 @@ Some scenarios may require you to implement the same error-handling functionalit
 
 Instead of configuring each action separately, you can deploy the **On block error** action and configure error-handling for all the actions inside the block.
 
-This action offers the same options as the **On error** settings of single actions but also allows you to capture unexpected logic errors, such as trying to access a list item from an out-of-bounds position.
+This action offers almost the same options as the **On error** settings of single actions but also allows you to capture unexpected logic errors, such as trying to access a list item from an out-of-bounds position.
+
+![Screenshot of the On block error action.](media/errors/on-block-error-action.png)
 
 ## Retrieve occurred errors in desktop flows
 
@@ -99,7 +109,5 @@ This action returns an error type variable that provides six different propertie
 To avoid retrieving the same error value later in your desktop flow, enable the **Clear error** option that clears the last error after storing it in the variable.
 
 ![Screenshot of the Get last error action.](media\errors\get-last-error-action.png)
-
-![Screenshot of an error description inside an action.](media\errors\error-action.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
