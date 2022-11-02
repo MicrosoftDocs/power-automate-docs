@@ -1,6 +1,6 @@
 ---
-title: Manage errors | Microsoft Docs
-description: Manage errors
+title: Handle errors in desktop flows | Microsoft Docs
+description: See how to handle errors and warnings in your desktop flows
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
@@ -15,11 +15,11 @@ search.audienceType:
   - enduser
 ---
 
-# Manage errors
+# Handle errors in desktop flows
 
 During developing and running desktop flows, users may encounter errors and warnings. This article presents the different error and warning types, the **Errors** pane, and the available error handling functionality.
 
-## Design-time and run-time errors
+## Desktop flows error types
 
 Desktop flows can cause two kinds of errors:
 
@@ -29,7 +29,7 @@ Desktop flows can cause two kinds of errors:
 
 When an action throws an error, the flow designer displays an icon next to it and a pop-up pane with relevant information. If the error occurred is a design-time error,  the flow designer also displays an error description in the action modal.
 
-## Warnings
+## Desktop flows warnings
 
 Apart from errors, the flow designer also displays warnings that indicate non-critical issues in your desktop flows. Warnings don't prevent desktop flows from running but indicate possible unwanted functionality, such as infinite recursions of subflows.
 
@@ -90,7 +90,7 @@ Instead of configuring each action separately, you can deploy the **On block err
 
 This action offers the same options as the **On error** settings of single actions but also allows you to capture unexpected logic errors, such as trying to access a list item from an out-of-bounds position.
 
-## Retrieve occurred errors
+## Retrieve occurred errors in desktop flows
 
 To retrieve the latest occurred error in a desktop flow and use it in later actions, use the **Get last error** action.
 
