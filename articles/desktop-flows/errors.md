@@ -1,17 +1,13 @@
 ---
-title: Errors | Microsoft Docs
-description: Errors
+title: Manage errors | Microsoft Docs
+description: Manage errors
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
 ms.author: gtrantzas
-ms.reviewer: marleon
+ms.reviewer: Yiannismavridis
 contributors:
-- Yiannismavridis
-- NikosMoutzourakis
-- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -21,46 +17,88 @@ search.audienceType:
 
 # Manage errors
 
+During developing and running desktop flows, users may encounter errors and warnings. This article presents the different error and warning types, the **Errors** pane, and the available error handling functionality.
 
+## Design-time and run-time errors
 
-While developing and executing flows, users may encounter two different kinds of errors, **design time** and **run time** errors.
+Desktop flows can cause two kinds of errors:
 
-The **design time** errors are associated with the configuration of the deployed actions. This kind of error appears while developing the flow and prevent it from running. An empty mandatory field or the use of an undefined variable may cause this kind of error.
+- **Design-time errors** are associated with the configuration of the deployed actions. These errors appear during development and prevent the desktop flow from running. For example, an empty mandatory field or an undefined variable can cause this type of error.
 
-![Screenshot of a design time error.](media\errors\design-time-error.png)
+- **Run-time errors**, also known as exceptions, occur during execution and make desktop flows fail. For example, an invalid file path can cause this kind of error. Use any of the available error-handling options to prevent your desktop flows from falling.
 
-The **run time** errors or exceptions come up when the flow is running. These errors cause the flow to fail unless an exception handling behavior has been set. An invalid file path can cause this kind of error. 
+When an action throws an error, the flow designer displays an icon next to it and a pop-up pane with relevant information. If the error occurred is a design-time error,  the flow designer also displays an error description in the action modal.
 
-![Screenshot of a run time error.](media\errors\run-time-error.png)
+## Warnings
 
-When an action throws an error, the platform displays an error icon next to it and a pop-up pane with relevant error information. 
+Apart from errors, the flow designer also displays warnings that indicate non-critical issues in your desktop flows. Warnings don't prevent desktop flows from running but indicate possible unwanted functionality, such as infinite recursions of subflows.
 
-The **Errors** pane is split into three columns:
+## Review errors and warnings using the error pane
 
-- **Subflow**: The name of the subflow containing the action that threw the error.
-- **Action**: The line number of the action that threw the error.
-- **Error**: The error message.
+The errors pane is the flow designer component responsible for displaying information regarding occurred errors and warnings.
 
-If the occurred error is a **design time** error, the platform also displays a short description of the error inside the action. 
+It consists of three columns:
 
-![Screenshot of an error description inside an action.](media\errors\error-action.png)
+- **Subflow**: The name of the subflow that contains the erroneous action or the action that causes the warning.
+- **Action**: The line number of the erroneous action or the action that causes the warning.
+- **Error**: The message of the occurred error or warning.
 
-To implement an error handling behavior in your flow, you can use the **Get last error** action to retrieve the latest occurred error and use it in later actions.
+To see additional information regarding a thrown error or warning double-click on the respective item in the error pane.
 
-The **Get last error** action returns an error type variable that provides six different properties: the name, the location and the index of the action that failed, the subflow that contains this action, and the details and the message of the action.
+Once you do so, a dialog will display information about:
 
-To avoid retrieving the same error value later in your flow, enable the **Clear error** option that clears the last error after storing it in the variable. 
+- **Location**: The subflow and the action that threw the error or warning.
+- **Error message**: The message of the occurred error or warning.
+
+## Configure error-handling
+
+Power Automate enables you to configure error-handling for single actions and blocks of actions in your desktop flows.
+
+### Handle errors of single actions
+
+Desktop flows stop their execution by default when an error occurs. To configure a custom error-handling functionality for a specific action, select **On error** in its modal.
+
+![Screenshot of the on On error option in the action.](media/configuring-actions-errors/on-error-option-action.png)
+
+The first available option is the **Retry action if an error occurs** checkbox. This option makes the flow run the action a set number of times after a set number of seconds. The default value is one retrying with an interval of two seconds.
+
+![Screenshot of the Retry action checkbox in the action.](media/configuring-actions-errors/retry-action.png)
+
+To keep your desktop flow running even if the retry option fails, select **Continue flow run**. Through the displayed ​drop-down list, you can:
+
+- **Go to next action**: Runs the following action in order.
+- **Repeat action**: Repeats the action until it runs successfully.
+- **Go to label**: Run the desktop flow from a point defined by a **Label** action.
+
+![Screenshot of the continue flow run option in the action.](media/configuring-actions-errors/continue-flow-run.png)
+
+Desktop flows offer two more error handling options. Select **New rule** to:
+
+- **Set variable**: Sets the specified value to a selected variable.
+- **Run subflow**: Runs a specified subflow.
+
+![Screenshot of the New rule option in the action.](media/configuring-actions-errors/new-rule.png)
+
+If different errors require different error handling functionality, select **Advanced** and configure each possible error separately.
+
+## Handle errors of group of actions
+
+Some scenarios may require you to implement the same error-handling functionality for several actions in your desktop flows.
+
+Instead of configuring each action separately, you can deploy the **On block error** action and configure error-handling for all the actions inside the block.
+
+This action offers the same options as the **On error** settings of single actions but also allows you to capture unexpected logic errors, such as trying to access a list item from an out-of-bounds position.
+
+## Retrieve occurred errors
+
+To retrieve the latest occurred error in a desktop flow and use it in later actions, use the **Get last error** action.
+
+This action returns an error type variable that provides six different properties: the name, the location and the index of the action that failed, the subflow that contains this action, and the details and the message of the action.
+
+To avoid retrieving the same error value later in your desktop flow, enable the **Clear error** option that clears the last error after storing it in the variable.
 
 ![Screenshot of the Get last error action.](media\errors\get-last-error-action.png)
 
-## The error detail view
-
-To find more information about a thrown exception, navigate to the **Errors** pane and double-click on the respective error. Once you do so, the **Error details** dialog box will appear. This dialog box displays information about:
-
-1. **Location**: The subflow and the action that threw the error.
-2. **Error message**: The error message.
-3. **Error details**: A long description of the error. These details give a clear message about why the error happened and what the cause is.
-
-![Screenshot of the Error details dialog box.](media\error-detail-view\error-details.png)
+![Screenshot of an error description inside an action.](media\errors\error-action.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
