@@ -402,7 +402,7 @@
       href: ./desktop-flows/ui-elements.md
     - name: Automate using images
       href: ./desktop-flows/images.md
-    - name: Manage errors
+    - name: Handle errors in desktop flows
       href: ./desktop-flows/errors.md
     - name: Record desktop flows
       href: ./desktop-flows/recording-flow.md

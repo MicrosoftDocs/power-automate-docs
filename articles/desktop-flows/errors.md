@@ -4,9 +4,9 @@ description: See how to handle errors and warnings in your desktop flows
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 11/02/2022
 ms.author: gtrantzas
-ms.reviewer: Yiannismavridis
+ms.reviewer: iomavrid
 contributors:
 search.app: 
   - Flow

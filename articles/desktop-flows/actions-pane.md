@@ -57,7 +57,7 @@ Each field can accept specific data types, such as numbers, text, or lists. If a
 
 ![Screenshot of thhe icon to select an input parameter in the action.](media/configuring-actions/actions-parameters.png)
 
-The produced variables hold the outcomes of the action for later use. All the produced variables are displayed on the bottom part of the action's properties. 
+The produced variables hold the outcomes of the action for later use. All the produced variables are displayed on the bottom part of the action's properties.
 
 Each produced variable has a data type defined by its data. You can see the data type of a variable in the **Variables** pane. Find more information about data types in the [respective article](variable-data-types.md).
 
@@ -67,32 +67,6 @@ In case a produced variable isn't needed for later use, unselect the checkbox un
 
 >[!NOTE]
 > Produced variable names, may not contain special characters, white spaces and non-latin characters and can't start with arithmetic characters.
-
-## Configuring action errors
-
-When an action throws an error, the flow stops its execution by default. To configure a custom error handling behavior for an action, select the **On error** option in its properties.
-
-![Screenshot of the on On error option in the action.](media/configuring-actions-errors/on-error-option-action.png)
-
-The first option in the dialog box is the **Retry action if an error occurs** checkbox. This checkbox makes the flow execute the action a set number of times after a set number of seconds. The default value is one retrying with an interval of two seconds.
-
-![Screenshot of the Retry action checkbox in the action.](media/configuring-actions-errors/retry-action.png)
-
-To continue the flow's execution, even if the retry option fails, select the **Continue flow run** option. Through the ​drop-down list, you can:
-
-- **Go to next action**: Executes the following action in order.
-- **Repeat action**: Repeats the action until it runs successfully. 
-- **Go to label**: Continues the execution from a point defined by a **Label** action.
-
-![Screenshot of the continue flow run option in the action.](media/configuring-actions-errors/continue-flow-run.png)
-
-Power Automate offers two more error handling options. Select the **New rule** button to:
-- **Set variable**: Sets the desired value to a specified variable.
-- **Run subflow**: Executes a specified subflow. 
-
-![Screenshot of the New rule option in the action.](media/configuring-actions-errors/new-rule.png)
-
-If different errors require different error handling behaviors, select the **Advanced** option and configure each possible error separately. 
 
 ## Enabling and disabling actions
 
