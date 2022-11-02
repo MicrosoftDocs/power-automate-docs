@@ -1,10 +1,13 @@
 ---
-title: Power Platform templates for process mining in process advisor
+title: Power Platform templates for process mining in process advisor (preview)
 description: Learn how to use Power Platform templates for process mining in the Power Automate process advisor.
-author: nijemcevic 
+author: nijemcevic
+contributors:
+  - nijemcevic
+  - v-aangie 
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 07/08/2022
+ms.date: 10/31/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -14,7 +17,9 @@ search.audienceType:
   - enduser
 ---
 
-# Power Platform templates for process mining
+# Power Platform templates for process mining (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. Templates for [Desktop flows](#desktop-flows-template), [Power Virtual Agents](#power-virtual-agents-template), and [Power Apps insights](#power-apps-insights-template) provide insights that help you identify automation opportunities and address performance and compliance opportunities in your flows.
 
@@ -63,7 +68,7 @@ The Desktop flows template analyzes the run history of flows that you create wit
 
     If you're not signed in, select **Sign in** and authenticate through AAD.
 
-Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
+Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later.
 
 [Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -89,7 +94,7 @@ The Power Virtual Agents template analyzes your bots to help you better understa
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take several minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
+Process advisor will analyze your process. It may take several minutes for the analytics to appear. You can leave the page and return later.
 
 [Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -161,7 +166,7 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
+Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later.
 
 [Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 

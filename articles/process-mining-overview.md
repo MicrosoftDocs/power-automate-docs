@@ -1,10 +1,13 @@
 ---
 title: Overview of process mining in process advisor (preview) in Power Automate (contains video) | Microsoft Docs
 description: This topic is an overview of process mining in the process advisor feature in Power Automate.
-author: nijemcevic 
+author: nijemcevic
+contributors:
+  - nijemcevic
+  - v-aangie  
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 05/25/2022
+ms.date: 10/31/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -14,16 +17,13 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of process mining in process advisor (preview)
+# Overview of process mining (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Process mining in process advisor allows you to take the event data from your system of records and visualize the processes happening in your organization. Process mining provides novel insights that can help you identify automation opportunities, and address performance and compliance opportunities with *flows*. To learn more about flows, go to [Overview of the types of flows in Power Automate](flow-types.md).
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
 
 This short video explains the concept of process mining in process advisor:<br>
 </br>

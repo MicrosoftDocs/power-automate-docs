@@ -1,11 +1,14 @@
 ---
-title: Get started with process mining in process advisor (preview) | Microsoft Docs
+title: Get started with process mining in process advisor (preview)
 description: This topic is a tutorial with sample data in process mining using the process advisor feature in Power Automate.
-author: nijemcevic 
+author: nijemcevic
+contributors:
+  - nijemcevic
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
+ms.topic: conceptual
 ms.custom: intro-internal
-ms.date: 05/25/2022
+ms.date: 10/31/2022
 ms.author: tatn
 ms.reviewer: angieandrews
 search.app: 
@@ -21,16 +24,14 @@ search.audienceType:
 
 This tutorial allows you to experience process mining with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
 
-- For the process mining tutorial, download the sample event log CSV file: [English version](https://go.microsoft.com/fwlink/?linkid=2181220) or [French version](https://go.microsoft.com/fwlink/?linkid=2181117). 
+## Download the sample data
 
-- For the task mining tutorial, go to [Tutorial: Get started with task mining](task-mining-tutorial.md).
+For the process mining tutorial, download the sample event log CSV file:  
+
+- [English version](https://go.microsoft.com/fwlink/?linkid=2181220)<br/>
+- [French version](https://go.microsoft.com/fwlink/?linkid=2181117)
 
 The sample data in this tutorial is for illustration only and is fictitious. No real association is intended or inferred.
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Create a process
 
@@ -38,14 +39,17 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select your environment.
 
-1. On the navigation pane to the left, select **Process advisor** > **Create**.
+1. On the navigation pane to the left, select **Process advisor**.
 
-1. Select **Create a new process**.
+    :::image type="content" source="media/process-mining-tutorial/process-adv-menu.png" alt-text="Screenshot of the process advisor menu selection.":::
+
+1. In the **Create new process** section, select **Start here**.
+
+    :::image type="content" source="media/process-mining-tutorial/start-here.png" alt-text="Screenshot of the 'Start here' message.":::
 
 1. Enter a process name, and then select **Data (preview)**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Data (preview) button.](media/process-mining-tutorial/data-preview.png "Data (preview)")
+    :::image type="content" source="media/process-mining-tutorial/process-name-data.png" alt-text="Screenshot of the process name and Data (preview) button.":::
 
 1. Select **Create**.
 
@@ -53,10 +57,10 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. In your process, select **Setup** in the toolbar.
 
-1.	Select **Blank table**.
+1. Select **Blank table**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of blank table selection.](media/process-mining-tutorial/blank-table.png "Blank table selection")
+    :::image type="content" source="media/process-mining-tutorial/blank-table.png" alt-text="Screenshot of blank table selection.":::
+
 
 1. Use Notepad or any other text editor to open the sample event log CSV file that you downloaded.
 
@@ -68,8 +72,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select **Use first row as headers**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of first row as headers selection.](media/process-mining-tutorial/headers.png "First row as headers selection")
+    :::image type="content" source="media/process-mining-tutorial/headers.png" alt-text="Screenshot of first row as headers selection.":::
 
 1. Upload your event log, select your file from the list, and choose **Select** to continue.
 
@@ -79,8 +82,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. On the toolbar, select **Map to entity**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Map to entity button.](media/process-mining-tutorial/map-to-entity.png "Map to entity button")
+    :::image type="content" source="media/process-mining-tutorial/map-to-entity.png" alt-text="Screenshot of Map to entity button.":::
 
 1. On the left pane, select the **Event log** entity.
 
@@ -88,8 +90,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Return to the Power Query editor by selecting **OK**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of auto mapping.](media/process-mining-tutorial/auto-map.png "Auto map")
+    :::image type="content" source="media/process-mining-tutorial/auto-map.png" alt-text="Screenshot of auto mapping.":::
 
 1. Return to the process details page by selecting **Save**.
 
@@ -97,7 +98,6 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Wait for the analysis to complete. After the process is analyzed, select **Analytics** in the toolbar to view the process map.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of an analyzed process.](media/process-mining-tutorial/analytics.png "Process status is 'Analyzed'")
+    :::image type="content" source="media/process-mining-tutorial/analytics.png" alt-text="Screenshot of an analyzed process.":::
 
 For a description of how to analyze the process map and a short video, go to [Visualize and gain insights from processes in process advisor (preview)](process-mining-visualize.md).
