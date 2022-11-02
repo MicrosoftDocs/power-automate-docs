@@ -70,17 +70,17 @@ By default, both are installed on your device.
 >[!NOTE]
 >By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
 
-## Install Power Automate desktop app from the Microsoft Store 
+## Install Power Automate desktop app from the Microsoft Store
 
-There are a few ways to access the most recent version of Power Automate from the Microsoft Store. 
+There are two ways to access the most recent version of Power Automate from the Microsoft Store.
 
-1. Use one of the following options to open the Power Automate page of the Microsoft Store: 
+1. Use one of the following options to open the Power Automate page on the Microsoft Store:
 
-    - Open a browser and go directly to the [Power Automate page](https://aka.ms/pbidesktopstore) of the Microsoft Store. 
+    - Open a browser and go directly to the [Power Automate page](https://apps.microsoft.com/store/detail/power-automate/9NFTCH6J7FHV) of the Microsoft Store.
 
-    - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/), and then select **Download Free**. 
+    - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/) and select the appropriate option for installing.
 
-1. After you've landed on the Power Automate page of the Microsoft Store, select **Install**.
+1. After you've landed on the Power Automate page of the Microsoft Store, select **Get**.
 
 ### Set data collection options
 
