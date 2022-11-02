@@ -8,11 +8,8 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/01/2022
 ms.author: ellenwehrle
-ms.reviewer: 
-  - jongilman
-  - dgalitsky
-search.app: 
-  - Flow
+ms.reviewer: dgalitsky
+search.app: Flow
 search.audienceType: 
   - flowmaker
   - administrator
