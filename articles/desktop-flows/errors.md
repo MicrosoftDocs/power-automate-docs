@@ -33,7 +33,7 @@ When an action throws an error, the flow designer displays an icon next to it an
 
 Apart from errors, the flow designer also displays warnings that indicate non-critical issues in your desktop flows. Warnings don't prevent desktop flows from running but indicate possible unwanted functionality, such as infinite recursions of subflows.
 
-## Review errors and warnings using the error pane
+## Review errors and warnings using the errors pane
 
 The errors pane is the flow designer component responsible for displaying information regarding occurred errors and warnings.
 
@@ -49,8 +49,9 @@ Once you do so, a dialog will display information about:
 
 - **Location**: The subflow and the action that threw the error or warning.
 - **Error message**: The message of the occurred error or warning.
+- **Error details**: A long description of the occurred run-time error. These details give a clear message about why the run-time error happened.
 
-## Configure error-handling
+## Configure error-handling functionality
 
 Power Automate enables you to configure error-handling for single actions and blocks of actions in your desktop flows.
 
@@ -81,7 +82,7 @@ Desktop flows offer two more error handling options. Select **New rule** to:
 
 If different errors require different error handling functionality, select **Advanced** and configure each possible error separately.
 
-## Handle errors of group of actions
+### Handle errors of group of actions
 
 Some scenarios may require you to implement the same error-handling functionality for several actions in your desktop flows.
 
