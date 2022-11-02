@@ -1,4 +1,4 @@
-﻿---
+---
 title: Understand prebuilt solution available for integrating SAP with Power Platform (preview)
 description: Learn about the prebuilt SAP Integration solution available to import into Power Apps.
 author: EllenWehrle
