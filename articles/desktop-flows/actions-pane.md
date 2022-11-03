@@ -45,7 +45,7 @@ Power Automate actions contain three main elements:
 
     Each field can accept specific data types, such as numeric values, text, or lists. If you use values or variables of wrong data types as inputs, the action will throw an error. To find more information about data types, refer to [Variable datatypes](variable-data-types.md).
 
-   ![Screenshot of the input parameters in an action modal.](media/configuring-actions/action-input-parameteres.png)
+   ![Screenshot of the input parameters in an action's modal.](media/configuring-actions/action-input-parameteres.png)
 
 - **Produced variables** are automatically generated variables that hold the outcomes of the actions for later use. All the produced variables of an action are available on the bottom part of its modal.
 
@@ -55,9 +55,11 @@ Power Automate actions contain three main elements:
 
     The name of a produced variable can't contain special characters, white spaces, and non-Latin characters. Additionally, it can't start with arithmetic characters.
 
-    ![Screenshot of a produced variable in an action modal.](media/configuring-actions/action-produced-variables.png)
+    ![Screenshot of a produced variable in an action's modal.](media/configuring-actions/action-produced-variables.png)
 
 - **Error-handling configuration** allows you to set a custom functionality for the cases when an action fails. To configure error-handling for an action, select **On error** in its modal. To find more information regarding error-handling, refer to [Handle errors in desktop flows](errors.md).
+
+    ![Screenshot of the On error option in an action's modal.](media/configuring-actions/action-on-error.png)
 
 ## Enable and disable actions
 
