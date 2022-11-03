@@ -76,7 +76,7 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 > You can find more information about developing web flows and creating custom selectors in [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md).
 
 
-<!-- Can't have two of the same size headings with no content in between. If "Browser automation actions" is a topic that includes "Web data extraction," the second one needs a heading one size down. -->
+<!-- Can't have two of the same size headings with no content in between. If "Browser automation actions" is a topic that includes "Web data extraction," the second one needs a heading one size down. Also, there really should be some content with the "Browser automation actions" heading to introduce the sections within. -->
 
 
 ## Browser automation actions
@@ -94,7 +94,7 @@ Extract data from specific parts of a webpage in the form of single values, list
 For more information on how to use this action, go to [Web data extraction](../automation-web.md#web-data-extraction).
 
 
-<!-- I didn't change "web pages" to one word in this table because of your note about table content. Please change if it's OK to do so. -->
+<!-- I didn't change "web pages" to one word in this or other tables because of your note about table content. Please change if it's OK to do so. -->
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -185,18 +185,8 @@ Take a screenshot of the webpage (or an element of the webpage) currently displa
 |Image file|No|[File](../variable-data-types.md#files-and-folders)||Set the full path for the file to save the image capture|
 |File format|N/A|BMP, EMF, EXIF, GIF, JPG, PNG, TIFF, WMF|BMP|Select the format of the image file|
 
-
-
-
-
-
-
-
-
-
-
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="takescreenshotbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -206,12 +196,13 @@ Take a screenshot of the webpage (or an element of the webpage) currently displa
 |Failed to save in the clipboard|Indicates a problem while saving to the clipboard|
 |Failed to take screenshot|Indicates a problem taking a screenshot|
 
-## Web form filling
-Fill in forms on web applications
-### <a name="focusbase"></a> Focus text field on web page
-Set the focus on an input element of a web page and scroll it into view
+### Web form filling
+Fill in forms on web applications.
 
-##### Input Parameters
+#### <a name="focusbase"></a> Focus text field on webpage
+Set the focus on an input element of a webpage and scroll it into view.
+
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -222,8 +213,8 @@ Set the focus on an input element of a web page and scroll it into view
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables
 
 ##### <a name="focusbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -231,10 +222,10 @@ Set the focus on an input element of a web page and scroll it into view
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to set input focus on web page text field|Indicates a problem setting input focus on the specified web page text field|
 
-### <a name="populatetextfieldbase"></a> Populate text Field on web page
-Fill a text field in a web page with the specified text
+#### <a name="populatetextfieldbase"></a> Populate text field on webpage
+Fill a text field in a webpage with the specified text.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -251,8 +242,8 @@ Fill a text field in a web page with the specified text
 
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="populatetextfieldbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -260,10 +251,10 @@ Fill a text field in a web page with the specified text
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to write on text field|Indicates a problem writing to the specified text field|
 
-### <a name="setcheckboxstatebase"></a> Set check box state on web page
-Check or uncheck a check box in a web form
+#### <a name="setcheckboxstatebase"></a> Set checkbox state on webpage
+Check or clear a checkbox in a web form.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -275,8 +266,8 @@ Check or uncheck a check box in a web form
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables
 
 ##### <a name="setcheckboxstatebase_onerror"></a> Exceptions
 |Exception|Description|
@@ -284,10 +275,10 @@ Check or uncheck a check box in a web form
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to set the state of the checkbox|Indicates a problem in setting the state of the specified check box|
 
-### <a name="selectradiobuttonbase"></a> Select radio button on web page
-Select a radio button on the web page
+#### <a name="selectradiobuttonbase"></a> Select radio button on webpage
+Select a radio button on the webpage.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -298,8 +289,8 @@ Select a radio button on the web page
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|The dialog button to press if a pop-up dialog appears|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="selectradiobuttonbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -307,8 +298,16 @@ Select a radio button on the web page
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to select radio button|Indicates a problem in selecting the specified radio button|
 
-### <a name="setdropdownlistvaluebase"></a> Set drop-down list value on web page
-Set or clear the selected option for a drop-down list in a web form
+#### <a name="setdropdownlistvaluebase"></a> Set dropdown list value on webpage
+Set or clear the selected option for a dropdown list in a web form.
+
+
+
+
+
+
+
+
 
 ##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
