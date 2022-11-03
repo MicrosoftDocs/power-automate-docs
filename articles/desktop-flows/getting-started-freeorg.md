@@ -80,7 +80,7 @@ To create the desktop flow:
 
     ![Screenshot of the Write text to file action.](media\getting-started-freeorg\getting-started-freeorg-write-text-file.png)
 
-1. To test if the flow runs as expected, select **Run** button on the upper part of the flow designer.
+1. To test if the flow runs as expected, select the **Run** button on the upper part of the flow designer.
 
 1. To check how every single action is implemented, run the flow step-by-step using the **Run next action** button.
 
@@ -88,7 +88,7 @@ To create the desktop flow:
 
     ![Screenshot of the final flow, and the Run, Run next action and Save buttons.](media\getting-started-freeorg\getting-started-freeorg-final.png)
 
-1. Now, you can run your flow directly through the **Run** button in the console. To stop the flow before its completion, select **Stop**.
+1. Now, you can run your flow directly using the **Run** button in the console. To stop the flow before its completion, select **Stop**.
 
     ![Screenshot of the Run and Stop buttons in the console.](media\getting-started-freeorg\getting-started-freeorg-run-flow-console.png)
 
@@ -101,4 +101,3 @@ To create the desktop flow:
 - Get familiar with the [console](console.md) and the [flow designer](flow-designer.md).
 
 - You'll find the list of actions available in the [Actions reference](actions-reference.md).
-- 

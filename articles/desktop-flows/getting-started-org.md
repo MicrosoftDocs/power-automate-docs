@@ -1,11 +1,10 @@
 ---
-title: Getting started with an organization premium account  | Microsoft Docs
+title: Getting started with an organization premium account | Microsoft Docs
 description: Getting started with an Organization premium account
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 11/03/2022
 ms.custom: intro-internal
 ms.author: gtrantzas
 ms.reviewer: marleon
@@ -30,7 +29,7 @@ Power Automate gives you the option to [share your flows](manage.md#share-deskto
 
 Access your flows from anywhere, harnessing the power of the cloud to establish a robust and flexible RPA system. Take full advantage of multiple environments to organize and manage users’ flows. 
 
-If you currently use Power Automate with a work or school account or your license does not include attended RPA, you can still use Power Automate for your desktop automation needs. Start a trial to preview all the features by selecting **Go Premium** on the Power Automate for desktop console.
+If you currently use Power Automate with a work or school account or your license doesn't include attended RPA, you can still use Power Automate for your desktop automation needs. Start a trial to preview all the features by selecting **Go Premium** on the Power Automate for desktop console.
 
 ## Creating a flow
 
@@ -38,7 +37,7 @@ If you currently use Power Automate with a work or school account or your licens
 
     ![Screenshot of the option to create a new desktop flow through the portal.](media\getting-started-org\create-new-desktop-flow.png)
 
-1. After you assign a name to the flow, you will be prompted to launch Power Automate for desktop; select **Open** to do so.
+1. After you assign a name to the flow, you'll be prompted to launch Power Automate for desktop; select **Open** to do so.
 
 1. In the flow designer, start building the flow by double-clicking on actions, or dragging them from the actions pane on the left, to the central workspace pane.
 
@@ -68,7 +67,7 @@ If you currently use Power Automate with a work or school account or your licens
 
     ![Screenshot of the final flow.](media\getting-started-org\finished-flow.png)
 
-Following this example, it is possible to imagine a wide range of scenarios where Power Automate can be used to automate tasks. The abundance of actions, combined with cloud management capabilities, affords endless possibilities to individual users and organizations.
+Following this example, it's possible to imagine a wide range of scenarios where Power Automate can be used to automate tasks. The abundance of actions, combined with cloud management capabilities, affords endless possibilities to individual users and organizations.
 
 ## Next Steps
 
