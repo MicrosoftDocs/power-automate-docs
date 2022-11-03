@@ -24,7 +24,7 @@ search.audienceType:
 
 Power Automate enables regular and power users to automate processes on their desktops, saving time and eliminating human error.
 
-Focus on other activities by automating routine and repetitive tasks like organizing or backing up your files and folders. Create flows to extract product prices from websites, save them in an Excel spreadsheet, and then [email it](actions-reference/email.md) as an attachment. [Fill in web forms](automation-web.md#data-population-on-the-web) by supplying information dynamically from your files.  
+Focus on other activities by automating routine and repetitive tasks like organizing or backing up your files and folders. Create flows to extract product prices from websites, save them in Excel spreadsheets, and then [email them](actions-reference/email.md) as attachments. [Fill in web forms](automation-web.md#data-population-on-the-web) by supplying information dynamically from your files.  
 
 Create automated workflows with step-by-step guidance and an intuitive, no-code interface anyone can use, regardless of their technical expertise. Build flows from a wide variety of pre-made actions, or [record your interactions as steps](recording-flow.md) to be played back anytime.
 
@@ -77,7 +77,7 @@ To create the desktop flow:
 
 When prompted for a folder, select any folder you wish to copy. The flow will create a new folder on your desktop called **backup** with the selected folder inside.
 
-Following this example, it's possible to imagine a wide range of scenarios where these actions could be combined with other actions. Among the many possibilities, users could:
+Following this example, it's possible to imagine a wide range of scenarios where these actions could be combined with other actions. Among the many possibilities, you could:
 
 * Select a folder on a flash drive to back up to
 * Back up files based on specific criteria
@@ -90,6 +90,6 @@ Following this example, it's possible to imagine a wide range of scenarios where
 
 * Begin your journey in Power Automate by [creating a Power Automate desktop flow](create-flow.md).
 
-* Get familiar with the [console](console.md) and the [flow designer](flow-designer.md), which are part of Power Automate for desktop.
+* Get familiar with the [console](console.md) and the [flow designer](flow-designer.md).
 
 * You'll find the list of actions available in the [Actions reference](actions-reference.md).
