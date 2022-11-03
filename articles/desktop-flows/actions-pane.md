@@ -43,13 +43,13 @@ Power Automate actions contain three main elements:
 
     To use a variable as a parameter, select the appropriate icon on the right side of the field and pick the desired variable.
 
-    Each field can accept specific data types, such as numeric values, text, or lists. If you use values or variables of wrong data types as inputs, the action will throw an error.
+    Each field can accept specific data types, such as numeric values, text, or lists. If you use values or variables of wrong data types as inputs, the action will throw an error. To find more information about data types, refer to [Variable datatypes](variable-data-types.md).
 
    ![Screenshot of the input parameters in an action modal.](media/configuring-actions/action-input-parameteres.png)
 
 - **Produced variables** are automatically generated variables that hold the outcomes of the actions for later use. All the produced variables of an action are available on the bottom part of its modal.
 
-    Like any other variable, produced variables have data types defined by their content. To see the data type of a specific variable, use the [variables pane](manage-variables.md). To find more information about data types, refer to [Variable datatypes](variable-data-types.md).
+    Like any other variable, produced variables have data types defined by their content. To find more information about data types, refer to [Variable datatypes](variable-data-types.md).
 
     If a produced variable isn't useful for later use, unselect the checkbox next to its name to disable it.
 
