@@ -21,32 +21,37 @@ search.audienceType:
 
 # Browser automation
 
-Start and manage web applications on browsers
+Start and manage web applications on browsers.
 
-You can find more information on how to use the browser automation actions [here](../automation-web.md)
+For more information on how to use the browser automation actions, go to [Automate web flows](../automation-web.md).
 
-[Extract data from web page](#extractdata)  
-[Get details of web page](#getdetailsofwebpage)  
-[Get details of element on web page](#getdetailsofelement)  
-[Take screenshot of web page](#takescreenshotbase)  
-[Focus text field on web page](#focusbase)  
-[Populate text Field on web page](#populatetextfieldbase)  
-[Set check box state on web page](#setcheckboxstatebase)  
-[Select radio button on web page](#selectradiobuttonbase)  
-[Set drop-down list value on web page](#setdropdownlistvaluebase)  
-[Press button on web page](#pressbuttonbase)  
-[If web page contains](#ifwebpagecontainsaction)  
-[Wait for web page content](#waitforwebpagecontentaction)  
+
+<!-- changed "web page" to one word, per the style guide. Changed "check box" to one word, per the style guide. -->
+
+
+
+[Extract data from webpage](#extractdata)  
+[Get details of webpage](#getdetailsofwebpage)  
+[Get details of element on webpage](#getdetailsofelement)  
+[Take screenshot of webpage](#takescreenshotbase)  
+[Focus text field on webpage](#focusbase)  
+[Populate text field on webpage](#populatetextfieldbase)  
+[Set checkbox state on webpage](#setcheckboxstatebase)  
+[Select radio button on webpage](#selectradiobuttonbase)  
+[Set dropdown list value on webpage](#setdropdownlistvaluebase)  
+[Press button on webpage](#pressbuttonbase)  
+[If webpage contains](#ifwebpagecontainsaction)  
+[Wait for webpage content](#waitforwebpagecontentaction)  
 [Launch new Internet Explorer](#launchinternetexplorerbase)  
 [Launch new Firefox](#launchfirefoxbase)  
 [Launch new Chrome](#launchchromebase)  
 [Launch new Microsoft Edge](#launchedgebase)  
 [Create new tab](#createnewtabbase)  
-[Go to web page](#gotowebpagebase)  
-[Click link on web page](#clickbase)  
-[Click download link on web page](#clickdownloadlink)  
-[Run JavaScript function on web page](#executejavascript)  
-[Hover mouse over element on web page](#hoveroverelement)  
+[Go to webpage](#gotowebpagebase)  
+[Click link on webpage](#clickbase)  
+[Click download link on webpage](#clickdownloadlink)  
+[Run JavaScript function on webpage](#executejavascript)  
+[Hover mouse over element on webpage](#hoveroverelement)  
 [Close web browser](#closewebbrowser)  
 
 ## Getting started with browser automation
@@ -347,7 +352,7 @@ Mark the beginning of a conditional block of actions, depending on whether a spe
 ##### <a name="ifwebpagecontainsaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Failed to communicate with the browser|Indicates that an error with the browser occured|
+|Failed to communicate with the browser|Indicates that an error with the browser occurred|
 
 ### <a name="waitforwebpagecontentaction"></a> Wait for web page content
 Suspend the flow until a specific piece of text or web page element appears or disappears from a web page
