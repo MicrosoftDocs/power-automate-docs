@@ -301,15 +301,7 @@ This action doesn't produce any variables.
 #### <a name="setdropdownlistvaluebase"></a> Set dropdown list value on webpage
 Set or clear the selected option for a dropdown list in a web form.
 
-
-
-
-
-
-
-
-
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -324,8 +316,8 @@ Set or clear the selected option for a dropdown list in a web form.
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setdropdownlistvaluebase_onerror"></a> Exceptions
 |Exception|Description|
@@ -333,10 +325,10 @@ Set or clear the selected option for a dropdown list in a web form.
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to set the selected option|Indicates a problem setting the selected drop-down list option|
 
-### <a name="pressbuttonbase"></a> Press button on web page
-Press a web page button
+#### <a name="pressbuttonbase"></a> Press button on webpage
+Press a webpage button.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -347,8 +339,8 @@ Press a web page button
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="pressbuttonbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -357,10 +349,10 @@ Press a web page button
 |Failed to click on web page button|Indicates a problem clicking the specified web page button|
 
 
-### <a name="ifwebpagecontainsaction"></a> If web page contains
-Mark the beginning of a conditional block of actions, depending on whether a specific piece of text or element exists in a web page
+#### <a name="ifwebpagecontainsaction"></a> If webpage contains
+Mark the beginning of a conditional block of actions, depending on whether a specific piece of text or element exists in a webpage.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -369,18 +361,18 @@ Mark the beginning of a conditional block of actions, depending on whether a spe
 |Text|No|[Text value](../variable-data-types.md#text-value)||Enter the text on web page to check for|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="ifwebpagecontainsaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to communicate with the browser|Indicates that an error with the browser occurred|
 
-### <a name="waitforwebpagecontentaction"></a> Wait for web page content
-Suspend the flow until a specific piece of text or web page element appears or disappears from a web page
+#### <a name="waitforwebpagecontentaction"></a> Wait for webpage content
+Suspend the flow until a specific piece of text or webpage element appears or disappears from a webpage.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -389,8 +381,8 @@ Suspend the flow until a specific piece of text or web page element appears or d
 |Text|No|[Text value](../variable-data-types.md#text-value)||Enter the text on web page to check for|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables
 
 ##### <a name="waitforwebpagecontentaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -399,10 +391,10 @@ Suspend the flow until a specific piece of text or web page element appears or d
 
 
 
-### <a name="launchinternetexplorerbase"></a> Launch new Internet Explorer
-Launch a new instance or attach to a running instance of Internet Explorer for automating web sites and web applications
+#### <a name="launchinternetexplorerbase"></a> Launch new Internet Explorer
+Launch a new instance or attach to a running instance of Internet Explorer for automating websites and web applications.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch automation browser, Launch new Internet Explorer, Attach to running Internet Explorer|Launch automation browser|Specify whether to launch the automation browser or a new instance of Internet Explorer or attach to an existing one|
@@ -410,7 +402,7 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 |Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Internet Explorer tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Internet Explorer tab to attach to|
-|Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized of maximized state|
+|Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -422,7 +414,7 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 > [!NOTE]
 > The **Clear cache** and **Clear cookies** options only work as intended if running in Protected Mode is disabled in the Internet options menu.
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |InternetExplorer|[Web browser instance](../variable-data-types.md#instances)|The Internet Explorer instance to use with browser automation actions|
@@ -434,10 +426,10 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 |Failed to launch Internet Explorer|Indicates a problem launching Internet Explorer|
 |Invalid URL|Indicates that the provided URL was invalid|
 
-### <a name="launchfirefoxbase"></a> Launch new Firefox
-Launch a new instance or attach to a running instance of Firefox for automating web sites and web applications
+#### <a name="launchfirefoxbase"></a> Launch new Firefox
+Launch a new instance or attach to a running instance of Firefox for automating websites and web applications.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Firefox or attach to an existing one|
@@ -445,7 +437,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Firefox tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Firefox tab to attach to|
-|Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized of maximized state|
+|Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -454,7 +446,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Browser|[Web browser instance](../variable-data-types.md#instances)|The Firefox instance to use with browser automation actions|
@@ -465,6 +457,11 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |-----|-----|
 |Failed to launch Firefox|Indicates a problem launching Firefox|
 |Invalid URL|Indicates that the provided URL was invalid|
+
+
+
+
+
 
 ### <a name="launchchromebase"></a> Launch new Chrome
 Launch a new instance or attach to a running instance of Chrome for automating web sites and web applications
