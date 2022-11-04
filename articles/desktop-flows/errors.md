@@ -71,7 +71,7 @@ By default, desktop flows stop their execution when an error occurs. To configur
 
 The first available option is the **Retry action if an error occurs** checkbox. This option makes the flow run the action a set number of times after a set number of seconds. The default value is one retrying with an interval of two seconds.
 
-:::image type="content" source="retry-action.png" alt-text="Screenshot of the Retry action checkbox in the action.":::
+:::image type="content" source="media/errors/retry-action.png" alt-text="Screenshot of the Retry action checkbox in the action.":::
 
 To keep your desktop flow running even if the retry option fails, select **Continue flow run**. Through the displayed ​drop-down list, you can:
 
