@@ -33,4 +33,4 @@ The **Attributes (conditional)** filter adds conditions to the **Attribute** fil
 
 1. Select an attribute, metric, or process metric and the corresponding value or values.
 
-    :::image type="content" source="media/image017-v52-2.png"" alt-text="Screenshot of specifying additional criteria for a metric.":::
+    :::image type="content" source="media/image017-v52-2.png" alt-text="Screenshot of specifying additional criteria for a metric.":::
