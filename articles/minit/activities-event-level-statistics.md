@@ -103,3 +103,4 @@ The following table describes the metrics that are available in the summary row.
 | Self-loop events | The percentage of events in self-loops relative to the total number of events in the view |
 | Loop events | The percentage of events in loops relative to the total number of events in the view |
 | Rework events | The percentage of events in rework relative to the total number of events in the view |
+
