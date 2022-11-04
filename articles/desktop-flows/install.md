@@ -76,11 +76,11 @@ There are two ways to access the most recent version of Power Automate from the 
 
 1. Use one of the following options to open the Power Automate page on the Microsoft Store:
 
-    - Open a browser and go directly to the [Power Automate page](https://apps.microsoft.com/store/detail/power-automate/9NFTCH6J7FHV) of the Microsoft Store.
+    - Open a browser, go directly to the [Power Automate page](https://apps.microsoft.com/store/detail/power-automate/9NFTCH6J7FHV) of the Microsoft Store, and select **Get in Store app**.
 
     - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/) and select the appropriate option for installing.
 
-1. After you've landed on the Power Automate page of the Microsoft Store, select **Get**.
+1. After the Microsoft Store is launched, select **Get**.
 
 ### Set data collection options
 
