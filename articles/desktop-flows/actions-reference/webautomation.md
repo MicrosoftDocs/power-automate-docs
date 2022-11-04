@@ -76,6 +76,7 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 > You can find more information about developing web flows and creating custom selectors in [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md).
 
 
+
 <!-- Can't have two of the same size headings with no content in between. If "Browser automation actions" is a topic that includes "Web data extraction," the second one needs a heading one size down. Also, there really should be some content with the "Browser automation actions" heading to introduce the sections within. -->
 
 
@@ -86,6 +87,7 @@ Extract data from web applications, from a single value up to tables or custom m
 
 #### <a name="extractdata"></a> Extract data from webpage
 Extract data from specific parts of a webpage in the form of single values, lists, rows, or tables.
+
 
 
 <!-- Note that you should not use "here" as a link. Always identify the page that you're linking to. -->
