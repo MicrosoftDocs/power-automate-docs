@@ -1,12 +1,16 @@
 ---
-title: List of aggregations (preview)
-description: Learn the syntax to use for various aggregations in the Minit desktop application in process advisor.
-author: nijemcevic
+title: Aggregations (preview)
+description: Learn the aggregations you can use in custom metrics in the Minit desktop application for Microsoft Power Automate process advisor
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 10/15/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.app:
 - Flow
 search.audienceType:
@@ -14,524 +18,494 @@ search.audienceType:
 - enduser
 ---
 
-# List of aggregations (preview)
+# Aggregations (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-This article provides the syntax to use for various aggregations.
+This article describes the aggregations you can use in custom metrics
 
 ## AVG([context],[value])
 
-Calculates the average of values grouped according to the defined context
+Calculates the average of values grouped according to the [context]
 
-- **[context]:** Defines the context in which the operation is calculated.
+- **[context]**: The context in which the operation is calculated
 
-- **[value]:** Attribute name, nested operation, or expression whose values ​​are input for the average calculation.
-
-   Data Type: INT, FLOAT, DATE, TIME
-
-**Output Data Type**: FLOAT, DATE, TIME
-
-## AVGIF([context], [condition], [value])
-
-Calculates the average of values fulfilling the defined condition grouped according to the defined context.
-
-**Supported context:** process, case, event, edge
-
-**Parameters:**
-
-- ***[context]*** - defines the context in which the operation is calculated
-
-- ***[condition]*** - condition under which the [value] is included into the average calculation
-
-   Data type: BOOL
-
-- ***[value]*** - attribute name, nested operation, or expression whose values ​​are input for the average calculation
+- **[value]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, DATE, TIME
 
-**Output Data Type**: INT, FLOAT, DATE, TIME
+**Output data type**: FLOAT, DATE, TIME
+
+## AVGIF([context],[condition],[value])
+
+Calculates the average of values that meet the [condition], grouped according to the [context]
+
+- **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
+
+- **[condition]**: The condition under which the [value] is included in the calculation
+
+   Data type: BOOL
+
+- **[value]**: An attribute name, nested operation, or expression
+
+   Data type: INT, FLOAT, DATE, TIME
+
+**Output data type**: INT, FLOAT, DATE, TIME
 
 **Example**: `AVGIF(ViewEvents, userName == "Laura", eventCost)`
 
-Metric applicable on any custom metric usage within the application. Returns average event cost for events done by the user "Laura".
+Can be used anywhere a custom metric can be used Returns the average event cost for events associated with the user "Laura"
 
 ## COUNT([context])
 
-Counts the number of values grouped according to the defined context
+Counts the number of values grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-**Output Data Type**: INT
+**Output data type**: INT
 
 ## COUNTIF([context],[condition])
 
-Counts the number of values fulfilling the defined condition, grouped according to the defined context
+Counts the number of values fulfilling the [condition], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - condition under which the [value] is included into the operation calculation
+- **[condition]**: The condition under which the [value] is included in the calculation
 
-   Data Type: BOOL
+   Data type: BOOL
 
-**Output Data Type**: INT
+**Output data type**: INT
 
 ## COUNTUNIQUE([context],[value])
 
-Counts the number of unique values grouped according to the defined context
+Counts the number of unique values, grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[value]** - attribute name, nested operation, or expression whose values ​​are input for counting unique values
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, BOOL, STRING, DATE, TIME
+   Data type: INT, FLOAT, BOOL, STRING, DATE, TIME
 
-**Output Data Type**: INT
-
-
+**Output data type**: INT
 
 ## COUNTUNIQUEIF([context],[condition],[value])
 
-Counts the number of unique values fulfilling the defined condition, grouped according to the defined context
+Counts the number of unique [value] that meet the [condition], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - condition under which the [value] is included into the operation calculation
+- **[condition]**: The condition under which the [value] is included in the calculation
 
-   Data Type: BOOL
+   Data type: BOOL
 
-- **[value]** - attribute name, nested operation, or expression, values of which are summed up
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME
 
-**Output Data Type**: FLOAT, TIME
-
-
+**Output data type**: FLOAT, TIME
 
 ## MAX([context],[value])
 
-Returns the maximum of values grouped according to the defined context
+Returns the maximum of [value], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[value]** - attribute name, nested operation, or expression whose values ​​are input for maximum selection
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, DATE, TIME
+   Data type: INT, FLOAT, DATE, TIME
 
-**Output Data Type**: INT, FLOAT, DATE, TIME
+**Output data type**: INT, FLOAT, DATE, TIME
 
 ## MAXIF([context],[condition],[value])
 
-Returns the maximum of values fulfilling the defined condition, grouped according to the defined context.
+Returns the maximum of [values] that meet the [condition], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - condition under which the [value] is included into the operation calculation
+- **[condition]**: The condition under which the [value] is included in the calculation
 
-   Data Type: BOOL
+   Data type: BOOL
 
-- **[value]** - attribute name, nested operation, or expression, values of which are input for maximum selection
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME
 
-**Output Data Type**: FLOAT, TIME
+**Output data type**: FLOAT, TIME
 
 ## MAXVAL([context],[value1],[value2])
 
-Selects item with maximum value from value1 and returns its calculated value defined by value2, grouped according to the defined context
+Selects item with maximum value from [value1] and returns its calculated value defined by [value2], grouped according to the [context]
 
-**Supported context:** process, case, event, edge
+- **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
 
-**Parameters:**
+- **[value1]**: An attribute name, nested operation, or expression
 
-- ***[context]*** - defines the context in which the operation is calculated
+   Data type: INT, FLOAT, TIME, DATE
 
-- ***[value1]*** - attribute name, nested operation, or expression, values of which are input for maximum selection
+- **[value2]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME, DATE
+   Data type: INT, FLOAT, STRING, TIME, DATE
 
-- ***[value2]*** - attribute name, nested operation, or expression, values of which are used as the return value
-
-   Data Type: INT, FLOAT, STRING, TIME, DATE
-
-**Output Data Type**: INT, FLOAT, STRING, TIME, DATE
+**Output data type**: INT, FLOAT, STRING, TIME, DATE
 
 **Example**: `MAXVAL(EventsPerAttribute, Duration(), userName)`
 
-Metric applicable on the process map. Returns the username of a user who worked on the longest event per activity.
+Can be used on the process map Returns the username of a user who worked on the longest event per activity
 
-## MAXVALIF([context], [condition], [value1], [value2])
+## MAXVALIF([context],[condition],[value1],[value2])
 
-Selects item with the maximum value defined by value1 fulfilling the defined condition and returns its calculated value defined by value2, grouped according to the defined context.
+Selects item with the maximum value defined by [value1] that meets the [condition] and returns its calculated value defined by [value2], grouped according to the [context]
 
-**Supported context:** process, case, event, edge
+- **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
 
-**Parameters:**
-
-- ***[context]*** - defines the context in which the operation is calculated
-
-- ***[condition]*** - condition under which the [value1] is included into the maximum selection
+- **[condition]**: The condition under which the [value1] is included in the calculation
 
    Data type: BOOL
 
-- ***[value1]*** - attribute name, nested operation, or expression whose values ​​are input for the maximum selection
+- **[value1]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, DATE, TIME
 
-- ***[value2]*** - attribute name, nested operation, or expression, values of which are used as the return value
+- **[value2]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, STRING, TIME, DATE
 
-**Output Data Type**: INT, FLOAT, STRING, TIME, DATE
+**Output data type**: INT, FLOAT, STRING, TIME, DATE
 
 ## MIN([context],[value])
 
-Returns the minimum of values grouped according to the defined context
+Returns the minimum of [value], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[value]** - attribute name, nested operation, or expression whose values ​​are input for counting unique values
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, DATE, TIME
+   Data type: INT, FLOAT, DATE, TIME
 
-**Output Data Type**: INT, FLOAT, DATE, TIME
+**Output data type**: INT, FLOAT, DATE, TIME
 
 ## MINIF([context],[condition],[value])
 
-Returns the minimum of values fulfilling the defined condition, grouped according to the defined context
+Returns the minimum of [value] that meets the [condition], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - condition under which the [value] is included into the operation calculation
-
-   Data Type: BOOL
-
-- **[value]** - attribute name, nested operation, or expression, values of which are summed up
-
-   Data Type: INT, FLOAT, TIME
-
-**Output Data Type**: FLOAT, TIME
-
-## MINVAL([context], [value1], [value2])
-
-Selects item with the minimum value defined by value1 and returns its calculated value defined by value2, grouped according to the defined context.
-
-**Supported context:** process, case, event, edge
-
-**Parameters:**
-
-- ***[context]*** - defines the context in which the operation is calculated
-
-- ***[value1]*** - attribute name, nested operation, or expression whose values ​​are input for the maximum selection
-
-   Data type: INT, FLOAT, DATE, TIME
-
-- ***[value2]*** - attribute name, nested operation, or expression, values of which is used as the return value
-
-   Data type: INT, FLOAT, STRING, TIME, DATE
-
-**Output Data Type**: INT, FLOAT, STRING, TIME, DATE
-
-## MINVALIF([context], [condition], [value1], [value2])
-
-Selects item with the minimum value defined by value1 fulfilling the defined condition and returns its calculated value defined by value2, grouped according to the defined context.
-
-**Supported context:** process, case, event, edge
-
-**Parameters:**
-
-- ***[context]*** - defines the context in which the operation is calculated
-
-- ***[condition]*** - condition under which the [value1] is included into the minimum selection
+- **[condition]**: The condition under which the [value] is included in the calculation
 
    Data type: BOOL
 
-- ***[value1]*** - attribute name, nested operation, or expression whose values ​​are input for the minimum selection
+- **[value]**: An attribute name, nested operation, or expression
+
+   Data type: INT, FLOAT, TIME
+
+**Output data type**: FLOAT, TIME
+
+## MINVAL([context],[value1],[value2])
+
+Selects item with the minimum value defined by [value1] and returns its calculated value defined by [value2], grouped according to the [context]
+
+- **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
+
+- **[value1]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, DATE, TIME
 
-- ***[value2]*** - Attribute name, nested operation, or expression, values of which is used as the return value. 
+- **[value2]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, STRING, TIME, DATE
 
-**Output Data Type**: INT, FLOAT, STRING, TIME, DATE
+**Output data type**: INT, FLOAT, STRING, TIME, DATE
+
+## MINVALIF([context],[condition],[value1],[value2])
+
+Selects item with the minimum value defined by [value1] that meets the [condition] and returns its calculated value defined by [value2], grouped according to the [context]
+
+- **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
+
+- **[condition]**: The condition under which the [value1] is included in the calculation
+
+   Data type: BOOL
+
+- **[value1]**: An attribute name, nested operation, or expression
+
+   Data type: INT, FLOAT, DATE, TIME
+
+- **[value2]**: An attribute name, nested operation, or expression
+
+   Data type: INT, FLOAT, STRING, TIME, DATE
+
+**Output data type**: INT, FLOAT, STRING, TIME, DATE
 
 ## RANGE([context],[value])
 
-Returns the range (maximum-minimum) of values grouped according to the defined context
+Returns the range (maximum-minimum) of [value], grouped according to the [context]
 
-- **[context]** - Defines the context in which the operation is calculated.
+- **[context]**: Defines the context in which the operation is calculated
 
-- **[value]** - Attribute name, nested operation, or expression whose values ​​are input for calculation.
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, DATE, TIME
+   Data type: INT, FLOAT, DATE, TIME
 
-**Output Data Type**: INT, FLOAT, TIME
+**Output data type**: INT, FLOAT, TIME
 
 ## RANGEIF([context],[condition],[value])
 
-Returns the range (maximum-minimum) of values fulfilling the defined condition, grouped according to the defined context.
+Returns the range (maximum-minimum) of [value] that meets the [condition], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - condition under which the [value] is included into the operation calculation
- 
-   Data Type: BOOL
+- **[condition]**: The condition under which the [value] is included in the calculation
 
-- [value] - attribute name, nested operation, or expression whose values are input for calculation
+   Data type: BOOL
 
-   Data Type: INT, FLOAT, TIME
+- [value] - An attribute name, nested operation, or expression
 
-**Output Data Type**: FLOAT, TIME
+   Data type: INT, FLOAT, TIME
+
+**Output data type**: FLOAT, TIME
 
 ## STDEV([context],[value])
 
-Calculates the standard deviation of values grouped according to the defined context.
+Calculates the standard deviation of [value], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[value]** - attribute name, nested operation, or expression whose values ​​are input for calculation
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, DATE, TIME
+   Data type: INT, FLOAT, DATE, TIME
 
-**Output Data Type**: FLOAT, TIME
+**Output data type**: FLOAT, TIME
 
 ## STDEVIF([context],[condition],[value])
 
-Calculates the standard deviation of values fulfilling the defined condition, grouped according to the defined context.
+Calculates the standard deviation of [value] that meets the [condition], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - condition under which the [value] is included into the operation calculation
+- **[condition]**: The condition under which the [value] is included in the calculation
 
-   Data Type: BOOL
+   Data type: BOOL
 
-- **[value]** - attribute name, nested operation, or expression, values of which are input for calculation
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME
 
-**Output Data Type**: FLOAT, TIME
+**Output data type**: FLOAT, TIME
 
 ## SUM([context],[value])
 
-Calculates the sum of values grouped according to the defined context.
+Calculates the sum of [value], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[value]** - attribute name, nested operation, or expression whose values ​​are summed up
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME
 
-**Output Data Type**: FLOAT, TIME
+**Output data type**: FLOAT, TIME
 
 ## SUMIF([context],[condition],[value])
 
-Calculates the sum of values fulfilling the defined condition, grouped according to the defined context.
+Calculates the sum of [value] that meets the [condition], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - condition under which the [value] is included into the operation calculation
+- **[condition]**: The condition under which the [value] is included in the calculation
 
-   Data Type: BOOL
+   Data type: BOOL
 
-- **[value]** - attribute name, nested operation, or expression, values of which are summed up
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME
 
-**Output Data Type**: FLOAT, TIME
+**Output data type**: FLOAT, TIME
 
-## FIRST([context], [value])
+## FIRST([context],[value])
 
-Returns the first value, grouped according to the defined context
+Returns the first [value], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[value]** - attribute name, nested operation, or expression, values of which are returned
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME
 
-**Output Data Type**: FLOAT, TIME
+**Output data type**: FLOAT, TIME
 
-## FIRSTIF([context], [condition], [value])
+## FIRSTIF([context],[condition],[value])
 
-Returns the first value fulfilling the defined condition, grouped according to the defined context
+Returns the first [value] that meets the [condition], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - condition under which the [value] is included into the operation calculation
+- **[condition]**: The condition under which the [value] is included in the calculation
 
-   Data Type: BOOL
+   Data type: BOOL
 
-- **[value]** - attribute name, nested operation, or expression, values of which are returned
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME
 
-**Output Data Type**: FLOAT, TIME
+**Output data type**: FLOAT, TIME
 
-## LAST([context], [value])
+## LAST([context],[value])
 
-Returns last value, grouped according to the defined context
+Returns the last [value], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[value]** - attribute name, nested operation, or expression, values of which ​​are returned
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME
 
-**Output Data Type**: FLOAT, TIME
+**Output data type**: FLOAT, TIME
 
-## LASTIF([context], [condition], [value])
+## LASTIF([context],[condition],[value])
 
-Returns last value fulfilling the defined condition, grouped according to the defined context
+Returns the last value that meets the [condition], grouped according to the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - condition under which the [value] is included into the operation calculation
+- **[condition]**: The condition under which the [value] is included in the calculation
 
-   Data Type: BOOL
+   Data type: BOOL
 
-- **[value]** - attribute name, nested operation, or expression, values of which are returned
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME
 
-**Output Data Type**: FLOAT, TIME
+**Output data type**: FLOAT, TIME
 
 ## SELFLOOP([context],[attributeName])
 
-Calculates count of selfloop events grouped according to the defined context, short version of COUNTIF(ISSELFLOOP()) expression
+Calculates a count of self-loop events, grouped according to the [context]; short version of COUNTIF(ISSELFLOOP()) expression
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[attributeName]** - attribute name; if no attribute is defined, current activity (mining) attribute is used
+- **[attributeName]**: An attribute name; if no attribute is defined, the current activity (mining) attribute is used
 
-   Data Type: STRING
+   Data type: STRING
 
-**Output Data Type**: INT
+**Output data type**: INT
 
 ## LOOP([context],[attributeName])
 
-Calculates count of loop events grouped according to the defined context, short version of COUNTIF(ISLOOP()) expression
+Calculates a count of loop events, grouped according to the [context]; short version of COUNTIF(ISLOOP()) expression
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[attributeName]** - attribute name; if no attribute is defined, current activity (mining) attribute is used
+- **[attributeName]**: An attribute name; if no attribute is defined, the current activity (mining) attribute is used
 
-   Data Type: STRING
+   Data type: STRING
 
-**Output Data Type**: INT
+**Output data type**: INT
 
 ## REWORK([context],[attributeName])
 
-Calculates count of rework events grouped according to the defined context, short version of COUNTIF(ISREWORK()) expression
+Calculates a count of rework events, grouped according to the [context]; short version of COUNTIF(ISREWORK()) expression
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[attributeName]** - attribute name; if no attribute is defined, current activity (mining) attribute is used
+- **[attributeName]**: An attribute name; if no attribute is defined, the current activity (mining) attribute is used
 
-   Data Type: STRING
+   Data type: STRING
 
-**Output Data Type**: INT
+**Output data type**: INT
 
 ## LOOPINFLOW([context],[attributeName])
 
-Calculates count of loop inflows grouped according to the defined context, short version of COUNTIF(ISLOOPINFLOW()) expression
+Calculates a count of loop inflows, grouped according to the [context]; short version of COUNTIF(ISLOOPINFLOW()) expression
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[attributeName]** - attribute name; if no attribute is defined, current activity (mining) attribute is used
+- **[attributeName]**: An attribute name; if no attribute is defined, the current activity (mining) attribute is used
 
-   Data Type: STRING
+   Data type: STRING
 
-**Output Data Type**: INT
+**Output data type**: INT
 
 ## LOOPOUTFLOW([context],[attributeName])
 
-Calculates count of loop outflows grouped according to the defined context, short version of COUNTIF(ISLOOPOUTFLOW()) expression
+Calculates a count of loop outflows, grouped according to the [context]; short version of COUNTIF(ISLOOPOUTFLOW()) expression
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[attributeName]** - attribute name; if no attribute is defined, current activity (mining) attribute is used
+- **[attributeName]**: An attribute name; if no attribute is defined, the current activity (mining) attribute is used
 
-   Data Type: STRING
+   Data type: STRING
 
-**Output Data Type**: INT
+**Output data type**: INT
 
 ## NETLOOPGAIN([context],[attributeName])
 
-Calculates sum of loop gains grouped according to the defined context, short version of SUM(LOOPGAIN()) expression
+Calculates the sum of loop gains, grouped according to the [context]; short version of SUM(LOOPGAIN()) expression
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[attributeName]** - attribute name; if no attribute is defined, current activity (mining) attribute is used
+- **[attributeName]**: An attribute name; if no attribute is defined, the current activity (mining) attribute is used
 
-   Data Type: STRING
+   Data type: STRING
 
-**Output Data Type**: INT
+**Output data type**: INT
 
 ## MODE([context],[value])
 
-Returns most common value from defined context.
+Returns the most common [value] from [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[value]** - attribute name, nested operation, or expression
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: STRING, INT, FLOAT, DATE, TIME, BOOL
+   Data type: STRING, INT, FLOAT, DATE, TIME, BOOL
 
-**Output Data Type**: STRING, INT, FLOAT, DATE, TIME, BOOL
+**Output data type**: STRING, INT, FLOAT, DATE, TIME, BOOL
 
-## MODEIF([context],[condition][value])
+## MODEIF([context],[condition],[value])
 
-Returns most common value from data elements that met the condition in a defined context.
+Returns the most common [value] from data elements that meet the [condition] in the [context]
 
-- **[context]** - defines the context in which the operation is calculated
+- **[context]**: The context in which the operation is calculated
 
-- **[condition]** - defines the criteria for data element
+- **[condition]**: The condition under which the [value] is included in the calculation
 
-- **[value]** - attribute name, nested operation, or expression
+- **[value]**: An attribute name, nested operation, or expression
 
-   Data Type: STRING, INT, FLOAT, DATE, TIME, BOOL
+   Data type: STRING, INT, FLOAT, DATE, TIME, BOOL
 
-**Output Data Type**: STRING, INT, FLOAT, DATE, TIME, BOOL
+**Output data type**: STRING, INT, FLOAT, DATE, TIME, BOOL
 
 ## ALL([context],[condition])
 
-returns true if all values grouped according to the defined context are fulfilling the defined condition.
+Returns true if all values, grouped according to the [context], meet the [condition]
 
-**Supported context:** process, case, event, edge
+- **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
 
-**Parameters:**
-
-- ***[context]*** - defines the context in which the operation is calculated
-
-- ***[condition]*** - defines the criteria for data element.
+- **[condition]**: The condition under which the [value] is included in the calculation
 
    Data type: BOOL
 
-**Output Data Type**: BOOL
+**Output data type**: BOOL
 
 **Example** `ALL(CaseEvents, eventCost > 0)`
 
-Metric applicable on case metrics filters or case overview statistics. Returns true if all events in the case have an event cost greater than zero.
+Can be used on case metrics filters or case overview statistics. Returns true if all events in the case have an event cost greater than zero.
 
 ## ANY([context],[condition])
 
-returns true if any of the values grouped according to the defined context are fulfilling the defined condition.
+Returns true if any of the values, grouped according to the [context], meet the [condition]
 
-**Supported context:** case (implicit)
+- **[context]**: The context in which the operation is calculated (supported: case [implicit])
 
-**Parameters:**
-
-- ***[context]*** - defines the context in which the operation is calculated
-
-- ***[condition]*** - defines the criteria for data element.
+- **[condition]**: The condition under which the [value] is included in the calculation
 
    Data type: BOOL
 
-**Output Data Type**: BOOL
+**Output data type**: BOOL
 
 **Example**: `ANY(CaseEvents, eventCost > 0)`
 
-Metric applicable on case metrics filters or case overview statistics. Returns true if an event in the case has an event cost greater than zero.
+Can be used on case metrics filters or case overview statistics. Returns true if any event in the case has an event cost greater than zero.
 
-For a list of all calculation contexts for aggregation operations, go to [Calculation context](calculation-context.md).
+### See also
+
+For a list of all calculation contexts for aggregation operations, go to [Calculation context](calculation-context.md)

@@ -1,12 +1,16 @@
 ---
 title: Business rules overview (preview)
-description: Learn how to define and evaluate KPIs in Minit desktop application in process advisor.
-author: nijemcevic
+description: Learn how to define business rules that evaluate KPIs in the Minit desktop application for Microsoft Power Automate process advisor.
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/15/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.app:
 - Flow
 search.audienceType:
@@ -18,68 +22,100 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Business rules** module allows you to define and evaluate KPIs based on given thresholds and limits. Each defined threshold contains also a category flag&mdash;**Error**, **Warning**, or **OK**&mdash;for a quick visualization of the resulted value. Except for thresholds definitions, each business rule can have its own calculation formula and/or set of its own filters, which are applied over the data set in the actual view. Business rules are defined in the process context of the current process, therefore are available in any view for the given process. In application, business rules are displayed in Process Map and Statistics.
+Minit allows you to define business rules that evaluate your key performance indicators (KPI). Business rules set thresholds that are associated with a category flag&mdash;**Error**, **Warning**, or **OK**&mdash;to help you quickly spot problems in your processes.
 
-Definition of a business rule can be done in the **Process context** window available within the **Project hub**, using the Process context menu.
+Thresholds apply to all business rules in the process context. However, each business rule can have its own calculation formula and filters. Because business rules are part of the process context, they're available in any view you create for that process.
 
-The **Business rules** panel provides the list of custom metrics and their properties defined in the context of this process. If there's no business rule defined yet, you're encouraged to create one by selecting **Create New Business Rule**. Context menu for each business rule allows you to delete the item or create a duplicate of that metric, then modify and save it with a different name.
+Results of business rules are displayed in the process map and the Statistics module.
 
-:::image type="content" alt-text="Screenshot of the Business rule screen in the Process context module." source="media/image-61.png":::
+## View, duplicate, or delete business rules
 
-Another option is to use context menu in the **Customize** panel directly in the process map. To access the window, select (**...**) under the **Business rules** tab.
+In the process context, select **Business rules** in the left side panel. The **Business rules** page lists all the business rules you've defined in the current context.
 
-:::image type="content" alt-text="Screenshot of the option to create a business rule in the Customize screen in the process map." source="media/brshortcut.png":::
+:::image type="content" source="media/br-define-list.png" alt-text="Screenshot of the Business rules page.":::
 
-## Business rule screen
+Use the hamburger menu at the right side of the list heading row to hide or show columns and customize your view.
 
-The **Business rule** panel is divided into two parts. The top half contains the rule header fields. The middle part consists of three tabs defining the rule filters, custom output (custom formula) and severities (thresholds & limits).
+:::image type="content" source="media/br-define-list-filters.png" alt-text="Screenshot of the business rules filters.":::
 
-:::image type="content" alt-text="Screenshot of the parts of the Business rule screen." source="media/brdefinition0.png":::
+Use the (**...**) menu to duplicate or delete a business rule.
 
-### Business rule header
+:::image type="content" source="media/br-define-list-context.png" alt-text="Screenshot of the business rule context menu.":::
 
-Write your formula into the **Metric formula:** field. The editor offers full syntax editing features, including:
+## Define business rules
 
-- Name - name of the business rule to be displayed within the Minit application
+You can define business rules in the process context or the process map.
 
-- Scope - rule calculation scope with 4 options: Process, Case, Event, and Edge. For more details, see **[Business ](business-rule-scope.md)[r](business-rule-scope.md)[ule scopes](business-rule-scope.md)**.
+1. To start:
 
-- Tags - to mark/group rules - just write a tag (any text you like) and press ENTER to identify the end of tag
+    - In the process context, select **CREATE NEW BUSINESS RULE**.
+    - In the process map, open the **Customize** pane. In the **Business rules** section, select **Single business rule**, then select (**...**), and then select **Add**.
 
-:::image type="content" alt-text="Screenshot of the business rule header." source="media/brheader.png":::
+        :::image type="content" alt-text="Screenshot of the option to create a business rule in the Customize pane in the process map." source="media/brshortcut.png":::
 
-### Business rule filters
+1. Enter a name for the new rule.
 
-The first tab in the middle part of the panel is filter definition. If no filters are defined, the business rule data set is the same as the data set in the actual view. Any filters defined in the business rule definition are applied on top of all the filters in the actual view. It is possible to use any of the existing filter types with the exception of the Variants filter. To add the filter, use the 'plus' icon on the right side. Once filters are defined, the user can enable/disable it using the 'Enabled' slider in the filter list.
+1. Select the [calculation scope](business-rule-scope.md).
 
-:::image type="content" alt-text="Screenshot of the business rule filters." source="media/br-filters.png":::
+1. (Optional) Enter one or more tags to categorize the rule.
 
-Next to the 'plus' icon is a quick filter icon, which copies all the existing filters withing the business rule into the actual view, so the user can easily create/update the view to match the data according to the business rule data set.
+1. [Define business rule filters](#define-business-rule-filters).
 
-In the bottom of the business rule panel, the user can find four coverage indicators. First two indicate case and event coverage of the business rule data set versus all process data. The second pair of indicators shows case and event coverage of the business rule data set versus actual view data.
+1. [Define custom output](#define-custom-output).
 
-### Output - Custom formula
+1. [Define severities](#define-severities).
 
-For all the business rule scopes, apart from the Process scope, there's always one default output. It's the count of cases, events or edges which fit into the business rule data set. It's possible to calculate your own output&mdash;custom formula (defined as [custom metric](custom-metrics.md)). Compared to custom metrics, this output - custom formula isn't limited and provides the full power of the custom metric capabilities.
+1. Select **Save**.
 
-:::image type="content" alt-text="Screenshot of custom result formula output." source="media/brdefinition1.png":::
+### Define business rule filters
 
-For all custom formulas within the business rule, there is option to use business rule specific calculation context - see [Calculation context](calculation-context.md) for more details.
+Filters that you define in the business rule apply on top of any filters that you've applied to the process view. If no filters are defined in the business rule, the business rule data set is the same as the process view data set.
 
-### Severities: Thresholds and limits
+1. Select **FILTER**, and then select the **Add new filter** (**+**) icon.
 
-Severities are after definition of business rule data set and output formula the last part of business rule definition. The purpose of the Severities section is to score results of the business rule outputs and assign a performance indicator to these result values. Three categories of indicators are available: Error, Warning, OK. If the business rule output doesn't fit into any of the defined severity, the assigned category is Undefined (represented by a grey icon with a question mark; this category is not available to the user).
+    :::image type="content" source="media/br-define-filter-selection.png" alt-text="Screenshot of selecting filters in the business rule definition.":::
+
+1. Select a case or event filter type.
+
+1. Select values for the filter, and then select **Save**.
+
+    :::image type="content" source="media/br-define-filter-attributes.png" alt-text="Screenshot of selecting filter attributes.":::
+
+To exclude a filter from the business rule without deleting it, turn off **Enabled**. To delete a filter, select the **X** icon. To delete all the filters in the business rule, select the **Delete all filters** icon.
+
+:::image type="content" source="media/br-define-filter-enable.png" alt-text="Screenshot of a defined filter in a business rule definition.":::
+
+Use the **Import/export filters** icon to save the filters to a file or to import saved filters into another business rule.
+
+Indicators at the bottom of the business rule panel show you at a glance how much of the view data set the business rule will cover. Hover over an indicator to view the number of cases or events that will be covered out of the total number of cases or events.
+
+:::image type="content" source="media/br-define-coverage.png" alt-text="Screenshot of business rule coverage indicators.":::
+
+### Define custom output
+
+All business rule scopes, other than the process scope, have one default output. It's the count of cases, events, or edges that are in the business rule data set. You can also define a custom result formula output using [custom metrics](custom-metrics.md).
+
+:::image type="content" alt-text="Screenshot of a custom result formula output." source="media/brdefinition1.png":::
+
+For all custom formulas in the business rule, you can specify a [calculation context](calculation-context.md).
+
+### Define severities
+
+Define severities, or thresholds and limits, to score the results of the business rule outputs and assign a performance category flag. Three categories are available: Error, Warning, and OK. If the business rule output doesn't fit into one of these categories, the assigned category is Undefined, represented by a gray icon with a question mark.
 
 :::image type="content" alt-text="Screenshot of severities." source="media/brdefinition2.png":::
 
-Thresholds and limits defined for severities are not limited to constant values, but can be defined as custom expressions, to dynamically calculate values from the actual data set. For example, raise Error when duration of a case is two times longer, or longer than average case duration.
+Thresholds and limits can include both constant values and custom expressions that are dynamically calculated. For example, you might assign an Error flag when the duration of a case is longer than the average case duration.
 
-Definition of the business rule severities is mandatory. The most simple definition is using operator **Any** and selecting the desired category. For example, the existence of any delayed order means red flag regardless of how much finance in total is in such orders.
+You must define severities before you can save the business rule. The simplest definition of a severity category is the expression **Any**.
 
 :::image type="content" alt-text="Screenshot of a severity operator description." source="media/brseverities.png":::
 
-If the business rule doesn't have a defined custom output (custom formula), severities are applied over a default output (count).
+If the business rule doesn't have a custom output defined, severities are applied over the default output, count.
 
-## Application in Minit
+### See also
 
-Business rules are displayed in [Process](business-rules-process-map.md) map and in [Statistics](business-rules-statistics.md).
+[Process context (preview)](process-context.md)  
+[Business rules for process maps (preview)](business-rules-process-map.md)  
+[Business rules statistics (preview)](business-rules-statistics.md)  
+[Custom metrics overview (preview)](custom-metrics.md)

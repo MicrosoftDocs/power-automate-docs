@@ -1,11 +1,14 @@
 ---
 title: Hierarchical process mining (preview)
 description: Learn how to define the hierarchy in the process map and social chart in the Minit desktop application in process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 10/15/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
 - Flow

@@ -1,12 +1,16 @@
 ---
-title: Install the minit desktop application (preview)
-description: Learn how to install the Minit desktop application within process advisor.
-author: nijemcevic
+title: Install the Minit desktop application (preview)
+description: Learn how to install the Minit desktop application in Microsoft Power Automate process advisor.
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 10/15/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.app:
 - Flow
 search.audienceType:
@@ -14,39 +18,36 @@ search.audienceType:
 - enduser
 ---
 
-# Install the minit desktop application (preview)
+# Install the Minit desktop application (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Install the Minit desktop application to edit your processes created in process advisor. 
+Before you can start using Minit, you need to install the Minit desktop application from process advisor.
 
-1.	Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 
-1. On the navigation bar to the left, select **Process advisor**.
+1. In the left side panel, select **Process advisor**.
 
-1. Below **Record, analyze, and refine commonly performed processes**, select **Download Minit**.
+1. At the top of the process advisor page, select **Install Minit**.
 
-   :::image type="content" alt-text="Screenshot of the Download Mint button." source="media/minit-install-a1.png":::
+   :::image type="content" alt-text="Screenshot of the Install Minit button on the process advisor page." source="media/minit-install-a1.png":::
 
-1. Depending on your configuration, you might see the following two screens:
+1. Open the installer file when prompted, and then select **Install** to run the installer when prompted.
 
-   a. In the **Open this file?** screen, select **Open**.
+   Allow a few minutes for the installer to download and install the application files.
 
-    :::image type="content" alt-text="Screenshot of the Open button." source="media/minit-install-1.png":::
+1. When the Minit welcome screen opens, select **NEXT STEP** to start the guided configuration wizard.
 
-    b. In the **Application Install - Security Warning** screen, select **Install**.
+1. By default, Minit will store process mining data in a new **Minit** folder in the **Documents** folder in your OneDrive. Change the location if necessary, and then select **NEXT STEP**.
 
-    :::image type="content" alt-text="Screenshot of the Install button." source="media/minit-install-2.png":::
+1. Select **APPLY AND MINE!** to finish the wizard.
 
-   The installation will start.
+1. Sign in to Minit with your work account.
 
-   :::image type="content" alt-text="Screenshot of the installation in progress." source="media/minit-install-3.png":::
+1. Start process mining from the **Process hub**.
 
- 1. Sign in with your Azure DevOps account.
+   :::image type="content" alt-text="Screenshot of the Minit process hub." source="media/image-27.png":::
 
-    :::image type="content" alt-text="Screenshot of the Sign in to Minit screen." source="media/image-26.png":::
+## Next steps
 
-1. Start process mining from your **Process hub**:
-
-   :::image type="content" alt-text="media/image-27.png" source="media/image-27.png":::
-
+[Explore the process hub](process-hub.md)

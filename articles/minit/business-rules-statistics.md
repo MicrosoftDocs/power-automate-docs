@@ -1,12 +1,16 @@
 ---
 title: Business rules statistics (preview)
-description: Learn how to use the business rules summary and detailed views in Minit desktop application in process advisor.
-author: nijemcevic
+description: Learn about the statistics available for business rules in the Minit desktop application for Microsoft Power Automate process advisor.
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 10/15/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.app:
 - Flow
 search.audienceType:
@@ -18,26 +22,43 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Within the Statistics view, a new **Business rules** panel was added to display business rule results in the form of a table. As in Process Map, the main display modes are:
+Along with statistics about your cases, activities, and edges, Minit collects statistics on each of your business rules. You can view them in the Statistics module.
 
-- **Summary view:** Displays a list of business rules for a given scope or for all.
+In Statistics, select **Business rules** in the list at the top of the page. You can also select a scope. By default, the display includes all scopes.
 
-- **Detailed view:** Displays results of a single business rule per scope element&mdash;activity or edge.
+:::image type="content" source="media/br-stats-list.png" alt-text="Screenshot of business rules selected in the Statistics module.":::
+
+Statistics are available at two levels:
+
+- **Summary view**: Displays a row of metrics for each business rule of the selected scope
+
+- **Detailed view**: Displays metrics per activity or edge for a single business rule
 
 ## Summary view
 
-In the summary view, it's possible to display all business rules or select a specific business rule scope to limit the list of displayed business rules. The summary view displays a single result per view for each business rule. For process and case scoped business rules, it's a standard evaluation. For event and edge scoped business rules, it's an alternative evaluation to calculate results per all events/edges. As explained in the [Business rules scope](business-rule-scope.md) article, category isn't evaluated for event and edge business rules when displayed in the summary view. If you want to display detailed results per activity or edge, go to the following **Detailed view** section.
+The summary view displays a single row of metrics for each business rule you defined for the process or for business rules of the selected scope. The category isn't evaluated for event and edge business rules when you display them in the summary view. To display metrics per activity or edge, use the [**detailed view**](#detailed-view).
 
 :::image type="content" alt-text="Screenshot of the summary view with all business rules selected." source="media/image-64.png":::
 
-When selecting a scope other than **All**, the list of business rules will be limited to the rules of the given scope.
+If you select a scope other than **All**, the list of business rules is limited to rules of the selected scope.
 
-:::image type="content" alt-text="Screenshot of the summary view with a scope other than all business rules selected." source="media/image-65.png":::
+:::image type="content" alt-text="Screenshot of the summary view with case scope business rules selected." source="media/image-65.png":::
 
 ## Detailed view
 
-For the event and edge scope, proper business rule results are calculated per event/edge. To display results per event/edge, you need to select the summary mode of event/edge and then select a single business rule. As a result, a list of events/edges is displayed with business rule statistics per each element.
+Event scope and edge scope business rules calculate results per event or edge. To display the details of events or edges, select the scope and then select a business rule of that scope.
 
-:::image type="content" alt-text="Screenshot of the detailed view." source="media/image-66.png":::
+1. In the **scope** list, select either **Event** or **Edge**.
+1. Select the filter icon to the right of the scope.
+1. Select **All** and then select a business rule from the list.
 
+    :::image type="content" source="media/br-stats-detail.png" alt-text="Screenshot of a single business rule selected for detailed display.":::
 
+The table shows metrics for each activity or edge in the data set of the selected business rule.
+
+:::image type="content" alt-text="Screenshot of the detailed view of business rule statistics." source="media/image-66.png":::
+
+### See also
+
+[Statistics overview (preview)](statistics.md)  
+[Business rule scope (preview)](business-rule-scope.md)
