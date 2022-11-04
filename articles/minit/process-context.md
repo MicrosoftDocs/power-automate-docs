@@ -1,11 +1,14 @@
 ---
 title: Process context (preview)
 description: Learn about the process settings you can change in the Minit desktop application for Microsoft Power Automate process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 10/27/2022
-ms.author: tatn
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

@@ -1,11 +1,14 @@
 ---
 title: Frequently used parameters for the favorites panel (preview)
 description: Learn how to define a default list of favorite parameters in the Minit desktop application in process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 10/15/2022
-ms.author: tatn
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
 - Flow

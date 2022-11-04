@@ -1,11 +1,14 @@
 ---
 title: Tips and examples (preview)
 description: Get tips on how to define a metric formula, reference an attribute name, and more in the Minit desktop application in process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 10/15/2022
-ms.author: tatn
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
 - Flow

@@ -1,11 +1,14 @@
 ---
 title: Business rules for process maps (preview)
 description: Learn how to display business rules in the process map in the Minit desktop application for Microsoft Power Automate process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 10/28/2022
-ms.author: tatn
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

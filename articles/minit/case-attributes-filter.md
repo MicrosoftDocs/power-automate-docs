@@ -1,11 +1,14 @@
 ---
 title: Case attributes filter (preview)
 description: Learn how to use the case attributes filter in the Minit desktop application for Microsoft Power Automate process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
 ms.date: 11/01/2022
-ms.author: tatn
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

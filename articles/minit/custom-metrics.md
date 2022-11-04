@@ -1,11 +1,14 @@
 ---
 title: Custom metrics overview (preview)
 description: Learn how to use predefined metrics to define your own metrics in the Minit desktop application in process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 10/15/2022
-ms.author: tatn
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
 - Flow

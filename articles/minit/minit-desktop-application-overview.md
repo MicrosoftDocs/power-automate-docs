@@ -1,7 +1,10 @@
 ---
 title: Minit desktop application overview (preview)
 description: Get an overview of the Minit desktop application for Microsoft Power Automate process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 11/15/2022
