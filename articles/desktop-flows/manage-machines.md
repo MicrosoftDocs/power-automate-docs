@@ -42,17 +42,17 @@ Your machine is automatically registered on the currently selected environment i
 
 1. Make sure you've checked the **Install the machine-runtime app to connect to the Power Automate cloud portal** option in the installer.
 
-    ![Screenshot of the option to accept the terms.](./media/register-machines/acceptterms.png)
+    :::image type="content" source="./media/register-machines/acceptterms.png" alt-text="Screenshot of the option to accept the terms.":::
 
 1. When the installation completes, launch the **Power Automate machine runtime** application.
 
-    ![Screenshot of the Windows search menu.](./media/register-machines/runapp.png)
+    :::image type="content" source="./media/register-machines/runapp.png" alt-text="Screenshot of the Windows search menu.":::
 
 1. Sign in to the **Power Automate machine runtime** application. Your machine should be automatically registered in the currently selected environment.
 
 1. If the machine hasn't been registered yet, a message will prompt you to select a machine running environment. Power Automate will use this environment to run all the triggered desktop flows.
 
-     ![Screenshot of the the Machine isn't registered message.](./media/register-machines/machine-not-registered.png)
+    :::image type="content" source="./media/register-machines/machine-not-registered.png" alt-text="Screenshot of the the Machine isn't registered message.":::
 
 When the connection is established successfully, the machine settings section will display the following fields regarding the machine:
 
@@ -60,7 +60,7 @@ When the connection is established successfully, the machine settings section wi
 - **Machine description:** An optional description of the machine.
 - **Machine environment:** The running environment of the machine.
 
-![Screenshot of the the Machine settings.](./media/register-machines/registered-machine.png)
+:::image type="content" source="./media/register-machines/registered-machine.png" alt-text="Screenshot of the the Machine settings.":::
 
 > [!NOTE]
 >
@@ -103,7 +103,7 @@ You can update the running environment in which your machine can run desktop flo
 
 1. Select **Create**.
 
-   ![Screenshot of the Run a flow built with Power Automate for desktop action.](./media/register-machines/connect-directly-to-machine.png)
+    :::image type="content" source="./media/register-machines/connect-directly-to-machine.png" alt-text="Screenshot of the Run a flow built with Power Automate for desktop action.":::
 
 1. Select the desktop flow you want to run and the desired run mode.
 
@@ -160,7 +160,7 @@ You can share a machine with other users in your organization, giving those user
 
 1. Select **Save**.
 
-  ![Screenshot of the Manage access dialog.](./media/register-machines/share-machine.png)
+  :::image type="content" source="./media/register-machines/share-machine.png" alt-text="Screenshot of the Manage access dialog.":::
 
 There are two levels of permissions that you can use when managing access to your machine:
 
@@ -220,7 +220,7 @@ You can also change the connections used by a cloud flow in its details page whe
 
 By default, all users with an Environment Maker role can register their machines in an environment. You can restrict actions on machines and machine groups by modifying the **Flow Machine** and **Flow Machine Group** permissions for a particular security role.
 
-  ![Screenshot of the permissions based on security role.](./media/register-machines/permissions-roles.png)
+  :::image type="content" source="./media/register-machines/permissions-roles.png" alt-text="Screenshot of the permissions based on security role.":::
 
 Environment admins can also restrict machine registration to a specific set of users by using the three security roles that come with machine management.
 
