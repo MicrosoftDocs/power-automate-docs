@@ -26,4 +26,3 @@ search.audienceType:
 | PI | FLOAT | Mathematical constant π = 3.14159265358979 |
 | E | FLOAT | Euler's number e = 2.71828182845905 |
 
-
