@@ -29,13 +29,13 @@ Desktop flows can cause two kinds of errors:
 
 When an action throws an error, the flow designer displays an icon next to it and a pop-up pane with relevant information. If the error occurred is a design-time error,  the flow designer also displays an error description in the action's modal.
 
-![Screenshot of some errors in the errors pane.](media/errors/example-errors.png)
+:::image type="content" source="media/errors/example-errors.png" alt-text="Screenshot of some errors in the errors pane.":::
 
 ## Desktop flows warnings
 
 Apart from errors, the flow designer displays warnings that indicate non-critical issues in your desktop flows. Warnings don't prevent desktop flows from running but indicate possible unwanted functionality, such as infinite recursions of subflows.
 
-![Screenshot of a warning in the errors pane.](media/errors/example-warning.png)
+:::image type="content" source="media/errors/example-warning.png" alt-text="Screenshot of a warning in the errors pane.":::
 
 ## Review errors and warnings using the errors pane
 
@@ -49,7 +49,7 @@ It consists of three columns:
 
 The pane also provides filters to display errors, warnings, and/or items related to specific subflows.
 
-![Screenshot of the available filter in the errors pane.](media/errors/errors-pane-filters.png)
+:::image type="content" source="media/errors/errors-pane-filters.png" alt-text="Screenshot of the available filter in the errors pane.":::
 
 To see additional information regarding a thrown error or warning, double-click on the respective item in the errors pane. Once you do so, a dialog will display information about:
 
@@ -57,7 +57,7 @@ To see additional information regarding a thrown error or warning, double-click 
 - **Error message**: The message of the occurred error or warning.
 - **Error details**: A long description of the occurred run-time error. These details give a clear message about why the run-time error happened.
 
-![Screenshot of the error details dialog.](media/errors/error-details.png)
+:::image type="content" source="media/errors/error-details.png" alt-text="Screenshot of the error details dialog.":::
 
 ## Configure error-handling functionality
 
@@ -67,11 +67,11 @@ Power Automate enables you to configure error-handling functionality for single 
 
 By default, desktop flows stop their execution when an error occurs. To configure a custom error-handling functionality for a specific action, select On error in its modal.
 
-![Screenshot of the on On error option in the action.](media/errors/on-error-option-action.png)
+:::image type="content" source="media/errors/on-error-option-action.png" alt-text="Screenshot of the on On error option in the action.":::
 
 The first available option is the **Retry action if an error occurs** checkbox. This option makes the flow run the action a set number of times after a set number of seconds. The default value is one retrying with an interval of two seconds.
 
-![Screenshot of the Retry action checkbox in the action.](media/errors/retry-action.png)
+:::image type="content" source="retry-action.png" alt-text="Screenshot of the Retry action checkbox in the action.":::
 
 To keep your desktop flow running even if the retry option fails, select **Continue flow run**. Through the displayed ​drop-down list, you can:
 
@@ -79,14 +79,14 @@ To keep your desktop flow running even if the retry option fails, select **Conti
 - **Repeat action**: Repeats the action until it runs successfully.
 - **Go to label**: Run the desktop flow from a point defined by a **Label** action.
 
-![Screenshot of the continue flow run option in the action.](media/errors/continue-flow-run.png)
+:::image type="content" source="media/errors/continue-flow-run.png" alt-text="Screenshot of the continue flow run option in the action.":::
 
 Desktop flows offer two more error handling options. Select **New rule** to:
 
 - **Set variable**: Sets the specified value to a selected variable.
 - **Run subflow**: Runs a specified subflow.
 
-![Screenshot of the New rule option in the action.](media/errors/new-rule.png)
+:::image type="content" source="media/errors/new-rule.png" alt-text="Screenshot of the New rule option in the action.":::
 
 If different errors require different error handling functionality, select **Advanced** and configure each possible error separately.
 
@@ -98,7 +98,7 @@ Instead of configuring each action separately, you can deploy the **On block err
 
 This action offers almost the same options as the **On error** settings of single actions but also allows you to capture unexpected logic errors, such as trying to access a list item from an out-of-bounds position.
 
-![Screenshot of the On block error action.](media/errors/on-block-error-action.png)
+:::image type="content" source="media/errors/on-block-error-action.png" alt-text="Screenshot of the On block error action.":::
 
 ## Retrieve occurred errors in desktop flows
 
@@ -108,6 +108,6 @@ This action returns an error type variable that provides six different propertie
 
 To avoid retrieving the same error value later in your desktop flow, enable the **Clear error** option that clears the last error after storing it in the variable.
 
-![Screenshot of the Get last error action.](media\errors\get-last-error-action.png)
+:::image type="content" source="media\errors\get-last-error-action.png" alt-text="Screenshot of the Get last error action.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

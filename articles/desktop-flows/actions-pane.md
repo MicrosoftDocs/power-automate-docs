@@ -73,6 +73,6 @@ When an action is disabled, all variables initialized in its modal get hidden fr
 
 In the example below, two actions throw an error because they contain variables defined in a disabled action.
 
-:::image type="content" source="media/enabling-disabling-actions/enable-disable-action-variables.png" alt-text="Screenshot of an example in which disabling an action cause errors.":::
+:::image type="content" source="media/enabling-disabling-actions/enable-disable-action-variables.png" alt-text="Screenshot of an example in which disabling an action causes errors.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
