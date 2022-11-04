@@ -459,14 +459,10 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Invalid URL|Indicates that the provided URL was invalid|
 
 
+#### <a name="launchchromebase"></a> Launch new Chrome
+Launch a new instance or attach to a running instance of Chrome for automating websites and web applications.
 
-
-
-
-### <a name="launchchromebase"></a> Launch new Chrome
-Launch a new instance or attach to a running instance of Chrome for automating web sites and web applications
-
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Chrome or attach to an existing one|
@@ -474,7 +470,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Chrome tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Chrome tab to attach to|
-|Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized of maximized state|
+|Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -483,7 +479,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Browser|[Web browser instance](../variable-data-types.md#instances)|The Chrome instance to use with browser automation actions|
@@ -495,10 +491,10 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Failed to launch Chrome|Indicates a problem launching Chrome|
 |Invalid URL|Indicates that the provided URL was invalid|
 
-### <a name="launchedgebase"></a> Launch new Edge
-Launch a new instance or attach to a running instance of Edge for automating web sites and web applications
+#### <a name="launchedgebase"></a> Launch new Edge
+Launch a new instance or attach to a running instance of Edge for automating websites and web applications.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Edge or attach to an existing one|
@@ -506,7 +502,7 @@ Launch a new instance or attach to a running instance of Edge for automating web
 |Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Edge tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Edge tab to attach to|
-|Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized of maximized state|
+|Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -515,7 +511,7 @@ Launch a new instance or attach to a running instance of Edge for automating web
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Browser|[Web browser instance](../variable-data-types.md#instances)|The Edge instance to use with browser automation actions|
@@ -527,10 +523,10 @@ Launch a new instance or attach to a running instance of Edge for automating web
 |Failed to launch Edge|Indicates a problem launching Edge|
 |Invalid URL|Indicates that the provided URL was invalid|
 
-### <a name="createnewtabbase"></a> Create new tab
-Create a new tab and navigate to the given URL (supported in Edge, Chrome and Firefox)
+#### <a name="createnewtabbase"></a> Create new tab
+Create a new tab and navigate to the given URL (supported in Edge, Chrome, and Firefox).
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -541,7 +537,7 @@ Create a new tab and navigate to the given URL (supported in Edge, Chrome and Fi
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |NewBrowser|[Web browser instance](../variable-data-types.md#instances)|The new web browser instance to use with browser automation actions|
@@ -553,10 +549,10 @@ Create a new tab and navigate to the given URL (supported in Edge, Chrome and Fi
 |Invalid URL|Indicates that the provided URL was invalid|
 |Failed to create a new tab|Indicates a problem creating a new tab|
 
-### <a name="gotowebpagebase"></a> Go to web page
-Navigate the web browser to a new page
+#### <a name="gotowebpagebase"></a> Go to webpage
+Navigate the web browser to a new page.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -568,8 +564,8 @@ Navigate the web browser to a new page
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="gotowebpagebase_onerror"></a> Exceptions
 |Exception|Description|
@@ -577,24 +573,30 @@ Navigate the web browser to a new page
 |Failed to navigate to web page|Indicates a problem navigating to the specified web page|
 |Invalid URL|Indicates that the provided URL was invalid|
 
-### <a name="clickbase"></a> Click link on web page
-Click on a link or any other element of a web page
+#### <a name="clickbase"></a> Click link on webpage
+Click on a link or any other element of a webpage.
 
-##### Input Parameters
+
+
+
+<!-- The second sentence in the Description column for "Send physical click" is confusing. Should it instead say "A physical click is required for cases when ..."? --> 
+
+
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to click|
 |Click type|N/A|Left click, Right click, Double click, Left button down, Left button up, Right button down, Right button up, Middle click|Left click|The kind of click to perform|
-|Send physical click|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the element prior to clicking. A physical click is required for cases that emulated clicks don't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
-|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after clicking on the link|
+|Send physical click|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the element prior to clicking. A physical click is required for cases that emulated clicks don't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it to the foreground.|
+|Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after clicking the link|
 |Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
-|If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after clicking on the link|
+|If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after clicking the link|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="clickbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -602,10 +604,10 @@ Click on a link or any other element of a web page
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to click UI element|Indicates a problem clicking the specified element|
 
-### <a name="clickdownloadlink"></a> Click download link on web page
-Click on a link in a web page that results in downloading a file
+#### <a name="clickdownloadlink"></a> Click download link on webpage
+Click a link in a webpage that results in downloading a file.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
@@ -613,7 +615,7 @@ Click on a link in a web page that results in downloading a file
 |Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to save the downloaded file to|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |DownloadedFile|[File](../variable-data-types.md#files-and-folders)|The file on the disk where the download is saved. This is a filepath that consists of the download folder as specified above plus the name of the file as provided by the web server.|
@@ -627,20 +629,20 @@ Click on a link in a web page that results in downloading a file
 |Failed to click UI element|Indicates a problem clicking the specified element|
 |Failed to save file|Indicates a problem saving the specified file|
 
-### <a name="executejavascript"></a> Run JavaScript function on web page
-Run a JavaScript function on the web page and get the returned result
+#### <a name="executejavascript"></a> Run JavaScript function on webpage
+Run a JavaScript function on the webpage and get the returned result.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |JavaScript function|Yes|[Text value](../variable-data-types.md#text-value)|function ExecuteScript() { /*your code here, return something (optionally); */ }|Enter the JavaScript function to run on the web page|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Result|[Text value](../variable-data-types.md#text-value)|The result of the JavaScript function that run|
+|Result|[Text value](../variable-data-types.md#text-value)|The result of the JavaScript function that ran|
 
 
 ##### <a name="executejavascript_onerror"></a> Exceptions
@@ -648,35 +650,35 @@ Run a JavaScript function on the web page and get the returned result
 |-----|-----|
 |Failed to run JavaScript|Indicates a problem running JavaScript|
 
-### <a name="hoveroverelement"></a> Hover mouse over element on web page
-Hover the mouse over an element of a web page
+#### <a name="hoveroverelement"></a> Hover mouse over element on webpage
+Hover the mouse over an element of a webpage.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to hover|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="hoveroverelement_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to hover over element|Indicates a problem hovering over the specified element|
 
-### <a name="closewebbrowser"></a> Close web browser
-Close a web browser window
+#### <a name="closewebbrowser"></a> Close web browser
+Close a web browser window.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to close|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="closewebbrowser_onerror"></a> Exceptions
 |Exception|Description|
