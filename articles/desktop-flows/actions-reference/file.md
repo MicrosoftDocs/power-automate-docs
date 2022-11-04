@@ -61,73 +61,68 @@ Some file actions provide an extensive configuration, allowing you to automate v
 
 ![Screenshot of the Rename files action.](media/file/rename-files-example.png)
 
-
-
-
-
-
 To append text content or overwrite text files, deploy the **Write text to file** action. To read the content of a text file, use the **Read text from file** action.
 
 Likewise, if you need to read or write content to CSV files, use the **Read from CSV file** and **Write to CSV file** actions. You can find an example desktop flow that handles CSV files in [Convert a CSV file into an Excel spreadsheet](../how-to/convert-csv-excel.md).
 
 If you want to check if a file exists in a specific folder, use the **If file exists** action. This action is a conditional and allows you to run different blocks of code depending on whether the file exists. You can find more information regarding conditionals in [Use conditionals](../use-conditionals.md).
 
-## File actions
+### File actions
 
 > [!IMPORTANT]
-> To prevent unauthorized access, Windows require administrator rights to access protected files. To access these resources using the file actions, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> To prevent unauthorized access, Windows requires administrator rights to access protected files. To access these resources using the file actions, run Power Automate with administrator rights. For more information about running Power Automate as an administrator, go to [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
-### <a name="iffileaction"></a> If file exists
+#### <a name="iffileaction"></a> If file exists
 
 Marks the beginning of a conditional block of actions depending on whether a file exists or not
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If file|N/A|Exists, Doesn't exist|Exists|The state of the file to check|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The full path to look for the file|
 
-##### Variables Produced
+##### Variables produced
 
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
 ##### <a name="iffileaction_onerror"></a> Exceptions
 
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
-### <a name="waitforfileaction"></a> Wait for file
+#### <a name="waitforfileaction"></a> Wait for file
 
-Suspend the execution of the automation until a file is created or deleted
+Suspend the execution of the automation until a file is created or deleted.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for file to be|N/A|Created, Deleted|Created|Specifies whether to pause the flow on the creation or deletion of a certain file|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The full path to look for the file|
 
-##### Variables Produced
+##### Variables produced
 
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
 ##### <a name="waitforfileaction_onerror"></a> Exceptions
 
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
-### <a name="copy"></a> Copy file(s)
+#### <a name="copy"></a> Copy file(s)
 
-Copy one or more files into a destination folder
+Copy one or more files into a destination folder.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File(s) to copy|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to copy. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
+|File(s) to copy|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to copy. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files.|
 |Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||The destination folder for the copied files|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
-##### Variables Produced
+##### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
@@ -142,19 +137,19 @@ Copy one or more files into a destination folder
 |File not found|Indicates that the file doesn't exist|
 |Can't copy file|Indicates a problem copying the file|
 
-### <a name="move"></a> Move file(s)
+#### <a name="move"></a> Move file(s)
 
-Move one or more files into a destination folder
+Move one or more files into a destination folder.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File(s) to move|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to move. This can be a file path, or a variable containing a file, a list of files, a textual path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
+|File(s) to move|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to move. This can be a file path, or a variable containing a file, a list of files, a textual path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files.|
 |Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||The destination folder for the moved files|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
-##### Variables Produced
+##### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
@@ -168,6 +163,12 @@ Move one or more files into a destination folder
 |Destination folder doesn't exist|Indicates that the destination folder doesn't exist|
 |File not found|Indicates that the file doesn't exist|
 |Can't move file|Indicates a problem moving the file|
+
+
+
+
+
+
 
 ### <a name="delete"></a> Delete file(s)
 
