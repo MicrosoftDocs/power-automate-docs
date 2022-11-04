@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptuaL
-ms.date: 10/27/2022
+ms.date: 11/15/2022
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
