@@ -27,23 +27,23 @@ The main area of the console contains four tabs that display different kind of i
 
 On the top of the window, you can see the current user, while on the command bar, you can see all the available actions, a dropdown list to switch environments, the **Settings** and **Help** buttons, and a search bar.
 
-![Screenshot of the Power Automate for desktop console.](media/console/pad-console.png)
+:::image type="content" source="media/console/pad-console.png" alt-text="Screenshot of the Power Automate for desktop console.":::
 
 ## Starting a desktop flow
 
 To run a desktop flow as local attended, use the **Start** button next to the selected flow or on the command bar. The **Status** column allows you to review the current status of each flow.
 
-![Screenshot of the status column in the console.](media/console/start-flow.png)
+:::image type="content" source="media/console/start-flow.png" alt-text="Screenshot of the status column in the console.":::
 
 If a running flow contains [input variables](manage-variables.md#input-and-output-variables), a dialog box will prompt you to provide the appropriate values.
 
-![Screenshot of the flow inputs dialog.](media/console/start-flow-inputs.png)
+:::image type="content" source="media/console/start-flow-inputs.png" alt-text="Screenshot of the flow inputs dialog.":::
 
 ## Editing a desktop flow
 
 Apart from [creating new desktop flows](create-flow.md), you can edit existing flows using the **Edit** button next to the selected flow or on the command bar.
 
-![Screenshot of the edit buttons in the console.](media/console/create-edit-flow.png)
+:::image type="content" source="media/console/create-edit-flow.png" alt-text="Screenshot of the edit buttons in the console.":::
 
 The development of new flows and the editing of existing flows occur in the flow designer. To find more information regarding the flow designer and how to develop desktop flows, refer to [Desktop flow designer](flow-designer.md).
 
@@ -54,7 +54,7 @@ The development of new flows and the editing of existing flows occur in the flow
 
 To configure Power Automate for desktop to your liking, select the **Settings** button.
 
-![Screenshot of the console settings panel.](media/console/console-settings-panel.png)
+:::image type="content" source="media/console/console-settings-panel.png" alt-text="Screenshot of the console settings pane":::
 
 Under the **Application** category, select whether Power Automate should launch automatically and whether closing the console will also close the application. You may also set a hotkey combination to stop running flows instantly.
 
@@ -73,7 +73,7 @@ To review the details of a desktop flow, right-click on it and select **Details*
 
 Additionally, there's a **Run URL** that you can use to run the flow through many different sources, such as browsers, the Windows Run application, and the Command Prompt. You can find more information regarding this functionality in [Run desktop flows via URL or desktop shortcuts](run-pad-flow.md#run-desktop-flows-via-url-or-desktop-shortcuts).
 
-![Screenshot of the details of a desktop flow.](media/console/desktop-flow-details.png)
+:::image type="content" source="media/console/desktop-flow-details.png" alt-text="Screenshot of the details of a desktop flow.":::
 
 ## Update Power Automate for desktop
 
@@ -87,6 +87,6 @@ To manually update, select **Check for updates** in the general settings.
 
 If you're a member of more than one tenant, you can switch between them by selecting their alias at the top right corner of the console and clicking on **Switch organization**.
 
-![Screenshot of the switch tenants option.](media/console/switch-tenant.png)
+:::image type="content" source="media/console/switch-tenant.png" alt-text="Screenshot of the switch tenants option.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
