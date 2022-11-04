@@ -21,7 +21,7 @@ search.audienceType:
 
 # Manage machines
 
-Machines are the physical or virtual devices that you use to automate desktop processes. When you connect your machine to Power Automate, you can instantly start your desktop automation using any of the [available triggers](../triggers-introduction.md), such as pre-defined schedules.
+Machines are the physical or virtual devices that you use to automate desktop processes. When you connect your machine to Power Automate, you can instantly start your desktop automation using any of the [available triggers](../triggers-introduction.md), such as predefined schedules.
 
 Connecting your machine directly to Power Automate and the cloud allows you to harness the full power of your robotic process automation (RPA).
 
@@ -189,7 +189,7 @@ Follow these steps to delete a machine:
 
 1. Select **Monitor**, and then  **Machines**.
 
-1. Select the machine you want to delete from the list.
+1. From the list, select the machine you want to delete.
 
 1. Select **Delete machine** from the command bar.
 
