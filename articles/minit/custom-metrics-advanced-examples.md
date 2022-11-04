@@ -1,11 +1,14 @@
 ---
 title: Advanced examples (preview)
 description: Get complex examples of custom operators in the Minit desktop application.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 11/15/2022
-ms.author: tatn
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
 - Flow

@@ -1,11 +1,14 @@
 ---
 title: Process animation (preview)
 description: Learn how to visualize the development of the process over time in the Minit desktop application in process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 10/15/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
 - Flow

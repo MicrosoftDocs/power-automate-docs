@@ -1,11 +1,14 @@
 ---
 title: Case attributes conditional filter (preview)
 description: Learn how to use the case attributes conditional filter in the Minit desktop application for Microsoft Power Automate process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 11/01/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:
@@ -33,4 +36,4 @@ The **Attributes (conditional)** filter adds conditions to the **Attribute** fil
 
 1. Select an attribute, metric, or process metric and the corresponding value or values.
 
-    :::image type="content" source="media/image017-v52-2.png"" alt-text="Screenshot of specifying additional criteria for a metric.":::
+    :::image type="content" source="media/image017-v52-2.png" alt-text="Screenshot of specifying additional criteria for a metric.":::

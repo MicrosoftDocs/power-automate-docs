@@ -1,11 +1,14 @@
 ---
 title: Case categorization (preview)
 description: Learn how to categorize cases in the Minit desktop application for Microsoft Power Automate process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptuaL
-ms.date: 10/27/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

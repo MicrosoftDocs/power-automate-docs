@@ -1,11 +1,14 @@
 ---
 title: Business rules overview (preview)
 description: Learn how to define business rules that evaluate KPIs in the Minit desktop application for Microsoft Power Automate process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/28/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

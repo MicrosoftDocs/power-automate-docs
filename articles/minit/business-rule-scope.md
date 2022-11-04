@@ -1,11 +1,14 @@
 ---
 title: Business rule scope (preview)
 description: Learn about the mandatory field Scope in business rule definition in the Minit desktop application for Microsoft Power Automate process advisor.
-author: nijemcevic
+author: maslejka
+contributors:
+  - maslejka
+  - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 10/28/2022
-ms.author: tatn
+ms.date: 11/15/2022
+ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:
