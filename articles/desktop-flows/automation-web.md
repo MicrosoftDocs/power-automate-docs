@@ -1,6 +1,6 @@
 ---
-title: Automation in the web | Microsoft Docs
-description: Automation in the web
+title: Automate web pages | Microsoft Docs
+description: See how to launch browsers, automate web pages, and extract data from the web
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
