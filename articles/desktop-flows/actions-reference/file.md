@@ -1,6 +1,6 @@
 ---
 title: File | Microsoft Docs
-description: File Actions Reference
+description: A reference for file actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -22,7 +22,10 @@ search.audienceType:
 
 # File
 
-Manage and manipulate files
+Manage and manipulate files.
+
+<!-- The following is a list of what - actions you can take with files? Maybe fill out the introductory sentence a bit more. -->
+
 
 [If file exists](#iffileaction)  
 [Wait for file](#waitforfileaction)  
@@ -45,18 +48,23 @@ Manage and manipulate files
 
 Handling files and their content is essential for most automation scenarios. Using the file actions, you create desktop flows that manage files, retrieve their properties, read and write data, and convert them to other types.
 
-Most file actions require paths that specify the files you want to manipulate. These paths can be hardcoded values or [file datatype variables](../variable-data-types.md#files-and-folders).
+Most file actions require paths that specify the files you want to manipulate. These paths can be hard-coded values or [file datatype variables](../variable-data-types.md#files-and-folders).
 
 >[!NOTE]
 >If you want to provide many files as input, use a [list variable](../variable-data-types.md#list) with file items. A method to create a list of files is the **Get files in folder** action.
 
-Similarly, you can populate a hardcoded value or a [folder datatype variable](../variable-data-types.md#files-and-folders) to specify a destination folder in the actions that need one.
+Similarly, you can populate a hard-coded value or a [folder datatype variable](../variable-data-types.md#files-and-folders) to specify a destination folder in the actions that need one.
 
 ![Screenshot of the Move files action.](media/file/move-files-example.png)
 
-Some file actions provide an extensive configuration, allowing you to automate virtually any scenario. For example, the **Rename file(s)** includes options to set a new name or add, replace or remove a text string to the existing file name.
+Some file actions provide an extensive configuration, allowing you to automate virtually any scenario. For example, the **Rename file(s)** action includes options to set a new name or add, replace or remove a text string to the existing file name.
 
 ![Screenshot of the Rename files action.](media/file/rename-files-example.png)
+
+
+
+
+
 
 To append text content or overwrite text files, deploy the **Write text to file** action. To read the content of a text file, use the **Read text from file** action.
 
