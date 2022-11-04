@@ -1,5 +1,5 @@
 ---
-title: Run SQL queries on Excel files | Microsoft Docs
+title: Run SQL queries on Excel files
 description: Run SQL queries on Excel files
 author: georgiostrantzas
 

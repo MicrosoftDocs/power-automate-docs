@@ -1,5 +1,5 @@
 ---
-title: Use inputs and outputs in Windows recorder (V1) flows | Microsoft Docs
+title: Use inputs and outputs in Windows recorder (V1) flows
 description: Use inputs and outputs in Windows recorder (V1) flows.
 services: ''
 suite: flow

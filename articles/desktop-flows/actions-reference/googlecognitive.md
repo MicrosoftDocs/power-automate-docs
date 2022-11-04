@@ -1,5 +1,5 @@
 ---
-title: Google Cognitive | Microsoft Docs
+title: Google Cognitive
 description: Google Cognitive Actions Reference
 author: georgiostrantzas
 

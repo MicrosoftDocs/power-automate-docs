@@ -1,5 +1,5 @@
 ---
-title: Introduction to desktop flows | Microsoft Docs
+title: Introduction to desktop flows
 description: Introduction to desktop flows
 author: georgiostrantzas
 

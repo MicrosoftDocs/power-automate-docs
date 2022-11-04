@@ -1,5 +1,5 @@
 ---
-title: Variable data types | Microsoft Docs
+title: Variable data types
 description: Variable data types
 author: georgiostrantzas
 

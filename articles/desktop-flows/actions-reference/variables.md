@@ -1,5 +1,5 @@
 ---
-title: Variables | Microsoft Docs
+title: Variables
 description: Variables Actions Reference
 author: georgiostrantzas
 

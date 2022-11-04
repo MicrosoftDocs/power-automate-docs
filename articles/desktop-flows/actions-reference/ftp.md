@@ -1,5 +1,5 @@
 ---
-title: FTP | Microsoft Docs
+title: FTP
 description: FTP Actions Reference
 author: georgiostrantzas
 

@@ -1,5 +1,5 @@
 ---
-title: AWS | Microsoft Docs
+title: AWS
 description: AWS Actions Reference
 author: georgiostrantzas
 

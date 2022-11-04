@@ -1,5 +1,5 @@
 ---
-title: System | Microsoft Docs
+title: System
 description: System Actions Reference
 author: georgiostrantzas
 

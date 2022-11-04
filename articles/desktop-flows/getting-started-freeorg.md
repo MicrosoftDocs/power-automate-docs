@@ -1,5 +1,5 @@
 ---
-title: Getting started with a work or school account | Microsoft Docs
+title: Getting started with a work or school account
 description: Getting started with a work or school account
 author: georgiostrantzas
 

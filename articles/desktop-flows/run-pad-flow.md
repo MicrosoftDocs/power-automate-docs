@@ -1,5 +1,5 @@
 ---
-title: Run a Power Automate desktop flow | Microsoft Docs
+title: Run a Power Automate desktop flow
 description: Run a flow in the Power Automate desktop console
 author: georgiostrantzas
 

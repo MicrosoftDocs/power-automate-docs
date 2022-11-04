@@ -1,5 +1,5 @@
 ---
-title: OCR | Microsoft Docs
+title: OCR
 description: OCR actions reference
 author: georgiostrantzas
 ms.subservice: desktop-flow

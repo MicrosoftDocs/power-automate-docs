@@ -1,5 +1,5 @@
 ---
-title: Set screen resolution on unattended mode | Microsoft Docs
+title: Set screen resolution on unattended mode
 description: Set screen resolution on unattended mode
 author: georgiostrantzas
 

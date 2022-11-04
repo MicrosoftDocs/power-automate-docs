@@ -1,5 +1,5 @@
 ---
-title: CyberArk | Microsoft Docs
+title: CyberArk
 description: CyberArk Actions Reference
 author: georgiostrantzas
 

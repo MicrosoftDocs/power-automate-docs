@@ -1,5 +1,5 @@
 ---
-title: Browser automation | Microsoft Docs
+title: Browser automation
 description: Browser automation Actions Reference
 author: georgiostrantzas
 

@@ -1,5 +1,5 @@
 ---
-title: Install Power Automate on your device | Microsoft Docs
+title: Install Power Automate on your device
 description: Install Power Automate on your device.
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: Folder | Microsoft Docs
+title: Folder
 description: Folder Actions Reference
 author: georgiostrantzas
 

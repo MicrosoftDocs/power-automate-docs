@@ -1,5 +1,5 @@
 ---
-title: Getting started with a Microsoft account | Microsoft Docs
+title: Getting started with a Microsoft account
 description: Getting started with a Microsoft account
 author: georgiostrantzas
 

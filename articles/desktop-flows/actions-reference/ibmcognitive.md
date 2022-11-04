@@ -1,5 +1,5 @@
 ---
-title: IBM Cognitive | Microsoft Docs
+title: IBM Cognitive
 description: IBM Cognitive Actions Reference
 author: georgiostrantzas
 

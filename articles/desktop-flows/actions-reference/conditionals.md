@@ -1,5 +1,5 @@
 ---
-title: Conditionals | Microsoft Docs
+title: Conditionals
 description: Conditionals Actions Reference
 author: georgiostrantzas
 

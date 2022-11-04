@@ -1,5 +1,5 @@
 ---
-title: Silent registration for machines | Microsoft Docs
+title: Silent registration for machines
 description: Silent registration for machines 
 author: georgiostrantzas
 ms.subservice: desktop-flow

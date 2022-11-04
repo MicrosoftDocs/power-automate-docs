@@ -1,5 +1,5 @@
 ---
-title: Excel | Microsoft Docs
+title: Excel
 description: Excel Actions Reference
 author: georgiostrantzas
 

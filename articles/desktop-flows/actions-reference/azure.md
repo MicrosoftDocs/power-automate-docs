@@ -1,5 +1,5 @@
 ---
-title: Azure | Microsoft Docs
+title: Azure
 description: Azure Actions Reference
 author: georgiostrantzas
 

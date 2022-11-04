@@ -1,5 +1,5 @@
 ---
-title: Extract text from a Word document using VBScript | Microsoft Docs
+title: Extract text from a Word document using VBScript
 description: Extract text from a Word document using VBScript
 author: georgiostrantzas
 

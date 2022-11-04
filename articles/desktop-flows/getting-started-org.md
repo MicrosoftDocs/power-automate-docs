@@ -1,5 +1,5 @@
 ---
-title: Getting started with an organization premium account | Microsoft Docs
+title: Getting started with an organization premium account
 description: Getting started with an Organization premium account
 author: georgiostrantzas
 ms.subservice: desktop-flow

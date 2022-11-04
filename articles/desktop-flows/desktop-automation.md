@@ -1,5 +1,5 @@
 ---
-title: Desktop automation | Microsoft Docs
+title: Desktop automation
 description: Desktop automation
 author: georgiostrantzas
 

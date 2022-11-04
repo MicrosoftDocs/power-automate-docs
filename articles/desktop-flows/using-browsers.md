@@ -1,5 +1,5 @@
 ---
-title: Using browsers and managing extensions | Microsoft Docs
+title: Using browsers and managing extensions
 description: Using browsers and managing extensions
 author: georgiostrantzas
 

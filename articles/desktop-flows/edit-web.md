@@ -1,5 +1,5 @@
 ---
-title: Learn to how to edit Selenium IDE flows | Microsoft Docs
+title: Learn to how to edit Selenium IDE flows
 description: Learn to how to edit Selenium IDE flows.
 services: ''
 suite: flow

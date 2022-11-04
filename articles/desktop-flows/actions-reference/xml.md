@@ -1,5 +1,5 @@
 ---
-title: XML | Microsoft Docs
+title: XML
 description: XML Actions Reference
 author: georgiostrantzas
 

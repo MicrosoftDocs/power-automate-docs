@@ -1,5 +1,5 @@
 ---
-title: Datatype properties | Microsoft Docs
+title: Datatype properties
 description: Datatype properties
 author: georgiostrantzas
 

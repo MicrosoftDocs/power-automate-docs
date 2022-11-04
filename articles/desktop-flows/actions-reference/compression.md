@@ -1,5 +1,5 @@
 ---
-title: Compression | Microsoft Docs
+title: Compression
 description: Compression Actions Reference
 author: georgiostrantzas
 

@@ -1,5 +1,5 @@
 ---
-title: Outlook | Microsoft Docs
+title: Outlook
 description: Outlook Actions Reference
 author: georgiostrantzas
 

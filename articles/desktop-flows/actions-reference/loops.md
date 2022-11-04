@@ -1,5 +1,5 @@
 ---
-title: Loops | Microsoft Docs
+title: Loops
 description: Loops Actions Reference
 author: georgiostrantzas
 

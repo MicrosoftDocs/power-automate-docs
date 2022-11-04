@@ -1,5 +1,5 @@
 ---
-title: Scripting | Microsoft Docs
+title: Scripting
 description: Scripting Actions Reference
 author: georgiostrantzas
 

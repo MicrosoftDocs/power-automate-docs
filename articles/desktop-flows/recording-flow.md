@@ -1,5 +1,5 @@
 ---
-title: Record desktop flows | Microsoft Docs
+title: Record desktop flows
 description: Record desktop flows
 author: georgiostrantzas
 ms.subservice: desktop-flow

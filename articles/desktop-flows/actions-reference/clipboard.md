@@ -1,5 +1,5 @@
 ---
-title: Clipboard | Microsoft Docs
+title: Clipboard
 description: Clipboard Actions Reference
 author: georgiostrantzas
 

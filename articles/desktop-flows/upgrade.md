@@ -1,5 +1,5 @@
 ---
-title:  Update UI flows app and connections from previous releases | Microsoft Docs
+title:  Update UI flows app and connections from previous releases
 description:  Update UI flows app and connections from previous releases.
 services: ''
 suite: flow

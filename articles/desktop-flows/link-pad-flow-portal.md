@@ -1,5 +1,5 @@
 ---
-title: Trigger a desktop flow from a cloud flow | Microsoft Docs
+title: Trigger a desktop flow from a cloud flow
 description: Link a Power Automate desktop flow with a cloud flow in the Power Automate portal
 author: georgiostrantzas
 

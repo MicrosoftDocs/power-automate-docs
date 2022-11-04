@@ -1,5 +1,5 @@
 ---
-title: Microsoft Cognitive | Microsoft Docs
+title: Microsoft Cognitive
 description: Microsoft Cognitive Actions Reference
 author: georgiostrantzas
 

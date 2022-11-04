@@ -1,5 +1,5 @@
 ---
-title: HTTP | Microsoft Docs
+title: HTTP
 description: HTTP Actions Reference
 author: georgiostrantzas
 

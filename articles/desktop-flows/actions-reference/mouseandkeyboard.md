@@ -1,5 +1,5 @@
 ---
-title: Mouse and keyboard | Microsoft Docs
+title: Mouse and keyboard
 description: Mouse and keyboard Actions Reference
 author: georgiostrantzas
 

@@ -1,5 +1,5 @@
 ---
-title: CMD session | Microsoft Docs
+title: CMD session
 description: CMD session Actions Reference
 author: georgiostrantzas
 

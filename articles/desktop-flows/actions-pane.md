@@ -1,5 +1,5 @@
 ---
-title: Configure actions and the actions pane | Microsoft Docs
+title: Configure actions and the actions pane
 description: This section shows how to use the actions pane to deploy actions in the flow designer.
 author: georgiostrantzas
 ms.subservice: desktop-flow

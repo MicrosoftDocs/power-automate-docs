@@ -1,5 +1,5 @@
 ---
-title: Email | Microsoft Docs
+title: Email
 description: Email Actions Reference
 author: georgiostrantzas
 

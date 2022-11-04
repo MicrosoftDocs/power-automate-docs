@@ -1,5 +1,5 @@
 ---
-title: Database | Microsoft Docs
+title: Database
 description: Database Actions Reference
 author: georgiostrantzas
 

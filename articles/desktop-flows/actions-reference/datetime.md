@@ -1,5 +1,5 @@
 ---
-title: Datetime | Microsoft Docs
+title: Datetime
 description: Datetime Actions Reference
 author: georgiostrantzas
 

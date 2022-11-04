@@ -1,5 +1,5 @@
 ---
-title: Automate applications using keyboard shortcuts | Microsoft Docs
+title: Automate applications using keyboard shortcuts
 description: Automate applications using keyboard shortcuts
 author: georgiostrantzas
 

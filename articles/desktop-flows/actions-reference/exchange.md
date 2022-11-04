@@ -1,5 +1,5 @@
 ---
-title: Exchange | Microsoft Docs
+title: Exchange
 description: Exchange Actions Reference
 author: georgiostrantzas
 

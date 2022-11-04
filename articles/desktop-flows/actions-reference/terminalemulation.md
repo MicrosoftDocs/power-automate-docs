@@ -1,5 +1,5 @@
 ---
-title: Terminal emulation | Microsoft Docs
+title: Terminal emulation
 description: Terminal emulation Actions Reference
 author: georgiostrantzas
 

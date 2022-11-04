@@ -1,5 +1,5 @@
 ---
-title: Data Collection in Power Automate | Microsoft Docs
+title: Data Collection in Power Automate
 description: Data Collection in Power Automate
 author: georgiostrantzas
 

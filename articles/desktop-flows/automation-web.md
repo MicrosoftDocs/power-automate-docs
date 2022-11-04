@@ -1,5 +1,5 @@
 ---
-title: Automation in the web | Microsoft Docs
+title: Automation in the web
 description: Automation in the web
 author: georgiostrantzas
 ms.subservice: desktop-flow

@@ -1,5 +1,5 @@
 ---
-title: UI automation | Microsoft Docs
+title: UI automation
 description: UI automation Actions Reference
 author: georgiostrantzas
 

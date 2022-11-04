@@ -1,5 +1,5 @@
 ---
-title: Workstation | Microsoft Docs
+title: Workstation
 description: Workstation Actions Reference
 author: georgiostrantzas
 

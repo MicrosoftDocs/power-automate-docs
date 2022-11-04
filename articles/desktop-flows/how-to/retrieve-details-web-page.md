@@ -1,5 +1,5 @@
 ---
-title: Retrieve details from a web page | Microsoft Docs
+title: Retrieve details from a web page
 description: Retrieve details from a web page 
 author: georgiostrantzas
 

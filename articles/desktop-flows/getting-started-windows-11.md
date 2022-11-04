@@ -1,5 +1,5 @@
 ---
-title: Getting started with Power Automate in Windows 11 (contains video) | Microsoft Docs
+title: Getting started with Power Automate in Windows 11 (contains video)
 description: Getting started with Power Automate in Windows 11
 author: georgiostrantzas
 

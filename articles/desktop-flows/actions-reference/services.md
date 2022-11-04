@@ -1,5 +1,5 @@
 ---
-title: Windows services | Microsoft Docs
+title: Windows services
 description: Windows services Actions Reference
 author: georgiostrantzas
 

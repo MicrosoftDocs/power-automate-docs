@@ -1,5 +1,5 @@
 ---
-title: Message boxes | Microsoft Docs
+title: Message boxes
 description: Message boxes Actions Reference
 author: georgiostrantzas
 

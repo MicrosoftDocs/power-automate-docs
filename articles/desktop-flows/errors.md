@@ -1,5 +1,5 @@
 ---
-title: Handle errors in desktop flows | Microsoft Docs
+title: Handle errors in desktop flows
 description: See how to handle errors and warnings in your desktop flows
 author: georgiostrantzas
 ms.subservice: desktop-flow

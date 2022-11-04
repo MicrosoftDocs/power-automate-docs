@@ -1,5 +1,5 @@
 ---
-title: Create a Microsoft Dataverse database | Microsoft Docs
+title: Create a Microsoft Dataverse database
 description: Create a Microsoft Dataverse database.
 services: ''
 suite: flow

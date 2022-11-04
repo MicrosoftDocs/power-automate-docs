@@ -1,5 +1,5 @@
 ---
-title: Cryptography | Microsoft Docs
+title: Cryptography
 description: Cryptography Actions Reference
 author: georgiostrantzas
 

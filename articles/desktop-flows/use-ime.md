@@ -1,5 +1,5 @@
 ---
-title: Use Input Method Editors (IMEs) in UI flows | Microsoft Docs
+title: Use Input Method Editors (IMEs) in UI flows
 description: Learn to use Input Method Editors (IMEs) in UI flows.
 services: ''
 suite: flow

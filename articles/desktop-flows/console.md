@@ -1,5 +1,5 @@
 ---
-title: Power Automate console | Microsoft Docs
+title: Power Automate console
 description: See the main functionality of the Power Automate console
 author: georgiostrantzas
 

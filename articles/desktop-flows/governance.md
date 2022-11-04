@@ -1,5 +1,5 @@
 ---
-title: Governance in Power Automate | Microsoft Docs
+title: Governance in Power Automate
 description: Governance in Power Automate.
 services: ''
 suite: flow

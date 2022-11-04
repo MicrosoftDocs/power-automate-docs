@@ -1,5 +1,5 @@
 ---
-title: Text | Microsoft Docs
+title: Text
 description: Text Actions Reference
 author: georgiostrantzas
 

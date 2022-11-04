@@ -1,5 +1,5 @@
 ---
-title: PDF | Microsoft Docs
+title: PDF
 description: PDF Actions Reference
 author: georgiostrantzas
 
