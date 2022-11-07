@@ -83,12 +83,15 @@ Result is applicable everywhere in Minit. The same logic for application as for 
 
 ### Calculation for example 3
 
-We need to calculate events duration per single case. As the view contains two cases, the number of results is yeo (2). Each result is calculated as sum of event duration across the single case.
+We need to calculate events duration per single case. As the view contains two cases, the number of results is two (2). Each result is calculated as sum of event duration across the single case.
 
 ### Result for example 3
 
-Events for case 1 = 1:30 hours<br/>
-Events for case 2 = 3:00 hours
+The result is *per case*. It's calculated by events in case1 and events in case2, but most important is that the result is per case.
+
+- Case 1 = 1:30 hours  (events in case 1)
+- Case 2 = 3:00 hours (events in case 2)
+
 
 :::image type="content" alt-text="Screenshot of the result for case 1." source="media/image-7.png":::
 
@@ -122,9 +125,9 @@ How do you calculate results per activity properly? We're not concerned with the
 
 ### Result for example 4
 
-A = 0:50 hours<br/>
-B = 0:40 hours<br/>
-C = 3:00 hours
+A = 50 minutes hours<br/>
+B = 40 minutes<br/>
+C = 3 hours
 
 :::image type="content" alt-text="Screenshot of the calculation result." source="media/imsge-9-angie.png":::
 
@@ -158,9 +161,10 @@ This example is similar to previous one. We again take into consideration distri
 
 ### Result for example 5
 
-Peter = 0:50h; Michal = 0:40h; Denis = 3:00h
+- Peter = 50 minutes (Events in case 1 =10 minutes + events in case 2 = 40 minutes, in total 50 minutes)
+- Michal = 2:20 hours (events in case 1 =1:20 hours + events in case 2 = 1 hour, in total 2:20 hours)
+- Denis = 1:20 hours (Events in case 2 = 1:20 hours)
 
-Peter = 50 minutes (Events in case 1 = 10 minutes + Events in case 2 = 40 minutes, in total 50 minutes)
 
 :::image type="content" alt-text="Screenshot of the result per user attribute." source="media/image-10-1.png":::
 
@@ -194,9 +198,9 @@ The calculation logic for this request is very similar to previous one. We group
 
 ### Result for example 6
 
-Peter = 4:30h; Michal = 4:30h; Denis = 3:00h **
+Peter = 4 hours 30 minutes; Michal = 4 hours 30 minutes; Denis = 3 hours
 
-:::image type="content" alt-text="Screenshot of the result per duration of cases." source="media/image-11.png":::
+:::image type="content" alt-text="Screenshot of the result per duration of cases." source="media/image-11a.png":::
 
 As you can see, we don't care how many events were done by user in case. One or multiple events done by given user, the length of case isn't obviously changed. We don't want to take duration of single case multiple times for the same user. Result is calculated per user (attribute value), takes case level metric (duration of case, no duration of events), and takes each case into result once at most.
 

@@ -83,7 +83,7 @@ To display Variant DNA, make sure that no variant is selected in the list; to ac
 
 To show the variant detail view, select any of the available variants by selecting it in the list.
 
-:::image type="content" alt-text="Screenshot of the Variants DNA." source="media/image-17.png":::
+:::image type="content" alt-text="Screenshot of the Variants DNA." source="media/image-17a.png":::
 
 ## Variant overview
 

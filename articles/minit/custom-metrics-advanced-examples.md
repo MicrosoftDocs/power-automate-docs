@@ -56,7 +56,7 @@ In total, we have five attributes - activity, start, end, use,r and county. Coun
 
 ### Result for example 1
 
-Per each event **1x False;** **11x True**
+Per each event: 1x False; 11x True
 
 :::image type="content" alt-text="Screenshot of the result for event level non-aggregation." source="media/image-16.png":::
 
@@ -113,7 +113,7 @@ It's a best practice to use generic metrics instead of process attributes.​
 
 ### Result for example 2
 
-Per each event **Case 1 - true ;** **Case 2 - true;** **Case 3 - true;** **Case 4 - false**
+Per each event: Case 1 - true; Case 2 - true; Case 3 - true; Case 4 - false.
 
 :::image type="content" alt-text="Screenshot of the result for a single run per case." source="media/image-17.png":::
 
@@ -151,7 +151,7 @@ We're evaluating how often user has changed when case was progressing though eve
 
 ### Result for example 3
 
-A->B = 1;B->C = 0;A->C = 1;C->C = 2**
+A->B = 1; B->C = 0; A->C = 1; C->C = 2
 
 :::image type="content" alt-text="Screenshot of the result per edge." source="media/image-18.png":::
 
@@ -185,9 +185,9 @@ Run across all available events within its case. Get the first and last activity
 
 ### Result for example 4
 
-Case 1 =1h00m;Case 2 = 1h20m;Case 3 = 2h00m;**
+Case 1 = 1 hour 00 minutes; Case 2 = 1 hour 20 minutes; Case 3 = 2 hours 00 minutes
 
-:::image type="content" alt-text="Screenshot of results for case aggregation II." source="media/image-19.png":::
+:::image type="content" alt-text="Screenshot of results for case aggregation II." source="media/image-19a.png":::
 
 **Expression in custom metric editor**
 
@@ -211,12 +211,13 @@ Run across all available events within its case. Get the first and last activity
 
 ### Result for example 4.1
 
-Case 1 = ???;Case 2 = ???;Case 3 = ???**
+Case 1 = ???; Case 2 = ???; Case 3 = ???
+
 Exact values can't be calculated we the calendar properties aren't defined. But it's not important here.
 
 **Expression in custom metric editor**
 
-:::image type="content" alt-text="Screenshot of expression for case aggregation II." source="media/image-21.png":::
+:::image type="content" alt-text="Screenshot of expression for case aggregation II." source="media/image-21a.png":::
 
 To calculate duration over working hours, the `DURATIONCALENDAR()` operators have been used. Operators to find first and last events are used operator arguments creating nested expression. Notice the complexity of expression does not affect or modifies selected calculation scopes.
 
@@ -236,9 +237,9 @@ Run across all available edges within its case. If case contains C->C edge, it p
 
 ### Result for example 5
 
-Case 1 = False;Case 2 = True;Case 3 = True**  ​
+Case 1 = False; Case 2 = True; Case 3 = True  ​
 
-:::image type="content" alt-text="Screenshot of results for quantitative results." source="media/image-22.png":::
+:::image type="content" alt-text="Screenshot of results for quantitative results." source="media/image-22a.png":::
 
 **Expression in custom metric editor**
 
@@ -268,9 +269,9 @@ Run across all edges within its case. Count any edges C->C found. If no such edg
 
 ### Result in example 5.1
 
-Case 1 =0;Case 2 = 1;Case 3 = 2**
+Case 1 = 0; Case 2 = 1; Case 3 = 2
 
-:::image type="content" alt-text="Screenshot of result for quantitative result alternative." source="media/image-22.png":::
+:::image type="content" alt-text="Screenshot of result for quantitative result alternative." source="media/image-22a.png":::
 
 **Expression in custom metric editor**
 
@@ -342,7 +343,7 @@ Both cases for country attribute 'SK' contains 'C->C' edges. Result for 'SK' and
 
 ### Result in example 6.1
 
-DE =0;SK = 3**
+DE = 0; SK = 3
 
 :::image type="content" alt-text="media/06-data-set-result.png" source="media/06-data-set-result.png":::
 
@@ -372,9 +373,9 @@ Do the calculation for activity 'A', for case 1 the ratio is 10/90, for case 2 t
 
 In terms of aggregation, it's nothing new. We generate results per attribute value, but for calculation, we used metric (value) from case.
 
-### Result  for example 7
+### Result for example 7
 
-A =0.21;B = 0.22;C = 0.39**
+A = 0.22; B = 0.22; C = 0.375
 
 :::image type="content" alt-text="media/07-data-set-result.png" source="media/07-data-set-result.png":::
 
@@ -404,9 +405,9 @@ Event is valid for this question, if it's within case, where there's at least on
 
 ### Result in example 8
 
-Michal = 1;Peter = 2;Denis = 3**
+Michal = 1; Peter = 2; Denis = 3
 
-:::image type="content" alt-text="Screenshot of result for event-case-event aggregation." source="media/image-19.png":::
+:::image type="content" alt-text="Screenshot of result for event-case-event aggregation." source="media/image-19b.png":::
 
 **Expression in custom metric editor**
 
@@ -440,7 +441,7 @@ In case 1 there are not repeated activities 'C', in case 2 is one repeated activ
 
 ### Result for example 8.1
 
-Michal = 1;Peter = 0;Denis = 2**
+Michal = 1; Peter = 0; Denis = 2**
 
 :::image type="content" alt-text="Screenshot of result for event-case-event conditional aggregation." source="media/08_1-data-set-result.png":::
 
@@ -458,11 +459,11 @@ Application of custom metric follows the standard requirements for aggregation p
 
 ## 9 Extra: Value specific custom metrics
 
-It's possible to avoid operator *CASE()*? Is there way to simplify the expressions? Yes, it is, but there are tradeoffs. See the following example.
+- *Is it possible to avoid operator* `CASE()`? *Is there way to simplify the expressions?* Yes, it is, but there are tradeoffs. See the following example.
 
-*How many events done by Michal (per user) were in cases with Peter?* The same question like in [8 Event-case-event aggregation](#8-event-case-event-aggregation).
+- *How many events done by Michal (per user) were in cases with Peter?* The same question like in [8 Event-case-event aggregation](#8-event-case-event-aggregation).
 
-It is possible to answer question without using `CASE()` operator?​
+- *Is it possible to answer question without using* `CASE()` *operator?​*
 
 :::image type="content" alt-text="Screenshot of extra value specific custom metrics." source="media/03-data-set-1.png":::
 
@@ -478,7 +479,7 @@ It is possible to skip `CASE()` operator at cost of creating value specific cust
 
 Reasoning behind the latter one:
 
-1. Select cases with ‘Peter' (operator *ANY()*)
+1. Select cases with ‘Peter' (operator `ANY()`)
 
 1. Convert boolean result to numeric zero or one (operator `IF()`)
 

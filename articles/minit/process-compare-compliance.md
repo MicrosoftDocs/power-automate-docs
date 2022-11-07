@@ -25,7 +25,7 @@ Comparison of the processes allows an intuitive and efficient comparison of proc
 
 You can compare the views of various processes or different views generated from a single process (for example, for different periods of time). It's important to remember that you can compare only saved views.
 
-:::image type="content" alt-text="Screenshot of the 'Process compare' screen." source="media/image-18.png":::
+:::image type="content" alt-text="Screenshot of the 'Process compare' screen." source="media/image-18a.png":::
 
 You can use the settings panel and the visualization panel of the process map for the comparison map. You can change the complexity of the map, nodes offset or you can export the comparison map.
 
