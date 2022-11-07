@@ -544,8 +544,12 @@
       "source_path": "articles/desktop-flows/setup.md",
       "redirect_url": "/power-automate/desktop-flows/requirements",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/using-browsers.md",
+      "redirect_url": "/power-automate/desktop-flows/install-browser-extensions",
+      "redirect_document_id": false
     }
-
   ]
 }
 

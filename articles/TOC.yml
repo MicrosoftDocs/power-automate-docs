@@ -331,6 +331,8 @@
       href: ./desktop-flows/install.md
     - name: Install Power Automate silently
       href: ./desktop-flows/install-silently.md
+    - name: Install Power Automate browser extensions
+      href: ./desktop-flows/install-browser-extensions.md
     - name: Governance in Power Automate
       href: ./desktop-flows/governance.md     
     - name: Troubleshooting Power Automate
