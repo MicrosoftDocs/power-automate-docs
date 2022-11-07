@@ -320,13 +320,15 @@
   - name: Getting started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Setup Power Automate
+  - name: Premium RPA features
+    href: ./desktop-flows/premium-features.md
     items:
     - name: System requirements and limitations 
       href: ./desktop-flows/requirements.md
     - name: Install Power Automate
       href: ./desktop-flows/install.md
-    - name: Premium RPA features
-      href: ./desktop-flows/premium-features.md
+    - name: Install Power Automate silently
+      href: ./desktop-flows/install-silently.md
     - name: Governance in Power Automate
       href: ./desktop-flows/governance.md     
     - name: Troubleshooting Power Automate
