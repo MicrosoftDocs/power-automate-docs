@@ -22,6 +22,8 @@ search.audienceType:
 
 # Introduction to desktop flows
 
+
+
 Desktop flows broaden the existing robotic process automation (RPA) capabilities in Power Automate and enable you to automate all repetitive desktop processes. It’s quicker and easier than ever to automate with the new intuitive Power Automate desktop flow designer using the prebuilt drag-and-drop actions or recording your own [desktop flows](create-flow.md) to run later. 
 
 Leverage automation capabilities in Power Automate. Create flows, interact with everyday tools such as email and excel or work with modern and legacy applications. Examples of simple and complex tasks you can automate are: 
