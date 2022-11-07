@@ -67,6 +67,20 @@ You can download and install Power Automate through an MSI installer or Microsof
 
 1. After Microsoft Store is open, select **Get** to download and install Power Automate.
 
+## Install an on-premises data gateway
+
+> [!IMPORTANT]
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. To learn more, go to [Switch from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+
+Power Automate enables you to [trigger your desktop flows from cloud flows](link-pad-flow-portal.md). To take advantage of this feature, you need to install an on-premises data gateway on your device.
+
+On-premises data gateways establish the required cloud connectivity and must be installed on each device to which you'll trigger desktop flows. They aren't required if you only want to create, edit, and test your desktop flows on the devices.
+
+To find more information regarding on-premises data gateways, go to [Install an on-premises data gateway](/data-integration/gateway/service-gateway-instal).
+
+>[!IMPORTANT]
+>When you install a on-premises data gateway, it defaults to the region that Power Automate uses.
+
 ## Install Selenium IDE (optional)
 
 Selenium IDE is an open source tool that enables you to record and playback human interactions on websites.
