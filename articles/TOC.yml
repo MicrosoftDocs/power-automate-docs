@@ -335,8 +335,6 @@
       href: ./desktop-flows/install-browser-extensions.md
     - name: Governance
       href: ./desktop-flows/governance.md     
-    - name: Troubleshooting Power Automate
-      href: ./desktop-flows/troubleshoot.md
     - name: Data collection
       href: ./desktop-flows/diagnostic-data.md      
   - name: Create a Dataverse database
@@ -615,6 +613,8 @@
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
     - name: SharePoint (preview)
       href: ./desktop-flows/actions-reference/sharepoint.md
+    - name: Troubleshoot desktop flows
+      href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
   - name: Use RPA with Dynamics 365
