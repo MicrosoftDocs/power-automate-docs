@@ -23,7 +23,7 @@ To automate web-related tasks, Power Automate provides the built-in Automation b
 
 When Power Automate installation is complete, the installer will prompt you to install the appropriate extension for your browser. The links inside the installer send you to the store of each extension.
 
-![Screenshot of the installation success dialog.](media/desktop-flows-setup/screen.png "Screenshot of the installation success dialog.")
+:::image type="content" source="media/desktop-flows-setup/screen.png" alt-text="Screenshot of the installation success dialog.":::
 
 If you skip the installation of the browser extensions, you can do it manually later using the following links or through the **Tools** > **Browser extensions** options in the flow designer.
 

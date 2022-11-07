@@ -40,7 +40,7 @@ If you have Power Automate installed in another drive, replace **C** with the le
 
 After deleting the **msalcache.bin3** file, restart the Power Automate service and sign in to your account.
 
-![Screenshot of the msalcache.bin3 file in the file explorer.](media/troubleshoot/msal-file.png)
+:::image type="content" source="media/troubleshoot/msal-file.png" alt-text="Screenshot of the msalcache.bin3 file in the file explorer.":::
 
 ### Sign in using Web Account Manager (WAM)
 
@@ -76,7 +76,7 @@ To identify whether another process is indeed the issue:
 
   Running this command should display a list of processes that use named pipes and the address they listen to.
 
-  ![Screenshot of the results of the handle net.pipe command.](media/troubleshoot/command-prompt.png)
+  :::image type="content" source="media/troubleshoot/command-prompt.png" alt-text="Screenshot of the results of the handle net.pipe command.":::
 
 - Identify whether a process displaying the string **EbmV0LnBpcGU6Ly8rLw==** exists.
 
@@ -97,13 +97,13 @@ Most environments don't require to change the default configuration. If your com
 1. Provide the new account, for example: DOMAIN\AlexJohnson  
 1. Provide the password of this account and select **Configure**
 
-![Screenshot of the Power Automate troubleshoot dialog.](media/troubleshoot/power-automate-troubleshoot-dialog.png)
+:::image type="content" source="media/troubleshoot/power-automate-troubleshoot-dialog.png" alt-text="Screenshot of the Power Automate troubleshoot dialog.":::
 
 ## Collect Machine logs
 
 There are several logs you can collect for the machine’s configuration and service logs. To do so, select **Exports logs** link in the Troubleshoot tool.
 
-![Screenshot of the Machine logs.](media/troubleshoot/power-automate-machine-logs.png)
+:::image type="content" source="media/troubleshoot/power-automate-machine-logs.png" alt-text="Screenshot of the Machine logs.":::
 
 This file is saved to the desktop as a zip file.
 

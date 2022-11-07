@@ -46,59 +46,59 @@ Browser automation actions can run even when the web browser is minimized, or th
 
 To begin a browser automation flow, use one of the browser-launching actions: **Launch new Microsoft Edge**, **Launch new Internet Explorer**, **Launch new Chrome**, or **Launch new Firefox**. You can start a new browser session or attach to an existing one.
 
-![Screenshot of the Launch new Microsoft Edge action.](.\media\web-automation\launch-new-microsoft-edge-action.png)
+:::image type="content" source="media\web-automation\launch-new-microsoft-edge-action.png" alt-text="Screenshot of the Launch new Microsoft Edge action.":::
 
 After the browser instance is stored in a variable, you can deploy other browser automation actions to interact with the browser's content. The web form filling actions focus on providing input to web pages, while the web data extraction actions draw data from web pages.
 
 Most browser automation actions require you to specify a browser instance and a UI element to interact with. You can find a list with all the available browser automation actions in the [Browser automation actions reference](actions-reference/webautomation.md).
 
-![Screenshot of the inputs of the Populate text field on web page action.](.\media\web-automation\web-action-inputs.png)
+:::image type="content" source=".\media\web-automation\web-action-inputs.png" alt-text="Screenshot of the inputs of the Populate text field on web page action.":::
 
 Existing UI elements are displayed in the UI element pane, while new ones can be added directly through the action's properties or the pane. To find more information about UI elements and their different types, refer to [Automate using UI elements](ui-elements.md).
 
 > [!NOTE]
 > Browser automation actions accept exclusively UI elements captured from web pages. Therefore, existing UI elements captured from desktop applications aren't displayed in the browser automation actions.
 
-![Screenshot of the available UI elements in the Populate text field on web page action.](.\media\web-automation\adding-new-elements-through-a-web-action.png)
+:::image type="content" source="media\web-automation\adding-new-elements-through-a-web-action.png" alt-text="Screenshot of the available UI elements in the Populate text field on web page action.":::
 
 To add a new UI element, highlight the appropriate web element and press **Ctrl + Left click**. After adding all the required elements, select **Done** to save them to the UI elements pane.
 
-![Screenshot of the highlighted UI elements to capture.](.\media\web-automation\capturing-new-elements.png)
+:::image type="content" source="media\web-automation\capturing-new-elements.png" alt-text="Screenshot of the highlighted UI elements to capture.":::
 
 ## Data population on the web
 
 To provide input to a web page, select the appropriate web form filling action depending on the nature of the element, and specify the browser instance.
 
-![Screenshot of the Set drop-down list value on web page action.](.\media\web-automation\set-drop-down-list-value-on-web-page-action.png)
+:::image type="content" source="media\web-automation\set-drop-down-list-value-on-web-page-action.png" alt-text="Screenshot of the Set drop-down list value on web page action.":::
 
 ## Web data extraction
 
 To extract a piece of data from a web page, use the **Get details of web page** or the **Get details of element on web page** action, depending on whether the data in question concerns the entire web page or an element inside it. You can find more information regarding details extraction from web pages in [Retrieve details from a web page](how-to/retrieve-details-web-page.md).
 
-![Screenshot of the Get details of web page action.](.\media\web-automation\get-details-of-web-page-action.png)
+:::image type="content" source="media\web-automation\get-details-of-web-page-action.png" alt-text="Screenshot of the Get details of web page action.":::
 
 Apart from the pre-populated options, you can manually select to retrieve any HTML attribute the selected web element may have.
 
 Additionally, the **Get details of element on web page** action supports the **waelementrectangle** attribute that retrieves the top-left point and the dimensions of a web element. You can find more information regarding this attribute in [Get the coordinates and size of a web element](how-to/get-coordinates-size-web-element.md).
 
-![Screenshot of the Get details of element on web page action.](.\media\web-automation\get-details-of-element-on-web-page-action.png)
+:::image type="content" source="media\web-automation\get-details-of-element-on-web-page-action.png" alt-text="Screenshot of the Get details of element on web page action.":::
 
 ### Web extraction of structured data
 
 To extract large amounts of structured data, use the **Extract data from web page** action. You can store the extracted data as single values, lists, and tables or you can paste them into Excel worksheets.
 
-![Screenshot of the Extract data from web page action.](.\media\web-automation\extract-data-from-web-page-action.png)
+:::image type="content" source="media\web-automation\extract-data-from-web-page-action.png" alt-text="Screenshot of the Extract data from web page action.":::
 
 When you deploy the action, right-click on the data you want from the web page to view the available extraction options. To extract a value, select **Extract element value**, and then choose the HTML attribute that you want to extract.
 
-![Screenshot of a web page while extracting data from it.](.\media\web-automation\extracting-data-from-web-page.png)
+:::image type="content" source="media\web-automation\extracting-data-from-web-page.png" alt-text="Screenshot of a web page while extracting data from it.":::
 
 Power Automate automatically identifies lists or tables of data after you select two or more of their elements for extraction.
 
 >[!NOTE]
 > To extract an entire HTML table faster, you can right-click on the table, and then select **Extract entire HTML table**. This option is available only to elements that Power Automate recognizes as HTML tables. If the data is structured as a table but it isn't recognized as an HTML table, extract the first two of their elements, as previously described.
 
-![Screenshot of a web page while extracting a data table from it.](.\media\web-automation\extracting-data-table-from-web-page.png)
+:::image type="content" source="media\web-automation\extracting-data-table-from-web-page.png" alt-text="Screenshot of a web page while extracting a data table from it.":::
 
 Additionally, you can manually create or edit CSS selectors that pinpoint specific elements.
 
@@ -106,7 +106,7 @@ To create a CSS selector, select **Advanced settings** in the live web helper, a
 
 Each CSS selector consists of the tree structure of the HTML element, the attribute to extract from it, and optionally a regular expression to implement more advanced selection.
 
-![Screenshot of a CSS selector.](.\media\web-automation\extracting-web-data-css-selector.png)
+:::image type="content" source="media\web-automation\extracting-web-data-css-selector.png" alt-text="Screenshot of a CSS selector.":::
 
 ## Interacting with the web and web services
 
@@ -118,7 +118,7 @@ Use the **Download from web** action to directly download web page content or fi
 
 Both the **GET** and **POST** methods can be used with this action. The files can be downloaded directly to the disk, while web page contents are saved into a variable.
 
-![Screenshot of the Download from web action.](./media/interacting-web-services/download-from-web-action.png)
+:::image type="content" source="media/interacting-web-services/download-from-web-action.png" alt-text="Screenshot of the Download from web action.":::
 
 ### Accessing web APIs
 
@@ -127,7 +127,7 @@ Use the **Invoke web service** action to access web APIs. Various methods are co
 > [!NOTE]
 > Before using the **Invoke web service** action, refer to the documentation page of the web service you want to use. The example presented in the following screenshot can't be applied to all scenarios, as each web service requires a different configuration and syntax.
 
-![Screenshot of the Invoke web service action.](./media/interacting-web-services/invoke-web-service-action.png)
+:::image type="content" source="media/interacting-web-services/invoke-web-service-action.png" alt-text="Screenshot of the Invoke web service action.":::
 
 Apart from the **Invoke web service** action, Power Automate provides the **Invoke SOAP web service** action to interact with SOAP web services.
 
