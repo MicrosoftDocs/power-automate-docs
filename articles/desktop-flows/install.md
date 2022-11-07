@@ -17,7 +17,7 @@ search.audienceType:
 
 # Install Power Automate
 
-Before installing Power Automate, make sure that your device meets the [system requirements]().
+Before installing Power Automate, make sure that your device meets the [system requirements](requirements.md).
 
 You can download and install Power Automate through an MSI installer or Microsoft Store. Both options provide the same functionality and features, but the Microsoft Store installation doesn't require users to have admin rights to install.
 
@@ -44,11 +44,11 @@ You can download and install Power Automate through an MSI installer or Microsof
 
     - **Power Automate machine runtime app** allows you to connect your machine to the Power Automate cloud and harness the full power of your robotic process automation (RPA). To learn more about machine management, go to [Manage machines](./manage-machines.md).
 
-    Additionally, there's an option to add the WebDriver and ChromeDriver components to run desktop flows created with Selenium IDE. To learn more about how to install Selenium IDE, go to [Selenium IDE]().
+    Additionally, you can select to add the WebDriver and ChromeDriver components to run desktop flows created with Selenium IDE. To learn more about how to install Selenium IDE, go to [Selenium IDE](#install-selenium-ide-optional).
 
     <!-- - Install the required files for UI automation in Java applets. -->
 
-    During installation, you can also change the default options if you don't want to send usage data to Microsoft. To do so, uncheck **Optional data collection**. To find more information about data collection, go to [Data Collection in Power Automate]().
+    During installation, you can also change the default options if you don't want to send usage data to Microsoft. To do so, uncheck **Optional data collection**. To find more information about data collection, go to [Data collection in Power Automate](diagnostic-data.md).
 
     >[!IMPORTANT]
     >Sharing usage data with Microsoft may help the support department solve Power Automate issues.

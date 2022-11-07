@@ -321,8 +321,8 @@
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Setup Power Automate
     items:
-    - name: Power Automate prerequisites & limitations 
-      href: ./desktop-flows/setup.md
+    - name: System requirements and limitations 
+      href: ./desktop-flows/requirements.md
     - name: Install Power Automate
       href: ./desktop-flows/install.md
     - name: Premium RPA features
@@ -331,7 +331,7 @@
       href: ./desktop-flows/governance.md     
     - name: Troubleshooting Power Automate
       href: ./desktop-flows/troubleshoot.md
-    - name: Data Collection in Power Automate
+    - name: Data collection in Power Automate
       href: ./desktop-flows/diagnostic-data.md      
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
