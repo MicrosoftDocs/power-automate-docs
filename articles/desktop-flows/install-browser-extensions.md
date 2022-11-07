@@ -19,6 +19,8 @@ search.audienceType:
 
 To automate web-related tasks, Power Automate provides the built-in Automation browser that is preconfigured and works out of the box. Besides the Automation browser, it also supports the four most popular browsers: Microsoft Edge, Internet Explorer, Google Chrome, and Mozilla Firefox. These browsers need extra configuration or/and browser extensions to work.
 
+## Install browser extensions
+
 When Power Automate installation is complete, the installer will prompt you to install the appropriate extension for your browser. The links inside the installer send you to the store of each extension.
 
 ![Screenshot of the installation success dialog.](media/desktop-flows-setup/screen.png "Screenshot of the installation success dialog.")
@@ -31,21 +33,21 @@ If you skip the installation of the browser extensions, you can do it manually l
 
 ## Configure Microsoft Edge
 
-To ensure that **Microsoft Edge** works as expected with Power Automate, disable running background apps when Microsoft Edge is closed. To disable this option:
+To ensure that **Microsoft Edge** works as expected with Power Automate, disable running background apps when Microsoft Edge is closed. 
 
-1. Go to **Settings** > **System** and disable **Continue running background apps when Microsoft Edge is closed**.
+To disable this option, go to **Settings** > **System** and disable **Continue running background apps when Microsoft Edge is closed**.
 
 ## Configure Google Chrome
 
-To ensure that **Google Chrome** works as expected with Power Automate, disable running background apps when Chrome is closed. To disable this option:
+To ensure that **Google Chrome** works as expected with Power Automate, disable running background apps when Chrome is closed.
 
-1. Go to **Settings** > **Advanced** > **System** and disable **Continue running background apps when Google Chrome is closed**.
+To disable this option, go to **Settings** > **Advanced** > **System** and disable **Continue running background apps when Google Chrome is closed**.
 
 ## Configure Mozilla Firefox
 
 Firefox alerts that freeze the browser and prevent users from switching to other tabs or windows may affect your desktop flows. To disable this feature:
 
-1. Populate the URL bar with the phrase **about:config**.
+1. Populate the URL bar with the phrase **about:config**
 
 1. Search for the **prompts.tab_modal.enabled** preference in the list and change it to **false**.
 

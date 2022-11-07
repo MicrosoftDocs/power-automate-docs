@@ -418,8 +418,6 @@
       href: ./desktop-flows/automation-web.md
     - name: Create custom forms
       href: ./desktop-flows/custom-forms.md     
-    - name: Use browsers and manage extensions
-      href: ./desktop-flows/using-browsers.md
     - name: Automate desktop flows
       href: ./desktop-flows/desktop-automation.md
     - name: Automate on virtual desktops
