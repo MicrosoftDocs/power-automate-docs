@@ -34,7 +34,7 @@ search.audienceType:
   - Storage: 1 GB
   - RAM: 2 GB
 
-  Recommended hardware
+  Recommended hardware:
   - Processor: 1.60 GHz or faster with two or more cores. For unattended mode, four or more cores are needed.
   - Storage: 2 GB
   - RAM: 4 GB
