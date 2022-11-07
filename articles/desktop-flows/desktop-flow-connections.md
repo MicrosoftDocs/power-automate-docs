@@ -1,5 +1,5 @@
 ---
-title: Create desktop flows connections
+title: Create desktop flow connections
 description: See how to create connections to trigger desktop flows from cloud flows.
 author: georgiostrantzas
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create desktop flows connections
+# Create desktop flow connections
 
 > [!IMPORTANT]
 > Before using a machine to run desktop flows from the cloud, ensure that the machine is secured and the machine's admins are trusted.
