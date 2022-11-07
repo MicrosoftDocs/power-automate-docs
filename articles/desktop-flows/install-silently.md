@@ -26,7 +26,7 @@ To install Power Automate silently:
 
 1. Open the **Start** menu, search for **Command Prompt**, and then run it as the administrator.
 
-   ![Screenshot that displays the command prompt on the start menu.](media/desktop-flows-setup/command-prompt.png "Screenshot that displays the command prompt on the start menu.")
+    :::image type="content" source="media/desktop-flows-setup/command-prompt.png" alt-text="Screenshot of the command prompt on the start menu.":::
 
 1. Use commands to navigate to the directory in which you've downloaded the Power Automate installer. This directory is usually the **Downloads** folder.
 
