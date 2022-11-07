@@ -31,7 +31,7 @@ To open the Power Automate troubleshoot tool:
 
 Power Automate uses a file named **msalcache.bin3** to acquire tokens and authenticate users.
 
-If you encounter errors while signing in or signing out, try to delete this file to erase all the stored tokens. To delete the file, navigate to **C:\Users\Username\AppData\Local\Microsoft\Power Automate Desktop\Cache**.
+If you encounter errors while signing in or signing out, try to erase all the stored tokens by deleting this file. To delete the file, navigate to **C:\Users\Username\AppData\Local\Microsoft\Power Automate Desktop\Cache**.
 
 > [!NOTE]
 > If the **AppData** folder isn't visible in your user folder, try to [display hidden files](https://support.microsoft.com/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2).
@@ -88,7 +88,7 @@ If none of the above is possible, specify Power Automate executables to run as a
 
 ## Change the on-premises Service account
 
-The UIFlowService uses the virtual account **NT SERVICE\UIFlowService**. This account needs the ability to "Log on as a service" in order to successfully start up.
+The UIFlowService uses the virtual account **NT SERVICE\UIFlowService**. This account needs the ability to "Log on as a service" in order to successfully start.
 
 Most environments don't require to change the default configuration. If your company has some restrictions in place, you can either ask your domain administrator to grant **NT SERVICE\UIFlowService** the right to **Log on as a service** or change the account here with an allowed one.
 
