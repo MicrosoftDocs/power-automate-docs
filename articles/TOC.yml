@@ -355,14 +355,14 @@
     items:
     - name: Manage machines
       href: ./desktop-flows/manage-machines.md
+    - name: Silent registration for machines
+      href: ./desktop-flows/machines-silent-registration.md
     - name: Manage machine groups
       href: ./desktop-flows/manage-machine-groups.md
     - name: Create desktop flows connections
       href: ./desktop-flows/desktop-flow-connections.md
     - name: Hosted RPA bots (preview)
       href: ./desktop-flows/hosted-rpa-bots.md
-    - name: Silent registration for machines
-      href: ./desktop-flows/machines-silent-registration.md
     - name: Scale with AVD starter kit
       items:
       - name: Overview
