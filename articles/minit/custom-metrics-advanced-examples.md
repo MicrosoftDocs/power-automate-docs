@@ -82,7 +82,7 @@ The event metric filter is the obvious option, as it allows you to filter events
 
 ### 1.1 Event level non-aggregation (alternative)
 
-**Alternative: How do I filter out via CM events with negative duration?* Instead of using attributes 'end' and 'start' write the expression using generic metrics.
+*Alternative: How do I filter out via CM events with negative duration?* Instead of using attributes 'end' and 'start' write the expression using generic metrics.
 
 It's a best practice to use generic metrics instead of process attributes.​
 
@@ -93,7 +93,6 @@ It's a best practice to use generic metrics instead of process attributes.​
 - One formula fits more applications (case overview, RCA)​
 
 - Aggregated form works with case/event/edge​
-
 
 :::image type="content" alt-text="Screenshot of event level non-aggregation." source="media/image-15.png":::
 
