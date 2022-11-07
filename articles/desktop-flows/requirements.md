@@ -137,10 +137,4 @@ During desktop flow development, some actions may need to access resources with 
 
 - The number of actions that can be logged in a single desktop flow run is limited to 10,000. Extra actions will be performed but won't be logged.
 
-## Learn more
-
-- Learn to [create Power Automate desktop flows](create-flow.md).
-- Learn how to run [desktop flows](run-desktop-flow.md).
-- Learn to [manage desktop flows](manage.md).
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

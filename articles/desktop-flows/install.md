@@ -53,7 +53,7 @@ You can download and install Power Automate through an MSI installer or Microsof
     >[!IMPORTANT]
     >Sharing usage data with Microsoft may help the support department solve Power Automate issues.
 
-    ![Screenshot of the installation details.](media/desktop-flows-setup/installer-checkboxes.png "Screenshot of the installation details.")
+    :::image type="content" source="media/desktop-flows-setup/installer-checkboxes.png" alt-text="Screenshot of the installation details.":::
 
 ## Install Power Automate through Microsoft Store
 
@@ -88,11 +88,5 @@ To install Selenium IDE:
 1. Search for **Power Automate**, and then select it.
 
 1. Select **Uninstall**.
-
-## Learn more
-
-- Learn to [create Power Automate desktop flows](create-flow.md).
-- Learn how to run [desktop flows](run-desktop-flow.md).
-- Learn to [manage desktop flows](manage.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
