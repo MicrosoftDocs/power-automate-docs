@@ -333,12 +333,12 @@
       href: ./desktop-flows/install-silently.md
     - name: Install Power Automate browser extensions
       href: ./desktop-flows/install-browser-extensions.md
+    - name: Create a Dataverse database
+      href: ./desktop-flows/create-database.md
     - name: Governance
       href: ./desktop-flows/governance.md     
     - name: Data collection
       href: ./desktop-flows/diagnostic-data.md      
-  - name: Create a Dataverse database
-    href: ./desktop-flows/create-database.md
   - name: Getting started with a Microsoft account
     href: ./desktop-flows/getting-started-msa.md
   - name: Getting started with a work or school account
