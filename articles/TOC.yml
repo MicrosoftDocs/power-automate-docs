@@ -366,7 +366,7 @@
     - name: Scale with AVD starter kit
       items:
       - name: Overview
-        href: ./desktop-flows/avd-overview.md hosted-rpa-bots.md
+        href: ./desktop-flows/avd-overview.md
       - name: Set up the AVD integration starter kit
         href: ./desktop-flows/avd-setup.md
       - name: Use the starter kit
