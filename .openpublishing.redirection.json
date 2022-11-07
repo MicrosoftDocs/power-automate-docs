@@ -539,6 +539,11 @@
       "source_path": "articles/desktop-flows/run-pad-flow.md#use-a-console-run-url-in-the-command-prompt",
       "redirect_url": "/power-automate/desktop-flows/run-pad-flow#use-a-run-url-in-the-command-prompt",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/setup.md",
+      "redirect_url": "/power-automate/desktop-flows/requirements",
+      "redirect_document_id": false
     }
 
   ]
