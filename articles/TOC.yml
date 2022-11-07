@@ -319,6 +319,8 @@
     href: ./desktop-flows/introduction.md
   - name: Getting started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
+  - name: Power Automate architecture
+    href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
     href: ./desktop-flows/premium-features.md
   - name: Setup Power Automate
@@ -335,8 +337,6 @@
       href: ./desktop-flows/troubleshoot.md
     - name: Data collection in Power Automate
       href: ./desktop-flows/diagnostic-data.md      
-  - name: Power Automate architecture
-    href: ./desktop-flows/pad-architecture.md
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md
   - name: Getting started with a Microsoft account
