@@ -164,25 +164,19 @@ Move one or more files into a destination folder.
 |File not found|Indicates that the file doesn't exist|
 |Can't move file|Indicates a problem moving the file|
 
+#### <a name="delete"></a> Delete file(s)
 
+Delete one or more files.
 
-
-
-
-
-### <a name="delete"></a> Delete file(s)
-
-Delete one or more files
-
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File(s) to delete|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to delete. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' to populate a variable with a list of files|
 
-##### Variables Produced
+##### Variables produced
 
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
 ##### <a name="delete_onerror"></a> Exceptions
 
@@ -192,15 +186,15 @@ Delete one or more files
 |File not found|Indicates that the file doesn't exist|
 |Can't delete file|Indicates a problem deleting the file|
 
-### <a name="renamefiles"></a> Rename file(s)
+#### <a name="renamefiles"></a> Rename file(s)
 
-Change the name of one or more files
+Change the name of one or more files.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File to rename|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to rename. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files|
+|File to rename|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The file(s) to rename. This can be a file path, or a variable containing a file, a list of files, a text path, or a list of text paths. Use the 'Get files in folder' action to populate a variable with a list of files.|
 |Add number to|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to add the number to the existing file name(s) or a new name|
 |Rename scheme|N/A|Set new name, Add text, Remove text, Replace text, Change extension, Add datetime, Make sequential|Set new name|Specifies how to rename the file(s)|
 |New file name|No|[Text value](../variable-data-types.md#text-value)||The new name of the file(s)|
@@ -208,11 +202,11 @@ Change the name of one or more files
 |New file name|No|[Text value](../variable-data-types.md#text-value)||The new name of the file(s)|
 |Add number to|N/A|After name, Before name|After name|Specifies whether to add the number before or after the original name(s) or a new base name|
 |Text to add|Yes|[Text value](../variable-data-types.md#text-value)||The text to add to the original file name(s)|
-|Text to remove|Yes|[Text value](../variable-data-types.md#text-value)||The text to remove from the original file name(s). This rename scheme searches each file name, and removes the entered text anywhere in the name, each time it occurs|
+|Text to remove|Yes|[Text value](../variable-data-types.md#text-value)||The text to remove from the original file name(s). This rename scheme searches each file name, and removes the entered text anywhere in the name, each time it occurs.|
 |Text to replace|No|[Text value](../variable-data-types.md#text-value)||The text to replace in the original file name(s). This rename scheme searches each file name, and replaces the entered text anywhere in the name, each time it occurs|
 |Use custom datetime|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a custom datetime|
 |Datetime to add|N/A|Current datetime, Creation time, Last accessed, Last modified|Current datetime|Specifies what datetime value to add to the file name(s)|
-|Keep extension|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to include the previous extension with the file name(s). Disable this option to add the extension to the file(s) manually|
+|Keep extension|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to include the previous extension with the file name(s). Disable this option to add the extension to the file(s) manually.|
 |Replace with|Yes|[Text value](../variable-data-types.md#text-value)||The text to replace the original text with|
 |Start numbering at|No|[Numeric value](../variable-data-types.md#numeric-value)||The starting number value|
 |Add text|N/A|After name, Before name|After name|Specifies whether to add the text before or after the original name(s)|
@@ -226,7 +220,7 @@ Change the name of one or more files
 |Make each number at least|Yes|[Numeric value](../variable-data-types.md#numeric-value)|3|The minimum length for each number added|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the folder|
 
-##### Variables Produced
+##### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
@@ -240,19 +234,19 @@ Change the name of one or more files
 |File not found|Indicates that the file doesn't exist|
 |Can't rename file|Indicates a problem renaming the file|
 
-### <a name="readtextfromfile"></a> Read text from file
+#### <a name="readtextfromfile"></a> Read text from file
 
-Read the contents of a text file
+Read the contents of a text file.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file to read|
-|Store content as|N/A|Single text value, List (each is a list item)|Single text value|Specifies how to store the text. Choose 'Single text value' to store the entire text as a single text value. Choose 'List' to store each line of the original text as a text item in a list|
+|Store content as|N/A|Single text value, List (each is a list item)|Single text value|Specifies how to store the text. Choose 'Single text value' to store the entire text as a single text value. Choose 'List' to store each line of the original text as a text item in a list.|
 |Encoding|N/A|System default, ASCII, Unicode, Unicode (big-endian), UTF-8|UTF-8|The encoding to read the specified text from the text file with.|
 
-##### Variables Produced
+##### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
@@ -267,23 +261,23 @@ Read the contents of a text file
 |File not found|Indicates that the file doesn't exist|
 |Failed to read from file|Indicates a problem reading from the file|
 
-### <a name="writetext"></a> Write text to file
+#### <a name="writetext"></a> Write text to file
 
-Write or appends text to a file
+Write or appends text to a file.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write the text. This can be a file path, or a variable containing a file or a textual path|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write the text. This can be a file path, or a variable containing a file or a textual path.|
 |Text to write|Yes|[General value](../variable-data-types.md#general-value)||The text to write in the specified file|
 |Append new line|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to append a new line at the end of the overall text to write to the file|
-|If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies whether to overwrite the existing content, or to append to the end of the existing content. If the file doesn't exist, this action automatically creates it|
+|If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies whether to overwrite the existing content, or to append to the end of the existing content. If the file doesn't exist, this action automatically creates it.|
 |Encoding|N/A|System default, ASCII, Unicode, Unicode (big-endian), UTF-8, Unicode (without byte order mask), UTF-8 (without byte order mask)|Unicode|The encoding to use for the specified text to write into the text file|
 
-##### Variables Produced
+##### Variables produced
 
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
 ##### <a name="writetext_onerror"></a> Exceptions
 
@@ -292,24 +286,24 @@ Write or appends text to a file
 |Failed to write text to file|Indicates a problem writing to the file|
 |Invalid directory for file|Indicates that the directory is invalid|
 
-### <a name="readfromcsvfile"></a> Read from CSV file
+#### <a name="readfromcsvfile"></a> Read from CSV file
 
-Read a CSV file into a data table
+Read a CSV file into a data table.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The CSV file to read. This can be a file path, or a variable containing a file or a textual path|
-|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte order mark), System default, ASCII|UTF-8|The encoding be used for reading the specified CSV file|
+|Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte order mark), System default, ASCII|UTF-8|The encoding to be used for reading the specified CSV file|
 |Trim fields|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to automatically trim off the leading and trailing whitespaces of the extracted cells|
-|First line contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use the first row of the CSV resource to set the column names of the resulting data table variant. Enable this option to avoid reading the names as data into the table. Subsequent actions may access the data held by the data table using column names (instead of column numbers)|
+|First line contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use the first row of the CSV resource to set the column names of the resulting data table variant. Enable this option to avoid reading the names as data into the table. Subsequent actions may access the data held by the data table using column names (instead of column numbers).|
 |Columns separator|N/A|Predefined, Custom, Fixed column widths|Predefined|Specifies whether to use a predefined columns separator, a custom one or fixed column widths|
 |Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column-separator to parse the CSV file|
 |Custom separator|No|[Text value](../variable-data-types.md#text-value)||The custom column-separator to use for parsing the CSV resource specified|
-|Fixed column widths|No|[Text value](../variable-data-types.md#text-value)||The fixed column-widths to use for parsing the CSV resource specified. Separate the widths using commas, spaces, tabs or newlines|
+|Fixed column widths|No|[Text value](../variable-data-types.md#text-value)||The fixed column-widths to use for parsing the CSV resource specified. Separate the widths using commas, spaces, tabs or newlines.|
 
-##### Variables Produced
+##### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
@@ -321,26 +315,26 @@ Read a CSV file into a data table
 |-----|-----|
 |Read from CSV failed|Indicates a problem reading from the CSV file|
 
-### <a name="writetocsvfile"></a> Write to CSV file
+#### <a name="writetocsvfile"></a> Write to CSV file
 
-Write a data table, data row or list to a CSV file
+Write a data table, data row or list to a CSV file.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Variable to write|No|[General value](../variable-data-types.md#general-value)||The data table, data row variable or list variable to write into the target CSV file|
-|File path|No|[File](../variable-data-types.md#files-and-folders)||The CSV file to export the variable to. This can be a file path, or a variable containing a file or a textual path|
+|File path|No|[File](../variable-data-types.md#files-and-folders)||The CSV file to export the variable to. This can be a file path, or a variable containing a file or a textual path.|
 |Encoding|N/A|UTF-8, Unicode, Unicode (big-endian), UTF-8 (No byte order mark), Unicode (no byte order mark), System default, ASCII|UTF-8|The encoding to use for writing to the specified CSV file |
-|Include column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether the column names of the variant specified should become the very first row of the CSV file. This option takes effect if and only if the target CSV file either doesn't initially exist or exists but is otherwise empty of text|
+|Include column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether the column names of the variant specified should become the very first row of the CSV file. This option takes effect if and only if the target CSV file either doesn't initially exist or exists but is otherwise empty of text.|
 |If file exists|N/A|Overwrite existing content, Append content|Overwrite existing content|Specifies the desired behavior when the targeted CSV file already exists in the filesystem|
 |Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column separator to use in the specified CSV file|
 |Custom columns separator|No|[Text value](../variable-data-types.md#text-value)||The custom column separator to use in the CSV file|
 |Use custom columns separator|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a custom columns separator or a predefined one|
 
-##### Variables Produced
+##### Variables produced
 
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
 ##### <a name="writetocsvfile_onerror"></a> Exceptions
 
@@ -348,17 +342,17 @@ Write a data table, data row or list to a CSV file
 |-----|-----|
 |Write failed|Indicates a problem writing to the CSV file|
 
-### <a name="getpathpart"></a> Get file path part
+#### <a name="getpathpart"></a> Get file path part
 
-Retrieve one or more parts (directory, filename, extension etc.) from a text that represents a file path
+Retrieve one or more parts (directory, filename, extension, and so on) from a text that represents a file path.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file path to use as the source|
 
-##### Variables Produced
+##### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
@@ -374,15 +368,15 @@ Retrieve one or more parts (directory, filename, extension etc.) from a text tha
 |-----|-----|
 |File path contains invalid characters|Indicates that the file path doesn't exist|
 
-### <a name="gettemppath"></a> Get temporary file
+#### <a name="gettemppath"></a> Get temporary file
 
-Create a uniquely named, empty temporary file on disk, and get the file object (which is a representation, and can access the file and all its information)
+Create a uniquely named, empty temporary file on disk, and get the file object (which is a representation, and can access the file and all its information).
 
-##### Input Parameters
+##### Input parameters
 
-- This action doesn't require any input
+This action doesn't require any input.
 
-##### Variables Produced
+##### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
@@ -394,17 +388,17 @@ Create a uniquely named, empty temporary file on disk, and get the file object (
 |-----|-----|
 |Failed to create temporary file|Indicates a problem creating a temporary file|
 
-### <a name="convertfiletobase64action"></a> Convert file to Base64
+#### <a name="convertfiletobase64action"></a> Convert file to Base64
 
-Convert a file to Base64 encoded text
+Convert a file to Base64 encoded text.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file path to read from|
 
-##### Variables Produced
+##### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
@@ -417,11 +411,11 @@ Convert a file to Base64 encoded text
 |File not found|Indicates that the file doesn't exist|
 |Can't convert file to Base64|Indicates that the provided file can't be converted into Base64 encoded text|
 
-### <a name="convertbase64tofileaction"></a> Convert Base64 to file
+#### <a name="convertbase64tofileaction"></a> Convert Base64 to file
 
-Convert a Base64 encoded text to file
+Convert a Base64 encoded text to file.
 
-##### Input Parameters
+##### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
@@ -429,9 +423,9 @@ Convert a Base64 encoded text to file
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write to|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
-##### Variables Produced
+##### Variables produced
 
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
 ##### <a name="gettemppath_onerror"></a> Exceptions
 
@@ -440,15 +434,15 @@ Convert a Base64 encoded text to file
 |Invalid directory for file|Indicates that the directory is invalid|
 |Can't convert Base64 to file|Indicates that the provided Base64 encoded text can't be converted into a file|
 
-### <a name="convertfiletobinaryaction"></a> Convert file to binary data
-Convert a file to binary data
+#### <a name="convertfiletobinaryaction"></a> Convert file to binary data
+Convert a file to binary data.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file to read from|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |BinaryData|[Text value](../variable-data-types.md#text-value)|The binary data to write|
@@ -459,18 +453,18 @@ Convert a file to binary data
 |File not found|Indicates that the file doesn't exist|
 |Can't convert file to binary data|Indicates that the provided file can't be converted to binary data|
 
-### <a name="convertbinarytofileaction"></a> Convert binary data to file
-Convert binary data to file
+#### <a name="convertbinarytofileaction"></a> Convert binary data to file
+Convert binary data to file.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Binary data|No|[Text value](../variable-data-types.md#text-value)||The binary data|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write to|
 |If file exists|N/A|Do nothing, Overwrite|Do nothing|Specifies what to do if a file with the same name already exists in the destination folder|
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="convertbinarytofileaction_onerror"></a> Exceptions
 |Exception|Description|
