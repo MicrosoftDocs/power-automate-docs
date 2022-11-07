@@ -1,6 +1,6 @@
 ---
-title: Data collection in Power Automate
-description: Data collection in Power Automate
+title: Data collection
+description: See information about data collection in Power Automate
 author: georgiostrantzas
 
 ms.subservice: desktop-flow

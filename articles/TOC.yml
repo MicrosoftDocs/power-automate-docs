@@ -333,11 +333,11 @@
       href: ./desktop-flows/install-silently.md
     - name: Install Power Automate browser extensions
       href: ./desktop-flows/install-browser-extensions.md
-    - name: Governance in Power Automate
+    - name: Governance
       href: ./desktop-flows/governance.md     
     - name: Troubleshooting Power Automate
       href: ./desktop-flows/troubleshoot.md
-    - name: Data collection in Power Automate
+    - name: Data collection
       href: ./desktop-flows/diagnostic-data.md      
   - name: Create a Dataverse database
     href: ./desktop-flows/create-database.md

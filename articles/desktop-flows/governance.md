@@ -1,6 +1,6 @@
 ---
-title: Governance in Power Automate
-description: Governance in Power Automate.
+title: Governance
+description: See how to configure Power Automate using Windows registry keys.
 author: georgiostrantzas
 
 ms.topic: article
