@@ -58,7 +58,7 @@ search.audienceType:
 
    ![Screenshot of the Run a flow built with Power Automate Desktop action.](media/link-pad-flow-portal/action-search.png)
 
-1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flows connections in [Setup desktop flows connections and machine credentials](install.md#setup-desktop-flows-connections-and-machine-credentials).
+1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flows connections in [Create desktop flows connections](desktop-flow-connections.md).
 
    ![Screenshot of the fields of a new desktop flow connection.](media/link-pad-flow-portal/desktop-flow-connection.png)
 
