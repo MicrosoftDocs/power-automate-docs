@@ -22,7 +22,7 @@ search.audienceType:
 
 Before using the **Run desktop flow** action in your cloud flow to trigger a desktop flow, you need to create a connection to your machine. To create a connection:
 
-1. Sign into [Power Automate](https://powerautomate.microsoft.com), select **Connections**,  and then **New connection**.
+1. Sign in to [Power Automate](https://powerautomate.microsoft.com), select **Connections**,  and then **New connection**.
 
     :::image type="content" source="media/desktop-flows-setup/new-connection.png" alt-text="Screenshot of the option to create a new connection.":::
 
@@ -30,7 +30,7 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 
 1. Provide the machine (or on-premises data gateway) information and device credentials:
 
-   - **Connect:** Select if you want to connect to machine, machine group or on-premises data gateway.
+   - **Connect:** Select if you want to connect to a machine, a machine group or an on-premises data gateway.
 
       To connect to a machine or a machine group, select **Directly to machine**, and choose the appropriate machine or machine group in  **Machine or machine group**.
 
@@ -40,7 +40,7 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 
       :::image type="content" source="media/desktop-flows-setup/choose-gateway.png" alt-text="Screenshot of the Choose a gateway field.":::
 
-   - **Domain and Username**: Provide your device account. To use a local account, populate the name of the user (for example, "MACHINENAME\\User" or "local\\User") or an Active Directory account, such as "DOMAIN\\User".
+   - **Domain and Username**: Provide your device account. To use a local account, populate the name of the user (for example, **MACHINENAME\\User** or **local\\User**) or an Active Directory account, such as **DOMAIN\\User**.
 
    - **Password**: Your account’s password.
 
