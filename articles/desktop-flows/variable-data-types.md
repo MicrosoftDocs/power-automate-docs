@@ -339,7 +339,7 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 [XML data type properties](datatype-properties.md#xml-node) 
 
 ### Error
-- **Error** – Contains information about the last occurred error in the desktop flow. The **Get last error** action creates this type of variables.
+- **Error** – Contains information about the last occurred error in the desktop flow. The **Get last error** action creates this type of variable.
 
 [Error properties](datatype-properties.md#error) 
 
