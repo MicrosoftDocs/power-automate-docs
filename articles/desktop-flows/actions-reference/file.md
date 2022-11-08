@@ -344,7 +344,7 @@ This action doesn't produce any variables.
 
 #### <a name="getpathpart"></a> Get file path part
 
-Retrieve one or more parts (directory, filename, extension, and so on) from a text that represents a file path.
+Retrieve one or more parts (directory, filename, extension, etc.) from a text that represents a file path.
 
 ##### Input parameters
 
