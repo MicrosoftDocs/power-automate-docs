@@ -75,7 +75,7 @@ The Creator Kit uses a component library and code components. You must enable co
 > [!WARNING]
 > You will have to uninstall and potentially lose all data if the Power Apps component framework for canvas apps isn't turned on for the environments where the Automation Kit is installed or upgraded. Enable the component framework before installing or upgrading.
 
-![A screenshot that displays the environments](../media/CodeComponentsTurnedOn.png)
+![A screenshot that displays the environments](../media/CodeComponentsTurnedOn.png "A screenshot that displays the environments")
 
 1. Sign in to the Power Platform admin center.
 1. Select an environment where you want to enable this feature. This is needed in both the [main](/power-automate/guidance/automation-kit/setup/main) and all [satellite](/power-automate/guidance/automation-kit/setup/satellite) environments.
