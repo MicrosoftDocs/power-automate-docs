@@ -47,7 +47,7 @@ This article provides answers to some of the most common questions about the Aut
 | CHE        | crm17.dynamics.com       |
 | CHN        | crm.dynamics.cn          |
 
-For more information, review [Datacenter regions](/power-platform/admin/new-datacenter-regions).
+For more information, go to [Datacenter regions](/power-platform/admin/new-datacenter-regions).
 
 **Question** - How can the RPA CLI be used to extend the Automation Kit?
 
