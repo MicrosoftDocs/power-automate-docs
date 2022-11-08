@@ -24,21 +24,21 @@ search.audienceType:
 
 The process hub is Minit's home page. It's where you'll find an overview of your processes and views. It's also where you can dig deeper into your processes by creating different views, or ways of analyzing your processes.
 
-## Open the process hub
-
-Open the Minit desktop app and sign in with your work account. The **Process hub** page opens.
+## Launch  process hub
 
 Although Minit is a desktop application, it's connected to Power Automate through your work account. The process hub lists all the processes you created in process advisor, and displays any views associated with them as tiles.
 
-:::image type="content" alt-text="Screenshot of the process hub in the Minit desktop app." source="media/image-27.png":::
+1. Open the Minit desktop app and sign in with your work account. The **Process hub** page opens.
 
-## Select an environment
+    :::image type="content" alt-text="Screenshot of the process hub in the Minit desktop app." source="media/image-27.png":::
 
-If the process hub doesn't show the processes you expect, you may need to select a different environment.
+    If the process hub doesn't show the processes you expect, you may need to select a different environment.
 
 1. Select **Environments** in the upper-right corner to open the list of environments you have access to.
 
 1. Select an environment, or search for and select an environment.
+
+    :::image type="content" alt-text="Screenshot of the Environments dropdown menu." source="media/environments.png":::
 
 ## Organize the process hub
 

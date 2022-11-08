@@ -40,6 +40,21 @@ The **Attributes** filter selects cases that contain&mdash;or don't contain&mdas
 
        :::image type="content" alt-text="Screenshot of an attribute value specified as an expression." source="media/expression.png":::
 
-       You can include custom metrics in an expression, too. To switch between a constant value and a custom expression, select **Fx**.
+## Create a custom expression
 
-       :::image type="content" alt-text="Screenshot of an attribute value specified as a custom expression." source="media/expressioncm.png":::
+You can include custom metrics in an expression, too.
+
+1. To switch between a constant value and a custom expression, select **Fx**.
+
+    :::image type="content" alt-text="Screenshot of an attribute value specified as a custom expression." source="media/expressioncm.png":::
+
+1. Specify the value or values, or custom expression.
+
+    To learn how to create a custom expression, go to [Custom metrics overview (preview)](custom-metrics.md).
+
+    :::image type="content" alt-text="Screenshot of an attribute value specified as a custom expression." source="media/expressioncm2.png":::
+
+### See also
+
+[Custom metrics overview (preview)](custom-metrics.md)<br/>
+[Tips and examples (preview)](general-information.md)

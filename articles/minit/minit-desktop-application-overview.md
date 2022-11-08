@@ -26,7 +26,7 @@ This article provides an overview of the Minit (pronounced "Mine-it") desktop ap
 
 With Minit, you can easily delve into the details of your processes. Minit offers many ways to break down your process cycles into smaller pieces for analysis. Understand where and why problems occur, identify inefficiencies, and standardize and optimize operations, all while staying informed about progress toward key process indicators (KPI).
 
-:::image type="content" alt-text="Screenshot of the Minit desktop application." source="media/image-24.png":::
+:::image type="content" alt-text="Screenshot of the Minit desktop application." source="media/image-24a.png":::
 
 ## Features
 

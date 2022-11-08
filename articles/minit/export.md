@@ -37,7 +37,7 @@ Here, you can select the type of export. The export of events is one of the expo
 
 Select a format for the data to export. At present, the following formats are supported:
 
-- Export of events- CSV (comma separated records)
+- Export of events&mdash;CSV (comma separated records)
 
 - XES (Extensible Event Stream)
 
@@ -47,9 +47,7 @@ Select a format for the data to export. At present, the following formats are su
 
 - Enter the application name
 
-
-
-- Export of cases- CSV (comma separated records)
+- Export of cases&mdash;CSV (comma separated records)
 
 - Enter the application path
 

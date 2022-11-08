@@ -31,6 +31,8 @@ Case categories are split into two groups:
 
 A case may be placed in only one of the three categories: either it's **Finished**, **Running**, or **Stuck**. The **Incompletely imported** flag can be applied to any case, regardless of its category. For instance, a case may be both **Running** and **Incompletely imported**.
 
+:::image type="content" source="media/case-cat.png" alt-text="Screenshot of the Process context, Case categorization initialization screen.":::
+
 ## Initialize and create categorization rules
 
 Categorize cases in the **Process context** page in the Minit project hub.

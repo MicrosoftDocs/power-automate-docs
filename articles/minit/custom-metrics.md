@@ -27,9 +27,9 @@ You define these metrics in the context of the current process. They can be used
 
 ## Define a custom metric
 
-Definition of the custom metric can be done from the **Process Context** window available from the **Project hub**, using the process context menu. Another option is to use the context menu in the Customize panel directly in the Process Map view - see **Applying to Process Map** section below.
+Definition of the custom metric can be done from the **Process Context** window available from the [Process hub](process-hub.md), using the process context menu. Another option is to use the context menu in the Customize panel directly in the [Process Map](process-map.md) view. To learn more, go to the [Apply a custom metric to a process map](#apply-a-custom-metric-to-a-process-map) section in this article.
 
-To access the window, please select (**...**) icon to the process name and select the item **Process Context** and tab **Custom Metrics**. The window shows the list of custom metrics and their properties defined in the context of this process. If there is no metric defined yet, you are encouraged to create one by selecting **Create New Custom Metric**. 
+To access the window, select (**...**) to the process name and select the item **Process Context** and tab **Custom Metrics**. The window shows the list of custom metrics and their properties defined in the context of this process. If there's no metric defined yet, you're encouraged to create one by selecting **Create New Custom Metric**. 
 
 :::image type="content" alt-text="Screenshot of the Custom metrics screen." source="media/image-28.png":::
 

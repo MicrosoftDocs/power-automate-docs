@@ -23,31 +23,31 @@ search.audienceType:
 
 Here you can change the application settings. After the settings are changed, the changes are applied after you select **Save**.
 
-## General
+## GENERAL
 
 Here you can change general settings such as the user interface language or set where the exported files will be stored. You can also define the default duration format used for all newly created processes and views. To learn more, go to [View settings](view-settings.md).
 
-:::image type="content" alt-text="Screenshot of the Options tab in the general settings." source="media/image-37.png":::
+:::image type="content" alt-text="Screenshot of the Options tab in the general settings." source="media/image-20.png":::
 
-## Process explorer
+## PROCESS EXPLORER
 
 Here you can change the default settings for viewing processes. These settings will be used whenever a new process view is opened.
 
 :::image type="content" alt-text="Screenshot of the default settings in the Process Explorer tab." source="media/image-38.png":::
 
-## Process map
+## PROCESS MAP
 
 Here you can change the default settings for displaying the process map and social graphs, such as spacing between nodes, displaying the start and end nodes or chart alignment. These settings will be used whenever a new process view is opened.
 
 :::image type="content" alt-text="Screenshot of the default settings in the Process Map tab." source="media/image-39.png":::
 
-## Animation
+## ANIMATION
 
 Here you can change settings for process animation. These settings will be used as default, whenever a new process view is opened.
 
 :::image type="content" alt-text="Screenshot of the default settings in the Animation tab." source="media/image-40.png":::
 
-## Favorites Attributes
+## FAVORITE ATTRIBUTES
 
 Here you can change the default settings for Favorites panel - switch individual metrics, which should be visible on the Favorites panel, on and off. These settings will be used as default, whenever a new process view is opened.
 
