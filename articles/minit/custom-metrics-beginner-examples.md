@@ -89,9 +89,8 @@ We need to calculate events duration per single case. As the view contains two c
 
 The result is *per case*. It's calculated by events in case1 and events in case2, but most important is that the result is per case.
 
-Case 1 = 1:30 hours  (events in case 1)<br/>
-Case 2 = 3:00 hours (events in case 2)
-
+- Case 1 = 1:30 hours (events in case 1)
+- Case 2 = 3:00 hours (events in case 2)
 
 :::image type="content" alt-text="Screenshot of the result for case 1." source="media/image-7.png":::
 
@@ -125,9 +124,9 @@ How do you calculate results per activity properly? We're not concerned with the
 
 ### Result for example 4
 
-A = 50 minutes <br/>
-B = 40 minutes<br/>
-C = 3 hours
+- A = 50 minutes
+- B = 40 minutes
+- C = 3 hours
 
 :::image type="content" alt-text="Screenshot of the calculation result." source="media/imsge-9-angie.png":::
 
@@ -161,9 +160,9 @@ This example is similar to previous one. We again take into consideration distri
 
 ### Result for example 5
 
-Peter = 50 minutes (Events in case 1 =10 minutes + events in case 2 = 40 minutes, in total 50 minutes)<br/>
-Michal = 2:20 hours (events in case 1 =1:20 hours + events in case 2 = 1 hour, in total 2:20 hours)<br/>
-Denis = 1:20 hours (Events in case 2 = 1:20 hours)
+- Peter = 50 minutes (Events in case 1 =10 minutes + events in case 2 = 40 minutes, in total 50 minutes)
+- Michal = 2:20 hours (events in case 1 =1:20 hours + events in case 2 = 1 hour, in total 2:20 hours)
+- Denis = 1:20 hours (Events in case 2 = 1:20 hours)
 
 :::image type="content" alt-text="Screenshot of the result per user attribute." source="media/image-10-1.png":::
 
@@ -197,9 +196,9 @@ The calculation logic for this request is very similar to previous one. We group
 
 ### Result for example 6
 
-Peter = 4 hours 30 minutes<br/>
-Michal = 4 hours 30 minutes<br/>
-Denis = 3 hours
+- Peter = 4 hours 30 minutes
+- Michal = 4 hours 30 minutes
+- Denis = 3 hours
 
 :::image type="content" alt-text="Screenshot of the result per duration of cases." source="media/image-11a.png":::
 
