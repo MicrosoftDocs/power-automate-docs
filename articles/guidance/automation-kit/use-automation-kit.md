@@ -54,7 +54,7 @@ The [Power BI dashboard](#automation-kit-power-bi-dashboard) contains a scatter 
 
 ### Project Dashboard (Home Screen)
 
-![This screenshot displays the home screen.](media/AutomationProjectApp1.png)
+![A screenshot that displays the home screen.](media/AutomationProjectApp1.png "A screenshot that displays the home screen.")
 
 | **Role**            | **What you see**                                          |
 |---------------------|-----------------------------------------------------------|
