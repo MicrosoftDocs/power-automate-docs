@@ -67,7 +67,7 @@ Use the filter pane on the left to filter by **Scripting** module, to see which 
 
 The following screenshot display all scripting actions.
 
-![This screenshot displays the scripting actions](media/scripting-actions.png)
+![A screenshot that displays the scripting actions](media/scripting-actions.png "A screenshot that displays the scripting actions")
 
 #### Only Python actions
 
