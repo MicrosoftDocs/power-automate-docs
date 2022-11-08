@@ -28,7 +28,7 @@ Follow these steps in the environment in that contains the solution to disable s
 
 1. Select the **Solutions** tab.
 1. Select the Default Solution and click Environment Variables.
-1. Find, and then select **Store Extracted Script**.
+1. Find and then select **Store Extracted Script**.
 1. Under **Current value**, click **New value**.
 1. Change to **No**.
 1. Select **Save**.
