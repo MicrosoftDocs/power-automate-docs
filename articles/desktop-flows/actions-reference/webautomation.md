@@ -30,28 +30,28 @@ For more information on how to use the browser automation actions, go to [Automa
 
 
 
-[Extract data from webpage](#extractdata)  
-[Get details of webpage](#getdetailsofwebpage)  
-[Get details of element on webpage](#getdetailsofelement)  
-[Take screenshot of webpage](#takescreenshotbase)  
-[Focus text field on webpage](#focusbase)  
-[Populate text field on webpage](#populatetextfieldbase)  
-[Set checkbox state on webpage](#setcheckboxstatebase)  
-[Select radio button on webpage](#selectradiobuttonbase)  
-[Set dropdown list value on webpage](#setdropdownlistvaluebase)  
-[Press button on webpage](#pressbuttonbase)  
-[If webpage contains](#ifwebpagecontainsaction)  
-[Wait for webpage content](#waitforwebpagecontentaction)  
+[Extract data from web page](#extractdata)  
+[Get details of web page](#getdetailsofwebpage)  
+[Get details of element on web page](#getdetailsofelement)  
+[Take screenshot of web page](#takescreenshotbase)  
+[Focus text field on web page](#focusbase)  
+[Populate text field on web page](#populatetextfieldbase)  
+[Set checkbox state on web page](#setcheckboxstatebase)  
+[Select radio button on web page](#selectradiobuttonbase)  
+[Set dropdown list value on web page](#setdropdownlistvaluebase)  
+[Press button on web page](#pressbuttonbase)  
+[If web page contains](#ifwebpagecontainsaction)  
+[Wait for web page content](#waitforwebpagecontentaction)  
 [Launch new Internet Explorer](#launchinternetexplorerbase)  
 [Launch new Firefox](#launchfirefoxbase)  
 [Launch new Chrome](#launchchromebase)  
 [Launch new Microsoft Edge](#launchedgebase)  
 [Create new tab](#createnewtabbase)  
-[Go to webpage](#gotowebpagebase)  
-[Click link on webpage](#clickbase)  
-[Click download link on webpage](#clickdownloadlink)  
-[Run JavaScript function on webpage](#executejavascript)  
-[Hover mouse over element on webpage](#hoveroverelement)  
+[Go to web page](#gotowebpagebase)  
+[Click link on web page](#clickbase)  
+[Click download link on web page](#clickdownloadlink)  
+[Run JavaScript function on web page](#executejavascript)  
+[Hover mouse over element on web page](#hoveroverelement)  
 [Close web browser](#closewebbrowser)  
 
 ## Getting started with browser automation
@@ -85,8 +85,8 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 ### Web data extraction
 Extract data from web applications, from a single value up to tables or custom multiple pieces of data.
 
-#### <a name="extractdata"></a> Extract data from webpage
-Extract data from specific parts of a webpage in the form of single values, lists, rows, or tables.
+#### <a name="extractdata"></a> Extract data from web page
+Extract data from specific parts of a web page in the form of single values, lists, rows, or tables.
 
 
 
@@ -128,8 +128,8 @@ For more information on how to use this action, go to [Web data extraction](../a
 |Failed to launch Excel instance|Indicates a problem launching an Excel instance|
 |Failed to write values to Excel|Indicates a problem writing the values to an Excel|
 
-#### <a name="getdetailsofwebpage"></a> Get details of webpage
-Get a property of a webpage, such as its title or its source text.
+#### <a name="getdetailsofwebpage"></a> Get details of web page
+Get a property of a web page, such as its title or its source text.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -149,8 +149,8 @@ Get a property of a webpage, such as its title or its source text.
 |-----|-----|
 |Failed to get details of web page|Indicates a problem getting the details of the specified web page|
 
-#### <a name="getdetailsofelement"></a> Get details of element on webpage
-Get the value of an element's attribute on a webpage.
+#### <a name="getdetailsofelement"></a> Get details of element on web page
+Get the value of an element's attribute on a web page.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -174,8 +174,8 @@ Get the value of an element's attribute on a webpage.
 |-----|-----|
 |Failed to retrieve attribute of UI element on web page|Indicates a problem retrieving attribute of web page element|
 
-#### <a name="takescreenshotbase"></a> Take screenshot of webpage
-Take a screenshot of the webpage (or an element of the webpage) currently displayed in the browser and save the image into a file or to the clipboard.
+#### <a name="takescreenshotbase"></a> Take screenshot of web page
+Take a screenshot of the web page (or an element of the web page) currently displayed in the browser and save the image into a file or to the clipboard.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -201,8 +201,8 @@ This action doesn't produce any variables.
 ### Web form filling
 Fill in forms on web applications.
 
-#### <a name="focusbase"></a> Focus text field on webpage
-Set the focus on an input element of a webpage and scroll it into view.
+#### <a name="focusbase"></a> Focus text field on web page
+Set the focus on an input element of a web page and scroll it into view.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -224,8 +224,8 @@ This action doesn't produce any variables
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to set input focus on web page text field|Indicates a problem setting input focus on the specified web page text field|
 
-#### <a name="populatetextfieldbase"></a> Populate text field on webpage
-Fill a text field in a webpage with the specified text.
+#### <a name="populatetextfieldbase"></a> Populate text field on web page
+Fill a text field in a web page with the specified text.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -253,7 +253,7 @@ This action doesn't produce any variables.
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to write on text field|Indicates a problem writing to the specified text field|
 
-#### <a name="setcheckboxstatebase"></a> Set checkbox state on webpage
+#### <a name="setcheckboxstatebase"></a> Set checkbox state on web page
 Check or clear a checkbox in a web form.
 
 ##### Input parameters
@@ -277,8 +277,8 @@ This action doesn't produce any variables
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to set the state of the checkbox|Indicates a problem in setting the state of the specified check box|
 
-#### <a name="selectradiobuttonbase"></a> Select radio button on webpage
-Select a radio button on the webpage.
+#### <a name="selectradiobuttonbase"></a> Select radio button on web page
+Select a radio button on the web page.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -300,7 +300,7 @@ This action doesn't produce any variables.
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to select radio button|Indicates a problem in selecting the specified radio button|
 
-#### <a name="setdropdownlistvaluebase"></a> Set dropdown list value on webpage
+#### <a name="setdropdownlistvaluebase"></a> Set dropdown list value on web page
 Set or clear the selected option for a dropdown list in a web form.
 
 ##### Input parameters
@@ -327,8 +327,8 @@ This action doesn't produce any variables.
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to set the selected option|Indicates a problem setting the selected drop-down list option|
 
-#### <a name="pressbuttonbase"></a> Press button on webpage
-Press a webpage button.
+#### <a name="pressbuttonbase"></a> Press button on web page
+Press a web page button.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -351,8 +351,8 @@ This action doesn't produce any variables.
 |Failed to click on web page button|Indicates a problem clicking the specified web page button|
 
 
-#### <a name="ifwebpagecontainsaction"></a> If webpage contains
-Mark the beginning of a conditional block of actions, depending on whether a specific piece of text or element exists in a webpage.
+#### <a name="ifwebpagecontainsaction"></a> If web page contains
+Mark the beginning of a conditional block of actions, depending on whether a specific piece of text or element exists in a web page.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -371,8 +371,8 @@ This action doesn't produce any variables.
 |-----|-----|
 |Failed to communicate with the browser|Indicates that an error with the browser occurred|
 
-#### <a name="waitforwebpagecontentaction"></a> Wait for webpage content
-Suspend the flow until a specific piece of text or webpage element appears or disappears from a webpage.
+#### <a name="waitforwebpagecontentaction"></a> Wait for web page content
+Suspend the flow until a specific piece of text or web page element appears or disappears from a web page.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -551,7 +551,7 @@ Create a new tab and navigate to the given URL (supported in Edge, Chrome, and F
 |Invalid URL|Indicates that the provided URL was invalid|
 |Failed to create a new tab|Indicates a problem creating a new tab|
 
-#### <a name="gotowebpagebase"></a> Go to webpage
+#### <a name="gotowebpagebase"></a> Go to web page
 Navigate the web browser to a new page.
 
 ##### Input parameters
@@ -575,8 +575,8 @@ This action doesn't produce any variables.
 |Failed to navigate to web page|Indicates a problem navigating to the specified web page|
 |Invalid URL|Indicates that the provided URL was invalid|
 
-#### <a name="clickbase"></a> Click link on webpage
-Click on a link or any other element of a webpage.
+#### <a name="clickbase"></a> Click link on web page
+Click on a link or any other element of a web page.
 
 
 
@@ -606,8 +606,8 @@ This action doesn't produce any variables.
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to click UI element|Indicates a problem clicking the specified element|
 
-#### <a name="clickdownloadlink"></a> Click download link on webpage
-Click a link in a webpage that results in downloading a file.
+#### <a name="clickdownloadlink"></a> Click download link on web page
+Click a link in a web page that results in downloading a file.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -631,8 +631,8 @@ Click a link in a webpage that results in downloading a file.
 |Failed to click UI element|Indicates a problem clicking the specified element|
 |Failed to save file|Indicates a problem saving the specified file|
 
-#### <a name="executejavascript"></a> Run JavaScript function on webpage
-Run a JavaScript function on the webpage and get the returned result.
+#### <a name="executejavascript"></a> Run JavaScript function on web page
+Run a JavaScript function on the web page and get the returned result.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -652,8 +652,8 @@ Run a JavaScript function on the webpage and get the returned result.
 |-----|-----|
 |Failed to run JavaScript|Indicates a problem running JavaScript|
 
-#### <a name="hoveroverelement"></a> Hover mouse over element on webpage
-Hover the mouse over an element of a webpage.
+#### <a name="hoveroverelement"></a> Hover mouse over element on web page
+Hover the mouse over an element of a web page.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
