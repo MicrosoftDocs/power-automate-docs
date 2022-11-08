@@ -40,9 +40,9 @@ Follow the steps below to create an approval from the Approvals app in Teams:
 
 1. Select **More added apps (...)**.
 
-    :::image type="content" source="media/create-database/microsoft-teams-approvals.png" alt-text="Screenshot of the More added apps option in Microsoft Teams.":::
-
 1. Search for **Approvals**, and then select the appropriate app.
+
+    :::image type="content" source="media/create-database/microsoft-teams-approvals.png" alt-text="Screenshot of the More added apps option in Microsoft Teams.":::
 
 1. Select **New approval request** on the top right of the app.
 
@@ -55,15 +55,11 @@ Follow the steps below to create an approval from the Approvals app in Teams:
 
    :::image type="content" source="media/create-database/microsoft-teams-new-approval-request.png" alt-text="Screenshot of the fields to provide approvers.":::
 
-1. Select **Send**.
-
-    This step starts the process for adding a Dataverse database and may take a few minutes to complete. Once created, you'll receive a notification in Teams with a request for approval.
+1. Select **Send**. This step starts the process for adding a Dataverse database and may take a few minutes to complete. Once created, you'll receive a notification in Teams with a request for approval.
 
    :::image type="content" source="media/create-database/microsoft-teams-requested-approval.png" alt-text="Screenshot of the sent request for approval.":::
 
-1. Approve the received request.
-
-    Your Dataverse database is now added to the default environment.
+1. Approve the received request. Your Dataverse database is now added to the default environment.
 
 1. Exit Power Automate for desktop from the system tray icon to restart it.
 

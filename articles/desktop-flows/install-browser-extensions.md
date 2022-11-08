@@ -17,7 +17,7 @@ search.audienceType:
 
 # Install Power Automate browser extensions
 
-To automate web-related tasks, Power Automate provides the built-in Automation browser that is preconfigured and works out of the box. Besides the Automation browser, it also supports the four most popular browsers: Microsoft Edge, Internet Explorer, Google Chrome, and Mozilla Firefox. These browsers need extra configuration or/and browser extensions to work.
+To automate web-related tasks, Power Automate provides the built-in Automation browser that is preconfigured and works out of the box. Besides the Automation browser, it also supports the four most popular browsers: Microsoft Edge, Internet Explorer, Google Chrome, and Mozilla Firefox. These browsers need extra configuration and/or browser extensions to work.
 
 ## Install browser extensions
 
@@ -57,13 +57,13 @@ By default, Internet Explorer works in protected mode to prevent any external ap
 
 To disable protected mode and allow Power Automate to clear the browser's cache and cookies:
 
-1. Launch **Internet Explorer**, select the **gear icon**, and choose **Internet options** in the menu.
+1. Launch Internet Explorer, select the **gear icon**, and choose **Internet options** in the menu.
 
 1. In the **Internet options** dialog, navigate to **Security** > **Internet**, and disable **Enable Protected Mode**. Repeat the same step for the **Local intranet** and **Trusted sites** zones.
 
     :::image type="content" source="media/install-browser-extensions/internet-explorer-internet-protected-mode.png" alt-text="Screenshot of the security tab in the Internet Explorer options":::
 
-1. Select **Apply** and **OK** to save the change and close   the dialog box.
+1. Select **Apply** and **OK** to save the change and close the dialog .
 
 ## Configure Internet Explorer for servers
 
