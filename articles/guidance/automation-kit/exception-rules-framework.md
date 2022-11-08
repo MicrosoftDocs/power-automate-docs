@@ -68,7 +68,7 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 
 1. Here is an example configuration rule. If you want to monitor multiple error codes, you must create a record for each error code that you want to monitor.
 
-   ![A screenshot that displays the exception rule configuration](media/exception-rule.png "A screenshot that displays the exception rule configuration")
+   ![A screenshot that displays the exception rule configuration.](media/exception-rule.png "A screenshot that displays the exception rule configuration.")
 
     This table contains the field names and the corresponding values.
 
