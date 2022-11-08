@@ -36,9 +36,9 @@ For more information on how to use the browser automation actions, go to [Automa
 [Take screenshot of web page](#takescreenshotbase)  
 [Focus text field on web page](#focusbase)  
 [Populate text field on web page](#populatetextfieldbase)  
-[Set checkbox state on web page](#setcheckboxstatebase)  
+[Set check box state on web page](#setcheckboxstatebase)  
 [Select radio button on web page](#selectradiobuttonbase)  
-[Set dropdown list value on web page](#setdropdownlistvaluebase)  
+[Set drop-down list value on web page](#setdropdownlistvaluebase)  
 [Press button on web page](#pressbuttonbase)  
 [If web page contains](#ifwebpagecontainsaction)  
 [Wait for web page content](#waitforwebpagecontentaction)  
@@ -253,8 +253,8 @@ This action doesn't produce any variables.
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to write on text field|Indicates a problem writing to the specified text field|
 
-#### <a name="setcheckboxstatebase"></a> Set checkbox state on web page
-Check or clear a checkbox in a web form.
+#### <a name="setcheckboxstatebase"></a> Set check box state on web page
+Check or uncheck a check box in a web form.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -300,8 +300,8 @@ This action doesn't produce any variables.
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector was not found|
 |Failed to select radio button|Indicates a problem in selecting the specified radio button|
 
-#### <a name="setdropdownlistvaluebase"></a> Set dropdown list value on web page
-Set or clear the selected option for a dropdown list in a web form.
+#### <a name="setdropdownlistvaluebase"></a> Set drop-down list value on web page
+Set or clear the selected option for a drop-down list in a web form.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
@@ -607,7 +607,7 @@ This action doesn't produce any variables.
 |Failed to click UI element|Indicates a problem clicking the specified element|
 
 #### <a name="clickdownloadlink"></a> Click download link on web page
-Click a link in a web page that results in downloading a file.
+Click on a link in a web page that results in downloading a file.
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
