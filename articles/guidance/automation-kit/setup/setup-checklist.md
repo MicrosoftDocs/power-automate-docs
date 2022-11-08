@@ -61,7 +61,7 @@ Example data:
 | FTE Cost               | $50/hr   |
 | Time to Process (mins) | 60 mins   |
 | Frequency              | Daily*   |
-| # of FTEs to Process  | 1         |
+| # of FTEs to Process   | 1         |
 | Error Rate (%)         | 10%       |
 | # of FTEs to Fix      | 1         |
 | Time to Fix (mins)     | 25        |
