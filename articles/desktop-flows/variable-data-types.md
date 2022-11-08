@@ -113,7 +113,7 @@ To add a new row to an existing table, use the **Insert row into data table** ac
 
 ![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
 
-Besides inserting rows into datatables, desktop flows offer various actions that manipulate datatables. You can find a full list with these actions in the [variables actions reference](actions-reference/variables.md#data-table).
+Besides inserting rows into datatables, desktop flows offer various actions that manipulate datatables. You can find a full list with these actions in the [variable actions reference](actions-reference/variables.md#data-table).
 
 To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
