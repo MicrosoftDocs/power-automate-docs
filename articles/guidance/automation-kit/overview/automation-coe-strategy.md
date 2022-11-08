@@ -41,15 +41,15 @@ For the risk and compliance side of the diagram, the corporate rules, regulation
 
 The Automation Kit supports the journey from ideation and project definition to production automation with SLA and ROI measured with near real-time reporting.
 
-![Automation Kit demo lifecyle](../media/automation-kit-demo-lifecycle.png)
+![Automation Kit demo lifecycle.](../media/automation-kit-demo-lifecycle.png "Automation Kit demo lifecycle.")
 
 Here is a summary of the relevant roles:
 
-- **CVP or Area Manager** - Defines the automation goals
-- **Process Owner** - Creates the Automation Projects in the system, defining process volume / frequency, characteristics of current throughput of current process, and the expected ROI
-- **Reviewer / Approver** - Validates idea to approve that the idea should be implemented and is justifiable from an effort, maintenance, and compliance perspective
-- **Automation CoE** - Sets up and maps solution to a specific environment
-- **Process Owner** - Builds the solution, promotes to User Acceptance Testing (UAT) and Production. Maps the deployed solution to the Automation Project for metering. Metering allows report on overall status and how often the actions are carried out and measures the automation against the SLA and expected ROI and corporate automation goals.
+- **CVP or Area Manager**: Defines the automation goals
+- **Process Owner**: Creates the Automation Projects in the system, defining process volume / frequency, characteristics of current throughput of current process, and the expected ROI
+- **Reviewer / Approver**: Validates idea to approve that the idea should be implemented and is justifiable from an effort, maintenance, and compliance perspective
+- **Automation CoE**: Sets up and maps solution to a specific environment
+- **Process Owner**: Builds the solution, promotes to User Acceptance Testing (UAT) and Production. Maps the deployed solution to the Automation Project for metering. Metering allows report on overall status and how often the actions are carried out and measures the automation against the SLA and expected ROI and corporate automation goals.
 
 ## Automation Center Of Excellence
 
@@ -81,7 +81,7 @@ This could include provisioning virtual machines, which could be unattended in p
 
 Collaborate with your Power Platform or Microsoft 365 Center of Excellence teams for environment management and creation of Data Loss Prevention (DLP) policies that need to be put in place for the organization to scale.
 
-An Automation CoE may not not always have full access to perform these activities.
+An Automation CoE may not always have full access to perform these activities.
 
 #### Executive sponsors
 
@@ -95,16 +95,16 @@ The Automation Kit and components of the CoE Starter Kit, including the ALM Acce
 
 #### Bot Development Lifecycle
 
-- **Ideation** – The Automation Kit provides a process to create potential automation projects and an approval process to determine which automation projects need investments.
-- **Build** – The ALM Accelerator provides the ability to build a managed deployment of an RPA solution with versioning applied from solutions stored in source control.
-- **Deploy** – The ALM Accelerator helps you configure and deploy solutions between the development, test, and production environments. The deployment process makes use of Azure DevOps and includes the ability to apply branching and merging to apply a source-controlled governance and a review process as a deployment progresses to production.
+- **Ideation**: The Automation Kit provides a process to create potential automation projects and an approval process to determine which automation projects need investments.
+- **Build**: The ALM Accelerator provides the ability to build a managed deployment of an RPA solution with versioning applied from solutions stored in source control.
+- **Deploy**: The ALM Accelerator helps you configure and deploy solutions between the development, test, and production environments. The deployment process makes use of Azure DevOps and includes the ability to apply branching and merging to apply a source-controlled governance and a review process as a deployment progresses to production.
 
 #### ALM components
 
-- **Code Review** – Reviews for solutions in Azure DevOps with the ALM Accelerator. The ALM Accelerator Azure DevOp extensions allow the solution to be unpacked and the script definition from the exported solution versions to be compared for changes side by side.
-- **Monitoring** – The Automation Kit provides a near real-time tracking process to measure the impact of deployed solutions.
-- **Data Loss Prevention** – Determine the impact of DLP rules on deployed desktop flows using the Automation Kit.
-- **Dashboard and Data ETL** – Synchronize data from multiple environments to a centralized dashboard to monitor the impact of deployed solutions.
+- **Code Review**: Reviews for solutions in Azure DevOps with the ALM Accelerator. The ALM Accelerator Azure DevOp extensions allow the solution to be unpacked and the script definition from the exported solution versions to be compared for changes side by side.
+- **Monitoring**: The Automation Kit provides a near real-time tracking process to measure the impact of deployed solutions.
+- **Data Loss Prevention**: Determine the impact of DLP rules on deployed desktop flows using the Automation Kit.
+- **Dashboard and Data ETL**: Synchronize data from multiple environments to a centralized dashboard to monitor the impact of deployed solutions.
 
 ## Automation Maturity Model and the Automation Kit
 
