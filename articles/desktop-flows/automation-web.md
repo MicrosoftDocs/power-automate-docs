@@ -1,6 +1,6 @@
 ---
-title: Automation in the web
-description: Automation in the web
+title: Automate webpages | Microsoft Docs
+description: See how to launch browsers, automate webpages, and extract data from the web.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
@@ -17,7 +17,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Automate web flows
+# Automate webpages
 
 Power Automate offers several actions under the browser automation group to enable users to interact with web browsers. Browser automation is a special case of UI automation used for interacting with web elements.
 

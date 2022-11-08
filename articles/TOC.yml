@@ -414,11 +414,11 @@
       href: ./desktop-flows/use-loops.md
     - name: Use conditionals
       href: ./desktop-flows/use-conditionals.md
-    - name: Automate web flows
+    - name: Automate webpages
       href: ./desktop-flows/automation-web.md
     - name: Create custom forms
       href: ./desktop-flows/custom-forms.md     
-    - name: Automate desktop flows
+    - name: Automate desktop applications
       href: ./desktop-flows/desktop-automation.md
     - name: Automate on virtual desktops
       href: ./desktop-flows/virtual-desktops.md
