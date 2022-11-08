@@ -1,6 +1,6 @@
 ---
 title: Run a Power Automate desktop flow | Microsoft Docs
-description: Run a flow in the Power Automate desktop console
+description: Run a flow in the Power Automate desktop console.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -22,33 +22,33 @@ search.audienceType:
 
 # Run attended and unattended desktop flows
 
-After you've created and tested a desktop flow, you can run it from an event, schedule, or button. To make this functionality possible, add your desktop flow to an [automated flow](../get-started-logic-flow.md), a [instant flow](../introduction-to-button-flows.md), a [scheduled flow](../run-scheduled-tasks.md), or a [business process flow](../business-process-flows-overview.md).
+After you've created and tested a desktop flow, you can run it from an event, schedule, or button. To make this functionality possible, add your desktop flow to an [automated flow](../get-started-logic-flow.md), an [instant flow](../introduction-to-button-flows.md), a [scheduled flow](../run-scheduled-tasks.md), or a [business process flow](../business-process-flows-overview.md).
 
 ## Prerequisites
 
 > [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
+> Gateways for desktop flows are now deprecated except for the China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 - To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
 
    As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device.
 
-- If you use the on-premises data gateway to trigger desktop flows, you also need to [setup a desktop flow connection](install.md#setup-desktop-flows-connections-and-machine-credentials).
+- If you use the on-premises data gateway to trigger desktop flows, you also need to [set up a desktop flow connection](install.md#setup-desktop-flows-connections-and-machine-credentials).
 
 - A work or school account.
 
    >[!IMPORTANT]
-   >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
+   >You must use the same work or school account to set up the gateway, to sign in to Power Automate, and to sign in to your Windows device.
 
 ## Run desktop flows unattended or attended
 
 When you create desktop flows, you run them either in **attended** or **unattended** mode. Unattended is best for applications that don't need human supervision.
 
-When Power Automate runs in unattended mode, it automatically signs into the target devices that run Windows 10, Windows 11, Windows Server 2016, Windows Server 2019, or Windows Server 2022. Once the automation completes, Power Automate signs out from the device and reports its activity.
+When Power Automate runs in unattended mode, it automatically signs in to the target devices that run Windows 10, Windows 11, Windows Server 2016, Windows Server 2019, or Windows Server 2022. Once the automation completes, Power Automate signs out from the device and reports its activity.
 
 When Power Automate runs in attended mode, it uses an existing Windows user session.
 
-When you add a desktop flow to a cloud flow, you can choose whether you want your desktop flow to run attended or unattended. Here are some key differences between attended and unattended runs:
+When you add a desktop flow to a cloud flow, you can choose whether you want your desktop flow to run attended or unattended. The following sections describe key differences between unattended and attended runs.
 
 ### Unattended mode
 
@@ -57,7 +57,7 @@ To run unattended desktop flows, the target machine needs to be available with a
 >[!IMPORTANT]
 >
 > - Locked Windows user sessions will prevent desktop flows from running.
-> - Flows run in unattended mode can't be launched with elevated privileges
+> - Flows run in unattended mode can't be launched with elevated privileges.
 
 Power Automate performs the following steps:
 
@@ -65,7 +65,7 @@ Power Automate performs the following steps:
 
 1. Unattended desktop flows run on devices with the screen locked so that no one can see the flow while it runs.
 
-1. Windows 10 and Windows 11 devices can't run unattended if there are any active Windows user sessions present (even a locked one). You'll receive this error: *Cannot execute desktop flow. There is a locked or an inactive Windows user session on the target device*.
+1. Windows 10 and Windows 11 devices can't run unattended if any active Windows user sessions are present (even a locked one). You'll receive this error: *Cannot execute desktop flow. There is a locked or an inactive Windows user session on the target device*.
 
 1. On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow is supposed to run as, you'll receive the same error: *Cannot execute desktop flow. There is a locked or inactive Windows user session on the target device*.
 
@@ -79,13 +79,17 @@ The **reuse Windows session** functionality allows desktop flows to run on an ex
 
 ##### Allow reusing Windows session
 
-1. Sign into Power Automate
-1. Select **Machines** then select a machine or a machine group
-1. Select **Edit details**
-1. Select **Yes**
+1. Sign in to Power Automate.
+1. Select **Machines** and then select a machine or a machine group.
+1. Select **Edit details**.
+1. Select **Yes**.
 
 >[!NOTE]
 >When adding a machine in a group, the machine will use the same settings as defined in the group. When removing from a machine group, the machine keeps the setting defined at the group level.
+
+
+
+
 
 ###### Known issues and limitations
 
@@ -177,7 +181,7 @@ By following these strategies, you can avoid having desktop flows competing to r
 >If you are running desktop flows in unattended mode, you will need to anticipate the number of desktop flows your organization plans to run in parallel, and then purchase an adequate amount of Unattended Add-ons.
 
 >[!NOTE]
->If a target device or gateway becomes offline due to either a restart or connectivity issues, desktop flows will wait for up to three hours before it fails. This wait time allows for transient machine states and allows you to successfully run automation even even if the devices go through restart or update cycles.
+>If a target device or gateway becomes offline due to either a restart or connectivity issues, desktop flows will wait for up to three hours before it fails. This wait time allows for transient machine states and allows you to successfully run automation even if the devices go through restart or update cycles.
 
 ## Rerun failed desktop flows
 
