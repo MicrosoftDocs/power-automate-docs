@@ -19,7 +19,7 @@ ms.reviewer: deonhe
 
 # Disable syncing of desktop flows script (optional)
 
-By default, the Desktop flows definition script is stored inside the Desktop Flow Definition table. This field could contain sensitive information.
+By default, the Desktop flows definition script is stored inside the **Desktop Flow Definition** table. This field could contain sensitive information.
 
 >[!WARNING]
 >System Administrators and higher can view the definition tables and fields by default.
