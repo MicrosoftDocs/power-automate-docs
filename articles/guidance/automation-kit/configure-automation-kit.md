@@ -21,9 +21,7 @@ ms.reviewer: deonhe
 
 ## Define configuration data for the Automation Kit
 
-Use the Automation Kit admin account, go to the main environment, and then open the automation center app.
-
-The **Automation Center** is where we configure how several aspects of how the Automation Kit functions.
+Use the Automation Kit admin account, go to the main environment, and then open the automation center app. The **Automation Center** is where we configure how several aspects of how the Automation Kit functions.
 
 There are a few things you need to configure when you first import the kit.
 
