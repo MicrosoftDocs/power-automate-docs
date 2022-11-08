@@ -27,11 +27,11 @@ Some of these data types are widely used throughout the application, such as **n
 
 ## Simple data types
 
-Simple data types represent single values, such as texts and numbers. You can use these data types independently or utilize them to create more complex data structures, such as lists and datatables.
+Simple data types represent single values, such as texts and numbers. You can use these data types independently or use them to create more complex data structures, such as lists and datatables.
 
 ### Text value
 
-Any kind of text, from email addresses to the text contents of a .txt file. 
+This is any kind of text, from email addresses to the text contents of a .txt file. 
 
 [Text data type properties](datatype-properties.md#texts)
 
@@ -45,7 +45,7 @@ Numeric is the type applied to numbers. Only this data type can be used in mathe
 
 Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation. 
 
-Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. You can find more information about the mathematical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
+Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. For more information about mathematical expressions, go to [Use variables and the % notation](variable-manipulation.md).
 
 ![Screenshot of a Set variable action that creates a Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
 
@@ -55,7 +55,7 @@ The value can be either **True** or **False**.
   
 Τo create a **Boolean value** variable, use the **Set variable** action and populate the input parameter with the expressions **%True%** or  **%False%**. 
 
-Additionally, you can create complex expressions using logical operators, variables and the percentage notation. You can find more information about the logical expressions in the [Use variables and the % notation](variable-manipulation.md) article.
+Additionally, you can create complex expressions using logical operators, variables, and the percentage notation. For more information about logical expressions, go to [Use variables and the % notation](variable-manipulation.md).
 
 ![Screenshot of a Set variable action that creates a Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
 
@@ -73,7 +73,7 @@ You can create a list through the **Create new list** action and add an item to 
 
 You can also create a list through actions that generate lists as output. For example, the **Read text from file** action can return a list of text values and the **Get files in folder** action returns a list of files.
 
-To retrieve a specific item of a list, use the following notation: **%VariableName\[ItemNumber\]%**
+To retrieve a specific item in a list, use the following notation: **%VariableName\[ItemNumber\]%**
 
 In the example below, the flow stores the first number of the previously displayed list to a new variable. Keep in mind that the index should be 0 for the first item of the list.
 
@@ -145,6 +145,10 @@ Alternatively, you can use the **%VariableName['ColumnName']%** notation. The na
 [Datarow data type properties](datatype-properties.md#datarows)
 
 ![Screenshot of the contents of a datarow variable.](media\data-rows\data-row-data-type.png) 
+
+
+
+
 
 ### Custom object
 
