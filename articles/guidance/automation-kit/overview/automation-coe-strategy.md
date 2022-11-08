@@ -23,7 +23,7 @@ The Automation Kit, along with the [ALM Accelerator](/power-platform/guidance/co
 
 ## Corporate automation strategy
 
-![Corporate Automation Strategy](../media/corporate-automation-strategy.png)
+![Corporate Automation Strategy](../media/corporate-automation-strategy.png "Corporate Automation Strategy")
 
 Impactful automation requires executive sponsorship and deep collaboration across many roles in the organization.
 
