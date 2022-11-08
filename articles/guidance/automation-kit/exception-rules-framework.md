@@ -25,7 +25,7 @@ This custom-built framework introduces new automation capabilities that are aime
 
 ## Feature details
 
-Desktop flow execution results together with their statuses are automatically stored in a Dataverse table named *process* (flowsession is the internal name) which allows us to build custom solutions that further process its data in automation. A common use case is to automatically turn off a parent cloud flow if its child desktop flow reports three consecutive errors, including the same error code such as *WindowsIdentityIncorrect* or *NoUnlockedActiveSessionForAttended*, etc.
+Desktop flow execution results together with their statuses are automatically stored in a Dataverse table named *process* (flowsession is the internal name) which allows us to build custom solutions that further process its data in automation. A common use case is to automatically turn off a parent cloud flow if its child desktop flow reports three consecutive errors, including the same error code, such as *WindowsIdentityIncorrect* or *NoUnlockedActiveSessionForAttended*.
 
 ### Components
 
@@ -60,13 +60,13 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 >[!NOTE]
 >If you don't see the tables mentioned in the previous step, confirm that you have the [roles mentioned](#flow-exception-rules-framework).
 
-![A screenshot that displays the tables](media/tables.png)
+![A screenshot that displays the tables.](media/tables.png "A screenshot that displays the tables.")
 
 1. Select the **Flow Exception Rule Configuration** table.
 1. Select the **Data** tab.
 1. Select **Add record**.
 
-1. Here is an example configuration rule. If you want to monitor multiple error codes, you must create a record for each error code that you want to monitor.
+1. Here's an example configuration rule. If you want to monitor multiple error codes, you must create a record for each error code that you want to monitor.
 
    ![A screenshot that displays the exception rule configuration.](media/exception-rule.png "A screenshot that displays the exception rule configuration.")
 
@@ -85,35 +85,39 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 
 To visualize and report on the flow exceptions configured, the flow exceptions dashboard can be utilized.
 
-When you launch the Power BI template, enter the URL for the environment you wish to report on:
+When you launch the Power BI template, enter the URL for the environment you wish to report on.
 
-![This screenshot displays the exception dashboard](media/exception-dash.png)
+![This screenshot displays the exception dashboard.](media/exception-dash.png "This screenshot displays the exception dashboard.")
 
 >[!NOTE]
 >The URL must be entered in the following format: `[organization].crm[N].dynamics.com`. For example, **contosttest.crm.dynamics.com**
 
+### Flow Exceptions tab
+
 The **Flow Exceptions** tab allows you to filter by date, exception rule, cloud flow name, desktop flow name, or host name.
 
-![This screenshot displays the flow exception filters.](media/exception-filter.png)
+![A screenshot that displays the flow exception filters.](media/exception-filter.png "A screenshot that displays the flow exception filters.")
 
-Here is a summary of the information provided in this tab.
+Here's a summary of the information provided in this tab.
 
-**Status Overall –** Overall count and percentage of failed vs. successful flows for the environment.
+**Status Overall**: Overall count and percentage of failed vs. successful flows for the environment.
 
-**Total Exceptions by Rule –** Displays the total number of flow runs, categorized by each exception rule setup through the flow exceptions framework.
+**Total Exceptions by Rule**: Displays the total number of flow runs, categorized by each exception rule setup through the flow exceptions framework.
 
-**Failure Rate by Type –** Displays the total number of errors for the environment across all flows, the number of successful runs, and the percent of frequency for each error compared to all other errors.
+**Failure Rate by Type**: Displays the total number of errors for the environment across all flows, the number of successful runs, and the percent of frequency for each error compared to all other errors.
 
-**Exceptions by Month –** Displays the total number of exceptions triggered for each rule according to the flow exception framework, categorized by month.
+**Exceptions by Month**: Displays the total number of exceptions triggered for each rule according to the flow exception framework, categorized by month.
 
-**Flow Exception Detail –** Displays the detailed information for the flow exceptions.
+**Flow Exception Detail**: Displays the detailed information for the flow exceptions.
+
+### Flow Exceptions Tree
 
 The **Flow Exceptions (Tree)** tab allows you to filter by date, exception rule, cloud flow name, desktop flow name, or host name.
 
-![Screenshot that displays flow exceptions details](media/exception-details.png)
+![A screenshot that displays flow exceptions details.](media/exception-details.png "A screenshot that displays flow exceptions details.")
 
-Here is a summary of the information provided in this tab.
+Here's a summary of the information provided in this tab.
 
-**Flow Exceptions Tree Diagram –** Displays and allows you to drill into specific flows organized into the following categories: cloud flow name, desktop flow name, error code, error message, run mode, or host name.
+**Flow Exceptions Tree Diagram**: Displays and allows you to drill into specific flows organized into the following categories: cloud flow name, desktop flow name, error code, error message, run mode, or host name.
 
-**Flow Exception Detail –** Provides detailed information on the flow exceptions.
+**Flow Exception Detail**: Provides detailed information on the flow exceptions.
