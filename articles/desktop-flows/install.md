@@ -61,7 +61,7 @@ You can download and install Power Automate through an MSI installer or Microsof
 
     - Launch Microsoft Store and search for **Power Automate for desktop**.
 
-    - Open a browser and go to [this Microsoft Store page](https://www.microsoft.com/store/productId/9NFTCH6J7FHV). This page should automatically launch Microsoft Store.
+    - Open a browser and go to [this Microsoft Store page](https://www.microsoft.com/store/productId/9NFTCH6J7FHV). Then, select **Get in Store app** to launch Microsoft Store on your device.
 
     - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/) and select the appropriate option for installing.
 
