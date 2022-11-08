@@ -60,6 +60,6 @@ The script field is synced and stored inside the Desktop Flow Definition table b
 
    The user should show in the **Selected records** list.
 
-   ![A screenshot that displays looking up a user record](../media/look-up-user.png)
+   ![A screenshot that displays looking up a user record](../media/look-up-user.png "A screenshot that displays looking up a user record")
 
 1. Select **Add**.
