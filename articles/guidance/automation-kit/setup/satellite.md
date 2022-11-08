@@ -113,7 +113,7 @@ Wait for the Creator Kit to finish importing before continuing to next step.
 1. Select the Automation CoE satellite solution named AutomationCoESatellite_x_x_x_x_managed.zip**.
 1. When the compressed (.zip) file loads, select **Next**.
 1. Review the information, and then select **Next**.
-1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**.    You won't lose your import progress.
+1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
 1. Configure the [environment variables](./environment-variables.md).
 
 ## Import the desktop flow actions csv
