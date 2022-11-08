@@ -61,7 +61,7 @@ You can download and install Power Automate through an MSI installer or Microsof
 
     - Launch Microsoft Store and search for **Power Automate for desktop**.
 
-    - Open a browser and go to [this Microsoft Store page](https://aka.ms/pbidesktopstore). Then, select **Get in Store app** to launch Microsoft Store on your device.
+    - Open a browser and go to [this Microsoft Store page](https://www.microsoft.com/store/productId/9NFTCH6J7FHV). This page should automatically launch Microsoft Store.
 
     - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/) and select the appropriate option for installing.
 
@@ -76,7 +76,7 @@ Power Automate enables you to [trigger your desktop flows from cloud flows](link
 
 On-premises data gateways establish the required cloud connectivity and must be installed on each device on which you'll trigger desktop flows. They aren't required if you only want to create, edit, and test your desktop flows on these devices.
 
-When you install a on-premises data gateway, it defaults to the region that Power Automate uses.
+When you install an on-premises data gateway, it defaults to the region that Power Automate uses.
 
 To find more information regarding on-premises data gateways, go to [Install an on-premises data gateway](/data-integration/gateway/service-gateway-instal).
 
