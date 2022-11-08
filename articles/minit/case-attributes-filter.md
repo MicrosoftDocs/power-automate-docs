@@ -52,7 +52,7 @@ You can include custom metrics in an expression, too.
 
     To learn how to create a custom expression, go to [Custom metrics overview (preview)](custom-metrics.md).
 
-    :::image type="content" alt-text="Screenshot of an attribute value specified as a custom expression." source="media/expressioncm2.png":::
+    :::image type="content" alt-text="Screenshot of custom attribute values." source="media/expressioncm2.png":::
 
 ### See also
 
