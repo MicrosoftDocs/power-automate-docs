@@ -146,10 +146,6 @@ Alternatively, you can use the **%VariableName['ColumnName']%** notation. The na
 
 ![Screenshot of the contents of a datarow variable.](media\data-rows\data-row-data-type.png) 
 
-
-
-
-
 ### Custom object
 
 Contains pairs of properties and values, which can be easily converted to JSON format. 
@@ -160,7 +156,7 @@ To create a new empty **Custom object**, use the **Set variable** action and pop
 
 To update the value of an existing property or add a new one, deploy a **Set variable** action, populate the property's name in the **Set** field, and enter its value in the **To** field. 
 
-![Screenshot of a Set variable action that add a new property to a custom object.](media\variable-data-types\add-property-custom-object.png)
+![Screenshot of a Set variable action that adds a new property to a custom object.](media\variable-data-types\add-property-custom-object.png)
 
 Apart from literal values, you can use variables to dynamically set the properties and values of custom objects. For example, the following flow uses two variables to add a new property to a new empty custom object.
 
@@ -176,10 +172,10 @@ Each item on the list describes an extracted table and provides all the essentia
 
 Every list item provides four properties that allow you to get a specific detail independently. The available properties are the following:
 
-- **DataTable** - Returns the extracted table.
-- **TableStartingPage** - Returns the index of the file page that contains the start of the table.
-- **TableEndingPage** - Returns the index of the file page that contains the end of the table.
-- **TableOrderInPage** - Returns the order of the table on the page. 
+- **DataTable** – Returns the extracted table.
+- **TableStartingPage** – Returns the index of the file page that contains the start of the table.
+- **TableEndingPage** – Returns the index of the file page that contains the end of the table.
+- **TableOrderInPage** – Returns the order of the table on the page. 
 
 You can find more information regarding the properties of this data type in [Variables datatype properties](datatype-properties.md#pdf-table-info).
 
@@ -187,11 +183,11 @@ You can find more information regarding the properties of this data type in [Var
 
 To access the value of a specific property, use the **%VariableName[ItemNumber].PropertyName%** notation. For example, the following expression returns the datatable value of the first item of the **ExtractedPDFTables** variable.
 
-![Screenshot of the data table contained in a list of PDF table info vatiable.](media\variable-data-types\list-pdf-table-info-data-table-notation.png) 
+![Screenshot of the datatable contained in a list of PDF table info variables.](media\variable-data-types\list-pdf-table-info-data-table-notation.png) 
 
 ### Known issues and limitations
 
-- **Issue**: When a datatable or datarow cell contains a multi-line entry, the variable viewer displays only the first line of it. 
+- **Issue**: When a datatable or datarow cell contains a multiline entry, the variable viewer displays only the first line of it. 
 - **Workarounds**: None.
 
 ## Instances
@@ -208,69 +204,76 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
   [Excel instance data type properties](datatype-properties.md#excel-instance) 
 
-- **Outlook instance** - Contains an Outlook instance created through the **Launch Outlook** action.
+- **Outlook instance** – Contains an Outlook instance created through the **Launch Outlook** action.
 
 ## Connections
 
-- **SQL connection** - Contains a connection to an SQL database established through the **Open SQL connection** action.
+- **SQL connection** – Contains a connection to a SQL database established through the **Open SQL connection** action.
 
   [SQL connection data type properties](datatype-properties.md#sql-connection)
 
-- **Exchange connection** - Contains a connection to an Exchange server established through the **Connect to Exchange server** action.
+- **Exchange connection** – Contains a connection to an Exchange server established through the **Connect to Exchange server** action.
 
   [Exchange connection data type properties](datatype-properties.md#exchange-connection)
 
-- **FTP connection** - Contains an FTP connection created through the **Open FTP connection** and **Open secure FTP connection** actions.
+- **FTP connection** – Contains an FTP connection created through the **Open FTP connection** and **Open secure FTP connection** actions.
 
   [FTP connection data type properties](datatype-properties.md#ftp-connection) 
 
 ## Others
 
+<!-- This could use an introductory sentence or more, explaining what this section is about. -->
+
+
 ### General value
 
-- **General value**  - This data type is used during design time when Power Automate can't define the data type of a variable or an input parameter. General values get converted to other data types during run time based on their data. 
+- **General value** – This data type is used during design time when Power Automate can't define the data type of a variable or an input parameter. General values get converted to other data types during runtime based on their data. 
 
 ### Active Directory
 
-- **Active Directory entry** - Contains a connection to an Active Directory server established through the **Connect to server** action.
-- **Group info** - Contains the name, the display name, a description, and the members of a specified Active Directory group.
-- **Group member** - Represents a member of a specified Active Directory group.
-- **User info** - Contains information about a specified Active Directory user, such as first and last name, initials and a distinguished name, work details (company, department and title), contact information (telephone number, extension and email), and location (country, city, state, street address and postal code).
+- **Active Directory entry** – Contains a connection to an Active Directory server established through the **Connect to server** action.
+- **Group info** – Contains the name, the display name, a description, and the members of a specified Active Directory group.
+- **Group member** – Represents a member of a specified Active Directory group.
+- **User info** – Contains information about a specified Active Directory user, such as first and last name, initials and a distinguished name, work details (company, department, and title), contact information (telephone number, extension, and email), and location (country, city, state, street address, and postal code).
 
 [Active Directory data type properties](datatype-properties.md#active-directory-entry)
 
 ### AWS
 
-- **EC2 client** - Contains an EC2 session created through the **Create EC2 session** action.
-- **EC2 instance** - Represents a retrieved EC2 instance.
-- **EC2 instances info** - Contains information about an EC2 instance.
-- **Instance state change** - Contains information about an EC2 instance that was started or stopped.
-- **EBS snapshot** - Represents an EBS snapshot.
-- **EBS volume** - Represents an EBS volume.
+
+<!-- Is this Amazon Web Services? If so, we should use the full name, followed by the acronym, i.e. Amazon Web Services (AWS). -->
+
+
+- **EC2 client** – Contains an EC2 session created through the **Create EC2 session** action.
+- **EC2 instance** – Represents a retrieved EC2 instance.
+- **EC2 instances info** – Contains information about an EC2 instance.
+- **Instance state change** – Contains information about an EC2 instance that was started or stopped.
+- **EBS snapshot** – Represents an EBS snapshot.
+- **EBS volume** – Represents an EBS volume.
 
 [AWS data type properties](datatype-properties.md#ebs-snapshot) 
 
 ### Azure
 
-- **Azure client** - Contains an Azure session created through the **Create session** action.
-- **Azure resource group** - Represents a retrieved Azure resource group.
-- **Azure managed disk** - Represents a retrieved Azure disk.
-- **Azure snapshot** - Represents an Azure snapshot.
-- **Azure virtual machine** - Represents a retrieved Azure virtual machine.
-- **Azure virtual machine info** - Contains information about an Azure virtual machine.
-- **Azure subscription** - Represents a retrieved Azure subscription.
+- **Azure client** – Contains an Azure session created through the **Create session** action.
+- **Azure resource group** – Represents a retrieved Azure resource group.
+- **Azure managed disk** – Represents a retrieved Azure disk.
+- **Azure snapshot** – Represents an Azure snapshot.
+- **Azure virtual machine** – Represents a retrieved Azure virtual machine.
+- **Azure virtual machine info** – Contains information about an Azure virtual machine.
+- **Azure subscription** – Represents a retrieved Azure subscription.
 
 [Azure data type properties](datatype-properties.md#azure-managed-disk) 
 
 ### CMD
 
-- **CMD session** - Contains a CMD session created through the **Open CMD session** action.
+- **CMD session** – Contains a CMD session created through the **Open CMD session** action.
 
 [CMD data type properties](datatype-properties.md#cmd-session)
 
 ### Dates and time
 
-- **Datetime** - Contains date and time information. To create a datetime variable through the **Set Variable** action, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
+- **Datetime** – Contains date and time information. To create a datetime variable through the **Set Variable** action, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
 
   | Notation | Description |
   |----------|-------------|
@@ -289,28 +292,28 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 ### Email
 
-- **Mail message** - Represents an email message. The **Retrieve emails** action populates these variables.
+- **Mail message** – Represents an email message. The **Retrieve emails** action populates these variables.
 
 [Email data type properties](datatype-properties.md#mail-messages)
 
 ### Exchange
 
-- **Exchange mail message** - Represents an email message retrieved from an Exchange server. The **Retrieve Exchange email messages** action populates these variables.
+- **Exchange mail message** – Represents an email message retrieved from an Exchange server. The **Retrieve Exchange email messages** action populates these variables.
 
 [Exchange data type properties](datatype-properties.md#exchange-mail-messages)
 
 ### Files and folders
 
-- **File** - Represents a file.
-- **Folder** - Represents a folder.
-- **FileSystemObject** - Represents either a folder or a file. This data type is used in input parameters that accept folders and files.
+- **File** – Represents a file.
+- **Folder** – Represents a folder.
+- **FileSystemObject** – Represents either a folder or a file. This data type is used in input parameters that accept folders and files.
 
 [Files and folders data type properties](datatype-properties.md#files)
 
 ### FTP
 
-- **FTP file** - Represents an FTP file.
-- **FTP directory** - Represents an FTP directory
+- **FTP file** – Represents an FTP file.
+- **FTP directory** – Represents an FTP directory
 
 [FTP data type properties](datatype-properties.md#ftp-files)
 
@@ -320,23 +323,23 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 ### Outlook
 
-- **Outlook mail message** - Represents an email Outlook message. The **Retrieve email messages from Outlook** action populates these variables.
+- **Outlook mail message** – Represents an email Outlook message. The **Retrieve email messages from Outlook** action populates these variables.
 
 [Outlook data type properties](datatype-properties.md#outlook-mail-messages) 
 
 ### Terminal
 
-- **Terminal session** - Contains a terminal session created through the **Open terminal session** action.
+- **Terminal session** – Contains a terminal session created through the **Open terminal session** action.
 
 [Terminal data type properties](datatype-properties.md#terminal-session) 
 
 ### XML 
-- **XML node** - Contains the content of an XML document. The **Read XML from file** action populates these variables.
+- **XML node** – Contains the content of an XML document. The **Read XML from file** action populates these variables.
 
 [XML data type properties](datatype-properties.md#xml-node) 
 
 ### Error
-- **Error** - Contains information about the last occurred error in the desktop flow. The **Get last error** action creates this type of variables.
+- **Error** – Contains information about the last occurred error in the desktop flow. The **Get last error** action creates this type of variables.
 
 [Error properties](datatype-properties.md#error) 
 
