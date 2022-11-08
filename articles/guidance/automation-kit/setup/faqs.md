@@ -21,9 +21,9 @@ ms.reviewer: deonhe
 
 This article provides answers to some of the most common questions about the Automation Kit.
 
-**Question** - What are the datacenter region codes?
+## What are the datacenter region codes?
 
-**Answer** - These values are crucial when configuring a satellite’s environment variables. Each region has a different URL. The following is a list of regions and their URLs.
+These values are crucial when configuring a satellite’s environment variables. Each region has a different URL. The following is a list of regions and their URLs.
 
 | Region     |            URL           |
 |------------|--------------------------|
@@ -49,30 +49,33 @@ This article provides answers to some of the most common questions about the Aut
 
 For more information, go to [Datacenter regions](/power-platform/admin/new-datacenter-regions).
 
-**Question** - How can the RPA CLI be used to extend the Automation Kit?
+## How can the RPA CLI be used to extend the Automation Kit?
 
-**Answer** - Read more about how to use the [RPA CLI](https://aka.ms/rpacli).
+For more information about how to use the RPA CLI, go to [RPA CLI](https://aka.ms/rpacli).
 
-**Issue** - No organization matches the given dataset: unq0a5fac6XXXXXXXXXXXXX.crm
+## No organization matches the given dataset: unq0a5fac6XXXXXXXXXXXXX.crm
 
-**Answer** - The issue might be due to a wrongly entered environment variable value for the **Environment Unique Name** of CoE main. If your environment is provisioned in Australia for instance, you need to enter the Australian region suffix to the crm domain. For example, enter **crm6** instead of **crm**. After you fix this, you can turn on all cloud flows.
+The issue might be due to a wrongly entered environment variable value for the **Environment Unique Name** of CoE main. If your environment is provisioned in Australia for instance, you need to enter the Australian region suffix to the crm domain. For example, enter **crm6** instead of **crm**. After you fix this, you can turn on all cloud flows.
 
 You can also review [Environment variables are not editable after you import a solution](../limitations.md#environment-variables-are-not-editable-after-you-import-a-solution) and [Environment variables continue to use the old values after a manual change](../limitations.md#environment-variables-continue-to-use-the-old-values-after-a-manual-change) to learn more.
 
-**Issue** - GetDataverseSolutionArtifacts.Run failed.
+## GetDataverseSolutionArtifacts.Run failed
 
-**Details** - This error happens inside the Automation Solution Manager app (inside a satellite) when you try to view the  solution artifacts.
+**Details**  
+This error happens inside the Automation Solution Manager app (inside a satellite) when you try to view the  solution artifacts.
 
-**Answer** - First check out these flows:
+**Answer**  
+First check out these flows:
 
 - Get Dataverse Bearer Token (Azure KeyVault Env)
 - Get Dataverse Solution Artifacts
 
 The error in the flow might be like the following screenshot.
 
-![A screenshot that displays the solution artifacts errors from a run](../media/solution-artifact-errors.png)
+![A screenshot that displays the solution artifacts errors from a run.](../media/solution-artifact-errors.png "A screenshot that displays the solution artifacts errors from a run.")
 
-There could be two main causes of this error.
+There could be two main causes of this error:  
+
 1. The application user isn't created in the satellite environment. [Create application user inside Dataverse (Per satellite Env)](satellite.md#create-application-user-inside-dataverse-per-satellite-env)
 
 1. The satellite environment variables aren't configured properly. [Configure environment variables](environment-variables.md#configure-environment-variables)
