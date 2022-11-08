@@ -74,9 +74,9 @@ For example, in **MostLikleyTheBest-CLoUdfLoW_AP-000001013_001.**, you can use t
 
 ### Desktop flows impact analysis sync limitation (No data in app)
 
-**Issue:** - There is a limitation where only new or modified desktop flows will be analyzed and shown in the app.
+**Issue**: There is a limitation where only new or modified desktop flows will be analyzed and shown in the app.
 
-**Resolution:** - Do any of the following tasks.
+**Resolution**: Do any of the following tasks.
 
 - Modify the desktop flow.
 - Import the desktop flow (solution).
