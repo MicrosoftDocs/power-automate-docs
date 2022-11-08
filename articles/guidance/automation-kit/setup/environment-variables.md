@@ -39,7 +39,7 @@ Follow these steps to get the format.
 1. Paste the URL into notepad.
 1. Remove everything from **https://** to **/resource**.
 
-   ![A screenshot that displays the the parts of the URL to remove](../media/url-parts.png)
+   ![A screenshot that displays the parts of the URL to remove.](../media/url-parts.png "A screenshot that displays the parts of the URL to remove.")
 
 1. At the end of the URL, add **/{SecretName}**. Replace **{secretname}** with your **secret name**.
 
