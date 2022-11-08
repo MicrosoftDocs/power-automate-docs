@@ -24,7 +24,7 @@ To install Power Automate silently:
 
 1. Download [Power Automate for desktop](https://go.microsoft.com/fwlink/?linkid=2102613).
 
-1. Open the **Start** menu, search for **Command Prompt**, and then run it as the administrator.
+1. Open the **Start** menu, search for **Command Prompt**, and then run it as administrator.
 
     :::image type="content" source="media/desktop-flows-setup/command-prompt.png" alt-text="Screenshot of the command prompt on the start menu.":::
 
@@ -34,7 +34,7 @@ To install Power Automate silently:
     cd C:\Users\Admin\Downloads\
    ```
 
-1. Run the following command to run the installer runs and complete the setup of Power Automate.
+1. Run the following command to run the installer and complete the setup of Power Automate.
 
    ```CMD
    Setup.Microsoft.PowerAutomate.exe -Silent -Install -ACCEPTEULA
