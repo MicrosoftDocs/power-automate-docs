@@ -19,7 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-# Trigger desktop flow from cloud flows
+# Trigger desktop flows from cloud flows
 
 ## Prerequisites
 
