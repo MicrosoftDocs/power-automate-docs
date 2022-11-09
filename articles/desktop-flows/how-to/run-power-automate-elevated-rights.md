@@ -31,5 +31,3 @@ During desktop flow development, some actions may need to access resources with 
 1. To confirm that Power Automate is launched with administrator rights, open Windows Task Manager, navigate to the **Details** tab, and check that Power Automate runs with elevated privileges.
 
     :::image type="content" source="media/run-power-automate-elevated-rights/task-manager.png" alt-text="Screenshot of the Power Automate processes in Windows Task Manager.":::
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
