@@ -84,4 +84,11 @@ Use the following command to silently uninstall Power Automate:
 Setup.Microsoft.PowerAutomate.exe -Silent -Uninstall
 ```
 
+## Install an on-premises data gateway with PowerShell cmdlets
+
+> [!IMPORTANT]
+> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. To learn more, go to [Switch from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+
+To find information regarding how to install, configure, and manage a gateway using PowerShell cmdlets, go to [PowerShell Cmdlets for On-premises data gateway management](/powershell/gateway/overview). To use the presented cmdlets, you must run them from PowerShell 7.0.0 or higher with elevated permissions.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
