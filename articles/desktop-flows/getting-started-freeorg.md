@@ -1,6 +1,6 @@
 ---
-title: Getting started with a work or school account
-description: Getting started with a work or school account
+title: Get started with a work or school account
+description: Get started with a work or school account
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -20,7 +20,7 @@ search.audienceType:
   - enduser
 ---
 
-# Getting started with a work or school account
+# Get started with a work or school account
 
 Power Automate enables users to automate repetitive desktop tasks through a collection of pre-made actions.
 

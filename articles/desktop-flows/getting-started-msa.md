@@ -1,6 +1,6 @@
 ---
-title: Getting started with a Microsoft account
-description: Getting started with a Microsoft account
+title: Get started with a Microsoft account
+description: Get started with a Microsoft account
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -20,7 +20,7 @@ search.audienceType:
   - enduser
 ---
 
-# Getting started with a Microsoft account
+# Get started with a Microsoft account
 
 Power Automate enables regular and power users to automate processes on their desktops, saving time and eliminating human error.
 

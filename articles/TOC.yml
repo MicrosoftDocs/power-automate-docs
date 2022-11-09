@@ -317,7 +317,7 @@
   items: 
   - name: Introduction to desktop flows
     href: ./desktop-flows/introduction.md
-  - name: Getting started with Power Automate in Windows 11
+  - name: Get started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
@@ -339,11 +339,11 @@
       href: ./desktop-flows/governance.md     
     - name: Data collection
       href: ./desktop-flows/diagnostic-data.md      
-  - name: Getting started with a Microsoft account
+  - name: Get started with a Microsoft account
     href: ./desktop-flows/getting-started-msa.md
-  - name: Getting started with a work or school account
+  - name: Get started with a work or school account
     href: ./desktop-flows/getting-started-freeorg.md
-  - name: Getting started with an organization premium account
+  - name: Get started with an organization premium account
     href: ./desktop-flows/getting-started-org.md
   - name: Create a desktop flow
     href: ./desktop-flows/create-flow.md

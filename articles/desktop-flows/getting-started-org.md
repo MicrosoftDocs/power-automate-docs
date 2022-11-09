@@ -1,6 +1,6 @@
 ---
-title: Getting started with an organization premium account
-description: Getting started with an Organization premium account
+title: Get started with an organization premium account
+description: Get started with an organization premium account
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
@@ -14,12 +14,12 @@ contributors:
 - PetrosFeleskouras
 search.app: 
   - Flow
-search.audienceType: 
+search.audienceType:
   - flowmaker
   - enduser
 ---
 
-# Getting started with an Organization premium account
+# Get started with an organization premium account
 
 Power Automate enables regular and power users to create flows that automate routine repetitive tasks. Build flows from pre-made actions, or [record windows and web browser activity in real time](recording-flow.md).
 
