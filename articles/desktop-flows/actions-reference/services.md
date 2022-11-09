@@ -52,15 +52,15 @@ To control services, use the Windows services group of actions. These actions al
 ### <a name="ifserviceaction"></a> If service
 Marks the beginning of a conditional block of actions depending on whether a service is running, paused, stopped or installed on the computer
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If service|N/A|Is stopped, Is installed, Isn't installed, Is running, Is paused|Is running|The state of the service to check|
 |Service name|No|[Text value](../variable-data-types.md#text-value)||The name of the service to check|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="ifserviceaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -72,15 +72,15 @@ Marks the beginning of a conditional block of actions depending on whether a ser
 ### <a name="waitforserviceaction"></a> Wait for service
 Suspend the execution of the automation until a service is running, paused or stopped on the computer
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for service to|N/A|Stop, Start, Pause|Start|Specifies whether the flow pauses until a certain service starts, stops or pauses|
 |Service name|No|[Text value](../variable-data-types.md#text-value)||The name of the service to check|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="waitforserviceaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -91,14 +91,14 @@ Suspend the execution of the automation until a service is running, paused or st
 ### <a name="start"></a> Start service
 Start a stopped Windows service
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Service to start|No|[Text value](../variable-data-types.md#text-value)||The name of the service to start|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="start_onerror"></a> Exceptions
 |Exception|Description|
@@ -110,14 +110,14 @@ Start a stopped Windows service
 ### <a name="stop"></a> Stop service
 Stop a running Windows service
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Service to stop|No|[Text value](../variable-data-types.md#text-value)||The name of the service to stop|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="stop_onerror"></a> Exceptions
 |Exception|Description|
@@ -129,14 +129,14 @@ Stop a running Windows service
 ### <a name="pause"></a> Pause service
 Pause a running Windows service
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Service to pause|No|[Text value](../variable-data-types.md#text-value)||The name of the service to pause|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="pause_onerror"></a> Exceptions
 |Exception|Description|
@@ -148,14 +148,14 @@ Pause a running Windows service
 ### <a name="resume"></a> Resume service
 Resume a paused Windows service
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Service to resume|No|[Text value](../variable-data-types.md#text-value)||The name of the service to resume|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="resume_onerror"></a> Exceptions
 |Exception|Description|

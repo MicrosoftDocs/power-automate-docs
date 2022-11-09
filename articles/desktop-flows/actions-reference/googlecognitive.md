@@ -52,7 +52,7 @@ Reveal the structure and meaning of text
 ### <a name="analyzesentimentgoogle"></a> Analyze sentiment
 Invokes the Google Cloud Natural Language service named 'Analyze Sentiment'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -64,7 +64,7 @@ Invokes the Google Cloud Natural Language service named 'Analyze Sentiment'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -80,7 +80,7 @@ Invokes the Google Cloud Natural Language service named 'Analyze Sentiment'
 ### <a name="analyzeentitiesgoogle"></a> Analyze entities
 Invokes the Google Cloud Natural Language service named 'Analyze Entities'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -92,7 +92,7 @@ Invokes the Google Cloud Natural Language service named 'Analyze Entities'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -108,7 +108,7 @@ Invokes the Google Cloud Natural Language service named 'Analyze Entities'
 ### <a name="analyzesyntaxgoogle"></a> Analyze syntax
 Invokes the Google Cloud Natural Language service named 'Analyze Syntax'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -120,7 +120,7 @@ Invokes the Google Cloud Natural Language service named 'Analyze Syntax'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -138,7 +138,7 @@ Assign labels to images and classify them into predefined categories. Detect obj
 ### <a name="labeldetectiongoogle"></a> Label detection
 Invokes the Google Cloud Vision service named 'Label Detection'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -148,7 +148,7 @@ Invokes the Google Cloud Vision service named 'Label Detection'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -164,7 +164,7 @@ Invokes the Google Cloud Vision service named 'Label Detection'
 ### <a name="landmarkdetectiongoogle"></a> Landmark detection
 Invokes the Google Cloud Vision service named 'Landmark Detection'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -174,7 +174,7 @@ Invokes the Google Cloud Vision service named 'Landmark Detection'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -190,7 +190,7 @@ Invokes the Google Cloud Vision service named 'Landmark Detection'
 ### <a name="textdetectiongoogle"></a> Text Detection
 Invokes the Google Cloud Vision service named 'Text Detection'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -200,7 +200,7 @@ Invokes the Google Cloud Vision service named 'Text Detection'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -216,7 +216,7 @@ Invokes the Google Cloud Vision service named 'Text Detection'
 ### <a name="logodetectiongoogle"></a> Logo detection
 Invokes the Google Cloud Vision service named 'Logo Detection'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -226,7 +226,7 @@ Invokes the Google Cloud Vision service named 'Logo Detection'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -242,7 +242,7 @@ Invokes the Google Cloud Vision service named 'Logo Detection'
 ### <a name="imagepropertiesdetectiongoogle"></a> Image properties detection
 Invokes the Google Cloud Vision service named 'Image Properties Detection'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -252,7 +252,7 @@ Invokes the Google Cloud Vision service named 'Image Properties Detection'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -268,7 +268,7 @@ Invokes the Google Cloud Vision service named 'Image Properties Detection'
 ### <a name="safesearchdetectiongoogle"></a> Safe search detection
 Invokes the Google Cloud Vision service named 'Safe Search Detection'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -278,7 +278,7 @@ Invokes the Google Cloud Vision service named 'Safe Search Detection'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|

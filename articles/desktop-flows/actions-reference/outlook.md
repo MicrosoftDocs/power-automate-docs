@@ -52,10 +52,10 @@ To close the instance of Outlook opened with Power Automate, use the **Close Out
 ### <a name="launch"></a> Launch Outlook
 Launch Outlook and create a new Outlook instance
 
-##### Input Parameters
-- This action doesn't require any input
+##### Input parameters
+This action doesn't require any input.
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |OutlookInstance|[Outlook instance](../variable-data-types.md#instances)|The specific Outlook instance for use with later Outlook actions|
@@ -69,7 +69,7 @@ Launch Outlook and create a new Outlook instance
 ### <a name="retrieveemailmessages"></a> Retrieve email messages from Outlook
 Retrieve email messages from an Outlook account
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
@@ -85,7 +85,7 @@ Retrieve email messages from an Outlook account
 |Save attachments into|No|[Folder](../variable-data-types.md#files-and-folders)||The path to save the attachments of the retrieved emails into|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RetrievedEmails|[List](../variable-data-types.md#list) of [Outlook mail messages](../variable-data-types.md#outlook)|The retrieved email messages for later processing. The variable contain a list of Outlook message objects|
@@ -102,7 +102,7 @@ Retrieve email messages from an Outlook account
 ### <a name="sendemailthroughoutlook"></a> Send email through Outlook
 Create and send a new email message through Outlook
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
@@ -118,8 +118,8 @@ Create and send a new email message through Outlook
 |Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="sendemailthroughoutlook_onerror"></a> Exceptions
 |Exception|Description|
@@ -131,7 +131,7 @@ Create and send a new email message through Outlook
 ### <a name="processemailmessages"></a> Process email messages in Outlook
 Move or deletes an email (or a list of email messages) retrieved by a 'Retrieve emails from Outlook' action.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
@@ -141,8 +141,8 @@ Move or deletes an email (or a list of email messages) retrieved by a 'Retrieve 
 |Mail folder|No|[Text value](../variable-data-types.md#text-value)||The name of the folder to retrieve messages from. Enter the full folder path for subfolders (e.g., Inbox\Work)|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="processemailmessages_onerror"></a> Exceptions
 |Exception|Description|
@@ -154,7 +154,7 @@ Move or deletes an email (or a list of email messages) retrieved by a 'Retrieve 
 ### <a name="saveoutlookemailmessages"></a> Save Outlook email messages
 Save Outlook email messages given an account
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
@@ -166,7 +166,7 @@ Save Outlook email messages given an account
 |Save email message(s) to|No|[Folder](../variable-data-types.md#files-and-folders)||The folder to save the messages to|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |StoredMessagesFiles|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The file paths of the saved email messages for later processing|
@@ -183,7 +183,7 @@ Save Outlook email messages given an account
 ### <a name="respondtomailmessage"></a> Respond to Outlook mail message
 Respond to an Outlook message, by replying, replying to all or forwarding it
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
@@ -197,8 +197,8 @@ Respond to an Outlook message, by replying, replying to all or forwarding it
 |Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="respondtomailmessage_onerror"></a> Exceptions
 |Exception|Description|
@@ -210,14 +210,14 @@ Respond to an Outlook message, by replying, replying to all or forwarding it
 ### <a name="close"></a> Close Outlook
 Close a previously launched Outlook instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. This variable is specified in a 'Launch Outlook' action|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="close_onerror"></a> Exceptions
 |Exception|Description|

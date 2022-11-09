@@ -47,7 +47,7 @@ To find the required information to populate the action, see the following instr
 ### <a name="getpasswordbase"></a> Get password from CyberArk
 Retrieves a password for a specific application from CyberArk
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Server address|No|[Text value](../variable-data-types.md#text-value)||The base URI for the web request|
@@ -64,7 +64,7 @@ Retrieves a password for a specific application from CyberArk
 |Certificate password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the certificate file|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The waiting time (in seconds) to get results from CyberArk|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response result|

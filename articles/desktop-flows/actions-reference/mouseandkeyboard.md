@@ -69,14 +69,14 @@ Blocks user mouse and keyboard input, so that the flow can perform mouse and key
 > [!IMPORTANT]
 > Because of its critical functionality, the **Block input** action requires elevated rights to run. Therefore, before using the action, ensure that Power Automate runs with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Block it|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to block or unblock mouse and keyboard input|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="blockinput_onerror"></a> Exceptions
 |Exception|Description|
@@ -87,13 +87,13 @@ Blocks user mouse and keyboard input, so that the flow can perform mouse and key
 ### <a name="getmouseposition"></a> Get mouse position
 Retrieves the current position of the mouse cursor on the screen in pixel coordinates
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Relative to|N/A|Screen, Foreground window|Screen|Specify whether to retrieve the mouse position in screen coordinates or relative to the top left corner of the active window|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |MousePosX|[Numeric value](../variable-data-types.md#numeric-value)|The horizontal (X) value of the mouse position|
@@ -108,7 +108,7 @@ Retrieves the current position of the mouse cursor on the screen in pixel coordi
 ### <a name="movemouse"></a> Move mouse
 Moves the mouse to a specific position
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Position X|No|[Numeric value](../variable-data-types.md#numeric-value)||The horizontal (X) value of the position to send the mouse to|
@@ -117,8 +117,8 @@ Moves the mouse to a specific position
 |Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify how to move the mouse|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="movemouse_onerror"></a> Exceptions
 |Exception|Description|
@@ -129,7 +129,7 @@ Moves the mouse to a specific position
 ### <a name="movemousetoimagebase"></a> Move mouse to image
 Moves the mouse over an image found on screen or on the foreground window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Image to move mouse to|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The list of Images to move the mouse to|
@@ -152,7 +152,7 @@ Moves the mouse over an image found on screen or on the foreground window
 |X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The ending X of the subregion to search in|
 |Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The ending Y of the subregion to search in|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |X|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the image is found on the screen. If the image is being searched for on the foreground window, the coordinate returned is relative to the top left corner of the window|
@@ -171,7 +171,7 @@ Moves the mouse over an image found on screen or on the foreground window
 ### <a name="movemousetotextonscreenwithocraction"></a> Move mouse to text on screen (OCR)
 Moves the mouse over a text found on the screen or on the foreground window using OCR
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
@@ -213,7 +213,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 > Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |LocationOfTextFoundX|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the text is found on the screen. If the text is searched for in the foreground window, this is relative to the top left corner of the window|
@@ -240,7 +240,7 @@ Sends a mouse click event
 > [!IMPORTANT]
 > To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send mouse click** action to interact with applications that run with elevated privileges, run Power Automate as administrator. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Mouse event to send|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|Specify what form of mouse event to send|
@@ -252,8 +252,8 @@ Sends a mouse click event
 |Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="sendmouseclick_onerror"></a> Exceptions
 |Exception|Description|
@@ -268,7 +268,7 @@ Sends keys to the application that is currently active
 > [!IMPORTANT]
 > To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send keys** action to interact with applications that run with elevated privileges, run Power Automate as administrator. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Send keys to|N/A|Foreground window, By UI element, By window instance/handle, By title and/or class|Foreground window|Specify whether to send the keys to the foreground window or to a UI element or to a window instance or a combination of window title/class|
@@ -277,8 +277,8 @@ Sends keys to the application that is currently active
 |Send Text as hardware keys|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Emulate the actual keystrokes on keyboard when sending whole Text|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="sendkeys_onerror"></a> Exceptions
 |Exception|Description|
@@ -317,7 +317,7 @@ Sends keys to the application that is currently active
 ### <a name="pressreleasekey"></a> Press/release key
 Presses (and holds) or releases one or more modifier keys (Alt, Control, or Shift)
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Action to perform|N/A|Press, Release|Press|Specify whether to press or release keys with this action|
@@ -327,8 +327,8 @@ Presses (and holds) or releases one or more modifier keys (Alt, Control, or Shif
 |Win|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Windows key will be pressed/released or not|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="pressreleasekey_onerror"></a> Exceptions
 |Exception|Description|
@@ -338,15 +338,15 @@ Presses (and holds) or releases one or more modifier keys (Alt, Control, or Shif
 ### <a name="setkeystate"></a> Set key state
 Sets the state (on or off) for the keys Caps Lock, Num Lock or Scroll Lock
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Key|N/A|Caps Lock, Num Lock, Scroll Lock|Caps Lock|Specify the key to set|
 |State|N/A|Off, On|On|Whether to set the key state to on or off|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setkeystate_onerror"></a> Exceptions
 |Exception|Description|
@@ -356,18 +356,18 @@ Sets the state (on or off) for the keys Caps Lock, Num Lock or Scroll Lock
 ### <a name="waitformouseaction"></a> Wait for mouse
 Suspends the execution of the flow until the mouse pointer changes, usually to or from the 'wait cursor' or hourglass
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for mouse pointer to|N/A|Become, Become not|Become|Choose what action of the mouse cursor to wait for.|
 |Mouse pointer|N/A|Arrow, App starting, Cross, Hand, Help, IBeam, Wait cursor|Arrow|Specify the mouse pointer state.|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="waitformouseaction_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 
 
@@ -375,10 +375,10 @@ Suspends the execution of the flow until the mouse pointer changes, usually to o
 ### <a name="getkeyboardlayout"></a> Get keyboard identifier
 Retrieves the active keyboard identifier from the machine's registry
 
-##### Input Parameters
-- This action doesn't require any input
+##### Input parameters
+This action doesn't require any input.
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |KeyboardLayoutId|[Numeric value](../variable-data-types.md#numeric-value)|The registry key of the active keyboard identifier|
@@ -392,7 +392,7 @@ Retrieves the active keyboard identifier from the machine's registry
 ### <a name="waitforshortcutkeyaction"></a> Wait for shortcut key
 Pause the flow run until a specific shortcut key is pressed. Shortcut keys must contain at least one key or a key and one of (ctrl, alt, shift). Multiple shortcut keys can be defined
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Shortcut keys|N/A|Keys combination|Ctrl + A|Specify the shortcut keys to wait for. Shortcut keys must contain exactly one key or a key and a combination of (ctrl, alt, shift). To add more than one shortcut key, select 'New shortcut key'|
@@ -400,7 +400,7 @@ Pause the flow run until a specific shortcut key is pressed. Shortcut keys must 
 |Continue after|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|The time in seconds before continuing the flow run|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |IndexOfShortcutKeyPressed|[Numeric value](../variable-data-types.md#numeric-value)|The index of the shortcut key if the shortcut keys are in a list format.|

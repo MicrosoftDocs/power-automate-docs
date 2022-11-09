@@ -50,7 +50,7 @@ The **Process Exchange email messages** action processes email messages retrieve
 ### <a name="connecttoexchangeserver"></a> Connect to Exchange server
 Open a new connection to an Exchange server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Exchange server version|N/A|Exchange 2010, Exchange 2010 SP1, Exchange 2010 SP2, Exchange 2013, Exchange 2013 SP1|Exchange 2013 SP1|The version of the Exchange server|
@@ -64,7 +64,7 @@ Open a new connection to an Exchange server
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time in seconds to wait for the connection to be established before the action fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExchangeConnection|[Exchange connection](../variable-data-types.md#connections)|The specific Exchange connection for use with later Exchange actions|
@@ -78,7 +78,7 @@ Open a new connection to an Exchange server
 ### <a name="retrieveexchangemessages"></a> Retrieve Exchange email messages
 Retrieve email messages from the specified Exchange server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Exchange connection|No|[Exchange connection](../variable-data-types.md#connections)||The Exchange connection. Create an Exchange connection with the 'Connect to Exchange server' action|
@@ -97,7 +97,7 @@ Retrieve email messages from the specified Exchange server
 |Save attachments into|No|[Folder](../variable-data-types.md#files-and-folders)||The folder to save the attachments into|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RetrievedEmails|[List](../variable-data-types.md#list) of [Exchange mail messages](../variable-data-types.md#exchange)|The retrieved email messages for later processing as a list of Exchange mail messages objects|
@@ -113,7 +113,7 @@ Retrieve email messages from the specified Exchange server
 ### <a name="sendmessage"></a> Send Exchange email message
 Create and send a new email message
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Exchange connection|No|[Exchange connection](../variable-data-types.md#connections)||The Exchange connection. Create an Exchange connection with the 'Connect to Exchange server' action|
@@ -128,8 +128,8 @@ Create and send a new email message
 |Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="sendmessage_onerror"></a> Exceptions
 |Exception|Description|
@@ -140,7 +140,7 @@ Create and send a new email message
 ### <a name="processexchangemessages"></a> Process Exchange email messages
 Move, delete or mark as unread an email message (or a list of email messages)
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Exchange connection|No|[Exchange connection](../variable-data-types.md#connections)||The Exchange connection. Create an Exchange connection with the 'Connect to Exchange server' action|
@@ -153,8 +153,8 @@ Move, delete or mark as unread an email message (or a list of email messages)
 |Mail folder|No|[Text value](../variable-data-types.md#text-value)|Inbox|The name or path (e.g. folder1\folder2) of the mail-folder to move email messages to|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="processexchangemessages_onerror"></a> Exceptions
 |Exception|Description|

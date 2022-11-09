@@ -138,7 +138,7 @@ Get a property of a web page, such as its title or its source text.
 |Get|N/A|Web page description, Web page meta keywords, Web page title, Web page text, Web page source, Web browser's current URL address|Web page description|Select the information to retrieve from the web page|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |WebPageProperty|[Text value](../variable-data-types.md#text-value)|The details retrieved from the web page|

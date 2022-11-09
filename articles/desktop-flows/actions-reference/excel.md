@@ -91,7 +91,7 @@ Advanced Excel automation actions
 ### <a name="resizecolumnsorrowsaction"></a> Resize columns/rows in Excel worksheet
 Resizes a selection of columns or rows in the active worksheet of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
@@ -107,8 +107,8 @@ Resizes a selection of columns or rows in the active worksheet of an Excel insta
 |Width|No|[Numeric value](../variable-data-types.md#numeric-value)||The width of the selected columns|
 |Height|No|[Numeric value](../variable-data-types.md#numeric-value)||The height of the selected rows|
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="resizecolumnsorrowsaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -118,15 +118,15 @@ Resizes a selection of columns or rows in the active worksheet of an Excel insta
 ### <a name="runmacro"></a> Run Excel Macro
 Runs a specified macro on the document of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
 |Macro|No|[Text value](../variable-data-types.md#text-value)||The macro to run. The text should consist of the name of the macro, followed by any arguments (optional), all separated by semicolons|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="runmacro_onerror"></a> Exceptions
 |Exception|Description|
@@ -136,13 +136,13 @@ Runs a specified macro on the document of an Excel instance
 ### <a name="getactiveworksheet"></a> Get active Excel worksheet
 Retrieves an Excel document's active worksheet
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |SheetName|[Text value](../variable-data-types.md#text-value)|The name of the active worksheet|
@@ -157,13 +157,13 @@ Retrieves an Excel document's active worksheet
 ### <a name="getallworksheets"></a> Get all Excel worksheets
 Retrieves all worksheet names of an Excel document
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |SheetNames|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The names of all worksheets|
@@ -177,7 +177,7 @@ Retrieves all worksheet names of an Excel document
 ### <a name="deleteworksheet"></a> Delete Excel worksheet
 Deletes a specific worksheet from an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
@@ -186,8 +186,8 @@ Deletes a specific worksheet from an Excel instance
 |Worksheet name|No|[Text value](../variable-data-types.md#text-value)||The name of the worksheet to delete|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="deleteworksheet_onerror"></a> Exceptions
 |Exception|Description|
@@ -198,7 +198,7 @@ Deletes a specific worksheet from an Excel instance
 ### <a name="renameworksheet"></a> Rename Excel worksheet
 Renames a specific worksheet of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
@@ -208,8 +208,8 @@ Renames a specific worksheet of an Excel instance
 |Worksheet new name|No|[Text value](../variable-data-types.md#text-value)||The new name of the worksheet|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="renameworksheet_onerror"></a> Exceptions
 |Exception|Description|
@@ -220,7 +220,7 @@ Renames a specific worksheet of an Excel instance
 ### <a name="activatecellinexcel"></a> Activate Cell in Excel Worksheet
 Activate a cell in the active worksheet of an Excel instance, by providing column, row and offset
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
@@ -231,8 +231,8 @@ Activate a cell in the active worksheet of an Excel instance, by providing colum
 |Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The numeric value of the cell row. The numbering starts from 1|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="activatecellinexcel_onerror"></a> Exceptions
 |Exception|Description|
@@ -242,7 +242,7 @@ Activate a cell in the active worksheet of an Excel instance, by providing colum
 ### <a name="selectcellsfromexcel"></a> Select cells in Excel worksheet
 Selects a range of cells in the active worksheet of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
@@ -257,8 +257,8 @@ Selects a range of cells in the active worksheet of an Excel instance
 |Y Offset|No|[Numeric value](../variable-data-types.md#numeric-value)||The Y-axis offset|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="selectcellsfromexcel_onerror"></a> Exceptions
 |Exception|Description|
@@ -268,13 +268,13 @@ Selects a range of cells in the active worksheet of an Excel instance
 ### <a name="getselectedcellrange"></a> Get selected cell range from Excel worksheet
 Retrieve the selected range of cells in a structure consisting of first column, first row, last column and last row
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |FirstColumnIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the range's first column|
@@ -291,7 +291,7 @@ Retrieve the selected range of cells in a structure consisting of first column, 
 ### <a name="copycellsfromexcel"></a> Copy cells from Excel worksheet
 Copies a range of cells from the active worksheet of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
@@ -302,8 +302,8 @@ Copies a range of cells from the active worksheet of an Excel instance
 |End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the last row|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="copycellsfromexcel_onerror"></a> Exceptions
 |Exception|Description|
@@ -313,7 +313,7 @@ Copies a range of cells from the active worksheet of an Excel instance
 ### <a name="pastecellstoexcel"></a> Paste cells to Excel worksheet
 Pastes a range of cells to the active worksheet of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
@@ -322,8 +322,8 @@ Pastes a range of cells to the active worksheet of an Excel instance
 |Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row number|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="pastecellstoexcel_onerror"></a> Exceptions
 |Exception|Description|
@@ -333,7 +333,7 @@ Pastes a range of cells to the active worksheet of an Excel instance
 ### <a name="deletecellsaction"></a> Delete from Excel worksheet
 Deletes a cell or a range of cells from the active worksheet of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
@@ -344,8 +344,8 @@ Deletes a cell or a range of cells from the active worksheet of an Excel instanc
 |End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number|
 |Shift direction|N/A|Left, Up|Left|The shift direction|
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="deletecellsaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -355,15 +355,15 @@ Deletes a cell or a range of cells from the active worksheet of an Excel instanc
 ### <a name="insertrow"></a> Insert row to Excel worksheet
 Inserts a row above a selected row of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
 |Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the row to add a new row above. The numbering starts from 1|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="insertrow_onerror"></a> Exceptions
 |Exception|Description|
@@ -374,15 +374,15 @@ Inserts a row above a selected row of an Excel instance
 ### <a name="deleterow"></a> Delete row from Excel worksheet
 Deletes a selected row from an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance. This variable must have been previously specified in a Launch Excel action|
 |Delete row|No|[Numeric value](../variable-data-types.md#numeric-value)||The Index number of the row to delete. The numbering starts from 1|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="deleterow_onerror"></a> Exceptions
 |Exception|Description|
@@ -393,15 +393,15 @@ Deletes a selected row from an Excel instance
 ### <a name="insertcolumn"></a> Insert column to Excel worksheet
 Inserts a column to the left of a selected column of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
 |Column|No|[Text value](../variable-data-types.md#text-value)||The column's index number or letter. A new column will appear on the left side of the column indicated|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="insertcolumn_onerror"></a> Exceptions
 |Exception|Description|
@@ -412,15 +412,15 @@ Inserts a column to the left of a selected column of an Excel instance
 ### <a name="deletecolumn"></a> Delete column from Excel worksheet
 Deletes a selected column from an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
 |Delete column|No|[Text value](../variable-data-types.md#text-value)||The index number or letter of the column to delete|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="deletecolumn_onerror"></a> Exceptions
 |Exception|Description|
@@ -431,7 +431,7 @@ Deletes a selected column from an Excel instance
 ### <a name="findandreplaceaction"></a> Find and replace cells in Excel worksheet
 Finds text and replaces it with another in the active worksheet of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
@@ -443,7 +443,7 @@ Finds text and replaces it with another in the active worksheet of an Excel inst
 |Match entire cell contents|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether to search for cells that contain just the specified text|
 |Search by|N/A|Rows, Columns|Rows|The order in which to search for the text|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |FoundColumnIndex|[Numeric value](../variable-data-types.md#numeric-value)|The index of the column found|
@@ -458,14 +458,14 @@ Finds text and replaces it with another in the active worksheet of an Excel inst
 ### <a name="getfirstfreerowoncolumn"></a> Get first free row on column from Excel worksheet
 Retrieve the first free row, given the column of the active worksheet
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
 |Column|No|[Text value](../variable-data-types.md#text-value)||The index or letter that identifies the column. Column numbering starts from index 1|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |FirstFreeRowOnColumn|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the given column's first fully empty row|
@@ -479,7 +479,7 @@ Retrieve the first free row, given the column of the active worksheet
 ### <a name="launchexcel"></a> Launch Excel
 Launches a new Excel instance or opens an Excel document
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Launch Excel|N/A|with a blank document, and open the following document|with a blank document|Specify whether to open a New Excel document, or an existing one|
@@ -491,7 +491,7 @@ Launches a new Excel instance or opens an Excel document
 |Load add-ins and macros|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to load add-ins and macros into the new Excel instance|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExcelInstance|[Excel instance](../variable-data-types.md#instances)|The specific Excel instance for use with later Excel actions. This allows the user to specify which of possibly several Excel spreadsheets to access|
@@ -506,13 +506,13 @@ Launches a new Excel instance or opens an Excel document
 ### <a name="attach"></a> Attach to running Excel
 Attaches to an Excel document that's already open
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Document name|No|[File](../variable-data-types.md#files-and-folders)||The name or the path of the Excel document to attach to|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExcelInstance|[Excel instance](../variable-data-types.md#instances)|The Excel instance this action has attached to for use with later Excel actions|
@@ -527,7 +527,7 @@ Attaches to an Excel document that's already open
 ### <a name="readfromexcel"></a> Read from Excel worksheet
 Reads the value of a cell or a range of cells from the active worksheet of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
@@ -540,7 +540,7 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |First line of range contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to consider the first row as column names. In this case, the names won't be read as data into the table and later actions can search the data by column names|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExcelData|[General value](../variable-data-types.md#general-value)|The value of the single cell|
@@ -555,12 +555,12 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 ### <a name="getactivecell"></a> Get active cell on Excel worksheet
 Get the active cell in the active worksheet of the Excel document
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ActiveCellColumnIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the active cell's column|
@@ -574,7 +574,7 @@ Get the active cell in the active worksheet of the Excel document
 ### <a name="saveexcel"></a> Save Excel
 Saves a previously launched Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to save. This variable must have been previously specified in a Launch Excel action|
@@ -583,8 +583,8 @@ Saves a previously launched Excel instance
 |Document path|No|[File](../variable-data-types.md#files-and-folders)||The full path to save the document as|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="saveexcel_onerror"></a> Exceptions
 |Exception|Description|
@@ -594,7 +594,7 @@ Saves a previously launched Excel instance
 ### <a name="writetoexcel"></a> Write to Excel worksheet
 Writes a value into a cell or a range of cells of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action|
@@ -604,8 +604,8 @@ Writes a value into a cell or a range of cells of an Excel instance
 |Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row of the cell to write to. The numbering starts from 1, meaning that the index of the fist worksheet is 1, of the second is 2 etc.|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="writetoexcel_onerror"></a> Exceptions
 |Exception|Description|
@@ -615,7 +615,7 @@ Writes a value into a cell or a range of cells of an Excel instance
 ### <a name="closeexcel"></a> Close Excel
 Closes an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to close. This variable must have been previously specified in a Launch Excel action|
@@ -624,8 +624,8 @@ Closes an Excel instance
 |Document path|No|[File](../variable-data-types.md#files-and-folders)||The full path of the document|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="closeexcel_onerror"></a> Exceptions
 |Exception|Description|
@@ -636,7 +636,7 @@ Closes an Excel instance
 ### <a name="setactiveworksheet"></a> Set active Excel worksheet
 Activates a specific worksheet of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
@@ -645,8 +645,8 @@ Activates a specific worksheet of an Excel instance
 |Worksheet name|No|[Text value](../variable-data-types.md#text-value)||The name of the worksheet to activate|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setactiveworksheet_onerror"></a> Exceptions
 |Exception|Description|
@@ -657,7 +657,7 @@ Activates a specific worksheet of an Excel instance
 ### <a name="addworksheet"></a> Add new worksheet
 Adds a new worksheet to the document of an Excel instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action|
@@ -665,8 +665,8 @@ Adds a new worksheet to the document of an Excel instance
 |Add worksheet as|N/A|First worksheet, Last worksheet|First worksheet|Specify whether the new Excel worksheet will be added before or after the existing worksheets|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="addworksheet_onerror"></a> Exceptions
 |Exception|Description|
@@ -677,13 +677,13 @@ Adds a new worksheet to the document of an Excel instance
 ### <a name="getfirstfreecolumnrow"></a> Get first free column/row from Excel worksheet
 Retrieves the first free column and/or row of the active worksheet. This is useful for adding new data into a worksheet that already has data in it
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify The Excel instance. This variable must have been previously specified in a Launch Excel action|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |FirstFreeColumn|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the first fully empty column. For example, if column F is the first empty column, it will be stored as '6'|
@@ -698,19 +698,19 @@ Retrieves the first free column and/or row of the active worksheet. This is usef
 ### <a name="getcolumnname"></a> Get column name on Excel worksheet
 Gets the name of the column
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Column number|No|[Numeric value](../variable-data-types.md#numeric-value)||The column number|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ColumnName|[Text value](../variable-data-types.md#text-value)|The name of the column|
 
 ##### <a name="getcolumnname_onerror"></a> Exceptions
 
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -47,10 +47,10 @@ To clear the clipboard, use the **Clear clipboard contents** action.
 ### <a name="gettext"></a> Get clipboard text
 Gets clipboard text
 
-##### Input Parameters
-- This action doesn't require any input
+##### Input parameters
+This action doesn't require any input.
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ClipboardText|[Text value](../variable-data-types.md#text-value)|The text stored in the clipboard|
@@ -64,14 +64,14 @@ Gets clipboard text
 ### <a name="settext"></a> Set clipboard Text
 Sets clipboard text
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Clipboard text|No|[Text value](../variable-data-types.md#text-value)||The text to set to the clipboard|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="settext_onerror"></a> Exceptions
 |Exception|Description|
@@ -81,14 +81,14 @@ Sets clipboard text
 ### <a name="clear"></a> Clear clipboard contents
 Clears clipboard contents
 
-##### Input Parameters
-- This action doesn't require any input
+##### Input parameters
+This action doesn't require any input.
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="clear_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 
 

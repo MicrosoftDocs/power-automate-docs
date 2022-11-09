@@ -71,7 +71,7 @@ The Tesseract engine can be also used to extract text from multilingual document
 ### <a name="iftextonscreenaction"></a> If text on screen (OCR)
 Marks the beginning of a conditional block of actions depending on whether a given text appears on the screen or not, using OCR
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If text|N/A|Exists, Doesn't exist|Exists|Specifies whether to check if the text exists or not on the given source to analyze|
@@ -105,7 +105,7 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 > - The **OCR engine variable** option is planned for deprecation.
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |LocationOfTextFoundX|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
@@ -127,7 +127,7 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 ### <a name="waittextonscreenaction"></a> Wait for text on screen (OCR)
 Wait until a specific text appears/disappears on the screen, on the foreground window, or relative to an image on the screen or foreground window using OCR
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for text to|N/A|Appear, Disappear|Appear|Specifies whether to wait for the text to appear or disappear|
@@ -162,7 +162,7 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 > - The **OCR engine variable** option is planned for deprecation.
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |LocationOfTextFoundX|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the text appears on the screen. If the search is performed in the foreground window, the coordinate returned is relative to the top left corner of the window|
@@ -188,7 +188,7 @@ Create a Tesseract OCR engine
 > [!NOTE]
 > The **MODI OCR engine** and the **Create Tesseract OCR engine** action are planned for deprecation. You can find more information about the deprecation in the [respective blog post](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Announcing-deprecation-of-MODI-OCR-engine-and-Create-Tesseract/ba-p/941316#M1186).
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Use other language|N/A|Boolean value|False|Specifies whether to use a language not given in the choices|
@@ -199,7 +199,7 @@ Create a Tesseract OCR engine
 |Image height multiplier|Yes|Numeric value|1|The image's height multiplier|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |OCREngine|OCREngineObject|The OCR engine for use with later OCR actions|
@@ -225,7 +225,7 @@ Create a MODI OCR engine
 > [!NOTE]
 > The **MODI OCR engine** and the **Create Tesseract OCR engine** action are planned for deprecation. You can find more information about the deprecation in the [respective blog post](https://powerusers.microsoft.com/t5/Power-Automate-Community-Blog/Announcing-deprecation-of-MODI-OCR-engine-and-Create-Tesseract/ba-p/941316#M1186).
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |MODI language|N/A|Chinese simplified, Chinese traditional, Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Russian, Spanish, Swedish, Turkish|English|The language of the image's text that the MODI engine detects|
@@ -233,7 +233,7 @@ Create a MODI OCR engine
 |Image height multiplier|Yes|Numeric value|1|The image's height multiplier|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |OCREngine|OCREngineObject|The OCR engine to use with later OCR actions|
@@ -255,7 +255,7 @@ You can perform the initialization directly through the actions that require the
 ### <a name="extracttextwithocr"></a> Extract text with OCR
 Extract text from a given source using the given OCR engine
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |OCR engine|No|Windows OCR engine, Tesseract engine, OCR engine variable|OCR engine variable|The OCR engine type to use. Select a preconfigured OCR engine or set up a new one|
@@ -284,7 +284,7 @@ Extract text from a given source using the given OCR engine
 > [!NOTE]
 > The **OCR engine variable** option is planned for deprecation.
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |OcrText|[Text value](../variable-data-types.md#text-value)|The result after the text extraction|
