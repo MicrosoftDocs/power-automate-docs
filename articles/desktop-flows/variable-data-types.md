@@ -222,8 +222,7 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 ## Others
 
-<!-- This could use an introductory sentence or more, explaining what this section is about. -->
-
+This section presents all the available data types that don't belong to any of the previous categories.
 
 ### General value
 
@@ -238,11 +237,7 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 [Active Directory data type properties](datatype-properties.md#active-directory-entry)
 
-### AWS
-
-
-<!-- Is this Amazon Web Services? If so, we should use the full name, followed by the acronym, i.e. Amazon Web Services (AWS). -->
-
+### Amazon Web Services (AWS)
 
 - **EC2 client** – Contains an EC2 session created through the **Create EC2 session** action.
 - **EC2 instance** – Represents a retrieved EC2 instance.
