@@ -81,7 +81,7 @@ Start EC2 instance(s)
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|StartingEc2Instances|[List](../variable-data-types.md#list) of [Instance state changes](../variable-data-types.md#aws)|The returned information for the started instances|
+|StartingEc2Instances|[List](../variable-data-types.md#list) of [Instance state changes](../variable-data-types.md#amazon-web-services-aws)|The returned information for the started instances|
 
 
 ##### <a name="startec2instance_onerror"></a> Exceptions
@@ -108,7 +108,7 @@ Stop EC2 instance(s)
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|StoppingEc2Instances|[List](../variable-data-types.md#list) of [Instance state changes](../variable-data-types.md#aws)|The returned information for the stopped instances|
+|StoppingEc2Instances|[List](../variable-data-types.md#list) of [Instance state changes](../variable-data-types.md#amazon-web-services-aws)|The returned information for the stopped instances|
 
 
 ##### <a name="stopec2instance_onerror"></a> Exceptions
@@ -157,7 +157,7 @@ Get information for the relevant EC2 instances
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Ec2InstancesInfo|[List](../variable-data-types.md#list) of [EC2 instances info](../variable-data-types.md#aws)|The list of the EC2 instances|
+|Ec2InstancesInfo|[List](../variable-data-types.md#list) of [EC2 instances info](../variable-data-types.md#amazon-web-services-aws)|The list of the EC2 instances|
 
 
 ##### <a name="getavailableec2instances_onerror"></a> Exceptions
@@ -182,7 +182,7 @@ Returns all the information for the specified EC2 instance(s)
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|Ec2Instances|[List](../variable-data-types.md#list) of [EC2 instances](../variable-data-types.md#aws)|The retrieved instance(s) with all the relevant information|
+|Ec2Instances|[List](../variable-data-types.md#list) of [EC2 instances](../variable-data-types.md#amazon-web-services-aws)|The retrieved instance(s) with all the relevant information|
 
 
 ##### <a name="describeec2instance_onerror"></a> Exceptions
@@ -240,7 +240,7 @@ Describes the specified EBS snapshots available
 ##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
-|EBSSnapshots|[List](../variable-data-types.md#list) of [EBS snapshots](../variable-data-types.md#aws)|The retrieved snapshot(s) with all the relevant information|
+|EBSSnapshots|[List](../variable-data-types.md#list) of [EBS snapshots](../variable-data-types.md#amazon-web-services-aws)|The retrieved snapshot(s) with all the relevant information|
 
 
 ##### <a name="describesnapshots_onerror"></a> Exceptions
