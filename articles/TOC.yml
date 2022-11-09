@@ -396,9 +396,9 @@
       href: ./desktop-flows/debugging-flow.md
     - name: Manage variables and the variables pane
       href: ./desktop-flows/manage-variables.md
-    - name: Variable datatypes
+    - name: Variable data types
       href: ./desktop-flows/variable-data-types.md
-    - name: Variables datatype properties
+    - name: Variable data type properties
       href: ./desktop-flows/datatype-properties.md
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md

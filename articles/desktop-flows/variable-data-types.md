@@ -1,11 +1,11 @@
 ---
 title: Variable data types
-description: Variable data types
+description: See all the available variable data types in desktop flows.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 11/09/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -19,7 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-# Variable datatypes
+# Variable data types
 
 When you create variables in your flows, Power Automate converts them to a specific type based on their content.
 

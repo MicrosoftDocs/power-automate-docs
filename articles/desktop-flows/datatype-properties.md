@@ -1,6 +1,6 @@
 ---
-title: Datatype properties
-description: Datatype properties
+title: Variable data type properties
+description: See all the available data type properties of desktop flow variables.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -19,7 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-# Variables datatype properties
+# Variable data type properties
 
 
 
