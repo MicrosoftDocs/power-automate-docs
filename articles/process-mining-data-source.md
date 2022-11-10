@@ -1,15 +1,14 @@
 ---
 title: Edit and refresh processes in process advisor (preview) | Microsoft Docs
 description: This topic describes how to edit and refresh processes with process mining in the process advisor feature in Power Automate.
-author: nijemcevic
+author: donums
 contributors:
-
-  - nijemcevic
-  - v-aangie
+  - donums
+  - v-aangie  
 ms.subservice: process-advisor
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/15/2022
-ms.author: tatn
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -46,7 +45,7 @@ Some of the reasons why you might want to edit the query are:
    >
    > Try to avoid selecting options like **Choose columns** again in the toolbar if they're already listed in the applied steps, as it will be added as a new step to the end of applied steps. This means that if you already applied the **Choose columns** step, the new **Choose columns** step will give you fewer options to choose from, since the original **Choose columns** step already filtered down the list of available columns.
 
-   :::image type="content" source="media/process-mining-data-source/applied-steps-warning.png" alt-text="Screenshot of the Query settings dialog.":::
+   :::image type="content" source="media/process-mining-data-source/applied-steps-warning.png" alt-text="Screenshot of the Applied steps in the Query settings dialog.":::
 
 ## Refresh data
 

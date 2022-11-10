@@ -1,14 +1,14 @@
 ---
 title: Share process mining processes in process advisor (preview) | Microsoft Docs
 description: Share a process mining process with others so that they can glean insights to make decisions.
-author: nijemcevic
+author: donums
 contributors:
-  - nijemcevic
-  - v-aangie
+  - donums
+  - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 11/15/2022
-ms.author: nijemcevic
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow

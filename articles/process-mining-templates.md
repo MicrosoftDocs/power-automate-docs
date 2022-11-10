@@ -1,14 +1,14 @@
 ---
 title: Power Platform templates for process mining in process advisor (preview)
 description: Learn how to use Power Platform templates for process mining in the Power Automate process advisor.
-author: nijemcevic
+author: donums
 contributors:
-  - nijemcevic
-  - v-aangie 
+  - donums
+  - v-aangie  
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 10/31/2022
-ms.author: tatn
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -35,42 +35,26 @@ The Desktop flows template analyzes the run history of flows that you create wit
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Desktop flows** tile.
 
-1. In the **Process name** box, enter a name for your process.
+1. In the **Process name** field, enter a name for your process.
 
-1. If you know the Flow ID of the flow you want to analyze, enter it in the **Flow ID (optional)** box. If you don't know the Flow ID, you can skip this step.
+1. If you know the Flow ID of the flow you want to analyze, enter it in the **Flow ID (optional)** field. If you don't know the Flow ID, you can skip this step.
 
     > [!TIP]
     > To find the Flow ID, edit the flow and look at the URL in your browser's address bar. Everything between "flows/" and "/details" is the Flow ID:
     >
     >:::image type="content" source="media/process-mining-templates/find-flow-id.png" alt-text="Screenshot of a flow URL with the Flow ID highlighted.":::
 
-1. (Optional) In the **Description** box, enter a description for the process.
-
-1. Select **Create**.
-
-1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
-
-    If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
-
-1. Select **Save**.
-
-1. If you know your flow ID, enter it in the **Flow ID (optional)** field. If you don't know your flow ID, go to the next step.
-
-    To learn more about the flow ID, go to the [General Power Automate Discussion](https://powerusers.microsoft.com/t5/General-Power-Automate/Flow-ID/m-p/83160#M19806).
-
 1. (Optional) In the **Description** field, enter a description for the process.
 
 1. Select **Create**.
 
-1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
+1. In the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
-1. If you're signed in, you'll see your credentials. You can choose to switch accounts.
+    If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
-    If you're not signed in, select **Sign in** and authenticate through AAD.
+Process advisor will analyze your process. It may take up to two minutes for the analytics to appear.
 
-Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later.
-
-[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
+Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Power Virtual Agents template
 
@@ -82,13 +66,13 @@ The Power Virtual Agents template analyzes your bots to help you better understa
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Virtual Agents** tile.
 
-1. In the **Process name** box, enter a name for your process.
+1. In the **Process name** field, enter a name for your process.
 
-1. (Optional) In the **Description** box, enter a description for the process.
+1. (Optional) In the **Description** field, enter a description for the process.
 
 1. Select **Create**.
 
-1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
+1. In the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
@@ -96,7 +80,7 @@ The Power Virtual Agents template analyzes your bots to help you better understa
 
 Process advisor will analyze your process. It may take several minutes for the analytics to appear. You can leave the page and return later.
 
-[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
+Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Power Apps insights template
 
@@ -146,17 +130,17 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Apps insights** tile.
 
-1. In the **Process name** box, enter a name for your process.
+1. In the **Process name** field, enter a name for your process.
 
-1. In the **Power Apps application insights app ID** box, paste the Application ID from Application Insights.
+1. In the **Power Apps application insights app ID** field, paste the Application ID from Application Insights.
 
-1. In the **Case ID field name** and **Activity field name** boxes, select the dimensions that represent the Case ID and Activity you want to analyze.
+1. In the **Case ID field name** and **Activity field name** fields, select the dimensions that represent the Case ID and Activity you want to analyze.
 
-1. (Optional) In the **Description** box, enter a description for the process.
+1. (Optional) In the **Description** field, enter a description for the process.
 
 1. Select **Create**.
 
-1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
+1. In the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
@@ -168,7 +152,7 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
 Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later.
 
-[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
+Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ### See also
 
