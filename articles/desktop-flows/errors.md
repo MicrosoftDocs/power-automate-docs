@@ -25,7 +25,7 @@ Desktop flows can cause two kinds of errors:
 
 - **Design-time errors** are associated with the configuration of the deployed actions. These errors appear during development and prevent desktop flows from running. For example, an empty mandatory field or an undefined variable can cause this type of error.
 
-- **Run-time errors**, also known as exceptions, occur during execution and make desktop flows fail. For example, an invalid file path can cause this kind of error. Use any of the [available error-handling options](#configure-error-handling-functionality) to prevent your desktop flows from falling.
+- **Run-time errors**, also known as exceptions, occur during execution and make desktop flows fail. For example, an invalid file path can cause this kind of error. Use any of the [available error-handling options](#configure-error-handling-functionality) to prevent your desktop flows from failing.
 
 When an action throws an error, the flow designer displays an icon next to it and a pop-up pane with relevant information. If the error occurred is a design-time error,  the flow designer also displays an error description in the action's modal.
 
