@@ -41,7 +41,7 @@ Apart from errors, the flow designer displays warnings that indicate non-critica
 
 The errors pane is the flow designer's component responsible for displaying information regarding occurred errors and warnings.
 
-It consists of three columns:
+It consists of four columns:
 
 - **Type**: Indicates if the displayed item is an error or warning.
 - **Description**: A description of the occurred error or warning.
