@@ -43,9 +43,10 @@ The errors pane is the flow designer's component responsible for displaying info
 
 It consists of three columns:
 
+- **Type**: Indicates if the displayed item is an error or warning.
+- **Description**: A description of the occurred error or warning.
 - **Subflow**: The name of the subflow that contains the erroneous action or the action that causes the warning.
-- **Action**: The line number of the erroneous action or the action that causes the warning.
-- **Error**: The message of the occurred error or warning.
+- **Line**: The line number of the erroneous action or the action that causes the warning.
 
 The pane also provides filters to display errors, warnings, and/or items related to specific subflows.
 

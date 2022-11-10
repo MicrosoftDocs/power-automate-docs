@@ -71,7 +71,7 @@ Disabling an action allows you to remove it from the flow without erasing it. Th
 
 When an action is disabled, all variables initialized in its modal get hidden from the variables pane. The flow may throw an error if you use the hidden variables in other actions.
 
-In the example below, two actions throw an error because they contain variables defined in a disabled action.
+In the example below, two actions throw an error because they contain variables defined in a disabled action. To find information on how to handle errors, go to [Handle errors in desktop flows](errors.md).
 
 :::image type="content" source="media/enabling-disabling-actions/enable-disable-action-variables.png" alt-text="Screenshot of an example in which disabling an action causes errors.":::
 
