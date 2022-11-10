@@ -56,7 +56,7 @@ To see additional information regarding a thrown error or warning, double-click 
 
 - **Location**: The subflow and the action that threw the error or warning.
 - **Error message**: The message of the occurred error or warning.
-- **Error details**: A long description of the occurred run-time error. These details give a clear message about why the run-time error happened.
+- **Error details**: A long description of the occurred run-time error. These details give a clear message about why the run-time error happened. This field isn't available for design-time errors and warnings.
 
 :::image type="content" source="media/errors/error-details.png" alt-text="Screenshot of the error details dialog.":::
 
