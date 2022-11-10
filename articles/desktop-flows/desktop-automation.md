@@ -1,6 +1,6 @@
 ---
-title: Desktop automation | Microsoft Docs
-description: Desktop automation
+title: Automate desktop applications | Microsoft Docs
+description: See how to automate desktop applications and extract data from them
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
