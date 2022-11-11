@@ -58,7 +58,7 @@ Learn how to [visualize and gain insights from processes](process-mining-visuali
 
 ## Power Virtual Agents template
 
-The Power Virtual Agents template analyzes your bots to help you better understand your users' journey and maximize the bots' effectiveness. To learn more, go to [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+The Power Virtual Agents template analyzes your bots to help you better understand your users' journey and maximize the bots' effectiveness. To learn more about Power Virtual Agents, go to [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 
 ### Create and run the Power Virtual Agents template
 
@@ -78,13 +78,13 @@ The Power Virtual Agents template analyzes your bots to help you better understa
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take several minutes for the analytics to appear. You can leave the page and return later.
+Process advisor will analyze your process. It might take several minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Power Apps insights template
 
-The Power Apps insights template enables you to visualize the actions and success of your Power Apps. It allows you to maximize your apps' functionality and manage its success rate. To learn more, go to [What is Power Apps?](/power-apps/powerapps-overview)
+The Power Apps insights template enables you to visualize the actions and success of your Power Apps. It allows you to maximize your apps' functionality and manage its success rate. To learn more about Power Apps, go to [What is Power Apps?](/power-apps/powerapps-overview)
 
 The Power Apps insights template uses telemetry data from [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze your apps. That means you'll need to get an Application ID for your app in an Application Insights resource before you can run the Power Apps insights template.
 
@@ -150,7 +150,7 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later.
+Process advisor will analyze your process. It might take up to two minutes for the analytics to appear. You can leave the page and return later.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 

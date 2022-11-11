@@ -63,7 +63,7 @@ The Azure DevOps (work tracking) template uses data from your Azure Boards to an
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later.
+Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -103,7 +103,7 @@ The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze you
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later.
+Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -151,7 +151,7 @@ The Logic Apps with App (standard plan) template uses telemetry data from [Azure
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later.
+Process advisor will analyze your process. It might take up to two minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -201,7 +201,7 @@ The Logic App Consumption Plan template uses data from Azure DevOps to analyze y
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later.
+Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -249,7 +249,7 @@ The Durable Functions template uses data from your Azure Durable Functions stora
 
 1. Once the connection credentials are established, select **Save**.
 
-Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later.
+Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 

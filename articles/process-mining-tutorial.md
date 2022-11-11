@@ -169,7 +169,7 @@ We want to compare the paths that have this **Refund With Special Voucher** step
 
 We've created two different views. One view shows the paths that have the **Refund With Special Voucher** step but not the **Refund With Standard Voucher** step (Refund w/ Special Voucher). The other view is its inverse (Refund w/ Standard Voucher). Let's compare these two views.
 
-1. In the left navigation panel, select **Process compare**.
+1. In the left panel, select **Process compare**.
 
 1. In the bottom right corner, select (**+**).
 
@@ -221,3 +221,20 @@ An organization should do further analysis to determine why using the standard i
 
 To learn more about how to take advantage of the advanced capabilities of the minit desktop application, go to [Minit desktop application overview (preview)](minit/minit-desktop-application-overview.md).
 
+## Customize reports in Power BI workspace
+
+With Process advisor’s powerful integration with Power BI, you can customize your process reports in an attached Power BI workspace. In this example, we'll perform a customization of the Power BI report to include a card that holds or tracks one of the analytic measures.
+
+1. Complete the following steps:
+
+    1. Setup: Connect your Power BI workspace to Process Advisor.
+
+    1. Create your own Custom Power BI workspace.
+
+    1. Load your process analytics in Power BI Online to start customizing your report.
+
+1. Return to the analytics page of your process in process advisor.
+
+1. Select **Refresh** to refresh and reanalyze the process.
+
+1. Select **Open in Power BI**, which should appear if you properly attached your process to a Power BI workspace following the instructions in Load your process analytics in Power BI Online to start customizing your report. <!--add link.-->

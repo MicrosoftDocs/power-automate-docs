@@ -69,13 +69,13 @@ Here are some reasons to help you decide to use task mining.
 
 Explore the topics in [Process mining (preview)](process-mining-overview.md) and [Task mining](task-mining-overview.md) in this documentation for the following:
 
-- Business scenarios 
+- Business scenarios
 
-- Tutorials 
+- Tutorials
 
-- Guided procedures 
+- Guided procedures
 
-- Videos 
+- Videos
 
 ## Licensing
 
