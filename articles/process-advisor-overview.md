@@ -19,7 +19,7 @@ search.audienceType:
 
 # Overview of process advisor
 
-The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this. Take a quick self-guided tour by going to [Process Advisor guided tour](https://guidedtour.microsoft.com/en-us/guidedtour/power-platform/process-advisor/1/1).
+The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this. Take a quick self-guided tour by going to [Process Advisor guided tour](https://guidedtour.microsoft.com/en-us/guidedtour/power-platform/process-advisor/1/1). 
 
 Task mining and process mining share the same goal of improving process efficiency. The main difference is their area of focus.
 
@@ -111,12 +111,11 @@ Before you start using process advisor, make sure you have the following prerequ
 
 - (If you want to set up dataflows for process mining) An Environment Maker security role.  
    - If you're assigned an Environment Admin or System Admin role, go to [What are dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) to learn more.  
-
-- (For additional process mining capabilities) Download the [minit desktop application](minit/how-to-start-with-minit-desktop-application.md).
-
 - To customize your report, you need to set up your Power BI workspace and register the process advisor service principal in Azure AD.
 
 - Power Automate for desktop for task mining. You can download it from process advisor.
   - To learn more, go to [Introduction to desktop flows](desktop-flows/introduction.md).
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+- (If you want to set up dataflows for process mining) An Environment Maker security role .  
+   - If you're assigned an Environment Admin or System Admin role, go to What are dataflows to learn more.  
+
