@@ -31,9 +31,17 @@ Activities describe tasks or actions, the sequence of which makes up a business 
 
 Different activity combinations and *paths* are shown separately on the process map. A process path is a unique sequence from start to finish of the process. Each path differs from the others by at least one activity.
 
-You can see more metrics on the process map, like *frequency* of the activities, and process throughput time (*case duration*), and *rework*.
+You can see more metrics on the process map, including the following.
 
-Frequency shows you the total number of workflows (also known as cases) passing through it. *Case duration* is the time between the first event of the case and the last. *Rework* encompasses all the self-loops and loops that are happening in your process. A *self-Loop* is the occurrence where an activity repeats itself. A *loop* is the occurrence where a sequence of activities has one or more activities repeated.
+- **Frequency**: The total number of workflows (also known as cases) passing through it.
+
+- **Case duration**: The time between the first event of the case and the last.
+
+- **Rework**: Encompasses all the self-loops and loops that are happening in your process.
+
+- **Self-Loop**: The occurrence where an activity repeats itself.
+
+-  **loop**: The occurrence where a sequence of activities has one or more activities repeated.
 
 To learn more about the process map visual, go to [Process map overview (preview)](minit/process-map.md).
 
