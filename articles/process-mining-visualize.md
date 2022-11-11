@@ -46,4 +46,4 @@ To learn more about the process map visual, go to [Process map overview (preview
 
 You'll get several prebuilt KPIs and visualizations to help you to understand your process. You can filter by selectors, such as **Activity)** and **Case Id**, and custom filters (if you added the custom attributes (data columns) when you uploaded your data for analysis.
 
-:::image type="content" source="media/process-mining-visualize/analytics.png" alt-text="Screenshot of Browse OneDrive.":::
+:::image type="content" source="media/process-mining-visualize/analytics-1.png" alt-text="Screenshot of Browse OneDrive.":::
