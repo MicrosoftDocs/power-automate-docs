@@ -42,7 +42,7 @@ Frequency shows you the total number of workflows (also known as cases) passing 
 
 To learn more about the process map visual, go to [Process map overview (preview)](minit/process-map.md).
 
-## Use KPIs and visualizations for analytics 
+## Use KPIs and visualizations for analytics
 
 You'll get several prebuilt KPIs and visualizations to help you to understand your process. You can filter by selectors, such as **Activity)** and **Case Id**, and custom filters (if you added the custom attributes (data columns) when you uploaded your data for analysis.
 
