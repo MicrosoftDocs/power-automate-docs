@@ -666,6 +666,8 @@
       href: process-mining-troubleshoot.md
     - name: Visualize and gain insights from processes
       href: process-mining-visualize.md
+    - name: Customize a report with your own Power BI workspace
+      href: process-mining-pbi-workspace.md
     - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
