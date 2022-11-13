@@ -21,7 +21,7 @@ search.audienceType:
 
 # Scripting
 
-Incorporate scripting languages code in you automation
+Incorporate scripting languages code in your automation
 
 [Run DOS command](#rundoscommand)  
 [Run VBScript](#runvbscript)  
