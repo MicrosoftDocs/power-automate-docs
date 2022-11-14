@@ -1,5 +1,5 @@
 ---
-title: Handle links that open new tabs | Microsoft Docs
+title: Handle links that open new tabs
 description: Handle links that open new tabs
 author: georgiostrantzas
 

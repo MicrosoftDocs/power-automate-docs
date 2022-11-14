@@ -1,5 +1,5 @@
 ---
-title: Add images to email messages | Microsoft Docs
+title: Add images to email messages
 description: Add images to email messages
 author: georgiostrantzas
 

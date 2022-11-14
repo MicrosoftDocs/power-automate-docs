@@ -1,5 +1,5 @@
 ---
-title: Close any window through its process ID | Microsoft Docs
+title: Close any window through its process ID
 description: Close any window through its process ID
 author: georgiostrantzas
 

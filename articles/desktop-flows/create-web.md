@@ -1,5 +1,5 @@
 ---
-title: Learn to create Selenium IDE flows for Websites | Microsoft Docs
+title: Learn to create Selenium IDE flows for Websites
 description: Learn to automate Web apps with Selenium IDE flows.
 services: ''
 suite: flow

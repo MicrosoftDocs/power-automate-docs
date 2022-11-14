@@ -1,5 +1,5 @@
 ---
-title: Monitor desktop flows in the Center of Excellence | Microsoft Docs
+title: Monitor desktop flows in the Center of Excellence
 description: Learn about trends, usage patterns, and more.
 services: ''
 suite: flow

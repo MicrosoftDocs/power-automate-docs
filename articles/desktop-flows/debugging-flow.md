@@ -1,5 +1,5 @@
 ---
-title: Debugging a desktop flow | Microsoft Docs
+title: Debugging a desktop flow
 description: Use the flow designer's debugging options to debug flows.
 author: georgiostrantzas
 

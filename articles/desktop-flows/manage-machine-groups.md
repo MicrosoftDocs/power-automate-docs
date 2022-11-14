@@ -1,5 +1,5 @@
 ---
-title: Manage machine groups | Microsoft Docs
+title: Manage machine groups
 description: Manage machine groups
 author: georgiostrantzas
 

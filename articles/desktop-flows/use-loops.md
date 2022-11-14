@@ -1,5 +1,5 @@
 ---
-title: Using loops | Microsoft Docs
+title: Using loops
 description: Using loops
 author: georgiostrantzas
 

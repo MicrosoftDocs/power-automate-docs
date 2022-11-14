@@ -1,5 +1,5 @@
 ---
-title: Get the coordinates and size of a web element | Microsoft Docs
+title: Get the coordinates and size of a web element
 description: Get the coordinates and size of a web element
 author: georgiostrantzas
 

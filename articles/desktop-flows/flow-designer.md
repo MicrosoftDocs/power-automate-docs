@@ -1,5 +1,5 @@
 ---
-title: Flow designer | Microsoft Docs
+title: Flow designer
 description: Introduction to Power Automate flow designer
 author: georgiostrantzas
 

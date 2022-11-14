@@ -1,5 +1,5 @@
 ---
-title: Manage variables and the variables pane| Microsoft Docs
+title: Manage variables and the variables pane
 description: See how to manage variables and the variables pane
 author: georgiostrantzas
 

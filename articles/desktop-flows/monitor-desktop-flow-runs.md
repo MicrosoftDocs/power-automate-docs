@@ -1,5 +1,5 @@
 ---
-title: Monitor desktop flow runs | Microsoft Docs
+title: Monitor desktop flow runs
 description: Monitor desktop flow runs
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: Create a Power Automate desktop flow | Microsoft Docs
+title: Create a Power Automate desktop flow
 description: Use the Power Automate designer to create a desktop flow.
 author: georgiostrantzas
 

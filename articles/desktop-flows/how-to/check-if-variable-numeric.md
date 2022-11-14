@@ -1,5 +1,5 @@
 ---
-title: Check if a variable is numeric | Microsoft Docs
+title: Check if a variable is numeric
 description: Check if a variable is numeric	
 author: georgiostrantzas
 

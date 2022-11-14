@@ -1,5 +1,5 @@
 ---
-title: Click all the elements in a list of links | Microsoft Docs
+title: Click all the elements in a list of links
 description: Click all the elements in a list of links
 author: georgiostrantzas
 

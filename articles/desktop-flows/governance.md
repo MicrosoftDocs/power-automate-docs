@@ -1,24 +1,14 @@
 ---
-title: Governance in Power Automate | Microsoft Docs
-description: Governance in Power Automate.
-services: ''
-suite: flow
-documentationcenter: na
+title: Governance
+description: See how to configure Power Automate using Windows registry keys.
 author: georgiostrantzas
-editor: ''
-tags: ''
 
-ms.devlang: na
-ms.subservice: desktop-flow
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 10/05/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
 - Yiannismavridis
-- NikosMoutzourakis
 - PetrosFeleskouras
 search.app: 
   - Flow 
