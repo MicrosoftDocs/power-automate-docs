@@ -31,9 +31,11 @@ This setting specifies if preset filters should be applied to the process before
 
 ### Export type
 
-Here, you can select the type of export. The export of events is one of the export types in which the entire process log is exported. Another type is the export of cases in which selected information about cases without respective individual events are exported.
+You can select the type of export. The export of events is one of the export types in which the entire process log is exported. Another type is the export of cases in which selected information about cases without respective individual events are exported.
 
 ### Export as
+
+You can export the data to share specific findings in the process, for example when filtering is applied. Data can be imported again by another user who has the resource file (export).  
 
 Select a format for the data to export. At present, the following formats are supported:
 
@@ -42,18 +44,6 @@ Select a format for the data to export. At present, the following formats are su
 - XES (Extensible Event Stream)
 
 - MXML (Mining eXtensible Markup Language)
-
-- Enter the application path
-
-- Enter the application name
-
-- Export of cases&mdash;CSV (comma separated records)
-
-- Enter the application path
-
-- Enter the application name
-
-
 
 ### Export as a ZIP
 
