@@ -31,21 +31,19 @@ Some of the reasons why you might want to edit the query are:
 
 1. In the process details page, return to the Query Editor by selecting **Setup**.
 
-1. If you want to change the case ID or other mappings, you can do so by changing the values in the dropdown that correspond to the column name from the original data. 
+1. If you want to change the case ID or other mappings, you can do so by changing the values in the dropdown menu that correspond to the column name from the original data.
 
-1. If you want to make more advanced edits, select the **Transform data in Power Query** button on the top right.
+1. If you want to make more advanced edits, select **Transform data in Power Query** on the top right.
 
 1. In the Power Query editor, if you've already added the step you want to edit, like choose columns, select (or double-click) the corresponding step in the **Applied steps** area under **Query settings** to edit those steps.  
 
-1. Otherwise, select the step you want to add in the toolbar.
-
-   :::image type="content" source="media/process-mining-data-source/applied-steps.png" alt-text="Screenshot of the Query settings dialog.":::
+    Otherwise, select the step you want to add in the toolbar.
 
    > [!WARNING]
    >
    > Try to avoid selecting options like **Choose columns** again in the toolbar if they're already listed in the applied steps, as it will be added as a new step to the end of applied steps. This means that if you already applied the **Choose columns** step, the new **Choose columns** step will give you fewer options to choose from, since the original **Choose columns** step already filtered down the list of available columns.
 
-   :::image type="content" source="media/process-mining-data-source/applied-steps-warning.png" alt-text="Screenshot of the Applied steps in the Query settings dialog.":::
+     :::image type="content" source="media/process-mining-data-source/applied-steps-warning.png" alt-text="Screenshot of the Applied steps in the Query settings dialog.":::
 
 ## Refresh data
 

@@ -19,7 +19,7 @@ search.audienceType:
 
 # Overview of process advisor
 
-The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this. Take a quick self-guided tour by going to [Process Advisor guided tour](https://guidedtour.microsoft.com/en-us/guidedtour/power-platform/process-advisor/1/1). 
+The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this.
 
 Task mining and process mining share the same goal of improving process efficiency. The main difference is their area of focus.
 
@@ -33,7 +33,7 @@ Task mining and process mining share the same goal of improving process efficien
 
 Here are some reasons to help you decide to use process mining.
 
-- See the actual steps needed to perform your organization’s operation process and remove any guesswork&mdash;Check you process reality as it is.
+- See the actual steps needed to perform your organization’s operation process and remove any guesswork.
 
 - Save time and money by optimizing processes.
 
@@ -85,11 +85,11 @@ For more information about process advisor licensing, go to [Power Automate pric
 
 For complete licensing details, go to the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
 
-There are data limitations on Dataverse and it’s possible that you’ll run out of space. If you need to buy more Dataverse space, go to the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). The Power Platform licensing guide will be sent to your **Downloads** folder. 
+There are data limitations on Dataverse and it’s possible that you’ll run out of space. If you need to buy more Dataverse space, go to the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). The Power Platform licensing guide will be sent to your **Downloads** folder.
 
-Currently, only the task mining recording feature is generally available and will require either a license or trial. The process mining data feature and the templates, are in public preview and don't require a license or trial. However, a license or trial is needed if you're using this feature in an environment that isn't the default environment.
+Currently, only the task mining recording feature is generally available and will require either a license or trial. The process mining data feature and the templates are in public preview and don't require a license or trial. However, a license or trial is needed if you're using this feature in an environment that isn't the default environment.
 
-To customize your report, you need to link the process to your own workspace, and a paid Power BI license is needed. The specific license you need depends on the data size of the process data. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/). 
+To customize your report, you need to link the process to your own workspace, and a paid Power BI license is needed. The specific license you need depends on the data size of the process data. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
 
 ## Prerequisites
 
@@ -110,12 +110,12 @@ Before you start using process advisor, make sure you have the following prerequ
   - To learn how to add a database to an environment, go to [Add a Microsoft Dataverse database](/power-platform/admin/create-database).  
 
 - (If you want to set up dataflows for process mining) An Environment Maker security role.  
-   - If you're assigned an Environment Admin or System Admin role, go to [What are dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) to learn more.  
-- To customize your report, you need to set up your Power BI workspace and register the process advisor service principal in Azure AD.
+
+     - If you're assigned an Environment Admin or System Admin role, go to [What are dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) to learn more.  
+
+- For additional process mining capabilities, download the[minit desktop application](minit/how-to-start-with-minit-desktop-application.md).
+
+- To customize your report, you need to [set up your Power BI workspace](process-mining-pbi-workspace.md) and [register the process advisor service principal in Azure AD](process-mining-pbi-workspace.md#install-azure-tools).
 
 - Power Automate for desktop for task mining. You can download it from process advisor.
   - To learn more, go to [Introduction to desktop flows](desktop-flows/introduction.md).
-
-- (If you want to set up dataflows for process mining) An Environment Maker security role .  
-   - If you're assigned an Environment Admin or System Admin role, go to What are dataflows to learn more.  
-

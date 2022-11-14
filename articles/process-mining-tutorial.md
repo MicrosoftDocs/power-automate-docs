@@ -29,7 +29,11 @@ This tutorial allows you to experience process mining with sample data. In this 
 
 ## Download the sample data
 
-For the process mining tutorial, download the sample event log CSV file: [English version](https://go.microsoft.com/fwlink/?linkid=2181220)
+For the process mining tutorial, download the sample event log CSV file:  
+
+- [English version](https://go.microsoft.com/fwlink/?linkid=2181220)
+
+- [French version](https://go.microsoft.com/fwlink/?linkid=2181117)
 
 The sample data in this tutorial is for illustration only and is fictitious. No real association is intended or inferred.
 
@@ -85,7 +89,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select **Save and analyze**. The analysis may take a few minutes to run.
 
-When the analysis process is complete, you’ll see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that will help you analyze your process. To learn how to analyze the process map and metrics, go to  [Visualize and gain insights from processes in process advisor](process-mining-visualize.md).
+When the analysis process is complete, you’ll see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that will help you analyze your process. To learn how to analyze the process map and metrics, go to [Visualize and gain insights from processes in process advisor](process-mining-visualize.md).
 
 :::image type="content" source="media/process-mining-tutorial/insights.png" alt-text="Screenshot of the process map and dashboard.":::
 
@@ -93,7 +97,7 @@ When the analysis process is complete, you’ll see a process map and a dashboar
 
 Let’s take the analysis of our process beyond KPIs. We'll use the minit desktop application, where you can edit and analyze your processes created in process advisor.
 
-1. On the process advisor home page, install the [minit desktop application](minit/how-to-start-with-minit-desktop-application.md).
+1. On the process advisor home page, download the [minit desktop application](minit/how-to-start-with-minit-desktop-application.md).
 
 1. On the top right of the **Process hub** screen, select the environment.
 
@@ -191,7 +195,7 @@ From the screenshot in the earlier screenshot, we can see that there were only n
 
 Notice that cases that have the **Refund With Standard Voucher** step also have the possibility of invoices being rejected as the **Reject Invoice** step suggests. This **Reject Invoice** step contributes only 2.8 hours on average to the process.
 
-Based on some simple insights we derived from this short analysis, let's summarize our findings, derive a conclusion, and offer some recommendations for this process.
+Based on insights we derived from this analysis, let's summarize our findings, derive a conclusion, and offer some recommendations for this process.
 
 ### Insights summary
 
@@ -220,21 +224,3 @@ An organization should focus on using standard vouchers versus special vouchers 
 An organization should do further analysis to determine why using the standard invoice often causes invoice rejection. If they're able to uncover a remedy for this, the organization can implement this to further improve the process.
 
 To learn more about how to take advantage of the advanced capabilities of the minit desktop application, go to [Minit desktop application overview (preview)](minit/minit-desktop-application-overview.md).
-
-## Customize reports in Power BI workspace
-
-With Process advisor’s powerful integration with Power BI, you can customize your process reports in an attached Power BI workspace. In this example, we'll perform a customization of the Power BI report to include a card that holds or tracks one of the analytic measures.
-
-1. Complete the following steps:
-
-    1. Setup: Connect your Power BI workspace to Process Advisor.
-
-    1. Create your own Custom Power BI workspace.
-
-    1. Load your process analytics in Power BI Online to start customizing your report.
-
-1. Return to the analytics page of your process in process advisor.
-
-1. Select **Refresh** to refresh and reanalyze the process.
-
-1. Select **Open in Power BI**, which should appear if you properly attached your process to a Power BI workspace following the instructions in Load your process analytics in Power BI Online to start customizing your report. <!--add link.-->

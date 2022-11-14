@@ -41,7 +41,7 @@ You can see more metrics on the process map, including the following.
 
 - **Self-Loop**: The occurrence where an activity repeats itself.
 
--  **loop**: The occurrence where a sequence of activities has one or more activities repeated.
+- **Loop**: The occurrence where a sequence of activities has one or more activities repeated.
 
 To learn more about the process map visual, go to [Process map overview (preview)](minit/process-map.md).
 
@@ -52,19 +52,20 @@ You'll get several prebuilt KPIs and visualizations to help you to understand yo
 :::image type="content" source="media/process-mining-visualize/analytics.png" alt-text="Screenshot of the 'Summary' tab.":::
 
 ### KPIs
+
 These KPIs are the same metrics that you see at the top of your report.
 
-- **Median case duration**: The median case duration shows the center of the all the case durations that is more resistant to outliers in the data
+- **Median case duration**: The median case duration shows the center of all the case durations that are more resistant to outliers in the data.
 
-- **Average Case Duration**: Shows the average case duration which can be greatly affected by outliers in the data
+- **Average Case Duration**: Shows the average case duration, which can be greatly affected by outliers in the data.
 
-- **Self-Loop Cases %**: Percentage of cases that have an activity that repeats itself
+- **Self-Loop Cases %**: Percentage of cases that have an activity that repeats itself.
 
-- **Loop Cases %**: Percentage of cases that have a sequence of activities that has at least one activity that is repeated
+- **Loop Cases %**: Percentage of cases that have a sequence of activities that has at least one activity that is repeated.
 
-- **Rework Cases %**: Percentage of cases that have either a Self-Loop or Loop
+- **Rework Cases %**: Percentage of cases that have either a Self-Loop or Loop.
 
-- **Resource Count**: Count of how many resources are in the process
+- **Resource Count**: Count of how many resources are in the process.
 
 To enlarge the view so you can dig deeper into your process, select the **Map** tab.
 
@@ -74,7 +75,7 @@ To enlarge the view so you can dig deeper into your process, select the **Map** 
 
 To drill down into the process, use the filters in the filters dialog. To see the filters, select **Filters** in the upper-right side of the **Summary** tab.
 
-:::image type="content" source="media/process-mining-visualize/filter-buttons.png" alt-text="Screenshot of the 'Map' tab.":::
+:::image type="content" source="media/process-mining-visualize/filter-buttons.png" alt-text="Screenshot of the 'Filters' option.":::
 
 The filters dialog contains the following filters:
 
@@ -104,7 +105,7 @@ To select multiple activities or cases, you can also use **Ctrl** + **Click** .
 
 - **Case**, **Activity**, and **Path by Time Spent**: Shows average throughput time for case, activity and path.
 
-:::image type="content" source="media/process-mining-visualize/visualizations.png" alt-text="Screenshot of the filters dialog.":::
+:::image type="content" source="media/process-mining-visualize/visualizations.png" alt-text="Screenshot of the visualizations.":::
 
 ### Time Analysis
 

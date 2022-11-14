@@ -59,7 +59,7 @@ To see the available templates, select **Process advisor** on the left.
 
    :::image type="content" source="media/process-mining-finance-ops-templates/sql-database.png" alt-text="Screenshot of the Process name, Server Name, Database Name, and Schema Name fields.":::
 
-1. (Optional) To improve analyze time of the report, refine data by defining **Start Date**, **End Date**, **Client**, and **Company Code**.
+1. (Optional) To improve the analyze time of the report, refine data by defining **Start Date**, **End Date**, **Client**, and **Company Code**.
 
    :::image type="content" source="media/process-mining-finance-ops-templates/dates-other-fields.png" alt-text="Screenshot of the Start Date, End Date, Client, and Company Code fields.":::
 
