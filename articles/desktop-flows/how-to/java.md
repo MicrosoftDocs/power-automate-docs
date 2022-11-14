@@ -1,5 +1,5 @@
 ---
-title: Automate Java applications  | Microsoft Docs
+title: Automate Java applications
 description: Automate Java applications 
 author: mariosleon
 

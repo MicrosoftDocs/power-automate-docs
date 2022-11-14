@@ -1,5 +1,5 @@
 ---
-title: AWS | Microsoft Docs
+title: AWS
 description: AWS Actions Reference
 author: georgiostrantzas
 
@@ -71,14 +71,14 @@ Start, stop, reboot and get information for an EC2 instance
 ### <a name="startec2instance"></a> Start EC2 instance
 Start EC2 instance(s)
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
 |Instance IDs|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The instance IDs to start|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |StartingEc2Instances|[List](../variable-data-types.md#list) of [Instance state changes](../variable-data-types.md#amazon-web-services-aws)|The returned information for the started instances|
@@ -96,7 +96,7 @@ Start EC2 instance(s)
 ### <a name="stopec2instance"></a> Stop EC2 instance
 Stop EC2 instance(s)
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
@@ -105,7 +105,7 @@ Stop EC2 instance(s)
 |Hibernatation: |N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to hibernate the instance, if it was enabled for hibernation at launch. If the instance can't hibernate successfully, a normal shutdown occurs|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |StoppingEc2Instances|[List](../variable-data-types.md#list) of [Instance state changes](../variable-data-types.md#amazon-web-services-aws)|The returned information for the stopped instances|
@@ -123,15 +123,15 @@ Stop EC2 instance(s)
 ### <a name="rebootec2instance"></a> Reboot EC2 instance
 Reboot EC2 instance(s)
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
 |Instance IDs|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The instance IDs to reboot|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="rebootec2instance_onerror"></a> Exceptions
 |Exception|Description|
@@ -146,7 +146,7 @@ Reboot EC2 instance(s)
 ### <a name="getavailableec2instances"></a> Get available EC2 instances
 Get information for the relevant EC2 instances
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
@@ -154,7 +154,7 @@ Get information for the relevant EC2 instances
 |Instance state|N/A|Pending, All, Unknown, Running, Shutting down, Terminated, Stopping, Stopped|All|The state of the instance (pending, running, shutting down, terminated, stopping, stopped)|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Ec2InstancesInfo|[List](../variable-data-types.md#list) of [EC2 instances info](../variable-data-types.md#amazon-web-services-aws)|The list of the EC2 instances|
@@ -170,7 +170,7 @@ Get information for the relevant EC2 instances
 ### <a name="describeec2instance"></a> Describe instances
 Returns all the information for the specified EC2 instance(s)
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
@@ -179,7 +179,7 @@ Returns all the information for the specified EC2 instance(s)
 |Instance state|N/A|Pending, All, Unknown, Running, Shutting down, Terminated, Stopping, Stopped|All|The current state of the instance|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Ec2Instances|[List](../variable-data-types.md#list) of [EC2 instances](../variable-data-types.md#amazon-web-services-aws)|The retrieved instance(s) with all the relevant information|
@@ -198,7 +198,7 @@ Create or delete an EBS snapshot and get related information
 ### <a name="createsnapshot"></a> Create snapshot
 Create a snapshot of an EBS volume and stores it in Amazon S3
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
@@ -208,7 +208,7 @@ Create a snapshot of an EBS volume and stores it in Amazon S3
 |Purpose|Yes|[Text value](../variable-data-types.md#text-value)||The purpose of the snapshot|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Snapshot|[EBS snapshot](../variable-data-types.md#amazon-web-services-aws)|The created snapshot|
@@ -227,7 +227,7 @@ or the volume isn't in the same qvailability zone as the specified instance|
 ### <a name="describesnapshots"></a> Describe snapshots
 Describes the specified EBS snapshots available
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
@@ -237,7 +237,7 @@ Describes the specified EBS snapshots available
 |Restorable by user IDs|Yes|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The IDs of the AWS accounts that can create volumes from the snapshot|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |EBSSnapshots|[List](../variable-data-types.md#list) of [EBS snapshots](../variable-data-types.md#amazon-web-services-aws)|The retrieved snapshot(s) with all the relevant information|
@@ -255,15 +255,15 @@ Describes the specified EBS snapshots available
 ### <a name="deletesnapshot"></a> Delete snapshot
 Delete the specified snapshot
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
 |Snapshot ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the EBS snapshot to delete|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="deletesnapshot_onerror"></a> Exceptions
 |Exception|Description|
@@ -279,7 +279,7 @@ Create, attach, detach or delete an EBS volume and get related information
 ### <a name="createvolumeaction"></a> Create volume
 Create an EBS volume
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
@@ -294,7 +294,7 @@ Create an EBS volume
 |Volume type|N/A|Gp2, Standard, Io1, Sc1, St1|Gp2|The type of the volume|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Volume|[EBS volume](../variable-data-types.md#amazon-web-services-aws)|The created volume|
@@ -314,7 +314,7 @@ Create an EBS volume
 ### <a name="attachvolume"></a> Attach volume
 Attach an EBS volume to an EC2 instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
@@ -323,8 +323,8 @@ Attach an EBS volume to an EC2 instance
 |Device name|No|[Text value](../variable-data-types.md#text-value)||The name of the device|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="attachvolume_onerror"></a> Exceptions
 |Exception|Description|
@@ -341,7 +341,7 @@ or the volume isn't in the same qvailability zone as the specified instance|
 ### <a name="detachvolume"></a> Detach volume
 Detach an EBS volume from an EC2 instance
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
@@ -351,8 +351,8 @@ Detach an EBS volume from an EC2 instance
 |Force detachment|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to force detachment, if the previous detachment attempt didn't occur cleanly|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="detachvolume_onerror"></a> Exceptions
 |Exception|Description|
@@ -368,7 +368,7 @@ Detach an EBS volume from an EC2 instance
 ### <a name="describevolumes"></a> Describe volumes
 Describe the specified EBS volumes
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
@@ -377,7 +377,7 @@ Describe the specified EBS volumes
 |Instance ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the instance that the volume is attached to|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |EBSVolumes|[List](../variable-data-types.md#list) of [EBS volumes](../variable-data-types.md#amazon-web-services-aws)|The retrieved EBS volumes with all the relevant information|
@@ -394,15 +394,15 @@ Describe the specified EBS volumes
 ### <a name="deletevolume"></a> Delete volume
 Delete the specified EBS volume
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
 |Volume ID|No|[Text value](../variable-data-types.md#text-value)||The ID of the EBS volume to delete|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="deletevolume_onerror"></a> Exceptions
 |Exception|Description|
@@ -419,7 +419,7 @@ or the volume isn't in the same qvailability zone as the specified instance|
 ### <a name="createec2sessionaction"></a> Create EC2 session
 Create an EC2 client to automate EC2 web services
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Access keys|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use access key ID  and secret access key in order to create the EC2 session|
@@ -430,7 +430,7 @@ Create an EC2 client to automate EC2 web services
 |Profile location|Yes|[Text value](../variable-data-types.md#text-value)||The location of the credentials file that contains the profile to use|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Ec2Client|[EC2 client](../variable-data-types.md#amazon-web-services-aws)|The EC2 client|
@@ -446,17 +446,17 @@ Create an EC2 client to automate EC2 web services
 ### <a name="endec2session"></a> End EC2 session
 Dispose an open EC2 client
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |EC2 client|No|[EC2 client](../variable-data-types.md#amazon-web-services-aws)||The EC2 client|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="endec2session_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 
 

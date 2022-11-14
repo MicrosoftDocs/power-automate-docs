@@ -1,5 +1,5 @@
 ---
-title: Cognitive | Microsoft Docs
+title: Cognitive
 description: Cognitive Actions Reference
 author: georgiostrantzas
 

@@ -1,5 +1,5 @@
 ---
-title: Premium RPA features | Microsoft Docs
+title: Premium RPA features
 description: Premium RPA features
 author: georgiostrantzas
 ms.subservice: desktop-flow

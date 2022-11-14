@@ -1,5 +1,5 @@
 ---
-title: Run SQL queries to Microsoft Access | Microsoft Docs
+title: Run SQL queries to Microsoft Access
 description: Run SQL queries to Microsoft Access
 author: georgiostrantzas
 

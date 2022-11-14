@@ -1,5 +1,5 @@
 ---
-title: Cryptography | Microsoft Docs
+title: Cryptography
 description: Cryptography Actions Reference
 author: georgiostrantzas
 
@@ -55,7 +55,7 @@ Apart from encryption and decryption, the **Cryptography** group of actions prov
 ### <a name="encrypttextaction"></a> Encrypt text with AES
 Encrypt a string with AES, using a key and a specified encoding format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to encrypt|
@@ -67,7 +67,7 @@ Encrypt a string with AES, using a key and a specified encoding format
 |Use initialization vector|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use an initialization vector. When this option is enabled, the randomly generated initialization vector becomes an output in the form of a base64 string|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |EncryptedText|[Text value](../variable-data-types.md#text-value)|The encrypted text for later processing|
@@ -83,7 +83,7 @@ Encrypt a string with AES, using a key and a specified encoding format
 ### <a name="decrypttextaction"></a> Decrypt text with AES
 Decrypt a string with AES based on a specified key and an encoding format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding for the decrypted text|
@@ -97,7 +97,7 @@ Decrypt a string with AES based on a specified key and an encoding format
 |Initialization vector|No|[Text value](../variable-data-types.md#text-value)||The initialization vector to use for decryption in the form of a base64 string|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |DecryptedText|[Text value](../variable-data-types.md#text-value)|The decrypted text for later processing|
@@ -111,7 +111,7 @@ Decrypt a string with AES based on a specified key and an encoding format
 ### <a name="encryptfromfileaction"></a> Encrypt from file with AES
 Encrypt the contents of a file with AES, using a key and a specified encoding format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to encrypt|
@@ -123,7 +123,7 @@ Encrypt the contents of a file with AES, using a key and a specified encoding fo
 |Use initialization vector|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use an initialization vector. When this option is enabled, the randomly generated initialization vector becomes an output in the form of a base64 string|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |EncryptedText|[Text value](../variable-data-types.md#text-value)|The text of the encrypted file for later processing|
@@ -140,7 +140,7 @@ Encrypt the contents of a file with AES, using a key and a specified encoding fo
 ### <a name="decrypttofileaction"></a> Decrypt to file with AES
 Decrypt a string to a file with AES based on a specified key and an encoding format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to decrypt|
@@ -156,7 +156,7 @@ Decrypt a string to a file with AES based on a specified key and an encoding for
 |Initialization vector|No|[Text value](../variable-data-types.md#text-value)||The initialization vector to use for decryption|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |DecryptedFile|[File](../variable-data-types.md#files-and-folders)|The decrypted file for later processing|
@@ -170,7 +170,7 @@ Decrypt a string to a file with AES based on a specified key and an encoding for
 ### <a name="hashtext"></a> Hash text
 Hash a string, using a specified algorithm and an encoding format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|SHA256, SHA384, SHA512|SHA256|The algorithm to use for hashing|
@@ -178,7 +178,7 @@ Hash a string, using a specified algorithm and an encoding format
 |Text to hash|No|[Text value](../variable-data-types.md#text-value)||The text to hash|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |HashedText|[Text value](../variable-data-types.md#text-value)|The hashed text for later processing|
@@ -192,7 +192,7 @@ Hash a string, using a specified algorithm and an encoding format
 ### <a name="hashfromfile"></a> Hash from file
 Hash the contents of a file, using a specified algorithm and an encoding format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|SHA256, SHA384, SHA512|SHA256|The algorithm to use for hashing|
@@ -200,7 +200,7 @@ Hash the contents of a file, using a specified algorithm and an encoding format
 |File to hash|No|[File](../variable-data-types.md#files-and-folders)||The file to hash the contents of|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |HashedText|[Text value](../variable-data-types.md#text-value)|The hashed text for later processing|
@@ -215,7 +215,7 @@ Hash the contents of a file, using a specified algorithm and an encoding format
 ### <a name="hashtextwithkey"></a> Hash text with key
 Hash a string with a key, using a specified algorithm and an encoding format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|HMAC SHA256, HMAC SHA384, HMAC SHA512|HMAC SHA256|The algorithm to use for hashing|
@@ -224,7 +224,7 @@ Hash a string with a key, using a specified algorithm and an encoding format
 |Hash key|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The key to hash the text with|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |HashedText|[Text value](../variable-data-types.md#text-value)|The hashed text for later processing|
@@ -238,7 +238,7 @@ Hash a string with a key, using a specified algorithm and an encoding format
 ### <a name="hashfromfilewithkey"></a> Hash from file with key
 Hash the contents of a file with a key, using a specified algorithm and an encoding format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|HMAC SHA256, HMAC SHA384, HMAC SHA512|HMAC SHA256|The algorithm to use for hashing|
@@ -247,7 +247,7 @@ Hash the contents of a file with a key, using a specified algorithm and an encod
 |Hash key|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The hash key to hash the text with|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |HashedText|[Text value](../variable-data-types.md#text-value)|The hashed text for later processing|

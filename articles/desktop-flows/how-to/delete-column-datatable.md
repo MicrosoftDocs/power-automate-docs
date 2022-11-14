@@ -1,5 +1,5 @@
 ---
-title: Delete columns from a datatable | Microsoft Docs
+title: Delete columns from a datatable
 description: Delete columns from a datatable
 author: georgiostrantzas
 ms.subservice: desktop-flow

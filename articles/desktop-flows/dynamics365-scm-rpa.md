@@ -1,5 +1,5 @@
 ---
-title: Create orders on Dynamics 365 Supply Chain Management | Microsoft Docs
+title: Create orders on Dynamics 365 Supply Chain Management
 description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate.
 services: ''
 suite: flow

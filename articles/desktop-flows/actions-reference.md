@@ -1,5 +1,5 @@
 ---
-title: Actions reference | Microsoft Docs
+title: Actions reference
 description: This section describes all Power Automate actions
 author: georgiostrantzas
 ms.subservice: desktop-flow
