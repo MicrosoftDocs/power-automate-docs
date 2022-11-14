@@ -172,11 +172,11 @@ This section explains the **Variants by frequency** bars on the right.
 
 Different activity combinations and variants are shown separately on the process map. A process variant is a unique path from the beginning to the end of the process. A process variant is a specific activity sequence, like a 'trace' through the process, from start to end. Each variant differs from the others by at least one activity. You can see additional metrics, frequency of the activities, and throughput time on the process map. Frequency shows you the total number of recordings/cases passing through it. Throughput time is the time between the first event of the case and the last.
 
-:::image type="content" source="media/task-mining-tutorial/var-by-frequency.png" alt-text="Screenshot of the invoice coming from email variant.":::
+:::image type="content" source="media/task-mining-tutorial/var-by-frequency.png" alt-text="Screenshot of the 'Variants by frequency' tab.":::
 
 If you select the first variant by selecting the first bar, you can see that the invoice coming through email is the most frequent process variant. It might take a while for you to see the changes from the chart. 
 
-:::image type="content" source="media/task-mining-tutorial/variant-email.png" alt-text="Screenshot of the invoice coming from email variant.":::
+:::image type="content" source="media/task-mining-tutorial/variant-email.png" alt-text="Screenshot of the invoice coming from email variant in the process map.":::
 
 ## Identify automation opportunities
 

@@ -70,7 +70,7 @@ If you haven't done this yet, install the Azure tools.
 
     **New-AzureADServicePrincipal -AppId dad3c6de-ed58-42ef-989f-9c0303aaeedc -DisplayName ‘Process Insights Prod’**
 
-    :::image type="content" source="media/process-mining-pbi-workspace/svc-principal.png" alt-text="Screenshot of the Search screen.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/svc-principal.png" alt-text="Screenshot of the service principal registration.":::
 
 1. Sign in to [Microsoft Power BI](https://powerbi.microsoft.com/).
 
@@ -82,7 +82,7 @@ If you haven't done this yet, install the Azure tools.
 
     1. Enable it by toggling the slider.
 
-    :::image type="content" source="media/process-mining-pbi-workspace/admin-portal.png" alt-text="Screenshot of the Search screen.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/admin-portal.png" alt-text="Screenshot of the 'Admin portal' screen.":::
 
 1. Go back to the Power BI home page.
 
@@ -108,13 +108,13 @@ Load your process analytics in Power BI to start customizing your report.
 
 1. After analyzing a process, go to the process **Details** page by selecting the left arrow under **Share**.
 
-    :::image type="content" source="media/process-mining-pbi-workspace/share-arroe.png" alt-text="Screenshot of the 'Share' screen.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/share-arroe.png" alt-text="Screenshot of the left pointing arrow in the 'Share' screen.":::
 
 1. On the **Details** card, select **Edit**.
 
 1. In the **Power BI Workspace** dropdown menu, select **Select a Power BI workspace**, and then select **Save**.
 
-    :::image type="content" source="media/process-mining-pbi-workspace/pbi-details.png" alt-text="Screenshot of the 'Share' screen.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/pbi-details.png" alt-text="Screenshot of the 'Select a Power BI workspace' selection.":::
 
 ## Customize reports in Power BI workspace
 
@@ -148,7 +148,7 @@ After completing the these steps, return to the analytics page of your process i
 
 1. In the **Visualizations** pane, select the card element.
 
-    :::image type="content" source="media/process-mining-pbi-workspace/card.png" alt-text="Screenshot of the card element.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/card.png" alt-text="Screenshot of the 'Visualizations' pane.":::
 
 1. A new card will appear on the screen. Resize it and drag it to the left of the **Paths** donut (blue circle).
 
@@ -158,7 +158,7 @@ After completing the these steps, return to the analytics page of your process i
 
     In our process, we don’t have any self loops, so you should see **0.00%** show up in that card.
 
-    :::image type="content" source="media/process-mining-pbi-workspace/self-loop.png" alt-text="Screenshot of the card element.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/self-loop.png" alt-text="Screenshot of the 'Self Loop' card.":::
 
     You've successfully customized your Power BI workspace. Every time you refresh your process and reopen your Power BI report, your metrics and customizations will be updated. Try out Power BI and customize your reports to learn how they can help you analyze your process effectively.
 
