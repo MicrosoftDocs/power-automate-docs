@@ -1,5 +1,5 @@
 ---
-title: Variables | Microsoft Docs
+title: Variables
 description: Variables Actions Reference
 author: georgiostrantzas
 
@@ -87,23 +87,23 @@ Create and manipulate data in table variables
 ### <a name="createnewdatatable"></a> Create new data table
 Creates a new data table variable
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |New table|No|[Datatable](../variable-data-types.md#datatable)||The input data table|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |DataTable|[Datatable](../variable-data-types.md#datatable)|The new data table|
 
 ##### <a name="truncatenumber_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 ### <a name="addrowtodatatable"></a> Insert row into data table
 Inserts a row at the end or before a specific index value
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
@@ -111,7 +111,7 @@ Inserts a row at the end or before a specific index value
 |Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||Insert the row index value to be used when before row index is specified as the into location parameter|
 |New value(s)|No|[List](../variable-data-types.md#list), [Datarow](../variable-data-types.md#datarow)||This parameter accepts a list or datarow variable where the column count should match the column count in the data table|
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 ##### <a name="truncatenumber_onerror"></a> Exceptions
@@ -124,7 +124,7 @@ This action doesn't produce any variables
 ### <a name="findorreplaceindatatable"></a> Find or replace in data table
 Finds and/or replaces data table values
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
@@ -138,7 +138,7 @@ Finds and/or replaces data table values
 |Search by|N/A|Everywhere, On column|Everywhere|The order in which to search for the text (everywhere, or on column)|
 |Column index or name|No|[Text value](../variable-data-types.md#text-value)||The column header or index value|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |DataTableMatches|[Datatable](../variable-data-types.md#datatable)|The data table containing the row and column indexes for matches|
@@ -154,7 +154,7 @@ Finds and/or replaces data table values
 ### <a name="modifydatatableitem"></a> Update data table item
 Update a data table row item on a defined column
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
@@ -162,7 +162,7 @@ Update a data table row item on a defined column
 |Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index of the item to update|
 |New value|No|[Text value](../variable-data-types.md#text-value)||The new value to update at the specified row index and column|
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 ##### <a name="truncatenumber_onerror"></a> Exceptions
@@ -176,13 +176,13 @@ This action doesn't produce any variables
 ### <a name="deleterowfromdatatable"></a> Delete row from data table
 Update a data table row item on a defined column
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
 |Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index within a data table that should be deleted|
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 ##### <a name="truncatenumber_onerror"></a> Exceptions
@@ -193,7 +193,7 @@ This action doesn't produce any variables
 ### <a name="truncatenumber"></a> Truncate number
 Get the integral or fractional digits of a numeric value, or round up the value to a specified number of decimal places
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Number to truncate|No|[Numeric value](../variable-data-types.md#numeric-value)||The number or variable that holds the numeric value to truncate/round up|
@@ -201,18 +201,18 @@ Get the integral or fractional digits of a numeric value, or round up the value 
 |Decimal places|Yes|[Numeric value](../variable-data-types.md#numeric-value)|3|The number of decimal places to round the given number up to. Enter 0 to return an integer as a result|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |TruncatedValue|[Numeric value](../variable-data-types.md#numeric-value)|The truncated or rounded number|
 
 
 ##### <a name="truncatenumber_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="generaterandomnumber"></a> Generate random number
 Generate a random number or a list of random numbers that fall between a minimum and maximum value
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Minimum value|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The lower boundary for the random number(s) to generate|
@@ -222,7 +222,7 @@ Generate a random number or a list of random numbers that fall between a minimum
 |Allow duplicates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to permit or prevent the same number from appearing more than once in the random numbers list|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RandomNumber|[Numeric value](../variable-data-types.md#numeric-value)|The newly generated random number|
@@ -237,22 +237,22 @@ Generate a random number or a list of random numbers that fall between a minimum
 ### <a name="clearlist"></a> Clear list
 Remove all items from a list
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |List to clear|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||A list variable to remove its elements|
 
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 
 ##### <a name="clearlist_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="removeitemfromlist"></a> Remove item from list
 Remove one or multiple items from a list
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Remove item by|N/A|Index, Value|Index|Specifies whether to remove the item at a specified index or the item(s) with a specific value|
@@ -262,7 +262,7 @@ Remove one or multiple items from a list
 |From list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The list with items to remove|
 
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 
@@ -275,7 +275,7 @@ This action doesn't produce any variables
 ### <a name="sortlistbase"></a> Sort list
 Sort the items of a list. Use items of the same type
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |List to sort|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The variable that holds the list to sort|
@@ -288,38 +288,38 @@ Sort the items of a list. Use items of the same type
 |Sort|N/A|Ascending, Descending|Ascending|Specifies whether to sort by the third property ascending or descending|
 
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 
 ##### <a name="sortlistbase_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="shufflelist"></a> Shuffle list
 Create a random permutation of a list
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |List to shuffle|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The variable that contains the list to shuffle|
 
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 
 ##### <a name="shufflelist_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="mergelists"></a> Merge lists
 Merge two lists into one
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |First list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The first list of items to merge|
 |Second list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The second list of items to merge|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |OutputList|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md)|The merged list. The initial lists aren't affected|
@@ -333,81 +333,81 @@ Merge two lists into one
 ### <a name="reverselist"></a> Reverse list
 Reverse the order of the items of a list
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |List to reverse|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The list whose items order to reverse|
 
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 
 ##### <a name="reverselist_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="removeduplicateitemsfromlist"></a> Remove duplicate items from list
 Remove the multiple occurrences of items in a list, so that in the resulting list each item will be unique
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |List to remove duplicate items from|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The list variable to remove duplicate items from|
 |Ignore text case while searching for duplicate items|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to perform case insensitive comparison of text while searching for duplicate items (only applies to lists made of text items)|
 
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 
 ##### <a name="removeduplicateitemsfromlist_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="findcommonlistitems"></a> Find common list items
 Compare two lists and create a new list with the items that are common to both
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |First list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The variable that contains the first list to compare|
 |Second list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The variable that contains the second list to compare|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |IntersectionList|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)|The new list of common items|
 
 
 ##### <a name="findcommonlistitems_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="subtractlists"></a> Subtract lists
 Compare two lists and create a new list with the items that are in the first list but not in the second
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |First list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The variable that holds the first list to compare|
 |Second list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The variable that holds the second list to compare|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ListDifference|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)|The new resulting list|
 
 
 ##### <a name="subtractlists_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="retrievedatatablecolumnintolist"></a> Retrieve data table column into list
 Convert the contents of a data table column into a list
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table with the column to convert into a list|
 |Column name or index|No|[Text value](../variable-data-types.md#text-value)||The column name, if column names are defined, or the index number of the column to retrieve|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ColumnAsList|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)|The new list that holds the contents of the specified data table|
@@ -422,13 +422,13 @@ Convert the contents of a data table column into a list
 ### <a name="convertjsontocustomobject"></a> Convert JSON to custom object
 Convert a JSON string to a custom object
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |JSON|No|[Text value](../variable-data-types.md#text-value)||A JSON text, or a previously created variable containing one, to convert it to a custom object|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JsonAsCustomObject|[General value](../variable-data-types.md#general-value)|The converted custom object from the provided JSON|
@@ -442,13 +442,13 @@ Convert a JSON string to a custom object
 ### <a name="convertcustomobjecttojson"></a> Convert custom object to JSON
 Convert a custom object to a JSON string
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Custom object|No|[Custom object](../variable-data-types.md#custom-object)||The custom object to convert to JSON|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |CustomObjectAsJson|[Text value](../variable-data-types.md#text-value)|The converted JSON from the provided custom object|
@@ -462,77 +462,77 @@ Convert a custom object to a JSON string
 ### <a name="additemtolist"></a> Add item to list
 Append a new item to a list
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Add item|No|[General value](../variable-data-types.md#general-value)||A value or a variable to add to the list. Provide a list of values to append multiple elements. If the list has a specific type of elements, the new element is converted over to that type|
 |Into list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||A list variable to append the new elements to|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |NewList|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)|The new list|
 
 
 ##### <a name="additemtolist_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="createnewlist"></a> Create new list
 Create a new empty list
 
-##### Input Parameters
-- This action doesn't require any input
+##### Input parameters
+This action doesn't require any input.
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |List|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)|The new list|
 
 
 ##### <a name="createnewlist_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="increasevariable"></a> Increase variable
 Increase the value of a variable by a specific amount
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Variable name|No|[Numeric value](../variable-data-types.md#numeric-value)||The numeric value to increase|
 |Increase by|No|[Numeric value](../variable-data-types.md#numeric-value)||A numeric value, or a previously created variable containing one, to increase the variable by|
 
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 
 ##### <a name="increasevariable_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="decreasevariable"></a> Decrease variable
 Decrease the value of a variable by a specific amount
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Variable name|No|[Numeric value](../variable-data-types.md#numeric-value)||A numeric value, or a previously created variable containing one, to decrease the variable by|
 |Decrease by|No|[Numeric value](../variable-data-types.md#numeric-value)||A numeric value, or a previously created variable containing one, to decrease the variable by|
 
 
-##### Variables Produced
+##### Variables produced
 This action doesn't produce any variables
 
 
 ##### <a name="decreasevariable_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="assign"></a> Set variable
 Set the value of a new or existing variable, create a new variable or overwrite a previously created variable
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |To|No|*||The value to assign to the variable|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |NewVar|*|The name of the variable to set|
@@ -542,7 +542,7 @@ Set the value of a new or existing variable, create a new variable or overwrite 
 
 
 ##### <a name="assign_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 
 

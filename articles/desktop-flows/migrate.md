@@ -1,5 +1,5 @@
 ---
-title:  Migrate from Windows recorder (V1) to Power Automate for desktop | Microsoft Docs
+title:  Migrate from Windows recorder (V1) to Power Automate for desktop
 description:  Migrate from Windows recorder (V1) to Power Automate for desktop.
 services: ''
 suite: flow

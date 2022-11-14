@@ -1,5 +1,5 @@
 ---
-title: Manage machines | Microsoft Docs
+title: Manage machines
 description: Manage machines
 author: georgiostrantzas
 

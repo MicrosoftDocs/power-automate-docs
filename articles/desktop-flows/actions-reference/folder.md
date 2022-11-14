@@ -1,5 +1,5 @@
 ---
-title: Folder | Microsoft Docs
+title: Folder
 description: Folder Actions Reference
 author: georgiostrantzas
 
@@ -59,23 +59,23 @@ Copying, moving, renaming and deleting or emptying folders each has its respecti
 ### <a name="iffolderexistsaction"></a> If folder exists
 Mark the beginning of a conditional block of actions depending on whether a folder exists or not
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If folder|N/A|Exists, Doesn't exist|Exists|Choose the state of the folder to check|
 |Folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to check its state|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="iffolderexistsaction_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 ### <a name="getfiles"></a> Get files in folder
 Retrieve the list of files in a folder
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Folder|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to retrieve the list of files from|
@@ -90,7 +90,7 @@ Retrieve the list of files in a folder
 |Descending|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to sort the items in descending or ascending order|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Files|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)|The retrieved files as a list of file objects|
@@ -105,7 +105,7 @@ Retrieve the list of files in a folder
 ### <a name="getsubfolders"></a> Get subfolders in folder
 Retrieve the list of subfolders in a folder
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Folder|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to retrieve the list of subfolders from|
@@ -120,7 +120,7 @@ Retrieve the list of subfolders in a folder
 |Descending|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to sort the items in descending or ascending order|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Folders|[List](../variable-data-types.md#list) of [Folders](../variable-data-types.md#files-and-folders)|The retrieved subfolders as a list of folder objects|
@@ -135,14 +135,14 @@ Retrieve the list of subfolders in a folder
 ### <a name="create"></a> Create folder
 Create a new folder
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Create new folder into|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to create a new folder in|
 |New folder name|No|[Text value](../variable-data-types.md#text-value)||Enter the text, or a text variable, to be the name of the new folder|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |NewFolder|[Folder](../variable-data-types.md#files-and-folders)|The created folder object (which is a representation and can access the folder and all its information)|
@@ -158,14 +158,14 @@ Create a new folder
 ### <a name="delete"></a> Delete folder
 Delete an existing folder and its contents (files and subfolders)
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Folder to delete|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to delete. Remember that all contents of that folder and its subfolders are deleted too.|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="delete_onerror"></a> Exceptions
 |Exception|Description|
@@ -176,14 +176,14 @@ Delete an existing folder and its contents (files and subfolders)
 ### <a name="empty"></a> Empty folder
 Delete all the contents of a folder (files and subfolders) without deleting the folder itself
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Folder to empty|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to delete its contents|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="empty_onerror"></a> Exceptions
 |Exception|Description|
@@ -194,7 +194,7 @@ Delete all the contents of a folder (files and subfolders) without deleting the 
 ### <a name="copy"></a> Copy folder
 Copy a folder into a destination folder
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Folder to copy|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to copy. If the folder path ends with a \ only the contents of the folder (files + subfolders) are copied. Otherwise, the folder itself (along with its contents) is copied as a subfolder into the destination folder.|
@@ -202,7 +202,7 @@ Copy a folder into a destination folder
 |If folder exists|N/A|Do nothing, Overwrite|Do nothing|Specify whether to overwrite files or not copy them at all, if the destination folder already exists. If the folder exists, but the files have different names, the old files still remain in the folder.|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |CopiedFolder|[Folder](../variable-data-types.md#files-and-folders)|The copied folder object (which is a representation and can access the folder and all its information)|
@@ -218,14 +218,14 @@ Copy a folder into a destination folder
 ### <a name="move"></a> Move folder
 Move an existing folder into a destination folder
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Folder to move|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to move|
 |Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to be the destination folder|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |MovedFolder|[Folder](../variable-data-types.md#files-and-folders)|The moved folder object (which is a representation and can access the folder and all its information)|
@@ -241,14 +241,14 @@ Move an existing folder into a destination folder
 ### <a name="rename"></a> Rename folder
 Change the name of a folder
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Folder to rename|No|[Folder](../variable-data-types.md#files-and-folders)||Enter or choose the full path of the folder, or a variable containing the folder, to change its name|
 |New folder name|No|[Text value](../variable-data-types.md#text-value)||Enter the text, or a text variable, to be the new folder name|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RenamedFolder|[Folder](../variable-data-types.md#files-and-folders)|The renamed folder object (which is a representation and can access the folder and all its information)|
@@ -263,20 +263,20 @@ Change the name of a folder
 ### <a name="getspecialfolder"></a> Get special folder
 Retrieve the path of a Windows' special folder (such as Desktop, My Pictures, Internet Cache etc)
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Special folder name|N/A|Programs, Personal, Favorites, Startup, Recent, Send To, Start Menu, Music, Desktop, Templates, Application Data, Local Application Data, Internet Cache, Cookies, History, Common Application Data, System, Program Files, Pictures, Common Program Files|Desktop|Choose the name of the special folder (like My Documents or Desktop). This will be independent of path, to find the special folder on any computer regardless of path specifics.|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |SpecialFolderPath|[Folder](../variable-data-types.md#files-and-folders)|The special folder object (which is a representation and can access the folder and all its information)|
 
 
 ##### <a name="getspecialfolder_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Ensure that application windows become focused | Microsoft Docs
+title: Ensure that application windows become focused
 description: Ensure that application windows become focused 
 author: georgiostrantzas
 

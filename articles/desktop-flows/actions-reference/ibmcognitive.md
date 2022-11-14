@@ -1,5 +1,5 @@
 ---
-title: IBM Cognitive | Microsoft Docs
+title: IBM Cognitive
 description: IBM Cognitive Actions Reference
 author: georgiostrantzas
 
@@ -46,7 +46,7 @@ Translate non-structured documents like fax, email, pdf, etc. into an EDI or oth
 ### <a name="convertdocumentibm"></a> Convert document
 Invokes the IBM service named 'Convert Document'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Username|No|[Text value](../variable-data-types.md#text-value)||The username to be used for this call|
@@ -59,7 +59,7 @@ Invokes the IBM service named 'Convert Document'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
@@ -77,7 +77,7 @@ Translate documents, apps, and webpages
 ### <a name="translateibm"></a> Translate
 Invokes the IBM service named 'Translate'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
@@ -92,7 +92,7 @@ Invokes the IBM service named 'Translate'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
@@ -108,7 +108,7 @@ Invokes the IBM service named 'Translate'
 ### <a name="identifylanguage"></a> Identify language
 Invokes the IBM service named 'Identify Language'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
@@ -120,7 +120,7 @@ Invokes the IBM service named 'Identify Language'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
@@ -138,7 +138,7 @@ Detect emotional and language tones in written text
 ### <a name="analyzetoneibm"></a> Analyze tone
 Invokes the IBM service named 'Analyze Tone'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
@@ -154,7 +154,7 @@ Invokes the IBM service named 'Analyze Tone'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
@@ -172,7 +172,7 @@ Find meaning in visual content. Analyze images for scenes, objects, and other co
 ### <a name="classifyimageibm"></a> Classify Image
 Invokes the IBM service named 'Classify Image'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
@@ -189,7 +189,7 @@ Invokes the IBM service named 'Classify Image'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|

@@ -1,5 +1,5 @@
 ---
-title: Variable manipulation and the % notation | Microsoft Docs
+title: Variable manipulation and the % notation
 description: Variable manipulation and the % notation
 author: georgiostrantzas
 

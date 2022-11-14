@@ -317,52 +317,56 @@
   items: 
   - name: Introduction to desktop flows
     href: ./desktop-flows/introduction.md
-  - name: Getting started with Power Automate in Windows 11
+  - name: Get started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
-  - name: Setup Power Automate
-    items:
-    - name: Power Automate prerequisites & limitations 
-      href: ./desktop-flows/setup.md
-    - name: Install Power Automate
-      href: ./desktop-flows/install.md
-    - name: Premium RPA features
-      href: ./desktop-flows/premium-features.md
-    - name: Governance in Power Automate
-      href: ./desktop-flows/governance.md     
-    - name: Troubleshooting Power Automate
-      href: ./desktop-flows/troubleshoot.md
-    - name: Data Collection in Power Automate
-      href: ./desktop-flows/diagnostic-data.md      
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
-  - name: Create a Dataverse database
-    href: ./desktop-flows/create-database.md
-  - name: Getting started with a Microsoft account
+  - name: Premium RPA features
+    href: ./desktop-flows/premium-features.md
+  - name: Setup Power Automate
+    items:
+    - name: Prerequisites and limitations 
+      href: ./desktop-flows/requirements.md
+    - name: Install Power Automate
+      href: ./desktop-flows/install.md
+    - name: Install Power Automate silently
+      href: ./desktop-flows/install-silently.md
+    - name: Install Power Automate browser extensions
+      href: ./desktop-flows/install-browser-extensions.md
+    - name: Create a Dataverse database
+      href: ./desktop-flows/create-database.md
+    - name: Governance
+      href: ./desktop-flows/governance.md     
+    - name: Data collection
+      href: ./desktop-flows/diagnostic-data.md      
+  - name: Get started with a Microsoft account
     href: ./desktop-flows/getting-started-msa.md
-  - name: Getting started with a work or school account
+  - name: Get started with a work or school account
     href: ./desktop-flows/getting-started-freeorg.md
-  - name: Getting started with an organization premium account
+  - name: Get started with an organization premium account
     href: ./desktop-flows/getting-started-org.md
   - name: Create a desktop flow
     href: ./desktop-flows/create-flow.md
   - name: Run desktop flows
     href: ./desktop-flows/run-pad-flow.md
-  - name: Trigger a desktop flow from another flow
+  - name: Trigger desktop flows from cloud flows
     href: ./desktop-flows/link-pad-flow-portal.md
   - name: Manage machines and machine groups
     items:
     - name: Manage machines
       href: ./desktop-flows/manage-machines.md
-    - name: Manage machine groups
-      href: ./desktop-flows/manage-machine-groups.md
-    - name: Hosted RPA bots (preview)
-      href: ./desktop-flows/hosted-rpa-bots.md
     - name: Silent registration for machines
       href: ./desktop-flows/machines-silent-registration.md
+    - name: Manage machine groups
+      href: ./desktop-flows/manage-machine-groups.md
+    - name: Create desktop flow connections
+      href: ./desktop-flows/desktop-flow-connections.md
+    - name: Hosted RPA bots (preview)
+      href: ./desktop-flows/hosted-rpa-bots.md
     - name: Scale with AVD starter kit
       items:
       - name: Overview
-        href: ./desktop-flows/avd-overview.md 
+        href: ./desktop-flows/avd-overview.md
       - name: Set up the AVD integration starter kit
         href: ./desktop-flows/avd-setup.md
       - name: Use the starter kit
@@ -392,9 +396,9 @@
       href: ./desktop-flows/debugging-flow.md
     - name: Manage variables and the variables pane
       href: ./desktop-flows/manage-variables.md
-    - name: Variable datatypes
+    - name: Variable data types
       href: ./desktop-flows/variable-data-types.md
-    - name: Variables datatype properties
+    - name: Variable data type properties
       href: ./desktop-flows/datatype-properties.md
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md
@@ -402,7 +406,7 @@
       href: ./desktop-flows/ui-elements.md
     - name: Automate using images
       href: ./desktop-flows/images.md
-    - name: Manage errors
+    - name: Handle errors in desktop flows
       href: ./desktop-flows/errors.md
     - name: Record desktop flows
       href: ./desktop-flows/recording-flow.md
@@ -410,12 +414,10 @@
       href: ./desktop-flows/use-loops.md
     - name: Use conditionals
       href: ./desktop-flows/use-conditionals.md
-    - name: Automate web pages
+    - name: Automate webpages
       href: ./desktop-flows/automation-web.md
     - name: Create custom forms
       href: ./desktop-flows/custom-forms.md     
-    - name: Use browsers and manage extensions
-      href: ./desktop-flows/using-browsers.md
     - name: Automate desktop applications
       href: ./desktop-flows/desktop-automation.md
     - name: Automate on virtual desktops
@@ -524,6 +526,8 @@
       href: ./desktop-flows/how-to/run-desktop-flow-action.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
+    - name: Run Power Automate with elevated rights
+      href: ./desktop-flows/how-to/run-power-automate-elevated-rights.md
     - name: Extract text from a Word document using VBScript
       href: ./desktop-flows/how-to/extract-text-word-document.md
     - name: Pass a datatable from a cloud flow to a desktop flow
@@ -613,6 +617,8 @@
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
     - name: SharePoint (preview)
       href: ./desktop-flows/actions-reference/sharepoint.md
+  - name: Troubleshoot desktop flows
+    href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
   - name: Use RPA with Dynamics 365
