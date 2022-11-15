@@ -28,6 +28,12 @@ With Minit, you can easily delve into the details of your processes. Minit offer
 
 :::image type="content" alt-text="Screenshot of the Minit desktop application." source="media/image-24a.png":::
 
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+
 ## Features
 
 Minit analyzes data from processes that you create in process advisor. Get deep insights into how your processes run, uncover the root cause of problems, and build useful outputs for the rest of your organization. The following table provides an overview of Minit features and links to more information.
