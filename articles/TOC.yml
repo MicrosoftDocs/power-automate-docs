@@ -348,9 +348,11 @@
   - name: Create a desktop flow
     href: ./desktop-flows/create-flow.md
   - name: Run desktop flows
-    href: ./desktop-flows/run-pad-flow.md
-  - name: Trigger desktop flows from cloud flows
-    href: ./desktop-flows/link-pad-flow-portal.md
+    items:
+    - name: Trigger desktop flows from cloud flows
+      href: ./desktop-flows/trigger-desktop-flows.md
+    - name: Run unattended desktop flows
+      href: ./desktop-flows/run-unattended-desktop-flows.md
   - name: Manage machines and machine groups
     items:
     - name: Manage machines
