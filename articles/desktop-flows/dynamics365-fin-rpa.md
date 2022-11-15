@@ -166,9 +166,6 @@ Now that prerequisites are set, you are on your way to get the free solutions th
     1. In the solution, select the **…** menu for the **Report Reconciliation** cloud flow.
     1. Select **Turn On**
 
-
-
-
 1. Put in the encrypted credentials to be used by the solution to sign in to Dynamics 365:
 
     1. From the solution explorer, select the line item called **Report Validation**
