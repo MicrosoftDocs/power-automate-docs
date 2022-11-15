@@ -1,5 +1,5 @@
 ---
-title: Power Automate for desktop architecture | Microsoft Docs
+title: Power Automate for desktop architecture
 description: Power Automate for desktop architecture
 author: georgiostrantzas
 

@@ -1,5 +1,5 @@
 ---
-title: Learn to create Windows recorder (V1) flows | Microsoft Docs
+title: Learn to create Windows recorder (V1) flows
 description: Learn to create Windows recorder (V1) flows for Windows applications.
 services: ''
 suite: flow

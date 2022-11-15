@@ -1,5 +1,5 @@
 ---
-title: Send physical clicks on a web element | Microsoft Docs
+title: Send physical clicks on a web element
 description: Send physical clicks on a web element
 author: georgiostrantzas
 

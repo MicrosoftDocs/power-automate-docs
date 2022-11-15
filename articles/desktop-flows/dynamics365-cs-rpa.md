@@ -1,5 +1,5 @@
 ---
-title: Use RPA with Dynamics 365 Customer Service | Microsoft Docs
+title: Use RPA with Dynamics 365 Customer Service
 description: Use RPA with Dynamics 365 Customer Service.
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: Print images | Microsoft Docs
+title: Print images
 description: Print images
 author: georgiostrantzas
 

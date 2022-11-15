@@ -1,5 +1,5 @@
 ---
-title: Run macros on an Excel workbook | Microsoft Docs
+title: Run macros on an Excel workbook
 description: Run macros on an Excel workbook
 author: georgiostrantzas
 

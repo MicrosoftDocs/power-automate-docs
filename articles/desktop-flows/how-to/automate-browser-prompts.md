@@ -1,5 +1,5 @@
 ---
-title: Automate browser prompts | Microsoft Docs
+title: Automate browser prompts
 description: Automate browser prompts
 author: georgiostrantzas
 

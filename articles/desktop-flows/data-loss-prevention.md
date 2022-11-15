@@ -1,5 +1,5 @@
 ---
-title: Data loss prevention (DLP) policies (preview) | Microsoft Docs
+title: Data loss prevention (DLP) policies (preview)
 description: Data loss prevention (DLP) policies (preview)
 author: georgiostrantzas
 

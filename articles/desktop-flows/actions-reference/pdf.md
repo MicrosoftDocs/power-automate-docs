@@ -1,5 +1,5 @@
 ---
-title: PDF | Microsoft Docs
+title: PDF
 description: PDF Actions Reference
 author: georgiostrantzas
 
@@ -67,7 +67,7 @@ In the following example, the source document and the file name of the new docum
 ### <a name="extracttextfrompdfaction"></a> Extract text from PDF
 Extract text from a PDF file
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|[File](../variable-data-types.md#files-and-folders)||The PDF file to extract text from. Enter a file path, a variable containing a file or a text path|
@@ -78,7 +78,7 @@ Extract text from a PDF file
 |Password|Yes|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password of the PDF file. Leave this blank if the PDF isn't password protected|
 |Optimize for structured data|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to detect formatted layout in the document and extract text accordingly|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExtractedPDFText|[Text value](../variable-data-types.md#text-value)|The extracted text|
@@ -93,7 +93,7 @@ Extract text from a PDF file
 ### <a name="extracttablesfrompdfaction"></a> Extract tables from PDF
 Extract tables from a PDF file
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|[File](../variable-data-types.md#files-and-folders)||The PDF file to extract tables from. Enter a file path, a variable containing a file or a text path|
@@ -105,7 +105,7 @@ Extract tables from a PDF file
 |Merge tables that cross page margins|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to merge tables that cross page margins in the specified page range|
 |First line contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether the first line of table contains column names|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExtractedPDFTables|[List of PDF table info](../variable-data-types.md#list-of-pdf-table-info)|The extracted tables with their info as a list|
@@ -120,7 +120,7 @@ Extract tables from a PDF file
 ### <a name="extractimagesfrompdfaction"></a> Extract images from PDF
 Extract images from a PDF file
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|[File](../variable-data-types.md#files-and-folders)||The PDF file to extract images from. Enter a file path, a variable containing a file or a text path|
@@ -133,8 +133,8 @@ Extract images from a PDF file
 |Save image(s) to|No|[Folder](../variable-data-types.md#files-and-folders)||The folder to save the extracted images as png files|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="extractimagesfrompdfaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -148,7 +148,7 @@ Extract images from a PDF file
 ### <a name="extractpages"></a> Extract PDF file pages to new PDF file
 Extract pages from a PDF file to a new PDF file
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|[File](../variable-data-types.md#files-and-folders)||The PDF file to extract pages from. Enter a file path, a variable containing a file or a text path|
@@ -158,7 +158,7 @@ Extract pages from a PDF file to a new PDF file
 |If file exists|N/A|Overwrite, Don't overwrite, Add sequential suffix|Add sequential suffix|Specifies what to do in case the output PDF file already exists|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExtractedPDF|[File](../variable-data-types.md#files-and-folders)|The new PDF file|
@@ -176,7 +176,7 @@ Extract pages from a PDF file to a new PDF file
 ### <a name="mergefiles"></a> Merge PDF files
 Merges multiple PDF files into a new one
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF files|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The files to merge. Enclose multiple files in double quotes (") and separate them by a delimiter, or use a list of files|
@@ -186,7 +186,7 @@ Merges multiple PDF files into a new one
 |Delimiter|No|[Text value](../variable-data-types.md#text-value)|,|A custom password delimiter. This delimiter shouldn't be part of any of the passwords|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |MergedPDF|[File](../variable-data-types.md#files-and-folders)|The merged PDF file|

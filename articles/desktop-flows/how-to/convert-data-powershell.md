@@ -1,5 +1,5 @@
 ---
-title: Convert data using PowerShell | Microsoft Docs
+title: Convert data using PowerShell
 description: Convert data using PowerShell
 author: georgiostrantzas
 ms.service: power-automate

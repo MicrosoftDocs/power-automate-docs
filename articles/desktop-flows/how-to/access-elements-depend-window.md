@@ -1,5 +1,5 @@
 ---
-title: Access elements that depend on how the window appears on the screen | Microsoft Docs
+title: Access elements that depend on how the window appears on the screen
 description: Access elements that depend on how the window appears on the screen	
 author: georgiostrantzas
 

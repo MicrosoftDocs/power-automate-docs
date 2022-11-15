@@ -1,5 +1,5 @@
 ---
-title: Message boxes | Microsoft Docs
+title: Message boxes
 description: Message boxes Actions Reference
 author: georgiostrantzas
 
@@ -68,7 +68,7 @@ To create a custom form that accepts multiple elements, use the **Display custom
 ### <a name="showmessagedialog"></a> Display message
 Displays a message box
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Message box title|Yes|[Text value](../variable-data-types.md#text-value)||The text to use as the message box title|
@@ -81,7 +81,7 @@ Displays a message box
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|3|The seconds to pause the automation while waiting for input, until continuing automatically|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The text of the button pressed|
@@ -96,7 +96,7 @@ Displays a message box
 ### <a name="inputdialog"></a> Display input dialog
 Displays a dialog box that prompts the user to enter text
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Input dialog title|Yes|[Text value](../variable-data-types.md#text-value)||The dialog title|
@@ -106,7 +106,7 @@ Displays a dialog box that prompts the user to enter text
 |Keep input dialog always on top|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the input dialog should always remain on top of all other windows|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |UserInput|[Text value](../variable-data-types.md#text-value)|The text entered by the user, or the default text|
@@ -122,7 +122,7 @@ Displays a dialog box that prompts the user to enter text
 ### <a name="selectdatedialog"></a> Display select date dialog
 Displays a dialog box that prompts the user to enter a date or date range
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Dialog title|Yes|[Text value](../variable-data-types.md#text-value)||The dialog title|
@@ -134,7 +134,7 @@ Displays a dialog box that prompts the user to enter a date or date range
 |Keep date selection dialog always on top|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the date selection dialog should always remain on top of all other windows|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |SelectedDate|[Datetime](../variable-data-types.md#dates-and-time)|The date entered by the user or the default date|
@@ -151,7 +151,7 @@ Displays a dialog box that prompts the user to enter a date or date range
 ### <a name="selectfromlistdialog"></a> Display select from list dialog
 Displays a dialog box with options that lets the user select from a list
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Dialog title|Yes|[Text value](../variable-data-types.md#text-value)||The dialog title|
@@ -164,7 +164,7 @@ Displays a dialog box with options that lets the user select from a list
 |Preselect items starting with a + sign|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the items with a prepended '+' sign will appear automatically preselected|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |SelectedItem|[Text value](../variable-data-types.md#text-value)|The item selected from the list as text|
@@ -183,7 +183,7 @@ Displays a dialog box with options that lets the user select from a list
 ### <a name="selectfiledialog"></a> Display select  file dialog
 Displays the select file dialog and prompts the user to select one or more files
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Dialog title|Yes|[Text value](../variable-data-types.md#text-value)||The dialog title|
@@ -194,7 +194,7 @@ Displays the select file dialog and prompts the user to select one or more files
 |Check if file exists|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether only files that already exist will be accepted|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |SelectedFile|[File](../variable-data-types.md#files-and-folders)|The file that will be selected through the dialog|
@@ -211,7 +211,7 @@ Displays the select file dialog and prompts the user to select one or more files
 ### <a name="selectfolder"></a> Display select folder dialog
 Displays the select folder dialog and prompts the user to select a folder
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Dialog description|Yes|[Text value](../variable-data-types.md#text-value)||The description of the select folder dialog For example, "Please select the folder into which you wish to copy the files"|
@@ -219,7 +219,7 @@ Displays the select folder dialog and prompts the user to select a folder
 |Keep folder selection dialog always on top|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether the folder selection dialog should always remain on top of all other windows|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |SelectedFolder|[Folder](../variable-data-types.md#files-and-folders)|The selected folder|
@@ -236,11 +236,11 @@ Displays the select folder dialog and prompts the user to select a folder
 ### <a name="showcustomdialog"></a> Display custom form
 Display a customized form that can include multiple types of elements, like text, number or file inputs etc.
 
-##### Input Parameters
+##### Input parameters
 
 Input parameters are configured through the [custom form designer](../custom-forms.md).
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |CustomFormData|[Custom object](../variable-data-types.md#custom-object)|A custom object containing the user's input|

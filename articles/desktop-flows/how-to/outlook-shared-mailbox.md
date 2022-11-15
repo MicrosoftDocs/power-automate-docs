@@ -1,5 +1,5 @@
 ---
-title: Use a shared Outlook mailbox in email automations | Microsoft Docs
+title: Use a shared Outlook mailbox in email automations
 description: Use a shared Outlook mailbox in email automations
 author: georgiostrantzas
 

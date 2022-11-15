@@ -1,5 +1,5 @@
 ---
-title: Silent registration for machines | Microsoft Docs
+title: Silent registration for machines
 description: Silent registration for machines 
 author: georgiostrantzas
 ms.subservice: desktop-flow
@@ -24,7 +24,7 @@ This article describes how to use our mass deployment tool that allows you to ea
 
 ## Pre-requisites
 
-To silently register your machine(s), Power Automate for desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate silently](./install.md#install-power-automate-for-desktop-silently)
+To silently register your machine(s), Power Automate for desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate silently](install-silently.md)
 
 To silently register your machine and join a group, we recommend you to use a service principal account. You can also use your Azure Active Directory account.
 

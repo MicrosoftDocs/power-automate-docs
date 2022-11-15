@@ -1,5 +1,5 @@
 ---
-title: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation | Microsoft Docs
+title: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation
 description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation
 services: ''
 suite: flow

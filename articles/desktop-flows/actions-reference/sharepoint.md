@@ -1,5 +1,5 @@
 ---
-title: SharePoint (preview) | Microsoft Docs
+title: SharePoint (preview)
 description: SharePoint (preview) Actions Reference
 author: georgiostrantzas
 ms.subservice: desktop-flow

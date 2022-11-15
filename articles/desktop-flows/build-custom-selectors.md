@@ -1,5 +1,5 @@
 ---
-title: Build a custom selector | Microsoft Docs
+title: Build a custom selector
 description: Build a custom selector
 author: georgiostrantzas
 
