@@ -26,13 +26,19 @@ Follow these steps to move your solution and its dependencies to a new environme
 >Before you export a solution, consider removing environment variable values in the solution.
 
 1. Sign into [Power Automate](https://powerautomate.com.)
+
 1. Select **Solutions** from the navigation bar on the left side of Power Automate.
+
 1. Select the unmanaged solution that you want to export.
+
 1. Select **Export** from the menu at the top of the screen.
+
 1. The **Before you export** right pane appears. Choose from the following options.
     - **Publish all changes** - Notice that, when you export an unmanaged solution, only published components are exported. We recommend that you select **Publish** to confirm that all components are in the exported solution.
     - **Check for issues** - Run the solution checker against the solution to detect performance and stability issues.
+
 1. Select **Next**.
+
 1. The **Export this solution** page appears on the right. Enter or select from the following options, and then select **Export**.  
     - **Version number** - Power Automate automatically increments your solution version. You can accept the default version or enter your own.
     - **Export as** - Select the package type, either **Managed** or **Unmanaged**. More information: [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
@@ -44,8 +50,11 @@ Find the flows within the **Workflows** folder in the solution zip file. Each ex
 ## Tips
 
 - You can also find your solutions via the **Solutions** card in the flow details page of solution-aware cloud flows. Alternatively, select the solution in which your are interested from the **Solutions** card, select the **Overview** tab, and then use the **Export** button there.
+
 - You can't export managed solutions. More information: [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
+
 - Once a flow is solution-aware and in Dataverse, you must use the steps in this article to export it. You cannot export a solution-aware cloud flow from the flow details page.
+
 - To implement healthy application lifecycle management (ALM) in your organization, use a source control system to store and collaborate on your solutions, and automate the solution export process. More information: [ALM basics](/power-platform/alm/basics-alm) in the Power Platform ALM guide.
 
 ## Learn more

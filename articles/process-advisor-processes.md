@@ -1,11 +1,14 @@
 ---
 title: Prepare processes and recordings in process advisor (contains videos) | Microsoft Docs
 description: Before you can use process advisor task mining, learn how to create a process, record the activities, and prepare the recording for analysis.
-author: nijemcevic 
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 04/01/2022
-ms.author: tatn
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -33,13 +36,13 @@ In general, processes you think might be inefficient or repetitive are good cand
 
 1. Sign in to [Power Automate](https://flow.microsoft.com/).
 
-1. Select **Process advisor** on the left-side navigation pane.
+1. On the left-side navigation pane, select **Process advisor** .
 
-1. Select the **Create a new process** tile.
+1. In the **Create a new process** section, select the **Start here** tile.
 
-1. Enter a name for your process and description, and then select **Create**.
+1. Enter a name for your process and description, and then select **Recordings**.
 
-1. Select **Recordings** > **Create**.
+1. Select **Create**.
 
 ## Record your process
 
@@ -47,10 +50,6 @@ Create a recording in one of two ways:
 
 - [Right after process creation](#create-a-recording-right-after-process-creation).
 - [From the process details page](#create-a-recording-from-the-process-details-screen)
-
-Here's a short video on how to record a process in process advisor:<br>
-</br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6PR]
 
 ### Create a recording right after process creation
 
@@ -60,11 +59,15 @@ After you create a process, you'll see a screen with two options as next steps.
 
 ### Create a recording from the process details screen
 
-1. On the **Process advisor** > **Processes** screen, select the process you want to record from the list view.
+1. Select **Process advisor** > **All processes** below the tiles to the right.
+
+    :::image type="content" source="media/all-processes-recording.png" alt-text="Screenshot of the 'process advisor home screen with the 'All processes' button.":::
 
 1. Select the name of the process to go to the process details screen.
 
 1. On the menu at the top, select **New recording**.
+
+    :::image type="content" source="media/new-rec-button.png" alt-text="Screenshot of the 'New recording' button.":::
 
 1. Select **Open recorder**.
 
@@ -73,14 +76,14 @@ After you create a process, you'll see a screen with two options as next steps.
 1. By using any of the methods described previously, you should receive a message that says **Launching the recorder in Power Automate**.
 
     > [!NOTE]
+    >
     > You should've [downloaded Power Automate](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can also select **Get the app** to install it.
 
 1. If you've installed Power Automate, you should see an **Open Power Automate** browser pop-up window. Select it to open the app.
 
 1. If Power Automate is installed but doesn’t open correctly, select **Open again**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Launch recorder in Power Automate.](./media/launch-recorder.png)
+    :::image type="content" source="./media/launch-recorder.png" alt-text="Screenshot of the 'Launching the recorder in Power Automate Desktop' screen.":::
 
 ## Power Automate recorder
 
@@ -88,12 +91,12 @@ After you create a process, you'll see a screen with two options as next steps.
 
 1. Perform the actions that you want to record, and then select **Finish** at the bottom of the recorder screen.
 
-   > [!div class="mx-imgBorder"]
-   > ![screenshot of the Desktop recorder.](./media/desktop-recorder.png "Desktop recorder")
+    :::image type="content" source="./media/desktop-recorder.png" alt-text="Screenshot of the 'Desktop recorder' screen.":::
 
 1. After the recording has been saved successfully, select **View recording** to view the recorded steps and prepare the recording for analysis.
 
    > [!NOTE]
+   >
    > Depending on the length of the recording, it may take some time before the actions will be available.
 
 ### Recorder features
@@ -117,7 +120,7 @@ As you record your actions, the action descriptions will be listed in the record
 
 After the recording has been completed, you can view the recorded actions on the recording details screen. More importantly, you need to prepare the recording to be ready for analysis.
 
-What does this mean?
+*What does this mean?*
 
 - The actions recorded can be granular, and they need to be grouped into activities. These will be the building blocks for the process map that's created through analysis. Fortunately, process advisor now supports auto create activities from recordings.
 
@@ -147,10 +150,11 @@ You should already have some activities that are created automatically. You can 
 
 1. Name your activity on the right side of the screen. Use the dropdown list to find activity names that already exist for the process or create your own.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of group actions into activities.](./media/group-actions.png "Group actions into activities")
+    :::image type="content" source="./media/group-actions.png" alt-text="Screenshot of grouping actions into activities.":::
 
 #### Delete an activity
+
+To analyze, you need at least two activities. Otherwise, the process map wouldn't be meaningful.
 
 1. If you don't want an auto create activity or made a mistake and want to delete an activity, select **Delete activity** in the command bar.
 
@@ -158,16 +162,15 @@ You should already have some activities that are created automatically. You can 
 
 1. At any time, select **Save** on the top right to save your work.
 
-> [!NOTE]
-> To analyze, you need at least two activities. Otherwise, the process map wouldn't be meaningful.
-
 #### Save and analyze
 
 1. When you finish grouping, select **Save and analyze** on the top right.
 
 1. Once analyzed, select **View analytics** in the notification bar to go to the analytics page. For more information, go to [Analyze processes in process advisor](process-advisor-analyze.md).
 
-1. Alternatively, you can save without analyzing by selecting the carat next to **Save and analyze**, then select **Save**.  
+    :::image type="content" source="./media/view-analytics-button.png" alt-text="Screenshot of the 'View analytics' button.":::
+
+1. Alternatively, you can save without analyzing by selecting the caret next to **Save and analyze**, and then select **Save**.  
 
 1. Select **Close** to return to the process details screen.
 
@@ -182,6 +185,8 @@ You should already have some activities that are created automatically. You can 
 As a process owner or co-owner, you can create recommended activity names for a process. This will ensure more consistency in naming across recordings.
 
 1. On the process details screen, select **Create activity names** to bring up the panel.
+
+    :::image type="content" source="./media/create-act-names.png" alt-text="Screenshot of the 'Create activity names' button.":::
 
 1. To add a new activity name entry to the recommended list, select **New name**.
 

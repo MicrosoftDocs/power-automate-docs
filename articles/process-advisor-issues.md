@@ -1,13 +1,15 @@
 ---
-title: Known issues | Microsoft Docs
+title: Known issues
 description: Known issues in process advisor.
-author: nijemcevic 
-
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 5/25/2021
-ms.author: tatn
-ms.reviewer: v-aangie
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
