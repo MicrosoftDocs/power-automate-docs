@@ -1,6 +1,6 @@
 ---
-title: Trigger a desktop flow from a cloud flow | Microsoft Docs
-description: Link a Power Automate desktop flow with a cloud flow in the Power Automate portal
+title: Trigger desktop flows from cloud flows
+description: See how to trigger Power Automate desktop flows from the cloud using cloud flows.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -19,9 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-
-# Trigger a desktop flow from a cloud flow
-
+# Trigger desktop flows from cloud flows
 
 ## Prerequisites
 
@@ -30,13 +28,14 @@ search.audienceType:
 
 - To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
 
-   As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device. 
+   As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device.
 
-- A work or school account. 
+- A work or school account.
 
    >[!IMPORTANT]
    >You must use the same work or school account to set up the gateway, to sign into Power Automate, and to log into your Windows device.
-   
+
+## Trigger a desktop flow from a cloud flow
 
 1. Go to **flow.microsoft.com** and sign in with your credentials. In Power Automate, select **My flows**. Select **+ New flow**, and from the drop-down select **Instant cloud flow**.
 
@@ -58,7 +57,7 @@ search.audienceType:
 
    ![Screenshot of the Run a flow built with Power Automate Desktop action.](media/link-pad-flow-portal/action-search.png)
 
-1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flows connections in [Setup desktop flows connections and machine credentials](install.md#setup-desktop-flows-connections-and-machine-credentials).
+1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flow connections in [Create desktop flow connections](desktop-flow-connections.md).
 
    ![Screenshot of the fields of a new desktop flow connection.](media/link-pad-flow-portal/desktop-flow-connection.png)
 
@@ -102,15 +101,11 @@ search.audienceType:
    > [!NOTE]
    > If an input variable contains sensitive data, you may want to obfuscate or omit it from the logs. To find more information regarding sensitive text inputs, refer to [Manage sensitive input like passwords](../how-tos-use-sensitive-input.md).
 
-
    > [!NOTE]
    > The limit of the input size for a desktop flow is 2MB (1MB for Chinese regions)
 
    ![Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.](media/link-pad-flow-portal/run-desktop-flow-v2-action-properties-2.png)
 
 1. Output variables from desktop flows can be used in most cloud flow actions.
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

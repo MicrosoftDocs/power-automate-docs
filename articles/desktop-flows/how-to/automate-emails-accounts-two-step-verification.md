@@ -1,5 +1,5 @@
 ---
-title: Automate email accounts with two-step verification | Microsoft Docs
+title: Automate email accounts with two-step verification
 description: Automate email accounts with two-step verification
 author: georgiostrantzas
 

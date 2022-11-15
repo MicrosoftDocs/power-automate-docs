@@ -1,5 +1,5 @@
 ---
-title: Extract attributes from window elements | Microsoft Docs
+title: Extract attributes from window elements
 description: Extract attributes from window elements
 author: georgiostrantzas
 

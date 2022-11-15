@@ -1,5 +1,5 @@
 ---
-title: Introduction to other types of desktop flows (contains video) | Microsoft Docs
+title: Introduction to other types of desktop flows (contains video)
 description: Introduction to other types of desktop flows.
 services: ''
 suite: flow

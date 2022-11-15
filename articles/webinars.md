@@ -37,7 +37,7 @@ by Lokeshwar Reddy Vangala and Pranav Rastogi<br/>
 by Stephanie Whitaker, Nicolas Pouhaer, and Yiannis Mavridis<br/>
 [Register and watch now](https://info.microsoft.com/ww-Landing-AutomateTimeConsumingTaskswithRPA.html?LCID=EN-US)
 
-**Improve workflow efficiency with Process Advisor in Power Automate**  
+**Improve workflow efficiency with process advisor in Power Automate**  
 by Mrigankka Fotedar and Glendyll Fabe<br/>
 [Register and watch now](https://info.microsoft.com/ww-Landing-Workflow-Process-advisor-PowerAutomate.html?LCID=EN-US)
 
@@ -45,7 +45,7 @@ by Mrigankka Fotedar and Glendyll Fabe<br/>
 by Amina Bouabdallah, Priya Kodukula, and Jonathan Kendall<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-automation101powerautomate.html?LCID=EN-US)
 
-**Automate Document Processing with AI Builder**  
+**Automate document processing with AI Builder**  
 by Gwenael Bego and Joe Fernandez<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-documentprocessingaibuilder.html?LCID=EN-US)
 

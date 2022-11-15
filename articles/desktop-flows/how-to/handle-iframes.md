@@ -1,5 +1,5 @@
 ---
-title: Handle iframes on a web page | Microsoft Docs
+title: Handle iframes on a web page
 description: Handle iframes on a web page
 author: georgiostrantzas
 

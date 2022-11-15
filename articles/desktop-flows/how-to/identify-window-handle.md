@@ -1,5 +1,5 @@
 ---
-title: Identify a window by its handle | Microsoft Docs
+title: Identify a window by its handle
 description: Identify a window by its handle
 author: georgiostrantzas
 

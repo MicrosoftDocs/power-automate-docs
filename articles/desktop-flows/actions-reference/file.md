@@ -1,5 +1,5 @@
 ---
-title: File | Microsoft Docs
+title: File
 description: A reference for file actions.
 author: georgiostrantzas
 

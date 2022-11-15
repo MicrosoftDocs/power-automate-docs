@@ -1,5 +1,5 @@
 ---
-title: Autofit Excel columns using VBScript | Microsoft Docs
+title: Autofit Excel columns using VBScript
 description: Autofit Excel columns using VBScript
 author: georgiostrantzas
 

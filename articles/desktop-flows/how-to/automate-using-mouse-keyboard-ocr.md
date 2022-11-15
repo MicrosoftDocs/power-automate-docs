@@ -1,5 +1,5 @@
 ---
-title: Automate using mouse & keyboard and OCR actions (recommended for automation in VDI) | Microsoft Docs
+title: Automate using mouse & keyboard and OCR actions (recommended for automation in VDI)
 description: Automate using mouse & keyboard and OCR actions (recommended for automation in VDI)
 author: georgiostrantzas
 

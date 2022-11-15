@@ -1,5 +1,5 @@
 ---
-title: Share and manage desktop flows | Microsoft Docs
+title: Share and manage desktop flows
 description: Share and manage desktop flows
 services: ''
 suite: flow
