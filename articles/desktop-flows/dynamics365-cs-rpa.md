@@ -222,11 +222,11 @@ Now that prerequisites are set, we are on our way to get these free solutions th
 
     ![Screenshot of the Solution tab in the Power Automate portal.](./media/dynamics365-cs-rpa/4f66650ddfd5e345f0de2499c1f14ede.png)
 
-1. Open the cloud flow named “Automation to validate customer info”. Expand each action to review. In the Desktop flow action, you can switch to use any desktop flow you want and use any the input/output parameter that you want to use. To learn more, read [here](link-pad-flow-portal.md) on how to use desktop flow in cloud flow.
+1. Open the cloud flow named “Automation to validate customer info”. Expand each action to review. In the Desktop flow action, you can switch to use any desktop flow you want and use any the input/output parameter that you want to use. To learn more, read [here](trigger-desktop-flows.md) on how to use desktop flow in cloud flow.
 
 1. Now you can save the cloud flow. Go back to D365 portal and trigger the agent script action to test. You will see your customization  automation start to run.
 
-1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode (click [here](run-pad-flow.md#unattended-mode) to learn more) and switch it to run unattended way (click [here](run-pad-flow.md#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
+1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode and switch it to run in unattended mode (click [here](run-pad-flow.md#unattended-mode) to learn more). So that every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a per flow plan (click [here](/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center) to learn more)
 
 ## Troubleshooting and known issues
 
