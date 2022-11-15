@@ -658,7 +658,7 @@
       items:
       - name: Azure templates
         href: process-mining-azure-templates.md   
-      - name: Finance & Operations templates
+      - name: Finance and operations templates
         href: process-mining-finance-ops-templates.md   
       - name: Power Platform templates
         href: process-mining-templates.md

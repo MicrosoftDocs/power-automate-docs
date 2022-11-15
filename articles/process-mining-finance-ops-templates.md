@@ -1,5 +1,5 @@
 ---
-title: Finance and Operations templates for process mining in process advisor (preview)
+title: Finance and operations templates for process mining in process advisor (preview)
 description: Learn how to use Finance and operations templates for process mining in the Power Automate process advisor.
 author: donums
 contributors:
@@ -17,7 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Finance & Operations templates for process mining (preview)
+# Finance and operations templates for process mining (preview)
 
 If you're interested in analyzing your finance and operation process easily, onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights by enabling you to connect to your system of record and surfacing contextual insights. You'll avoid the data identification and manipulation that's required with traditional process mining tools and reach process rich insights on analysis.
 
