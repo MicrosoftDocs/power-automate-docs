@@ -16,7 +16,7 @@ search.audienceType:
 
 # Overview of process advisor
 
-The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this. Take a quick self-guided tour by going to [Process Advisor guided tour](https://guidedtour.microsoft.com/en-us/guidedtour/power-platform/process-advisor/1/1).
+The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this. Take a quick self-guided tour by going to [Process advisor guided tour](https://guidedtour.microsoft.com/en-us/guidedtour/power-platform/process-advisor/1/1).
 
 Task mining and process mining share the same goal of improving process efficiency. The main difference is their area of focus.
 
