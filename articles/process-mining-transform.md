@@ -31,7 +31,7 @@ Here are some reasons why you might want to transform the data:
 
 - You might want to rename some of the activity names to be more descriptive and understandable. This is often not the case with names in a database.
 
-- You might be interested in only the most recent year's history, and not the entire history.
+- You might be interested in only a specific date range, and not the entire history of data.
 
     > [!NOTE]
     > For public preview, we only support up to 150,000 rows of data. Because of this, filtering to a specific period may be necessary.
