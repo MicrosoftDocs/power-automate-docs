@@ -31,6 +31,10 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 
 - To trigger desktop flows through Power Automate, you have to use [machines](manage-machines.md) or [machine groups](manage-machine-groups.md). Machines are physical or virtual devices that are used to automate desktop processes. Machine groups allow you to organize multiple machines together to help distribute your automation workload.
 
+
+<!-- When you click the on-premises data gateway link (below), it starts an installation. You might want to advise readers of that before they click. -->
+
+
    As an alternative to the machines, you can use the [on-premises data gateway](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409). The gateway is an enterprise-grade secure connection between Power Automate and your device.
 
 - If you use the on-premises data gateway to trigger desktop flows, you also need to [set up a desktop flow connection](install.md#setup-desktop-flows-connections-and-machine-credentials).
@@ -42,7 +46,7 @@ After you've created and tested a desktop flow, you can run it from an event, sc
 
 ## Run desktop flows unattended or attended
 
-When you create desktop flows, you run them either in **attended** or **unattended** mode. Unattended is best for applications that don't need human supervision.
+When you create desktop flows, you run them either in **unattended** or **attended** mode. Unattended is best for applications that don't need human supervision.
 
 When Power Automate runs in unattended mode, it automatically signs in to the target devices that run Windows 10, Windows 11, Windows Server 2016, Windows Server 2019, or Windows Server 2022. Once the automation completes, Power Automate signs out from the device and reports its activity.
 
@@ -73,7 +77,7 @@ Power Automate performs the following steps:
 
 Desktop flows can run on a Windows session as long as it exists and isn't unlocked for unattended runs.
 
-A new session is created on the machine for each unattended run using the credentials provided in the connection. The flow runs on this session, and the session is signed-off at the end of the flow.
+A new session is created on the machine for each unattended run using the credentials provided in the connection. The flow runs on this session, and the session is signed off at the end of the flow.
 
 The **reuse Windows session** functionality allows desktop flows to run on an existing session. At the end of the flow run, the session is locked and can be reused for another desktop flow run.  
 
@@ -87,7 +91,7 @@ The **reuse Windows session** functionality allows desktop flows to run on an ex
 >[!NOTE]
 >When adding a machine in a group, the machine will use the same settings as defined in the group. When removing from a machine group, the machine keeps the setting defined at the group level.
 
-###### Known issues and limitations
+##### Known issues and limitations
 
 "Reuse sessions" isn't supported on machines on which a user can have multiple sessions (user isn't restricted to a single session).
 
@@ -153,7 +157,7 @@ Follow [these steps to add a gateway to create a cluster](/data-integration/gate
 
 To provide load balancing from the Power Automate gateway details page, navigate to **Data** > **Gateways**, and then select your gateway cluster.
 
-In the gateway details page, toggle **Run on all gateways in cluster**. This option will distribute the desktop flow runs on all the gateways within that cluster.
+In the gateway details page, toggle **Run on all gateways in the cluster**. This option will distribute the desktop flow runs on all the gateways within that cluster.
 
    ![Screenshot of the gateway details page.](media/run-pad-portal/gw-cluster.png "Screenshot of the gateway details page.")
 
@@ -172,9 +176,15 @@ In the gateway details page, toggle **Run on all gateways in cluster**. This opt
 
 If you plan to run multiple desktop flows, you can adopt either one of the following strategies. These strategies distribute the load and ensure that all desktop flows run successfully without overloading the target machines and running into time-outs because multiple desktop flows are running simultaneously.
 
-1. Spread the load over time by planning your desktop flows to run at different times. This practice works best if you have a limited set of machines that run workloads, and you can control the triggers that start your desktop flows.
-1. Create clusters of machines that can run desktop flows with identical configurations in parallel.
-1. Create multiple flows that each use a separate connection to target different machines.
+
+<!-- Above, it says you can adopt "either one" of the following strategies. But it looks like there are three choices, so "either one" should change to "any one". -->
+
+
+- Spread the load over time by planning your desktop flows to run at different times. This practice works best if you have a limited set of machines that run workloads, and you can control the triggers that start your desktop flows.
+
+- Create clusters of machines that can run desktop flows with identical configurations in parallel.
+
+- Create multiple flows that each use a separate connection to target different machines.
 
 By following these strategies, you can avoid having desktop flows competing to run on the same device and in some cases, failing due to time-outs.
 
@@ -208,14 +218,14 @@ Some of your desktop flows might run for long durations—for example, more than
 > [!IMPORTANT]
 > Gateways for desktop flows are now deprecated except for the China region. Switch to our machine-management capabilities. [Learn more about the switch from gateways to direct connectivity.](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
-1. If your unattended desktop flow fails with the **cannot create new session** message, follow these steps to resolve the issue:
+- If your unattended desktop flow fails with the **cannot create new session** message, follow these steps to resolve the issue:
 
     - On Windows 10 or Windows 11, confirm that you don’t have an active user session locked or unlocked on your target device.
     - On Windows Server 2016, Windows Server 2019, or Windows Server 2022, confirm you haven’t reached the maximum number of active user sessions configured for your device. Desktop flows won’t be able to run if it can't create new sessions.
 
-1. If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](/data-integration/gateway/service-gateway-tshoot).
+- If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. You may also [troubleshoot the gateway](/data-integration/gateway/service-gateway-tshoot).
 
-1. If the **gateway status** is **online**, try the following actions:
+- If the **gateway status** is **online**, try the following actions:
 
    - Confirm the desktop flows app and services are running on your device.
 
