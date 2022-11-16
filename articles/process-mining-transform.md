@@ -23,11 +23,6 @@ search.audienceType:
 
 After you select the data source you want to use, you're taken to the Power Query Editor. The Query Editor is a powerful tool to transform your data. To learn more, go to [The Power Query user interface](/power-query/power-query-ui).
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
 Here are some reasons why you might want to transform the data:
 
 - You might not be interested in all the activity names that are logged, and so you want to filter for specific activity names that are important to the process you're trying to mine.
@@ -49,8 +44,7 @@ Here are some reasons why you might want to transform the data:
 
 1. Select only the activity names that you want to analyze. Uncheck any name you want to exclude.
 
-   > [!div class="mx-imgBorder"]
-   > ![Screenshot of filtering activity names.](media/process-mining-transform/filter-activity.png "Filter activity names")
+    :::image type="content" source="media/process-mining-transform/filter-activity.png" alt-text="Screenshot of filtering activity names.":::
 
 4. Alternatively, you can use the **Text filter** menu for more advanced filtering. For more information on filtering by value, go to [Filter by values in a column](/power-query/filter-values).
 
@@ -62,8 +56,7 @@ Here are some reasons why you might want to transform the data:
 
 1. On the toolbar, select **Replace values**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Replace values button.](media/process-mining-transform/replace-value.png "Replace values button")
+    :::image type="content" source="media/process-mining-transform/replace-value.png" alt-text="Screenshot of the Replace values button.":::
 
 1. Under **Values to find**, type the activity name as it appears in the data source that you want to replace.
 
@@ -77,8 +70,7 @@ One strategy for reducing the total number of records is to use only the latest 
 
 1. Open the sort and filter menu by selecting the caret next to the **startTimestamp** column.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of reducing the number of total records.](media/process-mining-transform/reduce-records.png "Reduce the number of total records")
+    :::image type="content" source="media/process-mining-transform/reduce-records.png" alt-text="Screenshot of reducing the number of total records.":::
 
 1. To have the most recent records show up first, select **Sort descending**.
 
