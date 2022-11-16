@@ -332,5 +332,8 @@ This call returns the status of the import operation, including `progress` (the 
 
 Once import has completed successfully, you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must create them in the Power Automate designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
 
+## See also
+
+[Use the Microsoft Dataverse Web API with Power Apps](/power-apps/developer/data-platform/webapi/overview)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
