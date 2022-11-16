@@ -1,11 +1,14 @@
 ---
-title: Troubleshoot issues in process advisor (preview) | Microsoft Docs
+title: Troubleshoot issues in process advisor (preview)
 description: This topic explains how to troubleshoot issues with process mining in the process advisor feature in Power Automate.
-author: nijemcevic 
+author: donums
+contributors:
+  - donums
+  - v-aangie  
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 05/25/2022
-ms.author: tatn
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -22,11 +25,6 @@ Once you're done with setup, select **Analyze**. You'll be able to view the Anal
 
 *If you don't visit the Analytics page for 14 days, you'll need to re-analyze the process to access the Analytics page again.*
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
 For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
 
 ## Issues with dataflow refresh
@@ -39,8 +37,7 @@ To troubleshoot:
 
 1. Make a note of the environment in the environment display on the upper-right corner of the page.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the environment name.](media/process-mining-troubleshoot/environment.png "Environment name")
+    :::image type="content" source="media/process-mining-troubleshoot/environment.png" alt-text="Screenshot of the environment name.":::
 
 1. Make a note of the value of **Name** in the Data Source card below the Details card.
 
@@ -54,13 +51,11 @@ To troubleshoot:
 
 1. View the issue by selecting the **Warning** icon in the **Last refresh** column.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Warning icon.](media/process-mining-troubleshoot/warning.png "Warning icon")
- 
+     :::image type="content" source="media/process-mining-troubleshoot/warning.png" alt-text="Screenshot of the Warning icon.":::
+
 1. Download the report by selecting the **Download** icon in the **Actions** column.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Download icon.](media/process-mining-troubleshoot/download.png "Download icon")
+     :::image type="content" source="media/process-mining-troubleshoot/download.png" alt-text="Screenshot of the Download icon.":::
 
 9.	Open the report to see details of the issue.
 
@@ -78,25 +73,21 @@ Process mining will normally not be helpful when there's only one activity name 
 
 The *case ID* and *activity name* columns should be of the **Text** data type. The *timestamp* columns should be of the **Date/Time** data type. One of the most frequent causes of invalid format is in the *timestamp* column. To fix the format, return to setup and select the icon next to the *timestamp* column and ensure it's been mapped to **Date/Time**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Date/Time data type for StartTimestamp.](media/process-mining-troubleshoot/timestamp.png "Date/Time data type for StartTimestamp")
+:::image type="content" source="media/process-mining-troubleshoot/timestamp.png" alt-text="Screenshot of the Date/Time data type for StartTimestamp.":::
 
 If the format is incorrect, you'll see something like this:
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of errors in StartTimestamp.](media/process-mining-troubleshoot/timestamp-error.png "Errors in StartTimestamp")
+:::image type="content" source="media/process-mining-troubleshoot/timestamp-error.png" alt-text="Screenshot of errors in StartTimestamp.":::
 
 One possibility is that although the *timestamp* column has a valid datetime format, the format is valid for a different locale than the locale that the process is created in. A typical example is this datetime format being used in the United States locale: **dd/mm/yyyy hh:mm:ss**. In this case, we won't automatically detect that column as a datetime column. One way to fix this issue is by manually changing the locale. To do this:
 
 1. Delete the **Changed column** type step that you did previously. Do this by selecting **X** next to the last applied step in the Query settings pane on the right.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Changed columns.](media/process-mining-troubleshoot/changed-column.png "Changed columns")
+    :::image type="content" source="media/process-mining-troubleshoot/changed-column.png" alt-text="Screenshot of Changed columns.":::
 
 1. On the toolbar, select **Options** > **Project options**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Options, Project options.](media/process-mining-troubleshoot/project-options.png "Options, Project options")
+    :::image type="content" source="media/process-mining-troubleshoot/project-options.png" alt-text="Screenshot of Options, Project options.":::
 
 1. On the **Locale** dropdown list, select the correct locale and then select **OK**.
 
