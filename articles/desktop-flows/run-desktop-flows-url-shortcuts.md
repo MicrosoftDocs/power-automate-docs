@@ -28,7 +28,7 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 > [!WARNING]
 > Disabling the confirmation dialog poses security threats because you could run without notice a questionable flow shared by a malicious actor.
 
-![Screenshot of the Prompt me before running flows triggered by URL option in the console settings.](media/run-flow-url/console-run-url-console-settings.png)
+:::image type="content" source="media/run-flow-url/console-run-url-console-settings.png" alt-text="Screenshot of the Prompt me before running flows triggered by URL option in the console settings.":::
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 
 To create a shortcut for a desktop flow, right-click its name in the console and select **Create desktop shortcut**. All shortcuts are automatically created in your desktop folder, but you can move them to any folder of your machine.
 
-![Screenshot of the Create desktop shortcut option.](media/run-flow-url/console-create-desktop-shortcut.png)
+:::image type="content" source="media/run-flow-url/console-create-desktop-shortcut.png" alt-text="Screenshot of the Create desktop shortcut option.":::
 
 ## Create a run URL
 
@@ -76,11 +76,11 @@ If the console is set to another environment than the one specified in the URL, 
 
 To find the ID of an environment, navigate to the [Power Automate portal](https://flow.microsoft.com/) and select the desired environment. Then, navigate to the **My flows** tab and copy the environment ID from the address line.
 
-![Screenshot of the environment ID in the address line.](media/run-flow-url/find-environment-id.png)
+:::image type="content" source="media/run-flow-url/find-environment-id.png" alt-text="Screenshot of the environment ID in the address line.":::
 
 To find the ID of a desktop flow, launch the Power Automate console, select or right-click the appropriate flow, and select **Details**.
 
-![Screenshot of the desktop flow details.](media/run-flow-url/find-desktop-flow-id.png)
+:::image type="content" source="media/run-flow-url/find-desktop-flow-id.png" alt-text="Screenshot of the desktop flow details.":::
 
 ## Save logs for desktop flows run via URL
 

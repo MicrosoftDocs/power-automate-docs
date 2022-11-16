@@ -163,10 +163,5 @@ Instead of displaying separate notifications for each desktop flow, the monitori
 
 ![Screenshot of the flow monitoring window.](media\run-pad-flow\flow-monitoring-window.png)
 
-## Learn more
-
-- Install the [on-premises data gateway](/data-integration/gateway/service-gateway-app).
-- [Use the on-premises data gateway app](../gateway-manage.md) documentation.
-- [Troubleshoot](/data-integration/gateway/service-gateway-tshoot) the on-premises data gateway.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
