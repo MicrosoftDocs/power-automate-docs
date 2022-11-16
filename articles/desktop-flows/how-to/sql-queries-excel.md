@@ -48,7 +48,7 @@ Now, deploy the **Open SQL connection** action and populate the following connec
 
 A different approach is required in scenarios where you run SQL queries on password-protected Excel files. The **Open SQL connection** action can't connect to password-protected Excel files, so you have to remove the protection.
 
-To achieve that, launch the Excel file using the **Launch Excel** action. The file is password-protected, so populate the appropriate password in the **Password** field.
+To achieve that, launch the Excel file using the **Launch Excel** action. The file is password-protected, so enter the appropriate password in the **Password** field.
 
 ![Screenshot of the Launch Excel action and the Password field.](media/sql-queries-excel/launch-excel-action.png)
 
@@ -56,7 +56,7 @@ Next, deploy the appropriate UI automation actions and navigate to **File** > **
 
 ![Screenshot of the UI actions used to select the Encrypt with Password option.](media/sql-queries-excel/ui-actions.png)
 
-After selecting **Encrypt with Password**, populate an empty string in the pop-up dialog using the **Populate text field in windows** action. To populate an empty string, use the following expression: **%""%**.
+After selecting **Encrypt with Password**, populate an empty string in the pop-up dialog using the **Populate text field in window** action. To populate an empty string, use the following expression: **\%""%**.
 
 ![Screenshot of the Populate text field in window action.](media/sql-queries-excel/populate-text-field-action.png)
 
