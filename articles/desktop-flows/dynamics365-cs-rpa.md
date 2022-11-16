@@ -3,7 +3,7 @@ title: Use RPA with Dynamics 365 Customer Service
 description: Use RPA with Dynamics 365 Customer Service.
 author: georgiostrantzas
 ms.topic: article
-ms.date: 05/27/2021
+ms.date: 11/16/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
