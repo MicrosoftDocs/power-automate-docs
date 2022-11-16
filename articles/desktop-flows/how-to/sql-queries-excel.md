@@ -68,9 +68,9 @@ Lastly, deploy the **Close Excel** action to save the nonprotected workbook as a
 
 ![Screenshot of the Close Excel action with the Save document as option selected.](media/sql-queries-excel/close-excel-action.png)
 
-After saving the file, follow the instructions in [Open a SQL connection to Excel files](sql-queries-excel.md#open-an-sql-connection-to-an-excel-file) to open a connection to it.
+After saving the file, follow the instructions in [Open a SQL connection to an Excel file](sql-queries-excel.md#open-an-sql-connection-to-an-excel-file) to open a connection to it.
 
-When the manipulation of the Excel file is completed, use the **Delete file(s)** action to delete the nonprotected copy of the Excel file.
+When the manipulation of the Excel file is complete, use the **Delete file(s)** action to delete the nonprotected copy of the Excel file.
 
 ![Screenshot of the Delete file(s) action.](media/sql-queries-excel/delete-file-action.png)
 
@@ -80,7 +80,7 @@ Although the **Read from Excel worksheet** action can read the contents of an Ex
 
 A more efficient way to retrieve specific values from spreadsheets is to treat Excel files as databases and execute SQL queries on them. This approach is faster and increases the performance of the flow.
 
-To retrieve all the contents of a spreadsheet, you can use the following SQL query in the **Execute SQL statements** action.
+To retrieve all the contents of a spreadsheet, you can use the following SQL query in the **Execute SQL statement** action.
 
 ``` SQL
 SELECT * FROM [SHEET$]
