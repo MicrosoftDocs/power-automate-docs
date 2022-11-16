@@ -117,6 +117,10 @@ UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
 
 While developing your flow, you have to replace the **SHEET** placeholder with the name of the spreadsheet you want to access.
 
+
+<!-- Question: Is "existed" the correct term in the following sentence, or do you mean "existing"? Also, where it says "In this example, the columns are two," do you mean "This example has two columns ..."? -->
+
+
 The **COLUMN1** and **COLUMN2** placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real scenario, the number of the columns may be different. The columns in the first row of the Excel worksheet are identified as the table's column names. 
 
 The **\[COLUMN1\]='VALUE'** part of the query defines the row you want to update. In your flow, use the column name and the value based on which combination describes the rows uniquely.
@@ -141,5 +145,8 @@ Next, run the following SQL query to retrieve all the rows of the spreadsheet th
 SELECT * FROM [SHEET$] WHERE [COLUMN1] IS NOT NULL OR [COLUMN2] IS NOT NULL
 ```
 
-> [!NOTE]
-> The COLUMN1 and COLUMN2 placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real table, the number of the columns may be different. All the columns in the first row of the Excel worksheet are identified as the table's column names. 
+
+<!-- Same questions here as above. -->
+
+
+The COLUMN1 and COLUMN2 placeholders represent the names of all the existed columns. In this example, the columns are two, but in a real table, the number of the columns may be different. All the columns in the first row of the Excel worksheet are identified as the table's column names. 
