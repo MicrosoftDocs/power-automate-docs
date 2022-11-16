@@ -353,6 +353,8 @@
       href: ./desktop-flows/trigger-desktop-flows.md
     - name: Run unattended desktop flows
       href: ./desktop-flows/run-unattended-desktop-flows.md
+    - name: Run desktop flows via URL or desktop shortcuts
+      href: ./desktop-flows/run-desktop-flows-url-shortcuts
   - name: Manage machines and machine groups
     items:
     - name: Manage machines
