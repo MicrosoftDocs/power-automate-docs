@@ -1,5 +1,5 @@
 ---
-title: Run desktop flows concurrently on Windows Server
+title: Run desktop flows concurrently
 description: See how to run desktop flows concurrently on Windows Server machines.
 author: georgiostrantzas
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Run desktop flows concurrently on Windows Server
+# Run desktop flows concurrently
 
 > [!IMPORTANT]
 > Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)

@@ -355,8 +355,8 @@
       href: ./desktop-flows/run-unattended-desktop-flows.md
     - name: Run desktop flows sequentially
       href: ./desktop-flows/run-desktop-flows-sequentially.md
-    - name: Run desktop flows concurrently on Windows Server
-      href: ./desktop-flows/run-desktop-flows-concurrently-windows-server.md
+    - name: Run desktop flows concurrently
+      href: ./desktop-flows/run-desktop-flows-concurrently.md
     - name: Run desktop flows via URL or desktop shortcuts
       href: ./desktop-flows/run-desktop-flows-url-shortcuts.md
     - name: Runtime notifications
