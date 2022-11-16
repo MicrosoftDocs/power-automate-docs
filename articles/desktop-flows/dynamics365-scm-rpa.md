@@ -93,19 +93,19 @@ Now that prerequisites are set, you are on your way to get the free solutions th
 
 1. Switch the Power Automate machine settings to the environment in which you'll install the solution.
 
-    :::image type="content" source="./media/dynamics365-RPA/power-automate-machine-runtime.png" alt-text="Screenshot of the Power Automate machine runtime application.":::
+    :::image type="content" source="media/dynamics365-RPA/power-automate-machine-runtime.png" alt-text="Screenshot of the Power Automate machine runtime application.":::
 
 1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com) to create a cloud flow with manual trigger.
 
-    :::image type="content" source="./media/dynamics365-RPA/build-instant-cloud-flow-dialog.png" alt-text="Screenshot of the Build an instant cloud flow dialog.":::
+    :::image type="content" source="media/dynamics365-RPA/build-instant-cloud-flow-dialog.png" alt-text="Screenshot of the Build an instant cloud flow dialog.":::
 
 1. Add the appropriate action to run desktop flows.
 
-    :::image type="content" source="./media/dynamics365-RPA/run-flow-built-with-power-automate-desktop-action.png" alt-text="Screenshot of the Run a flow built with Power Automate for desktop action.":::
+    :::image type="content" source="media/dynamics365-RPA/run-flow-built-with-power-automate-desktop-action.png" alt-text="Screenshot of the Run a flow built with Power Automate for desktop action.":::
 
 1. Select **Directly to machine** in the **Connect** field. Then, select the machine name on which you've installed Power Automate, and enter the machine credential (the username and password you use to sign in to the machine. To find more information about direct connectivity, see [Manage machines](manage-machines.md).
 
-    :::image type="content" source="./media/dynamics365-RPA/connection-desktop-flows-action.png" alt-text="Screenshot of the connect option in Run a flow built with Power Automate for desktop action.":::
+    :::image type="content" source="media/dynamics365-RPA/connection-desktop-flows-action.png" alt-text="Screenshot of the connect option in Run a flow built with Power Automate for desktop action.":::
 
 ## Install the Dynamics 365 RPA solution
 
@@ -124,7 +124,7 @@ Now that prerequisites are set, you are on your way to get the free solutions th
 
     1. For each connector the solution uses, either select an existing connection or create a new one using your Microsoft account and credentials of your choice.
 
-        :::image type="content" source="./media/dynamics365-RPA/solution-connections.png" alt-text="Screenshot of the connections that need to be configured to be used by the solution.":::
+        :::image type="content" source="media/dynamics365-RPA/solution-connections.png" alt-text="Screenshot of the connections that need to be configured to be used by the solution.":::
 
     1. Go back to the tab in which you initiate the above step and select **Refresh**.
 
@@ -146,7 +146,7 @@ Now that prerequisites are set, you are on your way to get the free solutions th
     |QOrder Parameter – Test Group|Configure the Test group for the quality order creation|
     |QOrder Parameter - Warehouse|Configure the Warehouse for the quality order creation|
 
-    :::image type="content" source="./media/dynamics365-RPA/edit-qorder-parameter-pane.png" alt-text="Screenshot of the Edit QOrder Parameter pane.":::
+    :::image type="content" source="media/dynamics365-RPA/edit-qorder-parameter-pane.png" alt-text="Screenshot of the Edit QOrder Parameter pane.":::
 
 1. Turn on the cloud flow in the solution:
 
@@ -161,7 +161,7 @@ Now that prerequisites are set, you are on your way to get the free solutions th
     1. In the **LoginSCM** subflow, open the properties of the action 8.
     1. Fill in the **Text** field with the password of the account to use during automation.
 
-        :::image type="content" source="./media/dynamics365-RPA/populate-text-field-web-page-action.png" alt-text="Screenshot of the Populate text field on web page action.":::
+        :::image type="content" source="media/dynamics365-RPA/populate-text-field-web-page-action.png" alt-text="Screenshot of the Populate text field on web page action.":::
 
 1. Share each component of the solution (app, connection, flow, desktop flow) to other users in your company as run only user.  
 

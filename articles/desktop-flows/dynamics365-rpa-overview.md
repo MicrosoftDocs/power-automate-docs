@@ -26,7 +26,7 @@ Initially available for Dynamics 365 Customer Service, Dynamics 365 Supply Chain
 
 Developers can further extend any of those solutions using custom actions, custom connectors, Microsoft Azure services, and APIs to take full advantage of Microsoft's cloud and data ecosystem.
 
-:::image type="content" source="./media/dynamics365-rpa-overview/rpa-flow-chart.png" alt-text="Screenshot of an RPA flow chart.":::
+:::image type="content" source="media/dynamics365-rpa-overview/rpa-flow-chart.png" alt-text="Screenshot of an RPA flow chart.":::
 
 ## Save time across customer service, finance, and supply chain roles
 
