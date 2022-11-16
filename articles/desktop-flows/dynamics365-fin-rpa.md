@@ -48,8 +48,6 @@ To make this process fully automated and not require a human in front of the com
 1. Disable the toggle **Ask me what to do with each download**.
 1. Close your browser.
 
-![Screenshot of the Ask me what to do with each download browser toggle.](./media/dynamics365-fin-rpa/image001.png)
-
 #### Sign out of the Dynamics 365 app
 
 To accomplish the full automation, sign out of the application before running the automation for the first time. You need to do this step if you switch between automation and your account.  
@@ -107,20 +105,19 @@ Now that prerequisites are set, you are on your way to get the free solutions th
 
 1. Switch the Power Automate machine settings to the environment in which you'll install the solution.
 
-    ![Screenshot of the option to select a running environment.](./media/dynamics365-fin-rpa/image003.png)
+    :::image type="content" source="./media/dynamics365-fin-rpa/power-automate-machine-runtime.png" alt-text="Screenshot of the Power Automate machine runtime application.":::
 
 1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com) to create a cloud flow with manual trigger.
 
-    ![Screenshot of the option to create a cloud flow in the Power Automate portal.](./media/dynamics365-fin-rpa/image005.png)
-    ![Screenshot of the Build an instant cloud flow dialog.](./media/dynamics365-fin-rpa/image007.png)
+    :::image type="content" source="./media/dynamics365-fin-rpa/build-instant-cloud-flow-dialog.png" alt-text="Screenshot of the Build an instant cloud flow dialog.":::
 
 1. Add the appropriate action to run desktop flows.
 
-    ![Screenshot of the Run a flow built with Power Automate Desktop action.](./media/dynamics365-fin-rpa/image009.png)
+    :::image type="content" source="./media/dynamics365-fin-rpa/run-flow-built-with-power-automate-desktop-action.png" alt-text="Screenshot of the Run a flow built with Power Automate for desktop action.":::
 
 1. Select **Directly to machine** in the **Connect** field. Then, select the machine name on which you've installed Power Automate, and enter the machine credential (the username and password you use to sign in to the machine. To find more information about direct connectivity, see [Manage machines](manage-machines.md).
 
-    ![Image5.](./media/dynamics365-fin-rpa/image011.png)
+    :::image type="content" source="./media/dynamics365-fin-rpa/connection-desktop-flows-action.png" alt-text="Screenshot of the connect option in Run a flow built with Power Automate for desktop action.":::
 
 ## Install the Dynamics 365 RPA solution
 
@@ -141,9 +138,9 @@ Now that prerequisites are set, you are on your way to get the free solutions th
 
    ![Screenshot of the connections that need to be configured to be used by the solution.](./media/dynamics365-fin-rpa/image013.png)
 
-    1. Go back to the tab in which you initiate the above step and select **Refresh**.
+    :::image type="content" source="./media/dynamics365-fin-rpa/solution-connections.png" alt-text="Screenshot of the connections that need to be configured to be used by the solution.":::
 
-    ![Screenshot of the Refresh option.](./media/dynamics365-fin-rpa/image015.png)
+    1. Go back to the tab in which you initiate the above step and select **Refresh**.
 
     1. Select **Import**. The solution explorer shows you a message informing you that the solution is being imported. This step may take a few minutes.  
 
@@ -171,17 +168,14 @@ Now that prerequisites are set, you are on your way to get the free solutions th
     1. From the solution explorer, select the line item called **Report Validation**
     1. Select **Edit**, then **Launch App**. This step will launch Power Automate for desktop.
     1. Under the **Subflows** dropdown, select **login_to_FnO**.
-
-        ![Screenshot of the login_to_FnO subflow.](./media/dynamics365-fin-rpa/image017.png)
-
     1. In the **login_to_FnO** subflow, open the properties of the action 11.
     1. Fill in the **Text** field with the password of the account to use during automation.
 
-        ![Screenshot of the Populate text field on web page action.](./media/dynamics365-fin-rpa/image019.png)
+        :::image type="content" source="./media/dynamics365-RPA/populate-text-field-web-page-action.png" alt-text="Screenshot of the Populate text field on web page action.":::
 
 1. Now, test your flows. The demo below shows how the end-to-end scenario works. You should get a Teams message when the running is complete.
 
-   ![Screenshot of a demo showing how the end-to-end scenario works.](./media/dynamics365-fin-rpa/image021.gif)
+    :::image type="content" source="./media/dynamics365-fin-rpa/demo.gif" alt-text="Screenshot of a demo showing how the end-to-end scenario works.":::
 
 You can customize the desktop flow or cloud flow to create custom reports for your own scenarios. If you choose to run the automation unattended, you can switch the run mode from cloud flow.
 

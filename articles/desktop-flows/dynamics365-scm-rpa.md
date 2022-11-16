@@ -161,7 +161,7 @@ Now that prerequisites are set, you are on your way to get the free solutions th
     1. In the **LoginSCM** subflow, open the properties of the action 8.
     1. Fill in the **Text** field with the password of the account to use during automation.
 
-    :::image type="content" source="./media/dynamics365-RPA/populate-text-field-web-page-action.png" alt-text="Screenshot of the Populate text field on web page action.":::
+        :::image type="content" source="./media/dynamics365-RPA/populate-text-field-web-page-action.png" alt-text="Screenshot of the Populate text field on web page action.":::
 
 1. Share each component of the solution (app, connection, flow, desktop flow) to other users in your company as run only user.  
 
