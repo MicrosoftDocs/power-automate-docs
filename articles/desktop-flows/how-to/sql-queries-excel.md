@@ -68,7 +68,7 @@ Lastly, deploy the **Close Excel** action to save the nonprotected workbook as a
 
 ![Screenshot of the Close Excel action with the Save document as option selected.](media/sql-queries-excel/close-excel-action.png)
 
-After saving the file, follow the instructions in [Open a SQL connection to an Excel file](sql-queries-excel.md#open-an-sql-connection-to-an-excel-file) to open a connection to it.
+After saving the file, follow the instructions in [Open a SQL connection to an Excel file](sql-queries-excel.md#open-a-sql-connection-to-an-excel-file) to open a connection to it.
 
 When the manipulation of the Excel file is complete, use the **Delete file(s)** action to delete the nonprotected copy of the Excel file.
 
