@@ -17,8 +17,7 @@ ms.workload: na
 ms.date: 11/16/2022
 ms.author: deonhe
 Contributors:
-- georgiostrantzas
-- 
+  - georgiostrantzas
 search.app: 
   - Flow
 search.audienceType: 
