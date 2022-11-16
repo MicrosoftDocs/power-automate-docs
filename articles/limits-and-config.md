@@ -14,8 +14,10 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/10/2022
+ms.date: 11/16/2022
 ms.author: deonhe
+Contributors:
+- georgiostrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -248,7 +250,7 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 If you don’t want to authorize this public endpoint, you can alternatively allow all the following namespace endpoints.
 
 > [!NOTE]
-> This list of namespace endpoints can evolve. Therefore, please ensure that you regularly check this page to keep the list of authorized endpoints up to date.
+> This list of namespace endpoints can evolve. Therefore, ensure that you regularly check this page to keep the list of authorized endpoints up to date.
 
 | **URI**   | **Power Platform Region**   | **Is preview**   |
 | --- | --- | --- |

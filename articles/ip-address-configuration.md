@@ -14,8 +14,11 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/17/2022
+ms.date: 11/16/2022
 ms.author: deonhe
+Contributors:
+- georgiostrantzas
+- 
 search.app: 
   - Flow
 search.audienceType: 
@@ -84,7 +87,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, U.S. government, and Chinese clouds. Works as the fallback telemetry endpoint.|
-| msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Edge and Chrome).|
+| msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Microsoft Edge and Google Chrome).|
 
 ### Public endpoints
 
