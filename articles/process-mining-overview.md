@@ -23,6 +23,11 @@ search.audienceType:
 
 Process mining in process advisor allows you to take the event data from your system of records and visualize the processes happening in your organization. Process mining provides novel insights that can help you identify automation opportunities, and address performance and compliance opportunities.
 
+> [!IMPORTANT]
+> - This is a preview feature.
+>
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
 ## Business example
 
 For example, as a business owner in accounts payable, you can use process advisor to find the steps and actions in your procure-to-pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process advisor produces a process map. This map enables you to visualize the activities in the procure-to-pay process to gain the following insights:
