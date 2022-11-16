@@ -103,10 +103,6 @@ SELECT * FROM [SHEET$] WHERE [COLUMN NAME] = 'VALUE'
 > - **COLUMN NAME** with the column that contains the value you want to find. The columns in the first row of the Excel worksheet are identified as the table's column names. 
 > - **VALUE** with the value you want to find.
 
-
-
-
-
 ## Delete data from an Excel row
 
 Although Excel doesn't support the **DELETE** SQL query, you can use the **UPDATE** query to set all the cells of a specific row to null.
@@ -117,7 +113,7 @@ More precisely, you can use the following SQL query:
 UPDATE [SHEET$] SET [COLUMN1]=NULL, [COLUMN2]=NULL WHERE [COLUMN1]='VALUE'
 ```
 
-![Screenshot of the Execute SQL statements populated with a UPDATE query.](media/sql-queries-excel/execute-sql-statement-action-delete.png)
+![Screenshot of the Execute SQL statements populated with an UPDATE query.](media/sql-queries-excel/execute-sql-statement-action-delete.png)
 
 While developing your flow, you have to replace the **SHEET** placeholder with the name of the spreadsheet you want to access.
 
@@ -130,7 +126,7 @@ The **\[COLUMN1\]='VALUE'** part of the query defines the row you want to update
 
 In some scenarios, you may need to retrieve all the contents of an Excel spreadsheet except for a specific row.
 
-A convenient way to achieve this result is to set the values of the unwanted row to null and then retrieve all the values except for the null ones.
+A convenient way to achieve this is to set the values of the unwanted row to null and then retrieve all the values except for the null ones.
 
 To change the values of a specific row in the spreadsheet, you can use an **UPDATE** SQL query, as presented in [Delete data from an Excel row](sql-queries-excel.md#delete-data-from-an-excel-row):
 
