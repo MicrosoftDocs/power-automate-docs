@@ -22,26 +22,6 @@ search.audienceType:
 
 # Run attended and unattended desktop flows
 
-## Run desktop flows concurrently on Windows Server devices
-
-> [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity)
-
-Multiple users can be signed in simultaneously on Windows Server 2016, Windows Server 2019, and Windows Server 2022. Power Automate uses this OS capability to simultaneously run multiple desktop flows on such devices. With this feature, your organization can save on its infrastructure costs.
-
-Perform the following steps to benefit from multiple desktop flows on a single device:
-
-1. Set up a Windows Server 2016, 2019 or 2022 device with the latest version of desktop flows installed.
-1. Use two or more user accounts to create desktop flows connections targeting this device.
-
-Power Automate automatically scales the number of concurrent desktop flows runs to the maximum supported by the device. If the capacity of the device is exceeded, the remaining runs *wait* as [described here](run-desktop-flows-sequentially.md).
-
->[!IMPORTANT]
->If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services. Learn more about [RDS](/windows-server/remote/remote-desktop-services/rds-client-access-license).
-
->[!NOTE]
->Running multiple concurrent desktop flows by the **same user** is not supported. You will need to have different users running desktop flows at the same time to benefit from this feature.
-
 ## Load balance requests across gateways in a cluster
 
 > [!IMPORTANT]
@@ -49,8 +29,7 @@ Power Automate automatically scales the number of concurrent desktop flows runs 
 
 You can choose to distribute desktop flows runs evenly across gateways in a cluster. By default, the selection of a gateway during load balancing is random.
 
-Follow [these steps to add a gateway to create a cluster](/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)
-
+Follow [these steps to add a gateway to create a cluster](/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster)-
 >[!NOTE]
 >Offline gateway members within a cluster will negatively impact performance. Disable or remove these members.
 
@@ -104,6 +83,24 @@ Some of your desktop flows might run for long durations, for example more than 2
 
 1. Select the **Timeout** property and update the duration to correctly handle your desktop flow run.
 1. Select **Done**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Troubleshoot failures
 
