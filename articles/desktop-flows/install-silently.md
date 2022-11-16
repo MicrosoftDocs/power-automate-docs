@@ -61,7 +61,7 @@ Setup.Microsoft.PowerAutomate.exe -HELP
 |-RESTOREDEFAULTCONFIG|Restores to the default installation settings during an upgrade.|
 |-DONOTINSTALLPAD|Skips installing Power Automate for desktop.|
 |-DONOTINSTALLMACHINERUNTIME|Skips installing Power Automate machine-runtime app.|
-<!-- |-SKIPINSTALLINGJAVAAUTOMATION|Skips installing files that are required for enabling UI automation in Java applets.| -->
+|-SKIPINSTALLINGJAVAAUTOMATION|Skips installing files that are required for enabling UI automation in Java applets.|
 
 Here's an example of a command line argument that installs Power Automate:
 

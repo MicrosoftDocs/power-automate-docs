@@ -44,9 +44,11 @@ You can download and install Power Automate through an MSI installer or Microsof
 
     - **Power Automate machine runtime app** allows you to connect your machine to the Power Automate cloud and harness the full power of your robotic process automation (RPA). To learn more about machine management, go to [Manage machines](./manage-machines.md).
 
-    Additionally, you can select to add the WebDriver and ChromeDriver components to run desktop flows created with Selenium IDE. To learn more about how to install Selenium IDE, go to [Selenium IDE](#install-selenium-ide-optional).
+    Additionally, you can:
 
-    <!-- - Install the required files for UI automation in Java applets. -->
+    - Add the WebDriver and ChromeDriver components to run desktop flows created with Selenium IDE. To learn more about how to install Selenium IDE, go to [Selenium IDE](#install-selenium-ide-optional).
+
+    - Install the required files for UI automation in Java applets.
 
     During installation, you can also change the default options if you don't want to send usage data to Microsoft. To do so, uncheck **Optional data collection**. To find more information about data collection, go to [Data collection in Power Automate](diagnostic-data.md).
 
