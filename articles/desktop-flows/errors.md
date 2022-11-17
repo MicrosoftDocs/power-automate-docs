@@ -68,7 +68,7 @@ Power Automate enables you to configure error-handling functionality for single 
 
 By default, desktop flows stop their execution when an error occurs. To configure a custom error-handling functionality for a specific action, select On error in its modal.
 
-:::image type="content" source="media/errors/on-error-option-action.png" alt-text="Screenshot of the on On error option in the action.":::
+:::image type="content" source="media/errors/on-error-option-action.png" alt-text="Screenshot of the On error option in the action.":::
 
 The first available option is the **Retry action if an error occurs** checkbox. This option makes the flow run the action a set number of times after a set number of seconds. The default value is one retrying with an interval of two seconds.
 
