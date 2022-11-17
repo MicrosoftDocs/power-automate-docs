@@ -52,7 +52,7 @@ To achieve that, launch the Excel file using the **Launch Excel** action. The fi
 
 ![Screenshot of the Launch Excel action and the Password field.](media/sql-queries-excel/launch-excel-action.png)
 
-Next, deploy the appropriate UI automation actions and navigate to **File** > **Info** > **Protect Workbook** > **Encrypt with Password**. You can find more information about UI automation and how to use the respective actions in [Automate desktop flows](../desktop-automation.md).
+Next, deploy the appropriate UI automation actions and navigate to **File** > **Info** > **Protect Workbook** > **Encrypt with Password**. You can find more information about UI automation and how to use the respective actions in [Automate desktop applications](../desktop-automation.md).
 
 ![Screenshot of the UI actions used to select the Encrypt with Password option.](media/sql-queries-excel/ui-actions.png)
 
