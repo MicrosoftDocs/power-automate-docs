@@ -32,8 +32,7 @@ This tutorial allows you to experience process mining with sample data. In this 
 For the process mining tutorial, download the sample event log CSV file:  
 
 - [English version](https://go.microsoft.com/fwlink/?linkid=2181220)
-
-
+- [French version](https://download.microsoft.com/download/3/9/c/39c5a305-8cf6-464e-af19-7d37b3f84628/Exemples_FR.csv)
 
 The sample data in this tutorial is for illustration only and is fictitious. No real association is intended or inferred.
 
