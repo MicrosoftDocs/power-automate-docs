@@ -21,7 +21,7 @@ To automate web-related tasks, Power Automate provides the built-in Automation b
 
 ## Install browser extensions
 
-When Power Automate installation is complete, the installer will prompt you to install the appropriate extension for Microsoft Edge. The link inside the installer sends you to the store of the extension.
+When Power Automate installation is complete, the installer will prompt you to install the appropriate extension for your browser. The links inside the installer send you to the store of each extension.
 
 :::image type="content" source="media/desktop-flows-setup/screen.png" alt-text="Screenshot of the installation success dialog.":::
 
