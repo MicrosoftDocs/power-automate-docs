@@ -50,7 +50,7 @@ You can download and install Power Automate through an MSI installer or Microsof
 
     - Install the required files for UI automation in Java applets. Before installing, close all Java-related processes.
 
-    During installation, you can also change the default options if you don't want to send usage data to Microsoft. To do so, uncheck **Optional data collection**. To find more information about data collection, go to [Data collection in Power Automate](diagnostic-data.md).
+    During installation, you can also change the default options if you don't want to send usage data to Microsoft. To do so, uncheck **Optional data collection**. To find more information about data collection, go to [Data collection](diagnostic-data.md).
 
     >[!IMPORTANT]
     >Sharing usage data with Microsoft may help the support department solve Power Automate issues.
