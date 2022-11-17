@@ -81,7 +81,7 @@ The most recent version of the on-premises data gateway handles two SAP integrat
 - Backward compatibility: Customers using the prior version of the SAP connector can still run their flows.
 - Enhanced SSO: Kerberos delegation now ensures that SSO is a seamless experience between Power Apps, Power Automate, and SAP.
 
-Learn more at [On-premises data gateway documentation](/data-integration/gateway/)
+Learn more at [On-premises data gateway documentation](/data-integration/gateway/).
 
 ## New Logic Apps functions
 
@@ -95,7 +95,7 @@ Power Automate's expression language is based on Logic Apps functions. New funct
 |-|-|
 | [isInt](/azure/logic-apps/workflow-definition-language-functions-reference#isint) | Returns true if a data attribute in an integer. This allows flow makers to determine if leading zeroes should be added to SAP data before sending to SAP APIs, or to remove from SAP data after retrieving records from SAP.   |
 | [chunk](/azure/logic-apps/workflow-definition-language-functions-reference#chunk)   | Splits text areas, long string, or file contents into an array of fixed length strings for SAP's APIs.     |
-| [sort](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)   | Sorts an array of objects by a key found in each object.  |
+| [sort](/azure/logic-apps/workflow-definition-language-functions-reference#sort)   | Sorts an array of objects by a key found in each object.  |
 | [reverse](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)  | Reverse-sorts an array of objects by a key found in each object. |
 | [dateDifference](/azure/logic-apps/workflow-definition-language-functions-reference#datedifference)  | Determines the difference between two dates and returns in the time unit specified in the function. This is especially useful for customers who use time-based billing. |
 | [isFloat](/azure/logic-apps/workflow-definition-language-functions-reference#isfloat)  | There's a unique edge case where some SAP APIs return currency strings in a user's localized format, which causes problems for mathematical operations. This function combined with float() removes the formatting so that math can do math. |
@@ -137,7 +137,7 @@ SAP integration with Power Platform will help your organization:
 
 ## Next steps
 
-[Set up SAP integration with Power Platform (preview)](set-up-prepare.md)
+[Set up SAP integration with Power Platform (preview).](set-up-prepare.md)
 
 ### See also
 
