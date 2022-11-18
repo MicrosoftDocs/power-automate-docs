@@ -28,16 +28,20 @@ A successful SAP integration with Microsoft Power Platform requires coordination
 
 Take the following steps to support a successful deployment of the preview SAP Integration solution:
 
+
+<!-- Note that the link in the first step goes to the Power Automate community. Is that correct? -->
+
+
 1. Join the [Power Apps community forum](https://aka.ms/sap-powerusers-community). Ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 
 1. Assemble a team with the following IT system administrators:
-    1. Network
-    1. SAP BASIS
-    1. Power Platform
+    - Network
+    - SAP BASIS
+    - Power Platform
 
 1. Review the following with your team:
-    1. SAP Integration requirements
-    1. [Administer Power Platform](/power-platform/admin/admin-documentation)
+    - SAP Integration requirements
+    - [Administer Power Platform](/power-platform/admin/admin-documentation)
 
 1. Assign setup tasks to the appropriate IT system team members and track progress.
 
@@ -48,19 +52,23 @@ Take the following steps to support a successful deployment of the preview SAP I
 The assembled team of IT system administrators needs to review the following requirements and make necessary preparations before connecting your organization's SAP system to Power Platform:
 
 - [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/). Determine if your organization has the necessary licensing to proceed with the setup. It's important to consider:
+ 
   - Power Apps licensing that supports using an on-premises data gateway and premium applications, flows, and connectors.
   - All administrators setting up the integration and functional business users testing the solution have the required licenses to do so.
 
 - [SAP](<https://www.sap.com/>) subscription:
+  
   - Ensure that the users testing the SAP Integration solution have appropriate access to the appropriate SAP functional modules.
   - The solution can work with any SAP system that uses RFC and BAPI calls.
 
 - [SAP .NET Connector 3.0 SDK from SAP](https://support.sap.com/en/product/connectors/msnet.html):
+  
   - Access to the download requires a valid S-user.
   - Select the 64-bit version of the connector.
   - Select _Install assemblies to GAC_ in the Optional setup steps window during installation.
 
 - [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant). Create a new tenant for the SAP Integration. It's important to consider:
+  
   - The tenant has at least 1 GB of database storage capacity available for the sandbox environment.
   - All members of the IT systems team have the necessary administrator roles to perform the setup.
   - All functional business users testing the SAP Integration are added to the tenant.
