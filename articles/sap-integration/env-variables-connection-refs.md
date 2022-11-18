@@ -1,6 +1,6 @@
 ---
 title: Create an environment variable with SAP connection parameters (preview)
-description: Define an environment variable in Power Apps that contains all of your SAP system information then reuse it in your SAP flow actions.
+description: Define an environment variable in Power Apps that contains all of your SAP system information, then reuse it in your SAP flow actions.
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
@@ -20,20 +20,26 @@ search.audienceType:
 --- 
 # Create an environment variable with SAP connection parameters (preview)
 
-[This article is pre-release documentation and is subject to change.]
+[This article is prerelease documentation and is subject to change.]
 
-SAP has multiple connection parameters, and manually entering the parameters into each Power Automate cloud flow action can be time consuming. The preview SAP Integration solution available for [download](https://github.com/jongilman88/PowerPlatformSAPIntegration) includes an environment variable JSON string template for entering all of your SAP system information. Once your environment variable is defined, you can reuse it in your SAP actions without having to reenter it again.
+SAP has multiple connection parameters, and manually entering the parameters into each Power Automate cloud flow action can be time-consuming. The preview SAP Integration solution available for [download](https://github.com/jongilman88/PowerPlatformSAPIntegration) includes an environment variable JSON string template for entering all of your SAP system information. Once your environment variable is defined, you can reuse it in your SAP actions without having to reenter it.
 
 ## Define the environment variable
 
 1. Sign in to [Power Apps](https://make.powerapps.com) to [create an environment variable in a solution](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution).
+
 1. Select **Solutions** in the left navigation panel.
+
 1. Open the **SAP Integration** solution.
+
 1. On the command bar, select **New** > **More** > **Environment variable**.
+
 1. Complete the fields in the Environment variable panel.
+
     - **Display name**. Enter a display name for the environment variable.
     - **Name**. This name is automatically generated as you enter the display name, but you can change it.
     - **Data Type**. Select **Text** (_don't_ select JSON). Once selected, the value fields will appear.
+        
         - **Default Value**. Offers an environment variable template.
         - **Current Value**. Update the JSON blob with SAP system's SAP properties. Not all properties are necessary—your SAP environment will determine which ones are applicable. Refer to the SAP property guidance.
 
