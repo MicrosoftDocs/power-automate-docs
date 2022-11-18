@@ -25,7 +25,7 @@ search.audienceType:
 
 # Create a cloud flow in a solution
 
-Cloud flows you create in a solution are known as *solution-aware flows*. Follow these steps to create a solution-aware cloud flow.
+Cloud flows you create in a solution are known as *solution-aware cloud flows* or *solution cloud flows*. Follow these steps to create a solution-aware cloud flow.
 
 ## Prerequisites
 
@@ -101,6 +101,15 @@ If you are the owner of a solution cloud flow, you can always find it on the **C
 Solution-aware cloud flows have a **Solutions** card in the flow details page that provides a list of the solutions that reference that cloud flow. To open the solution, select the solution name. 
 
 The **Objects** tab of a solution shows all the solution objects in the solution, such as connection references, environment variables, or child flows that the flow might reference. The **Overview** tab shows the details of the solution, such as the description and status, and provides access to solution actions, such as [export](./export-flow-solution.md).
+
+## Add an existing cloud flow into a solution
+
+1. Sign into [Power Automate](https://powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
+1. Select the solution that you want to add a cloud flow into.
+1. Click **Add existing** > **Automation** > **Cloud flow**
+1. Solution-aware cloud flows will be in the **From Dataverse** tab and non-solution cloud flows will be in the **Outside Dataverse** tab
+1. Select the desired cloud flow. Some non-solution cloud flows cannot be added into a solution. See [known limitations](/power-apps/maker/data-platform/solutions-overview#known-limitations)
+1. Click Add
 
 ## Learn more
 
