@@ -68,7 +68,7 @@ Four key business processes in SAP ERP are organized into modules that contain a
 |            | Goods Receipts       |
 |            | Vendor Invoices      |
 |            | Vendor Payments      |
-||
+
 
 ### Record to Report
 
@@ -80,7 +80,7 @@ Four key business processes in SAP ERP are organized into modules that contain a
 |         | Cost Centers           |
 |         | Profit Centers         |
 |         | Upload Journal Entries |
-||
+
 
 ### Make to Stock/Make to Order
 
@@ -92,7 +92,7 @@ Four key business processes in SAP ERP are organized into modules that contain a
 |            | Equipment            |
 |            | Work Orders          |
 |            | Shipments            |
-||
+
 
 ## What does the solution contain?
 
@@ -135,7 +135,7 @@ The following apps and flows are listed with short descriptions for your referen
 | Header and Menu Components | Reusable UI component used to construct dropdown lists |
 | Common Components | Components that construct common tables and fields for the organization of specific types of data |
 | Attachments Component | Reusable UI component used to attach more files to Purchase Orders and Sales Orders |
-||
+
 
 ### Power Automate flows
 
@@ -162,20 +162,21 @@ The following apps and flows are listed with short descriptions for your referen
 | ReadVendorList | Reads data from a vendor list |
 | UpdatePurchaseOrder | Updates purchase order data|
 | UpdateSalesOrder | Updates sales order data |
-||
+
 
 ## How do I access the user interface?
 
 After the systems are configured to communicate with one another and you explore the internal components of the imported solution, you are ready to open an app that acts as a user interface and test it.
 
-1. Select **Apps**
-1. Select **Purchase Orders** or **Sales Orders**
-1. Click the ***more options*** icon
-1. Select **Play**
+1. Select **Apps**.
+1. Select **Purchase Orders** or **Sales Orders**.
+1. Select the **more options** icon.
+1. Select **Play**.
 
-    :::image type="content" source="media/prebuilt-solution/play-app-2.png" alt-text="Power App display of the Play button that opens up the application to the user experience.":::
+    :::image type="content" source="media/prebuilt-solution/play-app-2.png" alt-text="Power App display of the Play button that opens the application to the user experience.":::
 
-    Now, you should see the user's view. If the initial setup is complete, you are ready to test out the communication between your SAP system and the Power Platform.
+    Now, you should see the user's view. If the initial setup is complete, you are ready to test the communication between your SAP system and Power Platform.
+    
     :::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App Order to Cash screen.":::
 
 ### See also
