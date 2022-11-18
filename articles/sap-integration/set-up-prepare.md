@@ -51,7 +51,7 @@ Take the following steps to support a successful deployment of the preview SAP I
 
 The assembled team of IT system administrators needs to review the following requirements and make necessary preparations before connecting your organization's SAP system to Power Platform:
 
-- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/). Determine if your organization has the necessary licensing to proceed with the setup. It's important to consider:
+- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/). Determine if your organization has the necessary licensing to proceed with the setup. It's important to consider: </br>
  
   - Power Apps licensing that supports using an on-premises data gateway and premium applications, flows, and connectors.
   - All administrators setting up the integration and functional business users testing the solution have the required licenses to do so.
@@ -112,7 +112,7 @@ An [Azure Active Directory (AD) tenant](/azure/cloud-adoption-framework/ready/la
 
 The following articles will help you configure and manage your tenants and authorizations:
 
-- [Create and configure an Azure Active Directory Domain Services domain](/azure/active-directory-domain-services/tutorial-create-instance)  
+- [Create and configure an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/tutorial-create-instance)  
 - [SAP ERP Windows Authentication](/connectors/saperp/#authentication)
 - [Overview of Kerberos](/data-integration/gateway/service-gateway-service-account)
 - [Configure Kerberos-based SSO to on-premises data sources (SAP)](/power-bi/connect-data/service-gateway-sso-kerberos)
