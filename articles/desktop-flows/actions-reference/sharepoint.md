@@ -52,6 +52,8 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 ## Getting started with SharePoint actions in desktop flows
 
+This section presents examples on how to use SharePoint actions in your desktop flows.
+
 ### How to download the content of a SharePoint folder
 
 > [!IMPORTANT]
