@@ -36,14 +36,14 @@ SAP has multiple connection parameters, and manually entering the parameters int
 
 1. Complete the fields in the Environment variable panel.
 
-    - **Display name**. Enter a display name for the environment variable.
-    - **Name**. This name is automatically generated as you enter the display name, but you can change it.
-    - **Data Type**. Select **Text** (_don't_ select JSON). Once selected, the value fields will appear.
+    - **Display name**: Enter a display name for the environment variable.
+    - **Name**: This name is automatically generated as you enter the display name, but you can change it.
+    - **Data Type**: Select **Text** (_don't_ select JSON). Once selected, the value fields will appear.
         
-        - **Default Value**. Offers an environment variable template.
-        - **Current Value**. Update the JSON blob with SAP system's SAP properties. Not all properties are necessary—your SAP environment will determine which ones are applicable. Refer to the SAP property guidance.
+        - **Default Value**: Offers an environment variable template.
+        - **Current Value**: Update the JSON blob with the SAP system's SAP properties. Not all properties are necessary—your SAP environment will determine which ones are applicable. Refer to the SAP property guidance.
 
- :::image type="content" source="media/env-refs/env-var-panel.png" alt-text="The environment panel in Power Apps.":::
+   :::image type="content" source="media/env-refs/env-var-panel.png" alt-text="The environment panel in Power Apps.":::
 
 ### SAP property guidance
 
