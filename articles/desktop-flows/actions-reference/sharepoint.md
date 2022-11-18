@@ -4,13 +4,10 @@ description: SharePoint (preview) Actions Reference
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/29/2022
+ms.date: 11/18/2022
 ms.author: gtrantzas
-ms.reviewer: marleon
+ms.reviewer: dipapa
 contributors:
-- Yiannismavridis
-- NikosMoutzourakis
-- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -151,7 +148,7 @@ Updates the contents of the file specified by the file identifier.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |File Identifier    |id              |True     |String |The unique id of the file to select.                                                             |
 |File Content       |body            |True     |Binary |The content of the file.                                                                         |
 
@@ -178,7 +175,7 @@ Deletes the file specified by the file identifier.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |File Identifier    |id              |True     |String |The unique id of the file to select.                                                             |
 
 ### Get file content using path
@@ -189,7 +186,7 @@ Gets file contents using the file path.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx"       |
 |Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
 
@@ -197,17 +194,7 @@ Gets file contents using the file path.
 
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
-|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                  |
+|File Content |FileContent  |Binary    |The content of the file in binary format.                               |
 
 ### Get file content
 
@@ -217,11 +204,15 @@ Get file contents using the file identifier. The contents can be copied somewher
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |File Identifier    |id              |True     |String |The unique id of the file to select.                                                             |
 |Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
 
 #### Returns
+
+|Name         |Path         |Type      |Description                                                             |
+|-------------|-------------|----------|------------------------------------------------------------------------|
+|File Content |FileContent  |Binary    |The content of the file in binary format.                               |
 
 ### Create file
 
@@ -231,7 +222,7 @@ Uploads a file to a SharePoint site. Make sure to pick an existing library.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |Folder Path        |folderPath      |True     |String |Must start with an existing library. Add folders if needed.                                      |
 |File Name          |name            |True     |String |The name of the file.                                                                            |
 |File Content       |body            |True     |Binary |The content of the file.                                                                         |
@@ -260,7 +251,7 @@ Returns files contained in a SharePoint folder.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |File Identifier    |id              |True     |String |The unique id of the folder.                                                                     |
 
 #### Returns
@@ -286,9 +277,13 @@ Get all lists and libraries.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 
 #### Returns
+
+|Name         |Path         |Type            |Description                                                             |
+|-------------|-------------|----------------|------------------------------------------------------------------------|
+|value        |value        |array of Tables |List of Tables                                                          |
 
 ### Get file metadata
 
@@ -298,10 +293,24 @@ Gets information about the file such as size, etag, created date, etc. Uses a fi
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |File Identifier    |id              |True     |String |The unique id of the folder.                                                                     |
 
 #### Returns
+
+|Name         |Path         |Type      |Description                                                             |
+|-------------|-------------|----------|------------------------------------------------------------------------|
+|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
+|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Name         |Name         |String    |The name of the file or folder.                                         |
+|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
+|Path         |Path         |String    |The path of the file or folder.                                         |
+|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
+|Size         |Size         |Integer   |The size of the file or folder.                                         |
+|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
+|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
+|ETag         |ETag         |String    |The etag of the file or folder.                                         |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
 
 ### Get file metadata using path
 
@@ -311,7 +320,7 @@ Gets information about the file such as size, etag, created date, etc. Uses a fi
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx"       |
 
 #### Returns
@@ -338,10 +347,24 @@ Gets information about the folder. Uses a file identifier to pick the folder.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |File Identifier    |id              |True     |String |The unique id of the folder.                                                                     |
 
 #### Returns
+
+|Name         |Path         |Type      |Description                                                             |
+|-------------|-------------|----------|------------------------------------------------------------------------|
+|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
+|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Name         |Name         |String    |The name of the file or folder.                                         |
+|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
+|Path         |Path         |String    |The path of the file or folder.                                         |
+|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
+|Size         |Size         |Integer   |The size of the file or folder.                                         |
+|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
+|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
+|ETag         |ETag         |String    |The etag of the file or folder.                                         |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
 
 ### Get folder metadata using path
 
@@ -351,7 +374,7 @@ Gets information about the folder. Uses a folder path to pick the folder.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |Folder Path        |path            |True     |String |The path of the target folder, for example: "/Shared Documents/MyFolderName                      |
 
 #### Returns
@@ -368,7 +391,7 @@ Gets information about the folder. Uses a folder path to pick the folder.
 |MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
 |IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
 |ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                  |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
 
 ### List root folder
 
@@ -378,9 +401,23 @@ Returns files in the root SharePoint folder.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 
 #### Returns
+
+|Name         |Path         |Type      |Description                                                             |
+|-------------|-------------|----------|------------------------------------------------------------------------|
+|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
+|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Name         |Name         |String    |The name of the file or folder.                                         |
+|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
+|Path         |Path         |String    |The path of the file or folder.                                         |
+|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
+|Size         |Size         |Integer   |The size of the file or folder.                                         |
+|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
+|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
+|ETag         |ETag         |String    |The etag of the file or folder.                                         |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
 
 ### Extract folder
 
@@ -388,12 +425,26 @@ Extracts an archive file into a SharePoint folder (example: zip).
 
 |Name                    |Key             |Required |Type   |Description                                                                                      |
 |------------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 |Source File Path        |source          |True     |String |The path of the source file                                                                      |
 |Destination Folder Path |destination     |True     |String |The path of the destination folder.                                                              |
 |Overwrite Flag          |overwrite       |         |BooleanSpecifies whether to overwrite the destination file if it exists.                                 |
 
 #### Returns
+
+|Name         |Path         |Type      |Description                                                             |
+|-------------|-------------|----------|------------------------------------------------------------------------|
+|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
+|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Name         |Name         |String    |The name of the file or folder.                                         |
+|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
+|Path         |Path         |String    |The path of the file or folder.                                         |
+|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
+|Size         |Size         |Integer   |The size of the file or folder.                                         |
+|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
+|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
+|ETag         |ETag         |String    |The etag of the file or folder.                                         |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
 
 ### Get lists
 
@@ -403,9 +454,13 @@ Gets SharePoint lists from a site.
 
 |Name                    |Key             |Required |Type   |Description                                                                                      |
 |------------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>https://contoso.sharepoint.com/sites/sitename   |
+|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
 
 #### Returns
+
+|Name         |Path         |Type            |Description                                                             |
+|-------------|-------------|----------------|------------------------------------------------------------------------|
+|value        |value        |array of Tables |List of Tables                                                          |
 
 ## Upcoming features
 
