@@ -45,31 +45,31 @@ Take the following steps to support a successful deployment of the preview SAP I
 
 ## Requirements
 
-The assembled team of IT system administrators need to review the following requirements and make necessary preparations before connecting your organization's SAP system to the Power Platform:
+The assembled team of IT system administrators needs to review the following requirements and make necessary preparations before connecting your organization's SAP system to Power Platform:
 
-- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/) - Determine if your organization has the necessary licensing to proceed with the setup. It's important to consider:
+- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/). Determine if your organization has the necessary licensing to proceed with the setup. It's important to consider:
   - Power Apps licensing that supports using an on-premises data gateway and premium applications, flows, and connectors.
   - All administrators setting up the integration and functional business users testing the solution have the required licenses to do so.
 
-- [SAP](<https://www.sap.com/>) subscription
+- [SAP](<https://www.sap.com/>) subscription:
   - Ensure that the users testing the SAP Integration solution have appropriate access to the appropriate SAP functional modules.
-  - The solution can work with any SAP system that utilizes RFC and BAPI calls
+  - The solution can work with any SAP system that uses RFC and BAPI calls.
 
-- [SAP .NET Connector 3.0 SDK from SAP](https://support.sap.com/en/product/connectors/msnet.html)
+- [SAP .NET Connector 3.0 SDK from SAP](https://support.sap.com/en/product/connectors/msnet.html):
   - Access to the download requires a valid S-user.
   - Select the 64-bit version of the connector.
   - Select _Install assemblies to GAC_ in the Optional setup steps window during installation.
 
-- [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant) - Create a new tenant for the SAP Integration.  It's important to consider:
+- [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant). Create a new tenant for the SAP Integration. It's important to consider:
   - The tenant has at least 1 GB of database storage capacity available for the sandbox environment.
   - All members of the IT systems team have the necessary administrator roles to perform the setup.
   - All functional business users testing the SAP Integration are added to the tenant.
 
-- [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server - Provision a separate Windows VM or server with your SAP system connected to it to connect to the on-premises data gateway.
+- [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server. Provision a separate Windows VM or server with your SAP system connected to it to connect to the on-premises data gateway.
 
-- [On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127) - Download and [install](/data-integration/gateway/service-gateway-install) the most recent version (9/23/2022 or newer) of the on-premises data gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
+- [On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127). Download and [install](/data-integration/gateway/service-gateway-install) the most recent version (9/23/2022 or newer) of the on-premises data gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
 
-- [Azure AD single sign-on (SSO) for Gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) - Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO.
+- [Azure AD single sign-on (SSO) for Gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway). Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO.
 
 ## Integrate SAP ERP system with Power Platform
 
@@ -79,14 +79,14 @@ SAP integration with Power Platform requires IT system administrators to establi
 
 An on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services.
 
-SAP integration with the Power Platform requires that you install the latest version (9/23/2022 or newer) of the [on-premises data gateway](/data-integration/gateway/service-gateway-install).
+SAP integration with Power Platform requires that you install the latest version (9/23/2022 or newer) of the [on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
 While setting up the on-premises data gateway for SAP integration, ensure that you review the following considerations:
 
 - Provision a new or repurposed Windows VM or server specifically for SAP integration with the Power Platform that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended).
   - If you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same active directory environment as the data sources.
-- [Change the on-premises data gateway service account](/data-integration/gateway/service-gateway-service-account)
-- [Install SAP .NET Connector 3.0 SDK from SAP](https://support.sap.com/en/product/connectors/msnet.html)onto the data gateway
+- [Change the on-premises data gateway service account.](/data-integration/gateway/service-gateway-service-account)
+- [Install SAP .NET Connector 3.0 SDK from SAP](https://support.sap.com/en/product/connectors/msnet.html) onto the data gateway.
   - Access to the download requires a valid S-user.
   - Select the 64-bit version of the connector.
   - Select _Install assemblies to GAC_ in the Optional setup steps window during installation.
@@ -114,7 +114,7 @@ The following articles will help you configure and manage your tenants and autho
 
 [Environments](/power-platform/admin/environments-overview) serve as containers to separate apps that might have different roles, security requirements, stages of deployment, or target audiences.
 
-Sign in to the [Power Platform admin center](<https://go.microsoft.com/fwlink/p/?linkid=2208369>). The admin center provides a unified portal for administrators to manage environments, connectors, gateways, data sources and other settings for Power Apps and Power Automate.
+Sign in to the [Power Platform admin center](<https://go.microsoft.com/fwlink/p/?linkid=2208369>). The admin center provides a unified portal for administrators to manage environments, connectors, gateways, data sources, and other settings for Power Apps and Power Automate.
 
 Follow the directions in [Create and manage an environment](/power-platform/admin/create-environment). While creating the environment for public preview SAP Integration, be sure to do the following actions:
 
@@ -126,7 +126,7 @@ More information: [Establish an environment strategy](/power-platform/guidance/a
 
 ### Step 4: Set up and manage connectors
 
-[Connectors](/connectors/connectors) are proxies or wrappers around APIs that allow the underlying service to communicate with the Power Platform or Azure Logic Apps.
+[Connectors](/connectors/connectors) are proxies or wrappers around APIs that allow the underlying service to communicate with Power Platform or Azure Logic Apps.
 
 The following two connectors need to be set up to allow communication between SAP ERP and Power Platform:
 
@@ -135,7 +135,7 @@ The following two connectors need to be set up to allow communication between SA
 
 To set up connections:
 
-1. Sign in to [Power Apps](https://make.powerapps.com)
+1. Sign in to [Power Apps](https://make.powerapps.com).
 
 1. In the left navigation pane, expand **Data** and select **Connections**.
 
@@ -145,7 +145,7 @@ To set up connections:
 
 1. Select each connector as it appears and follow the prompts to set up the connections.
 
-More information: [Create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection).
+More information: [Create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection)
 
 ### Step 5: Import the prebuilt solution
 
@@ -157,9 +157,9 @@ Take the following steps to download and then import the solution:
   
 1. Sign in to [Power Apps](https://make.powerapps.com).
 
-1. Select the environment from the top-right corner where you want to import the solution.
+1. Select the environment from the upper-right corner where you want to import the solution.
 
-1. Import the solution. More information: [Import solutions in Power Apps](/power-apps/maker/data-platform/import-update-export-solutions).
+1. Import the solution. More information: [Import solutions in Power Apps](/power-apps/maker/data-platform/import-update-export-solutions)
 
 ## Next steps
 
