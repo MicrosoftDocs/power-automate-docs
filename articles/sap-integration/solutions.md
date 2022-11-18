@@ -56,7 +56,7 @@ Four key business processes in SAP ERP are organized into modules that contain a
 |        | Customer Invoices    |
 |        | Customer Payments    |
 |        | Mass Update Pricing  |
-||
+
 
 ### Procure to Pay
 
