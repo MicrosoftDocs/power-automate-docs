@@ -109,7 +109,7 @@ These sets of components work together to communicate with your SAP system, auto
 
 After importing the prebuilt solution into Power Apps, look to the left-side navigation panel to view all of its different components.
 
-  :::image type="content" source="media/prebuilt-solution/powerapps-nav.png" alt-text="Power App navigation where one can select Apps, Flows, and Solutions.":::
+    :::image type="content" source="media/prebuilt-solution/powerapps-nav.png" alt-text="Power App navigation where one can select Apps, Flows, and Solutions.":::
 
 - Select **Flows** to view the list of included flows.
 - Select **Apps** to view the list of included apps.
