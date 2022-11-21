@@ -25,9 +25,9 @@ Running multiple desktop flow at the same time may cause time-outs. Adopt one of
 
 - Spread the load over time by planning your desktop flows to run at different times. This practice works best if you have a limited set of machines and can control the triggers that start your desktop flows.
 
-- Create machine groups that run desktop flows with identical configurations in parallel. To find more information about machine groups, refer to [Manage machine groups](manage-machine-groups.md).
+- Create machine groups that run desktop flows with identical configurations in parallel. To find more information about machine groups, go to [Manage machine groups](manage-machine-groups.md).
 
-- Create multiple flows that use separate connections to target different machines. To find more information about desktop flow connections, refer to [Create desktop flow connections](desktop-flow-connections.md).
+- Create multiple flows that use separate connections to target different machines. To find more information about desktop flow connections, go to [Create desktop flow connections](desktop-flow-connections.md).
 
 All the presented strategies prevent desktop flows from competing to run on the same device and failing due to time-outs.
 
