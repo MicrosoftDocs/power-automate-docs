@@ -33,7 +33,7 @@ If you've opened and edited an example in the flow designer, select the **Save a
 
 ![Screenshot of the Save as button in an open example.](media\create-flow-console\save-as-example.png)
 
-## Create a desktop flow through the Power Automate console
+## Create desktop flows through the console
 
 1. To create a desktop flow using Power Automate for desktop, launch the application and select **New Flow** in the console.
 
@@ -47,7 +47,7 @@ If you've opened and edited an example in the flow designer, select the **Save a
 
    ![Screenshot a desktop flow in the console.](media\create-flow-console\console-flow.png)
 
-## Create a desktop flow through a cloud flow
+## Create desktop flows through cloud flows
 
 Power Automate enables you to create desktop flows through cloud flows and trigger them remotely. To find more information about this functionality, go to [Trigger desktop flows from cloud flows](trigger-desktop-flows.md).
 
