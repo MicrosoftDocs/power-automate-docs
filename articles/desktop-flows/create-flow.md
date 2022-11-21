@@ -23,29 +23,29 @@ Using Power Automate, you can develop desktop flows that automate tasks on your 
 
 Power Automate provides an extensive collection of examples to introduce users to RPA. You can find all the available examples under the **Examples** tab in the console.
 
-![Screenshot of the Examples tab in the console.](media\create-flow-console\console-examples.png)
+:::image type="content" source="media\create-flow\console-examples.png" alt-text="Screenshot of the Examples tab in the console.":::
 
 To copy an example to your flows, right-click on it and select **Create a copy**. The copied flow will be stored under the **My flows** tab.
 
-![Screenshot of the Create a copy option of an example.](media\create-flow-console\create-copy-example.png)
+:::image type="content" source="media\create-flow\create-copy-example.png" alt-text="Screenshot of the Create a copy option of an example.":::
 
 If you've opened and edited an example in the flow designer, select the **Save as** button to copy the edited example to your flows. The changes can't be saved to the original example flow.
 
-![Screenshot of the Save as button in an open example.](media\create-flow-console\save-as-example.png)
+:::image type="content" source="media\create-flow\save-as-example.png" alt-text="Screenshot of the Save as button in an open example.":::
 
 ## Create desktop flows through the console
 
 1. To create a desktop flow using Power Automate for desktop, launch the application and select **New Flow** in the console.
 
-   ![Screenshot of the New flow button in the console.](media\create-flow-console\console.png)
+   :::image type="content" source="media\create-flow\console.png" alt-text="Screenshot of the New flow button in the console.":::
 
 1. Enter a name for the desktop flow, and select **OK**.
 
-   ![Screenshot of the Build a flow dialog.](media\create-flow-console\build-flow-dialog.png)
+   :::image type="content" source="media\create-flow\build-flow-dialog.png" alt-text="Screenshot of the Build a flow dialog.":::
 
 1. Design your flow in the flow designer and select the **Save** button to save the flow. Close the flow designer and the flow will appear in the **My flows** tab of the console.
 
-   ![Screenshot a desktop flow in the console.](media\create-flow-console\console-flow.png)
+   :::image type="content" source="media\create-flow\console-flow.png" alt-text="Screenshot a desktop flow in the console.":::
 
 ## Create desktop flows through cloud flows
 
