@@ -23,7 +23,7 @@ You can use URLs to trigger desktop flows through many different sources, such a
 
 If a triggered flow requires input variables, the console will ask you to enter the appropriate values.
 
-By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. To disable this functionality, navigate to the console settings and disable the option **Display confirmation dialog when invoking flows externally** or modify the [appropriate Windows registry entry](governance.md#configure-power-automate-for-desktop-confirmation-dialog-when-invoking-flows-via-url-or-desktop-shortcut).
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. To disable this functionality, navigate to the console settings and disable **Display confirmation dialog when invoking flows externally** or modify the [appropriate Windows registry entry](governance.md#configure-power-automate-for-desktop-confirmation-dialog-when-invoking-flows-via-url-or-desktop-shortcut).
 
 > [!WARNING]
 > Disabling the confirmation dialog poses security threats because you could run without notice a questionable flow shared by a malicious actor.
@@ -101,12 +101,12 @@ A URL containing the **runId** input parameter should have the following structu
 
 To trigger a flow using the command prompt, use a command with the following syntax:
 
-> [!NOTE]
-> You can replace the second part of the command with any of the previously presented URL formats.
-
 ```
 "C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe" "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"
 ```
+
+> [!NOTE]
+> You can replace the second part of the command with any of the previously presented URL formats.
 
 ## Trigger flows automatically with Task Scheduler
 

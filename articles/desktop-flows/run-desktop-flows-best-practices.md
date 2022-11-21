@@ -21,7 +21,7 @@ This article presents the best practices for running Power Automate desktop flow
 
 ## Avoid time-outs and distribute load across machines
 
-Running multiple desktop flow at the same time may cause time-outs. Adopt one of the recommended strategies to distribute the workload and ensure that all desktop flows run successfully without overloading the target machines.
+Running multiple desktop flows at the same time may cause time-outs. Adopt one of the recommended strategies to distribute the workload and ensure that all desktop flows run successfully without overloading the target machines.
 
 - Spread the load over time by planning your desktop flows to run at different times. This practice works best if you have a limited set of machines and can control the triggers that start your desktop flows.
 
@@ -42,9 +42,9 @@ Some desktop flows may run for long durations—for example, more than 24 hours.
 
 1. Select the ellipsis (**…**) on the top of the **Run a flow built with Power Automate for desktop** cloud action, and then select **Settings**.
 
-    :::image type="content" source="media/run-desktop-flows-best-practices/timeout-settings.png" alt-text="Screenshot of the settings option of the desktop flow cloud action.":::
-
 1. Select **Timeout** and update the duration to handle your desktop flow runs appropriately.
+
+    :::image type="content" source="media/run-desktop-flows-best-practices/timeout-settings.png" alt-text="Screenshot of the settings option of the desktop flow cloud action.":::
 
 1. Select **Done**.
 
@@ -59,7 +59,7 @@ To provide load balancing:
 
 1. Open the Power Automate portal, navigate to **Data** > **Gateways**, and select your gateway cluster.
 
-1. In the gateway details page, enable**Run on all gateways in the cluster**. This option allows you to distribute the desktop flow runs on all the gateways within the cluster.
+1. In the gateway details page, enable **Run on all gateways in the cluster**. This option allows you to distribute the desktop flow runs on all the gateways within the cluster.
 
     In rare cases, it can take up to 10 minutes for this setting to be effective and for load balancing runs to begin across cluster members.
 

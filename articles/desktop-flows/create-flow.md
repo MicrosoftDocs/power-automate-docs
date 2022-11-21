@@ -35,15 +35,17 @@ If you've opened and edited an example in the flow designer, select the **Save a
 
 ## Create desktop flows through the console
 
-1. To create a desktop flow using Power Automate for desktop, launch the application and select **New Flow** in the console.
+To create a desktop flow using Power Automate for desktop:
+
+1. launch the application and select **New flow** in the console.
 
    :::image type="content" source="media\create-flow\console.png" alt-text="Screenshot of the New flow button in the console.":::
 
-1. Enter a name for the desktop flow, and select **OK**.
+1. Enter a name for the desktop flow, and select **Create**.
 
    :::image type="content" source="media\create-flow\build-flow-dialog.png" alt-text="Screenshot of the Build a flow dialog.":::
 
-1. Design your flow in the flow designer and select the **Save** button to save the flow. Close the flow designer and the flow will appear in the **My flows** tab of the console.
+1. Design your flow in the flow designer and select the **Save** button. Close the flow designer and the flow will appear in the **My flows** tab of the console.
 
    :::image type="content" source="media\create-flow\console-flow.png" alt-text="Screenshot a desktop flow in the console.":::
 

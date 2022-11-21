@@ -58,7 +58,7 @@ To allow reusing Windows session:
 1. Enable **Reuse sessions for unattended runs**
 
 >[!NOTE]
->When you add machines to machine groups, they inherit the setting of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
+>When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
 
 ## Known issues and limitations
 

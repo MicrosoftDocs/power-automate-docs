@@ -17,10 +17,10 @@ search.audienceType:
 
 # Runtime notifications
 
-Power Automate provides two different types of notifications while running a desktop flow, depending on the user's preferences.
-
 > [!NOTE]
 > Runtime notifications are displayed when a flow is run directly from the console. When a flow is run from the portal, Power Automate doesn't display notifications.
+
+Power Automate provides two different types of notifications while running desktop flows, depending on the user's preferences.
 
 Through the **Monitoring/Notifications** option of the console settings, you can choose between the integrated Windows notifications, the flow monitoring window, or disabling the notifications.
 

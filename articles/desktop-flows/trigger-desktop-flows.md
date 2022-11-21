@@ -55,7 +55,7 @@ To trigger a desktop flow from a cloud flow:
 
     :::image type="content" source="media/trigger-desktop-flows/action-search.png" alt-text="Screenshot of the Run a flow built with Power Automate for desktop action.":::
 
-1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flow connections in [Desktop flow connections](desktop-flow-connections.md).
+1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flow connections in [Create desktop flow connections](desktop-flow-connections.md).
 
     :::image type="content" source="media/trigger-desktop-flows/desktop-flow-connection.png" alt-text="Screenshot of a dialog to create a new desktop flow connection.":::
 
