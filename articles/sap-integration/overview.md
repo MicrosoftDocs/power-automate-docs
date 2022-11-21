@@ -21,7 +21,7 @@ search.audienceType:
 
 # Overview of SAP integration with Power Platform (preview)
 
-[This article is pre-release documentation and is subject to change.]
+[This article is prerelease documentation and is subject to change.]
 
 SAP ERP is a centralized system of record that facilitates the management of data and business processes between many departments within an organization. SAP ERP, developed by SAP SE, serves as the primary enterprise resource planning application for many businesses worldwide.
 
@@ -29,8 +29,8 @@ The preview version of SAP integration with Microsoft Power Platform is built on
 
 - Prebuilt SAP Integration solution
 - Advanced SAP system connection support
-- Updated On-premises data gateway
-- New Logic Apps Functions
+- Updated on-premises data gateway
+- New Azure Logic Apps functions
 - Updated SAP ERP connector
 
 > [!IMPORTANT]
@@ -58,41 +58,45 @@ The Power Automate flows automate the business rules behind the scenes while the
 > [!IMPORTANT]
 > In preview, the focus is on testing the Order to Cash and Procure to Pay business processes.
 
-## Advanced SAP system connections support
+## Advanced SAP system connection support
 
-Many enterprise organizations need to utilize advanced connection parameters to govern user sessions. SAP integration with Power Platform now supports:
+Many enterprise organizations need to use advanced connection parameters to govern user sessions. SAP integration with Power Platform now supports:
 
-- message servers that support load balancing between multiple SAP systems
-- advanced SSO configurations
+- Message servers that support load balancing between multiple SAP systems.
+- Advanced SSO configurations.
 
 Your SAP system's connection parameters are set up by following the established guidance:
 
-- The JSON string template inside the solution's environment variable value field
-- The SAP property guidance table
+- The JSON string template inside the solution's environment variable value field.
+- The SAP property guidance table.
 
-Learn more at [Create an environment variable with SAP connection parameters](env-variables-connection-refs.md)
+Learn more at [Create an environment variable with SAP connection parameters](env-variables-connection-refs.md).
 
 ## Updated on-premises data gateway
 
 The on-premises data gateway acts as a bridge that provides secure data transfer between your on-premises SAP data and Microsoft's cloud services that include the Power Platform and Azure Logic Apps.
 
- The most recent version of the on premises data gateway handles two SAP integration requirements:
+The most recent version of the on-premises data gateway handles two SAP integration requirements:
 
-- Backwards compatibility - customers utilizing the prior version of the SAP connector can still run their flows
-- Enhanced SSO - Kerberos delegation now ensures that SSO is a seamless experience between Power Apps, Power Automate, and SAP.
+- Backward compatibility: Customers using the prior version of the SAP connector can still run their flows.
+- Enhanced SSO: Kerberos delegation now ensures that SSO is a seamless experience between Power Apps, Power Automate, and SAP.
 
-Learn more at [On-premises data gateway documentation](/data-integration/gateway/)
+Learn more at [On-premises data gateway documentation](/data-integration/gateway/).
 
 ## New Logic Apps functions
 
 Power Automate's expression language is based on Logic Apps functions. New functions have been added to enable more efficient processing of SAP data.
 
+
+<!-- In the isFloat description, is this correct? "... so that math can do math." -->
+
+
 | Logic Apps function | Description |
 |-|-|
 | [isInt](/azure/logic-apps/workflow-definition-language-functions-reference#isint) | Returns true if a data attribute in an integer. This allows flow makers to determine if leading zeroes should be added to SAP data before sending to SAP APIs, or to remove from SAP data after retrieving records from SAP.   |
 | [chunk](/azure/logic-apps/workflow-definition-language-functions-reference#chunk)   | Splits text areas, long string, or file contents into an array of fixed length strings for SAP's APIs.     |
-| [sort](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)   | Sorts an array of objects by a key found in each object.  |
-| [reverse](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)  | Reverse sorts an array of objects by a key found in each object. |
+| [sort](/azure/logic-apps/workflow-definition-language-functions-reference#sort)   | Sorts an array of objects by a key found in each object.  |
+| [reverse](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)  | Reverse-sorts an array of objects by a key found in each object. |
 | [dateDifference](/azure/logic-apps/workflow-definition-language-functions-reference#datedifference)  | Determines the difference between two dates and returns in the time unit specified in the function. This is especially useful for customers who use time-based billing. |
 | [isFloat](/azure/logic-apps/workflow-definition-language-functions-reference#isfloat)  | There's a unique edge case where some SAP APIs return currency strings in a user's localized format, which causes problems for mathematical operations. This function combined with float() removes the formatting so that math can do math. |
 | [parseDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#parsedatetime)   | Converts the string representation of a timestamp to a standard ISO 8601 format. The output of this function can be used reliably to do additional operations on the timestamp like the functions defined in date and time functions.    |
@@ -100,7 +104,7 @@ Power Automate's expression language is based on Logic Apps functions. New funct
 | [nthIndexOf](/azure/logic-apps/workflow-definition-language-functions-reference#nthindexof)  | Allows finding the **nth** occurrence of a substring.    |
 | [slice](/azure/logic-apps/workflow-definition-language-functions-reference#slice)  | Provides a new way to extract a substring. The existing function substring already allows such capability by providing start index and length. |
 
-Learn more at [Azure Logic Apps documentation](/azure/logic-apps/)
+Learn more at [Azure Logic Apps documentation](/azure/logic-apps/).
 
 ## Updated SAP ERP connector
 
@@ -129,11 +133,11 @@ SAP integration with Power Platform will help your organization:
 
 1. Assemble a team of IT administrators to [set up the SAP ERP integration with Power Platform](set-up-prepare.md).
 
-1. Review and establish the necessary prerequisites before setting up SAP integration with the Power Platform.
+1. Review and establish the necessary prerequisites before setting up SAP integration with Power Platform.
 
 ## Next steps
 
-[Set up SAP integration with Power Platform (preview)](set-up-prepare.md)
+[Set up SAP integration with Power Platform (preview).](set-up-prepare.md)
 
 ### See also
 
