@@ -5,12 +5,11 @@ services: ''
 suite: flow
 documentationcenter: na
 author: v-aangie
-manager: tapanm
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/19/2022
@@ -24,7 +23,15 @@ search.audienceType:
 
 # Manage cloud flows
 
-Use the Power Automate mobile app for Android to view and run your flows, check their run history, turn them on and off, or delete them. You can manage your flows when you're away from your computer whether they're solution-aware or non-solution&ndash;aware. [Learn about solution-aware flows](../overview-solution-flows.md).
+Use the Power Automate mobile app for Android to do the following tasks:
+
+- View, edit, and run your flows.
+
+- Check the run history of flows.
+
+- Turn your flows on and off, or delete them.
+
+You can manage your flows when you're away from your computer whether they're solution-aware or non-solution&ndash;aware. [Learn about solution-aware flows](../overview-solution-flows.md).
 
 ## View a list of your cloud flows
 

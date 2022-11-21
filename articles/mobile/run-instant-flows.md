@@ -5,12 +5,11 @@ services: ''
 suite: flow
 documentationcenter: na
 author: v-aangie
-manager: tapanm
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/19/2022
@@ -37,5 +36,9 @@ search.audienceType:
 When the **Flow ran successfully** message appears at the top of the **Instant flows** screen, your flow is complete:
 
 :::image type="content" source="../media/android/run-flow-message.png" alt-text="Screenshot of the Flow ran successfully message in the Power Automate mobile app for Android instant flows screen.":::
+
+> {!NOTE}
+>
+> There's no camera option to upload files with the mobile app.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

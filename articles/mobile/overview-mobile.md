@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: v-aangie
-manager: tapanm
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,7 +12,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/19/2022
+ms.date: 11/28/2022
 ms.author: kewaiss
 search.app: 
   - Flow
@@ -62,6 +61,6 @@ The Power Automate mobile app for Android has a few limitations:
 
 - Geofencing, or using location-based triggers, isn't supported. This was formerly a preview feature.
 
-- You can run flows in the mobile app, but not create or edit them. Customers told us that they prefer to create and edit their flows in Power Automate on the web. If you're on the go and need to create or edit a flow, open Power Automate in your mobile device's web browser.
+- There's no camera option to upload files with the mobile app.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
