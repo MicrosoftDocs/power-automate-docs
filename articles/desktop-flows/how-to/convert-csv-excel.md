@@ -1,5 +1,5 @@
 ---
-title: Convert a CSV file into an Excel spreadsheet | Microsoft Docs
+title: Convert a CSV file into an Excel spreadsheet
 description: Convert a CSV file into an Excel spreadsheet
 author: georgiostrantzas
 

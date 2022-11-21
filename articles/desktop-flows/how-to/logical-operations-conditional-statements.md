@@ -1,5 +1,5 @@
 ---
-title: Use logical operations on conditional statements  | Microsoft Docs
+title: Use logical operations on conditional statements
 description: Use logical operations on conditional statements 
 author: georgiostrantzas
 

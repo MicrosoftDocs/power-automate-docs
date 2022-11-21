@@ -1,5 +1,5 @@
 ---
-title: XML | Microsoft Docs
+title: XML
 description: XML Actions Reference
 author: georgiostrantzas
 
@@ -57,14 +57,14 @@ Similarly, to retrieve element values, use the **Get XML element value** action.
 ### <a name="readfromfile"></a> Read XML from file
 Read the contents of an XML file into a variable
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file that contains the XML document to read|
 |Encoding|N/A|System default, ASCII, Unicode, Unicode big endian, UTF-8|System default|The encoding used for the specified file|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |XmlDocument|[XML node](../variable-data-types.md#xml)|The variable that holds the read XML document|
@@ -81,7 +81,7 @@ Read the contents of an XML file into a variable
 ### <a name="writexmltofile"></a> Write XML to file
 Write the contents of an XML node variable into a file
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |File path|No|[File](../variable-data-types.md#files-and-folders)||The file to write the XML document into|
@@ -91,8 +91,8 @@ Write the contents of an XML node variable into a file
 |Indentation per level|Yes|[Numeric value](../variable-data-types.md#numeric-value)|2|Specifies by how many spaces to indent each level of the XML|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="writexmltofile_onerror"></a> Exceptions
 |Exception|Description|
@@ -103,7 +103,7 @@ Write the contents of an XML node variable into a file
 ### <a name="executexpathquery"></a> Execute XPath expression
 Extract values from an XML document based on the provided XPath query
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |XML document to parse|No|[Text value](../variable-data-types.md#text-value)||The XML as text or a previously defined variable that contains the XML document to parse|
@@ -111,7 +111,7 @@ Extract values from an XML document based on the provided XPath query
 |Get first value only|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to retrieve a single value (the first value only) or all the values that match the provided XPath expression|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |XPathResult|[XML node](../variable-data-types.md#xml)|The extracted node(s) as an XML node|
@@ -127,7 +127,7 @@ Extract values from an XML document based on the provided XPath query
 ### <a name="getxmlelementattribute"></a> Get XML element attribute
 Get the value of an attribute of an XML element
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |XML document|No|[XML node](../variable-data-types.md#xml)||The XML document or XML element to retrieve its attribute|
@@ -136,7 +136,7 @@ Get the value of an attribute of an XML element
 |Get value as|N/A|Text value, Numeric value, Datetime value, Boolean value|Text value|Specifies the data type for the attribute value|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |XmlAttributeValue|[Boolean value](../variable-data-types.md#boolean-value)|The retrieved value of the XML attribute|
@@ -156,7 +156,7 @@ Get the value of an attribute of an XML element
 ### <a name="setelementattribute"></a> Set XML element attribute
 Set the value of an attribute of an XML element
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |XML document|No|[XML node](../variable-data-types.md#xml)||The XML document or XML element to set its attribute|
@@ -165,8 +165,8 @@ Set the value of an attribute of an XML element
 |Attribute value|No|[Text value](../variable-data-types.md#text-value)||The new value for the attribute|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setelementattribute_onerror"></a> Exceptions
 |Exception|Description|
@@ -178,7 +178,7 @@ Set the value of an attribute of an XML element
 ### <a name="removeelementattribute"></a> Remove XML element attribute
 Remove an attribute from an XML element
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |XML document|No|[XML node](../variable-data-types.md#xml)||The XML document or XML element to remove its attribute|
@@ -186,8 +186,8 @@ Remove an attribute from an XML element
 |Attribute name|No|[Text value](../variable-data-types.md#text-value)||The name of the attribute to remove|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="removeelementattribute_onerror"></a> Exceptions
 |Exception|Description|
@@ -200,7 +200,7 @@ Remove an attribute from an XML element
 ### <a name="getxmlelementvalue"></a> Get XML element value
 Get the value of an XML element
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |XML document|No|[XML node](../variable-data-types.md#xml)||The XML document or XML element to retrieve its value|
@@ -208,7 +208,7 @@ Get the value of an XML element
 |Get value as|N/A|Text value, Numeric value, Datetime value, Boolean value|Text value|Specifies the data type for the XML element value|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |XmlElementValue|[Boolean value](../variable-data-types.md#boolean-value)|The XML element value|
@@ -227,7 +227,7 @@ Get the value of an XML element
 ### <a name="setelementvalue"></a> Set XML element value
 Set the value of an XML element
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |XML document|No|[XML node](../variable-data-types.md#xml)||The XML document or XML element to retrieve it value|
@@ -235,8 +235,8 @@ Set the value of an XML element
 |XML element value|No|[Text value](../variable-data-types.md#text-value)||The new value for the XML element|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setelementvalue_onerror"></a> Exceptions
 |Exception|Description|
@@ -248,7 +248,7 @@ Set the value of an XML element
 ### <a name="insertelement"></a> Insert XML element
 Insert a new XML element into an XML document
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |XML document|No|[XML node](../variable-data-types.md#xml)||The XML document to insert the new XML element|
@@ -256,8 +256,8 @@ Insert a new XML element into an XML document
 |XML element to insert|No|[XML node](../variable-data-types.md#xml)||The new XML element to insert into the XML document|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="insertelement_onerror"></a> Exceptions
 |Exception|Description|
@@ -269,15 +269,15 @@ Insert a new XML element into an XML document
 ### <a name="removeelement"></a> Remove XML element
 Remove one or more XML elements from an XML document
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |XML document|No|[XML node](../variable-data-types.md#xml)||The XML document that contains the XML element(s) to remove|
 |XPath query|No|[Text value](../variable-data-types.md#text-value)||The XPath expression to locate the element(s) to remove|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="removeelement_onerror"></a> Exceptions
 |Exception|Description|

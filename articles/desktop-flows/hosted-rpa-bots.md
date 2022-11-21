@@ -1,5 +1,5 @@
 ---
-title: Hosted RPA bots (preview) | Microsoft Docs
+title: Hosted RPA bots (preview)
 description: Hosted RPA bots (preview)
 author: mustlaz
 

@@ -1,5 +1,5 @@
 ---
-title: Get the position and size of a window | Microsoft Docs
+title: Get the position and size of a window
 description: Get the position and size of a window
 author: georgiostrantzas
 

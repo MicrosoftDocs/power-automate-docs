@@ -1,5 +1,5 @@
 ---
-title: Images | Microsoft Docs
+title: Images
 description: Use the images pane to manage images in a desktop flow.
 author: georgiostrantzas
 

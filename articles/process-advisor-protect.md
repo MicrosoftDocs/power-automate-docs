@@ -1,13 +1,15 @@
 ---
-title: Protect your data | Microsoft Docs
-description: This topic explains how to protect your data in process advisor.
-author: nijemcevic 
-
+title: Protect your data
+description: Learn how to protect your data in process advisor.
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 5/25/2021
-ms.author: tatn
-ms.reviewer: v-aangie
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -23,14 +25,12 @@ You can use process advisor features to remove screenshots and text entries stor
 
 To delete screenshots when preparing your recording, select the step that contains the screenshot you want to remove and select **Delete screenshot**.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of steps to select and delete.](media/delete-screenshot.png "Select step to remove and select Delete screenshot")
+:::image type="content" source="media/delete-screenshot.png" alt-text="Screenshot of steps to select and delete.":::
 
 ## Remove text
 
 To remove sensitive data from a text entry, select the text entry and modify the step description.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of Description field, where you remove sensitive information or other text.](media/remove-text.png "Modify the description")
+:::image type="content" source="media/remove-text.png" alt-text="Description field, where you remove sensitive information or other text.":::
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

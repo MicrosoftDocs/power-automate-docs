@@ -1,11 +1,14 @@
 ---
-title:  Glossary in process advisor | Microsoft Docs
+title:  Glossary in process advisor
 description: Terminology used in the process advisor feature in Power Automate.
-author: nijemcevic 
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 05/25/2022
-ms.author: tatn
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow

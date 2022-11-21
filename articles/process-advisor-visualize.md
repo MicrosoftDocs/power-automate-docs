@@ -1,13 +1,15 @@
 ---
 title: Visualize processes in process advisor  | Microsoft Docs
 description: Learn how to use the process map and application analytics to gain understanding of app usage and insight into where opportunities for improvement exist.
-author: nijemcevic 
-
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 5/25/2021
-ms.author: tatn
-ms.reviewer: v-aangie
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType:
@@ -21,8 +23,7 @@ search.audienceType:
 
 The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights into where opportunities for improvement exist. To get to the process map, select the **Analytics** > **Process** tab.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of process map.](media/automation-reco-1.png "Process advisor process map")
+:::image type="content" source="./media/automation-reco-1.png" alt-text="Screenshot of the process map.":::
 
 Activities describe tasks or actions that make up a business process. Activities can be performed by humans or by machines during automation. In the process map, different activities appear as nodes, and transitions between activities appear as edges. Each process sequence will have a start and an end.
 
@@ -30,19 +31,11 @@ Different activity combinations and variants are shown separately on the process
 
 There are various filters available for you to drill down into the process:
 
-- Variant selector allows you to select one variant or a set of process variants to visualize in your process map.
+- **Variant selector**: Allows you to select one variant or a set of process variants to visualize in your process map.
 
-- Recording selector allows you to select one recording or a set of recordings to visualize in your process map.
+- **Recording selector**: Allows you to select one recording or a set of recordings to visualize in your process map.
 
-- Time filter allows you to see the process visualization in a particular period. Additionally, there are key performance indicators available to help you better understand your process. They're described in more detail below.
-
-There might be situations when you'll select the **Insights** tab to review your flow and then want to return to the previous screen. To go back, select one of the breadcrumbs at the top of the screen. The **Back** button won't work.
-
-Here's an example of the breadcrumbs you can select:
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of breadcrumbs.](media/process-mining-auto-rec/breadcrumbs.png "Breadcrumbs")
-
+- **Time filter**: Allows you to see the process visualization in a particular period. Additionally, there are key performance indicators available to help you better understand your process. They're described in more detail below.
 
 ### Process KPIs
 
@@ -68,12 +61,13 @@ Here's an example of the breadcrumbs you can select:
 
 Application analytics allow you to gain more insights from recordings by understanding application usage. This report informs you about:
 
-- The top apps used
-- Access patterns and what apps are used together
-- App insights for each activity or recording
+- The top apps used.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of application analytics showing KPIs and visualizations.](media/application-analytics.png "Application analytics screen showing KPIs and visualizations")
+- Access patterns and what apps are used together.
+
+- App insights for each activity or recording.
+
+:::image type="content" source="media/application-analytics.png" alt-text="Screenshot of application analytics showing KPIs and visualizations.":::
 
 ### Application analytics KPIs
 

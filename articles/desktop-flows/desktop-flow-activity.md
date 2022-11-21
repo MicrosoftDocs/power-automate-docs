@@ -1,5 +1,5 @@
 ---
-title: Desktop flow activity (preview) | Microsoft Docs
+title: Desktop flow activity (preview)
 description: Desktop flow activity (preview)
 author: georgiostrantzas
 ms.subservice: desktop-flow

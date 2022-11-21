@@ -198,7 +198,7 @@ To call the action, you'll need the following information.
 `https://flow.microsoft.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`.
   
   > [!NOTE]
-  > For more information, see [Setup desktop flows connections and machine credentials](../desktop-flows/install.md#setup-desktop-flows-connections-and-machine-credentials).
+  > For more information, see [Create desktop flow connections](../desktop-flows/desktop-flow-connections.md).
 
   >[!TIP]
   > Alternatively, you can use a connection reference's logical name as the input of the connection instead of the connection name (usage example described below). The connection references are stored in the Dataverse table connectionreference and can be listed programatically in the same way as desktop flows detailled in the [List available desktop flows](#list-available-desktop-flows) section.

@@ -1,5 +1,5 @@
 ---
-title: Setup the Power Automate Azure Virtual Desktop integration starter kit | Microsoft Docs
+title: Setup the Power Automate Azure Virtual Desktop integration starter kit
 description: Setup instructions
 services: ''
 author: georgiostrantzas
