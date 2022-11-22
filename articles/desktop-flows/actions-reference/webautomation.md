@@ -89,7 +89,7 @@ Extract data from web applications, from a single value up to tables or custom m
 
 Extract data from specific parts of a web page in the form of single values, lists, rows, or tables.
 
-For more information on how to use this action, go to [Extract web data](../automation-web.md#extract-web-data).
+For more information on how to use this action, go to [Extract web data](../automation-web.md#extract-data-from-webpages).
 
 ##### Input parameters
 
