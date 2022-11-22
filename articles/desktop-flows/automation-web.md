@@ -1,6 +1,6 @@
 ---
 title: Automate webpages | Microsoft Docs
-description: See how to launch browsers, automate webpages, and extract data from the web.
+description: See how to launch browsers, automate webpages, and extract data from the Web.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
