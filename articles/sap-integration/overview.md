@@ -4,7 +4,7 @@ description: Learn how SAP integration with Microsoft Power Platform is improved
 author: EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/31/2022
+ms.date: 12/05/2022
 ms.author: ellenwehrle
 ms.reviewer: 
   - jongilman
@@ -37,6 +37,7 @@ The preview version of SAP integration with Microsoft Power Platform is built on
 >
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+> - Effective December 5th, 2022, [SAP ERP connector capabilities](/connectors/saperp/) are generally available.
 
 ## Prebuilt SAP Integration solution
 
