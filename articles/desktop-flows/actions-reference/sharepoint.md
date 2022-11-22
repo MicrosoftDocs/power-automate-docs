@@ -4,7 +4,7 @@ description: SharePoint (preview) Actions Reference
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/18/2022
+ms.date: 11/22/2022
 ms.author: gtrantzas
 ms.reviewer: dipapa
 contributors:
