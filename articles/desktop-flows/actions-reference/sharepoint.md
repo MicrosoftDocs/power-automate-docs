@@ -466,9 +466,7 @@ Gets SharePoint lists from a site.
 
 ## Upcoming features
 
-- Dynamic suggestion of input fields
 - Dynamic content for output variables: cloud actions’ output variables can be expanded to show its underlying properties
-- Create new connection reference from within Power Automate for desktop
 - Share to **users** brings their own connection references upon each run
 - Co-owners can use the same connection references
 - ALM dependencies management (dependency checker upon import, add required objects, show dependencies)
