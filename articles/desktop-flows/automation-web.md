@@ -121,7 +121,7 @@ Each CSS selector consists of the tree structure of the HTML element, the attrib
 
 :::image type="content" source="media\web-automation\extracting-web-data-css-selector.png" alt-text="Screenshot of a CSS selector.":::
 
-#### Extract structured data from multiple webpages
+#### Extract structured data from multiple pages
 
 If the information to extract is split between multiple pages with the same structure, you need to set the appropriate paging configuration.
 
