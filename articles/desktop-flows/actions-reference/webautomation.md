@@ -86,19 +86,13 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 Extract data from web applications, from a single value up to tables or custom multiple pieces of data.
 
 #### <a name="extractdata"></a> Extract data from web page
+
 Extract data from specific parts of a web page in the form of single values, lists, rows, or tables.
 
-
-
-<!-- Note that you should not use "here" as a link. Always identify the page that you're linking to. -->
-
-
-For more information on how to use this action, go to [Web data extraction](../automation-web.md#web-data-extraction).
-
-
-<!-- I didn't change "web pages" to one word in this or other tables because of your note about table content. Please change if it's OK to do so. -->
+For more information on how to use this action, go to [Extract web data](../automation-web.md#extract-web-data).
 
 ##### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
