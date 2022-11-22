@@ -36,7 +36,7 @@ By default, browser automation actions don't move the actual mouse on the screen
 
 However, some actions like the **Click link on web page** and **Populate text field on web page** support physical interactions for cases where JavaScript events don't work as expected. If you enable physical interaction, the browser can't be minimized, and the target tab must be focused.
 
-## Use the actual Internet Explorer vs the Automation browser
+## Use Internet Explorer vs Automation browser
 
 Although Automation browser is based on Internet Explorer, it provides some features and limitations that increase automation effectiveness.
 
