@@ -78,7 +78,7 @@ To add a new UI element, highlight the appropriate web element and press **Ctrl 
 
 :::image type="content" source="media\web-automation\capturing-new-elements.png" alt-text="Screenshot of the highlighted UI elements to capture.":::
 
-## Data population on webpages
+## Enter data on webpages
 
 To provide input to a web page, select the appropriate web form-filling action depending on the nature of the element. For example, use the **Set drop-down list value on web page** action to select an item in a drop-down list.
 
@@ -135,11 +135,11 @@ When data selection is complete, close the live web helper and configure the app
 
 :::image type="content" source="media\web-automation\extract-data-web-page-action-pager.png" alt-text="Screenshot of the paging options in the Extract data from web page action.":::
 
-## Interacting with the web and web services
+## Interact with web services
 
 Power Automate provides various HTTP actions that enable you to communicate directly with web resources, such as webpages, files, and APIs, without needing a web browser. You can find a list with all the available HTTP actions in the [HTTP actions reference](actions-reference/web.md).
 
-### Downloading web resources
+### Download web resources
 
 Use the **Download from web** action to directly download webpage content or files stored on the web.
 
@@ -147,7 +147,7 @@ Both the **GET** and **POST** methods can be used within this action. Files can 
 
 :::image type="content" source="media/interacting-web-services/download-from-web-action.png" alt-text="Screenshot of the Download from web action.":::
 
-### Accessing web APIs
+### Access web APIs
 
 Use the **Invoke web service** action to access web APIs. Various methods are compatible with this action, which is fully customizable in order to accommodate virtually any API.
 
