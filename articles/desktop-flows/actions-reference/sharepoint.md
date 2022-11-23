@@ -59,8 +59,6 @@ This section presents examples on how to use SharePoint actions in your desktop 
 > [!IMPORTANT]
 > Before replicating the following steps, ensure that you are familiar with [lists](../variable-data-types.md#list), [custom objects](../variable-data-types.md#custom-object), [loops](../use-loops.md), [conditionals](../use-conditionals.md), and the [percentage notation](../variable-manipulation.md).
 
-1. Create a SharePoint connection reference in any solution. You can find information regarding how to create connection references in [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
-
 1. Ensure that you've installed the [latest version of Power Automate for desktop](../install.md).
 
 1. Create a new desktop flow.
@@ -115,8 +113,6 @@ If you want to download only files of a specific type, add a conditional before 
 ![Screenshot of a conditional that checks the current item's file type.](media\sharepoint\if-action-item-type.png)
 
 ### How to upload a local file to SharePoint
-
-1. Create a SharePoint connection reference in any solution. You can find information regarding how to create connection references in [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
 
 1. Ensure that you've installed the [latest version of Power Automate for desktop](../install.md).
 
