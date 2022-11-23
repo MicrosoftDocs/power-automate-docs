@@ -1,6 +1,6 @@
 ---
 title: Active Directory actions reference
-description: Active Directory actions reference
+description: See all the available Active Directory actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow

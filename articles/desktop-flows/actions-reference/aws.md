@@ -1,6 +1,6 @@
 ---
 title: AWS actions actions reference
-description: Amazon web services actions reference
+description: See all the available Amazon web services (AWS) actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
