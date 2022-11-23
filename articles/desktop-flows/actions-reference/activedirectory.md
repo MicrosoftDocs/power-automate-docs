@@ -21,10 +21,6 @@ search.audienceType:
 
 # Active Directory actions
 
-Connect to an Active Directory server and perform operations.
-
-## Get started with Active Directory actions
-
 Active Directory actions require a connection to an Active Directory server. Establish the connection using the **Connect to server** action and an LDAP path. The LDAP path specifies the domain controllers and should have the following format:
 
 ```LDAP path

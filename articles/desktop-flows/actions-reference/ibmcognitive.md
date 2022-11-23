@@ -21,10 +21,6 @@ search.audienceType:
 
 # IBM cognitive actions
 
-IBM's cognitive actions.
-
-## Get started with IBM cognitive actions
-
 IBM cognitive services are machine learning algorithms that use artificial intelligence to perform complex operations, such as language tone analysis and visual recognition.
 
 Desktop flows enable you to use these services through the IBM cognitive actions.

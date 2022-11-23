@@ -21,10 +21,6 @@ search.audienceType:
 
 # FTP
 
-Manage files and folders on an FTP server.
-
-## Get started with FTP actions
-
 Use the FTP action group to upload and download files and manipulate directories on FTP servers.
 
 To establish an FTP connection, use the **Open FTP connection** action. The following example has a specified host, port, and credentials. Additionally, the set timeout makes the action fail if the connection isn't established on time.

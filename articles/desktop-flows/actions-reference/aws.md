@@ -21,10 +21,6 @@ search.audienceType:
 
 # AWS actions
 
-Connect to Amazon web services and automate various tasks.
-
-## Get started with AWS actions
-
 > [!IMPORTANT]
 > You need an active AWS subscription to deploy AWS actions in your desktop flows.
 

@@ -21,10 +21,6 @@ search.audienceType:
 
 # Cryptography actions
 
-Encrypt and decrypt text and files
-
-## Get started with cryptography actions
-
 **Cryptography** actions enable you to encrypt and decrypt plain text and text from files providing a key and an encoding format.
 
 The **Encrypt text with AES** action encrypts a text using the AES algorithm and a user-specified encryption key. You can provide the encryption key directly or through a variable.

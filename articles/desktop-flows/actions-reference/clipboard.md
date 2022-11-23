@@ -21,10 +21,6 @@ search.audienceType:
 
 # Clipboard actions
 
-Set or get data from the clipboard.
-
-## Get started with clipboard actions
-
 Use the Clipboard actions to manipulate or extract the contents of your machine's clipboard.
 
 To retrieve the contents of the clipboard and store them in a variable, use the **Get clipboard text** action.

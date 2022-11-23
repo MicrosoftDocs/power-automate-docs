@@ -21,10 +21,6 @@ search.audienceType:
 
 # Datetime actions
 
-Get the date and time and perform time related functions.
-
-## Get started with datetime actions
-
 Use the **Get current date and time** action to retrieve the current date and time (or date only, if selected) and store it in a variable. The date format depends on the Windows configuration.
 
 To add various time units to date variables, deploy the **Add to datetime** action.

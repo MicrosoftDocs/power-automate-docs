@@ -21,10 +21,6 @@ search.audienceType:
 
 # Excel actions
 
-Automate any Excel related activity.
-
-## Get started with Excel actions
-
 After setting an Excel instance, either with the **Launch Excel** or the **Attach to running Excel** action, you can further handle your Excel worksheets.
 
 To read and extract data from an Excel document, use the **Read from Excel worksheet** action. You can retrieve the value of a single cell or a data table. The following example reads the cells A1 through E5:

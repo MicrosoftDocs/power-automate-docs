@@ -21,10 +21,6 @@ search.audienceType:
 
 # Message boxes actions
 
-Interact with users and request input through message boxes.
-
-## Get started with message boxes
-
 You can use message boxes in your desktop flows to interact with users, request input, and provide an output.
 
 To display a message to the user while a flow runs, use the **Display message** action.

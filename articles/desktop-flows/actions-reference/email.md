@@ -21,10 +21,6 @@ search.audienceType:
 
 # Email actions
 
-Automate sending, receiving and managing emails through imap/smtp.
-
-## Get started with email actions
-
 Before deploying any email action, you have to configure the server that will handle the requests. The **Retrieve email messages** and **Process email messages** actions require an IMAP server, while the **Send email** action requires an SMTP server.
 
 Common IMAP ports:

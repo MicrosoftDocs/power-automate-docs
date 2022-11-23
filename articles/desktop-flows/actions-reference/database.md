@@ -21,10 +21,6 @@ search.audienceType:
 
 # Database actions
 
-Connect to databases and execute SQL statements
-
-## Get started with database actions
-
 To connect to a database, use the **Open SQL connection** action. A connection string specifies all information necessary to connect to a database, such as the driver, the database, server names, and the username and password.
 
 The following connection string connects to an Excel database:

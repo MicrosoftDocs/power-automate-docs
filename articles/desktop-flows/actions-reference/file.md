@@ -25,10 +25,6 @@ search.audienceType:
 > [!IMPORTANT]
 > To prevent unauthorized access, Windows requires administrator rights to access protected files. To access these resources using the file actions, run Power Automate with administrator rights. For more information about running Power Automate as an administrator, go to [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
-Manage and manipulate files.
-
-## Get started with file actions
-
 Handling files and their content is essential for most automation scenarios. You can use the file actions to manage files, retrieve their properties, read and write data, and convert them to other types.
 
 Most file actions require paths that specify the files you want to manipulate. These paths can be hard-coded values or [file datatype variables](../variable-data-types.md#files-and-folders).

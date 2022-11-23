@@ -21,10 +21,6 @@ search.audienceType:
 
 # Conditional actions
 
-Perform decision making and manage the flow according to set rules.
-
-## Get started with conditionals
-
 Conditional actions allow you to adjust which actions to run based on the outcomes of conditional statements.
 
 The following list displays some applications and features:

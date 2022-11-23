@@ -21,10 +21,6 @@ search.audienceType:
 
 # Google cognitive actions
 
-Google's cognitive actions.
-
-## Get started with Google cognitive actions
-
 Google cognitive services allow you to process unstructured data through machine learning and simplify complicated tasks like text analysis and computer vision.
 
 You can implement this functionality in your desktop flows using the Google cognitive group of actions.

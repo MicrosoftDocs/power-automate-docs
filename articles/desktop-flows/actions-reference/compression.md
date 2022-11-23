@@ -21,10 +21,6 @@ search.audienceType:
 
 # Compression actions
 
-Zip or unzip files from archives
-
-## Get started with compression actions
-
 To compress (or zip) a file, use the **ZIP files** action and specify a path to archive. If the archive already exists, the action will add the selected files.
 
 The following example uses a variable to specify the path to archive. **Best compression** ensures maximum file size reduction, and a password adds a layer of security to the archive.

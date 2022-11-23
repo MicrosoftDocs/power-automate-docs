@@ -24,10 +24,6 @@ search.audienceType:
 > [!WARNING]
 > This group of actions is intended for Exchange Server automation scenarios. To automate Exchange Online, use the corresponding Office 365 cloud connectors in cloud flows.
 
-Automate sending, receiving, and managing emails through Exchange.
-
-## Get started with Exchange actions
-
 The Exchange actions enable you to connect to an Exchange server and manage your correspondence.
 
 Exchange actions require a connection to an Exchange server that you can establish using the **Connect to Exchange server** action.
