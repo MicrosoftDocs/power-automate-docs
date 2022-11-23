@@ -25,13 +25,13 @@ The SharePoint (preview) group of actions allows the utilization of the [SharePo
 
 - Sharing desktop flows with SharePoint cloud actions isn't supported. Co-owners won't be able to run such desktop flows unless they overwrite the connection references with their own. **Users** with read access are unable to run such flows.
 
-- DLPs that include SharePoint cloud actions aren't enforced within desktop flows. During preview, machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
+- Data loss prevention policies (DLP) that include SharePoint cloud actions aren't enforced within desktop flows. During preview, machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
 
 - Refrain from modifying a response’s properties directly as it may lead to an erroneous state after future updates. Instead, opt for storing the properties you want to utilize (from the response retrieved) directly into separate variables.
 
 ## Why should I use SharePoint actions inside desktop flows instead of cloud flows?
 
-Users can still combine SharePoint actions with the **Run a flow built with Power Automate for desktop** action. However, SharePoint actions inside desktop flows improve performance and ease of use for users that need to loop between cloud and desktop actions.
+Users can still combine SharePoint actions with the **Run a flow built with Power Automate for desktop** action. However, SharePoint actions inside desktop flows improve performance and ease of use for users who need to loop between cloud and desktop actions.
 
 ## List of SharePoint actions
 
@@ -146,7 +146,7 @@ Updates the contents of the file specified by the file identifier.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 |File Identifier    |id              |True     |String |The unique id of the file to select.                                                             |
 |File Content       |body            |True     |Binary |The content of the file.                                                                         |
 
@@ -173,7 +173,7 @@ Deletes the file specified by the file identifier.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 |File Identifier    |id              |True     |String |The unique id of the file to select.                                                             |
 
 ### Get file content using path
@@ -184,8 +184,8 @@ Gets file contents using the file path.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
-|File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx"       |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx".       |
 |Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
 
 #### Returns
@@ -202,7 +202,7 @@ Get file contents using the file identifier. The contents can be copied somewher
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 |File Identifier    |id              |True     |String |The unique id of the file to select.                                                             |
 |Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
 
@@ -220,7 +220,7 @@ Uploads a file to a SharePoint site. Make sure to pick an existing library.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 |Folder Path        |folderPath      |True     |String |Must start with an existing library. Add folders if needed.                                      |
 |File Name          |name            |True     |String |The name of the file.                                                                            |
 |File Content       |body            |True     |Binary |The content of the file.                                                                         |
@@ -249,7 +249,7 @@ Returns files contained in a SharePoint folder.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 |File Identifier    |id              |True     |String |The unique id of the folder.                                                                     |
 
 #### Returns
@@ -275,7 +275,7 @@ Get all lists and libraries.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 
 #### Returns
 
@@ -291,7 +291,7 @@ Gets information about the file such as size, etag, created date, etc. Uses a fi
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 |File Identifier    |id              |True     |String |The unique id of the folder.                                                                     |
 
 #### Returns
@@ -318,8 +318,8 @@ Gets information about the file such as size, etag, created date, etc. Uses a fi
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
-|File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx"       |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx".       |
 
 #### Returns
 
@@ -345,7 +345,7 @@ Gets information about the folder. Uses a file identifier to pick the folder.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 |File Identifier    |id              |True     |String |The unique id of the folder.                                                                     |
 
 #### Returns
@@ -372,8 +372,8 @@ Gets information about the folder. Uses a folder path to pick the folder.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
-|Folder Path        |path            |True     |String |The path of the target folder, for example: "/Shared Documents/MyFolderName                      |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|Folder Path        |path            |True     |String |The path of the target folder, for example: "/Shared Documents/MyFolderName.                      |
 
 #### Returns
 
@@ -399,7 +399,7 @@ Returns files in the root SharePoint folder.
 
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 
 #### Returns
 
@@ -423,8 +423,8 @@ Extracts an archive file into a SharePoint folder (example: zip).
 
 |Name                    |Key             |Required |Type   |Description                                                                                      |
 |------------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
-|Source File Path        |source          |True     |String |The path of the source file                                                                      |
+|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|Source File Path        |source          |True     |String |The path of the source file.                                                                      |
 |Destination Folder Path |destination     |True     |String |The path of the destination folder.                                                              |
 |Overwrite Flag          |overwrite       |         |BooleanSpecifies whether to overwrite the destination file if it exists.                                 |
 
@@ -452,7 +452,7 @@ Gets SharePoint lists from a site.
 
 |Name                    |Key             |Required |Type   |Description                                                                                      |
 |------------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename' |
+|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
 
 #### Returns
 
