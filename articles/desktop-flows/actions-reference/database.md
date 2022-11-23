@@ -39,8 +39,6 @@ The following connection string connects to an Access database:
 Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb; Persist Security Info=False;
 ```
 
-:::image type="content" source="media/database/data-link-properties.png" alt-text="Screenshot of the Data Link Properties dialog.":::
-
 > [!NOTE]
 > Power Automate for desktop is a 64-bit application, only 64-bit installed drivers are available for selection in the **Open SQL connection** action.
 
