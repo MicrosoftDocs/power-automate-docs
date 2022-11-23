@@ -52,7 +52,7 @@ Common SMTP servers:
 * smtp.mail.yahoo.com (Yahoo mail)
 * smtp.gmail.com (Google mail)
 
-:::image type="content" source="email-example.png" alt-text="Screenshot of the IMAP server settings of the Retrieve emails action.":::
+:::image type="content" source="media/email/email-example.png" alt-text="Screenshot of the IMAP server settings of the Retrieve emails action.":::
 
 To retrieve emails that meet specific criteria, use the **Retrieve email messages** action. The following example retrieves only unread messages from the inbox.
 
