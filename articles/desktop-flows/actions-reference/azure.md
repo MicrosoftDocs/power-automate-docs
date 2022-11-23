@@ -19,11 +19,11 @@ search.audienceType:
   - enduser
 ---
 
-# Azure
+# Azure actions
 
 Connect to Azure Cloud and automate the management of resources like virtual machines, disks, snapshots and resource groups.
 
-## Getting started with Azure actions
+## Get started with Azure actions
 
 > [!IMPORTANT]
 > You need an active Azure subscription to deploy Azure actions in your desktop flows.
@@ -40,7 +40,7 @@ Lastly, populate the appropriate **Subscription ID**. The subscription ID is a G
 
 After creating the session and deploying all the needed Azure actions, use the **End session** action to terminate the Azure session.
 
-:::image type="content" source="media/azure/end-session-action.png)" alt-text="Screenshot of the End session action.":::
+:::image type="content" source="media/azure/end-session-action.png" alt-text="Screenshot of the End session action.":::
 
 ## <a name="getresourcegroups"></a> Get resource groups
 
