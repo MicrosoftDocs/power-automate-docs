@@ -1,6 +1,6 @@
 ---
-title: Datetime actions reference
-description: See all the available datetime actions.
+title: Date time actions reference
+description: See all the available date time actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -19,7 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-# Datetime actions
+# Date time actions
 
 Use the **Get current date and time** action to retrieve the current date and time (or date only, if selected) and store it in a variable. The date format depends on the Windows configuration.
 
