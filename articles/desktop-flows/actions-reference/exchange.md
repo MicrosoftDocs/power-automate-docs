@@ -34,11 +34,11 @@ Exchange actions require a connection to an Exchange server that you can establi
 
 The following example contains a manually populated server address rather than using auto-discovery. The credentials are set to **user defined**, so the domain, username, and password are manually entered. A set timeout in the **Advanced** section allows the action to return an error if a connection hasn't been established within the specified time frame.
 
-![Screenshot of the Connect to Exchange server action.](media/exchange/connect-to-exchange-server-example.png)
+:::image type="content" source="media/exchange/connect-to-exchange-server-example.png" alt-text="Screenshot of the Connect to Exchange server action.":::
 
 To retrieve emails from an exchange server, use the **Retrieve Exchange email messages** action. The following example retrieves email messages from a custom folder named **Receipts**. The filters contain variables that have been previously defined in the desktop flow. The action will save all attachments locally to the specified folder.
 
-![Screenshot of the Retrieve Exchange email messages action.](media/exchange/retrieve-exchange-emails-example.png)
+:::image type="content" source="media/exchange/retrieve-exchange-emails-example.png" alt-text="Screenshot of the Retrieve Exchange email messages action.":::
 
 The **Process Exchange email messages** action processes email messages retrieved by the **Retrieve Exchange email messages** action. Use this action to move, delete, or mark email messages as read.
 
