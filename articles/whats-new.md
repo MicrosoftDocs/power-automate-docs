@@ -2,11 +2,9 @@
 title: What's new in Power Automate | Microsoft Docs
 description: Learn about all the new features in Power Automate.
 author: msftman
-manager: kvivek
-
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 01/27/2022
+ms.date: 11/16/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -28,7 +26,7 @@ For information about the new features, fixes, and improvements that were releas
 
 ## Release plans
 
-Get familiar with upcoming features and plan your deployments by reading the [2021 release wave 2 plan](/power-platform-release-plan/2021wave2/power-automate/planned-features) or the [2022 release wave 1 plan](/power-platform-release-plan/2022wave1/power-automate/planned-features).
+Get familiar with upcoming features and plan your deployments by reading the [2022 release wave 2 plan](/power-platform-release-plan/2022wave2/power-automate/planned-features).
 
 ## Preview and Experimental features
 
