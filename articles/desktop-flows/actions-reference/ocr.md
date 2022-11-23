@@ -84,7 +84,7 @@ Marks the beginning of a conditional block of actions depending on whether a giv
 |Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
 |Use other language|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a language not given in the 'Tesseract language' field|
 |Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
-|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this parameter to 'eng'|
 |Language data path|No|[Text value](../variable-data-types.md#text-value)||The path of the folder that holds the specified language's Tesseract data|
 |Image width multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The width multiplier of the image|
 |Image height multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The height multiplier of the image|
@@ -142,7 +142,7 @@ Wait until a specific text appears/disappears on the screen, on the foreground w
 |Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
 |Use other language|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a language not given in the 'Tesseract language' field|
 |Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
-|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this parameter to 'eng'|
 |Language data path|No|[Text value](../variable-data-types.md#text-value)||The path of the folder that holds the specified language's Tesseract data|
 |Image width multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The width multiplier of the image|
 |Image height multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The height multiplier of the image|
@@ -196,7 +196,7 @@ Extract text from a given source using the given OCR engine.
 |Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
 |Use other language|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a language not given in the 'Tesseract language' field|
 |Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
-|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this to 'eng'|
+|Language abbreviation|No|[Text value](../variable-data-types.md#text-value)||The Tesseract abbreviation of the language to use. For example, if the data is 'eng.traineddata', set this parameter to 'eng'|
 |Language data path|No|[Text value](../variable-data-types.md#text-value)||The path of the folder that holds the specified language's Tesseract data|
 |Image width multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The width multiplier of the image|
 |Image height multiplier|No|[Numeric value](../variable-data-types.md#numeric-value)|1|The height multiplier of the image|
