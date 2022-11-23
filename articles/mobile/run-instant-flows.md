@@ -41,7 +41,7 @@ When the **Flow ran successfully** message appears at the top of the **Instant f
 
 :::image type="content" source="../media/android/run-flow-message.png" alt-text="Screenshot of the Flow ran successfully message on the Instant flows screen.":::
 
-> {!NOTE}
+> [!NOTE]
 >
 > There's no camera option to upload files with the mobile app.
 
