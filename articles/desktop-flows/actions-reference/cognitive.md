@@ -1,5 +1,5 @@
 ---
-title: Cognitive actions reference
+title: Cognitive actions overview
 description: See all the available cognitive actions.
 author: georgiostrantzas
 
