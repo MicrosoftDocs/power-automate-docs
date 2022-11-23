@@ -27,7 +27,7 @@ search.audienceType:
 
 Manage and manipulate files.
 
-## Getting started with file actions
+## Get started with file actions
 
 Handling files and their content is essential for most automation scenarios. You can use the file actions to manage files, retrieve their properties, read and write data, and convert them to other types.
 

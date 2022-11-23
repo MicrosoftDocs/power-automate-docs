@@ -1,11 +1,11 @@
 ---
-title: Flow control
-description: Flow control Actions Reference
+title: Flow control actions reference
+description: See all the available flow control actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
+ms.date: 11/23/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -19,210 +19,199 @@ search.audienceType:
   - enduser
 ---
 
-# Flow control
+# Flow control actions
 
 Control the automation flow
 
-[Comment](#comment)  
-[End](#end)  
-[Exit subflow](#exitfunction)  
-[Get last error](#getlasterror)  
-[Go to](#goto)  
-[Label](#label)  
-[On block error](#block)  
-[Run subflow](#callfunction)  
-[Stop flow](#exit)  
-[Wait](#wait)  
+## Get started with flow control
 
-## Getting started with flow control
+Flow control is the act of controlling the order in which actions and subflows run. Power Automate enables you to implement flow control through the flow control actions.
 
-Flow control refers to controlling the order in which actions and subflows run. Power Automate enables flow control through the flow control actions.
+**Labels** are used to create points of reference for the **Go to** action that changes the running point of the desktop flow. The following example directs the flow to a label earlier in the flow to repeat a series of actions.
 
-**Labels** are used to create points of reference for the **Go to** action to direct the flow to. In the figure below, the flow is directed to a label earlier in the flow to repeat a series of actions.
+:::image type="content" source="media/flowcontrol/label-example.png" alt-text="Screenshot of a deployed Label action.":::
 
-![Screenshot of a deployed label action in a flow.](media/flowcontrol/label-example.png)
+The **Run subflow** action interrupts the subflow in which it's placed and runs another subflow. When the second subflow completes, the flow reverts to the original subflow to continue running. The following example runs the **Calculate Discount** subflow multiple times throughout the runtime of the flow to avoid repeating the same code.
 
-The **Run subflow** action interrupts the subflow in which it's placed and runs another subflow. When the second subflow completes, the flow reverts to the original subflow to continue running. In the figure below, the subflow **Calculate Discount** has been created to run multiple times throughout the runtime of the flow to avoid repeating the same code.
+:::image type="content" source="media/flowcontrol/subflows-example.png" alt-text="Screenshot of the deployed Run subflow action.":::
 
-![Screenshot of a deployed Run subflow action.](media/flowcontrol/subflows-example.png)
+## <a name="comment"></a> Comment
 
-## Flow control actions
+User comment.
 
-### <a name="comment"></a> Comment
-
-User comment
-
-##### Input parameters
+### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Comment|Yes|[Text value](../variable-data-types.md#text-value)||User comment|
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
-##### <a name="comment_onerror"></a> Exceptions
+### <a name="comment_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
-### <a name="end"></a> End
+## <a name="end"></a> End
 
-##### Input parameters
+Signifies the end of a block.
+
+### Input parameters
 
 This action doesn't require any input.
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
-##### <a name="end_onerror"></a> Exceptions
+### <a name="end_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
-### <a name="exitfunction"></a> Exit subflow
+## <a name="exitfunction"></a> Exit subflow
 
-Exits current subflow and returns to the point it was called from
+Exits current subflow and returns to the point it was called from.
 
-##### Input parameters
+### Input parameters
 
 This action doesn't require any input.
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
-##### <a name="exitfunction_onerror"></a> Exceptions
+### <a name="exitfunction_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
-### <a name="getlasterror"></a> Get last error
+## <a name="getlasterror"></a> Get last error
 
-Retrieves the last error that occurred in the flow
+Retrieves the last error that occurred in the flow.
 
-##### Input parameters
+### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Clear error|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|After the error is stored in the variable, it's cleared so that next time the error is retrieved, it won't retrieve the same error value|
 
-##### Variables produced
+### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
 |LastError|[Error](../variable-data-types.md#error)|The details of the error that last occurred in the flow|
 
-##### <a name="getlasterror_onerror"></a> Exceptions
+### <a name="getlasterror_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
-### <a name="goto"></a> Go to
+## <a name="goto"></a> Go to
 
-Transfers the flow of execution to another point, indicated by a label
+Transfers the flow of execution to another point, indicated by a label.
 
-##### Input parameters
+### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Go to label|No|[Text value](../variable-data-types.md#text-value)||Label in the flow|
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
-##### <a name="goto_onerror"></a> Exceptions
+### <a name="goto_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
-### <a name="label"></a> Label
+## <a name="label"></a> Label
 
-Acts as the destination of a 'go to' statement
+Acts as the destination of a 'go to' statement.
 
-##### Input parameters
+### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Label name|No|[Text value](../variable-data-types.md#text-value)||Label in the program|
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
-##### <a name="label_onerror"></a> Exceptions
+### <a name="label_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
-### <a name="block"></a> On block error
+## <a name="block"></a> On block error
 
-Marks the beginning of a block to handle actions errors
+Marks the beginning of a block to handle actions errors.
 
-##### Input parameters
+### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Name|No|[Text value](../variable-data-types.md#text-value)||The name of the Exception Block for Visual purposes only.|
 |Capture unexpected logic errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, dividing a number by zero or trying to access an item from an out of bounds position.|
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
-##### <a name="block_onerror"></a> Exceptions
+### <a name="block_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
-### <a name="callfunction"></a> Run subflow
+## <a name="callfunction"></a> Run subflow
 
-Run a subflow specifying any required arguments
+Run a subflow specifying any required arguments.
 
-##### Input parameters
+### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Subflow name|No|[Subflow](../designer-workspace.md#setting-up-subflows)||The name of the subflow to call|
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
-##### <a name="callfunction_onerror"></a> Exceptions
+### <a name="callfunction_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
-### <a name="exit"></a> Stop flow
+## <a name="exit"></a> Stop flow
 
-Terminates the flow
+Terminates the flow.
 
-##### Input parameters
+### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |End flow|No|Successfully, With error message|Successfully|Terminate the execution of the flow, either successfully or with an error|
 |Error message|No|[Text value](../variable-data-types.md#text-value)||The error message to return to the flow caller upon exit|
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
-##### <a name="exit_onerror"></a> Exceptions
+### <a name="exit_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
-### <a name="wait"></a> Wait
+## <a name="wait"></a> Wait
 
-Suspends the execution of the flow for a specified amount of seconds
+Suspends the execution of the flow for a specified amount of seconds.
 
-##### Input parameters
+### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Duration|No|[Numeric value](../variable-data-types.md#numeric-value)||Time duration in seconds|
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
-##### <a name="wait_onerror"></a> Exceptions
+### <a name="wait_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
