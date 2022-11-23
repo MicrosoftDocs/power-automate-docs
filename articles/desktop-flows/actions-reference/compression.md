@@ -1,6 +1,6 @@
 ---
 title: Compression actions reference
-description: See all the available Compression actions
+description: See all the available Compression actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow

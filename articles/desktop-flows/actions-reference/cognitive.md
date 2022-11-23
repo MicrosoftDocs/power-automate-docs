@@ -1,6 +1,6 @@
 ---
 title: Cognitive actions reference
-description: See all the available cognitive actions
+description: See all the available cognitive actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
