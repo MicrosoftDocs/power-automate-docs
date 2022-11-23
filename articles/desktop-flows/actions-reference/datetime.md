@@ -1,6 +1,6 @@
 ---
 title: Datetime actions reference
-description: See all the available Datetime actions.
+description: See all the available datetime actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow

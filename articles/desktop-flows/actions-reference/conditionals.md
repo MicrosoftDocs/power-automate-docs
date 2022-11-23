@@ -1,6 +1,6 @@
 ---
 title: Conditional actions reference
-description: See all the available Conditionals actions.
+description: See all the available conditionals actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow

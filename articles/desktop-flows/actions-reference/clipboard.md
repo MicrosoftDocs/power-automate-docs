@@ -1,6 +1,6 @@
 ---
 title: Clipboard actions reference
-description: See all the available Clipboard actions.
+description: See all the available clipboard actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow

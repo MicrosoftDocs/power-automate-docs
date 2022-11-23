@@ -1,6 +1,6 @@
 ---
 title: Message boxes actions reference
-description: See all the available Message boxes actions.
+description: See all the available message boxes actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow

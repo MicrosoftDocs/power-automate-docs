@@ -23,7 +23,7 @@ search.audienceType:
 
 Automate a CMD session
 
-## Get started with CMD actions
+## Get started with CMD session actions
 
 Use the **Open CMD session** action to commence a command prompt session. Specify the working folder, and optionally change the code page in the **Advanced** section. All CMD session actions require the produced CMD session variable. 
 

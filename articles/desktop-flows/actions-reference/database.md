@@ -1,6 +1,6 @@
 ---
 title: Database actions reference
-description: See all the available Database actions.
+description: See all the available database actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow

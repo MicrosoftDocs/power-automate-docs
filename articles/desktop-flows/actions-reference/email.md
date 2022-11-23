@@ -1,6 +1,6 @@
 ---
 title: Email actions reference
-description: See all the available Email actions.
+description: See all the available email actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow

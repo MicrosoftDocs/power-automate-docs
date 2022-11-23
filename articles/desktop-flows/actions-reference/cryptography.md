@@ -1,6 +1,6 @@
 ---
 title: Cryptography actions reference
-description: See all the available Cryptography actions.
+description: See all the available cryptography actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
