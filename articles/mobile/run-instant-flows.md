@@ -4,7 +4,10 @@ description: Learn how to run an instant flow in the Microsoft Power Automate mo
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -12,8 +15,9 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/19/2022
-ms.author: kewaiss
+ms.date: 11/30/2022
+ms.author: napienko
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -27,15 +31,15 @@ search.audienceType:
 
 1. In the Power Automate mobile app for Android, select **Instant flows**, and then select the flow you want to run.
 
-    :::image type="content" source="../media/android/instant-flows-1.png" alt-text="Screenshot of a list of instant flows in the Power Automate mobile app for Android.":::
+    :::image type="content" source="../media/android/instant-flows-1.png" alt-text="Screenshot of a list of instant flows.":::
 
 1. Fill in any information the flow requires, and then select **Run flow**.
 
-    :::image type="content" source="../media/android/run-flow.png" alt-text="Screenshot of an instant flow in the Power Automate mobile app for Android.":::
+    :::image type="content" source="../media/android/run-flow.png" alt-text="Screenshot of an instant flow.":::
 
 When the **Flow ran successfully** message appears at the top of the **Instant flows** screen, your flow is complete:
 
-:::image type="content" source="../media/android/run-flow-message.png" alt-text="Screenshot of the Flow ran successfully message in the Power Automate mobile app for Android instant flows screen.":::
+:::image type="content" source="../media/android/run-flow-message.png" alt-text="Screenshot of the Flow ran successfully message on the Instant flows screen.":::
 
 > {!NOTE}
 >

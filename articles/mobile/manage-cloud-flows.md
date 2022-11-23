@@ -4,7 +4,10 @@ description: Learn how to manage your cloud flows in the Microsoft Power Automat
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -12,8 +15,9 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/19/2022
-ms.author: kewaiss
+ms.date: 11/30/2022
+ms.author: napienko
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -37,9 +41,23 @@ You can manage your flows when you're away from your computer whether they're so
 
 By default, the **Flows** screen shows all the flows that you've created.
 
-:::image type="content" source="../media/android/instant-flows.png" alt-text="Screenshot of a list of flows in the Power Automate mobile app for Android.":::
+:::image type="content" source="../media/android/instant-flows.png" alt-text="Screenshot of a list of flows.":::
 
 To show flows that others have shared with you, select **Shared with me** at the top of the **Flows** screen.
+
+## Edit a cloud flow
+
+You can edit your cloud flows on-the-go. Your available cloud flows are in one of the lists in the **Flows** screen, as shown in the previous screenshot.
+
+To edit a cloud flow:
+
+1. On the **Flows** screen, select the flow that you want to edit.
+
+    The **Flow details** screen displays.
+
+1. Select the pencil icon at the top of the screen.
+
+    :::image type="content" source="../media/android/flow-details-edit.png" alt-text="Screenshot of the pencil icon in the Flow details screen.":::
 
 ## Run, delete, and turn a flow on or off
 
@@ -47,7 +65,7 @@ Select the vertical ellipsis (**...**) next to a flow, and then select one of th
 
 You can also turn a flow on and off in the [**Details** screen](#view-run-history-and-details).
 
-:::image type="content" source="../media/android/flows-menu.png" alt-text="Screenshot of flow options in the Power Automate mobile app for Android.":::
+:::image type="content" source="../media/android/flows-menu.png" alt-text="Screenshot of flow options.":::
 
 ## View run history and details
 
@@ -57,6 +75,6 @@ In addition to the flow's run history, you can view a description of the flow if
 
 You can also toggle **Enable** here to turn the flow on or off.
 
-:::image type="content" source="../media/android/flow-details.png" alt-text="Screenshot of flow details and run history in the Power Automate mobile app for Android.":::
+:::image type="content" source="../media/android/flow-details.png" alt-text="Screenshot of flow details and run history.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
