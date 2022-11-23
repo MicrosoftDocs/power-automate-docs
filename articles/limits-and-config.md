@@ -11,10 +11,10 @@ tags: ''
 
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/22/2022
+ms.date: 11/23/2022
 ms.author: deonhe
 Contributors:
   - georgiostrantzas
@@ -53,7 +53,7 @@ Here are the limits for a single flow definition:
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
-| Actions per workflow | 500 | You can add child flows to extend this limit, as needed. Flows with a large number of actions may encounter performance issues while you edit them, even if they have less than 500 actions. If you encounter performance issues while you edit your flow, consider using child flows to reduce the number of actions in a single flow. |
+| Actions per workflow | 500 | You can add child flows to extend this limit, as needed. Flows with a large number of actions may encounter performance issues while you edit them, even if they have fewer than 500 actions. If you encounter performance issues while you edit your flow, consider using child flows to reduce the number of actions in a single flow. |
 | Allowed nesting depth for actions | 8 | To extend this limit, you can add child flows as needed. |
 | Switch scope cases limit | 25 | |
 | Variables per workflow | 250 | |
@@ -105,7 +105,7 @@ Here are the limits for a single flow run:
 | ---- | ----- | ----- |
 | Trigger concurrency | - Unlimited when the concurrency control is turned off <br />- 25 is the default limit when the concurrency control is turned on, which you can't undo after you enable concurrency. You can change the default to a value between 1 and 100 inclusively in the settings for the trigger under **Concurrency Control**. | This limit describes the highest number of flow runs that can run at the same time, or in parallel. <br />**Note**: When concurrency is turned on, the SplitOn limit is reduced to 100 items for debatching arrays. |
 | Maximum waiting runs | - With concurrency, the minimum number of waiting runs is the number of concurrent runs (trigger concurrency). As this is dependent on runtime behavior, use the trigger concurrency setting instead. | This limit describes the highest number of flow runs that can wait to run when your flow is already running the maximum concurrent instances. |
-| Apply to each array items | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that a "apply to each" loop can process. <br />To filter larger arrays, you can use the query action. |
+| Apply to each array items | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that an "apply to each" loop can process. <br />To filter larger arrays, you can use the query action. |
 | Apply to each concurrency | 1 is the default limit. You can change the default to a value between 1 and 50 inclusively. | This limit is highest number of "apply to each" loop iterations that can run at the same time, or in parallel. |
 | Split on items | - 5,000 for Low without trigger concurrency  <br />- 100,000 for all others without trigger concurrency <br />- 100 with trigger concurrency | For triggers that return an array, you can specify an expression that uses a 'SplitOn' property that splits or debatches array items into multiple workflow instances for processing, rather than use a "Foreach" loop. This expression references the array to use for creating and running a workflow instance for each array item. <br />**Note**: When concurrency is turned on, the Split on limit is reduced to 100 items. |
 | Until iterations | - Default: 60 <br />- Maximum: 5,000 | |
