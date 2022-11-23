@@ -42,7 +42,7 @@ When all the CMD tasks are complete, use the **Close CMD session** action to ter
 Open a new CMD session.
 
 > [!IMPORTANT]
-> To prevent unauthorized access, Windows require administrator rights to access protected folders. To use a protected folder as a working folder in the **Open CMD session** action, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> To prevent unauthorized access, Windows require administrator rights to access protected folders. To use a protected folder as a working folder in the **Open CMD session** action, run Power Automate with administrator rights. To find more information regarding running Power Automate as an administrator, go to [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ### Input parameters
 
@@ -127,7 +127,7 @@ Wait for a specific text on a previously opened CMD session.
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|Specifies whether to wait indefinitely for the text to appear or to fail if the text doesn't show up within a set time period|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. To find more information about regular expressions, go to [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ### Variables produced
 
