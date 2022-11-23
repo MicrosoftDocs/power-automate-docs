@@ -21,7 +21,7 @@ search.audienceType:
 
 # Active Directory
 
-Connect to an Active Directory server and perform operations
+Connect to an Active Directory server and perform operations.
 
 ## Getting started with Active Directory actions
 
