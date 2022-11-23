@@ -133,7 +133,7 @@ Additionally, you can manually specify a pager through the **Advanced settings**
 
 When data selection is complete, close the live web helper and configure the appropriate parameters in the **Extract data from web page** action. You can select between extracting data from all the available pages or a specific number of them.
 
-Optionally, you can enable **Process data upon extraction** to let Power Automate process the extracted data in different ways, such as removing whitespaces and unwanted characters. This option may affect performance for large amounts of data.
+Optionally, you can enable **Process data upon extraction** to let Power Automate process the extracted data in different ways, such as removing whitespaces and unwanted characters. However, this option may affect performance for large amounts of data.
 
 :::image type="content" source="media\web-automation\extract-data-web-page-action-pager.png" alt-text="Screenshot of the paging options in the Extract data from web page action.":::
 
