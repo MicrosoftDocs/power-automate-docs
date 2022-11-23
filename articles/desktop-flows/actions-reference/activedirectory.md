@@ -1,5 +1,5 @@
 ---
-title: Active Directory
+title: Active Directory actions reference
 description: Active Directory actions reference
 author: georgiostrantzas
 
@@ -19,7 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-# Active Directory
+# Active Directory actions
 
 Connect to an Active Directory server and perform operations.
 
@@ -173,7 +173,7 @@ This action doesn't produce any variables.
 
 The following example uses the **Modify group** action to add the user **nvarga** to the **RPATest** Active Directory group.  
 
-![Screenshot of the Group action.](media\activedirectory\modify-ad-group-properties-exercise.png)
+:::image type="content" source="media\activedirectory\modify-ad-group-properties-exercise.png" alt-text="Screenshot of the Group action.":::
 
 ## <a name="createobject"></a> Create object
 
@@ -329,7 +329,7 @@ This action doesn't produce any variables.
 
 The following example creates a new user. The user's actual name is **Norbert Varga**, and the username is **nvarga**. The presented configurations create the user in the **Users** container and specify the extra controllers **contoso** and **demo**.
   
-![Screnshot of the Create User action.](media\activedirectory\create-ad-user-properties-exercise.png)
+:::image type="content" source="media\activedirectory\create-ad-user-properties-exercise.png" alt-text="Screenshot of the Create User action.":::
 
 ## <a name="getuserinfo"></a> Get user info
 
