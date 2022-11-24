@@ -50,11 +50,11 @@ After June 2023, enterprise users have two options:
 
 After June 2023, non-enterprise users must upgrade to Power Automate for desktop v2.27 or later and use the new browser extension.
 
-## Run JavaScript on web page action
+## Run JavaScript function on web page action
 
 Due to limitations in the way Manifest V3 works, injecting JavaScript on a web page is impossible when Developer tools are disabled by Group Policy, making the action not functional.
 
-If you upgrade to Power Automate for desktop v2.27 or later and use the new browser extension, the **Run JavaScript on web page** action will be functional with the use of its debugger capability.
+If you upgrade to Power Automate for desktop v2.27 or later and use the new browser extension, the **Run JavaScript function on web page** action will be functional with the use of its debugger capability.
 
 The action won't be impacted if you use the legacy browser extension and Power Automate for desktop v2.26 or older.
 
