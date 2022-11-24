@@ -23,7 +23,7 @@ search.audienceType:
 
 For machines with an installation of Outlook, you can manage your mailboxes with the Outlook actions.
 
-After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder. 
+After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder.
 
 The following example retrieves all the email messages from the folder **Tickets**, a subfolder of the Inbox. The specified filters limit the results to messages from a specific sender that contain particular words in their subject and body.
 
