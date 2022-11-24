@@ -333,6 +333,8 @@
       href: ./desktop-flows/install-silently.md
     - name: Install Power Automate browser extensions
       href: ./desktop-flows/install-browser-extensions.md
+    - name: Migration to Manifest V3 (browser extensions)
+      href: ./desktop-flows/manifest.md
     - name: Create a Dataverse database
       href: ./desktop-flows/create-database.md
     - name: Governance
