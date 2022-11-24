@@ -17,9 +17,9 @@ search.audienceType:
 
 # Migration to Manifest V3
 
-After June 2023, Google Chrome and probably Microsoft Edge browsers will no longer run Manifest V2 extensions. Currently, the Power Automate browser extension for both browsers is based on Manifest V2. Therefore, the web extensions must be migrated to Manifest V3 to be functional after June 2023.
+After June 2023, Google Chrome and Microsoft Edge browsers will no longer run Manifest V2 extensions. Currently, the Power Automate browser extensions for both browsers are based on Manifest V2. Therefore, the web extensions must be migrated to Manifest V3 to be functional after June 2023.
 
-A manifest file is the blueprint of an extension. It includes information such as the version number and title of the extension and permissions needed to run it. Migrating from Manifest V2 to V3 will bring several structural changes to how browsers handle the extensions. Manifest V3 extensions enjoy enhancements in security, privacy, and performance. They can also use more contemporary open web technologies such as service workers and promises.
+A manifest file is the blueprint of an extension. It includes information such as the version number and the title of the extension and permissions it needs to run. Migrating from Manifest V2 to V3 will bring several structural changes to how browsers handle the extensions. Manifest V3 extensions enjoy enhancements in security, privacy, and performance. They can also use more contemporary open web technologies such as service workers and promises.
 
 ## Plan of Manifest V2 deprecation
 
@@ -29,34 +29,34 @@ A manifest file is the blueprint of an extension. It includes information such a
 |June 2023 (Google Chrome) <br> TBD (Microsoft Edge) |They'll no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. |Both browsers will stop running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on both browsers using Enterprise policies. |
 |January 2024 (Google Chrome) <br> TBD (Microsoft Edge) |No change | Manifest V2 extensions will no longer function in both browsers even with the use of Enterprise policy. |
 
-Chromium has revised the timelines for Manifest V2 sunset. We'll independently decide on MV3 migration timelines for Microsoft Edge Add-ons and share an update here. We continue to analyze the concerns raised by the extension developers and explore the optimal path for the Microsoft Edge Add-ons ecosystem. Meanwhile, refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset) for planning your extension's migration.
+Chromium has revised the timelines for Manifest V2 sunset. We'll independently decide on Manifest V3 migration timelines for Microsoft Edge Add-ons and share an update in this article. We continue to analyze the concerns raised by the extension developers and explore the optimal path for the Microsoft Edge Add-ons ecosystem. Meanwhile, refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset) for planning your extension's migration.
 
 To find more information, go to:
 
 - [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/)
 - [Overview and timelines for migrating to Manifest V3](https://learn.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/manifest-v3)
 
-## Power Automate plan for deprecation of Manifest V2 and migration to V3
+## Power Automate plan for deprecate Manifest V2 and migrate to V3
 
-A new browser extension will be released in December 2022, with the name **Microsoft Power Automate’** The extension follows the Manifest V3 standard, taking advantage of its benefits. The new extension is compatible with Power Automate for desktop v2.27 (December 2022 release) or above. After June 2023, you should upgrade to Power Automate for desktop v2.27 or above and install the new extension.
+A new browser extension will be released in December 2022, with the name **Microsoft Power Automate**. The extension follows the Manifest V3 standard, taking advantage of its benefits. The new extension is compatible with Power Automate for desktop v2.27 (December 2022 release) or later. After June 2023, you should upgrade to Power Automate for desktop v2.27 (or later) and install the new extension.
 
 The old web extension will continue to exist after the release of the new one. It will be renamed to **Microsoft Power Automate (Legacy)** and continue using Manifest V2. If you want to keep Power Automate for desktop v2.26 or older installed, use the legacy web extension until the end of May 2023.  
 
 After June 2023, enterprise users have two options:
 
-- Upgrade to Power Automate for desktop v2.27 or above and use the new browser extension.
+- Upgrade to Power Automate for desktop v2.27 or later and use the new browser extension.
 
-- (Only for enterprises) Use Enterprise policies to allow Manifest V2 extensions to run on Microsoft Edge/Google Chrome. By enabling it, you may use Power Automate for desktop v2.26 or older and the legacy web extension until January 2024. After January 2024, everyone must upgrade to Power Automate for desktop v2.27 or above.
+- (Only for enterprises) Use Enterprise policies to allow Manifest V2 extensions to run on Microsoft Edge/Google Chrome. By enabling it, you may use Power Automate for desktop v2.26 or older and the legacy web extension until January 2024. After January 2024, everyone must upgrade to Power Automate for desktop v2.27 or later.
 
-After June 2023, non-enterprise users must upgrade to Power Automate for desktop v2.27 or above and use the new browser extension.
+After June 2023, non-enterprise users must upgrade to Power Automate for desktop v2.27 or later and use the new browser extension.
 
 ## Run JavaScript on web page action
 
-Due to limitations in the way Manifest V3 works, injecting JavaScript in a web page is impossible when Developer tools are disabled by Group Policy, making the action not functional.
+Due to limitations in the way Manifest V3 works, injecting JavaScript on a web page is impossible when Developer tools are disabled by Group Policy, making the action not functional.
 
-If you upgrade to Power Automate for desktop v2.27 or above and use the new browser extension, the **Run JavaScript on web page** action will be functional with the usage of its debugger capability.
+If you upgrade to Power Automate for desktop v2.27 or later and use the new browser extension, the **Run JavaScript on web page** action will be functional with the use of its debugger capability.
 
-The action won't be impacted if you use the legacy web extension and Power Automate for desktop v2.26 or older.
+The action won't be impacted if you use the legacy browser extension and Power Automate for desktop v2.26 or older.
 
 When the action runs, you'll see a  **"Microsoft Power Automate" started debugging this browser** message with no real effect on the execution.
 
