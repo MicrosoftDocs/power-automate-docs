@@ -65,7 +65,7 @@ To disable protected mode and allow Power Automate to clear the browser's cache 
 
     :::image type="content" source="media/install-browser-extensions/internet-explorer-internet-protected-mode.png" alt-text="Screenshot of the security tab in the Internet Explorer options":::
 
-1. Select **Apply** and **OK** to save the change and close the dialog .
+1. Select **Apply** and **OK** to save the change and close the dialog.
 
 ## Configure Internet Explorer for servers
 
