@@ -635,7 +635,7 @@ Click on a link in a web page that results in downloading a file.
 Run a JavaScript function on the web page and get the returned result.
 
 > [!NOTE]
-> This action is getting affected by the migration to the Manifest V3 browser extensions. To find more information about Manifest V3 and how it affect the **Run JavaScript function on web page** action, go to [Migration to Manifest V3](../manifest.md).
+> The migration to the Manifest V3 browser extensions affect this action. To find more information about Manifest V3 and how it affect the **Run JavaScript function on web page** action, go to [Migration to Manifest V3](../manifest.md).
 
 ##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
