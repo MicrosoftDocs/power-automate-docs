@@ -34,7 +34,7 @@ Chromium has revised the timelines for Manifest V2 sunset. We'll independently d
 To find more information, go to:
 
 - [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/)
-- [Overview and timelines for migrating to Manifest V3](https://learn.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/manifest-v3)
+- [Overview and timelines for migrating to Manifest V3](/microsoft-edge/extensions-chromium/developer-guide/manifest-v3)
 
 ## Power Automate plan for deprecate Manifest V2 and migrate to V3
 
@@ -63,7 +63,7 @@ When the action runs, you'll see a  **"Microsoft Power Automate" started debuggi
 > [!NOTE]
 > The new version of the browser extension requires the browsers' Developer tools to be enabled. The extension uses its debugger capabilities to run the JavaScript code of the respective action.
 
-To ensure that Developer tools aren't disabled in Microsoft Edge, go to [Microsoft Edge - Policies](https://learn.microsoft.com/deployedge/microsoft-edge-policies#developertoolsavailability).
+To ensure that Developer tools aren't disabled in Microsoft Edge, go to [Microsoft Edge - Policies](/deployedge/microsoft-edge-policies#developertoolsavailability).
 
 To ensure that Developer tools aren't disabled in GoogleChrome, go to [Chrome Enterprise policy](https://chromeenterprise.google/policies/#DeveloperToolsAvailability).
 
