@@ -106,13 +106,17 @@ Now that prerequisites are set, you are on your way to get the free solutions th
 
 ## Install and configure Contoso CRM app
 
-1. Download and install [contoso_crm.exe](https://aka.ms/ContosoCRMApp) on the machine where the automation runs. The Contoso app shows you how the end-to-end automation scenario works so that you can follow the example to create your own automation.
+1. Download the [Contoso CRM app package](https://download.microsoft.com/download/c/2/2/c22e3b45-8795-46fd-894d-ddf03b0f17cb/contoso_legancy_crm_setup.zip) on the machine where the automation runs.
 
-   Select **More info** > **Run anyway** on the **Windows protected you PC** screen that appears during the installation.
+1. Run **setup.exe** from the extracted package.
+
+    The Contoso app shows you how the end-to-end automation scenario works so that you can follow the example to create your own automation.
+
+    Select **More info** > **Run anyway** on the **Windows protected you PC** screen that appears during the installation.
 
    ![Screenshot of the Windows protected your PC dialog.](media/dynamics365-cs-rpa/more-info.png)
 
-   When the installation is complete, run the Contoso CRM app from the Windows Start menu.
+1. When the installation is complete, run the Contoso CRM app from the Windows Start menu.
 
    ![Screenshot of the Contoso application.](media/dynamics365-cs-rpa/contoso-application.png)
 
