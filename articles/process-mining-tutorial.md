@@ -32,8 +32,7 @@ This tutorial allows you to experience process mining with sample data. In this 
 For the process mining tutorial, download the sample event log CSV file:  
 
 - [English version](https://go.microsoft.com/fwlink/?linkid=2181220)
-
-- [French version](https://go.microsoft.com/fwlink/?linkid=2181117)
+- [French version](https://download.microsoft.com/download/3/9/c/39c5a305-8cf6-464e-af19-7d37b3f84628/Exemples_FR.csv)
 
 The sample data in this tutorial is for illustration only and is fictitious. No real association is intended or inferred.
 
@@ -71,7 +70,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
     :::image type="content" source="media/process-mining-tutorial/upload-browse.png" alt-text="Screenshot of the Upload file selection and Browse button.":::
 
-1. Find and select **SampleData_AP_Refunds_Financial_EventLog.xlsx**, which you downloaded previously.
+1. Find and select **SampleData_AP_Refunds_Financial_EventLog.csv**, which you downloaded previously.
 
 1. Select **Open**.
 
