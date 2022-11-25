@@ -262,7 +262,8 @@ This action doesn't produce any variables.
 |Element with specified CSS selector not found|Indicates that a web page element with the specified CSS selector wasn't found|
 |Failed to select radio button|Indicates a problem in selecting the specified radio button|
 
-#### <a name="setdropdownlistvaluebase"></a> Set drop-down list value on web page
+## <a name="setdropdownlistvaluebase"></a> Set drop-down list value on web page
+
 Set or clear the selected option for a drop-down list in a web form.
 
 ### Input parameters
@@ -471,9 +472,9 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Failed to launch Chrome|Indicates a problem launching Chrome|
 |Invalid URL|Indicates that the provided URL was invalid|
 
-## <a name="launchedgebase"></a> Launch new Edge
+## <a name="launchedgebase"></a> Launch new Microsoft Edge
 
-Launch a new instance or attach to a running instance of Edge for automating websites and web applications.
+Launch a new instance or attach to a running instance of Microsoft Edge for automating websites and web applications.
 
 ### Input parameters
 
