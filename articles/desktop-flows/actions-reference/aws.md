@@ -454,7 +454,7 @@ Dispose an open EC2 client.
 
 This action doesn't produce any variables.
 
-## <a name="endec2session_onerror"></a> Exceptions
+### <a name="endec2session_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
