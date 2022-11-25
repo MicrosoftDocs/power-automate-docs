@@ -17,6 +17,8 @@ search.audienceType:
 
 # Prerequisites and limitations
 
+This article presents all the prerequisites and limitations you should consider before installing and using Power Automate on your desktop.
+
 ## Prerequisites
 
 - To [install Power Automate](install.md), a Windows account with administrator privileges is required.
