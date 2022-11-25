@@ -1,13 +1,17 @@
 ---
-title: Handle links that open new tabs | Microsoft Docs
+title: Handle links that open new tabs
 description: Handle links that open new tabs
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/04/2021
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

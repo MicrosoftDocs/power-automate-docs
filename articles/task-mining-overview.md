@@ -1,14 +1,15 @@
 ---
 title: Overview of task mining in process advisor | Microsoft Docs
 description: Quickly capture detailed steps for each process in your organization to help you better understand workflows and begin automating to reclaim time.
-author: nijemcevic 
-
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: overview
-
-ms.date: 10/19/2021
-ms.author: tatn
-ms.reviewer: v-aangie
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 

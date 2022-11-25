@@ -1,13 +1,17 @@
 ---
-title: Extract attributes from window elements | Microsoft Docs
+title: Extract attributes from window elements
 description: Extract attributes from window elements
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/03/2021
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

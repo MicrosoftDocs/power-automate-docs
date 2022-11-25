@@ -1,13 +1,15 @@
 ---
-title: Security and privacy | Microsoft Docs
-description: This topic explains security and privacy issues in process advisor.
-author: nijemcevic 
-
+title: Security and privacy
+description: Learn about security and privacy issues in process advisor.
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 12/17/2021
-ms.author: tatn
-ms.reviewer: v-aangie
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -19,7 +21,7 @@ search.audienceType:
 
 ## Security
 
-Process advisor relies on environment security and Microsoft Dataverse security roles and privileges to grant access to its features in Power Automate. For more information, see [Power Platform security overview](/power-platform/admin/wp-security).
+Process advisor relies on environment security and Microsoft Dataverse security roles and privileges to grant access to its features in Power Automate. For more information, go to [Power Platform security overview](/power-platform/admin/wp-security).
 
 Some privileges are set by default in Dataverse. This allows built-in security roles to use process advisor without further actions from system administrators. Specifically:
 
@@ -47,7 +49,7 @@ These security roles have privileges to the process advisor tables in Dataverse.
 > - Microsoft PowerApps
 > - Microsoft Flow
 > 
-> Currently, **having conditional access to only Microsoft Flow is not enough**. To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access) and [Control Access to Power Apps and Power Automate with Azure AD Conditional Access Policies](https://devblogs.microsoft.com/premier-developer/control-access-to-power-apps-and-power-automate-with-azure-ad-conditional-access-policies/#:~:text=Control%20Access%20to%20Power%20Apps%20and%20Power%20Automate,a%20Conditional%20Access%20Policy.%20...%204%20Summary.%20).
+> Currently, *having conditional access to only Microsoft Flow is not enough*. To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access) and [Control Access to Power Apps and Power Automate with Azure AD Conditional Access Policies](https://devblogs.microsoft.com/premier-developer/control-access-to-power-apps-and-power-automate-with-azure-ad-conditional-access-policies/#:~:text=Control%20Access%20to%20Power%20Apps%20and%20Power%20Automate,a%20Conditional%20Access%20Policy.%20...%204%20Summary.%20).
 
 ## Privacy
 

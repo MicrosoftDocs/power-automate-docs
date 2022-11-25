@@ -1,14 +1,18 @@
 ---
-title: Getting started with Power Automate in Windows 11 (contains video) | Microsoft Docs
-description: Getting started with Power Automate in Windows 11
+title: Get started with Power Automate in Windows 11 (contains video)
+description: Get started with Power Automate in Windows 11
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article 
 ms.date: 09/10/2021
-ms.author: v-gtrantzas
 ms.custom: intro-internal
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -16,11 +20,8 @@ search.audienceType:
   - enduser
 ---
 
-# Getting started with Power Automate in Windows 11
-<!---
-> [!IMPORTANT]
-> Power Automate Desktop has been renamed to Power Automate for desktop. To find more information about the renaming, please visit the respective blog post. 
---->
+# Get started with Power Automate in Windows 11
+
 Windows 11 allow users to create automations through the preinstalled Power Automate app. Power Automate is a low-code platform that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
 
    ![Screenshot of the Windows 11 search menu.](media\getting-started-windows-11\launching.png)

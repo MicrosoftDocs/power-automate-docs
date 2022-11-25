@@ -1,5 +1,5 @@
 ---
-title: Introduction to other types of desktop flows (contains video) | Microsoft Docs
+title: Introduction to other types of desktop flows (contains video)
 description: Introduction to other types of desktop flows.
 services: ''
 suite: flow
@@ -16,6 +16,8 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/26/2020
 ms.author: DeonHe
+contributors:
+- georgiostrantzas
 search.app: 
   - Flow
 search.audienceType: 

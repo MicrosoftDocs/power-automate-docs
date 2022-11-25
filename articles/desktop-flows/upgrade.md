@@ -1,5 +1,5 @@
 ---
-title:  Update UI flows app and connections from previous releases | Microsoft Docs
+title:  Update UI flows app and connections from previous releases
 description:  Update UI flows app and connections from previous releases.
 services: ''
 suite: flow
@@ -16,6 +16,8 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/03/2020
 ms.author: DeonHe
+contributors:
+- georgiostrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -44,7 +46,7 @@ No action is required until you either update the UI flows app or the connection
     1. Enter your credentials for the connection, and then save it.
 
     >[!IMPORTANT]
-    >Be sure you use the right credentials as outlined in [Setup UI flows connections and machine credentials](install.md#setup-desktop-flows-connections-and-machine-credentials). Using the correct credentials ensures that your connection updates and uses the code paths for the generally available UI flows.
+    >Be sure you use the right credentials as outlined in [Create desktop flow connections](desktop-flow-connections.md). Using the correct credentials ensures that your connection updates and uses the code paths for the generally available UI flows.
 
 ## Next steps
 

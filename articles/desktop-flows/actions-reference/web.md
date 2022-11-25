@@ -1,13 +1,17 @@
 ---
-title: HTTP | Microsoft Docs
+title: HTTP
 description: HTTP Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -61,7 +65,7 @@ The downloaded text is stored in a variable named **WebPageText**. If you use th
 ### <a name="downloadfromweb"></a> Download from web
 Downloads text or a file from the web and stores it
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |URL|No|[Text value](../variable-data-types.md#text-value)||The web page or file's URL|
@@ -82,7 +86,7 @@ Downloads text or a file from the web and stores it
 |Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the web server|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |DownloadedFile|[File](../variable-data-types.md#files-and-folders)|The downloaded file|
@@ -98,7 +102,7 @@ Downloads text or a file from the web and stores it
 ### <a name="invokesoapserviceaction"></a> Invoke SOAP web service
 Invokes a method from a SOAP web service
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Endpoint|No|[Text value](../variable-data-types.md#text-value)||The endpoint of the web service|
@@ -126,7 +130,7 @@ Invokes a method from a SOAP web service
 |Operation|[Text value](../variable-data-types.md#text-value)|The operation to invoke the service
 |Request envelope|[Text value](../variable-data-types.md#text-value)|The envelope to send in the request to invoke the service
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |SoapServiceResponseHeaders|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The HTTP headers of the response|
@@ -143,7 +147,7 @@ Invokes a method from a SOAP web service
 ### <a name="invokewebservicebase"></a> Invoke web service
 Invokes a web service by sending data and retrieves the response from the web service
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |URL|No|[Text value](../variable-data-types.md#text-value)||The web service's URL|
@@ -169,7 +173,7 @@ Invokes a web service by sending data and retrieves the response from the web se
 |Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the web server|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |WebServiceResponseHeaders|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The HTTP headers of the response|
