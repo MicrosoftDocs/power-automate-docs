@@ -1,6 +1,6 @@
 ---
 title: Overview of RPA templates and Dynamics 365
-description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation
+description: Overview of RPA templates and Dynamics 365
 author: georgiostrantzas
 ms.topic: overview
 ms.date: 11/15/2022
