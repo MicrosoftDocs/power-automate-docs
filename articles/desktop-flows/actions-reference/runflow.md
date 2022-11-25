@@ -1,13 +1,17 @@
 ---
-title: Run desktop flow | Microsoft Docs
+title: Run desktop flow
 description: Run desktop flow Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/13/2021
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -36,13 +40,13 @@ The **Run desktop flow** action enables you to call other desktop flows while ru
 ### <a name="runflow"></a> Run desktop flow
 Runs a desktop flow which can receive input variables and may produce output variables. The parent flow run will be paused until the called desktop flow completes.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Destop flow|No|Desktop flow||Select the desktop flow to run from within this flow|
 
 
-##### Variables Produced
+##### Variables produced
 - This action produces the output variables of the selected flow
 
 ##### <a name="runflow_onerror"></a> Exceptions

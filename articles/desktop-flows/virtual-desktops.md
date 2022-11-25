@@ -1,12 +1,14 @@
 ---
-title: Automate on virtual desktops (preview)
+title: Automate on virtual desktops
 description: Learn how to build automated workflows on Citrix and RDP virtual desktops.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/08/2022
+ms.date: 10/04/2022
 ms.author: gtrantzas
-ms.reviewer:
+ms.reviewer: marleon
+contributors:
+- NikosMoutzourakis
 search.app: 
   - Flow
 search.audienceType: 
@@ -14,14 +16,9 @@ search.audienceType:
   - enduser
 ---
 
-# Automate on virtual desktops (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Automate on virtual desktops
 
 With the Power Automate agent for virtual desktops, you can automate processes on virtual desktops just as easily as you can on physical devices. If your virtual desktop uses Citrix or Microsoft Remote Desktop Protocol (RDP), you can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md), just like on your physical desktop.
-
-> [!IMPORTANT]
-> This is a preview feature. [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 The Power Automate agent for virtual desktops must be running both while you're designing a flow and when the flow runs. The agent starts automatically when a user logs in to the virtual desktop. If it isn't running on your virtual desktop, launch the agent manually.  
 
@@ -35,7 +32,7 @@ The Power Automate agent for virtual desktops must be running both while you're 
 
 1. [Download the Power Automate agent for virtual desktops](https://go.microsoft.com/fwlink/?linkid=2188766).
 
-    Alternatively, launch the Power Automate desktop designer and select **Tools** > **Power Automate for virtual desktops (Preview)**.
+    Alternatively, launch the Power Automate desktop designer and select **Tools** > **Power Automate for virtual desktops**.
 
 1. Copy the installer to your Citrix or RDP virtual desktop.
 
@@ -62,8 +59,7 @@ If the versions are out of sync when a desktop flow is running, Power Automate w
 
 Generated selectors of windows and UI elements are the same regardless of whether they were captured on a physical device or a virtual desktop. Visual indications and the tree structure in the UI elements pane help you to distinguish UI elements captured on virtual desktops from those captured on a physical device. [Learn more about UI elements and selectors](ui-elements.md).
 
-UI elements captured on the physical device are located under the **Computer** parent. UI elements captured on a virtual desktop are located under an **RDP** parent. Every virtual desktop has its own individual tree. A numeric prefix helps you to distinguish virtual desktops of the same type.
-<!--NOTE: Would the parent be called "Citrix" if that was the kind of virtual desktop it was on?-->
+UI elements captured on the physical device are located under the **Computer** parent. UI elements captured on a virtual desktop are located under an **RDP** or **Citrix** parent. Every virtual desktop has its own individual tree. A numeric prefix helps you to distinguish virtual desktops of the same type.
 
 :::image type="content" source="media\virtual-desktops\ui-elements-rdp.png" alt-text="Screenshot of some UI elements captured on an RDP virtual desktop.":::
 

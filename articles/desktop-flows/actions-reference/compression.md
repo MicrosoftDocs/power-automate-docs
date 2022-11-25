@@ -1,13 +1,17 @@
 ---
-title: Compression | Microsoft Docs
+title: Compression
 description: Compression Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -39,7 +43,7 @@ To compress (or zip) a file, use the **ZIP files** action. Specify a path to the
 ### <a name="zipfiles"></a> ZIP files
 Compress one or more files or folders into a ZIP archive
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Archive path|No|[File](../variable-data-types.md#files-and-folders)||The full path of ZIP file to create. If the file already exists, this action adds the new zipped files and/or to the existing ZIP file. If the ZIP file already contains a file or folder with the same name, it overwrites it. |
@@ -49,7 +53,7 @@ Compress one or more files or folders into a ZIP archive
 |Archive comment|Yes|[Text value](../variable-data-types.md#text-value)||The comment to include in the ZIP file as a file property|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ZipFile|[File](../variable-data-types.md#files-and-folders)|The ZIP file created by this action|
@@ -66,7 +70,7 @@ Compress one or more files or folders into a ZIP archive
 ### <a name="unzipfiles"></a> Unzip files
 Uncompress one or more files or folders contained in a ZIP archive
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Archive path|No|[File](../variable-data-types.md#files-and-folders)||The full path of a ZIP file to extract|
@@ -76,8 +80,8 @@ Uncompress one or more files or folders contained in a ZIP archive
 |Exclude mask|Yes|[Text value](../variable-data-types.md#text-value)||The filter to limit the files extracted by excluding those entered here. This allows wild cards, for example, '*.txt' or 'document?.doc' (without the quotes). To allow multiple file filters, separate the choices with a semi-colon, for instance, '*.txt;*.exe'|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="unzipfiles_onerror"></a> Exceptions
 |Exception|Description|

@@ -1,13 +1,17 @@
 ---
-title: Text | Microsoft Docs
+title: Text
 description: Text Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -110,25 +114,25 @@ The following table displays various examples of entities that the **Recognize e
 ### <a name="appendline"></a> Append line to text
 Appends a new line of text to a text value
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Original text|No|[Text value](../variable-data-types.md#text-value)||The original text|
 |Line to append|Yes|[Text value](../variable-data-types.md#text-value)||The text to add on as a new line|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Result|[Text value](../variable-data-types.md#text-value)|The new text|
 
 
 ##### <a name="appendline_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="getsubtextbase"></a> Get subtext
 Retrieve a subtext from a text value
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Original text|No|[Text value](../variable-data-types.md#text-value)||The text to retrieve a section of text from|
@@ -138,7 +142,7 @@ Retrieve a subtext from a text value
 |Number of chars|No|[Numeric value](../variable-data-types.md#numeric-value)||The number of characters to retrieve|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Subtext|[Text value](../variable-data-types.md#text-value)|The retrieved subtext|
@@ -153,7 +157,7 @@ Retrieve a subtext from a text value
 ### <a name="croptextaction"></a> Crop text
 Retrieves a text value that occurs before, after or between the specified text flag(s) in a given text
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Original text|No|[Text value](../variable-data-types.md#text-value)||The text to retrieve a section of text from|
@@ -162,7 +166,7 @@ Retrieves a text value that occurs before, after or between the specified text f
 |End flag|No|[Text value](../variable-data-types.md#text-value)||The retrieved text will be before this flag. The flag can be any character or text|
 |Ignore case|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to find the flags using case-sensitive or case-insensitive matching|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |CroppedText|[Text value](../variable-data-types.md#text-value)|The new cropped text|
@@ -170,12 +174,12 @@ Retrieves a text value that occurs before, after or between the specified text f
 
 
 ##### <a name="croptextaction_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 ### <a name="pad"></a> Pad text
 Creates a fixed length text by adding characters to the left or to the right of an existing text
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to pad|Yes|[Text value](../variable-data-types.md#text-value)||The text to lengthen|
@@ -184,78 +188,78 @@ Creates a fixed length text by adding characters to the left or to the right of 
 |Total length|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|The total character length of the final padded text. This means that the text for padding will be repeatedly added until the final text is of the specified length|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |PaddedText|[Text value](../variable-data-types.md#text-value)|The new, padded text|
 
 
 ##### <a name="pad_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="trim"></a> Trim text
 Removes all occurrences of white space characters (such as space, tab, or new line) from the beginning and/or end of an existing text
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to trim|Yes|[Text value](../variable-data-types.md#text-value)||Text to trim|
 |What to trim|N/A|whitespace characters from the beginning, whitespace characters from the end, whitespace characters from the beginning and end|whitespace characters from the beginning and end|Specify where white space characters will be removed from|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |TrimmedText|[Text value](../variable-data-types.md#text-value)|The new trimmed text|
 
 
 ##### <a name="trim_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 ### <a name="reverse"></a> Reverse text
 Reverses the order of letters in a text string
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to reverse|No|[Text value](../variable-data-types.md#text-value)||The text to reverse|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ReversedText|[Text value](../variable-data-types.md#text-value)|The new reversed text|
 
 
 ##### <a name="reverse_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
  
 ### <a name="changecase"></a> Change text case
 Changes the casing of a text to uppercase, lowercase, title case or sentence case
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to convert|Yes|[Text value](../variable-data-types.md#text-value)||The text to convert|
 |Convert to|N/A|Upper case, Lower case, Title case, Sentence case|Upper case|Specify the text case style to use|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |TextWithNewCase|[Text value](../variable-data-types.md#text-value)|The new converted text|
 
 
 ##### <a name="changecase_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="tonumber"></a> Convert text to number
 Converts a text representation of a number to a variable that contains a numeric value
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to convert|No|[Text value](../variable-data-types.md#text-value)||A text variable containing only a number, to convert to a numeric value variable. Spaces are ignored, but non-number text throws an exception|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |TextAsNumber|[Numeric value](../variable-data-types.md#numeric-value)|The new numeric value|
@@ -269,7 +273,7 @@ Converts a text representation of a number to a variable that contains a numeric
 ### <a name="fromnumber"></a> Convert number to text
 Converts a number to text using a specified format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Number to convert|No|[Numeric value](../variable-data-types.md#numeric-value)||A numeric value to convert to text|
@@ -277,18 +281,18 @@ Converts a number to text using a specified format
 |Use thousands separator|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether or not to use punctuation as a 1000 separator|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |FormattedNumber|[Text value](../variable-data-types.md#text-value)|The formatted number as text|
 
 
 ##### <a name="fromnumber_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="converttexttodatetime"></a> Convert text to datetime
 Converts a text representation of a date and/or time value to a datetime value
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to convert|No|[Text value](../variable-data-types.md#text-value)||The text to convert to a datetime value. This text must be in a recognizably datetime value format|
@@ -296,7 +300,7 @@ Converts a text representation of a date and/or time value to a datetime value
 |Custom format|No|[Text value](../variable-data-types.md#text-value)||The format in which the date is stored in the text. A custom format can be expressed as, for example, yyyyMMdd for date and hhmmss for time|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |TextAsDateTime|[Datetime](../variable-data-types.md#dates-and-time)|The datetime value|
@@ -310,7 +314,7 @@ Converts a text representation of a date and/or time value to a datetime value
 ### <a name="convertdatetimetotext"></a> Convert datetime to text
 Converts a datetime value to text using a specified custom format
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Datetime to convert|No|[Datetime](../variable-data-types.md#dates-and-time)||The datetime value to convert to text|
@@ -319,18 +323,18 @@ Converts a datetime value to text using a specified custom format
 |Standard format|N/A|Short date, Long date, Short time, Long time, Full datetime (short time), Full datetime (long time), General datetime (short time), General datetime (long time), Sortable datetime|Short date|The standard datetime format the action uses to display the datetime value|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |FormattedDateTime|[Text value](../variable-data-types.md#text-value)|The formatted datetime as a text value|
 
 
 ##### <a name="convertdatetimetotext_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="random"></a> Create random text
 Generates a text of specified length consisting of random characters. This can be useful for generating passwords
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Use uppercase letters (A-Z)|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether uppercase characters will be included in the generated text|
@@ -341,18 +345,18 @@ Generates a text of specified length consisting of random characters. This can b
 |Maximum length|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum length of the random text. For a certain length of text, set the minimum and maximum values to that number|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RandomText|[Text value](../variable-data-types.md#text-value)|The generated random text|
 
 
 ##### <a name="random_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="jointext"></a> Join text
 Converts a list into a text value by separating its items with a specified delimiter
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Specify the list to join|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The list to convert to text|
@@ -362,18 +366,18 @@ Converts a list into a text value by separating its items with a specified delim
 |Times|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|Specify how many times to use the specified delimiter|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JoinedText|[Text value](../variable-data-types.md#text-value)|The new delimited text|
 
 
 ##### <a name="jointext_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="splittext"></a> Split text
 Creates a list containing the substrings of a text that are separated by a specified delimiter or a regular expression
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |The text to split|No|[Text value](../variable-data-types.md#text-value)||The text to split|
@@ -386,7 +390,7 @@ Creates a list containing the substrings of a text that are separated by a speci
 > [!NOTE]
 > Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |TextList|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The new list|
@@ -400,7 +404,7 @@ Creates a list containing the substrings of a text that are separated by a speci
 ### <a name="parsetext"></a> Parse text
 Parses a text to find the first or all occurrences of a specified subtext or a regular expression pattern
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to Parse|No|[Text value](../variable-data-types.md#text-value)||The text to parse|
@@ -413,7 +417,7 @@ Parses a text to find the first or all occurrences of a specified subtext or a r
 > [!NOTE]
 > Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Position|[Numeric value](../variable-data-types.md#numeric-value)|The position of the 'Text to find' into the 'Text to parse'. If the text isn't found within the original text, this variable will hold the value -1|
@@ -430,7 +434,7 @@ Parses a text to find the first or all occurrences of a specified subtext or a r
 ### <a name="replace"></a> Replace text
 Replaces all occurrences of a specified subtext with another text. It can also be used with regular expressions
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to parse|No|[Text value](../variable-data-types.md#text-value)||The text to parse|
@@ -443,48 +447,48 @@ Replaces all occurrences of a specified subtext with another text. It can also b
 > [!NOTE]
 > Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Replaced|[Text value](../variable-data-types.md#text-value)|The new updated text|
 
 
 ##### <a name="replace_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="escapeforregularexpression"></a> Escape text for regular expression
 Escapes a minimal set of characters (\, *, +, ?, |, {, [, (,), ^, $,., #, and white space) by replacing them with their escape codes
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to escape|No|[Text value](../variable-data-types.md#text-value)||The text to escape|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |EscapedText|[Text value](../variable-data-types.md#text-value)|The escaped text|
 
 
 ##### <a name="escapeforregularexpression_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 ### <a name="recognizeentitiesintext"></a> Recognize entities in text
 Recognizes entities in text, such as numbers, units, data/time and others expressed in natural language across multiple languages
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to recognize from|No|[Text value](../variable-data-types.md#text-value)||The text to recognize entities from|
-|Entity type|N/A|Date time, Dimension, Temperature, Currency, Number range, Number, Ordinal, Percentage, Phone number, Email, IP address, Mention, Hashtag, URL, GUID, Quoted text|Date time|The type of entity to recognize (e.g., Date time, Email, URL etc.)|
+|Entity type|N/A|Date time, Dimension, Temperature, Currency, Number range, Number, Ordinal, Percentage, Phone number, Email, IP address, Mention, Hashtag, URL, GUID, Quoted text|Date time|The type of entity to recognize (, Date time, Email, URL etc.)|
 |Language|N/A|English, Chinese (Simplified), Spanish, Spanish (Mexico), Portuguese, French, German, Italian, Japanese, Dutch, Korean, Swedish, Turkish, Hindi|English|Specify the language of the text|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RecognizedEntities|[Datatable](../variable-data-types.md#datatable)|The recognized entities|
 
 ##### <a name="recognizeentitiesintext_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

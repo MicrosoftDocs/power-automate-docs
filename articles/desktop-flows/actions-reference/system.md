@@ -1,13 +1,17 @@
 ---
-title: System | Microsoft Docs
+title: System
 description: System Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -48,15 +52,15 @@ If you want to handle Windows environment variables, use the **Set Windows envir
 ### <a name="ifprocessaction"></a> If process
 Marks the beginning of a conditional block of actions depending on whether a process is running or not
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If process|N/A|Is running, Isn't running|Is running|State of the process to check|
 |Process name|No|[Text value](../variable-data-types.md#text-value)||The name of the process to check|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="ifprocessaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -66,15 +70,15 @@ Marks the beginning of a conditional block of actions depending on whether a pro
 ### <a name="waitprocessaction"></a> Wait for process
 Suspends the execution until a process starts or stops
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Process name|No|[Text value](../variable-data-types.md#text-value)||The name of the process to check|
 |Wait for process to|N/A|Start, Stop|Start|Whether to wait until a certain process starts or stops|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="waitprocessaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -88,7 +92,7 @@ Executes an application or opens a document by executing the associated applicat
 > [!IMPORTANT]
 > Many applications with advanced functionality require elevated rights to prevent unauthorized access to system resources. To launch these applications using the **Run application** action, run Power Automate with administrator rights. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Application path|No|[File](../variable-data-types.md#files-and-folders)||The executable file as a complete file path|
@@ -99,7 +103,7 @@ Executes an application or opens a document by executing the associated applicat
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The maximum wait time, and how long before forcing a continue|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |AppProcessId|[Numeric value](../variable-data-types.md#numeric-value)|The process ID output|
@@ -127,7 +131,7 @@ Executes an application or opens a document by executing the associated applicat
 ### <a name="terminateprocess"></a> Terminate process
 Immediately stops a running process
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Specify process by|N/A|Process ID, Process name|Process name|Specify whether the process to terminate will be specified by its name, or by its ID|
@@ -135,8 +139,8 @@ Immediately stops a running process
 |Process name|No|[Text value](../variable-data-types.md#text-value)||The name of the process to terminate. If more than one processes with the same name are running, all of them will be terminated|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="terminateprocess_onerror"></a> Exceptions
 |Exception|Description|
@@ -147,14 +151,14 @@ Immediately stops a running process
 ### <a name="ping"></a> Ping
 Sends a message to determine whether a remote computer is accessible over the network
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Host name|No|[Text value](../variable-data-types.md#text-value)||The name of the remote computer or an IP address|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|5000|The maximum number of milliseconds to wait for the Ping reply message|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |PingResult|[Text value](../variable-data-types.md#text-value)|The status of the ping message (success or failure)|
@@ -169,7 +173,7 @@ Sends a message to determine whether a remote computer is accessible over the ne
 ### <a name="setenvironmentvariable"></a> Set Windows environment variable
 Sets an environment variable to a given value
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Environment variable name|No|[Text value](../variable-data-types.md#text-value)||The name of the environment variable|
@@ -177,8 +181,8 @@ Sets an environment variable to a given value
 |Type|N/A|User, System|User|The type of the environment variable|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setenvironmentvariable_onerror"></a> Exceptions
 |Exception|Description|
@@ -189,7 +193,7 @@ Sets an environment variable to a given value
 ### <a name="getenvironmentvariable"></a> Get Windows environment variable
 Retrieves the value of an environment variable
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Environment variable name|No|[Text value](../variable-data-types.md#text-value)||The name of the environment variable whose value will be retrieved|
@@ -197,7 +201,7 @@ Retrieves the value of an environment variable
 |Scope|N/A|User, System|User|The scope from which the environment variable should be retrieved|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |EnvironmentVariableValue|[Text value](../variable-data-types.md#text-value)|The environment variable's value|
@@ -212,15 +216,15 @@ Retrieves the value of an environment variable
 ### <a name="deleteenvironmentvariable"></a> Delete Windows environment variable
 Deletes an environment variable from a given scope
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Environment variable name|No|[Text value](../variable-data-types.md#text-value)||The name of the environment variable to delete|
 |Type|N/A|User, System|User|The type of the environment variable to delete|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="deleteenvironmentvariable_onerror"></a> Exceptions
 |Exception|Description|

@@ -1,13 +1,17 @@
 ---
-title: Variable manipulation and the % notation | Microsoft Docs
+title: Variable manipulation and the % notation
 description: Variable manipulation and the % notation
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

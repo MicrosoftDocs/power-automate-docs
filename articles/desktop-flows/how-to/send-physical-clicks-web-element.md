@@ -1,13 +1,17 @@
 ---
-title: Send physical clicks on a web element | Microsoft Docs
+title: Send physical clicks on a web element
 description: Send physical clicks on a web element
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 06/23/2021
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

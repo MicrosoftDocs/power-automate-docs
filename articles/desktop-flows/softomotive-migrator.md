@@ -1,13 +1,17 @@
 ---
-title: Process migrator for Softomotive products (preview) | Microsoft Docs
+title: Process migrator for Softomotive products (preview)
 description: Process migrator for Softomotive products (preview)
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/16/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

@@ -1,13 +1,17 @@
 ---
-title: Convert Excel to PDF using VBScript | Microsoft Docs
+title: Convert Excel to PDF using VBScript
 description: Convert Excel to PDF using VBScript
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/13/2021
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

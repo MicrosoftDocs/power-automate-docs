@@ -1,13 +1,17 @@
 ---
-title: FTP | Microsoft Docs
+title: FTP
 description: FTP Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -57,7 +61,7 @@ Upload files by using the **Upload file(s) to FTP** action by specifying the fil
 ### <a name="openconnection"></a> Open FTP connection
 This action establishes a specific connection to a remote FTP server, and stores that connection as a variable for later use.
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Host|No|[Text value](../variable-data-types.md#text-value)||Enter the FTP server address here.|
@@ -68,7 +72,7 @@ This action establishes a specific connection to a remote FTP server, and stores
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Set the time in seconds that you want to wait for the connection to be established before the action fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |FTPConnection|[FTP connection](../variable-data-types.md#connections)|The FTP connection|
@@ -83,14 +87,14 @@ This action establishes a specific connection to a remote FTP server, and stores
 ### <a name="listdirectory"></a> List FTP directory
 This action returns the subdirectories and files contained in the current directory of an FTP connection
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection|
 |Path|Yes|[Text value](../variable-data-types.md#text-value)||The path that you want to list.|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |Directories|[List](../variable-data-types.md#list) of [FTP directories](../variable-data-types.md#ftp)|The listed directories|
@@ -107,7 +111,7 @@ This action returns the subdirectories and files contained in the current direct
 ### <a name="opensecureconnection"></a> Open secure FTP connection
 This action establishes a specific secure connection to a remote FTP server, and stores that connection as a variable for later use
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Host|No|[Text value](../variable-data-types.md#text-value)||Enter the FTP server address here.|
@@ -122,7 +126,7 @@ This action establishes a specific secure connection to a remote FTP server, and
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Set the time in seconds that you want to wait for the connection to be established before the action fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |SftpConnection|[FTP connection](../variable-data-types.md#connections)|SFTP connection|
@@ -137,14 +141,14 @@ This action establishes a specific secure connection to a remote FTP server, and
 ### <a name="closeconnection"></a> Close connection
 This action closes an open FTP connection
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="closeconnection_onerror"></a> Exceptions
 |Exception|Description|
@@ -154,15 +158,15 @@ This action closes an open FTP connection
 ### <a name="changeworkingdirectory"></a> Change working directory
 This action sets the current working directory for an FTP connection
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection|
 |Set working directory to|No|[Text value](../variable-data-types.md#text-value)||Set the path to be set as the working directory|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="changeworkingdirectory_onerror"></a> Exceptions
 |Exception|Description|
@@ -174,7 +178,7 @@ This action sets the current working directory for an FTP connection
 ### <a name="downloadfiles"></a> Download file(s) from FTP
 Downloads one or more files from an FTP server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
@@ -184,8 +188,8 @@ Downloads one or more files from an FTP server
 |If file exists|N/A|Overwrite, Do not download, Download with unique name|Overwrite|Specify what to do if the file already exists. Overwrite writes over the original file so you can't access it any more, and download with unique name adds an underscore and a sequential number to the end|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="downloadfiles_onerror"></a> Exceptions
 |Exception|Description|
@@ -199,7 +203,7 @@ Downloads one or more files from an FTP server
 ### <a name="downloadfolders"></a> Download folder(s) from FTP
 Downloads one or more folders from an FTP server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
@@ -207,8 +211,8 @@ Downloads one or more folders from an FTP server
 |Download into local folder|No|[Folder](../variable-data-types.md#files-and-folders)||The full path of the destination of the FTP folder(s) you are downloading|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="downloadfolders_onerror"></a> Exceptions
 |Exception|Description|
@@ -222,7 +226,7 @@ Downloads one or more folders from an FTP server
 ### <a name="uploadfiles"></a> Upload File(s) to FTP
 Uploads one or more files to an FTP server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
@@ -232,8 +236,8 @@ Uploads one or more files to an FTP server
 |If file exists|N/A|Overwrite, Do not download, Download with unique name|Overwrite|Specify what to do if the file already exists. Overwrite writes over the original file so you can't access it any more, and Download with Unique Name adds an underscore and a sequential number to the end|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="uploadfiles_onerror"></a> Exceptions
 |Exception|Description|
@@ -246,7 +250,7 @@ Uploads one or more files to an FTP server
 ### <a name="uploadfolders"></a> Upload folder(s) to FTP
 Uploads one or more folders to an FTP server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
@@ -254,8 +258,8 @@ Uploads one or more folders to an FTP server
 |Remote location|No|[Text value](../variable-data-types.md#text-value)||The location where the folders should be uploaded|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="uploadfolders_onerror"></a> Exceptions
 |Exception|Description|
@@ -268,15 +272,15 @@ Uploads one or more folders to an FTP server
 ### <a name="deletefiles"></a> Delete FTP file
 Deletes one or more files from an FTP server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
 |Files to delete|No|[List](../variable-data-types.md#list) of [FTP files](../variable-data-types.md#ftp)||The files to delete|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="deletefiles_onerror"></a> Exceptions
 |Exception|Description|
@@ -288,7 +292,7 @@ Deletes one or more files from an FTP server
 ### <a name="renamefile"></a> Rename FTP File
 Renames a file that resides on an FTP server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
@@ -296,8 +300,8 @@ Renames a file that resides on an FTP server
 |New file name|No|[Text value](../variable-data-types.md#text-value)||The new name for the file. If you enter a name with a path, the file will also be moved to that location. If the location doesn't exist, it will throw an exception|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="renamefile_onerror"></a> Exceptions
 |Exception|Description|
@@ -309,15 +313,15 @@ Renames a file that resides on an FTP server
 ### <a name="createdirectory"></a> Create FTP directory
 Creates a directory on an FTP server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
 |New directory|No|[FTP directory](../variable-data-types.md#ftp)||The new directory. If a path is specified, all of the new folders leading to the new directory will be created|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="createdirectory_onerror"></a> Exceptions
 |Exception|Description|
@@ -331,15 +335,15 @@ Creates a directory on an FTP server
 ### <a name="deletedirectory"></a> Delete FTP directory
 Deletes a directory from an FTP server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
 |Directory to delete|No|[FTP directory](../variable-data-types.md#ftp)||The folder to be deleted. Everything in the folder will be deleted as well|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="deletedirectory_onerror"></a> Exceptions
 |Exception|Description|
@@ -352,7 +356,7 @@ Deletes a directory from an FTP server
 ### <a name="invokecommand"></a> Invoke FTP command
 Invokes the given literal FTP command on the server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an open FTP connection action|
@@ -360,7 +364,7 @@ Invokes the given literal FTP command on the server
 |Valid reply code(s)|Yes|[Text value](../variable-data-types.md#text-value)||The code(s) that could be returned by the command, separated by semi-colon. If the FTP command returns a code that wasn't entered here, this action will throw an exception. Only applies over simple FTP or FTPS connections|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ReplyCode|[Text value](../variable-data-types.md#text-value)|The actual code that was returned. Only applies over simple FTP or FTPS connections|
@@ -376,7 +380,7 @@ Invokes the given literal FTP command on the server
 ### <a name="synchronizedirectoryaction"></a> Synchronize directories
 Synchronize the files and subdirectories of a given Folder with a given remote FTP directory
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |FTP connection|No|[FTP connection](../variable-data-types.md#connections)||The FTP connection to work with. This variable must have been previously specified in an Open FTP connection action|
@@ -392,7 +396,7 @@ Synchronize the files and subdirectories of a given Folder with a given remote F
 |Time difference ahead|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether the server's time zone is ahead or not.|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |FtpFilesAdded|[List](../variable-data-types.md#list) of [FTP files](../variable-data-types.md#ftp)|List of FTP files that initially existed in the source and after the syncronzation process were added to the target.|

@@ -1,13 +1,17 @@
 ---
-title: Retrieve details from a web page | Microsoft Docs
+title: Retrieve details from a web page
 description: Retrieve details from a web page 
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 01/11/2022
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -38,7 +42,7 @@ The retrieved information is stored for later use in a text variable named **Web
 
 Although most properties exist virtually on every web page, there are scenarios in which the **Get details of web page** action fails to retrieve the selected detail. For example, web pages without meta keywords are a common occurrence.
 
-If you're unsure if an attribute exists on a web page, configure the **On error** options of the **Get details of web page** action to continue running the flow after failure. To find more information about action error handling, refer to [Configuring action errors](../actions-pane.md#configuring-action-errors).
+If you're unsure if an attribute exists on a web page, configure the **On error** options of the **Get details of web page** action to continue running the flow after failure. To find more information about action error handling, refer to [Handle errors in desktop flows](../errors.md).
 
 ![Screenshot of the on error options of the the Get details of web page action.](media/retrieve-details-web-page/get-details-web-page-action-on-error.png)
 

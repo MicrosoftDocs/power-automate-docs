@@ -38,7 +38,7 @@ To learn more about protecting your data, see [Data loss prevention policies](/p
 ## Data loss prevention (DLP) for desktop flows (preview)
 
 >[!IMPORTANT]
->Data loss prevention for desktop flows is a preview feature at no cost. When this feature becomes generally available in 2022, it will be available for environments with premium accounts only.
+>Data loss prevention for desktop flows is a preview feature at no cost. When this feature becomes generally available (first semester of 2023), it will be available for [managed environments](/power-platform/admin/managed-environment-overview) only.
 
 Power Automate provides the ability to create and enforce DLP policies that classify desktop flows modules (or individual module actions) as **business**, **non-business**, or **blocked** categories. This categorization prevents makers from combining modules and actions from different categories into a desktop flow, or between a cloud flow and the desktop flows it uses.
 
@@ -184,9 +184,10 @@ When changes can impact existing flows, the following staged DLP enforcement cha
 
 1. Investigating - Confirm the need for a DLP enforcement change and investigate the specifics of the change.
 1. Learning - Implement the change and gather data about the breadth of the effects of the change. DLP enforcement changes are documented to explain the scope of the change. If the data suggests that customers will be greatly affected, then communication may be sent to those customers letting them know that a change is coming. If the change has a broad impact on existing flows, then at a later stage in the learning phase when the background DLP enforcement job finds a violation in an existing flow, Power Automate notifies the flow owners that the flow will be suspended, so that they have additional time to respond. 
-1. Soft enforcement - Turn on soft enforcement of DLP violations so owners of existing flows get notified about the change.
+1. Notify only - Turn on email notifications only for DLP violations so owners of existing flows get notified about the upcoming DLP enforcement change. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended in the future. This mechanism runs weekly.
+1. Soft enforcement - Turn on soft enforcement of DLP violations so owners of existing flows get notified about the upcoming DLP enforcement change, but any flows that are changed get a full DLP policy evaluation at design time.
     1. Design time - When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed so the maker is immediately aware of the enforcement. 
-    1. Background process - When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended. This enforcement mechanism runs weekly to ensure that policies are enforced.
+    1. Background process - When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended in the future. This mechanism runs weekly.
 1. Hard enforcement - Turn on hard enforcement of DLP violations, so DLP policies are fully enforced on all existing and new flows. The DLP policies will be fully enforced when flows are saved during DLP enforcement background job evaluation.
 
 ## DLP enforcement change list
@@ -196,7 +197,7 @@ Following is a list of DLP enforcement changes and the date the changes were eff
 |-|-|-|-|-|-| 
 |May 2022 | Delegated authorization background job enforcement | DLP policies enforced are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Hard |June 2, 2022|July 21, 2022|
 |May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have type=Request and kind=apiConnection. Many of the affected triggers are instant triggers, which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Hard |June 2, 2022|August 25, 2022|
-|July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with hard enforcement of DLP policies on child flows. | Learning |November 3, 2022|December 2022|
+|July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with hard enforcement of DLP policies on child flows. | Notify |November 3, 2022|December 2022|
 
 *ETA is subject to change and depends on the release schedule. ETA is for the start of the release to production. Release to preview station 1 is approximately five days later. Release to NAM/US station 5 is approximately three weeks later.
 
