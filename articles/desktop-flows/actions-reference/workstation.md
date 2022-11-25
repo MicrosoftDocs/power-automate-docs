@@ -97,56 +97,6 @@ This action doesn't produce any variables.
 |-----|-----|
 |Can't set default printer|Indicates a problem setting the default printer|
 
-## <a name="logoffuser"></a> Log off user
-
-Logs off the current user.
-
->[!NOTE]
-> When you run the **Log off user** action through the flow designer, the action prompts you to verify that you want to log off the current user. However, the action doesn't require confirmation when the flow runs through the console or cloud flows. In all cases, the action will terminate the flow.
-
-### Input parameters
-
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|Force log off|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to force the user account to log off, regardless of unsaved files or programs that won't close|
-
-### Variables produced
-
-This action doesn't produce any variables.
-
-### <a name="logoffuser_onerror"></a> Exceptions
-
-|Exception|Description|
-|-----|-----|
-|Can't log off user in non interactive mode|Indicates a problem logging off the user in non-interactive mode|
-|Can't log off the current user|Indicates a problem logging off the current user|
-
-## <a name="shutdowncomputer"></a> Shutdown computer
-
-Instructs the computer to shut down.
-
-> [!IMPORTANT]
->
-> - Although a desktop flow containing the **Shutdown computer** action is set to shut down the machine, some unrelated factors, such as other running Windows processes, may prevent it from achieving it.
-> - When you run the **Shutdown computer** action through the flow designer, the action prompts you to verify that you want to shut down the computer. However, the action doesn't require confirmation when the flow is run through the console or cloud flows. In all cases, the action will terminate the flow.
-
-### Input parameters
-
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|Action to perform|N/A|Shutdown, Restart, Suspend, Hibernate|Shutdown|Specify which shutdown option the computer will perform|
-|Force|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to force the computer to shut down, regardless of unsaved files or programs that won't close|
-
-### Variables produced
-
-This action doesn't produce any variables.
-
-### <a name="shutdowncomputer_onerror"></a> Exceptions
-
-|Exception|Description|
-|-----|-----|
-|Can't shut down the computer|Indicates a problem shutting down the computer|
-
 ## <a name="showdesktop"></a> Show desktop
 
 Shows the desktop.
@@ -319,5 +269,55 @@ This action doesn't produce any variables.
 |Exception|Description|
 |-----|-----|
 |Failed to set the screen's resolution|Indicates a problem setting the screen's resolution|
+
+## <a name="logoffuser"></a> Log off user
+
+Logs off the current user.
+
+>[!NOTE]
+> When you run the **Log off user** action through the flow designer, the action prompts you to verify that you want to log off the current user. However, the action doesn't require confirmation when the flow runs through the console or cloud flows. In all cases, the action will terminate the flow.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Force log off|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to force the user account to log off, regardless of unsaved files or programs that won't close|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="logoffuser_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Can't log off user in non interactive mode|Indicates a problem logging off the user in non-interactive mode|
+|Can't log off the current user|Indicates a problem logging off the current user|
+
+## <a name="shutdowncomputer"></a> Shutdown computer
+
+Instructs the computer to shut down.
+
+> [!IMPORTANT]
+>
+> - Although a desktop flow containing the **Shutdown computer** action is set to shut down the machine, some unrelated factors, such as other running Windows processes, may prevent it from achieving it.
+> - When you run the **Shutdown computer** action through the flow designer, the action prompts you to verify that you want to shut down the computer. However, the action doesn't require confirmation when the flow is run through the console or cloud flows. In all cases, the action will terminate the flow.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Action to perform|N/A|Shutdown, Restart, Suspend, Hibernate|Shutdown|Specify which shutdown option the computer will perform|
+|Force|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to force the computer to shut down, regardless of unsaved files or programs that won't close|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="shutdowncomputer_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Can't shut down the computer|Indicates a problem shutting down the computer|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
