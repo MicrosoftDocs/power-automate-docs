@@ -569,7 +569,7 @@
       href: ./desktop-flows/actions-reference/database.md
     - name: Email
       href: ./desktop-flows/actions-reference/email.md
-    - name: Exchange
+    - name: Exchange Server
       href: ./desktop-flows/actions-reference/exchange.md
     - name: Outlook
       href: ./desktop-flows/actions-reference/outlook.md
