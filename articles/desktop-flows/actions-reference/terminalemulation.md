@@ -47,7 +47,7 @@ After opening a terminal session and completing all the wanted operations, termi
 
 :::image type="content" source="media/terminalemulation/close-terminal-session-action.png" alt-text="Screenshot of the Close terminal session action.":::
 
-### <a name="openterminalsession"></a> Open terminal session
+## <a name="openterminalsession"></a> Open terminal session
 
 Open a new terminal session.
 
