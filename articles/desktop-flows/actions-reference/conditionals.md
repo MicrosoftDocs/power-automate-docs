@@ -114,7 +114,7 @@ Marks the beginning of a block of actions that is run if the condition specified
 |First operand|No|*||Enter a value name defined by a previous action, text, number or expression to compare with the second operand.|
 |Second operand|No|*||Enter a value name produced by a previous action, text, number or expression to compare with the first operand.|
 
-## Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
