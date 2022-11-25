@@ -1,6 +1,6 @@
 ---
-title: Exchange actions reference
-description: See all the available Exchange actions.
+title: Exchange Server actions reference
+description: See all the available Exchange Server actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -19,14 +19,14 @@ search.audienceType:
   - enduser
 ---
 
-# Exchange actions
+# Exchange Server actions
 
 > [!WARNING]
 > This group of actions is intended for Exchange Server automation scenarios. To automate Exchange Online, use the corresponding Office 365 cloud connectors in cloud flows.
 
-The Exchange actions enable you to connect to an Exchange server and manage your correspondence.
+The Exchange Server actions enable you to connect to an Exchange server and manage your correspondence.
 
-Exchange actions require a connection to an Exchange server that you can establish using the **Connect to Exchange server** action.
+Exchange Server actions require a connection to an Exchange server that you can establish using the **Connect to Exchange server** action.
 
 The following example contains a manually populated server address rather than using auto-discovery. The credentials are set to **user defined**, so the domain, username, and password are manually entered. A set timeout in the **Advanced** section allows the action to return an error if a connection hasn't been established within the specified time frame.
 
