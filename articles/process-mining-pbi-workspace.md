@@ -23,9 +23,9 @@ search.audienceType:
 
 You can use your own custom Power BI workspace and leverage a higher capacity to analyze processes with a lot more data. You'll also be able to customize the look and feel of the report.
 
-## Setup your workspace
+## Set up your workspace
 
-You'll need to setup your Power BI workspace to connect it to process advisor and then customize it. The following sections in this article walk you through how to set up your workspace.
+You'll need to set up your Power BI workspace to connect it to process advisor and then customize it. The following sections in this article walk you through how to set up your workspace.
 
 ### Connect your Power BI workspace to process advisor
 
@@ -128,7 +128,7 @@ With Process advisor’s powerful integration with Power BI, you can customize y
 
 - [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi)
 
-After completing the these steps, return to the analytics page of your process in process advisor.
+After completing these steps, return to the analytics page of your process in process advisor.
 
 1. To refresh and reanalyze the process, select **Refresh**.
 

@@ -75,7 +75,7 @@ Process mining will normally not be helpful when there's only one activity name 
 
 ### "Following column(s) do not have the right data types: [x]. Please check your data and try again."
 
-The *case ID* and *activity name* columns should be of the **Text** data type. The *timestamp* columns should be of the **Date/Time** data type. One of the most frequent causes of invalid format is in the *timestamp* column. To fix the format, return to setup and select the icon next to the *timestamp* column and ensure it's been mapped to **Date/Time**.
+The *case ID* and *activity name* columns should be of the **Text** data type. The *timestamp* columns should be of the **Date/Time** data type. One of the most frequent causes of invalid format is in the *timestamp* column. To fix the format, return to setup and select the icon next to the *timestamp* column, and ensure it's been mapped to **Date/Time**.
 
 :::image type="content" source="media/process-mining-troubleshoot/timestamp.png" alt-text="Screenshot of the Date/Time data type for StartTimestamp.":::
 
