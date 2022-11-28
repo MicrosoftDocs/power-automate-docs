@@ -405,5 +405,5 @@ The Hosted RPA bots (preview) feature is enabled by default. System admins and e
 <img width="235" alt="image" src="https://user-images.githubusercontent.com/114413317/204349248-8538fa8b-8cbd-4647-a986-cee1cb4e1b4c.png">
 
 > [!Note]
-> When the hosted RPA bots toggle is disabled, any existing Hosted RPA bots group will no longer appear in the Power Automate portal, and any Desktop Flows associated with theo Hosted RPA bots group will no longer run.
+> When the hosted RPA bots toggle is disabled, any existing Hosted RPA bots group will no longer appear in the Power Automate portal, and any Desktop Flows associated with the Hosted RPA bots group will no longer run.
 
