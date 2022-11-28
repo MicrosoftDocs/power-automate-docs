@@ -104,7 +104,7 @@ Now that you've connected your Power BI workspace to process advisor and install
 
     >[!IMPORTANT]
     >
-    >Make sure to assign admin access for your service principals. If you skip this step, your workspace will experience unwanted results.
+    >It's required that the service principal gets added as an admin. If you skip this step, the feature won't work.
 
 ## Load your process analytics in Power BI
 
