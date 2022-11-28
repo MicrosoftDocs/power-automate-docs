@@ -39,7 +39,7 @@ When running desktop flows in unattended mode, keep in mind that:
 
 ## Reuse a Windows session in unattended mode
 
-Desktop flows can run on a Windows session as long as it exists and isn't unlocked for unattended runs.
+Desktop flows can run on a Windows session as long as it exists and is unlocked for unattended runs.
 
 Power Automate creates a new session for each unattended run on the machine using the credentials provided in the connection. The flow runs on this session, and then Power Automate signs it off.
 
@@ -57,8 +57,8 @@ To allow reusing Windows session:
 
 1. Enable **Reuse sessions for unattended runs**
 
->[!NOTE]
->When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
+> [!NOTE]
+> When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
 
 ## Known issues and limitations
 
