@@ -389,3 +389,21 @@ During the public preview, we delete unused resources to ensure the service is a
 
 > [!Note]
 > You must delete the group and create a new one to continue using the hosted RPA bots feature. You'll need to reconfigure the connection that's associated with your cloud flow too.
+
+
+## Disabling/Enabling Hosted RPA bots (preview) feature in environment
+
+The Hosted RPA bots (preview) feature is enabled by default. System admins and environment admins can disable or enable the feature from the Power Platform admin center.
+
+1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
+2. Navigate to  **Environments** > and select the environment.
+3. Select **Settings** > **Features**
+4. Under Hosted RPA (preview), select the toggle for **Enable creation of hosted RPA bots** to disable or enable this feature
+5. Select **Save**.
+
+
+<img width="235" alt="image" src="https://user-images.githubusercontent.com/114413317/204349248-8538fa8b-8cbd-4647-a986-cee1cb4e1b4c.png">
+
+> [!Note]
+> When the hosted RPA bots toggle is disabled, any existing Hosted RPA bots group will no longer appear in the Power Automate portal, and any Desktop Flows associated with theo Hosted RPA bots group will no longer run.
+
