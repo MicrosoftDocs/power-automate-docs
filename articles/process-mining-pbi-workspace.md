@@ -144,7 +144,7 @@ After completing these steps, return to the analytics page of your process in pr
 
 1. To begin customizing your report, select **Edit** in the command bar. 
 
-1. Move the cards that hold the donuts (blue circles) for the **Paths**, **Cases**, and **Activities** metrics to the right by selecting and draggh card.
+1. Move the cards that hold the donuts (blue circles) for the **Paths**, **Cases**, and **Activities** metrics to the right by selecting and dragging each card.
 
     This will create space for a new card that we want to store a new metric in. Be sure to select off into an empty space before continuing.
 
