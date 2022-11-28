@@ -1,11 +1,15 @@
 ---
-title: Flows are now stored in Dataverse and use the rich Web API
-description: Flows are now stored in Dataverse and use the rich Web API.
-author: msftman
-ms.reviewer: deonhe
-ms.date: 11/30/2021
+title: Manage flows with the Power Automate Web API
+description: Learn how to use the Microsoft Dataverse Web API.
+author: ChrisGarty
+contributors:
+  - ChrisGarty
+  - v-aangie
+ms.reviewer: angieandrews
+ms.date: 11/28/2022
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
+ms.author: cgarty
 ms.prod: 
 
 ms.technology: 
@@ -15,34 +19,39 @@ audience: Power user
 
 # Power Automate Web API
 
-Going forward, all flows will be stored in Dataverse and leverage [the rich Web API](/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
+All flows are stored in Dataverse and leverage the rich [Web API](/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
-This content covers the management of flows included on the **Solutions** tab in Power Automate. Currently, flows under **My Flows** are not supported by these APIs.
+This article covers the management of flows included on the **Solutions** tab in Power Automate. Currently, flows under **My Flows** aren't supported by these APIs.
 
 ## Compose HTTP requests
 
 To get started creating requests, you'll need to first construct the URL. The format for the base URL of the Power Automate Web API is: `https://{Organization ID}.{Regional Subdomain}.dynamics.com/api/data/v9.1/`. The two parameters are:
 
-- The **Organization ID** is a unique name for the environment that stores your flows.
+- **Organization ID**: A unique name for the environment that stores your flows.
 
-- The **Regional Subdomain** depends on the location of your environment.
+- **Regional Subdomain**: Depends on the location of your environment.
 
-To get these two parameters.
+To get these two parameters:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
 1. Select the environment you use to build your flows.
 
- ![Environment for your flows.](media/web-api/power-platform-admin-center.png "Environment for your flows")
+    :::image type="content" alt-text="Screenshot of the environment for your flows." source="media/web-api/power-platform-admin-center.png":::
 
-1. Copy the organization id and region subdomain from the environment URL.
+1. Copy the organization id and regional subdomain from the **Environment URL** field.
 
- ![Organization id and region.](media/web-api/power-platform-admin-center-environment-URL.png "Organization id and region.")
+    :::image type="content" alt-text="Screenshot of the Organization id and region." source="media/web-api/power-platform-admin-center-environment-URL.png":::
 
-You can also programmatically get the list of instances that are available to you via the [Get Instances](/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the online management API.
+    You can also programmatically get the list of instances that are available to you using the [Get Instances](/rest/api/admin.services.crm.dynamics.com/instances/getinstances) method in the online management API.
 
-Each request to the Web API must have the `Accept` and `Content-type` headers set to `application/json`.
+    Each request to the Web API must have the **Accept** and **Content-type** headers set to `application/json`.
 
-Finally, populate the `Authorization` header with an Azure AD Bearer token. You can [learn](/powerapps/developer/common-data-service/authenticate-oauth) how to acquire an Azure AD Bearer token for Dataverse. For example, this request:
+1. Populate the **Authorization** header with an Azure AD Bearer token.
+
+    To learn how to get an Azure AD Bearer token for Dataverse, go to [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
+
+The following is an example of a request:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
@@ -77,7 +86,7 @@ The response contains the list of flows from within that environment:
 
 ## List flows
 
-As shown earlier, you can get the list of workflows by calling `GET` on `workflows`. Each workflow has many properties, but the most relevant are:
+As shown previously, you can get the list of workflows by calling `GET` on `workflows`. Each workflow has many properties, but the most relevant are listed in the following table.
 
 | Property name     | Description                                              |
 | ----------------- | -------------------------------------------------------- |
@@ -96,9 +105,9 @@ As shown earlier, you can get the list of workflows by calling `GET` on `workflo
 | description       | The user-provided description of the flow. |
 | clientdata        | A string-encoded JSON of the flow definition and its connectionReferences. |
 
-The [documentation for the Dataverse workflow](/powerapps/developer/data-platform/reference/entities/workflow) has additional information about properties/fields and their usage.
+To learn more about properties, fields, and their usage, go to [Process (Workflow) table/entity reference](/power-apps/developer/data-platform/reference/entities/workflow).
 
-You can also request specific properties, filter the list of flows, and much more, as described in the [Dataverse API documentation for querying data](/powerapps/developer/common-data-service/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
+You can also request specific properties, filter the list of flows, and more, as described in [Query data using the Web API](/powerapps/developer/common-data-service/webapi/query-data-web-api). For example, this query returns only the automated, instant, or scheduled flows that are currently on:
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
@@ -172,7 +181,7 @@ Content-type: application/json
 
 ### Delete a cloud flow
 
-Delete a cloud flow with a simple `DELETE` call:
+Delete a cloud flow with a  `DELETE` call:
 
 ```http
 DELETE https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
@@ -181,7 +190,7 @@ Authorization: Bearer ey...
 ```
 
 > [!NOTE]
-> You cannot delete a cloud flow that's turned on. You must first turn off the flow (see **Updating a cloud flow** previously) or else you will see the error: `Cannot delete an active workflow definition.`
+> You can't delete a cloud flow that's turned on. You must first turn off the flow or else you'll see this error: `Cannot delete an active workflow definition.` To learn more, go to [Update a cloud flow](#update-a-cloud-flow) in this article.
 
 ## Get all users with whom a cloud flow is shared
 
@@ -245,7 +254,7 @@ The `AccessMask` parameter is a field with the following values for different pe
 | ShareAccess  | The right to share the flow.                         |
 | AssignAccess | The right to change the owner of the flow.           |
 
-You can combine permissions with a comma; for example, provide the ability to both read and update a cloud flow by passing `ReadAccess,WriteAccess`.
+You can combine permissions with a comma. For example, you can provide the ability to both read and update a cloud flow by passing `ReadAccess,WriteAccess`.
 
 You can *unshare* a cloud flow with the `RevokeAccess` action. Here's an example:
 
@@ -302,7 +311,7 @@ Call the `ImportSolution` action to import a solution.
 
 | Property name                    | Description                               |
 | -------------------------------- | ----------------------------------------- |
-| OverwriteUnmanagedCustomizations | If there are existing instances of these flows in Dataverse, this flag needs to be set to `true` to import them. Otherwise they will not be overwritten. |
+| OverwriteUnmanagedCustomizations | If there are existing instances of these flows in Dataverse, this flag needs to be set to `true` to import them. Otherwise they won't be overwritten. |
 | PublishWorkflows                 | Indicates if classic Dataverse workflows will be activated on import. This setting doesn't apply to other types of flows. |
 | ImportJobId                      | Provides a new, unique GUID to track the import job. |
 | CustomizationFile                | A base 64-encoded zip file that contains the solution. |
@@ -330,9 +339,9 @@ Authorization: Bearer ey...
 
 This call returns the status of the import operation, including `progress` (the percentage of completion), `startedon`, and `completedon` (if import finished).
 
-Once import has completed successfully, you will need to set up the connections for the flow, since the `connectionNames` will likely be different in the destination environment (if the connections exist at all). If you are setting up new connections in the destination environment, then the owner of the flows must create them in the Power Automate designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
+Once import has completed successfully, you'll need to set up the connections for the flow. The reason is that the `connectionNames` likely will be different in the destination environment (if the connections exist at all). If you're setting up new connections in the destination environment, then the owner of the flows must create them in the Power Automate designer. If the connections are already set up in the new environment, then you can `PATCH` the `clientData` of the flow with the names of the connections.
 
-## See also
+### See also
 
 [Use the Microsoft Dataverse Web API with Power Apps](/power-apps/developer/data-platform/webapi/overview)
 
