@@ -1,15 +1,19 @@
 ---
-title: Setup the Power Automate Azure Virtual Desktop integration starter kit | Microsoft Docs
+title: Setup the Power Automate Azure Virtual Desktop integration starter kit
 description: Setup instructions
 services: ''
-author: mariosleon
+author: georgiostrantzas
 editor: ''
 tags: ''
-
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/28/2021
-ms.author: marleon
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -183,7 +187,7 @@ To update Environment Variables:
 
 ### Coauth and connections
 
-If you have multiple identities managing the CoE Toolkit you may see this error when trying to use the flows:
+If you have multiple identities managing the automation kit you may see this error when trying to use the flows:
 
 The caller with object id '...GUID...' does not have permission for connection. 
 

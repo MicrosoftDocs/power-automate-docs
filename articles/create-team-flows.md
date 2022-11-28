@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/05/2022
+ms.date: 09/28/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -158,12 +158,12 @@ Congratulations&mdash;the user or group now has access to run the flow.
 
 Congratulations&mdash;the user or group no longer has access to run this flow.
 
-## Share a copy of a cloud flow
+## Send a copy of a cloud flow
 
-You can share a copy of a cloud flow with another user, who can then use the definition of the flow as a template. It provides a good way for you to share the general structure of a cloud flow without sharing any connections, while also allowing the recipient to modify their flow independently of yours, so they can make it fit their needs.
+You can send a copy of a cloud flow to another user, who can then use the definition of the flow as a template. It provides a good way for you to share the general structure of a cloud flow without sharing any connections, while also allowing the recipient to modify their flow independently of yours, so they can make it fit their needs.
 
 > [!NOTE]
-> Sharing a copy creates an independent instance of the flow for the recipient. You can't revoke access to the flow after you share it.
+> Sending a copy creates an independent instance of the flow for the recipient. You can't revoke access to the flow after you share it.
 
 **To send a copy of a cloud flow**
 
@@ -186,7 +186,7 @@ You can share a copy of a cloud flow with another user, who can then use the def
 
 ## FAQ
 
-### What happens if the user who created a shared flow leaves the organization?
+### Manage flows when the user who created a shared flow leaves the organization
 
 If the shared flow still has an active owner, the flow continues to run. 
 
@@ -196,27 +196,15 @@ If the shared flow still has an active owner, the flow continues to run.
 
  If there's no active owner for a flow, you should change the owner. To change the owner of a flow, make a copy of the flow, and then let the intended owner create the flow from the copy.
 
-### How can I change the owner of a solution-aware cloud flow?
-It is currently not possible to change the owner of a solution-aware cloud flow in the modern solution explorer. That capability will be added in the future.
-In the meantime, use the following steps as a a workaround.
+### Change the owner of a solution-aware cloud flow
 
-1. Get the environment organization URL by selecting **Switch to classic** in the Solutions Explorer and then copy the host name from the URL. Here's an example. `https://org123456.crm10.dynamics.com/`.
-1. Open the environment using organization URL.
-1. Select **Settings** > **Advanced Settings**.
-1. Select **Advanced Find**.
-1. In the **Look for lookup**, select **Processes**.
-1. Select **Clear** to clear the existing filter.
-1. In the filter area, add a filter for Category Equals "Modern Flow"
-1. Select **Results** to see the list of flows that you own.
-1. Select the check box next to the desired flow and then select **Assign Processes**.
-1. Change **Assign to** to **User or team**.
-1. Use the **User or team** lookup to provide the new owner.
-1. Select **Assign**.
+[Edit the details](./change-cloud-flow-owner.md) to change the ownership of a solution-aware cloud flow. 
 
-### How can I change the owner of a non-solution-aware cloud flow?
-To change the ownership of a non-solution-aware cloud flow, you must create a new flow with the export/import feature, and **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
+## Change the owner of a non-solution-aware cloud flow
 
-### What happens when ownership of a solution-aware cloud flow is shared with a user who isn't Dataverse?
+To change the ownership of a non-solution-aware cloud flow, you must create a new flow via export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
+
+### Share ownership of a solution-aware cloud flow with a user who isn't in Dataverse
 When you share ownership of a solution-aware cloud flow with a user who isn't in Dataverse, that user gets added into Dataverse automatically to facilitate sharing. In a default environment, Azure Active Directory (AAD) users have the EnvironmentMaker role. In a non-default environment, AAD users and groups are added into Dataverse but they aren't assigned the EnvironmentMaker role automatically. Therefore, they may only be able to run the flow until an administrator assigns them a role. If the user doesn't have an appropriate role, they will see a detailed error message.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

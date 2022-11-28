@@ -1,5 +1,5 @@
 ---
-title: Hosted RPA bots (preview) | Microsoft Docs
+title: Hosted RPA bots (preview)
 description: Hosted RPA bots (preview)
 author: mustlaz
 
@@ -7,7 +7,11 @@ ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 08/18/2022
 ms.author: mustlaz
-ms.reviewer:
+ms.reviewer: gtrantzas
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

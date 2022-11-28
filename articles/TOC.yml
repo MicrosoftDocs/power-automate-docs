@@ -10,7 +10,7 @@
     href: sign-up-sign-in.md
   - name: What's new
     href: whats-new.md
-  - name: Create and manage flows in Power Apps 
+  - name: Create and manage flows in Power Apps
     href: create-flows-power-apps.md
 - name: Cloud flows
   items:
@@ -22,16 +22,14 @@
     href: contextual-help-bot.md
   - name: Share a flow
     href: create-team-flows.md
-  # - name: Create a flow that uses Microsoft Dataverse
-  #   href: common-data-model-intro.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
       href: get-started-logic-template.md
+    - name: Create a cloud flow from a description (preview)
+      href: create-cloud-flow-from-description.md
     - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
-    # - name: Create a cloud flow with Microsoft Dataverse connector
-    #   href: connection-cds-native.md
     - name: Create a cloud flow with Dynamics 365
       href: connection-dynamics365.md
     - name: Create a cloud flow with OneDrive for Business
@@ -48,21 +46,35 @@
       href: run-scheduled-tasks.md
     - name: Process a list of items
       href: apply-to-each.md
-  - name: Instant flows
+  - name: Power Automate mobile app
     items:
-    - name: Create a button flow
-      href: introduction-to-button-flows.md
-    - name: Create a flow on a phone
-      href: mobile-create-flow.md
-      displayName: Create a flow on a mobile device
-    - name: Create a button flow with trigger tokens
-      href: introduction-to-button-trigger-tokens.md
-    - name: Create a button flow with user input
-      href: button-flow-with-user-input-tokens.md
-    - name: Share a button
-      href: share-buttons.md
-    - name: Power Automate mobile app for Android
-      href: android.md
+    - name: Android
+      items:
+      - name: Overview
+        href: ./mobile/overview-mobile.md
+      - name: Run instant flows
+        href: ./mobile/run-instant-flows.md
+      - name: Create widgets
+        href: ./mobile/widgets.md
+      - name: Manage approvals
+        href: ./mobile/manage-approvals.md
+      - name: Receive notifications
+        href: ./mobile/notifications.md
+      - name: Manage cloud flows
+        href: ./mobile/manage-cloud-flows.md
+    - name: iOS
+      items:
+      - name: Create a button flow
+        href: introduction-to-button-flows.md
+      - name: Create a flow on a phone
+        href: mobile-create-flow.md
+        displayName: Create a flow on a mobile device
+      - name: Create a button flow with trigger tokens
+        href: introduction-to-button-trigger-tokens.md
+      - name: Create a button flow with user input
+        href: button-flow-with-user-input-tokens.md
+      - name: Share a button
+        href: share-buttons.md
   - name: How to
     items:
     - name: Add an action
@@ -94,7 +106,9 @@
     - name: Turn a cloud flow on or off
       href: disable-flow.md
     - name: Change the owner of cloud flow
-      href: change-cloud-flow-owner.md 
+      href: change-cloud-flow-owner.md
+    - name: Format data by examples (preview)
+      href: format-data-by-examples.md
   - name: Popular cloud flows scenarios
     items:
     - name: Use flows with approvals
@@ -156,7 +170,7 @@
       - name: Create SharePoint reminder flows
         href: create-sharepoint-reminder-flows.md
       - name: Manage SharePoint page approvals
-        href: customize-sharepoint-page-approvals.md  
+        href: customize-sharepoint-page-approvals.md
     - name: Use flows with Microsoft Teams
       items:
       - name: Overview
@@ -167,11 +181,11 @@
       - name: Create flows in Teams
         href: ./teams/teams-app-create.md
       - name: Use flows in teams created from templates
-        href: ./teams/introduction-teams-templates.md        
+        href: ./teams/introduction-teams-templates.md
       - name: Manage flows in Teams
         href: ./teams/teams-app-home.md
       - name: Send a message in Teams
-        href: ./teams/send-a-message-in-teams.md    
+        href: ./teams/send-a-message-in-teams.md
       - name: Trigger flows from Teams messages
         href: trigger-flow-teams-message.md
       - name: Create flows using the Power Apps app
@@ -205,7 +219,7 @@
         href: ./teams/native-approvals-in-teams.md
       - name: Create approvals in chats or channels
         href: ./teams/create-approval-from-chat.md
-      - name: Create approvals from the approvals app 
+      - name: Create approvals from the approvals app
         href: ./teams/create-approval-from-teams-app.md
       - name: Respond to approvals in Teams
         href: ./teams/respond-to-approvals-in-teams.md
@@ -219,7 +233,7 @@
       href: ./trigger-flow-powerbi-report.md
     - name: Use flows with Microsoft Forms
       items:
-      - name: Overview 
+      - name: Overview
         href: ./forms/overview.md
         displayName: Use flows with Microsoft Forms
       - name: Get started
@@ -227,16 +241,14 @@
       - name: Top scenarios
         href: ./forms/popular-scenarios.md
       - name: How to
-        href: ./forms/how-to.md    
+        href: ./forms/how-to.md
       - name: Troubleshoot known issues with forms
         href: ./forms/troubleshoot-issues.md
   - name: Use flows with Microsoft Dataverse
     items:
-    - name: Overview 
+    - name: Overview
       href: ./dataverse/overview.md
       displayName: Use flows with Microsoft Dataverse
-    # - name: Get started
-    #   href: ./dataverse/get-started.md # we will do this later. templates need a refresh first.
     - name: Trigger flows when a row changes
       href: ./dataverse/create-update-delete-trigger.md
     - name: Trigger flows with actions
@@ -246,33 +258,31 @@
     - name: Use a flow to update a row
       href: ./dataverse/update.md
     - name: Get a row by id
-      href: ./dataverse/get-row-id.md    
+      href: ./dataverse/get-row-id.md
     - name: Delete a row
-      href: ./dataverse/delete-row.md 
+      href: ./dataverse/delete-row.md
     - name: Use lists of rows in flows
       href: ./dataverse/list-rows.md
     - name: Use wait conditions to delay flows
-      href: ./dataverse/wait-conditions.md 
+      href: ./dataverse/wait-conditions.md
     - name: Perform bound or unbound actions in flows
       href: ./dataverse/bound-unbound.md
     - name: Use relationships to update rows
       href: ./dataverse/relationships.md
     - name: Use Dataverse search to retrieve rows
-      href: ./dataverse/search.md     
+      href: ./dataverse/search.md
     - name: Relate rows or unrelate rows
       href: ./dataverse/relate-unrelate-rows.md
     - name: Use a flow to perform a changeset request in Dataverse
-      href: ./dataverse/change-set.md    
+      href: ./dataverse/change-set.md
     - name: Upload or download image and file content
-      href: ./dataverse/upload-download-file.md       
+      href: ./dataverse/upload-download-file.md
     - name: Troubleshoot known issues with Dataverse
       href: ./dataverse/known-issues.md
     - name: Use Dataverse-based flows in Power Apps
-      href: ./dataverse/flows-power-apps.md      
-    # - name: Troubleshoot known issues with Dataverse
-    #   href: ./dataverse/troubleshoot-issues.md
+      href: ./dataverse/flows-power-apps.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
-      href: connection-cds.md  
+      href: connection-cds.md
   - name: Use solutions for ALM
     items:
     - name: Overview
@@ -304,59 +314,63 @@
     - name: Find and fix errors with the error checker
       href: error-checker.md
 - name: Desktop flows
-  items: 
+  items:
   - name: Introduction to desktop flows
     href: ./desktop-flows/introduction.md
-  - name: Getting started with Power Automate in Windows 11
+  - name: Get started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
-  - name: Setup Power Automate
-    items:
-    - name: Power Automate prerequisites & limitations 
-      href: ./desktop-flows/setup.md
-    - name: Install Power Automate
-      href: ./desktop-flows/install.md
-    - name: Premium RPA features
-      href: ./desktop-flows/premium-features.md
-    - name: Governance in Power Automate
-      href: ./desktop-flows/governance.md     
-    - name: Troubleshooting Power Automate
-      href: ./desktop-flows/troubleshoot.md
-    - name: Data Collection in Power Automate
-      href: ./desktop-flows/diagnostic-data.md      
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
-  - name: Create a Dataverse database
-    href: ./desktop-flows/create-database.md
-  - name: Getting started with a Microsoft account
+  - name: Premium RPA features
+    href: ./desktop-flows/premium-features.md
+  - name: Setup Power Automate
+    items:
+    - name: Prerequisites and limitations 
+      href: ./desktop-flows/requirements.md
+    - name: Install Power Automate
+      href: ./desktop-flows/install.md
+    - name: Install Power Automate silently
+      href: ./desktop-flows/install-silently.md
+    - name: Install Power Automate browser extensions
+      href: ./desktop-flows/install-browser-extensions.md
+    - name: Create a Dataverse database
+      href: ./desktop-flows/create-database.md
+    - name: Governance
+      href: ./desktop-flows/governance.md     
+    - name: Data collection
+      href: ./desktop-flows/diagnostic-data.md      
+  - name: Get started with a Microsoft account
     href: ./desktop-flows/getting-started-msa.md
-  - name: Getting started with a work or school account
+  - name: Get started with a work or school account
     href: ./desktop-flows/getting-started-freeorg.md
-  - name: Getting started with an organization premium account
+  - name: Get started with an organization premium account
     href: ./desktop-flows/getting-started-org.md
   - name: Create a desktop flow
     href: ./desktop-flows/create-flow.md
   - name: Run desktop flows
     href: ./desktop-flows/run-pad-flow.md
-  - name: Trigger a desktop flow from another flow
+  - name: Trigger desktop flows from cloud flows
     href: ./desktop-flows/link-pad-flow-portal.md
   - name: Manage machines and machine groups
     items:
     - name: Manage machines
       href: ./desktop-flows/manage-machines.md
-    - name: Manage machine groups
-      href: ./desktop-flows/manage-machine-groups.md
-    - name: Hosted RPA bots (preview)
-      href: ./desktop-flows/hosted-rpa-bots.md
     - name: Silent registration for machines
       href: ./desktop-flows/machines-silent-registration.md
+    - name: Manage machine groups
+      href: ./desktop-flows/manage-machine-groups.md
+    - name: Create desktop flow connections
+      href: ./desktop-flows/desktop-flow-connections.md
+    - name: Hosted RPA bots (preview)
+      href: ./desktop-flows/hosted-rpa-bots.md
     - name: Scale with AVD starter kit
       items:
       - name: Overview
-        href: ./desktop-flows/avd-overview.md 
+        href: ./desktop-flows/avd-overview.md
       - name: Set up the AVD integration starter kit
         href: ./desktop-flows/avd-setup.md
       - name: Use the starter kit
-        href: ./desktop-flows/avd-use-starter-kit.md 
+        href: ./desktop-flows/avd-use-starter-kit.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
@@ -365,7 +379,7 @@
       href: ./desktop-flows/monitor-desktop-flow-runs.md
     - name: Desktop flow queues
       href: ./desktop-flows/monitor-desktop-flow-queues.md
-    - name: Desktop flow activity (preview) 
+    - name: Desktop flow activity (preview)
       href: ./desktop-flows/desktop-flow-activity.md
   - name: Data loss prevention (DLP) (preview)
     href: ./desktop-flows/data-loss-prevention.md
@@ -382,9 +396,9 @@
       href: ./desktop-flows/debugging-flow.md
     - name: Manage variables and the variables pane
       href: ./desktop-flows/manage-variables.md
-    - name: Variable datatypes
+    - name: Variable data types
       href: ./desktop-flows/variable-data-types.md
-    - name: Variables datatype properties
+    - name: Variable data type properties
       href: ./desktop-flows/datatype-properties.md
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md
@@ -392,23 +406,21 @@
       href: ./desktop-flows/ui-elements.md
     - name: Automate using images
       href: ./desktop-flows/images.md
-    - name: Manage errors
+    - name: Handle errors in desktop flows
       href: ./desktop-flows/errors.md
-    - name: Record flows in Power Automate
+    - name: Record desktop flows
       href: ./desktop-flows/recording-flow.md
     - name: Use loops
       href: ./desktop-flows/use-loops.md
     - name: Use conditionals
       href: ./desktop-flows/use-conditionals.md
-    - name: Automate web flows
+    - name: Automate webpages
       href: ./desktop-flows/automation-web.md
     - name: Create custom forms
       href: ./desktop-flows/custom-forms.md     
-    - name: Use browsers and manage extensions
-      href: ./desktop-flows/using-browsers.md
-    - name: Automate desktop flows
+    - name: Automate desktop applications
       href: ./desktop-flows/desktop-automation.md
-    - name: Automate on virtual desktops (preview)
+    - name: Automate on virtual desktops
       href: ./desktop-flows/virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
@@ -417,103 +429,105 @@
     - name: Handle and manipulate variables
       items:
       - name: Check if a variable is numeric
-        href: ./desktop-flows/how-to/check-if-variable-numeric.md        
+        href: ./desktop-flows/how-to/check-if-variable-numeric.md
       - name: Delete columns from a datatable
-        href: ./desktop-flows/how-to/delete-column-datatable.md 
+        href: ./desktop-flows/how-to/delete-column-datatable.md
     - name: Handle email messages in desktop flows
       items:
       - name: Add images to email messages
-        href: ./desktop-flows/how-to/add-images-email-messages.md      
+        href: ./desktop-flows/how-to/add-images-email-messages.md
       - name: Use a shared Outlook mailbox in email automations
         href: ./desktop-flows/how-to/outlook-shared-mailbox.md
       - name: Automate email accounts with two-step verification
-        href: ./desktop-flows/how-to/automate-emails-accounts-two-step-verification.md     
+        href: ./desktop-flows/how-to/automate-emails-accounts-two-step-verification.md
     - name: Automate tasks in Excel
-      items: 
+      items:
       - name: Convert a CSV file into an Excel spreadsheet
-        href: ./desktop-flows/how-to/convert-csv-excel.md  
+        href: ./desktop-flows/how-to/convert-csv-excel.md
       - name: Run macros on an Excel workbook
-        href: ./desktop-flows/how-to/run-macros-excel.md  
+        href: ./desktop-flows/how-to/run-macros-excel.md
       - name: Run SQL queries on Excel files
-        href: ./desktop-flows/how-to/sql-queries-excel.md 
+        href: ./desktop-flows/how-to/sql-queries-excel.md
       - name: Autofit Excel columns using VBScript
-        href: ./desktop-flows/how-to/autofit-excel-columns-vbscript.md 
+        href: ./desktop-flows/how-to/autofit-excel-columns-vbscript.md
       - name: Unhide worksheets in Excel using VBScript
-        href: ./desktop-flows/how-to/unhide-excel-worksheets-vbscript.md 
+        href: ./desktop-flows/how-to/unhide-excel-worksheets-vbscript.md
     - name: Use images, image recognition and OCR
       items:
       - name: Use image recognition on machines with different screen resolutions
-        href: ./desktop-flows/how-to/image-recognition-screen-resolution.md  
+        href: ./desktop-flows/how-to/image-recognition-screen-resolution.md
       - name: Perform OCR on multilingual documents
-        href: ./desktop-flows/how-to/ocr-multilingual-documents.md  
+        href: ./desktop-flows/how-to/ocr-multilingual-documents.md
       - name: Print images
-        href: ./desktop-flows/how-to/print-images.md  
+        href: ./desktop-flows/how-to/print-images.md
     - name: Automate Windows and desktop applications
       items:
       - name: Identify a window by its handle
-        href: ./desktop-flows/how-to/identify-window-handle.md   
+        href: ./desktop-flows/how-to/identify-window-handle.md
       - name: Close any window through its process ID
-        href: ./desktop-flows/how-to/close-window-process-id.md 
+        href: ./desktop-flows/how-to/close-window-process-id.md
       - name: Extract attributes from window elements
-        href: ./desktop-flows/how-to/extract-attributes-window-elements.md 
-      - name: Ensure that application windows become focused 
-        href: ./desktop-flows/how-to/ensure-windows-become-focused.md 
+        href: ./desktop-flows/how-to/extract-attributes-window-elements.md
+      - name: Ensure that application windows become focused
+        href: ./desktop-flows/how-to/ensure-windows-become-focused.md
       - name: Get the position and size of a window
-        href: ./desktop-flows/how-to/get-position-size-window.md 
+        href: ./desktop-flows/how-to/get-position-size-window.md
       - name: Automate applications using keyboard shortcuts
-        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md 
+        href: ./desktop-flows/how-to/automate-applications-keyboard-shortcuts.md
       - name: Automate with mouse, keyboard, and OCR actions
-        href: ./desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md  
+        href: ./desktop-flows/how-to/automate-using-mouse-keyboard-ocr.md
       - name: Access elements that depend on how the window appears on the screen
-        href: ./desktop-flows/how-to/access-elements-depend-window.md  
+        href: ./desktop-flows/how-to/access-elements-depend-window.md
       - name: Automate Java applications
-        href: ./desktop-flows/how-to/java.md   
+        href: ./desktop-flows/how-to/java.md
     - name: Automate web applications and web pages
       items:
       - name: Handle links that open new tabs
-        href: ./desktop-flows/how-to/links-open-new-tabs.md 
+        href: ./desktop-flows/how-to/links-open-new-tabs.md
       - name: Retrieve details from a web page
         href: ./desktop-flows/how-to/retrieve-details-web-page.md
       - name: Get the coordinates and size of a web element
-        href: ./desktop-flows/how-to/get-coordinates-size-web-element.md   
+        href: ./desktop-flows/how-to/get-coordinates-size-web-element.md
       - name: Send physical clicks on a web element
-        href: ./desktop-flows/how-to/send-physical-clicks-web-element.md   
+        href: ./desktop-flows/how-to/send-physical-clicks-web-element.md
       - name:  Click all the elements in a list of links
-        href: ./desktop-flows/how-to/click-elements-list-links.md   
+        href: ./desktop-flows/how-to/click-elements-list-links.md
       - name: Automate browser prompts
-        href: ./desktop-flows/how-to/automate-browser-prompts.md  
+        href: ./desktop-flows/how-to/automate-browser-prompts.md
       - name:  Scroll on a web page
-        href: ./desktop-flows/how-to/scroll-web-page.md   
+        href: ./desktop-flows/how-to/scroll-web-page.md
       - name: Handle iframes on a web page
-        href: ./desktop-flows/how-to/handle-iframes.md  
+        href: ./desktop-flows/how-to/handle-iframes.md
       - name: Populate text fields and click on links using JavaScript
         href: ./desktop-flows/how-to/populate-text-fields-click-links-javascript.md
     - name: Convert data and files
-      items: 
+      items:
       - name: Convert a text variable to datetime
-        href: ./desktop-flows/how-to/convert-text-datetime.md        
+        href: ./desktop-flows/how-to/convert-text-datetime.md
       - name: Convert data using PowerShell
         href: ./desktop-flows/how-to/convert-data-powershell.md
       - name: Convert Excel to PDF using VBScript
-        href: ./desktop-flows/how-to/convert-excel-pdf-vbscript.md 
+        href: ./desktop-flows/how-to/convert-excel-pdf-vbscript.md
       - name: Convert Base64 text to hexadecimal format
         href: ./desktop-flows/how-to/convert-base64-hexadecimal-format.md
-    - name: Run and troubleshoot SQL queries    
+    - name: Run and troubleshoot SQL queries
       items:
       - name: Run SQL queries to Microsoft Access
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
-      - name: Troubleshoot SQL queries   
+      - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
-    - name: Use logical operations on conditional statements  
-      href: ./desktop-flows/how-to/logical-operations-conditional-statements.md  
+    - name: Use logical operations on conditional statements
+      href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
     - name: Handle custom forms
-      href: ./desktop-flows/how-to/handle-custom-forms.md  
+      href: ./desktop-flows/how-to/handle-custom-forms.md
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Run desktop flow from other desktop flows
       href: ./desktop-flows/how-to/run-desktop-flow-action.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
+    - name: Run Power Automate with elevated rights
+      href: ./desktop-flows/how-to/run-power-automate-elevated-rights.md
     - name: Extract text from a Word document using VBScript
       href: ./desktop-flows/how-to/extract-text-word-document.md
     - name: Pass a datatable from a cloud flow to a desktop flow
@@ -584,7 +598,7 @@
     - name: XML
       href: ./desktop-flows/actions-reference/xml.md
     - name: FTP
-      href: ./desktop-flows/actions-reference/ftp.md 
+      href: ./desktop-flows/actions-reference/ftp.md
     - name: CyberArk
       href: ./desktop-flows/actions-reference/cyberark.md
     - name: Active Directory
@@ -603,6 +617,8 @@
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
     - name: SharePoint (preview)
       href: ./desktop-flows/actions-reference/sharepoint.md
+  - name: Troubleshoot desktop flows
+    href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
   - name: Use RPA with Dynamics 365
@@ -614,7 +630,7 @@
     - name: Use RPA with Dynamics 365 Finance
       href: ./desktop-flows/dynamics365-fin-rpa.md
     - name: Use RPA with Dynamics 365 Customer Service
-      href: ./desktop-flows/dynamics365-cs-rpa.md   
+      href: ./desktop-flows/dynamics365-cs-rpa.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -631,7 +647,7 @@
     href: best-practices-entity-attributes.md
 - name: Process advisor
   items:
-  - name: Overview    
+  - name: Overview
     href: process-advisor-overview.md
     displayName: Overview of process advisor
   - name: Process mining (preview)
@@ -640,34 +656,168 @@
       href: process-mining-overview.md
     - name: Templates overview
       items:
+      - name: Azure templates
+        href: process-mining-azure-templates.md   
+      - name: Finance and operations templates
+        href: process-mining-finance-ops-templates.md   
       - name: Power Platform templates
         href: process-mining-templates.md
-      - name: Azure templates
-        href: process-mining-azure-templates.md    
     - name: Get started with process mining
       href: process-mining-tutorial.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
     - name: Transform and map data
-      href: process-mining-transform.md      
+      href: process-mining-transform.md
     - name: Troubleshoot issues
       href: process-mining-troubleshoot.md
     - name: Visualize and gain insights from processes
       href: process-mining-visualize.md
-    - name: Get automated recommendations to improve processes
-      href: process-mining-auto-rec.md
-    - name: Improve cloud flows with process insights (preview)
+    - name: Customize a report with your own Power BI workspace
+      href: process-mining-pbi-workspace.md
+    - name: Improve cloud flows with process insights
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
-      href: process-mining-share.md      
+      href: process-mining-share.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
+  - name: Minit desktop application (preview)
+    items:
+    - name: Overview
+      href: ./minit/minit-desktop-application-overview.md
+    - name: Install the Minit desktop application
+      href: ./minit/how-to-start-with-minit-desktop-application.md
+    - name: Process hub
+      items:
+      - name: Process hub overview
+        href: ./minit/process-hub.md
+      - name: Process context
+        href: ./minit/process-context.md
+      - name: Case categorization
+        href: ./minit/case-categorization.md
+    - name: Process explorer overview
+      href: ./minit/process-explorer.md
+    - name: Process map
+      items:
+      - name: Process map overview
+        href: ./minit/process-map.md
+      - name: Favorites panel
+        href: ./minit/favorites-panel.md
+      - name: View settings
+        href: ./minit/view-settings.md
+      - name: Hierarchical process mining
+        href: ./minit/hierarchical-process-mining.md
+      - name: Rework metrics
+        href: ./minit/rework-metrics.md
+    - name: Process animation
+      href: ./minit/process-animation.md
+    - name: Statistics
+      items:
+      - name: Statistics overview
+        href: ./minit/statistics.md
+      - name: Case overview statistics
+        href: ./minit/case-overview-statistics.md
+      - name: Activities (event-level) statistics
+        href: ./minit/activities-event-level-statistics.md
+      - name: Edge statistics
+        href: ./minit/edge-statistics.md
+    - name: Variants
+      href: ./minit/variants.md
+    - name: Process compare for compliance
+      href: ./minit/process-compare-compliance.md
+    - name: Root cause analysis
+      href: ./minit/root-cause-analysis.md
+    - name: Filtering
+      items:
+      - name: Filtering overview
+        href: ./minit/filtering.md
+      - name: Timeframe filter
+        href: ./minit/timeframe-filter.md
+      - name: Case attributes filter
+        href: ./minit/case-attributes-filter.md
+      - name: Case attributes conditional filter
+        href: ./minit/case-attributes-conditional-filter.md
+      - name: Edge conditional filter
+        href: ./minit/edge-conditional-filter.md
+      - name: Variants filter
+        href: ./minit/variants-filter.md
+      - name: Case metrics filter
+        href: ./minit/case-metrics-filter.md
+      - name: Sequence filter
+        href: ./minit/sequence-filter.md
+      - name: End events filter
+        href: ./minit/end-events-filter.md
+      - name: Conflict of interests filter
+        href: ./minit/conflict-of-interests-filter.md
+      - name: Event attributes filter
+        href: ./minit/event-attributes-filter.md
+      - name: Subprocess filter
+        href: ./minit/subprocess-filter.md
+      - name: Event metrics filter
+        href: ./minit/event-metrics-filter.md
+      - name: Filters export and import
+        href: ./minit/filters-export-import.md
+    - name: Export
+      href: ./minit/export.md
+    - name: Settings
+      items:
+      - name: Settings overview
+        href: ./minit/settings.md
+      - name: Options
+        href: ./minit/options.md
+      - name: Working hours
+        href: ./minit/working-hours.md
+    - name: Custom metrics
+      items:
+      - name: Custom metrics overview
+        href: ./minit/custom-metrics.md
+      - name: Tips and examples
+        href: ./minit/general-information.md
+      - name: Requirements for application
+        href: ./minit/requirements-for-application.md
+      - name: List of data types-custom metrics
+        href: ./minit/data-types-custom-metrics.md
+      - name: Constants
+        href: ./minit/constants.md
+      - name: List of unary operators
+        href: ./minit/unary-operators.md
+      - name: Aggregations
+        href: ./minit/aggregations.md
+      - name: Date and time operations
+        href: ./minit/date-and-time-operations.md
+      - name: Mathematical operations
+        href: ./minit/mathematical-operations.md
+      - name: Statistical operations
+        href: ./minit/statistical-operations.md
+      - name: List of string operations
+        href: ./minit/string-operations.md
+      - name: List of other operations
+        href: ./minit/other-operations.md
+      - name: Calculation context
+        href: ./minit/calculation-context.md
+      - name: Calculation methods
+        items:
+        - name: Calculation methods
+          href: ./minit/custom-metrics-how-to.md
+        - name: Basic examples
+          href: ./minit/custom-metrics-beginner-examples.md
+        - name: Advanced examples
+          href: ./minit/custom-metrics-advanced-examples.md
+    - name: Business rules
+      items:
+      - name: Business rules overview
+        href: ./minit/business-rules.md
+      - name: Business rule scope
+        href: ./minit/business-rule-scope.md
+      - name: Business rules in process maps
+        href: ./minit/business-rules-process-map.md
+      - name: Business rules statistics
+        href: ./minit/business-rules-statistics.md
   - name: Task mining
     items:
     - name: Overview
       href: task-mining-overview.md
     - name: Get started with task mining
-      href: task-mining-tutorial.md  
+      href: task-mining-tutorial.md
     - name: Prepare processes and recordings
       href: process-advisor-processes.md
     - name: Analyze processes
@@ -675,11 +825,11 @@
     - name: Visualize processes
       href: process-advisor-visualize.md
     - name: Identify automation opportunities
-      href: process-advisor-automation.md 
+      href: process-advisor-automation.md
     - name: Share task mining processes
-      href: process-advisor-share.md  
+      href: process-advisor-share.md
   - name: Administration and security
-    items: 
+    items:
     - name: Security and privacy
       href: process-advisor-security.md
       displayName: Security and privacy in process advisor
@@ -705,6 +855,16 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
+  - name: SAP integration (preview)
+    items:
+    - name: Overview
+      href: ./sap-integration/overview.md
+    - name: Set up and prepare
+      href: ./sap-integration/set-up-prepare.md
+    - name: Create an environment variable with SAP connection parameter
+      href: ./sap-integration/env-variables-connection-refs.md
+    - name: Prebuilt solution
+      href: ./sap-integration/solutions.md
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
@@ -853,7 +1013,7 @@
   - name: Developer
     href: learning-catalog/learning-catalog-developer.md
   - name: Functional consultant
-    href: learning-catalog/learning-catalog-functional-consultant.md      
+    href: learning-catalog/learning-catalog-functional-consultant.md
   - name: Partner presales roles
     href: learning-catalog/learning-catalog-sales.md
   - name: Business and Technical Decision Makers learning catalog

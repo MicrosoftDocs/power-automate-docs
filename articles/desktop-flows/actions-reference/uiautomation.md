@@ -1,13 +1,17 @@
 ---
-title: UI automation | Microsoft Docs
+title: UI automation
 description: UI automation Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -94,14 +98,14 @@ Extract data from desktop applications, from a single value up to tables or cust
 ### <a name="getwindowdetails"></a> Get details of window
 Gets a property of a window such as its title or its source text
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Window|No|[UI element](../ui-elements.md)||The window to get details from|
 |Window property|N/A|Get window title, Get window text, Get window location and size, Get process name|Get window title|Choose which property of the window to extract|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |WindowProperty|[General value](../variable-data-types.md#general-value)|The retrieved information of the window|
@@ -115,14 +119,14 @@ Gets a property of a window such as its title or its source text
 ### <a name="getelementdetails"></a> Get details of a UI element in window
 Gets the value of a UI element's attribute in a window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to get details from|
 |Attribute name|Yes|[Text value](../variable-data-types.md#text-value)|Own Text|The attribute whose value will be retrieved|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |AttributeValue|[Text value](../variable-data-types.md#text-value)|The value of the UI element's text|
@@ -136,14 +140,14 @@ Gets the value of a UI element's attribute in a window
 ### <a name="getselectedcheckboxesinwindow"></a> Get selected checkboxes in window
 Retrieves the names of the selected checkboxes in a checkbox group or the state of a specific checkbox
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The checkbox or checkbox group|
 |Operation|N/A|Get names of selected checkboxes in group, Get state of checkbox|Get names of selected checkboxes in group|Specify whether to retrieve the state of multiple selected checkboxes or just one|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |IsChecked|[Boolean value](../variable-data-types.md#boolean-value)|The state of the selected checkbox|
@@ -158,14 +162,14 @@ Retrieves the names of the selected checkboxes in a checkbox group or the state 
 ### <a name="getselectedradiobuttoninwindow"></a> Get selected radio button in window
 Retrieves the names of the selected radio button in a radio button group or the state of a specific radio button
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The radio button or radio button group|
 |Operation|N/A|Get selected radio button name in group, Get state of radio button|Get selected radio button name in group|Specify whether to retrieve the name of the radio button that's selected inside a group of radio buttons or just the state of a single radio button|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |IsSelected|[Boolean value](../variable-data-types.md#boolean-value)|The state of the selected radio button|
@@ -180,14 +184,14 @@ Retrieves the names of the selected radio button in a radio button group or the 
 ### <a name="extractdatafromwindow"></a> Extract data from window
 Extracts data from specific parts of a window in the form of single values, lists, or tables
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Window|No|[UI element](../ui-elements.md)||The window to extract data from|
 |Store extracted data in|N/A|an Excel spreadsheet, A variable|an Excel spreadsheet|Specify where to store the extracted data|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExcelInstance|[Excel instance](../variable-data-types.md#instances)|The Excel instance with the extracted data. Use this instance to manipulate the spreadsheet (or save and close it) by using the dedicated Excel actions.|
@@ -202,7 +206,7 @@ Extracts data from specific parts of a window in the form of single values, list
 ### <a name="takescreenshot"></a> Take screenshot of UI element
 Takes a screenshot of a UI element in window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element in the window to capture as screenshot|
@@ -210,7 +214,7 @@ Takes a screenshot of a UI element in window
 |Image file path|No|[File](../variable-data-types.md#files-and-folders)||Set the full path for the file to be saved|
 |File format|N/A|BMP, EMF, EXIF, GIF, JPG, PNG, TIFF, WMF|BMP|The file format of the image file|
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ImageFile|[File](../variable-data-types.md#files-and-folders)|The file path of the generated screenshot image file|
@@ -227,14 +231,14 @@ Fill-in forms on desktop applications
 ### <a name="focustextfield"></a> Focus text field in window
 Sets the focus on a text box of a window and scrolls it into view
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text field|No|[UI element](../ui-elements.md)||The text box to focus|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="focustextfield_onerror"></a> Exceptions
 |Exception|Description|
@@ -244,7 +248,7 @@ Sets the focus on a text box of a window and scrolls it into view
 ### <a name="populatetextfield"></a> Populate text field in window
 Fills a text box in a window with the specified text
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text box|No|[UI element](../ui-elements.md)||The text box to populate|
@@ -253,8 +257,8 @@ Fills a text box in a window with the specified text
 |Click before populating|Yes|Left click, Double click, No|Left click|Specify whether a left mouse click is performed before populating the text field or not.|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="populatetextfield_onerror"></a> Exceptions
 |Exception|Description|
@@ -264,14 +268,14 @@ Fills a text box in a window with the specified text
 ### <a name="pressbutton"></a> Press button in window
 Presses a window button
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The button to press|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="pressbutton_onerror"></a> Exceptions
 |Exception|Description|
@@ -281,14 +285,14 @@ Presses a window button
 ### <a name="selectradiobutton"></a> Select radio button in window
 Selects a radio button on a window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Radio button|No|[UI element](../ui-elements.md)||The radio button to select|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="selectradiobutton_onerror"></a> Exceptions
 |Exception|Description|
@@ -298,15 +302,15 @@ Selects a radio button on a window
 ### <a name="setcheckboxstate"></a> Set checkbox state in window
 Checks or unchecks a checkbox in a window form
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Checkbox|No|[UI element](../ui-elements.md)||The checkbox to set the state of|
 |Set checkbox state to|N/A|Checked, Unchecked|Checked|Specify whether the checkbox will become checked or unckeched|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setcheckboxstate_onerror"></a> Exceptions
 |Exception|Description|
@@ -316,7 +320,7 @@ Checks or unchecks a checkbox in a window form
 ### <a name="setdropdownlistvalueinwindow"></a> Set drop-down list value in window
 Sets or clears the selected option(s) for a drop-down list in a window form
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Drop-down list|No|[UI element](../ui-elements.md)||The drop-down list whose value to set|
@@ -326,8 +330,8 @@ Sets or clears the selected option(s) for a drop-down list in a window form
 |Options indices|No|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)||Enter an index or a list of indices to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified will be used.|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setdropdownlistvalueinwindow_onerror"></a> Exceptions
 |Exception|Description|
@@ -339,7 +343,7 @@ Windows manipulation regarding size, state visibility, focus
 ### <a name="getwindowbase"></a> Get window
 Gets a running window, for automating desktop applications
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Get window|N/A|Specific window, Foreground window|Specific window|Specify whether to look using a selector or the foreground window|
@@ -349,7 +353,7 @@ Gets a running window, for automating desktop applications
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)||The timeout to wait in seconds|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |WindowTitle|[Text value](../variable-data-types.md#text-value)|The title of the foreground window|
@@ -364,7 +368,7 @@ Gets a running window, for automating desktop applications
 ### <a name="focuswindowbase"></a> Focus window
 Activates and brings to the foreground a specific window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Find window mode|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the window using a UI element or a combination of window title/class|
@@ -374,8 +378,8 @@ Activates and brings to the foreground a specific window
 |Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to use.|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="focuswindowbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -387,7 +391,7 @@ Activates and brings to the foreground a specific window
 ### <a name="setwindowstatebase"></a> Set window state
 Restores, maximizes or minimizes a specific window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Find window mode|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the window using a UI element or a combination of window title/class|
@@ -398,8 +402,8 @@ Restores, maximizes or minimizes a specific window
 |Window state|N/A|Restored, Maximized, Minimized|Restored|Choose in which state to display the window|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setwindowstatebase_onerror"></a> Exceptions
 |Exception|Description|
@@ -411,7 +415,7 @@ Restores, maximizes or minimizes a specific window
 ### <a name="setwindowvisibilitybase"></a> Set window visibility
 Shows a hidden window or hides a visible window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Find window mode|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the window using a UI element or a combination of window title/class|
@@ -422,8 +426,8 @@ Shows a hidden window or hides a visible window
 |Visibility|N/A|Visible, Hidden|Hidden|Choose in which state to set the window visibility to|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="setwindowvisibilitybase_onerror"></a> Exceptions
 |Exception|Description|
@@ -435,7 +439,7 @@ Shows a hidden window or hides a visible window
 ### <a name="movewindowbase"></a> Move window
 Sets the position of a specific window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Find window mode|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the Window using a UI element or a combination of window title/class|
@@ -447,8 +451,8 @@ Sets the position of a specific window
 |Position Y|No|[Numeric value](../variable-data-types.md#numeric-value)||The Y position of the window|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="movewindowbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -460,7 +464,7 @@ Sets the position of a specific window
 ### <a name="resizewindowbase"></a> Resize window
 Sets the size of a specific window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Find window mode|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the window using a UI element or a combination of window title/class|
@@ -472,8 +476,8 @@ Sets the size of a specific window
 |Height|No|[Numeric value](../variable-data-types.md#numeric-value)||The new height, in pixels|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="resizewindowbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -485,7 +489,7 @@ Sets the size of a specific window
 ### <a name="closewindowbase"></a> Close window
 Closes a specific window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Find window mode|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the window using a UI element or a combination of window title/class|
@@ -495,8 +499,8 @@ Closes a specific window
 |Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to use.|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="closewindowbase_onerror"></a> Exceptions
 |Exception|Description|
@@ -509,7 +513,7 @@ Closes a specific window
 ### <a name="ifwindowcontainsaction"></a> If window contains
 Marks the beginning of a conditional block of actions depending on whether a specific piece of text or UI element exists in a window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Check if window|N/A|Contains UI element, Doesn't contain UI element, Contains text, Doesn't contain text|Contains UI element|Check whether a specific text or UI element exists in a window|
@@ -520,16 +524,16 @@ Marks the beginning of a conditional block of actions depending on whether a spe
 |State|N/A|Enabled, Disabled|Enabled|The UI element state to check for|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="ifwindowcontainsaction_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 - 
 ### <a name="waitforwindowcontentaction"></a> Wait for window content
 Suspends the execution of the automation until a specific piece of text or UI element appears or disappears from a Window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait until window|N/A|Contains UI element, Doesn't contain UI element, Contains text, Doesn't contain text|Contains UI element|Whether to wait for a specific text or UI element to appear in a window|
@@ -540,8 +544,8 @@ Suspends the execution of the automation until a specific piece of text or UI el
 |State|N/A|Enabled, Disabled|Enabled|The UI element state to check for|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="waitforwindowcontentaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -550,7 +554,7 @@ Suspends the execution of the automation until a specific piece of text or UI el
 ### <a name="ifimageaction"></a> If image
 This action marks the beginning of a conditional block of actions depending on whether a selected image is found on the screen or not
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |If image|N/A|exists, doesn't exist|exists|Whether to check for the existence or absence of the selected image|
@@ -565,8 +569,8 @@ This action marks the beginning of a conditional block of actions depending on w
 |Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify how much the image(s) searched for can differ from the originally chosen image|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="ifimageaction_onerror"></a> Exceptions
 |Exception|Description|
@@ -581,7 +585,7 @@ This action marks the beginning of a conditional block of actions depending on w
 ### <a name="usedesktop"></a> Use desktop
 Performs desktop and taskbar related operations
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to perform a click on|
@@ -589,8 +593,8 @@ Performs desktop and taskbar related operations
 |Launch new application when left-clicking on the taskbar|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|When this parameter is set to 'true', it ensures that a new window of an application will be created when left-clicking on its icon in the 'quick launch' bar, aka the taskbar of Windows 7 or above. Uncheck this option to bring an already running instance of the application to the foreground.|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="usedesktop_onerror"></a> Exceptions
 |Exception|Description|
@@ -600,14 +604,14 @@ Performs desktop and taskbar related operations
 ### <a name="selecttab"></a> Select tab in window
 Selects a tab from a group of tabs
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Tab|No|[UI element](../ui-elements.md)||The tab to select|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="selecttab_onerror"></a> Exceptions
 |Exception|Description|
@@ -618,7 +622,7 @@ Selects a tab from a group of tabs
 ### <a name="waitforimageaction"></a> Wait for image
 This action waits until a specific image appears on the screen or on the foreground window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Wait for image to|N/A|Appear, Disappear|Appear|Check whether to wait for the image(s) to appear or disappear|
@@ -635,7 +639,7 @@ This action waits until a specific image appears on the screen or on the foregro
 |Fail with timeout error|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether you want the action to wait indefinitely or fail after a set time period|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |X|[Numeric value](../variable-data-types.md#numeric-value)|The X coordinate of the point where the text was found on the screen. If the text has been search in the foreground window this is relative to the top left corner of the window.|
@@ -652,13 +656,13 @@ This action waits until a specific image appears on the screen or on the foregro
 ### <a name="hoveronelement"></a> Hover mouse over UI element in window
 Hover the mouse over any UI element on window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||Select the UI element in window to hover|
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="hoveronelement_onerror"></a> Exceptions
 |Exception|Description|
@@ -669,7 +673,7 @@ Hover the mouse over any UI element on window
 ### <a name="click"></a> Click UI element in window
 Clicks on any UI element of a window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to click on|
@@ -679,8 +683,8 @@ Clicks on any UI element of a window
 |Offset Y|Yes|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels down|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="click_onerror"></a> Exceptions
 |Exception|Description|
@@ -690,14 +694,14 @@ Clicks on any UI element of a window
 ### <a name="selectmenuoption"></a> Select menu option in window
 Selects an option in a menu of a window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The menu option to select|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="selectmenuoption_onerror"></a> Exceptions
 |Exception|Description|
@@ -707,7 +711,7 @@ Selects an option in a menu of a window
 ### <a name="draganddropelement"></a> Drag and drop UI element in window
 Drags and drops a UI element of a window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element to drag|No|[UI element](../ui-elements.md)||The UI element to drag|
@@ -721,8 +725,8 @@ Drags and drops a UI element of a window
 |Mouse up position relative to drop-target UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element to drag the mouse onto after clicking|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="draganddropelement_onerror"></a> Exceptions
 |Exception|Description|
@@ -734,7 +738,7 @@ Drags and drops a UI element of a window
 ### <a name="expandcollapsetreenode"></a> Expand/collapse tree node in window
 Expands or collapses a node of a tree view residing in a window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The tree node to expand/collapse|
@@ -746,8 +750,8 @@ Expands or collapses a node of a tree view residing in a window
 > Power Automate's regular expression engine is .NET. You can find more information in [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="expandcollapsetreenode_onerror"></a> Exceptions
 |Exception|Description|
@@ -758,7 +762,7 @@ Expands or collapses a node of a tree view residing in a window
 ### <a name="ifwindowaction"></a> If window
 This action marks the beginning of a conditional block of actions depending on whether a window is open or not or whether a window is the focused (foreground) window
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Get window|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the Window using a UI element or a combination of window title/class|
@@ -769,17 +773,17 @@ This action marks the beginning of a conditional block of actions depending on w
 |Check if window|N/A|Is open, Isn't open, Is focused, Isn't focused|Is open|The state of the window to be checked|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="ifwindowaction_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 
 
 ### <a name="waitforwindowaction"></a> Wait for window
 Suspends the execution or the process until a specific window opens, closes, get or loses the focus
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Find window|N/A|By window UI element, By window instance/handle, By title and/or class|By window UI element|Specify whether to look for the window using a UI element  or a combination of window title/class|
@@ -791,8 +795,8 @@ Suspends the execution or the process until a specific window opens, closes, get
 |Focus window after it opens|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Bring the window to the front after it opens, so later actions are directed at this window|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="waitforwindowaction_onerror"></a> Exceptions
 |Exception|Description|

@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/17/2022
+ms.date: 09/28/2022
 ms.author: deonhe
 ---
 
@@ -26,6 +26,9 @@ Lists created with Microsoft Lists and SharePoint libraries allow you to define 
 - Access to Microsoft SharePoint Online.
 - A list, or library with a DateTime column.
 - Access to Power Automate.
+
+> [!NOTE]
+> This feature isn't available for GCC, GCC High, DOD, or other sovereign clouds.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 

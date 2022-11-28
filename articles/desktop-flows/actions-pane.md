@@ -1,13 +1,13 @@
 ---
-title: Actions and the actions pane | Microsoft Docs
-description: This section describes the actions and the actions pane in flow designer.
-author: mariosleon
-
+title: Configure actions and the actions pane
+description: This section shows how to use the actions pane to deploy actions in the flow designer.
+author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/22/2020
-ms.author: marleon
-ms.reviewer:
+ms.date: 11/03/2022
+ms.author: gtrantzas
+ms.reviewer: iomavrid
+contributors:
 search.app: 
   - Flow
 search.audienceType: 
@@ -17,89 +17,62 @@ search.audienceType:
 
 # Configure actions and the actions pane
 
-In the flow designer, the actions pane on the left side of the window shows all the action groups. 
+The actions pane occupies the left side of the flow designer and displays all the available desktop flow actions.
 
-![Screenshot of the actions pane.](media/actions-pane/actions-pane.png)
+:::image type="content" source="media/actions-pane/actions-pane.png" alt-text="Screenshot of the actions pane.":::
 
-To quickly find a specific action, enter the name of the action in the search bar. Searching also returns partial matches.
+To find a specific action, populate its name in the search bar at the top of the pane. Searching also returns partial matches but requires at least two provided characters. When the search term matches a module name, the results display the module expanded with all its actions available.
 
-![Screenshot of the search field in the actions pane.](media/actions-pane/actions-search.png)
+:::image type="content" source="media/actions-pane/actions-search.png" alt-text="Screenshot of the search field in the actions pane.":::
 
-## Adding an action to the workspace
+## Add actions to the workspace
 
-To begin developing a desktop flow, select an action and double-click on it, or drag it into the workspace. 
+To develop a desktop flow, find the action you want to deploy, and double-click on it or drag it into the workspace.
 
-![Screenshot of an action while dragging it into the workspace.](media/adding-actions/add-action.png)
+:::image type="content" source="media/adding-actions/add-action.png" alt-text="Screenshot of an action while dragging it into the workspace.":::
 
-A dialog box opens with the parameters of the action. Actions have certain parameters such as variable names and default values. Other actions will require user input to be initialized. After selecting **Save**, the action appears in the workspace.
+After the deployment, the modal of the action opens and displays the available parameters of the action. Some actions may have default values for some parameters, while others require user input. When the configuration is ready, select **Save**.
 
-![Screenshot of the properties of an action.](media/adding-actions/action-properties.png)
+:::image type="content" source="media/adding-actions/action-properties.png" alt-text="Screenshot of the modal of an action.":::
 
-## Configuring an action
+## Configure actions
 
-Power Automate actions consist of two main segments:
-- The input parameters - They have the form of text fields, drop-down menus, and  check boxes
-- The produced variables - Automatically created variables
+Power Automate actions contain three main elements:
 
-![Screenshot of the parameters and the produced variables of the Copy folder action.](media/configuring-actions/actions-parameters-outputs.png)
+- **Input parameters**  have the form of text fields, drop-down menus, and checkboxes and determine the way the action functions and the data it gets as input. The data can be hardcoded values or variables.
 
-The input parameters determine the way an action functions and the data it gets as input. The data can be hardcoded values or variables. 
+    To use a variable as a parameter, select the appropriate icon on the right side of the field and pick the desired variable.
 
-To use a variable as a parameter, select the icon on the field's right side and pick the respective variable.
+    Each field can accept specific data types, such as numeric values, text, or lists. If you use values or variables of wrong data types as inputs, the action will throw an error. To find more information about data types, refer to [Variable datatypes](variable-data-types.md).
 
-Each field can accept specific data types, such as numbers, text, or lists. If a value or variable of a wrong data type is used as an input, the action will throw an error. 
+    :::image type="content" source="media/configuring-actions/action-input-parameteres.png" alt-text="Screenshot of the input parameters in an action's modal.":::
 
-![Screenshot of thhe icon to select an input parameter in the action.](media/configuring-actions/actions-parameters.png)
+- **Produced variables** are automatically generated variables that hold the outcomes of the actions for later use. All the produced variables of an action are available on the bottom part of its modal.
 
-The produced variables hold the outcomes of the action for later use. All the produced variables are displayed on the bottom part of the action's properties. 
+    Like any other variable, produced variables have data types defined by their content. To find more information about data types, refer to [Variable datatypes](variable-data-types.md).
 
-Each produced variable has a data type defined by its data. You can see the data type of a variable in the **Variables** pane. Find more information about data types in the [respective article](variable-data-types.md).
+    If a produced variable isn't useful for later use, unselect the checkbox next to its name to disable it.
 
-In case a produced variable isn't needed for later use, unselect the checkbox under **Variables produced**. 
+    The name of a produced variable can't contain special characters, white spaces, and non-Latin characters. Additionally, it can't start with arithmetic characters.
 
-![Screenshot of the option to disable a produced variable in the action.](media/configuring-actions/actions-outputs.png)
+    :::image type="content" source="media/configuring-actions/action-produced-variables.png" alt-text="Screenshot of a produced variable in an action's modal.":::
 
->[!NOTE]
-> Produced variable names, may not contain special characters, white spaces and non-latin characters and can't start with arithmetic characters.
+- **Error-handling configuration** allows you to set a custom functionality for the cases when an action fails. To configure error-handling for an action, select **On error** in its modal. To find more information regarding error-handling, refer to [Handle errors in desktop flows](errors.md).
 
-## Configuring action errors
+    :::image type="content" source="media/configuring-actions/action-on-error.png" alt-text="Screenshot of the On error option in an action's modal.":::
 
-When an action throws an error, the flow stops its execution by default. To configure a custom error handling behavior for an action, select the **On error** option in its properties.
+## Enable and disable actions
 
-![Screenshot of the on On error option in the action.](media/configuring-actions-errors/on-error-option-action.png)
+To disable or enable an action, right-click on it and select **Disable action** or **Enable action**, respectively.
 
-The first option in the dialog box is the **Retry action if an error occurs** checkbox. This checkbox makes the flow execute the action a set number of times after a set number of seconds. The default value is one retrying with an interval of two seconds.
+:::image type="content" source="media/enabling-disabling-actions/enable-disable-action.png" alt-text="Screenshot of the option to disable actions.":::
 
-![Screenshot of the Retry action checkbox in the action.](media/configuring-actions-errors/retry-action.png)
+Disabling an action allows you to remove it from the flow without erasing it. This feature is commonly applied for testing, as it enables you to try different versions of your desktop flow efficiently.
 
-To continue the flow's execution, even if the retry option fails, select the **Continue flow run** option. Through the ​drop-down list, you can:
+When an action is disabled, all variables initialized in its modal get hidden from the variables pane. The flow may throw an error if you use the hidden variables in other actions.
 
-- **Go to next action**: Executes the following action in order.
-- **Repeat action**: Repeats the action until it runs successfully. 
-- **Go to label**: Continues the execution from a point defined by a **Label** action.
+In the example below, two actions throw an error because they contain variables defined in a disabled action. To find information on how to handle errors, go to [Handle errors in desktop flows](errors.md).
 
-![Screenshot of the continue flow run option in the action.](media/configuring-actions-errors/continue-flow-run.png)
-
-Power Automate offers two more error handling options. Select the **New rule** button to:
-- **Set variable**: Sets the desired value to a specified variable.
-- **Run subflow**: Executes a specified subflow. 
-
-![Screenshot of the New rule option in the action.](media/configuring-actions-errors/new-rule.png)
-
-If different errors require different error handling behaviors, select the **Advanced** option and configure each possible error separately. 
-
-## Enabling and disabling actions
-
-To disable or enable an action, right-click on it and select **Disable action** or **Enable action**, respectively. 
-
-![Screenshot of the disable action option.](media/enabling-disabling-actions/enable-disable-action.png)
-
-Disabling an action allows you to remove it from the flow without erasing it. This feature is commonly applied to test different versions of a desktop flow and decide which one is the most efficient. 
-
-When an action is disabled, all variables defined in it are hidden from the **Variables** pane. If the hidden variables are used in other actions, the flow may throw an error. 
-
-In the example below, two actions threw an error because they contain variables defined in a disabled action.
-
-![Screenshot of an example in which disabling an action hides some varibales.](media/enabling-disabling-actions/enable-disable-action-variables.png)
+:::image type="content" source="media/enabling-disabling-actions/enable-disable-action-variables.png" alt-text="Screenshot of an example in which disabling an action causes errors.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

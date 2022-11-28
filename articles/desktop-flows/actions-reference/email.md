@@ -1,13 +1,17 @@
 ---
-title: Email | Microsoft Docs
+title: Email
 description: Email Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -46,7 +50,7 @@ The **Send email** action in the figure below has been configured to send an e-m
 ### <a name="retrieveemails"></a> Retrieve email messages
 Retrieves email messages from an IMAP server
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |IMAP server|No|[Text value](../variable-data-types.md#text-value)||The IMAP server address (e.g. imap.gmail.com)|
@@ -66,7 +70,7 @@ Retrieves email messages from an IMAP server
 |Save attachments into|No|[Folder](../variable-data-types.md#files-and-folders)||The folder to save the attachments|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RetrievedEmails|[List](../variable-data-types.md#list) of [Mail Messages](../variable-data-types.md#email)|The retrieved emails for later processing as a list of mail message objects|
@@ -84,7 +88,7 @@ Retrieves email messages from an IMAP server
 ### <a name="processemails"></a> Process email messages
 Moves, deletes or marks as unread an email (or a list of emails) retrieved by a Retrieve emails action
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |IMAP server|No|[Text value](../variable-data-types.md#text-value)||The IMAP server address (e.g. imap.gmail.com)|
@@ -98,8 +102,8 @@ Moves, deletes or marks as unread an email (or a list of emails) retrieved by a 
 |Mail folder|No|[Text value](../variable-data-types.md#text-value)||The name of the mail folder to which the emails will be moved|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="processemails_onerror"></a> Exceptions
 |Exception|Description|
@@ -111,7 +115,7 @@ Moves, deletes or marks as unread an email (or a list of emails) retrieved by a 
 ### <a name="sendemail"></a> Send email
 Creates and sends a new email message
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |SMTP server|No|[Text value](../variable-data-types.md#text-value)||The SMTP server address|
@@ -132,8 +136,8 @@ Creates and sends a new email message
 |Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s), or a file or a list of files. Multiple files should be enclosed in double quotes (") and separated by a space character|
 
 
-##### Variables Produced
-- This action doesn't produce any variables
+##### Variables produced
+This action doesn't produce any variables.
 
 ##### <a name="sendemail_onerror"></a> Exceptions
 |Exception|Description|

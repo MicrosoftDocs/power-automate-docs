@@ -96,7 +96,7 @@ ipch/
 # TFS 2012 Local Workspace
 $tf/
 
-# Guidance Automation Toolkit
+# Guidance Automation kit
 *.gpState
 
 # ReSharper is a .NET coding add-in
@@ -296,3 +296,4 @@ articles/media/trigger-sharepoint-list/praveen-deon/row-filter.png
 articles/media/trigger-sharepoint-list/praveen-deon/run-as.png
 articles/media/trigger-sharepoint-list/praveen-deon/scope.png
 articles/media/trigger-sharepoint-list/praveen-deon/triggers.png
+*.code-workspace

@@ -14,7 +14,7 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/13/2021
+ms.date: 10/03/2022
 search.app: 
   - Flow
   - Powerplatform
@@ -50,11 +50,17 @@ The trigger condition, **Change type**, precisely defines which combination of c
 
 When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, or `Delete`, respectively.
 
+>[!NOTE]
+> If there are multiple updates to a single row in a table, Power Automate evaluates the trigger for each update, even if the values that are being updated on the row are the same as the previous value. These updates could lead to multiple flow runs. 
+
 ### Table name
 
 The **Table name** list filters the rows to indicate precisely which kind of rows should change before the flow triggers. See [Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview).
 
    ![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
+
+>[!NOTE]
+> The **When a row is added, modified or deleted** trigger doesn't support triggering flows on relationships of type 1:N or N:N.
 
 ### Scope
 
@@ -83,12 +89,13 @@ Use filter conditions to set conditions for when to trigger flows.
 
 ## Filtering columns
 
-Use the **Column filter** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
+Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
 
    ![Filter columns by firstname.lastname.](../media/create-update-delete-trigger/filter-columns.png "Filter columns by firstname.lastname")
 
 >[!NOTE]
 >This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
+>This property in not supported on virtual tables.
 
 ### Filter expression
 
@@ -139,8 +146,7 @@ If nothing is specified, it defaults to the flow owner who created the flow&mdas
 
     ![Run as options.](../media/create-update-delete-trigger/11.png "Run as options")
 
-Additionally, instant flows allow running the steps of any other [connector](/connectors/) (such as [Microsoft Teams](/connectors/teams/), [Microsoft 365
-Outlook](/connectors/office365/), or [SharePoint](/connectors/sharepointonline/) in the same flow using the invoker’s connection. To do so, follow these steps:
+Additionally, instant flows allow running the steps of any other [connector](/connectors/) (such as [Microsoft Teams](/connectors/teams/), [Microsoft 365 Outlook](/connectors/office365/), or [SharePoint](/connectors/sharepointonline/) in the same flow using the invoker’s connection. To do so, follow these steps:
 
 1. Go to the flow overview page.
 

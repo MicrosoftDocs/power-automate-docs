@@ -1,13 +1,17 @@
 ---
-title: Datatype properties | Microsoft Docs
-description: Datatype properties
+title: Variable data type properties
+description: See all the available data type properties of desktop flow variables.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/22/2020
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -15,7 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-# Variables datatype properties
+# Variable data type properties
 
 
 

@@ -1,11 +1,10 @@
 ---
-title: Learn how to create desktop flows with WinAutomation | Microsoft Docs
+title: Learn how to create desktop flows with WinAutomation
 description: Learn how to create desktop flows with WinAutomation.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: georgiostrantzas
 editor: ''
 tags: ''
 
@@ -15,7 +14,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/08/2020
-ms.author: DeonHe
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -252,7 +256,7 @@ ProcessRobot
 
 -   Read about the [WinAutomation acquisition](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/).
 -   Read more at [WinAutomation docs](/previous-versions/troubleshoot/winautomation/).
--   Learn more at [WinAutomation Academy](/learn/browse/?terms=WinAutomation).
+-   Learn more at [WinAutomation Academy](/training/browse/?terms=WinAutomation).
 -   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
 -   Learn to [create Windows recorder (V1) flows](./create-desktop.md).
 -   Learn how to [run desktop flows](./run-desktop-flow.md).

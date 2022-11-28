@@ -1,13 +1,17 @@
 ---
-title: Microsoft Cognitive | Microsoft Docs
+title: Microsoft Cognitive
 description: Microsoft Cognitive Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -45,7 +49,7 @@ Correct spelling errors, recognize the difference among names, brand names, and 
 ### <a name="spellcheck"></a> Spell check
 Invokes the Microsoft Cognitive service named 'Bing Spell Check'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Subscription key|No|[Text value](../variable-data-types.md#text-value)||The subscription key to use for this API call|
@@ -55,7 +59,7 @@ Invokes the Microsoft Cognitive service named 'Bing Spell Check'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -73,7 +77,7 @@ Analyze images and extract data
 ### <a name="analyzeimagemicrosoft"></a> Analyze image
 Invokes the Microsoft Cognitive service named 'Analyze Image'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Server location|N/A|West US, West US 2, East US, East US 2, West Central US, South Central US, West Europe, North Europe, Southeast Asia, East Asia, Australia East, Brazil South, Canada Central, Central India, UK South, Japan East|West US|The server location to be use for this API call|
@@ -87,7 +91,7 @@ Invokes the Microsoft Cognitive service named 'Analyze Image'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -103,7 +107,7 @@ Invokes the Microsoft Cognitive service named 'Analyze Image'
 ### <a name="describeimagemicrosoft"></a> Describe image
 Invokes the Microsoft Cognitive service named 'Describe Image'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Server location|N/A|West US, West US 2, East US, East US 2, West Central US, South Central US, West Europe, North Europe, Southeast Asia, East Asia, Australia East, Brazil South, Canada Central, Central India, UK South, Japan East|West US|The server location to be use for this API call|
@@ -115,7 +119,7 @@ Invokes the Microsoft Cognitive service named 'Describe Image'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -131,7 +135,7 @@ Invokes the Microsoft Cognitive service named 'Describe Image'
 ### <a name="ocrmicrosoft"></a> OCR
 Invokes the Microsoft Cognitive service named 'OCR'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Server location|N/A|West US, West US 2, East US, East US 2, West Central US, South Central US, West Europe, North Europe, Southeast Asia, East Asia, Australia East, Brazil South, Canada Central, Central India, UK South, Japan East|West US|The server location to be use for this API call|
@@ -144,7 +148,7 @@ Invokes the Microsoft Cognitive service named 'OCR'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -160,7 +164,7 @@ Invokes the Microsoft Cognitive service named 'OCR'
 ### <a name="tagimagemicrosoft"></a> Tag image
 Invokes the Microsoft Cognitive service named 'Tag Image'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Server location|N/A|West US, West US 2, East US, East US 2, West Central US, South Central US, West Europe, North Europe, Southeast Asia, East Asia, Australia East, Brazil South, Canada Central, Central India, UK South, Japan East|West US|The server location to be use for this API call|
@@ -171,7 +175,7 @@ Invokes the Microsoft Cognitive service named 'Tag Image'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -189,7 +193,7 @@ Detect sentiment, key phrases, named entities and language from text
 ### <a name="detectlanguage"></a> Detect language
 Invokes the Microsoft Cognitive service named 'Text Analytics - Detect Language'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Server location|N/A|West US, West US 2, East US, East US 2, West Central US, South Central US, West Europe, North Europe, Southeast Asia, East Asia, Australia East, Brazil South, Canada Central, Central India, UK South, Japan East|West US|The server location to be use for this API call|
@@ -198,7 +202,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Detect Language'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -214,7 +218,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Detect Language'
 ### <a name="keyphrases"></a> Key phrases
 Invokes the Microsoft Cognitive service named 'Text Analytics - Key Phrases'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Server location|N/A|West US, West US 2, East US, East US 2, West Central US, South Central US, West Europe, North Europe, Southeast Asia, East Asia, Australia East, Brazil South, Canada Central, Central India, UK South, Japan East|West US|The server location to be use for this API call|
@@ -224,7 +228,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Key Phrases'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
@@ -240,7 +244,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Key Phrases'
 ### <a name="sentiment"></a> Sentiment
 Invokes the Microsoft Cognitive service named 'Text Analytics - Sentiment'
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Server location|N/A|West US, West US 2, East US, East US 2, West Central US, South Central US, West Europe, North Europe, Southeast Asia, East Asia, Australia East, Brazil South, Canada Central, Central India, UK South, Japan East|West US|The server location to be use for this API call|
@@ -250,7 +254,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Sentiment'
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|

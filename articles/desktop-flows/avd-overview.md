@@ -1,15 +1,19 @@
 ---
-title: Introduction to the Power Automate Azure Virtual Desktop integration starter kit | Microsoft Docs
+title: Introduction to the Power Automate Azure Virtual Desktop integration starter kit
 description: Overview of the Power Automate Azure Virtual Desktop integration starter kit
 services: ''
-author: mariosleon
+author: georgiostrantzas
 editor: ''
 tags: ''
-
 ms.subservice: desktop-flow
 ms.topic: overview
 ms.date: 10/28/2021
-ms.author: marleon
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -22,7 +26,7 @@ search.audienceType:
 The Microsoft Power Automate Azure Virtual Desktop (AVD) Integration Starter Kit
 is a set of templates that are designed to help orchestrate and scale virtual
 machines used to run desktop flows. The kit includes a Power App and multiple
-flows to automate the scaling up and down of machines. The assets part of the
+flows to automate the scaling up and down of the machine pool. The assets part of the
 starter kit should be seen as a template from which you inherit your individual
 solution or can serve as inspiration for implementing your own apps and flows.
 

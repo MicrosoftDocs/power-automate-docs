@@ -1,13 +1,17 @@
 ---
-title: Datetime | Microsoft Docs
+title: Datetime
 description: Datetime Actions Reference
-author: mariosleon
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -40,7 +44,7 @@ To find the difference between two dates, use the **Subtract dates** action. The
 ### <a name="add"></a> Add to datetime
 Adds (or subtracts) a specific number of seconds, minutes, hours or days to a datetime value
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Datetime|No|[Datetime](../variable-data-types.md#dates-and-time)||The datetime value to alter|
@@ -48,18 +52,18 @@ Adds (or subtracts) a specific number of seconds, minutes, hours or days to a da
 |Time unit|N/A|Seconds, Minutes, Hours, Days, Months, Years|Seconds|The time unit the time to add represents|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ResultedDate|[Datetime](../variable-data-types.md#dates-and-time)|The new, altered datetime value|
 
 
 ##### <a name="add_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="subtract"></a> Subtract dates
 Finds the time difference between two given dates in days, hours, minutes, or seconds
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |From date|No|[Datetime](../variable-data-types.md#dates-and-time)||The datetime to subtract the first datetime from. This will be the base datetime, so generally put the later date/time in this attribute|
@@ -67,18 +71,18 @@ Finds the time difference between two given dates in days, hours, minutes, or se
 |Get difference in|N/A|Seconds, Minutes, Hours, Days|Days|The unit of time to express the difference in|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |TimeDifference|[Numeric value](../variable-data-types.md#numeric-value)|The difference in time as a numeric value|
 
 
 ##### <a name="subtract_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+This action doesn't include any exceptions.
 ### <a name="getcurrentdatetime"></a> Get current date and time
 Retrieves the current date or the current date and time
 
-##### Input Parameters
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Retrieve|N/A|Current date and time, Current date only|Current date and time|Specify whether to get the date and time, or just the date. If the latter is chosen, the time value will be stored as midnight (0:00:00)|
@@ -86,7 +90,7 @@ Retrieves the current date or the current date and time
 |Country/region|No|[Text value](../variable-data-types.md#text-value)|Europe/Bucharest|The country/region to get the time of or add a numeric value as the hours that will be added in the UTC time zone|
 
 
-##### Variables Produced
+##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |CurrentDateTime|[Datetime](../variable-data-types.md#dates-and-time)|The current datetime value|
