@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 11/28/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -101,6 +101,10 @@ Now that you've connected your Power BI workspace to process advisor and install
 1. Search for and add **Process Insights Prod**.
 
 1. Assign it **admin access**.
+
+    >[!IMPORTANT]
+    >
+    >Make sure to assign admin access for your service principals. If you skip this step, your workspace will experience unwanted results.
 
 ## Load your process analytics in Power BI
 
