@@ -78,7 +78,7 @@ On-premises data gateways establish the required cloud connectivity and must be 
 
 When you install an on-premises data gateway, it defaults to the region that Power Automate uses.
 
-To find more information regarding on-premises data gateways, go to [Install an on-premises data gateway](/data-integration/gateway/service-gateway-instal).
+To find more information regarding on-premises data gateways, go to [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
 ## Install Selenium IDE (optional)
 
