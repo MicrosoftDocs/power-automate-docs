@@ -11,9 +11,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.author: cgarty
 ms.prod: 
-
 ms.technology: 
-ms.author: deonhe
 audience: Power user
 ---
 
