@@ -99,7 +99,7 @@ As shown previously, you can get the list of workflows by calling `GET` on `work
 | name              | The display name that you have given the flow. |
 | _modifiedby_value | The last user who updated the flow. This is an id from the systemusers table in Dataverse. |
 | _createdby_value  | The user who created the flow. This is an id from the systemusers table in Dataverse. |
-| type              | Indicates if the flow is a running flow, or a template that can be used to create additional flows. 1 - flow, 2 - activation or 3 - template. |
+| type              | Indicates if the flow is a running flow, or a template that can be used to create more flows. 1 - flow, 2 - activation or 3 - template. |
 | description       | The user-provided description of the flow. |
 | clientdata        | A string-encoded JSON of the flow definition and its connectionReferences. |
 
@@ -142,7 +142,7 @@ There are three properties:
 | Property name  | Description                                                 |
 | -------------- | ----------------------------------------------------------- |
 | connectionName | Identifies the connection. You can see the connectionName by going to the **Connections** page and then copying it from the URL of the connection. |
-| source         | Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (those where a user selects a button to run the flow), and indicates that the end user will provide the connection. In this case the connectionName is only used at design time. If the connection is `Embedded`, that means the connectionName you specify is always used. |
+| source         | Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (where a user selects a button to run the flow), and indicates that the end user will provide the connection. In this case, the connectionName is only used at design time. If the connection is `Embedded`, that means the connectionName you specify is always used. |
 | id             | The identifier of the connector. The id always starts with `/providers/Microsoft.PowerApps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. |
 
 Once you execute the `POST` request, you'll receive the `OData-EntityId` header, which will contain the `workflowid` for your new flow.
@@ -165,7 +165,7 @@ Content-type: application/json
 > [!NOTE]
 > The syntax for changing the owner uses the `odata.bind` format. This means instead of patching the \_ownerid_value field directly, you append `@odata.bind` to the property name and then wrap the ID with `systemusers()`.
 
-In another example, you can turn a cloud flow on with this call:
+In another example, you can turn on a cloud flow with this call:
 
 ```http
 PATCH https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows(00000000-0000-0000-0000-000000000002)
@@ -252,7 +252,7 @@ The `AccessMask` parameter is a field with the following values for different pe
 | ShareAccess  | The right to share the flow.                         |
 | AssignAccess | The right to change the owner of the flow.           |
 
-You can combine permissions with a comma. For example, you can provide the ability to both read and update a cloud flow by passing `ReadAccess,WriteAccess`.
+You can combine permissions with a comma. For example, you can provide the ability to read and update a cloud flow by passing `ReadAccess,WriteAccess`.
 
 You can *unshare* a cloud flow with the `RevokeAccess` action. Here's an example:
 
