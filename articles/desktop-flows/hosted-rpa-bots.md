@@ -400,7 +400,7 @@ The Hosted RPA bots (preview) feature is enabled by default. System admins and e
 4. Under Hosted RPA (preview), select the toggle for **Enable creation of hosted RPA bots** to disable or enable this feature
 5. Select **Save**.
 
-:::image type="content" source="media/hosted-rpa-bots/enable-creation-hosted-rpa-bots" alt-text="Screenshot of the option to allow the creation of hosted RPA bots.":::
+:::image type="content" source="media/hosted-rpa-bots/enable-creation-hosted-rpa-bots.png" alt-text="Screenshot of the option to allow the creation of hosted RPA bots.":::
 
 > [!NOTE]
 > When the hosted RPA bots toggle is disabled, any existing Hosted RPA bots group will no longer appear in the Power Automate portal, and any desktop flows associated with the Hosted RPA bots group will no longer run.
