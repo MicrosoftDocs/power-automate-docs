@@ -405,3 +405,6 @@ The Hosted RPA bots (preview) feature is enabled by default. System admins and e
 > [!NOTE]
 > When the hosted RPA bots toggle is disabled, any existing Hosted RPA bots group will no longer appear in the Power Automate portal, and any desktop flows associated with the Hosted RPA bots group will no longer run.
 
+## Environment Lifecycle Operations & Hosted RPA bots (preview)
+
+The Hosted RPA bots (preview) feature does not work with Environment Lifecycle Operations on the Dataverse Environments (eg. Backup / Restore).  If an Dataverse environment with Hosted RPA bots machine groups is restored / moved / copied, the Hosted Rpa bots machine group in the resulting Dataverse environment will not be able to run Desktop Flows.
