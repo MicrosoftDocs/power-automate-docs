@@ -554,6 +554,11 @@
       "source_path": "articles/desktop-flows/using-browsers.md",
       "redirect_url": "/power-automate/desktop-flows/install-browser-extensions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/hosted-rpa-bots.md",
+      "redirect_url": "/power-automate/desktop-flows/hosted-machine-groups",
+      "redirect_document_id": false
     }
   ]
 }

@@ -361,9 +361,9 @@
       href: ./desktop-flows/manage-machine-groups.md
     - name: Create desktop flow connections
       href: ./desktop-flows/desktop-flow-connections.md
-    - name: Hosted machines
+    - name: Hosted machines (preview)
       href: ./desktop-flows/hosted-machines.md
-    - name: Hosted machine groups
+    - name: Hosted machine groups (preview)
       href: ./desktop-flows/hosted-machine-groups.md
     - name: Scale with AVD starter kit
       items:
