@@ -4,7 +4,7 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/29/2022
+ms.date: 11/07/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -94,7 +94,7 @@ Most environments don't require to change the default configuration. If your com
 
 1. Select **Change account**
 1. Select **This account**
-1. Provide the new account, for example: **DOMAIN\AlexJohnson**
+1. Provide the new account, for example: **DOMAIN\AlexJohnson** 
 1. Provide the password of this account and select **Configure**
 
 :::image type="content" source="media/troubleshoot/power-automate-troubleshoot-dialog.png" alt-text="Screenshot of the Power Automate troubleshoot dialog.":::
