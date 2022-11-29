@@ -72,7 +72,7 @@ You can download and install Power Automate through an MSI installer or Microsof
 > [!IMPORTANT]
 > Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. To learn more, go to [Switch from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
-Power Automate enables you to [trigger your desktop flows from cloud flows](link-pad-flow-portal.md). To take advantage of this feature, you need to install an on-premises data gateway on your device.
+Power Automate enables you to [trigger your desktop flows from cloud flows](trigger-desktop-flows.md). To take advantage of this feature, you need to install an on-premises data gateway on your device.
 
 On-premises data gateways establish the required cloud connectivity and must be installed on each device on which you'll trigger desktop flows. They aren't required if you only want to create, edit, and test your desktop flows on these devices.
 
