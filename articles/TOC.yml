@@ -668,8 +668,6 @@
       href: process-mining-processes-and-data.md
     - name: Transform and map data
       href: process-mining-transform.md
-    - name: Troubleshoot issues
-      href: process-mining-troubleshoot.md
     - name: Visualize and gain insights from processes
       href: process-mining-visualize.md
     - name: Customize a report with your own Power BI workspace
@@ -845,6 +843,8 @@
   - name: Glossary
     href: process-advisor-glossary.md
     displayName: Process advisor glossary
+  - name: Troubleshoot issues
+    href: process-mining-troubleshoot.md  
 - name: Connect to data
   items:
   - name: Available connections

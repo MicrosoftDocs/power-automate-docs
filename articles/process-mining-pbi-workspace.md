@@ -168,6 +168,10 @@ After completing these steps, return to the analytics page of your process in pr
 
     Once this step is done, you'll see the report in your Power BI workspace with the report name that you entered. You can edit this report and save it. Your report on process advisor will be updated with all of the changes that you make with Power BI.
 
+## Troubleshoot issues
+
+If you encounter issues or error messages, go to [Issues with your own Power BI workspace (preview)](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace-preview).
+
 ### See also
 
 [Workspaces in Power BI](/power-bi/collaborate-share/service-new-workspaces)
