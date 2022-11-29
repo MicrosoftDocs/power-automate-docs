@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 11/28/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -102,6 +102,10 @@ Now that you've connected your Power BI workspace to process advisor and install
 
 1. Assign it **admin access**.
 
+    >[!IMPORTANT]
+    >
+    >It's required that the service principal gets added as an admin. If you skip this step, the feature won't work.
+
 ## Load your process analytics in Power BI
 
 Load your process analytics in Power BI to start customizing your report.
@@ -132,7 +136,7 @@ After completing these steps, return to the analytics page of your process in pr
 
 1. To refresh and reanalyze the process, select **Refresh**.
 
-1. Select **Open in Power BI**. If you don't see this button, make sure you completed the steps in the [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi) section in this article.
+1. Select **Open in Power BI**. If you don't see this button, make sure you've completed the steps in the [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi) section in this article.
 
     :::image type="content" source="media/process-mining-pbi-workspace/open-pbi.png" alt-text="Screenshot of the 'Open in Power BI' button.":::
 
