@@ -26,17 +26,14 @@ Windows 11 allow users to create automations through the preinstalled Power Auto
 
    ![Screenshot of the Windows 11 search menu.](media\getting-started-windows-11\launching.png)
 
-
-<!-- What is RPA? -->
-
-Any Windows user can build flows with little-to-no coding experience. A collection of more than 400 premade actions and a recorder that captures mouse and keyboard functions make RPA intuitive for both regular and power users.
+Any Windows user can build flows with little-to-no coding experience. A collection of more than 400 premade actions and a recorder that captures mouse and keyboard functions make robotic process automation (RPA) intuitive for both regular and power users.
 
 Using the available actions, you can automate virtually any Microsoft and third-party application on Windows and exchange data between different applications and webpages.
 
 For example, you can extract prices from shopping websites, compare them, and store them to Excel spreadsheets by deploying some easy-to-configure actions. 
 
 Using Power Automate, you can populate any form and reduce the time needed to enter data on regularly used applications. Performing repetitive online orders, tracking price changes, populating fields on web pages and desktop applications, creating backups, and converting files are all tasks that can be fully automated with desktop flows.
-
+>
    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLTqj]
 
 Apart from the premade actions, Power Automate enables you to record your activity and automatically convert these steps into actions. The recording feature makes RPA friendly to all non-technical users and allows you to develop simple flows effortlessly.
