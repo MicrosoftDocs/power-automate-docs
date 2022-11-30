@@ -31,8 +31,6 @@ If you skip the installation of the browser extensions, you can do it manually l
 - [Google Chrome](https://go.microsoft.com/fwlink/?linkid=2150929)
 - [Mozilla Firefox](https://go.microsoft.com/fwlink/?linkid=2151511)
 
-You can also install the browser extension for Google Chrome through the **xpi** file in the installation folder. The default path is **C:\Program Files (x86)\Power Automate Desktop**. This method is available only for the Manifest V3 extension. To find more information about Manifest V3, go to [Migration to Manifest V3](manifest.md).
-
 ## Configure Microsoft Edge
 
 To ensure that **Microsoft Edge** works as expected with Power Automate, disable running background apps when Microsoft Edge is closed.
