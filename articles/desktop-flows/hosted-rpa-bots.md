@@ -407,4 +407,4 @@ The Hosted RPA bots (preview) feature is enabled by default. System admins and e
 
 ## Environment Lifecycle Operations & Hosted RPA bots (preview)
 
-The hosted RPA bots (preview) feature doesn't work with Environment Lifecycle Operations on the Dataverse Environments (eg. Backup/Restore). If a Dataverse environment with hosted RPA bots machine groups is restored, moved, or copied, the hosted Rpa bots machine group in the resulting Dataverse environment won't be able to run desktop dlows.
+The hosted RPA bots (preview) feature doesn't work with Environment Lifecycle Operations on the Dataverse Environments (eg. Backup/Restore). If a Dataverse environment with hosted RPA bots machine groups is restored, moved, or copied, the hosted Rpa bots machine group in the resulting Dataverse environment won't be able to run desktop flows.
