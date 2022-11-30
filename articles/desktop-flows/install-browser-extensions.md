@@ -33,11 +33,11 @@ If you skip the installation of the browser extensions, you can do it manually l
 
 ## Install browser extension packages
 
-After Power Automate for desktop version 2.27, the Google Chrome and Mozilla Firefox web extensions are part of the installation. You can find the respective web extension files in the following path: **C:\Program Files (x86)\Power Automate Desktop\BrowserExtensions**.
+After Power Automate for desktop version 2.27, the Google Chrome and Mozilla Firefox browser extensions are part of the installation. Find the respective web extension files in the following path: **C:\Program Files (x86)\Power Automate Desktop\BrowserExtensions**.
 
 ### Google Chrome
 
-1. Go to **Chrome extensions** through the browser’s setting or enter **chrome://extensions/** in the address bar.
+1. Go to **Chrome extensions** through the browser’s settings or enter **chrome://extensions/** in the address bar.
 
 1. Ensure that **Developer mode** is enabled.
 
@@ -53,7 +53,7 @@ Alternatively, you can launch Google Chrome, and drag and drop the extension fil
 
 ### Mozilla Firefox
 
-1. Go to the **Firefox Add-ons Manager** through the browser’s setting or enter **about:addons** in the address bar.
+1. Go to the **Firefox Add-ons Manager** through the browser’s settings or enter **about:addons** in the address bar.
 
 1. Select the gear icon, then **Install Add-on From File…**.
 
