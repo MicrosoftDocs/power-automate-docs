@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/process-mining-auto-rec.md",
+      "redirect_url": "process-mining-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/android.md",
       "redirect_url": "mobile/overview-mobile",
       "redirect_document_id": "false"
@@ -539,8 +544,27 @@
       "source_path": "articles/desktop-flows/run-pad-flow.md#use-a-console-run-url-in-the-command-prompt",
       "redirect_url": "/power-automate/desktop-flows/run-pad-flow#use-a-run-url-in-the-command-prompt",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/setup.md",
+      "redirect_url": "/power-automate/desktop-flows/requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/using-browsers.md",
+      "redirect_url": "/power-automate/desktop-flows/install-browser-extensions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/run-pad-flow.md",
+      "redirect_url": "/power-automate/desktop-flows/trigger-desktop-flows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/link-pad-flow-portal.md",
+      "redirect_url": "/power-automate/desktop-flows/trigger-desktop-flows",
+      "redirect_document_id": false
     }
-
   ]
 }
 

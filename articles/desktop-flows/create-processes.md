@@ -1,5 +1,5 @@
 ---
-title: Learn how to create desktop flows with WinAutomation | Microsoft Docs
+title: Learn how to create desktop flows with WinAutomation
 description: Learn how to create desktop flows with WinAutomation.
 services: ''
 suite: flow

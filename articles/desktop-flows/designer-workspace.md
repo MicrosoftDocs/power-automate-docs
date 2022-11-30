@@ -1,5 +1,5 @@
 ---
-title: The flow designer workspace | Microsoft Docs
+title: The flow designer workspace
 description: The flow designer workspace
 author: georgiostrantzas
 

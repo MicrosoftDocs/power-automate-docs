@@ -1,12 +1,14 @@
 ---
 title: Analyze processes in process advisor (contains video) | Microsoft Docs
 description: Learn how to analyze processes with task mining in process advisor. The analyze feature adds a recording into the process map and associated analytics.
-author: nijemcevic 
-
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 11/02/2021
-ms.author: tatn
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -27,9 +29,14 @@ On the left navigation pane in Power Automate, select **Process advisor** > **Pr
 Some key things to do here are to view the status of the recordings and analyze your process. The **Analyze** option in the menu gets you started. The analyze feature adds a selected recording into the process map and associated analytics. If a recording's status isn't *analyzed*, it won't be part of the analytics reports.
 
 - After the process is analyzed, the process map and related analytics are available when you select **Analytics** in the menu.
+
 - The process status on the **Details** pane shows the status of the analysis and whether the process has been analyzed before.
+
 - Analysis happens at the process level for all recordings that are ready to be analyzed.
+
 - Pay attention to the recording status, which you can find under the **Status** column of the **Recordings** pane. Only recordings with a specific status will be considered for analysis.
+
+    :::image type="content" source="./media/related-nalytics.png" alt-text="Screenshot of the details and recordings in the 'Analytics' screen.":::
 
 Here's a short video on how to view analytics with process advisor:<br>
 </br>

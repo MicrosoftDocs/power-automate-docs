@@ -1,5 +1,5 @@
 ---
-title: Convert Excel to PDF using VBScript | Microsoft Docs
+title: Convert Excel to PDF using VBScript
 description: Convert Excel to PDF using VBScript
 author: georgiostrantzas
 

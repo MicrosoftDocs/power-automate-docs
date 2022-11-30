@@ -1,11 +1,14 @@
 ---
-title: Prepare processes and data with process mining (preview) in the process advisor feature in Power Automate (contains video) | Microsoft Docs
+title: Prepare processes and data with process mining (preview) in the process advisor feature in Power Automate (contains video)
 description: This topic explains how to prepare processes and data with process mining in the process advisor feature in Power Automate.
-author: nijemcevic 
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 05/25/2022
-ms.author: tatn
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -28,12 +31,7 @@ Before you can use process mining effectively, you need to understand:
 
 Here's a short video on how to upload data for process mining:<br>
 </br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWNG85]
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5b4UA]
 
 ## Data requirements
 
@@ -68,24 +66,23 @@ The benefit of connecting to a database directly is keeping process advisor up t
 One easy way to try out process advisor regardless of where your data source is located is with the Text/CSV connector. You might need to work with your database admin to export a small sample of the event log as a CSV file. Once you have the CSV file, you can import it into process advisor using the following steps in the data source selection screen.
 
 > [!NOTE]
-> You must have OneDrive for Business to use the Text/CSV connector. If you don't have OneDrive for Business, consider using *Blank table* instead of *Text/CSV*, as in step 1. You won't be able to import as many records in *Blank table*.
+> You must have OneDrive for Business to use the **Text/CSV** connector. If you don't have OneDrive for Business, consider using **Blank table** instead of **Text/CSV**, as in step 3. You won't be able to import as many records in **Blank table**.
 
-1. On the navigation pane on the left, select **Data** > **Tables**.
+1. On the process advisor home page, create a process by selecting **Start here**.
 
-1. On the toolbar at the top, select **Data** > **Get data** > **Text/CSV** on the **Power Query - Choose data source** screen.
+1. Enter a process name and select **Create**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Text/CSV selection.](media/process-mining-processes-and-data/text-csv.png "Text/CSV selection")
+1. On the **Choose data source** screen, select **All categories** > **Text/CSV**. 
+
+    :::image type="content" source="media/process-mining-processes-and-data/text-csv.png" alt-text="Screenshot of Text/CSV selection.":::
 
 1. Select **Browse OneDrive**. You might need to authenticate.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Browse OneDrive.](media/process-mining-processes-and-data/browse-onedrive.png "Browse OneDrive")
+    :::image type="content" source="media/process-mining-processes-and-data/browse-onedrive.png" alt-text="Screenshot of Browse OneDrive.":::
 
 1. Upload your event log by selecting the **Upload** icon in the upper right and then selecting **Files**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Upload > Files.](media/process-mining-processes-and-data/upload-files.png "Upload files")
+    :::image type="content" source="media/process-mining-processes-and-data/upload-files.png" alt-text="Screenshot of Uploading files selection.":::
 
 1. Upload your event log, select your file from the list, and then select **Open** to use that file.
 
@@ -97,27 +94,23 @@ The Dataverse connector isn't supported in Microsoft Power Platform. You need to
 
 2. You need the environment URL of the Dataverse environment you are trying to connect to. Normally it looks like this:
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Dataverse URL.](media/process-mining-processes-and-data/dataverse-url.png "Dataverse URL")
+    :::image type="content" source="media/process-mining-processes-and-data/dataverse-url.png" alt-text="Screenshot of the Dataverse URL.":::
 
     To learn how to find your URL, go to [Finding your Dataverse environment URL](/power-query/connectors/dataverse#finding-your-dataverse-environment-url).
 
 1. On the **Power Query - Choose data sources** screen, select **OData**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of OData selection.](media/process-mining-processes-and-data/odata.png "OData selection")
+    :::image type="content" source="media/process-mining-processes-and-data/odata.png" alt-text="Screenshot of OData selection.":::
 
 1.	In the URL textbox, type **api/data/v9.2** at the end of the URL so it looks like this:
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of URL.](media/process-mining-processes-and-data/url.png "URL")
+    :::image type="content" source="media/process-mining-processes-and-data/url.png" alt-text="Screenshot of URL.":::
 
 1.	Under **Connection credentials**, select **Organizational account** in the **Authentication kind** field.
 
 1. Select **Sign in** and enter your credentials.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Connection credentials screen.](media/process-mining-processes-and-data/authentication-kind.png "Connection credentials screen")
+   :::image type="content" source="media/process-mining-processes-and-data/authentication-kind.png" alt-text="Screenshot of the Connection credentials screen.":::
 
 1. Select **Next**.
 
@@ -125,5 +118,4 @@ The Dataverse connector isn't supported in Microsoft Power Platform. You need to
 
 1. Select the checkbox next to the table you want to import, and then select **Next**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the OData folder contents.](media/process-mining-processes-and-data/import.png "OData folder contents")
+   :::image type="content" source="media/process-mining-processes-and-data/import.png" alt-text="Screenshot of the OData folder contents.":::

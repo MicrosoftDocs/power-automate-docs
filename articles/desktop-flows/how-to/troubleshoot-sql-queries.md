@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot SQL queries | Microsoft Docs
+title: Troubleshoot SQL queries
 description: Troubleshoot SQL queries
 author: georgiostrantzas
 

@@ -1,5 +1,5 @@
 ---
-title: Use inputs and outputs in Selenium IDE flows | Microsoft Docs
+title: Use inputs and outputs in Selenium IDE flows
 description: Use inputs and outputs in Selenium IDE flows.
 services: ''
 suite: flow

@@ -1,5 +1,5 @@
 ---
-title: Handle custom forms | Microsoft Docs
+title: Handle custom forms
 description: Handle custom forms	
 author: georgiostrantzas
 ms.service: power-automate
