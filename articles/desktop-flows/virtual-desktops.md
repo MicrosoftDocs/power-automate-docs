@@ -64,7 +64,7 @@ UI elements captured on the physical device are located under the **Computer** p
 
 ## Known issues and limitations
 
-- **Issue:** Virtual desktop automation is available only in Windows RDP, Citrix Desktop, and Citrix Virtual Apps. Other virtual desktop platforms aren't supported.
+- **Issue:** Virtual desktop automation is available only in Windows RDP, RemoteApp, Citrix Desktop, and Citrix Virtual Apps. Other virtual desktop platforms aren't supported.
 
     **Workaround:** None
 
