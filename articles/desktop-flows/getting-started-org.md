@@ -23,7 +23,7 @@ search.audienceType:
 
 Power Automate enables regular and power users to create flows that automate routine repetitive tasks. Build flows from pre-made actions, or [record windows and web browser activity in real time](recording-flow.md).
 
-Unlock the full spectrum of RPA features such as premium cloud connectors, the ability to [run your flows automatically](link-pad-flow-portal.md), [detailed monitoring](monitor-desktop-flow-runs.md) and many more.
+Unlock the full spectrum of RPA features such as premium cloud connectors, the ability to [run your flows automatically](trigger-desktop-flows.md), [detailed monitoring](monitor-desktop-flow-runs.md) and many more.
 
 Power Automate gives you the option to [share your flows](manage.md#share-desktop-flows) among your colleagues so that you can improve automations and build on top of them.
 

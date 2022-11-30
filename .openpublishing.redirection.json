@@ -554,6 +554,16 @@
       "source_path": "articles/desktop-flows/using-browsers.md",
       "redirect_url": "/power-automate/desktop-flows/install-browser-extensions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/run-pad-flow.md",
+      "redirect_url": "/power-automate/desktop-flows/trigger-desktop-flows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/link-pad-flow-portal.md",
+      "redirect_url": "/power-automate/desktop-flows/trigger-desktop-flows",
+      "redirect_document_id": false
     }
   ]
 }

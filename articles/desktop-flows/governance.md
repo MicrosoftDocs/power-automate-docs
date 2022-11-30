@@ -135,7 +135,7 @@ IT administrators, may set the following registry key, to configure the Power Au
 
 ***Value***
 
-- **ProxyAddress:Port (e.g.: myproxy.com:3128)**: The proxy server and port configured will override the proxy server and port configured in Windows.
+- **ProxyAddress:Port (e.g.: `https://myproxy.com:3128`)'**: The proxy server and port configured will override the proxy server and port configured in Windows.
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
