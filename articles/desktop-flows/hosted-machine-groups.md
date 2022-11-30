@@ -355,6 +355,42 @@ The **Desktop Flows Machine Image Admin** role only brings full privileges on th
 
 :::image type="content" source="media/hosted-machine-groups/desktop-flow-machine-image-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Image Admin role.":::
 
+## Use your work or school account (preview)
+
+Hosted machine groups now support work and school accounts in preview. If you use your work or school account, your hosted machine group will have access to your resources that are part of the business plan linked to your organization, such as Office, Sharepoint, Azure, and more.
+
+When you register a hosted machine group with this access option, you won't be prompted for credentials. Instead, the machine will be registered to your Azure Active Directory (Azure AD), and you'll be able to sign in with your Azure AD credentials. To [create a desktop flow connection](desktop-flow-connections.md) to target the hosted machine group, enter your work or school account email address and the associated password.
+
+:::image type="content" source="media/hosted-machine-groups/use-work-school-account-option.png" alt-text="Screenshot of the Use your work or school account option in the hosted machine group creation wizard.":::
+
+### Disable/enable work or school accounts in an environment
+
+The work or school accounts feature is enabled by default. System admins and environment admins can disable or enable the feature from the Power Platform admin center.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. Go to **Environments**, and select the appropriate environment.
+
+1. Select **Settings** > **Features**.
+
+1. Under **Hosted RPA (preview)**, select the toggle for **Enable work or school accounts for hosted machine groups (preview)** to disable or enable this feature.
+
+1. Select **Save**.
+
+:::image type="content" source="media/hosted-machine-groups/enable-work-school-accounts-hosted-machine-groups-option.png" alt-text="Screenshot of the Enable work or school accounts for hosted machine groups option in the tPower Platform admin center.":::
+
+> [!NOTE]
+> Disabling this feature at the environment level will remove the **Work or school account** option in the hosted machine group creation wizard. Also, it will prevent any desktop flows from running using hosted machine groups configured with work or school accounts.
+
+### Disable  work or school accounts at the tenant level
+
+To prevent users from creating hosted machine groups with work or school accounts at the tenant level, send a request to support to disable the feature at the tenant level.
+
+> [!NOTE]
+>
+> - Disabling this feature at the tenant level won't hide the **Work or school account** option in the hosted machine group creation wizard. However, the hosted machine group creation will fail with an error.
+> - Desktop flows will continue to run using work or school account connection. You need to manually remove hosted machine groups that have been created with the **Work or school account** option.
+
 ## Hosted machine groups limitations
 
 This section presents all the limitation of hosted machine groups.
