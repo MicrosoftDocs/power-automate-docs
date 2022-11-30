@@ -29,7 +29,7 @@ To read and extract data from an Excel document, use the **Read from Excel works
 
 When the flow runs, the action stores the data in a data table variable:
 
-:::image type="content" source="media/excel/datatable-values.png" alt-text="Screenshot of the a data table displayed in the value viewer.":::
+:::image type="content" source="media/excel/datatable-values.png" alt-text="Screenshot of a data table displayed in the value viewer.":::
 
 To write data to an Excel spreadsheet, use the **Write to Excel worksheet** action. This action can write any static data or variable to a specified cell or multiple cells in an Excel worksheet.
 
