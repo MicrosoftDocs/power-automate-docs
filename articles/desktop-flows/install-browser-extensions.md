@@ -31,9 +31,43 @@ If you skip the installation of the browser extensions, you can do it manually l
 - [Google Chrome](https://go.microsoft.com/fwlink/?linkid=2150929)
 - [Mozilla Firefox](https://go.microsoft.com/fwlink/?linkid=2151511)
 
+## Install browser extension packages
+
+After Power Automate for desktop version 2.27, the Google Chrome and Mozilla Firefox web extensions are part of the installation. You can find the respective web extension files in the following path: **C:\Program Files (x86)\Power Automate Desktop\BrowserExtensions**.
+
+### Google Chrome
+
+1. Go to **Chrome extensions** through the browser’s setting or enter **chrome://extensions/** in the address bar.
+
+1. Ensure that **Developer mode** is enabled.
+
+1. Select **Load unpacked**.
+
+1. Browse to the browser extension folder of your Power Automate installation.
+
+1. Select **Select folder** in the dialog.
+
+1. Select **Add**.
+
+Alternatively, you can launch Google Chrome, and drag and drop the extension file in the browser area.
+
+### Mozilla Firefox
+
+1. Go to the **Firefox Add-ons Manager** through the browser’s setting or enter **about:addons** in the address bar.
+
+1. Select the gear icon, then **Install Add-on From File…**.
+
+1. Browse to the browser extension folder of your Power Automate installation.
+
+1. Select **Open** in the dialog.
+
+1. Select **Add**.
+
+Alternatively, you can launch Mozilla Firefox, and drag and drop the extension file in the browser area.
+
 ## Configure Microsoft Edge
 
-To ensure that **Microsoft Edge** works as expected with Power Automate, disable running background apps when Microsoft Edge is closed. 
+To ensure that **Microsoft Edge** works as expected with Power Automate, disable running background apps when Microsoft Edge is closed.
 
 To disable this option, go to **Settings** > **System** and disable **Continue running background apps when Microsoft Edge is closed**.
 
@@ -63,7 +97,7 @@ To disable protected mode and allow Power Automate to clear the browser's cache 
 
     :::image type="content" source="media/install-browser-extensions/internet-explorer-internet-protected-mode.png" alt-text="Screenshot of the security tab in the Internet Explorer options":::
 
-1. Select **Apply** and **OK** to save the change and close the dialog .
+1. Select **Apply** and **OK** to save the change and close the dialog.
 
 ## Configure Internet Explorer for servers
 
