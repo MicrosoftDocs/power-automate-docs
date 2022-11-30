@@ -234,11 +234,11 @@ You can share hosted RPA bots with other users so they can create connections to
    > Hosted RPA bots setup limitations:
    > - Only direct connectivity connections are supported.
    > - Only local account credentials are supported for now. E.g.: the credentials that were provided upon hosted RPA bots creation.
-   > - Only available for [unattended run mode](./run-pad-flow.md#unattended-mode).
+   > - Only available for [unattended run mode](./run-unattended-desktop-flows.md).
 
 ### Trigger a desktop flow
 
-You can trigger a desktop flow to run on your hosted RPA bots the same way you trigger desktop flows on standard machine groups. If you aren't familiar with how to trigger Power Automate desktop flows, refer to [this section](./link-pad-flow-portal.md).
+You can trigger a desktop flow to run on your hosted RPA bots the same way you trigger desktop flows on standard machine groups. If you aren't familiar with how to trigger Power Automate desktop flows, refer to [Trigger desktop flows from cloud flows](trigger-desktop-flows.md).
 
 1. While editing your Power Automate flow, add a **Run a flow built with Power Automate for desktop** action, and create a connection of type **Directly to machine**.
 
@@ -405,3 +405,6 @@ The Hosted RPA bots (preview) feature is enabled by default. System admins and e
 > [!NOTE]
 > When the hosted RPA bots toggle is disabled, any existing Hosted RPA bots group will no longer appear in the Power Automate portal, and any desktop flows associated with the Hosted RPA bots group will no longer run.
 
+## Environment Lifecycle Operations & Hosted RPA bots (preview)
+
+The hosted RPA bots (preview) feature doesn't work with Environment Lifecycle Operations on the Dataverse Environments (eg. Backup/Restore). If a Dataverse environment with hosted RPA bots machine groups is restored, moved, or copied, the hosted Rpa bots machine group in the resulting Dataverse environment won't be able to run desktop flows.
