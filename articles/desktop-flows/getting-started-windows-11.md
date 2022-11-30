@@ -26,9 +26,12 @@ Windows 11 allow users to create automations through the preinstalled Power Auto
 
    ![Screenshot of the Windows 11 search menu.](media\getting-started-windows-11\launching.png)
 
-Any Windows user can build flows with little-to-no coding experience. A collection of more than 400 pre-made actions and a recorder that captures mouse and keyboard functions make RPA intuitive for both regular and power users.
 
-Using the available actions, you can automate virtually any Microsoft and third-party application on Windows and exchange data between different applications and web pages.
+<!-- What is RPA? -->
+
+Any Windows user can build flows with little-to-no coding experience. A collection of more than 400 premade actions and a recorder that captures mouse and keyboard functions make RPA intuitive for both regular and power users.
+
+Using the available actions, you can automate virtually any Microsoft and third-party application on Windows and exchange data between different applications and webpages.
 
 For example, you can extract prices from shopping websites, compare them, and store them to Excel spreadsheets by deploying some easy-to-configure actions. 
 
@@ -36,7 +39,7 @@ Using Power Automate, you can populate any form and reduce the time needed to en
 
    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLTqj]
 
-Apart from the pre-made actions, Power Automate enables you to record your activity and automatically convert these steps into actions. The recording feature makes RPA friendly to all non-technical users and allows you to develop simple flows effortlessly.
+Apart from the premade actions, Power Automate enables you to record your activity and automatically convert these steps into actions. The recording feature makes RPA friendly to all non-technical users and allows you to develop simple flows effortlessly.
 
 To start your journey with desktop flows, follow our [getting started guide](getting-started-msa.md). More technical starting guides are available for users with a [work or school account](getting-started-freeorg.md) and [organization premium account](getting-started-org.md). Check the [Sign-in account comparison](setup.md#sign-in-account-comparison) to view what each version offers.
 
