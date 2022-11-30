@@ -33,7 +33,7 @@ Using the available actions, you can automate virtually any Microsoft and third-
 For example, you can extract prices from shopping websites, compare them, and store them to Excel spreadsheets by deploying some easy-to-configure actions. 
 
 Using Power Automate, you can populate any form and reduce the time needed to enter data on regularly used applications. Performing repetitive online orders, tracking price changes, populating fields on web pages and desktop applications, creating backups, and converting files are all tasks that can be fully automated with desktop flows.
->
+   >
    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLTqj]
 
 Apart from the premade actions, Power Automate enables you to record your activity and automatically convert these steps into actions. The recording feature makes RPA friendly to all non-technical users and allows you to develop simple flows effortlessly.
