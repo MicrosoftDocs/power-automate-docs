@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 11/28/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -23,9 +23,9 @@ search.audienceType:
 
 You can use your own custom Power BI workspace and leverage a higher capacity to analyze processes with a lot more data. You'll also be able to customize the look and feel of the report.
 
-## Setup your workspace
+## Set up your workspace
 
-You'll need to setup your Power BI workspace to connect it to process advisor and then customize it. The following sections in this article walk you through how to set up your workspace.
+You'll need to set up your Power BI workspace to connect it to process advisor and then customize it. The following sections in this article walk you through how to set up your workspace.
 
 ### Connect your Power BI workspace to process advisor
 
@@ -102,6 +102,10 @@ Now that you've connected your Power BI workspace to process advisor and install
 
 1. Assign it **admin access**.
 
+    >[!IMPORTANT]
+    >
+    >It's required that the service principal gets added as an admin. If you skip this step, the feature won't work.
+
 ## Load your process analytics in Power BI
 
 Load your process analytics in Power BI to start customizing your report.
@@ -128,11 +132,11 @@ With Process advisor’s powerful integration with Power BI, you can customize y
 
 - [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi)
 
-After completing the these steps, return to the analytics page of your process in process advisor.
+After completing these steps, return to the analytics page of your process in process advisor.
 
 1. To refresh and reanalyze the process, select **Refresh**.
 
-1. Select **Open in Power BI**. If you don't see this button, make sure you completed the steps in the [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi) section in this article.
+1. Select **Open in Power BI**. If you don't see this button, make sure you've completed the steps in the [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi) section in this article.
 
     :::image type="content" source="media/process-mining-pbi-workspace/open-pbi.png" alt-text="Screenshot of the 'Open in Power BI' button.":::
 
@@ -163,6 +167,10 @@ After completing the these steps, return to the analytics page of your process i
     You've successfully customized your Power BI workspace. Every time you refresh your process and reopen your Power BI report, your metrics and customizations will be updated. Try out Power BI and customize your reports to learn how they can help you analyze your process effectively.
 
     Once this step is done, you'll see the report in your Power BI workspace with the report name that you entered. You can edit this report and save it. Your report on process advisor will be updated with all of the changes that you make with Power BI.
+
+## Troubleshoot issues
+
+If you encounter issues or error messages, go to [Issues with your own Power BI workspace (preview)](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace-preview).
 
 ### See also
 
