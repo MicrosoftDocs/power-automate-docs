@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 06/28/2020
+ms.date: 12/1/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -21,11 +21,6 @@ search.audienceType:
 
 # Power Automate for desktop architecture
 
-
-
-<!-- It's not clear whether the deprecation date is June 2022 or June 2021 or even another year. -->
-
-
 > [!IMPORTANT]
 > Gateways for desktop flows will be deprecated soon (June 30) except for the China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
@@ -38,11 +33,6 @@ The data flow between the desktop and the cloud is the same in both options; onl
 The **UIFlowService** is a Windows service that is installed with Power Automate on the desktop machine. By default, it's set to start automatically and runs as the new user **NT SERVICE\UIFlowService**. This user is created during installation. 
 
 ![Desktop direct connectivity diagram.](media/pad-architecture/pad-direct-connectivity.png)
-
-
-
-<!-- I find Azure Fluid Relay in the style guide but not Azure Relay - are they the same? https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=48376 -->
-
 
 Azure Relay is a service that facilitates communication channels that are established entirely by making outgoing requests to the service. It achieves this functionality either by establishing a WebSocket connection or using HTTP long-polling, if necessary. 
 
