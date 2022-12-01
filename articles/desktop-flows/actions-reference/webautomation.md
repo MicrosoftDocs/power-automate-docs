@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
+ms.date: 12/1/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -621,8 +621,10 @@ Click on a link in a web page that results in downloading a file.
 
 Run a JavaScript function on the web page and get the returned result.
 
-### Input parameters
+> [!NOTE]
+> The migration to the Manifest V3 browser extensions affects this action. To find more information about Manifest V3 and how it affect the **Run JavaScript function on web page** action, go to [Migration to Manifest V3](../manifest.md).
 
+##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
