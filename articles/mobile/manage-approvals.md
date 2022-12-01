@@ -4,17 +4,20 @@ description: Learn how to view, approve, and reject requests in the Microsoft Po
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
-manager: tapanm
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/19/2022
-ms.author: kewaiss
+ms.date: 11/30/2022
+ms.author: napienko
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -32,13 +35,13 @@ You can quickly approve or reject approval requests in the Power Automate mobile
 
 1. Select **Approve** or **Reject**.
 
-    :::image type="content" source="../media/android/manage-approvals-1.png" alt-text="Screenshot of approval requests in the Power Automate mobile app for Android, with Approve and Reject buttons for one request shown.":::
+    :::image type="content" source="../media/android/manage-approvals-1.png" alt-text="Screenshot of approval requests with Approve and Reject buttons for one request shown.":::
 
 If you want more information about a request before you approve or reject it, you can view any comments and attachments on a separate screen.
 
 1. On the **Approvals** screen, select the vertical ellipsis (**…**) next to a request, and then select **Details**.
 
-    :::image type="content" source="../media/android/approvals-menu.png" alt-text="Screenshot of the Details option on the Approvals screen in the Power Automate mobile app for Android.":::
+    :::image type="content" source="../media/android/approvals-menu.png" alt-text="Screenshot of the Details option on the Approvals screen.":::
 
 1. Read the comments and view the attachments, if any.
 

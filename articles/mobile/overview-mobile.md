@@ -4,8 +4,10 @@ description: This article provides an overview of the Microsoft Power Automate m
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
-manager: tapanm
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,8 +15,9 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/19/2022
-ms.author: kewaiss
+ms.date: 11/30/2022
+ms.author: napienko
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -54,7 +57,7 @@ You might have different environments to work in depending on the purpose of you
 
 1. Select the environment icon, and then select the environment you want to access. A check mark appears next to the selected environment.
 
-    :::image type="content" source="../media/android/environment.png" alt-text="Screenshot of an environment selected in the Power Automate mobile app, with the environment icon highlighted.":::
+    :::image type="content" source="../media/android/environment.png" alt-text="Screenshot of an environment selected with the environment icon highlighted.":::
 
 ## Limitations
 
@@ -62,6 +65,6 @@ The Power Automate mobile app for Android has a few limitations:
 
 - Geofencing, or using location-based triggers, isn't supported. This was formerly a preview feature.
 
-- You can run flows in the mobile app, but not create or edit them. Customers told us that they prefer to create and edit their flows in Power Automate on the web. If you're on the go and need to create or edit a flow, open Power Automate in your mobile device's web browser.
+- There's no camera option to upload files with the mobile app.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
