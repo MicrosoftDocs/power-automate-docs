@@ -24,8 +24,8 @@ search.audienceType:
 > [!IMPORTANT]
 >
 > - Gateways for desktop flows will be deprecated soon (June 30) except for the China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
-> - Selenium IDE (deprecated): from February 28th 2022, Selenium IDE will no longer be supported.
-> - Windows recorder (V1): since November 30th 2021, Windows recorder (V1) no longer works.
+> - From February 28th 2022, Selenium IDE will no longer be supported.
+> - Since November 30th 2021, Windows recorder (V1) no longer works.
 
 There are two different methods that Power Automate can use to connect to the cloud services in order to receive flow execution jobs. The first option is direct connectivity, while the second option requires the on-premises data gateway to be installed.
 

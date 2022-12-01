@@ -19,8 +19,8 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> - Selenium IDE (deprecated): from February 28th 2022, Selenium IDE will no longer be supported.
-> - Windows recorder (V1): since November 30th 2021, Windows recorder (V1) no longer works.
+> - From February 28th 2022, Selenium IDE will no longer be supported.
+> - Since November 30th 2021, Windows recorder (V1) no longer works.
 
 This article presents all the prerequisites and limitations you should consider before installing and using Power Automate on your desktop.
 

@@ -23,8 +23,8 @@ You can download and install Power Automate through an MSI installer or Microsof
 
 >[!IMPORTANT]
 >
-> - Selenium IDE (deprecated): from February 28th 2022, Selenium IDE will no longer be supported.
-> - Windows recorder (V1): since November 30th 2021, Windows recorder (V1) no longer works.
+> - From February 28th 2022, Selenium IDE will no longer be supported.
+> - Since November 30th 2021, Windows recorder (V1) no longer works.
 > - Although deploying MSI and Microsoft Store installations on the same machine is possible, duplicate installations may cause issues and aren't recommended.
 > - By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
 
@@ -86,8 +86,8 @@ To find more information regarding on-premises data gateways, go to [Install an 
 
 > [!IMPORTANT]
 >
-> - Selenium IDE (deprecated): from February 28th 2022, Selenium IDE will no longer be supported.
-> - Windows recorder (V1): since November 30th 2021, Windows recorder (V1) no longer works.
+> - From February 28th 2022, Selenium IDE will no longer be supported.
+> - Since November 30th 2021, Windows recorder (V1) no longer works.
 
 Selenium IDE is an open source tool that enables you to record and playback human interactions on websites.
 
