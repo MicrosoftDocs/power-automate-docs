@@ -4,7 +4,7 @@ description: Learn how to manage desktop flows.
 author: msftman
 manager: kvivek
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/30/2022
 ms.author: DeonHe
 contributor:
@@ -37,7 +37,7 @@ From this section, you can create a new desktop flow and then edit or delete you
 For each of your desktop flows, you can see its details by selecting its name from the list of desktop flows. You then see details including:
 
 - The run history with details of each run.
-- The applications or Websites used in the desktop flow.
+- The applications or websites used in the desktop flow.
 
 Follow these steps to see the details for a desktop flow:
 
