@@ -1,6 +1,6 @@
 ---
 title: Manage desktop flows
-description: See how to manage desktop flows.
+description: Learn how to manage desktop flows.
 author: msftman
 manager: kvivek
 ms.subservice: desktop-flow
