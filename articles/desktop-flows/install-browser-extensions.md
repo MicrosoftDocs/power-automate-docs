@@ -4,10 +4,11 @@ description: See how to install Power Automate browser extensions.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/1/2022
+ms.date: 12/2/2022
 ms.author: gtrantzas
 ms.reviewer: pefelesk
 contributors:
+- NikosMoutzourakis
 search.app: 
   - Flow 
 search.audienceType: 
@@ -27,9 +28,16 @@ When Power Automate installation is complete, the installer will prompt you to i
 
 If you skip the installation of the browser extensions, you can do it manually later using the following links or through the **Tools** > **Browser extensions** options in the flow designer.
 
+For Power Automate for desktop v2.27 or later:
+
 - [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/microsoft-power-automate/kagpabjoboikccfdghpdlaaopmgpgfdc)
 - [Google Chrome](https://chrome.google.com/webstore/detail/microsoft-power-automate/ljglajjnnkapghbckkcmodicjhacbfhk)
 - [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/microsoft-power-automate/)
+
+For Power Automate for desktop v2.26 or earlier (Legacy):
+
+- [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/microsoft-power-automate/njjljiblognghfjfpcdpdbpbfcmhgafg)
+- [Google Chrome](https://chrome.google.com/webstore/detail/microsoft-power-automate/gjgfobnenmnljakmhboildkafdkicala)
 
 ### Alternative ways to install browser extensions
 
