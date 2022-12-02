@@ -4,17 +4,20 @@ description: Learn how to create a widget in the Microsoft Power Automate mobile
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
-manager: tapanm
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/19/2022
-ms.author: kewaiss
+ms.date: 11/30/2022
+ms.author: napienko
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -40,6 +43,6 @@ Widgets can only run instant flows that you created. They can't run other kinds 
 
 1. Select the flow to run when you tap the widget on your home screen.
 
-    :::image type="content" source="../media/android/widget-run.png" alt-text="Screenshot of an instant flow widget placed on an Android device home screen.":::
+    :::image type="content" source="../media/android/widget-run.png" alt-text="Screenshot of an instant flow widget placed on a device's home screen.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
