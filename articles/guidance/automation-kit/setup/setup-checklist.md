@@ -58,25 +58,25 @@ Example data:
 
 | **Cost element**       | **Input** |
 |------------------------|-----------|
-| FTE Cost               | $50/hr   |
+| FTE Cost               | $50/hr    |
 | Time to Process (mins) | 60 mins   |
-| Frequency              | Daily*   |
-| # of FTEs to Process  | 1         |
+| Frequency              | Daily*    |
+| # of FTEs to Process   | 1         |
 | Error Rate (%)         | 10%       |
-| # of FTEs to Fix      | 1         |
+| # of FTEs to Fix       | 1         |
 | Time to Fix (mins)     | 25        |
 | Overhead               | 15%       |
 
 Hourly = 2008, Daily = 251, Weekly = 52, Monthly = 12, Quarterly = 4
-calculation Formula
+Calculation Formula
 
 **Total Cost per Year** = Cost to complete (per Year) + cost to remediate (per year)
 
-**Cost to Complete (per Year):** ((((FTE Cost/60) x # of FTEs to process) x time to process (mins)) x frequency)
+**Cost to Complete (per Year)**: ((((FTE Cost/60) x # of FTEs to process) x time to process (mins)) x frequency)
 
-**Cost to Remediate (per Year):** (((Frequency x (Error Rate/100)) x Time to Fix (mins)) x FTE Cost/60) x # of FTEs to Fix))
+**Cost to Remediate (per Year)**: (((Frequency x (Error Rate/100)) x Time to Fix (mins)) x FTE Cost/60) x # of FTEs to Fix))
 
-**Full Formula:** ((((FTE Cost/60) x # of FTEs to Process) x Time to Process (mins)) x Frequency) + (((Frequency x (Error Rate/100)) x Time to Fix (mins)) x FTE Cost/60) x # of FTEs to Fix))
+**Full Formula**: ((((FTE Cost/60) x # of FTEs to Process) x Time to Process (mins)) x Frequency) + (((Frequency x (Error Rate/100)) x Time to Fix (mins)) x FTE Cost/60) x # of FTEs to Fix))
 
 ## ROI calculation example
 

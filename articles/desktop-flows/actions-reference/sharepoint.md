@@ -65,52 +65,52 @@ This section presents examples on how to use SharePoint actions in your desktop 
 
 1. If the identifier of the target folder is unknown, use the **Get folder metadata using path** SharePoint action to retrieve it. This action requires the folder's path and produces a custom object containing the folder's metadata. You can access the identifier using the **Id** property.
 
-    ![Screenshot of the Get folder metadata using path action.](media\sharepoint\sharepoint-get-folder-metadata-using-path-action.png)
+    :::image type="content" source="media\sharepoint\sharepoint-get-folder-metadata-using-path-action.png" alt-text="Screenshot of the Get folder metadata using path action.":::
 
 1. Deploy the **List folder** SharePoint action and populate the appropriate SharePoint URL and the previously retrieved identifier. The produced list contains custom objects representing items in the target folder.
 
-    ![Screenshot of the List folder action.](media\sharepoint\sharepoint-list-folder-action.png)
+    :::image type="content" source="media\sharepoint\sharepoint-list-folder-action.png" alt-text="Screenshot of the List folder action.":::
 
 1. After retrieving the list, use a **For each** loop to iterate through the objects inside it.
 
-    ![Screenshot of the For each loop that iterates through the retrieved custom objects.](media\sharepoint\for-each-action.png)
+    :::image type="content" source="media\sharepoint\for-each-action.png" alt-text="Screenshot of the For each loop that iterates through the retrieved custom objects.":::
 
-1. If the items in the target folder are only files, use the **Get file content using path** action and the **Path** property inside the block to retrieve the current file's contents.
+1. If the items in the target folder are only files, use the Get file content using path action, and the **Path** property inside the block to retrieve the current file's contents.
 
-    ![Screenshot of the Get file content using path action.](media\sharepoint\sharepoint-get-file-content-using-path-action.png)
+    :::image type="content" source="media\sharepoint\sharepoint-get-file-content-using-path-action.png" alt-text="Screenshot of the Get file content using path action.":::
 
 1. Then, deploy the **Convert binary data to file** action to store the retrieved data in a local file. You can use the **Name** property to name the new file with the same name as the original SharePoint file.
 
-    ![Screenshot of the Convert binary data to file action.](media\sharepoint\convert-binary-data-file-action.png)
+    :::image type="content" source="media\sharepoint\convert-binary-data-file-action.png" alt-text="Screenshot of the Convert binary data to file action.":::
 
 The previous steps cover the case where the target folder contains only files. However, if the folder contains subfolders with files inside them, modify your desktop flow accordingly:
 
 1. Add an **If** condition inside the previously deployed loop to check whether the currently selected item is a folder. To perform this check, use the **IsFolder** property of the current item.
 
-    ![Screenshot of the if action that checks whether the current item is a folder.](media\sharepoint\if-action-folder.png)
+    :::image type="content" source="media\sharepoint\if-action-folder.png" alt-text="Screenshot of the if action that checks whether the current item is a folder.":::
 
 1. Inside the if-block, use the **Get folder metadata using path** action to get the identifier of the currently selected folder. The folder path is the same as the one you used at the beginning of the flow, plus the folder's name. You can access the folder using the **Name** property of the current item.
 
-    ![Screenshot of the second Get folder metadata using path action.](media\sharepoint\sharepoint-get-folder-metadata-using-path-actio-name-property.png)
+    :::image type="content" source="media\sharepoint\sharepoint-get-folder-metadata-using-path-actio-name-property.png" alt-text="Screenshot of the second Get folder metadata using path action.":::
 
 1. As you did before, deploy the **List folder** SharePoint action and populate the appropriate SharePoint URL and the previously retrieved identifier.
 
-    ![Screenshot of the second List folder action.](media\sharepoint\sharepoint-list-folder-action-second.png)
+    :::image type="content" source="media\sharepoint\sharepoint-list-folder-action-second.png" alt-text="Screenshot of the second List folder action.":::
 
 1. Deploy a **For each** loop to iterate through the files inside the selected subfolder, and move and modify the previously deployed **Get file content using path** and **Convert binary data to file** actions to retrieve and save locally the contents of each file.
 
-    ![Screenshot of the final flow.](media\sharepoint\final-flow.png)
+    :::image type="content" source="media\sharepoint\final-flow.png" alt-text="Screenshot of the final flow.":::
 
 If you want to download files of specific subfolders, modify the previously deployed conditional to check the desired condition. For example, the following condition checks whether the current item's name is any other than 2022.
 
 > [!NOTE]
 > Although you could use a new nested **If** action, combining the checks in only one conditional makes the desktop flow less complicated and easier to read.
 
-![Screenshot of a conditional that checks the current item's name.](media\sharepoint\if-action-item-name.png)
+:::image type="content" source="media\sharepoint\if-action-item-name.png" alt-text="Screenshot of a conditional that checks the current item's name.":::
 
 If you want to download only files of a specific type, add a conditional before retrieving the file contents to check whether the file name ends with a particular extension.
 
-![Screenshot of a conditional that checks the current item's file type.](media\sharepoint\if-action-item-type.png)
+:::image type="content" source="media\sharepoint\if-action-item-type.png" alt-text="Screenshot of a conditional that checks the current item's file type.":::
 
 ### How to upload a local file to SharePoint
 
@@ -120,7 +120,7 @@ If you want to download only files of a specific type, add a conditional before 
 
 1. Deploy the **Convert file to binary data** action and select the desired file on your local drive. The action stores the converted file in the **BinaryData** variable.
 
-    ![Screenshot of the Convert file to binary data action.](media\sharepoint\convert-file-binary-data-action.png)
+    :::image type="content" source="media\sharepoint\convert-file-binary-data-action.png" alt-text="Screenshot of the Convert file to binary data action.":::
 
 1. Find the **SharePoint (preview)** group of actions in the flow designer and deploy the **Create file** action in the workspace.
 
@@ -129,7 +129,7 @@ If you want to download only files of a specific type, add a conditional before 
       > [!IMPORTANT]
       > Don't forget to add the appropriate file extension after the file name.
 
-      ![Screenshot of the Create file Sharepoint action.](media\sharepoint\sharepoint-create-file-action.png)
+    :::image type="content" source="media\sharepoint\sharepoint-create-file-action.png" alt-text="Screenshot of the Create file Sharepoint action.":::
 
 ## How to fill action’s input fields
 
@@ -147,14 +147,14 @@ Updates the contents of the file specified by the file identifier.
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
 |Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique id of the file to select.                                                             |
+|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
 |File Content       |body            |True     |Binary |The content of the file.                                                                         |
 
 #### Returns
 
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
 |Name         |Name         |String    |The name of the file or folder.                                         |
 |DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
 |Path         |Path         |String    |The path of the file or folder.                                         |
@@ -174,7 +174,7 @@ Deletes the file specified by the file identifier.
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
 |Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique id of the file to select.                                                             |
+|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
 
 ### Get file content using path
 
@@ -203,7 +203,7 @@ Get file contents using the file identifier. The contents can be copied somewher
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
 |Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique id of the file to select.                                                             |
+|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
 |Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
 
 #### Returns
@@ -230,7 +230,7 @@ Uploads a file to a SharePoint site. Make sure to pick an existing library.
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
 |ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
 |Name         |Name         |String    |The name of the file or folder.                                         |
 |DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
 |Path         |Path         |String    |The path of the file or folder.                                         |
@@ -250,13 +250,13 @@ Returns files contained in a SharePoint folder.
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
 |Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique id of the folder.                                                                     |
+|File Identifier    |id              |True     |String |The unique ID of the folder.                                                                     |
 
 #### Returns
 
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
 |Name         |Name         |String    |The name of the file or folder.                                         |
 |DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
 |Path         |Path         |String    |The path of the file or folder.                                         |
@@ -292,14 +292,14 @@ Gets information about the file such as size, etag, created date, etc. Uses a fi
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
 |Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique id of the folder.                                                                     |
+|File Identifier    |id              |True     |String |The unique ID of the folder.                                                                     |
 
 #### Returns
 
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
 |ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
 |Name         |Name         |String    |The name of the file or folder.                                         |
 |DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
 |Path         |Path         |String    |The path of the file or folder.                                         |
@@ -326,7 +326,7 @@ Gets information about the file such as size, etag, created date, etc. Uses a fi
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
 |ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
 |Name         |Name         |String    |The name of the file or folder.                                         |
 |DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
 |Path         |Path         |String    |The path of the file or folder.                                         |
@@ -346,14 +346,14 @@ Gets information about the folder. Uses a file identifier to pick the folder.
 |Name               |Key             |Required |Type   |Description                                                                                      |
 |-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
 |Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique id of the folder.                                                                     |
+|File Identifier    |id              |True     |String |The unique ID of the folder.                                                                     |
 
 #### Returns
 
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
 |ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
 |Name         |Name         |String    |The name of the file or folder.                                         |
 |DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
 |Path         |Path         |String    |The path of the file or folder.                                         |
@@ -380,7 +380,7 @@ Gets information about the folder. Uses a folder path to pick the folder.
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
 |ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
 |Name         |Name         |String    |The name of the file or folder.                                         |
 |DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
 |Path         |Path         |String    |The path of the file or folder.                                         |
@@ -406,7 +406,7 @@ Returns files in the root SharePoint folder.
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
 |ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
 |Name         |Name         |String    |The name of the file or folder.                                         |
 |DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
 |Path         |Path         |String    |The path of the file or folder.                                         |
@@ -433,7 +433,7 @@ Extracts an archive file into a SharePoint folder (example: zip).
 |Name         |Path         |Type      |Description                                                             |
 |-------------|-------------|----------|------------------------------------------------------------------------|
 |ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique id of the file or folder.                                    |
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
 |Name         |Name         |String    |The name of the file or folder.                                         |
 |DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
 |Path         |Path         |String    |The path of the file or folder.                                         |
