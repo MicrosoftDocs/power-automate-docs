@@ -1,22 +1,22 @@
 ---
 title: Power Automate mobile app overview
-description: This article provides an overview of the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS (preview), including installation, changing environments, and limitations of the app.
+description: Get an overview of the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS (preview), including installation, changing environments, and limitations of the app.
 services: ''
 suite: flow
 documentationcenter: na
 author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/31/2022
+ms.date: 12/16/2022
 ms.author: napienko
 ms.reviewer: angieandrews
-contributors:
-  - natalie-pienkowska
-  - kartikraop
-  - v-aangie
 search.app: 
   - Flow
 search.audienceType: 
@@ -50,7 +50,7 @@ Experience the familiar look and feel of Power Automate on the go with the Power
 
 If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.md). Then scan one of the QR codes below with your mobile device. As an alternative, you can use the **Google Play** link or the **App store** link to install the Power Automate mobile app.
 
-| Android | iOS  |
+| Android | iOS (preview)  |
 | :---:   | :---:  |
 | :::image type="content" source="../media/android/google-play.png" alt-text="Screenshot of the Download the Power Automate mobile app for Android from Google Play button.":::  | :::image type="content" source="../media/android/app-store.png" alt-text="Screenshot of the Download the Power Automate mobile app for iOS from the Apple App store button."::: |
 | :::image type="content" source="../media/android/android-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for Android QR code.":::  | :::image type="content" source="../media/android/ios-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for iOS QR code.":::    |
@@ -77,6 +77,6 @@ The Power Automate mobile app  has a few limitations:
 
 - (iOS) Geofencing is supported in the mobile app for iOS (preview).
 
-- You can run flows in the mobile app, but not create or edit them. If you're on the go and need to create or edit a flow, open Power Automate in your mobile device's web browser.
+- There's no camera option to upload files with the mobile app.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

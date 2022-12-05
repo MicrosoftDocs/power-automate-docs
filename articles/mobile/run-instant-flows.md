@@ -48,4 +48,8 @@ When the **Flow ran successfully** message appears at the top of the **Instant f
 
 :::image type="content" source="../media/android/run-flow-message.png" alt-text="Screenshot of the Flow ran successfully message in the Power Automate mobile app instant flows screen.":::
 
+> [!NOTE]
+>
+> There's no camera option to upload files with the mobile app.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -44,6 +44,20 @@ By default, the **Flows** screen shows all the flows that you've created.
 
 To show flows that others have shared with you, select **Shared with me** at the top of the **Flows** screen.
 
+## Edit a cloud flow
+
+You can edit your cloud flows on-the-go. Your available cloud flows are in one of the lists in the **Flows** screen, as shown in the previous screenshot.
+
+To edit a cloud flow:
+
+1. On the **Flows** screen, select the flow that you want to edit.
+
+    The **Flow details** screen displays.
+
+1. Select the pencil icon at the top of the screen.
+
+    :::image type="content" source="../media/android/flow-details-edit.png" alt-text="Screenshot of the pencil icon in the Flow details screen.":::
+
 ## Run, delete, and turn a flow on or off
 
 Select the vertical ellipsis (**...**) next to a flow, and then select one of the options: **Run flow**, **Turn off** (or if the flow is off, **Turn on**), or **Delete**.
