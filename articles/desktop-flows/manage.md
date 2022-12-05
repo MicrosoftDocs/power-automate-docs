@@ -1,21 +1,14 @@
 ---
-title: Share and manage desktop flows
-description: Share and manage desktop flows
-services: ''
-suite: flow
-documentationcenter: na
+title: Manage desktop flows
+description: Learn how to manage desktop flows.
 author: msftman
 manager: kvivek
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: desktop-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 12/09/2020
+ms.topic: conceptual
+ms.date: 11/30/2022
 ms.author: DeonHe
+contributor:
+- georgiostrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -39,13 +32,12 @@ From this section, you can create a new desktop flow and then edit or delete you
 > [!NOTE]
 > If you choose to delete or rename a desktop flow, press the refresh button in Power Automate to reflect the changes in the flows list.
 
-
 ## Details page
 
 For each of your desktop flows, you can see its details by selecting its name from the list of desktop flows. You then see details including:
 
--   The run history with details of each run.
--   The applications or Websites used in the desktop flow.
+- The run history with details of each run.
+- The applications or websites used in the desktop flow.
 
 Follow these steps to see the details for a desktop flow:
 
@@ -53,8 +45,7 @@ Follow these steps to see the details for a desktop flow:
 1. Select **My flows** > **Desktop flows**.
 1. Select any of your desktop flows.
 
-   ![Screenshot of the details of a desktop flow.](media/manage-desktop-flows/view-details.png "View details")
-
+    ![Screenshot of the details of a desktop flow.](media/manage-desktop-flows/view-details.png "View details")
 
 ## Share desktop flows
 
@@ -76,7 +67,7 @@ Follow these steps to share a desktop flow.
 
    ![Screenshot of the Share button.](media/manage-desktop-flows/sharing-ux.png)
 
-These are the two permission levels you can use when you share desktop flows: 
+These are the two permission levels you can use when you share desktop flows:
 
 1. **Co-owner**: This access level gives the co-owner full permissions to that desktop flow. They can edit, share, and delete the flow.
 
@@ -116,10 +107,9 @@ In this panel, you can:
 - Remove users' permissions for this flow
 
 >[!NOTE]
-> Administrators of an environment are co-owners of all dekstop flows created in this environment and can't be removed.
-
->[!NOTE]
-> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
+>
+> - Users of an environment with a Dataverse security role that provides them **Read** access to all the records of the **Process** Dataverse table are co-owners of all desktop flows created in this environment and can't be removed.
+> - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
 ## More information
 

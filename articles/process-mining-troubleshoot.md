@@ -1,13 +1,13 @@
 ---
-title: Troubleshoot issues in process advisor (preview)
-description: This topic explains how to troubleshoot issues with process mining in the process advisor feature in Power Automate.
+title: Troubleshoot issues in process advisor
+description: This topic explains how to troubleshoot issues in the process advisor feature in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 11/28/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -17,15 +17,9 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot issues in process advisor (preview)
+# Troubleshoot issues in process advisor
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
-Once you're done with setup, select **Analyze**. You'll be able to view the Analytics page when the analysis is complete. Analysis typically takes a few minutes but may be faster or slower depending on how much data needs to be analyzed.
-
-*If you don't visit the Analytics page for 14 days, you'll need to re-analyze the process to access the Analytics page again.*
-
-For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
+This article explains common issues and error messages in process advisor. You'll find solutions to troubleshoot with procedures and helpful tips.
 
 ## Issues with dataflow refresh
 
@@ -61,6 +55,16 @@ To troubleshoot:
 
 ## Issues with analyze
 
+### Analyze a process
+
+Once you're done with setup, select **Analyze**. You'll be able to view the Analytics page when the analysis is complete. Analysis typically takes a few minutes but may be faster or slower depending on how much data needs to be analyzed.
+
+>[!NOTE]
+>
+>If you don't visit the Analytics page for 14 days, you'll need to re-analyze the process to access the Analytics page again.
+
+For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
+
 ### "You must have one case with at least two activities to analyze your process. Please change your data."
 
 Process mining will normally not be helpful when there's only one activity name in the data. This is because the process map visualizes the flow of the process from one activity to the next. In this case, you should do the following:
@@ -71,7 +75,7 @@ Process mining will normally not be helpful when there's only one activity name 
 
 ### "Following column(s) do not have the right data types: [x]. Please check your data and try again."
 
-The *case ID* and *activity name* columns should be of the **Text** data type. The *timestamp* columns should be of the **Date/Time** data type. One of the most frequent causes of invalid format is in the *timestamp* column. To fix the format, return to setup and select the icon next to the *timestamp* column and ensure it's been mapped to **Date/Time**.
+The *case ID* and *activity name* columns should be of the **Text** data type. The *timestamp* columns should be of the **Date/Time** data type. One of the most frequent causes of invalid format is in the *timestamp* column. To fix the format, return to setup and select the icon next to the *timestamp* column, and ensure it's been mapped to **Date/Time**.
 
 :::image type="content" source="media/process-mining-troubleshoot/timestamp.png" alt-text="Screenshot of the Date/Time data type for StartTimestamp.":::
 
@@ -118,4 +122,23 @@ For preview, we support only up to five (5) columns in addition to your mapped c
 ### "Analysis failed, please try again."
 
 You might have run into other analyze issues. For more ways that we can support you, go to [Support](https://flow.microsoft.com/support/), or post your issue in the [Community Forums](https://community.dynamics.com/f).
- 
+
+## Issues with your own Power BI workspace (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+### "You must be an admin of the Power BI workspace to use it with this report."
+
+You must be an admin of your Power BI workspace. To learn more about user access and permissions, go to [Give users access to workspaces](/power-bi/collaborate-share/service-give-access-new-workspaces).
+
+### "The process advisor service principal must be an admin of the Power BI workspace to refresh this report."
+
+Enable admin access for the process advisor prod service principal. To learn how to give the service principal admin access, go to [Create your own custom Power BI workspace (preview)](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace).
+
+### "The process advisor service principal cannot access the Power BI workspace."  
+
+Set up the process advisor service principal for your Power BI workspace. To learn how to set up, go to [Set up your workspace (preview)](process-mining-pbi-workspace.md#set-up-your-workspace).
+
+### "The selected Power BI workspace needs premium capacity to work with this report."  
+
+Assign a premium license to your workspace. To learn how to enable premium capacity, go to [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings).

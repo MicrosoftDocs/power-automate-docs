@@ -1,25 +1,12 @@
 ---
 title: Create orders on Dynamics 365 Supply Chain Management
-description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation using Power Automate.
-services: ''
-suite: flow
-documentationcenter: na
+description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation
 author: georgiostrantzas
-editor: ''
-tags: ''
-
-ms.devlang: na
-ms.subservice: desktop-flow
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 06/26/2021
+ms.date: 11/15/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
-- Yiannismavridis
-- NikosMoutzourakis
-- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -27,168 +14,161 @@ search.audienceType:
   - enduser
 ---
 
-# Create orders on Dynamics 365 Supply Chain Management 
+# Create orders on Dynamics 365 Supply Chain Management
 
-[Dynamics 365](https://dynamics.microsoft.com/) empowers your organization to deliver operational excellence and delight every customer. In order to make your use of Dynamics 365 even more productive and save users time and errors, we are releasing the preview for free automation solutions that will let customers of Dynamics 365 customers automate common tasks.  
+[Dynamics 365](https://dynamics.microsoft.com/) empowers your organization to deliver operational excellence and delight every customer. To make your use of Dynamics 365 even more productive and save users time and errors, we're releasing free automation solutions that let Dynamics 365 customers automate common tasks.  
 
-In this documentation, we outline the steps needed for administrators to allow users to automate quality order creation for Dynamics 365 [Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) and focus on higher-priority activities that require their unique creativity.  
+This article outlines the steps administrators need to allow users to automate quality order creation for Dynamics 365 [Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) and focus on higher-priority activities that require their unique creativity.  
 
-## Prerequisites 
+## Prerequisites
 
-Before starting, we need to prepare your environment with the adequate licenses and software set-up. This section provides a step-by-step for how to get the grounds ready.   
+Before starting, you must prepare your environment with adequate licenses and software setup. This section provides step-by-step instructions about how to get the grounds ready.
 
-### Software 
+### Software
 
-You will need to: 
-- install the Power Automate for desktop application. Power Automate will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.  
-- Log out of the Dynamics 365 app you wish to automate 
-- Get the appropriate security role for the automation to run 
+You'll need to:
 
-### Log out of the Dynamics 365 app you wish to automate 
+- [Install Power Automate](install.md). Power Automate will carry out the steps in Dynamics 365 as if a human were doing it in front of their computer.  
+- Sign out of the Dynamics 365 app you wish to automate.
+- Get the appropriate security role for the automation to run.
 
-In order to do the full automation, please sign out of the application before you run the automation for the first time. You will need to do this if you switch between automation and your account.  
+### Sign out of the Dynamics 365 app you wish to automate
 
-### Get the appropriate security role set up for the account running the automation 
+To accomplish the full automation, sign out of the application before running the automation for the first time. You need to do this step if you switch between automation and your account.  
 
-You will need to decide which work account will be running the automation. It can be a dedicated account created by your admin in Azure Active Directory or the account of an existing employee. For the account you end up choosing, you need to check that it has the appropriate security roles so that it can access the surfaces you are automating.  
+### Get the appropriate security role set up for the account running the automation
 
-We recommend the following security roles: 
+You need to decide which work account will run the automation. It can be a dedicated account created by your admin in Azure Active Directory or the account of an existing employee. Check that the chosen account has the appropriate security roles to access the surfaces you're automating.  
+
+We recommend the following security roles:
 
 |Application|Security role|Link to documentation|
 |----|----|----|
 |Power Platform|Environment admin or environment maker (if the environment already has Dataverse and unattended license needed)||
 |Dynamic 365 Supply Chain Management||
 
-### Licenses 
+### Licenses
 
-If you already use Power Automate, PowerApps and Dynamics 365 applications on a day-to-day basis, you can skip this section and jump to Installing the Dynamics 365 RPA solutions.  
+If you already use Power Automate, PowerApps and Dynamics 365 applications on a day-to-day basis, you can skip this section and go to [Install the Dynamics 365 RPA solutions](#install-the-dynamics-365-rpa-solution).  
 
-Otherwise, you will need at least a trial license for these 3 products. This section shows you how to acquire these trial licenses.  
+Otherwise, you need at least a trial license for these three products. This section shows you how to acquire these trial licenses.
 
 #### Get a trial license for Power Automate  
+
 Power Automate can automate processes by doing what a human would do on a keyboard and screen.  
 
-There are two ways to automate processes: 
-1. Attended mode: someone is sitting in front of their computer and watching the process run as if they were doing it themselves manually 
-1. Unattended mode: the process is running in the background on distant machines that users don’t see.  
+There are two ways to automate processes:
 
-To run attended, users need to acquire **the Power Automate per-user license with RPA**.  
-To run unattended, users need to have acquire two licenses: **Power Automate per-user license with RPA and the Power Automate unattended add-on**. 
+1. Attended mode: someone is sitting in front of their computer and watching the process run as if they were doing it manually.
+1. Unattended mode: the process runs in the background on remote machines that users don’t see.
 
-*Get a trial license for Power Automate per-user license with RPA to run processes in attended mode*
+To run attended, users need to acquire the **Power Automate per-user license with RPA**. To run unattended, users need to have acquired two licenses: **Power Automate per-user license with RPA** and the **Power Automate unattended add-on**.
 
-1. From the Power Automate portal, navigate to My Flows then on Desktop Flows 
-1. Click the fine print **Start free trial now**
+To get a trial license for **Power Automate per-user license with RPA**:
 
-An alternative consists in logging in to Power Automate for desktop and clicking on the **Start free trial** button 
+1. Go to the Power Automate portal, navigate to **My Flows** > **Desktop flows**.
+1. Select **Start free trial now**
 
-*Add a trial license for Power Automate unattended add-on to run processes in unattended mode*
+Alternatively, launch Power Automate for desktop and select **Start trial** on the console on the **Premium features** dialog.
 
-As an admin, you can get an RPA unattended add-on and assign it to your environment [Power Automate sign-up Q&A in your organization - Power Automate | Microsoft Docs](../organization-q-and-a.md)  
+To add a trial license for **Power Automate unattended add-on**:
 
-#### Get a trial license for Power Apps 
+1. As an admin, you can get an RPA unattended add-on and assign it to your environment. To find more information about the RPA unattended add-on, go to [Power Automate sign-up Q&A in your organization](../organization-q-and-a.md)  
 
-Please follow the instructions in this PowerApps guide before moving on to the last step! [/en-us/powerapps/maker/signup-for-powerapps#get-a-license-from-scratch](/powerapps/maker/signup-for-powerapps) 
+#### Get a trial license for Power Apps
 
-#### Get a trial license for the Dynamics 365 applications you wish to automate 
+Follow the instructions in [Explore Power Apps for free for 30 days](/powerapps/maker/signup-for-powerapps) to get a trial license for Power Apps.
 
-To get started with Dynamics 365 Supply Chain Management and automate the quality order creation process, navigate [here](https://dynamics.microsoft.com/en-us/get-started/free-trial/?appname=SCM). 
+#### Get a trial license for the Dynamics 365 applications you wish to automate
 
-### Setup steps 
+To get started with Dynamics 365 Supply Chain Management and automate the quality order creation process, see [Discover how Dynamics 365 Supply Chain Management can transform the way you do business](https://dynamics.microsoft.com/get-started/free-trial/?appname=SCM).
 
-Now that prerequisites are set, we are on our way to get these free solutions that automate the processes. 
+### Setup steps
+
+Now that prerequisites are set, you are on your way to get the free solutions that automate your processes.
 
 #### Install Power Automate for desktop  
 
-1. Click on [this link](https://go.microsoft.com/fwlink/?linkid=2102613.) to install the Power Automate for desktop on the machine that will run the automation then follow the installation wizard. Here is the detailed guide with step-by-step to install Power Automate : [Set up Power Automate for desktop on your device - Power Automate | Microsoft Docs](install.md#install-power-automate) 
+1. Download and install Power Automate on the machine that will run the automation. You can find more information about Power Automate installation in [Install Power Automate](install.md).
 
-1. Make sure you switch the machine setting from PAD to the correct environment that you will install the solution to  
+1. Switch the Power Automate machine settings to the environment in which you'll install the solution.
 
-    ![Screenshot of the Power Automate for desktop machine settings.](./media/dynamics365-RPA/image001.png)
+    :::image type="content" source="media/dynamics365-RPA/power-automate-machine-runtime.png" alt-text="Screenshot of the Power Automate machine runtime application.":::
 
-1. [Log in](https://powerautomate.microsoft.com/signin) to create a test cloud flow with manual trigger 
+1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com) to create a cloud flow with manual trigger.
 
-    ![Screenshot of the option to create a new cloud flow.](./media/dynamics365-RPA/image003.png)
-    ![Screenshot of the Build an instant cloud flow dialog.](./media/dynamics365-RPA/image005.png)
+    :::image type="content" source="media/dynamics365-RPA/build-instant-cloud-flow-dialog.png" alt-text="Screenshot of the Build an instant cloud flow dialog.":::
 
-1. Add a desktop flow connector. 
-    ![Screenshot of the Run a flow built with Power Automate Desktop action.](./media/dynamics365-RPA/image007.png)
- 
-Select the Directly to machine connection from that dropdown. then select the machine name where you have installed Power Automate, enter the machine login credential (the username and password that you used to log into this machine.  (View here to learn more about direct machine connectivity). Note this step will not be needed at a later date.
-    ![Screenshot of the desktop flow connector.](./media/dynamics365-RPA/image009.png)
- 
-## Install the Dynamics 365 RPA solution 
+1. Add the appropriate action to run desktop flows.
 
-Now that prerequisites are set, we are on our way to get these free solutions that automate the processes.  
+    :::image type="content" source="media/dynamics365-RPA/run-flow-built-with-power-automate-desktop-action.png" alt-text="Screenshot of the Run a flow built with Power Automate for desktop action.":::
 
-1. Download the Dynamics 365 automation solution and save it on your machine [https://aka.ms/D365SCMQualityOrderRPASolution](https://aka.ms/D365SCMQualityOrderRPASolution)
+1. Select **Directly to machine** in the **Connect** field. Then, select the machine name on which you've installed Power Automate, and enter the machine credential (the username and password you use to sign in to the machine. To find more information about direct connectivity, see [Manage machines](manage-machines.md).
 
-1. Import the Dynamics 365 automation solution in the environment of your choice 
+    :::image type="content" source="media/dynamics365-RPA/connection-desktop-flows-action.png" alt-text="Screenshot of the connect option in Run a flow built with Power Automate for desktop action.":::
 
-    a. Go to [https://powerautomate.microsoft.com](https://powerautomate.microsoft.com) and log in using your work account 
-    b. Select the environment in which you wish to work using the environment picker 
-    c. In the vertical menu on the left of your screen, click on **Solutions** 
-    d. In the horizontal menu, above the Solutions title, click on **Import** then click on **Browse**
-    e. Navigate to the solution file you previously downloaded and double click on it in your file system 
-    f. Click **Next**. 
+## Install the Dynamics 365 RPA solution
 
- 
+1. [Download](https://aka.ms/D365SCMQualityOrderRPASolution) the Dynamics 365 automation solution and save it on your machine.
 
-1. Configure the connections needed to be used by the solution in the environment 
+1. Import the Dynamics 365 automation solution in the environment of your choice:
 
-    a. For each connector that the solution uses, either select an existing connection or create a new one using the Microsoft account or credentials of your choice.  
+    1. Go to [https://powerautomate.microsoft.com](https://powerautomate.microsoft.com) and sign in using your work account.
+    1. Select the environment in which you wish to work.
+    1. In the vertical menu on the left of your screen, select **Solutions**.
+    1. In the main bar, select **Import** then **Browse**.
+    1. Navigate to the solution file you previously downloaded and double-click on it.
+    1. Select **Next**.
 
-   ![Screenshot of the connections that need to be configured to be used by the solution.](./media/dynamics365-RPA/image011.png)
-      
-    b. Come back to the tab from which you initiate the above step and click **Refresh** 
+1. Configure the connections needed to be used by the solution in the environment:
 
-    ![Screenshot of the Refresh option.](./media/dynamics365-RPA/image013.png)
+    1. For each connector the solution uses, either select an existing connection or create a new one using your Microsoft account and credentials of your choice.
 
-    c. Click on Import. The solution explorer shows you a message letting you know the solution is being imported. It takes a few minutes.  
+        :::image type="content" source="media/dynamics365-RPA/solution-connections.png" alt-text="Screenshot of the connections that need to be configured to be used by the solution.":::
 
-1. Enter the parameters that the solution should use to run the process 
+    1. Go back to the tab in which you initiate the above step and select **Refresh**.
 
-    a. From the Solutions explorer, click on the solution to open it 
-    b. You will find there are rows with the Type column that reads Environment Variable. We need to add values for each of these.  
+    1. Select **Import**. The solution explorer shows you a message informing you that the solution is being imported. This step may take a few minutes.  
 
-    c. Click on each of the environment variable below and under **Current Value**, click on **Add New Value** to put in your parameter. 
+1. Enter the parameters that the solution should use to run the process:
+
+    1. From the solutions explorer, select the appropriate solution to open it.
+
+    1. In this step, you'll see some rows with the value **Environment Variable** in the **Type** column. Add values for each of these.
+
+    1. Select each environment variable, and under **Current Value**, select **Add New Value** to put in your parameter.
 
     |Environment variable name|Description|
     |----|----|
-    |QOrder Parameter - SCM Portal URL|URL for the SCM environment including parameters for company and form for the InventQualityOrderTable *Example: `https://hxoshmyfoodus9o1mf.sandbox.operations.int.dynamics.com/?cmp=USMF&mi=InventQualityOrderTable`*|
-    |SCM SignIn User|user account to sign into Dynamics 365 SCM *example: helloworld@contoso.com*|
-    |QOrder Parameter – Site|Name of the site to use for filling in the quality order creation form.|
-    |QOrder Parameter – Test Group|Configure the Testgroup for the quality order creation|
-    |QOrder Parameter - Warehouse|Configure the Warehouse for the quality order creation| 
+    |QOrder Parameter - SCM Portal URL|URL for the SCM environment including parameters for company and form for the InventQualityOrderTable. For example: **`https://hxoshmyfoodus9o1mf.sandbox.operations.int.dynamics.com/?cmp=USMF&mi=InventQualityOrderTable`**|
+    |SCM SignIn User|The user account to sign in to Dynamics 365 SCM. For example: **helloworld@contoso.com**|
+    |QOrder Parameter – Site|The name of the site to use for filling in the quality order creation form.|
+    |QOrder Parameter – Test Group|Configure the Test group for the quality order creation|
+    |QOrder Parameter - Warehouse|Configure the Warehouse for the quality order creation|
 
-    ![Screenshot of the Edit QOrder Parameter pane.](./media/dynamics365-RPA/image015.png)
+    :::image type="content" source="media/dynamics365-RPA/edit-qorder-parameter-pane.png" alt-text="Screenshot of the Edit QOrder Parameter pane.":::
 
-1. Turn on the cloud flow in the solution 
+1. Turn on the cloud flow in the solution:
 
-    a. In the solution, click the … menu for the **QOrder - CloudFlow** cloud flow 
-    b. Click on **Turn On**
+    1. In the solution, select the **…** menu for the **QOrder - CloudFlow** cloud flow.
+    1. Select **Turn On**
 
-1. Put in the encrypted credentials to be used by the solution to log in to Dynamics 365 
+1. Put in the encrypted credentials to be used by the solution to sign in to Dynamics 365:
 
-    a. From the solution explorer, click on the line item called **QOrder – Desktop Flow**
-    b. Click on **Edit** then **Launch App**
-    c. This will open the Power Automate for desktop  
-    d. Under the **Subflows** dropdown, double click on **LoginSCM**
-    e. In the **LoginSCM** subflow, double click on action 8 
-    f. Fill in the **Text** textbox with the password of the account to use during automation 
-    
-    ![Screenshot of the Populate text field on web page action.](./media/dynamics365-RPA/image017.png)
- 
+    1. From the solution explorer, select the line item called **QOrder – Desktop Flow**
+    1. Select **Edit**, then **Launch App**. This step will launch Power Automate for desktop.
+    1. Under the **Subflows** dropdown, select **LoginSCM**.
+    1. In the **LoginSCM** subflow, open the properties of the action 8.
+    1. Fill in the **Text** field with the password of the account to use during automation.
+
+        :::image type="content" source="media/dynamics365-RPA/populate-text-field-web-page-action.png" alt-text="Screenshot of the Populate text field on web page action.":::
+
 1. Share each component of the solution (app, connection, flow, desktop flow) to other users in your company as run only user.  
 
-1. Have the user launch the “QOrder-Application" Power App from their phone and start using it. Watch this video for the scenario demo 
+1. Have the user launch the **QOrder-Application** Power App from their phone and start using it.
 
-    ![Video of a demo.](./media/dynamics365-RPA/image019.png)
-
- 
-
-## Troubleshooting or Known issues 
+## Known issues
 
 |Known issue |Workaround|
 |----|----|
-|if you acquire the adequate licenses for Power Automate and Power Apps after you install the solution, the flow or app will be turned off.|After you acquire the licenses, go back to the Solution explorer, click on the … menu for the app or flow then click on “Turn On”.| 
+|If you acquire the adequate licenses for Power Automate and Power Apps after you install the solution, the flow or app will be turned off.|After you acquire the licenses, go back to the solution explorer, select the **…** menu for the app or flow, and then select **Turn On**.|
