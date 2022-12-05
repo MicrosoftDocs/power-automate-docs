@@ -50,18 +50,16 @@
     items:
     - name: Overview
       href: ./mobile/overview-mobile.md
-    - name: Android
-      items:
-      - name: Run instant flows
-        href: ./mobile/run-instant-flows.md
-      - name: Create widgets
-        href: ./mobile/widgets.md
-      - name: Manage approvals
-        href: ./mobile/manage-approvals.md
-      - name: Receive notifications
-        href: ./mobile/notifications.md
-      - name: Manage cloud flows
-        href: ./mobile/manage-cloud-flows.md
+    - name: Run instant flows
+      href: ./mobile/run-instant-flows.md
+    - name: Create widgets
+      href: ./mobile/widgets.md
+    - name: Manage approvals
+      href: ./mobile/manage-approvals.md
+    - name: Receive notifications
+      href: ./mobile/notifications.md
+    - name: Manage cloud flows
+      href: ./mobile/manage-cloud-flows.md
     - name: iOS
       items:
       - name: Create a button flow
