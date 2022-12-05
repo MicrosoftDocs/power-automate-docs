@@ -1,5 +1,5 @@
 ---
-title: Unhide worksheets in Excel using VBScript | Microsoft Docs
+title: Unhide worksheets in Excel using VBScript
 description: Unhide worksheets in Excel using VBScript
 author: georgiostrantzas
 

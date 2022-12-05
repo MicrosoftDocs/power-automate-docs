@@ -15,6 +15,9 @@ ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 12/16/2022
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 11/30/2022
 ms.author: napienko
 ms.reviewer: angieandrews
 search.app: 
@@ -67,7 +70,7 @@ You might have different environments to work in depending on the purpose of you
 
 1. Select the environment icon, and then select the environment you want to access. A check mark appears next to the selected environment.
 
-    :::image type="content" source="../media/android/environment.png" alt-text="Screenshot of an environment selected in the Power Automate mobile app, with the environment icon highlighted.":::
+    :::image type="content" source="../media/android/environment.png" alt-text="Screenshot of an environment selected with the environment icon highlighted.":::
 
 ## Limitations
 

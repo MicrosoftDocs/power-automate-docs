@@ -1,5 +1,5 @@
 ---
-title: Learn to edit Windows recorder (V1) flows | Microsoft Docs
+title: Learn to edit Windows recorder (V1) flows
 description: Learn to edit Windows recorder (V1) flows.
 services: ''
 suite: flow

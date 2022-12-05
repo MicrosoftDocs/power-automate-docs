@@ -1,11 +1,11 @@
 ---
-title: Cryptography | Microsoft Docs
-description: Cryptography Actions Reference
+title: Cryptography actions reference
+description: See all the available cryptography actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/03/2021
+ms.date: 11/23/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -19,43 +19,30 @@ search.audienceType:
   - enduser
 ---
 
-# Cryptography
+# Cryptography actions
 
-Encrypt and decrypt text and files
+**Cryptography** actions enable you to encrypt and decrypt plain text and text from files providing a key and an encoding format.
 
-[Encrypt text with AES](#encrypttextaction)  
-[Decrypt text with AES](#decrypttextaction)  
-[Encrypt from file with AES](#encryptfromfileaction)  
-[Decrypt to file with AES](#decrypttofileaction)  
-[Hash text](#hashtext)  
-[Hash from file](#hashfromfile)  
-[Hash text with key](#hashtextwithkey)  
-[Hash from file with key](#hashfromfilewithkey)  
+The **Encrypt text with AES** action encrypts a text using the AES algorithm and a user-specified encryption key. You can provide the encryption key directly or through a variable.
 
-## Getting started with cryptography actions
+To encrypt the text of a file directly, use the **Encrypt from file with AES** action. This action works similarly to the **Encrypt text with AES** action but requires a source file instead of a text value.
 
-The **Cryptography** actions enable users to encrypt and decrypt plain text and text from files providing a key and an encoding format.
+:::image type="content" source="media/cryptography/encrypt-from-file-with-aes-action.png" alt-text="Screenshot of the Encrypt from file with AES action.":::
 
-The **Encrypt text with AES** action encrypts a text using the AES algorithm and a user-specified encryption key. The encryption key can be provided directly or through a variable.
+To decrypt a text, use the **Decrypt text with AES**, and enter the encrypted text and the encryption key previously used to encrypt it. To decrypt and store a text in a file, deploy the **Decrypt to file with AES** and specify a destination path.
 
-To encrypt the text of a file directly, use the **Encrypt from file with AES** action. This action works similarly to the **Encrypt text with AES** action, but it requires a source file instead of a text value.
-
-![Screenshot of the Encrypt from file with AES action.](media/cryptography/encrypt-from-file-with-aes-action.png)
-
-To decrypt a text, use the **Decrypt text with AES** and populate the encrypted text and the encryption key previously used to encrypt it. To decrypt a text and store it in a file, use the **Decrypt to file with AES** and specify a destination path for the file. 
-
-![Screenshot of the Decrypt to file with AES action.](media/cryptography/decrypt-to-file-with-aes-action.png)
+:::image type="content" source="media/cryptography/decrypt-to-file-with-aes-action.png" alt-text="Screenshot of the Decrypt to file with AES action.":::
 
 Apart from encryption and decryption, the **Cryptography** group of actions provides actions to hash values with and without a key. Like the encryption actions, you can hash values from files using the **Hash from file** and **Hash from file with key** actions.
 
-![Screenshot of the Hash from file with key action.](media/cryptography/hash-from-file-with-key-action.png)
+:::image type="content" source="media/cryptography/hash-from-file-with-key-action.png" alt-text="Screenshot of the Hash from file with key action.":::
 
-## Cryptography actions
+## <a name="encrypttextaction"></a> Encrypt text with AES
 
-### <a name="encrypttextaction"></a> Encrypt text with AES
-Encrypt a string with AES, using a key and a specified encoding format
+Encrypt a string with AES, using a key and a specified encoding format.
 
-##### Input Parameters
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to encrypt|
@@ -66,24 +53,26 @@ Encrypt a string with AES, using a key and a specified encoding format
 |Use salt|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use salt for encryption. When this option is enabled,  the randomly generated salt becomes an output in the form of a base64 string.|
 |Use initialization vector|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use an initialization vector. When this option is enabled, the randomly generated initialization vector becomes an output in the form of a base64 string|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |EncryptedText|[Text value](../variable-data-types.md#text-value)|The encrypted text for later processing|
 |Salt|[Text value](../variable-data-types.md#text-value)|The randomly generated salt value for later processing|
 |InitializationVector|[Text value](../variable-data-types.md#text-value)|The randomly generated initialization vector value for later processing|
 
+### <a name="encrypttextaction_onerror"></a> Exceptions
 
-##### <a name="encrypttextaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to encrypt text|Indicates that an error occurred during encryption|
 
-### <a name="decrypttextaction"></a> Decrypt text with AES
-Decrypt a string with AES based on a specified key and an encoding format
+## <a name="decrypttextaction"></a> Decrypt text with AES
 
-##### Input Parameters
+Decrypt a string with AES based on a specified key and an encoding format.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding for the decrypted text|
@@ -96,22 +85,24 @@ Decrypt a string with AES based on a specified key and an encoding format
 |Use initialization vector|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use an initialization vector|
 |Initialization vector|No|[Text value](../variable-data-types.md#text-value)||The initialization vector to use for decryption in the form of a base64 string|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |DecryptedText|[Text value](../variable-data-types.md#text-value)|The decrypted text for later processing|
 
+### <a name="decrypttextaction_onerror"></a> Exceptions
 
-##### <a name="decrypttextaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to decrypt text|Indicates that an error occurred during decryption|
 
-### <a name="encryptfromfileaction"></a> Encrypt from file with AES
-Encrypt the contents of a file with AES, using a key and a specified encoding format
+## <a name="encryptfromfileaction"></a> Encrypt from file with AES
 
-##### Input Parameters
+Encrypt the contents of a file with AES, using a key and a specified encoding format.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to encrypt|
@@ -122,25 +113,27 @@ Encrypt the contents of a file with AES, using a key and a specified encoding fo
 |Use salt|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use salt for encryption. When this option is enabled,  the randomly generated salt becomes an output in the form of a base64 string.|
 |Use initialization vector|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use an initialization vector. When this option is enabled, the randomly generated initialization vector becomes an output in the form of a base64 string|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |EncryptedText|[Text value](../variable-data-types.md#text-value)|The text of the encrypted file for later processing|
 |Salt|[Text value](../variable-data-types.md#text-value)|The randomly generated salt value for later processing|
 |InitializationVector|[Text value](../variable-data-types.md#text-value)|The randomly generated initialization vector value for later processing|
 
+### <a name="encryptfromfileaction_onerror"></a> Exceptions
 
-##### <a name="encryptfromfileaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |File not found|Indicates that the file doesn't exist|
 |Failed to encrypt the contents of the file|Indicates that an error occurred while encrypting the contents of the file|
 
-### <a name="decrypttofileaction"></a> Decrypt to file with AES
-Decrypt a string to a file with AES based on a specified key and an encoding format
+## <a name="decrypttofileaction"></a> Decrypt to file with AES
 
-##### Input Parameters
+Decrypt a string to a file with AES based on a specified key and an encoding format.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to decrypt|
@@ -155,67 +148,73 @@ Decrypt a string to a file with AES based on a specified key and an encoding for
 |Use initialization vector|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use an initialization vector. Enter the initialization vector in the form of a base64 string|
 |Initialization vector|No|[Text value](../variable-data-types.md#text-value)||The initialization vector to use for decryption|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |DecryptedFile|[File](../variable-data-types.md#files-and-folders)|The decrypted file for later processing|
 
+### <a name="decrypttofileaction_onerror"></a> Exceptions
 
-##### <a name="decrypttofileaction_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to decrypt and store the contents to a file|Indicates that an error occurred while decrypting or storing the contents to the specified file|
 
-### <a name="hashtext"></a> Hash text
-Hash a string, using a specified algorithm and an encoding format
+## <a name="hashtext"></a> Hash text
 
-##### Input Parameters
+Hash a string, using a specified algorithm and an encoding format.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|SHA256, SHA384, SHA512|SHA256|The algorithm to use for hashing|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the text to hash|
 |Text to hash|No|[Text value](../variable-data-types.md#text-value)||The text to hash|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |HashedText|[Text value](../variable-data-types.md#text-value)|The hashed text for later processing|
 
+### <a name="hashtext_onerror"></a> Exceptions
 
-##### <a name="hashtext_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to hash text|Indicates that an error occurred during hashing|
 
-### <a name="hashfromfile"></a> Hash from file
-Hash the contents of a file, using a specified algorithm and an encoding format
+## <a name="hashfromfile"></a> Hash from file
 
-##### Input Parameters
+Hash the contents of a file, using a specified algorithm and an encoding format.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|SHA256, SHA384, SHA512|SHA256|The algorithm to use for hashing|
 |Encoding|N/A|System default, ASCII, Unicode, Big-endian Unicode, UTF-8|Unicode|The encoding of the file to hash|
 |File to hash|No|[File](../variable-data-types.md#files-and-folders)||The file to hash the contents of|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |HashedText|[Text value](../variable-data-types.md#text-value)|The hashed text for later processing|
 
+### <a name="hashfromfile_onerror"></a> Exceptions
 
-##### <a name="hashfromfile_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |File not found|Indicates that the file doesn't exist|
 |Failed to hash the file|Indicates that an error occurred while hashing the contents of the file|
 
-### <a name="hashtextwithkey"></a> Hash text with key
-Hash a string with a key, using a specified algorithm and an encoding format
+## <a name="hashtextwithkey"></a> Hash text with key
 
-##### Input Parameters
+Hash a string with a key, using a specified algorithm and an encoding format.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|HMAC SHA256, HMAC SHA384, HMAC SHA512|HMAC SHA256|The algorithm to use for hashing|
@@ -223,22 +222,24 @@ Hash a string with a key, using a specified algorithm and an encoding format
 |Text to hash|No|[Text value](../variable-data-types.md#text-value)||The text to hash|
 |Hash key|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The key to hash the text with|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |HashedText|[Text value](../variable-data-types.md#text-value)|The hashed text for later processing|
 
+### <a name="hashtextwithkey_onerror"></a> Exceptions
 
-##### <a name="hashtextwithkey_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to hash text with key|Indicates that an error occurred during hashing with key|
 
-### <a name="hashfromfilewithkey"></a> Hash from file with key
-Hash the contents of a file with a key, using a specified algorithm and an encoding format
+## <a name="hashfromfilewithkey"></a> Hash from file with key
 
-##### Input Parameters
+Hash the contents of a file with a key, using a specified algorithm and an encoding format.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Hash algorithm|N/A|HMAC SHA256, HMAC SHA384, HMAC SHA512|HMAC SHA256|The algorithm to use for hashing|
@@ -246,19 +247,17 @@ Hash the contents of a file with a key, using a specified algorithm and an encod
 |File to hash|No|[File](../variable-data-types.md#files-and-folders)||The file to hash the contents of|
 |Hash key|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The hash key to hash the text with|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |HashedText|[Text value](../variable-data-types.md#text-value)|The hashed text for later processing|
 
+### <a name="hashfromfilewithkey_onerror"></a> Exceptions
 
-##### <a name="hashfromfilewithkey_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |File not found|Indicates that the file doesn't exist|
 |Failed to hash the file with key|Indicates that an error occurred while hashing the contents of the file with the specified key|
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

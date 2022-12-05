@@ -23,7 +23,7 @@ When you host your flows in a [solution](/power-platform/alm/solution-concepts-a
 Flows that you create in a solution are known as *solution-aware* flows. You can add multiple flows to a single solution.
 
 > [!TIP]
-> The [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/) article gives detailed information about solution concepts and how to implement a healthy application lifecycle management (ALM) practice in your organization.
+> The [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/) guide provides detailed information about solution concepts and how to implement a healthy ALM practice in your organization.
 
 ## Prerequisites
 

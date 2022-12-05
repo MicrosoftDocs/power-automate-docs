@@ -1,5 +1,5 @@
 ---
-title: Scroll on a web page | Microsoft Docs
+title: Scroll on a web page
 description: Scroll on a web page
 author: georgiostrantzas
 

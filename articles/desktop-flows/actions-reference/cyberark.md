@@ -1,11 +1,11 @@
 ---
-title: CyberArk | Microsoft Docs
-description: CyberArk Actions Reference
+title: CyberArk actions reference
+description: See all the available CyberArk actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/03/2021
+ms.date: 11/23/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -19,13 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-# CyberArk
-
-Connect to CyberArk and retrieve passwords
-
-[Get password from CyberArk](#getpasswordbase)  
-
-## Getting started with CyberArk actions
+# CyberArk actions
 
 CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate enables you to retrieve credentials from CyberArk through the **Get password from CyberArk** action.
 
@@ -36,18 +30,18 @@ To find the required information to populate the action, see the following instr
 
 - **Application ID**: To find the application ID, open CyberArk Password Vault on a web browser and navigate to the **Applications** tab.
 
-- **Safe**: Populate the name of the safe displayed in PrivateArk Client. 
+- **Safe**: Populate the name of the safe displayed in PrivateArk Client.
 
-- **Folder** and **Object**: Select a safe in PrivateArk Client and populate the folder name displayed on the left pane and the object name displayed in the main list.
+- **Folder** and **Object**: Select a safe in PrivateArk Client, and populate the folder name displayed on the left pane and the object name displayed in the main list.
 
-![Screenshot of the Get password from CyberArk action.](media/cyberark/get-password-cyberark-action.png)
+:::image type="content" source="media/cyberark/get-password-cyberark-action.png" alt-text="Screenshot of the Get password from CyberArk action.":::
 
-## CyberArk actions
+## <a name="getpasswordbase"></a> Get password from CyberArk
 
-### <a name="getpasswordbase"></a> Get password from CyberArk
-Retrieves a password for a specific application from CyberArk
+Retrieves a password for a specific application from CyberArk.
 
-##### Input Parameters
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Server address|No|[Text value](../variable-data-types.md#text-value)||The base URI for the web request|
@@ -64,19 +58,19 @@ Retrieves a password for a specific application from CyberArk
 |Certificate password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the certificate file|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The waiting time (in seconds) to get results from CyberArk|
 
-##### Variables Produced
+### Variables produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response result|
 |CyberArkPassword|Encrypted value|The password retrieved from CyberArk|
 
-##### <a name="getpasswordbase_onerror"></a> Exceptions
+### <a name="getpasswordbase_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Failed to send web request|Indicates a problem sending the web request|
 |Timeout expired|Indicates that the request timed out|
 |Error response from web request|Indicates that the web request returned an error response|
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

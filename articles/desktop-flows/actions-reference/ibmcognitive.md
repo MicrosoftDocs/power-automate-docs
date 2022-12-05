@@ -1,11 +1,11 @@
 ---
-title: IBM Cognitive | Microsoft Docs
-description: IBM Cognitive Actions Reference
+title: IBM cognitive actions reference
+description: See all the available IBM cognitive actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
+ms.date: 11/23/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -19,34 +19,22 @@ search.audienceType:
   - enduser
 ---
 
-# IBM cognitive
+# IBM cognitive actions
 
-IBM's cognitive actions
-
-[Convert document](#convertdocumentibm)  
-[Translate](#translateibm)  
-[Identify language](#identifylanguage)  
-[Analyze tone](#analyzetoneibm)  
-[Classify Image](#classifyimageibm)  
-
-## Getting started with IBM cognitive actions
-
-IBM cognitive services are machine learning algorithms that use artificial intelligence to perform complex operations, such as language tone analyzing and visual recognition.
+IBM cognitive services are machine learning algorithms that use artificial intelligence to perform complex operations, such as language tone analysis and visual recognition.
 
 Desktop flows enable you to use these services through the IBM cognitive actions.
 
-All IBM cognitive actions require an API key that can be created and managed through the IBM Cloud console. Additionally, they require the release date of the used API and the service endpoint location.
+All IBM cognitive actions require an API key that you can create and manage through the IBM Cloud console. Additionally, they require the release date of the used API and the service endpoint location.
 
-![Screenshot of the Translate action.](media/ibm-cognitive/translate-action.png)
+:::image type="content" source="media/ibm-cognitive/translate-action.png" alt-text="Screenshot of the Translate action.":::
 
-## IBM cognitive actions
+## <a name="convertdocumentibm"></a> Convert document
 
-## Document conversion
-Translate non-structured documents like fax, email, pdf, etc. into an EDI or other structured formats
-### <a name="convertdocumentibm"></a> Convert document
-Invokes the IBM service named 'Convert Document'
+Invokes the IBM service named 'Convert Document'.
 
-##### Input Parameters
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Username|No|[Text value](../variable-data-types.md#text-value)||The username to be used for this call|
@@ -58,26 +46,26 @@ Invokes the IBM service named 'Convert Document'
 |Answer units|Yes|[Text value](../variable-data-types.md#text-value)||The heading levels as a comma-separated string|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code of the  API call|
 
+### <a name="convertdocumentibm_onerror"></a> Exceptions
 
-##### <a name="convertdocumentibm_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 
-## Language translator
-Translate documents, apps, and webpages
-### <a name="translateibm"></a> Translate
-Invokes the IBM service named 'Translate'
+## <a name="translateibm"></a> Translate
 
-##### Input Parameters
+Invokes the IBM service named 'Translate'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
@@ -91,24 +79,26 @@ Invokes the IBM service named 'Translate'
 |Text|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||The text to send or list of words to be separately translated|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="translateibm_onerror"></a> Exceptions
 
-##### <a name="translateibm_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 
-### <a name="identifylanguage"></a> Identify language
-Invokes the IBM service named 'Identify Language'
+## <a name="identifylanguage"></a> Identify language
 
-##### Input Parameters
+Invokes the IBM service named 'Identify Language'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
@@ -119,26 +109,26 @@ Invokes the IBM service named 'Identify Language'
 |Content type|Yes|[Text value](../variable-data-types.md#text-value)|text/plain|The format of the requested values|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code of the  API call|
 
+### <a name="identifylanguage_onerror"></a> Exceptions
 
-##### <a name="identifylanguage_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 
-## Tone analyzer
-Detect emotional and language tones in written text
-### <a name="analyzetoneibm"></a> Analyze tone
-Invokes the IBM service named 'Analyze Tone'
+## <a name="analyzetoneibm"></a> Analyze tone
 
-##### Input Parameters
+Invokes the IBM service named 'Analyze Tone'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
@@ -153,26 +143,26 @@ Invokes the IBM service named 'Analyze Tone'
 |Sentences|Yes|[Text value](../variable-data-types.md#text-value)||Specify whether to remove the sentence analysis|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code of the  API call|
 
+### <a name="analyzetoneibm_onerror"></a> Exceptions
 
-##### <a name="analyzetoneibm_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 
-## Visual recognition
-Find meaning in visual content. Analyze images for scenes, objects, and other content
-### <a name="classifyimageibm"></a> Classify Image
-Invokes the IBM service named 'Classify Image'
+## <a name="classifyimageibm"></a> Classify Image
 
-##### Input Parameters
+Invokes the IBM service named 'Classify Image'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The API key to use for this call|
@@ -188,15 +178,15 @@ Invokes the IBM service named 'Classify Image'
 |Language|Yes|[Text value](../variable-data-types.md#text-value)||The language of the output|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The results of the API call|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code of the  API call|
 
+### <a name="classifyimageibm_onerror"></a> Exceptions
 
-##### <a name="classifyimageibm_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Request timeout expired|Indicates that the timeout expired while performing the request|

@@ -1,5 +1,5 @@
 ---
-title: Use the Power Automate Azure Virtual Desktop Integration starter kit | Microsoft Docs
+title: Use the Power Automate Azure Virtual Desktop Integration starter kit
 description: Making use of the Power Automate Azure Virtual Desktop Integration starter kit
 services: ''
 author: georgiostrantzas

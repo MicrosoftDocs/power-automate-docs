@@ -1,5 +1,5 @@
 ---
-title: Create custom forms | Microsoft Docs
+title: Create custom forms
 description: Create custom forms	
 author: georgiostrantzas
 ms.service: power-automate

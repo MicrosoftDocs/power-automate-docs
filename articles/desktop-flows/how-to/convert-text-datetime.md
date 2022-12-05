@@ -1,5 +1,5 @@
 ---
-title: Convert a text value to datetime | Microsoft Docs
+title: Convert a text value to datetime
 description: Convert a text value to datetime
 author: georgiostrantzas
 

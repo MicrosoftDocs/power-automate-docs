@@ -1,11 +1,11 @@
 ---
-title: Conditionals | Microsoft Docs
-description: Conditionals Actions Reference
+title: Conditional actions reference
+description: See all the available conditionals actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
+ms.date: 11/23/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -19,112 +19,125 @@ search.audienceType:
   - enduser
 ---
 
-# Conditionals
+# Conditional actions
 
-[Case](#case)  
-[Default case](#casedefault)  
-[Else](#else)  
-[Else if](#elseif)  
-[If](#if)  
-[Switch](#switch)  
+Conditional actions allow you to adjust which actions to run based on the outcomes of conditional statements.
 
-## Getting started with conditionals
+The following list displays some applications and features:
 
-Conditional actions allow you to modify which actions to run, based on the outcomes of conditional statements.
-
-Useful applications and features:
-* Use the If group of conditionals to evaluate any type of condition.
-* Use the Switch group of conditionals to compare a single variable with multiple possible values.
+* Use **If** conditionals to evaluate any type of condition.
+* Use **Switch** conditionals to compare a single variable with multiple possible values.
 * Cover multiple scenarios by employing nested conditionals.
-* Provide default and alternative behaviors to flows based on the available data.
+* Provide default and alternative behaviors to your desktop flows based on the available data.
 
-You can find more information on how to use the conditional actions [here](../use-conditionals.md)
+To find more information on how to use the conditionals,go to [Use conditionals](../use-conditionals.md).
 
-## Conditionals actions
-### <a name="case"></a> Case
-An expression that, if met, a block of actions associated with that particular case runs
+## <a name="case"></a> Case
 
-##### Input Parameters
+An expression that, if met, a block of actions associated with that particular case runs.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=), Contains, Does not contain, Is empty, Isn't empty, Starts with, Doesn't start with, Ends with, Doesn't end with|Equal to (=)|The comparison operator of this case|
 |Value to compare|No|*||Enter a value to compare with the switch-block value|
 
+### Variables produced
 
-##### Variables Produced
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
-##### <a name="case_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="casedefault"></a> Default case
-A block of actions that is run, if no case expression has been met in the switch body
+### <a name="case_onerror"></a> Exceptions
 
-##### Input Parameters
-- This action doesn't require any input
+This action doesn't include any exceptions.
 
-##### Variables Produced
-- This action doesn't produce any variables
+## <a name="casedefault"></a> Default case
 
-##### <a name="casedefault_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="else"></a> Else
-Marks the beginning of a block of actions that ran if the condition specified in the preceding 'If' statements aren't met
+A block of actions that is run, if no case expression has been met in the switch body.
 
-##### Input Parameters
-- This action doesn't require any input
+##### Input parameters
+This action doesn't require any input.
 
-##### Variables Produced
-- This action doesn't produce any variables
+### Variables produced
 
-##### <a name="else_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="elseif"></a> Else if
-Marks the beginning of a block of actions that ran if the conditions specified in the preceding 'If' statements aren't met, but the condition specified in this statement is met
+This action doesn't produce any variables.
 
-##### Input Parameters
+### <a name="casedefault_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="else"></a> Else
+
+Marks the beginning of a block of actions that ran if the condition specified in the preceding 'If' statements aren't met.
+
+### Input parameters
+
+This action doesn't require any input.
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="else_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="elseif"></a> Else if
+
+Marks the beginning of a block of actions that run if the conditions specified in the preceding 'If' statements aren't met, but the condition specified in this statement is met.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=), Contains, Does not contain, Is empty, Isn't empty, Starts with, Doesn't start with, Ends with, Doesn't end with|Equal to (=)|Choose the relationship of first operand to the second operand.|
 |First operand|No|*||Enter a value name defined by a previous action, text, number or expression to compare with the second operand.|
 |Second operand|No|*||Enter a value name produced by a previous action, text, number or expression to compare with the first operand.|
 
+### Variables produced
 
-##### Variables Produced
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
-##### <a name="elseif_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="if"></a> If
-Marks the beginning of a block of actions that is run if the condition specified in this statement is met
+### <a name="elseif_onerror"></a> Exceptions
 
-##### Input Parameters
+This action doesn't include any exceptions.
+
+## <a name="if"></a> If
+
+Marks the beginning of a block of actions that is run if the condition specified in this statement is met.
+
+##### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=), Contains, Does not contain, Is empty, Isn't empty, Starts with, Doesn't start with, Ends with, Doesn't end with|Equal to (=)|Choose the relationship of first operand to the second operand.|
 |First operand|No|*||Enter a value name defined by a previous action, text, number or expression to compare with the second operand.|
 |Second operand|No|*||Enter a value name produced by a previous action, text, number or expression to compare with the first operand.|
 
+### Variables produced
 
-##### Variables Produced
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
-##### <a name="if_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="switch"></a> Switch
-Dispatches execution to different parts of the switch body based on the value of the expression
+### <a name="if_onerror"></a> Exceptions
 
-##### Input Parameters
+This action doesn't include any exceptions.
+
+## <a name="switch"></a> Switch
+
+Dispatches execution to different parts of the switch body based on the value of the expression.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Value to check|No|*||Enter a value name, text, or number to compare with the following cases.|
 
+### Variables produced
 
-##### Variables Produced
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
-##### <a name="switch_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+### <a name="switch_onerror"></a> Exceptions
 
-
+This action doesn't include any exceptions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

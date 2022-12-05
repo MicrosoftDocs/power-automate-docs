@@ -1,11 +1,11 @@
 ---
-title: PDF | Microsoft Docs
-description: PDF Actions Reference
+title: PDF actions reference
+description: See all the available PDF actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
+ms.date: 11/24/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -19,55 +19,39 @@ search.audienceType:
   - enduser
 ---
 
-# PDF
+# PDF actions
 
+PDF actions enable you to extract images, text, and tables from PDF files, and arrange pages to create new documents.
 
+To extract text from a PDF file, use the **Extract text from PDF** action. The following example extracts text from a specific range of pages of a password-protected file. The password is specified in the **Advanced** settings.
 
-Automate PDF files and their content (text and images)
+To extract texts arranged in a tabular form, enable **Optimize for structured data** to improve the results' format and accuracy.
 
-[Extract text from PDF](#extracttextfrompdfaction)  
-[Extract tables from PDF](#extracttablesfrompdfaction)  
-[Extract images from PDF](#extractimagesfrompdfaction)  
-[Extract PDF file pages to new PDF file](#extractpages)  
-[Merge PDF files](#mergefiles)  
+:::image type="content" source="media\pdf\extract-text-pdf-example.png" alt-text="Screenshot of the Extract text from PDF action.":::
 
+To extract tables from a PDF file, deploy the **Extract tables from PDF** action, select the file, and specify the pages to extract from.
 
-## Getting started with PDF actions
-
-The PDF group of actions enables you to extract images, text, and tables from PDF files and arrange pages to create new documents.
-
-To extract text from a PDF file, use the **Extract text from PDF** action. In the following example, the action has been configured to extract text from a specific range of pages. The file is password-protected, so a password has been populated in the **Advanced** settings. 
-
-If you want to extract texts arranged in a tabular form, enable the **Optimize for structured data** option to improve the results' format and accuracy. 
-
-![Screenshot of the Extract text from PDF action.](media\pdf\extract-text-pdf-example.png)
-
-To extract images, deploy the **Extract images from PDF** action. This action has a similar structure as the previous one, but it contains an additional option to specify a prefix for the image names.
-
-To extract tables from a PDF file, use the **Extract tables from PDF** action. In the action properties, specify the PDF file and the pages to extract from. The action produces a variable named **ExtractedPDFTables** that contains a list of PDF table info. You can find information regarding handling this type of variables in [Advanced data types](../variable-data-types.md#advanced-data-types).
-
-> [!IMPORTANT]
-> The **Extract tables from PDF** action doesn't use Optical Character Recognition (OCR), so you can't extract non-copyable text from scanned PDFs. 
+The action produces the **ExtractedPDFTables** variable that contains a list of PDF table info. To find information about this type of list, go to [Advanced data types](../variable-data-types.md#advanced-data-types).
 
 > [!NOTE]
-> The library behind the action occasionally extracts additional PDF data that aren't tables. This functionality minimizes the risk of accidentally omitting a real table. 
+>
+> - The **Extract tables from PDF** action doesn't use Optical Character Recognition (OCR), so you can't extract non-copyable text from scanned PDFs.
+> - The library behind the action occasionally extracts additional PDF data that aren't tables. This functionality minimizes the risk of accidentally omitting a real table.
 
-![Screenshot of the Extract tables from PDF action.](media\pdf\extract-tables-pdf-example.png)
+:::image type="content" source="media\pdf\extract-tables-pdf-example.png" alt-text="Screenshot of the Extract tables from PDF action.":::
 
-Apart from extracting information from PDF files, you can create a new PDF document from an existing file using the **Extract PDF file pages to new PDF file** action. 
+Apart from extracting information from PDF files, you can create a new PDF document from an existing file using the **Extract PDF file pages to new PDF file** action.
 
-In the following example, the source document and the file name of the new document have been specified. In addition, the pages have been selected as a combination of specific pages and a range.
+The following example selects a combination of specific pages and a range of pages.
 
-![Screenshot of the Extract PDF file pages to new PDF file action.](media\pdf\extract-pdf-new-file-example.png)
+:::image type="content" source="media\pdf\extract-pdf-new-file-example.png" alt-text="Screenshot of the Extract PDF file pages to new PDF file action.":::
 
+## <a name="extracttextfrompdfaction"></a> Extract text from PDF
 
-## PDF actions
+Extract text from a PDF file.
 
+### Input parameters
 
-### <a name="extracttextfrompdfaction"></a> Extract text from PDF
-Extract text from a PDF file
-
-##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|[File](../variable-data-types.md#files-and-folders)||The PDF file to extract text from. Enter a file path, a variable containing a file or a text path|
@@ -78,22 +62,26 @@ Extract text from a PDF file
 |Password|Yes|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password of the PDF file. Leave this blank if the PDF isn't password protected|
 |Optimize for structured data|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to detect formatted layout in the document and extract text accordingly|
 
-##### Variables Produced
+### Variables produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExtractedPDFText|[Text value](../variable-data-types.md#text-value)|The extracted text|
 
-##### <a name="extracttextfrompdfaction_onerror"></a> Exceptions
+### <a name="extracttextfrompdfaction_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |PDF file doesn't exist|File doesn't exist on the given path|
 |Invalid password|The given password is invalid|
 |Failed to extract text|Error while trying to extract text|
 
-### <a name="extracttablesfrompdfaction"></a> Extract tables from PDF
-Extract tables from a PDF file
+## <a name="extracttablesfrompdfaction"></a> Extract tables from PDF
 
-##### Input Parameters
+Extract tables from a PDF file.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|[File](../variable-data-types.md#files-and-folders)||The PDF file to extract tables from. Enter a file path, a variable containing a file or a text path|
@@ -105,22 +93,26 @@ Extract tables from a PDF file
 |Merge tables that cross page margins|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to merge tables that cross page margins in the specified page range|
 |First line contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether the first line of table contains column names|
 
-##### Variables Produced
+### Variables produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExtractedPDFTables|[List of PDF table info](../variable-data-types.md#list-of-pdf-table-info)|The extracted tables with their info as a list|
 
-##### <a name="extracttablesfrompdfaction_onerror"></a> Exceptions
+### <a name="extracttablesfrompdfaction_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |PDF file doesn't exist|File doesn't exist on the given path|
 |Invalid password|The given password is invalid|
 |Failed to extract tables|Error while trying to extract tables|
 
-### <a name="extractimagesfrompdfaction"></a> Extract images from PDF
-Extract images from a PDF file
+## <a name="extractimagesfrompdfaction"></a> Extract images from PDF
 
-##### Input Parameters
+Extract images from a PDF file.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|[File](../variable-data-types.md#files-and-folders)||The PDF file to extract images from. Enter a file path, a variable containing a file or a text path|
@@ -132,11 +124,12 @@ Extract images from a PDF file
 |Image(s) name|No|[Text value](../variable-data-types.md#text-value)||How the name of the image(s) starts. Extracted image(s) name example: GivenName_1, GivenName_2|
 |Save image(s) to|No|[Folder](../variable-data-types.md#files-and-folders)||The folder to save the extracted images as png files|
 
+### Variables produced
 
-##### Variables Produced
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
-##### <a name="extractimagesfrompdfaction_onerror"></a> Exceptions
+### <a name="extractimagesfrompdfaction_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Invalid password|The given password is invalid|
@@ -144,27 +137,28 @@ Extract images from a PDF file
 |Folder doesn't exist|Indicates that the folder doesn't exist|
 |PDF file doesn't exist|File doesn't exist on the given path|
 
+## <a name="extractpages"></a> Extract PDF file pages to new PDF file
 
-### <a name="extractpages"></a> Extract PDF file pages to new PDF file
-Extract pages from a PDF file to a new PDF file
+Extract pages from a PDF file to a new PDF file.
 
-##### Input Parameters
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF file|No|[File](../variable-data-types.md#files-and-folders)||The PDF file to extract pages from. Enter a file path, a variable containing a file or a text path|
 |Password|Yes|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password of the PDF file. Leave this blank if the PDF isn't password protected|
-|Page selection|No|[Text value](../variable-data-types.md#text-value)||The index numbers of the pages to keep (eg 1,3,17-24)|
+|Page selection|No|[Text value](../variable-data-types.md#text-value)||The index numbers of the pages to keep (for example, 1,3,17-24)|
 |Extracted PDF path|No|[File](../variable-data-types.md#files-and-folders)||The path to store the extracted PDF file|
 |If file exists|N/A|Overwrite, Don't overwrite, Add sequential suffix|Add sequential suffix|Specifies what to do in case the output PDF file already exists|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExtractedPDF|[File](../variable-data-types.md#files-and-folders)|The new PDF file|
 
+### <a name="extractpages_onerror"></a> Exceptions
 
-##### <a name="extractpages_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Invalid password|The given password is invalid|
@@ -173,10 +167,12 @@ Extract pages from a PDF file to a new PDF file
 |Invalid page selection|Indicates that the given pages aren't valid for the PDF file|
 |Failed to extract new PDF |Indicates that an error occurred while trying to extract new PDF |
 
-### <a name="mergefiles"></a> Merge PDF files
-Merges multiple PDF files into a new one
+## <a name="mergefiles"></a> Merge PDF files
 
-##### Input Parameters
+Merges multiple PDF files into a new one.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |PDF files|No|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The files to merge. Enclose multiple files in double quotes (") and separate them by a delimiter, or use a list of files|
@@ -185,21 +181,18 @@ Merges multiple PDF files into a new one
 |Passwords|Yes|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The delimited passwords. The order should be the same as the order of the input PDFs. Leave this blank if the PDFs aren't password protected|
 |Delimiter|No|[Text value](../variable-data-types.md#text-value)|,|A custom password delimiter. This delimiter shouldn't be part of any of the passwords|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |MergedPDF|[File](../variable-data-types.md#files-and-folders)|The merged PDF file|
 
+### <a name="mergefiles_onerror"></a> Exceptions
 
-##### <a name="mergefiles_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |PDF file doesn't exist|File doesn't exist on the given path|
 |Invalid password|The given password is invalid|
 |Failed to merge PDF files|Indicates that an error occurred while merging the files|
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

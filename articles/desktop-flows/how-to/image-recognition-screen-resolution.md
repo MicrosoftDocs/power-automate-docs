@@ -1,5 +1,5 @@
 ---
-title: Use image recognition on machines with different screen resolutions | Microsoft Docs
+title: Use image recognition on machines with different screen resolutions
 description: Use image recognition on machines with different screen resolutions
 author: georgiostrantzas
 

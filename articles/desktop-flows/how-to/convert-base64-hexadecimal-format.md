@@ -1,5 +1,5 @@
 ---
-title: Convert Base64 text to hexadecimal format | Microsoft Docs
+title: Convert Base64 text to hexadecimal format
 description: Convert Base64 text to hexadecimal format
 author: georgiostrantzas
 

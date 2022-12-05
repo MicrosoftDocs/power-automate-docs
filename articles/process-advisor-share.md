@@ -1,11 +1,14 @@
 ---
-title: Share task mining processes in process advisor (contains video) | Microsoft Docs
+title: Share task mining processes in process advisor (contains video)
 description: Share a task mining process with others so that they can offer input and additional insights. You can share a task mining process with a co-owner or a contributor.
-author: nijemcevic 
+author: donums
+contributors:
+  - donums
+  - v-aangie 
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 04/01/2022
-ms.author: tatn
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -45,8 +48,7 @@ The share action is available on the **Processes** screen for the following.
 
 The share action is also available on the process details page with the same conditions. Sharing isn't needed at the recording level. Once you share a process with a co-owner, they can manage the recordings associated with a process.
 
-> [!div class="mx-imgBorder"]
-> ![!Manage access.](media/manage-access.png "Manage access")
+:::image type="content" source="media/manage-access.png" alt-text="Screenshot of the 'Manage access' screen.":::
 
 ## Share panel
 

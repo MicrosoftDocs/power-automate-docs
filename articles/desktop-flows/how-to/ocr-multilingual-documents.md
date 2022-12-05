@@ -1,5 +1,5 @@
 ---
-title: Perform OCR on multilingual documents | Microsoft Docs
+title: Perform OCR on multilingual documents
 description: Perform OCR on multilingual documents
 author: georgiostrantzas
 

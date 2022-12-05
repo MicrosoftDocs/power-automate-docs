@@ -1,5 +1,5 @@
 ---
-title: View desktop flows analytics | Microsoft Docs
+title: View desktop flows analytics
 description: Learn about trends, usage patterns, and more analytics for desktop flows.
 services: ''
 suite: flow
