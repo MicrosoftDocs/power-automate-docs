@@ -116,7 +116,7 @@ To create a hosted machine, you must create the Windows 365 service principal in
 
     Follow the same instruction as for creating the Windows 365 application to check and create the service principals.
 
-1. Get access to the default VM image
+### Get access to the default VM image
 
     To create hosted machines, you need access to the default image that is part of your environment. You can view the default image from **Monitors** > **Machines** > **VM images (preview)**.
 
@@ -315,6 +315,13 @@ The vNET needs to be created in the same location with your hosted machines. You
 - India: Central India
 - Japan: Japan East
 - UK: UK South
+
+### Share the virtual network with Windows 365 service principal
+
+In order to use your virtual network for hosted machines, you will need to grant Windows 365 service principal with the following permissions:
+- Reader permission on the Azure subscription.
+- Network contributor permission on the specified resource group.
+- Network contributor permission on the virtual network.
 
 ### Share the virtual network with Power Automate makers
 
