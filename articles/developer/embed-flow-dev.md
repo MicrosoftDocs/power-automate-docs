@@ -479,7 +479,7 @@ If the initialized locale isn't listed, Flow will default to the closest support
 | sr-latn-rs | Serbian (Latin, Serbia)    | 
 | sv-se      | Swedish (Sweden)           | 
 | th-th      | Thai (Thailand)            | 
-| tr-tr      | Turkish (Turkey)           | 
+| tr-tr      | Turkish (Türkiye)           | 
 | uk-ua      | Ukrainian (Ukraine)        | 
 | vi-vn      | Vietnamese (Viet Nam)      |
 
