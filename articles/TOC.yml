@@ -893,7 +893,7 @@
     href: ./developer/dev-enterprise-intro.md
   - name: Start to build with Power Automate
     href: get-started-flow-dev.md
-  - name: Work with desktop flows using code
+  - name: Work with desktop flows using APIs
     href: ./developer/desktop-flow-public-apis.md
   - name: Build and certify custom connectors
     href: ./developer/register-custom-api.md
