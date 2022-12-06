@@ -89,12 +89,12 @@ conceptualContent:
         - text: Process mining
           url: process-mining-overview.md
           itemType: overview
-        - text: Task mining
-          url: task-mining-overview.md
-          itemType: overview
         - text: Minit desktop application
           url: minit/minit-desktop-application-overview.md
           itemType: overview       
+        - text: Task mining
+          url: task-mining-overview.md
+          itemType: overview
 
     - title: Use flows with...
       links:
