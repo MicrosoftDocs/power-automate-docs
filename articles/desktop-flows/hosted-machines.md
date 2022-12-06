@@ -39,7 +39,7 @@ Key capabilities:
 
 ## Licensing requirements
 
-To use hosted machines, you need one of the following licensing options:
+To use hosted machines, you need one of the following Power Automate licensing options:
 
 - Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on** or **Hosted RPA add-on**.
 
@@ -51,6 +51,13 @@ To use hosted machines, you need one of the following licensing options:
 
 > [!NOTE]
 > All tenants have a global limit of ten hosted machines.
+
+You will also need the following pre-requisite licenses:
+- You must have licenses for Windows, Intune, Azure AD, and Windows 365
+- If you are running unattended automation, any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, you must have the Microsoft 365 – Unattended License
+
+
+
 
 ## Prerequisites
 
