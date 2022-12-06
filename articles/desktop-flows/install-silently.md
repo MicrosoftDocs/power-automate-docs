@@ -4,7 +4,7 @@ description: See how to install Power Automate silently on your device.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/07/2022
+ms.date: 12/06/2022
 ms.author: gtrantzas
 ms.reviewer: pefelesk
 contributors:
