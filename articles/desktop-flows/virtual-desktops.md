@@ -4,11 +4,10 @@ description: Learn how to build automated workflows on Citrix and RDP virtual de
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/04/2022
+ms.date: 11/30/2022
 ms.author: gtrantzas
-ms.reviewer: marleon
+ms.reviewer: nimoutzo
 contributors:
-- NikosMoutzourakis
 search.app: 
   - Flow
 search.audienceType: 
@@ -65,7 +64,7 @@ UI elements captured on the physical device are located under the **Computer** p
 
 ## Known issues and limitations
 
-- **Issue:** Virtual desktop automation is available only in Windows RDP, Citrix Desktop, and Citrix Virtual Apps. Other virtual desktop platforms aren't supported.
+- **Issue:** Virtual desktop automation is available only in Windows RDP, RemoteApp, Citrix Desktop, and Citrix Virtual Apps. Other virtual desktop platforms aren't supported.
 
     **Workaround:** None
 
@@ -95,7 +94,7 @@ UI elements captured on the physical device are located under the **Computer** p
 
     **Workaround:** None
 
-- **Issue:** Citrix UI automation doesn't work if you're using Citrix Desktop and Citrix App in the same session.<!--NOTE: I can't confirm that these are the correct product names. Please double-check. Thanks!-->
+- **Issue:** Citrix UI automation doesn't work if you're using Citrix Desktop and Citrix App in the same session.
 
     **Workaround:** None
 

@@ -23,33 +23,33 @@ ms.reviewer: deonhe
 
 Once the import is complete, assign the following roles, based on responsibility.
 
-For each of the security roles that follow, execute these steps.
+For each of the security roles that follow, execute these steps:
 
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select your satellite environment.
 1. Select **See all** under **Security roles** on the **Access** card.
 1. Select the Security role > **Search for and assign the security roles.**
 
-### Flow Session Exception Admin
+### Flow session exception admin
 
-Admin role which provides full CRUD permissions to the flow session exception data captured in the following tables:
+This is an admin role that provides full CRUD permissions to the flow session exception data captured in the following tables:
 
-- Flow Session Exception Rule Configuration
-- Flow Session Exception
+- Flow session exception rule configuration
+- Flow session exception
 
-### Desktop Flow Definition Admin
+### Desktop flow definition admin
 
-Assign the **desktop flow definition admin** role which provides full CRUD permissions to these tables.
+The **desktop flow definition admin** role provides full CRUD permissions to the following tables:
 
-- Desktop Flow Action
-- Desktop Flow Definition
-- Desktop Flow DLP Impact Profile
+- Desktop flow action
+- Desktop flow definition
+- Desktop flow DLP impact profile
 
 ## Assign column security profiles
 
-Inside the solution, there is a column security profile. This profile enables users to see the script field inside the **Desktop Flow Definition** table. This role should only be assigned to CoE Admins, due to the sensitive information that may be visible.
+Inside the solution, there's a column security profile. This profile enables users to see the script field inside the **Desktop Flow Definition** table. This role should only be assigned to CoE Admins due to the sensitive information that may be visible.
 
-The script field is synced and stored inside the Desktop Flow Definition table by default. If you would like to **not** sync this information, follow the [Disabling Sync of Script field](./optional.md#disable-syncing-of-desktop-flows-script-optional) steps. Otherwise, follow these steps to assign the security profile.
+The script field is synced and stored inside the Desktop Flow Definition table, by default. If you would like to **not** sync this information, follow the steps in [Disabling Sync of Script field](./optional.md#disable-syncing-of-desktop-flows-script-optional). Otherwise, follow the following steps to assign the security profile:
 
 1. Select the column security profile, **Desktop Flow Script Field Security**.
 1. Under **Members**, select **Users**.
@@ -60,6 +60,6 @@ The script field is synced and stored inside the Desktop Flow Definition table b
 
    The user should show in the **Selected records** list.
 
-   ![A screenshot that displays looking up a user record](../media/look-up-user.png)
+   ![A screenshot that displays looking up a user record.](../media/look-up-user.png "A screenshot that displays looking up a user record.")
 
 1. Select **Add**.
