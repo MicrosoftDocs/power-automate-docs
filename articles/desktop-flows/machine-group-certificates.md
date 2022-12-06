@@ -27,7 +27,7 @@ These messages indicate that, if need to [add another machine to the group](mana
 
 - Machines with Power Automate for desktop version 2.23 or above
 - Machines need to be online at least once in the last six months before the certificate expires (once every five years). The mentioned values are the default, but they can change.
-- A desktop flow connection to your machine. To find more information about desktop flow connections, go to [Create desktop flow connections
+- Desktop flow connections are used once after the rotation starts within the renewal period. This functionality prevents the need to fix them once the renewal period has ended. To find more information about desktop flow connections, go to [Create desktop flow connections
 ](desktop-flow-connections.md).
 
 > [!IMPORTANT]
