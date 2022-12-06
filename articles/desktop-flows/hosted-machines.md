@@ -156,13 +156,13 @@ To create a hosted machine:
 
     1. Enter a name for your hosted machine and optionally add a description.
 
-    1. Select the VM image to use for your hosted machine. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
+    2. Select the VM image to use for your hosted machine. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
     Alternatively, you can select a [custom VM Image](#use-custom-vm-images-for-your-hosted-machine) that has been shared with your account.
 
-    1. Optionally, select the [custom network connection](#use-custom-vnet-for-your-hosted-machines) you want your hosted machine to be provisioned with Azure Active Directory (Azure AD). Otherwise, you'll automatically connect to the Microsoft Hosted Network.
+    3. Optionally, select the [custom network connection](#use-custom-vnet-for-your-hosted-machines) you want your hosted machine to be provisioned with Azure Active Directory (Azure AD). Otherwise, you'll automatically connect to the Microsoft Hosted Network.
 
-    1. Review and create your hosted machine.
+    4. Review and create your hosted machine.
 
 :::image type="content" source="media/hosted-machines/create-hosted-machine.png" alt-text="Screenshot of the hosted machine creation wizard.":::
 
@@ -448,13 +448,16 @@ This section displays the permissions for hosted machines.
 
 #### Environment Maker role
 
-By default, **Environment Maker** role can create hosted machine in their environment. The three entities that require privileges to use hosted machines are:
+By default, **Environment Maker** role can create hosted machine in their environment. The entities that require privileges to use hosted machines are:
 
 - Flow Machine
 - Flow Machine Group
 - Flow Machine Image
+- Flow Machine Network (if using custom VNet for your hosted machine)
 
 Environment Maker role can [create and share custom VM Images](#use-custom-vm-images-for-your-hosted-machine), as these actions require create and append privileges on the **Flow Machine Image**.
+
+Environment Maker role can [create and share custom VNet](#use-custom-vnet-for-your-hosted-machines), as these actions require create and append privileges on the **Flow Machine Network**.
 
 Admins can also use the roles provided as part of Desktop Flows. You can find more information about desktop flow security roles in [Manage Machines](manage-machines.md#update-permissions-based-on-security-role).
 
@@ -462,13 +465,13 @@ Admins can also use the roles provided as part of Desktop Flows. You can find mo
 
 #### Desktop Flows Machine Owner role
 
-By default, **Desktop Flows Machine owner** can create hosted machines, but can't create custom VM images. They can only use previously shared [custom VM images](#use-custom-vm-images-for-your-hosted-machine) in their own hosted machine groups.
+By default, **Desktop Flows Machine owner** can create hosted machines, but can't create custom VM images or custom VNet. They can only use previously shared [custom VM images](#use-custom-vm-images-for-your-hosted-machine) or [custom VNets](#use-custom-vnet-for-your-hosted-machines)in their own hosted machine.
 
 :::image type="content" source="media/hosted-machines/desktop-flows-machine-owner-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Owner role.":::
 
-#### Desktop Flows Machine Image Admin role
+#### Desktop Flows Machine Configuration Admin role
 
-The **Desktop Flows Machine Image Admin** role only brings full privileges on the **Flow Machine Image** entity. In particular, it allows users with this role to share/unshare VM images to be used for created hosted machines in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machines](#create-a-hosted-machine).
+The **Desktop Flows Machine Image Admin** role only brings full privileges on the **Flow Machine Image** and **Flow Machine Network** entity. In particular, it allows users with this role to share/unshare VM images and VNet to be used for created hosted machines in their environment. You can find more information about sharing pre-provisioned VM Images & VNets in [Create hosted machines](#create-a-hosted-machine).
 
 :::image type="content" source="media/hosted-machines/desktop-flow-machine-image-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Image Admin role.":::
 
