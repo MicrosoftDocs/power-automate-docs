@@ -44,7 +44,7 @@ To develop more dynamic web flows, replace the **Equals to** operators with othe
 
 Extract data from specific parts of a web page in the form of single values, lists, rows, or tables.
 
-For more information on how to use this action, go to [Web data extraction](../automation-web.md#web-data-extraction).
+For more information on how to use this action, go to [Web data extraction](../automation-web.md#extract-data-from-webpages).
 
 ### Input parameters
 
