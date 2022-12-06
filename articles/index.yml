@@ -66,14 +66,14 @@ conceptualContent:
     - title: Plan with process advisor
       links:
         - text: Process mining
-        - url: ./process-mining-overview.md
-        - itemType: overview
+          url: ./process-mining-overview.md
+          itemType: overview
         - text: Task mining
-        - url: ./task-mining-overview.md
-        - itemType: overview
+          url: ./task-mining-overview.md
+          itemType: overview
         - text: Minit desktop application
-        - url: ./minit-desktop-application-overview.md
-        - itemType: overview       
+          url: ./minit-desktop-application-overview.md
+          itemType: overview       
 
     - title: Create cloud flows
       links:
