@@ -238,6 +238,8 @@ Custom VM images must meet the following requirement:
 In order to use your VM image for hosted machines, you will need to grant Windows 365 service principal with the following permissions:
 - Reader permission on the Azure subscription.
 
+When you upload a custom image, you must be signed in with an account that is an Owner or admin of the subscription.
+
 ### Share the Azure Compute Gallery with Power Automate makers
 
 The last step before using your image in Power Automate is to share the image with the Power Automate makers.
