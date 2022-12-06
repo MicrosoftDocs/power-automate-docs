@@ -44,7 +44,9 @@ highlightedContent:
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
 conceptualContent:  
+
   items:
     - title: Get started with Power Automate
       links:
