@@ -37,6 +37,9 @@ Key capabilities:
 
 - **Connect to your own virtual network (vNET):** Securely communicate with each other, the Internet, and your on-premises networks.
 
+> [!NOTE]
+> Availability of the hosted machine in preview is being rolled out across all supported regions and will be available in Europe & US region by late December 2022.
+
 ## Licensing requirements
 
 To use hosted machines, you need one of the following Power Automate licensing options:
