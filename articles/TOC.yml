@@ -383,6 +383,8 @@
       href: ./desktop-flows/desktop-flow-connections.md
     - name: Hosted RPA bots (preview)
       href: ./desktop-flows/hosted-rpa-bots.md
+    - name: Machine group certificate renewal
+      href: ./desktop-flows/machine-group-certificates.md
     - name: Scale with AVD starter kit
       items:
       - name: Overview
