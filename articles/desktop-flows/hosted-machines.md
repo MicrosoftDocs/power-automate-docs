@@ -233,6 +233,11 @@ Custom VM images must meet the following requirement:
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition).
 - Default 64-GB OS disk size. The OS disk size will be automatically adjusted to the size specified in SKU description of the Windows 365 license.
 
+### Share the reader permission on Azure subscription with Windows 365 service principal
+
+In order to use your VM image for hosted machines, you will need to grant Windows 365 service principal with the following permissions:
+- Reader permission on the Azure subscription.
+
 ### Share the Azure Compute Gallery with Power Automate makers
 
 The last step before using your image in Power Automate is to share the image with the Power Automate makers.
