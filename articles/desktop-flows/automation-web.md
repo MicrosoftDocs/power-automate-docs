@@ -1,6 +1,6 @@
 ---
 title: Automate webpages | Microsoft Docs
-description: See how to launch browsers, automate webpages, and extract data from the Web.
+description: Learn how to launch browsers, automate webpages, and extract data from the Web.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
@@ -32,7 +32,7 @@ Apart from the built-in Automation browser, four web browsers are currently supp
 
 To automate a webpage, you must launch or attach to one of the supported browsers, and then deploy browser automation actions. Browser automation actions enable you to interact with webpages and emulate events, such as clicking, using JavaScript scripts. You can develop the flow manually or [using the recorder](recording-flow.md).
 
-By default, browser automation actions don't move the actual mouse on the screen. As a result, they can run even when the web browser is minimized, or the target tab isn't the focused tab. This functionality allows you to perform other activities on your machine while a browser automation flow is running.
+By default, browser automation actions don't move the mouse pointer on the screen. As a result, they can run even when the web browser is minimized, or the target tab isn't the focused tab. This functionality allows you to perform other activities on your machine while a browser automation flow is running.
 
 However, some actions like **Click link on web page** and **Populate text field on web page** support physical interactions for cases where JavaScript events don't work as expected. If you enable physical interaction, the browser can't be minimized, and the target tab must be focused.
 
@@ -44,11 +44,11 @@ Although Automation browser is based on Internet Explorer, it provides some feat
 
 1. The **Click download link on web page** action works with Automation browser whatever the Internet Explorer version. For the actual Internet Explorer, the action requires version 8 or below.
 
-1. Automation browser suppresses all message dialog boxes that may pop up unhindered in the actual Internet Explorer. If this feature is undesirable, apply the **ShowDialogs** suffix at the end of the URL in the **Launch new Internet Explorer** action.
+1. Automation browser suppresses all message dialog boxes that may pop up unhindered in the Internet Explorer. If this feature is undesirable, apply the **ShowDialogs** suffix at the end of the URL in the **Launch new Internet Explorer** action.
 
 1. Automation browser doesn't support tabs or opening links in windows. When you select a link, the browser opens it in the same window/instance.
 
-1. Automation browser has a small performance advantage because it doesn't load unnecessary elements and add-ons like the actual Internet Explorer does.
+1. Automation browser has a small performance advantage because it doesn't load unnecessary elements and add-ons like the Internet Explorer does.
 
 ## Automate browsers and web elements
 
@@ -80,7 +80,7 @@ To add a new UI element, highlight the appropriate web element and press **Ctrl 
 
 ## Enter data on webpages
 
-To provide input to a webpage, select the appropriate web form-filling action depending on the nature of the element. For example, use the **Set drop-down list value on web page** action to select an item in a drop-down list.
+To provide input to a webpage, select the appropriate web form-filling action depending on the nature of the element. For example, use the **Set drop-down list value on web page** action to select an item in a dropdown menu.
 
 :::image type="content" source="media\web-automation\set-drop-down-list-value-on-web-page-action.png" alt-text="Screenshot of the Set drop-down list value on web page action.":::
 
@@ -102,14 +102,14 @@ To extract large amounts of structured data, use the **Extract data from web pag
 
 :::image type="content" source="media\web-automation\extract-data-from-web-page-action.png" alt-text="Screenshot of the Extract data from web page action.":::
 
-While the live web helper is open, right-click the target data to view the available extraction options. To extract a value, select **Extract element value**, and then choose the HTML attribute that you want to retrieve.
+While the live web helper is open, select or right-click the target data to view the available extraction options. To extract a value, select **Extract element value**, and then choose the HTML attribute that you want to retrieve.
 
 :::image type="content" source="media\web-automation\extracting-data-from-web-page.png" alt-text="Screenshot of a webpage while extracting data from it.":::
 
 Power Automate automatically identifies lists or tables of data after selecting two or more of their elements for extraction.
 
 > [!NOTE]
-> To extract an entire HTML table faster, right-click the table and select **Extract entire HTML table**. This option is available only for elements that Power Automate recognizes as HTML tables. If the data is structured as a table but isn't recognized as an HTML table, extract the first two of their elements, as previously described.
+> To extract an entire HTML table faster, select or right-click the table and select **Extract entire HTML table**. This option is available only for elements that Power Automate recognizes as HTML tables. If the data is structured as a table but isn't recognized as an HTML table, extract the first two of their elements, as previously described.
 
 :::image type="content" source="media\web-automation\extracting-data-table-from-web-page.png" alt-text="Screenshot of a webpage while extracting a data table from it.":::
 
@@ -125,7 +125,7 @@ Each CSS selector consists of the tree structure of the HTML element, the attrib
 
 If the information to extract is split between multiple pages with the same structure, you need to set the appropriate paging configuration.
 
-Pagers are web elements that allow you to navigate between multiple pages. To set a pager for the data extraction, right-click the respective pager element and select **Set element as pager**.
+Pagers are web elements that allow you to navigate between multiple pages. To set a pager for the data extraction, select or right-click the respective pager element and select **Set element as pager**.
 
 Additionally, you can manually specify a pager through the **Advanced settings** of the live web helper.
 
