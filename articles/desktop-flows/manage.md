@@ -32,7 +32,7 @@ After creating desktop flows, you might need to view, edit, or check their statu
 > [!NOTE]
 > If you delete or rename a desktop flow, select the refresh button to reflect the changes in the desktop flows list.
 
-## See details for desktop flows
+## See details of desktop flows
 
 For each of your desktop flows, you can see its details by selecting its name from the list of desktop flows. You can see various details including:
 
