@@ -1,11 +1,14 @@
 ---
-title: Azure templates for process mining in process advisor
+title: Azure templates for process mining in process advisor (preview)
 description: Learn how to use Azure templates for process mining in the Power Automate process advisor.
-author: nijemcevic 
+author: donums
+contributors:
+  - donums
+  - v-aangie  
 ms.subservice: process-advisor
-ms.topic: article
-ms.date: 07/11/2022
-ms.author: tatn
+ms.topic: conceptual
+ms.date: 11/15/2022
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -14,7 +17,9 @@ search.audienceType:
   - enduser
 ---
 
-# Azure templates for process mining
+# Azure templates for process mining (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps (work tracking)](#azure-devops-work-tracking-template), [Azure DevOps (pipelines)](#azure-devops-pipelines-template), [Logic Apps (standard plan)](#logic-apps-standard-plan-template), [Logic Apps (consumption plan)](#logic-apps-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
 
@@ -28,7 +33,9 @@ The Azure DevOps (work tracking) template uses data from your Azure Boards to an
 
 ### Gather information from ADO Boards
 
-1. In your Azure DevOps environment in the left panel, select **Project settings**. Under **Boards**, select **Team configuration**. Then select the **Area** tab.
+1. In your Azure DevOps environment in the left panel, select **Project settings**. 
+
+1. Select **Boards** > **Team configuration**, and then select the **Area** tab.
 
     :::image type="content" source="media/process-mining-azure-templates/az-boards.png" alt-text="Screenshot of an Azure DevOps Project Settings page with organization, project name, and other information highlighted.":::
 
@@ -40,25 +47,25 @@ The Azure DevOps (work tracking) template uses data from your Azure Boards to an
 
 1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps (work tracking** tile.
 
-1. In the **Process name** box, enter a name for your process.
+1. In the **Process name** field, enter a name for your process.
 
-1. In the **Organization name**, **Project name**, and **Area name** boxes, enter the information from ADO.
+1. In the **Organization name**, **Project name**, and **Area name** fields, enter the information from ADO.
 
-1. (Optional) In the **Description** box, enter a description of the process.
+1. (Optional) In the **Description** field, enter a description of the process.
 
 1. Select **Create**.
 
-    :::image type="content" source="media/process-mining-azure-templates/create-az-devops.png" alt-text="Screenshot of the Create a new process screen using the Azure DevOps (work tracking) template.":::
+    :::image type="content" source="media/process-mining-azure-templates/create-az-devops.png" alt-text="Screenshot of the Azure DevOps (work tracking) screen.":::
 
-1. In the **Connect to data source** screen in the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
+1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
+Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
 
-[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
+Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Azure DevOps (pipelines) template
 
@@ -80,25 +87,25 @@ The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze you
 
 1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps (pipelines)** tile.
 
-1. In the **Process name** box, enter a name for your process.
+1. In the **Process name** field, enter a name for your process.
 
-1. In the **Organization Name**, **Project name**, and **Pipeline Name** boxes, enter the information from ADO.
+1. In the **Organization Name**, **Project name**, and **Pipeline Name** fields, enter the information from ADO.
 
-1. (Optional) In the **Description** box, enter a description of the process.
+1. (Optional) In the **Description** field, enter a description of the process.
 
 1. Select **Create**.
 
-    :::image type="content" source="media/process-mining-azure-templates/create-az-pipelines.png" alt-text="Screenshot of the Create a new process screen using the Azure DevOps (pipelines) template.":::
+    :::image type="content" source="media/process-mining-azure-templates/create-az-pipelines.png" alt-text="Screenshot of the Azure DevOps (pipelines) screen.":::
 
-1. In the **Connect to data source** screen in the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
+1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
+Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
 
-[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
+Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Logic Apps (standard plan) template
 
@@ -130,23 +137,23 @@ The Logic Apps with App (standard plan) template uses telemetry data from [Azure
 
 1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic Apps (standard plan)** tile.
 
-1. In the **Process name** box, enter a name for your process.
+1. In the **Process name** field, enter a name for your process.
 
-1. In the **Logic App Application Insights Application Id** box, paste the Application ID from Application Insights.
+1. In the **Logic App Application Insights Application Id** field, paste the Application ID from Application Insights.
 
-1. (Optional) In the **Description** box, enter a description of the process.
+1. (Optional) In the **Description** field, enter a description of the process.
 
 1. Select **Create**.
 
-1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
+1. In the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take up to two minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
+Process advisor will analyze your process. It might take up to two minutes for the analytics to appear.
 
-[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
+Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Logic Apps (consumption plan) template
 
@@ -172,7 +179,7 @@ The Logic App Consumption Plan template uses data from Azure DevOps to analyze y
 
     :::image type="content" source="media/process-mining-azure-templates/az-overview.png" alt-text="Screenshot of the Logic Apps Overview page with resource group and subscription information highlighted.":::
 
-1. Take note of the app name, resource group, and Subscription ID.
+1. Take note of the app name, **Resource group**, and **Subscription ID**.
 
 ### Create and run the Logic Apps (consumption plan) template
 
@@ -180,27 +187,27 @@ The Logic App Consumption Plan template uses data from Azure DevOps to analyze y
 
 1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic Apps (consumption plan)** tile.
 
-1. In the **Process name** box, enter a name for your process.
+1. In the **Process name** field, enter a name for your process.
 
-1. In the **Azure subscription Id**, **Resource group name**, and **Logic app name** boxes, enter the information from ADO.
+1. In the **Azure subscription Id**, **Resource group name**, and **Logic app name** fields, enter the information from ADO.
 
-1. (Optional) In the **Description** box, enter a description of the process.
+1. (Optional) In the **Description** field, enter a description of the process.
 
 1. Select **Create**.
 
-1. In the **Authentication kind** box, replace "Anonymous" with **Organizational account**.
+1. In the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
+Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
 
-[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
+Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ## Durable Functions template
 
-The Durable Functions template analyzes the execution of your Durable Functions to help you identify opportunities and optimize states, checkpoints, and restarts. To learn more, go to [What are Durable Functions?](/azure/azure-functions/durable/durable-functions-overview).
+The Durable Functions template analyzes the execution of your Durable Functions to help you identify opportunities and optimize states, checkpoints, and restarts. To learn more, go to [What are Durable Functions?](/azure/azure-functions/durable/durable-functions-overview)
 
 The Durable Functions template uses data from your Azure Durable Functions storage account for its analysis. You'll need to gather some information from Azure before you can run the template.
 
@@ -210,27 +217,27 @@ The Durable Functions template uses data from your Azure Durable Functions stora
 
 1. In Power Automate process advisor, in the **Start with a popular template** section, select the **Azure** tab, and then select the **Durable Functions** tile.
 
-1. In the **Process name** box, enter a name for your process.
+1. In the **Process name** field, enter a name for your process.
 
-    :::image type="content" source="media/process-mining-azure-templates/create-durable-functions.png" alt-text="Screenshot of the Create a new process screen for the Durable Functions template.":::
+    :::image type="content" source="media/process-mining-azure-templates/create-durable-functions.png" alt-text="Screenshot of the Durable Functions screen.":::
 
 1. In Azure portal, go to your Azure Durable Functions storage account. In the left panel under **Data storage**, select **Tables**. Copy the table names that end with **Instances** and **History**.
 
     :::image type="content" source="media/process-mining-azure-templates/durable-functions-tables.png" alt-text="Screenshot of the Azure storage account Tables page with two table names highlighted.":::
 
-1. In process advisor, paste the **Instances** table name in the **Instance Table Storage Name** box and the **History** table name in the **History Table Storage Name** box.
+1. In process advisor, paste the **Instances** table name in the **Instance Table Storage Name** field and the **History** table name in the **History Table Storage Name** field.
 
 1. In Azure portal, copy the value in the **Url** column.
 
-1. In process advisor, paste the URL in the **Table Storage Account URL** box.
+1. In process advisor, paste the URL in the **Table Storage Account URL** field.
 
-1. (Optional) In the **Description** box, enter a description of the process.
+1. (Optional) In the **Description** field, enter a description of the process.
 
 1. Select **Create**.
 
-1. On the **Connect to data source** screen, paste the URL from Step 6 in the **Account name or URL** box.
+1. On the **Connect to data source** screen, paste the URL from Step 6 in the **Account name or URL** field.
 
-    :::image type="content" source="media/process-mining-azure-templates/durable-functions-settings.png" alt-text="Screenshot of the Connection settings screen, with the Account name or URL box highlighted.":::
+    :::image type="content" source="media/process-mining-azure-templates/durable-functions-settings.png" alt-text="Screenshot of the Connection settings screen, with the Account name or URL field highlighted.":::
 
 1. In Azure portal in the left pane, select **Security + Networking** > **Access keys**.
 
@@ -238,16 +245,15 @@ The Durable Functions template uses data from your Azure Durable Functions stora
 
 1. Select **Show keys**. Copy the value of **Key1** or **Key2**.
 
-1. In process advisor, paste the key value in the **Account key** box.
+1. In process advisor, paste the key value in the **Account key** field.
 
 1. Once the connection credentials are established, select **Save**.
 
-Process advisor will analyze your process. It may take a few minutes for the analytics to appear. You can leave the page and return later if you don't want to wait around.
+Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
 
-[Learn how to visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
+Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the process map for the Durable Functions template.](media/process-mining-azure-templates/durable-functions-map.png "Process map for the Durable Functions template")
+:::image type="content" source="media/process-mining-azure-templates/durable-functions-map.png" alt-text="Screenshot of the process map for the Durable Functions template.":::
 
 ### See also
 

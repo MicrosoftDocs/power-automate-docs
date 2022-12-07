@@ -1,13 +1,17 @@
 ---
-title: Google Cognitive | Microsoft Docs
-description: Google Cognitive Actions Reference
-author: mariosleon
+title: Google cognitive actions reference
+description: See all the available Google cognitive actions.
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.date: 11/23/2022
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -15,40 +19,22 @@ search.audienceType:
   - enduser
 ---
 
-# Google cognitive
+# Google cognitive actions
 
-Google's cognitive actions
+Google cognitive services allow you to process unstructured data through machine learning and simplify complicated tasks like text analysis and computer vision.
 
-[Analyze sentiment](#analyzesentimentgoogle)  
-[Analyze entities](#analyzeentitiesgoogle)  
-[Analyze syntax](#analyzesyntaxgoogle)  
-[Label detection](#labeldetectiongoogle)  
-[Landmark detection](#landmarkdetectiongoogle)  
-[Text Detection](#textdetectiongoogle)  
-[Logo detection](#logodetectiongoogle)  
-[Image properties detection](#imagepropertiesdetectiongoogle)  
-[Safe search detection](#safesearchdetectiongoogle)  
-
-## Getting started with Google cognitive actions
-
-Google cognitive services allow users to process unstructured data through machine learning and simplify complicated tasks like text analyzing and computer vision.
-
-This functionality can be implemented in your desktop flows through the Google cognitive group of action. 
+You can implement this functionality in your desktop flows using the Google cognitive group of actions.
 
 All Google cognitive actions require an API key that authorizes you to use the respective services. You can manage your API keys in the **APIs & services** section of the Cloud Console.
 
-![Screenshot of the Analyze entities action.](media/google-cognitive/analyze-entities-action.png)
+:::image type="content" source="media/google-cognitive/analyze-entities-action.png" alt-text="Screenshot of the Analyze entities action.":::
 
+## <a name="analyzesentimentgoogle"></a> Analyze sentiment
 
+Invokes the Google Cloud Natural Language service named 'Analyze Sentiment'.
 
-## Cognitive actions
+### Input parameters
 
-## Natural language
-Reveal the structure and meaning of text
-### <a name="analyzesentimentgoogle"></a> Analyze sentiment
-Invokes the Google Cloud Natural Language service named 'Analyze Sentiment'
-
-##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -59,24 +45,26 @@ Invokes the Google Cloud Natural Language service named 'Analyze Sentiment'
 |Language|Yes|[Text value](../variable-data-types.md#text-value)||The language of the text|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="analyzesentimentgoogle_onerror"></a> Exceptions
 
-##### <a name="analyzesentimentgoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 
-### <a name="analyzeentitiesgoogle"></a> Analyze entities
-Invokes the Google Cloud Natural Language service named 'Analyze Entities'
+## <a name="analyzeentitiesgoogle"></a> Analyze entities
 
-##### Input Parameters
+Invokes the Google Cloud Natural Language service named 'Analyze Entities'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -87,24 +75,26 @@ Invokes the Google Cloud Natural Language service named 'Analyze Entities'
   |Language|Yes|[Text value](../variable-data-types.md#text-value)||The language of the text|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="analyzeentitiesgoogle_onerror"></a> Exceptions
 
-##### <a name="analyzeentitiesgoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 
-### <a name="analyzesyntaxgoogle"></a> Analyze syntax
-Invokes the Google Cloud Natural Language service named 'Analyze Syntax'
+## <a name="analyzesyntaxgoogle"></a> Analyze syntax
 
-##### Input Parameters
+Invokes the Google Cloud Natural Language service named 'Analyze Syntax'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -115,26 +105,26 @@ Invokes the Google Cloud Natural Language service named 'Analyze Syntax'
 |Language|Yes|[Text value](../variable-data-types.md#text-value)||The language of the text|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="analyzesyntaxgoogle_onerror"></a> Exceptions
 
-##### <a name="analyzesyntaxgoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 
-## Vision
-Assign labels to images and classify them into predefined categories. Detect objects, faces, and read printed and handwritten text
-### <a name="labeldetectiongoogle"></a> Label detection
-Invokes the Google Cloud Vision service named 'Label Detection'
+## <a name="labeldetectiongoogle"></a> Label detection
 
-##### Input Parameters
+Invokes the Google Cloud Vision service named 'Label Detection'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -143,24 +133,26 @@ Invokes the Google Cloud Vision service named 'Label Detection'
 |GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="labeldetectiongoogle_onerror"></a> Exceptions
 
-##### <a name="labeldetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 
-### <a name="landmarkdetectiongoogle"></a> Landmark detection
-Invokes the Google Cloud Vision service named 'Landmark Detection'
+## <a name="landmarkdetectiongoogle"></a> Landmark detection
 
-##### Input Parameters
+Invokes the Google Cloud Vision service named 'Landmark Detection'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -169,24 +161,26 @@ Invokes the Google Cloud Vision service named 'Landmark Detection'
 |GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="landmarkdetectiongoogle_onerror"></a> Exceptions
 
-##### <a name="landmarkdetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 
-### <a name="textdetectiongoogle"></a> Text Detection
-Invokes the Google Cloud Vision service named 'Text Detection'
+## <a name="textdetectiongoogle"></a> Text Detection
 
-##### Input Parameters
+Invokes the Google Cloud Vision service named 'Text Detection'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -195,24 +189,26 @@ Invokes the Google Cloud Vision service named 'Text Detection'
 |GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="textdetectiongoogle_onerror"></a> Exceptions
 
-##### <a name="textdetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 
-### <a name="logodetectiongoogle"></a> Logo detection
-Invokes the Google Cloud Vision service named 'Logo Detection'
+## <a name="logodetectiongoogle"></a> Logo detection
 
-##### Input Parameters
+Invokes the Google Cloud Vision service named 'Logo Detection'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -221,24 +217,26 @@ Invokes the Google Cloud Vision service named 'Logo Detection'
 |GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="logodetectiongoogle_onerror"></a> Exceptions
 
-##### <a name="logodetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 
-### <a name="imagepropertiesdetectiongoogle"></a> Image properties detection
-Invokes the Google Cloud Vision service named 'Image Properties Detection'
+## <a name="imagepropertiesdetectiongoogle"></a> Image properties detection
 
-##### Input Parameters
+Invokes the Google Cloud Vision service named 'Image Properties Detection'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -247,24 +245,26 @@ Invokes the Google Cloud Vision service named 'Image Properties Detection'
 |GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="imagepropertiesdetectiongoogle_onerror"></a> Exceptions
 
-##### <a name="imagepropertiesdetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
 
-### <a name="safesearchdetectiongoogle"></a> Safe search detection
-Invokes the Google Cloud Vision service named 'Safe Search Detection'
+## <a name="safesearchdetectiongoogle"></a> Safe search detection
 
-##### Input Parameters
+Invokes the Google Cloud Vision service named 'Safe Search Detection'.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |API key|No|[Text value](../variable-data-types.md#text-value)||The Google Cloud API key to be used for this API call|
@@ -273,19 +273,18 @@ Invokes the Google Cloud Vision service named 'Safe Search Detection'
 |GCS Image URI|No|[Text value](../variable-data-types.md#text-value)||The URI of the image residing on Google Cloud Storage|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |JSONResponse|[Custom object](../variable-data-types.md#custom-object)|The API response results|
 |StatusCode|[Numeric value](../variable-data-types.md#numeric-value)|The status code returned|
 
+### <a name="safesearchdetectiongoogle_onerror"></a> Exceptions
 
-##### <a name="safesearchdetectiongoogle_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to Invoke cognitive services|Indicates a problem while trying to invoke Cognitive Services|
 |Request timeout expired|Indicates that the timeout expired while performing the request|
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

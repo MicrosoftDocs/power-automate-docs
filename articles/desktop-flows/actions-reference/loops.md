@@ -1,13 +1,17 @@
 ---
-title: Loops | Microsoft Docs
-description: Loops Actions Reference
-author: mariosleon
+title: Loops actions reference
+description: See all the available loop actions.
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.date: 11/23/2022
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -15,103 +19,111 @@ search.audienceType:
   - enduser
 ---
 
-# Loops
+# Loop actions
 
-[Exit loop](#break)  
-[For each](#foreach)  
-[Loop](#loop)  
-[Loop condition](#while)  
-[Next loop](#continue)  
+Use loops to automate repetitive sections of your desktop flows and avoid running the same actions multiple times.
 
-## Getting started with loops
+The following list presents some useful applications and features of loops:
 
-Loops are used to automate repetitive sections of a flow by executing a block of actions multiple times.
-
-Useful applications and features:
-* Use simple loops to perform a given number of repetitions and iterate through data.
-* Deploy loop conditions in order to repeat actions until a condition is met.
-* Iterate through the items of a list using for each loops.
+* Use simple loops to perform a specific number of repetitions and iterate through data.
+* Deploy **Loop condition** to repeat actions until a condition is met.
+* Iterate through the items of a list using **For each** loops.
 * Explicitly end loops when required.
 
-You can find more information on how to use the loop actions [here](../use-loops.md)
+To find more information on how to use loops, go to [Use loops](../use-loops.md).
 
-## Loops actions
+## <a name="break"></a> Exit loop
 
-### <a name="break"></a> Exit loop
-Terminates the loop and the flow resumes at the next action or statement following the loop
+Terminates the loop and the flow resumes at the next action or statement following the loop.
 
-##### Input Parameters
-- This action doesn't require any input
+### Input parameters
 
-##### Variables Produced
-- This action doesn't produce any variables
+This action doesn't require any input.
 
-##### <a name="break_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="foreach"></a> For each
-Iterates over items in a list, data table or data row, allowing a block of actions to be executed repeatedly
+### Variables produced
 
-##### Input Parameters
+This action doesn't produce any variables.
+
+### <a name="break_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="foreach"></a> For each
+
+Iterates over items in a list, data table or data row, allowing a block of actions to be executed repeatedly.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Value to iterate|No|*||Enter a list, data row, or data table value to iterate through it.|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 ||*|The value name that will store the current item value in each iteration.|
 
+### <a name="foreach_onerror"></a> Exceptions
 
-##### <a name="foreach_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="loop"></a> Loop
+This action doesn't include any exceptions.
+
+## <a name="loop"></a> Loop
+
 Iterates a block of actions for a specified number of times
 
-##### Input Parameters
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Start from|No|[Numeric value](../variable-data-types.md#numeric-value)||Set the starting point of the loop counter.|
 |Increment by|No|[Numeric value](../variable-data-types.md#numeric-value)||Set the increment that the loop counter variable is increased by.|
 |End to|No|[Numeric value](../variable-data-types.md#numeric-value)||Set the ending point of the loop counter.|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 ||*|The value name that will store the current index, starting at the start from value. The value will change by the increment with each iteration.|
 
+### <a name="loop_onerror"></a> Exceptions
 
-##### <a name="loop_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="while"></a> Loop condition
-Iterates a block of actions as long as a specified condition proves to be true
+This action doesn't include any exceptions.
 
-##### Input Parameters
+## <a name="while"></a> Loop condition
+
+Iterates a block of actions as long as a specified condition proves to be true.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=)|Equal to (=)|Choose the relationship of first operand to second operand.|
 |First operand|No|*||Enter a value name defined by a previous action, text, number or expression to compare with the second operand.|
 |Second operand|No|*||Enter a value name produced by a previous action, text, number or expression to compare with the first operand.|
 
+### Variables produced
 
-##### Variables Produced
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
-##### <a name="while_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="continue"></a> Next loop
-Forces the next iteration of the block to take place, skipping any actions in between
+### <a name="while_onerror"></a> Exceptions
 
-##### Input Parameters
-- This action doesn't require any input
+This action doesn't include any exceptions.
 
-##### Variables Produced
-- This action doesn't produce any variables
+## <a name="continue"></a> Next loop
 
-##### <a name="continue_onerror"></a> Exceptions
-- This action doesn't include any exceptions
+Forces the next iteration of the block to take place, skipping any actions in between.
 
+### Input parameters
 
+This action doesn't require any input.
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="continue_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

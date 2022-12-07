@@ -16,7 +16,7 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Project end to end scenario
+# Project end-to-end scenario
 
 The following test cases are full end-to-end processes.
 
@@ -25,7 +25,7 @@ The following test cases are full end-to-end processes.
 1. Project admin maps the automation project to a new or existing environment.
 1. The maker creates a solution and develops the automation project.
 1. When the solution is deployed to prod (manually until ALM Automation actions are available) the automation admin maps the solution to project by metering the solution and its artifacts.
-1. After metering is turned on for the solution, he flow / process can be triggered, and data will sync back to main in near real time.
+1. After metering is turned on for the solution, the flow / process can be triggered, and data will sync back to main in near real time.
 1. Verify in the main solution that the flow sessions are being synced.
 1. Use Power BI to verify that the data calculations are correct.
 
@@ -45,11 +45,10 @@ Refer to the following table to see what roles and permissions are needed for ea
 
 1. Sign in to [Power Automate](https://make.powerautomate.com) and then change to your main environment.
 1. Launch the [Automation Project](https://github.com/microsoft/automation-coe/wiki/How-to-use-Automation-Project) app from either of the following apps.
+   - **Automation Console** app
+   - **Automation Project** app
 
-    - **Automation Console** app
-    - **Automation Project** app
-
-1. Create a new automation project request by selecting the + or selecting the **New Project** tab.
+1. Create a new automation project request by selecting the **+** or selecting the **New Project** tab.
 1. Fill in the details as the following table indicates.
 
 | **Question**           | **Value**                                     |
@@ -87,7 +86,7 @@ Refer to the following table to see what roles and permissions are needed for ea
 
 Now that the request has been submitted, it can be approved or rejected by the business owner, or if none was provided, the fallback approver is used.
 
-If this is the first time an approval is being used within this environment, it will take around 5 minutes for the approval solutions to initialize. This is only a onetime event and you can avoid it by following the steps laid out in the setup steps.
+If this is the first time an approval is being used within this environment, it'll take around 5 minutes for the approval solutions to initialize. This is only a one-time event, and you can avoid it by following the steps laid out in the setup steps.
 
 ### Approve automation project request (approver)
 
@@ -96,7 +95,7 @@ If this is the first time an approval is being used within this environment, it 
 
     - Microsoft Teams (preferred)
     - Power Automate actions tab
-    - Outlook Email
+    - Outlook email
 
 1. Approve the request.
 

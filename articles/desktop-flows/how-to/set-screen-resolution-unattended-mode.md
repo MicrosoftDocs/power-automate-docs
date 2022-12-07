@@ -1,13 +1,17 @@
 ---
-title: Set screen resolution on unattended mode | Microsoft Docs
+title: Set screen resolution on unattended mode
 description: Set screen resolution on unattended mode
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 07/16/2021
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

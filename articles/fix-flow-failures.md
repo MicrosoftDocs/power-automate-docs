@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
+manager: tapanm
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/16/2019
+ms.date: 10/12/2022
 ms.author: deonhe
 search.app: 
   - Flow
@@ -24,6 +24,35 @@ search.audienceType:
 ---
 # Troubleshooting a cloud flow
 
+Here are some tips and tricks for troubleshooting cloud flows.
+
+## Identify specific flow runs
+
+Once you build and deploy your flows, you might need to debug specific flow runs to confirm that your flow ran as expected. By default, the flow owner can look at the **Start**, **Duration**, and **Status** columns in the run history view in Power Automate to help them identify the flow run they are interested in debugging. The owner can also expand the troubleshooting section to identify the specific run in which they are interested, however, for flows that run frequently, this can be time-consuming.
+
+To make it more efficient to identify flow runs when debugging, Power Automate provides the ability for flow owners to configure the list of columns that's displayed on the run history page for each flow run. These columns map to the trigger outputs for your flow. When you display the columns you want, you save time since you will see the relevant columns by default on the run history view.
+
+Follow these steps to add one or more columns to your run history view.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Select **My flows** from the left side of the screen.
+1. Select the flow for which you want to get more details.
+1. Select **Edit columns** on the flow details page.
+
+   ![A screenshot that shows the edit columns link on the details view for a flow.](./media/triggers-introduction/edit-columns.png)
+
+1. Select the columns that you want to add to your run history view for the flow that you've selected, and then select **Save**.
+
+   ![A screenshot that displays some of the columns available as trigger output for the flow you've selected](./media/triggers-introduction/select-flow-columns.png).
+
+1. View the list of columns that displays on the run history view for the flow you've selected.
+
+   Note that **hasAttachments** and **isHTML** columns are now visible for the flow so that you can quickly see those values to help you debug the flow.
+
+   ![A screenshot that displays the list of columns that displays on the run history view for the flow you've selected ](./media/triggers-introduction/new-columns-run-history-view.png)
+
+>[!TIP]
+>You can also configure the list of columns that's displayed via the **All runs** view.
 
 ## Repair tips in email
 
@@ -55,9 +84,9 @@ If your flow fails, you can also troubleshoot it directly in Power Automate.  He
    Details about the flow appear, and at least one step shows a red exclamation icon.
 1. Open that failed step, and then review the error message.
 
-   On the right pane, you can see the **details** of the error and **How to fix** the error 
+   On the right pane, you can see the **details** of the error and **How to fix** the error.
 
-   ![Error message.](./media/fix-flow-failures/identify-error.png)
+   ![Error message for a failed flow run.](./media/fix-flow-failures/identify-error.png)
 
 
 ## Authentication failures
@@ -68,7 +97,7 @@ In many cases, flows fail because of an authentication error. If you have this t
 1. Next to the connection, click or tap the **Fix connection** link in the message about the connection not being authenticated.
 1. Verify your credentials by following the instructions that appear, return to your flow-run failure, and then click or tap **Resubmit**.
 
-   ![Error message.](./media/fix-flow-failures/resubmit.png)
+   ![A screenshot that displays the resubmit button.](./media/fix-flow-failures/resubmit.png)
    
  The flow should now run as expected.
 
@@ -89,7 +118,7 @@ When you need help, you can use our **Self Help** options, or you can **Ask for 
 1. Go to the [support site](https://flow.microsoft.com/support/).
 1. Go to the **Self Help** category and select one of the self-help options.
 
-    ![Ask for help section. Contact support.](media/fix-flow-failures/self-help-section.png)
+    ![A screenshot that displays the self-help option.](media/fix-flow-failures/self-help-section.png)
 
 ### Ask for help from others
 

@@ -1,13 +1,17 @@
 ---
-title: Email | Microsoft Docs
-description: Email Actions Reference
-author: mariosleon
+title: Email actions reference
+description: See all the available email actions.
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.date: 11/23/2022
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -15,42 +19,59 @@ search.audienceType:
   - enduser
 ---
 
-# Email
+# Email actions
 
+Before deploying any email action, you have to configure the server that will handle the requests. The **Retrieve email messages** and **Process email messages** actions require an IMAP server, while the **Send email** action requires an SMTP server.
 
+Common IMAP ports:
 
-Automate sending, receiving and managing emails through imap/smtp
+* 143 (non-encrypted and TLS)
+* 993 (secure IMAP)
 
-[Retrieve email messages](#retrieveemails)  
-[Process email messages](#processemails)  
-[Send email](#sendemail)  
+Common IMAP servers:
 
-## Getting started with email actions
+* imap-mail.outlook.com (Outlook.com)
+* outlook.office365.com (Office365.com)
+* imap.mail.yahoo.com (Yahoo mail)
+* imap.gmail.com (Google mail)
 
-Before deploying any email action, you have to configure the server that will handle the respective request. The **Retrieve email messages** and **Process email messages** actions require an IMAP server, while the **Send email** action requires an SMTP server.
+Common SMTP ports:
 
-To retrieve emails that meet specific criteria from your mailbox, use the **Retrieve email messages** action. In the example below, the filter has been configured to retrieve only unread messages from the inbox. The filter further specifies that the email should be from b.friday, the subject contains the word "Report" and the body contains "Tuesday". Attachments from any retrieved emails which match these criteria will be saved locally.
+* 25 (non-encrypted)
+* 587 (non-encrypted and TLS)
+* 465 (SSL)
 
-![Screenshot of the Retrieve email messages action.](media/email/retrieve-email-messages-example.png)
+Common SMTP servers:
 
-Manage your email messages with the **Process email messages** action. Using the variable created by the Retrieve e-mail messages action, select whether you would like to move, delete, or mark email messages as read/unread.
+* smtp-mail.outlook.com (Outlook.com)
+* smtp.office365.com (Office365.com)
+* smtp.mail.yahoo.com (Yahoo mail)
+* smtp.gmail.com (Google mail)
 
-The **Send email** action in the figure below has been configured to send an e-mail from N. Varga to B. Friday, with invoicing in the BCC field. The subject and body contain the **%ReportID%** variable, and the attachment is a file which has been processed by the flow. 
+:::image type="content" source="media/email/email-example.png" alt-text="Screenshot of the IMAP server settings of the Retrieve emails action.":::
 
-![Screenshot of the Send email action.](media/email/send-email-messages-example.png)
+To retrieve emails that meet specific criteria, use the **Retrieve email messages** action. The following example retrieves only unread messages from the inbox.
 
+The filter further specifies that the email should be from **b.friday**, the subject should contain **Report**, and the body should contain **Tuesday**. The action will save locally all attachments that match the specified criteria.
 
+:::image type="content" source="media/email/retrieve-email-messages-example.png" alt-text="Screenshot of the Retrieve email messages action.":::
 
-## Email actions
+Manage your emails with the **Process email messages** action that requires the variable created by the **Retrieve email messages** action. You can select whether to move, delete, or mark email messages as read/unread.
 
-### <a name="retrieveemails"></a> Retrieve email messages
-Retrieves email messages from an IMAP server
+The following **Send email** action below sends an email from **N. Varga** to **B. Friday**, with **invoicing** in the BCC field. The subject and body contain the **%ReportID%** variable, while the attachment is a file that the flow has processed before.
 
-##### Input Parameters
+:::image type="content" source="media/email/send-email-messages-example.png" alt-text="Screenshot of the Send email action.":::
+
+## <a name="retrieveemails"></a> Retrieve email messages
+
+Retrieves email messages from an IMAP server.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |IMAP server|No|[Text value](../variable-data-types.md#text-value)||The IMAP server address (e.g. imap.gmail.com)|
-|Port|Yes|[Numeric value](../variable-data-types.md#numeric-value)|993|The port to use for the IMAP server. Usually this is port 993|
+|Port|Yes|[Numeric value](../variable-data-types.md#numeric-value)|993|The port to use for the IMAP server. Usually this port is 993|
 |Enable SSL|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to use a secure connection to communicate with the IMAP Server|
 |User name|No|[Text value](../variable-data-types.md#text-value)||The username of the email account to access|
 |Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password of the email account to access|
@@ -65,14 +86,14 @@ Retrieves email messages from an IMAP server
 |Save attachments|N/A|Save attachments, Do not save attachments|Do not save attachments|Specify whether to save the attachments of the emails retrieved or not|
 |Save attachments into|No|[Folder](../variable-data-types.md#files-and-folders)||The folder to save the attachments|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RetrievedEmails|[List](../variable-data-types.md#list) of [Mail Messages](../variable-data-types.md#email)|The retrieved emails for later processing as a list of mail message objects|
 
+### <a name="retrieveemails_onerror"></a> Exceptions
 
-##### <a name="retrieveemails_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to connect to IMAP server|Indicates that there was a problem connecting to the IMAP server|
@@ -81,41 +102,46 @@ Retrieves email messages from an IMAP server
 |Failed to save attachments|Indicates a problem saving the attachments|
 |Failed to retrieve emails|Indicates a problem retrieving the emails|
 
-### <a name="processemails"></a> Process email messages
-Moves, deletes or marks as unread an email (or a list of emails) retrieved by a Retrieve emails action
+## <a name="processemails"></a> Process email messages
 
-##### Input Parameters
+Moves, deletes or marks as unread an email (or a list of emails) retrieved by a Retrieve emails action.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |IMAP server|No|[Text value](../variable-data-types.md#text-value)||The IMAP server address (e.g. imap.gmail.com)|
-|Port|Yes|[Numeric value](../variable-data-types.md#numeric-value)|993|The port to use for the IMAP server. Usually this is port 993|
+|Port|Yes|[Numeric value](../variable-data-types.md#numeric-value)|993|The port to use for the IMAP server. Usually this port is 993|
 |Enable SSL|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to use a secure connection to communicate with the IMAP server|
 |Username|No|[Text value](../variable-data-types.md#text-value)||The username of the email account to access|
 |Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password of the email account to access|
 |Accept Untrusted Certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether untrusted certificates will be accepted|
-|Email(s) to process|No|[List](../variable-data-types.md#list) of [Mail Messages](../variable-data-types.md#email)||The email or list of emails to process. This should be a variable populated by a Retrieve emails action|
+|Email(s) to process|No|[List](../variable-data-types.md#list) of [Mail Messages](../variable-data-types.md#email)||The email or list of emails to process. This parameter should contain a variable populated by a Retrieve emails action|
 |Operation|N/A|Delete emails from server, Mark emails as unread, Move emails to mail folder, Mark emails as unread and move to mail folder|Move emails to mail folder|The operation you want to perform on the specified email messages|
 |Mail folder|No|[Text value](../variable-data-types.md#text-value)||The name of the mail folder to which the emails will be moved|
 
+### Variables produced
 
-##### Variables Produced
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
-##### <a name="processemails_onerror"></a> Exceptions
+### <a name="processemails_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Failed to connect to IMAP server|Indicates that there was a problem connecting to the IMAP server|
 |Specified mail-folder doesn't exist|Indicates that the specified mail folder wasn't found|
 |Failed to process emails|Indicates a problem with processing the specified emails|
 
-### <a name="sendemail"></a> Send email
-Creates and sends a new email message
+## <a name="sendemail"></a> Send email
 
-##### Input Parameters
+Creates and sends a new email message.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |SMTP server|No|[Text value](../variable-data-types.md#text-value)||The SMTP server address|
-|Server port|Yes|[Numeric value](../variable-data-types.md#numeric-value)|25|The port to use for the server. Usually this is port 25|
+|Server port|Yes|[Numeric value](../variable-data-types.md#numeric-value)|25|The port to use for the server. Usually this port is 25|
 |Enable SSL|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether or not to communicate with the server through a secure connection|
 |SMTP Server needs authentication|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the server requires authentication|
 |User name|No|[Text value](../variable-data-types.md#text-value)||The username of the email account to access|
@@ -131,41 +157,16 @@ Creates and sends a new email message
 |Body Is HTML|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the body of the email will be interpreted as HTML coding|
 |Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s), or a file or a list of files. Multiple files should be enclosed in double quotes (") and separated by a space character|
 
+### Variables produced
 
-##### Variables Produced
-- This action doesn't produce any variables
+This action doesn't produce any variables.
 
-##### <a name="sendemail_onerror"></a> Exceptions
+### <a name="sendemail_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Invalid email address|Indicates that the specified email address is invalid|
 |Failed to send email|Indicates a problem sending the email|
-|Attachment not found|Indicates that the specified attachment(s) were not found|
-
-
-### <a name="furtherdetails"></a> Further details
-Common IMAP ports:
-* 143 (non-encrypted and TLS)
-* 993 (secure IMAP)
-
-Common IMAP servers:
-* imap-mail.outlook.com (Outlook.com)
-* outlook.office365.com (Office365.com)
-* imap.mail.yahoo.com (Yahoo mail)
-* imap.gmail.com (Google mail)
-
-Common SMTP ports:
-* 25 (non-encrypted)
-* 587 (non-encrypted and TLS)
-* 465 (SSL)
-
-Common SMTP servers:
-* smtp-mail.outlook.com (Outlook.com)
-* smtp.office365.com (Office365.com)
-* smtp.mail.yahoo.com (Yahoo mail)
-* smtp.gmail.com (Google mail)
-
-![Retrieve emails action example.](media\email\email-example.png)
-
+|Attachment not found|Indicates that the specified attachment(s) weren't found|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

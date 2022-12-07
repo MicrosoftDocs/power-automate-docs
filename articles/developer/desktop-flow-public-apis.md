@@ -1,9 +1,9 @@
 ---
-title: Work with desktop flows using code | Microsoft Docs
+title: Work with desktop flows using code
 description: Developer guide to integrate desktop flows capabilities within their applications.
 author: benabbon
 ms.topic: article
-ms.date: 07/13/2022
+ms.date: 12/01/2022
 ms.author: nabena
 ms.subservice: developer
 search.app: 
@@ -11,7 +11,7 @@ search.app:
 search.audienceType: 
   - developer
 ---
-# Work with desktop flows using code
+# Work with desktop flows using APIs
 
 Developers can add [desktop flows](/power-automate/desktop-flows/introduction) functionality to their applications, including programmatically triggering and canceling desktop flows. These capabilities are offered as part of the Microsoft Dataverse platform.
 
@@ -181,12 +181,9 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])/out
 }
 ```
 
-## Trigger a desktop flow run (preview)
+## Trigger a desktop flow run
 
->[!NOTE]
->Triggering a desktop flow using Web API is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-
-By using Dataverse, you can add the functionality of triggering a desktop flow through your application. To do this, you need to use the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
+By using Dataverse, you can add the functionality of triggering a desktop flow through your application. To implement this functionality, you need to use the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
 
 To call the action, you'll need the following information.
 
@@ -195,18 +192,18 @@ To call the action, you'll need the following information.
   >[!TIP]
   > Alternatively, you can retrieve the ID manually from the desktop flow details URL in Power Automate. The URL format is: `https://flow.microsoft.com/manage/environments/[Environment ID]/uiflows/[Desktop Flow ID]/details`.
   >
-  > Refer to [Manage desktop flows](/power-automate/desktop-flows/manage) for more information.
+  > For more information, see [Manage desktop flows](/power-automate/desktop-flows/manage).
 
 - The `name` of the desktop flow connection (targeting a machine/machine group) to use to run your flow. The name can be retrieved from the URL of the same connection page in Power Automate. The URL format is:  
 `https://flow.microsoft.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`.
   
   > [!NOTE]
-  > See [Setup desktop flows connections and machine credentials](../desktop-flows/install.md#setup-desktop-flows-connections-and-machine-credentials) for more information.
+  > For more information, see [Create desktop flow connections](../desktop-flows/desktop-flow-connections.md).
 
   >[!TIP]
-  > Alternatively, you can use a connection reference's logical name as the input of the connection instead of the connection name (usage example described below). The connection references are stored in the Dataverse table connectionreference and can be listed programatically in the same way as desktop flows detailled in the [List available desktop flows](#list-available-desktop-flows) section.
+  > Alternatively, you can use a connection reference's logical name as the input of the connection instead of the connection name (usage example described below). The connection references are stored in the Dataverse table connectionreference and can be listed programmatically in the same way as desktop flows detailed in the [List available desktop flows](#list-available-desktop-flows) section.
   >
-  > Refer to [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference) and [connectionreference table/entity reference](/power-apps/developer/data-platform/reference/entities/connectionreference) for more information.
+  > For more information, see [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference) and [connectionreference table/entity reference](/power-apps/developer/data-platform/reference/entities/connectionreference).
   
 ### Request to trigger a desktop flow
 
@@ -249,19 +246,69 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
     "flowsessionId": "d9687093-d0c0-ec11-983e-0022480b428a"
 }
 ```
->[!WARNING]
->When using the API, there are some limitations to be aware of:
->
->* When triggering a desktop flow run using the API, the inputs of the script are not viewable in the run details page on the power automate portal.
->
->* The owner of the flow session representing the run is mapped to the owner of the workflow entity representing the desktop flow. There will be some limitations when calling the API on a workflow with a "User" privilege: Canceling the run and querying the status might be blocked for missing privileges on the flow session.
 
-## Cancel a desktop flow run (preview)
+> [!WARNING]
+> When using the API, there are some limitations to be aware of:
+>
+>- When triggering a desktop flow run using the API, the inputs of the script are not viewable in the run details page on the power automate portal.
+>
+> - The owner of the flow session representing the run is mapped to the owner of the workflow entity representing the desktop flow. There will be some limitations when calling the API on a workflow with a "User" privilege: Canceling the run and querying the status might be blocked for missing privileges on the flow session.
+>
+> - Dataverse impersonation isn't supported.
+
+### Receive notification on script completion
+
+An optional parameter "callbackUrl" is available in the body of the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
+You can use it if you want to be notified of your script completion.
+A POST request will be sent to the provided URL when the script is complete.
+
+#### Request received by the callback endpoint
+
+```http
+User-Agent: EnterpriseConnectors/1.0
+Content-type: application/json; charset=utf-8
+x-ms-workflow-id: [Workflow ID]
+x-ms-run-id: [Flow session ID]
+
+POST [yourCallbackURL]  
+```
+
+```json
+{
+    "statuscode": 4,
+    "statecode": 0,
+    "startedon": "2022-09-05T08:04:11Z",
+    "completedon": "2022-09-05T08:04:41Z",
+    "flowsessionid": "d9687093-d0c0-ec11-983e-0022480b428a"
+}
+```
+
+If no callback URL parameter is provided, the flow session status should be polled from Dataverse (refers to [Get the status of a desktop flow run](#get-the-status-of-a-desktop-flow-run)).
 
 >[!NOTE]
->Canceling a desktop flow run using Web API is a preview feature. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access to the features and provide feedback.
+>
+> - You can still use the status polling as a fallback mechanism even if you provide a callback URL parameter.
+> - Your callback endpoint operation should be idempotent.
+> - The POST request will be retried three times with one second interval if your endpoint responds with a Server Error response (code 500 and above) or a "Request Timeout" response (code 408).
 
-Similar to the [Trigger](#trigger-a-desktop-flow-run-preview) functionality, you can also cancel a queued/running desktop flow. To do this, you use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun).
+Requirements for the callback URL parameter
+
+- Your server must have the current [TLS and cipher suites](/power-platform/admin/server-cipher-tls-requirements).
+- Only the HTTPS protocol is allowed.
+- Access to localhost (loopback) isn't permitted.
+- IP addresses can't be used. You must use a named web address that requires DNS name resolution.
+- Your server must allow connections from [Power Platform and Dynamics 365 services IP address values specified under the AzureCloud service tag](/power-platform/admin/online-requirements#ip-addresses-required).
+
+>[!TIP]
+> As the callback call isn't authenticated, some precautions should be taken
+>
+> - Check the flow session Id validity when the callback notification is received. Dataverse is the source of truth.
+> - Implement a rate limit strategy on your server side.
+> - Try to limit the callback URL sharing between several organizations.
+
+## Cancel a desktop flow run
+
+Similar to the [Trigger](#trigger-a-desktop-flow-run) functionality, you can also cancel a queued/running desktop flow. To cancel a desktop flow, use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun).
 
 ### Request to cancel a desktop flow run
 
@@ -277,7 +324,6 @@ POST https://[Organization URI]/api/data/v9.2/flowsessions(d9687093-d0c0-ec11-98
 ```json
 HTTP/1.1 204 No Content
 ```
-
 
 ### Errors
 

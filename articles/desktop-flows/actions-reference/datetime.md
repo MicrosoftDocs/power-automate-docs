@@ -1,13 +1,17 @@
 ---
-title: Datetime | Microsoft Docs
-description: Datetime Actions Reference
-author: mariosleon
+title: Date time actions reference
+description: See all the available date time actions.
+author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
-ms.author: marleon
-ms.reviewer:
+ms.date: 11/23/2022
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -15,90 +19,83 @@ search.audienceType:
   - enduser
 ---
 
-# Datetime
+# Date time actions
 
+Use the **Get current date and time** action to retrieve the current date and time (or date only, if selected) and store it in a variable. The date format depends on the Windows configuration.
 
+To add various time units to date variables, deploy the **Add to datetime** action.
 
-Get the date and time and perform time related functions
+To calculate the difference between two dates, use the **Subtract dates** action. You can retrieve the difference in seconds, minutes, hours, or days.
 
-[Add to datetime](#add)  
-[Subtract dates](#subtract)  
-[Get current date and time](#getcurrentdatetime)  
+:::image type="content" source="media/datetime/subtract-dates.png" alt-text="Screenshot of the Subtract dates action.":::
 
-## Getting started with datetime actions
+## <a name="add"></a> Add to datetime
 
-The **Get current date and time** action will store the current date and time (or date only, if selected) in a datetime type variable. The date will be formatted with the format currently selected in Windows.
+Adds (or subtracts) a specific number of seconds, minutes, hours or days to a datetime value.
 
-Add any amount of a specified unit of time to a date with the **Add to datetime** action.
+### Input parameters
 
-To find the difference between two dates, use the **Subtract dates** action. The difference can be returned in seconds, minutes, hours or days.
-
-![Screenshot of the Subtract dates action.](media/datetime/subtract-dates.png)
-
-## Datetime actions
-
-### <a name="add"></a> Add to datetime
-Adds (or subtracts) a specific number of seconds, minutes, hours or days to a datetime value
-
-##### Input Parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Datetime|No|[Datetime](../variable-data-types.md#dates-and-time)||The datetime value to alter|
-|Add|No|[Numeric value](../variable-data-types.md#numeric-value)||The numeric value to add. To subtract a time, this value would be negative. For example, add -7 days here to go back one week|
+|Add|No|[Numeric value](../variable-data-types.md#numeric-value)||The numeric value to add. To subtract a time, the value should be negative. For example, add -7 days here to go back one week|
 |Time unit|N/A|Seconds, Minutes, Hours, Days, Months, Years|Seconds|The time unit the time to add represents|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ResultedDate|[Datetime](../variable-data-types.md#dates-and-time)|The new, altered datetime value|
 
+### <a name="add_onerror"></a> Exceptions
 
-##### <a name="add_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="subtract"></a> Subtract dates
-Finds the time difference between two given dates in days, hours, minutes, or seconds
+This action doesn't include any exceptions.
 
-##### Input Parameters
+## <a name="subtract"></a> Subtract dates
+
+Finds the time difference between two given dates in days, hours, minutes, or seconds.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |From date|No|[Datetime](../variable-data-types.md#dates-and-time)||The datetime to subtract the first datetime from. This will be the base datetime, so generally put the later date/time in this attribute|
 |Subtract date|No|[Datetime](../variable-data-types.md#dates-and-time)||The datetime to subtract|
 |Get difference in|N/A|Seconds, Minutes, Hours, Days|Days|The unit of time to express the difference in|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |TimeDifference|[Numeric value](../variable-data-types.md#numeric-value)|The difference in time as a numeric value|
 
+### <a name="subtract_onerror"></a> Exceptions
 
-##### <a name="subtract_onerror"></a> Exceptions
-- This action doesn't include any exceptions
-### <a name="getcurrentdatetime"></a> Get current date and time
-Retrieves the current date or the current date and time
+This action doesn't include any exceptions.
 
-##### Input Parameters
+## <a name="getcurrentdatetime"></a> Get current date and time
+
+Retrieves the current date or the current date and time.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Retrieve|N/A|Current date and time, Current date only|Current date and time|Specify whether to get the date and time, or just the date. If the latter is chosen, the time value will be stored as midnight (0:00:00)|
 |Time zone|N/A|System time zone, Specific time zone|System time zone|Whether to use the system's time zone or a custom one|
 |Country/region|No|[Text value](../variable-data-types.md#text-value)|Europe/Bucharest|The country/region to get the time of or add a numeric value as the hours that will be added in the UTC time zone|
 
+### Variables produced
 
-##### Variables Produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |CurrentDateTime|[Datetime](../variable-data-types.md#dates-and-time)|The current datetime value|
 
+### <a name="getcurrentdatetime_onerror"></a> Exceptions
 
-##### <a name="getcurrentdatetime_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to get current date and time|Indicates that there was a problem retrieving the current date and time|
 |Specified country/region not found|Indicates that the specified country or region wasn't found|
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

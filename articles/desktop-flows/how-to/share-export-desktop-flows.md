@@ -1,13 +1,17 @@
 ---
-title: Share/export a desktop flow | Microsoft Docs
+title: Share/export a desktop flow
 description: Share/export a desktop flow
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 09/06/2021
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

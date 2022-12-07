@@ -1,5 +1,5 @@
 ---
-title: Introduction to other types of desktop flows (contains video) | Microsoft Docs
+title: Introduction to other types of desktop flows (contains video)
 description: Introduction to other types of desktop flows.
 services: ''
 suite: flow
@@ -16,6 +16,8 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/26/2020
 ms.author: DeonHe
+contributors:
+- georgiostrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -26,9 +28,10 @@ search.audienceType:
 # Introduction to other types of desktop flows
 
 >[!IMPORTANT]
->This section covers topics to develop automations using legacy systems:
-> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
-> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
+>
+> - From February 28th 2022, Selenium IDE will no longer be supported.
+> - Since November 30th 2021, Windows recorder (V1) no longer works.
+> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
 
 
 Read on if you already have automation built using Windows recorder (V1) and Selenium IDE.

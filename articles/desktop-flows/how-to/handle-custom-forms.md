@@ -1,13 +1,17 @@
 ---
-title: Handle custom forms | Microsoft Docs
+title: Handle custom forms
 description: Handle custom forms	
 author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 02/14/2022
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 

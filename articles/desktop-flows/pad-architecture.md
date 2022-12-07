@@ -1,13 +1,17 @@
 ---
-title: Power Automate for desktop architecture | Microsoft Docs
+title: Power Automate for desktop architecture
 description: Power Automate for desktop architecture
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 06/28/2020
-ms.author: v-gtrantzas
-ms.reviewer:
+ms.date: 12/01/2022
+ms.author: gtrantzas
+ms.reviewer: marleon
+contributors:
+- Yiannismavridis
+- NikosMoutzourakis
+- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -18,11 +22,15 @@ search.audienceType:
 # Power Automate for desktop architecture
 
 > [!IMPORTANT]
-> Gateways for desktop flows will be deprecated soon (June 30th) except for China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+>
+> - Gateways for desktop flows will be deprecated soon (June 30) except for the China region. Start to switch to our machine-management capabilities. [Learn more](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> - From February 28 2022, Selenium IDE will no longer be supported.
+> - Since November 30 2021, Windows recorder (V1) no longer works.
+> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
 
 There are two different methods that Power Automate can use to connect to the cloud services in order to receive flow execution jobs. The first option is direct connectivity, while the second option requires the on-premises data gateway to be installed.
 
-The data flow between the desktop and the cloud is the same in both options, only the application and user account that initiates the web requests are different. 
+The data flow between the desktop and the cloud is the same in both options; only the application and user account that initiates the web requests are different. 
 
 ## Attended/Unattended desktop direct connectivity to the cloud service 
 
@@ -33,27 +41,27 @@ The **UIFlowService** is a Windows service that is installed with Power Automate
 Azure Relay is a service that facilitates communication channels that are established entirely by making outgoing requests to the service. It achieves this functionality either by establishing a WebSocket connection or using HTTP long-polling, if necessary. 
 
 > [!NOTE]
-> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays in [What is Azure Relay](/azure/azure-relay/relay-what-is-it).
+> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relay in [What is Azure Relay](/azure/azure-relay/relay-what-is-it).
 
-The outgoing web requests from the **UIFlowService** on the desktop machine to the Azure Relay in the cloud use HTTPS to make requests to FQDN **\*.servicebus.windows.net** over port 443. 
+The outgoing web requests from the **UIFlowService** on the desktop machine to Azure Relay in the cloud use HTTPS to make requests to FQDN **\*.servicebus.windows.net** over port 443. 
 
-Destination IP addresses for the Azure Relay can be found [here](https://www.microsoft.com/download/details.aspx?id=56519) for the Public Cloud under the name **ServiceBus**. Similar documents are available for the other Azure national clouds. No inbound ports are required to be open on the desktop machine. 
+Destination IP addresses for Azure Relay can be found at [Azure IP Ranges and Service Tags](https://www.microsoft.com/download/details.aspx?id=56519) for the public cloud under the name **ServiceBus**. Similar documents are available for the other Azure national clouds. No inbound ports are required to be open on the desktop machine. 
 
 ## Attended/Unattended desktop connectivity to the cloud service using the on-premises data gateway 
 
 > [!NOTE]
 > Power Automate now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Attended/Unattended desktop direct connectivity to the cloud service](pad-architecture.md#attendedunattended-desktop-direct-connectivity-to-the-cloud-service).
 
-The **UIFlowService** is a Windows service that is installed with Power Automate on the desktop machine. The [on-premises data gateway](/data-integration/gateway/service-gateway-onprem) Windows service is a separately installed component that acts as a communications gateway between the **UIFlowService** and the Azure Relay. 
+The **UIFlowService** is a Windows service that is installed with Power Automate on the desktop machine. The [on-premises data gateway](/data-integration/gateway/service-gateway-onprem) Windows service is a separately installed component that acts as a communications gateway between the **UIFlowService** and Azure Relay. 
 
 ![Desktop connectivity using the on-premises data gateway diagram.](media/pad-architecture/pad-on-premises-data-gateway.png)
 
-By default, the data gateway service is set to start automatically and runs as the new user **NT SERVICE\PBIEgwService**. This user is created during installation. 
+By default, the data gateway service is set to start automatically and run as the new user **NT SERVICE\PBIEgwService**. This user is created during installation. 
 
 Azure Relay is a service that facilitates communication channels that are established entirely by making outgoing requests to the service. It achieves this functionality either by establishing a WebSocket connection or using HTTP long-polling, if necessary. 
 
 > [!NOTE]
-> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relays in [What is Azure Relay](/azure/azure-relay/relay-what-is-it).
+> The Azure Relay and Power Automate cloud services are both cloud resources in Azure. You can find more information about Azure Relay in [What is Azure Relay](/azure/azure-relay/relay-what-is-it).
 
 The details about this data flow are documented in [Adjust communication settings](/data-integration/gateway/service-gateway-communication). The firewall requirements for execution are exactly the same as the direct connectivity option, but a different service and user account will be making the outgoing requests.
 
@@ -85,7 +93,7 @@ The WebDriver endpoints are only required if you use Selenium IDE desktop flows 
 
 ![Session credential lifecycle diagram.](media/pad-architecture/pad-session-credential-lifecyle.png)
 
-Although the logical data flow is from the cloud to the desktop, the connection is established from the desktop to the cloud. It uses an Azure Relay to connect to the cloud using an outgoing web request.
+Although the logical data flow is from the cloud to the desktop, the connection is established from the desktop to the cloud. It uses Azure Relay to connect to the cloud using an outgoing web request.
 
 If a gateway cluster is created using the on-premises data gateway, the private key used to decrypt credentials is generated on all machines in the cluster. The private key is generated using the recovery key that is requested during machine registration. The recovery key is never sent to the cloud. 
 
