@@ -38,7 +38,7 @@ Key capabilities:
 - **Connect to your own virtual network (vNET):** Securely communicate with each other, the Internet, and your on-premises networks.
 
 > [!NOTE]
-> Availability of the hosted machine in preview is being rolled out across all supported regions and will be available in Europe & US region by late December 2022.
+> Availability of the hosted machine in preview is being rolled out across all supported regions and will be available in Europe and US region by late December 2022.
 
 ## Licensing requirements
 
@@ -55,12 +55,10 @@ To use hosted machines, you need one of the following Power Automate licensing o
 > [!NOTE]
 > All tenants have a global limit of ten hosted machines.
 
-You will also need the following pre-requisite licenses:
-- You must have licenses for Windows, Intune, Azure AD, and Windows 365
-- If you are running unattended automation, any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, you must have the Microsoft 365 – Unattended License
+You'll also need the following prerequisite licenses:
 
-
-
+- You must have licenses for Windows, Intune, Azure AD, and Windows 365.
+- If you're running unattended automation, any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, you must have the Microsoft 365 – Unattended License.
 
 ## Prerequisites
 
@@ -156,13 +154,13 @@ To create a hosted machine:
 
     1. Enter a name for your hosted machine and optionally add a description.
 
-    2. Select the VM image to use for your hosted machine. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
+    1. Select the VM image to use for your hosted machine. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
-    Alternatively, you can select a [custom VM Image](#use-custom-vm-images-for-your-hosted-machine) that has been shared with your account.
+        Alternatively, you can select a [custom VM Image](#use-custom-vm-images-for-your-hosted-machine) that has been shared with your account.
 
-    3. Optionally, select the [custom network connection](#use-custom-vnet-for-your-hosted-machines) you want your hosted machine to be provisioned with Azure Active Directory (Azure AD). Otherwise, you'll automatically connect to the Microsoft Hosted Network.
+    1. Optionally, select the [custom network connection](#use-custom-vnet-for-your-hosted-machines) you want your hosted machine to be provisioned with Azure Active Directory (Azure AD). Otherwise, you'll automatically connect to the Microsoft Hosted Network.
 
-    4. Review and create your hosted machine.
+    1. Review and create your hosted machine.
 
 :::image type="content" source="media/hosted-machines/create-hosted-machine.png" alt-text="Screenshot of the hosted machine creation wizard.":::
 
@@ -235,10 +233,11 @@ Custom VM images must meet the following requirement:
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
 
-In order to use your VM image for hosted machines, you will need to grant Windows 365 service principal with the following permissions:
+To use your VM image for hosted machines, you'll need to grant Windows 365 service principal with the following permissions:
+
 - Reader permission on the Azure subscription.
 
-When you upload a custom image, you must be signed in with an account that is an Owner or admin of the subscription.
+When you upload a custom image, you must be signed in with an account that is an owner or admin of the subscription.
 
 ### Share the Azure Compute Gallery with Power Automate makers
 
@@ -325,7 +324,8 @@ The vNET needs to be created in the same location with your hosted machines. You
 
 ### Share the virtual network with Windows 365 service principal
 
-In order to use your virtual network for hosted machines, you will need to grant Windows 365 service principal with the following permissions:
+To use your virtual network for hosted machines, you'll need to grant Windows 365 service principal with the following permissions:
+
 - Reader permission on the Azure subscription.
 - Network contributor permission on the specified resource group.
 - Network contributor permission on the virtual network.
@@ -485,7 +485,7 @@ By default, **Desktop Flows Machine owner** can create hosted machines, but can'
 
 #### Desktop Flows Machine Configuration Admin role
 
-The **Desktop Flows Machine Image Admin** role only brings full privileges on the **Flow Machine Image** and **Flow Machine Network** entity. In particular, it allows users with this role to share/unshare VM images and VNets to be used for created hosted machines in their environment. You can find more information about sharing pre-provisioned VM Images & VNets in [Create hosted machines](#create-a-hosted-machine).
+The **Desktop Flows Machine Image Admin** role only brings full privileges on the **Flow Machine Image** and **Flow Machine Network** entities. In particular, it allows users with this role to share/unshare VM images and VNets to be used for created hosted machines in their environment. You can find more information about sharing pre-provisioned VM Images & VNets in [Create hosted machines](#create-a-hosted-machine).
 
 :::image type="content" source="media/hosted-machines/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
 
