@@ -44,13 +44,13 @@ Key capabilities:
 
 To use hosted machines, you need one of the following Power Automate licensing options:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on** or **Hosted RPA add-on**.
+- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on**.
 
     During the preview period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
-- Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trial** or **Hosted RPA add-on trial**.
+- Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trial**.
 
-    The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the unattended RPA add-on or Hosted RPA add-on to the targeted environments.
+    The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the unattended RPA add-on to the targeted environments.
 
 > [!NOTE]
 > All tenants have a global limit of ten hosted machines.
