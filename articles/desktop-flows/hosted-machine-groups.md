@@ -15,14 +15,14 @@ search.audienceType:
   - enduser
 ---
 
-# Hosted machine groups (preview)
+# Hosted machine group (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!NOTE]
-> Hosted RPA bots have been rebranded to Hosted machine groups. There will be no impact on your existing use of this feature, and the user experience will be updated automatically with a new name.
+> Hosted RPA bots have been renamed to Hosted machine group. There will be no impact on your existing use of this feature, and the user experience will be updated automatically with a new name.
 
-Hosted machine groups allow you to run unattended automation at scale without providing or setting up any machines. You can create hosted machine groups like any other machine group, and Power Automate will automatically provision the machines based on the specified configuration.
+Hosted machine group allow you to run unattended automation at scale without providing or setting up any machines. You can create hosted machine groups like any other machine group, and Power Automate will automatically provision the machines based on the specified configuration.
 
 Desktop flows assigned to a hosted machine group get queued to it when triggered to run. Then, like for any machine group, the next desktop flow in the queue runs when a bot in the group is available. To find more information about queues, go to [Monitor desktop flow queues](monitor-desktop-flow-queues.md).
 
