@@ -38,7 +38,7 @@ Key capabilities:
 - **Connect to your own virtual network (vNET):** Securely communicate with each other, the Internet, and your on-premises networks.
 
 > [!NOTE]
-> Availability of the hosted machine in preview is being rolled out across all supported regions and will be available in Europe and US region by late December 2022.
+> Availability of the hosted machine in preview is being rolled out across all supported regions and will be available in Europe and US region by 19th December 2022.
 
 ## Licensing requirements
 
