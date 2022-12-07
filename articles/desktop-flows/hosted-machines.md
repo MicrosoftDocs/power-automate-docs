@@ -487,7 +487,7 @@ By default, **Desktop Flows Machine owner** can create hosted machines, but can'
 
 The **Desktop Flows Machine Image Admin** role only brings full privileges on the **Flow Machine Image** and **Flow Machine Network** entity. In particular, it allows users with this role to share/unshare VM images and VNets to be used for created hosted machines in their environment. You can find more information about sharing pre-provisioned VM Images & VNets in [Create hosted machines](#create-a-hosted-machine).
 
-:::image type="content" source="media/hosted-machines/desktop-flow-machine-image-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Image Admin role.":::
+:::image type="content" source="media/hosted-machines/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
 
 ## Hosted machines limitations
 
