@@ -27,7 +27,7 @@ After creating desktop flows, you might need to view, edit, or check their statu
 
    Using the available options in this tab, you can create new desktop flows and edit or delete existing desktop flows.
 
-   :::image type="content" source="(media/manage-desktop-flows/view-all.png" alt-text="Screenshot of the list with all desktop flows.":::
+   :::image type="content" source="media/manage-desktop-flows/view-all.png" alt-text="Screenshot of the list with all desktop flows.":::
 
 > [!NOTE]
 > If you delete or rename a desktop flow, select the refresh button to reflect the changes in the desktop flows list.
@@ -45,7 +45,7 @@ Follow these steps to see the details for a desktop flow:
 1. Go to **My flows** > **Desktop flows**.
 1. Select any of your desktop flows.
 
-:::image type="content" source="(media/manage-desktop-flows/view-details.png" alt-text="Screenshot of the details of a desktop flow.":::
+:::image type="content" source="media/manage-desktop-flows/view-details.png" alt-text="Screenshot of the details of a desktop flow.":::
 
 ## Share desktop flows
 
@@ -83,12 +83,12 @@ To reassign a desktop flow to another user:
 1. Go to **Data** > **Tables**.
 1. Go to the **All** tab, and then search for the **Process** table.
 
-    :::image type="content" source="media/manage-desktop-flows/manage-desktop-flows-process-table" alt-text="Screenshot of the Process table in the All tab":::
+    :::image type="content" source="media/manage-desktop-flows/manage-desktop-flows-process-table.png" alt-text="Screenshot of the Process table in the All tab":::
 
 1. Select **Edit**.
 1. Select your desktop flow in the list, and then select **Edit row using form**.
 
-    :::image type="content" source="media/manage-desktop-flows/manage-desktop-flows-edit-row-using-form" alt-text="Screenshot of the Edit row using form button.":::
+    :::image type="content" source="media/manage-desktop-flows/manage-desktop-flows-edit-row-using-form.png" alt-text="Screenshot of the Edit row using form button.":::
 
 1. Select **Assign**, and then confirm the changes.
 
@@ -125,7 +125,7 @@ In this page, you can:
 > - Users of an environment with a Dataverse security role that provides them **Read** access to all the records of the **Process** Dataverse table are co-owners of all desktop flows created in this environment and can't be removed.
 > - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
-## More information
+## Learn more
 
 - [Create desktop flows](create-flow.md).
 - [Trigger desktop flows from cloud flows](trigger-desktop-flows.md).
