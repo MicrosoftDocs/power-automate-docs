@@ -30,8 +30,8 @@ search.audienceType:
 
 >[!IMPORTANT]
 >
-> - From February 28th 2022, Selenium IDE will no longer be supported.
-> - Since November 30th 2021, Windows recorder (V1) no longer works.
+> - From February 28 2022, Selenium IDE will no longer be supported.
+> - Since November 30 2021, Windows recorder (V1) no longer works.
 > - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
 
 Selenium IDE flows automate websites running in the [Microsoft Edge (version 80 or later)](https://www.microsoft.com/edge/) or Google Chrome. After you've [created a Web UI flow](create-web.md), you might need to edit it. Follow the steps in this document to learn how to edit your Selenium IDE flows.
