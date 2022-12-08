@@ -4,18 +4,20 @@ description: Learn about how the Power Automate embed pay-as-you-go feature work
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: tapanm
+author: rakrish84
+contributors:
+  - rakrish84
+  - v-aangie
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/05/2022
-ms.author: deonhe
+ms.date: 01/03/2023
+ms.author: rakrish
+ms.reviewer: angieandrews
 search.app: 
   - Flow
   - Powerplatform
@@ -29,7 +31,7 @@ With the [Power Automate embed pay-as-you-go program](https://powerplatformpartn
 
 Since ISVs pay for their customers' use of their premium connectors, there's no need for their customers to purchase standalone Power Automate licenses to build and run flows with the premium capabilities that the ISV offers.
 
-With this approach, ISVs with premium connectors on Power Platform can make them available to any Power Automate user. After the ISV starts their participation in this embed program, users without premium licenses can build premium flows with connectors that the ISV provides. This enables any user to leverage the premium capabilities of Power Automate and build flows to enhance the products that they use from that ISV .
+With this approach, ISVs with premium connectors on Power Platform can make them available to any Power Automate user. After the ISV starts their participation in this embed program, users without premium licenses can build premium flows with connectors that the ISV provides. This enables any user to take advantage of the premium capabilities of Power Automate and build flows to enhance the products that they use from that ISV.
 
 As customers build and run flows with these premium connectors, Microsoft sends aggregate tenant-level usage reports (flow runs involving these connectors) to the ISVs. No user data is shared as part of this program.
 
