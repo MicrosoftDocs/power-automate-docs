@@ -164,4 +164,26 @@ The following reasons might cause you to not find your on-premises data gateway 
 - The gateway may be installed in a different region than your Power Automate region. To resolve this issue, uninstall the gateway from the device, and then reinstall it, selecting [the correct Power Automate region](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
 - The gateway has been deleted by its owner.
 
+## Get self-help or ask help from support
+
+If you need help, use our self-help options, or ask for help from support.
+
+### Self help
+
+1. Go to the [Power Automate support site](https://make.powerautomate.com/support/).
+1. Go to the **Self Help** category, and select one of the available self-help options.
+
+### Ask for help from support
+
+1. Go to the [Power Automate support site](https://make.powerautomate.com/support/).
+1. Select **Contact Support** under the **Ask for help** category.
+1. Enter **Flows - Desktop flows** in **Problem type**, and populate the other fields with information about your issue.
+1. Select **See solutions**.
+
+> [!IMPORTANT]
+> We offer full support for all Power Automate for desktop product versions released within a year from the latest public product release. For product releases prior to a year back from the latest release, only issues of severity level **Critical** and **Severity A** are supported.
+>
+>To find more information about severity levels, go to [Support overview](/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request). To see what are the currently supported releases, go to [Released versions for Power Automate for desktop](/power-platform/released-versions/power-automate-desktop).
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
