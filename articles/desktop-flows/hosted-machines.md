@@ -3,7 +3,7 @@ title: Hosted machines (preview)
 description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/29/2022
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
@@ -506,7 +506,7 @@ The following list displays all the supported geographies in the public clouds:
 - United Kingdom
 - United States
 
-Hosted machines aren't yet available in sovereign clouds and isn't yet available in the following public cloud geographies:
+Hosted machines aren't yet available in sovereign clouds and aren't yet available in the following public cloud geographies:
 
 - Asia
 - Brazil
