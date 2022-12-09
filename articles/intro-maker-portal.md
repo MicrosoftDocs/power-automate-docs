@@ -31,8 +31,7 @@ search.audienceType:
 We're making it easier to create cloud flows and use templates. This simplified experience allows makers to quickly and easily create cloud flow automation to solve their business needs.
 
 > [!IMPORTANT]
-> - This is a preview feature.
-> - This experience is in the process of being rolled out, and might not be available in your region yet. 
+> - This preview experience is in the process of being rolled out, and might not be available in your region yet. 
 > - We will soon update the Power Automate documentation reflecting the new experience.
 
 The new changes will allow you to:
