@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
+ms.date: 12/09/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -21,7 +21,7 @@ search.audienceType:
 
 # Date time actions
 
-Use the **Get current date and time** action to retrieve the current date and time (or date only, if selected) and store it in a variable. The date format depends on the Windows configuration.
+Use the **Get current date and time** action to retrieve the current date and time (or date only, if selected) and store it in a variable. The date format depends on the Windows configuration. To find more information about the syntax of date and time values, go to [Variable data types](variable-data-types.md##dates-and-time).
 
 To add various time units to date variables, deploy the **Add to datetime** action.
 
