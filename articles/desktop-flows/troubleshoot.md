@@ -176,8 +176,8 @@ If you need help, use our self-help options, or ask for help from support.
 ### Ask for help from support
 
 1. Go to the [Power Automate support site](https://make.powerautomate.com/support/).
-1. Select **Contact Support** under the **Ask for help** category.
-1. Enter **Flows - Desktop flows** in **Problem type**, and populate the other fields with information about your issue.
+1. Select **Contact support** under the **Ask for help** category.
+1. Enter **Desktop flows** in **Problem type**, and populate the other fields with information about your issue.
 1. Select **See solutions**.
 
 > [!IMPORTANT]
