@@ -170,7 +170,7 @@ This section provides suggestions for troubleshooting hosted machine issues.
 
 ### Hosted machine errors
 
-- [Errors related to VM Image](/graph/api/resources/cloudpconpremisesconnectionhealthcheck#cloudpconpremisesconnectionhealthcheckerrortype-values) used in hosted machine
+- [Errors related to VM Image](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta#cloudpcdeviceimagestatusdetails-values) used in hosted machine
 - [Errors related to network connection](/graph/api/resources/cloudpconpremisesconnectionhealthcheck#cloudpconpremisesconnectionhealthcheckerrortype-values) used in hosted machine
 
 Hosted machine provisioning errors:
