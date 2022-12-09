@@ -53,7 +53,7 @@ To allow reusing Windows session:
 
 1. Select the target machine or machine group
 
-1. Select **Edit details**
+1. Select **Settings** in the Command bar
 
 1. Enable **Reuse sessions for unattended runs**
 
