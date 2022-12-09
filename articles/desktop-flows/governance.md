@@ -1,10 +1,10 @@
 ---
 title: Governance
-description: See how to configure Power Automate using Windows registry keys.
+description: Learn how to configure Power Automate using Windows registry keys.
 author: georgiostrantzas
 
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 12/06/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -85,6 +85,21 @@ You can use the following registry entry to allow users to sign in to Power Auto
 ***Values***
 
 - **1**: Power Automate for desktop will authenticate users using the WAM functionality.
+
+<!--
+## Allow users with invalid certificates to sign in to Power Automate for desktop
+
+You can use the following registry entry to allow users with invalid certificates to sign in to Power Automate for desktop.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|DisableCheckCertificateRevocationList|DWORD|
+
+***Values***
+
+- **1**: Users with invalid certificates can sign in to Power Automate for desktop.
+
+-->
 
 ## Allow users to select a particular organization in Power Automate for desktop
 
