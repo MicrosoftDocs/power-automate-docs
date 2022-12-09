@@ -1,10 +1,8 @@
 ---
-title: Simplified experience to create a flow and use templates
-description: "Learn how to create instant flows in business process flows"
+title: Simplified experience to create a flow and use templates (preview)
+description: Get a preview of the simplified experience to create a flow and use templates.
 ms.custom: ""
-ms.date: 05/27/2022
-ms.reviewer: "msftman"
-
+ms.date: 12/14/2022
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
@@ -15,9 +13,12 @@ applies_to:
   - "Power Apps"
 ms.assetid: efe86ab3-430f-485a-b924-6ed82cfbb449
 caps.latest.revision: 39
-author: "vashr"
-ms.author: "vashr"
-ms.manager: KVIVEK
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - v-aangie
+ms.author: napienko
+ms.reviewer: angieandrews
 search.app: 
   - Flow
 search.audienceType: 
@@ -70,3 +71,9 @@ We've removed the **Templates** option on the left and replaced it with this exp
 If you choose to build your own flow instead of starting with a template, Power Automate will guide you in selecting your triggers, actions, and connectors.
 
 :::image type="content" source="media/create-experience-preview/connectors.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
+
+## New flow menu options
+
+If you're already working in the **My flows** screen, you can stay where you are and crete a new template from the **New flows** menu. The menu also gives you the option to start a desktop flow or a flow that uses AI Builder.
+
+:::image type="content" source="media/create-experience-preview/my-flows.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
