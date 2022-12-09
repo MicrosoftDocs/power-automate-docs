@@ -1,5 +1,5 @@
 ---
-title: Understand the new Power Automate interface (preview)
+title: New Power Automate experience (preview)
 description: Get a preview of the new Power Automate simplified experience to work with flows and templates.
 ms.custom: ""
 ms.date: 12/14/2022
@@ -26,7 +26,7 @@ search.audienceType:
   - enduser
 ---
 
-# Understand the new Power Automate interface (preview)
+# New Power Automate experience (preview)
 
 We're making it easier to create cloud flows and use templates. This simplified experience allows makers to quickly and easily create cloud flow automation to solve their business needs.
 
