@@ -1,6 +1,6 @@
 ---
-title: Simplified experience to create a flow and use templates (preview)
-description: Get a preview of the simplified experience to create a flow and use templates.
+title: Understand the new Power Automate interface (preview)
+description: Get a preview of the new Power Automate simplified experience to work with flows and templates.
 ms.custom: ""
 ms.date: 12/14/2022
 ms.suite: ""
@@ -26,15 +26,14 @@ search.audienceType:
   - enduser
 ---
 
-# Simplified experience to create a flow and use templates (preview)
+# Understand the new Power Automate interface (preview)
 
-*Add preview INCLUDE*
+We're making it easier to create cloud flows and use templates. This simplified experience allows makers to quickly and easily create cloud flow automation to solve their business needs.
 
-We're making it easier to create cloud flows and use templates. This simplified experience allows makers to quickly and easily create cloud flow automations to solve their business needs.
-
-> [!NOTE]
->
-> This experience might not be available in your region yet.
+> [!IMPORTANT]
+> - This is a preview feature.
+> - This experience is in the process of being rolled out, and might not be available in your region yet. 
+> - We will soon update the Power Automate documentation reflecting the new experience.
 
 The new changes will allow you to:
 
@@ -77,3 +76,4 @@ If you choose to build your own flow instead of starting with a template, Power 
 If you're already working in the **My flows** screen, you can stay where you are and crete a new template from the **New flows** menu. The menu also gives you the option to start a desktop flow or a flow that uses AI Builder.
 
 :::image type="content" source="media/create-experience-preview/my-flows.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
+
