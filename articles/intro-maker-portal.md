@@ -26,13 +26,15 @@ search.audienceType:
   - enduser
 ---
 
+[This article is pre-release documentation and is subject to change.]
+
 # New Power Automate experience (preview)
 
 We're making it easier to create cloud flows and use templates. This simplified experience allows makers to quickly and easily create cloud flow automation to solve their business needs.
 
 > [!IMPORTANT]
-> - This preview experience is in the process of being rolled out, and might not be available in your region yet. 
-> - We will soon update the Power Automate documentation reflecting the new experience.
+> - The Power Automate experience explained in this article is in preview and subject to change.
+> - This preview experience is in the process of being rolled out, and might not be available in your region.
 
 The new changes will allow you to:
 
