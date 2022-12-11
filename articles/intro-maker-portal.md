@@ -26,9 +26,9 @@ search.audienceType:
   - enduser
 ---
 
-[This article is pre-release documentation and is subject to change.]
-
 # New Power Automate experience (preview)
+
+[This article is pre-release documentation and is subject to change.]
 
 We've redesigned the Power Automate interface so that you can quickly and easily create cloud flows and use templates  to solve your business needs.
 
@@ -72,11 +72,9 @@ If you choose to build your own flow instead of starting with a template, Power 
 
 To learn more about creating a cloud flow, go to [Create a cloud flow in Power Automate](get-started-logic-flow.md). To learn more about triggers, go to [Get started with triggers](triggers-introduction.md). For an overview of connectors, go to [Connectors overview](/connectors/connectors).
 
-
-
 ## New flow menu options
 
 If you're already working in the **My flows** screen, you can stay where you are and crete a new template from the **New flows** menu. The menu also gives you the option to start a desktop flow or a flow that uses AI Builder.
 
-:::image type="content" source="media/create-experience-preview/my-flows.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
+:::image type="content" source="media/create-experience-preview/my-flows.png" alt-text="Screenshot of the options in the New flow menu in the My flows screen.":::
 
