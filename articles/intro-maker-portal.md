@@ -26,6 +26,8 @@ search.audienceType:
   - enduser
 ---
 
+[This article is pre-release documentation and is subject to change.]
+
 # New Power Automate experience (preview)
 
 We've redesigned the Power Automate interface so that you can quickly and easily create cloud flows and use templates  to solve your business needs.
