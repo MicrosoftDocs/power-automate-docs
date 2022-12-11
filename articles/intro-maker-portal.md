@@ -1,6 +1,6 @@
 ---
 title: New Power Automate experience (preview)
-description: Get a preview of the new Power Automate simplified experience to work with flows and templates.
+description: Get a preview of the new Power Automate experience to work with flows and templates.
 ms.custom: ""
 ms.date: 12/14/2022
 ms.suite: ""
@@ -28,11 +28,11 @@ search.audienceType:
 
 # New Power Automate experience (preview)
 
-We're making it easier to create cloud flows and use templates. This simplified experience allows makers to quickly and easily create cloud flow automation to solve their business needs.
+We've redesigned the Power Automate interface so that you can quickly and easily create cloud flows and use templates  to solve your business needs.
 
 > [!IMPORTANT]
-> - This preview experience is in the process of being rolled out, and might not be available in your region yet. 
-> - We will soon update the Power Automate documentation reflecting the new experience.
+> - This preview experience is in the process of being rolled out, and might not be available in your region yet.
+> - We'll soon update the Power Automate documentation to reflect the new experience.
 
 The new changes will allow you to:
 
@@ -46,29 +46,31 @@ The new changes will allow you to:
 
 ## Create a flow
 
-You can start creating a flow as soon as you sign in to Power Automate (link) by selecting **Create** at the top of the screen.
+You can start creating a flow as soon as you sign in to Power Automate by selecting **Create** at the top of the screen.
 
 :::image type="content" source="media/create-experience-preview/create-button.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
 
-You can then choose your path for creating a flow. Your two choices are to start with a template, or build your own flow.
+You can then choose your path for creating a flow. Your two choices are to start with a template to find prebuilt flows, or build your own custom automation.
 
-:::image type="content" source="media/create-experience-preview/choose-path.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
+:::image type="content" source="media/create-experience-preview/choose-path.png" alt-text="Screenshot of the two paths, which are start with a template4 or build your own.":::
 
 ## Choose a template
 
-Power Automate makes intelligent choices to find the templates that align best with your needs. It does this by filtering out the templates that won't work for you, leaving you with only the templates that are relevant. You can set the filters to show as many selections as you want, or search for templates using keywords.
+Power Automate makes intelligent choices to find the prebuilt templates that align best with your needs. It does this by filtering out the templates that won't work for you, leaving you with only the templates that are relevant. You can set filters to show as many selections as you want, or search for templates using keywords.
 
-:::image type="content" source="media/create-experience-preview/filter-by.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
+:::image type="content" source="media/create-experience-preview/filter-by.png" alt-text="Screenshot of choosing filters and using keywords.":::
 
 For example, if you select **Microsoft Dataverse** in the **Filter by** group, you'll get a list of 60 templates to choose from. If you're looking for Dataverse templates that include email, you can type **email** in the **Searrch by keywords** list. This will reduce the list to 19 templates.
-
-We've removed the **Templates** option on the left and replaced it with this experience so that you don't need to go through hundreds of templates to find what you want.
 
 ## Build your flow
 
 If you choose to build your own flow instead of starting with a template, Power Automate will guide you in selecting your triggers, actions, and connectors.
 
-:::image type="content" source="media/create-experience-preview/connectors.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
+:::image type="content" source="media/create-experience-preview/connectors.png" alt-text="Screenshot of the building your flow with triggers, actions, and connectors.":::
+
+To learn more about creating a cloud flow, go to [Create a cloud flow in Power Automate](get-started-logic-flow.md). To learn more about triggers, go to [Get started with triggers](triggers-introduction.md). For an overview of connectors, go to [Connectors overview](/connectors/connectors).
+
+
 
 ## New flow menu options
 
