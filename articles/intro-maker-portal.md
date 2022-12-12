@@ -76,7 +76,7 @@ To learn how to build your own flow, go to [Create a cloud flow from scratch](ge
 
 ## New flow menu options
 
-If you're already working in the **My flows** screen, you can stay where you are and crete a new template from the **New flows** menu. You can start with a template or build your own automation with the same interface used on the home screen. The menu also gives you the option to create a desktop flow, or a flow that uses a description of what you want to automate in everyday language.
+If you're already working in the **My flows** screen, you can stay where you are and create a new template from the **New flows** menu. You can start with a template, or build your own automation with the same interface used on the home screen. The menu also gives you the option to create a desktop flow, or a flow that uses a description of what you want to automate in everyday language.
 
 :::image type="content" source="media/create-experience-preview/my-flows.png" alt-text="Screenshot of the options in the New flow menu in the My flows screen.":::
 
