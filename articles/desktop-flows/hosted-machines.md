@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/29/2022
+ms.date: 12/12/2022
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
