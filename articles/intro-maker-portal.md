@@ -36,7 +36,7 @@ We've redesigned the Power Automate interface so that you can quickly and easily
 > - This preview experience is in the process of being rolled out, and might not be available in your region yet.
 > - We'll soon update the Power Automate documentation to reflect the new experience.
 
-The new changes will allow you to:
+The changes will allow you to:
 
 - Start creating a flow directly on the Power Automate home page.
 
@@ -54,17 +54,17 @@ You can start creating a flow as soon as you sign in to Power Automate by select
 
 You can then choose your path for creating a flow. Your two choices are to start with a template to find prebuilt flows, or build your own custom automation.
 
-:::image type="content" source="media/create-experience-preview/choose-path.png" alt-text="Screenshot of the two paths, which are start with a template4 or build your own.":::
+:::image type="content" source="media/create-experience-preview/choose-path.png" alt-text="Screenshot of the two paths, which are start with a template or build your own.":::
 
-## Choose a template
+## Start with a template
 
-Power Automate makes intelligent choices to find the prebuilt templates that align best with your needs. It does this by filtering out the templates that won't work for you, leaving you with only the templates that are relevant. You can set filters to show as many selections as you want, or search for templates using keywords.
+Power Automate makes intelligent choices to find the prebuilt templates that align best with your needs. It does this by filtering out the templates that won't work for you, leaving you with only the templates that might meet your business goals. You can set filters to show as many selections as you want, and search for templates using keywords.
 
 :::image type="content" source="media/create-experience-preview/filter-by.png" alt-text="Screenshot of choosing filters and using keywords.":::
 
 For example, if you select **Microsoft Dataverse** in the **Filter by** group, you'll get a list of 60 templates to choose from. If you're looking for Dataverse templates that include email, you can type **email** in the **Searrch by keywords** list. This will reduce the list to 19 templates.
 
-## Build your flow
+## Build your own
 
 If you choose to build your own flow instead of starting with a template, Power Automate will guide you in selecting your triggers, actions, and connectors.
 
@@ -74,7 +74,10 @@ To learn more about creating a cloud flow, go to [Create a cloud flow in Power A
 
 ## New flow menu options
 
-If you're already working in the **My flows** screen, you can stay where you are and crete a new template from the **New flows** menu. The menu also gives you the option to start a desktop flow or a flow that uses AI Builder.
+If you're already working in the **My flows** screen, you can stay where you are and crete a new template from the **New flows** menu. You can start with a template or build your own automation with the same interface used on the home screen. The menu also gives you the option to start a desktop flow or a flow that uses AI Builder.
 
 :::image type="content" source="media/create-experience-preview/my-flows.png" alt-text="Screenshot of the options in the New flow menu in the My flows screen.":::
 
+## See also
+
+[Overview of cloud flows](overview-cloud.md)
