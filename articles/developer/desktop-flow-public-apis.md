@@ -250,7 +250,7 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
 }
 ```
 
-The inputs of the script are viewable in the run details page on the power automate portal (in Preview).
+The inputs of the script are viewable in the run details page on the Power Automate portal (in Preview).
 
 > [!WARNING]
 > When using the API, there are some limitations to be aware of:
