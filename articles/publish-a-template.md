@@ -24,9 +24,8 @@ search.audienceType:
 Templates help people not only to create flows more easily, but also to imagine additional scenarios that would benefit from a cloud flow.
 
 >[!IMPORTANT]
-> - Don't submit a template using the procedure below, as it will be deprecated within the next few months.
-> - Any template using this procedure won't be accepted.
-> - We're redesigning the submission process for a template and you'll find the new steps here shortly.
+> - Starting December 2022, the procedure to submit a template explained in this article has been deprecated. Any new template submissions using this deprecated procedure won't be accepted.
+> - This article will be updated with the new template submission process soon.
 
 1. On the left pane, select **My flows**.
 
