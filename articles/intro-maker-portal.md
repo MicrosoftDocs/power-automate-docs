@@ -2,7 +2,7 @@
 title: New Power Automate experience (preview)
 description: Get a preview of the new Power Automate experience to work with flows and templates.
 ms.custom: ""
-ms.date: 12/14/2022
+ms.date: 01/02/2023
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
@@ -62,7 +62,9 @@ Power Automate makes intelligent choices to find the prebuilt templates that ali
 
 :::image type="content" source="media/create-experience-preview/filter-by.png" alt-text="Screenshot of choosing filters and using keywords.":::
 
-For example, if you select **Microsoft Dataverse** in the **Filter by** group, you'll get a list of 60 templates to choose from. If you're looking for Dataverse templates that include email, you can type **email** in the **Searrch by keywords** list. This will reduce the list to 19 templates.
+For example, if you select **Microsoft Dataverse** in the **Filter by** group, you'll get a list of many templates to choose from. If you're looking for Dataverse templates that include email, you can type **email** in the **Search by keywords** list.
+
+To learn more, go to [Create a cloud flow from a template](get-started-logic-template.md).
 
 ## Build your own
 
@@ -70,13 +72,15 @@ If you choose to build your own flow instead of starting with a template, Power 
 
 :::image type="content" source="media/create-experience-preview/connectors.png" alt-text="Screenshot of the building your flow with triggers, actions, and connectors.":::
 
-To learn more about creating a cloud flow, go to [Create a cloud flow in Power Automate](get-started-logic-flow.md). To learn more about triggers, go to [Get started with triggers](triggers-introduction.md). For an overview of connectors, go to [Connectors overview](/connectors/connectors).
+To learn how to build your own flow, go to [Create a cloud flow from scratch](get-started-logic-flow.md). To learn about triggers, go to [Get started with triggers](triggers-introduction.md). For an overview of connectors, go to [Connectors overview](/connectors/connectors).
 
 ## New flow menu options
 
-If you're already working in the **My flows** screen, you can stay where you are and crete a new template from the **New flows** menu. You can start with a template or build your own automation with the same interface used on the home screen. The menu also gives you the option to start a desktop flow or a flow that uses AI Builder.
+If you're already working in the **My flows** screen, you can stay where you are and crete a new template from the **New flows** menu. You can start with a template or build your own automation with the same interface used on the home screen. The menu also gives you the option to create a desktop flow, or a flow that uses a description of what you want to automate in everyday language.
 
 :::image type="content" source="media/create-experience-preview/my-flows.png" alt-text="Screenshot of the options in the New flow menu in the My flows screen.":::
+
+To learn about desktop flows, go to [Introduction to desktop flows](desktop-flows/introduction.md). To learn how to use AI to build your flow, go to [Create a cloud flow from a description (preview)](create-cloud-flow-from-description.md).
 
 ## See also
 
