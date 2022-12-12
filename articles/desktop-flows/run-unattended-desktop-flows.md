@@ -4,7 +4,7 @@ description: See how to run unattended desktop flows on your device.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/15/2022
+ms.date: 12/09/2022
 ms.author: gtrantzas
 ms.reviewer: pefelesk
 contributors:
@@ -53,7 +53,7 @@ To allow reusing Windows session:
 
 1. Select the target machine or machine group
 
-1. Select **Edit details**
+1. Select **Settings** in the Command bar
 
 1. Enable **Reuse sessions for unattended runs**
 
