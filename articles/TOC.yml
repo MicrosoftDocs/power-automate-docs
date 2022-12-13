@@ -52,10 +52,10 @@
       href: ./mobile/overview-mobile.md
     - name: Use instant flows
       items:
-      - name: Run instant flows
-        href: ./mobile/run-instant-flows.md
       - name: Overview
         href: introduction-to-button-flows.md
+      - name: Run instant flows
+        href: ./mobile/run-instant-flows.md
       - name: Create instant flows from your phone
         href: mobile-create-flow.md
       - name: Create instant flows with trigger tokens
