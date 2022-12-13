@@ -1,5 +1,5 @@
 ---
-title: Hosted machine groups (preview)
+title: Hosted machine groups
 description: See how to create and use hosted machine groups to distribute your automation workload.
 author: kenseongtan
 ms.subservice: desktop-flow
@@ -15,9 +15,8 @@ search.audienceType:
   - enduser
 ---
 
-# Hosted machine group (preview)
+# Hosted machine group
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!NOTE]
 > Hosted RPA bots have been renamed to Hosted machine groups. There will be no impact on your existing use of this feature, and the user experience will be updated automatically with a new name.
@@ -28,22 +27,34 @@ Desktop flows assigned to a hosted machine group get queued to it when triggered
 
 ## Licensing requirements
 
-To use hosted machine groups, you need one of the following licensing options:
+To use hosted machine group, you will need the following licensing option:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-ons**.
+- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate hosted RPA add-on**.
 
-    During the preview period, hosted machine groups will be available with the existing licenses to run unattended RPA. So there are no extra charges for the **Power Automate per user** or **per flow plan with attended RPA** and the **Power Automate unattended RPA add-on**. You need to assign to your environment as many add-ons as many bots you want to run in parallel in your environment.
-
-- Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trials**.
-
-    The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the unattended add-ons to the targeted environments.
-
-- Use the 90-days self-assisted premium trial.
-
-    Trial users can create up to 10 hosted machine groups and have up to two bots running in parallel in a given environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](http://make.powerautomate.com/).
-
+    You need to assign to your environment as many add-ons as many bots you want to run in parallel in your environment.
+ 
+ 
 > [!NOTE]
 > Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, you must have the Microsoft 365 – Unattended License.
+
+
+> [!IMPORTANT] 
+> To enable a smooth transition for customers using the hosted machine group feature during the preview phase, a grace period will be provided to enable customers to procure the appropriate hosted RPA add-on in order to continue using the feature. Entitlements for using the hosted machine group during the preview phase will be extended until 1st April 2023. After this date, you will need the Hosted RPA add-on to continue using the hosted machine group feature.
+> ### Licensing requirements during grace period
+>To use hosted machine groups, you need one of the following licensing options:
+>- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-ons**.
+>
+>    During the grace period, hosted machine groups will be available with the existing licenses to run unattended RPA. So there are no extra charges for the **Power Automate per user** or **per flow plan with attended RPA** and the **Power Automate unattended RPA add-on**. You need to assign to your environment as many add-ons as many bots you want to run in parallel in your environment.
+>
+>- Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trials**.
+>
+>    The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the unattended add-ons to the targeted environments.
+>    
+>- Use the 90-days self-assisted premium trial.
+>
+>    Trial users can create up to 10 hosted machine groups and have up to two bots running in parallel in a given environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](http://make.powerautomate.com/).
+
+
 
 ## Prerequisites
 
@@ -87,7 +98,7 @@ To create a hosted machine group:
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New** > **Hosted machine group (preview)**.
+1. Select **New** > **Hosted machine group**.
 
 1. In the hosted machine group creation wizard
 
@@ -376,7 +387,7 @@ The work or school accounts feature is enabled by default. System admins and env
 
 1. Select **Settings** > **Features**.
 
-1. Under **Hosted RPA (preview)**, select the toggle for **Enable work or school accounts for hosted machine groups (preview)** to disable or enable this feature.
+1. Under **Hosted RPA**, select the toggle for **Enable work or school accounts for hosted machine groups** to disable or enable this feature.
 
 1. Select **Save**.
 
@@ -421,12 +432,6 @@ Hosted machine groups aren't yet available in sovereign clouds and aren't yet av
 - United Arab Emirates
 - Korea
 
-### Setup desktop flows connections for hosted machine groups
-
-Hosted machine groups can be accessed only with local Windows accounts. Active Directory and Azure Active Directory accounts aren't supported yet.
-
-> [!NOTE]
-> When creating hosted machine groups, you're asked to provide credentials for a local account. You can use this account to setup connections targeting the hosted machine group.
 
 ### Network limitations for hosted machine groups
 
@@ -436,13 +441,13 @@ Hosted machine groups don't have access to on-premises data sources or other on-
 
 Remote desktop to hosted machine groups isn't supported. Hosted machine groups are meant to be used for unattended runs only, and remote desktop access from the Internet isn't required to run Power Automate desktop flows.
 
-### Limit on the number of hosted machine groups per environment during public preview
+### Limit on the number of hosted machine groups per environment
 
-During the public preview, the number of bot hosted machine groups is limited to 10 for each environment. If you reach this limit, delete an existing hosted machine group to create a new one.
+The number of bot hosted machine groups is limited to 10 for each environment. If you reach this limit, delete an existing hosted machine group to create a new one.
 
 ### Delete unused resources
 
-During the public preview, we delete unused resources to ensure the service is available for everyone. Therefore, all hosted machine groups that are inactive for more than 28 days are automatically deleted. The deleted groups remain visible, but they can't be used. An inactive group is a group that hasn't run any desktop flows for the last 28 days.
+We delete unused resources to ensure the service is available for everyone. Therefore, all hosted machine groups that are inactive for more than 28 days are automatically deleted. The deleted groups remain visible, but they can't be used. An inactive group is a group that hasn't run any desktop flows for the last 28 days.
 
 > [!NOTE]
 > You must delete the hosted machine group and create a new one to continue using its features. You'll need to reconfigure the connection that's associated with your cloud flow.
