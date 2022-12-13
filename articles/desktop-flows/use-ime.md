@@ -28,9 +28,10 @@ search.audienceType:
 # Use Input Method Editors (IMEs) in UI flows
 
 >[!IMPORTANT]
->This section covers topics to develop automations using legacy systems:
-> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
-> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
+>
+> - From February 28 2022, Selenium IDE will no longer be supported.
+> - Since November 30 2021, Windows recorder (V1) no longer works.
+> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
 
 You can use the **Add static text** feature to record text input, in any language, using IMEs or regular keyboards in your UI flows. Use **Add static text** if you want the automation to insert the same text each time your UI flow runs. 
 

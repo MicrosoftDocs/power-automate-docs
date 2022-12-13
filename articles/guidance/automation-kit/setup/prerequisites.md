@@ -48,12 +48,14 @@ Azure Key Vaults are used to store secrets for the Azure app registration mentio
 
    Azure Key Vault must have **Get** secret access policy set for the Dataverse service principal.
 
-1. Select **Add Access Policy**.
-1. In the **Secret permissions** dropdown select **Get**.
-1. Next to **Select principal**, select **None selected**, and then search for **Dataverse**.
-1. Select the Dataverse service principal with the **00000007-0000-0000-c000-000000000000** identity.
-1. Select **Add**.
-1. Select **Save**.
+1. Select **Access policies**
+2. Select **Create**.
+3. Under **Secret permissions** select **Get** and click **Next**.
+4. In the service principal search blank, search for **Dataverse**.
+5. Select the Dataverse service principal with the **00000007-0000-0000-c000-000000000000** identity.
+6. Click **Next**.
+7. Click **Next**.
+8. Click **Create**.
 
 ## License requirements
 

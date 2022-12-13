@@ -1,14 +1,13 @@
 ---
 title: Manage desktop flows
-description: Learn how to manage desktop flows.
-author: msftman
-manager: kvivek
+description: Learn how to manage desktop flows in the Power Automate portal.
+author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/30/2022
-ms.author: DeonHe
+ms.date: 12/07/2022
+ms.author: gtrantzas
+ms.reviewer: marleon
 contributor:
-- georgiostrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -18,104 +17,119 @@ search.audienceType:
 
 # Manage desktop flows
 
-After you've created desktop flows, you might need to view, edit, or just check on their status. To do this, go to the **Desktop flows** tab.
+After creating desktop flows, you might need to view, edit, or check their status. To achieve all these tasks, go to **My flows** > **Desktop flows** in the Power Automate portal.
 
-## List of desktop flows
+## See a list with desktop flows
 
-1. Sign into Power Automate.
-1. Select **My flows** > **Desktop flows**.
+1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com).
 
-   ![Screenshot of all desktop flows.](media/manage-desktop-flows/view-all.png "View all desktop flows")
+1. Go to **My flows** > **Desktop flows**.
 
-From this section, you can create a new desktop flow and then edit or delete your existing desktop flows.
+   Using the available options in this tab, you can create new desktop flows and edit or delete existing desktop flows.
+
+   :::image type="content" source="media/manage-desktop-flows/view-all.png" alt-text="Screenshot of the list with all desktop flows.":::
 
 > [!NOTE]
-> If you choose to delete or rename a desktop flow, press the refresh button in Power Automate to reflect the changes in the flows list.
+> If you delete or rename a desktop flow, select the refresh button to reflect the changes in the desktop flows list.
 
-## Details page
+## See details of desktop flows
 
-For each of your desktop flows, you can see its details by selecting its name from the list of desktop flows. You then see details including:
+For each of your desktop flows, you can see its details by selecting its name from the list of desktop flows. You can see various details including:
 
 - The run history with details of each run.
 - The applications or websites used in the desktop flow.
 
 Follow these steps to see the details for a desktop flow:
 
-1. Sign into Power Automate.
-1. Select **My flows** > **Desktop flows**.
+1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com).
+1. Go to **My flows** > **Desktop flows**.
 1. Select any of your desktop flows.
 
-    ![Screenshot of the details of a desktop flow.](media/manage-desktop-flows/view-details.png "View details")
+:::image type="content" source="media/manage-desktop-flows/view-details.png" alt-text="Screenshot of the details of a desktop flow.":::
 
 ## Share desktop flows
 
 You can share a desktop flow with other users in your organization, giving those users specific permissions to access your flows.
 
-Follow these steps to share a desktop flow.
+Follow these steps to share a desktop flow:
 
-1. Sign into [Power Automate](https://powerautomate.microsoft.com).
-1. Select **My flows** from the left side of the screen.
-1. Select **Desktop flows**.
-1. Select any flow that you own.
+1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com).
+1. Go to **My flows** > **Desktop flows**.
+1. Select the desktop flow you want to share.
 
-   ![Screenshot of the a selected flow to share.](media/manage-desktop-flows/select-one.png)
+   :::image type="content" source="media/manage-desktop-flows/select-one.png" alt-text="Screenshot of a selected flow to share.":::
 
 1. Select **Share**.
-1. Select the **Add people** field, and then enter the name of the person in your organization with whom you'd like to share the flow.
+1. Select **Add people**, and then enter the name of the person in your organization with whom you'd like to share the desktop flow.
 1. Select **Give access**, and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
-1. Select the **Share** button.
 
-   ![Screenshot of the Share button.](media/manage-desktop-flows/sharing-ux.png)
+    - **Co-owner**: This access level gives the co-owner full permissions to the desktop flow. They can edit, share, and delete the desktop flow.
+    - **User**: This access level gives permission to only use that desktop flow in a cloud flow. No edit, rename, delete or share permissions are possible with this access. Alternatively, those users can create a copy of the desktop flow using the **Save as** option, and work independently.
 
-These are the two permission levels you can use when you share desktop flows:
+1. Select **Share**.
 
-1. **Co-owner**: This access level gives the co-owner full permissions to that desktop flow. They can edit, share, and delete the flow.
-
-1. **User**: Has permission to only use that desktop flow in a cloud flow. No edit, rename, delete or share permissions are possible with this access. Alternatively, those users can create a copy of that desktop flow by using ‘Save as’, and work independently.
-
-Once a desktop flow has been shared, owners and co-owners can change the access of each user by selecting the **Manage access** link on the desktop flow details page.
+   :::image type="content" source="media/manage-desktop-flows/sharing-ux.png" alt-text="Screenshot of the Share button.":::
 
 > [!NOTE]
-> If someone shares a desktop flow with you, press the refresh button in Power Automate to see it in the **Shared with me** flows list.
+>
+> Once a desktop flow has been shared, owners and co-owners can change the access of each user by selecting **Manage access** on the desktop flow details page.
+> If someone shares a desktop flow with you, select the refresh button to see it in the **Shared with me** flows list.
+
+## Reassign desktop flows
+
+To reassign a desktop flow to another user:
+
+1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com).
+1. Go to **Data** > **Tables**.
+1. Go to the **All** tab, and then search for the **Process** table.
+
+    :::image type="content" source="media/manage-desktop-flows/manage-desktop-flows-process-table.png" alt-text="Screenshot of the Process table in the All tab":::
+
+1. Select **Edit**.
+1. Select your desktop flow in the list, and then select **Edit row using form**.
+
+    :::image type="content" source="media/manage-desktop-flows/manage-desktop-flows-edit-row-using-form.png" alt-text="Screenshot of the Edit row using form button.":::
+
+1. Select **Assign**, and then confirm the changes.
 
 ## Copy desktop flows
 
-To duplicate an existing flow:
+To duplicate an existing desktop flow:
 
-1. Sign into [Power Automate](https://powerautomate.microsoft.com).
-1. Select **My flows** from the left side of the screen.
-1. Select **Desktop flows**.
-1. Select the flow that you want to copy.
+1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com).
+1. Go to **My flows** > **Desktop flows**.
+1. Select the flow you want to copy.
 1. Select **Save As**.
 
-   ![Screenshot of the Save As button.](media/manage-desktop-flows/manage-desktop-flows-copy.png)
+    :::image type="content" source="media/manage-desktop-flows/manage-desktop-flows-copy.png" alt-text="Screenshot of the Save As button.":::
 
-1. Populate a name for the new flow.
+1. Enter a name for the new desktop flow.
 1. Select **Save**.
 
-   ![Screenshot of the field to populate the name of the new flow.](media/manage-desktop-flows/create-copy-of-this-flow.png)
+   :::image type="content" source="media/manage-desktop-flows/create-copy-of-this-flow.png" alt-text="Screenshot of the field to enter the name of the new desktop flow.":::
 
 ## Manage desktop flows access
 
-For each of your desktop flows, you can manage its access by selecting manage access in the desktop flows details page.
-   ![Screenshot of the Manage access option.](media/manage-desktop-flows/manage-access.png)
+For each of your desktop flows, you can manage its access by selecting **Manage access** in the desktop flows details page.
 
-In this panel, you can:
+:::image type="content" source="media/manage-desktop-flows/manage-access.png" alt-text="Screenshot of the Manage access option.":::
 
-- Share the desktop flow with another user
-- Edit users' permissions
-- Remove users' permissions for this flow
+In this page, you can:
 
->[!NOTE]
+- Share the desktop flow with another user.
+- Edit users' permissions.
+- Remove users' permissions for this desktop flow.
+
+> [!NOTE]
 >
 > - Users of an environment with a Dataverse security role that provides them **Read** access to all the records of the **Process** Dataverse table are co-owners of all desktop flows created in this environment and can't be removed.
 > - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
-## More information
+## Learn more
 
-- Create [desktop flows](create-flow.md).
-- Run [desktop flows](run-desktop-flow.md).
-- Create [Windows recorder (V1) flows](create-desktop.md).
-- Create [Selenium IDE flows](create-web.md).
+- [Create desktop flows](create-flow.md).
+- [Trigger desktop flows from cloud flows](trigger-desktop-flows.md).
+- [Monitor desktop flow runs](monitor-desktop-flow-runs.md).
+- [Desktop flow activity](desktop-flow-activity.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
