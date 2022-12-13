@@ -25,6 +25,13 @@ Hosted machine groups allow you to run unattended automation at scale without pr
 
 Desktop flows assigned to a hosted machine group get queued to it when triggered to run. Then, like for any machine group, the next desktop flow in the queue runs when a bot in the group is available. To find more information about queues, go to [Monitor desktop flow queues](monitor-desktop-flow-queues.md).
 
+Here are some of the key features of hosted machine group:
+- Run unattended desktop flows at scale
+- Auto-scale the number of bots in your hosted machine group based on current workloads
+- Load balance bots across all hosted machine groups in an environment
+- Work or school account integration (preview): Enables access to resources that are part of the business plan linked to your organization, such as Office, Sharepoint, and Azure.
+- Vanilla or Custom VM images: Use a vanilla VM image provided by Microsoft or personalize your hosted machine group by providing your own Windows image directly from your Azure Compute Gallery.
+
 ## Licensing requirements
 
 To use hosted machine group, you will need the following licensing option:
@@ -323,9 +330,15 @@ After a few minutes, another bot is provisioned to run a third flow as the queue
 
 ## Load balance hosted machine group
 
+The number of hosted bots that can run in your environment is equal to the number of hosted RPA add-on you have assigned to your environment. This capacity is then load balanced across all  hosted machine groups you have in your environment. Each hosted machine group has a max bot configuration that enables you to set the maximum number of hosted bots that can be allocated to the hosted machine group.
+
+The hosted machine group will request to scale-out when there are insufficient hosted bots to run desktop flows, subject to the max bot configuration in the hosted machine group, and available capacity in the environment. The hosted machine group will scale-in when there are no desktop flows allocated to an available hosted bot. This capacity then becomes available to other hosted machine group in the environment.
+
 One key feature of hosted machine groups is the ability to reassign them to different groups and hence be able to balance your automation resources seamlessly between your different workloads.
 
 For instance, you may have two groups of bots, one for your sales automations and one for finance, in the same environment with 10 bots assigned. You can add more to one of the groups at any time by editing the hosted machine group and using the max number of available bots.
+
+
 
 1. Sign in to [Power Automate](http://powerautomate.com/).
 
