@@ -333,24 +333,44 @@
       href: ./desktop-flows/install-silently.md
     - name: Install Power Automate browser extensions
       href: ./desktop-flows/install-browser-extensions.md
+    - name: Migration to Manifest V3 (browser extensions)
+      href: ./desktop-flows/manifest.md
     - name: Create a Dataverse database
       href: ./desktop-flows/create-database.md
     - name: Governance
       href: ./desktop-flows/governance.md     
     - name: Data collection
-      href: ./desktop-flows/diagnostic-data.md      
-  - name: Get started with a Microsoft account
-    href: ./desktop-flows/getting-started-msa.md
-  - name: Get started with a work or school account
-    href: ./desktop-flows/getting-started-freeorg.md
-  - name: Get started with an organization premium account
-    href: ./desktop-flows/getting-started-org.md
-  - name: Create a desktop flow
+      href: ./desktop-flows/diagnostic-data.md 
+  - name: Get started with desktop flows
+    items:      
+    - name: Get started with a Microsoft account
+      href: ./desktop-flows/getting-started-msa.md
+    - name: Get started with a work or school account
+      href: ./desktop-flows/getting-started-freeorg.md
+    - name: Get started with an organization premium account
+      href: ./desktop-flows/getting-started-org.md
+  - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
   - name: Run desktop flows
-    href: ./desktop-flows/run-pad-flow.md
-  - name: Trigger desktop flows from cloud flows
-    href: ./desktop-flows/link-pad-flow-portal.md
+    items:
+    - name: Run unattended and attended desktop flows from the cloud
+      items:
+      - name: Trigger desktop flows from cloud flows
+        href: ./desktop-flows/trigger-desktop-flows.md
+      - name: Run unattended desktop flows
+        href: ./desktop-flows/run-unattended-desktop-flows.md
+      - name: Run desktop flows sequentially
+        href: ./desktop-flows/run-desktop-flows-sequentially.md
+      - name: Run desktop flows concurrently
+        href: ./desktop-flows/run-desktop-flows-concurrently.md
+      - name: Best practices
+        href: ./desktop-flows/run-desktop-flows-best-practices.md
+    - name: Run attended desktop flows locally
+      items:
+      - name: Run desktop flows via URL or desktop shortcuts
+        href: ./desktop-flows/run-desktop-flows-url-shortcuts.md
+      - name: Runtime notifications
+        href: ./desktop-flows/runtime-notifications.md
   - name: Manage machines and machine groups
     items:
     - name: Manage machines
@@ -361,8 +381,10 @@
       href: ./desktop-flows/manage-machine-groups.md
     - name: Create desktop flow connections
       href: ./desktop-flows/desktop-flow-connections.md
-    - name: Hosted RPA bots (preview)
-      href: ./desktop-flows/hosted-rpa-bots.md
+    - name: Hosted machines (preview)
+      href: ./desktop-flows/hosted-machines.md
+    - name: Hosted machine groups (preview)
+      href: ./desktop-flows/hosted-machine-groups.md
     - name: Scale with AVD starter kit
       items:
       - name: Overview
@@ -569,7 +591,7 @@
       href: ./desktop-flows/actions-reference/database.md
     - name: Email
       href: ./desktop-flows/actions-reference/email.md
-    - name: Exchange
+    - name: Exchange Server
       href: ./desktop-flows/actions-reference/exchange.md
     - name: Outlook
       href: ./desktop-flows/actions-reference/outlook.md
@@ -668,8 +690,6 @@
       href: process-mining-processes-and-data.md
     - name: Transform and map data
       href: process-mining-transform.md
-    - name: Troubleshoot issues
-      href: process-mining-troubleshoot.md
     - name: Visualize and gain insights from processes
       href: process-mining-visualize.md
     - name: Customize a report with your own Power BI workspace
@@ -845,6 +865,8 @@
   - name: Glossary
     href: process-advisor-glossary.md
     displayName: Process advisor glossary
+  - name: Troubleshoot issues
+    href: process-mining-troubleshoot.md  
 - name: Connect to data
   items:
   - name: Available connections
@@ -873,7 +895,7 @@
     href: ./developer/dev-enterprise-intro.md
   - name: Start to build with Power Automate
     href: get-started-flow-dev.md
-  - name: Work with desktop flows using code
+  - name: Work with desktop flows using APIs
     href: ./developer/desktop-flow-public-apis.md
   - name: Build and certify custom connectors
     href: ./developer/register-custom-api.md

@@ -4,7 +4,7 @@ description: See the prerequisites and limitations of Power Automate for desktop
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/07/2022
+ms.date: 12/01/2022
 ms.author: gtrantzas
 ms.reviewer: pefelesk
 contributors:
@@ -16,6 +16,12 @@ search.audienceType:
 ---
 
 # Prerequisites and limitations
+
+> [!IMPORTANT]
+>
+> - From February 28 2022, Selenium IDE will no longer be supported.
+> - Since November 30 2021, Windows recorder (V1) no longer works.
+> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
 
 This article presents all the prerequisites and limitations you should consider before installing and using Power Automate on your desktop.
 

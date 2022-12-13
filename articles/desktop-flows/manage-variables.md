@@ -63,7 +63,7 @@ Power Automate enables data exchange between cloud and desktop flows through the
 
 Additionally, you can use input variables to set values manually when the flows are triggered through the console.
 
-To find more information regarding passing data between cloud and desktop flows, refer to [Trigger a desktop flow from another flow](link-pad-flow-portal.md).
+To find more information regarding passing data between cloud and desktop flows, refer to [Trigger desktop flows from cloud flows](trigger-desktop-flows.md).
 
 ### Create an input variable
 

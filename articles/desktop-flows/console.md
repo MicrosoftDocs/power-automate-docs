@@ -58,9 +58,9 @@ To configure Power Automate for desktop to your liking, select the **Settings** 
 
 Under the **Application** category, select whether Power Automate should launch automatically and whether closing the console will also close the application. You may also set a hotkey combination to stop running flows instantly.
 
-Using the **Monitoring/Notifications** dropdown menu, you can choose whether Power Automate will display integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, refer to [Runtime notifications](run-pad-flow.md#runtime-notifications).
+Using the **Monitoring/Notifications** dropdown menu, you can choose whether Power Automate will display integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, refer to [Runtime notifications](runtime-notifications.md).
 
-By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. The **Display confirmation dialog when invoking flows externally** option allows you to disable this functionality. You can find more information about external links in [Run desktop flows via URL or desktop shortcuts](run-pad-flow.md#run-desktop-flows-via-url-or-desktop-shortcuts).  
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. The **Display confirmation dialog when invoking flows externally** option allows you to disable this functionality. You can find more information about external links in [Run desktop flows via URL or desktop shortcuts](run-desktop-flows-url-shortcuts.md).  
 
 To decide whether Microsoft may collect diagnostic data to improve user experience, navigate to the **Data collection** settings tab.
 
@@ -71,7 +71,7 @@ To decide whether Microsoft may collect diagnostic data to improve user experien
 
 To review the details of a desktop flow, right-click on it and select **Details**. Through the **Details** pane, you can edit the name and description of the flow, as well as see the owner, the creation and last modification dates, and the flow ID.
 
-Additionally, there's a **Run URL** that you can use to run the flow through many different sources, such as browsers, the Windows Run application, and the Command Prompt. You can find more information regarding this functionality in [Run desktop flows via URL or desktop shortcuts](run-pad-flow.md#run-desktop-flows-via-url-or-desktop-shortcuts).
+Additionally, there's a **Run URL** that you can use to run the flow through many different sources, such as browsers, the Windows Run application, and the Command Prompt. You can find more information regarding this functionality in [Run desktop flows via URL or desktop shortcuts](run-desktop-flows-url-shortcuts.md).
 
 :::image type="content" source="media/console/desktop-flow-details.png" alt-text="Screenshot of the details of a desktop flow.":::
 

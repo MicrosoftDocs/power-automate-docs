@@ -52,9 +52,9 @@ The designated business owner must approve the automation project before develop
 
 The [Power BI dashboard](#automation-kit-power-bi-dashboard) contains a scatter plot of all saved or submitted automation projects, which is useful to decide which automation projects are good candidates to develop.
 
-### Project Dashboard (Home Screen)
+### Project dashboard (home screen)
 
-![This screenshot displays the home screen.](media/AutomationProjectApp1.png)
+![A screenshot that displays the home screen.](media/AutomationProjectApp1.png "A screenshot that displays the home screen.")
 
 | **Role**            | **What you see**                                          |
 |---------------------|-----------------------------------------------------------|
@@ -70,10 +70,10 @@ On this screen, you can perform the following tasks.
 - Edit an existing automation project.
 - View project details.
 
-1. Project information section - Fill out the information as it relates to the automation project.
-1. Business owner field - This is the approver for the request. If no business owner is selected, the fallback is used.
-1. ROI information section - Provide this information as it relates to ROI for the automation project.
-1. Command bar - Use for new, save, edit, and submit tasks on the form. This submit button is available after the automation project has been saved.
+1. **Project information section**: Fill out the information as it relates to the automation project.
+1. **Business owner field**: This is the approver for the request. If no business owner is selected, the fallback is used.
+1. **ROI information section**: Provide this information as it relates to ROI for the automation project.
+1. **Command bar**: Use for new, save, edit, and submit tasks on the form. This submit button is available after the automation project has been saved.
 
 Some fields are required to save the form. This is because when you submit a request, a flow (**Calculate ROI saving potential for automation project**) runs. This flow calculates the complexity score and then populates this information when you select the save button.
 
@@ -91,13 +91,13 @@ CoE admins will map automation projects to environments after the request is app
 1. Select the record you want to map.
 1. Select the **Related** tab > **Environments**.
 
-   ![This screenshot displays the steps to map a project to a an environment.](media/map-project-environment.png)
+   ![A screenshot that displays the steps to map a project to an environment.](media/map-project-environment.png "A screenshot that displays the steps to map a project to an environment.")
 
 1. Select **Add Existing Environments**.
 1. Select the environment you want to use, or create a new one.
 1. Select **Add** > **"Save & Close"**.
 
-![This screenshot displays the steps to save the mapping.](media/save-mapping.png)
+![A screenshot that displays the steps to save the mapping.](media/save-mapping.png "A screenshot that displays the steps to save the mapping.")
 
 ## Automation Solution Manager app
 
@@ -111,13 +111,13 @@ Data syncs from the satellite environment to the main environment using real-tim
 
 After you create a solution in an environment, it appears in the list. The **+** icon displays when metering is turned off for a solution.
 
-![This screenshot displays the plus icon that indicates that metering is turned off for the solution.](media/metering-off.png)
+![A screenshot that displays the plus icon that indicates that metering is turned off for the solution.](media/metering-off.png "A screenshot that displays the plus icon that indicates that metering is turned off for the solution.")
 
 1. Select the **"+"** on the solution you want to meter.
 1. In the new screen, select your automation project from the list. If it's not listed, select the **Refresh** button until it appears.
 1. Select **Submit**, and then select **Yes** on the confirmation screen that appears.
 
-   ![This screenshot displays the steps to turn on metering on a solution](media/metering-steps.png)
+   ![This screenshot displays the steps to turn on metering on a solution.](media/metering-steps.png "This screenshot displays the steps to turn on metering on a solution.")
 
 ### Rename a cloud flow to match naming convention
 
@@ -135,27 +135,19 @@ The last 3 digits will default to 001. If you have multiple solutions for a sing
 
 ### Meter solution artifacts
 
-The section defined how meter the artifacts for the Flow Sessions so that telemetry shows up in our main environment.
+This section defines how to meter the artifacts for Flow Sessions so that telemetry shows up in our main environment.
 
-1. We can get to the solution screen from the home screen by selecting the name of the mapped solution.
+We can get to the solution screen from the home screen by selecting the name of the mapped solution.
 
-1. Once selected, the **+** icon switches to a meter. Now data flows to main (flow sessions). If this option is grayed out, then the cloud flow doesn't follow the [naming schema](#turn-on-metering-for-a-solution). [Rename the cloud flow](./use-automation-kit.md#rename-a-cloud-flow-to-match-naming-convention, if needed.
+Once selected, the **+** icon switches to a meter. Now, data flows to main (flow sessions). If this option is grayed out, then the cloud flow doesn't follow the [naming schema](#turn-on-metering-for-a-solution). [Rename the cloud flow](./use-automation-kit.md#rename-a-cloud-flow-to-match-naming-convention, if needed.
 
-1. After you select the **+** icon, the meter icon appears.
-
-   Now data will be **flowing** to main (flow sessions).
-
-   ![This screenshot displays the meter icon to indicate that metering is turned on.](media/metering-on.png)
+   ![A screenshot that displays the meter icon to indicate that metering is turned on.](media/metering-on.png "A screenshot that displays the meter icon to indicate that metering is turned on.")
 
 ### Bypass Flow naming convention
 
-There is an option to bypass the naming convention.
+To bypass the naming convention, select the **Disable flow naming convention** checkbox, and acknowledge the warning. 
 
-1. To bypass the naming convention, select the “Disable flow naming convention” checkbox. Acknowledge the warning.
-
-2. Now you can meter the flow.
-
-Now you can meter the flow.
+Now, you can meter the flow.
 
 ## Automation Kit Power BI dashboard
 
@@ -163,79 +155,79 @@ You use the Automation Kit's Power BI dashboard to monitor your automation proje
 
 ### Main dashboard
 
-The main Power BI dashboard has the following sections.
+The main Power BI dashboard has the following sections:
 
-- **Home** - This screen provides an overview of key KPIs for the Automation Kit.
+- **Home**: This screen provides an overview of key KPIs for the Automation Kit.
 
-   ![A screenshot that displays the KPIs on the dashboard](media/kpi-dash.png)
+   ![A screenshot that displays the KPIs on the dashboard.](media/kpi-dash.png "A screenshot that displays the KPIs on the dashboard.")
 
-- **Project Backlog** - Provides details of the ideas and projects submitted, status, and ranks based on estimated savings and complexity.
+- **Project Backlog**: Provides details of the ideas and projects submitted, status, and ranks based on estimated savings and complexity.
 
-   ![A screenshot that displays the details of projects and their status](media/project-status.png)
+   ![A screenshot that displays the details of projects and their status.](media/project-status.png "A screenshot that displays the details of projects and their status.")
 
-- **Business KPI** - Displays business details for savings realized, efficiency, hours saved, and other business metrics.
+- **Business KPI**: Displays business details for savings realized, efficiency, hours saved, and other business metrics.
 
-   ![A screenshot that displays the business metrics](media/business-metrics.png)
+   ![A screenshot that displays the business metrics.](media/business-metrics.png "A screenshot that displays the business metrics.")
 
-- **Goals** - Outlines savings and efficiency goals for the organization, and the status by department and project.
+- **Goals**: Outlines savings and efficiency goals for the organization and the status by department and project.
 
-   ![A screenshot that displays the project goals.](media/project-goals.png)
+   ![A screenshot that displays the project goals.](media/project-goals.png "A screenshot that displays the project goals.")
 
-- **ROI** - Overall ROI for the Projects implemented.
+- **ROI**: Overall ROI for the projects implemented.
 
-   ![A screenshot that displays the savings and efficiency goals for the organization](media/efficiency-goals.png)
+   ![A screenshot that displays the savings and efficiency goals for the organization.](media/efficiency-goals.png "A screenshot that displays the savings and efficiency goals for the organization.")
 
-- **ROI Financials** - Displays information regarding ROI *actual* vs *estimate* by year, quarter, and month.
+- **ROI Financials**: Displays information regarding ROI *actual* compared to *estimate* by year, quarter, and month.
 
-   ![A screenshot that displays information regarding ROI actual vs estimate](media/roi-estimate.png)
+   ![A screenshot that displays information regarding ROI actual compared to estimate.](media/roi-estimate.png "A screenshot that displays information regarding ROI actual compared to estimate.")
 
-- **Solutions** - Provides an overview of solutions in production, hours saved, error rates, and bot success KPIs.
+- **Solutions**: Provides an overview of solutions in production, hours saved, error rates, and bot success KPIs.
 
-   ![A screenshot that displays an overview of solutions](media/solutions-overview.png)
+   ![A screenshot that displays an overview of solutions.](media/solutions-overview.png "A screenshot that displays an overview of solutions.")
 
-- **Machines** - Displays detailed information on machine utilization and activity.
+- **Machines**: Displays detailed information on machine utilization and activity.
 
-   ![A screenshot that displays the utilization for the machines.](media/machine-utilization.png)
+   ![A screenshot that displays the utilization for the machines.](media/machine-utilization.png "A screenshot that displays the utilization for the machines.")
 
-- **Flow Overview** - Summarizes the number flows created, runs, status, and top 10 makers, machines, and flows.
+- **Flow Overview**: Summarizes the number flows created, runs, status, and top 10 makers, machines, and flows.
 
-   ![A screenshot that displays the summary of flow statistics](media/stats-summary.png)
+   ![A screenshot that displays the summary of flow statistics.](media/stats-summary.png "A screenshot that displays the summary of flow statistics.")
 
-- **Flow Run Detail** - Detailed information on flow runs, durations, status, run modes, hosts, and errors.
+- **Flow Run Detail**: Detailed information on flow runs, durations, status, run modes, hosts, and errors.
 
-   ![A screenshot that displays detailed information on flow runs](media/runs-details.png)
+   ![A screenshot that displays detailed information on flow runs.](media/runs-details.png "A screenshot that displays detailed information on flow runs.")
 
-- **Run Performance** - Shows a graphical display of run performance day over day.
+- **Run Performance**: Shows a graphical display of run performance day over day.
 
-   ![A screenshot that displays a graphical display of run performance day over day](media/perf-day-day.png)
+   ![A screenshot that displays a graphical display of run performance day over day.](media/perf-day-day.png "A screenshot that displays a graphical display of run performance day over day.")
 
-- **Control Chart** - Displays an overview of flow processing time averages and operational performance within control points.
+- **Control Chart**: Displays an overview of flow processing time averages and operational performance within control points.
 
-   ![A screenshot that displays flow processing time averages and operational performance](media/time-averages.png)
+   ![A screenshot that displays flow processing time averages and operational performance.](media/time-averages.png "A screenshot that displays flow processing time averages and operational performance.")
 
-- **Flow Exceptions** – Enables you to filter by date, exception rule, cloud flow name, desktop flow name, or host name.
+- **Flow Exceptions**: Enables you to filter by date, exception rule, cloud flow name, desktop flow name, or host name.
 
-   ![A screenshot that displays a filter by date and other metrics](media/by-date-metrics.png)
+   ![A screenshot that displays a filter by date and other metrics.](media/by-date-metrics.png "A screenshot that displays a filter by date and other metrics.")
 
-- **Flow Exceptions Tree Diagram –** Displays and allows you to drill into specific flows organized by categories, including cloud flow name, desktop flow name, error code, error message, run mode, or host name.
+- **Flow Exceptions Tree Diagram**: Displays and allows you to drill into specific flows organized by categories, including cloud flow name, desktop flow name, error code, error message, run mode, or host name.
 
-   ![A screenshot that displays specific flows organized by categories](media/by-categories.png)
+   ![A screenshot that displays specific flows organized by categories.](media/by-categories.png "A screenshot that displays specific flows organized by categories.")
 
-- **Action Usage Analysis** – Includes functionality similar to the Automation Kit DLP impact analysis Power App but with added Power BI filters.
+- **Action Usage Analysis**: Includes functionality similar to the Automation Kit DLP impact analysis Power App but with added Power BI filters.
 
-   ![A screenshot that displays dlp policy items](media/dlp-policy.png)
+   ![A screenshot that displays DLP policy items.](media/dlp-policy.png "A screenshot that displays DLP policy items.")
 
-- **Action Decomposition Tree Analysis** – Tree like diagram that shows how each action module or flow relates in a tree-like diagram.
+- **Action Decomposition Tree Analysis**: Tree-like diagram that shows how each action module or flow relates.
 
-   ![A screenshot that displays the tree-like diagram](media/tree-diagram.png)
+   ![A screenshot that displays the tree-like diagram.](media/tree-diagram.png "A screenshot that displays the tree-like diagram.")
 
-- **ROI Calculations** - Contains examples on how calculations related to ROI and efficiency are determined throughout the dashboards.
+- **ROI Calculations**: Contains examples on how calculations related to ROI and efficiency are determined throughout the dashboards.
 
-   ![A screenshot that displays ROI and efficiency calculations](media/roi-calculations.png)
+   ![A screenshot that displays ROI and efficiency calculations.](media/roi-calculations.png "A screenshot that displays ROI and efficiency calculations.")
 
 ### Detail pages
 
-Every detail page consists of the following items.
+Every detail page consists of the following items:
 
 - Filters (Department, Project, Solution)
 - High-level statistics

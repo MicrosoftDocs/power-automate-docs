@@ -4,10 +4,11 @@ description: See how to install Power Automate browser extensions.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/07/2022
+ms.date: 12/06/2022
 ms.author: gtrantzas
 ms.reviewer: pefelesk
 contributors:
+- NikosMoutzourakis
 search.app: 
   - Flow 
 search.audienceType: 
@@ -27,13 +28,54 @@ When Power Automate installation is complete, the installer will prompt you to i
 
 If you skip the installation of the browser extensions, you can do it manually later using the following links or through the **Tools** > **Browser extensions** options in the flow designer.
 
-- [Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2151411)
-- [Google Chrome](https://go.microsoft.com/fwlink/?linkid=2150929)
-- [Mozilla Firefox](https://go.microsoft.com/fwlink/?linkid=2151511)
+For Power Automate for desktop v2.27 or later:
+
+- [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/microsoft-power-automate/kagpabjoboikccfdghpdlaaopmgpgfdc)
+- [Google Chrome](https://chrome.google.com/webstore/detail/microsoft-power-automate/ljglajjnnkapghbckkcmodicjhacbfhk)
+- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/microsoft-power-automate/)
+
+For Power Automate for desktop v2.26 or earlier (Legacy):
+
+- [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/microsoft-power-automate/njjljiblognghfjfpcdpdbpbfcmhgafg)
+- [Google Chrome](https://chrome.google.com/webstore/detail/microsoft-power-automate/gjgfobnenmnljakmhboildkafdkicala)
+
+### Alternative ways to install browser extensions
+
+After Power Automate for desktop version 2.27, the Google Chrome and Mozilla Firefox browser extensions are part of the installation. Find the respective web extension files in the following path: **C:\Program Files (x86)\Power Automate Desktop\BrowserExtensions**.
+
+### Google Chrome
+
+1. Go to **Chrome extensions** through the browser’s settings or enter **chrome://extensions/** in the address bar.
+
+1. Ensure that **Developer mode** is enabled.
+
+1. Select **Load unpacked**.
+
+1. Browse to the browser extension folder of your Power Automate installation.
+
+1. Select **Select folder** in the dialog.
+
+1. Select **Add**.
+
+Alternatively, you can launch Google Chrome, and drag and drop the extension file in the browser area.
+
+### Mozilla Firefox
+
+1. Go to the **Firefox Add-ons Manager** through the browser’s settings or enter **about:addons** in the address bar.
+
+1. Select the gear icon, then **Install Add-on From File…**.
+
+1. Browse to the browser extension folder of your Power Automate installation.
+
+1. Select **Open** in the dialog.
+
+1. Select **Add**.
+
+Alternatively, you can launch Mozilla Firefox, and drag and drop the extension file in the browser area.
 
 ## Configure Microsoft Edge
 
-To ensure that **Microsoft Edge** works as expected with Power Automate, disable running background apps when Microsoft Edge is closed. 
+To ensure that **Microsoft Edge** works as expected with Power Automate, disable running background apps when Microsoft Edge is closed.
 
 To disable this option, go to **Settings** > **System** and disable **Continue running background apps when Microsoft Edge is closed**.
 
@@ -63,7 +105,7 @@ To disable protected mode and allow Power Automate to clear the browser's cache 
 
     :::image type="content" source="media/install-browser-extensions/internet-explorer-internet-protected-mode.png" alt-text="Screenshot of the security tab in the Internet Explorer options":::
 
-1. Select **Apply** and **OK** to save the change and close the dialog .
+1. Select **Apply** and **OK** to save the change and close the dialog.
 
 ## Configure Internet Explorer for servers
 

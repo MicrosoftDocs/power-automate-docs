@@ -1,10 +1,10 @@
 ---
 title: Governance
-description: See how to configure Power Automate using Windows registry keys.
+description: Learn how to configure Power Automate using Windows registry keys.
 author: georgiostrantzas
 
 ms.topic: article
-ms.date: 10/05/2022
+ms.date: 12/06/2022
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -86,6 +86,21 @@ You can use the following registry entry to allow users to sign in to Power Auto
 
 - **1**: Power Automate for desktop will authenticate users using the WAM functionality.
 
+<!--
+## Allow users with invalid certificates to sign in to Power Automate for desktop
+
+You can use the following registry entry to allow users with invalid certificates to sign in to Power Automate for desktop.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop|DisableCheckCertificateRevocationList|DWORD|
+
+***Values***
+
+- **1**: Users with invalid certificates can sign in to Power Automate for desktop.
+
+-->
+
 ## Allow users to select a particular organization in Power Automate for desktop
 
 You can use the following registry entry to allow users to select the organization of their preference in Power Automate for desktop.
@@ -135,7 +150,7 @@ IT administrators, may set the following registry key, to configure the Power Au
 
 ***Value***
 
-- **ProxyAddress:Port (e.g.: myproxy.com:3128)**: The proxy server and port configured will override the proxy server and port configured in Windows.
+- **ProxyAddress:Port (e.g.: `https://myproxy.com:3128`)'**: The proxy server and port configured will override the proxy server and port configured in Windows.
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
@@ -248,6 +263,51 @@ You can use the following registry entry to disable the execution of flows conta
 ***Value***
 
 - **1**: The machine won't be able to run desktop flows containing cloud connectors. An appropriate error message will inform users about the set limitation.
+ 
+ ## Allow users to register their machine to a different tenant in Power Automate machine runtime app
+
+> [!NOTE]
+> - This registry entry applies to Power Automate desktop version 2.24 and later.
+> 
+You can use the following registry entry to allow machine registrations to tenants that are different from the machine joined AAD tenant.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration|AllowedRegistrationTenants|String|
+
+***Value***
+
+- **"AllowedRegistrationTenants": (e.g.: 3EF1D993-CBD4-4DEA-A50E-939AEDB23F21,5B19777D-814C-43F3-9317-CDBAD0846ED8)**: The tenants with the specified IDs listed, will be allowed to be used during machine registration.
+ 
+ ## Allow users to register their machine to any tenant in Power Automate machine runtime app
+
+> [!NOTE]
+> - This registry entry applies to Power Automate desktop version 2.24 and later.
+> 
+You can use the following registry entry to allow machine registrations to any tenant.
+ 
+ |Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration|AllowRegisteringOutsideOfAADJoinedTenant|DWORD|
+
+***Value***
+
+- **1**: To allow machine registration to any tenant.
+
+## Allow users to switch registration of their machine to a different tenant in Power Automate machine runtime app
+
+> [!NOTE]
+> - This registry entry applies to Power Automate desktop version 2.24 and later.
+> 
+You can use the following registry entry to allow switching of machine registration to a different tenant.
+
+ |Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration|AllowTenantSwitching|DWORD|
+
+***Value***
+
+- **1**: To allow switching machine registration to another tenant.
 
 ## Learn more
 
