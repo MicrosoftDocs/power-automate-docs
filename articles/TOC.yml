@@ -55,15 +55,15 @@
       - name: Run instant flows
         href: ./mobile/run-instant-flows.md
       - name: Overview
-        href: ./mobile/introduction-to-button-flows.md
+        href: introduction-to-button-flows.md
       - name: Create instant flows from your phone
-        href: ./mobile/mobile-create-flow.md
+        href: mobile-create-flow.md
       - name: Create instant flows with trigger tokens
-        href: ./mobile/introduction-to-button-trigger-tokens.md
+        href: introduction-to-button-trigger-tokens.md
       - name: Create instant flows with user input
-        href: ./mobile/button-flow-with-user-input-tokens.md
+        href: button-flow-with-user-input-tokens.md
       - name: Share instant flows
-        href: ./mobile/share-buttons.md
+        href: share-buttons.md
     - name: Create widgets
       href: ./mobile/widgets.md
     - name: Manage approvals
