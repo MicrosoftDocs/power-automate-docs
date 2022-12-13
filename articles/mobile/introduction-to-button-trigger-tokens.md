@@ -1,6 +1,6 @@
 ---
-title: Introduction to button trigger tokens | Microsoft Docs
-description: Introduction to button trigger tokens for Microsoft button flows.
+title: Create instant flows with trigger tokens
+description: Learn how to create instant flow trigger tokens for instant flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -8,7 +8,6 @@ author: msftman
 manager: anneta
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -23,20 +22,15 @@ search.audienceType:
   - enduser
 ms.custom: intro-internal
 ---
-# Get started with button trigger tokens
+# Create instant flows with trigger tokens
 
-Button trigger tokens are data points that are known and available to the device on which a [button flow](introduction-to-button-flows.md) is running. These tokens change based on factors such as the current time or the geographic location of the device at a given moment.
+Instant flow trigger tokens are data points that are known and available to the device on which a [button flow](introduction-to-button-flows.md) is running. These tokens change based on factors such as the current time or the geographic location of the device at a given moment.
 
-> [!NOTE]
-> You can create a button flow on your phone from the generally available version of Power Automate mobile app for iOS. You can't create a button flow from the Power Automate mobile app for iOS (preview) version.
->
-> If you're using the Power Automate mobile app for iOS (preview) version, go to [Power Automate mobile app overview](./mobile/overview-mobile.md).
-
-For example, if you are running a button flow on a smartphone, it's likely that the phone knows the time at your current location, the date, and your current address. In this context, the time, date and address where the phone is located are determined at the time the button flow runs. They are automatically available for use in any button flows that are executed on the device. You can use these trigger tokens to build useful flows that will minimize repetitive tasks such as providing your location to someone or tracking how much time you spent on a particular job/service call.
+For example, if you're running an instant flow on a smartphone, it's likely that the phone knows the time at your current location, the date, and your current address. In this context, the time, date and address where the phone is located are determined at the time the instant flow runs. They are automatically available for use in any instant flows that are executed on the device. You can use these trigger tokens to build useful flows that will minimize repetitive tasks such as providing your location to someone or tracking how much time you spent on a particular job/service call.
 
 ### List of button trigger tokens
 
-Here's the list of the button trigger tokens that are available for you to use when creating your button flows.
+Here's the list of the instant flow trigger tokens that you can use when creating your instant flows.
 
 | Parameter | Description |
 | --- | --- |

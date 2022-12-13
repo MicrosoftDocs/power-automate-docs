@@ -1,6 +1,6 @@
 ---
-title: Run repetitive tasks with instant flows | Microsoft Docs
-description: Learn how to manually trigger a flow.
+title: Instant flows overview
+description: Learn how to create an instant flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -11,7 +11,7 @@ tags: ''
 
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2022
@@ -22,7 +22,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Introducing instant flows
+# Instant flows overview
 
 There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync, or you may want to start a new Visual Studio Codespaces build of your code base after you've been notified that there are no more checkins planned for the day. Instant flows allow you to accomplish these and many other tasks simply by tapping a button on your mobile device.
 

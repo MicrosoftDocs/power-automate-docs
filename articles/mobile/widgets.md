@@ -32,12 +32,9 @@ For quick and easy access to your instant flows, create a widget. Widgets make r
 
 > [!NOTE]
 >
-> The features described in this article apply to the following apps:
-> - Power Automate mobile app for Android (generally available)
-> - Power Automate mobile app for iOS (preview)
+> - The features described in this article apply to the Power Automate mobile app for Android and the Power Automate mobile app for iOS.
 >
-> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](../introduction-to-button-flows.md).
-
+> - The screenshot in this article shows an Android device. The procedure works the same with an iOS device.
 
 If your flow requires you to enter information, the widget will open the flow in the app. The flow will continue after you fill in the information.
 

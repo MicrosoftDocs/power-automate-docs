@@ -32,11 +32,9 @@ The Power Automate mobile app allows you to receive notifications on your mobile
 
 > [!NOTE]
 >
-> The features described in this article apply to the following apps:
-> - Power Automate mobile app for Android (generally available)
-> - Power Automate mobile app for iOS (preview)
+> - The features described in this article apply to the Power Automate mobile app for Android and the Power Automate mobile app for iOS.
 >
-> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](../introduction-to-button-flows.md).
+> - The screenshots in this article show an Android device. The procedures work the same with an iOS device.
 
 The list of notifications you've received was previously called Activity Feed.
 

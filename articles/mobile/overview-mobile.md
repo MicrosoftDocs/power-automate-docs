@@ -32,11 +32,9 @@ This article provides an overview of the Microsoft Power Automate mobile app, in
 
 > [!NOTE]
 >
-> The features described in this article apply to the following apps:
-> - Power Automate mobile app for Android (generally available)
-> - Power Automate mobile app for iOS (preview)
+> - The features described in this article apply to the Power Automate mobile app for Android and the Power Automate mobile app for iOS.
 >
-> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](../introduction-to-button-flows.md).
+> - The screenshot in this article shows an Android device. The procedure works the same with an iOS device.
 
 Experience the familiar look and feel of Power Automate on the go with the Power Automate mobile app, where you can:
 
@@ -75,9 +73,7 @@ You might have different environments to work in depending on the purpose of you
 
 The Power Automate mobile app  has a few limitations:
 
-- (Android) Geofencing, or using location-based triggers, isn't supported in the mobile app for Android. This was formerly a preview feature.
-
-- (iOS) Geofencing is supported in the mobile app for iOS (preview).
+- Geofencing, or using location-based triggers, isn't supported in the mobile app.
 
 - There's no camera option to upload files with the mobile app.
 

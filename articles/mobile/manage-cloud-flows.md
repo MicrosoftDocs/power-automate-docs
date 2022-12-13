@@ -32,11 +32,9 @@ Use the Power Automate mobile app to view and run your flows, check their run hi
 
 > [!NOTE]
 >
-> The features described in this article apply to the following apps:
-> - Power Automate mobile app for Android (generally available)
-> - Power Automate mobile app for iOS (preview)
+> - The features described in this article apply to the Power Automate mobile app for Android and the Power Automate mobile app for iOS.
 >
-> To learn how to work with the Power Automate mobile app for iOS version that's generally available, go to [Introducing instant flows](../introduction-to-button-flows.md).
+> - The screenshots in this article show an Android device. The procedures work the same with an iOS device.
 
 Use the Power Automate mobile app to do the following tasks:
 
