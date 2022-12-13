@@ -52,6 +52,9 @@ After June 2023, non-enterprise users must upgrade to Power Automate for desktop
 
 ## Run JavaScript function on web page action
 
+> [!IMPORTANT]
+> Due to security limitations issued by Mozilla Firefox, you can't use the **Run JavaScript function on web page** action with an instance of it. To utilize this action, use one of the other browser options in your desktop flow.
+
 Due to limitations in the way Manifest V3 works, injecting JavaScript on a web page is impossible when Developer tools are disabled by Group Policy, making the action not functional.
 
 If you upgrade to Power Automate for desktop v2.27 or later and use the new browser extension, the **Run JavaScript function on web page** action will be functional with the use of its debugger capability.
