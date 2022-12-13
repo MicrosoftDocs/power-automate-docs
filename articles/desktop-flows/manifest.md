@@ -4,7 +4,7 @@ description: See information about the deprecation of Manifest V2 and migration 
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/1/2022
+ms.date: 12/13/2022
 ms.author: gtrantzas
 ms.reviewer: nimoutzo
 contributors:
