@@ -30,12 +30,6 @@ search.audienceType:
 
 The Power Automate mobile app allows you to receive notifications on your mobile device. You'll get a notification whenever you run a flow that uses either the Microsoft [Notifications](/connectors/flowpush/) connector or the [Approvals](/connectors/approvals/) connector. You'll also get a notification when a flow encounters a run error.
 
-> [!NOTE]
->
-> - The features described in this article apply to the Power Automate mobile app for Android and the Power Automate mobile app for iOS.
->
-> - The screenshots in this article show an Android device. The procedures work the same with an iOS device.
-
 The list of notifications you've received was previously called Activity Feed.
 
 To view all notifications that correspond to your flows, select the bell icon at the top of the screen.

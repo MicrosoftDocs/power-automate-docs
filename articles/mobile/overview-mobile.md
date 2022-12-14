@@ -30,12 +30,6 @@ search.audienceType:
 
 This article provides an overview of the Microsoft Power Automate mobile app, including installation, changing environments, and limitations of the app.
 
-> [!NOTE]
->
-> - The features described in this article apply to the Power Automate mobile app for Android and the Power Automate mobile app for iOS.
->
-> - The screenshot in this article shows an Android device. The procedure works the same with an iOS device.
-
 Experience the familiar look and feel of Power Automate on the go with the Power Automate mobile app, where you can:
 
 - [Run instant flows](run-instant-flows.md)

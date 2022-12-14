@@ -30,12 +30,6 @@ search.audienceType:
 
 Use the Power Automate mobile app to view and run your flows, check their run history, turn them on and off, or delete them. You can manage your flows when you're away from your computer whether they're solution-aware or non-solution&ndash;aware. [Learn about solution-aware flows](../overview-solution-flows.md).
 
-> [!NOTE]
->
-> - The features described in this article apply to the Power Automate mobile app for Android and the Power Automate mobile app for iOS.
->
-> - The screenshots in this article show an Android device. The procedures work the same with an iOS device.
-
 Use the Power Automate mobile app to do the following tasks:
 
 - View, edit, and run your flows.

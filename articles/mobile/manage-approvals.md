@@ -30,12 +30,6 @@ search.audienceType:
 
 Manage your approval requests on your mobile device when you're away from your desk.
 
-> [!NOTE]
->
-> - The features described in this article apply to the Power Automate mobile app for Android and the Power Automate mobile app for iOS.
->
-> - The screenshots in this article show an Android device. The procedures work the same with an iOS device.
-
 You can quickly approve or reject approval requests in the Power Automate mobile app, right from the **Approvals** screen.
 
 1. In the Power Automate mobile app, select **Approvals**, and then select the arrow to expand a request.
