@@ -38,7 +38,7 @@ We've redesigned the Power Automate interface so that you can quickly and easily
 
 The changes will allow you to:
 
-- Start creating a flow directly on the Power Automate home page.
+- Start creating a flow directly on the Power Automate **Home** page and **Create** page.” .
 
 - Receive guided instruction for building your flow.
 
@@ -48,7 +48,7 @@ The changes will allow you to:
 
 ## Create a flow
 
-You can start creating a flow as soon as you sign in to Power Automate by selecting **Create** at the top of the screen.
+You can start creating a flow as soon as you sign in to Power Automate by selecting **Create** at the top of the **Home** page.
 
 :::image type="content" source="media/create-experience-preview/create-button.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
 
