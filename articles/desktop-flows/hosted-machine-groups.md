@@ -4,7 +4,7 @@ description: See how to create and use hosted machine groups to distribute your 
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 12/14/2022
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
@@ -41,9 +41,6 @@ To use hosted machine groups, you need one of the following licensing options:
 - Use the 90-days self-assisted premium trial.
 
     Trial users can create up to 10 hosted machine groups and have up to two bots running in parallel in a given environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](http://make.powerautomate.com/).
-
-> [!NOTE]
-> Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, you must have the Microsoft 365 – Unattended License.
 
 ## Prerequisites
 
@@ -104,7 +101,10 @@ To create a hosted machine group:
 
     - Select the VM image to use for your hosted machines. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
-    - Provide the local admin account you want to be created. This account will be used to run your automations by the bots.
+    - Select how you would like to access your hosted machine group. You can use your [work or school account (preview)](#use-your-work-or-school-account-preview) or use a local admin account you want to be created. This account will be used to run your automations by the bots.
+    
+     > [!NOTE]
+     > If you select work or school account, enter your email address (and not domain\username) when creating a connection to the hosted machine group.
 
     - Review and create your hosted machine group.
 
