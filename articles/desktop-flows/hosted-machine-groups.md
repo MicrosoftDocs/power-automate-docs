@@ -4,7 +4,7 @@ description: See how to create and use hosted machine groups to distribute your 
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 12/14/2022
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
