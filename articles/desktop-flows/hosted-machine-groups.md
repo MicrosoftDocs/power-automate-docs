@@ -43,11 +43,11 @@ To use hosted machine group, you need the following licensing option:
 > [!NOTE]
 > Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, you must have the Microsoft 365 – Unattended License.
 
-> [!IMPORTANT]
-> To enable a smooth transition for customers using the hosted machine group feature during the preview phase, a grace period will be provided to enable customers to procure the appropriate hosted RPA add-on in order to continue using the feature. Entitlements for using the hosted machine group during the preview phase will be extended until 1 April 2023. After this date, you'll need the hosted RPA add-on to continue using the hosted machine group feature.
 
 ### Licensing requirements during grace period
-
+> [!IMPORTANT]
+> To enable a smooth transition for customers using the hosted machine group feature during the preview phase, a grace period will be provided to enable customers to procure the appropriate hosted RPA add-on in order to continue using the feature. Entitlements for using the hosted machine group during the preview phase will be extended until 1 April 2023. After this date, you'll need the hosted RPA add-on to continue using the hosted machine group feature.
+> 
 To use hosted machine groups, you need one of the following licensing options:
 
 - Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-ons**.
