@@ -1,6 +1,6 @@
 ---
 title: Power Automate mobile app overview
-description: Get an overview of the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS (preview), including installation, changing environments, and limitations of the app.
+description: Get an overview of the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS, including installation, changing environments, and limitations of the app.
 services: ''
 suite: flow
 documentationcenter: na
@@ -50,7 +50,7 @@ Experience the familiar look and feel of Power Automate on the go with the Power
 
 If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.md). Then scan one of the QR codes below with your mobile device. As an alternative, you can use the **Google Play** link or the **App store** link to install the Power Automate mobile app.
 
-| Android | iOS (preview)  |
+| Android | iOS  |
 | :---:   | :---:  |
 | :::image type="content" source="../media/android/google-play.png" alt-text="Screenshot of the Download the Power Automate mobile app for Android from Google Play button.":::  | :::image type="content" source="../media/android/app-store.png" alt-text="Screenshot of the Download the Power Automate mobile app for iOS from the Apple App store button."::: |
 | :::image type="content" source="../media/android/android-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for Android QR code.":::  | :::image type="content" source="../media/android/ios-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for iOS QR code.":::    |

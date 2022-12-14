@@ -1,6 +1,6 @@
 ---
 title: Run instant flows in the Power Automate mobile app
-description: Learn how to run an instant flow in the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS (preview).
+description: Learn how to run an instant flow in the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS.
 services: ''
 suite: flow
 documentationcenter: na

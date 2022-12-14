@@ -1,6 +1,6 @@
 ---
 title: Manage approvals in the Power Automate mobile app
-description: Learn how to view, approve, and reject requests in the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS (preview).
+description: Learn how to view, approve, and reject requests in the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS.
 services: ''
 suite: flow
 documentationcenter: na

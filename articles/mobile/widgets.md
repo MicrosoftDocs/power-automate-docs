@@ -1,6 +1,6 @@
 ---
 title: Create widgets in the Power Automate mobile app for Android
-description: Learn how to create a widget in the Microsoft Power Automate mobile app for Android.
+description: Learn how to create a widget in the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS.
 services: ''
 suite: flow
 documentationcenter: na
