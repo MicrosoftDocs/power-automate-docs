@@ -98,7 +98,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 
 The maintenance mode enables you to stop all the desktop flow runs on machine(s) or machine group(s). This feature is useful when you need to do installations or deployments on machines and avoid run failures.
 
-To use this maintenance mode:
+To use the maintenance mode:
 
 1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com/).
 
@@ -108,9 +108,16 @@ To use this maintenance mode:
 
 1. Turn on the toggle for **Enable maintenance mode**.
 
-1. Select Activate in the dialog.
+1. Select **Activate** in the dialog.
 
-:::image type="content" source="./media/manage-machines/enable-maintenance-mode.png" alt-text="Screenshot of the MEnable maintenance mode option.":::
+All the machines that are in maintenance mode are indicated with a red pictogram in the list of machines.
+
+> [!NOTE]
+>
+> - If a machine group is in maintenance mode, all the machines of the group are in maintenance mode and you can't change them individually.
+> - When machines require some specific actions (such as key rotation), maintenance mode is disabled.
+> - If a desktop flow is currently running on your machine when the maintenance mode is enabled, the run won't be canceled.
+> - When a machine is in maintenance mode, no new run is assigned to this machine. If the machine is standalone, the desktop flow run will be put in the run queue. If the machine is part of machine group, the desktop flow will be assigned to an active machine. Timeout remains the same by default.
 
 ## View list of machines
 
@@ -120,7 +127,7 @@ Once you've registered a machine to an environment, you can view its details at 
 
 1. Go to **Monitor** > **Machines**.
 
-1. Within the list, for each machine you can view:
+1. Select the desired machine. For each machine you can view:
 
     - The name of the machine.
     - The description of the machine.
@@ -151,9 +158,9 @@ You can share a machine with other users in your organization and give those use
 
     There are two levels of permissions that you can assign when managing access to your machine:
 
-    1. **Co-owner**. This access level gives full permissions to that machine. Co-owners can run desktop flows on the machine, share it with others, edit its details, and delete it.
+    - **Co-owner**. This access level gives full permissions to that machine. Co-owners can run desktop flows on the machine, share it with others, edit its details, and delete it.
 
-    1. **User**. This access level only gives permission to run desktop flows on the machine. No edit, share, or delete permissions are possible with this access.
+    - **User**. This access level only gives permission to run desktop flows on the machine. No edit, share, or delete permissions are possible with this access.
 
     |Actions|Co-owner|User|
     |---|---|---|
@@ -209,7 +216,7 @@ You can also change the connections used by a cloud flow in its details page whe
 
 By default, all users with an **Environment Maker** role can register their machines in an environment. You can restrict actions on machines and machine groups by modifying the **Flow Machine** and **Flow Machine Group** permissions for a particular security role.
 
-  :::image type="content" source="./media/manage-machines/permissions-roles.png" alt-text="Screenshot of the permissions based on security role.":::
+:::image type="content" source="./media/manage-machines/permissions-roles.png" alt-text="Screenshot of the permissions based on security role.":::
 
 Environment admins can also restrict machine registration to a specific set of users using the three security roles that come with machine management.
 
