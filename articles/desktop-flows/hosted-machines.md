@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 12/14/2022
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
@@ -55,9 +55,7 @@ To use hosted machines, you need one of the following Power Automate licensing o
 > [!NOTE]
 > All tenants have a global limit of ten hosted machines.
 
-You'll also need the following prerequisite licenses: Windows, Intune, Azure AD
-
-
+You'll also need the following prerequisite licenses: Windows, Intune, Azure AD.
 
 ## Prerequisites
 
