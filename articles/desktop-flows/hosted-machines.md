@@ -55,10 +55,9 @@ To use hosted machines, you need one of the following Power Automate licensing o
 > [!NOTE]
 > All tenants have a global limit of ten hosted machines.
 
-You'll also need the following prerequisite licenses:
+You'll also need the following prerequisite licenses: Windows, Intune, Azure AD
 
-- You must have licenses for Windows, Intune, Azure AD, and Windows 365.
-- If you're running unattended automation, any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, you must have the Microsoft 365 – Unattended License.
+
 
 ## Prerequisites
 
