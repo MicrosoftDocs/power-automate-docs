@@ -40,9 +40,6 @@ To use hosted machine group, you need the following licensing option:
 
     You need to assign to your environment as many add-ons as many bots you want to run in parallel in your environment.
 
-> [!NOTE]
-> Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, you must have the Microsoft 365 – Unattended License.
-
 
 ### Licensing requirements during grace period
 > [!IMPORTANT]
