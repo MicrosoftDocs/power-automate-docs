@@ -112,7 +112,7 @@ To use the maintenance mode:
 > [!NOTE]
 >
 > - If a machine group is in maintenance mode, all the machines of the group are in maintenance mode and you can't change them individually.
-> - If a desktop flow is currently running on your machine when the maintenance mode is enabled, the run won't be canceled.
+> - If a desktop flow is currently running on your machine when the maintenance mode is enabled, the run doesn't get canceled.
 > - When a machine group is in maintenance mode, the desktop flow run is put in the run queue. Timeout remains the same by default.
 > - When a machine group is back to active mode, all the machine of the group are activate again (except if there is an action required on the machine).
 

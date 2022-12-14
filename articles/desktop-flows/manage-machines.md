@@ -116,8 +116,8 @@ All the machines that are in maintenance mode are indicated with a red pictogram
 >
 > - If a machine group is in maintenance mode, all the machines of the group are in maintenance mode and you can't change them individually.
 > - When machines require some specific actions (such as key rotation), maintenance mode is disabled.
-> - If a desktop flow is currently running on your machine when the maintenance mode is enabled, the run won't be canceled.
-> - When a machine is in maintenance mode, no new run is assigned to this machine. If the machine is standalone, the desktop flow run will be put in the run queue. If the machine is part of machine group, the desktop flow will be assigned to an active machine. Timeout remains the same by default.
+> - If a desktop flow is currently running on your machine when the maintenance mode is enabled, the run doesn't get canceled.
+> - When a machine is in maintenance mode, no new run is assigned to it. If the machine is standalone, the desktop flow run will is put in the run queue. If the machine is part of machine group, the desktop flow is assigned to an active machine. Timeout remains the same by default.
 
 ## View list of machines
 
