@@ -113,10 +113,12 @@ To avoid this action:
 
     In the Power Automate portal:
 
-    1. Go to **Monitor** > **Machines*.
+    1. Go to **Monitor** > **Machines**.
     1. Select the machine from the list.
     1. On the machine’s detail page, locate the connections card and select **See all connections**.
     1. Run a desktop flow with each of these desktop flow connections.
+
+    :::image type="content" source="media/machine-group-certificates/machine-connections.png" alt-text="Screenshot of the connection of a machine.":::
 
 ### How to know when the next certificate renewal is happening?
 
@@ -135,7 +137,7 @@ You can find out the precise date of the next certificate renewal using the foll
 
 You can verify your machines have retrieved the latest version of the machine group certificate using the **Machine Key Delivery Status** column in the **Flow Machine** table in Dataverse:
 
-- If the value is empty or set to default, your machine is up-to-date.
+- If the value is empty or set to **Default**, your machine is up-to-date.
 - If the value is **Pending New Key**, the machine is within the renewal period and hasn't been updated yet. It will update when getting online or within 24 h if already online.
 - If the value is **Key Expired**, the machine has missed the renewal period, and you must manually rejoin the machine to the group.
 
