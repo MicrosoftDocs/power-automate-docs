@@ -38,7 +38,7 @@ We've redesigned the Power Automate interface so that you can quickly and easily
 
 The changes will allow you to:
 
-- Start creating a flow directly on the Power Automate **Home** page and **Create** page.” .
+- Start creating a flow directly on the Power Automate **Home** page and **Create** page.
 
 - Receive guided instruction for building your flow.
 
