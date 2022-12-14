@@ -122,6 +122,9 @@ To create a hosted machine group:
     - Select the VM image to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
     - Select how you would like to access your hosted machine group. You can use your [work or school account (preview)](#use-your-work-or-school-account-preview) or use a local admin account you want to be created. This account will be used to run your automations by the bots.
+    
+     > [!NOTE]
+     > If you select work or school account, please ensure to enter your email address (and not domain\username) when creating a connection to the hosted machine group
 
     - Review and create your hosted machine group.
 
