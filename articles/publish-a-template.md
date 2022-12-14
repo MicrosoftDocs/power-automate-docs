@@ -3,12 +3,14 @@ title: Submit a cloud flow template to the Power Automate gallery | Microsoft Do
 description: Submit your flow as a template so that other organizations can find it in the template gallery and use the flow that you created.
 services: ''
 suite: flow
-author: msftman
-manager: tapanm
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 08/10/2022
-ms.author: deonhe
+ms.author: napienko
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -19,7 +21,11 @@ search.audienceType:
 
 # Submit a template to the Power Automate gallery
 
-Follow the steps shown below to submit a cloud flow template to the Power Automate gallery. Templates help people not only to create flows more easily, but also to imagine additional scenarios that would benefit from a cloud flow.
+Templates help people not only to create flows more easily, but also to imagine additional scenarios that would benefit from a cloud flow.
+
+>[!IMPORTANT]
+> - Starting December 2022, the procedure to submit a template explained in this article has been deprecated. Any new template submissions using this deprecated procedure won't be accepted.
+> - This article will be updated with the new template submission process soon.
 
 1. On the left pane, select **My flows**.
 
