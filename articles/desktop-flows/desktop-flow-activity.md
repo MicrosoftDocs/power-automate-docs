@@ -4,7 +4,7 @@ description: Desktop flow activity (preview)
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/26/2022
+ms.date: 12/15/2022
 ms.author: gtrantzas
 ms.reviewer: quseleba
 search.app: 
@@ -43,7 +43,7 @@ You can find information regarding each table in the following list.
 
 - **Last desktop flows runs**: This card displays the latest completed desktop flows runs.
 
-[![Screenshot of the Last runs section of the Desktop flow activity.](media\desktop-flow-activity\desktop-flow-activity-runs.png "Screenshot of the Last runs section of the Desktop flow activity.")](media\desktop-flow-activity\desktop-flow-activity-runs.png#lightbox)
+:::image type="content" source="media\desktop-flow-activity\desktop-flow-activity-runs.png" alt-text="Screenshot of the Last runs section of the Desktop flow activity.":::
 
 ## Errors: Monitor desktop flow errors
 
@@ -63,37 +63,39 @@ You can find information regarding each table in the following list.
 
 - **Error trends**: This chart displays daily trends for errors in desktop flow runs. These trends can help you to identify if an error started to appear recently or several days ago. In addition to trends per error, the chart can display trends per desktop flow and machine. Select the dropdown menu of the table to display the type of pivot you prefer.
 
-[![Screenshot of the Errors section of the Desktop flow activity.](media\desktop-flow-activity\desktop-flow-activity-errors.png "Screenshot of the Errors section of the Desktop flow activity.")](media\desktop-flow-activity\desktop-flow-activity-errors.png#lightbox)
+:::image type="content" source="media\desktop-flow-activity\desktop-flow-activity-errors.png" alt-text="Screenshot of the Errors section of the Desktop flow activity.":::
 
 ## Machines: Monitor your machines and machine groups
 
-You can use the **Machines** section to monitor your machines and machine groups. These pivot tables provide information about number of machines, groups, connection status, PAD versions installed on machines and list of machines, machines groups.
+You can use the **Machines** section to monitor your machines and machine groups. These pivot tables provide information about the number of machines, groups, connection status, Power Automate for desktop versions installed on machines, and lists of machines and machine groups.
 
-- **Connection status**: This card displays the connection status of your machines (connected, disconnected, action needed). If you want to see machines that are disconnected, select See more. In the pane, you can see all the machines per connection status. You can click on the machine name to reach its details page.
+- **Connection status**: This card displays the connection status of your machines (connected, disconnected, action needed). If you want to see machines that are disconnected, select **See more**. In the pane, you can see all the machines per connection status. You can select the machine name to reach its details page.
 
 > [!NOTE]
 > There is a limit of 40 connection status displayed at the same time. If you have more machines in your environment, use the filters to reduce the current selection.
 
-- **Versions on machines**: This card displays for each version of Power Automate for desktop, the number of machines that use this version. This is really useful to understand which machines would require updates (you should update regurlarly your application). From filters, you can select a dedicated version and see machines that are using this version.
+- **Versions on machines**: This card displays for each version of Power Automate for desktop, the number of machines that use this version. This feature is useful to understand which machines require updates (you should update regularly your application). From filters, you can select a dedicated version and see machines that are using this version.
 
-- **Machines and machine groups**: These cards display the 10 last modified machines and machine groups (name, description, version, status). Select see all if you have more than 10 machines or groups, to view the full list of items.
+- **Machines and machine groups**: These cards display the 10 last modified machines and machine groups (name, description, version, status). Select **See all** to view the full list of items, if you've more than 10 machines or groups.
 
+:::image type="content" source="media\desktop-flow-activity\desktop-flow-activity-machines.png" alt-text="Screenshot of the Machines section of the Desktop flow activity.":::
 
 ## Current runs: Monitor your queued and running desktop flows
 
-You can use the **Current runs** section to monitor active desktop flows runs. These pivot tables provide information about number of running and queued desktop flows and the list of running and queued desktop flows.
+You can use the **Current runs** section to monitor active desktop flows runs. These pivot tables provide information about the number of running and queued desktop flows, and lists with the running and queued desktop flows.
 
 By selecting **Auto refresh**, all the cards will be refreshed automatically.
 
-- **Currently running and currently queued**: These cards display the total number of desktop flows that are currently running or in queue
+- **Currently running and currently queued**: These cards display the total number of desktop flows that are currently running or are in queue.
 
-- **Running desktop flows**: This card displays the number of running flows per period of time. It allows you to see if some of your desktop flows are stucked during their execution or if there is throtling on specific machines
+- **Running desktop flows**: This card displays the number of running flows per period of time. It allows you to see if some of your desktop flows are stacked during their execution or if there's throttling on specific machines.
 
-- **Running desktop flows and desktop flow in run queue**: These cards display the list of flows that are running or currently in queue. you can select **Requested** items to reach the run details page, **Desktop flow** items to reach the desktop flow details page, **Target** items to reach the machine or machine group details page.
+- **Running desktop flows and desktop flow in run queue**: These cards display the list of flows that are running or are currently in queue. You can select **Requested** items to reach the run details page, **Desktop flow** items to reach the desktop flow details page, and **Target** items to reach the machine or machine group details page.
+
+:::image type="content" source="media\desktop-flow-activity\desktop-flow-activity-current.png" alt-text="Screenshot of the Current runs section of the Desktop flow activity.":::
 
 > [!NOTE]
 > Limitations: **Target** for run queue table doesn't display information for standalone machine.
-
 
 ## Available data for admins and makers
 
