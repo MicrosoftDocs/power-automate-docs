@@ -192,7 +192,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
-|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableScreenshotOnError|DWORD|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableScreenshotCaptureOnError|DWORD|
 
 ***Value***
 
