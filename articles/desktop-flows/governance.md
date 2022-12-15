@@ -86,7 +86,6 @@ You can use the following registry entry to allow users to sign in to Power Auto
 
 - **1**: Power Automate for desktop will authenticate users using the WAM functionality.
 
-<!--
 ## Allow users with invalid certificates to sign in to Power Automate for desktop
 
 You can use the following registry entry to allow users with invalid certificates to sign in to Power Automate for desktop.
@@ -98,8 +97,6 @@ You can use the following registry entry to allow users with invalid certificate
 ***Values***
 
 - **1**: Users with invalid certificates can sign in to Power Automate for desktop.
-
--->
 
 ## Allow users to select a particular organization in Power Automate for desktop
 
