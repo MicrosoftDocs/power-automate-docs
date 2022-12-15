@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/12/2022
+ms.date: 12/14/2022
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
@@ -55,10 +55,7 @@ To use hosted machines, you need one of the following Power Automate licensing o
 > [!NOTE]
 > All tenants have a global limit of ten hosted machines.
 
-You'll also need the following prerequisite licenses:
-
-- You must have licenses for Windows, Intune, Azure AD, and Windows 365.
-- If you're running unattended automation, any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, you must have the Microsoft 365 – Unattended License.
+You'll also need the following prerequisite licenses: Windows, Intune, Azure AD.
 
 ## Prerequisites
 
