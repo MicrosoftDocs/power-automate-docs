@@ -96,6 +96,8 @@ The Flow JS SDK reference needs to be added to the host application before initi
 ```html
 <script src="https://make.powerautomate.com/Content/msflowsdk-1.1.js"></script>
 ```
+> [!NOTE]
+> The recommended way to include the Flow JS SDK in your application is using the above reference. Adding a local copy of the Flow JS SDK to your application or web page can result in you using an older unsupported version of the SDK over time causing breaks in functionality.
 
 Create a JS SDK instance by passing optional hostName and locale values in a JSON object.
 
