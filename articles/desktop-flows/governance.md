@@ -186,6 +186,18 @@ You can use the following registry entry to enable or disable the collection of 
 - **0**: Power Automate for desktop doesn't collect optional diagnostic usage data.
 - **1**: Power Automate for desktop collects optional diagnostic usage data.
 
+## Prevent Power Automate for desktop from taking screenshots for action logs upon error
+
+You can use the following registry entry to prevent Power Automate for desktop from taking a screenshot for the actions logs when an error occurs.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableScreenshotOnError|DWORD|
+
+***Value***
+
+- **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs.
+
 ## Configure Power Automate for desktop notification settings
 
 You can use the following registry entry to configure how Power Automate for desktop displays notifications and monitoring information.
