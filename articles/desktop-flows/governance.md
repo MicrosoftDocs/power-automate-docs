@@ -188,7 +188,7 @@ You can use the following registry entry to enable or disable the collection of 
 
 ## Prevent Power Automate for desktop from taking screenshots for action logs upon error
 
-You can use the following registry entry to prevent Power Automate for desktop from taking a screenshot for the actions logs when an error occurs.
+You can use the following registry entry to prevent Power Automate for desktop from taking a screenshot for the actions logs when an error occurs during a flow run.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
@@ -196,7 +196,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ***Value***
 
-- **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs.
+- **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
 
 ## Configure Power Automate for desktop notification settings
 
