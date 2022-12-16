@@ -2,7 +2,6 @@
 title: Call Child Flows
 description: Flows can now call other flows and pass parameters to them.
 author: MSFTMAN
-ms.reviewer: deonhe
 ms.date: 04/08/2022
 ms.assetid: 6e6d3c34-b209-ea11-a811-000d3a4f1cdd
 ms.subservice: cloud-flow

@@ -2,8 +2,6 @@
 title: "Business process flows overview | MicrosoftDocs"
 description: "An overview of business process flows in Power Automate."
 ms.date: 01/14/2022
-ms.reviewer: ""
-
 author: MSFTMAN
 ms.suite: ""
 ms.tgt_pltfrm: ""

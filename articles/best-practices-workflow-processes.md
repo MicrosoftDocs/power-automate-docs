@@ -3,8 +3,6 @@ title: "Best practices for managing background workflow processes | MicrosoftDoc
 description: "Understand the recommended ways to use workflows"
 ms.custom: ""
 ms.date: 07/27/2020
-ms.reviewer: ""
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow

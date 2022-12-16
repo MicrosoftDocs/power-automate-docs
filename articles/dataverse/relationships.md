@@ -15,7 +15,6 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/13/2021
 ms.author: Matow
-ms.reviewer: gtrantzas
 search.app: 
   - Flow
 search.audienceType: 

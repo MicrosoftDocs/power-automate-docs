@@ -3,8 +3,6 @@ title: "Create a business process flow in Power Apps | MicrosoftDocs"
 description: "Learn how to create a business process flow"
 ms.custom: ""
 ms.date: 08/17/2022
-ms.reviewer: "msftman"
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow

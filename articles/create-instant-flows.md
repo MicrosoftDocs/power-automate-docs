@@ -3,8 +3,6 @@ title: "Create instant flows in business process flows | MicrosoftDocs"
 description: "Learn how to create instant flows in business process flows"
 ms.custom: ""
 ms.date: 05/27/2022
-ms.reviewer: angieandrews
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
