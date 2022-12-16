@@ -41,7 +41,7 @@ These messages indicate that, if you need to [add another machine to the group](
 
 ## Information for admins
 
-To find information for admins about machine group certificate renewal, go to [Machine group certificate renewal for admins](../machine-group-certificates-admins.md).
+To find information for admins about machine group certificate renewal, go to [Machine group certificate renewal for admins](machine-group-certificates-admins.md).
 
 ## Corner cases
 
