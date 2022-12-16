@@ -3,7 +3,6 @@ title: "Custom Dataverse workflow activities (workflow assemblies)| MicrosoftDoc
 description: "Learn about registration and execution of custom Dataverse workflow activities in addition to the out-of-box activities provided by Windows Workflow Foundation."
 ms.custom: ""
 ms.date: 08/08/2018
-ms.reviewer: ""
 ms.subservice: developer
 ms.topic: "article"
 
@@ -11,6 +10,7 @@ ms.assetid: 3ef415ed-d815-45de-8a7c-398b80d23cbd
 caps.latest.revision: 51
 author: "msftman"
 ms.author: "deonhe"
+ms.reviewer: gtrantzas
 manager: "kvivek"
 search.app: 
   - Flow

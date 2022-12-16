@@ -5,8 +5,8 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 12/13/2022
-ms.author: gtrantzas
-ms.reviewer: nimoutzo
+ms.author: nimoutzo
+ms.reviewer: gtrantzas
 contributors:
 search.app: 
   - Flow

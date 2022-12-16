@@ -16,6 +16,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2020
 ms.author: hamenon
+ms.reviewer: gtrantzas
 ---
 
 # Customizing approvals in Teams
