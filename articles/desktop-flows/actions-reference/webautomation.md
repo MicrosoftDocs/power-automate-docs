@@ -6,8 +6,8 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/06/2022
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
