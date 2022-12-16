@@ -7,6 +7,7 @@ ms.subservice: developer
 ms.topic: article
 ms.date: 05/09/2022
 ms.author: Deonhe
+ms.reviewer: gtrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -32,7 +33,7 @@ To use the unauthenticated templates widget, embed it directly into the host app
 To start, add this code to show the Power Automate templates on your website:
 
 ```html
-<iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
+<iframe src="https://make.powerautomate.com/{locale}/widgets/templates/?q={search term}
 &pagesize={number of templates}&destination={destination}&category={category}"></iframe>
 ```
 
@@ -59,7 +60,7 @@ If the user is in a specific context in your website or app, you might want to p
 To show the top four SharePoint templates in German and to start the user with **myCoolList**, use this code:
 
 ```html
-<iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=sharepoint%20&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
+<iframe src="https://make.powerautomate.com/de-de/widgets/templates/?q=sharepoint%20&pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
 
 ## Use the authenticated flow widgets
@@ -94,21 +95,23 @@ The Power Automate team provides the JS SDK to facilitate integrating Flow widge
 The Flow JS SDK reference needs to be added to the host application before initializing the widget.
 
 ```html
-<script src="https://flow.microsoft.com/Content/msflowsdk-1.1.js"></script>
+<script src="https://make.powerautomate.com/Content/msflowsdk-1.1.js"></script>
 ```
+> [!NOTE]
+> The recommended way to include the Flow JS SDK in your application is using the above reference. Adding a local copy of the Flow JS SDK to your application or web page can result in you using an older unsupported version of the SDK over time causing breaks in functionality.
 
 Create a JS SDK instance by passing optional hostName and locale values in a JSON object.
 
 ```javascript
 var sdk = new MsFlowSdk({
-    hostName:'https://flow.microsoft.com',
+    hostName:'https://make.powerautomate.com',
     locale:'en-US'
 }); 
 ```
 
 | Name     | Required/Optional | Description                                                    | 
 |----------|-------------------|----------------------------------------------------------------| 
-| `hostName` | Optional          | Power Automate host name, for example, https://flow.microsoft.com        | 
+| `hostName` | Optional          | Power Automate host name, for example, https://make.powerautomate.com        | 
 | `locale`   | Optional          | Client locale for the widget (defaults to `en-Us` if not specified) | 
 
 
@@ -382,7 +385,7 @@ Follow these steps to select one or more delegated permissions:
 7. Select **Add**.
 8. Choose **Select an API**.
       ![Screenshot locating required permissions, add, and select an A P I.](../media/embed-flow-dev/AAD-App-Select-an-API.png)
-9. Search for **Power Automate service** and select it. Note: Before you can see Power Automate service, your tenant needs to  have at least one AAD user signed into the Flow portal (<https://flow.microsoft.com>)
+9. Search for **Power Automate service** and select it. Note: Before you can see Power Automate service, your tenant needs to  have at least one AAD user signed into the Flow portal (<https://make.powerautomate.com>)
 10. Choose the required Flow scopes for your application then select **Save**.
       ![Screenshot showing the delegated permissions.](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
 
@@ -430,11 +433,11 @@ Sample application [download link](https://procsi.blob.core.windows.net/docs/Flo
 
 Find out more about widget integration and settings:
 
-- Templates widget: <[https://flow.microsoft.com/test/templateswidget/](https://flow.microsoft.com/test/templateswidget/)>
-- FlowCreation widget: <[https://flow.microsoft.com/test/flowcreationwidget/](https://flow.microsoft.com/test/flowcreationwidget/)>
-- Runtime widget: <[https://flow.microsoft.com/test/runtimewidget/](https://flow.microsoft.com/test/runtimewidget/)>
-- Approvals center widget: <[https://flow.microsoft.com/test/approvalcenterwidget/](https://flow.microsoft.com/test/approvalcenterwidget/)>
-- Flows widget: <[https://flow.microsoft.com/test/managewidget/](https://flow.microsoft.com/test/managewidget/)>
+- Templates widget: <[https://make.powerautomate.com/test/templateswidget/](https://make.powerautomate.com/test/templateswidget/)>
+- FlowCreation widget: <[https://make.powerautomate.com/test/flowcreationwidget/](https://make.powerautomate.com/test/flowcreationwidget/)>
+- Runtime widget: <[https://make.powerautomate.com/test/runtimewidget/](https://make.powerautomate.com/test/runtimewidget/)>
+- Approvals center widget: <[https://make.powerautomate.com/test/approvalcenterwidget/](https://make.powerautomate.com/test/approvalcenterwidget/)>
+- Flows widget: <[https://make.powerautomate.com/test/managewidget/](https://make.powerautomate.com/test/managewidget/)>
 
 ### Supported widget locales
 
