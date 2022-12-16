@@ -7,7 +7,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 08/02/2021
 ms.author: hamenon
-ms.reviewer: deonhe
+ms.reviewer: gtrantzas
 ---
 
 # Send a message in Teams using Power Automate
