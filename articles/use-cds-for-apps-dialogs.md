@@ -3,7 +3,6 @@ title: "Use Dataverse dialogs for guided processes (Deprecated) | MicrosoftDocs"
 description: "Dialogs are the synchronous or interactive processes that collect and process information by using step-by-step scripts to direct users through a process"
 ms.custom: ""
 ms.date: 10/31/2017
-ms.reviewer: ""
 ms.subservice: cloud-flow
 ms.topic: "article"
 

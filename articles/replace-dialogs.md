@@ -2,8 +2,6 @@
 title: "Replace dialogs with business process flows or canvas apps  | MicrosoftDocs"
 ms.custom: ""
 ms.date: 08/02/2018
-ms.reviewer: ""
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
