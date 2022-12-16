@@ -25,7 +25,7 @@ This certificate is protected with a password only known to the customer.
 
 ## What happens during the machine group certificate renewal?
 
-:::image type="content" source="media/machine-group-certificates/current-certificate-expiry.png" alt-text=" A timeline diagram for current certificate expiry":::
+:::image type="content" source="media/machine-group-certificates-admins/current-certificate-expiry.png" alt-text=" A timeline diagram for current certificate expiry":::
 
 Machine group certificate renewal starts by default six months before the current certificate is set to expire and finishes when the current certificate has expired.
 Machine group certificate renewal won't affect your machine group's ability to run flows as it is quick, happens between runs, and supports machines on both the current and the new certificate during the renewal.
@@ -75,7 +75,7 @@ You'll need to put those machines online and run flows on them during the certif
 
     This trigger will be invoked each time the machine security is updated. To find information about which values to use in the trigger, go to [How το know if a machine has been updated with a new certificate or not?](#how-το-know-if-a-machine-has-been-updated-with-a-new-certificate-or-not).
 
-    :::image type="content" source="media/machine-group-certificates/trigger-action.png" alt-text="Screenshot of the When a row is added, modified or deleted trigger.":::
+    :::image type="content" source="media/machine-group-certificates-admins/trigger-action.png" alt-text="Screenshot of the When a row is added, modified or deleted trigger.":::
 
     Use:
 
@@ -99,7 +99,7 @@ You'll need to put those machines online and run flows on them during the certif
     1. On the machine’s detail page, locate the connections card and select **See all connections**.
     1. Run a desktop flow with each of these desktop flow connections.
 
-    :::image type="content" source="media/machine-group-certificates/machine-connections.png" alt-text="Screenshot of the connection of a machine.":::
+    :::image type="content" source="media/machine-group-certificates-admins/machine-connections.png" alt-text="Screenshot of the connection of a machine.":::
 
 ## How to know when the next certificate renewal is happening?
 
@@ -112,7 +112,7 @@ There are three parameters governing certificate renewal timelines, each availab
 You can find out the precise date of the next certificate renewal using the following calculation:
 **Key Creation Date + (Key Validity Period – Key Grace Period)**
 
-:::image type="content" source="media/machine-group-certificates/current-certificate-expiry.png" alt-text=" A timeline diagram for current certificate expiry":::
+:::image type="content" source="media/machine-group-certificates-admins/current-certificate-expiry.png" alt-text=" A timeline diagram for current certificate expiry":::
 
 ### How το know if a machine has been updated with a new certificate or not?
 
