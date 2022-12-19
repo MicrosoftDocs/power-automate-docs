@@ -26,7 +26,7 @@ This article presents all the prerequisites and limitations you should consider 
 
 ## Prerequisites
 
-- A Windows account with administrator privileges to [install Power Automate](install.md) using the MSI installer
+- An account with administrator privileges to [install Power Automate](install.md) using the MSI installer
   - If you install it from the Microsoft Store, a standard Windows account is acceptable.
 
 - An account to sign in to Power Automate
