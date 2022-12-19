@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/22/2022
+ms.date: 12/19/2022
 ms.author: DeonHe
 ms.reviewer: gtrantzas
 search.app: 
@@ -58,11 +58,13 @@ If you'd like to create a cloud flow that performs tasks automatically after an 
 
 ## Add a trigger to an existing flow
 
-1. Edit the flow and then select add a new step.
+1. Edit the flow and delete the existing trigger.
 
-1. Search for the connector and then select the app icon. This screenshot shows the results if you search for "Share".
+1. After deleting the trigger, Power Automate will prompt you to select a new one.
 
-   ![A screenshot that shows a seach for a connector.](./media/triggers-introduction/connectors.png)
+1. Search for the connector and then select the app icon. The following screenshot shows the results if you search for "Share".
+
+   ![A screenshot that shows a search for a connector.](./media/triggers-introduction/connectors.png)
 
 1. Once selected, the corresponding triggers and actions will be shown. Choose the trigger that best suits your needs.
 
