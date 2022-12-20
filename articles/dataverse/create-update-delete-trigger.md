@@ -4,18 +4,19 @@ description: "Learn how to trigger flows by using the When a row is added, modif
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
-manager: TapanM
-ms.author: Matow
+author: radioblazer
+contributors:
+  - radioblazer
+  - v-aangie
+ms.author: matow
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
-
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/03/2022
+ms.date: 12/20/2022
 search.app: 
   - Flow
   - Powerplatform
