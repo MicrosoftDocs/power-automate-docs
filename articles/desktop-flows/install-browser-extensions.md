@@ -49,15 +49,7 @@ After Power Automate for desktop version 2.27, the Google Chrome and Mozilla Fir
 
 1. Ensure that **Developer mode** is enabled.
 
-1. Select **Load unpacked**.
-
-1. Browse to the browser extension folder of your Power Automate installation.
-
-1. Select **Select folder** in the dialog.
-
-1. Select **Add**.
-
-Alternatively, you can launch Google Chrome, and drag and drop the extension file in the browser area.
+1. While you're on the Chrome extension page, drag and drop the extension file in it.
 
 ### Mozilla Firefox
 
