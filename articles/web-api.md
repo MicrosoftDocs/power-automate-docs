@@ -341,7 +341,7 @@ Once import has completed successfully, you'll need to set up the connections fo
 
 ### See also
 
-[Core documentation for the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
-[Get started using the Web API with Postman](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/use-postman-web-api)
+- [Core documentation for the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+- [Get started using the Web API with Postman](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/use-postman-web-api)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
