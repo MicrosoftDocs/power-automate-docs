@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/03/2022
+ms.date: 12/21/2022
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
