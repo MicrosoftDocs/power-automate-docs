@@ -24,7 +24,7 @@ Machine group certificates secure credentials in desktop flow connections and id
 
 While using Power Automate, you may notice a key icon next to your machine in the Power Automate portal, and the following message: **Machine group security has been updated. Re-generate a machine group password before adding a new machine.**
 
-These messages indicate that, if you need to [add another machine to the group](manage-machine-groups.md#add-your-machine-to-a-group), you must sign in to one of its existing machines and [regenerate the password](manage-machine-groups.md#change-machine-groups-password). These messages appear after a certificate renewal has started on that machine group.
+These messages indicate that if you need to [add another machine to the group](manage-machine-groups.md#add-your-machine-to-a-group), you must sign in to one of its existing machines and [regenerate the password](manage-machine-groups.md#change-machine-groups-password). These messages appear after a certificate renewal has started on that machine group.
 
 ## Prerequisites
 
