@@ -112,6 +112,8 @@ To use the maintenance mode:
 
 All the machines that are in maintenance mode are indicated with a red pictogram in the list of machines.
 
+:::image type="content" source="./media/manage-machines/maintenance-mode.png" alt-text="Screenshot of the red pictogram for the maintenance mode.":::
+
 > [!NOTE]
 >
 > - If a machine group is in maintenance mode, all the machines of the group are in maintenance mode and you can't change them individually.
