@@ -16,6 +16,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
+ms.reviewer: gtrantzas
 ---
 
 # Power Automate mobile app supports Microsoft Intune

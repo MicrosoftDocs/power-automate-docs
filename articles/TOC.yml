@@ -381,6 +381,8 @@
       href: ./desktop-flows/manage-machine-groups.md
     - name: Create desktop flow connections
       href: ./desktop-flows/desktop-flow-connections.md
+    - name: Machine group certificate renewal
+      href: ./desktop-flows/machine-group-certificates.md
     - name: Hosted machines (preview)
       href: ./desktop-flows/hosted-machines.md
     - name: Hosted machine groups (preview)
@@ -931,6 +933,8 @@
   - name: Monitor desktop flows
     href: ./desktop-flows/monitor.md
     displayName: Monitor desktop flows in the Center of Excellence (CoE)
+  - name: Machine group certificate renewal for admins
+    href: ./desktop-flows/machine-group-certificates-admins.md
   - name: Set a policy to help prevent data loss
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps
