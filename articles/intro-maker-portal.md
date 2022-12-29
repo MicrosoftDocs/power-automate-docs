@@ -54,7 +54,7 @@ You can start creating a flow as soon as you sign in to Power Automate by select
 
 You can then choose your path for creating a flow. Your two choices are to start with a template to find prebuilt flows, or build your own custom automation.
 
-:::image type="content" source="media/create-experience-preview/choose-path.png" alt-text="Screenshot of the two paths, which are start with a template or build your own.":::
+:::image type="content" source="media/create-experience-preview/choose-path.png" alt-text="Screenshot of the two paths, which are to start with a template or build your own.":::
 
 If you want even more ways to automate, select **Create** on the menu to the left. You'll see the same two options at the top of the screen and some additional options at the bottom. The following selections allow you to automate repetitive desktop processes, add intelligence to automation, analyze and optimize business processes, and describe and build using your own words.
 
