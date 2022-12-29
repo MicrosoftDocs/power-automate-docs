@@ -84,7 +84,7 @@ To learn more, go to [Create a cloud flow from a template](get-started-logic-tem
 
 If you select **Build your own**, Power Automate will guide you in selecting your triggers, actions, and connectors.
 
-:::image type="content" source="media/create-experience-preview/connectors.png" alt-text="Screenshot of the building your flow with triggers, actions, and connectors.":::
+:::image type="content" source="media/create-experience-preview/connectors.png" alt-text="Screenshot of building your flow with triggers, actions, and connectors.":::
 
 To learn how to build your own flow, go to [Create a cloud flow from scratch](get-started-logic-flow.md). To learn about triggers, go to [Get started with triggers](triggers-introduction.md). For an overview of connectors, go to [Connectors overview](/connectors/connectors).
 
