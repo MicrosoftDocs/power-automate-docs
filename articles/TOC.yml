@@ -385,7 +385,7 @@
       href: ./desktop-flows/machine-group-certificates.md
     - name: Hosted machines (preview)
       href: ./desktop-flows/hosted-machines.md
-    - name: Hosted machine groups (preview)
+    - name: Hosted machine groups
       href: ./desktop-flows/hosted-machine-groups.md
     - name: Scale with AVD starter kit
       items:
