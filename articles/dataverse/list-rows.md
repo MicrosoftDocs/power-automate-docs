@@ -4,6 +4,7 @@ description: Learn how to use flows to work with lists of rows from Microsoft Da
 author: MSFTMAN
 manager: tapanm
 ms.author: Matow
+ms.reviewer: angieandrews
 ms.topic: conceptual
 ms.date: 06/08/2022
 search.app: 

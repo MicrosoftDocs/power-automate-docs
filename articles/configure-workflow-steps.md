@@ -3,8 +3,6 @@ title: "Configure background workflow stages and steps in Power Apps | Microsoft
 description: "Learn how to configure background workflow steps"
 ms.custom: ""
 ms.date: 07/27/2020
-ms.reviewer: ""
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
@@ -13,6 +11,7 @@ author: "Mattp123"
 ms.assetid: 0b47dfd5-76db-464f-90c0-c64a0173dcdd
 caps.latest.revision: 18
 ms.author: "matp"
+ms.reviewer: angieandrews
 manager: "kvivek"
 search.app: 
   - Flow

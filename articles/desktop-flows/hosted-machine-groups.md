@@ -121,7 +121,7 @@ To create a hosted machine group:
     - Select how you would like to access your hosted machine group. You can use your [work or school account (preview)](#use-your-work-or-school-account-preview) or use a local admin account you want to be created. This account will be used to run your automations by the bots.
     
      > [!NOTE]
-     > If you select work or school account, please ensure to enter your email address (and not domain\username) when creating a connection to the hosted machine group
+     > If you select work or school account, enter your email address (and not domain\username) when creating a connection to the hosted machine group.
 
     - Review and create your hosted machine group.
 
