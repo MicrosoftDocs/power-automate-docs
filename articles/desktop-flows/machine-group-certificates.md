@@ -18,22 +18,22 @@ search.audienceType:
 # Machine group certificate renewal
 
  > [!NOTE]
- > This feature is currently under rollout until March 31st 2023.
+ > This feature is currently under rollout until March 31, 2023.
 
 Machine group certificates secure credentials in desktop flow connections and identify machines with Power Automate. Security best practices require certificates to be renewed regularly. Power Automate automatically performs this renewal that doesn’t affect your runs.
 
-While using Power Automate, you may notice a key icon next to your machine in the Power Automate portal, and the following message: **Machine group security has been updated. Re-generate a machine group password before adding a new machine.**.
+While using Power Automate, you may notice a key icon next to your machine in the Power Automate portal, and the following message: **Machine group security has been updated. Re-generate a machine group password before adding a new machine.**
 
-These messages indicate that, if you need to [add another machine to the group](manage-machine-groups.md#add-your-machine-to-a-group), you must sign in to one of its existing machines and [regenerate the password](manage-machine-groups.md#change-machine-groups-password). These messages appear after a certificate renewal has started on that machine group.
+These messages indicate that if you need to [add another machine to the group](manage-machine-groups.md#add-your-machine-to-a-group), you must sign in to one of its existing machines and [regenerate the password](manage-machine-groups.md#change-machine-groups-password). These messages appear after a certificate renewal has started on that machine group.
 
 ## Prerequisites
 
-- Machines with Power Automate for desktop version 2.23 or above
+- Machines with Power Automate for desktop version 2.23 or above.
 - Machines need to be online at least once in the last six months before the certificate expires (once every five years). The mentioned values are the default, but can be changed.
 
 ## Recommendation
 
-- During the renewal period of a machine group, use Desktop flow connections targeting this group once. This step will prevent the need to fix your Desktop flow connections once the renewal period has ended. To find more information about desktop flow connections, go to [Create desktop flow connections
+- During the renewal period of a machine group, use Desktop flow connections targeting this group once. This step will prevent the need to fix your Desktop flow connections when the renewal period has ended. For more information about desktop flow connections, go to [Create desktop flow connections
 ](desktop-flow-connections.md).
 
 > [!IMPORTANT]
@@ -45,12 +45,12 @@ To find information for admins about machine group certificate renewal, go to [M
 
 ## Corner cases
 
-- **Case:** I can't add my machine to an empty machine group, as the Power Automate machine runtime app says that the password is incorrect.
+- **Case**: I can't add my machine to an empty machine group. The Power Automate machine runtime app says the password is incorrect.
 
-    **Description:** Machine groups need at least one machine connected to have their certificates renewed. If a machine group is empty during the renewal, its certificate will expire. You can't use these machine groups and you should delete them.
+    **Description**: Machine groups need at least one machine connected to have their certificates renewed. If a machine group is empty during the renewal, its certificate will expire. You can't use these machine groups and you should delete them.
 
-- **Case**: Following a certificate renewal, my machines on Power Automate for desktop version 2.21 or below can't be connected anymore.
+- **Case**: Following a certificate renewal, my machines on Power Automate for desktop version 2.21 or earlier can't be connected anymore.
 
-    **Description:** These versions are outdated and can't renew their certificate. You must update Power Automate for desktop and rejoin them to their group.
+    **Description**: These versions are outdated and can't renew their certificate. You must update Power Automate for desktop and rejoin them to their group.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
