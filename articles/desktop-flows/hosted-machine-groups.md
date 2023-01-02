@@ -1,10 +1,10 @@
 ---
 title: Hosted machine groups
-description: See how to create and use hosted machine groups to distribute your automation workload.
+description: Learn how to create and use hosted machine groups to distribute your automation workload.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/14/2022
+ms.date: 01/02/2022
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
@@ -40,11 +40,11 @@ To use hosted machine group, you need the following licensing option:
 
     You need to assign to your environment as many add-ons as many bots you want to run in parallel in your environment.
 
-
 ### Licensing requirements during grace period
+
 > [!IMPORTANT]
 > To enable a smooth transition for customers using the hosted machine group feature during the preview phase, a grace period will be provided to enable customers to procure the appropriate hosted RPA add-on in order to continue using the feature. Entitlements for using the hosted machine group during the preview phase will be extended until 1 April 2023. After this date, you'll need the hosted RPA add-on to continue using the hosted machine group feature.
-> 
+
 To use hosted machine groups, you need one of the following licensing options:
 
 - Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-ons**.
@@ -119,7 +119,7 @@ To create a hosted machine group:
     - Select the VM image to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
     - Select how you would like to access your hosted machine group. You can use your [work or school account (preview)](#use-your-work-or-school-account-preview) or use a local admin account you want to be created. This account will be used to run your automations by the bots.
-    
+
      > [!NOTE]
      > If you select work or school account, enter your email address (and not domain\username) when creating a connection to the hosted machine group.
 
@@ -129,7 +129,7 @@ To create a hosted machine group:
 
 ## Hosted machine groups availability
 
-Bots in a hosted machine group are created when needed. Whenever a desktop flow waits in the queue and no bot is available, a bot is created automatically. A bot is created as long as the maximum number of bots for this group isn't reached and you have enough unattended add-ons assigned to your environment. You can find more information about licensing requirements in [Licensing requirements](#licensing-requirements).
+Bots in a hosted machine group are created when needed. Whenever a desktop flow waits in the queue and no bot is available, a bot is created automatically. A bot is created as long as the maximum number of bots for this group isn't reached and you've enough unattended add-ons assigned to your environment. You can find more information about licensing requirements in [Licensing requirements](#licensing-requirements).
 
 > [!NOTE]
 > If the hosted machine group has just been created or hasn't been used for more than 24 hours, bots will be created before a run gets addressed from the queue. The creation of a bot can take more that 10 minutes based on its setup.
@@ -207,7 +207,7 @@ The last step before using your image in Power Automate is to share the image wi
     - **Image name:** A unique name to identify the image.
     - **Image description:** An optional description for the image.
 
-1. Select one of the images that you have access from the Azure Compute Gallery.
+1. Select one of the images that you've access from the Azure Compute Gallery.
 
 :::image type="content" source="media/hosted-machine-groups/new-custom-vm-image.png" alt-text="Screenshot of dialog to create a new custom VM image.":::
 
@@ -250,7 +250,7 @@ The list contains both hosted machine groups and standard machine groups. For ea
 - The number of the machines in the group (only for standard machine groups).
 - The number of flows running in the item.
 - The number of flows queued in the item.
-- The type of access you have to the item.
+- The type of access you've to the item.
 - The owner of the item.
 
 :::image type="content" source="media/hosted-machine-groups/view-machine-groups.png" alt-text="Screenshot of the available machine groups.":::
