@@ -8,6 +8,8 @@
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
+  - name: New Power Automate experience (preview)
+    href: intro-maker-portal.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -385,7 +387,7 @@
       href: ./desktop-flows/machine-group-certificates.md
     - name: Hosted machines (preview)
       href: ./desktop-flows/hosted-machines.md
-    - name: Hosted machine groups (preview)
+    - name: Hosted machine groups
       href: ./desktop-flows/hosted-machine-groups.md
     - name: Scale with AVD starter kit
       items:
@@ -975,6 +977,8 @@
     href: limits-and-config.md
   - name: Power Automate Web API
     href: web-api.md
+  - name: Power Automate embed pay-as-you-go
+    href: isv-pay-as-you-go.md
   - name: Frequently asked questions
     href: frequently-asked-questions.yml
   - name: Power Automate glossary
