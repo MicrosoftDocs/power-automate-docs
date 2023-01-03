@@ -131,14 +131,30 @@ You might have run into other analyze issues. For more ways that we can support 
 
 You must be an admin of your Power BI workspace. To learn more about user access and permissions, go to [Give users access to workspaces](/power-bi/collaborate-share/service-give-access-new-workspaces).
 
+### "You must be an admin of the Power BI workspace to use it with this report. After you become an admin, try to reanalyze the report."
+
+This is the same issue as above, but the error occurred during process analysis. Once you become an admin using the fix from above, please reanalyze the report.
+
 ### "The process advisor service principal must be an admin of the Power BI workspace to refresh this report."
 
 Enable admin access for the process advisor prod service principal. To learn how to give the service principal admin access, go to [Create your own custom Power BI workspace (preview)](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace).
+
+### "The process advisor service principal must be an admin of the Power BI workspace to refresh this report. After the problem is fixed, try to reanalyze the report."
+
+This is the same issue as above, but the error occurred during process analysis. After ensuring the process advisor service principal is the admin of the workspace, please reanalyze the report.
 
 ### "The process advisor service principal cannot access the Power BI workspace."  
 
 Set up the process advisor service principal for your Power BI workspace. To learn how to set up, go to [Set up your workspace (preview)](process-mining-pbi-workspace.md#set-up-your-workspace).
 
+### "The process advisor service principal cannot access the Power BI workspace. After the problem is fixed, try to reanalyze the report."
+
+This is the same issue as above, but the error occurred during process analysis. After ensuring that the process advisor service princinpal is added to the workspace and has admin access, please reanalyze the report.
+
 ### "The selected Power BI workspace needs premium capacity to work with this report."  
 
 Assign a premium license to your workspace. To learn how to enable premium capacity, go to [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings).
+
+### "The selected Power BI workspace needs premium capacity to work with this report. After the problem is fixed, try to reanalyze the report."
+
+This is the same issue as above, but the eror occured during process analysis. After ensuring that your workspace has premium capacity per the documentation link above, please reanalyze the report.
