@@ -4,9 +4,9 @@ description: See information about the deprecation of Manifest V2 and migration 
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/1/2022
-ms.author: gtrantzas
-ms.reviewer: nimoutzo
+ms.date: 12/13/2022
+ms.author: nimoutzo
+ms.reviewer: gtrantzas
 contributors:
 search.app: 
   - Flow
@@ -51,6 +51,9 @@ After June 2023, enterprise users have two options:
 After June 2023, non-enterprise users must upgrade to Power Automate for desktop v2.27 or later and use the new browser extension.
 
 ## Run JavaScript function on web page action
+
+> [!IMPORTANT]
+> Due to security limitations issued by Mozilla Firefox, you can't use the **Run JavaScript function on web page** action with an instance of it. To utilize this action, use one of the other browser options in your desktop flow.
 
 Due to limitations in the way Manifest V3 works, injecting JavaScript on a web page is impossible when Developer tools are disabled by Group Policy, making the action not functional.
 

@@ -4,9 +4,9 @@ description: See how to install Power Automate silently on your device.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/07/2022
-ms.author: gtrantzas
-ms.reviewer: pefelesk
+ms.date: 12/06/2022
+ms.author: pefelesk
+ms.reviewer: gtrantzas
 contributors:
 search.app: 
   - Flow 
@@ -61,7 +61,7 @@ Setup.Microsoft.PowerAutomate.exe -HELP
 |-RESTOREDEFAULTCONFIG|Restores to the default installation settings during an upgrade.|
 |-DONOTINSTALLPAD|Skips installing Power Automate for desktop.|
 |-DONOTINSTALLMACHINERUNTIME|Skips installing Power Automate machine-runtime app.|
-<!-- |-SKIPINSTALLINGJAVAAUTOMATION|Skips installing files that are required for enabling UI automation in Java applets.| -->
+|-SKIPINSTALLINGJAVAAUTOMATION|Skips installing files that are required for enabling UI automation in Java applets.|
 
 Here's an example of a command line argument that installs Power Automate:
 

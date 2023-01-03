@@ -16,6 +16,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/16/2022
 ms.author: deonhe
+ms.reviewer: gtrantzas
 Contributors:
   - georgiostrantzas
 search.app: 
@@ -67,8 +68,13 @@ The following table lists the services to which Power Automate connects. Ensure 
 |go.microsoft.com|https|Access to the Power Automate to check for updates|
 |download.microsoft.com|https|Access to the Power Automate to check for updates|
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
-|s2s.config.skype.com<br>s2s.config.skype.com<br>use.config.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
+|s2s.config.skype.com<br>use.config.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
 |s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
+| *.api.powerplatform.com | https | Access to several Power Platform APIs. |
+| *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
+| *.api.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
+| *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vinaet - China only). |
 
 ## Approval email delivery
 

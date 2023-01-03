@@ -3,8 +3,6 @@ title: "Best practices for using business process flow table columns | Microsoft
 description: "Learn the best practices for using business process flow table columns."
 ms.custom: 
 ms.date: 04/23/2019
-ms.reviewer: 
-
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.subservice: cloud-flow
@@ -19,6 +17,7 @@ helpviewer_keywords:
   - workflow
 author: msftman
 ms.author: deonhe
+ms.reviewer: angieandrews
 manager: kvivek
 ---
 

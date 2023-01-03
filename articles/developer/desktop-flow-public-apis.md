@@ -5,6 +5,7 @@ author: benabbon
 ms.topic: article
 ms.date: 12/01/2022
 ms.author: nabena
+ms.reviewer: gtrantzas
 ms.subservice: developer
 search.app: 
   - Flow
@@ -63,73 +64,76 @@ GET https://[Organization URI]/api/data/v9.2/workflows?$filter=category+eq+6&$se
 
 If you need to retrieve the flow schema for inputs and/or outputs, you can use the clientData field for the target workflow.
 
-### Request schema for desktop flows
+### Request inputs schema for desktop flows
 
 ```http
 Authorization: Bearer eyJ0eXAiOi...
 Accept: application/json
 
-GET https://[Organization URI]/api/data/v9.2/workflows([Workflow Id])/clientdata/$value HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.2/workflows([Workflow Id])/inputs/$value HTTP/1.1  
 ```
 
-### Response to the request to get the desktop flows schema
+### Response to the request to get the desktop flows inputs schema
 
 ```json
 {
-    "clientversion": "2.19.00170.22097",
-    "properties": {
-        "definition": {
-            "dependencies": [],
-            "isvalid": true,
-            "name": "Desktop Flow 1",
-            "package": "UEsDBBQAAAAIAIqZlF...",
-            "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#"
-        },
-        "inputs": {
-            "schema": {
-                "properties": {
-                    "Input1": {
-                        "default": "",
-                        "description": "",
-                        "format": null,
-                        "title": "Input 1",
-                        "type": "string",
-                        "value": "0"
-                    },
-                    "Input2": {
-                        "default": "",
-                        "description": "",
-                        "format": null,
-                        "title": "Input2",
-                        "type": "string",
-                        "value": ""
-                    }
-                },
-                "type": "object"
+    "schema": {
+        "properties": {
+            "inputText": {
+                "default": "",
+                "description": "",
+                "format": null,
+                "title": "inputText",
+                "type": "string",
+                "value": ""
+            },
+            "inputInteger": {
+                "default": "",
+                "description": "",
+                "format": null,
+                "title": "inputInteger",
+                "type": "number",
+                "value": "0"
             }
         },
-        "outputs": {
-            "schema": {
-                "properties": {
-                    "Output1": {
-                        "default": "",
-                        "description": "",
-                        "format": null,
-                        "title": "Output",
-                        "type": "string",
-                        "value": null
-                    }
-                },
-                "type": "object"
+        "type": "object"
+    }
+}
+```
+
+### Request outputs schema for desktop flows
+
+```http
+Authorization: Bearer eyJ0eXAiOi...
+Accept: application/json
+
+GET https://[Organization URI]/api/data/v9.2/workflows([Workflow Id])/outputs/$value HTTP/1.1  
+```
+
+### Response to the request to get the desktop flows outputs schema
+
+```json
+{
+    "schema": {
+        "properties": {
+            "outputText": {
+                "default": "",
+                "description": "",
+                "format": null,
+                "title": "outputText",
+                "type": "string",
+                "value": null
+            },
+            "outputInteger": {
+                "default": "",
+                "description": "",
+                "format": null,
+                "title": "outputInteger",
+                "type": "number",
+                "value": null
             }
-        }
-    },
-    "schemaversion": "ROBIN_20211012",
-    "targets": {
-        "schema": {
-            "properties": {},
-            "type": "object"
-        }
+        },
+        "type": "object"
     }
 }
 ```
@@ -247,14 +251,16 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
 }
 ```
 
+The inputs of the script are viewable in the run details page on the Power Automate portal (in Preview).
+
 > [!WARNING]
 > When using the API, there are some limitations to be aware of:
 >
->- When triggering a desktop flow run using the API, the inputs of the script are not viewable in the run details page on the power automate portal.
->
-> - The owner of the flow session representing the run is mapped to the owner of the workflow entity representing the desktop flow. There will be some limitations when calling the API on a workflow with a "User" privilege: Canceling the run and querying the status might be blocked for missing privileges on the flow session.
+> - Triggering a desktop flow run with an account having "User" privileges will work. However, canceling the run and querying the status needs "Owner" privileges.
 >
 > - Dataverse impersonation isn't supported.
+>
+> - The input field content size is limited to 2 MB.
 
 ### Receive notification on script completion
 

@@ -4,9 +4,9 @@ description: See how to install Power Automate on your device.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/01/2022
-ms.author: gtrantzas
-ms.reviewer: pefelesk
+ms.date: 12/06/2022
+ms.author: pefelesk
+ms.reviewer: gtrantzas
 contributors:
 search.app: 
   - Flow 
@@ -47,11 +47,13 @@ You can download and install Power Automate through an MSI installer or Microsof
 
     - **Power Automate machine runtime app** allows you to connect your machine to the Power Automate cloud and harness the full power of your robotic process automation (RPA). To learn more about machine management, go to [Manage machines](./manage-machines.md).
 
-    Additionally, you can select to add the WebDriver and ChromeDriver components to run desktop flows created with Selenium IDE. To learn more about how to install Selenium IDE, go to [Selenium IDE](#install-selenium-ide-optional).
+    Additionally, you can:
 
-    <!-- - Install the required files for UI automation in Java applets. -->
+    - Add the WebDriver and ChromeDriver components to run desktop flows created with Selenium IDE. To learn more about how to install Selenium IDE, go to [Selenium IDE](#install-selenium-ide-optional).
 
-    During installation, you can also change the default options if you don't want to send usage data to Microsoft. To do so, uncheck **Optional data collection**. To find more information about data collection, go to [Data collection in Power Automate](diagnostic-data.md).
+    - Install the required files for UI automation in Java applets. Before installing, close all Java-related processes.
+
+    During installation, you can also change the default options if you don't want to send usage data to Microsoft. To do so, uncheck **Optional data collection**. To find more information about data collection, go to [Data collection](diagnostic-data.md).
 
     >[!IMPORTANT]
     >Sharing usage data with Microsoft may help the support department solve Power Automate issues.

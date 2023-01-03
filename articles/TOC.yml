@@ -8,6 +8,8 @@
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
+  - name: New Power Automate experience (preview)
+    href: intro-maker-portal.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -381,8 +383,12 @@
       href: ./desktop-flows/manage-machine-groups.md
     - name: Create desktop flow connections
       href: ./desktop-flows/desktop-flow-connections.md
-    - name: Hosted RPA bots (preview)
-      href: ./desktop-flows/hosted-rpa-bots.md
+    - name: Machine group certificate renewal
+      href: ./desktop-flows/machine-group-certificates.md
+    - name: Hosted machines (preview)
+      href: ./desktop-flows/hosted-machines.md
+    - name: Hosted machine groups
+      href: ./desktop-flows/hosted-machine-groups.md
     - name: Scale with AVD starter kit
       items:
       - name: Overview
@@ -929,6 +935,8 @@
   - name: Monitor desktop flows
     href: ./desktop-flows/monitor.md
     displayName: Monitor desktop flows in the Center of Excellence (CoE)
+  - name: Machine group certificate renewal for admins
+    href: ./desktop-flows/machine-group-certificates-admins.md
   - name: Set a policy to help prevent data loss
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps
