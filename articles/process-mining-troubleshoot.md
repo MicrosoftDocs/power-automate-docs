@@ -1,13 +1,14 @@
 ---
 title: Troubleshoot issues in process advisor
-description: This topic explains how to troubleshoot issues in the process advisor feature in Power Automate.
+description: Learn how to troubleshoot issues in the process advisor feature in Power Automate.
 author: donums
 contributors:
   - donums
+  - neerajalavalamsft
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/28/2022
+ms.date: 01/05/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -133,7 +134,7 @@ You must be an admin of your Power BI workspace. To learn more about user access
 
 ### "You must be an admin of the Power BI workspace to use it with this report. After you become an admin, try to reanalyze the report."
 
-This is the same issue as above, but the error occurred during process analysis. Once you become an admin using the fix from above, please reanalyze the report.
+This is the same as the previous issue, but the error occurred during process analysis. Once you become an admin using the fix from the previous issue, reanalyze the report.
 
 ### "The process advisor service principal must be an admin of the Power BI workspace to refresh this report."
 
@@ -141,7 +142,7 @@ Enable admin access for the process advisor prod service principal. To learn how
 
 ### "The process advisor service principal must be an admin of the Power BI workspace to refresh this report. After the problem is fixed, try to reanalyze the report."
 
-This is the same issue as above, but the error occurred during process analysis. After ensuring the process advisor service principal is the admin of the workspace, please reanalyze the report.
+This is the same as the previous issue, but the error occurred during process analysis. After ensuring the process advisor service principal is the admin of the workspace, reanalyze the report.
 
 ### "The process advisor service principal cannot access the Power BI workspace."  
 
@@ -149,7 +150,7 @@ Set up the process advisor service principal for your Power BI workspace. To lea
 
 ### "The process advisor service principal cannot access the Power BI workspace. After the problem is fixed, try to reanalyze the report."
 
-This is the same issue as above, but the error occurred during process analysis. After ensuring that the process advisor service princinpal is added to the workspace and has admin access, please reanalyze the report.
+This is the same as the previous issue, but the error occurred during process analysis. After ensuring that the process advisor service principal is added to the workspace and has admin access, reanalyze the report.
 
 ### "The selected Power BI workspace needs premium capacity to work with this report."  
 
@@ -157,4 +158,4 @@ Assign a premium license to your workspace. To learn how to enable premium capac
 
 ### "The selected Power BI workspace needs premium capacity to work with this report. After the problem is fixed, try to reanalyze the report."
 
-This is the same issue as above, but the eror occured during process analysis. After ensuring that your workspace has premium capacity per the documentation link above, please reanalyze the report.
+This is the same as the previous issue, but the error occurred during process analysis. After ensuring that your workspace has premium capacity per [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings), reanalyze the report.
