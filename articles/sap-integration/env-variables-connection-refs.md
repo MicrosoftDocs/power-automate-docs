@@ -1,4 +1,4 @@
----
+﻿---
 title: Create an environment variable with SAP connection parameters (preview)
 description: Define an environment variable in Power Apps that contains all of your SAP system information, then reuse it in your SAP flow actions.
 author: EllenWehrle
@@ -40,7 +40,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
     - **Name**: This name is automatically generated as you enter the display name, but you can change it.
     - **Data Type**: Select **Data source** 
     - **Connector**: Select **SAP ERP** Once selected, additional fields will appear.
-        
+
    :::image type="content" source="media/env-refs/saperp-datasource-variable.png" alt-text="The environment variable panel in Power Apps.":::
 
 1. Complete the relevant fields for your SAP system. Info bubbles are available for most parameters; use the guidance below for additional information. 
