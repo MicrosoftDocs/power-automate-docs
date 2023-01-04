@@ -21,8 +21,9 @@ ms.custom: bap-template
 
 This article presents all the prerequisites and limitations you should consider before installing and using Power Automate on your desktop.
 
-> [!NOTE]
-> If you have any flows created with Selenium IDE or Windows recorder (V1), migrate them to Power Automate for desktop or delete them.
+> [!IMPORTANT]
+>
+> Selenium IDE is no longer supported and Windows recorder (V1) no longer works. Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
 
 ## Prerequisites
 
@@ -48,7 +49,7 @@ This article presents all the prerequisites and limitations you should consider 
 
 - A device that runs Windows 10 (Home, Pro, Enterprise), Windows 11 (Home, Pro, Enterprise), Windows Server 2016, Windows Server 2019, or Windows Server 2022 (devices with ARM processors aren't supported)
 
-    If your device runs Windows 10 Home or Windows 11 Home, you can use Power Automate to create desktop flows and monitor them on the [Power Automate portal](https://powerautomate.com). However, you can't trigger desktop flows from the cloud and run other types of desktop flows (Windows recorder V1 and Selenium IDE).<!-- EDITOR'S NOTE: Do we need to mention Windows recorder and Selenium IDE here and in the table if they're no longer supported? -->
+    If your device runs Windows 10 Home or Windows 11 Home, you can use Power Automate to create desktop flows and monitor them on the [Power Automate portal](https://powerautomate.com). However, you can't trigger desktop flows from the cloud and run other types of desktop flows (Windows recorder V1 and Selenium IDE).
   
     | Activity | Description | Windows Home | Windows Enterprise/Pro/Server |
     |---------|------|----------|-----------|
