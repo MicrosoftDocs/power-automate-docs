@@ -1,10 +1,9 @@
 ---
 title: Install Power Automate
-description: See how to install Power Automate on your device.
+description: Learn how to install Power Automate for desktop on your device.
 author: georgiostrantzas
-ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 12/06/2022
+ms.topic: how-to
+ms.date: 01/05/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -13,56 +12,51 @@ search.app:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.subservice: desktop-flow
+ms.service: power-automate
+ms.custom: bap-template
 ---
 
 # Install Power Automate
 
-Before installing Power Automate, make sure that your device meets the [system requirements](requirements.md).
-
-You can download and install Power Automate through an MSI installer or Microsoft Store. Both options provide the same functionality and features, but the Microsoft Store installation doesn't require users to have admin rights to install.
+Before you install Power Automate on your device, make sure that it meets the [system requirements](requirements.md).
 
 >[!IMPORTANT]
 >
-> - From February 28 2022, Selenium IDE will no longer be supported.
-> - Since November 30 2021, Windows recorder (V1) no longer works.
-> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
-> - Although deploying MSI and Microsoft Store installations on the same machine is possible, duplicate installations may cause issues and aren't recommended.
-> - By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
+> Selenium IDE is no longer supported and Windows recorder (V1) no longer works. Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
 
-## Install Power Automate using MSI installer
+You can download and install Power Automate [using an MSI installer](#install-power-automate-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). Microsoft Store installation doesn't require you to have admin rights on your device.
 
-1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613).
+You should choose one option only. Duplicate installations on the same machine may cause issues and isn't recommended.
+
+By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
+
+## Install Power Automate using the MSI installer
+
+1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613). Save the file to your desktop or Downloads folder.
 
 1. Run the **Setup.Microsoft.PowerAutomate.exe** file.
 
-   **Note**: This file is likely in your **Downloads** folder after you downloaded it in the previous step.
+1. Follow the instructions in the **Power Automate for desktop setup** installer.
 
-1. Follow the instructions in the **Power Automate for desktop setup** installer to complete the installation.
+1. Make your selections for each feature:
 
-1. Make your selections for each feature for the installation to complete.
+    - **Power Automate for desktop** is the app you use to build, edit, and run desktop flows.
 
-    The installer allows you to install two different applications on your device.
+    - **Machine-runtime app** allows you to connect your machine to the Power Automate cloud and harness the full power of robotic process automation (RPA). [Learn more about machine management](./manage-machines.md).
 
-    - **Power Automate for desktop** is the app to build your desktop flows. With it, you can create, edit, and run your automations. To learn more about the desktop flow designer, go to [Power Automate desktop flow designer](./flow-designer.md).
+    <!-- EDITOR'S NOTE: If Selenium IDE is no longer supported, this article shouldn't talk about installing it. -->
+    - Install required files for UI automation in Java applets. Close all Java-related processes before you install these files.
 
-    - **Power Automate machine runtime app** allows you to connect your machine to the Power Automate cloud and harness the full power of your robotic process automation (RPA). To learn more about machine management, go to [Manage machines](./manage-machines.md).
+    - Clear **Optional data collection** if you don't want to send usage data to Microsoft to help us troubleshoot issues with Power Automate. [Learn more about data collection](diagnostic-data.md).
 
-    Additionally, you can:
+      :::image type="content" source="media/desktop-flows-setup/installer-checkboxes.png" alt-text="Screenshot of Power Automate for desktop installation details.":::
 
-    - Add the WebDriver and ChromeDriver components to run desktop flows created with Selenium IDE. To learn more about how to install Selenium IDE, go to [Selenium IDE](#install-selenium-ide-optional).
+1. Select the check box to agree to the terms of use, and then select **Install**.
 
-    - Install the required files for UI automation in Java applets. Before installing, close all Java-related processes.
+## Install Power Automate from Microsoft Store
 
-    During installation, you can also change the default options if you don't want to send usage data to Microsoft. To do so, uncheck **Optional data collection**. To find more information about data collection, go to [Data collection](diagnostic-data.md).
-
-    >[!IMPORTANT]
-    >Sharing usage data with Microsoft may help the support department solve Power Automate issues.
-
-    :::image type="content" source="media/desktop-flows-setup/installer-checkboxes.png" alt-text="Screenshot of the installation details.":::
-
-## Install Power Automate through Microsoft Store
-
-1. There are three ways to find Power Automate in Microsoft Store.
+1. Find Power Automate in Microsoft Store:
 
     - Launch Microsoft Store and search for **Power Automate for desktop**.
 
@@ -74,30 +68,22 @@ You can download and install Power Automate through an MSI installer or Microsof
 
 ## Install an on-premises data gateway
 
-> [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. To learn more, go to [Switch from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> [!NOTE]
+> Gateways for desktop flows are deprecated except for China region. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 Power Automate enables you to [trigger your desktop flows from cloud flows](trigger-desktop-flows.md). To take advantage of this feature, you need to install an on-premises data gateway on your device.
 
 On-premises data gateways establish the required cloud connectivity and must be installed on each device on which you'll trigger desktop flows. They aren't required if you only want to create, edit, and test your desktop flows on these devices.
 
-When you install an on-premises data gateway, it defaults to the region that Power Automate uses.
-
-To find more information regarding on-premises data gateways, go to [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
+When you install an on-premises data gateway, it defaults to the region that Power Automate uses. [Learn how to install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
 ## Install Selenium IDE (optional)
 
 > [!IMPORTANT]
 >
-> - From February 28 2022, Selenium IDE will no longer be supported.
-> - Since November 30 2021, Windows recorder (V1) no longer works.
-> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
+> Selenium IDE is no longer supported and Windows recorder (V1) no longer works. Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
 
-Selenium IDE is an open source tool that enables you to record and playback human interactions on websites.
-
-With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
-
-To install Selenium IDE:
+Selenium IDE is an open source tool that enables you to record and playback human interactions on websites. With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
 
 1. Install and enable the Windows recorder (v1) extension for [Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2151412) or [Google Chrome](https://go.microsoft.com/fwlink/?linkid=2150930).
 
