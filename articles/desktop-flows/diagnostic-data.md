@@ -3,7 +3,7 @@ title: Data collection in Power Automate
 description: Learn about the diagnostic data Microsoft collects in Power Automate.
 author: georgiostrantzas
 ms.topic: overview
-ms.date: 12/16/2022
+ms.date: 01/05/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
