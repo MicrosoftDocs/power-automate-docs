@@ -21,9 +21,13 @@ ms.custom: bap-template
 
 Before you install Power Automate on your device, make sure that it meets the [system requirements](requirements.md).
 
+>[!IMPORTANT]
+>
+> Selenium IDE is no longer supported and Windows recorder (V1) no longer works. Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
+
 You can download and install Power Automate [using an MSI installer](#install-power-automate-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). Microsoft Store installation doesn't require you to have admin rights on your device.
 
-You should choose one option only. Duplicate installations may cause issues and isn't recommended.
+You should choose one option only. Duplicate installations on the same machine may cause issues and isn't recommended.
 
 By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
 
@@ -72,6 +76,20 @@ Power Automate enables you to [trigger your desktop flows from cloud flows](trig
 On-premises data gateways establish the required cloud connectivity and must be installed on each device on which you'll trigger desktop flows. They aren't required if you only want to create, edit, and test your desktop flows on these devices.
 
 When you install an on-premises data gateway, it defaults to the region that Power Automate uses. [Learn how to install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
+
+## Install Selenium IDE (optional)
+
+> [!IMPORTANT]
+>
+> Selenium IDE is no longer supported and Windows recorder (V1) no longer works. Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
+
+Selenium IDE is an open source tool that enables you to record and playback human interactions on websites. With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
+
+1. Install and enable the Windows recorder (v1) extension for [Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2151412) or [Google Chrome](https://go.microsoft.com/fwlink/?linkid=2150930).
+
+1. Download and install the [Selenium IDE extension](https://go.microsoft.com/fwlink/?linkid=2107665) for Microsoft Edge (version 80 or later) or Google Chrome.
+
+    For Microsoft Edge, select **Allow extensions from other stores** in the browser settings, and then select **Add to Chrome** in the extension page.
 
 ## Uninstall Power Automate
 
