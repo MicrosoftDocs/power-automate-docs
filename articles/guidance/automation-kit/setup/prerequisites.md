@@ -21,22 +21,21 @@ ms.reviewer: deonhe
 The following prerequisites are required to install and use the Automation Kit.
 
 - An administrative account, which is called **Automation CoE Admin** or similar.
-
 - The Automation Kit requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration. Therefore, the account you set up as the **Automation CoE Admin** needs the following.
 
 ## Roles
 
-- Microsoft Power Platform service admin, or Dynamics 365 service admin.
+- Microsoft Power Platform service admin or Dynamics 365 service admin.
 - Account must be mail enabled.
 - Azure contributor role (for Key Vault and app registration).
 
 ## Azure app registration
 
-An Azure app registration, this is used for an application user for the Dataverse Web API in each of the satellite environments.
+An Azure app registration is used for an application user for the Dataverse Web API in each of the satellite environments.
 
 ## Azure Key Vault
 
-Azure Key Vault(s) is used to store secrets for the Azure app registration mentioned earlier in the article, depending on your requirements. There might be one Key Vault per satellite environment. Here's an example of how you may name your Key Vaults.
+Azure Key Vaults are used to store secrets for the Azure app registration mentioned earlier, depending on your requirements. There might be one Key Vault per satellite environment. Here's an example of how you may name your Key Vaults.
 
 - KV-Contoso-Dev
 - KV-Contoso-Test
@@ -49,16 +48,18 @@ Azure Key Vault(s) is used to store secrets for the Azure app registration menti
 
    Azure Key Vault must have **Get** secret access policy set for the Dataverse service principal.
 
-1. Select **Add Access Policy**.
-1. In the **Secret permissions** dropdown select **Get**.
-1. Next to **Select principal**, select **None selected**, and then search for **Dataverse**.
-1. Select the Dataverse service principal with the **00000007-0000-0000-c000-000000000000** identity.
-1. Select **Add**.
-1. Select **Save**.
+1. Select **Access policies**
+2. Select **Create**.
+3. Under **Secret permissions** select **Get** and click **Next**.
+4. In the service principal search blank, search for **Dataverse**.
+5. Select the Dataverse service principal with the **00000007-0000-0000-c000-000000000000** identity.
+6. Click **Next**.
+7. Click **Next**.
+8. Click **Create**.
 
 ## License requirements
 
-All users must have one of the following licenses.
+All users must have one of the following licenses:
 
 - Microsoft 365 license (E3, E5).
 - Power Automate per user with attended RPA license (non-trial).
@@ -68,14 +69,14 @@ All users must have one of the following licenses.
 
 ## Enable code components
 
-The Automation Kit uses the Power Platform Creator Kit, which was developed to bootstrap and enhance the canvas apps look and feel. The Creator Kit uses Fluent UI references and guidelines. [Read more about fluent](https://www.microsoft.com/design/fluent/).
+The Automation Kit uses the Power Platform Creator Kit, which was developed to bootstrap and enhance the canvas apps look and feel. The Creator Kit uses Fluent UI references and guidelines. [Read more about Fluent](https://www.microsoft.com/design/fluent/).
 
-The Creator Kit uses a component library and code components. You must enable code components inside all the environments into which the the Automation Kit will be installed.
+The Creator Kit uses a component library and code components. You must enable code components inside all the environments into which the Automation Kit will be installed.
 
 > [!WARNING]
-> You will have to uninstall and potentially lose all data if the Power Apps component framework for canvas apps isn't turned on for the environments where the Automation Kit is installed or upgraded. Enable the component framework before installing or upgrading.
+> You'll have to uninstall and potentially lose all data if the Power Apps component framework for canvas apps isn't turned on for the environments where the Automation Kit is installed or upgraded. Enable the component framework before installing or upgrading.
 
-![A screenshot that displays the environments](../media/CodeComponentsTurnedOn.png)
+![A screenshot that displays the environments](../media/CodeComponentsTurnedOn.png "A screenshot that displays the environments.")
 
 1. Sign in to the Power Platform admin center.
 1. Select an environment where you want to enable this feature. This is needed in both the [main](/power-automate/guidance/automation-kit/setup/main) and all [satellite](/power-automate/guidance/automation-kit/setup/satellite) environments.

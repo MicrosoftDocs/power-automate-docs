@@ -6,8 +6,8 @@ ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 11/03/2022
 ms.custom: intro-internal
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

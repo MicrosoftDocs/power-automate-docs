@@ -14,8 +14,8 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/30/2020
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -29,9 +29,10 @@ search.audienceType:
 # Use inputs and outputs in Selenium IDE flows
 
 >[!IMPORTANT]
->This section covers topics to develop automations using legacy systems:
-> - Selenium IDE: If you are just starting your RPA automation project, we recommend that you use Power Automate for desktop instead.
-> - Windows recorder (V1): From November 30th, desktop flows will no longer be supported. Migrate your flows to Power Automate for desktop or delete them.
+>
+> - From February 28 2022, Selenium IDE will no longer be supported.
+> - Since November 30 2021, Windows recorder (V1) no longer works.
+> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
 
 You can define inputs to pass to your automated applications during playback. You can also pass *output* from your automated applications to your flow.
 

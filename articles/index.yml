@@ -14,6 +14,7 @@ metadata:
   author: MSFTMAN #Required; your GitHub user alias, with correct capitalization.
   ms.author: deonhe #Required; microsoft alias of author; optional team alias.
   ms.date: 02/02/2021 #Required; mm/dd/yyyy format.
+  ms.reviewer: angieandrews
   hide_bc: false
 
 
@@ -44,7 +45,9 @@ highlightedContent:
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
 conceptualContent:  
+
   items:
     - title: Get started with Power Automate
       links:
@@ -54,13 +57,10 @@ conceptualContent:
         - text: Create your first flow
           url: ./getting-started.md#create-your-first-flow
           itemType: how-to-guide
-        - text: Plan with process advisor 
-          url: ./process-advisor-overview.md
-          itemType: overview
         - text: Power Automate FAQs
           url: ./frequently-asked-questions.yml
           itemType: reference      
-    
+
     - title: Create cloud flows
       links:
         - text: Automated flows
@@ -84,6 +84,18 @@ conceptualContent:
         - text: Create desktop flows
           url: ./desktop-flows/create-flow.md
           itemType: how-to-guide
+
+    - title: Plan with process advisor
+      links:
+        - text: Process mining
+          url: process-mining-overview.md
+          itemType: overview
+        - text: Minit desktop application
+          url: minit/minit-desktop-application-overview.md
+          itemType: overview       
+        - text: Task mining
+          url: task-mining-overview.md
+          itemType: overview
 
     - title: Use flows with...
       links:
@@ -244,5 +256,5 @@ additionalContent:
         url: /dynamics365/
       # Card
       - title: Microsoft Azure
-        summary: "Ever-expanding set of cloud computing services to help your organization meet it's business challenges"
+        summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
         url: /azure

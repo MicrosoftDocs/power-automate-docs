@@ -7,8 +7,8 @@ ms.subservice: desktop-flow
 ms.topic: article 
 ms.date: 11/03/2022
 ms.custom: intro-internal
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -24,7 +24,7 @@ search.audienceType:
 
 Power Automate enables regular and power users to automate processes on their desktops, saving time and eliminating human error.
 
-Focus on other activities by automating routine and repetitive tasks like organizing or backing up your files and folders. Create flows to extract product prices from websites, save them in Excel spreadsheets, and then [email them](actions-reference/email.md) as attachments. [Fill in web forms](automation-web.md#data-population-on-the-web) by supplying information dynamically from your files.  
+Focus on other activities by automating routine and repetitive tasks like organizing or backing up your files and folders. Create flows to extract product prices from websites, save them in Excel spreadsheets, and then [email them](actions-reference/email.md) as attachments. [Fill in web forms](automation-web.md#enter-data-on-webpages) by supplying information dynamically from your files.  
 
 Create automated workflows with step-by-step guidance and an intuitive, no-code interface anyone can use, regardless of their technical expertise. Build flows from a wide variety of pre-made actions, or [record your interactions as steps](recording-flow.md) to be played back anytime.
 

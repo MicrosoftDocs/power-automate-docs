@@ -1,17 +1,18 @@
 ---
-title: Work with desktop flows using code | Microsoft Docs
+title: Work with desktop flows using code
 description: Developer guide to integrate desktop flows capabilities within their applications.
 author: benabbon
 ms.topic: article
-ms.date: 07/13/2022
+ms.date: 12/01/2022
 ms.author: nabena
+ms.reviewer: gtrantzas
 ms.subservice: developer
 search.app: 
   - Flow
 search.audienceType: 
   - developer
 ---
-# Work with desktop flows using code
+# Work with desktop flows using APIs
 
 Developers can add [desktop flows](/power-automate/desktop-flows/introduction) functionality to their applications, including programmatically triggering and canceling desktop flows. These capabilities are offered as part of the Microsoft Dataverse platform.
 
@@ -63,73 +64,76 @@ GET https://[Organization URI]/api/data/v9.2/workflows?$filter=category+eq+6&$se
 
 If you need to retrieve the flow schema for inputs and/or outputs, you can use the clientData field for the target workflow.
 
-### Request schema for desktop flows
+### Request inputs schema for desktop flows
 
 ```http
 Authorization: Bearer eyJ0eXAiOi...
 Accept: application/json
 
-GET https://[Organization URI]/api/data/v9.2/workflows([Workflow Id])/clientdata/$value HTTP/1.1  
+GET https://[Organization URI]/api/data/v9.2/workflows([Workflow Id])/inputs/$value HTTP/1.1  
 ```
 
-### Response to the request to get the desktop flows schema
+### Response to the request to get the desktop flows inputs schema
 
 ```json
 {
-    "clientversion": "2.19.00170.22097",
-    "properties": {
-        "definition": {
-            "dependencies": [],
-            "isvalid": true,
-            "name": "Desktop Flow 1",
-            "package": "UEsDBBQAAAAIAIqZlF...",
-            "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#"
-        },
-        "inputs": {
-            "schema": {
-                "properties": {
-                    "Input1": {
-                        "default": "",
-                        "description": "",
-                        "format": null,
-                        "title": "Input 1",
-                        "type": "string",
-                        "value": "0"
-                    },
-                    "Input2": {
-                        "default": "",
-                        "description": "",
-                        "format": null,
-                        "title": "Input2",
-                        "type": "string",
-                        "value": ""
-                    }
-                },
-                "type": "object"
+    "schema": {
+        "properties": {
+            "inputText": {
+                "default": "",
+                "description": "",
+                "format": null,
+                "title": "inputText",
+                "type": "string",
+                "value": ""
+            },
+            "inputInteger": {
+                "default": "",
+                "description": "",
+                "format": null,
+                "title": "inputInteger",
+                "type": "number",
+                "value": "0"
             }
         },
-        "outputs": {
-            "schema": {
-                "properties": {
-                    "Output1": {
-                        "default": "",
-                        "description": "",
-                        "format": null,
-                        "title": "Output",
-                        "type": "string",
-                        "value": null
-                    }
-                },
-                "type": "object"
+        "type": "object"
+    }
+}
+```
+
+### Request outputs schema for desktop flows
+
+```http
+Authorization: Bearer eyJ0eXAiOi...
+Accept: application/json
+
+GET https://[Organization URI]/api/data/v9.2/workflows([Workflow Id])/outputs/$value HTTP/1.1  
+```
+
+### Response to the request to get the desktop flows outputs schema
+
+```json
+{
+    "schema": {
+        "properties": {
+            "outputText": {
+                "default": "",
+                "description": "",
+                "format": null,
+                "title": "outputText",
+                "type": "string",
+                "value": null
+            },
+            "outputInteger": {
+                "default": "",
+                "description": "",
+                "format": null,
+                "title": "outputInteger",
+                "type": "number",
+                "value": null
             }
-        }
-    },
-    "schemaversion": "ROBIN_20211012",
-    "targets": {
-        "schema": {
-            "properties": {},
-            "type": "object"
-        }
+        },
+        "type": "object"
     }
 }
 ```
@@ -201,7 +205,7 @@ To call the action, you'll need the following information.
   > For more information, see [Create desktop flow connections](../desktop-flows/desktop-flow-connections.md).
 
   >[!TIP]
-  > Alternatively, you can use a connection reference's logical name as the input of the connection instead of the connection name (usage example described below). The connection references are stored in the Dataverse table connectionreference and can be listed programatically in the same way as desktop flows detailled in the [List available desktop flows](#list-available-desktop-flows) section.
+  > Alternatively, you can use a connection reference's logical name as the input of the connection instead of the connection name (usage example described below). The connection references are stored in the Dataverse table connectionreference and can be listed programmatically in the same way as desktop flows detailed in the [List available desktop flows](#list-available-desktop-flows) section.
   >
   > For more information, see [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference) and [connectionreference table/entity reference](/power-apps/developer/data-platform/reference/entities/connectionreference).
   
@@ -246,14 +250,17 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
     "flowsessionId": "d9687093-d0c0-ec11-983e-0022480b428a"
 }
 ```
->[!WARNING]
->When using the API, there are some limitations to be aware of:
+
+The inputs of the script are viewable in the run details page on the Power Automate portal (in Preview).
+
+> [!WARNING]
+> When using the API, there are some limitations to be aware of:
 >
->* When triggering a desktop flow run using the API, the inputs of the script are not viewable in the run details page on the power automate portal.
+> - Triggering a desktop flow run with an account having "User" privileges will work. However, canceling the run and querying the status needs "Owner" privileges.
 >
->* The owner of the flow session representing the run is mapped to the owner of the workflow entity representing the desktop flow. There will be some limitations when calling the API on a workflow with a "User" privilege: Canceling the run and querying the status might be blocked for missing privileges on the flow session.
+> - Dataverse impersonation isn't supported.
 >
->* Dataverse impersonation isn't supported.
+> - The input field content size is limited to 2 MB.
 
 ### Receive notification on script completion
 
@@ -281,27 +288,29 @@ POST [yourCallbackURL]
     "flowsessionid": "d9687093-d0c0-ec11-983e-0022480b428a"
 }
 ```
+
 If no callback URL parameter is provided, the flow session status should be polled from Dataverse (refers to [Get the status of a desktop flow run](#get-the-status-of-a-desktop-flow-run)).
 
-
-  >[!NOTE]
-  > - You can still use the status polling as a fallback mechanism even if you provide a callback URL parameter.
-  > - Your callback endpoint operation should be idempotent.
-  > - The POST request will be retried three times with one second interval if your endpoint responds with a Server Error response (code 500 and above) or a "Request Timeout" response (code 408).
+>[!NOTE]
+>
+> - You can still use the status polling as a fallback mechanism even if you provide a callback URL parameter.
+> - Your callback endpoint operation should be idempotent.
+> - The POST request will be retried three times with one second interval if your endpoint responds with a Server Error response (code 500 and above) or a "Request Timeout" response (code 408).
 
 Requirements for the callback URL parameter
+
 - Your server must have the current [TLS and cipher suites](/power-platform/admin/server-cipher-tls-requirements).
 - Only the HTTPS protocol is allowed.
 - Access to localhost (loopback) isn't permitted.
 - IP addresses can't be used. You must use a named web address that requires DNS name resolution.
 - Your server must allow connections from [Power Platform and Dynamics 365 services IP address values specified under the AzureCloud service tag](/power-platform/admin/online-requirements#ip-addresses-required).
 
-  >[!TIP]
-  > As the callback call isn't authenticated, some precautions should be taken
-  > - Check the flow session Id validity when the callback notification is received. Dataverse is the source of truth.
-  > - Implement a rate limit strategy on your server side.
-  > - Try to limit the callback URL sharing between several organizations.
-
+>[!TIP]
+> As the callback call isn't authenticated, some precautions should be taken
+>
+> - Check the flow session Id validity when the callback notification is received. Dataverse is the source of truth.
+> - Implement a rate limit strategy on your server side.
+> - Try to limit the callback URL sharing between several organizations.
 
 ## Cancel a desktop flow run
 
@@ -321,7 +330,6 @@ POST https://[Organization URI]/api/data/v9.2/flowsessions(d9687093-d0c0-ec11-98
 ```json
 HTTP/1.1 204 No Content
 ```
-
 
 ### Errors
 

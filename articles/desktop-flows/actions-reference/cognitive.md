@@ -1,13 +1,13 @@
 ---
-title: Cognitive
-description: Cognitive Actions Reference
+title: Cognitive actions overview
+description: See all the available cognitive actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/27/2021
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.date: 11/23/2022
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -19,10 +19,12 @@ search.audienceType:
   - enduser
 ---
 
-# Cognitive actions 
+# Cognitive actions
 
 The cognitive actions have been segregated into three new categories.
 
 - [Google cognitive](googlecognitive.md)
 - [IBM cognitive](ibmcognitive.md)
 - [Microsoft cognitive](microsoftcognitive.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

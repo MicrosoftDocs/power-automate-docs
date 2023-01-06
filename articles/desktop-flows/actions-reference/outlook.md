@@ -1,13 +1,13 @@
 ---
-title: Outlook
-description: Outlook Actions Reference
+title: Outlook actions reference
+description: See all the available Outlook actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.date: 11/24/2022
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -19,57 +19,48 @@ search.audienceType:
   - enduser
 ---
 
-# Outlook
+# Outlook actions
 
+For machines with an installation of Outlook, you can manage your mailboxes with the Outlook actions.
 
+After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder.
 
-Automate sending, receiving, and managing emails of an Outlook account
+The following example retrieves all the email messages from the folder **Tickets**, a subfolder of the Inbox. The specified filters limit the results to messages from a specific sender that contain particular words in their subject and body.
 
-[Launch Outlook](#launch)  
-[Retrieve email messages from Outlook](#retrieveemailmessages)  
-[Send email through Outlook](#sendemailthroughoutlook)  
-[Process email messages in Outlook](#processemailmessages)  
-[Save Outlook email messages](#saveoutlookemailmessages)  
-[Respond to Outlook mail message](#respondtomailmessage)  
-[Close Outlook](#close)  
+:::image type="content" source="media/outlook/retrieve-messages-example.png" alt-text="Screenshot of the Retrieve outlook emails action.":::
 
-## Getting started with Outlook actions
+The **Process email messages in Outlook** action processes email messages retrieved by the **Retrieve email messages from Outlook** action. To use this action, you must provide an Outlook instance, an account, and a variable with retrieved emails. Then, you can select whether to move, delete or mark as read the selected messages.
 
-For PCs with an installation of Outlook, users can manage the mailboxes of their accounts with the Outlook group of actions.
+Store Outlook email messages locally using the **Save Outlook email messages** action. Specify an Outlook instance, an account, a variable with the messages to save, and the format and location for the created files.
 
-After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder. In the figure below, the action retrieves all the email messages from the folder **Tickets** which is in a subfolder of the Inbox. The filters have been configured to search for email messages from a specific address, further specifying the contents of the subject with a previously defined variable. Any attachments are also saved.
+To close an open Outlook instance, use the **Close Outlook** action.
 
-![Screenshot of the Retrieve outlook emails action.](media/outlook/retrieve-messages-example.png)
+## <a name="launch"></a> Launch Outlook
 
-The **Process email messages in Outlook** action processes email messages retrieved by the **Retrieve email messages from Outlook** action. The Outlook instance, account, and retrieved emails variable are required to use this action. Select whether to Move, delete or mark as read as the operation to perform.
+Launch Outlook and create a new Outlook instance.
 
-Store Outlook email messages locally by using the **Save Outlook email messages** action. Specify the Outlook instance, account, and messages to save via variables, as well as the format and location to save in.
+### Input parameters
 
-To close the instance of Outlook opened with Power Automate, use the **Close Outlook** action. 
-
-## Outlook actions
-
-### <a name="launch"></a> Launch Outlook
-Launch Outlook and create a new Outlook instance
-
-##### Input parameters
 This action doesn't require any input.
 
-##### Variables produced
+### Variables produced
+
 |Argument|Type|Description|
 |-----|-----|-----|
 |OutlookInstance|[Outlook instance](../variable-data-types.md#instances)|The specific Outlook instance for use with later Outlook actions|
 
+### <a name="launch_onerror"></a> Exceptions
 
-##### <a name="launch_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to launch Outlook|Indicates a problem launching Outlook|
 
-### <a name="retrieveemailmessages"></a> Retrieve email messages from Outlook
-Retrieve email messages from an Outlook account
+## <a name="retrieveemailmessages"></a> Retrieve email messages from Outlook
 
-##### Input parameters
+Retrieve email messages from an Outlook account.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
@@ -84,14 +75,14 @@ Retrieve email messages from an Outlook account
 |Attachments|N/A|Save attachments, Do not save attachments|Do not save attachments|Specifies whether to save the attachments of the email messages retrieved or not|
 |Save attachments into|No|[Folder](../variable-data-types.md#files-and-folders)||The path to save the attachments of the retrieved emails into|
 
+### Variables produced
 
-##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RetrievedEmails|[List](../variable-data-types.md#list) of [Outlook mail messages](../variable-data-types.md#outlook)|The retrieved email messages for later processing. The variable contain a list of Outlook message objects|
 
+### <a name="retrieveemailmessages_onerror"></a> Exceptions
 
-##### <a name="retrieveemailmessages_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
@@ -99,10 +90,12 @@ Retrieve email messages from an Outlook account
 |Directory for saving attachments not found|Indicates that the directory to save the attachments into doesn't exist|
 |Failed to retrieve email messages from Outlook|Indicates a problem retrieving the email messages from Outlook|
 
-### <a name="sendemailthroughoutlook"></a> Send email through Outlook
-Create and send a new email message through Outlook
+## <a name="sendemailthroughoutlook"></a> Send email through Outlook
 
-##### Input parameters
+Create and send a new email message through Outlook.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
@@ -117,44 +110,50 @@ Create and send a new email message through Outlook
 |Body is HTML|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to interpret the body of the email as HTML coding|
 |Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
+### Variables produced
 
-##### Variables produced
 This action doesn't produce any variables.
 
-##### <a name="sendemailthroughoutlook_onerror"></a> Exceptions
+### <a name="sendemailthroughoutlook_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist. Power Automate doesn't throw this error for the email addresses populated in the **Send from** input parameter|
 |Failed to send email|Indicates a problem sending the email|
 |Attachment not found|Indicates that the specified attachment(s) don't exist|
 
-### <a name="processemailmessages"></a> Process email messages in Outlook
+## <a name="processemailmessages"></a> Process email messages in Outlook
+
 Move or deletes an email (or a list of email messages) retrieved by a 'Retrieve emails from Outlook' action.
 
-##### Input parameters
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
 |Account|No|[Text value](../variable-data-types.md#text-value)||The name of the Outlook account (data file name) to work with|
 |Email messages to process|No|[List](../variable-data-types.md#list) of [Outlook mail messages](../variable-data-types.md#outlook)||The email message(s) to process. Use a variable populated by a 'Retrieve email messages from Outlook' action|
 |Operation|N/A|Delete email messages, Move email messages to mail folder, Mark as unread|Move email messages to mail folder|Specifies which operation to perform on the specified email messages|
-|Mail folder|No|[Text value](../variable-data-types.md#text-value)||The name of the folder to retrieve messages from. Enter the full folder path for subfolders (e.g., Inbox\Work)|
+|Mail folder|No|[Text value](../variable-data-types.md#text-value)||The name of the folder to retrieve messages from. Enter the full folder path for subfolders (for example, Inbox\Work)|
 
+### Variables produced
 
-##### Variables produced
 This action doesn't produce any variables.
 
-##### <a name="processemailmessages_onerror"></a> Exceptions
+### <a name="processemailmessages_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
 |Specified mail-folder doesn't exist|Indicates that the specified mail folder doesn't exist|
 |Failed to process email messages in Outlook|Indicates a problem processing the specified email messages in Outlook|
 
-### <a name="saveoutlookemailmessages"></a> Save Outlook email messages
-Save Outlook email messages given an account
+## <a name="saveoutlookemailmessages"></a> Save Outlook email messages
 
-##### Input parameters
+Save Outlook email messages given an account.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
@@ -162,28 +161,30 @@ Save Outlook email messages given an account
 |Email message(s) to save|No|[List](../variable-data-types.md#list) of [Outlook mail messages](../variable-data-types.md#outlook)||The email message(s) to save. Use a variable populated by a 'Retrieve email messages from Outlook' action|
 |Save format|N/A|Text only (*.txt), Outlook template (*.oft), Outlook message format (*.msg), Outlook message format - Unicode (*.msg), HTML (*.html), MHT files (*.mht)|Outlook message format (*.msg)|Specifies the format to save the messages|
 |File name|N/A|Default, Custom|Default|Specifies whether to save the messages using the default name (subject) or provide another|
-|Save as|No|[Text value](../variable-data-types.md#text-value)||Specifies the custom name for messages' name which differs from message to message by an automatically added suffix|
+|Save as|No|[Text value](../variable-data-types.md#text-value)||Specifies the custom name for messages' name, which differs from message to message by an automatically added suffix|
 |Save email message(s) to|No|[Folder](../variable-data-types.md#files-and-folders)||The folder to save the messages to|
 
+### Variables produced
 
-##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |StoredMessagesFiles|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The file paths of the saved email messages for later processing|
 
+### <a name="saveoutlookemailmessages_onerror"></a> Exceptions
 
-##### <a name="saveoutlookemailmessages_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
 |Directory not found|Indicates that the specified email message(s) couldn't be saved because the directory doesn't exist|
-|Email message is deleted or moved to another folder|Indicates that the specified email message(s) couldn't be saved because they are moved or deleted|
+|Email message is deleted or moved to another folder|Indicates that the specified email message(s) couldn't be saved because they're moved or deleted|
 |Failed to save email message(s)|Indicates a problem saving the specified email message(s)|
 
-### <a name="respondtomailmessage"></a> Respond to Outlook mail message
-Respond to an Outlook message, by replying, replying to all or forwarding it
+## <a name="respondtomailmessage"></a> Respond to Outlook mail message
 
-##### Input parameters
+Respond to an Outlook message, by replying, replying to all or forwarding it.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. Specify this variable in a 'Launch Outlook' action|
@@ -196,35 +197,36 @@ Respond to an Outlook message, by replying, replying to all or forwarding it
 |Body|Yes|[Text value](../variable-data-types.md#text-value)||The text of the body|
 |Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
+### Variables produced
 
-##### Variables produced
 This action doesn't produce any variables.
 
-##### <a name="respondtomailmessage_onerror"></a> Exceptions
+### <a name="respondtomailmessage_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Failed to find Outlook account|Indicates that the specified Outlook account doesn't exist|
 |Failed to send email|Indicates a problem sending the email|
 |Attachment not found|Indicates that the specified attachment(s) don't exist|
 
-### <a name="close"></a> Close Outlook
-Close a previously launched Outlook instance
+## <a name="close"></a> Close Outlook
 
-##### Input parameters
+Close a previously launched Outlook instance.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Outlook instance|No|[Outlook instance](../variable-data-types.md#instances)||The Outlook instance to work with. This variable is specified in a 'Launch Outlook' action|
 
+### Variables produced
 
-##### Variables produced
 This action doesn't produce any variables.
 
-##### <a name="close_onerror"></a> Exceptions
+### <a name="close_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Failed to close Outlook instance|Indicates a problem closing the Outlook instance|
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

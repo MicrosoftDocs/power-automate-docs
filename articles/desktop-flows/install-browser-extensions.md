@@ -1,84 +1,110 @@
 ---
 title: Install Power Automate browser extensions
-description: See how to install Power Automate browser extensions.
+description: Learn how to install Power Automate for desktop browser extensions.
 author: georgiostrantzas
-ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 11/07/2022
-ms.author: gtrantzas
-ms.reviewer: pefelesk
+ms.topic: how-to
+ms.date: 01/05/2023
+ms.author: pefelesk
+ms.reviewer: gtrantzas
 contributors:
+- NikosMoutzourakis
 search.app: 
   - Flow 
 search.audienceType: 
   - flowmakers
   - enduser
+ms.subservice: desktop-flow
+ms.service: power-automate
+ms.custom: bap-template
 ---
 
 # Install Power Automate browser extensions
 
-To automate web-related tasks, Power Automate provides the built-in Automation browser that is preconfigured and works out of the box. Besides the Automation browser, it also supports the four most popular browsers: Microsoft Edge, Internet Explorer, Google Chrome, and Mozilla Firefox. These browsers need extra configuration and/or browser extensions to work.
+To automate web-related tasks, Power Automate provides a built-in Automation browser that's set up for you and works out of the box.
+
+Power Automate also supports the four most popular browsers: Microsoft Edge, Internet Explorer, Google Chrome, and Mozilla Firefox. These browsers need extra setup and extensions to work with Power Automate.
 
 ## Install browser extensions
 
-When Power Automate installation is complete, the installer will prompt you to install the appropriate extension for your browser. The links inside the installer send you to the store of each extension.
+When installation of Power Automate for desktop is complete, the installer prompts you to install the Power Automate extension for your browser. The links in the installer send you to the appropriate extension store.
 
-:::image type="content" source="media/desktop-flows-setup/screen.png" alt-text="Screenshot of the installation success dialog.":::
+:::image type="content" source="media/desktop-flows-setup/screen.png" alt-text="Screenshot of the Power Automate for desktop installation success confirmation.":::
 
-If you skip the installation of the browser extensions, you can do it manually later using the following links or through the **Tools** > **Browser extensions** options in the flow designer.
+If you skip the automatic installation of the browser extension, you can do it yourself later. Use the following links or go through the **Tools** > **Browser extensions** options in the [flow designer](flow-designer.md).
 
-- [Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2151411)
-- [Google Chrome](https://go.microsoft.com/fwlink/?linkid=2150929)
-- [Mozilla Firefox](https://go.microsoft.com/fwlink/?linkid=2151511)
+For Power Automate for desktop v2.27 or later:
 
-## Configure Microsoft Edge
+- [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/microsoft-power-automate/kagpabjoboikccfdghpdlaaopmgpgfdc)
+- [Google Chrome](https://chrome.google.com/webstore/detail/microsoft-power-automate/ljglajjnnkapghbckkcmodicjhacbfhk)
+- [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/microsoft-power-automate/)
 
-To ensure that **Microsoft Edge** works as expected with Power Automate, disable running background apps when Microsoft Edge is closed. 
+For Power Automate for desktop v2.26 or earlier (legacy):
 
-To disable this option, go to **Settings** > **System** and disable **Continue running background apps when Microsoft Edge is closed**.
+- [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/microsoft-power-automate/njjljiblognghfjfpcdpdbpbfcmhgafg)
+- [Google Chrome](https://chrome.google.com/webstore/detail/microsoft-power-automate/gjgfobnenmnljakmhboildkafdkicala)
 
-## Configure Google Chrome
+### Alternative ways to install browser extensions
 
-To ensure that **Google Chrome** works as expected with Power Automate, disable running background apps when Chrome is closed.
+After Power Automate for desktop version 2.27, the Google Chrome and Mozilla Firefox browser extensions are part of the installation. Find the extension files in the following path: **C:\Program Files (x86)\Power Automate Desktop\BrowserExtensions**.
 
-To disable this option, go to **Settings** > **Advanced** > **System** and disable **Continue running background apps when Google Chrome is closed**.
+#### Install extension for Google Chrome
 
-## Configure Mozilla Firefox
+1. Go to **Chrome extensions** through the browser's settings or enter **chrome://extensions/** in the address bar.
 
-Firefox alerts that freeze the browser and prevent users from switching to other tabs or windows may affect your desktop flows. To disable this feature:
+1. Make sure that **Developer mode** is turned on.
 
-1. Populate the URL bar with the phrase **about:config**
+1. Select **Load unpacked**.
 
-1. Search for the **prompts.tab_modal.enabled** preference in the list and change it to **false**.
+1. Browse to the browser extension folder of your Power Automate installation.
 
-## Configure Internet Explorer
+1. Select **Select folder**, and then select **Add**.
 
-By default, Internet Explorer works in protected mode to prevent any external application from controlling it. While Power Automate can still work with this setting enabled, it won't be able to clear the browser's cache or cookies.
+Alternatively, you can launch Google Chrome and drag the extension file into the browser window.
 
-To disable protected mode and allow Power Automate to clear the browser's cache and cookies:
+#### Install extension for Mozilla Firefox
 
-1. Launch Internet Explorer, select the **gear icon**, and choose **Internet options** in the menu.
+1. Go to the **Firefox Add-ons Manager** through the browser's settings or enter **about:addons** in the address bar.
 
-1. In the **Internet options** dialog, navigate to **Security** > **Internet**, and disable **Enable Protected Mode**. Repeat the same step for the **Local intranet** and **Trusted sites** zones.
+1. Select the gear icon, and then select **Install Add-on From File…**.
 
-    :::image type="content" source="media/install-browser-extensions/internet-explorer-internet-protected-mode.png" alt-text="Screenshot of the security tab in the Internet Explorer options":::
+1. Browse to the browser extension folder of your Power Automate installation.
 
-1. Select **Apply** and **OK** to save the change and close the dialog .
+1. Select **Open**, and then select **Add**.
 
-## Configure Internet Explorer for servers
+Alternatively, you can launch Mozilla Firefox and drag the extension file to the browser window.
 
-To use Internet Explorer in Windows Servers, you have to disable the **Internet Explorer Enhanced Security Configuration** feature. This feature prohibits all desktop flows from properly launching an Internet Explorer or Automation browser instance via the **Launch new Internet Explorer** action. Additionally, it prevents web helpers from working as expected.
+## Set up browsers
 
-To disable the IEESC feature:
+To make sure that your browser works as expected with Power Automate, you'll need to turn off a couple of features.
 
-1. Launch **Server Manager** and select the **Local Server** tab.
+- Microsoft Edge: Go to **Settings** > **System** and turn off **Continue running background apps when Microsoft Edge is closed**.
 
-1. Select **Internet Explorer Enhanced Security Configuration** to open the respective configuration dialog.
+- Google Chrome: Go to **Settings** > **Advanced** > **System** and turn off **Continue running background apps when Google Chrome is closed**.
 
-1. Disable the **IEESC** feature for both administrators and users.
+- Mozilla Firefox: Firefox alerts that freeze the browser and prevent users from switching to other tabs or windows may affect your desktop flows. Turn off this feature.
 
-    :::image type="content" source="media/install-browser-extensions/internet-explorer-servers.png" alt-text="Screenshot of the IEESC feature in the Local server settings.":::
+  1. Enter **about:config** in the address bar.
+  1. Search for the **prompts.tab_modal.enabled** preference in the list and change it to **false**.
 
-1. Select **OK** to apply the changes.
+- Internet Explorer: By default, Internet Explorer works in protected mode to prevent any external application from controlling it. While Power Automate can still work with this setting turned on, it won't be able to clear the browser's cache or cookies. Turn off protected mode.
+
+  1. Select the **gear icon**, and then select **Internet options**.
+  1. Navigate to **Security** > **Internet** and turn off **Enable Protected Mode**. Repeat the same step for the **Local intranet** and **Trusted sites** zones.
+
+        :::image type="content" source="media/install-browser-extensions/internet-explorer-internet-protected-mode.png" alt-text="Screenshot of the security tab in Internet Explorer options.":::
+
+  1. Select **OK**.
+
+- Internet Explorer for servers: To use Internet Explorer in Windows Servers, you must turn off **Internet Explorer Enhanced Security Configuration**. This feature prohibits all desktop flows from properly launching an Internet Explorer or Automation browser instance through the **Launch new Internet Explorer** action. Additionally, it prevents web helpers from working as expected.
+
+  1. Launch **Server Manager** and select the **Local Server** tab.
+
+  1. Select **Internet Explorer Enhanced Security Configuration**.
+
+  1. Turn off **IEESC** for both administrators and users.
+
+      :::image type="content" source="media/install-browser-extensions/internet-explorer-servers.png" alt-text="Screenshot of the IEESC feature in the Internet Explorer Local server settings.":::
+
+  1. Select **OK**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,13 +1,13 @@
 ---
-title: Exchange
-description: Exchange Actions Reference
+title: Exchange Server actions reference
+description: See all the available Exchange Server actions.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/02/2020
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.date: 11/23/2022
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -19,38 +19,31 @@ search.audienceType:
   - enduser
 ---
 
-# Exchange
+# Exchange Server actions
 
 > [!WARNING]
-> This group of actions is intended for Exchange Server automation scenarios. For automation scenarios regarding Exchange Online, use the corresponding Office 365 cloud connectors through cloud flows.
+> This group of actions is intended for Exchange Server automation scenarios. To automate Exchange Online, use the corresponding Office 365 cloud connectors in cloud flows.
 
-Automate sending, receiving, and managing emails through Exchange
+The Exchange Server actions enable you to connect to an Exchange server and manage your correspondence.
 
-[Connect to Exchange server](#connecttoexchangeserver)  
-[Retrieve Exchange email messages](#retrieveexchangemessages)  
-[Send Exchange email message](#sendmessage)  
-[Process Exchange email messages](#processexchangemessages)
+Exchange Server actions require a connection to an Exchange server that you can establish using the **Connect to Exchange server** action.
 
-## Getting started with Exchange actions
+The following example contains a manually populated server address rather than using auto-discovery. The credentials are set to **user defined**, so the domain, username, and password are manually entered. A set timeout in the **Advanced** section allows the action to return an error if a connection hasn't been established within the specified time frame.
 
-The Exchange group of actions allows users to connect to an exchange server of their choice, and manage their correspondence.
+:::image type="content" source="media/exchange/connect-to-exchange-server-example.png" alt-text="Screenshot of the Connect to Exchange server action.":::
 
-Exchange actions require a connection to an Exchange server. Establish the connection by using the **Connect to Exchange server** action. In the following figure, the exchange server address has been entered manually, rather than using auto discovery. The credetials are set to user defined, so the domain, username and password are entered manually as well. In the **Advanced** section, a timeout has been set. This allows the action to return an error if a connection hasn't been established within the specified time frame.
+To retrieve emails from an exchange server, use the **Retrieve Exchange email messages** action. The following example retrieves email messages from a custom folder named **Receipts**. The filters contain variables that have been previously defined in the desktop flow. The action will save all attachments locally to the specified folder.
 
-![Screenshot of the Connect to Exchange server action.](media/exchange/connect-to-exchange-server-example.png)
+:::image type="content" source="media/exchange/retrieve-exchange-emails-example.png" alt-text="Screenshot of the Retrieve Exchange email messages action.":::
 
-To retrieve emails from the exchange server, use the **Retrieve Exchange email messages** action. In the figure below, the action has been set to retrieve email messages from a custom folder, Receipts. In the filters, the from, subject and body fields have been set to contain values of variables which have been previously defined in the flow. Attachments from resulting email messages will also be saved to the specified folder.
+The **Process Exchange email messages** action processes email messages retrieved by the **Retrieve Exchange email messages** action. Use this action to move, delete, or mark email messages as read.
 
-![Screenshot of the Retrieve Exchange email messages action.](media/exchange/retrieve-exchange-emails-example.png)
+## <a name="connecttoexchangeserver"></a> Connect to Exchange server
 
-The **Process Exchange email messages** action processes email messages retrieved by the **Retrieve Exchange email messages** action. The required input is the Exchange connection and the retrieved emails variable. Use this action to move, delete or mark email messages as read.
+Open a new connection to an Exchange server.
 
-## Exchange actions
+### Input parameters
 
-### <a name="connecttoexchangeserver"></a> Connect to Exchange server
-Open a new connection to an Exchange server
-
-##### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Exchange server version|N/A|Exchange 2010, Exchange 2010 SP1, Exchange 2010 SP2, Exchange 2013, Exchange 2013 SP1|Exchange 2013 SP1|The version of the Exchange server|
@@ -63,22 +56,24 @@ Open a new connection to an Exchange server
 |Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The Exchange account password|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time in seconds to wait for the connection to be established before the action fails|
 
+### Variables produced
 
-##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExchangeConnection|[Exchange connection](../variable-data-types.md#connections)|The specific Exchange connection for use with later Exchange actions|
 
+### <a name="connecttoexchangeserver_onerror"></a> Exceptions
 
-##### <a name="connecttoexchangeserver_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to connect to the Exchange server|Indicates a problem connecting to the Exchange server|
 
-### <a name="retrieveexchangemessages"></a> Retrieve Exchange email messages
-Retrieve email messages from the specified Exchange server
+## <a name="retrieveexchangemessages"></a> Retrieve Exchange email messages
 
-##### Input parameters
+Retrieve email messages from the specified Exchange server.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Exchange connection|No|[Exchange connection](../variable-data-types.md#connections)||The Exchange connection. Create an Exchange connection with the 'Connect to Exchange server' action|
@@ -96,24 +91,26 @@ Retrieve email messages from the specified Exchange server
 |Attachments|N/A|Save attachments, Do not save attachments|Do not save attachments|Specifies whether to save the attachments of the email messages retrieved or not|
 |Save attachments into|No|[Folder](../variable-data-types.md#files-and-folders)||The folder to save the attachments into|
 
+### Variables produced
 
-##### Variables produced
 |Argument|Type|Description|
 |-----|-----|-----|
 |RetrievedEmails|[List](../variable-data-types.md#list) of [Exchange mail messages](../variable-data-types.md#exchange)|The retrieved email messages for later processing as a list of Exchange mail messages objects|
 
+### <a name="retrieveexchangemessages_onerror"></a> Exceptions
 
-##### <a name="retrieveexchangemessages_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
 |Failed to save attachments|Indicates a problem saving the attachments|
 |Specified mail-folder doesn't exist|Indicates that the specified mail folder doesn't exist|
 |Failed to retrieve email messages|Indicates a problem retrieving the email messages|
 
-### <a name="sendmessage"></a> Send Exchange email message
-Create and send a new email message
+## <a name="sendmessage"></a> Send Exchange email message
 
-##### Input parameters
+Create and send a new email message.
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Exchange connection|No|[Exchange connection](../variable-data-types.md#connections)||The Exchange connection. Create an Exchange connection with the 'Connect to Exchange server' action|
@@ -127,20 +124,23 @@ Create and send a new email message
 |Body is HTML|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to interpret the body of the email as HTML coding|
 |Attachment(s)|Yes|[List](../variable-data-types.md#list) of [Files](../variable-data-types.md#files-and-folders)||The full path of any attachment(s). Enclose multiple files in double quotes (") and separate them by a space character|
 
+### Variables produced
 
-##### Variables produced
 This action doesn't produce any variables.
 
-##### <a name="sendmessage_onerror"></a> Exceptions
+### <a name="sendmessage_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Attachment not found|Indicates that the specified attachment(s) don't exist|
 |Failed to send email|Indicates a problem sending the email|
 
-### <a name="processexchangemessages"></a> Process Exchange email messages
-Move, delete or mark as unread an email message (or a list of email messages)
+## <a name="processexchangemessages"></a> Process Exchange email messages
 
-##### Input parameters
+Move, delete or mark as unread an email message (or a list of email messages).
+
+### Input parameters
+
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Exchange connection|No|[Exchange connection](../variable-data-types.md#connections)||The Exchange connection. Create an Exchange connection with the 'Connect to Exchange server' action|
@@ -152,17 +152,15 @@ Move, delete or mark as unread an email message (or a list of email messages)
 |Exchange folder|N/A|Inbox, Deleted items, Drafts, Outbox, Sent items, Junk email|Inbox|A predefined Exchange folder to move email messages from|
 |Mail folder|No|[Text value](../variable-data-types.md#text-value)|Inbox|The name or path (e.g. folder1\folder2) of the mail-folder to move email messages to|
 
+### Variables produced
 
-##### Variables produced
 This action doesn't produce any variables.
 
-##### <a name="processexchangemessages_onerror"></a> Exceptions
+### <a name="processexchangemessages_onerror"></a> Exceptions
+
 |Exception|Description|
 |-----|-----|
 |Specified mail-folder doesn't exist|Indicates that the specified mail folder doesn't exist|
 |Failed to process email messages|Indicates a problem processing the specified email messages|
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
