@@ -1,12 +1,15 @@
 ---
 title: Restore deleted flows in Power Automate | Microsoft Docs
 description: Learn how to restore deleted flows in Power Automate.
-author: msftman
-manager: tapanm
+author: kisubedi
+contributors:
+ - kisubedi
+ - mregateiro
+ - v-aangie
 ms.subservice: cloud-flow
 ms.date: 01/06/2023
 ms.topic: conceptual
-ms.author: deonhe
+ms.author: kisubedi
 ms.reviewer: angieandrews
 search.app: 
   - Flow
