@@ -17,7 +17,7 @@ search.audienceType:
 
 # Restore deleted flows
 
-If you or someone else accidentally deletes a flow that isn't part of a solution, you can restore it within 28 days of deletion.
+If you or someone else accidentally deletes a flow that isn't part of a solution, you can restore it within 20 days of deletion.
 
 There are the two ways you can restore deleted flows.
 
