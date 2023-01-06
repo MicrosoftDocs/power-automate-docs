@@ -41,7 +41,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
 
    :::image type="content" source="media/env-refs/saperp-datasource-variable.png" alt-text="The environment variable panel in Power Apps.":::
 
-1. Complete the relevant fields for your SAP system. Info bubbles are available for most parameters; use the guidance below for additional information. 
+1. Complete the relevant fields for your SAP system. Refer to the [SAP property guidance](#sap-property-guidance) below for additional information. You can also refer to the info bubbles for the available fields.
 
 ### SAP property guidance
 
