@@ -1,19 +1,21 @@
 ---
 title: Create an environment variable with SAP connection parameters (preview)
-description: Define an environment variable in Power Apps that contains all of your SAP system information, then reuse it in your SAP flow actions.
-author: EllenWehrle
-ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 11/01/2022
-ms.author: ellenwehrle
+description: Define an environment variable in Power Apps that contains all of your SAP system information, then reuse it in your SAP flow actions
+author: jongilman88
+contributors:
+- EllenWehrle
+- galitskyd
+- microsoft-dustin
+- ryanb58
+- scottwoodallmsft
+- Wrighttyler
+ms.author: jongilman
 ms.reviewer: ellenwehrle
-search.app: Flow
-search.audienceType: 
-  - flowmaker
-  - administrator
-  - enduser
+ms.subservice: power-automate-connections
+ms.topic: how-to
+ms.date: 11/01/2022
+
+
 
 --- 
 # Create an environment variable with SAP connection parameters (preview)
@@ -37,7 +39,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
     - **Display name**: Enter a display name for the environment variable.
     - **Name**: This name is automatically generated as you enter the display name, but you can change it.
     - **Data Type**: Select **Text** (_don't_ select JSON). Once selected, the value fields will appear.
-        
+
         - **Default Value**: Offers an environment variable template.
         - **Current Value**: Update the JSON blob with the SAP system's SAP properties. Not all properties are necessary—your SAP environment will determine which ones are applicable. Refer to the SAP property guidance.
 
@@ -48,7 +50,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
 | Property  |Description |
 |-|-|
 | AppServerHost        | The hostname of the SAP application Server. |
-| AppServerService     | The service name or port number of the specific SAP application server to connect to (Optional if connection type (Logon) is A - Application Server). |
+| AppServerService     | The service name or port number of the specific SAP application server to connect to (Optional if connection type (Logon) is A - Application Server). Typical default port number is 3300 for gateway/RFC calls, but can be dependent on the system number.|
 | Client  | The SAP client ID to connect to the SAP system. The SAP backends' client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. |
 | LogonGroup  | The logon group for the SAP system, from which the message server selects an application server (Only available if connection type (Logon) is B - Message Server (Group)). |
 | LogonType   | The type of logon to the SAP system. The allowed values are either Application Server Logon (Type A) or Group Logon (Type B, also known as Message Server).|

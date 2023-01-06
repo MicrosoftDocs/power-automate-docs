@@ -1,19 +1,20 @@
 ---
 title: Overview of SAP integration with Microsoft Power Platform (preview)
-description: Learn how SAP integration with Microsoft Power Platform is improved with a prebuilt solution that works with enhanced connection features.
-author: EllenWehrle
-ms.subservice: cloud-flow
-ms.topic: article
+description: Learn how SAP integration with Microsoft Power Platform is improved with a prebuilt solution that works with enhanced connection features
+author: jongilman88
+contributors: 
+- EllenWehrle
+- galitskyd
+- microsoft-dustin
+- ryanb58
+- scottwoodallmsft
+- Wrighttyler
+ms.subservice: power-automate-connections
+ms.topic: overview
 ms.date: 12/13/2022
-ms.author: ellenwehrle
+ms.author: jongilman
 ms.reviewer: ellenwehrle
-search.app: 
-  - Flow
-search.audienceType: 
-  - administrator
-  - stakeholder
-  - flowmaker
-  - enduser
+
 
 ---
 
@@ -86,9 +87,7 @@ Learn more at [On-premises data gateway documentation](/data-integration/gateway
 
 Power Automate's expression language is based on Logic Apps functions. New functions have been added to enable more efficient processing of SAP data.
 
-
 <!-- In the isFloat description, is this correct? "... so that math can do math." -->
-
 
 | Logic Apps function | Description |
 |-|-|

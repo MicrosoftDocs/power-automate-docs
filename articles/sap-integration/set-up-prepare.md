@@ -1,18 +1,19 @@
 ---
 title: Set up SAP integration with Power Platform (preview)
-description: Learn about the requirements to configure SAP integration, and prepare your on-premises SAP infrastructure to connect with Power Platform.
-author: EllenWehrle
-ms.subservice: cloud-flow
-ms.topic: article
-ms.date: 11/01/2022
-ms.author: ellenwehrle
+description: Learn about the requirements to configure SAP integration, and prepare your on-premises SAP infrastructure to connect with Power Platform
+author: jongilman88
+contributors: 
+- EllenWehrle
+- galitskyd
+- microsoft-dustin
+- ryanb58
+- scottwoodallmsft
+- Wrighttyler
+ms.author: jongilman
 ms.reviewer: ellenwehrle
-search.app: 
-  - Flow
-search.audienceType: 
-  - administrator
-  - stakeholder
-  - flowmaker
+ms.subservice: power-automate-connections
+ms.topic: how-to
+ms.date: 11/01/2022
 
 ---
 
@@ -25,7 +26,6 @@ A successful SAP integration with Microsoft Power Platform requires coordination
 ## Prepare for SAP integration
 
 Take the following steps to support a successful deployment of the preview SAP Integration solution:
-
 
 1. Join the [Power Automate Community](https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity). Ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 
@@ -46,8 +46,8 @@ Take the following steps to support a successful deployment of the preview SAP I
 
 The assembled team of IT system administrators needs to review the following requirements and make necessary preparations before connecting your organization's SAP system to Power Platform:
 
-- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/). Determine if your organization has the necessary licensing to proceed with the setup. It's important to consider: 
- 
+- [Power Apps license](/power-platform/admin/about-powerapps-perapp) and [Power Apps pricing](https://powerapps.microsoft.com/pricing/). Determine if your organization has the necessary licensing to proceed with the setup. It's important to consider:
+
   - Power Apps licensing that supports using an on-premises data gateway and premium applications, flows, and connectors.
   - All administrators setting up the integration and functional business users testing the solution have the required licenses to do so.
 
