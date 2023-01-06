@@ -140,15 +140,9 @@ You can personalize your hosted machine groups by providing your own Windows ima
 
 ### Create an Azure compute gallery in Azure and add an image
 
-> [!IMPORTANT]
->
-> - During the preview, the gallery must be created as a private gallery. You can't use an existing gallery.
-> - You need to register to the [public preview program](https://aka.ms/directsharedgallery-preview).
-> - To find more information about shared image galleries, go to [Share a gallery with subscriptions or tenants](/azure/virtual-machines/share-gallery-direct).
-
 1. Go to the [Azure portal](https://portal.azure.com/).
 
-1. Create a new Azure Compute Gallery and select **Role based access control (RBAC)** in the **Sharing** tab.
+1. Create a new Azure Compute Gallery.
 
 1. Select **Review + create**, and once you've validated all the settings, select **Create**.
 
@@ -170,13 +164,22 @@ You can personalize your hosted machine groups by providing your own Windows ima
 
 ### Share the Azure compute gallery with Microsoft
 
-To use the image in Power Automate, you need to share the image with Microsoft through the Azure portal.
+To use the image in Power Automate, you need to share the image with Power Automate through the Azure portal.
 
-1. In your gallery, go to the **Sharing** settings.
+1. In your gallery, and go to the **Access Control (IAM)** settings.
 
-2. Select **Add** and select **tenant outside of my organization** in the type list.
+2. Select **Add** > **Add role assignment**.
 
-3. Enter the following tenant ID: **975f013f-7f24-47e8-a7d3-abc4752bf346**. It's the Microsoft tenant on which your hosted machine groups are being deployed.
+3. Select the role **Reader** and search for the Hosted machine group application: **Power Automate Machine Management Hosted Group - Resources - Prod**. This will allow our service to access the image to create the Hosted machine group.
+
+> [!NOTE]
+> If you cannot find the application above, you will need to verify if the application exists in your tenant and provision it if necessary.
+> To verify that the application exists, go to [Azure portal](https://portal.azure.com/) > **Azure Active Directory** > **Enterprise applications** > **All applications**.
+> Search for application id: 51699864-8078-4c9e-a688-09a1db1b2e09
+> If you cannot find the application, you will need to provision it using the following command:
+> ```
+> az ad sp create --id 51699864-8078-4c9e-a688-09a1db1b2e09
+> ```
 
 ### Share the gallery with Power Automate makers
 
