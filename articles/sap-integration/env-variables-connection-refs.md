@@ -15,8 +15,6 @@ ms.subservice: power-automate-connections
 ms.topic: how-to
 ms.date: 11/01/2022
 
-
-
 --- 
 # Create an environment variable with SAP connection parameters (preview)
 

@@ -15,7 +15,6 @@ ms.subservice: power-automate-connections
 ms.topic: conceptual
 ms.date: 11/01/2022
 
-
 ---
 
 # Understand prebuilt solution available for integrating SAP with Power Platform (preview)
