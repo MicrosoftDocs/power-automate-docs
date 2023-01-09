@@ -2,8 +2,6 @@
 title: "Business process flows overview | MicrosoftDocs"
 description: "An overview of business process flows in Power Automate."
 ms.date: 01/14/2022
-ms.reviewer: ""
-
 author: MSFTMAN
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -17,6 +15,7 @@ applies_to:
 ms.assetid: 4469877e-bb95-481a-bc52-c9746f937ce5
 caps.latest.revision: 16
 ms.author: "DEONHE"
+ms.reviewer: angieandrews
 manager: "kvivek"
 search.app: 
   - Flow
@@ -207,6 +206,7 @@ Recent rows are visible in a lookup column in the unified interface. To prevent 
 - Currently, you can’t create custom forms for tables based on a business process flow.
 - If a solution includes a business process flow table, the business process flow table must be manually added to the solution before you export it. Otherwise, the business process flow table will not be included in the solution package. More information: [create and edit tables](/power-apps/maker/data-platform/create-edit-entities-solution-explorer).
 - Adding the process table to a model-driven app may result in limited functionality. Learn more about [creating and editing business process flows](./create-business-process-flow.md). 
+- Business process flows will show the name of the BPF instance, which is set at the time that the BPF instance is created. This means if the name in the BPF definition changes, new BPF instances will display the updated name, but older BPF instances will display the original name. It also means localized BPF definition names are not displyed.
 
 ### Next steps  
  [Watch a short video (4:49) about business process flows](https://go.microsoft.com/fwlink/p/?linkid=842226)   

@@ -16,6 +16,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/01/2022
 ms.author: hamenon
+ms.reviewer: gtrantzas
 ---
 
 # Trigger a cloud flow from any Power BI report

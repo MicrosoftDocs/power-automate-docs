@@ -4,9 +4,9 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/12/2022
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.date: 01/05/2023
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - PetrosFeleskouras
 search.app: 
@@ -231,6 +231,7 @@ Hosted machine provisioning errors:
     To resolve this issue, open the Task Manager and go to the **Users** tab. There, terminate all other user sessions except for the current session, and then log-off from the machine.
 
     :::image type="content" source="media/troubleshoot/task-manager-sessions.png" alt-text="Screenshot of the Users tab in Task Manager.":::
+
 ## Get self-help or ask help from support
 
 If you need help, use our self-help options, or ask for help from support.
@@ -248,7 +249,9 @@ If you need help, use our self-help options, or ask for help from support.
 1. Select **See solutions**.
 
 > [!IMPORTANT]
-> We offer full support for all Power Automate for desktop product versions released within a year from the latest public product release. For product releases prior to a year back from the latest release, only issues of severity level **Critical** and **Severity A** are supported.
+> The following statement is subject to change.
+>
+> We offer full support for all Power Automate for desktop product versions released within a year from the latest public product release. For product releases prior to a year back from the latest release, only issues of severity level **Critical** and **Severity A** are supported. Product fixes are always added to the latest version.
 >
 >To find more information about severity levels, go to [Support overview](/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request). To see the currently supported releases, go to [Released versions for Power Automate for desktop](/power-platform/released-versions/power-automate-desktop).
 
