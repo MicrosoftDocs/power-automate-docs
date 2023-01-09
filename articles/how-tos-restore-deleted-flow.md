@@ -1,12 +1,15 @@
 ---
 title: Restore deleted flows in Power Automate | Microsoft Docs
 description: Learn how to restore deleted flows in Power Automate.
-author: msftman
-manager: tapanm
+author: kisubedi
+contributors:
+  - kisubedi
+  - mregateiro
+  - v-aangie
 ms.subservice: cloud-flow
-ms.date: 08/08/2022
+ms.date: 01/06/2023
 ms.topic: conceptual
-ms.author: deonhe
+ms.author: kisubedi
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -17,7 +20,7 @@ search.audienceType:
 
 # Restore deleted flows
 
-If you or someone else accidentally deletes a flow that isn't part of a solution, you can restore it within 28 days of deletion.
+If you or someone else accidentally deletes a flow that isn't part of a solution, you can restore it within 20 days of deletion.
 
 There are the two ways you can restore deleted flows.
 
