@@ -21,7 +21,7 @@ search.audienceType:
 
 # Automate using UI elements
 
-Desktop flows utilize UI elements to interact with applications and web pages without resorting to image recognition and absolute coordinates. UI elements are used as input in most UI automation and browser automation actions and identify specific elements on windows and web pages.
+Desktop flows utilize UI elements to interact with applications and webpages without resorting to image recognition and absolute coordinates. UI elements are used as input in most UI automation and browser automation actions and identify specific elements on windows and webpages.
 
 ## UI elements
 
@@ -51,20 +51,20 @@ To find where a specific UI element is being used in the flow, right-click on it
 
 Desktop flows support two types of UI elements based on their source: desktop UI elements and web UI elements.
 
-Desktop UI elements can be captured from any Windows application, including the non-web page part of browsers, such as the address bar.
+Desktop UI elements can be captured from any Windows application, including the non-webpage part of browsers, such as the address bar.
 
 You can use these UI elements as input in UI automation actions to indicate the component you want to interact with. The UI element picker of UI automation actions displays and allows you to capture only desktop UI elements.
 
 > [!IMPORTANT]
-> Users can capture elements from web pages through the UI element picker of UI automation actions. However, their selectors will represent desktop elements, not web elements.
+> Users can capture elements from webpages through the UI element picker of UI automation actions. However, their selectors will represent desktop elements, not web elements.
 
-Web UI elements can be captured from web pages and used only in browser automation actions.
+Web UI elements can be captured from webpages and used only in browser automation actions.
 
-Browser automation actions accept exclusively UI elements captured from web pages. Therefore, existing UI elements captured from desktop applications aren't displayed in the UI elements picker of these actions.
+Browser automation actions accept exclusively UI elements captured from webpages. Therefore, existing UI elements captured from desktop applications aren't displayed in the UI elements picker of these actions.
 
 To find more information regarding desktop and web automation, refer to [Automate desktop flows](desktop-automation.md) and [Automate web flows](automation-web.md).
 
-### UI elements for web pages
+### UI elements for webpages
 
 To capture a UI element from a webpage, you need to install the appropriate browser extension. You can find more information about the supported browsers and the required extension in [Use browsers and manage extensions](using-browsers.md).
 
@@ -78,7 +78,7 @@ The same icons are also displayed during capturing, so you can confirm the type 
 
 :::image type="content" source="media/ui-elements/ui-element-type-visual-indication-capturing.png" alt-text="Screenshot of a UI element type visual indication during capturing.":::
 
-Another method to check the type of a UI element is to review its selectors. Desktop UI elements usually have the desktop as their parent element, while web UI elements have a web page as their root element.
+Another method to check the type of a UI element is to review its selectors. Desktop UI elements usually have the desktop as their parent element, while web UI elements have a webpage as their root element.
 
 :::image type="content" source="media/ui-elements/ui-element-desktop-selector.png" alt-text="Screenshot of a selector of a desktop UI element.":::
 
@@ -86,9 +86,9 @@ Another method to check the type of a UI element is to review its selectors. Des
 
 The application part of a browser (1) should be automated using desktop UI elements. For example, you can use UI automation actions to interact with the address bar or the tabs.
 
-On the other hand, the loaded web pages inside the browser (2) should be automated using web UI elements and browser automation actions.
+On the other hand, the loaded webpages inside the browser (2) should be automated using web UI elements and browser automation actions.
 
-During recording, the recorder will automatically distinguish the browser application area from the web pages and generate the appropriate UI elements and actions.
+During recording, the recorder will automatically distinguish the browser application area from the webpages and generate the appropriate UI elements and actions.
 
 :::image type="content" source="media/ui-elements/browser-window.png" alt-text="Screenshot of a Microsoft Edge window with highlighted the browser application and webpage areas.":::
 
@@ -101,7 +101,7 @@ All UI elements consist of one or more selectors that pinpoint the UI or web com
 
 To manage the selectors of a UI element, right-click on it and select **Edit**. This option brings up the selector builder, where you can edit the selectors with a visual or a text editor.
 
-Each selector consists of multiple elements representing the hierarchical structure of the UI element in the application or web page. The attributes describe each element uniquely and distinguish it from other elements.
+Each selector consists of multiple elements representing the hierarchical structure of the UI element in the application or webpage. The attributes describe each element uniquely and distinguish it from other elements.
 
 :::image type="content" source="media/ui-elements/visual-selector-editor.png" alt-text="Screenshot of the visual selector builder.":::
 
@@ -115,7 +115,7 @@ After editing the selectors, press **Save** to apply the implemented changes. Sa
 
 You can find more information regarding selectors and how to build them manually in [Build a custom selector](build-custom-selectors.md).
 
-## Capture UI elements with text-based selectors
+## UI elements with text-based selectors
 
 Apart from the default way to generate selectors of UI elements, Power Automate supports the creation of selectors based on the element's text value.
 
@@ -137,5 +137,11 @@ Selecting **Capture** will add the UI element with the proper text-based selecto
 :::image type="content" source="media/ui-elements/create-text-based-selector-dialog.png" alt-text="Screenshot of the Create a text-based selector dialog.":::
 
 Text-based selectors use the **Name** attribute of the captured element for desktop automation and the **Text** attribute for browser automation. They're available only for UI elements that contain a text value themselves. They aren't available for elements that don't hold a text value but happen to have child element(s) in their structure.
+
+## Known issues and limitations
+
+- If you select **Add UI element**, hover the mouse over a whole window, and choose to capture a UI element based on text, a default selector will get generated. This selector includes the **Process** attribute apart from **Name**.
+
+- The combination of a text variable and an operator other than **Equal to** generates a selector displayed in the custom text editor instead of the visual builder. This functionality avoids an existing limitation that makes the above combination non-functional in the visual builder.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
