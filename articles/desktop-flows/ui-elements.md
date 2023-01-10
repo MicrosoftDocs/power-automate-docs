@@ -117,9 +117,9 @@ You can find more information regarding selectors and how to build them manually
 
 ## UI elements with text-based selectors
 
-Apart from the default way to generate selectors of UI elements, Power Automate supports the creation of selectors based on the element's text value.
+Apart from the default way to generate selectors of UI elements, Power Automate supports the creation of selectors based on an element's text value.
 
-This feature is helpful for automation scenarios that handle elements in desktop applications or webpages that always come with specific texts. Selectors based on that texts are more reliable and resilient to possible future changes in the app or webpage structure.
+This feature is helpful for automation scenarios that handle elements in desktop applications or webpages that always come with specific texts. Selectors based on these texts are more reliable and resilient to possible future changes in the application or webpage structure.
 
 Generating text-based selectors is available only when capturing UI elements using the UI element picker (UI elements pane or browser/UI automation actions). It's not available during [recording](recording-flow.md).
 
@@ -129,7 +129,7 @@ To capture a UI element with a text-based selector, open the UI element picker, 
 
 Then, a new window with two fields will appear on your screen:
 
-- The **Text value** field holds the element's Text as a proposed value. You can change this value to a hardcoded value or a variable.
+- The **Text value** field holds the element's text as a proposed value. You can change this value to a hardcoded value or a variable.
 - You can set the **Operator** field to various operators to adjust the functionality of the selector.
 
 Selecting **Capture** will add the UI element with the proper text-based selector in the UI elements repository.

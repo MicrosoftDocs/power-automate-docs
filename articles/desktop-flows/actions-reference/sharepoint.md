@@ -4,7 +4,7 @@ description: SharePoint (preview) Actions Reference
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/22/2022
+ms.date: 01/10/2023
 ms.author: dipapa
 ms.reviewer: gtrantzas
 contributors:
@@ -35,17 +35,25 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 ## List of SharePoint actions
 
-- [Update file](#update-file)
-- [Delete file](#delete-file)
-- [Get file content using path](#get-file-content-using-path)
-- [Get file content](#get-file-content)
+- [Create sharing link for a file or folder](#create-sharing-link-for-a-file-or-folder)
+- [Copy file](#copy-file)
+- [Move file](#move-file)
+- [Copy folder](#copy-folder)
+- [Move folder](#move-folder)
 - [Create file](#create-file)
 - [List folder](#list-folder)
+- [Check out file](#check-out-file)
+- [Discard check out](#discard-check-out)
+- [Check in file](#check-in-file)
 - [Get all lists and libraries](#get-all-lists-and-libraries)
 - [Get file metadata](#get-file-metadata)
+- [Update file](#update-file)
+- [Delete file](#delete-file)
 - [Get file metadata using path](#get-file-metadata-using-path)
 - [Get folder metadata](#get-folder-metadata)
 - [Get folder metadata using path](#get-folder-metadata-using-path)
+- [Get file content using path](#get-file-content-using-path)
+- [Get file content](#get-file-content)
 - [List root folder](#list-root-folder)
 - [Extract folder](#extract-folder)
 - [Get lists](#get-lists)
@@ -138,79 +146,140 @@ Until dynamic suggestions of input fields become available, here's guidance on w
 > [!NOTE]
 > Another way to see which properties are expected as input and output is to create a cloud flow with the same action and observe its dynamic data properties. To find more information regarding the SharePoint cloud actions, refer to [SharePoint](/connectors/sharepointonline).
 
-### Update file
+### Create sharing link for a file or folder
 
-Updates the contents of the file specified by the file identifier.
+Create sharing link for a file or folder.
 
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
-|File Content       |body            |True     |Binary |The content of the file.                                                                         |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                  |
-
-### Delete file
-
-Deletes the file specified by the file identifier.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
-
-### Get file content using path
-
-Gets file contents using the file path.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx".       |
-|Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
+|Name               |Key                |Required |Type      |Description                                                                                      |
+|-------------------|-------------------|---------|----------|-------------------------------------------------------------------------------------------------|
+|Site Address       |dataset            |True     |String    |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|Library name       |table              |True     |String    |The SharePoint library name.                                                                     |
+|Item Id            |id                 |True     |Integer   |The ID of the file or folder item.                                                               |
+|Link Type          |type               |True     |String    |The type of sharing link to create.                                                              |
+|Link Scope         |scope              |True     |String    |Choose who your sharing link gives access to. "Anyone" option will only work if your administrator has enabled it.|
+|Link Expiration    |expirationDateTime |         |Date-time |The date after which the link will expire in yyyy-MM-dd format. Only applicable for anonymous links.|
 
 #### Returns
 
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|File Content |FileContent  |Binary    |The content of the file in binary format.                               |
+|Name         |Path         |Type        |Description                                                             |
+|-------------|-------------|------------|------------------------------------------------------------------------|
+|link         |link         |SharingLink |The internal structure for the sharing link.                            |
 
-### Get file content
+## Copy file
 
-Get file contents using the file identifier. The contents can be copied somewhere else, or be used as an attachment.
+Copies a file. Works in a similar way to the "Copy to" command in SharePoint libraries. Returns information about the new file after copy.
 
 #### Parameters
 
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
-|Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
+|Name                             |Key                   |Required |Type   |Description                                                                                      |
+|---------------------------------|----------------------|---------|-------|------------------------------------------------------------------------|
+|Current Site Address             |dataset               |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|File to Copy                     |sourceFileId          |True     |String |The identifier of the file.                                             |
+|Destination Site Address         |destinationDataset    |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|Destination Folder               |destinationFolderPath |True     |String |The destination folder.                                                 |
+|If another file is already there |nameConflictBehavior  |True     |Integer |Pick one of the options available.                                     |
 
 #### Returns
 
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|File Content |FileContent  |Binary    |The content of the file in binary format.                               |
+|Name         |Path         |Type      |Description                                                               |
+|-------------|-------------|----------|--------------------------------------------------------------------------|
+|ItemId       |ItemId       |Integer   |The value that can be used to get or update file properties in libraries. |
+|Id           |Id           |String    |The unique ID of the file or folder.                                      |
+|Name         |Name         |String    |The name of the file or folder.                                           |
+|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                   |
+|Path         |Path         |String    |The path of the file or folder.                                           |
+|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                   |
+|Size         |Size         |Integer   |The size of the file or folder.                                           |
+|MediaType    |MediaType    |String    |The media type of the file or folder.                                     |
+|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder.   |
+|ETag         |ETag         |String    |The etag of the file or folder.                                           |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                   |
+
+## Move file
+
+Moves a file. Works in a similar way to the "Move to" command in SharePoint libraries. Returns information about the new file after move.
+
+|Name                             |Key                   |Required |Type   |Description                                                                                      |
+|---------------------------------|----------------------|---------|-------|------------------------------------------------------------------------|
+|Current Site Address             |dataset               |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|File to Move                     |sourceFileId          |True     |String |The identifier of the file.                                             |
+|Destination Site Address         |destinationDataset    |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|Destination Folder               |destinationFolderPath |True     |String |The destination folder.                                                 |
+|If another file is already there |nameConflictBehavior  |True     |Integer |Pick one of the options available.                                     |
+
+#### Returns
+
+|Name         |Path         |Type      |Description                                                               |
+|-------------|-------------|----------|--------------------------------------------------------------------------|
+|ItemId       |ItemId       |Integer   |The value that can be used to get or update file properties in libraries. |
+|Id           |Id           |String    |The unique ID of the file or folder.                                      |
+|Name         |Name         |String    |The name of the file or folder.                                           |
+|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                   |
+|Path         |Path         |String    |The path of the file or folder.                                           |
+|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                   |
+|Size         |Size         |Integer   |The size of the file or folder.                                           |
+|MediaType    |MediaType    |String    |The media type of the file or folder.                                     |
+|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder.   |
+|ETag         |ETag         |String    |The etag of the file or folder.                                           |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                   |
+
+## Copy folder
+
+Copies a folder. Works in a similar way to the "Copy to" command in SharePoint libraries. Returns information about the new folder after copy.
+
+#### Parameters
+
+|Name                             |Key                   |Required |Type   |Description                                                                                      |
+|---------------------------------|----------------------|---------|-------|------------------------------------------------------------------------|
+|Current Site Address             |dataset               |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|Folder to Copy                     |sourceFolderId          |True     |String |The identifier of the folder.                                             |
+|Destination Site Address         |destinationDataset    |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|Destination Folder               |destinationFolderPath |True     |String |The destination folder.                                                 |
+|If another file is already there |nameConflictBehavior  |True     |Integer |Pick one of the options available.                                     |
+
+#### Returns
+
+|Name         |Path         |Type      |Description                                                               |
+|-------------|-------------|----------|--------------------------------------------------------------------------|
+|ItemId       |ItemId       |Integer   |The value that can be used to get or update file properties in libraries. |
+|Id           |Id           |String    |The unique ID of the file or folder.                                      |
+|Name         |Name         |String    |The name of the file or folder.                                           |
+|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                   |
+|Path         |Path         |String    |The path of the file or folder.                                           |
+|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                   |
+|Size         |Size         |Integer   |The size of the file or folder.                                           |
+|MediaType    |MediaType    |String    |The media type of the file or folder.                                     |
+|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder.   |
+|ETag         |ETag         |String    |The etag of the file or folder.                                           |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                   |
+
+## Move folder
+
+Moves a folder. Works in a similar way to the "Move to" command in SharePoint libraries. Returns information about the new folder after move.
+
+|Name                             |Key                   |Required |Type   |Description                                                                                      |
+|---------------------------------|----------------------|---------|-------|------------------------------------------------------------------------|
+|Current Site Address             |dataset               |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|Folder to Move                     |sourceFolderId          |True     |String |The identifier of the folder.                                       |
+|Destination Site Address         |destinationDataset    |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|Destination Folder               |destinationFolderPath |True     |String |The destination folder.                                                 |
+|If another file is already there |nameConflictBehavior  |True     |Integer |Pick one of the options available.                                     |
+
+#### Returns
+
+|Name         |Path         |Type      |Description                                                               |
+|-------------|-------------|----------|--------------------------------------------------------------------------|
+|ItemId       |ItemId       |Integer   |The value that can be used to get or update file properties in libraries. |
+|Id           |Id           |String    |The unique ID of the file or folder.                                      |
+|Name         |Name         |String    |The name of the file or folder.                                           |
+|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                   |
+|Path         |Path         |String    |The path of the file or folder.                                           |
+|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                   |
+|Size         |Size         |Integer   |The size of the file or folder.                                           |
+|MediaType    |MediaType    |String    |The media type of the file or folder.                                     |
+|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder.   |
+|ETag         |ETag         |String    |The etag of the file or folder.                                           |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                   |
 
 ### Create file
 
@@ -267,6 +336,44 @@ Returns files contained in a SharePoint folder.
 |ETag         |ETag         |String    |The etag of the file or folder.                                         |
 |FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                  |
 
+### Check out file
+
+Check out a file in a document library to prevent others from editing the document, and your changes from being visible until the documented is checked in.
+
+#### Parameters
+
+|Name               |Key             |Required |Type    |Description                                                                                      |
+|-------------------|----------------|---------|--------|-------------------------------------------------------------------------------------------------|
+|Site Address       |dataset         |True     |String  |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|Library Name       |table           |True     |String  |The name of the SharePoint library.                                                               |
+|Id                 |id              |True     |Integer |The ID of the list item the file is attached to.                                                  |
+
+### Discard check out
+
+If you check out a file and don't make changes to it, or you make changes that you don't want to keep, you can simply discard the checkout, rather that saving the file. If your organization tracks versions, a new version is created each time you check a file back into the library. By discarding the checkout, you can avoid making new versions when you haven't made any changes to the file.
+
+#### Parameters
+
+|Name               |Key             |Required |Type    |Description                                                                                      |
+|-------------------|----------------|---------|--------|-------------------------------------------------------------------------------------------------|
+|Site Address       |dataset         |True     |String  |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|Library Name       |table           |True     |String  |The name of the SharePoint library.                                                               |
+|Id                 |id              |True     |Integer |The ID of the list item the file is attached to.                                                  |
+
+### Check in file
+
+Check in a checked out file in a document library, which makes the version of the document available to others.
+
+#### Parameters
+
+|Name               |Key             |Required |Type    |Description                                                                                      |
+|-------------------|----------------|---------|--------|-------------------------------------------------------------------------------------------------|
+|Site Address       |dataset         |True     |String  |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|Library Name       |table           |True     |String  |The name of the SharePoint library.                                                               |
+|Id                 |id              |True     |Integer |The ID of the list item the file is attached to.                                                  |
+|Comments           |comment         |True     |String  |Type comments describing what has changed in this version.                                        |
+|Check in type      |checkinType     |True     |Integer |Select the type of version you would like to check in.                                            |
+
 ### Get all lists and libraries
 
 Get all lists and libraries.
@@ -309,6 +416,44 @@ Gets information about the file such as size, etag, created date, etc. Uses a fi
 |IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
 |ETag         |ETag         |String    |The etag of the file or folder.                                         |
 |FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
+
+### Update file
+
+Updates the contents of the file specified by the file identifier.
+
+#### Parameters
+
+|Name               |Key             |Required |Type   |Description                                                                                      |
+|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
+|File Content       |body            |True     |Binary |The content of the file.                                                                         |
+
+#### Returns
+
+|Name         |Path         |Type      |Description                                                             |
+|-------------|-------------|----------|------------------------------------------------------------------------|
+|Id           |Id           |String    |The unique ID of the file or folder.                                    |
+|Name         |Name         |String    |The name of the file or folder.                                         |
+|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
+|Path         |Path         |String    |The path of the file or folder.                                         |
+|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
+|Size         |Size         |Integer   |The size of the file or folder.                                         |
+|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
+|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
+|ETag         |ETag         |String    |The etag of the file or folder.                                         |
+|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
+
+### Delete file
+
+Deletes the file specified by the file identifier.
+
+#### Parameters
+
+|Name               |Key             |Required |Type   |Description                                                                                      |
+|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
 
 ### Get file metadata using path
 
@@ -390,6 +535,42 @@ Gets information about the folder. Uses a folder path to pick the folder.
 |IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
 |ETag         |ETag         |String    |The etag of the file or folder.                                         |
 |FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
+
+### Get file content using path
+
+Gets file contents using the file path.
+
+#### Parameters
+
+|Name               |Key             |Required |Type   |Description                                                                                      |
+|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx".       |
+|Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
+
+#### Returns
+
+|Name         |Path         |Type      |Description                                                             |
+|-------------|-------------|----------|------------------------------------------------------------------------|
+|File Content |FileContent  |Binary    |The content of the file in binary format.                               |
+
+### Get file content
+
+Get file contents using the file identifier. The contents can be copied somewhere else, or be used as an attachment.
+
+#### Parameters
+
+|Name               |Key             |Required |Type   |Description                                                                                      |
+|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
+|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
+|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
+|Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
+
+#### Returns
+
+|Name         |Path         |Type      |Description                                                             |
+|-------------|-------------|----------|------------------------------------------------------------------------|
+|File Content |FileContent  |Binary    |The content of the file in binary format.                               |
 
 ### List root folder
 
