@@ -24,7 +24,7 @@ Although the underlying features and components used to build the Automation Kit
 If you face issues with:
 
 - **Using the kit** 
-  - Report your issue to [aka.ms/automation-kit-issues](aka.ms/automation-kit-issues). (Microsoft Support isn't able to assist with issues related to the Automation Kit, but they're able to help with related, underlying platform and feature issues.)
+  - Report your issue to [aka.ms/automation-kit-issues](https://aka.ms/automation-kit-issues). (Microsoft Support isn't able to assist with issues related to the Automation Kit, but they're able to help with related, underlying platform and feature issues.)
     
 - **The core features in Microsoft Power Platform, Power Automate, or Power Apps**
   - Use your standard channel to contact Microsoft Support.
