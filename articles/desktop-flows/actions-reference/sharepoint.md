@@ -45,6 +45,7 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 - [Check out file](#check-out-file)
 - [Discard check out](#discard-check-out)
 - [Check in file](#check-in-file)
+- [Get list views]()
 - [Get all lists and libraries](#get-all-lists-and-libraries)
 - [Get file metadata](#get-file-metadata)
 - [Update file](#update-file)
@@ -373,6 +374,23 @@ Check in a checked out file in a document library, which makes the version of th
 |Id                 |id              |True     |Integer |The ID of the list item the file is attached to.                                                  |
 |Comments           |comment         |True     |String  |Type comments describing what has changed in this version.                                        |
 |Check in type      |checkinType     |True     |Integer |Select the type of version you would like to check in.                                            |
+
+### Get list views
+
+Gets views from A SharePoint list.
+
+#### Parameters
+
+|Name               |Key             |Required |Type    |Description                                                                                      |
+|-------------------|----------------|---------|--------|-------------------------------------------------------------------------------------------------|
+|Site Address       |dataset         |True     |String  |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'.|
+|List Name          |table           |True     |String  |The SharePoint list name.                                                                        |
+
+#### Returns
+
+|Name         |Path         |Type            |Description                                                             |
+|-------------|-------------|----------------|------------------------------------------------------------------------|
+|value        |value        |array of Tables |List of Tables                                                          |
 
 ### Get all lists and libraries
 
