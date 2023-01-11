@@ -152,13 +152,13 @@ Business process flows provide a guide for people to get work done. They provide
   
 -   Multi-table processes can contain no more than five tables.
   
-## Business process flow table customization support 
+## Business process flow table customization support
 
 Introduced in the Dynamics 365 (online), version 9.0 update, business process flow tables can appear in the system so that table row data can be made available in grids, views, charts, and dashboards. 
 
 ### Use business process flow table rows with grids, views, charts, and dashboards
 
-With business processes flows available as an table, you can now use advanced finds, views, charts, and dashboards sourced from business process flow data for a given table, such as a lead or opportunity. System administrators and customizers can create custom business process flow grids, views, charts, and dashboards similar to those created with any other table.
+With business processes flows available as a table, you can now use advanced finds, views, charts, and dashboards sourced from business process flow data for a given table, such as a lead or opportunity. System administrators and customizers can create custom business process flow grids, views, charts, and dashboards similar to those created with any other table.
 
 Business process flows, such as **Lead To Opportunity Sales Process**, appear as a customizable table in solution explorer.
 
