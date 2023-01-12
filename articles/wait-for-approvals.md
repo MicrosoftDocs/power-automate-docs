@@ -16,7 +16,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/15/2018
+ms.date: 01/12/2023
 search.app: 
   - Flow
 search.audienceType: 
@@ -37,12 +37,17 @@ Create a cloud flow that, if you create an item in SharePoint, sends approval em
 
 ## Add an event to trigger the flow
 
-1. Sign into [Power Automate](https://flow.microsoft.com), select **My flows** in the top navigation bar, and then select **Create from blank**.
+1. Sign in to [Power Automate](https://flow.microsoft.com), and go to **My flows** > **New flow** > **Build your own**.
 
-1. Select the **Search hundreds of connectors and triggers** box, enter **new item**, and then navigate to **SharePoint - when an item is created**.
+1. Under **Choose a connector**, search for **SharePoint**, and select the respective card.
 
-1. If prompted, sign into SharePoint.
-1. Under **Site Address**, enter the URL of the SharePoint site that contains your list.
+1. Select the **When an item is created** action.
+
+1. Select **Next** to select a connector using blocks, or select **Skip to building your own flow** to go directly to the designer.
+
+1. If prompted, sign in to SharePoint.
+
+1. In the designer, select the **When an item is created** action and enter the URL of the SharePoint site that contains your list.
 
 1. Under **List Name**, select the list you created earlier. If you're following along, the name is **Project Tracker**.
 

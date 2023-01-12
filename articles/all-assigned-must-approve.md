@@ -68,7 +68,7 @@ This walkthrough uses tokens. To display the list of tokens, tap or click any in
 Sign in to [Power Automate](https://flow.microsoft.com), and then perform the following steps to create your flow.
 
 1. On the top left of the screen, select **My flows** > **New flow** > **Build your own**.
-1. Under Choose a connector, search for **SharePoint** and select the respective card.
+1. Under **Choose a connector**, search for **SharePoint**, and select the respective card.
 1. Select the **When an item is created** action.
 1. Select **Next** to select a connector using blocks, or select **Skip to building your own flow** to go directly to the designer.
 1. In the designer, select the **When an item is created** card, enter the **Site Address** for the SharePoint site that hosts your vacation request list, and then select a list from **List Name**.
