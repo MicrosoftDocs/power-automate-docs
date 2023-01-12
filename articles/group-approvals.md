@@ -52,7 +52,7 @@ Approvals to groups behave exactly like approvals to users, it's just the entity
 
     ![Screenshot of the option to create a manually triggered flow.](./media/approval-attachments/manually-triggered-flow.png)
 
-1. Select the **Manually trigger a flow** trigger > **Add an input** > **File**.
+1. In the designer, select the **Manually trigger a flow** trigger > **Add an input** > **File**.
 
      This step configures your flow so that when it runs, it requests a file from the user to trigger your flow.
 

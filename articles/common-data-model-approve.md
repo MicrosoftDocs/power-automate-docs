@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 01/12/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -110,31 +110,39 @@ By following the steps in this section, you'll build:
 7. (optional) When the list of tables reappears, maximize your browser window if it isn't already maximized, and then click or tap the **Type** column header. The list is sorted with the custom tables, such as the one you just created, appearing at the top.
 
 ## Sign in and create a cloud flow
+
 1. Open the [Power Automate portal](https://flow.microsoft.com).
-2. Maximize your browser window if it isn't already maximized, and then click or tap **Sign in** near the upper-right corner.
-   
+
+1. Maximize your browser window if it isn't already maximized, and then click or tap **Sign in** near the upper-right corner.
+
     ![Sign-in button for Power Automate.](./media/common-data-model-approve/signin-flow.png)
-3. In the top right menu you select the environment that you created the database in powerapps.com.
-   
+
+1. In the top right menu you select the environment that you created the database in powerapps.com.
+
     **Note**: if you do not select the same environment then you will not see your table.
-4. Near the upper-left corner, click or tap **My flows**.
-   
-    ![My flows button.](./media/common-data-model-approve/myflows-button.png)
-5. Near the upper-right corner, click or tap **Create new flow**.
-   
-    ![Create new flow button.](./media/common-data-model-approve/create-flow.png)
+
+1. Go to **My flows** > **New flow** > **Build your own**.
+
+    ![The option to create a new cloud flow.](media/common-data-model-approve/create-flow.png)
 
 ## Start when a file is added
-1. In the box that contains **Search for more triggers**, type or paste **Dropbox**, and then click or tap **Dropbox - when a file is created**.
-   
-    ![Create trigger.](./media/common-data-model-approve/create-trigger.png)
-2. Under **Folder**, click or tap the folder icon, and then browse to the folder where files will be added.
-   
+
+1. Under **Choose a connector**, search for **Dropbox**, and select the appropriate card.
+
+1. Select the **When a file is created** action.
+
+    ![Screenshot of the selected trigger.](./media/common-data-model-approve/create-trigger.png)
+
+1. Select **Next**, and then **Skip to building your own flow**.
+
+1. In the designer, select the **When a file is created** action, select the folder icon, and then browse to the folder where files will be added.
+
     ![Choose folder.](./media/common-data-model-approve/folder-icon.png)
 
 ## Add data to the table
+
 1. Click or tap **New step**, and then click or tap **Add an action**.
-   
+
     ![Add an action.](./media/common-data-model-approve/add-action.png)
 2. In the box that contains **Search for more actions**, type or paste **Dataverse**, and then click or tap **Dataverse - Create object**.
    
