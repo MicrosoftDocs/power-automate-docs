@@ -566,6 +566,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/intro-maker-portal.md",
+      "redirect_url": "/power-automate/getting-started",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/desktop-flows/link-pad-flow-portal.md",
       "redirect_url": "/power-automate/desktop-flows/trigger-desktop-flows",
       "redirect_document_id": false
