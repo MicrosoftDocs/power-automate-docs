@@ -43,15 +43,15 @@ Let’s say you want to send an approval request each time an employee uploads a
 
 1. Go to **My flows** > **New flow** > **Build your own** from the left navigation bar.
 
-    ![Create from blank option.](media/create-approval-response-options/create-approval-response-options.png)
+    ![Screenshot of the option to create a new cloud flow..](media/create-approval-response-options/create-flow.png)
 
 1. Under **Choose a connector**, search for **Sharepoint**, and select the appropriate card.
   
 1. Select the **When an item is created** action.
 
-1. Select **Next**, and then **Skip to building your own flow**.
+   ![Screenshot of the selected When an item is created action.](media/create-approval-response-options/when-item-created-is-action.png)
 
-   ![Select Create from blank.](media/create-approval-response-options/create-from-blank.png)
+1. Select **Next**, and then **Skip to building your own flow**.
 
 1. In the designer, select the **When an item is created** action, and provide the SharePoint **Site Address** and **List Name**.
 
