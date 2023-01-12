@@ -1,6 +1,6 @@
 ---
-title: New Power Automate experience (preview)
-description: Get a preview of the new Power Automate experience to work with flows and templates.
+title: Understand the Power Automate interface
+description: Sign in to Power Automate for the first time and understand the interface.
 ms.custom: ""
 ms.date: 01/02/2023
 ms.suite: ""
@@ -26,25 +26,17 @@ search.audienceType:
   - enduser
 ---
 
-# New Power Automate experience (preview)
+# Understand the Power Automate interface
 
-[This article is pre-release documentation and is subject to change.]
-
-We've redesigned the Power Automate interface so that you can quickly and easily create cloud flows and use templates  to solve your business needs.
-
-> [!IMPORTANT]
-> - This preview experience is in the process of being rolled out, and might not be available in your region yet.
-> - We'll soon update the Power Automate documentation to reflect the new experience.
-
-The changes will allow you to:
+Power Automate interface allows you to quickly and easily create cloud flows and use templates to solve your business needs, such as:
 
 - Start creating a flow directly on the Power Automate **Home** page and **Create** page.
-
 - Receive guided instruction for building your flow.
-
 - Find a template that addresses your needs by filtering through selections.
-
 - Automate your flows with new options in the **New flow** dropdown menu.
+
+> [!NOTE]
+> The experience described in this article is now generally available. We will update the Power Automate documentation to reflect the new experience soon.
 
 ## Create a flow
 
@@ -88,7 +80,7 @@ If you select **Build your own**, Power Automate will guide you in selecting you
 
 To learn how to build your own flow, go to [Create a cloud flow from scratch](get-started-logic-flow.md). To learn about triggers, go to [Get started with triggers](triggers-introduction.md). For an overview of connectors, go to [Connectors overview](/connectors/connectors).
 
-## New flow menu options
+## Flow menu options
 
 If you're already working in the **My flows** screen, you can stay where you are and create a new template from the **New flows** menu. You can start with a template, or build your own automation with the same interface used on the home screen. The menu also gives you the option to create a desktop flow, or a flow that uses a description of what you want to automate in everyday language.
 
