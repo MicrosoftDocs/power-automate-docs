@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/04/2022
+ms.date: 01/12/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -38,19 +38,22 @@ Let’s say you want to send an approval request each time an employee uploads a
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Create approval flow
+
 1. Sign in to [Power Automate](https://flow.microsoft.com).
-1. Select **My flows** from the left navigation bar.
-1. Select **New** > **Automated-from blank**.
+
+1. Go to **My flows** > **New flow** > **Build your own** from the left navigation bar.
 
     ![Create from blank option.](media/create-approval-response-options/create-approval-response-options.png)
 
-1. On the screen that opens, provide a name for your flow in  **Flow name**. 
+1. Under **Choose a connector**, search for **Sharepoint**, and select the appropriate card.
   
-1. Search for **SharePoint** in **Choose your flow's trigger**, select **When an item is created** from the list of triggers, and then select **Create**.
+1. Select the **When an item is created** action.
+
+1. Select **Next**, and then **Skip to building your own flow**.
 
    ![Select Create from blank.](media/create-approval-response-options/create-from-blank.png)
 
-1. Provide the SharePoint **Site Address** and **List Name**. 
+1. In the designer, select the **When an item is created** action, and provide the SharePoint **Site Address** and **List Name**.
 
    >[!TIP]
    >Select **Enter custom value** from the **Site Address** field before you enter text into **Site Address**.
