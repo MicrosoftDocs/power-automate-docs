@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/11/2022
+ms.date: 01/12/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -65,11 +65,13 @@ Here's a quick video tutorial about approvals.
 
 This walkthrough uses tokens. To display the list of tokens, tap or click any input control, and then search for the token in the **Dynamic content** list that opens.
 
-Sign into [Power Automate](https://flow.microsoft.com), and then perform the following steps to create your flow.
+Sign in to [Power Automate](https://flow.microsoft.com), and then perform the following steps to create your flow.
 
-1. Select **My flows** > **New** > **Automated-from blank**, in the top left of the screen.
-1. Give your flow a name and then add the **SharePoint - When an item is created or modified** trigger.
-1. Enter the **Site Address** for the SharePoint site that hosts your vacation request list, and then select a list from **List Name**.
+1. On the top left of the screen, select **My flows** > **New flow** > **Build your own**.
+1. Under Choose a connector, search for **SharePoint** and select the respective card.
+1. Select the **When an item is created** action.
+1. Select **Next** to select a connector using blocks, or select **Skip to building your own flow** to go directly to the designer.
+1. In the designer, select the **When an item is created** card, enter the **Site Address** for the SharePoint site that hosts your vacation request list, and then select a list from **List Name**.
 1. Select **New step**, add the Office 365 **Get manager (V2)** action, select the **User (UPN)** box, and then add the **Created By Email** token to it.
 
     The **Created By Email** token is located under the **When an item is created or modified** category of the **Dynamic content** list. This token dynamically provides access to data about the manager for the person who created the item in SharePoint.
