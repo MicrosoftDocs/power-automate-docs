@@ -41,12 +41,10 @@ In this procedure, you’ll add an action which will use the data from previous 
 1. On the left pane, go to **My flows** > **New flow** > **Build your own**.
 1. Under **Choose a connector**, select **Manual Trigger**.
 1. Select **Next**, and then **Skip to building your own flow** to go directly to the designer.
-1. Select **Manually trigger a flow** as the trigger.
-1. Select **Create**.
 
     <!-- | [./media/image5.png](./media/image5.png) | [./media/image6.png](./media/image6.png) | -->
 
-1. Select **New Step**.
+1. In the designer, select **New Step**.
 1. Search for **Microsoft Teams**, and then select **Post an adaptive card to a Teams channel and wait for a response** as the action.
 1. Select the **Team** and the **Channel** to which you'd like to post the card.
 1. Paste this JSON into the **Message** box.
