@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/18/2021
+ms.date: 01/13/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 ---
@@ -37,10 +37,10 @@ In either case you will need to sketch out which datasets you will share, and/or
 
 In this procedure, you’ll add an action which will use the data from previous actions in the flow to post information to a Microsoft Teams channel.
 
-1. Sign into Power Automate.
-1. Select **My flows** in the top navigation bar.
-1. Select **New flow** > **Instant cloud flow**.
-1. Give your flow a name.
+1. Sign in to Power Automate.
+1. On the left pane, go to **My flows** > **New flow** > **Build your own**.
+1. Under **Choose a connector**, select **Manual Trigger**.
+1. Select **Next**, and then **Skip to building your own flow** to go directly to the designer.
 1. Select **Manually trigger a flow** as the trigger.
 1. Select **Create**.
 
