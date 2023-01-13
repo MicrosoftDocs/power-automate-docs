@@ -53,8 +53,6 @@ This article shows you how to:
 
 1. Expand **Data**, and then select **Custom connectors**.
 
-   ![Custom connectors link under data.](../media/approvals-custom-connector/4f21df6fb27089bd74a0a4d38f4ceea9.png)
-
 1. Select **New custom connector**.
 
    ![A screenshot that shows the link to start creating a custom connector.](../media/approvals-custom-connector/1f5061daa2286c3637c52d3bffd7a5a5.png)
@@ -131,19 +129,15 @@ Some common approval triggers are:
 
 Now that you've created your custom connector, it's time to create your approval flow that uses the custom connector.
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://flow.microsoft.com).
 
-1. Select **My flows**.
+1. On the left pane, go to **My flows** > **New flow** > **Build your own**.
 
-1. Select **New flow**, and then select **Automated cloud flow**.
-
-1. Select **Skip** on the **Build an automated cloud flow** screen.
-
-1. Select the **Custom** tab, and then select your new custom connector.
-
-   ![A screenshot that displays the custom connector on the custom tab.](../media/approvals-custom-connector/45eadef5abc7140bbf21df9a58b1ef68.png)
+1. Under **Choose a connector**, select **Custom**, and select your custom connector.
 
 1. Select a trigger from your custom connector.
+
+1. Select **Next**, and then **Skip to building your own flow** to go directly to the designer.
 
 1. Select **New step**.
 
