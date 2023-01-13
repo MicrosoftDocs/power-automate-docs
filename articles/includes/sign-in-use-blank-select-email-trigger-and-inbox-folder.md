@@ -2,14 +2,13 @@
 
 1. On the left pane, go to **My flows** > **New flow** > **Build your own**.
 
-:::image type="content" source="includes/media/email-triggers/automated-from-blank.png" alt-text="Screenshot of the option to create a new cloud flow.":::
-
+    :::image type="content" source="includes/media/email-triggers/automated-from-blank.png" alt-text="Screenshot of the option to create a new cloud flow.":::
 
 1. Under **Choose a connector**, search for **Office 365 Outlook**, and select the appropriate card.
 
 1. Select the **When a new email arrives (V3)** action. This trigger runs each time an email arrives.
 
-:::image type="content" source="includes/media/email-triggers/email-triggers-1.png" alt-text="Screenshot of the selected When a new email arrives (V3) action.":::
+    :::image type="content" source="includes/media/email-triggers/email-triggers-1.png" alt-text="Screenshot of the selected When a new email arrives (V3) action.":::
 
 1. Select **Next**, and then **Skip to building your own flow** to go directly to the designer.
 
