@@ -49,15 +49,11 @@ This article shows you how to:
 
 ## Create a custom connector
 
-1. Sign into [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://flow.microsoft.com/).
 
 1. Expand **Data**, and then select **Custom connectors**.
 
-1. Select **New custom connector**.
-
-   ![A screenshot that shows the link to start creating a custom connector.](../media/approvals-custom-connector/1f5061daa2286c3637c52d3bffd7a5a5.png)
-
-1. Select **Create from blank** from the dropdown list.
+1. Select **New custom connector**, and then **Create from blank** from the dropdown list.
 
    ![A sreenshot of the option to create a custom connector from scratch.](../media/approvals-custom-connector/42d235a1e9b4f9db0fdac83f11ad0bd2.png)
 
