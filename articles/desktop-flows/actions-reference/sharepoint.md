@@ -166,7 +166,7 @@ Create sharing link for a file or folder.
 |-------------|-------------|------------|------------------------------------------------------------------------|
 |link         |link         |SharingLink |The internal structure for the sharing link.                            |
 
-## Copy file
+### Copy file
 
 Copies a file. Works in a similar way to the "Copy to" command in SharePoint libraries. Returns information about the new file after copy.
 
@@ -196,7 +196,7 @@ Copies a file. Works in a similar way to the "Copy to" command in SharePoint lib
 |ETag         |ETag         |String    |The etag of the file or folder.                                           |
 |FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                   |
 
-## Move file
+### Move file
 
 Moves a file. Works in a similar way to the "Move to" command in SharePoint libraries. Returns information about the new file after move.
 
@@ -224,7 +224,7 @@ Moves a file. Works in a similar way to the "Move to" command in SharePoint libr
 |ETag         |ETag         |String    |The etag of the file or folder.                                           |
 |FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                   |
 
-## Copy folder
+### Copy folder
 
 Copies a folder. Works in a similar way to the "Copy to" command in SharePoint libraries. Returns information about the new folder after copy.
 
@@ -254,7 +254,7 @@ Copies a folder. Works in a similar way to the "Copy to" command in SharePoint l
 |ETag         |ETag         |String    |The etag of the file or folder.                                           |
 |FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                   |
 
-## Move folder
+### Move folder
 
 Moves a folder. Works in a similar way to the "Move to" command in SharePoint libraries. Returns information about the new folder after move.
 
