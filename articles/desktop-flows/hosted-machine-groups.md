@@ -142,7 +142,7 @@ You can personalize your hosted machine groups by providing your own Windows ima
 
 1. Go to the [Azure portal](https://portal.azure.com/).
 
-1. Create a new Azure Compute Gallery.
+1. Create a new Azure Compute Gallery and select **Role based access control (RBAC)** in the **Sharing** tab.
 
 1. Select **Review + create**, and once you've validated all the settings, select **Create**.
 
@@ -162,7 +162,7 @@ You can personalize your hosted machine groups by providing your own Windows ima
     - Asia: East Asia
     - Norway: Norway East
 
-### Share the Azure compute gallery with Microsoft
+### Share the Azure compute gallery with Power Automate
 
 To use the image in Power Automate, you need to share the image with Power Automate through the Azure portal.
 
