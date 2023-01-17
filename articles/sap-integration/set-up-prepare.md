@@ -53,13 +53,9 @@ The assembled team of IT system administrators needs to review the following req
 
 - [SAP](<https://www.sap.com/>) subscription:
   
+  - Ensure a team member has valid S-User access. The S-User is an SAP super administrator and has all of the authorizations for the portal.
   - Ensure that the users testing the SAP Integration solution have appropriate access to the appropriate SAP functional modules.
-  - The solution can work with any SAP system that uses RFC and BAPI calls.
-
-- [SAP Connector for Microsoft .NET 3.0 (NCo 3.0)](https://support.sap.com/en/product/connectors/msnet.html) SDK from SAP:
-  - Valid S-user access.
-  - NCo 3.0 compiled with .NET Framework 4.0 - **SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64)**, July 20, 2022 (ZIP archive, 7,126 KB)
-  - [.NET Framework 4.0](https://dotnet.microsoft.com/en-us/download/dotnet-framework) requires [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true).
+  - The SAP ERP connector can work with any SAP system that uses RFC and BAPI calls.
 
 - [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant). Create a new tenant for the SAP Integration. It's important to consider:
   
@@ -70,6 +66,10 @@ The assembled team of IT system administrators needs to review the following req
 - [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server. Provision a separate Windows VM or server with your SAP system connected to it to connect to the on-premises data gateway.
 
 - [On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127). Download and [install](/data-integration/gateway/service-gateway-install) the most recent version (9/23/2022 or newer) of the on-premises data gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
+- [.NET Framework 4.0](https://dotnet.microsoft.com/en-us/download/dotnet-framework) with [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true).
+- [SAP Connector for Microsoft .NET 3.0 (NCo 3.0)](https://support.sap.com/en/product/connectors/msnet.html) SDK from SAP:
+  - A team member with valid S-User access is required to set up the connector.
+  - Select NCo 3.0 compiled with .NET Framework 4.0 - **SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64)**, July 20, 2022 (ZIP archive, 7,126 KB)
 
 - [Azure AD single sign-on (SSO) for Gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway). Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO.
 
@@ -88,11 +88,12 @@ While setting up the on-premises data gateway for SAP integration, ensure that y
 - Provision a new or repurposed Windows VM or server specifically for SAP integration with the Power Platform that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended).
   - If you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same active directory environment as the data sources.
 - [Change the on-premises data gateway service account.](/data-integration/gateway/service-gateway-service-account)
+- Install [.NET Framework 4.0](https://dotnet.microsoft.com/en-us/download/dotnet-framework). Please note, .NET Framework 4.0 requires [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true).
 - Install the [SAP Connector for Microsoft .NET 3.0 (NCo3.0)](https://support.sap.com/en/product/connectors/msnet.html) onto the data gateway.
 
-  - Select NCo 3.0 compiled with .NET Framework 4.0 - **SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64)**, July 20, 2022 (ZIP archive, 7,126 KB) . 
-  - [.NET Framework 4.0](https://dotnet.microsoft.com/en-us/download/dotnet-framework) requires [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true).
-- Select **Install assemblies to GAC** in the Optional setup steps window during installation. 
+  - Select NCo 3.0 compiled with .NET Framework 4.0 - **SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64)**, July 20, 2022 (ZIP archive, 7,126 KB) .
+
+- Select **Install assemblies to GAC** in the Optional setup steps window during installation.
 
 > [!IMPORTANT]
 > Do not download NcO 3.1.
