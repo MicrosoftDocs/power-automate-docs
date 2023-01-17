@@ -1,9 +1,9 @@
 ---
-title: Data collection in Power Automate
+title: Diagnostic data collection in Power Automate
 description: Learn about the diagnostic data Microsoft collects in Power Automate.
 author: georgiostrantzas
 ms.topic: overview
-ms.date: 01/05/2023
+ms.date: 01/10/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -18,7 +18,7 @@ ms.service: power-automate
 ms.custom: bap-template
 ---
 
-# Data collection in Power Automate
+# Diagnostic data collection in Power Automate
 
 We use diagnostic data to keep Power Automate client software secure and up-to-date; to detect, diagnose, and fix problems; and to make product improvements. This data doesn't include a user's name or email address, the content of the user's files, or information about apps unrelated to the product.
 
