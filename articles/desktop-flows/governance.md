@@ -93,7 +93,6 @@ You can use the following registry entry to allow users to sign in to Power Auto
 
 - **1**: Power Automate for desktop authenticates users using the WAM functionality.
 
-<!--
 ## Allow users with invalid certificates to sign in to Power Automate for desktop
 
 You can use the following registry entry to allow users with invalid certificates to sign in to Power Automate for desktop.
@@ -105,8 +104,6 @@ You can use the following registry entry to allow users with invalid certificate
 ***Values***
 
 - **1**: Users with invalid certificates can sign in to Power Automate for desktop.
-
--->
 
 ## Allow users to select an organization in Power Automate for desktop
 
@@ -197,6 +194,18 @@ You can use the following registry entry to enable or disable the collection of 
 
 - **0**: Power Automate for desktop won't collect optional diagnostic usage data.
 - **1**: Power Automate for desktop collects optional diagnostic usage data.
+
+## Prevent Power Automate for desktop from taking screenshots for action logs upon error
+
+You can use the following registry entry to prevent Power Automate for desktop from taking a screenshot for the actions logs when an error occurs during a flow run.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableScreenshotCaptureOnError|DWORD|
+
+***Value***
+
+- **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
 
 ## Configure Power Automate for desktop notification settings
 
