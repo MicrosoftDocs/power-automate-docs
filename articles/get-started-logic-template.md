@@ -1,12 +1,15 @@
 ---
 title: Get started from a template (contains video) | Microsoft Docs
-description: Create a cloud flow from any of several built-in templates.
+description: Learn how to create a cloud flow from any one of many prebuilt templates.
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
-manager: KVIVEK
-ms.author: Deonhe
+author: natalie-pienkowska
+ms.author: napienko
+contributors:
+  - natalie-pienkowska
+  - kisubedi
+  - v-aangie
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
@@ -15,7 +18,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/12/2022
+ms.date: 01/17/2023
 search.app: 
   - Flow
 search.audienceType: 
@@ -23,17 +26,14 @@ search.audienceType:
   - enduser
 ms.custom: intro-internal
 ---
+
 # Create a cloud flow from a template in Power Automate
 
 A good way to get started is to use a template that is suited to your organization's scenario. You can choose from a collection of templates to find the one that best matches your scenario. Search [all templates](https://flow.microsoft.com/templates/) or browse by category to find your scenario, and then follow the steps in the template to create a cloud flow from the template.
 
-The following video gives insights into using templates to create your flows.
-
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKZQv]
-
 You can tweak templates by adding, editing, or removing triggers and actions to create your own flows. You can [copy paste actions](/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the your tweaks.
 
-Create a cloud flow from one of many built-in templates that can, for example, send you a Slack message when your manager sends you an email in Microsoft 365.
+Create a cloud flow from one of many prebuilt templates that can, for example, send you a Slack message when your manager sends you an email in Microsoft 365.
 
 >[!TIP]
 >[Create a cloud flow from scratch](get-started-logic-flow.md) if you already have a process in mind and can't find a template for it.
@@ -50,9 +50,16 @@ To complete this example, you'll need accounts with access to the following:
 
 ## Choose a template
 
-1. Sign into [Power Automate](https://flow.microsoft.com), and then select **Templates** in the left-side navigation pane.
-1. Use the search bar to search for **slack manager** to find the **Send a message on Slack when my manager emails me** template, and then select it.
+1. Sign into [Power Automate](https://flow.microsoft.com).
+
+1. At the top of the home screen, select **Create**.
+
+1. On the **Pick your path** screen, select **Start with a template**.
+
+1. In the **Search by keywords** field, enter **slack manager** to find the **Send a message on Slack when my manager emails me** template, and then select it.
+
 1. If you aren't signed into Office or Slack, select **Sign in** and then follow the prompts.
+
 1. After you confirm your connections, select **Continue**.
 
     Your flow appears, showing each action with an orange title bar.
@@ -71,7 +78,7 @@ To complete this example, you'll need accounts with access to the following:
 
 Now, when your manager sends you an email, you'll receive a Slack message that contains the information that you specified.
 
-## More information
+### See also
 
 - [Watch your flow in action](see-a-flow-run.md)
 - [Publish your own template](publish-a-template.md)
