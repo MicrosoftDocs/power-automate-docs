@@ -96,7 +96,7 @@ While setting up the on-premises data gateway for SAP integration, ensure that y
 - Select **Install assemblies to GAC** in the Optional setup steps window during installation.
 
 > [!IMPORTANT]
-> Do not download NcO 3.1.
+> Do not download NCo 3.1.
   
 More information: [About on-premises gateway](/power-platform/admin/wp-onpremises-gateway)
 
