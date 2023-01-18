@@ -36,7 +36,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
 
     - **Display name**: Enter a display name for the environment variable.
     - **Name**: This name is automatically generated as you enter the display name, but you can change it.
-    - **Data Type**: Select **Data source** 
+    - **Data Type**: Select **Data source**
     - **Connector**: Select **SAP ERP** Once selected, additional fields will appear.
 
    :::image type="content" source="media/env-refs/saperp-datasource-variable.png" alt-text="The environment variable panel in Power Apps.":::
