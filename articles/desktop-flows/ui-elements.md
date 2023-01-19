@@ -136,12 +136,12 @@ Selecting **Capture** will add the UI element with the proper text-based selecto
 
 :::image type="content" source="media/ui-elements/create-text-based-selector-dialog.png" alt-text="Screenshot of the Create a text-based selector dialog.":::
 
-Text-based selectors use the **Name** attribute of the captured element for desktop automation and the **Text** attribute for browser automation. They're available only for UI elements that contain a text value themselves. They aren't available for elements that don't hold a text value but happen to have child element(s) in their structure.
+Text-based selectors use the **Name** attribute of the captured element for desktop automation and the **Text** attribute for browser automation. They're available only for UI elements that contain a text value themselves. In other words, they are available for UI elements with a **Name** or **Text** attribute that includes a value. They aren't available for elements that don't hold such a text value, even if they have child element(s) with text in their structure.
 
 ## Known issues and limitations
 
 - If you select **Add UI element**, hover the mouse over a whole window, and choose to capture a UI element based on text, a default selector will get generated. This selector includes the **Process** attribute apart from **Name**.
 
-- The combination of a text variable and an operator other than **Equal to** generates a selector displayed in the custom text editor instead of the visual builder. This functionality avoids an existing limitation that makes the above combination non-functional in the visual builder.
+- The combination of a variable and an operator other than **Equal to** generates a selector displayed in the custom text editor instead of the visual builder. This functionality avoids an existing limitation that makes the above combination non-functional in the visual builder.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
