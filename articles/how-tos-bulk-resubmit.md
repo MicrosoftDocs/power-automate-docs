@@ -45,7 +45,7 @@ Follow these steps to resubmit flow runs in bulk:
     >![Screenshot that displays the selected runs for the selected flow.](./media/cancel-resubmit-how-to/select-runs.png "Selected runs for the selected flow")
 
    >[!TIP]
-   >You can resubmit or cancel up to 10 flows at a time.
+   >You can resubmit or cancel up to 20 flows at a time.
 
 1. Select **Resubmit flow run(s)**.
 
