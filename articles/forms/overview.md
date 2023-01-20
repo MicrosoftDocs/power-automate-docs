@@ -26,12 +26,9 @@ search.audienceType:
 
 Use the [Microsoft Forms](/connectors/microsoftforms/) connector in Power Automate to add a form to a flow. Do you need to record a purchase in your sales system when you receive an order form? Maybe you'd like to get an emailed notification when a customer submits a survey or a student turns in a quiz. These are a few examples of how using forms with Power Automate flows can eliminate manual data entry, simplify record keeping, and help you stay on top of your day.
 
-<!--
 Watch the following video to see how you can use a form in Power Automate.
 
 >[!VIDEO <https://www.microsoft.com/videoplayer/embed/RWKXdv>]
-
--->
 
 ## Triggering a form action in a flow
 

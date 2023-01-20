@@ -32,16 +32,10 @@ This type of approval workflow is useful in an organization that requires a pers
 
 > [!NOTE]
 > While this walkthrough highlights a vacation approval scenario, you can use this type of approval flow in any situation where multiple approvers are required to approve a request.
->
->
-
-<!--
 
 Here's a quick video tutorial about approvals.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdq]
-
--->
 
 ## Prerequisites
 

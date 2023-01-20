@@ -27,13 +27,9 @@ search.audienceType:
 
 The admin center is the central location where tenant admins and environment admins manage an organization’s data policies and environments. Any changes you make in the admin center are immediately available to users within the organization.
 
-<!--
-
 Here's a quick video about the admin center.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKZQe]
-
--->
 
 > [!NOTE]
 > The Power Automate admin center is retired and Power Automate admins will be automaticaly redirected to the Microsoft [Power Platform admin center](https://aka.ms/ppac) to manage data policies and environments for Power Automate deployments.
