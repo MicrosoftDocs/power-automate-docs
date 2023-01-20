@@ -37,14 +37,11 @@ Key capabilities:
 
 - **Connect to your own virtual network (vNET):** Securely communicate with each other, the Internet, and your on-premises networks.
 
-> [!NOTE]
-> Availability of the hosted machine in preview is being rolled out across all supported regions and will be available in Europe and US region by 19 December 2022.
-
 ## Licensing requirements
 
 To use hosted machines, you need one of the following Power Automate licensing options:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on**.
+- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on** or the **Power Automate hosted RPA add-on**.
 
     During the preview period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
