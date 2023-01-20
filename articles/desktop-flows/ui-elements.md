@@ -31,7 +31,7 @@ Each one of these action groups accepts a different type of UI elements. UI auto
 
 :::image type="content" source="media/ui-elements/ui-element-input.png" alt-text="Screenshot of the available UI elements in the Press button in window action.":::
 
-To add a new UI element to your flow, select to add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**.
+To add a new UI element to your flow, add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**.
 
 :::image type="content" source="media/ui-elements/capturing-ui-elements.png" alt-text="Screenshot of a highlighted element.":::
 
