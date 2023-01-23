@@ -54,7 +54,7 @@ You can edit solution-aware cloud flows in [solutions](#edit-a-solution-aware-cl
 
 1. In [Power Automate](https://powerautomate.com), select **My flows** from the menu on the left.
 
-1. Find the flow you want to edit. Cloud flows you own will be in the **Cloud flows** tab and flows you have co-ownership of will be in the **Shared with me** tab.
+1. Find the flow you want to edit. Cloud flows that you own will be in the **Cloud flows** tab and flows that you have co-ownership of will be in the **Shared with me** tab.
 
 1. Select **...** (**Commands**) for your flow, and then select **Turn off**.
 
