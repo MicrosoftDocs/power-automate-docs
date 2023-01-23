@@ -70,4 +70,3 @@ strategy. You can now navigate to the target environment and review, test or
 edit the cloud flow if needed. Once you are happy with your configuration, you
 can enable the cloud flow to automatically apply your scaling configuration to
 the machine group.
-
