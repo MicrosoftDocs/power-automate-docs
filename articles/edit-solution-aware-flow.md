@@ -88,7 +88,7 @@ The "Save As" capability can be used to duplicate a solution cloud flow. If an u
 
     The flow will now be visible in **My flows**.
 
-    >{!NOTE}
+    >[!NOTE]
     >
     >If the save takes a few seconds, it's possible to return to **My flows** before that's completed. If that happens, refresh the browser screen to view the flow.
 
