@@ -48,7 +48,7 @@ SAP has multiple connection parameters, and manually entering the parameters int
 | Property  |Description |
 |-|-|
 | Application Server Host        | The hostname of the SAP application Server. Used when the "Application Server" Connection Type is selected. |
-| Application Server Service     | The service name or port number of the specific SAP application server to connect to (Optional if Connection Type Application Server). |
+| Application Server Service     | The service name or port number of the specific SAP application server to connect to (Optional if Connection Type Application Server). The default port number is 3300 for gateway/RFC calls, but can be dependent on system number.|
 | Client  | The SAP client ID to connect to the SAP system. The SAP backends' client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. |
 | Logon Group  | The logon group for the SAP system, from which the message server selects an application server (Only available if connection type is Message Server. |
 | Connection Type   | The type of logon to the SAP system. The allowed values are either Application Server Logon (Type A) or Message Server (Type B, also known as Group Logon).|

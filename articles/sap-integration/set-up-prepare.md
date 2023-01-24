@@ -13,7 +13,7 @@ ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: how-to
-ms.date: 01/17/2023
+ms.date: 01/24/2023
 
 ---
 
@@ -53,57 +53,65 @@ The assembled team of IT system administrators needs to review the following req
 
 - [SAP](<https://www.sap.com/>) subscription:
   
-  - Ensure a team member has valid S-User access. The S-User is an SAP super administrator and has all of the authorizations for the portal.
-  - Ensure that the users testing the SAP Integration solution have appropriate access to the appropriate SAP functional modules.
   - The SAP ERP connector can work with any SAP system that uses RFC and BAPI calls.
+  - Set up requires an administrator who valid S-User access to the SAP system(s). The S-User is an SAP super administrator and has all of the authorizations for the portal and can manage other necessary SAP roles as necessary.
 
-- [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant). Create a new tenant for the SAP Integration. It's important to consider:
+- [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server. Provision a separate Windows VM or server with only your SAP system(s) connected to it. This machine will connect to the on-premises data gateway.
+
+- [Azure Active Directory (AD)](/azure/active-directory/). [Set up a new Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant). It's important to consider:
   
-  - The tenant has at least 1 GB of database storage capacity available for the sandbox environment.
-  - All members of the IT systems team have the necessary administrator roles to perform the setup.
-  - All functional business users testing the SAP Integration are added to the tenant.
-
-- [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server. Provision a separate Windows VM or server with your SAP system connected to it to connect to the on-premises data gateway.
-
-- [On-premises data gateway](https://www.microsoft.com/download/details.aspx?id=53127). Download and [install](/data-integration/gateway/service-gateway-install) the most recent version (9/23/2022 or newer) of the on-premises data gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
-- [.NET Framework 4.0](https://dotnet.microsoft.com/download/dotnet-framework) with [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true).
+  - The tenant has at least 1 GB of database storage capacity available for the environments within it.
+  - Set up requires an Azure AD Global administrator to set up the necessary [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference#global-administrator) and to [configure the Power Platform admin portal](/power-platform/admin/wp-work-with-admin-portals) so gateways, tenants, environments, and user access can be managed.
+  
+- [On-premises data gateway](/data-integration/gateway/). The gateway is to be installed on the provisioned Windows VM or server by an Azure AD Global or Gateway administrator working with the SAP Super administrator (S-User).
+  - Review [on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management) for Power Platform to learn more.
+  - Go to the [Microsoft Download Center's on-premises data gateway page](https://www.microsoft.com/download/details.aspx?id=53127) to download the most recent version (12/16/2022 or newer) of the gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference). In the _System Requirements_ section on the gateway download page, identify what operating systems and .NET Frameworks are required to support the most recent version of the gateway.
+- [Azure AD single sign-on (SSO) for gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway). Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO.
+- [Microsoft .NET Framework.](https://dotnet.microsoft.com/download/dotnet-framework) Download the.NET Framework that supports the most recent version of the gateway.
+- [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true). SAP's NCo 3.0 download requires this library to support the .NET Framework.
 - [SAP Connector for Microsoft .NET 3.0 (NCo 3.0)](https://support.sap.com/en/product/connectors/msnet.html) SDK from SAP:
-  - A team member with valid S-User access is required to set up the connector.
-  - Select NCo 3.0 compiled with .NET Framework 4.0 - **SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64)**, July 20, 2022 (ZIP archive, 7,126 KB)
-
-- [Azure AD single sign-on (SSO) for Gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway). Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO.
+  - An administrator with valid S-User access is required to set up the connector.
+  - Select NCo 3.0 compiled with .NET Framework 4.0 - **SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64)**, July 20, 2022 (ZIP archive, 7,126 KB).
+  
+> [!IMPORTANT]
+>
+> - DO NOT download NCo 3.1.
+> - NCo 3.0 will work with .NET Framework release 4.0 or later. Download the most recent release of the .NET Framework.
 
 ## Integrate SAP ERP system with Power Platform
 
 SAP integration with Power Platform requires IT system administrators to establish a connection and set up security and governance between the two systems. Perform the following steps.
 
-### Step 1: Install on-premises data gateway
+### Step 1: Set up an on-premises data gateway
 
-An on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services.
+An on-premises data gateway acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services. A single data gateway deployed centrally allows you to manage data connections for multiple cloud apps and on-premises data connections.
 
-SAP integration with Power Platform requires that you install the latest version (9/23/2022 or newer) of the [on-premises data gateway](/data-integration/gateway/service-gateway-install).
+The following guidance supports a successful setup of the [on-premises data gateway](/data-integration/gateway/) on a local computer.
 
-While setting up the on-premises data gateway for SAP integration, ensure that you review the following considerations:
-
-- Provision a new or repurposed Windows VM or server specifically for SAP integration with the Power Platform that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended).
-  - If you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same active directory environment as the data sources.
+- Go to the [Microsoft Download Center's on-premises data gateway page](https://www.microsoft.com/download/details.aspx?id=53127) to download the latest version of the on-premises data gateway.
+  - SAP integration with Power Platform requires a version of the gateway that is published on or after 12/16/2022.
+  - In the _System Requirements_ section on the gateway download page, identify the latest operating systems and .NET Frameworks that are required to support the most recent version of the gateway.
+- Go to the [Microsoft .NET Framework download page](https://dotnet.microsoft.com/download/dotnet-framework) to download the required .NET Framework.
+- Provision a new or repurposed Windows VM or server specifically for SAP integration with the Power Platform that meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended) for gateway installation and management.
+  - Review [related considerations](/data-integration/gateway/service-gateway-install#related-considerations).
+  For instance, if you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same active directory environment as the data sources.
+- [Install](/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) the on-premises data gateway onto the provisioned Windows VM or server.
 - [Change the on-premises data gateway service account.](/data-integration/gateway/service-gateway-service-account)
-- Install [.NET Framework 4.0](https://dotnet.microsoft.com/download/dotnet-framework). Please note, .NET Framework 4.0 requires [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true).
+  - The default account for this service is _NT SERVICE\PBIEgwService_. Change this account to a domain user account within your Windows Server Active Directory domain, or use a managed service account to avoid having to change the password.
+- Install the required package SAP NCo requires [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true).
 - Install the [SAP Connector for Microsoft .NET 3.0 (NCo3.0)](https://support.sap.com/en/product/connectors/msnet.html) onto the data gateway.
 
   - Select NCo 3.0 compiled with .NET Framework 4.0 - **SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64)**, July 20, 2022 (ZIP archive, 7,126 KB) .
 
 - Select **Install assemblies to GAC** in the Optional setup steps window during installation.
 
-> [!IMPORTANT]
-> Do not download NCo 3.1.
-  
 More information: [About on-premises gateway](/power-platform/admin/wp-onpremises-gateway)
 
-### Step 2: Configure Azure AD and SAP SSO
+### Step 2: Configure Azure AD and SAP for SSO
 
 > [!NOTE]
-> A direct connection with your credentials is all that is necessary for preview and testing.
+>
+> A direct connection with your credentials is all that is necessary for testing.
 
 An [Azure Active Directory (AD) tenant](/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-ad-define) provides identity and access management. The Azure AD tenant created for SAP Integration must be configured with an on-premises data gateway with constrained delegation to support single sign-on (SSO).
 
@@ -111,11 +119,11 @@ An [Azure Active Directory (AD) tenant](/azure/cloud-adoption-framework/ready/la
 
 The following articles will help you configure and manage your tenants and authorizations:
 
+- [Establish DLP policies](/power-platform/guidance/adoption/dlp-strategy)
 - [Create and configure an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/tutorial-create-instance)  
 - [SAP ERP Windows Authentication](/connectors/saperp/#authentication)
 - [Overview of Kerberos](/data-integration/gateway/service-gateway-service-account)
 - [Configure Kerberos-based SSO to on-premises data sources (SAP)](/power-bi/connect-data/service-gateway-sso-kerberos)
-- [Establish DLP policies](/power-platform/guidance/adoption/dlp-strategy)
 
 ### Step 3: Create and manage an environment
 
