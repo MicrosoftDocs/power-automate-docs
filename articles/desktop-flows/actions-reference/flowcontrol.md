@@ -28,6 +28,8 @@ The **Run subflow** action interrupts the subflow in which it's placed and runs 
 
 :::image type="content" source="media/flowcontrol/subflows-example.png" alt-text="Screenshot of the deployed Run subflow action.":::
 
+To visually organize your actions into groups for easier management, enclose them between a **Region** and an **End region** action, and give the region a distinctive name.
+
 ## <a name="comment"></a> Comment
 
 User comment.
