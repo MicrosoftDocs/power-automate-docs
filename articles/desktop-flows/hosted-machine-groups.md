@@ -132,7 +132,7 @@ To create a hosted machine group:
 Bots in a hosted machine group are created when needed. Whenever a desktop flow waits in the queue and no bot is available, a bot is created automatically. A bot is created as long as the maximum number of bots for this group isn't reached and you've enough unattended add-ons assigned to your environment. You can find more information about licensing requirements in [Licensing requirements](#licensing-requirements).
 
 > [!NOTE]
-> If the hosted machine group has just been created or hasn't been used for more than 24 hours, bots will be created before a run gets addressed from the queue. The creation of a bot can take more than 10 minutes depending on its configuration.
+> If the hosted machine group has just been created or hasn't been used for more than 3 hours, bots will be created before a run gets addressed from the queue. The creation of a bot can take more than 10 minutes depending on its configuration.
 
 ## Use custom VM images for your hosted machine groups
 
@@ -297,7 +297,6 @@ To find more information about triggering desktop flows from cloud flows, go to 
 > [!IMPORTANT]
 >
 > - Only direct connectivity connections are supported for hosted machine groups.
-> - Only local account credentials are currently supported. These are credentials that you provided upon the creation of the hosted machine group.
 > - Only available for [unattended run mode](./run-pad-flow.md#unattended-mode).
 > - Desktop flows targeting hosted machine groups aren't yet compatible with the **Test flow** feature. It's possible that you observe errors when trying to test your flow. This problem is due to the nature of the [machine groups availability](#hosted-machine-groups-availability). The scheduled test run will still be accessible from the flow run history.
 
@@ -305,7 +304,7 @@ To find more information about triggering desktop flows from cloud flows, go to 
 
 You can't directly access or sign in to your hosted machine groups. They're not persisted unless they're running desktop flows. Bots in a group are created based on the current size of the queue, the configuration of the group, and the licenses assigned to the current environment.
 
-For instance, if the hosted machine group is newly created or it wasn't used for more than 24 hours, new bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
+For instance, if the hosted machine group is newly created or it wasn't used for more than 3 hours, new bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
 
 After this process, new bots will spawn to run desktop flows in the queue as efficiently as possible.
 
