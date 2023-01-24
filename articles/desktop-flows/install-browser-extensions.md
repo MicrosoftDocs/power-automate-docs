@@ -3,7 +3,7 @@ title: Install Power Automate browser extensions
 description: Learn how to install Power Automate for desktop browser extensions.
 author: georgiostrantzas
 ms.topic: how-to
-ms.date: 01/05/2023
+ms.date: 01/11/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -46,6 +46,14 @@ For Power Automate for desktop v2.26 or earlier (legacy):
 ### Alternative ways to install browser extensions
 
 After Power Automate for desktop version 2.27, the Google Chrome and Mozilla Firefox browser extensions are part of the installation. Find the extension files in the following path: **C:\Program Files (x86)\Power Automate Desktop\BrowserExtensions**.
+
+#### Install extension for Microsoft Edge
+
+1. Go to **Edge extensions** through the browser's settings or enter **edge://extensions/** in the address bar.
+
+1. Make sure that **Developer mode** is turned on.
+
+1. While you are on the Edge extension page, drag and drop the extension file in the area.
 
 #### Install extension for Google Chrome
 
