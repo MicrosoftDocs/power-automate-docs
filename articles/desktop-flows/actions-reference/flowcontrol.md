@@ -1,17 +1,14 @@
 ---
 title: Flow control actions reference
-description: See all the available flow control actions.
+description: Learn about the available flow control actions in desktop flows.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
+ms.date: 01/24/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
-- NikosMoutzourakis
-- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -52,6 +49,22 @@ This action doesn't include any exceptions.
 ## <a name="end"></a> End
 
 Signifies the end of a block.
+
+### Input parameters
+
+This action doesn't require any input.
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="end_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="endregion"></a> End region
+
+Marks the end of a group of actions.
 
 ### Input parameters
 
@@ -147,6 +160,24 @@ Marks the beginning of a block to handle actions errors.
 |-----|-----|-----|-----|-----|
 |Name|No|[Text value](../variable-data-types.md#text-value)||The name of the Exception Block for Visual purposes only.|
 |Capture unexpected logic errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, dividing a number by zero or trying to access an item from an out of bounds position.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="block_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="region"></a> Region
+
+Marks the beginning of a group of actions.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Name|No|[Text value](../variable-data-types.md#text-value)||The name of the region.|
 
 ### Variables produced
 
