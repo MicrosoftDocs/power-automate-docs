@@ -297,7 +297,6 @@ To find more information about triggering desktop flows from cloud flows, go to 
 > [!IMPORTANT]
 >
 > - Only direct connectivity connections are supported for hosted machine groups.
-> - Only local account credentials are currently supported. These are credentials that you provided upon the creation of the hosted machine group.
 > - Only available for [unattended run mode](./run-pad-flow.md#unattended-mode).
 > - Desktop flows targeting hosted machine groups aren't yet compatible with the **Test flow** feature. It's possible that you observe errors when trying to test your flow. This problem is due to the nature of the [machine groups availability](#hosted-machine-groups-availability). The scheduled test run will still be accessible from the flow run history.
 
