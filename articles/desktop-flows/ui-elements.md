@@ -141,7 +141,7 @@ Text-based selectors use the **Name** attribute of the captured element for desk
 In other words, they are available for UI elements with a **Name** or **Text** attribute that includes a value. They aren't available for elements that don't hold such a text value, even if they have child element(s) with text in their structure.
 
 >[!NOTE]
-> For the SAP application, text-based selectors use the **Text** attribute, not the **Name** attribute that they generally use on desktop automation. SAP works more efficiently with the default selectors based on the **ID** attribute.
+> For the SAP application, text-based selectors use the **Text** attribute instead of the **Name** attribute that they generally use on desktop automation. SAP works more efficiently with default selectors based on the **ID** attribute.
 
 ## Known issues and limitations
 
