@@ -25,6 +25,11 @@ search.audienceType:
   - enduser
 ---
 
+
+<!-- Where it says "Select **...** (**Commands**)", such as in line 48, do you mean the vertical ellipsis between display name and name in the screenshot? If so, considering calling it a vertical ellipsis and follow it with this: (&vellip;) -->
+
+
+
 # Edit a solution-aware cloud flow
 
 You can edit solution-aware cloud flows in [solutions](#edit-a-solution-aware-cloud-flow-via-solutions) or in [my flows](#edit-a-solution-aware-cloud-flow-via-my-flows).
