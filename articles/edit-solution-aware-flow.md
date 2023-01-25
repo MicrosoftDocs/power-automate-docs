@@ -34,7 +34,7 @@ You can edit solution-aware cloud flows in [solutions](#edit-a-solution-aware-cl
 
 ## Edit a solution-aware cloud flow via Solutions
 
-1. Sign into [Power Automate](https://powerautomate.com), and then select **Solutions** from the menu on the left.
+1. Sign in to [Power Automate](https://powerautomate.com), and then select **Solutions** from the menu on the left.
 
 1. Select the solution that contains the flow you want to edit.
 
@@ -64,13 +64,12 @@ You can edit solution-aware cloud flows in [solutions](#edit-a-solution-aware-cl
 
 1. Turn on your flow if you'd like it to run.
 
->[!WARNING]
->
->When you edit solution-aware flows, it's possible for you to introduce unmanaged customization layers into your managed solution-aware flows. Unmanaged customization layers can impact your ability to update these flows in the future.
+> [!WARNING]
+> When you edit solution-aware flows, it's possible for you to introduce unmanaged customization layers into your managed solution-aware flows. Unmanaged customization layers can impact your ability to update these flows in the future.
 
-## Duplicate a solution-aware cloud flow using "Save As"
+## Duplicate a solution-aware cloud flow using Save As
 
-The "Save As" capability can be used to duplicate a solution cloud flow. If an unmanaged solution is in context when "Save As" takes place, the flow will be added into that solution. Solution cloud flows won't be added into a solution if there's no context, or if a managed solution has context, so those flows can be located in the **My flows** list or in the **Default Solution**.
+The **Save As** capability can be used to duplicate a solution cloud flow. If an unmanaged solution is in context when **Save As** takes place, the flow will be added into that solution. Solution cloud flows won't be added into a solution if there's no context, or if a managed solution has context, so those flows can be located in the **My flows** list or in the **Default Solution**.
 
 ### Save As without solution context
 
@@ -88,11 +87,10 @@ The "Save As" capability can be used to duplicate a solution cloud flow. If an u
 
     The flow will now be visible in **My flows**.
 
-    >[!NOTE]
-    >
-    >If the save takes a few seconds, it's possible to return to **My flows** before that's completed. If that happens, refresh the browser screen to view the flow.
+    > [!NOTE]
+    > If the save takes a few seconds, it's possible to return to **My flows** before that's completed. If that happens, refresh the browser screen to view the flow.
 
-### "Save As" with unmanaged solution context
+### Save As with unmanaged solution context
 
 1. In [Power Automate](https://powerautomate.com), select **Solutions** from the menu on the left.
 
