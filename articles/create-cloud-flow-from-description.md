@@ -4,8 +4,13 @@ description: Learn to create a cloud flow from a written description of the scen
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: tapanm
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
+ms.author: napienko
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,9 +18,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/29/2022
-ms.author: deonhe
-ms.reviewer: angieandrews
+ms.date: 01/24/2023
 search.app: 
   - Flow
 search.audienceType: 
@@ -39,59 +42,63 @@ When you build automation with Power Automate, it might take valuable time to le
 - A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in the United States.
   
   >[!NOTE]
-  >You cannot create cloud flows from a description if you're logged in with a Microsoft Account.
+  >
+  >- You can't create cloud flows from a description if you're logged in with a Microsoft Account.
+  >- If you don’t have access to an environment that's based in the United States, you can [create a new environment and select **United States**](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
 
-  >[!TIP]
-  >If you don’t have access to an environment that's based in the United States, you can [create a new environment and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
-
-- Check current [limitations](#limitations) for more information.
+- For more information, check current [limitations](#limitations).
 
 ## Create a flow from a description
 
 In the following example, we'll build an automated cloud flow that sends a notification via Teams and an email each time someone responds to a Microsoft Forms survey.
 
-1. Sign in to [Power Automate](https://make.powerautomate.com), select **Create** on the left side of the screen, and then select **You describe it, AI Builds it**.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-   >[!div class="mx-imgBorder"]
-   >![A screenshot that displays the You describe it, AI Builds it button](media/easy-flow/describe-it-main.png)
+1. On the menu to the left, select **Create** and then select **Describe it to design it (preview)**.
+
+   :::image type="content" alt-text="Screenshot of the Describe it to design it (preview) button." source="media/easy-flow/describe-it-main.png":::
 
    A screen opens where you can enter a description of what you want to automate. You will also see examples you can use for inspiration and that you can try right away.
 
-1. For this example, enter *Every time someone responds to a Microsoft Forms survey, post a message to Teams and send an email*.
-1. Select the **Confirm** button.
+1. For this example, enter **Every time someone responds to a Microsoft Forms survey, post a message to Teams and send an email**.
 
-   >[!div class="mx-imgBorder"]
-   >![A screenshot that displays the confirm button](media/easy-flow/confirm-button.png)
+1. Select the right arrow (the **Confirm** button).
 
-   Power Automate returns up to three suggested flows that correspond to what you've entered. You can select the **See flow** icon to the right of each flow to see a preview of the flow.  
+    :::image type="content" alt-text="Screenshot of the Confirm button." source="media/easy-flow/confirm-button.png":::
 
-   >[!div class="mx-imgBorder"]
-   >![A screenshot that displays a suggested flow after providing a description of what to automate](media/easy-flow/describe-flow.png)
+    As an alternative, you can select a similar description from the **Suggested flow descriptions** list.
+
+   Power Automate returns a suggested flow that corresponds to what you've entered or selected.
 
    >[!NOTE]
-   >If none of the suggestions correspond to what you’re looking to automate, you can select **This is not what I want**. You will see additional guidance on what you can do next, and this signal helps Microsoft to improve the AI behind this feature.
+   >If Power Automate doesn't list a suggestion that corresponds to what you’re looking to automate, you can select **This is not what I want**. You'll see additional guidance on what you can do next.
 
-1. Select that flow that best suits your needs.
-1. Select **Next**.
-1. Setup all the connections needed to run the flow.
-   >[!div class="mx-imgBorder"]
-   >![A screenshot that displays the connections that you may need to set up.](media/easy-flow/set-up-connections.png)
+1. Start building your flow by selecting **Next**.
+
+   :::image type="content" alt-text="Screenshot of a suggested flow after providing a description of what to automate." source="media/easy-flow/describe-flow.png":::
+
+1. Set up all the connections needed to run the flow. A green check means that connection's ready to go.
+
+    :::image type="content" alt-text="Screenshot of the connections that you might need to set up." source="media/easy-flow/set-up-connections.png":::
 
 1. Select **Next**.
+
 1. Enter the information needed to run the flow. For example, which form to use and to whom to send the Teams message and email. You can decide to fill in the information on this step or do it later in the designer.
 
 1. Select **Create flow**.
 
    And there you have it! Your flow has been built. Congratulations! You can decide to make any modification and edit the flow or save it and test it.
 
-   >[!div class="mx-imgBorder"]
-   >![Power Automate showing a cloud flow that has been built from a description](media/easy-flow/generated-flow.png)
+    :::image type="content" alt-text="Screenshot of a cloud flow that's been built from a description." source="media/easy-flow/generated-flow.png":::
 
 ## Limitations
 
 - Power Automate supports descriptions written in the English language only. Descriptions you write in other languages might work, but they are not supported.
+
 - Cloud flows are the only type of flow that you can create from a description.
+
 - In the current version, the AI might not fill in some parameters automatically, even if you provide them in the description.
+
 - The AI model that transforms a description into a cloud flow is optimized to automate the main actions for the following applications.
 
   - Microsoft Excel
@@ -104,4 +111,4 @@ In the following example, we'll build an automated cloud flow that sends a notif
 
 ### See also
 
-[Learn more about cloud flows](./overview-cloud.md).  
+[Learn more about cloud flows](./overview-cloud.md)

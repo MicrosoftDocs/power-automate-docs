@@ -1,14 +1,17 @@
 ---
-title: Create a cloud flow with Dynamics 365 (online) | Microsoft Docs
+title: Create a cloud flow with Dynamics 365 (online)
 description: The Dynamics 365 connector is deprecated. Use the Microsoft Dataverse connector or the Microsoft Dataverse connector instead.
 services: ''
 suite: flow
 documentationcenter: na
-author: JimDaly
+author: radioblazer
+contributors:
+  - radioblazer
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 08/12/2022
-ms.author: jdaly
+ms.author: matow
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -18,7 +21,7 @@ search.audienceType:
 ---
 # Create a cloud flow by using Dynamics 365 (online)
 
-
+By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
 
 > [!IMPORTANT]
 > Dynamics 365 apps such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 column Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation, use [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) as the data source.
@@ -29,26 +32,28 @@ search.audienceType:
 >
 > The [Microsoft Dataverse connector](/connectors/commondataserviceforapps/) should be your first choice because it provides the most capability and best performance. However, it doesn't currently provide certain capabilities that the Dynamics 365 connector does, such as the ability to connect to multiple environments.
 
-By using a Dynamics 365 connector, you can create flows that initiate when an event occurs in Dynamics 365, or some other service, which then performs an action in Dynamics 365, or some other service. 
-
-In Power Automate, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. For more information, see [Get started with Power Automate](getting-started.md).
+In Power Automate, you can set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. To learn more, go to [Get started with Power Automate](getting-started.md).
 
 > [!IMPORTANT] 
-> To invoke a Power Automate trigger, the table used with the flow must have **Change Tracking** enabled. More information: [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
+> To invoke a Power Automate trigger, the table used with the flow must have **Change Tracking** enabled. To learn more, go to [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization).
 
 ## Create a cloud flow from a template
 
 You can create a cloud flow using one of the many templates available, such as these examples:
 
-* When an object is created in Dynamics 365, create a list item in SharePoint.
-* Create Dynamics 365 leads from an Excel table.
-* Copy Dynamics 365 accounts to customers in Dynamics 365 for Operations.
+-  When an object is created in Dynamics 365, create a list item in SharePoint.
+
+- Create Dynamics 365 leads from an Excel table.
+
+- Copy Dynamics 365 accounts to customers in Dynamics 365 for Operations.
 
 To create a cloud flow from a template, follow these steps.
 
 1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
-2. Select **Services**, and then select **Dynamics 365**.
-3. Several templates are available. To get started, select the template that you want.
+
+1. Select **Services**, and then select **Dynamics 365**.
+
+1. Many templates are available. To get started, select the template that you want.
 
 ## Create a task from a lead
 

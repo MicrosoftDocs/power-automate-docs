@@ -64,17 +64,18 @@ To complete this example, you'll need accounts with access to the following:
 
     Your flow appears, showing each action with an orange title bar.
 
-    ![Default events and actions from template.](./media/get-started-logic-template/template-default.png)
+   :::image type="content" alt-text="Screenshot of events and actions from template." source="./media/get-started-logic-template/template-default.png":::
 
 ## Customize your flow
 
 1. Select the title bar for an event to expand it, and then customize it (for example, by specifying a filter on the email that interests you).
+
 1. Actions that require input from you will automatically be expanded.
   
     For example, the **Post message** action is expanded because you need to enter a channel, such as your *\@username*. You can also customize the message content. By default, the message will contain just the subject, but you can include other information.
 
-1. Near the top of the screen, specify a name for your flow, and then select **Create flow**.
-1. Finally, if you're happy with your flow, select **Save**.
+1. Near the top of the screen, enter a name for your flow, and then select **Save**.
+
 
 Now, when your manager sends you an email, you'll receive a Slack message that contains the information that you specified.
 
