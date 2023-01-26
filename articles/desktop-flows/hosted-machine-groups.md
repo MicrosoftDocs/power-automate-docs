@@ -162,15 +162,17 @@ You can personalize your hosted machine groups by providing your own Windows ima
     - Asia: East Asia
     - Norway: Norway East
 
-### Share the Azure compute gallery with Power Automate
+### Share the Azure compute gallery with Power Automate Hosted Machine Groups service principal
 
 To use the image in Power Automate, you need to share the image with Power Automate through the Azure portal.
 
-1. In your gallery, and go to the **Access Control (IAM)** settings.
+1. In the [Azure portal](https://portal.azure.com/), go to your Azure Compute Gallery.
 
-2. Select **Add** > **Add role assignment**.
+2. Go to the **Access Control (IAM)** settings.
 
-3. Select the role **Reader** and search for the Hosted machine group application: **Power Automate Machine Management Hosted Group - Resources - Prod**. This will allow our service to access the image to create the Hosted machine group.
+3. Select **Add** > **Add role assignment**.
+
+4. Select the role **Reader** and search for the Hosted machine group application: **Power Automate Hosted Machine Groups**. This will allow our service to access the image to create the Hosted machine group.
 
 > [!NOTE]
 > If you cannot find the application above, you will need to verify if the application exists in your tenant and provision it if necessary.
