@@ -59,7 +59,7 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
 
 ## Run the flow
 
-1. Sign into OneDrive for Business.
+1. Sign in to OneDrive for Business.
 1. Find, and then select the file for which you want to request manager approval.
 1. Select the **Show actions** link (three dots).
 1. Select **Flow**. You'll see the flow that you created earlier.
