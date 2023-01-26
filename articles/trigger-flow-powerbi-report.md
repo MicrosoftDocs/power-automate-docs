@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/01/2022
+ms.date: 01/26/2023
 ms.author: hamenon
 ms.reviewer: gtrantzas
 ---
@@ -66,9 +66,7 @@ Follow these steps to trigger a flow from within a Power BI report.
 
 ### Create a new flow
 
-To create a flow, use **Instant from blank** or start with one of the built-in templates. The following steps detail how to create a flow from scratch for use within a Power BI report.
-
-When you select the **Instant from blank** option, Power Automate automatically adds the Power BI button clicked trigger.
+To create a flow, go to **My flows** > **New flow** and select to build your own flow or start from a template. If you select the **Build your own** option, select the **Power BI button clicked** trigger.
 
 ![Power BI trigger.](media/power-bi-flow/power-bi-trigger.png)
 
