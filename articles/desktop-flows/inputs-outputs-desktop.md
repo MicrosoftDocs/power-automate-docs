@@ -29,11 +29,9 @@ search.audienceType:
 
 # Use inputs and outputs in Windows recorder (V1) flows
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
-> - From February 28 2022, Selenium IDE will no longer be supported.
-> - Since November 30 2021, Windows recorder (V1) no longer works.
-> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
+> From February 28 2022, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 Use inputs to pass information from an external source such as a database or any supported connector to the legacy software that Windows recorder (V1) automates.
 
