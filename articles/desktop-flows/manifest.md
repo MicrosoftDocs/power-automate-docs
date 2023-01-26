@@ -27,19 +27,19 @@ A manifest file is the blueprint of an extension. It includes information such a
 > | Timeframe | Microsoft Partner Center and Chrome Web Store changes | Microsoft Edge and Google Chrome changes |
 > |-----------|-------------------------------------------------------|------------------------------------------|
 > | July 2022 | No longer accepts new Manifest V2 extensions with visibility set as Hidden or Public. | No change |
-> |June 2023 (Google Chrome) <br> TBD (Microsoft Edge) |No longer accepts updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. |Both browsers will stop running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on both browsers using Enterprise policies. |
+> |June 2023 <br> Google Chrome TBD <br> Microsoft Edge |No longer accepts updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. |Both browsers will stop running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on both browsers using Enterprise policies. |
 > |January 2024 (Google Chrome) <br> TBD (Microsoft Edge) |No change | Manifest V2 extensions will no longer function in both browsers even with the use of Enterprise policy. |
 
-Chromium has revised the timelines for Manifest V2 sunset. We'll independently decide on Manifest V3 migration timelines for Microsoft Edge Add-ons and share an update in this article. We continue to analyze the concerns raised by the extension developers and explore the optimal path for the Microsoft Edge Add-ons ecosystem. Meanwhile, refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset) for planning your extension's migration.
+Chromium has revised the timelines for Manifest V2 sunset. We'll independently decide on Manifest V3 migration timelines for Microsoft Edge add-ons and share an update in this article. We continue to analyze the concerns raised by the extension developers and explore the optimal path for the Microsoft Edge add-ons ecosystem. Meanwhile, refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset) for planning your extension's migration.
 
-To find more information, go to:
+For more information, go to:
 
 - [Manifest V2 support timeline](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset/)
 - [Overview and timelines for migrating to Manifest V3](/microsoft-edge/extensions-chromium/developer-guide/manifest-v3)
 
-## Power Automate plan for deprecate Manifest V2 and migrate to V3
+## Power Automate plan for deprecating Manifest V2 and migrating to V3
 
-A new browser extension will be released in December 2022, with the name **Microsoft Power Automate**. The extension follows the Manifest V3 standard, taking advantage of its benefits. The new extension is compatible with Power Automate for desktop v2.27 (December 2022 release) or later. After June 2023, you should upgrade to Power Automate for desktop v2.27 (or later) and install the new extension.
+A new browser extension, **Microsoft Power Automate**, was released in December 2022. The extension follows the Manifest V3 standard, taking advantage of its benefits. The extension is compatible with Power Automate for desktop v2.27 (December 2022 release) or later. After June 2023, you should upgrade to Power Automate for desktop v2.27 (or later) and install the new extension.
 
 The old web extension will continue to exist after the release of the new one. It will be renamed to **Microsoft Power Automate (Legacy)** and continue using Manifest V2. If you want to keep Power Automate for desktop v2.26 or older installed, use the legacy web extension until the end of May 2023.  
 
