@@ -9,13 +9,14 @@ manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/06/2020
+ms.date: 01/26/2023
+contributors:
+- georgiostrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -37,21 +38,23 @@ In this walkthrough, we'll create a simple flow that uses one of the many [OneDr
 
 ## Create a cloud flow that requests manager approval for a file in OneDrive for Business
 
-1. Sign into OneDrive for Business.
+1. Sign in to OneDrive for Business.
 1. Find, and then select the file for which you want to create the flow.
 1. Select the **Show actions** link (three dots).
 1. Select **Automate** > **Power Automate** > **Create a flow**.
 
-     ![Create flow.](./media/onedrive-launch-panel/create-flow.png) 
+    :::image type="content" source="media/onedrive-launch-panel/create-flow.png" alt-text="Screenshot of the option to create a cloud flow for a file.":::
 
-1. Select one of the templates.
+1. Select one of the available templates.
 
     In this example, select the **Request my manager's approval for the selected file** template.
 
-     >[!TIP]
-     >Sign into all connectors that request that you sign in.
+    :::image type="content" source="media/onedrive-launch-panel/onedrive-templates.png" alt-text="Screenshot of the available templates.":::
 
-1. Select **Continue**.
+1. Sign in to the required connectors, and then select **Continue**.
+
+    :::image type="content" source="media/onedrive-launch-panel/required-connections.png" alt-text="Screenshot of the required connections.":::
+
 1. Make any changes you want to the template and then save your flow with a name that you'll remember easily.
 
 ## Run the flow
