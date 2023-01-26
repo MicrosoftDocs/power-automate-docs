@@ -54,18 +54,18 @@ After June 2023, non-enterprise users must upgrade to Power Automate for desktop
 ## Run JavaScript function on web page action
 
 > [!IMPORTANT]
-> Due to security limitations issued by Mozilla Firefox, you can't use the **Run JavaScript function on web page** action with an instance of it. To utilize this action, use one of the other browser options in your desktop flow.
+> Due to security limitations issued by Mozilla Firefox, you can't use the **Run JavaScript function on web page** action with an instance of it. For this action, use one of the other browser options in your desktop flow.
 
 Due to limitations in the way Manifest V3 works, injecting JavaScript on a web page is impossible when Developer tools are disabled by Group Policy, making the action not functional.
 
 If you upgrade to Power Automate for desktop v2.27 or later and use the new browser extension, the **Run JavaScript function on web page** action will be functional with the use of its debugger capability.
 
-The action won't be impacted if you use the legacy browser extension and Power Automate for desktop v2.26 or older.
+The action won't be impacted if you use the legacy browser extension and Power Automate for desktop v2.26 or earlier.
 
-When the action runs, you'll see a  **"Microsoft Power Automate" started debugging this browser** message with no real effect on the execution.
+When the action runs, you'll see a **"Microsoft Power Automate" started debugging this browser** message with no real effect on the execution.
 
 > [!NOTE]
-> The new version of the browser extension requires the browsers' Developer tools to be enabled. The extension uses its debugger capabilities to run the JavaScript code of the respective action.
+> The new version of the browser extension requires the browser's Developer tools to be enabled. The extension uses its debugger capabilities to run the JavaScript code of the respective action.
 
 To ensure that Developer tools aren't disabled in Microsoft Edge, go to [Microsoft Edge - Policies](/deployedge/microsoft-edge-policies#developertoolsavailability).
 
@@ -73,7 +73,7 @@ To ensure that Developer tools aren't disabled in Google Chrome, go to [Chrome E
 
 ## Upgrade to Power Automate for desktop v2.27 (or later) and the new browser extension
 
-When the December 2022 release of Power Automate for desktop is available, you'll be able to download and upgrade as usual.
+With the December 2022 release of Power Automate for desktop, you're able to download and upgrade as usual.
 
 The new browser extensions will be installed automatically during Power Automate installation. If you want to install them manually, go to [Install Power Automate browser extensions](install-browser-extensions.md).
 
@@ -81,6 +81,6 @@ The new browser extensions will be installed automatically during Power Automate
 
 If you want to wait to install the new version of the browser extension, you can extend the use of the Manifest V2 extensions until January 2024. You can extend the use through an enterprise group policy. However, by January 2024, you'll have to upgrade to the new version of the extension.
 
-Google hasn't announced officially yet the way to enable the enterprise policy.
+Google hasn't yet officially announced the way to enable the enterprise policy.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
