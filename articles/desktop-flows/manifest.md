@@ -21,13 +21,14 @@ After June 2023, Google Chrome and Microsoft Edge browsers will no longer run Ma
 
 A manifest file is the blueprint of an extension. It includes information such as the version number and the title of the extension and permissions it needs to run. Migrating from Manifest V2 to V3 will bring several structural changes to how browsers handle the extensions. Manifest V3 extensions enjoy enhancements in security, privacy, and performance. They can also use more contemporary open web technologies such as service workers and promises.
 
-## Plan of Manifest V2 deprecation
+## Manifest V2 deprecation plan
 
-| Timeframe | Microsoft Partner Center and Chrome Web Store changes | Microsoft Edge and Google Chrome changes |
-|-----------|-------------------------------------------------------|------------------------------------------|
-| July 2022 | They'll no longer accept new Manifest V2 extensions with visibility set as Hidden or Public. | No change |
-|June 2023 (Google Chrome) <br> TBD (Microsoft Edge) |They'll no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. |Both browsers will stop running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on both browsers using Enterprise policies. |
-|January 2024 (Google Chrome) <br> TBD (Microsoft Edge) |No change | Manifest V2 extensions will no longer function in both browsers even with the use of Enterprise policy. |
+> [!div class="mx-tableFixed"]
+> | Timeframe | Microsoft Partner Center and Chrome Web Store changes | Microsoft Edge and Google Chrome changes |
+> |-----------|-------------------------------------------------------|------------------------------------------|
+> | July 2022 | No longer accepts new Manifest V2 extensions with visibility set as Hidden or Public. | No change |
+> |June 2023 (Google Chrome) <br> TBD (Microsoft Edge) |No longer accepts updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. |Both browsers will stop running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on both browsers using Enterprise policies. |
+> |January 2024 (Google Chrome) <br> TBD (Microsoft Edge) |No change | Manifest V2 extensions will no longer function in both browsers even with the use of Enterprise policy. |
 
 Chromium has revised the timelines for Manifest V2 sunset. We'll independently decide on Manifest V3 migration timelines for Microsoft Edge Add-ons and share an update in this article. We continue to analyze the concerns raised by the extension developers and explore the optimal path for the Microsoft Edge Add-ons ecosystem. Meanwhile, refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset) for planning your extension's migration.
 
@@ -68,7 +69,7 @@ When the action runs, you'll see a  **"Microsoft Power Automate" started debuggi
 
 To ensure that Developer tools aren't disabled in Microsoft Edge, go to [Microsoft Edge - Policies](/deployedge/microsoft-edge-policies#developertoolsavailability).
 
-To ensure that Developer tools aren't disabled in GoogleChrome, go to [Chrome Enterprise policy](https://chromeenterprise.google/policies/#DeveloperToolsAvailability).
+To ensure that Developer tools aren't disabled in Google Chrome, go to [Chrome Enterprise policy](https://chromeenterprise.google/policies/#DeveloperToolsAvailability).
 
 ## Upgrade to Power Automate for desktop v2.27 (or later) and the new browser extension
 
