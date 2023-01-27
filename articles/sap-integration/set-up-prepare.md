@@ -62,7 +62,7 @@ The assembled team of IT system administrators needs to review the following req
   - Select the 64-bit version of the connector.
   - Select _Install assemblies to GAC_ in the Optional setup steps window during installation.
 
-- [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant). Create a new tenant for the SAP Integration. It's important to consider:
+- [Azure Active Directory](/azure/active-directory/develop/quickstart-create-new-tenant). Use an existing Azure tenant or create a new tenant for the SAP Integration. It's important to consider:
   
   - The tenant has at least 1 GB of database storage capacity available for the sandbox environment.
   - All members of the IT systems team have the necessary administrator roles to perform the setup.
