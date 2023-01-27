@@ -16,6 +16,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/12/2023
 ms.author: hamenon
+ms.reviewer: gtrantzas
 ---
 
 # Trigger a cloud flow from any message in Microsoft Teams
