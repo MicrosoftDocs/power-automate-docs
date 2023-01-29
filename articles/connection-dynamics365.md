@@ -9,10 +9,10 @@ contributors:
   - radioblazer
   - v-aangie
 ms.subservice: cloud-flow
-ms.topic: article
-ms.date: 08/12/2022
+ms.topic: conceptual
+ms.date: 01/27/2023
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: gtrantzas
 search.app: 
   - Flow
 search.audienceType: 
@@ -49,24 +49,30 @@ You can create a cloud flow using one of the many templates available, such as t
 
 To create a cloud flow from a template, follow these steps.
 
-1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
+1. Sign into [Power Automate](https://make.powerautomate.com/).
 
-1. Select **Services**, and then select **Dynamics 365**.
+1. Select **Create** > **Start with a template**.
+
+1. In the **Search by keywords** field, enter **Dynamics 365**.
 
 1. Many templates are available. To get started, select the template that you want.
 
 ## Create a task from a lead
 
-If a template isn’t available for what you need, create a cloud flow from scratch. This walkthrough shows you how to create a task in Dynamics 365 whenever a lead is created in Dynamics 365.
+If a template isn’t available for what you need, create a cloud flow from scratch. This tutorial shows you how to create a task in Dynamics 365 whenever a lead is created in Dynamics 365.
 
-1. Sign in to the [Power Automate website](https://flow.microsoft.com/).
-2. Select **My flows**, and then select **Create from blank**.
-3. In the list of flow triggers, select **Dynamics 365 - When a record is created (deprecated)**.
-4. If prompted, sign in to Dynamics 365.
+1. Sign into [Power Automate](https://make.powerautomate.com/).
+
+1. Select **My flows**, and then select **Create from blank**.
+
+1. In the list of flow triggers, select **Dynamics 365 - When a record is created (deprecated)**.
+
+1. If prompted, sign in to Dynamics 365.
+
 5. Under **Organization Name**, select the Dynamics 365 instance where you want the flow to listen.
 6. Under **Table Name**, select the table that you want to listen to, which will act as a trigger initiating the flow.
    
-     For this walkthrough, select **Leads**.
+     For this tutorial, select **Leads**.
    
     ![Flow details.](./media/connection-dynamics365/flow-details.png)
     > [IMPORTANT]
@@ -77,13 +83,13 @@ If a template isn’t available for what you need, create a cloud flow from scra
 9. Under **Organization Name**, select the Dynamics 365 instance where you want the flow to create the row. Notice that it doesn’t have to be the same instance where the event is triggered from.
 10. Under **Table Name**, select the table that will create a row when the event occurs.
     
-     For this walkthrough, select **Tasks**.
+     For this tutorial, select **Tasks**.
 11. A **Subject** box appears. When you select it, a dynamic content pane appears where you can select either of these columns.
     
     * **Last Name**. If you select this column, the last name of the lead will be inserted in the **Subject** column of the task when it's created.
     * **Topic**. If you select this column, the **Topic** column for the lead will be inserted in the **Subject** column of the task when it's created.
     
-    For this walkthrough, select **Topic**.
+    For this tutorial, select **Topic**.
     
     ![Flow add topic.](./media/connection-dynamics365/flow-addtopic.png)
     
