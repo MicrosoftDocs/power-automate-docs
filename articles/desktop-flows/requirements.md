@@ -23,7 +23,7 @@ This article presents all the prerequisites and limitations you should consider 
 
 > [!IMPORTANT]
 >
-> From February 28 2022, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> From February 28 2023, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 ## Prerequisites
 
