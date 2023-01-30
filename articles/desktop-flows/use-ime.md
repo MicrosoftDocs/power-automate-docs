@@ -29,7 +29,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> From February 28 2023, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 You can use the **Add static text** feature to record text input, in any language, using IMEs or regular keyboards in your UI flows. Use **Add static text** if you want the automation to insert the same text each time your UI flow runs. 
 
