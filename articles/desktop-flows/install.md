@@ -81,7 +81,7 @@ When you install an on-premises data gateway, it defaults to the region that Pow
 
 > [!IMPORTANT]
 >
-> From February 28 2023, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 Selenium IDE is an open source tool that enables you to record and playback human interactions on websites. With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
 
