@@ -31,7 +31,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> From February 28 2023, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 You can migrate desktop flows you've created with the legacy Windows recorder
 (V1) into Power Automate desktop flows in just a few steps.
