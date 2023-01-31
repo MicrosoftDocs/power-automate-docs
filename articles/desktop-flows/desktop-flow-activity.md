@@ -99,7 +99,7 @@ By selecting **Auto refresh**, all the cards will be refreshed automatically.
 
 ## Monitor desktop flow activity with Power BI desktop (preview)
 
-Power Automate enables you to download a Power BI template to monitor desktop flow activity from the Power BI desktop application. [Learn more about Power BI desktop](/power-bi/fundamentals/desktop-what-is-desktop.md).
+Power Automate enables you to download a Power BI template to monitor desktop flow activity from the Power BI desktop application. [Learn more about Power BI desktop](/power-bi/fundamentals/desktop-what-is-desktop).
 
 Using this template, you can retrieve the data and charts displayed on the desktop flow activity page, such as last runs, main errors, and machine information.
 
