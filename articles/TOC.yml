@@ -281,6 +281,8 @@
       href: ./dataverse/known-issues.md
     - name: Use Dataverse-based flows in Power Apps
       href: ./dataverse/flows-power-apps.md
+    - name: Create a cloud flow that uses Microsoft Dataverse
+      href: common-data-model-intro.md  
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
   - name: Use solutions for ALM
@@ -667,6 +669,8 @@
     href: enhance-business-process-flows-branching.md
   - name: Add custom controls to business process flows
     href: custom-controls-business-process-flows.md
+  - name: Add on-demand workflows to business process Flows
+    href: bpf-add-on-demand-workflow.md 
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
 - name: Process advisor

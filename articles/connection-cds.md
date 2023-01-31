@@ -1,11 +1,10 @@
 ---
-title: Create an automated flow with Microsoft Dataverse| Microsoft Docs
-description: Create workflows by using a Microsoft Dataverse connection and Power Automate
+title: Create a cloud flow with Microsoft Dataverse (legacy)
+description: Learn how to create workflows by using a Microsoft Dataverse (legacy connection and Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
-manager: tapanm
+author: Radioblazer
 editor: ''
 tags: ''
 ms.devlang: na
@@ -14,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/12/2022
-ms.author: Deonhe
+ms.author: matow
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -23,7 +22,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create an automated flow with Microsoft Dataverse
+# Create a cloud flow with Microsoft Dataverse (legacy)
 
 >[!IMPORTANT]
 >To connect to Dataverse, use the recommended [Microsoft Dataverse connector](./dataverse/overview.md). The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is also available if you're unable to use the recommended connector.
