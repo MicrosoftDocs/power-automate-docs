@@ -97,21 +97,21 @@ By selecting **Auto refresh**, all the cards will be refreshed automatically.
 > [!NOTE]
 > Limitations: **Target** for run queue table doesn't display information for standalone machine.
 
-## Monitor desktop flows activity with Power BI desktop (preview)
+## Monitor desktop flow activity with Power BI desktop (preview)
 
-Power Automate enables you to download a Power BI template to monitor desktop flows activity from the Power BI desktop application.
+Power Automate enables you to download a Power BI template to monitor desktop flow activity from the Power BI desktop application. [Learn more about Power BI desktop](/power-bi/fundamentals/desktop-what-is-desktop.md).
 
-Using this template, you can retrieve the data and charts displayed on the desktop flow activity page: last runs, main errors, and machine information.
+Using this template, you can retrieve the data and charts displayed on the desktop flow activity page, such as last runs, main errors, and machine information.
 
 Additionally, you can:
 
-- Customize filters and graphs from the existing data in the **Desktop flow activity** page of the portal.
+- Customize filters and graphs from the existing data in the **Desktop flow activity** page.
 - Add your own data to build your own business dashboards.
 - Publish the template to share it with your organization.
 
 ### Prerequisites
 
-- Install the latest version of the Power BI desktop application.
+- Install the latest version of the [Power BI desktop application](https://aka.ms/pbidesktopstore).
 - Ensure the TDS endpoint is enabled in the selected environment.
 
 ### Download the Power BI template
@@ -120,7 +120,7 @@ To download the template:
 
 1. Navigate to the **Desktop flow activity** page, and select **Open in Power BI (preview)**.
 
-1. Select **Get template** on the popup window and save it locally on your machine.
+1. Select **Get template** on the popup window and save the template locally on your machine.
 
 1. Once the template has been downloaded, open it in the Power BI desktop application.
 
@@ -133,9 +133,9 @@ To download the template:
 
 ### Limitations
 
-- Some data aren't available in the Power BI desktop template: the current runs, the machine statuses, the top failed cloud flows, and the see more option.
+- Some data aren't available in the Power BI desktop template: current runs, machine statuses, top failed cloud flows, and the see more option.
 - Power BI desktop is only available in English.
-- Microsoft can regularly provide updates for this template. You need to redownload the new Power BI template if you want to get the latest version of the template.
+- Microsoft can regularly provide updates for this template. You need to redownload the Power BI template if you want to get the latest version of it.
 - There's no migration of your changes between template versions.
 
 ## Available data for admins and makers
