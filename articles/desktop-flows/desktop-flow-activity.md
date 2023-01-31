@@ -101,7 +101,7 @@ By selecting **Auto refresh**, all the cards will be refreshed automatically.
 
 Power Automate enables you to download a Power BI template to monitor desktop flow activity from the Power BI desktop application. [Learn more about Power BI desktop](/power-bi/fundamentals/desktop-what-is-desktop).
 
-Using this template, you can retrieve the data and charts displayed on the desktop flow activity page, such as last runs, main errors, and machine information.
+You can use this template to retrieve the data and charts displayed on the desktop flow activity page, such as last runs, main errors, and machine information.
 
 Additionally, you can:
 
@@ -124,7 +124,7 @@ To download the template:
 
 1. Select **Get template** on the popup window and save the template locally on your machine.
 
-    :::image type="content" source="media/desktop-flow-activity/download-powerbi-template.png" alt-text="The option to download the Power BI template.":::
+    :::image type="content" source="media/desktop-flow-activity/get-powerbi-template.png" alt-text="The option to download the Power BI template.":::
 
 1. Once the template has been downloaded, open it in the Power BI desktop application.
 
