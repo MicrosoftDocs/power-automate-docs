@@ -120,7 +120,11 @@ To download the template:
 
 1. Navigate to the **Desktop flow activity** page, and select **Open in Power BI (preview)**.
 
+    :::image type="content" source="media/desktop-flow-activity/open-powerbi.png" alt-text="The option to open the graphs in the Power BI desktop application.":::
+
 1. Select **Get template** on the popup window and save the template locally on your machine.
+
+    :::image type="content" source="media/desktop-flow-activity/download-powerbi-template.png" alt-text="The option to download the Power BI template.":::
 
 1. Once the template has been downloaded, open it in the Power BI desktop application.
 
@@ -134,8 +138,11 @@ To download the template:
 ### Limitations
 
 - Some data aren't available in the Power BI desktop template: current runs, machine statuses, top failed cloud flows, and the see more option.
+
 - Power BI desktop is only available in English.
+
 - Microsoft can regularly provide updates for this template. You need to redownload the Power BI template if you want to get the latest version of it.
+
 - There's no migration of your changes between template versions.
 
 ## Available data for admins and makers
