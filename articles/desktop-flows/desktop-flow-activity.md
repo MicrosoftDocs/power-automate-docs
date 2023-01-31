@@ -137,7 +137,7 @@ To download the template:
 
 ### Limitations
 
-- Some data aren't available in the Power BI desktop template: current runs, machine statuses, top failed cloud flows, and the see more option.
+- Some data aren't available in the Power BI desktop template: current runs, machine statuses, top failed cloud flows, and the **see more** option.
 
 - Power BI desktop is only available in English.
 
