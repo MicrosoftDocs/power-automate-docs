@@ -193,17 +193,15 @@ By following the steps in this section, you'll build:
     :::image type="content" source="media/common-data-model-approve/send-email-action-rejection.png" alt-text="Screenshot of the configured Send an email (V2) action for rejected file.":::
 
 ## Delete rejected files
-1. Under the fields for the rejection mail, click or tap **Add an action**.
-   
-    ![Add delete action.](./media/common-data-model-approve/add-delete-action.png)
-2. In the box that contains **Search for more actions**, type or paste **Dropbox**, and then click or tap **Dropbox - Delete file**.
-   
-    ![Delete file from Dropbox.](./media/common-data-model-approve/dropbox-delete-file.png)
-3. Under **File**, click or tap in the box, and then click or tap the **File identifier** token parameter to add it to the column.
-   
-    ![Identify file to delete.](./media/common-data-model-approve/identify-file-delete.png)
+
+1. Under the **Send an email (V2)** action for the rejection mail, select **Add an action** and search for the **Delete file** Dropbox action.
+
+1. In the **File** field, select **File identifier** from the **Dynamic content** list.
+
+    :::image type="content" source="media/common-data-model-approve/delete-file-action.png" alt-text="Screenshot of the configured Delete file action for rejected file.":::
 
 ## Save the flow
+
 1. At the top of the screen, type or paste a name for the flow that you're creating, and then click or tap **Create Flow**.
    
     ![Save flow.](./media/common-data-model-approve/save-flow.png)
