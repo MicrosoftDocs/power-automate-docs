@@ -24,9 +24,9 @@ search.audienceType:
   - enduser
 ---
 
-# Build an approval loop by using Power Automate and Dataverses
+# Build an approval loop by using Power Automate and Dataverse
 
-Dataverse can give you a way to build flows that have information stored in a database independent of a cloud flow. The best example of this is with approvals. If you store the status of the approval in an table, your flow can work on top of it.
+Dataverse can give you a way to build flows that have information stored in a database independent of a cloud flow. The best example of this is with approvals. If you store the status of the approval in a table, your flow can work on top of it.
 
 In this example, you'll create an approval process that starts when a user adds a file to Dropbox. When the file is added, information about it appears in an app, where a reviewer can approve or reject the change. When the reviewer approves or rejects the change, notification mail is sent, and rejected files are deleted from Dropbox.
 
@@ -95,25 +95,23 @@ By following the steps in this section, you'll build:
 ## Sign in and create a cloud flow
 
 1. Open the [Power Automate portal](https://flow.microsoft.com).
-2. Maximize your browser window if it isn't already maximized, and then click or tap **Sign in** near the upper-right corner.
-   
-    ![Sign-in button for Power Automate.](./media/common-data-model-approve/signin-flow.png)
-3. In the top right menu you select the environment that you created the database in powerapps.com.
-   
-    **Note**: if you do not select the same environment then you will not see your table.
-4. Near the upper-left corner, click or tap **My flows**.
-   
-    ![My flows button.](./media/common-data-model-approve/myflows-button.png)
-5. Near the upper-right corner, click or tap **Create new flow**.
-   
+
+1. In the top right menu, select the environment in which you created the database.
+
+    **Note**: If you don't select the same environment, you won't see your table.
+
+1. Go to **My flows** and select **Create new flow**.
+
     ![Create new flow button.](./media/common-data-model-approve/create-flow.png)
 
 ## Start when a file is added
-1. In the box that contains **Search for more triggers**, type or paste **Dropbox**, and then click or tap **Dropbox - when a file is created**.
-   
+
+1. In the **Search for more triggers** box, search for the **when a file is created** Dropbox action.
+
     ![Create trigger.](./media/common-data-model-approve/create-trigger.png)
-2. Under **Folder**, click or tap the folder icon, and then browse to the folder where files will be added.
-   
+
+1. Under **Folder**, select the folder icon, and then browse to the folder where files will be added.
+
     ![Choose folder.](./media/common-data-model-approve/folder-icon.png)
 
 ## Add data to the table
@@ -243,11 +241,13 @@ The current example contains the following fields for each screen:
 
 * In the browse screen, there are fields for the **Name** and **Status** columns of the Dataverse table.
 * In the details screen, there are fields for the **Name**, **Status**, **File identifier**, and **Approver** columns of the Dataverse table.
-* In the edit screen, there is a field for the **Name** columns and an edit text field for the **Status** column of the Dataverse table.
+* In the edit screen, there's a field for the **Name** columns and an edit text field for the **Status** column of the Dataverse table.
 
 ## Test the overall solution
 
 1. In Power Apps, open the preview mode selecting the play button on the toolbar.
+
+:::image type="content" source="media/common-data-model-approve/preview-app-button.png" alt-text="Screenshot of the button to preview the app.":::
 
 1. Select the arrow next to the first file in the list to see details about it.
 
