@@ -50,12 +50,15 @@ To get more than 5,000 rows from a query automatically, turn on the **Pagination
 
 1. Move the **Pagination** slider to the **On** position if it's not already turned on.
 
-1. In **Threshold**, enter the maximum<!--Edit note: Verify if min or max here. --> number of rows requested. Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
+1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000. Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
+	>[!IMPORTANT]
+	>When pagination is set and the amount of rows exceeds that number of the Threshold configured, the response will not include the _@odata.nextLink_ parameter to request the next set of rows. Turn Pagination off so that the response includes the _@odata.nextLink_ parameter that can be used to request the next set of rows. See the **Skip token** section later in this article to learn how to use it.
 
    ![Pagination settings for the List rows card.](../media/list-rows/pagination-settings.png "Pagination settings for the List rows card")
 
+
 >[!NOTE]
->[Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees. When pagination is not set, the response includes an _@odata.nextLink_ parameter that can be used to request the next set of rows. See the **Skip token** section later in this article to learn how to use it.
+>[Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
 
 ## Advanced options
 
