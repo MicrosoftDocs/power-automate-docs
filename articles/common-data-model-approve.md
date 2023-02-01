@@ -122,51 +122,41 @@ By following the steps in this section, you'll build:
 
 1. Configure the action as presented in the following screenshot:
 
-    1. Select the **ReviewDropboxFiles** table in **Table name**.
+    1. In the **Table name** drop-down menu, select the **ReviewDropboxFiles** table.
 
     1. In the **Approver** field, enter the email address of the person who will review the files.
 
-    1. In the **File identifier** field, select **File identifier** in the list of parameter tokens.
+    1. In the **File identifier** field, select **File identifier** from the **Dynamic content** list.
 
-    1. In the **Name** field, select **File name** in the list of parameter tokens to add that token to the column.
+    1. In the **Name** field, select **File name** from the **Dynamic content** list.
 
     1. In the **Status** field, enter **Pending**.
 
     :::image type="content" source="media/common-data-model-approve/add-new-row-action.png" alt-text="Screenshot of the configured Add a new row Dataverse action.":::
 
 ## Check whether the file has been reviewed
-1. Under the **Create object** action, click or tap **New step**, click or tap **More**, and then click or tap **Add a do until**.
-   
-    ![Add do until.](./media/common-data-model-approve/add-do-until.png)
-2. In the upper-left corner of the **Do until** action, click or tap in the box that contains **Choose a value**.
-   
-    ![Choose a value.](./media/common-data-model-approve/choose-value.png)
-   
-    **Note**: If your browser window isn't maximized, click or tap in the upper box that contains **Choose a value**.
-3. Under **Outputs from Create object**, click or tap **Status** to add that parameter token to the column.
-   
-    ![Add Status token.](./media/common-data-model-approve/add-status.png)
-4. Open the list near the center of the **Do until** action, and then click or tap **is not equal to**.
-   
-    ![Specify is not equal to.](./media/common-data-model-approve/is-not-equal.png)
-5. In the upper-right corner of the **Do until** action, type or paste **Pending** in the box that contains **Choose a value**.
-   
-    ![Specify status to watch.](./media/common-data-model-approve/do-until-not-pending.png)
-   
-    **Note**: If your browser window isn't maximized, click or tap in the lower box that contains **Choose a value**.
-6. Near the bottom of the **Do until** action, click or tap **Add an action**.
-   
-    ![Add action inside a do until.](./media/common-data-model-approve/add-action-in-dountil.png)
-7. In the box that contains **Search for more actions**, type **Dataverse**, and then click or tap **Microsoft Dataverse - Get object**.
-   
-    ![Get an object.](./media/common-data-model-approve/get-object.png)
-8. Under **The namespace**, click or tap your database.
-9. Under **The table**, type or paste **Review**, and then click or tap **Review Dropbox files**.
-   
-    ![Choose table.](./media/common-data-model-approve/choose-entity-flow.png)
-10. Under **Object id**, click or tap in the box, and then click or tap the **File identifier** parameter token to add it to the column.
-    
-     ![Add object identifier.](./media/common-data-model-approve/add-object-id.png)
+
+1. Under the **Add a new row** action, select **New step** and search for the **Do until** action.
+
+1. Configure the **Do until** action as presented in the following screenshot:
+
+    1. Select the left box in the action and select **Status** from the **Dynamic content** list.
+
+    1. In the middle drop-down menu, select **is not equal to**.
+
+    1. In the right box, enter **Pending**.
+
+    :::image type="content" source="media/common-data-model-approve/do-until-action.png" alt-text="Screenshot of the configured Do until action.":::
+
+1. Inside the **Do until** action, select **Add an action** and search for the **Get a row by ID** Dataverse action.
+
+1. Configure the **Get a row by ID** action as presented in the following screenshot:
+
+    1. In the **Table name** drop-down menu, select the **ReviewDropboxFiles** table.
+
+    1. In the **Row ID** field, select **File identifier** from the **Dynamic content** list.
+
+    :::image type="content" source="media/common-data-model-approve/get-row-by-id-action.png" alt-text="Screenshot of the configured Get a row by ID Dataverse action.":::
 
 ## Check whether the item has been approved
 1. Under the **Do-Until** action, click or tap **New step**, and then click or tap **Add a condition**.
