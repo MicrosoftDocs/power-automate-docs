@@ -57,15 +57,9 @@ By following the steps in this section, you'll build:
 
     :::image type="content" source="media/common-data-model-approve/new-table-dialog.png" alt-text="Screenshot of the New Table dialog.":::
 
-## Add columns to the table
-
-1. Go to the **Primary column** tab of the **New Table** dialog.
-
-1. Set **Display name** to **File identifier** and **Column requirement** to **Business required**.
-
-    :::image type="content" source="media/common-data-model-approve/primary-column-tab.png" alt-text="Screenshot of the Primary column tab.":::
-
 1. Select **Save** to save the table.
+
+## Add columns to the table
 
 1. Select the **ReviewDropboxFiles** table in the **Tables** page, and then select **New** > **Column**.
 
@@ -88,6 +82,15 @@ By following the steps in this section, you'll build:
     * Set **Required** to **Business required**.
 
     :::image type="content" source="media/common-data-model-approve/status-column.png" alt-text="Screenshot of the Status column.":::
+
+1. Create a new column named **File identifier** with the following properties:
+
+    * Set **Display Name** to **File identifier**.
+    * Set **Data type** to **Single line of text**.
+    * Set **Format** to **Text**.
+    * Set **Required** to **Business required**.
+
+    :::image type="content" source="media/common-data-model-approve/file-identifier-column.png" alt-text="Screenshot of the File identifier column.":::
 
 ## Sign in and create a cloud flow
 
@@ -114,29 +117,22 @@ By following the steps in this section, you'll build:
     ![Choose folder.](./media/common-data-model-approve/folder-icon.png)
 
 ## Add data to the table
-1. Click or tap **New step**, and then click or tap **Add an action**.
-   
-    ![Add an action.](./media/common-data-model-approve/add-action.png)
-2. In the box that contains **Search for more actions**, type or paste **Dataverse**, and then click or tap **Dataverse - Create object**.
-   
-    ![Create an object in Dataverse.](./media/common-data-model-approve/cdm-create-object.png)
-3. Under **The table**, type or paste **Review**, and then click or tap **Review Dropbox files**.
-   
-    ![Choose the table.](./media/common-data-model-approve/choose-entity-flow.png)
-4. Under **Title**, click or tap in the box, and then click or tap **File name** in the list of parameter tokens to add that token to the column.
-   
-    ![Add File name token.](./media/common-data-model-approve/add-filename-token.png)
-5. Under **Approver**, type or paste the email address of the person who will review the files.
-   
-    **Note**: To make testing the flow easier, specify your own address. You can change it later, when the flow is ready for actual use.
-   
-    ![Add approver.](./media/common-data-model-approve/add-approver.png)
-6. Under **Status**, type or paste **Pending**.
-   
-    ![Add default status.](./media/common-data-model-approve/add-default-status.png)
-7. Under **File Identifier**, click or tap in the box, and then click or tap **File identifier** in the list of parameter tokens to add that token to the column.
-   
-    ![Add File identifier token.](./media/common-data-model-approve/add-file-identifier.png)
+
+1. In the designer, select **New step** and search for the **Add a new row** Dataverse action.
+
+1. Configure the action as presented in the following screenshot:
+
+    1. Select the **ReviewDropboxFiles** table in **Table name**.
+
+    1. In the **Approver** field, enter the email address of the person who will review the files.
+
+    1. In the **File identifier** field, select **File identifier** in the list of parameter tokens.
+
+    1. In the **Name** field, select **File name** in the list of parameter tokens to add that token to the column.
+
+    1. In the **Status** field, enter **Pending**.
+
+    :::image type="content" source="media/common-data-model-approve/add-new-row-action.png" alt-text="Screenshot of the configured Add a new row Dataverse action.":::
 
 ## Check whether the file has been reviewed
 1. Under the **Create object** action, click or tap **New step**, click or tap **More**, and then click or tap **Add a do until**.
