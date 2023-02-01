@@ -123,8 +123,10 @@ To join a group silently with the service principal account, use the join group 
 ![groupresults.](./media/machines-silent-registration/environment-id.png)
 
 ```CMD
-.\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+.\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid
 ```
+>[!NOTE]
+>If you decide to use AAD account, you can specify the username: -username [UPN] instead of service principal account arguments
 
 ## Secure input
 
