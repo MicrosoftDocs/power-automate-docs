@@ -209,48 +209,21 @@ By following the steps in this section, you'll build:
 1. In Dropbox, add at least two files to the folder that you specified: one to test approval and one to test rejection.
 
 ## Build the app
-1. Sign in to [powerapps.com](https://make.powerapps.com), and then click or tap **New app** near the bottom of the left navigation bar.
-   
-    ![Create an app in a browser.](./media/common-data-model-approve/new-app-button.png)
-2. In the dialog box that appears, click or tap the option to open either Power Apps Studio for Windows or Power Apps Studio for the web.
-3. If you opened Power Apps Studio for Windows, click or tap **New** in the left navigation bar.
-4. Under **Create an app from your data**, click or tap **Phone layout** in the **Microsoft Dataverse** tile.
-   
-    ![Create app.](./media/common-data-model-approve/afd-cdm.png)
-5. In the **Search** box, type or paste **Review**.
-   
-    ![Search for an table.](./media/common-data-model-approve/search-entities.png)
-6. Under **Choose an table**, click or tap **Review Dropbox Files**.
-   
-    ![Choose an table.](./media/common-data-model-approve/choose-entity.png)
-7. Near the lower-right corner, click or tap **Connect**.
-   
-    ![Connect button.](./media/common-data-model-approve/connect-button.png)
-8. If the opening screen of intro tour appears, take the tour to get familiar with Power Apps (or click or tap **Skip**).
-   
-    ![Intro tour.](./media/common-data-model-approve/quick-tour.png)
-   
-    You can always take the tour later by clicking or tapping the question-mark icon near the upper-left corner and then clicking or tapping **Take the intro tour**.
-9. (optional) Near the bottom of the screen, drag the slider to increase the zoom so the app is easier to see.
-   
-    ![Zoom control.](./media/common-data-model-approve/zoom-control.png)
 
-## Customize the app
-1. In the right navigation bar, click or tap the layout that includes a header and a description.
-   
-    ![Choose layout.](./media/common-data-model-approve/choose-layout.png)
-2. On the **BrowseScreen**, click or tap just under the search bar to select the larger text-box control.
-   
-    ![Select header.](./media/common-data-model-approve/select-header.png)
-3. In the right-hand pane, open the lower list by clicking or tapping its down arrow.
-   
-    ![Open dropdown.](./media/common-data-model-approve/open-dropdown.png)
-4. In the lower list, click or tap **Title** so show the file name of the added files.
-   
-    ![Set heading data.](./media/common-data-model-approve/set-heading.png)
-5. In the right-hand pane, open the upper list, and then click or tap **Status** to show the status of each file.
-   
-    ![Set body data.](./media/common-data-model-approve/set-body.png)
+1. Sign in to [powerapps.com](https://make.powerapps.com).
+
+1. Go to the **Create** page and then select **Dataverse**.
+
+    :::image type="content" source="media/common-data-model-approve/create-app-dataverse.png" alt-text="Screenshot of the option to create an app from Dataverse.":::
+
+1. Select your Dataverse connection, and then the **ReviewDropboxFiles** table.
+
+> [!NOTE]
+> If this is your first time, you're prompted to create a connection to Dataverse. Select Create this connection.
+
+    :::image type="content" source="media/common-data-model-approve/selected-dataverse-table.png" alt-text="Screenshot of the selected Dataverse table.":::
+
+1. If the Welcome to Power Apps Studio dialog box appears, you can watch it or skip it.
 
 ## Test the overall solution
 1. In Power Apps, open Preview mode by clicking or tapping the play button near the upper-left corner.
