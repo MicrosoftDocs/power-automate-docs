@@ -231,7 +231,7 @@ At this step, the app should three screens to browse, see the details and the ed
 
 To add or remove fields from a screen:
 
-1. Select the desired screen on the **Tree view**/
+1. Select the desired screen on the **Tree view**.
 
 1. Select the root element of the screen.
 
@@ -249,42 +249,12 @@ The current example contains the following fields for each screen:
 
 1. In Power Apps, open the preview mode selecting the play button on the toolbar.
 
-    ![Open Preview mode.](./media/common-data-model-approve/open-preview.png)
-
 1. Select the arrow next to the first file in the list to see details about it.
-
-    ![Open Details screen.](./media/common-data-model-approve/open-details.png)
 
 1. Select the pencil icon to change the details of the file.
 
-    ![Open Edit screen.](./media/common-data-model-approve/edit-record.png)
+1. In the **Status** box, enter **Approved** and select the checkmark icon to save your changes. In a few minutes, you'll receive email stating that the file was approved.
 
-4. In the **Status** box, type or paste **Approved**.
-   
-    ![Approve a file.](./media/common-data-model-approve/change-status.png)
-5. In the upper-right corner, click or tap the checkmark icon to save your changes and return to the details screen.
-   
-    ![Save changes.](./media/common-data-model-approve/save-record.png)
-   
-    In a few minutes, you'll receive email stating that the file was approved.
-6. In the upper-right corner, click or tap the back button to return to the browse screen.
-   
-    ![Return to browse screen.](./media/common-data-model-approve/back-arrow.png)
-7. For the other file in the list, click or tap the arrow to show details about that file.
-   
-    ![Open Details screen.](./media/common-data-model-approve/open-details.png)
-8. In the upper-right corner, click or tap the pencil icon to change details about the file.
-   
-    ![Open Edit screen.](./media/common-data-model-approve/edit-record.png)
-9. In the **Status** box, type or paste **Rejected** (or anything except **Approved**, including **Aproved** or **Approoved**).
-   
-    ![Reject file.](./media/common-data-model-approve/reject-file.png)
-10. In the upper-right corner, click or tap the checkmark icon to save your changes and return to the details screen.
-    
-     ![Save changes.](./media/common-data-model-approve/save-record.png)
-    
-     In a few minutes, you'll receive email stating that the file was rejected, and the file will be deleted from Dropbox.
-
-
+1. Repeat the previous steps but enter **Rejected** (or anything except **Approved** in the **Status** field. In a few minutes, you'll receive email stating that the file was rejected, and the file will be deleted from Dropbox.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
