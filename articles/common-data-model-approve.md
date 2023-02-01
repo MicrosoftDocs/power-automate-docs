@@ -159,6 +159,7 @@ By following the steps in this section, you'll build:
     :::image type="content" source="media/common-data-model-approve/get-row-by-id-action.png" alt-text="Screenshot of the configured Get a row by ID Dataverse action.":::
 
 ## Check whether the item has been approved
+
 1. Under the **Do-Until** action, click or tap **New step**, and then click or tap **Add a condition**.
    
     ![Add condition.](./media/common-data-model-approve/add-condition.png)
