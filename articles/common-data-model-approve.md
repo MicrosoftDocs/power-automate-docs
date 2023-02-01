@@ -160,22 +160,17 @@ By following the steps in this section, you'll build:
 
 ## Check whether the item has been approved
 
-1. Under the **Do-Until** action, click or tap **New step**, and then click or tap **Add a condition**.
-   
-    ![Add condition.](./media/common-data-model-approve/add-condition.png)
-2. In the upper-left corner of the condition, click or tap in the box that contains **Choose a value**.
-   
-    ![Upper left corner of condition.](./media/common-data-model-approve/condition-upper-left.png)
-   
-    **Note**: If your browser window isn't maximized, click or tap in the upper box that contains **Choose a value**.
-3. Under **Outputs from Get object**, click or tap the **Status** parameter token to add it to the column.
-   
-    ![Add status to condition.](./media/common-data-model-approve/add-status-to-condition.png)
-4. In the upper-right corner of the condition, type or paste **Approved** in the box that contains **Choose a value**.
-   
-    ![Verify whether the status is set to approved.](./media/common-data-model-approve/status-equals-approved.png)
-   
-    **Note**: If your browser window isn't maximized, type or paste **Approved** in the lower box that contains **Choose a value**.
+1. Under the **Do until** action, select **New step** and search for the **Condition** action.
+
+1. Configure the **Condition** action as presented in the following screenshot:
+
+    1. Select the left box in the action and select **Status** from the **Dynamic content** list.
+
+    1. In the middle drop-down menu, select **is equal to**.
+
+    1. In the right box, enter **Approved**.
+
+    :::image type="content" source="media/common-data-model-approve/condition-action.png" alt-text="Screenshot of the configured Condition action.":::
 
 ## Send notification mail
 1. Under **If yes, do nothing**, click or tap **Add an action**.
