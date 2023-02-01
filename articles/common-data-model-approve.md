@@ -1,6 +1,6 @@
 ---
-title: Build an approval loop with Microsoft Dataverse | Microsoft Docs
-description: Create an table, a cloud flow, and an app that work together so that reviewers can approve or reject files added to Dropbox.
+title: Build an approval loop with Microsoft Dataverse
+description: Create a table, a cloud flow, and an app that work together so that reviewers can approve or reject files added to Dropbox.
 services: ''
 suite: flow
 documentationcenter: na
@@ -202,11 +202,11 @@ By following the steps in this section, you'll build:
 
 ## Save the flow
 
-1. At the top of the screen, type or paste a name for the flow that you're creating, and then click or tap **Create Flow**.
-   
-    ![Save flow.](./media/common-data-model-approve/save-flow.png)
-2. Click or tap **Close** and then click or tap **Done**.
-3. In Dropbox, add at least two files to the folder that you specified: one to test approval and one to test rejection.
+1. At the top of the screen, enter a name for the created cloud flow.
+
+1. Select **Save**.
+
+1. In Dropbox, add at least two files to the folder that you specified: one to test approval and one to test rejection.
 
 ## Build the app
 1. Sign in to [powerapps.com](https://make.powerapps.com), and then click or tap **New app** near the bottom of the left navigation bar.
