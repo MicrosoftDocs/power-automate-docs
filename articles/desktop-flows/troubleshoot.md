@@ -4,7 +4,7 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 01/05/2023
+ms.date: 02/01/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -88,9 +88,11 @@ If none of the above is possible, specify Power Automate executables to run as a
 
 ## Change the on-premises Service account
 
-The UIFlowService uses the virtual account **NT SERVICE\UIFlowService**. This account needs the ability to "Log on as a service" in order to successfully start.
+The **UIFlowService** uses the virtual account **NT SERVICE\UIFlowService**, and the service itself communicates as **NT SERVICE\UIFlowService**.
 
-Most environments don't require to change the default configuration. If your company has some restrictions in place, you can either ask your domain administrator to grant **NT SERVICE\UIFlowService** the right to **Log on as a service** or change the account here with an allowed one.
+This account may need the ability to "Log on as a service" to start successfully, and some proxies or network configurations may not let arbitrary virtual accounts leave the network.
+
+Most environments don't require to change the default configuration. However, if your company has some restrictions in place, you can either ask your domain administrator to grant **NT SERVICE\UIFlowService** the right to **Log on as a service** or change the account here with an allowed one.
 
 1. Select **Change account**
 1. Select **This account**
