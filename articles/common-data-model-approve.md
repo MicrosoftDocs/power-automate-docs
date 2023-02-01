@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2020
+ms.date: 02/01/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -36,40 +36,31 @@ By following the steps in this section, you'll build:
 * a **flow** that adds information to the custom table when a file is added to Dropbox, sends mail when the file is approved or rejected, and deletes rejected files. These steps demonstrate how to build such a cloud flow from scratch, but you can create a similar flow from a template.
 * an **app** in which a reviewer can approve or reject files added to Dropbox. You'll use Power Apps to generate this app automatically based on the columns in the custom table.
 
-**Prerequisites**
+## Prerequisites
 
 * Sign up for [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
 * Create connections to Dropbox and Office 365 Outlook, as [Manage your connections](https://powerapps.microsoft.com/tutorials/add-manage-connections/) describes.
 
 ## Build the table
+
 1. Sign in to [powerapps.com](https://make.powerapps.com).
-2. If the left navigation bar doesn't appear by default, click or tap the icon with three horizontal lines in the upper-left corner.
-   
-    ![Open left navigation bar.](./media/common-data-model-approve/hamburger-icon.png)
-3. In the left navigation bar, click or tap **Manage**, and then click or tap **Tables**.
-   
-    ![Manage tables.](./media/common-data-model-approve/manage-entities.png)
-4. If prompted, click or tap **Create my database**.
-   
-    ![Create database.](./media/common-data-model-approve/create-database.png)
-5. Near the upper-right corner, click or tap **New table**.
-   
-    ![Create table.](./media/common-data-model-approve/new-entity.png)
-   
-    If your browser window isn't maximized, this button might appear in a different place.
-6. Under **Table name**, specify a name that doesn't contain spaces and that no other table in your database has.
-   
-    To follow this example exactly, specify **ReviewDropboxFiles**.
-   
-    ![Specify table name.](./media/common-data-model-approve/entity-name.png)
-7. Under **Display name**, specify a friendly name.
-   
-    ![Specify display name.](./media/common-data-model-approve/display-name.png)
-8. Click or tap **Next**.
-   
-    ![Next button.](./media/common-data-model-approve/next-button.png)
+
+1. In the left navigation bar, select **Tables**.
+
+    :::image type="content" source="media/common-data-model-approve/tables-menu.png" alt-text="Screenshot of the Tables option in the Power Apps navigation menu.":::
+
+1. Select **New table** and then **New table**.
+
+    :::image type="content" source="media/common-data-model-approve/new-table.png" alt-text="Screenshot of the option to create a new table.":::
+
+1. Specify a display name and a plural name for the new table. In this example, both names are **ReviewDropboxFiles**. Optionally, you can a description.
+
+    :::image type="content" source="media/common-data-model-approve/new-table-dialog.png" alt-text="Screenshot of the New Table dialog.":::
+
+1. Select **Save** to save the table.
 
 ## Add columns to the table
+
 1. Near the upper-right corner, click or tap **Add column**.
    
     ![Add column.](./media/common-data-model-approve/add-field.png)
