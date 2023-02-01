@@ -173,26 +173,24 @@ By following the steps in this section, you'll build:
     :::image type="content" source="media/common-data-model-approve/condition-action.png" alt-text="Screenshot of the configured Condition action.":::
 
 ## Send notification mail
-1. Under **If yes, do nothing**, click or tap **Add an action**.
-   
-    ![If yes, add an action.](./media/common-data-model-approve/if-yes-action.png)
-2. In the box that contains **Search for more actions**, type or paste **send mail**, and then click or tap **Office 365 Outlook - Send an email**.
-   
-    ![If yes, send mail.](./media/common-data-model-approve/if-yes-send-mail.png)
-3. Under **To**, type or paste the address of the person whom you want to notify when an item is accepted.
-   
+
+1. Under the **If yes** action, select **Add an action** and search for the **Send an email (V2)** Office 365 Outlook action.
+
+1. Configure the **Send an email (V2)** action as presented in the following screenshot:
+
+    1. In the **To** field, enter the email address of the person whom you want to notify when an item is accepted.
+
     **Note**: To make testing the flow easier, specify your own address. You can change it when the flow is ready for actual use.
-   
-    ![Approval recipient.](./media/common-data-model-approve/approval-recipient.png)
-4. Under **Subject**, click or tap in the box, and then click or tap the **File name** parameter token to add it to the column.
-   
-    ![Specify the file name as the email subject.](./media/common-data-model-approve/subject-is-file-name.png)
-5. Under **Body**, type or paste **The item has been approved.**
-   
-    ![Body of approval mail.](./media/common-data-model-approve/approval-body.png)
-6. Under **If no, do nothing**, repeat steps 1-5 in this procedure except specify the body of the email message as **The item has been rejected.**
-   
-    ![Body of rejection mail.](./media/common-data-model-approve/rejection-body.png)
+
+    1. In the **Subject** field, select **File name** from the **Dynamic content** list.
+
+    1. In the **Body** field, enter **The item has been approved.**.
+
+    :::image type="content" source="media/common-data-model-approve/send-email-action-approval.png" alt-text="Screenshot of the configured Send an email (V2) action for approved file.":::
+
+1. Under the **If no** action, repeat the step 2, but specify the body of the email message as **The item has been rejected.**
+
+    :::image type="content" source="media/common-data-model-approve/send-email-action-rejection.png" alt-text="Screenshot of the configured Send an email (V2) action for rejected file.":::
 
 ## Delete rejected files
 1. Under the fields for the rejection mail, click or tap **Add an action**.
