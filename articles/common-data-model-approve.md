@@ -53,53 +53,44 @@ By following the steps in this section, you'll build:
 
     :::image type="content" source="media/common-data-model-approve/new-table.png" alt-text="Screenshot of the option to create a new table.":::
 
-1. Specify a display name and a plural name for the new table. In this example, both names are **ReviewDropboxFiles**. Optionally, you can a description.
+1. Specify a display name and a plural name for the new table. In this example, both names are **ReviewDropboxFiles**. Optionally, you can add a description.
 
     :::image type="content" source="media/common-data-model-approve/new-table-dialog.png" alt-text="Screenshot of the New Table dialog.":::
 
-1. Select **Save** to save the table.
-
 ## Add columns to the table
 
-1. Near the upper-right corner, click or tap **Add column**.
-   
-    ![Add column.](./media/common-data-model-approve/add-field.png)
-2. In the blank row that appears at the bottom of the list of columns, set the properties of an **Approver** column. (As you set these properties, you can switch to the next column by pressing Tab.)
-   
-   * In the **Display Name** column, type **Approver**.
-   * In the **Name** column, type **ApproverEmail**.
-   * In the **Type** column, click or tap the **Email** option.
-   * In the **Required** column, select the checkbox.
-     
-     ![Approver column.](./media/common-data-model-approve/approver-field.png)
-3. In the next row, set the properties of a **Status** column:
-   
-   * In the **Display Name** column, type **Status**.
-   * In the **Name** column, type **Status**.
-   * In the **Type** column, click or tap the **Text** option.
-   * In the **Properties** column, leave the default value.
-   * In the **Required** column, select the checkbox.
-     
-     ![Status column.](./media/common-data-model-approve/status-field.png)
-4. In the next row, set the properties of a **FileID** column:
-   
-   * In the **Display Name** column, type **File identifier**.
-   * In the **Name** column, type **FileID**.
-   * In the **Type** column, click or tap the **Text** option.
-   * In the **Properties** column, leave the default value.
-   * In the **Unique** column, select the checkbox.
-   * In the **Required** column, select the checkbox.
-     
-     ![FileID column.](./media/common-data-model-approve/fileid-field.png)
-5. Near the right edge, click or tap the ellipsis (...) for the **FileID** column, and then click or tap **Set as Title column**.
-   
-    ![Set title column.](./media/common-data-model-approve/set-title-field.png)
-6. Near the lower-left corner, click or tap **Create**.
-   
-    ![Create an table.](./media/common-data-model-approve/create-button.png)
-7. (optional) When the list of tables reappears, maximize your browser window if it isn't already maximized, and then click or tap the **Type** column header. The list is sorted with the custom tables, such as the one you just created, appearing at the top.
+1. Go to the **Primary column** tab of the **New Table** dialog.
+
+1. Set **Display name** to **File identifier** and **Column requirement** to **Business required**.
+
+    :::image type="content" source="media/common-data-model-approve/primary-column-tab.png" alt-text="Screenshot of the Primary column tab.":::
+
+1. Select **Save** to save the table.
+
+1. Select the **ReviewDropboxFiles** table in the **Tables** page, and then select **New** > **Column**.
+
+    :::image type="content" source="media/common-data-model-approve/new-column.png" alt-text="Screenshot of the New column option.":::
+
+1. Create a new column named **Approver** with the following properties:
+
+    * Set **Display Name** to **Approver**.
+    * Set **Data type** to **Single line of text**.
+    * Set **Format** to **Email**.
+    * Set **Required** to **Business required**.
+
+    :::image type="content" source="media/common-data-model-approve/approver-column.png" alt-text="Screenshot of the Approver column.":::
+
+1. Create a new column named **Status** with the following properties:
+
+    * Set **Display Name** to **Status**.
+    * Set **Data type** to **Single line of text**.
+    * Set **Format** to **Text**.
+    * Set **Required** to **Business required**.
+
+    :::image type="content" source="media/common-data-model-approve/status-column.png" alt-text="Screenshot of the Status column.":::
 
 ## Sign in and create a cloud flow
+
 1. Open the [Power Automate portal](https://flow.microsoft.com).
 2. Maximize your browser window if it isn't already maximized, and then click or tap **Sign in** near the upper-right corner.
    
