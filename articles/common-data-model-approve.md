@@ -218,23 +218,47 @@ By following the steps in this section, you'll build:
 
 1. Select your Dataverse connection, and then the **ReviewDropboxFiles** table.
 
-> [!NOTE]
-> If this is your first time, you're prompted to create a connection to Dataverse. Select Create this connection.
+    > [!NOTE]
+    > If this is your first time, you're prompted to create a connection to Dataverse. Select Create this connection.
 
     :::image type="content" source="media/common-data-model-approve/selected-dataverse-table.png" alt-text="Screenshot of the selected Dataverse table.":::
 
-1. If the Welcome to Power Apps Studio dialog box appears, you can watch it or skip it.
+1. If the **Welcome to Power Apps Studio** dialog box appears, you can watch it or skip it.
+
+## Customize the app
+
+At this step, the app should three screens to browse, see the details and the edit the entries respectively.
+
+To add or remove fields from a screen:
+
+1. Select the desired screen on the **Tree view**/
+
+1. Select the root element of the screen.
+
+1. Select **Edit** in the right pane.
+
+:::image type="content" source="media/common-data-model-approve/edit-fields.png" alt-text="Screenshot of the option to edit fields.":::
+
+The current example contains the following fields for each screen:
+
+* In the browse screen, there are fields for the **Name** and **Status** columns of the Dataverse table.
+* In the details screen, there are fields for the **Name**, **Status**, **File identifier**, and **Approver** columns of the Dataverse table.
+* In the edit screen, there is a field for the **Name** columns and an edit text field for the **Status** column of the Dataverse table.
 
 ## Test the overall solution
-1. In Power Apps, open Preview mode by clicking or tapping the play button near the upper-left corner.
-   
+
+1. In Power Apps, open the preview mode selecting the play button on the toolbar.
+
     ![Open Preview mode.](./media/common-data-model-approve/open-preview.png)
-2. For the first file in the list, click or tap the arrow to show details about that file.
-   
+
+1. Select the arrow next to the first file in the list to see details about it.
+
     ![Open Details screen.](./media/common-data-model-approve/open-details.png)
-3. In the upper-right corner, click or tap the pencil icon to change details about the file.
-   
+
+1. Select the pencil icon to change the details of the file.
+
     ![Open Edit screen.](./media/common-data-model-approve/edit-record.png)
+
 4. In the **Status** box, type or paste **Approved**.
    
     ![Approve a file.](./media/common-data-model-approve/change-status.png)
