@@ -39,7 +39,7 @@ You need to have at least one solution before you can create a solution-aware fl
 
 1. On the menu to the left, select **Solutions**.
 
-   :::image type="content" alt-text="Screenshot of the left navigation bar with the Solutions option hightlighted." source="./media/create-flow-solution/select-solutions-from-left-nav.png":::
+   :::image type="content" alt-text="Screenshot of the left navigation bar with the Solutions option highlighted." source="./media/create-flow-solution/select-solutions-from-left-nav.png":::
 
 1. Select the solution in which you'll create your flow.
 
