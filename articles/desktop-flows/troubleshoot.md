@@ -97,7 +97,7 @@ Most on-premises environments don't require changing the default configuration. 
 - Your network doesn't allow requests made by the **NT SERVICE\UIFlowServic** virtual account to reach Power Automate cloud services.
 - Your machine or group policy disallows the **Log on as a service** privilege from the **NT SERVICE\UIFlowService** account.
 
-In either of these cases, you can ask your domain or network administrator to grant the **NT SERVICE\UIFlowService** the appropriate privileges.Also, you can replicate the following steps to change the account with which the Power Automate service runs:
+In either of these cases, you can ask your domain or network administrator to grant **NT SERVICE\UIFlowService** the appropriate privileges.Also, you can replicate the following steps to change the account with which the Power Automate service runs:
 
 1. Launch the Machine runtime application and select the **Troubleshoot** tab.
 1. Select **Change account**.
