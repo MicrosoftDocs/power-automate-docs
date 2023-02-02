@@ -4,7 +4,7 @@ description: See how to automate desktop applications and extract data from them
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: marleon
 ms.reviewer: gtrantzas
