@@ -100,13 +100,15 @@ By following the steps in this section, you'll build:
 
 1. Go to **My flows** and select **New flow** > **Automated cloud flow**.
 
+    :::image type="content" source="media/common-data-model-approve/create-cloud-flow.png" alt-text="Screenshot of the option to create a new cloud flow.":::
+
 ## Start when a file is added
 
-1. In the **Search all  triggers** box, search for the **When a file is created** Dropbox action.
+1. In the **Build an automated cloud flow** dialog, enter a name for the flow and search for the **When a file is created** Dropbox trigger.
 
 1. Under **Folder**, select the folder icon, and then browse to the folder where files will be added.
 
-    ![Choose folder.](./media/common-data-model-approve/folder-icon.png)
+    :::image type="content" source="media/common-data-model-approve/folder-icon.png" alt-text="Screenshot of the option to choose a folder in the When a file is created trigger.":::
 
 ## Add data to the table
 
