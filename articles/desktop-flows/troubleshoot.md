@@ -4,7 +4,7 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 02/01/2023
+ms.date: 02/02/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -88,16 +88,22 @@ If none of the above is possible, specify Power Automate executables to run as a
 
 ## Change the on-premises Service account
 
-The **UIFlowService** uses the virtual account **NT SERVICE\UIFlowService**, and the service itself communicates as **NT SERVICE\UIFlowService**.
+The Power Automate service (**UIFlowService**) communicates with Power Automate cloud services for machine registration and running desktop flows.
 
-This account may need the ability to **Log on as a service** to start successfully, and some proxies or network configurations may not let arbitrary virtual accounts leave the network.
+By default, it runs as a virtual account created by the Power Automate installer called **NT SERVICE\UIFlowService**.
 
-Most environments don't require changing the default configuration. However, if your company has some restrictions in place, you can ask your domain administrator to grant **NT SERVICE\UIFlowService** the right to **Log on as a service** or change the account here with an allowed one.
+Most on-premises environments don't require changing the default configuration. However, you may run into errors registering machines or running flows for the following reasons:
 
-1. Select **Change account**
-1. Select **This account**
-1. Provide the new account, for example: **DOMAIN\AlexJohnson**
-1. Provide the password of this account and select **Configure**
+- Your network doesn't allow requests made by the **NT SERVICE\UIFlowServic** virtual account to reach Power Automate cloud services.
+- Your machine or group policy disallows the **Log on as a service** privilege from the **NT SERVICE\UIFlowService** account.
+
+In either of these cases, you can ask your domain or network administrator to grant the **NT SERVICE\UIFlowService** the appropriate privileges.Also, you can replicate the following steps to change the account with which the Power Automate service runs:
+
+1. Launch the Machine runtime application and select the **Troubleshoot** tab.
+1. Select **Change account**.
+1. Select **This account**.
+1. Provide the new account, for example: **DOMAIN\AlexJohnson**.
+1. Provide the password of this account and select **Configure**.
 
 :::image type="content" source="media/troubleshoot/power-automate-troubleshoot-dialog.png" alt-text="Screenshot of the Power Automate troubleshoot dialog.":::
 
