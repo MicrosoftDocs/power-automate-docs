@@ -4,7 +4,7 @@ description: See information about the deprecation of Manifest V2 and migration 
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/13/2022
+ms.date: 02/02/2023
 ms.author: nimoutzo
 ms.reviewer: gtrantzas
 contributors:
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Migration to Manifest V3
 
-After June 2023, Google Chrome and Microsoft Edge browsers will no longer run Manifest V2 extensions. Currently, the Power Automate browser extensions for both browsers are based on Manifest V2. Therefore, the web extensions must be migrated to Manifest V3 to be functional after June 2023.
+After a certain date that the respective products will announce, Google Chrome and Microsoft Edge browsers will no longer run Manifest V2 extensions. Until December 2022, the Power Automate browser extensions for both browsers were based on Manifest V2. Therefore, the web extensions must be migrated to Manifest V3 to be functional after the deprecation date (TBD).
 
 A manifest file is the blueprint of an extension. It includes information such as the version number and the title of the extension and permissions it needs to run. Migrating from Manifest V2 to V3 will bring several structural changes to how browsers handle the extensions. Manifest V3 extensions enjoy enhancements in security, privacy, and performance. They can also use more contemporary open web technologies such as service workers and promises.
 
@@ -27,8 +27,8 @@ A manifest file is the blueprint of an extension. It includes information such a
 > | Timeframe | Microsoft Partner Center and Chrome Web Store changes | Microsoft Edge and Google Chrome changes |
 > |-----------|-------------------------------------------------------|------------------------------------------|
 > | July 2022 | No longer accepts new Manifest V2 extensions with visibility set as Hidden or Public. | No change |
-> |June 2023 <br> Google Chrome, TBD <br> Microsoft Edge |No longer accepts updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. |Both browsers will stop running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on both browsers using Enterprise policies. |
-> |January 2024 <br> Google Chrome, TBD <br> Microsoft Edge |No change | Manifest V2 extensions will no longer function in both browsers even with the use of Enterprise policy. |
+> |TBD <br> Google Chrome, TBD <br> Microsoft Edge |No longer accepts updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. |Both browsers will stop running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on both browsers using Enterprise policies. |
+> |TBD <br> Google Chrome, TBD <br> Microsoft Edge |No change | Manifest V2 extensions will no longer function in both browsers even with the use of Enterprise policy. |
 
 Chromium has revised the timelines for Manifest V2 sunset. We'll independently decide on Manifest V3 migration timelines for Microsoft Edge add-ons and share an update in this article. We continue to analyze the concerns raised by the extension developers and explore the optimal path for the Microsoft Edge add-ons ecosystem. Meanwhile, refer to the [Chromium timelines](https://developer.chrome.com/docs/extensions/mv3/mv2-sunset) for planning your extension's migration.
 
@@ -39,17 +39,17 @@ For more information, go to:
 
 ## Power Automate plan for deprecating Manifest V2 and migrating to V3
 
-A new browser extension, **Microsoft Power Automate**, was released in December 2022. The extension follows the Manifest V3 standard, taking advantage of its benefits. The extension is compatible with Power Automate for desktop v2.27 (December 2022 release) or later. After June 2023, you should upgrade to Power Automate for desktop v2.27 (or later) and install the new extension.
+A new browser extension, **Microsoft Power Automate**, was released in December 2022. The extension follows the Manifest V3 standard, taking advantage of its benefits. The extension is compatible with Power Automate for desktop v2.27 (December 2022 release) or later. After the deprecation date (TBD), you should upgrade to Power Automate for desktop v2.27 (or later) and install the new extension.
 
-The old web extension will continue to exist after the release of the new one. It will be renamed to **Microsoft Power Automate (Legacy)** and continue using Manifest V2. If you want to keep Power Automate for desktop v2.26 or earlier installed, use the legacy web extension until the end of May 2023.  
+The old web extension will continue to exist after the release of the new one. It will be renamed to **Microsoft Power Automate (Legacy)** and continue using Manifest V2. If you want to keep Power Automate for desktop v2.26 or earlier installed, use the legacy web extension until the deprecation date (TBD).  
 
-After June 2023, enterprise users have two options:
+After then, enterprise users have two options:
 
 - Upgrade to Power Automate for desktop v2.27 or later and use the new browser extension.
 
-- (Only for enterprises) Use Enterprise policies to allow Manifest V2 extensions to run on Microsoft Edge/Google Chrome. By enabling it, you may use Power Automate for desktop v2.26 or earlier and the legacy web extension until January 2024. After January 2024, everyone must upgrade to Power Automate for desktop v2.27 or later.
+- (Only for enterprises) Use Enterprise policies to allow Manifest V2 extensions to run on Microsoft Edge/Google Chrome. By enabling it, you may use Power Automate for desktop v2.26 or earlier and the legacy web extension until a date that will be announced by the respective products and will be a few months after the deprecation date (end of extension date). After the end of extension date (TBD), everyone must upgrade to Power Automate for desktop v2.27 or later.
 
-After June 2023, non-enterprise users must upgrade to Power Automate for desktop v2.27 or later and use the new browser extension.
+After the deprecation date (TBD), users without the Enterprise policy applied must upgrade to Power Automate for desktop v2.27 or later and use the new browser extension.
 
 ## Run JavaScript function on web page action
 
@@ -79,7 +79,7 @@ The new browser extensions will be installed automatically during Power Automate
 
 ## Extend the usage of Manifest V2 extensions
 
-If you want to wait to install the new version of the browser extension, you can extend the use of the Manifest V2 extensions until January 2024. You can extend the use through an enterprise group policy. However, by January 2024, you'll have to upgrade to the new version of the extension.
+If you want to wait to install the new version of the browser extension, you can extend the use of the Manifest V2 extensions until the end of extension date (TBD). You can extend the use through an enterprise group policy. However, by the end of the extension date (TBD), you'll have to upgrade to the new version of the extension.
 
 Google hasn't yet officially announced the way to enable the enterprise policy.
 
