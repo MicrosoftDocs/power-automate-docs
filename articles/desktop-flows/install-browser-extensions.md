@@ -45,7 +45,7 @@ For Power Automate for desktop v2.26 or earlier (legacy):
 
 ### Alternative ways to install browser extensions
 
-After Power Automate for desktop version 2.27, the Google Chrome and Mozilla Firefox browser extensions are part of the installation. Find the extension files in the following path: **C:\Program Files (x86)\Power Automate Desktop\BrowserExtensions**.
+After Power Automate for desktop version 2.27, the Microsoft Edge, Google Chrome, and Mozilla Firefox browser extensions are part of the installation. Find the extension files in the following path: **C:\Program Files (x86)\Power Automate Desktop\BrowserExtensions**.
 
 #### Install extension for Microsoft Edge
 
