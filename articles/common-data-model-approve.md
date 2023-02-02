@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/01/2023
+ms.date: 02/02/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -96,19 +96,13 @@ By following the steps in this section, you'll build:
 
 1. Open the [Power Automate portal](https://flow.microsoft.com).
 
-1. In the top right menu, select the environment in which you created the database.
+1. In the top right menu, select the environment in which you created the database. If you don't select the same environment, you won't see your table.
 
-    **Note**: If you don't select the same environment, you won't see your table.
-
-1. Go to **My flows** and select **Create new flow**.
-
-    ![Create new flow button.](./media/common-data-model-approve/create-flow.png)
+1. Go to **My flows** and select **New flow** > **Automated cloud flow**.
 
 ## Start when a file is added
 
-1. In the **Search for more triggers** box, search for the **when a file is created** Dropbox action.
-
-    ![Create trigger.](./media/common-data-model-approve/create-trigger.png)
+1. In the **Search all  triggers** box, search for the **When a file is created** Dropbox action.
 
 1. Under **Folder**, select the folder icon, and then browse to the folder where files will be added.
 
@@ -178,7 +172,8 @@ By following the steps in this section, you'll build:
 
     1. In the **To** field, enter the email address of the person whom you want to notify when an item is accepted.
 
-    **Note**: To make testing the flow easier, specify your own address. You can change it when the flow is ready for actual use.
+        > [!TIP]
+        > **Note**: To make testing the flow easier, specify your own address. You can change it when the flow is ready for actual use.
 
     1. In the **Subject** field, select **File name** from the **Dynamic content** list.
 
@@ -200,9 +195,7 @@ By following the steps in this section, you'll build:
 
 ## Save the flow
 
-1. At the top of the screen, enter a name for the created cloud flow.
-
-1. Select **Save**.
+1. At the top of the screen, enter a name for the created cloud flow, and select **Save**.
 
 1. In Dropbox, add at least two files to the folder that you specified: one to test approval and one to test rejection.
 
@@ -217,15 +210,15 @@ By following the steps in this section, you'll build:
 1. Select your Dataverse connection, and then the **ReviewDropboxFiles** table.
 
     > [!NOTE]
-    > If this is your first time, you're prompted to create a connection to Dataverse. Select Create this connection.
+    > If this is your first time, you're prompted to create a connection to Dataverse.
 
     :::image type="content" source="media/common-data-model-approve/selected-dataverse-table.png" alt-text="Screenshot of the selected Dataverse table.":::
 
-1. If the **Welcome to Power Apps Studio** dialog box appears, you can watch it or skip it.
+1. If the **Welcome to Power Apps Studio** dialog box appears, you can follow it or skip it.
 
 ## Customize the app
 
-At this step, the app should three screens to browse, see the details and the edit the entries respectively.
+At this step, the app should contain three screens to browse, see the details and edit the entries, respectively.
 
 To add or remove fields from a screen:
 
@@ -241,20 +234,20 @@ The current example contains the following fields for each screen:
 
 * In the browse screen, there are fields for the **Name** and **Status** columns of the Dataverse table.
 * In the details screen, there are fields for the **Name**, **Status**, **File identifier**, and **Approver** columns of the Dataverse table.
-* In the edit screen, there's a field for the **Name** columns and an edit text field for the **Status** column of the Dataverse table.
+* In the edit screen, there's a field for the **Name** column and an edit text field for the **Status** column of the Dataverse table.
 
 ## Test the overall solution
 
 1. In Power Apps, open the preview mode selecting the play button on the toolbar.
 
-:::image type="content" source="media/common-data-model-approve/preview-app-button.png" alt-text="Screenshot of the button to preview the app.":::
+    :::image type="content" source="media/common-data-model-approve/preview-app-button.png" alt-text="Screenshot of the button to preview the app.":::
 
-1. Select the arrow next to the first file in the list to see details about it.
+1. Select the arrow next to the first file in the list to see the details about it.
 
 1. Select the pencil icon to change the details of the file.
 
-1. In the **Status** box, enter **Approved** and select the checkmark icon to save your changes. In a few minutes, you'll receive email stating that the file was approved.
+1. In the **Status** box, enter **Approved** and select the checkmark icon to save your changes. In a few minutes, you'll receive an email stating that the file was approved.
 
-1. Repeat the previous steps but enter **Rejected** (or anything except **Approved** in the **Status** field. In a few minutes, you'll receive email stating that the file was rejected, and the file will be deleted from Dropbox.
+1. Repeat the previous steps but enter **Rejected** (or anything except **Approved**) in the **Status** field. In a few minutes, you'll receive an email stating that the file was rejected, and the file will be deleted from Dropbox.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
