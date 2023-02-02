@@ -11,10 +11,10 @@ tags: ''
 
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/12/2023
+ms.date: 02/01/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -30,6 +30,9 @@ Share a cloud flow with others in your organization so they can also benefit fro
 - Add an owner to a cloud flow.
 - Share a cloud flow with run-only privileges.
 - Share a copy of a cloud flow.
+
+> [!IMPORTANT]
+> You can't share cloud flows with guest users in your tenant.
 
 ## Prerequisites
 
