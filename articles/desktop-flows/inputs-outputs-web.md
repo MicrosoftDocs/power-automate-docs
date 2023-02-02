@@ -28,11 +28,9 @@ search.audienceType:
 ---
 # Use inputs and outputs in Selenium IDE flows
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
-> - From February 28 2022, Selenium IDE will no longer be supported.
-> - Since November 30 2021, Windows recorder (V1) no longer works.
-> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 You can define inputs to pass to your automated applications during playback. You can also pass *output* from your automated applications to your flow.
 

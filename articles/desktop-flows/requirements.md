@@ -23,7 +23,7 @@ This article presents all the prerequisites and limitations you should consider 
 
 > [!IMPORTANT]
 >
-> Selenium IDE is no longer supported and Windows recorder (V1) no longer works. Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 ## Prerequisites
 

@@ -29,11 +29,9 @@ search.audienceType:
 
 # Edit Windows recorder (V1) flows
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
-> - From February 28 2022, Selenium IDE will no longer be supported.
-> - Since November 30 2021, Windows recorder (V1) no longer works.
-> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 Windows recorder (V1) flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 

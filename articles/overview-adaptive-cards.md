@@ -21,6 +21,7 @@ search.app:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.reviewer: gtrantzas
 ---
 # Overview of Adaptive Cards for Microsoft Teams
 

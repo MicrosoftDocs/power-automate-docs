@@ -28,11 +28,9 @@ search.audienceType:
 
 # Create and test Windows recorder (V1) flows
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
-> - From February 28 2022, Selenium IDE will no longer be supported.
-> - Since November 30 2021, Windows recorder (V1) no longer works.
-> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 
