@@ -12,10 +12,10 @@ editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/23/2023
+ms.date: 02/02/2023
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.app: 
@@ -24,11 +24,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
-
-<!-- Where it says "Select **...** (**Commands**)", such as in line 48, do you mean the vertical ellipsis between display name and name in the screenshot? If so, considering calling it a vertical ellipsis and follow it with this: (&vellip;) -->
-
-
 
 # Edit a solution-aware cloud flow
 
@@ -45,9 +40,9 @@ You can edit solution-aware cloud flows in [solutions](#edit-a-solution-aware-cl
 
     :::image type="content" alt-text="Screenshot of a new flow inside a solution." source="./media/edit-solution-aware-flow/new-flow-inside-solution.png":::
 
-1. Select **...** (**Commands**) for your flow, and then select **Turn off**.
+1. Select the vertical ellipsis (&vellip;) for your flow, and then select **Turn off**.
 
-1. Select **...** (**Commands**) for your flow, and then select **Edit**.
+1. Select vertical ellipsis (&vellip;) for your flow, and then select **Edit**.
 
     :::image type="content" alt-text="Screenshot of editing a cloud flow." source="./media/edit-solution-aware-flow/edit-flow.png":::
 
@@ -61,9 +56,9 @@ You can edit solution-aware cloud flows in [solutions](#edit-a-solution-aware-cl
 
 1. Find the flow you want to edit. Cloud flows that you own will be in the **Cloud flows** tab and flows that you have co-ownership of will be in the **Shared with me** tab.
 
-1. Select **...** (**Commands**) for your flow, and then select **Turn off**.
+1. Select the vertical ellipsis (&vellip;) for your flow, and then select **Turn off**.
 
-1. Select **...** (**Commands**) for your flow, and then select **Edit**.
+1. Select the vertical ellipsis (&vellip;) for your flow, and then select **Edit**.
 
 1. Make your edits in the Power Automate designer, test your changes, and then save your flow.
 
