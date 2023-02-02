@@ -42,7 +42,7 @@ You can edit solution-aware cloud flows in [solutions](#edit-a-solution-aware-cl
 
 1. Select the vertical ellipsis (&vellip;) for your flow, and then select **Turn off**.
 
-1. Select vertical ellipsis (&vellip;) for your flow, and then select **Edit**.
+1. Select the vertical ellipsis (&vellip;) for your flow, and then select **Edit**.
 
     :::image type="content" alt-text="Screenshot of editing a cloud flow." source="./media/edit-solution-aware-flow/edit-flow.png":::
 
