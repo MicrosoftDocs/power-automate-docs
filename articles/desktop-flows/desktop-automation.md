@@ -1,10 +1,10 @@
 ---
-title: Automate desktop applications | Microsoft Docs
+title: Automate desktop applications
 description: See how to automate desktop applications and extract data from them.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -19,7 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-# Automate desktop flows
+# Automate desktop applications
 
 Power Automate offers UI automation actions to allow users to interact with Windows applications and their components by either providing input with mouse clicks and keyboard strokes or extracting data.
 
