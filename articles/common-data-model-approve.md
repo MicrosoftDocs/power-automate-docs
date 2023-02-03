@@ -121,7 +121,7 @@ By following the steps in this section, you'll build:
 
     **Note**: if you do not select the same environment then you will not see your table.
 
-1. Go to **My flows** > **New flow** > **Build your own**.
+1. Go to **Create** > **Build your own**.
 
     ![The option to create a new cloud flow.](media/common-data-model-approve/create-flow.png)
 
