@@ -95,7 +95,7 @@ The Power Automate team provides the JS SDK to facilitate integrating Flow widge
 The Flow JS SDK reference needs to be added to the host application before initializing the widget.
 
 ```html
-<script src="https://make.powerautomate.com/Content/msflowsdk-1.1.js"></script>
+<script src="https://flow.microsoft.com/Content/msflowsdk-1.1.js"></script>
 ```
 
 > [!NOTE]
