@@ -42,7 +42,7 @@ Approvals to groups behave exactly like approvals to users, it's just the entity
 ### Create the flow
 
 1. Sign in to [Power Automate](https://powerautomate.com).
-1. Select **My flows** > **New flow** > **Build your own**
+1. Select **Create** > **Build your own**
 
     ![Screenshot showing a new instant flow.](./media/approval-attachments/new-instand-blank.png)
 
