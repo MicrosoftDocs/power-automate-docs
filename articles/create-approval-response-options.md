@@ -41,7 +41,7 @@ Let’s say you want to send an approval request each time an employee uploads a
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 
-1. Go to **Create* > **Build your own** from the left navigation bar.
+1. Go to **Create** > **Build your own** from the left navigation bar.
 
     ![Screenshot of the option to create a new cloud flow..](media/create-approval-response-options/create-flow.png)
 
