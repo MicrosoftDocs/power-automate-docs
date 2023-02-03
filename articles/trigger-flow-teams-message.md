@@ -29,7 +29,7 @@ Use the **For a selected message** trigger in the Teams connector to trigger a c
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 
-1. On the left pane, go to **My flows** > **New flow** > **Build your own**.
+1. On the left pane, go to **Create** > **Build your own**.
 
 1. Under **Choose a connector**, search for **Microsoft Teams**, and select the appropriate card.
 
