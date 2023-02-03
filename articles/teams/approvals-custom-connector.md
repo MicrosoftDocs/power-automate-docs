@@ -127,7 +127,7 @@ Now that you've created your custom connector, it's time to create your approval
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 
-1. On the left pane, go to **My flows** > **New flow** > **Build your own**.
+1. On the left pane, go to **Create** > **Build your own**.
 
 1. Under **Choose a connector**, select **Custom**, and select your custom connector.
 
