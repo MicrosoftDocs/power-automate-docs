@@ -34,7 +34,7 @@ In this article, you’ll learn how to create an approval flow that sends an att
 ## Create the flow
 
 1. Sign in to Power Automate.
-1. Select **My flows** > **New flow** > **Build your own**.
+1. Select **Create** > **Build your own**.
 
     ![The option to create a new flow.](media/approval-attachments/new-instand-blank.png)
 
