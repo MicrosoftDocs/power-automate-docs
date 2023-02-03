@@ -38,7 +38,7 @@ In either case you will need to sketch out which datasets you will share, and/or
 In this procedure, you’ll add an action which will use the data from previous actions in the flow to post information to a Microsoft Teams channel.
 
 1. Sign in to Power Automate.
-1. On the left pane, go to **My flows** > **New flow** > **Build your own**.
+1. On the left pane, go to **Create** > **Build your own**.
 1. Under **Choose a connector**, select **Manual Trigger**.
 1. Select **Next**, and then **Skip to building your own flow** to go directly to the designer.
 
