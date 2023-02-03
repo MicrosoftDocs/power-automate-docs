@@ -37,7 +37,7 @@ Create a cloud flow that, if you create an item in SharePoint, sends approval em
 
 ## Add an event to trigger the flow
 
-1. Sign in to [Power Automate](https://flow.microsoft.com), and go to **My flows** > **New flow** > **Build your own**.
+1. Sign in to [Power Automate](https://flow.microsoft.com), and go to **Create** > **Build your own**.
 
 1. Under **Choose a connector**, search for **SharePoint**, and select the respective card.
 
