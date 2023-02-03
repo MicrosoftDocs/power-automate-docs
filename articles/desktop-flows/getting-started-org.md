@@ -4,7 +4,7 @@ description: Get started with an organization premium account
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/03/2022
+ms.date: 02/02/2023
 ms.custom: intro-internal
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -33,7 +33,7 @@ If you currently use Power Automate with a work or school account or your licens
 
 ## Creating a flow
 
-1. Begin by visiting [https://flow.microsoft.com/](https://flow.microsoft.com/) and entering your credentials; then, navigate to **My flows**, and create a new **Desktop flow**.
+1. Begin by visiting [https://flow.microsoft.com/](https://flow.microsoft.com/) and entering your credentials; then, navigate to **Create** > **Build your own**.
 
     ![Screenshot of the option to create a new desktop flow through the portal.](media\getting-started-org\create-new-desktop-flow.png)
 
