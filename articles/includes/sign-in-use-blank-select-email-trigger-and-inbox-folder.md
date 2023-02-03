@@ -1,6 +1,6 @@
 1. Sign in to [Power Automate](https://flow.microsoft.com).
 
-1. On the left pane, go to **My flows** > **New flow** > **Build your own**.
+1. On the left pane, go to **Create** > **Build your own**.
 
     :::image type="content" source="media/email-triggers/automated-from-blank.png" alt-text="Screenshot of the option to create a new cloud flow.":::
 
