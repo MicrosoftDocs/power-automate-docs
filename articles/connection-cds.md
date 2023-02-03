@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/12/2022
+ms.date: 02/03/2023
 ms.author: Deonhe
 ms.reviewer: angieandrews
 search.app: 
@@ -25,10 +25,8 @@ search.audienceType:
 
 # Create an automated flow with Microsoft Dataverse
 
->[!IMPORTANT]
->To connect to Dataverse, use the recommended [Microsoft Dataverse connector](./dataverse/overview.md). The [Dynamics 365 connector](/connectors/dynamicscrmonline/) is also available if you're unable to use the recommended connector.
->
->Flows that are created with the Dataverse (legacy) connector will no longer work as of summer 2023. Use the migration tool in Power Automate to automatically migrate from the Dataverse (legacy) connector to the Microsoft Dataverse connector. 
+> [!IMPORTANT]
+> Flows that are created with the Dataverse (legacy) connector will no longer work as of summer 2023. Use the migration tool in Power Automate to automatically migrate from the Dataverse (legacy) connector to the Microsoft Dataverse connector. 
 
 
 
