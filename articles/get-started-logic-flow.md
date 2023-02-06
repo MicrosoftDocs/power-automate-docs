@@ -1,6 +1,6 @@
 ---
 title: Create a cloud flow in Power Automate
-description: Learn how to reate a cloud flow that automatically performs one or more actions, such as sending email, when events like someone adding a row to a SharePoint list occur.
+description: Learn how to create a cloud flow that automatically performs one or more actions, such as sending email, when events like someone adding a row to a SharePoint list occur.
 services: ''
 suite: flow
 documentationcenter: na
@@ -18,7 +18,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/24/2023
+ms.date: 02/06/2023
 search.app: 
   - Flow
 search.audienceType: 
@@ -33,7 +33,7 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 
 ## Prerequisites
 
-- An account on [flow.microsoft.com](https://flow.microsoft.com)
+- An account on [Power Automate](https://make.powerautomate.com)
 
 - A Twitter account
 
@@ -45,9 +45,7 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. On the menu to the left, select **My flows**.
-
-1. Select **New flow** > **Build your own**.
+1. Select **Create** > **Build your own**.
 
 1. In the **Search** field, enter **Twitter**.
 
@@ -63,11 +61,11 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. In the **Search** field, enter **send email**.
 
-1.  Select **Office 365 Outlook**.
+1. Select **Office 365 Outlook**.
 
 1. In the **Choose an action** list, select **Send an email (V2)**.
 
-   :::image type="content" alt-text="Screenshot of the choosing an action." source="./media/get-started-logic-flow/choose-action.png":::
+   :::image type="content" alt-text="Screenshot of choosing an action." source="./media/get-started-logic-flow/choose-action.png":::
 
 1. Select **Next**.
 
@@ -101,7 +99,7 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. On the menu to the left, select **My flows**.
+1. On the left navigation pane, select **My flows**.
 
 1. In the list of flows, select a flow. You'll see a set of icons.
 

@@ -72,7 +72,7 @@ Here are the detailed steps to create the flow.
 
 ## Monitor the source for changes
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select **Create** > **Build your own**.
 

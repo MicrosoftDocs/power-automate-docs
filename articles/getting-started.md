@@ -1,21 +1,23 @@
 ---
-title: Get started with Power Automate | Microsoft Docs
-description: Quick ways to start automating your work and life with Power Automate.
+title: Get started with Power Automate
+description: Learn quick ways to start automating your work and life with Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
+ms.author: napienko
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2021
-ms.author: deonhe
+ms.date: 02/06/2023
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -29,58 +31,60 @@ ms.custom: intro-internal
 
 Welcome! What can you expect from Power Automate? Here are a few examples of what you can do with Power Automate.
 
-* Automate business processes
-* Send automatic reminders for past due tasks
-* Move business data between systems on a schedule
-* Connect to more than 500 data sources or any publicly available API
-* You can even automate tasks on your local computer like computing data in Excel. 
+- Automate business processes.
+- Send automatic reminders for past due tasks.
+- Move business data between systems on a schedule.
+- Connect to more than 500 data sources or any publicly available API.
+- You can even automate tasks on your local computer like computing data in Excel.
 
 Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
 
-## Who is Power Automate for?
+## Skills required
 
-*What skills do you need to have?*
 Anyone from a basic business user to an IT professional can create automated processes using Power Automate's no-code/low-code platform.
 
-*What industries can benefit from Power Automate?*
+## Benifits by industry
+
 Check out how some companies implemented Microsoft Power Platform solutions using Power Automate in: 
 
-  * [Banking](https://customers.microsoft.com/story/821782-illimity-bank-banking-power-automate)
-  * [Retail](https://customers.microsoft.com/story/drivetime-retail-consumer-goods-azure)
-  * [Manufacturing](https://customers.microsoft.com/story/810656-hexion-manufacturing-power-platform)
-  * [Insurance](https://customers.microsoft.com/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
-  * [Healthcare](https://customers.microsoft.com/story/vnshs-health-provider-microsoft-flow) 
+- [Banking](https://customers.microsoft.com/story/821782-illimity-bank-banking-power-automate)
+- [Retail](https://customers.microsoft.com/story/drivetime-retail-consumer-goods-azure)
+- [Manufacturing](https://customers.microsoft.com/story/810656-hexion-manufacturing-power-platform)
+- [Insurance](https://customers.microsoft.com/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
+- [Healthcare](https://customers.microsoft.com/story/vnshs-health-provider-microsoft-flow) 
 
 Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
 
-The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
+The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://make.powerautomate.com).
 
 ## Create a flow
 
-Power Automate interface allows you to quickly and easily create cloud flows and use templates to solve your business needs, such as:
+Power Automate allows you to quickly and easily create cloud flows and use templates to solve your business needs. You can do the following:
 
-- Start creating a flow directly on the Power Automate **Home** page and **Create** page.
 - Receive guided instruction for building your flow.
+
 - Find a template that addresses your needs by filtering through selections.
+
 - Automate your flows with new options in the **New flow** dropdown menu.
 
 > [!NOTE]
 > The following steps describe the new experience to create flows using Power Automate. The rest of the Power Automate documentation will be updated soon to reflect this new experience.
 
-You can start creating a flow as soon as you sign in to Power Automate by selecting **Create** at the top of the **Home** page.
+1. You can start creating a flow by selecting **Create** on the left navigation pane.
 
-:::image type="content" source="media/create-experience-preview/create-button.png" alt-text="Screenshot of the Create button on the top banner of the home page.":::
+1. You can then choose your path for creating a flow. Your two choices are **Start with a template** to find prebuilt flows, or **Build your own** to customize your own automation.
 
-You can then choose your path for creating a flow. Your two choices are to start with a template to find prebuilt flows, or build your own custom automation.
+1. If you want even more ways to automate, select one of the following in the **More ways to automate** section:
 
-:::image type="content" source="media/create-experience-preview/choose-path.png" alt-text="Screenshot of the two paths, which are to start with a template or build your own.":::
+    - **Power Automate for desktop**: Drag-and-drop or record the steps of a task to automate your process.
+  
+    - **AI Builder**: Accelerate digital transformation for complex scenarios with artificial intelligence.
+  
+    - **Process advisor**: Record and analyze processes to discover inefficiencies and make improvements.
+  
+    - **Describe it to design it (preview)**: Transform your everyday words into a cloud flow (preview).
 
-If you want even more ways to automate, select **Create** on the menu to the left. You'll see the same two options at the top of the screen and some additional options at the bottom. The following selections allow you to automate repetitive desktop processes, add intelligence to automation, analyze and optimize business processes, and describe and build using your own words.
-
-- **Power Automate for desktop**: Drag-and-drop or record the steps of a task to automate your process.
-- **AI Builder**: Accelerate digital transformation for complex scenarios with artificial intelligence.
-- **Process advisor**: Record and analyze processes to discover inefficiencies and make improvements.
-- **You describe it, AI builds it**: Transform your everyday words into a cloud flow (preview).
+    :::image type="content" source="media/create-experience-preview/create-nav.png" alt-text="Screenshot of the two paths, which are to start with a template or build your own.":::
 
 ## Start with a template
 
@@ -142,15 +146,17 @@ You don't need to be a developer to create flows; however, Power Automate does p
 
 Visit the cloud flow activity page to see the list of cloud flows that recently ran, sent notifications, or have failed.
 
-1. Sign into [Power Automate](https://powerautomate.com).
-1. Select **Monitor** on the left side of the screen.
+1. Sign into [Power Automate](https://make.powerautomate.com).
+
+1. On the left navigation pane, select **Monitor**.
+
 1. Select **Cloud flow activity**.
 
-   ![Notification center.](media/getting-started/cloud-flow-activity.png)
+    :::image type="content" source="media/getting-started/cloud-flow-activity.png" alt-text="Screenshot of the Cloud flow activity menu option.":::
 
 ## Use the mobile app
 
-Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md), [manage your flows](mobile-manage-flows.md) and [create flows from templates](mobile-create-flow.md).
+Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md) and [manage your flows](mobile-manage-flows.md).
 
 ## Get help planning your Power Automate projects
 

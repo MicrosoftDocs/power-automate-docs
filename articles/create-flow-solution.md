@@ -1,5 +1,5 @@
 ---
-title: Learn how to create solution-aware flows
+title: Create a cloud flow in a solution
 description: Learn how to create solution-aware cloud flows.
 services: ''
 suite: flow
@@ -15,7 +15,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2023
+ms.date: 02/06/2023
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.app: 
@@ -86,13 +86,13 @@ You need to have at least one solution before you can create a solution-aware fl
 
 ## Find a solution-aware cloud flow
 
-Solution-aware cloud flows can be found either in the **My flows** lists or in **Solutions**.
+Solution-aware cloud flows can be found either in the **My flows** lists or in **Solutions** on the left navigation pane.
 
 ### Find a solution-aware cloud flow with 'My flows'
 
 1. Sign into [Power Automate](https://make.powerautomate.com).
 
-1. On the menu to the left, select **My flows**.
+1. On the left navigation pane, select **My flows**.
 
 1. Find the flow that you want to edit.
 
