@@ -35,23 +35,23 @@ To silently register your machine and join a group, we recommend that you use a 
 
 1. Create an Azure app:
 
-    a. Go to the Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
+   a. Go to the Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
 
-    b. Search **App registrations**.
+   b. Search **App registrations**.
     
       ![Screenshot of the Azure portal.](./media/machines-silent-registration/azure-portal.png)
 
-    c. Select **New registration**.
+   c. Select **New registration**.
      
       ![Screenshot of the New registration option.](./media/machines-silent-registration/azure-portal-new-registration.png)
 
-    d. Define a name and select **Single tenant** (or multitenant) and then select **Register**.
+   d. Define a name and select **Single tenant** (or multitenant) and then select **Register**.
 
 1. Give your app the following permissions:
 
-    a. Select **Add a permission**.
-    b. Select **Flow Service**.
-    c. Select **Flow.Read.All**.
+   a. Select **Add a permission**.
+   b. Select **Flow Service**.
+   c. Select **Flow.Read.All**.
 
 1. [Create an application user.](/power-platform/admin/manage-application-users#create-an-application-user)
 
@@ -60,15 +60,11 @@ To silently register your machine and join a group, we recommend that you use a 
 
 1. Get the following information that will be used in the Machine Registration app:
  
-    a. Application ID
-    b. Directory (tenant) ID
-    c. Client credentials (certificate or thumbprint)
+   a. Application ID
+   b. Directory (tenant) ID
+   c. Client credentials (certificate or thumbprint)
 
-    ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.png)
-
-
-
-
+   ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.png)
 
 ## Use the machine registration app
 
@@ -90,14 +86,19 @@ To silently register your machine and join a group, we recommend that you use a 
 
 ## Silently register a new machine
 
-To register silently your machine in Power Automate with the service principal account, use the register operation **-register** with the following arguments:
+To silently register your machine in Power Automate with the service principal account, use the register operation **-register** with the following arguments:
+
 Connection arguments (for service principal account):
 
    1. Applicationid: The application to use.
 
-   1. Clientsecret: The secret of the applicationid (you can also use the certificateThumbprint). You shouldn't use this input as an input to the command line. See “Secure input” section to see options you can choose to provide it.
+   1. Clientsecret: The secret of the applicationid (you can also use the certificateThumbprint). You shouldn't use this input as an input to the command line. See the “Secure input” section to see options you can choose to provide it.
 
    1. Tenantid: The tenant identifier to use.  
+
+
+
+
 
 Machine registration arguments:
 
