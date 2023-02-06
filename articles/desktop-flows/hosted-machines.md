@@ -122,7 +122,7 @@ Users need either the **System Administrator** or **Desktop Flow Machine Image A
 
 ### Share the default image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines** > **VM images (preview)**.
 
@@ -142,7 +142,7 @@ Users need either the **System Administrator** or **Desktop Flow Machine Image A
 
 To create a hosted machine:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -255,7 +255,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 ### Add a new custom VM image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -278,7 +278,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 ### Share the image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines** > **VM images (preview)**.
 
@@ -348,7 +348,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 ### Add a new network connection
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -367,7 +367,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 ### Share the network connection
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines** > **Network connection (preview)**.
 
@@ -390,7 +390,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 Once you've created your hosted machine in an environment, you can view its details in the Power Automate portal.
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Go to **Monitor** > **Machines**.
 1. Select **Machines**.
 
@@ -425,7 +425,7 @@ Selecting a hosted machine in the list will take you to the hosted machine detai
 
 You can share your hosted machines with other users so they can run desktop flows with the creator's connection on them. To share a hosted machine:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
