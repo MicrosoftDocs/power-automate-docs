@@ -150,17 +150,17 @@ You have two options to provide a secure input:
   
     b. Redirect file:
   
-       1. Create a TXT file that contains your password and save it in a Power Automate folder (you'll need admin privileges).
+        1. Create a TXT file that contains your password and save it in a Power Automate folder (you'll need admin privileges).
 
-       1. Use the following command:
+        1. Use the following command:
   
-          1. For cmd prompt:
+           1. For cmd prompt:
   
           ```CMD
            grouppassword < pwd.txt
           ```
 
-          2. For PowerShell:
+           2. For PowerShell:
 
           ```CMD
           Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
