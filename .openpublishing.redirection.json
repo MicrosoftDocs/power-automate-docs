@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/connection-dynamics365.md",
+      "redirect_url": "dataverse/overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/process-mining-auto-rec.md",
       "redirect_url": "process-mining-overview",
       "redirect_document_id": "false"
