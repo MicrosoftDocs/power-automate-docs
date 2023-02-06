@@ -338,7 +338,7 @@
     - name: Migration to Manifest V3 (browser extensions)
       href: ./desktop-flows/manifest.md
     - name: Power Automate v2 schema
-      href: ./desktop-flows/schema-ve.md
+      href: ./desktop-flows/schema.md
     - name: Create a Dataverse database
       href: ./desktop-flows/create-database.md
     - name: Governance
