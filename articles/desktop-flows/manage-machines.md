@@ -19,6 +19,10 @@ search.audienceType:
   - enduser
 ---
 
+<!-- Line 188 says "You can't delete a machine from Power Automate machine runtime. To delete a machine:" It's confusing to read that you can't delete it, and then to read how to delete it. -->
+
+
+
 # Manage machines
 
 Machines are the physical or virtual devices you use to automate desktop processes. When you connect your machine to Power Automate, you can instantly start your desktop automation using any of the [available triggers](../triggers-introduction.md), such as predefined schedules.
@@ -29,7 +33,7 @@ Our direct connectivity is the easiest way to connect your machine to the cloud.
 
 > [!IMPORTANT]
 >
-> - Direct connectivity is only available for Power Automate 2.8.73.21119 or later. If you currently use an older version, [update to the latest](https://go.microsoft.com/fwlink/?linkid=2102613).
+> - Direct connectivity is only available for Power Automate 2.8.73.21119 or later. If you currently use an earlier version, [update to the latest](https://go.microsoft.com/fwlink/?linkid=2102613).
 > - Direct connectivity isn't available for machines running Windows 10 Home or Windows 11 Home.
 > - To register your machine and use the machine management features, your Power Platform environment must have a version of the **MicrosoftFlowExtensionsCore** solution that is greater than or equal to 1.2.4.1.
 > - Before registering a machine to [run desktop flows from cloud flows](trigger-desktop-flows.md), ensure the machine is secured and the machine's admins are trusted.
@@ -48,15 +52,15 @@ Your machine is automatically registered on the currently selected environment i
 
 1. Sign in to Power Automate machine runtime. Your machine should be automatically registered in the currently selected environment.
 
-1. If the machine hasn't been registered yet, a message will prompt you to select a machine running environment. Power Automate will use this environment to run all the triggered desktop flows.
+1. If the machine hasn't been registered yet, a message will prompt you to select a machine-running environment. Power Automate will use this environment to run all the triggered desktop flows.
 
     :::image type="content" source="./media/manage-machines/machine-not-registered.png" alt-text="Screenshot of the Machine isn't registered message.":::
 
 1. When the connection is established successfully, the machine settings will display the following fields regarding the machine:
 
-    - **Machine name:** A unique name to identify the machine.
-    - **Machine description:** An optional description of the machine.
-    - **Machine environment:** The running environment of the machine.
+    - **Machine name**: A unique name to identify the machine.
+    - **Machine description**: An optional description of the machine.
+    - **Machine environment**: The running environment of the machine.
 
 :::image type="content" source="./media/manage-machines/registered-machine.png" alt-text="Screenshot of the Machine settings.":::
 
@@ -85,7 +89,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 
 1. Edit an existing cloud flow or [create a new cloud flow](../overview-cloud.md).
 
-1. Create a desktop flow connection using the instructions in [Create desktop flow connections](desktop-flow-connections.md)
+1. Create a desktop flow connection using the instructions in [Create desktop flow connections](desktop-flow-connections.md).
 
 1. Follow the instructions in [Trigger desktop flows from cloud flows](trigger-desktop-flows.md) to trigger a desktop flow from your cloud flow.
 
@@ -96,7 +100,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 
 ## Maintenance mode for machines
 
-The maintenance mode enables you to stop all the desktop flow runs on machine(s) or machine group(s). This feature is useful when you need to do installations or deployments on machines and avoid run failures.
+The maintenance mode enables you to stop all the desktop flow runs on machines or machine groups. This feature is useful when you need to do installations or deployments on machines and avoid run failures.
 
 To use the maintenance mode:
 
@@ -104,7 +108,7 @@ To use the maintenance mode:
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select a machine, go its details page, and select **Settings**.
+1. Select a machine, go to its details page, and select **Settings**.
 
 1. Turn on the toggle for **Enable maintenance mode**.
 
@@ -119,7 +123,7 @@ All the machines that are in maintenance mode are indicated with a red pictogram
 > - If a machine group is in maintenance mode, all the machines of the group are in maintenance mode and you can't change them individually.
 > - When machines require some specific actions (such as key rotation), maintenance mode is disabled.
 > - If a desktop flow is currently running on your machine when the maintenance mode is enabled, the run doesn't get canceled.
-> - When a machine is in maintenance mode, no new run is assigned to it. If the machine is standalone, the desktop flow run will is put in the run queue. If the machine is part of machine group, the desktop flow is assigned to an active machine. Timeout remains the same by default.
+> - When a machine is in maintenance mode, no new run is assigned to it. If the machine is standalone, the desktop flow run is put in the run queue. If the machine is part of a machine group, the desktop flow is assigned to an active machine. Timeout remains the same by default.
 
 ## View list of machines
 
@@ -131,15 +135,15 @@ Once you've registered a machine to an environment, you can view its details at 
 
 1. Select the desired machine. For each machine you can view:
 
-    - The name of the machine.
-    - The description of the machine.
-    - The version of the machine.
-    - The group that the machine is a part of, if applicable.
-    - The status of the machine.
-    - The number of flows running on the machine.
-    - The number of flows queued on the machine, if applicable.
-    - The type of access you have to the machine.
-    - The owner of the machine.
+    - Machine name.
+    - Machine description.
+    - Machine version.
+    - Group that the machine is a part of, if applicable.
+    - Machine status.
+    - Number of flows running on the machine.
+    - Number of flows queued on the machine, if applicable.
+    - Type of access you have to the machine.
+    - Machine owner.
 
 > [!NOTE]
 > The version of the machine gets updated with the first registration and after each desktop flow run.
@@ -152,11 +156,11 @@ You can share a machine with other users in your organization and give those use
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select your machine from the list, and then **Manage access**.
+1. Select your machine from the list, and then select **Manage access**.
 
 1. Select **Add people**, and enter the name of the person in your organization with whom you’d like to share the machine.
 
-1. Select the name of the person to choose with which permissions they can access the machine.
+1. Select the name of the person to choose which permissions they can access the machine with.
 
     There are two levels of permissions that you can assign when managing access to your machine:
 
@@ -177,7 +181,7 @@ You can share a machine with other users in your organization and give those use
   :::image type="content" source="./media/manage-machines/share-machine.png" alt-text="Screenshot of the Manage access dialog.":::
 
 > [!NOTE]
-> When a user isn't part of an environment anymore, you will continue seeing it as a deactivated user. You'll be notified in the **Manage access** section of the machine if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you'll continue seeing the user as deactivated. You'll be notified in the **Manage access** section of the machine if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Delete a machine
 
@@ -194,7 +198,7 @@ You can't delete a machine from Power Automate machine runtime. To delete a mach
 ## Switch from gateways to direct connectivity
 
 > [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities.
+> Gateways for desktop flows are now deprecated except for China regions. Switch to our machine-management capabilities.
 
 You can easily switch to direct connectivity by changing the desktop flow connection and using one with the **directly to machine** option.
 
