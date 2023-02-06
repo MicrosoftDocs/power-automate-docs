@@ -1,6 +1,6 @@
 ---
 title: Manage machine groups
-description: Manage machine groups
+description: Group multiple machines together to help distribute your automation workload and optimize productivity.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -36,7 +36,7 @@ From the Power Automate machine runtime application:
 
 1. Sign in to the **Power Automate machine runtime** application.
 
-1. Select **Machine group**, then **New machine group**
+1. Select **Machine group** and then select **New machine group**.
 
 1. Enter a name for your machine group, and optionally add a description.
 
@@ -50,7 +50,7 @@ From the Power Automate portal:
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New machine**, then **Group**.
+1. Select **New machine** and then select **Group**.
 
 1. Enter a name for your machine group, and optionally add a description.
 
@@ -66,7 +66,7 @@ You need at least one machine in a group to run desktop flows. To add a machine 
 
     :::image type="content" source="./media/manage-machine-groups/add-machine-group.png" alt-text="Screenshot of the dialog to add a machine to a machine group.":::
 
-1. If it's the first time adding a machine to this group, you need to create a password for your group. This password limits access for users who can add machines to the group. Make sure you keep the password, as you'll be unable to recover it. If you've already added a machine before, enter the password for the group.
+1. If it's the first time adding a machine to this group, you need to create a password for your group. This password limits access for users who can add machines to the group. Make sure you keep the password, as you'll be unable to recover it. If you've added a machine before, enter the password for the group.
 
 1. Select **Add machine**.
 
@@ -84,7 +84,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 
 1. Edit an existing cloud flow or [create a new cloud flow](../overview-cloud.md).
 
-1. Create a desktop flow connection using the instructions in [Create desktop flow connections](desktop-flow-connections.md)
+1. Create a desktop flow connection using the instructions in [Create desktop flow connections](desktop-flow-connections.md).
 
 1. Follow the instructions in [Trigger desktop flows from cloud flows](trigger-desktop-flows.md) to trigger a desktop flow from your cloud flow.
 
@@ -95,7 +95,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 
 ## Maintenance mode for machine groups
 
-The maintenance mode allows you to stop all the desktop flow runs on machine(s) or machine group(s). This feature can be useful when you need to do installations or deployments on machines and avoid run failures.
+The maintenance mode allows you to stop all the desktop flow runs on machines or machine groups. This feature can be useful when you need to do installations or deployments on machines and avoid run failures.
 
 To use the maintenance mode:
 
@@ -103,18 +103,18 @@ To use the maintenance mode:
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select a machine group, go its details page, and select **Settings**.
+1. Select a machine group, go to its details page, and select **Settings**.
 
 1. Turn on the toggle for **Enable maintenance mode**.
 
-1. Select **Activate** in the dialog.
+1. Select **Activate** in the dialog box.
 
 > [!NOTE]
 >
 > - If a machine group is in maintenance mode, all the machines of the group are in maintenance mode and you can't change them individually.
 > - If a desktop flow is currently running on your machine when the maintenance mode is enabled, the run doesn't get canceled.
 > - When a machine group is in maintenance mode, the desktop flow run is put in the run queue. Timeout remains the same by default.
-> - When a machine group is back to active mode, all the machine of the group are activate again (except if there is an action required on the machine).
+> - When a machine group is back to active mode, all the machines of the group are activated again (except if there is an action required on the machine).
 
 ## View list of machine groups
 
@@ -144,13 +144,13 @@ You can share a machine group with other users in your organization and give tho
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **Machine groups**, and then the desired machine group from the list.
+1. Select **Machine groups** and then select the desired machine group from the list.
 
 1. Select **Manage access**.
 
-1. Select **Add people**, and enter the name of the person in your organization with whom you’d like to share the machine group.
+1. Select **Add people** and enter the name of the person in your organization with whom you’d like to share the machine group.
 
-1. Select the name of the person to choose with which permissions they can access the machine group.
+1. Select the name of the person to choose which permissions they can access the machine group with.
 
     There are two levels of permissions that you can use when managing access to your machine groups:
 
@@ -172,7 +172,7 @@ You can share a machine group with other users in your organization and give tho
 :::image type="content" source="./media/manage-machine-groups/share-machine-group.png" alt-text="Screenshot of the Manage access pane.":::
 
 > [!NOTE]
-> When a user isn't part of an environment anymore, you can continue seeing it as a deactivated user. You'll be notified in the **Manage access** section of the machine group if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You'll be notified in the **Manage access** section of the machine group if it's shared with deactivated users. In this situation, remove access to them.
 
 Access for machine groups is managed at the group level. All machines in the group will use the same permissions and connections.
 
@@ -186,9 +186,9 @@ To change the machine group that contains your machine, select another group in 
 
 ## Change machine group's password
 
-To change the password of the currently used machine group;
+To change the password of the currently used machine group:
 
-1. Select the dots on machine group card and then **Edit group password**.
+1. Select the dots on the machine group card and then select **Edit group password**.
 
 1. Select **Re-generate password**, copy the automatically generated password, and save the changes.
 
