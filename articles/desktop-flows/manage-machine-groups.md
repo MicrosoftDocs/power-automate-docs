@@ -29,10 +29,10 @@ You can assign desktop flows to a machine group, and they'll be automatically qu
 
 You can create machine groups through the Power Automate machine runtime application or the Power Automate portal.
 
-From the Power Automate machine runtime application:
-
 > [!NOTE]
 > To launch Power Automate machine runtime, launch Power Automate for desktop and go to **Settings** > **Open machine settings**.
+
+From the Power Automate machine runtime application:
 
 1. Sign in to the **Power Automate machine runtime** application.
 
@@ -128,13 +128,13 @@ Once you've created a machine group in an environment, you can view its details 
 
 1. Select the desired machine group. For each machine group you can view:
 
-    - The name of the machine group.
-    - The description of the machine group.
-    - The number of the machines in the group.
-    - The number of flows running in the machine group.
-    - The number of flows queued in the machine group.
-    - The type of access you have to the machine group.
-    - The owner of the machine group.
+   - The name of the machine group.
+   - The description of the machine group.
+   - The number of the machines in the group.
+   - The number of flows running in the machine group.
+   - The number of flows queued in the machine group.
+   - The type of access you have to the machine group.
+   - The owner of the machine group.
 
 ## Share a machine group
 
