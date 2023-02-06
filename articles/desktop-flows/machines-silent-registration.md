@@ -35,23 +35,23 @@ To silently register your machine and join a group, we recommend that you use a 
 
 1. Create an Azure app:
 
-   a. Go to the Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
+   1. Go to the Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
 
-   b. Search **App registrations**.
+   1. Search **App registrations**.
     
       ![Screenshot of the Azure portal.](./media/machines-silent-registration/azure-portal.png)
 
-   c. Select **New registration**.
+   1. Select **New registration**.
      
       ![Screenshot of the New registration option.](./media/machines-silent-registration/azure-portal-new-registration.png)
 
-   d. Define a name and select **Single tenant** (or multitenant) and then select **Register**.
+   1. Define a name and select **Single tenant** (or multitenant) and then select **Register**.
 
 1. Give your app the following permissions:
 
-   a. Select **Add a permission**.
-   b. Select **Flow Service**.
-   c. Select **Flow.Read.All**.
+   - Select **Add a permission**.
+   - Select **Flow Service**.
+   - Select **Flow.Read.All**.
 
 1. [Create an application user.](/power-platform/admin/manage-application-users#create-an-application-user)
 
@@ -60,9 +60,9 @@ To silently register your machine and join a group, we recommend that you use a 
 
 1. Get the following information that will be used in the Machine Registration app:
  
-   a. Application ID
-   b. Directory (tenant) ID
-   c. Client credentials (certificate or thumbprint)
+   - Application ID
+   - Directory (tenant) ID
+   - Client credentials (certificate or thumbprint)
 
    ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.png)
 
@@ -96,29 +96,31 @@ Connection arguments (for service principal account):
 
    1. Tenantid: The tenant identifier to use.  
 
-
-
-
-
 Machine registration arguments:
 
    1. Environmentid (optional): The environment where the machine will be registered. If not provided, the machine is registered in the default environment. You can retrieve it in the URL of Power Automate.
 
    1. Machine name (optional): The name of the registered machine.
 
-   1. Machine description (optional): The description of the registered machine
+   1. Machine description (optional): The description of the registered machine.
 
         ```CMD
         .\PAD.MachineRegistration.Silent.exe -register -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid 
         ```
 
 >[!NOTE]
->If you decide to use AAD account, you can specify the username: -username [UPN] instead of service principal account arguments
+>If you decide to use an Azure AD account, you can specify the username: -username [UPN] instead of service principal account arguments
 
 ## Join silently a machine group
 
 >[!NOTE]
->You cannot create machine group silently. You will need to create them from the portal before adding machines silently.
+>You cannot create a machine group silently. You'll need to create it from the portal before adding machines silently.
+
+
+
+
+
+
 
 To join a group silently with the service principal account, use the join group operation -joinmachinegroup  with the following arguments:
 
