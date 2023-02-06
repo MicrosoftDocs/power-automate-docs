@@ -1,6 +1,6 @@
 ---
 title: Silent registration for machines
-description: Silent registration for machines 
+description: This article describes how to use a mass deployment tool that allows you to easily install Power Automate on multiple machines.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
@@ -22,11 +22,11 @@ search.audienceType:
 
 This article describes how to use our mass deployment tool that allows you to easily install Power Automate on multiple machines. You can both register your machines to Power Automate and add them to machine groups.
 
-## Pre-requisites
+## Prerequisites
 
-To silently register your machine(s), Power Automate for desktop needs to be downloaded and installed on the targeted devices. Visit this page to understand how to [install Power Automate silently](install-silently.md)
+To silently register your machines, you need to download and install Power Automate for desktop on the targeted devices. Visit this page to understand how to [install Power Automate silently](install-silently.md).
 
-To silently register your machine and join a group, we recommend you to use a service principal account. You can also use your Azure Active Directory account.
+To silently register your machine and join a group, we recommend that you use a service principal account. You can also use your Azure Active Directory account.
 
 ## Using a service principal account
 
@@ -35,35 +35,40 @@ To silently register your machine and join a group, we recommend you to use a se
 
 1. Create an Azure app:
 
-    a. Go to Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
+    a. Go to the Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
 
-    b. Search **app registrations**
-    ![Screenshot of the Azure portal.](./media/machines-silent-registration/azure-portal.png)
+    b. Search **App registrations**.
+    
+      ![Screenshot of the Azure portal.](./media/machines-silent-registration/azure-portal.png)
 
-    c. Select **new registration**
-     ![Screenshot of the New registration option.](./media/machines-silent-registration/azure-portal-new-registration.png)
+    c. Select **New registration**.
+     
+      ![Screenshot of the New registration option.](./media/machines-silent-registration/azure-portal-new-registration.png)
 
-    d. Define a name and select **Single tenant** (or multi-tenant) then select **register**
+    d. Define a name and select **Single tenant** (or multitenant) and then select **Register**.
 
-1. Give your app the following permissions
+1. Give your app the following permissions:
 
-    a. Select **Add a permission**
+    a. Select **Add a permission**.
+    b. Select **Flow Service**.
+    c. Select **Flow.Read.All**.
 
-    b. Select **Flow Service**
+1. [Create an application user.](/power-platform/admin/manage-application-users#create-an-application-user)
 
-    c. Select **Flow.Read.All**
-
-1. [Create an application user.](/power-platform/admin/manage-application-users#create-an-application-user).
-
->[!NOTE]
->Regarding their security roles, the user need to grant at least Environment Maker (or Desktop Flows Machine Owner) to be able to register a machine and join a group.
+   >[!NOTE]
+   >Regarding their security roles, the user needs to grant at least Environment Maker (or Desktop Flows Machine Owner) to be able to register a machine and join a group.
 
 1. Get the following information that will be used in the Machine Registration app:
+ 
     a. Application ID
     b. Directory (tenant) ID
     c. Client credentials (certificate or thumbprint)
 
     ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.png)
+
+
+
+
 
 ## Use the machine registration app
 
