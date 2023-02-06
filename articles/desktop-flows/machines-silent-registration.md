@@ -18,6 +18,9 @@ search.audienceType:
   - enduser
 ---
 
+<!-- In line 62, the text says "the user needs to grant at least Environment Maker..." Who or what does the user grant this role to? Also, see comment on line 129. -->
+
+
 # Silent registration for machines
 
 This article describes how to use our mass deployment tool that allows you to easily install Power Automate on multiple machines. You can both register your machines to Power Automate and add them to machine groups.
@@ -142,25 +145,25 @@ You have two options to provide a secure input:
 
 2. Redirect string/file to the silent registration application:
   
-    a. Redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
+   a. Redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
   
-    ```PowerShell
-        echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-    ```
+   ```PowerShell
+       echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+   ```
   
-    b. Redirect file:
+   b. Redirect file:
   
-        1. Create a TXT file that contains your password and save it in a Power Automate folder (you'll need admin privileges).
+      1. Create a TXT file that contains your password and save it in a Power Automate folder (you'll need admin privileges).
 
-        1. Use the following command:
+      1. Use the following command:
   
-           1. For cmd prompt:
+         1. For cmd prompt:
   
           ```CMD
            grouppassword < pwd.txt
           ```
 
-           2. For PowerShell:
+         2. For PowerShell:
 
           ```CMD
           Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
