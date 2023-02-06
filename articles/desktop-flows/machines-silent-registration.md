@@ -147,9 +147,9 @@ You have two options to provide a secure input:
   
    - Redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
   
-   ```PowerShell
-       echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
-   ```
+     ```PowerShell
+         echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+     ```
   
    - Redirect file:
   
