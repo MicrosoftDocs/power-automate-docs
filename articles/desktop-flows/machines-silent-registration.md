@@ -157,13 +157,13 @@ You have two options to provide a secure input:
 
      1. Use the following command:
   
-        1. For cmd prompt:
+        For cmd prompt:
   
         ```CMD
          grouppassword < pwd.txt
         ```
 
-        2. For PowerShell:
+        For PowerShell:
 
         ```CMD
         Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
