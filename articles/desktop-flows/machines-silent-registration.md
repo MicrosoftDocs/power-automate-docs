@@ -111,22 +111,20 @@ Machine registration arguments:
 >[!NOTE]
 >If you decide to use an Azure AD account, you can specify the username: -username [UPN] instead of service principal account arguments
 
-## Join silently a machine group
+## Silently join a machine group
 
 >[!NOTE]
 >You cannot create a machine group silently. You'll need to create it from the portal before adding machines silently.
 
-
-
-
-
-
-
 To join a group silently with the service principal account, use the join group operation -joinmachinegroup  with the following arguments:
 
 1. Environmentid: The environment where the machine group is registered. You can retrieve it in the URL of Power Automate.
-1. Groupid: the ID of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
-1. Grouppassword: the password of your machine. If this machine is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. You shouldn't use this input as an input to the command line. See “Secure input” section to see options you can choose to provide it
+1. Groupid: The ID of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
+1. Grouppassword: The password of your machine. If this machine is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. You shouldn't use this input as an input to the command line. Go to the “Secure input” section to see options you can choose to provide it.
+
+
+<!-- The following image needs better alt-text. I can't tell what the highlighted area is showing. -->
+
 
 ![groupresults.](./media/machines-silent-registration/environment-id.png)
 
@@ -136,10 +134,11 @@ To join a group silently with the service principal account, use the join group 
 
 ## Secure input
 
-In the machine registration tool, you'll have to provide secure inputs for registration and joining group.
+In the machine registration tool, you'll have to provide secure inputs for registration and joining the group.
+
 You have two options to provide a secure input:
 
-1. Type when asked: you'll be prompted to enter this data when needed. This option is an interactive action that isn't adapted if you need to do mass deployment.
+1. Type when asked: You'll be prompted to enter this data when needed. This option is an interactive action that isn't adapted if you need to do mass deployment.
 
 2. Redirect string/file to the silent registration application:
   
@@ -151,17 +150,17 @@ You have two options to provide a secure input:
   
     b. Redirect file:
   
-      i. Create a txt file that contains your password and save it in Power Automate folder (you'll need to have admin privileges.
+       1. Create a TXT file that contains your password and save it in a Power Automate folder (you'll need admin privileges).
 
-      ii. Use the following command:
+       1. Use the following command:
   
-      1. For cmd prompt:
+          1. For cmd prompt:
   
           ```CMD
            grouppassword < pwd.txt
           ```
 
-      2. For PowerShell:
+          2. For PowerShell:
 
           ```CMD
           Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
