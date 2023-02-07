@@ -31,11 +31,11 @@ Here are some of the highlights of what you can do with hosted machines:
 
 Key capabilities:
 
-- **Work or school account integration:** Enables access to resources that are part of the business plan linked to your organization, such as Office, Sharepoint, and Azure.
+- **Work or school account integration**: Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
 
-- **Vanilla or Custom VM images for your hosted machine:** Use a vanilla VM image provided by Microsoft or personalize your hosted machines by providing your own Windows image directly from your Azure Compute Gallery. Providing your own Windows image allows you to have all your applications installed on the provisioned hosted machines.
+- **Vanilla or custom VM images for your hosted machine**: Use a vanilla VM image provided by Microsoft or personalize your hosted machines by providing your own Windows image directly from your Azure Compute Gallery. Providing your own Windows image allows you to have all your applications installed on the provisioned hosted machines.
 
-- **Connect to your own virtual network (vNET):** Securely communicate with each other, the Internet, and your on-premises networks.
+- **Connect to your own virtual network**: Securely communicate with each other, the Internet, and your on-premises networks.
 
 ## Licensing requirements
 
@@ -54,9 +54,9 @@ To use hosted machines, you need one of the following Power Automate licensing o
     Trial users are granted the capacity of one hosted machine. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](http://make.powerautomate.com/).
 
 > [!NOTE]
-> All tenants have a global limit of ten hosted machines.
+> All tenants have a global limit of 10 hosted machines.
 
-You'll also need the following prerequisite licenses: Windows, Intune, Azure AD.
+You'll also need the following prerequisite licenses: Windows, Intune, Azure Active Directory.
 
 ## Prerequisites
 
@@ -83,11 +83,12 @@ To create a hosted machine, you must create the Windows 365 service principal in
 
     1. Fill filter **Application ID starts with** with the Windows 365 application ID **0af06dc6-e4b5-4f28-818e-e78e62d137a5**.
 
-        If the service principal is provisioned in your Azure Active Directory, the page should look like the following screenshot:
-
-        If the application is like the presented screenshot, you don't need to perform any extra steps. However, you must create the service principal if the application isn't showing up.
+        If the service principal is provisioned in your Azure Active Directory, the page should look like the following screenshot:        
 
         :::image type="content" source="media/hosted-machines/azure-portal.png" alt-text="Screenshot of the Enterprise applications in Azure Active Directory.":::
+        
+        If the application is like the presented screenshot, you don't need to perform any extra steps. However, you must create the service principal if the application isn't showing up.
+        
 
 1. Create the Windows 365 service principal.
 
@@ -126,13 +127,13 @@ Users need either the **System Administrator** or **Desktop Flow Machine Image A
 
 1. Go to **Monitor** > **Machines** > **VM images (preview)**.
 
-1. Select the default windows desktop image from the list.
+1. Select the default Windows desktop image from the list.
 
 1. Select **Manage access**.
 
 1. Select **Add people** and enter the name of the person in your organization with whom you’d like to share the image.
 
-1. Select the names of the persons and choose with which permissions they can access the machine.
+1. Select the names of the persons and choose which permissions they can access the machine with.
 
 1. Select **Save**.
 
@@ -154,7 +155,7 @@ To create a hosted machine:
 
     1. Select the VM image to use for your hosted machine. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
-        Alternatively, you can select a [custom VM Image](#use-custom-vm-images-for-your-hosted-machine) that has been shared with your account.
+        Alternatively, you can select a [custom VM image](#use-custom-vm-images-for-your-hosted-machine) that has been shared with your account.
 
     1. Optionally, select the [custom network connection](#use-custom-vnet-for-your-hosted-machines) you want your hosted machine to be provisioned with Azure Active Directory (Azure AD). Otherwise, you'll automatically connect to the Microsoft Hosted Network.
 
@@ -188,9 +189,9 @@ To create a hosted machine:
 1. A new tab in the browser should open and load the hosted machine access. Sign in with your work or school account.
 
     > [!NOTE]
-    > Log-in access is only available to the creator of the hosted machine.
+    > Sign-in access is only available to the creator of the hosted machine.
 
-1. The hosted machine is pre-registered in to the Power Automate environment.
+1. The hosted machine is preregistered into the Power Automate environment.
 
     :::image type="content" source="media/hosted-machines/power-automate-machine-runtime.png" alt-text="Screenshot of the Power Automate machine runtime application.":::
 
@@ -219,7 +220,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 
 ### Image requirements
 
-Custom VM images must meet the following requirement:
+Custom VM images must meet the following requirements:
 
 - Windows 10 Enterprise version 20H2 or later.
 - Windows 11 Enterprise 21H2 or later.
@@ -259,7 +260,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New > VM image (preview)**.
+1. Select **New** > **VM image (preview)**.
 
 1. Enter an image name, a description, and the usage.
 
@@ -267,7 +268,7 @@ The last step before using your image in Power Automate is to share the image wi
     - **Image description:** An optional description for the image.
     - **Use with:** Select either **Hosted machine** or **Both**, if you want the image to work with both hosted machines and hosted machine groups.
 
-1. Select one of the images that you have access from the Azure Compute Gallery.
+1. Select one of the images that you have access to from the Azure Compute Gallery.
 
     :::image type="content" source="media/hosted-machines/add-new-custom-vm-image.png" alt-text="Screenshot of a new VM image.":::
 
@@ -295,7 +296,7 @@ The last step before using your image in Power Automate is to share the image wi
 :::image type="content" source="media/hosted-machines/vm-image-permissions.png" alt-text="Screenshot of the Manage access dialog of the VM image.":::
 
 > [!NOTE]
-> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Use custom VNet for your hosted machines
 
@@ -303,7 +304,7 @@ You can connect to your own virtual network (vNET) with your hosted machines to 
 
 ### General network requirement
 
-To use your own network and provision Azure Active Directory (Azure AD) joined hosted machines, you must meet the following requirements:
+To use your own network and provision Azure Azure AD joined hosted machines, you must meet the following requirements:
 
 - You must have a virtual network (vNET) in your Azure subscription in the same region where you've created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
@@ -377,14 +378,14 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Select **Add people** and enter the names of the persons in your organization with whom you’d like to share the network connection.
 
-1. Select the names of the persons and choose with which permissions they can access the network connection.
+1. Select the names of the persons and choose which permissions they can access the network connection with.
 
 1. Select **Save**.
 
 :::image type="content" source="media/hosted-machines/share-network-connection.png" alt-text="Screenshot of the Manage access of the network connection.":::
 
 > [!NOTE]
-> When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the network connection if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You'll be notified in the **Manage access** section of the network connection if it's shared with deactivated users. In this situation, remove access to them.
 
 ## View list of hosted machines
 
@@ -442,13 +443,17 @@ You can share your hosted machines with other users so they can run desktop flow
     **User** permission only allows the targeted user to run desktop flows on the selected hosted machine. A **Co-Owner** can also edit the hosted machine details.
 
 > [!NOTE]
-> When a user isn't part of an environment anymore, you may continue to see the user as a deactivated user. You'll be notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you may continue to see the user as deactivated. You'll be notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Run desktop flows on hosted machines
 
 Power Automate enables you to trigger desktop flows on your hosted machines as you do on standard machines. To implement this functionality, you need a [desktop flow connection](desktop-flow-connections.md) to your hosted machine.
 
 To find more information about triggering desktop flows from cloud flows, go to [Trigger desktop flows from cloud flows](link-pad-flow-portal.md).
+
+
+
+
 
 ## Permissions based on security roles
 
