@@ -16,7 +16,7 @@ search.audienceType:
 ---
 
 
-<!-- Please see two questions near the end of this article. -->
+<!-- Please see a question on line 308 and two others near the end of this article. -->
 
 
 # Hosted machines (preview)
@@ -303,6 +303,10 @@ The last step before using your image in Power Automate is to share the image wi
 > When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Use custom VNet for your hosted machines
+
+
+<!-- Why is it VNet in the heading, but vNET in the paragraph? Should it be the same in both places? -->
+
 
 You can connect to your own virtual network (vNET) with your hosted machines to securely communicate with each other, the Internet, and on-premises networks. Providing your own vNET from your Azure subscription will allow your hosted machines to be provisioned with your vNET automatically.
 
