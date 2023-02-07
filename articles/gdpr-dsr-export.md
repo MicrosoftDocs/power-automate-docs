@@ -62,8 +62,6 @@ Either an end user or an administrator, who has granted themselves access to the
 
 1. Select the dots icon, and then **Export** > **Package (.zip)**.
 
-    ![Export flow.](./media/gdpr-dsr-export/export-flow.png)
-
 Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
 ## Export run history
