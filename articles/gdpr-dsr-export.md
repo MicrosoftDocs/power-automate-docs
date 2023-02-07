@@ -60,11 +60,9 @@ Either an end user or an administrator, who has granted themselves access to the
 
 1. Select the **My flows** link, and then select the flow to export.
 
-1. Select **… More**, and then select **Export**.
+1. Select the dots icon, and then **Export** > **Package (.zip)**.
 
     ![Export flow.](./media/gdpr-dsr-export/export-flow.png)
-
-1. Select **Package (.zip)**.
 
 Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
@@ -75,14 +73,9 @@ Run history includes a list of all executions that have occurred for a cloud flo
 Either an end user or an administrator, who has been granted access to the flow through the Power Automate admin center, can follow these steps to export this data:
 
 1. Sign into [Power Automate](https://flow.microsoft.com/).
-1. Select the **My flows** link, and then select the flow for which you want to export the run history.
-1. In the **RUN HISTORY** pane, select **See all**.
-
-    ![Run history.](./media/gdpr-dsr-export/run-history.png)
-
-1. Select **Download CSV**.
-
-    ![Download CSV.](./media/gdpr-dsr-export/download-csv.png)
+1. Select **My flows**, and then select the flow for which you want to export the run history.
+1. In the **Run history** pane, select **All runs**.
+1. Select **Get .csv file**.
 
 The run history is downloaded as a .csv file so that you can open it in Microsoft Excel or a text editor and further analyze the results.
 
@@ -90,21 +83,16 @@ The run history is downloaded as a .csv file so that you can open it in Microsof
 
 In [Power Automate](https://flow.microsoft.com/), the activity feed shows a user’s history of activities, failures and notifications. Any user can view their activity feed by following these steps:
 
-1. Sign into [Power Automate](https://flow.microsoft.com/), select the bell icon near the upper-right corner, and then select **Show all activity**.
+1. Sign into [Power Automate](https://flow.microsoft.com/) and go t0 **Monitor** > **Cloud flow activity**.
 
-    ![Show activity feed.](./media/gdpr-dsr-export/show-activity-feed.png)
-
-1. In the **Activity** screen, copy the results, and then paste them into a document editor such as Microsoft Word.
-
-    ![Show activity feed.](./media/gdpr-dsr-export/export-activity-feed.png)
+1. In the **Cloud flow activity** screen, copy the results, and then paste them into a document editor such as Microsoft Word.
 
 ## Export a user’s connections
 
 Connections allow flows to connect to APIs, SaaS applications, and other third-party systems. Follow these steps to view your connections:
 
-1. Sign into [Power Automate](https://flow.microsoft.com/), select the gear icon near the upper-right corner, and then select **Connections**.
+1. Sign into [Power Automate](https://flow.microsoft.com/), select goto **Data** > **Connections**.
 
-    ![Show Connections.](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a document editor such as Microsoft Word.
 
 Power Apps Admin PowerShell cmdlets
@@ -143,12 +131,9 @@ Custom connectors supplement the out of box connectors and allow for connectivit
 
 Follow these steps to export a list of customer connectors:<!-- Edit note: Is it custom or customer connectors. -->
 
-1. Navigate to [Power Automate](https://flow.microsoft.com).
-1. Select the settings **gear** icon.
-1. Select **Custom Connectors**.
+1. Go to [Power Automate](https://flow.microsoft.com).
+1. Select **Data** > **Custom connectors**.
 1. Copy and paste the list of custom connectors into a text editor such as Microsoft Word.
-
-    ![Export custom connectors.](./media/gdpr-dsr-export/export-custom-connectors.png)
 
 In addition to the experience provided in Power Automate, you can use the Get-Connector function from the [Power Apps PowerShell cmdlets](/power-platform/admin/powerapps-powershell) to export all custom connectors.
 
@@ -190,15 +175,11 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 
 ## Export approval history
 
-Power Automate Approvals History captures the history of approvals that have been received or sent for a user. Any user can view their approval history by:
+Power Automate approvals history captures the history of approvals that have been received or sent for a user. Any user can view their approval history by:
 
 1. Signing into [Power Automate](https://flow.microsoft.com/), selecting **Approvals**, and then selecting **History**.
 
-    ![View approval history.](./media/gdpr-dsr-export/view-approval-history.png)
-
-1. A list shows approvals that the user received. The users can show approvals that they sent by selecting the down arrow next to **Received** and then selecting **Sent**.
-
-    ![View approvals received.](./media/gdpr-dsr-export/view-received-approvals.png)
+1. Two different tabs show the approvals that the user received and sent.
 
 ## Export User Details
 User details provide a linkage between a user and a specific tenant. An administrator can export this information by calling the **Get-AdminFlowUserDetails** cmdlet and passing in the Object ID for the user.

@@ -68,11 +68,7 @@ An end user who has access to a cloud flow, can export the flow by following the
 
 1. Select the **My flows**, and then select the flow to export.
 
-1. Select **… More**, and then select **Export**.
-
-    ![Export flow.](./media/gdpr-dsr-export/export-flow.png)
-
-1. Select **Package (.zip)**.
+1. Select the dots icon, and then **Export** > **Package (.zip)**.
 
 Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
 
@@ -110,9 +106,8 @@ In [Power Automate](https://flow.microsoft.com/), the activity feed shows a user
 
 Connections allow flows to connect to APIs, SaaS applications, and other third-party systems. Follow these steps to view your connections:
 
-1. Sign into [Power Automate](https://flow.microsoft.com/), select the gear icon near the upper-right corner, and then select **Connections**.
+1. Sign into [Power Automate](https://flow.microsoft.com/), and navigate to **Data** > **Connections**.
 
-    ![Show Connections.](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a text editor such as Microsoft Word.
 
 
