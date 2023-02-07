@@ -136,9 +136,9 @@ These steps copy existing flows for a departing user. If you assign new ownershi
 
  Approval data for Power Automate is stored within the current or previous version of Microsoft Dataverse. Within an approval, personal information exists in the form of approval assignments and comments included in an approval response. Administrators can access that data by following these steps:
 
-1. Sign into [PowerApps](https://make.powerapps.com/).
+1. Sign in to [PowerApps](https://make.powerapps.com/).
 
-1. Select **Data**, and then select **Tables**.
+1. Select **Tables**.
 
 1. Select the ellipsis **(…)** for the **Flow Approval** table, and then open the data in Microsoft Excel.
 
