@@ -34,7 +34,7 @@ The *right of data portability* allows a data subject to request a copy of their
 
 Power Automate offers the following experiences to find or export personal data for a specific user:
 
-* **Website access:** sign into the [Power Apps admin center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+* **Website access:** sign in to the [Power Apps admin center](https://admin.powerapps.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 * **PowerShell access:**  [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
 
@@ -56,7 +56,7 @@ Power Automate offers the following experiences to find or export personal data 
 
 Either an end user or an administrator, who has granted themselves access to the flow, can export the flow by following these steps:
 
-1. Sign into [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://flow.microsoft.com/).
 
 1. Select the **My flows** link, and then select the flow to export.
 
@@ -70,7 +70,7 @@ Run history includes a list of all executions that have occurred for a cloud flo
 
 Either an end user or an administrator, who has been granted access to the flow through the Power Automate admin center, can follow these steps to export this data:
 
-1. Sign into [Power Automate](https://flow.microsoft.com/).
+1. Sign inmto [Power Automate](https://flow.microsoft.com/).
 1. Select **My flows**, and then select the flow for which you want to export the run history.
 1. In the **Run history** pane, select **All runs**.
 1. Select **Get .csv file**.
@@ -81,7 +81,7 @@ The run history is downloaded as a .csv file so that you can open it in Microsof
 
 In [Power Automate](https://flow.microsoft.com/), the activity feed shows a user’s history of activities, failures and notifications. Any user can view their activity feed by following these steps:
 
-1. Sign into [Power Automate](https://flow.microsoft.com/) and go t0 **Monitor** > **Cloud flow activity**.
+1. Sign in to [Power Automate](https://flow.microsoft.com/) and go to **Monitor** > **Cloud flow activity**.
 
 1. In the **Cloud flow activity** screen, copy the results, and then paste them into a document editor such as Microsoft Word.
 
@@ -89,7 +89,7 @@ In [Power Automate](https://flow.microsoft.com/), the activity feed shows a user
 
 Connections allow flows to connect to APIs, SaaS applications, and other third-party systems. Follow these steps to view your connections:
 
-1. Sign into [Power Automate](https://flow.microsoft.com/), select goto **Data** > **Connections**.
+1. Sign in to [Power Automate](https://flow.microsoft.com/), and select **Data** > **Connections**.
 
 1. Copy the results, and then paste them into a document editor such as Microsoft Word.
 
