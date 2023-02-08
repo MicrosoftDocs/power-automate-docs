@@ -517,7 +517,7 @@ Hosted machines aren't yet available in sovereign clouds nor in the following pu
 - Switzerland
 - United Arab Emirates
 
-### Azure tenant country and supported geographies in the public cloud
+### Azure tenant country/region and supported geographies in the public cloud
 
 During the public preview, a hosted machine can only be provisioned when the tenant's country/region on Azure falls within the same scope of the region for the Power Automate environment.
 
