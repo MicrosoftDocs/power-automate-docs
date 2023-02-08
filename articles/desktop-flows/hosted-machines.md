@@ -506,8 +506,6 @@ The following list displays all the supported Power Platform geographies in the 
 
 Hosted machines aren't yet available in sovereign clouds nor in the following Power Platform geographies in the public cloud:
 
-<!-- Asia encompasses a large area that would seem to include China and Korea, which are listed separately. I think Japan would be included in Asia also, but it's listed above. Can Asia be made more specific? -->
-
 - Asia Pacific
 - Brazil
 - China
