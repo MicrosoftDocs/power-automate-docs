@@ -493,7 +493,7 @@ This section presents the limitations of hosted machines.
 
 ### Geographical availabilities/restrictions
 
-The following list displays all the supported geographies in the public cloud:
+The following list displays all the supported Power Platform geographies in the public cloud:
 
 - Australia
 - Canada
@@ -504,11 +504,11 @@ The following list displays all the supported geographies in the public cloud:
 - United Kingdom
 - United States
 
-Hosted machines aren't yet available in sovereign clouds nor in the following public cloud geographies:
+Hosted machines aren't yet available in sovereign clouds nor in the following Power Platform geographies in the public cloud:
 
 <!-- Asia encompasses a large area that would seem to include China and Korea, which are listed separately. I think Japan would be included in Asia also, but it's listed above. Can Asia be made more specific? -->
 
-- Asia
+- Asia Pacific
 - Brazil
 - China
 - Germany
