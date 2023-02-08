@@ -4,7 +4,7 @@ description: See how to create connections to trigger desktop flows from cloud f
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/07/2022
+ms.date: 02/08/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:

@@ -4,7 +4,7 @@ description: This article describes how to use a mass deployment tool that allow
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/17/2022
+ms.date: 02/08/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -17,9 +17,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
-<!-- In line 62, the text says "the user needs to grant at least Environment Maker..." Who or what does the user grant this role to? Also, see comment on line 129. -->
-
 
 # Silent registration for machines
 
@@ -41,11 +38,11 @@ To silently register your machine and join a group, we recommend that you use a 
    1. Go to the Azure portal: [https://portal.azure.com/](https://portal.azure.com/)
 
    1. Search **App registrations**.
-    
+
       ![Screenshot of the Azure portal.](./media/machines-silent-registration/azure-portal.png)
 
    1. Select **New registration**.
-     
+
       ![Screenshot of the New registration option.](./media/machines-silent-registration/azure-portal-new-registration.png)
 
    1. Define a name and select **Single tenant** (or multitenant) and then select **Register**.
@@ -59,10 +56,10 @@ To silently register your machine and join a group, we recommend that you use a 
 1. [Create an application user.](/power-platform/admin/manage-application-users#create-an-application-user)
 
    >[!NOTE]
-   >Regarding their security roles, the user needs to grant at least Environment Maker (or Desktop Flows Machine Owner) to be able to register a machine and join a group.
+   >Administrators must set users at least as Environment Makers (or Desktop Flows Machine Owners) to allow them to register machines and join groups.
 
 1. Get the following information that will be used in the Machine Registration app:
- 
+
    - Application ID
    - Directory (tenant) ID
    - Client credentials (certificate or thumbprint)
@@ -125,11 +122,7 @@ To join a group silently with the service principal account, use the join group 
 1. Groupid: The ID of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
 1. Grouppassword: The password of your machine. If this machine is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. You shouldn't use this input as an input to the command line. Go to the “Secure input” section to see options you can choose to provide it.
 
-
-<!-- The following image needs better alt-text. I can't tell what the highlighted area is showing. -->
-
-
-![groupresults.](./media/machines-silent-registration/environment-id.png)
+![Screenshot of the environment ID in the Power Automate portal URL.](./media/machines-silent-registration/environment-id.png)
 
 ```CMD
 .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword

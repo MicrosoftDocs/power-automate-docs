@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/26/2022
+ms.date: 02/08/2023
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -18,10 +18,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
-<!-- Line 188 says "You can't delete a machine from Power Automate machine runtime. To delete a machine:" It's confusing to read that you can't delete it, and then to read how to delete it. -->
-
-
 
 # Manage machines
 
@@ -185,7 +181,7 @@ You can share a machine with other users in your organization and give those use
 
 ## Delete a machine
 
-You can't delete a machine from Power Automate machine runtime. To delete a machine:
+Although you can't delete a machine from the Power Automate machine runtime, you can do it from the Power Automate portal:
 
 1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com/).
 

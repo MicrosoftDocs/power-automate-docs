@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/14/2022
+ms.date: 02/08/2023
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
@@ -14,10 +14,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
-
-<!-- Please see a question on line 308 and two others near the end of this article. -->
-
 
 # Hosted machines (preview)
 
@@ -52,7 +48,7 @@ To use hosted machines, you need one of the following Power Automate licensing o
 - Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trial**.
 
     The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the unattended RPA add-on to the targeted environments.
-    
+
 - Use the **90-days self-assisted premium trial.**
 
     Trial users are granted the capacity of one hosted machine. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](http://make.powerautomate.com/).
@@ -87,12 +83,11 @@ To create a hosted machine, you must create the Windows 365 service principal in
 
     1. Fill filter **Application ID starts with** with the Windows 365 application ID **0af06dc6-e4b5-4f28-818e-e78e62d137a5**.
 
-        If the service principal is provisioned in your Azure Active Directory, the page should look like the following screenshot:        
+        If the service principal is provisioned in your Azure Active Directory, the page should look like the following screenshot:
 
         :::image type="content" source="media/hosted-machines/azure-portal.png" alt-text="Screenshot of the Enterprise applications in Azure Active Directory.":::
-        
+
         If the application is like the presented screenshot, you don't need to perform any extra steps. However, you must create the service principal if the application isn't showing up.
-        
 
 1. Create the Windows 365 service principal.
 
@@ -304,11 +299,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 ## Use custom VNet for your hosted machines
 
-
-<!-- Why is it VNet in the heading, but vNET in the paragraph? Should it be the same in both places? -->
-
-
-You can connect to your own virtual network (vNET) with your hosted machines to securely communicate with each other, the Internet, and on-premises networks. Providing your own vNET from your Azure subscription will allow your hosted machines to be provisioned with your vNET automatically.
+You can connect to your own virtual network (vNET) with your hosted machines to securely communicate with each other, the Internet, and on-premises networks. Providing your own VNet from your Azure subscription will allow your hosted machines to be provisioned with your VNet automatically.
 
 ### General network requirement
 
@@ -318,7 +309,7 @@ To use your own network and provision Azure Azure AD joined hosted machines, you
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
 
-The vNET needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
+The VNet needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
 
 - US: East US
 - Europe: North Europe
@@ -492,10 +483,7 @@ By default, the **Desktop Flows Machine owner** can create hosted machines, but 
 
 #### Desktop Flows Machine Configuration Admin role
 
-<!-- Is the role correct as in the heading, above, or in the text below? One says image, the other says configuration. -->
-
-
-The **Desktop Flows Machine Image Admin** role only brings full privileges on the **Flow Machine Image** and **Flow Machine Network** entities. In particular, it allows users with this role to share/unshare VM images and VNets to be used for created hosted machines in their environment. You can find more information about sharing pre-provisioned VM images and VNets in [Create hosted machines](#create-a-hosted-machine).
+The **Desktop Flows Machine Configuration Admin role** role only brings full privileges on the **Flow Machine Image** and **Flow Machine Network** entities. In particular, it allows users with this role to share/unshare VM images and VNets to be used for created hosted machines in their environment. You can find more information about sharing pre-provisioned VM images and VNets in [Create hosted machines](#create-a-hosted-machine).
 
 :::image type="content" source="media/hosted-machines/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
 
@@ -519,7 +507,6 @@ The following list displays all the supported geographies in the public cloud:
 Hosted machines aren't yet available in sovereign clouds nor in the following public cloud geographies:
 
 <!-- Asia encompasses a large area that would seem to include China and Korea, which are listed separately. I think Japan would be included in Asia also, but it's listed above. Can Asia be made more specific? -->
-
 
 - Asia
 - Brazil
