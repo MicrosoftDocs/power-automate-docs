@@ -28,7 +28,14 @@ The **Run subflow** action interrupts the subflow in which it's placed and runs 
 
 :::image type="content" source="media/flowcontrol/subflows-example.png" alt-text="Screenshot of the deployed Run subflow action.":::
 
-To visually organize your actions into groups for easier management, enclose them between a **Region** and an **End region** action, and give the region a distinctive name.
+To visually organize your actions into groups for easier management, enclose them between a Region and an End region action, and give the region a distinctive name.
+
+These actions don't have any functional effect, but they help group and organize actions for maintenance and readability purposes. For example, you can collapse and expand a region to help focus attention where needed.
+
+You can only use the **Region** and **End region** actions as pairs, and they must belong to the same scope to interlock correctly. If one of the two actions belongs to another group of actions, such as a loop or a conditional, the actions can't form a proper region.
+
+> [!NOTE]
+> If you create multiple regions in a subflow, there's no predetermined mapping between specific **Region** and **End region** actions. Instead, the last **Region** action will try to form a pair with the first **End region** action that follows.
 
 ## <a name="comment"></a> Comment
 
