@@ -119,7 +119,7 @@ The following terms are commonly used in Power Automate.
 
 **Templates:** Templates are prebuilt set of triggers and actions that are designed to help users easily create flows that meet their specific business needs. Templates can be customized. There are hundreds of flow templates that cater to many types of common automation scenarios.
 
- [Power Automate Templates](https://flow.microsoft.com/templates/)
+ [Power Automate Templates](https://make.powerautomate.com/templates/)
 
 **Trigger:** A trigger is an event that starts a cloud flow.  For example, if you create a cloud flow: “when an email with an attachment arrives, automatically upload the file to OneDrive” - the arrival of the email with an attachment is the trigger of such flow.
 

@@ -31,7 +31,7 @@ Here are some of the highlights of what you can do with hosted machines:
 
 Key capabilities:
 
-- **Work or school account integration:** Enables access to resources that are part of the business plan linked to your organization, such as Office, Sharepoint, and Azure.
+- **Work or school account integration:** Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
 
 - **Vanilla or Custom VM images for your hosted machine:** Use a vanilla VM image provided by Microsoft or personalize your hosted machines by providing your own Windows image directly from your Azure Compute Gallery. Providing your own Windows image allows you to have all your applications installed on the provisioned hosted machines.
 

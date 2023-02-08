@@ -60,7 +60,7 @@ Check out how some companies implemented Microsoft Power Platform solutions usin
 Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
 
 
-The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
+The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://make.powerautomate.com/signin).
 
 ## What are the different types of flows?
 
@@ -68,13 +68,13 @@ Visit the [flow types](flow-types.md) article to learn more about the different 
 
 ## Check out the start page
 
-[On the start page](https://flow.microsoft.com) for Power Automate, you can [explore a diverse set of templates](https://flow.microsoft.com/templates) and learn about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
+[On the start page](https://make.powerautomate.com) for Power Automate, you can [explore a diverse set of templates](https://make.powerautomate.com/templates) and learn about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
 
 Each template is designed for a specific purpose. For example, there are templates for sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg. They're intended to inspire you to create customized flows for the exact processes you need.
 
 ## Create your first flow
 
-1. Select a template that's useful for you. A simple template is [**Notify and Email when a new file is uploaded to OneDrive**](https://flow.microsoft.com/galleries/public/templates/ef6bf28037ca11e7870df906aa521b7a/notify-and-email-when-a-new-file-is-uploaded-to-onedrive/).
+1. Select a template that's useful for you. A simple template is [**Notify and Email when a new file is uploaded to OneDrive**](https://make.powerautomate.com/galleries/public/templates/ef6bf28037ca11e7870df906aa521b7a/notify-and-email-when-a-new-file-is-uploaded-to-onedrive/).
 
     ![daily reminder template.](./media/getting-started/template-details.png)
 
@@ -98,7 +98,7 @@ Each template is designed for a specific purpose. For example, there are templat
 
 ## Get creative
 
-Now that you've created your first flow from a template, use any of the more than [500 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
+Now that you've created your first flow from a template, use any of the more than [500 data sources](https://make.powerautomate.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
 ![Building a cloud flow.](./media/getting-started/build-a-flow.png)
 
@@ -109,7 +109,7 @@ When you create a cloud flow from scratch, you control the entire workflow. Here
 - [Create an approval flow](wait-for-approvals.md).
 - [Watch a cloud flow in action](see-a-flow-run.md).
 - [Publish a template](publish-a-template.md).
-- [Create flows from a Microsoft Teams template](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+- [Create flows from a Microsoft Teams template](https://make.powerautomate.com/connectors/shared_teams/microsoft-teams/).
 
 
 ## Peek at the code

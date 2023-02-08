@@ -34,7 +34,7 @@ This feature enables the person running the flow to use their own credentials, w
 
 Users can also get prompts for runtime inputs like **Approver** or **Message**, which can be of type text, file, email, Boolean, or number.
 
-In this walkthrough, we'll create a simple flow that uses one of the many [OneDrive for Business templates](https://flow.microsoft.com/search/?q=OneDrive) to request approval of a file by the requestor's manager.
+In this walkthrough, we'll create a simple flow that uses one of the many [OneDrive for Business templates](https://make.powerautomate.com/search/?q=OneDrive) to request approval of a file by the requestor's manager.
 
 ## Create a cloud flow that requests manager approval for a file in OneDrive for Business
 

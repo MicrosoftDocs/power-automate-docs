@@ -122,7 +122,7 @@ For preview, we support only up to five (5) columns in addition to your mapped c
 
 ### "Analysis failed, please try again."
 
-You might have run into other analyze issues. For more ways that we can support you, go to [Support](https://flow.microsoft.com/support/), or post your issue in the [Community Forums](https://community.dynamics.com/f).
+You might have run into other analyze issues. For more ways that we can support you, go to [Support](https://make.powerautomate.com/support/), or post your issue in the [Community Forums](https://community.dynamics.com/f).
 
 ## Issues with your own Power BI workspace (preview)
 

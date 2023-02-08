@@ -64,7 +64,7 @@ Access to Power Automate US Government plans is restricted to the offerings desc
 
 - In addition to the standalone plans, Microsoft 365 US Government and Dynamics 365 US Government plans also include the Power Apps and Power Automate capabilities, allowing customers to extend and customize Microsoft 365 and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation). 
 
-Additional information and details regarding the differences in functionality between these groups of licenses are described in more detail here: [Power Automate licensing information](https://flow.microsoft.com/pricing/).
+Additional information and details regarding the differences in functionality between these groups of licenses are described in more detail here: [Power Automate licensing information](https://make.powerautomate.com/pricing/).
 
 Power Automate US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels. The Cloud Solution Provider program is not currently available for GCC High customers.
 
@@ -182,9 +182,9 @@ You use a different set of URLs to access Power Automate US Government environme
 
 Commercial version | US Government version
 ------ | --------
-[https://flow.microsoft.com](https://flow.microsoft.com) | [https://gov.flow.microsoft.us (GCC)](https://gov.flow.microsoft.us), [https://high.flow.microsoft.us (GCC High)](https://high.flow.microsoft.us), and [https://flow.appsplatform.us (DoD)](https://flow.appsplatform.us (DoD))
+[https://make.powerautomate.com](https://make.powerautomate.com) | [https://gov.flow.microsoft.us (GCC)](https://gov.flow.microsoft.us), [https://high.flow.microsoft.us (GCC High)](https://high.flow.microsoft.us), and [https://flow.appsplatform.us (DoD)](https://flow.appsplatform.us (DoD))
 [https://admin.powerplatform.microsoft.com/](https://admin.powerplatform.microsoft.com/) | [ https://gcc.admin.powerplatform.microsoft.us/ (GCC)](https://gcc.admin.powerplatform.microsoft.us/), [https://high.admin.powerplatform.microsoft.us/ (GCC High)](https://high.admin.powerplatform.microsoft.us/), and [https://admin.appsplatform.us](https://admin.appsplatform.us) (DoD)
-[https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors (GCC)](https://gov.flow.microsoft.us/connectors), [https://high.flow.microsoft.us/connectors (GCC High)](https://high.flow.microsoft.us/connectors), [https://flow.appsplatform.us/connectors/](https://flow.appsplatform.us/connectors/) (DoD)
+[https://make.powerautomate.com/connectors](https://make.powerautomate.com/connectors) | [https://gov.flow.microsoft.us/connectors (GCC)](https://gov.flow.microsoft.us/connectors), [https://high.flow.microsoft.us/connectors (GCC High)](https://high.flow.microsoft.us/connectors), [https://flow.appsplatform.us/connectors/](https://flow.appsplatform.us/connectors/) (DoD)
 |[https://make.powerautomate.com](https://make.powerautomate.com)|[https://make.gov.powerautomate.us (GCC)](https://make.gov.powerautomate.us), [https://make.high.powerautomate.us (GCC High)](https://make.high.powerautomate.us), and [https://make.powerautomate.appsplatform.us (DoD)](https://make.powerautomate.appsplatform.us)
 
 

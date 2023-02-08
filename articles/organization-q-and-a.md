@@ -35,7 +35,7 @@ Power Automate is a public cloud service to help individuals and teams to set up
 
 ### How can I sign up for Power Automate?
 
-Just go to [flow.microsoft.com](https://flow.microsoft.com), select **Try free** on the top right-side of the screen, and then provide your information to complete the sign-up process.
+Just go to [flow.microsoft.com](https://make.powerautomate.com), select **Try free** on the top right-side of the screen, and then provide your information to complete the sign-up process.
 
 [Sign up for Power Automate](sign-up-sign-in.md) includes more details.
 
@@ -57,7 +57,7 @@ Individuals can gain access to the paid features of Power Automate in three diff
 
 1. They can individually sign up for a Power Automate Trial license for 90 days at no cost.
 2. You can assign a Power Automate license to them within the [Microsoft 365 admin center](https://admin.microsoft.com/).
-3. The user has been assigned a Microsoft 365 and Dynamics 365 plans that includes access to Power Automate. See the [Power Automate pricing page](https://flow.microsoft.com/pricing/) for the list of Office 365 and Dynamics 365 plans that include Power Automate capabilities.
+3. The user has been assigned a Microsoft 365 and Dynamics 365 plans that includes access to Power Automate. See the [Power Automate pricing page](https://make.powerautomate.com/pricing/) for the list of Office 365 and Dynamics 365 plans that include Power Automate capabilities.
 
 ### Can I block another person from using the paid features of Power Automate?
 

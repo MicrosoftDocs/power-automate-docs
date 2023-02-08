@@ -74,7 +74,7 @@ First, we need to enable the Power Apps component framework.
 Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-kit/overview).
 
 1. Download the [Power Platform Creator Kit](https://aka.ms/creatorkitdownload).
-1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
+1. Go to [make.powerautomate.com](https://make.powerautomate.com/).
 1. Go to the environment you just created into which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Prod**.
 1. On the left pane, select **Solutions**.
 1. Select **Import**, and then select **Browse**.
@@ -101,7 +101,7 @@ Wait for the Creator Kit to finish importing before continuing to next step.
 
 ## Import the satellite solution into the satellite environment
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select your designated environment for the satellite solution. For this example, we're importing to the environment named **Contoso_Prod.**
 1. Download the most recent release of the Automation Kit satellite managed solution from the Assets section of [https://github.com/microsoft/powercat-automation-kit/releases](https://github.com/microsoft/powercat-automation-kit/releases)
 1. On the left pane, select **Solutions**.
@@ -118,7 +118,7 @@ Import all the desktop flow actions from the CSV file into the **Desktop Flow Ac
 
 This must be done for all environments in which the Automation Kit is installed, such as main and all satellites.
 
-1. Sign in to [Power Automate](https://flow.microsoft.com) with your account.
+1. Sign in to [Power Automate](https://make.powerautomate.com) with your account.
 1. Select the environment where the solution is installed.
 1. Select the **Solutions** tab.
 1. Find and then select the Automation CoE main solution.

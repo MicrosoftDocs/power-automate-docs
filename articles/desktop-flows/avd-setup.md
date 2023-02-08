@@ -114,7 +114,7 @@ Once the solution import is competed, click on the VM Orchestration Sample Flow,
 
 To update Environment Variables:
 
-1.  Go to [Power Automate](https://flow.microsoft.com/).
+1.  Go to [Power Automate](https://make.powerautomate.com).
 
 1.  On the left pane, select **Solutions**.
 
@@ -130,7 +130,7 @@ If you rename the runbook file when you import it in your Azure Automation accou
 
 To update Environment Variables:
 
-1.  Go to [Power Automate](https://flow.microsoft.com/).
+1.  Go to [Power Automate](https://make.powerautomate.com).
 
 1.  On the left pane, select **Solutions**.
 
