@@ -35,7 +35,7 @@ These actions don't have any functional effect, but they help group and organize
 You can only use the **Region** and **End region** actions as pairs, and they must belong to the same scope to interlock correctly. If one of the two actions belongs to another group of actions, such as a loop or a conditional, the actions can't form a proper region.
 
 > [!NOTE]
-> If you create multiple regions in a subflow, there's no predetermined mapping between specific **Region** and **End region** actions. Instead, the last **Region** action will try to form a pair with the first **End region** action that follows.
+> If you create multiple regions in a subflow, there's no predetermined mapping between specific **Region** and **End region** actions. Instead, the last **Region** action will try to form a pair with the first available **End region** action that follows.
 
 ## <a name="comment"></a> Comment
 
@@ -186,7 +186,7 @@ Marks the beginning of a group of actions.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Name|No|[Text value](../variable-data-types.md#text-value)||The name of the region.|
+|Name|Yes|[Text value](../variable-data-types.md#text-value)||The name of the region.|
 
 ### Variables produced
 
