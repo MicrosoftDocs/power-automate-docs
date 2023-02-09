@@ -216,22 +216,6 @@ If it is taking much longer than expected for your flow to trigger, here are the
 
 2. There was a communication issue that prevents Power Automate from reacting to trigger events. Potentially, because of a service outage, policy change, password expiry, and so on, that caused the delay. You can view [Help + support](https://admin.powerplatform.microsoft.com/support) to find out if there are any active outages. You can also clear the cache of the browser and then retry.
 
-## Dynamics 365 connector trigger issues
-
-There's a delay - [Dynamics 365](/connectors/dynamicscrmonline/) connector triggers can take up to 2 hours to run. This connector is deprecated and our recommendation is to migrate your flows that use [Microsoft Dataverse](/connectors/commondataservice/).
-
-My flow is not listed - The Power Automate menu only lists flows that begin with the **When a row is added, modified or deleted** trigger and contain at least one trigger or action that references that table. Flows that contain other types of triggers (automatic, scheduled, etc.) will not be listed in Dynamics 365.
-
-You can also access these flows in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments):
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments).
-1. Select **Environments**.
-1. Select that environment that contains the flow.
-1. Select **Flows** under the **Resources** section.
-
->[!IMPORTANT]
->You must enable [Power Automate](/power-platform/admin/enable-embedded-flow-in-your-organization#enable-or-disable-power-automate-in-your-organization) before you can find these flows.
-
 ## Power Apps trigger issues
 
 <!--todo: steps are not clear-->
