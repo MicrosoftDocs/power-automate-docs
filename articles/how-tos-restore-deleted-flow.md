@@ -122,7 +122,7 @@ In this section, you'll learn about how to restore deleted flows using PowerShel
    ```
 
    >[!TIP]
-   >Navigate to the URL of any of the flows in your environment to get your environment name (flow.microsoft.com/Environments/<**EnvironmentName**>/Flows) which is required for subsequent steps. Don't omit the prefixed words in the URL if your environment name contains it, for example, Default-8ae09283902-.... 
+   >Navigate to the URL of any of the flows in your environment to get your environment name (https://make.powerautomate.com/Environments/<**EnvironmentName**>/flows) which is required for subsequent steps. Don't omit the prefixed words in the URL if your environment name contains it, for example, Default-8ae09283902-.... 
 
      :::image type="content" source="./media/restore-deleted-flow/get-admin-flow-script.png" alt-text="Screenshot that displays the output of Get-AdminFlow.":::
 

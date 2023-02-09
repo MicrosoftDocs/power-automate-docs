@@ -11,7 +11,7 @@ To approve a request:
 
 ### From the approvals center
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select the **Action items**>**Approvals** in the left-side navigation pane.
 1. Select **Approve** on the request you want to approve.
 1. Add any comments, and then select **Confirm** at the bottom of the screen.

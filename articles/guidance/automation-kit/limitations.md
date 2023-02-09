@@ -31,7 +31,7 @@ You cannot update the values for environment variables from within the solution 
 **Resolution**  
 Use the following steps to update environment variables.
 
-1. Go to [Power Automate](https://flow.microsoft.com/).
+1. Go to [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **Solutions**.
 1. Select the **Default Solution** and change the filter to show **Environment Variables**.
 1. Select a variable that you want to update, and then configure its **Current Value**.

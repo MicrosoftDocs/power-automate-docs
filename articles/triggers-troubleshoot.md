@@ -75,11 +75,11 @@ Follow these steps to verify if your connections are broken:
 ### Verify if the flow uses a premium connector trigger
 
 1. Edit your flow to find the connector name for the trigger.
-1. Go to the [list of connectors](https://flow.microsoft.com/connectors) and then search for that connector. If the connector is a premium connector, **PREMIUM** displays below the name of the connector.
+1. Go to the [list of connectors](http://make.powerautomate.com/connectors) and then search for that connector. If the connector is a premium connector, **PREMIUM** displays below the name of the connector.
 
    ![A screenshot of a premium connector.](./media/triggers-introduction/premium-connector.png)
 
-A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. You can [purchase licenses](https://flow.microsoft.com/pricing) at any time.
+A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. You can [purchase licenses](http://make.powerautomate.com/pricing) at any time.
 
 ### Check your license type
 
@@ -243,7 +243,7 @@ You can try one of the following:
 
    A Power Automate license is required for the user to perform any actions like save, turn off, etc. A Power Apps, Dynamics 365, or Microsoft 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate **Per User** or **Per Flow** license to edit or manually trigger the flow. If the user was previously able to save or modify the flow, it's possible that their license has expired.
 
-   Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run or edit flows that use premium connectors. See the [licensing page](https://flow.microsoft.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
+   Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run or edit flows that use premium connectors. See the [licensing page](http://make.powerautomate.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
 
 ### My flows don't trigger after I change the environment URL
 

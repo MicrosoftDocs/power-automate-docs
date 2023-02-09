@@ -28,7 +28,7 @@ You can resubmit previous runs of a flow in bulk. You can also cancel runs that 
 
 Follow these steps to resubmit flow runs in bulk:
 
-1. Sign in to [Power Automate](https://powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the left panel, select **My flows**.
 1. On the right panel, select the cloud flow that you would like to resubmit or cancel.
 1. Select **All runs**.
