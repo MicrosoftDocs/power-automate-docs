@@ -193,7 +193,7 @@ Recent rows are visible in a lookup column in the unified interface. To prevent 
 
 1. Sign in to [Power Apps](https://make.powerapps.com).
 
-    To learn more on using the Power Apps interface, go to [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal).
+    To learn more about using the Power Apps interface, go to [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal).
 
 1. Select the correct environment from the top right.
 
@@ -226,6 +226,9 @@ Recent rows are visible in a lookup column in the unified interface. To prevent 
  - [Watch a short video about business process flows](https://go.microsoft.com/fwlink/p/?linkid=842226)   
  - [Create a business process flow](create-business-process-flow.md)   
  - [Enhance business process flows with branching](enhance-business-process-flows-branching.md) <br/>
+### See also
+
+[Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal)
 - [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal) 
 - [Whitepaper: Process Enablement with Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
 
