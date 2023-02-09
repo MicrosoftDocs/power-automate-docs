@@ -38,7 +38,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 ## Create a process
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](http://make.powerautomate.com).
 
 1. Select your environment.
 

@@ -77,7 +77,7 @@ The following are prerequisites for installing the Power Automate AVD integratio
 
 1.  Navigate to your environment:
 
-    1.  Go to <https://flow.microsoft.com>
+    1.  Go to [https://make.powerautomate.com](https://make.powerautomate.com)
 
     1.  Select the environment in which the starter kit will be hosted.
 
@@ -110,11 +110,11 @@ Once the solution import is competed, click on the VM Orchestration Sample Flow,
 
 > [!NOTE]
 > You can find the flow Id by navigating to the details page of your flow and then copying the value in the address bar of your browser:
-``https://flow.microsoft.com/manage/environments/<environmentId>/solutions/<solutionId>/flows/<flow-Id>``
+``https://make.powerautomate.com/manage/environments/<environmentId>/solutions/<solutionId>/flows/<flow-Id>``
 
 To update Environment Variables:
 
-1.  Go to [Power Automate](https://flow.microsoft.com/).
+1.  Go to [Power Automate](https://make.powerautomate.com).
 
 1.  On the left pane, select **Solutions**.
 
@@ -130,7 +130,7 @@ If you rename the runbook file when you import it in your Azure Automation accou
 
 To update Environment Variables:
 
-1.  Go to [Power Automate](https://flow.microsoft.com/).
+1.  Go to [Power Automate](https://make.powerautomate.com).
 
 1.  On the left pane, select **Solutions**.
 

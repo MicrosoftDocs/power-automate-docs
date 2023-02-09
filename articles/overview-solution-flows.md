@@ -39,7 +39,7 @@ You must have the following components to create solutions, and solution-aware f
 
 Follow these steps to create a solution.
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](http://make.powerautomate.com).
 1. Select **Solutions** from the navigation bar on the left side of the screen.
 
    ![Screen shot of the left nav with solutions highlighted](./media/overview-solution-flows/left-nav-solution.png)

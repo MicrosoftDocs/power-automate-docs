@@ -36,7 +36,7 @@ Here are some of the ways you can extend your application with Power Automate:
 
 ## Prerequisites
 
-* A [Power Automate](https://flow.microsoft.com) account.
+* A [Power Automate](https://make.powerautomate.com) account.
 
 ## Create a custom connector
 

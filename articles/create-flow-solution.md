@@ -35,7 +35,7 @@ You need to have at least one solution before you can create a solution-aware fl
 
 ## Create a solution-aware cloud flow
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 
 1. Select **Solutions** from the navigation bar.
 
