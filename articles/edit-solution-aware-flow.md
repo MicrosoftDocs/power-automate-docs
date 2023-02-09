@@ -34,7 +34,7 @@ You can edit solution-aware cloud flows in [solutions](#edit-a-solution-aware-cl
 
 ## Edit a solution-aware cloud flow via Solutions
 
-1. Sign in to [Power Automate](https://powerautomate.com), and then select **Solutions** from the menu on the left.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and then select **Solutions** from the menu on the left.
 
 1. Select the solution that contains the flow you want to edit.
 
@@ -52,7 +52,7 @@ You can edit solution-aware cloud flows in [solutions](#edit-a-solution-aware-cl
 
 ## Edit a solution-aware cloud flow via My flows
 
-1. In [Power Automate](https://powerautomate.com), select **My flows** from the menu on the left.
+1. In [Power Automate](https://make.powerautomate.com), select **My flows** from the menu on the left.
 
 1. Find the flow you want to edit. Cloud flows that you own will be in the **Cloud flows** tab and flows that you have co-ownership of will be in the **Shared with me** tab.
 
@@ -73,7 +73,7 @@ The **Save As** capability can be used to duplicate a solution cloud flow. If an
 
 ### Save As without solution context
 
-1. In [Power Automate](https://powerautomate.com), select **My flows** from the menu on the left.
+1. In [Power Automate](https://make.powerautomate.com), select **My flows** from the menu on the left.
 
 1. Open the cloud flow you want to duplicate.
 
@@ -92,7 +92,7 @@ The **Save As** capability can be used to duplicate a solution cloud flow. If an
 
 ### Save As with unmanaged solution context
 
-1. In [Power Automate](https://powerautomate.com), select **Solutions** from the menu on the left.
+1. In [Power Automate](https://make.powerautomate.com), select **Solutions** from the menu on the left.
 
 1. Open an unmanaged solution. This solution is now providing solution context.
 

@@ -74,7 +74,7 @@ If the console is set to another environment than the one specified in the URL, 
 
 ### Find environment and desktop flow IDs
 
-To find the ID of an environment, navigate to the [Power Automate portal](https://flow.microsoft.com/) and select the desired environment. Then, navigate to the **My flows** tab and copy the environment ID from the address line.
+To find the ID of an environment, navigate to the [Power Automate portal](https://make.powerautomate.com) and select the desired environment. Then, navigate to the **My flows** tab and copy the environment ID from the address line.
 
 :::image type="content" source="media/run-flow-url/find-environment-id.png" alt-text="Screenshot of the environment ID in the address line.":::
 

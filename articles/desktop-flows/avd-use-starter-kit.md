@@ -32,7 +32,7 @@ Configuration App. You can use this application to:
 
 To create a new scale configuration:
 
-1.  Go to [Power Automate](https://flow.microsoft.com/).
+1.  Go to [Power Automate](https://make.powerautomate.com).
 
 2.  On the left pane, select **Solutions**.
 
