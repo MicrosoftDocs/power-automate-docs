@@ -40,7 +40,7 @@ See this [subscription page](https://portal.office.com/account/#subscriptions).
 
 ## How do I switch plans?
 
-1. Sign into [Power Automate](https://powerautomate.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. In the top right of the screen select **?** > **Pricing**, and then select the plan to which you want to switch.
 
 ![Help > Pricing.](./media/billing-questions/help-pricing.png)

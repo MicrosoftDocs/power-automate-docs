@@ -89,7 +89,7 @@ Solution-aware cloud flows can be found either via the **My flows** lists or via
 
 ### Find a solution-aware cloud flow with 'My flows'
 
-1. In [Power Automate](https://powerautomate.com), select **My flows** from the navigation bar on the left side.
+1. In [Power Automate](https://make.powerautomate.com), select **My flows** from the navigation bar on the left side.
 
 1. Find the flow that you want to edit.
 
@@ -108,7 +108,7 @@ If you're the owner of a solution cloud flow, you can always find it on the **Cl
 
 ### Find a solution-aware cloud flow via Solutions
 
-1. Sign into [Power Automate](https://powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
+1. Sign into [Power Automate](https://make.powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
 
 1. Select the solution that contains the flow you want to edit.
 
@@ -120,7 +120,7 @@ The **Objects** tab of a solution shows all the solution objects in the solution
 
 ## Add an existing cloud flow into a solution
 
-1. Sign into [Power Automate](https://powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
+1. Sign into [Power Automate](https://make.powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
 
 1. Select the solution that you want to add a cloud flow into.
 

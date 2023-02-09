@@ -138,7 +138,7 @@ When your creative juices start *flowing*, you might create many flows. Don't wo
 
 Visit the cloud flow activity page to see the list of cloud flows that recently ran, sent notifications, or have failed.
 
-1. Sign into [Power Automate](https://powerautomate.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. Select **Monitor** on the left side of the screen.
 1. Select **Cloud flow activity**.
 

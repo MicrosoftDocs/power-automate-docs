@@ -112,7 +112,7 @@ Users can use Power Automate either as individuals or as a part of their organiz
 
 ### How does an individual find out what plan they are on?
 
-1. Sign into [Power Automate](https://powerautomate.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. Select your profile picture in the top right corner of the screen.
 1. Select **View account**.
 1. Select the **Subscriptions** tile.

@@ -83,7 +83,7 @@ Here's a screenshot that displays some of the premium connectors that are availa
 
 Follow these steps to find your license.
 
-1. Go to [Power Automate](https://powerautomate.com/)
+1. Go to [Power Automate](https://make.powerautomate.com)
 
 1. Select **My flows**.
 
