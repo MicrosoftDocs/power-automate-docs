@@ -34,7 +34,7 @@ Customize a cloud flow by adding one or more advanced options and multiple actio
 ## Add another action
 In this procedure, you'll add an action in the middle of the flow. This action will save a file in your Dropbox, archiving the item in the list.
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **My flows**.
 1. In the list of flows, select the **Edit** icon next to the flow you want to edit.
 

@@ -19,12 +19,12 @@ ms.reviewer: deonhe
 
 # Create the cloud flow with the Power Automate
 
-You can close both Power Automate Desktop windows and then go to the [Power Automate designer](https://flow.microsoft.com/). Here, we'll create a Power Automate cloud flow that calls our desktop flow by using secure input parameters from the cloud.
+You can close both Power Automate Desktop windows and then go to the [Power Automate designer](https://make.powerautomate.com). Here, we'll create a Power Automate cloud flow that calls our desktop flow by using secure input parameters from the cloud.
 
 >[!NOTE]
 >This cloud flow is designed as a "happy path," which means it has no exception handling, scoping, or try-catch-finally patterns. You can find a more resilient design approach in the [Low-code RPA with SAP GUI in Power Automate Desktop](action-based-sap-gui-automation-manually-overview.md) section.<!--note from editor: Please double-check this link. I think it should go to the "head" of the relevant section, just to set the stage for the reader.-->
 
-1. [Open Power Automate](https://flow.microsoft.com/), sign in, and confirm that you're in the same Microsoft Dataverse environment as the one you were in when you created the previous flow in Power Automate Desktop.
+1. Go to [Power Automate](https://make.powerautomate.com), sign in, and confirm that you're in the same Microsoft Dataverse environment as the one you were in when you created the previous flow in Power Automate Desktop.
 
    ![Screenshot of the Power Automate Desktop home screen, with the current environment indicated.](media/power-automate-desktop-home-screen-with-current-environment.png)
 

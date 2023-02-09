@@ -194,12 +194,12 @@ To call the action, you'll need the following information.
 - The `ID` of the desktop flow that you want to run. You can get this ID via the API as the [List available desktop flows](#list-available-desktop-flows) section outlines earlier in this article.
   
   >[!TIP]
-  > Alternatively, you can retrieve the ID manually from the desktop flow details URL in Power Automate. The URL format is: `https://flow.microsoft.com/manage/environments/[Environment ID]/uiflows/[Desktop Flow ID]/details`.
+  > Alternatively, you can retrieve the ID manually from the desktop flow details URL in Power Automate. The URL format is: `http://make.powerautomate.com/manage/environments/[Environment ID]/uiflows/[Desktop Flow ID]/details`.
   >
   > For more information, see [Manage desktop flows](/power-automate/desktop-flows/manage).
 
 - The `name` of the desktop flow connection (targeting a machine/machine group) to use to run your flow. The name can be retrieved from the URL of the same connection page in Power Automate. The URL format is:  
-`https://flow.microsoft.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`.
+`http://make.powerautomate.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`.
   
   > [!NOTE]
   > For more information, see [Create desktop flow connections](../desktop-flows/desktop-flow-connections.md).

@@ -24,7 +24,7 @@ search.audienceType:
 
 Before you can start using Minit, you need to install the Minit desktop application from process advisor.
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. In the left side panel, select **Process advisor**.
 

@@ -72,7 +72,7 @@ by Pranav Rastogi and Apostolis Papaioannou<br/>
 
 ### See also
 
-[More Power Automate webinars](https://flow.microsoft.com/en-us/blog/category/webinars/)
+[More Power Automate webinars](http://make.powerautomate.com/blog/category/webinars/)
 
 [Power Apps webinars](/powerapps/webinars)
 
