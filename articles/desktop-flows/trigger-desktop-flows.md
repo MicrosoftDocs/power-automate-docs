@@ -37,7 +37,7 @@ search.audienceType:
 
 To trigger a desktop flow from a cloud flow:
 
-1. Go to [Power Automate](http://make.powerautomate.com) and sign in with your credentials.
+1. Go to [Power Automate](https://make.powerautomate.com) and sign in with your credentials.
 
 1. Create a new cloud flow that you'll later use to trigger your desktop flow. This flow can be an instant or an automated cloud flow.
 

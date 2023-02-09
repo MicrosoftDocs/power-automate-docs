@@ -29,7 +29,7 @@ To follow this guided tutorial, create a list with Micrsoft Lists. You can use t
 
 Once you have a list for which you want to create an approval process:  
   
-1. Go to the [Start approval when a new item is added](http://make.powerautomate.com/galleries/public/templates/d62b2527bb5343d689d5107b0922e57b/start-approval-when-a-new-item-is-added/) template, which provides a flow that's configured to create an approval process on a list.
+1. Go to the [Start approval when a new item is added](https://make.powerautomate.com/galleries/public/templates/d62b2527bb5343d689d5107b0922e57b/start-approval-when-a-new-item-is-added/) template, which provides a flow that's configured to create an approval process on a list.
 
 1. Make sure all connections listed have a green check, and then select **Continue**.  
  
