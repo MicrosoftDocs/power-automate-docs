@@ -37,13 +37,13 @@ Create buttons so that you can easily run repetitive tasks from any place, at an
 
 ## Create a button
 ### Prerequisites
-* Access to [Power Automate](https://flow.microsoft.com).
+* Access to [Power Automate](https://make.powerautomate.com).
 * An account with permissions to use the connectors to create your button. For example, you will need a Dropbox account in order to create a button that accesses Dropbox.
 
 ### From the portal
 In this walk-through, let's create a button that starts a Visual Studio Codespaces build and sends notifications to let you know when the build starts:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **Create** from the left side of the screen.
 1. Select **Instant flow**.
 1. Give your flow a name in the **Flow name** > **Manually trigger a flow** > **Create**. 
