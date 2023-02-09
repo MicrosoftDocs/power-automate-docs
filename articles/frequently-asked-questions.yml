@@ -139,14 +139,14 @@ sections:
       - question: |
          How many flows can I have?
         answer: |
-              You can create an unlimited number of flows, depending on the [type of license](https://flow.microsoft.com/pricing) you hold.
+              You can create an unlimited number of flows, depending on the [type of license](http://make.powerautomate.com/pricing) you hold.
           
       - question: |
          Where do I get started with Power Automate?
         answer: |
           Get started with the following resources:
           
-          * [Blog](https://flow.microsoft.com)
+          * [Blog](http://make.powerautomate.com)
           * [YouTube channel](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
           * [Topic](getting-started.md)
           * [Community](https://powerusers.microsoft.com)

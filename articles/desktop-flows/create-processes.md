@@ -40,7 +40,7 @@ Here are some tips before you start using WinAutomation with desktop flows.
 
 1.  Automation scripts in WinAutomation are called **Processes**. In Power Automate, automation scripts are called *cloud* or *desktop* flows*.
 
-1.  Before you create a WinAutomation Process, check the [list of connectors](https://flow.microsoft.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a desktop flow. You might also [build your own connector](/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
+1.  Before you create a WinAutomation Process, check the [list of connectors](https://make.powerautomate.com/connectors/) to see if the application you want to automate already has a connector. If it does, consider creating a cloud flow instead of a desktop flow. You might also [build your own connector](/connectors/custom-connectors/). In general, API-based connectors provide a better experience than UI automation in terms of scalability, reliability, and lower cost.
 
 
 ## Prerequisites
@@ -72,9 +72,9 @@ You need to have a Power Automate *Per user plan with attended RPA* to use Pow
 1.  After the installation completes, start the WinAutomation Console from the Windows start menu.
 
 1.  The application will start and prompt you to login. Enter the user
-    credentials you use for [Power Automate](https://flow.microsoft.com/). If
+    credentials you use for [Power Automate](https://make.powerautomate.com). If
     you don’t have a valid license, you will see this error message. You can
-    also visit the [pricing page](https://flow.microsoft.com/pricing/) to learn
+    also visit the [pricing page](https://make.powerautomate.com/pricing/) to learn
     more about this license or to get a trial license.
 
       ![Screenshot of a License error.](../media/create-processes/license-error.png)
@@ -153,7 +153,7 @@ results.
 
 ## How to obtain an RPA trial license
 
-Log in to [Power Automate](https://flow.microsoft.com/) then select the **Desktop flows** tab under **My flows**. You'll see the trial dialog from which you can start the trial.
+Log in to [Power Automate](https://make.powerautomate.com) then select the **Desktop flows** tab under **My flows**. You'll see the trial dialog from which you can start the trial.
 
 ![Screenshot of the start a trial or buy a license options.](../media/create-processes/trial-buy.png)
 
@@ -175,7 +175,7 @@ becomes effective.
 If you are receiving licensing errors during the launch of WinAutomation, ensure
 the user you’re logging in as has a valid Power Automate RPA license. To confirm this:
 
-1.  Go to [Power Automate](https://flow.microsoft.com/) and sign in.
+1.  Go to [Power Automate](https://make.powerautomate.com) and sign in.
 
 1.  Select **My flows** on the left navigation bar.
 
@@ -254,7 +254,7 @@ ProcessRobot
 
 ## Learn more
 
--   Read about the [WinAutomation acquisition](https://flow.microsoft.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/).
+-   Read about the [WinAutomation acquisition](https://make.powerautomate.com/blog/microsoft-acquires-softomotive-to-expand-low-code-robotic-process-automation-capabilities-in-microsoft-power-automate/).
 -   Read more at [WinAutomation docs](/previous-versions/troubleshoot/winautomation/).
 -   Learn more at [WinAutomation Academy](/training/browse/?terms=WinAutomation).
 -   Get a head start with [WinAutomation tutorials](https://www.winautomation.com/support/tutorials/).
