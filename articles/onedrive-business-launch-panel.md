@@ -28,13 +28,13 @@ ms.reviewer: gtrantzas
 # Create flows from the OneDrive for Business launch panel
 
 
-Similar to the Power Automate [Launch Panel in SharePoint](http://make.powerautomate.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/), you can run flows on specific files in OneDrive for Business. 
+Similar to the Power Automate [Launch Panel in SharePoint](https://make.powerautomate.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/), you can run flows on specific files in OneDrive for Business. 
 
 This feature enables the person running the flow to use their own credentials, which is especially applicable for flows that have been created by an IT department. 
 
 Users can also get prompts for runtime inputs like **Approver** or **Message**, which can be of type text, file, email, Boolean, or number.
 
-In this walkthrough, we'll create a simple flow that uses one of the many [OneDrive for Business templates](http://make.powerautomate.com/search/?q=OneDrive) to request approval of a file by the requestor's manager.
+In this walkthrough, we'll create a simple flow that uses one of the many [OneDrive for Business templates](https://make.powerautomate.com/search/?q=OneDrive) to request approval of a file by the requestor's manager.
 
 ## Create a cloud flow that requests manager approval for a file in OneDrive for Business
 

@@ -51,7 +51,7 @@ To use hosted machines, you need one of the following Power Automate licensing o
 
 - Use the **90-days self-assisted premium trial.**
 
-    Trial users are granted the capacity of one hosted machine. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](http://make.powerautomate.com/).
+    Trial users are granted the capacity of one hosted machine. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
 > [!NOTE]
 > All tenants have a global limit of 10 hosted machines.
