@@ -31,7 +31,7 @@ When running desktop flows in unattended mode, keep in mind that:
 
 - Windows 10 and Windows 11 devices can't run unattended desktop flows if any active Windows user sessions are present (even a locked one).
 
-- On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow connection, you'll receive an error.
+- On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow connection, you receive an error.
 
 >[!IMPORTANT]
 >
