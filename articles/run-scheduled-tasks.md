@@ -32,7 +32,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 ## Create a recurring flow
 
-1. Sign in to [Power Automate](http://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **My flows** > **New flow** > **Scheduled cloud flow**.
 
     >[!div class="mx-imgBorder"]
