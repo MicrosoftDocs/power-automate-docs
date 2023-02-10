@@ -30,7 +30,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> From February 28 2022, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 In the following steps, we'll demonstrate how to automate the calculator app to sum two numbers and then store the result for later use.
 
@@ -41,7 +41,7 @@ In the following steps, we'll demonstrate how to automate the calculator app to 
 
 1. Ensure your [device is ready](setup.md#prerequisites) to create desktop flows.
 
-1. Use [Microsoft Edge (Version 80 or later)](https://www.microsoftedgeinsider.com) or Google Chrome to open [Power Automate](https://flow.microsoft.com), and then sign in with the same work or school account as on your device.
+1. Use [Microsoft Edge (Version 80 or later)](https://www.microsoftedgeinsider.com) or Google Chrome to open [Power Automate](https://make.powerautomate.com), and then sign in with the same work or school account as on your device.
 
 1. Select **My flows** > **Desktop flows** > **New**.
 

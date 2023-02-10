@@ -48,7 +48,7 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 - Basic User
 - Environment Maker
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. Go to your satellite environment.
 1. Select the **Solutions** tab.
 1. Find and then select **Automation CoE Satellite.**

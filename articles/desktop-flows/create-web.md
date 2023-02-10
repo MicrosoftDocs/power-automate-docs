@@ -30,14 +30,14 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> From February 28 2022, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 Follow these steps to create a simple Selenium flow.
 
 ## Create a Selenium IDE flow
 
 1. Open the [Microsoft
-   Edge (version 80 or later)](https://www.microsoft.com/edge) or Google Chrome, and then navigate to [Power Automate](https://flow.microsoft.com/).
+   Edge (version 80 or later)](https://www.microsoft.com/edge) or Google Chrome, and then navigate to [Power Automate](https://make.powerautomate.com).
 
 1. Sign in with your work or school account if needed.
 

@@ -31,7 +31,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> From February 28 2022, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 Use inputs to pass information from an external source such as a database or any supported connector to the legacy software that Windows recorder (V1) automates.
 
@@ -96,7 +96,7 @@ For example, you can use customer information from a SharePoint list as a source
 
 ## Use outputs to extract information from the app
 
-Outputs let you pass information from the legacy software that Windows recorder (V1) automates to an external destination such as a database or any [supported connector](https://flow.microsoft.com/connectors/).
+Outputs let you pass information from the legacy software that Windows recorder (V1) automates to an external destination such as a database or any [supported connector](https://make.powerautomate.com/connectors/).
 
 For example, you can extract customer information your legacy accounting software and add it to a SharePoint list.
 

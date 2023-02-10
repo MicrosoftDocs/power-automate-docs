@@ -23,7 +23,7 @@ Before you install Power Automate on your device, make sure that it meets the [s
 
 > [!IMPORTANT]
 >
-> From February 28 2022, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 You can download and install Power Automate [using an MSI installer](#install-power-automate-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). Microsoft Store installation doesn't require you to have admin rights on your device.
 
@@ -62,7 +62,7 @@ By default, Power Automate for desktop honors the proxy settings specified in Wi
 
     - Open a browser and go to [this Microsoft Store page](https://www.microsoft.com/store/productId/9NFTCH6J7FHV). Then, select **Get in Store app** to launch Microsoft Store on your device.
 
-    - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/) and select the appropriate option for installing.
+    - Go to the [Power Automate product page](https://make.powerautomate.com/desktop/) and select the appropriate option for installing.
 
 1. After Microsoft Store is open, select **Get** to download and install Power Automate.
 
@@ -81,7 +81,7 @@ When you install an on-premises data gateway, it defaults to the region that Pow
 
 > [!IMPORTANT]
 >
-> From February 28 2022, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 Selenium IDE is an open source tool that enables you to record and playback human interactions on websites. With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
 

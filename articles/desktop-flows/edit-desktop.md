@@ -31,7 +31,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> From February 28 2022, Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 Windows recorder (V1) flows automate Windows desktop applications. Please refer to the [Known issues](create-desktop.md#known-issues-and-solutions) to learn more about issues you might run into, workarounds for those issues, and scenarios that are not supported in this release.
 
@@ -60,7 +60,7 @@ Advanced parameters let you change:
 
 You may want to record your Windows recorder (V1) flowin multiple sessions. After you've completed your first recording you can proceed as follows:
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. Select **My flows** > **Desktop flows**.
 1. Select the Windows recorder (V1) flowthat you want to edit.
 
@@ -362,7 +362,7 @@ any of the following actions for that application.
 
 Follow these steps to add a manual action:
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. Select **My flows** > **Desktop flows**.
 1. Select the Windows recorder (V1) flow that you want to edit.
 

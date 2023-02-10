@@ -70,7 +70,7 @@ You can use Power Automate to [build an approval process that notifies users via
 
 ## Send reminder email to approvers
 
-You can also send [reminder emails for approval requests](https://flow.microsoft.com/blog/approval-reminders-using-parallel-branches).
+You can also send [reminder emails for approval requests](https://make.powerautomate.com/blog/approval-reminders-using-parallel-branches).
 
 ## Send a daily digest email with a table
 
