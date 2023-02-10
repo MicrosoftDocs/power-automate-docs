@@ -32,7 +32,7 @@ As part of our commitment to partner with you on your journey to the General Dat
 
 The *right of data portability* allows data subjects to request a copy of their personal data in an electronic format (that’s a “structured, commonly used, machine readable, and interoperable format”) that may be transmitted to another data controller.
 
-Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), or [Power Automate](https://flow.microsoft.com/) to find or export personal data for a specific user.
+Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), or [Power Automate](https://make.powerautomate.com) to find or export personal data for a specific user.
 
 |Personal data|Location|
 |-----------------|-------------------|
@@ -64,13 +64,13 @@ Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), o
 
 An end user who has access to a cloud flow, can export the flow by following these steps:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select the **My flows**, and then select the flow to export.
 
 1. Select the dots icon, and then **Export** > **Package (.zip)**.
 
-Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
+Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://make.powerautomate.com/blog/import-export-bap-packages/).
 
 ## Export run history
 
@@ -78,7 +78,7 @@ Run history includes a list of all runs for a cloud flow. This data includes the
 
 An end user who has access to the flow can follow these steps to export this data:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **My flows**, and then select the flow for which you want to export the run history.
 1. In the **Run history** pane, select **All runs**.
 1. Select **Get .csv file**.
@@ -87,9 +87,9 @@ The run history is downloaded as a .csv file so that you can open it in Microsof
 
 ## Export a user's activity feed
 
-In [Power Automate](https://flow.microsoft.com/), the activity feed shows a user’s history of activities, failures and notifications. Users can view their activity feed by following these steps:
+In [Power Automate](https://make.powerautomate.com), the activity feed shows a user’s history of activities, failures and notifications. Users can view their activity feed by following these steps:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/), and go to **Monitor** > **Cloud flow activity**.
+1. Sign in to [Power Automate](https://make.powerautomate.com)), and go to **Monitor** > **Cloud flow activity**.
 
 1. In the **Activity** screen, copy the results, and then paste them into a text editor such as Microsoft Word.
 
@@ -97,7 +97,7 @@ In [Power Automate](https://flow.microsoft.com/), the activity feed shows a user
 
 Connections allow flows to connect to APIs, SaaS applications, and other third-party systems. Follow these steps to view your connections:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/), and select **Data** > **Connections**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and select **Data** > **Connections**.
 
 1. Copy the results, and then paste them into a text editor such as Microsoft Word.
 

@@ -111,7 +111,7 @@ By following the steps in this section, you'll build:
 
 ## Sign in and create a cloud flow
 
-1. Open the [Power Automate portal](https://flow.microsoft.com).
+1. Open the [Power Automate portal](https://make.powerautomate.com).
 
 1. Maximize your browser window if it isn't already maximized, and then click or tap **Sign in** near the upper-right corner.
 

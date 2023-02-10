@@ -29,7 +29,7 @@ ms.custom: intro-internal
 
 # Create a cloud flow from a template in Power Automate
 
-A good way to get started is to use a template that is suited to your organization's scenario. You can choose from a collection of templates to find the one that best matches your scenario. Search [all templates](https://flow.microsoft.com/templates/) or browse by category to find your scenario, and then follow the steps in the template to create a cloud flow from the template.
+A good way to get started is to use a template that is suited to your organization's scenario. You can choose from a collection of templates to find the one that best matches your scenario. Search [all templates](https://make.powerautomate.com/templates/) or browse by category to find your scenario, and then follow the steps in the template to create a cloud flow from the template.
 
 You can tweak templates by adding, editing, or removing triggers and actions to create your own flows. You can [copy paste actions](/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the your tweaks.
 
@@ -44,13 +44,13 @@ Here, we'll follow an example that uses a template to create a flow that sends y
 
 To complete this example, you'll need accounts with access to the following:
 
-- [Power Automate](https://flow.microsoft.com).
+- [Power Automate](https://make.powerautomate.com).
 - Slack.
 - Microsoft 365.
 
 ## Choose a template
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. At the top of the home screen, select **Create**.
 

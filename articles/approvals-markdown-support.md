@@ -175,11 +175,11 @@ You can set text hyperlinks for your URL using the standard markdown link syntax
 
 **Example:**  
 ```Markdown
-[Power Automate](https://flow.microsoft.com)
+[Power Automate](https://make.powerautomate.com)
 ```
 
 **Result:**  
-[Power Automate](https://flow.microsoft.com)
+[Power Automate](https://make.powerautomate.com)
 
 ## Tables
 

@@ -35,7 +35,7 @@ In this article, you will create a cloud flow that sends an email notification w
 
 ## Prerequisites
 
-- Sign up for [Power Automate](https://flow.microsoft.com) and [Power Apps](https://make.powerapps.com).
+- Sign up for [Power Automate](https://make.powerautomate.com) and [Power Apps](https://make.powerapps.com).
   
     If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
 
@@ -43,7 +43,7 @@ In this article, you will create a cloud flow that sends an email notification w
 
 ## Sign in to your environment
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. In the top right menu, select the environment where you created the Dataverse table. 
 

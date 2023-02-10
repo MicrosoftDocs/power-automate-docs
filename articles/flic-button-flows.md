@@ -70,7 +70,7 @@ Let's get started creating our flow.
 
 ### Start with a template
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select **Create** > **Start with a template**.
 

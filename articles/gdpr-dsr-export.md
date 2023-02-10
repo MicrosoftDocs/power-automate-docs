@@ -56,13 +56,13 @@ Power Automate offers the following experiences to find or export personal data 
 
 Either an end user or an administrator, who has granted themselves access to the flow, can export the flow by following these steps:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select the **My flows** link, and then select the flow to export.
 
 1. Select the dots icon, and then **Export** > **Package (.zip)**.
 
-Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://flow.microsoft.com/blog/import-export-bap-packages/).
+Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://make.powerautomate.com/blog/import-export-bap-packages/).
 
 ## Export run history
 
@@ -70,7 +70,7 @@ Run history includes a list of all executions that have occurred for a cloud flo
 
 Either an end user or an administrator, who has been granted access to the flow through the Power Automate admin center, can follow these steps to export this data:
 
-1. Sign inmto [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **My flows**, and then select the flow for which you want to export the run history.
 1. In the **Run history** pane, select **All runs**.
 1. Select **Get .csv file**.
@@ -79,9 +79,9 @@ The run history is downloaded as a .csv file so that you can open it in Microsof
 
 ## Export a user's activity feed
 
-In [Power Automate](https://flow.microsoft.com/), the activity feed shows a user’s history of activities, failures and notifications. Any user can view their activity feed by following these steps:
+In [Power Automate](https://make.powerautomate.com), the activity feed shows a user’s history of activities, failures and notifications. Any user can view their activity feed by following these steps:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/) and go to **Monitor** > **Cloud flow activity**.
+1. Sign in to [Power Automate](https://make.powerautomate.com) and go to **Monitor** > **Cloud flow activity**.
 
 1. In the **Cloud flow activity** screen, copy the results, and then paste them into a document editor such as Microsoft Word.
 
@@ -89,7 +89,7 @@ In [Power Automate](https://flow.microsoft.com/), the activity feed shows a user
 
 Connections allow flows to connect to APIs, SaaS applications, and other third-party systems. Follow these steps to view your connections:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/), and select **Data** > **Connections**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and select **Data** > **Connections**.
 
 1. Copy the results, and then paste them into a document editor such as Microsoft Word.
 
@@ -129,7 +129,7 @@ Custom connectors supplement the out of box connectors and allow for connectivit
 
 Follow these steps to export a list of customer connectors:<!-- Edit note: Is it custom or customer connectors. -->
 
-1. Go to [Power Automate](https://flow.microsoft.com).
+1. Go to [Power Automate](https://make.powerautomate.com).
 1. Select **Data** > **Custom connectors**.
 1. Copy and paste the list of custom connectors into a text editor such as Microsoft Word.
 
@@ -175,7 +175,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 
 Power Automate approvals history captures the history of approvals that have been received or sent for a user. Any user can view their approval history by:
 
-1. Signing into [Power Automate](https://flow.microsoft.com/), selecting **Approvals**, and then selecting **History**.
+1. Signing into [Power Automate](https://make.powerautomate.com), selecting **Approvals**, and then selecting **History**.
 
 1. Two different tabs show the approvals that the user received and sent.
 

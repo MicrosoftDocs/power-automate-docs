@@ -4,7 +4,7 @@ description: See how to create connections to trigger desktop flows from cloud f
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/07/2022
+ms.date: 02/08/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -22,7 +22,7 @@ search.audienceType:
 
 Before using the **Run desktop flow** action in your cloud flow to trigger a desktop flow, you need to create a connection to your machine. To create a connection:
 
-1. Sign in to [Power Automate](https://powerautomate.microsoft.com), go to **Data** > **Connections**,  and then select **New connection**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), go to **Data** > **Connections**,  and then select **New connection**.
 
     :::image type="content" source="media/desktop-flows-setup/new-connection.png" alt-text="Screenshot of the option to create a new connection.":::
 
@@ -30,7 +30,7 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 
 1. Provide the machine (or on-premises data gateway) information and device credentials:
 
-   - **Connect:** Select if you want to connect to a machine, a machine group or an on-premises data gateway.
+   - **Connect**: Select if you want to connect to a machine, a machine group or an on-premises data gateway.
 
       To connect to a machine or a machine group, select **Directly to machine**, and choose the appropriate machine or machine group in  **Machine or machine group**.
 

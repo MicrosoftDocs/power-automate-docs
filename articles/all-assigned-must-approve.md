@@ -39,7 +39,7 @@ Here's a quick video tutorial about approvals.
 
 ## Prerequisites
 
-* Access to [Power Automate](https://flow.microsoft.com), Microsoft Office 365 Outlook, and Microsoft Office 365 Users.
+* Access to [Power Automate](https://make.powerautomate.com), Microsoft Office 365 Outlook, and Microsoft Office 365 Users.
 * A SharePoint [list](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
 
     This walkthrough assumes you've created a SharePoint list that's used to request vacations. See the [parallel approvals](parallel-modern-approvals.md) walkthrough for an in-depth example that details what your SharePoint list might look like.
@@ -51,7 +51,7 @@ Here's a quick video tutorial about approvals.
     You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
 > [!NOTE]
-> While we use SharePoint and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://flow.microsoft.com/connectors/) that Power Automate supports.
+> While we use SharePoint and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://make.powerautomate.com/connectors/) that Power Automate supports.
 
 
 ## Create the flow
@@ -63,7 +63,7 @@ Here's a quick video tutorial about approvals.
 
 This walkthrough uses tokens. To display the list of tokens, tap or click any input control, and then search for the token in the **Dynamic content** list that opens.
 
-Sign in to [Power Automate](https://flow.microsoft.com), and then perform the following steps to create your flow.
+Sign in to [Power Automate](https://make.powerautomate.com), and then perform the following steps to create your flow.
 
 1. On the top left of the screen, select **Create** > **Build your own**.
 1. Under **Choose a connector**, search for **SharePoint**, and select the respective card.

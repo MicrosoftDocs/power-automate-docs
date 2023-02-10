@@ -31,7 +31,7 @@ Follow these steps to complete this tutorial.
 
    ![Incoming and reviewed invoices folders.](media/trigger-sharepoint-library/incoming.png)
 
-1. Go to the [Start an approval for new file to move it to a different folder](https://us.flow.microsoft.com/galleries/public/templates/d0ffe4d14c9c418e8f8ad49c3a6afcf6/start-an-approval-for-new-file-to-move-it-to-a-different-folder/) template. This template provides us a flow that's configured to setup an approval process for a SharePoint document library. Confirm that all the connections listed have a green check, and then select continue.  
+1. Go to the [Start an approval for new file to move it to a different folder](https://make.powerautomate.com/galleries/public/templates/d0ffe4d14c9c418e8f8ad49c3a6afcf6/start-an-approval-for-new-file-to-move-it-to-a-different-folder/) template. This template provides us a flow that's configured to setup an approval process for a SharePoint document library. Confirm that all the connections listed have a green check, and then select continue.  
   
    ![Document approval template.](media/trigger-sharepoint-library/template.png)
 

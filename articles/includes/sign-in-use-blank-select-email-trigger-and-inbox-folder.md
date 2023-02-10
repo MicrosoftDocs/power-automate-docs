@@ -1,4 +1,4 @@
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. On the left pane, go to **Create** > **Build your own**.
 

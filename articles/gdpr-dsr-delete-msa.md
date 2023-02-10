@@ -59,9 +59,9 @@ The steps below describe how to self-serve delete requests for GDPR.
 
 ### List and delete flows
 
-A user can list and delete their flows from [Power Automate](https://flow.microsoft.com) by following these steps:
+A user can list and delete their flows from [Power Automate](https://make.powerautomate.com) by following these steps:
 
-1. Sign in to the [Power Automate](https://flow.microsoft.com), and then select on **My flows**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and then select on **My flows**.
 
 1. Select **...** beside the flow that you're deleting, and then select **Delete**.
 
@@ -71,7 +71,7 @@ A user can list and delete their flows from [Power Automate](https://flow.micros
 
 Connectors use connections to communicate with APIs and SaaS systems. Connections include references to the user who creates them. The user can delete these references at any time by following these steps:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com), and go to **Data** > **Connections**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and go to **Data** > **Connections**.
 
 1. Select the connection that you'd like to delete, select **...**, and then **Delete**.
 
