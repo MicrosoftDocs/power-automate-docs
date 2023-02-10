@@ -91,7 +91,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 
 > [!IMPORTANT]
 >
-> - To apply this functionality, you need a [premium per-user plan with attended RPA](http://make.powerautomate.com/pricing/).
+> - To apply this functionality, you need a [premium per-user plan with attended RPA](https://make.powerautomate.com/pricing/).
 > - When you create a desktop flow connection, you allow Power Automate to create a Windows session on your machine to run your desktop flows. Make sure you trust co-owners of your flows before using your connection in a flow.
 
 ## Maintenance mode for machines

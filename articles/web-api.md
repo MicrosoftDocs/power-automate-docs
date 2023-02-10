@@ -277,7 +277,7 @@ Content-type: application/json
 
 ## Export flows
 
-Use the `ExportSolution` action to export flows to a .zip file. First, add the flows that you want to a [solution](http://make.powerautomate.com/blog/solutions-in-microsoft-flow/).
+Use the `ExportSolution` action to export flows to a .zip file. First, add the flows that you want to a [solution](https://make.powerautomate.com/blog/solutions-in-microsoft-flow/).
 
 Once your flow is in a solution, call the following action:
 

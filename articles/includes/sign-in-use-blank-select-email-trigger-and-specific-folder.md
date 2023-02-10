@@ -1,4 +1,4 @@
-1. Sign in to [Power Automate](http://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. On the left pane, select **My flows**.
 
