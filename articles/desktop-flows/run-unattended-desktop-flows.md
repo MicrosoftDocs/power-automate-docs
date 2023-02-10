@@ -4,7 +4,7 @@ description: See how to run unattended desktop flows on your device.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/09/2022
+ms.date: 02/10/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -22,6 +22,8 @@ search.audienceType:
 Power Automate uses the selected [desktop flow connection](desktop-flow-connections.md) to automatically sign in to your machine and run the unattended desktop flow. When the flow is complete, it signs out from the device and reports its activity.
 
 When running desktop flows in unattended mode, keep in mind that:
+
+- The **UIFlowService** service creates an RDP session on the machine to run unattended desktop flows. Connecting to the machine's console session isn't available.
 
 - Power Automate creates, manages, and then releases the Windows user session on the target devices.
 
