@@ -20,7 +20,7 @@ This article covers all the different ways in which you can send a message in Te
 
 For the purposes of this document, we're using a scenario where a flow is used to notify a Channel or a Group chat, but the same principles can be used to apply to any flow where the **Post a message in a chat or channel** is used.
 
-1. Sign in to [Power Automate](http://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 2. Select **My flows** > **New** > **Automated cloud flow**.
 3. Enter a name for your flow.
 4. Select the **When a file is created (properties only)** trigger.
