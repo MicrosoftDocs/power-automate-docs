@@ -175,10 +175,8 @@ To use the image in Power Automate, you need to share the image with Power Autom
 4. Select the role **Reader** and search for the Hosted machine group application: **Power Automate Hosted Machine Groups**. This will allow our service to access the image to create the Hosted machine group.
 
 > [!NOTE]
-> If you cannot find the application above, you will need to verify if the application exists in your tenant and provision it if necessary.
-> To verify that the application exists, go to [Azure portal](https://portal.azure.com/) > **Azure Active Directory** > **Enterprise applications** > **All applications**.
-> Search for application id: 51699864-8078-4c9e-a688-09a1db1b2e09
-> If you cannot find the application, you will need to provision it using the following command:
+> If you can't find the application above, verify that the application exists in your tenant and provision it if necessary.
+> To verify that the application exists, go to [Azure portal](https://portal.azure.com/) > **Azure Active Directory** > **Enterprise applications** > **All applications**, and search for application id: **51699864-8078-4c9e-a688-09a1db1b2e09**. If you can't find the application, provision it using the following command:
 > ```
 > az ad sp create --id 51699864-8078-4c9e-a688-09a1db1b2e09
 > ```
