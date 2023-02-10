@@ -23,7 +23,7 @@ Power Automate uses the selected [desktop flow connection](desktop-flow-connecti
 
 When running desktop flows in unattended mode, keep in mind that:
 
-- The **UIFlowService** service creates an RDP session on the machine to run unattended desktop flows. Connecting to the machine's console session isn't available.
+- Power Automate creates a remote desktop (RDP) session on the machine to run unattended desktop flows. Connecting to the machine's console session isn't available for unattended runs.
 
 - Power Automate creates, manages, and then releases the Windows user session on the target devices.
 
