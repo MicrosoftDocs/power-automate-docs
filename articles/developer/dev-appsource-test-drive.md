@@ -27,7 +27,7 @@ Building an app for a Test Drive solution is just like building any app, but you
 Once you have a data source that you can grant the user read-only access to, you can embed Power Automate into your application. [Read more about embedding here](embed-flow-dev.md). You will likely want to use the search functionality to highlight templates that are unique to your application. For example, if your application creates data in Dynamics 365, you can highlight a Dynamics 365 template that pulls data and then sends an email to the user. 
 
 ## How do I list my Test Drive solution on AppSource.com?
-Now that your app is ready, it's time to publish it to AppSource.com. In order to start this process, please complete the [application form](https://flow.microsoft.com/partners/get-listed/) on flow.microsoft.com. Once you apply you will receive an email with instructions on how to submit your app to be published on AppSource.com.
+Now that your app is ready, it's time to publish it to AppSource.com. In order to start this process, please complete the [application form](https://make.powerautomate.com/partners/get-listed/). Once you apply you will receive an email with instructions on how to submit your app to be published on AppSource.com.
 
 
 

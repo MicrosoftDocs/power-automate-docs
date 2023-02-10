@@ -49,7 +49,7 @@ This article shows you how to:
 
 ## Create a custom connector
 
-1. Sign into [Power Automate](https://flow.microsoft.com/).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 
 1. Expand **Data**, and then select **Custom connectors**.
 
@@ -131,7 +131,7 @@ Some common approval triggers are:
 
 Now that you've created your custom connector, it's time to create your approval flow that uses the custom connector.
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 
 1. Select **My flows**.
 

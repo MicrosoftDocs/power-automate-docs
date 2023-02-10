@@ -116,14 +116,14 @@ When you need help, you can use our **Self Help** options, or you can **Ask for 
 
 ### Self help 
 
-1. Go to the [support site](https://flow.microsoft.com/support/).
+1. Go to the [support site](https://make.powerautomate.com/support/).
 1. Go to the **Self Help** category and select one of the self-help options.
 
     ![A screenshot that displays the self-help option.](media/fix-flow-failures/self-help-section.png)
 
 ### Ask for help from others
 
-1. Go to the [support site](https://flow.microsoft.com/support/).
+1. Go to the [support site](https://make.powerautomate.com/support/).
 1. Select **Contact Support** in the **Ask for help** section.
     
     ![Ask for help section. Contact support.](media/fix-flow-failures/ask-for-help.png)

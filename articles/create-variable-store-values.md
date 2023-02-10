@@ -35,7 +35,7 @@ When you reference a variable, use the variable's name as the token, not the act
 
 ## Prerequisites
 
-* Access to [Power Automate](https://powerautomate.com).
+* Access to [Power Automate](https://make.powerautomate.com).
 
 * A cloud flow in which you want to create the variable.
 

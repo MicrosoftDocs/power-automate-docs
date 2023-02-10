@@ -46,7 +46,7 @@ This diagram shows the details of the flow we'll create.
 
 Here are the requirements for successfully performing the steps in this tutorial.
 
-* An account that's registered to use [Power Automate](https://flow.microsoft.com).
+* An account that's registered to use [Power Automate](https://make.powerautomate.com).
 * A Microsoft 365 Outlook account.
 * The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 * Connections to Microsoft 365 Outlook and the push notification service.
@@ -55,7 +55,7 @@ Here are the requirements for successfully performing the steps in this tutorial
 
 ## Create a cloud flow
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **My flows** > **New flow** > **Scheduled cloud flow**.
 1. In the **Flow name** field, enter a name for your flow.
 1. In the **Starting** fields, select the date and time to indicate when the flow should start running.
@@ -162,7 +162,7 @@ Next, you'll define what should happen if the search condition (the email was se
 
 1. Send yourself a high-importance email that includes **meet now** in the subject. Alternatively, you can have someone in your organization send you such an email.
 1. Confirm the email is in your inbox and it's unread.
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. Select **My flows**. A list of your flows displays.
 1. Place a check in the circle for the flow you just created to select it.
 1. Select the **Run** icon to the right of the flow name.
