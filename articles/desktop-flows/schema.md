@@ -4,7 +4,7 @@ description: Learn about the Power Automate v2 schema.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 02/06/2023
+ms.date: 02/10/2023
 ms.author: dbekirop
 ms.reviewer: gtrantzas
 contributors:
@@ -30,6 +30,14 @@ V2 schema is applied at the environment level, and you can manage it through the
 ## Manage desktop flows in environments with the v2 schema enabled
 
 Power Automate desktop flows currently stored in the v1 schema will continue functioning as intended in environments where the v2 schema is enabled. New, modified, and resaved desktop flows will be stored in the v2 schema.
+
+## Roll back a converted desktop flow
+
+Power Automate for desktop version 2.29 or later will enable organizations that moved ahead with the v2 schema implementation to roll back until the v1 schema becomes deprecated.
+
+You can roll back a desktop flow converted to the v2 schema by resaving the desktop flow to an environment where the PPAC administrator has the feature disabled. 
+
+For most scenarios, there is no need to downgrade your version of Power Automate for desktop. However, desktop flows that will use future v2-related features that aren't supported by the v1 schema won't be able to roll back.
 
 ## Limitations of v2 schema desktop flows
 
