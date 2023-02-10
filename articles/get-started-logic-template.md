@@ -25,7 +25,7 @@ ms.custom: intro-internal
 ---
 # Create a cloud flow from a template in Power Automate
 
-A good way to get started is to use a template that is suited to your organization's scenario. You can choose from a collection of templates to find the one that best matches your scenario. Search [all templates](https://flow.microsoft.com/templates/) or browse by category to find your scenario, and then follow the steps in the template to create a cloud flow from the template.
+A good way to get started is to use a template that is suited to your organization's scenario. You can choose from a collection of templates to find the one that best matches your scenario. Search [all templates](https://make.powerautomate.com/templates/) or browse by category to find your scenario, and then follow the steps in the template to create a cloud flow from the template.
 
 The following video gives insights into using templates to create your flows.
 
@@ -44,13 +44,13 @@ Here, we'll follow an example that uses a template to create a flow that sends y
 
 To complete this example, you'll need accounts with access to the following:
 
-- [Power Automate](https://flow.microsoft.com).
+- [Power Automate](https://make.powerautomate.com).
 - Slack.
 - Microsoft 365.
 
 ## Choose a template
 
-1. Sign into [Power Automate](https://flow.microsoft.com), and then select **Templates** in the left-side navigation pane.
+1. Sign into [Power Automate](https://make.powerautomate.com), and then select **Templates** in the left-side navigation pane.
 1. Use the search bar to search for **slack manager** to find the **Send a message on Slack when my manager emails me** template, and then select it.
 1. If you aren't signed into Office or Slack, select **Sign in** and then follow the prompts.
 1. After you confirm your connections, select **Continue**.

@@ -30,7 +30,7 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 
 ## Prerequisites
 
-* An account on [flow.microsoft.com](https://flow.microsoft.com)
+* An account on [make.powerautomate.com](https://make.powerautomate.com)
 * A Twitter account
 * Office 365 credentials
 
@@ -38,7 +38,7 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 
 First, you will need to select what event, or *trigger*, starts your flow.
 
-1. In [Power Automate](https://flow.microsoft.com), select **My flows** from the navigation bar on the left.
+1. In [Power Automate](https://make.powerautomate.com), select **My flows** from the navigation bar on the left.
 
 1. Select **New**, and then select **Automated-from blank**. 
 
@@ -112,7 +112,7 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 
 ## Manage a cloud flow
 
-1. In [Power Automate](https://flow.microsoft.com), select **My flows** in the navigation bar on the left side.
+1. In [Power Automate](https://make.powerautomate.com), select **My flows** in the navigation bar on the left side.
 1. In the list of flows, do any of the following:
 
    * To pause a cloud flow, set its toggle to **Off**.
