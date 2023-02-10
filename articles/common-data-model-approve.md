@@ -45,11 +45,7 @@ By following the steps in this section, you'll build:
 
 1. In the left navigation bar, select **Tables**.
 
-    :::image type="content" source="media/common-data-model-approve/tables-menu.png" alt-text="Screenshot of the Tables option in the Power Apps navigation menu.":::
-
 1. Select **New table** and then **New table**.
-
-    :::image type="content" source="media/common-data-model-approve/new-table.png" alt-text="Screenshot of the option to create a new table.":::
 
 1. Specify a display name and a plural name for the new table. In this example, both names are **ReviewDropboxFiles**. Optionally, you can add a description.
 
@@ -97,8 +93,6 @@ By following the steps in this section, you'll build:
 1. In the top right menu, select the environment in which you created the database. If you don't select the same environment, you won't see your table.
 
 1. Go to **My flows** and select **New flow** > **Automated cloud flow**.
-
-    :::image type="content" source="media/common-data-model-approve/create-cloud-flow.png" alt-text="Screenshot of the option to create a new cloud flow.":::
 
 ## Start when a file is added
 
@@ -204,8 +198,6 @@ By following the steps in this section, you'll build:
 1. Sign in to [powerapps.com](https://make.powerapps.com).
 
 1. Go to the **Create** page and then select **Dataverse**.
-
-    :::image type="content" source="media/common-data-model-approve/create-app-dataverse.png" alt-text="Screenshot of the option to create an app from Dataverse.":::
 
 1. Select your Dataverse connection, and then the **ReviewDropboxFiles** table.
 
