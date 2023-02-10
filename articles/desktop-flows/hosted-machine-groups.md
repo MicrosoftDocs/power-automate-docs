@@ -76,7 +76,7 @@ To create a hosted machine group, you need access to the default VM image that i
 
 ### Share the default image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to  **Monitor** > **Machines** > **VM images (preview)**.
 
@@ -97,7 +97,7 @@ To create a hosted machine group, you need access to the default VM image that i
 
 To create a hosted machine group:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -196,7 +196,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 ### Add a new custom VM image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -216,7 +216,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 ### Share the image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines** > **VM images (preview)**.
 
@@ -239,7 +239,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 Once you've created your hosted machine group in an environment, you can view its details in the Power Automate portal.
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Go to **Monitor** > **Machines**.
 1. Select **Machine groups**.
 
@@ -269,7 +269,7 @@ Selecting a hosted machine group in the list will take you to the machine group'
 
 You can share your hosted machine groups with other users so they can create connections and run desktop flows on them. To share a hosted machine group:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select **Monitor** > **Machines**.
 
@@ -310,7 +310,7 @@ After this process, new bots will spawn to run desktop flows in the queue as eff
 
 To monitor your bots:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -336,7 +336,7 @@ One key feature of hosted machine groups is the ability to reassign them to diff
 
 For instance, you may have two groups of bots, one for your sales automations and one for finance, in the same environment with 10 bots assigned. You can add more to one of the groups at any time by editing the hosted machine group and using the max number of available bots.
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select **Monitor** > **Machines**.
 

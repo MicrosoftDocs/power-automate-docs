@@ -69,7 +69,7 @@ Let's create the flow.
 
 ### Start with a blank flow
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](http://make.powerautomate.com).
 
 1. On the left pane, select **My flows**.
 

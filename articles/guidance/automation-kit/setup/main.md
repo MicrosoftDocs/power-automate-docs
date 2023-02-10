@@ -47,7 +47,7 @@ Once the environment is created, enable the Power Apps component framework.
 Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-kit/overview).
 
 1. Download the [Power Platform Creator Kit](https://aka.ms/creatorkitdownload).
-1. Go to [flow.microsoft.com](https://flow.microsoft.com/).
+1. Go to [Power Automate](https://make.powerautomate.com).
 1. Go to the environment you just created in which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Main**.
 1. On the left pane, select **Solutions**.
 1. Select **Import**, and then select **Browse**.
@@ -76,7 +76,7 @@ In new environments, Power Automate approvals functionality isn't configured by 
 
 This process usually takes 5-10 minutes. So, you can easily do this step while the main solution is being imported.
 
-1. Go to [flow.microsoft.com](https://flow.microsoft.com/). (This is where the main solution is being imported.)
+1. Go to [Power Automate](https://make.powerautomate.com). (This is where the main solution is being imported.)
 1. Select the **My flows** tab on the left > **New flow** > **Instant cloud flow**.
 1. Under the button trigger, add the **Start and wait for approval** action to the flow.
 1. Fill in your details to trigger the flow.
@@ -113,7 +113,7 @@ Import all the desktop flow actions from the csv file into the **Desktop Flow Ac
 
 This must be done for all environments in which the Automation Kit is installed, such as main and all satellites.
 
-1. Sign in to [Power Automate](https://flow.microsoft.com) with your account.
+1. Sign in to [Power Automate](https://make.powerautomate.com) with your account.
 1. Go to your environment where the solution is installed.
 1. Select the **Solutions** tab.
 1. Find and then select the Automation COE Main solution.
