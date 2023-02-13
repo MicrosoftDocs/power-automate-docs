@@ -69,11 +69,11 @@ The assembled team of IT system administrators needs to review the following req
 - [SAP Connector for Microsoft .NET 3.0 (NCo 3.0)](https://support.sap.com/en/product/connectors/msnet.html) SDK from SAP:
   - An administrator with valid S-User access is required to set up the connector.
   - Select **NCo 3.0 compiled with .NET Framework 4.0 - SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64), July 20, 2022 (ZIP archive, 7,126 KB)**.
-- [Azure Active Directory (AD)](/azure/active-directory/). [Set up a new Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant). It's important to consider:
+- [Azure Active Directory (AD)](/azure/active-directory/). [Set up a new Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant) or reconfigure an existing tenant to meet the requirements. It's important to consider:
   
   - The tenant has at least 1 GB of database storage capacity available for the environments within it.
   - Set up requires an Azure AD Global administrator to set up the necessary [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference#global-administrator) and to [configure the Power Platform admin portal](/power-platform/admin/wp-work-with-admin-portals) so gateways, tenants, environments, and user access can be managed.
-- [Azure AD single sign-on (SSO) for gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway). Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO.
+- [Azure AD single sign-on (SSO) for gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway). Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO. You can also reconfigure an existing tenant to meet the requirements.
   
 > [!IMPORTANT]
 >
@@ -220,7 +220,7 @@ Follow the directions in [Create and manage an environment](/power-platform/admi
 
 1. Select **Sandbox** for environment type.
 1. Select **Yes** to create a database for the environment.
-1. Set [data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention) for tenants and environments to establish guardrails that protect your organization's data.
+1. Set [data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention) for new or existing tenants and environments to establish guardrails that protect your organization's data.
 
 More information: [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
