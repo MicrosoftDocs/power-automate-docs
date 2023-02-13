@@ -75,11 +75,11 @@ Follow these steps to verify if your connections are broken:
 ### Verify if the flow uses a premium connector trigger
 
 1. Edit your flow to find the connector name for the trigger.
-1. Go to the [list of connectors](https://flow.microsoft.com/connectors) and then search for that connector. If the connector is a premium connector, **PREMIUM** displays below the name of the connector.
+1. Go to the [list of connectors](https://make.powerautomate.com/connectors) and then search for that connector. If the connector is a premium connector, **PREMIUM** displays below the name of the connector.
 
    ![A screenshot of a premium connector.](./media/triggers-introduction/premium-connector.png)
 
-A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. You can [purchase licenses](https://flow.microsoft.com/pricing) at any time.
+A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. You can [purchase licenses](https://make.powerautomate.com/pricing) at any time.
 
 ### Check your license type
 
@@ -216,22 +216,6 @@ If it is taking much longer than expected for your flow to trigger, here are the
 
 2. There was a communication issue that prevents Power Automate from reacting to trigger events. Potentially, because of a service outage, policy change, password expiry, and so on, that caused the delay. You can view [Help + support](https://admin.powerplatform.microsoft.com/support) to find out if there are any active outages. You can also clear the cache of the browser and then retry.
 
-## Dynamics 365 connector trigger issues
-
-There's a delay - [Dynamics 365](/connectors/dynamicscrmonline/) connector triggers can take up to 2 hours to run. This connector is deprecated and our recommendation is to migrate your flows that use [Microsoft Dataverse](/connectors/commondataservice/).
-
-My flow is not listed - The Power Automate menu only lists flows that begin with the **When a row is added, modified or deleted** trigger and contain at least one trigger or action that references that table. Flows that contain other types of triggers (automatic, scheduled, etc.) will not be listed in Dynamics 365.
-
-You can also access these flows in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments):
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments).
-1. Select **Environments**.
-1. Select that environment that contains the flow.
-1. Select **Flows** under the **Resources** section.
-
->[!IMPORTANT]
->You must enable [Power Automate](/power-platform/admin/enable-embedded-flow-in-your-organization#enable-or-disable-power-automate-in-your-organization) before you can find these flows.
-
 ## Power Apps trigger issues
 
 <!--todo: steps are not clear-->
@@ -259,7 +243,7 @@ You can try one of the following:
 
    A Power Automate license is required for the user to perform any actions like save, turn off, etc. A Power Apps, Dynamics 365, or Microsoft 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate **Per User** or **Per Flow** license to edit or manually trigger the flow. If the user was previously able to save or modify the flow, it's possible that their license has expired.
 
-   Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run or edit flows that use premium connectors. See the [licensing page](https://flow.microsoft.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
+   Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run or edit flows that use premium connectors. See the [licensing page](https://make.powerautomate.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
 
 ### My flows don't trigger after I change the environment URL
 
