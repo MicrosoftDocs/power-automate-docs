@@ -4,7 +4,7 @@ description: This article describes how to use a mass deployment tool that allow
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 02/08/2023
+ms.date: 02/13/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -125,8 +125,10 @@ To join a group silently with the service principal account, use the join group 
 ![Screenshot of the environment ID in the Power Automate portal URL.](./media/machines-silent-registration/environment-id.png)
 
 ```CMD
-.\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+.\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid
 ```
+> [!NOTE]
+> To use an Azure Active Directory account, specify the username: -username [UPN] instead of service principal account arguments.
 
 ## Secure input
 
