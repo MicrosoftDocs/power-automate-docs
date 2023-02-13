@@ -220,7 +220,7 @@ Follow the directions in [Create and manage an environment](/power-platform/admi
 
 1. Select **Sandbox** for environment type.
 1. Select **Yes** to create a database for the environment.
-1. Restrict environment access by selecting the newly created Azure AD tenant as the security group. This action will ensure that only the resources in that tenant have access to the environment.
+1. Set [data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention) for tenants and environments to establish guardrails that protect your organization's data.
 
 More information: [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy)
 
