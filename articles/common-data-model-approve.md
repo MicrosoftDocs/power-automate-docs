@@ -110,7 +110,7 @@ By following the steps in this section, you'll build:
 7. (optional) When the list of tables reappears, maximize your browser window if it isn't already maximized, and then click or tap the **Type** column header. The list is sorted with the custom tables, such as the one you just created, appearing at the top.
 
 ## Sign in and create a cloud flow
-1. Open the [Power Automate portal](https://flow.microsoft.com).
+1. Open the [Power Automate portal](https://make.powerautomate.com).
 2. Maximize your browser window if it isn't already maximized, and then click or tap **Sign in** near the upper-right corner.
    
     ![Sign-in button for Power Automate.](./media/common-data-model-approve/signin-flow.png)

@@ -30,7 +30,7 @@ View a summary of how many times each flow succeeded or failed today, yesterday,
 **Prerequisites**
 
 * Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the graphics on Android and Windows Phone are similar.
-* If you don't already have a cloud flow, create one on [the website for Power Automate](https://flow.microsoft.com/). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
+* If you don't already have a cloud flow, create one on [the website for Power Automate](https://make.powerautomate.com). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
 The flow in this tutorial runs when you receive mail from a specific address:
 

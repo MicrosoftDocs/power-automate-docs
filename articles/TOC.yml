@@ -32,8 +32,6 @@
       href: create-cloud-flow-from-description.md
     - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
-    - name: Create a cloud flow with Dynamics 365
-      href: connection-dynamics365.md
     - name: Create a cloud flow with OneDrive for Business
       href: onedrive-business-launch-panel.md
     - name: Filter and copy data
@@ -1053,8 +1051,8 @@
   - name: Webinars
     href: webinars.md
   - name: Blog
-    href: https://flow.microsoft.com/blog/
+    href: https://make.powerautomate.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
   - name: Support
-    href: https://us.flow.microsoft.com/support/
+    href: https://make.powerautomate.com/support/

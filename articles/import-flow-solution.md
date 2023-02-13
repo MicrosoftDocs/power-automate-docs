@@ -31,7 +31,7 @@ search.audienceType:
 
 After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution.
 
-1. Sign into [Power Automate](https://powerautomate.com), and then select **Solutions** from the navigation bar on the left side of the screen.
+1. Sign into [Power Automate](https://make.powerautomate.com), and then select **Solutions** from the navigation bar on the left side of the screen.
 
    ![A image showing "Solutions" selected in the navigation bar](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
