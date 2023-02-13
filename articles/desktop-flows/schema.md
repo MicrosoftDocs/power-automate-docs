@@ -24,7 +24,7 @@ The new Dataverse storage schema enables future product enhancements in desktop 
 
 There's no immediate need to act, although it's recommended to enable future product enhancements. Before enabling the new schema, ensure that users and unattended runtime machines have been updated to the appropriate Power Automate for desktop version.
 
-Power Platform administrators can choose when to enable the v2 storage schema. To enable it, use the **Enable storage of desktop flow files into v2 schema** toggle in the **Environments** page of the Power Platform Admin Center. This setting applies at the environment level.
+Power Platform administrators can choose when to enable the v2 storage schema. To enable it, use the **Enable storage of desktop flow files into v2 schema** toggle in the **Environments** page of the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com). This setting applies at the environment level.
 
 :::image type="content" source="media/schema/schema-v2-option.png" alt-text="The option in the Power Platform Admin Center to enable the new schema.":::
 
