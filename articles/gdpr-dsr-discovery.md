@@ -33,7 +33,7 @@ Below is a summary of the types of Power Automate resources that contain persona
 |**Resources containing personal data**|**Purpose**|
 |-----|-----|
 |System-generated logs|Telemetry that captures system events and history.|
-|Run history|The history of each flow execution for the past 28 days. This data includes the start time, end time, status, and all input/output information for the flow. [Learn more](https://flow.microsoft.com/blog/download-history-recurrence/)|
+|Run history|The history of each flow execution for the past 28 days. This data includes the start time, end time, status, and all input/output information for the flow. [Learn more](https://make.powerautomate.com/blog/download-history-recurrence/)|
 |Activity feed| Provides a recap of flow activities, including run status, failures, and notifications.|
 |User jobs|Not seen to the user, system jobs that run on behalf of a user in order for flows to execute.|
 |Flows|The workflow logic that exists for a cloud flow. [Learn more](./get-started-logic-flow.md)|

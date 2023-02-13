@@ -62,7 +62,7 @@ By default, Power Automate for desktop honors the proxy settings specified in Wi
 
     - Open a browser and go to [this Microsoft Store page](https://www.microsoft.com/store/productId/9NFTCH6J7FHV). Then, select **Get in Store app** to launch Microsoft Store on your device.
 
-    - Go to the [Power Automate product page](https://flow.microsoft.com/desktop/) and select the appropriate option for installing.
+    - Go to the [Power Automate product page](https://make.powerautomate.com/desktop/) and select the appropriate option for installing.
 
 1. After Microsoft Store is open, select **Get** to download and install Power Automate.
 

@@ -88,14 +88,14 @@ You can find a list of the Office 365 and Dynamics 365 licenses in the [Microsof
 
 Use one of the following options to get started creating approval flows.
   
-- Use an existing template&mdash;You can search the list of [approvals templates](https://flow.microsoft.com/search/?category=Approval) for your scenario, and then follow steps to create a flow that suits your needs. 
+- Use an existing template&mdash;You can search the list of [approvals templates](https://make.powerautomate.com/search/?category=Approval) for your scenario, and then follow steps to create a flow that suits your needs. 
 
 - Tweak an existing template&mdash;If one of the existing templates is similar, but doesn't fit your needs precisely, create a flow from that template and then tweak the flow to your liking. 
 
    After you create a flow from a template, it's yours to modify or extend. Do this by adding, editing, or removing triggers and actions. 
    
    >[!TIP]
-   >You can [copy and paste](https://flow.microsoft.com/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) actions in the same flow or across flows to speed up the editing process.
+   >You can [copy and paste](https://make.powerautomate.com/blog/introducing-clipboard-in-flow-designer-and-three-new-user-experience-updates/) actions in the same flow or across flows to speed up the editing process.
 
 - Create an approval flow from scratch&mdash;If you can't find a suitable template, you can create a flow from scratch and then connect it to the services and the approvals you need by using the approvals actions. Learn [how to create a flow from scratch](./get-started-logic-flow.md).  
 

@@ -81,7 +81,7 @@ Explore the topics in [Process mining (preview)](process-mining-overview.md) a
 
 Process advisor is licensed as part of Power Automate per-user licenses. If you don’t have a license, you can start a Power Automate trial to try process advisor. The per-user licenses enable users to analyze task mining processes and view their analytics. Other actions such as contributing recordings and setting up process mining processes don't need the Power Automate per-user licenses.
 
-For more information about process advisor licensing, go to [Power Automate pricing](https://us.flow.microsoft.com/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
+For more information about process advisor licensing, go to [Power Automate pricing](https://make.powerautomate.com/pricing/) and [Power Apps and Power Automate licensing FAQ](/power-platform/admin/powerapps-flow-licensing-faq).
 
 For complete licensing details, go to the [Microsoft Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/?LinkId=2085130).
 

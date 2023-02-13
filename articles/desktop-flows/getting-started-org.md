@@ -33,7 +33,7 @@ If you currently use Power Automate with a work or school account or your licens
 
 ## Creating a flow
 
-1. Begin by visiting [https://flow.microsoft.com/](https://flow.microsoft.com/) and entering your credentials; then, navigate to **My flows**, and create a new **Desktop flow**.
+1. Begin by going to [Power Automate](https://make.powerautomate.com) and entering your credentials; then, navigate to **My flows**, and create a new **Desktop flow**.
 
     ![Screenshot of the option to create a new desktop flow through the portal.](media\getting-started-org\create-new-desktop-flow.png)
 

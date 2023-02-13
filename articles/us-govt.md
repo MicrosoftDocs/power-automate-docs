@@ -64,7 +64,7 @@ Access to Power Automate US Government plans is restricted to the offerings desc
 
 - In addition to the standalone plans, Microsoft 365 US Government and Dynamics 365 US Government plans also include the Power Apps and Power Automate capabilities, allowing customers to extend and customize Microsoft 365 and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation). 
 
-Additional information and details regarding the differences in functionality between these groups of licenses are described in more detail here: [Power Automate licensing information](https://flow.microsoft.com/pricing/).
+Additional information and details regarding the differences in functionality between these groups of licenses are described in more detail here: [Power Automate licensing information](https://make.powerautomate.com/pricing/).
 
 Power Automate US Government is available through the Volume Licensing and Cloud Solution Provider purchasing channels. The Cloud Solution Provider program is not currently available for GCC High customers.
 

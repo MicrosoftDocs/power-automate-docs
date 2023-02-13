@@ -43,7 +43,7 @@ Trigger your flows by pressing a bttn (a physical button made by [The Button Cor
 You can also trigger a cloud flow by using a [Flic physical button](flic-button-flows.md).
 
 ## Prerequisites
-* Access to [Power Automate](https://flow.microsoft.com).
+* Access to [Power Automate](https://make.powerautomate.com).
 * At least one [registered bttn](https://my.bt.tn/).
 
 ## Create a cloud flow that's triggered from a bttn
@@ -62,7 +62,7 @@ The settings for your bttn should resemble this example (from the bttn website):
 Now that you've registered and configured your bttn, let's get started creating our flow.
 
 ### Sign in and select a template
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
    
     ![sign in.](./media/bttn-button-flows/sign-into-flow.png)
    

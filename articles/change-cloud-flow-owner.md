@@ -31,7 +31,7 @@ Follow these steps to change the owner of a flow.
 >To perform this action, the flow must be referenced in a solution.
 
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. On the left pane, select **Solutions**.
 
