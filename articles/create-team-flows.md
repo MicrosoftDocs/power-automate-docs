@@ -11,10 +11,10 @@ tags: ''
 
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/28/2022
+ms.date: 02/01/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -31,9 +31,12 @@ Share a cloud flow with others in your organization so they can also benefit fro
 - Share a cloud flow with run-only privileges.
 - Share a copy of a cloud flow.
 
+> [!IMPORTANT]
+> You can't share cloud flows with guest users in your tenant.
+
 ## Prerequisites
 
-- You must have either a [Power Automate license (except the free license)](https://flow.microsoft.com/pricing/) or a seeded license (Office 365, Dynamics 365 Enterprise plans, Dynamics 365 Professional plans, Dynamics 365 Team Member, Power Apps (Canvas and Model driven Apps)- Per App plans, Power Apps per user plan, Power Apps Plan 1 (grandfathered), Power Apps Plan 2 (grandfathered), Windows licenses) to share a cloud flow.
+- You must have either a [Power Automate license (except the free license)](https://make.powerautomate.com/pricing/) or a seeded license (Office 365, Dynamics 365 Enterprise plans, Dynamics 365 Professional plans, Dynamics 365 Team Member, Power Apps (Canvas and Model driven Apps)- Per App plans, Power Apps per user plan, Power Apps Plan 1 (grandfathered), Power Apps Plan 2 (grandfathered), Windows licenses) to share a cloud flow.
 - You must be the creator or owner to add or remove owners from a cloud flow.
 
 ### About embedded and other connections
@@ -71,7 +74,7 @@ Owners can use services in a cloud flow but can't modify the credentials for a c
 <!--markdownlint-disable MD036-->
 **To add more owners to a cloud flow**
 
-1. Sign in to [Power Automate](https://flow.microsoft.com), and then select **My flows**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and then select **My flows**.
 1. Select the flow that you want to share, select **More commands** ![More commands.](./media/create-team-flows/more-commands.png), and then select **Share**.
   
     ![Select Share from More commands.](./media/create-team-flows/addowner1.png "Select Share from More commands")

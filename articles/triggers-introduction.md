@@ -75,7 +75,7 @@ If you'd like to create a cloud flow that performs tasks automatically after an 
 
 ## Licensing for premium connectors
 
-You need a standalone [Power Apps license](/powerapps.microsoft.com/pricing/) or [Power Automate license](https://flow.microsoft.com/pricing/) to access all premium, on-premises, and custom connectors. Microsoft 365 plan licensees can use standard connectors but cannot use premium connectors.
+You need a standalone [Power Apps license](/powerapps.microsoft.com/pricing/) or [Power Automate license](https://make.powerautomate.com/pricing/) to access all premium, on-premises, and custom connectors. Microsoft 365 plan licensees can use standard connectors but cannot use premium connectors.
 
 Here's a screenshot that displays some of the premium connectors that are available in Power Automate.
 
@@ -83,7 +83,7 @@ Here's a screenshot that displays some of the premium connectors that are availa
 
 Follow these steps to find your license.
 
-1. Go to [Power Automate](https://powerautomate.com/)
+1. Go to [Power Automate](https://make.powerautomate.com)
 
 1. Select **My flows**.
 

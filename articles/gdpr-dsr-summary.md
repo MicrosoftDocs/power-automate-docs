@@ -34,7 +34,7 @@ Users and administrators can perform the actions outlined in this article.
 
 ### Users
 
-A user needs to have an active Azure Active Directory account with a [Power Automate license](https://flow.microsoft.com/pricing/). Users who do not meet this requirement need to ask an administrator to perform these actions.
+A user needs to have an active Azure Active Directory account with a [Power Automate license](https://make.powerautomate.com/pricing/). Users who do not meet this requirement need to ask an administrator to perform these actions.
 
 ### Administrators
 

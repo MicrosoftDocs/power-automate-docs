@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/connection-dynamics365.md",
+      "redirect_url": "dataverse/overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/process-mining-auto-rec.md",
       "redirect_url": "process-mining-overview",
       "redirect_document_id": "false"
@@ -563,6 +568,11 @@
     {
       "source_path": "articles/desktop-flows/run-pad-flow.md",
       "redirect_url": "/power-automate/desktop-flows/trigger-desktop-flows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/release-notes.md",
+      "redirect_url": "/dynamics365/release-plans",
       "redirect_document_id": false
     },
     {

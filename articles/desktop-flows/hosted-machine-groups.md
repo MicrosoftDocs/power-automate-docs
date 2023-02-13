@@ -57,7 +57,7 @@ To use hosted machine group, you need one of the following licensing options:
 
 - Use the 90-days self-assisted premium trial.
 
-    Trial users can create up to 10 hosted machine groups and have up to two bots running in parallel in a given environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](http://make.powerautomate.com/).
+    Trial users can create up to 10 hosted machine groups and have up to two bots running in parallel in a given environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
 ## Prerequisites
 
@@ -76,7 +76,7 @@ To create a hosted machine group, you need access to the default VM image that i
 
 ### Share the default image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to  **Monitor** > **Machines** > **VM images (preview)**.
 
@@ -97,7 +97,7 @@ To create a hosted machine group, you need access to the default VM image that i
 
 To create a hosted machine group:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -132,19 +132,13 @@ To create a hosted machine group:
 Bots in a hosted machine group are created when needed. Whenever a desktop flow waits in the queue and no bot is available, a bot is created automatically. A bot is created as long as the maximum number of bots for this group isn't reached and you've enough unattended add-ons assigned to your environment. You can find more information about licensing requirements in [Licensing requirements](#licensing-requirements).
 
 > [!NOTE]
-> If the hosted machine group has just been created or hasn't been used for more than 24 hours, bots will be created before a run gets addressed from the queue. The creation of a bot can take more than 10 minutes depending on its configuration.
+> If the hosted machine group has just been created or hasn't been used for more than 3 hours, bots will be created before a run gets addressed from the queue. The creation of a bot can take more than 10 minutes depending on its configuration.
 
 ## Use custom VM images for your hosted machine groups
 
 You can personalize your hosted machine groups by providing your own Windows image directly from your Azure Compute Gallery. This feature allows you to have all your applications installed on your hosted machine group.
 
 ### Create an Azure compute gallery in Azure and add an image
-
-> [!IMPORTANT]
->
-> - During the preview, the gallery must be created as a private gallery. You can't use an existing gallery.
-> - You need to register to the [public preview program](https://aka.ms/directsharedgallery-preview).
-> - To find more information about shared image galleries, go to [Share a gallery with subscriptions or tenants](/azure/virtual-machines/share-gallery-direct).
 
 1. Go to the [Azure portal](https://portal.azure.com/).
 
@@ -168,15 +162,24 @@ You can personalize your hosted machine groups by providing your own Windows ima
     - Asia: East Asia
     - Norway: Norway East
 
-### Share the Azure compute gallery with Microsoft
+### Share the Azure compute gallery with Power Automate Hosted Machine Groups service principal
 
-To use the image in Power Automate, you need to share the image with Microsoft through the Azure portal.
+To use the image in Power Automate, you need to share the image with Power Automate through the Azure portal.
 
-1. In your gallery, go to the **Sharing** settings.
+1. In the [Azure portal](https://portal.azure.com/), go to your Azure Compute Gallery.
 
-2. Select **Add** and select **tenant outside of my organization** in the type list.
+2. Go to the **Access Control (IAM)** settings.
 
-3. Enter the following tenant ID: **975f013f-7f24-47e8-a7d3-abc4752bf346**. It's the Microsoft tenant on which your hosted machine groups are being deployed.
+3. Select **Add** > **Add role assignment**.
+
+4. Select the role **Reader** and search for the Hosted machine group application: **Power Automate Hosted Machine Groups**. This will allow our service to access the image to create the Hosted machine group.
+
+> [!NOTE]
+> If you can't find the application above, verify that the application exists in your tenant and provision it if necessary.
+> To verify that the application exists, go to [Azure portal](https://portal.azure.com/) > **Azure Active Directory** > **Enterprise applications** > **All applications**, and search for application id: **51699864-8078-4c9e-a688-09a1db1b2e09**. If you can't find the application, provision it using the following command:
+> ```
+> az ad sp create --id 51699864-8078-4c9e-a688-09a1db1b2e09
+> ```
 
 ### Share the gallery with Power Automate makers
 
@@ -196,7 +199,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 ### Add a new custom VM image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -216,7 +219,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 ### Share the image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines** > **VM images (preview)**.
 
@@ -239,7 +242,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 Once you've created your hosted machine group in an environment, you can view its details in the Power Automate portal.
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Go to **Monitor** > **Machines**.
 1. Select **Machine groups**.
 
@@ -269,7 +272,7 @@ Selecting a hosted machine group in the list will take you to the machine group'
 
 You can share your hosted machine groups with other users so they can create connections and run desktop flows on them. To share a hosted machine group:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select **Monitor** > **Machines**.
 
@@ -297,7 +300,6 @@ To find more information about triggering desktop flows from cloud flows, go to 
 > [!IMPORTANT]
 >
 > - Only direct connectivity connections are supported for hosted machine groups.
-> - Only local account credentials are currently supported. These are credentials that you provided upon the creation of the hosted machine group.
 > - Only available for [unattended run mode](./run-pad-flow.md#unattended-mode).
 > - Desktop flows targeting hosted machine groups aren't yet compatible with the **Test flow** feature. It's possible that you observe errors when trying to test your flow. This problem is due to the nature of the [machine groups availability](#hosted-machine-groups-availability). The scheduled test run will still be accessible from the flow run history.
 
@@ -305,13 +307,13 @@ To find more information about triggering desktop flows from cloud flows, go to 
 
 You can't directly access or sign in to your hosted machine groups. They're not persisted unless they're running desktop flows. Bots in a group are created based on the current size of the queue, the configuration of the group, and the licenses assigned to the current environment.
 
-For instance, if the hosted machine group is newly created or it wasn't used for more than 24 hours, new bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
+For instance, if the hosted machine group is newly created or it wasn't used for more than 3 hours, new bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
 
 After this process, new bots will spawn to run desktop flows in the queue as efficiently as possible.
 
 To monitor your bots:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -337,7 +339,7 @@ One key feature of hosted machine groups is the ability to reassign them to diff
 
 For instance, you may have two groups of bots, one for your sales automations and one for finance, in the same environment with 10 bots assigned. You can add more to one of the groups at any time by editing the hosted machine group and using the max number of available bots.
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select **Monitor** > **Machines**.
 
