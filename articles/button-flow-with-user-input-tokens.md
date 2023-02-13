@@ -33,7 +33,7 @@ You can create a button flow in the Power Automate website or the mobile app for
 * An account on the Power Automate website.
 
 ## Open the template
-1. Sign in to the [Power Automate website](https://flow.microsoft.com), enter **Visual Studio** in the search box, and then click or tap the search icon to find all templates that relate to Visual Studio:
+1. Sign in to the [Power Automate website](https://make.powerautomate.com), enter **Visual Studio** in the search box, and then click or tap the search icon to find all templates that relate to Visual Studio:
    
     ![Search for visual studio.](./media/button-flow-with-user-input-tokens/1.png)  
 2. Select the **Open a Priority 2 Bug in Visual Studio** template:

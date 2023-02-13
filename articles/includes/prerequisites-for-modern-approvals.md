@@ -1,4 +1,4 @@
-* [Power Automate](https://flow.microsoft.com).
+* [Power Automate](https://make.powerautomate.com).
 * A SharePoint Online list.
 * Office 365 Outlook and Office 365 Users account.
 

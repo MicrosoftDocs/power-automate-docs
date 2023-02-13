@@ -30,10 +30,12 @@ ms.custom: intro-internal
 Welcome! What can you expect from Power Automate? Here are a few examples of what you can do with Power Automate.
 
 * Automate business processes
+* Orchestrate processes end-to-end and trigger microservices
 * Send automatic reminders for past due tasks
 * Move business data between systems on a schedule
 * Connect to more than 500 data sources or any publicly available API
-* You can even automate tasks on your local computer like computing data in Excel. 
+* Use process mining to identify bottlenecks and opportunities for automation
+* You can even automate tasks on your local computer like computing data in Excel
 
 Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
 
@@ -60,7 +62,7 @@ Check out how some companies implemented Microsoft Power Platform solutions usin
 Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
 
 
-The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://flow.microsoft.com/signin).
+The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://make.powerautomate.com/signin).
 
 ## What are the different types of flows?
 
@@ -68,13 +70,13 @@ Visit the [flow types](flow-types.md) article to learn more about the different 
 
 ## Check out the start page
 
-[On the start page](https://flow.microsoft.com) for Power Automate, you can [explore a diverse set of templates](https://flow.microsoft.com/templates) and learn about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
+[On the start page](https://make.powerautomate.com) for Power Automate, you can [explore a diverse set of templates](https://make.powerautomate.com/templates) and learn about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
 
 Each template is designed for a specific purpose. For example, there are templates for sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg. They're intended to inspire you to create customized flows for the exact processes you need.
 
 ## Create your first flow
 
-1. Select a template that's useful for you. A simple template is [**Notify and Email when a new file is uploaded to OneDrive**](https://flow.microsoft.com/galleries/public/templates/ef6bf28037ca11e7870df906aa521b7a/notify-and-email-when-a-new-file-is-uploaded-to-onedrive/).
+1. Select a template that's useful for you. A simple template is [**Notify and Email when a new file is uploaded to OneDrive**](https://make.powerautomate.com/galleries/public/templates/ef6bf28037ca11e7870df906aa521b7a/notify-and-email-when-a-new-file-is-uploaded-to-onedrive/).
 
     ![daily reminder template.](./media/getting-started/template-details.png)
 
@@ -98,7 +100,7 @@ Each template is designed for a specific purpose. For example, there are templat
 
 ## Get creative
 
-Now that you've created your first flow from a template, use any of the more than [500 data sources](https://flow.microsoft.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
+Now that you've created your first flow from a template, use any of the more than [500 data sources](https://make.powerautomate.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
 
 ![Building a cloud flow.](./media/getting-started/build-a-flow.png)
 
@@ -109,7 +111,7 @@ When you create a cloud flow from scratch, you control the entire workflow. Here
 - [Create an approval flow](wait-for-approvals.md).
 - [Watch a cloud flow in action](see-a-flow-run.md).
 - [Publish a template](publish-a-template.md).
-- [Create flows from a Microsoft Teams template](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+- [Create flows from a Microsoft Teams template](https://make.powerautomate.com/connectors/shared_teams/microsoft-teams/).
 
 
 ## Peek at the code
@@ -138,7 +140,7 @@ When your creative juices start *flowing*, you might create many flows. Don't wo
 
 Visit the cloud flow activity page to see the list of cloud flows that recently ran, sent notifications, or have failed.
 
-1. Sign into [Power Automate](https://powerautomate.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. Select **Monitor** on the left side of the screen.
 1. Select **Cloud flow activity**.
 
@@ -154,6 +156,6 @@ If you're ready to start your Power Automate project, visit the [guidance and pl
 
 ## We're here to help
 
-We're excited to see what you do with Power Automate, and we want to ensure you have a great experience. Be sure to check out our [guided learning](https://flow.microsoft.com/guided-learning/) tutorials and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](https://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
+We're excited to see what you do with Power Automate, and we want to ensure you have a great experience. Be sure to check out our [guided learning](https://make.powerautomate.com/guided-learning/) tutorials and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](https://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

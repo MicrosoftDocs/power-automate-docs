@@ -34,7 +34,7 @@ Learn more about process advisor processes in the following video.<br>
 
 In general, processes you think might be inefficient or repetitive are good candidates for analysis.
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. On the left-side navigation pane, select **Process advisor** .
 
