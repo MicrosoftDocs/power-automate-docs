@@ -19,7 +19,7 @@ The next step is to set up the automation.
 
 ## Basic steps for cloud flows
 
-1.  Create a cloud flow in [Power Automate](https://flow.microsoft.com).
+1.  Create a cloud flow in [Power Automate](https://make.powerautomate.com).
 
 2. Specify an event or trigger to start the flow with
     [connectors](/connectors/). Based on the way you
