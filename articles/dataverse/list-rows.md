@@ -111,7 +111,7 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 ### Fetch Xml Query
 
 > [!IMPORTANT]
-> The distinct operator is not currently supported in FetchXML queries for the List Rows action. [Aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) however are supported.
+> The distinct operator isn't currently supported in FetchXML queries for the List Rows action. [Aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) however are supported.
 
 Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
 
