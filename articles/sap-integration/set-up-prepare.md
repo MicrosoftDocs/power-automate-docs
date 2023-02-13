@@ -104,7 +104,7 @@ More information:
 
 - [On-premises data gateways documentation](/data-integration/gateway/)
 - [Power Platform on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management)
-- [Manage on-premises data gateway high-availability clusters and load balancing](data-integration/gateway/service-gateway-high-availability-clusters)
+- [Manage on-premises data gateway high-availability clusters and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters)
 
 ## Configure Authentication
 
