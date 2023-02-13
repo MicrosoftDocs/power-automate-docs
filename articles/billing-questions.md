@@ -32,7 +32,7 @@ This article answers frequently asked questions regarding billing and metering i
 
 ## Where can I find out what pricing plans are available?
 
-See the [pricing page](https://flow.microsoft.com/pricing/).
+See the [pricing page](https://make.powerautomate.com/pricing/).
 
 ## Where can I find out what my plan is?
 
@@ -40,7 +40,7 @@ See this [subscription page](https://portal.office.com/account/#subscriptions).
 
 ## How do I switch plans?
 
-1. Sign into [Power Automate](https://powerautomate.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. In the top right of the screen select **?** > **Pricing**, and then select the plan to which you want to switch.
 
 ![Help > Pricing.](./media/billing-questions/help-pricing.png)
@@ -51,7 +51,7 @@ Power Automate throttles your flow runs.
 
 ## Where can I find more information regarding the usage limits?
 
-- On the [pricing page](https://flow.microsoft.com/pricing/).
+- On the [pricing page](https://make.powerautomate.com/pricing/).
 - On the [limits and config page](limits-and-config.md).
 
 ## What happens if I try to run flows too frequently?
@@ -85,7 +85,7 @@ You can work around this issue by putting all the filtering you need into the tr
 
 ## Licenses that can submit support tickets in Power Automate
 
-If you have one of the following licenses, you can [submit a support ticket in Power Automate](https://flow.microsoft.com/support/)
+If you have one of the following licenses, you can [submit a support ticket in Power Automate](https://make.powerautomate.com/support/)
 * Power Automate per flow plan 
 * Power Automate per user plan
 * Power Automate per user with Attended RPA plan

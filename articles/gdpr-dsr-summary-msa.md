@@ -30,7 +30,7 @@ This article describes the European Union's General Data Protection Regulation (
 
 ## Prerequisites
 
-You need an MSA with a [free Power Automate license](https://flow.microsoft.com/pricing/) to perform the steps in this article.
+You need an MSA with a [free Power Automate license](https://make.powerautomate.com/pricing/) to perform the steps in this article.
 
 >[!TIP]
 > GDPR compliance information is also available for users who authenticate with [Azure Active Directory accounts](gdpr-dsr-summary.md).

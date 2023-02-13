@@ -25,7 +25,7 @@ To learn more about solutions from Microsoft Power Platform, go to [Overview of 
 
 ## Export a process
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
     Make sure you've selected the environment where the process you want to export has been created.
 

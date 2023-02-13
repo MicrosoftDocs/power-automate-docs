@@ -3,7 +3,7 @@ Welcome back to Guided Learning for Power Automate. In this lesson, you will see
 Getting started with Power Automate is easy, as there are a huge number of **templates to choose** from, which will help you connect the services you are already using in more meaningful ways.  
 
 ## Power Automate templates
-Take a look at the [ Power Automate website](https://ms.flow.microsoft.com), and open the **Templates** menu. As you scroll through the list, you see that Power Automate allows you to connect to many services.
+Take a look at the [ Power Automate website](https://make.powerautomate.com), and open the **Templates** menu. As you scroll through the list, you see that Power Automate allows you to connect to many services.
 
 ![Flow Website -> Template list.](./media/learning-create-a-flow/template-list.png)
 
