@@ -4,7 +4,7 @@ description: Silent registration for machines
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/17/2022
+ms.date: 02/13/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -125,8 +125,8 @@ To join a group silently with the service principal account, use the join group 
 ```CMD
 .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid
 ```
->[!NOTE]
->If you decide to use AAD account, you can specify the username: -username [UPN] instead of service principal account arguments
+> [!NOTE]
+> To use an Azure Active Directory account, specify the username: -username [UPN] instead of service principal account arguments.
 
 ## Secure input
 
