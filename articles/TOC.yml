@@ -702,13 +702,13 @@
       href: process-mining-share.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
-  - name: Minit desktop application (preview)
+  - name: Minit desktop application
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
     - name: Install the Minit desktop application
       href: ./minit/how-to-start-with-minit-desktop-application.md
-    - name: Process hub
+    - name: Process map
       items:
       - name: Process hub overview
         href: ./minit/process-hub.md
@@ -716,10 +716,8 @@
         href: ./minit/process-context.md
       - name: Case categorization
         href: ./minit/case-categorization.md
-    - name: Process explorer overview
-      href: ./minit/process-explorer.md
-    - name: Process map
-      items:
+      - name: Process explorer overview
+        href: ./minit/process-explorer.md
       - name: Process map overview
         href: ./minit/process-map.md
       - name: Favorites panel
@@ -742,12 +740,14 @@
         href: ./minit/activities-event-level-statistics.md
       - name: Edge statistics
         href: ./minit/edge-statistics.md
+    - name: Root cause analysis
+      href: ./minit/root-cause-analysis.md    
     - name: Variants
       href: ./minit/variants.md
-    - name: Process compare for compliance
+    - name: Process compare
       href: ./minit/process-compare-compliance.md
-    - name: Root cause analysis
-      href: ./minit/root-cause-analysis.md
+    - name: Export
+      href: ./minit/export.md
     - name: Filtering
       items:
       - name: Filtering overview
@@ -778,8 +778,6 @@
         href: ./minit/event-metrics-filter.md
       - name: Filters export and import
         href: ./minit/filters-export-import.md
-    - name: Export
-      href: ./minit/export.md
     - name: Settings
       items:
       - name: Settings overview
