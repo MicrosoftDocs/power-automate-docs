@@ -15,6 +15,11 @@ search.audienceType:
   - enduser
 ---
 
+
+<!-- In line 59, the screenshot shows this as "Choose an operation," not "action." -->
+
+
+
 # Trigger desktop flows from cloud flows
 
 ## Prerequisites
@@ -27,7 +32,7 @@ search.audienceType:
 - A work or school account.
 
    >[!IMPORTANT]
-   >You must use the same work or school account to sign in to Power Automate and to log in to your Windows device.
+   >You must use the same work or school account to sign in to Power Automate and to sign in to your Windows device.
 
 - A configured [desktop flow connection](desktop-flow-connections.md).
 
@@ -47,7 +52,7 @@ To trigger a desktop flow from a cloud flow:
 
     :::image type="content" source="media/trigger-desktop-flows/manually-trigger-flow.png" alt-text="Screenshot of the Build an instant cloud flow dialog.":::
 
-1. In the cloud flow designer, select **+ New Step**.
+1. In the cloud flow designer, select **+ New step**.
 
     :::image type="content" source="media/trigger-desktop-flows/new-step.png" alt-text="Screenshot of the New step option.":::
 
@@ -55,13 +60,13 @@ To trigger a desktop flow from a cloud flow:
 
     :::image type="content" source="media/trigger-desktop-flows/action-search.png" alt-text="Screenshot of the Run a flow built with Power Automate for desktop action.":::
 
-1. If you haven't already created a desktop flow connection, the action will prompt you to create a new one. You can find more information regarding desktop flow connections in [Create desktop flow connections](desktop-flow-connections.md).
+1. If you haven't already created a desktop flow connection, the action will prompt you to create one. You can find more information regarding desktop flow connections in [Create desktop flow connections](desktop-flow-connections.md).
 
     :::image type="content" source="media/trigger-desktop-flows/desktop-flow-connection.png" alt-text="Screenshot of a dialog to create a new desktop flow connection.":::
 
 1. Set the desired run mode (attended or [unattended](run-unattended-desktop-flows.md)) for your desktop flow and select **Create a new desktop flow** in **Desktop flow**. If you want to trigger an existing desktop flow, select its name instead.
 
-    :::image type="content" source="media/trigger-desktop-flows/run-desktop-flow-v2-action-properties.png" alt-text="Screenshot of the option in the Run a flow built with Power Automate Desktop action.":::
+    :::image type="content" source="media/trigger-desktop-flows/run-desktop-flow-v2-action-properties.png" alt-text="Screenshot of the option in the Run a flow built with Power Automate for desktop action.":::
 
 1. Enter a name for the new desktop flow and select **Launch app**.
 
@@ -84,7 +89,7 @@ To trigger a desktop flow from a cloud flow:
    > [!NOTE]
    >
    > - If an input variable contains sensitive data, you may want to obfuscate or omit it from the logs. To find more information regarding sensitive text inputs, go to [Manage sensitive input like passwords](../how-tos-use-sensitive-input.md).
-   > - The limit of the input size for a desktop flow is 2MB (1MB for Chinese regions)
+   > - The limit of the input size for a desktop flow is 2 MB (1 MB for China regions).
 
     :::image type="content" source="media/trigger-desktop-flows/run-desktop-flow-v2-action-properties-2.png" alt-text="Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.":::
 
