@@ -38,7 +38,7 @@ All the presented strategies prevent desktop flows from competing to run on the 
 
 ## Support long-running desktop flows
 
-Some desktop flows may run for long durations—for example, more than 24 hours. To ensure that those flows run successfully and don't fail due to the default timeout values, perform the following steps:
+Some desktop flows may run for long durations—for example, more than 24 hours. To ensure that those flows run successfully and don't fail due to the default time-out values, perform the following steps:
 
 1. Select the ellipsis (**…**) on the top of the **Run a flow built with Power Automate for desktop** cloud action, and then select **Settings**.
 
