@@ -4,7 +4,7 @@ description: See how to run unattended desktop flows on your device.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/09/2022
+ms.date: 02/10/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -23,13 +23,15 @@ Power Automate uses the selected [desktop flow connection](desktop-flow-connecti
 
 When running desktop flows in unattended mode, keep in mind that:
 
+- Power Automate creates a remote desktop (RDP) session on the machine to run unattended desktop flows. Connecting to the machine's console session isn't available for unattended runs.
+
 - Power Automate creates, manages, and then releases the Windows user session on the target devices.
 
 - Unattended desktop flows keep the screen of the target machine locked so no one can see them running.
 
 - Windows 10 and Windows 11 devices can't run unattended desktop flows if any active Windows user sessions are present (even a locked one).
 
-- On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow connection, you'll receive an error.
+- On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow connection, you receive an error.
 
 >[!IMPORTANT]
 >
