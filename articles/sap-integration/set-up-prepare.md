@@ -46,10 +46,10 @@ Take the following steps to support a successful deployment of the preview SAP I
 
 The assembled team of IT system administrators needs to review the following requirements and make necessary preparations before connecting your organization's SAP system to Power Platform:
 
-- [Power Platform licensing](/power-platform/admin/pricing-billing-skus). Determine if your organization has the necessary [licensing](https://www.microsoft.com/en-us/licensing/default) to proceed with the setup. It's important to consider:
+- [Power Platform licensing](/power-platform/admin/pricing-billing-skus). Determine if your organization has the necessary [licensing](https://www.microsoft.com/licensing/default) to proceed with the setup. It's important to consider:
   - Power Apps, Power Automate, and Power BI licensing that supports setting up and using an on-premises data gateway with premium applications, flows, and connectors (SAP ERP and Dataverse).
   - All administrators implementing and functional business users testing and using SAP Integration have the required licenses to do so.
-    - A [Power BI license](https://powerbi.microsoft.com/en-us/getting-started-with-power-bi/?accordion=getting-started-with-powerbi-accordion&panel=p1&tab=t1)is required for the admin who is setting up the on-premises data gateway.
+    - A [Power BI license](/getting-started-with-power-bi/?accordion=getting-started-with-powerbi-accordion&panel=p1&tab=t1)is required for the admin who is setting up the on-premises data gateway.
 
 - [SAP](<https://www.sap.com/>) subscription:
   
@@ -106,7 +106,7 @@ More information:
 - [Power Platform on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management)
 - [Manage on-premises data gateway high-availability clusters and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters)
 
-## Configure Authentication
+## Configure authentication
 
 > [!NOTE]
 >
