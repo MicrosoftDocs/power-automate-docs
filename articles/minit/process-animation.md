@@ -19,7 +19,7 @@ search.audienceType:
 
 # Process animation
 
-Visualize process development  over time with process animation. The animation is always shown over your process map or social graph. The instructions on the **Process map** screen apply to the process map and social chart settings.
+With process animation, you can visualize process development over time. You can watch the animation play over your process map or social graph on the **Animation** screen.
 
 <!--remove
 :::image type="content" alt-text="Screenshot of Animation setting button." source="media/image001-v53-1.png"::: -->
@@ -56,7 +56,7 @@ The information about the actual time in the process appears to the right of **P
 
 :::image type="content" alt-text="Screenshot of the playback time." source="media/process-animation/play-animation.png":::
 
-1. To play the animation, select **Play animation**. As the automation plays, the node numbers and the 
+1. To play the animation, select **Play animation**. As the automation plays, the node numbers and edge colors on your process simulation change. To learn more, go to [Functions of animation elements](animation-elements.md).
 
     When you select **Play animation**, the button turns into **Pause automation**.
 
