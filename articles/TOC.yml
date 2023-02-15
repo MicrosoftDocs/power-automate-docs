@@ -702,11 +702,11 @@
       href: process-mining-share.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
-  - name: Minit desktop application
+  - name: Power Automate Process Mining desktop app
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Install the Minit desktop application
+    - name: Install Power Automate Process Mining desktop app
       href: ./minit/how-to-start-with-minit-desktop-application.md
     - name: Process map
       items:
@@ -730,6 +730,9 @@
         href: ./minit/rework-metrics.md
     - name: Process animation
       href: ./minit/process-animation.md
+      items:
+      - name: Functions of animation elements
+        href: ./minit/animation-elements.md
     - name: Statistics
       items:
       - name: Statistics overview
