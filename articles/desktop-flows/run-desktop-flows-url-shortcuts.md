@@ -28,7 +28,7 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 > [!WARNING]
 > Disabling the confirmation dialog poses security threats because you could run without notice a questionable flow shared by a malicious actor.
 
-:::image type="content" source="media/run-flow-url/console-run-url-console-settings.png" alt-text="Screenshot of the Prompt me before running flows triggered by URL option in the console settings.":::
+:::image type="content" source="media/run-flow-url/console-run-url-console-settings.png" alt-text="Screenshot of the Display confirmation dialog when invoking flows externally option in the console settings.":::
 
 ## Prerequisites
 
