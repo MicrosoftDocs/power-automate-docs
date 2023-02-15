@@ -4,7 +4,7 @@ description: See the best practices for running Power Automate desktop flows.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/21/2022
+ms.date: 02/15/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:

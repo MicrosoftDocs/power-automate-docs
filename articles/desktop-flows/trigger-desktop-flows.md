@@ -4,7 +4,7 @@ description: See how to trigger Power Automate desktop flows from cloud flows.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/15/2022
+ms.date: 02/15/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -14,11 +14,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
-
-<!-- In line 59, the screenshot shows this as "Choose an operation," not "action." -->
-
-
 
 # Trigger desktop flows from cloud flows
 
@@ -58,7 +53,7 @@ To trigger a desktop flow from a cloud flow:
 
 1. In the **Choose an action** dialog, search for **Power Automate for desktop**. Under **Actions**, select **Run a flow built with Power Automate for desktop**.
 
-    :::image type="content" source="media/trigger-desktop-flows/action-search.png" alt-text="Screenshot of the Run a flow built with Power Automate for desktop action.":::
+    :::image type="content" source="media/trigger-desktop-flows/action-search.png" alt-text="Screenshot of the selected Run a flow built with Power Automate for desktop action in the Choose an action dialog.":::
 
 1. If you haven't already created a desktop flow connection, the action will prompt you to create one. You can find more information regarding desktop flow connections in [Create desktop flow connections](desktop-flow-connections.md).
 
