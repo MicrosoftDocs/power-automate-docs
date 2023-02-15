@@ -36,13 +36,13 @@ When you build automation with Power Automate, it might take valuable time to le
 
 ## Prerequisites
 
-- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in the United States.
+- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
   
   >[!NOTE]
   >You cannot create cloud flows from a description if you're logged in with a Microsoft Account.
 
   >[!TIP]
-  >If you don’t have access to an environment that's based in the United States, you can [create a new environment and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
+  >If you don’t have access to an environment that's based Europe or the United States, you can [create a new environment and select Europe or United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
 
 - Check current [limitations](#limitations) for more information.
 
