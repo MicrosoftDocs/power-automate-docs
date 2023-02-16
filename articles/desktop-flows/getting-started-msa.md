@@ -1,6 +1,6 @@
 ---
 title: Get started with a Microsoft account
-description: Get started with a Microsoft account
+description: Get started with Power Automate using a Microsoft account.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
