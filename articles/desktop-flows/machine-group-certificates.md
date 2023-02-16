@@ -47,7 +47,7 @@ To find information for admins about machine group certificate renewal, go to [M
 
 - **Case**: I can't add my machine to an empty machine group. The Power Automate machine runtime app says the password is incorrect.
 
-    **Description**: Machine groups need at least one machine connected to have their certificates renewed. If a machine group is empty during the renewal, its certificate will expire. You can't use these machine groups and you should delete them.
+    **Description**: Machine groups need at least one machine connected to have their certificates renewed. If a machine group is empty or inactive during the renewal, its certificate will expire. You can't use these machine groups and you should delete them.
 
 - **Case**: Following a certificate renewal, my machines on Power Automate for desktop version 2.21 or earlier can't be connected anymore.
 
