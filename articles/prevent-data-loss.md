@@ -1,6 +1,6 @@
 ---
-title: Introduction to data loss prevention (DLP) policies. | Microsoft Docs
-description: Introduction to data loss prevention policies for Power Automate.
+title: Introduction to data loss prevention (DLP) policies.
+description: Learn about data loss prevention policies for Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,7 +15,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/06/2022
+ms.date: 02/16/2023
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.app: 
@@ -26,13 +26,13 @@ search.audienceType:
 ---
 # Data loss prevention (DLP) policies
 
-This document introduces you to data loss prevention policies, which help protect your organizational data from being shared with a list of connectors that you define.
+Data loss prevention policies help protect your organizational data from being shared with a list of connectors that you define.
 
-## What's a data loss prevention policy?
+## Definition of data loss prevention policy
 
 An organization's data is critical to its success. Its data needs to be readily available for decision-making, but it needs to be protected so that it isn't shared with audiences that shouldn't have access to it. To protect this data, Power Automate provides you with the ability to create and enforce policies that define which connectors can access and share business data. The policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
 
-To learn more about protecting your data, see [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) in the Microsoft Power Platform admin guide.
+To learn more about protecting your data, go to [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) in the Microsoft Power Platform admin guide.
 
 >[!IMPORTANT]
 >Administrators control data loss prevention policies. Contact your administrator if a data loss prevention policy is blocking your flows from running.
@@ -159,14 +159,15 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
 
 Admins can create data loss prevention policies from https://admin.powerplatform.microsoft.com. They can manage a data loss prevention policy for desktop flows in the same way they manage cloud flow connectors and actions. Desktop flows modules are groups of similar actions as displayed in the Power Automate Desktop user interface. A module is similar to connectors that are used in cloud flows. You can define a data loss prevention policy that manages both desktop flows modules and cloud flows connectors. There are also basic modules such as "Variables", which aren't manageable in the scope of data loss prevention policy because almost all desktop flows need to use those modules. You can learn more about the fundamentals of DLP policies and how to create them in the [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) section.
 
-When your tenant is opted into the user experience in the Power Platform, your administrators will automatically see the new desktop flow modules in the default data group of the DLP policy they are creating or updating. 
+When your tenant is opted into the user experience in the Power Platform, your administrators will automatically see the new desktop flow modules in the default data group of the DLP policy they are creating or updating.
 
-![Screenshot of DLP Prevention.](media\prevent-dlp\prevent-dlp.png)
+:::image type="content" source="media\prevent-dlp\prevent-dlp.png" alt-text="Screenshot of DLP Prevention.":::
 
 > [!WARNING]
 > When desktop flow modules are added to DLP policies, your tenant’s existing desktop flows will be evaluated against those DLP policies, and they will become suspended if they are non-compliant. Therefore, if your administrator creates or updates the DLP policy without taking notice of the new modules, desktop flows can become unexpectedly suspended.
 
 ### After the policy is enabled
+
 -	Makers with the latest Power Automate Desktop won't be able to debug, run, or save desktop flows that have data loss prevention policy violations.
 - Makers won't be able to select a desktop flow that is in violation of a data loss prevention policy from a cloud flow step.
 
@@ -174,6 +175,7 @@ When your tenant is opted into the user experience in the Power Platform, your a
 >  If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they are trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
  
 ## DLP enforcement
+
 - Enforcement and suspension 
     - When you create or edit a flow, Power Automate evaluates it against the current set of DLP policies. If needed, the enforcement is asynchronous and occurs within 24 hours.
     - When you create or change a DLP policy, a background job scans all active flows in the environment, evaluates them, and then suspends the flows that violate the policy. The enforcement is asynchronous and occurs within 24 hours. If a DLP policy change occurs when the previous DLP policy is being evaluated, then the evaluation restarts to ensure the latest policies are enforced. 
@@ -181,6 +183,7 @@ When your tenant is opted into the user experience in the Power Platform, your a
 - Reactivation - If the DLP enforcement background job finds a desktop flow that no longer violates any DLP policy, then the background job automatically unsuspends it. However, the DLP enforcement background job won't automatically unsuspend cloud flows.
 
 ## DLP enforcement change process
+
 Periodically, DLP enforcement changes are needed. These changes can be a due to new DLP capabilities, an enforcement gap being filled, or a bug fix.
 When changes can impact existing flows, the following staged DLP enforcement change management process is used.
 
@@ -190,16 +193,19 @@ When changes can impact existing flows, the following staged DLP enforcement cha
 
 1. **Notify only**: Turn on email notifications only for DLP violations so owners of existing flows get notified about the upcoming DLP enforcement change. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended in the future. This mechanism runs weekly.
 
-1. **Design-time enforcement** Turn on design-time enforcement of DLP violations so owners of existing flows get notified about the upcoming DLP enforcement change, but any flows that are changed get a full DLP policy evaluation at design time. Also known as "soft enforcement".
+1. **Design-time enforcement**: Turn on design-time enforcement of DLP violations so that owners of existing flows get notified about the upcoming DLP enforcement change, but any flows that are changed get a full DLP policy evaluation at design time. Also known as *soft enforcement*.
+    
     1. **Design-time**: When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed so the maker is immediately aware of the enforcement. 
+    
     1. **Background process**: When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended in the future. This mechanism includes creation or changes to DLP policy and consistency checks.
 
-1. **Full enforcement**: Turn on full enforcement of DLP violations, so DLP policies are fully enforced on all existing and new flows. The DLP policies will be fully enforced when flows are saved during DLP enforcement background job evaluation. Also known as "hard enforcement".
+1. **Full enforcement**: Turn on full enforcement of DLP violations, so DLP policies are fully enforced on all existing and new flows. The DLP policies will be fully enforced when flows are saved during DLP enforcement background job evaluation. Also known as *hard enforcement*.
 
 ## DLP enforcement change list
+
 Following is a list of DLP enforcement changes and the date the changes were effective. 
 
-| Date | Description | Reason for change | Stage | Design-time Enforcement ETA* | Full Enforcement ETA*
+| Date | Description | Reason for change | Stage | Design-time enforcement ETA* | Full enforcement ETA*
 |-|-|-|-|-|-| 
 |May 2022 | Delegated authorization background job enforcement | DLP policies enforced are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Full |June 2, 2022|July 21, 2022|
 |May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have type=Request and kind=apiConnection. Many of the affected triggers are instant triggers, which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Full |June 2, 2022|August 25, 2022|
@@ -209,13 +215,14 @@ Following is a list of DLP enforcement changes and the date the changes were eff
 *ETA is subject to change and depends on the release schedule. ETA is for the start of the release to production. Release to preview station 1 is approximately five days later. Release to NAM/US station 5 is approximately three weeks later.
 
 ## Known limitations
+
 [Learn about DLP known issues](/power-platform/admin/dlp-known-issues)
 
-## Next steps
+### See also
 
-* [Learn more about environments](environments-overview-admin.md)
-* [Learn more about Power Automate](getting-started.md)
-* [Learn more about the admin center](admin-center-introduction.md)
+- [Learn more about environments](environments-overview-admin.md)
+- [Learn more about Power Automate](getting-started.md)
+- [Learn more about the admin center](admin-center-introduction.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
