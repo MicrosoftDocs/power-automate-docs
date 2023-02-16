@@ -39,9 +39,9 @@ Power Automate Process Mining keeps you informed about progress toward key proce
 <!-- REMOVE
 :::image type="content" alt-text="Screenshot of the Minit desktop application." source="media/image-24a.png"::: -->
 
-## Steps to use the process mining capabilities
+## Components
 
-Use the steps listed in this section to use the process mining capabilities in Power Automate Process Mining:
+Use the components listed in this section to use the process mining capabilities in Power Automate Process Mining:
 
 - [Process map](process-map.md)
 

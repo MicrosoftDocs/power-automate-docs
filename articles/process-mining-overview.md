@@ -17,7 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of process mining (preview)
+# Overview of process mining
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -40,8 +40,7 @@ For example, as a business owner in accounts payable, you can use process adviso
 
 You can easily filter for custom attributes such as location, department, and other dimensions that are relevant to your process.
 
-## Steps to process mining
-
+## Components
 - [Data requirements](process-mining-processes-and-data.md#data-requirements)
 
 - [Transform and map data](process-mining-transform.md)

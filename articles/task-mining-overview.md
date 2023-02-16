@@ -19,7 +19,9 @@ search.audienceType:
 
 # Overview of task mining in process advisor
 
-With task mining in process advisor, you can quickly capture detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate to *flows*. To learn more about flows, go to [Overview of the types of flows in Power Automate](flow-types.md).
+Task mining lets you quickly capture detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate to *flows*. To learn more about flows, go to [Overview of the types of flows in Power Automate](flow-types.md).
+
+Task mining enables you to discover tasks happening on the desktop. You can zoom-in to specific desktop tasks you might have discovered during your process mining analysis. You can also understand how your company performs its process tasks through monitoring recorded user actions and collecting data from these actions. You'll gain insights from this data that will let you know how processes are performed, find common mistakes while performing tasks, and identify tasks that can be automated.
 
 ## Business example
 
@@ -29,7 +31,7 @@ Application analytics and analytics dashboards show you which applications teams
 
 With insights and guided recommendations from process advisor, you're ready to begin automating and reclaim the time you need for what matters most.
 
-## Steps to task mining
+## Components
 
 - [Prepare processes and recordings](process-advisor-processes.md)
 

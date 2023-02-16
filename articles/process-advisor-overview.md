@@ -1,13 +1,13 @@
 ---
-title: Overview of process advisor
-description: This topic provides an overview of the process advisor feature in Power Automate.
+title: Overview of process mining
+description: Get an overview of process mining capabilities.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 03/15/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -17,21 +17,15 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of process advisor
+# Overview of process mining
 
-The process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this.
+Process mining capabilities allow you to gain a better understanding of your business processes so you can optimize them. They can be a key driver in making intelligent, day-today improvements on every level. You can discover and model processes for which you have data readily available, giving you an X-ray visualization of what goes on in your organization. In addition, you can standardize, optimize, and improve operations, while staying informed about progress towards defined key process indicators.
 
-Task mining and process mining share the same goal of improving process efficiency. The main difference is their area of focus.
+Process mining capabilities allow you to discover inefficiencies in organization-wide processes. They enable you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). You'll get maps of your processes with data and metrics to recognize performance issues. Example processes include *accounts receivable* and *order-to-cash*.
 
-- **Process mining:** Process mining is better suited for discovery of inefficiencies in organization-wide processes. It enables you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). Process mining displays maps of your processes with data and metrics to recognize performance issues. Example processes suitable for process mining include *accounts receivable* and *order-to-cash*.
+## Benefits of using process mining capabilities
 
-   Process mining can be a key driver in making intelligent, day-today improvements on every level. You can discover and model processes for which you have data readily available, giving you an X-ray visualization of what goes on in your organization. In addition, you can standardize, optimize, and improve operations, while staying informed about progress towards defined key process indicators.
-
-- **Task mining:** Task mining is better suited to discover tasks happening on the desktop. It enables you to zoom-in to specific desktop tasks you might have discovered during your process mining analysis. You can understand how your company performs its process tasks through monitoring recorded user actions and collecting data from these actions. You'll gain insights from this data that will let you know how processes are performed, find common mistakes while performing tasks, and identify tasks that can be automated.
-
-## When to use process mining
-
-Here are some reasons to help you decide to use process mining.
+Your organization can achieve many benefits from using process mining capabilities. Here are just a few things you can do:
 
 - See the actual steps needed to perform your organization’s operation process and remove any guesswork.
 
@@ -45,37 +39,35 @@ Here are some reasons to help you decide to use process mining.
 
 - Understand where and why problems occur.
 
-Explore the topics in [Process mining (preview)](process-mining-overview.md) and [Task mining](task-mining-overview.md) in this documentation for the following:
+Explore the topics in this documentation for the business scenarios, tutorials, guided procedures, and videos.
 
-- Business scenarios
+## Business example
 
-- Understand where and why problems occur.
+For example, as a business owner in accounts payable, you can use process advisor to find the steps and actions in your procure-to-pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process advisor produces a process map. This map enables you to visualize the activities in the procure-to-pay process to gain the following insights:
 
-## When to use task mining
+- Which activities in a process take the longest?
 
-Here are some reasons to help you decide to use task mining.
+- How many variations of invoice approval exist in the organization?
 
-- Understand what employees actually do while performing each task on their desktops.
+- Are the activities of the process within compliance?
 
-- Identify and eliminate unnecessary actions in process tasks.
+You can easily filter for custom attributes such as location, department, and other dimensions that are relevant to your process.
 
-- Identify the most common actions through user interactions.
+## Components
 
-- Ensure compliance and perform audit.
+Following are the main components in process mining:
 
-- Automate tasks that would accelerate processes and reduce human errors.
+- [Data requirements](process-mining-processes-and-data.md#data-requirements)
 
-## What you'll find in this documentation
+- [Transform and map data](process-mining-transform.md)
 
-Explore the topics in [Process mining (preview)](process-mining-overview.md) and [Task mining](task-mining-overview.md) in this documentation for the following:
+- [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics)
 
-- Business scenarios
+- [Edit and refresh processes](process-mining-data-source.md)
 
-- Tutorials
+- [Share processes](process-mining-share.md)
 
-- Guided procedures
-
-- Videos
+- [Troubleshoot issues (if necessary)](process-mining-troubleshoot.md)
 
 ## Licensing
 
