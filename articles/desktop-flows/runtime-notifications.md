@@ -4,7 +4,7 @@ description: See the different types of Power Automate for desktop runtime notif
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/16/2022
+ms.date: 02/16/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
