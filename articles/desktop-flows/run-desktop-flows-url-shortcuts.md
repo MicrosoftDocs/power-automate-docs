@@ -4,7 +4,7 @@ description: See how to run desktop flows via URL or desktop shortcuts.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 01/05/2023
+ms.date: 02/16/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
