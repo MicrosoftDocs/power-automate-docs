@@ -101,6 +101,9 @@ In the following example, we'll build an automated cloud flow that sends a notif
   - Microsoft Planner
   - Microsoft SharePoint
   - Microsoft Teams
+  - Approvals
+  - Microsoft Dataverse
+  
 
 ### See also
 
