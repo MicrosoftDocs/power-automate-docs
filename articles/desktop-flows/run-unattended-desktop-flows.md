@@ -4,7 +4,7 @@ description: See how to run unattended desktop flows on your device.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/09/2022
+ms.date: 02/15/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -17,11 +17,13 @@ search.audienceType:
 
 # Run unattended desktop flows
 
-[Triggering desktop flow from cloud flows](trigger-desktop-flows.md) enables you to run desktop flows in unattended mode. Unattended desktop flows are ideal for automating tasks that don't need human supervision.
+[Triggering desktop flows from cloud flows](trigger-desktop-flows.md) enables you to run desktop flows in unattended mode. Unattended desktop flows are ideal for automating tasks that don't need human supervision.
 
 Power Automate uses the selected [desktop flow connection](desktop-flow-connections.md) to automatically sign in to your machine and run the unattended desktop flow. When the flow is complete, it signs out from the device and reports its activity.
 
 When running desktop flows in unattended mode, keep in mind that:
+
+- Power Automate creates a remote desktop (RDP) session on the machine to run unattended desktop flows. Connecting to the machine's console session isn't available for unattended runs.
 
 - Power Automate creates, manages, and then releases the Windows user session on the target devices.
 
@@ -29,7 +31,7 @@ When running desktop flows in unattended mode, keep in mind that:
 
 - Windows 10 and Windows 11 devices can't run unattended desktop flows if any active Windows user sessions are present (even a locked one).
 
-- On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow connection, you'll receive an error.
+- On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow connection, you receive an error.
 
 >[!IMPORTANT]
 >
@@ -47,15 +49,15 @@ The **reuse Windows session** functionality allows desktop flows to run on an ex
 
 To allow reusing Windows session:
 
-1. Sign in to Power Automate
+1. Sign in to Power Automate.
 
-1. Select **Monitor**, and then **Machines**.
+1. Select **Monitor**, and then select **Machines**.
 
-1. Select the target machine or machine group
+1. Select the target machine or machine group.
 
-1. Select **Settings** in the Command bar
+1. Select **Settings** in the Command bar.
 
-1. Enable **Reuse sessions for unattended runs**
+1. Enable **Reuse sessions for unattended runs**.
 
 > [!NOTE]
 > When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
