@@ -4,7 +4,7 @@ description: Learn about the Power Automate v2 schema.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 02/10/2023
+ms.date: 02/17/2023
 ms.author: dbekirop
 ms.reviewer: gtrantzas
 contributors:
@@ -20,9 +20,17 @@ search.audienceType:
 > [!NOTE]
 > The following article applies only to users with paid Power Automate subscriptions.
 
-The new Dataverse storage schema enables future product enhancements in desktop flows, and it's available in Power Automate for desktop v2.29 or later.
+Power Automate stores desktop flows in Microsoft Dataverse, which lets you securely store and manage data used by business applications.
 
-There's no immediate need to act, although it's recommended to enable future product enhancements. Before enabling the new schema, ensure that users and unattended runtime machines have been updated to the appropriate Power Automate for desktop version.
+This functionality enables you to use features like solutions for Application Lifecycle Management (ALM). However, handling data stored in this way may be challenging.
+
+Thus, a new storage schema for desktop flows in Dataverse (v2) is available. It makes working with Dataverse APIs easier and enables future product enhancements with desktop flows. The new storage schema is publicly available along with Power Automate for desktop (v2.29).
+
+## Enable the v2 schema
+
+The v2 schema effectively reduces Dataverse database consumption for paid license users. Also, it offloads components of your desktop flows into your Dataverse for Apps File Capacity, which is part of your current subscription.
+
+There's no immediate need to act, although we recommend you to enable future product enhancements. Before enabling the new schema, ensure that users and unattended runtime machines have been updated to the appropriate Power Automate for desktop version.
 
 Power Platform administrators can choose when to enable the v2 storage schema. To enable it, use the **Enable storage of desktop flow files into v2 schema** toggle in the **Environments** page of the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com). This setting applies at the environment level.
 
@@ -46,9 +54,9 @@ For most scenarios, there's no need to downgrade your version of Power Automate 
 
 Desktop flows stored in the v2 schema only function in environments with the v2 schema feature enabled.
 
-V1 schema desktop flows in a managed solution may operate in an environment where the v2 schema is enabled, but first you must resave them into another environment where the v2 schema is enabled.
+V1 schema desktop flows in a managed solution may operate in an environment where the v2 schema is enabled, but first you should resave them into another environment where the v2 schema is enabled.
 
-The updated v2 schema version of the same process can then be imported to the managed environment where it's intended to run. The active layer can be replaced by the v2 schema version of the automated process.
+Then, you can import the updated v2 schema version of the same process to the managed environment where it's intended to run. The active layer can be replaced by the v2 schema version of the automated process.
 
 |Scenario|Power Automate for desktop prior to February 2023 release | Power Automate for desktop after to February 2023 release |
 |--------|----------------------------------------------------------|-----------------------------------------------------------|
