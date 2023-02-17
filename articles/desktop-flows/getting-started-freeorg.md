@@ -1,11 +1,10 @@
 ---
 title: Get started with a work or school account
-description: Get started with a work or school account
+description: Get started with Power Automate desktop flows using a work or school account.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/03/2022
+ms.date: 02/17/2023
 ms.custom: intro-internal
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -22,9 +21,9 @@ search.audienceType:
 
 # Get started with a work or school account
 
-Power Automate enables users to automate repetitive desktop tasks through a collection of pre-made actions.
+Power Automate enables users to automate repetitive desktop tasks through a collection of premade actions.
 
-Using the available actions and [built-in recorder](recording-flow.md), you can automate any business procedure, such as [filling forms](automation-web.md#enter-data-on-webpages), [retrieving data from the web](automation-web.md#extract-data-from-webpages), or [desktop applications](desktop-automation.md), and [sending standardized emails](actions-reference/email.md).
+Using the available actions and [built-in recorder](recording-flow.md), you can automate any business procedure, such as [filling forms](automation-web.md#enter-data-on-webpages), [retrieving data from the web](automation-web.md#extract-data-from-webpages) or [desktop applications](desktop-automation.md), and [sending standardized emails](actions-reference/email.md).
 
 Combining these features allows you to create robust flows that disengage humans from repetitive, unproductive procedures. Tasks like copying data across different systems are common in business environments, and Power Automate can entirely handle them.
 
@@ -49,7 +48,7 @@ To create the desktop flow:
 
     ![Screenshot of the New flow button in the console.](media\getting-started-freeorg\getting-started-freeorg-console.png)
 
-1. Populate a name for the flow and then select **Create**. In this example, the name of the flow is **Backup flow**.
+1. Enter a name for the flow and then select **Create**. In this example, the name of the flow is **Backup flow**.
 
     ![Screenshot of the Build a flow dialog.](media\getting-started-freeorg\getting-started-freeorg-new-flow.png)
 
@@ -82,11 +81,11 @@ To create the desktop flow:
 
 1. To test if the flow runs as expected, select the **Run** button on the upper part of the flow designer.
 
-1. To check how every single action is implemented, run the flow step-by-step using the **Run next action** button.
+1. To check how every single action is implemented, run the flow step by step using the **Run next action** button.
 
 1. If the flow runs as expected, select **Save** and close the flow designer window.
 
-    ![Screenshot of the final flow, and the Run, Run next action and Save buttons.](media\getting-started-freeorg\getting-started-freeorg-final.png)
+    ![Screenshot of the final flow, and the Run, Run next action, and Save buttons.](media\getting-started-freeorg\getting-started-freeorg-final.png)
 
 1. Now, you can run your flow directly using the **Run** button in the console. To stop the flow before its completion, select **Stop**.
 
@@ -100,4 +99,4 @@ To create the desktop flow:
 
 - Get familiar with the [console](console.md) and the [flow designer](flow-designer.md).
 
-- You'll find the list of actions available in the [Actions reference](actions-reference.md).
+- Find the list of actions available in the [Actions reference](actions-reference.md).
