@@ -1,6 +1,6 @@
 ---
-title: Overview of task mining in process advisor | Microsoft Docs
-description: Quickly capture detailed steps for each process in your organization to help you better understand workflows and begin automating to reclaim time.
+title: Task mining overview
+description: Learn about using task mining to help you better understand workflows and begin automating to reclaim time.
 author: donums
 contributors:
   - donums
@@ -17,7 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of task mining in process advisor
+# Task mining overview
 
 Task mining lets you quickly capture detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate to *flows*. To learn more about flows, go to [Overview of the types of flows in Power Automate](flow-types.md).
 
