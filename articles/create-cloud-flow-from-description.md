@@ -1,11 +1,14 @@
 ---
-title: Create a cloud flow from a description | Microsoft Docs
+title: Create a cloud flow from a description
 description: Learn to create a cloud flow from a written description of the scenario.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: tapanm
+author: phil-cmd
+contributors:
+  - phil-cmd
+  - JoeFernandezMS
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,8 +16,8 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/29/2022
-ms.author: deonhe
+ms.date: 02/17/2023
+ms.author: jofernan
 ms.reviewer: angieandrews
 search.app: 
   - Flow
@@ -36,13 +39,13 @@ When you build automation with Power Automate, it might take valuable time to le
 
 ## Prerequisites
 
-- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in the United States.
+- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
   
   >[!NOTE]
-  >You cannot create cloud flows from a description if you're logged in with a Microsoft Account.
+  >You can't create cloud flows from a description if you're logged in with a Microsoft Account.
 
   >[!TIP]
-  >If you don’t have access to an environment that's based in the United States, you can [create a new environment and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
+  >If you don’t have access to an environment that's based Europe or the United States, you can [create a new environment and select Europe or United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
 
 - Check current [limitations](#limitations) for more information.
 
@@ -101,7 +104,9 @@ In the following example, we'll build an automated cloud flow that sends a notif
   - Microsoft Planner
   - Microsoft SharePoint
   - Microsoft Teams
-
+  - Approvals
+  - Microsoft Dataverse
+  
 ### See also
 
 [Learn more about cloud flows](./overview-cloud.md).  
