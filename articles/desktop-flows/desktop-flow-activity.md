@@ -80,7 +80,7 @@ You can use the **Machines** section to monitor your machines and machine groups
 
 - **Versions on machines**: This card displays for each version of Power Automate for desktop, the number of machines that use this version. This feature is useful to understand which machines require updates (you should update your application regularly). From filters, you can select a dedicated version and see machines that are using this version.
 
-- **Machines and machine groups**: These cards display the 10 last modified machines and machine groups (name, description, version, status). Select **See all** to view the full list of items, if you have more than 10 machines or groups.
+- **Machines** and **Machine groups**: These cards display the 10 last modified machines and machine groups (name, description, version, status). Select **See all** to view the full list of items, if you have more than 10 machines or groups.
 
 :::image type="content" source="media\desktop-flow-activity\desktop-flow-activity-machines.png" alt-text="Screenshot of the Machines section of the Desktop flow activity.":::
 
