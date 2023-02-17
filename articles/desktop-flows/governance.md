@@ -4,7 +4,7 @@ description: Learn how to configure Power Automate using Windows registry keys.
 author: georgiostrantzas
 
 ms.topic: article
-ms.date: 01/05/2023
+ms.date: 02/17/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
