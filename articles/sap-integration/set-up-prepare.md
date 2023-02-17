@@ -124,7 +124,7 @@ The following authentication types are supported by the SAP ERP connector:
 | [Windows authentication](/connectors/saperp/#windows-authentication)     | Use Windows username and password to access SAP server. |   Steps 1,2,3,4      |
 | [Azure AD authentication](/connectors/saperp/#azure-ad-integrated)    | Use Azure AD to access SAP server. | Steps 1,2,3,4     |
 
-For guidance, see:
+More information:
 
 - [Azure Active Directory documentation](/azure/active-directory/)
 - [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
@@ -266,7 +266,9 @@ Take the following steps to download and then import the solution:
 
 1. Select the environment from the upper-right corner where you want to import the solution.
 
-1. Import the solution. More information: [Import solutions in Power Apps](/power-apps/maker/data-platform/import-update-export-solutions)
+1. Import the solution. 
+
+More information: [Import solutions in Power Apps](/power-apps/maker/data-platform/import-update-export-solutions)
 
 ## Next steps
 
