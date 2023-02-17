@@ -1,5 +1,5 @@
 ---
-title: Overview of process mining
+title: Process mining overview
 description: Get an overview of process mining capabilities.
 author: donums
 contributors:
@@ -17,11 +17,13 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of process mining
+# Process mining overview
 
-Process mining capabilities allow you to gain a better understanding of your business processes so you can optimize them. They can be a key driver in making intelligent, day-today improvements on every level. You can discover and model processes for which you have data readily available, giving you an X-ray visualization of what goes on in your organization. In addition, you can standardize, optimize, and improve operations, while staying informed about progress towards defined key process indicators.
+Process mining capabilities allow you to gain a better understanding of your business processes so you can optimize them. They can be a key driver in making intelligent, day-to-day improvements on every level. You can discover and model processes for which you have data readily available, giving you an X-ray visualization of what goes on in your organization. In addition, you can standardize, optimize, and improve operations, while staying informed about progress towards defined key process indicators.
 
-Process mining capabilities allow you to discover inefficiencies in organization-wide processes. They enable you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). You'll get maps of your processes with data and metrics to recognize performance issues. Example processes include *accounts receivable* and *order-to-cash*.
+With process mining capabilities, you can discover inefficiencies in organization-wide processes. They enable you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). You'll also get maps of your processes, enriched with data and metrics to recognize performance issues. Example processes include *accounts receivable* and *order-to-cash*.
+
+Explore the topics in this documentation for business scenarios, tutorials, guided procedures, and videos.
 
 ## Benefits of using process mining capabilities
 
@@ -39,11 +41,9 @@ Your organization can achieve many benefits from using process mining capabiliti
 
 - Understand where and why problems occur.
 
-Explore the topics in this documentation for the business scenarios, tutorials, guided procedures, and videos.
-
 ## Business example
 
-For example, as a business owner in accounts payable, you can use process advisor to find the steps and actions in your procure-to-pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process advisor produces a process map. This map enables you to visualize the activities in the procure-to-pay process to gain the following insights:
+As a business owner in accounts payable, you can use process mining capabilities to find the steps and actions in your procure-to-pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process mining produces a process map. This map enables you to visualize the activities in the procure-to-pay process to gain the following insights:
 
 - Which activities in a process take the longest?
 
@@ -55,7 +55,7 @@ You can easily filter for custom attributes such as location, department, and ot
 
 ## Components
 
-Following are the main components in process mining:
+Following are the main components for process mining:
 
 - [Data requirements](process-mining-processes-and-data.md#data-requirements)
 
@@ -69,7 +69,7 @@ Following are the main components in process mining:
 
 - [Troubleshoot issues (if necessary)](process-mining-troubleshoot.md)
 
-## Licensing
+## Licensing - NEEDS REVISION
 
 Process advisor is licensed as part of Power Automate per-user licenses. If you don’t have a license, you can start a Power Automate trial to try process advisor. The per-user licenses enable users to analyze task mining processes and view their analytics. Other actions such as contributing recordings and setting up process mining processes don't need the Power Automate per-user licenses.
 
@@ -83,9 +83,9 @@ Currently, only the task mining recording feature is generally available and wil
 
 To customize your report, you need to link the process to your own workspace, and a paid Power BI license is needed. The specific license you need depends on the data size of the process data. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
 
-## Prerequisites
+## Prerequisites - NEEDS REVISION
 
-Before you start using process advisor, make sure you have the following prerequisites:
+Before you start using process mining capabilities, make sure you have the following prerequisites:
 
 - Process mining licenses
 

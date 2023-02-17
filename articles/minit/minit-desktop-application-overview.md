@@ -41,7 +41,7 @@ Power Automate Process Mining keeps you informed about progress toward key proce
 
 ## Components
 
-Use the components listed in this section to use the process mining capabilities in Power Automate Process Mining:
+Following are the main components in Power Automate Process Mining:
 
 - [Process map](process-map.md)
 

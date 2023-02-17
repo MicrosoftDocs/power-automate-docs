@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/15/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -25,13 +25,15 @@ Task mining enables you to discover tasks happening on the desktop. You can zoom
 
 ## Business example
 
-For example, in a healthcare facility, you can use task mining to record patient check-in procedures. Process advisor automatically produces a process map that visualizes the check-in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
+In a healthcare facility, you can use task mining to record patient check-in procedures. Process mining automatically produces a process map that visualizes the check-in process. You can learn which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
 
 Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You're then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
 
-With insights and guided recommendations from process advisor, you're ready to begin automating and reclaim the time you need for what matters most.
+With insights and guided recommendations from process mining, you're ready to begin automating and reclaim the time you need for what matters most.
 
 ## Components
+
+Following are the main components for task mining:
 
 - [Prepare processes and recordings](process-advisor-processes.md)
 

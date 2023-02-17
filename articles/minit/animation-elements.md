@@ -1,6 +1,6 @@
 ---
-title: Functions of animation elements
-description: Learn about the various functions of the animation elements in Power Automate Process Mining desktop app.
+title: Understand process animation controls
+description: Learn about the various animation controls in Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,9 @@ search.audienceType:
 - enduser
 ---
 
-# Functions of animation elements
+# Understand process animation controls
 
-This article explains the meaning of the various changes (colors, numbers, and more) in the elements in your simulated process during animation play.
+This article explains the meaning of the various changes (colors, numbers, and more) in the controls for your simulated process during animation play.
 
 ## Display the significance of values
 

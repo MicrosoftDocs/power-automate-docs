@@ -1,5 +1,5 @@
 ---
-title: Process animation
+title: Process animation overview
 description: Learn how to visualize the development of the process over time in Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
@@ -17,7 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Process animation
+# Process animation overview
 
 With process animation, you can visualize process development over time. You can watch the animation play over your process map or social graph on the **Animation** screen.
 
