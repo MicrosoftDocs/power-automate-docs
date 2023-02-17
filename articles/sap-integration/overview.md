@@ -13,7 +13,7 @@ ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: overview
-ms.date: 12/13/2022
+ms.date: 02/17/2023
 
 ---
 
@@ -86,8 +86,6 @@ Learn more at [On-premises data gateway documentation](/data-integration/gateway
 
 Power Automate's expression language is based on Logic Apps functions. New functions have been added to enable more efficient processing of SAP data.
 
-<!-- In the isFloat description, is this correct? "... so that math can do math." -->
-
 | Logic Apps function | Description |
 |-|-|
 | [isInt](/azure/logic-apps/workflow-definition-language-functions-reference#isint) | Returns true if a data attribute in an integer. This allows flow makers to determine if leading zeroes should be added to SAP data before sending to SAP APIs, or to remove from SAP data after retrieving records from SAP.   |
@@ -95,7 +93,7 @@ Power Automate's expression language is based on Logic Apps functions. New funct
 | [sort](/azure/logic-apps/workflow-definition-language-functions-reference#sort)   | Sorts an array of objects by a key found in each object.  |
 | [reverse](/azure/logic-apps/workflow-definition-language-functions-reference#reverse)  | Reverse-sorts an array of objects by a key found in each object. |
 | [dateDifference](/azure/logic-apps/workflow-definition-language-functions-reference#datedifference)  | Determines the difference between two dates and returns in the time unit specified in the function. This is especially useful for customers who use time-based billing. |
-| [isFloat](/azure/logic-apps/workflow-definition-language-functions-reference#isfloat)  | There's a unique edge case where some SAP APIs return currency strings in a user's localized format, which causes problems for mathematical operations. This function combined with float() removes the formatting so that math can do math. |
+| [isFloat](/azure/logic-apps/workflow-definition-language-functions-reference#isfloat)  | There's a unique edge case where some SAP APIs return currency strings in a user's localized format, which causes problems for mathematical operations. This function combined with float() removes the formatting so that mathematical operations are performed correctly. |
 | [parseDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#parsedatetime)   | Converts the string representation of a timestamp to a standard ISO 8601 format. The output of this function can be used reliably to do additional operations on the timestamp like the functions defined in date and time functions.    |
 | [formatDateTime](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)  | A new optional parameter locale has been added to the existing **formatDateTime**. If not specified, the default locale is used.    |
 | [nthIndexOf](/azure/logic-apps/workflow-definition-language-functions-reference#nthindexof)  | Allows finding the **nth** occurrence of a substring.    |

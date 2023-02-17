@@ -13,7 +13,7 @@ ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: how-to
-ms.date: 11/01/2022
+ms.date: 02/17/2023
 
 --- 
 # Create an environment variable with SAP connection parameters (preview)
