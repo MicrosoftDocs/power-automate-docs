@@ -126,7 +126,7 @@ SAP integration with Power Platform will help your organization:
 
 ## Get started
 
-1. Join the [Power Automate community forum](<https://aka.ms/sap-powerusers-community>) site. Ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
+1. Join the [Power Platform Community](https://powerusers.microsoft.com/) site. Ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 
 1. Assemble a team of IT administrators to [set up the SAP ERP integration with Power Platform](set-up-prepare.md).
 

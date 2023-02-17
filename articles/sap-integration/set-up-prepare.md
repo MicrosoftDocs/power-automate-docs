@@ -13,7 +13,7 @@ ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: how-to
-ms.date: 02/13/2023
+ms.date: 02/16/2023
 
 ---
 
@@ -27,7 +27,7 @@ A successful SAP integration with Microsoft Power Platform requires coordination
 
 Take the following steps to support a successful deployment of the preview SAP Integration solution:
 
-1. Join the [Power Automate Community](https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity). Ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
+1. Join the [Power Platform Community](https://powerusers.microsoft.com/). Ask questions, get helpful guidance, and share feedback about your organization's experience setting up and using the SAP Integration solution.
 
 1. Assemble a team with the following IT system administrators:
     - Network
