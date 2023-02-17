@@ -85,6 +85,8 @@ To restrict access to Power Automate for desktop on a workstation with Windows 1
 
 You can use the following registry entry to allow users to sign in to Power Automate for desktop using Windows Web Account Manager (WAM).
 
+WAM enables certain features that aren't available through the default login process, such as Single Sign-On (SSO) and Azure Directory Federation Services (ADFS).
+
 | Hive | Key | Name | Type |
 |---|---|---|---|
 | HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | UseMsalWindowsBroker | DWORD |
