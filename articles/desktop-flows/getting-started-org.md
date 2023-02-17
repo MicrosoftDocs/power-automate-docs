@@ -1,10 +1,10 @@
 ---
 title: Get started with an organization premium account
-description: Get started with an organization premium account
+description: Get started with Power Automate desktop flows using an organization premium account.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/03/2022
+ms.date: 02/17/2023
 ms.custom: intro-internal
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -21,9 +21,9 @@ search.audienceType:
 
 # Get started with an organization premium account
 
-Power Automate enables regular and power users to create flows that automate routine repetitive tasks. Build flows from pre-made actions, or [record windows and web browser activity in real time](recording-flow.md).
+Power Automate enables regular and power users to create flows that automate routine repetitive tasks. For example, build flows from premade actions, or [record windows and web browser activity in real time](recording-flow.md).
 
-Unlock the full spectrum of RPA features such as premium cloud connectors, the ability to [run your flows automatically](trigger-desktop-flows.md), [detailed monitoring](monitor-desktop-flow-runs.md) and many more.
+Unlock the full spectrum of RPA features such as premium cloud connectors, the ability to [run your flows automatically](trigger-desktop-flows.md), [detailed monitoring](monitor-desktop-flow-runs.md), and many more.
 
 Power Automate gives you the option to [share your flows](manage.md#share-desktop-flows) among your colleagues so that you can improve automations and build on top of them.
 
@@ -33,7 +33,7 @@ If you currently use Power Automate with a work or school account or your licens
 
 ## Creating a flow
 
-1. Begin by going to [Power Automate](https://make.powerautomate.com) and entering your credentials; then, navigate to **My flows**, and create a new **Desktop flow**.
+1. Begin by going to [Power Automate](https://make.powerautomate.com) and entering your credentials; then, navigate to **My flows** and create a new **Desktop flow**.
 
     ![Screenshot of the option to create a new desktop flow through the portal.](media\getting-started-org\create-new-desktop-flow.png)
 
@@ -43,7 +43,7 @@ If you currently use Power Automate with a work or school account or your licens
 
 1. Expand the **Datetime** category, and select the **Get current date and time** action. Configure it to only retrieve the date.
 
-    ![Screenshot of the Get the current date action.](media\getting-started-org\get-current-date.png)
+    ![Screenshot of the Get current date action.](media\getting-started-org\get-current-date.png)
 
 1. Next, expand the **Text** category, and configure the **Convert datetime to text** actions as follows. This step will ensure that the current date is displayed in a filename-friendly format.
 
@@ -75,6 +75,6 @@ Following this example, it's possible to imagine a wide range of scenarios where
 
 - Get familiar with the [console](console.md) and the [flow designer](flow-designer.md).
 
-- You'll find the list of actions in the [Actions reference](actions-reference.md).
+- Find the list of actions in the [Actions reference](actions-reference.md).
 
 - Learn how to [apply unattended RPA licenses to your flows](../organization-q-and-a.md#power-automate-rpa-license).
