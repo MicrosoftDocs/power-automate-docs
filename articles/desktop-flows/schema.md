@@ -28,7 +28,7 @@ Thus, a new storage schema for desktop flows in Dataverse (v2) is available. It 
 
 ## Enable the v2 schema
 
-The v2 schema effectively reduces Dataverse database consumption for paid license users. Also, it offloads components of your desktop flows into your Dataverse for Apps File Capacity, which is part of your current subscription.
+The v2 schema effectively reduces Dataverse database consumption for paid license users. Also, it offloads components of your desktop flows into your [Dataverse for Apps File Capacity](power-platform/admin/capacity-storage#licenses-for-the-new-storage-model), which is part of your current subscription.
 
 There's no immediate need to act, although we recommend you to enable future product enhancements. Before enabling the new schema, ensure that users and unattended runtime machines have been updated to the appropriate Power Automate for desktop version.
 
