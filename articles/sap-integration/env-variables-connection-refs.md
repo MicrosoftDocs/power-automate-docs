@@ -1,19 +1,19 @@
 ﻿---
 title: Create an environment variable with SAP connection parameters (preview)
-description: Define an environment variable in Power Apps that contains all of your SAP system information, then reuse it in your SAP flow actions.
-author: EllenWehrle
-ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 01/06/2023
-ms.author: ellenwehrle
+description: Define an environment variable in Power Apps that contains all of your SAP system information, then reuse it in your SAP flow actions
+author: jongilman88
+contributors:
+- EllenWehrle
+- galitskyd
+- microsoft-dustin
+- ryanb58
+- scottwoodallmsft
+- Wrighttyler
+ms.author: jongilman
 ms.reviewer: ellenwehrle
-search.app: Flow
-search.audienceType: 
-  - flowmaker
-  - administrator
-  - enduser
+ms.subservice: power-automate-connections
+ms.topic: how-to
+ms.date: 02/17/2023
 
 --- 
 # Create an environment variable with SAP connection parameters (preview)
@@ -36,19 +36,19 @@ SAP has multiple connection parameters, and manually entering the parameters int
 
     - **Display name**: Enter a display name for the environment variable.
     - **Name**: This name is automatically generated as you enter the display name, but you can change it.
-    - **Data Type**: Select **Data source** 
+    - **Data Type**: Select **Data source**
     - **Connector**: Select **SAP ERP** Once selected, additional fields will appear.
 
    :::image type="content" source="media/env-refs/saperp-datasource-variable.png" alt-text="The environment variable panel in Power Apps.":::
 
-1. Complete the relevant fields for your SAP system. Refer to the [SAP property guidance](#sap-property-guidance) below for additional information. You can also refer to the info bubbles for the available fields.
+1. Complete the relevant fields for your SAP system. Refer to the [SAP property guidance](#sap-property-guidance) below for additional information. You can also refer to the information bubbles for the available fields.
 
 ### SAP property guidance
 
 | Property  |Description |
 |-|-|
 | Application Server Host        | The hostname of the SAP application Server. Used when the "Application Server" Connection Type is selected. |
-| Application Server Service     | The service name or port number of the specific SAP application server to connect to (Optional if Connection Type Application Server). |
+| Application Server Service     | The service name or port number of the specific SAP application server to connect to (Optional if Connection Type Application Server). The default port number is 3300 for gateway/RFC calls, but can be dependent on system number.|
 | Client  | The SAP client ID to connect to the SAP system. The SAP backends' client (or 'Mandant') into which to log in. It's a number ranging from 000 to 999. |
 | Logon Group  | The logon group for the SAP system, from which the message server selects an application server (Only available if connection type is Message Server. |
 | Connection Type   | The type of logon to the SAP system. The allowed values are either Application Server Logon (Type A) or Message Server (Type B, also known as Group Logon).|
