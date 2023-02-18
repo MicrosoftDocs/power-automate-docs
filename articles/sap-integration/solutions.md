@@ -1,18 +1,19 @@
 ---
 title: Understand prebuilt solution available for integrating SAP with Power Platform (preview)
-description: Learn about the prebuilt SAP Integration solution available to import into Power Apps.
-author: EllenWehrle
-ms.subservice: cloud-flow
-ms.topic: article
-ms.date: 11/01/2022
-ms.author: ellenwehrle
+description: Learn about the prebuilt SAP Integration solution available to import into Power Apps
+author: jongilman88
+contributors: 
+- EllenWehrle
+- galitskyd
+- microsoft-dustin
+- ryanb58
+- scottwoodallmsft
+- Wrighttyler
+ms.author: jongilman
 ms.reviewer: ellenwehrle
-search.app: 
-  - Flow
-search.audienceType: 
-  - flowmaker
-  - skakeholder
-  - enduser
+ms.subservice: power-automate-connections
+ms.topic: conceptual
+ms.date: 02/17/2023
 
 ---
 
@@ -55,7 +56,6 @@ Four key business processes in SAP ERP are organized into modules that contain a
 |        | Customer Payments    |
 |        | Mass Update Pricing  |
 
-
 ### Procure to Pay
 
 | Module     | Power Apps templates |
@@ -66,7 +66,6 @@ Four key business processes in SAP ERP are organized into modules that contain a
 |            | Goods Receipts       |
 |            | Vendor Invoices      |
 |            | Vendor Payments      |
-
 
 ### Record to Report
 
@@ -79,7 +78,6 @@ Four key business processes in SAP ERP are organized into modules that contain a
 |         | Profit Centers         |
 |         | Upload Journal Entries |
 
-
 ### Make to Stock/Make to Order
 
 | Module     | Power Apps templates |
@@ -90,7 +88,6 @@ Four key business processes in SAP ERP are organized into modules that contain a
 |            | Equipment            |
 |            | Work Orders          |
 |            | Shipments            |
-
 
 ## What does the solution contain?
 
@@ -134,7 +131,6 @@ The following apps and flows are listed with short descriptions for your referen
 | Common Components | Components that construct common tables and fields for the organization of specific types of data |
 | Attachments Component | Reusable UI component used to attach more files to Purchase Orders and Sales Orders |
 
-
 ### Power Automate flows
 
 | Cloud flow name | Description |
@@ -161,7 +157,6 @@ The following apps and flows are listed with short descriptions for your referen
 | UpdatePurchaseOrder | Updates purchase order data|
 | UpdateSalesOrder | Updates sales order data |
 
-
 ## How do I access the user interface?
 
 After the systems are configured to communicate with one another and you explore the internal components of the imported solution, you are ready to open an app that acts as a user interface and test it.
@@ -174,7 +169,7 @@ After the systems are configured to communicate with one another and you explore
     :::image type="content" source="media/prebuilt-solution/play-app-2.png" alt-text="Power App display of the Play button that opens the application to the user experience.":::
 
     Now, you should see the user's view. If the initial setup is complete, you are ready to test the communication between your SAP system and Power Platform.
-    
+
     :::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App Order to Cash screen.":::
 
 ### See also
