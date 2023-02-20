@@ -337,6 +337,8 @@
       href: ./desktop-flows/manifest.md
     - name: Power Automate v2 schema
       href: ./desktop-flows/schema.md
+    - name: Application lifecycle management for Power Automate v2 schema
+      href: ./desktop-flows/alm-schema.md    
     - name: Create a Dataverse database
       href: ./desktop-flows/create-database.md
     - name: Governance
