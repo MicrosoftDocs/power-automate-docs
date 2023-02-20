@@ -53,7 +53,7 @@ When you build automation with Power Automate, it might take valuable time to le
 
 In the following example, we'll build an automated cloud flow that sends a notification via Teams and an email each time someone responds to a Microsoft Forms survey.
 
-1. Sign in to [Power Automate](https://make.powerautomate.com), select **Create** on the left side of the screen, and then select **You describe it, AI Builds it**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), select **Create** on the left side of the screen, and then select **Describe it to design it**.
 
    >[!div class="mx-imgBorder"]
    >![A screenshot that displays the You describe it, AI Builds it button](media/easy-flow/describe-it-main.png)
