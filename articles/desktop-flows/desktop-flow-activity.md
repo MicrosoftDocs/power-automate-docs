@@ -4,7 +4,7 @@ description: Learn to use the Desktop flow activity in the Power Automate portal
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 01/31/2023
+ms.date: 02/20/2023
 ms.author: quseleba
 ms.reviewer: gtrantzas
 search.app: 
@@ -52,10 +52,6 @@ You can use the **Errors** section to identify the most common errors that occur
 By default, this section displays the desktop flow run errors for the last seven days. Optionally, you can select another time period and filter on specific errors.
 
 You can find information regarding each table in the following list:
-
-
-<!-- The list doesn't include "Top machine group failures". Should it? -->
-
 
 - **Top errors**: This card displays the errors that occur most frequently during your desktop flow runs.  If you can't see a specific error in the card, select the **All errors** filter, and then choose the error that you want to see.
 
@@ -151,11 +147,7 @@ To download the template:
 
 ## Available data for admins and makers
 
-
-<!-- Need a word after Center of Excellent. Members? Participants? -->
-
-
-The **Desktop flow activity** section is helpful for Center of Excellence (CoE) who want to monitor all activity in an environment and makers who want to get an aggregated view of their automation.
+The **Desktop flow activity** section is helpful for Center of Excellence (CoE) users who want to monitor all activity in an environment and makers who want to get an aggregated view of their automation.
 
 If you're the admin of the current environment, you can see all the desktop flows, machines, and machine groups that exist in Dataverse for the environment. If you're a maker, you can see all your desktop flows and machines, including the flows that others share with you.
 
