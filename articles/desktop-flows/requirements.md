@@ -3,7 +3,7 @@ title: Prerequisites and limitations
 description: Learn about the prerequisites and limitations of Power Automate for desktop.
 author: georgiostrantzas
 ms.topic: overview
-ms.date: 01/05/2023
+ms.date: 02/20/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -34,6 +34,9 @@ This article presents all the prerequisites and limitations you should consider 
   - [Learn what features are available for each account type](#sign-in-account-comparison).
 
 - A device with the following hardware (these requirements don't include the resources required for the applications involved in your desktop flows):
+
+  > [!NOTE]
+  > The following hardware requirements apply only to single-user sessions with Power Automate for desktop open.
 
   Minimum hardware:
   - Processor: 1.00 GHz or faster with two or more cores. For unattended mode, four or more cores are needed.
