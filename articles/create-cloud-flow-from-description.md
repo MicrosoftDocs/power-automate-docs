@@ -1,5 +1,5 @@
 ---
-title: Create a cloud flow from a description | Microsoft Docs
+title: Create a cloud flow from a description
 description: Learn to create a cloud flow from a written description of the scenario.
 services: ''
 suite: flow
@@ -39,14 +39,15 @@ When you build automation with Power Automate, it might take valuable time to le
 
 ## Prerequisites
 
-- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in the United States.
+- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
   
   >[!NOTE]
-  >
-  >- You can't create cloud flows from a description if you're logged in with a Microsoft Account.
-  >- If you don’t have access to an environment that's based in the United States, you can [create a new environment and select **United States**](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
+  >You can't create cloud flows from a description if you're logged in with a Microsoft Account.
 
-- For more information, check current [limitations](#limitations).
+  >[!TIP]
+  >If you don’t have access to an environment that's based Europe or the United States, you can [create a new environment and select Europe or United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
+
+- Check current [limitations](#limitations) for more information.
 
 ## Create a flow from a description
 
@@ -108,7 +109,9 @@ In the following example, we'll build an automated cloud flow that sends a notif
   - Microsoft Planner
   - Microsoft SharePoint
   - Microsoft Teams
-
+  - Approvals
+  - Microsoft Dataverse
+  
 ### See also
 
 [Learn more about cloud flows](./overview-cloud.md)
