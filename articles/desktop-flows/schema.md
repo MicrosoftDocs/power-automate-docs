@@ -42,7 +42,7 @@ Convert desktop flows stored in the v1 schema to the v2 schema by Q1 2024, as th
 
 Power Automate desktop flows currently stored in the v1 schema continues functioning as intended in environments where the v2 schema is enabled. New, modified, and resaved desktop flows are stored in the v2 schema.
 
-If a desktop flow belongs to a solution in a v2-enabled environment, follow [these additional steps](alm-schem.md) to ensure the solution package contains all the binaries required for the flow to function correctly.
+If a desktop flow belongs to a solution in a v2-enabled environment, follow [these additional steps](alm-schema.md) to ensure the solution package contains all the binaries required for the flow to function correctly.
 
 ## Roll back converted desktop flows
 
