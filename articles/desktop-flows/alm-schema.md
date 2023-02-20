@@ -17,15 +17,14 @@ search.audienceType:
 
 # Application lifecycle management for Power Automate v2 schema
 
-In the Dataverse data model, desktop flows stored in the v2 schema consist of multiple binaries. To update a desktop flow within a solution that resides in an environment with the v2 schema enabled:
+In the Dataverse data model, desktop flows stored in the v2 schema consist of multiple binaries. This article explains how to update a desktop flow within a solution that resides in an environment with the v2 schema enabled.
 
-## Manage v2 desktop flows in solutions
+## Update a v2 desktop flow and export the solution
 
-Importing a managed solution into the same environment as the originating unmanaged solution isn't possible.
+> [!NOTE]
+> Importing a managed solution into the same environment as the originating unmanaged solution isn't possible.
 
-### Update a v2 desktop flow and export the solution
-
-1. Go to [Power Automate](make.powerautomate.com) and select **Solutions**.
+1. Go to [Power Automate](https://make.powerautomate.com) and select **Solutions**.
 
 1. Select the solution you want to modify.
 
@@ -39,4 +38,4 @@ Importing a managed solution into the same environment as the originating unmana
 
 1. Go back to the solution summary and export the solution as a managed solution.
 
-1. Import the solution into the required environment that must have the v2 schema enabled.
+1. Import the solution into the required environment. This environment must have the v2 schema enabled.
