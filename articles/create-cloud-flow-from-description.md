@@ -66,15 +66,14 @@ In the following example, we'll build an automated cloud flow that sends a notif
    >[!div class="mx-imgBorder"]
    >![A screenshot that displays the confirm button](media/easy-flow/confirm-button.png)
 
-   Power Automate returns up to three suggested flows that correspond to what you've entered. You can select the **See flow** icon to the right of each flow to see a preview of the flow.  
+   Power Automate returns a suggested flows that correspond to what you've entered.
 
    >[!div class="mx-imgBorder"]
    >![A screenshot that displays a suggested flow after providing a description of what to automate](media/easy-flow/describe-flow.png)
 
    >[!NOTE]
-   >If none of the suggestions correspond to what you’re looking to automate, you can select **This is not what I want**. You will see additional guidance on what you can do next, and this signal helps Microsoft to improve the AI behind this feature.
+   >If the suggestions doesn't correspond to what you’re looking to automate, you can select **This isn't what I'm looking for**. You will see additional guidance on what you can do next, and this signal helps Microsoft to improve the AI behind this feature.
 
-1. Select that flow that best suits your needs.
 1. Select **Next**.
 1. Setup all the connections needed to run the flow.
    >[!div class="mx-imgBorder"]
