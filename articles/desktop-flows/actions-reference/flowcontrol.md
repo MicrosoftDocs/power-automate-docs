@@ -1,17 +1,14 @@
 ---
 title: Flow control actions reference
-description: See all the available flow control actions.
+description: Learn about the available flow control actions in desktop flows.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
+ms.date: 02/08/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
-- NikosMoutzourakis
-- PetrosFeleskouras
 search.app: 
   - Flow
 search.audienceType: 
@@ -30,6 +27,15 @@ Flow control is the act of controlling the order in which actions and subflows r
 The **Run subflow** action interrupts the subflow in which it's placed and runs another subflow. When the second subflow completes, the flow reverts to the original subflow to continue running. The following example runs the **Calculate Discount** subflow multiple times throughout the runtime of the flow to avoid repeating the same code.
 
 :::image type="content" source="media/flowcontrol/subflows-example.png" alt-text="Screenshot of the deployed Run subflow action.":::
+
+To visually organize your actions into groups for easier management, enclose them between a **Region** and an **End region** action, and give the region a distinctive name.
+
+These actions don't have any functional effect, but they help group and organize actions for maintenance and readability purposes. For example, you can collapse and expand a region to help focus attention where needed.
+
+You can only use the **Region** and **End region** actions as pairs, and they must belong to the same scope to interlock correctly. If one of the two actions belongs to another group of actions, such as a loop or a conditional, the actions can't form a proper region.
+
+> [!NOTE]
+> If you create multiple regions in a subflow, there's no predetermined mapping between specific **Region** and **End region** actions. Instead, the last **Region** action will try to form a pair with the first available **End region** action that follows.
 
 ## <a name="comment"></a> Comment
 
@@ -52,6 +58,22 @@ This action doesn't include any exceptions.
 ## <a name="end"></a> End
 
 Signifies the end of a block.
+
+### Input parameters
+
+This action doesn't require any input.
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="end_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="endregion"></a> End region
+
+Marks the end of a group of actions.
 
 ### Input parameters
 
@@ -147,6 +169,24 @@ Marks the beginning of a block to handle actions errors.
 |-----|-----|-----|-----|-----|
 |Name|No|[Text value](../variable-data-types.md#text-value)||The name of the Exception Block for Visual purposes only.|
 |Capture unexpected logic errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, dividing a number by zero or trying to access an item from an out of bounds position.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="block_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="region"></a> Region
+
+Marks the beginning of a group of actions.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Name|Yes|[Text value](../variable-data-types.md#text-value)||The name of the region.|
 
 ### Variables produced
 
