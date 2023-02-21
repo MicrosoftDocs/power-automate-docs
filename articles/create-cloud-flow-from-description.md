@@ -18,7 +18,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/24/2023
+ms.date: 02/21/2023
 search.app: 
   - Flow
 search.audienceType: 
@@ -42,7 +42,7 @@ When you build automation with Power Automate, it might take valuable time to le
 - A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
   
   >[!NOTE]
-  >You can't create cloud flows from a description if you're logged in with a Microsoft Account.
+  >You can't create cloud flows from a description if you're logged in with a Microsoft account.
 
   >[!TIP]
   >If you don’t have access to an environment that's based Europe or the United States, you can [create a new environment and select Europe or United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
