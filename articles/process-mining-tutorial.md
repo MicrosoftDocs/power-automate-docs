@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 02/20/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -42,7 +42,9 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select your environment.
 
-1. On the navigation pane to the left, select **Process advisor**.
+1. On the navigation pane to the left, select **Process mining**.
+
+    ![image](https://user-images.githubusercontent.com/113051637/220222737-e85d9de6-f5f9-42dd-a358-3de88cee7460.png)
 
     :::image type="content" source="media/process-mining-tutorial/process-adv-menu.png" alt-text="Screenshot of the process advisor menu selection.":::
 
