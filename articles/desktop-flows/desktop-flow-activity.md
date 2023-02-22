@@ -4,7 +4,7 @@ description: Learn to use the Desktop flow activity in the Power Automate portal
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 02/20/2023
+ms.date: 02/22/2023
 ms.author: quseleba
 ms.reviewer: gtrantzas
 search.app: 
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Desktop flow activity 
+# Desktop flow activity
 
 As you scale the automation of your business processes, you may need access to aggregated data to monitor your desktop flows effectively. The **Desktop flow activity** section of the Power Automate portal (**Monitor** > **Desktop flow activity**) provides dashboards, tables, and graphs to monitor desktop flows, measure effectiveness, and quickly identify issues.  
 
@@ -24,6 +24,15 @@ You can filter the presented data by date, desktop flow, cloud flow, machine, ru
 >
 >- Some filters may not be available for some pivots because of the nature of the presented data.
 >- When you move between pivots, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
+
+## Available data for admins and makers
+
+The **Desktop flow activity** section is helpful for Center of Excellence (CoE) users who want to monitor all activity in an environment and makers who want to get an aggregated view of their automation. Learn more about the CoE in [Microsoft Power Platform Center of Excellence Starter Kit](/power-platform/guidance/coe/starter-kit)
+
+If you're the admin of the current environment, you can see all the desktop flows, machines, and machine groups that exist in Dataverse for the environment. If you're a maker, you can see all your desktop flows and machines, including the flows that others share with you.
+
+> [!NOTE]
+> If a cloud flow appears as **private flow**, it means that it isn't shared with you. Cloud flows aren't saved in Dataverse, and environment admins need to [get access to the flows](../create-team-flows.md) to read details about them.
 
 ## Last runs: Monitor desktop flow runs
 
@@ -99,6 +108,8 @@ By selecting **Auto refresh**, all the cards will be refreshed automatically.
 
 ## Monitor desktop flow activity with Power BI desktop (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 Power Automate enables you to download a Power BI template to monitor desktop flow activity from the Power BI desktop application. [Learn more about Power BI desktop](/power-bi/fundamentals/desktop-what-is-desktop).
 
 You can use this template to retrieve the data and charts displayed on the desktop flow activity page, such as last runs, main errors, and machine information.
@@ -144,12 +155,3 @@ To download the template:
 - Microsoft can regularly provide updates for this template. You need to redownload the Power BI template if you want to get the latest version of it.
 
 - There's no migration of your changes between template versions.
-
-## Available data for admins and makers
-
-The **Desktop flow activity** section is helpful for Center of Excellence (CoE) users who want to monitor all activity in an environment and makers who want to get an aggregated view of their automation.
-
-If you're the admin of the current environment, you can see all the desktop flows, machines, and machine groups that exist in Dataverse for the environment. If you're a maker, you can see all your desktop flows and machines, including the flows that others share with you.
-
-> [!NOTE]
-> If a cloud flow appears as **private flow**, it means that it isn't shared with you. Cloud flows aren't saved in Dataverse, and environment admins need to [get access to the flows](../create-team-flows.md) to read details about them.
