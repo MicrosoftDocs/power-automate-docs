@@ -1,6 +1,6 @@
 ---
-title: Edge statistics (preview)
-description: View edges in the process undergoing analysis and display their various properties in the Minit desktop application in process advisor.
+title: Edge statistics
+description: View edges in the process undergoing analysis and display their various properties in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Edge statistics (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Edge statistics
 
 These statistics refer to edges in the process undergoing analysis and display their various properties. Edge statistics can be reviewed from the perspective of activities (process map-related edges) as well as from the viewpoint of resources (social chart-related edges).
 

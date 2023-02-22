@@ -1,6 +1,6 @@
 ---
-title: Process context (preview)
-description: Learn about the process settings you can change in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Process context
+description: Learn about the process settings you can change in the Power Automate Process Mining desktop app in Power Automate.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Process context (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Process context
 
 The **Process context** page is where you can create and manage settings that you want to apply to the views you create for a process.
 

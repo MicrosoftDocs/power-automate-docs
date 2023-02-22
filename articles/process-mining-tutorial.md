@@ -1,13 +1,13 @@
 ---
-title: Get started with process mining in process advisor (preview)
-description: This topic is a tutorial with sample data in process mining using the process advisor feature in Power Automate.
+title: Get started with process mining
+description: This topic is a tutorial with sample data in process mining for Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 3/15/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -17,9 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Tutorial: Get started with process mining (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Tutorial: Get started with process mining
 
 This tutorial allows you to experience process mining with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
 

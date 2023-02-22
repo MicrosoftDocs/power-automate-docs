@@ -1,6 +1,6 @@
 ---
-title: List of unary operators (preview)
-description: Get a list of unary operators in the Minit desktop application in process advisor.
+title: List of unary operators
+description: Get a list of unary operators in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# List of unary operators (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# List of unary operators
 
 The following tables describe unary and binary operators.
 

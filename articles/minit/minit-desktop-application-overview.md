@@ -37,7 +37,7 @@ Power Automate Process Mining keeps you informed about progress toward key proce
 - Standardize and optimize operations
 
 <!-- REMOVE
-:::image type="content" alt-text="Screenshot of the Minit desktop application." source="media/image-24a.png"::: -->
+:::image type="content" alt-text="Screenshot of the Power Automate Process Mining desktop app." source="media/image-24a.png"::: -->
 
 ## Components
 
@@ -57,3 +57,6 @@ Following are the main components in Power Automate Process Mining:
 
 - [Export](export.md)
 
+- [Filtering](filtering.md)
+
+- [Settings](settings.md)

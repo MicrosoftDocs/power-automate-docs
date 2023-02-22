@@ -1,6 +1,6 @@
 ---
-title: List of string operations (preview)
-description: Get a list of string operations that you can use in the Minit desktop application in process advisor.
+title: List of string operations
+description: Get a list of string operations that you can use in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,11 +17,9 @@ search.audienceType:
 - enduser
 ---
 
-# List of string operations (preview)
+# List of string operations
 
 Following are the string operations that you can use in the minit desktop application in process advisor.
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ## CONCAT([string1],...,[stringN])
 

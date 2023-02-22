@@ -1,6 +1,6 @@
 ---
-title: Process map overview (preview)
-description: Learn how to use a process map for process mining in the minit desktop application in process advisor.
+title: Process map overview
+description: Learn how to use a process map for process mining in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Process map overview (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Process map overview
 
 A process map represents the behavior of a process captured in data by means of activities and directed edges.
 

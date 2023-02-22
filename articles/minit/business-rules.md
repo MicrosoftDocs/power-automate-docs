@@ -1,6 +1,6 @@
 ---
-title: Business rules overview (preview)
-description: Learn how to define business rules that evaluate KPIs in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Business rules overview
+description: Learn how to define business rules that evaluate KPIs in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Business rules overview (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Business rules overview
 
 Minit allows you to define business rules that evaluate your key performance indicators (KPI). Business rules set thresholds that are associated with a category flag&mdash;**Error**, **Warning**, or **OK**&mdash;to help you quickly spot problems in your processes.
 

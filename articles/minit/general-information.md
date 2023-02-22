@@ -1,6 +1,6 @@
 ---
-title: Tips and examples (preview)
-description: Get tips on how to define a metric formula, reference an attribute name, and more in the Minit desktop application in process advisor.
+title: Tips and examples
+description: Get tips on how to define a metric formula, reference an attribute name, and more in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Tips and examples (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Tips and examples
 
 ## Metric formula
 

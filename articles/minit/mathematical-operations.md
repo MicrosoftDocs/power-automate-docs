@@ -1,6 +1,6 @@
 ---
-title: List of mathematical operations (preview)
-description: Get a list of the parameters and output data types for mathematical features in the init desktop application in process advisor.
+title: List of mathematical operations
+description: Get a list of the parameters and output data types for mathematical features in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# List of mathematical operations (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# List of mathematical operations
 
 ## ABS([value])
 

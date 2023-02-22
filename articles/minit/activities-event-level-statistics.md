@@ -1,6 +1,6 @@
 ---
-title: Activities (event-level) statistics (preview)
-description: Learn about statistics for process activities (events) in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Activities (event-level) statistics
+description: Learn about statistics for process activities (events) in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Activities (event-level) statistics (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Activities (event-level) statistics
 
 Minit provides statistics at the level of activities, or events, in both chart and table form. You can customize many aspects of both the chart and the tabular data that's displayed.
 

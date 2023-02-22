@@ -1,6 +1,6 @@
 ---
-title: List of statistical operations (preview)
-description: Learn the statistical operations in the Minit desktop application in process advisor.
+title: List of statistical operations
+description: Learn the statistical operations in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# List of statistical operations (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# List of statistical operations
 
 This article lists statistical operations in the minute desktop application.
 

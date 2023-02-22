@@ -1,5 +1,5 @@
 ---
-title: Process hub overview (preview)
+title: Process hub overview
 description: Learn how to open the process hub, choose an environment, and understand view tiles in the Minit desktop application for Microsoft Power Automate process advisor. 
 author: maslejka
 contributors:
@@ -20,7 +20,6 @@ search.audienceType:
 
 # Process hub overview (preview)
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The process hub is Minit's home page. It's where you'll find an overview of your processes and views. It's also where you can dig deeper into your processes by creating different views, or ways of analyzing your processes.
 

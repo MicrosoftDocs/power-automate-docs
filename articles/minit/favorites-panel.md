@@ -1,6 +1,6 @@
 ---
-title: Frequently used parameters for the favorites panel (preview)
-description: Learn how to define a default list of favorite parameters in the Minit desktop application in process advisor.
+title: Frequently used parameters for the favorites panel
+description: Learn how to define a default list of favorite parameters in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Frequently used parameters for the favorites panel (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Frequently used parameters for the favorites panel
 
 By default, the details panel displays a full list of parameters per selected activity or path. You're able to select a subset of the most frequently used parameters to be displayed in **Favorites** panel. Selecting the parameter row in the **All Data** list, the parameter is included or removed from the favorites list, indicated by empty or full heart icon.
 

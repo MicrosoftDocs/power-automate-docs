@@ -1,6 +1,6 @@
 ---
-title: Working hours (preview)
-description: Learn how to define calendar templates in the Minit desktop application in process advisor.
+title: Working hours
+description: Learn how to define calendar templates in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Working hours (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Working hours
 
 The Working hours section allows you to define calendar templates, which can be applied to process views in the Process explorer in order to influence the performance analysis calculation, which is by default performed on a 24/7 basis.
 

@@ -1,6 +1,6 @@
 ---
-title: Calculation context (preview)
-description: Learn how to define the data scope that's used as the source for an aggregation function in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Calculation context
+description: Learn how to define the data scope that's used as the source for an aggregation function in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Calculation context (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Calculation context
 
 In aggregation functions, the calculation context defines the data scope that's used as the source for the aggregation. Minit provides several data calculation modes, which are described in [Requirements for application](requirements-for-application.md).
 

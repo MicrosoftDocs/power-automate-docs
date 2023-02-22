@@ -1,6 +1,6 @@
 ---
-title: Statistics overview (preview)
-description: Get an overview of the properties of the process undergoing analysis in the Minit desktop application in process advisor.
+title: Statistics overview
+description: Get an overview of the properties of the process undergoing analysis in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Statistics overview (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Statistics overview
 
 This section provides a brief and easy-to-understand overview of the properties of the process undergoing analysis and contains the information about the process through summary charts and statistics. Statistics are shown in the upper part, the bottom part contains the listings of specific records displayed in the statistics.
 

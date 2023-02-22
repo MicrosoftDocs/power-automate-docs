@@ -1,13 +1,13 @@
 ---
-title: Root cause analysis (preview)
-description: Learn how to find hidden connections in your data in the init desktop application in process advisor.
+title: Root cause analysis
+description: Learn how to find hidden connections in your data in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/15/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Root cause analysis (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Root cause analysis
 
 Root cause analysis allows you to find hidden connections in your data.
 

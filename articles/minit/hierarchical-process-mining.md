@@ -1,6 +1,6 @@
 ---
-title: Hierarchical process mining (preview)
-description: Learn how to define the hierarchy in the process map and social chart in the Minit desktop application in process advisor.
+title: Hierarchical process mining
+description: Learn how to define the hierarchy in the process map and social chart in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Hierarchical process mining (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Hierarchical process mining
 
 To define the hierarchy in the process map/social chart, go to the **Hierarchy section** of the Customize panel in the Process Map view and use the **Add hierarchy** option in the context menu:
 

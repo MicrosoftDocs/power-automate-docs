@@ -1,6 +1,6 @@
 ---
-title: Case attributes filter (preview)
-description: Learn how to use the case attributes filter in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Case attributes filter
+description: Learn how to use the case attributes filter in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Case attributes filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Case attributes filter
 
 The **Attributes** filter selects cases that contain&mdash;or don't contain&mdash;a specific attribute. Use it, for example, to select cases that include a certain activity or resource.
 

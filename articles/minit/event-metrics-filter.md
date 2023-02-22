@@ -1,6 +1,6 @@
 ---
-title: Event metrics filter (preview)
-description: Learn how to filter events based on various metrics in the Minit desktop application in process advisor.
+title: Event metrics filter
+description: Learn how to filter events based on various metrics in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Event metrics filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Event metrics filter
 
 This event level filter can be used to filter events based on various metrics. Only event metrics are applicable here.
 

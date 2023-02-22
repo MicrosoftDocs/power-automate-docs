@@ -1,6 +1,6 @@
 ---
-title: Case attributes conditional filter (preview)
-description: Learn how to use the case attributes conditional filter in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Case attributes conditional filter
+description: Learn how to use the case attributes conditional filter in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Case attributes conditional filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Case attributes conditional filter
 
 The **Attributes (conditional)** filter adds conditions to the **Attribute** filter. Use it, for example, to find all cases where an approval activity occurs, but only if a specific resource executed the approval or the duration of the activity exceeds a certain KPI.
 

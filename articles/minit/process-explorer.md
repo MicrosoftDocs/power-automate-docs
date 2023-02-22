@@ -1,6 +1,6 @@
 ---
-title: Process explorer overview (preview)
-description: Learn how to use the process and process analysis tasks view in the Minit desktop application in process advisor.
+title: Process explorer overview
+description: Learn how to use the process and process analysis tasks view in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Process explorer overview (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Process explorer overview
 
 The process explorer displays the map of a process and settings and tasks that you can use to analyze it in different ways.
 

@@ -1,6 +1,6 @@
 ---
-title: List of date and time operations (preview)
-description: Get a list of date and time operations in the minit desktop application in process advisor.
+title: List of date and time operations
+description: Get a list of date and time operations in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# List of date and time operations (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# List of date and time operations
 
 ## TODATE([year],[month],[day])
 

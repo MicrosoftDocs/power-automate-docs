@@ -1,6 +1,6 @@
 ---
-title: Variants filter (preview)
-description: Learn how to restrict the mining in the process only to the cases following a certain scenario in the Minit desktop application in process advisor.
+title: Variants filter
+description: Learn how to restrict the mining in the process only to the cases following a certain scenario in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Variants filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Variants filter
 
 Use this filter to restrict the mining in the process only to the cases following a certain scenario (variant).
 

@@ -1,6 +1,6 @@
 ---
-title: Prepare processes and data with process mining (preview) in the process advisor feature in Power Automate (contains video)
-description: This topic explains how to prepare processes and data with process mining in the process advisor feature in Power Automate.
+title: Prepare processes and data with process mining in the process mining feature in Power Automate (contains video)
+description: This topic explains how to prepare processes and data with process mining in Power Automate.
 author: donums
 contributors:
   - donums
@@ -17,9 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Prepare processes and data in process advisor (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Prepare processes and data in process mining
 
 Before you can use process mining effectively, you need to understand:
 

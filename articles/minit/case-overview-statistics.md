@@ -1,6 +1,6 @@
 ---
-title: Case overview statistics (preview)
-description: Learn how to gather case overview statistics in the Minit desktop application in process advisor.
+title: Case overview statistics
+description: Learn how to gather case overview statistics in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Case overview statistics (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Case overview statistics
 
 Gather case overview statistics (preview)Case overview statistics provide information for case-level attributes and metrics. They also contain a table of cases in the actual view with standard and custom case-level metrics, including generated case cost metrics (based on the financial attributes in the process).
 

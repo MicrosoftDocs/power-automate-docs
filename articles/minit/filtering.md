@@ -1,13 +1,13 @@
 ---
-title: Filtering overview (preview)
-description: Learn how to adjust which cases will be included in the process analysis in the minit desktop application in process advisor.
+title: Filtering overview
+description: Learn how to adjust which cases will be included in the process analysis in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 03/15/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Filtering (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Filtering
 
 Use filters to adjust which cases will be included in the process analysis.
 

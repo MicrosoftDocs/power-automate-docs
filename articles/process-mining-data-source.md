@@ -1,6 +1,6 @@
 ---
-title: Edit and refresh processes in process advisor (preview) | Microsoft Docs
-description: This topic describes how to edit and refresh processes with process mining in the process advisor feature in Power Automate.
+title: Edit and refresh processes in process mining
+description: Learn how to edit and refresh processes with process mining in Power Automate.
 author: donums
 contributors:
   - donums
@@ -17,9 +17,8 @@ search.audienceType:
   - enduser
 ---
 
-# Edit and refresh processes in process advisor (preview)
+# Edit and refresh processes in process mining
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Some of the reasons why you might want to edit the query are:
 

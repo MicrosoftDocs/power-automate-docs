@@ -1,6 +1,6 @@
 ---
-title: Case categorization (preview)
-description: Learn how to categorize cases in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Case categorization
+description: Learn how to categorize cases in the Power Automate Process Mining desktop app for Power Automate.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Case categorization (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Case categorization
 
 Case categorization allows you to identify which cases are **Finished**, **Running**, **Stuck**, and **Incompletely imported**. You can then use these categories in custom metrics.
 

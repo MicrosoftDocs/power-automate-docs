@@ -1,6 +1,6 @@
 ---
-title: Export and import filters (preview)
-description: Learn how to export existing filters in the view and re-use them in another view or process in the Minit desktop application in process advisor.
+title: Export and import filters
+description: Learn how to export existing filters in the view and re-use them in another view or process in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Export and import filters (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Export and import filters
 
 Minit offers an option to export existing filters in the view and re-use them in another view or process. To export or import filters, select the last icon in the Filters header column.
 

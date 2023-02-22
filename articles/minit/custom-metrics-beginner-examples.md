@@ -1,6 +1,6 @@
 ---
-title: Basic examples (preview)
-description: Get examples of various calculation methods for custom metrics with a focus on proper context and aggregation selection in the Minit desktop application.
+title: Basic examples
+description: Get examples of various calculation methods for custom metrics with a focus on proper context and aggregation selection in the Power Automate Process Mining desktop app.
 author: mmaslejova
 contributors:
   - mmaslejova
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Basic examples (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Basic examples
 
 The following examples shows various calculation methods for custom metrics with focus on proper context/aggregation selection. The examples are done over tiny data example, which can be calculated by user manually. ​The examples don't focus on custom metrics operators, so no additional knowledge of specific operators is required. For complete list of supported operators (like statistical, calendar or math functions) please see Custom metrics help pages, which contain the full references.​
 

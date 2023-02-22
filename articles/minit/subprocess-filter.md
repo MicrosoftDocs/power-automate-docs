@@ -1,6 +1,6 @@
 ---
-title: Subprocess filter (preview)
-description: Learn how to remove part of a process from cases in the Minit desktop application in process advisor.
+title: Subprocess filter
+description: Learn how to remove part of a process from cases in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Subprocess filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Subprocess filter
 
 Use this event level filter to „cut out" a part of the process from all the cases (where the criteria for subprocess don't apply, case is completely excluded). For example, in a purchase order approval process we want to focus on the part from purchase order creation until the purchase order is marked as approved, or in a service center ticket solving process we want to see only the part being dealt by the second level support department.
 

@@ -1,6 +1,6 @@
 ---
-title: Visualize and gain insights from processes in process advisor (preview) (contains video) | Microsoft Docs
-description: This topic explains how to visualize and gain insights from processes with process mining in the process advisor feature in Power Automate.
+title: Visualize and gain insights from processes in process mining (contains video)
+description: This topic explains how to visualize and gain insights from processes with process mining in Power Automate.
 author: donums
 contributors:
   - donums
@@ -17,9 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Visualize and gain insights from processes in process advisor (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Visualize and gain insights from processes in process mining
 
 This topic explains metrics and visuals, and what they could tell you about your process.
 

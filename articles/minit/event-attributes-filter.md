@@ -1,6 +1,6 @@
 ---
-title: Event attributes filter (preview)
-description: Learn how to use the event attributes filter in the Minit desktop application in process advisor.
+title: Event attributes filter
+description: Learn how to use the event attributes filter in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Event attributes filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Event attributes filter
 
 Use this event level filter to only select those events in cases that contain/don't contain a specific attribute value – such as only certain activities or events performed by a certain department (for example, First line support department for ServiceDesk).
 
