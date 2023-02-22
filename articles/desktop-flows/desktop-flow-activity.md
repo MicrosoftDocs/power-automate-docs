@@ -27,7 +27,7 @@ You can filter the presented data by date, desktop flow, cloud flow, machine, ru
 
 ## Available data for admins and makers
 
-The **Desktop flow activity** section is helpful for Center of Excellence (CoE) users who want to monitor all activity in an environment and makers who want to get an aggregated view of their automation. Learn more about the CoE in [Microsoft Power Platform Center of Excellence Starter Kit](/power-platform/guidance/coe/starter-kit)
+The **Desktop flow activity** section is helpful for Center of Excellence (CoE) users who want to monitor all activity in an environment and makers who want to get an aggregated view of their automation. Learn more about the CoE in [Microsoft Power Platform Center of Excellence Starter Kit](/power-platform/guidance/coe/starter-kit).
 
 If you're the admin of the current environment, you can see all the desktop flows, machines, and machine groups that exist in Dataverse for the environment. If you're a maker, you can see all your desktop flows and machines, including the flows that others share with you.
 
