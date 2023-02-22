@@ -28,7 +28,7 @@ search.audienceType:
 >[!IMPORTANT]
 > As of August 2022, you can no longer create or manage business process flows from Power Automate outside of the solution explorer. Business process flows and instances continue to be supported through the solution explorer, Power Apps, and Dataverse table views.
 
-This article shows you how to create a business process flow with [Power Apps](/power-apps/powerapps-overview). To learn more about the benefits of using business process flows, see [Business process flows overview](business-process-flows-overview.md). For information on how to create mobile task flows, see [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
+This article shows you how to create a business process flow with [Power Apps](/power-apps/powerapps-overview). To learn more about the benefits of using business process flows, go to [Business process flows overview](business-process-flows-overview.md). For information on how to create mobile task flows, go to [Create a mobile task flow](/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
  When a user starts a business process flow, the stages and steps of the process display in the process bar at the top of a form.  
   
@@ -90,7 +90,7 @@ This article shows you how to create a business process flow with [Power Apps](/
      1. Drag the **Condition** component from the **Components** tab to a + sign between two stages.
      
         ![Add a Condition to a business process flow.](media/add-condition-business-process-flow.png "Add a Condition to a business process flow")
-     2. Select the condition, and then set properties in the **Properties** tab. For more information on branching properties, see [Enhance business process flows with branching](enhance-business-process-flows-branching.md). When you're finished setting properties for the condition, select **Apply**.  
+     2. Select the condition, and then set properties in the **Properties** tab. For more information on branching properties, go to [Enhance business process flows with branching](enhance-business-process-flows-branching.md). When you're finished setting properties for the condition, select **Apply**.  
 7. **Add a workflow.** To invoke a workflow:  
   
     1. Drag a **Workflow** component from the **Components** tab to a stage or to the **Global Workflow** item in the designer.   Which one you add it to depends on the following:  
@@ -104,7 +104,7 @@ This article shows you how to create a business process flow with [Power Apps](/
         3. Search for an existing on-demand active workflow that matches the stage table or create a new workflow by selecting **New**.  
         4. Select **Apply** when you're done.  
   
-    For more information on workflows, see [Workflow processes](/power-automate/workflow-processes).  
+    For more information on workflows, go to [Workflow processes](/power-automate/workflow-processes).  
   
 8. To validate the business process flow, select **Validate** on the action bar.  
 9. To save the process as a draft while you continue to work on it, select **Save** in the action bar.  
@@ -123,7 +123,7 @@ This article shows you how to create a business process flow with [Power Apps](/
 
    ![Assign privileges to a business process flow.](media/bpf-assign-privileges.png)
 
-  Specify privileges by selecting the appropriate radio buttons, and click Save. For more information about privileges, see [Business process flow privileges](business-process-flows-overview.md#BKMK_MultipleBPF).
+  Specify privileges by selecting the appropriate radio buttons, and click Save. For more information about privileges, go to [Business process flow privileges](business-process-flows-overview.md).
 
   Next, don't forget to assign the security role to appropriate users in your organization.
 
@@ -165,7 +165,7 @@ You can add or change the following properties of a stage:
  Each stage can have up to 30 steps.
   
 **Add branch**  
-To learn about adding a branch to a stage, see [Enhance business process flows with branching](enhance-business-process-flows-branching.md).  
+To learn about adding a branch to a stage, go to [Enhance business process flows with branching](enhance-business-process-flows-branching.md).  
   
 To make a business process flow available for people to use, you must order the process flow, enable security roles, and activate it.  
   
