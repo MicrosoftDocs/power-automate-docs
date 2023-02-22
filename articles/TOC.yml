@@ -335,6 +335,10 @@
       href: ./desktop-flows/install-browser-extensions.md
     - name: Migration to Manifest V3 (browser extensions)
       href: ./desktop-flows/manifest.md
+    - name: Power Automate v2 schema
+      href: ./desktop-flows/schema.md
+    - name: Application lifecycle management for Power Automate v2 schema
+      href: ./desktop-flows/alm-schema.md    
     - name: Create a Dataverse database
       href: ./desktop-flows/create-database.md
     - name: Governance
@@ -399,7 +403,7 @@
     href: ./desktop-flows/manage.md
   - name: Monitor desktop flows
     items:
-    - name: Desktop flow activity (preview)
+    - name: Desktop flow activity
       href: ./desktop-flows/desktop-flow-activity.md
     - name: Desktop flow runs
       href: ./desktop-flows/monitor-desktop-flow-runs.md

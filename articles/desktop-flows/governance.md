@@ -4,7 +4,7 @@ description: Learn how to configure Power Automate using Windows registry keys.
 author: georgiostrantzas
 
 ms.topic: article
-ms.date: 02/17/2023
+ms.date: 02/20/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -85,7 +85,7 @@ To restrict access to Power Automate for desktop on a workstation with Windows 1
 
 You can use the following registry entry to allow users to sign in to Power Automate for desktop using Windows Web Account Manager (WAM).
 
-WAM enables certain features that aren't available through the default login process, such as Single Sign-On (SSO) and Azure Directory Federation Services (ADFS).
+WAM enables certain features that aren't available through the default login process, such as single sign-on (SSO).
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
