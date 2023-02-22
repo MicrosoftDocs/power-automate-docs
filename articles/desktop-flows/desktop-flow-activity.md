@@ -1,5 +1,5 @@
 ---
-title: Desktop flow activity (preview)
+title: Desktop flow activity 
 description: Learn to use the Desktop flow activity in the Power Automate portal.
 author: georgiostrantzas
 ms.subservice: desktop-flow
@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Desktop flow activity (preview)
+# Desktop flow activity 
 
 As you scale the automation of your business processes, you may need access to aggregated data to monitor your desktop flows effectively. The **Desktop flow activity** section of the Power Automate portal (**Monitor** > **Desktop flow activity**) provides dashboards, tables, and graphs to monitor desktop flows, measure effectiveness, and quickly identify issues.  
 
