@@ -4,7 +4,7 @@ description: Check if a variable is numeric
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 07/13/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

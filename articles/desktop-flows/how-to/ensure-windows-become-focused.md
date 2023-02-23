@@ -4,7 +4,7 @@ description: Ensure that application windows become focused
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/06/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

@@ -4,7 +4,7 @@ description: Use a shared Outlook mailbox in email automations
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 06/03/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

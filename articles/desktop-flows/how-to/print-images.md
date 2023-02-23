@@ -4,7 +4,7 @@ description: Print images
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 06/08/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

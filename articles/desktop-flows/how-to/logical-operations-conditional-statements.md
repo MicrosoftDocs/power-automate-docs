@@ -4,7 +4,7 @@ description: Use logical operations on conditional statements
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/06/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

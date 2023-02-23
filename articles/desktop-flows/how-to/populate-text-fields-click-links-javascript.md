@@ -4,7 +4,7 @@ description: Populate text fields and click on links using JavaScript
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 07/01/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

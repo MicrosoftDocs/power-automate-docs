@@ -4,7 +4,7 @@ description: Automate applications using keyboard shortcuts
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 06/09/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

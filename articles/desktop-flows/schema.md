@@ -3,7 +3,7 @@ title: Power Automate v2 schema
 description: Learn about the Power Automate v2 schema.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 02/20/2023
 ms.author: dbekirop
 ms.reviewer: gtrantzas

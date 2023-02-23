@@ -4,7 +4,7 @@ description: Automate using mouse & keyboard and OCR actions (recommended for au
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/17/2021
 ms.author: marleon
 ms.reviewer: gtrantzas
