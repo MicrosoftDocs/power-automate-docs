@@ -4,7 +4,7 @@ description: Run macros on an Excel workbook
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/24/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

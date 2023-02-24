@@ -4,7 +4,7 @@ description: Automate browser prompts
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/06/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

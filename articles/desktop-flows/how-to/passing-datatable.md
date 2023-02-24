@@ -4,7 +4,7 @@ description: Pass a datatable from a cloud flow to a desktop flow
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/22/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

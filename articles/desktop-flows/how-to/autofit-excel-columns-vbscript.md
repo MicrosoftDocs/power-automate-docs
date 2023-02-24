@@ -4,7 +4,7 @@ description: Autofit Excel columns using VBScript
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/13/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

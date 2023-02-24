@@ -4,7 +4,7 @@ description: Set screen resolution on unattended mode
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/16/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

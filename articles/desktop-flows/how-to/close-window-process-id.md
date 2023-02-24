@@ -4,7 +4,7 @@ description: Close any window through its process ID
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/03/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

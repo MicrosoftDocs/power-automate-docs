@@ -4,7 +4,7 @@ description: Handle links that open new tabs
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/04/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

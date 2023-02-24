@@ -4,7 +4,7 @@ description: Automate Java applications
 author: mariosleon
 
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/08/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

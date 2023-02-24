@@ -4,7 +4,7 @@ description: Convert a text value to datetime
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/01/2022
 ms.author: marleon
 ms.reviewer: gtrantzas
