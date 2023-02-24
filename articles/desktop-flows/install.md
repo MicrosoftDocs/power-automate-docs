@@ -3,7 +3,7 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: georgiostrantzas
 ms.topic: how-to
-ms.date: 01/05/2023
+ms.date: 02/24/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -23,7 +23,9 @@ Before you install Power Automate on your device, make sure that it meets the [s
 
 > [!IMPORTANT]
 >
-> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
+> - Windows recorder (V1) is deprecated and no longer works.
+> - Migrate your flows created with these solutions to Power Automate for desktop or delete them.
 
 You can download and install Power Automate [using an MSI installer](#install-power-automate-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). Microsoft Store installation doesn't require you to have admin rights on your device.
 
@@ -81,7 +83,7 @@ When you install an on-premises data gateway, it defaults to the region that Pow
 
 > [!IMPORTANT]
 >
-> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> Selenium IDE is deprecated and will no longer work after February 28th, 2023. Migrate your flows to Power Automate for desktop or delete them.
 
 Selenium IDE is an open source tool that enables you to record and playback human interactions on websites. With desktop flows, you can run Selenium IDE scripts from Power Automate and keep them stored securely (with appropriate IT governance) in Dataverse.
 
