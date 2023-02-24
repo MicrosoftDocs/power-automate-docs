@@ -4,7 +4,7 @@ description: Create custom forms
 author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 02/14/2022
 ms.author: marleon
 ms.reviewer: gtrantzas

@@ -4,7 +4,7 @@ description: See all the available data type properties of desktop flow variable
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: marleon
 ms.reviewer: gtrantzas
