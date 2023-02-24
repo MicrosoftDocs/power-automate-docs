@@ -32,7 +32,7 @@ search.audienceType:
 > [!IMPORTANT]
 >
 > - WinAutomation and ProcessRobot are no longer supported. Learn more about the Softomotive products deprecation [here](/previous-versions/troubleshoot/winautomation/softomotive-useful-information/softomotive-products-end-of-support-announcement). [Migrate your flows](softomotive-migrator.md) to Power Automate for desktop.
-> - Windows recorder (V1) is deprecated and no longer works. Migrate your flows created with these solutions to Power Automate for desktop or delete them.
+> - Windows recorder (V1) is deprecated and no longer works. Migrate your flows created to Power Automate for desktop or delete them.
 
 You may migrate your flows to Power Automate. See the Power Automate Desktop documentation to learn about the evolution of WinAutomation.
 
