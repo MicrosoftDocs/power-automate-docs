@@ -2,7 +2,7 @@
 title: Install Power Automate silently
 description: Learn how to install Power Automate for desktop without user intervention.
 author: georgiostrantzas
-ms.topic: article
+ms.topic: conceptual
 ms.date: 01/05/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
