@@ -4,7 +4,7 @@ description: Power Automate for desktop architecture
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/01/2022
 ms.author: marleon
 ms.reviewer: gtrantzas

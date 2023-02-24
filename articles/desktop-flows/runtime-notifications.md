@@ -3,7 +3,7 @@ title: Runtime notifications
 description: See the different types of Power Automate for desktop runtime notifications.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 02/16/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas

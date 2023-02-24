@@ -4,7 +4,7 @@ description: Automate email accounts with two-step verification
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 07/22/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

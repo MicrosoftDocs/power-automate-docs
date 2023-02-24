@@ -3,7 +3,7 @@ title: Run unattended desktop flows
 description: See how to run unattended desktop flows on your device.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 02/15/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
