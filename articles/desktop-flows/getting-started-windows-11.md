@@ -4,7 +4,7 @@ description: Get started with Power Automate in Windows 11
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article 
+ms.topic: conceptual 
 ms.date: 12/01/2022
 ms.custom: intro-internal
 ms.author: marleon

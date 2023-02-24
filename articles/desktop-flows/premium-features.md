@@ -3,7 +3,7 @@ title: Premium RPA features
 description: Premium robotic process automation (RPA) features
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/02/2022
 ms.author: marleon
 ms.reviewer: gtrantzas
