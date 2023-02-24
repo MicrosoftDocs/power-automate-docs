@@ -4,7 +4,7 @@ description: Making use of the Power Automate Azure Virtual Desktop Integration 
 services: ''
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/28/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

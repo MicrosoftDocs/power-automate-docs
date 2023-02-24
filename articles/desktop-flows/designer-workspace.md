@@ -4,7 +4,7 @@ description: The flow designer workspace
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/27/2022
 ms.author: marleon
 ms.reviewer: gtrantzas

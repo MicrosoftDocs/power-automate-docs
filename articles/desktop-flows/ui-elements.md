@@ -4,7 +4,7 @@ description: Learn how to capture UI elements in your desktop flows.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 01/24/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
