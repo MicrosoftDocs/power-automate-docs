@@ -3,7 +3,7 @@ title: Governance in Power Automate
 description: Learn how to configure Power Automate using Windows registry keys.
 author: georgiostrantzas
 
-ms.topic: article
+ms.topic: conceptual
 ms.date: 02/20/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
