@@ -34,6 +34,7 @@ For example, as a business owner in accounts payable, you can use process adviso
 You can easily filter for custom attributes such as location, department, and other dimensions that are relevant to your process.
 
 ## Components
+
 - [Data requirements](process-mining-processes-and-data.md#data-requirements)
 
 - [Transform and map data](process-mining-transform.md)

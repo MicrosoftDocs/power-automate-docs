@@ -1,13 +1,13 @@
 ---
-title: Process context
-description: Learn about the process settings you can change in the Power Automate Process Mining desktop app in Power Automate.
+title: Manage settings with process context
+description: Learn about the process settings you can change in the minit desktop application.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 03/15/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -18,24 +18,38 @@ search.audienceType:
 - enduser
 ---
 
-# Process context
+# Manage settings with process context
 
 The **Process context** page is where you can create and manage settings that you want to apply to the views you create for a process.
 
-To open the process context, either select the icon below the process name, or select (**...**) to the right of the process name and then select **Process context**.
+## Open the Process context screen
 
-:::image type="content" source="media/PC-overview-1.png" alt-text="Screenshot of the process hub, with the process context icon highlighted.":::
+There are two ways to open the **Process context** screen depending on where you are in the application.
 
-The **Process context** page contains the following subsections:
+- **From the Processes screen:** Select the **Process context** icon.
+
+    :::image type="content" source="media/process-context-icon.png" alt-text="Screenshot of the process context icon.":::
+
+- **From any other screen in the desktop application:** On the menu bar in the upper right corner, select **Process context**.
+
+## Launch process mining capabilities
+
+On the **Process context** screen, you can launch the following capabilities. To learn about each capability, select the link.
 
 - **Custom metrics**: Create and manage [custom metrics](custom-metrics.md).
 
-- **Map hierarchies**: Create and manage [hierarchies](hierarchical-process-mining.md).
-
 - **Business rules**: Create and manage [business rules](business-rules.md).
+
+- **Map Hierarchies**: Create and manage [hierarchies](hierarchical-process-mining.md).
+
+
 
 - **Case categorization**: [Categorize cases](case-categorization.md) as Running, Finished, or Stuck.
 
 - **General settings**: Select the [default **Activity label**](view-settings.md).
 
-:::image type="content" alt-text="Screenshot of the Custom metrics tab." source="media/PC-overview.png":::
+    :::image type="content" alt-text="Screenshot of the Custom metrics tab." source="media/PC-overview.png":::
+
+### See also
+
+[Explore the home page](process-hub.md)

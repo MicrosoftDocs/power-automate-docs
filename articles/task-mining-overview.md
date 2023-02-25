@@ -25,11 +25,11 @@ Task mining enables you to discover tasks happening on the desktop. You can zoom
 
 ## Business example
 
-In a healthcare facility, you can use task mining to record patient check-in procedures. Process mining automatically produces a process map that visualizes the check-in process. You can learn which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
+In a healthcare facility, you can use task mining to record patient check-in procedures. Process advisor automatically produces a process map that visualizes the check-in process. You can learn which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
 
 Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You're then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
 
-With insights and guided recommendations from process mining, you're ready to begin automating and reclaim the time you need for what matters most.
+With insights and guided recommendations from process advisor, you're ready to begin automating and reclaim the time you need for what matters most.
 
 ## Components
 
