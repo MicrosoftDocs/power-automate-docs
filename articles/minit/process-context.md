@@ -26,7 +26,7 @@ The **Process context** page is where you can create and manage settings that yo
 
 There are two ways to open the **Process context** screen depending on where you are in the application.
 
-- **From the Processes screen:** Select the **Process context** icon.
+- **From the Processes screen:** Select **Process context**.
 
     :::image type="content" source="media/process-context-icon.png" alt-text="Screenshot of the process context icon.":::
 

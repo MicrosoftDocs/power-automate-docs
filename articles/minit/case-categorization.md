@@ -30,27 +30,35 @@ Case categories are split into two groups:
 
 A case can be placed in only one of the three categories: either it's **Finished**, **Running**, or **Stuck**. The **Incompletely imported** flag can be applied to any case, regardless of its category. For example, a case can be both **Running** and **Incompletely imported**.
 
-## Initialize and create categorization rules
+## Create categorization rules
 
-Categorize cases in the **Process context** page in the Minit project hub.
+Set rules in simple or advanced mode. Any rule that you set in simple mode carries over to advanced mode. Change modes by turning **Advanced mode** on or off.
 
-1. Open the **Process context** page: Either select the icon below the process name, or select (**...**) to the right of the process name and then select **Process context**.
+Following is an example of the simple mode, which appears when **Advanced mode** is turned off.
 
-    :::image type="content" source="media/PC-overview-1.png" alt-text="Screenshot of the process hub, with the process context icon highlighted.":::
+:::image type="content" source="media/advanced-mode.png" alt-text="Screenshot of the process context icon.":::
 
-1. In the left side panel, select **Case categorization**.
+> [!NOTE]
+>
+> Switching from advanced mode to simple mode resets the rules to the default.
 
-1. Select **INITIALIZE**.
+1. Enter the **Case categorization** screen from any location with the **Process context** selection.
+
+    - **From the Processes screen:** Select **Process context**.
+
+        :::image type="content" source="media/process-context-icon.png" alt-text="Screenshot of the process context icon.":::
+
+    - **From any other screen in the desktop application:** On the menu bar in the upper right corner, select **Process context**.
 
 1. Set rules for categorizing cases as directed in the following sections.
 
-    You can set rules in simple or advanced mode. Any rule that you set in simple mode carries over to advanced mode. However, *switching from advanced mode back to simple mode resets the rules to the default*.
+    
 
 1. Select **Save**.
 
 ## Categorize cases as Finished
 
-Initially, all cases are categorized as **Finished**. Turn the **Advanced mode** button off to continue in the simple mode.
+Initially, all cases are categorized as **Finished**. Turn **Advanced mode** off to continue in simple mode.
 
 Select which activities are finishing activities. Cases that end in one of these activities are considered **Finished**.
 
@@ -86,9 +94,9 @@ Cases that aren't **Finished** are either **Stuck** or **Running**. To distingui
 
 When **Advanced mode** is turned on, you have more options:
 
-- Select a filter in the **Add filter** dropdown menu to specify attributes that define a **Stuck** case.
+1. Select a filter in the **Add filter** dropdown menu to specify attributes that define a **Stuck** case.
 
-- Use the import filter by selecting (**...**).
+1. Use the import filter by selecting (**...**).
 
 ### Categorize cases as Running
 
@@ -102,9 +110,9 @@ Cases that don't start where they should are flagged as **Incompletely imported*
 
 To clear the **Incompletely imported** flag, select which activities are starting activities.
 
-- In simple mode, select an activity in the **List** tab. Alternatively, search for an activity in the **Search in attribute values** field and then select it. You can also select the **Expression** tab and use the comparison dropdown menu and value field to define an activity in terms of an expression.
+1. In simple mode, select an activity in the **List** tab. Alternatively, search for an activity in the **Search in attribute values** field and then select it. You can also select the **Expression** tab and use the comparison dropdown menu and value field to define an activity in terms of an expression.
 
-- When **Advanced mode** is turned on, you have more options:
+1. When **Advanced mode** is turned on, you have more options:
 
     - Select a filter in the **Add filter** dropdown menu.
 

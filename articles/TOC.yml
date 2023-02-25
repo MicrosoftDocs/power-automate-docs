@@ -673,11 +673,11 @@
     href: custom-controls-business-process-flows.md
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
-- name: Process mining
+- name: Process advisor
   items:
   - name: Overview
     href: process-advisor-overview.md
-    displayName: Overview of process mining
+    displayName: Overview of process advisor
   - name: Templates overview
     items:
     - name: Azure templates
@@ -702,11 +702,11 @@
     href: process-mining-share.md
   - name: Edit and refresh processes
     href: process-mining-data-source.md
-  - name: Power Automate Process Mining desktop app
+  - name: Minit desktop application
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Install Power Automate Process Mining desktop app
+    - name: Install minit desktop application
       href: ./minit/how-to-start-with-minit-desktop-application.md
     - name: Get started
       items:
