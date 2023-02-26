@@ -23,7 +23,9 @@ This article presents all the prerequisites and limitations you should consider 
 
 > [!IMPORTANT]
 >
-> Selenium IDE is deprecated and will no longer work after February 28th, 2023. Migrate your flows to Power Automate for desktop or delete them.
+> - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
+> - Windows recorder (V1) is deprecated and no longer works.
+> - Migrate your flows created with these solutions to Power Automate for desktop or delete them.
 
 ## Prerequisites
 
