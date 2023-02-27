@@ -449,10 +449,21 @@ The following list displays all the supported geographies in the public clouds:
 - Switzerland
 - Norway
 
-Hosted machine groups aren't yet available in sovereign clouds and aren't yet available in the following public cloud geographies:
+Hosted machine groups aren't yet available in the following geographies:
 
 - United Arab Emirates
 - Korea
+
+> [!NOTE]
+> Hosted machine groups capabilities are currently being rolled out in the following sovereign clouds. 
+>- Government Community Cloud (GCC)
+>- Government Community Cloud High (GCC High)
+>- Department of Defense (DoD)
+>
+>We expect the feature to be fully rolled out by March 20, 2023
+
+Hosted machines aren't yet available in the following sovereign cloud:
+- China
 
 ### Network limitations for hosted machine groups
 
