@@ -138,6 +138,16 @@ Bots in a hosted machine group are created when needed. Whenever a desktop flow 
 
 You can personalize your hosted machine groups by providing your own Windows image directly from your Azure Compute Gallery. This feature allows you to have all your applications installed on your hosted machine group.
 
+### Image requirements
+Custom VM images must meet the following requirements:
+
+ - Generation 2 images
+ - Generalized VM image
+ - 127GB limit on VM image size
+ - Requires Microsft Edge version 80 or higher
+ 
+For more information on how to create a generalized VM image in Azure, refer to the steps in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
+
 ### Create an Azure compute gallery in Azure and add an image
 
 1. Go to the [Azure portal](https://portal.azure.com/).
