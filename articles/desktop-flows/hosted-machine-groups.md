@@ -467,7 +467,7 @@ Hosted machines aren't yet available in the following sovereign cloud:
 
 ### Sovereign clouds limitations for hosted machine groups
 
-The following features are not supported in Sovereign clouds
+The following features are not supported in Sovereign clouds:
 
 | Feature not supported | Sovereign cloud(s)|
 | ----------| --------------|
