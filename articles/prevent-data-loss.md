@@ -215,6 +215,10 @@ Following is a list of DLP enforcement changes and the date the changes were eff
 
 *ETA is subject to change and depends on the release schedule. ETA is for the start of the release to production. Release to preview station 1 is approximately five days later. Release to NAM/US station 5 is approximately three weeks later.
 
+## Flow suspension for DLP violation
+
+Suspended flows will be shown as suspended in the Power Automate maker portal and the Power Platform Admin Center. When a flow is returned via API, PowerShell, or the [Power Automate Management connector list flows as admin action](/connectors/flowmanagement/#list-flows-as-admin), the flow will be **State=Suspended**, **FlowSuspensionReason=CompanyDlpViolation**, and will have a **FlowSuspensionTime** value indicating when the flow was suspended.
+
 ## Known limitations
 
 [Learn about DLP known issues](/power-platform/admin/dlp-known-issues)
