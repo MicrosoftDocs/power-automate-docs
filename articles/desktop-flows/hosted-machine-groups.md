@@ -465,6 +465,16 @@ Hosted machine groups aren't yet available in the following geographies:
 Hosted machines aren't yet available in the following sovereign cloud:
 - China
 
+### Sovereign clouds limitations for hosted machine groups
+
+The following features are not supported in Sovereign clouds
+
+| Feature not supported | Sovereign cloud(s)|
+| ----------| --------------|
+| Work or school acount | GCC, GCC High, DoD |
+| Custom VM Images | GCC, DoD |
+
+
 ### Network limitations for hosted machine groups
 
 Hosted machine groups don't have access to on-premises data sources or other on-premises resources. Hosted machine group can't be accessed from the Internet, as the inbound traffic is blocked.
