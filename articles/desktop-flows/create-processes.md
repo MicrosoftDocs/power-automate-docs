@@ -13,7 +13,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/08/2020
+ms.date: 02/24/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -30,7 +30,9 @@ search.audienceType:
 # Use Softomotive's WinAutomation with desktop flows
 
 > [!IMPORTANT]
-> From January 1st 2022, WinAutomation and ProcessRobot will no longer be supported. Learn more about the Softomotive products deprecation [here](/previous-versions/troubleshoot/winautomation/softomotive-useful-information/softomotive-products-end-of-support-announcement). You may [migrate](softomotive-migrator.md) your flows to Power Automate. See the [Power Automate Desktop](introduction.md) documentation to learn about the evolution of WinAutomation.  
+>
+> - WinAutomation and ProcessRobot are no longer supported. [Migrate your flows](softomotive-migrator.md) to Power Automate for desktop.
+> - Windows recorder (V1) is deprecated and no longer works. Migrate your flows created to Power Automate for desktop or delete them.
 
 You may migrate your flows to Power Automate. See the Power Automate Desktop documentation to learn about the evolution of WinAutomation.
 
