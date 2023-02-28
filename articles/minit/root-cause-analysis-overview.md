@@ -59,8 +59,8 @@ The tree structure looks like this:
 
 In the same tree, we can see that if we have another material than aluminium, it also splits by the variable **supplier city**, where on one side is **Graz** and on the other is Vienna, Munich or Frankfurt. But here, the values are the opposite. **Graz** has much better statistics than Vienna or any German city, with average case in Graz being 15 hours faster than the overall average for all cases.
 
-From this, we can see that the initial statistics is misleading because Graz is performing poorly when the material is aluminium, but is performing above average when the material is other than aluminium and it's completely opposite for other cities.
+From this, we can see that the initial statistics are misleading because Graz is performing poorly when the material is aluminium, It is, however, performing above average when the material is other than aluminium and is completely opposite for other cities.
 
-**Case Duration Influencer** takes into account only one value and therefore, can be sometimes misleading. RCA takes into account combinations of them to give you more insights into your process.
+**Case Duration Influencer** takes into account only one value and sometimes can be misleading. RCA takes into account combinations of them to give you more insights into your process.
 
 

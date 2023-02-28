@@ -37,6 +37,8 @@ If you choose a main metric, you can't choose the same metric in **Influenced by
 
 ## **Change options in the Analysis tab**
 
+You can customize the view to your preferences.
+
 ### See more or less information in a node
 
 Nodes are connected by arches (rules). Each node is a collection of data filtered by the rules in the arches connecting it to the root node.
@@ -57,26 +59,23 @@ If the tree is too large and can't be navigated easily, you can open the **Diagr
 
 :::image type="content" alt-text="Screenshot of the Diagram preview." source="media/diagram-preview.png":::
 
-## **Acting upon analysis**
-
-When you find the correct part of dataset that you need to explore further, you can convert the rules that lead up to that node into a set of filters. 
-
->[!NOTE]
+> [!NOTE]
+>
+> When you find the correct part of dataset that you need to explore further, you can convert the rules that lead up to that node into a set of filters. 
 >
 > If you do this, the original analysis becomes view only, as the data underlying has changed (filters applied).
 
-### Using categorical main metric
+### Use categorical main metric
 
-If you want to explore why some cases have gone one way or another, its easy to analyze this with RCA using a custom metric returning string values.
+If you want to explore why some cases have gone one way or another, it;s easy to analyze this with RCA using a custom metric returning string values.
 
-For example, if you want to analyze why some cases end in some activities and other in different ones, you can use the formula **LAST(CaseEvents, Activity)** as your custom metric.
+For example, if you want to analyze why some cases end in some activities and others in different ones, you can use the formula `LAST(CaseEvents, Activity)` as your custom metric.
 
-:::image type="content" alt-text="Screenshot of RCA using a custom metric." source="media/image-48.png":::
+For other use cases, you might want to explore why cases that went through an activity X are then going to one of direct descendants of activity X. For this, you can use custom metric `FIRSTIF(CaseEvents, Activity == "Process start", NEXT(Activity))`. This metric returns the name of the activity after activity "Process start". If a case goes through this activity multiple times, it will only take into account the first pass. If you want the last one, you can use `LASTIF` instead of `FIRSTIF`.
 
-For other use cases, we might want to explore why cases that went through an activity X are then going to one of direct descendants of activity X. For this we can use custom metric **FIRSTIF(CaseEvents, Activity == "Process start", NEXT(Activity))** that returns the name of the activity after activity "Process start". If a case goes through this activity multiple times, it will only take into account the first pass. If we want the last one, we can use **LASTIF **instead of **FIRSTIF.**
-The same can be achieved with **FIRSTIF(CaseEvents, Activity == "Check order numbers", MOVE(1, Activity))**, where you can specify the number of events that it has to move down the case.
+The same can be achieved with `FIRSTIF(CaseEvents, Activity == "Check order numbers", MOVE(1, Activity))`, where you can specify the number of events that it has to move down the case.
 
-For other similar use cases, we can use custom metrics to get event attributes on a case level so it can be used in RCA. To do this, we can get the value of an event attribute Y at an activity X. This is done by using custom metric **FIRSTIF(CaseEvents, Activity== "X", Y)**.
+For other similar use cases, you can use custom metrics to get event attributes on a case level so it can be used in RCA. To do this, get the value of an event attribute Y at an activity X. This is done by using custom metric `FIRSTIF(CaseEvents, Activity== "X", Y)`.
 
 All of these metrics, can be also used in influenced by.
 

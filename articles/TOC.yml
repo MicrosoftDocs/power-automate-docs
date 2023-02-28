@@ -714,7 +714,7 @@
         href: ./minit/process-hub.md
       - name: Manage settings with process context
         href: ./minit/process-context.md
-      - name: Case categorization
+      - name: Categorize cases
         href: ./minit/case-categorization.md 
     - name: Process map
       items:
@@ -738,7 +738,7 @@
         href: ./minit/animation-elements.md
     - name: Statistics
       items:
-      - name: Statistics overview
+      - name: Overview
         href: ./minit/statistics.md
       - name: Gather case overview statistics
         href: ./minit/case-overview-statistics.md

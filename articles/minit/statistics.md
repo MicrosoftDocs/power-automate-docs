@@ -67,7 +67,7 @@ To choose specific resources:
 
 1. Select **Apply**.
 
-:::image type="content" alt-text="Screenshot of the average time of resources." source="media/activity-stats-sample.png":::
+    :::image type="content" alt-text="Screenshot of the average time of resources." source="media/activity-stats-sample.png":::
 
 ### Cases duration
 
@@ -77,9 +77,9 @@ To select case duration:
 
 1. In the **Category** dropdown menu, select **Case overview**.
 
-1. In the **Active cases** dropdown menu, select **Case duration**.
+1. In the **Active cases** dropdown menu, select **Cases duration**.
 
-:::image type="content" alt-text="Screenshot of the number of cases with varying duration intervals." source="media/case-duration-sample.png":::
+    :::image type="content" alt-text="Screenshot of the number of cases with varying duration intervals." source="media/case-duration-sample.png":::
 
 ## Filtering in statistics charts
 
