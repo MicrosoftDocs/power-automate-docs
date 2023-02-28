@@ -3,7 +3,7 @@ title: Run desktop flows concurrently
 description: See how to run desktop flows concurrently on machines running Windows Server.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 02/15/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas

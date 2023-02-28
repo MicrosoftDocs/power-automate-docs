@@ -4,7 +4,7 @@ description: Introduction to desktop flows
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2020
 ms.custom: intro-internal
 ms.author: marleon

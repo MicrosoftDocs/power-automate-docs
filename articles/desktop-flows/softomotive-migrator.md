@@ -4,7 +4,7 @@ description: Process migrator for Softomotive products (preview)
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/16/2020
 ms.author: marleon
 ms.reviewer: gtrantzas

@@ -6,7 +6,7 @@ author: georgiostrantzas
 editor: ''
 tags: ''
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/28/2021
 ms.author: marleon
 ms.reviewer: gtrantzas
