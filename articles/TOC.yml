@@ -740,14 +740,18 @@
       items:
       - name: Statistics overview
         href: ./minit/statistics.md
-      - name: Case overview statistics
+      - name: Gather case overview statistics
         href: ./minit/case-overview-statistics.md
-      - name: Activities (event-level) statistics
+      - name: Customize activities statistics
         href: ./minit/activities-event-level-statistics.md
-      - name: Edge statistics
+      - name: Review edge statistics
         href: ./minit/edge-statistics.md
     - name: Root cause analysis
-      href: ./minit/root-cause-analysis.md    
+      items:
+      - name: Overview
+        href: href: ./minit/root-cause-analysis-overview.md 
+      - name: Find hidden connections
+        href: ./minit/root-cause-analysis.md    
     - name: Variants
       href: ./minit/variants.md
     - name: Process compare

@@ -49,7 +49,7 @@ Following are the main components in the minit desktop application:
 
 - [Statistics](statistics.md)
 
-- [Root cause analysis](root-cause-analysis.md)
+- [Root cause analysis](root-cause-analysis-overview.md)
 
 - [Variants](variants.md)
 

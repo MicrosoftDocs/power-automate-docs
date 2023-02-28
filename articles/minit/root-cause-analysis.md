@@ -1,6 +1,6 @@
 ---
-title: Root cause analysis
-description: Learn how to find hidden connections in your data in the Power Automate Process Mining desktop app.
+title: Find hidden connections
+description: Learn how to find hidden connections in your data in the minit desktop application.
 author: maslejka
 contributors:
   - maslejka
@@ -17,88 +17,38 @@ search.audienceType:
 - enduser
 ---
 
-# Root cause analysis
+## Find hidden connections
 
-Root cause analysis allows you to find hidden connections in your data.
+Find hidden connections in your data with root cause analysis (RCA) in minit desktop application.
 
-Have you ever wondered why some cases take longer time to complete than other? Or why some cases get stuck in reworks and others go smoothly through the process? Root Cause Analysis (RCA) will show you the key differences between such cases.
+To create a new RCA, create an analysis.
 
-## What data do I need?
+1. On the **Processes** screen, select **Root cause analysis** on the left panel.
 
-RCA can use all your case level attributes, metrics and custom metrics and find connections between them and a metric of your choosing.
+1. In the **Metric** dropdown menu, select a metric.
 
-Best way is to include all data you can as a case level attribute and let RCA do the choosing of which attribute actually influences the metric and which does not.
+1. On the **Influenced by** panel, select which attributes you think are important for that metric.
 
-## How does RCA work?
+   If you're not sure which attributes should be influencing your metric, choose all of them and the algorithm will find the best one. To select all attributes, select the circle to the left of the **Metric name** heading.
 
-RCA is a custom implementation of one of the most used machine learning algorithm, the Decision Tree.
+1. Select **Analyze**. The **Analysis** tab opens.
 
-The algorithm will compute a tree structure where each node will split the dataset into two smaller parts based on one variable where it finds the best correlation between that variable split and the target metric. From this, you can see the hidden connections in the data, where it will tell you which combination of attributes will influence the case in which way.
+If you choose a main metric, you can't choose the same metric in **Influenced by**. Also, don't choose similar metrics in **Influenced by** as the main metric, as the algorithm will choose those metrics on every split. For example, if your main metric is **Case duration**, don't select **Case Active Time** in the **Influenced by** section, as this will provide you no new information.
 
-### Simple show case
-
-"Let's say we want to see the root cause behind the Case Duration. In the data, we have case level attributes *supplier country*, *supplier city*, *material*,*total amount* and *cost center* and the average Case Duration is 46 hours.
-
-By looking at each value of each attribute separately, we can say that the highest influencer of case duration is when *supplier city* is *Graz* which on average increases the duration of the case by additional 15 hours. From this initial analysis, we can see that the other values of attributes influence the target metric far less. However, when we compute the tree model, we can see that the computation above is misleading. as in the following screenshot.
-
-The tree structure looks like this: 
-
-- First split the data along the **material** variable, with **aluminium** on one side and all **other** materials on the other side.
-
-- Now the **aluminium** branch is split further by **supplier country** into **Germany** and **Austria**. 
-
-- In **Austria**, the branch continues with split by **supplier city**, with **Graz** on one side and **Vienna** on the other.
-
-- In the node **Graz**, the average case was 36 hours slower than the overall average duration of 46 hours.
-
-In the same tree, we can see that if we have another material than aluminium, it also splits by the variable **supplier city**, where on one side is **Graz** and on the other is Vienna, Munich or Frankfurt. But here, the values are the opposite. **Graz** has much better statistics than Vienna or any German city, with average case in Graz being 15 hours faster than the overall average for all cases.
-
-From this, we can see that the initial statistics is misleading because Graz is performing poorly when the material is aluminium, but is performing above average when the material is other than aluminium and it's completely opposite for other cities.
-
-Case Duration Influencer takes into account only one value and therefore can be sometimes misleading. RCA takes into account combinations of them to give you more insights into your process.
-
-:::image type="content" alt-text="Screenshot of the case duration influencer." source="media/rca-basic-model.png":::
-
-### How does RCA find the best split?
-
-First, we generate hundreds to thousands of combinations of possible splits. Then we try each split, how well will it actually split the dataset into two parts. We calculate the variance of main metric in each part of the split and calculate score for each split as
-***score<sub>split_x</sub> = variance<sub>left</sub> * number of cases<sub>left</sub> + variance<sub>right</sub> * number of cases<sub>right</sub>***
-Then we sort all splits by this score and the best splits are taken from the beginning, with the lowest score.
-For categorical main metric (string) we calculate Gini impurity instead of variance.
-
-## How to use RCA
-
-### Analysis creation
-
-To create new RCA, do the following:
-
-1. In the left navigation tab, select **RCA**.
-
-1. Select a metric.
-
-1. Select which attributes you think are important for that metric.
-
-   If you're not sure which attributes should be influencing your metric, choose all of them and the algorithm will find the best one.
-
-1. Select **ANALYZE**.
-
-Be aware that if you choose a main metric, you can't choose the same metric in **Influenced by**. It is also advisable to not choose similar metrics in **Influenced by** as the main metric, as the algorithm will choose those metrics on every split. For example, if your main metric is **Case duration**, don't select **Case Active Time** in the **Influenced by** section, as this will provide you no new information.
-
-:::image type="content" alt-text="Screenshot of analysis creation." source="media/image-42.png":::
-
-### **Understanding analysis**
+### **Understand analysis**
 
 Nodes are connected by arches (rules). Each node is a collection of data filtered by the rules in the arches connecting it to the root node.
 
-:::image type="content" alt-text="Screenshot of node arches." source="media/image-43.png":::
+To expand or collapse a node, select the plus or minus sign. The expanded view allows you to see more information about that part of the data.
 
-Every node can be expanded to see additional information about that part of the data.
+:::image type="content" alt-text="Screenshot of the Analysis tab." source="media/rca-analysis-tab.png":::
 
-:::image type="content" alt-text="Screenshot of expanded nodes." source="media/image-44.png":::
+If the split that is chosen as the best one by the algorithm is on an attribute which you don't want to use at that point, you can choose another split from the list. In the list, there is a best split for each selected attribute in the analysis.
 
-If the split that is chosen as the best one by the algorithm is on an attribute which you don't want to use at that point, you can choose another split from the list. In the list, there is best split for each selected attribute in the analysis.
+To open the available splits you can choose from, select the down arrow in the node heading.
 
-:::image type="content" alt-text="Screenshot of the available splits dropdown menu." source="media/image-45.png":::
+
+
 
 If the tree is too large and can not be navigated easily, you can open the Diagram preview and use it to navigate around the tree. You can also change the layout as you wish.
 
@@ -125,5 +75,8 @@ For other similar use cases, we can use custom metrics to get event attributes o
 
 All of these metrics, can be also used in influenced by.
 
-To learn more about custom metrics, go to [Custom metrics](other-operations.md).
+To learn more about custom metrics, go to [List of other operations](other-operations.md).
 
+### See also
+
+[Root cause analysis overview](root-cause-analysis-overview.md)
