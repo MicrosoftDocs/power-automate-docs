@@ -17,7 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-## Find hidden connections
+# Find hidden connections
 
 Find hidden connections in your data with root cause analysis (RCA) in minit desktop application.
 
@@ -35,7 +35,9 @@ To create a new RCA, create an analysis.
 
 If you choose a main metric, you can't choose the same metric in **Influenced by**. Also, don't choose similar metrics in **Influenced by** as the main metric, as the algorithm will choose those metrics on every split. For example, if your main metric is **Case duration**, don't select **Case Active Time** in the **Influenced by** section, as this will provide you no new information.
 
-### **Understand analysis**
+## **Change options in the Analysis tab**
+
+### See more or less information in a node
 
 Nodes are connected by arches (rules). Each node is a collection of data filtered by the rules in the arches connecting it to the root node.
 
@@ -43,22 +45,25 @@ To expand or collapse a node, select the plus or minus sign. The expanded view a
 
 :::image type="content" alt-text="Screenshot of the Analysis tab." source="media/rca-analysis-tab.png":::
 
+### Choose another split
+
 If the split that is chosen as the best one by the algorithm is on an attribute which you don't want to use at that point, you can choose another split from the list. In the list, there is a best split for each selected attribute in the analysis.
 
 To open the available splits you can choose from, select the down arrow in the node heading.
 
+### Change the view size
 
+If the tree is too large and can't be navigated easily, you can open the **Diagram preview** to navigate around the tree. You can also change the layout as you wish.
 
+:::image type="content" alt-text="Screenshot of the Diagram preview." source="media/diagram-preview.png":::
 
-If the tree is too large and can not be navigated easily, you can open the Diagram preview and use it to navigate around the tree. You can also change the layout as you wish.
+## **Acting upon analysis**
 
-:::image type="content" alt-text="Screenshot of the Diagram preview." source="media/image-46.png":::
+When you find the correct part of dataset that you need to explore further, you can convert the rules that lead up to that node into a set of filters. 
 
-### **Acting upon analysis**
-
-When you find the right part of dataset that you need to explore further, you can convert the rules that lead up to that node into a set of filters. Beware that if you do this, the original analysis becomes view only, as the data underlying has changed (filters applied).
-
-:::image type="content" alt-text="Screenshot of converting rules." source="media/image-47.png":::
+>[!NOTE]
+>
+> If you do this, the original analysis becomes view only, as the data underlying has changed (filters applied).
 
 ### Using categorical main metric
 

@@ -749,7 +749,7 @@
     - name: Root cause analysis
       items:
       - name: Overview
-        href: href: ./minit/root-cause-analysis-overview.md 
+        href: ./minit/root-cause-analysis-overview.md 
       - name: Find hidden connections
         href: ./minit/root-cause-analysis.md    
     - name: Variants

@@ -36,7 +36,7 @@ Set rules in simple or advanced mode. Any rule that you set in simple mode carri
 
 Following is an example of the simple mode, which appears when **Advanced mode** is turned off.
 
-:::image type="content" source="media/advanced-mode.png" alt-text="Screenshot of the process context icon.":::
+:::image type="content" source="media/advanced-mode.png" alt-text="Screenshot of the Advanced mode switch.":::
 
 > [!NOTE]
 >
@@ -51,8 +51,6 @@ Following is an example of the simple mode, which appears when **Advanced mode**
     - **From any other screen in the desktop application:** On the menu bar in the upper right corner, select **Process context**.
 
 1. Set rules for categorizing cases as directed in the following sections.
-
-    
 
 1. Select **Save**.
 
