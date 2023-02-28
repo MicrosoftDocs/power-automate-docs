@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/28/2021
+ms.date: 02/27/2023
 ms.author: hamenon
 ms.reviewer: gtrantzas
 search.app: 
@@ -189,7 +189,7 @@ Organize structured data with tables.
 - Separate table cells using the pipe character `|` 
 - The first two lines of a table set the column headers and the alignment of elements in the table
 - Make sure to end each row with a CR or LF. 
-- Aligning text within a table element is currently not supported
+- Aligning text within a table element is currently not supported.
 
 **Example:**  
 ```Markdown
