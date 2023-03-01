@@ -38,7 +38,7 @@ There are a few ways you can share your process.
 
 On the process details page, you can share the process by selecting **Manage** from the **Shared with** card.
 
-![image](https://user-images.githubusercontent.com/113051637/221950699-f20b6e46-b356-4b8a-9010-48c36151414f.png)
+![image](https://user-images.githubusercontent.com/113051637/222214319-f2b5dc9b-a039-4bfc-90c9-31b8f0392324.png)
 
 
 ## Share from analytics report page
