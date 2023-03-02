@@ -4,7 +4,7 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/02/2022
+ms.date: 02/28/2023
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
@@ -137,6 +137,16 @@ Bots in a hosted machine group are created when needed. Whenever a desktop flow 
 ## Use custom VM images for your hosted machine groups
 
 You can personalize your hosted machine groups by providing your own Windows image directly from your Azure Compute Gallery. This feature allows you to have all your applications installed on your hosted machine group.
+
+### Image requirements
+Custom VM images must meet the following requirements:
+
+ - Generation 2 images
+ - Generalized VM image
+ - 127 GB limit on VM image size
+ - Microsft Edge version 80 or higher
+ 
+Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
 
 ### Create an Azure compute gallery in Azure and add an image
 
@@ -439,10 +449,32 @@ The following list displays all the supported geographies in the public clouds:
 - Switzerland
 - Norway
 
-Hosted machine groups aren't yet available in sovereign clouds and aren't yet available in the following public cloud geographies:
+Hosted machine groups aren't yet available in the following geographies:
 
 - United Arab Emirates
 - Korea
+
+> [!NOTE]
+> Hosted machine groups capabilities are currently being rolled out in the following sovereign clouds: 
+> 
+> - Government Community Cloud (GCC)
+> - Government Community Cloud High (GCC High)
+> - Department of Defense (DoD)
+>
+> The feature will be fully rolled out by March 20th, 2023
+
+Hosted machines aren't yet available in the following sovereign cloud:
+
+- China
+
+### Sovereign clouds limitations for hosted machine groups
+
+The following features aren't supported in sovereign clouds:
+
+| Feature not supported | Sovereign cloud(s)|
+| ----------| --------------|
+| Work or school acount | GCC, GCC High, DoD |
+| Custom VM images | GCC, DoD |
 
 ### Network limitations for hosted machine groups
 
