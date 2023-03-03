@@ -1,13 +1,13 @@
 ---
 title: Process explorer overview
-description: Learn how to use the process and process analysis tasks view in the Power Automate Process Mining desktop app.
+description: Learn how to use the process and process analysis tasks view in the minit desktop app.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -65,7 +65,7 @@ The **cases** and **events** summary shows the percentage of cases and events th
 
 ## Process map
 
-Refer to [Process map overview (preview)](process-map.md).
+Refer to [Process map overview](process-map.md).
 
 ## Manage view
 

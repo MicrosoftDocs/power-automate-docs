@@ -41,7 +41,7 @@ You can see more metrics on the process map, including the following.
 
 - **Loop**: The occurrence where a sequence of activities has one or more activities repeated.
 
-To learn more about the process map visual, go to [Process map overview (preview)](minit/process-map.md).
+To learn more about the process map visual, go to [Process map overview](minit/process-map.md).
 
 ## Use KPIs and visualizations for analytics
 

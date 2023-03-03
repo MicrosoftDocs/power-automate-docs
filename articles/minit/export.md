@@ -1,13 +1,13 @@
 ---
-title: Export
-description: Learn how to export process data to an external file in the Power Automate Process Mining desktop app.
+title: Export process data
+description: Learn how to export process data to an external file in the minit desktop application.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/15/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -17,42 +17,36 @@ search.audienceType:
 - enduser
 ---
 
-# Export
+# Export process data
 
-Here you can export process data to an external file. After filling in all required data, press the Export button.
+Export process data to an external file. After you choose your export type, you can choose to export data as a CSV, XES, or an MXML file. You can also choose to export as a zip file, and enter the delimiter to use. If you choose to export cases (as opposed to events), you'll see a list of statistics you can choose to export.
 
-:::image type="content" alt-text="Screenshot of Export screen." source="media/Export.png":::
+## Choose export options
 
-### Apply filters
+1. On the **Process** menu, select **Export**.
 
-This setting specifies if preset filters should be applied to the process before export. If the filters are not applied, all records in the process will be exported.
+1. In the **Export as** dropdown menu, select **Events** or **Cases**.
 
-### Export type
+1. If you select **Cases**, also de-select the statistics you don't want to include in your export in the **Statistics to export** list.
 
-You can select the type of export. The export of events is one of the export types in which the entire process log is exported. Another type is the export of cases in which selected information about cases without respective individual events are exported.
+1. If you want to export as a zip file, place a check in the **Export as ZIP** checkbox.
 
-### Export as
+1. If you want to use a delimiter other than the default comma, enter it in the **Delimiter** field.
 
-You can export the data to share specific findings in the process, for example when filtering is applied. Data can be imported again by another user who has the resource file (export).  
+1. Select **Export**. 
 
-Select a format for the data to export. At present, the following formats are supported:
+    :::image type="content" alt-text="Screenshot of Export screen." source="media/export-screen.png":::
 
-- Export of events&mdash;CSV (comma separated records)
+## Export option details
 
-- XES (Extensible Event Stream)
+The options in the following table are available for your export file.
 
-- MXML (Mining eXtensible Markup Language)
-
-### Export as a ZIP
-
-The exported file can be compressed into ZIP format. Then select the type of compression – optimal, fast, or without compression.
-
-### Delimiter
-
-When exporting to the CSV format, a record separator must be specified.
-
-### Statistics for export of cases
-
-In the cases export you can select which metrics and attributes will be exported with individual cases. The attributes exported with the case must be imported as the case-level attributes.
-
+| Option             | Description      |
+|--------------------|------------------|
+| Apply filters      | Specify if preset filters should be applied to the process before export. If the filters aren't applied, all records in the process will be   exported.    |
+| Export type        | Select either **Cases** or **Events**. When you export events, the entire process log is exported. When you export cases, the selected information about cases without respective individual   events is exported.   |
+| Export as          | Share specific findings in the process, for example when filtering is   applied. Data can be imported again by another user who has the resource file  (export). The following formats are supported: **CSV** (comma separated records), **XES** (Extensible Event Stream), and **MXML** (Mining eXtensible Markup Language). |
+| Export as a ZIP    | Compress the exported file into ZIP format. If you select this, select the type of compression  to use. Choose from among **Optimal**, **Fastest**, or **No compression**.     |
+| Delimiter          | Enter a record separator When exporting to the CSV format.     |
+| (For exporting cases) Statistics to export | Select which metrics and attributes will be exported with individual cases. The attributes exported with the case must be imported as the case-level attributes.      |
 

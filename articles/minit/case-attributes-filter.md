@@ -1,13 +1,13 @@
 ---
 title: Case attributes filter
-description: Learn how to use the case attributes filter in the Power Automate Process Mining desktop app.
+description: Learn how to use the case attributes filter in the minit desktop application.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 11/15/2022
+ms.date: 09/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -20,39 +20,46 @@ search.audienceType:
 
 # Case attributes filter
 
-The **Attributes** filter selects cases that contain&mdash;or don't contain&mdash;a specific attribute. Use it, for example, to select cases that include a certain activity or resource.
+The **Attributes** filter selects cases that contain&mdash;or don't contain&mdash;a specific attribute.
 
-1. Select the filter **Attributes**.
+## Filter values from a list
 
-    :::image type="content" source="media/image014.png" alt-text="Screenshot of the Attributes (conditional) filter.":::
+Use the filter to select cases that include a certain activity or resource.
 
-1. Select an attribute.
+1. On the left panel, select your attributes filter.
 
-1. Select either the **List** tab or the **Expression** tab and select or enter the attribute value.
+1. In the **Filter result** dropdown menu, select if the cases you select for the filter should or shouldn't be included.
 
-    - **List**: Select, or search for and select, values. It may take a moment for the list to populate after you select the **List** tab.
+1. In the **cases in which attribute** dropdown menu, select an attribute.
 
-       :::image type="content" alt-text="Screenshot of an attribute values list." source="media/image015a.png":::
+1. In the **holds any of the values** dropdown menu, select one or more values in the **List** tab to the right.
 
-    - **Expression**: You can include both string and numeric attributes in an expression.
+1. Select **Apply**.
 
-       :::image type="content" alt-text="Screenshot of an attribute value specified as an expression." source="media/expression.png":::
+    :::image type="content" source="media/attributes-filter.png" alt-text="Screenshot of the Attributes filter screen.":::
 
-## Create a custom expression
+## Filter values from an expression
 
-You can include custom metrics in an expression, too.
+Use the filter to select cases that include an expression. You can include both string and numeric attributes in an expression.
 
-1. To switch between a constant value and a custom expression, select **Fx**.
+1. Follow steps 1 through 3 in [Filter values from a list](#filter-values-from-a-list) in this article.
 
-    :::image type="content" alt-text="Screenshot of an attribute value specified as a custom expression." source="media/expressioncm.png":::
+1. On the panel to the right, select **Expression**.
 
-1. Specify the value or values, or custom expression.
+1. In the first dropdown menu, select the operator for your expression.
 
-    To learn how to create a custom expression, go to [Custom metrics overview (preview)](custom-metrics.md).
+1. In the field next to the operator, enter the value.
 
-    :::image type="content" alt-text="Screenshot of custom attribute values." source="media/expressioncm2.png":::
+1. Select **Apply**.
+
+## Enter a custom expression
+
+You can switch between a constant value and a custom expression by selecting **Fx** in the **Expression** tab.
+
+
+To learn how to use a custom expression, go to [Custom metrics overview](custom-metrics.md).
 
 ### See also
 
-[Custom metrics overview (preview)](custom-metrics.md)<br/>
-[Tips and examples (preview)](general-information.md)
+[Custom metrics overview](custom-metrics.md)<br/>
+[Tips and examples](general-information.md)

@@ -752,15 +752,15 @@
         href: ./minit/root-cause-analysis-overview.md 
       - name: Find hidden connections
         href: ./minit/root-cause-analysis.md    
-    - name: Variants
+    - name: Analyze processes with variants
       href: ./minit/variants.md
-    - name: Process compare
+    - name: Compare process views for compliance
       href: ./minit/process-compare-compliance.md
-    - name: Export
+    - name: Export process data
       href: ./minit/export.md
     - name: Filtering
       items:
-      - name: Filtering overview
+      - name: Overview
         href: ./minit/filtering.md
       - name: Timeframe filter
         href: ./minit/timeframe-filter.md
@@ -790,7 +790,7 @@
         href: ./minit/filters-export-import.md
     - name: Settings
       items:
-      - name: Settings overview
+      - name: Overview
         href: ./minit/settings.md
       - name: Options
         href: ./minit/options.md
@@ -798,40 +798,42 @@
         href: ./minit/working-hours.md
     - name: Advanced features.md
       items:
-      - name: Custom metrics overview
-        href: ./minit/custom-metrics.md
-      - name: Tips and examples
-        href: ./minit/general-information.md
-      - name: Requirements for application
-        href: ./minit/requirements-for-application.md
-      - name: List of data types-custom metrics
-        href: ./minit/data-types-custom-metrics.md
-      - name: Constants
-        href: ./minit/constants.md
-      - name: List of unary operators
-        href: ./minit/unary-operators.md
-      - name: Aggregations
-        href: ./minit/aggregations.md
-      - name: Date and time operations
-        href: ./minit/date-and-time-operations.md
-      - name: Mathematical operations
-        href: ./minit/mathematical-operations.md
-      - name: Statistical operations
-        href: ./minit/statistical-operations.md
-      - name: List of string operations
-        href: ./minit/string-operations.md
-      - name: List of other operations
-        href: ./minit/other-operations.md
-      - name: Calculation context
-        href: ./minit/calculation-context.md
-      - name: Calculation methods
+      - name: Custom metrics
         items:
         - name: Overview
-          href: ./minit/custom-metrics-how-to.md
-        - name: Basic examples
-          href: ./minit/custom-metrics-beginner-examples.md
-        - name: Advanced examples
-          href: ./minit/custom-metrics-advanced-examples.md
+          href: ./minit/custom-metrics.md
+        - name: Tips and examples
+          href: ./minit/general-information.md
+        - name: Requirements for application
+          href: ./minit/requirements-for-application.md
+        - name: List of data types-custom metrics
+          href: ./minit/data-types-custom-metrics.md
+        - name: Constants
+          href: ./minit/constants.md
+        - name: List of unary operators
+          href: ./minit/unary-operators.md
+        - name: Aggregations
+          href: ./minit/aggregations.md
+        - name: Date and time operations
+          href: ./minit/date-and-time-operations.md
+        - name: Mathematical operations
+          href: ./minit/mathematical-operations.md
+        - name: Statistical operations
+          href: ./minit/statistical-operations.md
+        - name: List of string operations
+          href: ./minit/string-operations.md
+        - name: List of other operations
+          href: ./minit/other-operations.md
+        - name: Calculation context
+          href: ./minit/calculation-context.md
+        - name: Calculation methods
+          items:
+          - name: Overview
+            href: ./minit/custom-metrics-how-to.md
+          - name: Basic examples
+            href: ./minit/custom-metrics-beginner-examples.md
+          - name: Advanced examples
+            href: ./minit/custom-metrics-advanced-examples.md
       - name: Business rules
         items:
         - name: Business rules overview

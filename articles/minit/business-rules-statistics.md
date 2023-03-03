@@ -58,5 +58,5 @@ The table shows metrics for each activity or edge in the data set of the selecte
 
 ### See also
 
-[Statistics overview (preview)](statistics.md)  
-[Business rule scope (preview)](business-rule-scope.md)
+[Statistics overview](statistics.md)  
+[Business rule scope](business-rule-scope.md)

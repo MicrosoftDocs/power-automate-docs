@@ -1,6 +1,6 @@
 ---
 title: Timeframe filter
-description: Learn how to select the timeframe of interest in your analysis in the Power Automate Process Mining desktop app.
+description: Learn how to select the timeframe of interest in your analysis in the minit desktop application.
 author: maslejka
 contributors:
   - maslejka
@@ -19,66 +19,46 @@ search.audienceType:
 
 # Timeframe filter
 
-Use this filter to select the time frame of interest in your analysis. 
+The timeframe filter lets you specify time related options for your analysis. On the left side, you can edit the filter rule. The right side shows the visualization of the course of the process divided into equal time intervals.
 
-:::image type="content" alt-text="Screenshot of the timeframe filter interval icons." source="media/image007.png":::
+1. On the left panel, select your timeframe filter.
 
-On the left side, you can edit the filter rule. The right side shows the visualization of the course of the process divided into equal time intervals. The number of time intervals, (for example, chart detail level), can be changed by the switch.
+1. On the **Level** row, select the time frame of interest in your analysis by selecting number.
 
-:::image type="content" alt-text="Screenshot of the course of the process divided into equal time intervals." source="media/image-57.png":::
+1. On the center panel, specify you filter results.
+
+1. On the center panel, select the cases to display in the chart (**ongoing**, **started**, and **ended**).
+
+    The colors of your selections match the colors in the visual on the right.
+
+1. Select **Apply**.
+    :::image type="content" alt-text="Screenshot of the course of the process divided into equal time intervals." source="media/timeframe-level.png":::
 
 ## Evaluation of presence in a timeframe
 
-Here it is necessary to specify the evaluation method to determine if a case falls in the specified timeframe.
+Specify the evaluation method to determine if a case falls in the specified timeframe.
 
-:::image type="content" alt-text="Screenshot of the evaluation method." source="media/image009-1-1.png":::
+The following list describes the options:
 
-### Fit in
+- **Fit in:** The case must start and finish within the specified timeframe.
 
-The case must both start and finish within the specified timeframe.
+- **Finish in:** The case must finish within the specified timeframe and start outside the specified timeframe.
 
-### Finish in
+- **Start in:** The case must start within the specified timeframe and finish outside the specified timeframe.
 
-The case must finish within the specified timeframe and start outside the specified timeframe.
+- **Intersecting:** Cases extend to the time frame. They might be contained, start, or finish in it.
 
-### Start in
-
-The case must start within the specified timeframe and finish outside the specified timeframe.
-
-### Intersecting
-
-Cases extend to the time frame. They may be contained, start or finish in it.
-
-### Pass through
-
-The case must start before the beginning of the specified timeframe and finish after the end of the specified timeframe.
+- **Pass through:** The case must start before the beginning of the specified timeframe and finish after the end of the specified timeframe.
 
 ## Timeframe specification
 
-To specify a timeframe, enter its start and finish time in the filter rule.
+To specify a timeframe, enter its start and finish time.
 
-:::image type="content" alt-text="Screenshot of the start and finish timeframe." source="media/duration1.png":::
+1. In the **in range** field, select the calendar icon and select the start date.
 
-Or you can specify a timeframe by marking it on the chart showing the course of the process.
+1. At the bottom of the calendar, set the start time by selecting the hour, minute, and AM or PM.
 
-:::image type="content" alt-text="Screenshot of marking the timeframe on the chart." source="media/image-58.png":::
+1. In the **and** field, select the calendar icon and select the end date.
 
-### Selecting which cases to display in the chart
-
-Here you can select the information to be displayed in the chart.
-
-:::image type="content" alt-text="Screenshot of selecting the cades to display in the chart." source="media/image012-3.png":::
-
-#### Ongoing cases
-
-The chart shows how many cases were ongoing in the timeframe.
-
-#### Started cases
-
-The chart shows how many cases started in the timeframe.
-
-#### Ended cases
-
-The chart shows how many cases finished in the timeframe.
-
+1. At the bottom of the calendar, set the end time by selecting the hour, minute, and AM or PM.
 

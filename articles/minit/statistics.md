@@ -79,13 +79,13 @@ To select case duration:
 
 1. In the **Active cases** dropdown menu, select **Cases duration**.
 
-    :::image type="content" alt-text="Screenshot of the number of cases with varying duration intervals." source="media/case-duration-sample.png":::
+    :::image type="content" alt-text="Screenshot of the statistics table for case duration." source="media/case-duration-sample.png":::
 
 ## Filtering in statistics charts
 
 You can filter selected values in the summary charts in the statistics of process instances and in the statistics of attributes by selecting each column. When you make a selection, the filter screen will open with the default values of the filter.
 
-:::image type="content" alt-text="Screenshot of the number of cases with varying duration intervals." source="media/chart-filtering.png":::
+:::image type="content" alt-text="Screenshot of the Filtering screen." source="media/chart-filtering.png":::
 
 ## Sort in the statistics grid
 

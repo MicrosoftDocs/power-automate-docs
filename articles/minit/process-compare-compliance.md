@@ -1,13 +1,13 @@
 ---
-title: Process compare for compliance
-description: Learn how to compare various process views in the Power Automate Process Mining desktop app.
+title: Compare process views for compliance
+description: Learn how to compare various process views in the minit desktop application.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/15/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -17,25 +17,29 @@ search.audienceType:
 - enduser
 ---
 
-# Process compare for compliance
+# Compare process views for compliance
 
-Comparison of the processes allows an intuitive and efficient comparison of processes. You can compare the processes at the level of the process map, where the generated visualization allows you to identify the differences in the flow and frequency or time metrics. By using the **Detail** panel, you can also compare in detail values of metrics and attributes at the level of activities and edges.
+Comparison of the processes allows an intuitive and efficient comparison of processes. You can compare the processes at the level of the process map, where the generated visualization allows you to identify the differences in the flow and frequency, or time metrics.
 
-You can compare the views of various processes or different views generated from a single process (for example, for different periods of time). It's important to remember that you can compare only saved views.
+You can also change the complexity of the map, nodes offset, or export the comparison map in the **Customize** and **Visualize** icons on the far right. <!--I don't see export.-->
 
-:::image type="content" alt-text="Screenshot of the 'Process compare' screen." source="media/image-18a.png":::
+:::image type="content" alt-text="Screenshot of the panel for adding views." source="media/process-compare.png":::
 
-You can use the settings panel and the visualization panel of the process map for the comparison map. You can change the complexity of the map, nodes offset or you can export the comparison map.
+You can compare in detail values of metrics and attributes at the level of activities and edges. You can also compare the views of various processes or different views generated from a single process (for example, for different periods of time) by selecting a process in the **Compare** box. You can compare only saved views. <!--Is this true? Where do you do this?--> 
 
-## Adding views
+## Add views
 
-A view, from which the functionality was displayed, is the basis for comparison. All added views as layers are constantly compared to the view you are currently working on.
+A view, from which the functionality was displayed, is the basis for comparison. All added views as layers are constantly compared to the view you're currently working on.
 
-Select (**+**) to display the panel for adding views or process blueprints in BPMN format. The panel contains the list of processes. When you select a process, the corresponding created views are displayed. Select **ADD LAYER** to add the selected view.
+To add a layer:
 
-To add a BPMN blueprint, select **ADD BPMN LAYER** and select a properly formatted BPMN diagram file from disc. The BPMN diagram will be transformed and compared to the currently open view.
+1. On the **Compare** box, select **Add layer**.
 
-:::image type="content" alt-text="Screenshot of the panel for adding views." source="media/comparison4.png":::
+1. In the **Views** dropdown menu, select a process.
+
+1. (If your process is in a blueprint format) Select **BPMN** and then select a properly formatted BPMN diagram. The BPMN diagram will be transformed and compared to the currently open view.
+
+<!--I don't see the next two sections:
 
 ## Changing the view
 
@@ -49,4 +53,4 @@ Use the buttons below the displayed map to show or hide activities and edges of 
 
 :::image type="content" alt-text="Screenshot of changing the visualization comparison." source="media/comparison3.png":::
 
-
+-->
