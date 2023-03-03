@@ -17,9 +17,9 @@ search.audienceType:
   - enduser
 ---
 
-# Analyze processes in process advisor
+# Analyze tasks and processes in process advisor
 
-On the left navigation pane in Power Automate, select **Process advisor** > **Processes**, and then select your process to go to the **Details** screen. This is where you'll access most of your process management activities.
+On the left navigation pane in Power Automate, select **Process advisor** > **Processes**, and then select your process to go to the **Details** screen. This is where you'll access most of your tasks and process management activities.
 
 > [!NOTE]
 > The [TDS endpoint setting](/power-platform/admin/settings-features) for your organization needs to be enabled. This feature is enabled by default, but if it's disabled for any reason, contact your Microsoft Power Platform administrator to enable it in the Power Platform admin center.
@@ -28,7 +28,7 @@ On the left navigation pane in Power Automate, select **Process advisor** > **Pr
 
 Some key things to do here are to view the status of the recordings and analyze your process. The **Analyze** option in the menu gets you started. The analyze feature adds a selected recording into the process map and associated analytics. If a recording's status isn't *analyzed*, it won't be part of the analytics reports.
 
-- After the process is analyzed, the process map and related analytics are available when you select **Analytics** in the menu.
+- After the task is analyzed, the process map and related analytics are available when you select **Analytics** in the menu.
 
 - The process status on the **Details** pane shows the status of the analysis and whether the process has been analyzed before.
 
