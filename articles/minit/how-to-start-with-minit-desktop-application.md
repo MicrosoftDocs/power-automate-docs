@@ -1,6 +1,6 @@
 ---
 title: Install Power Automate Process Mining desktop app
-description: Learn how to install the Minit desktop application in Microsoft Power Automate process advisor.
+description: Learn how to install the Power Automate Process Mining desktop app in Power Automate.
 author: maslejka
 contributors:
   - maslejka

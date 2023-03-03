@@ -1,6 +1,6 @@
 ---
-title: Edge conditional filter (preview)
-description: Learn how to use the edge conditional filter in the Minit desktop application in process advisor.
+title: Edge conditional filter
+description: Learn how to use the edge conditional filter in the .
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Edge conditional filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Edge conditional filter
 
 This case-level filter is similar to the Attribute (conditional) filter, only it is related to edges (instead of events). Both Activity-Based Process Map as well as Resource-Based Social Chart edges are supported. This is the first selection - process map based attribute:
 

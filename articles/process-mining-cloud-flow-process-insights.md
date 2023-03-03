@@ -1,5 +1,5 @@
 ---
-title: Improve cloud flows with process insights in process advisor (preview)
+title: Improve cloud flows with process insights (preview)
 description: Learn how to improve your cloud flows with process insights in the process advisor feature in Power Automate.
 author: donums
 contributors:
@@ -21,15 +21,13 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-
-
 You can gain insights and improve your cloud flows with the help of process mining. With a single click, you can visualize your flow’s performance, identify bottlenecks and optimization opportunities, and monitor for performance drifts. You can generate these insights directly from the flow details page by having process advisor analyze your flow-run history with process mining techniques.
 
 ## Prerequisites
 
 - Flow runs generated in the last 28 days.
 
-- Only owner of a flow can generate process insights.
+- Only the owner of a flow can generate process insights.
 
 - Access to Microsoft Dataverse.
 

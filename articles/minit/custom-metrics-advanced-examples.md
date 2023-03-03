@@ -1,6 +1,6 @@
 ---
-title: Advanced examples (preview)
-description: Get complex examples of custom operators in the Minit desktop application.
+title: Advanced examples
+description: Get complex examples of custom operators in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Advanced examples (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Advanced examples
 
 Due to  complex examples, this article uses some specific custom operators like `DURATIONCALENDAR` or `FIRSTIF`. No specific knowledge of these operators is required.
 

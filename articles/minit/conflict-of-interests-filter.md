@@ -1,6 +1,6 @@
 ---
-title: Conflict of interest filter (preview)
-description: Learn how to use the conflict of interest filter in the Minit desktop application in process advisor.
+title: Conflict of interest filter
+description: Learn how to use the conflict of interest filter in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Conflict of interest filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Conflict of interest filter
 
 Use this filter to expose cases with conflict of interests. A typical example is the violation of rules for assigning roles in performing critical tasks.
 

@@ -1,6 +1,6 @@
 ---
-title: Custom metrics calculation methods (preview)
-description: Learn the calculation methods used to define the desired calculation scope for custom metrics in the Minit desktop application in process advisor.
+title: Custom metrics calculation methods
+description: Learn the calculation methods used to define the desired calculation scope for custom metrics in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Custom metrics calculation methods (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Custom metrics calculation methods
 
 This documentation is intended for users who are already familiar with the basic functionality of the Minit desktop application and understand the basics of process mining.
 

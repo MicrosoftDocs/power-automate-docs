@@ -1,6 +1,6 @@
 ---
-title: Process compare for compliance (preview)
-description: Learn how to compare various process views in the Minit desktop application in process advisor.
+title: Process compare for compliance
+description: Learn how to compare various process views in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Process compare for compliance (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Process compare for compliance
 
 Comparison of the processes allows an intuitive and efficient comparison of processes. You can compare the processes at the level of the process map, where the generated visualization allows you to identify the differences in the flow and frequency or time metrics. By using the **Detail** panel, you can also compare in detail values of metrics and attributes at the level of activities and edges.
 

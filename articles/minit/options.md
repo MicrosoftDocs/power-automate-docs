@@ -1,6 +1,6 @@
 ---
-title: Application settings (preview)
-description: Learn how to change application settings such as user interface language or set where the exported files will be stored in the Minit desktop application in process advisor.
+title: Application settings
+description: Learn how to change application settings such as user interface language or set where the exported files will be stored in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Application settings (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Application settings
 
 Here you can change the application settings. After the settings are changed, the changes are applied after you select **Save**.
 

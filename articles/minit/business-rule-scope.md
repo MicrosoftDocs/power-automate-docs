@@ -1,6 +1,6 @@
 ---
-title: Business rule scope (preview)
-description: Learn about the mandatory field Scope in business rule definition in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Business rule scope 
+description: Learn about the mandatory field Scope in business rule definition in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Business rule scope (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Business rule scope
 
 You must select a **Scope** when you define a business rule. It determines the scope to which the output result is delivered.
 

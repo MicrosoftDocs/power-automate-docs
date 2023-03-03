@@ -1,6 +1,6 @@
 ---
-title: End events filter (preview)
-description: Learn how to restrict cases according to the property of the event that occurred at the beginning or at the end of the case in the Minit desktop application in process advisor.
+title: End events filter
+description: Learn how to restrict cases according to the property of the event that occurred at the beginning or at the end of the case in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# End events filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# End events filter
 
 Use this filter to restrict cases according to the property of the event that occurred at the beginning or at the end of the case.
 

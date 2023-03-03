@@ -1,6 +1,6 @@
 ---
-title: List of other operations (preview)
-description: Get a list of operations and what they return in the minit desktop application in process advisor.
+title: List of other operations
+description: Get a list of operations and what they return in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# List of other operations (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# List of other operations
 
 ## attributeName
 

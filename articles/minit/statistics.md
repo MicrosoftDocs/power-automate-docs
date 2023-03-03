@@ -1,13 +1,13 @@
 ---
-title: Statistics overview (preview)
-description: Get an overview of the properties of the process undergoing analysis in the Minit desktop application in process advisor.
+title: Statistics overview
+description: Get an overview of the properties of the process undergoing analysis in the minit desktop application.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 03/05/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -17,80 +17,88 @@ search.audienceType:
 - enduser
 ---
 
-# Statistics overview (preview)
+# Statistics overview
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+This article provides an overview of the properties of the process undergoing analysis. This includes the information about the process through summary charts and statistics. Statistics are shown in the top panel. The the listings of specific records displayed in the statistics appear in the bottom panel.
 
-This section provides a brief and easy-to-understand overview of the properties of the process undergoing analysis and contains the information about the process through summary charts and statistics. Statistics are shown in the upper part, the bottom part contains the listings of specific records displayed in the statistics.
+The statistics always reflect the data after filters, if any, have been applied.
 
-The displayed statistics always reflect the data after filters, if any, have been applied.
+## Types of statistics
 
-## Detailed table information
+To open the statistics screen, select **Statistics** on the left panel in the **Processes** screen. The following types of statistics are available:
 
-This section contains a summary header and table with a detailed list of cases, activities, or other attribute values.
+- **Case overview:** Statistics per single cases with case level metrics. To learn more, go to [Case overview statistics](case-overview-statistics.md).
 
-:::image type="content" alt-text="Screenshot of a detailed list of cases, activities, and other attribute values." source="media/image-32.png":::
+- **Activity statistics:** Activities that display their various event level properties. To learn more, go to [Activities (event-level) statistics](activities-event-level-statistics.md).
 
-The following types of statistics are available:
+    - Attributes imported with the process marked as **Others** and **Source** have the same statistical summary as the statistics for the activity.
 
-- **Case overview:** Statistics per single cases with case level metrics – a detailed description is in the relevant [sub-page](case-overview-statistics.md).
+- **Edge statistics:** Process paths (edges) metrics. To learn more, go to [Edge statistics](edge-statistics.md).
 
-- **Activity statistics:** The statistic refers to activities and display their various event level properties - see [sub-page](activities-event-level-statistics.md).
+- **Cases duration influence:** Analytical insight that evaluates the influence of case-level attributes (including financial) on the mean case duration. To learn more, go to [Case duration influence](#case-duration-influence) in this article.
 
-- **Edge statistics:** The statistic refers to process paths (edges) metrics - see [sub-page](edge-statistics.md).
+- **Business rules:** Overview of defined business rules. To learn more, go to [Business rules overview](business-rules.md).
 
-- **Cases duration influence:** Analytical insight that evaluates the influence of case-level attributes (including financial) on the mean case duration, for more details scroll below on this page.
+## Export statistics
 
-- **Business rules:** The statistic refers to overview of defined business rules. More details can be found on [Business rules](business-rules.md) page.
+You can export your statistics chart in .png format, or your table of records in .csv format. 
 
-### Statistics for other attributes
+To export, select an option in the **Export** dropdown menu.
 
-Attributes imported with the process marked as Others and Source have the same statistical summary as the statistics for the activity.
+## Stastistics samples
 
-### Exporting statistics
+Statistics allow you to quickly identify issues in the process. The following sections provide examples.
 
-The displayed statistics chart can be exported as a PNG image. The table of specific records shown in the statistics can be exported to CSV format. In the cases overview, you can select the button to go to the export screen with the pre-selected cases export.
+### Average resource activity time
 
-### Sample uses of statistics
+Show the average activity time of resources. As in the following screenshot, it's apparent that some resources need much longer time to complete their activities than others. You can narrow your list of resources to get more data. 
 
-By means of statistics, issues in the process can be identified quickly – a few examples are given below.
+To choose specific resources:
 
-#### Average resource activity time
+1. In the **Category** dropdown menu, select **activityName**.
 
-The following screenshot shows the average activity time of resources, and at first glance, it's apparent that some resources need much longer time to complete their activities than others.
+1. Select **Enable filter**.
 
-:::image type="content" alt-text="Screenshot of the average time of resources." source="media/image-33.png":::
+1. In the **Filtered by** dropdown menu, select **Associate**.
 
-#### Cases duration
+1. Open the **Attribute value** list by selecting the blank **values** field.
 
-The picture shows the number of cases with varying duration intervals. If it is evident from the chart that there are rare cases in the data that distort the average values, such cases require attention or possibly should be excluded from process analysis as non-standard.
+1. Select the associates names.The names are added to the **values** field.
 
-:::image type="content" alt-text="Screenshot of the number of cases with varying duration intervals." source="media/image-31.png":::
+1. Select **Apply**.
 
-### Events filter for process attributes
+    :::image type="content" alt-text="Screenshot of the average time of resources." source="media/activity-stats-sample.png":::
 
-You can use the quick filter as part of the statistics for the attributes. The filter allows you to filter out the statistics of process attributes based on selected values or a set of values of the selected attribute. To activate the filter, select the checkmark next to the attribute name.
+### Cases duration
 
-:::image type="content" alt-text="Screenshot of the events filter for process attributes." source="media/image-34.png":::
+Show the number of cases with varying duration intervals. If the chart shows that there are rare cases in the data that distort the average values, such cases might require attention, or possibly should be excluded from process analysis as non-standard.
 
-### Filtering in statistics charts
+To select case duration:
 
-You can filter selected values in the summary charts in the statistics of process instances and in the statistics of attributes by selecting each column. When you make a selection, the filter screen will automatically appear with the default values of the filter.
+1. In the **Category** dropdown menu, select **Case overview**.
 
-### Sorting in the statistics grid
+1. In the **Active cases** dropdown menu, select **Cases duration**.
 
-You can sort the statistics grid by selecting the header of any column. This will change ascending and descending sorting order (visually represented by the small arrow next to the column header):
+    :::image type="content" alt-text="Screenshot of the number of cases with varying duration intervals." source="media/case-duration-sample.png":::
 
-:::image type="content" alt-text="Screenshot of sorting the statistics grid." source="media/image007-4.png":::
+## Filtering in statistics charts
 
-### Case duration influence
+You can filter selected values in the summary charts in the statistics of process instances and in the statistics of attributes by selecting each column. When you make a selection, the filter screen will open with the default values of the filter.
 
-Case duration influence is a complex analytical insight that automatically evaluates the influence of case-level attributes (including financial) on the mean case duration. Minit takes all case-level attribute values and based on the mean duration of the cases having the specific case-level attribute value weighted by the volume of cases having this value calculates the percental influence of cases having this value on the overall mean case duration.
+:::image type="content" alt-text="Screenshot of the number of cases with varying duration intervals." source="media/chart-filtering.png":::
 
-As seen in the screenshot, if the Article is Software Licenses, the mean duration is longer than for article Hardware, but the influence on the overall case duration is not so strong as the case frequency is much smaller for Software Licenses than it is for Hardware.
+## Sort in the statistics grid
 
-A positive percentage number (in RED) means, that the corresponding attribute value is slowing the process. A negative percentage number (in GREEN) is, on the other hand, making the process faster and its influence on the mean duration is represented by the percentage value.
+You can sort the statistics grid by selecting the up or down arrow in the header of a column where sorting is available. This will change ascending and descending sorting order.
 
-To access the Case duration influence, select Case duration influence statistics from the selection control in the top left corner.
+## Case duration influence
 
-:::image type="content" alt-text="Screenshot of case duration influence." source="media/image-35.png":::
+Case duration influence is a complex analytical insight that evaluates the influence of case-level attributes (including financial) on the mean case duration. Minit takes all case-level attribute values and, based on the mean duration of the cases having the specific case-level attribute value weighted by the volume of cases having this value, calculates the percentile influence of cases having this value on the overall mean case duration.
+
+For example, if the Article is Software Licenses, the mean duration is longer than for article Hardware, but the influence on the overall case duration is not so strong. This is because the case frequency is much smaller for Software Licenses than it is for Hardware.
+
+A positive percentage number (in RED) means that the corresponding attribute value is slowing the process. A negative percentage number (in GREEN) is making the process faster. Its influence on the mean duration is represented by the percentage value.
+
+To access the case duration influence, select **Case duration influence** statistics from the selection control in the top left corner.
+
+

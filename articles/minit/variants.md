@@ -1,6 +1,6 @@
 ---
-title: Variants overview (preview)
-description: Learn about the process performance variants in the Minit desktop application in process advisor.
+title: Variants overview
+description: Learn about the process performance variants in thePower Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,13 +17,9 @@ search.audienceType:
 - enduser
 ---
 
-# Variants overview (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Variants overview
 
 This section deals with process performance variants.
-
-
 
 ## What Is a variant?
 

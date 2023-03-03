@@ -4,7 +4,7 @@ description: Group multiple machines together to help distribute your automation
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 02/08/2023
 ms.author: marleon
 ms.reviewer: gtrantzas

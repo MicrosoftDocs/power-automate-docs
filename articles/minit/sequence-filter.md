@@ -1,6 +1,6 @@
 ---
-title: Sequence filter (preview)
-description: Learn how to define the sequence in which two events with specific attribute values are performed and specify further requirements for the progress of events in a case in the Minit desktop application in process advisor.
+title: Sequence filter
+description: Learn how to define the sequence in which two events with specific attribute values are performed and specify further requirements for the progress of events in a case in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Sequence filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Sequence filter
 
 This case level filter applies to the sequence in which events are performed in a case. You can use it to define the sequence in which two events with specific attribute values are performed and to specify further requirements for the progress of events in a case.
 

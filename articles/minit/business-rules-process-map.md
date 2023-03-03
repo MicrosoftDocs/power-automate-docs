@@ -1,6 +1,6 @@
 ---
-title: Business rules for process maps (preview)
-description: Learn how to display business rules in the process map in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Business rules for process maps
+description: Learn how to display business rules in the process map in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Business rules for process maps (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Business rules for process maps
 
 Use the **Customize** pane in the process explorer right side panel to select business rules to view in the process map. You can display results per single business rule or by severity over all business rules. Process scope business rules aren't available in the process map.
 

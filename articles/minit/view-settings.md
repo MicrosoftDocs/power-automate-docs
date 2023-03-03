@@ -1,6 +1,6 @@
 ---
-title: View settings (preview)
-description: Learn how to define various settings valid for the current process in the Minit desktop application in process advisor.
+title: View settings
+description: Learn how to define various settings valid for the current process in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# View settings (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# View settings
 
 The View settings panel enables defining various settings valid for the current process view. This panel is easily accessible from any Minit screen such as Process Map, Variants, Statistics, and others. The View setting icon can be found in the bottom left corner, above the Filters icon. With no changes applied (for example, with default settings), the icon remains grey.
 

@@ -1,6 +1,6 @@
 ---
-title: Case metrics filter (preview)
-description: Learn how to filter cases based on metrics in the Minit desktop application in process advisor.
+title: Case metrics filter
+description: Learn how to filter cases based on metrics in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Case metrics filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Case metrics filter
 
 This case-level filter can be used to filter cases based on various metrics. The case count based on the selected metrics is visualized on the right. The number of intervals (for example, chart detail level), can be changed by the switch. You can select different types of metrics.
 

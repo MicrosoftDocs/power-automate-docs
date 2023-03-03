@@ -19,14 +19,7 @@ search.audienceType:
 
 # Overview of process mining
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
 Process mining in process advisor allows you to take the event data from your system of records and visualize the processes happening in your organization. Process mining provides novel insights that can help you identify automation opportunities, and address performance and compliance opportunities.
-
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Business example
 
@@ -41,6 +34,7 @@ For example, as a business owner in accounts payable, you can use process adviso
 You can easily filter for custom attributes such as location, department, and other dimensions that are relevant to your process.
 
 ## Components
+
 - [Data requirements](process-mining-processes-and-data.md#data-requirements)
 
 - [Transform and map data](process-mining-transform.md)

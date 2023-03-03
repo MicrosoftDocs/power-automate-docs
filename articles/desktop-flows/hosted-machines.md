@@ -54,7 +54,7 @@ To use hosted machines, you need one of the following Power Automate licensing o
     Trial users are granted the capacity of one hosted machine. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
 > [!NOTE]
-> All tenants have a global limit of 10 hosted machines.
+> During the preview period, all tenants have a global limit of 10 hosted machines.
 
 You'll also need the following prerequisite licenses: Windows, Intune, Azure Active Directory.
 

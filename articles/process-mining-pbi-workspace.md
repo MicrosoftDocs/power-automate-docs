@@ -1,6 +1,6 @@
 ---
-title: Customize a report with your own Power BI workspace (preview)
-description: Learn how to use your own custom Power BI workspace and leverage a higher capacity to analyze processes with process mining in the process advisor feature in Power Automate.
+title: Customize a report with your own Power BI workspace
+description: Learn how to use your own custom Power BI workspace and leverage a higher capacity to analyze processes with process mining in Power Automate.
 author: donums
 contributors:
   - donums
@@ -17,9 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Customize a report with your own Power BI workspace (preview) 
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Customize a report with your own Power BI workspace
 
 You can use your own custom Power BI workspace and leverage a higher capacity to analyze processes with a lot more data. You'll also be able to customize the look and feel of the report.
 

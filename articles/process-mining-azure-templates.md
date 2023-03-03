@@ -1,6 +1,6 @@
 ---
-title: Azure templates for process mining in process advisor (preview)
-description: Learn how to use Azure templates for process mining in the Power Automate process advisor.
+title: Azure templates for process mining
+description: Learn how to use Azure templates for process mining in Power Automate.
 author: donums
 contributors:
   - donums
@@ -17,9 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Azure templates for process mining (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Azure templates for process mining
 
 Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps (work tracking)](#azure-devops-work-tracking-template), [Azure DevOps (pipelines)](#azure-devops-pipelines-template), [Logic Apps (standard plan)](#logic-apps-standard-plan-template), [Logic Apps (consumption plan)](#logic-apps-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
 

@@ -1,6 +1,6 @@
 ---
-title: Export (preview)
-description: Learn how to export process data to an external file in the Minit desktop application in process advisor.
+title: Export
+description: Learn how to export process data to an external file in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Export (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Export
 
 Here you can export process data to an external file. After filling in all required data, press the Export button.
 

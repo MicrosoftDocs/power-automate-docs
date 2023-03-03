@@ -1,6 +1,6 @@
 ---
-title: Power Platform templates for process mining in process advisor (preview)
-description: Learn how to use Power Platform templates for process mining in the Power Automate process advisor.
+title: Power Platform templates for process mining in process mining
+description: Learn how to use Power Platform templates for process mining in Power Automate.
 author: donums
 contributors:
   - donums
@@ -18,8 +18,6 @@ search.audienceType:
 ---
 
 # Power Platform templates for process mining (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. Templates for [Desktop flows](#desktop-flows-template), [Power Virtual Agents](#power-virtual-agents-template), and [Power Apps insights](#power-apps-insights-template) provide insights that help you identify automation opportunities and address performance and compliance opportunities in your flows.
 

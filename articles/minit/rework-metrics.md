@@ -1,6 +1,6 @@
 ---
-title: Rework metrics (preview)
-description: Learn about rework metrics types and more in the Minit desktop application in process advisor.
+title: Rework metrics
+description: Learn about rework metrics types and more in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Rework metrics (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Rework metrics
 
 Rework metrics represent a layer of data analysis with a focus on identifying various kinds of repetitions found in a process. Rework information is covered in Statistics and can be visualized on the Process map for better understanding the root cause of each repetition and its overall impact. Reducing repetitions is crucial for improving the efficiency of the process as well as reducing costs.
 

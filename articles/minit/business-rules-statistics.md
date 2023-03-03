@@ -1,6 +1,6 @@
 ---
-title: Business rules statistics (preview)
-description: Learn about the statistics available for business rules in the Minit desktop application for Microsoft Power Automate process advisor.
+title: Business rules statistics
+description: Learn about the statistics available for business rules in the Minit desktop application for the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Business rules statistics (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Business rules statistics
 
 Along with statistics about your cases, activities, and edges, Minit collects statistics on each of your business rules. You can view them in the Statistics module.
 

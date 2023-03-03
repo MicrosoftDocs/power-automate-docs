@@ -1,6 +1,6 @@
 ---
 title: Understand process animation controls
-description: Learn about the various animation controls in Power Automate Process Mining desktop app.
+description: Learn about the various animation controls.
 author: maslejka
 contributors:
   - maslejka
@@ -41,13 +41,13 @@ The **Show significance values** options set the mode with the color highlightin
 
 The number at the chart node represents how many events of the given activity are currently in progress. The color highlight makes it possible to easily distinguish how many events are dealing with the activity at the moment. During the animation, you can easily see which activities often take place in parallel.
 
-:::image type="content" alt-text="Screenshot of the number and color highlight of the node." source="media/image004-5.png":::
+:::image type="content" alt-text="Screenshot of the number and color highlight of the node." source="media/node-highlight.png":::
 
 To learn more about color highlighting, go to [Display the significance of values](#display-the-significance-of-values) in this topic.
 
 ## Understand number and color highlight of the edge
 
-The number at the chart edge represents how many transitions between activities are currently in progress or, in other words, how many pending cases are waiting for the next event to take place. The color highlight of the edge allows to easily identify if there are too many cases concurrently waiting for an activity to take place.
+The number at the chart edge represents how many transitions between activities are currently in progress. This tells you how many pending cases are waiting for the next event to take place. The color highlight of the edge allows you to easily identify if there are too many cases concurrently waiting for an activity to take place.
 
 :::image type="content" alt-text="Screenshot of the number and color highlight of the edge." source="media/image005-3.png":::
 

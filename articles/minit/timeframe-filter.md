@@ -1,13 +1,13 @@
 ---
-title: Timeframe filter (preview)
-description: Learn how to select the timeframe of interest in your analysis in the Minit desktop application in process advisor.
+title: Timeframe filter
+description: Learn how to select the timeframe of interest in your analysis in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/15/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Timeframe filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Timeframe filter
 
 Use this filter to select the time frame of interest in your analysis. 
 

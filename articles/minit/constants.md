@@ -1,6 +1,6 @@
 ---
-title: Constants (preview)
-description: Get a list of constants in the Minit desktop application in process advisor.
+title: Constants
+description: Get a list of constants in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Constants (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Constants
 
 | Constant | Data type | Description |
 | - | - | - |

@@ -1,6 +1,6 @@
 ---
-title: Requirements for application (preview)
-description: Learn how where your metrics are applicable in the Minit desktop application in process advisor.
+title: Requirements for application
+description: Learn how where your metrics are applicable in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Requirements for application (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Requirements for application
 
 Custom metrics can be applied in Process Map, Statistics, and Filters. You can see where your metrics are applicable directly in the editor window.
 

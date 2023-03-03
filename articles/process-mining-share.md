@@ -1,5 +1,5 @@
 ---
-title: Share process mining processes in process advisor (preview) | Microsoft Docs
+title: Share process mining processes in process mining
 description: Share a process mining process with others so that they can glean insights to make decisions.
 author: donums
 contributors:
@@ -17,9 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Share process mining processes (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Share process mining processes
 
 When you create a process in process advisor, only you can see it. But you may want to share the analytics and insights with others. Share your process mining processes with others in your organization so they can also glean insights to make decisions.
 
@@ -33,27 +31,21 @@ There are a few ways you can share your process.
 
 1. Select **More commands** (the three vertical dots), and then select **Share**. 
 
-    :::image type="content" source="media/process-mining-share/share-option.png" alt-text="Screenshot of the 'Share' menu option.":::
+![image](https://user-images.githubusercontent.com/113051637/221950075-dbd87083-bdc6-424f-be01-092984e1062c.png)
+
 
 ## Share from process details page
 
-On the process details page, you can share the process in one of two ways:
+On the process details page, you can share the process by selecting **Manage** from the **Shared with** card.
 
-- In the command bar, select **Share**.
+![image](https://user-images.githubusercontent.com/113051637/222214319-f2b5dc9b-a039-4bfc-90c9-31b8f0392324.png)
 
-    :::image type="content" source="media/process-mining-share/share-menu.png" alt-text="Screenshot of 'Share' in the command bar.":::
-
-    Or
-
-- On the **Share with** card, select **Manage**.
-
-    :::image type="content" source="media/process-mining-share/manage-button.png" alt-text="Screenshot of the 'Manage' button on the 'Share with' card.":::
 
 ## Share from analytics report page
 
 On the analytics report page, you can share the process by selecting **Share** in the command bar.
 
-:::image type="content" source="media/process-mining-share/share-report-page.png" alt-text="Screenshot of 'Share' option on the analytics report page.":::
+![image](https://user-images.githubusercontent.com/113051637/221950972-210521db-92d5-491c-b4c7-409a48349753.png)
 
 ## Share panel
 
@@ -87,7 +79,7 @@ Adding a co-owner to the process allows the owner to include other people who ca
 
 ## Share a process with a viewer
 
-  Adding a viewer to a process shares analytics and insights with other people. If the analytics have not been generated, the viewer would land on the process details page instead. A viewer can perform the following actions:
+  Adding a viewer to a process shares analytics and insights with other people. A viewer can perform the following actions:
 
 - View the process details.
 

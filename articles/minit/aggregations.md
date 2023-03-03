@@ -1,6 +1,6 @@
 ---
-title: Aggregations (preview)
-description: Learn the aggregations you can use in custom metrics in the Minit desktop application for Microsoft Power Automate process advisor
+title: Aggregations
+description: Learn the aggregations you can use in custom metrics in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -18,9 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Aggregations (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Aggregations
 
 This article describes the aggregations you can use in custom metrics
 

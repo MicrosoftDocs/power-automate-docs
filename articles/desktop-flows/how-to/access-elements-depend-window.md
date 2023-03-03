@@ -4,7 +4,7 @@ description: Access elements that depend on how the window appears on the screen
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/24/2021
 ms.author: marleon
 ms.reviewer: gtrantzas

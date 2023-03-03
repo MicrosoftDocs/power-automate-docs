@@ -1,6 +1,6 @@
 ---
-title: Custom metrics overview (preview)
-description: Learn how to use predefined metrics to define your own metrics in the Minit desktop application in process advisor.
+title: Custom metrics overview
+description: Learn how to use predefined metrics to define your own metrics in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Custom metrics overview (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Custom metrics overview
 
 The *custom metrics* (also known as calculated metrics) module allows you to use pre-defined metrics in the application, different aggregations, mathematical, datetime, string, and other operations and functions and constants in a formula editor to define your own custom metrics. It is then possible to visualize them in the process map or according to their context in other parts of the application in a similar way as the static ones.
 

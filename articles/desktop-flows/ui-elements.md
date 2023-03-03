@@ -4,8 +4,8 @@ description: Learn how to capture UI elements in your desktop flows.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 01/10/2023
+ms.topic: conceptual
+ms.date: 01/24/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -136,7 +136,12 @@ Selecting **Capture** will add the UI element with the proper text-based selecto
 
 :::image type="content" source="media/ui-elements/create-text-based-selector-dialog.png" alt-text="Screenshot of the Create a text-based selector dialog.":::
 
-Text-based selectors use the **Name** attribute of the captured element for desktop automation and the **Text** attribute for browser automation. They're available only for UI elements that contain a text value themselves. In other words, they are available for UI elements with a **Name** or **Text** attribute that includes a value. They aren't available for elements that don't hold such a text value, even if they have child element(s) with text in their structure.
+Text-based selectors use the **Name** attribute of the captured element for desktop automation and the **Text** attribute for browser automation. They're available only for UI elements that contain a text value themselves.
+
+In other words, they are available for UI elements with a **Name** or **Text** attribute that includes a value. They aren't available for elements that don't hold such a text value, even if they have child element(s) with text in their structure.
+
+>[!NOTE]
+> For the SAP application, text-based selectors use the **Text** attribute instead of the **Name** attribute that they generally use on desktop automation. SAP automation works more efficiently with default selectors based on the **ID** attribute.
 
 ## Known issues and limitations
 

@@ -1,6 +1,6 @@
 ---
-title: Settings overview (preview)
-description: Learn how to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license in the Minit desktop application in process advisor.
+title: Settings overview
+description: Learn how to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license in the Power Automate Process Mining desktop app.
 author: maslejka
 contributors:
   - maslejka
@@ -17,9 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Settings overview (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Settings overview
 
 The Settings section allows you to set the general options and default configuration of Minit, define the working hours calendar templates, and update the application or license.
 

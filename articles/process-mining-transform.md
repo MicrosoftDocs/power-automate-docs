@@ -1,6 +1,6 @@
 ---
-title: Transform and map data in process advisor (preview)
-description: This topic describes how to transform and map data with process mining in the process advisor feature in Power Automate.
+title: Transform and map data in process mining
+description: This topic describes how to transform and map data with process mining in Power Automate.
 author: donums
 contributors:
   - donums
@@ -17,9 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Transform and map data in process advisor (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Transform and map data in process advisor
 
 After you select the data source you want to use, you're taken to the Power Query Editor. The Query Editor is a powerful tool to transform your data. To learn more, go to [The Power Query user interface](/power-query/power-query-ui).
 
@@ -30,9 +28,6 @@ Here are some reasons why you might want to transform the data:
 - You might want to rename some of the activity names to be more descriptive and understandable. This is often not the case with names in a database.
 
 - You might be interested in only a specific date range, and not the entire history of data.
-
-    > [!NOTE]
-    > For public preview, we only support up to 150,000 rows of data. Because of this, filtering to a specific period may be necessary.
 
 - You might want to combine multiple ID columns to form the case ID. This is often done when the ID you want to use for process mining doesn't exist or is a combination of multiple IDs in the application. For example, when a customer files support tickets, the support ticket might be assigned to multiple customer service agents. If you want to analyze how each agent handles each ticket, you would combine the agent ID and the ticket ID into the case ID.
 
