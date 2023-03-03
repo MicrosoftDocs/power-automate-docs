@@ -5,6 +5,7 @@ author: donums
 contributors:
   - donums
   - v-aangie  
+  - tatn
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 03/15/2023
@@ -15,43 +16,50 @@ search.app:
 search.audienceType: 
   - flowmaker
   - enduser
+  - analyst
 ---
 
 # Process mining overview
 
-Process mining capabilities allow you to gain a better understanding of your business processes so you can optimize them. They can be a key driver in making intelligent, day-to-day improvements on every level. You can discover and model processes for which you have data readily available, giving you an X-ray visualization of what goes on in your organization. In addition, you can standardize, optimize, and improve operations, while staying informed about progress towards defined key process indicators.
+Process mining capabilities provide a powerful tool to optimize your business processes by enabling you to identify inefficiencies and make informed, intelligent improvements on every level. By analyzing event log files from the apps you use in your processes, you can gain a deep understanding of your organization's processes and visualize them with X-ray clarity. This helps you standardize, optimize, and improve operations, while staying informed about progress towards defined key process indicators.
 
-With process mining capabilities, you can discover inefficiencies in organization-wide processes. They enable you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). You'll also get maps of your processes, enriched with data and metrics to recognize performance issues. Example processes include *accounts receivable* and *order-to-cash*.
+With process mining, you can discover inefficiencies in organization-wide processes in any indurstry such as sales processes, manufacturing, funance, IT, etc... By analyzing data and metrics, you can quickly recognize performance issues and take action to address them.
 
-Explore the topics in this documentation for business scenarios, tutorials, guided procedures, and videos.
+To learn more about process mining and how it can help your business, explore the topics covered in this documentation. You'll find business scenarios, tutorials, guided procedures, and videos to help you get started.
 
 ## Benefits of using process mining capabilities
 
-Your organization can achieve many benefits from using process mining capabilities. Here are just a few things you can do:
+Process mining capabilities offer numerous benefits for your organization. Here are just a few examples:
 
-- See the actual steps needed to perform your organization’s operation process and remove any guesswork.
+- Gain a clear understanding of the actual steps involved in your organization's operational processes, removing guesswork and providing actionable insights for improvement.
 
-- Save time and money by optimizing processes.
+- Save time and money by optimizing processes, identifying inefficiencies, and automating tasks.
 
-- Detect non-compliant processes and/or tasks.
+- Detect non-compliant processes or tasks, ensuring compliance with regulations and industry standards.
 
-- Discover automation opportunities.
+- Discover automation opportunities, enabling you to streamline your operations and reduce the potential for errors.
 
-- Compare processes.
+- Compare processes, identifying variations and best practices that can be shared across your organization.
 
-- Understand where and why problems occur.
+- Understand where and why problems occur, helping you to identify root causes and take corrective action to improve performance.
+
+By leveraging process mining capabilities, your organization can gain a deeper understanding of its processes, optimize its operations, and improve overall efficiency and effectiveness.
 
 ## Business example
 
-As a business owner in accounts payable, you can use process mining capabilities to find the steps and actions in your procure-to-pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process mining produces a process map. This map enables you to visualize the activities in the procure-to-pay process to gain the following insights:
+As a business owner in accounts payable, process mining capabilities can help you uncover the steps and actions involved in your procure-to-pay process. By analyzing event log files from your ERP systems, such as Dynamics 365 or SAP, process mining produces a detailed process map that allows you to visualize the activities in the procure-to-pay process and gain valuable insights.
 
-- Which activities in a process take the longest?
+Using process mining, you can answer important questions such as:
 
-- How many variations of invoice approval exist in the organization?
+- Which activities in the process take the longest to complete?
 
-- Are the activities of the process within compliance?
+- How many variations of invoice approval exist within your organization?
 
-You can easily filter for custom attributes such as location, department, and other dimensions that are relevant to your process.
+- Are the activities of the process in compliance with regulations and industry standards?
+
+In addition, you can filter the process map based on custom attributes, such as location, department, or other relevant dimensions, to gain a deeper understanding of how different parts of your organization are performing.
+
+By leveraging process mining capabilities, you can identify inefficiencies in your procure-to-pay process and take action to optimize operations, reduce costs, and improve compliance.
 
 ## Components
 
