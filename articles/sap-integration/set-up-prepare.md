@@ -95,7 +95,7 @@ The on-premises data gateway installation encompasses multiple components instal
 
 The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Update the service account to a domain account if setting up Windows or Azure single sign-on (SSO). Additional information is provided in [Step 1](#step-1-configure-kerberos-constrained-delegation).
 
- On-premises data gateway clusters can be created to avoid single points of failure when accessing on-premises data resources. For SAP Integration, ensure that random load balancing is turned off.
+ On-premises data gateway clusters can be created to avoid single points of failure when accessing on-premises data resources. For SAP Integration, calls should be forced to the primary gateway in a cluster. Calls are only directed to the second gateway when the primary gateway call fails. To support this scenario, ensure that random load balancing is turned off.
 
 1. Go to the [**Settings**](/power-platform/admin/onpremises-data-gateway-management#settings) panel in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
 1. Make sure the checkbox next to "Distribute requests across all active gateways in this cluster" **remains unchecked** on the on-premises data Settings panel.
