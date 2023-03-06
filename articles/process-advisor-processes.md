@@ -182,15 +182,15 @@ Here are some tips to group actions into activities, which may be helpful for yo
 
 1. **Use existing activity name**: This creates a more consistent and accurate process map. Activity names will be available in the dropdown list whenever a recording is saved. To remove an activity name from the  list after it was removed from all recordings that used that name, you need to analyze the recording.
 
-2.**Look for patterns**: Analyze the recorded actions for patterns that occur frequently, such as similar steps taken to complete a task or common applications used. Grouping these actions together can help identify common activities.
+2. **Look for patterns**: Analyze the recorded actions for patterns that occur frequently, such as similar steps taken to complete a task or common applications used. Grouping these actions together can help identify common activities.
 
 3. **Use discretion**: Group actions together that make sense to you and are related to the overall process. For example, if you are analyzing a sales process, you might group actions related to lead generation, outreach, and closing deals.
 
 4. **Consider frequency**: You may want to group actions that occur frequently together. This can help identify bottlenecks in the process or areas where automation could be beneficial.
 
-5.** Think about dependencies**: Consider grouping actions that have dependencies on each other. For example, if you need to download a file before uploading it, these two activities could be grouped together.
+5. **Think about dependencies**: Consider grouping actions that have dependencies on each other. For example, if you need to download a file before uploading it, these two activities could be grouped together.
 
-6.**Use feedback**: Collaborate with other stakeholders in the process, such as employees who perform the tasks or supervisors who oversee the process, to get feedback on the grouping of actions. Their insights can help improve the accuracy and usefulness of the process map.
+6. **Use feedback**: Collaborate with other stakeholders in the process, such as employees who perform the tasks or supervisors who oversee the process, to get feedback on the grouping of actions. Their insights can help improve the accuracy and usefulness of the process map.
 
 ### Create recommended activity names
 
