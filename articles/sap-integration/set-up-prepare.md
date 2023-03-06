@@ -54,7 +54,7 @@ The assembled team of IT system administrators needs to review the following req
 - [SAP](<https://www.sap.com/>) subscription:
   
   - The SAP ERP connector can work with any SAP system that uses RFC and BAPI calls.
-  - Set up requires an administrator who valid S-User access to the SAP system(s). The S-User is an SAP super administrator and has all of the authorizations for the portal and can manage other necessary SAP roles as necessary.
+  - Set up requires an administrator who has valid S-User access to the SAP system(s). The S-User is an SAP super administrator and has all of the authorizations for the portal and can manage other necessary SAP roles as necessary.
 
 - [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server. Create a Windows VM or provision a server specifically for hosting the on-premises data gateway for SAP integration with Power Platform.
   - Ensure it meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended) for gateway installation and management.
@@ -64,7 +64,7 @@ The assembled team of IT system administrators needs to review the following req
   - Review [on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management) for Power Platform to learn more.
   - Go to the [Microsoft Download Center's on-premises data gateway page](https://www.microsoft.com/download/details.aspx?id=53127) and download the most recent version (December 16, 2022 or newer) of the gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
     - In the _System Requirements_ section on the gateway download page, identify the operating systems and .NET Frameworks required to support the most recent version of the gateway.
-- [Microsoft .NET Framework.](https://dotnet.microsoft.com/download/dotnet-framework) Download the.NET Framework that supports the most recent version of the gateway.
+- [Microsoft .NET Framework.](https://dotnet.microsoft.com/download/dotnet-framework) Download the .NET Framework that supports the most recent version of the gateway.
 - [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true). SAP's NCo 3.0 download requires this library to support the .NET Framework.
 - [SAP Connector for Microsoft .NET 3.0 (NCo 3.0)](https://support.sap.com/en/product/connectors/msnet.html) SDK from SAP:
   - An administrator with valid S-User access is required to set up the connector.
