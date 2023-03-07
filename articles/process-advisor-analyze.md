@@ -19,22 +19,22 @@ search.audienceType:
 
 # Analyze tasks and processes in process advisor
 
-On the left navigation pane in Power Automate, select **Process advisor** > **Processes**, and then select your process to go to the **Details** screen. This is where you'll access most of your tasks and process management activities.
+On the left navigation pane in Power Automate, select **Process advisor** > **All Processes**, and then select your process to go to the **Details** screen. This is where you'll access most of your tasks and process management activities.
 
 > [!NOTE]
 > The [TDS endpoint setting](/power-platform/admin/settings-features) for your organization needs to be enabled. This feature is enabled by default, but if it's disabled for any reason, contact your Microsoft Power Platform administrator to enable it in the Power Platform admin center.
 
 ## View your process map and related analytics
 
-Some key things to do here are to view the status of the recordings and analyze your process. The **Analyze** option in the menu gets you started. The analyze feature adds a selected recording into the process map and associated analytics. If a recording's status isn't *analyzed*, it won't be part of the analytics reports.
+To begin analyzing your process, start by checking the status of your recordings and using the **Analyze** button in the command bar. This button will add the selected recording into the process map and related analytics. Please note that the analytics reports will only include insights from recordings that have the "Analyzed" status.
 
 - After the task is analyzed, the process map and related analytics are available when you select **Analytics** in the menu.
 
-- The process status on the **Details** pane shows the status of the analysis and whether the process has been analyzed before.
+- On the **Details** card, you can check the status of the analysis for your process and whether it has been previously analyzed.
 
 - Analysis happens at the process level for all recordings that are ready to be analyzed.
 
-- Pay attention to the recording status, which you can find under the **Status** column of the **Recordings** pane. Only recordings with a specific status will be considered for analysis.
+- Pay attention to the recording status, which you can find under the Status column of the Recordings pane. Only recordings with the "Ready to analyze" status will be considered for analysis.
 
     :::image type="content" source="./media/related-nalytics.png" alt-text="Screenshot of the details and recordings in the 'Analytics' screen.":::
 
@@ -44,22 +44,22 @@ Here's a short video on how to view analytics with process advisor:<br>
 
 ## View your recording status
 
-Each recording can have one of the following statuses:
+The status of each recording can be found under the Status column of the Recordings pane. Recordings can have one of the following statuses:
 
-- **In progress:** Recording is in progress, but it's also possible that the recording hasn't yet started. Since recording happens in the desktop client, the web portal won't know its status until it's been saved. It's also possible to see this status after a recording has been saved since some processing is required after recording to make it ready to view.
+-**In progress:** This means that the recording is currently being made, or it may not have started yet. The web portal cannot determine the status of the recording until it has been saved because the recording happens in the desktop client. Even after a recording has been saved, it's possible to see the "In progress" status because some processing is required to make the recording ready to view.
 
-- **Failed:** An error occurred while processing the recording. You need to create a new recording.
+- **Failed:** An error occurred while processing the recording. You'll need to create a new recording.
 
-- **Not analyzed:** The recording has been processed and is available to view and edit, but it hasn't been marked as ready to analyze.
+- **Not analyzed:** The recording has been processed and is available to view and edit, but it hasn't been marked as ready for analysis.
 
-- **Ready to analyze:** The recording has been marked as ready to analyze and will be considered the next time you analyze the process.
+- **Ready to analyze:** The recording has been marked as ready for analysis and will be included in the report and analytics the next time you analyze the process.
 
-- **Analyzed:** The recording has been analyzed and is part of the analyzed output that can be viewed through the **Analytics** screen.
+- **Analyzed:** The recording has been analyzed and is included in the analytics output that can be viewed through the **Analytics** screen.
 
 An analyzed recording might also have one of the following icons next to it:
 
-- ![Not ready.](media/process-advisor-analyze/icon-not-ready.png "This recording is not ready") Indicates that even though the recording was analyzed, it's been marked not ready to analyze and won't be included if the process is analyzed again.
+- ![Not ready.](media/process-advisor-analyze/icon-not-ready.png "This recording is not ready") This icon indicates that the recording has been analyzed but has been marked not ready to analyze, and it won't be included if the process is analyzed again.
 
-- ![Modified.](media/process-advisor-analyze/icon-modified.png "This recording has been modified") Indicates that the recording has been modified and might be out of sync with the previous analysis. Analyzing again will synchronize the recording with the analysis output and the process map. 
+- ![Modified.](media/process-advisor-analyze/icon-modified.png "This recording has been modified") This icon indicates that the recording has been modified and may be out of sync with the previous analysis. If you analyze the process again, the recording will be synchronized with the analysis output and the process map.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
