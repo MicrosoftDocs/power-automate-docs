@@ -1,13 +1,13 @@
 ---
 title: Manage settings with process context
-description: Learn about the process settings you can change in the minit desktop application.
+description: Learn about the process settings you can change in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 03/15/2023
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template

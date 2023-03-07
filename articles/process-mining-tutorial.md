@@ -46,13 +46,12 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. In the **Create new process** section, select **Start here**.
 
-    :::image type="content" source="media/process-mining-tutorial/start-here.png" alt-text="Screenshot of the 'Start here' message.":::
-
 1. In the **Create a new process** screen, enter a process name, and then select **Import data**.
 
 1. (Optional) Enter a description for your process.
 
-    ![image](https://user-images.githubusercontent.com/113051637/222482163-3fe094e7-f78e-4485-8495-ff8ed51f3971.png)
+    :::image type="content" source="media/process-mining-tutorial/description.png" alt-text="Screenshot of creating a new process.":::
+
 
 1. Select **Continue**.
 
@@ -83,33 +82,29 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
     When you're finished, the attribute mapping should look like the following screenshot.
 
-    ![image](https://user-images.githubusercontent.com/113051637/222483430-72920584-632e-4c3e-a0a6-ee2f5ad0a4fb.png)
+    :::image type="content" source="media/process-mining-tutorial/attribute-table.png" alt-text="Screenshot of the attribute mapping.":::
 
 1. Select **Save and analyze**. The analysis may take a few minutes to run.
 
 When the analysis process is complete, you’ll see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that will help you analyze your process. To learn how to analyze the process map and metrics, go to [Visualize and gain insights from processes in process advisor](process-mining-visualize.md).
 
-![image](https://user-images.githubusercontent.com/113051637/222483745-0a6134eb-ce45-4b6d-b76c-0a1cd4f5a3f0.png)
+:::image type="content" source="media/process-mining-tutorial/process-map-dash.png" alt-text="Screenshot of the process map and dashboard.":::
 
 ## Analyze a process
 
 Let’s take the analysis of our process beyond KPIs. We'll use the minit desktop application, where you can edit and analyze your processes created in process advisor.
 
 1. From the command bar of the analytics report page click **Download minit** to download the minit desktop application.
-    
-    ![image](https://user-images.githubusercontent.com/113051637/222484050-3cc89ea9-f421-450a-801d-8a9c92118d76.png)
-
+ 
 1. In the desktop app select the environment from the top right of the **Processes** screen.
 
 1. Search for the process that you created on process advisor (**AP Refunds Process**).
 
 1. Select **Default** to display the default view.
 
-   ![image](https://user-images.githubusercontent.com/113051637/222484633-78b20d18-89e4-4991-bf31-547ecbe48539.png)
-
     You’re ready to use the advanced capabilities of the minit desktop application in process advisor.
 
-1. In the dropdown menu for **Frequency**, select **Case count**
+1. In the dropdown menu for **Frequency**, select **Case count**.
 
     ![image](https://user-images.githubusercontent.com/113051637/222485047-9a9d3d3a-b7db-4dc0-8da6-29e0266bf7bc.png)
 

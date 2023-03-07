@@ -1,13 +1,13 @@
 ---
 title: Export process data
-description: Learn how to export process data to an external file in the minit desktop application.
+description: Learn how to export process data to an external file in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/15/2023
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:

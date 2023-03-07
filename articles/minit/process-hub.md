@@ -1,13 +1,13 @@
 ---
-title: Explore the home page in the minit desktop application
-description: Learn how to use the home page so that you can get started using the minit desktop application. 
+title: Explore the home page in minit
+description: Learn how to use the home page so that you can get started using minit. 
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -26,9 +26,9 @@ The **Processes** screen is minit's home page. It's where you'll find an overvi
 
 Although minit is a desktop application, it's connected to Power Automate through your work account. The first screen you'll see is **Processes**. It lists the processes you created in process advisor, and displays the views associated with them as tiles.
 
-Open the minit desktop app and sign in with your work account.
+Open minit and sign in with your work account.
 
-:::image type="content" alt-text="Screenshot of the process hub in the Minit desktop app." source="media/processes-screen.png":::
+:::image type="content" alt-text="Screenshot of the the home page in minit." source="media/processes-screen.png":::
 
 ## Select an environment
 

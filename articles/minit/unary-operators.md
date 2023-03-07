@@ -1,13 +1,13 @@
 ---
 title: List of unary operators
-description: Get a list of unary operators in the Power Automate Process Mining desktop app.
+description: Get a list of unary operators in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:

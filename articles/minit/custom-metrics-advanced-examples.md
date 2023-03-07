@@ -1,13 +1,13 @@
 ---
 title: Advanced examples
-description: Get complex examples of custom operators in the Power Automate Process Mining desktop app.
+description: Get complex examples of custom operators in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -64,7 +64,7 @@ Per each event:
 
 :::image type="content" alt-text="Screenshot of the expression for event level non-aggregation." source="media/image-6.jpg":::
 
-### Usage in Minit desktop application for example 1
+### Usage in minit for example 1
 
 As we have single result per each event in current view,​ results are available only in screens that display/process event metric:
 
@@ -124,7 +124,7 @@ Per each event:
 
 :::image type="content" alt-text="Screenshot of the expression metric formula." source="media/image-8.jpg":::
 
-### Usage in Minit desktop application for example 2
+### Usage in minit for example 2
 
 As we have single result per case,​ results are available only in screens that display results per case:
 
@@ -138,7 +138,7 @@ As we have single result per case,​ results are available only in screens that
 
 Usage of case level metric (aggregated or non-aggregated) in Statistics Case overview, Root Cause Analysis or Case Metric Filter is no surprise.
 
-Why there is indication for usage for Event Metric Filter? Event metric filter does not offer any advanced setting to switch to case level. The answer isn't hidden in options inside Event metric filter but in expression formula, which uses `Duration()` operator. Minit desktop application offers the same operator *Duration()* on event and on case level. Therefore, the same expression is applicable on both case and event level.
+Why there is indication for usage for Event Metric Filter? Event metric filter does not offer any advanced setting to switch to case level. The answer isn't hidden in options inside Event metric filter but in expression formula, which uses `Duration()` operator. Minit offers the same operator *Duration()* on event and on case level. Therefore, the same expression is applicable on both case and event level.
 
 ## 3 Edge aggregation
 
@@ -167,7 +167,7 @@ We're evaluating how often user has changed when case was progressing though eve
 
 Operators *TARGET()* and *SOURCE()* returns values of requested attribute for ending and starting node to actual edge.
 
-### Usage in Minit desktop application for example 3
+### Usage in minit for example 3
 
 Defined custom metrics generates result per edge (attribute) value, so it is applicable everywhere when aggregated results per edge are used:
 
@@ -203,7 +203,7 @@ Run across all available events within its case. Get the first and last activity
 
 This time the expression is little more complicated but shows how to combine multiple aggregations into single formula. Operators FIRSTIF() and LASTIF() are aggregation operators, which return first/last event based on input criteria over defined calculation scope (this time *CaseEvents*).
 
-### Usage in Minit desktop application for example 4
+### Usage in minit for example 4
 
 Application of custom metric follows the standard requirements for single case aggregation (regardless complexity of expression).
 
@@ -231,7 +231,7 @@ Exact values can't be calculated we the calendar properties aren't defined.
 
 To calculate duration over working hours, the `DURATIONCALENDAR()` operators have been used. Operators to find first and last events are used operator arguments creating nested expression. Notice the complexity of expression does not affect or modifies selected calculation scopes.
 
-### Usage in Minit desktop application for example 4.1
+### Usage in minit for example 4.1
 
 Application of custom metric follows the standard requirements for single case aggregation (regardless complexity of expression).
 
@@ -259,7 +259,7 @@ Run across all available edges within its case. If case contains C->C edge, it p
 
 Operator `ANY()` returns boolean true/false value when at least one element in given context meets the criteria. See also operator `ALL()`*k, which returns true value when all elements in given context meets the criteria.
 
-### Usage in Minit desktop application for example 5
+### Usage in minit for example 5
 
 Application of custom metric follows the standard requirements for single case aggregation: ​
 
@@ -293,7 +293,7 @@ Run across all edges within its case. Count any edges C->C found. If no such edg
 
 In compare to previous formula we have just replaced operator *ANY()* with *COUNTIF()*.
 
-### Usage in Minit desktop application
+### Usage in minit
 
 Application of custom metric follows the standard requirements for single case aggregation.
 
@@ -330,7 +330,7 @@ Both cases for country attribute 'SK' contains 'C->C' edge so result for 'SK' is
 
 The nested formula contains two step aggregation. Inner one runs over all edges within case. Outer one aggregates cases by attribute value. The outer aggregation uses context *CasesPerAttribute* because result per case is included exactly one. (Context *EventsPerAttribute *also groups result per attribute value, but it may involve the same case multiple times - per each involved event - into result).
 
-### Usage in Minit desktop application
+### Usage in minit
 
 Custom metric is applicable on every screen where values are displayed per attribute value. Attribute value may be grouped using event level (*EventsPerAttribute*) or case level (*CasesPerAttribute*) context. These two calculation contexts provide different calculation, but share the same applicability of calculation (custom metric):
 
@@ -369,7 +369,7 @@ Both cases for country attribute 'SK' contains 'C->C' edges. Result for 'SK' and
 
 The expression again contains two step (nested) aggregation. Inner one runs over all edges within case, outer one aggregates cases by attribute value.
 
-### Usage in Minit desktop application in example 6.1
+### Usage in minit in example 6.1
 
 Custom metric is applicable on every screen where values are displayed per attribute value.
 
@@ -403,7 +403,7 @@ In terms of aggregation, it's nothing new. We generate results per attribute val
 
 The expression is simple, but uses the important operator `CASE()`, which allows you to switch context for case level. This is the only way how to calculate event level metrics and ask for metrics (values) from its case.
 
-### Usage in Minit desktop application for example 7
+### Usage in minit for example 7
 
 Application of custom metric follows the standard requirements for aggregation per attribute value. Because expression uses *Duration()* and not attribute value, it is also applicable on edges (both in process map and statistics).
 
@@ -439,7 +439,7 @@ Expression is short but requires some knowledge to understand it.  The most inne
 >
 >In this example, the *EventsPerAttribute* context is not specified. Custom metric then applied implicit calculation context.
 
-### Usage in Minit desktop application in example 8
+### Usage in minit in example 8
 
 Application of custom metric follows the standard requirements for aggregation per attribute value.
 
@@ -475,7 +475,7 @@ Two step (nested) aggregation - inner one evaluates the single case, the outer o
 
 Operator `OCCURRENCE()` returns occurrence index of a given event attribute value within the case.
 
-### Usage in Minit desktop application for example 8.1
+### Usage in minit for example 8.1
 
 Application of custom metric follows the standard requirements for aggregation per attribute value.
 

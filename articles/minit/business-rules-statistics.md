@@ -1,13 +1,13 @@
 ---
 title: Business rules statistics
-description: Learn about the statistics available for business rules in the Minit desktop application for the Power Automate Process Mining desktop app.
+description: Learn about the statistics available for business rules in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template

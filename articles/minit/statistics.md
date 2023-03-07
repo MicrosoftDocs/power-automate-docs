@@ -1,13 +1,13 @@
 ---
 title: Statistics overview
-description: Get an overview of the properties of the process undergoing analysis in the minit desktop application.
+description: Get an overview of the properties of the process undergoing analysis minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 03/05/2023
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:

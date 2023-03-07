@@ -1,6 +1,6 @@
 ---
 title: Custom metrics calculation methods
-description: Learn the calculation methods used to define the desired calculation scope for custom metrics in the Power Automate Process Mining desktop app.
+description: Learn the calculation methods used to define the desired calculation scope for custom metrics in minit.
 author: maslejka
 contributors:
   - maslejka
@@ -19,15 +19,15 @@ search.audienceType:
 
 # Custom metrics calculation methods
 
-This documentation is intended for users who are already familiar with the basic functionality of the Minit desktop application and understand the basics of process mining.
+This documentation is intended for users who are already familiar with the basic functionality of minit and understand the basics of process mining.
 
 This series does not serve as a reference manual for individual custom metrics operations but offers a methodical introduction to the calculation methods after which the attentive user will be able to correctly define the desired calculation scope.
 
-## Metrics in Minit desktop application
+## Metrics in minit
 
 Minit desktop application offers a wide set of predefined - standard metrics - for example, number of events, number of cases, average duration of cases, number of variants, and so on. These metrics may be separated in two basic groups: ​
 
-- **Aggregated metrics:** Most common result. Display calculated values grouped by selected context across Minit desktop application.
+- **Aggregated metrics:** Most common result. Display calculated values grouped by selected context across minit.
 
 - **Non-aggregated metrics:** Display values per individual data element like event, edge, or case.
 
@@ -45,7 +45,7 @@ Selecting another metric - maximum duration in the right panel - process map dis
 
 Statistics panel per single attributes uses the same aggregation as Process map - aggregates the results per attribute value. If you have resource - user attribute in Statistic panel you are able to see result per each ​user occurred in actual view.
 
-Minit desktop application display aggregated results in three main categories:
+Minit displays aggregated results in three main categories:
 
 - **Single result:** Usually single global value per actual data set, for example, number of cases. Input is whole data set and output is single result.
 
@@ -53,7 +53,7 @@ Minit desktop application display aggregated results in three main categories:
 
 - **Aggregation per attribute value:** Most common calculation scope, and is represented by Process map or Statistics panel for any attribute. Input is set of events or edges with the same value of selected attribute and output is set of results, single result per each attribute value. Default Process map uses attribute Activity to calculate results per each set of events with the same Activity value.
 
-Have a look at total event count in Minit desktop application. In Statistic Case overview panel you can see a global single result for total count of all events in view.
+Have a look at total event count in minit. In Statistic Case overview panel you can see a global single result for total count of all events in view.
 
 :::image type="content" alt-text="Screenshot of the total count of all events in view." source="media/total-event-count.png":::
 
@@ -77,13 +77,13 @@ The major difference to aggregated metrics is that calculation is done per singl
 
 - Case/event metric filters are among a few places where non-aggregated values are displayed and available to user.​
 
-Event metric filter is good example of display where duration of single events is displayed and evaluated. Event filters take each event individually and evaluate its attribute or metric value as it is. All other standard visualizations in Minit desktop application display event duration in somehow aggregated way - mean, total, minimum or maximum.
+Event metric filter is good example of display where duration of single events is displayed and evaluated. Event filters take each event individually and evaluate its attribute or metric value as it is. All other standard visualizations in minit display event duration in somehow aggregated way - mean, total, minimum or maximum.
 
 :::image type="content" alt-text="Screenshot of the event metrics filter." source="media/event-metric-filter.png":::
 
 ## Custom metrics
 
-Custom metric is named calculation formula defined by user per Process. This custom metric is applied by the standard ways how Minit desktop application displays the data. Minit desktop application displays standard metrics in aggregated and non-aggregated way. Custom metrics must follow the same rule. Therefore, there are two main different types of custom metrics:
+Custom metric is named calculation formula defined by user per Process. This custom metric is applied by the standard ways how minit displays the data. Minit displays standard metrics in aggregated and non-aggregated way. Custom metrics must follow the same rule. Therefore, there are two main different types of custom metrics:
 
 1. **Scalar (non-aggregated) formulas​ - calculation over single element like case, edge or event.**
 
@@ -95,7 +95,7 @@ Simple scalar formulas don't contain aggregation operation in its formula. In mo
 
 :::image type="content" alt-text="Screenshot of a calculation over a certain calculation scope or ‘context'" source="media/image-3c.png":::
 
-Aggregated formulas contain aggregation operator (for example, `AVG`) at a top evaluation level. Minit Desktop application offer set of standard aggregation operators - see Custom metrics help for reference. Aggregation operation as first argument takes calculation scope. This determines two properties:
+Aggregated formulas contain aggregation operator (for example, `AVG`) at a top evaluation level. Minit offers a set of standard aggregation operators - see Custom metrics help for reference. Aggregation operation as first argument takes calculation scope. This determines two properties:
 
 - Input set of data taken into account
 

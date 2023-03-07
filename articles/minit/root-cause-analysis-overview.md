@@ -1,13 +1,13 @@
 ---
 title: Root cause analysis overview
-description: Get an overview of how to find hidden connections in your data with root cause analysis in the minit desktop application.
+description: Get an overview of how to find hidden connections in your data with root cause analysis in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/15/2023
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:

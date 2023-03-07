@@ -1,6 +1,6 @@
 ---
 title: List of string operations
-description: Get a list of string operations that you can use in the Power Automate Process Mining desktop app.
+description: Get a list of string operations that you can use in minit.
 author: maslejka
 contributors:
   - maslejka
@@ -19,7 +19,7 @@ search.audienceType:
 
 # List of string operations
 
-Following are the string operations that you can use in the minit desktop application in process advisor.
+Following are the string operations that you can use in minit.
 
 ## CONCAT([string1],...,[stringN])
 

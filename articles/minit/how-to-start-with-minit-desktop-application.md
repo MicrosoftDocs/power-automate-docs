@@ -1,13 +1,13 @@
 ---
-title: Install Power Automate Process Mining desktop app
-description: Learn how to install the Power Automate Process Mining desktop app in Power Automate.
+title: Install minit
+description: Learn how to install minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 03/15/2023
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -18,7 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Install Power Automate Process Mining desktop app
+# Install minit
 
 Before you can start using the Power Automate Process Mining desktop app, you need to install it from the process mining capability.
 

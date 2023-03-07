@@ -1,13 +1,13 @@
 ---
 title: End events filter
-description: Learn how to restrict cases according to the property of the event that occurred at the beginning or at the end of the case in the Power Automate Process Mining desktop app.
+description: Learn how to restrict cases according to the property of the event that occurred at the beginning or at the end of the case in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -21,30 +21,22 @@ search.audienceType:
 
 Use this filter to restrict cases according to the property of the event that occurred at the beginning or at the end of the case.
 
-The filter shown in the picture will only select the cases starting with the "Start" activity and ending with the "Process End" activity. In the same way you can create a resource-based condition, for example, if you want to select only the cases that Anna started to deal with.
+The filter shown in the following screenshot will only select the cases starting with the **Confirm order** activity and ending with the **Mark order as complete** activity.
 
-:::image type="content" alt-text="Screenshot of a filter that specifies start and end." source="media/image031.png":::
+:::image type="content" alt-text="Screenshot of a filter that specifies start and end." source="media/end-events-filter.png":::
 
-### Select an attribute for a rule
+In the same way you can create a resource-based condition, for example, if you want to select only the cases that Anna started to deal with.
 
-Here you choose which attribute is of interest when assessing events.
+## Define the end events filter
 
-:::image type="content" alt-text="Screenshot of attributes for a rule dropdown menu." source="media/image032.png":::
+1. From the **attribute** dropdown menu, select which attribute is of interest when assessing events.
 
-### Select permissible attribute values for the starting event
+1. Select the **on a starting event of the single case holds any of the values** field, and then select the attribute value for the end event in the **List** tab to the right. Your selections appear in the field.
 
-Here you choose permissible attribute values for the starting event. Only the values that are present in the starting events of the process are available for selection.
+    Only the values that are present in the starting events of the process are available for selection. If the attribute values of the starting event are of no interest, all values should remain active.
 
-If the attribute values of the starting event are of no interest, all values should remain active.
+1. Select the **and on a finishing event of the single case holds any of the values** field, and then select the attribute value for the end event in the **List** tab to the right. Your selections appear in the field.
 
-:::image type="content" alt-text="Screenshot of the permissible attribute of 'Start'." source="media/image033.png":::
-
-### Select permissible attribute values for the finishing event
-
-Here you choose permissible attribute values for the finishing event. Only the values that are present in the finishing events of the process are available for selection.
-
-If the attribute values of the finishing event are of no interest, all values should remain active.
-
-:::image type="content" alt-text="Screenshot of the permissible attribute of 'Process end'." source="media/image034.png":::
+    Only the values that are present in the finishing events of the process are available for selection. If the attribute values of the finishing event are of no interest, all values should remain active.
 
 

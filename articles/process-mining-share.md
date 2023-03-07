@@ -29,23 +29,21 @@ There are a few ways you can share your process.
 
     :::image type="content" source="media/process-mining-share/all-processes-button.png" alt-text="Screenshot of the 'All processes' button.":::
 
-1. Select **More commands** (the three vertical dots), and then select **Share**. 
+1. Highlight a process, select **More commands** (the three vertical dots), and then select **Share**.
 
-![image](https://user-images.githubusercontent.com/113051637/221950075-dbd87083-bdc6-424f-be01-092984e1062c.png)
-
+    :::image type="content" source="media/process-mining-share/more-share.png" alt-text="Screenshot of the More commands dropdown menu.":::
 
 ## Share from process details page
 
 On the process details page, you can share the process by selecting **Manage** from the **Shared with** card.
 
-![image](https://user-images.githubusercontent.com/113051637/222214319-f2b5dc9b-a039-4bfc-90c9-31b8f0392324.png)
-
+:::image type="content" source="media/process-mining-share/shared-with.png" alt-text="Screenshot of the 'Manage' button.":::
 
 ## Share from analytics report page
 
 On the analytics report page, you can share the process by selecting **Share** in the command bar.
 
-![image](https://user-images.githubusercontent.com/113051637/221950972-210521db-92d5-491c-b4c7-409a48349753.png)
+:::image type="content" source="media/process-mining-share/share-analytics.png" alt-text="Screenshot of the 'Share' button.":::
 
 ## Share panel
 

@@ -1,6 +1,6 @@
 ---
 title: Case attributes conditional filter
-description: Learn how to use the case attributes conditional filter in the minit desktop application.
+description: Learn how to use the case attributes conditional filter in minit.
 author: maslejka
 contributors:
   - maslejka

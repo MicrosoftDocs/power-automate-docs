@@ -1,13 +1,13 @@
 ---
 title: Basic examples
-description: Get examples of various calculation methods for custom metrics with a focus on proper context and aggregation selection in the Power Automate Process Mining desktop app.
+description: Get examples of various calculation methods for custom metrics with a focus on proper context and aggregation selection in minit.
 author: mmaslejova
 contributors:
   - mmaslejova
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -45,7 +45,7 @@ We need to run across all available events in the view. Assignment of events to 
 
 :::image type="content" alt-text="Screenshot of an expression in a custom metric formula." source="media/01-event-level-view.png":::
 
-### Usage in Minit desktop application for example 1
+### Usage in minit for example 1
 
 The custom metric editor indicates the result is applicable everywhere in Minit. The reason is that a single result is a numerical constant, which can be used in any expression and any place where the metric is displayed. Such metric - returning single value may be displayed in process map, statistics for case overview, statistics for attributes, filters, or root cause analysis.
 
@@ -69,7 +69,7 @@ In this example, we need to run across all available events in process regardles
 
 :::image type="content" alt-text="Screenshot of an expression in the custom metric editor." source="media/02-event-level-process.png":::
 
-### Usage in Minit desktop application for example 2
+### Usage in minit for example 2
 
 Result is applicable everywhere in Minit. The same logic for application as for previous example.
 
@@ -98,7 +98,7 @@ The result is *per case*. It's calculated by events in case1 and events in case2
 
 Calculation context *CaseEvents* (and *CaseEvents*) is very useful as it allows to create additional case level metric calculated using the case events. User is then able to evaluate the single cases based on calculated value.
 
-### Usage in Minit desktop application for example 3
+### Usage in minit for example 3
 
 As we have single result per each case in current view,​ results are available only in screens with results per single case:​
 
@@ -132,7 +132,7 @@ How do you calculate results per activity properly? We're not concerned with the
 
 :::image type="content" alt-text="Screenshot of the expression in the custom metric editor per activity." source="media/04-event-per-attribute.png":::
 
-### Usage in Minit desktop application for example 4
+### Usage in minit for example 4
 
 We have single result per activity in current view.​ Results are available on screens with aggregated events per activity value:​
 
@@ -170,7 +170,7 @@ Expression in custom metric editor:
 
 Why the expression is the same as for previous one? It's simple. The calculation per attribute value is the same for any event attribute. Activity is just a special mandatory event attribute. All metrics calculations are applied in the same way for activity as for any other attribute.
 
-### Usage in Minit desktop application for example 5
+### Usage in minit for example 5
 
 We again have single result per attribute value in current view.​ Results are available on screens with aggregated events per attribute value:​
 
@@ -180,7 +180,7 @@ We again have single result per attribute value in current view.​ Results are 
 
 - Attribute Conditional filter ((To learn more, go to [​7 Bonus: Attribute conditional filter](#7-bonus-attribute-conditional-filter).)
 
-If we want to see results per user in Minit desktop application, we need to go to Statistics for user attribute. There are displayed events aggregated by user attribute. What if we open process map or statistic panel for another attribute. In such case the results will be aggregated by selected attribute. For example, in **Process map**, it's by default activity attribute.
+If you want to see results per user in minit, go to Statistics for user attribute. There are displayed events aggregated by user attribute. What if we open process map or statistic panel for another attribute. In such case the results will be aggregated by selected attribute. For example, in **Process map**, it's by default activity attribute.
 
 ## 6 Attribute by case aggregation
 
@@ -208,7 +208,7 @@ While this calculation seems odd, it is a very basic calculation used for standa
 
 :::image type="content" alt-text="Screenshot of the expression for standard financial case level metrics." source="media/06-event-per-attribute-case.png":::
 
-### Usage in Minit desktop application for example 6
+### Usage in minit for example 6
 
 Single result is generated per attribute value so all displays for attribute aggregations are available. As we use case level metrics the results are also applicable for edges (both in process map and in statistic):​
 

@@ -1,13 +1,13 @@
 ---
 title: Customize activities (event-level) statistics
-description: Learn about statistics for process activities (events) in the minit desktop application.
+description: Learn about statistics for process activities (events) in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 03/15/2023
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -36,7 +36,7 @@ Minit provides statistics at the level of activities, or events, in both chart a
 
 1. Select **Apply**,
 
-    :::image type="content" source="media/activities-event-statistics.png" alt-text="Screenshot of the activity or event-level statistics page in the Minit desktop application.":::
+    :::image type="content" source="media/activities-event-statistics.png" alt-text="Screenshot of the activity or event-level statistics page in minit.":::
 
 ## Statistical chart and table of activities
 

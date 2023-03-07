@@ -1,13 +1,13 @@
 ---
 title: Gather case overview statistics
-description: Learn how to gather case overview statistics in the minit desktop application.
+description: Learn how to gather case overview statistics in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/15/2023
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:

@@ -1,13 +1,13 @@
 ---
 title: Case attributes filter
-description: Learn how to use the case attributes filter in the minit desktop application.
+description: Learn how to use the case attributes filter in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 09/31/2023
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template

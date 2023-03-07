@@ -1,13 +1,13 @@
 ---
 title: Find hidden connections
-description: Learn how to find hidden connections in your data in the minit desktop application.
+description: Learn how to find hidden connections in your data in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/15/2023
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -19,7 +19,7 @@ search.audienceType:
 
 # Find hidden connections
 
-Find hidden connections in your data with root cause analysis (RCA) in minit desktop application.
+Find hidden connections in your data with root cause analysis (RCA) in minit.
 
 To create a new RCA, create an analysis.
 

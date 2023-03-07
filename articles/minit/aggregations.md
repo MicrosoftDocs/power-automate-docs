@@ -1,13 +1,13 @@
 ---
 title: Aggregations
-description: Learn the aggregations you can use in custom metrics in the Power Automate Process Mining desktop app.
+description: Learn the aggregations you can use in custom metrics in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -20,7 +20,7 @@ search.audienceType:
 
 # Aggregations
 
-This article describes the aggregations you can use in custom metrics
+This article describes the aggregations you can use in custom metrics.
 
 ## AVG([context],[value])
 

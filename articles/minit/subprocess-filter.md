@@ -1,13 +1,13 @@
 ---
 title: Subprocess filter
-description: Learn how to remove part of a process from cases in the Power Automate Process Mining desktop app.
+description: Learn how to remove part of a process from cases in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -19,36 +19,21 @@ search.audienceType:
 
 # Subprocess filter
 
-Use this event level filter to „cut out" a part of the process from all the cases (where the criteria for subprocess don't apply, case is completely excluded). For example, in a purchase order approval process we want to focus on the part from purchase order creation until the purchase order is marked as approved, or in a service center ticket solving process we want to see only the part being dealt by the second level support department.
-
-In general, this filter can be defined as:
-
-**Extracting events of each case in chronological order from the first occurrence of event with a specific value(s) of first attribute until the last occurrence of event with specific value(s) of second attribute.**
+Use this event level filter to `„cut out"` a part of the process from all the cases. Where the criteria for the subprocess doesn't apply, the case is completely excluded. For example, in a purchase order approval process, you want to focus on the part from purchase order creation until the purchase order is marked as approved. Another example is, in a service center ticket solving process, you want to see only the part being dealt with by the second level support department.
 
 The following screenshot depicts the settings for the subprocess from the first occurrence of **Status change to Approved** to the last occurrence of **Status changed to Accounted** activity.
 
-:::image type="content" alt-text="Screenshot of the settings for a subprocess." source="media/image042.png":::
+:::image type="content" alt-text="Screenshot of the settings for a subprocess filter." source="media/subprocess-filter.png":::
 
-#### Select an attribute for comparing events
+## Define the subprocess filter
 
-Select the attribute on the basis of which the events in the case are selected.
+In general, this filter can be defined as extracting events of each case in chronological order from the first occurrence of event with a specific value(s) of first attribute until the last occurrence of event with specific value(s) of second attribute.
 
-:::image type="content" alt-text="Screenshot of the dropdown menu of attributes for comparing events." source="media/image043.png":::
+1. From the **events located between the first occurrence of event with attribute** dropdown menu, select the attribute on the basis of which the events in the case are selected.
 
-#### Specify the first event
+1. Select the **having one of these values** field, and then select which events belong to the first group of events in the **List** tab to the right. Your selections appear in the field.
 
-Select which events belong to the first group of events. Select permissible values for its selected attribute in the list on the right side of the screen.
+1. Select the **and the last occurrence of event having one of these values** field, and then select which events belong to the second group of events in the **List** tab to the right. Your selections appear in the field.
 
-First occurrence of this event will be evaluated.
-
-:::image type="content" alt-text="Screenshot of events belonging to the first group of events." source="media/image044.png":::
-
-#### Specify the second event
-
-Select which events belong to the second group of events. Select permissible values for its selected attribute in the list on the right side of the screen.
-
-Last occurrence of this event will be evaluated.
-
-:::image type="content" alt-text="Screenshot of the events belonging to the second group of events." source="media/image045.png":::
 
 

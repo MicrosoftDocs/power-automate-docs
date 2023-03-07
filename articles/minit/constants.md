@@ -1,13 +1,13 @@
 ---
 title: Constants
-description: Get a list of constants in the Power Automate Process Mining desktop app.
+description: Get a list of constants in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -18,6 +18,8 @@ search.audienceType:
 ---
 
 # Constants
+
+The following table lists the constants in minit.
 
 | Constant | Data type | Description |
 | - | - | - |
