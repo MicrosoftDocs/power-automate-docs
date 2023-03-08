@@ -22,6 +22,10 @@ search.audienceType:
 
 This article explains common issues and error messages in process advisor. You'll find solutions to troubleshoot with procedures and helpful tips.
 
+## Issues with creating a process
+
+If you are unable to create a process in process advisor you may not have been assigned the required role by your admin in the environment. Please contact your environment admin to give you the **Environment Maker** and **Process Advisor User** roles or any another role with the appropriate privileges.
+
 ## Issues with dataflow refresh
 
 ### "There was an issue with a recent dataflow refresh, check your dataflow refresh history."
