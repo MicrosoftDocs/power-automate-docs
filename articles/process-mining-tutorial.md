@@ -46,14 +46,18 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. In the **Create new process** section, select **Start here**.
 
-1. In the **Create a new process** screen, enter a process name, and then select **Import data**.
+> [!NOTE]
+>
+> If you are unable to create a process in process advisor you may not have been assigned the required role by your admin in the environment. Please contact your environment admin to give you the **Environment Maker** and **Process Advisor User** roles or any another role with the appropriate privileges.
 
-1. (Optional) Enter a description for your process.
+5. In the **Create a new process** screen, enter a process name, and then select **Import data**.
+
+6. (Optional) Enter a description for your process.
 
     :::image type="content" source="media/process-mining-tutorial/description.png" alt-text="Screenshot of creating a new process.":::
 
 
-1. Select **Continue**.
+7. Select **Continue**.
 
 ## Import data
 
