@@ -593,6 +593,8 @@
       href: ./desktop-flows/actions-reference/webautomation.md
     - name: Excel
       href: ./desktop-flows/actions-reference/excel.md
+    - name: Ai Builder (preview)
+      href: ./desktop-flows/actions-reference/aibuilder.md
     - name: Database
       href: ./desktop-flows/actions-reference/database.md
     - name: Email
