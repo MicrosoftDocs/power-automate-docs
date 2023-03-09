@@ -110,7 +110,8 @@ The following table lists endpoint data requirements for connectivity from a use
 | ------- |  -------- | ---- |
 |ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud.<br>Needed when connecting through the on-premises data gateway.|
 | *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for machine connectivity. |
-| gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud (GCC and GCCH). |
+| \*.gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud (GCC and GCCH). |
+| \*.gateway.gov.island.appsplatform.us | https | Needed for machine connectivity for US government cloud (DOD). |
 |tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
 | *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
 | *.api.high.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
