@@ -86,7 +86,7 @@ Process advisor is licensed as part of Power Automate per-user licenses. If you 
 **Process mining capability:** A *Power Automate per user license with attended RPA* enables a user to create a process, connect to an event log using dataflows, analyze a process from data, and view the analytics report in the web.
 
 **Process mining add-on:** A separately purchasable add-on is required to do the following:
-- Use of the [desktop application](minit-desktop-application-overview.md) which provides many features to get deep insights into your process
+- Use of the [desktop application](minit/minit-desktop-application-overview.md) which provides many features to get deep insights into your process
 - Customize the analytics report by publishing it into your own Power BI workspace
 
 For inquiries about add-on capability licensing, contact minitq@microsoft.com
