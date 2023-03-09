@@ -55,8 +55,8 @@ Get a response from Azure OpenAI Service.
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|TextResponse|[Text](../variable-data-types.md#text-value)||
 |PredictV2Response|[Connector object](../variable-data-types.md#connector-object)||
+|TextResponse|[Text](../variable-data-types.md#text-value)||
 
 ### <a name="callgpt_onerror"></a> Exceptions
 
