@@ -83,8 +83,6 @@ Adding a co-owner to the process allows the owner to include other people who ca
 
 - [View the process analytics](process-mining-visualize.md).
 
-- Share the process with other viewers.
-
 >[!IMPORTANT]
 >
 >- The admin experience for processes they don't own isn't supported.
