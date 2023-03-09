@@ -36,6 +36,10 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 ## Create a process
 
+> [!NOTE]
+>
+> If you encounter an error message while attempting to create and analyze a process, it may be due to a missing security role. To resolve this, please contact the administrator of your environment and request that they assign you the **Environment Maker** security role.
+
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select your environment.
@@ -45,10 +49,6 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
     :::image type="content" source="media/process-mining-tutorial/process-adv-menu.png" alt-text="Screenshot of the process advisor menu selection.":::
 
 1. In the **Create new process** section, select **Start here**.
-
-> [!NOTE]
->
-> If you are unable to create a process in process advisor you may not have been assigned the required role by your admin in the environment. Please contact your environment admin to give you the **Environment Maker** and **Process Advisor User** roles or any another role with the appropriate privileges.
 
 5. In the **Create a new process** screen, enter a process name, and then select **Import data**.
 
