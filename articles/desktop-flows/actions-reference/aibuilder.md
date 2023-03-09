@@ -29,9 +29,9 @@ search.audienceType:
 
 The AI Builder group contains the **Create text with GPT on Azure OpenAI Service** action that creates text using the GPT language model.
 
-After deploying the action, select **Create instructions** to open the instructions wizard. The wizard allows you to create instructions using existing templates or start from blank. 
+After deploying the action, select **Create instructions** to open the instructions wizard. The wizard allows you to create instructions using existing templates or start from blank.
 
-Learn more about the Azure OpenAI Service in [Azure OpenAI Service model overview (preview)](./ai-builder/prebuilt-azure-openai).
+Learn more about the Azure OpenAI Service in [Azure OpenAI Service model overview (preview)](/ai-builder/prebuilt-azure-openai).
 
 :::image type="content" source="media/aibuilder/create-text-with-gpt-on-azure-openai-service.png" alt-text="Screenshot of the Create instructions button in the Create text with GPT on Azure OpenAI Service action.":::
 
