@@ -1,5 +1,5 @@
 ---
-title: AI Builder actions actions reference (preview)
+title: AI Builder actions reference (preview)
 description: Learn about the available AI Builder action.
 author: georgiostrantzas
 ms.subservice: desktop-flow
@@ -16,6 +16,12 @@ search.audienceType:
 ---
 
 # AI Builder actions
+
+The AI Builder group contains the **Create text with GPT on Azure OpenAI Service** action that creates text using the GPT language model.
+
+After deploying the action, select **Create instructions** to create open the appropriate wizard. The wizard allows you to create instructions using existing templates or start from blank.
+
+:::image type="content" source="media/aibuilder/create-text-with-gpt-on-azure-openai-service.png" alt-text="Screenshot of the Create instructions button in the Create text with GPT on Azure OpenAI Service action.":::
 
 ## <a name="callgpt"></a> Create text with GPT on Azure OpenAI Service
 
