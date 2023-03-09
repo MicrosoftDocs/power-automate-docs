@@ -37,7 +37,7 @@ Learn more about the Azure OpenAI Service in [Azure OpenAI Service model overvie
 
 The GPT model is currently in preview and may make mistakes or have biases and other undesirable content. Therefore, to ensure that the AI-generated content is accurate, appropriate, and free from bias, always have humans review it.
 
-Desktop flows recommend you add a **Display message** action with **Yes - No** buttons to require a human review of the generated content. A warning will appear if this action doesn't exist. Learn more about the **Display message** action in [Message boxes actions](display.md).
+Desktop flows recommend you add a **Display message** action with **Yes - No** buttons to require a human review of the generated content. A warning appears when this action doesn't exist. Learn more about the **Display message** action in [Message boxes actions](display.md).
 
 :::image type="content" source="media/aibuilder/display-message.png" alt-text="Screenshot of the Display message action that prompts users to review the generated content.":::
 
