@@ -164,7 +164,7 @@ Apart from literal values, you can use variables to dynamically set the properti
 
 ## Connector object
 
-Connector objects store information from cloud connectors and work similarly to custom objects. Their properties usually contain lists of other connectors objects. Accessing values works as in custom objects, although accessing a specific nested value may require more complicated expressions.
+Connector objects store information from cloud connectors and work similarly to custom objects. Their properties usually contain lists of other connector objects. Accessing values works as in custom objects, although accessing nested values may require more complicated expressions.
 
 :::image type="content" source="media\variable-data-types\connector-object.png" alt-text="Screenshot of a custom object variable in the variables viewer.":::
 
