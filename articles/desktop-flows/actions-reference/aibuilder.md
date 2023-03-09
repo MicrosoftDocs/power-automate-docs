@@ -17,12 +17,12 @@ search.audienceType:
 
 # AI Builder actions
 
-[!INCLUDEcc-beta-prerelease-disclaimer]
+[!INCLUDE[cc-beta-prerelease-disclaimer](././includes/cc-beta-prerelease-disclaimer.md)]
 
 > [!IMPORTANT]
 >
-> - This is a preview feature. To learn more go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
-> - [!INCLUDEcc_preview_features_definition]
+> - This is a preview feature. To learn more, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
+> - [!INCLUDE[cc_preview_features_definition](././includes/cc-preview-features-definition.md)]
 > - This capability is in process of rolling out, and may not be available in your region yet.
 > - This capability may be subject to usage limits or capacity throttling.
 > - This capability is in gated preview. Apply for consideration to take part in the trial. To apply, go to [Limited preview request](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR2LogRPRiTJDo1Rd8KnmcFRUMzlLTDZVQlJKSzNIWkVCMzE0VDFYVzk2QS4u).
