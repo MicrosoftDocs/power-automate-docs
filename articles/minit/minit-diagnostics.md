@@ -44,7 +44,7 @@ Required diagnostic data in minit is organized into various data categories.
 |Device connectivity and configuration | This type of *required diagnostic data* includes details about the device, its configuration, and connectivity capabilities. | Data about the user's device, screen resolution, screen orientation, and other configuration details. |
 |Product and service performance | This type of *required diagnostic data* includes details about device or service health and performance. | </li><li>Information about memory, processor, and disk usage<br/></li><li>Information about form load times<br/></li><li>Information about process completion times  | 
 |Product and service usage | This type of *required diagnostic data* includes details about the usage of the device, operating system, applications, and services. | </li><li>Details about navigation patterns<br/></li><li>Details about form usage<br/></li><li>Details about frequency of use of activities and actions |
-|Software setup and inventory | This type of *equired diagnostic data* includes software installation and update information on the device. | </li><li>An event used to ensure new users can successfully launch and run minit for the first time<br/></li><li>An event that ensures critical regression detection for installed application |
+|Software setup and inventory | This type of *required diagnostic data* includes software installation and update information on the device. | </li><li>An event used to ensure new users can successfully launch and run minit for the first time<br/></li><li>An event that ensures critical regression detection for installed application |
 
 ## Optional data 
 
