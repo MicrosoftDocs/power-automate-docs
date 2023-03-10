@@ -99,9 +99,9 @@ For inquiries about add-on capability licensing, contact minitq@microsoft.com
 
 **Preview:** Note that some features are in preview, denoted by the preview tag, and for process templates that are still in preview, license and trial are not needed.
 
-## Prerequisites - NEEDS REVISION
+## Prerequisites
 
-Before you start using process mining capabilities, make sure you have the following prerequisites:
+Before you start using process advisor capabilities, make sure you have the following prerequisites:
 
 - Process mining licenses
 
