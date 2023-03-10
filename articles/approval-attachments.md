@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/29/2020
+ms.date: 01/12/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -33,14 +33,16 @@ In this article, you’ll learn how to create an approval flow that sends an att
 
 ## Create the flow
 
-1. Sign into Power Automate.
-1. Select **My flows** > **New** > **Instant-from blank**.
+1. Sign in to Power Automate.
+1. Select **Create** > **Build your own**.
 
-    ![New instant blank flow.](./media/approval-attachments/new-instand-blank.png)
+    ![The option to create a new flow.](media/approval-attachments/new-instand-blank.png)
 
-1. Give your cloud flow a name > search for, and then select **Manually trigger a cloud flow**, and then select **Create**.
+1. Under **Choose a connector**, select **Manual trigger**.
 
-    ![Name your flow and select a trigger.](./media/approval-attachments/name-flow-trigger.png)
+    ![The option to create a manually triggered flow.](media/approval-attachments/manual-trigger.png)
+
+1. Select **Next**, and then **Skip to building your own flow**.
 
 1. Select the **Manually trigger a cloud flow** trigger > **Add an input** > **File**.
 

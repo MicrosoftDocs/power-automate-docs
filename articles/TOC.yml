@@ -8,8 +8,6 @@
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
-  - name: New Power Automate experience (preview)
-    href: intro-maker-portal.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -281,6 +279,8 @@
       href: ./dataverse/known-issues.md
     - name: Use Dataverse-based flows in Power Apps
       href: ./dataverse/flows-power-apps.md
+    - name: Create a cloud flow that uses Microsoft Dataverse
+      href: common-data-model-intro.md  
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
   - name: Use solutions for ALM
@@ -671,6 +671,8 @@
     href: enhance-business-process-flows-branching.md
   - name: Add custom controls to business process flows
     href: custom-controls-business-process-flows.md
+  - name: Add on-demand workflows to business process Flows
+    href: bpf-add-on-demand-workflow.md 
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
 - name: Process advisor
@@ -680,29 +682,33 @@
     displayName: Overview of process advisor
   - name: Templates overview
     items:
-    - name: Azure templates
-      href: process-mining-azure-templates.md   
-    - name: Finance and operations templates
-      href: process-mining-finance-ops-templates.md   
-    - name: Power Platform templates
-      href: process-mining-templates.md
-  - name: Get started with process mining
-    href: process-mining-tutorial.md
-  - name: Prepare processes and data
-    href: process-mining-processes-and-data.md
-  - name: Transform and map data
-    href: process-mining-transform.md
-  - name: Visualize and gain insights from processes
-    href: process-mining-visualize.md
-  - name: Customize a report with your own Power BI workspace
-    href: process-mining-pbi-workspace.md
-  - name: Improve cloud flows with process insights (preview)
-    href: process-mining-cloud-flow-process-insights.md
-  - name: Share process mining processes
-    href: process-mining-share.md
-  - name: Edit and refresh processes
-    href: process-mining-data-source.md
-  - name: Minit desktop application
+    - name: Overview
+      href: process-mining-overview.md
+    - name: Get started with process mining
+      href: process-mining-tutorial.md      
+    - name: Templates overview
+      items:
+      - name: Azure templates
+        href: process-mining-azure-templates.md   
+      - name: Finance and operations templates
+        href: process-mining-finance-ops-templates.md   
+      - name: Power Platform templates
+        href: process-mining-templates.md
+    - name: Prepare processes and data
+      href: process-mining-processes-and-data.md
+    - name: Transform and map data
+      href: process-mining-transform.md
+    - name: Visualize and gain insights from processes
+      href: process-mining-visualize.md
+    - name: Customize a report with your own Power BI workspace
+      href: process-mining-pbi-workspace.md
+    - name: Improve cloud flows with process insights
+      href: process-mining-cloud-flow-process-insights.md
+    - name: Share process mining processes
+      href: process-mining-share.md
+    - name: Edit and refresh processes
+      href: process-mining-data-source.md
+  - name: Minit desktop application (preview)
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md

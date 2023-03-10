@@ -54,8 +54,8 @@ conceptualContent:
         - text: Sign up for free
           url: ./sign-up-sign-in.md
           itemType: get-started        
-        - text: Create your first flow
-          url: ./getting-started.md#create-your-first-flow
+        - text: Create a flow
+          url: ./getting-started.md#create-a-flow
           itemType: how-to-guide
         - text: Power Automate FAQs
           url: ./frequently-asked-questions.yml

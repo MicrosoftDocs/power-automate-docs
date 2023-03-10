@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 03/10/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -73,7 +73,7 @@ Adding a co-owner to the process allows the owner to include other people who ca
 
 - [View the process analytics](process-mining-visualize.md).
 
-- Share process with other co-owners and viewers.
+- Share the process with other co-owners and viewers.
 
 ## Share a process with a viewer
 
