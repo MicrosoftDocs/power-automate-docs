@@ -1,6 +1,6 @@
 ---
-title: Process mining overview
-description: Get an overview of process mining capabilities.
+title: Process advisor overview
+description: Get an overview of process advisor capabilities.
 author: donums
 contributors:
   - donums
