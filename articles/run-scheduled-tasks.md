@@ -13,7 +13,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/13/2022
+ms.date: 01/12/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -33,17 +33,16 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 ## Create a recurring flow
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Select **My flows** > **New flow** > **Scheduled cloud flow**.
+1. Select **Create** > **Build your own**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of create a scheduled cloud flow.](./media/run-scheduled-tasks/create-flow.png "Create a scheduled cloud flow")
+    :::image type="content" source="media/run-scheduled-tasks/create-flow.png" alt-text="Screenshot of the steps to create a scheduled cloud flow.":::
 
+1. Select **Scheduled** to create a scheduled cloud flow.
 1. In the fields next to **Starting**, specify the date and time when your flow should start.
 1. In the fields next to **Repeat every**, specify the flow's recurrence.
-1. Select **Create**.
+1. Select **Next** to select a connector using blocks, or select **Skip to building your own flow** to go directly to the designer.
 
-    >[!div class="mx-imgBorder"]
-    >![Set recurrence.](./media/run-scheduled-tasks/select-recurrence.png "Set recurrence")
+    :::image type="content" source="media/run-scheduled-tasks/select-recurrence.png" alt-text="Screenshot of the options to set up a scheduled flow.":::
 
 ## Configure advanced options
 

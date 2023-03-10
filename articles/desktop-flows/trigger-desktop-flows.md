@@ -41,7 +41,7 @@ To trigger a desktop flow from a cloud flow:
 
 1. Create a new cloud flow that you'll later use to trigger your desktop flow. This flow can be an instant or an automated cloud flow.
 
-    :::image type="content" source="media/trigger-desktop-flows/my-flows-instant-blank.png" alt-text="Screenshot of the option to create a new instant cloud flow.":::
+    :::image type="content" source="media/trigger-desktop-flows/create-flow.png" alt-text="Screenshot of the option to create a new cloud flow.":::
 
 1. The following example displays the creation of a manually triggered cloud flow. This step may differ depending on the type of cloud flow you want to create.
 

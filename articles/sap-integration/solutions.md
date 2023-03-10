@@ -21,7 +21,7 @@ ms.date: 02/17/2023
 
 [This article is prerelease documentation and is subject to change.]
 
-Connecting your SAP system to Microsoft Power Platform will extend its functionality and allow you to get more value out of your investment.
+Connecting your SAP system to Microsoft Power Platform extends its functionality and allows you to get more value out of your investment.
 
 The preview version of the prebuilt SAP integration solution is [available for download](https://github.com/jongilman88/PowerPlatformSAPIntegration). It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with Power Platform.
 
@@ -29,9 +29,9 @@ The canvas app runs in your browser and streamlines SAP screens and data attribu
 
 ## What does the user interface look like?
 
-On the surface, you'll see a canvas app that runs in your browser.
+On the surface, you see a canvas app that runs in your browser.
 
-Here is the Purchase Orders template in the Purchasing module:
+Here's the Purchase Orders template in the Purchasing module:
 
 :::image type="content" source="media/prebuilt-solution/purchase-orders.png" alt-text="Power App display of purchase order page that is part of the purchasing module.":::
 
@@ -151,7 +151,7 @@ The following apps and flows are listed with short descriptions for your referen
 | ReadPurchaseOrderList | Reads data from a purchase order list |
 | ReadSalesOrder | Reads sales order data |
 | ReadSalesOrderList | Reads data from a sales order list|
-| ReadSAPUserList | Reads data from a SAP user list |
+| ReadSAPUserList | Reads data from an SAP user list |
 | ReadVendor | Reads vendor data |
 | ReadVendorList | Reads data from a vendor list |
 | UpdatePurchaseOrder | Updates purchase order data|
@@ -159,7 +159,7 @@ The following apps and flows are listed with short descriptions for your referen
 
 ## How do I access the user interface?
 
-After the systems are configured to communicate with one another and you explore the internal components of the imported solution, you are ready to open an app that acts as a user interface and test it.
+After the systems are configured to communicate with one another and you explore the internal components of the imported solution, you're ready to open an app that acts as a user interface and test it.
 
 1. Select **Apps**.
 1. Select **Purchase Orders** or **Sales Orders**.
@@ -168,7 +168,7 @@ After the systems are configured to communicate with one another and you explore
 
     :::image type="content" source="media/prebuilt-solution/play-app-2.png" alt-text="Power App display of the Play button that opens the application to the user experience.":::
 
-    Now, you should see the user's view. If the initial setup is complete, you are ready to test the communication between your SAP system and Power Platform.
+    Now, you should see the user's view. If the initial setup is complete, you're ready to test the communication between your SAP system and Power Platform.
 
     :::image type="content" source="media/prebuilt-solution/order-to-cash.png" alt-text="Power App Order to Cash screen.":::
 
