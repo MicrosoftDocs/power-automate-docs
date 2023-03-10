@@ -14,7 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/09/2021
+ms.date: 01/16/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -221,9 +221,7 @@ You'll now see that the unattended trial is now active in your list of add-ons.
 
 Before you can assign add-ons, such as trial licenses, you must [get the add-ons](#how-to-start-an-unattended-trial).
 
-1. Select **Action items** > **Admin center** in the Power Platform admin center.
-
-   ![Launch Power Platform admin center.](./media/rpa-license/admin-center.png)
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 1. Select **Resources** > **Capacity** > **Manage**.
 

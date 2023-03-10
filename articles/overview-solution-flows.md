@@ -1,15 +1,15 @@
 ---
-title: Overview of solution-aware flows | Microsoft Docs
+title: Overview of solution-aware flows
 description: Learn solution concepts and how to implement a healthy ALM practice for flows.
-author: msftman
-manager: kvivek
-
+author: ChrisGarty
+contributors:
+  - ChrisGarty
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/11/2021
-ms.author: deonhe
+ms.date: 01/31/2023
+ms.author: cgarty
 ms.reviewer: angieandrews
-
 search.app: 
   - Flow
 search.audienceType: 
@@ -39,8 +39,8 @@ You must have the following components to create solutions, and solution-aware f
 
 Follow these steps to create a solution.
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
-1. Select **Solutions** from the navigation bar on the left side of the screen.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. On the menu to the left, select **Solutions**.
 
    ![Screen shot of the left nav with solutions highlighted](./media/overview-solution-flows/left-nav-solution.png)
 
@@ -64,7 +64,7 @@ Now that you've created your solution, it's time to [add your flows](./create-fl
 
 There are certain limitations when using flows with solutions. For information about these limitations, see [Known limitations](/powerapps/maker/data-platform/solutions-overview#known-limitations) in the Power Apps docs.
   
-## Learn more
+### See also
 
 - [Create a cloud flow in a solution](./create-flow-solution.md)
 - [Export a solution](./export-flow-solution.md)

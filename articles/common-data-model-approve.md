@@ -12,7 +12,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/02/2023
+ms.date: 02/22/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 search.app: 
@@ -88,19 +88,23 @@ By following the steps in this section, you'll build:
 
 ## Sign in and create a cloud flow
 
-1. Open the [Power Automate portal](https://flow.microsoft.com).
+1. Open the [Power Automate portal](https://make.powerautomate.com).
 
-1. In the top right menu, select the environment in which you created the database. If you don't select the same environment, you won't see your table.
+1. Select the environment in which you previously created the Database table. If you don't select the same environment, your table won't be available.
 
-1. Go to **My flows** and select **New flow** > **Automated cloud flow**.
+1. Go to **Create** > **Build your own**.
 
 ## Start when a file is added
 
-1. In the **Build an automated cloud flow** dialog, enter a name for the flow and search for the **When a file is created** Dropbox trigger.
+1. Under **Choose a connector**, search for **Dropbox**, and select the appropriate card.
 
-1. Under **Folder**, select the folder icon, and then browse to the folder where files will be added.
+1. Select the **When a file is created** action.
 
-    :::image type="content" source="media/common-data-model-approve/folder-icon.png" alt-text="Screenshot of the option to choose a folder in the When a file is created trigger.":::
+1. Select **Next**, and then **Skip to building your own flow**.
+
+1. In the designer, select the **When a file is created** action, select the folder icon, and then browse to the folder where files will be added.
+
+    ![Choose folder.](./media/common-data-model-approve/folder-icon.png)
 
 ## Add data to the table
 

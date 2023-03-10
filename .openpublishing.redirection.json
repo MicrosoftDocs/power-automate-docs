@@ -571,6 +571,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/intro-maker-portal.md",
+      "redirect_url": "/power-automate/getting-started",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/release-notes.md",
       "redirect_url": "/dynamics365/release-plans",
       "redirect_document_id": false
