@@ -1,13 +1,13 @@
 ---
 title: Share process mining processes in process advisor (preview) | Microsoft Docs
-description: Share a process mining process with others so that they can glean insights to make decisions.
+description: Learn how to share a process mining process with others so that they can glean insights to make decisions.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 03/10/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -83,7 +83,7 @@ Adding a co-owner to the process allows the owner to include other people who ca
 
 - [View the process analytics](process-mining-visualize.md).
 
-- Share process with other co-owners and viewers.
+- Share the process with other co-owners and viewers.
 
 ## Share a process with a viewer
 
@@ -92,8 +92,6 @@ Adding a co-owner to the process allows the owner to include other people who ca
 - View the process details.
 
 - [View the process analytics](process-mining-visualize.md).
-
-- Share the process with other viewers.
 
 >[!IMPORTANT]
 >
