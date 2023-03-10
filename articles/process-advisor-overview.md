@@ -83,9 +83,9 @@ Explore the topics in [Process mining (preview)](process-mining-overview.md) a
 
 Process advisor is licensed as part of Power Automate per-user licenses. If you don’t have a license, you can start a Power Automate premium trial to try process advisor. The per-user licenses enable users to analyze processes and view the analytics report.
 
-**Task mining capability:** A *Power Automate per user license* enables a user to analyze a recorded process and view the analytics report. Note that contributing recordings to a process does not need the per user license.
+**Task mining capability:** A *Power Automate per-user license* enables a user to analyze a recorded process and view the analytics report. Note that contributing recordings to a process does not need the per-user license.
 
-**Process mining capability:** A *Power Automate per user license with attended RPA* enables a user to create a process, connect to an event log using dataflows, analyze a process from data, and view the analytics report in the web.
+**Process mining capability:** A *Power Automate per-user license with attended RPA* enables a user to create a process, connect to an event log using dataflows, analyze a process from data, and view the analytics report in the web.
 
 **Process mining add-on:** A separately purchasable add-on is required to do the following:
 - Use of the [desktop application](minit/minit-desktop-application-overview.md) which provides many features to get deep insights into your process
@@ -95,21 +95,17 @@ For inquiries about add-on capability licensing, contact minitq@microsoft.com
 
 **Trial license:** You can start a free 90 day Power Automate premium trial will provide access to all available capabilities listed above, including the add-on capability. Note that there is a process size limit for any processes created while on the trial.
 
-**Power BI license:** To customize your report, you need to link the process to your own Power BI workspace, and a Power BI premium per user license (or better) is needed. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
+**Power BI license:** To customize your report, you need to link the process to your own Power BI workspace, and a Power BI premium per-user license (or better) is needed. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
 
 **Preview:** Note that some features are in preview, denoted by the preview tag, and for process templates that are still in preview, license and trial are not needed.
+
+**Dataverse capacity:** Depending on the size of the process data you import, you may run out of Dataverse storage capacity. In which case you will need to contact your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store will mostly use file capacity. Learn more about Dataverse storage capcity, got to [New Microsoft Dataverse storage capacity](https://learn.microsoft.com/en-us/power-platform/admin/capacity-storage).
 
 ## Prerequisites
 
 Before you start using process advisor capabilities, make sure you have the following prerequisites:
 
-- Process mining licenses
-
-   - To use basic process mining functionality, go to [Power Automate Pricing](https://powerautomate.microsoft.com/pricing/) to obtain a Power Automate license.
-
-   - To be able to customize your process reports in Power BI, go to [Power BI Pricing](https://powerbi.microsoft.com/pricing/) to obtain a Power Bi license.
-
-   - To learn more about licensing and add Dataverse capacity, visit page 21 of the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).  
+- The required licenses or trials depending on the capabilities you want access to (see above).
 
 - A Microsoft Power Platform environment with a Microsoft Dataverse database.  
 
@@ -117,13 +113,12 @@ Before you start using process advisor capabilities, make sure you have the foll
 
   - To learn how to add a database to an environment, go to [Add a Microsoft Dataverse database](/power-platform/admin/create-database).  
 
-- (If you want to set up dataflows for process mining) An Environment Maker security role.  
+- Adequate roles are assigned for users that want to use process advisor. Typically an Environment Maker security role is recommended. Go to [Security and privacy](process-advisor-security.md) to learn more.
 
-     - If you're assigned an Environment Admin or System Admin role, go to [What are dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) to learn more.  
+Additional considerations for specific capabilities:
 
-- For additional process mining capabilities, download the[minit desktop application](minit/how-to-start-with-minit-desktop-application.md).
+- For process mining, download the [minit desktop application](minit/how-to-start-with-minit-desktop-application.md).
 
 - To customize your report, you need to [set up your Power BI workspace](process-mining-pbi-workspace.md) and [register the process advisor service principal in Azure AD](process-mining-pbi-workspace.md#install-azure-tools).
 
-- Power Automate for desktop for task mining. You can download it from process advisor.
-  - To learn more, go to [Introduction to desktop flows](desktop-flows/introduction.md).
+- For task mining, download [Power Automate for desktop](desktop-flows/install.md).
