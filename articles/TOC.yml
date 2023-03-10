@@ -840,6 +840,8 @@
         href: ./minit/business-rules-process-map.md
       - name: Business rules statistics
         href: ./minit/business-rules-statistics.md
+    - name: Diagnostic data collection in minit
+      href: ./minit/minit-diagnostics.md     
   - name: Task mining
     items:
     - name: Overview
