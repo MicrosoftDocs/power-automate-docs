@@ -9,13 +9,12 @@ manager: KVIVEK
 ms.reviewer: gtrantzas
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/25/2018
+ms.date: 03/10/2023
 ms.author: Deonhe
 search.app: 
   - Flow
@@ -51,11 +50,11 @@ Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), o
     You can browse your activity history for the different Microsoft applications and services that you use.
 1. To export **Product and Service Activity** data select **Download your data**, and then select **CREATE NEW ARCHIVE**.
 
-    ![Download your data.](./media/gdpr-dsr-export-msa/downloaddata.png)
+    ![Screenshot of the Privacy dashboard screen.](./media/gdpr-dsr-export-msa/downloaddata.png)
 
 1. Select **App & service usage**, and then select **Create archive**.
 
-    ![Download your data.](./media/gdpr-dsr-export-msa/create-archive.png)
+    ![Screenshot of the Create archive screen.](./media/gdpr-dsr-export-msa/create-archive.png)
 1. A new archive is created. Select **Download** to obtain your exported product and service activity data.
 
     ![Download.](./media/gdpr-dsr-export-msa/download.png)

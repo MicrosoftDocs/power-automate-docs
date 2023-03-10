@@ -10,13 +10,12 @@ ms.author: Deonhe
 ms.reviewer: gtrantzas
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 3/29/2021
+ms.date: 03/10/2023
 search.app: 
   - Flow
   - Powerplatform
@@ -47,13 +46,14 @@ The steps below describe how to self-serve delete requests for GDPR.
 ### Delete Product and service activity
 
 1. Sign into the [Microsoft Privacy Dashboard](https://account.microsoft.com/privacy/) with your MSA.
+
 1. Select the **Activity history** link.
 
-    ![Activity History.](./media/gdpr-dsr-export-msa/activityhistory.png)
+    ![Screenshot of the Activity history tab..](./media/gdpr-dsr-export-msa/activityhistory.png)
 
 1. You can search or browse your activity history for the different Microsoft applications and services that you use, including Power Automate. Select **Delete** to remove specific product or service activity events.
 
-    ![Delete Event.](./media/gdpr-dsr-delete-msa/deleteevent.png)
+    ![Screenshot of the Delete option in Power Automate.](./media/gdpr-dsr-delete-msa/deleteevent.png)
 
 1. Within a few moments, the item is deleted and removed from privacy dashboard.
 
@@ -65,7 +65,7 @@ A user can list and delete their flows from [Power Automate](https://make.powera
 
 1. Select **...** beside the flow that you're deleting, and then select **Delete**.
 
-    ![Delete Event.](./media/gdpr-dsr-delete-msa/deleteflow.png)
+    ![Screenshot of the dropdown menu with the Delete option.](./media/gdpr-dsr-delete-msa/deleteflow.png)
 
 ### Delete Connections
 
