@@ -183,11 +183,6 @@ You can send a copy of a cloud flow to another user, who can then use the defini
 
    ![Receive a copy.](./media/create-team-flows/send-a-copy5.png "Receive a copy")
 
-   >[!NOTE]
-   >As a recipient, you can also access the flow by selecting **Templates** on the left pane and then selecting the **Shared with me** tab.
-
-   ![Shared with me.](./media/create-team-flows/send-a-copy6.png "Shared with me")
-
 ## FAQ
 
 ### Manage flows when the user who created a shared flow leaves the organization

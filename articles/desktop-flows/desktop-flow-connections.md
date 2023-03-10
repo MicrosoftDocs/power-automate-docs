@@ -22,7 +22,7 @@ search.audienceType:
 
 Before using the **Run desktop flow** action in your cloud flow to trigger a desktop flow, you need to create a connection to your machine. To create a connection:
 
-1. Sign in to [Power Automate](https://powerautomate.microsoft.com), select **Connections**,  and then select **New connection**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), go to **Data** > **Connections**,  and then select **New connection**.
 
     :::image type="content" source="media/desktop-flows-setup/new-connection.png" alt-text="Screenshot of the option to create a new connection.":::
 
