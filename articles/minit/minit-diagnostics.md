@@ -54,7 +54,7 @@ Minit doesn’t collect optional data unless the user consents during the produc
 
 |Data category     | Description     | Examples     |
 |------------------|-----------------|--------------|
-|Enhanced anonymized product usage  | This type of Optional diagnostic data includes details about the usage of selected functionalities, such as UI language interface, etc. | Selected user interface language such as English, French, etc. |
+|Enhanced anonymized product usage  | This type of *optional diagnostic data* includes details about the usage of selected functionalities, such as UI language interface, etc. | Selected user interface language such as English, French, etc. |
 
 ## See also
 
