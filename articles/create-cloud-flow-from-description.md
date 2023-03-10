@@ -4,21 +4,22 @@ description: Learn to create a cloud flow from a written description of the scen
 services: ''
 suite: flow
 documentationcenter: na
-author: phil-cmd
+author: natalie-pienkowska
 contributors:
-  - phil-cmd
+  - natalie-pienkowska
+  - kartikraop
   - JoeFernandezMS
   - v-aangie
+ms.author: napienko
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/21/2023
-ms.author: jofernan
-ms.reviewer: angieandrews
+ms.date: 03/10/2023
 search.app: 
   - Flow
 search.audienceType: 
