@@ -81,7 +81,7 @@ Following are the main components for process mining:
 
 Process advisor is licensed as part of Power Automate per-user licenses. If you don’t have a license, you can start a Power Automate premium trial to try process advisor. The per-user licenses enable users to analyze processes and view the analytics report.
 
-**Task mining capability:** A *Power Automate per user license* enables a user to analyze a recorded process and view the analytics report. Other actions such as contributing recordings and setting up process mining processes don't need the Power Automate per-user licenses.
+**Task mining capability:** A *Power Automate per user license* enables a user to analyze a recorded process and view the analytics report. Contributing recordings to a process does not need the per user license.
 
 **Process mining capability:** A *Power Automate per user license with attended RPA* enables a user to create a process, connect to an event log using dataflows, analyze a process from data, and view the analytics report in the web.
 
