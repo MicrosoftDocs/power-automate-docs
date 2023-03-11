@@ -26,6 +26,20 @@ In the context of process advisor, process mining works with the existing Micros
 
 Overall, process mining in process advisor is a valuable tool for businesses seeking to improve their operational efficiency and make informed decisions.
 
+## Benefits of process mining
+
+The business value of process mining lies in its ability to help organizations gain insights into their operational processes and identify areas for improvement. By analyzing event data from various sources, process mining provides a clear view of how processes are actually being executed in practice. This helps businesses to:
+
+- Improve operational efficiency: Process mining can help identify bottlenecks and inefficiencies in processes, allowing organizations to streamline their operations and improve productivity.
+
+- Enhance customer experience: By identifying process pain points and eliminating them, organizations can improve the customer experience and increase satisfaction.
+
+- Optimize resources: Process mining enables businesses to identify opportunities for automation, reducing the need for manual intervention and allowing resources to be allocated more effectively.
+
+- Ensure compliance: Process mining can help organizations to identify non-compliant processes and take corrective action to avoid legal and financial risks.
+
+Overall, process mining provides valuable insights that can help organizations improve their operations, enhance customer satisfaction, and stay competitive in a rapidly changing business landscape.
+
 ## Business examples
 
 Overall, process mining provides valuable insights that can help any organizations improve their operations, enhance customer satisfaction, and stay competitive in a rapidly changing business landscape.
