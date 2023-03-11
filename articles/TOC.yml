@@ -684,6 +684,8 @@
     items:
     - name: Overview
       href: process-mining-overview.md
+    - name: Get started with process mining
+      href: process-mining-tutorial.md      
     - name: Templates overview
       items:
       - name: Azure templates
@@ -692,8 +694,6 @@
         href: process-mining-finance-ops-templates.md   
       - name: Power Platform templates
         href: process-mining-templates.md
-    - name: Get started with process mining
-      href: process-mining-tutorial.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
     - name: Transform and map data
