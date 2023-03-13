@@ -85,7 +85,7 @@ Process advisor is licensed as part of Power Automate per-user licenses. If you 
 
 **Task mining capability:** A *Power Automate per-user license* enables a user to analyze a recorded process and view the analytics report. Note that contributing recordings to a process does not need the per-user license.
 
-**Process mining capability:** A *Power Automate per-user license with attended RPA* enables a user to create a process, connect to an event log using dataflows, analyze a process from data, and view the analytics report in the web.
+**Process mining capability:** A *Power Automate per-user license with attended RPA* enables a user to create a process, connect to an event log using data flows, analyze a process from data, and view the analytics report in the web.
 
 **Process mining add-on:** A separately purchasable add-on is required to do the following:
 - Use of the [desktop application](minit/minit-desktop-application-overview.md) which provides many features to get deep insights into your process
@@ -99,7 +99,7 @@ For inquiries about add-on capability licensing, contact minitq@microsoft.com
 
 **Preview:** Note that some features are in preview, denoted by the preview tag, and for process templates that are still in preview, license and trial are not needed.
 
-**Dataverse capacity:** Depending on the size of the process data you import, you may run out of Dataverse storage capacity. In which case you will need to contact your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store will mostly use file capacity. Learn more about Dataverse storage capcity, got to [New Microsoft Dataverse storage capacity](https://learn.microsoft.com/en-us/power-platform/admin/capacity-storage).
+**Dataverse capacity:** Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, you'll need to contact your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store will mostly use file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
 
 ## Prerequisites
 

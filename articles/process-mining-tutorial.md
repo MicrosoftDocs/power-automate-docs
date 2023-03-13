@@ -98,27 +98,23 @@ When the analysis process is complete, you’ll see a process map and a dashboar
 
 Let’s take the analysis of our process beyond KPIs. We'll use the minit desktop application, where you can edit and analyze your processes created in process advisor.
 
-1. From the command bar of the analytics report page click **Download minit** to download the minit desktop application.
- 
+1. From the command bar of the analytics report page, select **Download minit** to download minit.
+
 1. In the desktop app select the environment from the top right of the **Processes** screen.
 
 1. Search for the process that you created on process advisor (**AP Refunds Process**).
 
 1. Select **Default** to display the default view.
 
-    You’re ready to use the advanced capabilities of the minit desktop application in process advisor.
+    You’re ready to use the advanced capabilities of minit in process advisor.
 
 1. In the dropdown menu for **Frequency**, select **Case count**.
-
-    ![image](https://user-images.githubusercontent.com/113051637/222485047-9a9d3d3a-b7db-4dc0-8da6-29e0266bf7bc.png)
 
     The following process map displays the number of cases of the process that include the activity specified at each node.
 
     ![image](https://user-images.githubusercontent.com/113051637/222484984-76cd9d55-8024-4336-a538-d66381e82ad0.png)
 
 1. In the **Customize** panel, select the clock icon, and then select **Mean duration** from the dropdown menu.
-
-    ![image](https://user-images.githubusercontent.com/113051637/222486152-d6241de6-a194-47dc-bcee-5e15f5459110.png)
 
     Notice that the **Refund with special voucher** step has a long mean duration compared to other steps.
 

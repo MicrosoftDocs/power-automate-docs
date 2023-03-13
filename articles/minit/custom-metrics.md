@@ -31,7 +31,7 @@ It's then possible to visualize them in the process map or according to their co
 
 If you already have custom metrics defined, you see a list in the **Process context** screen. To view the formula for a custom metric, select the right arrow next to its name.The arrow turns into a down arrow.
 
-  :::image type="content" alt-text="Screenshot of the metric formula." source="media/custom-metrics-predefined.png":::
+  :::image type="content" alt-text="Screenshot of the metric formula when you select the arrow." source="media/custom-metrics-predefined.png":::
 
 ## Define a custom metric
 
@@ -59,7 +59,7 @@ Define custom metrics in the context of the current process. They can be used an
 
 1. Select **Save**.
 
-    :::image type="content" alt-text="Screenshot of the metric formula." source="media/create-custom-metric.png":::
+    :::image type="content" alt-text="Screenshot of the metric formula in the Metric formula field." source="media/create-custom-metric.png":::
 
 Select a **Metric type** to see further details to verify the applicability of the expression for various minit functions.
 
