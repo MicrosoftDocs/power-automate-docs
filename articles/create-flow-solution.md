@@ -143,6 +143,7 @@ The **Objects** tab of a solution shows all the solution objects in the solution
 
 ### See also
 
+- [Add canvas apps and cloud flows to a solution by default](/power-apps/maker/canvas-apps/add-app-solution-default)
 - [Create a solution](./overview-solution-flows.md)
 - [Export a solution](./export-flow-solution.md)
 - [Import a solution](./import-flow-solution.md)
