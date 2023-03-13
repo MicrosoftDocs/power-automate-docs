@@ -5,6 +5,10 @@ services: ''
 suite: flow
 documentationcenter: na
 author: Radioblazer
+contributors:
+  - Radioblazer
+  - ChrisGarty
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -103,5 +107,9 @@ You can use the **update a row** command to provide upsert actions. This command
 If you have a trigger registered on the update of a row, the flow runs for every *committed* update to the given row. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
 
 Flow runs may be delayed if there's a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
+
+### See also
+
+[Add canvas apps and cloud flows to a solution by default](/power-apps/maker/canvas-apps/add-app-solution-default)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
