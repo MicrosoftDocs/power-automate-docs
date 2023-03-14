@@ -130,7 +130,7 @@ To select multiple activities or cases, you can also use **Ctrl** + **Click** .
 
 | Default | Premium |
 | ------------- | ------------- |
-| :::image type="content" source="media/process-mining-visualize/filter-panel.png" alt-text="Screenshot of the filters dialog.":::  | ![Screenshot of the filters dialog in Premium.](file:///Lite%20report%20-%20Filters.png)  |
+| ![Screenshot of the filters dialog in Premium.](file:///Lite%20report%20-%20Filters.png) |  :::image type="content" source="media/process-mining-visualize/filter-panel.png" alt-text="Screenshot of the filters dialog.":::  |
 
 ### Visualizations
 
