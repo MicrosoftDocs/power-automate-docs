@@ -1,13 +1,13 @@
 ---
 title: List of statistical operations
-description: Learn the statistical operations in the Power Automate Process Mining desktop app.
+description: Learn about the statistical operations in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -23,7 +23,7 @@ This article lists statistical operations in the minute desktop application.
 
 ## START()
 
-returns the start of a process/event/case/path
+Returns the start of a process/event/case/path.
 
 **Supported context:** process, event, case, edge
 
@@ -31,7 +31,7 @@ returns the start of a process/event/case/path
 
 ## END()
 
-returns the end of a process/event/case/path
+Returns the end of a process/event/case/path.
 
 **Supported context:** process, event, case, edge
 
@@ -39,7 +39,7 @@ returns the end of a process/event/case/path
 
 ## DURATION()
 
-returns the duration of a process/event/case/path
+Returns the duration of a process/event/case/path.
 
 **Supported context:** process, event, case, edge
 
@@ -47,7 +47,7 @@ returns the duration of a process/event/case/path
 
 ## EVENTCOUNT()
 
-returns number of the events in the case/process
+Returns number of the events in the case/process.
 
 **Supported context:** process, event
 
@@ -55,7 +55,7 @@ returns number of the events in the case/process
 
 ## CASECOUNT()
 
-returns number of the cases in the process
+Returns number of the cases in the process.
 
 **Supported context:** process
 
@@ -63,7 +63,7 @@ returns number of the cases in the process
 
 ## ACTIVETIME()
 
-returns case active time
+Returns case active time.
 
 **Supported context:** case
 
@@ -71,7 +71,7 @@ returns case active time
 
 ## WAITINGTIME()
 
-returns case waiting time
+Returns case waiting time.
 
 **Supported context:** case
 
@@ -87,7 +87,7 @@ In the case context, it returns TRUE if at least one event occurred in parallel 
 
 ## ISPARALLELWITH([condition])
 
-returns TRUE if the event occurred in parallel with another event which fullfilla given condition, otherwise FALSE
+Returns TRUE if the event occurred in parallel with another event which fullfilla given condition, otherwise FALSE.
 
 **Supported context:** event
 
@@ -101,7 +101,7 @@ returns TRUE if the event occurred in parallel with another event which fullfill
 
 ## UTILIZATION()
 
-Returns case utilization (number from 0 to 1)
+Returns case utilization (number from 0 to 1).
 
 **Supported context:** case
 
@@ -117,7 +117,7 @@ Returns the cumulative case utilization (a number from 0 to 1 to N). A value abo
 
 ## REWORKCOUNT([attributeName])
 
-Returns the total count of all reworks (loops and self-loops) within the case
+Returns the total count of all reworks (loops and self-loops) within the case.
 
 **Supported context:** case
 
@@ -131,7 +131,7 @@ Returns the total count of all reworks (loops and self-loops) within the case
 
 ## LOOPCOUNT([attributeName])
 
-returns count of loops within the case
+Returns count of loops within the case.
 
 **Supported context:** case
 
@@ -145,7 +145,7 @@ returns count of loops within the case
 
 ## SELFLOOPCOUNT([attributeName])
 
-returns count of self-loops within the case
+Returns count of self-loops within the case.
 
 **Supported context:** case
 
@@ -159,7 +159,7 @@ returns count of self-loops within the case
 
 ## OCCURRENCE([attributeName])
 
-returns occurrence index of a given event attribute value within the case
+Returns occurrence index of a given event attribute value within the case.
 
 **Supported context:** event
 
@@ -173,7 +173,7 @@ returns occurrence index of a given event attribute value within the case
 
 ## ISSELFLOOP([attributeName])
 
-returns true when event/edge has self-loop repetition
+Returns true when event/edge has self-loop repetition.
 
 **Supported context:** event, edge
 
@@ -187,7 +187,7 @@ returns true when event/edge has self-loop repetition
 
 ## ISLOOP([attributeName])
 
-returns true when event/edge has loop repetition
+Returns true when event/edge has loop repetition.
 
 **Supported context:** event, edge
 
@@ -201,7 +201,7 @@ returns true when event/edge has loop repetition
 
 ## ISREWORK([attributeName])
 
-returns true when event/edge has any kind of rework (self-loop or loop).
+Returns true when event/edge has any kind of rework (self-loop or loop).
 
 **Supported context:** event, edge
 
@@ -215,7 +215,7 @@ returns true when event/edge has any kind of rework (self-loop or loop).
 
 ## ISLOOPINFLOW([attributeName])
 
-returns true when event/edge has loop inflow
+Returns true when event/edge has loop inflow.
 
 **Supported context:** event, edge
 
@@ -229,7 +229,7 @@ returns true when event/edge has loop inflow
 
 ## ISLOOPOUTFLOW([attributeName])
 
-returns true when event/edge has loop outflow
+Returns true when event/edge has loop outflow.
 
 **Supported context:** event, edge
 
@@ -241,7 +241,7 @@ returns true when event/edge has loop outflow
 
 ## LOOPGAIN([attributeName])
 
-returns difference between the event's loop outflow and loop inflow. Value +1 when the event has loop outflow and no loop inflow. Value -1 when the event has no loop outflow and loop inflow. Otherwise returns 0.
+Returns difference between the event's loop outflow and loop inflow. Value +1 when the event has loop outflow and no loop inflow. Value -1 when the event has no loop outflow and loop inflow. Otherwise returns 0.
 
 **Supported context:** event
 
@@ -255,7 +255,7 @@ returns difference between the event's loop outflow and loop inflow. Value +1 wh
 
 ## MEDIAN([context],[value],[compression])
 
-calculates the approximate median of values grouped according to the defined context.
+Calculates the approximate median of values grouped according to the defined context.
 
 **Supported context:** process, case, event, edge
 
@@ -303,7 +303,7 @@ Calculates the approximate q-th quantile of values grouped according to defined 
 
 ## CDF([context],[value],[x],[compression])
 
-calculates the estimated cumulative distribution function (cdf) for the given value from values grouped according to the defined context.
+Calculates the estimated cumulative distribution function (cdf) for the given value from values grouped according to the defined context.
 
 **Supported context:** case, event, edge
 
@@ -328,7 +328,7 @@ Data type: INT, FLOAT, DATE, TIME (need to be the same data type as [value] para
 
 ## ISFINISHED()
 
-returns true when the case is categorized as finished (as defined in Process Context – Case Categorization)
+Returns true when the case is categorized as finished (as defined in Process Context – Case Categorization).
 
 **Supported context:** case
 
@@ -336,7 +336,7 @@ returns true when the case is categorized as finished (as defined in Process Con
 
 ## ISRUNNING()
 
-returns true when the case is categorized as running (as defined in Process Context – Case Categorization)
+Returns true when the case is categorized as running (as defined in Process Context – Case Categorization)
 
 **Supported context:** case
 
@@ -344,7 +344,7 @@ returns true when the case is categorized as running (as defined in Process Cont
 
 ## ISSTUCK()
 
-returns true when the case is categorized as stuck (as defined in Process Context – Case Categorization)
+Returns true when the case is categorized as stuck (as defined in Process Context – Case Categorization).
 
 **Supported context:** case
 
@@ -352,7 +352,7 @@ returns true when the case is categorized as stuck (as defined in Process Contex
 
 ## ISINCOMPLETEIMPORT()
 
-returns true when the case is categorized as import incomplete (as defined in Process Context – Case Categorization)
+Returns true when the case is categorized as import incomplete (as defined in Process Context – Case Categorization)
 
 **Supported context:** case
 
@@ -360,7 +360,7 @@ returns true when the case is categorized as import incomplete (as defined in Pr
 
 ## STATS([Aggregate]*,[Type]**)
 
-returns calculated process statistics according to the selected aggregation and type of statistics
+Returns calculated process statistics according to the selected aggregation and type of statistics.
 
 **Supported context:** process
 

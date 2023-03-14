@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -19,13 +19,11 @@ search.audienceType:
 
 # Custom metrics calculation methods
 
-This documentation is intended for users who are already familiar with the basic functionality of minit and understand the basics of process mining.
-
-This series does not serve as a reference manual for individual custom metrics operations but offers a methodical introduction to the calculation methods after which the attentive user will be able to correctly define the desired calculation scope.
+This article is for users who are already familiar with the basic functionality of minit and understand the basics of process mining. It offers a methodical introduction to the calculation methods after which you'll be able to define the desired calculation scope.
 
 ## Metrics in minit
 
-Minit desktop application offers a wide set of predefined - standard metrics - for example, number of events, number of cases, average duration of cases, number of variants, and so on. These metrics may be separated in two basic groups: ​
+Minit offers a wide set of predefined standard metrics (for example, number of events, number of cases, average duration of cases, number of variants, and more). These metrics might be separated in two basic groups: ​
 
 - **Aggregated metrics:** Most common result. Display calculated values grouped by selected context across minit.
 
@@ -33,9 +31,9 @@ Minit desktop application offers a wide set of predefined - standard metrics - 
 
 ## Aggregated metrics
 
-Aggregation or calculation is done over certain calculation scope or ‘context'.  Scope is defined by different analytical views in Minit.​ This example uses the Process map.
+Aggregation or calculation is done over certain calculation scope or context.  Scope is defined by different analytical views in minit.​ This example uses the process map.
 
-Process map is the most common type of display for process mining analysis. Each element of the map - node(activity) or path(edge) displays an aggregated value for all events with the same activity value. In the example below you see the representation of two activities: 'Get lowest approval level' and 'Approving on specific level'. For both nodes, the displayed value represents 95 single events in the data set and displays the aggregated value (for all) of it. In this case it is the total number of events.
+Process map is the most common type of display for process mining analysis. Each element of the map - node (activity) or path (edge) displays an aggregated value for all events with the same activity value. In the example below, you see the representation of two activities: *Assemble bicycle* and *Send parts to engineering*. For both nodes, the displayed value represents 109 single events in the data set and displays the aggregated value for all of it. In this case, it's the total number of events.
 
 :::image type="content" alt-text="Screenshot of the total count." source="media/process-map-detail-1.png":::
 

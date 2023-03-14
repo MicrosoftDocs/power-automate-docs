@@ -42,7 +42,7 @@ If the **Process** screen doesn't show the processes you expect, you might need 
 
 You can organize your processes and views in a way that works best for you.
 
-- **My processes** > **Process name:** List processes by name, with their associated views displayed as tiles below them. Select the caret to the left of the process name to show or hide the views. This view is the default when you open Minit.
+- **My processes** > **Process name:** List processes by name, with their associated views displayed as tiles below them. Select the caret to the left of the process name to show or hide the views. This view is the default when you open minit.
 
 - **Shared with me** > **Process name:** 
 

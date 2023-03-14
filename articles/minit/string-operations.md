@@ -1,13 +1,13 @@
 ---
 title: List of string operations
-description: Get a list of string operations that you can use in minit.
+description: Learn bout the string operations that you can use in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -23,9 +23,7 @@ Following are the string operations that you can use in minit.
 
 ## CONCAT([string1],...,[stringN])
 
-concatenates given strings
-
-
+Concatenates given strings.
 
 **Parameters:**
 
@@ -41,7 +39,7 @@ concatenates given strings
 
 ## CONTAINS([string],[value])
 
-returns TRUE if the string contains the given value, else returns FALSE
+Returns TRUE if the string contains the given value, else returns FALSE.
 
 **Parameters:**
 
@@ -57,7 +55,7 @@ returns TRUE if the string contains the given value, else returns FALSE
 
 ## ENDSWITH([string],[value])
 
-returns TRUE if string ends with the given value, else returns FALSE
+Returns TRUE if string ends with the given value, else returns FALSE.
 
 **Parameters:**
 
@@ -73,7 +71,7 @@ returns TRUE if string ends with the given value, else returns FALSE
 
 ## LEFT([string],[count])
 
-extracts a given number of characters from the left side of a supplied text string
+Extracts a given number of characters from the left side of a supplied text string.
 
 **Parameters:**
 
@@ -89,7 +87,7 @@ extracts a given number of characters from the left side of a supplied text stri
 
 ## LEN([string])
 
-returns the length of the string
+Returns the length of the string.
 
 **Parameters:**
 
@@ -101,7 +99,7 @@ returns the length of the string
 
 ## LOWER([string])
 
-returns a lower-case version of a given text string
+Returns a lower-case version of a given text string.
 
 **Parameters:**
 
@@ -113,7 +111,7 @@ returns a lower-case version of a given text string
 
 ## LTRIM([string])
 
-removes whitespace from the beginning of the string
+Removes whitespace from the beginning of the string.
 
 **Parameters:**
 
@@ -125,7 +123,7 @@ removes whitespace from the beginning of the string
 
 ## RIGHT([string],[count])
 
-extracts a given number of characters from the right side of a supplied text string
+Extracts a given number of characters from the right side of a supplied text string.
 
 **Parameters:**
 
@@ -141,7 +139,7 @@ extracts a given number of characters from the right side of a supplied text str
 
 ## RTRIM([string])
 
-removes whitespace from the end of the string
+Removes whitespace from the end of the string.
 
 **Parameters:**
 
@@ -169,7 +167,7 @@ returns TRUE if string starts with the given value, else returns FALSE
 
 ## SUBSTRING([string],[start],[count])
 
-returns substring from the specified start position and by the specified number of characters
+Returns substring from the specified start position and by the specified number of characters.
 
 **Parameters:**
 
@@ -189,7 +187,7 @@ returns substring from the specified start position and by the specified number 
 
 ## TOINT([string],[default])
 
-converts a string to an integer. Returns 0 or default value (optional) if conversion error occurs
+Converts a string to an integer. Returns 0 or default value (optional) if conversion error. occurs
 
 **Parameters:**
 
@@ -205,7 +203,7 @@ converts a string to an integer. Returns 0 or default value (optional) if conver
 
 ## TOSTRING([int],[format]*)
 
-converts an integer to a string according to the formatting string (if an optional parameter is specified)
+Converts an integer to a string according to the formatting string (if an optional parameter is specified).
 
 **Parameters:**
 
@@ -221,7 +219,7 @@ converts an integer to a string according to the formatting string (if an option
 
 ## TOSTRING([float],[format]*)
 
-converts a float to a string according to the formatting string (if an optional parameter is specified)
+Converts a float to a string according to the formatting string (if an optional parameter is specified).
 
 **Parameters:**
 
@@ -237,7 +235,7 @@ converts a float to a string according to the formatting string (if an optional 
 
 ## TOSTRING([bool])
 
-converts boolean to a string - "True" or "False"
+Converts boolean to a string - "True" or "False".
 
 **Parameters:**
 
@@ -249,7 +247,7 @@ converts boolean to a string - "True" or "False"
 
 ## TOSTRING([date],[format]*)
 
-converts a date to a string according to the formatting string (if an optional parameter is specified)
+Converts a date to a string according to the formatting string (if an optional parameter is specified).
 
 **Parameters:**
 
@@ -265,7 +263,7 @@ converts a date to a string according to the formatting string (if an optional p
 
 ## TOSTRING([time],[format]*)
 
-converts a time to a string according to the formatting string (if an optional parameter is specified)
+Converts a time to a string according to the formatting string (if an optional parameter is specified).
 
 **Parameters:**
 
@@ -281,7 +279,7 @@ converts a time to a string according to the formatting string (if an optional p
 
 ## TRIM([string])
 
-removes whitespace at the beginning and at the end of the string
+Removes whitespace at the beginning and at the end of the string.
 
 **Parameters:**
 
@@ -293,7 +291,7 @@ removes whitespace at the beginning and at the end of the string
 
 ## UPPER([string])
 
-returns upper-case version of a given text string
+Returns upper-case version of a given text string.
 
 **Parameters:**
 
@@ -302,6 +300,3 @@ returns upper-case version of a given text string
    Data type: STRING
 
 **Output Data Type**: STRING
-
-\* To learn more about standard or custom formatting string, go to [How to format numbers, dates, enums, and other types in .NET](/dotnet/standard/base-types/formatting-types).
-
