@@ -40,7 +40,7 @@ Different activity combinations and *variants* are shown separately on the proce
 
 You can easily switch between different layers and associated metrics on the process map using the controls on the top left of the process map visual.
 
-![Process map metrics controls](file:///Map%20-%20metrics%20controls.png)
+![Process map metrics controls](https://user-images.githubusercontent.com/38796638/225129090-5212fa09-a3f1-4477-bb42-6b9654a3e389.png)
 
 The metrics for following layers visualize the same metric on both nodes and transitions. You can switch between the absolute value and relative ratio to the process level metric by clicking the % icon next to the selected metric. 
 
@@ -86,7 +86,7 @@ You'll get several prebuilt KPIs and visualizations to help you to understand yo
 
 | Default | Premium |
 | ------------- | ------------- |
-| ![Screenshot of the default 'Summary' tab.](file:///Lite%20report%20-%20Summary.png) | ![Screenshot of the Premium 'Summary' tab.](file:///Full%20report%20-%20Summary.png) |
+|![Screenshot of the default 'Summary' tab.](https://user-images.githubusercontent.com/38796638/225129266-e788c511-283e-43d2-b7c4-4675b05e332c.png)|![Full report - Summary](https://user-images.githubusercontent.com/38796638/225129366-5594f5a3-edc8-4dad-b348-c74ad976e45a.png)|
 
 :::image type="content" source="media/process-mining-visualize/analytics.png" alt-text="Screenshot of the 'Summary' tab.":::
 
@@ -108,7 +108,7 @@ These KPIs are the same metrics that you see at the top of your report.
 
 To enlarge the view so you can dig deeper into your process, select the **Map** tab.
 
-![Screenshot of the 'Map' tab.](file:///Lite%20report%20-%20Map.png)
+![Screenshot of the 'Map' tab.](https://user-images.githubusercontent.com/38796638/225128908-8868958b-81e0-4c98-ae3b-e9c2cfca07ab.png)
 :::image type="content" source="media/process-mining-visualize/map-tab.png" alt-text="Screenshot of the 'Map' tab.":::
 
 ### Filter pane
@@ -131,7 +131,7 @@ To select multiple activities or cases, you can also use **Ctrl** + **Click** .
 
 | Default | Premium |
 | ------------- | ------------- |
-| ![Screenshot of the filters dialog in Premium.](file:///Lite%20report%20-%20Filters.png) |  :::image type="content" source="media/process-mining-visualize/filter-panel.png" alt-text="Screenshot of the filters dialog.":::  |
+|![Screenshot of the filters dialog.](https://user-images.githubusercontent.com/38796638/225129543-979aad3a-434c-4cad-9e20-7dcb11719639.png)|  :::image type="content" source="media/process-mining-visualize/filter-panel.png" alt-text="Screenshot of the filters dialog in Premium.":::  |
 
 ### Visualizations
 
@@ -143,14 +143,14 @@ To select multiple activities or cases, you can also use **Ctrl** + **Click** .
 
 - **Cases**, **Activities**, and **Variants**: Shows number of cases, activities and variants based on the current filter settings.
 
-![Screenshot of the visualizations.](file:///Full%20report%20-%20Summary.png)
+![Screenshot of the visualizations.](https://user-images.githubusercontent.com/38796638/225129683-72458f86-9059-4d3b-97a6-315e4c681ad8.png)
 :::image type="content" source="media/process-mining-visualize/visualizations.png" alt-text="Screenshot of the visualizations.":::
 
 ### Time Analysis (Premium)
 
 The **Time Analysis (Premium)** view allows you to drill down into time bottlenecks by cases, variants, and activity. It also shows you average time spent per case and per variants ordered by the time spent.
 
-!['Time Analysis' view.'](file:///Full%20report%20-%20Time%20analysis.png)
+![Time Analysis' view.](https://user-images.githubusercontent.com/38796638/225129768-bd870347-a7e5-4cb0-92d0-4ca61f42416a.png)
 :::image type="content" source="media/process-mining-visualize/time-analysis.png" alt-text="Screenshot of the 'Time Analysis' view'.":::
 
 ### Variant DNA
