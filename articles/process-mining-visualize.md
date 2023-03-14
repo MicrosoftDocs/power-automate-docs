@@ -23,9 +23,9 @@ This topic explains metrics and visuals, and what they could tell you about your
 
 Some of the metrics and visuals are only available in setup with your own Power BI workspace. These metrics and visuals are clearly marked in the text as **Premium**. 
 To be able to access them and gain full insights, make sure you've completed steps in the following articles:
-- [Connect your Power BI workspace to process advisor](process-mining-pbi-workspace#connect-your-power-bi-workspace-to-process-advisor)
-- [Create your own custom Power BI workspace](process-mining-pbi-workspace#create-your-own-custom-power-bi-workspace)
-- [Load your process analytics in Power BI](process-mining-pbi-workspace#load-your-process-analytics-in-power-bi)
+- [Connect your Power BI workspace to process advisor](process-mining-pbi-workspace.md#connect-your-power-bi-workspace-to-process-advisor)
+- [Create your own custom Power BI workspace](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace)
+- [Load your process analytics in Power BI](process-mining-pbi-workspace.md#load-your-process-analytics-in-power-bi)
 
 After completing these steps, return to the analytics page of your process in process advisor.
 
