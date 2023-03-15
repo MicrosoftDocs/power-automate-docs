@@ -20,7 +20,7 @@ search.audienceType:
 
 # Install minit
 
-Before you can start using the Power Automate Process Mining desktop app, you need to install it from the process mining capability.
+Before you can start using the minit desktop app, you need to install it from the process mining capability.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -30,15 +30,21 @@ Before you can start using the Power Automate Process Mining desktop app, you ne
 
    :::image type="content" alt-text="Screenshot of the Install Minit button on the process advisor page." source="media/minit-install-a1.png":::
 
-1. Open the installer file when prompted, and then select **Install** to run the installer when prompted.
+1. Open the installer file when prompted, and then select **Install** to run the installer.
 
    Allow a few minutes for the installer to download and install the application files.
 
-1. When the minit welcome screen opens, select **NEXT STEP** to start the guided configuration wizard.
+1. When the minit welcome screen opens, select the preferred aplication language and click **Next step** to start the guided configuration wizard.
 
-1. By default, the installation process will store process mining data in a new **Minit** folder in the **Documents** folder in your OneDrive. Change the location if necessary, and then select **NEXT STEP**.
+1. In the next step accept the terms of use and confirm the choice of telemetry data collection, then select **Next step**.
 
-1. Select **APPLY AND MINE!** to finish the wizard.
+1. By default, the installation process will store process mining data in a new **Minit** folder in the **Documents** folder in your OneDrive. Change the location if necessary, and then select **Next step**.
+
+   > [!NOTE]
+   >
+   > If the selected folder has been used before, minit will let you choose whether you want to **Use** the content of the folder (e.g., data and settings from previous installation) or **Cleanup** the folder. Selecting **Cancel** will navigate you back and allow you to change the storage location.
+
+1. Select **Apply and Mine!** to finish the wizard.
 
 1. Sign in to minit with your work account.
 
