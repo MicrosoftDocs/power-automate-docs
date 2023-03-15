@@ -39,18 +39,11 @@ To add a layer:
 
 1. (If your process is in a blueprint format) Select **BPMN** and then select a properly formatted BPMN diagram. The BPMN diagram will be transformed and compared to the currently open view.
 
-<!--I don't see the next two sections:
-
 ## Changing the view
 
-List of selected layers is shown in the bottom right corner. The individual layers can be switched by pressing the layer number. Select (**-**) to remove the layer from the list.
+List of all available layers is shown in the **Compare** box. The individual layers can be switched on and off by checking or unchecking them. The currently open view and the **Compare** layer are switched on by default. Unchecking the currently open view will highlight those activities and transitions which are common in both compared layers. Select (**-**) to remove the layer from the list.
+
 
 :::image type="content" alt-text="Screenshot of changing the view." source="media/comparison2.png":::
 
-## Changing comparison visualization
-
-Use the buttons below the displayed map to show or hide activities and edges of the compared views. Use the button in the middle to activate/deactivate the comparison function. Each activity and edge of the layer/view has an associated color. Activities and edges that form an intersection of the compared views are colored as the comparison key.
-
-:::image type="content" alt-text="Screenshot of changing the visualization comparison." source="media/comparison3.png":::
-
--->
+Each layer/view has an associated color. Activities and edges that form an intersection of the compared layers/views are colored as the **Compare** key.
