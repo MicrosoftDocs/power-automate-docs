@@ -19,13 +19,13 @@ search.audienceType:
 
 # Statistics overview
 
-This article provides an overview of the properties of the process undergoing analysis. This includes the information about the process through summary charts and statistics. Statistics are shown in the top panel. The the listings of specific records displayed in the statistics appear in the bottom panel.
+This article provides an overview of the properties of the process undergoing analysis. This includes the information about the process through summary charts and statistics. Statistics are shown in the top panel. The listings of specific records displayed in the statistics appear in the bottom panel.
 
 The statistics always reflect the data after filters, if any, have been applied.
 
 ## Types of statistics
 
-To open the statistics screen, select **Statistics** on the left panel in the **Processes** screen. The following types of statistics are available:
+To open the statistics screen, select **Statistics** on the left panel in the opened view. The following types of statistics are available:
 
 - **Case overview:** Statistics per single cases with case level metrics. To learn more, go to [Case overview statistics](case-overview-statistics.md).
 
@@ -63,7 +63,7 @@ To choose specific resources:
 
 1. Open the **Attribute value** list by selecting the blank **values** field.
 
-1. Select the associates names.The names are added to the **values** field.
+1. Select the associates names. The names are added to the **values** field.
 
 1. Select **Apply**.
 
@@ -83,7 +83,7 @@ To select case duration:
 
 ## Filtering in statistics charts
 
-You can filter selected values in the summary charts in the statistics of process instances and in the statistics of attributes by selecting each column. When you make a selection, the filter screen will open with the default values of the filter.
+You can filter selected values in the summary charts in the statistics of process instances and in the statistics of attributes by selecting each column. When you make a selection, the filter screen will open with the preset values of the filter.
 
 :::image type="content" alt-text="Screenshot of the Filtering screen." source="media/chart-filtering.png":::
 

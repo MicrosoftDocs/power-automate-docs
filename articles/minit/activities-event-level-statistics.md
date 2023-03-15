@@ -61,20 +61,20 @@ The metrics in the following table are in the chart and the table of activities.
 | Self-loop (%) | Percentage of self-loops on an activity relative to the total occurrence of that activity in the process |
 | Loop count | Number of times an activity is involved in a loop |
 | Loop (%) | Percentage of involvements of an activity in a loop relative to the total occurrence of that activity in the process |
-| Rework count | Number of times an activity involved [rework](rework-metrics.md) |
+| Rework count | Number of times an activity involved in [rework](rework-metrics.md) |
 | Rework (%) | Percentage of involvements of an activity in rework relative to the total occurrence of that activity in the process |
 | Loop inflow | Value of loop inflow of an activity in the process |
 | Loop inflow (%) | Percentage of loop inflow of an activity relative to the total occurrence of that activity in the process |
 | Loop outflow | Value of loop outflow of an activity in the process |
 | Loop outflow (%) | Percentage of loop outflow of an activity relative to the total occurrence of that activity in the process |
 | Net loop gain | Value of net loop gain of an activity in the process |
-| Net loop gain percentage | Percentage of net loop gain of an activity relative to the total occurrence of that activity in the process |
+| Net loop gain (%) | Percentage of net loop gain of an activity relative to the total occurrence of that activity in the process |
 
-<!--I don't see this
 Along with these standard statistics, the chart displays all event-level custom metrics that have the continuous output data type.
 
 The table of activities displays event-level standard and custom metrics. In the table, all event-level custom metrics are available, whether their output data type is discrete or continuous.
 
+<!--I don't see this
 You can't add metrics to the table. However, you can hide those you don't need to view. Select the hamburger menu at the right side of the table header row, and then select or clear the selection of columns to customize your view of the summary.
 
 :::image type="content" source="media/activity-stats-table-columns-2.png" alt-text="Screenshot of the table column selection panel.":::

@@ -19,7 +19,7 @@ search.audienceType:
 
 # Understand process animation controls
 
-This article explains the meaning of the various changes (colors, numbers, and more) in the controls for your simulated process during animation play.
+This article explains the meaning of the various changes (colors, numbers, and more) in the controls for your process during animation play.
 
 ## Display the significance of values
 
