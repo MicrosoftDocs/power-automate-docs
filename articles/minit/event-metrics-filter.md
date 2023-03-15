@@ -19,7 +19,7 @@ search.audienceType:
 
 # Event metrics filter
 
-Use the event level filter to filter events based on various metrics. Only event metrics are applicable here.
+Use this event level filter to filter events based on various metrics. Only event metrics are applicable here.
 
 :::image type="content" alt-text="Screenshot and the custom metrics filter." source="media/event-metrics-filter.png":::
 

@@ -27,7 +27,7 @@ In the **Values**, there's the visualization of the dependence of the number of 
 
 ## Variant mining attribute
 
-Variants may be calculated using **activityName** (default one) or any mining attribute (any non-case level attribute). Choosing a variant mining attribute in filters doesn't depend on, nor modifies the selected mining attribute on the process map.
+Variants may be calculated using activity attribute (default one) or any mining attribute (any non-case level attribute). Choosing a variant mining attribute in filters doesn't depend on, nor modifies the selected mining attribute on the process map.
 
 The process map can be calculated using the activity attribute, while data may be filtered by the most common variants (scenarios) based on the resource attribute.
 
@@ -43,5 +43,5 @@ The following example show the results of one variant containing 50% of all case
 
 :::image type="content" alt-text="Screenshot of one variant selected." source="media/variant-filter-example-2.png":::
 
-To select a discontinuous group of variants or to select variants by their number, you can select specific variants on the right. Select a variant to select/remove it from the list. To make the selection of variants easier, use the selection buttons to select all variants, to cancel the selection of all variants, and to invert the selected variants.
+To select a discontinuous group of variants or to select variants by their number, you can select specific variants on the right. Select a variant to select/remove it from the list. To make the selection of variants easier, use the selection buttons to select all variants, and to cancel the selection of all variants.
 

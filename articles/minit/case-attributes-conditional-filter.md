@@ -34,11 +34,9 @@ The **Attributes (conditional)** filter adds conditions to the **Attribute** fil
 
     If you select **Metric** or **Process Metric**, you'll need to complete additional fields. To learn more, go to [Process metric](#process-metric) in this article.
 
-1. In the **and at the same time** list, select a criteria type, either **Attribute**, **Metric**, or **Process Metric**.
+1. In the next dropdown menu, select an attribute or metric.
 
-1. In the next dropdown menu, select an attribute.
-
-1. To fill in the **holds any of the values** field, select the **Expression** tab, select an operator, and enter a value.
+1. Based on the characteristics of the selected attribute or metric, complete the filtering criteria using the offered controls or use the **Expression** tab, select an operator, and enter a value.
 
 1. Select **Apply**.
 

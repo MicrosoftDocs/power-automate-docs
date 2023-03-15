@@ -19,7 +19,7 @@ search.audienceType:
 
 # Export and import filters
 
-Minit offers an option to export existing filters in the view and re-use them in another view or process. To export or import filters, select (**...**) menu at the top.
+Minit offers an option to export existing set of filters in the view and re-use them in another view or process. To export or import filters, select (**...**) menu at the top.
 
 :::image type="content" alt-text="Screenshot of the export filters option." source="media/import-export-filter.png":::
 
@@ -47,7 +47,7 @@ In some cases, filters don't depend on the actual data structure but on the refe
 
 ## Attribute references
 
-A filter using references to process attributes requires the user mapping of which attribute in the active process will be used instead of the original one saved in the filter. For example, the original attribute filter might be using **"CostCenter Code"** attribute. Such attribute doesn't exist in the current process, but if you're using mapping to **"CostCenter.Code"** attribute, the imported filter will be valid using reference to new attribute.
+A filter using references to process attributes requires the user mapping of which attribute in the active process will be used instead of the original one saved in the filter. For example, the original attribute filter might be using **"CostCenter Code"** attribute. Such attribute doesn't exist in the current process, but if you're using mapping to **"CC.Code"** attribute, the imported filter will be valid using reference to new attribute.
 
 If straightforward mapping between attributes isn't possible, the option to delete attribute reference is available. After such import, the filter will be saved in the view with a missing reference to any attribute.
 

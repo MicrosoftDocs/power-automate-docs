@@ -33,10 +33,10 @@ In the same way you can create a resource-based condition, for example, if you w
 
 1. Select the **on a starting event of the single case holds any of the values** field, and then select the attribute value for the end event in the **List** tab to the right. Your selections appear in the field.
 
-    Only the values that are present in the starting events of the process are available for selection. If the attribute values of the starting event are of no interest, all values should remain active.
+    Only the values that are present in the starting events of the process are available for selection. If the attribute values of the starting event are of no interest, all values should remain active/selected.
 
 1. Select the **and on a finishing event of the single case holds any of the values** field, and then select the attribute value for the end event in the **List** tab to the right. Your selections appear in the field.
 
-    Only the values that are present in the finishing events of the process are available for selection. If the attribute values of the finishing event are of no interest, all values should remain active.
+    Only the values that are present in the finishing events of the process are available for selection. If the attribute values of the finishing event are of no interest, all values should remain active/selected.
 
 
