@@ -111,3 +111,4 @@ When analyzing the process by means of filters, you can always see the size of t
 
 Data size indicators provide information about the data set - number of filtered events and cases. The indicators are located on the bottom of the application on each screen of an open view. 
 
+![Filtering indicators](https://user-images.githubusercontent.com/38796638/225406029-c82f5854-9027-4c3d-829a-9e6715e7b44f.png)
