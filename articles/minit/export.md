@@ -23,7 +23,7 @@ Export process data to an external file. After you choose your export type, you 
 
 ## Choose export options
 
-1. On the **Process** menu, select **Export**.
+1. On the left menu in the open view, select **Export**.
 
 1. In the **Export as** dropdown menu, select **Events** or **Cases**.
 
@@ -43,10 +43,10 @@ The options in the following table are available for your export file.
 
 | Option             | Description      |
 |--------------------|------------------|
-| Apply filters      | Specify if preset filters should be applied to the process before export. If the filters aren't applied, all records in the process will be   exported.    |
+| Apply filters      | Specify if set filters in the currently open view should be applied to the process before export. If the filters aren't applied, all records in the process will be   exported.    |
 | Export type        | Select either **Cases** or **Events**. When you export events, the entire process log is exported. When you export cases, the selected information about cases without respective individual   events is exported.   |
 | Export as          | Share specific findings in the process, for example when filtering is   applied. Data can be imported again by another user who has the resource file  (export). The following formats are supported: **CSV** (comma separated records), **XES** (Extensible Event Stream), and **MXML** (Mining eXtensible Markup Language). |
-| Export as a ZIP    | Compress the exported file into ZIP format. If you select this, select the type of compression  to use. Choose from among **Optimal**, **Fastest**, or **No compression**.     |
+| Export as ZIP    | Compress the exported file into ZIP format. If you select this, select the type of compression  to use. Choose from among **Optimal**, **Fastest**, or **No compression**.     |
 | Delimiter          | Enter a record separator When exporting to the CSV format.     |
 | (For exporting cases) Statistics to export | Select which metrics and attributes will be exported with individual cases. The attributes exported with the case must be imported as the case-level attributes.      |
 
