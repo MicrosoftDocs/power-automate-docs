@@ -23,7 +23,7 @@ Find hidden connections in your data with root cause analysis (RCA) in minit.
 
 To create a new RCA, create an analysis.
 
-1. On the **Processes** screen, select **Root cause analysis** on the left panel.
+1. In the open view, select **Root cause analysis** on the left panel.
 
 1. In the **Metric** dropdown menu, select a metric.
 
@@ -63,11 +63,11 @@ If the tree is too large and can't be navigated easily, you can open the **Diagr
 >
 > When you find the correct part of dataset that you need to explore further, you can convert the rules that lead up to that node into a set of filters. 
 >
-> If you do this, the original analysis becomes view only, as the data underlying has changed (filters applied).
+> If you do this, the original analysis becomes view only, as the underlying data has changed (filters applied).
 
 ### Use categorical main metric
 
-If you want to explore why some cases have gone one way or another, it;s easy to analyze this with RCA using a custom metric returning string values.
+If you want to explore why some cases have gone one way or another, it's easy to analyze this with RCA using a custom metric returning string values.
 
 For example, if you want to analyze why some cases end in some activities and others in different ones, you can use the formula `LAST(CaseEvents, Activity)` as your custom metric.
 
@@ -77,7 +77,7 @@ The same can be achieved with `FIRSTIF(CaseEvents, Activity == "Check order numb
 
 For other similar use cases, you can use custom metrics to get event attributes on a case level so it can be used in RCA. To do this, get the value of an event attribute Y at an activity X. This is done by using custom metric `FIRSTIF(CaseEvents, Activity== "X", Y)`.
 
-All of these metrics, can be also used in influenced by.
+All of these metrics, can be also used in **Influenced by**.
 
 To learn more about custom metrics, go to [List of other operations](other-operations.md).
 
