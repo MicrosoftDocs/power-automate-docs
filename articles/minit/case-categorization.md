@@ -62,7 +62,7 @@ Select which activities are finishing activities. Cases that end in one of these
 
 ### Use the simple mode
 
-In simple mode, select an activity in the **List** tab. Alternatively, search for an activity in the **Search in attribute values** field and then select it. You can also select the **Expression** tab and use the comparison dropdown menu and value field to define an activity in terms of an expression.
+In simple mode, select an activity (or multiple activities) in the **List** tab. Alternatively, search for an activity in the **Search in attribute values** field and then select it. You can also select the **Expression** tab and use the comparison dropdown menu and value field to define an activity in terms of an expression.
 
 :::image type="content" source="media/case-cat-finished-simple.png" alt-text="Screenshot of categorizing Finished cases in simple mode.":::
 
@@ -70,13 +70,13 @@ In simple mode, select an activity in the **List** tab. Alternatively, search fo
 
 When **Advanced mode** is turned on, you have more options:
 
-- Select a filter in the **Add filter** dropdown menu to specify attributes that define a finishing activity.
+- Select a filter in the **Add filter** dropdown menu to specify attributes that define a finishing activity or use any combination of filters.
 
 - Remove all filters.
 
 - Use the import and export filters by selecting (**...**).
 
-- Set the case to end events on or off.
+- Switch individual filters on or off.
 
 :::image type="content" source="media/case-cat-finished-advanced.png" alt-text="Screenshot of categorizing Finished cases in advanced mode.":::
 
@@ -104,21 +104,21 @@ The case is evaluated in sequence. If it satisfies the conditions for **Finished
 
 ### Categorize cases flagged as Incompletely imported
 
-Cases that don't start where they should are flagged as **Incompletely imported**. This can happen when the export from the original database split the case in half and only included the latter part of the case activities.
+Cases that don't start where they should are flagged as **Incompletely imported**. This can happen when the export from the original data source split the case in half and only included the latter part of the case activities.
 
 To clear the **Incompletely imported** flag, select which activities are starting activities.
 
-1. In simple mode, select an activity in the **List** tab. Alternatively, search for an activity in the **Search in attribute values** field and then select it. You can also select the **Expression** tab and use the comparison dropdown menu and value field to define an activity in terms of an expression.
+1. In simple mode, select an activity (or multiple activities) in the **List** tab. Alternatively, search for an activity in the **Search in attribute values** field and then select it. You can also select the **Expression** tab and use the comparison dropdown menu and value field to define an activity in terms of an expression.
 
 1. When **Advanced mode** is turned on, you have more options:
 
-    - Select a filter in the **Add filter** dropdown menu.
+    - Select a filter in the **Add filter** dropdown menu. You can use any combination of filters.
 
     - Remove all filters.
 
     - Use the import and export filters by selecting (**...**).
 
-    - Set the case to end events on or off.
+    - Switch individual filters on or off.
 
 ## Use case categories
 

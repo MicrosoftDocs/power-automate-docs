@@ -70,8 +70,6 @@ A view tile contains the following information:
 
 - A lock icon if the view is private to you only, No lock indicates the view is public.
 
-- The number of comments in the view discussion, if any.
-
 ## Manage views
 
 To open a view, select its tile. If the view isn't updated to the process version, the app displays a warning.
@@ -90,13 +88,13 @@ In the **My processes** view, you'll see icons and a tile that allow you to mana
 
 - **Icons**
 
-    - **Publish to Power BI:** If you have Power BI installed, publish your process to Power BI.
+    - **Publish to Power BI:** Publish changes to the view settings and filters back into Power BI report. This will trigger re-analysis of the process.
 
-    - [**Process context:**](process-context.md) Display, create, and change custom metrics, map hierarchies, and other view settings.
+    - [**Process context:**](process-context.md) Display, create, and change custom metrics, map hierarchies, and other process settings.
 
     - **Process info:** Display information about the attributes of the process model data and its refresh history.
 
 - **Tile**
 
-    - **Create new view:** Open the process in its original state so that you can change the view settings and save them as a new view.
+    - **Create new view:** Open the process in its default state so that you can change the view settings, apply filters and save them as a new view.
 
