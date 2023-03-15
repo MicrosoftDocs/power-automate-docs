@@ -35,16 +35,16 @@ Before you can start using the minit desktop app, you need to install it from th
    Allow a few minutes for the installer to download and install the application files.
 
 1. When the minit welcome screen opens, select the preferred application language and click **Next step** to start the guided configuration wizard.
-   
-     ![Selecting application language](https://user-images.githubusercontent.com/38796638/225323801-2ad2fb68-dbdc-40a5-ab27-5e4aaa87160d.png)
+
+   ![Selecting application language](https://user-images.githubusercontent.com/38796638/225323801-2ad2fb68-dbdc-40a5-ab27-5e4aaa87160d.png)
 
 1. In the next step accept the terms of use and confirm the choice of telemetry data collection, then select **Next step**.
-   
-     ![Accepting terms of use](https://user-images.githubusercontent.com/38796638/225324015-b250d378-cfa0-40e2-b253-921809d15a90.png)
+
+   ![Accepting terms of use](https://user-images.githubusercontent.com/38796638/225324015-b250d378-cfa0-40e2-b253-921809d15a90.png)
 
 1. By default, the installation process will store process mining data in a new **Minit** folder in the **Documents** folder in your OneDrive. Change the location if necessary, and then select **Next step**.
-   
-     ![Selecting data storage location](https://user-images.githubusercontent.com/38796638/225324736-a998ee4f-f2eb-4a5c-8b89-6fc1c5d49f79.png)
+
+   ![Selecting data storage location](https://user-images.githubusercontent.com/38796638/225324736-a998ee4f-f2eb-4a5c-8b89-6fc1c5d49f79.png)
 
    > [!NOTE]
    >
@@ -53,8 +53,8 @@ Before you can start using the minit desktop app, you need to install it from th
    > ![Use or cleanup data storage location](https://user-images.githubusercontent.com/38796638/225324930-56237c13-a28c-4ded-9575-aed46edb67f7.png)
 
 1. Select **Apply and Mine!** to finish the wizard.
-   
-     ![Finish the configuration wizard](https://user-images.githubusercontent.com/38796638/225324326-71dc5ad8-829c-41e3-a911-e01177a17160.png)
+
+   ![Finish the configuration wizard](https://user-images.githubusercontent.com/38796638/225324326-71dc5ad8-829c-41e3-a911-e01177a17160.png)
 
 
 1. Sign in to minit with your work account.
