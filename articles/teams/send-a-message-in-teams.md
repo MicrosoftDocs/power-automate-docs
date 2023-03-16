@@ -5,7 +5,7 @@ author: hamenon-ms
 
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 08/02/2021
+ms.date: 01/12/2023
 ms.author: hamenon
 ms.reviewer: gtrantzas
 ---
@@ -21,15 +21,18 @@ This article covers all the different ways in which you can send a message in Te
 For the purposes of this document, we're using a scenario where a flow is used to notify a Channel or a Group chat, but the same principles can be used to apply to any flow where the **Post a message in a chat or channel** is used.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-2. Select **My flows** > **New** > **Automated cloud flow**.
-3. Enter a name for your flow.
-4. Select the **When a file is created (properties only)** trigger.
 
-   ![When a new file is created in a folder trigger](../media/post-a-message/sharepoint-trigger.png)
+1. On the left pane, go to **Create** > **Build your own**.
 
-1. Select **Create**.
+1. Under **Choose a connector**, search for **SharePoint**, and select the appropriate card.
 
-1. Set up your trigger by choosing a SharePoint site and Folder ID that you want to monitor
+1. Select the **When a file is created (properties only)** trigger.
+
+1. Select **Next**, and then **Skip to building your own flow** to go directly to the designer.
+
+1. In the designer, set up your trigger by choosing a SharePoint site and folder ID that you want to monitor.
+
+    ![When a new file is created in a folder trigger](../media/post-a-message/sharepoint-trigger.png)
 
 1. Select the + New Step to add an action to this flow, and search for the **Post a message in a chat or channel** action and select it
 

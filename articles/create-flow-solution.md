@@ -1,5 +1,5 @@
 ---
-title: Learn how to create solution-aware flows
+title: Create a cloud flow in a solution
 description: Learn how to create solution-aware cloud flows.
 services: ''
 suite: flow
@@ -15,7 +15,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/22/2022
+ms.date: 02/06/2023
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.app: 
@@ -37,9 +37,9 @@ You need to have at least one solution before you can create a solution-aware fl
 
 1. Sign into [Power Automate](https://make.powerautomate.com).
 
-1. Select **Solutions** from the navigation bar.
+1. On the menu to the left, select **Solutions**.
 
-   :::image type="content" alt-text="Screenshot of the left navigation bar with the Solutions option hightlighted." source="./media/create-flow-solution/select-solutions-from-left-nav.png":::
+   :::image type="content" alt-text="Screenshot of the left navigation bar with the Solutions option highlighted." source="./media/create-flow-solution/select-solutions-from-left-nav.png":::
 
 1. Select the solution in which you'll create your flow.
 
@@ -85,11 +85,14 @@ You need to have at least one solution before you can create a solution-aware fl
    :::image type="content" alt-text="Screenshot of your flow inside the solution." source="./media/create-flow-solution/new-flow-inside-solution.png":::
 
 ## Find a solution-aware cloud flow
-Solution-aware cloud flows can be found either via the **My flows** lists or via **Solutions**.
+
+Solution-aware cloud flows can be found either in the **My flows** lists or in **Solutions** on the left navigation pane.
 
 ### Find a solution-aware cloud flow with 'My flows'
 
-1. In [Power Automate](https://make.powerautomate.com), select **My flows** from the navigation bar on the left side.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. On the left navigation pane, select **My flows**.
 
 1. Find the flow that you want to edit.
 
@@ -99,16 +102,18 @@ Solution-aware cloud flows can be found either via the **My flows** lists or via
     The **Shared with me** tab shows the following solution cloud flows.
 
     - Flows you co-own.
-    
+
     - Flows that are owned by a Dataverse team in which you're a member.
-   
+
     - Flows that are co-owned by a Dataverse team in which you're a member
 
 If you're the owner of a solution cloud flow, you can always find it on the **Cloud flows** tab. If you have the 'run only' permission to a flow, you'll only see that flow on the **My flows** tab if you're an owner or a co-owner too.
 
 ### Find a solution-aware cloud flow via Solutions
 
-1. Sign into [Power Automate](https://make.powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. On the menu to the left, select **Solutions**.
 
 1. Select the solution that contains the flow you want to edit.
 
@@ -120,7 +125,9 @@ The **Objects** tab of a solution shows all the solution objects in the solution
 
 ## Add an existing cloud flow into a solution
 
-1. Sign into [Power Automate](https://make.powerautomate.com), and then select **Solutions** from the navigation bar on the left side.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. On the menu to the left, select **Solutions**.
 
 1. Select the solution that you want to add a cloud flow into.
 
@@ -134,12 +141,13 @@ The **Objects** tab of a solution shows all the solution objects in the solution
 
 1. Select **Add**.
 
-## Learn more
+### See also
 
-* [Create a solution](./overview-solution-flows.md)
-* [Export a solution](./export-flow-solution.md)
-* [Import a solution](./import-flow-solution.md)
-* [Edit a solution-aware flow](./edit-solution-aware-flow.md)
-* [Remove a solution-aware flow](./remove-solution-aware-flow.md)
+- [Add canvas apps and cloud flows to a solution by default](/power-apps/maker/canvas-apps/add-app-solution-default)
+- [Create a solution](./overview-solution-flows.md)
+- [Export a solution](./export-flow-solution.md)
+- [Import a solution](./import-flow-solution.md)
+- [Edit a solution-aware flow](./edit-solution-aware-flow.md)
+- [Remove a solution-aware flow](./remove-solution-aware-flow.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
