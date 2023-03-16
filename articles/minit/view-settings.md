@@ -1,13 +1,13 @@
 ---
 title: View settings
-description: Learn how to define various settings valid for the current process in the Power Automate Process Mining desktop app.
+description: Learn how to define various settings valid for the current process in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 search.app:
@@ -19,7 +19,7 @@ search.audienceType:
 
 # View settings
 
-The View settings panel enables defining various settings valid for the current process view. This panel is easily accessible from any Minit screen such as Process Map, Variants, Statistics, and others. The View setting icon can be found in the bottom left corner, above the Filters icon. With no changes applied (for example, with default settings), the icon remains grey.
+The View settings panel enables defining various settings valid for the current process view. This panel is easily accessible from any minit screen. The View setting icon can be found in the bottom left corner, above the Filters icon. With no changes applied (for example, with default settings), the icon remains grey.
 
 :::image type="content" alt-text="Screenshot of the View settings icon." source="media/image001-v48.png":::
 

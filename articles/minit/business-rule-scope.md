@@ -1,13 +1,13 @@
 ---
 title: Business rule scope 
-description: Learn about the mandatory field Scope in business rule definition in the Power Automate Process Mining desktop app.
+description: Learn about the mandatory field scope in business rule definition in minit.
 author: maslejka
 contributors:
   - maslejka
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: mmaslejova
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -20,7 +20,19 @@ search.audienceType:
 
 # Business rule scope
 
-You must select a **Scope** when you define a business rule. It determines the scope to which the output result is delivered.
+Select a **Scope** when you define a business rule. It determines the scope to which the output result is delivered.
+
+## Event scope
+
+Event scope provides results per activity. The data element over which the formula is calculated is events. The default output is the number of events that fit into the business rule data set.
+
+The calculation result displays in the **Statistics** and **Process map** screens. In the detail view for a business rule, the results display per activity. Each activity is categorized according to the defined severities. In the process map, the results display per activity, in the same way as in the detailed view for a single business rule in Statistics.
+
+## Case scope
+
+Case scope provides a single result per business rule data set. The data element over which the formula is calculated is cases. The default output is the number of cases that fit into the business rule data set.
+
+The calculation result display in the **Statistics** and **Process map** screens. The process map highlights all activities and edges that belong to any of the cases in the business rule.
 
 ## Process scope
 
@@ -28,38 +40,14 @@ Process scope is the most generic. It provides a single result per business rule
 
 For a process scope, define the custom result formula with an explicit calculation context to determine over which data elements the formula is calculated&mdash;events, edges, or cases. The default business rule result&mdash;count of elements&mdash;isn't available.
 
-The calculation result isn't relevant to activities and edges. It's displayed only in the Statistics module.
+The calculation result isn't relevant to activities and edges. It displays in the **Statistics** screen only.
 
 An example of process scope is average case or event duration. When it's longer than two days, the value is assigned the category flag **Error**.
 
-## Case scope
-
-Case scope is similar to process scope, in that it provides a single result per business rule data set. The data element over which the formula is calculated is cases. The default output is the number of cases that fit into the business rule data set.
-
-The calculation result is displayed in both the Statistics module and the process map. The process map highlights all activities and edges that belong to any of the cases in the business rule.
-
-An example of case scope is cases without an approval process, as shown in the following screenshot:
-
-:::image type="content" alt-text="Screenshot of cases without an approval process in the process map." source="media/brcasescopepm.png":::
-
-## Event scope
-
-Event scope provides results per activity. The data element over which the formula is calculated is events. The default output is the number of events that fit into the business rule data set.
-
-The calculation result is displayed in the Statistics module and in the process map.
-
-An example of event scope is average duration per activity.
-
-:::image type="content" alt-text="Screenshot of the average duration per activity." source="media/image-62.png":::
-
-In the detail view for a business rule, the results are displayed per activity. Each activity is categorized according to the defined severities.
-
-:::image type="content" alt-text="Screenshot of a detail view for a single business rule." source="media/image-63.png":::
-
-In the process map, the results are displayed per activity, in the same way as in the detailed view for a single business rule in Statistics.
-
-:::image type="content" alt-text="Screenshot of the process map result per activity." source="media/breventscopepm.png":::
-
 ## Edge scope
 
-Edge scope is the same as event scope, except that results are provided per edge. The calculation result is displayed in the Statistics module and the process map.
+Edge scope is the same as event scope, except that results are provided per edge. The calculation result displays in the **Statistics** and **Process map** screens.
+
+### See also
+
+[Business rules overview](business-rules.md)
