@@ -21,7 +21,7 @@ search.audienceType:
 
 Use this filter to expose cases with conflict of interests. A typical example is the violation of rules for assigning roles in performing critical tasks.
 
-By means of the filter, you can specify two sets of events which should and shouldn't have the same value of an attribute. All events from the first group are always compared with all events from the second group. If there is the intersection of the two groups, the filter result will always return all such events.
+By means of the filter, you can specify two sets of events which should happen in the process in given order and should or shouldn't have the same value of an attribute. All events from the first group are always compared with all events from the second group. If there is the intersection of the two groups, the filter result will always return all such events.
 
 The screenshot shows a situation where this filter is used to find out if there's been a customer who was charged by the same person as the one who actually collected payment. For this purpose, the filter is set to select all cases where these two activities occurred and were carried out by the same person.
 
