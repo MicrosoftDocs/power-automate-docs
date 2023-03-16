@@ -23,7 +23,7 @@ The timeframe filter lets you specify time related options for your analysis. On
 
 1. On the left panel, select your timeframe filter.
 
-1. On the **Level** row, select the time frame of interest in your analysis by selecting number.
+1. On the **Level** row, select the detail level of the chart by selecting number.
 
 1. On the center panel, specify you filter results.
 

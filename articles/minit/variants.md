@@ -23,7 +23,7 @@ With process variants, you can accurately explore all possibilities of how a pro
 The quantity of variants makes it possible to accurately identify the most frequent scenarios occurring in the process. This way, you can easily and quickly determine which process scenarios require your attention.
 
 The careful examination of process variants can help you uncover various scenarios and situations that occur in the process. With filtering by variants, the analyzed process can be easily restricted to only those parts or scenarios that are of interest for achieving the final objective of the analysis.
-A process performance variant is an organized sequence of activities that corresponds to the course of at least one case in the process under analysis. All cases in the process in which the same activities are performed in the same sequence fall under one variant.
+A process variant is an organized sequence of activities that corresponds to the course of at least one case in the process under analysis. All cases in the process in which the same activities are performed in the same sequence fall under one variant.
 
 The decisive condition for determining the respective variant and the arrangement of events is the **event start** time.
 
@@ -37,7 +37,7 @@ Process variants are among the results of process mining. They're labeled by a n
 
 ## Components of the Variants screen
 
-To open the **Variants** screen, go to the **Processes** screen and select **Variants** on the left menu.
+To open the **Variants** screen, go to the open view and select **Variants** on the left menu.
 
 :::image type="content" alt-text="Screenshot of the Variants DNA." source="media/image-17a.png":::
 
@@ -69,6 +69,8 @@ The variant DNA view allows you to:
 - Get a visual overview of all the process variants found in the current open process view
 
 - Get a glimpse of process characteristics and variations of the process
+
+- Get a glimpe of process standardization level
 
 - Identify differences or repeated patterns
 
@@ -104,11 +106,11 @@ Get a map of activities on the left, where you can observe the duration of activ
 
 Explore each issue individually in the **Case table** tab. In the center panel, there's a list of all cases under the variant sorted by their case ID. Each issue can be explored individually.
 
-To see the details of its development, select a case number in the **Case ID** column. The case and variant of the selected cases appear on the right column.
+To see the details of its development, select a case number in the **Case ID** column. The events of the selected case appear on the right column.
 
 ### Cases gantt tab
 
- development of the case on a timeline in the **Cases gantt** tab. The following information about each case is available:
+Development of the case on a timeline in the **Cases gantt** tab. The following information about each case is available:
 
 <!--this list doesn't correspond with what I see.-->
 
@@ -134,7 +136,7 @@ Change the setting in any panel or tab in the **Variants** screen.
 
 1. Choose from **General settings**, **Duration settings**, **Activity label**, and **Calendar settings**.
 
-    By default, each activity has its own color. Use the **Activity label to display the same color for all activities with the same label.
+    By default, each activity has its own color. Use the **Activity label** to display the same color for all activities with the same label.
 
 1. Select **Save**.
 

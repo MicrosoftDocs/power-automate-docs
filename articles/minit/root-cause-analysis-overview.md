@@ -41,7 +41,7 @@ Then, we sort all splits by this score and the best splits are taken from the be
 
 ## RCA example
 
-In this example, we want to see the root cause behind the case duration. In the data, we have case level attributes *supplier country*, *supplier city*, *material*,*total amount*, and *cost center*. The average case duration is 46 hours.
+In this example, we want to see the root cause behind the case duration. In the data, we have case level attributes *supplier country*, *supplier city*, *material*, *total amount*, and *cost center*. The average case duration is 46 hours.
 
 By looking at each value of each attribute separately, we can see that the highest influencer of case duration is when *supplier city* is *Graz*, which on average increases the duration of the case by additional 15 hours. From this initial analysis, we can see that the other values of attributes influence the target metric far less. However, when we compute the tree model, we can see that the computation above is misleading (as in the following screenshot).
 
@@ -61,6 +61,6 @@ In the same tree, we can see that if we have another material than aluminium, i
 
 From this, we can see that the initial statistics are misleading because Graz is performing poorly when the material is aluminium, It is, however, performing above average when the material is other than aluminium and is completely opposite for other cities.
 
-**Case Duration Influencer** takes into account only one value and sometimes can be misleading. RCA takes into account combinations of them to give you more insights into your process.
+[**Case Duration Influence**](statistics.md#case-duration-influence) statistics takes into account only one value and sometimes can be misleading. RCA takes into account combinations of them to give you more insights into your process.
 
 

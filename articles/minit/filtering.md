@@ -19,7 +19,7 @@ search.audienceType:
 
 # Filtering overview
 
-Use filters to adjust which cases will be included in the process analysis. For example, it use filters to define only a certain time period, only specific resources or scenarios in the process, or modify cases by excluding activities that aren't important for the current analytical problem. Filtering can also be helpful in identifying and focusing on the problematic parts of the process.
+Use filters to adjust which cases will be included in the process analysis. For example, you can use filters to define only a certain time period, only specific resources or scenarios in the process, or modify cases by excluding activities that aren't important for the current analytical problem. Filtering can also be helpful in identifying and focusing on the problematic parts of the process.
 
 ## Filter components
 
@@ -63,11 +63,11 @@ Case level filter types:
 
 Case and event level filters can be combined to form a single combined filtering criteria in a view. There are filters that have the same syntax, but different semantics based on the type. For example, the **Event attributes** filter can be applied on the event and case level.
 
-The combined filter criteria order is defined as criteria are added. The order is modifiable inside of the filter category by using drag-and-drop. Filters are evaluated in the final defined top-down order. Input for the first filter is the whole data set. Its output&mdash;filtered data set&mdash;serves as input for the next filter. The output (filtered) data set from the last filter in the order defines the process view.
+The combined filter criteria order is defined as criteria are added. <!--The order is modifiable inside of the filter category by using drag-and-drop. -->Filters are evaluated in the final defined top-down order. Input for the first filter is the whole data set. Its output&mdash;filtered data set&mdash;serves as input for the next filter. The output (filtered) data set from the last filter in the order defines the process view.
 
 >[!NOTE]
 >
->Event filters are always applied first, before any case filter is applied to the resulting dataset. You can't mix order between event level and case level filters. Ordering is modifiable only within its group.
+>Event filters are always applied first, before any case filter is applied to the resulting dataset. You can't mix order between event level and case level filters. <!--Ordering is modifiable only within its group.-->
 
 Filters can be exported and imported to be re-used in different views or processes. To learn more, go to [Export and import filters](filters-export-import.md).
 
@@ -77,7 +77,7 @@ A filter is a convenient tool in a process analysis, as we can use it to focus o
 
 To add a filter:
 
-1. On the **Processes** screen, select **Filter** in the lower-left corner below the menu.
+1. In the open view, select **Filter** in the lower-left corner below the menu.
 
 1. On the menu at the top, select the **Add filter** dropdown menu.
 
@@ -85,11 +85,9 @@ To add a filter:
 
 1. On the **Filtering** screen, select the options for the filter.
 
+1. If you want to give the filter another name, select (double-click) the filter in the filter list column in the left panel, enter the new name in the **Filter name** field, and select **Save**.
+
 1. Select **Apply**.
-
-1. Save the filter by selecting **Save** in the menu at the top of the screen.
-
-    If you later want to give the filter another name, select (double-click) the filter in the **Case** column in the left panel, enter the new name in the **Filter name** field, and select **Save**.
 
     :::image type="content" alt-text="Screenshot of the Timeframe filter." source="media/timeframe-filter.png":::
 
@@ -105,23 +103,12 @@ The following table lists common actions that you can use in the filtering scree
 |Disable a filter temporarily   | If you don't want to delete a filter completely from the list, but prefer to disable it temporarily, turn off **Enable filter** next to the selected filter.     |
 |Invert a filter                | Some filtering rules may be difficult to express. It's often more convenient to define the rule in an inverted form and then to invert the filter. An inverted filter also changes how the filtering results are calculated. Particularly for more complex rules and large-scale processes, inverted rules might simplify and speed up the calculation of the filtering results.<br/><br/>To invert a filter, use the filter rule by changing the **Filter result** option (includes/does not include) in the center panel.        |
 |Apply filters                   | After the filters have been configured, select **Apply**. The new mining of the process will start only after the filters are applied.        |
-|Combine filters                 | Filters are applied in the order in which they are defined in the list of filters. However, event level filters are always evaluated before case level filters. It's possible to change the order in the respective category using drag-and-drop. The final filtering result consists of the cases that fulfill the criteria of all active filters applied in the order. <!-- I can't get this to work.-->     |
+|Combine filters                 | Filters are applied in the order in which they are defined in the list of filters. However, event level filters are always evaluated before case level filters. <!--It's possible to change the order in the respective category using drag-and-drop. -->The final filtering result consists of the cases that fulfill the criteria of all active filters applied in the order.      |
 
-
-<!--Where do you see these last two sections?
 ## Information about applied filters
 
 When analyzing the process by means of filters, you can always see the size of the data set you are working with.
 
-Data size indicators provide information about the data set. Hovering over the indicators provides more precise values.
+Data size indicators provide information about the data set - number of filtered events and cases. The indicators are located on the bottom of the application on each screen of an open view. 
 
-:::image type="content" alt-text="Screenshot of the data size indicators." source="media/image046.png":::
-
-## Switch to the Filters screen
-
-When you select the data size indicator in a process map, a message appears describing the filters currently applied. Select any item in the list of applied filters to go to the **Filtering** screen, which shows the details of the item by default.
-
-By means of this message, you can select items in the list of filters on the **Filter**s** screen.
-
-:::image type="content" alt-text="Screenshot of filters for the data size indicator." source="media/image047.png":::
--->
+![Filtering indicators](https://user-images.githubusercontent.com/38796638/225406029-c82f5854-9027-4c3d-829a-9e6715e7b44f.png)

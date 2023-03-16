@@ -23,7 +23,7 @@ These statistics refer to edges in the process undergoing analysis and display t
 
 To review edge statistics:
 
-1. On the left panel in the **Processes** screen, select **Statistics**.
+1. On the left panel in the opened view, select **Statistics**.
 
 1. In the **Category** dropdown menu, select **Edge statistics**.
 
@@ -46,7 +46,7 @@ The metrics in the following table are available in the chart.
 | Total duration (%)    | Percentage of the total duration of each edge in the process relative to the total duration for all cases in the process.  |
 | Mean duration         | Average duration of each edge in the process.    |
 | Mean duration (%)     | Average duration of each edge in the process relative to the average duration for all cases in the process.     |
-| #### Minimum duration    | Shortest duration of each edge in the process.      |
+| Minimum duration      | Shortest duration of each edge in the process.      |
 | Maximum duration      | Longest duration of each edge in the process.    |
 | Duration range        | Difference between the longest and shortest duration of the occurrence of   each edge for each edge in the process.   |
 | Duration std. dev.    | Standard deviation of each edge duration in the process.    |
@@ -59,11 +59,11 @@ The metrics in the following table are available in the chart.
 | Loop outflow          | Value of loop outflow of edges in the process.  |
 | Loop outflow (%)      | Percentage of loop outflow of edges relative to their total occurrences in the process.  |
 
-Besides these standard statistics, the list contains all defined case-level and edge-level custom metrics with the continuous output data type.
+Besides these standard statistics, the list contains all defined edge-level custom metrics with the continuous output data type.
 
 ## Summary header and table of edges
 
-The summary provides an overview of standard metrics provided by minit. The list of these metrics isn't configurable and no additional metrics can be included in this summary row. The table of edges contains standard edge-level metrics, and custom metrics applicable on case-level or edge-level. In the table, all mentioned custom metrics are available regardless of their discrete or continuous output data type.
+The summary provides an overview of standard metrics provided by minit. The list of these metrics isn't configurable and no additional metrics can be included in this summary row. The table of edges contains standard edge-level metrics, and custom metrics applicable on edge-level. In the table, all mentioned custom metrics are available regardless of their discrete or continuous output data type.
 
 <!--Where is the summary headers as in the screenshot?-->
 

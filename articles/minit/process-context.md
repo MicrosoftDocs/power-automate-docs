@@ -20,7 +20,7 @@ search.audienceType:
 
 # Manage settings with process context
 
-The **Process context** page is where you can create and manage settings that you want to apply to the views you create for a process.
+The **Process context** page is where you can create and manage process level settings that you want to apply to the views you create for a process.
 
 ## Open the Process context screen
 

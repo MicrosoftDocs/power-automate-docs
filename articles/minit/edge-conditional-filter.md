@@ -19,7 +19,7 @@ search.audienceType:
 
 # Edge conditional filter
 
-This case-level filter is similar to the attribute (conditional) filter, only it's related to edges instead of events. Both activity-based process map and resource-based social chart edges are supported. **activityName** is the first process map based attribute:
+This case-level filter is similar to the attribute (conditional) filter, only it's related to edges instead of events. Both activity-based process map and resource-based social chart edges are supported. **Activity attribute name** is the first process map based attribute.
 
 If there are defined resource attributes in the active process, the dropdown offers to select Resource attributes.
 

@@ -19,7 +19,7 @@ search.audienceType:
 
 # Settings overview
 
-The **Settings** winoptions allow you to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license.
+The **Settings** in options allow you to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license.
 
 ## Set options
 
@@ -39,7 +39,7 @@ Change various settings in minit.
 
 ## Set task history
 
-View the history of performed tasks such as process import or data export from a view.
+View the history of performed tasks such as publish to Power BI or data export from a view.
 
 1. On the title bar, select the gear icon > **Tasks history**.
 
@@ -63,13 +63,13 @@ The **Working hours** screen allows you to define calendar templates that can be
 
 1. In the **General** tab, enter a name in the **Template name** field.
 
-1. In thw **Working week** and **Non-working days** tabs, customize your new calendar.
+1. In the **Working week** and **Non-working days** tabs, customize your new calendar.
 
 1. Select **Save**.
 
 To delete a calendar, select the ellipses (**...**) > **Delete**.
 
-If you have an existing calendar and want to make a new calendar based on it, select the ellipses (**...**) > **Update calendar**. This way, you don't need to create a calendar from scratch.
+If you have an existing calendar and want to make a new calendar based on it, select the ellipses (**...**) > **Create duplicate**. This way, you don't need to create a calendar from scratch.
 
 To learn more, go to [Working hours](working-hours.md).
 
