@@ -20,11 +20,15 @@ search.audienceType:
 
 # Business rules statistics
 
-Along with statistics about your cases, activities, and edges, Minit collects statistics on each of your business rules. You can view them in the Statistics module.
+Along with statistics about your cases, activities, and edges, minit collects statistics on each of your business rules. You can view them in the **Statistics** screen.
 
-In Statistics, select **Business rules** in the list at the top of the page. You can also select a scope. By default, the display includes all scopes.
+1. In the left panel, select **Statistics**.
 
-:::image type="content" source="media/br-stats-list.png" alt-text="Screenshot of business rules selected in the Statistics module.":::
+1. In the dropdown menu, select **Business rules**.
+
+1. (Optional) Select a scope. By default, the display includes all scopes.
+
+    :::image type="content" source="media/br-stats-list.png" alt-text="Screenshot of business rules selected in the Statistics module.":::
 
 Statistics are available at two levels:
 
@@ -36,25 +40,21 @@ Statistics are available at two levels:
 
 The summary view displays a single row of metrics for each business rule you defined for the process or for business rules of the selected scope. The category isn't evaluated for event and edge business rules when you display them in the summary view. To display metrics per activity or edge, use the [**detailed view**](#detailed-view).
 
-:::image type="content" alt-text="Screenshot of the summary view with all business rules selected." source="media/image-64.png":::
-
 If you select a scope other than **All**, the list of business rules is limited to rules of the selected scope.
-
-:::image type="content" alt-text="Screenshot of the summary view with case scope business rules selected." source="media/image-65.png":::
 
 ## Detailed view
 
 Event scope and edge scope business rules calculate results per event or edge. To display the details of events or edges, select the scope and then select a business rule of that scope.
 
-1. In the **scope** list, select either **Event** or **Edge**.
-1. Select the filter icon to the right of the scope.
-1. Select **All** and then select a business rule from the list.
+1. In the **Scope** dropdown menu, select **Event** or **Edge**.
+
+1. To add a filter, select **Enable filter**. 
+
+1. In the dropdown menu, select a business rule.
 
     :::image type="content" source="media/br-stats-detail.png" alt-text="Screenshot of a single business rule selected for detailed display.":::
 
 The table shows metrics for each activity or edge in the data set of the selected business rule.
-
-:::image type="content" alt-text="Screenshot of the detailed view of business rule statistics." source="media/image-66.png":::
 
 ### See also
 

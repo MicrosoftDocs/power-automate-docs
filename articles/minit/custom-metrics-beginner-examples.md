@@ -19,11 +19,11 @@ search.audienceType:
 
 # Basic examples
 
-The following examples shows various calculation methods for custom metrics with focus on proper context/aggregation selection. The examples are done over tiny data example, which can be calculated by user manually. ​The examples don't focus on custom metrics operators, so no additional knowledge of specific operators is required. For complete list of supported operators (like statistical, calendar or math functions) please see Custom metrics help pages, which contain the full references.​
+The following examples show various calculation methods for custom metrics with a focus on proper context/aggregation selection. For a complete list of supported operators (like statistical, calendar or math functions), go to [Custom metrics](custom-metrics.md).​
 
 ## ​Dataset description
 
-​The examples use the tiny data set. It contains three cases, 10 events, and there's one view defined&mdash;two out of three cases. For easy manual calculations, we assume zero waiting time between events; therefore, case duration is a simple sum of events duration. Also, there's no parallelism among events.​
+​The examples use a tiny data set. It contains three cases, 10 events, and there's one view defined&mdash;two out of three cases. For easy manual calculations, we assume zero waiting time between events; therefore, case duration is a simple sum of events duration. Also, there's no parallelism among events.​
 
 ## 1. Event level aggregation (view)
 
@@ -242,7 +242,6 @@ Attribute conditional filter is case level filter, it evaluates the single cases
 
 ### Filter definition
 
-Basically, the filter evaluation at first calculates aggregated result (total) per attribute value (activity C) per case and afterward this result is compared to filter requirements (greater than 1 hour 30 minutes). Therefore, any standard/custom metric that aggregates the results per attribute value is applicable also in attribute conditional filter.
+The filter evaluation at first calculates aggregated result (total) per attribute value (activity C) per case and afterward this result is compared to filter requirements (greater than 1 hour 30 minutes). Therefore, any standard or custom metric that aggregates the results per attribute value is applicable also in attribute conditional filter.
 
-:::image type="content" alt-text="Screenshot of the filter definition." source="media/07-conditional-filter-1.png":::
 
