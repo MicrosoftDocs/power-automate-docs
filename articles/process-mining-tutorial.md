@@ -1,6 +1,6 @@
 ---
 title: Get started with process mining
-description: This topic is a tutorial with sample data in process mining for Power Automate.
+description: This topic is a process mining tutorial in Power Automate using sample data.
 author: donums
 contributors:
   - donums
@@ -150,7 +150,7 @@ We want to compare the paths that have this **Refund With Special Voucher** step
 
 1. Go back to the filter screen by selecting the **Filter** button in the bottom left of the screen.
 
-1. Clear the **Filter criteria set** and repeat steps 1 through 4, but choose **Refund With *Standard* Voucher** in step 1 and **Refund With *Special* Voucher** in step 4.
+1. Clear the **Filter criteria set** and repeat steps 1 through 4 of the previous section, but choose **Refund With *Standard* Voucher** in step 1 and **Refund With *Special* Voucher** in step 4.
 
 1. In the command bar at the top, select **Save** > **Save as**, and then enter **Refund w/ Standard Voucher** > **Save**.
 
@@ -174,7 +174,7 @@ We've created two different views. One view shows the paths that have the **Refu
 
 The green nodes represent steps common to both views. Red node represents the step that take place in only the process with a special voucher (as indicated by the **Compare** legend). Blue nodes represent steps that take place only in the paths with standard voucher.
 
-:::image type="content" source="media/process-mining-tutorial/compare-legend.png" alt-text="Screenshot of nodes in color.":::
+![image](https://user-images.githubusercontent.com/113051637/225818949-9f65be85-433b-4723-ac56-333dc80661fb.png)
 
 1. Expand the **Customize** panel by selecting **Customize** on the right navigation bar.
 
@@ -188,7 +188,7 @@ From the procedure in [Analyze a process](#analyze-a-process) (earlier in this a
 
 Notice that cases that have the **Refund With Standard Voucher** step also have the possibility of invoices being rejected as the blue node which represents the **Reject Invoice** step suggests. This **Reject Invoice** step contributes only 2.8 hours on average to the process.
 
-:::image type="content" source="media/process-mining-tutorial/reject-invoice.png" alt-text="Screenshot of the 'Reject Invoice' node with 2.8 hours on average.":::
+![image](https://user-images.githubusercontent.com/113051637/225818994-9da86d0f-73a1-4aee-a4ec-7b587e154d71.png)
 
 Based on insights we derived from this analysis, let's summarize our findings, derive a conclusion, and offer some recommendations for this process.
 
