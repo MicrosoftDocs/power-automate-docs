@@ -53,7 +53,7 @@ Use the **Time format precision** dropdown menu to define how many time units 
 
 >[!NOTE]
 >
->The values of the units that aren't displayed aren't converted into larger ones but are completely omitted. For example, 15 days will display as 2 weeks and not 2,07 weeks.
+>The values of the units that aren't displayed aren't converted into larger ones but are completely omitted. For example, 15 days will display as 2 weeks and not 2.07 weeks.
 
 The **Show duration in working hours**checkbox automatically sets the max time unit to "hour" and time format precision to "unlimited".
 

@@ -59,7 +59,7 @@ The following table describes ways that you can manage views.
 
 | Action                      | Description                        |
 | ----------------------------|------------------------------------|
-|Switch views from the **Processing** screen | On the command bar at the top left, select **Processes**, and then select another process. |
+|Switch views from the **Processes** screen | On the command bar at the top left, select **Processes**, and then select another process. |
 |Switch views from the current screen    | On the command bar at the center, select the dropdown menu, and then choose an option. |
 |Rename, save, save as, and discard a process   | On the command bar at the top, select the **Save** dropdown menu and choose an option.   |
 | View ongoing tasks   | On the title bar, select **Tasks** (the bell icon). You'll see the status of tasks that are running in the background and the history of completed tasks. If a task couldn't be completed, select **Retry** to restart it. If you want to edit its parameters before restarting the task, select **Edit**.   |
@@ -96,7 +96,6 @@ If you select an edge, detailed information about the transition displays.
 |Top attributes     | Overview of the most frequently occurring attributes within the event. If there are multiple attributes within a process, you can add displaying of the information to other attributes. Only attributes that were marked as case-level attributes during the process import can be added among the top attributes of this panel. The number of displayed values of the selected attributes is optional.   |
 |Top attributes     | Overview of the most frequently occurring attributes within the  event. If there are multiple attributes within a process, you can add displaying of the information to other attributes. Only attributes that were marked as case-level attributes during the process import can be added among the top attributes of this panel. The number of displayed values of the selected attributes is optional.   |
 |Advanced panel    | To display the advanced panel for an edge, select **Advanced Panel**. This panel displays the starting and ending activities of the edge with the selected attribute and an optional number of attribute values. On this panel, you can view any attribute imported with the process.  |
-| Favorites panel  | Select the most relevant parameters for work and display them by using the **Favorites** panel. To learn more, go to [Favorites panel](favorites-panel.md).
 
 ## Process map settings
 
@@ -138,7 +137,7 @@ Map clustering allows you to visually encapsulate activities in the process map 
 
 1. In the **Clustering attribute** dropdown menu, select an attribute.
 
-    :::image type="content" alt-text="Screenshot of start and end identifiers." source="media/cluster-attribute.png":::
+    :::image type="content" alt-text="Screenshot of the Clustering attribute dropdown menu." source="media/cluster-attribute.png":::
 
 The map clustering attribute selection control is populated automatically by minit. The attributes must fulfill the following premises:
 

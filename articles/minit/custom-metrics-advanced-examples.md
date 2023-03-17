@@ -371,13 +371,13 @@ Custom metric is applicable on every screen where values display per attribute v
 
 *What's average activity duration to case duration?* How much time do we spend in average in activities is one of standard performance metrics.
 
-But what if we need to calculate average ratio how much time we spend in activities in compare to case duration? Where we spend relatively the most time? Is it over the threshold?
+But what if we need to calculate the average ratio of how much time we spend in activities in comparison to case duration? Where do we spend relatively the most time? Is it over the threshold?
 
 :::image type="content" alt-text="Screenshot of switching from event to case context." source="media/03-data-set-1.png":::
 
 ### Calculation for example 7
 
-What exactly are we going to calculate. We want result per activity, so we get results per 'A', 'B' and 'C'.  Activity 'B' is only in case 1. Case 1 duration is 90 minutes, activity 'B' duration is 20 minutes. Result for case 1 and activity 'B' is  20/90 = ~ 0.22. Because 'B' is not included in other cases, this is also the final result for 'B'.
+What exactly are we going to calculate? We want result per activity, so we get results per 'A', 'B', and 'C'.  Activity 'B' is only in case 1. Case 1 duration is 90 minutes and activity 'B' duration is 20 minutes. The result for case 1 and activity 'B' is  20/90 = ~ 0.22. Because 'B' isn't included in other cases, this is also the final result for 'B'.
 
 Do the calculation for activity 'A', for case 1 the ratio is 10/90, for case 2 the ratio is 40/120, with average value 0.22 (0.11 + 0.33 divided by 2). In the same manner, we calculate 6 individual results per each of events 'C' and make the average.
 
@@ -399,15 +399,15 @@ The expression is simple, but uses the important operator `CASE()`, which allows
 
 ### Usage in minit for example 7
 
-Application of custom metric follows the standard requirements for aggregation per attribute value. Because expression uses *Duration()* and not attribute value, it is also applicable on edges (both in process map and statistics).
+Application of custom metric follows the standard requirements for aggregation per attribute value. Because the expression uses *Duration()* and not attribute value, it's also applicable on edges (both in process map and statistics).
 
 ## 8 Event-case-event aggregation
 
 Generic relation between events inside case.
 
-*How many events done by Michal were in cases touched by Peter?* Imagine 'Peter' is senior team member who is usually involved only in some troubles. We want to know how many times 'Peter' had to perform action when another user 'Michal' was involved in the same case.
+*How many events done by Michal were in cases touched by Peter?* Imagine 'Peter' is a senior team member who is usually involved only in some troubles. We want to know how many times 'Peter' had to perform action when another user 'Michal' was involved in the same case.
 
-​Change question to generic form: *How many events per user were done in cases with Peter?*
+​Change the question to a generic form: *How many events per user were done in cases with Peter?*
 
 :::image type="content" alt-text="Screenshot of event-case-event aggregation." source="media/03-data-set-1.png":::
 
@@ -427,11 +427,11 @@ Event is valid for this question, if it's within case, where there's at least on
 
 :::image type="content" alt-text="Screenshot of expression for event-case-event aggregation." source="media/08-event-case-event.png":::
 
-Expression is short but requires some knowledge to understand it.  The most inner part *Any(CaseEvents, user=="Peter")* is simple result per single case. It evaluates if case contains user 'Peter' or not. The most outer part *COUNTIF()* does simple aggregation by attribute value. The requirement is to do aggregation on event level attribute user, but the calculated value is case level metric. Switch between these two contexts is done by *CASE()* operator in the middle.
+Expression is short but requires some knowledge to understand it. The most inner part *Any(CaseEvents, user=="Peter")* is a simple result per single case. It evaluates if case contains user 'Peter' or not. The most outer part *COUNTIF()* does simple aggregation by attribute value. The requirement is to do aggregation on event level attribute user, but the calculated value is case level metric. Switch between these two contexts is done by *CASE()* operator in the middle.
 
 >[!NOTE]
 >
->In this example, the *EventsPerAttribute* context is not specified. Custom metric then applied implicit calculation context.
+>In this example, the *EventsPerAttribute* context isn't specified. Custom metric then applied implicit calculation context.
 
 ### Usage in minit in example 8
 
@@ -441,17 +441,17 @@ Application of custom metric follows the standard requirements for aggregation p
 
 Relation between two event level attributes within case with condition.
 
-*How many times Michal worked on repeated C with Peter in case?* Similar question to previous one, but there is added conditional.
+*How many times Michal worked on repeated C with Peter in case?* This is a similar question to previous one, but there is added conditional.
 
-Convert question to generic one: *How many times Michal (per user) worked on repeated C in cases with Peter?*
+Convert the question to a generic one: *How many times Michal (per user) worked on repeated C in cases with Peter?*
 
 :::image type="content" alt-text="Screenshot of event-case-event conditional aggregation." source="media/03-data-set-1.png":::
 
 ### Calculation for example 8.1
 
-Evaluate each event and group results per attribute user value - 'Michal', 'Peter' and 'Denis' like in previous example. But event evaluation is more complicated as there is limitation only for repeated activities 'C'.
+Evaluate each event and group results per attribute user value: 'Michal', 'Peter', and 'Denis', like in the previous example. Event evaluation is more complicated, as there's limitation only for repeated activities 'C'.
 
-In case 1 there are not repeated activities 'C', in case 2 is one repeated activity 'C' done by 'Michal' and in case 3 are two repeated activities 'C' done by 'Denis'.
+In case 1, there aren't repeated activities 'C', in case 2 is one repeated activity 'C' done by 'Michal', and in case 3 are two repeated activities 'C' done by 'Denis'.
 
 ### Result for example 8.1
 
@@ -465,7 +465,7 @@ In case 1 there are not repeated activities 'C', in case 2 is one repeated activ
 
 :::image type="content" alt-text="Screenshot of expression for event-case-event conditional aggregation." source="media/08_1-event-case-event.png":::
 
-Two step (nested) aggregation - inner one evaluates the single case, the outer one group results per attribute value. Conditions are also separated between these to aggregation. The inner one handle case requirement - if contains user 'Peter'. The outer one groups events so contains the event related condition - if activity is 'C' and if it is repeated.
+Two step (nested) aggregation&mdash;inner one evaluates the single case, the outer one group results per attribute value. Conditions are also separated between these to aggregation. The inner one handles case requirement if it contains user 'Peter'. The outer one groups events so it contains the event related condition if activity is 'C' and if it is repeated.
 
 Operator `OCCURRENCE()` returns occurrence index of a given event attribute value within the case.
 
@@ -487,7 +487,7 @@ Application of custom metric follows the standard requirements for aggregation p
 
 :::image type="content" alt-text="Screenshot of generic solution." source="media/09-case-operator.png":::
 
-It is possible to skip `CASE()` operator at cost of creating value specific custom metric. In such custom metric we have to specify requested custom value 'Michal' and have drop calculations for other attribute values (per user) and grouping by another attributes.
+It is possible to skip `CASE()` operator at the cost of creating value specific custom metric? In such a custom metric, we have to specify requested custom value 'Michal' and have drop calculations for other attribute values (per user) and grouping by another attributes.
 
 **Custom metric limited to specific custom value**
 
@@ -501,12 +501,12 @@ Reasoning behind the latter one:
 
 1. Count number of activities with requirement (operator `COUNTIF()`)
 
-1. Apply result per cease per each case exactly once (calculation context *CasesPerAttribute*)
+1. Apply result per case per each case exactly once (calculation context *CasesPerAttribute*)
 
 1. At last Sum count of events per case (operator `SUM()`)
 
 The custom metric without `CASE()` operator is maybe easier to read by humans, but it brings some disadvantages.
 
-- Per each resulting attribute value ("Michal"), we need a separate custom metrics, for other attribute values the metric returns zero.
+- Per each resulting attribute value ("Michal"), we need a separate custom metrics. For other attribute values, the metric returns zero.
 
 - Operator `COUNTIF()` is locked for user attribute. Results grouped by another attribute, for example, country requires change of condition to specific country code, for example, `COUNTIF(CaseEvents, country == "DE")`.

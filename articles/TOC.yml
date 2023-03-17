@@ -800,7 +800,7 @@
         href: ./minit/options.md
       - name: Working hours
         href: ./minit/working-hours.md
-    - name: Advanced features.md
+    - name: Advanced features
       items:
       - name: Custom metrics
         items:

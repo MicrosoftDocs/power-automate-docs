@@ -56,7 +56,7 @@ You can define business rules in the  **Process content** screen.
 
     1. On the **Attributes** screen, complete the field and select **Save**.
 
-    To learn more, go to [Define business rule filters](#define-filters-detail) in this article.
+    To learn more, go to [Define filters detail](#define-filters-detail) in this article.
 
 1. Define custom output:
 
@@ -66,7 +66,7 @@ You can define business rules in the  **Process content** screen.
 
     1. In the **Custom result formula** field, enter your formula and select **Save**.
 
-    To learn more, go to [Define custom output](#define-custom-output-detail) in this article.
+    To learn more, go to [Define custom output detail](#define-custom-output-detail) in this article.
 
 1. Add a severity:
 
@@ -76,7 +76,7 @@ You can define business rules in the  **Process content** screen.
 
     1. Select an expression from the dropdown menu, enter a value, and select **Save**.
 
-    To learn more, go to [Define severities](#define-severities-detail) in this article.
+    To learn more, go to [Define severities detail](#define-severities-detail) in this article.
 
 1. Select **Save**.
 
