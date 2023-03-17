@@ -27,7 +27,7 @@ Before you can start using minit, you need to install it from the process mining
 1. On the panel to the left, select **Process advisor**.
 
 1. At the top of the process mining screen, select **Install Minit**.
-
+  ![Screenshot of the Install Minit button on the process advisor page.](https://user-images.githubusercontent.com/38796638/225883880-7e8a4294-243c-40e3-aa21-725622c68893.png)
    :::image type="content" alt-text="Screenshot of the Install Minit button on the process advisor page." source="media/minit-install-a1.png":::
 
 1. Open the installer file when prompted, and then select **Install** to run the installer.
