@@ -680,12 +680,12 @@
   - name: Overview
     href: process-advisor-overview.md
     displayName: Overview of process advisor
-  - name: Templates overview
+  - name: Process mining
     items:
     - name: Overview
       href: process-mining-overview.md
     - name: Get started with process mining
-      href: process-mining-tutorial.md      
+      href: process-mining-tutorial.md   
     - name: Templates overview
       items:
       - name: Azure templates
@@ -708,11 +708,11 @@
       href: process-mining-share.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
-  - name: Minit desktop application (preview)
+  - name: Minit
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Install minit desktop application
+    - name: Install minit
       href: ./minit/how-to-start-with-minit-desktop-application.md
     - name: Get started
       items:
@@ -724,12 +724,8 @@
         href: ./minit/case-categorization.md 
     - name: Process map
       items:
-      - name: Process explorer overview
-        href: ./minit/process-explorer.md
       - name: Process map overview
         href: ./minit/process-map.md
-      - name: Favorites panel
-        href: ./minit/favorites-panel.md
       - name: View settings
         href: ./minit/view-settings.md
       - name: Hierarchical process mining

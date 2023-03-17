@@ -19,9 +19,9 @@ search.audienceType:
 
 # Process map overview
 
-A process map represents the behavior of a process captured in data by means of activities and directed edges.
+A process map provides a view of the activities performed in a process and their sessions. It represents the behavior of the process captured in data by means of activities and directed edges.
 
-The displayed process map corresponds with the mining result of the process. It reflects filter settings above the data, and the chosen frequency or time metrics. When you apply filters, mining is performed again, metrics are recalculated, and a new process map is generated.
+The process map corresponds with the mining result of the process. It reflects filter settings above the data, and the chosen frequency, or time metrics. When you apply filters, mining is performed again, metrics are recalculated, and a new process map is generated.
 
 ## Process map nodes
 
@@ -51,9 +51,20 @@ Chart nodes starting and ending process instances contain colored indicators in 
 
 :::image type="content" alt-text="Screenshot of start and end identifiers." source="media/image004-4.png":::
 
-## Process map basic view
+## Manage process map views
 
 When you open a project view for the first time, a process map with the default view parameters displays. The structure of the process map and the information vary depending on your view settings. The default process map typically contains the backbone of the process. It displays the most frequent activities and the most dominant edges. The basic view also includes the start and end nodes.
+
+The following table describes ways that you can manage views.
+
+| Action                      | Description                        |
+| ----------------------------|------------------------------------|
+|Switch views from the **Processing** screen | On the command bar at the top left, select **Processes**, and then select another process. |
+|Switch views from the current screen    | On the command bar at the center, select the dropdown menu, and then choose an option. |
+|Rename, save, save as, and discard a process   | On the command bar at the top, select the **Save** dropdown menu and choose an option.   |
+| View ongoing tasks   | On the title bar, select **Tasks** (the bell icon). You'll see the status of tasks that are running in the background and the history of completed tasks. If a task couldn't be completed, select **Retry** to restart it. If you want to edit its parameters before restarting the task, select **Edit**.   |
+
+
 
 ## Node details
 
@@ -75,7 +86,6 @@ If you select a node, detailed information about the activity displays.
 
 If you select an edge, detailed information about the transition displays.
 
-
 |Detail  |Description  |
 |---------|---------|
 |Frequency   | Frequency information about an edge/transition in the process.        |
@@ -90,29 +100,11 @@ If you select an edge, detailed information about the transition displays.
 
 ## Process map settings
 
-To open the process map settings, select the button on the right side of the screen.
+To open the process map settings, select **Customize** on the right side of the screen.
 
 :::image type="content" alt-text="Screenshot of the process map Settings icon." source="media/customizeicon.png":::
 
-All map settings will be accessible when you extend the panel on the right.
-
-
-
-A process map can be converted and exported into a BPMN 2.0 compliant format that allows you to work with the map in any standard BPMN modeling tool.
-
-A process or social map can also be exported as:
-
-- PNG image
-
-- XML file containing a list of activities and edges (for processing in any 3rd party tools)
-
-## Change the view of the process
-
-The first setting can be used to choose between the process map or the social graph. Switching between these views will cause mining in the process to start over.
-
-## Process map
-
-Process map provides a view of the activities performed in the process and their sessions.
+The **Customize** panel allows you to choose between the process map or the [social chart](#social-chart). Switching between these views will cause mining in the process to start over.
 
 ### Mining attribute selection
 
@@ -136,11 +128,19 @@ You can filter displayed edges/transitions using the edge slider. It defines the
 
 ## Map clustering
 
-Map clustering enables the user to visually encapsulate activities in the process map view (or resource in the social chart view) into clusters – nodes are grouped and laid out close to each other and visually bordered by blue dashed rectangles based on the value of the selected clustering attribute.
+Map clustering allows you to visually encapsulate activities in the process map view  into clusters. You can also do this in the social chart view with a resource attribute selected. Nodes are grouped and laid out close to each other and visually bordered by blue dashed rectangles based on the value of the selected clustering attribute.
 
-To cluster the process map/social chart, select the clustering attribute from those available in the Map clustering selection control.
+1. On the panel to the right, select **Customize** (the top icon).
 
-Map clustering attribute selection control is populated automatically by minit. The attributes must fulfill the following premises:
+1. Select either the **Process map** or **Social chart** tab.
+
+1. In the **Mining attribute** dropdown menu, select an attribute.
+
+1. In the **Clustering attribute** dropdown menu, select an attribute.
+
+    :::image type="content" alt-text="Screenshot of start and end identifiers." source="media/cluster-attribute.png":::
+
+The map clustering attribute selection control is populated automatically by minit. The attributes must fulfill the following premises:
 
 - **Process map:** Each value of the attribute Activity must have exactly one corresponding value of the clustering attribute. It can also be an empty value. In this case, the activity is placed on canvas outside of any cluster. For example, approval must have always value **Management** in clustering attribute and PO archival must always have value Accounting.
 
@@ -171,6 +171,18 @@ The following properties can be set in the advanced settings of the process map:
 - Map orientation: Top to bottom or left to right.
 
 - Highlight the activities that go before and after the activity being presently monitored.
+
+## Export a process map
+
+A process map can be converted and exported into a BPMN 2.0 compliant format that allows you to work with the map in any standard BPMN modeling tool.
+
+A process or social map can also be exported as:
+
+- PNG image
+
+- XML file containing a list of activities and edges (for processing in any 3rd party tools)
+
+To export process map, select **Export process map** on the menu at the top, and then make your selection.
 
 ## Social chart
 
@@ -204,7 +216,7 @@ When selecting one or more variants to the right of the indicator of the current
 
 ## View settings
 
-To define various settings valid only for the current view, you can open the View settings panel using the icon on bottom-left corner.
+To define various settings valid only for the current view, select **View Settings** on the command bar at the top.
 
  To learn more, go to [View settings](view-settings.md).
 

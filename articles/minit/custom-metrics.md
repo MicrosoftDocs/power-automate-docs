@@ -67,16 +67,21 @@ To learn more about the requirements for using custom metrics for various purpos
 
 :::image type="content" alt-text="Screenshot of metric types." source="media/metric-type.png":::
 
-<!--I can't find the following.
 ## Apply a custom metric to a process map
 
-Custom metrics can be accessed and applied to process map view from the **Customize** panel, by selecting the Custom metric option in the metrics visualization switch and then selecting the desired metrics from the available dropdowns. The top dropdown is used for selecting the custom metric on the activities and the bottom one for edges. The link icon in-between will lock the metric for activities and edges to show the same metric for both elements by selecting it from a single dropdown menu.
+The process map visualization will adjust to the selected metric based on the context and datatype you select, and show the calculated values.
 
-:::image type="content" alt-text="Screenshot of custom metric dropdown menus." source="media/CustomMetricsSelection-v56.png":::
+1. On the panel to the right, select the **Customize** (the first icon).
 
-Context menu available next to the dropdown offers a shortcut to add a new custom metric to process context or edit the formula of the currently selected metric.
+1. On the toolbar in the **Customize** panel, select **Custom** (the *fx* icon). 
 
-The process map visualization will accommodate to the selected metric based on the context and datatype and show the calculated values. -->
+1. Below the toolbar, select the desired metrics from the dropdown menus.
+
+    :::image type="content" alt-text="Screenshot of custom metric dropdown menus." source="media/custom-metrics-select.png":::
+
+     The top dropdown menu is used for selecting the custom metric on the activities and the bottom one for edges. The link icon in between will lock the metric for activities and edges to show the same metric for both elements.
+
+    Use the ellipses (**...**) next to the dropdown menu to add a new custom metric to process context, edit the formula of the selected metric, or delete it.
 
 ## Apply a custom metric to filters
 
