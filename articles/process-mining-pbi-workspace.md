@@ -109,8 +109,8 @@ Now that you've connected your Power BI workspace to process advisor and install
 Load your process analytics in Power BI to start customizing your report.
 
 1. After analyzing a process, go to the process **Details** page by selecting the name of the process in the breadcrumbs or click on **Details** in the top bar.
-  
-  ![Screenshot of the Details button.](https://user-images.githubusercontent.com/38796638/225886022-500a10d2-62b3-4902-8c08-3f3d9bc6671f.png)
+    
+    ![Screenshot of the Details button.](https://user-images.githubusercontent.com/38796638/225886022-500a10d2-62b3-4902-8c08-3f3d9bc6671f.png)
     :::image type="content" source="media/process-mining-pbi-workspace/share-arroe.png" alt-text="Screenshot of the left pointing arrow in the 'Share' screen.":::
 
 1. On the **Details** card, select **Edit**.
@@ -136,8 +136,8 @@ After completing these steps, return to the analytics page of your process in pr
 1. To refresh and reanalyze the process, select **Refresh**.
 
 1. Select **Open in Power BI**. If you don't see this button, make sure you've completed the steps in the [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi) section in this article.
-  
-  ![Screenshot of the 'Open in Power BI' button.](https://user-images.githubusercontent.com/38796638/225886286-760b5298-94fb-4143-bc06-324ae2aeda5e.png)
+
+    ![Screenshot of the 'Open in Power BI' button.](https://user-images.githubusercontent.com/38796638/225886286-760b5298-94fb-4143-bc06-324ae2aeda5e.png)
     :::image type="content" source="media/process-mining-pbi-workspace/open-pbi.png" alt-text="Screenshot of the 'Open in Power BI' button.":::
 
     You'll be redirected to a Power BI web screen that will show you a report of your process.
