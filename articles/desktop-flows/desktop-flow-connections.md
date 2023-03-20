@@ -48,4 +48,7 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 
 1. Select **Create** to create the connection.
 
+> [!IMPORTANT]
+> If you consistently encounter issues when creating a connection on a new machine, first try to remove it and [register it](https://learn.microsoft.com/power-automate/desktop-flows/manage-machines#register-a-new-machine) again; something may have gone wrong during the first registration.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
