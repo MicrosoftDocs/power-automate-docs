@@ -8,7 +8,7 @@ contributors:
   - tatn 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -67,7 +67,7 @@ The Power Virtual Agents template is designed to analyze the performance and usa
 
 ### Create and run the Power Virtual Agents template
 
-1. In Power Automate in the left panel, select **Process advisor**.
+1. In Power Automate on the left panel, select **Process advisor**.
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Virtual Agents** tile.
 
@@ -131,7 +131,7 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
 ### Create and run the Power Apps insights template
 
-1. In Power Automate in the left panel, select **Process advisor**.
+1. In Power Automate on the left panel, select **Process advisor**.
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Apps insights** tile.
 

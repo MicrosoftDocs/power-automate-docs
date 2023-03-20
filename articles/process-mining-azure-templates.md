@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -53,8 +53,6 @@ The Azure DevOps (work tracking) template uses data from your Azure Boards to an
 
 1. Select **Create**.
 
-    :::image type="content" source="media/process-mining-azure-templates/create-az-devops.png" alt-text="Screenshot of the Azure DevOps (work tracking) screen.":::
-
 1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
@@ -92,8 +90,6 @@ The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze you
 1. (Optional) In the **Description** field, enter a description of the process.
 
 1. Select **Create**.
-
-    :::image type="content" source="media/process-mining-azure-templates/create-az-pipelines.png" alt-text="Screenshot of the Azure DevOps (pipelines) screen.":::
 
 1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
@@ -217,8 +213,6 @@ The Durable Functions template uses data from your Azure Durable Functions stora
 
 1. In the **Process name** field, enter a name for your process.
 
-    :::image type="content" source="media/process-mining-azure-templates/create-durable-functions.png" alt-text="Screenshot of the Durable Functions screen.":::
-
 1. In Azure portal, go to your Azure Durable Functions storage account. In the left panel under **Data storage**, select **Tables**. Copy the table names that end with **Instances** and **History**.
 
     :::image type="content" source="media/process-mining-azure-templates/durable-functions-tables.png" alt-text="Screenshot of the Azure storage account Tables page with two table names highlighted.":::
@@ -238,8 +232,6 @@ The Durable Functions template uses data from your Azure Durable Functions stora
     :::image type="content" source="media/process-mining-azure-templates/durable-functions-settings.png" alt-text="Screenshot of the Connection settings screen, with the Account name or URL field highlighted.":::
 
 1. In Azure portal in the left pane, select **Security + Networking** > **Access keys**.
-
-    :::image type="content" source="media/process-mining-azure-templates/durable-functions-access-keys.png" alt-text="Screenshot of the Security + Networking menu with Access keys highlighted.":::
 
 1. Select **Show keys**. Copy the value of **Key1** or **Key2**.
 

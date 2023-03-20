@@ -8,7 +8,7 @@ contributors:
   - tatn
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -22,7 +22,7 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-Process mining can help you gain valuable insights and optimize your cloud flows. With just one click, you can visualize your flow's performance, identify bottlenecks and opportunities for improvement, and monitor for performance drifts. By utilizing process advisor to analyze your flow's run history with process mining techniques, you can generate these insights directly from the flow details page.
+Process mining can help you gain valuable insights and optimize your cloud flows. You can visualize your flow's performance, identify bottlenecks and opportunities for improvement, and monitor for performance drifts. By utilizing process advisor to analyze your flow's run history with process mining techniques, you can generate these insights directly from the flow details page.
 
 ## Prerequisites
 
@@ -62,11 +62,9 @@ On your flow details page, you can see the **Process insights** card. To see you
 
 1. Wait for analysis to complete.
 
-    :::image type="content" source="media/process-mining-cloud-flow-process-insights/analyze-process.png" alt-text="Screenshot of analyzing your process.":::
+    When analysis completes, the flow process analytics screen displays.
 
-When analysis completes, the flow process analytics screen displays.
-
-:::image type="content" source="media/process-mining-cloud-flow-process-insights/flow-process-analytics.png" alt-text="Screenshot of the flow process analytics.":::
+    :::image type="content" source="media/process-mining-cloud-flow-process-insights/flow-process-analytics.png" alt-text="Screenshot of the flow process analytics.":::
 
 1. To get the most common run path in your automation, select the most frequent variant.
 

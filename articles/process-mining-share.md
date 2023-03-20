@@ -1,13 +1,13 @@
 ---
 title: Share process mining processes in process mining
-description: Share a process mining process with others so that they can glean insights to make decisions.
+description: Learn how to share a process mining process with others so that they can glean insights to make decisions.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/10/2023
+ms.date: 03/31/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -27,9 +27,7 @@ There are a few ways you can share your process.
 
 1. On the process advisor homepage, beneath the cards for the processes, select **All processes**.
 
-    :::image type="content" source="media/process-mining-share/all-processes-button.png" alt-text="Screenshot of the 'All processes' button.":::
-
-1. Highlight a process, select **More commands** (the three vertical dots), and then select **Share**.
+1. Highlight a process, select **More commands** (the vertical ellipsis <span>&#8942;</span>), and then select **Share**.
 
     :::image type="content" source="media/process-mining-share/more-share.png" alt-text="Screenshot of the More commands dropdown menu.":::
 
@@ -37,13 +35,9 @@ There are a few ways you can share your process.
 
 On the process details page, you can share the process by selecting **Manage** from the **Shared with** card.
 
-:::image type="content" source="media/process-mining-share/shared-with.png" alt-text="Screenshot of the 'Manage' button.":::
-
 ## Share from analytics report page
 
 On the analytics report page, you can share the process by selecting **Share** in the command bar.
-
-:::image type="content" source="media/process-mining-share/share-analytics.png" alt-text="Screenshot of the 'Share' button.":::
 
 ## Share panel
 
