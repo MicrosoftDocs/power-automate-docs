@@ -172,9 +172,9 @@ We've created two different views. One view shows the paths that have the **Refu
 
 ## Understand the process map with different views
 
-The green nodes represent steps common to both views. Red node represents the step that take place in only the process with a special voucher (as indicated by the **Compare** legend). Blue nodes represent steps that take place only in the paths with standard voucher.
+The green nodes represent steps common to both views. Red node represents the step that take place only in the process with a special voucher (as indicated by the **Compare** legend). Blue nodes represent steps that take place only in the paths with standard voucher.
 
-![image](https://user-images.githubusercontent.com/113051637/225818949-9f65be85-433b-4723-ac56-333dc80661fb.png)
+:::image type="content" source="media/process-mining-tutorial/compare-legend.png" alt-text="Screenshot of a process map with color nodes.":::
 
 1. Expand the **Customize** panel by selecting **Customize** on the right navigation bar.
 
@@ -182,13 +182,13 @@ The green nodes represent steps common to both views. Red node represents the st
 
 1. From the **Metric** dropdown menu, select **Mean duration**.
 
-From the procedure in [Analyze a process](#analyze-a-process) (earlier in this article), there were only nine cases with **Refund With Special Voucher**. On average, the process is lengthened by almost 17 hours according to the process compare map in this section.
+From the procedure in [Analyze a process](#analyze-a-process) (previously in this article), there were only nine cases with **Refund With Special Voucher**. On average, the process is lengthened by almost 17 hours according to the process compare map in this section.
 
 :::image type="content" source="media/process-mining-tutorial/analyze-compare.png" alt-text="Screenshot of the 'Refund With Special Voucher' with a case comparison.":::
 
 Notice that cases that have the **Refund With Standard Voucher** step also have the possibility of invoices being rejected as the blue node which represents the **Reject Invoice** step suggests. This **Reject Invoice** step contributes only 2.8 hours on average to the process.
 
-![image](https://user-images.githubusercontent.com/113051637/225818994-9da86d0f-73a1-4aee-a4ec-7b587e154d71.png)
+:::image type="content" source="media/process-mining-tutorial/reject-invoice.png" alt-text="Screenshot of the 'Reject Invoice' node.":::
 
 Based on insights we derived from this analysis, let's summarize our findings, derive a conclusion, and offer some recommendations for this process.
 

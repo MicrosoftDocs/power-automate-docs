@@ -1,13 +1,13 @@
 ---
 title: Visualize and gain insights from processes in process mining (contains video)
-description: This topic explains how to visualize and gain insights from processes with process mining in Power Automate.
+description: This topic explains how to visualize and gain insights from processes with process mining.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 03/31/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -40,8 +40,6 @@ Different activity combinations and *variants* are shown separately on the proce
 
 You can easily switch between different layers and associated metrics on the process map using the controls on the top left of the process map visual.
 
-![Process map metrics controls](https://user-images.githubusercontent.com/38796638/225129090-5212fa09-a3f1-4477-bb42-6b9654a3e389.png)
-
 The metrics for following layers visualize the same metric on both nodes and transitions. You can switch between the absolute value and relative ratio to the process level metric by clicking the % icon next to the selected metric. 
 
 - **Frequency** layer
@@ -62,9 +60,9 @@ The metrics for following layers visualize the same metric on both nodes and tra
 
   - **Minimum duration**: Minimum duration of an activity/transition captured in the data.
 
-On Rework layer you can select different metrics to be visualized on nodes and on transitions to get better insights, unless you click on the link icon between them, which locks the selection to the same metrics both for nodes and transtitions. You can switch between the absolute value and relative ratio to the process level metric by clicking the % icon next to the selected metric.
-
 - **Rework** layer
+
+    Select different metrics to be visualized on nodes and on transitions to get better insights. If you select the link icon between them, the selection to the same metrics both for nodes and transitions is locked. You can switch between the absolute value and relative ratio to the process level metric by selecting the % icon next to the metric.
 
   - **Rework count**: Rework count represents the sum of all self-loops and loops.
 
@@ -150,7 +148,7 @@ To select multiple activities or cases, you can also use **Ctrl** + **Click** .
 
 The **Time Analysis (Premium)** view allows you to drill down into time bottlenecks by cases, variants, and activity. It also shows you average time spent per case and per variants ordered by the time spent.
 
-![Time Analysis' view.](https://user-images.githubusercontent.com/38796638/225129768-bd870347-a7e5-4cb0-92d0-4ca61f42416a.png)
+
 :::image type="content" source="media/process-mining-visualize/time-analysis.png" alt-text="Screenshot of the 'Time Analysis' view'.":::
 
 ### Variant DNA

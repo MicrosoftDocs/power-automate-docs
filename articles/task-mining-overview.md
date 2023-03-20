@@ -8,7 +8,7 @@ contributors:
   - tatn
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/15/2023
+ms.date: 03/31/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -30,9 +30,9 @@ Task mining is a powerful tool for streamlining workflows, identifying inefficie
 
 A retail company can use process advisor with task mining to analyze the order fulfillment process. By recording and analyzing user actions, the organization can gain insights into how orders are processed, identify inefficiencies and bottlenecks, and pinpoint tasks that can be automated.
 
-Process Advisor can automatically produce a process map that visualizes the order fulfillment process, allowing the organization to identify which activities take the longest, how many variations of the order fulfillment process exist, and which variations and actions take the most time.
+Process advisor can automatically produce a process map that visualizes the order fulfillment process, allowing the organization to identify which activities take the longest, how many variations of the order fulfillment process exist, and which variations and actions take the most time.
 
-In addition, application analytics report can show which applications teams spend the most time in and which activities can be optimized. With this information, the organization can create flows with automation recommendations that reveal which connectors to use based on the process advisor analysis.
+In addition, the application analytics report can show which applications teams spend the most time in and which activities can be optimized. With this information, the organization can create flows with automation recommendations that reveal which connectors to use based on the process advisor analysis.
 
 Using insights from process advisor, the retail company can streamline the order fulfillment process, reduce errors, and improve customer satisfaction. The company can also automate repetitive tasks, freeing employees to focus on more value-added activities such as customer service and inventory management.
 
