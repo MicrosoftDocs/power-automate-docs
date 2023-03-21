@@ -99,7 +99,7 @@ For inquiries about add-on capability licensing, contact minitq@microsoft.com
 
 **Preview:** Note that some features are in preview, denoted by the preview tag, and for process templates that are still in preview, license and trial are not needed.
 
-**Dataverse capacity:** Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, you'll need to contact your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store will mostly use file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
+**Dataverse capacity:** Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, you'll need to contact your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store will mostly use file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](https://learn.microsoft.com/en-us/power-platform/admin/capacity-storage).
 
 ## Prerequisites
 
