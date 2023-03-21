@@ -138,7 +138,7 @@ If you want to download only files of a specific type, add a conditional before 
       > [!IMPORTANT]
       > Don't forget to add the appropriate file extension after the file name.
 
-    :::image type="content" source="media\sharepoint\sharepoint-create-file-action.png" alt-text="Screenshot of the Create file Sharepoint action.":::
+    :::image type="content" source="media\sharepoint\sharepoint-create-file-action.png" alt-text="Screenshot of the Create file SharePoint action.":::
 
 ## Upcoming features
 

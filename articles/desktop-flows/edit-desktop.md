@@ -407,7 +407,7 @@ The format of the selector is:
 }
 ```
 
-You need to provide the data for the the **elementStack** and **elementXPath** fields of the  selector element.
+You need to provide the data for the **elementStack** and **elementXPath** fields of the  selector element.
 
 Here is an example of what the **elementStack** might look like.
 

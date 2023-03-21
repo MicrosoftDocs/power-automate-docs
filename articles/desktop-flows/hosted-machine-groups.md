@@ -29,7 +29,7 @@ Here are some of the key features of hosted machine group:
 - Run unattended desktop flows at scale.
 - Auto-scale the number of bots in your hosted machine group based on current workloads.
 - Load balance bots across all hosted machine groups in an environment.
-- Work or school account integration (preview): Enables access to resources that are part of the business plan linked to your organization, such as Office, Sharepoint, and Azure.
+- Work or school account integration (preview): Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
 - Vanilla or Custom VM images: Use a vanilla VM image provided by Microsoft or personalize your hosted machine group by providing your own Windows image directly from your Azure Compute Gallery.
 
 ## Licensing requirements
@@ -393,7 +393,7 @@ The **Desktop Flows Machine Image Admin** role only brings full privileges on th
 
 ## Use your work or school account (preview)
 
-Hosted machine groups now support work and school accounts in preview. If you use your work or school account, your hosted machine group will have access to your resources that are part of the business plan linked to your organization, such as Office, Sharepoint, Azure, and more.
+Hosted machine groups now support work and school accounts in preview. If you use your work or school account, your hosted machine group will have access to your resources that are part of the business plan linked to your organization, such as Office, SharePoint, Azure, and more.
 
 When you register a hosted machine group with this access option, you won't be prompted for credentials. Instead, the machine will be registered to your Azure Active Directory (Azure AD), and you'll be able to sign in with your Azure AD credentials. To [create a desktop flow connection](desktop-flow-connections.md) to target the hosted machine group, enter your work or school account email address and the associated password.
 

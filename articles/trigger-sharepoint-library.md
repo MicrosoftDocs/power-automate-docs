@@ -123,7 +123,7 @@ If you are not seeing the email displayed correctly, make sure you have the late
   
    ![Approval requests in Power Automate.](media/trigger-sharepoint-library/portal.png)
 
-Once the the request is approved or rejected, the flow execution continues. If the request was approved, the file you put in the incoming folder will be moved to the other folder.
+Once the request is approved or rejected, the flow execution continues. If the request was approved, the file you put in the incoming folder will be moved to the other folder.
 
    ![The flow continues.](media/trigger-sharepoint-library/continue.png)
 
