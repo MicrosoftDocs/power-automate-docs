@@ -35,7 +35,9 @@ You can populate the **Attachment(s)** field with file paths or a variable conta
 
 Apart from attaching images to emails, Power Automate allows you to embed images to email bodies using HTML.
 
-To embed an image, check the **Body is HTML** option in the appropriate email action and populate the **Body** field with the following code:
+To embed an image, check the **Body is HTML** option in the appropriate email action and populate the **Body** field with the following code.
+
+![Screenshot of the populated HTML code in the Send email action.](media/add-images-email-messages/emded-images-email.png)
 
 > [!NOTE]
 > After copying the following code, replace the **image-url** placeholder with the URL of the image you want to embed or a variable containing it.
@@ -50,4 +52,27 @@ To embed an image, check the **Body is HTML** option in the appropriate email ac
 </html>
  ```
 
- ![Screenshot of the populated HTML code in the Send email action.](media/add-images-email-messages/emded-images-email.png)
+Where:
+
+- The URL is a link to the image. This can be a public link or dynamic content from a previous action, such as a link for an image in SharePoint.
+- The URL also can be a base64 encoded image. You can find a tool or website online that will encode it for you. Or use the `dataUri()` expression with file content from a previous action.
+- You can specify additional attributes, such as configuring the size of the image or `alt` text, in case the image can't load. See the Resources section below for more information.
+
+Example image with a link and size:
+
+```html
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8peeAQ8Jbw4lowjdYM9OYVJFJr8EwgGNTsJ6BtbqPdNHWz2m" width="500" height="100">
+```
+
+Example image with base64 (clipped for readability) and the `alt` attribute:
+
+```html
+\<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABzCAMAAA......" alt="SomeImage" />
+```
+
+> [!NOTE]
+> To see if your action supports HTML, check if the action has the parameter `body` of type `html` in the connector documentation. Otherwise, for some actions you may need to choose `Is HTML: Yes` under **Advanced Options**.
+
+### Resources
+
+More ways to configure \<img>: [Image Embed element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img).
