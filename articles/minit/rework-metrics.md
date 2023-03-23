@@ -101,10 +101,12 @@ The rework columns are located at the far-right end of the table and the informa
 
 Information about reworks is also present in the overview bar. The percentage shows the proportion of the displayed rows that contain self-loops, loops, and reworks. In the following example, one out of two cases contains a self-loop so the overview bar shows 50% Avg. self-loop. Similarly, one out of the two contains a loop, hence Avg. loop shows 50%. This means that both cases contain a rework, so Avg. rework shows 100%.
 
+![Screenshot of an overview of reworks.](https://user-images.githubusercontent.com/38796638/227316228-d392abf3-b272-4a08-a238-c16344ac64ac.png)
 :::image type="content" alt-text="Screenshot of an overview of reworks." source="media/statistics2-1.png":::
 
 In this example, one case contains one self-loop and one loop. The other one doesn't contain any reworks. That means the **Avg. self-loop**, **Avg. loop**, and **Avg. rework** columns are 50% because only one of the two cases contain them.
 
+![Screenshot of self-loop reworks.](https://user-images.githubusercontent.com/38796638/227316338-05ac9cd0-f09e-48fa-8c45-26b5699e23c1.png)
 :::image type="content" alt-text="Screenshot of self-loop reworks." source="media/statistics3.png":::
 
 ## Rework metrics - filters
