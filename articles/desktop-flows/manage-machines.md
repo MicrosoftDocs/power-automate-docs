@@ -2,10 +2,9 @@
 title: Manage machines
 description: Manage machines
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 03/21/2023
 ms.author: gtrantzas
 ms.reviewer: marleon
 contributors:
@@ -93,6 +92,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 >
 > - To apply this functionality, you need a [premium per-user plan with attended RPA](https://make.powerautomate.com/pricing/).
 > - When you create a desktop flow connection, you allow Power Automate to create a Windows session on your machine to run your desktop flows. Make sure you trust co-owners of your flows before using your connection in a flow.
+> - If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
 
 ## Maintenance mode for machines
 
