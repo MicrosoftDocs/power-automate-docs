@@ -41,7 +41,6 @@ The **Show significance values** options set the mode with the color highlightin
 
 The number at the chart node represents how many events of the given activity are currently in progress. The color highlight makes it possible to easily distinguish how many events are dealing with the activity at the moment. During the animation, you can easily see which activities often take place in parallel.
 
-![Screenshot of the number and color highlight of the node.](https://user-images.githubusercontent.com/38796638/226277839-1043e555-3314-4673-9359-25f32bde932a.png)
 :::image type="content" alt-text="Screenshot of the number and color highlight of the node." source="media/node-highlight.png":::
 
 To learn more about color highlighting, go to [Display the significance of values](#display-the-significance-of-values) in this topic.
@@ -58,8 +57,7 @@ To learn more about color highlighting, go to [Display the significance of value
 
 The following example shows the highlighted progress indicator for an activity in the process. This indicates the proportion of the count of already performed events of the activity compared to the total count of events of this activity in the process. If all events of the given activity being present in the process in question have already been played back in the animation, the indicator will fill the entire circle.
 
-![Screenshot of the progress indicator.](https://user-images.githubusercontent.com/38796638/226277944-49a02aba-1aac-4a8f-8370-7fc119850d57.png)
-:::image type="content" alt-text="Screenshot of the progress indicator." source="media/image006-2.png":::
+:::image type="content" alt-text="Screenshot of the progress indicator." source="media/activity-progress.png":::
 
 ### See also
 

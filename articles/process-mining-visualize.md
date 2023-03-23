@@ -40,7 +40,7 @@ Different activity combinations and *variants* are shown separately on the proce
 
 You can easily switch between different layers and associated metrics on the process map using the controls on the top left of the process map visual.
 
-The metrics for following layers visualize the same metric on both nodes and transitions. You can switch between the absolute value and relative ratio to the process level metric by clicking the % icon next to the selected metric. 
+The metrics for following layers visualize the same metric on both nodes and transitions. You can switch between the absolute value and relative ratio to the process level metric by clicking the % icon next to the selected metric.
 
 - **Frequency** layer
 
@@ -48,7 +48,7 @@ The metrics for following layers visualize the same metric on both nodes and tra
  
   - **Case count**: The number of process instances in which an activity/transition occurred.
  
-  - **Maximum occurence in case**: The maximum number of times an activity/transition is repeated in one process instance.
+  - **Maximum occurrence in case**: The maximum number of times an activity/transition is repeated in one process instance.
 
 - **Performance** layer
 
@@ -80,13 +80,13 @@ To learn more about the process map visual, go to [Process map overview](minit/p
 
 ## Use KPIs and visualizations for analytics
 
-You'll get several prebuilt KPIs and visualizations to help you to understand your process. You can filter by selectors, such as **Activity** and **Case Id (Premium)**, and custom filters (Premium) if you added the custom attributes (data columns) when you uploaded your data for analysis.
+You'll get several prebuilt KPIs and visualizations to help you to understand your process. You can filter by selectors, such as **Activity** and **Case Id (Premium)**, and custom filters **(Premium)** if you added the custom attributes (data columns) when you uploaded your data for analysis.
 
-| Default | Premium |
-| ------------- | ------------- |
-|![Screenshot of the default 'Summary' tab.](https://user-images.githubusercontent.com/38796638/225129266-e788c511-283e-43d2-b7c4-4675b05e332c.png)|![Full report - Summary](https://user-images.githubusercontent.com/38796638/225129366-5594f5a3-edc8-4dad-b348-c74ad976e45a.png)|
+The following screenshot is an example of visualizations and analytics you'll see in the premium version.
 
-:::image type="content" source="media/process-mining-visualize/analytics.png" alt-text="Screenshot of the 'Summary' tab.":::
+:::image type="content" source="media/process-mining-visualize/kpi-premium.png" alt-text="Screenshot of the 'Summary' tab.":::
+
+If you didn't purchase the premium version, you'll have access to the default version. The top of the default version shows only the four KPIs listed in the [KPIs](#kpis) section in this article and not the two KPIs with **(Premium)** in the title. Also, you won't see the **Average duration of cases over time** chart.
 
 ### KPIs
 
@@ -106,14 +106,11 @@ These KPIs are the same metrics that you see at the top of your report.
 
 To enlarge the view so you can dig deeper into your process, select the **Map** tab.
 
-![Screenshot of the 'Map' tab.](https://user-images.githubusercontent.com/38796638/225128908-8868958b-81e0-4c98-ae3b-e9c2cfca07ab.png)
 :::image type="content" source="media/process-mining-visualize/map-tab.png" alt-text="Screenshot of the 'Map' tab.":::
 
-### Filter pane
+### Filters pane
 
 To drill down into the process, use the filters in the filters dialog. To see the filters, select **Filters** in the upper-right side of the **Summary** tab.
-
-:::image type="content" source="media/process-mining-visualize/filter-buttons.png" alt-text="Screenshot of the 'Filters' option.":::
 
 The filters dialog contains the following filters:
 
@@ -125,11 +122,13 @@ The filters dialog contains the following filters:
 
 - **Custom attribute filters (Premium)**: Allows you to filter on both your event and case level custom attributes for your process.
 
-To select multiple activities or cases, you can also use **Ctrl** + **Click** .
+To select multiple activities or cases, you can use **Ctrl** + **click** .
 
-| Default | Premium |
-| ------------- | ------------- |
-|![Screenshot of the filters dialog.](https://user-images.githubusercontent.com/38796638/225129543-979aad3a-434c-4cad-9e20-7dcb11719639.png)|  :::image type="content" source="media/process-mining-visualize/filter-panel.png" alt-text="Screenshot of the filters dialog in Premium.":::  |
+The following screenshot is an example of the **Filters** pane that you'll see in the premium version.
+
+:::image type="content" source="media/process-mining-visualize/filter-panel.png" alt-text="Screenshot of the Filters pane in the premium version.":::
+
+If you didn't purchase the premium version, you'll have access to the default version. The **Filters** pane shows only the activity selector. You won't have access to the other filters listed in this section with **(Premium)** in the title.
 
 ### Visualizations
 
@@ -141,18 +140,18 @@ To select multiple activities or cases, you can also use **Ctrl** + **Click** .
 
 - **Cases**, **Activities**, and **Variants**: Shows number of cases, activities and variants based on the current filter settings.
 
-![Screenshot of the visualizations.](https://user-images.githubusercontent.com/38796638/225129683-72458f86-9059-4d3b-97a6-315e4c681ad8.png)
-:::image type="content" source="media/process-mining-visualize/visualizations.png" alt-text="Screenshot of the visualizations.":::
+    :::image type="content" source="media/process-mining-visualize/visualizations.png" alt-text="Screenshot of the visualizations.":::
 
 ### Time Analysis (Premium)
 
-The **Time Analysis (Premium)** view allows you to drill down into time bottlenecks by cases, variants, and activity. It also shows you average time spent per case and per variants ordered by the time spent.
+The **Time Analysis (Premium)** doesn't have an alternative default view. It allows you to drill down into time bottlenecks by cases, variants, and activity. The **Time Analysis (Premium)** also shows you average time spent per case and per variants ordered by the time spent.  
 
+The analysis view appears on the right and the corresponding map appears on the left.
 
 :::image type="content" source="media/process-mining-visualize/time-analysis.png" alt-text="Screenshot of the 'Time Analysis' view'.":::
 
 ### Variant DNA
 
-To show the order of all the activities in each variant sorted based on the variants that happen the most often, select the **Variant DNA** tab. The activities are color coded and abbreviated to quickly show a high-level view of the order of the activities that occur. This also helps identify non-compliant processes, self-loops, and loops quickly.
+The **Variant DNA** view is available in both the default and premium views. To show the order of all the activities in each variant sorted based on the variants that happen the most often, select the **Variant DNA** tab. The activities are color coded and abbreviated to quickly show a high-level view of the order of the activities that occur. This also helps identify non-compliant processes, self-loops, and loops quickly.
 
 :::image type="content" source="media/process-mining-visualize/variant-dna.png" alt-text="Screenshot of the 'Variant DNA' tab'.":::
