@@ -99,15 +99,13 @@ In the **Statistics** screen, the rework information is available for **Case ove
 
 The rework columns are located at the far-right end of the table and the information can be also displayed in the chart. The percentage is calculated from the **Event frequency** value. In **Case overview**, it's calculated from the **Event** count.
 
-Information about reworks is also present in the overview bar. The percentage shows the proportion of the displayed rows that contain self-loops, loops, and reworks. In the following example, one out of two cases contains a self-loop so the overview bar shows 50% Avg. self-loop. Similarly, one out of the two contains a loop, hence Avg. loop shows 50%. This means that both cases contain a rework, so Avg. rework shows 100%.
+Information about reworks is also present in the overview panel. The percentage shows the proportion of the displayed rows that contain self-loops, loops, and reworks. In the following example, one out of two cases contains a self-loop so the overview panel shows **50%** average self-loop. Similarly, one out of the two contains a loop. This is why the average loop shows **50%**. This means that both cases contain a rework, so the average rework shows **100%**.
 
-![Screenshot of an overview of reworks.](https://user-images.githubusercontent.com/38796638/227316228-d392abf3-b272-4a08-a238-c16344ac64ac.png)
-:::image type="content" alt-text="Screenshot of an overview of reworks." source="media/statistics2-1.png":::
+:::image type="content" alt-text="Screenshot of an overview of reworks." source="media/rework-stats.png":::
 
-In this example, one case contains one self-loop and one loop. The other one doesn't contain any reworks. That means the **Avg. self-loop**, **Avg. loop**, and **Avg. rework** columns are 50% because only one of the two cases contain them.
+In this example, one case contains one self-loop and one loop. The other one doesn't contain any reworks. That means the average self-loop, average loop, and average rework fields in the overview panel are **50%** because only one of the two cases contain them.
 
-![Screenshot of self-loop reworks.](https://user-images.githubusercontent.com/38796638/227316338-05ac9cd0-f09e-48fa-8c45-26b5699e23c1.png)
-:::image type="content" alt-text="Screenshot of self-loop reworks." source="media/statistics3.png":::
+:::image type="content" alt-text="Screenshot of self-loop reworks." source="media/rework-stats-2.png":::
 
 ## Rework metrics - filters
 
