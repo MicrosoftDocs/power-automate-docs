@@ -29,7 +29,7 @@ Individual operations are divided into two basic groups:
 
 - **Scalar operations:** The input of scalar operation is one or more values for which the resulting value will be calculated (for example, absolute value of the number, obtaining part of the tax, and more).
 
-Operations can use [constants](constants.md), can be combined using [unary or binary operators](unary-operators.md) (for example, addition, subtraction, and more), or nested. Exceptions are aggregation operations that aren't able to be nested further.
+Operations can use [constants](constants.md), can be combined using [unary or binary operators](unary-operators.md) (for example, addition, subtraction, and more), or be nested.
 
 Scalar operations also include operations to obtain a value, either directly available in the form of an attribute or in the form of derived statistics (event duration).
 
@@ -39,7 +39,7 @@ A metric formula can return one of the [supported data types](data-types-custom
 
 ### Aggregation operations
 
-[Aggregation operations](aggregations.md) are the basis of each metric. The following aggregation operations are currently supported:
+[Aggregation operations](aggregations.md) are the basis of each metric. The most commonly used aggregation operations are:
 
 - **COUNT:** Returns the number of aggregated values (`incl. COUNTIF, COUNTUNIQUE`).
 
