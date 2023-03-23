@@ -98,19 +98,24 @@ To enter a custom metrics formula
     The editor supports syntax highlighting, intellisense, and formula validation.
 
     :::image type="content" alt-text="Screenshot of the custom metric expression." source="media/custom-metric-filter.png":::
+    ![filter-cm-pic](https://user-images.githubusercontent.com/117361449/227269627-a86b34f8-4700-4cc5-a84b-268be185c1b1.png)
 
-<!--Please verify that the rest of this article belongs.
+
 For the **Metrics** filter type, you can also apply custom metrics stored in the process context or create a new one. To select existing custom metrics, use the metric dropdown menu. Custom metrics are available at the end of the list.
 
 To create a new one, select (**...**) next to the metric drop-down list and select Add. This opens the standard custom metrics editor (see above). You can also edit and delete existing custom metrics here.
 
 :::image type="content" alt-text="Screenshot of adding a new metric." source="media/filter2.png":::
+![filter-metric-cm](https://user-images.githubusercontent.com/117361449/227300413-23780665-d9a8-46b3-85d4-3e1c86be3178.png)
+
 
 ## Use a custom metric in the Statistics view
 
 Once a custom value or case type metric is defined in the process map, it also becomes available in the **Statistics** view as a new column. It also can be visualized in the graph.
 
 :::image type="content" alt-text="Screenshot of the metrics column in the Statistics screen." source="media/image-60.png":::
+![statistics-cm](https://user-images.githubusercontent.com/117361449/227301933-bd51b41f-c712-4fac-b82d-a3df101f5e85.png)
+
 
 ## Use a custom metric in root cause analysis (RCA)
 
@@ -119,5 +124,6 @@ Custom metrics that return values on case level, can be used in RCA either as a 
 Custom metrics can be also created in RCA settings screen by selecting (**...**) next to the selection of main metric.
 
 :::image type="content" alt-text="screenshot of custom metrics in RCA." source="media/custom-metrics.png":::
--->
+![rca-cm](https://user-images.githubusercontent.com/117361449/227302474-b96dd27c-6fb3-4b01-8c12-a9965d525b52.png)
+
 
