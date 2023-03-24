@@ -1,14 +1,14 @@
 ---
 title: Categorize cases
 description: Learn how to categorize cases in the Power Automate Process Mining desktop app for Power Automate.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptuaL
 ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

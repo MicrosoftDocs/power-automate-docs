@@ -1,14 +1,14 @@
 ---
 title: Business rules statistics
 description: Learn about the statistics available for business rules in minit.
-author: maslejka
+author: janPidych
 contributors:
-  - maslejka
+  - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: janpidych
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

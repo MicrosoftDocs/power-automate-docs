@@ -1,14 +1,14 @@
 ---
 title: List of string operations
 description: Learn bout the string operations that you can use in minit.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow

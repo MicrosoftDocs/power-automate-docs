@@ -1,14 +1,14 @@
 ---
 title: Advanced examples
 description: Get complex examples of custom operators in minit.
-author: maslejka
+author: janPidych
 contributors:
-  - maslejka
+  - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: janpidych
 ms.reviewer: angieandrews
 search.app:
 - Flow

@@ -1,14 +1,14 @@
 ---
 title: Tips and examples
 description: Get tips on how to define a metric formula, reference an attribute name, and more in minit.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow

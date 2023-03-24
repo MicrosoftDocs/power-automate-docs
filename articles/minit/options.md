@@ -1,14 +1,14 @@
 ---
 title: Application settings
 description: Learn how to change application settings such as user interface language or set where the exported files will be stored in minit.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow

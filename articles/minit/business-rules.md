@@ -1,14 +1,14 @@
 ---
 title: Business rules overview
 description: Learn how to define business rules that evaluate KPIs in minit.
-author: maslejka
+author: janPidych
 contributors:
-  - maslejka
+  - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: janpidych
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

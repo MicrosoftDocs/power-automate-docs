@@ -1,14 +1,14 @@
 ---
 title: Business rules for process maps
 description: Learn how to display business rules in the process map in minit.
-author: maslejka
+author: janPidych
 contributors:
-  - maslejka
+  - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: janpidych
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

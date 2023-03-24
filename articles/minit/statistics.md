@@ -1,14 +1,14 @@
 ---
 title: Statistics overview
 description: Get an overview of the properties of the process undergoing analysis minit.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow

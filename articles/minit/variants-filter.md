@@ -1,14 +1,14 @@
 ---
 title: Variants filter
 description: Learn how to restrict the mining in the process only to the cases following a certain scenario in minit.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow

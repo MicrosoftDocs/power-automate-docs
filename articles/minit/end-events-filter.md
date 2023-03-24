@@ -1,14 +1,14 @@
 ---
 title: End events filter
 description: Learn how to restrict cases according to the property of the event that occurred at the beginning or at the end of the case in minit.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow

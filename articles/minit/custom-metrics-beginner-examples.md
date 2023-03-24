@@ -1,14 +1,14 @@
 ---
 title: Basic examples
 description: Get examples of various calculation methods for custom metrics with a focus on proper context and aggregation selection in minit.
-author: mmaslejova
+author: janPidych
 contributors:
-  - mmaslejova
+  - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: janpidych
 ms.reviewer: angieandrews
 search.app:
 - Flow

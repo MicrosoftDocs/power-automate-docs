@@ -1,14 +1,14 @@
 ---
 title: Sequence filter
 description: Learn how to define the sequence in which two events with specific attribute values are performed and specify further requirements for the progress of events in a case in minit.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow

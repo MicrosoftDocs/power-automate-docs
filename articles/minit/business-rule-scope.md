@@ -1,14 +1,14 @@
 ---
 title: Business rule scope 
 description: Learn about the mandatory field scope in business rule definition in minit.
-author: maslejka
+author: janPidych
 contributors:
-  - maslejka
+  - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: janpidych
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

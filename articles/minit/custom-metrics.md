@@ -1,14 +1,14 @@
 ---
 title: Custom metrics overview
 description: Learn how to use predefined metrics to define your own metrics in minit.
-author: maslejka
+author: janPidych
 contributors:
-  - maslejka
+  - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: janpidych
 ms.reviewer: angieandrews
 search.app:
 - Flow

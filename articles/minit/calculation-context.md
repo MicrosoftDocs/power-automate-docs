@@ -1,14 +1,14 @@
 ---
 title: Calculation context
 description: Learn how to define the data scope that's used as the source for an aggregation function in minit.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

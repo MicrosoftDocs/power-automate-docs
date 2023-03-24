@@ -1,14 +1,14 @@
 ---
 title: Customize activities (event-level) statistics
 description: Learn about statistics for process activities (events) in minit.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.app:

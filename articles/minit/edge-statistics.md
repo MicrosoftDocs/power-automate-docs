@@ -1,14 +1,14 @@
 ---
 title: Review edge statistics
 description: View edges in the process undergoing analysis and display their various properties in the Power Automate Process Mining desktop app.
-author: maslejka
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/31/2023
-ms.author: mmaslejova
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
