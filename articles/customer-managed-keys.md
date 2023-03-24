@@ -1,12 +1,10 @@
 ---
 title: Support for customer-managed keys (preview)
-description: Learn about support for customer-managed Keys (CMK) in Power Automate.
-services.
+description: Learn about support for customer-managed Keys in Power Automate.
 suite: flow
 documentationcenter: na
-author: rakrish84
+author: v-aangie
 contributors:
-  - rakrish84
   - v-aangie
 editor: ''
 tags: ''
