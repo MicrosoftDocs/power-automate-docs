@@ -33,12 +33,12 @@ To create a keyboard shortcut that triggers a desktop flow, right-click its name
 
 :::image type="content" source="media/run-flow-keyboard/create-keyboard-shortcut.png" alt-text="Create a keyboard shortcut.":::
 
-To create a keyboard shortcut that pauses/resumes or stops the running flow go to [Console Settings](console.md#console-settings). 
+To create a keyboard shortcut that pauses/resumes or stops the running flow go to [Console Settings](console.md#console-settings).
 
-> [!NOTE] 
-> A list of all keyboard shortcuts can be found at `%localappdata%\Microsoft\Power Automate Desktop\Console\console.config` for each user that has signed into Power Automate on the current machine and under the current user in the past. 
+> [!NOTE]
+> A list of all keyboard shortcuts can be found at `%localappdata%\Microsoft\Power Automate Desktop\Console\console.config` for each user that has signed into Power Automate on the current machine and under the current user in the past.
 
-## Limitations 
+## Limitations
 
 - Supported keys and key combinations include either a single Functional key or a combination of at least one modifier key along with any other key. 
 
