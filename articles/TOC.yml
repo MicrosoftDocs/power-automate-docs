@@ -938,7 +938,7 @@
     href: environments-overview-admin.md
   - name: IP address configuration
     href: ip-address-configuration.md
-  - name: Support for customer-managed keys
+  - name: Support for customer-managed keys (preview)
     href: customer-managed-keys.md
   - name: View desktop flows analytics
     href: ./desktop-flows/overview-analytics.md
