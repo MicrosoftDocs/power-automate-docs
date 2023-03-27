@@ -92,19 +92,18 @@ Removing of the Power Automate license or service for a user in your organizatio
 
 ### Why did 10,000 licenses for Power Automate show up in my Office 365 tenant?
 
-Any person can try out Power Automate Free for 90 days, and these trial licenses represent the available capacity for new Power Automate users in your tenant. There is no charge for these licenses.
+Any person can try out Power Automate for Free and these licenses represent the available capacity for new Power Automate users in your tenant. There is no charge for these licenses.
 
 If at least one user in your tenant has signed-up for a **Microsoft Power Automate Free** license, you will see 10,000 licenses (minus any assigned) under **Billing** > **Licenses** for your organization.
 
-You can choose to assign additional licenses to users yourself through the Office 365 admin portal, but note that these are trial licenses for Power Automate, and they will expire after 90 days of being assigned to a user.
-
+You can choose to assign additional licenses to users yourself through the Office 365 admin portal. 
 ### Is this free? Will I be charged for these licenses?
 
-No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. Moreover, they also do not use any quotas, such as run quotas.
+No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. 
 
 ### I removed the Power Automate Free license and users can still access it.
 
-The Power Automate Free license is included only for tracking purposes. As covered in the first section, it is not possible to prevent another person from using Power Automate for individual purposes. Thus, the presence of a Power Automate Free license does not actually grant or remove any capabilities.
+The Power Automate Free license is included only for tracking purposes. As covered in the first section, it is not possible to prevent another person from using Power Automate for individual purposes. 
 
 ### Why can't I see all Power Automate licenses in the Office 365 Admin portal?
 
