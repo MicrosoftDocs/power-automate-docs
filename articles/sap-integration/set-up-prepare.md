@@ -189,7 +189,7 @@ The SAP ERP connector supports Azure AD and Windows authentication by enabling S
 
 ### Step 4: Set up SAP server and user accounts to allow actions
 
-For more information, which includes the supported user account types and the minimum required authorization for each action type (RFC, BAPI, IDOC), review [SAP Note 460089 - Minimum authorization profiles for external RFC programs](https://accounts.sap.com/saml2/idp/sso).
+For more information, which includes the supported user account types and the minimum required authorization for each action type (RFC, BAPI, IDOC), review [SAP Note 460089 - Minimum authorization profiles for external RFC programs](https://accounts.sap.com/).
 
 SAP user accounts need to access `RFC_Metadata` function group and the respective function modules for the following operations:
 
