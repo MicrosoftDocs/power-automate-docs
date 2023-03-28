@@ -112,5 +112,6 @@ With multiple environments, in some cases no flows may appear to be running even
 ## Known issues
 - Microsoft recommends that you limit the number of short (~under 1 min) desktop flows that you queue in large machine groups.
 - Machines and machine groups are not available in China regions. You can still view the desktop flow queue for your gateways by visiting **Desktop flow queues** under the **Monitor** section in the left navigation.
+- Desktop flow queues are designed with a best-effort FIFO (first-in, first-out) approach to process runs in the order in which they were received, with the oldest run being executed first. However, due to the nature of how runs are prepared and processed internally, it is possible that runs that were added a few seconds later to the queue may be started before the previous one already in queue.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
