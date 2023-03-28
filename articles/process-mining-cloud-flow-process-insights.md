@@ -24,6 +24,11 @@ search.audienceType:
 
 Process mining can help you gain valuable insights and optimize your cloud flows. You can visualize your flow's performance, identify bottlenecks and opportunities for improvement, and monitor for performance drifts. By utilizing process advisor to analyze your flow's run history with process mining techniques, you can generate these insights directly from the flow details page.
 
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
 ## Prerequisites
 
 To generate process insights, you must meet the following prerequisites:

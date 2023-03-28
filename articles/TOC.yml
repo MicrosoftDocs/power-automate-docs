@@ -704,7 +704,7 @@
       href: process-mining-visualize.md
     - name: Customize a report with your own Power BI workspace
       href: process-mining-pbi-workspace.md
-    - name: Improve cloud flows with process insights
+    - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
       href: process-mining-share.md
@@ -810,7 +810,7 @@
           href: ./minit/general-information.md
         - name: Requirements for application
           href: ./minit/requirements-for-application.md
-        - name: List of data types-custom metrics
+        - name: Data types for custom metrics
           href: ./minit/data-types-custom-metrics.md
         - name: Constants
           href: ./minit/constants.md
@@ -822,7 +822,7 @@
           href: ./minit/date-and-time-operations.md
         - name: Mathematical operations
           href: ./minit/mathematical-operations.md
-        - name: Statistical operations
+        - name: List of statistical operations
           href: ./minit/statistical-operations.md
         - name: List of string operations
           href: ./minit/string-operations.md
@@ -844,7 +844,7 @@
           href: ./minit/business-rules.md
         - name: Business rule scope
           href: ./minit/business-rule-scope.md
-        - name: Business rules in process maps
+        - name: Business rules for process maps
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md          

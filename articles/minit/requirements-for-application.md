@@ -23,7 +23,7 @@ Custom metrics can be applied in **Process map**, **Statistics**, and **Filterin
 
 The sections in this article list the specific requirements for their application.
 
-## Process Map
+## Process map
 
 Following are the requirements for the process map metric type:
 

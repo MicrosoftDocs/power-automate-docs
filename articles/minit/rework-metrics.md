@@ -114,3 +114,7 @@ The Metrics filter supports filtering per case according to the amount of self-l
 Filters **Attributes (conditional)** and **Edge (conditional)** allow using rework metrics filter per event.
 
 :::image type="content" alt-text="Screenshot of the metrics filter per event." source="media/rework-filters.png":::
+
+### See also
+
+[Process map overview](process-map.md)

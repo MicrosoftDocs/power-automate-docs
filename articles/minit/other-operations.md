@@ -347,4 +347,4 @@ Returns the value of the event satisfying the condition retrieved by the offset.
 
 **Example**: `MOVEIF(3, userName == "Laura", eventCost, 0)`
 
-Metric applicable on metrics filter. Returns event cost for the 3rd next event which was done by the user "Laura" in the current case.
+Metric applicable on metrics filter. Returns event cost for the third next event which was done by the user "Laura" in the current case.

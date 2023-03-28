@@ -59,6 +59,6 @@ Following are the main components in minit:
 - [Settings](settings.md)
 
 - Advanced features
-    - [Custom metrics](custom-metrics-how-to.md)
+    - [Custom metrics](custom-metrics.md)
     - [Business rules](business-rules.md)
 

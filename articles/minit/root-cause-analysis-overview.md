@@ -6,7 +6,7 @@ contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 03/31/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews

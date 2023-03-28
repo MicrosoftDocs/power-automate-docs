@@ -19,7 +19,7 @@ search.audienceType:
 
 # Export and import filters
 
-Minit offers an option to export existing set of filters in the view and re-use them in another view or process. To export or import filters, select (**...**) menu at the top.
+Minit offers an option to export existing set of filters in the view and re-use them in another view or process. To export or import filters, select (**...**) in the menu at the top of the **Filtering** screen.
 
 :::image type="content" alt-text="Screenshot of the export filters option." source="media/import-export-filter.png":::
 

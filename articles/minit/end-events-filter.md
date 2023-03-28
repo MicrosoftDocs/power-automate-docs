@@ -21,7 +21,7 @@ search.audienceType:
 
 Use this filter to restrict cases according to the property of the event that occurred at the beginning or at the end of the case.
 
-The filter shown in the following screenshot will only select the cases starting with the **Confirm order** activity and ending with the **Mark order as complete** activity.
+The filter in the following screenshot will only select the cases starting with the **Confirm order** activity and ending with the **Mark order as complete** activity.
 
 :::image type="content" alt-text="Screenshot of a filter that specifies start and end." source="media/end-events-filter.png":::
 

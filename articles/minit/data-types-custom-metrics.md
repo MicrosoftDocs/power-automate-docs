@@ -17,9 +17,9 @@ search.audienceType:
 - enduser
 ---
 
-# List of data types - custom metrics
+# List of data types for custom metrics
 
-The following table lists the custom metrics data types.
+The following table lists the data types for custom metrics.
 
 | Data type | Description | Allowed value range |
 | - | - | - |

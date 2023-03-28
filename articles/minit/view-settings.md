@@ -67,12 +67,12 @@ The **Activity label** tab allows you to do the following:
 
 - (If the default label is **Custom**) Edit the display format.
 
-
-
 ## Calendar settings
 
 Select an existing calendar in the **Calendar** dropdown menu. If the menu options don't include the calendar template that you want to use, select the ellipses (**...**) to define a new template. If an existing calendar is close to what you want, select it in the **Calendar** dropdown menu, and then select (**...**) > **Edit**.
 
 Calendar templates can be shared across minit projects. To manage all calendar templates, select **Settings** > **Working hours**. To learn more, go to [Settings](settings.md).
 
+### See also
 
+[Process map overview](process-map.md)

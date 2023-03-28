@@ -506,4 +506,4 @@ Can be used on case metrics filters or case overview statistics. Returns true if
 
 ### See also
 
-For a list of all calculation contexts for aggregation operations, go to [Calculation context](calculation-context.md)
+[All calculation contexts for aggregation operations](calculation-context.md)
