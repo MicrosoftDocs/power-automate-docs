@@ -49,7 +49,7 @@ The assembled team of IT system administrators needs to review the following req
 - [Power Platform licensing](/power-platform/admin/pricing-billing-skus). Determine if your organization has the necessary [licensing](https://www.microsoft.com/licensing/default) to proceed with the setup. It's important to consider:
   - Power Apps, Power Automate, and Power BI licensing that supports setting up and using an on-premises data gateway with premium applications, flows, and connectors (SAP ERP and Dataverse).
   - All administrators implementing and functional business users testing and using SAP Integration have the required licenses to do so.
-    - A [Power BI license](/getting-started-with-power-bi/?accordion=getting-started-with-powerbi-accordion&panel=p1&tab=t1) is required for the admin who is setting up the on-premises data gateway.
+    - A [Power BI license](/power-bi/fundamentals/service-features-license-type) is required for the admin who is setting up the on-premises data gateway.
 
 - [SAP](<https://www.sap.com/>) subscription:
   
