@@ -28,7 +28,7 @@ This tutorial with sample data allows you to experience task mining in the proce
 - [View metrics with activity combinations and variants](#view-metrics-with-activity-combinations-and-variants)
 - [Identify automation opportunities](#identify-automation-opportunities)
 
-For the task mining tutorial, download [User recording demo data](https://go.microsoft.com/fwlink/?linkid=2175600). For the process mining tutorial, go to [Tutorial: Get started with process mining (preview)](process-mining-tutorial.md).
+For the task mining tutorial, download [User recording demo data](https://go.microsoft.com/fwlink/?linkid=2175600). For the process mining tutorial, go to [Tutorial: Get started with process mining](process-mining-tutorial.md).
 
 ## Get process advisor ready
 

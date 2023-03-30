@@ -8,7 +8,7 @@ contributors:
   - tatn
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 03/15/2023
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -47,7 +47,7 @@ Here are some reasons to help you decide to use process mining.
 
 - Understand where and why problems occur.
 
-Explore the topics in [Process mining (preview)](process-mining-overview.md) and [Task mining](task-mining-overview.md) in this documentation for the following:
+Explore the topics in [process mining](process-mining-overview.md) and [task mining](task-mining-overview.md) in this documentation for the following:
 
 - Business scenarios
 
@@ -69,7 +69,7 @@ Here are some reasons to help you decide to use task mining.
 
 ## What you'll find in this documentation
 
-Explore the topics in [Process mining (preview)](process-mining-overview.md) and [Task mining](task-mining-overview.md) in this documentation for the following:
+Explore the topics in [process mining](process-mining-overview.md) and [task mining](task-mining-overview.md) in this documentation for the following:
 
 - Business scenarios
 

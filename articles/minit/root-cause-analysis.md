@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/03/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
@@ -35,7 +35,7 @@ To create a new RCA, create an analysis.
 
 If you choose a main metric, you can't choose the same metric in **Influenced by**. Also, don't choose similar metrics in **Influenced by** as the main metric, as the algorithm will choose those metrics on every split. For example, if your main metric is **Case duration**, don't select **Case Active Time** in the **Influenced by** section, as this will provide you no new information.
 
-## **Change options in the Analysis tab**
+## Change options in the Analysis tab
 
 You can customize the view to your preferences.
 

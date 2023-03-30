@@ -1,5 +1,5 @@
 ---
-title: Aggregations
+title: List of aggregations
 description: Learn about the aggregations you can use in custom metrics in minit.
 author: rosikm
 contributors:
@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/03/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -18,7 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Aggregations
+# List of aggregations
 
 This article describes the aggregations you can use in custom metrics.
 

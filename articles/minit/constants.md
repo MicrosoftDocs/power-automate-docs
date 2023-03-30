@@ -1,5 +1,5 @@
 ---
-title: Constants
+title: List of constants
 description: Get a list of constants in minit.
 author: rosikm
 contributors:
@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/03/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
@@ -17,7 +17,7 @@ search.audienceType:
 - enduser
 ---
 
-# Constants
+# List of constants
 
 The following table lists the constants in minit.
 

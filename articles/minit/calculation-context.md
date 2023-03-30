@@ -1,5 +1,5 @@
 ---
-title: Calculation context
+title: List of calculation context
 description: Learn how to define the data scope that's used as the source for an aggregation function in minit.
 author: rosikm
 contributors:
@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/03/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -18,7 +18,7 @@ search.audienceType:
 - enduser
 ---
 
-# Calculation context
+# List of calculation context
 
 In aggregation functions, the calculation context defines the data scope that's used as the source for the aggregation. Minit provides several data calculation modes, which are described in [Requirements for application](requirements-for-application.md).
 

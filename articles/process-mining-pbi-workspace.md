@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -155,7 +155,7 @@ Once this step is done, you'll see the report in your Power BI workspace with th
 
 ## Troubleshoot issues
 
-If you encounter issues or error messages, go to [Issues with your own Power BI workspace (preview)](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace-preview).
+If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace-preview).
 
 ### See also
 

@@ -812,15 +812,15 @@
           href: ./minit/requirements-for-application.md
         - name: Data types for custom metrics
           href: ./minit/data-types-custom-metrics.md
-        - name: Constants
+        - name: List of constants
           href: ./minit/constants.md
-        - name: List of unary operators
+        - name: List of unary and binary operators
           href: ./minit/unary-operators.md
-        - name: Aggregations
+        - name: List of aggregations
           href: ./minit/aggregations.md
-        - name: Date and time operations
+        - name: List of date and time operations
           href: ./minit/date-and-time-operations.md
-        - name: Mathematical operations
+        - name: List of mathematical operations
           href: ./minit/mathematical-operations.md
         - name: List of statistical operations
           href: ./minit/statistical-operations.md
@@ -828,7 +828,7 @@
           href: ./minit/string-operations.md
         - name: List of other operations
           href: ./minit/other-operations.md
-        - name: Calculation context
+        - name: List of calculation context
           href: ./minit/calculation-context.md
         - name: Calculation methods
           items:

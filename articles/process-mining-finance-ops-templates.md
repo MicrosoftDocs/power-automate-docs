@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -125,7 +125,7 @@ Once the analysis is done, there will be a custom report to visualize your P2P p
 
 ## Visualizations and KPIs
 
-P2P templates have additional KPIs and visualizations built on top of the standard report. To learn more about the process map and filters, go to [Visualize and gain insights from processes in process advisor (preview)](process-mining-visualize.md).
+P2P templates have additional KPIs and visualizations built on top of the standard report. To learn more about the process map and filters, go to [Visualize and gain insights from processes in process advisor](process-mining-visualize.md).
 
 - **PO items**: The PO line item is the **Case ID** for this report. Every unique PO line item is represented as a case.
 
