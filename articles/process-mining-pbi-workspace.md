@@ -40,8 +40,8 @@ You'll need to set up your Power BI workspace to connect it to process advisor a
     - If **App registrations** is **Yes**, any user can register process advisor as an app.
     - If **App registrations** is **No**,  only admins can register apps. If you are an admin, you can choose to turn this on to allow others to register process advisor as an app.
 
- 1. In the Windows taskbar, select **Search**.
- 
+ 1. On the Windows taskbar, select **Search**.
+
  1. Type **powershell**, and then select **Run as Administrator**.
 
     :::image type="content" source="media/process-mining-pbi-workspace/powershell-run.png" alt-text="Screenshot of the search for the Windows PowerShell app.":::
@@ -50,11 +50,11 @@ You'll need to set up your Power BI workspace to connect it to process advisor a
 
 If you haven't done this yet, install the Azure tools.
 
-1. In the **Administrator: Windows PowerShell** window, type **Install-Module AzureAD**, and then select **Enter**.
+1. On the **Administrator: Windows PowerShell** screen, type **Install-Module AzureAD**, and then select **Enter**.
 
 1. When prompted to confirm installation, enter **Y**, and then select **Enter**.
 
-1. Connect your Azure account by typing **Connect-AzureAD** and then sign in.
+1. Connect your Azure account by typing **Connect-AzureAD**, and then sign in.
 
 1. Validate that you're signed in.
 
@@ -126,7 +126,6 @@ After completing these steps, return to the analytics page of your process in pr
 
 1. Select **Open in Power BI**. If you don't see this button, make sure you've completed the steps in the [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi) section in this article.
 
-
     :::image type="content" source="media/process-mining-pbi-workspace/open-pbi.png" alt-text="Screenshot of the 'Open in Power BI' button.":::
 
     You'll be redirected to a Power BI web screen that will show you a report of your process.
@@ -155,7 +154,7 @@ Once this step is done, you'll see the report in your Power BI workspace with th
 
 ## Troubleshoot issues
 
-If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace-preview).
+If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
 
 ### See also
 
