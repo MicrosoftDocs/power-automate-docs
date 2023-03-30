@@ -49,5 +49,5 @@ The following table describes binary operators.
 | `x < y` | Returns TRUE only if x is less than y, else returns FALSE | INT, FLOAT, DATE, TIME | BOOL |
 | `x <= y` | Returns TRUE only if x is less than OR equal to y, else returns FALSE | INT, FLOAT, DATE, TIME | BOOL |
 | `x && y` |Returns TRUE only if BOTH x and y are TRUE, else FALSE | BOOL | BOOL |
-| `x \|\| y` | Returns TRUE if either x OR y is TRUE, else FALSE | BOOL | BOOL |
+| `x \| \| y`  | Returns TRUE if either x OR y is TRUE, else FALSE | BOOL | BOOL |
 
