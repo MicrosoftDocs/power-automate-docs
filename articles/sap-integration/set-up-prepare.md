@@ -13,13 +13,11 @@ ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: how-to
-ms.date: 02/17/2023
+ms.date: 03/31/2023
 
 ---
 
-# Set up SAP integration with Power Platform (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up SAP integration with Power Platform
 
 A successful SAP integration with Microsoft Power Platform requires coordination with your organization's IT administrators. With some planning, setup, and configuration, you'll be able to ensure that your SAP system can communicate with Power Platform.
 
