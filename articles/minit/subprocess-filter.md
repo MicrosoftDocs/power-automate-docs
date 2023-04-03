@@ -1,14 +1,14 @@
 ---
-title: Subprocess filter (preview)
-description: Learn how to remove part of a process from cases in the Minit desktop application in process advisor.
-author: maslejka
+title: Subprocess filter
+description: Learn how to remove part of a process from cases in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
@@ -17,40 +17,31 @@ search.audienceType:
 - enduser
 ---
 
-# Subprocess filter (preview)
+# Subprocess filter
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+Use this event level filter to `„cut out"` a part of the process from all the cases. Where the criteria for the subprocess doesn't apply, the case is completely excluded. For example, in a purchase order approval process, you want to focus on the part from purchase order creation until the purchase order is marked as approved. Another example is, in a service center ticket solving process, you want to see only the part being dealt with by the second level support department.
 
-Use this event level filter to „cut out" a part of the process from all the cases (where the criteria for subprocess don't apply, case is completely excluded). For example, in a purchase order approval process we want to focus on the part from purchase order creation until the purchase order is marked as approved, or in a service center ticket solving process we want to see only the part being dealt by the second level support department.
+The following screenshot depicts the settings for the subprocess from the first occurrence of **Mark order as complete** or **Suggest relevant options** to the last occurrence of **Notify customer that bike is ready for pickup** activity.
 
-In general, this filter can be defined as:
+:::image type="content" alt-text="Screenshot of the settings for a subprocess filter." source="media/subprocess-filter.png":::
 
-**Extracting events of each case in chronological order from the first occurrence of event with a specific value(s) of first attribute until the last occurrence of event with specific value(s) of second attribute.**
+## Define the subprocess filter
 
-The following screenshot depicts the settings for the subprocess from the first occurrence of **Status change to Approved** to the last occurrence of **Status changed to Accounted** activity.
+In general, this filter can be defined as extracting events of each case in chronological order from the first occurrence of event with a specific value(s) of first attribute until the last occurrence of event with specific value(s) of second attribute.
 
-:::image type="content" alt-text="Screenshot of the settings for a subprocess." source="media/image042.png":::
+1. From the **events located between the first occurrence of event with attribute** dropdown menu, select the attribute on the basis of which the events in the case are selected.
 
-#### Select an attribute for comparing events
+1. Select the **having one of these values** field, and then select which events belong to the first group of events in the **List** tab to the right. Your selections appear in the field.
 
-Select the attribute on the basis of which the events in the case are selected.
+1. Select the **and the last occurrence of event having one of these values** field, and then select which events belong to the second group of events in the **List** tab to the right. Your selections appear in the field.
 
-:::image type="content" alt-text="Screenshot of the dropdown menu of attributes for comparing events." source="media/image043.png":::
+## Use list and expression values
 
-#### Specify the first event
+There are two possibilities to define the values for filter criteria. This is done in the **List** or **Expression** tab.
 
-Select which events belong to the first group of events. Select permissible values for its selected attribute in the list on the right side of the screen.
+- **List:** Available for string attributes. Select or remove values to and from the list. If the list is long, you can use search to find specific values.
 
-First occurrence of this event will be evaluated.
+- **Expression:** Available for both string and numeric attributes. Specify an expression such as `„Starts with", „Contains"` for string and, an expression such as `„Greater than", „Equal"` for numeric attributes.
 
-:::image type="content" alt-text="Screenshot of events belonging to the first group of events." source="media/image044.png":::
-
-#### Specify the second event
-
-Select which events belong to the second group of events. Select permissible values for its selected attribute in the list on the right side of the screen.
-
-Last occurrence of this event will be evaluated.
-
-:::image type="content" alt-text="Screenshot of the events belonging to the second group of events." source="media/image045.png":::
-
+    You can also select **fx** to use [custom metrics](custom-metrics.md).
 
