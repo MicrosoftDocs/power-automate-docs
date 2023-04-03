@@ -1,14 +1,14 @@
 ---
-title: Rework metrics (preview)
-description: Learn about rework metrics types and more in the Minit desktop application in process advisor.
-author: maslejka
+title: Rework metrics
+description: Learn about rework metrics types and more in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 03/31/2013
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
@@ -17,104 +17,104 @@ search.audienceType:
 - enduser
 ---
 
-# Rework metrics (preview)
+# Rework metrics
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-Rework metrics represent a layer of data analysis with a focus on identifying various kinds of repetitions found in a process. Rework information is covered in Statistics and can be visualized on the Process map for better understanding the root cause of each repetition and its overall impact. Reducing repetitions is crucial for improving the efficiency of the process as well as reducing costs.
-
-## Types of rework metrics
+Rework metrics represent a layer of data analysis with a focus on identifying various kinds of repetitions found in a process. Rework information is covered in the **Statistics** screen and can be visualized on the process map for better understanding the root cause of each repetition and its overall impact. Reducing repetitions is crucial for improving the efficiency of the process as well as reducing costs.
 
 The following sections list the types of rework metrics.
 
-### Self-loop
+## Self-loop
 
-Self-loop represents a specific repetition where an activity is directly followed by the same activity. In terms of edges/transitions, the starting and ending activity of edge is the same.
+Self-loop represents a specific repetition where an activity is directly followed by the same activity. In terms of edges and transitions, the starting and ending activity of edge is the same.
 
-**Example:** The activity called *BP Transfer* repeats itself 9 times. There are zero values over all the other activities/edges because no other activities are involved in this type of repetition.
+### Example of self-loop
 
-:::image type="content" alt-text="Screenshot of a self-loop example." source="media/example1-v56.png":::
+The activity called *BP Transfer* repeats itself nine (9) times. There are zero values over all the other activities and edges because no other activities are involved in this type of repetition.
 
-### Loop
+## Loop
 
-Loop represents specific repetition where activity is followed by the same activity, but not directly. For example, at least one additional activity is always involved.
+Loop represents specific repetition where an activity is followed by the same activity, but not directly. For example, at least one additional activity is always involved.
 
-**Example:** Activities *SetDeliveryDate* and *Approve* are repeated 7 times. The edge between these two activities is also repeated 7 times. Keep in mind that in a process map, an activity may be repeated, but each time a different edge/transition can be used. Loop count value for non-repeated edge is zero, regardless of loop count for starting or ending activity of the edge.
+### Example of loop
 
-:::image type="content" alt-text="Screenshot of a loop example." source="media/example2-v56.png":::
+Activities *SetDeliveryDate* and *Approve* are repeated seven (7) times. The edge between these two activities is also repeated seven (7) times. Keep in mind that in a process map, an activity might be repeated, but each time a different edge or transition can be used. The loop count value for a non-repeated edge is zero, regardless of the loop count for the starting or ending activity of the edge.
 
-### Rework
+## Rework
 
 Rework count represents the sum of all self-loops and loops.
 
-**Example:** The number of self-loops of the activity *BP Transfer* is displayed together with the number of loops of the activities *SetDeliveryDate* and *Approve*. If any of the activities contained both self-loops and loops, their numbers would add up.
+### Example of rework
 
-:::image type="content" alt-text="Screenshot of a rework example." source="media/example3-v56.png":::
+The number of self-loops of the activity *BP Transfer* displays with the number of loops of the activities *SetDeliveryDate* and *Approve*. If any of the activities contained both self-loops and loops, their numbers would add up.
 
-### Loop inflow
+## Loop inflow
 
 Loop inflow represents the repetitions of an activity's predecessors.
 
-**Example:** In this example, the activity *SetDeliveryDate* has been repeated 7 times, so the loop inflow for the activity *Approve* is also 7, as *SetDeliveryDate* is the only predecessor of *Approve*.
+### Example of loop inflow
 
-:::image type="content" alt-text="Screenshot of a loop inflow example." source="media/example4-v56.png":::
+In this example, the activity *SetDeliveryDate* has been repeated seven (7) times, so the loop inflow for the activity *Approve* is also seven (7), as *SetDeliveryDate* is the only predecessor of *Approve*.
 
 As the activity *SetDeliveryDate* has been preceded by non-repeated activities, its loop inflow value is zero, regardless of the number of repetitions of itself. However, the edge between *SetDeliveryDate* and *Approve* has a non-zero value as the starting activity was repeated.
 
-### Loop outflow
+## Loop outflow
 
 Loop outflow represents the repetitions of an activity's successors.
 
-**Example:** The activity *Approve* has the value of zero, none of the successor activities was repeated. *SetDeliveryDate* shows value 7, as activity's *Approve* loop count equals 7. The edge between *SetDeliveryDate* and *Approve* shows value 7, as the ending edge activity *Approve* has been repeated 7 times.
+### Example of loop outflow
 
-:::image type="content" alt-text="Screenshot of a loop outflow example." source="media/example5-v56.png":::
+The activity *Approve* has the value of zero, none of the successor activities was repeated. *SetDeliveryDate* shows value 7, as activity's *Approve* loop count equals 7. The edge between *SetDeliveryDate* and *Approve* shows value 7, as the ending edge activity *Approve* has been repeated 7 times.
 
 ### Net loop gain
 
 This activity metric represents the difference between *Loop outflow* and *Loop inflow*. If the value is positive, the activity is directly followed by more repeated activities than it was preceded. Such activities start new loops in processes. If the value is negative, the activity is directly followed by less repeated activities than it was preceded. Such activities end, close, or exit loops in processes. The halo effect color also helps us see positive and negative trends in the process - red color represents a problem (start of new loops); the blue color represents a favorable change (end of loops).
 
-**Example:** *SetDeliveryDate* is followed by repeated activity *Approve* while it has no repeated predecessors (value 0). The activity is thus involved in the creation of 7 new loops (value 7). Activity *Approve* is not followed by a repeated activity (value 0), but its predecessors are repeated 7 times. The activity *Approve* is thus involved in closing 7 loops (value -7).
+### Example of net loop gain
 
-:::image type="content" alt-text="Screenshot of a net loop gain example." source="media/example6-v56-1.png":::
+*SetDeliveryDate* is followed by repeated activity *Approve* while it has no repeated predecessors (value 0). The activity is thus involved in the creation of seven (7) new loops (value 7). Activity *Approve* is not followed by a repeated activity (value 0), but its predecessors are repeated seven (7) times. The activity *Approve* is thus involved in closing seven (7) loops (value -7).
 
 ## Rework metrics - process map
 
-To display the rework information, open the Customize panel and select **Rework**. The map displays information representing the volume of repetitions for activities and edges the process involves.
+In rework metrics, the map displays information representing the volume of repetitions for activities and edges the process involves.
 
-Using the clip icon, you can select if one metric is used both for activities and edges, or each metric is set separately. You can select **%** to switch between count and percentage for each metric.
+To display the rework information:
 
-:::image type="content" alt-text="Screenshot of the fields in the Rework metrics screen." source="media/image000-v45.png":::
+1. On the panel on the right, select **Customize** (the top icon).
+
+1. On the **Customize** toolbar, select **Rework**. 
+
+    You can select if one metric is used both for activities and edges, or each metric is set separately. To switch between count and percentage for each metric, select **%**.
+
+    :::image type="content" alt-text="Screenshot of the fields in the Rework metrics screen." source="media/rework-customize.png":::
 
 The list of metrics is the same for both activities and edges, with one exception. Metric **Net Loop Gain** is available only for activities.
 
-:::image type="content" alt-text="Screenshot of the dropdown menu for the Self-loop count field." source="media/image001-v56.png":::
-
 By selecting an activity or edge, you can display rework details about the particular object. The percentage represents the proportion of the individual types of reworks to the overall number of instances.
 
-:::image type="content" alt-text="Screenshot of details of a particular object." source="media/detail-v56-1.png":::
+:::image type="content" alt-text="Screenshot of details of a particular object." source="media/rework-detail.png":::
 
 ## Rework metrics - statistics
 
-In the Statistics section, the rework information is available for Case overview, Activities, Edge statistics, Resources, and all event-level attribute statistics.
+In the **Statistics** screen, the rework information is available for **Case overview**, **Activities**, **Edge statistics**, **Resources**, and all event-level attribute statistics.
 
-The rework columns are located at the far-right end of the table and the information can be also displayed in the chart. The percentage is calculated from the Event frequency value (in case of Case overview from the Event count).
+The rework columns are located at the far-right end of the table and the information can be also displayed in the chart. The percentage is calculated from the **Event frequency** value. In **Case overview**, it's calculated from the **Event** count.
 
-:::image type="content" alt-text="Screenshot of statistics for rework metrics." source="media/image-54.png":::
+Information about reworks is also present in the overview panel. The percentage shows the proportion of the displayed rows that contain self-loops, loops, and reworks. In the following example, one out of two cases contains a self-loop so the overview panel shows **50%** average self-loop. Similarly, one out of the two contains a loop. This is why the average loop shows **50%**. This means that both cases contain a rework, so the average rework shows **100%**.
 
-Information about reworks is also present in the overview bar. The percentage shows the proportion of the displayed rows that contain self-loops, loops, and reworks. In the following example, one out of two cases contains a self-loop so the overview bar shows 50% Avg. self-loop. Similarly, one out of the two contains a loop, hence Avg. loop shows 50%. This means that both cases contain a rework, so Avg. rework shows 100%.
+:::image type="content" alt-text="Screenshot of an overview of reworks." source="media/rework-stats.png":::
 
-:::image type="content" alt-text="Screenshot of an overview of reworks." source="media/statistics2-1.png":::
+In this example, one case contains one self-loop and one loop. The other one doesn't contain any reworks. That means the average self-loop, average loop, and average rework fields in the overview panel are **50%** because only one of the two cases contain them.
 
-In this example, one case contains one self-loop and one loop. The other one does not contain any reworks. Thus the displayed Avg. self-loops, Avg. loops and Avg. reworks is 50% because only one of the two cases contain them.
-
-:::image type="content" alt-text="Screenshot of self-loop reworks." source="media/statistics3.png":::
+:::image type="content" alt-text="Screenshot of self-loop reworks." source="media/rework-stats-2.png":::
 
 ## Rework metrics - filters
 
-The Metrics filter supports filtering per case according to the amount of self-loops, loops and reworks.
+The Metrics filter supports filtering per case according to the amount of self-loops, loops, and reworks.
 
-:::image type="content" alt-text="Screenshot of the metrics filter per case." source="media/image-55.png":::
+Filters **Attributes (conditional)** and **Edge (conditional)** allow using rework metrics filter per event.
 
-Filters Attributes (conditional) and Edge (conditional) allow using rework metrics filter per event.
+:::image type="content" alt-text="Screenshot of the metrics filter per event." source="media/rework-filters.png":::
 
-:::image type="content" alt-text="Screenshot of the metrics filter per event." source="media/image-56.png":::
+### See also
+
+[Process map overview](process-map.md)

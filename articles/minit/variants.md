@@ -1,14 +1,14 @@
 ---
-title: Variants overview (preview)
-description: Learn about the process performance variants in the Minit desktop application in process advisor.
-author: maslejka
+title: Analyze processes with variants
+description: Learn about the process performance variants in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
@@ -17,103 +17,102 @@ search.audienceType:
 - enduser
 ---
 
-# Variants overview (preview)
+# Analyze processes with variants
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+With process variants, you can accurately explore all possibilities of how a process can develop and identify problematic scenarios (for example, a transition variant with an unusually high number of events). 
+The quantity of variants makes it possible to accurately identify the most frequent scenarios occurring in the process. This way, you can easily and quickly determine which process scenarios require your attention.
 
-This section deals with process performance variants.
+The careful examination of process variants can help you uncover various scenarios and situations that occur in the process. With filtering by variants, the analyzed process can be easily restricted to only those parts or scenarios that are of interest for achieving the final objective of the analysis.
+A process variant is an organized sequence of activities that corresponds to the course of at least one case in the process under analysis. All cases in the process in which the same activities are performed in the same sequence fall under one variant.
 
+The decisive condition for determining the respective variant and the arrangement of events is the **event start** time.
 
-
-## What Is a variant?
-
-A process performance variant is an organized sequence of activities that corresponds to the course of at least one case in the process under analysis. All cases in the process in which the same activities are performed in the same sequence fall under one variant.
-
-The decisive condition for determining the respective variant and the arrangement of events is the** event start** time.
-
-## Variant mining attribute
+### Variant mining attribute
 
 Similar to a process map, which is by default generated using activities but can be switched to a resource viewpoint (similar to a social chart in the process map), the list of variants is generated using the selected mining attribute. In the same way, the variants overview can be generated using different relevant event log attributes (for example, department, plant, or region). This selection is independent of the selection of mining attributes on the process map.
 
-## Variant names
+### Variant names
 
-Process variants are among the results of process mining and are labeled by a number that is used consistently on all process analysis screens regardless of any applied filters.
+Process variants are among the results of process mining. They're labeled by a number that's used consistently on all process analysis screens regardless of any applied filters.
 
-## Use of variants in process analysis
+## Components of the Variants screen
 
-By means of process variants, it is possible to accurately explore all possibilities of how a process can develop and identify problematic scenarios (for example a transition variant with an unusually high number of events).
-
-The quantity of variants makes it possible to accurately identify the most frequent scenarios occurring in the process. In this way, we can easily and quickly determine which process scenarios require our attention.
-
-The careful examination of process variants can help us uncover various scenarios and situations that occur in the process. With filtering by variants, the analyzed process can be easily restricted to only those parts or scenarios that are of interest for achieving the final objective of the analysis.
-
-## Variants screen
-
-### Variants
-
-On the left side of the screen, there is a list of process variants, which is by default sorted by the count of occurrences of cases under the given variant.
-
-Select **...** to sort the list of variants based on different sorting criteria.
-
-:::image type="content" alt-text="Screenshot of the dropdown menu for sorting variants." source="media/image006-v53.png":::
-
-Performance and finance sorting criteria also contain a list of available sub-criteria which enable further options for sorting. The option Finance is available only when there is a finance attribute available in the process.
-
-:::image type="content" alt-text="Screenshot of sub-criteria for sorting variants." source="media/image007-v53.png":::
-
-There's always a variant name under the displayed number of variant cases, the second value shows the parameter value used to sort the variants list. In this case, it is *Performance / Maximum duration* as selected in the picture above.
-
-:::image type="content" alt-text="Screenshot of variant names." source="media/image008-v53.png":::
-
-Sorting by Case Count or Event Count always displays a total number of cases for a given variant and the number of events in a single case. By selecting on the arrow icon *up/down* next to the sorting criteria name, the user controls sorting order (ascending or descending).
-
-:::image type="content" alt-text="Screenshot of the sort order." source="media/image009-v53.png":::
-
-When you select a variant, all its cases are displayed on the right side of the screen.
-
-To search for individual cases, enter the name of the case to the search box and select **Enter**.
-
-:::image type="content" alt-text="Screenshot of searching for individual cases." source="media/image001-v53.png":::
-
-## Variant DNA
-
-To get a visual overview of all the process variants found in the current open process view and in order to get a glimpse of process characteristics, variations of the process and better identify differences or repeated patterns, and similarities of variations, a Variant DNA view is available.
-
-To display Variant DNA, make sure that no variant is selected in the list; to achieve this, select the currently selected variant to deselect.
-
-To show the variant detail view, select any of the available variants by selecting it in the list.
+To open the **Variants** screen, go to the open view and select **Variants** on the left menu.
 
 :::image type="content" alt-text="Screenshot of the Variants DNA." source="media/image-17a.png":::
 
-## Variant overview
+ The default screen contains three panels:
 
-If the activity label is defined in the actual process, control is displayed in the bottom right corner, enabling the user to choose a color scheme by the label. By default, each activity has its own color, but with an activity label, it is possible to display the same color for all activities with the same label. The following screenshot displays the same **Variant overview**, with color scheme per label – in this case Resource attribute.
+- [Attribute](#attribute-panel)
 
-The overview contains a map of activities on the left, where you can observe the duration of activities and edges of the variant. The statistical indicators of selected variant metrics are present on the right. The graph shows the distribution of cases over time. The blue part represents the overall distribution, the orange part represents the selected variant.
+- [Variant overview](#variants-overview-panel-variant-dna)
 
-:::image type="content" alt-text="Screenshot of the Varian overview tab." source="media/variantchart.png":::
+- [Legend](#legend-panel)
 
-### Cases
 
-In the center of the screen, there is a list of all cases under the variant sorted by their case ID. Each issue can be explored individually; select a case to see the details of its development on the right.
+### Attribute panel
 
-:::image type="content" alt-text="Screenshot of a list of cases." source="media/image003-v53-1.png":::
+In the first panel next to the menu, you'll see a list of process variants. This is sorted by the count of occurrences of cases under the variant by default.
 
-### Case and variant details
+Select (**...**) to sort the list of variants by **Event count** or **Performance**. You might also see a **Finance** option. This is available only when there is a finance attribute in the process. Performance and finance sorting criteria contain a list of available sub-criteria, which enables further options for sorting.
 
-The details of the selected cases are shown on the right side of the screen.
+Sorting by **Case Count** displays a total number of cases for a variant in a single case. Select the up or down arrow next to the sorting criteria name to change the sort order (ascending or descending).
 
-## Cases table
+:::image type="content" alt-text="Screenshot of the left panel of the Variants screen." source="media/variants-screen.png":::
 
-The development of the case is shown in the table with detailed information about events under the case.
+### Variants overview panel (variant DNA)
 
-:::image type="content" alt-text="Screenshot of the case table list." source="media/image004-8.png":::
+All cases for the selected variant appear in the center panel. This is lso where you can see variant DNA.
 
-## Cases gantt
+The variant DNA view allows you to:
 
-Cases Gantt displays the development of the case on a timeline. The following information about each case is available:
+- Get a visual overview of all the process variants found in the current open process view
 
-:::image type="content" alt-text="Screenshot of the case Gantt." source="media/image005-v45-1.png":::
+- Get a glimpse of process characteristics and variations of the process
+
+- Get a glimpe of process standardization level
+
+- Identify differences or repeated patterns
+
+- Identify similarities of variations
+
+To display Variant DNA:
+
+1. Make sure that no variant is selected in the list.
+
+1. Select any of the available variants by selecting it in the list on the first panel next to the menu.
+
+### Legend panel
+
+Lists the full names of the abbreviations in the **Variants overview** panel.
+
+## Search for case specific data
+
+You can get specific data for an variant. When you select a variant in the left panel **Case Count** column, you'll see three tabs:
+
+:::image type="content" alt-text="Screenshot of a list of cases." source="media/variant-overview-tab.png"::: 
+
+- [Variant overview](#variant-overview-tab)
+
+- [Cases table](#cases-table-tab)
+
+- [Cases gantt](#cases-gantt-tab)
+
+### Variant overview tab
+
+Get a map of activities on the left, where you can observe the duration of activities and edges of the variant in the **Variant Overview** tab. The statistical indicators of selected variant metrics are present on the right. The graph shows the distribution of cases over time. The blue part represents the overall distribution. The orange part represents the selected variant.
+
+### Cases table tab
+
+Explore each issue individually in the **Case table** tab. In the center panel, there's a list of all cases under the variant sorted by their case ID. Each issue can be explored individually.
+
+To see the details of its development, select a case number in the **Case ID** column. The events of the selected case appear on the right column.
+
+### Cases gantt tab
+
+Development of the case on a timeline in the **Cases gantt** tab. The following information about each case is available:
+
+<!--this list doesn't correspond with what I see.-->
 
 1. Start and end time for the case
 
@@ -129,4 +128,15 @@ Cases Gantt displays the development of the case on a timeline. The following in
 
 When you select the black dot within the time progress of the activity, all information about the activity displays.
 
+## Customize settings
+
+Change the setting in any panel or tab in the **Variants** screen.
+
+1. On the menu at the top-right, select **View Settings**.
+
+1. Choose from **General settings**, **Duration settings**, **Activity label**, and **Calendar settings**.
+
+    By default, each activity has its own color. Use the **Activity label** to display the same color for all activities with the same label.
+
+1. Select **Save**.
 

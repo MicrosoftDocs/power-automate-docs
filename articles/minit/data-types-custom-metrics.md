@@ -1,14 +1,14 @@
 ---
-title: List of data types - custom metrics (preview)
-description: Get a list of data types in the Minit desktop application in process advisor.
-author: maslejka
+title: List of data types - custom metrics
+description: Get a list of data types in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
@@ -17,9 +17,9 @@ search.audienceType:
 - enduser
 ---
 
-# List of data types - custom metrics (preview)
+# List of data types for custom metrics
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+The following table lists the data types for custom metrics.
 
 | Data type | Description | Allowed value range |
 | - | - | - |

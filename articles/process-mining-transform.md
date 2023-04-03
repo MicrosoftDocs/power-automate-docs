@@ -1,13 +1,13 @@
 ---
-title: Transform and map data in process advisor (preview)
-description: This topic describes how to transform and map data with process mining in the process advisor feature in Power Automate.
+title: Transform and map data in process mining
+description: Learn how to transform and map data with process mining in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -17,9 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Transform and map data in process advisor (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Transform and map data in process advisor
 
 After you select the data source you want to use, you're taken to the Power Query Editor. The Query Editor is a powerful tool to transform your data. To learn more, go to [The Power Query user interface](/power-query/power-query-ui).
 
@@ -30,9 +28,6 @@ Here are some reasons why you might want to transform the data:
 - You might want to rename some of the activity names to be more descriptive and understandable. This is often not the case with names in a database.
 
 - You might be interested in only a specific date range, and not the entire history of data.
-
-    > [!NOTE]
-    > For public preview, we only support up to 150,000 rows of data. Because of this, filtering to a specific period may be necessary.
 
 - You might want to combine multiple ID columns to form the case ID. This is often done when the ID you want to use for process mining doesn't exist or is a combination of multiple IDs in the application. For example, when a customer files support tickets, the support ticket might be assigned to multiple customer service agents. If you want to analyze how each agent handles each ticket, you would combine the agent ID and the ticket ID into the case ID.
 
@@ -56,8 +51,6 @@ Here are some reasons why you might want to transform the data:
 
 1. On the toolbar, select **Replace values**.
 
-    :::image type="content" source="media/process-mining-transform/replace-value.png" alt-text="Screenshot of the Replace values button.":::
-
 1. Under **Values to find**, type the activity name as it appears in the data source that you want to replace.
 
 1. Under **Replace with**, type the activity name you want to show in the process map.
@@ -76,8 +69,6 @@ One strategy for reducing the total number of records is to use only the latest 
 
 1. Select **OK**, and then select **Keep rows** on the toolbar.
 
-    :::image type="content" source="media/process-mining-transform/keep-rows.png" alt-text="Screenshot of Keep rows button.":::
-
 1. Enter **150000** under **Number of rows**.
 
 1. Select **OK** to filter for the top 150,000 rows.
@@ -88,8 +79,6 @@ You can use **Ctrl** + **click** to select multiple columns that you want to com
 
 1. On the Transform tab toolbar, select **Merge columns**.
 
-    :::image type="content" source="media/process-mining-transform/merge-columns.png" alt-text="Screenshot of the Merge columns selection.":::
-
 1. (Optional) Select a separator from the dropdown list. Alternatively, you can select **none**.
 
 1. Change the name (or make a note of the default name that's generated), so you can select it when mapping to a case ID.
@@ -99,8 +88,6 @@ You can use **Ctrl** + **click** to select multiple columns that you want to com
 Mapping tells process advisor what columns represent case ID, activity name, or timestamp.
 
 1. In the toolbar, select **Map to entity**.
-
-    :::image type="content" source="media/process-mining-transform/map.png" alt-text="Screenshot of the Map to entity button.":::
 
 1. In the left column, if your data only has one timestamp, select the **Event log** entity. If your data has both a start and an end timestamp, select the **Activity log** entity.
 
@@ -121,11 +108,7 @@ When performing process mining, having additional information about a process is
 If you have more than five columns:
 
 1. Select **Choose columns** in the toolbar.
- 
-    :::image type="content" source="media/process-mining-transform/choose-columns.png" alt-text="Screenshot of the Choose columns button.":::
 
 1. Deselect any column you don't want to include in the analysis.
- 
-    :::image type="content" source="media/process-mining-transform/keep-columns.png" alt-text="Screenshot of the Choose columns dialog.":::
 
-Ensure that the mapped columns (activityName, caseId, startTimestamp, endTimestamp) from the previous procedure are selected. *The five additional columns are on top of the mapped columns.*
+    Ensure that the mapped columns (**activityName**, **caseId**, **startTimestamp**, **endTimestamp**) from the previous procedure are selected. The five additional columns are on top of the mapped columns.
