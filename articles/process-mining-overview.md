@@ -1,13 +1,14 @@
 ---
-title: Overview of process mining in process advisor (preview) in Power Automate (contains video)
+title: Overview of process mining in process advisor
 description: This topic is an overview of process mining in the process advisor feature in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie  
+  - tatn
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -17,30 +18,57 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of process mining (preview)
+# Overview of process mining
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+Process mining is a research area and technology that helps businesses understand their real processes, how they're operated, and identify opportunities for improvement, automation, and digitization.
 
-Process mining in process advisor allows you to take the event data from your system of records and visualize the processes happening in your organization. Process mining provides novel insights that can help you identify automation opportunities, and address performance and compliance opportunities.
+In the context of process advisor, process mining works with the existing Microsoft platform and ecosystem to provide end-to-end solutions and enable faster business decisions. By extracting event data from your system of records, it visualizes the processes happening in your organization, allowing you to customize your process mining reports, compare processes, determine the root cause of inefficiencies, and monitor KPIs.
 
-> [!IMPORTANT]
-> - This is a preview feature.
->
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+Overall, process mining in process advisor is a valuable tool for businesses seeking to improve their operational efficiency and make informed decisions.
 
-## Business example
+## Benefits of process mining
 
-For example, as a business owner in accounts payable, you can use process advisor to find the steps and actions in your procure-to-pay process. Using event log files from your ERP systems like Dynamics 365 or SAP, process advisor produces a process map. This map enables you to visualize the activities in the procure-to-pay process to gain the following insights:
+The business value of process mining lies in its ability to help organizations gain insights into their operational processes and identify areas for improvement. By analyzing event data from various sources, process mining provides a clear view of how processes are actually being executed in practice. This helps businesses to:
 
-- Which activities in a process take the longest?
+- **Improve operational efficiency:** Process mining can help identify bottlenecks and inefficiencies in processes, allowing organizations to streamline their operations and improve productivity.
 
-- How many variations of invoice approval exist in the organization?
+- **Enhance customer experience:** By identifying process pain points and eliminating them, organizations can improve the customer experience and increase satisfaction.
 
-- Are the activities of the process within compliance?
+- **Optimize resources:** Process mining enables businesses to identify opportunities for automation, reducing the need for manual intervention and allowing resources to be allocated more effectively.
 
-You can easily filter for custom attributes such as location, department, and other dimensions that are relevant to your process.
+- **Ensure compliance:** Process mining can help organizations to identify non-compliant processes and take corrective action to avoid legal and financial risks.
 
-## Steps to process mining
+## Business examples
+
+Overall, process mining provides valuable insights that can help organizations improve their operations, enhance customer satisfaction, and stay competitive in a rapidly changing business landscape.
+
+- **Telecommunications**
+    - Streamline the activation process to reduce wait times.
+    -  Simplify business operations to reduce costs and complexity.
+    - Manage high-volume content analytics.
+
+- **Financial services**
+    - Accelerate the time to value for small and medium-sized businesses.
+    - Ensure compliance by keeping up with regulatory changes and mitigating risks.
+    - Address competition from fintech challengers.
+
+- **Manufacturing**
+    - Address supply chain disruptions to ensure timely delivery of products.
+    - Adopt new automations to improve efficiency and productivity.
+
+- **Automotive**
+    - Accelerate transformation to mobility providers to stay competitive in the market.
+    - Identify inefficiencies in production processes, such as long cycle times and frequent downtime.
+    - Identify and address quality issues early, reducing the likelihood of costly recalls or warranty claims.
+
+- **Customer service desk**
+
+    - Identify opportunities for standardization to reduce rework and eliminate pending cases.
+    - Analyze reasons for returns and improve customer satisfaction by monitoring performance.
+
+These areas represent key challenges and opportunities for businesses to improve their operations, stay competitive, and meet the needs of their customers.
+
+## Components
 
 - [Data requirements](process-mining-processes-and-data.md#data-requirements)
 
