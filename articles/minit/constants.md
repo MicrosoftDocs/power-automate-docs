@@ -1,14 +1,14 @@
 ---
-title: Constants (preview)
-description: Get a list of constants in the Minit desktop application in process advisor.
-author: maslejka
+title: List of constants
+description: Get a list of constants in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
@@ -17,9 +17,9 @@ search.audienceType:
 - enduser
 ---
 
-# Constants (preview)
+# List of constants
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+The following table lists the constants in minit.
 
 | Constant | Data type | Description |
 | - | - | - |
