@@ -13,7 +13,7 @@ ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: FAQ
-ms.date: 03/28/2023
+ms.date: 04/04/2023
 ---
 
 # SAP integration with Power Platform: Frequently asked questions
