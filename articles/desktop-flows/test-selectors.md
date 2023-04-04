@@ -31,7 +31,7 @@ The Selector builder window is used to edit UI elements and contains a Test sele
 
 In order to test a selector, you must ensure that UI element is available in your machine. After clicking on the ‘Test selector’ button, the following message is displayed: 
  
-![Screenshot of test selector button.](media/test-selectors/test-selector-initial message.png)
+![Screenshot of test selector button.](media/test-selectors/test-selector-initial-message.png)
 
 There are three possible outputs: 
 * **Success:** A UI element was found successfully. 
