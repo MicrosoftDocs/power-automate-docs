@@ -3,12 +3,12 @@ title: "SAP integration with Power Platform: Frequently asked questions"
 description: Get answers to frequently asked questions about SAP integration with Power Platform
 author: jongilman88
 contributors:
-    - EllenWehrle
-    - galitskyd
-    - microsoft-dustin
-    - ryanb58
-    - scottwoodallmsft
-    - Wrighttyler
+  - EllenWehrle
+  - galitskyd
+  - microsoft-dustin
+  - ryanb58
+  - scottwoodallmsft
+  - Wrighttyler
 ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
