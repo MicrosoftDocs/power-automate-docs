@@ -173,10 +173,10 @@ Yes, a Windows virtual machine (VM) with at least 8 GB of RAM needs to be provis
 
 The prebuilt app on SAP can transaction against your SAP system immediately; however, you'll likely want to modify these app templates by adding your custom fields or any SAP-standard fields that aren't included in our template. Typically, within a few weeks you can have something ready for your business users to test.
 
-### Can we build mobile Power Apps on top of SAP?
+### Can we build mobile apps on top of SAP?
 
-Yes, Power Apps is responsive to mobile devices, but we also allow native apps to be built on Power Platform as well.
+Yes, apps built using Power Apps are responsive to mobile devices, but we also allow native apps to be built on Power Platform as well.
 
 ### Can Fiori Apps coexist with Power Apps?
 
-Yes, Fiori Apps can be embedded in Power Apps menus and Power Apps can also be embedded in the Fiori launchpad.
+Yes, Fiori Apps can be embedded in apps menus and apps can also be embedded in the Fiori launchpad.
