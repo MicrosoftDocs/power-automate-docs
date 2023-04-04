@@ -903,6 +903,8 @@
       href: ./sap-integration/env-variables-connection-refs.md
     - name: Prebuilt solution
       href: ./sap-integration/solutions.md
+    - name: FAQs
+      href: ./sap-integration/FAQs.md
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
