@@ -1,20 +1,19 @@
 ---
-title: SAP integration with Power Platform: Frequently asked questions
+title: "SAP integration with Power Platform: Frequently asked questions"
 description: Get answers to frequently asked questions about SAP integration with Power Platform
 author: jongilman88
 contributors:
-- EllenWehrle
-- galitskyd
-- microsoft-dustin
-- ryanb58
-- scottwoodallmsft
-- Wrighttyler
+    - EllenWehrle
+    - galitskyd
+    - microsoft-dustin
+    - ryanb58
+    - scottwoodallmsft
+    - Wrighttyler
 ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: FAQ
 ms.date: 03/28/2023
-
 ---
 
 # SAP integration with Power Platform: Frequently asked questions
@@ -50,19 +49,19 @@ No, we've had hundreds of customers upgrade from SAP ECC to S4/HANA without any 
 
 ## Data and integration
 
-### How does the Power Platform access SAP data?
+### How does Power Platform access SAP data?
 
 The [SAP ERP connector](/connectors/saperp/) utilizes the message server to invoke APIs that create, read, and update SAP data. This traffic typically flows over port 33XX for single application servers or port 39XX for load-balanced connections, where XX is the system number of the SAP instance.
 
-### Can the Power Platform consume OData services in SAP?
+### Can Power Platform consume OData services in SAP?
 
 The Open Data Protocol (OData) connector isn't available to the public yet. You can also create a custom connector in Power Automate to consume [OData services](/odata/).
 
-### Can the Power Platform access CDS views in S4/HANA?
+### Can Power Platform access CDS views in S4/HANA?
 
 Yes, the SAP ERP connector can read Core Data Services (CDS) views via the action, _Read SAP Table with Parsing_.
 
-### Can the Power Platform access custom SAP tables (Z-tables)?
+### Can Power Platform access custom SAP tables (Z-tables)?
 
 Yes, the SAP ERP connector can read custom tables via the action,  _Read SAP Table with Parsing_.
 
@@ -75,7 +74,7 @@ In this case, there are several options:
 - [Legacy System Migration Workbench (LSMW)](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/4d/afeb6ad8f66d57e10000000a42189e/content.htm?no_cache=true) – Power Automate can create a file that can be dropped on the SAP application server and processed within transaction LSMW.
 - [Custom Function Module](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/c8/19764143b111d1896f0000e8322d00/content.htm?no_cache=true) – a custom remote-enabled function module can be created in SAP and called by a Power Automate cloud flow.
 
-### Will the Power Platform affect the performance of our SAP system?
+### Will Power Platform affect the performance of our SAP system?
 
 The SAP ERP connector runs on SAP's API layer, which typically has better system performance than running the same activity in the SAP GUI. As more users transition off the SAP GUI and to an external user interface like Power Apps, CPU consumption on the SAP servers drops significantly.
 
@@ -103,23 +102,23 @@ Power Automate can attach files to objects in SAP using [Generic Object Services
 
 ### How does authentication happen against SAP?
 
-The Power Platform currently supports two of the three authentication methods for SAP:
+Power Platform currently supports two of the three authentication methods for SAP:
 
 1. Username/Password - inside Power Apps, a user is prompted for their SAP username and password, which is sent to SAP.
 1. SSO (Kerberos) - the On-premises Data Gateway requests a Kerberos ticket on behalf of the Power Apps user and this ticket is sent to SAP.
 1. SSO (SAML/X.509) - **NOT CURRENTLY SUPPORTED**. We plan to support SAML in the future. However, SAP can support both X.509 and Kerberos authentication on the same SAP instance.
 
-### How do we make sure users in the Power Platform can't do things they can't do in SAP?
+### How do we make sure users in Power Platform can't do things they can't do in SAP?
 
 SAP's published APIs perform the same security checks that are performed in the SAP GUI. Also, Power Automate flows can be configured to query user authorization objects so apps, fields, and buttons are conditionally hidden or revealed to match the user experience in SAP.
 
-### How do we ensure traffic between the Power Platform and SAP is encrypted?
+### How do we ensure traffic between Power Platform and SAP is encrypted?
 
 We recommend using SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true), which is available via a connection setting when [configuring authentication](/power-automate/sap-integration/set-up-prepare#configure-authentication).
 
 ## Customization
 
-### How does the Power Platform handle custom fields in SAP?
+### How does Power Platform handle custom fields in SAP?
 
 The answer depends on where the custom fields reside in SAP:
 
@@ -130,11 +129,11 @@ The answer depends on where the custom fields reside in SAP:
 
  Fields in Power Apps can easily be inserted and copy/pasted in our WYSIWYG (What You See Is What You Get) editor.
 
-### Can the Power Platform call custom function modules?
+### Can Power Platform call custom function modules?
 
 Yes, if a function module is remote-enabled, our SAP connector can invoke that function module. However, SAP doesn't respond to a support ticket if your custom function module isn't working correctly, since that is your own code.
 
-### How can the Power Platform handle completely custom processes that we built in SAP because we had no other option?
+### How can Power Platform handle completely custom processes that we built in SAP because we had no other option?
 
 Your custom database tables can be read using Read SAP Table with Parsing action for all read operations. For create and update operations, you'll need to remote-enable your custom function modules used to maintain this data. Once the function modules are remote-enabled, the SAP ERP connector can call them.
 
@@ -170,13 +169,13 @@ No, all Power Apps canvas apps are accessed through a web browser.
 
 Yes, a Windows virtual machine (VM) with at least 8 GB of RAM needs to be provisioned for the on-premises data gateway, which acts as a proxy server to listen for requests from your Power Platform tenant and relays them to SAP. One windows machine is sufficient for testing, but a cluster of Windows VMs should be set up for deployment to production to avoid single points of failure.
 
-### How quickly can a Power App on SAP be up and running?
+### How quickly can an app on SAP be up and running?
 
-The prebuilt Power Apps on SAP can transaction against your SAP system immediately; however, you'll likely want to modify these app templates by adding your custom fields or any SAP-standard fields that aren't included in our template. Typically, within a few weeks you can have something ready for your business users to test.
+The prebuilt app on SAP can transaction against your SAP system immediately; however, you'll likely want to modify these app templates by adding your custom fields or any SAP-standard fields that aren't included in our template. Typically, within a few weeks you can have something ready for your business users to test.
 
 ### Can we build mobile Power Apps on top of SAP?
 
-Yes, Power Apps is responsive to mobile devices, but we also allow native apps to be built on the Power Platform as well.
+Yes, Power Apps is responsive to mobile devices, but we also allow native apps to be built on Power Platform as well.
 
 ### Can Fiori Apps coexist with Power Apps?
 
