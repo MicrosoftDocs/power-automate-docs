@@ -1,5 +1,5 @@
 ---
-title: FAQs
+title: SAP integration with Power Platform: Frequently asked questions
 description: Get answers to frequently asked questions about SAP integration with Power Platform
 author: jongilman88
 contributors:
