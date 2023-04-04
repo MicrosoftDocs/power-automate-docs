@@ -68,7 +68,7 @@ Each desktop UI element belongs to a screen (parent UI element). In some cases, 
 
 ![Screenshot of test selector button.](media/test-selectors/test-selector-button.png)
 
-## Web UI elements - Open screen selector 
+## Web UI elements - Open Web browser tab
 
 In case of a web UI element, in order to proceed with the test, the web page that contains the specific UI element must be available in your machine and the web browser tab  should be selected in the ‘Web browser tab’ drop down list. 
  
