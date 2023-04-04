@@ -57,9 +57,9 @@ The [SAP ERP connector](/connectors/saperp/) utilizes the message server to invo
 
 The Open Data Protocol (OData) connector isn't available to the public yet. You can also create a custom connector in Power Automate to consume [OData services](/odata/).
 
-### Can Power Platform access CDS views in S4/HANA?
+### Can Power Platform access views in S4/HANA?
 
-Yes, the SAP ERP connector can read Core Data Services (CDS) views via the action, _Read SAP Table with Parsing_.
+Yes, the SAP ERP connector can read Core Data Services views via the action, _Read SAP Table with Parsing_.
 
 ### Can Power Platform access custom SAP tables (Z-tables)?
 
