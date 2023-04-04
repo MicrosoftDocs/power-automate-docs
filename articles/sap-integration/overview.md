@@ -32,8 +32,6 @@ The improved version of SAP integration with Microsoft Power Platform is built o
 > [!IMPORTANT]
 >
 > - Effective December 2022, [SAP ERP connector capabilities](/connectors/saperp/) are generally available.
-> - This prebuilt solution is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Advanced SAP system connection support
 
