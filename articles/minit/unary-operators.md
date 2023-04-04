@@ -1,14 +1,14 @@
 ---
-title: List of unary operators (preview)
-description: Get a list of unary operators in the Minit desktop application in process advisor.
-author: maslejka
+title: List of unary and binary operators
+description: Get a list of unary and binary operators in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
@@ -17,11 +17,13 @@ search.audienceType:
 - enduser
 ---
 
-# List of unary operators (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# List of unary and binary operators
 
 The following tables describe unary and binary operators.
+
+## Unary operators
+
+The following table describes unary operators.
 
 | Operator | Description | Input data type | Output data type |
 | - | - | - | - |
@@ -29,7 +31,7 @@ The following tables describe unary and binary operators.
 | -x |Returns negation of the value x (its opposite value) | INT, FLOAT, TIME | INT, FLOAT, TIME |
 | !x | Returns negation of the value x (produces a value of true when its operand is false and a value of false when its operand is true) | BOOL | BOOL |
 
-## Binary Operators
+## Binary operators
 
 The following table describes binary operators.
 
@@ -47,5 +49,5 @@ The following table describes binary operators.
 | x < y | Returns TRUE only if x is less than y, else returns FALSE | INT, FLOAT, DATE, TIME | BOOL |
 | x <= y | Returns TRUE only if x is less than OR equal to y, else returns FALSE | INT, FLOAT, DATE, TIME | BOOL |
 | x && y |Returns TRUE only if BOTH x and y are TRUE, else FALSE | BOOL | BOOL |
-| x \| \| y | Returns TRUE if either x OR y is TRUE, else FALSE | BOOL | BOOL |
+| x \| \| y  | Returns TRUE if either x OR y is TRUE, else FALSE | BOOL | BOOL |
 

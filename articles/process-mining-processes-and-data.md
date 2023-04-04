@@ -1,13 +1,13 @@
 ---
-title: Prepare processes and data with process mining (preview) in the process advisor feature in Power Automate (contains video)
-description: This topic explains how to prepare processes and data with process mining in the process advisor feature in Power Automate.
+title: Prepare processes and data with process mining in the process mining feature in Power Automate (contains video)
+description: Learn how to prepare processes and data with process mining in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -17,9 +17,7 @@ search.audienceType:
   - enduser
 ---
 
-# Prepare processes and data in process advisor (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Prepare processes and data in process mining
 
 Before you can use process mining effectively, you need to understand:
 
@@ -74,8 +72,6 @@ One easy way to try out process advisor regardless of where your data source is 
 
 1. On the **Choose data source** screen, select **All categories** > **Text/CSV**. 
 
-    :::image type="content" source="media/process-mining-processes-and-data/text-csv.png" alt-text="Screenshot of Text/CSV selection.":::
-
 1. Select **Browse OneDrive**. You might need to authenticate.
 
     :::image type="content" source="media/process-mining-processes-and-data/browse-onedrive.png" alt-text="Screenshot of Browse OneDrive.":::
@@ -100,8 +96,6 @@ The Dataverse connector isn't supported in Microsoft Power Platform. You need to
 
 1. On the **Power Query - Choose data sources** screen, select **OData**.
 
-    :::image type="content" source="media/process-mining-processes-and-data/odata.png" alt-text="Screenshot of OData selection.":::
-
 1.	In the URL textbox, type **api/data/v9.2** at the end of the URL so it looks like this:
 
     :::image type="content" source="media/process-mining-processes-and-data/url.png" alt-text="Screenshot of URL.":::
@@ -110,12 +104,9 @@ The Dataverse connector isn't supported in Microsoft Power Platform. You need to
 
 1. Select **Sign in** and enter your credentials.
 
-   :::image type="content" source="media/process-mining-processes-and-data/authentication-kind.png" alt-text="Screenshot of the Connection credentials screen.":::
-
 1. Select **Next**.
 
 1. Expand the **OData** folder. You should see all the Dataverse tables in that environment. As an example, the **Activities** table is called *activitypointers*.
 
 1. Select the checkbox next to the table you want to import, and then select **Next**.
 
-   :::image type="content" source="media/process-mining-processes-and-data/import.png" alt-text="Screenshot of the OData folder contents.":::

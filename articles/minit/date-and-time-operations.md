@@ -1,14 +1,14 @@
 ---
-title: List of date and time operations (preview)
-description: Get a list of date and time operations in the minit desktop application in process advisor.
-author: maslejka
+title: List of date and time operations
+description: Get a list of date and time operations in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
@@ -17,13 +17,11 @@ search.audienceType:
 - enduser
 ---
 
-# List of date and time operations (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# List of date and time operations
 
 ## TODATE([year],[month],[day])
 
-creates a date from specified date parts.
+Creates a date from specified date parts.
 
 **Parameters:**- **[year]** - the year part of the date
 Data type: INT
@@ -39,7 +37,7 @@ Data type: INT
 
 ## TODATE([year],[month],[day],[hour],[minute],[second],[millisecond])
 
-creates a date from specified date parts along with time.
+Creates a date from specified date parts along with time.
 
 **Parameters:**- **[year]** - the year part of the date
 
@@ -73,7 +71,7 @@ creates a date from specified date parts along with time.
 
 ## TODATE([year],[month],[day],[time])
 
-creates a date from specified date parts along with time.
+Creates a date from specified date parts along with time.
 
 **Parameters:**- **[year]** - the year part of the date
 
@@ -95,7 +93,7 @@ creates a date from specified date parts along with time.
 
 ## TOTIME([hour],[minute],[second],[millisecond])
 
-creates a timespan from the specified date parts.
+Creates a timespan from the specified date parts.
 
 **Parameters:**- **[hour]** - the hour part of the date
 
@@ -117,7 +115,7 @@ creates a timespan from the specified date parts.
 
 ## TOTIMEFROMDAYS([value])
 
-creates a time interval from the total number of days.
+Creates a time interval from the total number of days.
 
 **Parameters:**- **[value]** - attribute name, nested operation, or expression to create a timespan
 
@@ -127,7 +125,7 @@ creates a time interval from the total number of days.
 
 ## TOTIMEFROMHOURS([value])
 
-creates a time interval from the total number of hours.
+Creates a time interval from the total number of hours.
 
 **Parameters:**- **[value]** - attribute name, nested operation, or expression to create a timespan
 
@@ -137,7 +135,7 @@ creates a time interval from the total number of hours.
 
 ## TOTIMEFROMMILLIS([value])
 
-creates a time interval from the total number of milliseconds.
+Creates a time interval from the total number of milliseconds.
 
 **Parameters:**- **[value]** - attribute name, nested operation, or expression to create a timespan
 
@@ -147,7 +145,7 @@ creates a time interval from the total number of milliseconds.
 
 ## TOTIMEFROMMINUTES([value])
 
-creates a time interval from the total number of minutes.
+Creates a time interval from the total number of minutes.
 
 **Parameters:**- **[value]** - attribute name, nested operation, or expression to create a timespan
 
@@ -157,7 +155,7 @@ creates a time interval from the total number of minutes.
 
 ## TOTIMEFROMSECONDS([value])
 
-creates a time interval from the total number of seconds.
+Creates a time interval from the total number of seconds.
 
 **Parameters:**- **[value]** - attribute name, nested operation, or expression to create a timespan
 
@@ -167,7 +165,7 @@ creates a time interval from the total number of seconds.
 
 ## ADDDAYS([date],[count])
 
-adds the specified number of days to the date / time interval.
+Adds the specified number of days to the date / time interval.
 
 **Parameters:**- **[date]** - a specific date to which days are added
 
@@ -181,7 +179,7 @@ adds the specified number of days to the date / time interval.
 
 ## ADDHOURS([date],[count])
 
-adds the specified number of hours to the date / time interval.
+Adds the specified number of hours to the date / time interval.
 
 **Parameters:**- **[date]** - a specific date to which hours are added
 
@@ -195,7 +193,7 @@ adds the specified number of hours to the date / time interval.
 
 ## ADDMILLIS([date],[count])
 
-adds the specified number of milliseconds to the date / time interval.
+Adds the specified number of milliseconds to the date / time interval.
 
 **Parameters:**- **[date]** - a specific date to which milliseconds are added
 
@@ -209,7 +207,7 @@ adds the specified number of milliseconds to the date / time interval.
 
 ## ADDMINUTES([date],[count])
 
-adds the specified number of minutes to the date / time interval.
+Adds the specified number of minutes to the date / time interval.
 
 **Parameters:**- **[date]** - a specific date to which minutes are added
 
@@ -223,7 +221,7 @@ adds the specified number of minutes to the date / time interval.
 
 ## ADDMONTHS([date],[count])
 
-adds the specified number of months to the date / time interval.
+Adds the specified number of months to the date / time interval.
 
 **Parameters:**- **[date]** - a specific date to which months are added
 
@@ -237,7 +235,7 @@ adds the specified number of months to the date / time interval.
 
 ## ADDSECONDS([date],[count])
 
-adds the specified number of seconds to the date / time interval.
+Adds the specified number of seconds to the date / time interval.
 
 **Parameters:**- **[date]** - a specific date to which seconds are added
 
@@ -251,7 +249,7 @@ adds the specified number of seconds to the date / time interval.
 
 ## ADDYEARS([date],[count])
 
-adds the specified number of years to the date / time interval.
+Adds the specified number of years to the date / time interval.
 
 **Parameters:**- **[date]** - a specific date to which years are added
 
@@ -265,7 +263,7 @@ adds the specified number of years to the date / time interval.
 
 ## DATE([date])
 
-returns the date part of the date without a timespan.
+Returns the date part of the date without a timespan.
 
 **Parameters:**- **[date]** - the date from which the date part is returned
 
@@ -275,7 +273,7 @@ returns the date part of the date without a timespan.
 
 ## DAY([date])
 
-returns the day of the month from the date.
+Returns the day of the month from the date.
 
 **Parameters:**- **[date]** - the date from which the day part is returned
 
@@ -285,7 +283,7 @@ returns the day of the month from the date.
 
 ## DAYOFWEEK([date])
 
-returns the day of the week from the date.
+Returns the day of the week from the date.
 
 **Parameters:**- **[date]** - the date from which the day of the week is returned
 
@@ -295,7 +293,7 @@ returns the day of the week from the date.
 
 ## DAYOFYEAR([date])
 
-returns the day of the year from the date.
+Returns the day of the year from the date.
 
 **Parameters:**- **[date]** - the date from which the day of the year is returned
 
@@ -305,7 +303,7 @@ returns the day of the year from the date.
 
 ## HOUR([date])
 
-returns an hour from the date.
+Returns an hour from the date.
 
 **Parameters:**- **[date]** - the date from which the hour is returned
 
@@ -315,7 +313,7 @@ returns an hour from the date.
 
 ## MILLISECOND([date])
 
-returns a millisecond from the date.
+Returns a millisecond from the date.
 
 **Parameters:**- **[date]** - the date from which the millisecond is returned
 
@@ -325,7 +323,7 @@ returns a millisecond from the date.
 
 ## MINUTE([date])
 
-returns a minute from the date.
+Returns a minute from the date.
 
 **Parameters:**- **[date]** - the date from which the minute is returned
 
@@ -335,7 +333,7 @@ returns a minute from the date.
 
 ## MONTH([date])
 
-returns a month from the date.
+Returns a month from the date.
 
 **Parameters:**- **[date]** - the date from which the month is returned
 
@@ -345,7 +343,7 @@ returns a month from the date.
 
 ## QUARTER([date])
 
-returns the quarter from the date.
+Returns the quarter from the date.
 
 **Parameters:**- **[date]** - the date from which the quarter is returned
 
@@ -355,7 +353,7 @@ returns the quarter from the date.
 
 ## SECOND([date])
 
-returns the seconds part from the date.
+Returns the seconds part from the date.
 
 **Parameters:**- **[date]** - the date from which the second is returned
 
@@ -365,7 +363,7 @@ returns the seconds part from the date.
 
 ## TIMEOFDAY([date])
 
-returns the time part of the date.
+Returns the time part of the date.
 
 **Parameters:**- **[date]** - the date from which the time part is returned
 
@@ -375,7 +373,7 @@ returns the time part of the date.
 
 ## WEEKOFYEAR([date])
 
-returns the week number of the year from a date according to ISO 8601 standard.
+Returns the week number of the year from a date according to ISO 8601 standard.
 
 **Parameters:**- **[date]** - the date from which the week number of the year according to ISO 8601 standard is returned
 
@@ -385,7 +383,7 @@ returns the week number of the year from a date according to ISO 8601 standard.
 
 ## YEAR([date])
 
-returns the year from the date.
+Returns the year from the date.
 
 **Parameters:**- **[date]** - the date from which the year is returned
 
@@ -395,7 +393,7 @@ returns the year from the date.
 
 ## ISLEAPYEAR([year])
 
-returns TRUE if the year is leap, otherwise returns FALSE.
+Returns TRUE if the year is leap, otherwise returns FALSE.
 
 **Parameters:**- **[year]** - the year which I'm checking whether it is a leap one or not
 
@@ -405,7 +403,7 @@ returns TRUE if the year is leap, otherwise returns FALSE.
 
 ## DAYS([time])
 
-returns the day part from the timespan.
+Returns the day part from the timespan.
 
 **Parameters:**- **[time]** - the date from which the day part is returned
 
@@ -415,7 +413,7 @@ returns the day part from the timespan.
 
 ## HOURS([time])
 
-returns the hour part from the timespan.
+Returns the hour part from the timespan.
 
 **Parameters:**- **[time]** - the date from which the hour part is returned
 
@@ -425,7 +423,7 @@ returns the hour part from the timespan.
 
 ## MILLISECONDS([time])
 
-returns the millisecond part from the timespan.
+Returns the millisecond part from the timespan.
 
 **Parameters:**- **[time]** - the date from which the millisecond part is returned
 
@@ -435,7 +433,7 @@ returns the millisecond part from the timespan.
 
 ## MINUTES([time])
 
-returns the minute part from the timespan.
+Returns the minute part from the timespan.
 
 **Parameters:**- **[time]** - the date from which the minute part is returned
 
@@ -445,7 +443,7 @@ returns the minute part from the timespan.
 
 ## SECONDS([time])
 
-returns the second part from the timespan.
+Returns the second part from the timespan.
 
 **Parameters:**- **[time]** - the date from which the second part is returned
 
@@ -455,7 +453,7 @@ returns the second part from the timespan.
 
 ## TOTALDAYS([time])
 
-returns the value of the timespan expressed in whole and fractional days.
+Returns the value of the timespan expressed in whole and fractional days.
 
 **Parameters:**- **[time]** - the date from which the timespan expressed in whole and fractional days is returned
 
@@ -465,7 +463,7 @@ returns the value of the timespan expressed in whole and fractional days.
 
 ## TOTALHOURS([time])
 
-returns the value of the timespan expressed in whole and fractional hours.
+Returns the value of the timespan expressed in whole and fractional hours.
 
 **Parameters:**- **[time]** - the date from which the timespan expressed in whole and fractional hours is returned
 
@@ -475,7 +473,7 @@ returns the value of the timespan expressed in whole and fractional hours.
 
 ## TOTALMILLIS([time])
 
-returns the value of the timespan expressed in whole and fractional milliseconds.
+Returns the value of the timespan expressed in whole and fractional milliseconds.
 
 **Parameters:**- **[time]** - the date from which the timespan expressed in whole and fractional milliseconds is returned
 
@@ -485,7 +483,7 @@ returns the value of the timespan expressed in whole and fractional milliseconds
 
 ## TOTALMINUTES([time])
 
-returns the value of the timespan expressed in whole and fractional minutes.
+Returns the value of the timespan expressed in whole and fractional minutes.
 
 **Parameters:**- **[time]** - the date from which the timespan expressed in whole and fractional minutes is returned
 
@@ -495,7 +493,7 @@ returns the value of the timespan expressed in whole and fractional minutes.
 
 ## TOTALSECONDS([time])
 
-returns the value of the timespan expressed in whole and fractional seconds.
+Returns the value of the timespan expressed in whole and fractional seconds.
 
 **Parameters:**- **[time]** - the date from which the timespan expressed in whole and fractional seconds is returned
 
@@ -505,7 +503,7 @@ returns the value of the timespan expressed in whole and fractional seconds.
 
 ## ISWORKINGHOUR([dateTime])
 
-returns true when time date belongs to working hours defined in the actual calendar.
+Returns true when time date belongs to working hours defined in the actual calendar.
 
 **Parameters:**- **[dateTime]** - the date to be evaluated
 
@@ -515,7 +513,7 @@ returns true when time date belongs to working hours defined in the actual calen
 
 ## ISWORKINGDAY([date])
 
-returns true when date belongs to working day defined in the actual calendar.
+Returns true when date belongs to working day defined in the actual calendar.
 
 **Parameters:**- **[date]** - the date to be evaluated
 
@@ -525,7 +523,7 @@ returns true when date belongs to working day defined in the actual calendar.
 
 ## ISPUBLICHOLIDAY([date])
 
-returns true when date belongs to public holiday defined in the actual calendar.
+Returns true when date belongs to public holiday defined in the actual calendar.
 
 **Parameters:**- **[date]** - the date to be evaluated
 
@@ -539,7 +537,7 @@ Returns working time duration between two dates calculated actual calendar.
 
 >[!IMPORTANT]
 >
->The calculations associated with the work calendar work correctly only in the range from the start of the process minus 6 months to the end of the process plus 24 months. Calculating calendar values such as working days or working hours outside this range will return an error and a default value. This calendar range cannot be set by the user in the application and is automatically applied after each data refresh.**Parameters:**- **[startDate]** - start date of timespan
+>The calculations associated with the work calendar work correctly only in the range from the start of the process minus 6 months to the end of the process plus 24 months. Calculating calendar values such as working days or working hours outside this range will return an error and a default value. This calendar range can't be set by you in the application and is automatically applied after each data refresh. **Parameters:** - **[startDate]** - start date of timespan.
 
    Data type: DATE
 
@@ -551,11 +549,11 @@ Returns working time duration between two dates calculated actual calendar.
 
 ## ADDWORKINGDAYS([date],[count])
 
-adds the specified number of working days to the date. Exact number of defined working hours is not relevant. Any day which is marked as working day is counted as one.
+Adds the specified number of working days to the date. Exact number of defined working hours is not relevant. Any day which is marked as working day is counted as one.
 
 >[!IMPORTANT]
 >
->The calculations associated with the work calendar return correct results only in the range from 6 months prior to the process start until 24 months past the process end date. Calculating calendar values (working days, working hours etc.) outside this range will return an error and a default value. This range is automatically applied after each data refresh and is not available for user to change.**Parameters:**- **[date]** - a specific date to which days are added
+>The calculations associated with the work calendar return correct results only in the range from 6 months prior to the process start until 24 months past the process end date. Calculating calendar values (for example, working days and working hours) outside this range will return an error and a default value. This range is automatically applied after each data refresh and isn't available for you to change. **Parameters:** - **[date]** - a specific date to which days are added.
 
    Data type: DATE
 
@@ -567,11 +565,11 @@ adds the specified number of working days to the date. Exact number of defined w
 
 ## ADDWORKINGHOURS([date],[count])
 
-adds the specified number of working hours to the date.
+Adds the specified number of working hours to the date.
 
 >[!IMPORTANT]
 >
->The calculations associated with the work calendar return correct results only in the range from 6 months prior to the process start until 24 months past the process end date. Calculating calendar values (working days, working hours etc.) outside this range will return an error and a default value. This range is automatically applied after each data refresh and is not available for user to change.**Parameters:**- **[date]** - a specific date to which working hours are added
+>The calculations associated with the work calendar return correct results only in the range from 6 months prior to the process start until 24 months past the process end date. Calculating calendar values (for example, working days and working hours) outside this range will return an error and a default value. This range is automatically applied after each data refresh and isn't available to change. **Parameters:** - **[date]** - a specific date to which working hours are added.
 
    Data type: DATE
 
@@ -583,11 +581,11 @@ adds the specified number of working hours to the date.
 
 ## ADDWORKINGMINUTES([date],[count])
 
-adds the specified number of working minutes to the date.
+Adds the specified number of working minutes to the date.
 
 >[!IMPORTANT]
 >
->The calculations associated with the work calendar return correct results only in the range from 6 months prior to the process start until 24 months past the process end date. Calculating calendar values (working days, working hours etc.) outside this range will return an error and a default value. This range is automatically applied after each data refresh and is not available for user to change.**Parameters:**- **[date]** - a specific date to which working minutes are added
+>The calculations associated with the work calendar return correct results only in the range from 6 months prior to the process start until 24 months past the process end date. Calculating calendar values (for example, working days and working hours) outside this range will return an error and a default value. This range is automatically applied after each data refresh and isn't available for you to change. **Parameters:** - **[date]** - a specific date to which working minutes are added.
 
    Data type: DATE
 

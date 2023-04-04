@@ -1,14 +1,14 @@
 ---
-title: List of mathematical operations (preview)
-description: Get a list of the parameters and output data types for mathematical features in the init desktop application in process advisor.
-author: maslejka
+title: List of mathematical operations
+description: Learn about the parameters and output data types for mathematical features in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
@@ -17,13 +17,11 @@ search.audienceType:
 - enduser
 ---
 
-# List of mathematical operations (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# List of mathematical operations
 
 ## ABS([value])
 
-returns the absolute value of the number
+Returns the absolute value of the number.
 
 **Parameters:**
 
@@ -35,7 +33,7 @@ returns the absolute value of the number
 
 ## CEIL([value])
 
-returns the smallest integer greater that or equal to the given number
+Returns the smallest integer greater that or equal to the given number.
 
 **Parameters:**
 
@@ -47,7 +45,7 @@ returns the smallest integer greater that or equal to the given number
 
 ## FLOOR([value])
 
-returns the greatest integer smaller than or equal to the given number
+Returns the greatest integer smaller than or equal to the given number.
 
 **Parameters:**
 
@@ -59,7 +57,7 @@ returns the greatest integer smaller than or equal to the given number
 
 ## MAX([value1],[value2])
 
-returns the maximum of the given values (value1 and value2)
+Returns the maximum of the given values (value1 and value2).
 
 **Parameters:**
 
@@ -74,7 +72,7 @@ Date type: FLOAT, INT, DATE, TIME
 
 ## MIN([value1],[value2])
 
-returns the minimum of the given values (value1 and value2)
+Returns the minimum of the given values (value1 and value2).
 
 **Parameters:**
 
@@ -90,7 +88,7 @@ returns the minimum of the given values (value1 and value2)
 
 ## LOG([value],[base])
 
-returns the logarithm of the number to the specified base
+Returns the logarithm of the number to the specified base.
 
 **Parameters:**
 
@@ -106,7 +104,7 @@ returns the logarithm of the number to the specified base
 
 ## POWER([value],[exponent])
 
-returns the value of the specified expression to the specified power
+Returns the value of the specified expression to the specified power.
 
 **Parameters:**
 
@@ -122,7 +120,7 @@ returns the value of the specified expression to the specified power
 
 ## ROUND([value],[digits])
 
-rounds a number to a specified number of digits
+Rounds a number to a specified number of digits.
 
 **Parameters:**
 
@@ -138,11 +136,11 @@ rounds a number to a specified number of digits
 
 ## SIGN([value])
 
-returns -1 if value is smaller than 0, 0 if value is 0, 1 if value is greater than 0
+Returns -1 if value is smaller than 0, 0 if value is 0, 1 if value is greater than 0.
 
-**Parameters:
+**Parameters:**
 
-**- **[value]** - input value
+- **[value]** - input value
 
    Data type: FLOAT, INT
 
@@ -150,11 +148,11 @@ returns -1 if value is smaller than 0, 0 if value is 0, 1 if value is greater th
 
 ## SQR([value])
 
-calculates the square of the value (second power)
+Calculates the square of the value (second power).
 
-**Parameters:
+**Parameters:**
 
-**- **[value]** - input value
+- **[value]** - input value
 
    Data type: FLOAT, INT
 
@@ -162,7 +160,7 @@ calculates the square of the value (second power)
 
 ## SQRT([value])
 
-calculates the square root of the value
+Calculates the square root of the value.
 
 **Parameters:**
 
@@ -174,7 +172,7 @@ calculates the square root of the value
 
 ## TRUNCATE([value])
 
-returns the integer part of the number (rounded to the nearest integer toward zero)
+Returns the integer part of the number (rounded to the nearest integer toward zero).
 
 **Parameters:**
 
