@@ -53,13 +53,13 @@ You can test selectors for both desktop and web UI elements. Desktop selectors a
 > [!NOTE]
 > Every time you edit a tested selector, the output icon is removed, and selector should be tested again.  
 
-## Testing All Selectors 
+### Testing All Selectors 
 
 A UI element may have more than one selector for defining its location. The Test selector feature allows you to test all selectors easily by clicking on the arrow next to the "Test selector" button and selecting "Test all selectors." 
 
 ![Screenshot of test selector button.](media/test-selectors/test-selector-test-all.png)
 
-## Desktop UI elements - Open screen selector 
+### Desktop UI elements - Open screen selector 
 
 Each desktop UI element belongs to a screen (parent UI element). In some cases, testing of the selector cannot be performed because the screen cannot be found. In this case, you should: 
 
@@ -68,7 +68,7 @@ Each desktop UI element belongs to a screen (parent UI element). In some cases, 
 
 ![Screenshot of test selector button.](media/test-selectors/test-selector-button.png)
 
-## Web UI elements - Open Web browser tab
+### Web UI elements - Open Web browser tab
 
 In case of a web UI element, in order to proceed with the test, the web page that contains the specific UI element must be available in your machine and the web browser tab  should be selected in the ‘Web browser tab’ drop down list. 
  
@@ -82,7 +82,7 @@ If no web browser tab is selected in the list and you click on the ‘Test selec
  
 ![Screenshot of test selector button.](media/test-selectors/test-selector-select-web-tab-runtime.png)
 
-## Variables 
+### Variables 
 
 You can test a selector even if one or more variables are contained in the selector. You must provide values to the selector's variables for the test to be performed. 
 
@@ -90,12 +90,12 @@ You can test a selector even if one or more variables are contained in the selec
  
 ![Screenshot of test selector button.](media/test-selectors/test-selector-variables-2.png)
 
-## Highlight 
+### Highlight 
 
 When a selector is tested and the output is "Success" or ‘Multiple UI elements found’, Power Automate for desktop will highlight the UI element that will be interacted at run time with the specific selector. 
 
 
-## Text editor 
+### Text editor 
 
 Test selector capabilities can be fully used in the Text editor view of the Selector builder window as well, in the same fashion as in the builder view. 
 
