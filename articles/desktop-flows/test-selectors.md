@@ -48,7 +48,7 @@ There are three possible outputs:
 
 You may get more information for each output by clicking on the output icon next to the tested selector.  
 
-
+![Screenshot of info from result button test selector.](media/test-selectors/test-selector-button-on-result.png)
 
 You can test selectors for both desktop and web UI elements. Desktop selectors are captured from any Windows application, while web selectors are captured from webpages and can be used only in browser automation actions.  
 
