@@ -59,7 +59,7 @@ You can test selectors for both desktop and web UI elements. Desktop selectors a
 
 A UI element may have more than one selector for defining its location. The Test selector feature allows you to test all selectors easily by clicking on the arrow next to the "Test selector" button and selecting "Test all selectors." 
 
-![Screenshot of test selector button.](media/test-selectors/test-selector-test-all.png)
+![Screenshot of test selector test all selectors.](media/test-selectors/test-selector-test-all.png)
 
 > [!NOTE]
 > When you opt for testing all selectors, the disabled selectors will not be tested from the list. In case you need to test a disabled selector, you should test it individually.  
@@ -71,7 +71,7 @@ Each desktop UI element belongs to a screen (parent UI element). In some cases, 
 - Ensure that the screen is available in your machine. 
 - If yes, then click on the "Open screen selector" button and fix the screen selector. You may perform the test selector feature to the screen selector as well.  
 
-![Screenshot of test selector button.](media/test-selectors/test-selector-button.png)
+![Screenshot of test selector open screen.](media/test-selectors/open-screen-selector.png)
 
 > [!NOTE]
 > When you navigate to the screen selector through the selector builder window of child, then you will return to the child view after closing the screen's selector builder window.
@@ -80,28 +80,29 @@ Each desktop UI element belongs to a screen (parent UI element). In some cases, 
 
 In case of a web UI element, in order to proceed with the test, the web page that contains the specific UI element must be available in your machine and the web browser tab should be selected in the "Web browser tab" drop down list. 
  
-![Screenshot of test selector button.](media/test-selectors/test-selector-select-web-tab.png)
+![Screenshot of test selector to select web tab.](media/test-selectors/test-selector-select-web-tab.png)
 
-![Screenshot of test selector button.](media/test-selectors/test-selector-select-web-tab-dropdown.png)
+![Screenshot of test selector web tab drop down.](media/test-selectors/test-selector-select-web-tab-dropdown.png)
 
-![Screenshot of test selector button.](media/test-selectors/test-selector-select-web-tab-selected.png)
+![Screenshot of test selector web tab selected.](media/test-selectors/test-selector-select-web-tab-selected.png)
 
 If no web browser tab is selected in the list and you click on the "Test selector" button, Power Automate will ask you to select the browser tab before the testing starts. 
  
-![Screenshot of test selector button.](media/test-selectors/test-selector-select-web-tab-runtime.png)
+![Screenshot of test selector to select web tab pop up.](media/test-selectors/test-selector-select-web-tab-runtime.png)
 
 ### Variables 
 
 You can test a selector even if one or more variables are contained in the selector. You must provide values to the selector's variables for the test to be performed. 
 
-![Screenshot of test selector button.](media/test-selectors/test-selector-variables-1.png)
+![Screenshot of test selector with variable.](media/test-selectors/test-selector-variables-1.png)
  
-![Screenshot of test selector button.](media/test-selectors/test-selector-variables-2.png)
+![Screenshot of test selector with variable 2.](media/test-selectors/test-selector-variables-2.png)
 
 ### Highlight 
 
 When a selector is tested and the output is "Success" or "Multiple UI elements found", Power Automate will highlight the UI element that will be interacted at run time with the specific selector. 
 
+![Screenshot of test selector highlight.](media/test-selectors/test-selector-highlight.png)
 
 ### Text editor 
 
