@@ -16,9 +16,7 @@ ms.topic: how-to
 ms.date: 02/17/2023
 
 --- 
-# Create an environment variable with SAP connection parameters (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Create an environment variable with SAP connection parameters
 
 SAP has multiple connection parameters, and manually entering the parameters into each Power Automate cloud flow action can be time-consuming. The preview SAP Integration solution available for [download](https://github.com/jongilman88/PowerPlatformSAPIntegration) includes an environment variable JSON string template for entering all of your SAP system information. Once your environment variable is defined, you can reuse it in your SAP actions without having to reenter it.
 
