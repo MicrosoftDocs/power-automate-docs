@@ -21,32 +21,34 @@ search.audienceType:
 
 # Test a selector
 
-By using the Test selector feature in Power Automate for desktop, you can easily test UI elements and ensure that your automation flows are running as expected. With the ability to capture both desktop and web selectors, as well as test all selectors at once, you can quickly and efficiently automate your application and webpage interactions.  
+Power Automate enables you to test a selector and ensure that your UI automation flows are running as expected. With the ability to test both desktop and web selectors, you can quickly and efficiently automate your application and webpage interactions.  
 
 ## Testing Selector 
 
-The Selector builder window is used to edit UI elements and contains a Test selector option. When you click on the "Test selector" button, Power Automate for desktop checks whether the selected selector from the selectors’ list can locate a UI element on the screen.  
+The Selector builder window is used to edit UI elements. There, you may find the option for testing the selector. When you click on the "Test selector" button, Power Automate checks whether the selected selector from the selectors’ list can locate a UI element on the screen. 
 
 ![Screenshot of test selector button.](media/test-selectors/test-selector-button.png)
 
 In order to test a selector, you must ensure that UI element is available in your machine. After clicking on the ‘Test selector’ button, the following message is displayed: 
  
-![Screenshot of test selector button.](media/test-selectors/test-selector-initial-message.png)
+![Screenshot of initial message for test selector.](media/test-selectors/test-selector-initial-message.png)
 
 There are three possible outputs: 
 * **Success:** A UI element was found successfully. 
 
-![Screenshot of test selector button.](media/test-selectors/test-selector-success.png)
+![Screenshot of successful test selector.](media/test-selectors/test-selector-success.png)
 
-* **Failed:** No UI element was found. Power Automate for desktop highlights the element (level) that was not found in the ‘Elements’ list, indicating to the user the element that should be fixed. 
+* **Failed:** No UI element was found. Power Automate highlights the element (level) that was not found in the ‘Elements’ list, indicating to the user the element that should be fixed. 
 
-![Screenshot of test selector button.](media/test-selectors/test-selector-fail.png)
+![Screenshot of failed test selector.](media/test-selectors/test-selector-fail.png)
 
-* **Multiple UI elements found:** The selector may locate multiple UI elements on the screen. If used in an action, Power Automate for desktop will interact with one of these elements randomly. Power Automate for desktop highlights at testing the UI element that will be interacted at the runtime if the specific selector is used in an action. 
+* **Multiple UI elements found:** The selector may locate multiple UI elements on the screen. If used in an action, Power Automate will interact with one of these elements randomly. Power Automate highlights at testing the UI element that will be interacted at the runtime if the specific selector is used in an action. 
 
-![Screenshot of test selector button.](media/test-selectors/test-selector-multiple.png)
+![Screenshot of multiple UI elements test selector.](media/test-selectors/test-selector-multiple.png)
 
 You may get more information for each output by clicking on the output icon next to the tested selector.  
+
+
 
 You can test selectors for both desktop and web UI elements. Desktop selectors are captured from any Windows application, while web selectors are captured from webpages and can be used only in browser automation actions.  
 
