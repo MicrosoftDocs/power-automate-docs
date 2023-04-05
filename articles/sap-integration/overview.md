@@ -106,9 +106,6 @@ The Power Automate flows automate the business rules behind the scenes while the
 - Record to Report
 - Make to Stock and Make to Order
 
-> [!IMPORTANT]
-> In preview, the focus is on testing the Order to Cash and Procure to Pay business processes.
-
 ## What value will SAP integration add?
 
 SAP integration with Power Platform will help your organization:
