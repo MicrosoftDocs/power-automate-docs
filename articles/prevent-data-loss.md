@@ -1,5 +1,5 @@
 ---
-title: Introduction to data loss prevention (DLP) policies.
+title: Introduction to data loss prevention (DLP) policies
 description: Learn about data loss prevention policies for Power Automate.
 services: ''
 suite: flow
@@ -45,14 +45,14 @@ To learn more about protecting your data, go to [Data loss prevention policies](
 Power Automate provides the ability to create and enforce DLP policies that classify desktop flows modules (or individual module actions) as **business**, **non-business**, or **blocked** categories. This categorization prevents makers from combining modules and actions from different categories into a desktop flow, or between a cloud flow and the desktop flows it uses.
 
 >[!IMPORTANT]
->Data loss prevention for desktop flows is available for versions of Power Automate Desktop 2.14.173.21294 or newer. If you are using an older version, uninstall and update to the latest version.
+>Data loss prevention for desktop flows is available for versions of Power Automate Desktop 2.14.173.21294 or newer. If you are using an earlier version, uninstall and update to the current version.
 
 ### Availability 
 
-Data loss prevention (DLP) for desktop flows is now available to all customers in Public Preview at no cost. Administrators can configure their DLP policies and enforce them on desktop flows with PowerShell. 
+Data loss prevention (DLP) for desktop flows is now available in public preview to all customers at no cost. Administrators can configure their DLP policies and enforce them on desktop flows with PowerShell. 
 
 >[!WARNING]
->- Your administrators can also classify the new desktop flow modules in their DLP policies directly in the Power Platform admin center, but they must opt-in by creating a support ticket. 
+>- Your administrators can also classify the new desktop flow modules in their DLP policies directly in the Power Platform admin center, but they must opt in by creating a support ticket. 
 >- Your tenant might already have access to the new desktop flow modules in the DLP experience. 
 
 ### PowerShell support 
@@ -148,7 +148,12 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
 
 
 >[!Note]
->If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they're trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy. 
+>If your users don't have the current Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they're trying to run, debug from Power Automate Desktop, or save desktop flows that violate data loss prevention policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy. 
+
+
+
+
+
 
 ### Creating a DLP policy with desktop flows restrictions in the Power Platform admin center
 
@@ -184,7 +189,7 @@ When your tenant is opted into the user experience in the Power Platform, your a
 
 ## DLP enforcement change process
 
-Periodically, DLP enforcement changes are needed. These changes can be a due to new DLP capabilities, an enforcement gap being filled, or a bug fix.
+Periodically, DLP enforcement changes are needed. These changes can be due to new DLP capabilities, an enforcement gap being filled, or a bug fix.
 When changes can impact existing flows, the following staged DLP enforcement change management process is used.
 
 1. **Investigating**: Confirm the need for a DLP enforcement change and investigate the specifics of the change.
