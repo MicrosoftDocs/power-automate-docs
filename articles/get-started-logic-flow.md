@@ -96,12 +96,13 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 ## Test your flow
 
-	@@ -106,44 +92,41 @@ Send a tweet with the keyword that you indicated, or wait for someone else to po
+Send a tweet with the keyword that you indicated, or wait for someone else to post such a tweet.
+
 Within a minute after the tweet is posted, an email message notifies you of the new tweet.
 
 > [!TIP]
 > Use the **Send email (V2)** action to format email in which you customize the font, use bold, italic or underline, customize the color and highlight, and create lists or links, and more.
-![Rich edit email.](media/get-started-logic-flow/email-rich-text.png)
+> ![Rich edit email.](media/get-started-logic-flow/email-rich-text.png)
 
 ## Manage a cloud flow
 
