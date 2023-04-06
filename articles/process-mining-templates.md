@@ -1,13 +1,14 @@
 ---
-title: Power Platform templates for process mining in process advisor (preview)
-description: Learn how to use Power Platform templates for process mining in the Power Automate process advisor.
+title: Power Platform templates for process mining in process mining
+description: Learn how to use Power Platform templates for process mining in Power Automate.
 author: donums
 contributors:
   - donums
-  - v-aangie  
+  - v-aangie 
+  - tatn 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.app: 
@@ -17,17 +18,21 @@ search.audienceType:
   - enduser
 ---
 
-# Power Platform templates for process mining (preview)
+# Power Platform templates for process mining 
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+Process Advisor templates make it easy for organizations to onboard their data for process mining and gain insights with just a few selections. Unlike traditional process mining tools, templates eliminate the need for data identification and manipulation.
 
-Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. Templates for [Desktop flows](#desktop-flows-template), [Power Virtual Agents](#power-virtual-agents-template), and [Power Apps insights](#power-apps-insights-template) provide insights that help you identify automation opportunities and address performance and compliance opportunities in your flows.
+Templates are available for [Desktop flows](#desktop-flows-template), [Power Virtual Agents](#power-virtual-agents-template), and [Power Apps insights](#power-apps-insights-template). Each template provides insights that help identify automation opportunities and address performance and compliance issues in workflows.
 
-Creating and running a template is similar for all the process advisor Power Platform templates.
+By using Process Advisor templates, organizations can quickly and easily start mining their processes for insights and streamline their workflows. Templates simplify the process and allow organizations to focus on the insights and opportunities that matter most, rather than getting bogged down in data manipulation and processing.
 
 ## Desktop flows template
 
-The Desktop flows template analyzes the run history of flows that you create with [robotic process automation (RPA)](https://powerautomate.microsoft.com/robotic-process-automation/) in Power Automate. To learn more, go to [Introduction to desktop flows](desktop-flows/introduction.md).  
+The Desktop Flows template analyzes the run history of flows created using [robotic process automation (RPA)](https://powerautomate.microsoft.com/robotic-process-automation/) in Power Automate. This template provides insights into the performance and compliance of RPA workflows. To learn more about desktop flows, please refer to the[Introduction to desktop flows](desktop-flows/introduction.md) documentation. 
+
+By analyzing the run history of RPA flows, the Desktop Flows template can identify potential issues, such as errors or inefficiencies, and provide recommendations for improvement. This information can help organizations optimize their RPA workflows and improve overall performance. Additionally, the Desktop Flows template can help organizations ensure compliance with regulatory requirements by identifying potential violations and recommending corrective actions.
+
+Overall, the Desktop Flows template is a powerful tool that can help organizations maximize the value of their RPA workflows while minimizing risks and improving compliance.
 
 ### Create and run the Desktop flows template
 
@@ -58,11 +63,11 @@ Learn how to [visualize and gain insights from processes](process-mining-visuali
 
 ## Power Virtual Agents template
 
-The Power Virtual Agents template analyzes your bots to help you better understand your users' journey and maximize the bots' effectiveness. To learn more about Power Virtual Agents, go to [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+The Power Virtual Agents template is designed to analyze the performance and usage of your chatbots, providing insights into your users' journeys and helping you maximize the bots' effectiveness. To learn more about Power Virtual Agents, you can refer to the [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 
 ### Create and run the Power Virtual Agents template
 
-1. In Power Automate in the left panel, select **Process advisor**.
+1. In Power Automate on the left panel, select **Process advisor**.
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Virtual Agents** tile.
 
@@ -84,9 +89,9 @@ Learn how to [visualize and gain insights from processes](process-mining-visuali
 
 ## Power Apps insights template
 
-The Power Apps insights template enables you to visualize the actions and success of your Power Apps. It allows you to maximize your apps' functionality and manage its success rate. To learn more about Power Apps, go to [What is Power Apps?](/power-apps/powerapps-overview)
+The Power Apps insights template helps you visualize the performance and usage of your Power Apps. It enables you to optimize your apps' functionality and manage its success rate. To learn more about Power Apps, check out [What is Power Apps?](/power-apps/powerapps-overview)
 
-The Power Apps insights template uses telemetry data from [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze your apps. That means you'll need to get an Application ID for your app in an Application Insights resource before you can run the Power Apps insights template.
+The Power Apps insights template uses telemetry data from [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze your apps. To use this template, you'll need to obtain an Application ID for your app in an Application Insights resource.
 
 ### Get your app's Application Insights Application ID
 
@@ -126,7 +131,7 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
 ### Create and run the Power Apps insights template
 
-1. In Power Automate in the left panel, select **Process advisor**.
+1. In Power Automate on the left panel, select **Process advisor**.
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Apps insights** tile.
 

@@ -1,14 +1,14 @@
 ---
-title: Settings overview (preview)
-description: Learn how to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license in the Minit desktop application in process advisor.
-author: maslejka
+title: Settings overview
+description: Learn how to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.app:
 - Flow
@@ -17,40 +17,67 @@ search.audienceType:
 - enduser
 ---
 
-# Settings overview (preview)
+# Settings overview
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+The **Settings** in options allow you to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license.
 
-The Settings section allows you to set the general options and default configuration of Minit, define the working hours calendar templates, and update the application or license.
+## Set options
 
-Access settings from the Project hub by selecting the cogwheel in the application toolbar. Changes in the settings are applied only after selecting **Save**. Unsaved changes are indicated by an asterisk next to the section name.
+Change various settings in minit.
 
-:::image type="content" alt-text="Screenshot of settings.in the Project hub." source="media/image-22.png":::
+1. On the title bar, select the gear icon > **Options**.
 
-## Options
+1. Select you settings.
 
-Change various application settings.
+1. Select **Save**.
 
-:::image type="content" alt-text="Screenshot of settings options." source="media/image-20.png":::
+    Unsaved changes are indicated by an asterisk next to the section name.
 
-## Tasks history
+    To learn about the **Options** tabs, go to [Application settings](options.md).
 
-The history of performed tasks such as process import or data export from a view is listed here.
+    :::image type="content" alt-text="Screenshot of Options screen." source="media/settings-options.png":::
 
-Select **...** next to each task to display further options. If a task could not be completed, you can select **Retry task** to restart, or you can edit its parameters before restart by selecting **Edit task**. You can also cancel ongoing tasks by selecting the option **Cancel task** and display the result of the task by selecting **View result**.
+## Set task history
 
-If you want to see more information about the task, including error messages in case of failed tasks, expand the task details by selecting the arrow.
+View the history of performed tasks such as publish to Power BI or data export from a view.
 
-:::image type="content" alt-text="Screenshot of the Task history screen." source="media/image-21.png":::
+1. On the title bar, select the gear icon > **Tasks history**.
 
-## Working hours
+1. To show or hide task history details, turn the **Task history** slider off or on.
 
-The Working Hours section allows you to define calendar templates that can be applied to process views in the Process explorer in order to influence the performance analysis calculation, which is by default performed on a 24/7 basis. For more information about this section, go to [Working hours](working-hours.md). The overview of your configured connections can be found here. Use the **Add connection** button to add a new connection. Use the **X** button at the right end of the connection item to delete the corresponding connection.
+1. Select **Save**.
+
+    :::image type="content" alt-text="Screenshot of the Tasks history screen." source="media/tasks-history.png":::
+
+If a task couldn't be completed, select **Retry** to restart. Alternatively, you can edit its parameters before restart by selecting **Edit**. You can also display the result of the task by selecting **View result**.
+
+## Set working hours
+
+The **Working hours** screen allows you to define calendar templates that can be applied to process views in order to influence the performance analysis calculation. The default setting is 24 hours, 7 days per week.
+
+1. On the title bar, select the gear icon > **Working hours**.
+
+1. To create a new template of working hours, select **Create new calendar template**.
+
+    To learn about the **Calendar template** tabs, go to [Working hours](working-hours.md).
+
+1. In the **General** tab, enter a name in the **Template name** field.
+
+1. In the **Working week** and **Non-working days** tabs, customize your new calendar.
+
+1. Select **Save**.
+
+To delete a calendar, select the ellipses (**...**) > **Delete**.
+
+If you have an existing calendar and want to make a new calendar based on it, select the ellipses (**...**) > **Create duplicate**. This way, you don't need to create a calendar from scratch.
+
+To learn more, go to [Working hours](working-hours.md).
 
 ## About
 
-The program version information is shown here. When a new update is available, a blue **Update** button appears.
+Display the minit version information.
 
-:::image type="content" alt-text="Screenshot of the About screen." source="media/image-23.png":::
+1. On the title bar, select the gear icon > **About**.
 
+1. When you're done, select **Close**.
 
