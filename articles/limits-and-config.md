@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: tapanm
 editor: ''
 tags: ''
 
@@ -19,8 +18,6 @@ ms.author: deonhe
 ms.reviewer: angieandrews
 Contributors:
   - georgiostrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

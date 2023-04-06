@@ -19,8 +19,6 @@ ms.workload: na
 ms.date: 02/10/2023
 ms.author: matow
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

@@ -18,9 +18,6 @@ ms.workload: na
 ms.date: 01/03/2023
 ms.author: rakrish
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
-  - Powerplatform
 search.audienceType: 
   - flowmaker
 ---

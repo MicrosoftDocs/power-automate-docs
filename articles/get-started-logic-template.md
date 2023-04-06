@@ -19,8 +19,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/17/2023
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

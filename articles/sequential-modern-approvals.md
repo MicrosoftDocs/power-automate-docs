@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -18,8 +17,6 @@ ms.date: 08/13/2020
 ms.author: deonhe
 ms.reviewer: gtrantzas
 ms.custom: intro-internal
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
