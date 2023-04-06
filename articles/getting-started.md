@@ -40,7 +40,7 @@ Just think about time saved once you automate repetitive manual tasks simply by 
 
 Anyone from a basic business user to an IT professional can create automated processes using Power Automate's no-code/low-code platform.
 
-## Benifits by industry
+## Benefits by industry
 
 Check out how some companies implemented Microsoft Power Platform solutions using Power Automate in: 
 
