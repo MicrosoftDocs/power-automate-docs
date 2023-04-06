@@ -21,7 +21,7 @@ search.audienceType:
 
 # Test a selector
 
-Power Automate enables you to test a selector and ensure that your UI automation flows are running as expected. With the ability to test both desktop and web selectors, you can quickly and efficiently automate your application and webpage interactions.  
+Power Automate enables you to test a selector and ensure that your UI automation flows are running as expected. With the ability to, test both desktop and web selectors, you can quickly and efficiently automate your application and webpage interactions.  
 
 ## Testing Selector 
 
@@ -50,7 +50,7 @@ You may get more information for each output by clicking on the output icon next
 
 ![Screenshot of info from result button test selector.](media/test-selectors/test-selector-button-on-result.png)
 
-You can test selectors for both desktop and web UI elements. Desktop selectors are captured from any Windows application and can be used in actions of the UI automation group while web selectors are captured from webpages and can be used only in browser automation actions.  
+You can test selectors for both desktop and web UI elements. Desktop selectors are captured from any Windows application and can be used in actions of the UI automation group. Web selectors are captured from webpages and can be used only in browser automation actions.  
 
 > [!NOTE]
 > Every time you edit a tested selector, the output icon is removed, and selector should be tested again.  
@@ -78,7 +78,7 @@ Each desktop UI element belongs to a screen (parent UI element). In some cases, 
 
 ### Web UI elements - Open Web browser tab
 
-In case of a web UI element, in order to proceed with the test, the web page that contains the specific UI element must be available in your machine and the web browser tab should be selected in the "Web browser tab" drop down list. 
+If there is a web UI element, in order to proceed with the test, the web page that contains the specific UI element must be available in your machine and the web browser tab should be selected in the "Web browser tab" drop down list. 
  
 ![Screenshot of test selector to select web tab.](media/test-selectors/test-selector-select-web-tab.png)
 
