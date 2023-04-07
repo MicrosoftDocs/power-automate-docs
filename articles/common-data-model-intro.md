@@ -15,8 +15,6 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2023
 ms.author: Matow
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

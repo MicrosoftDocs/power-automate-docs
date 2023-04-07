@@ -4,7 +4,6 @@ description: These prerequisites are required to install and use the Automation 
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 ms.devlang: na

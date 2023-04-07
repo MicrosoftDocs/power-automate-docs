@@ -15,9 +15,6 @@ caps.latest.revision: 12
 author: "Mattp123"
 ms.author: "matp"
 ms.reviewer: angieandrews
-manager: "kvivek"
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

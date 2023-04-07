@@ -4,7 +4,6 @@ description: Configure the Automation Kit environment variables.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 
