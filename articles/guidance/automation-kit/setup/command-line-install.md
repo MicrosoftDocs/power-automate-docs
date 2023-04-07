@@ -20,7 +20,7 @@ ms.author: grarchib
 
 To install the latest version of the Automation Kit using the command line you can use the following steps below. If you are unable to use the command line tools you can use the manual steps documented in [Main](./main.md) and [Satellite](./satellite.md).
 
-1. Ensure that you have <a ref='https://learn.microsoft.com/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature' target="_blank">Enable the Power Apps component framework feature</a> in the environments that you want to install the Automation Kit for both Main and Satellite environments.
+1. Ensure that you have <a ref='/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature' target="_blank">Enable the Power Apps component framework feature</a> in the environments that you want to install the Automation Kit for both Main and Satellite environments.
 
 1. Ensure that the <a href="https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Reviews" target="_blank">Creator Kit installed</a> into the environments hat you wish to install into
 
@@ -34,7 +34,7 @@ To install the latest version of the Automation Kit using the command line you c
 
 1. Select **AutomationKitInstall.zip** and use context menu to **Extract All**
 
-1. Ensure that you have the <a href="https://learn.microsoft.com/power-platform/developer/cli/introduction" target="_blank">Power Platform CLI</a> installed
+1. Ensure that you have the <a href="/power-platform/developer/cli/introduction" target="_blank">Power Platform CLI</a> installed
 
 1. Execute the PowerShell script using the following command line
 
