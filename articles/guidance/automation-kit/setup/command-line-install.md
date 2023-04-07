@@ -20,11 +20,11 @@ ms.author: grarchib
 
 To install the latest version of the Automation Kit using the command line, you can use the following steps below. If you are unable to use the command line tools, you can use the manual steps documented in [Main](./main.md) and [Satellite](./satellite.md).
 
-1. Ensure that you have <a ref='/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature' target="_blank">Enable the Power Apps component framework feature</a> in the environments that you want to install the Automation Kit for both Main and Satellite environments.
+1. Ensure that you have [Enabled the Power Apps Component Framework Feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in the environments that you want to install the Automation Kit for both Main and Satellite environments.
 
-1. Ensure that the <a href="https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Reviews" target="_blank">Creator Kit installed</a> into the environments hat you wish to install into
+1. Ensure that the [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Reviews) is installed into the target environment
 
-1. Open the latest release from the <a href="https://github.com/microsoft/powercat-automation-kit/releases" target="_blank">Automation Kit GitHub Releases</a>
+1. Open the latest release from the [Automation Kit GitHub Releases](https://github.com/microsoft/powercat-automation-kit/releases)
 
 1. Download the **AutomationKitInstall.zip** from the Assets section
 
@@ -51,7 +51,7 @@ NOTE:
 Unblock-File Install_AutomationKit.ps1
 ```
 
-1. The PowerShell script will prompt you to create an installation configuration file using [Install Setup](/get-started/setup). The setup configuration pages will provide you the following
+1. The PowerShell script will prompt you to create an installation configuration file using [Install Setup](https://microsoft.github.io/powercat-automation-kit/get-started/setup). The setup configuration pages will provide you the following
 
     - Select configuration for main or satellite solutions
     - Select users to assign to security groups
