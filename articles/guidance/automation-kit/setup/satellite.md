@@ -32,6 +32,11 @@ Use the following steps to create an app registration that will be used by flows
 
 ## Add a new client secret
 
+   > [!IMPORTANT]
+   > NOTES:
+   > 1. Azure Key Vault is only required for Automation Kit Satellite release March 2023 or older. From the April 2023 release Azure Key Vault is no longer required as a prerequisite.
+   > 1. From April 2023 release and newer a Client Secret is NOT required.
+
 1. Select **Certificates & secrets.**
 1. Select **New client secret.**
 1. Enter description (for example, Auto CoE Dataverse), and then select appropriate expiry value.
@@ -48,6 +53,9 @@ Use the following steps to create an app registration that will be used by flows
 1. Next, go to your Azure Key Vault. (This is where we'll store the values so that Power Automate can use them to call the Dataverse Web API.)
 
 ## Create secrets for the client ID and tenant ID you copied earlier
+
+   > [!IMPORTANT]
+   > NOTES: From April 2023 release and newer a Client Secret is NOT required.
 
 1. Inside the **Secrets** tab, select **Generate/Import**.
 1. Use a descriptive name for each secret. Here are a few examples.
@@ -82,7 +90,6 @@ Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-k
 1. Select **Import**.
 
 Wait for the Creator Kit to finish importing before continuing to next step.
-
 
 ## Create application user inside Dataverse (per satellite environment)
 

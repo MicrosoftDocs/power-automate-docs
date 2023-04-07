@@ -21,7 +21,13 @@ ms.reviewer: deonhe
 
 1. To get the information for the environment variables, open a new tab.
 2. Go to the satellite environment from the [maker portal](https://make.powerapps.com).
-3. Select the **Settings** in the top right nav bar and select **Developer resources**. The information on this panel will be copied to the Key Vault secrets that follow.
+
+## Azure Key Vault
+
+   > [!IMPORTANT]
+   > NOTE: Azure Key Vault is only required for Automation Kit Satellite release March 2023 or older. From the April 2023 release Azure Key Vault is no longer required as a prerequisite and environment variables for this are no longer required.
+
+1. Select the **Settings** in the top right nav bar and select **Developer resources**. The information on this panel will be copied to the Key Vault secrets that follow.
 
 Next, we need to get the **URL path** for our **Azure Key Vault secrets**.
 
@@ -51,6 +57,8 @@ Follow these steps to get the format:
 
    Use this information for the environment variables.
 
+## Environment Variable Summary
+
 | **Environment variable name**         | **Description**                                                                                                                                                                                                                                                                                 |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AKV Client ID Secret                  | Azure Key Vault secret for client ID (application ID) from app registration: /subscriptions/{Subscription ID}/resourceGroups/{Resource Group Name}/providers/Microsoft.KeyVault/vaults/{Key Vault Name}/secrets/{Secret Name}                                                                   |
@@ -69,7 +77,7 @@ Follow these steps to get the format:
 
 ## Steps to get the desktop flow base url
 
-1. Select the **My flows** tab.
+1. From **https://make.powerautomate.com** Select the **My flows** tab.
 1. Copy the web address up to '…environments/'.
 1. You can also get the **environment ID** from this URL.
 1. Select your environment.

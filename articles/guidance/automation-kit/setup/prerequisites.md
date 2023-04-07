@@ -35,6 +35,9 @@ An Azure app registration is used for an application user for the Dataverse Web 
 
 ## Azure Key Vault
 
+   > [!IMPORTANT]
+   > NOTE: Azure Key Vault is only required for Automation Kit Satellite release March 2023 or older. From the April 2023 release Azure Key Vault is no longer required as a prerequisite.
+
 Azure Key Vaults are used to store secrets for the Azure app registration mentioned earlier, depending on your requirements. There might be one Key Vault per satellite environment. Here's an example of how you may name your Key Vaults.
 
 - KV-Contoso-Dev
