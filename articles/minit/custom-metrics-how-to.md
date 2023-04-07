@@ -10,8 +10,6 @@ ms.topic: overview
 ms.date: 04/03/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser

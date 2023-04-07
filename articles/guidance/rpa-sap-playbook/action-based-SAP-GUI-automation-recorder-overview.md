@@ -4,7 +4,6 @@ description: The desktop recorder translates each mouse click and keystroke into
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

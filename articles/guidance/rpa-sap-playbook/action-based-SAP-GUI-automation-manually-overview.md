@@ -4,7 +4,6 @@ description: Quickly develop delightful, timesaving low-code SAP GUI automations
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

@@ -4,7 +4,6 @@ description: Tips for using Automation Kit for Power Platform with ALM.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 

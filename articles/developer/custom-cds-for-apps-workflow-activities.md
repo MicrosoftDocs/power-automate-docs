@@ -11,9 +11,6 @@ caps.latest.revision: 51
 author: "msftman"
 ms.author: "deonhe"
 ms.reviewer: gtrantzas
-manager: "kvivek"
-search.app: 
-  - Flow
 search.audienceType: 
   - developer
 ---

@@ -10,8 +10,6 @@ ms.topic: conceptual
 ms.date: 03/31/2013
 ms.author: michalrosik
 ms.reviewer: angieandrews
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser

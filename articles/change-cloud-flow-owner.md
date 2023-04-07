@@ -13,8 +13,6 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 02/01/2023
 ms.author: kisubedi
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

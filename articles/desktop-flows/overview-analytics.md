@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -18,8 +17,6 @@ ms.date: 08/26/2022
 ms.author: DeonHe
 contributors:
 - georgiostrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowadmin
 ---
