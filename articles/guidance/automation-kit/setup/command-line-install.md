@@ -18,7 +18,7 @@ ms.author: grarchib
 
 # Command Line Install
 
-To install the latest version of the Automation Kit using the command line you can use the following steps below. If you are unable to use the command line tools you can use the manual steps documented in [Main](./main.md) and [Satellite](./satellite.md).
+To install the latest version of the Automation Kit using the command line, you can use the following steps below. If you are unable to use the command line tools, you can use the manual steps documented in [Main](./main.md) and [Satellite](./satellite.md).
 
 1. Ensure that you have <a ref='/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature' target="_blank">Enable the Power Apps component framework feature</a> in the environments that you want to install the Automation Kit for both Main and Satellite environments.
 
@@ -28,7 +28,7 @@ To install the latest version of the Automation Kit using the command line you c
 
 1. Download the **AutomationKitInstall.zip** from the Assets section
 
-1. In the Windows Explorer select the downloaded **AutomationKitInstall.zip** and open the properties dialog
+1. In the Windows Explorer, select the downloaded **AutomationKitInstall.zip** and open the properties dialog
 
 1. Select the **Unblock** button
 
@@ -45,7 +45,7 @@ powershell Install_AutomationKit.ps1
 
 NOTE:
 
-1. Depending on your PowerShell execution policy you may need to run the following command
+1. Depending on your PowerShell execution policy, you may need to run the following command
 
 ```cmd
 Unblock-File Install_AutomationKit.ps1
@@ -60,7 +60,7 @@ Unblock-File Install_AutomationKit.ps1
     - Optionally define if sample data should be imported
     - Optionally Enable Power Automate Flows contained in the solutions should be enabled
 
-1. After you complete the setup copy the **automation-kit-main-install.json** or **automation-kit-satellite-install.json** file to the **AutomationKitInstall** folder above
+1. After you complete the website setup steps you can copy downloaded **automation-kit-main-install.json** or **automation-kit-satellite-install.json** file to the **AutomationKitInstall** folder above
 
 1. Once the file is downloaded the script will prompt for **y** to install the main solution, **n** to install satellite solution
 
