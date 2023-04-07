@@ -21,7 +21,7 @@ search.audienceType:
 
 # Test a selector
 
-Power Automate enables you to test a selector and ensure that your UI automation flows are running as expected. With the ability to, test both desktop and web selectors, you can quickly and efficiently automate your application and webpage interactions.  
+Power Automate enables you to test a selector and ensure that your UI automation flows are running as expected. With the ability to test both desktop and web selectors, you can quickly and efficiently automate your application and webpage interactions.  
 
 ## Testing Selector 
 
@@ -42,7 +42,7 @@ There are three possible outputs:
 
 ![Screenshot of failed test selector.](media/test-selectors/test-selector-fail.png)
 
-* **Multiple UI elements found:** The selector may locate multiple UI elements in the screen. If used in an action, Power Automate will interact with one of these elements randomly. Power Automate highlights at testing the UI element that will be interacted at the runtime if the specific selector is used in an action. 
+* **Multiple UI elements found:** The selector may locate multiple UI elements in the screen. If UI element is used in an action, Power Automate at runtime will interact with the first respective UI element from the top left corner of the screen. Note that Power Automate highlights at testing the UI element that will be interacted at the runtime if the specific selector is used in an action. 
 
 ![Screenshot of multiple UI elements test selector.](media/test-selectors/test-selector-multiple.png)
 
