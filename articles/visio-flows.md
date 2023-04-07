@@ -15,8 +15,6 @@ ms.topic: conceptual
 ms.date: 06/16/2022
 ms.author: thjeffri
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

@@ -4,7 +4,6 @@ description: Frequently asked questions about the Automation Kit setup guidance.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 

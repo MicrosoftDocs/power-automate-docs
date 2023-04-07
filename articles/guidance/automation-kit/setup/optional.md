@@ -4,7 +4,6 @@ description: Optional setup steps depending on your configuration.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 

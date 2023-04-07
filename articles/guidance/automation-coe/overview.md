@@ -9,9 +9,6 @@ ms.author: kathyos
 ms.reviewer: deonhe
 search.audienceType: 
   - admin
-search.app: 
-  - Flow
-  - Powerplatform
 ---
 # Automation adoption best practices overview
 

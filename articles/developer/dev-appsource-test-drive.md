@@ -8,8 +8,6 @@ ms.topic: article
 ms.date: 05/09/2017
 ms.author: Deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - developer
 ---
