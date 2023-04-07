@@ -19,6 +19,13 @@ ms.reviewer: deonhe
 
 # Set up the Automation Kit
 
+This section includes the manual install process for the Main Solution of the Automation Kit. There is an automated [command line installer](./command-line-install.md) that will also guide you through this process.
+
+Once completed the main solution setup you can setup the following optional components:
+
+- [Satellite](./satellite.md) - Providing the ability to meter deployed Automation Project solutions.
+- [Scheduler](./scheduler.md) - Providing a calendar view of recurring cloud flows that include Power Automate Desktop flows.
+
 >[!IMPORTANT]
 >Perform all steps using the **Automation CoE Admin** account mentioned in the [prerequisites](prerequisites.md).
 

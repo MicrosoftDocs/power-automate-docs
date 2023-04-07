@@ -19,6 +19,8 @@ ms.reviewer: deonhe
 
 # Set up satellites
 
+This section includes the manual install process for the Satellite Solution of the Automation Kit. There is an automated [command line installer](./command-line-install.md) that will also guide you through this process.
+
 ## Create an Azure Active Directory (Azure AD) app registration to connect to Dataverse Web API
 
 Use the following steps to create an app registration that will be used by flows in the satellite environment.
