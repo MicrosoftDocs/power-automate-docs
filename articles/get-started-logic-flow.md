@@ -19,8 +19,6 @@ ms.workload: na
 ms.date: 09/04/2019
 ms.author: napienko
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -32,7 +30,7 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 
 ## Prerequisites
 
-* An account on [make.powerautomate.com](https://make.powerautomate.com)
+* An account on [Power Automate](https://make.powerautomate.com)
 * A Twitter account
 * Office 365 credentials
 
@@ -40,9 +38,11 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 
 First, you will need to select what event, or *trigger*, starts your flow.
 
-1. In [Power Automate](https://make.powerautomate.com), select **My flows** from the navigation bar on the left.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Select **New**, and then select **Automated-from blank**. 
+1. From the navigation bar on the left, select **My flows**.
+
+1. Select **New**, and then select **Automated-from blank**.
 
 1. Give your flow a name in the **Add a name or we'll generate one** field.
 
@@ -67,8 +67,6 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. Select **New step**.
 
-    <!-- ![Add action.](./media/get-started-logic-flow/add-action-icon.png) -->
-
 1. In the box that shows **Search connectors and actions**, enter **send email**, and then select **Send an email (V2)**.
 
     ![List of actions.](./media/get-started-logic-flow/send-email.png)
@@ -89,11 +87,6 @@ First, you will need to select what event, or *trigger*, starts your flow.
    Optionally, you can add more tokens, other text, or both to the body of the email.
 1. Near the top of the screen, select **Save**.
 
-    <!-- ![Select the Create flow button.](./media/get-started-logic-flow/create-button.png) -->
-<!-- 1. Select **Done** to update the list of flows.
-
-     ![Select the done button.](./media/get-started-logic-flow/done-button.png) -->
-
 ## Test your flow
 
 Send a tweet with the keyword that you indicated, or wait for someone else to post such a tweet.
@@ -106,7 +99,10 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 
 ## Manage a cloud flow
 
-1. In [Power Automate](https://make.powerautomate.com), select **My flows** in the navigation bar on the left side.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. In the navigation bar on the left, select **My flows**.
+
 1. In the list of flows, do any of the following:
 
    * To pause a cloud flow, set its toggle to **Off**.
@@ -129,13 +125,12 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 
 > [!NOTE]
 > You can have up to 600 flows in your account. If you already have 600 flows, delete one before you create another flow.
->
->
+
 ## Next steps
 
 * [Add steps](multi-step-logic-flow.md), such as different ways to be notified, to your flow.
 * [Run tasks on a schedule](run-scheduled-tasks.md), when you want an action to occur daily, on a certain date, or after a certain number of minutes.
-* [Add a cloud flow to an app](https://powerapps.microsoft.com/tutorials/using-logic-flows/) to allow your app to kick off logic in the cloud.
+* [Add a cloud flow to an app](/power-apps/maker/canvas-apps/using-logic-flows)
 * [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.
 
 
