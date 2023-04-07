@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: tapanm
 editor: ''
 tags: ''
 ms.subservice: cloud-flow
@@ -13,8 +12,6 @@ ms.topic: conceptual
 ms.date: 06/13/2022
 ms.author: deonhe
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

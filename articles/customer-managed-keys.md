@@ -16,8 +16,6 @@ ms.workload: na
 ms.date: 03/31/2023
 ms.author: rakrish
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
