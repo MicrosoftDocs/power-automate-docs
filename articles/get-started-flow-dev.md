@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
@@ -16,8 +15,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/27/2022
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

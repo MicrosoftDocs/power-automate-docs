@@ -4,7 +4,6 @@ description: You'll need these four main components for SAP GUI automation with 
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

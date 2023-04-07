@@ -12,9 +12,6 @@ ms.assetid: 62cfac6b-0d78-48de-9364-0287454aa2a0
 caps.latest.revision: 9
 ms.author: "Deonhe"
 ms.reviewer: angieandrews
-manager: "kvivek"
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

@@ -4,7 +4,6 @@ description: This is the initial example for the RPA SAP automation tutorials.
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

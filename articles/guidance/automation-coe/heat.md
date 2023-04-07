@@ -11,9 +11,6 @@ ms.author: kathyos
 ms.reviewer: deonhe
 search.audienceType: 
   - admin
-search.app: 
-  - Flow
-  - Powerplatform
 ---
 # Holistic enterprise automation techniques (HEAT)
 

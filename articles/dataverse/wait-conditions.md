@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: TapanM
 editor: ''
 tags: ''
 
@@ -16,8 +15,6 @@ ms.workload: na
 ms.date: 03/15/2022
 ms.author: Matow
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

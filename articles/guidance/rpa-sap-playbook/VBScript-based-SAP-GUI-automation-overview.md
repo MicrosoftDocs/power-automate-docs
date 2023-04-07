@@ -4,7 +4,6 @@ description: Use the VBScript that the SAP GUI automation engine generates in Po
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

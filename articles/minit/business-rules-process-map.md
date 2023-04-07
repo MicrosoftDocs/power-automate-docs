@@ -11,8 +11,6 @@ ms.date: 04/03/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
 ms.custom: bap-template
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser
