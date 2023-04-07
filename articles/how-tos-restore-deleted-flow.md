@@ -12,8 +12,6 @@ ms.date: 02/03/2023
 ms.topic: conceptual
 ms.author: kisubedi
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

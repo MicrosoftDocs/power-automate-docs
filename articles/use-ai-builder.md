@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -18,9 +17,6 @@ ms.date: 10/15/2019
 ms.author: deonhe
 ms.reviewer: angieandrews
 ms.custom: intro-internal
-search.app: 
-  - Flow
-  - Powerplatform
 search.audienceType: 
   - admin
 ---

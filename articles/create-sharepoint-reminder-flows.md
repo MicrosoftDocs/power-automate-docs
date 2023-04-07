@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: tapanm
 editor: ''
 tags: ''
 ms.devlang: na

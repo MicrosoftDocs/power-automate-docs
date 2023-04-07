@@ -4,7 +4,6 @@ description: Learn about the permissions and general details about Power Automat
 services: ''
 suite: flow
 author: msftman
-manager: tapanm
 editor: ''
 tags: ''
 ms.subservice: cloud-flow
@@ -12,8 +11,6 @@ ms.topic: conceptual
 ms.date: 06/17/2022
 ms.author: deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
