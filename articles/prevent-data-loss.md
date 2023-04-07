@@ -24,6 +24,10 @@ search.app:
 search.audienceType: 
   - admin
 ---
+
+<!-- My only concerns with this article are the mentions of Power Automate Desktop, which according to the style guide should not be used. https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=47506 The style guide suggests that when you need a platform descriptor, go with something like "for the desktop" after the app name. -->
+
+
 # Data loss prevention (DLP) policies
 
 Data loss prevention policies help protect your organizational data from being shared with a list of connectors that you define.
