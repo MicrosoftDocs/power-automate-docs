@@ -23,9 +23,7 @@ In the following sections, we'll walk you through the steps on how to purge hist
 We'll cover how to identify the desktop flow data that could be purged, how to create a bulk delete job to delete the data, and how to monitor the progress of the job.
 
 > [!CAUTION]
-> Before deleting any Dataverse data, either manually or by creating bulk delete jobs, it is important to understand that the data is permanently deleted from your Dataverse environment, and there's no way to recover the data individually once it's been deleted. If you accidentally delete important data, or if the bulk delete job doesn't work as expected, you could lose valuable data, configurations and even put functional product areas at risk.
->
-> Having a validated Dataverse backup in place before any delete operation may help mitigate this risk. Please note though that backup and recovery is outside the scope of this document, but there are resources available for learning more about how to back up and restore your Dataverse environment [here](/power-platform/admin/backup-restore-environments).
+> Before deleting Microsoft Dataverse data, it is important to understand that the data is permanently deleted from your environment, and there's no way to recover  individual records once they've been deleted.
 
 > [!NOTE]
 > To create bulk-delete jobs in Microsoft Dataverse, you need to have the **Bulk Delete** privilege in at least one of the roles that have been assigned to you.
@@ -96,6 +94,6 @@ To monitor Microsoft Dataverse bulk-delete jobs, please follow these steps:
 
 ### See also
 
-[Remove a large amount of specific, targeted data with bulk deletion](/power-platform/admin/delete-bulk-records)
-[Delete data in bulk](/power-apps/developer/data-platform/delete-data-bulk)
-[View and take action on bulk deletion jobs](/power-platform/admin/view-take-action-bulk-deletion-jobs)
+- [Remove a large amount of specific, targeted data with bulk deletion](/power-platform/admin/delete-bulk-records)
+- [Delete data in bulk](/power-apps/developer/data-platform/delete-data-bulk)
+- [View and take action on bulk deletion jobs](/power-platform/admin/view-take-action-bulk-deletion-jobs)
