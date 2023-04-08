@@ -79,7 +79,7 @@ Using Microsoft Dataverse's Bulk Deletion Wizard, you can create more advanced q
 
 In the following filter example screen we are searching for all **Flow Session** records that are **older than six months**, with a status of **Cancelled**, **Failed** or **Succeeded**, and associated with a specific desktop flow. For this you will apply the **Group AND** option and use the **Regarding (Process)** field of the related desktop flow table to filter based on **desktop flow name.**
 
-![Showing a "Define Search Criteria" screen with an advanced filter applied](media/delete-desktop-flow-run-history/advanced-filter-criteria-screen.png)
+![Showing a "Define Search Criteria" screen with an advanced filter applied](media/autofit-excel-columns-vbscript/set-variable-action.png)
 
 ### Monitoring bulk-delete jobs
 
