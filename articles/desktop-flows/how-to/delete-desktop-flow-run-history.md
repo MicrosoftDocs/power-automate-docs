@@ -79,7 +79,7 @@ Using Microsoft Dataverse's Bulk Deletion Wizard, you can create more advanced q
 
 In the following filter example screen we are searching for all **Flow Session** records that are **older than six months**, with a status of **Cancelled**, **Failed** or **Succeeded**, and associated with a specific desktop flow. For this you will apply the **Group AND** option and use the **Regarding (Process)** field of the related desktop flow table to filter based on **desktop flow name.**
 
-![Showing a "Define Search Criteria" screen with an advanced filter applied](/media/delete-desktop-flow-run-history/advanced-filter-criteria-screen.png)
+![Showing a "Define Search Criteria" screen with an advanced filter applied](media/delete-desktop-flow-run-history/advanced-filter-criteria-screen.png)
 
 ### Monitoring bulk-delete jobs
 
@@ -90,7 +90,7 @@ To monitor Microsoft Dataverse bulk-delete jobs, please follow these steps:
 3. Select Data management > **Bulk deletion**.
 4. From the Bulk Record Deletion grid, you can use the view selector to view the **completed**, **in-progress**, **pending**, and **recurring bulk deletion system jobs**.
 5. The **Recurring Bulk Deletion System Jobs** view shows the job definitions for the bulk deletion system jobs that you've just created together with the ones that are included out of the box. If you open one of these recurring bulk deletion system job records, you can see the query the job uses to identify which records to delete and the schedule the job runs on. For these out-of-the-box system jobs, you can't modify the query used by the system job, but you can modify the schedule the job runs on.
-   ![Showing a recurring bulk delete job details page that includes the applied filter criteria](/media/delete-desktop-flow-run-history/recurring-bulk-deletion-system-job-details.png)
+   ![Showing a recurring bulk delete job details page that includes the applied filter criteria](media/delete-desktop-flow-run-history/recurring-bulk-deletion-system-job-details.png)
 
 6. If you update the view selector to show jobs that have already been scheduled, are in progress, or executed, you can cancel, resume, or postpone the job. You can find these options in the Actions menu when you open the record.
 
