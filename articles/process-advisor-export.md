@@ -15,6 +15,10 @@ search.audienceType:
   - enduser
 ---
 
+> [!NOTE]
+>
+> Only the export and import of **task mining** (recordings) processes are currently supported. **Process mining** (data) processes cannot currently be exported and imported.
+
 # Export and import your process in process advisor
 
 You can copy or move process advisor processes from one environment to another using Microsoft Power Platform solutions. You need to be an owner or co-owner of a process to export it.
