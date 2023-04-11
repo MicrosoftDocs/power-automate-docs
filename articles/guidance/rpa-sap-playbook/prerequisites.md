@@ -4,7 +4,6 @@ description: These prerequisites need to be met before you can start automating 
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

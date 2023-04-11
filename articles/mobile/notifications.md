@@ -18,8 +18,6 @@ ms.workload: na
 ms.date: 11/30/2022
 ms.author: napienko
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

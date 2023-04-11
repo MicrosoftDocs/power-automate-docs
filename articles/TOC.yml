@@ -560,6 +560,8 @@
       href: ./desktop-flows/how-to/extract-text-word-document.md
     - name: Pass a datatable from a cloud flow to a desktop flow
       href: ./desktop-flows/how-to/passing-datatable.md
+    - name: Delete desktop flow run history data
+      href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md  
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -903,6 +905,8 @@
       href: ./sap-integration/env-variables-connection-refs.md
     - name: Prebuilt solution
       href: ./sap-integration/solutions.md
+    - name: FAQs
+      href: ./sap-integration/FAQs.md
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers

@@ -4,7 +4,6 @@ description: Limitations and resolutions for issues in the Automation Kit.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 

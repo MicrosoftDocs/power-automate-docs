@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: masisley
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -19,8 +18,6 @@ ms.author: deonhe
 ms.reviewer: gtrantzas
 Contributors:
   - georgiostrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
