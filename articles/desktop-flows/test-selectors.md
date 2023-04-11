@@ -5,7 +5,7 @@ author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 04/04/2023
-ms.author: nikosmoutzourakis
+ms.author: nimoutzo
 ms.reviewer: ndoelman, matp
 contributors:
 - Yiannismavridis
@@ -104,7 +104,7 @@ When a selector is tested and the output is success or multiple UI elements foun
 
 **Test selector** capabilities can be fully used in the **Text editor** view of the selector builder window as well, in the same fashion as in the builder view.
 
-![Screenshot of test selector button.](media/test-selectors/test-selector-select-text-editor.png)
+![Screenshot of text editor button.](media/test-selectors/test-selector-select-text-editor.png)
 
 ## See also
 
