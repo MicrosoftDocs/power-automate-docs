@@ -276,7 +276,7 @@ For more information on removing a user's permission in an  environment, navigat
 
 ## Delete Gateway Settings
 
-Responding to Data Subject Delete Requests for On-Premise Data Gateways can be found [here](/power-bi/service-gateway-onprem#tenant-level-administration).
+Responding to Data Subject Delete Requests for On-Premises Data Gateways can be found [here](/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## Delete User Details
 
