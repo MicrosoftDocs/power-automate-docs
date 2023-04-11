@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
 ms.author: Deonhe
 ms.reviewer: gtrantzas
 editor: ''
@@ -16,9 +15,6 @@ ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/10/2023
-search.app: 
-  - Flow
-  - Powerplatform
 search.audienceType: 
   - admin
 ---

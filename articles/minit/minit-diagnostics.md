@@ -10,8 +10,6 @@ ms.topic: conceptual
 ms.date: 03/09/2023
 ms.author: tatn
 ms.reviewer: angieandrews
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser

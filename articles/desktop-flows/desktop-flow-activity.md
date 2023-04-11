@@ -7,8 +7,6 @@ ms.topic: conceptual
 ms.date: 02/22/2023
 ms.author: quseleba
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

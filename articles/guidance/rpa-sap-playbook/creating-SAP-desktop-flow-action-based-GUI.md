@@ -4,7 +4,6 @@ description: Follow this step-by-step tutorial to create a desktop flow to autom
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

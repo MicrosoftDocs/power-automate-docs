@@ -4,7 +4,6 @@ description: Overview of the Automation Kit test case guidance.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 ms.devlang: na
