@@ -2,14 +2,11 @@
 title: Integrate Power Automate with websites and apps | Microsoft Docs
 description: Embed the Power Automate experiences into your website or app.
 author: MSFTMAN
-manager: KVivek
 ms.subservice: developer
 ms.topic: article
 ms.date: 02/02/2023
 ms.author: Deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - developer
 ---

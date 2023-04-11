@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -17,9 +16,6 @@ ms.workload: na
 ms.date: 01/12/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
-  - Powerplatform
 search.audienceType: 
   - maker
 ---
@@ -45,7 +41,7 @@ Let’s say you want to send an approval request each time an employee uploads a
 
     ![Screenshot of the option to create a new cloud flow..](media/create-approval-response-options/create-flow.png)
 
-1. Under **Choose a connector**, search for **Sharepoint**, and select the appropriate card.
+1. Under **Choose a connector**, search for **SharePoint**, and select the appropriate card.
   
 1. Select the **When an item is created** action.
 

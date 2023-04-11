@@ -10,8 +10,6 @@ ms.subservice: cloud-flow
 ms.date: 02/11/2022
 ms.author: deonhe
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

@@ -19,8 +19,6 @@ ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2023
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

@@ -1,55 +1,33 @@
 ---
-title: Application settings (preview)
-description: Learn how to change application settings such as user interface language or set where the exported files will be stored in the Minit desktop application in process advisor.
-author: maslejka
+title: Application settings
+description: Learn how to change application settings such as user interface language or set where the exported files will be stored in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# Application settings (preview)
+# Application settings
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+You can change the application settings in the **Options** tab.
 
-Here you can change the application settings. After the settings are changed, the changes are applied after you select **Save**.
+- **Change general settings:** In the **General** tab, change general settings such as the user interface language or set where the exported files will be stored. You can also define the default duration format used for all newly created processes and views. To learn more, go to [View settings](view-settings.md).
 
-## GENERAL
+- **Change viewing preferences:** In the **Process explorer** tab, change the default settings for view creation processes. These settings will be used whenever a new process view is created.
 
-Here you can change general settings such as the user interface language or set where the exported files will be stored. You can also define the default duration format used for all newly created processes and views. To learn more, go to [View settings](view-settings.md).
+- **Change process map and social chart settings:** In the **Process map** tab, change the default settings for displaying the process map and social graphs, such as spacing between nodes, displaying the start and end nodes, or chart alignment. These settings will be used whenever a new process view is created.
 
-:::image type="content" alt-text="Screenshot of the Options tab in the general settings." source="media/image-20.png":::
+- **Change process animation settings:** In the **Animation** tab, change settings for process animation. These settings will be used as default, whenever a new process view is created.
 
-## PROCESS EXPLORER
+### See also
 
-Here you can change the default settings for viewing processes. These settings will be used whenever a new process view is opened.
-
-:::image type="content" alt-text="Screenshot of the default settings in the Process Explorer tab." source="media/image-38.png":::
-
-## PROCESS MAP
-
-Here you can change the default settings for displaying the process map and social graphs, such as spacing between nodes, displaying the start and end nodes or chart alignment. These settings will be used whenever a new process view is opened.
-
-:::image type="content" alt-text="Screenshot of the default settings in the Process Map tab." source="media/image-39.png":::
-
-## ANIMATION
-
-Here you can change settings for process animation. These settings will be used as default, whenever a new process view is opened.
-
-:::image type="content" alt-text="Screenshot of the default settings in the Animation tab." source="media/image-40.png":::
-
-## FAVORITE ATTRIBUTES
-
-Here you can change the default settings for Favorites panel - switch individual metrics, which should be visible on the Favorites panel, on and off. These settings will be used as default, whenever a new process view is opened.
-
-:::image type="content" alt-text="Screenshot of the default settings in the Favorite Attributes tab." source="media/image-41.png":::
+[Settings overview](settings.md)
 

@@ -1,23 +1,21 @@
 ---
-title: Finance and operations templates for process mining in process advisor (preview)
-description: Learn how to use Finance and operations templates for process mining in the Power Automate process advisor.
+title: Finance and operations templates for process mining
+description: Learn how to use Finance and operations templates for process mining in Power Automate process mining.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Finance and operations templates for process mining (preview)
+# Finance and operations templates for process mining
 
 If you're interested in analyzing your finance and operation process easily, onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights by enabling you to connect to your system of record and surfacing contextual insights. You'll avoid the data identification and manipulation that's required with traditional process mining tools and reach process rich insights on analysis.
 
@@ -37,7 +35,6 @@ The **Accounts payable** template requires connection to SAP through:
 
 For the template ingestion to work, the required tables must be found in the database (copy or original) with the original table name:
 
-
 |Table  |Description  |
 |---------|---------|
 |BKPF     | Accounting document header        |
@@ -53,17 +50,15 @@ To see the available templates, select **Process advisor** on the left.
 
 1. Select a connection type from the three connection types available (**SQL database**, **Oracle database**, and **OData service**).
 
-    :::image type="content" source="media/process-mining-finance-ops-templates/connection-type.png" alt-text="Screenshot of the connection types.":::
+1. If you're selecting **SQL database**, enter the **Process name**, **Server Name**, **Database Name**, and **Schema Name**.
 
-1. If you're selecting **SQL database**, enter the **Process name**, **Server Name**, **Database Name**, and **Schema Name**. To learn more, go to [SQL Server](/power-query/connectors/sqlserver).
-
-   :::image type="content" source="media/process-mining-finance-ops-templates/sql-database.png" alt-text="Screenshot of the Process name, Server Name, Database Name, and Schema Name fields.":::
+    To learn more, go to [SQL Server](/power-query/connectors/sqlserver).
 
 1. (Optional) To improve the analyze time of the report, refine data by defining **Start Date**, **End Date**, **Client**, and **Company Code**.
 
-   :::image type="content" source="media/process-mining-finance-ops-templates/dates-other-fields.png" alt-text="Screenshot of the Start Date, End Date, Client, and Company Code fields.":::
+1. Once you're on the connection page, fill out credential information and select **Next**
 
-1. Once you're on the connection page, fill out credential information and select **Next**. To learn more about the fields, go to [Connect to SQL Server database from Power Query Online](/power-query/connectors/sqlserver#connect-to-sql-server-database-from-power-query-online). 
+    To learn more about the fields, go to [Connect to SQL Server database from Power Query Online](/power-query/connectors/sqlserver#connect-to-sql-server-database-from-power-query-online). 
 
    :::image type="content" source="media/process-mining-finance-ops-templates/setup-dataflow.png" alt-text="Screenshot of the connection page.":::
 
@@ -128,7 +123,7 @@ Once the analysis is done, there will be a custom report to visualize your P2P p
 
 ## Visualizations and KPIs
 
-P2P templates have additional KPIs and visualizations built on top of the standard report. To learn more about the process map and filters, go to [Visualize and gain insights from processes in process advisor (preview)](process-mining-visualize.md).
+P2P templates have additional KPIs and visualizations built on top of the standard report. To learn more about the process map and filters, go to [Visualize and gain insights from processes in process advisor](process-mining-visualize.md).
 
 - **PO items**: The PO line item is the **Case ID** for this report. Every unique PO line item is represented as a case.
 

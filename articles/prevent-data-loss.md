@@ -18,9 +18,6 @@ ms.workload: na
 ms.date: 02/16/2023
 ms.author: cgarty
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
-  - Powerplatform
 search.audienceType: 
   - admin
 ---

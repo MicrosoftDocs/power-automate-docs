@@ -4,7 +4,6 @@ description: Learn to use the flow exception rules framework.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 

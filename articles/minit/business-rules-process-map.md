@@ -1,36 +1,34 @@
 ---
-title: Business rules for process maps (preview)
-description: Learn how to display business rules in the process map in the Minit desktop application for Microsoft Power Automate process advisor.
-author: maslejka
+title: Business rules for process maps
+description: Learn how to display business rules in the process map in minit.
+author: janPidych
 contributors:
-  - maslejka
+  - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: janpidych
 ms.reviewer: angieandrews
 ms.custom: bap-template
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# Business rules for process maps (preview)
+# Business rules for process maps
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+ To select business rules to view in the process map, select the **Customize** icon on the panel on the right in the **Process map** screen. You can display results per single business rule, or by severity over all business rules. Process scope business rules aren't available in the process map.
 
-Use the **Customize** pane in the process explorer right side panel to select business rules to view in the process map. You can display results per single business rule or by severity over all business rules. Process scope business rules aren't available in the process map.
-
-   :::image type="content" alt-text="Screenshot of the Customize screen display modes." source="media/brpmmodes.png":::
+   :::image type="content" alt-text="Screenshot of the Customize screen display modes." source="media/br-customize.png":::
 
 ## Single business rule display
 
 If you select **Single business rule**, results are displayed for the business rule you select in the events and edges lists. You can select different business rules for events and edges.
 
-:::image type="content" alt-text="Screenshot of the Customize screen in the single business rule mode." source="media/brpmdropdowns.png":::
+
+:::image type="content" alt-text="Screenshot of the Customize screen in the single business rule mode." source="media/br-customize-2.png":::
+
 
 Legend:
 
@@ -54,3 +52,7 @@ If you select a severity, the process map displays the total number of occurrenc
 Select an activity in the process map to view its details. In the **Business rules** section of the **Details** panel, you can select one or more business rules to display for the activity. The detailed view shows both default and custom results.
 
 :::image type="content" alt-text="Screenshot of a process map details display mode." source="media/brpmdetails.png":::
+
+### See also
+
+[Business rules overview](business-rules.md)
