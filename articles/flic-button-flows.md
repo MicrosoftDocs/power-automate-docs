@@ -1,12 +1,13 @@
 ---
-title: Start flows with Flic buttons
-description: Learn how to start instant flows with physical buttons from Flic by Shortcut Labs.
+title: Run your flows with Flics smart buttons (preview)
+description: Learn how run your flows with physical buttons from Flic by Shortcut Labs.
 services: ''
 suite: flow
 documentationcenter: na
 author: natalie-pienkowska
 contributors:
   - natalie-pienkowska
+  - kartikraop
   - v-aangie
 ms.author: napienko
 ms.reviewer: angieandrews
@@ -22,9 +23,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Run your flows with Flics smart buttons (Preview)
+# Run your flows with Flics smart buttons (preview)
 
-Trigger your flows by pressing a physical button, known as a Flic, from Shortcut Labs. For example, press a Flic to track your working hours, block your calendar, count visitors at an event, or save geographical locations.
+Trigger your flows by pressing a physical button, known as a Flic, from Shortcut Labs. For example, select a Flic to track your working hours, block your calendar, count visitors at an event, or save geographical locations.
 
 > [!IMPORTANT]
 >
@@ -52,17 +53,22 @@ This screenshot shows a sample of what your Flic configuration process might be 
 
 :::image type="content" alt-text="Screenshot of configuration of Flics." source="./media/flic-button-flows/configure-flic-actions.png":::
 
-After you've linked a Flic event to Power Automate, you can then select that Flic as a trigger for your flows. You select triggers later in this tutorial.
+After you've linked a Flic event to Power Automate, you can select that Flic as a trigger for your flows. You select triggers later in this tutorial.
 
 ## Create a cloud flow that's triggered by a Flic
 
-In this tutorial, we use a Flic to run a cloud flow that records the time a consultant spends at each client. The consultant presses the Flic once upon arrival, and then presses it again, just before departure from the client. Each press of the Flic starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification. The email contains details about the flow run.
+In this tutorial, we use a Flic to run a cloud flow that records the time a consultant spends at each client. The consultant selects the Flic once upon arrival, and then selecta=s it again, just before departure from the client. Each selection of the Flic starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification. The email contains details about the flow run.
 
->[!NOTE]
->
->Be sure you've used the Flic mobile app to pair, and configure at least one **click** action to trigger Power Automate. In this screenshot, I've configured the **click** action to trigger Power Automate. Later in this tutorial we configure our flow to trigger when the Flic is pressed once (clicked).
+Be sure you've used the Flic mobile app to pair and configure at least one click action to trigger Power Automate.
 
 :::image type="content" alt-text="Screenshot of a Flic example." source="./media/flic-button-flows/flic-configured-for-flow.png":::
+
+In this screenshot:
+
+1. The **Click** action is configured to trigger Power Automate.
+
+1. Later in this tutorial, you'll configure the **Flow** to trigger when the Flic is pressed once (clicked).
+
 
 Let's get started creating our flow.
 
@@ -70,13 +76,9 @@ Let's get started creating our flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Select **Create** > **Start with a template**.
+2. In the **Search** field, enter **flic**, and then select the search icon.
 
-1. In the **Search by keywords** field, enter **flic**.
-
-1. Select the **Track your working hours with Flic smart button** template.
-
-    :::image type="content" alt-text="Screenshot of the 'Track your working hours with Flic smart button template'." source="./media/flic-button-flows/flic-template-track.png":::
+3. Select the **Track your working hours with Flic smart button** template.
 
 ### Create a spreadsheet in Google Sheets
 
