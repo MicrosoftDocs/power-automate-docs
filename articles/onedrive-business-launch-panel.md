@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
@@ -17,8 +16,6 @@ ms.workload: na
 ms.date: 01/26/2023
 contributors:
 - georgiostrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

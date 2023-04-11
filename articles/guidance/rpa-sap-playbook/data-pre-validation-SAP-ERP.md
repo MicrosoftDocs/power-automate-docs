@@ -4,7 +4,6 @@ description: In this optional step of the RPA Playbook for SAP GUI Automation wi
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

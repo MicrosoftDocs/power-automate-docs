@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
 editor: ''
 tags: ''
 
@@ -17,8 +16,6 @@ ms.workload: na
 ms.date: 03/17/2020
 ms.author: deonhe
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

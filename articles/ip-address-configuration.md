@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: masisley
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -19,8 +18,6 @@ ms.author: deonhe
 ms.reviewer: gtrantzas
 Contributors:
   - georgiostrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -58,7 +55,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />login.live.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to authentication and authorization endpoints. |
 | graph.microsoft.com | https | Access to Microsoft graph - for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for Connectors. |
-| *.flow.microsoft.com | https | Access to the Power Automate site. |
+| *.flow.microsoft.com <br> *.logic.azure.com | https | Access to the Power Automate site. |
 | *.powerautomate.com | https | Access to Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
 | *.azureedge.net | https | Access to the Power Automate CDN. |

@@ -1,17 +1,16 @@
 ---
-title: Improve cloud flows with process insights in process advisor (preview)
+title: Improve cloud flows with process insights (preview)
 description: Learn how to improve your cloud flows with process insights in the process advisor feature in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie 
+  - tatn
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -21,37 +20,40 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
+Process mining can help you gain valuable insights and optimize your cloud flows. You can visualize your flow's performance, identify bottlenecks and opportunities for improvement, and monitor for performance drifts. By utilizing process advisor to analyze your flow's run history with process mining techniques, you can generate these insights directly from the flow details page.
 
-
-You can gain insights and improve your cloud flows with the help of process mining. With a single click, you can visualize your flow’s performance, identify bottlenecks and optimization opportunities, and monitor for performance drifts. You can generate these insights directly from the flow details page by having process advisor analyze your flow-run history with process mining techniques.
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
-- Flow runs generated in the last 28 days.
+To generate process insights, you must meet the following prerequisites:
 
-- Only owner of a flow can generate process insights.
-
-- Access to Microsoft Dataverse.
-
-- Environment maker role.
+- Flow runs must have been generated within the last 28 days.
+- Only the owner of a flow has the ability to generate process insights.
+- You must have access to Microsoft Dataverse (i.e., a low-code data platform that allows you to store and manage data for your applications)
+- You must have the environment maker role.
 
 ## Known limitations
 
-- After a flow runs, it takes about 15 to 30 minutes for data to be added for analysis. Historical runs up to 28 days are immediately available for analysis.
+Please note the following known limitations of this feature:
 
-- The feature isn't supported for Dataverse for Microsoft Teams environments.
+- After a flow runs, it may take approximately 15 to 30 minutes for data to be added for analysis. However, historical runs up to 28 days are immediately available for analysis.
+- This feature is not currently supported for Dataverse for Microsoft Teams environments.
 
 ## Terminology
 
-- The flow runs are 'cases'  in the report. Actions are represented as 'activities'.
+To better understand the process insights feature, it's helpful to be familiar with the following terminology:
 
-- A path is a specific activity sequence, like a 'trace' through the process, from start to end. Each path differs from the others by at least one action.
-
-- Custom metrics and filters allow you to generate custom insights such as based on your flow version, or successful versus failed flow run.
+- Flow runs are referred to as 'cases' in the report, while actions are represented as 'activities'.
+- A path is a specific sequence of activities, representing a 'trace' through the process from start to end. Each path differs from the others by at least one activity.
+- Custom metrics and filters enable you to generate personalized insights based on criteria such as flow version or successful versus failed flow runs.
 
 ## Improve your flow with process insights
 
-On your flow details page, you can see the **Process insights (preview)** card. To see your flow process visualization and analytics, select **Improve your flow**.
+On your flow details page, you can see the **Process insights** card. To see your flow process visualization and analytics, select **Improve your flow**.
   
 1. Go to your flow details page.
 
@@ -63,11 +65,9 @@ On your flow details page, you can see the **Process insights (preview)** card. 
 
 1. Wait for analysis to complete.
 
-    :::image type="content" source="media/process-mining-cloud-flow-process-insights/analyze-process.png" alt-text="Screenshot of analyzing your process.":::
+    When analysis completes, the flow process analytics screen displays.
 
-When analysis completes, the flow process analytics screen displays.
-
-:::image type="content" source="media/process-mining-cloud-flow-process-insights/flow-process-analytics.png" alt-text="Screenshot of the flow process analytics.":::
+    :::image type="content" source="media/process-mining-cloud-flow-process-insights/flow-process-analytics.png" alt-text="Screenshot of the flow process analytics.":::
 
 1. To get the most common run path in your automation, select the most frequent variant.
 

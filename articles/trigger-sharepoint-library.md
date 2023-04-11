@@ -4,7 +4,6 @@ description: Learn how to create an approval flow that triggers when new files a
 services: ''
 suite: flow
 author: msftman
-manager: tapanm
 editor: ''
 tags: ''
 ms.subservice: cloud-flow
@@ -12,8 +11,6 @@ ms.topic: article
 ms.date: 06/16/2022
 ms.author: deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

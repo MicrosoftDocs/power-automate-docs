@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: anjlic
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -16,8 +15,6 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/17/2020
 ms.author: anjlic
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

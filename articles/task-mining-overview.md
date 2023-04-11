@@ -1,35 +1,42 @@
 ---
-title: Overview of task mining in process advisor | Microsoft Docs
-description: Quickly capture detailed steps for each process in your organization to help you better understand workflows and begin automating to reclaim time.
+title: Task mining overview
+description: Learn about using task mining to help you better understand workflows and begin automating to reclaim time.
 author: donums
 contributors:
   - donums
   - v-aangie 
+  - tatn
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Overview of task mining in process advisor
+# Task mining overview
 
-With task mining in process advisor, you can quickly capture detailed steps for each process in your organization to help you better understand places to streamline workflows. You can do this on your own or invite colleagues to contribute and collaborate to *flows*. To learn more about flows, go to [Overview of the types of flows in Power Automate](flow-types.md).
+Task mining is a technology that enables organizations to capture detailed steps for tasks performed on users' desktops, either independently or collaboratively with colleagues.
+
+By analyzing recorded user actions, task mining allows organizations to gain insights into how they perform tasks, identify common mistakes made during task performance, and pinpoint tasks that can be automated, all of which can help optimize their business processes.
+
+Task mining is a powerful tool for streamlining workflows, identifying inefficiencies and bottlenecks in workflows, reducing costs, and fostering a culture of continuous improvement where employees are encouraged to optimize their work processes.
 
 ## Business example
 
-For example, in a healthcare facility, you can use task mining to record patient check-in procedures. Process advisor automatically produces a process map that visualizes the check-in process. You can see which activities take the longest, how many variations of the check-in process there are, and what variations and actions take the most time.
+A retail company can use process advisor with task mining to analyze the order fulfillment process. By recording and analyzing user actions, the organization can gain insights into how orders are processed, identify inefficiencies and bottlenecks, and pinpoint tasks that can be automated.
 
-Application analytics and analytics dashboards show you which applications teams spend the most time in, and the best activities to optimize. You're then guided to create cloud flows with automation recommendations that reveal which connectors to use based on your workflows.
+Process advisor can automatically produce a process map that visualizes the order fulfillment process, allowing the organization to identify which activities take the longest, how many variations of the order fulfillment process exist, and which variations and actions take the most time.
 
-With insights and guided recommendations from process advisor, you're ready to begin automating and reclaim the time you need for what matters most.
+In addition, the application analytics report can show which applications teams spend the most time in and which activities can be optimized. With this information, the organization can create flows with automation recommendations that reveal which connectors to use based on the process advisor analysis.
 
-## Steps to task mining
+Using insights from process advisor, the retail company can streamline the order fulfillment process, reduce errors, and improve customer satisfaction. The company can also automate repetitive tasks, freeing employees to focus on more value-added activities such as customer service and inventory management.
+
+## Components
+
+Following are the main components for task mining:
 
 - [Prepare processes and recordings](process-advisor-processes.md)
 

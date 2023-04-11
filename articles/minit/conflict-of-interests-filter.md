@@ -1,54 +1,37 @@
 ---
-title: Conflict of interest filter (preview)
-description: Learn how to use the conflict of interest filter in the Minit desktop application in process advisor.
-author: maslejka
+title: Conflict of interests filter
+description: Learn how to use the conflict of interests filter in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# Conflict of interest filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Conflict of interests filter
 
 Use this filter to expose cases with conflict of interests. A typical example is the violation of rules for assigning roles in performing critical tasks.
 
-By means of the filter, you can specify two sets of events which should/should not have the same value of an attribute. All events from the first group are always compared with all events from the second group. If there is the intersection of the two groups, the filter result will always return all such events.
+By means of the filter, you can specify two sets of events which should happen in the process in given order and should or shouldn't have the same value of an attribute. All events from the first group are always compared with all events from the second group. If there is the intersection of the two groups, the filter result will always return all such events.
 
-The sample screenshot shows a situation where this filter is used to find out if there has ever been invoice accounted by the same person as the one who actually approved it. For this purpose, the filter is set to select all cases where these two activities occurred and were carried out by the same person.
+The screenshot shows a situation where this filter is used to find out if there's been a customer who was charged by the same person as the one who actually collected payment. For this purpose, the filter is set to select all cases where these two activities occurred and were carried out by the same person.
 
-:::image type="content" alt-text="screenshot of the conflict of interest filter." source="media/image035.png":::
+:::image type="content" alt-text="screenshot of the conflict of interest filter." source="media/conflict-of-interests-filter.png":::
 
-### Selecting an attribute for comparing events
+## Define the conflict of interests filter
 
-Here you choose the attribute on the basis of which the events in the case are selected.
+1. From the **2 consecutive events exist with attribute** dropdown menu, select the attribute on the basis of which the events in the case are selected.
 
-:::image type="content" alt-text="Screenshot of an attribute for comparing events." source="media/image036.png":::
+1. Select the **for the first event, values** field, and then select the attribute values in the **List** tab to the right. Your selections appear in the field.
 
-### Specification of the first event
+1. Select the **for the second event, values** field, and then select the attribute values in the **List** tab to the right. Your selections appear in the field.
 
-Here you choose which events belong to the first group of events. Select permissible values for its selected attribute in the list on the right side of the screen.
-
-:::image type="content" alt-text="Screenshot of values for the first event." source="media/image037.png":::
-
-### Specification of the second event
-
-Here you choose which events belong to the second group of events. Select permissible values for its selected attribute in the list on the right side of the screen.
-
-:::image type="content" alt-text="Screenshot of values for the second event." source="media/image038.png":::
-
-### Specification of the common attribute value
-
-Here you choose which attribute is decisive for assessing the conflict of interests.
-
+1. From the **and both events have equal value of attribute** dropdown menu, select which attribute is decisive for assessing the conflict of interests.
 
