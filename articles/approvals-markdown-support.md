@@ -16,8 +16,6 @@ ms.workload: na
 ms.date: 02/27/2023
 ms.author: hamenon
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

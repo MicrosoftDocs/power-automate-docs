@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
 editor: ''
 tags: ''
 
@@ -14,10 +13,8 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/19/2021
+ms.date: 01/12/2023
 ms.author: deonhe
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -14,11 +13,9 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/01/2021
+ms.date: 01/12/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -104,7 +101,7 @@ If received an approval request, but you want somebody else to make the approval
   
 1. Login to the [Power Automate](https://make.powerautomate.com).
 
-1. On the left navigation bar, go to **Action items** > **Approvals**
+1. On the left navigation bar, select **Approvals**.
 
 1. Hover your mouse over the approval you want to reassign, select the three dots > **Reassign**.
 
@@ -119,7 +116,7 @@ To cancel an approval:
 
 1. Login to the [Power Automate](https://make.powerautomate.com).
 
-1. On the left navigation bar, go to **Action items** > **Approvals**
+1. On the left navigation bar, select **Approvals**.
 
 1. Select the **Sent** tab.
 
@@ -140,7 +137,7 @@ If you are the maker of a flow that requests approvals, and the approval request
 
 1. Login to the [Power Automate](https://make.powerautomate.com).
 
-1. On the left navigation bar, go to **Action items** > **Approvals**
+1. On the left navigation bar, select **Approvals**.
 
 1. Select the **Sent** tab.
 

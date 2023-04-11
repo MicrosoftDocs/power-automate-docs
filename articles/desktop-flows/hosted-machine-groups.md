@@ -4,12 +4,10 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/02/2022
+ms.date: 02/28/2023
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser
@@ -29,7 +27,7 @@ Here are some of the key features of hosted machine group:
 - Run unattended desktop flows at scale.
 - Auto-scale the number of bots in your hosted machine group based on current workloads.
 - Load balance bots across all hosted machine groups in an environment.
-- Work or school account integration (preview): Enables access to resources that are part of the business plan linked to your organization, such as Office, Sharepoint, and Azure.
+- Work or school account integration (preview): Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
 - Vanilla or Custom VM images: Use a vanilla VM image provided by Microsoft or personalize your hosted machine group by providing your own Windows image directly from your Azure Compute Gallery.
 
 ## Licensing requirements
@@ -137,6 +135,16 @@ Bots in a hosted machine group are created when needed. Whenever a desktop flow 
 ## Use custom VM images for your hosted machine groups
 
 You can personalize your hosted machine groups by providing your own Windows image directly from your Azure Compute Gallery. This feature allows you to have all your applications installed on your hosted machine group.
+
+### Image requirements
+Custom VM images must meet the following requirements:
+
+ - Generation 2 images
+ - Generalized VM image
+ - 127 GB limit on VM image size
+ - Microsft Edge version 80 or higher
+ 
+Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
 
 ### Create an Azure compute gallery in Azure and add an image
 
@@ -383,7 +391,7 @@ The **Desktop Flows Machine Image Admin** role only brings full privileges on th
 
 ## Use your work or school account (preview)
 
-Hosted machine groups now support work and school accounts in preview. If you use your work or school account, your hosted machine group will have access to your resources that are part of the business plan linked to your organization, such as Office, Sharepoint, Azure, and more.
+Hosted machine groups now support work and school accounts in preview. If you use your work or school account, your hosted machine group will have access to your resources that are part of the business plan linked to your organization, such as Office, SharePoint, Azure, and more.
 
 When you register a hosted machine group with this access option, you won't be prompted for credentials. Instead, the machine will be registered to your Azure Active Directory (Azure AD), and you'll be able to sign in with your Azure AD credentials. To [create a desktop flow connection](desktop-flow-connections.md) to target the hosted machine group, enter your work or school account email address and the associated password.
 
@@ -439,10 +447,32 @@ The following list displays all the supported geographies in the public clouds:
 - Switzerland
 - Norway
 
-Hosted machine groups aren't yet available in sovereign clouds and aren't yet available in the following public cloud geographies:
+Hosted machine groups aren't yet available in the following geographies:
 
 - United Arab Emirates
 - Korea
+
+> [!NOTE]
+> Hosted machine groups capabilities are currently being rolled out in the following sovereign clouds: 
+> 
+> - Government Community Cloud (GCC)
+> - Government Community Cloud High (GCC High)
+> - Department of Defense (DoD)
+>
+> The feature will be fully rolled out by March 20th, 2023
+
+Hosted machines aren't yet available in the following sovereign cloud:
+
+- China
+
+### Sovereign clouds limitations for hosted machine groups
+
+The following features aren't supported in sovereign clouds:
+
+| Feature not supported | Sovereign cloud(s)|
+| ----------| --------------|
+| Work or school acount | GCC, GCC High, DoD |
+| Custom VM images | GCC, DoD |
 
 ### Network limitations for hosted machine groups
 

@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,11 +12,9 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/28/2022
+ms.date: 01/12/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -26,9 +23,13 @@ search.audienceType:
 
 Many triggers can immediately start a cloud flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a cloud flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
 
-Watch this video for a demo of the **Apply to each** action. <!--Note from Sweeny: Can we reupload this video with a better cover image?-->
+<!-- 
+
+Watch this video for a demo of the **Apply to each** action.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7EL]
+
+-->
 
 In this tutorial, we'll create a cloud flow that runs every 15 minutes and does the following:
 
@@ -56,18 +57,18 @@ Here are the requirements for successfully performing the steps in this tutorial
 ## Create a cloud flow
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Select **My flows** > **New flow** > **Scheduled cloud flow**.
-1. In the **Flow name** field, enter a name for your flow.
+1. Select **Create** > **Build your own**.
+1. Select **Scheduled** to create a scheduled cloud flow.
 1. In the **Starting** fields, select the date and time to indicate when the flow should start running.
 1. In the **Repeat every** fields, set the schedule to run the flow. In this example, type 15 and select **Minute** from the dropdown list to run the flow every 15 minutes.
-1. Select **Create**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of a schedule run.](./media/apply-to-each/foreach-3.png "Schedule run")
+    :::image type="content" source="media/apply-to-each/foreach-3.png" alt-text="Screenshot of the options to set up a scheduled flow.":::
 
-1. Select **+ New step**.
-1. In the **Search** field, type **outlook** to find all connectors and actions related to Microsoft Outlook.
-1. Select the **Get emails (V3)** action to open the **Get emails (V3)** card.
+1. Select **Next** and search for **Outlook** to find all connectors and actions related to Microsoft Outlook.
+1. Select **Office 365 Outlook**, the **Get emails (V3)** action, and then **Next**.
+
+    :::image type="content" source="media/apply-to-each/get-emails-action.png" alt-text="Screenshot of the selected Get emails (v3) action.":::
+
 1. Configure the **Get emails (V3)** card to select the top 10 unread emails from the **Inbox** folder.
 
    Don't include attachments because they won't be used in the flow.

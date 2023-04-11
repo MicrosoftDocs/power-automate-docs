@@ -7,8 +7,6 @@ ms.subservice: developer
 ms.date: 01/29/2018
 ms.author: deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - developer
 ---

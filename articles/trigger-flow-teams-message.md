@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -14,26 +13,30 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/07/2022
+ms.date: 01/12/2023
 ms.author: hamenon
 ms.reviewer: gtrantzas
 ---
 
 # Trigger a cloud flow from any message in Microsoft Teams
 
-You can use messages to trigger processes in Teams. For example, you might use a Teams message as a starting point to create a work item in Azure DevOps or create a sales opportunity in Dynamics 365. 
+You can use messages to trigger processes in Teams. For example, you might use a Teams message as a starting point to create a work item in Azure DevOps or create a sales opportunity in Dynamics 365.
 
 Use the **For a selected message** trigger in the Teams connector to trigger a cloud flow directly from within Teams.
 
 ## Create the flow
 
-1. Sign in to Power Automate, and then select **My flows** > **New** > **Instant-from blank**.
-1. Enter a name for your flow.
+1. Sign in to [Power Automate](https://flow.microsoft.com).
+
+1. On the left pane, go to **Create** > **Build your own**.
+
+1. Under **Choose a connector**, search for **Microsoft Teams**, and select the appropriate card.
+
 1. Select the **For a selected message** trigger.
 
-   ![For selected message trigger.](media/trigger-flow-teams-message/trigger-for-a-selected-message.png)
+    :::image type="content" source="media/trigger-flow-teams-message/trigger-for-a-selected-message.png" alt-text="Screenshot of the selected For a selected message trigger.":::
 
-1. Select **Create**.
+1. Select **Next**, and then **Skip to building your own flow** to go directly to the designer.
 
 >[!NOTE]
 >You must sign in to Teams if you aren't already signed in.

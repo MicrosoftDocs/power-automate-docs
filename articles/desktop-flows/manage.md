@@ -4,12 +4,10 @@ description: Learn how to manage desktop flows in the Power Automate portal.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/07/2022
+ms.date: 01/17/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributor:
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -55,18 +53,14 @@ Follow these steps to share a desktop flow:
 
 1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com).
 1. Go to **My flows** > **Desktop flows**.
-1. Select the desktop flow you want to share.
-
-   :::image type="content" source="media/manage-desktop-flows/select-one.png" alt-text="Screenshot of a selected flow to share.":::
-
-1. Select **Share**.
+1. Select the desktop flow you want to share, and then **Share**.
 1. Select **Add people**, and then enter the name of the person in your organization with whom you'd like to share the desktop flow.
-1. Select **Give access**, and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
+1. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 
     - **Co-owner**: This access level gives the co-owner full permissions to the desktop flow. They can edit, share, and delete the desktop flow.
     - **User**: This access level gives permission to only use that desktop flow in a cloud flow. No edit, rename, delete or share permissions are possible with this access. Alternatively, those users can create a copy of the desktop flow using the **Save as** option, and work independently.
 
-1. Select **Share**.
+1. Select **Save**.
 
    :::image type="content" source="media/manage-desktop-flows/sharing-ux.png" alt-text="Screenshot of the Share button.":::
 

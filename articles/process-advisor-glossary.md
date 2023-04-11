@@ -5,13 +5,12 @@ author: donums
 contributors:
   - donums
   - v-aangie 
+  - tatn
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 11/15/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -19,38 +18,38 @@ search.audienceType:
 
 # Glossary in process advisor
 
-**Activity**&mdash;Activities in process advisor describe tasks or actions, the sequence of which results in a business process. Activities can be performed by humans or (automated) by machines.
+Activity — An activity in Process Advisor refers to a specific task or action that is part of a business process. These activities can be carried out by either humans or machines, and the sequence of these activities leads to the completion of a business process.
 
-**Attributes**&mdash;Attributes are the dimensions of your data. Also known as columns.
+Attributes — Attributes refer to the dimensions or columns in your data.
 
-**Contributor**&mdash;A role which can create and upload recordings to a task mining process. Contributors can label and manage their own recordings, but they can't edit the process or other people’s recordings.
+Contributor — A role that allows users to create and upload recordings to a task mining process. Contributors can manage and label their own recordings, but they cannot edit other people's recordings or the process itself.
 
-**Co-owner**&mdash;A role which has similar privileges to the process owner roles. They can edit the process and its recordings, invite people to the process, manage activate label templates, and more. 
+Co-owner — A role that has similar privileges to the process owner. Co-owners can edit the process and its recordings, invite people to the process, manage label templates, and more.
 
-**Dataflow**&mdash;A self-service, cloud-based, data preparation technology that enables customers to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or the organization's Azure Data Lake Storage account.
+Dataflow — A cloud-based, self-service data preparation technology that enables users to ingest, transform, and load data into Microsoft Dataverse environments, Power BI workspaces, or their organization's Azure Data Lake Storage account.
 
-**Data Lake**&mdash;Azure Data Lake includes all the capabilities required to make it easy for developers, data scientists, and analysts to store data of any size, shape, and speed, and do all types of processing and analytics across platforms and languages.
+Data Lake — Azure Data Lake is a platform that provides developers, data scientists, and analysts with the capabilities to store and process data of any size, shape, and speed across different platforms and languages.
 
-**Data source**&mdash;Where the source event log data is located. Dataflow accesses different data sources through its connectors.
+Data source — The location of the event log data. Dataflow uses connectors to access various data sources.
 
-**Event logs**&mdash;Tabular data of processes (or cases) and activities stored in an information system of record. The minimum column requirements for process mining are case ID, activity ID, and start timestamp. Also known as event data.
+Event logs — Tabular data that captures the details of a business process, including the sequence of activities, time stamps, and resources used. The minimum column requirements for process mining are case ID, activity ID, and start timestamp. Also known as event data.
 
-**Power Query**&mdash;A data transformation and data preparation engine. Power Query comes with a graphical interface for getting data from sources and a Power Query Editor for applying transformations. Learn more: [What is Power Query?](/power-query/power-query-what-is-power-query)
+Power Query — A data transformation and preparation engine that comes with a graphical interface for acquiring data from sources and a Power Query Editor for applying transformations.
 
-**Process**&mdash;A series of activities taken to accomplish a goal. Planning demand and converting purchase requisition to purchase orders are examples of processes. 
+Process — A series of activities performed to achieve a specific goal. Examples include planning demand and converting purchase requisitions to purchase orders.
 
-**Process map**&mdash;Visualizes the actual flow of your process based on the imported user or system data.
+Process map — A visual representation of the flow of a process based on imported user or system data.
 
-**Process mining**&mdash;Visualization and analysis of processes based on event logs. Event logs are information stored in information systems. For example, in CRM (Customer Relationship Management), you can find event logs on orders, start and completion of an activity, resources used, and more.
+Process mining — Visualizing and analyzing business processes based on event logs. These event logs are stored in information systems and can capture details such as order information, activity start and completion times, resource usage, and more.
 
-**Recording**&mdash;A recorded sequence of activities that users perform on their desktop. Usually, multiple recordings are analyzed together to get insights into different variants of the same task.
+Recording — A recorded sequence of activities that a user performs on their desktop. Multiple recordings are typically analyzed together to gain insights into different variants of the same task.
 
-**Robotic process automation (RPA)**&mdash;Software that can be easily programmed to do basic, repetitive tasks across applications.
+Robotic process automation (RPA) — Software that automates basic, repetitive tasks across applications.
 
-**Task mining**&mdash;Technology that captures users’ interaction with computers and analyzes how people get jobs done, and how they can do them better.
+Task mining — A technology that captures and analyzes users' interactions with computers to improve task performance.
 
-**Variant**&mdash;A specific path it takes for a process to be completed.
+Variant — A specific path that a process can take to completion.
 
-**Workflow**&mdash;The sequence of industrial, administrative, or other processes through which a piece of work passes from initiation to completion.
+Workflow — The sequence of industrial, administrative, or other processes through which a piece of work passes from initiation to completion.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

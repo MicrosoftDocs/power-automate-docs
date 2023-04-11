@@ -10,8 +10,6 @@ ms.topic: conceptual
 ms.date: 11/15/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -34,41 +32,37 @@ There are two primary ways to share a process in process advisor.
 If you're the co-owner or contributor of a process, you'll find it listed on the **Processes** screen.
 </br>
 > [!IMPORTANT]
-> You must be the co-owner to add or remove owners and contributors to a process.
+> You must be the owner or co-owner to add or remove owners and contributors to a process.
 
 ## Share action
 
-The share action is available on the **Processes** screen for the following.
+The share action can be done using the **Share** button the **Processes** screen or using the **Manage** button on the **Details** screen for the following.
 
-- Each process where you're a co-owner.
+- Each process where you're an owner or co-owner.
 
 - The system administrator in the environment.
 
 - Any security role that has share permissions on process advisor system entities.
 
-The share action is also available on the process details page with the same conditions. Sharing isn't needed at the recording level. Once you share a process with a co-owner, they can manage the recordings associated with a process.
+## Share panel
+
+After selecting the share action, a share panel will appear where you can select Microsoft Dataverse users within your organization to share your process with. You can search for any user within the Dataverse tenant and invite them to your process.
+
+When sharing a process with others, an option to automatically send an email invitation is available. Co-owners or contributors will be asked to help manage the process or add new recordings, respectively. The email invitation will contain a link to the shared process.
 
 :::image type="content" source="media/manage-access.png" alt-text="Screenshot of the 'Manage access' screen.":::
 
-## Share panel
-
-When you select the share action, a share panel is displayed. The share panel is where you select Microsoft Dataverse users in your organization, and share your process with them. You can search for any user to invite to your process in the Dataverse tenant.
-
-When sharing a process with others, the option to automatically send an email invitation is selected. As co-owners or contributors, they're asked to help you manage the process or add new recordings, respectively. There's a link in the email invitation that leads them to the shared process.
-
 ## Share a process with a contributor
 
-Adding a contributor to a process is the most common way to share. Any contributor of a process can perform the following actions.
+The most common way to share a process is by adding a contributor. A contributor of a process has the following abilities:
 
-- View the process details.
-
+- View the details of the process.
 - Add and label recordings.
-
-- Manage your own recordings that have been added to the process (including labeling and deleting recordings).
+- Manage their own recordings that have been added to the process, including labeling and deleting recordings.
 
 ## Share a process with a co-owner
 
-Adding a co-owner to a process allows others to help you label and validate the contributors' recordings, manage the process, and visualize the process analytics and dashboard. Any co-owner of a process can perform the following actions.
+When you add a co-owner to a process, you enable them to assist you in labeling and validating contributors' recordings, managing the process, and visualizing the process analytics and dashboard. Here are the actions that any co-owner of a process can perform:
 
 - [View your process map and related analytics](process-advisor-analyze.md#view-your-process-map-and-related-analytics)
 

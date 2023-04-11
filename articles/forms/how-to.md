@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: Dean-Haas
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -15,8 +14,6 @@ ms.workload: na
 ms.date: 06/22/2022
 ms.author: napienko
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

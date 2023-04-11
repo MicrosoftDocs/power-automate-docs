@@ -1,28 +1,29 @@
 ---
-title: Learn to connect to your data using connections and on-premises data gateways (contains video) | Microsoft Docs
-description: Add or manage connections to SharePoint, SQL Server, OneDrive for Business, Salesforce, Microsoft 365, OneDrive, Dropbox, Twitter, Google Drive, and more
+title: Manage connections in Power Automate (contains video)
+description: Add or manage connections to SharePoint, SQL Server, OneDrive for Business, Salesforce, Microsoft 365, OneDrive, Dropbox, Twitter, Google Drive, and more.
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
-manager: tapanm
+author: Jopanchal
+contributors:
+  - Jopanchal
+  - schabungbam
+  - v-aangie
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/29/2022
-ms.author: Deonhe
+ms.date: 02/10/2023
+ms.author: Jopanchal
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Manage connections in Power Automate
 
 Power Automate uses *connections* to make it easy for you to access your data while building flows. Power Automate includes commonly used connections, including SharePoint, SQL Server, Microsoft 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with Power Apps, so when you create a connection in one service, the connection shows up in the other service.
@@ -51,18 +52,18 @@ You can create a connection in multiple scenarios, including:
 
 ## Add a connection
 
-1. In [Power Automate](https://make.powerautomate.com), sign in with your work or organization account.
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
 
-1. On the left pane, select **Data** > **Connections**.
+1. On the left navigation pane, select **Data** > **Connections**.
 
-   ![Screenshot showing the Connections option.](media/add-manage-connections/data-connections-link.png)
+    :::image type="content" source="media/add-manage-connections/data-connections-link.png" alt-text="Screenshot of the Connections menu option.":::
 
 1. At the top of the page, select **New connection**.
 
 1. In the list of available connections, choose the connection that you want to
     set up (such as SharePoint) by selecting the plus sign (**+**).
 
-   ![List of connections that can be configured.](media/add-manage-connections/new-connections-list.png)
+    :::image type="content" source="media/add-manage-connections/new-connections-list.png" alt-text="Screenshot of the connections that can be configured.":::
 
 1. To find a particular connection option, enter the connector name into the search box that's located in the top right corner of the page, below the settings and help buttons.
 
@@ -81,7 +82,7 @@ Some connectors, such as the SharePoint connector, support the on-premises data 
 
 1. Select the **Connect using on-premises data gateway** option.
 
-   ![Select the on-premises option.](media/add-manage-connections/select-on-prem-option.png)
+    :::image type="content" source="media/add-manage-connections/select-on-prem-option.png" alt-text="Screenshot of the on-premises option.":::
 
 1. Provide the connection's credentials, and then select the gateway that you want to use. More information: [Manage gateways](./gateway-manage.md) and [Understand gateways](./gateway-reference.md)
 
@@ -90,29 +91,25 @@ Some connectors, such as the SharePoint connector, support the on-premises data 
 
 ## Delete a connection
 
+When you delete a connection, it's removed from both Power Apps and Power Automate.
+
 1. Go to **Data** > **Connections**, and select the connection that you want to delete.
 
 1. Select **…** to view more commands, and then select **Delete**.
 
-   ![Select Delete to delete the connection.](media/add-manage-connections/delete-connection.png)
+    :::image type="content" source="media/add-manage-connections/delete-connection.png" alt-text="Screenshot of the Delete option.":::
 
 1. Select **Delete** to confirm that you would like to delete the connection.
 
-   ![Delete connection confirmation.](media/add-manage-connections/delete-connection-confirmation.png)
-
-When you delete a connection, it's removed from both Power Apps and Power Automate.
-
 ## Update a connection
 
-You can update a connection that isn't working because your account details or your password changed.
+You can update a connection that isn't working because your account details or your password changed. When you update a connection, it's updated for both Power Apps and Power Automate.
 
 1. Go to **Data** > **Connections**, and then select the **Fix connection** link for the connection that you want to update.
 
-   ![Select the link to fix the connection.](media/add-manage-connections/fix-connection-link.png)
+    :::image type="content" source="media/add-manage-connections/fix-connection-link.png" alt-text="Screenshot of the Fix connection option.":::
 
 1. When prompted, update your connection with new credentials.
-
-When you update a connection, it's updated for both Power Apps and Power Automate.
 
 ## Find which apps and flows use a connection
 

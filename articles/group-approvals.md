@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: hamenon-ms
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -13,11 +12,9 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/27/2021
+ms.date: 01/12/2023
 ms.author: hamenon
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -42,15 +39,17 @@ Approvals to groups behave exactly like approvals to users, it's just the entity
 ### Create the flow
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Select **My flows** > **New** > **Instant &mdash; from blank**.
+1. Select **Create** > **Build your own**
 
     ![Screenshot showing a new instant flow.](./media/approval-attachments/new-instand-blank.png)
 
-1. Give your flow a name, search for and then select **Manually trigger a flow**, and then select **Create**.
+1. Under **Choose a connector**, select **Manual trigger** to create a manually triggered flow.
 
-    ![Screenshot of creating an instant flow with Flow name filled in and Manually trigger a flow selected.](./media/approval-attachments/name-flow-trigger.png)
+1. Select **Next**, and then **Skip to building your own flow**.
 
-1. Select the **Manually trigger a flow** trigger > **Add an input** > **File**.
+    ![Screenshot of the option to create a manually triggered flow.](./media/approval-attachments/manually-triggered-flow.png)
+
+1. In the designer, select the **Manually trigger a flow** trigger > **Add an input** > **File**.
 
      This step configures your flow so that when it runs, it requests a file from the user to trigger your flow.
 

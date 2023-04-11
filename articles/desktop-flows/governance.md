@@ -10,8 +10,6 @@ ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - PetrosFeleskouras
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser
