@@ -92,8 +92,8 @@ landingContent:
     linkLists:
        - linkListType: overview
          links:          
-          - text: Create a flow
-            url: ../getting-started.md#create-a-flow
+          - text: Create your first flow
+            url: ../getting-started.md#create-your-first-flow
           - text: What is desktop flow?
             url: ../desktop-flows/overview.md
           - text: Power Platform Center of Excellence (CoE) kit
