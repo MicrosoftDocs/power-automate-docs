@@ -38,7 +38,7 @@ We'll cover how to identify the desktop flow data that could be purged, how to c
 > [!IMPORTANT]
 > The **Flow Session** and **Workflow Binary** tables in Dataverse have a **cascade relationship**. The cascade relationship between these two tables ensures that when a desktop flow run is deleted from the **Flow Session** table, all associated **Workflow Binary** records are also deleted. This helps to keep the Dataverse database clean and avoids orphaned records.
 
-### Creating a bulk-delete job to delete desktop flow run history
+### Creating a bulk-delete job to delete desktop flow runs
 
 To bulk-delete data in Dataverse, follow the detailed steps below.
 
@@ -75,7 +75,7 @@ To bulk-delete data in Dataverse, follow the detailed steps below.
 
 Using Dataverse's Bulk Deletion Wizard, you can create more advanced queries to filter your records using more complex filter criteria options. For instance, you could use grouping features such as AND and OR and even search for data in related tables to combine multiple conditions into a single query.
 
-In the following filter example screen we're searching for all **Flow Session** records that are **older than six months**, with a status of **Canceled**, **Failed** or **Succeeded**, and associated with a specific desktop flow. For this, you'll apply the **Group AND** option and use the **Regarding (Process)** field of the related desktop flow table to filter based on **desktop flow name.**
+In the following filter example screen we're searching for all **Flow Session** records that are **older than six months**, with a status of **Canceled**, **Failed** or **Succeeded**, and associated with a specific **flow type** and **user** who initially created the flow. To achieve this, we've applied multiple **Group AND** options and used the **Regarding (Process)** fields of the related **Process** table to filter based on **Desktop Flow Type** and **Created By** a specific user.
 
 :::image type="content" source="media/delete-desktop-flow-run-history/advanced-filter-criteria-screen.png" alt-text="Showing a *Define Search Criteria* screen with an advanced filter applied.":::
 
