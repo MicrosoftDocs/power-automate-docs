@@ -7,8 +7,6 @@ ms.date: 12/01/2022
 ms.author: nabena
 ms.reviewer: gtrantzas
 ms.subservice: developer
-search.app: 
-  - Flow
 search.audienceType: 
   - developer
 ---

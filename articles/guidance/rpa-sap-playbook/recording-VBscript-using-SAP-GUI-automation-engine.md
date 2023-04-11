@@ -4,7 +4,6 @@ description: Use the proprietary SAP GUI automation engine to generate VBScript 
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

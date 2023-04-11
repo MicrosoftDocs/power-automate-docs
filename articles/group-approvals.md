@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: hamenon-ms
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -16,8 +15,6 @@ ms.workload: na
 ms.date: 01/12/2023
 ms.author: hamenon
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

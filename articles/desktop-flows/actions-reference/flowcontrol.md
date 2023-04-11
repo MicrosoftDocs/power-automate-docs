@@ -9,8 +9,6 @@ ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
