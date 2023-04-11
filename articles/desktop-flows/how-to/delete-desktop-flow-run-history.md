@@ -23,7 +23,7 @@ In the following sections, we'll walk you through the steps on how to purge hist
 We'll cover how to identify the desktop flow data that could be purged, how to create a bulk delete job to delete the data, and how to monitor the progress of the job.
 
 > [!CAUTION]
-> Before deleting Dataverse data, it is important to understand that the data is permanently deleted from your environment, and there's no way to recover individual records once they've been deleted.
+> Before deleting Dataverse data, it is important to understand that the data is **permanently** deleted from your environment, and there's no way to recover individual records once they've been deleted.
 
 > [!NOTE]
 > To create bulk-delete jobs in Dataverse, you need to have the **Bulk Delete** privilege in at least one of the roles that have been assigned to you.
