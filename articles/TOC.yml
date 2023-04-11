@@ -452,6 +452,8 @@
       href: ./desktop-flows/virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
+    - name: Test a selector
+      href: ./desktop-flows/test-selectors.md  
   - name: How to
     items:
     - name: Handle and manipulate variables
