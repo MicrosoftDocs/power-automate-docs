@@ -8,8 +8,6 @@ ms.date: 02/08/2023
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser

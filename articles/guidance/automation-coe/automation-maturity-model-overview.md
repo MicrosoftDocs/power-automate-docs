@@ -9,9 +9,6 @@ ms.author: ashwinrajuk
 ms.reviewer: deonhe
 search.audienceType: 
   - admin
-search.app: 
-  - Flow
-  - Powerplatform
 ---
 
 # Power Platform automation maturity model overview
