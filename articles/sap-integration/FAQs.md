@@ -104,7 +104,7 @@ Power Automate can attach files to objects in SAP using [Generic Object Services
 
 The Power Platform currently supports two of the three authentication methods for SAP:
 
-1. Username/Password - a user is prompted for their SAP username and password on the Power Apps canvas app screen, which is sent to SAP.
+1. Username/Password - a user is prompted for their SAP username and password on the canvas app screen in Power Apps, which is sent to SAP.
 1. SSO (Kerberos) - the On-premises Data Gateway requests a Kerberos ticket on behalf of the Power Apps user and this ticket is sent to SAP.
 1. SSO (SAML/X.509) - **NOT CURRENTLY SUPPORTED**. We plan to support SAML in the future. However, SAP can support both X.509 and Kerberos authentication on the same SAP instance.
 
@@ -127,7 +127,7 @@ The answer depends on where the custom fields reside in SAP:
 
 ### How easy is it to add custom fields to canvas apps?
 
- Fields in Power Apps canvas apps can easily be inserted and copy/pasted in our WYSIWYG (What You See Is What You Get) editor.
+ Fields in canvas apps can easily be inserted and copy/pasted in our WYSIWYG (What You See Is What You Get) editor.
 
 ### Can the Power Platform call custom function modules?
 
@@ -163,7 +163,7 @@ No.
 
 ### Do we need to install anything on our users' PCs for SAP integration with Power Platform?
 
-No, all Power Apps canvas apps are accessed through a web browser.
+No, all canvas apps are accessed through a web browser.
 
 ### Is there anything we need to provision to set up SAP integration with Power Platform?
 
@@ -171,7 +171,7 @@ Yes, a Windows virtual machine (VM) with at least 8 GB of RAM needs to be provis
 
 ### How quickly can a canvas app on SAP be up and running?
 
-The prebuilt Power Apps canvas app on SAP can transaction against your SAP system immediately; however, you'll likely want to modify these canvas app templates by adding your custom fields or any SAP-standard fields that aren't included in our solution templates. Typically, within a few weeks you can have something ready for your business users to test.
+The prebuilt canvas app on SAP can transaction against your SAP system immediately; however, you'll likely want to modify these canvas app templates by adding your custom fields or any SAP-standard fields that aren't included in our solution templates. Typically, within a few weeks you can have something ready for your business users to test.
 
 ### Can we build mobile canvas apps on top of SAP?
 
