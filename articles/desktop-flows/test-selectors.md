@@ -32,19 +32,19 @@ In order to test a selector, you must ensure that a UI element is available in y
 There are three possible outputs: 
 * **Success:** A UI element was found successfully in the screen. 
 
-  ![Screenshot of successful test selector.](media/test-selectors/test-selector-success.png)
+   :::image type="content" source="media/test-selectors/test-selector-success.png" alt-text="Successful selector test.":::
 
 * **Failed:** No UI element was found in the screen. Power Automate highlights the element (level) that wasn't found in the **Elements** list, indicating to the user the element that should be fixed.
 
-  ![Screenshot of failed test selector.](media/test-selectors/test-selector-fail.png)
+  :::image type="content" source="media/test-selectors/test-selector-fail.png" alt-text="Failed selector test.":::
 
 * **Multiple UI elements found:** The selector may locate multiple UI elements in the screen. If a UI element is used in an action, at runtime Power Automate interacts with the first respective UI element from the top left corner of the screen. Note that Power Automate highlights at testing the UI element that will be interacted at the runtime if the specific selector is used in an action.
 
-  ![Screenshot of multiple UI elements test selector.](media/test-selectors/test-selector-multiple.png)
+  :::image type="content" source="media/test-selectors/test-selector-multiple.png" alt-text="Multiple elements found during selector test.":::
 
 You may get more information for each output by selecting the output icon next to the tested selector.  
 
-![Screenshot of info from result button test selector.](media/test-selectors/test-selector-button-on-result.png)
+:::image type="content" source="media/test-selectors/test-selector-button-on-result.png" alt-text="Information returned from button test selector.":::
 
 You can test selectors for both desktop and web UI elements. Desktop selectors are captured from any Windows application and can be used in actions of the UI automation group. Web selectors are captured from webpages and can be used only in browser automation actions.  
 
@@ -84,7 +84,7 @@ If there's a web UI element, in order to proceed with the test the web page that
 
 If no web browser tab is selected in the list and you select **Test selector**, Power Automate prompts you to select the browser tab before the testing starts.
 
-![Screenshot of test selector to select web tab pop up.](media/test-selectors/test-selector-select-web-tab-runtime.png)
+:::image type="content" source="media/test-selectors/test-selector-select-web-tab-runtime.png" alt-text="Select web tab pop up during test selector.":::
 
 ## Variables 
 
@@ -92,19 +92,19 @@ You can test a selector even if one or more variables are contained in the selec
 
 <!-- ![Screenshot of test selector with variable.](media/test-selectors/test-selector-variables-1.png) -->
 
-![Screenshot of test selector with variable 2.](media/test-selectors/test-selector-variables-2.png)
+:::image type="content" source="media/test-selectors/test-selector-variables-2.png" alt-text="Test selector with variable.":::
 
 ## Highlight 
 
 When a selector is tested and the output is success or multiple UI elements found, Power Automate highlights the UI element that is interacted at run time with the specific selector.
 
-![Screenshot of test selector highlight.](media/test-selectors/test-selector-highlight.png)
+:::image type="content" source="media/test-selectors/test-selector-highlight.png" alt-text="Test selector highlight.":::
 
 ## Text editor
 
 **Test selector** capabilities can be fully used in the **Text editor** view of the selector builder window as well, in the same fashion as in the builder view.
 
-![Screenshot of text editor button.](media/test-selectors/test-selector-select-text-editor.png)
+:::image type="content" source="media/test-selectors/test-selector-select-text-editor.png" alt-text="Text editor option in test selector.":::
 
 ## See also
 
