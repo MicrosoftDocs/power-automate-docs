@@ -1,5 +1,5 @@
 ---
-title: Overview of SAP integration with Microsoft Power Platform (preview)
+title: Overview of SAP integration with Microsoft Power Platform
 description: Learn how SAP integration with Microsoft Power Platform is improved with a prebuilt solution that works with enhanced connection features
 author: jongilman88
 contributors: 
@@ -32,6 +32,18 @@ The improved version of SAP integration with Microsoft Power Platform is built o
 > [!IMPORTANT]
 >
 > - Effective December 2022, [SAP ERP connector capabilities](/connectors/saperp/) are generally available.
+
+## Updated SAP ERP connector
+
+The SAP ERP connector for Power Automate and Power Apps allows you to invoke RFC and BAPI functions through the on-premises data gateway. The following improvements have been made to the SAP ERP connector:
+
+- Incorporates advanced connections
+- Loads large APIs
+- Unifies Logic Apps and Power Automate connectors
+- Special action for RFC_READ_TABLE with parsing
+- Higher rate limits on the operations per second
+
+Learn more at [SAP ERP connector](/connectors/saperp/).
 
 ## Advanced SAP system connection support
 
@@ -76,18 +88,6 @@ Power Automate's expression language is based on Logic Apps functions. New funct
 | [slice](/azure/logic-apps/workflow-definition-language-functions-reference#slice)  | Provides a new way to extract a substring. The existing function substring already allows such capability by providing start index and length. |
 
 Learn more at [Azure Logic Apps documentation](/azure/logic-apps/).
-
-## Updated SAP ERP connector
-
-The SAP ERP connector for Power Automate and Power Apps allows you to invoke RFC and BAPI functions through the on-premises data gateway. The following improvements have been made to the SAP ERP connector:
-
-- Incorporates advanced connections
-- Loads large APIs
-- Unifies Logic Apps and Power Automate connectors
-- Special action for RFC_READ_TABLE with parsing
-- Higher rate limits on the operations per second
-
-Learn more at [SAP ERP connector](/connectors/saperp/).
 
 ## Prebuilt SAP Integration solution
 

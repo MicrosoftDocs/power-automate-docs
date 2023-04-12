@@ -13,7 +13,7 @@ ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: conceptual
-ms.date: 03/31/2023
+ms.date: 04/12/2023
 
 ---
 
@@ -21,9 +21,9 @@ ms.date: 03/31/2023
 
 Connecting your SAP system to Microsoft Power Platform extends its functionality and allows you to get more value out of your investment.
 
-A preview version of the prebuilt SAP integration solution is [available for download](https://github.com/jongilman88/PowerPlatformSAPIntegration). It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with Power Platform.
+A prebuilt SAP integration solution is [available for download](https://github.com/jongilman88/PowerPlatformSAPIntegration). It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with Power Platform.
 
-The canvas app runs in your browser and streamlines SAP screens and data attributes onto one simple screen that helps users complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
+The canvas app runs in your browser and streamlines SAP screens and data attributes onto one simple screen so users can easily view the data and complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
 
 ## What does the user interface look like?
 
