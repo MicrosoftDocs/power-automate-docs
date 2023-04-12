@@ -26,7 +26,7 @@ This article provides answers to some of the most frequently asked questions (FA
 
 The [SAP ERP connector](/connectors/saperp/) supports all SAP versions from R/3 (early 1990s) forward, including SAP ECC and SAP S4/HANA.
 
-### What licensing is required to integrate SAP with the Power Platform?
+### What licensing is required to integrate SAP with Power Platform?
 
 At a minimum, you need the following for each user:
 
@@ -37,31 +37,31 @@ If you already have SAP direct named user licenses, you can use these licenses w
 
 ### Will this work with other SAP core products like BW, SRM, and CRM?
 
-Yes, the Power Platform's SAP ERP connector works with any SAP product that runs on the NetWeaver stack.
+Yes, Power Platform's SAP ERP connector works with any SAP product that runs on the NetWeaver stack.
 
 ### How can we connect to SAP's other products that have come via acquisition?
 
 For products such as SuccessFactors, Ariba, Concur, and any other SAP product that doesn't run on the NetWeaver stack, you can use our custom REST and SOAP connectors.
 
-### If we integrate the Power Platform with SAP ECC and then upgrade to S4/HANA, will our integrations break?
+### If we integrate Power Platform with SAP ECC and then upgrade to S4/HANA, will our integrations break?
 
 No, we've had hundreds of customers upgrade from SAP ECC to S4/HANA without any issues. Some of the core data models do change in S4/HANA (customer, vendor, financial posting), but we've accounted for data model changes in our prebuilt Power Automate flows. Additionally, SAP ensures their published APIs are carried over to new versions.
 
 ## Data and integration
 
-### How does the Power Platform access SAP data?
+### How does Power Platform access SAP data?
 
 The SAP ERP connector utilizes the message server to invoke APIs that create, read, and update SAP data. This traffic typically flows over port 33XX for single application servers or port 39XX for load-balanced connections, where XX is the system number of the SAP instance.
 
-### Can the Power Platform consume OData services in SAP?
+### Can Power Platform consume OData services in SAP?
 
 The Open Data Protocol (OData) connector isn't available to the public yet. You can also create a custom connector in Power Automate to consume [OData services](/odata/).
 
-### Can the Power Platform access views in S4/HANA?
+### Can Power Platform access views in S4/HANA?
 
 Yes, the SAP ERP connector can read Core Data Services views via the action, _Read SAP Table with Parsing_.
 
-### Can the Power Platform access custom SAP tables (Z-tables)?
+### Can Power Platform access custom SAP tables (Z-tables)?
 
 Yes, the SAP ERP connector can read custom tables via the action,  _Read SAP Table with Parsing_.
 
@@ -74,7 +74,7 @@ In this case, there are several options:
 - [Legacy System Migration Workbench (LSMW)](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/4d/afeb6ad8f66d57e10000000a42189e/content.htm?no_cache=true) – Power Automate can create a file that can be dropped on the SAP application server and processed within transaction LSMW.
 - [Custom Function Module](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/c8/19764143b111d1896f0000e8322d00/content.htm?no_cache=true) – a custom remote-enabled function module can be created in SAP and called by a Power Automate cloud flow.
 
-### Will the Power Platform affect the performance of our SAP system?
+### Will Power Platform affect the performance of our SAP system?
 
 The SAP ERP connector runs on SAP's API layer, which typically has better system performance than running the same activity in the SAP GUI. As more users transition off the SAP GUI and to an external user interface like a canvas app, CPU consumption on the SAP servers drops significantly.
 
@@ -112,13 +112,13 @@ The Power Platform currently supports two of the three authentication methods fo
 
 SAP's published APIs perform the same security checks that are performed in the SAP GUI. Also, Power Automate flows can be configured to query user authorization objects so apps, fields, and buttons are conditionally hidden or revealed to match the user experience in SAP.
 
-### How do we ensure traffic between the Power Platform and SAP is encrypted?
+### How do we ensure traffic between Power Platform and SAP is encrypted?
 
 We recommend using SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true), which is available via a connection setting when [configuring authentication](/power-automate/sap-integration/set-up-prepare#configure-authentication).
 
 ## Customization
 
-### How does the Power Platform handle custom fields in SAP?
+### How does Power Platform handle custom fields in SAP?
 
 The answer depends on where the custom fields reside in SAP:
 
@@ -129,11 +129,11 @@ The answer depends on where the custom fields reside in SAP:
 
  Fields in canvas apps can easily be inserted and copy/pasted in our WYSIWYG (What You See Is What You Get) editor.
 
-### Can the Power Platform call custom function modules?
+### Can Power Platform call custom function modules?
 
 Yes, if a function module is remote-enabled, our SAP connector can invoke that function module. However, SAP doesn't respond to a support ticket if your custom function module isn't working correctly, since that is your own code.
 
-### How can the Power Platform handle custom processes that we built in SAP because we had no other option?
+### How can Power Platform handle custom processes that we built in SAP because we had no other option?
 
 Your custom database tables can be read using _Read SAP Table with Parsing_ action for all read operations. For _create_ and _update_ operations, you'll need to remote-enable your custom function modules used to maintain this data. Once the function modules are remote-enabled, the SAP ERP connector can call them.
 
@@ -157,7 +157,7 @@ Nearly 100% of the issues encountered are due to a step or prerequisite being ov
 - Submit a question on our forum at: [Power Platform Community](https://powerusers.microsoft.com/)
 - Send an email to: sap_ecc_powerapps@service.microsoft.com.
 
-### Do we need to install anything on our SAP servers to get the Power Platform to work with SAP?
+### Do we need to install anything on our SAP servers to get Power Platform to work with SAP?
 
 No.
 
