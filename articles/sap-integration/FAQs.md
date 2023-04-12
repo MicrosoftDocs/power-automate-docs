@@ -92,7 +92,7 @@ Yes.
 
 ### How are errors in SAP handled?
 
-Errors are displayed to users in Power Apps canvas apps in a similar fashion to SAP—red text with the details of the error that occurred. The canvas apps users can correct errors if they're data-related and resubmit their work to SAP.
+Errors are displayed to users in a canvas app using Power Apps in a similar fashion to SAP—red text with the details of the error that occurred. The canvas apps users can correct errors if they're data-related and resubmit their work to SAP.
 
 ### How are file attachments handled?
 
