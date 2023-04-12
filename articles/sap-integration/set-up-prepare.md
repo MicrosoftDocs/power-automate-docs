@@ -1,5 +1,5 @@
 ---
-title: Set up SAP integration with Power Platform (preview)
+title: Set up SAP integration with Power Platform
 description: Learn about the requirements to configure SAP integration, and prepare your on-premises SAP infrastructure to connect with Power Platform
 author: jongilman88
 contributors: 
