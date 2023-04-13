@@ -57,7 +57,7 @@ After you've linked a Flic event to Power Automate, you can select that Flic as 
 
 ## Create a cloud flow that's triggered by a Flic
 
-In this tutorial, we use a Flic to run a cloud flow that records the time a consultant spends at each client. The consultant selects the Flic once upon arrival, and then selecta=s it again, just before departure from the client. Each selection of the Flic starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification. The email contains details about the flow run.
+In this tutorial, we use a Flic to run a cloud flow that records the time a consultant spends at each client. The consultant selects the Flic once upon arrival, and then selects it again, just before departure from the client. Each selection of the Flic starts a run of the flow to which it's connected. The flow saves the current time in Google Sheets, and then sends an email notification. The email contains details about the flow run.
 
 Be sure you've used the Flic mobile app to pair and configure at least one click action to trigger Power Automate.
 
@@ -68,7 +68,6 @@ In this screenshot:
 1. The **Click** action is configured to trigger Power Automate.
 
 1. Later in this tutorial, you'll configure the **Flow** to trigger when the Flic is pressed once (clicked).
-
 
 Let's get started creating our flow.
 
@@ -104,17 +103,11 @@ Let's get started creating our flow.
    
      **Continue** is enabled after you sign into all required services for the template.
 
-    :::image type="content" alt-text="Screenshot of adding credentials." source="./media/flic-button-flows/flic-template-services-sign-in.png":::
-
 1. Enter **flic** into the search box, and then select the **Flic - When a Flic is pressed** trigger.
-
-    :::image type="content" alt-text="Screenshot of flic trigger." source="./media/flic-button-flows/flic-search-trigger.png":::
 
 1. Select the Flic you want to use from the **Flic button** list on the **Flic - When a Flic is pressed** card.
 
 1. Select **click** from the **Events** list to indicate that you want to trigger the flow when the Flic is pressed once.
-
-    :::image type="content" alt-text="Screenshot of flic action." source="./media/flic-button-flows/select-flic.png":::
 
    Optionally, you can select **any** to indicate that each Flic event (click, double-click, or hold) triggers the flow.
 
@@ -164,16 +157,15 @@ If you've followed along, pressing the Flic once triggers the flow. The flow the
 
     :::image type="content" alt-text="Screenshot of the test run." source="./media/flic-button-flows/flic-test-run-results-portal.png":::
 
-1. Here's what the body of the notification email that I received from the run of the flow looks like.
+1. Here's what the body of the notification email that you'll receive from the run of the flow looks like.
 
     :::image type="content" alt-text="Screenshot of the notification body." source="./media/flic-button-flows/flic-email-body.png":::
 
-For extra credit, consider extending the flow to automatically store your location (latitude and longitude) when the Flic is pressed.
+Consider extending the flow to automatically store your location (latitude and longitude) when the Flic is pressed.
 
 ### See also
 
-- [Share button flows](share-buttons.md).
-- Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send current data when your button flows are executed.
-- Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+- [Share button flows](share-buttons.md)
+- [Use button trigger tokens to send current data when your button flows are executed](introduction-to-button-trigger-tokens.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
