@@ -78,9 +78,9 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-    The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
+The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
-    ![SharePoint info.](./media/modern-approvals/select-sharepoint-site-info.png)
+![SharePoint info.](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ## Add a profile action
 
