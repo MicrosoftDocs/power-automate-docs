@@ -1,24 +1,27 @@
 ---
-title: Create and test an approval workflow with Power Automate. | Microsoft Docs
-description: Automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
+title: Create and test an approval workflow with Power Automate
+description: Learn how to automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
+ms.author: napienko
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/12/2023
-ms.author: deonhe
 search.audienceType: 
   - flowmaker
   - enduser
-ms.reviewer: gtrantzas
 ---
 # Create and test an approval workflow with Power Automate
 
@@ -36,19 +39,21 @@ Here's an overview of the flow we'll create and test:
 The flow performs the following steps:
 
 1. Starts when someone creates a vacation request in a SharePoint Online list.
+
 1. Adds the vacation request to the approval center, and then emails it to the approver.
+
 1. Sends an email with the approver's decision to the person who requested vacation.
+
 1. Updates the SharePoint Online list with the approver's decision comments.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
-
 
 >[!IMPORTANT]
 >Always follow the [best practices for SharePoint security](/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
 
 ## Prerequisites
 
-To complete this walk-through, you must have access to:
+To complete this tutorial, you must have access to:
 
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
@@ -66,6 +71,7 @@ Create these columns in your SharePoint Online list:
 Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
 
 ## Create an automated cloud flow
+
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
@@ -79,6 +85,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 ## Add a profile action
 
 1. Select **New step**, and then type **profile** into the **Choose an action** search box.
+
 1. Select **Office 365 Users**.
 
 1. Find, and then select the **Get my profile (V2)** action.
@@ -144,7 +151,6 @@ Now that we've created the flow, it's time to test it!
 
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
-
 ## Create long-running approvals
 
 If it's likely that your flow will run for more than 30 days, consider storing your approvals in Microsoft Dataverse. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. 
@@ -175,7 +181,7 @@ When you assign a role to a guest, this gives the guest the permission required 
 
 Now that you've created and tested your flow, be sure to let others know how to use it.
 
-## Learn more
+### See also
 
 * View and manage [pending approval requests](approve-reject-requests.md)
 * Create [sequential approval flows.](sequential-modern-approvals.md)
