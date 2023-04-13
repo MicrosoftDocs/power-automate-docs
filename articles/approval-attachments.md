@@ -77,9 +77,8 @@ In this article, you’ll learn how to create an approval flow that sends an att
 You can test your flow by selecting **Test** and then uploading an .xlsx file.
 
 1. Select **Test**.
-1. Select **I'll perform the trigger action**.
 
-     ![Test your flow.](./media/approval-attachments/test-flow.png)
+1. Select **I'll perform the trigger action**.
 
 1. Select **Test** > **Continue** to start the test.
 
@@ -91,13 +90,11 @@ You can test your flow by selecting **Test** and then uploading an .xlsx file.
 
    You'll see that the test run starts.
 
-     ![The test starts.](./media/approval-attachments/test-started.png)
-
 1. Select **Flow Runs Page** to monitor the status of the test.
 
 ## Approve the request
 
-The person to whom you send the approval request receives an email, similar to this image, where they can view the attachment and then **Approve** or **Reject** the request:
+The person to whom you send the approval request receives an email, similar to this image, where they can view the attachment and then approve or reject the request:
 
 ![View the request email.](./media/approval-attachments/approval-request-mail.png)
 
@@ -106,7 +103,7 @@ The person to whom you send the approval request receives an email, similar to t
 
 ## Add a condition to an approval flow
 
-In most approval flows, you'd want to notify the person who requests the approval of the decision. Follow the [modern approvals article](modern-approvals.md#add-an-email-action-for-approvals) to learn how to add a **condition** to an approval flow to take specific actions based on the **outcome** of the request.
+In most approval flows, you'd want to notify the person who requests the approval of the decision. Follow the [modern approvals article](modern-approvals.md#add-an-email-action-for-approvals) to learn how to add a condition to an approval flow to take specific actions based on the outcome of the request.
 
 
 

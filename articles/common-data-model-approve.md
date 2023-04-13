@@ -87,10 +87,6 @@ By following the steps in this section, you'll build:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Select the environment in which you previously created the Database table. If you don't select the same environment, your table won't be available.
-
-1. Go to **Create** > **Build your own**.
-
 1. On the top right menu, select the environment in which you created the database. If you don't select the same environment, you won't see your table.
 
 1. Go to **My flows** and select **New flow** > **Automated cloud flow**.
@@ -167,11 +163,7 @@ By following the steps in this section, you'll build:
 
     1. In the **Body** field, enter **The item has been approved.**.
 
-        :::image type="content" source="media/common-data-model-approve/send-email-action-approval.png" alt-text="Screenshot of the configured Send an email (V2) action for approved file.":::
-
 1. Under the **If no** action, repeat the step 2, but specify the body of the email message as **The item has been rejected.**
-
-    :::image type="content" source="media/common-data-model-approve/send-email-action-rejection.png" alt-text="Screenshot of the configured Send an email (V2) action for rejected file.":::
 
 ## Delete rejected files
 

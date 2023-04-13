@@ -82,8 +82,6 @@ Here are the detailed steps to create the flow.
 
 1. Provide the **Site Address** and **List Name** for the SharePoint list your flow monitors for new or updated items.
 
-   :::image type="content" alt-text="Screenshot of SharePoint trigger configuration." source="media/odata-filters/configure-sharepoint-trigger.png":::
-
 ## Search the destination for the new or changed item
 
 Use the **SQL Server - Get rows** action to search the destination for the new or changed item.
@@ -119,14 +117,13 @@ We use the **Condition** action to check if the new or changed item was found.
    > [!TIP]
    > Confirm you've selected **value** from the **Get rows** category. Don't select **value** from the **When an item is created or modified** category.
 
-
 1. Select **is equal to** from the list in the center box.
 
 1. Enter **0** (zero) in the box on the right side.
 
     The **Condition** card now resembles this image:
 
-    ![Screenshot dislays the condition card.](media/odata-filters/configure-condition.png)
+    ![Screenshot displays the condition card.](media/odata-filters/configure-condition.png)
 
 1. Select **Edit in advanced mode**.
 
@@ -183,8 +180,6 @@ If the item exists in the destination, update it with the changes.
 
 1. At the top of the page, enter a name for your flow in the **Flow name** box, and then select **Create flow** to save it.
 
-    :::image type="content" alt-text="Screenshot of the flow name." source="media/odata-filters/give-the-flow-a-name.png":::
-
 Now, whenever an item in your SharePoint list (source) changes, your flow triggers and either inserts a new item or updates an existing item in your Azure SQL Database (destination).
 
 > [!NOTE]
@@ -192,7 +187,7 @@ Now, whenever an item in your SharePoint list (source) changes, your flow trigge
 
 ### See also
 
-Use [data operations](data-operations.md) in your flows.
+[Use data operations](data-operations.md)
 
 
 

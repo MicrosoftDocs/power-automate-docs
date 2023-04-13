@@ -15,7 +15,7 @@ editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/12/2023
@@ -102,9 +102,9 @@ An approval email is sent to the recipient that you specified. When the recipien
 ### See also
 
 * [Single approver modern approvals walkthrough](modern-approvals.md)
-* Create [sequential approvals](sequential-modern-approvals.md)
-* Create [parallel approvals](parallel-modern-approvals.md)
-* Approve [requests on the go](mobile-approvals.md)
+* [Create sequential approvals](sequential-modern-approvals.md)
+* [Create parallel approvals](parallel-modern-approvals.md)
+* [Approve requests on the go](mobile-approvals.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

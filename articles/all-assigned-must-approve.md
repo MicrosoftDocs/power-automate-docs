@@ -141,7 +141,7 @@ Here's an example of what a response and a response summary may look like after 
 
 ![response tokens.](media/all-assigned-must-approve/response-output.png)
 
-## Learn more about approvals
+### See also
 
 * [Single approver modern approvals](modern-approvals.md)
 * [Sequential modern approvals](sequential-modern-approvals.md)

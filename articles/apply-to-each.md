@@ -94,20 +94,16 @@ Here are the requirements for successfully performing the steps in this tutorial
 1. Select **+ New step** > **Built-in** > **Apply to each** action.
 1. Select the field and then select **value** from the **Dynamic content** list to place it in the **Select an output from previous steps** field on the **Apply to each** card. This pulls in the body of the emails to be used in the **Apply to each** action.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the dynamic content value token.](./media/apply-to-each/foreach-7.png "Dynamic content value token")
-
 1. Select **+ New step** > **Control** > **Condition**.
+
 1. Configure the **Condition** card to search the subject of each email for the words "meet now".
 
     * Select the first field and then select **Subject** in the **Dynamic content** list.
     * In the dropdown list of operators in the second field, select **contains**.
     * In the third field, enter **meet now**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of a condition configuration.](./media/apply-to-each/foreach-subject-condition.png "Configured condition")
-
 1. In the **If yes** branch, select **Add an action** > **Condition**. This opens the **Condition 2** card.
+
 1. Configure the **Condition 2** card to search each email with "meet now" in the subject with high importance.
 
     * Select the first field and then select **Importance** in the **Dynamic content** list.
@@ -115,10 +111,8 @@ Here are the requirements for successfully performing the steps in this tutorial
     * In the third field, enter **high**.
 
 1. In the **If yes** branch, select **Add an action**. This opens the **Choose an action** card, where you'll define what happens if the search condition (the **meet now** email was sent with high importance) is true.
-1. Search for **notification**, and then select the **Send me a mobile notification** action.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of notification actions.](./media/apply-to-each/foreach-10.png "Notification actions")
+1. Search for **notification**, and then select the **Send me a mobile notification** action.
 
 1. On the **Send me a mobile notification** card in the **Text** field, enter the details for the push notification that will be sent if the subject of an email contains "meet now" and the **Importance** is **high**.
 
@@ -131,19 +125,15 @@ Here are the requirements for successfully performing the steps in this tutorial
     * In the **Get Manager (V2)** card, select the **User (UPN)** field.
     * In the **Dynamic content** list, select **To**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of dynamic content added to get manager V2.](./media/apply-to-each/foreach-get-manager.png "Get manager (V2) dynamic content")
-
 1. In the **If no** branch, select **Add an action**.
+
 1. From the **Actions** list, select **Condition**. This opens the **Condition 3** card.
+
 1. Configure the card to check if the email sender's email address (the **From** token) is the same as your boss' email address (the **Email** token).
 
     * Select the first field and then select **From** in the **Dynamic content** list.
     * In the dropdown list of operators in the second field, select **contains**.
     * In the third field, enter **mail**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of Condition 3 configuration.](./media/apply-to-each/foreach-condition3-card.png "Condition 3 configuration")
 
 1. Under the **If yes** section of the **Condition 3** card, select **Add an action**.
 
@@ -151,42 +141,47 @@ Next, you'll define what should happen if the search condition (the email was se
 
 1. Search for **notification**, and then select the **Send me a mobile notification** action.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of notification actions for Condition 3.](./media/apply-to-each/foreach-10.png "Notification Actions")
-
 1. On the **Send me a mobile notification 2** card, provide the details for the push notification that will be sent if the email is from your boss.
+
 1. Select **Add an action**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the details for the push notification.](./media/apply-to-each/foreach-boss-notification.png "Details for the push notification")
-
 1. Add the **Mark as read or unread (V3)** action.
+
 1. Add the **Message Id** token to the **Mark as read or unread (V3)** card. The **Message Id** is the Id of the message that will be marked as read.
+
 1. Select **Enter custom value** from the **Mark as** list on the **Mark as read or unread (V3)** card.
+
 1. In the **Dynamic content** list, select **Is Read**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of mark as read action.](./media/apply-to-each/foreach-mark-as-read2.png "Mark as read selections")
+
 1. On the toolbar at the top, select **Save** to save your flow.
 
 ## Run the flow
 
 1. Send yourself a high-importance email that includes **meet now** in the subject. Alternatively, you can have someone in your organization send you such an email.
+
 1. Confirm the email is in your inbox and it's unread.
+
 1. Sign into [Power Automate](https://make.powerautomate.com).
+
 1. Select **My flows**. A list of your flows displays.
+
 1. Place a check in the circle for the flow you just created to select it.
+
 1. Select the **Run** icon to the right of the flow name.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of run now.](./media/apply-to-each/run-flow.png "Run your flow")
 
 1. On the panel to the right, select **Run flow**.
+
 1. When the run flow has successfully started, select **Done**.
+
 1. Select the flow run in which you're interested to view the results.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of flows you can run to view results.](./media/apply-to-each/foreach-run-3.png "Select a flow run to view results")
+
 
 ## View results of the run
 
