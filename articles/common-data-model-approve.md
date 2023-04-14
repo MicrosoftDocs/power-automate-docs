@@ -4,7 +4,11 @@ description: Create a table, a cloud flow, and an app that work together so that
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,8 +17,8 @@ ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/22/2023
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.author: napienko
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -34,14 +38,15 @@ By following the steps in this section, you'll build:
 
 ## Prerequisites
 
-* Sign up for [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
-* Create connections to Dropbox and Office 365 Outlook, as [Manage your connections](https://powerapps.microsoft.com/tutorials/add-manage-connections/) describes.
+* Sign up for [Power Automate](sign-up-sign-in.md) and [Power Apps](/power-apps/maker/signup-for-powerapps).
+
+* Create connections to Dropbox and Office 365 Outlook, as [Manage your connections](/power-apps/maker/canvas-apps/add-manage-connections).
 
 ## Build the table
 
-1. Sign in to [powerapps.com](https://make.powerapps.com).
+1. Sign in to [Power Apps](https://make.powerapps.com).
 
-1. In the left navigation bar, select **Tables**.
+1. On the left navigation bar, select **Tables**.
 
 1. Select **New table** and then **New table**.
 
@@ -64,16 +69,12 @@ By following the steps in this section, you'll build:
     * Set **Format** to **Email**.
     * Set **Required** to **Business required**.
 
-    :::image type="content" source="media/common-data-model-approve/approver-column.png" alt-text="Screenshot of the Approver column.":::
-
 1. Create a new column named **Status** with the following properties:
 
     * Set **Display Name** to **Status**.
     * Set **Data type** to **Single line of text**.
     * Set **Format** to **Text**.
     * Set **Required** to **Business required**.
-
-    :::image type="content" source="media/common-data-model-approve/status-column.png" alt-text="Screenshot of the Status column.":::
 
 1. Create a new column named **File identifier** with the following properties:
 
@@ -82,27 +83,19 @@ By following the steps in this section, you'll build:
     * Set **Format** to **Text**.
     * Set **Required** to **Business required**.
 
-    :::image type="content" source="media/common-data-model-approve/file-identifier-column.png" alt-text="Screenshot of the File identifier column.":::
-
 ## Sign in and create a cloud flow
 
-1. Open the [Power Automate portal](https://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Select the environment in which you previously created the Database table. If you don't select the same environment, your table won't be available.
+1. On the top right menu, select the environment in which you created the database. If you don't select the same environment, you won't see your table.
 
-1. Go to **Create** > **Build your own**.
+1. Go to **My flows** and select **New flow** > **Automated cloud flow**.
 
 ## Start when a file is added
 
-1. Under **Choose a connector**, search for **Dropbox**, and select the appropriate card.
+1. In the **Build an automated cloud flow** dialog, enter a name for the flow and search for the **When a file is created** Dropbox trigger.
 
-1. Select the **When a file is created** action.
-
-1. Select **Next**, and then **Skip to building your own flow**.
-
-1. In the designer, select the **When a file is created** action, select the folder icon, and then browse to the folder where files will be added.
-
-    ![Choose folder.](./media/common-data-model-approve/folder-icon.png)
+1. Under **Folder**, select the folder icon, and then browse to the folder where files will be added.
 
 ## Add data to the table
 
@@ -134,8 +127,6 @@ By following the steps in this section, you'll build:
 
     1. In the right box, enter **Pending**.
 
-    :::image type="content" source="media/common-data-model-approve/do-until-action.png" alt-text="Screenshot of the configured Do until action.":::
-
 1. Inside the **Do until** action, select **Add an action** and search for the **Get a row by ID** Dataverse action.
 
 1. Configure the **Get a row by ID** action as presented in the following screenshot:
@@ -143,8 +134,6 @@ By following the steps in this section, you'll build:
     1. In the **Table name** drop-down menu, select the **ReviewDropboxFiles** table.
 
     1. In the **Row ID** field, select **File identifier** from the **Dynamic content** list.
-
-    :::image type="content" source="media/common-data-model-approve/get-row-by-id-action.png" alt-text="Screenshot of the configured Get a row by ID Dataverse action.":::
 
 ## Check whether the item has been approved
 
@@ -156,9 +145,7 @@ By following the steps in this section, you'll build:
 
     1. In the middle drop-down menu, select **is equal to**.
 
-    1. In the right box, enter **Approved**.
-
-    :::image type="content" source="media/common-data-model-approve/condition-action.png" alt-text="Screenshot of the configured Condition action.":::
+    1. In the box on the right, enter **Approved**.
 
 ## Send notification mail
 
@@ -168,26 +155,21 @@ By following the steps in this section, you'll build:
 
     1. In the **To** field, enter the email address of the person whom you want to notify when an item is accepted.
 
-        > [!TIP]
-        > **Note**: To make testing the flow easier, specify your own address. You can change it when the flow is ready for actual use.
+        >[!TIP]
+        >
+        >To make testing the flow easier, specify your own address. You can change it when the flow is ready for actual use.
 
     1. In the **Subject** field, select **File name** from the **Dynamic content** list.
 
     1. In the **Body** field, enter **The item has been approved.**.
 
-    :::image type="content" source="media/common-data-model-approve/send-email-action-approval.png" alt-text="Screenshot of the configured Send an email (V2) action for approved file.":::
-
 1. Under the **If no** action, repeat the step 2, but specify the body of the email message as **The item has been rejected.**
-
-    :::image type="content" source="media/common-data-model-approve/send-email-action-rejection.png" alt-text="Screenshot of the configured Send an email (V2) action for rejected file.":::
 
 ## Delete rejected files
 
 1. Under the **Send an email (V2)** action for the rejection mail, select **Add an action** and search for the **Delete file** Dropbox action.
 
 1. In the **File** field, select **File identifier** from the **Dynamic content** list.
-
-    :::image type="content" source="media/common-data-model-approve/delete-file-action.png" alt-text="Screenshot of the configured Delete file action for rejected file.":::
 
 ## Save the flow
 
@@ -197,16 +179,13 @@ By following the steps in this section, you'll build:
 
 ## Build the app
 
-1. Sign in to [powerapps.com](https://make.powerapps.com).
+1. Sign in to [Power Apps](https://make.powerapps.com).
 
 1. Go to the **Create** page and then select **Dataverse**.
 
 1. Select your Dataverse connection, and then the **ReviewDropboxFiles** table.
 
-    > [!NOTE]
-    > If this is your first time, you're prompted to create a connection to Dataverse.
-
-    :::image type="content" source="media/common-data-model-approve/selected-dataverse-table.png" alt-text="Screenshot of the selected Dataverse table.":::
+    If this is your first time, you're prompted to create a connection to Dataverse.
 
 1. If the **Welcome to Power Apps Studio** dialog box appears, you can follow it or skip it.
 
@@ -222,7 +201,7 @@ To add or remove fields from a screen:
 
 1. Select **Edit** in the right pane.
 
-:::image type="content" source="media/common-data-model-approve/edit-fields.png" alt-text="Screenshot of the option to edit fields.":::
+    :::image type="content" source="media/common-data-model-approve/edit-fields.png" alt-text="Screenshot of the option to edit fields.":::
 
 The current example contains the following fields for each screen:
 
