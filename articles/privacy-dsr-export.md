@@ -29,9 +29,12 @@ search.audienceType:
 
 [!INCLUDE [gdpr-dsr-export-note](~/../msft-shared-content/privacy-includes/gdpr-dsr-export-note.md)]
 
-Rights of data portability allow a data subject to request a copy of their personal data in an electronic format that may be transmitted to another data controller.
+The right of data portability allows data subjects to request a copy of their personal data in an electronic format that may be transmitted to another data controller.
 
 The following table summarizes where to find and export a user's personal data in Power Automate.
+
+- **Website access:** Sign in to the [Power Apps admin center](https://admin.powerapps.com/) or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+- **PowerShell access:** [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell)
 
 | **Customer data** | **Website access** | **PowerShell access**  |
 | ----------------- | ------------------ | -------------------|
@@ -46,9 +49,6 @@ The following table summarizes where to find and export a user's personal data i
 | Custom connector permissions | Power Automate maker portal | Power Apps cmdlets |
 | Gateway | Power Automate maker portal | On-premises data gateway PowerShell cmdlets |
 | Gateway permissions | Power Automate maker portal | On-premises data gateway PowerShell cmdlets |
-
-- **Website access:** Sign in to the [Power Apps admin center](https://admin.powerapps.com/) or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-- **PowerShell access:** [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell)
 
 ## Export a cloud flow
 
