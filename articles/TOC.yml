@@ -34,8 +34,6 @@
       href: onedrive-business-launch-panel.md
     - name: Filter and copy data
       href: odata-filters.md
-    - name: Run your flows with Flics
-      href: flic-button-flows.md
     - name: Run your flows with bttns
       href: bttn-button-flows.md
   - name: Scheduled flows

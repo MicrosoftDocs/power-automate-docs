@@ -4,10 +4,14 @@ description: Learn how to filter and copy data from a source to a destination wi
 services: ''
 suite: flow
 documentationcenter: na
-author: radioblazer
+author: natalie-pienkowska
 contributors:
+  - natalie-pienkowska
+  - kartikraop
   - radioblazer
   - v-aangie
+ms.author: napienko
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
 ms.devlang: na
@@ -16,8 +20,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/26/2023
-ms.author: matow
-ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -32,7 +34,7 @@ While this tutorial copies data from a Microsoft SharePoint [list](https://suppo
 
 ## Prerequisites
 
--  Access to a data source and a destination. This tutorial doesn’t include steps to create the source and destination.
+- Access to a data source and a destination. This tutorial doesn’t include steps to create the source and destination.
 
 - Access to [Power Automate](http://make.powerautomate.com/).
 
@@ -72,69 +74,69 @@ Here are the detailed steps to create the flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Select **Create** > **Build your own**.
+1. Select **My flows** > **Create from blank**.
 
-1. In the **Choose a connector** list, select **SharePoint**.
-
-1. In the **Choose a trigger** list, select **When an item is created or modified**.
-
-1. Select **Skip to building your own flow**.
+1. Search for **SharePoint** > select the **SharePoint - When an item is created or modified** trigger from the list of triggers.
 
 1. Enter the **Site Address** and then select the **List Name** on the **When an item is created or modified** card.
 
-    Provide the **Site Address** and **List Name** for the SharePoint list that your flow monitors for new or updated items.
-
-   :::image type="content" alt-text="Screenshot of SharePoint trigger configuration." source="media/odata-filters/configure-sharepoint-trigger.png":::
+1. Provide the **Site Address** and **List Name** for the SharePoint list your flow monitors for new or updated items.
 
 ## Search the destination for the new or changed item
 
-We use the **Get rows (V2) SQL Server** action to search the destination for the new or changed item.
+Use the **SQL Server - Get rows** action to search the destination for the new or changed item.
 
-1. Select **New step**.
+1. Select **New step** > **Add an action**.
 
-1. Search for **Get rows**, select **Get rows (V2) SQL Server** in the **Actions** list.
+1. Search for **Get rows**, select **SQL Server - Get rows**, and then select the table you want to monitor from the **Table name** list.
 
 1. Select **Show advanced options**.
-
-1. From the dropdown menus, select the **Server name**, **Database name**, and the **Table name** of the table that you want to monitor.
 
 1. In the **Filter Query** box, enter **Title eq '**, select the **Title** token from the dynamic content list, and then enter **'**.
 
     The previous step assumes you're matching the titles of the rows in the source and the destination.
 
-   :::image type="content" alt-text="Screenshot of the Filter Query." source="media/odata-filters/configure-sql-get-rows-actionAA.png":::
+    The **Get rows** card should now look like the following screenshot:
+
+    ![try to get the item from the destination database.](media/odata-filters/configure-sql-get-rows-action.png)
 
 ## Check if the new or changed item was found
 
 We use the **Condition** action to check if the new or changed item was found.
 
-1. Select **New step** and select **Condition** in the **Actions** list.
+1. Select **New step** > **Add a condition** to open the **Condition** card.
 
-1. Select the box on the left.
-  
-    The **Add dynamic content from the apps and connectors used in this flow** list opens.
+1. On the condition card:
 
-1. From the **Get rows** category, select **value**.
-  
+    1. Select the box on the left.
+   
+        The **Add dynamic content from the apps and connectors used in this flow** list opens.
+
+    1. Select **value** from the **Get rows** category.
+
    > [!TIP]
    > Confirm you've selected **value** from the **Get rows** category. Don't select **value** from the **When an item is created or modified** category.
- 
-1. From the list in the center box, select **is equal to**.
 
-1. In the box on the right, enter **0** (zero).
- 
-    :::image type="content" alt-text="Screenshot of the Condition card." source="media/odata-filters/configure-condition.png":::
+1. Select **is equal to** from the list in the center box.
+
+1. Enter **0** (zero) in the box on the right side.
+
+    The **Condition** card now resembles this image:
+
+    ![Screenshot displays the condition card.](media/odata-filters/configure-condition.png)
 
 1. Select **Edit in advanced mode**.
-  
+
     When advanced mode opens, you see **\@equals(body('Get_rows')?['value'], 0)** expression in the box. Edit this expression by adding **length()** around the **body('Get_items')?['value']** function. The entire expression now appears like this: **@equals(length(body('Get_rows')?['value']), 0)**
-  
-    :::image type="content" alt-text="Screenshot of the updated Condition card." source="media/odata-filters/configure-condition-add-length.png":::
+
+    The **Condition** card now resembles this image:
+
+    ![Screenshot displays the updated condition card.](media/odata-filters/configure-condition-add-length.png)
   
    > [!TIP]
    > Adding the **length()** function allows the flow to check the **value** list and determine if it contains any items.
 
-When your flow "gets" items from the destination, there're two possible outcomes.
+When your flow gets items from the destination, there are two possible outcomes.
 
 | Outcome | Next step |
 | --- | --- |
@@ -160,7 +162,9 @@ On the **If yes** branch of the **Condition**:
 
 1. Select each column that you want to populate and enter the data.
   
-    You may enter the data manually, select one or more tokens from the **Dynamic content**, or enter any combination of text and tokens into the columns.
+    You can enter the data manually, select one or more tokens from the **Dynamic content**, or enter any combination of text and tokens into the columns.
+
+    The **Insert row** card now resembles this screenshot:
 
     :::image type="content" alt-text="Screenshot of the Condition card in the new state." source="media/odata-filters/insert-row.png":::
 
@@ -176,8 +180,6 @@ If the item exists in the destination, update it with the changes.
 
 1. At the top of the page, enter a name for your flow in the **Flow name** box, and then select **Create flow** to save it.
 
-    :::image type="content" alt-text="Screenshot of the flow name." source="media/odata-filters/give-the-flow-a-name.png":::
-
 Now, whenever an item in your SharePoint list (source) changes, your flow triggers and either inserts a new item or updates an existing item in your Azure SQL Database (destination).
 
 > [!NOTE]
@@ -185,7 +187,7 @@ Now, whenever an item in your SharePoint list (source) changes, your flow trigge
 
 ### See also
 
-Use [data operations](data-operations.md) in your flows.
+[Use data operations](data-operations.md)
 
 
 
