@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -14,12 +13,10 @@ ms.subservice: desktop-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/26/2020
+ms.date: 02/24/2023
 ms.author: DeonHe
 contributors:
 - georgiostrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -29,7 +26,10 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
+> This article covers topics related to legacy systems. Migrate your flows created with these solutions to Power Automate for desktop or delete them.
+>
+> - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
+> - Windows recorder (V1) is deprecated and no longer works.
 
 Read on if you already have automation built using Windows recorder (V1) and Selenium IDE.
 

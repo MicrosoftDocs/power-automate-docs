@@ -4,7 +4,6 @@ description: There are pros and cons for each approach. Depending on the type of
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

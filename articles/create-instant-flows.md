@@ -17,8 +17,6 @@ author: "vashr"
 ms.author: "vashr"
 ms.reviewer: angieandrews
 ms.manager: KVIVEK
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

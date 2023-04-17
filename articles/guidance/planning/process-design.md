@@ -92,7 +92,7 @@ from the reminder.<!--note from editor: Should there be a "before reminder autom
 
 Another area you may want to automate are high-volume processes.
 High-volume processes are processes that occur very frequently on a daily basis.
-It is closely tied to repetitive processes but is slight different. You may have a process that can only have a step or two that can be automated.
+It is closely tied to repetitive processes but is slightly different. You may have a process that can only have a step or two that can be automated.
 However, if a process must be done many times, even small improvements can have large impacts.
 
 For example, if the expense reporting scenario holds for 1,000 salespeople, each

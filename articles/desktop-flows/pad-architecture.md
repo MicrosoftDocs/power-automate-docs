@@ -5,15 +5,13 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/01/2022
+ms.date: 02/24/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -23,8 +21,8 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
+> - Selenium IDE is deprecated and will no longer work after February 28th, 2023. Migrate your flows to Power Automate for desktop or delete them.
 > - Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities.
-> - Starting February 28, 2023 Selenium IDE will no longer be supported. Migrate your flows created with Selenium IDE to Power Automate for desktop or delete them.
 
 There are two different methods that Power Automate can use to connect to the cloud services in order to receive flow execution jobs. The first option is direct connectivity, while the second option requires the on-premises data gateway to be installed.
 

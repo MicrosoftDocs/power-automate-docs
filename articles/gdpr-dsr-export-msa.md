@@ -5,21 +5,16 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
 ms.reviewer: gtrantzas
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/25/2018
+ms.date: 03/10/2023
 ms.author: Deonhe
-search.app: 
-  - Flow
-  - Powerplatform
 search.audienceType: 
   - admin
 ---
@@ -44,18 +39,18 @@ Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), o
 
 ## Export product and service activity
 
-1. Sign into the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/) using your Microsoft Account (MSA).
+1. Sign in to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/) using your Microsoft Account (MSA).
 1. Select **Activity history**.
 
     ![Activity History.](./media/gdpr-dsr-export-msa/activityhistory.png)
     You can browse your activity history for the different Microsoft applications and services that you use.
 1. To export **Product and Service Activity** data select **Download your data**, and then select **CREATE NEW ARCHIVE**.
 
-    ![Download your data.](./media/gdpr-dsr-export-msa/downloaddata.png)
+    ![Screenshot of the Privacy dashboard screen.](./media/gdpr-dsr-export-msa/downloaddata.png)
 
 1. Select **App & service usage**, and then select **Create archive**.
 
-    ![Download your data.](./media/gdpr-dsr-export-msa/create-archive.png)
+    ![Screenshot of the Create archive screen.](./media/gdpr-dsr-export-msa/create-archive.png)
 1. A new archive is created. Select **Download** to obtain your exported product and service activity data.
 
     ![Download.](./media/gdpr-dsr-export-msa/download.png)
@@ -64,15 +59,11 @@ Use the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/), o
 
 An end user who has access to a cloud flow, can export the flow by following these steps:
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select the **My flows**, and then select the flow to export.
 
-1. Select **… More**, and then select **Export**.
-
-    ![Export flow.](./media/gdpr-dsr-export/export-flow.png)
-
-1. Select **Package (.zip)**.
+1. Select the dots icon, and then **Export** > **Package (.zip)**.
 
 Your flow will now be available as a zipped package. For more information, see the blog post about [how to export and import a cloud flow](https://make.powerautomate.com/blog/import-export-bap-packages/).
 
@@ -82,15 +73,10 @@ Run history includes a list of all runs for a cloud flow. This data includes the
 
 An end user who has access to the flow can follow these steps to export this data:
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
-1. Select the **My flows** link, and then select the flow for which you want to export the run history.
-1. In the **RUN HISTORY** pane, select **See all**.
-
-    ![Run history.](./media/gdpr-dsr-export/run-history.png)
-
-1. Select **Download CSV**.
-
-    ![Download CSV.](./media/gdpr-dsr-export/download-csv.png)
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Select **My flows**, and then select the flow for which you want to export the run history.
+1. In the **Run history** pane, select **All runs**.
+1. Select **Get .csv file**.
 
 The run history is downloaded as a .csv file so that you can open it in Microsoft Excel or a text editor to analyze the results.
 
@@ -98,21 +84,16 @@ The run history is downloaded as a .csv file so that you can open it in Microsof
 
 In [Power Automate](https://make.powerautomate.com), the activity feed shows a user’s history of activities, failures and notifications. Users can view their activity feed by following these steps:
 
-1. Sign into [Power Automate](https://make.powerautomate.com), select the bell icon near the upper-right corner, and then select **Show all activity**.
-
-    ![Show activity feed.](./media/gdpr-dsr-export/show-activity-feed.png)
+1. Sign in to [Power Automate](https://make.powerautomate.com)), and go to **Monitor** > **Cloud flow activity**.
 
 1. In the **Activity** screen, copy the results, and then paste them into a text editor such as Microsoft Word.
-
-    ![Show activity feed.](./media/gdpr-dsr-export/export-activity-feed.png)
 
 ## Export a user’s connections
 
 Connections allow flows to connect to APIs, SaaS applications, and other third-party systems. Follow these steps to view your connections:
 
-1. Sign into [Power Automate](https://make.powerautomate.com), select the gear icon near the upper-right corner, and then select **Connections**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and select **Data** > **Connections**.
 
-    ![Show Connections.](./media/gdpr-dsr-export/show-connections.png)
 1. Copy the results, and then paste them into a text editor such as Microsoft Word.
 
 

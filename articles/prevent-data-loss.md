@@ -7,7 +7,6 @@ documentationcenter: na
 author: ChrisGarty
 contributors:
   - ChrisGarty
-  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -60,10 +59,10 @@ You can use the following PowerShell script to add all desktop flow modules to t
   $dlpPolicies = Get-DlpPolicy  
   $dlpPolicy = $dlpPolicies.value | where {$_.displayName -eq 'My DLP Policy'}  
 
-# Step #2: Get all desktop flow modules 
+# Step #2: Get all Power Automate for desktop flow modules 
   $desktopFlowModules = Get-DesktopFlowModules  
 
-# Step #3: Convert the list of Desktop Flow modules to a format that can be added to the policy 
+# Step #3: Convert the list of Power Automate for desktop flow modules to a format that can be added to the policy 
   $desktopFlowModulesToAddToPolicy = @()  
         foreach ($modules in $desktopFlowModules) {  
           $desktopFlowModulesToAddToPolicy += [pscustomobject]@{  
@@ -77,7 +76,6 @@ You can use the following PowerShell script to add all desktop flow modules to t
     Add-ConnectorsToPolicy -Connectors $desktopFlowModulesToAddToPolicy -PolicyName $dlpPolicy.name -classification Blocked -Verbose 
 ```
  
-
 Below is a PowerShell script that you can use to add two specific desktop flow modules to the default data group of a DLP policy. 
 
 ```PowerShell
@@ -85,7 +83,7 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
   $dlpPolicies = Get-DlpPolicy  
   $dlpPolicy = $dlpPolicies.value | where {$_.displayName -eq 'My DLP Policy'}  
 
-# Step #2: Get all desktop flow modules 
+# Step #2: Get all Power Automate for desktop flow modules 
   $desktopFlowModules = Get-DesktopFlowModules  
 
 # Step #3: Create a list with the ‘Active Directory’ and ‘Workstation’ modules 
@@ -179,33 +177,34 @@ If the DLP enforcement background job finds a desktop flow that no longer violat
 
 ## DLP enforcement change process
 
-Periodically, DLP enforcement changes are needed. These changes can be a due to new DLP capabilities, an enforcement gap being filled, or a bug fix.
+Periodically, DLP enforcement changes are needed. These changes can be due to new DLP capabilities, an enforcement gap being filled, or a bug fix.
+
 When changes can impact existing flows, the following staged DLP enforcement change management process is used.
 
 1. **Investigating**: Confirm the need for a DLP enforcement change and investigate the specifics of the change.
 
-1. **Learning**: Implement the change and gather data about the breadth of the effects of the change. DLP enforcement changes are documented to explain the scope of the change. If the data suggests that customers will be greatly affected, then communication may be sent to those customers letting them know that a change is coming. If the change has a broad impact on existing flows, then at a later stage in the learning phase when the background DLP enforcement job finds a violation in an existing flow, Power Automate notifies the flow owners that the flow will be suspended, so that they have additional time to respond. 
+1. **Learning**: Implement the change and gather data about the breadth of the effects of the change. DLP enforcement changes are documented to explain the scope of the change. If the data suggests that customers will be greatly affected, then communication may be sent to those customers, letting them know that a change is coming. If the change has a broad impact on existing flows, then at a later stage in the learning phase when the background DLP enforcement job finds a violation in an existing flow, Power Automate notifies the flow owners that the flow will be suspended, so that they have additional time to respond. 
 
 1. **Notify only**: Turn on email notifications only for DLP violations so owners of existing flows get notified about the upcoming DLP enforcement change. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended in the future. This mechanism runs weekly.
 
-1. **Design-time enforcement**: Turn on design-time enforcement of DLP violations so that owners of existing flows get notified about the upcoming DLP enforcement change, but any flows that are changed get a full DLP policy evaluation at design time. Also known as *soft enforcement*.
+1. **Design-time enforcement**: Turn on design-time enforcement of DLP violations so that owners of existing flows get notified about the upcoming DLP enforcement change, but any flows that are changed get a full DLP policy evaluation at design time. This is also known as *soft enforcement*.
     
     1. **Design-time**: When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed so the maker is immediately aware of the enforcement. 
     
     1. **Background process**: When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended in the future. This mechanism includes creation or changes to DLP policy and consistency checks.
 
-1. **Full enforcement**: Turn on full enforcement of DLP violations, so DLP policies are fully enforced on all existing and new flows. The DLP policies will be fully enforced when flows are saved during DLP enforcement background job evaluation. Also known as *hard enforcement*.
+1. **Full enforcement**: Turn on full enforcement of DLP violations, so DLP policies are fully enforced on all existing and new flows. The DLP policies will be fully enforced when flows are saved during DLP enforcement background job evaluation. This is also known as *hard enforcement*.
 
 ## DLP enforcement change list
 
-Following is a list of DLP enforcement changes and the date the changes were effective. 
+The following is a list of DLP enforcement changes and the date the changes were effective. 
 
 | Date | Description | Reason for change | Stage | Design-time enforcement ETA* | Full enforcement ETA*
 |----|----|----|----|----|----|
 |May 2022 | Delegated authorization background job enforcement | DLP policies enforced are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Full |June 2, 2022|July 21, 2022|
 |May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have type=Request and kind=apiConnection. Many of the affected triggers are instant triggers, which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Full |June 2, 2022|August 25, 2022|
 |July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with full enforcement of DLP policies on child flows. Once full enforcement is available, the enforcement will include child desktop flows. | Design-time |February 14, 2023|March 2023|
-|January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated | Learn | - |March 2023|
+|January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Learn | - |March 2023|
 
 
 *ETA is subject to change and depends on the release schedule. ETA is for the start of the release to production. Release to preview station 1 is approximately five days later. Release to NAM/US station 5 is approximately three weeks later.

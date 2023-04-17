@@ -1,25 +1,21 @@
 ---
-title: Azure templates for process mining in process advisor (preview)
-description: Learn how to use Azure templates for process mining in the Power Automate process advisor.
+title: Azure templates for process mining
+description: Learn how to use Azure templates for process mining in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Azure templates for process mining (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Azure templates for process mining
 
 Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps (work tracking)](#azure-devops-work-tracking-template), [Azure DevOps (pipelines)](#azure-devops-pipelines-template), [Logic Apps (standard plan)](#logic-apps-standard-plan-template), [Logic Apps (consumption plan)](#logic-apps-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
 
@@ -54,8 +50,6 @@ The Azure DevOps (work tracking) template uses data from your Azure Boards to an
 1. (Optional) In the **Description** field, enter a description of the process.
 
 1. Select **Create**.
-
-    :::image type="content" source="media/process-mining-azure-templates/create-az-devops.png" alt-text="Screenshot of the Azure DevOps (work tracking) screen.":::
 
 1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
@@ -94,8 +88,6 @@ The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze you
 1. (Optional) In the **Description** field, enter a description of the process.
 
 1. Select **Create**.
-
-    :::image type="content" source="media/process-mining-azure-templates/create-az-pipelines.png" alt-text="Screenshot of the Azure DevOps (pipelines) screen.":::
 
 1. In the **Connect to data source** screen in the **Authentication kind** field, replace "Anonymous" with **Organizational account**.
 
@@ -219,8 +211,6 @@ The Durable Functions template uses data from your Azure Durable Functions stora
 
 1. In the **Process name** field, enter a name for your process.
 
-    :::image type="content" source="media/process-mining-azure-templates/create-durable-functions.png" alt-text="Screenshot of the Durable Functions screen.":::
-
 1. In Azure portal, go to your Azure Durable Functions storage account. In the left panel under **Data storage**, select **Tables**. Copy the table names that end with **Instances** and **History**.
 
     :::image type="content" source="media/process-mining-azure-templates/durable-functions-tables.png" alt-text="Screenshot of the Azure storage account Tables page with two table names highlighted.":::
@@ -240,8 +230,6 @@ The Durable Functions template uses data from your Azure Durable Functions stora
     :::image type="content" source="media/process-mining-azure-templates/durable-functions-settings.png" alt-text="Screenshot of the Connection settings screen, with the Account name or URL field highlighted.":::
 
 1. In Azure portal in the left pane, select **Security + Networking** > **Access keys**.
-
-    :::image type="content" source="media/process-mining-azure-templates/durable-functions-access-keys.png" alt-text="Screenshot of the Security + Networking menu with Access keys highlighted.":::
 
 1. Select **Show keys**. Copy the value of **Key1** or **Key2**.
 

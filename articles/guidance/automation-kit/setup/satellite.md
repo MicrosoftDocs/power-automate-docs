@@ -4,7 +4,6 @@ description: Set up the Automation Kit satellite components.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 

@@ -2,14 +2,11 @@
 title: Replace classic Microsoft Dataverse workflows with Power Automate | Microsoft Docs
 description: Describes Power Automate capabilities and recommended patterns to use flow instead of a classic workflow.
 author: MSFTMAN
-manager: tapanm
 ms.author: Deonhe
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 08/12/2022
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
