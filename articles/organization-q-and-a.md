@@ -153,7 +153,13 @@ Power Automate allows you to create data zones for business and non-business dat
 
   ![Data loss prevention image.](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
 
-  
+### What can Guest Users do with Power Automate?
+
+Guest users can trigger flows with automatic triggers.  For example, a guest could trigger a flow that uses the "When an Item is Created" trigger in SharePoint.  Guests cannot trigger manual (instant) flows, like the "For a selected item" trigger.
+
+Guests users can participate in Approvals.
+
+Guests cannot create and edit flows.
 
 ## Power Automate RPA license
 
