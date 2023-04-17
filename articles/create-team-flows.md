@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: tapanm
 editor: ''
 tags: ''
 
@@ -17,8 +16,6 @@ ms.workload: na
 ms.date: 02/01/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -182,11 +179,6 @@ You can send a copy of a cloud flow to another user, who can then use the defini
 1. The recipient will receive an email stating that you have shared a cloud flow template with them, and they can then create their own instance of that flow.
 
    ![Receive a copy.](./media/create-team-flows/send-a-copy5.png "Receive a copy")
-
-   >[!NOTE]
-   >As a recipient, you can also access the flow by selecting **Templates** on the left pane and then selecting the **Shared with me** tab.
-
-   ![Shared with me.](./media/create-team-flows/send-a-copy6.png "Shared with me")
 
 ## FAQ
 

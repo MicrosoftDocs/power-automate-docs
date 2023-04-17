@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -17,8 +16,6 @@ ms.workload: na
 ms.date: 04/27/2021
 ms.author: DeonHe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -49,6 +46,8 @@ Real-time, in-product help is available from the [documentation](./index.yml) an
 
    ![A screenshot that displays contextual help.](./media/contextual-help-bot/contextual-help.png)
 
+### Get help from the community
+
 Now that you've displayed the in-product help, follow these steps to use the various topics.
 
 1. Select any link from the list of help topics.
@@ -69,7 +68,7 @@ Now that you've displayed the in-product help, follow these steps to use the var
 
 1. You can also get help from blog posts if you select the **Blog** link.
 
-### You can also get conversational self-help from the bot
+### Get conversational self-help from the bot
 
 1. Select **Ask a chatbot**.
 

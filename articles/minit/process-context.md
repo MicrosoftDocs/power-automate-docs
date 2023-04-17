@@ -1,43 +1,53 @@
 ---
-title: Process context (preview)
-description: Learn about the process settings you can change in the Minit desktop application for Microsoft Power Automate process advisor.
-author: maslejka
+title: Manage settings with process context
+description: Learn about the process settings you can change in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# Process context (preview)
+# Manage settings with process context
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+The **Process context** page is where you can create and manage process level settings that you want to apply to the views you create for a process.
 
-The **Process context** page is where you can create and manage settings that you want to apply to the views you create for a process.
+## Open the Process context screen
 
-To open the process context, either select the icon below the process name, or select (**...**) to the right of the process name and then select **Process context**.
+There are two ways to open the **Process context** screen depending on where you are in the application.
 
-:::image type="content" source="media/PC-overview-1.png" alt-text="Screenshot of the process hub, with the process context icon highlighted.":::
+- **From the Processes screen:** Select **Process context**.
 
-The **Process context** page contains the following subsections:
+    :::image type="content" source="media/process-context-icon.png" alt-text="Screenshot of the process context icon.":::
+
+- **From any other screen in the desktop application:** On the menu bar in the upper right corner, select **Process context**.
+
+## Launch process mining capabilities
+
+On the **Process context** screen, you can launch the following capabilities. To learn about each capability, select the link.
 
 - **Custom metrics**: Create and manage [custom metrics](custom-metrics.md).
 
-- **Map hierarchies**: Create and manage [hierarchies](hierarchical-process-mining.md).
-
 - **Business rules**: Create and manage [business rules](business-rules.md).
+
+- **Map Hierarchies**: Create and manage [hierarchies](hierarchical-process-mining.md).
+
+
 
 - **Case categorization**: [Categorize cases](case-categorization.md) as Running, Finished, or Stuck.
 
 - **General settings**: Select the [default **Activity label**](view-settings.md).
 
-:::image type="content" alt-text="Screenshot of the Custom metrics tab." source="media/PC-overview.png":::
+    :::image type="content" alt-text="Screenshot of the Custom metrics tab." source="media/PC-overview.png":::
+
+### See also
+
+[Explore the home page](process-hub.md)

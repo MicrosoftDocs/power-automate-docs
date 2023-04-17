@@ -1,24 +1,24 @@
 ---
 title: Get started with Power Automate (contains video) | Microsoft Docs
-description: Quick ways to start automating your work and life with Power Automate.
+description: Learn quick ways to start automating your work and life with Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kisubedi
+  - v-aangie
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/01/2021
-ms.author: deonhe
+ms.author: napienko
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -30,12 +30,10 @@ ms.custom: intro-internal
 Welcome! What can you expect from Power Automate? Here are a few examples of what you can do with Power Automate.
 
 * Automate business processes
-* Orchestrate processes end-to-end and trigger microservices
 * Send automatic reminders for past due tasks
 * Move business data between systems on a schedule
 * Connect to more than 500 data sources or any publicly available API
-* Use process mining to identify bottlenecks and opportunities for automation
-* You can even automate tasks on your local computer like computing data in Excel
+* You can even automate tasks on your local computer like computing data in Excel. 
 
 Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
 
@@ -51,7 +49,7 @@ The following video shows you how to get started building your first flow.
 Anyone from a basic business user to an IT professional can create automated processes using Power Automate's no-code/low-code platform.
 
 *What industries can benefit from Power Automate?*
-Check out how some companies implemented Microsoft Power Platform solutions using Power Automate in: 
+Check out how some companies implemented Microsoft Power Platform solutions using Power Automate in:
 
   * [Banking](https://customers.microsoft.com/story/821782-illimity-bank-banking-power-automate)
   * [Retail](https://customers.microsoft.com/story/drivetime-retail-consumer-goods-azure)
@@ -61,16 +59,15 @@ Check out how some companies implemented Microsoft Power Platform solutions usin
 
 Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
 
-
 The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://make.powerautomate.com/signin).
 
 ## What are the different types of flows?
 
-Visit the [flow types](flow-types.md) article to learn more about the different types of flows that you can create to automate your tasks.
+To learn more about the different types of flows that you can create to automate your tasks, go to the [flow types](flow-types.md) article.
 
-## Check out the start page
+## Check out the Home page
 
-[On the start page](https://make.powerautomate.com) for Power Automate, you can [explore a diverse set of templates](https://make.powerautomate.com/templates) and learn about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
+[On the Home page](https://make.powerautomate.com) for Power Automate, you can [explore a diverse set of templates](https://make.powerautomate.com/templates) and learn about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
 
 Each template is designed for a specific purpose. For example, there are templates for sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg. They're intended to inspire you to create customized flows for the exact processes you need.
 
@@ -93,10 +90,9 @@ Each template is designed for a specific purpose. For example, there are templat
     ![Provide credentials for the connection.](./media/getting-started/full-flow.png)
 
   >[!NOTE]
-  >You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
-
->[!TIP]
->[Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
+  >- You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
+>
+>- [Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
 
 ## Get creative
 
@@ -140,7 +136,7 @@ When your creative juices start *flowing*, you might create many flows. Don't wo
 
 Visit the cloud flow activity page to see the list of cloud flows that recently ran, sent notifications, or have failed.
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
+1. Sign into [Power Automate](https://powerautomate.com).
 1. Select **Monitor** on the left side of the screen.
 1. Select **Cloud flow activity**.
 

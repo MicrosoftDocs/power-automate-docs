@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
 ms.author: Deonhe
 ms.reviewer: gtrantzas
 editor: ''
@@ -17,9 +16,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/14/2020
-search.app: 
-  - Flow
-  - Powerplatform
 search.audienceType: 
   - admin
 ---
@@ -280,7 +276,7 @@ For more information on removing a user's permission in an  environment, navigat
 
 ## Delete Gateway Settings
 
-Responding to Data Subject Delete Requests for On-Premise Data Gateways can be found [here](/power-bi/service-gateway-onprem#tenant-level-administration).
+Responding to Data Subject Delete Requests for On-Premises Data Gateways can be found [here](/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## Delete User Details
 

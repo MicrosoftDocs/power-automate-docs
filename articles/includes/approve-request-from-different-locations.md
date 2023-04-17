@@ -3,6 +3,7 @@ If you're an approver in an approval flow, you receive an email whenever someone
 To approve a request:
 
 ### From email
+
 1. Select **Approve** from the email you receive when an item is added to the SharePoint Online list.
    
      Note: If you're using a mobile device with the Power Automate app installed, the Power Automate app launches, otherwise, the approvals center opens in your browser.
@@ -12,16 +13,19 @@ To approve a request:
 ### From the approvals center
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Select the **Action items**>**Approvals** in the left-side navigation pane.
+
+1. Select **Approvals** in the left-side navigation pane.
+
 1. Select **Approve** on the request you want to approve.
+
 1. Add any comments, and then select **Confirm** at the bottom of the screen.
 
 ### From the Power Automate app
 
 1. On your mobile phone with the Power Automate app installed, select **Approve** from the request approval email.
+
 1. Select **Confirm** in the upper right corner of the screen.
 
-    ![select confirm.](media/modern-approvals/mobile-approval.png)
 1. The success page shows, indicating that your approval has been recorded.
 
 >[!Note]

@@ -1,11 +1,14 @@
 ---
-title: Create an automated flow with Microsoft Dataverse| Microsoft Docs
-description: Create workflows by using a Microsoft Dataverse connection and Power Automate
+title: Create a cloud flow with Microsoft Dataverse (legacy)
+description: Learn how to create workflows by using a Microsoft Dataverse (legacy) connection and Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
-manager: tapanm
+author: Radioblazer
+contributors:
+  - Radioblazer
+  - ChrisGarty
+  - v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,22 +16,18 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/03/2023
-ms.author: Deonhe
+ms.date: 02/10/2023
+ms.author: matow
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Create an automated flow with Microsoft Dataverse
+# Create a cloud flow with Microsoft Dataverse (legacy)
 
 > [!IMPORTANT]
 > Flows that are created with the Dataverse (legacy) connector will no longer work as of summer 2023. Use the migration tool in Power Automate to automatically migrate from the Dataverse (legacy) connector to the Microsoft Dataverse connector. 
-
-
 
 With the Microsoft Dataverse connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on rows within Dataverse.
 
@@ -40,13 +39,11 @@ You can use any of the following triggers to initiate your flow.
 - When a row is added, modified, or deleted.
 - When an action is performed.
 
-> [!div class="mx-imgBorder"]
-> ![Select a trigger.](./media/cds-connector/triggers.png)
+:::image type="content" source="./media/cds-connector/triggers.png" alt-text="Screenshot of selecting a trigger.":::
 
 If the selected trigger requires an environment to be selected, then you can choose `(Current)`, which will always use the database within the environment in which Power Automate runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
 
-> [!div class="mx-imgBorder"]
-> ![Choose environment.](./media/cds-connector/Environments.png)
+:::image type="content" source="./media/cds-connector/Environments.png" alt-text="Screenshot of choosing an environment.":::
 
 You can use scopes to determine if your flow runs in any of the following scenarios:
 
@@ -54,8 +51,7 @@ You can use scopes to determine if your flow runs in any of the following scenar
 - If a user within your business unit adds a new row.
 - If any user in your organization adds a new row.
 
-> [!div class="mx-imgBorder"]
-> ![Choose scope.](./media/cds-connector/Scopes.png)
+:::image type="content" source="./media/cds-connector/Scopes.png" alt-text="Screenshot of choosing a scope.":::
 
 |Scope|Trigger timing|
 | --- | --- |
@@ -71,8 +67,7 @@ Triggers that run when a row is modified can also use filtering columns. This en
 
 This flow triggers any time the first or last name of a contact that the flow user owns is modified.
 
-> [!div class="mx-imgBorder"]
-> ![Filter columns.](./media/cds-connector/FilterAttributes.png)
+:::image type="content" source="./media/cds-connector/FilterAttributes.png" alt-text="Screenshot of Filter columns.":::
 
 ## Trigger privileges
 
@@ -87,8 +82,7 @@ Use any of the following actions to write data into Dataverse:
 
 Here's an example of creating a follow-up task when the given user creates a new account row.  
 
-> [!div class="mx-imgBorder"]
-> ![Follow-up task.](./media/cds-connector/Regarding.png)
+:::image type="content" source="./media/cds-connector/Regarding.png" alt-text="Screenshot of Follow-up task.":::
 
 ## Advanced concepts
 
@@ -111,5 +105,9 @@ You can use the **update a row** command to provide upsert actions. This command
 If you have a trigger registered on the update of a row, the flow runs for every *committed* update to the given row. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
 
 Flow runs may be delayed if there's a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
+
+### See also
+
+[Add canvas apps and cloud flows to a solution by default](/power-apps/maker/canvas-apps/add-app-solution-default)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

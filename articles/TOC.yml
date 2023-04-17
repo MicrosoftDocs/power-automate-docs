@@ -8,8 +8,6 @@
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
-  - name: New Power Automate experience (preview)
-    href: intro-maker-portal.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -36,8 +34,6 @@
       href: onedrive-business-launch-panel.md
     - name: Filter and copy data
       href: odata-filters.md
-    - name: Run your flows with Flics
-      href: flic-button-flows.md
     - name: Run your flows with bttns
       href: bttn-button-flows.md
   - name: Scheduled flows
@@ -281,6 +277,8 @@
       href: ./dataverse/known-issues.md
     - name: Use Dataverse-based flows in Power Apps
       href: ./dataverse/flows-power-apps.md
+    - name: Create a cloud flow that uses Microsoft Dataverse
+      href: common-data-model-intro.md  
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
   - name: Use solutions for ALM
@@ -452,6 +450,8 @@
       href: ./desktop-flows/virtual-desktops.md
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
+    - name: Test a selector
+      href: ./desktop-flows/test-selectors.md  
   - name: How to
     items:
     - name: Handle and manipulate variables
@@ -560,6 +560,8 @@
       href: ./desktop-flows/how-to/extract-text-word-document.md
     - name: Pass a datatable from a cloud flow to a desktop flow
       href: ./desktop-flows/how-to/passing-datatable.md
+    - name: Delete desktop flow run history data
+      href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md  
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -593,6 +595,8 @@
       href: ./desktop-flows/actions-reference/webautomation.md
     - name: Excel
       href: ./desktop-flows/actions-reference/excel.md
+    - name: AI Builder (preview)
+      href: ./desktop-flows/actions-reference/aibuilder.md
     - name: Database
       href: ./desktop-flows/actions-reference/database.md
     - name: Email
@@ -671,6 +675,8 @@
     href: enhance-business-process-flows-branching.md
   - name: Add custom controls to business process flows
     href: custom-controls-business-process-flows.md
+  - name: Add on-demand workflows to business process Flows
+    href: bpf-add-on-demand-workflow.md 
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
 - name: Process advisor
@@ -678,10 +684,12 @@
   - name: Overview
     href: process-advisor-overview.md
     displayName: Overview of process advisor
-  - name: Process mining (preview)
+  - name: Process mining
     items:
     - name: Overview
       href: process-mining-overview.md
+    - name: Get started with process mining
+      href: process-mining-tutorial.md   
     - name: Templates overview
       items:
       - name: Azure templates
@@ -690,8 +698,6 @@
         href: process-mining-finance-ops-templates.md   
       - name: Power Platform templates
         href: process-mining-templates.md
-    - name: Get started with process mining
-      href: process-mining-tutorial.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
     - name: Transform and map data
@@ -700,34 +706,30 @@
       href: process-mining-visualize.md
     - name: Customize a report with your own Power BI workspace
       href: process-mining-pbi-workspace.md
-    - name: Improve cloud flows with process insights
+    - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
       href: process-mining-share.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
-  - name: Minit desktop application (preview)
+  - name: Minit
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Install the Minit desktop application
+    - name: Install minit
       href: ./minit/how-to-start-with-minit-desktop-application.md
-    - name: Process hub
+    - name: Get started
       items:
-      - name: Process hub overview
+      - name: Explore the home page
         href: ./minit/process-hub.md
-      - name: Process context
+      - name: Manage settings with process context
         href: ./minit/process-context.md
-      - name: Case categorization
-        href: ./minit/case-categorization.md
-    - name: Process explorer overview
-      href: ./minit/process-explorer.md
+      - name: Categorize cases
+        href: ./minit/case-categorization.md 
     - name: Process map
       items:
       - name: Process map overview
         href: ./minit/process-map.md
-      - name: Favorites panel
-        href: ./minit/favorites-panel.md
       - name: View settings
         href: ./minit/view-settings.md
       - name: Hierarchical process mining
@@ -735,26 +737,36 @@
       - name: Rework metrics
         href: ./minit/rework-metrics.md
     - name: Process animation
-      href: ./minit/process-animation.md
+      items:
+      - name: Overview
+        href: ./minit/process-animation.md
+      - name: Understand process animation controls
+        href: ./minit/animation-elements.md
     - name: Statistics
       items:
-      - name: Statistics overview
+      - name: Overview
         href: ./minit/statistics.md
-      - name: Case overview statistics
+      - name: Gather case overview statistics
         href: ./minit/case-overview-statistics.md
-      - name: Activities (event-level) statistics
+      - name: Customize activities statistics
         href: ./minit/activities-event-level-statistics.md
-      - name: Edge statistics
+      - name: Review edge statistics
         href: ./minit/edge-statistics.md
-    - name: Variants
-      href: ./minit/variants.md
-    - name: Process compare for compliance
-      href: ./minit/process-compare-compliance.md
     - name: Root cause analysis
-      href: ./minit/root-cause-analysis.md
+      items:
+      - name: Overview
+        href: ./minit/root-cause-analysis-overview.md 
+      - name: Find hidden connections
+        href: ./minit/root-cause-analysis.md    
+    - name: Analyze processes with variants
+      href: ./minit/variants.md
+    - name: Compare process views for compliance
+      href: ./minit/process-compare-compliance.md
+    - name: Export process data
+      href: ./minit/export.md
     - name: Filtering
       items:
-      - name: Filtering overview
+      - name: Overview
         href: ./minit/filtering.md
       - name: Timeframe filter
         href: ./minit/timeframe-filter.md
@@ -782,62 +794,62 @@
         href: ./minit/event-metrics-filter.md
       - name: Filters export and import
         href: ./minit/filters-export-import.md
-    - name: Export
-      href: ./minit/export.md
     - name: Settings
       items:
-      - name: Settings overview
+      - name: Overview
         href: ./minit/settings.md
       - name: Options
         href: ./minit/options.md
       - name: Working hours
         href: ./minit/working-hours.md
-    - name: Custom metrics
+    - name: Advanced features
       items:
-      - name: Custom metrics overview
-        href: ./minit/custom-metrics.md
-      - name: Tips and examples
-        href: ./minit/general-information.md
-      - name: Requirements for application
-        href: ./minit/requirements-for-application.md
-      - name: List of data types-custom metrics
-        href: ./minit/data-types-custom-metrics.md
-      - name: Constants
-        href: ./minit/constants.md
-      - name: List of unary operators
-        href: ./minit/unary-operators.md
-      - name: Aggregations
-        href: ./minit/aggregations.md
-      - name: Date and time operations
-        href: ./minit/date-and-time-operations.md
-      - name: Mathematical operations
-        href: ./minit/mathematical-operations.md
-      - name: Statistical operations
-        href: ./minit/statistical-operations.md
-      - name: List of string operations
-        href: ./minit/string-operations.md
-      - name: List of other operations
-        href: ./minit/other-operations.md
-      - name: Calculation context
-        href: ./minit/calculation-context.md
-      - name: Calculation methods
+      - name: Custom metrics
         items:
+        - name: Overview
+          href: ./minit/custom-metrics.md
+        - name: Tips and examples
+          href: ./minit/general-information.md
+        - name: Requirements for application
+          href: ./minit/requirements-for-application.md
+        - name: Data types for custom metrics
+          href: ./minit/data-types-custom-metrics.md
+        - name: List of constants
+          href: ./minit/constants.md
+        - name: List of unary and binary operators
+          href: ./minit/unary-operators.md
+        - name: List of aggregations
+          href: ./minit/aggregations.md
+        - name: List of date and time operations
+          href: ./minit/date-and-time-operations.md
+        - name: List of mathematical operations
+          href: ./minit/mathematical-operations.md
+        - name: List of statistical operations
+          href: ./minit/statistical-operations.md
+        - name: List of string operations
+          href: ./minit/string-operations.md
+        - name: List of other operations
+          href: ./minit/other-operations.md
+        - name: List of calculation context
+          href: ./minit/calculation-context.md
         - name: Calculation methods
-          href: ./minit/custom-metrics-how-to.md
-        - name: Basic examples
-          href: ./minit/custom-metrics-beginner-examples.md
-        - name: Advanced examples
-          href: ./minit/custom-metrics-advanced-examples.md
-    - name: Business rules
-      items:
-      - name: Business rules overview
-        href: ./minit/business-rules.md
-      - name: Business rule scope
-        href: ./minit/business-rule-scope.md
-      - name: Business rules in process maps
-        href: ./minit/business-rules-process-map.md
-      - name: Business rules statistics
-        href: ./minit/business-rules-statistics.md
+          items:
+          - name: Overview
+            href: ./minit/custom-metrics-how-to.md
+          - name: Basic examples
+            href: ./minit/custom-metrics-beginner-examples.md
+          - name: Advanced examples
+            href: ./minit/custom-metrics-advanced-examples.md
+      - name: Business rules
+        items:
+        - name: Business rules overview
+          href: ./minit/business-rules.md
+        - name: Business rule scope
+          href: ./minit/business-rule-scope.md
+        - name: Business rules for process maps
+          href: ./minit/business-rules-process-map.md
+        - name: Business rules statistics
+          href: ./minit/business-rules-statistics.md          
   - name: Task mining
     items:
     - name: Overview
@@ -858,19 +870,19 @@
     items:
     - name: Security and privacy
       href: process-advisor-security.md
-      displayName: Security and privacy in process advisor
+      displayName: Security and privacy in process mining
     - name: Protect your data
       href: process-advisor-protect.md
-      displayName: Protect your data in process advisor
+      displayName: Protect your data in process mining
     - name: Export and import your process
       href: process-advisor-export.md
-      displayName: Export and import your process in process advisor
+      displayName: Export and import your process in process mining
     - name: Known issues
       href: process-advisor-issues.md
-      displayName: Known issues in process advisor
+      displayName: Known issues in process mining
   - name: Glossary
     href: process-advisor-glossary.md
-    displayName: Process advisor glossary
+    displayName: Process mining glossary
   - name: Troubleshoot issues
     href: process-mining-troubleshoot.md  
 - name: Connect to data
@@ -893,6 +905,8 @@
       href: ./sap-integration/env-variables-connection-refs.md
     - name: Prebuilt solution
       href: ./sap-integration/solutions.md
+    - name: FAQs
+      href: ./sap-integration/FAQs.md
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
@@ -932,6 +946,8 @@
     href: environments-overview-admin.md
   - name: IP address configuration
     href: ip-address-configuration.md
+  - name: Support for customer-managed keys (preview)
+    href: customer-managed-keys.md
   - name: View desktop flows analytics
     href: ./desktop-flows/overview-analytics.md
   - name: Monitor desktop flows

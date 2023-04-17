@@ -8,8 +8,6 @@ ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
 - NikosMoutzourakis
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmakers
   - enduser

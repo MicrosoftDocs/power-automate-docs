@@ -18,8 +18,6 @@ ms.assetid: 4469877e-bb95-481a-bc52-c9746f937ce5
 caps.latest.revision: 16
 ms.author: Matow
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -222,13 +220,8 @@ Recent rows are visible in a lookup column in the unified interface. To prevent 
 - Business process flows will show the name of the BPF instance, which is set at the time that the BPF instance is created. This means if the name in the BPF definition changes, new BPF instances will display the updated name, but older BPF instances will display the original name. It also means localized BPF definition names aren't displayed.
 
 ### See also
-  
- - [Watch a short video about business process flows](https://go.microsoft.com/fwlink/p/?linkid=842226)   
- - [Create a business process flow](create-business-process-flow.md)   
- - [Enhance business process flows with branching](enhance-business-process-flows-branching.md) <br/>
-### See also
 
-[Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal)
+- [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal)
 - [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal) 
 - [Whitepaper: Process Enablement with Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
 

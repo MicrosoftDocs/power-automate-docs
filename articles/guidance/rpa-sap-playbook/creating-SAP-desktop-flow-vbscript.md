@@ -4,7 +4,6 @@ description: In this step of the RPA Playbook for SAP GUI Automation with Power 
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 
