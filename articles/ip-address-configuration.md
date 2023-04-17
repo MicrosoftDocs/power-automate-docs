@@ -7,13 +7,12 @@ documentationcenter: na
 author: masisley
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/13/2023
+ms.date: 04/17/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 Contributors:
@@ -59,8 +58,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.powerautomate.com | https | Access to Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
 | *.azureedge.net | https | Access to the Power Automate CDN. |
-| nps.onyx.azure.net | https | Access to NPS (Net Promoter Score). |
-| *.microsoftcloud.com | https | Access to NPS (Net Promoter Score) for Power Automate desktop application. |
+| *.microsoftcloud.com | https | Access to NPS (Net Promoter Score). |
 | webshell.suite.office.com | https | Access to Office for header and search. Refer to [the Office 365 urls and ranges](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details. |
 | *.dynamics.com | https | Access to Dataverse tables |
 |go.microsoft.com|https|Access to the Power Automate to check for updates|
