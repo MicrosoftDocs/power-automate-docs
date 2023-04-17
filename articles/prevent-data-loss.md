@@ -25,14 +25,14 @@ search.audienceType:
 ---
 # Data loss prevention policies
 
-Data loss prevention (DLP) policies help protect your organizational data from being shared with a list of connectors that you define.
+Data loss prevention policies help protect your organizational data from being shared with a list of connectors that you define.
 
 An organization's data is critical to its success. Its data needs to be readily available for decision-making, but it needs to be protected so that it isn't shared with audiences that shouldn't have access to it. To protect this data, Power Automate provides you with the ability to create and enforce policies that define which connectors can access and share business data. The policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
 
 To learn more about protecting your data, go to [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) in the Microsoft Power Platform admin guide.
 
 >[!IMPORTANT]
->Administrators control data loss prevention policies. Contact your administrator if a data loss prevention policy is blocking your flows from running.
+>Administrators control DLP policies. Contact your administrator if a DLP policy is blocking your flows from running.
 
 ## Data loss prevention for desktop flows (preview)
 
