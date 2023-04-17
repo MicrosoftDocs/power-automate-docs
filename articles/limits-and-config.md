@@ -1,26 +1,23 @@
 ---
-title: Limits and configuration | Microsoft Docs
+title: Limits and configuration
 description: Limits and configuration
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: tapanm
+author: ChrisGarty
+Contributors:
+  - ChrisGarty
+  - v-aangie
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/23/2022
-ms.author: deonhe
+ms.date: 04/17/2023
+ms.author: CGarty
 ms.reviewer: angieandrews
-Contributors:
-  - georgiostrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -29,8 +26,7 @@ search.audienceType:
 
 This topic contains information about the current limits and configuration details for automated, scheduled, and instant flows.
 
->[!TIP]
->Check out the [pricing](https://make.powerautomate.com/pricing) for details on the different plans that are available.
+Check out the [pricing](https://make.powerautomate.com/pricing) for details on the different plans.
 
 ## Performance profiles
 
@@ -44,13 +40,13 @@ Flows have different limits depending on their *performance profile*. There are 
 
 If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two plans. For the exact set of plans that include Power Automate, see the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
-If needed, users can see their current plan by opening the session debugging information by pressing Ctrl+Alt+A in the maker portal. The current plan being used will have isCurrent=true.
+If needed, users can see their current plan by opening the session debugging information by pressing **Ctrl** + **Alt** + **A** in the maker portal. The plan being used will have **isCurrent=true**.
 
-The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people then generally the owner is the original creator. If unsure, you can see and change the owner a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated, although in the future, it may be reverted to the Low performance profile.
+The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people, then generally the owner is the original creator. If unsure, you can change the owner a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated. In the future, it may be reverted to the **Low** performance profile.
 
 ## Flow definition limits
 
-Here are the limits for a single flow definition:
+The following table contains the limits for a single flow definition.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
@@ -63,20 +59,21 @@ Here are the limits for a single flow definition:
 | Length of `description` | 256 characters | |
 | Maximum size for `trackedProperties` | 16,000 characters | |
 
-
 ## My flows limit
 
-Here is the limit for the My flows and Team flows tab:
+The following table contains the limit for the My flows and Team flows tab.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Number of flows owned by a single user | 600 | To extend this limit, use flows under solutions. |
 
-
 ## Duration and retention limits
 
+The following tables contain the duration and retention limits.
+
 ### Duration limits
-Duration limits for a single flow run:
+
+The following table contains the duration limits for a single flow run.
 
 | Name | Limit | Notes |
 |------|-------|-------|
@@ -86,9 +83,9 @@ Duration limits for a single flow run:
 | Maximum recurrence interval | 500 days |
 | Minimum postpone interval | 5 seconds for Low, 1 second for all others |
 
-### Expiration limits
+### Retention limits
 
-Limits on how long flows will remain turned on before they expire and get turned off
+The following table contains the limits on how long flows will remain turned on before they expire and get turned off.
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
@@ -100,7 +97,7 @@ Limits on how long flows will remain turned on before they expire and get turned
 
 ## Concurrency, looping, and debatching limits
 
-Here are the limits for a single flow run:
+The following table contains the limits for a single flow run.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
@@ -123,7 +120,7 @@ If a cloud flow exceeds one of the limits, activity for the flow will be slowed 
 
 ### Action request limits
 
-There are limits to the number of *actions* a cloud flow can run. These runs are counted for all types of actions, including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action runs. You can see the number of actions your flow has run by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
+Action request limits are limits to the number of *actions* a cloud flow can run. These runs are counted for all types of actions, including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action runs. You can see the number of actions your flow has run by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
 
 | Name | Transition period limit | Notes |
 | ---- | ----- |----- |
@@ -131,7 +128,7 @@ There are limits to the number of *actions* a cloud flow can run. These runs are
 | Actions per 24 hours|10,000 for Low, 100,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](/power-platform/admin/api-request-limits-allocations). These limits represent approximations of how many requests will be allowed daily. They are not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. The documented limits were substantially increased in late 2021. Public preview reporting for Power Platform requests is expected in May of calendar year 2022. Any potential high usage enforcement wouldn't start until six months after reports have been made generally available. Distribute the workload across more than one flow as necessary. | 
 | Concurrent outbound calls | 500 for Low, 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
 
-As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Microsoft Dataverse. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned earlier). For more information about these, refer to [requests limits and allocations](/power-platform/admin/api-request-limits-allocations).
+As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across all of their flows, Power Apps, or any applications calling into the Microsoft Dataverse. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned earlier). For more information about these, refer to [requests limits and allocations](/power-platform/admin/api-request-limits-allocations).
 
 >[!TIP]
 >Individual connectors have their own limits as well, which often will be reached before the limits mentioned earlier. Be sure to check [the documentation for your connector](/connectors/).
@@ -485,6 +482,7 @@ See [IP address configuration](ip-address-configuration.md) for additional detai
 Suspended flows will be shown as suspended in the Power Automate maker portal and the Power Platform Admin Center. When a flow is returned via API, PowerShell, or the [Power Automate Management connector list flows as admin action](/connectors/flowmanagement/#list-flows-as-admin), the flow will be **State=Suspended** and have appropriate **FlowSuspensionReason** and **FlowSuspensionTime** values.
 
 FlowSuspensionReason values for runtime limits:
+
 - AllActionsFailingDetected
 - AlwaysFailingDetected
 - ApiCallOverageDetected
