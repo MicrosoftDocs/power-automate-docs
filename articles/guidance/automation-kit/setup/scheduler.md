@@ -1,27 +1,30 @@
 ---
-title: Set up the Automation Kit scheduler | Microsoft Docs
-description: Set up the Automation Kit scheduler.
+title: Set up the Automation Kit scheduler
+description: Learn how to set up the Automation Kit scheduler.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
-
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/07/2022
+ms.date: 04/21/2023
 ms.author: grarchib
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Set up the Automation Kit scheduler
 
-When you install the managed Power Platform Scheduler solution the following steps are required:
+When you install the managed Power Platform scheduler solution, make sure you follow these required steps. <!--Are steps part of installation, or are they done before or after? Link to installing managed scheduler solution.-->
 
-1. Ensure Power Apps component framework enabled using [Enable the Power Apps Component Framework Feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature") guidance.
-1. The [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1) has been installed from App Source into the target environment.
-1. The file [AutomationKitScheduler_*_managed.zip](https://github.com/microsoft/powercat-automation-kit/releases) file from the Assets section of the latest GitHub release
-1. The downloaded AutomationKitScheduler_*_managed.zip has been imported using [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions) guidance.
+1. Ensure the Power Apps component framework is enabled by following the steps in [Enable the Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature").
+
+1. Install the [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1) from App Source into the target environment.
+
+1. In the **Assets** section in the latest GitHub release of the [Automation Kit](https://github.com/microsoft/powercat-automation-kit/releases) file, download **AutomationKitScheduler_*_managed.zip** by selecting it.
+
+1. Import the downloaded AutomationKitScheduler_*_managed.zip file.
+
+    To learn how to import, go to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions).
