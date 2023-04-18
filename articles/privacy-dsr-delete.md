@@ -1,6 +1,6 @@
 ---
-title: Respond to customers' personal data deletion requests
-description: Learn about the resources available in Power Automate to help you meet your obligations to delete customers' personal data under various privacy laws and regulations.
+title: Respond to personal data deletion requests (Azure AD)
+description: Learn about the resources available in Power Automate to help you meet your obligations to delete customers' personal data under various privacy laws and regulations for users who authenticate using Azure AD.
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,7 +23,7 @@ search.audienceType:
   - admin
 ---
 
-# Respond to customers' personal data deletion requests
+# Respond to personal data deletion requests (Azure AD)
 
 [!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
 
@@ -31,7 +31,7 @@ search.audienceType:
 
 The right to erasure allows data subjects to request the removal of their personal data, including system-generated logs but not audit logs, from an organization's customer data. Also, when a user leaves your organization, an admin must determine whether to delete data and resources that the user created as part of their Power Automate flows. Other personal data is automatically deleted when the user's account is deleted from Azure Active Directory (Azure AD).
 
-The following table shows which personal data is automatically deleted and which data requires an administrator to manually review and delete.
+The following table shows which personal data is automatically deleted, and which data requires an administrator to manually review and delete, for users who authenticate using Azure Active Directory (Azure AD).
 
 | Requires manual review and deletion | Automatically deleted when the user is deleted from Azure AD |
 | ------ | ------ |

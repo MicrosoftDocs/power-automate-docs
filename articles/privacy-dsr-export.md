@@ -1,6 +1,6 @@
 ---
-title: Respond to customers' personal data export requests
-description: Learn about the resources available in Power Automate to help you meet your obligations to export customers' personal data under various privacy laws and regulations.
+title: Respond to personal data export requests (Azure AD)
+description: Learn about the resources available in Power Automate to help you meet your obligations to export customers' personal data under various privacy laws and regulations for users who authenticate using Azure AD.
 suite: flow
 services: ''
 suite: flow
@@ -16,14 +16,14 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/14/2023
+ms.date: 04/18/2023
 search.app: 
   - Flow
   - Powerplatform
 search.audienceType: 
   - admin
 ---
-# Respond to customers' personal data export requests
+# Respond to personal data export requests (Azure AD)
 
 [!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
 
@@ -31,12 +31,12 @@ search.audienceType:
 
 The right of data portability allows data subjects to request a copy of their personal data in an electronic format that may be transmitted to another data controller.
 
-The following table summarizes where to find and export a user's personal data in Power Automate.
+The following table summarizes where to find and export the personal data of a user who authenticates using Azure Active Directory (Azure AD) in Power Automate.
 
 - **Website access:** Sign in to the [Power Apps admin center](https://admin.powerapps.com/) or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 - **PowerShell access:** [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell)
 
-| **Customer data** | **Website access** | **PowerShell access**  |
+| Customer data | Website access | PowerShell access |
 | ----------------- | ------------------ | -------------------|
 | System-generated logs | [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/) |
 | Run history | Power Automate maker portal | |

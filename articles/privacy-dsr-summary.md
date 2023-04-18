@@ -1,6 +1,6 @@
 ---
-title: Respond to customers' personal data requests
-description: Learn about the resources available in Power Automate to help you meet your obligations under various privacy laws and regulations.
+title: Respond to personal data requests (Azure AD)
+description: Learn about the resources available in Power Automate to help you meet your obligations under various privacy laws and regulations for users who authenticate using Azure AD.
 services: ''
 suite: flow
 documentationcenter: na
@@ -23,15 +23,13 @@ search.audienceType:
   - admin
 ---
 
-# Respond to customers' personal data requests
+# Respond to personal data requests (Azure AD)
 
 [!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
 
-Power Automate provides tools and resources to help you respond to employees' and customers' requests to correct, export, or delete their personal data that resides in the Microsoft cloud. This article helps you find them.
+Power Automate provides tools and resources to help you respond to requests to correct, export, or delete personal data that resides in the Microsoft cloud. This article helps you respond to requests from users who authenticate using Azure Active Directory (Azure AD). [Respond to requests from users who authenticate using a Microsoft account](privacy-dsr-summary-msa.md).
 
 ## Prerequisites
-
-To respond to customers' and employees' personal data requests, you must have:
 
 - A paid or [trial license](http://make.powerapps.com/trial) for Power Apps Plan 2
 - The [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory (Azure AD) Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) role

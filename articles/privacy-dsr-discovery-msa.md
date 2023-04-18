@@ -1,6 +1,6 @@
 ---
-title: Power Automate GDPR Data Subject Discovery Requests for Microsoft Accounts (MSA) | Microsoft Docs
-description: Learn how to use Power Automate to respond to GPDR Data Subject Discovery Requests for Microsoft Accounts.
+title: Respond to personal data discovery requests (Microsoft account)
+description: Learn about the resources available in Power Automate to help you meet your obligations to discover customers' personal data under various privacy laws and regulations for users who authenticate using a Microsoft account.
 services: ''
 suite: flow
 documentationcenter: na
@@ -10,32 +10,30 @@ ms.author: Deonhe
 ms.reviewer: gtrantzas
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/16/2018
+ms.date: 04/18/2023
 search.app: 
   - Flow
   - Powerplatform
 search.audienceType: 
   - admin
 ---
-# Respond to GDPR Data Subject Discovery Requests 
 
+# Respond to personal data discovery requests (Microsoft account)
 
-The first step in responding to a DSR request is to find the personal data that’s the subject of the request.
-Here’s a summary of the Power Automate resources that contain personal data for a user who authenticates with their Microsoft Account (MSA).
+The first step in responding to personal data requests is to find personal data that's subject to the request. This step helps you to determine whether a request meets your organization's requirements for honoring or declining the request.
 
-|Resource|Purpose|
-|-----|-----|
-|Run history|Provides the history of each flow’s execution for the past 28 days. This data includes start time, end time, status, and all input/output information for each flow run. Learn more about [flow run history](https://flow.microsoft.com/blog/download-history-recurrence/).|
-|Activity feed| Provides a recap of each flow’s activities, including run status, failures, and notifications.|
-|Flows|The workflow logic for a [flow](./get-started-logic-flow.md).|
-|Connections|Used by connectors and allow connectivity to APIs, systems, databases, and more. Learn more about [connections](add-manage-connections.md).|
+The following table summarizes the Power Automate resources that may contain the personal data of a user who authenticates using a Microsoft account.
 
+| **Resource** | **Purpose** |
+| ----- | ----- |
+| Run history | The history of each flow execution for the past 28 days, including the start time, end time, status, and all inputs and outputs. [Learn more](https://flow.microsoft.com/blog/download-history-recurrence/). |
+| Activity feed | Recaps flow activities, including run status, failures, and notifications. |
+| Flows | The workflow logic that exists for a cloud flow. [Learn more](./get-started-logic-flow.md). |
+| Connections | Used by connectors to share data with APIs, systems, databases, etc. [Learn more](./add-manage-connections.md). |
 
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]
