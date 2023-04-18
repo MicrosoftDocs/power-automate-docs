@@ -1,6 +1,6 @@
 ---
-title: Configure the Automation Kit environment variables
-description: Learn how to configure the Automation Kit environment variables.
+title: Configure the automation kit environment variables
+description: Learn how to configure the automation kit environment variables.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
@@ -18,16 +18,16 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Configure Automation Kit environment variables
+# Configure automation kit environment variables
 
-In this article, you'll learn how to configure the Automation Kit environment variables. To get the information for the environment variables, open a new tab.
+In this article, you'll learn how to configure the automation kit environment variables. To get the information for the environment variables, open a new tab.
 
 1. Sign in to [Power Apps](https://make.powerapps.com).
 
 1. In the **Environments** dropdown menu in the title bar, select **Satellite**.
 
    > [!IMPORTANT]
-   > Azure Key Vault is required only for Automation Kit Satellite release March 2023 or earlier. Starting with the April 2023 release, Azure Key Vault is no longer required as a prerequisite. Environment variables for this are no longer required.
+   > Azure Key Vault is required only for automation kit satellite release March 2023 or earlier. Starting with the April 2023 release, Azure Key Vault is no longer required as a prerequisite. Environment variables for this are no longer required.
 
 1. On the top right side of the title bar, select **Settings** (the gear icon) > **Developer resources**.
 

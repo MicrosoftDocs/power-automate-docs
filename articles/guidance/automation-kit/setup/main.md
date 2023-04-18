@@ -1,6 +1,6 @@
 ---
-title: Set up the Automation Kit main components
-description: Learn how to set up the Automation Kit main components.
+title: Set up the automation kit main components
+description: Learn how to set up the automation kit main components.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
@@ -18,9 +18,9 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Set up the Automation Kit
+# Set up the automation kit main component
 
-This section includes the manual install process for the Main Solution of the Automation Kit. There is an automated [command line installer](./command-line-install.md) that will also guide you through this process.
+This section includes the manual install process for the main solution of the automation kit. There's an automated [command line installer](./command-line-install.md) that will also guide you through this process.
 
 Once you've completed the main solution setup, you can setup the following optional components:
 
@@ -33,7 +33,7 @@ Once you've completed the main solution setup, you can setup the following optio
 
 ## Import the main solution into the main environment
 
-Create an environment in which to set up the Automation Kit.
+Create an environment in which to set up the automation kit.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -82,9 +82,10 @@ Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-k
 
 Wait for the Creator Kit to finish importing before continuing to next step.
 
-### Import the Automation Kit main solution
+### Import the automation kit main solution
 
-1. Download the most recent release of the Automation Kit main managed solution from the Assets section of [https://github.com/microsoft/powercat-automation-kit/releases](https://github.com/microsoft/powercat-automation-kit/releases)
+1. Download the most recent release of the automation kit main managed solution from the **Assets** section of the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) file.
+
 1. On the left pane, select **Solutions**.
 
 1. Select **Import**, and then **Browse**.
@@ -131,7 +132,7 @@ Once the importation completes, assign security roles to members of the organiza
 
 Review roles and assign roles based on responsibility.
 
-- **Automation Project Admin**: Maintains the configuration data in the Automation Kit and maps automation projects to environments.
+- **Automation Project Admin**: Maintains the configuration data in the automation kit and maps automation projects to environments.
 
 - **Automation Project Contributor**: Generates or requests new automation projects.
 
@@ -161,7 +162,7 @@ Follow these steps to sync environments. The main solution has a cloud flow call
 
 Import all the desktop flow actions from the csv file into the **Desktop Flow Action** table.
 
-This must be done for all environments in which the Automation Kit is installed, such as main and all satellites.
+This must be done for all environments in which the automation kit is installed, such as main and all satellites.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 

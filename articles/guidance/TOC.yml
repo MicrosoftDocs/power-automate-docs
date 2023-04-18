@@ -114,17 +114,21 @@
               href: ./automation-kit/setup/prerequisites.md
             - name: Setup checklist
               href: ./automation-kit/setup/setup-checklist.md
-            - name: Main environment
+            - name: Install the automation kit using the command line
+              href: ./automation-kit/setup/command-line-install.md
+            - name: Set up the scheduler
+              href: ./automation-kit/setup/scheduler.md
+            - name: Set up the main environment
               href: ./automation-kit/setup/main.md
-            - name: Satellite environments
+            - name: Set up the satellite environments
               href: ./automation-kit/setup/satellite.md
-            - name: Environment variables
+            - name: Configure environment variables
               href: ./automation-kit/setup/environment-variables.md
-            - name: Security
+            - name: Assign security roles and permissions
               href: ./automation-kit/setup/security.md
             - name: Disable syncing (optional)
               href: ./automation-kit/setup/optional.md
-            - name: Setup FAQs
+            - name: FAQs for setup guidance
               href: ./automation-kit/setup/faqs.md
         - name: Configure the automation kit
           items:

@@ -1,6 +1,6 @@
 ---
-title: Set up the Automation Kit satellite components
-description: Learn how to set up the Automation Kit satellite components.
+title: Set up the automation kit satellite components
+description: Learn how to set up the automation kit satellite components.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
@@ -18,9 +18,9 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Set up satellites
+# Set up the automation kit satellite components
 
-This article includes the manual install process for the Satellite solution of the Automation Kit. There's an automated [command line installer](./command-line-install.md) that will also guide you through this process.
+This article includes the manual install process for the Satellite solution of the automation kit. There's an automated [command line installer](./command-line-install.md) that will also guide you through this process.
 
 ## Create an Azure Active Directory (Azure AD) app registration to connect to Dataverse Web API
 
@@ -44,7 +44,7 @@ Starting from the April 2023 release, a client secret isn't required.
 
 > [!IMPORTANT]
 > 
-> Azure Key Vault is required only for Automation Kit Satellite release March 2023 or earlier. Starting with the April 2023 release, Azure Key Vault is no longer required as a prerequisite.
+> Azure Key Vault is required only for automation kit satellite release March 2023 or earlier. Starting with the April 2023 release, Azure Key Vault is no longer required as a prerequisite.
 
 1. Select **Certificates & secrets** > **New client secret**.
 
@@ -77,7 +77,7 @@ Starting from the April 2023 release, a client secret isn't required.
 
 ## Create a new environment or use an existing environment for your satellite
 
-Microsoft recommends that you have the satellite solution imported inside your production environment. If you create a new environment, follow the steps in [Set up the Automation Kit](main.md).
+Microsoft recommends that you have the satellite solution imported inside your production environment. If you create a new environment, follow the steps in [Set up the automation kit](main.md).
 
 ### Import the Creator Kit
 
@@ -144,7 +144,7 @@ Follow these steps to import the satellite solution.
 
 1. Select your designated environment for the satellite solution. For this example, we're importing to the environment named **Contoso_Prod.**
 
-1. Download the most recent release of the Automation Kit satellite managed solution from the **Assets** section of [https://github.com/microsoft/powercat-automation-kit/releases](https://github.com/microsoft/powercat-automation-kit/releases).
+1. Download the most recent release of the automation kit satellite managed solution from the **Assets** section of the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) file.
 
 1. On the left pane, select **Solutions**.
 
@@ -164,7 +164,7 @@ Follow these steps to import the satellite solution.
 
 ## Import the desktop flow actions CSV
 
-Import all the desktop flow actions from the CSV file into the **Desktop Flow Action** table. This must be done for all environments in which the Automation Kit is installed, such as main and all satellites.
+Import all the desktop flow actions from the CSV file into the **Desktop Flow Action** table. This must be done for all environments in which the automation kit is installed, such as main and all satellites.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 

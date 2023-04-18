@@ -1,6 +1,6 @@
 ---
-title: Prerequisites to install and use the Automation Kit
-description: Learn about the required prerequisites to install and use the Automation Kit.
+title: Prerequisites to install and use the automation kit
+description: Learn about the required prerequisites to install and use the automation kit.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
@@ -18,13 +18,13 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Prerequisites to install and use the Automation Kit
+# Prerequisites to install and use the automation kit
 
-The following prerequisites are required to install and use the Automation Kit.
+The following prerequisites are required to install and use the automation kit.
 
 - An administrative account, which is called **Automation CoE Admin** or similar.
 
-- The Automation Kit requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration. The account you set up as the **Automation CoE Admin** needs the following.
+- The automation kit requires access to your Power Platform environments, and some Azure resources, such as Key Vault and app registration. The account you set up as the **Automation CoE Admin** needs the following.
 
 ## Roles
 
@@ -38,10 +38,10 @@ An Azure app registration is used for an application user for the Dataverse Web 
 
 ## Azure Key Vault
 
-The Automation Kit uses the new [Azure Key Vault secrets (preview)](/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
+The automation kit uses the new [Azure Key Vault secrets (preview)](/powerapps/maker/data-platform/EnvironmentVariables#use-azure-key-vault-secrets-preview).
 
    > [!IMPORTANT]
-   > Azure Key Vault is required only for Automation Kit Satellite release March 2023 or earlier. Starting with the April 2023 release, Azure Key Vault is no longer required as a prerequisite.
+   > Azure Key Vault is required only for automation kit satellite release March 2023 or earlier. Starting with the April 2023 release, Azure Key Vault is no longer required as a prerequisite.
 
 Azure Key Vaults are used to store secrets for the Azure app registration, depending on your requirements. There might be one Key Vault per satellite environment. Here's an example of how you might name your Key Vaults.
 
@@ -85,10 +85,10 @@ All users must have one of the following licenses:
 
 The Automation Kit uses the Power Platform Creator Kit. It was developed to bootstrap and enhance the canvas apps look and feel. The Creator Kit uses Fluent UI references and guidelines. To learn more about Fluent, go to [Fluent Design System](https://www.microsoft.com/design/fluent/).
 
-The Creator Kit uses a component library and code components. You must enable code components inside all the environments into which the Automation Kit will be installed.
+The Creator Kit uses a component library and code components. You must enable code components inside all the environments into which the automation kit will be installed.
 
 > [!WARNING]
-> You'll have to uninstall and potentially lose all data if the Power Apps component framework for canvas apps isn't turned on for the environments where the Automation Kit is installed or upgraded. Enable the component framework before installing or upgrading.
+> You'll have to uninstall and potentially lose all data if the Power Apps component framework for canvas apps isn't turned on for the environments where the automation kit is installed or upgraded. Enable the component framework before installing or upgrading.
 >
 >:::image type="content" source="../media/CodeComponentsTurnedOn.png" alt-text="Screenshot of the environments.":::
 

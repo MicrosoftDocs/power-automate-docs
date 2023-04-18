@@ -1,6 +1,6 @@
 ---
-title: Install the Automation Kit using the command line
-description: Learn how to install the Automation Kit using the command line.
+title: Install the automation kit using the command line
+description: Learn how to install the automation kit using the command line.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
@@ -18,15 +18,15 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Install the Automation Kit using the command line
+# Install the automation kit using the command line
 
-To install the latest version of the Automation Kit using the command line, follow the steps in this article. If you're unable to use the command line tools, you can use the manual steps  in [Set up the Automation Kit](./main.md) and [Set up satellites](./satellite.md).
+To install the latest version of the automation kit using the command line, follow the steps in this article. If you're unable to use the command line tools, you can use the manual steps  in [Set up the automation kit](./main.md) and [Set up satellites](./satellite.md).
 
-1. Ensure that you have [enabled the Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in the environments that you want to install the Automation Kit for both Main and Satellite. environments.
+1. Ensure that you have [enabled the Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in the environments that you want to install the automation kit for both main and satellite environments.
 
 1. Ensure that the [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Reviews) is installed into the target environment
 
-1. Open the latest release from the [Automation Kit](https://github.com/microsoft/powercat-automation-kit/releases) GitHub releases.
+1. Open the latest release from the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) GitHub releases.
 
 1. From the **Assets** section, download **AutomationKitInstall.zip** by selecting it.
 
@@ -53,7 +53,11 @@ powershell Install_AutomationKit.ps1
 Unblock-File Install_AutomationKit.ps1
 ```
 
-10. The PowerShell script will prompt you to create an installation configuration file using [Automation Kit for Power Platform&mdash;Setup](https://microsoft.github.io/powercat-automation-kit/get-started/setup).
+10. The PowerShell script will prompt you to create an installation configuration file using the [Automation Kit for Power Platform&mdash;Setup](https://microsoft.github.io/powercat-automation-kit/get-started/setup) pages (English version).
+ 
+    If you'd like to view the automation kit for Power Platform pages in a language other than English, choose from the following languages:
+
+    [Danish](https://microsoft.github.io/powercat-automation-kit/da/get-started/setup/), [Dutch](https://microsoft.github.io/powercat-automation-kit/nl/get-started/setup/), [French](https://microsoft.github.io/powercat-automation-kit/es/get-started/setup/), [German](https://microsoft.github.io/powercat-automation-kit/da/get-started/setup/), [Italian](https://microsoft.github.io/powercat-automation-kit/it/get-started/setup/), [Japanese](https://microsoft.github.io/powercat-automation-kit/it/get-started/setup/), [Korean](https://microsoft.github.io/powercat-automation-kit/ko/get-started/setup/), [Norwegian](https://microsoft.github.io/powercat-automation-kit/nb/get-started/setup/), [Polish](https://microsoft.github.io/powercat-automation-kit/pl/get-started/setup/), [Simplified Chinese](https://microsoft.github.io/powercat-automation-kit/th/get-started/setup/) [Spanish](https://microsoft.github.io/powercat-automation-kit/es/get-started/setup/), [Swedish](https://microsoft.github.io/powercat-automation-kit/sv/get-started/setup/), [Thai](https://microsoft.github.io/powercat-automation-kit/th/get-started/setup/).
 
     The setup configuration pages will provide you the following components:
 
