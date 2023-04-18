@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/flic-button-flows.md",
+      "redirect_url": "get-started-logic-template",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/connection-dynamics365.md",
       "redirect_url": "dataverse/overview",
       "redirect_document_id": "false"
