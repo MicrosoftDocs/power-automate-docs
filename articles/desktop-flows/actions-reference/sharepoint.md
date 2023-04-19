@@ -1,31 +1,29 @@
 ---
-title: SharePoint (preview)
-description: SharePoint (preview) Actions Reference
+title: SharePoint 
+description: Learn about the available SharePoint actions.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/17/2023
+ms.date: 03/01/2023
 ms.author: dipapa
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# SharePoint (preview)
+# SharePoint
 
-The SharePoint (preview) group of actions allows the utilization of the [SharePoint connector](/connectors/sharepointonline) from within desktop flows, alleviating the need to create a cloud flow in order to use its actions. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data.
+The SharePoint group of actions allows the utilization of the [SharePoint connector](/connectors/sharepointonline) from within desktop flows, alleviating the need to create a cloud flow in order to use its actions. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data.
 
 ## Prerequisites and limitations
 
-- During preview, you need an Attended RPA license.
+- You need an Attended RPA license.
 
 - Sharing desktop flows with SharePoint cloud actions isn't supported. Co-owners won't be able to run such desktop flows unless they overwrite the connection references with their own. **Users** with read access are unable to run such flows.
 
-- Data loss prevention policies (DLP) that include SharePoint cloud actions aren't enforced within desktop flows. During preview, machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
+- Data loss prevention policies (DLP) that include SharePoint cloud actions aren't enforced within desktop flows. Machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
 
 - Refrain from modifying a response’s properties directly as it may lead to an erroneous state after future updates. Instead, opt for storing the properties you want to utilize (from the response retrieved) directly into separate variables.
 
@@ -131,7 +129,7 @@ If you want to download only files of a specific type, add a conditional before 
 
     :::image type="content" source="media\sharepoint\convert-file-binary-data-action.png" alt-text="Screenshot of the Convert file to binary data action.":::
 
-1. Find the **SharePoint (preview)** group of actions in the flow designer and deploy the **Create file** action in the workspace.
+1. Find the **SharePoint** group of actions in the flow designer and deploy the **Create file** action in the workspace.
 
 1. Select an existing connection reference and fill in the required parameters. Here's an example about how to fill the fields:
 
@@ -139,14 +137,3 @@ If you want to download only files of a specific type, add a conditional before 
       > Don't forget to add the appropriate file extension after the file name.
 
     :::image type="content" source="media\sharepoint\sharepoint-create-file-action.png" alt-text="Screenshot of the Create file Sharepoint action.":::
-
-## Upcoming features
-
-- Dynamic content for output variables: cloud actions’ output variables can be expanded to show its underlying properties
-- Share to **users** brings their own connection references upon each run
-- Co-owners can use the same connection references
-- ALM dependencies management (dependency checker upon import, add required objects, show dependencies)
-- Connection references are visible in desktop flows details pages
-- Exponential/manual retry policies in case the connector responds an error
-- DLPs that include SharePoint cloud actions are enforced in desktop flows
-- New SharePoint actions

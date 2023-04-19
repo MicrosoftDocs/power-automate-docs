@@ -1,5 +1,5 @@
 ---
-title: Set up SAP integration with Power Platform (preview)
+title: Set up SAP integration with Power Platform
 description: Learn about the requirements to configure SAP integration, and prepare your on-premises SAP infrastructure to connect with Power Platform
 author: jongilman88
 contributors: 
@@ -13,13 +13,11 @@ ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: how-to
-ms.date: 02/17/2023
+ms.date: 03/31/2023
 
 ---
 
-# Set up SAP integration with Power Platform (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Set up SAP integration with Power Platform
 
 A successful SAP integration with Microsoft Power Platform requires coordination with your organization's IT administrators. With some planning, setup, and configuration, you'll be able to ensure that your SAP system can communicate with Power Platform.
 
@@ -49,7 +47,7 @@ The assembled team of IT system administrators needs to review the following req
 - [Power Platform licensing](/power-platform/admin/pricing-billing-skus). Determine if your organization has the necessary [licensing](https://www.microsoft.com/licensing/default) to proceed with the setup. It's important to consider:
   - Power Apps, Power Automate, and Power BI licensing that supports setting up and using an on-premises data gateway with premium applications, flows, and connectors (SAP ERP and Dataverse).
   - All administrators implementing and functional business users testing and using SAP Integration have the required licenses to do so.
-    - A [Power BI license](/getting-started-with-power-bi/?accordion=getting-started-with-powerbi-accordion&panel=p1&tab=t1) is required for the admin who is setting up the on-premises data gateway.
+    - A [Power BI license](/power-bi/fundamentals/service-features-license-type) is required for the admin who is setting up the on-premises data gateway.
 
 - [SAP](<https://www.sap.com/>) subscription:
   
@@ -189,7 +187,7 @@ The SAP ERP connector supports Azure AD and Windows authentication by enabling S
 
 ### Step 4: Set up SAP server and user accounts to allow actions
 
-For more information, which includes the supported user account types and the minimum required authorization for each action type (RFC, BAPI, IDOC), review [SAP Note 460089 - Minimum authorization profiles for external RFC programs](https://accounts.sap.com/saml2/idp/sso).
+For more information, which includes the supported user account types and the minimum required authorization for each action type (RFC, BAPI, IDOC), review [SAP Note 460089 - Minimum authorization profiles for external RFC programs](https://accounts.sap.com/).
 
 SAP user accounts need to access `RFC_Metadata` function group and the respective function modules for the following operations:
 

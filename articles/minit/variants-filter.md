@@ -1,39 +1,33 @@
 ---
-title: Variants filter (preview)
-description: Learn how to restrict the mining in the process only to the cases following a certain scenario in the Minit desktop application in process advisor.
-author: maslejka
+title: Variants filter
+description: Learn how to restrict the mining in the process only to the cases following a certain scenario in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# Variants filter (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Variants filter
 
 Use this filter to restrict the mining in the process only to the cases following a certain scenario (variant).
 
-In the center, there is the visualization of the dependence of the number of variants on the number of cases falling in each variant.
+In the **Values**, there's the visualization of the dependence of the number of variants on the number of cases falling in each variant.
 
-:::image type="content" alt-text="Screenshot of the variants on the Filtering screen." source="media/image-59.png":::
+:::image type="content" alt-text="Screenshot of the variants on Variants filter." source="media/variants-filter.png":::
 
 ## Variant mining attribute
 
-Variants may be calculated using activity (default one) or any mining attribute (any non-case level attribute). Choosing variant mining attribute in filters does not depend on, nor modifies the selected mining attribute on the process map.
+Variants may be calculated using activity attribute (default one) or any mining attribute (any non-case level attribute). Choosing a variant mining attribute in filters doesn't depend on, nor modifies the selected mining attribute on the process map.
 
 The process map can be calculated using the activity attribute, while data may be filtered by the most common variants (scenarios) based on the resource attribute.
-
-:::image type="content" alt-text="Screenshot of the dropdown menu for the variant mining attributes." source="media/variant-mining-attribtue.png":::
 
 ## Variant selection
 
@@ -41,12 +35,11 @@ Variants can be selected by marking them on the chart in the center part of the 
 
 The following example show the results of 50 variants containing 3% of all cases in the process.
 
-:::image type="content" alt-text="Screenshot of many variants selected." source="media/image019-1.png":::
+:::image type="content" alt-text="Screenshot of many variants selected." source="media/variant-filter-example-1.png":::
 
 The following example show the results of one variant containing 50% of all cases in the process.
 
-:::image type="content" alt-text="Screenshot of one variant selected." source="media/image020-1.png":::
+:::image type="content" alt-text="Screenshot of one variant selected." source="media/variant-filter-example-2.png":::
 
-To select a discontinuous group of variants or to select variants by their number, you can select specific variants on the right. Select a variant to select/remove it from the list. To make the selection of variants easier, you can use the selection buttons to select all variants, to cancel the selection of all variants, and to invert the selected variants.
-
+To select a discontinuous group of variants or to select variants by their number, you can select specific variants on the right. Select a variant to select/remove it from the list. To make the selection of variants easier, use the selection buttons to select all variants, and to cancel the selection of all variants.
 

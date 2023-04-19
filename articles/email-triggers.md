@@ -1,23 +1,24 @@
 ---
 title: Trigger a cloud flow based on email properties in Power Automate | Microsoft Docs
-description: Start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email
+description: Learn how to start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
+ms.author: napienko
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/13/2023
-ms.author: deonhe
-ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -44,7 +45,10 @@ In the following tutorials, we check all properties in the **when a new email ar
 ## Prerequisites
 
 - An account with access to [Power Automate](https://make.powerautomate.com).
+
 - An email account with Outlook for Microsoft 365 or Outlook.com.
+
+
 - The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 - Connections to Office, Outlook, and the push notification service.
 
@@ -76,9 +80,6 @@ OK, let's get started.
 [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 4. Select **Save** at the top of the page.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that displays the save flow option.](./media/email-triggers/email-triggers-subject-notification.png "Save flow option")
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 

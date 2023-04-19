@@ -18,8 +18,6 @@ ms.workload: na
 ms.date: 02/02/2023
 ms.author: cgarty
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

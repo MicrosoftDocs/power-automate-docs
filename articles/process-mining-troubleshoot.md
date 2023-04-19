@@ -4,15 +4,12 @@ description: Learn how to troubleshoot issues in the process advisor feature in 
 author: donums
 contributors:
   - donums
-  - neerajalavalamsft
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 01/05/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -55,6 +52,10 @@ To troubleshoot:
 9.	Open the report to see details of the issue.
 
 ## Issues with analyze
+
+### Failure when analyzing
+
+If you encounter an error message while attempting to create and analyze a process, it may be due to a missing security role. To resolve this, please contact the administrator of your environment and request that they assign you the **Environment Maker** security role.
 
 ### Analyze a process
 
@@ -114,19 +115,13 @@ This issue should occur only if there's no data. Either the data source that you
 
 ### "The number of rows in your data exceeds the limit. [x] rows have been ignored."
 
-For preview, we support only up to 150,000 rows of data. To learn how to fix this issue using Power Query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
-
-### "There are too many columns in your data. Please select no more than 5 columns."
-
-For preview, we support only up to five (5) columns in addition to your mapped columns. To learn how to fix this issue using Power Query, go to [Select additional columns](process-mining-transform.md#select-additional-columns).
+We support only up to 150,000 rows of data. To learn how to fix this issue using Power Query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
 
 ### "Analysis failed, please try again."
 
 You might have run into other analyze issues. For more ways that we can support you, go to [Support](https://make.powerautomate.com/support/), or post your issue in the [Community Forums](https://community.dynamics.com/f).
 
-## Issues with your own Power BI workspace (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+## Issues with your own Power BI workspace
 
 ### "You must be an admin of the Power BI workspace to use it with this report."
 
@@ -138,7 +133,7 @@ This is the same as the previous issue, but the error occurred during process an
 
 ### "The process advisor service principal must be an admin of the Power BI workspace to refresh this report."
 
-Enable admin access for the process advisor prod service principal. To learn how to give the service principal admin access, go to [Create your own custom Power BI workspace (preview)](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace).
+Enable admin access for the process advisor prod service principal. To learn how to give the service principal admin access, go to [Create your own custom Power BI workspace](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace).
 
 ### "The process advisor service principal must be an admin of the Power BI workspace to refresh this report. After the problem is fixed, try to reanalyze the report."
 
@@ -146,7 +141,7 @@ This is the same as the previous issue, but the error occurred during process an
 
 ### "The process advisor service principal cannot access the Power BI workspace."  
 
-Set up the process advisor service principal for your Power BI workspace. To learn how to set up, go to [Set up your workspace (preview)](process-mining-pbi-workspace.md#set-up-your-workspace).
+Set up the process advisor service principal for your Power BI workspace. To learn how to set up, go to [Set up your workspace](process-mining-pbi-workspace.md#set-up-your-workspace).
 
 ### "The process advisor service principal cannot access the Power BI workspace. After the problem is fixed, try to reanalyze the report."
 
