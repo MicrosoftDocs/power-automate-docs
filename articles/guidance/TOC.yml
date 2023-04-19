@@ -140,7 +140,7 @@
               href: ./automation-kit/dlp-impact-analysis.md
         - name: Use the automation kit
           href: ./automation-kit/use-automation-kit.md
-        - name: Testing an end-to-end scenario
+        - name: Test an end-to-end scenario
           href: ./automation-kit/test-end-to-end.md
         - name: Limitations
           href: ./automation-kit/limitations.md
