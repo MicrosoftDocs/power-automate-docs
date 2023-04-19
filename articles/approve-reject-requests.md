@@ -33,13 +33,12 @@ Power Automate makes it easy to automate [approval workflow processes](modern-ap
 ## Reject a request
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
+### See also
 
-
-## Learn more
-* Create [approval flows.](modern-approvals.md)
-* Create [sequential approval flows.](sequential-modern-approvals.md)
-* Create [parallel approval flows.](parallel-modern-approvals.md)
-* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+* [Create approval flows](modern-approvals.md)
+* [Create sequential approval flows](sequential-modern-approvals.md)
+* [Create parallel approval flows](parallel-modern-approvals.md)
+* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) or [Windows Phone](https://aka.ms/flowmobilewindows)
 
 
 
