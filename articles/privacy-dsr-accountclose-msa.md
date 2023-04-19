@@ -1,6 +1,6 @@
 ---
-title: Power Automate GDPR Data Subject Account Close Requests for Microsoft Accounts (MSA) | Microsoft Docs
-description: Learn to use Power Automate to respond to GPDR Data Subject Account Close Requests for Microsoft Accounts.
+title: Respond to requests to close a Microsoft account
+description: Learn about the resources available in Power Automate to help you meet your obligations under various privacy laws and regulations to close a customer's Microsoft account on request.
 services: ''
 suite: flow
 documentationcenter: na
@@ -9,57 +9,54 @@ ms.author: Deonhe
 ms.reviewer: gtrantzas
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/25/2018
+ms.date: 04/19/2023
 search.audienceType: 
   - admin
 ---
-# Responding to GDPR Data Subject Account Close Requests for Power Automate
 
+# Respond to requests to close a Microsoft account
 
-The **right to erasure** of personal data is a key protection in the GDPR. This right includes removing all personal data except audit log information. When users decide to close their Microsoft Account (MSA), the user's underlying data is also deleted.
+[!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
 
-These resources contain personal data that are automatically deleted when a user closes an MSA:
+[!INCLUDE [gdpr-dsr-delete-note](~/../msft-shared-content/privacy-includes/gdpr-dsr-delete-note.md)]
 
-|Resources containing personal data|
-|------|
-|Product and service activity|
-|Run history|
-|Flows|
-|Activity Feed|
-|User details|
-|Connections|
+The right to erasure allows data subjects to request the removal of their personal data, including system-generated logs but not audit logs, from an organization's customer data. When a user decides to close their Microsoft account, their underlying data is also deleted.
 
-## Account Close requests
+The following personal data is automatically deleted when a user closes their Microsoft account:
 
-These steps describe how to self-serve Account Close requests for GDPR.
+- Product and service activity
+- Run history
+- Flows
+- Activity Feed
+- User details
+- Connections
 
-1. Sign into the [Microsoft Account Close Portal](https://go.microsoft.com/fwlink/?LinkId=523898) using your Microsoft Account, and then select **Next**.
+## Close a Microsoft account
 
-    > [!NOTE]
-    > You're reminded to cancel existing subscriptions or to export data from existing services to which you may have subscribed.
-    >
-    >
+The following steps describe how to self-serve account close requests.
 
-    ![Cancel subscriptions.](./media/gdpr-dsr-delete-msa/accountclose.png)
+1. Sign in to the [Microsoft Account Close Portal](https://go.microsoft.com/fwlink/?LinkId=523898) with your Microsoft account.
 
-1. Acknowledge that you understand the impact of closing your MSA, and then select **Mark account for closure**.
+1. Read the list of actions you should take before you close your Microsoft account, and perform all that apply to you.
 
-    A notification appears, indicating that your account will be closed in 30 days. You may reopen this account at any time during this 30-day period.
+1. When you've completed all the preclose actions that apply to you, select **Next**.
 
-    ![Account Closed.](./media/gdpr-dsr-delete-msa/accountclosed.png)
+    :::image type="content" source="media/privacy-dsr-delete-msa/accountclose.png" alt-text="Screenshot of the Microsoft Account Close Portal page.":::
 
-    At the end of this 30-day window, the process to delete all Power Automate resources for this MSA begins.
+1. Acknowledge that you understand the consequences of closing your Microsoft account, and then select **Mark account for closure**.
+
+    :::image type="content" source="media/privacy-dsr-delete-msa/accountclosed.png" alt-text="Screenshot of the Microsoft account close notification page.":::
+
+Your account will be closed in 30 days. You may reopen it at any time during this 30-day period.
 
 ## Learn more
 
-* Get started with [Power Automate](getting-started.md)
-* Learn [what's new](release-notes.md) with Power Automate
+- Get started with [Power Automate](getting-started.md)
+- Learn [what's new](release-notes.md) with Power Automate
 
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

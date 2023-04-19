@@ -15,7 +15,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/18/2023
+ms.date: 04/19/2023
 search.app: 
   - Flow
   - Powerplatform
@@ -38,8 +38,6 @@ The following table shows which personal data is automatically deleted, and whic
 | Product and service activity | Run history |
 | Flows | Activity Feed |
 | Connections | |
-
-Power Automate offers the following experiences to help users find, review, or change personal data and resources that aren't automatically deleted:
 
 ## Delete personal data
 
