@@ -1,6 +1,6 @@
 ---
 title: GDPR Data Subject Requests Summary | Microsoft Docs
-description: Learn how to respond to GPDR Data Subject Requests for Power Automate.
+description: Discover how you can respond to GPDR Data Subject Requests for Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
@@ -38,7 +38,7 @@ You can perform the operations that require admin privileges, outlined in this a
 
 - A paid or trial license for Power Apps Plan 2.
 
-    [A trial license](http://make.powerapps.com/trial) expires in 30 days.
+    [A trial license](https://make.powerapps.com/trial) expires in 30 days.
 
 - [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 
