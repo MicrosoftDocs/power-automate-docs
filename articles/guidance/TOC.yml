@@ -114,7 +114,7 @@
               href: ./automation-kit/setup/prerequisites.md
             - name: Setup checklist
               href: ./automation-kit/setup/setup-checklist.md
-            - name: Install the automation kit using the command line
+            - name: Install using the command line
               href: ./automation-kit/setup/command-line-install.md
             - name: Set up the scheduler
               href: ./automation-kit/setup/scheduler.md
