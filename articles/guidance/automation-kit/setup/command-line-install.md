@@ -34,7 +34,9 @@ To install the latest version of the automation kit using the command line, foll
 
 1. Select **Unblock**.
 
-1. Select **AutomationKitInstall.zip** and use context menu to **Extract All**.
+1. Select **AutomationKitInstall.zip** > **Extract All**.
+
+    A folder named **AutomationKitInstall** will be automatically created. You'll use this folder in step 11.
 
 1. Ensure that you have the [Power Platform CLI](/power-platform/developer/cli/introduction) installed.
 
@@ -54,8 +56,8 @@ Unblock-File Install_AutomationKit.ps1
 ```
 
 10. The PowerShell script will prompt you to create an installation configuration file using the [Automation Kit for Power Platform&mdash;Setup](https://microsoft.github.io/powercat-automation-kit/get-started/setup) pages (English version).
- 
-    If you'd like to view the automation kit for Power Platform pages in a language other than English, choose from the following languages:
+
+    If you'd like to view the automation kit for Power Platform pages in a language other than English, choose from the following AI generated versions:
 
     [Danish](https://microsoft.github.io/powercat-automation-kit/da/get-started/setup/), [Dutch (Netherlands)](https://microsoft.github.io/powercat-automation-kit/nl/get-started/setup/), [French](https://microsoft.github.io/powercat-automation-kit/es/get-started/setup/), [German](https://microsoft.github.io/powercat-automation-kit/da/get-started/setup/), [Italian](https://microsoft.github.io/powercat-automation-kit/it/get-started/setup/), [Japanese](https://microsoft.github.io/powercat-automation-kit/ja/get-started/setup/), [Korean](https://microsoft.github.io/powercat-automation-kit/ko/get-started/setup/), [Norwegian](https://microsoft.github.io/powercat-automation-kit/nb/get-started/setup/), [Polish](https://microsoft.github.io/powercat-automation-kit/pl/get-started/setup/), [Simplified Chinese](https://microsoft.github.io/powercat-automation-kit/th/get-started/setup/) [Spanish](https://microsoft.github.io/powercat-automation-kit/es/get-started/setup/), [Swedish](https://microsoft.github.io/powercat-automation-kit/sv/get-started/setup/), [Thai](https://microsoft.github.io/powercat-automation-kit/th/get-started/setup/).
 
@@ -73,7 +75,9 @@ Unblock-File Install_AutomationKit.ps1
 
     - (Optional) Enable Power Automate flows contained in the solutions to be enabled.
 
-1. After you complete the website setup steps, copy downloaded **automation-kit-main-install.json** or **automation-kit-satellite-install.json** file to the **AutomationKitInstall** folder in step 9.
+1. After you complete the website setup steps, copy downloaded **automation-kit-main-install.json** or **automation-kit-satellite-install.json** file to the **AutomationKitInstall** folder.
+
+    The **AutomationKitInstall** folder was automatically created when you extracted files in step 7.
 
 1. Once the file is downloaded, the script will prompt for **y** to install the main solution and **n** to install satellite solution.
 
