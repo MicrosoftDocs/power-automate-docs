@@ -1,98 +1,93 @@
 ---
-title: Power Automate sign-up Q&A in your organization | Microsoft Docs
-description: Common questions and answers about licenses, administration, and users signing up for Power Automate in your Office 365 tenant.
+title: Power Automate sign-up Q&A in your organization
+description: Learn common questions and their answers about licenses, administration, and users signing up for Power Automate in your Office 365 tenant.
 services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
-ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 01/16/2023
-ms.author: deonhe
-ms.reviewer: gtrantzas
-search.audienceType: 
-  - admin
+author: PriyaKodukula
+contributors:
+  - PriyaKodukula
+  - v-aangie
+ms.author: prkoduku
+ms.reviewer: angieandrews
+ms.topic: faq
+ms.date: 04/20/2023
 ---
+
 # Power Automate sign-up Q&A in your organization
 
-This topic describes how users in your organization can use Power Automate, and how you can control the Power Automate service.
+This article describes how users in your organization can use Power Automate. It also describes how you can control the Power Automate service.
 
-## Signing up for Power Automate
+## Sign up for Power Automate
 
 ### What is Power Automate?
 
-Power Automate is a public cloud service to help individuals and teams to set up automated workflows between their favorite apps and services to synchronize, get notifications, collect data, and more. 
+Power Automate is a public cloud service that helps you and your teams to set up automated workflows between your favorite apps and services. Power Automate allows you to synchronize, get notifications, collect data, and more.
 
 ### How can I sign up for Power Automate?
 
-Just go to [make.powerautomate.com](https://make.powerautomate.com), select **Try free** on the top right-side of the screen, and then provide your information to complete the sign-up process.
+To complete the sign in process:
 
-[Sign up for Power Automate](sign-up-sign-in.md) includes more details.
+1. Open [Power Automate](https://make.powerautomate.com).
+1. On the top right of the screen, select **Try free**.
+1. Enter your information.
+
+To learn more, go to [Sign up for Power Automate](sign-up-sign-in.md).
 
 ### What is the Power Automate free license?
 
-The Power Automate Free license is used only for tracking purposes. Enabling or disabling it has no effect on a user's ability to create flows. If you disable the Power Automate Free license, it becomes enabled again when a user logs in. This is the expected behavior.
+The Power Automate free license is used only for tracking purposes. Enabling or disabling it has no effect on your ability to create flows. If you disable the Power Automate free license, it becomes enabled again when you log in. This is the expected behavior.
 
 ### Can I block another person from signing up for Power Automate?
 
-Power Automate is a fully public cloud service, and everyone in the world can sign up and use it to automate their day-to-day tasks. To use Power Automate there is no requirements that users have or use an Office 365 account. Because of this, there’s no mechanism at this time for you to block another person from using Power Automate (as everyone in the world can, irrespective of their email address).
+Power Automate is a fully public cloud service. Everyone in the world can sign up and use it to automate their day-to-day tasks. To use Power Automate, there's no requirement that you have or use an Office 365 account. Because of this, there’s no mechanism at this time for you to block another person from using Power Automate.
 
-However, if a person signs up for Power Automate, and you choose to not support them inside of your organization, they can in no way incur costs to your company. When an individual signs up for Power Automate, the relationship is between that individual and Microsoft, which is like many other cloud services from Microsoft such as Bing, OneDrive, or Outlook.com. An individual's use of Power Automate does not in any way imply that the service is provided by your organization.
+If a person signs up for Power Automate, and you don't support them inside of your organization, they can't incur costs to your company. When an individual signs up for Power Automate, the relationship is between that individual and Microsoft. This is like many other cloud services from Microsoft, such as Bing, OneDrive, or Outlook.com. Your use of Power Automate doesn't imply that the service is provided by your organization.
 
-Finally, if your company wishes to restrict the use of organization-only data inside of Power Automate, that is possible through [Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention).
+A company can restrict the use of organization-only data inside of Power Automate through [Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention).
 
 ### How can people gain access to the paid features of Power Automate?
 
 Individuals can gain access to the paid features of Power Automate in three different ways:
 
-1. They can individually sign up for a Power Automate Trial license for 90 days at no cost.
+1. They can individually sign up for a Power Automate trial license for 90 days at no cost.
 2. You can assign a Power Automate license to them within the [Microsoft 365 admin center](https://admin.microsoft.com/).
-3. The user has been assigned a Microsoft 365 and Dynamics 365 plans that includes access to Power Automate. See the [Power Automate pricing page](https://make.powerautomate.com/pricing/) for the list of Office 365 and Dynamics 365 plans that include Power Automate capabilities.
+3. The user has been assigned a Microsoft 365 and Dynamics 365 plans that includes access to Power Automate. For the list of Office 365 and Dynamics 365 plans that include Power Automate capabilities, go to [Power Automate pricing page](https://make.powerautomate.com/pricing/).
 
 ### Can I block another person from using the paid features of Power Automate?
 
 Any individual can try out the paid features of Power Automate for 90 days, and incur no costs. However, you can fully manage the assignment of the perpetual paid licenses inside of your organization through the Office 365 admin portal.
 
-As with the free offerings, if an individual chooses to sign up for the trial that is a direct relationship between the individual and Microsoft, not necessarily endorsed by your company.
+As with the free offerings, if an individual signs up for the trial, that's a direct relationship between the individual and Microsoft. It isn't necessarily endorsed by your company.
 
 ## Administration of Power Automate
 
 ### Why has the Power Automate icon appeared in the Office 365 app launcher?
 
-As announced in August, Power Automate is now a fundamental part of the Office 365 suite. Three months after this announcement Power Automate was enabled as a service as a part of all existing Office 365 SKU's. As users everywhere in the world can now use Power Automate, it has appeared in the app launcher for them.
-
-See the following section if you'd like to remove the Power Automate tile from the app launcher by default.
+Power Automate is a fundamental part of the Office 365 suite. It's  enabled as a service as a part of all existing Office 365 SKU's. As users everywhere in the world can use Power Automate, it appears in the app launcher for them.
 
 ### How do I remove Power Automate from the app launcher for my organization?
 
-If a user was assigned a Power Automate license,  you can take the following steps to remove the license for that user, which will remove the Power Automate icon from the app launcher:
+If a user was assigned a Power Automate license, you can remove the license for that user with these steps. This will remove the Power Automate icon from the app launcher:
 
-1. Go to the [Office 365 Admin Portal](https://admin.microsoft.com/).
-1. In the left navigation bar, select **Users** > **Active Users**.
-1. Find the user for whom you want to remove the license, and then select their name.
-1. On the user details pane, select the **Licenses and Apps** tab, and then uncheck the license for Power Automate. 
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
+1. On the left navigation bar, select **Users** > **Active Users**.
+1. Find and select the name of the user for whom you want to remove the license.
+1. On the user details pane, select the **Licenses and Apps** tab.
+1. Uncheck the license for Power Automate.
 1. At the bottom of the pane, select **Save changes**.
 
-Bulk removal of licenses is also possible through PowerShell. See [Remove licenses from user accounts with Office 365 PowerShell](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to services with Office 365 PowerShell](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell).
-
-Removing of the Power Automate license or service for a user in your organization will result in the removal of the Power Automate icon from the following locations for that user:
+Bulk removal of licenses is also possible through PowerShell. To learn more, go to [Remove licenses from user accounts with Office 365 PowerShell](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) and [Disable access to services with Office 365 PowerShell](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell).
 
 >[!NOTE]
 >This action removes the Power Automate tile by default. A user may still choose to use Power Automate as an individual.
 
 ### Why did 10,000 licenses for Power Automate show up in my Office 365 tenant?
 
-Any person can try out Power Automate for Free and these licenses represent the available capacity for new Power Automate users in your tenant. There is no charge for these licenses.
+Any person can try out Power Automate for free. These licenses represent the available capacity for new Power Automate users in your tenant. There's no charge for these licenses.
 
-If at least one user in your tenant has signed-up for a **Microsoft Power Automate Free** license, you will see 10,000 licenses (minus any assigned) under **Billing** > **Licenses** for your organization.
+If at least one user in your tenant has signed up for a **Microsoft Power Automate Free** license, you'll see 10,000 licenses (minus any assigned) under **Billing** > **Licenses** for your organization.
 
-You can choose to assign additional licenses to users yourself through the Office 365 admin portal. 
+You can assign additional licenses to users through the Office 365 admin portal.
+
 ### Is this free? Will I be charged for these licenses?
 
 No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. 
