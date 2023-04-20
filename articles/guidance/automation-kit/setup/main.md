@@ -29,13 +29,13 @@ Once you've completed the main solution setup, you can setup the following optio
 - [Scheduler](./scheduler.md) - Provides a calendar view of recurring cloud flows that include Power Automate Desktop flows.
 
 >[!IMPORTANT]
->Perform all steps using the **Automation CoE Admin** account mentioned in the [prerequisites](prerequisites.md).
+>Perform all steps using the **Automation CoE Admin** account mentioned in the [Prerequisites](prerequisites.md) article.
 
 ## Import the main solution into the main environment
 
 Create an environment in which to set up the automation kit.
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 1. Select **Environments > + New**, and then enter a name, type, and purpose.
 
@@ -45,16 +45,17 @@ Create an environment in which to set up the automation kit.
 
 1. Select **Save**.
 
+## Enable the Power Apps component framework
+
 Once the environment is created, enable the Power Apps component framework.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 1. Select an environment where you want to enable this feature.
 
-    You need to do this for **Main** and all **Satellite** environments.
-1
+    You need to do this for **main** and all **satellite** environments.
 
-1. Select **Settings** in the top pane.
+1. On the top pane, select **Settings**.
 
 1. Select **Product** > **Features**.
 
@@ -68,19 +69,19 @@ Next, import the [Power Platform Creator Kit](/power-platform/guidance/creator-k
 
 1. Download the [Power Platform Creator Kit](https://aka.ms/creatorkitdownload).
 
-1. Go to [Power Automate](https://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to the environment you just created in which the main solution will be imported. For this example, we're importing to the environment named **Contoso_Main**.
 
 1. On the left pane, select **Solutions**.
 
-1. Select **Import** **Browse**.
+1. Select **Import** > **Browse**.
 
 1. Select the Creator Kit solution named **CreatorKitCore_x_x_x_x_managed.zip**.
 
 1. Select **Import**.
 
-Wait for the Creator Kit to finish importing before continuing to next step.
+    Wait for the Creator Kit to finish importing before continuing to the next step.
 
 ### Import the automation kit main solution
 
@@ -88,7 +89,7 @@ Wait for the Creator Kit to finish importing before continuing to next step.
 
 1. On the left pane, select **Solutions**.
 
-1. Select **Import**, and then **Browse**.
+1. Select **Import** > **Browse**.
 
 1. Select the Automation CoE main solution (**AutomationCoEMain_x_x_x_x_managed.zip**).
 
@@ -102,7 +103,7 @@ Wait for the Creator Kit to finish importing before continuing to next step.
 
 1. Select **Import**. The import process can take 10 to 20 minutes to complete.
 
-1. After importation completes, verify that all the flows are **turned on** and share the apps with the appropriate users.
+1. After importation completes, verify that all the flows are turned on, and share the apps with the appropriate users.
 
 ## (Optional) Provision the approvals solution
 
@@ -144,7 +145,7 @@ To assign roles:
 
 1. Select your main environment.
 
-1. Select **See all** under **Security roles** on the **Access** card.
+1.  Under **Security roles** on the **Access** card, select **See all**.
 
 1. Select the security role, and then add members to the security role.
 

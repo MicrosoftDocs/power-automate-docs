@@ -24,7 +24,7 @@ In this article, you'll learn how to configure the automation kit environment va
 
 1. Sign in to [Power Apps](https://make.powerapps.com).
 
-1. In the **Environments** dropdown menu in the title bar, select **Satellite**.
+1. In the **Environments** dropdown menu in the title bar, select **satellite**.
 
    > [!IMPORTANT]
    > Azure Key Vault is required only for automation kit satellite release March 2023 or earlier. Starting with the April 2023 release, Azure Key Vault is no longer required as a prerequisite. Environment variables for this are no longer required.
