@@ -4,7 +4,6 @@ description: Setup the Automation Kit main components.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 

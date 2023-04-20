@@ -10,8 +10,6 @@ ms.topic: overview
 ms.date: 01/31/2023
 ms.author: cgarty
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

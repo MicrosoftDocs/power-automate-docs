@@ -13,19 +13,17 @@ ms.author: jongilman
 ms.reviewer: ellenwehrle
 ms.subservice: power-automate-connections
 ms.topic: conceptual
-ms.date: 02/17/2023
+ms.date: 04/12/2023
 
 ---
 
-# Understand prebuilt solution available for integrating SAP with Power Platform (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Understand prebuilt solution available for integrating SAP with Power Platform
 
 Connecting your SAP system to Microsoft Power Platform extends its functionality and allows you to get more value out of your investment.
 
-The preview version of the prebuilt SAP integration solution is [available for download](https://github.com/jongilman88/PowerPlatformSAPIntegration). It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with Power Platform.
+A prebuilt SAP integration solution is [available for download](https://github.com/jongilman88/PowerPlatformSAPIntegration). It incorporates Power Apps, Power Automate flows, and additional new functionalities that facilitate communication between your organization's SAP system with Power Platform.
 
-The canvas app runs in your browser and streamlines SAP screens and data attributes onto one simple screen that helps users complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
+The canvas app runs in your browser and streamlines SAP screens and data attributes onto one simple screen so users can easily view the data and complete tasks faster. Behind the scenes, Power Automate flows automate the business rules ensuring better data accuracy.
 
 ## What does the user interface look like?
 
@@ -40,9 +38,6 @@ Here's the Purchase Orders template in the Purchasing module:
 All of the screens and data attributes from SAP are streamlined onto one screen in the app.
 
 Four key business processes in SAP ERP are organized into modules that contain accessible Power Apps templates. The templates enable users to perform standard workflow functions such as Search, Create, Change, or Display.
-
-> [!IMPORTANT]
-> In preview, the focus is on testing the Order to Cash and Procure to Pay business processes.
 
 ### Order to Cash
 

@@ -1,29 +1,29 @@
 ---
-title: Start flows with bttns | Microsoft Docs
+title: Start flows with bttns
 description: Learn how to start your flows with a bttn
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/30/2017
-ms.author: deonhe
+ms.author: napienko
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-# Run your flows with bttns from The Button Corporation (Preview)
+# Run your flows with bttns from The Button Corporation (preview)
 
 Trigger your flows by pressing a bttn (a physical button made by [The Button Corporation](https://my.bt.tn/)). For example, you can press a bttn that triggers a cloud flow to perform these tasks:
 
@@ -37,14 +37,12 @@ Trigger your flows by pressing a bttn (a physical button made by [The Button Cor
 > 
 > [!TIP]
 > Configure all bttn properties such as name, location, and email address on the [bttn website](https://my.bt.tn/) before you create your flow.
-> 
-> 
-
-You can also trigger a cloud flow by using a [Flic physical button](flic-button-flows.md).
 
 ## Prerequisites
-* Access to [Power Automate](https://make.powerautomate.com).
-* At least one [registered bttn](https://my.bt.tn/).
+
+* Access to [Power Automate](https://make.powerautomate.com)
+
+* At least one [registered bttn](https://my.bt.tn/)
 
 ## Create a cloud flow that's triggered from a bttn
 In this walkthrough, we use a helpdesk template to create a cloud flow that you can trigger with a single press of a [bttn](https://my.bt.tn/). When the flow runs, it generates a support request and then sends it to the helpdesk. The support request provides the helpdesk with the location of the room where help is needed. This walkthrough demonstrates how to create this flow from a template, but you can use the blank template, which gives you full control over all aspects of your flow.
@@ -115,14 +113,17 @@ Now that you've registered and configured your bttn, let's get started creating 
     ![The support email.](./media/bttn-button-flows/support-request-email.png)
 
 ## Troubleshooting
+
 * If your flow wasn't triggered, sign into The Button Corporation's site and confirm whether the button activity (presses) are being recorded.
+
 * You can also drill into the run activity on the Power Automate site and check for error messages.
 
-## More information
-* [Share button flows](share-buttons.md).
-* Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send current data when your button flows run.
-* [Install the Power Automate app for Android](https://aka.ms/flowmobiledocsandroid).
-* [Install the Power Automate app for iOS](https://aka.ms/flowmobiledocsios).
+### See also
+
+* [Share button flows](share-buttons.md)
+* [Button trigger tokens](introduction-to-button-trigger-tokens.md)
+* [Install the Power Automate app for Android](https://aka.ms/flowmobiledocsandroid)
+* [Install the Power Automate app for iOS](https://aka.ms/flowmobiledocsios)
 
 
 

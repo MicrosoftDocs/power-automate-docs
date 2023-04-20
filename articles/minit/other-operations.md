@@ -1,29 +1,25 @@
 ---
-title: List of other operations (preview)
-description: Get a list of operations and what they return in the minit desktop application in process advisor.
-author: maslejka
+title: List of other operations
+description: Learn about operations and what they return in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# List of other operations (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# List of other operations
 
 ## attributeName
 
-returns the event/case attribute value
+Returns the event/case attribute value.
 
 **Output Data Type**: BOOL, INT, STRING, FLOAT, TIME, DATE
 
@@ -33,7 +29,7 @@ Metric applicable on process map calculates the maximum cost of the event per ac
 
 ## GETVALUE([attributeName])
 
-returns the event/case attribute value
+Returns the event/case attribute value.
 
 **Parameters:**
 
@@ -43,13 +39,13 @@ returns the event/case attribute value
 
 **Output Data Type**: BOOL, INT, FLOAT, TIME, DATE
 
-**Example**: `GetValue("ivoice total")`
+**Example**: `GetValue("invoice total")`
 
-If the attribute contains space in the name, it is not possible to write it directly as part of the custom metric expression. In such cases use the operator GetValue to access the value of a given attribute.
+If the attribute contains space in the name, it isn't possible to write it directly as part of the custom metric expression. In such cases, use the operator GetValue to access the value of a given attribute.
 
 ## IF([condition],[valueIfTrue],[valueIfFalse])
 
-returns the first or second value based on the condition
+Returns the first or second value based on the condition.
 
 **Parameters:**
 
@@ -73,7 +69,7 @@ Metric applicable on case overview statistics screen. If the case contains more 
 
 ## SOURCE([operation])
 
-changes the context of the operation to initial event path (only allowed for paths)
+Changes the context of the operation to initial event path (only allowed for paths).
 
 **Supported context:** edge
 
@@ -91,7 +87,7 @@ Metric applicable on process map calculates the sum of the initial event duratio
 
 ## TARGET([operation])
 
-changes the context of the value to ending event path (only allowed for paths)
+Changes the context of the value to ending event path (only allowed for paths).
 
 **Supported context:** edge
 
@@ -109,7 +105,7 @@ Metric applicable on process map calculates total duration of path's starting an
 
 ## CASE([operation])
 
-changes the context of the operation to case event/path (only allowed for events and paths)
+Changes the context of the operation to case event/path (only allowed for events and paths).
 
 **Supported context:** event, edge
 
@@ -127,7 +123,7 @@ Metric applicable on event-level filter calculates the ratio of event duration t
 
 ## FIRSTEVENT([operation])
 
-changes the context of the operation to the first event case (only allowed for cases)
+Changes the context of the operation to the first event case (only allowed for cases).
 
 **Supported context:** case
 
@@ -145,7 +141,7 @@ Metric applicable on case overview statistic calculates the duration of the firs
 
 ## LASTEVENT([operation])
 
-changes the context of the operation to the end event case (only allowed for cases)
+Changes the context of the operation to the end event case (only allowed for cases).
 
 **Supported context:** case
 
@@ -163,7 +159,7 @@ Metric applicable on case overview statistic calculates the duration of the last
 
 ## PROCESS([operation])
 
-changes the context of the operation to a process.
+Changes the context of the operation to a process.
 
 **Supported context:** process, case, event, edge
 
@@ -201,7 +197,7 @@ Metric applicable on process map for activities. Returns the total count of even
 
 ## NEXT([value],[default])
 
-returns value of the next event in the case. If next event does not exist, returns default value.
+Returns the value of the next event in the case. If the next event doesn't exist, returns the default value.
 
 **Supported context:** case (implicit)
 
@@ -223,7 +219,7 @@ Metric applicable on filter metrics. Returns event cost of the next event in the
 
 ## NEXTIF([condition], [value], [default])
 
-returns value of the first next event in the case which met the condition. If no such next event exists, returns default value.
+Returns the value of the first next event in the case which met the condition. If no such next event exists, returns default value.
 
 **Supported context:** case (implicit)
 
@@ -249,7 +245,7 @@ Metric applicable on any custom metric usage within the application. Returns tot
 
 ## PREVIOUS([value], [default])
 
-returns value of the previous event in the case. If previous event does not exist, returns default value.
+Returns value of the previous event in the case. If previous event doesn't exist, returns default value.
 
 **Supported context:** case (implicit)
 
@@ -271,7 +267,7 @@ Metric applicable on metrics filter. Returns value of userName attribute for the
 
 ## PREVIOUSIF([condition], [value], [default])
 
-returns value of the first previous event in the case which met the condition. If no such previous event exists, returns the default value.
+Returns value of the first previous event in the case which met the condition. If no such previous event exists, returns the default value.
 
 **Supported context:** case (implicit)
 
@@ -297,7 +293,7 @@ Metric applicable on metrics filter. Returns value of userName attribute for the
 
 ## MOVE([offset], [value], [default])
 
-returns value of the event in the case retrieved by the offset. Offset 1 means next event, offset -1 previous, offset 0 current. If the event does not exist on the given offset, it returns the default value.
+Returns the value of the event in the case retrieved by the offset. Offset 1 means next event, offset -1 previous, offset 0 current. If the event does not exist on the given offset, it returns the default value.
 
 **Supported context:** case (implicit)
 
@@ -323,7 +319,7 @@ Metric applicable on the process map. Returns the sum of event cost for the next
 
 ## MOVEIF([offset], [condition], [value], [default])
 
-returns value of the event satisfying the condition retrieved by the offset. Offset 1 means the next following fulfilling event, offset -1 the nearest previous fulfilling event, offset 0 the current fulfilling event. If such an event does not exist, it returns the default value.
+Returns the value of the event satisfying the condition retrieved by the offset. Offset 1 means the next following fulfilling event, offset -1 the nearest previous fulfilling event, offset 0 the current fulfilling event. If such an event doesn't exist, it returns the default value.
 
 **Supported context:** case (implicit)
 
@@ -349,4 +345,4 @@ returns value of the event satisfying the condition retrieved by the offset. Off
 
 **Example**: `MOVEIF(3, userName == "Laura", eventCost, 0)`
 
-Metric applicable on metrics filter. Returns event cost for the 3rd next event which was done by the user "Laura" in the current case.
+Metric applicable on metrics filter. Returns event cost for the third next event which was done by the user "Laura" in the current case.

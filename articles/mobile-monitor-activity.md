@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
-manager: erikre
 editor: ''
 tags: ''
 
@@ -17,8 +16,6 @@ ms.workload: na
 ms.date: 06/11/2016
 ms.author: adiregev
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

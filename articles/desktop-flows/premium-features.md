@@ -11,8 +11,6 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskourass
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
