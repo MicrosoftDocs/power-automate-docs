@@ -934,7 +934,7 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
-  - name: Flows in your organization Q&A
+  - name: Power Automate sign-up FAQ
     href: organization-q-and-a.md
   - name: Enable experimental features
     href: experimental-features.md
