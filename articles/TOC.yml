@@ -371,6 +371,8 @@
       items:
       - name: Run desktop flows via URL or desktop shortcuts
         href: ./desktop-flows/run-desktop-flows-url-shortcuts.md
+      - name: Run desktop flows via keyboard shortcuts
+        href: ./desktop-flows/run-desktop-flows-via-keyboard-shortcuts.md       
       - name: Runtime notifications
         href: ./desktop-flows/runtime-notifications.md
   - name: Manage machines and machine groups
@@ -932,7 +934,7 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
-  - name: Flows in your organization Q&A
+  - name: Power Automate sign-up FAQ
     href: organization-q-and-a.md
   - name: Enable experimental features
     href: experimental-features.md
