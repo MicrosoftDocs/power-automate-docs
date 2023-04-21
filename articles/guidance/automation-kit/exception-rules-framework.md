@@ -27,7 +27,7 @@ Desktop flow execution results together with their statuses are automatically st
 
 ### Components
 
-These components are part of the [utomation atellite solution](setup/satellite.md).
+These components are part of the [automation satellite solution](setup/satellite.md).
 
 Type|Name|Description
 ----|----|-----
