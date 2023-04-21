@@ -1,5 +1,5 @@
 ---
-title: Power Automate sign-up Q&A in your organization
+title: Power Automate sign-up FAQ
 description: Learn common questions and their answers about licenses, administration, and users signing up for Power Automate in your Office 365 tenant.
 services: ''
 author: PriyaKodukula
@@ -12,7 +12,7 @@ ms.topic: faq
 ms.date: 04/21/2023
 ---
 
-# Power Automate sign-up Q&A in your organization
+# Power Automate sign-up FAQ
 
 This article describes how users in your organization can use Power Automate. It also describes how you can control the Power Automate service.
 
