@@ -109,7 +109,6 @@ When you create a cloud flow from scratch, you control the entire workflow. Here
 - [Publish a template](publish-a-template.md).
 - [Create flows from a Microsoft Teams template](https://make.powerautomate.com/connectors/shared_teams/microsoft-teams/).
 
-
 ## Peek at the code
 
 You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer:
