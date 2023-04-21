@@ -9,7 +9,7 @@ contributors:
 ms.author: prkoduku
 ms.reviewer: angieandrews
 ms.topic: faq
-ms.date: 04/20/2023
+ms.date: 04/21/2023
 ---
 
 # Power Automate sign-up Q&A in your organization
@@ -24,7 +24,7 @@ Power Automate is a public cloud service that helps you and your teams to set up
 
 ### How can I sign up for Power Automate?
 
-To complete the sign in process:
+To complete the sign in process, do the following steps:
 
 1. Open [Power Automate](https://make.powerautomate.com).
 1. On the top right of the screen, select **Try free**.
@@ -38,7 +38,7 @@ The Power Automate free license is used only for tracking purposes. Enabling or 
 
 ### Can I block another person from signing up for Power Automate?
 
-Power Automate is a fully public cloud service. Everyone in the world can sign up and use it to automate their day-to-day tasks. To use Power Automate, there's no requirement that you have or use an Office 365 account. Because of this, there’s no mechanism at this time for you to block another person from using Power Automate.
+Power Automate is a fully public cloud service. Everyone in the world can sign up and use it to automate their day-to-day tasks. To use Power Automate, there isn't a requirement that you have or use an Office 365 account. Because of this, there’s no mechanism at this time for you to block another person from using Power Automate.
 
 If a person signs up for Power Automate, and you don't support them inside of your organization, they can't incur costs to your company. When an individual signs up for Power Automate, the relationship is between that individual and Microsoft. This is like many other cloud services from Microsoft, such as Bing, OneDrive, or Outlook.com. Your use of Power Automate doesn't imply that the service is provided by your organization.
 
@@ -62,7 +62,7 @@ As with the free offerings, if an individual signs up for the trial, that's a di
 
 ### Why has the Power Automate icon appeared in the Office 365 app launcher?
 
-Power Automate is a fundamental part of the Office 365 suite. It's  enabled as a service as a part of all existing Office 365 SKU's. As users everywhere in the world can use Power Automate, it appears in the app launcher for them.
+Power Automate is a fundamental part of the Office 365 suite. It's  enabled as a service as a part of all existing Office 365 SKUs. As users everywhere in the world can use Power Automate, it appears in the app launcher for them.
 
 ### How do I remove Power Automate from the app launcher for my organization?
 
@@ -82,7 +82,7 @@ Bulk removal of licenses is also possible through PowerShell. To learn more, go 
 
 ### Why did 10,000 licenses for Power Automate show up in my Office 365 tenant?
 
-Any person can try out Power Automate for free. These licenses represent the available capacity for new Power Automate users in your tenant. There's no charge for these licenses.
+Any person can try out Power Automate for free. These licenses represent the available capacity for new Power Automate users in your tenant. There isn't a charge for these licenses.
 
 If at least one user in your tenant has signed up for a **Microsoft Power Automate Free** license, you'll see 10,000 licenses (minus any assigned) under **Billing** > **Licenses** for your organization.
 
@@ -90,40 +90,40 @@ You can assign additional licenses to users through the Office 365 admin portal.
 
 ### Is this free? Will I be charged for these licenses?
 
-No user can incur any cost to your organization without your express consent, so neither free nor trial licenses can cause any charges to your organization. 
+No user can incur any cost to your organization without your express consent. Free and trial licenses can't cause any charges to your organization.
 
-### I removed the Power Automate Free license and users can still access it.
+### I removed the Power Automate free license and users can still access it.
 
-The Power Automate Free license is included only for tracking purposes. As covered in the first section, it is not possible to prevent another person from using Power Automate for individual purposes. 
+The Power Automate free license is included only for tracking purposes. It isn't possible to prevent another person from using Power Automate for individual purposes.
 
 ### Why can't I see all Power Automate licenses in the Office 365 Admin portal?
 
-Users can use Power Automate either as individuals or as a part of their organization. Licenses at the organization level will always be visible in the Office 365 portal. However, if a user signs up for a trial as an individual then that is not managed by their Office 365 admin and will not show up in the portal.
+Users can use Power Automate either as individuals or as a part of their organization. Licenses at the organization level will always be visible in the Office 365 portal. However, if a user signs up for a trial as an individual, then that isn't managed by their Office 365 admin and won't show up in the portal.
 
 ### How does an individual find out what plan they are on?
 
 1. Sign into [Power Automate](https://make.powerautomate.com).
-1. Select your profile picture in the top right corner of the screen.
+1. On the top right corner of the screen, select your profile picture.
 1. Select **View account**.
 1. Select the **Subscriptions** tile.
-1. Search for **Power Automate** under the **Licenses** section.
+1. Under the **Licenses** section, search for **Power Automate**.
 
-   You will see the license that you have for Power Automate.
+   You'll see the license that you have for Power Automate.
 
-### Will Power Automate sign up impact the identities in my organization?
+### Will Power Automate signup impact the identities in my organization?
 
-If your organization already has an existing Office 365 environment and all users in your organization have Office 365 accounts, then identity management is not impacted.
+If your organization already has an existing Office 365 environment and all users in your organization have Office 365 accounts, then identity management isn't impacted.
 
-If your organization already has an existing Office 365 environment but not all users in your organization have Office 365 accounts, then we create a user in the tenant and assign licenses based on the user’s work or school email address. This means that the number of users you are managing at any particular time will grow as users in your organization sign up for the service.
+If your organization already has an existing Office 365 environment, but not all users in your organization have Office 365 accounts, then we create a user in the tenant. We'll also assign licenses based on the user’s work or school email address. This means that the number of users you're managing at any time will grow as users in your organization sign up for the service.
 
-If your organization does not have an Office 365 environment connected to your email domain, there is no change in how you manage identity. Users will be added to a new, cloud-only user directory, and you will have the option to take over as the tenant admin and manage them.
+If your organization doesn't have an Office 365 environment connected to your email domain, there isn't a change in how you manage identity. Users will be added to a new, cloud-only user directory, and you'll have the option to take over as the tenant admin and manage them.
 
 ### A new tenant was created by Power Automate, how do I manage this?
 
 If a new tenant was created by Power Automate, then you can claim and manage that tenant using the following steps:
 
 1. Join the tenant by signing up for Power Automate using an email address domain that matches the tenant domain you want to manage. For example, if Microsoft created the contoso.com tenant, then join the tenant with an email address ending with @contoso.com.
-1. Claim admin control by verifying domain ownership: once you are in the tenant, you can promote yourself to the admin role by verifying domain ownership. To do so, follow these steps:    
+1. Claim admin control by verifying domain ownership: once you're in the tenant, you can promote yourself to the admin role by verifying domain ownership. To do so, follow these steps:
 
    1. Go to [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
    1. Select the app launcher icon in the upper-left and choose Admin.
@@ -139,19 +139,18 @@ If you do nothing, a tenant is created for each user email domain and subdomain.
 If you want all users to be in the same tenant regardless of their email address extensions, you can create a target tenant ahead of time or use an existing tenant. Add all the existing domains and subdomains that you want consolidated within that tenant. Then all the users with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
 
 >[!IMPORTANT]
->There is no supported automated way to move users across tenants. To learn about adding domains to a single Office 365 tenant, see [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+>There isn't a supported automated way to move users across tenants. To learn about adding domains to a single Office 365 tenant, go to [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
 ### How can I restrict my users' ability to access my organization's business data?
 
-Power Automate allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combine business and non-business data. For more details, See [Data loss prevention (DLP) policies](prevent-data-loss.md).
+Power Automate allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combines business and non-business data. To learn more, go to [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
   ![Data loss prevention image.](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
 
-  
-
 ## Power Automate RPA license
 
-### How can I apply unattended RPA licenses to my flow
+### How can I apply unattended RPA licenses to my flow?
+
 Follow these steps to apply unattended RPA licenses to your flows.
 
 1. The tenant admin must purchase or get trial a version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
@@ -165,27 +164,25 @@ Follow these steps to apply unattended RPA licenses to your flows.
 1. Makers can now run unattended desktop flows within the environment that has the unattended capacity. 
 
 > [!NOTE]
-> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them. 
+> The unattended add-on is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign add-on capacity to each of them.
 > Also if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
 
 ### What are the prerequisites for using RPA?
 
 - An environment that has Dataverse enabled.
-- You must have a work or school account. You cannot start a trial with a personal account.
+- You must have a work or school account. You can't start a trial with a personal account.
 - The admin needs a paid or trial attended plan or a per flow plan before they can turn on to start an unattended trial.
 
-   ![Work or school account required.](./media/RPA-license/no-personal-account.png)
-
-
-### How can I check which license I am currently using?
+### How can I check which license I'm currently using?
 
 A user can press CTRL+ALT+A from Power Automate to check their license status.
 
 >[!NOTE]
->There's no user interface available to check license status.
+>There isn't a user interface available to check license status.
 
 
 ### Can trials be disabled for a tenant?
+
 Yes. Tenant admins can use PowerShell to disable all trials activations for a tenant.
 
 ### How to start an unattended trial
@@ -221,14 +218,10 @@ Before you can assign add-ons, such as trial licenses, you must [get the add-ons
 
    ![Assign unattended license to environment.](./media/rpa-license/assign-to-environment.png)
 
->[!TIP]
->You will need to assign add-on capacity to each environment that needs to run RPA unattended.
-
->[!IMPORTANT]
->You will need to ensure you assign enough capacity if you will run desktop flows in parallel.
-
 >[!NOTE]
->Only admins can assign unattended trial capacity.
+>
+>- You'll need to assign add-on capacity to each environment that needs to run RPA unattended.
+>- You'll need to ensure you assign enough capacity if you'll run desktop flows in parallel.
+>- Only admins can assign unattended trial capacity.
 
- 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+
