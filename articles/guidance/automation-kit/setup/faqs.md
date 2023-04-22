@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions about the Automation Kit setup guidance | Microsoft Docs
+title: Frequently asked questions about the automation kit setup guidance | Microsoft Docs
 description: Frequently asked questions about the Automation Kit setup guidance.
 suite: flow
 documentationcenter: na
@@ -16,7 +16,7 @@ ms.author: grarchib
 ms.reviewer: deonhe
 ---
 
-# Frequently asked questions about the Automation Kit setup guidance
+# Frequently asked questions about the automation kit setup guidance
 
 This article provides answers to some of the most common questions about the Automation Kit.
 
@@ -56,7 +56,7 @@ For more information about how to use the RPA CLI, go to [RPA CLI](https://aka.m
 
 The issue might be due to a wrongly entered environment variable value for the **Environment Unique Name** of CoE main. If your environment is provisioned in Australia for instance, you need to enter the Australian region suffix to the crm domain. For example, enter **crm6** instead of **crm**. After you fix this, you can turn on all cloud flows.
 
-You can also review [Environment variables are not editable after you import a solution](../limitations.md#environment-variables-are-not-editable-after-you-import-a-solution) and [Environment variables continue to use the old values after a manual change](../limitations.md#environment-variables-continue-to-use-the-old-values-after-a-manual-change) to learn more.
+You can also review [Environment variables aren't editable after you import a solution](../limitations.md#environment-variables-arent-editable-after-you-import-a-solution) and [Environment variables continue to use the old values after a manual change](../limitations.md#environment-variables-continue-to-use-the-old-values-after-a-manual-change) to learn more.
 
 ## GetDataverseSolutionArtifacts.Run failed
 
@@ -75,6 +75,6 @@ The error in the flow might be like the following screenshot.
 
 There could be two main causes of this error:  
 
-1. The application user isn't created in the satellite environment. [Create application user inside Dataverse (Per satellite Env)](satellite.md#create-application-user-inside-dataverse-per-satellite-env)
+- The application user isn't created in the satellite environment. [Create an application user inside Dataverse (per satellite environment)](satellite.md#create-an-application-user-inside-dataverse).
 
-1. The satellite environment variables aren't configured properly. [Configure environment variables](environment-variables.md#configure-environment-variables)
+- The satellite environment variables aren't configured properly. [Configure automation kit environment variables](environment-variables.md#configure-automation-kit-environment-variables).
