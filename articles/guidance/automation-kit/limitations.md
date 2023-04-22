@@ -25,7 +25,7 @@ This article contains some of the limitations in the Automation Kit.
 ### Environment variables aren't editable after you import a solution
 
 **Issue**
-You cannot update the values for environment variables from within the solution because the solution is **Managed**.
+You can't update the values for environment variables from within the solution because the solution is **Managed**.
 
 **Resolution**  
 Use the following steps to update environment variables.
@@ -98,6 +98,6 @@ Do any of the following tasks:
 >[!NOTE]
 >You can use a solution to extend the Automation Kit to sync all desktop flows in an environment with the [RPA CLI](https://aka.ms/rpacli).
 
-### More information
+### See also
 
-Read more on how to use the [RPA CLI for the Automation Kit](https://aka.ms/rpaclie).
+[RPA CLI for the Automation Kit](https://aka.ms/rpaclie)
