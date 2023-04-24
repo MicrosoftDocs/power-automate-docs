@@ -1,8 +1,7 @@
 ---
-title: Governance in Power Automate
-description: Learn how to configure Power Automate using Windows registry keys.
+title: Governance in Power Automate for dekstop
+description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: georgiostrantzas
-
 ms.topic: conceptual
 ms.date: 02/20/2023
 ms.author: marleon
@@ -15,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Governance in Power Automate
+# Governance in Power Automate for dekstop
 
 You can use the Windows registry to control who can do what with Power Automate for desktop.
 
