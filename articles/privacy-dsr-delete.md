@@ -25,9 +25,9 @@ search.audienceType:
 
 # Respond to personal data deletion requests (Azure AD)
 
-[!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-[!INCLUDE [gdpr-dsr-delete-note](~/../msft-shared-content/privacy-includes/gdpr-dsr-delete-note.md)]
+[!INCLUDE [gdpr-dsr-delete-note](~/../shared-content/shared/privacy-includes/gdpr-dsr-delete-note.md)]
 
 The right to erasure allows data subjects to request the removal of their personal data, including system-generated logs but not audit logs, from an organization's customer data. Also, when a user leaves your organization, an admin must determine whether to delete data and resources that the user created as part of their Power Automate flows. Other personal data is automatically deleted when the user's account is deleted from Azure Active Directory (Azure AD).
 
@@ -268,7 +268,7 @@ Remove-AdminFlowUserDetails -UserId {userID}
 
 The final step is to delete the user's Azure AD account.
 
-[!INCLUDE [gdpr-dsr-azure-note](~/../msft-shared-content/privacy-includes/gdpr-dsr-azure-note.md)]
+[!INCLUDE [gdpr-dsr-azure-note](~/../shared-content/shared/privacy-includes/gdpr-dsr-azure-note.md)]
 
 #### Delete the user from an unmanaged tenant
 

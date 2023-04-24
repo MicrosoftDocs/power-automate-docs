@@ -21,9 +21,9 @@ search.audienceType:
 
 # Respond to requests to close a Microsoft account
 
-[!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-[!INCLUDE [gdpr-dsr-delete-note](~/../msft-shared-content/privacy-includes/gdpr-dsr-delete-note.md)]
+[!INCLUDE [gdpr-dsr-delete-note](~/../shared-content/shared/privacy-includes/gdpr-dsr-delete-note.md)]
 
 The right to erasure allows data subjects to request the removal of their personal data, including system-generated logs but not audit logs, from an organization's customer data. When a user decides to close their Microsoft account, their underlying data is also deleted.
 

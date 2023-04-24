@@ -26,7 +26,7 @@ search.audienceType:
 
 # Respond to personal data requests (Microsoft account)
 
-[!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
  Power Automate provides tools and resources to help you respond to requests to correct, export, or delete personal data that resides in the Microsoft cloud. This article helps you respond to requests from users who authenticate using a Microsoft account. [Respond to requests from users who authenticate using Azure Active Directory (Azure AD)](privacy-dsr-summary.md).
 

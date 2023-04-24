@@ -25,9 +25,9 @@ search.audienceType:
 ---
 # Respond to personal data export requests (Azure AD)
 
-[!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-[!INCLUDE [gdpr-dsr-export-note](~/../msft-shared-content/privacy-includes/gdpr-dsr-export-note.md)]
+[!INCLUDE [gdpr-dsr-export-note](~/../shared-content/shared/privacy-includes/gdpr-dsr-export-note.md)]
 
 The right of data portability allows data subjects to request a copy of their personal data in an electronic format that may be transmitted to another data controller.
 

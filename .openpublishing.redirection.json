@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/gdpr-dsr-accountclose-msa.md",
+      "redirect_url": "privacy-dsr-accountclose-msa",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/flic-button-flows.md",
       "redirect_url": "get-started-logic-template",
       "redirect_document_id": "false"
