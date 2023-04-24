@@ -19,7 +19,7 @@ search.audienceType:
 
 # Restore deleted flows
 
-If you or someone else accidentally deletes a non-solution or solution flow, you can restore it within 20 days of deletion.
+If you or someone else accidentally deletes a non-solution or solution flow, you can restore it within 21 days of deletion.
 
 There are the two ways you can restore deleted flows.
 
@@ -28,7 +28,7 @@ There are the two ways you can restore deleted flows.
 
 >[!NOTE]
 > - The steps in this article apply to both non-solution and solution flows.
-> - Flows that were deleted more than 20 days ago can't be recovered. Both restore methods (PowerShell script and Power Automate Management connector), as well as Microsoft Support can't help to restore them.
+> - Flows that were deleted more than 21 days ago can't be recovered. Both restore methods (PowerShell script and Power Automate Management connector), as well as Microsoft Support can't help to restore them.
 > - After you restore a flow, it defaults to the disabled state. You must manually enable the flow, per your requirements.
 
 ## Restore deleted flows with the Power Automate Management connector
