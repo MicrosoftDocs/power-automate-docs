@@ -1,5 +1,5 @@
 ---
-title: Hosted machines (preview)
+title: Hosted machines
 description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
@@ -13,9 +13,10 @@ search.audienceType:
   - enduser
 ---
 
-# Hosted machines (preview)
+# Hosted machines
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+> [!NOTE]
+> Hosted machines is generally available from May 4th, 2023.
 
 Hosted machines allow you to build, test, and run attended and unattended desktop flows without providing or setting up any physical machines.
 
@@ -37,11 +38,25 @@ Key capabilities:
 
 ## Licensing requirements
 
-To use hosted machines, you need one of the following Power Automate licensing options:
+To use hosted machines, you need the following licensing option:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on** or the **Power Automate hosted RPA add-on**.
+- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate hosted RPA add-on**.
 
-    During the preview period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
+   Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
+
+You'll also need the following prerequisite licenses: Windows, Intune, Azure Active Directory.
+
+
+### Licensing requirements during grace period
+
+> [!IMPORTANT]
+> To enable a smooth transition for customers using the hosted machines feature during the preview phase, a grace period will be provided to enable customers to procure the appropriate hosted RPA add-on in order to continue using the feature. Entitlements for using the hosted machines during the preview phase will be extended until August 31st, 2023. After this date, you'll need the hosted RPA add-on to continue using the hosted machine group feature.
+
+To use hosted machines during the grace period, you need one of the following licensing options:
+
+- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on**.
+
+    During the grace period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
 - Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trial**.
 
@@ -49,12 +64,9 @@ To use hosted machines, you need one of the following Power Automate licensing o
 
 - Use the **90-days self-assisted premium trial.**
 
-    Trial users are granted the capacity of one hosted machine. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
+    Trial users are granted the capacity of one hosted machine per environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
-> [!NOTE]
-> During the preview period, all tenants have a global limit of 10 hosted machines.
 
-You'll also need the following prerequisite licenses: Windows, Intune, Azure Active Directory.
 
 ## Prerequisites
 
@@ -112,7 +124,7 @@ To create a hosted machine, you must create the Windows 365 service principal in
 
 ### Get access to the default VM image
 
-To create hosted machines, you need access to the default image that is part of your environment. You can view the default image in **Monitors** > **Machines** > **VM images (preview)**.
+To create hosted machines, you need access to the default image that is part of your environment. You can view the default image in **Monitors** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machines/default-vm-image.png" alt-text="Screenshot of the default VM image in the VM images list.":::
 
@@ -122,7 +134,7 @@ Users need either the **System Administrator** or **Desktop Flow Machine Image A
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines** > **VM images (preview)**.
+1. Go to **Monitor** > **Machines** > **VM images**.
 
 1. Select the default Windows desktop image from the list.
 
@@ -144,7 +156,7 @@ To create a hosted machine:
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New** > **Hosted machine (preview)**.
+1. Select **New** > **Hosted machine**.
 
 1. In the hosted machine creation wizard:
 
@@ -257,7 +269,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New** > **VM image (preview)**.
+1. Select **New** > **VM image**.
 
 1. Enter an image name, a description, and the usage.
 
@@ -278,7 +290,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines** > **VM images (preview)**.
+1. Go to **Monitor** > **Machines** > **VM images**.
 
 1. Select the image you've created.
 
@@ -350,7 +362,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New** > **Network connection (preview)**.
+1. Select **New** > **Network connection**.
 
 1. Enter a network connection name, a description, and the usage.
 
@@ -367,7 +379,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines** > **Network connection (preview)**.
+1. Go to **Monitor** > **Machines** > **Network connection**.
 
 1. Select the network connection you've created.
 
@@ -515,7 +527,7 @@ Hosted machines aren't yet available in sovereign clouds nor in the following Po
 
 ### Azure tenant country/region and supported geographies in the public cloud
 
-During the public preview, a hosted machine can only be provisioned when the tenant's country/region on Azure falls within the same scope of the region for the Power Automate environment.
+A hosted machine can only be provisioned when the tenant's country/region on Azure falls within the same scope of the region for the Power Automate environment.
 
 > [!NOTE]
 > Your default Power Automate environment is created based on your Azure Active Directory tenant's country/region.
@@ -530,7 +542,7 @@ To check the tenant country/region on Azure:
 
 ### Deletion of unused resources
 
-During the public preview, we clean unused resources to ensure our service is available for everyone. A hosted machine that has been inactive for 14 days may be automatically deleted. The deleted hosted machine will still be visible but can't be used anymore. An inactive hosted machine is a machine that has no flow runs and no usage of Power Automate for desktop for the last 14 days.
+For environments without the Power Automate hosted RPA add-on, we clean unused resources to ensure our service is available for everyone. A hosted machine that has been inactive for 14 days may be automatically deleted. The deleted hosted machine will still be visible but can't be used anymore. An inactive hosted machine is a machine that has no flow runs and no usage of Power Automate for desktop for the last 14 days.
 
 > [!NOTE]
 > You need to delete the inactive hosted machine and recreate a new one to continue using the hosted machines feature. You need to reconfigure the connections associated with your cloud flows.
