@@ -218,14 +218,22 @@ You can personalize your hosted machines by providing your own Windows image dir
 
 1. Once you've created an Azure Compute Gallery, create an image definition following the steps in [Create an image definition and an image version](/azure/virtual-machines/image-version). You should create the image in the exact location where we deploy your hosted machines. You can find the following mapping with your environment Geo:
 
-    - US: East US
-    - Europe: North Europe
-    - Canada: Canada Central
-    - Australia: Australia East
-    - France: France Central
-    - India: Central India
-    - Japan: Japan East
-    - UK: UK South
+- Australia: Australia East
+- Asia: East Asia
+- Brazil: Brazil South
+- Canada: Canada Central
+- Europe: North Europe
+- France: France Central
+- Germany: Germany West Central (Restricted, please send your request to hostedrpa@microsoft.com) 
+- India: Central India
+- Japan: Japan East
+- Korea: Korea Central
+- Norway: Norway East
+- Switzerland: Switzerland North
+- United Arab Emirates
+- United Kingdom: UK South
+- United States: East US
+
 
 ### Image requirements
 
@@ -321,14 +329,21 @@ To use your own network and provision Azure Azure AD joined hosted machines, you
 
 The VNet needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
 
-- US: East US
-- Europe: North Europe
-- Canada: Canada Central
 - Australia: Australia East
+- Asia: East Asia
+- Brazil: Brazil South
+- Canada: Canada Central
+- Europe: North Europe
 - France: France Central
+- Germany: Germany West Central (Restricted, please send your request to hostedrpa@microsoft.com) 
 - India: Central India
 - Japan: Japan East
-- UK: UK South
+- Korea: Korea Central
+- Norway: Norway East
+- Switzerland: Switzerland North
+- United Arab Emirates
+- United Kingdom: UK South
+- United States: East US
 
 ### Share the virtual network with Windows 365 service principal
 
@@ -506,24 +521,24 @@ This section presents the limitations of hosted machines.
 The following list displays all the supported Power Platform geographies in the public cloud:
 
 - Australia
+- Asia
+- Brazil
 - Canada
 - Europe
 - France
+- Germany (Restricted, please send your request to hostedrpa@microsoft.com) 
 - India
 - Japan
-- United Kingdom
-- United States
-
-Hosted machines aren't yet available in sovereign clouds nor in the following Power Platform geographies in the public cloud:
-
-- Asia Pacific
-- Brazil
-- China
-- Germany
 - Korea
 - Norway
 - Switzerland
 - United Arab Emirates
+- United Kingdom
+- United States
+
+Hosted machines aren't yet available in sovereign clouds.
+
+
 
 ### Azure tenant country/region and supported geographies in the public cloud
 
