@@ -15,7 +15,8 @@ search.audienceType:
 ---
 
 # Create Power Automate for desktop actions using the Actions SDK (preview)
-> [!NOTE] The **Actions SDK** and **Power Automate Desktop - Visual Studio templates** are currently in preview. They are both available under the pre-release section through Visual Studio's NuGet package manager and at nuget.org
+
+> [!NOTE] The **Actions SDK (preview)** and **Power Automate Desktop - Visual Studio templates (preview)** are currently in preview. They are both available under the pre-release section through Visual Studio's NuGet package manager and at [www.nuget.org](https://www.nuget.org/)
 
 Power Automate for desktop can be extended through the Actions SDK (preview). Through the SDK, **custom modules** can be created and then utilized through desktop flows. 
 > [!NOTE]
@@ -51,9 +52,9 @@ When extending the SDK keep in mind the following analogy:
 1. Every project (.dll) is a module (custom actions group).
 2. Actions of this module are represented by classes inside that project. 
 
-After installing the Power Automate Desktop Actions templates for Visual Studio (preview)), open Visual Studio and choose one of the following options:
+After installing the Power Automate Desktop Actions templates for Visual Studio (preview) ), open Visual Studio and choose one of the following options:
 
-![Screenshot of Power Automate Visual Studio templates](media\custom-actions\create-custom-actions\img1.png)
+![Screenshot of Power Automate Visual Studio templates](/articles/media/custom-actions/create-custom-actions/img1.png)
 
 | Project Template                      | Description |
 | :------------------------------------ | :--------------------------------------------------------------------------------------- |
@@ -194,7 +195,7 @@ It is also recommended to provide descriptions and friendly names for parameters
 
 These can also be set with the FriendlyName and Description properties of the **[InputArgument]**, **[OutputArgument]** and **[Action]** attributes.
 
-![Screenshot of Resources](media\custom-actions\create-custom-actions\img2.png)
+![Screenshot of Resources](/articles/media/custom-actions/create-custom-actions/img2.png)
 
 > It is recommended to denote what it is you are describing in the comment field (e.g. Module, Action etc.)
 
@@ -283,7 +284,7 @@ The format of the descriptions for Modules and Actions should be as follows: "Mo
 
 It is also recommended to provide descriptions and friendly names for parameters. Their format should be as follows: "Action_Parameter_Description", "Action_Parameter_FriendlyName".
 
-![Screenshot of Resources for a simple action](\media\custom-actions\create-custom-actions\img2_1.png)
+![Screenshot of Resources for a simple action](/articles/media/custom-actions/create-custom-actions/img2_1.png)
 
 >[!NOTE] 
 > It is recommended to denote what it is you are describing in the comment field (e.g. Module, Action etc.)
@@ -373,7 +374,7 @@ An example would be the "Launch Excel" action, from the standard library of acti
 
 Using the "with a blank document" selector, the flow will launch a blank Excel document, whereas using the "and open the following document" selection will require the file path of the file to open.
 
-![Screenshot of Launch Excel action selectors](\media\custom-actions\create-custom-actions\img3.png)
+![Screenshot of Launch Excel action selectors](/articles/media/custom-actions/create-custom-actions/img3.png)
 
 The two actions mentioned above, are two selectors of the "Launch Excel" base action. 
 
@@ -385,7 +386,7 @@ Through action selectors a level of abstraction can be added over a single actio
 
 Think of selectors as choices, filtering a single action and presenting only the information required according to the respective selectors.
 
-![Screenshot of action selectors diagram](\media\custom-actions\create-custom-actions\img4.png)
+![Screenshot of action selectors diagram](/articles/media/custom-actions/create-custom-actions/img4.png)
 
 To form a new action selector, first create a central action to be utilized by the selectors. 
 
@@ -633,13 +634,13 @@ location}\{preferred certificate name}.pfx" -Password $mypwd
 - Double click on the exported certificate
 - Select Current user
 
-![Screenshot of Certificate Import Wizard](\media\custom-actions\create-custom-actions\img5.png)
+![Screenshot of Certificate Import Wizard](/articles/media/custom-actions/create-custom-actions/img5.png)
 - In the **Private key protection** screen, use the password provided during the creation of the certificate and also mark the key as exportable and include all extended properties
   
-![Screenshot of Private key protection screen](\media\custom-actions\create-custom-actions\img6.png)
+![Screenshot of Private key protection screen](/articles/media/custom-actions/create-custom-actions/img6.png)
 - Finally add the certificate to the Trusted Root Certification Authorities
 
-![Screenshot of Trusted Root Certificate Authorities](\media\custom-actions\create-custom-actions\img7.png)
+![Screenshot of Trusted Root Certificate Authorities](/articles/media/custom-actions/create-custom-actions/img7.png)
 
 
 
