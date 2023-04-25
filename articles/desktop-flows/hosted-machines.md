@@ -230,7 +230,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Korea: Korea Central
 - Norway: Norway East
 - Switzerland: Switzerland North
-- United Arab Emirates
+- United Arab Emirates: UAE North
 - United Kingdom: UK South
 - United States: East US
 
@@ -341,7 +341,7 @@ The VNet needs to be created in the same location with your hosted machines. You
 - Korea: Korea Central
 - Norway: Norway East
 - Switzerland: Switzerland North
-- United Arab Emirates
+- United Arab Emirates: UAE North
 - United Kingdom: UK South
 - United States: East US
 
