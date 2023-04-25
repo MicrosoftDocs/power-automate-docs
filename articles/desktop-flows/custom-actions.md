@@ -26,6 +26,7 @@ Custom actions exist on an environment level. As a best practice you should use 
 > .dll files describing the custom actions, their .dll dependencies and the .cab file containing everything should be properly signed with a digital certificate trusted by your organization (included in Trusted Root Certification Authorities). The certificate should also be present under the Trusted Root Certification Authorities for each machine on which a desktop flow with custom action dependencies is executed.
 
 ## Known limitations
+- Custom actions groups uploaded cannot be bigger than 30mb.
 - Specific endpoints must be included in the allow list for desktop flows containing custom actions to work properly. 
 Refer to [desktop flow services required for runtime](power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime) for more details.
 - ALM is not yet fully supported for desktop flows with dependencies on custom actions
