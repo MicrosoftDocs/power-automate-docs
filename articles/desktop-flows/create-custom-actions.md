@@ -22,21 +22,7 @@ Power Automate for desktop can be extended through the Actions SDK (preview). Th
 > The term **modules** is equivalent to the term **custom actions group** and is used to describe custom actions groups from a pro-dev perspective in this article.
 
 
-- [Prerequisites](#Prerequisites)   
-- [Using Power Automate Desktop Actions - Visual Studio templates (preview)](#Using-Power-Automate-Desktop-Actions--Visual-Studio-templates-(preview))
-- [Custom module name conventions](#Custom-module-name-conventions)
-- [Adding descriptions to custom actions](#Adding-descriptions-to-custom-actions)
-- [Resources localization](#Resources-localization)
-- [Custom module categories](#Custom-module-categories)
-- [Conditional and Wait actions](#Conditional-and-Wait-actions)
-- [Custom action selectors](#Custom-action-selectors)
-    - [Custom action selectors using enums](#Custom-action-selectors-using-enums)
-    - [Custom action selectors using boolean](#Custom-action-selectors-using-boolean)
-    - [Setting descriptions for custom action selectors](#Setting-descriptions-for-custom-action-selectors)
-- [Signing the custom module](#Signing-the-custom-module)
-- [Packaging everything in a cabinet file](#Packaging-everything-in-a-cabinet-file)
-
-### Prerequisites
+## Prerequisites
 
 To create actions for Power Automate for desktop the following are required:
 - An IDE (Integrated Development Environment - e.g. Visual Studio 2022) you can write C# on.
@@ -47,7 +33,7 @@ To create actions for Power Automate for desktop the following are required:
 > In this guide, Visual Studio 2022 was utilized.
 
 
-### Using Power Automate Desktop Actions - Visual Studio templates (preview)
+## Using Power Automate Desktop Actions - Visual Studio templates (preview)
 
 The creation of custom actions for desktop flows is summarized in the following steps:
 - Create a new project using Power Automate Desktop Actions - Visual Studio templates (preview).
@@ -67,7 +53,7 @@ When extending the SDK keep in mind the following analogy:
 
 After installing the Power Automate Desktop Actions templates for Visual Studio (preview)), open Visual Studio and choose one of the following options:
 
-![Screenshot of Power Automate Visual Studio templates](/media/custom-actions/create-custom-actions/img1.png)
+![Screenshot of Power Automate Visual Studio templates](media\custom-actions\create-custom-actions\img1.png)
 
 | Project Template                      | Description |
 | :------------------------------------ | :--------------------------------------------------------------------------------------- |
@@ -179,7 +165,7 @@ namespace Modules.CustomModule
 }
 ```
 
-### Custom module name conventions
+## Custom module name conventions
 
 In order for the custom modules to be readable through Power Automate for desktop, the AssemblyName must have a filename that follows the format below:
 
@@ -193,7 +179,7 @@ For example, **Modules**.ContosoActions.dll
 The AssemblyTitle in the project settings specifies the module ID. It can only have alphanumeric characters and underscores and must begin with a letter.
 
 
-### Adding descriptions to custom actions
+## Adding descriptions to custom actions
 
 It is recommended to provide a description and a friendly name for the custom actions groups (module) and its respective actions so that Power Automate for desktop users will know how to best utilize them.
 
@@ -208,7 +194,7 @@ It is also recommended to provide descriptions and friendly names for parameters
 
 These can also be set with the FriendlyName and Description properties of the **[InputArgument]**, **[OutputArgument]** and **[Action]** attributes.
 
-![Screenshot of Resources](/media/custom-actions/create-custom-actions/img2.png)
+![Screenshot of Resources](media\custom-actions\create-custom-actions\img2.png)
 
 > It is recommended to denote what it is you are describing in the comment field (e.g. Module, Action etc.)
 
@@ -218,7 +204,7 @@ Another way to quickly add friendly names and descriptions to actions and parame
 > The only way to add a friendly name and description to a module is by modifying the respective .resx file.
 
 
-### Resources localization
+## Resources localization
 
 The default language for modules in Power Automate for desktop is assumed to be English. 
 
@@ -226,7 +212,83 @@ The **Resources.resx** file should be in english.
 
 Any additional languages can be added with extra Resources.locale.resx files for localization. For example **Resources.fr.resx**.
 
-### Custom module categories
+## Creating actions without using the Power Automate Desktop Visual Studio templates (preview)
+
+Begin by creating a new Class Library (.NET Framework) project. Select .NET framework version 4.7.2.
+Add the Actions SDK (preview) to your project.
+
+
+To form an action in the custom module just created:
+- Delete the auto-generated Class1.cs file. 
+- Create a new class inside your project to represent the custom action and give it a distinct name. 
+- Include the Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK and Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes namespaces.
+- All classes representing actions should have an [Action] attribute above your class. 
+- The class should have public access and inherit from ActionBase class.
+
+```csharp
+using System;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes;
+
+namespace Modules.MyCustomModule
+{
+    [Action(Id = "CustomAction")]
+    public class CustomAction : ActionBase
+    {
+        public override void Execute(ActionContext context)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
+```
+
+The majority of actions have parameters (Input or Output). Input and Output parameters are represented by classic C# properties.
+Each property should have an appropriate C# attribute, either [InputArgument] or [OutputArgument] to dictate its type and how they are presented in Power Automate for desktop.
+Input arguments can also have default values.
+
+```csharp
+using System.ComponentModel;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes;
+
+namespace Modules.MyCustomModule
+{
+    [Action(Id = "CustomAction")]
+    public class CustomAction : ActionBase
+    {
+        [InputArgument, DefaultValue("Developer")]
+        public string InputName { get; set; }
+
+        [OutputArgument]
+        public string DisplayedMessage { get; set; }
+
+        public override void Execute(ActionContext context)
+        {
+            DisplayedMessage = $"Hello, {InputName}";
+        }
+    }
+}
+```
+
+## Adding descriptions to custom actions created from scratch
+
+It is recommended to provide a description and a friendly name for the modules and actions so that RPA developers will know how to best utilize them.
+
+Friendly Names and Descriptions are displayed in the Power Automate for desktop's Designer.
+
+The suggested approach is to create a "Resource.resx" file inside the Properties folder of the module project. The new ".resx" file should be named "Resources.resx".
+
+The format of the descriptions for Modules and Actions should be as follows: "Module_Description" or "Action_Description" and "Module_FriendlyName" or "Action_FriendlyName" respectively in the name field. The description in the value field.
+
+It is also recommended to provide descriptions and friendly names for parameters. Their format should be as follows: "Action_Parameter_Description", "Action_Parameter_FriendlyName".
+
+![Screenshot of Resources for a simple action](\media\custom-actions\create-custom-actions\img2_1.png)
+
+>[!NOTE] 
+> It is recommended to denote what it is you are describing in the comment field (e.g. Module, Action etc.)
+
+## Custom module categories
 
 Modules can include categories and subcategories for better action organization.
 
@@ -247,7 +309,7 @@ The Order property dictates the order by which actions are previewed in the desi
 [Action(Id = "Action1", Order = 1, Category = "TestCategory")]
 ```
 
-### Conditional and Wait actions
+## Conditional and Wait actions
 
 Conditional actions are actions that return either "True" or "False". 'If file exists' Power Automate for desktop action is a good example of a conditional action.
 
@@ -303,7 +365,7 @@ This will create a new If action. What is checked there is the value held by the
 
 
 
-### Custom action selectors
+## Custom action selectors
 
 There are particular cases, in which a custom action might be required to have more than one flavors. 
 
@@ -311,7 +373,7 @@ An example would be the "Launch Excel" action, from the standard library of acti
 
 Using the "with a blank document" selector, the flow will launch a blank Excel document, whereas using the "and open the following document" selection will require the file path of the file to open.
 
-![Screenshot of Launch Excel action selectors](/media/custom-actions/create-custom-actions/img3.png)
+![Screenshot of Launch Excel action selectors](\media\custom-actions\create-custom-actions\img3.png)
 
 The two actions mentioned above, are two selectors of the "Launch Excel" base action. 
 
@@ -323,7 +385,7 @@ Through action selectors a level of abstraction can be added over a single actio
 
 Think of selectors as choices, filtering a single action and presenting only the information required according to the respective selectors.
 
-![Screenshot of action selectors diagram](/media/custom-actions/create-custom-actions/img4.png)
+![Screenshot of action selectors diagram](\media\custom-actions\create-custom-actions\img4.png)
 
 To form a new action selector, first create a central action to be utilized by the selectors. 
 
@@ -392,7 +454,7 @@ namespace Modules.CustomModule
 }
 ```
 
-#### Custom action selectors using enums
+## Custom action selectors using enums
 
 In this example you will create three selectors. A simple enum will dictate the appropriate selector each time:
 
@@ -479,7 +541,7 @@ public override void Execute(ActionContext context)
 }
 ```
 
-#### Custom action selectors using boolean
+## Custom action selectors using boolean
 
 An example utilizing Boolean instead of enums is demonstrated below.
 
@@ -544,7 +606,7 @@ namespace Modules.CustomModule
 }
 ```
 
-#### Setting descriptions for custom action selectors
+## Setting descriptions for custom action selectors
 
 To create a description and a summary for selectors, use the following format in the .resx file of your custom module.
 
@@ -555,7 +617,33 @@ SelectorName_Summary
 
 This can also be done in the selector with the WithDescription and WithSummary methods.
 
-### Signing the custom module
+## Creating and importing a self-signed certificate
+
+To create a self-signed certificate with exportable private key and code sign capabilities:
+- Open Windows PowerShell 
+- Input the following commands by providing valid values where needed:
+```PowerShell
+$certname = "{Your cert name}"
+$cert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -Type CodeSigningCert  -Subject "CN=$certname" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256
+$mypwd = ConvertTo-SecureString -String "{your password}" -Force -AsPlainText
+Export-PfxCertificate -Cert $cert -FilePath "{enter full path of preferred exported 
+location}\{preferred certificate name}.pfx" -Password $mypwd
+```
+- After the certificate has been created and exported, import it to your trust root
+- Double click on the exported certificate
+- Select Current user
+
+![Screenshot of Certificate Import Wizard](\media\custom-actions\create-custom-actions\img5.png)
+- In the **Private key protection** screen, use the password provided during the creation of the certificate and also mark the key as exportable and include all extended properties
+  
+![Screenshot of Private key protection screen](\media\custom-actions\create-custom-actions\img6.png)
+- Finally add the certificate to the Trusted Root Certification Authorities
+
+![Screenshot of Trusted Root Certificate Authorities](\media\custom-actions\create-custom-actions\img7.png)
+
+
+
+## Signing a custom module
 
 To finalize the creation of the custom module, the generated .dll file ([Assembly Name].dll) is required. The file can be found under the bin/release or bin/Debug folder of the project.
 
@@ -566,7 +654,10 @@ Signtool sign /f {your certificate name}.pfx /p {your password for exporting the
 SHA256 {path to the .dll you want to sign}.dll
 ```
 
-### Packaging everything in a cabinet file
+> [!NOTE]
+> The digital certificate must have an exportable private key and code sign capabilities
+
+## Packaging everything in a cabinet file
 
 The .dll containing the custom actions and all its dependencies (.dll files) must be packaged in a cabinet file (.cab). 
 
