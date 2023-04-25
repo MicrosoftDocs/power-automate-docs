@@ -1,6 +1,6 @@
 ---
 title: Custom actions
-description: Custom actions in desktop flwos	
+description: Custom actions in desktop flows	
 author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -25,6 +25,8 @@ Custom actions exist on an environment level. As a best practice you should use 
 > [!NOTE]
 > .dll files describing the custom actions, their .dll dependencies and the .cab file containing everything should be properly signed with a digital certificate trusted by your organization (included in Trusted Root Certification Authorities). The certificate should also be present under the Trusted Root Certification Authorities for each machine on which a desktop flow with custom action dependencies is executed.
 
-## Known issues
+## Known limitations
+- Specific endpoints must be included in the allow list for desktop flows containing custom actions to work properly. 
+Refer to [IP address configuration](https://learn.microsoft.com/en-us/power-automate/ip-address-configuration) for more details.
 - ALM is not yet fully supported for desktop flows with dependencies on custom actions
 - Upload date might differ in the portal than what is shown in the Asset library, in Power Automate for Desktop
