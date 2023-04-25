@@ -14,10 +14,10 @@ search.audienceType:
   - enduser
 ---
 
-# Create Power Automate for desktop actions using the Custom actions SDK (preview)
-> [!NOTE] The **Custom actions SDK** and **Power Automate Desktop - Visual Studio templates** are currently in preview. They are both available under the pre-release section through Visual Studio's NuGet package manager and at nuget.org
+# Create Power Automate for desktop actions using the Actions SDK (preview)
+> [!NOTE] The **Actions SDK** and **Power Automate Desktop - Visual Studio templates** are currently in preview. They are both available under the pre-release section through Visual Studio's NuGet package manager and at nuget.org
 
-Power Automate for desktop can be extended through the Custom actions SDK (preview). Through the SDK, **custom modules** can be created and then utilized through desktop flows. 
+Power Automate for desktop can be extended through the Actions SDK (preview). Through the SDK, **custom modules** can be created and then utilized through desktop flows. 
 > [!NOTE]
 > The term **modules** is equivalent to the term **custom actions group** and is used to describe custom actions groups from a pro-dev perspective in this article.
 
@@ -41,7 +41,7 @@ Power Automate for desktop can be extended through the Custom actions SDK (previ
 To create actions for Power Automate for desktop the following are required:
 - An IDE (Integrated Development Environment - e.g. Visual Studio 2022) you can write C# on.
 - Power Automate for desktop installed on your machine.
-- The Custom actions SDK which you can download through Visual Studio's package manager or nuget.org. 
+- The Actions SDK which you can download through Visual Studio's package manager or nuget.org. 
 
 > [!NOTE] 
 > In this guide, Visual Studio 2022 was utilized.
@@ -80,8 +80,8 @@ After installing the Power Automate Desktop Actions templates for Visual Studio 
 This is how the Action1.cs looks out of the box:
 
 ```csharp
-using Microsoft.Flow.RPA.Desktop.Modules.SDK;
-using Microsoft.Flow.RPA.Desktop.Modules.SDK.Attributes;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes;
 using System;
 
 namespace Modules.CustomModule
@@ -135,8 +135,8 @@ For example, the default value of the InputArgument, is "Developer".
 By applying this, and modifying the Execute method to return an Output, the custom action should look as follows:
 
 ```csharp
-using Microsoft.Flow.RPA.Desktop.Modules.SDK;
-using Microsoft.Flow.RPA.Desktop.Modules.SDK.Attributes;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes;
 using System;
 using System.ComponentModel;
 
@@ -252,8 +252,8 @@ The Order property dictates the order by which actions are previewed in the desi
 Conditional actions are actions that return either "True" or "False". 'If file exists' Power Automate for desktop action is a good example of a conditional action.
 
 ```csharp
-using Microsoft.Flow.RPA.Desktop.Modules.SDK;
-using Microsoft.Flow.RPA.Desktop.Modules.SDK.Attributes;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes;
 using System;
 using System.ComponentModel;
 
@@ -344,8 +344,8 @@ Notice the first property (input argument) is an enum. Based on that property's 
 
 ```csharp
 using System.ComponentModel;
-using Microsoft.Flow.RPA.Desktop.Modules.SDK;
-using Microsoft.Flow.RPA.Desktop.Modules.SDK.Attributes;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Desktop.Actions.SDK;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Desktop.Actions.SDK.Attributes;
 
 namespace Modules.CustomModule
 {
@@ -485,9 +485,9 @@ An example utilizing Boolean instead of enums is demonstrated below.
 
 ```csharp
 using System.ComponentModel;
-using Microsoft.Flow.RPA.Desktop.Modules.SDK;
-using Microsoft.Flow.RPA.Desktop.Modules.SDK.ActionSelectors;
-using Microsoft.Flow.RPA.Desktop.Modules.SDK.Attributes;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.ActionSelectors;
+using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes;
 
 namespace Modules.CustomModule
 {
@@ -606,6 +606,13 @@ $ddf | Out-File -Encoding UTF8 $ddfpath
 makecab.exe /F $ddfpath
 Remove-Item $ddfpath
 ```
-This Windows PowerShell Script can then be used for creating the .cab file.
+This Windows PowerShell Script can then be used for creating the .cab file by invoking it in Windows PowerShell and providing 
+- the directory to the .dll files to be compressed
+- the target directory to place the generated .cab file.
+
+Example:
+```PowerShell
+.\makeCabFromDirectory.ps1 "{source dir to compress dlls}" "{target dir to save cab}" {cabName}.cab
+```
 > [!NOTE]
 > The .cab file must also be signed. Unsigned .cab files and/or unsigned .dlls contained in them will not be usable in desktop flows and will result in error during inclusion.
