@@ -56,7 +56,9 @@ From there you can:
   - User -  can only use the respective custom actions in desktop flows
   -	User + Share – can use and share the custom actions
   -	Co-owner – can also update/delete the custom actions 
-NOTE: for someone to be a Co-owner, they have to be assigned with the Desktop Flow Module Developer role in the respective environment
+
+>[!IMPORTANT]
+> For someone to be a Co-owner, they have to be assigned with the Desktop Flow Module Developer role in the respective environment
 
 ![Screenshot of Manage access to custom actions group](../media/custom-actions/upload-custom-actions/img7.png)
  
@@ -65,3 +67,6 @@ NOTE: for someone to be a Co-owner, they have to be assigned with the Desktop Fl
  
 - Delete the custom actions (Co-owners only). Deleting a custom actions group will make all desktop flows that have a dependency on it erroneous.
 ![Screenshot of Delete a custom actions group](../media/custom-actions/upload-custom-actions/img9.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
