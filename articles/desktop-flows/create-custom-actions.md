@@ -29,7 +29,7 @@ Power Automate for desktop can be extended through the Actions SDK (preview). Th
 
 ## Prerequisites
 
-To create actions for Power Automate for desktop the following are required:
+To create custom actions for Power Automate for desktop the following are required:
 - An IDE (Integrated Development Environment - e.g. Visual Studio 2022) you can write C# on.
 - Power Automate for desktop installed on your machine.
 - The Actions SDK which you can download through Visual Studio's package manager or nuget.org. 
