@@ -197,12 +197,12 @@ The SAP ERP connector supports Azure AD and Windows authentication by enabling S
 
 For more information, which includes the supported user account types and the minimum required authorization for each action type (RFC, BAPI, IDOC), review [SAP Note 460089 - Minimum authorization profiles for external RFC programs](https://accounts.sap.com/).
 
-SAP user accounts need to access `RFC_Metadata` function group and the respective function modules for the following operations:
+SAP user accounts need to access the `RFC_Metadata` function group and the respective function modules for the following operations:
 
 | Operations | Access to function modules  |
 |------------|-----------------------------|
 |RFC actions    | `RFC_GROUP_SEARCH` and `DD_LANGU_TO_ISOLA`  |
-|Read Table action   | Either `RFC BBP_RFC_READ_TABLE` `RFC_READ_TABLE` |
+|Read Table action   | Either `RFC BBP_RFC_READ_TABLE` or `RFC_READ_TABLE` |
 |Grant strict minimum access to SAP server for your SAP connection  | `RFC_METADATA_GET` and `RFC_METADATA_GET_TIMESTAMP`|
 
 More information on setup and configuration:
@@ -262,7 +262,7 @@ More information:
 
 Solutions are used for [application lifecycle management](/power-platform/alm/overview-alm) and provide additional capabilities for managing the lifecycle of data sources. If a canvas app is in a solution, connection references and environment variables may be created to store information about the data sources. Storing this information in the solution ensures data sources can be changed or re-established when solutions are migrated to different environments.
 
-The SAP integration [prebuilt solution](solutions.md) contains apps, flows, connection references and other components that work together to simplify the SAP ERP integration with the Power Platform.
+The SAP integration [prebuilt solution](solutions.md) contains apps, flows, connection references, and other components that work together to simplify the SAP ERP integration with Power Platform.
 
 Take the following steps to download and then import the solution:
 
