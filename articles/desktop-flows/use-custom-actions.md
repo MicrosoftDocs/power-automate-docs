@@ -19,7 +19,7 @@ search.audienceType:
 > [!IMPORTANT]
 > Power Automate for desktop v2.32 and newer is required
 
-You can include custom actions in desktop flows through the [Asset library](../asset-library.md).
+You can include custom actions in desktop flows through the [Asset library](./asset-library.md).
 
 Though Power Automate for desktop’s designer open the Asset library. 
 You can do that either through the dedicated button 
