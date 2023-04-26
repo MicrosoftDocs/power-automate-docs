@@ -79,11 +79,12 @@ This section presents all the prerequisites to create and use hosted machines.
 
 To find more information about the Azure Active Directory and Intune requirements, go to [Windows 365 requirements](/windows-365/enterprise/requirements?tabs=enterprise%2Cent#azure-active-directory-and-intune-requirements).
 
-### Windows 365 Cloud PC application
+### Windows 365 Cloud PC & Azure Virual Desktop Service Principal
 
-To create a hosted machine, you must create the Windows 365 service principal in your tenant.
-
-1. Check if the Windows 365 service principal is already created:
+    > [!NOTE]
+    > The Windows 365 and Azure Virtual Desktop service principals should automatically be created in your tenant. You can skip this step, unless you face an error  with service principals not created in your tenant when you provision the hosted machine.
+    
+1. Validate if the Windows 365 service principal is already created:
 
     1. Sign in to the [Azure portal](https://portal.azure.com/).
 
@@ -111,8 +112,6 @@ To create a hosted machine, you must create the Windows 365 service principal in
 
     To create a hosted machine, you must create the following Azure Virtual Desktop services in your tenant.
 
-    > [!NOTE]
-    > It's likely that the Azure Virtual Desktop service principals are already created in your tenant. If yes, you can skip this step.
 
     | Application name                   | Application ID                       |
     |------------------------------------|--------------------------------------|
