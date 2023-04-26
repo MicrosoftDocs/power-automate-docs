@@ -487,14 +487,9 @@ public enum SelectorChoice
 
 Selectors are represented by classes. 
 
-<<<<<<< Updated upstream
-Those classes must inherit the **ActionSelector<TBaseActionClass> class**.
-
-=======
-Those classes must inherit the **ActionSelector<> class**.
+Those classes must inherit the ```ActionSelector<TBaseActionClass>``` class.
 >[!NOTE] 
 >TBaseActionClass is the base action class name.
->>>>>>> Stashed changes
 
 In the UseName() method, the name of the action selector is declared. This is used as a name of the action to resolve the resources.
 

@@ -29,7 +29,7 @@ To access the Asset library either click on the dedicated button at the top righ
 or through the entry under the Tools bar:
 ![Screenshot of the Asset library button under tools](../media/asset-library/img2.png)
 
-# Custom actions (preview) tab
+## Custom actions (preview) tab
 
 In the Custom actions (preview) tab, you will find the custom actions (preview) uploaded in the respective environment you are working in. 
 > [!NOTE] 
