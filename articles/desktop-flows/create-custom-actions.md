@@ -597,7 +597,7 @@ namespace Modules.CustomModule
 
         public override void Execute(ActionContext context)
         {
-            DisplayedMessage = TimeExpired ? $"The has expired. Elapsed time: {ElapsedTime}" : $"Remaining time: {RemainingTime}";
+            DisplayedMessage = TimeExpired ? $"The timer has expired. Elapsed time: {ElapsedTime}" : $"Remaining time: {RemainingTime}";
         }
 
         #endregion
