@@ -51,7 +51,7 @@ By clicking on an uploaded custom actions, you will go into its details page:
 From there you can: 
 -	Edit the uploaded custom actions, modifying its name and/or description. 
 ![Screenshot of Edit custom actions group blade](../media/custom-actions/upload-custom-actions/img6.png) 
--	Share (manage who has access to the custom actions uploaded and the type of access they have. 
+-	Share (manage who has access to the custom actions uploaded and the type of access they have). 
 - There are three types of access a maker can have regarding custom actions:
   - User -  can only use the respective custom actions in desktop flows
   -	User + Share – can use and share the custom actions
