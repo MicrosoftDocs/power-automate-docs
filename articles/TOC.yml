@@ -418,7 +418,7 @@
     items:
     - name: Configure actions and the actions pane
       href: ./desktop-flows/actions-pane.md
-    - name: Add functionality through the Asset library
+    - name: Asset library
       href: ./desktop-flows/asset-library.md
     - name: Manage the flow designer workspace
       href: ./desktop-flows/designer-workspace.md

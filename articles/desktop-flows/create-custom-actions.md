@@ -16,7 +16,7 @@ search.audienceType:
 
 # Create Power Automate for desktop actions using the Actions SDK (preview)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Power Automate for desktop v2.32 and newer is required
 
 > [!NOTE] 
@@ -39,6 +39,22 @@ To create actions for Power Automate for desktop the following are required:
 
 
 ## Using Power Automate Desktop Actions - Visual Studio templates (preview)
+
+> [!NOTE]
+> Power Automate Desktop Actions - Visual Studio templates (preview) are supported for Visual Studio 2022 and newer
+
+
+To install  the Power Automate Desktop Actions - Visual Studio templates (preview), you can either:
+
+- Download the nuget package containing the templates, through [www.nuget.org](https://www.nuget.org/) and then execute the following command in Visual Studio's Package Manager by providing the appropriate path: 
+```
+dotnet new -i <path_to_Templates_nuget_package>
+``` 
+or
+- by directly running this command in Visual Studio's Package Manager: 
+```
+dotnet new -i Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.Templates
+``` 
 
 The creation of custom actions for desktop flows is summarized in the following steps:
 - Create a new project using Power Automate Desktop Actions - Visual Studio templates (preview).

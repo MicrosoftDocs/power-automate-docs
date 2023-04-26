@@ -16,7 +16,7 @@ search.audienceType:
 
 # Asset library
 
-> [!NOTE]
+> [!IMPORTANT]
 > Power Automate for desktop v2.32 and newer is required
 
 The Asset library is the way to include additional functionality in desktop flows. 

@@ -16,7 +16,7 @@ search.audienceType:
 
 # Using custom actions in desktop flows (preview)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Power Automate for desktop v2.32 and newer is required
 
 You can include custom actions in desktop flows through the Asset library (link to asset library entry).

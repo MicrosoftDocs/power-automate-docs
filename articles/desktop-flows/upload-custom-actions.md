@@ -16,7 +16,7 @@ search.audienceType:
 
 # Uploading custom actions to an environment (preview)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Power Automate for desktop v2.32 and newer is required
 
 > [!NOTE]

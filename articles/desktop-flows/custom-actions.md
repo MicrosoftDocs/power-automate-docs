@@ -16,7 +16,7 @@ search.audienceType:
 
 # Custom actions in desktop flows (preview)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Power Automate for desktop v2.32 and newer is required
 
 Custom actions developed by your organization and uploaded to the respective environments can be included in desktop flows and utilized like actions that belong in the standard library of automation actions. 
