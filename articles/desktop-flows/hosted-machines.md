@@ -81,8 +81,8 @@ To find more information about the Azure Active Directory and Intune requirement
 
 ### Windows 365 Cloud PC & Azure Virual Desktop Service Principal
 
-    > [!NOTE]
-    > The Windows 365 and Azure Virtual Desktop service principals should automatically be created in your tenant. You can skip this step, unless you face an error  with service principals not created in your tenant when you provision the hosted machine.
+> [!NOTE]
+> The Windows 365 and Azure Virtual Desktop service principals should automatically be created in your tenant. You can skip this step, unless you face an error  with service principals not created in your tenant when you provision the hosted machine.
     
 1. Validate if the Windows 365 service principal is already created:
 
