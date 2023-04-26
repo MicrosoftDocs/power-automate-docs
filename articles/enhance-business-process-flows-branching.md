@@ -48,6 +48,8 @@ Business process flows guide you through various stages of sales, marketing, or 
 -   When merging branches, all peer branches must merge to a single stage. The peer branches must all either merge to a single stage, or each peer branch must end the process. A peer branch can’t merge with other branches and at the same time end the process.
 
 -   Client API changes cannot trigger evaluation of branching condition, as branching relies on Business rules.
+
+-   For forms in model-driven apps, interacting with future stages will trigger their conditions and Business rules. However, if the active stage remains the same, those rules will not be run again when the form reloads. Only rules of the active stage are run on form load.
   
 > [!NOTE]
 > - A table used in the process can be revisited multiple times (multiple closed table loops).  
