@@ -188,7 +188,7 @@ namespace Modules.CustomModule
 
 ## Custom module name conventions
 
-In order for the custom modules to be readable through Power Automate for desktop, the AssemblyName must have a filename that follows the format below:
+For the custom modules to be readable through Power Automate for desktop, the AssemblyName must have a filename that follows the below pattern:
 
 ```
 ?*.Modules.?*
