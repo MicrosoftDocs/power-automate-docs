@@ -16,7 +16,11 @@ search.audienceType:
 
 # Create Power Automate for desktop actions using the Actions SDK (preview)
 
-> [!NOTE] The **Actions SDK (preview)** and **Power Automate Desktop - Visual Studio templates (preview)** are currently in preview. They are both available under the pre-release section through Visual Studio's NuGet package manager and at [www.nuget.org](https://www.nuget.org/)
+> [!NOTE]
+> Power Automate for desktop v2.32 and newer is required
+
+> [!NOTE] 
+> The **Actions SDK (preview)** and **Power Automate Desktop - Visual Studio templates (preview)** are currently in preview. They are both available under the pre-release section through Visual Studio's NuGet package manager and at [www.nuget.org](https://www.nuget.org/)
 
 Power Automate for desktop can be extended through the Actions SDK (preview). Through the SDK, **custom modules** can be created and then utilized through desktop flows. 
 > [!NOTE]
@@ -54,7 +58,7 @@ When extending the SDK keep in mind the following analogy:
 
 After installing the Power Automate Desktop Actions templates for Visual Studio (preview) ), open Visual Studio and choose one of the following options:
 
-![Screenshot of Power Automate Visual Studio templates](/articles/media/custom-actions/create-custom-actions/img1.png)
+![Screenshot of Power Automate Visual Studio templates](../media/custom-actions/create-custom-actions/img1.png)
 
 | Project Template                      | Description |
 | :------------------------------------ | :--------------------------------------------------------------------------------------- |

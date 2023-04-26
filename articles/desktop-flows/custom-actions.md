@@ -14,7 +14,8 @@ search.audienceType:
   - enduser
 ---
 
-# Custom actions in desktop flows 
+# Custom actions in desktop flows (preview)
+
 > [!NOTE]
 > Power Automate for desktop v2.32 and newer is required
 
@@ -28,6 +29,6 @@ Custom actions exist on an environment level. As a best practice you should use 
 ## Known limitations
 - Custom actions groups uploaded cannot be bigger than 30mb.
 - Specific endpoints must be included in the allow list for desktop flows containing custom actions to work properly. 
-Refer to [desktop flow services required for runtime](power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime) for more details.
+Refer to [desktop flow services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime) for more details.
 - ALM is not yet fully supported for desktop flows with dependencies on custom actions
 - Upload date might differ in the portal than what is shown in the Asset library, in Power Automate for Desktop
