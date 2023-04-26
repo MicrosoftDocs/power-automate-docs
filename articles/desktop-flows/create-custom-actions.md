@@ -84,7 +84,7 @@ After installing the Power Automate Desktop Actions templates for Visual Studio 
 >[!NOTE]
 > In these examples, the Power Automate Sample Module Project (a project including a simple action (Action1.cs)) is utilized.
 
-This is how the Action1.cs looks out of the box:
+This is how the Action1.cs looks like out of the box:
 
 ```csharp
 using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
@@ -229,9 +229,9 @@ Another way to quickly add friendly names and descriptions to actions and parame
 
 The default language for modules in Power Automate for desktop is assumed to be English. 
 
-The **Resources.resx** file should be in english. 
+The **Resources.resx** file should be in English. 
 
-Any additional languages can be added with extra Resources.locale.resx files for localization. For example **Resources.fr.resx**.
+Any additional languages can be added with extra Resources.{locale}.resx files for localization. For example **Resources.fr.resx**.
 
 ## Creating actions without using the Power Automate Desktop Visual Studio templates (preview)
 
@@ -490,10 +490,10 @@ public enum SelectorChoice
 
 Selectors are represented by classes. 
 
-Those classes must inherit the **ActionSelector<> class**.
+Those classes must inherit the **ActionSelector<TBaseActionClass> class**.
 
 
-In the UseName() method, the name of the action is declared. This is used in the resources.
+In the UseName() method, the name of the action selector is declared. This is used as a name of the action to resolve the resources.
 
 ```csharp
 public class Selector1 : ActionSelector<CentralCustomAction>
