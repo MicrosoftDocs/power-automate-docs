@@ -34,7 +34,7 @@ Click on the Upload custom action button, located at the top of the screen:
 ![Screenshot of Upload custom actions button](../media/custom-actions/upload-custom-actions/img2.png)
  
 Provide the requisite information for you custom actions group:
--	Name is mandatory: this is how you custom actions group’s name will appear in the Custom actions(preview) list, the asset library and, once included in a desktop flow, in the actions tree
+-	Name (required): this is how your custom actions group’s name will appear in the Custom actions(preview) list, the asset library and, once included in a desktop flow, in the actions tree
 -	Description (optional): A brief description of the custom actions. This information will be visible in the asset library, when the custom actions group is selected
 -	Select file: Here you must select the signed .cab file, containing the custom actions group (module) developed with the Custom actions SDK (link to the SDK) and any potential .dll dependencies.
 ![Screenshot of Upload custom actions blade](../media/custom-actions/upload-custom-actions/img3.png)
