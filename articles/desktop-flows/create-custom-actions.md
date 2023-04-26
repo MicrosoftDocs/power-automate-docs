@@ -24,12 +24,12 @@ search.audienceType:
 
 Power Automate for desktop can be extended through the Actions SDK (preview). Through the SDK, **custom modules** can be created and then utilized through desktop flows. 
 > [!NOTE]
-> The term **modules** is equivalent to the term **custom actions group** and is used to describe custom actions groups from a pro-dev perspective in this article.
+> The term **modules** is equivalent to the term **custom actions group** (preview) and is used to describe custom actions groups (preview) from a pro-dev perspective in this article.
 
 
 ## Prerequisites
 
-To create custom actions for Power Automate for desktop the following are required:
+To create custom actions (preview) for Power Automate for desktop the following are required:
 - An IDE (Integrated Development Environment - e.g. Visual Studio 2022) you can write C# on.
 - Power Automate for desktop installed on your machine.
 - The Actions SDK which you can download through Visual Studio's package manager or nuget.org. 
@@ -56,7 +56,7 @@ or
 dotnet new -i Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.Templates
 ``` 
 
-The creation of custom actions for desktop flows is summarized in the following steps:
+The creation of custom actions (preview) for desktop flows is summarized in the following steps:
 - Create a new project using Power Automate Desktop Actions - Visual Studio templates (preview).
 - Build your project.
 - Sign the generated .dll with a trusted certificate.
@@ -64,12 +64,12 @@ The creation of custom actions for desktop flows is summarized in the following 
 - Sign the .cab file
 
 > [!NOTE]
-> The .dll representing the custom actions group, its dependencies and the .cab which will contain all of them, must be properly signed with a valid certificate. The certifcate must also be present in the desktop on which the desktop flow containing the custom actions runs on.
+> The .dll representing the custom actions group (preview), its dependencies and the .cab which will contain all of them, must be properly signed with a valid certificate. The certifcate must also be present in the desktop on which the desktop flow containing the custom actions (preview) runs on.
 
 
 
-When extending the SDK keep in mind the following analogy:
-1. Every project (.dll) is a module (custom actions group).
+Keep in mind the following analogy:
+1. Every project (.dll) referencing the SDK is a module (custom actions group (preview)).
 2. Actions of this module are represented by classes inside that project. 
 
 After installing the Power Automate Desktop Actions templates for Visual Studio (preview), open Visual Studio and choose one of the following options:
@@ -139,7 +139,7 @@ Actions can also be organized in categories with the appropriate property in the
 You can pre-populate the parameters by setting a default value C# attribute. 
 
 For example, the default value of the InputArgument, is "Developer".
-By applying this, and modifying the Execute method to return an Output, the custom action should look as follows:
+By applying this, and modifying the Execute method to return an Output, the custom action (preview) should look as follows:
 
 ```csharp
 using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
@@ -200,9 +200,9 @@ For example, **Modules**.ContosoActions.dll
 The AssemblyTitle in the project settings specifies the module ID. It can only have alphanumeric characters and underscores and must begin with a letter.
 
 
-## Adding descriptions to custom actions
+## Adding descriptions to custom actions (preview)
 
-It is recommended to provide a description and a friendly name for the custom actions groups (module) and its respective actions so that Power Automate for desktop users will know how to best utilize them.
+It is recommended to provide a description and a friendly name for the module and its respective actions so that Power Automate for desktop users will know how to best utilize them.
 
 Friendly names and descriptions are displayed in the Power Automate for desktop's designer.
 
@@ -241,7 +241,7 @@ Add the Actions SDK (preview) to your project.
 
 To form an action in the custom module just created:
 - Delete the auto-generated Class1.cs file. 
-- Create a new class inside your project to represent the custom action and give it a distinct name. 
+- Create a new class inside your project to represent the custom action (preview) and give it a distinct name. 
 - Include the Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK and Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes namespaces.
 - All classes representing actions should have an [Action] attribute above your class. 
 - The class should have public access and inherit from ActionBase class.
@@ -292,7 +292,7 @@ namespace Modules.MyCustomModule
 }
 ```
 
-## Adding descriptions to custom actions created from scratch
+## Adding descriptions to custom actions (preview) created from scratch
 
 It is recommended to provide a description and a friendly name for the modules and actions so that RPA developers will know how to best utilize them.
 
@@ -313,7 +313,7 @@ It is also recommended to provide descriptions and friendly names for parameters
 
 Modules can include categories and subcategories for better action organization.
 
-In order to separate custom actions(preview) in categories, subcategories etc. modify the **[Action]** attribute which precedes the class that represents the custom action in the following manner:
+In order to separate custom actions(preview) in categories, subcategories etc. modify the **[Action]** attribute which precedes the class that represents the custom action (preview) in the following manner:
 
 ```csharp
 [Action(Category = "category.subcategory")]
@@ -322,17 +322,19 @@ In order to separate custom actions(preview) in categories, subcategories etc. m
 > [!NOTE] 
 > A Module can have multiple categories. Similarly, categories can be comprised by subcategories. This structure can be indefinite.
 
-Action1 belongs in the category "TestCategory". 
-
 The Order property dictates the order by which actions are previewed in the designer.
+
+Action1 belongs in the category "TestCategory" and it will be the first action of the module (this way you explain Order and category with an example.
 
 ```csharp
 [Action(Id = "Action1", Order = 1, Category = "TestCategory")]
 ```
 
-## Conditional and Wait actions
+## Conditional actions
 
-Conditional actions are actions that return either "True" or "False". 'If file exists' Power Automate for desktop action is a good example of a conditional action.
+Conditional actions are actions that return either "True" or "False". 'If file exists' Power Automate for desktop action of the standard library is a good example of a conditional action.
+
+Conditional action example:
 
 ```csharp
 using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
@@ -352,9 +354,6 @@ namespace Modules.CustomModule
 
         [InputArgument]
         public string InputArgument1 { get; set; }
-
-        [OutputArgument]
-        public string OutputArgument1 { get; set; }
 
         #endregion
 
@@ -379,16 +378,14 @@ namespace Modules.CustomModule
 }
 ```
 
-Notice the **Result** boolean variable. Returning to the File.Exists example, this action doesn't return an Output Argument. 
+Notice the **Result** boolean variable. 
 
-This will create a new If action. What is checked there is the value held by the Result variable.
-
-
+The **If file exists** action does not have an output argument. What it returns is either true or false, depending on what the boolean variable **Result** holds. 
 
 
-## Custom action selectors
+## Custom action (preview) selectors
 
-There are particular cases, in which a custom action might be required to have more than one flavors. 
+There are particular cases, in which a custom action (preview) might be required to have more than one variations. 
 
 An example would be the "Launch Excel" action, from the standard library of actions. 
 
@@ -398,7 +395,7 @@ Using the "with a blank document" selector, the flow will launch a blank Excel d
 
 The two actions mentioned above, are two selectors of the "Launch Excel" base action. 
 
-When creating custom actions you don't have to re-write functionality.
+When creating custom actions (preview) you don't have to re-write functionality.
 
  You can create a single "base" Action, setting its input and output parameters and then choose what would be visible in each flavor by utilizing action selectors. 
 
@@ -408,7 +405,7 @@ Think of selectors as choices, filtering a single action and presenting only the
 
 ![Screenshot of action selectors diagram](../media/custom-actions/create-custom-actions/img4.png)
 
-To form a new action selector, first create a central action to be utilized by the selectors. 
+To form a new action selector, first create a base action to be utilized by the selectors. 
 
 The central action requires either a boolean or an enum property as an input C# argument. 
 
@@ -475,7 +472,7 @@ namespace Modules.CustomModule
 }
 ```
 
-## Custom action selectors using enums
+## Custom action (preview) selectors using enums
 
 In this example you will create three selectors. A simple enum will dictate the appropriate selector each time:
 
@@ -490,8 +487,14 @@ public enum SelectorChoice
 
 Selectors are represented by classes. 
 
+<<<<<<< Updated upstream
 Those classes must inherit the **ActionSelector<TBaseActionClass> class**.
 
+=======
+Those classes must inherit the **ActionSelector<> class**.
+>[!NOTE] 
+>TBaseActionClass is the base action class name.
+>>>>>>> Stashed changes
 
 In the UseName() method, the name of the action selector is declared. This is used as a name of the action to resolve the resources.
 
@@ -562,7 +565,7 @@ public override void Execute(ActionContext context)
 }
 ```
 
-## Custom action selectors using boolean
+## Custom action (preview) selectors using boolean
 
 An example utilizing Boolean instead of enums is demonstrated below.
 
@@ -627,7 +630,7 @@ namespace Modules.CustomModule
 }
 ```
 
-## Setting descriptions for custom action selectors
+## Setting descriptions for custom action (preview) selectors
 
 To create a description and a summary for selectors, use the following format in the .resx file of your custom module.
 
@@ -680,7 +683,7 @@ SHA256 {path to the .dll you want to sign}.dll
 
 ## Packaging everything in a cabinet file
 
-The .dll containing the custom actions and all its dependencies (.dll files) must be packaged in a cabinet file (.cab). 
+The .dll containing the custom actions (preview) and all its dependencies (.dll files) must be packaged in a cabinet file (.cab). 
 
 Create a Windows PowerShell Script (.ps1) containing the following lines: 
 ```PowerShell
@@ -728,3 +731,5 @@ Example:
 ```
 > [!NOTE]
 > The .cab file must also be signed. Unsigned .cab files and/or unsigned .dlls contained in them will not be usable in desktop flows and will result in error during inclusion.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
