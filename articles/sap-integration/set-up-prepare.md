@@ -1,6 +1,6 @@
 ---
 title: Set up SAP integration with Power Platform
-description: Learn about the requirements to configure SAP integration, and prepare your on-premises SAP infrastructure to connect with Power Platform
+description: Learn about the requirements to configure SAP integration, and prepare your on-premises SAP infrastructure to connect with Power Platform.
 author: jongilman88
 contributors: 
 - EllenWehrle
@@ -52,7 +52,7 @@ The assembled team of IT system administrators needs to review the following req
 - [SAP](<https://www.sap.com/>) subscription:
   
   - The SAP ERP connector can work with any SAP system that uses RFC and BAPI calls.
-  - Set up requires an administrator who has valid S-User access to the SAP system(s). The S-User is an SAP super administrator and has all of the authorizations for the portal and can manage other necessary SAP roles as necessary.
+  - Setup requires an administrator who has valid S-User access to the SAP systems. The S-User is an SAP super administrator who has all of the authorizations for the portal and can manage other necessary SAP roles as necessary.
 
 - [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server. Create a Windows VM or provision a server specifically for hosting the on-premises data gateway for SAP integration with Power Platform.
   - Ensure it meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended) for gateway installation and management.
