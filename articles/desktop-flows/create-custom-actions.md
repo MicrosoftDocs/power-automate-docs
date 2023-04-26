@@ -72,7 +72,7 @@ When extending the SDK keep in mind the following analogy:
 1. Every project (.dll) is a module (custom actions group).
 2. Actions of this module are represented by classes inside that project. 
 
-After installing the Power Automate Desktop Actions templates for Visual Studio (preview) ), open Visual Studio and choose one of the following options:
+After installing the Power Automate Desktop Actions templates for Visual Studio (preview), open Visual Studio and choose one of the following options:
 
 ![Screenshot of Power Automate Visual Studio templates](../media/custom-actions/create-custom-actions/img1.png)
 
