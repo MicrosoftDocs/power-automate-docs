@@ -7,7 +7,7 @@ ms.date: 04/24/2023
 ms.author: appapaio
 ms.reviewer: ndoelman
 contributors:
-author: appapaio
+author: rpapostolis
 search.audienceType: 
   - flowmaker
   - enduser
@@ -15,7 +15,7 @@ search.audienceType:
 
 # Manage security for Power Automate
 
-In order to manage security for Power Automate, it's important to understand the security concepts and terminology of [Microsoft Dataverse](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-intro), which is the underlying data platform for Power Platform components. Dataverse has a strong security model that uses security roles, teams, and business units to control access to tables, fields, and records using permission and row-level access control. Learn more about [**Dataverse security roles and privileges**](/power-platform/admin/security-roles-privileges).
+In order to manage security for Power Automate, it's important to understand the security concepts and terminology of [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro), which is the underlying data platform for Power Platform components. Dataverse has a strong security model that uses security roles, teams, and business units to control access to tables, fields, and records using permission and row-level access control. Learn more about [**Dataverse security roles and privileges**](/power-platform/admin/security-roles-privileges).
 
 In this article, we'll review the built-in security roles that ship for Power Automate Desktop flows.
 
@@ -94,12 +94,12 @@ The Environment Maker role in Dataverse is a built-in security role that lets us
 
 Environment maker usage references:
 
-- [Hosted machines](/articles/desktop-flows/hosted-machines#environment-maker-role)
-- [Hosted machine groups](/articles/desktop-flows/hosted-machine-groups#environment-maker-role)
+- [Hosted machines](/desktop-flows/hosted-machines#environment-maker-role)
+- [Hosted machine groups](/desktop-flows/hosted-machine-groups#environment-maker-role)
 
 ### Desktop Flows Machine Configuration Admin
 
-This role is typically assigned to CoE or IT admins that manage VM images and virtual networks. Users with this role have full privileges on the VM image and VNet specific tables, which are used for hosted machine scenarios. In particular, this allows users with this role to add VM images, image versions and share/unshare VM images to be used for created hosted machine scenarios in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machine groups.](/articles/desktop-flows/hosted-machine-groups#create-hosted-machine-groups)
+This role is typically assigned to CoE or IT admins that manage VM images and virtual networks. Users with this role have full privileges on the VM image and VNet specific tables, which are used for hosted machine scenarios. In particular, this allows users with this role to add VM images, image versions and share/unshare VM images to be used for created hosted machine scenarios in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machine groups.](/desktop-flows/hosted-machine-groups#create-hosted-machine-groups)
 :::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-configuration-admin.png" alt-text="Screenshot of the permissions for the Desktop Flow Machine Configuration Admin role.":::
 
 ### Desktop Flows Machine Owner
