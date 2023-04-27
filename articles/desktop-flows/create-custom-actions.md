@@ -298,7 +298,7 @@ It is recommended to provide a description and a friendly name for the modules a
 
 Friendly Names and Descriptions are displayed in the Power Automate for desktop's Designer.
 
-The suggested approach is to create a "Resource.resx" file inside the Properties folder of the module project. The new ".resx" file should be named "Resources.resx".
+The suggested approach is to create a "Resources.resx" file inside the Properties folder of the module project. The new ".resx" file should be named "Resources.resx".
 
 The format of the descriptions for Modules and Actions should be as follows: "Module_Description" or "Action_Description" and "Module_FriendlyName" or "Action_FriendlyName" respectively in the name field. The description in the value field.
 
@@ -463,8 +463,10 @@ namespace Modules.CustomModule
             {
                 DisplayedMessage = $"Hello, {FirstName} {LastName}!";
             }
-            else // The 3rd Selector was chosen {
+            else // The 3rd Selector was chosen 
+            {
                 DisplayedMessage = $"Hello, {FirstName} {LastName}!\nYour age is: {Age}";
+            }
         }
 
         #endregion
@@ -555,8 +557,10 @@ public override void Execute(ActionContext context)
     {
         DisplayedMessage = $"Hello, {FirstName} {LastName}!";
     }
-    else // The 3rd Selector was chosen {
+    else // The 3rd Selector was chosen 
+    {
         DisplayedMessage = $"Hello, {FirstName} {LastName}!\nYour age is: {Age}";
+    }
 }
 ```
 
