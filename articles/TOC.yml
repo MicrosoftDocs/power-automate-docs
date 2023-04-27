@@ -79,7 +79,7 @@
     - name: Add a condition
       href: add-condition.md
     - name: Associate flows to apps
-      href  associate-flow-to-app.md
+      href:  associate-flow-to-app.md
     - name: Use data operations
       href: data-operations.md
     - name: Use expressions in conditions

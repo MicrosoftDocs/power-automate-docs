@@ -1,13 +1,9 @@
 ---
 title: Associate flows to apps
 description: Learn how to associate automated and scheduled flows with Power Apps and Dynamics 365 apps.
-contributors:
-  - PriyaKodukula
-  - v-aangie
 author: PriyaKodukula
 contributors:
   - PriyaKodukula
-  - thomasjeffries11
   - v-aangie
 ms.author: prkoduku
 ms.reviewer: angieandrews
@@ -40,7 +36,7 @@ Once you've made the association between a flow and an app with the following st
 
 1. On the **Associated Apps** page, select **Add association**.
 
-    You'll find all the Power Apps that are using the same data sources as the flow.
+    You'll find of all the apps in Power Apps that are using the same data sources as the flow.
 
 1. To find Dynamics 365 apps, select the **Dynamics 365** tab.
 
@@ -50,11 +46,11 @@ Once you've made the association between a flow and an app with the following st
 >
 > If you're unable to find your app, go to [Why can't I find my app in the list of apps?](#why-cant-i-find-my-app-in-the-list-of-apps) in the *FAQ* section of this article.
 
-1. On the **Associated Apps** page, select one more more apps, and then select **Save**.
+1. On the **Associated Apps** page, select one or more apps, and then select **Save**.
 
 1. To see the associated apps, go back to flow details.  
 
-    :::image type="content" source="./media/associate-flow-to-app/assoc-apps.png" alt-text="Screenshot of the Power Apps and Dynamics 365 tabs.":::
+    :::image type="content" source="./media/associate-flow-to-app/assoc-apps.png" alt-text="Screenshot of the associated apps list.":::
 
 ## Remove an association
 
