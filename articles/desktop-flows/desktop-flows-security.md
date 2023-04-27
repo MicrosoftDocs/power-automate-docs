@@ -92,14 +92,9 @@ Following security roles are available out-of-the-box with Power Automate.
 The Environment Maker role in Dataverse is a built-in security role that lets users create and manage their resources associated with an environment. This includes apps, connections, custom APIs, gateways, cloud flows, and desktop flows, as long as the user has the appropriate license for the intended product area.
 :::image type="content" source="media/desktop-flows-security-roles/environment-maker.png" alt-text="Screenshot of the permissions for the Environment Maker role.":::
 
-Environment maker usage references:
-
-- [Hosted machines](/desktop-flows/hosted-machines#environment-maker-role)
-- [Hosted machine groups](/desktop-flows/hosted-machine-groups#environment-maker-role)
-
 ### Desktop Flows Machine Configuration Admin
 
-This role is typically assigned to CoE or IT admins that manage VM images and virtual networks. Users with this role have full privileges on the VM image and VNet specific tables, which are used for hosted machine scenarios. In particular, this allows users with this role to add VM images, image versions and share/unshare VM images to be used for created hosted machine scenarios in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machine groups.](/desktop-flows/hosted-machine-groups#create-hosted-machine-groups)
+This role is typically assigned to CoE or IT admins that manage VM images and virtual networks. Users with this role have full privileges on the VM image and VNet specific tables, which are used for hosted machine scenarios. In particular, this allows users with this role to add VM images, image versions and share/unshare VM images to be used for created hosted machine scenarios in their environment.
 :::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-configuration-admin.png" alt-text="Screenshot of the permissions for the Desktop Flow Machine Configuration Admin role.":::
 
 ### Desktop Flows Machine Owner
