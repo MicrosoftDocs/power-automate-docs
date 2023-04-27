@@ -23,8 +23,8 @@ Custom actions (preview) developed by your organization and uploaded to the resp
 
 Custom actions (preview) exist on an environment level. As a best practice you should use the dev-test-prod model when developing custom actions (preview), having a development environment and working the way up until you feel confident about stability and finally uploading the stable version of custom actions (preview) to the production environment.
 
-> [!NOTE]
-> .dll files describing the custom actions (preview), their .dll dependencies and the .cab file containing everything should be properly signed with a digital certificate trusted by your organization (included in Trusted Root Certification Authorities). The certificate should also be present under the Trusted Root Certification Authorities for each machine on which a desktop flow with custom action (preview) dependencies is executed.
+> [!IMPORTANT]
+> .dll files describing the custom actions (preview), their .dll dependencies and the .cab file containing everything should be properly signed with a digital certificate trusted by your organization. The certificate should also be installed on each machine on which a desktop flow with custom action (preview) dependencies is executed, present under the Trusted Root Certification Authorities.
 
 ## Known limitations
 - Custom actions groups (preview) uploaded cannot be bigger than 30mb.
