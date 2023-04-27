@@ -10,7 +10,6 @@ ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 04/03/2023
 ms.author: derahonuorah
-ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -89,7 +88,7 @@ Process advisor is licensed as part of Power Automate per-user licenses. If you 
 - Use of the [desktop application](minit/minit-desktop-application-overview.md) which provides many features to get deep insights into your process
 - Customize the analytics report by publishing it into your own Power BI workspace
 
-For inquiries about add-on capability licensing, contact minitq@microsoft.com
+For inquiries about add-on capability licensing, contact [minitq@microsoft.com](mailto:minitq@microsoft.com).
 
 **Trial license:** You can start a free 90 day Power Automate premium trial will provide access to all available capabilities listed above, including the add-on capability. Note that there is a process size limit for any processes created while on the trial.
 
