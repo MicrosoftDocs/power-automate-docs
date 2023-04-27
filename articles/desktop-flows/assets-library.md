@@ -1,5 +1,5 @@
 ---
-title: Asset library 
+title: Assets library 
 description: Power Automate for desktop's asset library
 author: jpapadimitriou
 
@@ -14,20 +14,20 @@ search.audienceType:
   - enduser
 ---
 
-# Asset library
+# Assets library
 
 > [!IMPORTANT]
 > Power Automate for desktop v2.32 and newer is required
 
-The Asset library is the way to include additional functionality in desktop flows. 
+The Assets library is the way to include additional functionality in desktop flows. 
 
 Custom actions (preview) developed by organizations and uploaded to the respective environments can be included/removed from desktop flows. 
 
-To access the Asset library either click on the dedicated button at the top right of the designer: 
-![Screenshot of the Asset library button](../media/asset-library/img1.png)
+To access the Assets library either click on the dedicated button at the top right of the designer: 
+![Screenshot of the Assets library button](../media/assets-library/img1.png)
 
 or through the entry under the Tools bar:
-![Screenshot of the Asset library button under tools](../media/asset-library/img2.png)
+![Screenshot of the Assets library button under tools](../media/assets-library/img2.png)
 
 ## Custom actions (preview) tab
 
@@ -35,7 +35,7 @@ In the Custom actions (preview) tab, you will find the custom actions (preview) 
 > [!NOTE] 
 > Makers are able to see custom actions (preview) shared with them.
 
- ![Screenshot of the Custom actions tab in the Asset library](../media/asset-library/img3.png)
+ ![Screenshot of the Custom actions tab in the Assets library](../media/assets-library/img3.png)
  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

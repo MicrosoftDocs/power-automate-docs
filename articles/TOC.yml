@@ -419,7 +419,7 @@
     - name: Configure actions and the actions pane
       href: ./desktop-flows/actions-pane.md
     - name: Asset library
-      href: ./desktop-flows/asset-library.md
+      href: ./desktop-flows/assets-library.md
     - name: Manage the flow designer workspace
       href: ./desktop-flows/designer-workspace.md
     - name: Debug a desktop flow

@@ -19,9 +19,9 @@ search.audienceType:
 > [!IMPORTANT]
 > Power Automate for desktop v2.32 and newer is required
 
-You can include custom actions (preview) in desktop flows through the [Asset library](./asset-library.md).
+You can include custom actions (preview) in desktop flows through the [Assets library](./assets-library.md).
 
-Though Power Automate for desktop’s designer open the Asset library. 
+Though Power Automate for desktop’s designer open the Assets library. 
 You can do that either through the dedicated button 
 ![Screenshot of Asset library button](../media/custom-actions/use-custom-actions/img1.png)
 
@@ -32,7 +32,7 @@ In the Custom actions (preview) tab, you will find the custom actions (preview) 
 > [!NOTE] 
 > Only custom actions (preview) shared with you are visible.
 
- ![Screenshot of Custom actions tab in the Asset library](../media/custom-actions/use-custom-actions/img3.png)
+ ![Screenshot of Custom actions tab in the Assets library](../media/custom-actions/use-custom-actions/img3.png)
  
 
 Once you have concluded the inclusion of custom actions (preview) and close the Asset library, they will all be listed at the bottom of the Actions tree, under the **Custom Actions** section: 
