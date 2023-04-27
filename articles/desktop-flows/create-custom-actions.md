@@ -216,6 +216,7 @@ It is also recommended to provide descriptions and friendly names for parameters
 
 These can also be set with the FriendlyName and Description properties of the **[InputArgument]**, **[OutputArgument]** and **[Action]** attributes.
 
+Example of a **Resources.resx** file for a custom module:
 ![Screenshot of Resources](../media/custom-actions/create-custom-actions/img2.png)
 
 > It is recommended to denote what it is you are describing in the comment field (e.g. Module, Action etc.)
