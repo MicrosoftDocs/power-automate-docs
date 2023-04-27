@@ -30,7 +30,7 @@ Power Automate for desktop can be extended through the Actions SDK (preview). Th
 ## Prerequisites
 
 To create custom actions (preview) for Power Automate for desktop the following are required:
-- .NET 4.7.2 must be installed on your system
+- .NET Framework 4.7.2 SDK must be installed on your system
 - An IDE (Integrated Development Environment - e.g. Visual Studio 2022) you can write C# on.
 - Power Automate for desktop installed on your machine.
 - The Actions SDK which you can download through Visual Studio's package manager or nuget.org. 
@@ -65,7 +65,7 @@ The creation of custom actions (preview) for desktop flows is summarized in the 
 - Sign the .cab file
 
 > [!NOTE]
-> The .dll representing the custom actions group (preview), its dependencies and the .cab which will contain all of them, must be properly signed with a valid certificate. The certifcate must also be present in the desktop on which the desktop flow containing the custom actions (preview) runs on.
+> The .dll representing the custom actions group (preview), its dependencies and the .cab which will contain all of them, must be properly signed with a valid certificate. The certificate must also be present in the desktop on which the desktop flow containing the custom actions (preview) runs on.
 
 
 
