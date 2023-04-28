@@ -65,7 +65,7 @@ The creation of custom actions (preview) for desktop flows is summarized in the 
 - Sign the .cab file
 
 > [!NOTE]
-> The .dll representing the custom actions group (preview), its dependencies and the .cab which will contain all of them, must be properly signed with a valid certificate. The certificate must also be present in the desktop on which the desktop flow containing the custom actions (preview) runs on.
+> The .dll file representing the custom actions group (preview), its dependencies and the .cab file containing all of them, must be properly signed with a valid certificate. The certificate must also be installed on the desktop where the desktop flow containing the custom actions (preview) runs.
 
 
 
@@ -73,7 +73,7 @@ Keep in mind the following analogy:
 1. Every project (.dll) referencing the SDK is a module (custom actions group (preview)).
 2. Actions of this module are represented by classes inside that project. 
 
-After installing the Power Automate Desktop Actions templates for Visual Studio (preview), open Visual Studio and choose one of the following options:
+After installing the Power Automate Desktop Actions templates for Visual Studio (preview), start Visual Studio and select one of the following options:
 
 ![Screenshot of Power Automate Visual Studio templates](../media/custom-actions/create-custom-actions/img1.png)
 
@@ -85,7 +85,7 @@ After installing the Power Automate Desktop Actions templates for Visual Studio 
 >[!NOTE]
 > In these examples, the Power Automate Sample Module Project (a project including a simple action (Action1.cs)) is utilized.
 
-This is how the Action1.cs looks like out of the box:
+This is how the Action1.cs looks like after creating a Power Automate Sample Module:
 
 ```csharp
 using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
@@ -131,11 +131,11 @@ namespace Modules.CustomModule
 }
 ```
 
-The majority of actions have parameters (Input or Output). 
-Input and Output parameters are represented by classic C# properties. 
+Actions can have parameters (Input or Output). 
+Input and Output parameters are represented by C# properties. 
 
 Each property should have an appropriate C# attribute, either [InputArgument] or [OutputArgument] to dictate its type and how they are presented in Power Automate for desktop.
-Actions can also be organized in categories with the appropriate property in the Action attribute.
+Actions can also be organized in categories by setting the Category property of the Action attribute.
 
 You can pre-populate the parameters by setting a default value C# attribute. 
 
