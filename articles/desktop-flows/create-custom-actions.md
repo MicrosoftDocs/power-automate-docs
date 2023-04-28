@@ -69,7 +69,7 @@ The creation of custom actions (preview) for desktop flows is summarized in the 
 
 
 
-Keep in mind the following analogy:
+Keep in mind the following:
 1. Every project (.dll) referencing the SDK is a module (custom actions group (preview)).
 2. Actions of this module are represented by classes inside that project. 
 
