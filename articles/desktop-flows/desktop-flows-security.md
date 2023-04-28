@@ -112,11 +112,6 @@ This role allows users to run Desktop flows but not configure machines. A CoE ma
 This role extends the **Desktop Flows Machine User** and allows users to share machines that have been shared with them.
 :::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-user-can-share.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine User Can Share role.":::
 
-### Desktop Flows Module Developer
-
-This role allows users to create, edit, and delete custom Power Automate Desktop actions.
-:::image type="content" source="media/desktop-flows-security-roles/desktop-flows-module-developer.png" alt-text="Screenshot of the permissions for the Desktop Flows Module Developer role.":::
-
 ### Desktop Flows Runtime Application User
 
 This role is used by Power Automate cloud services when interacting with the Dataverse environment.
