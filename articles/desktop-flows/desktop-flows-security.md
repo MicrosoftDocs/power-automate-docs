@@ -119,7 +119,7 @@ This role allows users to create, edit, and delete custom Power Automate Desktop
 
 ### Desktop Flows Runtime Application User
 
-Users with this role can run flows that are deployed to the Power Automate Desktop runtime, but can't create, edit, or delete flows. This role is typically assigned to users who need to run Power Automate Desktop flows on a runtime level, but don't need to create or manage flows.
+This role is used by Power Automate cloud services when interacting with the Dataverse environment.
 :::image type="content" source="media/desktop-flows-security-roles/desktop-flows-runtime-application-user.png" alt-text="Screenshot of the permissions for the Desktop Flows Runtime Application User role.":::
 
 ### Desktop Flows Machine Application User
@@ -128,7 +128,7 @@ This role is used by Power Automate cloud services when interacting with the Dat
 :::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-application-user.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Application User role.":::
 
 > [!NOTE]
-> The Desktop Flows Machine Application User and Desktop Flows Machine Application User roles are used by the Power Automate cloud services when interacting with the Dataverse environment. Modifying privileges and configuration for these roles may break Desktop Flow features.
+> The Desktop Flows Runtime Application User and Desktop Flows Machine Application User roles are used by the Power Automate cloud services when interacting with the Dataverse environment. Modifying privileges and configuration for these roles may break Desktop Flow features.
 
 ### More resources
 
