@@ -134,7 +134,7 @@ namespace Modules.CustomModule
 Actions can have parameters (Input or Output). 
 Input and Output parameters are represented by C# properties. 
 
-Each property should have an appropriate C# attribute, either [InputArgument] or [OutputArgument] to dictate its type and how they are presented in Power Automate for desktop.
+Each property should have an appropriate C# attribute, either ```[InputArgument]``` or ```[OutputArgument]``` to dictate its type and how they are presented in Power Automate for desktop.
 Actions can also be organized in categories by setting the Category property of the Action attribute.
 
 You can pre-populate the parameters by setting a default value C# attribute. 
@@ -214,7 +214,7 @@ The format of the descriptions for modules and actions should be as follows: "Mo
 
 It is also recommended to provide descriptions and friendly names for parameters. Their format should be as follows: "Action_Parameter_Description", "Action_Parameter_FriendlyName".
 
-These can also be set with the FriendlyName and Description properties of the **[InputArgument]**, **[OutputArgument]** and **[Action]** attributes.
+These can also be set with the FriendlyName and Description properties of the ```[InputArgument]```, ```[OutputArgument]``` and ```[Action]``` attributes.
 
 Example of a **Resources.resx** file for a custom module:
 ![Screenshot of Resources](../media/custom-actions/create-custom-actions/img2.png)
@@ -267,7 +267,7 @@ namespace Modules.MyCustomModule
 ```
 
 The majority of actions have parameters (Input or Output). Input and Output parameters are represented by classic C# properties.
-Each property should have an appropriate C# attribute, either [InputArgument] or [OutputArgument] to dictate its type and how they are presented in Power Automate for desktop.
+Each property should have an appropriate C# attribute, either ```[InputArgument]``` or ```[OutputArgument]``` to dictate its type and how they are presented in Power Automate for desktop.
 Input arguments can also have default values.
 
 ```csharp
