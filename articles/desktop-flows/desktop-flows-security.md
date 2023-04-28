@@ -98,12 +98,12 @@ This role is typically assigned to CoE or IT admins that manage VM images and vi
 ### Desktop Flows Machine Owner
 
 This role allows users to manage machines and machine groups they own, including creating, editing, sharing and deleting machines and machine groups.
-:::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-owner.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Owner role.":::
+:::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-owner.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Owner role." lightbox="media/desktop-flows-security-roles/desktop-flows-machine-owner.png":::
 
 ### Desktop flows machine user
 
 This role allows users to run Desktop flows but not configure machines. A CoE may assign this role to other users in the environment, so that they can use machines created and shared by the CoE, but not edit or share them.
-:::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-user.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine User role." lightbox=="media/desktop-flows-security-roles/desktop-flows-machine-user.png":::
+:::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-user.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine User role." lightbox="media/desktop-flows-security-roles/desktop-flows-machine-user.png":::
 
 ### Desktop flows machine user can share
 
@@ -113,7 +113,7 @@ This role extends the **desktop flows machine user** role and allows users to sh
 ### Desktop flows runtime application user
 
 This role is used by Power Automate cloud services when interacting with the Dataverse environment.
-:::image type="content" source="media/desktop-flows-security-roles/desktop-flows-runtime-application-user.png" alt-text="Screenshot of the permissions for the Desktop Flows Runtime Application User role." lightbox="Screenshot of the permissions for the Desktop Flows Runtime Application User role.":::
+:::image type="content" source="media/desktop-flows-security-roles/desktop-flows-runtime-application-user.png" alt-text="Screenshot of the permissions for the Desktop Flows Runtime Application User role." lightbox="media/desktop-flows-security-roles/desktop-flows-runtime-application-user.png":::
 
 ### Desktop flows machine application user
 
