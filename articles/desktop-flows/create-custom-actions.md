@@ -61,7 +61,7 @@ The creation of custom actions (preview) for desktop flows is summarized in the 
 - Create a new project using Power Automate Desktop Actions - Visual Studio templates (preview).
 - Build your project.
 - Sign the generated .dll with a trusted certificate.
-- Package the generated .dll along with all its dependencies in a .cab file.
+- Pack the generated .dll along with all its dependencies in a .cab file.
 - Sign the .cab file
 
 > [!NOTE]
