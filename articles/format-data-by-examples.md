@@ -20,16 +20,9 @@ search.audienceType:
   - enduser
 ---
 
-# Format data by examples (preview)
-
-[This article is pre-release documentation and is subject to change.]
+# Format data by examples
 
 [Expressions](./use-expressions-in-conditions.md) in Power Automate is a powerful way to perform operations over data. You can use the *Format data by examples* feature to access these expressions without knowing the different functions and corresponding syntax that's needed to create the expressions that you want. To format text, dates, and numbers, you can just provide examples of the output format that you want the flow to produce, and Power Automate will automatically generate the expression formula to use.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Format dates by examples
 
