@@ -24,8 +24,7 @@ search.audienceType:
 # Introduction to desktop flows
 
 >[!WARNING]
->Please hold back from updating to the latest version of web browsers utilizing the **Chromium engine v113.x.x** (Google Chrome, Microsoft Edge). Upgrading will result in failure of desktop flows that utilize **Browser automation** actions. 
->We are currently working on an update.
+>Please hold back from updating to the latest version of web browsers utilizing the **Chromium engine v113.x.x** (Google Chrome, Microsoft Edge). Upgrading will result in failure of desktop flows that utilize **Browser automation** actions. We are currently working on an update.
 
 Desktop flows broaden the existing robotic process automation (RPA) capabilities in Power Automate and enable you to automate all repetitive desktop processes. Automating is quicker and easier than ever with the new intuitive Power Automate desktop flow designer using the prebuilt drag-and-drop actions or recording your own desktop flows to run later. 
 
