@@ -272,8 +272,26 @@ The final step is to delete the user's Azure AD account.
 
 #### Delete the user from an unmanaged tenant
 
-If the user is a member of an unmanaged tenant, you can close the user's account from the [Work and School Privacy portal](https://go.microsoft.com/fwlink/?linkid=873123).<!-- EDITOR'S NOTE: This link doesn't go anywhere. I can't find a "Work and School Privacy portal." Can you please fix? -->
+If the user is a member of an unmanaged tenant, you can close the user's account from the [Work and School Privacy portal](/azure/active-directory/enterprise-users/users-close-account).
 
-<!-- EDITOR'S NOTE: I removed the section on determining whether the user is part of an unmanaged tenant because this article is for admins, not users. -->
+To determine whether or not you are a user of a managed or unmanaged tenant, perform the following actions:
+
+1. Open the following URL in a browser, making sure to replace your email address in the URL:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
+
+1. If you are a member of an **unmanaged tenant** then you will see an `"IsViral": true` in the response.
+
+    ```
+        {
+    
+         "Login": "foobar@unmanagedcontoso.com",
+    
+        "DomainName": "unmanagedcontoso.com",
+    
+        "IsViral": true,
+        
+        }
+    ```
+
+1. Otherwise, you belong to a managed tenant.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
