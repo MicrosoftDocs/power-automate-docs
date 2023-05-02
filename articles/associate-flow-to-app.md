@@ -14,15 +14,14 @@ ms.custom:
 
 # Associate flows to apps
 
-You can associate automated and scheduled flows with Power Apps and Dynamics 365 apps from the Power Automate portal. This feature allows you to manage flows and apps together, which makes it easier to keep track of dependencies. It also ensures that apps are always up to date.
+You can associate automated and scheduled flows with Power Apps and Dynamics 365 apps from the Power Automate portal. This feature allows you to manage flows and apps together, which makes it easier to keep track of dependencies.If the associated Power Apps or Dynamics 365 app is missing in any environment, the flow will alert you about the missing dependency. It also ensures that apps are always up to date.
 
 This feature can provide relief to makers who often struggle to keep track of which flows are being used by which apps. Without this association, flows can break if the corresponding app isn't present in the environment. This can cause frustration and delays.
 
-Moreover, if the associated Power Apps or Dynamics 365 app is missing in any environment, the flow will alert you about the missing dependency. This provides clarity and guidance for how to resolve the issue.
 
 ## Add an association
 
-Once you've made the association between a flow and an app with the following steps, it will be preserved across all environments in which the flow is deployed. This consistency and continuity will help to reduce errors and speed up the development process.
+Once you've made the association between a flow and an app with the following steps, it will be preserved as the flow is deployed in other environments. This consistency and continuity will help to reduce errors and speed up the development process.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -36,7 +35,7 @@ Once you've made the association between a flow and an app with the following st
 
 1. On the **Associated Apps** page, select **Add association**.
 
-    You'll find of all the apps in Power Apps that are using the same data sources as the flow.
+    You'll find all the apps in Power Apps that are using the same data sources as the flow.
 
 1. To find Dynamics 365 apps, select the **Dynamics 365** tab.
 
@@ -103,3 +102,7 @@ This is a known issue. We don't automatically display the apps that are using th
 ### I have a Power Apps per app license. How can I ensure the in-context flows run?
 
 A Power Apps per app license allows a limited set of Power Automate capabilities. If the flow is supporting an app in Power Apps, associate the flow to the app. Once the association is done, users with Power Apps per app license can use the flow.  
+
+### I am an admin and want to assosciate flows and apps in bulk. Is there an admin command?
+Use the powershell command [here](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps)
+
