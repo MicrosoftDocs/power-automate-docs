@@ -10,6 +10,7 @@ ms.custom: intro-internal
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -19,6 +20,11 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
+>[!WARNING]
+>Please hold back from updating to the latest version of web browsers utilizing the **Chromium engine v113.x.x** (Google Chrome, Microsoft Edge). Upgrading will result in failure of desktop flows that utilize **Browser automation** actions. 
+>We are currently working on an update.
+
 
 # Introduction to desktop flows
 
