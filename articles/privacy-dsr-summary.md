@@ -31,7 +31,7 @@ Power Automate provides tools and resources to help you respond to requests to c
 
 ## Prerequisites
 
-- A paid or [trial license](http://make.powerapps.com/trial) for Power Apps Plan 2
+- A paid or [trial license](https://make.powerapps.com/trial) for Power Apps Plan 2
 - The [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory (Azure AD) Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) role
 
 If you're a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover) and don't have a global administrator, you can export and remove your own personal data. You must have an Azure AD account with a [Power Automate license](https://make.powerautomate.com/pricing/).
@@ -46,7 +46,7 @@ Requests from data subjects require one or more of the following actions, depend
 
 1. **Correct:** Make changes to personal data as requested, if appropriate.
 
-    As a data processor, Microsoft doesn't offer the ability to edit system-generated logs. These logs reflect factual activities and constitute a history of all events within a service. [Learn more about system-generated logs in Power Automate](/power-platform/admin/powerapps-dsr-guide-systemlogs).
+    As a data processor, Microsoft doesn't offer the ability to edit system-generated logs. These logs reflect factual activities and constitute a history of all events within a service. [Learn more about system-generated logs in Power Automate](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs).
 
 1. **Restrict:** Restrict the processing of personal data, either by removing licenses for various services or turning off the services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 

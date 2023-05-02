@@ -3,7 +3,6 @@ title: Respond to personal data export requests (Azure AD)
 description: Learn about the resources available in Power Automate to help you meet your obligations to export customers' personal data under various privacy laws and regulations for users who authenticate using Azure AD.
 suite: flow
 services: ''
-suite: flow
 documentationcenter: na
 author: MSFTMAN
 manager: KVIVEK

@@ -44,11 +44,11 @@ Requests from data subjects require one or more of the following actions, depend
 
 1. **Correct:** Make changes to personal data as requested, if appropriate.
 
-    As a data processor, Microsoft doesn't offer the ability to edit system-generated logs. These logs reflect factual activities and constitute a history of all events within a service. [Learn more about system-generated logs in Power Automate](/power-platform/admin/powerapps-dsr-guide-systemlogs).
+    As a data processor, Microsoft doesn't offer the ability to edit system-generated logs. These logs reflect factual activities and constitute a history of all events within a service. [Learn more about system-generated logs in Power Automate](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs).
 
 1. **Restrict:** Restrict the processing of personal data, either by removing licenses for various services or turning off the services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 
-1. [**Delete:**](privacy-dsr-delete-msa.md) Permanently remove personal data that resides in Microsoft's cloud. [Learn more about closing a Microsoft account](dsr-accountclose-msa.md).
+1. [**Delete:**](privacy-dsr-delete-msa.md) Permanently remove personal data that resides in Microsoft's cloud. [Learn more about closing a Microsoft account](privacy-dsr-accountclose-msa).
 
 1. [**Export:**](privacy-dsr-export-msa.md) Provide an electronic copy of personal data in a machine-readable format to the data subject.
 
