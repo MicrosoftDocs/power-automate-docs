@@ -48,7 +48,7 @@ Requests from data subjects require one or more of the following actions, depend
 
 1. **Restrict:** Restrict the processing of personal data, either by removing licenses for various services or turning off the services where possible. You can also remove data from the Microsoft cloud and retain it on-premises or at another location.
 
-1. [**Delete:**](privacy-dsr-delete-msa.md) Permanently remove personal data that resides in Microsoft's cloud. [Learn more about closing a Microsoft account](privacy-dsr-accountclose-msa).
+1. [**Delete:**](privacy-dsr-delete-msa.md) Permanently remove personal data that resides in Microsoft's cloud. [Learn more about closing a Microsoft account](privacy-dsr-accountclose-msa.md).
 
 1. [**Export:**](privacy-dsr-export-msa.md) Provide an electronic copy of personal data in a machine-readable format to the data subject.
 

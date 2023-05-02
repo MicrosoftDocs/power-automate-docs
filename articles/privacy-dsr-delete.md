@@ -47,7 +47,7 @@ The following table shows which personal data is automatically deleted, and whic
 
 *Each of these resources contains "Created By" and "Modified By" records that include personal data. For security reasons, these records are retained until the resource is deleted.
 
-**For environments that include a Microsoft Dataverse database, environment permissions (that is, which users are assigned to the Environment Maker and Admin roles) are stored as records in Dataverse. [Learn more about executing data requests against Dataverse customer data](/power-platform/admin//power-platform/admin/common-data-service-gdpr-dsr-guide).
+**For environments that include a Microsoft Dataverse database, environment permissions (that is, which users are assigned to the Environment Maker and Admin roles) are stored as records in Dataverse. [Learn more about executing data requests against Dataverse customer data](/power-platform/admin/common-data-service-gdpr-dsr-guide).
 
 The following table summarizes where to find and delete a user's personal data in Power Automate.
 
@@ -71,7 +71,7 @@ The following table summarizes where to find and delete a user's personal data i
 | Custom connector permissions | Power Automate maker portal | | |
 | Approval history | Power Apps maker portal* | | |
 
-*For environments that include a Microsoft Dataverse database, environment permissions and model-driven app permissions are stored as records in Dataverse. [Learn more about executing data requests against Dataverse customer data](/power-platform/admin//power-platform/admin/common-data-service-gdpr-dsr-guide).
+*For environments that include a Microsoft Dataverse database, environment permissions and model-driven app permissions are stored as records in Dataverse. [Learn more about executing data requests against Dataverse customer data](/power-platform/admin/common-data-service-gdpr-dsr-guide).
 
 **An admin can access these resources from the Power Automate maker portal only if the administrator has been assigned access from the Power Automate admin center.
 
@@ -133,7 +133,7 @@ Finally, delete the original flow.
 
 1. Search for and delete the user's approval history.
 
-[Learn more about executing data requests against Dataverse customer data](/power-platform/admin//power-platform/admin/common-data-service-gdpr-dsr-guide).
+[Learn more about executing data requests against Dataverse customer data](/power-platform/admin/common-data-service-gdpr-dsr-guide).
 
 ### Delete connections created by the user
 
