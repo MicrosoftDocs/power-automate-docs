@@ -55,7 +55,7 @@ To use connection with sign-in, you need to meet the following pre-requisites:
   - Azure AD users must be in the same tenant as the selected environment in Power Automate portal.
   - The target (machine / group) should be Azure AD or AD joined. In case of a AD joined target, AD must be synchronized with Azure AD (What is Azure AD Connect and Connect Health. - Microsoft Entra | Microsoft Learn).
   - The Azure AD user account must be granted right to open a Windows session on the target machine(s) (interactive logon). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it is today for existing connections).
-  - The tenant of the target Azure AD account is configured to use modern authentication (Authentication with Azure AD - Microsoft Azure Well-Architected Framework | Microsoft Learn)
+  - The tenant of the target Azure AD account is configured to use modern authentication [Authentication with Azure AD - Microsoft Azure Well-Architected Framework](/azure/well-architected/).
 
 
 ### Setup the connection with sign-in
