@@ -1,19 +1,18 @@
 ---
 title: Use format data by examples to change the format of data with Power Automate | Microsoft Docs
-description: Learn to use format data by examples to create expressions automatically, based on the output you want.
+description: Learn how to use format data by examples to create expressions automatically, based on the output you want.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-ms.devlang: na
+author: JoeFernandezMS
+contributors:
+  - JoeFernandezMS
+  - v-aangie
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/28/2022
-ms.author: deonhe
+ms.topic: conceptual
+
+ms.date: 05/23/2023
+ms.author: jofernan
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -29,10 +28,12 @@ search.audienceType:
 In this sample scenario, imagine that there's a Microsoft list with products that you've purchased. You want to send an email whenever the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but you'd like it to display as *September 18* in the email notification message. Let’s see how to change the format of the date with format data by examples.
 
 1. Edit your flow in the Power Automate designer.
+
 1. Select the action into which you want to insert the formatted date, and then select any text field on the card.
+
 1. On the window that opens, select **Expression** > **Format data by examples**.
 
-   ![Screenshot showing the option to open format data by examples in the expression menu ](media/format-data-by-examples/format-data-by-examples.png)
+    :::image type="content" source="media/format-data-by-examples/format-data-by-examples.png" alt-text="Screenshot of the option to open format data by examples in the expression menu.":::
 
    A list displays all items in your flow that can be formatted.
 
@@ -44,8 +45,6 @@ In this sample scenario, imagine that there's a Microsoft list with products tha
 
 1. Provide a sample of how you’d like the flow to transform the example.  
 
-    ![A screenshot that displays the format data by examples screen](media/format-data-by-examples/data-examples.png)
-
 1. Select **Get expression**.
 
    Power Automate displays the expression that it recommends that you use to get the output you want. You can test it with another value to confirm that the expression does what you expect.
@@ -53,7 +52,7 @@ In this sample scenario, imagine that there's a Microsoft list with products tha
    >[!TIP]
    >If the expression that Power Automate recommends isn't what you expect, you can add more examples to refine the expression that it recommends.
 
-   ![Screenshot showing the suggested expression and how to test it](media/format-data-by-examples/expression-test.png)
+    :::image type="content" source="media/format-data-by-examples/expression-test.png" alt-text="Screenshot of the suggested expression and how to test it.":::
 
 1. Select **Apply** when the results of the expression match your expectations.
 
@@ -61,23 +60,22 @@ In this sample scenario, imagine that there's a Microsoft list with products tha
 
 Congratulations! You’ve built an expression by providing an example.  
 
-![Screenshot showing the suggested expression applied to an action in the cloud flow](media/format-data-by-examples/suggested-expression.png)
-
 ## Format numbers by examples
 
-In this example, imagine you have a number that comes from a Microsoft Forms survey as 5958. You want to format the number as a currency value before you store it in an Excel file, like this $5,958. To direct your flow to format the number as a currency value, provide an example of how Microsoft Forms returns the number and an example of how you want your flow to format the number. Power Automate uses the information you provide and then it suggests the expression that does the transformation, as the following screenshot displays.
+In this example, imagine you have a number that comes from a Microsoft Forms survey as 5958. You want to format the number as a currency value before you store it in an Excel file, like this $5,958. To direct your flow to format the number as a currency value, provide an example of how Microsoft Forms returns the number and an example of how you want your flow to format the number. Power Automate uses the information you provide and then it suggests the expression that does the transformation, as shown in the following screenshot.
 
-![Screenshot showing how to format a number into a currency just by providing an example. Power Automate suggests the expression to achieve this transformation.](media/format-data-by-examples/example-number.png)
+:::image type="content" source="media/format-data-by-examples/example-number.png" alt-text="Screenshot of how to format a number into a currency by providing an example. Power Automate suggests the expression to achieve this transformation.":::
 
 ## Format text by examples
 
 In the following scenario, imagine you have a registration form in which participants provide their full name and you want to send a registration confirmation email with just the first name. Instead of greeting the person by their full name, for example Casey Jensen, we just want to say Casey. Just provide an example and Power Automate suggests the right expression to achieve this transformation, as the following screenshot displays.
 
-![Screenshot showing how to format text from a person’s full name to only their first name. Power Automate suggests the expression to achieve this transformation.](media/format-data-by-examples/example-text.png)
+:::image type="content" source="media/format-data-by-examples/example-text.png" alt-text="Screenshot of how to format text from a person’s full name to only their first name. Power Automate suggests the expression to achieve this transformation.":::
 
 ## Limitations
 
 - Format data by examples can format one text, number, or date at a time. More complex structures like arrays aren't supported.
+
 - Format data by examples isn't available in environments based in South Africa, GCC, GCC High, and DoD.
 
 ### See also
