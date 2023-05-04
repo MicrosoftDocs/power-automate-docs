@@ -1084,7 +1084,7 @@
     items:
     - name: Overview
       href: transparency-note.md
-    - Transparency note for copilot
+    - name: Transparency note for copilot
       href: transparency-note-copilot.md
 
 

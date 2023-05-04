@@ -12,8 +12,8 @@ ms.reviewer: angieandrews
 
 # Transparency notes for Power Automate
 
-[!INCLUDE[transparency-note-intro](../includes/transparency-note-intro.md)]
+[!INCLUDE[transparency-note-intro](./includes/transparency-note-intro.md)]
 
-[!INCLUDE[transparency-note-features](../includes/transparency-note-features.md)]
+[!INCLUDE[transparency-note-features](./includes/transparency-note-features.md)]
 
--[Copilot]([Link])
+- Copilot (link)

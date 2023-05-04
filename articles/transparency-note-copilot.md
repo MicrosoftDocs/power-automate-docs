@@ -40,6 +40,6 @@ This transparency note describes the AI impact of [Product]'s [Feature] feature.
 
 ## See also
 
-- [Automate with AI-powered copilot]([Link])
+- Automate with AI-powered copilot (link)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](/includes/footer-banner.md)
