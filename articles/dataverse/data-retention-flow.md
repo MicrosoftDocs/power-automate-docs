@@ -10,14 +10,14 @@ ms.custom: template-how-to
 ---
 # Create a cloud flow to view Dataverse long term retained data
 
-Create a cloud flow to view read-only rows in long term data retention in Microsoft Dataverse. For more information about long term data retention in Dataverse, go to [Dataverse long term data retention overview (preview)](/power-apps/maker/data-platform/data-retention-overview.md).
+Create a cloud flow to view read-only rows in long term data retention in Microsoft Dataverse. For more information about long term data retention in Dataverse, go to [Dataverse long term data retention overview (preview)](/power-apps/maker/data-platform/data-retention-overview).
 
 The cloud flow described here creates and sends an email that includes an Excel file containing the retained data. If there are retained attachments associated with rows from Dataverse, they are also included in the Excel file.
 
 Creating the flow requires the following high level steps:
 
 1. Pass query parameters in a FetchXML to create an Excel file with retained data.
-1. Set a condition to determine if the Excel file has been created. Download the Excel file. Pass the required retrieval criteria parameters (table and FetchXml).
+1. Set a condition to determine if the Excel file has been created. Download the Excel file. Pass the required retrieval criteria parameters (table and FetchXML).
 1. Create an Excel file with the retrieved data.
 1. Send an email to recipients with the Excel file attached.  
 
@@ -28,7 +28,7 @@ Make sure to check your junk mail folder if you don’t see an email after runni
 1. Sign into [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), and then select **Settings** > **Advanced settings**.
 1. On the **Dynamics 365 Settings** page, select **Advanced Find** (filter icon) on the command bar.
 1. At the top of the Advanced Find pane, select **Change to retained data**.
-1. Create the query you want to retrieve the retained data. More information: [Advanced find in model-driven apps](/power-apps/user/advanced-find.md)
+1. Create the query you want to retrieve the retained data. More information: [Advanced find in model-driven apps](/power-apps/user/advanced-find)
 1. In Advanced Find on the **Advanced Find** tab, select **Download Fetch XML**.
 
 ## Create the flow
