@@ -55,17 +55,16 @@ The simple query syntax supports the following functionality:
 | Wildcards            | Trailing wildcards are supported; for example, "Alp\*" searches for "alpine".                                                        |
 | Exact matches        | A query enclosed in quotation marks " ".                                                                                            |
 
-The Lucene query syntax supports the following functionality:<!-- Edit note: Can you confirm that the Proximity search example below is correct. Expected quotes after the 5. -->
-
+The Lucene query syntax supports the following functionality:
 
 |Operator|Description|
 |---------|-----------|
-|Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, –
+|Boolean operators| Provides an expanded set compared to simple query syntax. </br> AND operator; denoted by AND, &&, + </br>OR operator; denoted by OR, \|\|</br>NOT operator; denoted by NOT, !, – |
 | Precedence operators              | The same functionality as simple query syntax.                       |
 | Wildcards                         | In addition to a trailing wildcard, also supports a leading wildcard.</br>Trailing wildcard – "alp*"</br>Leading wildcard - “/.*pine/”                                 |
-| Fuzzy search                      | Supports queries misspelled by up to two characters. </br>"Uniersty~" will return "University"</br>"Blue~1" will return "glue", "blues"                                            |         |
+| Fuzzy search                      | Supports queries misspelled by up to two characters. </br>"Uniersty~" will return "University"</br>"Blue~1" will return "glue", "blues"                                            |
 | Term boosting                     | Weighs specific terms in a query differently. </br>"Rock\^2 electronic" will return results where the matches to "rock" are more important than matches to "electronic".                                            |
-| Proximity search                  | Returns results where terms are within *x* words of each other, for more contextual results. </br>For example, "airport hotel"\~5 returns results where "airport" and "hotel" are within five words of each other, thus boosting the chances of finding a hotel located close to an airport.      |
+| Proximity search                  | Returns results where terms are within *x* words of each other, for more contextual results. </br>For example, "airport hotel"\~5" returns results where "airport" and "hotel" are within five words of each other, thus boosting the chances of finding a hotel located close to an airport.      |
 | Regular expression (regex) search | For example, /[mh]otel/ matches "motel" or "hotel".   |
 
 To use any of the search operators as part of the search text, escape the character by prefixing it with a single backslash (\\). Special characters that

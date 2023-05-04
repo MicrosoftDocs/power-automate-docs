@@ -278,7 +278,7 @@
     - name: Use Dataverse-based flows in Power Apps
       href: ./dataverse/flows-power-apps.md
     - name: Create a cloud flow that uses Microsoft Dataverse
-      href: common-data-model-intro.md  
+      href: common-data-model-intro.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
   - name: Use solutions for ALM
@@ -323,7 +323,7 @@
     href: ./desktop-flows/premium-features.md
   - name: Setup Power Automate
     items:
-    - name: Prerequisites and limitations 
+    - name: Prerequisites and limitations
       href: ./desktop-flows/requirements.md
     - name: Install Power Automate
       href: ./desktop-flows/install.md
@@ -336,15 +336,17 @@
     - name: Power Automate v2 schema
       href: ./desktop-flows/schema.md
     - name: Application lifecycle management for Power Automate v2 schema
-      href: ./desktop-flows/alm-schema.md    
+      href: ./desktop-flows/alm-schema.md
     - name: Create a Dataverse database
       href: ./desktop-flows/create-database.md
     - name: Governance
-      href: ./desktop-flows/governance.md     
+      href: ./desktop-flows/governance.md
+    - name: Manage security for Power Automate
+      href: ./desktop-flows/desktop-flows-security.md
     - name: Diagnostic data collection
-      href: ./desktop-flows/diagnostic-data.md 
+      href: ./desktop-flows/diagnostic-data.md
   - name: Get started with desktop flows
-    items:      
+    items:
     - name: Get started with a Microsoft account
       href: ./desktop-flows/getting-started-msa.md
     - name: Get started with a work or school account
@@ -445,7 +447,7 @@
     - name: Automate webpages
       href: ./desktop-flows/automation-web.md
     - name: Create custom forms
-      href: ./desktop-flows/custom-forms.md     
+      href: ./desktop-flows/custom-forms.md
     - name: Automate desktop applications
       href: ./desktop-flows/desktop-automation.md
     - name: Automate on virtual desktops
@@ -453,7 +455,7 @@
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
     - name: Test a selector
-      href: ./desktop-flows/test-selectors.md  
+      href: ./desktop-flows/test-selectors.md
   - name: How to
     items:
     - name: Handle and manipulate variables
@@ -563,7 +565,7 @@
     - name: Pass a datatable from a cloud flow to a desktop flow
       href: ./desktop-flows/how-to/passing-datatable.md
     - name: Delete desktop flow run history data
-      href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md  
+      href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -678,7 +680,7 @@
   - name: Add custom controls to business process flows
     href: custom-controls-business-process-flows.md
   - name: Add on-demand workflows to business process Flows
-    href: bpf-add-on-demand-workflow.md 
+    href: bpf-add-on-demand-workflow.md
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
 - name: Process advisor
@@ -691,13 +693,13 @@
     - name: Overview
       href: process-mining-overview.md
     - name: Get started with process mining
-      href: process-mining-tutorial.md   
+      href: process-mining-tutorial.md
     - name: Templates overview
       items:
       - name: Azure templates
-        href: process-mining-azure-templates.md   
+        href: process-mining-azure-templates.md
       - name: Finance and operations templates
-        href: process-mining-finance-ops-templates.md   
+        href: process-mining-finance-ops-templates.md
       - name: Power Platform templates
         href: process-mining-templates.md
     - name: Prepare processes and data
@@ -727,7 +729,7 @@
       - name: Manage settings with process context
         href: ./minit/process-context.md
       - name: Categorize cases
-        href: ./minit/case-categorization.md 
+        href: ./minit/case-categorization.md
     - name: Process map
       items:
       - name: Process map overview
@@ -757,9 +759,9 @@
     - name: Root cause analysis
       items:
       - name: Overview
-        href: ./minit/root-cause-analysis-overview.md 
+        href: ./minit/root-cause-analysis-overview.md
       - name: Find hidden connections
-        href: ./minit/root-cause-analysis.md    
+        href: ./minit/root-cause-analysis.md
     - name: Analyze processes with variants
       href: ./minit/variants.md
     - name: Compare process views for compliance
@@ -851,7 +853,7 @@
         - name: Business rules for process maps
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
-          href: ./minit/business-rules-statistics.md          
+          href: ./minit/business-rules-statistics.md
   - name: Task mining
     items:
     - name: Overview
@@ -886,7 +888,7 @@
     href: process-advisor-glossary.md
     displayName: Process mining glossary
   - name: Troubleshoot issues
-    href: process-mining-troubleshoot.md  
+    href: process-mining-troubleshoot.md
 - name: Connect to data
   items:
   - name: Available connections
@@ -965,28 +967,28 @@
     href: introduction-to-data-groups.md
   - name: View sharing and connectors analytics reports
     href: admin-analytics-report.md
-  - name: Respond to DSR requests
+  - name: Respond to personal data requests (Azure AD)
     items:
     - name: Summary
-      href: gdpr-dsr-summary.md
+      href: privacy-dsr-summary.md
     - name: Discover requests
-      href: gdpr-dsr-discovery.md
+      href: privacy-dsr-discovery.md
     - name: Export requests
-      href: gdpr-dsr-export.md
+      href: privacy-dsr-export.md
     - name: Delete requests
-      href: gdpr-dsr-delete.md
-  - name: DSR requests for Microsoft Accounts
+      href: privacy-dsr-delete.md
+  - name: Respond to personal data requests (Microsoft account)
     items:
     - name: Summary
-      href: gdpr-dsr-summary-msa.md
+      href: privacy-dsr-summary-msa.md
     - name: Discover requests
-      href: gdpr-dsr-discovery-msa.md
+      href: privacy-dsr-discovery-msa.md
     - name: Export requests
-      href: gdpr-dsr-export-msa.md
+      href: privacy-dsr-export-msa.md
     - name: Delete requests
-      href: gdpr-dsr-delete-msa.md
+      href: privacy-dsr-delete-msa.md
     - name: Close requests
-      href: gdpr-dsr-accountclose-msa.md
+      href: privacy-dsr-accountclose-msa.md
   - name: Power Automate US Government
     href: us-govt.md
 - name: Reference
