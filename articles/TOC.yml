@@ -1080,12 +1080,12 @@
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
   - name: Support
     href: https://make.powerautomate.com/support/
-  - name: Responsible AI transparency notes
-    items:
-    - name: Overview
-      href: transparency-note.md
-    - name: Transparency note for copilot
-      href: transparency-note-copilot.md
+- name: Responsible AI transparency notes
+  items:
+  - name: Overview
+    href: transparency-note.md
+  - name: Transparency note for copilot
+    href: transparency-note-copilot.md
 
 
 
