@@ -14,8 +14,10 @@
     href: create-flows-power-apps.md
 - name: Cloud flows
   items:
-  - name: Get started
+  - name: Get started with cloud flows
     href: overview-cloud.md
+  - name: Get started with Copilot
+    href: get-started-with-copilot.md   
   - name: Get started with triggers
     href: triggers-introduction.md
   - name: Get help from the Power Virtual Agents bot
@@ -1084,7 +1086,7 @@
   items:
   - name: Overview
     href: transparency-note.md
-  - name: Transparency note for copilot
+  - name: Transparency note for Copilot
     href: transparency-note-copilot.md
 
 

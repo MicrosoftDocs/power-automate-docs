@@ -10,11 +10,11 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ---
 
-# Transparency note for copilot
+# Transparency note for Copilot
 
 This transparency note describes the AI impact of [Product]'s [Feature] feature.
 
-## What is copilot?
+## What is Copilot?
 
 [Describe the system in plain English. What type of system is this? What does it do? At a high level, what does the system take as input? What kind of outputs does the system produce?]
 
@@ -26,11 +26,11 @@ This transparency note describes the AI impact of [Product]'s [Feature] feature.
 
 [Explain intended use(s), as identified in your Impact Assessment.]
 
-## How was copilot evaluated? What metrics are used to measure performance?
+## How was Copilot evaluated? What metrics are used to measure performance?
 
 [Provide evidence of system accuracy and performance as well as a description of the extent to which these results are generalizable across use cases that were not part of the evaluation.]
 
-## What are the limitations of copilot? How can users minimize the impact of the copilot limitations when using the system?
+## What are the limitations of Copilot? How can users minimize the impact of the Copilot limitations when using the system?
 
 [See Impact Assessment. Describe the known limitations of the system including uses for which the system was not designed or evaluated. Discuss steps that the user can take to minimize errors and the impact of trade-offs for the user.]
 
@@ -40,6 +40,6 @@ This transparency note describes the AI impact of [Product]'s [Feature] feature.
 
 ## See also
 
-- Automate with AI-powered copilot (link)
+- Get started with Copilot (link)
 
-[!INCLUDE[footer-include](./includes/footer-banner.md)
+[!INCLUDE[footer-include](./includes/footer-banner.md)]
