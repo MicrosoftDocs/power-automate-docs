@@ -15,9 +15,6 @@ search.audienceType:
 
 # Hosted machine group
 
-> [!NOTE]
-> Hosted RPA bots have been renamed to Hosted machine groups. There will be no impact on your existing use of this feature, and the user experience will be updated automatically with the new name.
-
 Hosted machine group allows you to run unattended automation at scale without providing or setting up any machines. You can create hosted machine groups like any other machine group, and Power Automate will automatically provision the machines based on the specified configuration.
 
 Desktop flows assigned to a hosted machine group get queued to it when triggered to run. Then, like for any machine group, the next desktop flow in the queue runs when a bot in the group is available. To find more information about queues, go to [Monitor desktop flow queues](monitor-desktop-flow-queues.md).
@@ -38,20 +35,13 @@ To use hosted machine group, you need the following licensing option:
 
     You need to assign to your environment as many add-ons as the number of hosted bots you want to run in parallel in your environment.
 
-### Licensing requirements during grace period
+### Trial licenses for evaluation
 
-> [!IMPORTANT]
-> To enable a smooth transition for customers using the hosted machine group feature during the preview phase, a grace period will be provided to enable customers to procure the appropriate hosted RPA add-on in order to continue using the feature. Entitlements for using the hosted machine group during the preview phase will be extended until 1 April 2023. After this date, you'll need the hosted RPA add-on to continue using the hosted machine group feature.
+To evaluate the hosted machine group, you need one of the following trial licensing options:
 
-To use hosted machine group, you need one of the following licensing options:
+- Use the **Power Automate per user plan with attended RPA** and the **Power Automate hosted RPA add-on trials**.
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-ons**.
-
-    During the grace period, hosted machine groups will be available with the existing licenses to run unattended RPA. So there are no extra charges for the **Power Automate per user** or **per flow plan with attended RPA** and the **Power Automate unattended RPA add-on**. You need to assign to your environment as many add-ons as many bots you want to run in parallel in your environment.
-
-- Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trials**.
-
-    The plans and add-ons mentioned before have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the unattended add-ons to the targeted environments.
+    The Power Automate hosted RPA add-ons mentioned before have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), and assign the hosted RPA add-ons to the targeted environments.
 
 - Use the 90-days self-assisted premium trial.
 
@@ -452,16 +442,13 @@ Hosted machine groups aren't yet available in the following geographies:
 - United Arab Emirates
 - Korea
 
-> [!NOTE]
-> Hosted machine groups capabilities are currently being rolled out in the following sovereign clouds: 
-> 
-> - Government Community Cloud (GCC)
-> - Government Community Cloud High (GCC High)
-> - Department of Defense (DoD)
->
-> The feature will be fully rolled out by March 20th, 2023
 
-Hosted machines aren't yet available in the following sovereign cloud:
+The following list displays all supported sovereign clouds:
+- Government Community Cloud (GCC)
+- Government Community Cloud High (GCC High)
+- Department of Defense (DoD)
+
+Hosted machine groups aren't yet available in the following sovereign cloud:
 
 - China
 
