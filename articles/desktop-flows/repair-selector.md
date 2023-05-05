@@ -24,8 +24,8 @@ Repair selector is a feature that the user can correct an invalid selector in an
  ## How to repair a selector 
 
 The user should select the selector to be repaired and click on the 'Repair' option on the screen.  
- 
-IMAGE 
+
+   :::image type="content" source="media/Repair selector/Repair_RepairButton_1.png" alt-text="Repair selector button.":::
 
 When the user opts for repairing a specific selector, the UI element picker is launched, displaying a screenshot of the UI element to be captured.  
 
