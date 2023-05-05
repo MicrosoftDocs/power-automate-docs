@@ -41,7 +41,7 @@ The repaired selector is suggested to the user to be reviewed while the changes 
 
 :::image type="content" source="media/Repair selector/Repair_Suggestion_3.png" alt-text="Repair selector suggestion."::: 
 
-The user may accept by clicking on the OK option and replace the selector to be repaired with the newly generated selector: 
+The user may accept by clicking on the OK option and replace the selector to be repaired with the newly generated selector
 
 :::image type="content" source="media/Repair selector/Repair_ReplaceRepaired_4.png" alt-text="Repair selector Replace the repaired.":::
  
