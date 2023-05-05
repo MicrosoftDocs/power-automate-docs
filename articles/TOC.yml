@@ -389,7 +389,7 @@
       href: ./desktop-flows/desktop-flow-connections.md
     - name: Machine group certificate renewal
       href: ./desktop-flows/machine-group-certificates.md
-    - name: Hosted machines (preview)
+    - name: Hosted machines
       href: ./desktop-flows/hosted-machines.md
     - name: Hosted machine groups
       href: ./desktop-flows/hosted-machine-groups.md
