@@ -19,7 +19,7 @@ search.audienceType:
 ---
 # Repair a selector
 
-Repair selector is a feature that the user can correct an invalid selector in an easy and user-friendly manner. Power Automate for desktop automatically generates a repaired selector for the UI element that automation needs to interact with. Repair selector feature supports both desktop and web UI elements. The user should open the UI element Selector builder window.  Repair feature can be applied also for fixing a screen selector which is the parent element of a desktop UI element. 
+Repair selector is a powerful feature that enables users to easily and intuitively correct invalid selectors. By automatically generating a repaired selector for the UI element that automation needs to interact with, Power Automate for desktop makes it simple to maintain automation flows. The repair selector feature is available for both desktop and web UI elements. To take advantage of it, simply open the UI element selector builder window and opt for the related option in the screen. This feature can also be used to fix a screen selector that is the parent element of a desktop UI element.
 
  ## How to repair a selector 
 
