@@ -2,22 +2,20 @@
 title: "Enhance business process flows with branching with Power Apps | MicrosoftDocs"
 description: "Learn how to use branching in a business process flow"
 ms.custom: ""
-ms.date: 06/27/2018
+ms.date: 05/04/2023
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
 ms.topic: "article"
-
-author: "MSFTMAN"
+author: Mattp123
 ms.assetid: 62cfac6b-0d78-48de-9364-0287454aa2a0
 caps.latest.revision: 9
-ms.author: "Deonhe"
+ms.author: "matp"
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 # Tutorial: Enhance business process flows with branching
-
 
 Business process flows guide you through various stages of sales, marketing, or service processes toward completion. In simple cases, a linear business process flow is a good option. However, in more complex scenarios, you can enhance a business process flow with branching. If you have the create permissions on business process flows, you’ll be able create business process flow with multiple branches by using the `If-Else` logic. The branching condition can be formed of multiple logical expressions that use a combination of `AND` or `OR` operators. The branch selection is done automatically, in real time, based on rules defined during the process definition. For example, in selling cars, you can configure a single business process flow, which after a common qualification stage splits into two separate branches on the basis of a rule (Does the customer prefer a new car or pre-owned car, is their budget above or below $20,000, and so on. ), one branch, for selling new cars and another branch, for selling pre-owned cars. For more information about Business process flows, see [Business process flows overview](business-process-flows-overview.md).  
   
@@ -29,17 +27,17 @@ Business process flows guide you through various stages of sales, marketing, or 
 ## What you need to know when designing business process flows with branches  
  Take notice of the following information when you design the business process flow with the branches:  
   
--   A process can span across a maximum of 5 unique tables.  
+-   A process can span across a maximum of five unique tables.  
   
 -   You can use a maximum of 30 stages per process and a maximum of 30 steps per stage.  
   
--   Each branch can be no more that 5 levels deep.  
+-   Each branch can be no more that five levels deep.  
   
 -   Branching rule must be based on the steps in the stage that immediately precedes it.  
   
 -   You can combine multiple conditions in a rule by using the `AND` operator or the `OR` operator, but not both operators.  
   
--   When you define a process flow, you can optionally select a table relationship. This relationship must a 1:N (One-to-Many) table relationship.  
+-   When you define a process flow, you can optionally select a table relationship. This relationship must be a 1:N (One-to-Many) table relationship.  
   
 -   More than one active process can run concurrently on the same data row.  
   
@@ -47,7 +45,9 @@ Business process flows guide you through various stages of sales, marketing, or 
   
 -   When merging branches, all peer branches must merge to a single stage. The peer branches must all either merge to a single stage, or each peer branch must end the process. A peer branch can’t merge with other branches and at the same time end the process.
 
--   Client API changes cannot trigger evaluation of branching condition, as branching relies on Business rules.
+-   Client API changes can't trigger evaluation of branching condition, as branching relies on Business rules.
+
+-   For forms in model-driven apps, interacting with future stages triggers their conditions and business rules. However, if the active stage remains the same, those rules won't be run again when the form reloads. Only rules in the active stage are run on form load.
   
 > [!NOTE]
 > - A table used in the process can be revisited multiple times (multiple closed table loops).  
@@ -76,7 +76,7 @@ Let’s look at the example of the business process flow with two branches, for 
   
     2.  To add the first branch for a stage, add a Stage tile on the “Yes” path of the condition tile  
   
-    3.  To add the second branch that is executed when condition is not satisfied, add another Stage tile on the “No” path of the condition tile  
+    3.  To add the second branch that is executed when condition isn't satisfied, add another Stage tile on the “No” path of the condition tile  
   
 > [!TIP]
 >  You can add another condition on the “no” path of an existing condition tile to create more complex branching.  
@@ -113,7 +113,7 @@ Let’s look at the example of the business process flow with two branches, for 
   
  ![Flow chart showing steps for an investigation process for information disclosure cases.](media/example-car-sales-flow-chart-investigation-information-disclosure-case.png "Flow chart showing steps for an investigation process for information disclosure cases")  
   
- You will need to provide a workflow to synchronize the Approve/Deny decision from the Investigation row to the Request row.  
+ You'll need to provide a workflow to synchronize the Approve/Deny decision from the Investigation row to the Request row.  
   
 ### Next steps  
  [Create a business process flow](create-business-process-flow.md)   
