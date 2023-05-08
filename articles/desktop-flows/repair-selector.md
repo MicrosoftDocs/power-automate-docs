@@ -47,11 +47,7 @@ The user may accept by clicking on the OK option and replace the selector to be 
  
 If the user clicks on the Cancel button, then the selector is not repaired and the old selector remains intact. 
 
-There will be cases that Power Automate for desktop will not be able to generate a repaired selector successfully.  
-
-:::image type="content" source="media/Repair selector/Repair_CannotRepair_5.png" alt-text="Repair selector cannot repair.":::
-
-In this case, the user should ensure that the correct UI element is captured. If yes, then the user must repair the selector manually. 
+There will be cases that Power Automate for desktop will not be able to generate a repaired selector successfully. In this case, the user should ensure that the correct UI element is captured. If yes, then the user must repair the selector manually. 
 
 > [!NOTE]
 > The selectors that contain one or more variables cannot be repaired. The user should either replace the variable(s) with static values or repair the selector manually. 
