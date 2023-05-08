@@ -14,16 +14,16 @@ search.audienceType:
   - enduser
 ---
 
-# Assets library
+# Assets library (preview)
 
 > [!IMPORTANT]
 > Power Automate for desktop v2.32 and newer is required
 
-The Assets library is the way to include additional functionality in desktop flows. 
+The Assets library (preview) is the way to include additional functionality in desktop flows. 
 
 Custom actions (preview) developed by organizations and uploaded to the respective environments can be included/removed from desktop flows. 
 
-To access the Assets library either click on the dedicated button at the top right of the designer: 
+To access the Assets library (preview) either click on the dedicated button at the top right of the designer: 
 ![Screenshot of the Assets library button](../media/assets-library/img1.png)
 
 or through the entry under the Tools bar:
