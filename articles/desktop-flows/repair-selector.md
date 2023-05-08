@@ -23,7 +23,7 @@ Repair selector is a powerful feature that enables users to easily and intuitive
 
  ## How to repair a selector 
 
-The user should select the selector to be repaired and click on the 'Repair' option on the screen.  
+The user should select the selector to be repaired and click on the 'Repair' option on the screen.  The 'Repair' option can be clicked while the user is at the selector builder view or the text editor view.
 
 :::image type="content" source="media/Repair selector/Repair_RepairButton_1.png" alt-text="Repair selector button.":::
 
