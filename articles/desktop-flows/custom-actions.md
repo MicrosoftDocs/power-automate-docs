@@ -31,8 +31,8 @@ Custom actions (preview) exist on an environment level. As a best practice you s
 - Specific endpoints must be included in the allow list for desktop flows containing custom actions (preview) to work properly. 
 Refer to [desktop flow services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime) for more details.
 - ALM is not yet fully supported for desktop flows with dependencies on custom actions (preview)
-- Upload date might differ in the portal than what is shown in the Asset library, in Power Automate for Desktop
-- The Assets library will not show more than 5000 custom actions groups
+- Upload date might differ in the portal than what is shown in the Assets library (preview), in Power Automate for Desktop
+- The Assets library (preview) will not show more than 5000 custom actions groups
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
