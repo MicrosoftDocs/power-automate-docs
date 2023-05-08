@@ -17,6 +17,9 @@ ms.date: 03/31/2023
 
 ---
 
+<!-- Line 71 says Microsoft. NET. Should it be Microsoft .NET? -->
+
+
 # Set up SAP integration with Power Platform
 
 A successful SAP integration with Microsoft Power Platform requires coordination with your organization's IT administrators. With some planning, setup, and configuration, you'll be able to ensure that your SAP system can communicate with Power Platform.
@@ -57,7 +60,7 @@ The assembled team of IT system administrators needs to review the following req
   - Ensure it meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended) for gateway installation and management.
   - Review other [related considerations](/data-integration/gateway/service-gateway-install#related-considerations).
   For instance, if you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
-- [On-premises data gateway](/data-integration/gateway/). The gateway is to be installed on the newly created Windows VM or provisioned server by an Azure AD Global or Gateway (default user permission for anyone performing the install) administrator  working with an SAP Super administrator (S-User).
+- [On-premises data gateway](/data-integration/gateway/). The gateway is to be installed on the newly created Windows VM or provisioned server by an Azure AD Global or Gateway (default user permission for anyone performing the install) administrator working with an SAP Super administrator (S-User).
   - Review [on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management) for Power Platform to learn more.
   - Go to the [Microsoft Download Center's on-premises data gateway page](https://www.microsoft.com/download/details.aspx?id=53127) and download the most recent version (December 16, 2022, or later) of the gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
     - In the _System Requirements_ section on the gateway download page, identify the operating systems and .NET Frameworks required to support the most recent version of the gateway.
@@ -69,17 +72,21 @@ The assembled team of IT system administrators needs to review the following req
 - [Azure Active Directory (AD)](/azure/active-directory/). [Set up a new Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant) or reconfigure an existing tenant to meet the requirements. It's important to consider:
   
   - The tenant has at least 1 GB of database storage capacity available for the environments within it.
-  - Set up requires an Azure AD Global administrator to set up the necessary [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference#global-administrator) and to [configure the Power Platform admin portal](/power-platform/admin/wp-work-with-admin-portals) so gateways, tenants, environments, and user access can be managed.
+  - Setup requires an Azure AD Global administrator to set up the necessary [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference#global-administrator) and to [configure the Power Platform admin portal](/power-platform/admin/wp-work-with-admin-portals) so gateways, tenants, environments, and user access can be managed.
 - [Azure AD single sign-on (SSO) for gateway](/power-bi/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway). Set up the new Azure AD tenant configured with an on-premises data gateway having constrained delegation to support SSO. You can also reconfigure an existing tenant to meet the requirements.
   
 > [!IMPORTANT]
->
 > - NCo 3.0 works with .NET Framework releases 4.0 or later. Download the most recent .NET Framework listed in the _Systems Requirements_ section of the gateway download page.
 > - Don't download NCo 3.1. It's not supported yet.
 
 ## Set up an on-premises data gateway
 
 An [on-premises data gateway](/data-integration/gateway/service-gateway-onprem) acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services.
+
+
+
+
+
 
 The on-premises data gateway installation encompasses multiple components installed on the same domain as the Windows VM. Each dedicated machine can only have one gateway installed on it. The same gateway can be used in multiple environments as long as the gateway region and the environment region match. Administrators need to take the following steps to set up the gateway:
 
