@@ -326,7 +326,7 @@ In order to separate custom actions(preview) in categories, subcategories etc. m
 
 The Order property dictates the order by which actions are previewed in the designer.
 
-Action1 belongs in the category "TestCategory" and it will be the first action of the module (this way you explain Order and category with an example.
+Action1 belongs in the category "TestCategory" and it will be the first action of the module (this way you explain Order and category with an example).
 
 ```csharp
 [Action(Id = "Action1", Order = 1, Category = "TestCategory")]
@@ -472,7 +472,7 @@ namespace Modules.CustomModule
         }
 
         #endregion
-    }
+    } // you can see below how to implement an action selector
 }
 ```
 
