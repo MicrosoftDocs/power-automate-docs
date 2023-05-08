@@ -17,7 +17,7 @@ ms.date: 03/31/2023
 
 ---
 
-<!-- Line 71 says Microsoft. NET. Should it be Microsoft .NET? -->
+<!-- Line 71 says Microsoft. NET. Should it be Microsoft .NET? Line 157 uses the term Common CryptoLib, but 159 has it as one word, CommonCryptoLib. -->
 
 
 # Set up SAP integration with Power Platform
@@ -60,7 +60,7 @@ The assembled team of IT system administrators needs to review the following req
   - Ensure it meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended) for gateway installation and management.
   - Review other [related considerations](/data-integration/gateway/service-gateway-install#related-considerations).
   For instance, if you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
-- [On-premises data gateway](/data-integration/gateway/). The gateway is to be installed on the newly created Windows VM or provisioned server by an Azure AD Global or Gateway (default user permission for anyone performing the install) administrator working with an SAP Super administrator (S-User).
+- [On-premises data gateway](/data-integration/gateway/). The gateway is to be installed on the newly created Windows VM or provisioned server by an Azure Active Directory (Azure AD) Global or Gateway (default user permission for anyone performing the install) administrator working with an SAP Super administrator (S-User).
   - Review [on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management) for Power Platform to learn more.
   - Go to the [Microsoft Download Center's on-premises data gateway page](https://www.microsoft.com/download/details.aspx?id=53127) and download the most recent version (December 16, 2022, or later) of the gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
     - In the _System Requirements_ section on the gateway download page, identify the operating systems and .NET Frameworks required to support the most recent version of the gateway.
@@ -69,7 +69,7 @@ The assembled team of IT system administrators needs to review the following req
 - [SAP Connector for Microsoft .NET 3.0 (NCo 3.0)](https://support.sap.com/en/product/connectors/msnet.html) SDK from SAP:
   - An administrator with valid S-User access is required to set up the connector.
   - Select **NCo 3.0 compiled with .NET Framework 4.0 - SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64), July 20, 2022 (ZIP archive, 7,126 KB)**.
-- [Azure Active Directory (AD)](/azure/active-directory/). [Set up a new Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant) or reconfigure an existing tenant to meet the requirements. It's important to consider:
+- [Azure Active Directory](/azure/active-directory/). [Set up a new Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant) or reconfigure an existing tenant to meet the requirements. It's important to consider:
   
   - The tenant has at least 1 GB of database storage capacity available for the environments within it.
   - Setup requires an Azure AD Global administrator to set up the necessary [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference#global-administrator) and to [configure the Power Platform admin portal](/power-platform/admin/wp-work-with-admin-portals) so gateways, tenants, environments, and user access can be managed.
@@ -83,11 +83,6 @@ The assembled team of IT system administrators needs to review the following req
 
 An [on-premises data gateway](/data-integration/gateway/service-gateway-onprem) acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services.
 
-
-
-
-
-
 The on-premises data gateway installation encompasses multiple components installed on the same domain as the Windows VM. Each dedicated machine can only have one gateway installed on it. The same gateway can be used in multiple environments as long as the gateway region and the environment region match. Administrators need to take the following steps to set up the gateway:
 
 1. Create a new [Windows VM](/azure/virtual-machines/overview) or provision a new or repurposed server specifically for SAP integration with Power Platform.
@@ -95,14 +90,14 @@ The on-premises data gateway installation encompasses multiple components instal
 1. Install the most recent version of the [on-premises data gateway](/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) onto the machine (December 16, 2022, or later).
 1. Install the [Microsoft C++ Runtime DLLs version 10.x](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true) framework package onto the machine and configure. This version is contained in Microsoft Visual C++ 2010 Redistributables.
 1. Install [SAP Connector for Microsoft .NET 3.0 (NCo3.0)](https://support.sap.com/en/product/connectors/msnet.html) onto the machine.
-      - Select [Install assemblies to GAC](/dotnet/framework/app-domains/install-assembly-into-gac) in the Optional setup steps window during the installation of NCo3.0.
+   - Select [Install assemblies to GAC](/dotnet/framework/app-domains/install-assembly-into-gac) in the Optional setup steps window during the installation of NCo3.0.
 
 The installed gateway runs as the default machine-local service account, _NT Service\PBIEgwService_. Update the service account to a domain account if setting up Windows or Azure single sign-on (SSO). Additional information is provided in [Step 1](#step-1-configure-kerberos-constrained-delegation).
 
 On-premises data gateway clusters can be created to avoid single points of failure when accessing on-premises data resources. For SAP Integration, calls should be forced to the primary gateway in a cluster. Calls are only directed to the second gateway when the primary gateway call fails. To support this scenario, ensure that random load balancing is turned off.
 
 1. Go to the [**Settings**](/power-platform/admin/onpremises-data-gateway-management#settings) panel in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Make sure the checkbox next to **Distribute requests across all active gateways in this cluster** remains unchecked on the on-premises data Settings panel.
+1. Make sure the checkbox next to **Distribute requests across all active gateways in this cluster** remains unselected on the on-premises data Settings panel.
 
 More information:
 
@@ -115,7 +110,7 @@ More information:
 > [!NOTE]
 > A direct connection with your credentials is all that's necessary for testing.
 
-The SAP ERP connector is designed to be used by multiple users of an application; therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like the server details, security configuration) are provided as part of the action.
+The SAP ERP connector is designed to be used by multiple users of an application; therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like the server details or security configuration) are provided as part of the action.
 
 Enabling single sign-on (SSO) makes it easy to refresh data from SAP while adhering to user-level permissions configured in SAP. There are several ways you can set up SSO for streamlined identity and access management. Be sure to obtain the necessary administrative privileges in Azure and SAP to set up SSO.
 
@@ -164,7 +159,7 @@ More information:
 To use SSO to access your SAP server, ensure that your SAP server is correctly configured for Kerberos SSO using CommonCryptoLib as its Secure Network Communication (SNC) library and has an SNC name that starts with CN.
 
 > [!IMPORTANT]
-> Ensure that SAP Secure Login Client (SLC) isn't running on the computer the gateway is installed on. SLC caches Kerberos tickets in a way that can interfere with the gateway's ability to use Kerberos for SSO. For more information, review [SAP Note 2780475](https://support.sap.com/en/my-support/knowledge-base.html?anchorId=section_1391401241) (s-user required).
+> Ensure that SAP Secure Login Client (SLC) isn't running on the computer the gateway is installed on. SLC caches Kerberos tickets in a way that can interfere with the gateway's ability to use Kerberos for SSO. For more information, review [SAP Note 2780475](https://support.sap.com/en/my-support/knowledge-base.html?anchorId=section_1391401241) (S-user required).
 
 1. [Download](https://help.sap.com/docs/help/a76169f317b44b1e87bd0bd2573cba2b/6f6d555ceb0a4e2fb6d1376331f4d34c.html?version=SP6) 64-bit CommonCryptoLib (`sapcrypto.dll`) version 8.5.25 or later from the SAP Launchpad, and copy it to a folder on your gateway machine.
 
@@ -172,7 +167,7 @@ To use SSO to access your SAP server, ensure that your SAP server is correctly c
 
     `ccl/snc/enable_kerberos_in_client_role = 1`
 
-    The `.ini` file contains configuration information required by CommonCryptoLib to enable SSO in the gateway scenario. Ensure that the path (i.e.,`c:\sapcryptolib\`) contains both `sapcrypto.ini` and `sapcrypto.dll`. The `.dll` and `.ini` files must exist in the same location.
+    The `.ini` file contains configuration information required by CommonCryptoLib to enable SSO in the gateway scenario. Ensure that the path (such as `c:\sapcryptolib\`) contains both `sapcrypto.ini` and `sapcrypto.dll`. The `.dll` and `.ini` files must exist in the same location.
 
 1. Grant permissions to both the `.ini` and `.dll` files to the Authenticated Users group. Both the gateway service user and the Active Directory (AD) user that the service user impersonates need _read_ and _execute_ permissions for both files.
 
@@ -224,7 +219,7 @@ More information on setup and configuration:
 
 Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home). The admin center provides a unified portal for administrators to manage environments, connectors, gateways, data sources, and other settings for Power Apps and Power Automate.
 
-Follow the directions in [Create and manage an environment](/power-platform/admin/create-environment). SAP Integration is implemented by administrators and deployed to the organization. Review the [types of environments](/power-platform/admin/environments-overview#types-of-environments) your organization needs to support the implementation and production phases. Each environment with or without Dataverse consumes at least 1-GB capacity. To get started, you can set up a sandbox environment. Be sure to do the following actions:
+Follow the directions in [Create and manage an environment](/power-platform/admin/create-environment). SAP Integration is implemented by administrators and deployed to the organization. Review the [types of environments](/power-platform/admin/environments-overview#types-of-environments) your organization needs to support the implementation and production phases. Each environment with or without Dataverse consumes at least 1 GB capacity. To get started, you can set up a sandbox environment. Be sure to do the following actions:
 
 1. Select **Sandbox** for environment type.
 1. Select **Yes** to create a database for the environment.
