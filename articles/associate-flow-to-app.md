@@ -8,16 +8,15 @@ contributors:
 ms.author: prkoduku
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 04/27/2023
+ms.date: 05/08/2023
 ms.custom:
 ---
 
 # Associate flows to apps
 
-You can associate automated and scheduled flows with Power Apps and Dynamics 365 apps from the Power Automate portal. This feature allows you to manage flows and apps together, which makes it easier to keep track of dependencies.If the associated Power Apps or Dynamics 365 app is missing in any environment, the flow will alert you about the missing dependency. It also ensures that apps are always up to date.
+You can associate automated and scheduled flows with Power Apps and Dynamics 365 apps from the Power Automate portal. This feature allows you to manage flows and apps together, which makes it easier to keep track of dependencies. If the associated Power Apps or Dynamics 365 app is missing in any environment, the flow will alert you about the missing dependency. It also ensures that apps are always up to date.
 
 This feature can provide relief to makers who often struggle to keep track of which flows are being used by which apps. Without this association, flows can break if the corresponding app isn't present in the environment. This can cause frustration and delays.
-
 
 ## Add an association
 
@@ -35,7 +34,7 @@ Once you've made the association between a flow and an app with the following st
 
 1. On the **Associated Apps** page, select **Add association**.
 
-    You'll find all the apps in Power Apps that are using the same data sources as the flow.
+    You'll find the apps in Power Apps that are using the same data sources as the flow.
 
 1. To find Dynamics 365 apps, select the **Dynamics 365** tab.
 
@@ -103,6 +102,7 @@ This is a known issue. We don't automatically display the apps that are using th
 
 A Power Apps per app license allows a limited set of Power Automate capabilities. If the flow is supporting an app in Power Apps, associate the flow to the app. Once the association is done, users with Power Apps per app license can use the flow.  
 
-### I am an admin and want to assosciate flows and apps in bulk. Is there an admin command?
-Use the powershell command [here](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps)
+### I'm an admin and want to associate flows and apps in bulk. Is there an admin command?
+
+Use the PowerShell command in [How can I associate in context flows to apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps) in the *FAQs about licenses* article.
 
