@@ -15,14 +15,13 @@ ms.reviewer: angieandrews
 
 # Data loss prevention policies
 
-Data loss prevention policies help protect your organizational data from being shared with a list of connectors that you define.
+Data loss prevention policies (DLP) help protect your organizational data from being shared with a list of connectors that you define.
 
 An organization's data is critical to its success. Its data needs to be readily available for decision-making, but it needs to be protected so that it isn't shared with audiences that shouldn't have access to it. To protect this data, Power Automate provides you with the ability to create and enforce policies that define which connectors can access and share business data. The policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
 
-To learn more about protecting your data, go to [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) in the Microsoft Power Platform admin guide.
+Administrators control DLP policies. If a DLP policy is blocking your flows from running, contact your administrator.
 
->[!IMPORTANT]
->Administrators control DLP policies. Contact your administrator if a DLP policy is blocking your flows from running.
+To learn more about protecting your data, go to [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) in the Microsoft Power Platform admin guide.
 
 ## Data loss prevention for desktop flows (preview)
 
@@ -97,6 +96,8 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
 
 ### Desktop flow modules in DLP
 
+If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they're trying to run, debug from Power Automate Desktop, or save desktop flows that violate DLP policies. We'll have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
+
 The following list contains the desktop flow modules that are currently available in DLP.
 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.ActiveDirectory ActiveDirectory
@@ -132,9 +133,6 @@ The following list contains the desktop flow modules that are currently availabl
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Services		Windows Services 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Workstation		Workstation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.XML		XML 
-
->[!NOTE]
->If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they're trying to run, debug from Power Automate Desktop, or save desktop flows that violate DLP policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
 
 ### Create a DLP policy with desktop flows restrictions in the Power Platform admin center
 
