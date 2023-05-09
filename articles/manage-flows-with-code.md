@@ -166,17 +166,17 @@ createdby: SYSTEM
 createdon: 5/20/2020 9:37 PM
 description:
 ismanaged: Unmanaged
-modifiedby: Jim Daly
+modifiedby: Kiana Anderson
 modifiedon: 5/6/2023 3:37 AM
 name: When an account is updated -> Create a new record
-ownerid: Peter Hecke
+ownerid: Monica Thomson
 statecode: Activated
 type: Definition
 workflowid: d9e875bf-1c9b-ea11-a811-000d3a122b89
 workflowidunique: c17af45c-10a1-43ca-b816-d9cc352718cf
 ```
 
-More information: [/power-apps/developer/data-platform/org-service/build-queries-with-queryexpression](/power-apps/developer/data-platform/org-service/build-queries-with-queryexpression)
+More information: [Build queries with QueryExpression](/power-apps/developer/data-platform/org-service/build-queries-with-queryexpression)
 
 #### [Web API](#tab/webapi)
 
@@ -190,7 +190,7 @@ Also, `$top=1` limits the number of flows returned to one.
 **Request**
 
 ```http
-GET https://crmue.api.crm.dynamics.com/api/data/v9.2/workflows?$filter=category eq 5 and statecode eq 1
+GET [Organization URI]/api/data/v9.2/workflows?$filter=category eq 5 and statecode eq 1
 &$select=
 category,
 _createdby_value,
@@ -224,7 +224,7 @@ OData-Version: 4.0
 Preference-Applied: odata.include-annotations="*"
 
 {
-    "@odata.context": "https://crmue.api.crm.dynamics.com/api/data/v9.2/$metadata#workflows(category,_createdby_value,createdon,description,ismanaged,_modifiedby_value,modifiedon,name,_ownerid_value,statecode,type,workflowid,workflowidunique)",
+    "@odata.context": "[Organization URI]/api/data/v9.2/$metadata#workflows(category,_createdby_value,createdon,description,ismanaged,_modifiedby_value,modifiedon,name,_ownerid_value,statecode,type,workflowid,workflowidunique)",
     "@Microsoft.Dynamics.CRM.totalrecordcount": -1,
     "@Microsoft.Dynamics.CRM.totalrecordcountlimitexceeded": false,
     "@Microsoft.Dynamics.CRM.globalmetadataversion": "84271433",
@@ -241,13 +241,13 @@ Preference-Applied: odata.include-annotations="*"
             "description": null,
             "ismanaged@OData.Community.Display.V1.FormattedValue": "Unmanaged",
             "ismanaged": false,
-            "_modifiedby_value@OData.Community.Display.V1.FormattedValue": "Jim Daly",
+            "_modifiedby_value@OData.Community.Display.V1.FormattedValue": "Kiana Anderson",
             "_modifiedby_value@Microsoft.Dynamics.CRM.lookuplogicalname": "systemuser",
             "_modifiedby_value": "4026be43-6b69-e111-8f65-78e7d1620f5e",
             "modifiedon@OData.Community.Display.V1.FormattedValue": "5/6/2023 3:37 AM",
             "modifiedon": "2023-05-06T10:37:01Z",
             "name": "When an account is updated -> Create a new activity",
-            "_ownerid_value@OData.Community.Display.V1.FormattedValue": "Peter Hecke",
+            "_ownerid_value@OData.Community.Display.V1.FormattedValue": "Monica Thomson",
             "_ownerid_value@Microsoft.Dynamics.CRM.associatednavigationproperty": "ownerid",
             "_ownerid_value@Microsoft.Dynamics.CRM.lookuplogicalname": "systemuser",
             "_ownerid_value": "8061643d-ebf7-e811-a974-000d3a1e1c9a",
@@ -304,7 +304,7 @@ Send a `POST` request to the `workflows` resource.
 **Request**
 
 ```http
-POST https://crmue.api.crm.dynamics.com/api/data/v9.2/workflows HTTP/1.1
+POST [Organization URI]/api/data/v9.2/workflows HTTP/1.1
 Content-Type: application/json
 
 {
@@ -323,7 +323,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 OData-Version: 4.0
-OData-EntityId: https://crmue.api.crm.dynamics.com/api/data/v9.2/workflows(7b177b96-f9ed-ed11-8849-000d3a993550)
+OData-EntityId: [Organization URI]/api/data/v9.2/workflows(7b177b96-f9ed-ed11-8849-000d3a993550)
 ```
 
 > [!NOTE]
@@ -443,7 +443,7 @@ Send a `PATCH` request to the `workflows` resource with the properties you want 
 **Request**
 
 ```http
-PATCH https://crmue.api.crm.dynamics.com/api/data/v9.2/workflows(7598c284-01ee-ed11-8849-000d3a993550) HTTP/1.1
+PATCH [Organization URI]/api/data/v9.2/workflows(7598c284-01ee-ed11-8849-000d3a993550) HTTP/1.1
 Content-Type: application/json
 OData-MaxVersion: 4.0  
 OData-Version: 4.0
