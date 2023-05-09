@@ -17,7 +17,7 @@ ms.date: 03/31/2023
 
 ---
 
-<!-- Line 71 says Microsoft. NET. Should it be Microsoft .NET? Line 157 uses the term Common CryptoLib, but 159 has it as one word, CommonCryptoLib. -->
+<!-- Line 71 says "Microsoft. NET". Should it be "Microsoft .NET"? Line 157 uses the term "Common CryptoLib", but 159 has it as one word, "CommonCryptoLib". Should all mentions be one word? -->
 
 
 # Set up SAP integration with Power Platform
