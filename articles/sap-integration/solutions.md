@@ -169,5 +169,5 @@ After the systems are configured to communicate with one another and you explore
 
 ### See also
 
-- [Create an environment variable with SAP connection parameters (preview)](env-variables-connection-refs.md)
-- [Overview of SAP integration with Power Platform (preview)](overview.md)
+- [Create an environment variable with SAP connection parameters](env-variables-connection-refs.md)
+- [Overview of SAP integration with Power Platform](overview.md)
