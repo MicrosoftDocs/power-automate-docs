@@ -2,27 +2,17 @@
 title: Data loss prevention policies
 description: Learn about data loss prevention policies for Power Automate.
 services: ''
-suite: flow
-documentationcenter: na
 author: ChrisGarty
 contributors:
   - ChrisGarty
-editor: ''
-tags: ''
-ms.devlang: na
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/17/2023
 ms.author: cgarty
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
-  - Powerplatform
-search.audienceType: 
-  - admin
 ---
+
 # Data loss prevention policies
 
 Data loss prevention policies help protect your organizational data from being shared with a list of connectors that you define.
@@ -143,7 +133,7 @@ The following list contains the desktop flow modules that are currently availabl
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Workstation		Workstation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.XML		XML 
 
->[!Note]
+>[!NOTE]
 >If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they're trying to run, debug from Power Automate Desktop, or save desktop flows that violate DLP policies. We will have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
 
 ### Create a DLP policy with desktop flows restrictions in the Power Platform admin center
@@ -205,7 +195,6 @@ The following is a list of DLP enforcement changes and the date the changes were
 |May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have type=Request and kind=apiConnection. Many of the affected triggers are instant triggers, which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Full |June 2, 2022|August 25, 2022|
 |July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with full enforcement of DLP policies on child flows. Once full enforcement is available, the enforcement will include child desktop flows. | Full |February 14, 2023|March 2023|
 |January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Full | - |March 2023|
-
 
 *ETA is subject to change and depends on the release schedule. ETA is for the start of the release to production. Release to preview station 1 is approximately five days later. Release to NAM/US station 5 is approximately three weeks later.
 
