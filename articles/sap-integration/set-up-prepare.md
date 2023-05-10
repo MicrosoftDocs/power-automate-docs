@@ -56,7 +56,7 @@ The assembled team of IT system administrators needs to review the following req
   
   - The SAP ERP connector can work with any SAP system that uses RFC and BAPI calls.
   - Setup requires an administrator who has valid S-User access to the SAP systems. The S-User is an SAP super administrator who has all of the authorizations for the portal and can manage other necessary SAP roles as necessary.
-- [Windows virtual machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server. Create a Windows VM or provision a server specifically for hosting the on-premises data gateway for SAP integration with Power Platform.
+- [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/virtual-machines/#overview) or your own server. Create a Windows VM or provision a server specifically for hosting the on-premises data gateway for SAP integration with Power Platform.
   - Ensure it meets the [recommended requirements](/data-integration/gateway/service-gateway-install#recommended) for gateway installation and management.
   - Review other [related considerations](/data-integration/gateway/service-gateway-install#related-considerations).
   For instance, if you're planning to use Windows authentication, ensure you install the gateway on a computer that's a member of the same Active Directory environment as the data sources.
