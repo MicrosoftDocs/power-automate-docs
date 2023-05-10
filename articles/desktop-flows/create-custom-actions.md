@@ -20,7 +20,7 @@ search.audienceType:
 > Power Automate for desktop v2.32 and newer is required
 
 > [!NOTE] 
-> The [Actions SDK (preview)](https://go.microsoft.com/fwlink/?linkid=2234545) and [Power Automate Desktop - Visual Studio templates (preview)](https://go.microsoft.com/fwlink/?linkid=2234762) are both available under the pre-release section through Visual Studio's NuGet package manager and at [www.nuget.org](https://www.nuget.org/)
+> The [Actions SDK (preview)](https://go.microsoft.com/fwlink/?linkid=2234545) and [Power Automate Desktop - Visual Studio templates (preview)](https://go.microsoft.com/fwlink/?linkid=2234762) are both available as pre-release.
 
 Power Automate for desktop can be extended through the Actions SDK (preview). Through the SDK, **custom modules** can be created and then utilized through desktop flows. 
 > [!NOTE]
@@ -33,7 +33,7 @@ To create custom actions (preview) for Power Automate for desktop the following 
 - .NET Framework 4.7.2 SDK must be installed on your system
 - An IDE (Integrated Development Environment - e.g. Visual Studio 2022) you can write C# on.
 - Power Automate for desktop installed on your machine.
-- The Actions SDK which you can download through Visual Studio's package manager or [nuget.org](https://www.nuget.org/). 
+- The Actions SDK.
 
 > [!NOTE] 
 > In this guide, Visual Studio 2022 was utilized.
