@@ -19,7 +19,7 @@ search.audienceType:
 
 [!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
 
-> ! [!IMPORTANT]
+> [!IMPORTANT]
 > - [!INCLUDE[cc-preview-features-note](../includes/cc-preview-features-note.md)]
 > - [!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature requires Power Automate for desktop v2.32 or later.
@@ -36,11 +36,15 @@ Alternatively, use the **Tools** bar.
 
 ## Custom actions (preview) tab
 
-Custom actions (preview) tab shows you the custom actions uploaded in the environment you've selected.
+[Custom actions (preview)](custom-actions.md) tab shows you the custom actions uploaded in the environment you've selected.
 
 > [!NOTE]
 > You can only see Custom actions (preview) shared with you.
 
  ![Screenshot of the Custom actions tab in the Assets library](media/assets-library/assets-library-custom-actions.png)
  
+### See also
+
+[Custom actions (preview)](custom-actions.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
