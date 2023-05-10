@@ -1,14 +1,15 @@
 ---
 title: Assets library 
-description: Power Automate for desktop's asset library
+description: Learn about Assets library in Power Automate for desktop.
 author: jpapadimitriou
-
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/26/2023
+ms.date: 05/15/2023
 ms.author: dipapa
-ms.reviewer: 
+ms.reviewer: tapanm-msft
 contributors:
+  - jpapadimitriou
+  - tapanm-msft
 search.audienceType: 
   - flowmaker
   - enduser
@@ -16,26 +17,30 @@ search.audienceType:
 
 # Assets library (preview)
 
-> [!IMPORTANT]
-> Power Automate for desktop v2.32 and newer is required
+[!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
 
-The Assets library (preview) is the way to include additional functionality in desktop flows. 
+> ! [!IMPORTANT]
+> - [!INCLUDE[cc-preview-features-note](../includes/cc-preview-features-note.md)]
+> - [!INCLUDE[cc-preview-features-definition-complete](../includes/cc-preview-features-definition-complete.md)]
+> - This feature requires Power Automate for desktop v2.32 or later.
 
-Custom actions (preview) developed by organizations and uploaded to the respective environments can be included/removed from desktop flows. 
+Assets library (preview) allows you to include more functionality in desktop flows. For example, you can upload Custom actions (preview) to the assets library when required.
 
-To access the Assets library (preview) either click on the dedicated button at the top right of the designer: 
-![Screenshot of the Assets library button](../media/assets-library/img1.png)
+To access the assets library, select the Assets library (preview) button at the top-right of the designer.
 
-or through the entry under the Tools bar:
-![Screenshot of the Assets library button under tools](../media/assets-library/img2.png)
+![Screenshot of the Assets library button](media/assets-library/assets-library-button.png)
+
+Alternatively, use the **Tools** bar.
+
+![Screenshot of the Assets library button under tools](media/assets-library/assets-library-tools.png)
 
 ## Custom actions (preview) tab
 
-In the Custom actions (preview) tab, you will find the custom actions (preview) uploaded in the respective environment you are working in. 
-> [!NOTE] 
-> Makers are able to see custom actions (preview) shared with them.
+Custom actions (preview) tab shows you the custom actions uploaded in the environment you've selected.
 
- ![Screenshot of the Custom actions tab in the Assets library](../media/assets-library/img3.png)
+> [!NOTE]
+> You can only see Custom actions (preview) shared with you.
+
+ ![Screenshot of the Custom actions tab in the Assets library](media/assets-library/assets-library-custom-actions.png)
  
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
