@@ -24,7 +24,7 @@ Custom actions (preview) developed by your organization and uploaded to the resp
 
 > ! [!IMPORTANT]
 > - [!INCLUDE[cc-preview-features-note](../includes/cc-preview-features-note.md)]
-> - [!INCLUDE[cc-preview-features-definition-complete](../includes/cc-preview-features-definition-complete.md)]
+> - [!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature requires Power Automate for desktop v2.32 or later.
 > - Ensure the DLL files describing Custom actions (preview), their dependency DLL files, and the CAB files are properly signed with a digital certificate trusted by your organization. The certificate should also be installed on the device under the trusted root certificate authority where the desktop flow with custom action dependencies is executing.
 

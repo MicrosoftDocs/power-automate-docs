@@ -21,7 +21,7 @@ search.audienceType:
 
 > ! [!IMPORTANT]
 > - [!INCLUDE[cc-preview-features-note](../includes/cc-preview-features-note.md)]
-> - [!INCLUDE[cc-preview-features-definition-complete](../includes/cc-preview-features-definition-complete.md)]
+> - [!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature requires Power Automate for desktop v2.32 or later.
 
 Assets library (preview) allows you to include more functionality in desktop flows. For example, you can upload Custom actions (preview) to the assets library when required.
