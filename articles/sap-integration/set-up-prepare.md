@@ -17,9 +17,6 @@ ms.date: 03/31/2023
 
 ---
 
-<!-- Line 71 says "Microsoft. NET". Should it be "Microsoft .NET"? Line 157 uses the term "Common CryptoLib", but 159 has it as one word, "CommonCryptoLib". Should all mentions be one word? -->
-
-
 # Set up SAP integration with Power Platform
 
 A successful SAP integration with Microsoft Power Platform requires coordination with your organization's IT administrators. With some planning, setup, and configuration, you'll be able to ensure that your SAP system can communicate with Power Platform.
@@ -68,7 +65,7 @@ The assembled team of IT system administrators needs to review the following req
 - [Microsoft C++ Runtime DLLs version 10.x (this version is contained in Microsoft Visual C++ 2010 Redistributables)](/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2010-vc-100-sp1-no-longer-supported&preserve-view=true). SAP's NCo 3.0 download requires this library to support the .NET Framework.
 - [SAP Connector for Microsoft .NET 3.0 (NCo 3.0)](https://support.sap.com/en/product/connectors/msnet.html) SDK from SAP:
   - An administrator with valid S-User access is required to set up the connector.
-  - Select **NCo 3.0 compiled with .NET Framework 4.0 - SAP Connector for Microsoft. NET 3.0.25.0 for Windows 64 bit (x64), July 20, 2022 (ZIP archive, 7,126 KB)**.
+  - Select **NCo 3.0 compiled with .NET Framework 4.0 - SAP Connector for Microsoft .NET 3.0.25.0 for Windows 64 bit (x64), July 20, 2022 (ZIP archive, 7,126 KB)**.
 - [Azure Active Directory](/azure/active-directory/). [Set up a new Azure AD tenant](/azure/active-directory/develop/quickstart-create-new-tenant) or reconfigure an existing tenant to meet the requirements. It's important to consider:
   
   - The tenant has at least 1 GB of database storage capacity available for the environments within it.
@@ -154,7 +151,7 @@ More information:
 - [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview)
 - [Configure Kerberos-based SSO to on-premises data sources](/power-bi/connect-data/service-gateway-sso-kerberos)
 
-### Step 2: Configure SAP ERP to enable using Common CryptoLib (sapcrypto.dll)
+### Step 2: Configure SAP ERP to enable using CommonCryptoLib (sapcrypto.dll)
 
 To use SSO to access your SAP server, ensure that your SAP server is correctly configured for Kerberos SSO using CommonCryptoLib as its Secure Network Communication (SNC) library and has an SNC name that starts with CN.
 
