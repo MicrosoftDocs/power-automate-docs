@@ -17,7 +17,9 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-Work queues can be used to store process-relevant data and provide a way to decouple complex processes and automations, allowing them to communicate asynchronously.
+Work queues in Power Automate can be used to store process-relevant data and provide a way to decouple complex processes and automations, allowing them to communicate asynchronously.
+
+They can play a crucial role in improving the efficiency, scalability and resiliency of automations and help prioritize work, with the highest-priority items being completed first, regardless of whether they're processed by digital workers, human workers, or through integrations.
 
 Just as manufacturing assembly lines are designed to decouple different complex stages of production, work queues can help decouple different areas of a process allowing each part to operate independently and exchange prioritized inputs and outputs asynchronously.
 
@@ -25,7 +27,6 @@ The following illustration shows and end-to-end process that uses work queues to
 
 :::image type="content" source="media/work-queues/work-queue-e2e-automation.png" alt-text="Screenshot of an end-to-end process that leverages work queues to communicate prioritized work between process steps and automations." lightbox="media/work-queues/work-queue-e2e-automation.png":::
 
-Work queues play a crucial role in improving the efficiency, scalability and resiliency of automations and help prioritize work, with the highest-priority items being completed first, regardless of whether they're processed by digital workers, human workers, or through integrations.
 
 > [!IMPORTANT]
 >
@@ -60,8 +61,8 @@ Work queues are a helpful tool for processing work in an ordered, concurrent, an
 
 ## How to get started
 
-- [Create work queues](/articles/work-queue-create.md)
-- [Manage work queues](/articles/work-queue-manage.md)
-- [Process work queues](/articles/work-queue-process.md)
-- [Monitor work queues](/articles/work-queue-monitor.md)
-- [Known issues and limitations](/articles/work-queue-known-limitations.md)
+- [Create work queues](work-queue-create.md)
+- [Manage work queues](work-queue-manage.md)
+- [Process work queues](work-queue-process.md)
+- [Monitor work queues](work-queue-monitor.md)
+- [Known issues and limitations](work-queue-known-limitations.md)
