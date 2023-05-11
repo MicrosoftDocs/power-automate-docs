@@ -395,7 +395,7 @@ An example is the "Launch Excel" action, from the standard library of actions.
 
 Using the "with a blank document" selector, the flow launches a blank Excel document, whereas using the "and open the following document" selection requires the file path of the file to open.
 
-:::image type="content" source="media/custom-actions/create-custom-actions/img3.png" alt-text="Screenshot of Launch Excel action selectors" border="true":::
+:::image type="content" source="media/custom-actions/create-custom-actions/excel.png" alt-text="Screenshot of Launch Excel action selectors" border="true":::
 
 The two actions mentioned above are two selectors of the "Launch Excel" base action.
 
@@ -407,7 +407,7 @@ Through action selectors a level of abstraction can be added over a single actio
 
 Think of selectors as choices, filtering a single action and presenting only the information required according to the respective selectors.
 
-:::image type="content" source="media/custom-actions/create-custom-actions/img4.png" alt-text="Screenshot of action selectors diagram" border="true":::
+:::image type="content" source="media/custom-actions/create-custom-actions/diagram.png" alt-text="Screenshot of action selectors diagram" border="true":::
 
 To form a new action selector, first create a base action to be utilized by the selectors.
 
@@ -668,15 +668,15 @@ To create a self-signed certificate with exportable private key and code sign ca
 1. Double-click on the exported certificate.
 1. Select Current user.
 
-    :::image type="content" source="media/custom-actions/create-custom-actions/img5.png" alt-text="Screenshot of Certificate Import Wizard" border="true":::
+    :::image type="content" source="media/custom-actions/create-custom-actions/wizard.png" alt-text="Screenshot of Certificate Import Wizard" border="true":::
 
 1. In the **Private key protection** screen, use the password provided during the creation of the certificate and also mark the key as exportable and include all extended properties
   
-    :::image type="content" source="media/custom-actions/create-custom-actions/img6.png" alt-text="Screenshot of Private key protection screen" border="false":::
+    :::image type="content" source="media/custom-actions/create-custom-actions/private-key.png" alt-text="Screenshot of Private key protection screen" border="false":::
 
 1. dd the certificate to the Trusted Root Certification Authorities
 
-    :::image type="content" source="media/custom-actions/create-custom-actions/img7.png" alt-text="Screenshot of Trusted Root Certificate Authorities" border="false":::
+    :::image type="content" source="media/custom-actions/create-custom-actions/ca.png" alt-text="Screenshot of Trusted Root Certificate Authorities" border="false":::
 
 ## Signing a custom module
 

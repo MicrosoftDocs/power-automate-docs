@@ -43,7 +43,7 @@ Alternatively, use the **Tools** bar.
 
 After you complete the custom action inclusion and close the asset library, the custom actions will be listed at the bottom of the **Actions** tree under the **Custom Actions** section.
 
-:::image type="content" source="media/custom-actions/use-custom-actions/img4.png" alt-text="Screenshot of Custom Actions in the actions tree" border="false":::
+:::image type="content" source="media/custom-actions/use-custom-actions/tree.png" alt-text="Screenshot of Custom Actions in the actions tree" border="false":::
 
 To include a custom action in a desktop flow, drag and drop or double-click on it.
 
