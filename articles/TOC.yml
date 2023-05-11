@@ -80,6 +80,8 @@
       displayName: Copy and paste actions
     - name: Add a condition
       href: add-condition.md
+    - name: Associate flows to apps
+      href:  associate-flow-to-app.md
     - name: Use data operations
       href: data-operations.md
     - name: Use expressions in conditions
@@ -391,7 +393,7 @@
       href: ./desktop-flows/desktop-flow-connections.md
     - name: Machine group certificate renewal
       href: ./desktop-flows/machine-group-certificates.md
-    - name: Hosted machines (preview)
+    - name: Hosted machines
       href: ./desktop-flows/hosted-machines.md
     - name: Hosted machine groups
       href: ./desktop-flows/hosted-machine-groups.md
