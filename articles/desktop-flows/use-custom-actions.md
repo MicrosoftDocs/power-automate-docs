@@ -39,7 +39,7 @@ Alternatively, use the **Tools** bar.
 > [!NOTE]
 > You can only see custom actions shared with you.
 
-:::image type="content" source="media/custom-actions/use-custom-actions/assets-library-custom-actions.png" alt-text="Screenshot of the Assets library button under tools" border="false":::
+:::image type="content" source="media/custom-actions/use-custom-actions/assets-library-custom-actions.png" alt-text="Screenshot of custom actions" border="false":::
 
 After you complete the custom action inclusion and close the asset library, the custom actions will be listed at the bottom of the **Actions** tree under the **Custom Actions** section.
 
