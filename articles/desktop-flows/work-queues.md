@@ -51,7 +51,7 @@ The following table lists some of the benefits of using work queues.
 | **Consistent prioritization** | Work queues help you prioritize work items, with the highest-priority items being completed first, regardless of whether they're processed by digital workers, human workers, or through integrations. |
 | **Centralized monitoring** | Work queues provide human-in-the-loop monitoring experiences that allow fusion teams of business users and IT professional to work hand-in-hand to remediate work queue processing anomalies. |
 
-By using work queues in combination with other digital workforce management tools, such as [hosted machine groups](/articles/hosted-machine-groups.md), advanced analytics with Power BI, and [process advisor](/articles/process-advisor-overview.md), organizations can gain deeper insights into the performance of their automation to improve the efficiency, scalability and resiliency while also reducing costs and improving the quality of services.
+By using work queues in combination with other digital workforce management tools, such as [hosted machine groups](hosted-machine-groups.md), advanced analytics with Power BI, and [process advisor](process-advisor-overview.md), organizations can gain deeper insights into the performance of their automation to improve the efficiency, scalability and resiliency while also reducing costs and improving the quality of services.
 
 ## Typical use case example
 
