@@ -461,8 +461,9 @@
     - name: Test a selector
       href: ./desktop-flows/test-selectors.md  
   - name: Custom actions (preview)
-    href: ./desktop-flows/custom-actions.md
     items:
+    - name: Custom actions
+      href: ./desktop-flows/custom-actions.md
     - name: Create custom actions
       href: ./desktop-flows/create-custom-actions.md
     - name: Upload custom actions
