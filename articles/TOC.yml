@@ -401,6 +401,20 @@
         href: ./desktop-flows/avd-use-starter-kit.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
+  - name: Work queues (preview)
+    items:
+    - name: Overview
+      href: ./desktop-flows/work-queues.md
+    - name: Create work queues
+      href: ./desktop-flows/work-queues-create.md      
+    - name: Manage work queues
+      href: ./desktop-flows/work-queues-manage.md
+    - name: Process work queues
+      href: ./desktop-flows/work-queues-process.md
+    - name: Monitor work queues
+      href: ./desktop-flows/work-queues-monitor.md
+    - name: Known issues and limitations
+      href: ./desktop-flows/work-queues-known-limitations.md
   - name: Monitor desktop flows
     items:
     - name: Desktop flow activity

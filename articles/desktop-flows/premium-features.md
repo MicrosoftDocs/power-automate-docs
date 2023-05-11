@@ -39,6 +39,7 @@ This article lists the premium RPA features and benefits that are included in th
 |Centralized bot orchestration and management|Manage the machines and machine groups that host your desktop flows and run unattended automation at scale with hosted RPA bots.|[Learn about machine management](manage-machines.md)|
 |Desktop flow analytics|Access analytics for desktop flows in the Microsoft Power Platform admin center.|[Learn about analytics](/power-platform/admin/analytics-ui-flow)|
 |Customer support|Receive prompt technical assistance from a Microsoft support professional.|[Power Automate support](https://make.powerautomate.com/support/)|
+|Work queues|Use work queues to store, prioritize, distribute and process work items.| [Learn more about work queues](work-queues.md)|
 
 > [!IMPORTANT]
 >
