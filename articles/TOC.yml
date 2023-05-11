@@ -16,7 +16,7 @@
   items:
   - name: Get started with cloud flows
     href: overview-cloud.md
-  - name: Get started with Copilot
+  - name: Get started with Copilot (preview)
     href: get-started-with-copilot.md   
   - name: Get started with triggers
     href: triggers-introduction.md

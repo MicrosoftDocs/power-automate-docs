@@ -16,4 +16,4 @@ ms.reviewer: angieandrews
 
 [!INCLUDE[transparency-note-features](./includes/transparency-note-features.md)]
 
-- Copilot (link)
+- [Get started with Copilot (preview)](get-started-with-copilot.md)
