@@ -107,8 +107,7 @@ Only co-owners can delete custom actions. Deleting a custom actions group causes
 ### See also
 
 - [Assets library (preview)](assets-library.md)
-- [Upload custom actions](upload-custom-actions.md)
 - [Create custom actions](create-custom-actions.md)
-
+- [Custom actions](custom-actions.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,14 @@
 title: Use custom actions 
 description: How to use custom actions in desktop flows
 author: jpapadimitriou
-
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/24/2023
+ms.date: 05/15/2023
 ms.author: dipapa
-ms.reviewer: 
+ms.reviewer: tapanm-msft
 contributors:
+  - jpapadimitriou
+  - tapanm-msft
 search.audienceType: 
   - flowmaker
   - enduser
@@ -16,29 +17,41 @@ search.audienceType:
 
 # Using custom actions in desktop flows (preview)
 
+[!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+
 > [!IMPORTANT]
-> Power Automate for desktop v2.32 and newer is required
+> This feature requires Power Automate for desktop v2.32 or later.
 
-You can include custom actions (preview) in desktop flows through the [Assets library (preview)](./assets-library.md).
+You can include custom actions in desktop flows through the [Assets library (preview)](assets-library.md) using Power Automate for desktop's designer.
 
-Though Power Automate for desktop’s designer open the Assets library (preview). 
-You can do that either through the dedicated button 
-![Screenshot of Asset library button](../media/custom-actions/use-custom-actions/img1.png)
+To use Assets library, select **Assets library (preview)** in the designer.
 
-or through the entry under the Tools bar:
-![Screenshot of Asset library button under tools](../media/custom-actions/use-custom-actions/img2.png)
+:::image type="content" source="media/custom-actions/use-custom-actions/assets-library-button.png" alt-text="Screenshot of the Assets library button" border="false":::
 
-In the Custom actions (preview) tab, you will find the custom actions (preview) uploaded in the respective environment you are working in. 
-> [!NOTE] 
-> Only custom actions (preview) shared with you are visible.
+Alternatively, use the **Tools** bar.
 
- ![Screenshot of Custom actions tab in the Assets library](../media/custom-actions/use-custom-actions/img3.png)
- 
+:::image type="content" source="media/custom-actions/use-custom-actions/assets-library-tools.png" alt-text="Screenshot of the Assets library button under tools" border="false":::
 
-Once you have concluded the inclusion of custom actions (preview) and close the Assets library (preview), they will all be listed at the bottom of the Actions tree, under the **Custom Actions** section: 
-![Screenshot of Custom Actions in the actions tree](../media/custom-actions/use-custom-actions/img4.png)
- 
-To include a custom action (preview) in a desktop flow, simply drag and drop or double click it.
+## Custom actions (preview) tab
 
+[Custom actions (preview)](custom-actions.md) tab shows you the custom actions uploaded in the environment you've selected.
+
+> [!NOTE]
+> You can only see custom actions shared with you.
+
+:::image type="content" source="media/custom-actions/use-custom-actions/assets-library-custom-actions.png" alt-text="Screenshot of the Assets library button under tools" border="false":::
+
+After you complete the custom action inclusion and close the asset library, the custom actions will be listed at the bottom of the **Actions** tree under the **Custom Actions** section.
+
+:::image type="content" source="media/custom-actions/use-custom-actions/img4.png" alt-text="Screenshot of Custom Actions in the actions tree" border="false":::
+
+To include a custom action in a desktop flow, drag and drop or double-click on it.
+
+### See also
+
+- [Assets library ](assets-library.md)
+- [Upload custom actions](upload-custom-actions.md)
+- [Create custom actions](create-custom-actions.md)
+- [Custom actions](custom-actions.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

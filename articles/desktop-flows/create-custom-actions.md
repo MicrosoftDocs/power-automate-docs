@@ -754,7 +754,7 @@ Example:
 ### See also
 
 - [Assets library (preview)](assets-library.md)
-- [Create custom actions](create-custom-actions.md)
 - [Use custom actions](use-custom-actions.md)
+- - [Custom actions](custom-actions.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
