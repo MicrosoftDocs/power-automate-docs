@@ -755,6 +755,6 @@ Example:
 
 - [Assets library (preview)](assets-library.md)
 - [Use custom actions](use-custom-actions.md)
-- - [Custom actions](custom-actions.md)
+- [Custom actions](custom-actions.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
