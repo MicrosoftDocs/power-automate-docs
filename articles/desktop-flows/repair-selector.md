@@ -31,17 +31,17 @@ When you opt for repairing a specific selector, the UI element picker is launche
 
 :::image type="content" source="media/Repair selector/Repair_Capture_2.png" alt-text="Repair selector Capture.":::
 
-Note that the UI element picker highlights only the UI elements of the same type as the type of the respective selector to be repaired. Therefore, if you repair a desktop UI element, only the desktop UI elements can be highlighted and captured and for the web selector case, only the web UI elements can be highlighted and captured respectively.
+Note that the UI element picker highlights only the UI elements of the same type as the type of the respective selector to be repaired. Therefore, if you repair a desktop UI element, only the desktop UI elements can be highlighted and captured and for the web selector case, only the web UI elements can be highlighted and captured.
 
 Capture the UI element by hovering over the UI element until the frame appears around it, then press Ctrl+Left click.  
 
 After capturing the UI element successfully, Power Automate for desktop generates a selector that takes into account both the old selector that is being repaired and the selector of the just captured UI element.
 
-The repaired selector is presented to you for your review with the changes in the selector highlighted.
+The repaired selector is presented to you for your review with the changes in the selector highlighted. Select **OK** to accept the suggested repair.
 
 :::image type="content" source="media/Repair selector/Repair_Suggestion_3.png" alt-text="Repair selector suggestion."::: 
 
-Accept the changes by selecting **OK** to replace the selector to be repaired with the newly generated selector.
+The previous select is replaced by the repaired selector. Select **Save** to complete the repair.
 
 :::image type="content" source="media/Repair selector/Repair_ReplaceRepaired_4.png" alt-text="Repair selector Replace the repaired.":::
 
