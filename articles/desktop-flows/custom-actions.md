@@ -22,7 +22,7 @@ search.audienceType:
 
 Custom actions (preview) developed by your organization and uploaded to the respective environments can be included in desktop flows and utilized like actions that belong in the standard library of automation actions. 
 
-> ! [!IMPORTANT]
+> [!IMPORTANT]
 > - [!INCLUDE[cc-preview-features-note](../includes/cc-preview-features-note.md)]
 > - [!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature requires Power Automate for desktop v2.32 or later.

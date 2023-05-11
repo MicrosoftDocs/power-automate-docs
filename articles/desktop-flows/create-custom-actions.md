@@ -1,14 +1,15 @@
 ---
 title: Create custom actions
-description: How to create custom actions for desktop flows 
+description: Learn about how to create custom actions in Power Automate for desktop
 author: jpapadimitriou
-
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/24/2023
+ms.date: 05/15/2023
 ms.author: dipapa
-ms.reviewer: 
+ms.reviewer: tapanm-msft
 contributors: 
+  - jpapadimitriou
+  - tapanm-msft
 search.audienceType: 
   - flowmaker
   - enduser
@@ -16,66 +17,65 @@ search.audienceType:
 
 # Create Power Automate for desktop actions using the Actions SDK (preview)
 
-> [!IMPORTANT]
-> Power Automate for desktop v2.32 and newer is required
+[!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
 
-> [!NOTE] 
-> The [Actions SDK (preview)](https://go.microsoft.com/fwlink/?linkid=2234545) and [Power Automate Desktop - Visual Studio templates (preview)](https://go.microsoft.com/fwlink/?linkid=2234762) are both available as pre-release.
+You can extend Power Automate for desktop through the Actions SDK (preview). Through the SDK, **custom modules** can be created and then utilized through desktop flows.
 
-Power Automate for desktop can be extended through the Actions SDK (preview). Through the SDK, **custom modules** can be created and then utilized through desktop flows. 
 > [!NOTE]
-> The term **modules** is equivalent to the term **custom actions group** (preview) and is used to describe custom actions groups (preview) from a pro-dev perspective in this article.
-
+> - The term **modules** is equivalent to the term **custom actions group** (preview) and is used to describe custom actions groups (preview) from a pro-dev perspective in this article.
+> - The [Actions SDK (preview)](https://go.microsoft.com/fwlink/?linkid=2234545) and [Power Automate Desktop - Visual Studio templates (preview)](https://go.microsoft.com/fwlink/?linkid=2234762) are available as pre-release.
 
 ## Prerequisites
 
-To create custom actions (preview) for Power Automate for desktop the following are required:
-- .NET Framework 4.7.2 SDK must be installed on your system
-- An IDE (Integrated Development Environment - e.g. Visual Studio 2022) you can write C# on.
-- Power Automate for desktop installed on your machine.
+To create custom actions in Power Automate for desktop, you'll need:
+
+- .NET Framework 4.7.2 SDK or later.
+- An IDE (Integrated Development Environment such as Visual Studio 2022).
+- Power Automate for desktop v2.32 or later.
 - The Actions SDK.
 
-> [!NOTE] 
-> In this guide, Visual Studio 2022 was utilized.
-
+This article uses Visual Studio 2022.
 
 ## Using Power Automate Desktop Actions - Visual Studio templates (preview)
 
 > [!NOTE]
-> Power Automate Desktop Actions - Visual Studio templates (preview) are supported for Visual Studio 2022 and newer
+> Power Automate Desktop Actions - Visual Studio templates (preview) are only supported on Visual Studio 2022 or later when using Visual Studio as the IDE.
 
+To install  the Power Automate Desktop Actions - Visual Studio templates (preview), do one of the following:
 
-To install  the Power Automate Desktop Actions - Visual Studio templates (preview), you can either:
+**Option 1**
 
-- Download the nuget package containing the templates, at [nuget.org](https://go.microsoft.com/fwlink/?linkid=2234762) and then execute the following command in Visual Studio's Package Manager by providing the appropriate path: 
-```
-dotnet new -i <path_to_Templates_nuget_package>
-``` 
-or
-- by directly running this command in Visual Studio's Package Manager: 
+- Download the nuget package containing the templates, at [nuget.org](https://go.microsoft.com/fwlink/?linkid=2234762).
+- Run the following command in Visual Studio's Package Manager with the appropriate path.
+
+    ```
+    dotnet new -i <path_to_Templates_nuget_package>
+    ``` 
+
+**Option 2**
+
+Run the following command in Visual Studio's Package Manager.
+
 ```
 dotnet new -i Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.Templates
 ``` 
 
-The creation of custom actions (preview) for desktop flows is summarized in the following steps:
-- Create a new project using Power Automate Desktop Actions - Visual Studio templates (preview).
-- Build your project.
-- Sign the generated .dll with a trusted certificate.
-- Pack the generated .dll along with all its dependencies in a .cab file.
-- Sign the .cab file
+Here's a summary of the steps involved in creating custom actions in Power Automate for desktop:
+
+1. Create a new project using Power Automate Desktop Actions - Visual Studio templates (preview).
+1. Build your project.
+1. Sign the generated DLL file with a trusted certificate.
+1. Pack the generated DLL file along with all its dependencies in a CAB file.
+1. Sign the CAB file.
 
 > [!NOTE]
-> The .dll file representing the custom actions group (preview), its dependencies and the .cab file containing all of them, must be properly signed with a valid certificate. The certificate must also be installed on the desktop where the desktop flow containing the custom actions (preview) runs.
+> - Ensure the DLL files describing Custom actions (preview), their dependency DLL files, and the CAB files are properly signed with a digital certificate trusted by your organization. The certificate should also be installed on the device under the trusted root certificate authority where the desktop flow with custom action dependencies is executing.
+> - Every project (DLL file) referencing the SDK is a module (custom actions group).
+> - Actions of the module are represented by classes inside that project.
 
+After installing the Power Automate Desktop Actions templates for Visual Studio (preview), open Visual Studio and select one of the following options:
 
-
-Keep in mind the following:
-1. Every project (.dll) referencing the SDK is a module (custom actions group (preview)).
-2. Actions of this module are represented by classes inside that project. 
-
-After installing the Power Automate Desktop Actions templates for Visual Studio (preview), start Visual Studio and select one of the following options:
-
-![Screenshot of Power Automate Visual Studio templates](../media/custom-actions/create-custom-actions/img1.png)
+![Screenshot of Power Automate Visual Studio templates](media/custom-actions/create-custom-actions/VS-options.png)
 
 | Project Template                      | Description |
 | :------------------------------------ | :--------------------------------------------------------------------------------------- |
@@ -83,7 +83,7 @@ After installing the Power Automate Desktop Actions templates for Visual Studio 
 | Power Automate Sample Module          | Creates a sample project containing an action with the references required to create a custom Power Automate module. |
 
 >[!NOTE]
-> In these examples, the Power Automate Sample Module Project (a project including a simple action (Action1.cs)) is utilized.
+> The following examples uses Power Automate Sample Module Project (a project including a simple action (Action1.cs)).
 
 This is how the Action1.cs looks like after creating a Power Automate Sample Module:
 
@@ -131,13 +131,13 @@ namespace Modules.CustomModule
 }
 ```
 
-Actions can have parameters (Input or Output). 
-Input and Output parameters are represented by C# properties. 
+Actions can have parameters (Input or Output).
+Input and Output parameters are represented by C# properties.
 
-Each property should have an appropriate C# attribute, either ```[InputArgument]``` or ```[OutputArgument]``` to dictate its type and how they are presented in Power Automate for desktop.
+Each property should have an appropriate C# attribute, ```[InputArgument]``` or ```[OutputArgument]``` to dictate its type and how they are presented in Power Automate for desktop.
 Actions can also be organized in categories by setting the Category property of the Action attribute.
 
-You can pre-populate the parameters by setting a default value C# attribute. 
+You can pre-populate the parameters by setting a default value C# attribute.
 
 For example, the default value of the InputArgument, is "Developer".
 By applying this, and modifying the Execute method to return an Output, the custom action (preview) should look as follows:
@@ -195,11 +195,10 @@ For the custom modules to be readable through Power Automate for desktop, the As
 ?*.Modules.?*
 Modules.?*
 ```
+
 For example, **Modules**.ContosoActions.dll
 
-
 The AssemblyTitle in the project settings specifies the module ID. It can only have alphanumeric characters and underscores and must begin with a letter.
-
 
 ## Adding descriptions to custom actions (preview)
 
@@ -207,10 +206,11 @@ It is recommended to provide a description and a friendly name for the module an
 
 Friendly names and descriptions are displayed in the Power Automate for desktop's designer.
 
-
 To add a description you have to modify the "Resources.resx" file under the Project "Properties".  
 
-The format of the descriptions for modules and actions should be as follows: "Module_Description" or "Action_Description" and "Module_FriendlyName" or "Action_FriendlyName" respectively in the name field. The description in the value field.
+The format of the descriptions for modules and actions should be as follows:
+
+"Module_Description" or "Action_Description" and "Module_FriendlyName" or "Action_FriendlyName" respectively in the name field. The description in the value field.
 
 It is also recommended to provide descriptions and friendly names for parameters. Their format should be as follows: "Action_Parameter_Description", "Action_Parameter_FriendlyName".
 
