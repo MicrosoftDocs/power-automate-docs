@@ -199,6 +199,16 @@ For example, **Modules**.ContosoActions.dll
 
 The AssemblyTitle in the project settings specifies the module ID. It can only have alphanumeric characters and underscores and must begin with a letter.
 
+## Custom module IDs
+
+Each module has its own ID. 
+
+:::image type="content" source="media/custom-actions/create-custom-actions/module-id.png" alt-text="Screenshot of module id in the templates" border="true":::
+
+When creating custom modules make sure you set unique module IDs. 
+> [!WARNING]
+> Including modules with the same ID in a flow will result in conflicts
+
 ## Adding descriptions to custom actions (preview)
 
 It's recommended to provide a description and a friendly name for the module and its respective actions so that Power Automate for desktop users know how to best utilize them.
