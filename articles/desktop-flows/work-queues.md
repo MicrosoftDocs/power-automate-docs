@@ -47,7 +47,7 @@ The following table lists some of the benefits of using work queues.
 | **Benefit** | **Description** |
 |-------------------------|-------------------------|
 | **Increased efficiency and scalability** | Work queues can increase the efficiency and throughput of an automation process by ensuring timely and resilient completion of work. They can also help decouple parts of your automation so that you can scale them independently. |
-| **Better resource utilization** | By using work queues, you can improve robot utilization, which in turn can reduce the overall cost of the automation process by minimizing the number of robots needed to complete work. |
+| **Better resource utilization** | By using work queues, you can improve robot utilization, which in turn can reduce the overall cost of the automation process by optimizing the number of robots needed to complete work. |
 | **Consistent prioritization** | Work queues help you prioritize work items, with the highest-priority items being completed first, regardless of whether they're processed by digital workers, human workers, or through integrations. |
 | **Centralized monitoring** | Work queues provide human-in-the-loop monitoring experiences that allow fusion teams of business users and IT professionals to work hand-in-hand to remediate work queue processing exceptions. |
 
@@ -61,8 +61,16 @@ Work queues are a helpful tool for processing work in an ordered, concurrent, an
 
 ## How to get started
 
-- [Create work queues](work-queue-create.md)
+> [!div class="nextstepaction"]
+> [Create your first work queue](work-queue.md#create-a-work-queue)
+
+## Learn more
+
 - [Manage work queues](work-queue-manage.md)
 - [Process work queues](work-queue-process.md)
 - [Monitor work queues](work-queue-monitor.md)
 - [Known issues and limitations](work-queue-known-limitations.md)
+
+
+
+[Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server)

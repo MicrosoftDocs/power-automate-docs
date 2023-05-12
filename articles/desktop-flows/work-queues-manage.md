@@ -14,6 +14,7 @@ search.audienceType:
 ---
 
 # Manage work queues (preview)
+
 [This article is pre-release documentation and is subject to change.]
 
 Power Automate provides rich user experiences and features that will allow you to efficiently and centrally manage work queues within your environments.
@@ -48,9 +49,12 @@ To view the list of work queues you have either created or that have been shared
 
 To edit a work queue:
 
-1. In the work queue list select the work queue you would like to edit.
-2. Click **Edit work queue** in the toolbar and update the values in the update pane.
-3. Select **Save**.
+1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
+2. On the left menu, select the **Monitor** section.
+3. Select **Work queue (preview)**.
+4. In the work queue list select the work queue you would like to edit.
+5. Click **Edit work queue** in the toolbar and update the values in the update pane.
+6. Select **Save**.
 
 ## Share a work queue
 
