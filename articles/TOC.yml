@@ -409,10 +409,10 @@
       href: ./desktop-flows/work-queues-manage.md
     - name: Bulk-load work queue data
       href: ./desktop-flows/work-queues-create-bulk.md        
-    - name: Trigger work queues
-      href: ./desktop-flows/work-queues-trigger.md
     - name: Process work queues
       href: ./desktop-flows/work-queues-process.md
+    - name: Trigger work queues
+      href: ./desktop-flows/work-queues-trigger.md
     - name: Known issues and limitations
       href: ./desktop-flows/work-queues-known-limitations.md
   - name: Monitor desktop flows
