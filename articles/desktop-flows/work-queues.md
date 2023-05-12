@@ -37,7 +37,7 @@ The following illustration shows and end-to-end process that uses work queues to
 To use work queues (preview) in Power Automate the following are required:
 
 - Premium Power Automate license
-- Environment Maker role (or other roles that include access to work queue tables)
+- Environment maker role (or other roles that include access to work queue tables)
 
 ## Work queue benefits
 
@@ -56,7 +56,7 @@ By using work queues in combination with other digital workforce management tool
 
 Work queues are a helpful tool for processing work in an ordered, concurrent, and timely manner, regardless of industry, business processes, or organization size. In the following example, the red underlined text can be replaced with any other business process, data volume, or SLA requirement. This makes work queues a versatile solution for managing your workload more effectively and ensuring that important work is completed on time.
 
-:::image type="content" source="media/work-queues/work-queue-sample-usecase.png" alt-text="Showing a *Define Search Criteria* screen with an advanced filter applied.":::
+:::image type="content" source="media/work-queues/work-queue-sample-usecase.png" alt-text="Screenshot of a work queue use case definition." lightbox="media/work-queues/work-queue-sample-usecase.png":::
 
 ## How to get started
 

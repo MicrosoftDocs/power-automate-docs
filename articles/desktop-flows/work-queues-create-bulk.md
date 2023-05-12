@@ -16,7 +16,7 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-With Power Automate and work queues being an integral part of the Power Platform, you can easily automate your workflows and streamline your data management processes. The suite of tools available is comprehensive, ranging from highly end-user optimized wizards to powerful cloud-based ETL services and even pro-code options. Whether you're a business user, an IT professional or a developer, you can find the right tool to create or bulk upload data with ease and efficiency.
+With Power Automate and work queues being an integral part of the Power Platform, you can easily streamline your data management processes. The suite of tools available is comprehensive, ranging from highly end-user optimized wizards to powerful cloud-based ETL services and even pro-code options. Whether you're a business user, an IT professional or a developer, you can find the right tool to create or bulk upload data with ease and efficiency.
 
 ## Available platform options to create data
 
@@ -34,6 +34,11 @@ Here's a comprehensive list of data management and bulk-load options you can cho
 >
 >   * [Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 >   * [Dataverse SDK for .NET](/power-apps/developer/data-platform/developer-tools#dataverse-sdk-for-net)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn how to process work queues](work-queues-process.md)
 
 ## Learn more
 

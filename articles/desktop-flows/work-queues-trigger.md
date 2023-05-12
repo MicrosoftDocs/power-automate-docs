@@ -1,5 +1,5 @@
 ---
-title: Process work queues (preview)
+title: Trigger work queues (preview) processing
 description: Work queue processing options.
 
 ms.topic: conceptual
@@ -13,6 +13,6 @@ search.audienceType:
   - enduser
 ---
 
-# Process work queues (preview)
+# Trigger work queues (preview) processing
 
 [This article is pre-release documentation and is subject to change.]
