@@ -174,10 +174,13 @@ Follow these steps to determine the type of trigger that your flow uses.
 
 ## My flow is triggered multiple times or some of my actions run multiple times 
 
-You may encounter a scenario where a single flow run has some (or all) of its actions duplicated. This does not express itself in the UI in any way, but you may see the results of their flow duplicated - for example duplicate emails sent or duplicate list items created. One of the reasons this may happen is due to the "at-least-once" design of Azure Logic Apps. 
+You may encounter a scenario where a single flow run has some (or all) of its actions duplicated. While the UI doesn't show this problem, you might see the results of the flow being duplicated. For example, duplicate emails sent, or duplicate list items created.
 
-Most of the time this indicates that there was an issue on the Azure stack. Usually, these issues are self-healed quickly. If customers want to be 100% protected from this philosophy creating duplicate data, then their flows need to be idempotent - which is to say that the flow needs to account for the possibility of duplicate inputs. An example of idempotency would be checking to see if a duplicate SharePoint document already exists before trying to create it, or using key constraints in Dataverse to prevent duplicate records getting created.
+One of the reasons this might happen is because of the "at-least-once" design of Azure Logic Apps.
 
+Most of the times, this indicates that there was an issue with the Azure service. Usually, these issues are self-healed quickly. To ensure that your flows don't create duplication, ensure you design them to be **idempotent**&mdash;which is to say that the flow needs to account for the possibility of duplicate inputs.
+
+An example of idempotency would be checking to see if a duplicate SharePoint document already exists before trying to create it, or using key constraints in Dataverse to prevent duplicate records getting created.
 
 ## My recurrence trigger runs ahead of schedule
 
