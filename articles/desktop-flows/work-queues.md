@@ -17,21 +17,20 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE[cc_preview_features_definition](../../articles/includes/cc-preview-features-definition.md)]
+
 Work queues in Power Automate can be used to store process-relevant data and provide a way to decouple complex processes and automations, allowing them to communicate asynchronously.
 
-They can play a crucial role in improving the efficiency, scalability and resiliency of automations and help prioritize work, with the highest-priority items being completed first, regardless of whether they're processed by digital workers, human workers, or through integrations.
+They can play a crucial role in improving the efficiency, scalability and resiliency of automations and help prioritize work, with the highest-priority items being completed first, regardless of whether they've been processed by digital workers, human workers, or through integrations.
 
 Just as manufacturing assembly lines are designed to decouple different complex stages of production, work queues can help decouple different areas of a process allowing each part to operate independently and exchange prioritized inputs and outputs asynchronously.
 
 The following illustration shows and end-to-end process that uses work queues to communicate prioritized work between process steps and automations.
 
 :::image type="content" source="media/work-queues/work-queue-e2e-automation.png" alt-text="Screenshot of an end-to-end process that leverages work queues to communicate prioritized work between process steps and automations." lightbox="media/work-queues/work-queue-e2e-automation.png":::
-
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../../articles/includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 

@@ -15,35 +15,34 @@ search.audienceType:
 
 # Manage work queues (preview)
 
-[This article is pre-release documentation and is subject to change.]
+[This article is prerelease documentation and is subject to change.]
 
-Power Automate provides rich user experiences and features that will allow you to efficiently and centrally manage work queues within your environments.
+Power Automate provides rich user experiences and features that allow you to efficiently and centrally manage work queues within your environments.
 
 ## View work queues
 
-To view the list of work queues you have either created or that have been shared with you:
+To view the list of work queues, you have either created or that 's been shared with you:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
 2. On the left menu, select the Monitor section.
 3. Select Work queue (preview).
 
-If you have already created work queues or if any work queue has been shared with you, you will see a list similar to this.
+If you have already created work queues or if any work queue has been shared with you, you see a list similar to the befollowinglow.
 
 :::image type="content" source="media/work-queues/work-queue-list.png" alt-text="Screenshot of a list of work queues in Power Automate portal." lightbox="media/work-queues/work-queue-list.png":::
 
 ## Create a work queue
 
-To view the list of work queues you have either created or that have been shared with you:
+To view the list of work queues, you have either created or that 's been shared with you:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
 2. On the left menu, select the **Monitor** section.
-3. Select **Work queue (preview)** and click the **+ New work queue** button.
+3. Select **Work queue (preview)** and select the **+ New work queue** button.
 4. In the **New work queue** side-panel, enter a **name** for the work queue.
 5. (Optional) Enter a **description** for the work queue.
-6. (Optional) Enter a default lifespan for work queue items in the **Item default time to live (in minutes)**.
+6. (Optional) Enter a default lifespan for work queue items in the **Item default time to live (in minutes)** field.
    > [!NOTE]
-   > The *item default time to live* value determines the default lifespan for items entering a work queue and can. For example, if you enter a value of 1440 minutes (1 day), this would set the expiration date of an item entering the queue to now + 1 day. However, if the item being added already has an expiration date assigned, this default value is ignored. You can adjust this value later, but please note that it will not retroactively assign expiration dates to items that already exist in the work queue.
-7. Click the Create button to create the new work queue.
+   > If you set a **default time to live** for a work queue, any item you add to the queue without an explicit expiration date will be given an expiration time based on that default value. So, if you set the default time to live to 30 minutes, then an item added at 2:00 pm will automatically be given an expiration time of 2:30 pm. If that item hasn't been processed by the time its expiration time comes around, it will be skipped over for all following dequeuing requests.
 
 ## Edit a work queue
 
@@ -52,19 +51,19 @@ To edit a work queue:
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
 2. On the left menu, select the **Monitor** section.
 3. Select **Work queue (preview)**.
-4. In the work queue list select the work queue you would like to edit.
-5. Click **Edit work queue** in the toolbar and update the values in the update pane.
+4. In the work queue list, select the work queue you would like to edit.
+5. Select **Edit work queue** in the toolbar and update the values in the update pane.
 6. Select **Save**.
 
 ## Share a work queue
 
-To share a work queue with one ore more users with co-ownership:
+To share a work queue with one ore more user with co-ownership:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
 2. On the left menu, select the **Monitor** section.
 3. Select **Work queue (preview)**.
-4. In the work queue list select the work queue you would like to share.
-5. Click **Manage access** in the toolbar.
+4. In the work queue list, select the work queue you would like to share.
+5. Select **Manage access** in the toolbar.
 6. In the **Share** pane, enter the email or name of the person you want to share with.
 7. Add the user to the list and select the user under the **New** section to confirm the access level.
 
@@ -75,8 +74,8 @@ To share a work queue with one ore more users with co-ownership:
 
 To delete a work queue:
 
-1. In the work queue list select the work queue you would like to delete.
-2. Click **Delete work queue** in the toolbar and update the values in the update pane.
+1. In the work queue list, select the work queue you would like to delete.
+2. Select **Delete work queue** in the toolbar and update the values in the update pane.
 3. On the delete confirmation dialog, select Delete.
 4. Select **Save**.
 
@@ -86,7 +85,7 @@ To create a new work queue item through the Power Automate portal:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
 2. On the left menu, select the **Monitor** section.
-3. Select the work queue you would like to create items for and click the **See details** button.
+3. Select the work queue you would like to create items for and select the **See details** button.
 4. In the **New work queue** side-panel, enter a **name** for the work queue.
 
 Looking for more ways to create work queue data? 
