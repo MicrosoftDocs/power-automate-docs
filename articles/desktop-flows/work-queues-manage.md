@@ -70,13 +70,14 @@ To share a work queue with one ore more users with co-ownership:
 
 ## Delete a work queue
 
+   > [!CAUTION]
+   > When you delete a work queue, all related records, including work queue items and their processing history, are permanently deleted.
+
 To delete a work queue:
 
 1. In the work queue list select the work queue you would like to delete.
 2. Click **Delete work queue** in the toolbar and update the values in the update pane.
 3. On the delete confirmation dialog, select Delete.
-   > [!CAUTION]
-   > When you delete a work queue, all related records, including work queue items and their processing history, are permanently deleted. This action cannot be undone!
 4. Select **Save**.
 
 ## How to get started

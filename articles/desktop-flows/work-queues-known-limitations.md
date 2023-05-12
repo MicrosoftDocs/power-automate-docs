@@ -13,7 +13,7 @@ search.audienceType:
   - enduser
 ---
 
-## Known issues and limitations
+# Known issues and limitations
 
 [This article is pre-release documentation and is subject to change.]
 
