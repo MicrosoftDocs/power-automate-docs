@@ -182,6 +182,8 @@ Most of the times, this indicates that there was an issue with the Azure service
 
 An example of idempotency would be checking to see if a duplicate SharePoint document already exists before trying to create it, or using key constraints in Dataverse to prevent duplicate records getting created.
 
+Another possibility is for flow triggering multiple times might be having copies of the flow active in different environments that are triggering based on same condition. Use trigger conditions to customize triggers to reduce the number of times it triggers.
+
 ## My recurrence trigger runs ahead of schedule
 
 Confirm that you've set the **Start time** on the **Recurrence** card to ensure it runs only at the time that you need. For example, set **Start time** to '2022-10-10T10:00:00Z' to start your trigger at 10:00 AM.
@@ -233,10 +235,6 @@ After an app is published, make copies of the flows used by that app to make any
 ## SharePoint trigger issues
 
 SharePoint triggers, for example **When a file is created or modified**, will not fire if a file is added or updated in a subfolder. If you need the flow to trigger on subfolders, create multiple flows.
-
-## My flow triggers multiple times
-
-Verify that you don’t have copies of the flow active in different environments that are triggering based on same condition. Use trigger conditions to customize triggers to reduce the number of times it triggers.
 
 ## Users are unable to run flows that are shared with them, but the owner can run the flow
 
