@@ -13,11 +13,9 @@ search.audienceType:
   - enduser
 ---
 
-# Best practices for work queues  (preview)
+## Known issues and limitations
 
 [This article is pre-release documentation and is subject to change.]
-
-## Known limitations
 
 The following table includes known limitations
 

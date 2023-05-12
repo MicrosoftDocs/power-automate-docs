@@ -408,9 +408,11 @@
     - name: Manage work queues
       href: ./desktop-flows/work-queues-manage.md
     - name: Create work queue items
-      href: ./desktop-flows/work-queues-manage.md     
+      href: ./desktop-flows/work-queues-create.md     
     - name: Bulk-load work queue items
-      href: ./desktop-flows/work-queues-manage.md        
+      href: ./desktop-flows/work-queues-create-bulk.md        
+    - name: Trigger work queues
+      href: ./desktop-flows/work-queues-trigger.md
     - name: Process work queues
       href: ./desktop-flows/work-queues-process.md
     - name: Known issues and limitations

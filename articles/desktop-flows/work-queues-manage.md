@@ -1,6 +1,6 @@
 ---
 title: Manage work queues (preview)
-description: Work queue management with Power Automate.
+description: Manage work queues in Power Automate.
 
 ms.topic: conceptual
 ms.date: 04/28/2023
@@ -78,3 +78,17 @@ To delete a work queue:
    > [!CAUTION]
    > When you delete a work queue, all related records, including work queue items and their processing history, are permanently deleted. This action cannot be undone!
 4. Select **Save**.
+
+## How to get started
+
+> [!div class="nextstepaction"]
+> [Create your first work queue](work-queues-manage.md#create-a-work-queue)
+
+## Learn more
+
+- [Manage work queues](work-queues-manage.md)
+- [Create work queue items](work-queues-create.md)
+- [Bulk-load work queue items](work-queues-create-bulk.md)
+- [Trigger work queues](work-queues-trigger.md)
+- [Process work queues](work-queues-process.md)
+- [Known issues and limitations](work-queues-known-limitations.md)
