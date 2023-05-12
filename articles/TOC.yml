@@ -460,6 +460,8 @@
       href: ./desktop-flows/build-custom-selectors.md
     - name: Test a selector
       href: ./desktop-flows/test-selectors.md
+    - name: Repair a selector
+      href: ./desktop-flows/repair-selector.md  
   - name: How to
     items:
     - name: Handle and manipulate variables
