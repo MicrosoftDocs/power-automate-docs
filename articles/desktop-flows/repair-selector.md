@@ -47,10 +47,10 @@ The previous select is replaced by the repaired selector. Select **Save** to com
 
 If the you select **Cancel**, the selector isn't repaired and the old selector remains intact.
 
-There are cases when Power Automate for desktop won't be able to generate a repaired selector successfully. When this happens, you should make sure that the correct UI element is captured. If the UI element still can't be repaired, you must repair the selector manually.
+There are cases when Power Automate for desktop won't be able to generate a repaired selector successfully. When this happens, you should make sure that the correct UI element is captured. If the UI element still can't be repaired, you must repair the selector manually. 
 
 > [!NOTE]
-> The selectors that contain one or more variables can't be repaired. Either replace the variables with static values or repair the selector manually.
+> The selectors that contain one or more variables can't be repaired. Either replace the variables with static values or repair the selector manually. More information: [Build a custom selector](build-custom-selectors.md)
 
 ### See also
 
