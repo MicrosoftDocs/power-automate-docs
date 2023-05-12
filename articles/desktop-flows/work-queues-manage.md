@@ -80,16 +80,27 @@ To delete a work queue:
 3. On the delete confirmation dialog, select Delete.
 4. Select **Save**.
 
-## How to get started
+## Create work queue items
+
+To create a new work queue item through the Power Automate portal:
+
+1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
+2. On the left menu, select the **Monitor** section.
+3. Select the work queue you would like to create items for and click the **See details** button.
+4. In the **New work queue** side-panel, enter a **name** for the work queue.
+
+Looking for more ways to create work queue data? 
 
 > [!div class="nextstepaction"]
-> [Create your first work queue](work-queues-manage.md#create-a-work-queue)
+> [Learn how to bulk-load work queue data](work-queues-create-bulk.md)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn how to process work queues](work-queues-process.md)
 
 ## Learn more
 
-- [Manage work queues](work-queues-manage.md)
-- [Create work queue items](work-queues-create.md)
 - [Bulk-load work queue items](work-queues-create-bulk.md)
 - [Trigger work queues](work-queues-trigger.md)
-- [Process work queues](work-queues-process.md)
 - [Known issues and limitations](work-queues-known-limitations.md)
