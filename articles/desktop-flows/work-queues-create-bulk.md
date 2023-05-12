@@ -24,7 +24,7 @@ Here's a comprehensive list of data management and bulk-load options you can cho
 
 > [!div class="checklist"]
 >
-> * Using cloud flow by using the Dataverse's connector action [**Add a row new action**](/commondataserviceforapps/#add-a-new-row)
+> * Using cloud flow by using the Dataverse's connector action [**Add a row new action**](/dataverse/create.md)
 > * Using Dataverse bulk-import options
 >
 >   * [Import using a connector](/power-apps/maker/data-platform/data-platform-import-export#import-using-a-connector) (supporting many different sources, such as Excel, Azure, SQL Server, CSV, JSON, XML, Text, OData, and more)
