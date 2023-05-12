@@ -62,15 +62,11 @@ Work queues are a helpful tool for processing work in an ordered, concurrent, an
 ## How to get started
 
 > [!div class="nextstepaction"]
-> [Create your first work queue](work-queue.md#create-a-work-queue)
+> [Create your first work queue](work-queues-manage.md#create-a-work-queue)
 
 ## Learn more
 
-- [Manage work queues](work-queue-manage.md)
-- [Process work queues](work-queue-process.md)
-- [Monitor work queues](work-queue-monitor.md)
-- [Known issues and limitations](work-queue-known-limitations.md)
-
-
-
-[Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server)
+- [Manage work queues](work-queues-manage.md)
+- [Create work queue items](work-queues-create.md)
+- [Process work queues](work-queues-process.md)
+- [Known issues and limitations](work-queues-known-limitations.md)
