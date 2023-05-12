@@ -37,7 +37,7 @@ Custom actions (preview) exist at the environment level. As a best practice, use
 - Application lifecycle management (ALM) isn't fully supported for desktop flows with dependencies on custom actions.
 - Upload date might differ in the portal than what is shown in the Assets library (preview) inside Power Automate for desktop.
 - The Assets library (preview) can't display more than 5000 custom actions groups.
-- Custom actions are not available for organizations that have enabled [BYOK](https://learn.microsoft.com/en-us/azure/information-protection/byok-price-restrictions) from the Protection Service.
+- Custom actions are not available for organizations that have enabled [BYOK](https://learn.microsoft.com/azure/information-protection/byok-price-restrictions) from the Protection Service.
 
 ## Next steps
 
