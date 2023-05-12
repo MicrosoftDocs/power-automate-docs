@@ -674,7 +674,7 @@ To create a self-signed certificate with exportable private key and code sign ca
   
     :::image type="content" source="media/custom-actions/create-custom-actions/private-key.png" alt-text="Screenshot of Private key protection screen" border="false":::
 
-1. dd the certificate to the Trusted Root Certification Authorities
+1. Add the certificate to the Trusted Root Certification Authorities
 
     :::image type="content" source="media/custom-actions/create-custom-actions/ca.png" alt-text="Screenshot of Trusted Root Certificate Authorities" border="false":::
 
