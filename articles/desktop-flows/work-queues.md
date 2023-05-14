@@ -66,7 +66,7 @@ Work queues are a helpful tool for processing work in an ordered, concurrent, an
 ## Learn more
 
 - [Manage work queues](work-queues-manage.md)
-- [Bulk-load work queue data](work-queues-create-bulk.md)
+- [Bulk-import work queue data](work-queues-bulk-import.md)
 - [Trigger work queues](work-queues-trigger.md)
 - [Process work queues](work-queues-process.md)
 - [Known issues and limitations](work-queues-known-limitations.md)

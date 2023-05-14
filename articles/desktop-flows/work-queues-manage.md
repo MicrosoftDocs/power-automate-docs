@@ -90,7 +90,7 @@ To create a new work queue item through the Power Automate portal:
 Looking for more ways to create work queue data?
 
 > [!div class="nextstepaction"]
-> [Learn how to bulk-load work queue data](work-queues-create-bulk.md)
+> [Learn how to bulk-import work queue data](work-queues-bulk-import.md)
 
 ## Next steps
 
@@ -99,6 +99,8 @@ Looking for more ways to create work queue data?
 
 ## Learn more
 
-- [Bulk-load work queue items](work-queues-create-bulk.md)
+- [Work queue overview](work-queues.md)
+- [Manage work queues](work-queues-manage.md)
 - [Trigger work queues](work-queues-trigger.md)
+- [Process work queues](work-queues-process.md)
 - [Known issues and limitations](work-queues-known-limitations.md)

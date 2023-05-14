@@ -1,6 +1,6 @@
 ---
 title: Trigger work queues (preview) processing
-description: Work queue processing options.
+description: Work queue triggering options.
 
 ms.topic: conceptual
 ms.date: 04/28/2023
