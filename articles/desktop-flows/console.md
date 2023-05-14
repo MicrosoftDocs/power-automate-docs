@@ -28,7 +28,7 @@ On the top of the window, you can see the current user, while on the command bar
 :::image type="content" source="media/console/pad-console.png" alt-text="Screenshot of the Power Automate for desktop console.":::
 
 > [!NOTE]
-> Some options in the console may be disabled due to insufficient permissions in the current environment. Contact your administrator to grant you access or switch to another environment. To find more information about security roles, go to [Configure user security](/power-platform/admin/database-security.md).
+> Some options in the console may be disabled due to insufficient permissions in the current environment. Contact your administrator to grant you access or switch to another environment. To find more information about security roles, go to [Configure user security](/power-platform/admin/database-security).
 
 ## Starting a desktop flow
 
