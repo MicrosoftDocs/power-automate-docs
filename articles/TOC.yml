@@ -411,7 +411,7 @@
       href: ./desktop-flows/work-queues.md
     - name: Manage work queues
       href: ./desktop-flows/work-queues-manage.md
-    - name: Bulk-load work queue data
+    - name: Bulk-import work queue data
       href: ./desktop-flows/work-queues-bulk-import.md        
     - name: Process work queues
       href: ./desktop-flows/work-queues-process.md
