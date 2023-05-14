@@ -61,37 +61,42 @@ The simplest way to dequeue a work queue item and process it is as follows:
 
 8. Your flow should look similar to this now.
   :::image type="content" source="media/work-queues/work-queue-dequeue-101.png" alt-text="Screenshot of a flow action that shows parameters for the dequeue action." lightbox="media/work-queues/work-queue-dequeue-101.png":::
-9. Select **Save** to and then **Test** your flow.
+9. Select **Save** and then **Test** your flow.
 10. In the testing side-pane select **Manually**, **Test**, **Run flow** and then **Done**.
 11. If the flow ran successfully, you should get a similar result (but with different IDs).
   :::image type="content" source="media/work-queues/work-queue-dequeue-return-101.png" alt-text="Screenshot of a cloud flow designer with an active and successful run including the results of a dequeue action." lightbox="media/work-queues/work-queue-dequeue-return-101.png":::
-12.  Next, copy the whole JSON content from the **body** field and then select on **Edit** in the upper right corner of the flow.
+12.  Next, copy the whole JSON content from the **body** field and then select **Edit** in the upper right corner of the flow.
 
   > [!TIP]
-  > After dequeuing a work queue item, we can use the JSON content of the item as a schema example for parsing the item's JSON properties. This allows us to easily access any property of the item returned by the work queue orchestrator in upcoming flow actions.
+  > After dequeuing a work queue item, we can use the JSON content of the item as a schema example for parsing the item's JSON properties. This allows us to easily access any property of the item returned by the work queue orchestrator in subsequent flow actions.
 
 13.  Add a new step by selecting **+ New step** and search for an action called **Parse JSON** and select it.
   :::image type="content" source="media/work-queues/work-queue-dequeue-parsejson.png" alt-text="Screenshot of a cloud flow designer that shows the parse json action selected." lightbox="media/work-queues/work-queue-dequeue-parsejson.png":::
 14.  Position your mouse in the **Content** field and select the **body** property from the previous action.
   :::image type="content" source="media/work-queues/work-queue-dequeue-jsonschema.png" alt-text="Screenshot of a cloud flow designer that shows the parse json action with a content value set to body." lightbox="media/work-queues/work-queue-dequeue-jsonschema.png":::
-15.  Next, select the **Generate from sample** button and past the previously copied JSON string into the dialog and select **Done**.
+15.  Next, select the **Generate from sample** button and paste the previously copied JSON string into the dialog and select **Done**.
 16.  Select **+ New step** and then select the **Microsoft Dataverse** connector.
 17.  From the list of actions, select **Update a row**.
 18.  In the Table name field, select the **Work Queue Items** table and position your cursor in the **Row ID** field.
 19.  In the Dynamic content list, you'll now have all fields that are available in the work queue item table.
-20.  Select **Show advanced options** and set the **Processing Result**, **Status** and **Status Reason** fields to the following values.
+20.  Select **Show advanced options** and set the **RowID**, **Processing Result**, **Status** and **Status Reason** fields to the following values.
   :::image type="content" source="media/work-queues/work-queue-dequeue-update.png" alt-text="Screenshot of a cloud flow designer that shows the action search dialog with parse json action selected." lightbox="media/work-queues/work-queue-dequeue-dequeue-update.png":::
 21. Select **Save** and **Test** the flow once more.
 22. If the flow ran successfully, you should get a similar result than the following.  
   :::image type="content" source="media/work-queues/work-queue-dequeue-flow-done.png" alt-text="Screenshot of a cloud flow designer that shows the action search dialog with parse json action selected." lightbox="media/work-queues/work-queue-dequeue-flow-done.png":::
-23. Now, navigate to the work queue details page and in the work queue item list select **See all**.
-24. Filter the **Status** field to only show **Processing** and **Processed** item to confirm that our dequeue and update actions worked as expected.
+23. Now, navigate to the work queue details page and in the work queue item list section select **See all**.
+24. Filter the **Status** field to only show **Processing** and **Processed** items to confirm that our dequeue and update actions worked as expected.
   :::image type="content" source="media/work-queues/work-queue-dequeue-filter.png" alt-text="Screenshot of work queue items See all experience that is about to be filtered by status." lightbox="media/work-queues/work-queue-dequeue-filter.png":::
   :::image type="content" source="media/work-queues/work-queue-dequeue-filter-active.png" alt-text="Screenshot of work queue items filter experience where processing and processed filter options have been selected." lightbox="media/work-queues/work-queue-dequeue-filter-active.png":::
   :::image type="content" source="media/work-queues/work-queue-dequeue-filter-complete.png" alt-text="Screenshot of the filter results, showing two records that matched the previously set filter criteria." lightbox="media/work-queues/work-queue-dequeue-filter-complete.png":::  
 25. **Congratulations**, you just completed your first work queue processing scenario!
 
 ### Cloud flow-based dequeueing with desktop flow processing
+
+For this scenario we will extend the previous one and include a desktop flow processing action as well.
+
+1. Go back and edit the *My first work queue flow*.
+2. Add a new action right after the Parse JSON action and select to the flow and  a desktop flow action between the Parse JSON and the Update row action.
 
 ### Coming soon. Desktop flow-based dequeueing and processing
 

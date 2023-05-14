@@ -52,11 +52,22 @@ The following table lists some of the benefits of using work queues.
 
 By using work queues in combination with other digital workforce management tools, such as [hosted machine groups](hosted-machine-groups.md), advanced analytics with Power BI, and [process advisor](../../articles/process-advisor-overview.md), organizations can gain deeper insights into the performance of their automation to improve the efficiency, scalability and resiliency while also reducing costs and improving the quality of services.
 
-## Typical use case example
+## When to use work queues
 
-Work queues are a helpful tool for processing work in an ordered, concurrent, and timely manner, regardless of industry, business processes, or organization size. In the following example, the red underlined text can be replaced with any other business process, data volume, or SLA requirement. This makes work queues a versatile solution for managing your workload more effectively and ensuring that important work is completed on time.
+Work queues are a helpful tool for processing work in an ordered, scalable, and timely manner, regardless of industry, business processes, or organization size. This makes work queues a versatile solution for managing your workload more effectively and ensuring that important work is completed on time.
 
-:::image type="content" source="media/work-queues/work-queue-sample-usecase.png" alt-text="Screenshot of a work queue use case definition." lightbox="media/work-queues/work-queue-sample-usecase.png":::
+### Example of a typical work queue use case
+
+As part of a **supply chain** process, **thousands** of transactions have to be processed **every day**.
+
+Process completion is based on a strict **SLA** and has to be complete by **11PM** since the outcome is used as input to another process.
+
+To conform with the SLA, automations need to be built that:
+
+1. Push transactions to a **centrally managed and monitored work queue**.
+2. Process transactions **concurrently** across a dedicated machine group of **20** machines.
+
+In cases where the automation is unable to process a particular transaction within the SLA, users are notified to have the transaction processed manually instead.
 
 ## How to get started
 

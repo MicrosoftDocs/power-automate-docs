@@ -85,12 +85,42 @@ To create a new work queue item through the Power Automate portal:
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
 2. On the left menu, select the **Monitor** section.
 3. Select the work queue you would like to create items for and select the **See details** button.
-4. In the **New work queue** side-panel, enter a **name** for the work queue.
+4. Select **+ New work queue item** from the toolbar.
+5. In the **New work queue item** side-panel, enter a **Name** and **Value** for the work queue item, and optionally set or overwrite the **Expiration date**.
+
+  > [!NOTE]
+  > If you do not provide a value for the work queue item name, we will display the internal work queue id instead in the work queue item list pages.
 
 Looking for more ways to create work queue data?
 
 > [!div class="nextstepaction"]
 > [Learn how to bulk-import work queue data](work-queues-bulk-import.md)
+
+## Edit a work queue item
+
+> [!IMPORTANT]
+> To help protect data integrity during processing, we do not allow work queue item names or values to changed for items that are in **Processing** state.
+
+To edit a work queue item:
+
+1. Select the work queue item you would like to edit and then select the **Edit work queue item** button.
+2. In the **Edi work queue item** side-panel, you can update all values as long as the item is not in **Processing** state.
+
+  > [!NOTE]
+  > If you do not provide a value for the work queue item name, we will display the internal work queue id instead in the work queue item list pages.
+
+
+### Allowed status transitions
+
+We've established status transitions rules in order to optimize the lifecycle management of work queue items. As a result, certain work queue item statuses may be unavailable for selection either interactively or during runtime processing if they do not fall under the allowed transition path. You can find more information about these paths in the following table.
+
+| Status      | Details                                                                                           | Allowed transitions |
+|-------------|--------------------------------------------------------------------------------------------------|--------------------|
+| **Queued**      | This is the default state when items enter the work queue, and the only state under which work queue item dequeuing is allowed. | Processing          |
+| **Processing**  | Indicating that the item is currently being processed                                            | Processed, Exception|
+| **Processed**   | Indicating that the item is currently processing                                                | Queued, On hold     |
+| **Exception**   | An exception has been raised during processing work item processing. The Status code in the follow | Queued, On hold     |
+| **On hold**    | A business or IT user has picked an item to review, assess and potentially remediate issues.     | Queued              |
 
 ## Next steps
 
