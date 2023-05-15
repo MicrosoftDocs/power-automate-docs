@@ -168,11 +168,15 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 
 ## Export a user's approval history
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Open [Microsoft Teams](https://teams.microsoft.com) on the web or desktop
 
-1. Select **Approvals**, and then select **History**.
+1. Navigate to the Approvals app in Teams, this can be done either from the main search bar in teams by searching for Approvals. Or by clicking the (... ellipses) in the left rail in Teams and searching for or clicking Approvals
 
-1. Copy the lists of approvals sent and received, and then paste them into a document editor such as Microsoft Word.
+1. Navigate to Received tab and click Export in the top right corner to Export Received Approvals
+
+1. Navigate to Sent tab and click Export in the top right corner to Export Sent Approvals
+
+Note you can also navigate to the [Power Automate portal](https://make.powerautomate.com) and go the Approvals page in the left rail, switch to history and manually copy approval contents for received and sent approvals by switching between the two filter in the top right corner of the page.
 
 ## Export a user's details using a PowerShell cmdlet
 
