@@ -19,6 +19,9 @@ search.audienceType:
 
 [!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
 
+> [!NOTE]
+> An Attended RPA license is required to include and use custom actions in desktop flows.
+
 You can include custom actions in desktop flows through the [Assets library (preview)](assets-library.md) using Power Automate for desktop's designer.
 
 To use Assets library, select **Assets library (preview)** in the designer.
