@@ -27,9 +27,7 @@ Ensure that you have the following permissions to upload a custom actions group 
 
 - You have access to the Power Platform environment.
 - You're assigned **Desktop Flow Module Developer** role in the [Power Platform admin center](https://admin.powerplatform.com).
-
-> [!IMPORTANT]
-> This feature requires Power Automate for desktop v2.32 or later.
+- This feature requires Power Automate for desktop v2.32 or later.
 
 ## Upload custom actions
 

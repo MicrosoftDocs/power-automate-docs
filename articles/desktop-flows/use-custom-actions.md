@@ -19,9 +19,6 @@ search.audienceType:
 
 [!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
 
-> [!IMPORTANT]
-> This feature requires Power Automate for desktop v2.32 or later.
-
 You can include custom actions in desktop flows through the [Assets library (preview)](assets-library.md) using Power Automate for desktop's designer.
 
 To use Assets library, select **Assets library (preview)** in the designer.
@@ -31,6 +28,9 @@ To use Assets library, select **Assets library (preview)** in the designer.
 Alternatively, use the **Tools** bar.
 
 :::image type="content" source="media/custom-actions/use-custom-actions/assets-library-tools.png" alt-text="Screenshot of the Assets library button under tools" border="false":::
+
+> [!IMPORTANT]
+> This feature requires Power Automate for desktop v2.32 or later.
 
 ## Custom actions (preview) tab
 
