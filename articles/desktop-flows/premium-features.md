@@ -8,6 +8,7 @@ ms.date: 12/02/2022
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskourass
@@ -31,6 +32,7 @@ This article lists the premium RPA features and benefits that are included in th
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
 |Access to Process advisor|Visualize and analyze your business processes with Process advisor.|[Learn about Process advisor](/power-automate/process-advisor-overview)|
 |Access to cloud connectors from desktop flows|Use cloud connectors directly in desktop flows.|[Learn how to invoke the SharePoint cloud connector from desktop flows](actions-reference/sharepoint.md)|
+|Custom actions|Ability to use custom developed automation actions in desktop flows|[Learn how to create and use custom actions in desktop flows](custom-actions.md)|
 |Sharing and collaboration|Share flows between team members and select access levels such as co-owner or user. View and manage the flows shared with you.|[Learn how to share desktop flows](manage.md#share-desktop-flows)|
 |Access to multiple environments|Organize, store, and manage flows across multiple environments, and benefit from environment isolation and role-based access.|[Learn about environments](/power-platform/admin/environments-overview)|
 |Centralized flow management and reporting|Manage desktop flows and view their detailed run logs centrally from the Power Automate portal.|[Learn how to manage desktop flows](manage.md)|

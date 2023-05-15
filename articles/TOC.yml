@@ -424,6 +424,8 @@
     items:
     - name: Configure actions and the actions pane
       href: ./desktop-flows/actions-pane.md
+    - name: Assets library (preview)
+      href: ./desktop-flows/assets-library.md
     - name: Manage the flow designer workspace
       href: ./desktop-flows/designer-workspace.md
     - name: Debug a desktop flow
@@ -459,9 +461,19 @@
     - name: Build a custom selector
       href: ./desktop-flows/build-custom-selectors.md
     - name: Test a selector
-      href: ./desktop-flows/test-selectors.md
+      href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
+  - name: Custom actions (preview)
+    items:
+    - name: Custom actions
+      href: ./desktop-flows/custom-actions.md
+    - name: Create custom actions
+      href: ./desktop-flows/create-custom-actions.md
+    - name: Upload custom actions
+      href: ./desktop-flows/upload-custom-actions.md
+    - name: Use custom actions
+      href: ./desktop-flows/use-custom-actions.md
   - name: How to
     items:
     - name: Handle and manipulate variables
