@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot (preview)
 description: Learn how to access and use Copilot in Power Automate.
-ms.date: 05/15/2023
+ms.date: 05/23/2023
 ms.custom: 
   - transparency-note
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.reviewer: angieandrews
 
 [This article is pre-release documentation and is subject to change.]
 
-Copilot in Power Automate is a revolutionary paradigm shift in creating automations. With this change, makers are empowered to create complex automations with simple natural language. The existing **Describe it to design it** feature allows you to create a flow from natural language. Copilot in Power Automate takes this experience a step further. Copilot does more than help you to create flows with natural language in a more intelligent way. It stays with you on your entire automation journey. Think of copilot as your smart flow assistant.
+Copilot in Power Automate is a revolutionary paradigm shift in creating automations. With this change, you can create complex automations by simply describing what you want to build in a chatbot like experience. Copilot does more than help you to create flows with natural language in a proactive, multi-turn experience. Your flow creation journey is powered by Copilot right from the beginning (**Home** page) until you save and test your flow, and ensure the flow is providing value.
 
 > [!IMPORTANT]
 >
@@ -40,7 +40,7 @@ Copilot can perform the following actions:
 
 ## Prerequisites
 
-You’ll need to use a Power Platform environment in a preview region to use Copilot for Power Automate. To learn how to create a preview environment if you don’t have one, go to [Frequently asked questions](#frequently-asked-questions) in this article.
+You’ll need to use a Power Platform environment in a US preview region to use Copilot in Power Automate. To learn how to create a preview environment if you don’t have one, go to [Frequently asked questions](#frequently-asked-questions) in this article.
 
 ## Use Copilot to create a flow
 
@@ -97,12 +97,12 @@ To learn more, go to [The art of the prompt: How to get the best out of generati
 
 ### Examples of asking Copilot to create a flow
 
-This section describes some example scenarios of how you can ask Copilot to create a flow from within a canvas.
+This section describes some example scenarios of how you can ask Copilot.
 
-| Scenario  | From within a canvas, do the following   |
+| From the Homepage or Describe it to design it  | From within the  canvas   |
 |-----------|------------------------------------------------|
 | When an email arrives from contoso@gmail.com, Post in Teams.  | </li><li>Ask copilot to edit the flow: **I want to send the email subject to Teams channel.**<br/></li><li>Ask copilot what your flow does: **What does my flow do?**  |
-| When an item is created in SharePoint, send me a mobile notification.  |  </li><li>Edit the flow with prompt: **I want to send the item title to notification.**<br/></li><li>Edit the flow with prompt: **I don’t want to receive mobile notification. Send me an email instead.**  |
+| When an item is created in SharePoint, send me a mobile notification.  |  </li><li>Edit the flow with this prompt: **I want to send the item title to notification.**<br/></li><li>Edit the flow with this prompt: **I don’t want to receive mobile notification. Send me an email instead.**  |
 
 ## Use Copilot to  edit a flow
 
@@ -126,7 +126,7 @@ You can use copilot to edit your existing flows. You don’t need to re-create a
 
 Use this section to find answers to frequently asked questions.
 
-### Why don’t I see Copilot for Power Automate in my Power Automate experience?
+### Why don’t I see Copilot in Power Automate in my Power Automate experience?
 
 There are several possibilities.
 
@@ -140,7 +140,7 @@ Go to [Create a Power Platform environment](/power-platform/admin/create-environ
 
 To learn more, go to [Power Platform regions](/power-platform/admin/regions-overview).
 
-### What are the limitations of Copilot for Power Automate during preview?
+### What are the limitations of Copilot in Power Automate during preview?
 
 - You can’t edit flows with the Copilot experience if your flow has any of the following flows capabilities:
     - A flow with AI Builder, SAP or Desktop flow connector.
@@ -157,3 +157,31 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
 
 - You can’t use Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
 
+### How do I disable Copilot in Power Automate?
+
+For preview, Copilot will be turned on by default. To disable it, you need to have administrator access.
+
+To disable Copilot for your *tenant*, follow these steps.
+
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+1. On the menu to the left, select **Settings** > **Tenant settings**.
+
+1. Select **Copilot (preview)**.
+
+1. Set the toggle to **Off** > **Save**.
+
+To disable Copilot for your *environment*, follow these steps.
+
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+
+1. On the menu to the left, select **Environment**, and then select the environment.
+
+1. On the command bar, select **Settings**.
+
+1. Set the toggle next to **Copilot** to **Off**.
+
+### See also
+
+- [Transparency notes for Power Automate](transparency-note.md)
+- [Transparency note for Copilot in Power Automate](transparency-note-copilot.md) 
