@@ -95,13 +95,13 @@ The simplest way to dequeue a work queue item and process it is as follows:
 
 ### Cloud flow-based processing with desktop flow support
 
-For this scenario we'll extend the previous one by adding a desktop flow processing step as well.
+For this scenario, we extend the previous one by adding a desktop flow processing step as well.
 
 1. Go back and edit the *My first work queue flow*.
-2. Add a new action right after the Parse JSON action and search for **Desktop flows** connector and the **Run a flow built with Power Automate for desktop**.
+2. Add a new action right after the **Parse JSON** action and search for **Desktop flows** connector and the **Run a flow built with Power Automate for desktop**.
 3. In the Desktop flow dropdown, either choose and edit an existing desktop flow or select **+ Create a new desktop flow** and follow the instruction on screen to create the desktop flow and launch Power Automate desktop. If you're new to Desktop flows, you can learn more [here](create-flow.md).
 4. Once the Power Automate desktop designer opens, create two **input** variables called **WorkQueueItemValue** and **WorkQueueItemName** and then add two **output** variables called **ProcessingNotes** and **ProcessingStatus** respectively, all of which should have **Text** as their data type.  
-5. Next, let's provide a default value for the WorkQueueItem variable so that we can later test the script locally. In case you've followed the bulk-import tutorial you should have work queue items in the Vendor invoice queue that have their values in JSON format. Here's an example of one of the values we've used.
+5. Let's also provide a default value for the **WorkQueueItem** variable so that we can later test the script locally. In case you've followed the [bulk-import tutorial](work-queues-bulk-import.md#tutorial-import-a-work-queue-and-items-from-csv) you should have work queue items in the Vendor invoice queue that have their values in JSON format. Here's an example of one of the values we've used.
 
    ```json
    {
@@ -118,11 +118,11 @@ For this scenario we'll extend the previous one by adding a desktop flow process
    ```
   
    :::image type="content" source="media/work-queues/work-queue-hybrid-pad-variables.png" alt-text="Screenshot of a desktop flow designer that shows input and output actions." lightbox="media/work-queues/work-queue-hybrid-pad-variables.png":::
-6. Now, save the flow.
-7. In the action panel, open the **Variables** action group and double-click on the **Convert JSON to custom object** action to add it to the design canvas which will open its property window.
+6. Now, **Save** the flow.
+7. In the action panel, open the **Variables** action group and double-click on the **Convert JSON to custom object** action to add it to the design canvas, which will open its property window.
 8. Select the variable icon in the JSON field and choose the WorkQueueItemValue variable.
 9. Rename the produced output variable from **JsonAsCustomObject** to **VendorInvoice** and select **Save**.
-10. Next, add an **If** from the **Conditionals** group and and configure its properties as follows:
+10. Next, add an **If** action from the **Conditionals** group and configure its properties as follows:
   
     | First operand  | Operator | Second operand  |
     |----------------|----------|-----------------|
@@ -136,22 +136,36 @@ For this scenario we'll extend the previous one by adding a desktop flow process
     | %ProcessingNotes%  | The invoice has been processed |
     | %ProcessingStatus% | Processed |
 
-14. Copy the two Set variable action and paste them between the Else and the End action and change their values to match these:
+14. Copy the two **Set variable** action and paste them between the **Else** and the **End** action and change their values to match these:
   
     | Variable           | Value                         |
     |--------------------|-------------------------------|
-    | %ProcessingNotes%  | Business exception: The invoice amount if greate than $5000 which requires manager approval. |
+    | %ProcessingNotes%  | Business exception: The invoice amount is greater than $5000, which requires manager approval. |
     | %ProcessingStatus% | Exception |
 
 15. Your flow should look similar to this now.
    :::image type="content" source="media/work-queues/work-queue-pad-flow-skeleton.png" alt-text="Screenshot of a desktop flow designer that shows an end-2-end flow with conditions." lightbox="media/work-queues/work-queue-pad-flow-skeleton.png":::
-16. Save the flow and run it to confirm that the flow logic works as expected.
+16. **Save** the flow and run it to confirm that the flow logic works as expected.
 17. Next, go back to edit the *My first work queue flow*.
 18. Select the newly created (or edited) desktop flow from the list and select **Attended** as its **Run Mode**.
 19. Fill in the **Work Queue Item Value** and **Work Queue Item Name** parameters as shown here:
    :::image type="content" source="media/work-queues/work-queue-cloud-pad-action.png" alt-text="Screenshot of a cloud flow designer that shows a desktop flow action pointing to the flow that has just been created or updated" lightbox="media/work-queues/work-queue-cloud-pad-action.png":::
-20. Select **Save** and **Test** to tes the overall automation and observe the output from the desktop flow action.
+20. Great, let's add a **Condition** action before the **Update a row** action.
+21. Position your mouse in the **Choose a value** field and select **Processing Status** from the dynamic content list dialog.
+22. Now, position your mouse in the other **Choose a value** field and enter **Processed** as the text value.
+23. Next, drag & drop the **Update a row** action into the green **If yes** section of the condition action.
+24. Open the Update a row action details and replace the values to match the following:
+   :::image type="content" source="media/work-queues/work-queue-cloud-pad-processed.png" alt-text="Screenshot of a cloud flow designer that shows an update a row action with values." lightbox="media/work-queues/work-queue-cloud-pad-processed.png":::
+26. In the red If no box, add another **Update a row** action and select **Work Queue Items** as the **Table name**.
+27. Next, select **workqueueitemid** as **Row ID** and open **Show advanced options** section select **Processing Notes** as the **Processing Results** value.
+28. Select **Error** as **Status** and **GenericException** for **Status Reason**.  
+   :::image type="content" source="media/work-queues/work-queue-cloud-pad-error.png" alt-text="Screenshot of a cloud flow designer that shows a successful run." lightbox="media/work-queues/work-queue-cloud-pad-error.png":::
+29. Select **Save** and **Test** to test the overall automation and observe the output from the desktop flow action.
+   :::image type="content" source="media/work-queues/work-queue-cloud-pad-error.png" alt-text="Screenshot of a cloud flow designer that shows a successful run." lightbox="media/work-queues/work-queue-cloud-pad-action-final.png":::
+30. To confirm that the work queue item has been processed you can go to the work queue details page, select **See all** in the work queue items section and filter the items by **Processed** status.
+   :::image type="content" source="media/work-queues/work-queue-cloud-pad-action-confirm.png" alt-text="Screenshot of a work queue item list page that is filtered to only show processed items." lightbox="media/work-queues/work-queue-cloud-pad-action-confirm.png":::
 
+**Well done**, you just completed a more advanced scenario that included hybrid work queue processing!
 
 ### Coming soon. Desktop flow-based processing
 
