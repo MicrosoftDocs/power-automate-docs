@@ -473,7 +473,7 @@
     - name: Use custom actions
       href: ./desktop-flows/use-custom-actions.md
     - name: Custom actions SDK
-      href: /dotnet/api/Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK?view=pad-actions-sdk-latest
+      href: /dotnet/api/Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK
   - name: How to
     items:
     - name: Handle and manipulate variables
