@@ -99,7 +99,7 @@ Looking for more ways to create work queue data?
 ## Edit a work queue item
 
 > [!IMPORTANT]
-> To help protect data integrity during processing, we do not allow work queue item names or values to changed for items that are in **Processing** state.
+> To help protect data integrity during processing, we do not allow work queue item names or values to be changed for items that are in **Processing** state.
 
 To edit a work queue item:
 

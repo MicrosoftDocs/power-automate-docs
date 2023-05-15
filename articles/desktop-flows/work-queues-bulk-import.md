@@ -30,10 +30,23 @@ Here's a comprehensive list of data management and bulk-import options you can c
 >   * [Import using a connector](/power-apps/maker/data-platform/data-platform-import-export#import-using-a-connector) - Supporting data transformation with Power Query and connecting to many different sources, such as Excel, Azure, SQL Server, CSV, JSON, XML, Text, OData, and more.
 >   * [Import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) - Supporting Excel and CSV files with data validation and visual mapping experience.
 > * Using Power Platform Dataflows with its powerful cloud-based ETL services
-> * Using Dataverse pro-developer features:
->
->   * [Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
->   * [Dataverse SDK for .NET](/power-apps/developer/data-platform/developer-tools#dataverse-sdk-for-net)
+
+## Adding work queue items with cloud flow and Dataverse connector
+
+1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
+2. On the left menu, select **My flows**.
+3. In the toolbar, select **+ New flow** and select **Instant cloud flow**.
+4. Provide a **Flow name** and then select **Manually trigger a flow** option.
+5. Select **Create**.
+6. Once the flow designer opened, select **+ New step** and select the Microsoft Dataverse connector.
+7. In the list of actions, select **Add a new row**.
+8. The following highlighted fields, represent the minimum fields required to add items to a work queue.
+  :::image type="content" source="media/work-queues/work-queue-add-item-with-connector.png" alt-text="Screenshot of a Dataverse connector action to create work queue items." lightbox="media/work-queues/work-queue-add-item-with-connector.png":::
+
+   When using the Dataverse connector for add or update actions, it expects a certain pattern to be followed when referencing a parent record. An example of this pattern can be seen in the 'Work Queue ID (work Queues)' field, which uses the work queue ID (Guid) to reference the parent work queue for example, ```/workqueues(44e44ea8-1af2-ed11-8848-000d3ae86f97)```.
+
+9. Select **Save** and **Test** the flow.
+10. Navigate to the work queue details page of the work queue you have specific in the action and confirm that the newly created item has been added.
 
 ## Tutorial: Import a work queue and items from CSV
 
@@ -122,7 +135,7 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
 2. Confirm that you're still in the correct environment and select **Tables** in the side-menu.
 3. Select the **All** tab.
 4. Search for **Work Queue Item** table and open its details page.
-5. In the toolbar select **Import** and then **Import data**.
+5. In the toolbar, select **Import** and then **Import data**.
 6. In the **Power Query** dialog that opens, select the **Text/CSV** option.
    :::image type="content" source="media/work-queues/work-queue-import-powerquery.png" alt-text="Screenshot of Power Apps portal showing Power Query dialog." lightbox="media/work-queues/work-queue-import-powerquery.png":::
 7. Next, select **Upload file (Preview)** and then **Browse...** for the **vendor-invoice-items.csv** file.
