@@ -706,6 +706,9 @@ SHA256 {path to the .dll you want to sign}.dll
 
 The .dll containing the custom actions (preview) and all its dependencies (.dll files) must be packaged in a cabinet file (.cab). 
 
+> [!NOTE]
+> When naming the .cab file, follow the file and folder naming convention for Windows operating system. Don't use blank spaces or special characters such as `< > : " / \ | ? * `.
+
 Create a Windows PowerShell Script (.ps1) containing the following lines: 
 ```PowerShell
 param(
