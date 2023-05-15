@@ -472,7 +472,7 @@
       href: ./desktop-flows/upload-custom-actions.md
     - name: Use custom actions
       href: ./desktop-flows/use-custom-actions.md
-    - name: Power Automate for desktop actions SDK
+    - name: Power Automate for desktop actions SDK (preview)
       href: /dotnet/api/Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK
   - name: How to
     items:
