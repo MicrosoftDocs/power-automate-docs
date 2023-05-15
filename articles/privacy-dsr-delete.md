@@ -125,13 +125,19 @@ Finally, delete the original flow.
 
  Approval responses include personal information in the form of approval assignments and comments.
 
-1. Sign in to [PowerApps](https://make.powerapps.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com) or [PowerApps](https://make.powerapps.com/).
 
 1. In the left navigation pane, select **Data**, and then select **Tables**.
 
-1. Find the **Flow Approval** table, select the table menu (**&hellip;**), and then open the table in Microsoft Excel.
+1. Switch to "All" from "Recommended" in the resulting page where we list tables
 
-1. Search for and delete the user's approval history.
+1. Find the **Approvals** table, select the table menu (**&hellip;**), and Edit or Edit in New tab (Note you can also choose the Edit in Excel option to work within Excel to delete the records)
+
+1. If the owner column doesn't show up by default, click the show existing columns menu (typically marked +45 more not that the number might vary)
+
+1. Filter to the user whose data you want to delete in the owner column select the records you want to delete and hit "Delete records"
+
+1. Navigate back to the main tables list mentioned in steps 2 and 3 and open the "Approval Requests" table and "Approval Response" table and repeat the steps 4 through 6 for those tables as well
 
 [Learn more about executing data requests against Dataverse customer data](/power-platform/admin/common-data-service-gdpr-dsr-guide).
 
