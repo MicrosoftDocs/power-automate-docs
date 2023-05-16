@@ -33,7 +33,7 @@ Known issues will be listed here.
 
 ## Learn more
 
-- [Manage work overview](work-queues.md)
+- [Work queue overview](work-queues.md)
 - [Manage work queues](work-queues-manage.md)
 - [Bulk-import work queue data](work-queues-bulk-import.md)
 - [Trigger work queues](work-queues-trigger.md)

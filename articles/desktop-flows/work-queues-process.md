@@ -126,7 +126,7 @@ For this scenario, we extend the previous one by adding a desktop flow processin
   
     | First operand  | Operator | Second operand  |
     |----------------|----------|-----------------|
-    | %VendorInvoice['Amount']% | Greater than (>) | 5000 |
+    | %VendorInvoice['Amount']% | Less than (<) | 5000 |
 11. Select **Save**.
 12. Add another action from the **Conditionals** group called **Else** and add it between the **If** and **End** action.
 13. Now, add another two actions from the **Variables** group called **Set variable** and add them within the **If** and **Else** actions and set the **ProcessingNotes** and **ProcessingStatus** variables to the following values:
@@ -156,7 +156,7 @@ For this scenario, we extend the previous one by adding a desktop flow processin
 23. Next, drag & drop the **Update a row** action into the green **If yes** section of the condition action.
 24. Open the Update a row action details and replace the values to match the following:
    :::image type="content" source="media/work-queues/work-queue-cloud-pad-processed.png" alt-text="Screenshot of a cloud flow designer that shows an update a row action with values." lightbox="media/work-queues/work-queue-cloud-pad-processed.png":::
-26. In the red If no box, add another **Update a row** action and select **Work Queue Items** as the **Table name**.
+26. In the red **If no** box, add another **Update a row** action and select **Work Queue Items** as the **Table name**.
 27. Next, select **workqueueitemid** as **Row ID** and open **Show advanced options** section select **Processing Notes** as the **Processing Results** value.
 28. Select **Error** as **Status** and **GenericException** for **Status Reason**.  
    :::image type="content" source="media/work-queues/work-queue-cloud-pad-error.png" alt-text="Screenshot of a cloud flow designer that shows a successful run." lightbox="media/work-queues/work-queue-cloud-pad-error.png":::

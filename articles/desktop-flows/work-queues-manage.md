@@ -29,7 +29,7 @@ To view the list of work queues:
 2. On the left menu, select the **Monitor** section.
 3. Select **Work queue (preview)**.
 
-If you have already created work queues or if any work queue has been shared with you, you see a list similar to the befollowinglow.
+If you have already created work queues or if any work queue has been shared with you, you see a list similar to the below.
 
 :::image type="content" source="media/work-queues/work-queue-list.png" alt-text="Screenshot of a list of work queues in Power Automate portal." lightbox="media/work-queues/work-queue-list.png":::
 

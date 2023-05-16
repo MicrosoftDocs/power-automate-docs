@@ -45,20 +45,20 @@ Here's a comprehensive list of data management and bulk-import options you can c
 8. The following highlighted fields, represent the minimum fields required to add items to a work queue.
   :::image type="content" source="media/work-queues/work-queue-add-item-with-connector.png" alt-text="Screenshot of a Dataverse connector action to create work queue items." lightbox="media/work-queues/work-queue-add-item-with-connector.png":::
 
-   When using the Dataverse connector for add or update actions, it expects a certain pattern to be followed when referencing a parent record. An example of this pattern can be seen in the 'Work Queue ID (work Queues)' field, which uses the work queue ID (Guid) to reference the parent work queue, for example, ```/workqueues(44e44ea8-1af2-ed11-8848-000d3ae86f97)```.
+   When using the Dataverse connector **Add a row row** action, it expects a certain pattern to be followed when referencing a parent record. An example of this pattern can be seen in the 'Work Queue ID (work Queues)' field, which uses the work queue ID (Guid) to reference the parent work queue, for example, ```/workqueues(44e44ea8-1af2-ed11-8848-000d3ae86f97)```.
 
 9. Select **Save** and **Test** the flow.
-10. Navigate to the work queue details page of the work queue you have specific in the action and confirm that the newly created item has been added.
+10. Navigate to the work queue details page of the work queue you have specific in the action, and confirm that the newly created work queue item has been added.
 
 ## Tutorial: Import a work queue and items from CSV
 
 This tutorial showcases both mentioned [Dataverse bulk-import options](/power-apps/maker/data-platform/data-platform-import-export) for importing a work queue along with its associated work queue items, which in this example is vendor invoices.
 
 > [!NOTE]
-> While the easiest and most straight forward way to create work queues is through make.powerapps.com with Power Automate as described in [Create a work queue](work-queues-manage.md#create-a-work-queue), we've included  the work queue import steps just to demonstrate the [import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) approach as well.
+> While the easiest and most straight forward way to create work queues is through the [Power Automate portal](https://make.powerautomate.com) as described in [Create a work queue](work-queues-manage.md#create-a-work-queue), we've included work queue import steps as well to demonstrate the [import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) approach as well.
 
 > [!IMPORTANT]
-> The CSV data in this tutorial contains internal platform columns and values for **componentstate** and **overwritetime**. These fields are mandatory platform fields and should always be included in the import mapping. Typically, these fields have default values, with the `componentstate` being **0** (zero) and the `overwritetime` having a minimum date of **01/01/1900 00:00**. These fields are part of the work queue record, which you can review in [Power Apps](https://make.powerapps.com) under **Tables** and then search for **Work Queue**.
+> The CSV sample data for this tutorial contains internal platform columns and values for **componentstate** and **overwritetime**. These fields are mandatory platform fields and must be included in import mapping. Typically, these fields have default values, with the `componentstate` being **0** (zero) and the `overwritetime` having a minimum date of **01/01/1900 00:00**. These fields are part of the work queue record, which you can review in [Power Apps](https://make.powerapps.com) under **Tables** and then search for **Work Queue**.
 
 ### Prerequisites
 
@@ -164,7 +164,7 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
 13. Select **Ok**.
 14. Select **Next**.
 15. Select **Next** and then **Publish**.
-16. Navigate to https://make.powerapps.com and select Dataflows from the left-menu (you might have to select **More** first to get to the Dataflows menu).
+16. Navigate to the [Power Apps maker portal](https://make.powerapps.com) and select Dataflows from the left-menu (you might have to select **More** first to get to the Dataflows menu).
 17. Confirm that you see a new dataflow entry and that both icons show success once the import is complete.
     :::image type="content" source="media/work-queues/work-queue-import-inprogress.png" alt-text="Screenshot of the Dataflows list showing dataflows that are complete and still refreshing." lightbox="media/work-queues/work-queue-import-inprogress.png":::
 18. Once complete, navigate to the work queue details page of the vendor invoice queue and confirm that the work queue items have been added.
