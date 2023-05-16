@@ -1,6 +1,6 @@
 ---
 title: Known limitations or issues 
-description: Known limitations or issues for work queues (preview).
+description: Known limitations or issues for work queues.
 ms.topic: conceptual
 ms.date: 04/28/2023
 ms.author: appapaio
@@ -12,7 +12,7 @@ search.audienceType:
   - enduser
 ---
 
-# Known issues and limitations
+# Known issues and limitations for work queues (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -29,7 +29,7 @@ The following table includes known limitations
 
 ## Known issues
 
-Known issues will be listed here.
+Known issues are listed here.
 
 ## Learn more
 
