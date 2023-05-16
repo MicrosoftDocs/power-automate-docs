@@ -81,6 +81,14 @@ The simplest way to dequeue a work queue item and process it is as follows:
 18.  In the **Table name** field, select the **Work Queue Items** table and position your cursor in the **Row ID** field.
 19.  In the **Dynamic content** list, you'll now have all fields that are available in the work queue item table.
 20.  Select **Show advanced options** and then set the **RowID**, **Processing Result**, **Status**, and **Status Reason** fields to the following values.
+  
+  | Field | Value | Details                    |
+  | --------- | ----- | ------------------------------ |
+  | **Row ID** | workqueueitemid | This values can be selected in the dynamic content list dialog. |
+  | **Processing Result** | The item has been successfully processed. | |
+  | **Status** | Processed | |
+  | **Status Reason** | Processed | |
+  
   :::image type="content" source="media/work-queues/work-queue-dequeue-update.png" alt-text="Screenshot of a cloud flow designer that shows update a row action of the Dataverse connector with work queue item values." lightbox="media/work-queues/work-queue-dequeue-update.png":::
 21.  Select **Save** and **Test** the flow once more.
 22. If the flow ran successfully, you should get a similar result than the following.  
