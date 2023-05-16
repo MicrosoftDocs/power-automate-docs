@@ -84,7 +84,7 @@ The simplest way to dequeue a work queue item and process it is as follows:
   
   | Field | Value | Details                    |
   | --------- | ----- | ------------------------------ |
-  | **Row ID** | workqueueitemid | This values can be selected in the dynamic content list dialog. |
+  | **Row ID** | workqueueitemid | This value can be selected in the dynamic content list dialog. |
   | **Processing Result** | The item has been successfully processed. | |
   | **Status** | Processed | |
   | **Status Reason** | Processed | |
