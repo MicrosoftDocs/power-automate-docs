@@ -20,7 +20,7 @@ The AI powered editing experience in Power Automate is a new way to build automa
 
 ## What are the system’s capabilities?
 
-The system is a copilot embedded in the coud flows designer. It helps you create or edit your flow. The system can:
+The system is a copilot embedded in the cloud flows designer. It helps you create or edit your flow. The system can:
 
 - Create a new flow from scratch.
 

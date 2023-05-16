@@ -30,7 +30,7 @@ Copilot can perform the following actions:
 
 - Set up connections on your behalf.
 
-- Apply the necessary parameters in the flow based on your prompt. Only a limited number of connectors is currently supported.
+- Apply the necessary parameters in the flow based on your prompt. Only a limited number of connectors are currently supported.
 
 - Respond to your requests to make changes to your flow, such as update actions and replace actions.
 
@@ -64,7 +64,7 @@ Follow these steps to create a flow using Copilot.
 
     You can also update your prompt to update the flow layout in this step.
 
-1. Verify that the flow fits your requirement, select **Next**.
+1. Verify that the flow fits your requirement, and then select **Next**.
 
 1. Review your connected apps and services, and then select **Next**.
 
@@ -76,7 +76,7 @@ Follow these steps to create a flow using Copilot.
 
 ## How to write a good prompt
 
-Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. With Copilot, you can try out different variations of prompts to help you evaluate what works best. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again. With practice, you’ll get better at guiding the model to the results you want. With practice, you’ll get better at guiding the model to the results you want.
+Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. With Copilot, you can try out different variations of prompts to help you evaluate what works best. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again.
 
 - For better and more accurate results, provide prompts in *When X happens, do Y* format.
 
@@ -111,7 +111,7 @@ You can use Copilot to edit your existing flows. You don’t need to re-create a
   
     :::image type="content" source="./media/get-started-with-copilot/ai-edit.png" alt-text="Screenshot of how to edit an existing flow.":::
 
-    Alternatively, access Copilot from flow **Details** page of your existing flowby selecting the flow name from **My flows** > **Edit** > **Try AI-powered editing (preview)**.
+    Alternatively, access Copilot from flow **Details** page of your existing flow by selecting the flow name from **My flows** > **Edit** > **Try AI-powered editing (preview)**.
 
     Your flow opens in the AI-powered Copilot editing experience. You can now edit your flow using Copilot in Power Automate.
 
@@ -125,7 +125,7 @@ There are several possibilities.
 
 - Check if the environment you’re using is in preview region or not. Your Power Platform admin can help review and verify.
 
-- Check with your Power Platform admin if the tenant setting for Copilot is enabled or not.
+- Check with your Power Platform admin if the [tenant setting for Copilot is or isn't enabled](#how-do-i-disable-copilot-in-power-automate).
 
 ### How do I create a Power Platform environment in preview region?
 
