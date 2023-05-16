@@ -1,7 +1,6 @@
 ---
-title: Work queues (preview)
+title: Work queues
 description: Work queue management with Power Automate.
-
 ms.topic: conceptual
 ms.date: 04/28/2023
 ms.author: appapaio
@@ -12,8 +11,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
-# Work queues (preview) overview
+# Work queues overview (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -34,7 +32,7 @@ The following illustration shows and end-to-end process that uses work queues to
 
 ## Prerequisites
 
-To use work queues (preview) in Power Automate the following are required:
+To use work queues in Power Automate the following are required:
 
 - Premium Power Automate license
 - Environment maker role (or other roles that include access to work queue tables)

@@ -1,5 +1,5 @@
 ---
-title: Trigger work queues (preview) processing
+title: Trigger work queues processing
 description: Work queue triggering options.
 ms.topic: conceptual
 ms.date: 04/28/2023
@@ -11,7 +11,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Trigger work queues processing (preview)
 
 [This article is prerelease documentation and is subject to change.]

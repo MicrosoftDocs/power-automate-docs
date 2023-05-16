@@ -1,5 +1,5 @@
 ---
-title: Manage work queues (preview)
+title: Manage work queues
 description: Manage work queues in Power Automate.
 ms.topic: conceptual
 ms.date: 04/28/2023
@@ -11,7 +11,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Manage work queues (preview)
 
 [This article is prerelease documentation and is subject to change.]

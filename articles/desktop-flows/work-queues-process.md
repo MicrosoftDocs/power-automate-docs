@@ -46,7 +46,7 @@ The simplest way to dequeue a work queue item and process it is as follows:
 3. On the toolbar, select **+ New flow** and then select **Instant cloud flow**.
 4. Provide a **Flow name**, such as *My first work queue flow*, and then select **Manually trigger a flow**.
 5. Select **Create**.
-6. Once the flow designer opens, select **+ New step** and then select the Microsoft Dataverse connector.
+6. Once the flow designer opens, select **+ New step,** and then select the Microsoft Dataverse connector.
 7. In the list of actions, select **Perform a bound action**.
 
   | Parameter | Value | Description                    |
@@ -75,7 +75,7 @@ The simplest way to dequeue a work queue item and process it is as follows:
   :::image type="content" source="media/work-queues/work-queue-dequeue-parsejson.png" alt-text="Screenshot of a cloud flow designer that shows the parse json action selected." lightbox="media/work-queues/work-queue-dequeue-parsejson.png":::
 14.  Position your mouse in the **Content** field and select the **body** property from the previous action.
   :::image type="content" source="media/work-queues/work-queue-dequeue-jsonschema.png" alt-text="Screenshot of a cloud flow designer that shows the parse json action with a content value set to body." lightbox="media/work-queues/work-queue-dequeue-jsonschema.png":::
-15.  Next, select the **Generate from sample** button and paste the previously copied JSON string into the dialog and select **Done**.
+15.  Next, select **Generate from sample** and paste the previously copied JSON string into the dialog and select **Done**.
 16.  Select **+ New step** and then select the **Microsoft Dataverse** connector.
 17.  From the list of actions, select **Update a row**.
 18.  In the **Table name** field, select the **Work Queue Items** table and position your cursor in the **Row ID** field.
@@ -89,16 +89,17 @@ The simplest way to dequeue a work queue item and process it is as follows:
   | **Status** | Processed | |
   | **Status Reason** | Processed | |
   
-  :::image type="content" source="media/work-queues/work-queue-dequeue-update.png" alt-text="Screenshot of a cloud flow designer that shows update a row action of the Dataverse connector with work queue item values." lightbox="media/work-queues/work-queue-dequeue-update.png":::
+   :::image type="content" source="media/work-queues/work-queue-dequeue-update.png" alt-text="Screenshot of a cloud flow designer that shows update a row action of the Dataverse connector with work queue item values." lightbox="media/work-queues/work-queue-dequeue-update.png":::
 21.  Select **Save** and **Test** the flow once more.
-22. If the flow ran successfully, you should get a similar result than the following.  
+22. If the flow ran successfully, you should get a similar result as the following.  
   :::image type="content" source="media/work-queues/work-queue-dequeue-flow-done.png" alt-text="Screenshot of a cloud flow run that completed successfully." lightbox="media/work-queues/work-queue-dequeue-flow-done.png":::
 22.  Now, navigate to the work queue details page and in the work queue item list section select **See all**.
 23.  Filter the **Status** field to only show **Processing** and **Processed** items to confirm that our dequeue and update actions worked as expected.
   :::image type="content" source="media/work-queues/work-queue-dequeue-filter.png" alt-text="Screenshot of work queue items See all experience that is about to be filtered by status." lightbox="media/work-queues/work-queue-dequeue-filter.png":::
   :::image type="content" source="media/work-queues/work-queue-dequeue-filter-active.png" alt-text="Screenshot of work queue items filter experience where processing and processed filter options have been selected." lightbox="media/work-queues/work-queue-dequeue-filter-active.png":::
   :::image type="content" source="media/work-queues/work-queue-dequeue-filter-complete.png" alt-text="Screenshot of the filter results, showing two records that matched the previously set filter criteria." lightbox="media/work-queues/work-queue-dequeue-filter-complete.png":::  
-24.  **Congratulations**, you just completed your first work queue processing scenario!
+
+ Congratulations, you just completed your first work queue processing scenario!
 
 ### Cloud flow-based processing with desktop flow support
 
@@ -106,9 +107,9 @@ For this scenario, we extend the previous one by adding a desktop flow processin
 
 1. Go back and edit the *My first work queue flow*.
 2. Add a new action right after the **Parse JSON** action and search for **Desktop flows** connector and the **Run a flow built with Power Automate for desktop**.
-3. In the Desktop flow dropdown, either choose and edit an existing desktop flow or select **+ Create a new desktop flow** and follow the instruction on screen to create the desktop flow and launch Power Automate desktop. If you're new to Desktop flows, you can learn more [here](create-flow.md).
+3. In the desktop flow dropdown, either choose and edit an existing desktop flow or select **+ Create a new desktop flow** and follow the instruction on screen to create the desktop flow and launch Power Automate Desktop. If you're new to desktop flows, you can learn more [here](create-flow.md).
 4. Once the Power Automate desktop designer opens, create two **input** variables called **WorkQueueItemValue** and **WorkQueueItemName** and then add two **output** variables called **ProcessingNotes** and **ProcessingStatus** respectively, all of which should have **Text** as their data type.  
-5. Let's also provide a default value for the **WorkQueueItem** variable so that we can later test the script locally. In case you've followed the [bulk-import tutorial](work-queues-bulk-import.md#tutorial-import-a-work-queue-and-items-from-csv) you should have work queue items in the Vendor invoice queue that have their values in JSON format. Here's an example of one of the values we've used.
+5. Provide a default value for the **WorkQueueItem** variable so that you can later test the script locally. In case you've followed the [bulk-import tutorial](work-queues-bulk-import.md#tutorial-import-a-work-queue-and-items-from-csv) you should have work queue items in the **Vendor** invoice queue that have their values in JSON format. Here's an example of one of the values used.
 
    ```json
    {
@@ -126,8 +127,8 @@ For this scenario, we extend the previous one by adding a desktop flow processin
   
    :::image type="content" source="media/work-queues/work-queue-hybrid-pad-variables.png" alt-text="Screenshot of a desktop flow designer that shows input and output actions." lightbox="media/work-queues/work-queue-hybrid-pad-variables.png":::
 6. Now, **Save** the flow.
-7. In the action panel, open the **Variables** action group and double-click on the **Convert JSON to custom object** action to add it to the design canvas, which will open its property window.
-8. Select the variable icon in the JSON field and choose the WorkQueueItemValue variable.
+7. In the action panel, open the **Variables** action group and double-click the **Convert JSON to custom object** action to add it to the design canvas, which opens its property window.
+8. Select the variable icon in the JSON field and choose the **WorkQueueItemValue** variable.
 9. Rename the produced output variable from **JsonAsCustomObject** to **VendorInvoice** and select **Save**.
 10. Next, add an **If** action from the **Conditionals** group and configure its properties as follows:
   
@@ -153,15 +154,15 @@ For this scenario, we extend the previous one by adding a desktop flow processin
 15. Your flow should look similar to this now.
    :::image type="content" source="media/work-queues/work-queue-pad-flow-skeleton.png" alt-text="Screenshot of a desktop flow designer that shows an end-2-end flow with conditions." lightbox="media/work-queues/work-queue-pad-flow-skeleton.png":::
 16. **Save** the flow and run it to confirm that the flow logic works as expected.
-17. Next, go back to edit the *My first work queue flow*.
-18. Select the newly created (or edited) desktop flow from the list and select **Attended** as its **Run Mode**.
+17. Go back to edit the *My first work queue flow*.
+18. Select the newly created (or edited) desktop flow from the list and then select **Attended** as its **Run Mode**.
 19. Fill in the **Work Queue Item Value** and **Work Queue Item Name** parameters as shown here:
    :::image type="content" source="media/work-queues/work-queue-cloud-pad-action.png" alt-text="Screenshot of a cloud flow designer that shows a desktop flow action pointing to the flow that has just been created or updated" lightbox="media/work-queues/work-queue-cloud-pad-action.png":::
 20. Great, let's add a **Condition** action before the **Update a row** action.
 21. Position your mouse in the **Choose a value** field and select **Processing Status** from the dynamic content list dialog.
 22. Now, position your mouse in the other **Choose a value** field and enter **Processed** as the text value.
-23. Next, drag & drop the **Update a row** action into the green **If yes** section of the condition action.
-24. Open the Update a row action details and replace the values to match the following:
+23. Next, drag and drop the **Update a row** action into the **If yes** section of the condition action.
+24. Open the **Update a row** action details and replace the values to match the following:
    :::image type="content" source="media/work-queues/work-queue-cloud-pad-processed.png" alt-text="Screenshot of a cloud flow designer that shows an update a row action with values." lightbox="media/work-queues/work-queue-cloud-pad-processed.png":::
 26. In the red **If no** box, add another **Update a row** action and select **Work Queue Items** as the **Table name**.
 27. Next, select **workqueueitemid** as **Row ID** and open **Show advanced options** section select **Processing Notes** as the **Processing Results** value.
@@ -172,14 +173,7 @@ For this scenario, we extend the previous one by adding a desktop flow processin
 30. To confirm that the work queue item has been processed you can go to the work queue details page, select **See all** in the work queue items section and filter the items by **Processed** status.
    :::image type="content" source="media/work-queues/work-queue-cloud-pad-action-confirm.png" alt-text="Screenshot of a work queue item list page that is filtered to only show processed items." lightbox="media/work-queues/work-queue-cloud-pad-action-confirm.png":::
 
-**Well done**, you just completed a more advanced scenario that included hybrid work queue processing!
-
-### Coming soon. Desktop flow-based processing
-
-> [!TIP]
-> **Coming soon!**
->
-> Power Automate desktop support for work queue processing is currently planned for late Q2 or early Q3 CY23. Make sure to follow our blog post for latest announcements [here](https://powerautomate.microsoft.com/blog/).
+Well done, you just completed a more advanced scenario that included hybrid work queue processing!
 
 ## Next steps
 
