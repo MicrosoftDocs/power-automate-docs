@@ -12,9 +12,9 @@ ms.reviewer: angieandrews
 
 # Get started with Copilot (preview)
 
-[This article is pre-release documentation and is subject to change.]
+[This article is prerelease documentation and is subject to change.]
 
-Copilot in Power Automate is a revolutionary paradigm shift in creating automations. With this change, you can create complex automations by simply describing what you want to build in a chatbot like experience. Copilot does more than help you to create flows with natural language in a proactive, multi-turn experience. Your flow creation journey is powered by Copilot right from the beginning (**Home** page) until you save and test your flow, and ensure the flow is providing value.
+Copilot in Power Automate allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. With Copilot, create a flow by describing what you need through multiple steps of conversation. Copilot stays with you from the beginning as you describe the requirements until you save and test the flow.
 
 > [!IMPORTANT]
 >
@@ -24,27 +24,25 @@ Copilot in Power Automate is a revolutionary paradigm shift in creating automati
 >- This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 >- To learn more, go to [Transparency notes for Power Automate](transparency-note.md).
 
-## Overview of Copilot
-
-Like a smart assistant, copilot stays with you right from the start of the flow building process and throughout your flow editing, or your flow fit and finish journey. It can help answer your support questions on the flow, about Power Automate, and more. Even more impressive is that it can make changes to your flow on your behalf based on the prompt you provide. It can even create an entire flow for you, and guide you to finish setting up the flow completely.
-
 Copilot can perform the following actions:
 
-- Understand your intent, and set up connections on your behalf.
+- Understand your intent, and create a flow based on the scenario prompt you provide.
 
-- Apply the necessary parameters in the flow. Only a limited number of connectors are currently supported.
+- Set up connections on your behalf.
 
-- Respond to your requests to make changes to your flow, update actions, replace actions, and more.
+- Apply the necessary parameters in the flow based on your prompt. Only a limited number of connectors is currently supported.
 
-- Edit existing flows.
+- Respond to your requests to make changes to your flow, such as update actions and replace actions.
+
+- Help answer flow, and product related Q&A.
 
 ## Prerequisites
 
-You’ll need to use a Power Platform environment in a US preview region to use Copilot in Power Automate. To learn how to create a preview environment if you don’t have one, go to [Frequently asked questions](#frequently-asked-questions) in this article.
+A Power Platform environment in a US preview region is required to use Copilot in Power Automate. If you don't have an environment in the preview region, go to [Frequently asked questions](#how-do-i-create-a-power-platform-environment-in-preview-region) in this article to create it.
 
-## Use Copilot to create a flow
+## Create a flow using Copilot
 
-You can use Copilot to create a flow in two ways. One way is to start describing your automation scenario on the **Home** page, as soon as you sign in to Power Automate. Alternatively, you can open the **Describe it to design it** feature and start describing your automation scenario.
+Follow these steps to create a flow using Copilot.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -52,9 +50,7 @@ You can use Copilot to create a flow in two ways. One way is to start describing
 
     :::image type="content" source="./media/get-started-with-copilot/copilot-home.png" alt-text="Screenshot of the 'Home' screen, where you can start building your flow with Copilot.":::
 
-    Or
-
-    Select **Create** > **Describe it to design it (preview)**.
+    Alternatively, you can select **Create** > **Describe it to design it (preview)**.
 
 1. In the **Let’s make a flow. What should it do?** field, describe your automation scenario. As you start typing, you’re presented suggestions to craft your scenario.
 
@@ -64,14 +60,11 @@ You can use Copilot to create a flow in two ways. One way is to start describing
 
     :::image type="content" source="./media/get-started-with-copilot/copilot-describe.png" alt-text="Screenshot of the 'Let's make a flow. What should it do?' screen, where you can select a suggestion or type your own scenario.":::
 
-   >[!TIP]
-   >Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. With Copilot, you can try out different variations of prompts to help you evaluate what works best. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again. With practice, you’ll get better at guiding the model to the results you want.
+1. To confirm the layout of the flow Copilot created for you, select **Enter**. 
 
-1. To confirm the layout of the flow Copilot created for you, select **Enter**.
+    You can also update your prompt to update the flow layout in this step.
 
-    You can also update your prompt to update the flow layout in this step. To learn how to write a good prompt, go to [How to write a good prompt](#how-to-write-a-good-prompt) in this article.
-
-1. When you’re satisfied with the flow and the connectors the flow is connected to, select **Next**.
+1. Verify that the flow fits your requirement, select **Next**.
 
 1. Review your connected apps and services, and then select **Next**.
 
@@ -83,30 +76,30 @@ You can use Copilot to create a flow in two ways. One way is to start describing
 
 ## How to write a good prompt
 
-Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. With Copilot, you can try out different variations of prompts to help you evaluate what works best. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again. With practice, you’ll get better at guiding the model to the results you want.
+Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. With Copilot, you can try out different variations of prompts to help you evaluate what works best. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again. With practice, you’ll get better at guiding the model to the results you want. With practice, you’ll get better at guiding the model to the results you want.
 
 - For better and more accurate results, provide prompts in *When X happens, do Y* format.
 
-- Be as specific as possible. Instead of a vague prompt like, *I want to process an email*, try this: *When an email arrives, I want to post the subject of the email to ‘Contoso’ Teams General channel*.
+- Be as specific as possible. Instead of a generic prompt like, *I want to process an email*, try this prompt instead: *When an email arrives, I want to post the subject of the email to ‘Contoso’ Teams General channel*.
 
 - If possible, mention the connector in your prompt. For example, include Outlook, Teams, Forms, or other.
 
-- If all fails, try tweaking your prompt.
+- Try tweaking your prompt to further fine tune.
 
-To learn more, go to [The art of the prompt: How to get the best out of generative AI](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/).  
+For more general information about writing prompts with generative AI, go to [The art of the prompt: How to get the best out of generative AI](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/).  
 
-### Examples of asking Copilot to create a flow
+### Examples of interactions with Copilot
 
-This section describes some example scenarios of how you can ask Copilot.
+This section describes some example scenarios of how you can interact with Copilot.
 
-| From the Homepage or Describe it to design it  | From within the  canvas   |
+| From the Home page or Describe it to design it  | Inside canvas   |
 |-----------|------------------------------------------------|
 | When an email arrives from contoso@gmail.com, Post in Teams.  | </li><li>Ask copilot to edit the flow: **I want to send the email subject to Teams channel.**<br/></li><li>Ask copilot what your flow does: **What does my flow do?**  |
 | When an item is created in SharePoint, send me a mobile notification.  |  </li><li>Edit the flow with this prompt: **I want to send the item title to notification.**<br/></li><li>Edit the flow with this prompt: **I don’t want to receive mobile notification. Send me an email instead.**  |
 
-## Use Copilot to  edit a flow
+## Edit a flow using Copilot
 
-You can use copilot to edit your existing flows. You don’t need to re-create a flow from scratch to take advantage of Copilot in Power Automate.
+You can use Copilot to edit your existing flows. You don’t need to re-create a flow from scratch to take advantage of Copilot in Power Automate.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -118,9 +111,9 @@ You can use copilot to edit your existing flows. You don’t need to re-create a
   
     :::image type="content" source="./media/get-started-with-copilot/ai-edit.png" alt-text="Screenshot of how to edit an existing flow.":::
 
-    As an alternative, you can access copilot from flow **Details** page of your existing flow. To do this, select the flow name from **My flows** > **Edit** > **Try AI-powered editing (preview)**.
+    Alternatively, access Copilot from flow **Details** page of your existing flowby selecting the flow name from **My flows** > **Edit** > **Try AI-powered editing (preview)**.
 
-    Your flow will open in the AI-powered Copilot editing experience. You can now edit your flow using Copilot in Power Automate.
+    Your flow opens in the AI-powered Copilot editing experience. You can now edit your flow using Copilot in Power Automate.
 
 ## Frequently asked questions
 
@@ -136,30 +129,30 @@ There are several possibilities.
 
 ### How do I create a Power Platform environment in preview region?
 
-Go to [Create a Power Platform environment](/power-platform/admin/create-environment#create-an-environment-without-a-database). When creating the environment, ensure that you choose the region as **Preview (United States)**. If you need help creating a preview environment, contact your Power Platform administrator.
+Go to [Create a Power Platform environment](/power-platform/admin/create-environment#create-an-environment-without-a-database). When creating the environment, ensure that you choose the region as **Preview (United States)**. If you need help with creating a preview environment, contact your Power Platform administrator.
 
 To learn more, go to [Power Platform regions](/power-platform/admin/regions-overview).
 
 ### What are the limitations of Copilot in Power Automate during preview?
 
 - You can’t edit flows with the Copilot experience if your flow has any of the following flows capabilities:
-    - A flow with AI Builder, SAP or Desktop flow connector.
+    - A flow with AI Builder, SAP or desktop flow connector.
     - A non-Open API flow (older connection format).
     - A flow with comment.
     - A child flow.
     - A solution flow using connections instead of a connection reference.
 
-- Copilot has limited parameterization support currently. It might not be able to implicitly fill parameters in all your actions, but it should be available in select connectors.
+- Copilot has limited parameterization support currently. It might not be able to implicitly fill in parameters for all your actions, but it should be available in select connectors.
 
-- Copilot has limited support to create looping constructs (for example, Apply to each, do until, and more). in the flow currently.
+- Copilot has limited support to create looping constructs (for example, Apply to each, do until).
 
-- A solution flow using connections instead of connection reference won’t be supported in the Copilot experience. We recommend that you use connection reference instead of connections for your solution flows to use Copilot in your solution flow. This is also a better application lifecycle management (ALM) practice.
+- A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
 
 - You can’t use Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
 
 ### How do I disable Copilot in Power Automate?
 
-For preview, Copilot will be turned on by default. To disable it, you need to have administrator access.
+For preview, Copilot is turned on by default. To disable it, you need to have administrator access.
 
 To disable Copilot for your *tenant*, follow these steps.
 
