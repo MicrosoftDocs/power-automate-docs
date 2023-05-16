@@ -1,0 +1,136 @@
+---
+title: Manage work queues
+description: Manage work queues in Power Automate.
+ms.topic: conceptual
+ms.date: 04/28/2023
+ms.author: appapaio
+ms.reviewer: 
+contributors:
+author: rpapostolis
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+# Manage work queues (preview)
+
+[This article is prerelease documentation and is subject to change.]
+
+Power Automate provides rich user experiences and features that allow you to efficiently and centrally manage work queues within your environments.
+
+> [!IMPORTANT]
+> This is a preview feature.
+
+## View work queues
+
+To view the list of work queues:
+
+1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
+2. On the left menu, select the **Monitor** section.
+3. Select **Work queue (preview)**.
+
+If you have already created work queues or if any work queue has been shared with you, you see a list similar to the below.
+
+:::image type="content" source="media/work-queues/work-queue-list.png" alt-text="Screenshot of a list of work queues in Power Automate portal." lightbox="media/work-queues/work-queue-list.png":::
+
+## Create a work queue
+
+To create a work queue:
+
+1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
+2. On the left menu, select the **Monitor** section.
+3. Select **Work queue (preview)** and then select **+ New work queue**.
+4. In the **New work queue** side-panel, enter a **name** for the work queue.
+5. (Optional) Enter a **description** for the work queue.
+6. (Optional) Enter a default lifespan value for work queue items in the **Item default time to live (in minutes)** field.
+   > [!NOTE]
+   > If you set a **default time to live** for a work queue, any item you add to the queue without an explicit expiration date will be given an expiration time based on that default value. So, if you set the default time to live to 30 minutes, then an item added at 2:00 pm will automatically be given an expiration time of 2:30 pm. If that item hasn't been processed by the time its expiration time comes around, it will be skipped over for all following dequeuing requests.
+
+## Edit a work queue
+
+To edit a work queue:
+
+1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
+2. On the left menu, select the **Monitor** section.
+3. Select **Work queue (preview)**.
+4. In the work queue list, select the work queue you would like to edit.
+5. Select **Edit work queue** on the toolbar and update the values in the update pane.
+6. Select **Save**.
+
+## Share a work queue
+
+To share a work queue:
+
+1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
+2. On the left menu, select the **Monitor** section.
+3. Select **Work queue (preview)**.
+4. In the work queue list, select the work queue you would like to share.
+5. Select **Manage access** on the toolbar.
+6. In the **Share** pane, enter the email or name of the person you want to share with.
+7. Add the user to the list and select the user under the **New** section to confirm the access level.
+
+## Delete a work queue
+
+   > [!CAUTION]
+   > When you delete a work queue, all related records, including work queue items and their processing history, are permanently deleted.
+
+To delete a work queue:
+
+1. In the work queue list, select the work queue you would like to delete.
+2. Select **Delete work queue** on the toolbar.
+3. In the delete confirmation dialog, select **Delete**.
+
+## Create work queue items
+
+To create a new work queue item through the Power Automate portal:
+
+1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
+2. On the left menu, select the **Monitor** section.
+3. Select the work queue you would like to create items for and then select **See details**.
+4. Select **+ New work queue item** on the toolbar.
+5. In the **New work queue item** side-panel, enter a **Name** and **Value** for the work queue item, and optionally set or overwrite the **Expiration date**.
+
+  > [!NOTE]
+  > If you don't provide a value for the work queue item name, the internal work queue id is displayed instead in the work queue item list pages.
+
+Looking for more ways to create work queue data?
+
+> [!div class="nextstepaction"]
+> [Learn how to bulk-import work queue data](work-queues-bulk-import.md)
+
+## Edit a work queue item
+
+> [!IMPORTANT]
+> To help protect data integrity during processing, work queue item names or values aren't allowed to be changed for items that are in the **Processing** state.
+
+To edit a work queue item:
+
+1. Select the work queue item you would like to edit and then select  **Edit work queue item** .
+2. In the **Edi work queue item** side-panel, you can update all values as long as the item isn't in the **Processing** state.
+
+  > [!NOTE]
+  > If you don't provide a value for the work queue item name, the internal work queue id is displayed instead in the work queue item list pages.
+
+### Allowed status transitions
+
+Status transitions rules have been established in order to optimize the lifecycle management of work queue items. As a result, certain work queue item statuses might be unavailable for selection either interactively or during runtime processing if they don't fall under the allowed transition path. More information about these paths is in the following table.
+
+| Status      | Details                                                                                           | Allowed transitions |
+|-------------|--------------------------------------------------------------------------------------------------|--------------------|
+| **Queued**      | This is the default state when items enter the work queue, and the only state under which work queue item dequeuing is allowed. | Processing          |
+| **Processing**  | Indicating that the item is currently being processed.                                       | Processed, Exception|
+| **Processed**   | Indicating that the item is currently processing.                                             | Queued, On hold     |
+| **Exception**   | An exception has been raised during work item processing.                              | Queued, On hold     |
+| **On hold**    | A business or IT user has picked an item to review, assess, and potentially remediate issues.     | Queued              |
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Learn how to process work queues](work-queues-process.md)
+
+## See also
+
+- [Work queue overview](work-queues.md)
+- [Manage work queues](work-queues-manage.md)
+- [Trigger work queues](work-queues-trigger.md)
+- [Process work queues](work-queues-process.md)
+- [Known issues and limitations](work-queues-known-limitations.md)

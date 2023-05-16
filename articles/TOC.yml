@@ -407,6 +407,20 @@
         href: ./desktop-flows/avd-use-starter-kit.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
+  - name: Work queues (preview)
+    items:
+    - name: Overview
+      href: ./desktop-flows/work-queues.md
+    - name: Manage work queues
+      href: ./desktop-flows/work-queues-manage.md
+    - name: Bulk-import work queue data
+      href: ./desktop-flows/work-queues-bulk-import.md        
+    - name: Process work queues
+      href: ./desktop-flows/work-queues-process.md
+    - name: Trigger work queues
+      href: ./desktop-flows/work-queues-trigger.md
+    - name: Known issues and limitations
+      href: ./desktop-flows/work-queues-known-limitations.md
   - name: Monitor desktop flows
     items:
     - name: Desktop flow activity
