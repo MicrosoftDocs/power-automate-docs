@@ -1,7 +1,6 @@
 ---
 title: Trigger work queues (preview) processing
 description: Work queue triggering options.
-
 ms.topic: conceptual
 ms.date: 04/28/2023
 ms.author: appapaio
@@ -17,7 +16,7 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-Power Automate provides a [**variety of triggers**](/power-automate/triggers-introduction.md) that can be used to initiate work queue processing. These triggers can be categorized into different types based on their functionality.
+Power Automate provides a [**variety of triggers**](../triggers-introduction.md) that can be used to initiate work queue processing. These triggers can be categorized into different types based on their functionality.
 
 1. **Manual Triggers**: These triggers are initiated manually by the user. They're useful when you want to start a flow on-demand, such as when you need to perform a specific task.
 

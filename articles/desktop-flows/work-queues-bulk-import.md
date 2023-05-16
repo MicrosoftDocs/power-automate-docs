@@ -1,7 +1,6 @@
 ---
 title: Bulk-import work queue data
 description: Create work queue data in bulk with Power Platform tools.
-
 ms.topic: conceptual
 ms.date: 04/28/2023
 ms.author: appapaio
@@ -12,11 +11,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Bulk-import work queue data
+# Bulk-import work queue data (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 With Power Automate and work queues being an integral part of the Power Platform, you can easily streamline your data management processes. The suite of tools available is comprehensive, ranging from highly end-user optimized wizards to powerful cloud-based ETL services and even pro-code options. Whether you're a business user, an IT professional or a developer, you can find the right tool to create or bulk upload data with ease and efficiency.
+
+> [!IMPORTANT]
+> This is a preview feature.
 
 ## Comprehensive bulk-import options
 
@@ -25,11 +27,11 @@ Here's a comprehensive list of data management and bulk-import options you can c
 > [!div class="checklist"]
 >
 > * Using a cloud flow with the Dataverse connector action - [Add a row new action](../dataverse/create.md) to add one or more rows to the **Work Queues** and **Work Queue Items** tables.
-> * Using Dataverse bulk-import options
+> * Using Microsoft Dataverse bulk-import options
 >
 >   * [Import using a connector](/power-apps/maker/data-platform/data-platform-import-export#import-using-a-connector) - Supporting data transformation with Power Query and connecting to many different sources, such as Excel, Azure, SQL Server, CSV, JSON, XML, Text, OData, and more.
->   * [Import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) - Supporting Excel and CSV files with data validation and visual mapping experience.
-> * Using Power Platform Dataflows with its powerful cloud-based ETL services
+>   * [Import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) - Supporting Excel and CSV files with data validation and a visual mapping experience.
+> * Using Power Platform Dataflows with its powerful cloud-based ETL services.
 
 ## Adding work queue items with cloud flow and Dataverse connector
 
@@ -53,10 +55,10 @@ Here's a comprehensive list of data management and bulk-import options you can c
 This tutorial showcases both mentioned [Dataverse bulk-import options](/power-apps/maker/data-platform/data-platform-import-export) for importing a work queue along with its associated work queue items, which in this example is vendor invoices.
 
 > [!NOTE]
-> While the easiest and most straight forward way to create work queues is through maker portal in Power Automate as described [**here**](work-queues-manage.md#create-a-work-queue), we've included  the work queue import steps just to demonstrate the [import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) approach as well.
+> While the easiest and most straight forward way to create work queues is through make.powerapps.com with Power Automate as described in [Create a work queue](work-queues-manage.md#create-a-work-queue), we've included  the work queue import steps just to demonstrate the [import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) approach as well.
 
 > [!IMPORTANT]
-> The CSV data in this tutorial contains internal platform columns and values for **componentstate** and **overwritetime**. These fields are mandatory platform fields and should always be included in the import mapping. Typically, these fields have default values, with the componentstate being **0** (zero) and the overwritetime having a minimum date of **01/01/1900 00:00**. These fields are part of the work queue record, which you can review in the [Power Apps maker portal](https://make.powerapps.com) under **Tables** and then search for **Work Queue**.
+> The CSV data in this tutorial contains internal platform columns and values for **componentstate** and **overwritetime**. These fields are mandatory platform fields and should always be included in the import mapping. Typically, these fields have default values, with the `componentstate` being **0** (zero) and the `overwritetime` having a minimum date of **01/01/1900 00:00**. These fields are part of the work queue record, which you can review in [Power Apps](https://make.powerapps.com) under **Tables** and then search for **Work Queue**.
 
 ### Prerequisites
 
@@ -113,25 +115,24 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
 
 #### Phase 2/3: Import work queue
 
-1. Next, navigate to <https://make.powerapps.com> and sign-in with your credentials.
+1. Next, go to <https://make.powerapps.com> and sign-in with your credentials.
 2. Confirm that you're in the correct environment and select **Tables** in the side-menu.
 3. Select the **All** tab.
    :::image type="content" source="media/work-queues/work-queue-import-table.png" alt-text="Screenshot of Power Apps portal showing Tables and the all tab area selected." lightbox="media/work-queues/work-queue-import-table.png":::
 4. Search for **Work Queue** table and open its details page.
-5. In the toolbar, select **Import** and then **Import data from Excel**.
+5. In the toolbar, select **Import** and then select **Import data from Excel**.
     :::image type="content" source="media/work-queues/work-queue-import-csv.png" alt-text="Screenshot of the Work Queue table details and a selected menu entry called 'Import data from Excel'." lightbox="media/work-queues/work-queue-import-csv.png":::
 6. Select **Upload** and choose the **vendor-invoice-queue.csv** file.
     :::image type="content" source="media/work-queues/work-queue-import-csv-confirm.png" alt-text="Screenshot of Excel import dialog with an upload and mapping validation option." lightbox="media/work-queues/work-queue-import-csv-confirm.png":::
 7. Confirm that the automapping was successful, or if needed adjust it by selecting **Map columns**.
     :::image type="content" source="media/work-queues/work-queue-import-csv-mapping.png" alt-text="Screenshot of a field mapping dialog as part of the data import experience." lightbox="media/work-queues/work-queue-import-csv-mapping.png":::
 8. Select **Import**.
-9. Depending on your data volume, this might take some time to complete.
-10. Once complete, navigate to the work queue list page and confirm that vendor invoice queue has been added.
+9. Depending on your data volume, this might take some time to complete. Once complete, navigate to the work queue list page and confirm that vendor invoice queue has been added.
     :::image type="content" source="media/work-queues/work-queue-list-page.png" alt-text="Screenshot of the work queue list page, confirming that the work queue record has been imported" lightbox="media/work-queues/work-queue-list-page.png":::
 
 #### Phase 3/3: Import work queue items
 
-1. Next, navigate to <https://make.powerapps.com> and sign-in with your credentials.
+1. Next, go to <https://make.powerapps.com> and sign-in with your credentials.
 2. Confirm that you're still in the correct environment and select **Tables** in the side-menu.
 3. Select the **All** tab.
 4. Search for **Work Queue Item** table and open its details page.
@@ -158,13 +159,13 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
     * **Json.FromValue(_)**: This part of the expression takes the input value (that is, a row of the table) and converts it into a JSON-formatted text.
     * **Text.FromBinary()**: This part of the expression takes the JSON-formatted text and converts it into binary format. This step is primarily used  for optimizing data storage or transmission.
   
-    By using both of these functions together, the expression can turn each row of the table into a JSON object and store the resulting JSON object in a new column called "Input". This process is repeated for each row of the table.
+    By using both of these functions together, the expression can turn each row of the table into a JSON object and store the resulting JSON object in a new column called **Input**. This process is repeated for each row of the table.
 
 13. Select **Ok**.
 14. Select **Next**.
 15. Select **Next** and then **Publish**.
 16. Navigate to https://make.powerapps.com and select Dataflows from the left-menu (you might have to select **More** first to get to the Dataflows menu).
-17. Confirm that you see a new dataflow entry and that both icons show green once the import is complete.
+17. Confirm that you see a new dataflow entry and that both icons show success once the import is complete.
     :::image type="content" source="media/work-queues/work-queue-import-inprogress.png" alt-text="Screenshot of the Dataflows list showing dataflows that are complete and still refreshing." lightbox="media/work-queues/work-queue-import-inprogress.png":::
 18. Once complete, navigate to the work queue details page of the vendor invoice queue and confirm that the work queue items have been added.
     :::image type="content" source="media/work-queues/work-queue-details-after-import.png" alt-text="Screenshot of the work queue list page showing the newly created work queue record." lightbox="media/work-queues/work-queue-details-after-import.png":::
