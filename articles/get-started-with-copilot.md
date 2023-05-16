@@ -34,7 +34,7 @@ Copilot can perform the following actions:
 
     - Only a limited number of connectors are currently supported.
 
-    - The following triggers and actions are supported: Recurrence trigger, When a new email arrives trigger, Send an email action, Office 365 Calendar Post Item action, Teams post a message action, and Planner create a task action.
+    - The following triggers and actions are supported: Recurrence trigger, When a new email arrives trigger, Send an email action, Office 365 Calendar post item action, Teams post a message action, and Planner create a task action.
 
 - Respond to your requests to make changes to your flow, such as update actions and replace actions.
 
@@ -100,7 +100,7 @@ This section describes some example scenarios of how you can interact with Copil
 
 | From the Home page or Describe it to design it  | Inside canvas   |
 |-----------|------------------------------------------------|
-| When an email arrives from contoso@gmail.com, Post in Teams.  | </li><li>Ask copilot to edit the flow: **I want to send the email subject to Teams channel.**<br/></li><li>Ask copilot what your flow does: **What does my flow do?**  |
+| When an email arrives from contoso@gmail.com, post in Teams.  | </li><li>Ask Copilot to edit the flow: **I want to send the email subject to Teams channel.**<br/></li><li>Ask Copilot what your flow does: **What does my flow do?**  |
 | When an item is created in SharePoint, send me a mobile notification.  |  </li><li>Edit the flow with this prompt: **I want to send the item title to notification.**<br/></li><li>Edit the flow with this prompt: **I don’t want to receive mobile notification. Send me an email instead.**  |
 
 ## Edit a flow using Copilot
@@ -148,7 +148,9 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
     - A child flow.
     - A solution flow using connections instead of a connection reference.
 
-- Copilot has limited parameterization support currently. It might not be able to implicitly fill in parameters for all your actions, but it should be available in select connectors. The following triggers and actions are supported: Recurrence trigger, When a new email arrives trigger, Send an email action, Office 365 Calendar post item action, Teams post a message action, and Planner create a task action.
+- Copilot has limited parameterization support currently. It might not be able to implicitly fill in parameters for all your actions, but it should be available in select connectors.
+
+    - The following triggers and actions are supported: Recurrence trigger, When a new email arrives trigger, Send an email action, Office 365 Calendar post item action, Teams post a message action, and Planner create a task action.
 
 - Copilot has limited support to create looping constructs (for example, Apply to each, do until).
 
