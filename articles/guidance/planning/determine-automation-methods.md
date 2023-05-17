@@ -60,11 +60,9 @@ In complex automation scenarios, you can combine all these methods.
 With all the automation methods discussed earlier, you need to consider how to *trigger*
 (start) these automations. The ways you can trigger an automation include:
 
--   Automated triggers
-
--   Instant or manual triggers
-
--   Scheduled triggers
+- Automated triggers
+- Instant or manual triggers
+- Scheduled triggers
 
 ### Automated triggers
 
@@ -73,10 +71,10 @@ a condition is met. (Note that not all connectors include automated triggers.)
 
 Examples of automated triggers include:
 
--   When an email is received in Outlook
--   When a new file is moved to OneDrive
--   When a new row is created in Microsoft Dataverse
--   When an item is modified in a custom SharePoint list
+- When an email is received in Outlook
+- When a new file is moved to OneDrive
+- When a new row is created in Microsoft Dataverse
+- When an item is modified in a custom SharePoint list
 
 ![Automated triggers.](media/automated-triggers.png "Automated triggers")
 
@@ -86,9 +84,7 @@ table in Dataverse. This ensures, for example, that when a form is created with 
 
 ### Instant or manual triggers
 
-An *instant* or *manual* trigger is a type of trigger where either a user needs to manually
-start the automation or the trigger is instantaneously started. This can be
-triggered directly from a [button](../../introduction-to-button-flows.md) or a Microsoft service.
+An *instant* or *manual* trigger is a type of trigger where a user needs to either manually start the automation, or the trigger is instantaneously started. This can be triggered directly from a [instant flow](../../overview-mobile.md) or a Microsoft service.
 
 ![Instant triggers.](media/instant-triggers.png "Instant triggers")
 
@@ -103,6 +99,9 @@ In the expense report example, the accounting team might use a scheduled trigger
 ![Example of a scheduled trigger.](media/scheduled-triggers.png "Example of a scheduled trigger")
 
 > [!div class="nextstepaction"]
-> [Next step: Attended and unattended scenarios](attended-unattended.md)
+
+## Next step
+
+[Attended and unattended scenarios](attended-unattended.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

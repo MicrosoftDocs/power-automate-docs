@@ -18,13 +18,12 @@ search.audienceType:
 
 # Create flows using the Power Apps app in Microsoft Teams
 
-You can build flows to customize and add further value to Teams from within the new Power Apps app in Teams. 
-You can create [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Microsoft Dataverse for Teams tables](/powerapps/teams/overview-data-platform#tables-in-dataverse-for-teams) within Teams as well.
+You can build flows to customize and add further value to Teams from within the new Power Apps app in Teams. You can create [instant](../run-instant-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Microsoft Dataverse for Teams tables](/powerapps/teams/overview-data-platform#tables-in-dataverse-for-teams) within Teams.
 
 > [!NOTE]
 > You need a [Power Automate license](https://make.powerautomate.com/pricing/) to access all Power Automate [connectors](/Connectors/connector-reference/), including the premium connectors. Users with a Microsoft 365 license can use all standard connectors.
 
-## Prerequisites 
+## Prerequisites
 
 - The Power Apps app must be installed before you can create flows in Teams. More information: [Install the Power Apps personal app in Microsoft Teams](/powerapps/teams/install-personal-app)
 
@@ -34,7 +33,7 @@ You can create [instant](../introduction-to-button-flows.md), [scheduled](../run
 
 1. Go to the **Build** tab in your Power Apps app, and then select **See all**.
 
-1. Select **New**, select **Flow**, and then select the type of flow you want to create. You can create only the following types of flows: [instant](../introduction-to-button-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md).
+1. Select **New**, select **Flow**, and then select the type of flow you want to create. You can create only the following types of flows: [instant](../run-instant-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md).
  
    ![Create a cloud flow.](..\media\overview-teams-flows\new-flow.png)
 
@@ -81,11 +80,11 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
    ![View the details of flows.](..\media\overview-teams-flows\view-details-history.png)
 
-## Related articles
+### See also
 
-[Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-apps-overview)<br/>
-[What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)<br/>
-[About the Dataverse for Teams environment](/power-platform/admin/about-teams-environment)
+- [Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-apps-overview)<br/>
+- [What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)<br/>
+- [About the Dataverse for Teams environment](/power-platform/admin/about-teams-environment)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

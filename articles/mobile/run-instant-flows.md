@@ -21,7 +21,7 @@ ms.reviewer: angieandrews
 
 # Run instant flows
 
-Create instant flows in Power Automate and then run them anywhere, at any time, on your mobile device. Instant flows were previously called button flows. To learn more about creating an instant flow, go to [Instant flows overview](/articles/introduction-to-button-flows.md).
+Create instant flows in Power Automate and then run them anywhere, at any time, on your mobile device. Instant flows were previously called button flows. To learn more about creating an instant flow, go to [Create flows from your phone](/articles/mobile-create-flow.md).
 
 1. In the Power Automate mobile app, select **Instant flows**, and then select the flow you want to run.
 
