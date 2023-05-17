@@ -56,16 +56,15 @@ To complete the example in this article, you'll need the following:
 ## Finish the flow
 1. If prompted, tap **Sign in**, and provide your credentials for Office 365 Outlook, Office 365 Users, or both.
 
-    >[!TIP]
-    >You can use the same connections when you create other flows.
+    You can use the same connections when you create other flows.
 
-1. In the upper-right corner, tap **Create**.
+1. On the upper-right corner, tap **Create**.
 
-    Your flow is created and it checks for email from your boss until you pause or delete the flow.
+    Your flow is created and checks for email from your boss until you pause or delete the flow.
 
 ### See also
-* [Monitor your flow activity](mobile-monitor-activity.md).
-* [Manage your flows](mobile-manage-flows.md).
+* [Monitor your flow activity](mobile-monitor-activity.md)
+* [Manage your flows](mobile-manage-flows.md)
 
 
 

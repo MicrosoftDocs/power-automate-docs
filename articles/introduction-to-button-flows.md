@@ -44,7 +44,6 @@ In this tutorial, you'll create an instant flow that starts a Visual Studio Code
    ![Continue button.](./media/introduction-to-button-flows/create-button-6.png)
 1. You're ready to configure the properties for the build you wish to start.
 1. On the **Queue a new build** card, select or enter the **Account name**, **Project name**, **Build definition Id**, **Source branch** and optionally, **Parameters**.
-   ![New build screen.](./media/introduction-to-button-flows/create-button-8.png)  
 1. On the **Send a push notification** card, configure the properties of the push notification.
 
     By default, this push notification is configured to send an HTML link to a Web page that displays the status of the build.  
@@ -83,8 +82,6 @@ Now that you've created an instant flow, it's time to run it. Since you can only
 1. View the progress while the flow runs.
 
     The page updates, indicating that the instant flow has completed.  
-   
-    ![Completed flow image.](./media/introduction-to-button-flows/trigger-button-3.png)
 
 That's all there is to running a cloud flow. You should now receive the push notification, indicating that the email has been sent.  
 
@@ -118,8 +115,8 @@ On the **My flows** tab of the Flow app:
    If you disable a cloud flow, it will no longer be available on the **Buttons** tab.
 
 ### See also
-* [Share instant flows](share-buttons.md).
-* Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send real-time data when your instant flows are run.
-* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+* [Share instant flows](share-buttons.md)
+* Learn to use [button trigger tokens](introduction-to-button-trigger-tokens.md) to send real-time data when your instant flows are run
+* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
