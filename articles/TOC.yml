@@ -48,18 +48,8 @@
       href: ./mobile/overview-mobile.md
     - name: Create flows from your phone
       href: ./mobile-create-flow.md
-    - name: Instant flows
-      items:
-      - name: Overview
-        href: introduction-to-button-flows.md
-      - name: Run instant flows
-        href: ./mobile/run-instant-flows.md
-      - name: Create instant flows with trigger tokens
-        href: introduction-to-button-trigger-tokens.md
-      - name: Create instant flows with user input
-        href: button-flow-with-user-input-tokens.md
-      - name: Share instant flows
-        href: share-buttons.md
+    - name: Run instant flows
+      href: ./mobile/run-instant-flows.md
     - name: Create widgets
       href: ./mobile/widgets.md
     - name: Manage approvals
