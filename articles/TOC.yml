@@ -51,7 +51,7 @@
     - name: Overview
       href: ./mobile/overview-mobile.md
     - name: Create flows from your phone
-      href: mobile-create-flow.md
+      href: ./mobile-create-flow.md
     - name: Instant flows
       items:
       - name: Overview
