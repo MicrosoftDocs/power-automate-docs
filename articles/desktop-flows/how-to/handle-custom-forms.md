@@ -4,16 +4,14 @@ description: Handle custom forms
 author: georgiostrantzas
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

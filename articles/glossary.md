@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: nijemcevic
-manager: ''
 editor: ''
 tags: ''
 
@@ -16,8 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/30/2021
 ms.author: tatn
-search.app: 
-  - Flow
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -36,7 +34,7 @@ The following terms are commonly used in Power Automate.
 
 **Approvals (approval requests):** Approvals refer to the actions in approving a cloud flow. It might be a basic approve or reject action. It could be a custom approval flow where the sender can request any sign off, including multiple choice. To create an approval workflow, add an approval action. After you add this action, your flow can manage the approval of documents or processes
 
- [Introducing the Unified Action Center](https://flow.microsoft.com/blog/introducing-the-unified-action-center/)
+ [Introducing the Unified Action Center](https://make.powerautomate.com/blog/introducing-the-unified-action-center/)
 
 **Automated flow:** Automated flows are triggered by a predetermined event. Automated flows run when an event triggers the flow to run. For example: when a row is created, deleted, or updated in Dataverse, the flow will run if that is the trigger you chose.
 
@@ -118,7 +116,7 @@ The following terms are commonly used in Power Automate.
 
 **Templates:** Templates are prebuilt set of triggers and actions that are designed to help users easily create flows that meet their specific business needs. Templates can be customized. There are hundreds of flow templates that cater to many types of common automation scenarios.
 
- [Power Automate Templates](https://flow.microsoft.com/templates/)
+ [Power Automate Templates](https://make.powerautomate.com/templates/)
 
 **Trigger:** A trigger is an event that starts a cloud flow.  For example, if you create a cloud flow: “when an email with an attachment arrives, automatically upload the file to OneDrive” - the arrival of the email with an attachment is the trigger of such flow.
 

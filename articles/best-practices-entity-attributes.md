@@ -1,10 +1,8 @@
 ---
-title: "Best practices for using business process flow table columns | MicrosoftDocs"
-description: "Learn the best practices for using business process flow table columns."
+title: Best practices for using business process flow table columns
+description: Learn the best practices for using business process flow table columns.
 ms.custom: 
-ms.date: 04/23/2019
-ms.reviewer: 
-
+ms.date: 02/08/2023
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.subservice: cloud-flow
@@ -18,13 +16,11 @@ helpviewer_keywords:
   - process
   - workflow
 author: msftman
-ms.author: deonhe
-manager: kvivek
+ms.author: mspilde
+ms.reviewer: angieandrews
 ---
 
 # Best practices in using business process flow columns
-
-
 
 Legacy process-related columns in tables is deprecated. Here are some best practices for using the *Active Stage* (activestageid) column on the business process flow table. 
 
@@ -41,21 +37,24 @@ With the deprecation of the *Active Stage*  (activestageid) column on related ta
 In versions 9.0 and higher, each business process flow creates its own Dataverse table, usually with the same name as the business process flow. To report on the business process flow, select the table for the business process flow you want to report on, and then create views and charts, just as you did before.
 
 In our example, follow these steps to go to the **Lead to Opportunity Sales Process** table:
-1. Go to [https://make.powerapps.com](https://make.powerapps.com).
-1. Select the **Data**.
-1. Select the **Tables**.
+
+1. Sign in to [Power Apps](https://make.powerapps.com).
+
+    To learn more about using the Power Apps interface, go to [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal).
+
+1. On the left navigation pane, select **More** > **Tables**.
+
 1. Set the filter to **All**.
+
 1. Search for, and then select the **Lead to Opportunity Sales Process** table.
 
-   ![lead to opportunity sales process table.](media/best-practices-entity-attributes/lead-opportunity-process.png)
+    Here, you can define views and charts just as you do on any other table.
 
-Here, you can define views and charts just as you do on any other table.
+1. On the **Data experences** tile, select **Views** or **Charts**.
 
-![translation process table details.](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
+    An advantage of this approach is that you can use a single view or chart to report on business process flows that span multiple tables.
 
-An advantage of this approach is that you can use a single view or chart to report on business process flows that span multiple tables.
-
-Further, as the business process flow table is no different from any other custom table in Dataverse, you can add custom columns to the table to track any additional information you need.
+As the business process flow table is no different from any other custom table in Dataverse, you can add custom columns to the table to track any additional information you need.
 
 ### Option 2: copy active stage to a related table
 
@@ -104,10 +103,16 @@ There might be cases where automation based on the business process flow needs t
 To build a classic Dataverse workflow that creates activities for internal solution reviews and to follow up with the customer in the **Propose** stage of the **Opportunity Sales Process**:
 
 1. Create it on the **Opportunity Sales Process** table and set it to run each time the **Active Stage** column of the table changes. 
+
 1. Define a condition to check if the **Active Stage** column equals **Propose**. 
+
 1. Create an appointment and phone call row for the internal review of the solution and the customer call to review the solution respectively.
 
-   ![close stage followup.](media/best-practices-entity-attributes/close-stage-followup.png)
+    :::image type="content" source="media/best-practices-entity-attributes/close-stage-followup.png" alt-text="Screenshot of close stage follow-up.":::
+
+### See also
+
+[Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

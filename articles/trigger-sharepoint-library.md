@@ -4,15 +4,13 @@ description: Learn how to create an approval flow that triggers when new files a
 services: ''
 suite: flow
 author: msftman
-manager: tapanm
 editor: ''
 tags: ''
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 06/16/2022
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser
@@ -30,7 +28,7 @@ Follow these steps to complete this tutorial.
 
    ![Incoming and reviewed invoices folders.](media/trigger-sharepoint-library/incoming.png)
 
-1. Go to the [Start an approval for new file to move it to a different folder](https://us.flow.microsoft.com/galleries/public/templates/d0ffe4d14c9c418e8f8ad49c3a6afcf6/start-an-approval-for-new-file-to-move-it-to-a-different-folder/) template. This template provides us a flow that's configured to setup an approval process for a SharePoint document library. Confirm that all the connections listed have a green check, and then select continue.  
+1. Go to the [Start an approval for new file to move it to a different folder](https://make.powerautomate.com/galleries/public/templates/d0ffe4d14c9c418e8f8ad49c3a6afcf6/start-an-approval-for-new-file-to-move-it-to-a-different-folder/) template. This template provides us a flow that's configured to setup an approval process for a SharePoint document library. Confirm that all the connections listed have a green check, and then select continue.  
   
    ![Document approval template.](media/trigger-sharepoint-library/template.png)
 
@@ -122,7 +120,7 @@ If you are not seeing the email displayed correctly, make sure you have the late
   
    ![Approval requests in Power Automate.](media/trigger-sharepoint-library/portal.png)
 
-Once the the request is approved or rejected, the flow execution continues. If the request was approved, the file you put in the incoming folder will be moved to the other folder.
+Once the request is approved or rejected, the flow execution continues. If the request was approved, the file you put in the incoming folder will be moved to the other folder.
 
    ![The flow continues.](media/trigger-sharepoint-library/continue.png)
 

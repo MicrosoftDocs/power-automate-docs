@@ -4,7 +4,6 @@ description: Use the pro-code or low-code approach to extract information from t
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 

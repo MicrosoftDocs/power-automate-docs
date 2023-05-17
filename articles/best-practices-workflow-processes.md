@@ -3,8 +3,6 @@ title: "Best practices for managing background workflow processes | MicrosoftDoc
 description: "Understand the recommended ways to use workflows"
 ms.custom: ""
 ms.date: 07/27/2020
-ms.reviewer: ""
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
@@ -17,9 +15,7 @@ author: "Mattp123"
 ms.assetid: 34e34c33-003a-494f-858c-3d34aacb308c
 caps.latest.revision: 10
 ms.author: "matp"
-manager: "kvivek"
-search.app: 
-  - Flow
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser

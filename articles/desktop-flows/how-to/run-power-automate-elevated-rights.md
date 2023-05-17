@@ -3,13 +3,11 @@ title: Run Power Automate with elevated rights
 description: See how to run Power Automate with elevated rights.s
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/09/2022
-ms.author: gtrantzas
-ms.reviewer: pefelesk
+ms.author: pefelesk
+ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser

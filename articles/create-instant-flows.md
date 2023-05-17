@@ -3,8 +3,6 @@ title: "Create instant flows in business process flows | MicrosoftDocs"
 description: "Learn how to create instant flows in business process flows"
 ms.custom: ""
 ms.date: 05/27/2022
-ms.reviewer: "msftman"
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
@@ -17,9 +15,8 @@ ms.assetid: efe86ab3-430f-485a-b924-6ed82cfbb449
 caps.latest.revision: 39
 author: "vashr"
 ms.author: "vashr"
+ms.reviewer: angieandrews
 ms.manager: KVIVEK
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

@@ -4,16 +4,14 @@ description: Handle links that open new tabs
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/04/2021
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

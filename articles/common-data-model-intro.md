@@ -1,28 +1,28 @@
 ---
-title: Microsoft Dataverse | Microsoft Docs
-description: Create a cloud flow from a template that uses Microsoft Dataverse.
+title: Create a cloud flow that uses Microsoft Dataverse
+description: Learn how to create a cloud flow from a template that uses Microsoft Dataverse.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
-
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - radioblazer
+  - v-aangie
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/24/2021
-ms.author: deonhe
-search.app: 
-  - Flow
+ms.date: 01/31/2023
+ms.author: napienko
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 # Create a cloud flow that uses Microsoft Dataverse
-
-
 
 Improve operational efficiency with a unified view of business data by creating flows that use [Dataverse](https://powerapps.microsoft.com/tutorials/data-platform-intro/).
 
@@ -35,47 +35,44 @@ In this article, you will create a cloud flow that sends an email notification w
 
 ## Prerequisites
 
-* Sign up for [Power Automate](https://flow.microsoft.com) and [Power Apps](https://make.powerapps.com).
+- Sign up for [Power Automate](https://make.powerautomate.com) and [Power Apps](https://make.powerapps.com).
   
-    If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [Power Apps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) supports the type of account that you have and your organization hasn't blocked signup.
-* If you haven't used Dataverse before, create a [Dataverse environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database) in the Power Platform admin center.
+    If you have trouble, verify whether [Power Automate](sign-up-sign-in.md) and [Power Apps](/power-apps/maker/signup-for-powerapps) support the type of account that you have and your organization hasn't blocked signup.
+
+- If you haven't used Dataverse before, create a [Dataverse environment with a database](/power-platform/admin/create-environment#create-an-environment-with-a-database) in the Power Platform admin center.
 
 ## Sign in to your environment
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
-1. In the top right menu, select the environment where you created the Dataverse table. 
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. On the top right menu, select the environment where you created the Dataverse table.
 
     >[!IMPORTANT]
     >If you don't select the same environment, you won't see your Dataverse tables.
 
 ## Use a template
 
-1. In the left-side navigation pane, select **Templates**, and then search for **Copy Notes from Lead to Opportunity**.
-1. You could use any template that performs a task in Dataverse that you want to automate. In this example, select the template that copies notes from Lead to Opportunity in Dataverse.
+1. On the navigation pane to the left, select **Templates**, and then search for **Copy Notes from Lead to Opportunity**.
 
-    ![Choose a template.](./media/common-data-model-intro/select-template.png)
+    You could use any template that performs a task in Dataverse that you want to automate. In this example, you'll use the **Copy Notes from Lead to Opportunity in Dataverse** template.
 
-1. If you haven't already created a connection, select **Sign in**, and then provide your credentials as needed.
+1. (If you haven't already created a connection) Select **Sign in**, and then provide your credentials as needed.
 
 1. Select **Continue**.
 
-   You'll now see the template and its connections. In the following steps, you will customize this template.
+   You'll now see the template and its connections. In the following steps, you'll customize this template.
 
 ## Customize your flow template
 
 1. On the **When an Opportunity is created** card, select the **Environment**, **Table Name**, and **Scope** that you want to use.
    
-   For more information on scope, see [Trigger flows&mdash;scope](./dataverse/create-update-delete-trigger.md#scope).
-   
-    ![Specify the details for the table.](./media/common-data-model-intro/specify-instance.png)
+   For more information on scope, go to [Trigger flows&mdash;scope](./dataverse/create-update-delete-trigger.md#scope).
+
+    :::image type="content" source="./media/common-data-model-intro/specify-instance.png" alt-text="Screenshot of the details for 'When an Opportunity is Created'.":::
 
 1. Complete the **Get Opportunity row** card, per your requirements.
-   
-    ![Get Opportunity row.](./media/common-data-model-intro/get-opportunity-record.png)
 
 1. Configure the **Originate from a Lead** card. 
-   
-    ![Originate from a Lead.](./media/common-data-model-intro/originate-from-lead.png)
 
 1. Complete the **Get Lead** and the **List Notes for the Lead** cards on the **If yes** side of the decision branch. 
 
@@ -93,7 +90,5 @@ In this article, you will create a cloud flow that sends an email notification w
 
 >[!TIP]
 >If you can't find a template that does what you need, you can [build a cloud flow from scratch](get-started-logic-flow.md) that operates on top of Dataverse.
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

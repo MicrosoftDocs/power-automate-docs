@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
 editor: ''
 tags: ''
 
@@ -16,9 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/26/2016
 ms.author: deonhe
-search.app: 
-  - Flow
-  - Powerplatform
+ms.reviewer: gtrantzas
 search.audienceType: 
   - admin
 ---

@@ -13,10 +13,9 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/28/2021
+ms.date: 02/27/2023
 ms.author: hamenon
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser
@@ -174,11 +173,11 @@ You can set text hyperlinks for your URL using the standard markdown link syntax
 
 **Example:**  
 ```Markdown
-[Power Automate](https://flow.microsoft.com)
+[Power Automate](https://make.powerautomate.com)
 ```
 
 **Result:**  
-[Power Automate](https://flow.microsoft.com)
+[Power Automate](https://make.powerautomate.com)
 
 ## Tables
 
@@ -187,13 +186,13 @@ Organize structured data with tables.
 - Place each table row on its own line 
 - Separate table cells using the pipe character `|` 
 - The first two lines of a table set the column headers and the alignment of elements in the table
-- Use colons (`:`) when dividing the header and body of tables to specify column alignment (left, center, right) 
 - Make sure to end each row with a CR or LF. 
+- Aligning text within a table element is currently not supported.
 
 **Example:**  
 ```Markdown
 | Heading 1 | Heading 2 | Heading 3 |  
-|-----------|:-----------:|-----------:|  
+|-----------|-----------|-----------|  
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3 |  
 ```
@@ -202,7 +201,7 @@ Organize structured data with tables.
 **Result:**  
 
 | Heading 1 | Heading 2 | Heading 3 |  
-|-----------|:-----------:|-----------:|  
+|-----------|-----------|-----------|  
 | Cell A1 | Cell A2 | Cell A3 |  
 | Cell B1 | Cell B2 | Cell B3<br>second line of text |  
 

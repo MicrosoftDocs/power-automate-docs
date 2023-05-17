@@ -17,13 +17,6 @@ ms.topic: conceptual
 ms.date: 12/16/2022
 ms.author: napienko
 ms.reviewer: angieandrews
-ms.tgt_pltfrm: na
-ms.workload: na
-search.app: 
-  - Flow
-search.audienceType: 
-  - flowmaker
-  - enduser
 ---
 
 # Manage approvals

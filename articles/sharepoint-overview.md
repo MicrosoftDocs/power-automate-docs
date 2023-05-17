@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -15,15 +14,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/17/2022
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 # Use SharePoint and Power Automate to build workflows
 
-Power Automate is deeply integrated with SharePoint. You can start with any of the more than [100 SharePoint templates](https://flow.microsoft.com/templates/), or create your own flow that integrates with SharePoint from scratch.
+Power Automate is deeply integrated with SharePoint. You can start with any of the more than [100 SharePoint templates](https://make.powerautomate.com/templates/), or create your own flow that integrates with SharePoint from scratch.
 
 Learn more about how to use Power Automate with SharePoint in the following video.
 

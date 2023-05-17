@@ -1,11 +1,11 @@
-With an expanding list of [services](https://flow.microsoft.com/services) available to build workflows with [Power Automate](https://flow.microsoft.com), you may need to safeguard sensitive or critical business data stored in enterprise services such as SharePoint or Salesforce. You may find that your organization needs to create a policy which ensures that sensitive business data isn't published to consumer services like Twitter and Facebook. With Power Automate, you can easily create [**data loss prevention** (DLP)](/power-platform/admin/prevent-data-loss) policies to tightly control which consumer services your business data can be shared with when your users create flows.  
+With an expanding list of [services](https://make.powerautomate.com/services) available to build workflows with [Power Automate](https://make.powerautomate.com), you may need to safeguard sensitive or critical business data stored in enterprise services such as SharePoint or Salesforce. You may find that your organization needs to create a policy which ensures that sensitive business data isn't published to consumer services like Twitter and Facebook. With Power Automate, you can easily create [**data loss prevention** (DLP)](/power-platform/admin/prevent-data-loss) policies to tightly control which consumer services your business data can be shared with when your users create flows.  
 
 ## Terms you should get familiar with
 
 | Term | Description |
 | --- | --- |
 | **DLP** |This is an abbreviation for data loss prevention. You'll create a DLP policy to manage the sharing of data between **services**. |
-| **Services** |[Services](https://flow.microsoft.com/services) are applications such as Salesforce, SharePoint and Twitter. These services, and lots more, are used to create flows. |
+| **Services** |[Services](https://make.powerautomate.com/services) are applications such as Salesforce, SharePoint and Twitter. These services, and lots more, are used to create flows. |
 | **Data group** |A logical grouping of services. You put services that are allowed to share data in the same data group. There are two data groups: **business data only** and the **no business data allowed** data group. |
 | **Environment** |A DLP is applied to an [environment](../environments-overview-admin.md). An environment contains users. |
 | **Users** |Users are members of your organization to whom a DLP policy will apply, based on their membership in an environment. |

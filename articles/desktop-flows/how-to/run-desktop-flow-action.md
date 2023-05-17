@@ -4,16 +4,14 @@ description: Run desktop flow from other desktop flows
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/10/2022
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -14,8 +13,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/23/2022
 ms.author: napienko
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser
@@ -24,7 +22,7 @@ ms.custom: intro-internal
 
 # Get started using flows with Microsoft Forms
 
-The easiest way to add a form to a flow is to start with a template. [Search the template gallery](https://flow.microsoft.com/templates/) for "Microsoft Forms," or browse by category, to find a template that meets your needs. Follow the steps in the template to create your flow.
+The easiest way to add a form to a flow is to start with a template. [Search the template gallery](https://make.powerautomate.com/templates/) for "Microsoft Forms," or browse by category, to find a template that meets your needs. Follow the steps in the template to create your flow.
 
 :::image type="content" source="../media/forms/templates-screen.png" alt-text="Screenshot of Power Automate templates related to Microsoft Forms.":::
 

@@ -7,8 +7,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 09/07/2022
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser
@@ -24,7 +23,7 @@ Experimental features provide you early access to functionalities and updates in
 
 Follow these steps to enable experimental features in Power Automate.
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select your environment from the top-right corner.
 

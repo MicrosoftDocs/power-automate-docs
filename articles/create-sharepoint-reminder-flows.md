@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: tapanm
 editor: ''
 tags: ''
 ms.devlang: na
@@ -15,6 +14,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/28/2022
 ms.author: deonhe
+ms.reviewer: gtrantzas
 ---
 
 # SharePoint remind me
@@ -63,11 +63,11 @@ You'll receive a reminder via email, based on the **Remind me this many day(s) i
 
 ## Edit your flow
 
-The reminder flow is like any other flow, so you can access and edit it through [Power Automate](https://flow.microsoft.com).
+The reminder flow is like any other flow, so you can access and edit it through [Power Automate](https://make.powerautomate.com).
 
 ## More information
 
-- Getting started with [Power Automate](https://flow.microsoft.com).
+- Getting started with [Power Automate](https://make.powerautomate.com).
 - Set a [reminder flow](https://support.office.com/article/set-a-reminder-flow-23c0e172-1fc1-4ac8-a9db-cd0b81d634d8) in SharePoint.
 
 

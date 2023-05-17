@@ -1,32 +1,28 @@
 ---
-title: Aggregations (preview)
-description: Learn the aggregations you can use in custom metrics in the Minit desktop application for Microsoft Power Automate process advisor
-author: maslejka
+title: List of aggregations
+description: Learn about the aggregations you can use in custom metrics in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# Aggregations (preview)
+# List of aggregations
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-This article describes the aggregations you can use in custom metrics
+This article describes the aggregations you can use in custom metrics.
 
 ## AVG([context],[value])
 
-Calculates the average of values grouped according to the [context]
+Calculates the average of values grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -38,7 +34,7 @@ Calculates the average of values grouped according to the [context]
 
 ## AVGIF([context],[condition],[value])
 
-Calculates the average of values that meet the [condition], grouped according to the [context]
+Calculates the average of values that meet the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
 
@@ -58,7 +54,7 @@ Can be used anywhere a custom metric can be used Returns the average event cost 
 
 ## COUNT([context])
 
-Counts the number of values grouped according to the [context]
+Counts the number of values grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -66,7 +62,7 @@ Counts the number of values grouped according to the [context]
 
 ## COUNTIF([context],[condition])
 
-Counts the number of values fulfilling the [condition], grouped according to the [context]
+Counts the number of values fulfilling the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -78,7 +74,7 @@ Counts the number of values fulfilling the [condition], grouped according to the
 
 ## COUNTUNIQUE([context],[value])
 
-Counts the number of unique values, grouped according to the [context]
+Counts the number of unique values, grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -90,7 +86,7 @@ Counts the number of unique values, grouped according to the [context]
 
 ## COUNTUNIQUEIF([context],[condition],[value])
 
-Counts the number of unique [value] that meet the [condition], grouped according to the [context]
+Counts the number of unique [value] that meet the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -106,7 +102,7 @@ Counts the number of unique [value] that meet the [condition], grouped according
 
 ## MAX([context],[value])
 
-Returns the maximum of [value], grouped according to the [context]
+Returns the maximum of [value], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -118,7 +114,7 @@ Returns the maximum of [value], grouped according to the [context]
 
 ## MAXIF([context],[condition],[value])
 
-Returns the maximum of [values] that meet the [condition], grouped according to the [context]
+Returns the maximum of [values] that meet the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -134,7 +130,7 @@ Returns the maximum of [values] that meet the [condition], grouped according to 
 
 ## MAXVAL([context],[value1],[value2])
 
-Selects item with maximum value from [value1] and returns its calculated value defined by [value2], grouped according to the [context]
+Selects item with maximum value from [value1] and returns its calculated value defined by [value2], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
 
@@ -154,7 +150,7 @@ Can be used on the process map Returns the username of a user who worked on the 
 
 ## MAXVALIF([context],[condition],[value1],[value2])
 
-Selects item with the maximum value defined by [value1] that meets the [condition] and returns its calculated value defined by [value2], grouped according to the [context]
+Selects item with the maximum value defined by [value1] that meets the [condition] and returns its calculated value defined by [value2], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
 
@@ -174,7 +170,7 @@ Selects item with the maximum value defined by [value1] that meets the [conditio
 
 ## MIN([context],[value])
 
-Returns the minimum of [value], grouped according to the [context]
+Returns the minimum of [value], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -186,7 +182,7 @@ Returns the minimum of [value], grouped according to the [context]
 
 ## MINIF([context],[condition],[value])
 
-Returns the minimum of [value] that meets the [condition], grouped according to the [context]
+Returns the minimum of [value] that meets the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -202,7 +198,7 @@ Returns the minimum of [value] that meets the [condition], grouped according to 
 
 ## MINVAL([context],[value1],[value2])
 
-Selects item with the minimum value defined by [value1] and returns its calculated value defined by [value2], grouped according to the [context]
+Selects item with the minimum value defined by [value1] and returns its calculated value defined by [value2], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
 
@@ -218,7 +214,7 @@ Selects item with the minimum value defined by [value1] and returns its calculat
 
 ## MINVALIF([context],[condition],[value1],[value2])
 
-Selects item with the minimum value defined by [value1] that meets the [condition] and returns its calculated value defined by [value2], grouped according to the [context]
+Selects item with the minimum value defined by [value1] that meets the [condition] and returns its calculated value defined by [value2], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
 
@@ -238,7 +234,7 @@ Selects item with the minimum value defined by [value1] that meets the [conditio
 
 ## RANGE([context],[value])
 
-Returns the range (maximum-minimum) of [value], grouped according to the [context]
+Returns the range (maximum-minimum) of [value], grouped according to the [context].
 
 - **[context]**: Defines the context in which the operation is calculated
 
@@ -250,7 +246,7 @@ Returns the range (maximum-minimum) of [value], grouped according to the [contex
 
 ## RANGEIF([context],[condition],[value])
 
-Returns the range (maximum-minimum) of [value] that meets the [condition], grouped according to the [context]
+Returns the range (maximum-minimum) of [value] that meets the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -266,7 +262,7 @@ Returns the range (maximum-minimum) of [value] that meets the [condition], group
 
 ## STDEV([context],[value])
 
-Calculates the standard deviation of [value], grouped according to the [context]
+Calculates the standard deviation of [value], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -278,7 +274,7 @@ Calculates the standard deviation of [value], grouped according to the [context]
 
 ## STDEVIF([context],[condition],[value])
 
-Calculates the standard deviation of [value] that meets the [condition], grouped according to the [context]
+Calculates the standard deviation of [value] that meets the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -294,7 +290,7 @@ Calculates the standard deviation of [value] that meets the [condition], grouped
 
 ## SUM([context],[value])
 
-Calculates the sum of [value], grouped according to the [context]
+Calculates the sum of [value], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -306,7 +302,7 @@ Calculates the sum of [value], grouped according to the [context]
 
 ## SUMIF([context],[condition],[value])
 
-Calculates the sum of [value] that meets the [condition], grouped according to the [context]
+Calculates the sum of [value] that meets the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -322,7 +318,7 @@ Calculates the sum of [value] that meets the [condition], grouped according to t
 
 ## FIRST([context],[value])
 
-Returns the first [value], grouped according to the [context]
+Returns the first [value], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -334,7 +330,7 @@ Returns the first [value], grouped according to the [context]
 
 ## FIRSTIF([context],[condition],[value])
 
-Returns the first [value] that meets the [condition], grouped according to the [context]
+Returns the first [value] that meets the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -350,7 +346,7 @@ Returns the first [value] that meets the [condition], grouped according to the [
 
 ## LAST([context],[value])
 
-Returns the last [value], grouped according to the [context]
+Returns the last [value], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -362,7 +358,7 @@ Returns the last [value], grouped according to the [context]
 
 ## LASTIF([context],[condition],[value])
 
-Returns the last value that meets the [condition], grouped according to the [context]
+Returns the last value that meets the [condition], grouped according to the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -378,7 +374,7 @@ Returns the last value that meets the [condition], grouped according to the [con
 
 ## SELFLOOP([context],[attributeName])
 
-Calculates a count of self-loop events, grouped according to the [context]; short version of COUNTIF(ISSELFLOOP()) expression
+Calculates a count of self-loop events, grouped according to the [context]; short version of COUNTIF(ISSELFLOOP()) expression.
 
 - **[context]**: The context in which the operation is calculated
 
@@ -390,7 +386,7 @@ Calculates a count of self-loop events, grouped according to the [context]; shor
 
 ## LOOP([context],[attributeName])
 
-Calculates a count of loop events, grouped according to the [context]; short version of COUNTIF(ISLOOP()) expression
+Calculates a count of loop events, grouped according to the [context]; short version of COUNTIF(ISLOOP()) expression.
 
 - **[context]**: The context in which the operation is calculated
 
@@ -402,7 +398,7 @@ Calculates a count of loop events, grouped according to the [context]; short ver
 
 ## REWORK([context],[attributeName])
 
-Calculates a count of rework events, grouped according to the [context]; short version of COUNTIF(ISREWORK()) expression
+Calculates a count of rework events, grouped according to the [context]; short version of COUNTIF(ISREWORK()) expression.
 
 - **[context]**: The context in which the operation is calculated
 
@@ -414,7 +410,7 @@ Calculates a count of rework events, grouped according to the [context]; short v
 
 ## LOOPINFLOW([context],[attributeName])
 
-Calculates a count of loop inflows, grouped according to the [context]; short version of COUNTIF(ISLOOPINFLOW()) expression
+Calculates a count of loop inflows, grouped according to the [context]; short version of COUNTIF(ISLOOPINFLOW()) expression.
 
 - **[context]**: The context in which the operation is calculated
 
@@ -426,7 +422,7 @@ Calculates a count of loop inflows, grouped according to the [context]; short ve
 
 ## LOOPOUTFLOW([context],[attributeName])
 
-Calculates a count of loop outflows, grouped according to the [context]; short version of COUNTIF(ISLOOPOUTFLOW()) expression
+Calculates a count of loop outflows, grouped according to the [context]; short version of COUNTIF(ISLOOPOUTFLOW()) expression.
 
 - **[context]**: The context in which the operation is calculated
 
@@ -438,7 +434,7 @@ Calculates a count of loop outflows, grouped according to the [context]; short v
 
 ## NETLOOPGAIN([context],[attributeName])
 
-Calculates the sum of loop gains, grouped according to the [context]; short version of SUM(LOOPGAIN()) expression
+Calculates the sum of loop gains, grouped according to the [context]; short version of SUM(LOOPGAIN()) expression.
 
 - **[context]**: The context in which the operation is calculated
 
@@ -450,7 +446,7 @@ Calculates the sum of loop gains, grouped according to the [context]; short vers
 
 ## MODE([context],[value])
 
-Returns the most common [value] from [context]
+Returns the most common [value] from [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -462,7 +458,7 @@ Returns the most common [value] from [context]
 
 ## MODEIF([context],[condition],[value])
 
-Returns the most common [value] from data elements that meet the [condition] in the [context]
+Returns the most common [value] from data elements that meet the [condition] in the [context].
 
 - **[context]**: The context in which the operation is calculated
 
@@ -476,7 +472,7 @@ Returns the most common [value] from data elements that meet the [condition] in 
 
 ## ALL([context],[condition])
 
-Returns true if all values, grouped according to the [context], meet the [condition]
+Returns true if all values, grouped according to the [context], meet the [condition].
 
 - **[context]**: The context in which the operation is calculated (supported: process, case, event, edge)
 
@@ -492,7 +488,7 @@ Can be used on case metrics filters or case overview statistics. Returns true if
 
 ## ANY([context],[condition])
 
-Returns true if any of the values, grouped according to the [context], meet the [condition]
+Returns true if any of the values, grouped according to the [context], meet the [condition].
 
 - **[context]**: The context in which the operation is calculated (supported: case [implicit])
 
@@ -508,4 +504,4 @@ Can be used on case metrics filters or case overview statistics. Returns true if
 
 ### See also
 
-For a list of all calculation contexts for aggregation operations, go to [Calculation context](calculation-context.md)
+[All calculation contexts for aggregation operations](calculation-context.md)

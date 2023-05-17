@@ -1,45 +1,43 @@
 ---
-title: View settings (preview)
-description: Learn how to define various settings valid for the current process in the Minit desktop application in process advisor.
-author: maslejka
+title: View settings
+description: Learn how to define various settings valid for the current process in minit.
+author: rosikm
 contributors:
-  - maslejka
+  - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
-ms.author: mmaslejova
+ms.date: 04/03/2023
+ms.author: michalrosik
 ms.reviewer: angieandrews
-search.app:
-- Flow
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# View settings (preview)
+# View settings
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+You can define various settings for the current process view on the **View settings** screen.
 
-The View settings panel enables defining various settings valid for the current process view. This panel is easily accessible from any Minit screen such as Process Map, Variants, Statistics, and others. The View setting icon can be found in the bottom left corner, above the Filters icon. With no changes applied (for example, with default settings), the icon remains grey.
+The screen consists of four tabs:
 
-:::image type="content" alt-text="Screenshot of the View settings icon." source="media/image001-v48.png":::
+- General settings
 
-Once the default settings are modified, the icon color changes to teal. The actual settings display on mouseover.
+- Duration settings
 
-:::image type="content" alt-text="Screenshot of the icon settings icon changing color." source="media/image002-v48.png":::
+- Activity label
 
-The View settings panel consists of three groups of settings - *General settings*, *Activity label* and *Working hours*.
+- Calendar settings
 
 ## General settings
 
-The General settings section allows defining the duration format to be used for the current view. The global settings of the duration format used for all new processes and views can be defined in **Settings > Options > General**. See [Settings](settings.md) for more information.
+The **General settings** tab allows you to define the duration format to be used for the current view. The global settings of the duration format used for all new processes and views can be defined in **Settings > Options > General**.
 
-:::image type="content" alt-text="Screenshot of the View settings screen, General settings tab." source="media/image-51.png":::
+To learn more, go to [Settings](settings.md).
 
 ## Duration settings
 
-Use Duration Settings to select the maximum unit of time to be displayed. For example, when you select "day", all the larger units of time (for example, weeks, months, and years) will be converted into days while all the smaller units (hours, minutes, seconds, and milliseconds) will display normally based on the time format precision setting.
+The **Duration settings** tab allows you to select the maximum unit of time to be displayed. For example, if you select **Day**, all the larger units of time (for example, weeks, months, and years) will be converted into days while all the smaller units (hours, minutes, seconds, and milliseconds) will display normally based on the time format precision setting.
 
 Since the length of months and years vary, they are converted to days using their average length:
 
@@ -49,24 +47,30 @@ Since the length of months and years vary, they are converted to days using thei
 
 ```
 
-Use the **Time format precision** drop-down menu to define how many time units will be displayed. For example, when you select **year** and set the format precision to **2**, only years and months will display. If you select **3**, years, months, and weeks will be displayed.
+Use the **Time format precision** dropdown menu to define how many time units will displayedFor example, when you select **Year** in the **Max time unit** dropdown menu, and then select **2** in the **Time format precision**, only years and months will display. If you select **3**, years, months, and weeks will display.
 
 >[!NOTE]
 >
->The values of the units that aren't displayed aren't converted into larger ones but completely omitted. For example, 15 days will display as 2 weeks and not 2,07 weeks.
+>The values of the units that aren't displayed aren't converted into larger ones but are completely omitted. For example, 15 days will display as 2 weeks and not 2.07 weeks.
 
-The **Show duration in working hours** button automatically sets the max time unit to "hour" and time format precision to "unlimited".
+The **Show duration in working hours**checkbox automatically sets the max time unit to "hour" and time format precision to "unlimited".
 
-:::image type="content" alt-text="Screenshot of the View Settings screen, Duration Settings tab." source="media/image-53.png":::
+## Activity label
 
-## Working hours
+The **Activity label** tab allows you to do the following:
 
-The working hours calendar template is applied to the process view by selecting the calendar template using the **Calendar** dropdown menu.
+- Set the default activity label.
 
-:::image type="content" alt-text="Screenshot of the View Setting screen, Calendar Settings tab." source="media/image-52.png":::
+- Select the display format (**Activity**, **Label**, or **Custom**)
 
-If the list does'nt include the calendar template that you want to use, select **...** to define a new template, or select an existing one and select **Edit** to modify it according to your needs.
+- (If the default label is **Custom**) Edit the display format.
 
-Calendar templates can be shared across Minit projects. To manage all available calendar templates go to **Options** > **Working hours**. To learn more, go to [Settings](settings.md).
+## Calendar settings
 
+Select an existing calendar in the **Calendar** dropdown menu. If the menu options don't include the calendar template that you want to use, select the ellipses (**...**) to define a new template. If an existing calendar is close to what you want, select it in the **Calendar** dropdown menu, and then select (**...**) > **Edit**.
 
+Calendar templates can be shared across minit projects. To manage all calendar templates, select **Settings** > **Working hours**. To learn more, go to [Settings](settings.md).
+
+### See also
+
+[Process map overview](process-map.md)

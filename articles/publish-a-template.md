@@ -12,8 +12,6 @@ ms.topic: conceptual
 ms.date: 08/10/2022
 ms.author: napienko
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

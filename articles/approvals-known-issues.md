@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: hamenon 
-manager: tapanm
 editor: ''
 tags: ''
 
@@ -16,8 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/05/2022
 ms.author: tatn
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser
