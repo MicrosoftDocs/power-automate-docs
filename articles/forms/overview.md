@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: Dean-Haas
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -14,8 +13,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/22/2022
 ms.author: napienko
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser
@@ -27,7 +25,7 @@ Use the [Microsoft Forms](/connectors/microsoftforms/) connector in Power Automa
 
 Watch the following video to see how you can use a form in Power Automate.
 
->[!VIDEO <https://www.microsoft.com/videoplayer/embed/RWKXdv>]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdv]
 
 ## Triggering a form action in a flow
 

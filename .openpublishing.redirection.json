@@ -1,6 +1,61 @@
 {
   "redirections": [
     {
+      "source_path": "articles/gdpr-dsr-accountclose-msa.md",
+      "redirect_url": "privacy-dsr-accountclose-msa",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/flic-button-flows.md",
+      "redirect_url": "get-started-logic-template",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/connection-dynamics365.md",
+      "redirect_url": "dataverse/overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/gdpr-dsr-delete-msa.md",
+      "redirect_url": "privacy-dsr-delete-msa",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/gdpr-dsr-delete.md",
+      "redirect_url": "privacy-dsr-delete",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/gdpr-dsr-discovery-msa.md",
+      "redirect_url": "privacy-dsr-discovery-msa",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/gdpr-dsr-discovery.md",
+      "redirect_url": "privacy-dsr-discovery",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/gdpr-dsr-export-msa.md",
+      "redirect_url": "privacy-dsr-export-msa",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/gdpr-dsr-export.md",
+      "redirect_url": "privacy-dsr-export",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/gdpr-dsr-summary-msa.md",
+      "redirect_url": "privacy-dsr-summary-msa",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/gdpr-dsr-summary.md",
+      "redirect_url": "privacy-dsr-summary",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/process-mining-auto-rec.md",
       "redirect_url": "process-mining-overview",
       "redirect_document_id": "false"
@@ -566,8 +621,28 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/intro-maker-portal.md",
+      "redirect_url": "/power-automate/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/release-notes.md",
+      "redirect_url": "/dynamics365/release-plans",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/desktop-flows/link-pad-flow-portal.md",
       "redirect_url": "/power-automate/desktop-flows/trigger-desktop-flows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/minit/favorites-panel.md",
+      "redirect_url": "/power-automate/minit/process-map",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/minit/process-explorer.md",
+      "redirect_url": "/power-automate/minit/process-map",
       "redirect_document_id": false
     }
   ]

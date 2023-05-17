@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: TapanM
 editor: ''
 tags: ''
 
@@ -16,6 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2020
 ms.author: hamenon
+ms.reviewer: gtrantzas
 ---
 
 # Approvals in Microsoft Teams

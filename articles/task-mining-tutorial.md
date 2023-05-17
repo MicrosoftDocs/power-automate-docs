@@ -10,8 +10,6 @@ ms.topic: conceptual
 ms.date: 11/15/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow[https://preview.flow.microsoft.com/?processinsights-core.tabularData=true](https://preview.flow.microsoft.com/?processinsights-core.tabularData=true)
 search.audienceType: 
   - flowmaker
   - enduser
@@ -28,11 +26,11 @@ This tutorial with sample data allows you to experience task mining in the proce
 - [View metrics with activity combinations and variants](#view-metrics-with-activity-combinations-and-variants)
 - [Identify automation opportunities](#identify-automation-opportunities)
 
-For the task mining tutorial, download [User recording demo data](https://go.microsoft.com/fwlink/?linkid=2175600). For the process mining tutorial, go to [Tutorial: Get started with process mining (preview)](process-mining-tutorial.md).
+For the task mining tutorial, download [User recording demo data](https://go.microsoft.com/fwlink/?linkid=2175600). For the process mining tutorial, go to [Tutorial: Get started with process mining](process-mining-tutorial.md).
 
 ## Get process advisor ready
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select your environment.
 
@@ -132,11 +130,11 @@ This section explains what you can do on the **Analytics** screen.
 
 :::image type="content" source="media/task-mining-tutorial/analytics-layout.png" alt-text="Screenshot of the Analytics screen":::
 
-- **Automate activities (preview)**: If during the recording process, a user ran an application that has its Power Automate actions (for example, Microsoft Outlook or Excel), then after selecting **Automate activities (preview)**, a draft Power Automate process would be opened containing the actions related to the used applications that can be automated. The user would then be able to start building the final process using the proposed draft.
+- **Automate activities (preview)**: To streamline the automation process, you can use the **Automate activities** feature (currently in preview mode). This feature detects if the user performed actions using an application that has Power Automate actions available, such as Microsoft Outlook or Excel. Upon selecting **Automate activities**, a draft Power Automate process containing the relevant actions is generated. The user can then modify and customize the draft process to create the final automated process.
 
-- **Legend**: Displays information about the report to let users better understand what they see.
+- **Legend**: Provides users with additional information about the report, helping them to better understand the visualizations and data presented.
 
-- **Process**: Provides detailed information about the analyzed process. This is where users can find the process map and general information about the process (time analytics per variant and per the recording’s author).
+- **Process**: section offers users in-depth information about the analyzed process, including the process map, time analytics for each variant and each recording author.
 
 - **Application**: Provides information about the apps used in recordings. This includes what apps were used by authors, how often were they used, and what the transitions were between them. This report explains which connectors should be used when implementing automation for the process, and where potentially to use desktop flows as there’s no existing connector.
 
@@ -158,7 +156,7 @@ In the previous example, you'll see the various steps in the business process an
 
 ## Gather insights with a process map
 
-The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can gather insights about where improvement opportunities exist.
+Visualizing and analyzing processes is made possible through the process map. By examining a graphical representation of how business processes are performed, you can gather insights about potential areas for improvement..
 
 Go to the process map by selecting **Analytics** > **Process map**.
 
@@ -170,11 +168,11 @@ This section explains the **Variants by frequency** bars on the right.
 
 :::image type="content" source="media/task-mining-tutorial/variant.png" alt-text="Screenshot of the variants by time in seconds bars.":::
 
-Different activity combinations and variants are shown separately on the process map. A process variant is a unique path from the beginning to the end of the process. A process variant is a specific activity sequence, like a 'trace' through the process, from start to end. Each variant differs from the others by at least one activity. You can see additional metrics, frequency of the activities, and throughput time on the process map. Frequency shows you the total number of recordings/cases passing through it. Throughput time is the time between the first event of the case and the last.
+On the process map, you can observe various activity combinations and variants that are displayed individually. A process variant represents a distinct sequence from the start to the end of the process. It is like a 'trail' through the process that varies from other variants by at least one activity. The process map also provides additional metrics such as activity frequency and throughput time. Activity frequency indicates the total number of recordings or cases that pass through it. Throughput time measures the duration between the first event of the case and the last event.
 
 :::image type="content" source="media/task-mining-tutorial/var-by-frequency.png" alt-text="Screenshot of the 'Variants by frequency' tab.":::
 
-If you select the first variant by selecting the first bar, you can see that the invoice coming through email is the most frequent process variant. It might take a while for you to see the changes from the chart. 
+By selecting the first bar on the process map, you can view the most frequent process variant, which is the invoice coming through email. It may take some time for any changes to reflect on the chart. 
 
 :::image type="content" source="media/task-mining-tutorial/variant-email.png" alt-text="Screenshot of the invoice coming from email variant in the process map.":::
 
@@ -190,11 +188,11 @@ You can see that people spend a lot of their time entering the information in th
 
 :::image type="content" source="media/task-mining-tutorial/variant-blank.png" alt-text="Screenshot of selecting a blank space.":::
   
-1. Look at the top analytics data. The average process time is 1.47 minutes out of five recordings.  
+2. Look at the top analytics data. The average process time is 1.47 minutes out of five recordings.  
 
     :::image type="content" source="media/task-mining-tutorial/analytics-data.png" alt-text="Screenshot of analytics data.":::
 
-1. Analyze other time-based metrics dashboards.
+3. Analyze other time-based metrics dashboards.
 
    - **Activity by average time in sec**: Notice that **Enter invoice details** and **Download invoice** are taking the most time.
 
@@ -204,15 +202,15 @@ You can see that people spend a lot of their time entering the information in th
 
         :::image type="content" source="media/task-mining-tutorial/avg-time-min.png" alt-text="Screenshot of media/task-mining-tutorial/avg-time-min.png":::
 
-1. Select the **Application (preview)** tab to see details on which applications were used.
+4. Select the **Application (preview)** tab to see details on which applications were used.
 
     :::image type="content" source="media/task-mining-tutorial/app-preview.png" alt-text="Screenshot of Application (preview)":::
 
     It might take a while to load the reports.
 
-    - This report is important, as it allows you to discover insights into the different applications used in a business process, the frequency with which they're accessed, and how much time is spent on the application.
+    - By providing information on the applications utilized in a business process, their frequency of usage, and the amount of time spent on each application, this report is crucial for gaining insights into the process.
 
-    - For example, the dashboard shows that a legacy invoicing app, Outlook, and Excel have significant contributions to time spent and actions by applications.*
+    - For example, the dashboard shows that a legacy invoicing app, Outlook, and Excel have significant contributions to time spent and actions by applications.
 
     - Take time to get familiar with the different reports.
  

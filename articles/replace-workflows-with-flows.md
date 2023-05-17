@@ -2,13 +2,11 @@
 title: Replace classic Microsoft Dataverse workflows with Power Automate | Microsoft Docs
 description: Describes Power Automate capabilities and recommended patterns to use flow instead of a classic workflow.
 author: MSFTMAN
-manager: tapanm
 ms.author: Deonhe
+ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 08/12/2022
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -463,7 +461,7 @@ With flows, this scenario is easier to build, as demonstrated in the walkthrough
 
 To allow the sales person to trigger the approval request on demand:
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/) and [create a cloud flow in a solution](create-flow-solution.md). 
+1. Sign in to [Power Automate](https://make.powerautomate.com) and [create a cloud flow in a solution](create-flow-solution.md). 
 
 1. From the list of triggers, select **Microsoft Dataverse – When a row is selected**, and then select **Quotes** as the table. 
 
@@ -537,7 +535,7 @@ When you run this flow against your quote, it summarizes quote line items for th
 
 - **I have a Dynamics 365 license. Can I use Power Automate?**
 
-  Every Dynamics 365 user is entitled to use Power Automate. [Review our licensing information.](https://flow.microsoft.com/pricing/)
+  Every Dynamics 365 user is entitled to use Power Automate. [Review our licensing information.](https://make.powerautomate.com/pricing/)
 
 - **How often can my flows be triggered?**
 

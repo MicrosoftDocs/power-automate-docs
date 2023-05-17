@@ -5,14 +5,12 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 06/09/2022
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -25,7 +23,7 @@ Follow these steps to move your solution and its dependencies to a new environme
 >[!IMPORTANT]
 >Before you export a solution, consider removing environment variable values in the solution.
 
-1. Sign into [Power Automate](https://powerautomate.com.)
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select **Solutions** from the navigation bar on the left side of Power Automate.
 

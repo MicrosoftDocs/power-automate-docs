@@ -19,8 +19,6 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.author: napienko
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

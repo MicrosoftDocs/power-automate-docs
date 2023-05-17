@@ -3,13 +3,11 @@ title: Handle errors in desktop flows
 description: See how to handle errors and warnings in your desktop flows
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 11/02/2022
-ms.author: gtrantzas
-ms.reviewer: iomavrid
+ms.topic: conceptual
+ms.date: 04/13/2023
+ms.author: iomavrid
+ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -52,13 +50,21 @@ The pane also provides filters to display errors, warnings, and/or items related
 
 :::image type="content" source="media/errors/errors-pane-filters.png" alt-text="Screenshot of the available filter in the errors pane.":::
 
-To see additional information regarding a thrown error or warning, double-click on the respective item in the errors pane. Once you do so, a dialog will display information about:
+To see additional information regarding a design-time error or warning, double-click the respective item in the errors pane. Once you do so, a dialog will display information about:
 
-- **Location**: The subflow and the action that threw the error or warning.
-- **Error message**: The message of the occurred error or warning.
-- **Error details**: A long description of the occurred run-time error. These details give a clear message about why the run-time error happened. This field isn't available for design-time errors and warnings.
+- **Location**: The subflow, line and action that caused the design-time error or warning.
+- **Error message**: The message of the occurred design-time error or warning.
 
-:::image type="content" source="media/errors/error-details.png" alt-text="Screenshot of the error details dialog.":::
+:::image type="content" source="media/errors/design-time-error.png" alt-text="Screenshot of the design-time error dialog.":::
+
+To see additional information regarding a runtime error, double-click the respective item in the errors pane. Once you do so, a dialog will display information about:
+
+- The message of the occurred error or warning.
+- **Location**: The subflow, line and action that caused the error or warning.
+- Possible remediation steps to resolve the issue that occurred (currently only applicable to Excel actions' errors).
+- **Error details**: The error's correlation ID, as well as a long, technical description of the occurred runtime error.
+
+:::image type="content" source="media/errors/error-details-with_remediation_steps.png" alt-text="Screenshot of the error details dialog.":::
 
 ## Configure error-handling functionality
 

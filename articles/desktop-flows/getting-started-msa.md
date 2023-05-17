@@ -1,20 +1,17 @@
 ---
 title: Get started with a Microsoft account
-description: Get started with a Microsoft account
+description: Get started with Power Automate desktop flows using a Microsoft account.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
-ms.topic: article 
-ms.date: 11/03/2022
+ms.topic: conceptual 
+ms.date: 02/17/2023
 ms.custom: intro-internal
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -26,7 +23,7 @@ Power Automate enables regular and power users to automate processes on their de
 
 Focus on other activities by automating routine and repetitive tasks like organizing or backing up your files and folders. Create flows to extract product prices from websites, save them in Excel spreadsheets, and then [email them](actions-reference/email.md) as attachments. [Fill in web forms](automation-web.md#enter-data-on-webpages) by supplying information dynamically from your files.  
 
-Create automated workflows with step-by-step guidance and an intuitive, no-code interface anyone can use, regardless of their technical expertise. Build flows from a wide variety of pre-made actions, or [record your interactions as steps](recording-flow.md) to be played back anytime.
+Create automated workflows with step-by-step guidance and an intuitive, no-code interface anyone can use, regardless of their technical expertise. Build flows from a wide variety of premade actions, or [record your interactions as steps](recording-flow.md) to be played back anytime.
 
 Using Power Automate with a Microsoft account is available at no extra cost.
 
@@ -35,7 +32,7 @@ Using Power Automate with a Microsoft account is available at no extra cost.
 
 ## Build your first flow
 
-The following example demonstrates the creation of a short flow. The completed flow will prompt you to select a folder. Then, it will copy the folder to another folder on your desktop named **backup**.
+The following example demonstrates the creation of a short flow. The completed flow will prompt you to select a folder. Then, it will copy the folder to another folder named **backup** on your desktop.
 
 To create the desktop flow:
 
@@ -67,7 +64,7 @@ To create the desktop flow:
 
     ![Screenshot of the Copy folder action.](media\getting-started-msa\copy-folder-action-properties.png)
 
-1. Select **Run** to run the flow and test that works as expected.
+1. Select **Run** to run the flow and test that it works as expected.
 
     ![Screenshot of the Run button in the flow designer.](media\getting-started-msa\run-flow.png)
 
@@ -75,16 +72,16 @@ To create the desktop flow:
 
     ![Screenshot of the Run button in the console.](media\getting-started-msa\run-flow-console.png)
 
-When prompted for a folder, select any folder you wish to copy. The flow will create a new folder on your desktop called **backup** with the selected folder inside.
+When prompted for a folder, select any folder you want to copy. The flow will create a new folder on your desktop called **backup** with the selected folder inside.
 
 Following this example, it's possible to imagine a wide range of scenarios where these actions could be combined with other actions. Among the many possibilities, you could:
 
-* Select a folder on a flash drive to back up to
-* Back up files based on specific criteria
-* Create a file structure for the backup
-* Iterate through a list of folders and only back up selected folders
+* Select a folder on a flash drive to back up to.
+* Back up files based on specific criteria.
+* Create a file structure for the backup.
+* Iterate through a list of folders and only back up selected folders.
 
-## Next Steps
+## Next steps
 
 * Learn how to [set up Power Automate](setup.md).
 
@@ -92,4 +89,4 @@ Following this example, it's possible to imagine a wide range of scenarios where
 
 * Get familiar with the [console](console.md) and the [flow designer](flow-designer.md).
 
-* You'll find the list of actions available in the [Actions reference](actions-reference.md).
+* Find the list of actions available in the [Actions reference](actions-reference.md).

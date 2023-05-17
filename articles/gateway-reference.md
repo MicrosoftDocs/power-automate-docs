@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: KFile
 editor: ''
 tags: ''
 
@@ -16,8 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2019
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser

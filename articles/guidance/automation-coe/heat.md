@@ -11,9 +11,6 @@ ms.author: kathyos
 ms.reviewer: deonhe
 search.audienceType: 
   - admin
-search.app: 
-  - Flow
-  - Powerplatform
 ---
 # Holistic enterprise automation techniques (HEAT)
 
@@ -63,11 +60,11 @@ Watch the video: [Empower, discover, & plan"](https://youtu.be/94Lq15PNDDg)
 
 Resources for determining ROI, process discovery, and setting up Power Automate environment:
 
-- Discover which process to automate using [process advisor](https://flow.microsoft.com/process-advisor/)
+- Discover which process to automate using [process advisor](https://make.powerautomate.com/process-advisor/)
 - Use the [Automation Project app](/power-automate/guidance/automation-kit/overview/introduction) for curating and managing ideas
 - [Power Automate for desktop](/power-automate/desktop-flows/introduction)
 - [Power Automate IP address configuration](/power-automate/limits-and-config)
-- [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](/power-platform/admin/use-service-admin-role-manage-tenant.md)
+- [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](/power-platform/admin/use-service-admin-role-manage-tenant)
 - [Assign Power Automate RPA attended user plan through Microsoft 365 admin center](/power-automate/organization-q-and-a#power-automate-rpa-license)
 - [Manage unattended RPA add-on capacity](/power-platform/admin/capacity-add-on) in [Power Platform admin center](https://aka.ms/ppac)
 
@@ -96,8 +93,8 @@ Watch the video: [Build & test](https://youtu.be/qvzBNfnjbpA)
 
 More resources for building automations:
 
-- [RPA playbook for SAP GUI automation](https://flow.microsoft.com/blog/rpa-playbook-for-sap-gui-automation-with-power-automate-api-flows-ui-flows-and-power-automate-desktop)
-​- [Microsoft AI Builder](https://flow.microsoft.com/ai-builder/)
+- [RPA playbook for SAP GUI automation](https://make.powerautomate.com/blog/rpa-playbook-for-sap-gui-automation-with-power-automate-api-flows-ui-flows-and-power-automate-desktop)
+​- [Microsoft AI Builder](https://make.powerautomate.com/ai-builder/)
 - Automate It video series: ["Power Automate for desktop and SAP"](https://www.youtube.com/watch?v=u1-8oKytJAU)
 - [Use sensitive text in Power Automate for desktop + Azure Key Vault](https://powerusers.microsoft.com/t5/Webinars-and-Video-Gallery/Using-Sensitive-Text-In-Power-Automate-Desktop-Azure-Key-Vault/td-p/790556)
 
@@ -144,7 +141,7 @@ Some helpful resources for security, governance, and adoption nurturing:
 - [Power Platform compliance and data privacy](/power-platform/admin/wp-compliance-data-privacy)
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
 - [Establishing a data loss prevention (DLP) strategy](/power-platform/guidance/adoption/dlp-strategy)
-- [Audit Power Automate flow events through Microsoft 365 Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center/)
+- [Audit Power Automate flow events through Microsoft 365 Security & Compliance Center](https://make.powerautomate.com/blog/security-and-compliance-center/)
 
 ## Nurture
 
@@ -156,7 +153,7 @@ CoEs should establish their strategy to nurture and upskill their employees. The
 
 ## More resources to start automating
 
-- [Download Power Automate for desktop](https://flow.microsoft.com/desktop/)
+- [Download Power Automate for desktop](https://make.powerautomate.com/desktop/)
 - [Power Automate documentation](/power-automate/)
 - [Get help with Power Automate for desktop on Forums](https://powerusers.microsoft.com/t5/Power-Automate-Desktop/bd-p/MPADesktop)
 - [Watch and subscribe to the Automate It series](https://aka.ms/automateit)

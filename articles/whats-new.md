@@ -6,8 +6,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 11/16/2022
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser

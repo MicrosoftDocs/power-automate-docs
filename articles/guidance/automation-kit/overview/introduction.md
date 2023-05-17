@@ -4,7 +4,6 @@ description: Overview of the Automation Center of Excellence Kit.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 

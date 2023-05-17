@@ -5,10 +5,9 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
-
+ms.reviewer: gtrantzas
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article

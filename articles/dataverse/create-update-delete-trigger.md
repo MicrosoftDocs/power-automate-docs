@@ -5,8 +5,8 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: TapanM
 ms.author: Matow
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
 
@@ -15,9 +15,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/03/2022
-search.app: 
-  - Flow
-  - Powerplatform
 search.audienceType: 
   - maker
 ---

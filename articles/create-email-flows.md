@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -15,8 +14,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2022
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser
@@ -28,7 +26,7 @@ Here are some of the most frequently used ways to create flows to manage your em
 
  Power Automate offers many templates for you to create flows. You can use these templates "as is" or you can make any adjustments that your scenario needs. If you don't find a template that matches your scenario, you can create a cloud flow without a template. You can also create a flow from connectors.
 
-1. **Use a template:** Most likely, there's already a [template](https://flow.microsoft.com/en-us/templates/) that accomplishes your scenario. Search for your scenario among the templates, and then follow the steps to create a cloud flow from the template.
+1. **Use a template:** Most likely, there's already a [template](https://make.powerautomate.com/templates/) that accomplishes your scenario. Search for your scenario among the templates, and then follow the steps to create a cloud flow from the template.
  
 1. **Tweak a template:** If you find a template that's similar to your scenario, but it doesn't do exactly what you want, you can create a cloud flow from that template and then tweak the flow to your liking. You can extend a cloud flow that you created from a template by adding, editing, or removing triggers and actions.
 

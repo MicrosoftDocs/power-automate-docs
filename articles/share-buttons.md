@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: anneta
 editor: ''
 tags: ''
 
@@ -16,8 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2022
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -36,7 +34,7 @@ Follow [these steps](share-buttons.md#use-shared-buttons) to use a button that s
 ## Prerequisites
 To share buttons, you need:
 
-* An account with access to [Power Automate](https://flow.microsoft.com).
+* An account with access to [Power Automate](https://make.powerautomate.com).
 * A flow to share.
 * A mobile device with the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 * A group or user within your organization with whom to share your button.

@@ -3,13 +3,11 @@ title: Use Power Automate flows in Microsoft Teams (contains video) | Microsoft 
 description: Learn how to use Power Automate flows within Microsoft Teams.
 documentationcenter: na
 author: msftman
-manager: TapanM
 ms.subservice: teams
 ms.topic: overview
 ms.date: 05/25/2022
 ms.author: hamenon
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser

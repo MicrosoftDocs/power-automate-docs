@@ -2,8 +2,6 @@
 title: "Create a mobile task flow with Power Apps | MicrosoftDocs"
 ms.custom: ""
 ms.date: 06/11/2018
-ms.reviewer: ""
-
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
@@ -16,9 +14,7 @@ ms.assetid: 046480e6-f2ff-4c56-9e03-f642c982ff7d
 caps.latest.revision: 12
 author: "Mattp123"
 ms.author: "matp"
-manager: "kvivek"
-search.app: 
-  - Flow
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser

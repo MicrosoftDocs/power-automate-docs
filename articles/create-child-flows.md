@@ -2,13 +2,13 @@
 title: Call Child Flows
 description: Flows can now call other flows and pass parameters to them.
 author: MSFTMAN
-ms.reviewer: deonhe
 ms.date: 04/08/2022
 ms.assetid: 6e6d3c34-b209-ea11-a811-000d3a4f1cdd
 ms.subservice: cloud-flow
 ms.topic: article
 
 ms.author: deonhe
+ms.reviewer: angieandrews
 dynamics365pdf: True
 ---
 # Create child flows
@@ -44,7 +44,7 @@ You will need a solution with two flows.
 1. Select **Add an input**.
    The input you define here will be passed to the child flow from the parent flow.
 
-    ![The the input that will come from parent flows.](./media/call-child-flow/add-trigger-input.png "The the input that will come from parent flows")
+    ![The input that will come from parent flows.](./media/call-child-flow/add-trigger-input.png "The input that will come from parent flows")
 
 1. For this walkthrough, the child flow creates a contact, so it needs input fields for the **Contact name** and **Contact email**. Add a **ContactName** and a **ContactEmail** input to the **Manually trigger a flow** card.
 

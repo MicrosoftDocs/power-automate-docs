@@ -4,7 +4,6 @@ description: Learn about the DLP impact analysis for desktop flows.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
 

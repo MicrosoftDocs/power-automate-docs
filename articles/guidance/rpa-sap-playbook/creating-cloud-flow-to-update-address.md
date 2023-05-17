@@ -4,7 +4,6 @@ description: In this step of the RPA Playbook for SAP GUI Automation with Power 
 suite: flow
 documentationcenter: na
 author: kathyos
-manager: kvivek
 editor: ''
 ms.custom: guidance
 
@@ -23,7 +22,7 @@ Now, we'll create the cloud flow that employees use to request an updated addres
 
 We highly recommended that you create cloud flows, desktop flows and other Microsoft Power Platform artifacts within solutions to allow for better portability, application lifecycle management (ALM), and encapsulation.
 
-1. Navigate to <https://powerautomate.com> and sign in with your Azure Active Directory (Azure AD) credentials.
+1. Navigate to <https://make.powerautomate.com> and sign in with your Azure Active Directory (Azure AD) credentials.
 
 2. Confirm that you're in the same environment as the one in which you built the desktop flow with Power Automate Desktop, and then select **Solutions** > **+ New solution**.
 

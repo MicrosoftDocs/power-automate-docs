@@ -1,22 +1,24 @@
 ---
 title: Trigger a cloud flow based on email properties in Power Automate | Microsoft Docs
-description: Start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email
+description: Learn how to start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
+ms.author: napienko
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/10/2022
-ms.author: deonhe
-search.app: 
-  - Flow
+ms.date: 01/13/2023
 search.audienceType: 
   - flowmaker
   - enduser
@@ -36,14 +38,17 @@ Use the **When a new email arrives (V3)** trigger to create a cloud flow that ru
 | Subject Filter |Search for the presence of specific words in the subject of an email. Your flow then runs actions that are based on the results of your search. |
 
 > [!IMPORTANT]
-> Each [Power Automate plan](https://flow.microsoft.com/pricing/) includes a run quota. Always check properties in the flow's trigger when possible. Doing so avoids using your run quota unnecessarily. If you check a property in a condition, each run counts against your plan's run quota, even if the filter condition that you defined isn't met.<br><br>For example, if you check an email's From address in a condition, each run counts against your plan's run quota, even if it's not from the address that interests you.
+> Each [Power Automate plan](https://make.powerautomate.com/pricing/) includes a run quota. Always check properties in the flow's trigger when possible. Doing so avoids using your run quota unnecessarily. If you check a property in a condition, each run counts against your plan's run quota, even if the filter condition that you defined isn't met.<br><br>For example, if you check an email's From address in a condition, each run counts against your plan's run quota, even if it's not from the address that interests you.
 
-In the following tutorials, we check all properties in the **when a new email arrives (V3)** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://ms.flow.microsoft.com/pricing/) page.
+In the following tutorials, we check all properties in the **when a new email arrives (V3)** trigger. Learn more by visiting the [frequently asked billing questions](billing-questions.md#what-counts-as-a-run) and the [pricing](https://make.powerautomate.com/pricing/) page.
 
 ## Prerequisites
 
-- An account with access to [Power Automate](https://flow.microsoft.com).
+- An account with access to [Power Automate](https://make.powerautomate.com).
+
 - An email account with Outlook for Microsoft 365 or Outlook.com.
+
+
 - The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
 - Connections to Office, Outlook, and the push notification service.
 
@@ -75,9 +80,6 @@ OK, let's get started.
 [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 4. Select **Save** at the top of the page.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that displays the save flow option.](./media/email-triggers/email-triggers-subject-notification.png "Save flow option")
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 

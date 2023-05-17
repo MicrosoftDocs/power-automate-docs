@@ -5,7 +5,6 @@ services: ''
 suite: i
 documentationcenter: na
 author: Dean-Haas
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -14,8 +13,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/12/2022
 ms.author: napienko
-search.app: 
-  - Flow
+ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser

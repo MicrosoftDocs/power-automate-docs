@@ -9,8 +9,7 @@ author: msftman
 ms.subservice: cloud-flow
 ms.date: 02/11/2022
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser

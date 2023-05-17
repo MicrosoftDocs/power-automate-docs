@@ -1,20 +1,18 @@
 ---
-title: Flow exception rules framework | Microsoft Docs
-description: Learn to use the flow exception rules framework.
+title: Flow exception rules framework
+description: Learn how to use the flow exception rules framework.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
-manager: marcsc
 editor: ''
 ms.custom: guidance
-
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
 ms.author: grarchib
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Flow exception rules framework
@@ -29,7 +27,7 @@ Desktop flow execution results together with their statuses are automatically st
 
 ### Components
 
-These components are part of the [Automation Satellite solution](setup/satellite.md#set-up-satellites).
+These components are part of the [automation satellite solution](setup/satellite.md).
 
 Type|Name|Description
 ----|----|-----
@@ -48,7 +46,7 @@ Environment Variable|Automation CoE Alert Email Recipient|Defines the email addr
 - Basic User
 - Environment Maker
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 1. Go to your satellite environment.
 1. Select the **Solutions** tab.
 1. Find and then select **Automation CoE Satellite.**

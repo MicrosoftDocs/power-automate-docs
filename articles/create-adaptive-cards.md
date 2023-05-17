@@ -1,29 +1,31 @@
 ---
-title: Create flows that post adaptive cards to Microsoft Teams | Microsoft Docs
-description: Create flows that post richly formatted content with adaptive cards to Microsoft Teams.
+title: Create flows that post adaptive cards to Microsoft Teams
+description: Learn how to create flows that post richly formatted content with adaptive cards to Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 5/18/2021
-ms.author: deonhe
+ms.date: 01/13/2023
+ms.author: napienko
+ms.reviewer: angieandrews
 ---
-
 
 # Create your first adaptive card
 
-Adaptive cards within Power Automate may either share blocks of information or collect data via a form for a given data source. 
+Adaptive cards within Power Automate may either share blocks of information or collect data via a form for a given data source.
 
-In either case you will need to sketch out which datasets you will share, and/or what data the form will need to collect. 
+In either case, you'll need to sketch out which datasets you'll share, and/or what data the form will need to collect.
 
 >[!TIP]
 >Use simple blocks of data rather than complex table arrays.
@@ -34,20 +36,26 @@ In either case you will need to sketch out which datasets you will share, and/or
 
 ## Add an action
 
-In this procedure, you’ll add an action which will use the data from previous actions in the flow to post information to a Microsoft Teams channel.
+In this procedure, you’ll add an action that will use the data from previous actions in the flow to post information to a Microsoft Teams channel.
 
-1. Sign into Power Automate.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
 1. Select **My flows** in the top navigation bar.
+
 1. Select **New flow** > **Instant cloud flow**.
-1. Give your flow a name.
+
+1. Name your flow.
+
 1. Select **Manually trigger a flow** as the trigger.
+
 1. Select **Create**.
 
-    <!-- | [./media/image5.png](./media/image5.png) | [./media/image6.png](./media/image6.png) | -->
+1. In the designer, select **New Step**.
 
-1. Select **New Step**.
 1. Search for **Microsoft Teams**, and then select **Post an adaptive card to a Teams channel and wait for a response** as the action.
+
 1. Select the **Team** and the **Channel** to which you'd like to post the card.
+
 1. Paste this JSON into the **Message** box.
 
     ``` JSON
@@ -166,14 +174,13 @@ Congratulations! you’ve just made your first interactive adaptive card!
 
 ![Finished first card.](media/adaptive-cards/finished-first-card.png) 
 
-
 ## Troubleshooting tips for adaptive cards
 
 The most common problems that you will encounter when creating adaptive cards are:
 
 -   Flow run errors are often caused by one of the following factors:
 
-    -  The Flow App is not installed in Microsoft Teams – Please [install the Flow App](https://flow.microsoft.com/blog/microsoft-flow-in-microsoft-teams) into Teams. 
+    -  The Flow App is not installed in Microsoft Teams – Please [install the Flow App](https://make.powerautomate.com/blog/microsoft-flow-in-microsoft-teams) into Teams. 
     
     In this case the error may resemble this screenshot:  
 

@@ -2,13 +2,11 @@
 title: Use RPA with Dynamics 365 Customer Service
 description: Use RPA with Dynamics 365 Customer Service.
 author: georgiostrantzas
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/16/2022
-ms.author: gtrantzas
-ms.reviewer: marleon
+ms.author: marleon
+ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -98,7 +96,7 @@ Now that prerequisites are set, you are on your way to get the free solutions th
 
     :::image type="content" source="media/dynamics365-cs-rpa/run-flow-built-with-power-automate-desktop-action.png" alt-text="Screenshot of the Run a flow built with Power Automate for desktop action.":::
 
-1. Select [**Directly to machine**](https://flow.microsoft.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) from the list.
+1. Select [**Directly to machine**](https://make.powerautomate.com/blog/connect-directly-to-machines-and-new-machine-management-for-desktop-flows/) from the list.
 
 1. Select **Directly to machine** in the **Connect** field. Then, select the machine name on which you've installed Power Automate, and enter the machine credential (the username and password you use to sign in to the machine. To find more information about direct connectivity, see [Manage machines](manage-machines.md).
 

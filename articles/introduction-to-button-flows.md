@@ -11,8 +11,9 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/16/2023
 ms.author: deonhe
-  - ms.reviewer: angieandrewa
+ms.reviewer: angieandrews
 ---
+
 # Instant flows overview
 
 There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync, or you may want to start a new Visual Studio Codespaces build of your code base after you've been notified that there are no more checkins planned for the day. Instant flows allows you to accomplish these and many other tasks simply by tapping a button on your mobile device.
@@ -22,6 +23,7 @@ Create instant flows so that you can easily run repetitive tasks from any place,
 
 ## Create an instant flow
 ### Prerequisites
+
 * Access to [Power Automate](https://flow.microsoft.com).
 * An account with permissions to use the connectors to create your instant flow. For example, you'll need a Dropbox account in order to create an instant flow that accesses Dropbox.
 
@@ -32,13 +34,12 @@ In this tutorial, you'll create an instant flow that starts a Visual Studio Code
 1. From the left side of the screen, select **Create**.
 1. Select **Instant cloud flow**.
 1. Give your flow a name in the **Flow name** > **Manually trigger a flow** > **Create**. 
- 
 1. From the list of templates, select the **Trigger a new build in VSO** template.  
- 1. on the **Trigger a new build in VSO** page, select **Use this template**.
+1. on the **Trigger a new build in VSO** page, select **Use this template**.
 1. If you aren't signed in, you'll be prompted to do so.  
 1. After you've signed into Flow, you'll be prompted to sign into the connectors used in the template you've selected. In this example, in step 2 above we selected the **Trigger a new build in VSO** template, so we have to sign into VSO (and any other connectors you are working with), if you're not already signed in.
 1. if you agree to authorize Power Automate to access your VSO account, Select **Accept**.  
- 1. Authorize each connector similarly.
+1. Authorize each connector similarly.
 
     The designer should appear like this when you are ready to go to the next step. To move on, select **Continue**.  
    ![Continue button.](./media/introduction-to-button-flows/create-button-6.png)

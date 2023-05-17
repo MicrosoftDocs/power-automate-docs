@@ -5,8 +5,8 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: TapanM
 ms.author: Matow
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
 
@@ -15,9 +15,6 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/06/2021
-search.app: 
-  - Flow
-  - Powerplatform
 search.audienceType: 
   - maker
 ---
@@ -47,6 +44,6 @@ Follow these steps to add a new account in Dataverse when you receive an email t
    ![Card that shows all columns for the add a new row action except advanced options.](../media/add-row/show-all-advanced.png "Card that shows all columns for the Add a new row action except advanced options")
 
 >[!TIP]
->You can use outputs from previous triggers and actions in the **Dynamic content** selector, as shown in the following image, or modify them by building an expression as outlined in [Use expressions in flow actions](https://flow.microsoft.com/en-us/blog/use-expressions-in-actions/).<!-- Edit note: Try to avoid use of en-us. -->
+>You can use outputs from previous triggers and actions in the **Dynamic content** selector, as shown in the following image, or modify them by building an expression as outlined in [Use expressions in flow actions](https://make.powerautomate.com/blog/use-expressions-in-actions/).<!-- Edit note: Try to avoid use of en-us. -->
 
    ![Dynamic content.](../media/add-row/dynamic-content.png "Dynamic content")

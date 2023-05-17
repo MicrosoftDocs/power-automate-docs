@@ -1,51 +1,48 @@
 ---
 title: Install Power Automate silently
-description: See how to install Power Automate silently on your device.
+description: Learn how to install Power Automate for desktop without user intervention.
 author: georgiostrantzas
-ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 12/06/2022
-ms.author: gtrantzas
-ms.reviewer: pefelesk
+ms.topic: conceptual
+ms.date: 01/05/2023
+ms.author: pefelesk
+ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser
+ms.subservice: desktop-flow
+ms.service: power-automate
+ms.custom: bap-template
 ---
 
 # Install Power Automate silently
 
->[!NOTE]
->You can use the same installer for both [manual](install.md) and silent installation of Power Automate.
+You can use the same installer for both [manual](install.md) and silent installation of Power Automate. Silent installation means that no user intervention is required during installation.
 
-To install Power Automate silently:
-
-1. Download [Power Automate for desktop](https://go.microsoft.com/fwlink/?linkid=2102613).
+1. Download [Power Automate for desktop](https://go.microsoft.com/fwlink/?linkid=2102613). Save the file to your desktop or Downloads folder.
 
 1. Open the **Start** menu, search for **Command Prompt**, and then run it as administrator.
 
     :::image type="content" source="media/desktop-flows-setup/command-prompt.png" alt-text="Screenshot of the command prompt on the start menu.":::
 
-1. Use commands to navigate to the directory in which you've downloaded the Power Automate installer. This directory is usually the **Downloads** folder.
+1. Navigate to the directory to which you downloaded the Power Automate installer; for example:
 
    ```CMD
     cd C:\Users\Admin\Downloads\
    ```
 
-1. Run the following command to run the installer and complete the setup of Power Automate.
+1. Run the following command to run the installer silently:
 
    ```CMD
    Setup.Microsoft.PowerAutomate.exe -Silent -Install -ACCEPTEULA
    ```
 
    >[!IMPORTANT]
-   > You must provide the "-ACCEPTEULA" argument to indicate that you accept the [terms and conditions](/dynamics365/legal/slt-power-automate-desktop) for Power Automate.
+   > You must include the "-ACCEPTEULA" argument to indicate that you accept the [terms and conditions](/dynamics365/legal/slt-power-automate-desktop) for Power Automate.
 
-## Command line argument details
+## Command line arguments
 
-You can use the help menu of the command prompt to see all the available command line arguments for the Power Automate installation.
+You can use more arguments in the command line to customize the installation. Use the help menu to view command line arguments you can use.
 
 ```CMD
 Setup.Microsoft.PowerAutomate.exe -HELP
@@ -53,20 +50,20 @@ Setup.Microsoft.PowerAutomate.exe -HELP
 
 |Command|Description|
 |----|----|
-|-INSTALLPATH:Value|The full path of the installation folder that will be created. Default: <br />is `%PROGRAMFILES(X86)%\Power Automate`.|
-|-ALLOWOPTIONALDATACOLLECTION|Enables sending optional telemetry data to Microsoft.|
-|-DISABLEPADSHORTCUT|Doesn't create a shortcut for Power Automate for desktop.|
-|-DISABLETURNONRDP|Doesn't turn on Remote Desktop on the machine.|
-|-ACCEPTEULA|Accepts the end user license agreement needed for the installation.|
-|-RESTOREDEFAULTCONFIG|Restores to the default installation settings during an upgrade.|
-|-DONOTINSTALLPAD|Skips installing Power Automate for desktop.|
-|-DONOTINSTALLMACHINERUNTIME|Skips installing Power Automate machine-runtime app.|
-|-SKIPINSTALLINGJAVAAUTOMATION|Skips installing files that are required for enabling UI automation in Java applets.|
+| -INSTALLPATH:Value |Specify the full path of the installation folder that will be created. Default: `%PROGRAMFILES(X86)%\Power Automate`|
+| -ALLOWOPTIONALDATACOLLECTION |Enables sending optional usage data to Microsoft.|
+| -DISABLEPADSHORTCUT |Doesn't create a shortcut for Power Automate for desktop.|
+| -DISABLETURNONRDP |Doesn't turn on Remote Desktop on the machine.|
+| -ACCEPTEULA |Accepts the end user license agreement needed for the installation.|
+| -RESTOREDEFAULTCONFIG |Restores to the default installation settings during an upgrade.|
+| -DONOTINSTALLPAD |Doesn't install Power Automate for desktop.|
+| -DONOTINSTALLMACHINERUNTIME |Doesn't install Power Automate machine-runtime app.|
+| -SKIPINSTALLINGJAVAAUTOMATION |Doesn't install files that are required for enabling UI automation in Java applets.|
 
-Here's an example of a command line argument that installs Power Automate:
+Here's an example of a command that installs Power Automate silently in the folder My Programs\foo on the D: drive:
 
 ```CMD
-Setup.Microsoft.PowerAutomate.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
+Setup.Microsoft.PowerAutomate.exe -Silent -Install -ACCEPTEULA -INSTALLPATH: D:\My Programs\foo
 ```
 
 ## Update Power Automate silently
@@ -74,7 +71,7 @@ Setup.Microsoft.PowerAutomate.exe -SILENT -Install -ACCEPTEULA -INSTALLPATH: D:\
 To update Power Automate silently, use the same command line arguments that you use to install it.
 
 >[!NOTE]
->All your data and configuration, including telemetry, shortcuts, and more, are retained when you update Power Automate. Therefore, if you want to enable parameters previously disabled, you need to uninstall and reinstall Power Automate.
+>All your data and settings, including telemetry, shortcuts, and more, are retained when you update Power Automate. Therefore, if you want to change the settings that were enabled or disabled on installation, you need to uninstall and reinstall Power Automate.
 
 ## Uninstall Power Automate silently
 
@@ -87,8 +84,8 @@ Setup.Microsoft.PowerAutomate.exe -Silent -Uninstall
 ## Install an on-premises data gateway with PowerShell cmdlets
 
 > [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. To learn more, go to [Switch from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are deprecated except for China region. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
-To find information regarding how to install, configure, and manage a gateway using PowerShell cmdlets, go to [PowerShell Cmdlets for On-premises data gateway management](/powershell/gateway/overview). To use the presented cmdlets, you must run them from PowerShell 7.0.0 or higher with elevated permissions.
+To find information about how to install, configure, and manage a gateway using PowerShell cmdlets, go to [PowerShell Cmdlets for On-premises data gateway management](/powershell/gateway/overview). To use the cmdlets, you must run them from PowerShell 7.0.0 or higher with elevated permissions.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

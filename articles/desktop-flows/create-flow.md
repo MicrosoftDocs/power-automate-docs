@@ -4,10 +4,10 @@ description: See all the available ways to create Power Automate desktop flows.
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/02/2022
-ms.author: gtrantzas
-ms.reviewer: pefelesk
+ms.author: pefelesk
+ms.reviewer: gtrantzas
 contributors:
   - Flow
 search.audienceType: 

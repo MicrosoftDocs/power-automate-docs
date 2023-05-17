@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -16,8 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/27/2022
 ms.author: deonhe
-search.app: 
-  - Flow
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -54,7 +52,7 @@ With a gateway, you can connect to on-premises data over the following connectio
 * Administrative permissions on a gateway.
 
   You have these permissions by default for each gateway that you install. Also, an administrator of another gateway can grant you these permissions for that gateway.
-* A license that supports gateways. For more information, see the “Connectivity” section of the [pricing page](https://flow.microsoft.com/pricing/).
+* A license that supports gateways. For more information, see the “Connectivity” section of the [pricing page](https://make.powerautomate.com/pricing/).
 
 > [!TIP]
 > You can create a gateway and an on-premises connection for [any environment](environments-overview-maker.md).
@@ -65,7 +63,7 @@ To install a gateway, follow the steps in [Install an on-premises data gateway](
 
 ## View your gateways
 
-Sign in to [Power Automate](https://flow.microsoft.com), and then select **Data** > **Gateways** in the navigation pane on the left side.
+Sign in to [Power Automate](https://make.powerautomate.com), and then select **Data** > **Gateways** in the navigation pane on the left side.
 
 > [!NOTE]
 > If you created or were given access to a gateway in Power Apps, that gateway appears in the **My gateways** list in Power Automate.
