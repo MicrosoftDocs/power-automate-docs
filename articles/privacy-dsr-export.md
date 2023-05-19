@@ -145,7 +145,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 1. On the web or desktop, open [Microsoft Teams](https://teams.microsoft.com).
 1. Go to the **Approvals** app in Teams. Do this in one or two ways:
     - From the main search bar in Teams, search for **Approvals**, or 
-    - On the left panel in Teams, select the ellipses (...), and the search for or select **Approvals**.
+    - On the left panel in Teams, select the ellipses (...), and then search for or select **Approvals**.
 
 1. On the **Received** tab, select **Export** in the top right corner to export received approvals.
 1. Select the export dates, and then select **Export**.
