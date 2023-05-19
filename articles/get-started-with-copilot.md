@@ -14,7 +14,7 @@ ms.reviewer: angieandrews
 
 [This article is prerelease documentation and is subject to change.]
 
-Copilot in Power Automate allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. With Copilot, create a flow by describing what you need through multiple steps of conversation. Copilot stays with you from the beginning as you describe the requirements until you save and test the flow.
+Copilot in Power Automate allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. With Copilot, create a flow by describing what you need through multiple steps of conversation. Copilot is always available.
 
 Copilot can perform the following actions:
 

@@ -54,7 +54,7 @@ If you want to turn off Copilot within your organization, ask your Power Platfor
 
 Copilot is available only in the new designer. When editing a flow, you can choose to use the new designer or the old designer.
 
-As an OpenAI powered feature, the tenant admin can choose to disable it by disabling all OpenAI powered features in the tenant settings. If you open the new designer with Copilot, you can choose to hide it.
+As an Azure OpenAI powered feature, the tenant admin can choose to disable it by disabling all Azure OpenAI powered features in the tenant settings. If you open the new designer with Copilot, you can choose to hide it.
 
 ## See also
 
