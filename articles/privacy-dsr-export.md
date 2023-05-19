@@ -1,26 +1,15 @@
 ---
 title: Respond to personal data export requests (Azure AD)
 description: Learn about the resources available in Power Automate to help you meet your obligations to export customers' personal data under various privacy laws and regulations for users who authenticate using Azure AD.
-suite: flow
-services: ''
-documentationcenter: na
-author: MSFTMAN
-manager: KVIVEK
-ms.author: Deonhe
-ms.reviewer: gtrantzas
-editor: ''
-tags: ''
-ms.devlang: na
+author: hamenon-ms
+contributors:
+  - hamenon-ms
+  - v-aangie
+ms.author: hamenon
+ms.reviewer: angieandrews
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 04/18/2023
-search.app: 
-  - Flow
-  - Powerplatform
-search.audienceType: 
-  - admin
 ---
 # Respond to personal data export requests (Azure AD)
 
@@ -51,32 +40,21 @@ The following table summarizes where to find and export the personal data of a u
 
 ## Export a cloud flow
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
-
-1. In the left navigation pane, select **My flows**.
-
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. On the left navigation pane, select **My flows**.
 1. Select a flow, select **&hellip; More**, and then select **Export**.
-
-    :::image type="content" source="media/privacy-dsr-export/export-flow.png" alt-text="Screenshot of exporting a Power Automate flow.":::
-
 1. Select **Package (.zip)**.
 
-Your flow is downloaded as a zipped archive.
+    Your flow is downloaded as a zipped archive.
 
 ## Export run history
 
 Run history lists all executions of a cloud flow, including a run's status, start time, duration, and inputs and outputs.
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
-
-1. In the left navigation pane, select **My flows**.
-
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. On the left navigation pane, select **My flows**.
 1. Select a flow.
-
 1. In the **RUN HISTORY** pane, select **See all**.
-
-    :::image type="content" source="media/privacy-dsr-export/run-history.png" alt-text="Screenshot of a flow's run history.":::
-
 1. At the top of the page, select **Download CSV**.
 
 The run history is downloaded as a .csv file so that you can open it in Microsoft Excel or a text editor and analyze the results.
@@ -85,18 +63,14 @@ The run history is downloaded as a .csv file so that you can open it in Microsof
 
 The activity feed shows a history of a user's activities, flow execution failures, and notifications.
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
-
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
 1. Select the bell icon in the upper-right corner of the page, and then select **Show all activity**.
-
 1. Copy the contents of the **Activity** page and paste them into a document editor such as Microsoft Word.
 
 ## Export a user's connections
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
-
-1. Select the gear icon in the upper-right corner of the page, and then select **Connections**.
-
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. On the upper-right corner of the page, select the gear icon, and then select **Connections**.
 1. Copy the list, and then paste it into a document editor such as Microsoft Word.
 
 ## Export a user's connections using a PowerShell cmdlet
@@ -168,15 +142,17 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 
 ## Export a user's approval history
 
-1. Open [Microsoft Teams](https://teams.microsoft.com) on the web or desktop
+1. On the web or desktop, open [Microsoft Teams](https://teams.microsoft.com).
+1. Go to the **Approvals** app in Teams Do this in one or two ways:
+    - From the main search bar in Teams, search for **Approvals**, or 
+    - On the left panel in Teams, select the ellipses (...), and the search for or select **Approvals**.
 
-1. Navigate to the Approvals app in Teams, this can be done either from the main search bar in teams by searching for Approvals. Or by clicking the (... ellipses) in the left rail in Teams and searching for or clicking Approvals
+1. On the **Received** tab, select **Export** in the top right corner to export received approvals.
+1. Select the export dates, and then select **Export**.
+1. Select the **Sent** tab, and then select **Export** in the top right corner to export sent approvals.
+1. Select the export dates, and then select **Export**.
 
-1. Navigate to Received tab and click Export in the top right corner to Export Received Approvals
-
-1. Navigate to Sent tab and click Export in the top right corner to Export Sent Approvals
-
-Note you can also navigate to the [Power Automate portal](https://make.powerautomate.com) and go the Approvals page in the left rail, switch to history and manually copy approval contents for received and sent approvals by switching between the two filter in the top right corner of the page.
+Alternatively, you can go to [Power Automate](https://make.powerautomate.com), select **Approvals** in the left panel, and select the **History** tab. Then, you can manually copy approval contents for received and sent approvals. To make sure you get both, select the appropriate filter (**Received** or **Sent**) in the top right corner.
 
 ## Export a user's details using a PowerShell cmdlet
 
