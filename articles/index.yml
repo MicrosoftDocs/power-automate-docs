@@ -70,7 +70,7 @@ conceptualContent:
           url: ./run-scheduled-tasks.md
           itemType: overview
         - text: Instant flows
-          url: ./run-instant-flows.md
+          url: /mobile/run-instant-flows.md
           itemType: overview
     
     - title: Create desktop flows for RPA
