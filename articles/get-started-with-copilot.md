@@ -21,7 +21,6 @@ Copilot can perform the following actions:
 - Understand your intent, and create a flow based on the scenario prompt you provide.
 - Set up connections on your behalf.
 - Apply the necessary parameters in the flow based on your prompt.
-- The following triggers and actions are supported during this preview: Recurrence trigger, When a new email arrives trigger, Send an email action, Office 365 Calendar post item action, Teams post a message action, and Planner create a task action.
 - Respond to your requests to make changes to your flow, such as update actions and replace actions.
 - Answer questions about your flow and product. For example, you can ask Copilot questions about your flow like, *What does my flow do?* You can also ask Copilot product questions like, *How do I access child flows?* and *How do I access licesnses?*
 
