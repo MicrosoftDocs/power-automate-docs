@@ -1,26 +1,15 @@
 ---
 title: Respond to personal data deletion requests (Azure AD)
 description: Learn about the resources available in Power Automate to help you meet your obligations to delete customers' personal data under various privacy laws and regulations for users who authenticate using Azure AD.
-services: ''
-suite: flow
-documentationcenter: na
-author: MSFTMAN
-manager: KVIVEK
-ms.author: Deonhe
-ms.reviewer: gtrantzas
-editor: ''
-tags: ''
-ms.devlang: na
+author: hamenon-ms
+contributors:
+  - hamenon-ms
+  - v-aangie
+ms.author: hamenon
+ms.reviewer: angieandrews
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 04/14/2023
-search.app: 
-  - Flow
-  - Powerplatform
-search.audienceType: 
-  - admin
 ---
 
 # Respond to personal data deletion requests (Azure AD)
@@ -93,47 +82,42 @@ The following table summarizes where to find and delete a user's personal data i
 
 ### Reassign and copy the user's flows
 
-If a departing user, or a user who has requested the deletion of personal data, has created flows that are widely used in your organization, don't delete them. Copy them, assign the copies to new owners, and establish new connections. Copying the flows deletes personal identifier linkages to the departing user.
+If a departing user, or a user who has requested the deletion of personal data has created flows that are widely used in your organization, don't delete them. Copy them, assign the copies to new owners, and establish new connections. Copying the flows deletes personal identifier linkages to the departing user.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the environment that contains the user's flows.
-
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select the environment that contains the user's flows.
 1. Select **Resources** > **Flows**, and then select a flow to reassign.
-
 1. Select **Manage sharing**, and add yourself as an owner.
-
 1. Select **Save**.
-
-1. Sign in to [Power Automate](https://flow.microsoft.com/), select **My flows**, and then select **Team flows**.
-
-1. In the list of flows, select the flow menu (**&hellip;**) for the flow you want to copy, and then select **Save As**.
-
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. Select **My flows** > **Team flows**.
+1. In the list of flows, select the flow menu (**&vellip;**) for the flow you want to copy, and then select **Save As**.
 1. Establish any connections that are required, and then select **Continue**.
-
-1. Enter a new name for the flow.
-
-1. Select **Save**.
-
+1. Enter a new name for the flow, and then select **Save**.
 1. Turn on the copied flow.
-
-Finally, delete the original flow.
-
+1. Delete the original flow.
 1. Select the flow menu (**&hellip;**), and then select **Delete**.
-
 1. Select **Delete** again when prompted.
 
 ### Delete the user's approval history
 
  Approval responses include personal information in the form of approval assignments and comments.
 
-1. Sign in to [PowerApps](https://make.powerapps.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com) or [PowerApps](https://make.powerapps.com/).
+1. On the left navigation pane, select **Data**, and then select **Tables**.
+1. Selct the **All** tab.
+1. Find the **Approvals** table and select the vertical ellipsis (&vellip;).
+1. Select **Edit** or **Edit in new tab**.
 
-1. In the left navigation pane, select **Data**, and then select **Tables**.
+    Alternatively, can select **Edit data in Excel** to work in Excel to delete the records.
 
-1. Find the **Flow Approval** table, select the table menu (**&hellip;**), and then open the table in Microsoft Excel.
+1. If the **Owner** column doesn't appear, select the **+**(**number**) **more** column heading > **Owner** > **Save**.
+1. Select the **Owner** column heading, and then select **Filter by**.
+1. Enter the name of the user whose data you want to delete, and then select **Delete records**.
+1. Go back to main tables list mentioned in you found in step 3.
+1. Open the **Approval Requests** table and the **Approval Response** table, and repeat the steps 4 through 8 for those tables.
 
-1. Search for and delete the user's approval history.
-
-[Learn more about executing data requests against Dataverse customer data](/power-platform/admin/common-data-service-gdpr-dsr-guide).
+To learn more, go to [Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data](/power-platform/admin/common-data-service-gdpr-dsr-guide).
 
 ### Delete connections created by the user
 
@@ -211,7 +195,7 @@ Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector
 
 ### Delete the user's permissions to shared custom connectors
 
-Users may delete their own custom connector role assignments, and admins may delete users' custom connector role assignments, using PowerShell cmdlets. [Learn more about Power Apps PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
+Users cam delete their own custom connector role assignments, and admins can delete users' custom connector role assignments, using PowerShell cmdlets. [Learn more about Power Apps PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
 
 The following PowerShell script deletes custom connector role assignments for the user who runs the script:
 
@@ -240,9 +224,8 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-Ad
 
 As an admin responding to a user's data deletion request, you have two choices for each environment the user created:
 
-1. If you determine that the environment isn't being used by anyone else in your organization, you can delete it.
-
-1. If you determine that the environment is still required, you can add yourself or another user in your organization as an Environment Admin.
+- If you determine that the environment isn't being used by anyone else in your organization, you can delete it.
+- If you determine that the environment is still required, you can add yourself or another user in your organization as an Environment Admin.
 
 > [!IMPORTANT]
 > Deleting an environment permanently deletes all resources in it, including apps, flows, connections, etc. Always review the contents of an environment before deleting it.
@@ -274,11 +257,11 @@ The final step is to delete the user's Azure AD account.
 
 If the user is a member of an unmanaged tenant, you can close the user's account from the [Work and School Privacy portal](/azure/active-directory/enterprise-users/users-close-account).
 
-To determine whether or not you are a user of a managed or unmanaged tenant, perform the following actions:
+To determine if you're a user of a managed or unmanaged tenant, perform the following actions:
 
 1. Open the following URL in a browser, making sure to replace your email address in the URL:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 
-1. If you are a member of an **unmanaged tenant** then you will see an `"IsViral": true` in the response.
+1. If yo're a member of an **unmanaged tenant**, then you'll see an `"IsViral": true` in the response.
 
     ```
         {
@@ -292,6 +275,6 @@ To determine whether or not you are a user of a managed or unmanaged tenant, per
         }
     ```
 
-1. Otherwise, you belong to a managed tenant.
+    Otherwise, you belong to a managed tenant.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
