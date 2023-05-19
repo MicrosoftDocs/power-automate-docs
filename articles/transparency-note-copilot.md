@@ -59,5 +59,6 @@ As an Azure OpenAI powered feature, the tenant admin can choose to disable it by
 ## See also
 
 - [Get started with Copilot ](get-started-with-copilot.md)
+- [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
