@@ -14,19 +14,22 @@ ms.custom: template-how-to
 
 Create a cloud flow to view read-only rows in long term data retention in Microsoft Dataverse. For more information about long term data retention in Dataverse, go to [Dataverse long term data retention overview (preview)](/power-apps/maker/data-platform/data-retention-overview).
 
-The cloud flow described here creates and sends an email that includes an Excel file containing the retained data. If there are retained attachments associated with rows from Dataverse, they are also included in the Excel file.
+The cloud flow described here creates and sends an email that includes an Excel file containing the retained data. If there are retained attachments associated with rows from Dataverse, they are also included as links in the Excel file.
 
 > [!IMPORTANT]
 > Long term retained data is a preview feature in Microsoft Dataverse.
 
 Creating the flow requires the following high level steps:
 
-1. Pass query parameters in a FetchXML to create an Excel file with retained data.
+1. Pass query parameters in FetchXML to create an Excel file with retained data, using a Dataverse action named **Create Excel from RetainedData**.
 1. Set a condition to determine if the Excel file has been created. Download the Excel file. Pass the required retrieval criteria parameters (table and FetchXML).
-1. Create an Excel file with the retrieved data.
-1. Send an email to recipients with the Excel file attached.  
+1. When the Excel file has been created:
+   - Set an action to download the Excel file.
+   - Set an action to send an email to recipients with the Excel file attached.
+   - Set an action to delete the Excel file from the Dataverse system table. This step is recommended to avoid Excel documents consuming database storage.
 
-Make sure to check your junk mail folder if you don’t see an email after running a flow successfully.
+> [!TIP]
+> If you don’t see an email after running a flow successfully, check your junk mail folder.
 
 ## Create the query and download FetchXML
 
@@ -49,11 +52,12 @@ The following steps show you how to use an instant flow to create the Excel file
    :::image type="content" source="media/data-retention-flow/data-retention-flow1.png" alt-text="For the action, select perform background operation.":::
 
 1. Enter the following information: 
-   - **Catalog**: **ALL**
-   - **Category**: **ALL**
+   - **Catalog**: **Microsoft Dataverse Common**
+   - **Category**: **Retained Data**
    - **Table name**: **(none)**
-   - **Action name**: Select **Enter custom value** and then enter `Create ExportedExcel from Retained Data query` <!-- Need more info because this isn't something that can be typed or selected.-->
-   - **FetchXml**: Paste in the FetchXML created earlier.
+   - **Action name**: Select **Enter custom value** and then enter `Create Excel from RetainedData`
+   - LayoutXML: Leave blank
+   - **FetchXml**: Paste in the FetchXML created earlier from the advanced find query.
    :::image type="content" source="media/data-retention-flow/data-retention-flow2.png" alt-text="Create action that includes your retained data query FetchXML":::
 1. Select **New step**.
 1. For **Choose an operation**, select **Condition**, and then select the **Expression** tab.
@@ -64,8 +68,8 @@ The following steps show you how to use an instant flow to create the Excel file
    :::image type="content" source="media/data-retention-flow/data-retention-flow3.png" alt-text="Add and action for the condition":::
 1. On the **Actions** tab, select **Download a file or an image**.
 1. Select the following values:
-   - **Table name**: **Exported Excels**
-   - **Row ID**: Select **Add dynamic content**, and then select **ExportRetainedDataResponse ExportedExcelId**
+   - **Table name**: **RetainedData Excels**
+   - **Row ID**: Select **Add dynamic content**, and then select **ExportRetainedDataResponse ExportedExcelID**
    - **Column name**: **ExcelContent**
    :::image type="content" source="media/data-retention-flow/data-retention-flow4.png" alt-text="Add values for Excel download file":::
 
@@ -78,5 +82,15 @@ The following steps show you how to use an instant flow to create the Excel file
    - **Attachments Name -1**: Enter a name for the attachment, such as *accountsretained2020.xls*.
    - **Attachments content**: On the **Add dynamic content** tab, select **File or image content**.
    :::image type="content" source="media/data-retention-flow/data-retention-flow5.png" alt-text="Set values for email with Excel attachment":::
+1. Select add an action  to delete the Excel file created and saved in the Dataverse table **RetainedData excels**:
+   - Select an operation> **Microsoft Dataverse**.
+   - Under **Actions**, select **Delete a row**.
+   - Choose the following values:
+      - **Table name**: **RetainedData Excels**
+      - **Row ID**: **ExportRetainedDataResponse ExportedExcelID**
+1. Select **Save**
+1. Run the flow.
 
-1. Select **Save**, and then select **Test** to run the flow.
+The email recipients receive an email with the attached Excel worksheet containing the retained data rows.
+
+
