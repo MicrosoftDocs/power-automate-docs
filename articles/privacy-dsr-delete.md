@@ -275,6 +275,6 @@ To determine if you're a user of a managed or unmanaged tenant, perform the foll
         }
     ```
 
-1. Otherwise, you belong to a managed tenant.
+    Otherwise, you belong to a managed tenant.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
