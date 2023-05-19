@@ -43,7 +43,7 @@ To create a work queue:
 5. (Optional) Enter a **description** for the work queue.
 6. (Optional) Enter a default lifespan value for work queue items in the **Item default time to live (in minutes)** field.
    > [!NOTE]
-   > If you set a **default time to live** for a work queue, any item you add to the queue without an explicit expiration date will be given an expiration time based on that default value. So, if you set the default time to live to 30 minutes, then an item added at 2:00 pm will automatically be given an expiration time of 2:30 pm. If that item hasn't been processed by the time its expiration time comes around, it will be skipped over for all following dequeuing requests.
+   > If you set a default time to live for a work queue, any item added without an explicit expiration date will expire after the default time has elapsed. So if you set the **Item default time to live** to 30 minutes, an item added at 2:00 pm will expire at 2:30 pm.
 
 ## Edit a work queue
 
