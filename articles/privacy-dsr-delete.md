@@ -82,7 +82,7 @@ The following table summarizes where to find and delete a user's personal data i
 
 ### Reassign and copy the user's flows
 
-If a departing user, or a user who has requested the deletion of personal data, has created flows that are widely used in your organization, don't delete them. Copy them, assign the copies to new owners, and establish new connections. Copying the flows deletes personal identifier linkages to the departing user.
+If a departing user, or a user who has requested the deletion of personal data has created flows that are widely used in your organization, don't delete them. Copy them, assign the copies to new owners, and establish new connections. Copying the flows deletes personal identifier linkages to the departing user.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select the environment that contains the user's flows.
@@ -261,7 +261,7 @@ To determine if you're a user of a managed or unmanaged tenant, perform the foll
 
 1. Open the following URL in a browser, making sure to replace your email address in the URL:[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 
-1. If you are a member of an **unmanaged tenant** then you'll see an `"IsViral": true` in the response.
+1. If yo're a member of an **unmanaged tenant**, then you'll see an `"IsViral": true` in the response.
 
     ```
         {
