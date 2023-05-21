@@ -39,4 +39,9 @@ Widgets can only run instant flows that you created. They can't run other kinds 
 
     :::image type="content" source="../media/android/widget-run.png" alt-text="Screenshot of an instant flow widget placed on a device home screen.":::
 
+## Limitation
+
+The widget will show only the top eight (8) flows.
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

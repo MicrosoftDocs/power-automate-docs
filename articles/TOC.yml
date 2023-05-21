@@ -48,16 +48,16 @@
       href: ./mobile/overview-mobile.md
     - name: Create flows from your phone
       href: ./mobile-create-flow.md
-    - name: Run instant flows
-      href: ./mobile/run-instant-flows.md
+    - name: Manage cloud flows
+      href: ./mobile/manage-cloud-flows.md 
     - name: Create widgets
       href: ./mobile/widgets.md
     - name: Manage approvals
       href: ./mobile/manage-approvals.md
     - name: Receive notifications
       href: ./mobile/notifications.md
-    - name: Manage cloud flows
-      href: ./mobile/manage-cloud-flows.md
+    - name: Monitor flow activity on a phone
+      href: mobile-monitor-activity.md
   - name: How to
     items:
     - name: Add an action
@@ -293,8 +293,6 @@
       href: triggers-troubleshoot.md
     - name: Watch a cloud flow
       href: see-a-flow-run.md
-    - name: Monitor flow activity on a phone
-      href: mobile-monitor-activity.md
       displayName: Monitor flow activity on mobile devices
     - name: Troubleshoot a cloud flow
       href: fix-flow-failures.md
