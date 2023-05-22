@@ -146,19 +146,22 @@ Learn how to create a generalized VM image in Azure in [Upload a generalized Win
 
 1. Once you've created an Azure Compute Gallery, create an image definition following the steps in [Create an image definition and an image version](/azure/virtual-machines/image-version). You should create the image in the exact location where we deploy your hosted machine group. You can find the following mapping with your environment Geo:
 
-    - US: West US
-    - Europe: North Europe
-    - Canada: Canada Central
+    - Asia: East Asia
     - Australia: Australia East
     - Brazil: Brazil South
+    - Canada: Canada Central
+    - Europe: North Europe
     - France: France Central
-    - India: Central India
     - Germany: Germany West Central
-    - Switzerland: Switzerland North
+    - India: Central India
     - Japan: Japan East
-    - UK: UK West
-    - Asia: East Asia
+    - Korea: Korea Central
     - Norway: Norway East
+    - South Africa - South Africa North
+    - Switzerland: Switzerland North
+    - United Arab Emirates: UAE North
+    - United Kingdom: UK West
+    - United States: West US
 
 ### Share the Azure compute gallery with Power Automate Hosted Machine Groups service principal
 
@@ -423,24 +426,22 @@ This section presents all the limitation of hosted machine groups.
 
 The following list displays all the supported geographies in the public clouds:
 
-- United States
-- Germany
-- Brazil
-- Canada
-- Europe
-- France
-- Asia Pacific
-- Australia
-- Japan
-- India
-- United Kingdom
-- Switzerland
-- Norway
-
-Hosted machine groups aren't yet available in the following geographies:
-
-- United Arab Emirates
-- Korea
+    - Asia
+    - Australia
+    - Brazil
+    - Canada
+    - Europe
+    - France
+    - Germany
+    - India
+    - Japan
+    - Korea
+    - Norway
+    - South Africa
+    - Switzerland
+    - United Arab Emirates
+    - United Kingdom
+    - United States
 
 
 The following list displays all supported sovereign clouds:
@@ -449,7 +450,6 @@ The following list displays all supported sovereign clouds:
 - Department of Defense (DoD)
 
 Hosted machine groups aren't yet available in the following sovereign cloud:
-
 - China
 
 ### Sovereign clouds limitations for hosted machine groups
@@ -475,7 +475,7 @@ The number of hosted machine groups is limited to 10 for each environment. If yo
 
 ### Limit on the number of bots per hosted machine group
 
-The maximum number of hosted bots per hosted machine group is limited to 10.
+The maximum number of hosted bots per hosted machine group is limited to 50.
 
 ### Delete unused resources
 
