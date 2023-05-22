@@ -4,13 +4,10 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/28/2023
+ms.date: 05/22/2023
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
-search.audienceType: 
-  - flowmaker
-  - enduser
 ---
 
 # Hosted machine group
@@ -31,9 +28,9 @@ Here are some of the key features of hosted machine group:
 
 To use hosted machine group, you need the following licensing option:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate hosted RPA add-on**.
+Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate hosted RPA add-on**.
 
-    You need to assign to your environment as many add-ons as the number of hosted bots you want to run in parallel in your environment.
+You need to assign to your environment as many add-ons as the number of hosted bots you want to run in parallel in your environment.
 
 ### Trial licenses for evaluation
 
@@ -213,7 +210,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Select one of the images that you've access from the Azure Compute Gallery.
 
-:::image type="content" source="media/hosted-machine-groups/new-custom-vm-image.png" alt-text="Screenshot of dialog to create a new custom VM image.":::
+    :::image type="content" source="media/hosted-machine-groups/new-custom-vm-image.png" alt-text="Screenshot of dialog to create a new custom VM image.":::
 
 > [!NOTE]
 > The image needs to be replicated in the same Azure region as the hosted machine.
@@ -232,9 +229,9 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Select the names of the persons and choose with which permissions they can access the image.
 
-1. Select **Save**.
+    :::image type="content" source="media/hosted-machine-groups/share-custom-vm-image.png" alt-text="Screenshot of the Manage access dialog of the VM image.":::
 
-:::image type="content" source="media/hosted-machine-groups/share-custom-vm-image.png" alt-text="Screenshot of the Manage access dialog of the VM image.":::
+1. Select **Save**.
 
 > [!NOTE]
 > When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
@@ -247,27 +244,27 @@ Once you've created your hosted machine group in an environment, you can view it
 1. Go to **Monitor** > **Machines**.
 1. Select **Machine groups**.
 
-The list contains both hosted machine groups and standard machine groups. For each item in the list, you can see:
+    The list contains both hosted machine groups and standard machine groups. For each item in the list, you can see:
 
-- The name of the item.
-- The description of the item.
-- The number of the machines in the group (only for standard machine groups).
-- The number of flows running in the item.
-- The number of flows queued in the item.
-- The type of access you've to the item.
-- The owner of the item.
+        - The name of the item.
+        - The description of the item.
+        - The number of the machines in the group (only for standard machine groups).
+        - The number of flows running in the item.
+        - The number of flows queued in the item.
+        - The type of access you've to the item.
+        - The owner of the item.
 
-:::image type="content" source="media/hosted-machine-groups/view-machine-groups.png" alt-text="Screenshot of the available machine groups.":::
+    :::image type="content" source="media/hosted-machine-groups/view-machine-groups.png" alt-text="Screenshot of the available machine groups.":::
 
-Selecting a hosted machine group in the list will take you to the machine group's details page where you can:
+    Selecting a hosted machine group in the list will take you to the machine group's details page where you can:
 
-- View and edit the details of the machine group.
-- Monitor the machine group's run queue.
-- View past runs.
-- List existing connections referencing the machine group.
-- View provisioning errors on the machine group, if any.
-- Manage access by sharing (or not) the machine group.
-- Delete the machine group.
+        - View and edit the details of the machine group.
+        - Monitor the machine group's run queue.
+        - View past runs.
+        - List existing connections referencing the machine group.
+        - View provisioning errors on the machine group, if any.
+        - Manage access by sharing (or not) the machine group.
+        - Delete the machine group.
 
 ## Share hosted machine groups
 
@@ -322,13 +319,13 @@ To monitor your bots:
 
 1. Select one of your hosted machine groups.
 
-In the following example, two bots are available to pick up the first two desktop flows in the queue, and three other desktop flows are queued. The desktop flow runs are marked as **Running** or **Queued** to indicate their state.
+    In the following example, two bots are available to pick up the first two desktop flows in the queue, and three other desktop flows are queued. The desktop flow runs are marked as **Running** or **Queued** to indicate their state.
 
-:::image type="content" source="media/hosted-machine-groups/hosted-machine-groups-monitoring.png" alt-text="Screenshot of some queued desktop flows.":::
+    :::image type="content" source="media/hosted-machine-groups/hosted-machine-groups-monitoring.png" alt-text="Screenshot of some queued desktop flows.":::
 
-After a few minutes, another bot is provisioned to run a third flow as the queue is large enough.
+    After a few minutes, another bot is provisioned to run a third flow as the queue is large enough.
 
-:::image type="content" source="media/hosted-machine-groups/hosted-machine-groups-monitoring-new-bot.png" alt-text="Screenshot of the queued desktop flows after a new bot has been provisioned.":::
+    :::image type="content" source="media/hosted-machine-groups/hosted-machine-groups-monitoring-new-bot.png" alt-text="Screenshot of the queued desktop flows after a new bot has been provisioned.":::
 
 ## Load balance hosted machine group
 
@@ -350,7 +347,7 @@ For instance, you may have two groups of bots, one for your sales automations an
 
 1. Select **Edit details** at the top of the page.
 
-:::image type="content" source="media/hosted-machine-groups/edit-hosted-machine-group.png" alt-text="Screenshot of the Edit details of a hosted machine group.":::
+    :::image type="content" source="media/hosted-machine-groups/edit-hosted-machine-group.png" alt-text="Screenshot of the Edit details of a hosted machine group.":::
 
 ## Permissions based on security roles
 
@@ -402,9 +399,11 @@ The work or school accounts feature is enabled by default. System admins and env
 
 1. Under **Hosted RPA**, select the toggle for **Enable work or school accounts for hosted machine groups** to disable or enable this feature.
 
+    :::image type="content" source="media/hosted-machine-groups/enable-work-school-accounts-hosted-machine-groups-option.png" alt-text="Screenshot of the Enable work or school accounts for hosted machine groups option in the tPower Platform admin center.":::
+
 1. Select **Save**.
 
-:::image type="content" source="media/hosted-machine-groups/enable-work-school-accounts-hosted-machine-groups-option.png" alt-text="Screenshot of the Enable work or school accounts for hosted machine groups option in the tPower Platform admin center.":::
+
 
 > [!NOTE]
 > Disabling this feature at the environment level will remove the **Work or school account** option in the hosted machine group creation wizard. Also, it will prevent any desktop flows from running using hosted machine groups configured with work or school accounts.
