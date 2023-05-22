@@ -14,7 +14,7 @@ ms.custom: template-how-to
 
 Create a cloud flow to view read-only rows in long term data retention in Microsoft Dataverse. For more information about long term data retention in Dataverse, go to [Dataverse long term data retention overview (preview)](/power-apps/maker/data-platform/data-retention-overview).
 
-The cloud flow described here creates and sends an email that includes an Excel file containing the retained data. If there are retained attachments associated with rows from Dataverse, they are also included as links in the Excel file.
+The cloud flow described here creates and sends an email that includes an Excel file containing the retained data. If there are retained attachments associated with rows from Dataverse, they are also included as links in the Excel file. For more about the privileges required to run this flow, go to [View long term retained data in Microsoft Dataverse](/power-apps/maker/data-platform/data-retention-view)
 
 > [!IMPORTANT]
 > Long term retained data is a preview feature in Microsoft Dataverse.
@@ -56,16 +56,16 @@ The following steps show you how to use an instant flow to create the Excel file
    - **Category**: **Retained Data**
    - **Table name**: **(none)**
    - **Action name**: Select **Enter custom value** and then enter `Create Excel from RetainedData`
-   - LayoutXML: Leave blank
    - **FetchXml**: Paste in the FetchXML created earlier from the advanced find query.
+   - LayoutXML: Leave blank
    :::image type="content" source="media/data-retention-flow/data-retention-flow2.png" alt-text="Create action that includes your retained data query FetchXML":::
 1. Select **New step**.
 1. For **Choose an operation**, select **Condition**, and then select the **Expression** tab.
 1. Add the following expression:
-   - **outputs**: `('Perform_a_background_operation_(preview)')?['body/backgroundOperationStatusCode’]`
+   - `outputs('Perform_a_background_operation_(preview)')?['body/backgroundOperationStatusCode’]`
    - **is equal to**: *30*
+   :::image type="content" source="media/data-retention-flow/data-retention-flow3.png" alt-text="Add expression to flow.":::
 1. In the **If yes** box, select **Add an action**.
-   :::image type="content" source="media/data-retention-flow/data-retention-flow3.png" alt-text="Add and action for the condition":::
 1. On the **Actions** tab, select **Download a file or an image**.
 1. Select the following values:
    - **Table name**: **RetainedData Excels**
@@ -73,7 +73,7 @@ The following steps show you how to use an instant flow to create the Excel file
    - **Column name**: **ExcelContent**
    :::image type="content" source="media/data-retention-flow/data-retention-flow4.png" alt-text="Add values for Excel download file":::
 
-1. On the **If yes** condition, select **Add action** to add another action that sends an email with the Excel file attachment.
+1. Select **Add action** to add another action that sends an email with the Excel file attachment.
 1. For **Choose an operation**,  select **Office 365 Outlook**, and the for the action select **Send an email (V2)**.
 1. Enter the following required values for the email.
    - **To**: Enter a valid email address for the email recipient.
@@ -87,7 +87,7 @@ The following steps show you how to use an instant flow to create the Excel file
    - Under **Actions**, select **Delete a row**.
    - Choose the following values:
       - **Table name**: **RetainedData Excels**
-      - **Row ID**: **ExportRetainedDataResponse ExportedExcelID**
+      - **Row ID**: Select **Add dynamic content**, and then select **ExportRetainedDataResponse ExportedExcelID**.
 1. Select **Save**
 1. Run the flow.
 
