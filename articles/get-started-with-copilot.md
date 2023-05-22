@@ -22,7 +22,7 @@ Copilot can perform the following actions:
 - Set up connections on your behalf.
 - Apply the necessary parameters in the flow based on your prompt.
 - Respond to your requests to make changes to your flow, such as update actions and replace actions.
-- Answer questions about your flow and product. For example, you can ask Copilot questions about your flow like, *What does my flow do?* You can also ask Copilot product questions like, *How do I access child flows?* and *How do I access licesnses?*
+- Answer questions about your flow and product. For example, you can ask Copilot questions about your flow like, *What does my flow do?* You can also ask Copilot product questions like, *How do I access child flows?* and *How do I access licenses?*
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -42,29 +42,33 @@ Follow these steps to create a flow using Copilot.
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Start describing your automation scenario.
 
-    :::image type="content" source="./media/get-started-with-copilot/copilot-home.png" alt-text="Screenshot of the 'Home' screen, where you can start building your flow with Copilot.":::
-
     Alternatively, you can select **Create** > **Describe it to design it (preview)**.
 
-1. In the **Let’s make a flow. What should it do?** field, describe your automation scenario. As you start typing, you’re presented suggestions to craft your scenario.
 1. Select a suggestion or type your own scenario.
+
+    Copilot presents an AI generated flow suggestion.
+
+    :::image type="content" source="./media/get-started-with-copilot/copilot-home-example.png" alt-text="Screenshot of the 'Home' screen, where you can start building your flow with Copilot.":::
 
     To learn how to write a good prompt, go to [How to write a good prompt](#how-to-write-a-good-prompt) in this article.
 
-    :::image type="content" source="./media/get-started-with-copilot/copilot-describe.png" alt-text="Screenshot of the 'Let's make a flow. What should it do?' screen, where you can select a suggestion or type your own scenario.":::
+1. To accept the flow that Copilot created for you, select **Next**.
 
-1. To confirm the layout of the flow Copilot created for you, select **Enter**. 
+   If you want to see different suggestions, you can update your prompt in this step. Alternatively, if you want to see other options, select **This isn't what I'm looking for**.
 
-    You can also update your prompt to update the flow layout in this step.
-
-1. Verify that the flow fits your requirement, and then select **Next**.
 1. Review your connected apps and services, and then select **Next**.
+
+1. To finalize your flow, configure the required settings, and then select **Create flow**.
 
     The AI-powered Copilot in Power Automate designer opens with your flow.
 
     :::image type="content" source="./media/get-started-with-copilot/designer.png" alt-text="Screenshot of the Power Automate designer with your flow.":::
 
-1. On the panel to the right, follow the Copilot suggestions to complete flow setup, or make edits to your flow using Copilot.
+1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, or make edits to your flow using Copilot.
+
+1. When your flow is complete, select **Save this flow**.
+
+1. Once your flow is saved, we recommend that you test it. Do this by selecting **Test** in the upper-right corner.
 
 ## How to write a good prompt
 
@@ -130,6 +134,7 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
 - Copilot has limited support to create looping constructs (for example, Apply to each, do until).
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
 - You can’t use Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
+- Copilot supports English language only for models.
 
 ### How do I disable Copilot in Power Automate?
 
