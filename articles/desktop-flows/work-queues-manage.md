@@ -7,18 +7,12 @@ ms.author: appapaio
 ms.reviewer: 
 contributors:
 author: rpapostolis
-search.audienceType: 
-  - flowmaker
-  - enduser
 ---
 # Manage work queues (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 Power Automate provides rich user experiences and features that allow you to efficiently and centrally manage work queues within your environments.
-
-> [!IMPORTANT]
-> This is a preview feature.
 
 ## View work queues
 
@@ -43,7 +37,7 @@ To create a work queue:
 5. (Optional) Enter a **description** for the work queue.
 6. (Optional) Enter a default lifespan value for work queue items in the **Item default time to live (in minutes)** field.
    > [!NOTE]
-   > If you set a **default time to live** for a work queue, any item you add to the queue without an explicit expiration date will be given an expiration time based on that default value. So, if you set the default time to live to 30 minutes, then an item added at 2:00 pm will automatically be given an expiration time of 2:30 pm. If that item hasn't been processed by the time its expiration time comes around, it will be skipped over for all following dequeuing requests.
+   > If you set a default time to go live for a work queue, any item added without an explicit expiration date will expire after the default time has elapsed. So if you set the **Item default time to live** to 30 minutes, an item added at 2:00 PM will expire at 2:30 PM.
 
 ## Edit a work queue
 
@@ -70,14 +64,14 @@ To share a work queue:
 
 ## Delete a work queue
 
-   > [!CAUTION]
-   > When you delete a work queue, all related records, including work queue items and their processing history, are permanently deleted.
-
 To delete a work queue:
 
 1. In the work queue list, select the work queue you would like to delete.
 2. Select **Delete work queue** on the toolbar.
 3. In the delete confirmation dialog, select **Delete**.
+
+> [!CAUTION]
+> When you delete a work queue, all related records, including work queue items and their processing history, are permanently deleted.
 
 ## Create work queue items
 
