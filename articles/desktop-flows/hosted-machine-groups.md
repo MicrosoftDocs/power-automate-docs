@@ -425,22 +425,22 @@ This section presents all the limitation of hosted machine groups.
 ### Geographical availabilities/restrictions
 
 The following list displays all the supported geographies in the public clouds:
-    - Asia
-    - Australia
-    - Brazil
-    - Canada
-    - Europe
-    - France
-    - Germany
-    - India
-    - Japan
-    - Korea
-    - Norway
-    - South Africa
-    - Switzerland
-    - United Arab Emirates
-    - United Kingdom
-    - United States
+- Asia
+- Australia
+- Brazil
+- Canada
+- Europe
+- France
+- Germany
+- India
+- Japan
+- Korea
+- Norway
+- South Africa
+- Switzerland
+- United Arab Emirates
+- United Kingdom
+- United States
 
 
 The following list displays all supported sovereign clouds:
