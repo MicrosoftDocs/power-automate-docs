@@ -150,7 +150,7 @@ To disable Copilot for your *environment*, follow these steps.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. On the menu to the left, select **Environment**, and then select the environment.
-1. On the command bar, select **Settings**.
+1. On the command bar, select **Settings** > **Product** > **Features**.
 1. Set the toggle next to **Copilot** to **Off**.
 
 ### See also
@@ -158,3 +158,4 @@ To disable Copilot for your *environment*, follow these steps.
 - [Transparency notes for Power Automate](transparency-note.md)
 - [Transparency note for Copilot in Power Automate](transparency-note-copilot.md) 
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
+
