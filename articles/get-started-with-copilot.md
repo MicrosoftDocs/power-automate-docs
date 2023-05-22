@@ -42,16 +42,15 @@ Follow these steps to create a flow using Copilot.
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Start describing your automation scenario.
 
+    As you're typing, Copilot shows you a list of AI generated suggested flow descriptions.
+
     Alternatively, you can select **Create** > **Describe it to design it (preview)**.
-
-1. Select a suggestion or type your own scenario.
-
-    Copilot presents an AI generated flow suggestion.
 
     :::image type="content" source="./media/get-started-with-copilot/copilot-home-example.png" alt-text="Screenshot of the 'Home' screen, where you can start building your flow with Copilot.":::
 
     To learn how to write a good prompt, go to [How to write a good prompt](#how-to-write-a-good-prompt) in this article.
 
+1. Select a suggestion or use the scenario you created in step 1.
 1. To accept the flow that Copilot created for you, select **Next**.
 
    If you want to see different suggestions, you can update your prompt in this step. Alternatively, if you want to see other options, select **This isn't what I'm looking for**.
