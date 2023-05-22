@@ -546,9 +546,9 @@ A hosted machine stores limited metadata in the geography of your tenant's count
 
 1. Under **Hosted RPA**, select the toggle for **Enable cross-geo support for hosted machines** to disable or enable this feature.
 
-1. Select **Save**.
+    :::image type="content" source="media/hosted-machines/enable-cross-geo-support-hosted machines.png" alt-text="Screenshot of the Enable cross-geo support for hosted machines option in the Power Platform admin center.":::
 
-:::image type="content" source="media/hosted-machines/enable-cross-geo-support-hosted machines.png" alt-text="Screenshot of the Enable cross-geo support for hosted machines option in the Power Platform admin center.":::
+1. Select **Save**.
 
 > [!NOTE]
 > Disabling this feature at the environment level will restrict creation of hosted machines when your tenant's country or region on Azure falls within the same scope of the region for your Power Automate environment.
