@@ -124,8 +124,8 @@ For this scenario, we extend the previous one by adding a desktop flow processin
 
 1. Go back and edit the *My first work queue flow*.
 2. Add a new action right after the **Parse JSON** action and search for **Desktop flows** connector and the **Run a flow built with Power Automate for desktop**.
-3. In the desktop flow dropdown, either choose and edit an existing desktop flow or select **+ Create a new desktop flow** and follow the instruction on screen to create the desktop flow and launch Power Automate Desktop. If you're new to desktop flows, you can learn more [here](create-flow.md).
-4. Once the Power Automate desktop designer opens, create two **input** variables called **WorkQueueItemValue** and **WorkQueueItemName** and then add two **output** variables called **ProcessingNotes** and **ProcessingStatus** respectively, all of which should have **Text** as their data type.  
+3. In the desktop flow dropdown, either choose and edit an existing desktop flow or select **+ Create a new desktop flow** and follow the instruction on screen to create the desktop flow and launch Power Automate for desktop. If you're new to desktop flows, you can learn more [here](create-flow.md).
+4. Once the Power Automate for desktop designer opens, create two **input** variables called **WorkQueueItemValue** and **WorkQueueItemName** and then add two **output** variables called **ProcessingNotes** and **ProcessingStatus** respectively, all of which should have **Text** as their data type.  
 5. Provide a default value for the **WorkQueueItem** variable so that you can later test the script locally. In case you've followed the [bulk-import tutorial](work-queues-bulk-import.md#tutorial-import-a-work-queue-and-items-from-csv) you should have work queue items in the **Vendor** invoice queue that have their values in JSON format. Here's an example of one of the values used.
 
    ```json
