@@ -7,18 +7,12 @@ ms.author: appapaio
 ms.reviewer: 
 contributors:
 author: rpapostolis
-search.audienceType: 
-  - flowmaker
-  - enduser
 ---
 # Bulk-import work queue data (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 With Power Automate and work queues being an integral part of the Power Platform, you can easily streamline your data management processes. The suite of tools available is comprehensive, ranging from highly end-user optimized wizards to powerful cloud-based ETL services and even pro-code options. Whether you're a business user, an IT professional or a developer, you can find the right tool to create or bulk upload data with ease and efficiency.
-
-> [!IMPORTANT]
-> This is a preview feature.
 
 ## Comprehensive bulk-import options
 
@@ -55,7 +49,7 @@ Here's a comprehensive list of data management and bulk-import options you can c
 This tutorial showcases both mentioned [Dataverse bulk-import options](/power-apps/maker/data-platform/data-platform-import-export) for importing a work queue along with its associated work queue items, which in this example is vendor invoices.
 
 > [!NOTE]
-> While the easiest and most straight forward way to create work queues is through the [Power Automate portal](https://make.powerautomate.com) as described in [Create a work queue](work-queues-manage.md#create-a-work-queue), we've included work queue import steps as well to demonstrate the [import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) approach as well.
+> While the easiest and most straight forward way to create work queues is through the [Power Automate portal](https://make.powerautomate.com) as described in [Create a work queue](work-queues-manage.md#create-a-work-queue), we've included work queue import steps as well to demonstrate the [import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) approach.
 
 > [!IMPORTANT]
 > The CSV sample data for this tutorial contains internal platform columns and values for **componentstate** and **overwritetime**. These fields are mandatory platform fields and must be included in import mapping. Typically, these fields have default values, with the `componentstate` being **0** (zero) and the `overwritetime` having a minimum date of **01/01/1900 00:00**. These fields are part of the work queue record, which you can review in [Power Apps](https://make.powerapps.com) under **Tables** and then search for **Work Queue**.
