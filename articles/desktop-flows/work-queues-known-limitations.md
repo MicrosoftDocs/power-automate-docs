@@ -1,6 +1,6 @@
 ---
-title: Known limitations or issues 
-description: Known limitations or issues for work queues.
+title: Known limitations for work queues 
+description: Known limitations for work queues.
 ms.topic: conceptual
 ms.date: 04/28/2023
 ms.author: appapaio
@@ -9,13 +9,11 @@ contributors:
 author: rpapostolis
 ---
 
-# Known issues and limitations for work queues (preview)
+# Known limitations for work queues (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-## Known limitations
-
-The following table includes known limitations
+The following table lists known limitations for work queues in Power Automate for desktop.
 
 | **Limitation** | **Details** | **Potential workaround**
 |-------------------------|-------------------------|-------------------------|
