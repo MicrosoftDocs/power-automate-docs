@@ -7,18 +7,12 @@ ms.author: appapaio
 ms.reviewer: 
 contributors:
 author: rpapostolis
-search.audienceType: 
-  - flowmaker
-  - enduser
 ---
 # Trigger work queues processing (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 Power Automate provides a [**variety of triggers**](../triggers-introduction.md) that can be used to initiate work queue processing. These triggers can be categorized into different types based on their functionality.
-
-> [!IMPORTANT]
-> This is a preview feature.
 
 - **Manual Triggers**: These triggers are initiated manually by the user. They're useful when you want to start a flow on-demand, such as when you need to perform a specific task.
 
