@@ -17,9 +17,6 @@ search.audienceType:
 
 Work queue processing refers to the management of a list of work items that need to be completed in a particular order. This list contains information about each item, such as its name, priority, expiration date, status, and the actual value to be processed.
 
-> [!IMPORTANT]
-> This is a preview feature.
-
 Ways to process work queues:
 
 > [!div class="checklist"]
