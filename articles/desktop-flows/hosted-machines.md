@@ -530,8 +530,8 @@ The following list displays all the supported Power Platform geographies in the 
 - United Kingdom
 - United States
 
-Hosted machines aren't yet available in sovereign clouds.
-
+> [!NOTE]
+> Hosted machines aren't yet available in sovereign clouds.
 
 
 ### Azure tenant country/region and supported geographies in the public cloud
@@ -555,7 +555,7 @@ A hosted machine stores limited metadata in the geography of your tenant's count
 > To check the tenant country/region on Azure:
 > 1. Go to the [Azure portal](https://portal.azure.com/).
 > 1. Open the **Tenant properties** service. The **Country or region** is available as one of the properties.
-
+>
 >    :::image type="content" source="media/hosted-machines/tenant-properties.png" alt-text="Screenshot of the Country or region tenant property.":::
 
 ### Deletion of unused resources
