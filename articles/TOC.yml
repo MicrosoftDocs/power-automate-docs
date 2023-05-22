@@ -417,7 +417,7 @@
       href: ./desktop-flows/work-queues-process.md
     - name: Trigger work queues
       href: ./desktop-flows/work-queues-trigger.md
-    - name: Known issues and limitations
+    - name: Known limitations
       href: ./desktop-flows/work-queues-known-limitations.md
   - name: Monitor desktop flows
     items:
