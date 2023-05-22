@@ -23,7 +23,7 @@ The following table lists known limitations for work queues in Power Automate fo
 | Dataverse limits | Work queues are based on Dataverse technologies, hence the same service protection and API limits apply. Learn more: [Service protection API limits](/power-apps/developer/data-platform/api-limits). |
 | Throughput and scaling | Work queues aren't suited for high throughput (subsecond processing time) scenarios, where hundreds or thousands of items need to be processed in seconds. If you do have such throughput requirements, consider using other queuing solutions such as Azure Service Bus Queues. |
 
-## Learn more
+### See also
 
 - [Work queue overview](work-queues.md)
 - [Manage work queues](work-queues-manage.md)
