@@ -245,26 +245,26 @@ Once you've created your hosted machine group in an environment, you can view it
 1. Select **Machine groups**.
 
     The list contains both hosted machine groups and standard machine groups. For each item in the list, you can see:
-
-        - The name of the item.
-        - The description of the item.
-        - The number of the machines in the group (only for standard machine groups).
-        - The number of flows running in the item.
-        - The number of flows queued in the item.
-        - The type of access you've to the item.
-        - The owner of the item.
+    
+    - The name of the item.
+    - The description of the item.
+    - The number of the machines in the group (only for standard machine groups).
+    - The number of flows running in the item.
+    - The number of flows queued in the item.
+    - The type of access you've to the item.
+    - The owner of the item.
 
     :::image type="content" source="media/hosted-machine-groups/view-machine-groups.png" alt-text="Screenshot of the available machine groups.":::
 
     Selecting a hosted machine group in the list will take you to the machine group's details page where you can:
 
-        - View and edit the details of the machine group.
-        - Monitor the machine group's run queue.
-        - View past runs.
-        - List existing connections referencing the machine group.
-        - View provisioning errors on the machine group, if any.
-        - Manage access by sharing (or not) the machine group.
-        - Delete the machine group.
+    - View and edit the details of the machine group.
+    - Monitor the machine group's run queue.
+    - View past runs.
+    - List existing connections referencing the machine group.
+    - View provisioning errors on the machine group, if any.
+    - Manage access by sharing (or not) the machine group.
+    - Delete the machine group.
 
 ## Share hosted machine groups
 
