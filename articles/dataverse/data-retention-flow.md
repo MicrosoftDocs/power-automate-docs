@@ -17,7 +17,8 @@ Create a cloud flow to view read-only rows in long term data retention in Micros
 The cloud flow described here creates and sends an email that includes an Excel file containing the retained data. If there are retained attachments associated with rows from Dataverse, they are also included as links in the Excel file. For more about the privileges required to run this flow, go to [View long term retained data in Microsoft Dataverse](/power-apps/maker/data-platform/data-retention-view)
 
 > [!IMPORTANT]
-> Long term retained data is a preview feature in Microsoft Dataverse.
+> - Long term retained data is a preview feature in Microsoft Dataverse.
+> - This capability is in process of rolling out, and may not be available in your region yet.
 
 Creating the flow requires the following high level steps:
 
