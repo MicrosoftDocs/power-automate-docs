@@ -59,7 +59,7 @@ Setup.Microsoft.PowerAutomate.exe -HELP
 | -DONOTINSTALLPAD |Doesn't install Power Automate for desktop.|
 | -DONOTINSTALLMACHINERUNTIME |Doesn't install Power Automate machine-runtime app.|
 | -SKIPINSTALLINGJAVAAUTOMATION |Doesn't install files that are required for enabling UI automation in Java applets.| 
-| -SKIPGATEWAYSUPPORT |Doesn't install certificates required for use with the on-premises data gateway.| 
+| -SKIPGATEWAYSUPPORT |Doesn't install certificates or start the http server required for use with the on-premises data gateway.| 
 | -ADDGATEWAYSUPPORT |Re-enables on-premises data gateway support after it has been disabled with the SKIPGATEWAYSUPPORT parameter.|
 
 Here's an example of a command that installs Power Automate silently in the folder My Programs\foo on the D: drive:
