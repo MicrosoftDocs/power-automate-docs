@@ -1,73 +1,74 @@
 ---
-title: Create flows from your phone
-description: Create a cloud flow from a template that, for example, sends a push notification when you receive mail from an address that you specify.
+title: Create a cloud flow from your phone | Microsoft Docs
+description: Create a cloud flow from a template that, for example, sends a push notification when you receive mail from an address that you specify
 services: ''
 suite: flow
 documentationcenter: na
 author: natalie-pienkowska
 contributors:
   - natalie-pienkowska
-  - kartikraop 
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 06/01/2023
 ms.author: napienko
 ms.reviewer: angieandrews
-ms.subservice: cloud-flow
 ---
 
-# Create flows from your phone
+# Create a flow from your phone
 
-Create a cloud flow from your phone by using a Power Automate template. On the **Templates** screen in Power Automate, you can select the **Mobile** category to find templates designed to work on your mobile phone.
-
-In this article, you'll follow an example to create a flow that sends a push notification to your phone when you get mail from your boss.
-
-If you're unfamiliar with Power Automate, [get an overview](getting-started.md).
+There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync, or you may want to start a new Visual Studio Codespaces build of your code base after you've been notified that there are no more checkins planned for the day. Instant flows allows you to accomplish these and many other tasks simply by tapping a button on your mobile device.
 
 ## Prerequisites
 
-To complete the example in this article, you'll need the following:
+To complete the example in this topic, you'll need the following:
 
-* Access to [Power Automate](sign-up-sign-in.md).
-* The generally available version of Power Automate mobile app for [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app).
-* To use the template demonstrated in this topic, you'll also need:
-  
-  * Office 365 credentials.
-  * Push notifications enabled on your phone.
+- Access to [Power Automate](https://make.powerautomate.com).
+- The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app).
+- An account with permissions to use the connectors to create your instant flow. For example, you'll need a Dropbox account in order to create an instant flow that accesses Dropbox.
 
-## Find a template
+If you're unfamiliar with Power Automate, go to [Get started](getting-started.md).
 
-1. Open the mobile app, and then tap **Browse** at the bottom of the screen.
-  
-    You can find a template in any of these ways:
+> [!NOTE]
+>The graphics in this topic reflect the iPhone version of the app, but the interface on an Android device or Windows Phone is similar.
 
-   * Specify a keyword in the search box at the top of the screen.
-   * Tap an option in the list of services.
-   * Scroll down to show a variety of categories, and then tap a template in any category.
+## Create an instant flow
 
-       ![Browse tab.](./media/mobile-create-flow/browse-tab.png)
+Create instant flows so that you can easily run repetitive tasks from any place, at any time via your mobile device. Running instant flows saves you time and, since the tasks they perform are automated, there will be fewer errors than if you manually did them.  
 
-     For this tutorial, you'll open the template that sends a push notification when you get mail from your boss.
-1. In the list of services, tap **See all**.
-1. Tap the **Notifications** service icon.
-1. In the search bar, type **boss**, and then tap the template to send a push notification when you receive a message from your boss.
+1. Select the **+** sign.
+1. Select the **Send an email to remind your team to join a meeting** template.
+   
+    ![Send an email to remind your team to join a meeting image.](./media/introduction-to-button-flows/create-button-from-mobile-3.png)  
+1. Select **USE THIS TEMPLATE** at the bottom of the page.
+1. Sign in to all services that this template uses.
+1. After you've signed in to all services, select **Next**.
+1. Select **CREATE**. Here you can also review the flow and make any changes you require to personalize the email, for example.
+1. After a few moments, the instant flow is created. Select **SEE MY FLOW**.
+1. On the **My flows** tab, view all your flows.
 
-    ![Choose template.](./media/mobile-create-flow/choose-template.png)
-1. In the screen that gives details about the template that you've selected, tap **Use this template**.
+Congratulations, you've created an instant flow! You can now run this instant flow anytime, any place, from the **Instant flows** tab in the Flow app. Simply press the instant flow and it will run!
 
-## Finish the flow
-1. If prompted, tap **Sign in**, and provide your credentials for Office 365 Outlook, Office 365 Users, or both.
+## Trigger an instant flow
 
-    You can use the same connections when you create other flows.
+Now that you've created an instant flow, it's time to run it. Since you can only run instant flows from the Flow app, be sure you've installed Flow on your Android or iOS mobile device.  
 
-1. On the upper-right corner, tap **Create**.
+1. Launch the flow app, tap **Instant flows** at the bottom of the page, and tap the instant flow that you wish to trigger.  
+1. View the progress while the flow runs.
 
-    Your flow is created and checks for email from your boss until you pause or delete the flow.
+    The page updates, indicating that the instant flow has completed.  
+
+That's all there is to running a cloud flow. You should now receive the push notification, indicating that the email has been sent.  
+
+
+
+
+
 
 ### See also
-* [Monitor your flow activity](mobile-monitor-activity.md)
-* [Manage your flows](mobile-manage-flows.md)
+
+- [Monitor your flow activity](mobile-monitor-activity.md).
+- [Manage your flows](mobile-manage-flows.md).
 
 
 
