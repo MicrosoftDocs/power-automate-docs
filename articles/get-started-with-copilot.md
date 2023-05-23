@@ -129,6 +129,12 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
     - A flow with comment.
     - A child flow.
     - A solution flow using connections instead of a connection reference.
+    - A flow contains a desktop flow action.
+    - A flow contains an unsupported hybrid trigger. Hybrid triggers do not require connections and are triggered manually from outside of Power Automate. Examples of hybrid trigger: "for a selected item" or "for a selected row".
+    - A flow contains a Power Apps V1 trigger.
+    - A flow contains a Power Pages component.
+    - A flow contains a child flow component.
+    - A flow contains a response component. 
 - Copilot has limited parameterization support currently. It might not be able to implicitly fill in parameters for all your actions, but it should be available in select connectors.
 - Copilot has limited support to create looping constructs (for example, Apply to each, do until).
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
@@ -150,7 +156,7 @@ To disable Copilot for your *environment*, follow these steps.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. On the menu to the left, select **Environment**, and then select the environment.
-1. On the command bar, select **Settings**.
+1. On the command bar, select **Settings** > **Product** > **Features**.
 1. Set the toggle next to **Copilot** to **Off**.
 
 ### See also
@@ -158,3 +164,4 @@ To disable Copilot for your *environment*, follow these steps.
 - [Transparency notes for Power Automate](transparency-note.md)
 - [Transparency note for Copilot in Power Automate](transparency-note-copilot.md) 
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
+
