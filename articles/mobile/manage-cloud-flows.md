@@ -1,20 +1,14 @@
 ---
 title: Manage cloud flows in the Power Automate mobile app
 description: Learn how to manage your cloud flows in the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS.
-services: ''
-suite: flow
-documentationcenter: na
 author: natalie-pienkowska
 contributors:
   - natalie-pienkowska
   - kartikraop 
   - v-aangie
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 12/16/2022
+ms.date: 06/01/2023
 ms.author: napienko
 ms.reviewer: angieandrews
 ---
@@ -32,6 +26,8 @@ Use the Power Automate mobile app to do the following tasks:
 - Turn your flows on and off, or delete them.
 
 You can manage your flows when you're away from your computer whether they're solution-aware or non-solution&ndash;aware. [Learn about solution-aware flows](../overview-solution-flows.md).
+
+
 
 ## Run instant flows
 

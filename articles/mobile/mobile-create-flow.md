@@ -4,17 +4,14 @@ description: Create a cloud flow from a template that, for example, sends a push
 services: ''
 suite: flow
 documentationcenter: na
-author: natalie-pienkowska
-contributors:
-  - natalie-pienkowska
-  - kartikraop 
-  - v-aangie
+author: msftman
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/01/2023
-ms.author: napienko
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 05/16/2023
+ms.author: deonhe
 ms.reviewer: angieandrews
-ms.subservice: cloud-flow
 ---
 
 # Create flows from your phone

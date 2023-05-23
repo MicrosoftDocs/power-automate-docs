@@ -59,7 +59,7 @@
     - name: Receive notifications
       href: ./mobile/notifications.md
     - name: Monitor flow activity on a phone
-      href: mobile-monitor-activity.md
+      href: ./mobile/mobile-monitor-activity.md
   - name: How to
     items:
     - name: Add an action
