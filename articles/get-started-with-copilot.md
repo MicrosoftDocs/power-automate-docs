@@ -141,24 +141,6 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
 - You can’t use Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
 - Copilot supports English language only for models.
 
-### How do I disable Copilot in Power Automate?
-
-For preview, Copilot is turned on by default. To disable it, you need to have administrator access.
-
-To disable Copilot for your *tenant*, follow these steps.
-
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. On the menu to the left, select **Settings** > **Tenant settings**.
-1. Select **Copilot (preview)**.
-1. Set the toggle to **Off** > **Save**.
-
-To disable Copilot for your *environment*, follow these steps.
-
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. On the menu to the left, select **Environment**, and then select the environment.
-1. On the command bar, select **Settings** > **Product** > **Features**.
-1. Set the toggle next to **Copilot** to **Off**.
-
 ### See also
 
 - [Transparency notes for Power Automate](transparency-note.md)
