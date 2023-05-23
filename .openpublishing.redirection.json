@@ -644,6 +644,26 @@
       "source_path": "articles/minit/process-explorer.md",
       "redirect_url": "/power-automate/minit/process-map",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/introduction-to-button-flows.md",
+      "redirect_url": "/power-automate/mobile/overview-mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/introduction-to-button-trigger-tokens.md",
+      "redirect_url": "/power-automate/mobile/overview-mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/button-flow-with-user-input-tokens.md",
+      "redirect_url": "/power-automate/mobile/overview-mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/share-buttons.md",
+      "redirect_url": "/power-automate/mobile/overview-mobile",
+      "redirect_document_id": false
     }
   ]
 }
