@@ -18,7 +18,7 @@ The cloud flow described here creates and sends an email that includes an Excel 
 
 > [!IMPORTANT]
 > - Long term retained data is a preview feature in Microsoft Dataverse.
-> - This capability is in process of rolling out, and may not be available in your region yet.
+> - This capability is in process of rolling out, and will be available in all public cloud regions by June 8, 2023.
 
 Creating the flow requires the following high level steps:
 
