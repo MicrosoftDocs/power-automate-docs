@@ -33,7 +33,7 @@ Copilot can perform the following actions:
 
 ## Prerequisites
 
-In this preview, a Power Platform environment in a US preview region is required to use Copilot in Power Automate. If you don't have an environment in the preview region, go to [Frequently asked questions](#how-do-i-create-a-power-platform-environment-in-preview-region) in this article to create it.
+In this preview, a Power Platform environment in a US preview region is required to use Copilot in Power Automate. If you don't have an environment in the preview region, go to [Frequently asked questions](#why-dont-i-see-copilot-in-power-automate-in-my-power-automate-experience) in this article to create it.
 
 ## Create a flow using Copilot
 
@@ -113,7 +113,7 @@ Use this section to find answers to frequently asked questions.
 There are several possibilities.
 
 - Check if the environment you’re using is in preview region or not. Your Power Platform admin can help review and verify.
-- Check with your Power Platform admin if the [tenant setting or environment setting for Copilot is or isn't enabled](#how-do-i-disable-copilot-in-power-automate).
+- Check with your Power Platform admin if the tenant setting or environment setting for Copilot is or isn't enabled.
 
 ### How do I create a Power Platform environment in preview region?
 
@@ -140,24 +140,6 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
 - You can’t use Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
 - Copilot supports English language only for models.
-
-### How do I disable Copilot in Power Automate?
-
-For preview, Copilot is turned on by default. To disable it, you need to have administrator access.
-
-To disable Copilot for your *tenant*, follow these steps.
-
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. On the menu to the left, select **Settings** > **Tenant settings**.
-1. Select **Copilot (preview)**.
-1. Set the toggle to **Off** > **Save**.
-
-To disable Copilot for your *environment*, follow these steps.
-
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. On the menu to the left, select **Environment**, and then select the environment.
-1. On the command bar, select **Settings** > **Product** > **Features**.
-1. Set the toggle next to **Copilot** to **Off**.
 
 ### See also
 
