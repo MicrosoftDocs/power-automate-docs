@@ -14,8 +14,10 @@
     href: create-flows-power-apps.md
 - name: Cloud flows
   items:
-  - name: Get started
+  - name: Get started with cloud flows
     href: overview-cloud.md
+  - name: Get started with Copilot (preview)
+    href: get-started-with-copilot.md   
   - name: Get started with triggers
     href: triggers-introduction.md
   - name: Get help from the Power Virtual Agents bot
@@ -105,7 +107,7 @@
       href: disable-flow.md
     - name: Change the owner of cloud flow
       href: change-cloud-flow-owner.md
-    - name: Format data by examples (preview)
+    - name: Format data by examples
       href: format-data-by-examples.md
   - name: Popular cloud flows scenarios
     items:
@@ -419,7 +421,7 @@
       href: ./desktop-flows/work-queues-process.md
     - name: Trigger work queues
       href: ./desktop-flows/work-queues-trigger.md
-    - name: Known issues and limitations
+    - name: Known limitations
       href: ./desktop-flows/work-queues-known-limitations.md
   - name: Monitor desktop flows
     items:
@@ -1114,3 +1116,16 @@
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
   - name: Support
     href: https://make.powerautomate.com/support/
+- name: Responsible AI
+  items:
+  - name: Overview
+    href: transparency-note.md
+  - name: Transparency note for Copilot
+    href: transparency-note-copilot.md
+
+
+
+
+
+    
+
