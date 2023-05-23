@@ -1,21 +1,16 @@
 ---
-title: Hosted machines (preview)
+title: Hosted machines
 description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 05/22/2023
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
-search.audienceType: 
-  - flowmaker
-  - enduser
 ---
 
-# Hosted machines (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Hosted machines
 
 Hosted machines allow you to build, test, and run attended and unattended desktop flows without providing or setting up any physical machines.
 
@@ -37,11 +32,25 @@ Key capabilities:
 
 ## Licensing requirements
 
-To use hosted machines, you need one of the following Power Automate licensing options:
+To use hosted machines, you need the following licensing option:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on** or the **Power Automate hosted RPA add-on**.
+- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate hosted RPA add-on**.
 
-    During the preview period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
+   Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
+
+You'll also need the following prerequisite licenses: Windows, Intune, Azure Active Directory.
+
+
+### Licensing requirements during grace period
+
+> [!IMPORTANT]
+> To enable a smooth transition for customers using the hosted machines feature during the preview phase, a grace period will be provided to enable customers to procure the appropriate hosted RPA add-on in order to continue using the feature. Entitlements for using the hosted machines during the preview phase will be extended until August 31st, 2023. After this date, you'll need the hosted RPA add-on to continue using the hosted machine group feature.
+
+To use hosted machines during the grace period, you need one of the following licensing options:
+
+- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on**.
+
+    During the grace period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
 - Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trial**.
 
@@ -49,12 +58,9 @@ To use hosted machines, you need one of the following Power Automate licensing o
 
 - Use the **90-days self-assisted premium trial.**
 
-    Trial users are granted the capacity of one hosted machine. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
+    Trial users are granted the capacity of one hosted machine per environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
-> [!NOTE]
-> During the preview period, all tenants have a global limit of 10 hosted machines.
 
-You'll also need the following prerequisite licenses: Windows, Intune, Azure Active Directory.
 
 ## Prerequisites
 
@@ -67,11 +73,12 @@ This section presents all the prerequisites to create and use hosted machines.
 
 To find more information about the Azure Active Directory and Intune requirements, go to [Windows 365 requirements](/windows-365/enterprise/requirements?tabs=enterprise%2Cent#azure-active-directory-and-intune-requirements).
 
-### Windows 365 Cloud PC application
+### Windows 365 Cloud PC and Azure Virtual Desktop service principal
 
-To create a hosted machine, you must create the Windows 365 service principal in your tenant.
-
-1. Check if the Windows 365 service principal is already created:
+> [!NOTE]
+> The Windows 365 and Azure Virtual Desktop service principals should automatically be created in your tenant. You can skip this step, unless you face an error  with service principals not created in your tenant when you provision the hosted machine.
+    
+1. Validate if the Windows 365 service principal is already created:
 
     1. Sign in to the [Azure portal](https://portal.azure.com/).
 
@@ -99,8 +106,6 @@ To create a hosted machine, you must create the Windows 365 service principal in
 
     To create a hosted machine, you must create the following Azure Virtual Desktop services in your tenant.
 
-    > [!NOTE]
-    > It's likely that the Azure Virtual Desktop service principals are already created in your tenant. If yes, you can skip this step.
 
     | Application name                   | Application ID                       |
     |------------------------------------|--------------------------------------|
@@ -112,7 +117,7 @@ To create a hosted machine, you must create the Windows 365 service principal in
 
 ### Get access to the default VM image
 
-To create hosted machines, you need access to the default image that is part of your environment. You can view the default image in **Monitors** > **Machines** > **VM images (preview)**.
+To create hosted machines, you need access to the default image that is part of your environment. You can view the default image in **Monitors** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machines/default-vm-image.png" alt-text="Screenshot of the default VM image in the VM images list.":::
 
@@ -122,7 +127,7 @@ Users need either the **System Administrator** or **Desktop Flow Machine Image A
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines** > **VM images (preview)**.
+1. Go to **Monitor** > **Machines** > **VM images**.
 
 1. Select the default Windows desktop image from the list.
 
@@ -144,7 +149,7 @@ To create a hosted machine:
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New** > **Hosted machine (preview)**.
+1. Select **New** > **Hosted machine**.
 
 1. In the hosted machine creation wizard:
 
@@ -206,14 +211,22 @@ You can personalize your hosted machines by providing your own Windows image dir
 
 1. Once you've created an Azure Compute Gallery, create an image definition following the steps in [Create an image definition and an image version](/azure/virtual-machines/image-version). You should create the image in the exact location where we deploy your hosted machines. You can find the following mapping with your environment Geo:
 
-    - US: East US
-    - Europe: North Europe
-    - Canada: Canada Central
-    - Australia: Australia East
-    - France: France Central
-    - India: Central India
-    - Japan: Japan East
-    - UK: UK South
+- Australia: Australia East
+- Asia: East Asia
+- Brazil: Brazil South
+- Canada: Canada Central
+- Europe: North Europe
+- France: France Central
+- Germany: Germany West Central (Restricted, please send your request to hostedrpa@microsoft.com) 
+- India: Central India
+- Japan: Japan East
+- Korea: Korea Central
+- Norway: Norway East
+- Switzerland: Switzerland North
+- United Arab Emirates: UAE North
+- United Kingdom: UK South
+- United States: East US
+
 
 ### Image requirements
 
@@ -257,7 +270,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New** > **VM image (preview)**.
+1. Select **New** > **VM image**.
 
 1. Enter an image name, a description, and the usage.
 
@@ -278,7 +291,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines** > **VM images (preview)**.
+1. Go to **Monitor** > **Machines** > **VM images**.
 
 1. Select the image you've created.
 
@@ -309,14 +322,22 @@ To use your own network and provision Azure Azure AD joined hosted machines, you
 
 The VNet needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
 
-- US: East US
-- Europe: North Europe
-- Canada: Canada Central
 - Australia: Australia East
+- Asia: East Asia
+- Brazil: Brazil South
+- Canada: Canada Central
+- Europe: North Europe
 - France: France Central
+- Germany: Germany West Central (Restricted, please send your request to hostedrpa@microsoft.com) 
 - India: Central India
 - Japan: Japan East
-- UK: UK South
+- Korea: Korea Central
+- Norway: Norway East
+- Switzerland: Switzerland North
+- United Arab Emirates: UAE North
+- United Kingdom: UK South
+- United States: East US
+
 
 ### Share the virtual network with Windows 365 service principal
 
@@ -350,7 +371,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New** > **Network connection (preview)**.
+1. Select **New** > **Network connection**.
 
 1. Enter a network connection name, a description, and the usage.
 
@@ -367,7 +388,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines** > **Network connection (preview)**.
+1. Go to **Monitor** > **Machines** > **Network connection**.
 
 1. Select the network connection you've created.
 
@@ -494,43 +515,52 @@ This section presents the limitations of hosted machines.
 The following list displays all the supported Power Platform geographies in the public cloud:
 
 - Australia
+- Asia
+- Brazil
 - Canada
 - Europe
 - France
+- Germany (Restricted, please send your request to hostedrpa@microsoft.com) 
 - India
-- Japan
-- United Kingdom
-- United States
-
-Hosted machines aren't yet available in sovereign clouds nor in the following Power Platform geographies in the public cloud:
-
-- Asia Pacific
-- Brazil
-- China
-- Germany
+- Japan 
 - Korea
 - Norway
 - Switzerland
 - United Arab Emirates
+- United Kingdom
+- United States
+
+> [!NOTE]
+> Hosted machines aren't yet available in sovereign clouds.
+
 
 ### Azure tenant country/region and supported geographies in the public cloud
 
-During the public preview, a hosted machine can only be provisioned when the tenant's country/region on Azure falls within the same scope of the region for the Power Automate environment.
+A hosted machine stores limited metadata in the geography of your tenant's country, which can be different from the region of your Power Automate environment. By default, the cross-geo support for hosted machines is enabled. System admins and environment admins can disable or enable the feature from the Power Platform admin center.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. Go to **Environments**, and select the appropriate environment.
+
+1. Select **Settings** > **Features**.
+
+1. Under **Hosted RPA**, select the toggle for **Enable cross-geo support for hosted machines** to disable or enable this feature.
+
+    :::image type="content" source="media/hosted-machines/enable-cross-geo-support-hosted machines.png" alt-text="Screenshot of the Enable cross-geo support for hosted machines option in the Power Platform admin center.":::
+
+1. Select **Save**.
 
 > [!NOTE]
-> Your default Power Automate environment is created based on your Azure Active Directory tenant's country/region.
-
-To check the tenant country/region on Azure:
-
-1. Go to the [Azure portal](https://portal.azure.com/).
-1. Open the **Tenant properties** service.
-1. The **Country or region** is available as one of the properties.
-
-:::image type="content" source="media/hosted-machines/tenant-properties.png" alt-text="Screenshot of the Country or region tenant property.":::
+> Disabling this feature at the environment level will restrict creation of hosted machines when your tenant's country or region on Azure falls within the same scope of the region for your Power Automate environment.
+> To check the tenant country/region on Azure:
+> 1. Go to the [Azure portal](https://portal.azure.com/).
+> 1. Open the **Tenant properties** service. The **Country or region** is available as one of the properties.
+>
+>    :::image type="content" source="media/hosted-machines/tenant-properties.png" alt-text="Screenshot of the Country or region tenant property.":::
 
 ### Deletion of unused resources
 
-During the public preview, we clean unused resources to ensure our service is available for everyone. A hosted machine that has been inactive for 14 days may be automatically deleted. The deleted hosted machine will still be visible but can't be used anymore. An inactive hosted machine is a machine that has no flow runs and no usage of Power Automate for desktop for the last 14 days.
+For environments without the Power Automate hosted RPA add-on, we clean unused resources to ensure our service is available for everyone. A hosted machine that has been inactive for 14 days may be automatically deleted. The deleted hosted machine will still be visible but can't be used anymore. An inactive hosted machine is a machine that has no flow runs and no usage of Power Automate for desktop for the last 14 days.
 
 > [!NOTE]
 > You need to delete the inactive hosted machine and recreate a new one to continue using the hosted machines feature. You need to reconfigure the connections associated with your cloud flows.

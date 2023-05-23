@@ -57,7 +57,7 @@ The following are prerequisites for installing the Power Automate AVD integratio
 
 ### Azure Automation and Key vaults
 
--   [An Azure Automation Account](/azure/automation/quickstarts/create-account-portal)
+-   [An Azure Automation Account](/azure/automation/quickstarts/create-azure-automation-account-portal)
 
 -   [An Azure Automation Credential](/azure/automation/shared-resources/credentials?tabs=azure-powershell#create-a-new-credential-asset) which is needed to run the runbook automation and is used to authenticate to Azure.
 
