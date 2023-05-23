@@ -48,7 +48,7 @@ You can provide feedback for Copilot when the results are biased or inappropriat
 
 Copilot can render flows and edit flows in a limited manner at this time. It supports only a subset of connectors available on the platform. It also isn't equipped to help with fixing flow errors currently. You're made aware of this limitation throughout the experience. We'll attempt to keep you from landing in a faulty state that causes data crashes or loss, as our support is limited. We'll block you from using the feature when there's a possibility it might break or corrupt your data.
 
-If you want to turn off Copilot within your organization, ask your Power Platform admin to turn off the feature from Power Platform admin center (PPAC).
+If you want to turn off Copilot within your organization, ask your Power Platform admin to turn off the feature using a PowerShell script.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 
@@ -56,7 +56,7 @@ Copilot is available only in the new designer. When editing a flow, you can choo
 
 If you're using the new designer, all changes done by Copilot should be reviewed in the designer. You can undo your changes.
 
-As an Azure OpenAI powered feature, the tenant admin can choose to disable it by disabling all Azure OpenAI powered features in the tenant settings. If you open the new designer with Copilot, you can choose to hide it.
+As an Azure OpenAI powered feature, the tenant admin can choose to disable it using a PowerShell script. If you open the new designer with Copilot, you can choose to hide it.
 
 ## See also
 
