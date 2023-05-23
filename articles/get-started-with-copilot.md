@@ -113,7 +113,7 @@ Use this section to find answers to frequently asked questions.
 There are several possibilities.
 
 - Check if the environment you’re using is in preview region or not. Your Power Platform admin can help review and verify.
-- Check with your Power Platform admin if the [tenant setting or environment setting for Copilot is or isn't enabled](#how-do-i-disable-copilot-in-power-automate).
+- Check with your Power Platform admin if the tenant setting or environment setting for Copilot is or isn't enabled.
 
 ### How do I create a Power Platform environment in preview region?
 
