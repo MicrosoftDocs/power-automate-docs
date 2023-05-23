@@ -8,19 +8,17 @@ brand: power-automate
 metadata:
   title: Power Automate documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results. < 160 chars.
-  
+
   ms.subservice: cloud-flow
   ms.topic: hub-page # Required
-  author: MSFTMAN #Required; your GitHub user alias, with correct capitalization.
-  ms.author: deonhe #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/02/2021 #Required; mm/dd/yyyy format.
+  author: v-aangie #Required; your GitHub user alias, with correct capitalization.
+  ms.author: angieandrews #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/22/2023 #Required; mm/dd/yyyy format.
   ms.reviewer: angieandrews
   hide_bc: false
 
-
 highlightedContent:
-
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
 
   items:
     # Card
@@ -46,20 +44,19 @@ highlightedContent:
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
-conceptualContent:  
-
+conceptualContent:
   items:
     - title: Get started with Power Automate
       links:
         - text: Sign up for free
           url: ./sign-up-sign-in.md
-          itemType: get-started        
+          itemType: get-started
         - text: Create your first flow
           url: ./getting-started.md#create-your-first-flow
           itemType: how-to-guide
         - text: Power Automate FAQs
           url: ./frequently-asked-questions.yml
-          itemType: reference      
+          itemType: reference
 
     - title: Create cloud flows
       links:
@@ -72,7 +69,7 @@ conceptualContent:
         - text: Instant flows
           url: /mobile/run-instant-flows.md
           itemType: overview
-    
+
     - title: Create desktop flows for RPA
       links:
         - text: What are desktop flows?
@@ -92,7 +89,7 @@ conceptualContent:
           itemType: overview
         - text: Minit desktop application
           url: minit/minit-desktop-application-overview.md
-          itemType: overview       
+          itemType: overview
         - text: Task mining
           url: task-mining-overview.md
           itemType: overview
@@ -113,7 +110,7 @@ conceptualContent:
           itemType: overview
         - text: Approvals
           url: ./get-started-approvals.md
-          itemType: overview              
+          itemType: overview
 
     - title: Use flows with Dataverse
       links:
@@ -128,10 +125,10 @@ conceptualContent:
           itemType: how-to-guide
         - text: Delete a row
           url: ./dataverse/delete-row.md
-          itemType: how-to-guide 
+          itemType: how-to-guide
         - text: Upload or download files/images
           url: ./dataverse/upload-download-file.md
-          itemType: how-to-guide         
+          itemType: how-to-guide
     - title: Create approval flows
       links:
         - text: Get started
@@ -148,7 +145,7 @@ conceptualContent:
           itemType: how-to-guide
         - text: Customize responses
           url: ./create-approval-response-options.md
-          itemType: how-to-guide          
+          itemType: how-to-guide
     - title: Use business process flows
       links:
         - text: Overview
@@ -162,8 +159,8 @@ conceptualContent:
           itemType: how-to-guide
         - text: Best practices in using business process flow columns
           url: ./best-practices-entity-attributes.md
-          itemType: how-to-guide        
-    
+          itemType: how-to-guide
+
     - title: Use solutions for ALM
       links:
         - text: Use solutions to distribute flows
@@ -174,7 +171,7 @@ conceptualContent:
           itemType: overview
         - text: Implement healthy ALM using solutions
           url: /power-platform/alm/overview-alm
-          itemType: overview           
+          itemType: overview
 
     - title: Do more with your flows
       links:
@@ -186,8 +183,8 @@ conceptualContent:
           itemType: how-to-guide
         - text: Use data operations
           url: ./data-operations.md
-          itemType: how-to-guide     
-         
+          itemType: how-to-guide
+
     - title: Learning catalog
       links:
         - text: App maker
@@ -195,7 +192,7 @@ conceptualContent:
           itemType: reference
         - text: Administrator
           url: ./learning-catalog/learning-catalog-administrator.md
-          itemType: reference     
+          itemType: reference
       footerLink:
         url: ./learning-catalog/learning-catalog.md
         text: More
@@ -207,33 +204,37 @@ conceptualContent:
           itemType: how-to-guide
         - text: Power Automate community
           url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
-          itemType: reference     
+          itemType: reference
         - text: Power Automate licensing
           url: /power-platform/admin/power-automate-licensing/overview
-          itemType: reference       
-
-    - title: Get project guidance on...
-      links:
-        - text: Planning flows
-          url: ./guidance/planning/planning-phase.md
           itemType: reference
-        - text: Designing flows
-          url: ./guidance/planning/process-design.md
-          itemType: reference     
-        - text: Creating and testing flows
-          url: ./guidance/planning/making-phase.md
-          itemType: reference    
-        - text: Deploying flows
-          url: ./guidance/planning/deploy-to-production.md
-          itemType: reference      
+
+    - title: Best practices guidance
+      links:
+        - text: Plan a Power Automate project
+          url: ./guidance/planning/introduction.md
+          itemType: reference
+        - text: RPA with SAP
+          url: ./guidance/rpa-sap-playbook/introduction.md
+          itemType: reference
+        - text: Automation kit
+          url: ./guidance/automation-kit/overview/introduction.md
+          itemType: reference
+        - text: Automation adoption
+          url: ./guidance/automation-coe/overview.md
+          itemType: reference
 
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Other Microsoft Power Platform products # < 60 chars (optional)
+    - title: Related content # < 60 chars (optional)
     - items:
+        # Card
+        - title: Power Platform
+          summary: One-stop learning resource for Power Platform applications and features including admin, developer, and guidance documentation.
+          url: /power-platform
         # Card
         - title: Power Apps
           summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
@@ -250,11 +251,11 @@ additionalContent:
           url: /power-virtual-agents
     - title: See also
       items:
-      # Card
-      - title: Dynamics 365
-        summary: "The next generation of CRM and ERP applications"
-        url: /dynamics365/
-      # Card
-      - title: Microsoft Azure
-        summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
-        url: /azure
+        # Card
+        - title: Dynamics 365
+          summary: "The next generation of CRM and ERP applications"
+          url: /dynamics365/
+        # Card
+        - title: Microsoft Azure
+          summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
+          url: /azure
