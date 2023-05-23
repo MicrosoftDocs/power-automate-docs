@@ -33,7 +33,7 @@ Copilot can perform the following actions:
 
 ## Prerequisites
 
-In this preview, a Power Platform environment in a US preview region is required to use Copilot in Power Automate. If you don't have an environment in the preview region, go to [Frequently asked questions](#how-do-i-create-a-power-platform-environment-in-preview-region) in this article to create it.
+In this preview, a Power Platform environment in a US preview region is required to use Copilot in Power Automate. If you don't have an environment in the preview region, go to [Frequently asked questions](#why-dont-i-see-copilot-in-power-automate-in-my-power-automate-experience) in this article to create it.
 
 ## Create a flow using Copilot
 
