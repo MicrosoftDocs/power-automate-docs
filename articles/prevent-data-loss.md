@@ -47,6 +47,8 @@ By default, desktop flow action groups don't appear when creating a new DLP poli
 3. In the Tenant settings, select **Desktop flows actions in DLP**.
 4. Turn on the toggle to enable the feature and select **save**.
 
+:::image type="content" source="media\prevent-dlp\prevent-data-loss/DLP%20for%20desktop%20flow%20setting.png" alt-text="Screenshot of DLP for desktop flows setting.":::
+
 You can now create a new policy from Data Policies and you will be able to classify desktop flows action groups.
 
 > [!WARNING]
