@@ -53,7 +53,7 @@ To edit a cloud flow:
 
 ## Run, delete, and turn a flow on or off
 
-Select the vertical ellipsis (**...**) next to a flow, and then select one of the options: **Run flow**, **Turn off** (or if the flow is off, **Turn on**), or **Delete**.
+Select the vertical ellipsis (&vellip;) next to a flow, and then select one of the options: **Run flow**, **Turn off** (or if the flow is off, **Turn on**), or **Delete**.
 
 You can also turn a flow on and off in the [**Details** screen](#view-run-history-and-details).
 

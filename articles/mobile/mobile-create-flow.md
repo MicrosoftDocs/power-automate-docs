@@ -16,53 +16,59 @@ ms.reviewer: angieandrews
 
 # Create flows from your phone
 
-Create a cloud flow from your phone by using a Power Automate template. On the **Templates** screen in Power Automate, you can select the **Mobile** category to find templates designed to work on your mobile phone.
+There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync. Or, you might want to start a new Visual Studio Codespaces build of your code base after you've been notified that there are no more checkins planned for the day. Instant flows allow you to accomplish these and many other tasks simply by tapping a button on your mobile device.
 
-In this article, you'll follow an example to create a flow that sends a push notification to your phone when you get mail from your boss.
-
-If you're unfamiliar with Power Automate, [get an overview](getting-started.md).
+If you're unfamiliar with Power Automate, [Get started](getting-started.md).
 
 ## Prerequisites
 
 To complete the example in this article, you'll need the following:
 
-* Access to [Power Automate](sign-up-sign-in.md).
+* Access to [Power Automate](https://make.powerautomate.com).
 * The generally available version of Power Automate mobile app for [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app).
-* To use the template demonstrated in this topic, you'll also need:
-  
-  * Office 365 credentials.
-  * Push notifications enabled on your phone.
+* An account with permissions to use the connectors to create your instant flow. For example, you'll need a Dropbox account in order to create an instant flow that accesses Dropbox.
 
-## Find a template
+## Create an instant flow
 
-1. Open the mobile app, and then tap **Browse** at the bottom of the screen.
-  
-    You can find a template in any of these ways:
+Create instant flows so that you can easily run repetitive tasks from any place, at any time via your mobile device. Running instant flows saves you time and, since the tasks they perform are automated, there will be fewer errors than if you manually did them.  
 
-   * Specify a keyword in the search box at the top of the screen.
-   * Tap an option in the list of services.
-   * Scroll down to show a variety of categories, and then tap a template in any category.
+1. Select the **+** (plus sign icon).
+1. Select the **Post MSN Weather updates to Yammer group everyday** template.
+1. Customize your flow by filling in these fields:
 
-       ![Browse tab.](./media/mobile-create-flow/browse-tab.png)
+    - **Recurrence**
 
-     For this tutorial, you'll open the template that sends a push notification when you get mail from your boss.
-1. In the list of services, tap **See all**.
-1. Tap the **Notifications** service icon.
-1. In the search bar, type **boss**, and then tap the template to send a push notification when you receive a message from your boss.
+        - **Interval:** Enter a number. **Frequency:** Select the time occurrence.
 
-    ![Choose template.](./media/mobile-create-flow/choose-template.png)
-1. In the screen that gives details about the template that you've selected, tap **Use this template**.
+    - **Get forecast for today**
 
-## Finish the flow
-1. If prompted, tap **Sign in**, and provide your credentials for Office 365 Outlook, Office 365 Users, or both.
+        - **Location:** Select a valid input. **Units:** Select a measurement system.
 
-    You can use the same connections when you create other flows.
+    - **Post message**
 
-1. On the upper-right corner, tap **Create**.
+        - **Group ID:** Aelect the group to post a message to.
 
-    Your flow is created and checks for email from your boss until you pause or delete the flow.
+
+    :::image type="content" source="../media/mobile/flow-template.png" alt-text="<alt text>":::
+
+1. Select **Save**.
+1. Enter a name for your flow, and then select **Submit**.
+
+Congratulations, you've created an instant flow! You can now run this instant flow anytime, any place, from the **Instant flows** tab in the Flow app. Simply press the instant flow and it will run!
+
+## Trigger an instant flow
+
+Now that you've created an instant flow, it's time to run it. Since you can only run instant flows from the Flow app, be sure you've installed Flow on your Android or iOS mobile device.  
+
+1. Launch the flow app, tap **Instant flows** at the bottom of the page, and tap the instant flow that you wish to trigger.  
+1. View the progress while the flow runs.
+
+    The page updates, indicating that the instant flow has completed.  
+
+That's all there is to running a cloud flow. You should now receive the push notification, indicating that the email has been sent.  
 
 ### See also
+
 * [Monitor your flow activity](mobile-monitor-activity.md)
 * [Manage your flows](mobile-manage-flows.md)
 

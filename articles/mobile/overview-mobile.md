@@ -30,7 +30,7 @@ This article provides an overview of the Microsoft Power Automate mobile app, in
 
 Experience the familiar look and feel of Power Automate on the go with the Power Automate mobile app, where you can:
 
-- [Run instant flows](run-instant-flows.md)
+- [Create flows from you phone](mobile-create-flow.md)
 - [Create widgets](widgets.md)
 - [Manage approvals](manage-approvals.md)
 - [Receive notifications](notifications.md)

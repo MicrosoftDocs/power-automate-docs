@@ -33,7 +33,7 @@ You can quickly approve or reject approval requests in the Power Automate mobile
 
 If you want more information about a request before you approve or reject it, you can view any comments and attachments on a separate screen.
 
-1. On the **Approvals** screen, select the vertical ellipsis (**…**) next to a request, and then select **Details**.
+1. On the **Approvals** screen, select the vertical ellipsis (&vellip;) next to a request, and then select **Details**.
 
     :::image type="content" source="../media/android/approvals-menu.png" alt-text="Screenshot of the Details option on the Approvals screen in the Power Automate mobile app.":::
 

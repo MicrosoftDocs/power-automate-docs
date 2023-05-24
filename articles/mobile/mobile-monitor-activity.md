@@ -20,7 +20,7 @@ search.audienceType:
 
 View a summary of how many times each flow succeeded or failed today, yesterday, and previous days. Explore details about each run, such as when it ran, how long each step took and, if it failed, why.
 
-The flow in this tutorial runs when you receive mail from a specific address. You could configure such a cloud flow with your personal email address for testing and a different address (for example, your manager's) when the flow is ready for real use.
+The flow in this tutorial runs when you receive mail from a specific address. You could configure a cloud flow like this with your personal email address for testing and a different address (for example, your manager's) when the flow is ready for real use.
 
 When the flow runs, it sends a custom push notification, with this syntax, to your phone:
 
@@ -32,8 +32,8 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
 
 ## Prerequisites
 
-- Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The graphics in this topic reflect the iPhone version of the app, but the graphics on Android and Windows Phone are similar.
-- If you don't already have a cloud flow, create one on [the website for Power Automate](https://make.powerautomate.com). For easier testing, use one that you can trigger yourself instead of waiting for an external event.
+- Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The screenshots in this article reflect the iPhone version of the app, but the screenshots on Android and Windows Phone are similar.
+- If you don't already have a cloud flow, create one on the [Power Automate](https://make.powerautomate.com) portal. For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
 ## Display a summary of activity
 

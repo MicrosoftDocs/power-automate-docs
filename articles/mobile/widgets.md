@@ -27,23 +27,27 @@ If your flow requires you to enter information, the widget will open the flow in
 
 Widgets can only run instant flows that you created. They can't run other kinds of flows or flows that have been shared with you. However, you can run [solution-aware flows](../overview-solution-flows.md) using a widget.
 
-1. Long-press the home screen where you want to place the widget and select **Widgets**.
+## Create a widget on an iOS device
 
-    The procedure may be different depending on which version you have. Check your device manual for exact instructions.
+The widget will show only the top eight (8) flows on an iOS device.
+
+:::image type="content" source="../media/mobile/widgets.png" alt-text="Screenshot of instant flow widgets.":::
+
+
+## Create a widget on an Android device
+
+1. Long-press the home screen where you want to place the widget and select **Widgets**.
 
 1. Select the Power Automate app.
 
     If you aren't signed in to the app, it will open to allow you to sign in.
 
-1. Select the instant flow to run when you tap the widget on your home screen.
+1. Tap the widget on your home screen.
 
-    :::image type="content" source="media/widgets.png" alt-text="Screenshot of instant flow widgets.":::
+    :::image type="content" source="../media/android/widget-run.png" alt-text="Screenshot of instant flow widgets.":::
 
-    If you’re using an Android device, you'll need to tap the widget on your home screen first to get a list of your instant flows.
+1. Select the flow to run.
 
-    >[!NOTE]
-    >
-    >The widget will show only the top eight (8) flows.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
