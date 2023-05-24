@@ -84,7 +84,7 @@ table in Dataverse. This ensures, for example, that when a form is created with 
 
 ### Instant or manual triggers
 
-An *instant* or *manual* trigger is a type of trigger where a user needs to either manually start the automation, or the trigger is instantaneously started. This can be triggered directly from a [instant flow](../../mobile/run-instant-flows.md) or a Microsoft service.
+An *instant* or *manual* trigger is a type of trigger where a user needs to either manually start the automation, or the trigger is instantaneously started. This can be triggered directly from a [instant flow](../../mobile/mobile-create-flow.md), or a Microsoft service.
 
 ![Instant triggers.](media/instant-triggers.png "Instant triggers")
 

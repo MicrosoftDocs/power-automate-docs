@@ -85,9 +85,6 @@
       href: visio-flows.md
     - name: "Reference: Use functions in expressions"
       href: /azure/logic-apps/workflow-definition-language-functions-reference
-    - name: Manage flows on a phone
-      href: mobile-manage-flows.md
-      displayName: Manage flows on mobile devices
     - name: Publish a template
       href: publish-a-template.md
     - name: Turn a cloud flow on or off

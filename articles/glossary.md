@@ -80,9 +80,9 @@ The following terms are commonly used in Power Automate.
 
 ## I
 
-**Instant flow:** Instant flow allows users to trigger repetitive tasks from the mobile or desktop app manually. For example, by clicking a button on a mobile app, it will send a reminder email to your team before a meeting.
+**Instant flow:** Instant flow allows users to trigger repetitive tasks from the mobile or desktop app manually. For example, by selecting a button on a mobile app, it will send a reminder email to your team before a meeting.
 
- [Run instant flows](mobile/run-instant-flows.md)
+ [Run instant flows](./mobile/manage-cloud-flows.md)
 
 **Item:** As a Power Automate trigger, an item represents a row in a Microsoft SharePoint list. What it actually is depends on the user's list. For example, it can be a row in Microsoft Excel, or a table in a Microsoft Word document.
 

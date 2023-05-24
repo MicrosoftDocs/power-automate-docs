@@ -18,14 +18,14 @@ ms.reviewer: angieandrews
 
 There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync. Or, you might want to start a new Visual Studio Codespaces build of your code base after you've been notified that there are no more checkins planned for the day. Instant flows allow you to accomplish these and many other tasks simply by tapping a button on your mobile device.
 
-If you're unfamiliar with Power Automate, [Get started](getting-started.md).
+If you're unfamiliar with Power Automate, [Get started](../getting-started.mdgetting-started.md).
 
 ## Prerequisites
 
 To complete the example in this article, you'll need the following:
 
 * Access to [Power Automate](https://make.powerautomate.com).
-* The generally available version of Power Automate mobile app for [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app).
+* The generally available version of Power Automate mobile app for [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](../getting-started.md#use-the-mobile-app).
 * An account with permissions to use the connectors to create your instant flow. For example, you'll need a Dropbox account in order to create an instant flow that accesses Dropbox.
 
 ## Create an instant flow
@@ -69,8 +69,8 @@ That's all there is to running a cloud flow. You should now receive the push not
 
 ### See also
 
-* [Monitor your flow activity](mobile-monitor-activity.md)
-* [Manage your flows](mobile-manage-flows.md)
+- [Monitor your flow activity](mobile-monitor-activity.md)
+- [Manage cloud flows](manage-cloud-flows.md)
 
 
 

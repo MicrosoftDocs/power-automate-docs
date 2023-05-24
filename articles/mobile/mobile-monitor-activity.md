@@ -32,7 +32,7 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
 
 ## Prerequisites
 
-- Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](getting-started.md#use-the-mobile-app). The screenshots in this article reflect the iPhone version of the app, but the screenshots on Android and Windows Phone are similar.
+- Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows) on a [supported device](../getting-started.md#use-the-mobile-app). The screenshots in this article reflect the iPhone version of the app, but the screenshots on Android and Windows Phone are similar.
 - If you don't already have a cloud flow, create one on the [Power Automate](https://make.powerautomate.com) portal. For easier testing, use one that you can trigger yourself instead of waiting for an external event.
 
 ## Display a summary of activity
@@ -72,4 +72,4 @@ When the flow runs, it sends a custom push notification, with this syntax, to yo
 
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../articles/includes/footer-banner.md)]

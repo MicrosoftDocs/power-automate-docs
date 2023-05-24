@@ -17,7 +17,7 @@ search.audienceType:
 
 # Create flows using the Power Apps app in Microsoft Teams
 
-You can build flows to customize and add further value to Teams from within the new Power Apps app in Teams. You can create [instant](../mobile/run-instant-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Microsoft Dataverse for Teams tables](/powerapps/teams/overview-data-platform#tables-in-dataverse-for-teams) within Teams.
+You can build flows to customize and add further value to Teams from within the new Power Apps app in Teams. You can create [instant](../mobile/mobile-create-flow.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Microsoft Dataverse for Teams tables](/powerapps/teams/overview-data-platform#tables-in-dataverse-for-teams) within Teams.
 
 > [!NOTE]
 > You need a [Power Automate license](https://make.powerautomate.com/pricing/) to access all Power Automate [connectors](/Connectors/connector-reference/), including the premium connectors. Users with a Microsoft 365 license can use all standard connectors.
@@ -32,7 +32,7 @@ You can build flows to customize and add further value to Teams from within the 
 
 1. Go to the **Build** tab in your Power Apps app, and then select **See all**.
 
-1. Select **New**, select **Flow**, and then select the type of flow you want to create. You can create only the following types of flows: [instant](../mobile/run-instant-flows.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md).
+1. Select **New**, select **Flow**, and then select the type of flow you want to create. You can create only the following types of flows: [instant](../mobile/mobile-create-flow.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md).
  
    ![Create a cloud flow.](..\media\overview-teams-flows\new-flow.png)
 

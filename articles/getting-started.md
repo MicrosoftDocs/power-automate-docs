@@ -33,7 +33,7 @@ Welcome! What can you expect from Power Automate? Here are a few examples of wha
 * Send automatic reminders for past due tasks
 * Move business data between systems on a schedule
 * Connect to more than 500 data sources or any publicly available API
-* You can even automate tasks on your local computer like computing data in Excel. 
+* You can even automate tasks on your local computer like computing data in Excel.
 
 Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
 
@@ -147,7 +147,7 @@ Visit the cloud flow activity page to see the list of cloud flows that recently 
 
 ## Use the mobile app
 
-Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md), [manage your flows](mobile-manage-flows.md) and [create flows from templates](mobile-create-flow.md).
+Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](./mobile/mobile-monitor-activity.md), [manage your flows](manage-cloud-flows.md), and [create flows](mobile-create-flow.md).
 
 ## Get help planning your Power Automate projects
 
