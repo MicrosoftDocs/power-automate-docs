@@ -25,17 +25,23 @@ To learn more about protecting your data, go to [Data loss prevention policies](
 
 ## Data loss prevention for desktop flows
 
+**Data loss prenvention for desktop flows is now GA!**
+
 Power Automate allows you to create and enforce DLP policies that classify desktop flows modules (or individual module actions) as **business**, **non-business**, or **blocked** categories. This categorization prevents makers from combining modules and actions from different categories into a desktop flow, or between a cloud flow and the desktop flows it uses.
 
 >[!IMPORTANT]
 >
->- Enforcement of DLP policies will be available for [managed environments](/power-platform/admin/managed-environment-overview) only. From September 2023, the granular classification of desktop flows actions groups will not be evaluated for the non-managed environments. Note that the desktop flow connector can still be governed like any other connector and allow you to govern Desktop flow orchestration.
+>- Enforcement of DLP policies will be available for [managed environments](/power-platform/admin/managed-environment-overview) only. Effective September 2023, only desktop flows that are located in Managed Environments will be evaluated by DLP policies. 
 >
 >- DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall and update to the latest version.
 
-### Enable DLP for desktop flows from Power Platform admin center
 
-By default, desktop flow actions don't appear when creating a new DLP policy. As an admin, you need to opt-in the feature from the Tenant settings.
+### View desktop flows actions groups in Power Platform admin center
+
+>[!IMPORTANT]
+> If you have already opted into the Public Preview of DLP for desktop flows, there is no action needed for you.
+
+By default, desktop flow action groups don't appear when creating a new DLP policy. As an admin, you need to turn on the **Desktop flows actions in DLP** setting from the Tenant settings.
 1. Select **Settings** from the header.
 2. Select **Power Platform settings**.
 3. In the Tenant settings, select **Desktop flows actions in DLP**.
@@ -58,6 +64,14 @@ When your tenant is opted into the user experience in the Power Platform, your a
 
 > [!WARNING]
 > When desktop flow modules are added to DLP policies, your tenant’s existing desktop flows will be evaluated against those DLP policies, and they will become suspended if they're non-compliant. Therefore, if your administrator creates or updates the DLP policy without taking notice of the new modules, desktop flows can become unexpectedly suspended.
+
+### Govern desktop flows outside of DLP
+
+Granul control over Desktop flow usage on all machines (described on the above sections) will be only for Managed Environments.
+
+There are other options to govern desktop flow:
+1. **Ability to govern desktop flow orchestration**: the desktop flow connector can still be governed in your policies like any other connector in all environments.
+2. **Ability to govern usage of Power Automate for desktop**: you can govern PAD through GPO. This allows you to turn on / off the usage of Power Automate for desktop restrict to a set of environments or regions, limit use of account types, restrict manual update, etc. You can [learn more about Governance in Power Automate](/power-automate/desktop-flows/governance).
 
 ### Desktop flow modules in DLP
 
@@ -98,7 +112,6 @@ The following list contains the desktop flow modules that are currently availabl
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Services		Windows Services 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Workstation		Workstation 
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.XML		XML 
-
 
 ### PowerShell support for desktop flow modules
 
@@ -156,6 +169,30 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
   Add-ConnectorsToPolicy -Connectors $desktopFlowModulesToAddToPolicy -PolicyName $dlpPolicy.name -Classification $dlpPolicy.defaultConnectorsClassification -Verbose 
 ```
 
+### Powershell script to opt-out the feature
+
+If you don't want to use DLP for desktop flows feature, you can opt-out with the following Powershell script.
+
+```PowerShell
+# Step #1: Retrieve the DLP policy named ‘My DLP Policy’
+
+$policies = Get-DlpPolicy
+$dlpPolicy = $policies.value | Where-Object { $_.displayName -eq "My DLP Policy" }
+
+# Step #2: Get all Power Automate for desktop flow modules
+
+$desktopFlowModules = Get-DesktopFlowModules
+ 
+# Step #3: Remove Desktop Flow modules from all 3 connector groups of the policy
+
+foreach ($connectorGroup in $dlpPolicy.connectorGroups) {
+   $connectorGroup.connectors = $connectorGroup.connectors | Where-Object { $desktopFlowModules.id -notcontains $_.id }
+}
+
+# Step #4: Save the updated policy
+
+Set-DlpPolicy -PolicyName $dlpPolicy.name -UpdatedPolicy $dlpPolicy
+```
 
 ## After the policy is enabled
 
