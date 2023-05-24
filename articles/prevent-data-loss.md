@@ -33,7 +33,7 @@ Power Automate allows you to create and enforce DLP policies that classify deskt
 >
 >- DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall and update to the latest version.
 
-### Turn on DLP for desktop flows from Power Platform admin center
+### Enable DLP for desktop flows from Power Platform admin center
 
 By default, desktop flow actions don't appear when creating a new DLP policy. As an admin, you need to opt-in the feature from the Tenant settings.
 1. Select **Settings** from the header.
