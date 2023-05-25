@@ -147,7 +147,8 @@ Visit the cloud flow activity page to see the list of cloud flows that recently 
 
 ## Use the mobile app
 
-Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](./mobile/mobile-monitor-activity.md), [manage your flows](manage-cloud-flows.md), and [create flows](mobile-create-flow.md).
+Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](./mobile/mobile-monitor-activity.md), [manage your flows](./mobile/manage-cloud-flows.md), and [create flows](./mobile/mobile-create-flow.md).
+
 
 ## Get help planning your Power Automate projects
 

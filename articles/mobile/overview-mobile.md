@@ -69,5 +69,6 @@ The Power Automate mobile app  has a few limitations:
 
 - There's no camera option to upload files with the mobile app.
 
-[!INCLUDE[footer-include](../../articles/includes/footer-banner.md)
+[!INCLUDE[footer-include](../includes/footer-banner.md)
+
 

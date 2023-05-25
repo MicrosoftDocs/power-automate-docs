@@ -18,7 +18,7 @@ ms.reviewer: angieandrews
 
 There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you may need to quickly email your team to remind them to join the daily team sync. Or, you might want to start a new Visual Studio Codespaces build of your code base after you've been notified that there are no more checkins planned for the day. Instant flows allow you to accomplish these and many other tasks simply by tapping a button on your mobile device.
 
-If you're unfamiliar with Power Automate, [Get started](../getting-started.mdgetting-started.md).
+If you're unfamiliar with Power Automate, [Get started](../getting-started.md).
 
 ## Prerequisites
 
@@ -73,5 +73,5 @@ That's all there is to running a cloud flow. You should now receive the push not
 - [Manage cloud flows](manage-cloud-flows.md)
 
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -51,7 +51,7 @@
     - name: Create flows from your phone
       href: ./mobile-create-flow.md
     - name: Manage cloud flows
-      href: ./mobile/manage-cloud-flows.md 
+      href: ./manage-cloud-flows.md 
     - name: Create widgets
       href: ./mobile/widgets.md
     - name: Manage approvals
