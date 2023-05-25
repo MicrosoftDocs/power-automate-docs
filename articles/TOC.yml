@@ -49,9 +49,9 @@
     - name: Overview
       href: ./mobile/overview-mobile.md
     - name: Create flows from your phone
-      href: ./mobile-create-flow.md
+      href: ./mobile/mobile-create-flow.md
     - name: Manage cloud flows
-      href: ./manage-cloud-flows.md 
+      href: ./mobile/manage-cloud-flows.md 
     - name: Create widgets
       href: ./mobile/widgets.md
     - name: Manage approvals
