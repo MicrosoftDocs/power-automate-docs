@@ -664,6 +664,11 @@
       "source_path": "articles/share-buttons.md",
       "redirect_url": "/power-automate/mobile/overview-mobile",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/mobile-create-flow.md",
+      "redirect_url": "/power-automate/mobile/mobile-create-flow",
+      "redirect_document_id": false
     }
   ]
 }
