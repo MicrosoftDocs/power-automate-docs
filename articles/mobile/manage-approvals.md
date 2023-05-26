@@ -1,6 +1,6 @@
 ---
 title: Manage approvals in the Power Automate mobile app
-description: Learn how to view, approve, and reject requests in the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS.
+description: Learn how to view, approve, and reject requests in the Microsoft Power Automate mobile app.
 services: ''
 suite: flow
 documentationcenter: na
@@ -9,12 +9,9 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 12/16/2022
+ms.date: 06/05/2023
 ms.author: napienko
 ms.reviewer: angieandrews
 ---
@@ -52,5 +49,7 @@ When the **Approval submitted successfully** or **Rejection submitted successful
 ## Create custom responses
 
 You can also create your own responses to approval requests. For example, you might want to respond with **Need more info** before you either **Accept** or **Reject** a request. [Learn how to create custom responses](../create-approval-response-options.md).
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

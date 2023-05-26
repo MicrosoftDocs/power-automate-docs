@@ -1,6 +1,6 @@
 ---
 title: Power Automate mobile app overview
-description: Get an overview of the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS, including installation, changing environments, and limitations of the app.
+description: Get an overview of the Microsoft Power Automate mobile app, including installation, changing environments, and limitations of the app.
 services: ''
 suite: flow
 documentationcenter: na
@@ -9,14 +9,9 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 12/16/2022
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.date: 06/05/2023
 ms.author: napienko
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -30,11 +25,11 @@ This article provides an overview of the Microsoft Power Automate mobile app, in
 
 Experience the familiar look and feel of Power Automate on the go with the Power Automate mobile app, where you can:
 
-- [Create flows from you phone](mobile-create-flow.md)
+- [Create flows](mobile-create-flow.md)
+- [Manage cloud flows](manage-cloud-flows.md)
 - [Create widgets](widgets.md)
 - [Manage approvals](manage-approvals.md)
 - [Receive notifications](notifications.md)
-- [Manage cloud flows](manage-cloud-flows.md)
 
 &mdash;all from your mobile device.
 

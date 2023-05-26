@@ -1,6 +1,6 @@
 ---
 title: Receive notifications in the Power Automate mobile app
-description: Learn how to receive notifications in the Microsoft Power Automate mobile app for Android and the Power Automate mobile app for iOS.
+description: Learn how to receive notifications in the Microsoft Power Automate mobile app.
 services: ''
 suite: flow
 documentationcenter: na
@@ -14,7 +14,7 @@ tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 12/16/2022
+ms.date: 06/05/2023
 ms.author: napienko
 ms.reviewer: angieandrews
 ---

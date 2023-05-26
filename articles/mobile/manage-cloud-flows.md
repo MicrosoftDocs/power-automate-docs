@@ -1,6 +1,6 @@
 ---
-title: Manage cloud flows in the Power Automate mobile app for Android
-description: Learn how to manage your cloud flows in the Microsoft Power Automate mobile app for Android.
+title: Manage cloud flows in the Power Automate mobile app
+description: Learn how to manage your cloud flows in the Microsoft Power Automate mobile app.
 services: ''
 suite: flow
 author: natalie-pienkowska
@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/01/2023
+ms.date: 06/05/2023
 ms.author: napienko
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -28,6 +28,8 @@ Use the Power Automate mobile app to do the following tasks:
 - Turn your flows on and off, or delete them.
 
 You can manage your flows when you're away from your computer whether they're solution-aware or non-solution&ndash;aware. [Learn about solution-aware flows](../overview-solution-flows.md).
+
+To learn about the different types of cloud flows, go to [Cloud flows](/power-automate/flow-types#cloud-flows).
 
 ## View a list of your cloud flows
 
@@ -59,9 +61,18 @@ You can also turn a flow on and off in the [**Details** screen](#view-run-histor
 
 :::image type="content" source="../media/android/flows-menu.png" alt-text="Screenshot of flow options.":::
 
+## Run an instant flow
+
+The main difference between flows and instant flows is that you need to trigger instant flows manually to run them.
+
+1. Launch Power Automate mobile app, tap **Instant flows** at the bottom of the page, and tap the flow that you wish to run.  
+1. View the progress while the flow runs.
+
+    The page updates, indicating that the flow has completed.  
+
 ## View run history and details
 
-Select the vertical ellipsis (**...**) next to a flow, and then select **Details**.
+Select the vertical ellipsis (&vellip;) next to a flow, and then select **Details**.
 
 In addition to the flow's run history, you can view a description of the flow if one was provided, how long ago it was modified, and its type.
 
