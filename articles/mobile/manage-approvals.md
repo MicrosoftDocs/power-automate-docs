@@ -50,6 +50,8 @@ When the **Approval submitted successfully** or **Rejection submitted successful
 
 You can also create your own responses to approval requests. For example, you might want to respond with **Need more info** before you either **Accept** or **Reject** a request. [Learn how to create custom responses](../create-approval-response-options.md).
 
+### See also
 
+[Power Automate mobile app overview](overview-mobile.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

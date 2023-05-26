@@ -45,4 +45,8 @@ To show only notifications that are related to push notifications sent from a fl
 
 To show only notifications of errors that occurred when a flow ran, select **Run status** at the top of the **Notifications** screen.
 
+### See also
+
+[Power Automate mobile app overview](overview-mobile.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

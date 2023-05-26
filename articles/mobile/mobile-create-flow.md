@@ -59,8 +59,7 @@ Congratulations, you've created a flow! You can now run this flow anytime, any p
 
 ### See also
 
-- [Monitor your flow activity](mobile-monitor-activity.md)
-- [Manage cloud flows](manage-cloud-flows.md)
+[Power Automate mobile app overview](overview-mobile.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -80,4 +80,8 @@ You can also toggle **Enable** here to turn the flow on or off.
 
 :::image type="content" source="../media/android/flow-details.png" alt-text="Screenshot of flow details and run history.":::
 
+### See also
+
+[Power Automate mobile app overview](overview-mobile.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
