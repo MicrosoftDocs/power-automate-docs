@@ -29,7 +29,7 @@ Copilot can perform the following actions:
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 >- This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
->- To learn more, go to [Transparency notes for Power Automate](transparency-note.md).
+>- More information: [Transparency notes for Power Automate](transparency-note.md), [Transparency note for Copilot data security and privacy in Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
 
 ## Prerequisites
 
