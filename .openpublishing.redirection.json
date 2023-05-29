@@ -679,6 +679,11 @@
       "source_path": "articles/mobile-create-flow.md",
       "redirect_url": "/power-automate/mobile/mobile-create-flow",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/mobile-monitor-activity.md",
+      "redirect_url": "/power-automate/mobile/manage-cloud-flows",
+      "redirect_document_id": false
     }
   ]
 }
