@@ -145,11 +145,11 @@ After completing these steps, return to the analytics page of your process in pr
 
 ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/f462c7ea-bffc-4eca-a7f1-2f5f5e6b761a)
 
-6. The local model will be created and now you can make changes to existing visuals or add a new data source to the report. Move the cards that hold the donuts (blue circles) for the **Paths**, **Cases**, and **Activities** metrics to the right by selecting and dragging each card.
+6. The local model will be created and now you can make changes to existing visuals or add a new data source to the report. Move the cards that hold the donuts (blue circles) for the **Variants**, **Cases**, and **Activities** metrics to the right by selecting and dragging each card.
 
 7. In the **Visualizations** pane, select the card element.
 
-8. A new card will appear on the screen. Resize it and drag it to the left of the **Paths** donut (blue circle).
+8. A new card will appear on the screen. Resize it and drag it to the left of the **Variants** donut (blue circle).
 
 9. In the **Data** pane, expand **ReportMeasures** and select **Self Loop %**.
 
