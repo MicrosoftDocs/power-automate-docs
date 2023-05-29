@@ -126,25 +126,44 @@ After completing these steps, return to the analytics page of your process in pr
 
     :::image type="content" source="media/process-mining-pbi-workspace/open-pbi.png" alt-text="Screenshot of the 'Open in Power BI' button.":::
 
-    You'll be redirected to a Power BI web screen that will show you a report of your process.
+    You'll be redirected to a Power BI web screen that will show you a report of your process like below.
+   
 
-1. To begin customizing your report, select **Edit** in the command bar. 
+1. To begin customizing your report download the report to your local machine by clicking **Download this file** from the file menu.
 
-1. Move the cards that hold the donuts (blue circles) for the **Paths**, **Cases**, and **Activities** metrics to the right by selecting and dragging each card.
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/471ff4ab-99c2-4a17-8bdb-aab54ecae749)
 
-    This will create space for a new card that we want to store a new metric in. Be sure to select off into an empty space before continuing.
+2. Select the **A copy of your report with a live connection to data online (.pbix)** radio button. The report will be downloaded with live connection. 
 
-    :::image type="content" source="media/process-mining-pbi-workspace/select-cards.png" alt-text="Screenshot of the  paths, cases, and activities metrics.":::
+3. Open the downloaded report in Power BI Desktop. Ensure you have the latest Power BI Desktop version.
 
-1. In the **Visualizations** pane, select the card element.
+4. After the report opens in Power BI Desktop, navigate to the **Modeling** tab and select **Make changes to this model**. You may need to have the _contributor_ role to be able to see that option in the **Modeling** tab. Then select **Add a local model**.
 
-1. A new card will appear on the screen. Resize it and drag it to the left of the **Paths** donut (blue circle).
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/3db348ae-68c8-4d13-8640-75d90f51bcca)
 
-1. In the **Fields** pane, expand **ReportMeasures** and select **Self Loop %**.
+5. Select the tables which you would like to include in the local model. We recomend that you keep the default selection. Then select **Submit** button. 
 
-1. On the command bar, select **Save**.
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/f462c7ea-bffc-4eca-a7f1-2f5f5e6b761a)
+
+6. The local model will be created and now you can make changes to existing visuals or add a new data source to the report. Move the cards that hold the donuts (blue circles) for the **Paths**, **Cases**, and **Activities** metrics to the right by selecting and dragging each card.
+
+7. In the **Visualizations** pane, select the card element.
+
+8. A new card will appear on the screen. Resize it and drag it to the left of the **Paths** donut (blue circle).
+
+9. In the **Data** pane, expand **ReportMeasures** and select **Self Loop %**.
+
+10. On the command bar, select **Save**.
 
     In our process, we don’t have any self loops, so you should see **0.00%** show up in that card.
+    
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/dbb2d3b7-3a30-4359-8ab1-b980357e077c)
+
+11. Save the report and from the **Home** tab select, **Publish**. Choose your workspace and click **Select** to publish the report to the Power BI service.
+
+12. After the report has been successfully published you can open it from the pop-out window on the screen.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/a0fbfa3b-eb92-4995-aa7a-63643cb8bd55)
 
 You've successfully customized your Power BI workspace. Every time you refresh your process and reopen your Power BI report, your metrics and customizations will be updated. Try out Power BI and customize your reports to learn how they can help you analyze your process effectively.
 
