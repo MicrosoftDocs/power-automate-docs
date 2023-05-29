@@ -646,6 +646,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/mobile/run-instant-flows.md",
+      "redirect_url": "/power-automate/mobile/manage-cloud-flows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/mobile-manage-flows.md",
+      "redirect_url": "/power-automate/mobile/manage-cloud-flows",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/introduction-to-button-flows.md",
       "redirect_url": "/power-automate/mobile/overview-mobile",
       "redirect_document_id": false
