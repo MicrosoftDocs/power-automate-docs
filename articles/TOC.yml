@@ -107,7 +107,7 @@
       href: disable-flow.md
     - name: Change the owner of cloud flow
       href: change-cloud-flow-owner.md
-    - name: Format data by examples (preview)
+    - name: Format data by examples
       href: format-data-by-examples.md
   - name: Popular cloud flows scenarios
     items:
@@ -283,6 +283,8 @@
       href: ./dataverse/flows-power-apps.md
     - name: Create a cloud flow that uses Microsoft Dataverse
       href: common-data-model-intro.md
+    - name: Create a cloud flow to view retained data (preview)
+      href: ./dataverse/data-retention-flow.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
   - name: Use solutions for ALM

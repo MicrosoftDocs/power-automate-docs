@@ -17,7 +17,7 @@ ms.reviewer: gtrantzas
 search.audienceType: 
   - flowmaker
   - enduser
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Get started using flows with Microsoft Forms
