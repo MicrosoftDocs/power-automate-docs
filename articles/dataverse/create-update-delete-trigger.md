@@ -87,7 +87,7 @@ You can set additional properties to define more granularly when the flow runs a
 
 Use filter conditions to set conditions for when to trigger flows.
 
-:::image type="content" source="../media/create-update-delete-trigger/filter-conditions.png "Filter condition"" alt-text="Screenshot of filter conditions.":::
+:::image type="content" source="../media/create-update-delete-trigger/filter-conditions.png" alt-text="Screenshot of filter conditions.":::
 
 ## Filtering columns
 
