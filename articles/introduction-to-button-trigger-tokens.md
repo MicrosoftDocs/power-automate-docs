@@ -19,7 +19,7 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 # Get started with button trigger tokens
 
