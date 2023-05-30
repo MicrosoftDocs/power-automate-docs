@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/17/2023
+ms.date: 05/30/2023
 ms.author: cgarty
 ms.reviewer: angieandrews
 ---
@@ -25,16 +25,11 @@ To learn more about protecting your data, go to [Data loss prevention policies](
 
 ## Data loss prevention for desktop flows
 
-**Data loss prenvention for desktop flows is now GA!**
-
 Power Automate allows you to create and enforce DLP policies that classify desktop flows modules (or individual module actions) as **business**, **non-business**, or **blocked** categories. This categorization prevents makers from combining modules and actions from different categories into a desktop flow, or between a cloud flow and the desktop flows it uses.
 
 >[!IMPORTANT]
->
->- Enforcement of DLP policies will be available for [managed environments](/power-platform/admin/managed-environment-overview) only. Effective September 2023, only desktop flows that are located in Managed Environments will be evaluated by DLP policies. 
->
->- DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall and update to the latest version.
-
+> - Enforcement of DLP policies will be available for [managed environments](/power-platform/admin/managed-environment-overview) only. Effective September 2023, only desktop flows that are located in Managed Environments will be evaluated by DLP policies. 
+> - DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall and update to the latest version.
 
 ### View desktop flows actions groups in Power Platform admin center
 
@@ -42,25 +37,28 @@ Power Automate allows you to create and enforce DLP policies that classify deskt
 > If you have already opted into the Public Preview of DLP for desktop flows, there is no action needed for you.
 
 By default, desktop flow action groups don't appear when creating a new DLP policy. As an admin, you need to turn on the **Desktop flows actions in DLP** setting from the Tenant settings.
+
+> [!NOTE]
+> For customers who have already opted into the Public Preview, you don't need to enable the tenant setting. Note that if you select the **Desktop flow actions in DLP** setting, the button "Enabled" will be greyed out for now.
+
 1. Select **Settings** from the header.
 2. Select **Power Platform settings**.
 3. In the Tenant settings, select **Desktop flows actions in DLP**.
-4. Turn on the toggle to enable the feature and select **save**.
+4. Turn on the toggle **Show desktop flow action in DLP policies**, and select **Save**.
 
-:::image type="content" source="media\prevent-dlp\prevent-data-loss/DLP%20for%20desktop%20flow%20setting.png" alt-text="Screenshot of DLP for desktop flows setting.":::
+    :::image type="content" source="media/prevent-data-loss/dlp-desktop-flows.png" alt-text="Screenshot of DLP for desktop flows setting.":::
 
-You can now create a new policy from Data Policies and you will be able to classify desktop flows action groups.
-
-> [!WARNING]
-> For customers who have already opted into the Public Preview, you don't need to enable the tenant setting. Note that if you select the **Desktop flow actions in DLP** setting, the button "Enabled" will be greyed out for now.
+You can now create a new policy from Data Policies and you'll be able to classify desktop flows action groups.
 
 ### Create a DLP policy with desktop flows restrictions in the Power Platform admin center
 
-When admins edit or create a policy, **Desktop flow action groups will be added to the default group** and the policy will be applied once it's saved. If the default group is set to **Blocked** and have desktop flows running in the target environments, these will get suspended.
+When admins edit or create a policy, desktop flow action groups are added to the default group, and the policy is applied once it's saved.
 
-Admins can create data loss prevention policies from https://admin.powerplatform.microsoft.com. They can manage a data loss prevention policy for desktop flows in the same way they manage cloud flow connectors and actions. Desktop flows modules are groups of similar actions as displayed in the Power Automate Desktop user interface. A module is similar to connectors that are used in cloud flows. You can define a data loss prevention policy that manages both desktop flows modules and cloud flows connectors. There are also basic modules such as **Variables**, which aren't manageable in the scope of data loss prevention policy because almost all desktop flows need to use those modules. You can learn more about the fundamentals of DLP policies and how to create them in the [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) section.
+Policy is suspended if the default group is set to **Blocked** and the desktop flows are running in the target environments.
 
-When your tenant is opted into the user experience in the Power Platform, your administrators will automatically see the new desktop flow modules in the default data group of the DLP policy they're creating or updating.
+Admins can create data loss prevention policies from [Power Platform admin center](https://admin.powerplatform.microsoft.com). They can manage a data loss prevention policy for desktop flows in the same way they manage cloud flow connectors and actions. Desktop flows modules are groups of similar actions as displayed in the Power Automate for desktop flows user interface. A module is similar to connectors that are used in cloud flows. You can define a data loss prevention policy that manages both desktop flows modules and cloud flows connectors. There are also basic modules such as **Variables**, which aren't manageable in the scope of data loss prevention policy because almost all desktop flows need to use those modules. You can learn more about the fundamentals of DLP policies and how to create them in the [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention) section.
+
+When your tenant is opted into the user experience in the Power Platform, your administrators automatically see the new desktop flow modules in the default data group of the DLP policy they're creating or updating.
 
 :::image type="content" source="media\prevent-dlp\prevent-dlp.png" alt-text="Screenshot of DLP Prevention.":::
 
@@ -69,15 +67,17 @@ When your tenant is opted into the user experience in the Power Platform, your a
 
 ### Govern desktop flows outside of DLP
 
-Granul control over Desktop flow usage on all machines (described on the above sections) will be only for Managed Environments.
+Granular control over desktop flow usage on all machines (described on the above sections) will be only for Managed Environments.
 
 There are other options to govern desktop flow:
+
 1. **Ability to govern desktop flow orchestration**: the desktop flow connector can still be governed in your policies like any other connector in all environments.
-2. **Ability to govern usage of Power Automate for desktop**: you can govern PAD through GPO. This allows you to turn on / off the usage of Power Automate for desktop restrict to a set of environments or regions, limit use of account types, restrict manual update, etc. You can [learn more about Governance in Power Automate](/power-automate/desktop-flows/governance).
+
+1. **Ability to govern usage of Power Automate for desktop**: you can govern Power Automate for desktop flows through GPO. This governance allows you to turn on or off the usage of Power Automate for desktop flows for actions such as to restrict to a set of environments or regions, limit use of account types, restrict manual update. You can [learn more about Governance in Power Automate](/power-automate/desktop-flows/governance).
 
 ### Desktop flow modules in DLP
 
-If your users don't have the latest Power Automate Desktop, they will experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they're trying to run, debug from Power Automate Desktop, or save desktop flows that violate DLP policies. We'll have background jobs that will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
+If your users don't have the latest Power Automate for desktop flows, they'll experience limited data loss prevention policy enforcements. The users won't see the design time error messages when they're trying to run, debug from Power Automate for desktop flows, or save desktop flows that violate DLP policies. Background jobs will periodically scan desktop flows in the environment, and automatically suspend those desktop flows that violate data loss prevention policies. Users won't be able to run desktop flows from a cloud flow if the desktop flow violates any data loss prevention policy.
 
 The following list contains the desktop flow modules that are currently available in DLP.
 
@@ -171,9 +171,9 @@ Below is a PowerShell script that you can use to add two specific desktop flow m
   Add-ConnectorsToPolicy -Connectors $desktopFlowModulesToAddToPolicy -PolicyName $dlpPolicy.name -Classification $dlpPolicy.defaultConnectorsClassification -Verbose 
 ```
 
-### Powershell script to opt-out the feature
+### PowerShell script to opt out the feature
 
-If you don't want to use DLP for desktop flows feature, you can opt-out with the following Powershell script.
+If you don't want to use DLP for desktop flows feature, you can opt out with the following PowerShell script.
 
 ```PowerShell
 # Step #1: Retrieve the DLP policy named ‘My DLP Policy’
@@ -236,18 +236,18 @@ When changes can impact existing flows, the following staged DLP enforcement cha
 
 The following is a list of DLP enforcement changes and the date the changes were effective. 
 
-| Date | Description | Reason for change | Stage | Design-time enforcement ETA* | Full enforcement ETA*
+| Date | Description | Reason for change | Stage | Design-time enforcement availablility* | Full enforcement availability*
 |----|----|----|----|----|----|
 |May 2022 | Delegated authorization background job enforcement | DLP policies enforced are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Full |June 2, 2022|July 21, 2022|
-|May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have type=Request and kind=apiConnection. Many of the affected triggers are instant triggers, which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Full |June 2, 2022|August 25, 2022|
+|May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have **type=Request** and **kind=apiConnection**. Many of the affected triggers are instant triggers, which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Full |June 2, 2022|August 25, 2022|
 |July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with full enforcement of DLP policies on child flows. Once full enforcement is available, the enforcement will include child desktop flows. | Full |February 14, 2023|March 2023|
 |January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Full | - |March 2023|
 
-*ETA is subject to change and depends on the release schedule. ETA is for the start of the release to production. Release to preview station 1 is approximately five days later. Release to NAM/US station 5 is approximately three weeks later.
+*Availability schedule might change and depends on the rollout.
 
 ## Flow suspension for DLP violation
 
-Suspended flows will show as suspended in the Power Automate maker portal and the Power Platform admin center. When a flow is returned through an API, PowerShell, or the [Power Automate Management connector list flows as admin action](/connectors/flowmanagement/#list-flows-as-admin), the flow will be **State=Suspended**, **FlowSuspensionReason=CompanyDlpViolation**, and will have a **FlowSuspensionTime** value indicating when the flow was suspended.
+Suspended flows show as suspended in the Power Automate maker portal and the Power Platform admin center. When a flow is returned through an API, PowerShell, or the [Power Automate Management connector list flows as admin action](/connectors/flowmanagement/#list-flows-as-admin), the flow will be **State=Suspended**, **FlowSuspensionReason=CompanyDlpViolation**, and will have a **FlowSuspensionTime** value indicating when the flow was suspended.
 
 ## Known limitations
 
