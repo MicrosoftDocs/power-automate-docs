@@ -57,7 +57,7 @@ Admins can create data loss prevention policies from [Power Platform admin cente
 
 When your tenant is opted into the user experience in the Power Platform, your administrators automatically see the new desktop flow modules in the default data group of the DLP policy they're creating or updating.
 
-:::image type="content" source="media\prevent-dlp\prevent-dlp.png" alt-text="Screenshot of DLP Prevention.":::
+:::image type="content" source="media/prevent-data-loss/prevent-dlp.png" alt-text="Screenshot of DLP Prevention.":::
 
 > [!WARNING]
 > When desktop flow modules are added to DLP policies, your tenant’s existing desktop flows will be evaluated against those DLP policies, and they will become suspended if they're non-compliant. Therefore, if your administrator creates or updates the DLP policy without taking notice of the new modules, desktop flows can become unexpectedly suspended.
