@@ -33,13 +33,10 @@ Power Automate allows you to create and enforce DLP policies that classify deskt
 
 ### View desktop flows actions groups in Power Platform admin center
 
->[!IMPORTANT]
-> If you have already opted into the Public Preview of DLP for desktop flows, there is no action needed for you.
-
 By default, desktop flow action groups don't appear when creating a new DLP policy. As an admin, you need to turn on the **Desktop flows actions in DLP** setting from the Tenant settings.
 
 > [!NOTE]
-> For customers who have already opted into the Public Preview, you don't need to enable the tenant setting. Note that if you select the **Desktop flow actions in DLP** setting, the button "Enabled" will be greyed out for now.
+> The **Desktop flow actions in DLP** setting is already enabled and can't be changed if you've opted for the public preview.
 
 1. Select **Settings** from the header.
 2. Select **Power Platform settings**.
