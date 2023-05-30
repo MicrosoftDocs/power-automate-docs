@@ -87,13 +87,13 @@ You can set additional properties to define more granularly when the flow runs a
 
 Use filter conditions to set conditions for when to trigger flows.
 
-    :::image type="content" source="../media/create-update-delete-trigger/filter-conditions.png "Filter condition"" alt-text="Screenshot of filter conditions.":::
+:::image type="content" source="../media/create-update-delete-trigger/filter-conditions.png "Filter condition"" alt-text="Screenshot of filter conditions.":::
 
 ## Filtering columns
 
 Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
 
-    :::image type="content" source="../media/create-update-delete-trigger/filter-columns.png" alt-text="Screenshot of filtering columns by firstname.lastname.":::
+:::image type="content" source="../media/create-update-delete-trigger/filter-columns.png" alt-text="Screenshot of filtering columns by firstname.lastname.":::
 
 >[!NOTE]
 >This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
