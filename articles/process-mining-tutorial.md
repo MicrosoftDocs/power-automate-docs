@@ -1,25 +1,21 @@
 ---
-title: Get started with process mining in process advisor (preview)
-description: This topic is a tutorial with sample data in process mining using the process advisor feature in Power Automate.
+title: Get started with process mining
+description: This topic is a process mining tutorial in Power Automate using sample data.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 11/15/2022
+ms.topic: how-to
+ms.date: 04/03/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow[https://preview.flow.microsoft.com/en-us/?processinsights-core.tabularData=true](https://preview.flow.microsoft.com/en-us/?processinsights-core.tabularData=true)
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Tutorial: Get started with process mining (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Tutorial: Get started with process mining
 
 This tutorial allows you to experience process mining with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
 
@@ -32,49 +28,45 @@ This tutorial allows you to experience process mining with sample data. In this 
 For the process mining tutorial, download the sample event log CSV file:  
 
 - [English version](https://go.microsoft.com/fwlink/?linkid=2181220)
-- [French version](https://download.microsoft.com/download/3/9/c/39c5a305-8cf6-464e-af19-7d37b3f84628/Exemples_FR.csv)
+- [French version](https://go.microsoft.com/fwlink/?linkid=2226086)
 
 The sample data in this tutorial is for illustration only and is fictitious. No real association is intended or inferred.
 
 ## Create a process
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+> [!NOTE]
+>
+> If you encounter an error message while attempting to create and analyze a process, it may be due to a missing security role. To resolve this, please contact the administrator of your environment and request that they assign you the **Environment Maker** security role.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select your environment.
 
 1. On the navigation pane to the left, select **Process advisor**.
 
-    :::image type="content" source="media/process-mining-tutorial/process-adv-menu.png" alt-text="Screenshot of the process advisor menu selection.":::
-
 1. In the **Create new process** section, select **Start here**.
 
-    :::image type="content" source="media/process-mining-tutorial/start-here.png" alt-text="Screenshot of the 'Start here' message.":::
-
-1. In the **Create a new process** screen, enter a process name, and then select **Data (preview)**.
+1. In the **Create a new process** screen, enter a process name, and then select **Import data**.
 
 1. (Optional) Enter a description for your process.
 
-    :::image type="content" source="media/process-mining-tutorial/process-name-data.png" alt-text="Screenshot of the process name and Data (preview) button.":::
-
-1. Select **Create**.
+1. Select **Continue**.
 
 ## Import data
 
 1. In the **Choose a data source** screen, select **Text/CSV**.
 
-    :::image type="content" source="media/process-mining-tutorial/text-csv.png" alt-text="Screenshot of blank table selection.":::
-
 1. Under the **Connection settings** heading, select **Upload file (Preview)**.
 
 1. Select **Browse**.
-
-    :::image type="content" source="media/process-mining-tutorial/upload-browse.png" alt-text="Screenshot of the Upload file selection and Browse button.":::
 
 1. Find and select **SampleData_AP_Refunds_Financial_EventLog.csv**, which you downloaded previously.
 
 1. Select **Open**.
 
     :::image type="content" source="media/process-mining-tutorial/open-sample-data.png" alt-text="Screenshot of the downloaded sample data file.":::
+
+1. If you're asked to authenticate, select **Sign in** and follow the prompts.
 
 1. Select **Next**.
 
@@ -84,59 +76,51 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
     When you're finished, the attribute mapping should look like the following screenshot.
 
-    :::image type="content" source="media/process-mining-tutorial/attribute-names.png" alt-text="Screenshot of the completed mapping.":::
+    :::image type="content" source="media/process-mining-tutorial/attribute-table.png" alt-text="Screenshot of the attribute mapping.":::
 
-1. Select **Save and analyze**. The analysis may take a few minutes to run.
+1. Select **Save and analyze**. The analysis might take a few minutes to run.
 
 When the analysis process is complete, you’ll see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that will help you analyze your process. To learn how to analyze the process map and metrics, go to [Visualize and gain insights from processes in process advisor](process-mining-visualize.md).
 
-:::image type="content" source="media/process-mining-tutorial/insights.png" alt-text="Screenshot of the process map and dashboard.":::
+:::image type="content" source="media/process-mining-tutorial/process-map-dash.png" alt-text="Screenshot of the process map and dashboard.":::
 
 ## Analyze a process
 
-Let’s take the analysis of our process beyond KPIs. We'll use the minit desktop application, where you can edit and analyze your processes created in process advisor.
+Let’s take the analysis of our process beyond KPIs. We'll use minit, where you can edit and analyze your processes created in process advisor.
 
-1. On the process advisor home page, download the [minit desktop application](minit/how-to-start-with-minit-desktop-application.md).
+1. From the command bar of the analytics report page, select **Download minit** to download minit.
 
-1. On the top right of the **Process hub** screen, select the environment.
+1. On the minit toolbar, select the environment from the top right.
 
-1. Search for the process that you created on process advisor (**Hello World**).
+1. Search for the process that you created on process advisor (**AP Refunds Process**).
 
 1. Select **Default** to display the default view.
 
-    :::image type="content" source="media/process-mining-tutorial/analyze-world.png" alt-text="Screenshot of the Process hub screen in the minit desktop application.":::
+    You’re ready to use the advanced capabilities of minit in process advisor.
 
-    You’re ready to use the advanced capabilities of the minit desktop application in process advisor.
+1. On the **Customize** panel toolbar, select **Frequency** (the first icon), and then select **Case count** in the **Metric** dropdown menu.
 
-1. In the dropdown menu for **Frequency**, select **Case count**
+    :::image type="content" source="media/process-mining-tutorial/frequency.png" alt-text="Screenshot of the case count metric.":::
 
-    :::image type="content" source="media/process-mining-tutorial/case-count.png" alt-text="Screenshot of the Case count option.":::
+    The process map displays the number of cases of the process that include the activity specified at each node.
 
-    The following process displays.
-
-    :::image type="content" source="media/process-mining-tutorial/case-count-process.png" alt-text="Screenshot of the Case count process.":::
-
-1. In the **Customize** panel, select the clock icon, and then select **Mean duration** from the dropdown menu.
-
-    :::image type="content" source="media/process-mining-tutorial/clock.png" alt-text="Screenshot of the 'Mean duration' option.":::
+1. On the **Customize** panel, select the clock icon, and then select **Mean duration** from the dropdown menu.
 
     Notice that the **Refund with special voucher** step has a long mean duration compared to other steps.
 
-    :::image type="content" source="media/process-mining-tutorial/refund.png" alt-text="Screenshot of the Refund with special voucher step.":::
+    :::image type="content" source="media/process-mining-tutorial/refund.png" alt-text="Screenshot of the refund with special voucher mean duration.":::
 
-1. Select the finance icon, and then select **Mean** from the dropdown menu.
+1. On the **Customize** panel, select **Finance** (the piece of paper icon), and then select **Mean** from the **Metric** dropdown menu.
 
-    :::image type="content" source="media/process-mining-tutorial/finance-a.png" alt-text="Screenshot of the 'Mean' option.":::
+    Notice that the same **Refund With Special Voucher** step involves only $631.11 in invoice value, which is less than half of most of the other steps.
 
-    Notice that the same **Refund With Special Voucher** step involves only $656.31 in invoice value, which is less than half of most of the other steps.
+    :::image type="content" source="media/process-mining-tutorial/refund-mean.png" alt-text="Screenshot of the refund with special voucher mean.":::
 
-    :::image type="content" source="media/process-mining-tutorial/refund-voucher.png" alt-text="Screenshot of refund with special voucher of $656.31 in invoice value.":::
+1. This step might be a good candidate for extra investigation, so select this step's node.
 
-1. This step might be a good candidate for extra investigation, so select the step.
+1. On the **Customization** panel, select **Create filter** > **Attributes**.
 
-1. In the **Customization** panel, select **Filter** > **Attributes**.
-
-    :::image type="content" source="media/process-mining-tutorial/attributes-refund.png" alt-text="Screenshot of the Customization panel.":::
+    :::image type="content" source="media/process-mining-tutorial/create-filter.png" alt-text="Screenshot of the Create filter dropdown menu.":::
 
 ## Compare paths with different views
 
@@ -144,55 +128,65 @@ We want to compare the paths that have this **Refund With Special Voucher** step
 
 ### Create the 'Refund With Special Voucher' view
 
-10.	On the filter page, ensure **Refund With Special Voucher** is selected in the **holds any of the values** field.
+1. On the **Filtering** page, ensure **Refund With Special Voucher** is selected in the **holds any of the values** field.
 
-    :::image type="content" source="media/process-mining-tutorial/holds.png" alt-text="Screenshot of the 'holds any of the values' field.":::
+1. On the command bar, select **Add filter** > **Attributes**. 
 
-1. Select (**+**), and then select **Attributes**. This time, select **Does not include** from the **Filter result** dropdown menu.
+1. This time, select **Does not include** from the **Filter result** dropdown menu.
 
-1. Select **Refund With Standard Voucher** from the **holds any of the values** field.
+1. On the **List** tab, select **Refund With Standard Voucher** to place it in the **holds any of the values** field.
 
-1. In the bottom right corner, select **Apply**.
+    Your **Filtering** screen should look like this:
 
-1. In the command bar at the top, select **Save** > **Save as**, and enter **Refund w/ Special Voucher**.
+    :::image type="content" source="media/process-mining-tutorial/does-not-include.png" alt-text="Screenshot of creating the 'Refund With Special Voucher' view.":::
 
-    :::image type="content" source="media/process-mining-tutorial/save-refund.png" alt-text="Screenshot of the 'Save as' option.":::
+1. On the bottom right corner, select **Apply**.
+
+1. On the command bar at the top, select **Save** > **Save as**, and then enter **Refund w/ Special Voucher** > **Save**.
 
 ### Create the 'Refund With Standard Voucher' view
 
 1. Go back to the filter screen by selecting the **Filter** button in the bottom left of the screen.
 
-    :::image type="content" source="media/process-mining-tutorial/filter-button.png" alt-text="Screenshot of the filter button.":::
+1. Clear the **Filter criteria set** and repeat steps 1 through 4 of the previous section, but choose **Refund With *Standard* Voucher** in step 1 and **Refund With *Special* Voucher** in step 4.
 
-1. Repeat steps 10 through 13, but choose **Refund With *Standard* Voucher** and **Refund With *Special* Voucher**, respectively.
-
-1. In the command bar at the top, select **Save** > **Save as**, and enter **Refund w/ Standard Voucher**.
+1. In the command bar at the top, select **Save** > **Save as**, and then enter **Refund w/ Standard Voucher** > **Save**.
 
 ### Compare views
 
 We've created two different views. One view shows the paths that have the **Refund With Special Voucher** step but not the **Refund With Standard Voucher** step (Refund w/ Special Voucher). The other view is its inverse (Refund w/ Standard Voucher). Let's compare these two views.
 
-1. In the left panel, select **Process compare**.
+1. On the left panel, select **Process compare**.
 
-1. In the bottom right corner, select (**+**).
+1. Below the **Compare** tile, select **Add layer**.
 
-1. From the **Views** dropdown menu, select **Refund w/ Special Voucher**, and then select **ADD LAYER**.
+1. From the **Views** dropdown menu, select **Refund w/ Special Voucher** > **Add layer**.
 
-    :::image type="content" source="media/process-mining-tutorial/add-layer.png" alt-text="Screenshot of the 'Refund w/ Special Voucher' view selection.":::
+    The process map that's created is a comparison of the two views.
 
-    The process map that's created is a comparison of the two views. In the **Customize** panel, ensure that **Mean duration** is selected as the metric.
+1. In the **Customize** panel, ensure that **Mean duration** is selected as the metric.
 
 1. Save this view as **Standard vs. Special**.
 
 ## Understand the process map with different views
 
-The orange nodes represent steps common to both views. Green nodes represent the steps that take place in only the process with a special voucher. Blue nodes represent steps that take place only in the paths with standard voucher.
+The green nodes represent steps common to both views. Red node represents the step that take place only in the process with a special voucher (as indicated by the **Compare** legend). Blue nodes represent steps that take place only in the paths with standard voucher.
 
-:::image type="content" source="media/process-mining-tutorial/comparison-view.png" alt-text="Screenshot of the comparison view process.":::
+:::image type="content" source="media/process-mining-tutorial/compare-legend.png" alt-text="Screenshot of a process map with color nodes.":::
 
-From the screenshot in the earlier screenshot, we can see that there were only nine cases with **Refund With Special Voucher**, but on average, that step lengthens the process by almost 17 hours according to the process compare map immediately above.
+1. Expand the **Customize** panel by selecting **Customize** on the right navigation bar.
 
-Notice that cases that have the **Refund With Standard Voucher** step also have the possibility of invoices being rejected as the **Reject Invoice** step suggests. This **Reject Invoice** step contributes only 2.8 hours on average to the process.
+1. Select the **Performance** (the clock icon).
+
+1. From the **Metric** dropdown menu, select **Mean duration**.
+
+From the procedure in [Analyze a process](#analyze-a-process) (previously in this article), there were only nine cases with **Refund With Special Voucher**. On average, the process is lengthened by almost 17 hours according to the process compare map in this section.
+
+:::image type="content" source="media/process-mining-tutorial/analyze-compare.png" alt-text="Screenshot of the 'Refund With Special Voucher' with a case comparison.":::
+
+Notice that cases that have the **Refund With Standard Voucher** step also have the possibility of invoices being rejected as the blue node which represents the **Reject Invoice** step suggests. This **Reject Invoice** step contributes only 2.8 hours on average to the process.
+
+:::image type="content" source="media/process-mining-tutorial/reject-invoice.png" alt-text="Screenshot of the 'Reject Invoice' node.":::
 
 Based on insights we derived from this analysis, let's summarize our findings, derive a conclusion, and offer some recommendations for this process.
 
@@ -208,18 +202,18 @@ Based on insights we derived from this analysis, let's summarize our findings, d
 
 - **Refund With Standard Voucher**:
 
-    - Often causes the invoice to be subsequently rejected which only adds a little bit of time to the mean duration of the process.
+    - The cases with this step also have the invoices being subsequently rejected. This causes rework and adds some time to the mean duration of the process.
 
 ### Considerations for choosing a special or standard voucher
 
-This organization has two ways to make refunds using vouchers: **Refund With Special Voucher** or **Refund With Standard Voucher**. The latter may sometimes cause some rework because some of those invoices are subsequently rejected. On the other hand, using the special voucher never causes invoice rejection, which may make it seem like using a special voucher should be the consistent course of action.
+This organization has two ways to make refunds using vouchers: **Refund With Special Voucher** or **Refund With Standard Voucher**. The latter might sometimes cause some rework because some of those invoices are subsequently rejected. Alternatively, using the special voucher never causes invoice rejection. This might make it seem like using a special voucher should be the consistent course of action.
 
-However, having the possibility of the invoice being rejected via a standard voucher saves the organization more time than using a special voucher, which never causes the invoice to be rejected&mdash;in fact the difference in mean duration is approximately 13.79 hours.
+However, having the possibility of the invoice being rejected through a standard voucher saves the organization more time than using a special voucher. This never causes the invoice to be rejected&mdash;the difference in mean duration is approximately 13.79 hours.
 
 ### Recommendation
 
-An organization should focus on using standard vouchers versus special vouchers because just a few special vouchers can add a lot of time to the process.
+An organization should focus on using standard vouchers versus special vouchers because just a few special vouchers can add much time to the process.
 
 An organization should do further analysis to determine why using the standard invoice often causes invoice rejection. If they're able to uncover a remedy for this, the organization can implement this to further improve the process.
 
-To learn more about how to take advantage of the advanced capabilities of the minit desktop application, go to [Minit desktop application overview (preview)](minit/minit-desktop-application-overview.md).
+To learn more about how to take advantage of the advanced capabilities of the minit desktop application, go to [Minit overview](minit/minit-desktop-application-overview.md).

@@ -58,7 +58,7 @@ on your list to consider for automation.
 For example, Abhay the accountant must collect expense forms and receipts from
 everyone. The receipts might be a paper receipt from a restaurant or paper
 invoices from vendors. Abhay has to manually scan these papers into a PDF file
-and store it. He also needs to enter what's written on the paper and post
+and store it. Abhay also needs to enter what's written on the paper and post
 it in the financial system for every expense report submitted.
 
 ## Reduce human error
@@ -92,7 +92,7 @@ from the reminder.<!--note from editor: Should there be a "before reminder autom
 
 Another area you may want to automate are high-volume processes.
 High-volume processes are processes that occur very frequently on a daily basis.
-It is closely tied to repetitive processes but is slight different. You may have a process that can only have a step or two that can be automated.
+It is closely tied to repetitive processes but is slightly different. You may have a process that can only have a step or two that can be automated.
 However, if a process must be done many times, even small improvements can have large impacts.
 
 For example, if the expense reporting scenario holds for 1,000 salespeople, each
@@ -131,7 +131,7 @@ increase the throughput of a particular process. With this type of automation,
 your current process can be performed by humans in parallel with the automation.
 
 For example, Abhay the accountant may be the only person processing the expense
-reports and his standard work hours may be between 9 AM to 6 PM. By setting up an
+reports and their standard work hours may be between 9 AM to 6 PM. By setting up an
 automation, you could also have Power Automate to process the expense reports as well, and therefore have both Abhay and the automation to process it, resulting
 in a higher throughput.
 

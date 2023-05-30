@@ -3,7 +3,7 @@ title: Images
 description: Use the images pane to manage images in a desktop flow.
 author: georgiostrantzas
 
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -11,8 +11,6 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

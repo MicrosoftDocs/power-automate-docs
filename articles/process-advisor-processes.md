@@ -10,8 +10,6 @@ ms.topic: conceptual
 ms.date: 11/15/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -34,7 +32,7 @@ Learn more about process advisor processes in the following video.<br>
 
 In general, processes you think might be inefficient or repetitive are good candidates for analysis.
 
-1. Sign in to [Power Automate](https://flow.microsoft.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. On the left-side navigation pane, select **Process advisor** .
 
@@ -112,19 +110,21 @@ As you record your actions, the action descriptions will be listed in the record
 
 ### Recording tips
 
-- Be methodical in your actions to improve the readability of the recording. There's a slight delay, so wait for the red box to focus on the item you're trying to interact with before selecting.
+- To improve the readability of the recording, it is important to be methodical in your actions. This includes waiting for the red box to focus on the item you're trying to interact with before selecting it, as there may be a slight delay.
 
 - If there were any selections made by mistake, delete the action in the recorder screen.
 
+- If you record steps that is not intended to be a part of the process, delete the step using the trash icon.
+
 ## Prepare a recording for analysis
 
-After the recording has been completed, you can view the recorded actions on the recording details screen. More importantly, you need to prepare the recording to be ready for analysis.
+Once the recording is finished, the recorded actions can be viewed on the recording details screen. However, it is important to prepare the recording for analysis before proceeding.
 
 *What does this mean?*
 
-- The actions recorded can be granular, and they need to be grouped into activities. These will be the building blocks for the process map that's created through analysis. Fortunately, process advisor now supports auto create activities from recordings.
+- This means that the actions that were recorded during the process can be very detailed and specific. In order to make sense of them and create a clear process map, these actions need to be grouped together into larger activities. Process advisor now has the ability to automatically group similar actions into activities.
 
-- Remove any sensitive information from the recording. For more information, go to [Protect your data in process advisor](process-advisor-protect.md).
+- It's important to ensure that any sensitive information is removed from the recording before analysis. This can be done to protect data privacy and security. For more information on how to protect your data in process advisor visit [Protect your data in process advisor](process-advisor-protect.md).
 
 Here's a short video on how to prepare a recording for analysis with process advisor.</br>
 </br>
@@ -132,23 +132,23 @@ Here's a short video on how to prepare a recording for analysis with process adv
 
 ### Grouping actions into activities
 
-You should already have some activities that are created automatically. You can accept auto created activities as is, or you can change them.
+Once you have completed the recording process, you may notice that some activities have already been automatically created for you. You have the option to keep these activities as they are, or you can modify them to better suit your needs.
 
 #### Edit an existing activity
 
-1. If you want to change from which action the activity starts, drag the activity header up or down the actions list to where you want the activity to start.
+1. If you want to change the starting action of an activity, simply drag the header of the activity up or down the list of actions to the desired starting point.
 
-2. If you want to change the activity name, select the activity to bring up the activity name combo box on the right side of the screen.
+2. To change the name of an activity, select it and a combo box will appear on the right side of the screen.
 
-3. If you want to find activity names that already exist for the process or create your own, select from the dropdown list.
+3. You can choose from existing activity names in the dropdown list or create your own if needed.
 
 #### Add a new activity
 
-1. Select **Add activity** to add an activity header. All actions under the activity header and before the next activity header are considered part of the group.
+1. Select **Add activity** to add an activity header. All actions below the header and before the next activity header are part of the group.
 
 1. Move the activity header up or down the actions list to where you want the activity to start.
 
-1. Name your activity on the right side of the screen. Use the dropdown list to find activity names that already exist for the process or create your own.
+1. Name the activity on the right side of the screen, using the dropdown list to find existing activity names or create a new one.
 
     :::image type="content" source="./media/group-actions.png" alt-text="Screenshot of grouping actions into activities.":::
 
@@ -176,9 +176,19 @@ To analyze, you need at least two activities. Otherwise, the process map wouldn'
 
 ### Grouping tips
 
-- As much as possible, use an existing activity name. This creates a more consistent and accurate process map.
+Here are some tips to group actions into activities, which may be helpful for your use case.
 
-- Activity names will be available in the dropdown list whenever a recording is saved. To remove an activity name from the  list after it was removed from all recordings that used that name, you need to analyze the recording.
+1. **Use existing activity name**: This creates a more consistent and accurate process map. Activity names will be available in the dropdown list whenever a recording is saved. To remove an activity name from the  list after it was removed from all recordings that used that name, you need to analyze the recording.
+
+2. **Look for patterns**: Analyze the recorded actions for patterns that occur frequently, such as similar steps taken to complete a task or common applications used. Grouping these actions together can help identify common activities.
+
+3. **Use discretion**: Group actions together that make sense to you and are related to the overall process. For example, if you are analyzing a sales process, you might group actions related to lead generation, outreach, and closing deals.
+
+4. **Consider frequency**: You may want to group actions that occur frequently together. This can help identify bottlenecks in the process or areas where automation could be beneficial.
+
+5. **Think about dependencies**: Consider grouping actions that have dependencies on each other. For example, if you need to download a file before uploading it, these two activities could be grouped together.
+
+6. **Use feedback**: Collaborate with other stakeholders in the process, such as employees who perform the tasks or supervisors who oversee the process, to get feedback on the grouping of actions. Their insights can help improve the accuracy and usefulness of the process map.
 
 ### Create recommended activity names
 

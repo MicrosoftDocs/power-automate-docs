@@ -4,7 +4,7 @@ description: Making use of the Power Automate Azure Virtual Desktop Integration 
 services: ''
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/28/2021
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -12,8 +12,6 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - admin
@@ -32,7 +30,7 @@ Configuration App. You can use this application to:
 
 To create a new scale configuration:
 
-1.  Go to [Power Automate](https://flow.microsoft.com/).
+1.  Go to [Power Automate](https://make.powerautomate.com).
 
 2.  On the left pane, select **Solutions**.
 
@@ -70,4 +68,3 @@ strategy. You can now navigate to the target environment and review, test or
 edit the cloud flow if needed. Once you are happy with your configuration, you
 can enable the cloud flow to automatically apply your scaling configuration to
 the machine group.
-

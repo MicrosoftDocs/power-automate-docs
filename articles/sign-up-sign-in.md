@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: anjlic
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -16,11 +15,10 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/17/2020
 ms.author: anjlic
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
+ms.reviwer: angieandrews
 ---
 # Sign up and sign in for Power Automate
 
@@ -30,7 +28,7 @@ Starting with Power Automate, as an individual, is easy! Before you can create a
 
 If you haven't used other online Microsoft products, you'll need to sign up.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **Try free** in the upper-right corner.
+1. In [make.powerautomate.com](https://make.powerautomate.com), select **Try free** in the upper-right corner.
 2. Enter your email address.
 3. Select the right arrow.
 
@@ -38,7 +36,7 @@ If you haven't used other online Microsoft products, you'll need to sign up.
 
 If you've used other Microsoft online products, either for work or yourself, all you need to do is sign in.
 
-1. In [flow.microsoft.com](https://flow.microsoft.com), select **Sign in** in the upper-right corner.
+1. In [make.powerautomate.com](https://make.powerautomate.com), select **Sign in** in the upper-right corner.
 
 1. On the sign-in page, enter your email address and password.
 

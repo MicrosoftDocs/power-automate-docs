@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
 ms.author: Deonhe
 editor: ''
 tags: ''
@@ -16,12 +15,11 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/27/2022
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
-ms.custom: intro-internal
+ms.collection: get-started
+ms.reviewer: gtrantzas
 ---
 # Start to build with Power Automate
 
@@ -35,13 +33,13 @@ Here are some of the ways you can extend your application with Power Automate:
 
 ## Prerequisites
 
-* A [Power Automate](https://flow.microsoft.com) account.
+* A [Power Automate](https://make.powerautomate.com) account.
 
 ## Create a custom connector
 
 If you have a web service to which you want to connect from Power Automate, you'll first need to create a custom connector. When you register a custom connector, you teach Power Automate about the characteristics of your web service, including the authentication it requires, the triggers and actions that it supports, and the parameters and outputs for each of those actions.
 
-Follow this tutorial to learn how to [create and use custom APIs](/power-apps/developer/data-platform/custom-api). After you register your custom connector, you can share it within your organization for testing.
+Follow this tutorial to learn how to create a custom connector. After you register your custom connector, you can share it within your organization for testing.
 
 ## Share a custom connector with all Power Automate users
 

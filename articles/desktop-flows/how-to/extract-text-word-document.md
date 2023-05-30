@@ -4,7 +4,7 @@ description: Extract text from a Word document using VBScript
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/24/2021
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -12,8 +12,6 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

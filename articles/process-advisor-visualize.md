@@ -10,8 +10,6 @@ ms.topic: conceptual
 ms.date: 11/15/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType:
   - flowmaker
   - enduser
@@ -21,41 +19,43 @@ search.audienceType:
 
 ## Process map
 
-The process map makes it possible to visualize and analyze processes. By looking at a graphical representation of how your business processes are performed, you can glean insights into where opportunities for improvement exist. To get to the process map, select the **Analytics** > **Process** tab.
+The process map is a powerful tool that can help you visualize and analyze your business processes. It provides a graphical representation of how your processes are performed, making it easier to identify areas for improvement. You can access the process map by selecting the **Analytics** > **Process** tab. From there, you'll be able to see a detailed view of your processes, including each step in the process and how they are connected. The process map can help you identify inefficiencies or bottlenecks in your processes, allowing you to make improvements that can save time and resources.
 
 :::image type="content" source="./media/automation-reco-1.png" alt-text="Screenshot of the process map.":::
 
-Activities describe tasks or actions that make up a business process. Activities can be performed by humans or by machines during automation. In the process map, different activities appear as nodes, and transitions between activities appear as edges. Each process sequence will have a start and an end.
+Activities are tasks or actions that form a business process, and they can be performed by humans or machines. In the process map, activities are represented as nodes and transitions between them as edges, with each sequence having a start and an end.
 
-Different activity combinations and variants are shown separately on the process map. A process variant is a unique path from the very beginning to the very end of the process. In other words, a process variant is a specific activity sequence, like a “trace” through the process, from start to end. Each variant differs from the others by at least one activity. You can see more metrics, frequency of the activities, and throughput time on the process map. Frequency shows you the total number of recordings/cases passing through it. Throughput time is the time between the first event of the case and the last.
+The process map displays different combinations of activities as separate process variants. Each process variant is a unique sequence of activities from the start to the end of the process. Each variant differs from the others by at least one activity. The process map provides metrics such as the frequency of activities and throughput time for each variant. Frequency indicates the total number of recordings/cases that pass through an activity, while throughput time is the time between the first and last event of a case.
 
 There are various filters available for you to drill down into the process:
 
-- **Variant selector**: Allows you to select one variant or a set of process variants to visualize in your process map.
+- **Variant selector**: You can activate this filter by clicking one or multiple bars in the **Variants** bar graph. It allows you to select one variant or a set of process variants to visualize in your process map.
 
-- **Recording selector**: Allows you to select one recording or a set of recordings to visualize in your process map.
+- **Recording selector**: You can activiate this filter by clicking one or multiple bars in the **Recording by time** bar graph. It allows you to select one recording or a set of recordings to visualize in your process map.
 
-- **Time filter**: Allows you to see the process visualization in a particular period. Additionally, there are key performance indicators available to help you better understand your process. They're described in more detail below.
+- **Start date filter**: Allows you to see the process visualization in a particular period. 
+
+Furthermore, there are specific metrics provided as key performance indicators that can help you gain a better understanding of your process. These metrics are discussed in more detail below.
 
 ### Process KPIs
 
-- **Number (#) of recordings**: Shows you how many recordings of the same process were submitted to analyze this process. The more recordings you have available, the more insights you will get. For example, if you provide only a few recordings of a process that often has different paths to completion, you might not get insights into all the variations that the process could take.
+- **Number (#) of recordings:** This KPI displays the total number of recordings of the same process that were submitted to analyze the process. The more recordings available, the more insights can be gained. For instance, if you only provide a few recordings of a process that has multiple paths to completion, you may not gain insights into all the possible process variations.
 
-- **Number of variants**: Shows the number of paths a process could take. For example, if a process has one other activity, that would be counted as one additional variant of a process.
+- **Number of variants**: This KPI indicates the number of paths a process could take. For example, if a process has one additional activity, it would be counted as one more variant of the process.
 
-- **Average time**: Shows you the average time it takes for a process to be completed across all recordings associated with the process. It's one of the most important data points for process mining because deep-diving into the duration of a process can inform you of any bottlenecks.
+- **Average time**: This KPI displays the average time taken to complete a process across all the recordings associated with the process. It is a crucial data point for process mining because examining the duration of a process can reveal any bottlenecks.
 
 ### Process map visualizations
 
-- **Variants by frequency**: How many times a particular process path was taken by the process.
+- **Variants by frequency**: Displays how frequently a specific process path was followed by the process.
 
-- **Variants by time**: The average time spent to finish the process per variant.
+- **Variants by time**: Shows the average time spent to finish the process per variant.
 
-- **Activity by average time**: The average time each activity takes. A quick glance at this visual can reveal the most time-consuming activities of a process.
+- **Activity by average time**: Displays the average time taken for each activity. A quick glance at this visual can help identify the most time-consuming activities of a process.
 
-- **Recordings by time**: The time it took for each recording in a process.
+- **Recordings by time**: Displays the time taken for each recording in a process.
 
-- **Start date**: A filter for the time when recording started. For example, if your process changed over time, you may want to see if there was any impact on your metrics after the process changed by filtering for recordings that started after a certain time.
+- **Start date**: Shows you Shows you the date range for the analytics and process maps shown in the report.
 
 ## Application analytics
 
@@ -81,15 +81,15 @@ Application analytics allow you to gain more insights from recordings by underst
 
 ### Application analytics visualizations
 
-- **Application usage**: A scatter plot that shows time spent on one axis and times accessed on the other for each app used. The size of the circles represents how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps are used a lot but only in terms of times accessed. This means the recorder is jumping back and forth between this application and others. For example, this may occur in cases where copy-and-paste is happening. Other apps are used for a long time and the action is limited to that application. It does not depend on other recordings for completion of the necessary activity.
+- **Application usage**: This scatter plot shows the time spent and times accessed for each app used, with the size of the circles representing how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps may be used frequently but only for short periods, indicating the recorder is jumping back and forth between this application and others. Other applications may be used for a longer period of time, and the process relies heavily on actions occurring within that application, without requiring extensive of other applications.
 
-    The size of the circles clarifies what applications are used in most or all recordings. It represents an application that's needed for the process and something to concentrate on from an optimization or automation perspective.
+The size of the circles in the scatter plot indicates the frequency of usage of each application across all recordings. Applications that are used in most or all recordings will have larger circles. This information can be helpful in identifying essential applications in a process that may require optimization or automation to improve overall efficiency.
 
-- **Application switching**: A bar chart that shows which pairs of application are most frequently used. This extends the number of times accessed in the application usage visual to help identify what two applications are most often used together. This can denote some information transfer (such as copy-and-paste) between these applications, which is something to consider when automating.
+- **Application switching**: This bar chart is used to display the frequency of pairs of applications used together. It complements the application usage scatter plot by providing additional information on what two applications are most frequently used in conjunction. The insights gained from this chart can help identify any data transfers or manual input between these applications, which is important to consider when optimizing or automating the process.
 
-- **Time spent by application**: A pie chart that shows a distribution of the time spent per app. This helps you understand which applications are being used the most.
+- **Time spent by application**: This is a pie chart that is used to represent the distribution of time spent on each application. This visual provides a clear understanding of which applications are being utilized the most in terms of time spent on them.
 
-- **Actions by application**: A pie chart that shows a distribution of the actions per app. This helps you understand which apps have the most actions or manual inputs.
+- **Actions by application**: This is a pie chart that is hows the distribution of actions performed on each application. This visual helps identify which applications have the most actions or manual inputs, providing insight into areas that may require further optimization or automation.
 
 ### See also
 

@@ -3,14 +3,12 @@ title: Troubleshoot desktop flows
 description: See how to troubleshoot common issues of Power Automate desktop flows.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 12/12/2022
+ms.topic: troubleshooting
+ms.date: 02/20/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
 - PetrosFeleskouras
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser
@@ -46,7 +44,7 @@ After deleting the **msalcache.bin3** file, restart the Power Automate service a
 
 By default, Power Automate for desktop uses an Internet Explorer client to facilitate user authentication. If you encounter errors while signing in, try setting it to authenticate users through Web Account Manager (WAM).
 
-WAM allows signing in using accounts already registered to Windows without requiring passwords. You can find more information regarding WAM in [this article](/azure/active-directory/develop/scenario-desktop-acquire-token-wam).
+WAM allows signing in using accounts already registered to Windows without requiring passwords. It enables single sign-on (SSO) and can resolve sign-in issues related to Active Directory Federation Services (ADFS). Learn more about WAM in [Interactive with WAM](/azure/active-directory/develop/scenario-desktop-acquire-token-wam).
 
 To enable the WAM functionality in Power Automate for desktop, modify the [appropriate registry entry](governance.md#allow-users-to-sign-in-to-power-automate-for-desktop-using-web-account-manager-wam).
 
@@ -88,14 +86,22 @@ If none of the above is possible, specify Power Automate executables to run as a
 
 ## Change the on-premises Service account
 
-The UIFlowService uses the virtual account **NT SERVICE\UIFlowService**. This account needs the ability to "Log on as a service" in order to successfully start.
+The Power Automate service (**UIFlowService**) communicates with Power Automate cloud services for machine registration and running desktop flows.
 
-Most environments don't require to change the default configuration. If your company has some restrictions in place, you can either ask your domain administrator to grant **NT SERVICE\UIFlowService** the right to **Log on as a service** or change the account here with an allowed one.
+By default, it runs as a virtual account created by the Power Automate installer called **NT SERVICE\UIFlowService**.
 
-1. Select **Change account**
-1. Select **This account**
-1. Provide the new account, for example: **DOMAIN\AlexJohnson**
-1. Provide the password of this account and select **Configure**
+Most on-premises environments don't require changing the default configuration. However, you may run into errors registering machines or running flows for the following reasons:
+
+- Your network doesn't allow requests made by the **NT SERVICE\UIFlowService** virtual account to reach Power Automate cloud services.
+- Your machine or group policy disallows the **Log on as a service** privilege for the **NT SERVICE\UIFlowService** account.
+
+In either of these cases, you can ask your domain or network administrator to grant **NT SERVICE\UIFlowService** the appropriate privileges. Alternatively, you can replicate the following steps to change the account with which the Power Automate service runs:
+
+1. Launch the Machine runtime application and select the **Troubleshoot** tab.
+1. Select **Change account**.
+1. Select **This account**.
+1. Provide the new account, for example: **DOMAIN\AlexJohnson**.
+1. Provide the password of this account and select **Configure**.
 
 :::image type="content" source="media/troubleshoot/power-automate-troubleshoot-dialog.png" alt-text="Screenshot of the Power Automate troubleshoot dialog.":::
 
@@ -231,6 +237,7 @@ Hosted machine provisioning errors:
     To resolve this issue, open the Task Manager and go to the **Users** tab. There, terminate all other user sessions except for the current session, and then log-off from the machine.
 
     :::image type="content" source="media/troubleshoot/task-manager-sessions.png" alt-text="Screenshot of the Users tab in Task Manager.":::
+
 ## Get self-help or ask help from support
 
 If you need help, use our self-help options, or ask for help from support.
@@ -248,7 +255,9 @@ If you need help, use our self-help options, or ask for help from support.
 1. Select **See solutions**.
 
 > [!IMPORTANT]
-> We offer full support for all Power Automate for desktop product versions released within a year from the latest public product release. For product releases prior to a year back from the latest release, only issues of severity level **Critical** and **Severity A** are supported.
+> The following statement is subject to change.
+>
+> We offer full support for all Power Automate for desktop product versions released within a year from the latest public product release. For product releases prior to a year back from the latest release, only issues of severity level **Critical** and **Severity A** are supported. Product fixes are always added to the latest version.
 >
 >To find more information about severity levels, go to [Support overview](/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request). To see the currently supported releases, go to [Released versions for Power Automate for desktop](/power-platform/released-versions/power-automate-desktop).
 

@@ -3,7 +3,7 @@ A common use of **Power Automate** is to get a **notification** when something h
 ![From a template.](./media/learning-get-notifications/template-notifications.png)
 
 ## Required app
-It's easy to create a cloud flow that sends push notifications to your **mobile device**.  You can create the flow in the **mobile app** or at **flow.microsoft.com**, but you'll need the **mobile app** to receive push notifications. The Power Automate mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), and [Windows Phone](https://aka.ms/flowmobilewindows).
+It's easy to create a cloud flow that sends push notifications to your **mobile device**.  You can create the flow in the **mobile app** or at the [Power Automate portal](https://make.powerautomate.com), but you'll need the **mobile app** to receive push notifications. The Power Automate mobile app is available for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), and [Windows Phone](https://aka.ms/flowmobilewindows).
 
 If you are using an unsupported mobile device, consider using **SMS messages** (texts) to receive notifications instead of push notifications.
 

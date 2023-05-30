@@ -3,13 +3,11 @@ title: Run desktop flows sequentially
 description: See how to run multiple desktop flows on the same machine sequentially.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 11/16/2022
+ms.topic: conceptual
+ms.date: 02/15/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser
@@ -29,7 +27,7 @@ You can [view the state of the queues in real time](monitor-desktop-flow-queues.
 
 > [!IMPORTANT]
 >
-> - A time out occurs when desktop flows don’t run within three hours after being requested.
+> - A time-out occurs when desktop flows don’t run within three hours after being requested.
 > - The presented orchestration rules apply to desktop flow runs scheduled by any user on the same device.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

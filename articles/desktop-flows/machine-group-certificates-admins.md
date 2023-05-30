@@ -3,13 +3,11 @@ title: Machine group certificate renewal for admins
 description: Common questions and answers for machine group certificate renewal.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/16/2022
 ms.author: gachasta
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow
 search.audienceType: 
   - admin
 ---

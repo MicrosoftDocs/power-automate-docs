@@ -4,7 +4,7 @@ description: Automate Java applications
 author: mariosleon
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 10/08/2021
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -12,8 +12,6 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

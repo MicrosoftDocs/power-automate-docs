@@ -3,13 +3,11 @@ title: Best practices
 description: See the best practices for running Power Automate desktop flows.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 11/21/2022
+ms.topic: conceptual
+ms.date: 02/15/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser
@@ -38,7 +36,7 @@ All the presented strategies prevent desktop flows from competing to run on the 
 
 ## Support long-running desktop flows
 
-Some desktop flows may run for long durations—for example, more than 24 hours. To ensure that those flows run successfully and don't fail due to the default timeout values, perform the following steps:
+Some desktop flows may run for long durations—for example, more than 24 hours. To ensure that those flows run successfully and don't fail due to the default time-out values, perform the following steps:
 
 1. Select the ellipsis (**…**) on the top of the **Run a flow built with Power Automate for desktop** cloud action, and then select **Settings**.
 

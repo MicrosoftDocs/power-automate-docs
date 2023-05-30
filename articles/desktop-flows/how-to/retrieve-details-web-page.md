@@ -4,7 +4,7 @@ description: Retrieve details from a web page
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/11/2022
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -12,8 +12,6 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -44,7 +42,7 @@ Although most properties exist virtually on every web page, there are scenarios 
 
 If you're unsure if an attribute exists on a web page, configure the **On error** options of the **Get details of web page** action to continue running the flow after failure. To find more information about action error handling, refer to [Handle errors in desktop flows](../errors.md).
 
-![Screenshot of the on error options of the the Get details of web page action.](media/retrieve-details-web-page/get-details-web-page-action-on-error.png)
+![Screenshot of the on error options of the Get details of web page action.](media/retrieve-details-web-page/get-details-web-page-action-on-error.png)
 
 To determine whether the data extraction is successful, use an **If** conditional to check if the **WebPageProperty** variable is empty or not. 
 

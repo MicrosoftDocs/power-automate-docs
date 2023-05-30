@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: Dean-Haas
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -15,8 +14,6 @@ ms.workload: na
 ms.date: 06/22/2022
 ms.author: napienko
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -65,7 +62,7 @@ Add your form to a flow, and then add the following actions.
 
 ## Upload form responses to a Power BI dataset
 
-Learn how to [turn Forms surveys into insights with Power Automate and Power BI](https://flow.microsoft.com/blog/forms-and-flow-and-powerbi/).
+Learn how to [turn Forms surveys into insights with Power Automate and Power BI](https://make.powerautomate.com/blog/forms-and-flow-and-powerbi/).
 
 ## More information
 

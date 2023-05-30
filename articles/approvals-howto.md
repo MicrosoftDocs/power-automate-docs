@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -14,11 +13,9 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/01/2021
+ms.date: 01/12/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -102,9 +99,9 @@ And the resulting approval email will look like this:
   
 If received an approval request, but you want somebody else to make the approval decision, you can reassign the approval to somebody else:  
   
-1. Login to the [Power Automate](https://flow.microsoft.com/).
+1. Login to the [Power Automate](https://make.powerautomate.com).
 
-1. On the left navigation bar, go to **Action items** > **Approvals**
+1. On the left navigation bar, select **Approvals**.
 
 1. Hover your mouse over the approval you want to reassign, select the three dots > **Reassign**.
 
@@ -117,9 +114,9 @@ On the other hand, if you are the requester, you cannot reassign the approval re
 
 To cancel an approval:
 
-1. Login to the [Power Automate](https://flow.microsoft.com/).
+1. Login to the [Power Automate](https://make.powerautomate.com).
 
-1. On the left navigation bar, go to **Action items** > **Approvals**
+1. On the left navigation bar, select **Approvals**.
 
 1. Select the **Sent** tab.
 
@@ -138,9 +135,9 @@ If you would like to be notified when an approver responds to an approval reques
   
 If you are the maker of a flow that requests approvals, and the approval requests haven't been answered, you can cancel it by:
 
-1. Login to the [Power Automate](https://flow.microsoft.com/).
+1. Login to the [Power Automate](https://make.powerautomate.com).
 
-1. On the left navigation bar, go to **Action items** > **Approvals**
+1. On the left navigation bar, select **Approvals**.
 
 1. Select the **Sent** tab.
 
@@ -154,7 +151,7 @@ Some processes require pre-approval before the final approver is required to sig
 
 ## Post an approval request in Microsoft Teams
 
-If you would like to notify the assigned approvers through a message in Microsoft Teams instead of by email, start with the [Request approval in Teams for a selected item in SharePoint template](https://flow.microsoft.com/galleries/public/templates/7d892b1f1dc2479b873268eca6cae58b/request-approval-in-teams-for-a-selected-item-in-sharepoint/) to do it.
+If you would like to notify the assigned approvers through a message in Microsoft Teams instead of by email, start with the [Request approval in Teams for a selected item in SharePoint template](https://make.powerautomate.com/galleries/public/templates/7d892b1f1dc2479b873268eca6cae58b/request-approval-in-teams-for-a-selected-item-in-sharepoint/) to do it.
 
 ## Send an approval to multiple people  
   

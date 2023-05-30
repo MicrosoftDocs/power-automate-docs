@@ -1,23 +1,24 @@
 ---
 title: Run flows on a schedule in Power Automate | Microsoft Docs
-description: Automate recurring tasks by running flows on a schedule, such as every day or every hour.
+description: Learn how to automate recurring tasks by running flows on a schedule, such as every day or every hour.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
+ms.author: napienko
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/13/2022
-ms.author: deonhe
-ms.reviewer: gtrantzas
-search.app: 
-  - Flow
+ms.date: 01/12/2023
 search.audienceType: 
   - flowmaker
   - enduser
@@ -26,28 +27,30 @@ search.audienceType:
 
 Create a cloud flow that performs one or more tasks (such as sending a report in email).
 
-* Once a day, an hour, or a minute.
-* On a date that you specify.
-* After a number days, hours, or minutes that you specify.
+- Once a day, an hour, or a minute.
+
+- On a date that you specify.
+
+- After a number days, hours, or minutes that you specify.
 
 ## Create a recurring flow
 
-1. Sign in to [Power Automate](https://flow.microsoft.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
 1. Select **My flows** > **New flow** > **Scheduled cloud flow**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of create a scheduled cloud flow.](./media/run-scheduled-tasks/create-flow.png "Create a scheduled cloud flow")
-
 1. In the fields next to **Starting**, specify the date and time when your flow should start.
+
 1. In the fields next to **Repeat every**, specify the flow's recurrence.
+
 1. Select **Create**.
 
-    >[!div class="mx-imgBorder"]
-    >![Set recurrence.](./media/run-scheduled-tasks/select-recurrence.png "Set recurrence")
+    :::image type="content" source="media/run-scheduled-tasks/select-recurrence-aa.png" alt-text="Screenshot of the options to set up a scheduled flow.":::
 
 ## Configure advanced options
 
 1. Follow the steps in the previous section.
+
 1. Select **Recurrence** > **Show advanced options**. When you select **Show advanced options**, the dropdown name changes to **Hide advanced options**.
 
     >[!div class="mx-imgBorder"]
@@ -57,8 +60,11 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
     >These options change based on the values to which **Interval** and **Frequency** are set. If your screen doesn't match the graphic below, make sure that **Interval** and **Frequency** are set to the same values that the graphic shows.
 
 1. In the **Time zone** field, select a time zone from the dropdown list to specify whether the **Start time** reflects a local time zone, Coordinated Universal Time (UTC), or other time zone.
+
 1. In the **Start time** field, enter a start time in this format: YYYY-MM-DDTHH:MM:SSZ
+
 1. If you specified **Day** under **Frequency**, select the time of day when the flow should run in the **At these hours** and **At these minutes** dropdown lists.
+
 1. If you specified **Week** under **Frequency**, do the following.<br/>
     - In the **On these days** and **At these hours** dropdown lists, select the day or days of the week on which the flow should run and the time or times of day when the flow should run.
     - In the **At these minutes** field, enter the minute values (from 0 to 59) separated by a comma.
@@ -73,8 +79,8 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 1. Add the action or actions that you want the flow to take, as described in [Create a cloud flow from scratch](get-started-logic-flow.md).
 
-## Learn more
+### See also
 
-Learn more about the [advanced options](/azure/connectors/connectors-native-recurrence) and how to configure them.
+[Advanced options in Azure Logic Apps](/azure/connectors/connectors-native-recurrence)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -5,22 +5,19 @@ services: ''
 suite: flow
 documentationcenter: na
 author: masisley
-manager: kvivek
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/16/2022
+ms.date: 04/17/2023
 ms.author: deonhe
 ms.reviewer: gtrantzas
 Contributors:
   - georgiostrantzas
-search.app: 
-  - Flow
+  - jpapadimitriou
 search.audienceType: 
   - flowmaker
   - enduser
@@ -58,11 +55,11 @@ The following table lists the services to which Power Automate connects. Ensure 
 | login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />login.live.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to authentication and authorization endpoints. |
 | graph.microsoft.com | https | Access to Microsoft graph - for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for Connectors. |
-| *.flow.microsoft.com | https | Access to the Power Automate site. |
+| *.flow.microsoft.com <br> *.logic.azure.com | https | Access to the Power Automate site. |
 | *.powerautomate.com | https | Access to Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
 | *.azureedge.net | https | Access to the Power Automate CDN. |
-| nps.onyx.azure.net | https | Access to NPS (Net Promoter Score). |
+| *.microsoftcloud.com | https | Access to NPS (Net Promoter Score). |
 | webshell.suite.office.com | https | Access to Office for header and search. Refer to [the Office 365 urls and ranges](/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) for more details. |
 | *.dynamics.com | https | Access to Dataverse tables |
 |go.microsoft.com|https|Access to the Power Automate to check for updates|
@@ -102,6 +99,8 @@ The following table lists endpoint data requirements for connectivity from a use
 | \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for machine connectivity. |
 |\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
 | emea.events.data.microsoft.com|https| Handles telemetry for EMEA users.|
+| *.api.powerplatform.com | https | Access to several Power Platform APIs. |
+| *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for GCC). |
 
 ### U.S. Government endpoints
 
@@ -109,8 +108,15 @@ The following table lists endpoint data requirements for connectivity from a use
 | ------- |  -------- | ---- |
 |ocsp.digicert.com<br>crl3.digicert.com<br>crl4.digicert.com | http | Access to the CRL server for US government cloud.<br>Needed when connecting through the on-premises data gateway.|
 | *.servicebus.usgovcloudapi.net | https | Listens on Service Bus Relay for US government cloud.<br>Needed for machine connectivity. |
-| gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud (GCC and GCCH). |
+| \*.gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud (GCC and GCCH). |
+| \*.gateway.gov.island.appsplatform.us | https | Needed for machine connectivity for US government cloud (DOD). |
 |tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
+| *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
+| *.api.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
+| *.microsoftdynamics.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(U.S. Government - GCC High only). |
+| *.crm.appsplatform.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(U.S. Government - DoD only). |
+| *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for public clouds). |
 
 ### 21Vinaet endpoints (China)
 
@@ -118,5 +124,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | ------- |  -------- | ---- |
 |crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
 |apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
+| *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vinaet - China only). |
+| *.dynamics.cn | https | Access to Dataverse tables (DesktopFlow modules feature)(21Vinaet - China only). |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

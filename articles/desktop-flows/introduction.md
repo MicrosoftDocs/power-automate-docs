@@ -1,15 +1,15 @@
 ---
 title: Introduction to desktop flows
 description: Introduction to desktop flows
-author: georgiostrantzas
-
+author: Mattp123
 ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 09/22/2020
-ms.custom: intro-internal
+ms.topic: conceptual
+ms.date: 05/02/2023
+ms.collection: get-started
 ms.author: marleon
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -21,6 +21,9 @@ search.audienceType:
 ---
 
 # Introduction to desktop flows
+
+>[!WARNING]
+> We've identified that an upcoming Chrome browser update, scheduled to be released on Tuesday, May 2, 2023, and Microsoft Edge update, scheduled to be released on Thursday, May 4, 2023, might cause an interruption to your desktop flow automation. Users might receive an error when attempting to perform flow automations from Chrome or Edge with update 113. We recommend that you turn off automatic updates to Chrome and Edge 113 while we work to release a fix by the end of day Tuesday, May 2, 2023.
 
 Desktop flows broaden the existing robotic process automation (RPA) capabilities in Power Automate and enable you to automate all repetitive desktop processes. Automating is quicker and easier than ever with the new intuitive Power Automate desktop flow designer using the prebuilt drag-and-drop actions or recording your own desktop flows to run later. 
 

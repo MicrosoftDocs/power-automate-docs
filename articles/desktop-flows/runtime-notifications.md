@@ -3,13 +3,11 @@ title: Runtime notifications
 description: See the different types of Power Automate for desktop runtime notifications.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 11/16/2022
+ms.topic: conceptual
+ms.date: 02/16/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser
@@ -28,7 +26,7 @@ The **Windows notifications** option displays a Windows notification pop-up when
 
 :::image type="content" source="media\runtime-notifications\notification-window.png" alt-text="Screenshot of a notification window.":::
 
-The **Flow monitoring window** option provides the same functionality as the windows notifications, while it offers some extra functionality.
+The **Flow monitoring window** option provides the same functionality as the Windows notifications, while it offers some extra functionality.
 
 Instead of displaying separate notifications for each desktop flow, the monitoring window displays the state of all running flows in a single window. Further, it shows which subflow and action are running at any given time for each desktop flow. If an error occurs, you can copy the error details directly through the monitoring window for easier debugging.
 

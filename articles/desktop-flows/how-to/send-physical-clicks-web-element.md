@@ -4,7 +4,7 @@ description: Send physical clicks on a web element
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 06/23/2021
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -12,8 +12,6 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

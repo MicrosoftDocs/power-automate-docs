@@ -10,7 +10,7 @@ tags: ''
 
 ms.devlang: na
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2022
@@ -20,8 +20,6 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -45,18 +43,18 @@ Available priorities are High and Normal (the default value). This value can als
 
   ![Screenshot of a cloud flow using the Run a flow built with Power Automate Desktop action.](media\monitoring\monitor-desktop-flow-queues-1.png)
 
-When multiple runs are queued, the execution ordering is based on the run priority and enqueued time. Runs with a high priority that have been enqueued first will be executed first.
+When multiple runs are queued, the execution ordering is based on the run priority and enqueued time. Runs with a high priority that 's been enqueued first will be executed first.
 
 ## View run queue for a machine or machine group
 
 
-Visit the details page for your machine or machine group, then click on the **Run queue** tab to see the list of queued desktop flow runs.
+Visit the details page for your machine or machine group, then select on the **Run queue** tab to see the list of queued desktop flow runs.
 
   ![Screenshot of a list of desktop flows on gateways.](media\monitoring\monitor-desktop-flow-queues-3.png)
 
 ## Prerequisites
-In order to see runs in this list, one of the following must be true:
-- You are [running an attended or unattended desktop flow](run-desktop-flow.md) in the current environment
+In order to see runs in this list, one of the following situations must be true:
+- You're [running an attended or unattended desktop flow](run-desktop-flow.md) in the current environment
 - Another user has [shared their desktop flow](../create-team-flows.md#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
 - You have [permission](/power-platform/admin/database-security) to see view all data in the environment
 
@@ -79,7 +77,7 @@ Four actions are available when clicking on the three dots next to the desktop f
 
 ## Change priority
 
-You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you are an owner, or if you are a co-owner on the machine/machine group or admin on the gateway.
+You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you're an owner, or if you're a co-owner on the machine/machine group or admin on the gateway.
 
 Changing the priority only impacts the current run and not any subsequent ones. If you wish to [change the priority of all the upcoming runs](#setting-a-priority), you need to change the priority in the connector action.
 
@@ -90,10 +88,10 @@ The owner of the device or a user with administrator privileges for the machine,
 You can cancel moving a run to top. It will revert the run back to its original priority and queued time.
 
 ## See parent flow run
-If you have permission to access the parent flow, you can use this action to view its run details.
+If you have permission to access the parent flow, you can use this action to view it's run details.
 
 ## Cancel parent flow run
-If you are the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This will cancel the current desktop flow as well as all the other action that were used in the parent flow.
+If you're the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This will cancel the current desktop flow and all the other action that were used in the parent flow.
 
 ## View list of run queues for gateways
 
@@ -105,12 +103,13 @@ From this page you can view all the gateways to which you have access. Each gate
 
 ## Using gateways with multiple environments
 
-It is recommended to use a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed. 
+It's recommended to use a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed. 
 
-With multiple environments, in some cases no flows may appear to be running even with a full list of queued runs, as the gateway may be running flows in another environment. Run queues are per environment and cannot be prioritized one over the other. A message will be shown to indicate if the gateway is being used in another environment. 
+With multiple environments, in some cases no flows may appear to be running even with a full list of queued runs, as the gateway may be running flows in another environment. Run queues are per environment and can't be prioritized one over the other. A message will be shown to indicate if the gateway is being used in another environment. 
 
 ## Known issues
 - Microsoft recommends that you limit the number of short (~under 1 min) desktop flows that you queue in large machine groups.
-- Machines and machine groups are not available in China regions. You can still view the desktop flow queue for your gateways by visiting **Desktop flow queues** under the **Monitor** section in the left navigation.
+- Machines and machine groups aren't available in China regions. You can still view the desktop flow queue for your gateways by visiting **Desktop flow queues** under the **Monitor** section in the left navigation.
+- Desktop flow queues are designed using a best-effort FIFO (first-in, first-out) approach to process runs in the order in which they were received, with the oldest execution running first. However, due to the way runs are prepared and processed internally, it's possible that runs added to the queue a few seconds later will be started before the previous one already in the queue, to optimize the use of machines.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,31 +1,29 @@
 ---
-title: SharePoint (preview)
-description: SharePoint (preview) Actions Reference
+title: SharePoint 
+description: Learn about the available SharePoint actions.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/22/2022
+ms.date: 03/01/2023
 ms.author: dipapa
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# SharePoint (preview)
+# SharePoint
 
-The SharePoint (preview) group of actions allows the utilization of the [SharePoint connector](/connectors/sharepointonline) from within desktop flows, alleviating the need to create a cloud flow in order to use its actions. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data.
+The SharePoint group of actions allows the utilization of the [SharePoint connector](/connectors/sharepointonline) from within desktop flows, alleviating the need to create a cloud flow in order to use its actions. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data.
 
 ## Prerequisites and limitations
 
-- During preview, you need an Attended RPA license.
+- You need an Attended RPA license.
 
 - Sharing desktop flows with SharePoint cloud actions isn't supported. Co-owners won't be able to run such desktop flows unless they overwrite the connection references with their own. **Users** with read access are unable to run such flows.
 
-- Data loss prevention policies (DLP) that include SharePoint cloud actions aren't enforced within desktop flows. During preview, machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
+- Data loss prevention policies (DLP) that include SharePoint cloud actions aren't enforced within desktop flows. Machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
 
 - Refrain from modifying a response’s properties directly as it may lead to an erroneous state after future updates. Instead, opt for storing the properties you want to utilize (from the response retrieved) directly into separate variables.
 
@@ -35,20 +33,29 @@ Users can still combine SharePoint actions with the **Run a flow built with Powe
 
 ## List of SharePoint actions
 
-- [Update file](#update-file)
-- [Delete file](#delete-file)
-- [Get file content using path](#get-file-content-using-path)
-- [Get file content](#get-file-content)
-- [Create file](#create-file)
-- [List folder](#list-folder)
-- [Get all lists and libraries](#get-all-lists-and-libraries)
-- [Get file metadata](#get-file-metadata)
-- [Get file metadata using path](#get-file-metadata-using-path)
-- [Get folder metadata](#get-folder-metadata)
-- [Get folder metadata using path](#get-folder-metadata-using-path)
-- [List root folder](#list-root-folder)
-- [Extract folder](#extract-folder)
-- [Get lists](#get-lists)
+- [Create sharing link for a file or folder](/connectors/sharepointonline/#create-sharing-link-for-a-file-or-folder)
+- [Copy file](/connectors/sharepointonline/#copy-file)
+- [Move file](/connectors/sharepointonline/#move-file)
+- [Copy folder](/connectors/sharepointonline/#copy-folder)
+- [Move folder](/connectors/sharepointonline/#move-folder)
+- [Create file](/connectors/sharepointonline/#create-file)
+- [List folder](/connectors/sharepointonline/#list-folder)
+- [Check out file](/connectors/sharepointonline/#check-out-file)
+- [Discard check out](/connectors/sharepointonline/#discard-check-out)
+- [Check in file](/connectors/sharepointonline/#check-in-file)
+- [Get list views](/connectors/sharepointonline/#get-list-views)
+- [Get all lists and libraries](/connectors/sharepointonline/#get-all-lists-and-libraries)
+- [Get file metadata](/connectors/sharepointonline/#get-file-metadata)
+- [Update file](/connectors/sharepointonline/#update-file)
+- [Delete file](/connectors/sharepointonline/#delete-file)
+- [Get file metadata using path](/connectors/sharepointonline/#get-file-metadata-using-path)
+- [Get folder metadata](/connectors/sharepointonline/#get-folder-metadata)
+- [Get folder metadata using path](/connectors/sharepointonline/#get-folder-metadata-using-path)
+- [Get file content using path](/connectors/sharepointonline/#get-file-content-using-path)
+- [Get file content](/connectors/sharepointonline/#get-file-content)
+- [List root folder](/connectors/sharepointonline/#list-root-folder)
+- [Extract folder](/connectors/sharepointonline/#extract-folder)
+- [Get lists](/connectors/sharepointonline/#get-lists)
 
 ## Getting started with SharePoint actions in desktop flows
 
@@ -122,7 +129,7 @@ If you want to download only files of a specific type, add a conditional before 
 
     :::image type="content" source="media\sharepoint\convert-file-binary-data-action.png" alt-text="Screenshot of the Convert file to binary data action.":::
 
-1. Find the **SharePoint (preview)** group of actions in the flow designer and deploy the **Create file** action in the workspace.
+1. Find the **SharePoint** group of actions in the flow designer and deploy the **Create file** action in the workspace.
 
 1. Select an existing connection reference and fill in the required parameters. Here's an example about how to fill the fields:
 
@@ -130,343 +137,3 @@ If you want to download only files of a specific type, add a conditional before 
       > Don't forget to add the appropriate file extension after the file name.
 
     :::image type="content" source="media\sharepoint\sharepoint-create-file-action.png" alt-text="Screenshot of the Create file Sharepoint action.":::
-
-## How to fill action’s input fields
-
-Until dynamic suggestions of input fields become available, here's guidance on what data to fill in for each action.
-
-> [!NOTE]
-> Another way to see which properties are expected as input and output is to create a cloud flow with the same action and observe its dynamic data properties. To find more information regarding the SharePoint cloud actions, refer to [SharePoint](/connectors/sharepointonline).
-
-### Update file
-
-Updates the contents of the file specified by the file identifier.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
-|File Content       |body            |True     |Binary |The content of the file.                                                                         |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                  |
-
-### Delete file
-
-Deletes the file specified by the file identifier.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
-
-### Get file content using path
-
-Gets file contents using the file path.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx".       |
-|Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|File Content |FileContent  |Binary    |The content of the file in binary format.                               |
-
-### Get file content
-
-Get file contents using the file identifier. The contents can be copied somewhere else, or be used as an attachment.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique ID of the file to select.                                                             |
-|Infer Content Type |inferContentType|         |Boolean|This parameter isn't needed when using the **Get file content using path** action in desktop flows, as the maker can define the file extension to use with the **Convert binary data to file** action. |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|File Content |FileContent  |Binary    |The content of the file in binary format.                               |
-
-### Create file
-
-Uploads a file to a SharePoint site. Make sure to pick an existing library.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|Folder Path        |folderPath      |True     |String |Must start with an existing library. Add folders if needed.                                      |
-|File Name          |name            |True     |String |The name of the file.                                                                            |
-|File Content       |body            |True     |Binary |The content of the file.                                                                         |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                  |
-
-### List folder
-
-Returns files contained in a SharePoint folder.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique ID of the folder.                                                                     |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                  |
-
-### Get all lists and libraries
-
-Get all lists and libraries.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-
-#### Returns
-
-|Name         |Path         |Type            |Description                                                             |
-|-------------|-------------|----------------|------------------------------------------------------------------------|
-|value        |value        |array of Tables |List of Tables                                                          |
-
-### Get file metadata
-
-Gets information about the file such as size, etag, created date, etc. Uses a file identifier to pick the file. Use **Get file properties** action to get to the values stored in the columns in the library.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique ID of the folder.                                                                     |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
-
-### Get file metadata using path
-
-Gets information about the file such as size, etag, created date, etc. Uses a file path to pick the file. Use **Get file properties** action to get to the values stored in the columns in the library.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Path          |path            |True     |String |The path of the target file, for example: "/Shared Documents/MyFolderName/myfilename.xlsx".       |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
-
-### Get folder metadata
-
-Gets information about the folder. Uses a file identifier to pick the folder.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|File Identifier    |id              |True     |String |The unique ID of the folder.                                                                     |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
-
-### Get folder metadata using path
-
-Gets information about the folder. Uses a folder path to pick the folder.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|Folder Path        |path            |True     |String |The path of the target folder, for example: "/Shared Documents/MyFolderName.                      |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
-
-### List root folder
-
-Returns files in the root SharePoint folder.
-
-#### Parameters
-
-|Name               |Key             |Required |Type   |Description                                                                                      |
-|-------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address       |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
-
-### Extract folder
-
-Extracts an archive file into a SharePoint folder (example: zip).
-
-|Name                    |Key             |Required |Type   |Description                                                                                      |
-|------------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-|Source File Path        |source          |True     |String |The path of the source file.                                                                      |
-|Destination Folder Path |destination     |True     |String |The path of the destination folder.                                                              |
-|Overwrite Flag          |overwrite       |         |BooleanSpecifies whether to overwrite the destination file if it exists.                                 |
-
-#### Returns
-
-|Name         |Path         |Type      |Description                                                             |
-|-------------|-------------|----------|------------------------------------------------------------------------|
-|ItemId       |ItemId       |Integer   |The value to use to get or update file properties in libraries.         |
-|Id           |Id           |String    |The unique ID of the file or folder.                                    |
-|Name         |Name         |String    |The name of the file or folder.                                         |
-|DisplayName  |DisplayName  |String    |The display name of the file or folder.                                 |
-|Path         |Path         |String    |The path of the file or folder.                                         |
-|LastModified |LastModified |Date-time |The date and time the file or folder was last modified.                 |
-|Size         |Size         |Integer   |The size of the file or folder.                                         |
-|MediaType    |MediaType    |String    |The media type of the file or folder.                                   |
-|IsFolder     |IsFolder     |Boolean   |A boolean value (true, false) to indicate whether the blob is a folder. |
-|ETag         |ETag         |String    |The etag of the file or folder.                                         |
-|FileLocator  |FileLocator  |String    |The file locator of the file or folder.                                 |
-
-### Get lists
-
-Gets SharePoint lists from a site.
-
-#### Parameters
-
-|Name                    |Key             |Required |Type   |Description                                                                                      |
-|------------------------|----------------|---------|-------|-------------------------------------------------------------------------------------------------|
-|Site Address            |dataset         |True     |String |The URL of the SharePoint site, for example: <br>'https://contoso.sharepoint.com/sites/sitename'. |
-
-#### Returns
-
-|Name         |Path         |Type            |Description                                                             |
-|-------------|-------------|----------------|------------------------------------------------------------------------|
-|value        |value        |array of Tables |List of Tables                                                          |
-
-## Upcoming features
-
-- Dynamic content for output variables: cloud actions’ output variables can be expanded to show its underlying properties
-- Share to **users** brings their own connection references upon each run
-- Co-owners can use the same connection references
-- ALM dependencies management (dependency checker upon import, add required objects, show dependencies)
-- Connection references are visible in desktop flows details pages
-- Exponential/manual retry policies in case the connector responds an error
-- DLPs that include SharePoint cloud actions are enforced in desktop flows
-- New SharePoint actions

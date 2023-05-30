@@ -4,7 +4,7 @@ description: See all the available data type properties of desktop flow variable
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: marleon
 ms.reviewer: gtrantzas
@@ -12,8 +12,6 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -302,7 +300,7 @@ The data types that have properties are displayed in the following lists.
 |DataEncryptionKeyId |The id of the data encryption key.                                                              |
 |Description         |The description of the snapshot.                                                                |
 |Encrypted           |This property is true if the snapshot is encrypted.                                             |
-|KmsKeyId            |The The identifier of the AWS Key Management Service customer master key to use for encryption. |
+|KmsKeyId            |The identifier of the AWS Key Management Service customer master key to use for encryption. |
 |OwnerAlias          |The alias of the owner.                                                                         |
 |OwnerId             |The id of the owner.                                                                            |
 |Progress            |The progress of the snapshot.                                                                   |
@@ -324,7 +322,7 @@ The data types that have properties are displayed in the following lists.
 |Encrypted           |This property is true if the volume is encrypted.                                               |
 |FastRestored        |This property is true if the fast restore is enabled.                                           |
 |Iops                |The max IOPS of the volume.                                                                     |
-|KmsKeyId            |The The identifier of the AWS Key Management Service customer master key to use for encryption. |
+|KmsKeyId            |The identifier of the AWS Key Management Service customer master key to use for encryption. |
 |MultiAttachEnabled  |This property is true if the multi-attach is enabled.                                           |
 |OutpostArn          |The Amazon Resource Name (ARN) of the outpost.                                                  |
 |Size                |The size of the volume.                                                                         |

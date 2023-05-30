@@ -3,13 +3,11 @@ title: Run desktop flows via URL or desktop shortcuts
 description: See how to run desktop flows via URL or desktop shortcuts.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
-ms.date: 11/16/2022
+ms.topic: conceptual
+ms.date: 02/16/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow 
 search.audienceType: 
   - flowmaker
   - enduser
@@ -23,12 +21,12 @@ You can use URLs to trigger desktop flows through many different sources, such a
 
 If a triggered flow requires input variables, the console will ask you to enter the appropriate values.
 
-By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. To disable this functionality, navigate to the console settings and disable **Display confirmation dialog when invoking flows externally** or modify the [appropriate Windows registry entry](governance.md#configure-power-automate-for-desktop-confirmation-dialog-when-invoking-flows-via-url-or-desktop-shortcut).
+By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. To disable this functionality, navigate to the console settings and disable **Display confirmation dialog when invoking flows externally** or modify the [appropriate Windows registry entry](governance.md#configure-power-automate-for-desktop-confirmation-dialog-when-invoking-flows-using-a-url-or-desktop-shortcut).
 
 > [!WARNING]
 > Disabling the confirmation dialog poses security threats because you could run without notice a questionable flow shared by a malicious actor.
 
-:::image type="content" source="media/run-flow-url/console-run-url-console-settings.png" alt-text="Screenshot of the Prompt me before running flows triggered by URL option in the console settings.":::
+:::image type="content" source="media/run-flow-url/console-run-url-console-settings.png" alt-text="Screenshot of the Display confirmation dialog when invoking flows externally option in the console settings.":::
 
 ## Prerequisites
 
@@ -74,7 +72,7 @@ If the console is set to another environment than the one specified in the URL, 
 
 ### Find environment and desktop flow IDs
 
-To find the ID of an environment, navigate to the [Power Automate portal](https://flow.microsoft.com/) and select the desired environment. Then, navigate to the **My flows** tab and copy the environment ID from the address line.
+To find the ID of an environment, navigate to the [Power Automate portal](https://make.powerautomate.com) and select the desired environment. Then, navigate to the **My flows** tab and copy the environment ID from the address line.
 
 :::image type="content" source="media/run-flow-url/find-environment-id.png" alt-text="Screenshot of the environment ID in the address line.":::
 

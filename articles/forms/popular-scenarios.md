@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: Dean-Haas
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -15,8 +14,6 @@ ms.workload: na
 ms.date: 05/11/2022
 ms.author: napienko
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -38,7 +35,7 @@ You can turn on email notifications for the form's owners in your form settings.
 
 We'll start with a pre-built template and customize it to help our managers plan for employees' summer vacations.
 
-1. Search for "Microsoft Forms" in the [Power Automate template gallery](https://flow.microsoft.com/templates/) and select the template named "Notify me in Outlook when a student completes a quiz."
+1. Search for "Microsoft Forms" in the [Power Automate template gallery](https://make.powerautomate.com/templates/) and select the template named "Notify me in Outlook when a student completes a quiz."
 
 1. Sign in to the connectors, if needed, and select **Continue**.
 
@@ -72,7 +69,7 @@ Follow the steps to [send an email when there's a new form response](#send-an-em
 
 In this example, we'll start with another pre-built template and customize it to create a vacation approval request.
 
-1. Search for "Microsoft Forms" in the [Power Automate template gallery](https://flow.microsoft.com/templates/) and select the template named "Send form responses for approval."
+1. Search for "Microsoft Forms" in the [Power Automate template gallery](https://make.powerautomate.com/templates/) and select the template named "Send form responses for approval."
 
 1. Sign in to or create the connectors, as needed, and select **Continue**.
 
@@ -160,7 +157,7 @@ In this example, we'll create a flow from blank. Continuing with the scenario fr
 
     :::image type="content" source="../media/forms/excel-flow-table-after.png" alt-text="Screenshot of an Excel table with Name, Vacation Start, and Return columns filled with form data.":::
 
-You can use a template to [add an approval step before a form response is added to the Excel table](https://flow.microsoft.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/).
+You can use a template to [add an approval step before a form response is added to the Excel table](https://make.powerautomate.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/).
 
 ## Get an attachment from a form and send it in an email
 

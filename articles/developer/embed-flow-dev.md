@@ -2,14 +2,11 @@
 title: Integrate Power Automate with websites and apps | Microsoft Docs
 description: Embed the Power Automate experiences into your website or app.
 author: MSFTMAN
-manager: KVivek
 ms.subservice: developer
 ms.topic: article
-ms.date: 05/09/2022
+ms.date: 02/02/2023
 ms.author: Deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - developer
 ---
@@ -95,10 +92,12 @@ The Power Automate team provides the JS SDK to facilitate integrating Flow widge
 The Flow JS SDK reference needs to be added to the host application before initializing the widget.
 
 ```html
-<script src="https://make.powerautomate.com/Content/msflowsdk-1.1.js"></script>
+<script src="https://flow.microsoft.com/Content/msflowsdk-1.1.js"></script>
 ```
+
 > [!NOTE]
-> The recommended way to include the Flow JS SDK in your application is using the above reference. Adding a local copy of the Flow JS SDK to your application or web page can result in you using an older unsupported version of the SDK over time causing breaks in functionality.
+> - The recommended way to include the Flow JS SDK in your application is using the above reference. Adding a local copy of the Flow JS SDK to your application or web page can result in you using an older unsupported version of the SDK over time causing breaks in functionality.
+> - Power Automate stores some data such as user identity and preferences locally leveraging your browsers capabilities. Problems occur if the browser blocks storage of such local data, or third-party cookies set by Power Automate. Users need to enable third party cookies in their browser in order for the widget to load correctly.
 
 Create a JS SDK instance by passing optional hostName and locale values in a JSON object.
 

@@ -1,56 +1,52 @@
 ---
-title: Limits and configuration | Microsoft Docs
-description: Limits and configuration
+title: Limits and configuration
+description: Learn about limits and configuration.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: tapanm
-editor: ''
-tags: ''
-
-ms.devlang: na
+author: ChrisGarty
+Contributors:
+  - ChrisGarty
+  - PriyaKodukula
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/23/2022
-ms.author: deonhe
+ms.date: 05/01/2023
+ms.author: CGarty
 ms.reviewer: angieandrews
-Contributors:
-  - georgiostrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Limits for automated, scheduled, and instant flows
 
 This topic contains information about the current limits and configuration details for automated, scheduled, and instant flows.
 
->[!TIP]
->Check out the [pricing](https://flow.microsoft.com/pricing) for details on the different plans that are available.
+Check out the [pricing](https://make.powerautomate.com/pricing) for details on the different plans.
 
 ## Performance profiles
 
-Flows have different limits depending on their *performance profile*. There are three possible values, depending on the flow owner's plan.
+Flows have different limits depending on their *performance profile*. There are four possible values, depending on the flow owner's plan.
 
 | Performance profile | Plans |
 |---------------------|-------|
 | Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member<br>- Microsoft Power Apps for Developer | 
-| Medium              | - Power Apps triggered flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate per user, Power Automate per user with Attended RPA plans <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
+| Medium              | - Power Apps triggered flows, manual flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate per user, Power Automate per user with Attended RPA plans <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
 | High                | - Power Automate per flow plan |
+| Unlimited Extended  | - Pay-as-you-go flows, Dynamics in context flows running under service principal  
 
-If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two plans. For the exact set of plans that include Power Automate, see the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two plans. For the exact set of plans that include Power Automate, go to the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
-If needed, users can see their current plan by opening the session debugging information by pressing Ctrl+Alt+A in the maker portal. The current plan being used will have isCurrent=true.
+If needed, users can review their current plan by opening the session debugging information by pressing **Ctrl** + **Alt** + **A** in the maker portal. The plan being used will have **isCurrent=true**.
 
-The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people then generally the owner is the original creator. If unsure, you can see and change the owner a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will continue to use the same performance profile until next updated, although in the future, it may be reverted to the Low performance profile.
+The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people, then generally the owner is the original creator. If you're unsure, you can change the owner of a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will be reverted to the **Low** performance profile.
 
 ## Flow definition limits
 
-Here are the limits for a single flow definition:
+The following table contains the limits for a single flow definition.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
@@ -63,20 +59,21 @@ Here are the limits for a single flow definition:
 | Length of `description` | 256 characters | |
 | Maximum size for `trackedProperties` | 16,000 characters | |
 
-
 ## My flows limit
 
-Here is the limit for the My flows and Team flows tab:
+The following table contains the limit for the My flows and Team flows tab.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Number of flows owned by a single user | 600 | To extend this limit, use flows under solutions. |
 
-
 ## Duration and retention limits
 
+The following tables contain the duration and retention limits.
+
 ### Duration limits
-Duration limits for a single flow run:
+
+The following table contains the duration limits for a single flow run.
 
 | Name | Limit | Notes |
 |------|-------|-------|
@@ -86,21 +83,24 @@ Duration limits for a single flow run:
 | Maximum recurrence interval | 500 days |
 | Minimum postpone interval | 5 seconds for Low, 1 second for all others |
 
-### Expiration limits
+### Retention limits
 
-Limits on how long flows will remain turned on before they expire and get turned off
+The following table contains the limits on how long flows will remain turned on before they expire and get turned off.
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
-| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions which fail continuously will be turned off. Fix your trigger or actions and turn on the  flow. |
-| Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans.No expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivity, the flow creator and co-owners will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off and the creator and co-owners will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. |
-| Consistently throttled flows | 14 days |A cloud flow that is consistently throttled for 14 days will be turned off. The flow creator and co-creators will get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed in [Pricing article](https://flow.microsoft.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
-|Premium flows without premium licenses| 14 days | Flows that were created with premium features (premium connectors/custom connectors/HTTP connectors/on premises gateway/business process flows) but don't have a premium Power Automate license will be turned off after 14 days. This situation happens if the original owner leaves the organization or if they have an expired trial or premium license. The flow owner and co-owners will get an email when the trial or premium license expires or when the owner isn't found in Azure Active Directory (AAD). The flow will continue to work for 14 days. If a premium license isn't assigned to the flow within 14 days, the flow is automatically turned off and the owner and co-owners are notified via email. Newly created or edited premium flows without a premium license are saved but turned off. Once a premium Power Automate license is assigned to the owner or flow, you can turn on the flow. Admins can find these flows with the latest version of the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit). Assign a per flow license or a per user license to the owner to keep the flow running.|
-|Power Apps out of context flows| 90 days|Power Apps licenses include a limited set of Power Automate capabilities that allow users to run flows that are in context of the Power App. See [Power Automate use rights included with Power Apps licenses section](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-power-apps-licenses) for details. Owners and co-owners of premium automated or scheduled flows that aren't linked to an app will get email notifications and they'll have 90 days to assign a license. If you don't provide a license within 90 days, Power Automate turns off the flows. Admins can use the latest version of the [Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit) to find all flows in this state. Assign a per flow license or a per user license to the owner to keep the flow running. New or edited flows that use premium licenses are saved and turned off by default. You can turn on these flows after you assign a premium Power Automate license to the owner or flow.|
+| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions that fail continuously will be turned off. Fix your trigger or actions and turn on the  flow. These flows will have FlowSuspensionReason=AlwaysFailingDetected. |
+| Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans.No expiration limit for all others | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivity, the flow creator and co-owners will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off, and the creator and co-owners will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed on [Power Automate pricing](https://make.powerautomate.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. These flows will have FlowSuspensionReason=NeverTriggeringDetected. |
+| Consistently throttled flows | 14 days |A cloud flow that's consistently throttled for 14 days will be turned off. The flow creator and co-creators will get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed on [Power Automate pricing](https://make.powerautomate.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
+|Premium flows without premium licenses| 14 days | Flows that were created with premium features (premium connectors, custom connectors, HTTP connectors, on premises gateway, and business process flows) but don't have a premium Power Automate license will be turned off after 14 days. This situation happens if the original owner leaves the organization, or if they have an expired trial or premium license. The flow owner and co-owners will get an email when the trial or premium license expires, or when the owner isn't found in Azure Active Directory (AAD). The flow will continue to work for 14 days. If a premium license isn't assigned to the flow within 14 days, the flow is automatically turned off, and the owner and co-owners are notified through email. Newly created or edited premium flows without a premium license are saved but turned off. Once a premium Power Automate license is assigned to the owner or flow, you can turn on the flow. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions). Assign a per flow license or a per user license to the owner to keep the flow running.|
+|Power Apps out of context flows| 90 days|Power Apps licenses include a limited set of Power Automate capabilities that allow for in context flows. To learn more, go to [Power Apps license questions](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-power-apps-licenses). Premium automated or scheduled flows not linked to an app require a Power Automate license, and the owner has 90 days to get a license before the flows turn off. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions) and assign a per flow license or a Power Automate per user license to the owner to keep the flow running. Alternatively, if the flow is supporting a Power App, [associate the flow to the app](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps). Flows triggered by Power Apps are excluded from this enforcement. Starting June 1, 2023, new flows using premium features without a license will be turned off by default. Owners and co-owners of flows created before June 1, 2023 will be notified, have a 90-day grace period, and will be turned off starting September 1, 2023 if no action is taken. Turning on these flows requires a premium Power Automate license or association with the corresponding app.|
+|Dynamics out of context flows| 90 days|Dynamics licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to [Power Automate use rights included with Dynamics licenses](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-dynamics-365-licenses). Premium automated or scheduled flows not linked to an app require a Power Automate license, and the owner has 90 days to get a license before the flows turn off. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions) and assign a per flow license to the flow or a Power Automate per user license to the owner to keep the flow running. Alternatively, if the flow is supporting a D365 app, [associate the flow to the app](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps). Starting June 1, 2023, new flows using premium features without a license will be turned off by default. Owners and co-owners of flows created before June 1, 2023 will be notified, have a 90-day grace period, and will be turned off starting September 1, 2023 if no action is taken. Turning on these flows requires a premium Power Automate license or association with the corresponding app. Flows using first party Dynamics apps or talking to Dynamics entities in Dataverse are excluded from this enforcement.|
+|Over allocated per flow flows| 90 days|A Per flow license can only be assigned to one flow. Environments with more flows with per flow licenses than allowed will trigger email notifications to Owners and co-owners of newer per flow flows. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions). Starting June 1, 2023, new flows can't use per flow plans if all plans are in use. Flows created before June 1, 2023 get a grace period of 90 days. If the owner of the flow has a Power Automate license, after 90 days, the flow will start using the owner's license. If no action is taken, the flows are turned off starting September 1, 2023. Assign a per flow license to the flow or a Power Automate per user license to the owner to keep the flow running.|
+|Service Principal flows missing Per flow license | 90 days | Premium flows whose owner is a service principal will either need to have a per flow license or in the context of Dynamics 365 application. Starting June 1, 2023, new service principal flows using premium features without a Per flow license will be turned off by default. Owners and co-owners of flows created before June 1, 2023 will be notified, have a 90-day grace period, and will be turned off starting September 1, 2023 if no action is taken. Turning on these flows requires a premium Power Automate per flow license or [association with the corresponding Dynamics app](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps). Flows using first party Dynamics apps or talking to Dynamics entities in Dataverse are exempt from this enforcement.|
 
 ## Concurrency, looping, and debatching limits
 
-Here are the limits for a single flow run:
+The following table contains the limits for a single flow run.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
@@ -116,25 +116,25 @@ Here are the limits for a single flow run:
 
 Here are the time-bound limits for a single version of a cloud flow definition. These limits apply across all runs of the flow version, and are calculated on sliding windows.
 
-If a cloud flow exceeds one of the limits, activity for the flow will be slowed and will automatically resume when the sliding window has activity below the limit. However, if a cloud flow consistently remains above the limits for 14 days, it will be turned off (see above duration limits). Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you will need to update the flow to remain below the limits to prevent it from being turned off.
+If a cloud flow exceeds one of the limits, activity for the flow will be slowed and will automatically resume when the sliding window has activity below the limit. However, if a cloud flow consistently remains above the limits for 14 days, it will be turned off (see above duration limits). Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you'll need to update the flow to remain below the limits to prevent it from being turned off.
 
 >[!TIP]
 >Because these limits are for a single version, if you update your flow it will reset these limits.
 
-### Action request limits
+### Power platform request limits
 
-There are limits to the number of *actions* a cloud flow can run. These runs are counted for all types of actions, including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action runs. You can see the number of actions your flow has run by selecting **Analytics** from the flow details page and looking at the **Actions** tab.
+Power platform request limits are limits to the number of requests a cloud flow can run. To learn more about Power platform requests, go to [Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests). These requests are counted for all types of actions, including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action runs. You can see the number of actions your flow has run by selecting **Analytics** from the flow details page and reviewing the **Actions** tab.
 
 | Name | Transition period limit | Notes |
 | ---- | ----- |----- |
-| Actions per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
-| Actions per 24 hours|10,000 for Low, 100,000 for Medium and 500,000 for High | Because of the current transition period (in the year of 2020) these limits are less strict than the values called out in the [requests limits and allocations document](/power-platform/admin/api-request-limits-allocations). These limits represent approximations of how many requests will be allowed daily. They are not guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. The documented limits were substantially increased in late 2021. Public preview reporting for Power Platform requests is expected in May of calendar year 2022. Any potential high usage enforcement wouldn't start until six months after reports have been made generally available. Distribute the workload across more than one flow as necessary. | 
+| Power platform requests per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
+| Power platform requests per 24 hours|10,000 for Low, 100,000 for Medium, 500,000 for High, up to 10,000,000 for Unlimited Extended | Because of the current [transition period](/power-platform/admin/power-automate-licensing/types#transition-period), these limits are less strict than the values called out in [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations). These limits represent approximations of how many requests will be allowed daily. They aren't guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. The documented limits were substantially increased in late 2021. For public preview reporting for Power Platform requests, go to [View detailed Power Platform request usage information in the Power Platform admin center (preview)](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). Any potential high usage enforcement based on these [limits](/power-platform/admin/api-request-limits-allocations) wouldn't start until six months after reports have been made generally available. Distribute the workload across more than one flow as necessary. | 
 | Concurrent outbound calls | 500 for Low, 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
 
-As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across **all** of their flows, Power Apps, or any applications calling into the Microsoft Dataverse. No performance is guaranteed above these limits, although enforcement of these limits is not as strict during the transition period (as mentioned earlier). For more information about these, refer to [requests limits and allocations](/power-platform/admin/api-request-limits-allocations).
+As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across all of their flows, Power Apps, or any applications calling into the Microsoft Dataverse. No performance is guaranteed above these limits, although enforcement of these limits isn't as strict during the transition period. To learn more, go to [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations).
 
 >[!TIP]
->Individual connectors have their own limits as well, which often will be reached before the limits mentioned earlier. Be sure to check [the documentation for your connector](/connectors/).
+>Individual connectors have their own limits, which often will be reached before the limits mentioned earlier. Be sure to check the documentation for your connector on [Power Platform and Azure Logic Apps connectors documentation](/connectors/).
 
 ### Runtime endpoint request limits
 
@@ -148,12 +148,12 @@ The runtime endpoint is the direct access URL for a given flow. It starts with s
 
 ### Content throughput limits
 
-The content throughput limits refer to the amount of data that is read from or written to the run history of the cloud flow. 
+The content throughput limits refer to the amount of data that's read from or written to the run history of the cloud flow.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Content throughput per 5 minutes | 600 MB for Low, 6 GB for all others | You can distribute workload across more than one flow as necessary. |
-| Content throughput per 24 hours | 1 GB for Low, 10 GB for Medium,  50 GB for High | You can distribute workload across more than one flow as necessary. |
+| Content throughput per 24 hours | 1 GB for Low, 10 GB for Medium, 50 GB for High | You can distribute workload across more than one flow as necessary. |
 
 ## Gateway limits
 
@@ -174,8 +174,7 @@ Some connector operations make asynchronous calls or listen for webhook requests
 | Inbound request | 120 seconds <br>(2 minutes) | Examples of inbound requests include calls received by request triggers and webhook triggers. <br />**Note**: For the original caller to get the response, all steps in the response must finish within the limit unless you call another flow as a child flow. |
 
 >[!NOTE]
->If you test a cloud flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status. 
-
+>If you test a cloud flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, re-open the view to receive the current status.
 
 ### Message size
 
@@ -191,7 +190,6 @@ Some connector operations make asynchronous calls or listen for webhook requests
 | Expression evaluation limit | 131,072 characters | The `@concat()`, `@base64()`, `@string()` expressions can't be longer than this limit. |
 | Request URL character limit | 16,384 characters |
 
-
 ### Retry policy
 
 #### Default retry policy
@@ -199,7 +197,7 @@ Some connector operations make asynchronous calls or listen for webhook requests
 | Performance profile | Description |
 | ------------------- | ----------- |
 | Low | This policy sends up to two retries at *exponentially increasing* intervals, which scale by 5 minutes up to an interval of approximately 10 minutes for the last retry. |
-| Medium, High | This policy sends up to eight retries at *exponentially increasing* intervals, which scale by 7 seconds up to an interval of approximately 15 minutes for the last retry. |
+| Medium, High | This policy sends up to eight retries at *exponentially increasing* intervals, which scale by seven (7) seconds up to an interval of approximately 15 minutes for the last retry. |
 
 #### Retry setting limits
 
@@ -211,14 +209,13 @@ To change the default settings, use the retry policy parameter. Here are the lim
 | Retry maximum delay | 1 day |
 | Retry minimum delay | 5 seconds |
 
-For more information on other retry policies, see [Azure Logic Apps Retry Policies](/azure/logic-apps/logic-apps-exception-handling#retry-policies).
+For more information on other retry policies, go to **Handle errors and exceptions in Azure Logic Apps**, [Retry policies](/azure/logic-apps/logic-apps-exception-handling#retry-policies).
 
 ## Turning off or deleting flows
 
 When you turn off a cloud flow, no new runs are instantiated. All in-progress and pending runs continue until they finish, which might take time to complete.
 
 When you delete a cloud flow, no new runs are instantiated. All in-progress and pending runs are canceled. If you have thousands of runs, cancellation might take significant time to complete.
-
 
 ## Custom connector limits
 
@@ -230,7 +227,7 @@ Here are the limits for custom connectors that you can create from web APIs.
 | Number of requests per minute for a custom connector | 500 requests per minute per connection |  |
 
 >[!NOTE]
->You must have a premium (or trial) license to run any flow that has a custom connector.
+>You must have a premium or trial license to run any flow that has a custom connector.
 
 ## SharePoint limits
 
@@ -478,6 +475,19 @@ If you don’t want to authorize this public endpoint, you can alternatively all
 
 ## Other configuration
 
-See [IP address configuration](ip-address-configuration.md) for additional details on how to permit access to automated, scheduled and instant flows, including required endpoints.
+For additional details on how to permit access to automated, scheduled, and instant flows, including required endpoints, go to [IP address configuration](ip-address-configuration.md).
+
+## Flow suspension because of runtime limits
+
+Suspended flows will be shown as suspended in the Power Automate maker portal and the Power Platform Admin Center. When a flow is returned through API, PowerShell, or the [Power Automate Management connector list flows as admin action](/connectors/flowmanagement/#list-flows-as-admin), the flow will be **State=Suspended**, and have appropriate **FlowSuspensionReason** and **FlowSuspensionTime** values.
+
+FlowSuspensionReason values for runtime limits:
+
+- AllActionsFailingDetected
+- AlwaysFailingDetected
+- ApiCallOverageDetected
+- BillingConsumption
+- BillingConsumptionMissingRPALicense
+- NeverTriggeringDetected
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

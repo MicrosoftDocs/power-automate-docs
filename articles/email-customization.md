@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 editor: ''
 tags: ''
 ms.devlang: na
@@ -16,8 +15,6 @@ ms.workload: na
 ms.date: 05/10/2022
 ms.author: deonhe
 ms.reviewer: gtrantzas
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -66,7 +63,7 @@ Alternatively, if you don't know—or don't feel like playing with—HTML, follo
 
 1. Find **\<html\>** in the file. 
 1. Copy the content between **\<html\>** and **\</html\>**. 
-1. Back in [Power Automate](https://flow.microsoft.com), select the **\</\>** button in the rich text editor of the **Send an email (V2)** action, and then paste the contents that you copied from Outlook.
+1. Back in [Power Automate](https://make.powerautomate.com), select the **\</\>** button in the rich text editor of the **Send an email (V2)** action, and then paste the contents that you copied from Outlook.
 1. Select **Save** at the bottom of the flow steps to save your flow.
 1. Be sure to test your flow to confirm that it works as intended.
 

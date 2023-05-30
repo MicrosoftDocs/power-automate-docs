@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: TapanM
 editor: ''
 tags: ''
 
@@ -153,7 +152,7 @@ Follow these steps to create a cloud flow from a Microsoft Teams template.
    ![Confirmation screen.](../media/power-automate-teams-app-create/template3.png)
 
 >[!IMPORTANT]
->When you create flows from within the Power Automate app in Microsoft Teams, they are always created in your organization's default environment. You can also access these flows from [Power Automate](https://flow.microsoft.com).
+>When you create flows from within the Power Automate app in Microsoft Teams, they are always created in your organization's default environment. You can also access these flows from [Power Automate](https://make.powerautomate.com).
 
 ## Create a cloud flow from scratch
 

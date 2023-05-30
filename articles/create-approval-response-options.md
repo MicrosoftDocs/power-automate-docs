@@ -1,34 +1,31 @@
 ---
-title: Create approval flows with custom responses | Microsoft Docs
-description: Create approval flows with custom responses.
+title: Create approval flows with custom responses
+description: Learn how to create approval flows with custom responses.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: kvivek
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/04/2022
-ms.author: deonhe
-ms.reviewer: gtrantzas
-search.app: 
-  - Flow
-  - Powerplatform
+ms.date: 01/12/2023
+ms.author: napienko
+ms.reviewer: angieandrews
 search.audienceType: 
   - maker
 ---
 
 # Create custom response options for approval flows
 
-
 Let’s say you want to send an approval request each time an employee uploads an expense report to SharePoint and then allow the approver to respond with one of three options: Accept, Need more info, or Reject.
-
 
 ## Prerequisites
 
@@ -38,15 +35,20 @@ Let’s say you want to send an approval request each time an employee uploads a
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Create approval flow
-1. Sign in to [Power Automate](https://flow.microsoft.com).
-1. Select **My flows** from the left navigation bar.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. On the left navigation bar, select **My flows**.
+
 1. Select **New** > **Automated-from blank**.
 
-    ![Create from blank option.](media/create-approval-response-options/create-approval-response-options.png)
+1. On the screen that opens, provide a name for your flow in  **Flow name**.
 
-1. On the screen that opens, provide a name for your flow in  **Flow name**. 
-  
-1. Search for **SharePoint** in **Choose your flow's trigger**, select **When an item is created** from the list of triggers, and then select **Create**.
+1. In **Choose your flow's trigger** field, search for **SharePoint**.
+
+1. From the list of triggers, select **When an item is created**.
+
+1. Select **Create**.
 
    ![Select Create from blank.](media/create-approval-response-options/create-from-blank.png)
 
@@ -63,8 +65,7 @@ Let’s say you want to send an approval request each time an employee uploads a
 
     ![Approval type.](media/create-approval-response-options/select-approval-type.png)
 
-    Next, you will create the custom responses that your approvers will use when they respond to an approval request for an employee expense.
-
+    Next, you'll create the custom responses that your approvers will use when they respond to an approval request for an employee expense.
 
 1. In the **Response options Item** box, enter **Accept** and then select **Add new item**. 
 
@@ -99,22 +100,23 @@ To do any of these in the flow, add a [**Condition**](add-condition.md) or a **S
 
 ## Respond to approval requests with a custom response
 
-Approvers receive approval requests in email. The requests are also displayed in the approval center on Power Automate. 
+Approvers receive approval requests in email. The requests are also displayed in the approval center on Power Automate.
 
 ![Approval request email.](media/create-approval-response-options/approval-request-email.png)
 
 ## Limitations
 
-Outlook and Outlook Web Access(OWA) actionable messages have a limit of five custom responses. This means that only the first five responses that are defined within the flow will be visible in the actionable section of Power Automate approval emails. You can submit the remaining options via a non-actionable HTML email, the Power Automate approval center, the Power Automate mobile application, or Teams.
+Outlook and Outlook Web Access (OWA) actionable messages have a limit of five custom responses. This means that only the first five responses that are defined within the flow will be visible in the actionable section of Power Automate approval emails. You can submit the remaining options via a non-actionable HTML email, the Power Automate approval center, the Power Automate mobile application, or Teams.
 
 Approvals that rely on custom responses can fail if they're sent to many users with the type set to **Everyone must approve**. This failure is due to the data size limitations of the results field.
 
 >[!NOTE]
 >For approvals using a single custom response, Outlook and OWA expand the response field so users do not need to select a button before they can respond like they do when there are multiple approval options.
 
-## Learn more
-- Create [single approver flows](modern-approvals.md)
-- Create [sequential approver flows](sequential-modern-approvals.md)
+### See also
+
+- [Create single approver flows](modern-approvals.md)
+- [Create sequential approver flows](sequential-modern-approvals.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

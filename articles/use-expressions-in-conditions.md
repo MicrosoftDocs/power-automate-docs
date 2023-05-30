@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-manager: kvivek
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
@@ -14,8 +13,6 @@ ms.workload: na
 ms.date: 05/13/2022
 ms.author: deonhe
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -69,7 +66,7 @@ Let's create the flow.
 
 ### Start with a blank flow
 
-1. Sign into [Power Automate](https://flow.microsoft.com).
+1. Sign into [Power Automate](https://make.powerautomate.com).
 
 1. On the left pane, select **My flows**.
 

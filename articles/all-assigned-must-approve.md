@@ -1,39 +1,36 @@
 ---
-title: Create an approval flow that requires everyone to approve(contains video) | Microsoft Docs
-description: Create an approval flow that requires everyone to approve or one person to reject a request.
+title: Create an approval flow that requires everyone to approve(contains video)
+description: Learn how to create an approval flow that requires everyone to approve or one person to reject a request.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-manager: KVivek
+author: natalie-pienkowska
+contributors:
+  - natalie-pienkowska
+  - kartikraop
+  - v-aangie
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/11/2022
-ms.author: deonhe
-ms.reviewer: gtrantzas
-search.app: 
-  - Flow
+ms.date: 01/12/2023
+ms.author: napienko
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 # Create an approval flow that requires everyone to approve
 
-
-This walkthrough shows you how to create an approval workflow that requires everyone (all assigned approvers) to agree for a vacation request to be approved, but any approver can reject the entire request.
+This tutorial shows you how to create an approval workflow that requires everyone (all assigned approvers) to agree for a vacation request to be approved, but any approver can reject the entire request.
 
 This type of approval workflow is useful in an organization that requires a person's manager and the manager's manager, to both agree to a vacation request for it to be approved. However, either manager can decline the request without the other person's input.
 
 > [!NOTE]
-> While this walkthrough highlights a vacation approval scenario, you can use this type of approval flow in any situation where multiple approvers are required to approve a request.
->
->
+> While this tutorial highlights a vacation approval scenario, you can use this type of approval flow in any situation where multiple approvers are required to approve a request.
 
 Here's a quick video tutorial about approvals.
 
@@ -41,38 +38,34 @@ Here's a quick video tutorial about approvals.
 
 ## Prerequisites
 
-* Access to [Power Automate](https://flow.microsoft.com), Microsoft Office 365 Outlook, and Microsoft Office 365 Users.
+* Access to [Power Automate](https://make.powerautomate.com), Microsoft Office 365 Outlook, and Microsoft Office 365 Users.
 * A SharePoint [list](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
 
-    This walkthrough assumes you've created a SharePoint list that's used to request vacations. See the [parallel approvals](parallel-modern-approvals.md) walkthrough for an in-depth example that details what your SharePoint list might look like.
+    This tutorial assumes you've created a SharePoint list that's used to request vacations. See the [parallel approvals](parallel-modern-approvals.md) walkthrough for an in-depth example that details what your SharePoint list might look like.
 
     [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
-    
+
 * Familiarity with the basics of creating flows.
 
     You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
 > [!NOTE]
-> While we use SharePoint and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://flow.microsoft.com/connectors/) that Power Automate supports.
-
+> While we use SharePoint and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://make.powerautomate.com/connectors/) that Power Automate supports.
 
 ## Create the flow
 
+This tutorial uses tokens. To display the list of tokens, select any input control, and then search for the token in the **Dynamic content** list that opens.
+
 > [!NOTE]
 > If you haven't created a connection to SharePoint or Office 365 previously, follow the instructions when you're prompted to sign in.
->
->
 
-This walkthrough uses tokens. To display the list of tokens, tap or click any input control, and then search for the token in the **Dynamic content** list that opens.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-Sign into [Power Automate](https://flow.microsoft.com), and then perform the following steps to create your flow.
+1. On the top left of the screen, select **My flows** > **New** > **Automated-from blank**.
 
-1. Select **My flows** > **New** > **Automated-from blank**, in the top left of the screen.
-1. Give your flow a name and then add the **SharePoint - When an item is created or modified** trigger.
+1. Name your flow, and then add the **SharePoint - When an item is created or modified** trigger.
+
 1. Enter the **Site Address** for the SharePoint site that hosts your vacation request list, and then select a list from **List Name**.
-1. Select **New step**, add the Office 365 **Get manager (V2)** action, select the **User (UPN)** box, and then add the **Created By Email** token to it.
-
-    The **Created By Email** token is located under the **When an item is created or modified** category of the **Dynamic content** list. This token dynamically provides access to data about the manager for the person who created the item in SharePoint.
 
 1. Select **New step**, add another Office 365 **Get manager (V2)** action, and then add the **Mail** token to the **User (UPN)** box.
 
@@ -148,7 +141,7 @@ Here's an example of what a response and a response summary may look like after 
 
 ![response tokens.](media/all-assigned-must-approve/response-output.png)
 
-## Learn more about approvals
+### See also
 
 * [Single approver modern approvals](modern-approvals.md)
 * [Sequential modern approvals](sequential-modern-approvals.md)

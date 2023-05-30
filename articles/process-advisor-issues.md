@@ -10,8 +10,6 @@ ms.topic: conceptual
 ms.date: 11/15/2022
 ms.author: derahonuorah
 ms.reviewer: angieandrews
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser

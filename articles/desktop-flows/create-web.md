@@ -10,18 +10,16 @@ tags: ''
 
 ms.devlang: na
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 12/09/2020
+ms.date: 02/24/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -30,16 +28,17 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> - From February 28 2022, Selenium IDE will no longer be supported.
-> - Since November 30 2021, Windows recorder (V1) no longer works.
-> - Migrate your flows created with Selenium IDE and Windows recorder (V1) to Power Automate for desktop or delete them.
+> This article covers topics related to legacy systems. Migrate your flows created with these solutions to Power Automate for desktop or delete them.
+>
+> - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
+> - Windows recorder (V1) is deprecated and no longer works.
 
 Follow these steps to create a simple Selenium flow.
 
 ## Create a Selenium IDE flow
 
 1. Open the [Microsoft
-   Edge (version 80 or later)](https://www.microsoft.com/edge) or Google Chrome, and then navigate to [Power Automate](https://flow.microsoft.com/).
+   Edge (version 80 or later)](https://www.microsoft.com/edge) or Google Chrome, and then navigate to [Power Automate](https://make.powerautomate.com).
 
 1. Sign in with your work or school account if needed.
 

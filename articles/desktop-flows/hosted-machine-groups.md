@@ -1,46 +1,48 @@
 ---
-title: Hosted machine groups (preview)
-description: See how to create and use hosted machine groups to distribute your automation workload.
+title: Hosted machine groups
+description: Learn how to create and use hosted machine groups to distribute your automation workload.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/14/2022
+ms.date: 05/22/2023
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
-search.app: 
-  - Flow 
-search.audienceType: 
-  - flowmaker
-  - enduser
 ---
 
-# Hosted machine group (preview)
+# Hosted machine group
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!NOTE]
-> Hosted RPA bots have been renamed to Hosted machine groups. There will be no impact on your existing use of this feature, and the user experience will be updated automatically with a new name.
-
-Hosted machine groups allow you to run unattended automation at scale without providing or setting up any machines. You can create hosted machine groups like any other machine group, and Power Automate will automatically provision the machines based on the specified configuration.
+Hosted machine group allows you to run unattended automation at scale without providing or setting up any machines. You can create hosted machine groups like any other machine group, and Power Automate will automatically provision the machines based on the specified configuration.
 
 Desktop flows assigned to a hosted machine group get queued to it when triggered to run. Then, like for any machine group, the next desktop flow in the queue runs when a bot in the group is available. To find more information about queues, go to [Monitor desktop flow queues](monitor-desktop-flow-queues.md).
 
+Here are some of the key features of hosted machine group:
+
+- Run unattended desktop flows at scale.
+- Auto-scale the number of bots in your hosted machine group based on current workloads.
+- Load balance bots across all hosted machine groups in an environment.
+- Work or school account integration (preview): Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
+- Vanilla or Custom VM images: Use a vanilla VM image provided by Microsoft or personalize your hosted machine group by providing your own Windows image directly from your Azure Compute Gallery.
+
 ## Licensing requirements
 
-To use hosted machine groups, you need one of the following licensing options:
+To use hosted machine group, you need the following licensing option:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-ons**.
+Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate hosted RPA add-on**.
 
-    During the preview period, hosted machine groups will be available with the existing licenses to run unattended RPA. So there are no extra charges for the **Power Automate per user** or **per flow plan with attended RPA** and the **Power Automate unattended RPA add-on**. You need to assign to your environment as many add-ons as many bots you want to run in parallel in your environment.
+You need to assign to your environment as many add-ons as the number of hosted bots you want to run in parallel in your environment.
 
-- Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trials**.
+### Trial licenses for evaluation
 
-    The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the unattended add-ons to the targeted environments.
+To evaluate the hosted machine group, you need one of the following trial licensing options:
+
+- Use the **Power Automate per user plan with attended RPA** and the **Power Automate hosted RPA add-on trials**.
+
+    The Power Automate hosted RPA add-ons mentioned before have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), and assign the hosted RPA add-ons to the targeted environments.
 
 - Use the 90-days self-assisted premium trial.
 
-    Trial users can create up to 10 hosted machine groups and have up to two bots running in parallel in a given environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](http://make.powerautomate.com/).
+    Trial users can create up to 10 hosted machine groups and have up to two bots running in parallel in a given environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
 ## Prerequisites
 
@@ -59,7 +61,7 @@ To create a hosted machine group, you need access to the default VM image that i
 
 ### Share the default image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to  **Monitor** > **Machines** > **VM images (preview)**.
 
@@ -80,11 +82,11 @@ To create a hosted machine group, you need access to the default VM image that i
 
 To create a hosted machine group:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
-1. Select **New** > **Hosted machine group (preview)**.
+1. Select **New** > **Hosted machine group**.
 
 1. In the hosted machine group creation wizard
 
@@ -99,10 +101,10 @@ To create a hosted machine group:
     > - You can't go beyond the total number of bots assigned to your environment.
     > - If multiple hosted machine groups are used in the same environment, bots will be automatically load balanced between the groups. To find more information about load balancing, go to [Load balance hosted machine groups](#load-balance-hosted-machine-group).
 
-    - Select the VM image to use for your hosted machines. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
+    - Select the VM image to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
-    - Select how you would like to access your hosted machine group. You can use your [work or school account (preview)](#use-your-work-or-school-account-preview) or use a local admin account you want to be created. This account will be used to run your automations by the bots.
-    
+    - Select how you would like to access your hosted machine group. You can use your [work or school account](#use-your-work-or-school-account) or use a local admin account you want to be created. This account will be used to run your automations by the bots.
+
      > [!NOTE]
      > If you select work or school account, enter your email address (and not domain\username) when creating a connection to the hosted machine group.
 
@@ -112,22 +114,26 @@ To create a hosted machine group:
 
 ## Hosted machine groups availability
 
-Bots in a hosted machine group are created when needed. Whenever a desktop flow waits in the queue and no bot is available, a bot is created automatically. A bot is created as long as the maximum number of bots for this group isn't reached and you have enough unattended add-ons assigned to your environment. You can find more information about licensing requirements in [Licensing requirements](#licensing-requirements).
+Bots in a hosted machine group are created when needed. Whenever a desktop flow waits in the queue and no bot is available, a bot is created automatically. A bot is created as long as the maximum number of bots for this group isn't reached and you've enough unattended add-ons assigned to your environment. You can find more information about licensing requirements in [Licensing requirements](#licensing-requirements).
 
 > [!NOTE]
-> If the hosted machine group has just been created or hasn't been used for more than 24 hours, bots will be created before a run gets addressed from the queue. The creation of a bot can take more that 10 minutes based on its setup.
+> If the hosted machine group has just been created or hasn't been used for more than 3 hours, bots will be created before a run gets addressed from the queue. The creation of a bot can take more than 10 minutes depending on its configuration.
 
 ## Use custom VM images for your hosted machine groups
 
 You can personalize your hosted machine groups by providing your own Windows image directly from your Azure Compute Gallery. This feature allows you to have all your applications installed on your hosted machine group.
 
-### Create an Azure compute gallery in Azure and add an image
+### Image requirements
+Custom VM images must meet the following requirements:
 
-> [!IMPORTANT]
->
-> - During the preview, the gallery must be created as a private gallery. You can't use an existing gallery.
-> - You need to register to the [public preview program](https://aka.ms/directsharedgallery-preview).
-> - To find more information about shared image galleries, go to [Share a gallery with subscriptions or tenants](/azure/virtual-machines/share-gallery-direct).
+ - Generation 2 images
+ - Generalized VM image
+ - 127 GB limit on VM image size
+ - Microsft Edge version 80 or higher
+ 
+Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
+
+### Create an Azure compute gallery in Azure and add an image
 
 1. Go to the [Azure portal](https://portal.azure.com/).
 
@@ -137,29 +143,41 @@ You can personalize your hosted machine groups by providing your own Windows ima
 
 1. Once you've created an Azure Compute Gallery, create an image definition following the steps in [Create an image definition and an image version](/azure/virtual-machines/image-version). You should create the image in the exact location where we deploy your hosted machine group. You can find the following mapping with your environment Geo:
 
-    - US: West US
-    - Europe: North Europe
-    - Canada: Canada Central
+    - Asia: East Asia
     - Australia: Australia East
     - Brazil: Brazil South
+    - Canada: Canada Central
+    - Europe: North Europe
     - France: France Central
-    - India: Central India
     - Germany: Germany West Central
-    - Switzerland: Switzerland North
+    - India: Central India
     - Japan: Japan East
-    - UK: UK West
-    - Asia: East Asia
+    - Korea: Korea Central
     - Norway: Norway East
+    - South Africa - South Africa North
+    - Switzerland: Switzerland North
+    - United Arab Emirates: UAE North
+    - United Kingdom: UK West
+    - United States: West US
 
-### Share the Azure compute gallery with Microsoft
+### Share the Azure compute gallery with Power Automate Hosted Machine Groups service principal
 
-To use the image in Power Automate, you need to share the image with Microsoft through the Azure portal.
+To use the image in Power Automate, you need to share the image with Power Automate through the Azure portal.
 
-1. In your gallery, go to the **Sharing** settings.
+1. In the [Azure portal](https://portal.azure.com/), go to your Azure Compute Gallery.
 
-2. Select **Add** and select **tenant outside of my organization** in the type list.
+2. Go to the **Access Control (IAM)** settings.
 
-3. Enter the following tenant ID: **975f013f-7f24-47e8-a7d3-abc4752bf346**. It's the Microsoft tenant on which your hosted machine groups are being deployed.
+3. Select **Add** > **Add role assignment**.
+
+4. Select the role **Reader** and search for the Hosted machine group application: **Power Automate Hosted Machine Groups**. This will allow our service to access the image to create the Hosted machine group.
+
+> [!NOTE]
+> If you can't find the application above, verify that the application exists in your tenant and provision it if necessary.
+> To verify that the application exists, go to [Azure portal](https://portal.azure.com/) > **Azure Active Directory** > **Enterprise applications** > **All applications**, and search for application id: **51699864-8078-4c9e-a688-09a1db1b2e09**. If you can't find the application, provision it using the following command:
+> ```
+> az ad sp create --id 51699864-8078-4c9e-a688-09a1db1b2e09
+> ```
 
 ### Share the gallery with Power Automate makers
 
@@ -179,7 +197,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 ### Add a new custom VM image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -190,16 +208,16 @@ The last step before using your image in Power Automate is to share the image wi
     - **Image name:** A unique name to identify the image.
     - **Image description:** An optional description for the image.
 
-1. Select one of the images that you have access from the Azure Compute Gallery.
+1. Select one of the images that you've access from the Azure Compute Gallery.
 
-:::image type="content" source="media/hosted-machine-groups/new-custom-vm-image.png" alt-text="Screenshot of dialog to create a new custom VM image.":::
+    :::image type="content" source="media/hosted-machine-groups/new-custom-vm-image.png" alt-text="Screenshot of dialog to create a new custom VM image.":::
 
 > [!NOTE]
 > The image needs to be replicated in the same Azure region as the hosted machine.
 
 ### Share the image
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines** > **VM images (preview)**.
 
@@ -211,9 +229,9 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Select the names of the persons and choose with which permissions they can access the image.
 
-1. Select **Save**.
+    :::image type="content" source="media/hosted-machine-groups/share-custom-vm-image.png" alt-text="Screenshot of the Manage access dialog of the VM image.":::
 
-:::image type="content" source="media/hosted-machine-groups/share-custom-vm-image.png" alt-text="Screenshot of the Manage access dialog of the VM image.":::
+1. Select **Save**.
 
 > [!NOTE]
 > When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
@@ -222,37 +240,37 @@ The last step before using your image in Power Automate is to share the image wi
 
 Once you've created your hosted machine group in an environment, you can view its details in the Power Automate portal.
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Go to **Monitor** > **Machines**.
 1. Select **Machine groups**.
 
-The list contains both hosted machine groups and standard machine groups. For each item in the list, you can see:
+    The list contains both hosted machine groups and standard machine groups. For each item in the list, you can see:
+    
+    - The name of the item.
+    - The description of the item.
+    - The number of the machines in the group (only for standard machine groups).
+    - The number of flows running in the item.
+    - The number of flows queued in the item.
+    - The type of access you've to the item.
+    - The owner of the item.
 
-- The name of the item.
-- The description of the item.
-- The number of the machines in the group (only for standard machine groups).
-- The number of flows running in the item.
-- The number of flows queued in the item.
-- The type of access you have to the item.
-- The owner of the item.
+    :::image type="content" source="media/hosted-machine-groups/view-machine-groups.png" alt-text="Screenshot of the available machine groups.":::
 
-:::image type="content" source="media/hosted-machine-groups/view-machine-groups.png" alt-text="Screenshot of the available machine groups.":::
+    Selecting a hosted machine group in the list will take you to the machine group's details page where you can:
 
-Selecting a hosted machine group in the list will take you to the machine group's details page where you can:
-
-- View and edit the details of the machine group.
-- Monitor the machine group's run queue.
-- View past runs.
-- List existing connections referencing the machine group.
-- View provisioning errors on the machine group, if any.
-- Manage access by sharing (or not) the machine group.
-- Delete the machine group.
+    - View and edit the details of the machine group.
+    - Monitor the machine group's run queue.
+    - View past runs.
+    - List existing connections referencing the machine group.
+    - View provisioning errors on the machine group, if any.
+    - Manage access by sharing (or not) the machine group.
+    - Delete the machine group.
 
 ## Share hosted machine groups
 
 You can share your hosted machine groups with other users so they can create connections and run desktop flows on them. To share a hosted machine group:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select **Monitor** > **Machines**.
 
@@ -280,7 +298,6 @@ To find more information about triggering desktop flows from cloud flows, go to 
 > [!IMPORTANT]
 >
 > - Only direct connectivity connections are supported for hosted machine groups.
-> - Only local account credentials are currently supported. These are credentials that you provided upon the creation of the hosted machine group.
 > - Only available for [unattended run mode](./run-pad-flow.md#unattended-mode).
 > - Desktop flows targeting hosted machine groups aren't yet compatible with the **Test flow** feature. It's possible that you observe errors when trying to test your flow. This problem is due to the nature of the [machine groups availability](#hosted-machine-groups-availability). The scheduled test run will still be accessible from the flow run history.
 
@@ -288,13 +305,13 @@ To find more information about triggering desktop flows from cloud flows, go to 
 
 You can't directly access or sign in to your hosted machine groups. They're not persisted unless they're running desktop flows. Bots in a group are created based on the current size of the queue, the configuration of the group, and the licenses assigned to the current environment.
 
-For instance, if the hosted machine group is newly created or it wasn't used for more than 24 hours, new bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
+For instance, if the hosted machine group is newly created or it wasn't used for more than 3 hours, new bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
 
 After this process, new bots will spawn to run desktop flows in the queue as efficiently as possible.
 
 To monitor your bots:
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Go to **Monitor** > **Machines**.
 
@@ -302,21 +319,25 @@ To monitor your bots:
 
 1. Select one of your hosted machine groups.
 
-In the example below, two bots are available to pick up the first two desktop flows in the queue, and three other desktop flows are queued. The desktop flow runs are marked as **Running** or **Queued** to indicate their state.
+    In the following example, two bots are available to pick up the first two desktop flows in the queue, and three other desktop flows are queued. The desktop flow runs are marked as **Running** or **Queued** to indicate their state.
 
-:::image type="content" source="media/hosted-machine-groups/hosted-machine-groups-monitoring.png" alt-text="Screenshot of some queued desktop flows.":::
+    :::image type="content" source="media/hosted-machine-groups/hosted-machine-groups-monitoring.png" alt-text="Screenshot of some queued desktop flows.":::
 
-After a few minutes, another bot is provisioned to run a third flow as the queue is large enough.
+    After a few minutes, another bot is provisioned to run a third flow as the queue is large enough.
 
-:::image type="content" source="media/hosted-machine-groups/hosted-machine-groups-monitoring-new-bot.png" alt-text="Screenshot of the queued desktop flows after a new bot has been provisioned.":::
+    :::image type="content" source="media/hosted-machine-groups/hosted-machine-groups-monitoring-new-bot.png" alt-text="Screenshot of the queued desktop flows after a new bot has been provisioned.":::
 
 ## Load balance hosted machine group
+
+The number of hosted bots that can run in your environment is equal to the number of hosted RPA add-on you've assigned to your environment. This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot configuration that enables you to set the maximum number of hosted bots that can be allocated to the hosted machine group.
+
+The hosted machine group will request to scale out when there aren't enough hosted bots to run desktop flows. It will take into consideration the maximum bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group will scale-in when there are no desktop flows allocated to an available hosted bot. This capacity then becomes available to other hosted machine groups in the environment.
 
 One key feature of hosted machine groups is the ability to reassign them to different groups and hence be able to balance your automation resources seamlessly between your different workloads.
 
 For instance, you may have two groups of bots, one for your sales automations and one for finance, in the same environment with 10 bots assigned. You can add more to one of the groups at any time by editing the hosted machine group and using the max number of available bots.
 
-1. Sign in to [Power Automate](http://powerautomate.com/).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select **Monitor** > **Machines**.
 
@@ -326,7 +347,7 @@ For instance, you may have two groups of bots, one for your sales automations an
 
 1. Select **Edit details** at the top of the page.
 
-:::image type="content" source="media/hosted-machine-groups/edit-hosted-machine-group.png" alt-text="Screenshot of the Edit details of a hosted machine group.":::
+    :::image type="content" source="media/hosted-machine-groups/edit-hosted-machine-group.png" alt-text="Screenshot of the Edit details of a hosted machine group.":::
 
 ## Permissions based on security roles
 
@@ -358,9 +379,9 @@ The **Desktop Flows Machine Image Admin** role only brings full privileges on th
 
 :::image type="content" source="media/hosted-machine-groups/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
 
-## Use your work or school account (preview)
+## Use your work or school account
 
-Hosted machine groups now support work and school accounts in preview. If you use your work or school account, your hosted machine group will have access to your resources that are part of the business plan linked to your organization, such as Office, Sharepoint, Azure, and more.
+Hosted machine groups supports work and school accounts. If you use your work or school account, your hosted machine group will have access to your resources that are part of the business plan linked to your organization, such as Office, SharePoint, Azure, and more.
 
 When you register a hosted machine group with this access option, you won't be prompted for credentials. Instead, the machine will be registered to your Azure Active Directory (Azure AD), and you'll be able to sign in with your Azure AD credentials. To [create a desktop flow connection](desktop-flow-connections.md) to target the hosted machine group, enter your work or school account email address and the associated password.
 
@@ -376,22 +397,24 @@ The work or school accounts feature is enabled by default. System admins and env
 
 1. Select **Settings** > **Features**.
 
-1. Under **Hosted RPA (preview)**, select the toggle for **Enable work or school accounts for hosted machine groups (preview)** to disable or enable this feature.
+1. Under **Hosted RPA**, select the toggle for **Enable work or school accounts for hosted machine groups** to disable or enable this feature.
+
+    :::image type="content" source="media/hosted-machine-groups/enable-work-school-accounts-hosted-machine-groups-option.png" alt-text="Screenshot of the Enable work or school accounts for hosted machine groups option in the tPower Platform admin center.":::
 
 1. Select **Save**.
 
-:::image type="content" source="media/hosted-machine-groups/enable-work-school-accounts-hosted-machine-groups-option.png" alt-text="Screenshot of the Enable work or school accounts for hosted machine groups option in the tPower Platform admin center.":::
+
 
 > [!NOTE]
 > Disabling this feature at the environment level will remove the **Work or school account** option in the hosted machine group creation wizard. Also, it will prevent any desktop flows from running using hosted machine groups configured with work or school accounts.
 
-### Disable  work or school accounts at the tenant level
+### Disable  work or school accounts at tenant level
 
 To prevent users from creating hosted machine groups with work or school accounts at the tenant level, send a request to support to disable the feature at the tenant level.
 
 > [!NOTE]
 >
-> - Disabling this feature at the tenant level won't hide the **Work or school account** option in the hosted machine group creation wizard. However, the hosted machine group creation will fail with an error.
+> - Disabling this feature at tenant level won't hide the **Work or school account** option in the hosted machine group creation wizard. However, the hosted machine group creation will fail with an error.
 > - Desktop flows will continue to run using work or school account connection. You need to manually remove hosted machine groups that have been created with the **Work or school account** option.
 
 ## Hosted machine groups limitations
@@ -401,32 +424,40 @@ This section presents all the limitation of hosted machine groups.
 ### Geographical availabilities/restrictions
 
 The following list displays all the supported geographies in the public clouds:
-
-- United States
-- Germany
+- Asia
+- Australia
 - Brazil
 - Canada
 - Europe
 - France
-- Asia Pacific
-- Australia
-- Japan
+- Germany
 - India
-- United Kingdom
-- Switzerland
-- Norway
-
-Hosted machine groups aren't yet available in sovereign clouds and aren't yet available in the following public cloud geographies:
-
-- United Arab Emirates
+- Japan
 - Korea
+- Norway
+- South Africa
+- Switzerland
+- United Arab Emirates
+- United Kingdom
+- United States
 
-### Setup desktop flows connections for hosted machine groups
 
-Hosted machine groups can be accessed only with local Windows accounts. Active Directory and Azure Active Directory accounts aren't supported yet.
+The following list displays all supported sovereign clouds:
+- Government Community Cloud (GCC)
+- Government Community Cloud High (GCC High)
+- Department of Defense (DoD)
 
-> [!NOTE]
-> When creating hosted machine groups, you're asked to provide credentials for a local account. You can use this account to setup connections targeting the hosted machine group.
+Hosted machine groups aren't yet available in the following sovereign cloud:
+- China
+
+### Sovereign clouds limitations for hosted machine groups
+
+The following features aren't supported in sovereign clouds:
+
+| Feature not supported | Sovereign cloud(s)|
+| ----------| --------------|
+| Work or school acount | GCC, GCC High, DoD |
+| Custom VM images | GCC, DoD |
 
 ### Network limitations for hosted machine groups
 
@@ -436,13 +467,17 @@ Hosted machine groups don't have access to on-premises data sources or other on-
 
 Remote desktop to hosted machine groups isn't supported. Hosted machine groups are meant to be used for unattended runs only, and remote desktop access from the Internet isn't required to run Power Automate desktop flows.
 
-### Limit on the number of hosted machine groups per environment during public preview
+### Limit on the number of hosted machine groups per environment
 
-During the public preview, the number of bot hosted machine groups is limited to 10 for each environment. If you reach this limit, delete an existing hosted machine group to create a new one.
+The number of hosted machine groups is limited to 10 for each environment. If you reach this limit, delete an existing hosted machine group to create a new one.
+
+### Limit on the number of bots per hosted machine group
+
+The maximum number of hosted bots per hosted machine group is limited to 50.
 
 ### Delete unused resources
 
-During the public preview, we delete unused resources to ensure the service is available for everyone. Therefore, all hosted machine groups that are inactive for more than 28 days are automatically deleted. The deleted groups remain visible, but they can't be used. An inactive group is a group that hasn't run any desktop flows for the last 28 days.
+We delete unused resources to ensure the service is available for everyone. Therefore, all hosted machine groups that are inactive for more than 28 days are automatically deleted. The deleted groups remain visible, but they can't be used. An inactive group is a group that hasn't run any desktop flows for the last 28 days.
 
 > [!NOTE]
 > You must delete the hosted machine group and create a new one to continue using its features. You'll need to reconfigure the connection that's associated with your cloud flow.

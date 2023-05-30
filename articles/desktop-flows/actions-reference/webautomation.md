@@ -5,15 +5,13 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/06/2022
+ms.date: 01/27/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -264,7 +262,7 @@ This action doesn't produce any variables.
 
 ## <a name="setdropdownlistvaluebase"></a> Set drop-down list value on web page
 
-Set or clear the selected option for a drop-down list in a web form.
+Set or clear the selected options for a drop-down list in a web form.
 
 ### Input parameters
 
@@ -273,11 +271,11 @@ Set or clear the selected option for a drop-down list in a web form.
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|[UI element](../ui-elements.md)||Select the drop-down list to set its value|
 |Operation|N/A|Clear all options, Select options by name, Select options by index|Clear all options|Select whether to select a value or clear the selected value of the drop-down list|
-|Option name(s)|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||Enter an option or a list of options to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified will be used.|
+|Option names|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||Enter an option or a list of options to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified will be used.|
 |Use regular expressions|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the option names values to interpret as a regular expression|
 |Option indices|No|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)||Enter an index or a list of indices to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified will be used.|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after setting the drop-down list value|
-|Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
+|Timeout for webpage load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after setting the drop-down list value|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 

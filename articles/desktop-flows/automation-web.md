@@ -3,14 +3,12 @@ title: Automate webpages | Microsoft Docs
 description: Learn how to launch browsers, automate webpages, and extract data from the Web.
 author: georgiostrantzas
 ms.subservice: desktop-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/22/2022
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
 - NikosMoutzourakis
-search.app: 
-  - Flow
 search.audienceType: 
   - flowmaker
   - enduser
