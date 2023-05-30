@@ -87,13 +87,13 @@ You can set additional properties to define more granularly when the flow runs a
 
 Use filter conditions to set conditions for when to trigger flows.
 
-   ![Filter condition.](../media/create-update-delete-trigger/filter-conditions.png "Filter condition")
+    :::image type="content" source="../media/create-update-delete-trigger/filter-conditions.png "Filter condition"" alt-text="Screenshot of filter conditions.":::
 
 ## Filtering columns
 
 Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
 
-   ![Filter columns by firstname.lastname.](../media/create-update-delete-trigger/filter-columns.png "Filter columns by firstname.lastname")
+    :::image type="content" source="../media/create-update-delete-trigger/filter-columns.png" alt-text="Screenshot of filtering columns by firstname.lastname.":::
 
 >[!NOTE]
 >This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
@@ -119,7 +119,7 @@ Use an OData-style time stamp in the **Delay until** property to delay the flow 
 
 The key benefit of using the Dataverse **Delay until** property instead of the standard **Delay until** *action* is the Dataverse **Delay until** property never expires, allowing the flow run to wait for long periods of time.
 
-   ![Delay until.](../media/create-update-delete-trigger/delay-until.png "Delay until")
+:::image type="content" source="../media/create-update-delete-trigger/run-as-invoke.png" alt-text="Screenshot of the 'Delay until' field.":::
 
 ### User impersonation using Run As
 
@@ -136,7 +136,7 @@ Follow these steps to impersonate a user:
 
 1. For each Dataverse action that you want to run as a different user, select the menu in the upper-right corner (...), as shown in the following image, and select the **Use invoker’s connection** setting. For the steps in which it is not selected, the default user is assumed. This would call the underlying APIs as per the selected user, and not as the flow owner.
 
-   ![Run as the modifying user.](../media/create-update-delete-trigger/run-as.png "Run as the modifying user")
+    :::image type="content" source="../media/create-update-delete-trigger/run-as-invoke.png" alt-text="Screenshot of the option to run as the modifying user.":::
 
 If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author. Here are the other options:
 
@@ -146,7 +146,7 @@ If nothing is specified, it defaults to the flow owner who created the flow&mdas
 
 - **Modifying user**: The user that took the action on the Microsoft Dataverse row, causing the flow to get triggered or modified.
 
-    ![Run as options.](../media/create-update-delete-trigger/11.png "Run as options")
+    :::image type="content" source="../media/create-update-delete-trigger/11.png" alt-text="Screenshot of 'run as' options.":::
 
 Additionally, instant flows allow running the steps of any other [connector](/connectors/) (such as [Microsoft Teams](/connectors/teams/), [Microsoft 365 Outlook](/connectors/office365/), or [SharePoint](/connectors/sharepointonline/) in the same flow using the invoker’s connection. To do so, follow these steps:
 
