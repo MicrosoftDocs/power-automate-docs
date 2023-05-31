@@ -689,6 +689,8 @@
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
     - name: SharePoint (preview)
       href: ./desktop-flows/actions-reference/sharepoint.md
+    - name: Workqueues (preview)
+      href: ./desktop-flows/actions-reference/workqueues.md
   - name: Troubleshoot desktop flows
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
