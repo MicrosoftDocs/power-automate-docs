@@ -644,6 +644,16 @@
       "source_path": "articles/minit/process-explorer.md",
       "redirect_url": "/power-automate/minit/process-map",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/mobile/run-instant-flows.md",
+      "redirect_url": "/power-automate/mobile/manage-cloud-flows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/mobile-manage-flows.md",
+      "redirect_url": "/power-automate/mobile/manage-cloud-flows",
+      "redirect_document_id": false
     }
   ]
 }

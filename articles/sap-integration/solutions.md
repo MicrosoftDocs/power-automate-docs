@@ -1,6 +1,6 @@
 ---
 title: Understand prebuilt solution available for integrating SAP with Power Platform (preview)
-description: Learn about the prebuilt SAP Integration solution available to import into Power Apps
+description: Learn about the prebuilt SAP Integration solution available to import into Power Apps.
 author: jongilman88
 contributors: 
 - EllenWehrle
@@ -99,7 +99,7 @@ These sets of components work together to communicate with your SAP system, auto
 
 After importing the prebuilt solution into Power Apps, look to the left-side navigation panel to view all of its different components.
 
-  :::image type="content" source="media/prebuilt-solution/powerapps-nav.png" alt-text="Power App navigation where one can select Apps, Flows, and Solutions.":::
+  :::image type="content" source="media/prebuilt-solution/powerapps-nav.png" alt-text="Power App navigation where you can select Apps, Flows, and Solutions.":::
 
 - Select **Flows** to view the list of included flows.
 - Select **Apps** to view the list of included apps.
@@ -169,5 +169,5 @@ After the systems are configured to communicate with one another and you explore
 
 ### See also
 
-- [Create an environment variable with SAP connection parameters (preview)](env-variables-connection-refs.md)
-- [Overview of SAP integration with Power Platform (preview)](overview.md)
+- [Create an environment variable with SAP connection parameters](env-variables-connection-refs.md)
+- [Overview of SAP integration with Power Platform](overview.md)

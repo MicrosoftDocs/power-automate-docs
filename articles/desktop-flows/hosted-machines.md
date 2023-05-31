@@ -4,19 +4,13 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 05/22/2023
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
-search.audienceType: 
-  - flowmaker
-  - enduser
 ---
 
 # Hosted machines
-
-> [!NOTE]
-> Hosted machines is generally available from May 4th, 2023.
 
 Hosted machines allow you to build, test, and run attended and unattended desktop flows without providing or setting up any physical machines.
 
@@ -218,17 +212,18 @@ You can personalize your hosted machines by providing your own Windows image dir
 1. Once you've created an Azure Compute Gallery, create an image definition following the steps in [Create an image definition and an image version](/azure/virtual-machines/image-version). You should create the image in the exact location where we deploy your hosted machines. You can find the following mapping with your environment Geo:
 
 - Australia: Australia East
-- Asia: East Asia (Available from May 11, 2023)
-- Brazil: Brazil South  (Available from May 11, 2023)
+- Asia: East Asia
+- Brazil: Brazil South
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
 - Germany: Germany West Central (Restricted, please send your request to hostedrpa@microsoft.com) 
 - India: Central India
 - Japan: Japan East
-- Korea: Korea Central  (Available from May 11, 2023)
-- Norway: Norway East  (Available from May 11, 2023)
-- Switzerland: Switzerland North  (Available from May 11, 2023)
+- Korea: Korea Central
+- Norway: Norway East
+- Switzerland: Switzerland North
+- United Arab Emirates: UAE North
 - United Kingdom: UK South
 - United States: East US
 
@@ -328,17 +323,18 @@ To use your own network and provision Azure Azure AD joined hosted machines, you
 The VNet needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
 
 - Australia: Australia East
-- Asia: East Asia (Available from May 11, 2023)
-- Brazil: Brazil South  (Available from May 11, 2023)
+- Asia: East Asia
+- Brazil: Brazil South
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
 - Germany: Germany West Central (Restricted, please send your request to hostedrpa@microsoft.com) 
 - India: Central India
 - Japan: Japan East
-- Korea: Korea Central  (Available from May 11, 2023)
-- Norway: Norway East  (Available from May 11, 2023)
-- Switzerland: Switzerland North  (Available from May 11, 2023)
+- Korea: Korea Central
+- Norway: Norway East
+- Switzerland: Switzerland North
+- United Arab Emirates: UAE North
 - United Kingdom: UK South
 - United States: East US
 
@@ -519,39 +515,48 @@ This section presents the limitations of hosted machines.
 The following list displays all the supported Power Platform geographies in the public cloud:
 
 - Australia
-- Asia (Available from May 11, 2023)
-- Brazil (Available from May 11, 2023)
+- Asia
+- Brazil
 - Canada
 - Europe
 - France
 - Germany (Restricted, please send your request to hostedrpa@microsoft.com) 
 - India
 - Japan 
-- Korea (Available from May 11, 2023)
-- Norway (Available from May 11, 2023)
-- Switzerland (Available from May 11, 2023)
+- Korea
+- Norway
+- Switzerland
+- United Arab Emirates
 - United Kingdom
 - United States
 
-Hosted machines aren't yet available in sovereign clouds nor in the following Power Platform geography in the public cloud:
-- United Arab Emirates
-
+> [!NOTE]
+> Hosted machines aren't yet available in sovereign clouds.
 
 
 ### Azure tenant country/region and supported geographies in the public cloud
 
-A hosted machine can only be provisioned when the tenant's country/region on Azure falls within the same scope of the region for the Power Automate environment.
+A hosted machine stores limited metadata in the geography of your tenant's country, which can be different from the region of your Power Automate environment. By default, the cross-geo support for hosted machines is enabled. System admins and environment admins can disable or enable the feature from the Power Platform admin center.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. Go to **Environments**, and select the appropriate environment.
+
+1. Select **Settings** > **Features**.
+
+1. Under **Hosted RPA**, select the toggle for **Enable cross-geo support for hosted machines** to disable or enable this feature.
+
+    :::image type="content" source="media/hosted-machines/enable-cross-geo-support-hosted machines.png" alt-text="Screenshot of the Enable cross-geo support for hosted machines option in the Power Platform admin center.":::
+
+1. Select **Save**.
 
 > [!NOTE]
-> Your default Power Automate environment is created based on your Azure Active Directory tenant's country/region.
-
-To check the tenant country/region on Azure:
-
-1. Go to the [Azure portal](https://portal.azure.com/).
-1. Open the **Tenant properties** service.
-1. The **Country or region** is available as one of the properties.
-
-:::image type="content" source="media/hosted-machines/tenant-properties.png" alt-text="Screenshot of the Country or region tenant property.":::
+> Disabling this feature at the environment level will restrict creation of hosted machines when your tenant's country or region on Azure falls within the same scope of the region for your Power Automate environment.
+> To check the tenant country/region on Azure:
+> 1. Go to the [Azure portal](https://portal.azure.com/).
+> 1. Open the **Tenant properties** service. The **Country or region** is available as one of the properties.
+>
+>    :::image type="content" source="media/hosted-machines/tenant-properties.png" alt-text="Screenshot of the Country or region tenant property.":::
 
 ### Deletion of unused resources
 

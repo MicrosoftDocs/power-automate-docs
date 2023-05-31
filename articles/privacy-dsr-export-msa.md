@@ -5,13 +5,8 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMAN
-manager: KVIVEK
-ms.reviewer: gtrantzas
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: onceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/18/2023
@@ -64,11 +59,9 @@ The following table summarizes where to find and export the personal data of a u
 
 1. Select a flow, select **&hellip; More**, and then select **Export**.
 
-    :::image type="content" source="media/privacy-dsr-export/export-flow.png" alt-text="Screenshot of exporting a Power Automate flow.":::
-
 1. Select **Package (.zip)**.
 
-Your flow is downloaded as a zipped archive.
+    Your flow is downloaded as a zipped archive.
 
 ## Export run history
 
@@ -82,11 +75,9 @@ Run history lists all executions of a cloud flow, including a run's status, star
 
 1. In the **RUN HISTORY** pane, select **See all**.
 
-    :::image type="content" source="media/privacy-dsr-export/run-history.png" alt-text="Screenshot of a flow's run history.":::
-
 1. At the top of the page, select **Download CSV**.
 
-The run history is downloaded as a .csv file so that you can open it in Microsoft Excel or a text editor and analyze the results.
+    The run history is downloaded as a .csv file so that you can open it in Microsoft Excel or a text editor and analyze the results.
 
 ## Export a user's activity feed
 
