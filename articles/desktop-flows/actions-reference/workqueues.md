@@ -1,6 +1,6 @@
 ---
 title: Work queues actions (preview)
-description: Manage work queues in Power Automate.
+description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
 ms.date: 5/31/2023
 ms.author: dbekirop
