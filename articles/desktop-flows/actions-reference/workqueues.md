@@ -55,7 +55,7 @@ The **work queue** referenced in the above action is used by the queue orchestra
 
 The **Update work queue item (Preview)** action allows users to change the status and processing results of the selected work queue item.
 
-:::image type="content" source="media\workqueues\UpdateWorkQueueItem.png" alt-text="Screenshot of the Process Work Queue Item action." lightbox="media\workqueues\UpdateWorkQueueItem.png":::
+:::image type="content" source="media\workqueues\UpdateWorkQueueItem.png" alt-text="Screenshot of the Update Work Queue Item action." lightbox="media\workqueues\UpdateWorkQueueItem.png":::
 
 | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
@@ -73,8 +73,8 @@ The **Update work queue item (Preview)** action allows users to change the statu
 
 ### See also
 
-- [Work queue overview](work-queues.md)
-- [Manage work queues](work-queues-manage.md)
-- [Bulk-import work queue data](work-queues-bulk-import.md)
-- [Trigger work queues](work-queues-trigger.md)
-- [Process work queues](work-queues-process.md)
+- [Work queue overview](../work-queues.md)
+- [Manage work queues](../work-queues-manage.md)
+- [Bulk-import work queue data](../work-queues-bulk-import.md)
+- [Trigger work queues](../work-queues-trigger.md)
+- [Process work queues](../work-queues-process.md)
