@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 06/05/2023
+ms.date: 06/02/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -103,7 +103,7 @@ Load your process analytics in Power BI to start customizing your report.
 
 ## Customize reports in Power BI workspace
 
-With Process advisor’s powerful integration with Power BI, you can customize your process reports in an attached Power BI workspace. In this example, you'll perform a simple customization of the Power BI report to include a card that holds or tracks one of the analytic measures.
+With Process advisor’s powerful integration with Power BI, you can customize your process reports in an attached Power BI workspace. In this example, you perform a simple customization of the Power BI report to include a card that holds or tracks one of the analytic measures.
 
  To be able to do this, make sure you've completed these steps in this article:
 
@@ -119,7 +119,7 @@ After completing these steps, return to the analytics page of your process in pr
 
 1. Select **Open in Power BI**. If you don't see this button, make sure you've completed the steps in the [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi) section in this article.
 
-    You'll be redirected to a Power BI web screen that will show you a report of your process as in the screenshots later in this section.
+    You are redirected to a Power BI web screen that shows you a report of your process.
 
 1. Begin customizing your report by downloading it to your local machine. To do this, select **File** > **Download this file**.
 
@@ -129,7 +129,7 @@ After completing these steps, return to the analytics page of your process in pr
 
 1. Open the downloaded report in Power BI Desktop. Ensure you have the latest Power BI Desktop version.
 
-1. After the report opens in Power BI Desktop, go to the **Modeling** tab and select **Make changes to this model**. You may need to have the **Contributor** role to be able to see that option in the **Modeling** tab. 
+1. Go to the **Modeling** tab and select **Make changes to this model**. You might need to have the **Contributor** role to be able to see that option in the **Modeling** tab.
 
 1. Select **Add a local model**.
 
@@ -143,27 +143,29 @@ After completing these steps, return to the analytics page of your process in pr
 
 1. Move the cards that hold the donuts (blue circles) for the **Variants**, **Cases**, and **Activities** metrics to the right by selecting and dragging each card.
 
-1. In the **Visualizations** pane, select the card element.
+1. On the **Visualizations** pane, select the card element.
 
-1. A new card appears. Resize it and drag it to the left of the **Variants** donut (blue circle).
+1. A new card appears. Resize it, and then drag it to the left of the **Variants** donut (blue circle).
 
-1. In the **Data** pane, expand **ReportMeasures** and select **Self Loop %**.
+1. On the **Data** pane, expand **ReportMeasures** and select **Self Loop %**.
 
 1. On the command bar, select **Save**.
 
     In your process, you don’t have any self loops, so you should see **0.00%** in that card.
 
-    :::image type="content" source="media/process-mining-pbi-workspace/zero-self-loops.png" alt-text="Screenshot of a new card wirh 0.00 percent.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/zero-self-loops.png" alt-text="Screenshot of a new card with 0.00 percent.":::
 
-1. Save the report and from the **Home** tab select, **Publish**. Choose your workspace and click **Select** to publish the report to the Power BI service.
+1. Save the report.
 
-1. After the report has been successfully published, you can open it from the pop-out window on the screen.
+1. From the **Home** tab, select **Publish**.
+
+1. Select your workspace, and choose **Select** to publish the report to the Power BI service.
+
+    After the report has been successfully published, you can open it from the pop-out window.
 
 You've successfully customized your Power BI workspace. Every time you refresh your process and reopen your Power BI report, your metrics and customizations are updated. Try out Power BI and customize your reports to learn how they can help you analyze your process effectively.
 
-Once this step is done, you see the report in your Power BI workspace with the report name that you entered. You can edit this report and save it. Your report on process advisor ia updated with all of the changes that you make with Power BI.
-
-## Troubleshoot issues
+Once this step is done, you see the report in your Power BI workspace with the report name that you entered. You can edit and save it. Your report on process advisor is updated with the changes that you made with Power BI.
 
 If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
 
