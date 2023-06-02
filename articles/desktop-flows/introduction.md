@@ -5,7 +5,7 @@ author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 05/02/2023
-ms.custom: intro-internal
+ms.collection: get-started
 ms.author: marleon
 ms.reviewer: matp
 contributors:

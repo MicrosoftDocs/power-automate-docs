@@ -24,6 +24,8 @@ In this section, you can find a reference to all actions of the Power Automate.
 
 Select on any of the action groups and the list of actions will appear along with their parameters to assist you configure them.
 
+
+
 |A - C|D - G|H - R|S - Z|
 |----|----|----|----|
 |[Active Directory](actions-reference/activedirectory.md)|[Database](actions-reference/database.md)|[HTTP](actions-reference/web.md)|[Scripting](actions-reference/scripting.md)|
@@ -35,7 +37,8 @@ Select on any of the action groups and the list of actions will appear along wit
 |[Compression](actions-reference/compression.md)|[Flow control](actions-reference/flowcontrol.md)|[OCR](actions-reference/ocr.md)|[Variables](actions-reference/variables.md)|
 |[Conditionals](actions-reference/conditionals.md)|[Folder](actions-reference/folder.md)|[Outlook](actions-reference/outlook.md)|[Windows services](actions-reference/services.md)|
 |[Cryptography](actions-reference/cryptography.md)|[FTP](actions-reference/ftp.md)|[PDF](actions-reference/pdf.md)|[Workstation](actions-reference/workstation.md)|
-|[CyberArk](actions-reference/cyberark.md)|[Google Cognitive](actions-reference/googlecognitive.md)|[Run flow](actions-reference/runflow.md)|[XML](actions-reference/xml.md)|
+|[CyberArk](actions-reference/cyberark.md)|[Google Cognitive](actions-reference/googlecognitive.md)|[Run flow](actions-reference/runflow.md)|[Workqueues](actions-reference/workqueues.md)|
+||||[XML](actions-reference/xml.md)|
 
 
 
