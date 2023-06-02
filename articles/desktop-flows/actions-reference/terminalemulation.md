@@ -278,7 +278,7 @@ Search for all occurrences of a specific text on a terminal session
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|FindResults|[Datatable](../variable-data-types.md#Datatable)|The search results retrieved from the terminal session screen|
+|FindResults|[Datatable](../variable-data-types.md#datatable)|The search results retrieved from the terminal session screen|
 
 ### <a name="searchfortextonterminalsession_onerror"></a> Exceptions
 
