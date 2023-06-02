@@ -5,10 +5,11 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
+ms.date: 06/02/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -255,6 +256,39 @@ This action doesn't produce any variables.
 |Position commands aren't supported by the emulator|Indicates that position commands used aren't supported by the emulator|
 |Operation is unavailable for this session type|Indicates that the operation is unavailable for this session type|
 |Timeout expired|Indicates that the timeout has been expired|
+
+
+## <a name="searchfortextonterminalsession"></a> Search for text on terminal session
+
+Search for all occurrences of a specific text on a terminal session
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Terminal session|No|[Terminal session](../variable-data-types.md#terminal)||The previously opened terminal session|
+|Text to search for|No|[Text value](../variable-data-types.md#text-value)||The text or regular expression to search for on the terminal screen|
+|Regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to search for a regular expression instead of plain text|
+|Column size|No|[Numeric value](../variable-data-types.md#numeric-value)|80|The number of the columns on the terminal screen|
+
+> [!NOTE]
+> Power Automate's regular expression engine is .NET. To find more information about regular expressions, go to [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|FindResults|[Datatable](../variable-data-types.md#datatable)|The search results retrieved from the terminal session screen|
+
+### <a name="searchfortextonterminalsession_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Error communicating with the emulator|Indicates a problem connecting to the emulator| 
+|Text not found|Indicates that the text searching for was not found| 
+|Invalid regex expression|Indicates that the Regular Expression used is invalid|
+
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
