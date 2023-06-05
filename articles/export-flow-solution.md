@@ -44,7 +44,7 @@ Follow these steps to move your solution and its dependencies to a new environme
     > [!NOTE]
     > The export can take several minutes to complete.
 
-1.  After the solution file export finishes, you'll see a notification on top of the screen. Select **Download** from the top-right side of this notification to download the solution zip file.
+1.  After the solution file export succeeds, you'll see a success notification on top of the screen. Select **Download** from the top-right side of this notification to download the solution zip file.
 
 The downloaded solution zip file is available in the downloads folder for your web browser.
 
