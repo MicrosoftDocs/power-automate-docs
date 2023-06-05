@@ -106,3 +106,7 @@ A Power Apps per app license allows a limited set of Power Automate capabilities
 
 Use the PowerShell command in [How can I associate in context flows to apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps) in the *FAQs about licenses* article.
 
+### See also
+
+- [How can I associate in context flows to apps?](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps)
+- [Can I use service principal in flows, and does it count against my request limits?](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits)
