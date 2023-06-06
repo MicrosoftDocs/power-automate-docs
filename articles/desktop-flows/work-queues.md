@@ -79,3 +79,4 @@ In cases where the automation is unable to process a particular transaction with
 - [Trigger work queues](work-queues-trigger.md)
 - [Process work queues](work-queues-process.md)
 - [Known issues and limitations](work-queues-known-limitations.md)
+- [Work queues actions (preview)](actions-reference/workqueues.md)

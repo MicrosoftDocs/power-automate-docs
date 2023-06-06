@@ -16,7 +16,7 @@ ms.workload: na
 ms.date: 08/13/2020
 ms.author: deonhe
 ms.reviewer: gtrantzas
-ms.custom: intro-internal
+ms.collection: get-started
 search.audienceType: 
   - flowmaker
   - enduser
