@@ -551,7 +551,7 @@ A hosted machine stores limited metadata in the geography of your tenant's count
 1. Select **Save**.
 
 > [!NOTE]
-> Disabling this feature at the environment level will restrict creation of hosted machines when your tenant's country or region on Azure do not fall within the same scope of the region for your Power Automate environment.
+> Disabling this feature at the environment level will restrict creation of hosted machines when your tenant's country or region on Azure don't fall within the same scope of the region for your Power Automate environment.
 > To check the tenant country/region on Azure:
 > 1. Go to the [Azure portal](https://portal.azure.com/).
 > 1. Open the **Tenant properties** service. The **Country or region** is available as one of the properties.
