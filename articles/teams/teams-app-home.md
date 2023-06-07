@@ -7,7 +7,7 @@ documentationcenter: na
 author: msftman
 editor: ''
 tags: ''
-ms.custom: intro-internal
+ms.collection: get-started
 
 ms.devlang: na
 ms.subservice: teams

@@ -10,7 +10,7 @@ contributors:
   - prkoduku
   - v-aangie
 ms.reviewer: angieandrews
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Get started with triggers
