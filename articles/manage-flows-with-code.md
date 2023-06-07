@@ -7,7 +7,7 @@ contributors:
   - v-aangie
   - JimDaly
 ms.reviewer: angieandrews
-ms.date: 05/08/2023
+ms.date: 06/06/2023
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.author: cgarty
@@ -99,15 +99,19 @@ To retrieve a list of cloud flows, you can query the workflow table. The followi
 
 #### [SDK for .NET](#tab/sdk)
 
-This static method requires an authenticated client that implements the <xref:Microsoft.Xrm.Sdk.IOrganizationService>. It uses the [IOrganizationService.Create](xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple%2A) method.
+This static `OutputFirstActiveFlow` method requires an authenticated client that implements the <xref:Microsoft.Xrm.Sdk.IOrganizationService>. It uses the [IOrganizationService.Create](xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple%2A) method.
 
 
 ```csharp
+/// <summary>
+/// Outputs the first active flow
+/// </summary>
+/// <param name="service">Authenticated client implementing the IOrganizationService interface</param>
 public static void OutputFirstActiveFlow(IOrganizationService service)
 {
-    var query = new QueryExpression("workflow")
-    {
-        ColumnSet = new ColumnSet("category",
+   var query = new QueryExpression("workflow")
+   {
+         ColumnSet = new ColumnSet("category",
                                     "createdby",
                                     "createdon",
                                     "description",
@@ -120,43 +124,45 @@ public static void OutputFirstActiveFlow(IOrganizationService service)
                                     "type",
                                     "workflowid",
                                     "workflowidunique"),
-        Criteria = new FilterExpression(LogicalOperator.And)
-        {
+         Criteria = new FilterExpression(LogicalOperator.And)
+         {
             Conditions = {
-                    {  new ConditionExpression(
-                        "category",
-                            ConditionOperator.Equal,
-                            5) },
-                    {  new ConditionExpression(
-                            "statecode",
-                            ConditionOperator.Equal,
-                            1) }
-                }
-        },
-        TopCount = 1
-    };
+            {  new ConditionExpression(
+               "category",
+                     ConditionOperator.Equal,
+                     5) }, // Cloud Flow
+            {  new ConditionExpression(
+                     "statecode",
+                     ConditionOperator.Equal,
+                     1) } // Active
+         }
+         },
+         TopCount = 1 // Limit to one record
+   };
 
-    EntityCollection workflows = service.RetrieveMultiple(query);
+   EntityCollection workflows = service.RetrieveMultiple(query);
 
-    Entity workflow = workflows.Entities.FirstOrDefault();
+   Entity workflow = workflows.Entities.FirstOrDefault();
 
-    Console.WriteLine($"category: {workflow.FormattedValues["category"]}");
-    Console.WriteLine($"createdby: {workflow.FormattedValues["createdby"]}");
-    Console.WriteLine($"createdon: {workflow.FormattedValues["createdon"]}");
-    // Description may be null
-    Console.WriteLine($"description: {workflow.GetAttributeValue<string>("description")}");
-    Console.WriteLine($"ismanaged: {workflow.FormattedValues["ismanaged"]}");
-    Console.WriteLine($"modifiedby: {workflow.FormattedValues["modifiedby"]}");
-    Console.WriteLine($"modifiedon: {workflow.FormattedValues["modifiedon"]}");
-    Console.WriteLine($"name: {workflow["name"]}");
-    Console.WriteLine($"ownerid: {workflow.FormattedValues["ownerid"]}");
-    Console.WriteLine($"statecode: {workflow.FormattedValues["statecode"]}");
-    Console.WriteLine($"type: {workflow.FormattedValues["type"]}");
-    Console.WriteLine($"workflowid: {workflow["workflowid"]}");
-    Console.WriteLine($"workflowidunique: {workflow["workflowidunique"]}");
-
+   Console.WriteLine($"category: {workflow.FormattedValues["category"]}");
+   Console.WriteLine($"createdby: {workflow.FormattedValues["createdby"]}");
+   Console.WriteLine($"createdon: {workflow.FormattedValues["createdon"]}");
+   // Description may be null
+   Console.WriteLine($"description: {workflow.GetAttributeValue<string>("description")}");
+   Console.WriteLine($"ismanaged: {workflow.FormattedValues["ismanaged"]}");
+   Console.WriteLine($"modifiedby: {workflow.FormattedValues["modifiedby"]}");
+   Console.WriteLine($"modifiedon: {workflow.FormattedValues["modifiedon"]}");
+   Console.WriteLine($"name: {workflow["name"]}");
+   Console.WriteLine($"ownerid: {workflow.FormattedValues["ownerid"]}");
+   Console.WriteLine($"statecode: {workflow.FormattedValues["statecode"]}");
+   Console.WriteLine($"type: {workflow.FormattedValues["type"]}");
+   Console.WriteLine($"workflowid: {workflow["workflowid"]}");
+   Console.WriteLine($"workflowidunique: {workflow["workflowidunique"]}");
 }
 ```
+
+To retrieve more records, remove the [TopCount](xref:Microsoft.Xrm.Sdk.Query.QueryExpression.TopCount) limit.
+
 
 **Output**
 
@@ -275,14 +281,20 @@ The required properties for automated, instant, and scheduled flows are: `catego
 This static method requires an authenticated client that implements the <xref:Microsoft.Xrm.Sdk.IOrganizationService>. It uses the [IOrganizationService.Create](xref:Microsoft.Xrm.Sdk.IOrganizationService.Create%2A) method.
 
 ```csharp
-public static Guid CreateCloudFlow(IOrganizationService service) {
-
-   var workflow = new Entity("workflow") { 
+/// <summary>
+/// Creates a cloud flow
+/// </summary>
+/// <param name="service">Authenticated client implementing the IOrganizationService interface</param>
+/// <returns>The workflowid</returns>
+public static Guid CreateCloudFlow(IOrganizationService service)
+{
+   var workflow = new Entity("workflow")
+   {
          Attributes = {
-            {"category", new OptionSetValue(5) },
-            {"statecode", new OptionSetValue(0)},
+            {"category", new OptionSetValue(5) }, // Cloud flow
+            {"statecode", new OptionSetValue(0)}, // Draft (Off)
             {"name", "Sample flow name"},
-            {"type", new OptionSetValue(1) },
+            {"type", new OptionSetValue(1) }, //Definition
             {"description", "This flow reads some data from Dataverse." },
             {"primaryentity", "none" },
             {"clientdata", "{\"properties\":{\"connectionReferences\":{\"shared_commondataserviceforapps\":{\"impersonation\":{},\"runtimeSource\":\"embedded\",\"connection\":{\"name\":\"shared-commondataser-114efb88-a991-40c7-b75f-2693-b1ca6a0c\",\"connectionReferenceLogicalName\":\"crdcb_sharedcommondataserviceforapps_109ea\"},\"api\":{\"name\":\"shared_commondataserviceforapps\"}}},\"definition\":{\"$schema\":\"https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#\",\"contentVersion\":\"1.0.0.0\",\"parameters\":{\"$connections\":{\"defaultValue\":{},\"type\":\"Object\"},\"$authentication\":{\"defaultValue\":{},\"type\":\"SecureObject\"}},\"triggers\":{\"manual\":{\"metadata\":{\"operationMetadataId\":\"76f87a86-89b3-48b4-92a2-1b74539894a6\"},\"type\":\"Request\",\"kind\":\"Button\",\"inputs\":{\"schema\":{\"type\":\"object\",\"properties\":{},\"required\":[]}}}},\"actions\":{\"List_rows\":{\"runAfter\":{},\"metadata\":{\"operationMetadataId\":\"9725b30f-4a8e-4695-b6fd-9a4985808809\"},\"type\":\"OpenApiConnection\",\"inputs\":{\"host\":{\"apiId\":\"/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps\",\"connectionName\":\"shared_commondataserviceforapps\",\"operationId\":\"ListRecords\"},\"parameters\":{\"entityName\":\"accounts\",\"$select\":\"name\",\"$top\":1},\"authentication\":\"@parameters('$authentication')\"}}}}},\"schemaVersion\":\"1.0.0.0\"}" }
@@ -290,7 +302,6 @@ public static Guid CreateCloudFlow(IOrganizationService service) {
    };
 
    return service.Create(workflow);
-
 }
 ```
 
@@ -400,9 +411,9 @@ There are three properties:
 
 | Property name  | Description                                                 |
 | -------------- | ----------------------------------------------------------- |
-| connectionName | Identifies the connection. You can see the connectionName by going to the **Connections** page and then copying it from the URL of the connection. |
-| source         | Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (where a user selects a button to run the flow), and indicates that the end user will provide the connection. In this case, the connectionName is only used at design time. If the connection is `Embedded`, that means the connectionName you specify is always used. |
-| id             | The identifier of the connector. The id always starts with `/providers/Microsoft.PowerApps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. |
+|`connectionName`| Identifies the connection. You can see the connectionName by going to the **Connections** page and then copying it from the URL of the connection. |
+|`source`| Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (where a user selects a button to run the flow), and indicates that the end user will provide the connection. In this case, the connectionName is only used at design time. If the connection is `Embedded`, that means the connectionName you specify is always used. |
+|`id`| The identifier of the connector. The id always starts with `/providers/Microsoft.PowerApps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. |
 
 ## Update a cloud flow
 
@@ -410,7 +421,7 @@ To update a flow, set only the properties you will change.
 
 #### [SDK for .NET](#tab/sdk)
 
-This static method requires an authenticated client that implements the <xref:Microsoft.Xrm.Sdk.IOrganizationService>. It uses the [IOrganizationService.Create](xref:Microsoft.Xrm.Sdk.IOrganizationService.Update%2A) method.
+This static method requires an authenticated client that implements the <xref:Microsoft.Xrm.Sdk.IOrganizationService>. It uses the [IOrganizationService.Update](xref:Microsoft.Xrm.Sdk.IOrganizationService.Update%2A) method to update a flow description and set the owner.
 
 ```csharp
 /// <summary>
@@ -426,7 +437,8 @@ public static void UpdateCloudFlow(IOrganizationService service, Guid workflowid
          Attributes = {
 
             {"description", "This flow will ensure consistency across systems." },
-            {"ownerid", new EntityReference("systemuser",systemuserid)}
+            {"ownerid", new EntityReference("systemuser",systemuserid)},
+            {"statecode", new OptionSetValue(1) } //Turn on the flow.
          }
    };
 
@@ -443,7 +455,7 @@ Send a `PATCH` request to the `workflows` resource with the properties you want 
 **Request**
 
 ```http
-PATCH [Organization URI]/api/data/v9.2/workflows(7598c284-01ee-ed11-8849-000d3a993550) HTTP/1.1
+PATCH [Organization URI]/api/data/v9.2/workflows(7598c284-01ee-ed11-8849-000d3a993550)
 Content-Type: application/json
 OData-MaxVersion: 4.0  
 OData-Version: 4.0
@@ -451,7 +463,8 @@ If-Match: *
 
 {
    "description" : "This flow will ensure consistency across systems.",
-   "ownerid@odata.bind": "systemusers(8061643d-ebf7-e811-a974-000d3a1e1c9a)"
+   "ownerid@odata.bind": "systemusers(8061643d-ebf7-e811-a974-000d3a1e1c9a)",
+   "statecode" : 1
 }
 ```
 
@@ -476,120 +489,203 @@ You can't delete a cloud flow that's turned on. You must first turn off the flow
 
 #### [SDK for .NET](#tab/sdk)
 
-```csharp
+The static `DeleteCloudFlow` method deletes a workflow record.
 
+```csharp
+/// <summary>
+/// Deletes a workflow
+/// </summary>
+/// <param name="service">Authenticated client implementing the IOrganizationService interface</param>
+/// <param name="workflowId">The id of the cloud flow to delete.</param>
+public static void DeleteCloudFlow(IOrganizationService service, Guid workflowId) { 
+
+service.Delete(entityName:"workflow",id: workflowId);
+
+}
 ```
 
+More information: [Delete a record using the SDK](/power-apps/developer/data-platform/org-service/entity-operations-update-delete?tabs=late#delete)
+
 #### [Web API](#tab/webapi)
+
+Send a `DELETE` request to the workflows resource.
 
 **Request**
 
 ```http
-
+DELETE [Organization Uri]/api/data/v9.2/workflows(ac1a3664-b704-ee11-8f6e-000d3a9933c9)
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+If-None-Match: null
+Accept: application/json
 ```
 
 **Response**
 
 ```http
-
+HTTP/1.1 204 NoContent
+OData-Version: 4.0
 ```
+
+More information: [Delete a record using the Web API](/power-apps/developer/data-platform/webapi/update-delete-entities-using-web-api#basic-delete)
 
 ---
 
 ## Get all users with whom a cloud flow is shared
 
-#### [SDK for .NET](#tab/sdk)
+Use the `RetrieveSharedPrincipalsAndAccess` message to get a list of all the users that a cloud flow is shared with.
 
-```csharp
+With the SDK, use the [RetrieveSharedPrincipalsAndAccessRequest Class](xref:Microsoft.Crm.Sdk.Messages.RetrieveSharedPrincipalsAndAccessRequest), and with the Web API use the [RetrieveSharedPrincipalsAndAccess Function](xref:Microsoft.Dynamics.CRM.RetrieveSharedPrincipalsAndAccess).
 
-```
-
-#### [Web API](#tab/webapi)
-
-**Request**
-
-```http
-
-```
-
-**Response**
-
-```http
-
-```
-
----
+More information: [Get principals with access to a record](/power-apps/developer/data-platform/security-access-coding#get-principals-with-access-to-a-record)
 
 ## Share or unshare a cloud flow
 
-#### [SDK for .NET](#tab/sdk)
+Share a cloud flow like any other Dataverse record using the `GrantAccess` message. With the SDK, use the [GrantAccessRequest Class](xref:Microsoft.Crm.Sdk.Messages.GrantAccessRequest) and with the Web API use the [GrantAccess Action](xref:Microsoft.Dynamics.CRM.GrantAccess). More information: [GrantAccess example](/power-apps/developer/data-platform/security-sharing-assigning#grantaccess-example)
 
-```csharp
+If you want to change the access rights you grant when you share a record, use the `ModifyAccess` message. With the SDK, use the [ModifyAccessRequest Class](xref:Microsoft.Crm.Sdk.Messages.ModifyAccessRequest) and with the Web API use the [ModifyAccess Action](xref:Microsoft.Dynamics.CRM.ModifyAccess). More information: [ModifyAccess example](/power-apps/developer/data-platform/security-sharing-assigning#modifyaccess-example)
 
-```
+To unshare a record, use the `RevokeAccess` message. With the SDK, use the [RevokeAccessRequest Class](xref:Microsoft.Crm.Sdk.Messages.RevokeAccessRequest) and with the Web API use the [RevokeAccess Action](xref:Microsoft.Dynamics.CRM.RevokeAccess). More information: [Revoking access](/power-apps/developer/data-platform/security-sharing-assigning#revoking-access)
 
-#### [Web API](#tab/webapi)
-
-**Request**
-
-```http
-
-```
-
-**Response**
-
-```http
-
-```
-
----
 
 ## Export flows
 
+When a flow is part of a solution, you can export it by exporting the solution that contains the flow using the `ExportSolution` message.
+
 #### [SDK for .NET](#tab/sdk)
 
-```csharp
+The static `ExportSolution` example method below uses the [ExportSolutionRequest](xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest) to retrieve a `byte[]` containing the ZIP file of the unmanaged solution with the specified [UniqueName](/power-apps/developer/data-platform/reference/entities/solution#BKMK_UniqueName).
 
+```csharp
+/// <summary>
+/// Exports an unmanaged solution
+/// </summary>
+/// <param name="service">Authenticated client implementing the IOrganizationService interface</param>
+/// <param name="solutionUniqueName">The uniquename of the solution.</param>
+/// <returns></returns>
+public static byte[] ExportSolution(
+   IOrganizationService service, 
+   string solutionUniqueName) 
+{
+   ExportSolutionRequest request = new() { 
+         SolutionName = solutionUniqueName,
+         Managed = false
+   };
+
+   var response = (ExportSolutionResponse)service.Execute(request);
+
+   return response.ExportSolutionFile;
+}
 ```
 
+
 #### [Web API](#tab/webapi)
+
+Use the [ExportSolution Action](xref:Microsoft.Dynamics.CRM.ExportSolution) to download the solution using the solution [UniqueName](/power-apps/developer/data-platform/reference/entities/solution#BKMK_UniqueName) to identify it. The [ExportSolutionResponse](xref:Microsoft.Dynamics.CRM.ExportSolutionResponse) returned has a `ExportSolutionFile` property that is a base64 encoded string. You can then save this file into source control and/or use whatever version management or distribution system you want.
 
 **Request**
 
 ```http
+POST [Organization Uri]/api/data/v9.2/ExportSolution
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+If-None-Match: null
+Accept: application/json
+Content-Type: application/json; charset=utf-8
+Content-Length: 472
 
+{
+  "SolutionName": "FlowContainer",
+  "Managed": false
+}
 ```
 
 **Response**
 
 ```http
+HTTP/1.1 200 OK
+OData-Version: 4.0
 
+{
+  "@odata.context": "[Organization Uri]/api/data/v9.2/$metadata#Microsoft.Dynamics.CRM.ExportSolutionResponse",
+  "ExportSolutionFile": "UEsDBBQAA...<truncated for brevity>"
+}
 ```
 
 ---
 
 ## Import flows
 
+When you have a solution ZIP file, you can import it using the `ImportSolution` message.
+
+When you import flows, you should 
+
+| Property name                    | Description                               |
+| -------------------------------- | ----------------------------------------- |
+| `OverwriteUnmanagedCustomizations` | If there are existing instances of these flows in Dataverse, this flag needs to be set to `true` to import them. Otherwise they won't be overwritten. |
+| `PublishWorkflows`| Indicates if classic Dataverse workflows will be activated on import. This setting doesn't apply to other types of flows. |
+| `ImportJobId`| Provides a new, unique GUID to track the import job. |
+| `CustomizationFile`| A base 64-encoded zip file that contains the solution. |
+
 #### [SDK for .NET](#tab/sdk)
 
-```csharp
+The static `ImportSolution` sample method shows how to import a solution file using the [ImportSolutionRequest Class](xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest)
 
+```csharp
+/// <summary>
+/// Imports a solution.
+/// </summary>
+/// <param name="service">Authenticated client implementing the IOrganizationService interface</param>
+/// <param name="solutionFile">The byte[] data representing a solution file. </param>
+public static void ImportSolution(
+   IOrganizationService service, 
+   byte[] solutionFile) {
+
+   ImportSolutionRequest request = new() { 
+         OverwriteUnmanagedCustomizations = true,
+         CustomizationFile = solutionFile
+   };
+
+   service.Execute(request);
+}
 ```
 
 #### [Web API](#tab/webapi)
 
+The following example uses the [ImportSolution Action](xref:Microsoft.Dynamics.CRM.ImportSolution) to import a solution. The `CustomizationFile` contains the base64 encoded string that represents the bytes of the solution file.
+
+
 **Request**
 
 ```http
+POST [Organization Uri]/api/data/v9.2/ImportSolution
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+If-None-Match: null
+Accept: application/json
+Content-Type: application/json; charset=utf-8
+Content-Length: 4344
 
+{
+  "OverwriteUnmanagedCustomizations": true,
+  "CustomizationFile": "UEsDBBQAAgAIA...<truncated for brevity>",
+  "ImportJobId": "00000000-0000-0000-0000-000000000000"
+}
 ```
 
 **Response**
 
 ```http
-
+HTTP/1.1 204 NoContent
+OData-Version: 4.0
 ```
 
 ---
 
 ### See also
+
+[Entity class operations using the Organization service](/power-apps/developer/data-platform/org-service/entity-operations)
+[Perform operations using the Web API](/power-apps/developer/data-platform/webapi/perform-operations-web-api)
+[Sharing and assigning](/power-apps/developer/data-platform/security-sharing-assigning)
+[Verifying access in code](/power-apps/developer/data-platform/security-access-coding)
+[Work with solutions using the Dataverse SDK](/power-platform/alm/solution-api)
