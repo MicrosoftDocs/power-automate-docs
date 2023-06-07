@@ -19,6 +19,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Power Automate Glossary
 
 The following terms are commonly used in Power Automate.
