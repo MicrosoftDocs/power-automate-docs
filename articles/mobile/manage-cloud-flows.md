@@ -35,7 +35,7 @@ To learn about the different types of cloud flows, go to [Cloud flows](/power-au
 
 By default, the **Flows** screen shows all the flows that you've created.
 
-:::image type="content" source="../media/android/instant-flows.png" alt-text="Screenshot of a list of flows.":::
+:::image type="content" source="../media/mobile/instant-flows.png" alt-text="Screenshot of a list of flows.":::
 
 To show flows that others have shared with you, select **Shared with me** at the top of the **Flows** screen.
 
@@ -51,7 +51,7 @@ To edit a cloud flow:
 
 1. Select the pencil icon at the top of the screen.
 
-    :::image type="content" source="../media/android/flow-details-edit.png" alt-text="Screenshot of the pencil icon in the Flow details screen.":::
+    :::image type="content" source="../media/mobile/flow-details-edit.png" alt-text="Screenshot of the pencil icon in the Flow details screen.":::
 
 ## Run, delete, and turn a flow on or off
 
@@ -78,7 +78,7 @@ In addition to the flow's run history, you can view a description of the flow if
 
 You can also toggle **Enable** here to turn the flow on or off.
 
-:::image type="content" source="../media/android/flow-details.png" alt-text="Screenshot of flow details and run history.":::
+:::image type="content" source="../media/mobile/flow-details.png" alt-text="Screenshot of flow details and run history.":::
 
 ### See also
 

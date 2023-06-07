@@ -4,17 +4,16 @@ description: Glossary of terms used in Power Automate
 services: ''
 suite: flow
 documentationcenter: na
-author: nijemcevic
+author: donums
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/30/2021
-ms.author: tatn
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

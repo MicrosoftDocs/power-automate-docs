@@ -39,8 +39,8 @@ If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.m
 
 | Android | iOS  |
 | :---:   | :---:  |
-| :::image type="content" source="../media/android/google-play.png" alt-text="Screenshot of the Download the Power Automate mobile app for Android from Google Play button.":::  | :::image type="content" source="../media/android/app-store.png" alt-text="Screenshot of the Download the Power Automate mobile app for iOS from the Apple App store button."::: |
-| :::image type="content" source="../media/android/android-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for Android QR code.":::  | :::image type="content" source="../media/android/ios-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for iOS QR code.":::    |
+| :::image type="content" source="../media/mobile/google-play.png" alt-text="Screenshot of the Download the Power Automate mobile app for Android from Google Play button.":::  | :::image type="content" source="../media/mobile/app-store.png" alt-text="Screenshot of the Download the Power Automate mobile app for iOS from the Apple App store button."::: |
+| :::image type="content" source="../media/mobile/android-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for Android QR code.":::  | :::image type="content" source="../media/mobile/ios-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for iOS QR code.":::    |
 
 > [!NOTE]
 >
@@ -54,7 +54,7 @@ You might have different environments to work in depending on the purpose of you
 
 1. Select the environment icon, and then select the environment you want to access. A check mark appears next to the selected environment.
 
-    :::image type="content" source="../media/android/environment.png" alt-text="Screenshot of an environment selected with the environment icon highlighted.":::
+    :::image type="content" source="../media/mobile/environment.png" alt-text="Screenshot of an environment selected with the environment icon highlighted.":::
 
 ## Limitations
 

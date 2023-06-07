@@ -51,7 +51,7 @@ The widget will show only the top eight (8) flows on an iOS device.
 
 1. Tap the widget on your home screen.
 
-    :::image type="content" source="../media/android/widget-run.png" alt-text="Screenshot of the widget on your home screen.":::
+    :::image type="content" source="../media/mobile/widget-run.png" alt-text="Screenshot of the widget on your home screen.":::
 
 ### See also
 

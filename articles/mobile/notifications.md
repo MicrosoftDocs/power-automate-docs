@@ -27,13 +27,13 @@ The list of notifications you've received was previously called Activity Feed.
 
 To view all notifications that correspond to your flows, select the bell icon at the top of the screen.
 
-:::image type="content" source="../media/android/notifications-1.png" alt-text="Screenshot of part of the Power Automate mobile app screen, with the notification bell icon highlighted.":::
+:::image type="content" source="../media/mobile/notifications-1.png" alt-text="Screenshot of part of the Power Automate mobile app screen, with the notification bell icon highlighted.":::
 
 Notifications that arrived since the last time you opened the app appear in the **New** list. Other notifications appear in the **Older** list.
 
 A timestamp indicates how long ago the notification arrived. For instance, **5 m** means the notification arrived five minutes ago. Notifications are removed from the **Older** list after 14 days.
 
-:::image type="content" source="../media/android/notifications.png" alt-text="Screenshot of notifications in the Power Automate mobile app.":::
+:::image type="content" source="../media/mobile/notifications.png" alt-text="Screenshot of notifications in the Power Automate mobile app.":::
 
 The **Notifications** screen shows notifications from the current environment only. To view notifications from a different environment, [select the environment](overview-mobile.md#change-environments).
 
