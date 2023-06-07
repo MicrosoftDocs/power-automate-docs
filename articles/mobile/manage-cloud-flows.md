@@ -59,7 +59,7 @@ Select the vertical ellipsis (&vellip;) next to a flow, and then select one of t
 
 You can also turn a flow on and off in the [**Details** screen](#view-run-history-and-details).
 
-:::image type="content" source="../media/android/flows-menu.png" alt-text="Screenshot of flow options.":::
+:::image type="content" source="../media/mobile/flows-menu.png" alt-text="Screenshot of flow options.":::
 
 ## Run an instant flow
 
