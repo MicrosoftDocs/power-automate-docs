@@ -184,7 +184,9 @@ IT administrators may set the following registry key to configure how Power Auto
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using Windows Credentials
 
 IT administrators may set the following registry key to configure Power Automate to use a generic credential from Windows’ Credential Manager to authenticate to a corporate proxy server. 
-To use this registry key, it’s a prerequisite to first configure the proxy server’s address and port through the **ProxyServer** registry key. 
+
+> [!NOTE]
+> To use this registry key, it’s a prerequisite to first configure the proxy server’s address and port through the **ProxyServer** registry key. 
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -197,7 +199,9 @@ To use this registry key, it’s a prerequisite to first configure the proxy ser
 ## Configure Power Automate for desktop to bypass a set of addresses while interacting with a corporate proxy server
 
 IT administrators may set the following registry key to configure a list of IP addresses that will be bypassed while Power Automate interacts with a corporate proxy server. 
-To use this registry key, it’s a prerequisite to first configure the proxy server’s address and port through the **ProxyServer** registry key. 
+
+> [!NOTE]
+> To use this registry key, it’s a prerequisite to first configure the proxy server’s address and port through the **ProxyServer** registry key.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -205,7 +209,7 @@ To use this registry key, it’s a prerequisite to first configure the proxy ser
 
 ***Value***
 
-- **Address1,Address2** (for example, `192.168.1.1, 10.10.10.*`): The list of addresses to be bypassed separated by **,**.
+- **Address1,Address2** (for example, `192.168.1.1, 10.10.10.*`): The list of addresses to be bypassed.
 
 ## Configure optional diagnostic usage data collection in Power Automate for desktop
 
