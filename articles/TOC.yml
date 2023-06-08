@@ -231,6 +231,8 @@
         href: ./teams/approvals-custom-connector.md
     - name: Trigger flows from Power BI report
       href: ./trigger-flow-powerbi-report.md
+    - name: Configure flows in Power Pages (preview)
+      href: ../power-pages/configure/cloud-flow-integration.md
     - name: Use flows with Microsoft Forms
       items:
       - name: Overview
