@@ -18,9 +18,9 @@ ms.reviewer: angieandrews
 
 - Is your GitHub alias "HeatherOrt"? I used Derah's name for now.
 - Let's start with an action verb, such as "Use the SAP ECC beta connector".
-- We should lowercase beta connector unless it's officially part of a product name (not a feature name).
+- We should lowercase beta connector unless it's officially part of a product name (feature names are lowercase).
 - Please complete the **description** in line 2.
-- Do you know where in the process advisor node in the TOC it should go? Here's a suggestion: under *Process advisor** > **Overview**, or last in the **Process mining** sub-section.
+- Do you know where in the process advisor node in the TOC it should go? Here's a suggestion: under **Process advisor** > **Overview**, or last in the **Process mining** sub-section.
 
 ## Use level 2
 
