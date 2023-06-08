@@ -1,5 +1,5 @@
 ---
-title: Power Platform templates for process mining in process mining
+title: Use the SAP ECC beta connector
 description: Learn how to...with the SAP ECC beta connector.
 author: donums
 contributors:
