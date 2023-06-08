@@ -124,19 +124,16 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
 ### What are the limitations of Copilot in Power Automate during preview?
 
 - You can’t edit flows with the Copilot experience if your flow has any of the following flows capabilities:
-    - A flow with AI Builder, SAP or desktop flow connector.
+    - A flow with AI Builder or SAP connector, desktop flow, or a child flow component.
     - A non-Open API flow (older connection format).
     - A flow with comment.
-    - A child flow.
     - A solution flow using connections instead of a connection reference.
-    - A flow contains a desktop flow action.
-    - A flow contains an unsupported hybrid trigger. Hybrid triggers do not require connections and are triggered manually from outside of Power Automate. Examples of hybrid trigger: "for a selected item" or "for a selected row".
+    - A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. Examples of hybrid trigger are *for a selected item* or *for a selected row*.
     - A flow contains a Power Apps V1 trigger.
     - A flow contains a Power Pages component.
-    - A flow contains a child flow component.
-    - A flow contains a response component. 
+    - A flow contains a response component.
 - Copilot has limited parameterization support currently. It might not be able to implicitly fill in parameters for all your actions, but it should be available in select connectors.
-- Copilot has limited support to create looping constructs (for example, Apply to each, do until).
+- Copilot has limited support to create looping constructs (for example, *Apply to each*, *do until*).
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
 - You can’t use Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
 - Copilot supports English language only for models.
