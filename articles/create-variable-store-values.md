@@ -273,6 +273,6 @@ Here are the properties for the **Append to...** actions:
 | **Value** | Yes | <*append-value*> | The value you want to append, which can have any type |
 |||||
 
-### More information
+### See also
 
 Learn about [Power Automate connectors](/connectors/connectors)

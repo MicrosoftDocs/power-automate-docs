@@ -254,3 +254,4 @@ Here's our example:
  You can combine [getting an attachment from a form and creating an approval flow](../approval-attachments.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

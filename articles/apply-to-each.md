@@ -181,8 +181,6 @@ Next, you'll define what should happen if the search condition (the email was se
 
 1. Select the flow run in which you're interested to view the results.
 
-
-
 ## View results of the run
 
 Now that you've run the flow successfully, you should receive the push notification on your mobile device.

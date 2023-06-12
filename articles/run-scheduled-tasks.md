@@ -84,3 +84,4 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 [Advanced options in Azure Logic Apps](/azure/connectors/connectors-native-recurrence)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+

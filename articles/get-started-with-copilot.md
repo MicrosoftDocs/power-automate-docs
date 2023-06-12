@@ -144,3 +144,4 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
 - [Transparency note for Copilot in Power Automate](transparency-note-copilot.md) 
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
 
+
