@@ -34,9 +34,13 @@ The best method depends on the project technology and the skills you have.
 
 If your project uses .NET, we recommend using the SDK. The SDK simplifies your development experience by providing a typed object model and methods to authenticate.
 
+More information: [Use the Organization service](/power-apps/developer/data-platform/org-service/overview)
+
 #### [Web API](#tab/webapi)
 
-You can use any programming language or technology that supports sending HTTP requests, including .NET if you prefer. You can use familiar tools like [Postman](https://www.postman.com/) to send requests.
+You can use any programming language or technology that supports sending HTTP requests, including .NET. You can use familiar tools like [Postman](https://www.postman.com/) to send requests.
+
+More information: [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
 ---
 
@@ -107,7 +111,7 @@ To retrieve a list of cloud flows, you can query the workflow table. The followi
 
 #### [SDK for .NET](#tab/sdk)
 
-This static `OutputFirstActiveFlow` method requires an authenticated client that implements the <xref:Microsoft.Xrm.Sdk.IOrganizationService>. It uses the [IOrganizationService.Create](xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple%2A) method.
+This static `OutputFirstActiveFlow` method requires an authenticated client that implements the <xref:Microsoft.Xrm.Sdk.IOrganizationService>. It uses the [IOrganizationService.RetrieveMultiple](xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple%2A) method.
 
 
 ```csharp
@@ -190,7 +194,9 @@ workflowid: d9e875bf-1c9b-ea11-a811-000d3a122b89
 workflowidunique: c17af45c-10a1-43ca-b816-d9cc352718cf
 ```
 
-More information: [Build queries with QueryExpression](/power-apps/developer/data-platform/org-service/build-queries-with-queryexpression)
+More information:
+- [Build queries with QueryExpression](/power-apps/developer/data-platform/org-service/build-queries-with-queryexpression)
+- [Access formatted values](/power-apps/developer/data-platform/org-service/entity-operations-query-data#access-formatted-values)
 
 #### [Web API](#tab/webapi)
 
@@ -679,8 +685,8 @@ OData-Version: 4.0
 
 ### See also
 
-[Entity class operations using the Organization service](/power-apps/developer/data-platform/org-service/entity-operations)
-[Perform operations using the Web API](/power-apps/developer/data-platform/webapi/perform-operations-web-api)
-[Sharing and assigning](/power-apps/developer/data-platform/security-sharing-assigning)
-[Verifying access in code](/power-apps/developer/data-platform/security-access-coding)
+[Entity class operations using the Organization service](/power-apps/developer/data-platform/org-service/entity-operations)  
+[Perform operations using the Web API](/power-apps/developer/data-platform/webapi/perform-operations-web-api)  
+[Sharing and assigning](/power-apps/developer/data-platform/security-sharing-assigning)  
+[Verifying access in code](/power-apps/developer/data-platform/security-access-coding)  
 [Work with solutions using the Dataverse SDK](/power-platform/alm/solution-api)
