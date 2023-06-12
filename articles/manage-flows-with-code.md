@@ -28,17 +28,25 @@ Dataverse provides equivalent capabilities using either the Dataverse SDK for .N
 
 ### Which method should I use?
 
-|SDK for .NET |Web API |
-|---------|---------|
-|When you are writing code using .NET.<br /><br />Provides an opinionated programming model with strong types.|With any programming language that supports HTTP requests<br /><br />Use tools like [Postman](https://www.postman.com/) to send requests.|
-
-### How to connect?
-
-How to connect depends on whether you are using the Dataverse SDK for .NET or Web API.
+The best method depends on the project technology and the skills you have.
 
 #### [SDK for .NET](#tab/sdk)
 
-With the SDK you need to connect with a client application to get access to an [IOrganizationService](xref:Microsoft.Xrm.Sdk.IOrganizationService) instance. `IOrganizationService` is an interface that provides methods you can use to interact with Dataverse.
+If your project uses .NET, we recommend using the SDK. The SDK simplifies your development experience by providing a typed object model and methods to authenticate.
+
+#### [Web API](#tab/webapi)
+
+You can use any programming language or technology that supports sending HTTP requests, including .NET if you prefer. You can use familiar tools like [Postman](https://www.postman.com/) to send requests.
+
+---
+
+### How to connect?
+
+How to connect depends on whether you're using the Dataverse SDK for .NET or Web API.
+
+#### [SDK for .NET](#tab/sdk)
+
+With the SDK, you need to connect with a client application to get access to an [IOrganizationService](xref:Microsoft.Xrm.Sdk.IOrganizationService) instance. `IOrganizationService` is an interface that provides methods you can use to interact with Dataverse.
 
 More information:
 
@@ -49,7 +57,7 @@ More information:
 
 #### [Web API](#tab/webapi)
 
-With the Web API you need to use OAuth to authenticate to the Web API endpoint. See [View developer resources](/power-apps/developer/data-platform/view-download-developer-resources) to get the specific organization URI you should use.
+With the Web API, you need to use OAuth to authenticate to the Web API endpoint. See [View developer resources](/power-apps/developer/data-platform/view-download-developer-resources) to get the specific organization URI you should use.
 
 Your base URL should look something like this:  
 
@@ -66,13 +74,13 @@ More information:
 
 ## Workflow table
 
-Cloud flows are stored in the [Process (Workflow) table](/power-apps/developer/data-platform/reference/entities/workflow) which is represented in the Web API as the [workflow EntityType](xref:Microsoft.Dynamics.CRM.workflow)
+Cloud flows are stored in the [Process (Workflow) table](/power-apps/developer/data-platform/reference/entities/workflow) that is represented in the Web API as the [workflow EntityType](xref:Microsoft.Dynamics.CRM.workflow)
 
 The following table describes important columns in the workflow table:
 
 |Logical Name|Type|Description|
 |----|----|----|
-|`category`|Choice|The category of the flow. Here are the different categories. <br>0 - Classic Dataverse workflows.<br>1 - Classic Dataverse dialogs. <br>2 - Business rules. <br>3 - Classic Dataverse actions. <br>4 - Business process flows. <br>5 - Modern Flow (Automated, instant or scheduled flows).<br>6 - Desktop flows. |
+|`category`|Choice|The category of the flow. Here are the different categories. <br>`0` - Classic Dataverse workflows.<br>`1` - Classic Dataverse dialogs. <br>`2` - Business rules. <br>`3` - Classic Dataverse actions. <br>`4` - Business process flows. <br>`5` - Modern Flow (Automated, instant or scheduled flows).<br>`6` - Desktop flows. |
 |`clientdata`|String|A string-encoded JSON of the flow definition and its connectionReferences. |
 |`createdby`|Lookup|The user who created the flow.|
 |`createdon`|DateTime|The date when the flow was created.|
@@ -82,20 +90,20 @@ The following table describes important columns in the workflow table:
 |`modifiedon`|DateTime|The last time the flow was updated.|
 |`name`|String|The display name that you have given the flow. |
 |`ownerid`|Lookup|The user or team who owns the flow.|
-|`statecode`|Choice|The status of the flow. The status can be:  <br>0 - Draft (Off)  <br>1 - Activated (On)<br>2 - Suspended.|
-|`type`|Choice|Indicates if the flow is a running flow, or a template that can be used to create more flows.  <br>1 - Definition,  <br>2 - Activation <br>3 - Template.|
+|`statecode`|Choice|The status of the flow. The status can be:  <br>`0` - Draft (Off)  <br>`1` - Activated (On)<br>`2` - Suspended.|
+|`type`|Choice|Indicates if the flow is a running flow, or a template that can be used to create more flows.  <br>`1` - Definition,  <br>`2` - Activation <br>`3` - Template.|
 |`workflowid`|Guid|The unique identifier for a cloud flow across all imports.|
 |`workflowidunique`|Guid|The unique identifier for this installation of the flow.|
 
 > [!NOTE]
-> With Web API, Lookup values are single-valued navigation properties that can be expanded to get details from the related record.
+> With Web API, Lookup values are [single-valued navigation properties](/power-apps/developer/data-platform/webapi/web-api-navigation-properties#single-valued-navigation-properties) that can be expanded to get details from the related record.
 >
 > Lookup columns also have corresponding GUID [lookup properties](/power-apps/developer/data-platform/webapi/web-api-properties#lookup-properties) that can be used in queries. Lookup properties have this naming convention: `_<logical name>_value`. For the workflow entitytype in Web API you can reference these lookup properties: `_createdby_value`, `_modifiedby_value`, and `_ownerid_value`.
 
 
 ## List flows
 
-To retrieve a list of cloud flows, you can query the workflow table. The following query will return the first automated, instant, or scheduled flow that is currently on:
+To retrieve a list of cloud flows, you can query the workflow table. The following query returns the first automated, instant, or scheduled flow that is currently 'on':
 
 #### [SDK for .NET](#tab/sdk)
 
@@ -292,7 +300,6 @@ public static Guid CreateCloudFlow(IOrganizationService service)
    {
          Attributes = {
             {"category", new OptionSetValue(5) }, // Cloud flow
-            {"statecode", new OptionSetValue(0)}, // Draft (Off)
             {"name", "Sample flow name"},
             {"type", new OptionSetValue(1) }, //Definition
             {"description", "This flow reads some data from Dataverse." },
@@ -320,12 +327,11 @@ Content-Type: application/json
 
 {
       "category": 5,
-      "statecode": 0,
       "name": "Sample flow name",
       "type": 1,
       "description": "This flow reads some data from Dataverse.",
       "primaryentity":"none",
-      "clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataserviceforapps\":{\"impersonation\":{},\"runtimeSource\":\"embedded\",\"connection\":{\"name\":\"shared-commondataser-114efb88-a991-40c7-b75f-2693-b1ca6a0c\",\"connectionReferenceLogicalName\":\"crdcb_sharedcommondataserviceforapps_109ea\"},\"api\":{\"name\":\"shared_commondataserviceforapps\"}}},\"definition\":{\"$schema\":\"https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#\",\"contentVersion\":\"1.0.0.0\",\"parameters\":{\"$connections\":{\"defaultValue\":{},\"type\":\"Object\"},\"$authentication\":{\"defaultValue\":{},\"type\":\"SecureObject\"}},\"triggers\":{\"manual\":{\"metadata\":{\"operationMetadataId\":\"76f87a86-89b3-48b4-92a2-1b74539894a6\"},\"type\":\"Request\",\"kind\":\"Button\",\"inputs\":{\"schema\":{\"type\":\"object\",\"properties\":{},\"required\":[]}}}},\"actions\":{\"List_rows\":{\"runAfter\":{},\"metadata\":{\"operationMetadataId\":\"9725b30f-4a8e-4695-b6fd-9a4985808809\"},\"type\":\"OpenApiConnection\",\"inputs\":{\"host\":{\"apiId\":\"/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps\",\"connectionName\":\"shared_commondataserviceforapps\",\"operationId\":\"ListRecords\"},\"parameters\":{\"entityName\":\"accounts\",\"$select\":\"name\",\"$top\":1},\"authentication\":\"@parameters('$authentication')\"}}}}},\"schemaVersion\":\"1.0.0.0\"}"
+      "clientdata": "{\"properties\": {\"connectionReferences\": {\"shared_commondataserviceforapps\": {\"runtimeSource\": \"embedded\",\"connection\": {},\"api\": { \"name\": \"shared_commondataserviceforapps\" }}},\"definition\": {\"$schema\": \"https:\/\/schema.management.azure.com\/providers\/Microsoft.Logic\/schemas\/2016-06-01\/workflowdefinition.json#\",\"contentVersion\": \"1.0.0.0\",\"parameters\": {\"$connections\": { \"defaultValue\": {}, \"type\": \"Object\" },\"$authentication\": { \"defaultValue\": {}, \"type\": \"SecureObject\" }},\"triggers\": {\"manual\": {\"metadata\": {},\"type\": \"Request\",\"kind\": \"Button\",\"inputs\": { \"schema\": { \"type\": \"object\", \"properties\": {}, \"required\": [] }}}},\"actions\": {\"List_rows\": {\"runAfter\": {},\"metadata\": {},\"type\": \"OpenApiConnection\",\"inputs\": { \"host\": { \"apiId\": \"\/providers\/Microsoft.PowerApps\/apis\/shared_commondataserviceforapps\", \"connectionName\": \"shared_commondataserviceforapps\", \"operationId\": \"ListRecords\" }, \"parameters\": { \"entityName\": \"accounts\", \"$select\": \"name\", \"$top\": 1 }, \"authentication\": \"@parameters('$authentication')\"}}}}},\"schemaVersion\": \"1.0.0.0\"}"
 }
 ```
 
@@ -344,20 +350,20 @@ More information: [Create a table row using the Web API](/power-apps/developer/d
 
 ---
 
-The most important section is the `clientdata`, which contains the connectionReferences that the flow uses, and the [definition](/azure/logic-apps/logic-apps-workflow-definition-language) of the flow. The connectionReferences are the mappings to each connection that the flow uses.
+The `statecode` of all flows created this way are set to `0` (Draft or 'Off'). The flow needs to be enabled before it can be used.
+
+The most important property is the `clientdata`, which contains the `connectionReferences` that the flow uses, and the [definition](/azure/logic-apps/logic-apps-workflow-definition-language) of the flow. The `connectionReferences` are the mappings to each connection that the flow uses.
 
 ```json
 {
   "properties": {
     "connectionReferences": {
       "shared_commondataserviceforapps": {
-        "impersonation": {},
         "runtimeSource": "embedded",
-        "connection": {
-          "name": "shared-commondataser-114efb88-a991-40c7-b75f-2693-b1ca6a0c",
-          "connectionReferenceLogicalName": "crdcb_sharedcommondataserviceforapps_109ea"
-        },
-        "api": { "name": "shared_commondataserviceforapps" }
+        "connection": {},
+        "api": { 
+         "name": "shared_commondataserviceforapps" 
+         }
       }
     },
     "definition": {
@@ -369,9 +375,7 @@ The most important section is the `clientdata`, which contains the connectionRef
       },
       "triggers": {
         "manual": {
-          "metadata": {
-            "operationMetadataId": "76f87a86-89b3-48b4-92a2-1b74539894a6"
-          },
+          "metadata": {},
           "type": "Request",
           "kind": "Button",
           "inputs": {
@@ -382,9 +386,7 @@ The most important section is the `clientdata`, which contains the connectionRef
       "actions": {
         "List_rows": {
           "runAfter": {},
-          "metadata": {
-            "operationMetadataId": "9725b30f-4a8e-4695-b6fd-9a4985808809"
-          },
+          "metadata": {},
           "type": "OpenApiConnection",
           "inputs": {
             "host": {
@@ -406,18 +408,10 @@ The most important section is the `clientdata`, which contains the connectionRef
   "schemaVersion": "1.0.0.0"
 }
 ```
-<!-- This is out of date -->
-There are three properties:
-
-| Property name  | Description                                                 |
-| -------------- | ----------------------------------------------------------- |
-|`connectionName`| Identifies the connection. You can see the connectionName by going to the **Connections** page and then copying it from the URL of the connection. |
-|`source`| Either `Embedded` or `Invoker`. `Invoker` is only valid for instant flows (where a user selects a button to run the flow), and indicates that the end user will provide the connection. In this case, the connectionName is only used at design time. If the connection is `Embedded`, that means the connectionName you specify is always used. |
-|`id`| The identifier of the connector. The id always starts with `/providers/Microsoft.PowerApps/apis/` and then has the connector name, which you can copy from the URL of the connection or by selecting the connector from the **Connectors** page. |
 
 ## Update a cloud flow
 
-To update a flow, set only the properties you will change.
+To update a flow, set only the properties you want to change.
 
 #### [SDK for .NET](#tab/sdk)
 
@@ -484,7 +478,9 @@ More information: [Update and delete table rows using the Web API > Basic update
 
 ## Delete a cloud flow
 
-You can't delete a cloud flow that's turned on. You must first turn off the flow or else you'll see this error: `Cannot delete an active workflow definition.` To learn more, go to [Update a cloud flow](#update-a-cloud-flow) in this article.
+<!-- TODO Actually, I don't get this error -->
+
+You can't delete a cloud flow that's turned on. You must first turn off the flow or else this error: `Cannot delete an active workflow definition.` will occur. To learn more, go to [Update a cloud flow](#update-a-cloud-flow) in this article.
 
 
 #### [SDK for .NET](#tab/sdk)
@@ -618,13 +614,12 @@ OData-Version: 4.0
 
 When you have a solution ZIP file, you can import it using the `ImportSolution` message.
 
-When you import flows, you should 
+When you import flows, you should set the following parameters:
 
 | Property name                    | Description                               |
 | -------------------------------- | ----------------------------------------- |
 | `OverwriteUnmanagedCustomizations` | If there are existing instances of these flows in Dataverse, this flag needs to be set to `true` to import them. Otherwise they won't be overwritten. |
 | `PublishWorkflows`| Indicates if classic Dataverse workflows will be activated on import. This setting doesn't apply to other types of flows. |
-| `ImportJobId`| Provides a new, unique GUID to track the import job. |
 | `CustomizationFile`| A base 64-encoded zip file that contains the solution. |
 
 #### [SDK for .NET](#tab/sdk)
