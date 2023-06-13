@@ -667,8 +667,7 @@ Content-Length: 4344
 
 {
   "OverwriteUnmanagedCustomizations": true,
-  "CustomizationFile": "UEsDBBQAAgAIA...<truncated for brevity>",
-  "ImportJobId": "00000000-0000-0000-0000-000000000000"
+  "CustomizationFile": "UEsDBBQAAgAIA...<truncated for brevity>"
 }
 ```
 
