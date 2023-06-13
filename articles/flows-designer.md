@@ -58,7 +58,7 @@ The action configuration pane allows you to customize parameters, settings, and 
 
 The **Parameters** tab allows you to use the blue **Insert token** and **Insert expression** icons to quickly enter values for the selected action card.
 
-:::image type="content" source="media/flows-designer/skittles.png" alt-text="Screenshot of how an action should run after a preceding action.":::
+:::image type="content" source="media/flows-designer/skittles.png" alt-text="Screenshot of the Insert token and Insert expression icons in the Parameters tab in Action configuration pane.":::
 
 To insert a dynamic token into the **Inputs** field, select the top icon (the lightening rod). A popup screen will open where you can search for or scroll to find the tokens you can use. Once you make your selection, it appears in the **Inputs** field.
 
@@ -77,7 +77,7 @@ You can select more than one option:
 - is skipped
 - has failed
 
-:::image type="content" source="media/flows-designer/run-after.png" alt-text="Screenshot of how an action should run after a preceding action.":::
+:::image type="content" source="media/flows-designer/run-after.png" alt-text="Screenshot of the Run After selections in the Settings tab in the Action configuration pane.":::
 
 ### Code
 
