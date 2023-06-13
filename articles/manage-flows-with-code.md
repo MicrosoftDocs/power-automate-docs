@@ -484,9 +484,7 @@ More information: [Update and delete table rows using the Web API > Basic update
 
 ## Delete a cloud flow
 
-<!-- TODO Actually, I don't get this error -->
-
-You can't delete a cloud flow that's turned on. You must first turn off the flow or else this error: `Cannot delete an active workflow definition.` will occur. To learn more, go to [Update a cloud flow](#update-a-cloud-flow) in this article.
+The following examples show how to delete the workflow record that represents a cloud flow.
 
 
 #### [SDK for .NET](#tab/sdk)
@@ -510,7 +508,7 @@ More information: [Delete a record using the SDK](/power-apps/developer/data-pla
 
 #### [Web API](#tab/webapi)
 
-Send a `DELETE` request to the workflows resource.
+Send a `DELETE` request to the `workflows` resource identified by the primary key.
 
 **Request**
 
