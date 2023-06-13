@@ -78,7 +78,7 @@ additionalContent:
     items:
     - title: Develop Power Automate
       links:
-        - text: Power Automate for enterprise developers, ISVs, and partners
+        - text: For enterprise developers, ISVs, and partners
           url: developer/dev-enterprise-intro.md
         - text: Power Automate Web API
           url: web-api.md
