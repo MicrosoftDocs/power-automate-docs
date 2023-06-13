@@ -28,9 +28,7 @@ Triggers can be started instantly or manually, on a schedule, or automatically w
 
 ### Triggers for instant/manual flows
 
-If you'd like to run a cloud flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow (button flow). You can trigger these flows manually from any device.
-
-To learn more, go to [Trigger an instant flow](./introduction-to-button-flows.md#trigger-an-instant-flow).
+If you'd like to run a cloud flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow. You can trigger these flows manually from any device.
 
 ### Triggers for scheduled flows
 
