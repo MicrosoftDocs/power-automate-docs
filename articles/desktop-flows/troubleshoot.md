@@ -105,6 +105,18 @@ In either of these cases, you can ask your domain or network administrator to gr
 
 :::image type="content" source="media/troubleshoot/power-automate-troubleshoot-dialog.png" alt-text="Screenshot of the Power Automate troubleshoot dialog.":::
 
+Changing the service account can also be accomplished by using a command line tool that ships with Power Automate called "**TroubleshootingTool.Console.exe**". This tool is useful when scripting the upgrade of Power Automate to a more recent version, as upgrading will reset the UIFlowService to run against the default virtual account.
+
+You can find TroubleshootingTool.Console.exe in the directory where you installed Power Automate, typically "%programfiles(x86)%\Power Automate Desktop". To change the service account, do the following:
+1. Open a command prompt as an administrator and navigate to the tool.
+1. Create a temporary file with the account password as the only content inside (e.g. temp.txt)
+1. Type the following: TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount <accountname> < <pathToTemporaryFile>
+1. Delete the temporary file
+
+Example:
+`TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`                                                                                              
+The tool also provides other functionality such as getting the name of the account that the service is currently running as, resetting it to run as the default virtual account, or simply restarting the service. For more information on all supported commands, simply run the TroubleshootingTool.Console.exe with no arguments.
+
 ## Troubleshoot desktop flow runs
 
 > [!IMPORTANT]
