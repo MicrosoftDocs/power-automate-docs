@@ -102,7 +102,7 @@ For inquiries about add-on capability licensing, contact [minitq@microsoft.com](
 
 Before you start using process advisor capabilities, make sure you have the following prerequisites:
 
-- The required licenses or trials depending on the capabilities you want access to (see above).
+- The required licenses or trials depending on the capabilities you want access to.
 
 - A Microsoft Power Platform environment with a Microsoft Dataverse database.  
 
