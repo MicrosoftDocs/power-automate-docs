@@ -1,5 +1,5 @@
 ---
-title: Turn flows on or off in Power Automate | Microsoft Docs
+title: Turn flows on, off, or delete a flow in Power Automate | Microsoft Docs
 description: Learn how to turn flows on or off in Power Automate.
 services: ''
 suite: flow
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Turn flows on or off
 
-At times, you might want to turn off a cloud flow to prevent it from running. Follow these steps to turn flows off or on.
+At times, you might want to turn off a cloud flow to prevent it from running or permanently delete a flow. Follow these steps to turn off, on, or delete a flow.
 
 ## Turn flows off
 
@@ -38,7 +38,7 @@ After you create a cloud flow, it's turned on by default. Follow these steps to 
     >![Screenshot of flow status on Details page.](./media/disable-flow/flow-details-page-new-status.png "Flow status on the Details page")
 
 >[!NOTE]
->If you turn off a flow, its runs are queued and they'll run when you turn the flow on.
+>If you turn off a flow while it’s running, the flow runs will continue to run until all pending flow runs are completed.
 
 ## Turn flows on
 
@@ -55,7 +55,14 @@ If you've turned off a cloud flow, but want to turn it back on so that it will r
 
     1. On the menu that appears, select **Turn on**. The status changes to **On**.
 
+## Delete a flow
+
+If you need to delete a flow, follow these steps:
+
+1. Before you delete the flow, go to the **Details** page and click on **All runs**. Follow these [instructions](https://learn.microsoft.com/en-us/power-automate/how-tos-bulk-resubmit) to cancel any pending runs. Otherwise, some pending flow runs may continue to run to avoid data loss. 
+2. Once you've cancelled any pending runs, go back to the **Details** page and in the menu at the top, select **Delete**.
+
 >[!NOTE]
->If you disable a flow while it's running, the run will continue. If you delete a flow that's running, the current run terminates.
+>If you deleted a flow accidentally and need to restore a flow, view this [documentation](https://learn.microsoft.com/en-us/power-automate/how-tos-restore-deleted-flow). 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
