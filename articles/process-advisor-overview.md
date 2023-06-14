@@ -26,7 +26,7 @@ Task mining and process mining share the same goal of improving process efficien
 
    Process mining can be a key driver in making intelligent, day-today improvements on every level. You can discover and model processes for which you have data readily available, giving you an X-ray visualization of what goes on in your organization. In addition, you can standardize, optimize, and improve operations, while staying informed about progress towards defined key process indicators.
 
-- **Task mining:** Task mining is better suited to discover tasks happening on the desktop. It enables you to zoom-in to specific desktop tasks you might have discovered during your process mining analysis. You can understand how your company performs its process tasks through monitoring recorded user actions and collecting data from these actions. You'll gain insights from this data that will let you know how processes are performed, find common mistakes while performing tasks, and identify tasks that can be automated.
+- **Task mining:** Task mining is better suited to discover tasks happening on the desktop. It enables you to zoom-in to specific desktop tasks you might have discovered during your process mining analysis. You can understand how your company performs its process tasks through monitoring recorded user actions and collecting data from these actions. You gain insights from this data that lets you know how processes are performed, find common mistakes while performing tasks, and identify tasks that can be automated.
 
 ## When to use process mining
 
@@ -36,7 +36,7 @@ Here are some reasons to help you decide to use process mining.
 
 - Save time and money by optimizing processes.
 
-- Detect non-compliant processes and/or tasks.
+- Detect noncompliant processes and/or tasks.
 
 - Discover automation opportunities.
 
@@ -80,12 +80,12 @@ Explore the topics in [process mining](process-mining-overview.md) and [task m
 
 Process advisor is licensed as part of Power Automate per-user licenses. If you don’t have a license, you can start a Power Automate premium trial to try process advisor. The per-user licenses enable users to analyze processes and view the analytics report.
 
-**Task mining capability:** A *Power Automate per-user license* enables a user to analyze a recorded process and view the analytics report. Note that contributing recordings to a process does not need the per-user license.
+**Task mining capability:** A *Power Automate per-user license* enables a user to analyze a recorded process and view the analytics report. Contributing recordings to a process doesn't need the per-user license.
 
 **Process mining capability:** A *Power Automate per-user license with attended RPA* enables a user to create a process, connect to an event log using data flows, analyze a process from data, and view the analytics report in the web.
 
 **Process mining add-on:** A separately purchasable add-on is required to do the following:
-- Use of the [desktop application](minit/minit-desktop-application-overview.md) which provides many features to get deep insights into your process
+- Use of the [desktop application](minit/minit-desktop-application-overview.md), which provides many features to get deep insights into your process
 - Customize the analytics report by publishing it into your own Power BI workspace
 
 For inquiries about add-on capability licensing, contact [minitq@microsoft.com](mailto:minitq@microsoft.com).
@@ -94,9 +94,9 @@ For inquiries about add-on capability licensing, contact [minitq@microsoft.com](
 
 **Power BI license:** To customize your report, you need to link the process to your own Power BI workspace, and a Power BI premium per-user license (or better) is needed. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
 
-**Preview:** Note that some features are in preview, denoted by the preview tag, and for process templates that are still in preview, license and trial are not needed.
+**Preview:** Some features are in preview, denoted by the preview tag. For process templates that are still in preview, license and trial aren't needed.
 
-**Dataverse capacity:** The process mining add-on provides 2 GB of database capacity, 1 TB of file capacity, and 250,000 Power Platform requests per 24 hours. Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, you'll need to ask your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store will mostly use file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
+**Dataverse capacity:** The process mining add-on provides 2 GB of database capacity, 1 TB of file capacity, and 250,000 Power Platform requests per 24 hours. Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, ask your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store uses mostly file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
 
 ## Prerequisites
 
