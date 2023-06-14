@@ -104,7 +104,7 @@ Load your process analytics in Power BI to start customizing your report.
 
 1. You might then toggle the **Update report when refreshing data** option between **on** and **off**.
 
-    If the toggle is **on**, a new report is published in Power BI and is embedded in the anlytics page of process advisor. If the toggle is **off** after refreshing the data, the existing report isn't updated in process advisor.
+    If the toggle is **on**, a new report is published in Power BI and is embedded in the analytics page of process advisor. If the toggle is **off** after refreshing the data, the existing report isn't updated in process advisor.
 
 ## Customize reports in Power BI workspace
 
@@ -124,7 +124,7 @@ After completing these steps, return to the analytics page of your process in pr
 
 1. Select **Open in Power BI**. If you don't see this button, make sure you've completed the steps in the [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi) section in this article.
 
-    You are redirected to a Power BI web screen that shows you a report of your process.
+    You're redirected to a Power BI web screen that shows you a report of your process.
 
 1. Begin customizing your report by downloading it to your local machine. To do this, select **File** > **Download this file**.
 
