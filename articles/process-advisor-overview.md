@@ -90,13 +90,13 @@ Process advisor is licensed as part of Power Automate per-user licenses. If you 
 
 For inquiries about add-on capability licensing, contact [minitq@microsoft.com](mailto:minitq@microsoft.com).
 
-**Trial license:** You can start a free 90 day Power Automate premium trial will provide access to all available capabilities listed above, including the add-on capability. Note that there is a process size limit of 200 cases for any processes created while on the trial.
+**Trial license:** You can start a free 90 day Power Automate premium trial, which provides access to all available capabilities listed previously, including the add-on capability. There's a process size limit of 200 cases for processes created while on the trial.
 
 **Power BI license:** To customize your report, you need to link the process to your own Power BI workspace, and a Power BI premium per-user license (or better) is needed. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
 
 **Preview:** Note that some features are in preview, denoted by the preview tag, and for process templates that are still in preview, license and trial are not needed.
 
-**Dataverse capacity:** The process mining add-on provides 2GB of database capacity, 1TB of file capacity, and 250 thousand Power Platofm Requestsper 24 hours. Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, you'll need to contact your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store will mostly use file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
+**Dataverse capacity:** The process mining add-on provides 2 GB of database capacity, 1 TB of file capacity, and 250,000 Power Platform requests per 24 hours. Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, you'll need to ask your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store will mostly use file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
 
 ## Prerequisites
 
