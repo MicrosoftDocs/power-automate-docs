@@ -98,17 +98,17 @@ Load your process analytics in Power BI to start customizing your report.
 1. On the **Details** card, select **Edit**.
 
 1. In the **Power BI Workspace (optional)** dropdown menu, select a workspace of your choice.
-2. If you select a workspace give the report a unique name in the required **Report name** field. 
+1. If you select a workspace, give the report a unique name in the required **Report name** field.
 
-It is recommended that you use a unique name becuase if you use a name with which a report already exists, Process advisor will overwrite the existing report of another process which could lead to loss of custom reports and composite datasets of that process. After refreshing the process, if you decide to change the report name, you will need to publish a new report.
+    We recommend that you use a unique name. If you use a name of a report that already exists, process advisor overwrites the existing report of another process. This could lead to loss of custom reports and composite datasets of that process. After refreshing the process, if you decide to change the report name, you'll need to publish a new report.
 
-5. You may then toggle the **Update report when refreshing data** button **on** or **off**. 
+1. You might then toggle the **Update report when refreshing data** option between **on** and **off**.
 
-If the toggle is set to **on** a new report will be published in Power BI and will be embedded in the anlytics page of Process advisor. If the toggle is set to **off** after refreshing the data, the existing report will not be updated in Process advisor.
+    If the toggle is **on**, a new report is published in Power BI and is embedded in the anlytics page of process advisor. If the toggle is **off** after refreshing the data, the existing report isn't updated in process advisor.
 
 ## Customize reports in Power BI workspace
 
-With Process advisor’s powerful integration with Power BI, you can customize your process reports in an attached Power BI workspace. In this example, you perform a simple customization of the Power BI report to include a card that holds or tracks one of the analytic measures.
+With process advisor’s powerful integration with Power BI, you can customize your process reports in an attached Power BI workspace. In this example, you perform a simple customization of the Power BI report to include a card that holds or tracks one of the analytic measures.
 
  To be able to do this, make sure you've completed these steps in this article:
 
