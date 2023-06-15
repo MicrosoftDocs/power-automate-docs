@@ -18,7 +18,7 @@ search.audienceType:
 ## Prerequisites
 
 > [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for the China region. Switch to our machine-management capabilities. [Learn more about the switch from gateways to direct connectivity.](manage-machines.md#switch-from-gateways-to-direct-connectivity)
+> Gateways for desktop flows are now deprecated. This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. [Learn more about the switch from gateways to direct connectivity.](manage-machines.md#switch-from-gateways-to-direct-connectivity)
 
 - A registered [machine](manage-machines.md) or [machine group](manage-machine-groups.md) that will run the triggered desktop flows. Machines are the physical or virtual devices you use to automate desktop processes. Machine groups allow you to handle multiple machines as one entity and distribute your automation workload.
 
