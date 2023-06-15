@@ -6,7 +6,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 06/15/2023
 ms.collection: get-started
-ms.author: jpapadimitriou
+ms.author: dpapa
 ms.reviewer: matp
 contributors:
 - jpapadimitriou
