@@ -22,14 +22,11 @@ search.audienceType:
 ---
 # Share a cloud flow
 
-Share a cloud flow with others in your organization so they can also benefit from automation you've created. There are three primary ways to share a cloud flow in Power Automate:
+Share a cloud flow with others in your organization and guest users so they can also benefit from automation you've created. There are three primary ways to share a cloud flow in Power Automate:
 
 - Add an owner to a cloud flow.
 - Share a cloud flow with run-only privileges.
 - Share a copy of a cloud flow.
-
-> [!IMPORTANT]
-> You can't share cloud flows with guest users in your tenant.
 
 ## Prerequisites
 
@@ -56,7 +53,7 @@ Adding an owner to a cloud flow is the most common way to share a cloud flow. An
 - View the run history.
 - Manage the properties of the flow (for example, start or stop the flow, add owners, or update credentials for a connection).
 - Edit the definition of the flow (for example, add or remove an action or condition).
-- Add or remove other owners (but not the flow's creator).
+- Add or remove other owners (but not the flow's creator), including guest users.
 - Delete the flow.
 
 If you're the creator or an owner of a cloud flow, you'll find it listed on the **Team flows** tab in Power Automate.
