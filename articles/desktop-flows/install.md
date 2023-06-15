@@ -21,11 +21,11 @@ ms.custom: bap-template
 > We've identified a potential issue with Power Automate for desktop where your runs may fail after the June 13th 2023 Windows updates.
 > Details about the update: [.NET Framework June 2023 Security and Quality Rollup - .NET Blog (microsoft.com)](https://devblogs.microsoft.com/dotnet/dotnet-framework-june-2023-security-and-quality-rollup/)
 > 
-> **How does this affect me?:**
+> **How does this affect me?**
 > - Desktop Flows may start to fail with the error “CredentialAuthenticationFailed” or “GeneralScriptExecutionError” 
 > - All Power Automate for desktop versions 2.28 or higher may be impacted.
 > 
-> **What action do I need to take?:**
+> **What action do I need to take?**
 >
 > Upgrade PAD to the latest version: [2.33]( https://go.microsoft.com/fwlink/?linkid=2102613) 
 >
