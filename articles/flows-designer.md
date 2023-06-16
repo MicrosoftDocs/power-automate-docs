@@ -27,7 +27,7 @@ ms.reviewer: angieandrews
 
 Use the designer to create, configure, and customize your cloud flows. The legend below the following screenshot describes the features of the designer.
 
-:::image type="content" source="media/flows-designer/designer-overview.png" alt-text="Screenshot of the cloud flows designer.":::
+:::image type="content" source="media/flows-designer/designer-overview-original.png" alt-text="Screenshot of the cloud flows designer.":::
 
 Legend:
 
