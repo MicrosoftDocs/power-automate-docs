@@ -1,6 +1,6 @@
 ---
 title: IP address configuration
-description: Learn about IP address configuration, the services that Power Automate connects to, various endpoints, and more.
+description: Learn about IP address configuration, the services that Power Automate connect to, various endpoints, and more.
 author: masisley
 contributors:
   - v-aangie
