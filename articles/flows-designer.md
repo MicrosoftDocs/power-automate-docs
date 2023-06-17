@@ -27,32 +27,70 @@ ms.reviewer: angieandrews
 
 Use the designer to create, configure, and customize your cloud flows. The legend below the following screenshot describes the features of the designer.
 
-:::image type="content" source="media/flows-designer/designer-overview-original.png" alt-text="Screenshot of the cloud flows designer.":::
+:::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer.":::
 
 Legend:
 
-1. [Free-form canvas](#free-form-canvas): The canvas is free-flowing, which allows for easier navigation.
-1. [Copilot pane](get-started-with-copilot.md): Copilot stays by you in your flow editing and fit-and-finish journey. It can help you update and make changes to your flow based on your conversational style prompt. It can also help answer flow and product related  questions.
-1. [Action configuration pane](#action-configuration-pane): Once you select an action card in the canvas to configure, the action pane opens on demand to the left of the designer.
-1. [Flow zooming controls](#flow-zooming-controls): Adjust the size of your flow in the canvas.
-1. [Send Feedback](#send-feedback): Send us feedback on your flow creation experience, or general comments on the designer.
-1. [Copilot entry point](get-started-with-copilot.md): Show or hide the Copilot pane. The Copilot pane opens by default as soon as the designer loads.
-1. [**Save** and **Test**](guidance/planning/introduction.md): Save and test your flow. Testing is part of planning a Power Automate project. To learn more, go to [Introduction: Planning a Power Automate project](guidance/planning/introduction.md).
+1. **Left arrow:** Return to the previous screen.
+1. [**Send Feedback button:**](#send-feedback) Send us feedback on your flow creation experience, or general comments on the designer.
+1. **Action/trigger name:** The action or trigger card that's selected in your flow on the center of the screen.
+1. [**More commands:**](#more-commands) Add a note to the selected card or delete it.
+1. **Collapse:** Hide this pane. When it's collapsed, the **Expand** icon (**>>**) appears in the upper-left corner. To show the panel again, select **>>**.
+1. [**Copilot button:**](get-started-with-copilot.md) Show or hide the Copilot pane. The Copilot pane appears by default when the designer opens.
+1. [**Save button:**](#save-button) Save your flow.
+1. [**Test button:**](#test-button) Test your flow to make sure it works as you intended.
+1. [**Action configuration pane:**](#action-configuration-pane) Once you select an action card to configure in the canvas, the action configuration pane opens to the left of the designer.
+1. [**Canvas**](#canvas): The canvas is where you build your flow. It's free-flowing, which allows for easier navigation.
+1. [**Copilot pane:**](get-started-with-copilot.md) Copilot stays by you in your flow editing and fit-and-finish journey. It can help you update and make changes to your flow based on your conversational style prompt. It can also help answer flow and product related  questions.
 
 > [!IMPORTANT]
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
-## Free-form canvas
+## Send feedback
 
-For easy navigation, you can drag your flow within the canvas. The action cards in the canvas are small, as you can configure individual actions on the left in their own pane. The action cards on the free-form canvas are compact. This allows for easy visibility and navigation, especially for large flows. The canvas also contains designer drop zones indicated by a blue dashed line to help you easily drag and drop cloud flow actions.  
+We want to hear from you to help us measure and improve our impact. To provide your feedback, select **Send Feedback**, answer three questions, and then select **Submit**.
 
-:::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
+:::image type="content" source="media/flows-designer/feedback.png" alt-text="Screenshot of the feedback form.":::
+
+## More commands
+
+Select **More commands** (**...**) to either add a note to or delete the selected card in your flow. Select **Add a note** to describe the purpose of the card in your flow. When you add a note, you'll see a note icon in the bottom right of the card. Hover over the icon to see the note.
+
+:::image type="content" source="media/flows-designer/designer-note.png" alt-text="Screenshot of adding a note.":::
+
+## Save button
+
+Select **Save** to save your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in in the upper left with a green check.
+
+:::image type="content" source="media/flows-designer/designer-save.png" alt-text="Screenshot of a sucessful save.":::
+
+If an error is found, a description of the error appears in the upper left with a red **X**. The following screenshot is an example of an error.
+
+:::image type="content" source="media/flows-designer/designer-error.png" alt-text="Screenshot of an error.":::
+
+The error also appears in the card that caused the error in your flow. You can correct it and select **Save** again. When there are no errors, your next step should be to test your flow.
+
+## Test button
+
+After your flow is saved successfully, **Test** becomes active. To test your flow, select **Test** > **Manually** > **Test**.
+
+:::image type="content" source="media/flows-designer/test-manually.png" alt-text="Screenshot of manually testing your flow.":::
+
+You'll see instructions on what you need to do to test your flow, as in the following example.
+
+:::image type="content" source="media/flows-designer/test-prompt.png" alt-text="Screenshot of the prompt telling you what to do to test your flow.":::
+
+Test you flow by following the instructions. In this example, you need to send an email and then the the flow test will run. When the test has completed, a green check appears in each card and the number of seconds it took to process appear in your flow.
+
+:::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of thw test results.":::
+
+Testing is part of planning a Power Automate project. To learn more, go to [Introduction: Planning a Power Automate project](guidance/planning/introduction.md).
 
 ## Action configuration pane
 
-The action configuration pane allows you to customize parameters, settings, and code for the selected action card.
+The action configuration pane allows you to customize parameters, settings, and code for the selected card on your flow.
 
 ### Parameters
 
@@ -60,11 +98,11 @@ The **Parameters** tab allows you to use the blue **Insert token** and **Insert 
 
 :::image type="content" source="media/flows-designer/skittles.png" alt-text="Screenshot of the Insert token and Insert expression icons in the Parameters tab in Action configuration pane.":::
 
-To insert a dynamic token into the **Inputs** field, select the top icon (the lightening rod). A popup screen will open where you can search for or scroll to find the tokens you can use. Once you make your selection, it appears in the **Inputs** field.
+To insert a dynamic token into the **Inputs** field, select the top icon (the lightening rod). A popup screen opens, where you can search for or scroll to find the tokens you can use. When you make your selection, it appears in the **Inputs** field.
 
-To insert an expression into the **Inputs** field, select the bottom icon (***fx***). A popup screen will open where you can select a function to start your expression. To complete your expression, place your cursor in the function you selected, and then select **Dynamic content**. Search for or select the content/tokens to add, and then select **Add**. Your completed expression appears in the **Inputs** field.
+To insert an expression into the **Inputs** field, select the bottom icon (***fx***). A popup screen opens, where you can select a function to start your expression. To complete your expression, place your cursor in the function, and then select **Dynamic content**. Search for or select the content/tokens to add, and then select **Add**. Your completed expression appears in the **Inputs** field.
 
-Alternatively, you can select the dynamic content/token and expression popups by entering **/** in the **Inputs** field.
+Alternatively, you can select the dynamic content/token and expression popups by entering a forward slash (**/**) in the **Inputs** field.
 
 ### Settings
 
@@ -81,20 +119,27 @@ You can select more than one option:
 
 ### Code
 
-See the code behind any card in your flow by selecting it in the canvas, and then selecting **Code View** in the Action configuration pane. As you customize the code in the [Parameters](#parameters) tab, you can see the new code in the  **Code View** tab.
+See the code behind any card in your flow by selecting it in the canvas, and then selecting **Code View** in the action configuration pane. As you customize the code in the [Parameters](#parameters) tab, you can see the new code in the  **Code View** tab.
 
-When you're finished with the Action configuration pane, you can hide it by selecting **<<** in the upper-right corner. To show it, select **>>** in the upper-left corner.
+The following screenshot is an exmple of the code for the **Compose** action card.
 
-## Flow zooming controls
+:::image type="content" source="media/flows-designer/compose.png" alt-text="Screenshot of the code view of the Compose action card.":::
 
-Depending on the size and complexity of your flow, you might want to adjust its size on the canvas as you are building it. The zooming controls allow you to zoom in, zoom out, fit to screen, and toggle a *minimap*.
+## Canvas
 
-The last option in the following screenshot is the minimap. Select this option to focus on a particular section of a large flow.
+For easy navigation, you can drag your flow on the canvas. You configure the actions of each card on the left in the action configuration pane. The cards on the canvas are compact. This allows for easy visibility and navigation, especially for large flows.
 
-:::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot of the four zoom .":::
+### Drop zones
 
-## Send feedback
+The canvas contains designer drop zones indicated by a blue dashed line. The drop zones help you to easily drag and drop cloud flow actions.
 
-We want to hear from you to help us measure and improve our impact. To provide your feedback, select **Send Feedback**, answer three questions, and then select **Submit**.
+:::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
-:::image type="content" source="media/flows-designer/feedback.png" alt-text="Screenshot of the feedback form.":::
+### Zooming icons
+
+Adjust the size of your flow on the canvas. Depending on the size and complexity of your flow, you might want to adjust its size as you are building it. The zooming icons allow you to zoom in, zoom out, fit to screen, and toggle a *minimap*.
+
+The last option in the zooming icons is the minimap. Select this icon to focus on a particular section of a large flow.
+
+:::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot of the four zoom icons.":::
+
