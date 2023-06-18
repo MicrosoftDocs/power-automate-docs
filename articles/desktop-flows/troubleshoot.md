@@ -110,7 +110,7 @@ Changing the service account can also be accomplished by using a command line to
 You can find TroubleshootingTool.Console.exe in the directory where you installed Power Automate, typically "%programfiles(x86)%\Power Automate Desktop". To change the service account, do the following:
 1. Open a command prompt as an administrator and navigate to the tool.
 1. Create a temporary file with the account password as the only content inside (e.g. temp.txt)
-1. Type the following: TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount <accountname> < <pathToTemporaryFile>
+1. Type the following: TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount \<accountname> < \<pathToTemporaryFile>
 1. Delete the temporary file
 
 Example:
