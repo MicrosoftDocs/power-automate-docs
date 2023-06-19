@@ -1,5 +1,6 @@
 ---
-title: "Replace dialogs with business process flows or canvas apps  | MicrosoftDocs"
+title: Replace dialogs with business process flows or canvas apps 
+description: Learn about the capabilities of business process flows and canvas apps.
 ms.custom: ""
 ms.date: 08/02/2018
 ms.suite: ""
@@ -22,7 +23,7 @@ search.audienceType:
 # Replace dialogs with business process flows or canvas apps
 
 
-[Dialogs are deprecated](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated), and should be replaced by business process flows or canvas apps. This topic describes different capabilities of these options as well as situations where a business process flow or canvas app embedded in a model-driven form can be used to replace an existing dialog.
+[Dialogs are deprecated](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated), and should be replaced by business process flows or canvas apps. This article describes different capabilities of these options. You'll also learn about situations where a business process flow or canvas app embedded in a model-driven form can be used to replace an existing dialog.
 
 ## Feature capability comparison
 
@@ -61,7 +62,7 @@ This table lists the set of dialog capabilities and the equivalent capabilities 
 ## Choosing between a business process flow or canvas app
 When you choose your dialog replacement, it is important to account for the user experience you want to deliver. Also keep in mind, almost any dialog can be modeled using a canvas app.
 
-Business process flows are best suited to replace dialogs that model processes providing guidance across an overarching workstream that requires collaboration across groups of individuals and Dynamics 365 app context. For example, quote review and routing. 
+Business process flows are best suited to replace dialogs that model processes providing guidance across an overarching workstream that requires collaboration across groups of individuals and Dynamics 365 app context. For example, quote review and routing.
 
 Alternatively, canvas apps can be used to replace dialogs that model prescriptive tasks such as a call script for lead prospecting or to simplify the user experience for other tasks, such as updating an opportunity. Notice that these scenarios may even benefit from having a stand-alone canvas app. 
 
@@ -110,15 +111,15 @@ Can I launch a canvas app as a popup from a button in the command bar?
 - Yes. To do this, simply set the target URL to that of your canvas app, obtained from the app's **Details** section as described earlier.
 
 Can workflows be called from a canvas app?
-- This is not supported. We recommend using a cloud flow instead. More information: [Introducing button flows with user input](button-flow-with-user-input-tokens.md)
+- This isn't supported. We recommend using a cloud flow instead.
 
 Can I automatically convert dialogs to business process flows or canvas apps?
 - There is no automated way to convert dialogs to business process flows or canvas apps.
 
+### See also
 
-## See also
-[Tutorial: Create a business process flow to standardize processes](create-business-process-flow.md) </br>
-[What are canvas apps in Power Apps?](/powerapps/maker/canvas-apps/getting-started)
+- [Tutorial: Create a business process flow to standardize processes](create-business-process-flow.md) </br>
+- [What are canvas apps in Power Apps?](/powerapps/maker/canvas-apps/getting-started)
 
 
 

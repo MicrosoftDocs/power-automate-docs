@@ -1,21 +1,15 @@
 ---
-title: Manage cloud flows in the Power Automate mobile app for Android
-description: Learn how to manage your cloud flows in the Microsoft Power Automate mobile app for Android.
+title: Manage cloud flows in the Power Automate mobile app
+description: Learn how to manage your cloud flows in the Microsoft Power Automate mobile app.
 services: ''
 suite: flow
-documentationcenter: na
 author: natalie-pienkowska
 contributors:
   - natalie-pienkowska
   - v-aangie
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 11/30/2022
+ms.date: 06/05/2023
 ms.author: napienko
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -25,7 +19,7 @@ search.audienceType:
 
 # Manage cloud flows
 
-Use the Power Automate mobile app for Android to do the following tasks:
+Use the Power Automate mobile app to do the following tasks:
 
 - View, edit, and run your flows.
 
@@ -35,11 +29,13 @@ Use the Power Automate mobile app for Android to do the following tasks:
 
 You can manage your flows when you're away from your computer whether they're solution-aware or non-solution&ndash;aware. [Learn about solution-aware flows](../overview-solution-flows.md).
 
+To learn about the different types of cloud flows, go to [Cloud flows](/power-automate/flow-types#cloud-flows).
+
 ## View a list of your cloud flows
 
 By default, the **Flows** screen shows all the flows that you've created.
 
-:::image type="content" source="../media/android/instant-flows.png" alt-text="Screenshot of a list of flows.":::
+:::image type="content" source="../media/mobile/instant-flows.png" alt-text="Screenshot of a list of flows.":::
 
 To show flows that others have shared with you, select **Shared with me** at the top of the **Flows** screen.
 
@@ -55,24 +51,38 @@ To edit a cloud flow:
 
 1. Select the pencil icon at the top of the screen.
 
-    :::image type="content" source="../media/android/flow-details-edit.png" alt-text="Screenshot of the pencil icon in the Flow details screen.":::
+    :::image type="content" source="../media/mobile/flow-details-edit.png" alt-text="Screenshot of the pencil icon in the Flow details screen.":::
 
 ## Run, delete, and turn a flow on or off
 
-Select the vertical ellipsis (**...**) next to a flow, and then select one of the options: **Run flow**, **Turn off** (or if the flow is off, **Turn on**), or **Delete**.
+Select the vertical ellipsis (&vellip;) next to a flow, and then select one of the options: **Run flow**, **Turn off** (or if the flow is off, **Turn on**), or **Delete**.
 
 You can also turn a flow on and off in the [**Details** screen](#view-run-history-and-details).
 
-:::image type="content" source="../media/android/flows-menu.png" alt-text="Screenshot of flow options.":::
+:::image type="content" source="../media/mobile/flows-menu.png" alt-text="Screenshot of flow options.":::
+
+## Run an instant flow
+
+The main difference between flows and instant flows is that you need to trigger instant flows manually to run them.
+
+1. Launch Power Automate mobile app, tap **Instant flows** at the bottom of the page, and tap the flow that you wish to run.  
+1. View the progress while the flow runs.
+
+    The page updates, indicating that the flow has completed.  
 
 ## View run history and details
 
-Select the vertical ellipsis (**...**) next to a flow, and then select **Details**.
+Select the vertical ellipsis (&vellip;) next to a flow, and then select **Details**.
 
 In addition to the flow's run history, you can view a description of the flow if one was provided, how long ago it was modified, and its type.
 
 You can also toggle **Enable** here to turn the flow on or off.
 
-:::image type="content" source="../media/android/flow-details.png" alt-text="Screenshot of flow details and run history.":::
+:::image type="content" source="../media/mobile/flow-details.png" alt-text="Screenshot of flow details and run history.":::
+
+### See also
+
+[Power Automate mobile app overview](overview-mobile.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
