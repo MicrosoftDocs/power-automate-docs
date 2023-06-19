@@ -16,7 +16,7 @@ ms.reviewer: angieandrews
 
 Integrate Power Automate with Excel for the web to automate repetitive tasks, reduce errors, and improve productivity. For example, you can track customer feedback, manage projects, or analyze data. By connecting Excel to apps and services like Microsoft SharePoint, Teams, and Planner, Power Automate can make collaboration and data sharing across different platforms seem effortless.
 
-To get started, select a Power Automate prebuilt template that closely meets your needs from Excel for the web. Then, customize it to fit your Excel workbook. With this feature, you can easily create Power Automate workflows in Excel for the web.
+With this feature, you can easily create Power Automate workflows in Excel for the web. To get started, select a Power Automate prebuilt template that closely meets your needs from Excel for the web. Then, customize it to fit your Excel workbook.
 
 Here are some of the prebuilt templates you can use in Excel for the web:
 
@@ -56,4 +56,4 @@ The Power Automate pane is currently available only on Excel for the web.
 ### See also
 
 - [Excel Online (Business) connector](/connectors/excelonlinebusiness/)
-- [Excel Online (Onedrive) connector](/connectors/excelonline/)
+- [Excel Online (OneDrive) connector](/connectors/excelonline/)
