@@ -686,6 +686,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/sap-integration/overview.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/sap-integration/set-up-prepare.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/administer/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/sap-integration/env-variables-connection-refs.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/administer/configure-environment-variables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/sap-integration/solutions.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/administer/customize-solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/sap-integration/faqs.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/faqs",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/mobile-monitor-activity.md",
       "redirect_url": "/power-automate/mobile/manage-cloud-flows",
       "redirect_document_id": false
