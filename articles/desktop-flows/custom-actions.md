@@ -38,7 +38,7 @@ Custom actions (preview) exist at the environment level. As a best practice, use
 - Upload date might differ in the portal than what is shown in the Assets library (preview) inside Power Automate for desktop.
 - The Assets library (preview) can't display more than 5000 custom actions groups.
 - Custom actions are not available for organizations that have enabled [Bring your own key (BYOK)](/azure/information-protection/byok-price-restrictions) from the protection service.
-- Machines belonging in a [hosted machine group](https://learn.microsoft.com/power-automate/desktop-flows/hosted-machine-groups) should have the appropriate certificates required for custom actions, as set by your organization, installed on them. You can create a [golden image](https://learn.microsoft.com/azure/virtual-desktop/set-up-golden-image), containing the respective certificate(s) and provide it during the creation process of the respective hosted machine group.
+- Machines belonging in a [hosted machine group](hosted-machine-groups.md) should have the appropriate certificates required for custom actions, as set by your organization, installed on them. You can create a [golden image](/azure/virtual-desktop/set-up-golden-image), containing the respective certificate(s) and provide it during the creation process of the respective hosted machine group.
 
 ## Next steps
 
