@@ -105,7 +105,7 @@ If a departing user, or a user who has requested the deletion of personal data h
 
 1. Sign in to [Power Automate](https://make.powerautomate.com) or [PowerApps](https://make.powerapps.com/).
 1. On the left navigation pane, select **Data**, and then select **Tables**.
-1. Selct the **All** tab.
+1. Select the **All** tab.
 1. Find the **Approvals** table and select the vertical ellipsis (&vellip;).
 1. Select **Edit** or **Edit in new tab**.
 
