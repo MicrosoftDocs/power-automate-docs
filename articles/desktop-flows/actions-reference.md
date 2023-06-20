@@ -1,12 +1,12 @@
 ---
 title: Actions reference
 description: This section describes all Power Automate actions
-author: georgiostrantzas
+author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 09/22/2020
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: dipapa
+ms.reviewer: tapanm
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
