@@ -1,5 +1,5 @@
 ---
-title: Custom actions
+title: Custom actions in actions reference section
 description: Using custom actions in Power Automate desktop flows.
 author: jpapadimitriou
 ms.service: power-automate
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Custom actions in desktop flows (preview)
+# Custom actions (preview)
 
 Custom actions (preview) developed by your organization and uploaded to the respective environments can be included in desktop flows and utilized like actions that belong in the standard library of automation actions. 
 
@@ -33,5 +33,3 @@ Custom actions (preview) exist at the environment level. As a best practice, use
 - [Assets library (preview)](../assets-library.md)
 - [Upload custom actions](../upload-custom-actions.md)
 - [Use custom actions](../use-custom-actions.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
