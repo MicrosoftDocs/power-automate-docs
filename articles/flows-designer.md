@@ -137,7 +137,7 @@ The canvas contains designer drop zones indicated by a blue dashed line. The dro
 
 ### Zooming icons
 
-Adjust the size of your flow on the canvas. Depending on the size and complexity of your flow, you might want to adjust its size as you are building it. The zooming icons allow you to zoom in, zoom out, fit to screen, and toggle a *minimap*.
+Adjust the size of your flow on the canvas. Depending on the size and complexity of your flow, you might want to adjust its size as you're building it. The zooming icons allow you to zoom in, zoom out, fit to screen, and toggle a *minimap*.
 
 The last option in the zooming icons is the minimap. Select this icon to focus on a particular section of a large flow.
 
