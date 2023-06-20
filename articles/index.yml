@@ -32,21 +32,22 @@ highlightedContent:
       url: whats-new.md
 
     # Card
-    - title: "Power Automate videos"
-      itemType: video
-      url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
-
-    # Card
     - title: Power Automate training
       itemType: learn
       url: /training/powerplatform/power-automate
+
+    # Card
+    - title: "Troubleshoot"
+      itemType: concept
+      url: /troubleshoot/power-platform/power-automate/welcome-power-automate
+
 
 # conceptualContent section
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 additionalContent: 
   sections:
-  - title: Create and Design
+  - title: Create and design
 # Guidance should be the first card under implement. On this card, include links for Security and Compliance, Implementation, Adoption frameworks, and Best practices. 
 # Each card should have at least three and no more than five links. Do not include a "See also" link.
     items:
@@ -56,8 +57,6 @@ additionalContent:
           url: sign-up-sign-in.md
         - text: Buy Power Automate
           url: /power-automate/organization-q-and-a#how-can-people-gain-access-to-the-paid-features-of-power-automate
-        - text: Deploy Power Automate
-          url: /power-automate/guidance/planning/deploy-to-production
     - title: Create flows
       links:
         - text: Automated flows
@@ -74,9 +73,33 @@ additionalContent:
           url: minit/minit-desktop-application-overview.md
         - text: Task mining
           url: task-mining-overview.md
-  - title: Develop and Integrate
+    - title: Integrate Power Automate with
+      links:
+        - text: Microsoft Teams
+          url: ./teams/overview.md
+        - text: SharePoint
+          url: ./sharepoint-overview.md
+        - text: Email
+          url: ./email-overview.md
+    - title: Best practices guidance
+      links:
+        - text: Plan a Power Automate project
+          url: ./guidance/planning/introduction.md
+        - text: Automation kit
+          url: ./guidance/automation-kit/overview/introduction.md
+        - text: Automation adoption
+          url: ./guidance/automation-coe/overview.md
+  - title: Administer and extend
     items:
-    - title: Develop Power Automate
+    - title: Administer Power Automate
+      links:
+        - text: Use Power Platform admin center
+          url: admin-center-introduction.md
+        - text: Administer environments
+          url: environments-overview-admin.md
+        - text: Set data loss prevention policy
+          url: prevent-data-loss.md
+    - title: Extend Power Automate
       links:
         - text: For enterprise developers, ISVs, and partners
           url: developer/dev-enterprise-intro.md
@@ -92,15 +115,7 @@ additionalContent:
           url: ./create-flow-solution.md
         - text: Implement healthy ALM using solutions
           url: /power-platform/alm/overview-alm
-    - title: Integrate Power Automate with
-      links:
-        - text: Microsoft Teams
-          url: ./teams/overview.md
-        - text: SharePoint
-          url: ./sharepoint-overview.md
-        - text: Email
-          url: ./email-overview.md
-  - title: Use and Administer
+  - title: Use
     items:
     - title: Use flow with Dataverse
       links:
@@ -110,22 +125,28 @@ additionalContent:
           url: ./dataverse/delete-row.md
         - text: Upload or download files/images
           url: ./dataverse/upload-download-file.md
-    - title: Administer Power Automate
+    - title: Use flows with...
       links:
-        - text: Use Power Platform admin center
-          url: admin-center-introduction.md
-        - text: Administer environments
-          url: environments-overview-admin.md
-        - text: Set data loss prevention policy
-          url: prevent-data-loss.md
-    - title: Best practices guidance
+        - text: Teams
+          url: ./teams/overview.md
+        - text: SharePoint
+          url: ./sharepoint-overview.md
+        - text: Email
+          url: ./email-overview.md
+        - text: Forms
+          url: ./forms/overview.md
+        - text: Approvals
+          url: ./get-started-approvals.md
+    - title: Use business process flows
       links:
-        - text: Plan a Power Automate project
-          url: ./guidance/planning/introduction.md
-        - text: Automation kit
-          url: ./guidance/automation-kit/overview/introduction.md
-        - text: Automation adoption
-          url: ./guidance/automation-coe/overview.md
+        - text: Overview
+          url: ./business-process-flows-overview.md
+        - text: Create a business process flow
+          url: ./create-business-process-flow.md
+        - text: Add custom controls in business process flows
+          url: ./custom-controls-business-process-flows.md
+        - text: Best practices in using business process flow columns
+          url: ./best-practices-entity-attributes.md
 
   - title: Related content
     items:
