@@ -1,14 +1,15 @@
 ---
 title: Troubleshoot desktop flows
 description: See how to troubleshoot common issues of Power Automate desktop flows.
-author: georgiostrantzas
+author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
 ms.date: 06/20/2023
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: pefelesk
+ms.reviewer: tapanm
 contributors:
 - PetrosFeleskouras
+- johndund
 search.audienceType: 
   - flowmaker
   - enduser
