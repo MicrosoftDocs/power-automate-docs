@@ -4,7 +4,7 @@ description: Learn about how to create custom actions in Power Automate for desk
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/15/2023
+ms.date: 05/26/2023
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors: 
@@ -762,10 +762,8 @@ Example:
 .\makeCabFile.ps1 "C:\Users\Username\source\repos\MyCustomModule\bin\Release\net472" "C:\Users\Username\MyCustomActions" MyCustomActions.cab
 ```
 > [!NOTE]
-> Make sure that the the actual custom actions .dll file is in the root level of the targetted path when creating the .cab file and not in a subfolder.
-
-> [!NOTE]
-> The .cab file must also be signed. Unsigned .cab files and/or unsigned .dlls contained in them will not be usable in desktop flows and will result in error during inclusion.
+> - Make sure that the the actual custom actions .dll file is in the root level of the targetted path when creating the .cab file and not in a subfolder.
+> - The .cab file must also be signed. Unsigned .cab files and/or unsigned .dlls contained in them will not be usable in desktop flows and will result in error during inclusion.
 
 ## Next steps
 

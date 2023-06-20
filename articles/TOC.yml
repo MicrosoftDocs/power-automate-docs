@@ -46,33 +46,18 @@
       href: apply-to-each.md
   - name: Power Automate mobile app
     items:
-    - name: Android
-      items:
-      - name: Overview
-        href: ./mobile/overview-mobile.md
-      - name: Run instant flows
-        href: ./mobile/run-instant-flows.md
-      - name: Create widgets
-        href: ./mobile/widgets.md
-      - name: Manage approvals
-        href: ./mobile/manage-approvals.md
-      - name: Receive notifications
-        href: ./mobile/notifications.md
-      - name: Manage cloud flows
-        href: ./mobile/manage-cloud-flows.md
-    - name: iOS
-      items:
-      - name: Create a button flow
-        href: introduction-to-button-flows.md
-      - name: Create a flow on a phone
-        href: mobile-create-flow.md
-        displayName: Create a flow on a mobile device
-      - name: Create a button flow with trigger tokens
-        href: introduction-to-button-trigger-tokens.md
-      - name: Create a button flow with user input
-        href: button-flow-with-user-input-tokens.md
-      - name: Share a button
-        href: share-buttons.md
+    - name: Overview
+      href: ./mobile/overview-mobile.md
+    - name: Create flows from your phone
+      href: ./mobile/mobile-create-flow.md
+    - name: Manage cloud flows
+      href: ./mobile/manage-cloud-flows.md 
+    - name: Create widgets
+      href: ./mobile/widgets.md
+    - name: Manage approvals
+      href: ./mobile/manage-approvals.md
+    - name: Receive notifications
+      href: ./mobile/notifications.md
   - name: How to
     items:
     - name: Add an action
@@ -98,9 +83,6 @@
       href: visio-flows.md
     - name: "Reference: Use functions in expressions"
       href: /azure/logic-apps/workflow-definition-language-functions-reference
-    - name: Manage flows on a phone
-      href: mobile-manage-flows.md
-      displayName: Manage flows on mobile devices
     - name: Publish a template
       href: publish-a-template.md
     - name: Turn a cloud flow on or off
@@ -231,6 +213,8 @@
         href: ./teams/approvals-custom-connector.md
     - name: Trigger flows from Power BI report
       href: ./trigger-flow-powerbi-report.md
+    - name: Configure flows in Power Pages (preview)
+      href: /power-pages/configure/cloud-flow-integration
     - name: Use flows with Microsoft Forms
       items:
       - name: Overview
@@ -310,8 +294,6 @@
       href: triggers-troubleshoot.md
     - name: Watch a cloud flow
       href: see-a-flow-run.md
-    - name: Monitor flow activity on a phone
-      href: mobile-monitor-activity.md
       displayName: Monitor flow activity on mobile devices
     - name: Troubleshoot a cloud flow
       href: fix-flow-failures.md
@@ -689,6 +671,8 @@
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
     - name: SharePoint (preview)
       href: ./desktop-flows/actions-reference/sharepoint.md
+    - name: Workqueues (preview)
+      href: ./desktop-flows/actions-reference/workqueues.md
   - name: Troubleshoot desktop flows
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
@@ -935,18 +919,8 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-  - name: SAP integration (preview)
-    items:
-    - name: Overview
-      href: ./sap-integration/overview.md
-    - name: Set up and prepare
-      href: ./sap-integration/set-up-prepare.md
-    - name: Create an environment variable with SAP connection parameter
-      href: ./sap-integration/env-variables-connection-refs.md
-    - name: Prebuilt solution
-      href: ./sap-integration/solutions.md
-    - name: FAQs
-      href: ./sap-integration/FAQs.md
+  - name: SAP integration
+    href: /power-platform/solution-templates/finance/sap-procurement/overview
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
@@ -1033,8 +1007,8 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
-  - name: Power Automate Web API
-    href: web-api.md
+  - name: Manage flows with code
+    href: manage-flows-with-code.md
   - name: Power Automate embed pay-as-you-go
     href: isv-pay-as-you-go.md
   - name: Frequently asked questions

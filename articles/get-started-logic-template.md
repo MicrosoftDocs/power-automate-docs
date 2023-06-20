@@ -22,7 +22,7 @@ ms.date: 05/12/2022
 search.audienceType: 
   - flowmaker
   - enduser
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 # Create a cloud flow from a template in Power Automate
 

@@ -22,7 +22,7 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Get started with Power Automate
@@ -33,7 +33,7 @@ Welcome! What can you expect from Power Automate? Here are a few examples of wha
 * Send automatic reminders for past due tasks
 * Move business data between systems on a schedule
 * Connect to more than 500 data sources or any publicly available API
-* You can even automate tasks on your local computer like computing data in Excel. 
+* You can even automate tasks on your local computer like computing data in Excel.
 
 Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
 
@@ -78,17 +78,8 @@ Each template is designed for a specific purpose. For example, there are templat
 ## Create your first flow
 
 1. Select a template that's useful for you. A simple template is [**Notify and Email when a new file is uploaded to OneDrive**](https://make.powerautomate.com/galleries/public/templates/ef6bf28037ca11e7870df906aa521b7a/notify-and-email-when-a-new-file-is-uploaded-to-onedrive/).
-
-    ![daily reminder template.](./media/getting-started/template-details.png)
-
 1. Select **Continue**.
-
-   ![Create connection.](./media/getting-started/create-connection.png)
-
 1. Select the OneDrive folder that you want to monitor.
-
-   ![OneDrive folder tree](./media/getting-started/select-ondrive-folder.png)
-
 1. Select **Save**.
 
     ![Provide credentials for the connection.](./media/getting-started/full-flow.png)
@@ -101,8 +92,6 @@ Each template is designed for a specific purpose. For example, there are templat
 ## Get creative
 
 Now that you've created your first flow from a template, use any of the more than [500 data sources](https://make.powerautomate.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
-
-![Building a cloud flow.](./media/getting-started/build-a-flow.png)
 
 When you create a cloud flow from scratch, you control the entire workflow. Here are a few ideas to get your started:
 
@@ -119,8 +108,6 @@ You don't need to be a developer to create flows; however, Power Automate does p
 
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**.
 1. Select **Peek code**.
-
-    ![Peek code.](media/getting-started/peek-code.png)
 
 1. Notice the full JSON representation of the actions and triggers. This includes all inputs, such as the text you enter directly, and expressions used. You can select expressions here and then paste them into the **Dynamic Content** expression editor. This can also give you a way to verify the data you expect is present in the flow.
 
@@ -142,12 +129,6 @@ Visit the cloud flow activity page to see the list of cloud flows that recently 
 1. Sign into [Power Automate](https://powerautomate.com).
 1. Select **Monitor** on the left side of the screen.
 1. Select **Cloud flow activity**.
-
-   ![Notification center.](media/getting-started/cloud-flow-activity.png)
-
-## Use the mobile app
-
-Download the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows). With this app, you can [monitor flow activity](mobile-monitor-activity.md), [manage your flows](mobile-manage-flows.md) and [create flows from templates](mobile-create-flow.md).
 
 ## Get help planning your Power Automate projects
 
