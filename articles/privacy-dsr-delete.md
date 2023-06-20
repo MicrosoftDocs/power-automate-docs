@@ -115,7 +115,14 @@ If a departing user, or a user who has requested the deletion of personal data h
 1. Select the **Owner** column heading, and then select **Filter by**.
 1. Enter the name of the user whose data you want to delete, and then select **Delete records**.
 1. Go back to main tables list mentioned in you found in step 3.
-1. Open the **Approval Requests**, **Approval Response**, **Basic Approval Model Data**, **Await All Approval Model**, **Await All Action Approval model** , **Approval step**, **Action Approval Model** tables, and repeat the steps 4 through 8 for those tables.
+1. Open the following tables and repeat steps 4 through 8 for these tables.
+    - **Approval Requests**
+    - **Approval Response**
+    - **Basic Approval Model Data**
+    - **Await All Approval Model**
+    - **Await All Action Approval model**
+    - **Approval step**
+    - **Action Approval Model**
 
 To learn more, go to [Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data](/power-platform/admin/common-data-service-gdpr-dsr-guide).
 
