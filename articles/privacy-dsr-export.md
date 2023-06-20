@@ -152,7 +152,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 1. Select the **Sent** tab, and then select **Export** in the top right corner to export sent approvals.
 1. Select the export dates, and then select **Export**.
 
-Repeat the above process for all environments that the user is part of by switching environments in the top right of the Approvals app page.
+Repeat the previous process for all environments that the user is part of by switching environments in the top right of the Approvals app page.
 
 Alternatively, you can go to [Power Automate](https://make.powerautomate.com), select **Approvals** in the left panel, and select the **History** tab. Then, you can manually copy approval contents for received and sent approvals. To make sure you get both, select the appropriate filter (**Received** or **Sent**) in the top right corner.
 
