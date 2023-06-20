@@ -1,6 +1,6 @@
 ---
-title: Data loss prevention (DLP) policies (preview)
-description: Data loss prevention (DLP) policies (preview)
+title: Data loss prevention (DLP) policies 
+description: Data loss prevention (DLP) policies 
 author: georgiostrantzas
 
 ms.subservice: desktop-flow
@@ -16,7 +16,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Data loss prevention (DLP) policies (preview)
+# Data loss prevention (DLP) policies 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Automate offers to administrators the option to create and enforce policies that classify desktop flows action groups as business or non-business and mark actions or action groups as blocked. That way a non-business action can't be combined with an action that has been marked as business so that to avoid data exposure outside the organization. For more details on how to form a data loss prevention (DLP) policy, visit the [respective topic](../prevent-data-loss.md) under the Administer Power Platform documentation.
