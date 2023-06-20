@@ -51,7 +51,7 @@ additionalContent:
 # Guidance should be the first card under implement. On this card, include links for Security and Compliance, Implementation, Adoption frameworks, and Best practices. 
 # Each card should have at least three and no more than five links. Do not include a "See also" link.
     items:
-    - title: Try/Buy/Deploy
+    - title: Try/Buy
       links:
         - text: Try Power Automate
           url: sign-up-sign-in.md
@@ -65,6 +65,12 @@ additionalContent:
           url: ./run-scheduled-tasks.md
         - text: Create desktop flows
           url: ./desktop-flows/create-flow.md
+    - title: AI Copilot capabilities
+      links:
+        - text: Get started with AI Copilot
+          url: ./get-started-with-copilot.md
+        - text: Edit a flow using Copilot
+          url: ./get-started-with-copilot.md#edit-a-flow-using-copilot
     - title: Plan with process advisor
       links:
         - text: Process mining
@@ -73,6 +79,14 @@ additionalContent:
           url: minit/minit-desktop-application-overview.md
         - text: Task mining
           url: task-mining-overview.md
+    - title: Use solutions
+      links:
+        - text: Use solutions to distribute flows
+          url: ./overview-solution-flows.md
+        - text: Create a cloud flow in a solution
+          url: ./create-flow-solution.md
+        - text: Implement healthy application lifecycle management (ALM) using solutions
+          url: /power-platform/alm/overview-alm
     - title: Integrate Power Automate with
       links:
         - text: Microsoft Teams
@@ -107,14 +121,6 @@ additionalContent:
           url: web-api.md
         - text: Develop custom connector
           url: get-started-flow-dev.md
-    - title: Use solutions for ALM
-      links:
-        - text: Use solutions to distribute flows
-          url: ./overview-solution-flows.md
-        - text: Create a cloud flow in a solution
-          url: ./create-flow-solution.md
-        - text: Implement healthy ALM using solutions
-          url: /power-platform/alm/overview-alm
   - title: Use
     items:
     - title: Use flow with Dataverse
