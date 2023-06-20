@@ -23,7 +23,7 @@ Work queues can play a crucial role in improving the efficiency, scalability and
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../../../articles/includes/cc-preview-features-definition.md)]
 > - Work queue actions in Power Automate for desktop is a premium feature which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
-> - Work queue actions in Power Automate for desktop can be classified in Data Loss Prevention policies. Note that work queue connector for cloud flows is not available in DLP policies.
+> - Work queue actions in Power Automate for desktop can be classified in Data Loss Prevention policies. Note that cloud flow-based usage of work queues cannot be restricted by DLP policies.
 
 ## Process work queue items (preview)
 
