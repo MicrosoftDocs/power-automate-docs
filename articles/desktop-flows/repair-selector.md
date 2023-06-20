@@ -6,7 +6,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 05/05/2023
 ms.author: nimoutzo
-ms.reviewer: ndoelman, matp
+ms.reviewer: ndoelman, matp, angieandrews
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -45,7 +45,7 @@ The previous select is replaced by the repaired selector. Select **Save** to com
 
 :::image type="content" source="media/Repair selector/Repair_ReplaceRepaired_4.png" alt-text="Repair selector Replace the repaired.":::
 
-If the you select **Cancel**, the selector isn't repaired and the old selector remains intact.
+If you select **Cancel**, the selector isn't repaired and the old selector remains intact.
 
 There are cases when Power Automate for desktop won't be able to generate a repaired selector successfully. When this happens, you should make sure that the correct UI element is captured. If the UI element still can't be repaired, you must repair the selector manually. 
 

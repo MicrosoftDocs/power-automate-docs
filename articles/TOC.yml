@@ -919,18 +919,8 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-  - name: SAP integration (preview)
-    items:
-    - name: Overview
-      href: ./sap-integration/overview.md
-    - name: Set up and prepare
-      href: ./sap-integration/set-up-prepare.md
-    - name: Create an environment variable with SAP connection parameter
-      href: ./sap-integration/env-variables-connection-refs.md
-    - name: Prebuilt solution
-      href: ./sap-integration/solutions.md
-    - name: FAQs
-      href: ./sap-integration/FAQs.md
+  - name: SAP integration
+    href: /power-platform/solution-templates/finance/sap-procurement/overview
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
@@ -1017,8 +1007,8 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
-  - name: Power Automate Web API
-    href: web-api.md
+  - name: Manage flows with code
+    href: manage-flows-with-code.md
   - name: Power Automate embed pay-as-you-go
     href: isv-pay-as-you-go.md
   - name: Frequently asked questions
