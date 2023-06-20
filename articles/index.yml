@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Automate documentation # < 60 chars
-summary: Discover how to make the most of Power Automate and create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
+summary: Discover how to make the most of Power Automate with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how to quickly create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin | power-apps | power-automate | power-bi | power-virtual-agents
 brand: power-automate
 
 metadata:
   title: Official Microsoft Power Automate documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Discover how to make the most of Power Automate and create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results. < 160 chars.
+  description: Discover how to make the most of Power Automate with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how to quickly create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.subservice: cloud-flow
   ms.topic: hub-page # Required
