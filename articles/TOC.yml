@@ -673,6 +673,8 @@
       href: ./desktop-flows/actions-reference/sharepoint.md
     - name: Workqueues (preview)
       href: ./desktop-flows/actions-reference/workqueues.md
+    - name: Custom actions (preview)
+      href: ./desktop-flows/actions-reference/customactions.md
   - name: Troubleshoot desktop flows
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
