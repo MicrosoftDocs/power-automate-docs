@@ -191,10 +191,10 @@ Organize structured data with tables.
 
 **Example:**  
 ```Markdown
-| Heading 1 | Heading 2 | Heading 3 |  
-|-----------|-----------|-----------|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3 |  
+| Heading 1 | Heading 2 | Heading 3 |
+|-----------|-----------|-----------|
+| Cell A1 | Cell A2 | Cell A3 |
+| Cell B1 | Cell B2 | Cell B3 |
 ```
 
 

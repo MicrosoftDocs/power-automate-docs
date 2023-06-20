@@ -658,7 +658,7 @@ SelectorName_Summary
 This can also be done in the selector with the WithDescription and WithSummary methods.
 
 > [!IMPORTANT]
-> .dll files describing the custom actions, their .dll dependencies and the .cab file containing everything should be properly signed with a digital certificate trusted by your organization. The certificate should also be installed on each machine on which a desktop flow with custom action dependencies is executed, present under the Trusted Root Certification Authorities.
+> .dll files describing the custom actions, their .dll dependencies and the .cab file containing everything should be properly signed with a digital certificate trusted by your organization. The certificate should also be installed on each machine on which a desktop flow with custom action dependencies is authored/ modified/ executed, present under the Trusted Root Certification Authorities.
 
 ## Creating and importing a self-signed certificate
 
@@ -676,7 +676,7 @@ To create a self-signed certificate with exportable private key and code sign ca
     ```
 1. After the certificate has been created and exported, import it to your trust root.
 1. Double-click on the exported certificate.
-1. Select Current user.
+1. Select Current User for a single user, or select Local Machine to include the certificate for all users on the respective machine.
 
     :::image type="content" source="media/custom-actions/create-custom-actions/wizard.png" alt-text="Screenshot of Certificate Import Wizard" border="true":::
 

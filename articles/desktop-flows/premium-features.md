@@ -1,12 +1,12 @@
 ---
 title: Premium RPA features
 description: Premium robotic process automation (RPA) features
-author: georgiostrantzas
+author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 12/02/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: dipapa
+ms.reviewer: tapanm
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -19,7 +19,7 @@ search.audienceType:
 
 # Premium RPA features
 
-This article lists the premium RPA features and benefits that are included in the Power Automate per user with attended RPA plan and are available to [organization premium accounts](getting-started-org.md).
+This article lists the premium robotic process automation (RPA) features and benefits that are included in the Power Automate per user with attended RPA plan and are available to [organization premium accounts](getting-started-org.md).
 
 ## Premium feature list
 
