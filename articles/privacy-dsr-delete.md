@@ -105,7 +105,7 @@ If a departing user, or a user who has requested the deletion of personal data h
 
 1. Sign in to [Power Automate](https://make.powerautomate.com) or [PowerApps](https://make.powerapps.com/).
 1. On the left navigation pane, select **Data**, and then select **Tables**.
-1. Selct the **All** tab.
+1. Select the **All** tab.
 1. Find the **Approvals** table and select the vertical ellipsis (&vellip;).
 1. Select **Edit** or **Edit in new tab**.
 
@@ -115,7 +115,14 @@ If a departing user, or a user who has requested the deletion of personal data h
 1. Select the **Owner** column heading, and then select **Filter by**.
 1. Enter the name of the user whose data you want to delete, and then select **Delete records**.
 1. Go back to main tables list mentioned in you found in step 3.
-1. Open the **Approval Requests** table and the **Approval Response** table, and repeat the steps 4 through 8 for those tables.
+1. Open the following tables and repeat steps 4 through 8 for these tables.
+    - **Approval Requests**
+    - **Approval Response**
+    - **Basic Approval Model Data**
+    - **Await All Approval Model**
+    - **Await All Action Approval model**
+    - **Approval step**
+    - **Action Approval Model**
 
 To learn more, go to [Responding to Data Subject Rights (DSR) requests for Microsoft Dataverse customer data](/power-platform/admin/common-data-service-gdpr-dsr-guide).
 
