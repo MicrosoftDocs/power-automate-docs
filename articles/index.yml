@@ -164,16 +164,16 @@ additionalContent:
         - title: Power Apps
           summary: Quickly build low-code apps that modernize processes and solve tough business challenges in your organization using Power Apps.
           url: /powerapps
-        # Card
-        - title: Power BI
-          summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
-          url: /power-bi
         - title: Power Pages
           summary: Design, host, and administer secure, modern, and low-code business websites.
           url: /power-pages
         - title: Power Virtual Agents
           summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
           url: /power-virtual-agents
+        # Card
+        - title: Power BI
+          summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
+          url: /power-bi
         # Card
         - title: Dynamics 365
           summary: "The next generation of CRM and ERP applications"
