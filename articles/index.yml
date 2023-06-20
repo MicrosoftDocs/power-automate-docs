@@ -63,7 +63,7 @@ additionalContent:
           url: ./get-started-logic-flow.md
         - text: Scheduled flows
           url: ./run-scheduled-tasks.md
-        - text: Create desktop flows
+        - text: Desktop flows
           url: ./desktop-flows/create-flow.md
     - title: AI Copilot capabilities
       links:
