@@ -104,18 +104,19 @@ To insert an expression into the **Inputs** field, select the bottom icon (***fx
 
 Alternatively, you can select the dynamic content/token and expression popups by entering a forward slash (**/**) in the **Inputs** field.
 
+To learn more about expressions, go to [Reference guide to workflow expression functions](/azure/logic-apps/workflow-definition-language-functions-reference).
+
 ### Settings
 
-You can select **Settings** > **Run after** to configure how an action should run after the execution of any of the preceding flow actions.
+The **Settings** tab allows you to set the action timeout, network retry policy, how an action should run, security input and output, and tracking properties. The following table provides a description of the settings.
 
-You can select more than one option:
-
-- is successful
-- has timed out
-- is skipped
-- has failed
-
-:::image type="content" source="media/flows-designer/run-after.png" alt-text="Screenshot of the Run After selections in the Settings tab in the Action configuration pane.":::
+|Setting  |Description  |
+|---------|---------|
+|General     | In the **Action Timeout** field, set the limit for the maximum duration between the retries and asynchronous responses for the selected action. This doesn't alter the request timeout of a single request.        |
+|Networking     | In the **Retry Policy** field, select a retry policy for intermittent failures. The default is an exponential interval policy set to retry four times. You can also set your own exponential or fixed interval settings, or choose none at all.   |
+|Run After     | In the **Run After** field, configure how an action should run after the execution of any of the preceding flow actions. For example, you can choose to run an action after the preceding action runs successfully, times out, skips, or fails.    |
+|Security  | Use the **Secure inputs** and **Secure outputs** toggles to turn on or off the operations, and references of output properties.    |
+|Tracking   | Set the key and valur of tracked properties.    |
 
 ### Code
 
