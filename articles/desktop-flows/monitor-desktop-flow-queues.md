@@ -7,14 +7,13 @@ documentationcenter: na
 author: georgiostrantzas
 editor: ''
 tags: ''
-
 ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2022
-ms.author: marleon
+ms.author: kenseongta
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
