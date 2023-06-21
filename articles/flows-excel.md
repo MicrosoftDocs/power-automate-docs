@@ -38,8 +38,6 @@ Get started using Power Automate in Excel for the web by following these steps.
     :::image type="content" source="media/flows-excel/templates-select.png" alt-text="Screnshot of popular prebuilt templates.":::
 
 1. Follow the prompts to connect to the app or service you want to integrate with Excel for the web, and then select **Create flow**.
-1. Customize the workflow to fit your needs and save your flow.
-1. View your flow associated with your workbook.
 
 ## Manage your flow
 
@@ -51,9 +49,6 @@ To manage your flow, select the ellipsis (**...**) and then select an option fro
 
 ## Limitations
 
-The Power Automate pane is currently available only on Excel for the web.
+- The Power Automate pane is currently available only on Excel for the web.
+- If your flow uses the Excel Online (Business) connector, you might experiences some differences. (Ravon to include in write-up). To learn about the issues and limitations, go to [Excel Online (Business)](/connectors/excelonlinebusiness#general-known-issues-and-limitations).
 
-### See also
-
-- [Excel Online (Business) connector](/connectors/excelonlinebusiness/)
-- [Excel Online (OneDrive) connector](/connectors/excelonline/)
