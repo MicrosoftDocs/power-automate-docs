@@ -1,5 +1,5 @@
 ---
-title: Use flows in Excel for the web
+title: Use flows with Excel for the web
 description: Learn how to use the flows feature in Excel for the web.
 ms.date: 06/30/2023
 author: sbasi19
@@ -12,7 +12,7 @@ ms.author: ralinga
 ms.reviewer: angieandrews
 ---
 
-# Use flows in Excel for the web
+# Use flows with Excel for the web
 
 Integrate Power Automate with Excel for the web to automate repetitive tasks, reduce errors, and improve productivity. For example, you can track customer feedback, manage projects, or analyze data. By connecting Excel to apps and services like Microsoft SharePoint, Teams, and Planner, Power Automate can make collaboration and data sharing across different platforms seem effortless.
 
