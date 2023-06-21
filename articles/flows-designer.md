@@ -102,9 +102,9 @@ To insert a dynamic token into the **Inputs** field, select the top icon (the li
 
 To insert an expression into the **Inputs** field, select the bottom icon (***fx***). A popup screen opens, where you can select a function to start your expression. To complete your expression, place your cursor in the function, and then select **Dynamic content**. Search for or select the content/tokens to add, and then select **Add**. Your completed expression appears in the **Inputs** field.
 
-Alternatively, you can select the dynamic content/token and expression popups by entering a forward slash (**/**) in the **Inputs** field.
-
 To learn more about expressions, go to [Reference guide to workflow expression functions](/azure/logic-apps/workflow-definition-language-functions-reference).
+
+Alternatively, you can select the dynamic content/token and expression popups by entering a forward slash (**/**) on the keyboard in the **Inputs** field.
 
 ### Settings
 
