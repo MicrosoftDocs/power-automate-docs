@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 03/21/2023
-ms.author: kenseongta
+ms.author: kenseongtan
 ms.reviewer: marleon
 contributors:
 - Yiannismavridis
