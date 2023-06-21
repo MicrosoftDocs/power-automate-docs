@@ -86,7 +86,7 @@ Lists the full names of the abbreviations in the **Variants overview** panel.
 
 ## Search for case specific data
 
-You can get specific data for an variant. When you select a variant in the left panel **Case Count** column, you'll see three tabs:
+You can get specific data for a variant. When you select a variant in the left panel **Case Count** column, you'll see three tabs:
 
 :::image type="content" alt-text="Screenshot of a list of cases." source="media/variant-overview-tab.png"::: 
 

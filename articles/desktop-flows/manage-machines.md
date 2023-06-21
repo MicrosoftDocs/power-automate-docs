@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 03/21/2023
-ms.author: gtrantzas
+ms.author: kenseongtan
 ms.reviewer: marleon
 contributors:
 - Yiannismavridis
@@ -192,7 +192,14 @@ Although you can't delete a machine from the Power Automate machine runtime, you
 ## Switch from gateways to direct connectivity
 
 > [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for China regions. Switch to our machine-management capabilities.
+> Gateways for desktop flows are now deprecated. This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities.
+
+> [!NOTE]
+> To determine which desktop flow connections that are still using a gateway:
+> 1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
+> 1. Go to **Data** > **Gateways**.
+> 1. Select a gateway, go to its details page, and then select the **Connections** tab. Any desktop flow connections listed should be switched to direct connectivity.
+> 1. Repeat step 3 for each gateway in the list.
 
 You can easily switch to direct connectivity by changing the desktop flow connection and using one with the **directly to machine** option.
 
@@ -239,7 +246,3 @@ Environment admins can also restrict machine registration to a specific set of u
 |Maximum number of machines in a group |50|
 |Maximum amount of time a desktop flow can run |24 hours|
 |Maximum amount of time a desktop flow can be queued |Three hours|
-
-## Other known limitations
-
-- Machines and machine groups aren't available in China regions. You can still run desktop flows from the cloud [using an on-premises data gateway](install.md#install-an-on-premises-data-gateway).
