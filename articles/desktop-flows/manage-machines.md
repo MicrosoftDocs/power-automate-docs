@@ -195,11 +195,11 @@ Although you can't delete a machine from the Power Automate machine runtime, you
 > Gateways for desktop flows are now deprecated. This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities.
 
 > [!NOTE]
-> To determine which Dektops flow connections that are still using gateway:
-> 1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com/).
+> To determine which desktop flow connections that are still using a gateway:
+> 1. Sign in to [Power Automate](https://powerautomate.microsoft.com/).
 > 1. Go to **Data** > **Gateways**.
-> 1. Select a Gateway, go to its details page, refer to the **Connections** tab. Any Desktop flow connection listed should be switched to direct connectivity
-> 1. Repeat step 3 for each Gateway in the list
+> 1. Select a gateway, go to its details page, and then select the **Connections** tab. Any desktop flow connections listed should be switched to direct connectivity.
+> 1. Repeat step 3 for each gateway in the list.
 
 You can easily switch to direct connectivity by changing the desktop flow connection and using one with the **directly to machine** option.
 
