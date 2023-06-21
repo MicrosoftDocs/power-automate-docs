@@ -26,7 +26,7 @@ Custom actions (preview) developed by your organization and uploaded to the resp
 > - [!INCLUDE[cc-preview-features-note](../includes/cc-preview-features-note.md)]
 > - [!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature requires Power Automate for desktop v2.32 or later.
-> - Ensure the .dll files describing Custom actions (preview), their dependency .dll files, and the .cab files are properly signed with a digital certificate trusted by your organization. The certificate should also be installed on the device under the trusted root certificate authority where the desktop flow with custom action dependencies is executing.
+> - Ensure the .dll files describing Custom actions (preview), their dependency .dll files, and the .cab files are properly signed with a digital certificate trusted by your organization. The certificate should also be installed on the device under the trusted root certificate authority where the desktop flow with custom action dependencies is modified and/or executed.
 
 Custom actions (preview) exist at the environment level. As a best practice, use a "dev&mdash;test&mdash;prod" model when developing custom actions.
 
@@ -38,6 +38,7 @@ Custom actions (preview) exist at the environment level. As a best practice, use
 - Upload date might differ in the portal than what is shown in the Assets library (preview) inside Power Automate for desktop.
 - The Assets library (preview) can't display more than 5000 custom actions groups.
 - Custom actions are not available for organizations that have enabled [Bring your own key (BYOK)](/azure/information-protection/byok-price-restrictions) from the protection service.
+- Machines belonging in a [hosted machine group](hosted-machine-groups.md) should have the appropriate certificates required for custom actions, as set by your organization, installed on them. You can create a [golden image](/azure/virtual-desktop/set-up-golden-image), containing the respective certificate(s) and provide it during the creation process of the respective hosted machine group.
 
 ## Next steps
 

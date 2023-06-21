@@ -1,6 +1,11 @@
 {
   "redirections": [
-    {
+   {
+      "source_path": "articles/web-api.md",
+      "redirect_url": "manage-flows-with-code",
+      "redirect_document_id": "false"
+    }, 
+   {
       "source_path": "articles/gdpr-dsr-accountclose-msa.md",
       "redirect_url": "privacy-dsr-accountclose-msa",
       "redirect_document_id": "false"
@@ -652,6 +657,61 @@
     },
     {
       "source_path": "articles/mobile-manage-flows.md",
+      "redirect_url": "/power-automate/mobile/manage-cloud-flows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/introduction-to-button-flows.md",
+      "redirect_url": "/power-automate/mobile/overview-mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/introduction-to-button-trigger-tokens.md",
+      "redirect_url": "/power-automate/mobile/overview-mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/button-flow-with-user-input-tokens.md",
+      "redirect_url": "/power-automate/mobile/overview-mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/share-buttons.md",
+      "redirect_url": "/power-automate/mobile/overview-mobile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/mobile-create-flow.md",
+      "redirect_url": "/power-automate/mobile/mobile-create-flow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/sap-integration/overview.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/sap-integration/set-up-prepare.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/administer/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/sap-integration/env-variables-connection-refs.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/administer/configure-environment-variables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/sap-integration/solutions.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/administer/customize-solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/sap-integration/faqs.md",
+      "redirect_url": "/power-platform/solution-templates/finance/sap-procurement/faqs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/mobile-monitor-activity.md",
       "redirect_url": "/power-automate/mobile/manage-cloud-flows",
       "redirect_document_id": false
     }
