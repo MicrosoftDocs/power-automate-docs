@@ -116,7 +116,7 @@ The **Settings** tab allows you to set the action timeout, network retry policy,
 |Networking     | In the **Retry Policy** field, select a retry policy for intermittent failures. The default is an exponential interval policy set to retry four times. You can also set your own exponential or fixed interval settings, or choose none at all.   |
 |Run After     | In the **Run After** field, configure how an action should run after the execution of any of the preceding flow actions. For example, you can choose to run an action after the preceding action runs successfully, times out, skips, or fails.    |
 |Security  | Use the **Secure inputs** and **Secure outputs** toggles to turn on or off the operations, and references of output properties.    |
-|Tracking   | Set the key and valur of tracked properties.    |
+|Tracking   | Set the key and value of tracked properties.    |
 
 ### Code
 
