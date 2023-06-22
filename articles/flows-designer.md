@@ -56,15 +56,15 @@ We want to hear from you to help us measure and improve our impact. To provide y
 
 ## More commands
 
-Select **More commands** (**...**) to either add a note to or delete the selected card in your flow. Select **Add a note** to describe the purpose of the card in your flow. When you add a note, you'll see a note icon on the bottom right of the card. Hover over the icon to see the note.
+Select **More commands** (**...**) to either add a note to or delete the selected card in your flow. Select **Add a note** to describe the purpose of the card in your flow. When you add a note, you see a note icon on the bottom right of the card. Hover over the icon to see the note.
 
 :::image type="content" source="media/flows-designer/designer-note.png" alt-text="Screenshot of adding a note.":::
 
 ## Save button
 
-Select **Save** to save your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in in the upper left with a green check.
+Select **Save** to save your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in the upper left with a green check.
 
-:::image type="content" source="media/flows-designer/designer-save.png" alt-text="Screenshot of a sucessful save.":::
+:::image type="content" source="media/flows-designer/designer-save.png" alt-text="Screenshot of a successful save.":::
 
 If an error is found, a description of the error appears in the upper left with a red **X**. The following screenshot is an example of an error.
 
@@ -78,13 +78,13 @@ After your flow is saved successfully, **Test** becomes active. To test your flo
 
 :::image type="content" source="media/flows-designer/test-manually.png" alt-text="Screenshot of manually testing your flow.":::
 
-You'll see instructions on what you need to do to test your flow, as in the following example.
+You see instructions on what you need to do to test your flow, as in the following example.
 
 :::image type="content" source="media/flows-designer/test-prompt.png" alt-text="Screenshot of the prompt telling you what to do to test your flow.":::
 
-Test you flow by following the instructions. In this example, you need to send an email and then the the flow test will run. When the test has completed, a green check appears in each card and the number of seconds it took to process appear in your flow.
+Test you flow by following the instructions. In this example, you need to send an email and then the flow test will run. When the test has completed, a green check appears in each card and the number of seconds it took to process appear in your flow.
 
-:::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of thw test results.":::
+:::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of the test results.":::
 
 Testing is part of planning a Power Automate project. To learn more, go to [Introduction: Planning a Power Automate project](guidance/planning/introduction.md).
 
@@ -122,7 +122,7 @@ The **Settings** tab allows you to set the action timeout, network retry policy,
 
 See the code behind any card in your flow by selecting it in the canvas, and then selecting **Code View** in the action configuration pane. As you customize the code in the [Parameters](#parameters) tab, you can see the new code in the  **Code View** tab.
 
-The following screenshot is an exmple of the code for the **Compose** action card.
+The following screenshot is an example of the code for the **Compose** action card.
 
 :::image type="content" source="media/flows-designer/compose.png" alt-text="Screenshot of the code view of the Compose action card.":::
 
