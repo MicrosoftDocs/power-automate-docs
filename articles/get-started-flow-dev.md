@@ -39,7 +39,7 @@ Here are some of the ways you can extend your application with Power Automate:
 
 If you have a web service to which you want to connect from Power Automate, you'll first need to create a custom connector. When you register a custom connector, you teach Power Automate about the characteristics of your web service, including the authentication it requires, the triggers and actions that it supports, and the parameters and outputs for each of those actions.
 
-To learn about how to create custom connectors, go to [Custom connectors in Power Automate](developer/register-custom-api.md). After you register your custom connector, you can share it within your organization for testing.
+To learn about how to create custom connectors, go to [Build and certify custom connectors](developer/register-custom-api.md). After you register your custom connector, you can share it within your organization for testing.
 
 ## Share a custom connector with all Power Automate users
 
