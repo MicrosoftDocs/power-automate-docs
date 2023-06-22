@@ -931,6 +931,8 @@
     href: ./developer/dev-enterprise-intro.md
   - name: Extend apps with Power Automate
     href: get-started-flow-dev.md
+  - name: Work with cloud flows using code
+    href: manage-flows-with-code.md
   - name: Work with desktop flows using code
     href: ./developer/desktop-flow-public-apis.md
   - name: Build and certify custom connectors
@@ -1009,8 +1011,6 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
-  - name: Manage flows with code
-    href: manage-flows-with-code.md
   - name: Power Automate embed pay-as-you-go
     href: isv-pay-as-you-go.md
   - name: Frequently asked questions
