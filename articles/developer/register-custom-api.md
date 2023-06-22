@@ -1,6 +1,6 @@
 ---
-title: Custom connector content links | Microsoft Docs
-description: Links to content for creating, using, sharing, and certifying custom connectors.
+title: Build and certify custom connectors | Microsoft Docs
+description: Learn about creating custom connectors using different options, get them certified, and publish.
 author: msftman
 ms.topic: article
 ms.subservice: developer
@@ -10,7 +10,7 @@ ms.reviewer: gtrantzas
 search.audienceType: 
   - developer
 ---
-# Custom connectors in Power Automate
+# Build and certify custom connectors
 
 Without writing any code, you can build workflows and apps with [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Power Automate](https://make.powerautomate.com), and [Power Apps](https://powerapps.microsoft.com). To help you integrate your data and business processes, these services offer [180+ connectors](/connectors/) - for Microsoft services and products, as well as other services, like GitHub, Salesforce, Twitter, and more. 
 
