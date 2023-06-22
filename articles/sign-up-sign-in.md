@@ -37,7 +37,7 @@ If you've used other Microsoft online products, either for work or yourself, all
 1. In [Power Automate](https://make.powerautomate.com), select **Sign in** in the upper-right corner.
 
 1. On the sign-in page, enter your email address and password.
-1. After you've signed in, you'll see a product consent dialog that asks you to consent to the [Microsoft Online Subscription Agreement](https://azure.microsoft.com/en-us/support/legal/subscription-agreement/), and asks you to sign up for marketing and promotional emails from Power Automate. If you agree to the terms and conditions, you'll be able to start using Power Automate. 
+1. After you've signed in, you'll see a product consent dialog that asks you to consent to the [Microsoft Online Subscription Agreement](https://azure.microsoft.com/support/legal/subscription-agreement/), and asks you to sign up for marketing and promotional emails from Power Automate. If you agree to the terms and conditions, you'll be able to start using Power Automate. 
 
 ## Use paid features
 
