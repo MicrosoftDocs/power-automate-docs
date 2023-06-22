@@ -931,7 +931,7 @@
   items:
   - name: Enterprise developers, partners, and ISVs
     href: ./developer/dev-enterprise-intro.md
-  - name: Start to build with Power Automate
+  - name: Extend apps with Power Automate
     href: get-started-flow-dev.md
   - name: Work with desktop flows using APIs
     href: ./developer/desktop-flow-public-apis.md
