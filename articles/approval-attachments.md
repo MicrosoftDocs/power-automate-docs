@@ -66,7 +66,9 @@ In this article, you’ll learn how to create an approval flow that sends an att
 
 1. Provide the contents for the file that will be sent to the approver in the **Attachments Content - 1** box. 
 
-   An easy way to do this is to use the **File Content** item from the list of dynamic content that's displayed when you select the **Attachments Content - 1** box.
+   An easy way to do this is to use the **File Content** item from the list of dynamic content that's displayed when you select the **Attachments Content - 1** box. 
+    >[!TIP]
+   > Note: The file content needs be binary encoded. In most cases this is handled correctly within the flow but if the attachement appears to be corrupted in the email, please check to make sure the file content is binary encoded. 
 
      ![Advanced options on approval request card.](./media/approval-attachments/approval-request-card-advanced-options.png)
 
