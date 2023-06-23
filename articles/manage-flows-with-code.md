@@ -1,6 +1,6 @@
 ---
-title: Manage flows with code
-description: Learn how to manage flows with code using the Dataverse SDK for .NET and Web API.
+title: Work with cloud flows using code
+description: Learn how to work with cloud flows using code using the Dataverse SDK for .NET and Web API.
 author: ChrisGarty
 contributors:
   - ChrisGarty
@@ -16,7 +16,7 @@ ms.technology:
 audience: Power user
 ---
 
-# Manage flows with code
+# Work with cloud flows using code
 
 All flows are stored in Dataverse and you can use either the Dataverse SDK for .NET or Web API to manage them.
 
