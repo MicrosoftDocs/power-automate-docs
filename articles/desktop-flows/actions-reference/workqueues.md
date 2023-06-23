@@ -46,7 +46,7 @@ The **processworkqueueitemaction** action requires the following arguments.
 
   | Argument       | Type | Description     |
   |----------      |------|-----------------|
-  | **Work queue** |No   |Information stored in the work queue item being processed |
+  | **WorkQueueItem** |No   |Information stored in the work queue item being processed |
 
 #### Exceptions
 
