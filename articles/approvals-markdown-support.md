@@ -40,7 +40,7 @@ Markdown support among clients is inconsistent. The Power Automate team works to
 |---------|--------|---------------|-----------------|-------------|-------|--------------|--------------|
 | **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
 | **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
-| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
+| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | Yes |
 | **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
 | **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
 | **Forced Line Breaks** | Yes* | Yes* | **_No_** (use a blank line instead) | Yes* | Yes* | Yes* | **_No_** |
@@ -107,9 +107,9 @@ Ordered lists start with a number followed by a period for each list item. Unord
 **Example:**
 
 ```Markdown
-0. First item.
-0. Second item.
-0. Third item.
+1. First item.
+1. Second item.
+1. Third item.
 ```
 
 **Result:**  
@@ -162,7 +162,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ## Links
 
-HTTP and HTTPS URLs are automatically formatted as links. 
+Ideally use HTTPS links which will be redered as links in all clients. Non-HTTPS links (ex: FTP, HTTP, mail etc) can be rendered as regular text. 
 
 You can set text hyperlinks for your URL using the standard markdown link syntax:
 
