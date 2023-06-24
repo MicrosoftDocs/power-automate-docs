@@ -13,7 +13,7 @@ metadata:
   ms.topic: hub-page # Required
   author: v-aangie #Required; your GitHub user alias, with correct capitalization.
   ms.author: angieandrews #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/22/2023 #Required; mm/dd/yyyy format.
+  ms.date: 06/30/2023 #Required; mm/dd/yyyy format.
   ms.reviewer: angieandrews
   hide_bc: false
 
@@ -67,9 +67,9 @@ additionalContent:
           url: ./desktop-flows/create-flow.md
     - title: AI Copilot capabilities
       links:
-        - text: Get started with AI Copilot
+        - text: Get started with AI Copilot (preview)
           url: ./get-started-with-copilot.md
-        - text: Edit a flow using Copilot
+        - text: Edit a flow using Copilot (preview)
           url: ./get-started-with-copilot.md#edit-a-flow-using-copilot
     - title: Plan with process advisor
       links:
@@ -109,7 +109,7 @@ additionalContent:
       links:
         - text: Use Power Platform admin center
           url: admin-center-introduction.md
-        - text: Administer environments
+        - text: Administer environments and resources
           url: environments-overview-admin.md
         - text: Set data loss prevention policy
           url: prevent-data-loss.md
