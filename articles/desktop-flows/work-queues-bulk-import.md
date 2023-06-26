@@ -2,7 +2,7 @@
 title: Bulk-import work queue data
 description: Create work queue data in bulk with Power Platform tools.
 ms.topic: conceptual
-ms.date: 04/28/2023
+ms.date: 06/23/2023
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -52,7 +52,7 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
 > While the easiest and most straight forward way to create work queues is through the [Power Automate portal](https://make.powerautomate.com) as described in [Create a work queue](work-queues-manage.md#create-a-work-queue), we've included work queue import steps as well to demonstrate the [import from Excel or CSV](/power-apps/maker/data-platform/data-platform-import-export#import-from-an-excel-or-csv-file) approach.
 
 > [!IMPORTANT]
-> The CSV sample data for this tutorial contains internal platform columns and values for **componentstate** and **overwritetime**. These fields are mandatory platform fields and must be included in import mapping. Typically, these fields have default values, with the `componentstate` being **0** (zero) and the `overwritetime` having a minimum date of **01/01/1900 00:00**. These fields are part of the work queue record, which you can review in [Power Apps](https://make.powerapps.com) under **Tables** and then search for **Work Queue**.
+> The CSV sample data for this tutorial includes three special columns: **workqueuekey**, **componentstate**, and **overwritetime**, along with their values. The `componentstate` and `overwritetime` fields typically have default values of `0` and `01/01/1900 00:00`, respectively. The default value of the `workqueuekey` field is a Guid and is auto-generated when you create a work queue through the Power Automate portal. However, if you create a work queue through an import file (like in this example) or through the Dataverse connector in cloud flows, you can supply a more descriptive work queue key, such as `Vendor Invoices`. These fields are part of the work queue record and must be included in any import. To view their values, go to [Power Apps](https://make.powerapps.com) and under **Tables**, search for *Work Queue*.
 
 ### Prerequisites
 
@@ -157,11 +157,24 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
 
 13. Select **Ok**.
 14. Select **Next**.
-15. Select **Next** and then **Publish**.
-16. Navigate to the [Power Apps maker portal](https://make.powerapps.com) and select Dataflows from the left-menu (you might have to select **More** first to get to the Dataflows menu).
-17. Confirm that you see a new dataflow entry and that both icons show success once the import is complete.
+15. On the mapping under the **Load settings** section, select **Load to existing table**.
+16. Under **Destination table**, select **workqueueitem**.
+17. In the **Column mapping** section set the following mapping:
+  
+    | Source column | Destination column |
+    | --------- | ------------------------------ |
+    | Input | input |
+    | InvoiceId | name |
+    | ComponentState | workqueueid.ComponentState |
+    | OverwriteTime | workqueueid.OverwriteTime |
+    | WorkQueueKey | workqueueid.workqueuekey |
+
+    :::image type="content" source="media/work-queues/work-queue-import-item-col-mapping.png" alt-text="Screenshot of the work queue item column mapping to load data into the exiting workqueueitem table." lightbox="media/work-queues/work-queue-import-item-col-mapping.png":::
+18. Select **Next** and then select **Publish**.
+19. Go to the [Power Apps maker portal](https://make.powerapps.com) and select **Dataflows** from the left-menu (you might have to select **More** first to get to the Dataflows menu).
+20. Confirm that you see a new dataflow entry and that both icons show success once the import is complete.
     :::image type="content" source="media/work-queues/work-queue-import-inprogress.png" alt-text="Screenshot of the Dataflows list showing dataflows that are complete and still refreshing." lightbox="media/work-queues/work-queue-import-inprogress.png":::
-18. Once complete, navigate to the work queue details page of the vendor invoice queue and confirm that the work queue items have been added.
+21. Once complete, navigate to the work queue details page of the vendor invoice queue and confirm that the work queue items have been added.
     :::image type="content" source="media/work-queues/work-queue-details-after-import.png" alt-text="Screenshot of the work queue list page showing the newly created work queue record." lightbox="media/work-queues/work-queue-details-after-import.png":::
 
 ## Next steps
