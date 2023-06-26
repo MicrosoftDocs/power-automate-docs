@@ -23,11 +23,11 @@ ms.reviewer: angieandrews
 
 [This article is prerelease documentation and is subject to change.]
 
-You can create, configure, and customize your cloud flows with the current designer or the AI-powered cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md)
+You can create, configure, and customize your cloud flows with the current designer or the AI-powered cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
 ## Overview of the AI-powered cloud flows designer
 
-Use the AI-powered cloud flows designer to create, configure, and customize your cloud flows. The legend below the following screenshot describes the features.
+The legend below the following screenshot describes the features of the AI-powered cloud flows designer (preview).
 
 :::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the AI-powered cloud flows designer.":::
 
@@ -48,7 +48,7 @@ Legend:
 > [!IMPORTANT]
 > - This is a preview feature in the United States.
 > - This feature might not be available in your region or environment yet.
-> - You can use this feature if it's not available in your region by creating a US environment. To learn how to do this, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
+> - You can use this feature if it's not available in your region by creating a US environment or a **Preview (United States)** environment. To learn how to do this, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
@@ -94,7 +94,7 @@ Testing is part of planning a Power Automate project. To learn more, go to [Intr
 
 ## Action configuration pane
 
-The action configuration pane allows you to customize parameters, settings, and code for the selected card on your flow.
+The Action configuration pane allows you to customize parameters, settings, and code for the selected card on your flow.
 
 ### Parameters
 
