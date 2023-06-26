@@ -1,5 +1,5 @@
 ---
-title: Understand the cloud flows designer (preview)
+title: Understand AI-powered cloud flows designer (preview)
 description: Learn about the components in the cloud flows designer.
 services: ''
 suite: flow
@@ -19,32 +19,36 @@ search.audienceType:
 ms.reviewer: angieandrews
 ---
 
-# Understand the cloud flows designer (preview)
+# Understand AI-powered cloud flows designer (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-## Overview of the cloud flows designer
+You can create, configure, and customize your cloud flows with the current designer or the AI-powered cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md)
 
-Use the designer to create, configure, and customize your cloud flows. The legend below the following screenshot describes the features of the designer.
+## Overview of the AI-powered cloud flows designer
 
-:::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer.":::
+Use the AI-powered cloud flows designer to create, configure, and customize your cloud flows. The legend below the following screenshot describes the features.
+
+:::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the AI-powered cloud flows designer.":::
 
 Legend:
 
 1. **Left arrow:** Return to the previous screen.
-1. [**Send Feedback button:**](#send-feedback) Send us feedback on your flow creation experience, or general comments on the designer.
+1. [**Send Feedback button:**](#send-feedback) Send us feedback on your flow creation experience, or general comments on the AI-powered designer.
 1. **Action/trigger name:** The action or trigger card that's selected in your flow on the center of the screen.
 1. [**More commands:**](#more-commands) Add a note to the selected card or delete it.
 1. **Collapse:** Hide this pane. When it's collapsed, the **Expand** icon (**>>**) appears in the upper-left corner. To show the panel again, select **>>**.
-1. [**Copilot button:**](get-started-with-copilot.md) Show or hide the Copilot pane. The Copilot pane appears by default when the designer opens.
+1. [**Copilot button:**](get-started-with-copilot.md) Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
 1. [**Save button:**](#save-button) Save your flow.
 1. [**Test button:**](#test-button) Test your flow to make sure it works as you intended.
-1. [**Action configuration pane:**](#action-configuration-pane) Once you select an action card to configure in the canvas, the action configuration pane opens to the left of the designer.
+1. [**Action configuration pane:**](#action-configuration-pane) Once you select an action card to configure in the canvas, the Action configuration pane opens to the left of the AI-powered designer.
 1. [**Canvas**](#canvas): The canvas is where you build your flow. It's free-flowing, which allows for easier navigation.
 1. [**Copilot pane:**](get-started-with-copilot.md) Copilot stays by you in your flow editing and fit-and-finish journey. It can help you update and make changes to your flow based on your conversational style prompt. It can also help answer flow and product related  questions.
 
 > [!IMPORTANT]
-> - This is a preview feature.
+> - This is a preview feature in the United States.
+> - This feature might not be available in your region or environment yet.
+> - You can use this feature if it's not available in your region by creating a US environment. To learn how to do this, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
@@ -132,13 +136,13 @@ For easy navigation, you can drag your flow on the canvas. You configure the act
 
 ### Drop zones
 
-The canvas contains designer drop zones indicated by a blue dashed line. The drop zones help you to easily drag and drop cloud flow actions.
+The canvas contains AI-powered designer drop zones indicated by a blue dashed line. The drop zones help you to easily drag and drop cloud flow actions.
 
 :::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
 ### Zooming icons
 
-Adjust the size of your flow on the canvas. Depending on the size and complexity of your flow, you might want to adjust its size as you're building it. The zooming icons allow you to zoom in, zoom out, fit to screen, and toggle a *minimap*.
+Adjust the size of your flow on the canvas. Depending on the size and complexity of your flow, you might want to adjust its size as you're building it. The zooming icons allow you to zoom in, zoom out, fit to screen, and toggle a *minimap*. These icons appear when the Action configuration pane is closed.
 
 The last option in the zooming icons is the minimap. Select this icon to focus on a particular section of a large flow.
 
