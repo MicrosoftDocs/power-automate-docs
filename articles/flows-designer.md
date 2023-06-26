@@ -48,7 +48,7 @@ Legend:
 > [!IMPORTANT]
 > - This is a preview feature in the United States.
 > - This feature might not be available in your region or environment yet.
-> - You can use this feature if it's not available in your region by creating a US environment or a **Preview (United States)** environment. To learn how to do this, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
+> - You can use this feature if it's not available in your region by creating an environment in the United States region, or a **Preview (United States)** environment. To learn how to do this, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
