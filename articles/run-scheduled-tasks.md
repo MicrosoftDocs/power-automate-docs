@@ -47,7 +47,11 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
     :::image type="content" source="media/run-scheduled-tasks/select-recurrence-aa.png" alt-text="Screenshot of the options to set up a scheduled flow.":::
 
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to run flows on a schedule are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
 ## Configure advanced options
+
+# [Current designer](#tab/current-designer)
 
 1. Follow the steps in the previous section.
 
@@ -74,10 +78,17 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
     >[!div class="mx-imgBorder"]
     >![Screenshot of specified advanced options.](./media/run-scheduled-tasks/advanced-options.png "Specify advanced options")
 
-   >[!NOTE]
-   >If you run a flow on the month frequency, the flow runs on the same date each month.
+   > [!NOTE]
+   > If you run a flow on the month frequency, the flow runs on the same date each month.
 
 1. Add the action or actions that you want the flow to take, as described in [Create a cloud flow from scratch](get-started-logic-flow.md).
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+
+
+
+---
 
 ### See also
 

@@ -14,9 +14,13 @@ search.audienceType:
 
 Use the **List rows** action to retrieve multiple rows at once from Microsoft Dataverse with a structured query.
 
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to use lists of rows in flows are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
 ## Get a list of rows
 
 Follow these steps to add the **List rows** action to your flow to return [up to 5000 accounts](/powerapps/developer/common-data-service/webapi/query-data-web-api) from the **Accounts** table in Dataverse.
+
+# [Current designer](#tab/current-designer)
 
 1. Select **New step** to add an action to your flow.
 
@@ -34,9 +38,15 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 
 1. Save and run your flow to confirm that no more than 5,000 rows are returned.
 
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
 ## Turn on pagination to request more than 5,000 rows
 
 To get more than 5,000 rows from a query automatically, turn on the **Pagination** feature from **Settings** as the following steps indicate:
+
+# [Current designer](#tab/current-designer)
 
 1. In the upper-right corner of the **List rows** card, select the menu (...).
 
@@ -47,25 +57,23 @@ To get more than 5,000 rows from a query automatically, turn on the **Pagination
 1. Move the **Pagination** slider to the **On** position if it's not already turned on.
 
 1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000. Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
-	
-	> [!IMPORTANT]
-	> When pagination is set and the amount of rows exceeds that number of the threshold configured, the response won't include the **_@odata.nextLink_** parameter to request the next set of rows. Turn pagination off so that the response includes the **_@odata.nextLink_** parameter that can be used to request the next set of rows. Go to [Skip token](#skip-token) to learn how to use it.
+
+    When pagination is set and the amount of rows exceeds that number of the threshold configured, the response won't include the **_@odata.nextLink_** parameter to request the next set of rows. Turn pagination off so that the response includes the **_@odata.nextLink_** parameter that can be used to request the next set of rows. Go to [Skip token](#skip-token) to learn how to use it.
 
    ![Pagination settings for the List rows card.](../media/list-rows/pagination-settings.png "Pagination settings for the List rows card")
 
+> [!NOTE]
+> [Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
 
->[!NOTE]
->[Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ## Advanced options
 
-<!-- 1. Follow the steps in the [Get a list of rows](#get-a-list-of-rows) and the [Turn on pagination](#turn-on-pagination) sections earlier in this article.
-
-1. Expand **Show advanced options**.
-   
-   ![Advanced options.](../media/list-rows/show-advanced-options.png) -->
-
 The advanced options for the **List Rows** action allow you to sort, filter, arrange, and extend the results of a query. Here's an example of how they can be put together:
+
+# [Current designer](#tab/current-designer)
 
 ![Advanced options example for List Rows action.](../media/list-rows/advanced-list-rows.png)
 
@@ -77,12 +85,11 @@ Enter a comma-separated list of columns to return, such as "name,createdon,prefe
 
 Use to define an OData-style filter expression to narrow down the set of rows that Dataverse returns, such as "createdon ge 2021-01-01T00:00:00-00:00" for rows with **createdon** greater than or equal to the year 2021.
 
->[!TIP]
->Learn how to use [standard filter operators](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-filter-operators) and [query functions](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-query-functions)
+Learn how to use [standard filter operators](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-filter-operators) and [query functions](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-query-functions)
 to construct **Filter Query** expressions.
 
->[!IMPORTANT]
->Filter expressions cannot contain this string, **\$filter=**, because it only applies when you use the APIs directly.
+> [!IMPORTANT]
+> Filter expressions can't contain this string, **\$filter=**, because it only applies when you use the APIs directly.
 
 ### Sort by
 
@@ -139,13 +146,16 @@ Example FetchXML query for the Account table:
 
 As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
 
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
 ### Skip token
 
 Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it's often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of table rows returned](/power-apps/developer/data-platform/webapi/query-data-web-api#limits-on-number-of-table-rows-entities-returned).
 
 The default page limit of 5,000 rows applies if you don't use pagination.
 
-<!--todo: what is "it"?-->
 To use it, implement a loop to parse the *\@odata.nextLink* value in the JSON response, extract the **skip token**, and then send another request until you've listed the number of rows that you need.
 
 ```json

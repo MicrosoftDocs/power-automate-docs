@@ -35,19 +35,23 @@ Here's a quick video about data operations.
 * Access to Power Automate.
 * A tool such as [PostMan](https://www.getpostman.com/postman) to send HTTP POST requests with a JSON array to your flow.
 
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to use data operations are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
 ## Use the compose action
 
 Use the **Data Operation - Compose** action to save yourself from having to enter the same data multiple times as you're designing a cloud flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
 
+# [Current designer](#tab/current-designer)
+
 1. Search for **compose**, and then select the **Compose - Data Operation** action.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of searching for and selecting the Compose action.](./media/data-operations/search-select-compose-2.png "Compose - Data Operation action")
+> [!div class="mx-imgBorder"]
+> ![Screenshot of searching for and selecting the Compose action.](./media/data-operations/search-select-compose-2.png "Compose - Data Operation action")
 
-2. In the **Inputs** box, enter the array that you want to reference later.
+1. In the **Inputs** box, enter the array that you want to reference later.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of configuring the compose action.](./media/data-operations/add-array-compose-2.png "Configure the Compose action")
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of configuring the compose action.](./media/data-operations/add-array-compose-2.png "Configure the Compose action")
 
 > [!TIP]
 > To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
@@ -65,9 +69,15 @@ When you need to access the contents of the compose action, do so by following t
     >[!div class="mx-imgBorder"]
     >![Screenshot of using Outputs from the Compose action.](./media/data-operations/use-compose-output-2.png "Use Outputs from the Compose action")
 
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
 ## Use the join action
 
 Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You'll use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
+
+# [Current designer](#tab/current-designer)
 
 1. Add a new action, search for **Join**, and then select **Data Operation - Join**.
 
@@ -85,6 +95,10 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.](./media/data-operations/join-output-2.png "Output of the Data Operation – Join action")
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ## Use the select action
 
@@ -107,6 +121,8 @@ You want to reshape the incoming data by renaming `first` to `FirstName` and `la
 
 To do this:
 
+# [Current designer](#tab/current-designer)
+
 1. Add the **When an HTTP request is received** trigger to your flow.
 
 2. Select **Use sample payload to generate schema**.
@@ -123,6 +139,10 @@ To do this:
 
    > [!TIP]
    > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ## Use the filter array action
 
@@ -169,7 +189,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of Configuring the Create CSV table action. From is set to Body, and Columns is set to Automatic.](./media/data-operations/create-csv-table-2.png "Configure the CSV table action")
-   
+
     The **Body** token in this image comes from a **When a HTTP request is received** action; however, you can get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly in the **From** box.
 2. Save, and then run, your flow.
 
@@ -182,7 +202,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 
 Use the **Create HTML table - Data Operation** action to change a JSON array input into an HTML table. You can keep the headers visible in the HTML output.
 
-To do this, follow the steps in previous section for creating a CSV table, but use the **Create HTML table - Data Operation** action instead of **Create CSV table**.
+To do this, follow the steps in the previous **Use the create CSV table action** section for creating a CSV table. Use the **Create HTML table - Data Operation** action instead of **Create CSV table**.
 
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.

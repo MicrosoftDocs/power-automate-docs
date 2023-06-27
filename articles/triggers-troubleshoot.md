@@ -101,6 +101,10 @@ If you expect the flow to run but it didn’t run, see if it shows the trigger c
 
 Sometimes, the inputs and trigger conditions may cause failures. Follow these steps to verify your inputs and conditions.
 
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to verify inputs and trigger conditions are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
+# [Current designer](#tab/current-designer)
+
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Edit the flow.
 1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
@@ -119,6 +123,10 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
    If there are additional customizations in **Trigger Conditions**, confirm that you are using the expected or correct inputs to trigger the flow.
 
    ![A screenshot that shows trigger conditions.](./media/triggers-introduction/trigger-conditions.png)
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ### Check permissions
 
@@ -164,7 +172,9 @@ See the following table to understand how your flow responds when it's turned ba
 
 Follow these steps to determine the type of trigger that your flow uses.
 
-1. Select the … (ellipsis) for your flow, and then select **Peek code**.
+# [Current designer](#tab/current-designer)
+
+1. Select the ellipsis (...) for your flow, and then select **Peek code**.
 
    ![A screenshot of peekcode.](./media/triggers-introduction/peek-code.png)
 
@@ -172,7 +182,11 @@ Follow these steps to determine the type of trigger that your flow uses.
 
    ![A screenshot of the recurrence section.](./media/triggers-introduction/frequency.png)
 
-## My flow is triggered multiple times or some of my actions run multiple times 
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
+## My flow is triggered multiple times or some of my actions run multiple times
 
 You may encounter a scenario where a single flow run has some (or all) of its actions duplicated. While the UI doesn't show this problem, you might see the results of the flow being duplicated. For example, duplicate emails sent, or duplicate list items created.
 
@@ -196,9 +210,11 @@ For example, your flows may run every 15 minutes if you’re on the **Free** lic
 
 And, if your license is the **Flow for Office 365** plan (from your Enterprise license E3, E5, etc.) or the **Flow for Dynamics 365** plan, your flow won't run again until five minutes have elapsed. So, it may be a few minutes between the time the triggering event occurs and the time the flow begins.
 
-Follow these steps to check the trigger wake up frequency:
+Follow these steps to check the trigger wake up frequency.
 
-1. Go to your flow trigger, and then select the … (ellipsis).
+# [Current designer](#tab/current-designer)
+
+1. Go to your flow trigger, and then select the ellipsis (...).
 1. Select **Peek code**.
 
    ![A screenshot of the peek code setting.](./media/triggers-introduction/peek-code.png)
@@ -207,11 +223,15 @@ Follow these steps to check the trigger wake up frequency:
 
    ![A screenshot of the frequency element.](./media/triggers-introduction/frequency.png)
 
-If it is taking much longer than expected for your flow to trigger, here are the two likeliest reasons:
+# [AI-powered designer](#tab/ai-powered-designer)
 
-1. There has been too many calls to the connector or flow, causing it to be throttled. To verify if your flow is being throttled, manually test the flow to see if it triggers immediately. If it triggers immediately, it is not throttled.
+---
 
-   Further, you can check the [Power Automate analytics](./admin-analytics-report.md) to learn more about your flows.
+If it's taking much longer than expected for your flow to trigger, here are the two likeliest reasons:
+
+1. There's been too many calls to the connector or flow, causing it to be throttled. To verify if your flow is being throttled, manually test the flow to see if it triggers immediately. If it triggers immediately, it is not throttled.
+
+   You can check the [Power Automate analytics](./admin-analytics-report.md) to learn more about your flows.
 
    If your flow is frequently throttled, redesign your flow to use fewer actions. Learn more about [plan limits and tips to optimize flows to use fewer actions](https://support.microsoft.com/help/4531688/troubleshooting-slow-running-flows).
 
@@ -227,7 +247,6 @@ If it is taking much longer than expected for your flow to trigger, here are the
 
 ## Power Apps trigger issues
 
-<!--todo: steps are not clear-->
 Unable to rename actions in a cloud flow – This is a known issue for flows that use Power Apps triggers. As a workaround to rename actions, remove the trigger. Rename the actions, add your Power Apps trigger, and then configure variables wherever needed.
 
 After an app is published, make copies of the flows used by that app to make any updates. Any update to a cloud flow that's referenced by a published app can break existing users. Do not delete or turn off existing flows until all users have been upgraded to the new published version of the app.
@@ -255,4 +274,3 @@ You can try one of the following:
 To resolve this issue, edit each flow and save it. The triggers should start firing again.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-

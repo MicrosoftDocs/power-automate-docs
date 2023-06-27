@@ -56,14 +56,20 @@ In the following tutorials, we check all properties in the **when a new email ar
 
 In this tutorial, we create a cloud flow that sends a push notification to your mobile phone if the subject of any new email has the word "lottery" in it. Your flow then marks any such email as **read**.
 
->[!NOTE]
->Although this tutorial sends a push notification, you're free to use any other action that suits your workflow needs. For example, you might store the email contents in another repository such as Google Sheets or a Microsoft Excel workbook stored on Dropbox.
-
-OK, let's get started.
+> [!NOTE]
+> Although this tutorial sends a push notification, you're free to use any other action that suits your workflow needs. For example, you might store the email contents in another repository such as Google Sheets or a Microsoft Excel workbook stored on Dropbox.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-9. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to trigger a cloud flow based on email properties are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
+# [Current designer](#tab/current-designer)
+
+1. Select the folder that you'd like the flow to monitor for incoming emails, and then select **Show advanced options**.
+
+    To display all your email folders, select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives (V3)** card.
+
+1. In the **Subject Filter** box, enter the text that your flow uses to filter incoming emails.
 
      In this example, we're interested in any email that has the word "lottery" in the subject.
 
@@ -72,24 +78,30 @@ OK, let's get started.
 
 [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
-3. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
+1. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot that displays the details of a notification.](./media/email-triggers/email-triggers-4.png "Details of a notification")
 
 [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
-4. Select **Save** at the top of the page.
+1. Select **Save** at the top of the page.
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
 ## Trigger a cloud flow based on an email's sender
 
-In this tutorial, we create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as Read.
+In this tutorial, you create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as Read.
+
+# [Current designer](#tab/current-designer)
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-9. In the **From** box, enter the email address of the sender. 
+1. In the **From** box, enter the email address of the sender. 
 
      Your flow takes action on any emails that are sent from this address.
 
@@ -110,14 +122,18 @@ In this tutorial, we create a cloud flow that sends a push notification to your 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of creating a flow.](./media/email-triggers/email-triggers-sender-5.png "Create flow")
 
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
 ## Trigger a cloud flow when emails arrive in a specific folder
 
 If you have rules that route emails to different folders based on certain properties, such as the address, you might want this type of flow.
 
-Let's get started.
-
 > [!NOTE]
 > If you don't already have a rule that routes email to a folder other than your inbox, create such a rule and confirm it works by sending a test email.
+
+# [Current designer](#tab/current-designer)
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
@@ -141,6 +157,13 @@ Let's get started.
     > ![Screenshot showing the option to save the cloud flow.](./media/email-triggers/email-triggers-7.png "Save the cloud flow")
 
 Test the flow by sending an email that gets routed to the folder you selected earlier in this tutorial.
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
+
+
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
 

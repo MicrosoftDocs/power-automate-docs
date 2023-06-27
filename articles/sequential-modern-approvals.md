@@ -1,5 +1,5 @@
 ---
-title: Create a modern approval workflow with multiple approvers | Microsoft Docs
+title: Manage sequential approvals with Power Automate
 description: 'Create a modern approval workflow with multiple approvers '
 services: ''
 suite: flow
@@ -25,12 +25,12 @@ search.audienceType:
 
 Some workflows require pre-approval before the final approver is required to sign off. For example, a company may have a sequential approval policy that requires pre-approval for invoices over $1000.00 before they're approved by the Finance department.
 
-In this walkthrough, we create a sequential approval flow that manages employee vacation requests.
+In this tutorial, you create a sequential approval flow that manages employee vacation requests. For detailed information about using SharePoint with Power Automate, go to the SharePoint documentation.
+
+For detailed information about using SharePoint with Power Automate, go to the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
 
 > [!NOTE]
-> SharePoint is used here only as an example; it is not required to create approval flows. You can use any of the more than 200 services with which Power Automate integrates to drive your flows. If you are using SharePoint 2010, see [SharePoint 2010 workflow retirement](https://go.microsoft.com/fwlink/?linkid=2138686)
-
-[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+> SharePoint is used here only as an example. It isn't required to create approval flows. You can use any of the more than 200 services with which Power Automate integrates to drive your flows. If you're using SharePoint 2010, go to [SharePoint 2010 workflow retirement](https://go.microsoft.com/fwlink/?linkid=2138686).
 
 
 ## Detailed steps in the flow
@@ -77,8 +77,6 @@ Make note of the name and URL of the SharePoint Online list. We use these items 
 
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
-## Add a trigger
-
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
    ![sharepoint info.](./media/sequential-modern-approvals/select-sharepoint-site-info.png)
@@ -99,8 +97,6 @@ Note: This action sends the pre-approval request to the email address in the **A
 
 > [!NOTE]
 > This condition checks the response from the **Start and wait for an approval** action.
-> 
-> 
 
 ## Add an email action for pre-approvals
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
@@ -153,18 +149,20 @@ Note: This action must be added to the **IF NO, DO NOTHING** branch below the **
    ![update sharepoint for rejected requests.](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
 
 ## Send email with final rejection
+
 1. Use the steps from [Send email with pre-approval rejection](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) to add, and then configure an action that sends an email when the vacation request is rejected by the final approver.
-   
-    Note: This action must be added to the **IF NO, DO NOTHING** branch below the **Condition 2** card.
-2. When you're finished, the card should resemble this image:
-   
+
+    This action must be added to the **IF NO, DO NOTHING** branch below the **Condition 2** card.
+
+1. When you're finished, the card should resemble this image:
+
    ![configuration for rejected requests.](./media/sequential-modern-approvals/final-rejection-email-card.png)
 
 ## Update SharePoint with final rejection
 
 1. Use the steps from [Update SharePoint with pre-approval rejection](sequential-modern-approvals.md#update-sharepoint-with-pre-approval-rejection) to add, and then configure an action that updates SharePoint if the final approver rejects the vacation request.
 1. When you're finished, the card should resemble this image:
-   
+
    ![update item card.](./media/sequential-modern-approvals/final-rejection-update-sharepoint.png)
 1. Select **Update flow** to save the work we've done.
 

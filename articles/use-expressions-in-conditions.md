@@ -7,7 +7,7 @@ documentationcenter: na
 author: msftman
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/13/2022
@@ -70,13 +70,7 @@ Let's create the flow.
 
 1. On the left pane, select **My flows**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the menu with the My flows option.](includes/media/modern-approvals/select-my-flows.png "My flows option")
-
 1. Select **New flow** > **Scheduled cloud flow**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of creating a scheduled cloud flow.](includes/media/modern-approvals/blank-template.png "Create a scheduled cloud flow")
 
 ### Add a trigger to your flow
 
@@ -89,17 +83,17 @@ Let's create the flow.
     >[!div class="mx-imgBorder"]
     >![Screenshot of setting a schedule.](includes/media/modern-approvals/once-daily-schedule.png "Set schedule")
 
-### Select the spreadsheet and get all rows
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to use expressions in conditions to check multiple values are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
+## Select the spreadsheet and get all rows
+
+# [Current designer](#tab/current-designer)
 
 1. Select **New step**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the New step button.](includes/media/new-step/action.png "New step")
-
 1. Search for **rows**, and then select **Excel Online (Business)**.
 
-    >[!NOTE]
-    >Select the "get a row" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
+    Select the "get a row" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
 
 1. Select the **List rows present in a table** action.
 
@@ -111,7 +105,13 @@ Let's create the flow.
     >[!div class="mx-imgBorder"]
     >![Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.](includes/media/new-step/select-table-to-search.png "List rows present in a table card")
 
-### Check the status column of each row
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
+## Check the status column of each row
+
+# [Current designer](#tab/current-designer)
 
 1. Select **New step**.
 
@@ -141,7 +141,13 @@ Let's create the flow.
     >[!div class="mx-imgBorder"]
     >![Screenshot of an 'or' expression.](./media/use-expressions-in-conditions/or-expression.png "'Or' expression")
 
-### Delete matching rows from the spreadsheet
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
+## Delete matching rows from the spreadsheet
+
+# [Current designer](#tab/current-designer)
 
 1. Select **Add an action** on the **If yes** branch of the condition.
 
@@ -163,7 +169,11 @@ Let's create the flow.
 
 1. Save your flow.
 
-### Run the flow with the 'or' expression
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
+## Run the flow with the 'or' expression
 
 The flow runs after you save it. If you created the spreadsheet shown earlier in this tutorial, here's what it looks like after the run completes.
 
@@ -183,7 +193,7 @@ Here's an example of a **Condition** card.
 >[!div class="mx-imgBorder"]
 >![Screenshot of the 'and' expression.](./media/use-expressions-in-conditions/and-expression.png "'and' expression")
 
-### Run the flow with the 'and' expression
+## Run the flow with the 'and' expression
 
 If you've followed the steps in this tutorial, your spreadsheet should look similar to the following screenshot.
 
