@@ -11,7 +11,7 @@ editor: ''
 tags: ''
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06/22/2023
+ms.date: 06/28/2023
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -48,7 +48,7 @@ Legend:
 > [!IMPORTANT]
 > - This is a preview feature in the United States.
 > - This feature might not be available in your region or environment yet.
-> - You can use this feature if it's not available in your region by creating an environment in the United States region, or a **Preview (United States)** environment. To learn how to do this, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
+> - To use AI-powered cloud flows designer, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
