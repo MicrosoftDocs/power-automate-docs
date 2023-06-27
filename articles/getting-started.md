@@ -77,6 +77,10 @@ Each template is designed for a specific purpose. For example, there are templat
 
 ## Create your first flow
 
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for this tutorial are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
+# [Current designer](#tab/current-designer)
+
 1. Select a template that's useful for you. A simple template is [**Notify and Email when a new file is uploaded to OneDrive**](https://make.powerautomate.com/galleries/public/templates/ef6bf28037ca11e7870df906aa521b7a/notify-and-email-when-a-new-file-is-uploaded-to-onedrive/).
 1. Select **Continue**.
 1. Select the OneDrive folder that you want to monitor.
@@ -84,10 +88,13 @@ Each template is designed for a specific purpose. For example, there are templat
 
     ![Provide credentials for the connection.](./media/getting-started/full-flow.png)
 
-  >[!NOTE]
-  >- You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
->
->- [Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
+You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
+
+[Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
 
 ## Get creative
 
@@ -104,7 +111,9 @@ When you create a cloud flow from scratch, you control the entire workflow. Here
 
 ## Peek at the code
 
-You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer:
+You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer.
+
+# [Current designer](#tab/current-designer)
 
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**.
 1. Select **Peek code**.

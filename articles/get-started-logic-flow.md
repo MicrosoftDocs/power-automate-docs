@@ -36,7 +36,9 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 
 ## Specify an event to start the flow
 
-First, you will need to select what event, or *trigger*, starts your flow.
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for ho to create a flow are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
+First, select what event, or *trigger*, starts your flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -54,16 +56,24 @@ First, you will need to select what event, or *trigger*, starts your flow.
 
 1. Select the **Create** button at the bottom of the screen.
 
-   >[!TIP]
-   >Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
+   > [!TIP]
+   > Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
 
 1. If you haven't already connected your Twitter account to Power Automate, select **Sign in to Twitter**, and then provide your credentials.
 
-1. In the **Search text** box, type the keyword that you want to find.
+# [Current designer](#tab/current-designer)
 
-    ![Twitter keyword.](./media/get-started-logic-flow/twitter-keyword.png)
+In the **Search text** box, type the keyword that you want to find.
+
+![Twitter keyword.](./media/get-started-logic-flow/twitter-keyword.png)
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ## Specify an action
+
+# [Current designer](#tab/current-designer)
 
 1. Select **New step**.
 
@@ -95,7 +105,10 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 
 > [!TIP]
 > Use the **Send email (V2)** action to format email in which you customize the font, use bold, italic or underline, customize the color and highlight, and create lists or links, and more.
-> ![Rich edit email.](media/get-started-logic-flow/email-rich-text.png)
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ## Manage a cloud flow
 

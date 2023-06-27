@@ -82,6 +82,10 @@ By adding a trigger condition to trigger only when an invoice has been approved,
 
 This is especially important in pay-as-you-go environments, where every flow run is charged. By reducing the number of runs, you can keep your costs low while still achieving your desired outcomes.
 
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to use triggers are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
+# [Current designer](#tab/current-designer)
+
 To set a trigger condition:
 
 1. Select the trigger of the flow.
@@ -121,6 +125,10 @@ Your flow can generate expressions for you.
 1. Paste the expression into the trigger condition.
 
 1. Remove the **Filter array** action.
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ## Secure trigger inputs and outputs
 

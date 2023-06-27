@@ -44,31 +44,51 @@ The following information is required to use the **When a row is added, modified
 
 - Scope
 
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to trigger flows are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
 ### Trigger condition
 
 The trigger condition, **Change type**, precisely defines which combination of changes to a row would run the flow.
 
-   ![Trigger conditions.](../media/create-update-delete-trigger/2.png "Trigger conditions")
+# [Current designer](#tab/current-designer)
+
+![Trigger conditions.](../media/create-update-delete-trigger/2.png "Trigger conditions")
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, or `Delete`, respectively.
 
->[!NOTE]
-> If there are multiple updates to a single row in a table, Power Automate evaluates the trigger for each update, even if the values that are being updated on the row are the same as the previous value. These updates could lead to multiple flow runs. 
+> [!NOTE]
+> If there are multiple updates to a single row in a table, Power Automate evaluates the trigger for each update, even if the values that are being updated on the row are the same as the previous value. These updates could lead to multiple flow runs.
 
 ### Table name
 
-The **Table name** list filters the rows to indicate precisely which kind of rows should change before the flow triggers. See [Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview).
+The **Table name** list filters the rows to indicate precisely which kind of rows should change before the flow triggers. To learn more, go to [Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview).
 
-   ![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
+# [Current designer](#tab/current-designer)
 
->[!NOTE]
+![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
+> [!NOTE]
 > The **When a row is added, modified or deleted** trigger doesn't support triggering flows on relationships of type 1:N or N:N.
 
 ### Scope
 
 The **Scope** list indicates those rows should be monitored to determine if the flow should be run.
 
-   ![Select scope for triggering flow.](../media/create-update-delete-trigger/scope.png "Select scope for triggering flow")
+# [Current designer](#tab/current-designer)
+
+![Select scope for triggering flow.](../media/create-update-delete-trigger/scope.png "Select scope for triggering flow")
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 Here’s what each scope means:
 
@@ -87,17 +107,29 @@ You can set additional properties to define more granularly when the flow runs a
 
 Use filter conditions to set conditions for when to trigger flows.
 
+# [Current designer](#tab/current-designer)
+
 :::image type="content" source="../media/create-update-delete-trigger/filter-conditions.png" alt-text="Screenshot of filter conditions.":::
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ## Filtering columns
 
-Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
+Use **Select columns** to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
+
+# [Current designer](#tab/current-designer)
 
 :::image type="content" source="../media/create-update-delete-trigger/filter-columns.png" alt-text="Screenshot of filtering columns by firstname.lastname.":::
 
->[!NOTE]
->This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
->This property in not supported on virtual tables.
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
+> [!NOTE]
+> This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
+> This property isn't supported on virtual tables.
 
 ### Filter expression
 
@@ -106,12 +138,18 @@ The filter expression provides a way for you to define an OData style filter exp
 See the following examples, [standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators),
 and [query functions](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-query-functions) to learn how to construct these filter expressions.
 
->[!NOTE]
->Unlike the examples in the reference links, your expression must not contain the string **$filter=**. This string applies only when you use the APIs directly.
+> [!NOTE]
+> Unlike the examples in the reference links, your expression must not contain the string **$filter=**. This string applies only when you use the APIs directly.
 
-   ![Row filter equal.](../media/create-update-delete-trigger/row-filter.png)
+# [Current designer](#tab/current-designer)
 
-   ![Row filter contains.](../media/create-update-delete-trigger/row-filter-contains.png)
+![Row filter equal.](../media/create-update-delete-trigger/row-filter.png)
+
+![Row filter contains.](../media/create-update-delete-trigger/row-filter-contains.png)
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ### Wait condition using delay until
 
@@ -119,16 +157,24 @@ Use an OData-style time stamp in the **Delay until** property to delay the flow 
 
 The key benefit of using the Dataverse **Delay until** property instead of the standard **Delay until** *action* is the Dataverse **Delay until** property never expires, allowing the flow run to wait for long periods of time.
 
+# [Current designer](#tab/current-designer)
+
 :::image type="content" source="../media/create-update-delete-trigger/run-as-invoke.png" alt-text="Screenshot of the 'Delay until' field.":::
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 
 ### User impersonation using Run As
 
->[!IMPORTANT]
->The flow owner must have the Microsoft Dataverse privilege **Act on Behalf of Another User** (prvActOnBehalfOfAnotherUser). The **Delegate** security role includes this privilege by default. You can enable it on any security role. For more details, go to [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user).
+> [!IMPORTANT]
+> The flow owner must have the Microsoft Dataverse privilege **Act on Behalf of Another User** (prvActOnBehalfOfAnotherUser). The **Delegate** security role includes this privilege by default. You can enable it on any security role. For more details, go to [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user).
 
 When you create flows with the **When a row is added, modified or deleted** trigger, you can set each Microsoft Dataverse action in the flow to be performed using the context of a user, other than the flow owner.
 
-Follow these steps to impersonate a user:
+Follow these steps to impersonate a user.
+
+# [Current designer](#tab/current-designer)
 
 1. In the Power Automate flow definition, select **Show advanced options** in the **When a row is added, modified or deleted** trigger.
 
@@ -155,4 +201,8 @@ Additionally, instant flows allow running the steps of any other [connector](/co
 1. Select **Edit** on the **Run only users** settings.
 
 1. In the **Manage run-only permissions** pane, go to the **User and groups** tab, and then select **Provided by run-only user** under the **Connections Used** list.
+
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
 

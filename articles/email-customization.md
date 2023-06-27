@@ -80,14 +80,18 @@ Outlook takes the image you included in your email and converts it to plain text
 
        Your **src** should be similar to: **\<image src="https://url/to/your/images.png"/\>**.
 
-   >[!IMPORTANT]
-   >Inline images are limited to a size of 100 KB. This might affect the quality of the image.
+   > [!IMPORTANT]
+   > Inline images are limited to a size of 100 KB. This might affect the quality of the image.
 
 ## Send email to a distribution list
 
 The **Send an email** action can send messages to an email-enabled security group or distribution list. Each member of the email-enabled security group or distribution list receives the email in their group mailbox rather than their own mailbox.
 
 Alternatively, follow these steps if you want users to receive the email in their mailbox.
+
+When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to customize email in flows are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+
+# [Current designer](#tab/current-designer)
 
 1. Add the [Get group members](/connectors/azuread/#get-group-members) action from the [Azure AD](/connectors/azuread/) connector, and then select the distribution list.
 
@@ -98,21 +102,25 @@ Alternatively, follow these steps if you want users to receive the email in thei
     > [!div class="mx-imgBorder"]
     > ![Screenshot of a cloud flow that gets all group members and then sends email to each member.](./media/email/group-members-flow.png "Cloud flow that gets all group members and then sends email to each member")
 
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
 ## Send automatic replies from a shared mailbox
 
 You can do this in the web version of Outlook.
 
-1.  Sign in to the web version of Outlook at [https://outlook.office365.com](https://outlook.office365.com/) with your Office 365 credentials.
+1. Sign in to the web version of Outlook at [https://outlook.office365.com](https://outlook.office365.com/) with your Office 365 credentials.
 
-1.  Select your profile image (or placeholder image) in the upper-right corner.
+1. Select your profile image (or placeholder image) in the upper-right corner.
 
-1.  Select **Open another mailbox**.
+1. Select **Open another mailbox**.
 
-1.  Enter the name or email address of the shared mailbox, and then select it.
+1. Enter the name or email address of the shared mailbox, and then select it.
 
-1.  Select **Settings** in the upper-right corner, and then select **Automatic replies**.
+1. Select **Settings** in the upper-right corner, and then select **Automatic replies**.
 
-1.  Configure your automatic reply.
+1. Configure your automatic reply.
 
 ### Change the date and time format of an email 
 
