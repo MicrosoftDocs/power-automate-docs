@@ -146,7 +146,7 @@ This action sends the pre-approval request to the email address in the **Assigne
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
-   ![update item configuration.](./media/sequential-modern-approvals/update-item-preapproval.png)
+   ![update an item configuration.](./media/sequential-modern-approvals/update-item-preapproval.png)
 
 # [AI-powered designer](#tab/ai-powered-designer)
 
@@ -208,7 +208,7 @@ This action sends the pre-approval request to the email address in the **Assigne
 1. Use the steps from [Add an update action for pre-approved requests](sequential-modern-approvals.md#add-an-update-action-for-pre-approved-requests) to add, and then configure an action that updates SharePoint when the vacation request is approved.
 2. When you're finished, the card should resemble this image:
    
-    ![update item configuration.](./media/sequential-modern-approvals/configure-update-item-approved.png)
+    ![update item configuration card.](./media/sequential-modern-approvals/configure-update-item-approved.png)
 
 # [AI-powered designer](#tab/ai-powered-designer)
 
@@ -222,7 +222,7 @@ This action sends the pre-approval request to the email address in the **Assigne
 
    ![configuration for rejected requests.](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-    This action must be added to the **IF NO, DO NOTHING** branch below the **Condition** card.
+This action must be added to the **IF NO, DO NOTHING** branch below the **Condition** card.
 
 # [AI-powered designer](#tab/ai-powered-designer)
 
@@ -250,7 +250,7 @@ This action sends the pre-approval request to the email address in the **Assigne
 
 1. When you're finished, the card should resemble this image:
 
-   ![configuration for rejected requests.](./media/sequential-modern-approvals/final-rejection-email-card.png)
+   ![Screenshot of the configuration for rejected requests.](./media/sequential-modern-approvals/final-rejection-email-card.png)
 
 # [AI-powered designer](#tab/ai-powered-designer)
 

@@ -122,6 +122,10 @@ You don't need to be a developer to create flows; however, Power Automate does p
 
     ![Peek code details.](media/getting-started/peek-code-details.png)
 
+# [AI-powered designer](#tab/ai-powered-designer)
+
+---
+
 ## Find your flows easily
 
 When your creative juices start *flowing*, you might create many flows. Don't worry, finding your flows is easy - just use the search box on the **My flows**, **Team flows**, **Connections**, or **Solutions** screen to display only flows that match the search terms you enter.
