@@ -7,7 +7,7 @@ documentationcenter: na
 author: natalie-pienkowska
 contributors:
   - natalie-pienkowska
-   - v-aangie
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 06/28/2023
@@ -19,7 +19,7 @@ search.audienceType:
 ms.collection: get-started
 ---
 
-## Find the flows, templates, and information you need
+# Find the flows, templates, and information you need
 
 When your creative juices start *flowing*, you might create many flows. With unified search, finding your flows is easy&mdash;just use the search box on the **My flows**, **Team flows**, **Connections**, or **Solutions** screen to display only flows that match the search terms you enter.
 
