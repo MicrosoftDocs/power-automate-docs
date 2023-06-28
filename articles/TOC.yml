@@ -17,7 +17,9 @@
   - name: Get started with cloud flows
     href: overview-cloud.md
   - name: Get started with Copilot (preview)
-    href: get-started-with-copilot.md   
+    href: get-started-with-copilot.md
+  - name: Understand AI-powered cloud flows designer (preview)
+    href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
   - name: Get help from the Power Virtual Agents bot
