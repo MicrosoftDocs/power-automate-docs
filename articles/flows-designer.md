@@ -46,9 +46,8 @@ Legend:
 1. [**Copilot pane:**](get-started-with-copilot.md) Copilot stays by you in your flow editing and fit-and-finish journey. It can help you update and make changes to your flow based on your conversational style prompt. It can also help answer flow and product related  questions.
 
 > [!IMPORTANT]
-> - This is a preview feature in the United States.
 > - This feature might not be available in your region or environment yet.
-> - To use AI-powered cloud flows designer, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
+> - To use and learn about the availability of AI-powered cloud flows designer, go to, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
