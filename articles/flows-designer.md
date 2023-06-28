@@ -47,7 +47,7 @@ Legend:
 
 > [!IMPORTANT]
 > - This feature might not be available in your region or environment yet.
-> - To use and learn about the availability of AI-powered cloud flows designer, go to, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
+> - To use and learn about the availability of AI-powered cloud flows designer, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
