@@ -1,6 +1,6 @@
 ---
-title: Minit overview
-description: Get an overview of the minit.
+title: Overview of the Power Automate Process Mining desktop app
+description: Get an overview of the Power Automate Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -16,17 +16,17 @@ search.audienceType:
 - enduser
 ---
 
-# Minit overview
+# Overview of the Power Automate Process Mining desktop app
 
-Take advantage of additional enterprise process mining capabilities with the minit  overview. For example, there are many ways to break down your process cycles into smaller pieces for analysis. With the minit, you can easily delve into the details of your processes.
+Take advantage of additional enterprise process mining capabilities with the Power Automate Process Mining desktop app. For example, there are many ways to break down your process cycles into smaller pieces for analysis. With the Process Mining desktop app, you can easily delve into the details of your processes.
 
-To fully use minit, you need an add-on to unblock the enterprise process mining capabilities. To learn how to install the desktop app, go to [Install minit](how-to-start-with-minit-desktop-application.md).
+To fully use the Process Mining desktop app, you need an add-on to unblock the enterprise process mining capabilities. To learn how to install the the Process Mining desktop app, go to [Install the Process Mining desktop app](how-to-start-with-minit-desktop-application.md).
 
 ## Business example
 
-Minit analyzes data from processes that you create using process mining capabilities. For example, you can get deep insights into how your processes run, uncover the root cause of problems, and build useful outputs for the rest of your organization.
+The Process Mining desktop app analyzes data from processes that you create using the process mining capability in Power Automate. For example, you can get deep insights into how your processes run, uncover the root cause of problems, and build useful outputs for the rest of your organization.
 
-Minit keeps you informed about progress toward key process indicators (KPIs). As it does this, it also helps you with the following tasks:
+The Process Mining desktop app keeps you informed about progress toward key process indicators (KPIs). As it does this, it also helps you with the following tasks:
 
 - Understand where and why problems occur
 
@@ -36,7 +36,7 @@ Minit keeps you informed about progress toward key process indicators (KPIs). As
 
 ## Components
 
-Following are the main components in minit:
+Following are the main components for the Process Mining desktop app:
 
 - [Process map](process-map.md)
 
