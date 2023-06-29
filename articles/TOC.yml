@@ -707,12 +707,12 @@
     href: bpf-add-on-demand-workflow.md
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
-- name: Process advisor
+- name: Process mining
   items:
   - name: Overview
     href: process-advisor-overview.md
     displayName: Overview of process advisor
-  - name: Process mining
+  - name: Process mining capability
     items:
     - name: Overview
       href: process-mining-overview.md
@@ -740,11 +740,11 @@
       href: process-mining-share.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
-  - name: Minit
+  - name: Process Mining desktop app
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Install minit
+    - name: Install the Process Mining desktop app
       href: ./minit/how-to-start-with-minit-desktop-application.md
     - name: Get started
       items:
@@ -878,11 +878,11 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
-  - name: Task mining
+  - name: Task mining capability
     items:
     - name: Overview
       href: task-mining-overview.md
-    - name: Get started with task mining
+    - name: Get started with the task mining capability
       href: task-mining-tutorial.md
     - name: Prepare processes and recordings
       href: process-advisor-processes.md
