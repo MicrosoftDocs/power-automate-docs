@@ -6,8 +6,7 @@ brand: power-automate
 
 metadata:
   title: Official Microsoft Power Automate documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Discover how to make the most of Power Automate with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how to quickly create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results. < 160 chars.
-  ms.subservice: cloud-flow
+  description: Discover how to make the most of Power Automate with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how to quickly create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results.  
   ms.topic: hub-page # Required
   author: v-aangie #Required; your GitHub user alias, with correct capitalization.
   ms.author: angieandrews #Required; microsoft alias of author; optional team alias.
