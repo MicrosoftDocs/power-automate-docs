@@ -17,7 +17,9 @@
   - name: Get started with cloud flows
     href: overview-cloud.md
   - name: Get started with Copilot (preview)
-    href: get-started-with-copilot.md   
+    href: get-started-with-copilot.md
+  - name: Understand AI-powered cloud flows designer (preview)
+    href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
   - name: Get help from the Power Virtual Agents bot
@@ -673,6 +675,8 @@
       href: ./desktop-flows/actions-reference/sharepoint.md
     - name: Workqueues (preview)
       href: ./desktop-flows/actions-reference/workqueues.md
+    - name: Custom actions (preview)
+      href: ./desktop-flows/actions-reference/custommodule.md
   - name: Troubleshoot desktop flows
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
@@ -919,27 +923,19 @@
     href: gateway-manage.md
   - name: Understand gateways
     href: gateway-reference.md
-  - name: SAP integration (preview)
-    items:
-    - name: Overview
-      href: ./sap-integration/overview.md
-    - name: Set up and prepare
-      href: ./sap-integration/set-up-prepare.md
-    - name: Create an environment variable with SAP connection parameter
-      href: ./sap-integration/env-variables-connection-refs.md
-    - name: Prebuilt solution
-      href: ./sap-integration/solutions.md
-    - name: FAQs
-      href: ./sap-integration/FAQs.md
+  - name: SAP integration
+    href: /power-platform/solution-templates/finance/sap-procurement/overview
 - name: AI Builder
   href: use-ai-builder.md
 - name: For developers
   items:
   - name: Enterprise developers, partners, and ISVs
     href: ./developer/dev-enterprise-intro.md
-  - name: Start to build with Power Automate
+  - name: Extend apps with Power Automate
     href: get-started-flow-dev.md
-  - name: Work with desktop flows using APIs
+  - name: Work with cloud flows using code
+    href: manage-flows-with-code.md
+  - name: Work with desktop flows using code
     href: ./developer/desktop-flow-public-apis.md
   - name: Build and certify custom connectors
     href: ./developer/register-custom-api.md
@@ -1017,8 +1013,6 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
-  - name: Power Automate Web API
-    href: web-api.md
   - name: Power Automate embed pay-as-you-go
     href: isv-pay-as-you-go.md
   - name: Frequently asked questions
