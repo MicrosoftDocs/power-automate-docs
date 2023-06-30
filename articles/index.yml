@@ -2,20 +2,19 @@
 
 title: Microsoft Power Automate documentation # < 60 chars
 summary: Discover how to make the most of Power Automate with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how to quickly create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
-# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin | power-apps | power-automate | power-bi | power-virtual-agents
 brand: power-automate
 
 metadata:
   title: Official Microsoft Power Automate documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Discover how to make the most of Power Automate with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how to quickly create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results. < 160 chars.
-
   ms.subservice: cloud-flow
   ms.topic: hub-page # Required
   author: v-aangie #Required; your GitHub user alias, with correct capitalization.
   ms.author: angieandrews #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/30/2023 #Required; mm/dd/yyyy format.
   ms.reviewer: angieandrews
-  hide_bc: false
+  ms.date: 06/30/2023 #Required; mm/dd/yyyy format.
+  ms.custom: bap-template
+  hide_bc: true
 
 highlightedContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
@@ -37,19 +36,14 @@ highlightedContent:
       url: /training/powerplatform/power-automate
 
     # Card
-    - title: "Troubleshoot"
+    - title: Troubleshoot
       itemType: concept
       url: /troubleshoot/power-platform/power-automate/welcome-power-automate
 
 
-# conceptualContent section
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-
 additionalContent: 
   sections:
   - title: Create and design
-# Guidance should be the first card under implement. On this card, include links for Security and Compliance, Implementation, Adoption frameworks, and Best practices. 
-# Each card should have at least three and no more than five links. Do not include a "See also" link.
     items:
     - title: Try/Buy
       links:
@@ -59,25 +53,25 @@ additionalContent:
           url: /power-automate/organization-q-and-a#how-can-people-gain-access-to-the-paid-features-of-power-automate
     - title: Create flows
       links:
-        - text: Automated flows
+        - text: Create automated flows
           url: ./get-started-logic-flow.md
-        - text: Scheduled flows
+        - text: Create scheduled flows
           url: ./run-scheduled-tasks.md
-        - text: Desktop flows
+        - text: Create desktop flows
           url: ./desktop-flows/create-flow.md
-    - title: AI Copilot capabilities
+    - title: AI copilot capabilities
       links:
-        - text: Get started with AI Copilot (preview)
+        - text: Get started with AI copilot (preview)
           url: ./get-started-with-copilot.md
-        - text: Edit a flow using Copilot (preview)
+        - text: Edit a flow using copilot (preview)
           url: ./get-started-with-copilot.md#edit-a-flow-using-copilot
     - title: Plan with process advisor
       links:
-        - text: Process mining
+        - text: Understand your processes and identify opportunities with process mining
           url: process-mining-overview.md
-        - text: Minit desktop application
+        - text: Dig into the details with minit
           url: minit/minit-desktop-application-overview.md
-        - text: Task mining
+        - text: Streamline workflows and identify inefficiencies with task mining
           url: task-mining-overview.md
     - title: Use solutions
       links:
@@ -87,49 +81,49 @@ additionalContent:
           url: ./create-flow-solution.md
         - text: Implement healthy application lifecycle management (ALM) using solutions
           url: /power-platform/alm/overview-alm
-    - title: Integrate Power Automate with
+    - title: Integrate with other products
       links:
-        - text: Microsoft Teams
+        - text: Use flows in Teams
           url: ./teams/overview.md
-        - text: SharePoint
+        - text: Build SharePoint workflows
           url: ./sharepoint-overview.md
-        - text: Email
+        - text: Send email, schedule meetings, add contacts, and more
           url: ./email-overview.md
     - title: Best practices guidance
       links:
         - text: Plan a Power Automate project
           url: ./guidance/planning/introduction.md
-        - text: Automation kit
+        - text: Manage, govern, and scale adoption with the Automation Kit
           url: ./guidance/automation-kit/overview/introduction.md
-        - text: Automation adoption
+        - text: Apply best practices for automation adoption
           url: ./guidance/automation-coe/overview.md
   - title: Administer and extend
     items:
     - title: Administer Power Automate
       links:
-        - text: Use Power Platform admin center
+        - text: Use the Power Platform admin center
           url: admin-center-introduction.md
         - text: Administer environments and resources
           url: environments-overview-admin.md
-        - text: Set data loss prevention policy
+        - text: Set up data loss prevention policies
           url: prevent-data-loss.md
     - title: Extend Power Automate
       links:
-        - text: For enterprise developers, ISVs, and partners
+        - text: Enterprise developer, ISV, and partner guide
           url: developer/dev-enterprise-intro.md
         - text: Manage flows with code
           url: manage-flows-with-code.md
-        - text: Develop custom connector
+        - text: Create and use custom connectors
           url: get-started-flow-dev.md
   - title: Use
     items:
-    - title: Use flow with Dataverse
+    - title: Use flows with Dataverse
       links:
         - text: Add a row
           url: ./dataverse/create.md
         - text: Delete a row
           url: ./dataverse/delete-row.md
-        - text: Upload or download files/images
+        - text: Upload or download files and images
           url: ./dataverse/upload-download-file.md
     - title: Use flows with...
       links:
@@ -145,20 +139,20 @@ additionalContent:
           url: ./get-started-approvals.md
     - title: Use business process flows
       links:
-        - text: Overview
+        - text: Understand business process flows
           url: ./business-process-flows-overview.md
         - text: Create a business process flow
           url: ./create-business-process-flow.md
         - text: Add custom controls in business process flows
           url: ./custom-controls-business-process-flows.md
-        - text: Best practices in using business process flow columns
+        - text: Apply best practices for using business process flow columns
           url: ./best-practices-entity-attributes.md
 
   - title: Related content
     items:
         # Card
         - title: Power Platform
-          summary: One-stop learning resource for Power Platform applications and features including admin, developer, and guidance documentation.
+          summary: One-stop learning resource for Power Platform applications and features, with admin, developer, and guidance documentation.
           url: /power-platform
         # Card
         - title: Power Apps
@@ -168,19 +162,19 @@ additionalContent:
         - title: Power BI
           summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
           url: /power-bi
+        # Card
         - title: Power Pages
           summary: Design, host, and administer secure, modern, and low-code business websites.
           url: /power-pages
+        # Card
         - title: Power Virtual Agents
           summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
           url: /power-virtual-agents
         # Card
         - title: Dynamics 365
-          summary: "The next generation of CRM and ERP applications"
+          summary: Empower your organization with the next generation of CRM and ERP applications.
           url: /dynamics365/
         # Card
         - title: Microsoft Azure
-          summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
+          summary: Learn how this ever-expanding set of cloud computing services can help your organization meet its business challenges.
           url: /azure
-
-
