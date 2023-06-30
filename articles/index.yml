@@ -111,10 +111,12 @@ additionalContent:
       links:
         - text: Enterprise developer, ISV, and partner guide
           url: developer/dev-enterprise-intro.md
-        - text: Manage flows with code
+        - text: Work with cloud flows using code
           url: manage-flows-with-code.md
-        - text: Create and use custom connectors
-          url: get-started-flow-dev.md
+        - text: Work with desktop flows using code
+          url: developer/desktop-flow-public-apis.md
+        - text: Build and certify custom connectors
+          url: developer/register-custom-api.md
   - title: Use
     items:
     - title: Use flows with Dataverse
