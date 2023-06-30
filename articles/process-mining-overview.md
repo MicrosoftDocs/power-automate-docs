@@ -36,6 +36,8 @@ The business value of process mining lies in its ability to help organizations g
 
 - **Ensure compliance:** Process mining can help organizations to identify non-compliant processes and take corrective action to avoid legal and financial risks.
 
+- **Improve supply chain management processes:** Create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. This can help improve the performance of the warehouse. To learn more, go to [Analyze warehouse material movement through process mining](/dynamics365/supply-chain/warehousing/warehouse-material-movement-analysis).
+
 ## Business examples
 
 Overall, process mining provides valuable insights that can help organizations improve their operations, enhance customer satisfaction, and stay competitive in a rapidly changing business landscape.
