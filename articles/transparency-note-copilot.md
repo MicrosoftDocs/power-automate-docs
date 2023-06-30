@@ -20,7 +20,7 @@ The AI powered editing experience in Power Automate is a new way to build automa
 
 ## What are the system’s capabilities?
 
-The system is a copilot embedded in the cloud flows designer. It helps you create or edit your flow. The system can:
+The system is a copilot embedded in the cloud flows AI-powered designer. It helps you create or edit your flow. The system can:
 
 - Create a new flow from scratch.
 
@@ -32,7 +32,7 @@ The system is a copilot embedded in the cloud flows designer. It helps you creat
 
 - Filter out questions not related to Power Automate or the current Flow.
 
-The Copilot will also provide buttons to prompt you to save or test your flow occasionally.
+The Copilot also provides buttons to prompt you to save or test your flow occasionally.
 
 ## What is the system’s intended use?
 
@@ -42,13 +42,13 @@ The system's intended use is to help you build automations easily and quickly, t
 
 We have a robust set of metrics we're tracking to measure the performance of the model and resulting customer experience. We track Copilot's SLA to make sure it's always available to you. We track the telemetry of thumbs up and thumbs down gestures present in the AI Copilot for each AI output that you can submit feedback for.
 
-You can provide feedback for Copilot when the results are biased or inappropriate. We track this to ensure that Copilot is compliant, appropriate, and bias-free.
+You can provide feedback for Copilot when the results are biased or inappropriate. We track this feedback to ensure that Copilot is compliant, appropriate, and bias-free.
 
 ## What are the limitations of Copilot? How can users minimize the impact of the Copilot limitations when using the system?
 
-Copilot can render flows and edit flows in a limited manner at this time. It supports only a subset of connectors available on the platform. It also isn't equipped to help with fixing flow errors currently. You're made aware of this limitation throughout the experience. We'll attempt to keep you from landing in a faulty state that causes data crashes or loss, as our support is limited. We'll block you from using the feature when there's a possibility it might break or corrupt your data.
+Copilot can render flows and edit flows in a limited manner at this time. It supports only a subset of connectors available on the platform. It also isn't equipped to help with fixing flow errors currently. You're made aware of this limitation throughout the experience. We attempt to keep you from landing in a faulty state that causes data crashes or loss, as our support is limited. We block you from using the feature when there's a possibility it might break or corrupt your data.
 
-If you want to turn off Copilot within your organization, ask your Power Platform admin to turn off the feature using a PowerShell script.
+If you want to turn off Copilot within your organization, ask your Power Platform admin to turn off the feature. They'll contact Microsoft support to do this.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
 

@@ -2,7 +2,7 @@
 title: Work queues actions (preview)
 description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
-ms.date: 5/31/2023
+ms.date: 6/30/2023
 ms.author: dbekirop
 ms.reviewer: 
 contributors:
@@ -23,6 +23,7 @@ Work queues can play a crucial role in improving the efficiency, scalability and
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../../../articles/includes/cc-preview-features-definition.md)]
 > - Work queue actions in Power Automate for desktop is a premium feature which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
+> - Work queue actions in Power Automate for desktop can be classified in Data Loss Prevention policies. Note that cloud flow-based usage of work queues cannot be restricted by DLP policies.
 
 ## Process work queue items (preview)
 
@@ -46,7 +47,7 @@ The **processworkqueueitemaction** action requires the following arguments.
 
   | Argument       | Type | Description     |
   |----------      |------|-----------------|
-  | **Work queue** |No   |Information stored in the work queue item being processed |
+  | **WorkQueueItem** |No   |Information stored in the work queue item being processed |
 
 #### Exceptions
 
