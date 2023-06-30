@@ -22,7 +22,8 @@ The automation recommendation feature in process advisor helps you identify auto
 
 The blue recommendation icons on the process map activities indicate automation opportunities. 
 
-:::image type="content" source="media/automation-reco-dot.png" alt-text="Screenshot of automation recommendation.":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/662c29ab-b4e2-408b-b98f-56070695447e)
+
 
 To automate an activity, select the **+Automate activities** option above the process map. This takes you to the Power Automate form designer, where you can see the connector recommendations for the activities in your process map. From there, you can select and add the connectors to your flow to automate your process.
 :::image type="content" source="media/automation-reco-2.png" alt-text="Screenshot of Automate activities.":::
