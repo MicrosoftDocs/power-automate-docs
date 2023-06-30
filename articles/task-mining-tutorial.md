@@ -42,11 +42,13 @@ In this tutorial, we'll import a solution which already has sample recordings.
 
 1. On the navigation pane to the left, select **Solutions**.
 
-    :::image type="content" source="media/task-mining-tutorial/solutions.png" alt-text="Screenshot of the 'Solutions' screen.":::
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/07219a4f-7472-4e83-8ae4-a8a27d60e559)
+
 
 1. In the toolbar at the top, select **Import solution**.
 
-    :::image type="content" source="media/task-mining-tutorial/import.png" alt-text="Screenshot of the 'Import' screen.":::
+  ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/33acbd97-988b-419c-b51c-12fc2ab91897)
+
 
 1. Select **Browse**.
 
@@ -68,11 +70,13 @@ In this tutorial, we'll import a solution which already has sample recordings.
 
 1. Once you've successfully imported the .zip file, on the navigation pane to the left, select **Process advisor** > **All processes** below the process cards.
 
-      :::image type="content" source="media/task-mining-tutorial/select-processes.png" alt-text="Screenshot of the process advisor home screen.":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/30be13fa-7539-4404-94b3-b37cc38e232a)
+
 
 1. Select the **Invoice submission process**.
+   
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/9faea174-8ef9-4e7b-919f-9799bad93b96)
 
-    :::image type="content" source="media/task-mining-tutorial/invoice-submission.png" alt-text="Screenshot of the invoice submission process.":::
 
     > [!NOTE]
     >
@@ -84,9 +88,10 @@ In this tutorial, we'll import a solution which already has sample recordings.
 
     :::image type="content" source="media/task-mining-tutorial/recordings.png" alt-text="Screenshot of media/task-mining-tutorial/recordings.png":::
 
-1. Go back to the **Invoice submission process** by selecting **Invoice submission process**.
+1. Go back to the **Invoice submission process** by selecting **Invoice submission process** from the breadcrumbs at the top of the page.
 
-    :::image type="content" source="media/task-mining-tutorial/go-back.png" alt-text="Screenshot of the Invoice submission process screen.":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/763427fd-869a-4691-bfd8-a666ba4eedaa)
+
 
 ### Explore the features
 
@@ -202,9 +207,10 @@ You can see that people spend a lot of their time entering the information in th
 
         :::image type="content" source="media/task-mining-tutorial/avg-time-min.png" alt-text="Screenshot of media/task-mining-tutorial/avg-time-min.png":::
 
-4. Select the **Application (preview)** tab to see details on which applications were used.
+4. Select the **Application** tab to see details on which applications were used.
 
-    :::image type="content" source="media/task-mining-tutorial/app-preview.png" alt-text="Screenshot of Application (preview)":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/d064d124-464e-48a8-8e6d-cff32c4ab400)
+
 
     It might take a while to load the reports.
 
@@ -214,7 +220,8 @@ You can see that people spend a lot of their time entering the information in th
 
     - Take time to get familiar with the different reports.
  
-    :::image type="content" source="media/task-mining-tutorial/app-preview-screen.png" alt-text="Screenshot of the Application (preview) screen.":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/2748546b-aabe-4cf5-9746-c1560910070a)
+
 
 1. Go back to the process map by selecting **Process**.
 
@@ -222,9 +229,10 @@ You can see that people spend a lot of their time entering the information in th
 
 1. Look at the automate activities feature. From the process map, you can see that process advisor has highlighted several activities as potential candidates for automation based on applications.
 
-1. Start creating a flow for automation by selecting **Automate activities (preview)** at the top.
+1. Start creating a flow for automation by selecting **Automate activities** at the top.
 
-     :::image type="content" source="media/task-mining-tutorial/blue-circles.png" alt-text="Screenshot of process map with blue circles.":::
+  ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/f71fff66-0709-41ca-b6a1-f1952d3fa8f0)
+
 
     A tab will open in the browser and show the flow designer. The recommended actions that match to the activities from the process map automatically appear on the right panel. For example, several email connectors are suggested for you to use in order to automate the **Download invoice attachment from email** activity.
 
