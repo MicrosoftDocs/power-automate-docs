@@ -29,6 +29,9 @@ You can access this page:
 ## Run details
 
 The run details card displays all the parameters related to your run.
+
+  ![Screenshot of the run details card](media/run-details-card.png)
+
 - Parent cloud flow run: the name of the cloud flow that contains the executed desktop flow. The link redirects to the run details page of the parent cloud flow (for attended and unattended runs). If the run mode is local attended (flow triggered from Power Automate for desktop), the field will remain empty.
 - Parent desktop flow run: if there is no parent desktop flow, the field remains empty. The link redirects to the run details page of the parent desktop flow.
 - Start: when the desktop flow action is requested.
@@ -46,6 +49,10 @@ The run status is a timeline that allows to understand how works a desktop flow 
 
 It might be critical for your orchestration to identify if a step took too much time or if a desktop flow always fails during the same step.
 
+  ![Screenshot of the run details timeline](media/Run-details-timeline.png)
+  
+
+## Actions details 
 This card allows you to see information and status for each action of your desktop flow:
 - Start: timestamp when the action has started
 - Subflow: your flow can be composed of one or several subflows. By default, your actions are in the main subflow. This information helps you to quickly identify in which subflows the action is to fix potential errors.
