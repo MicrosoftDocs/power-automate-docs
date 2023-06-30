@@ -1,6 +1,6 @@
 ---
 title: Requirements for application
-description: Learn how where your metrics are applicable in minit.
+description: Learn where your metrics are applicable in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

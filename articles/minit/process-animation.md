@@ -1,6 +1,6 @@
 ---
 title: Process animation overview
-description: Learn how to visualize the development of the process over time.
+description: Learn how to visualize the development of the process over time in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -18,9 +18,6 @@ search.audienceType:
 # Process animation overview
 
 With process animation, you can visualize process development over time. You can watch the animation play over your process map or social graph on the **Animation** screen.
-
-<!--remove
-:::image type="content" alt-text="Screenshot of Animation setting button." source="media/image001-v53-1.png"::: -->
 
 ## Adjust animation control settings
 

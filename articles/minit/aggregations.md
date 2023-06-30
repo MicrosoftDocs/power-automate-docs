@@ -1,6 +1,6 @@
 ---
 title: List of aggregations
-description: Learn about the aggregations you can use in custom metrics in minit.
+description: Learn about the aggregations you can use in custom metrics in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

@@ -1,6 +1,6 @@
 ---
 title: List of statistical operations
-description: Learn about the statistical operations in minit.
+description: Learn about the statistical operations in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -17,7 +17,7 @@ search.audienceType:
 
 # List of statistical operations
 
-This article lists statistical operations in the minute desktop application.
+This article lists statistical operations in the Process Mining desktop app.
 
 ## START()
 
@@ -375,15 +375,10 @@ Returns calculated process statistics according to the selected aggregation and 
 Following are the allowed aggregation types:
 
 - Sum
-
 - Avg
-
 - Min
-
 - Max
-
 - Range
-
 - Stdev
 
 ## Types of Statistics

@@ -1,6 +1,6 @@
 ---
 title: Event metrics filter
-description: Learn how to filter events based on various metrics in minit.
+description: Learn how to filter events based on various metrics in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -33,4 +33,4 @@ To define the values using an expression, select the **Expression** tab, selec
 
 ## Create a custom metric
 
-You can choose between standard default metrics found in minit and custom metrics created in the process context. To create a custom metric, select (**...**) > **Add**.
+You can choose between standard default metrics found in the Process Mining desktop app and custom metrics created in the process context. To create a custom metric, select (**...**) > **Add**.

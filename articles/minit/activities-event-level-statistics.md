@@ -1,6 +1,6 @@
 ---
 title: Customize activities (event-level) statistics
-description: Learn about statistics for process activities (events) in minit.
+description: Learn about statistics for process activities (events) in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -18,7 +18,7 @@ search.audienceType:
 
 # Customize activities (event-level) statistics
 
-Minit provides statistics at the level of activities, or events, in both chart and table form. You can customize many aspects of the chart and the tabular data.
+The Process Mining desktop app provides statistics at the level of activities, or events, in both chart and table form. You can customize many aspects of the chart and the tabular data.
 
 1. On the left panel in the **Processes** screen, select **Statistics**.
 
@@ -34,7 +34,7 @@ Minit provides statistics at the level of activities, or events, in both chart a
 
 1. Select **Apply**,
 
-    :::image type="content" source="media/activities-event-statistics.png" alt-text="Screenshot of the activity or event-level statistics page in minit.":::
+    :::image type="content" source="media/activities-event-statistics.png" alt-text="Screenshot of the activity or event-level statistics page in the Process Mining desktop app.":::
 
 ## Statistical chart and table of activities
 
@@ -71,20 +71,6 @@ The metrics in the following table are in the chart and the table of activities.
 Along with these standard statistics, the chart displays all event-level custom metrics that have the continuous output data type.
 
 The table of activities displays event-level standard and custom metrics. In the table, all event-level custom metrics are available, whether their output data type is discrete or continuous.
-
-<!--I don't see this
-You can't add metrics to the table. However, you can hide those you don't need to view. Select the hamburger menu at the right side of the table header row, and then select or clear the selection of columns to customize your view of the summary.
-
-:::image type="content" source="media/activity-stats-table-columns-2.png" alt-text="Screenshot of the table column selection panel.":::
-
-## Table summary row
-
-The table summary row provides a summary overview of the standard metrics that minit provides.
-
-You can't add metrics to the summary row. However, you can hide those you don't need to view. Select the hamburger menu at the right side of the summary row, and then select or clear the selection of columns to customize your view of the summary.
-
-:::image type="content" source="media/activity-stats-table-columns.png" alt-text="Screenshot of the table summary row column selection panel.":::
--->
 
 ## Metrics in the summary row
 

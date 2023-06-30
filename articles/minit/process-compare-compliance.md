@@ -1,6 +1,6 @@
 ---
 title: Compare process views for compliance
-description: Learn how to compare various process views in minit.
+description: Learn how to compare various process views in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -41,7 +41,6 @@ To add a layer:
 
 List of all available layers is shown in the **Compare** box. The individual layers can be switched on and off by checking or unchecking them. The currently open view and the **Compare** layer are switched on by default. Unchecking the currently open view will highlight those activities and transitions which are common in both compared layers. Select (**-**) to remove the layer from the list.
 
-![Screenshot of changing the view](https://user-images.githubusercontent.com/38796638/225362435-ed00ad69-9917-4480-9c51-cc5aed42ac70.png)
 :::image type="content" alt-text="Screenshot of changing the view." source="media/comparison2.png":::
 
 Each layer/view has an associated color. Activities and edges that form an intersection of the compared layers/views are colored as the **Compare** key.

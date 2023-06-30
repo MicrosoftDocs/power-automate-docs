@@ -1,6 +1,6 @@
 ---
 title: Analyze processes with variants
-description: Learn about the process performance variants in minit.
+description: Learn about the process performance variants in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -46,7 +46,6 @@ To open the **Variants** screen, go to the open view and select **Variants** on 
 - [Variant overview](#variants-overview-panel-variant-dna)
 
 - [Legend](#legend-panel)
-
 
 ### Attribute panel
 
@@ -109,8 +108,6 @@ To see the details of its development, select a case number in the **Case ID** c
 ### Cases gantt tab
 
 Development of the case on a timeline in the **Cases gantt** tab. The following information about each case is available:
-
-<!--this list doesn't correspond with what I see.-->
 
 1. Start and end time for the case
 

@@ -1,6 +1,6 @@
 ---
 title: List of string operations
-description: Learn bout the string operations that you can use in minit.
+description: Learn bout the string operations that you can use in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -17,7 +17,7 @@ search.audienceType:
 
 # List of string operations
 
-Following are the string operations that you can use in minit.
+Following are the string operations that you can use in the Process Mining desktop app.
 
 ## CONCAT([string1],...,[stringN])
 

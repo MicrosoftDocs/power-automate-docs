@@ -1,6 +1,6 @@
 ---
 title: Understand process animation controls
-description: Learn about the various animation controls.
+description: Learn about the various animation controls in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

@@ -1,6 +1,6 @@
 ---
 title: Case attributes conditional filter
-description: Learn how to use the case attributes conditional filter in minit.
+description: Learn how to use the case attributes conditional filter in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -39,7 +39,6 @@ The **Attributes (conditional)** filter adds conditions to the **Attribute** fil
 1. Select **Apply**.
 
    :::image type="content" alt-text="Screenshot of specifying the additional criteria type." source="media/attributes-conditional-filter.png":::
-
 
 ## Process metric
 

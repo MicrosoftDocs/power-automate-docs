@@ -1,6 +1,6 @@
 ---
 title: Root cause analysis overview
-description: Get an overview of how to find hidden connections in your data with root cause analysis in minit.
+description: Get an overview of how to find hidden connections in your data with root cause analysis in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

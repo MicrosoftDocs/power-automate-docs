@@ -1,6 +1,6 @@
 ---
-title: Explore the home page in minit
-description: Learn how to use the home page so that you can get started using minit. 
+title: Explore the home page in the Process Mining desktop app
+description: Learn how to use the home page so that you can get started using the Process Mining desktop app. 
 author: rosikm
 contributors:
   - rosikm
@@ -18,15 +18,15 @@ search.audienceType:
 
 # Explore the home page
 
-The **Processes** screen is minit's home page. It's where you'll find an overview of your processes and views. It's also where you can dig deeper into your processes by creating different views, or ways of analyzing your processes.
+The **Processes** screen is the the Process Mining desktop app's home page. It's where you'll find an overview of your processes and views. It's also where you can dig deeper into your processes by creating different views, or ways of analyzing your processes.
 
 ## Launch the application
 
-Although minit is a desktop application, it's connected to Power Automate through your work account. The first screen you'll see is **Processes**. It lists the processes you created in process advisor, and displays the views associated with them as tiles.
+Although Power Automate Process Mining is a desktop app, it's connected to Power Automate through your work account. The first screen you'll see is **Processes**. It lists the processes you created in process mining, and displays the views associated with them as tiles.
 
-Open minit and sign in with your work account.
+Open the Process Mining desktop app and sign in with your work account.
 
-:::image type="content" alt-text="Screenshot of the the home page in minit." source="media/processes-screen.png":::
+:::image type="content" alt-text="Screenshot of the the home page in the Process Mining desktop app." source="media/processes-screen.png":::
 
 ## Select an environment
 
@@ -40,13 +40,13 @@ If the **Process** screen doesn't show the processes you expect, you might need 
 
 You can organize your processes and views in a way that works best for you.
 
-- **My processes** > **Process name:** List processes by name, with their associated views displayed as tiles below them. Select the caret to the left of the process name to show or hide the views. This view is the default when you open minit.
+- **My processes** > **Process name:** List processes by name, with their associated views displayed as tiles below them. Select the caret to the left of the process name to show or hide the views. This view is the default when you open the Process Mining desktop app.
 
 - **Shared with me** > **Process name:** 
 
 - **Sort by:** Select an option in this dropdown menu to sort views in ascending or descending order by name, or by most recent or oldest.
 
-- **Refresh:** Refresh the list of processes from the process advisor. For example, if you create a process in process advisor, select **Refresh** to update the list in the **Processes** screen.
+- **Refresh:** Refresh the list of processes from the process mining capability. For example, if you create a process in the process mining capability, select **Refresh** to update the list in the **Processes** screen.
 
 - **Search in processes and views:** Search for a process or view by name.
 
@@ -54,7 +54,7 @@ You can organize your processes and views in a way that works best for you.
 
 A view represents an analysis of a single process model. It stores all your settings for analyzing the process. To analyze a process from several viewpoints, create multiple views. You can work with a view by yourself or with your colleagues.
 
-The first time you open minit, if you haven't created any views of your processes, you'll see a default view for each process. The **Default** tile is blank until after the first time you select it. After you've opened a view, the tile displays a miniature version of the process map, as in the following example:
+The first time you open the Process Mining desktop app, if you haven't created any views of your processes, you'll see a default view for each process. The **Default** tile is blank until after the first time you select it. After you've opened a view, the tile displays a miniature version of the process map, as in the following example:
 
 :::image type="content" source="media/contoso-tile.png" alt-text="Screenshot of a view tile after it's been opened.":::
 

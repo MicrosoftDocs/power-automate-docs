@@ -1,6 +1,6 @@
 ---
 title: Custom metrics overview
-description: Learn how to use predefined metrics to define your own metrics in minit.
+description: Learn how to use predefined metrics to define your own metrics in the Process Mining desktop app.
 author: janPidych
 contributors:
   - janPidych
@@ -59,11 +59,9 @@ Define custom metrics in the context of the current process. They can be used an
 
     :::image type="content" alt-text="Screenshot of the metric formula in the Metric formula field." source="media/create-custom-metric.png":::
 
-1. Select a **Metric type** to see further details to verify the applicability of the expression for various minit functions.
+1. Select a **Metric type** to see further details to verify the applicability of the expression for various functions.
 
     To learn more about the requirements for using custom metrics for various purposes, go to [Requirements for application](requirements-for-application.md).
-
-    :::image type="content" alt-text="Screenshot of metric types." source="media/metric-type.png":::
 
 ## Apply a custom metric to a process map
 
@@ -74,8 +72,6 @@ The process map visualization will adjust to the selected metric based on the co
 1. On the toolbar in the **Customize** panel, select **Custom** (the ***fx*** icon). 
 
 1. Below the toolbar, select the desired metrics from the dropdown menus.
-
-    :::image type="content" alt-text="Screenshot of custom metric dropdown menus." source="media/custom-metrics-select.png":::
 
      The top dropdown menu is used for selecting the custom metric on the activities and the bottom one for edges. The link icon in between will lock the metric for activities and edges to show the same metric for both elements.
 
@@ -117,4 +113,3 @@ Custom metrics that return values on case level can be used in RCA either as a m
 
 Custom metrics can be also created in RCA settings screen by selecting (**...**) next to the main metric in the **Metric** field.
 
-:::image type="content" alt-text="screenshot of custom metrics in RCA." source="media/custom-metrics.png":::

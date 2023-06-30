@@ -1,6 +1,6 @@
 ---
 title: Timeframe filter
-description: Learn how to select the timeframe of interest in your analysis in minit.
+description: Learn how to select the timeframe of interest in your analysis in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

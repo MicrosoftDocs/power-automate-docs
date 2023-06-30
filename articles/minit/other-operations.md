@@ -1,6 +1,6 @@
 ---
 title: List of other operations
-description: Learn about operations and what they return in minit.
+description: Learn about operations and what they return in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -16,6 +16,8 @@ search.audienceType:
 ---
 
 # List of other operations
+
+Following are other operations that you can use in the Process Mining desktop app.
 
 ## attributeName
 

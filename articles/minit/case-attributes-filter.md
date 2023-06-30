@@ -1,6 +1,6 @@
 ---
 title: Case attributes filter
-description: Learn how to use the case attributes filter in minit.
+description: Learn how to use the case attributes filter in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -53,7 +53,6 @@ Use the filter to select cases that include an expression. You can include both 
 ## Enter a custom expression
 
 You can switch between a constant value and a custom expression by selecting **Fx** in the **Expression** tab.
-
 
 To learn how to use a custom expression, go to [Custom metrics overview](custom-metrics.md).
 

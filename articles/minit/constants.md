@@ -1,6 +1,6 @@
 ---
 title: List of constants
-description: Get a list of constants in minit.
+description: Get a list of constants in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -17,7 +17,7 @@ search.audienceType:
 
 # List of constants
 
-The following table lists the constants in minit.
+The following table lists the constants in the Process Mining desktop app.
 
 | Constant | Data type | Description |
 | - | - | - |

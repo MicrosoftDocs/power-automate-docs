@@ -1,6 +1,6 @@
 ---
 title: Review edge statistics
-description: View edges in the process undergoing analysis and display their various properties in the Power Automate Process Mining desktop app.
+description: View edges in the process undergoing analysis and display their various properties in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -61,9 +61,7 @@ Besides these standard statistics, the list contains all defined edge-level cust
 
 ## Summary header and table of edges
 
-The summary provides an overview of standard metrics provided by minit. The list of these metrics isn't configurable and no additional metrics can be included in this summary row. The table of edges contains standard edge-level metrics, and custom metrics applicable on edge-level. In the table, all mentioned custom metrics are available regardless of their discrete or continuous output data type.
-
-<!--Where is the summary headers as in the screenshot?-->
+The summary provides an overview of standard metrics provided by the Process Mining desktop app. The list of these metrics isn't configurable and no additional metrics can be included in this summary row. The table of edges contains standard edge-level metrics, and custom metrics applicable on edge-level. In the table, all mentioned custom metrics are available regardless of their discrete or continuous output data type.
 
 :::image type="content" alt-text="media/edge-table.png" source="media/edge-table.png":::
 

@@ -1,6 +1,6 @@
 ---
 title: Business rules for process maps
-description: Learn how to display business rules in the process map in minit.
+description: Learn how to display business rules in the process map in the Process Mining desktop app.
 author: janPidych
 contributors:
   - janPidych
@@ -20,22 +20,18 @@ search.audienceType:
 
  To select business rules to view in the process map, select the **Customize** icon on the panel on the right in the **Process map** screen. You can display results per single business rule, or by severity over all business rules. Process scope business rules aren't available in the process map.
 
-   :::image type="content" alt-text="Screenshot of the Customize screen display modes." source="media/br-customize.png":::
-
 ## Single business rule display
 
 If you select **Single business rule**, results are displayed for the business rule you select in the events and edges lists. You can select different business rules for events and edges.
 
-
 :::image type="content" alt-text="Screenshot of the Customize screen in the single business rule mode." source="media/br-customize-2.png":::
-
 
 Legend:
 
-1. Business rule views
-1. Event scope and case scope business rules
-1. Edge scope and case scope business rules
-1. Value switch icon and business rule actions (**...**)
+1. Business rule views icon.
+1. **Metric at node:** Event scope and case scope business rules.
+1. **Metric at edge:** Edge scope and case scope business rules.
+1. Value switch icon and business rule actions (**...**).
 
 Because case scope business rules represent complete cases, you can select case scope business rules from both the events and edges lists. Event scope and edge scope business rules are available only in the corresponding list.
 

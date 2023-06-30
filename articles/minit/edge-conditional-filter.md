@@ -1,6 +1,6 @@
 ---
 title: Edge conditional filter
-description: Learn how to use the edge conditional filter in minit.
+description: Learn how to use the edge conditional filter in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -23,7 +23,7 @@ If there are defined resource attributes in the active process, the dropdown off
 
 As we are dealing with edges, the available condition is limited to either case-Level attributes or edge-related metrics. For example, you want to find all cases where edge Approving -> Demand for information occurs, but only those where this edge happened for a certain supplier or region, or the mean duration of this edge exceeds a certain KPI. (If we used a resource-based attribute, the list of edges follows resource transitions, such as Lara Obrien -> Azalia Hansen.)
 
-1. Select the additional criteria type (**Case-Level Attribute**, **Edge Metric**, or **Process metric**:
+1. Select the additional criteria type (**Case-Level Attribute**, **Edge Metric**, or **Process metric**):
 
     :::image type="content" alt-text="Screenshot of the Case-Level Attribute/Edge Metric/Process metric selection." source="media/edge-same-time.png":::
 

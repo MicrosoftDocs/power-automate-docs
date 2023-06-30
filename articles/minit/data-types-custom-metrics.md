@@ -1,6 +1,6 @@
 ---
 title: List of data types - custom metrics
-description: Get a list of data types in minit.
+description: Get a list of data types in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

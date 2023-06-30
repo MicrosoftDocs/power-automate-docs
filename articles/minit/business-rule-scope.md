@@ -1,6 +1,6 @@
 ---
 title: Business rule scope 
-description: Learn about the mandatory field scope in business rule definition in minit.
+description: Learn about the mandatory field scope in business rule definition in the Process Mining desktop app.
 author: janPidych
 contributors:
   - janPidych

@@ -1,6 +1,6 @@
 ---
 title: Subprocess filter
-description: Learn how to remove part of a process from cases in minit.
+description: Learn how to remove part of a process from cases in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

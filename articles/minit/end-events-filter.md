@@ -1,6 +1,6 @@
 ---
 title: End events filter
-description: Learn how to restrict cases according to the property of the event that occurred at the beginning or at the end of the case in minit.
+description: Learn how to restrict cases according to the property of the event that occurred at the beginning or at the end of the case in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -23,7 +23,7 @@ The filter in the following screenshot will only select the cases starting with 
 
 :::image type="content" alt-text="Screenshot of a filter that specifies start and end." source="media/end-events-filter.png":::
 
-In the same way you can create a resource-based condition, for example, if you want to select only the cases that Anna started to deal with.
+In the same way, you can create a resource-based condition (for example, if you want to select only the cases that Anna started to deal with).
 
 ## Define the end events filter
 

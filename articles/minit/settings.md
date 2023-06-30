@@ -1,6 +1,6 @@
 ---
 title: Settings overview
-description: Learn how to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license in minit.
+description: Learn how to set the general options and default configuration, define the working hours calendar templates, and update the application or license in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -17,11 +17,11 @@ search.audienceType:
 
 # Settings overview
 
-The **Settings** in options allow you to set the general options and default configuration of minit, define the working hours calendar templates, and update the application or license.
+The **Settings** in options allow you to set the general options and default configuration of the Process Mining desktop app, define the working hours calendar templates, and update the application or license.
 
 ## Set options
 
-Change various settings in minit.
+Change various settings in the Process Mining desktop app.
 
 1. On the title bar, select the gear icon > **Options**.
 
@@ -73,7 +73,7 @@ To learn more, go to [Working hours](working-hours.md).
 
 ## About
 
-Display the minit version information.
+Display the Process Mining desktop app version information.
 
 1. On the title bar, select the gear icon > **About**.
 

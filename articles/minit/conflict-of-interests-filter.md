@@ -1,6 +1,6 @@
 ---
 title: Conflict of interests filter
-description: Learn how to use the conflict of interests filter in minit.
+description: Learn how to use the conflict of interests filter in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -23,7 +23,7 @@ By means of the filter, you can specify two sets of events which should happen i
 
 The screenshot shows a situation where this filter is used to find out if there's been a customer who was charged by the same person as the one who actually collected payment. For this purpose, the filter is set to select all cases where these two activities occurred and were carried out by the same person.
 
-:::image type="content" alt-text="screenshot of the conflict of interest filter." source="media/conflict-of-interests-filter.png":::
+:::image type="content" alt-text="Screenshot of the conflict of interest filter." source="media/conflict-of-interests-filter.png":::
 
 ## Define the conflict of interests filter
 

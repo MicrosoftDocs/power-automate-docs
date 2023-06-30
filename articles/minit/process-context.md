@@ -1,6 +1,6 @@
 ---
 title: Manage settings with process context
-description: Learn about the process settings you can change in minit.
+description: Learn about the process settings you can change in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
@@ -40,13 +40,10 @@ On the **Process context** screen, you can launch the following capabilities. To
 
 - **Map Hierarchies**: Create and manage [hierarchies](hierarchical-process-mining.md).
 
-
-
 - **Case categorization**: [Categorize cases](case-categorization.md) as Running, Finished, or Stuck.
 
 - **General settings**: Select the [default **Activity label**](view-settings.md).
 
-    :::image type="content" alt-text="Screenshot of the Custom metrics tab." source="media/PC-overview.png":::
 
 ### See also
 

@@ -1,6 +1,6 @@
 ---
 title: Application settings
-description: Learn how to change application settings such as user interface language or set where the exported files will be stored in minit.
+description: Learn how to change application settings such as user interface language or set where the exported files will be stored in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

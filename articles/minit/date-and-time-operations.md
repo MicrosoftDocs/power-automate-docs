@@ -1,6 +1,6 @@
 ---
 title: List of date and time operations
-description: Get a list of date and time operations in minit.
+description: Get a list of date and time operations in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

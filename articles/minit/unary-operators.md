@@ -1,6 +1,6 @@
 ---
 title: List of unary and binary operators
-description: Get a list of unary and binary operators in minit.
+description: Get a list of unary and binary operators in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm

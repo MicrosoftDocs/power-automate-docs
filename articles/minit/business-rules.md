@@ -1,6 +1,6 @@
 ---
 title: Business rules overview
-description: Learn how to define business rules that evaluate KPIs in minit.
+description: Learn how to define business rules that evaluate KPIs in the Process Mining desktop app.
 author: janPidych
 contributors:
   - janPidych
@@ -18,7 +18,7 @@ search.audienceType:
 
 # Business rules overview
 
-Minit allows you to define business rules that evaluate your key performance indicators (KPI). Business rules set thresholds that are associated with a category flag&mdash;**Error**, **Warning**, or **OK**&mdash;to help you quickly spot problems in your processes.
+The Process Mining desktop app allows you to define business rules that evaluate your key performance indicators (KPI). Business rules set thresholds that are associated with a category flag&mdash;**Error**, **Warning**, or **OK**&mdash;to help you quickly spot problems in your processes.
 
 Thresholds apply to all business rules in the process context. However, each business rule can have its own calculation formula and filters. Because business rules are part of the process context, they're available in any view you create for that process.
 

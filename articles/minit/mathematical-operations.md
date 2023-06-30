@@ -1,6 +1,6 @@
 ---
 title: List of mathematical operations
-description: Learn about the parameters and output data types for mathematical features in minit.
+description: Learn about the parameters and output data types for mathematical features in the Process Mining desktop app.
 author: rosikm
 contributors:
   - rosikm
