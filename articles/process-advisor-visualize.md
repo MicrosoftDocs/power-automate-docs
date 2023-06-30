@@ -21,7 +21,8 @@ search.audienceType:
 
 The process map is a powerful tool that can help you visualize and analyze your business processes. It provides a graphical representation of how your processes are performed, making it easier to identify areas for improvement. You can access the process map by selecting the **Analytics** > **Process** tab. From there, you'll be able to see a detailed view of your processes, including each step in the process and how they are connected. The process map can help you identify inefficiencies or bottlenecks in your processes, allowing you to make improvements that can save time and resources.
 
-:::image type="content" source="./media/automation-reco-1.png" alt-text="Screenshot of the process map.":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/3fe3f98c-6418-4679-804b-5c650940b93c)
+
 
 Activities are tasks or actions that form a business process, and they can be performed by humans or machines. In the process map, activities are represented as nodes and transitions between them as edges, with each sequence having a start and an end.
 
