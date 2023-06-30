@@ -2,7 +2,7 @@
 title: Work queues actions (preview)
 description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
-ms.date: 5/31/2023
+ms.date: 6/30/2023
 ms.author: dbekirop
 ms.reviewer: 
 contributors:
