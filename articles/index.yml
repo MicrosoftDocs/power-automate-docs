@@ -1,21 +1,19 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Automate documentation # < 60 chars
-summary: Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
-# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin | power-apps | power-automate | power-bi | power-virtual-agents
+summary: Discover how to make the most of Power Automate with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how to quickly create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
 brand: power-automate
 
 metadata:
-  title: Power Automate documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results. < 160 chars.
-
-  ms.subservice: cloud-flow
+  title: Official Microsoft Power Automate documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Discover how to make the most of Power Automate with online training courses, docs, and videos covering product capabilities and how-to articles. Learn how to quickly create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. # Required; article description that is displayed in search results.  
   ms.topic: hub-page # Required
   author: v-aangie #Required; your GitHub user alias, with correct capitalization.
   ms.author: angieandrews #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/22/2023 #Required; mm/dd/yyyy format.
   ms.reviewer: angieandrews
-  hide_bc: false
+  ms.date: 06/30/2023 #Required; mm/dd/yyyy format.
+  ms.custom: bap-template
+  hide_bc: true
 
 highlightedContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
@@ -23,7 +21,7 @@ highlightedContent:
   items:
     # Card
     - title: What is Power Automate?
-      itemType: overview
+      itemType: get-started
       url: getting-started.md
 
     # Card
@@ -32,208 +30,130 @@ highlightedContent:
       url: whats-new.md
 
     # Card
-    - title: "Power Automate videos"
-      itemType: video
-      url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
-
-    # Card
     - title: Power Automate training
       itemType: learn
       url: /training/powerplatform/power-automate
 
-# conceptualContent section
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+    # Card
+    - title: Troubleshoot
+      itemType: concept
+      url: /troubleshoot/power-platform/power-automate/welcome-power-automate
 
-conceptualContent:
-  items:
-    - title: Get started with Power Automate
-      links:
-        - text: Sign up for free
-          url: ./sign-up-sign-in.md
-          itemType: get-started
-        - text: Create your first flow
-          url: ./getting-started.md#create-your-first-flow
-          itemType: how-to-guide
-        - text: Power Automate FAQs
-          url: ./frequently-asked-questions.yml
-          itemType: reference
 
-    - title: Create cloud flows
+additionalContent: 
+  sections:
+  - title: Create and design
+    items:
+    - title: Try/Buy
       links:
-        - text: Automated flows
+        - text: Try Power Automate
+          url: sign-up-sign-in.md
+        - text: Buy Power Automate
+          url: /power-automate/organization-q-and-a#how-can-people-gain-access-to-the-paid-features-of-power-automate
+    - title: Create flows
+      links:
+        - text: Create automated flows
           url: ./get-started-logic-flow.md
-          itemType: overview
-        - text: Scheduled flows
+        - text: Create scheduled flows
           url: ./run-scheduled-tasks.md
-          itemType: overview
-        - text: Instant flows
-          url: ./mobile/mobile-create-flow.md
-          itemType: overview
-
-    - title: Create desktop flows for RPA
-      links:
-        - text: What are desktop flows?
-          url: ./desktop-flows/introduction.md
-          itemType: overview
-        - text: Set up Power Automate
-          url: ./desktop-flows/install.md
-          itemType: how-to-guide
         - text: Create desktop flows
           url: ./desktop-flows/create-flow.md
-          itemType: how-to-guide
-
+    - title: AI copilot capabilities
+      links:
+        - text: Get started with AI copilot (preview)
+          url: ./get-started-with-copilot.md
+        - text: Edit a flow using copilot (preview)
+          url: ./get-started-with-copilot.md#edit-a-flow-using-copilot
     - title: Plan with process advisor
       links:
-        - text: Process mining
+        - text: Understand your processes and identify opportunities with process mining
           url: process-mining-overview.md
-          itemType: overview
-        - text: Minit desktop application
+        - text: Dig into the details with minit
           url: minit/minit-desktop-application-overview.md
-          itemType: overview
-        - text: Task mining
+        - text: Streamline workflows and identify inefficiencies with task mining
           url: task-mining-overview.md
-          itemType: overview
-
-    - title: Use flows with...
-      links:
-        - text: Teams
-          url: ./teams/overview.md
-          itemType: overview
-        - text: SharePoint
-          url: ./sharepoint-overview.md
-          itemType: overview
-        - text: Email
-          url: ./email-overview.md
-          itemType: overview
-        - text: Forms
-          url: ./forms/overview.md
-          itemType: overview
-        - text: Approvals
-          url: ./get-started-approvals.md
-          itemType: overview
-
-    - title: Use flows with Dataverse
-      links:
-        - text: Overview
-          url: ./dataverse/overview.md
-          itemType: overview
-        - text: Trigger flows with Dataverse events
-          url: ./dataverse/create-update-delete-trigger.md
-          itemType: how-to-guide
-        - text: Add a row
-          url: ./dataverse/create.md
-          itemType: how-to-guide
-        - text: Delete a row
-          url: ./dataverse/delete-row.md
-          itemType: how-to-guide
-        - text: Upload or download files/images
-          url: ./dataverse/upload-download-file.md
-          itemType: how-to-guide
-    - title: Create approval flows
-      links:
-        - text: Get started
-          url: ./get-started-approvals.md
-          itemType: how-to-guide
-        - text: Trigger approvals from SharePoint
-          url: ./trigger-sharepoint-list.md
-          itemType: how-to-guide
-        - text: Top scenarios
-          url: ./approvals-howto.md
-          itemType: how-to-guide
-        - text: Format approval requests
-          url: ./approvals-markdown-support.md
-          itemType: how-to-guide
-        - text: Customize responses
-          url: ./create-approval-response-options.md
-          itemType: how-to-guide
-    - title: Use business process flows
-      links:
-        - text: Overview
-          url: ./business-process-flows-overview.md
-          itemType: how-to-guide
-        - text: Create a business process flow
-          url: ./create-business-process-flow.md
-          itemType: how-to-guide
-        - text: Add custom controls in business process flows
-          url: ./custom-controls-business-process-flows.md
-          itemType: how-to-guide
-        - text: Best practices in using business process flow columns
-          url: ./best-practices-entity-attributes.md
-          itemType: how-to-guide
-
-    - title: Use solutions for ALM
+    - title: Use solutions
       links:
         - text: Use solutions to distribute flows
           url: ./overview-solution-flows.md
-          itemType: overview
         - text: Create a cloud flow in a solution
           url: ./create-flow-solution.md
-          itemType: overview
-        - text: Implement healthy ALM using solutions
+        - text: Implement healthy application lifecycle management (ALM) using solutions
           url: /power-platform/alm/overview-alm
-          itemType: overview
-
-    - title: Do more with your flows
+    - title: Integrate with other products
       links:
-        - text: Use AI Builder for AI-infused flows
-          url: ./use-ai-builder.md
-          itemType: overview
-        - text: Use adaptive cards
-          url: ./overview-adaptive-cards.md
-          itemType: how-to-guide
-        - text: Use data operations
-          url: ./data-operations.md
-          itemType: how-to-guide
-
-    - title: Learning catalog
-      links:
-        - text: App maker
-          url: ./learning-catalog/learning-catalog-app-maker.md
-          itemType: reference
-        - text: Administrator
-          url: ./learning-catalog/learning-catalog-administrator.md
-          itemType: reference
-      footerLink:
-        url: ./learning-catalog/learning-catalog.md
-        text: More
-
-    - title: Support and licensing
-      links:
-        - text: Troubleshoot a cloud flow
-          url: ./fix-flow-failures.md
-          itemType: how-to-guide
-        - text: Power Automate community
-          url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
-          itemType: reference
-        - text: Power Automate licensing
-          url: /power-platform/admin/power-automate-licensing/overview
-          itemType: reference
-
+        - text: Use flows in Teams
+          url: ./teams/overview.md
+        - text: Build SharePoint workflows
+          url: ./sharepoint-overview.md
+        - text: Send email, schedule meetings, add contacts, and more
+          url: ./email-overview.md
     - title: Best practices guidance
       links:
         - text: Plan a Power Automate project
           url: ./guidance/planning/introduction.md
-          itemType: reference
-        - text: RPA with SAP
-          url: ./guidance/rpa-sap-playbook/introduction.md
-          itemType: reference
-        - text: Automation kit
+        - text: Manage, govern, and scale adoption with the Automation Kit
           url: ./guidance/automation-kit/overview/introduction.md
-          itemType: reference
-        - text: Automation adoption
+        - text: Apply best practices for automation adoption
           url: ./guidance/automation-coe/overview.md
-          itemType: reference
+  - title: Administer and extend
+    items:
+    - title: Administer Power Automate
+      links:
+        - text: Use the Power Platform admin center
+          url: admin-center-introduction.md
+        - text: Administer environments and resources
+          url: environments-overview-admin.md
+        - text: Set up data loss prevention policies
+          url: prevent-data-loss.md
+    - title: Extend Power Automate
+      links:
+        - text: Enterprise developer, ISV, and partner guide
+          url: developer/dev-enterprise-intro.md
+        - text: Work with cloud flows using code
+          url: manage-flows-with-code.md
+        - text: Work with desktop flows using code
+          url: developer/desktop-flow-public-apis.md
+        - text: Build and certify custom connectors
+          url: developer/register-custom-api.md
+  - title: Use
+    items:
+    - title: Use flows with Dataverse
+      links:
+        - text: Add a row
+          url: ./dataverse/create.md
+        - text: Delete a row
+          url: ./dataverse/delete-row.md
+        - text: Upload or download files and images
+          url: ./dataverse/upload-download-file.md
+    - title: Use flows with...
+      links:
+        - text: Teams
+          url: ./teams/overview.md
+        - text: SharePoint
+          url: ./sharepoint-overview.md
+        - text: Email
+          url: ./email-overview.md
+        - text: Forms
+          url: ./forms/overview.md
+        - text: Approvals
+          url: ./get-started-approvals.md
+    - title: Use business process flows
+      links:
+        - text: Understand business process flows
+          url: ./business-process-flows-overview.md
+        - text: Create a business process flow
+          url: ./create-business-process-flow.md
+        - text: Add custom controls in business process flows
+          url: ./custom-controls-business-process-flows.md
+        - text: Apply best practices for using business process flow columns
+          url: ./best-practices-entity-attributes.md
 
-# additionalContent section (optional)
-# Card with summary style
-additionalContent:
-  # Supports up to 3 sections
-  sections:
-    - title: Related content # < 60 chars (optional)
-    - items:
+  - title: Related content
+    items:
         # Card
         - title: Power Platform
-          summary: One-stop learning resource for Power Platform applications and features including admin, developer, and guidance documentation.
+          summary: One-stop learning resource for Power Platform applications and features, with admin, developer, and guidance documentation.
           url: /power-platform
         # Card
         - title: Power Apps
@@ -243,21 +163,19 @@ additionalContent:
         - title: Power BI
           summary: Turn your unrelated sources of data into coherent, visually immersive, and interactive insights.
           url: /power-bi
+        # Card
         - title: Power Pages
           summary: Design, host, and administer secure, modern, and low-code business websites.
           url: /power-pages
+        # Card
         - title: Power Virtual Agents
           summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
           url: /power-virtual-agents
-    - title: See also
-      items:
         # Card
         - title: Dynamics 365
-          summary: "The next generation of CRM and ERP applications"
+          summary: Empower your organization with the next generation of CRM and ERP applications.
           url: /dynamics365/
         # Card
         - title: Microsoft Azure
-          summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
+          summary: Learn how this ever-expanding set of cloud computing services can help your organization meet its business challenges.
           url: /azure
-
-
