@@ -23,7 +23,8 @@ With process animation, you can visualize process development over time. You can
 
 Control animation speed, advanced settings, and more on the **Animation** screen.
 
-:::image type="content" alt-text="Screenshot of the animation controls settings screen." source="media/process-animation/animation-controls-resize.png":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/394660ac-fd56-4e77-b427-ec58df7c1ffc)
+
 
 Legend:
 
