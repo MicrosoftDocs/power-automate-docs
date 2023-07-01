@@ -24,9 +24,10 @@ Before you can start using the Process Mining desktop app, you need to install i
 
 1. On the panel to the left, select **Process mining**.
 
-1. At the top of the process mining screen, select **Install Process Mining desktop app**.
+1. At the top of the process mining screen, select **Download app**.
   
-   :::image type="content" alt-text="Screenshot of the Install Process Mining desktop app button on the process advisor page." source="media/minit-install-a1.png":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/c8ca41f5-4534-4f7b-8b7f-f007e9ee9244)
+
 
 1. Open the installer file when prompted, and then select **Install** to run the installer.
 
