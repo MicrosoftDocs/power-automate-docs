@@ -1,6 +1,6 @@
 ---
-title: Install the Process Mining desktop app
-description: Learn how to install the Process Mining desktop app.
+title: Install Power Automate Process Mining
+description: Learn how to install Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
@@ -16,9 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Install the Process Mining desktop app
+# Install Power Automate Process Mining
 
-Before you can start using the Process Mining desktop app, you need to install it from the process mining capability.
+Before you can start using Power Automate Process Mining, you need to install it on your desktop from the process mining capability.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -26,8 +26,7 @@ Before you can start using the Process Mining desktop app, you need to install i
 
 1. At the top of the process mining screen, select **Download app**.
   
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/c8ca41f5-4534-4f7b-8b7f-f007e9ee9244)
-
+    :::image type="content" source="media/minit-install-a1.png" alt-text="Screenshot of the Download app option in Power Automate Process Mining.":::
 
 1. Open the installer file when prompted, and then select **Install** to run the installer.
 
@@ -37,13 +36,13 @@ Before you can start using the Process Mining desktop app, you need to install i
 
 1. In the next step, accept the terms of use and confirm the choice of telemetry data collection, and then select **Next step**.
 
-1. By default, the installation process will store process mining data in a new **Process Mining desktop app** folder in the **Documents** folder in your OneDrive. Change the location if necessary, and then select **Next step**.
+1. By default, the installation process will store process mining data in a new **Process Mining** folder in the **Documents** folder in your OneDrive. Change the location if necessary, and then select **Next step**.
 
-    If the selected folder has been used before, the Process Mining desktop app lets you choose whether you want to use the content of the folder (for example, data and settings from a previous installation), or cleanup the folder. Select **Use** or **Cleanup** to specify your choice. To go back and change the storage location, select **Cancel**.
+    If the selected folder has been used before, Power Automate Process Mining lets you choose whether you want to use the content of the folder (for example, data and settings from a previous installation), or cleanup the folder. Select **Use** or **Cleanup** to specify your choice. To go back and change the storage location, select **Cancel**.
 
 1. Select **Apply and Mine!** to finish the wizard.
 
-1. Sign in to the Process Mining desktop app with your work account.
+1. Sign in to Power Automate Process Mining with your work account.
 
 1. Start process mining from the **Processes** screen.
 

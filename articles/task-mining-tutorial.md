@@ -42,25 +42,15 @@ In this tutorial, we'll import a solution which already has sample recordings.
 
 1. On the navigation pane to the left, select **Solutions**.
 
-   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/07219a4f-7472-4e83-8ae4-a8a27d60e559)
-
-
 1. In the toolbar at the top, select **Import solution**.
-
-  ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/33acbd97-988b-419c-b51c-12fc2ab91897)
-
 
 1. Select **Browse**.
 
-      :::image type="content" source="media/task-mining-tutorial/browse.png" alt-text="Screenshot of the 'Import a solution' Browse screen.":::
-
-1. Download the [RPAinaDayProcessAdvisor_1_0_0_7 solution .zip file](https://download.microsoft.com/download/9/9/5/9952b396-d9fb-4384-8d4e-5f127bf576c2/RPAinaDayProcessAdvisor_1_0_0_7.zip)  and open it.
+1. Download the [RPAinaDayProcessAdvisor_1_0_0_7 solution .zip file](https://download.microsoft.com/download/9/9/5/9952b396-d9fb-4384-8d4e-5f127bf576c2/RPAinaDayProcessAdvisor_1_0_0_7.zip) and open it.
 
       :::image type="content" source="media/task-mining-tutorial/download.png" alt-text="Screenshot of the downloaded file folder.":::
 
 1. Select **Next**.
-
-      :::image type="content" source="media/task-mining-tutorial/import-solution.png" alt-text="Screenshot of the Import a solution screen.":::
 
 1. Select **Import** and wait for the solution to import.
 
@@ -70,28 +60,18 @@ In this tutorial, we'll import a solution which already has sample recordings.
 
 1. Once you've successfully imported the .zip file, on the navigation pane to the left, select **Process advisor** > **All processes** below the process cards.
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/30be13fa-7539-4404-94b3-b37cc38e232a)
-
-
 1. Select the **Invoice submission process**.
-   
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/9faea174-8ef9-4e7b-919f-9799bad93b96)
 
-
-    > [!NOTE]
-    >
-    > If this is the first time you're accessing process advisor, make sure you've selected **Processes** at least once and waited until the **Getting things ready** loading spinner has disappeared before importing. If you try to import the RPAinaDayProcessAdvisor_1_0_0_7.zip solution without first initializing the **Processes** section of process advisor, you'll see only a couple of recordings in the imported solution.
-    >
-    > You can see some of the existing recordings under **Recordings**.
+   > [!NOTE]
+   > If this is the first time you're accessing process advisor, make sure you've selected **Processes** at least once and waited until the **Getting things ready** loading spinner has disappeared before importing. If you try to import the RPAinaDayProcessAdvisor_1_0_0_7.zip solution without first initializing the **Processes** section of process advisor, you'll see only a couple of recordings in the imported solution.
+   >
+   > You can see some of the existing recordings under **Recordings**.
 
 1. To be sure you see the entire list of existing recordings, select **See all**.
 
-    :::image type="content" source="media/task-mining-tutorial/recordings.png" alt-text="Screenshot of media/task-mining-tutorial/recordings.png":::
-
 1. Go back to the **Invoice submission process** by selecting **Invoice submission process** from the breadcrumbs at the top of the page.
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/763427fd-869a-4691-bfd8-a666ba4eedaa)
-
+    :::image type="content" source="media/task-mining-tutorial/go-back.png" alt-text="Screenshot of the Invoice submission process screen in the breadcrumbs.":::
 
 ### Explore the features
 
@@ -105,9 +85,7 @@ You'll see the following features:
 
 - **Share**: Share your processes with your team members.
 
-    Process owners can pick two role options when sharing with other users: contributor and co-owner. The contributor role gives the user the ability to upload their own recording to the process. The co-owner role gives the user the ability to upload recordings and edit other recordings.
-
-    :::image type="content" source="media/task-mining-tutorial/roles.png" alt-text="Screenshot of role options.":::
+    Process owners can pick two role options when sharing with other users: contributor and co-owner. The **Contributor** role gives the user the ability to upload their own recording to the process. The **Co-owner** role gives the user the ability to upload recordings and edit other recordings.
 
 - **Analyze**: Analyze a process.
 
@@ -117,9 +95,8 @@ You'll see the following features:
 
 ## Analyze a process
 
-1. Select **Analyze** to analyze a process. When you perform this action, process advisor will analyze existing recordings to identify any bottlenecks within the business process.
+1. Select **Analyze** to analyze a process. When you perform this action, the process mining capability will analyze existing recordings to identify any bottlenecks within the business process.
 
-    :::image type="content" source="media/task-mining-tutorial/analyzing-recs.png" alt-text="Screenshot of the Analyze button.":::
 
 1. The analysis will take a few minutes to complete. During this process, a status message displays under the **New recording** button. If you run into an error during the analysis stage, select **Analyze** to trigger this action again.
 
@@ -133,7 +110,7 @@ You'll see the following features:
 
 This section explains what you can do on the **Analytics** screen.
 
-:::image type="content" source="media/task-mining-tutorial/analytics-layout.png" alt-text="Screenshot of the Analytics screen":::
+:::image type="content" source="media/task-mining-tutorial/analytics-layout.png" alt-text="Screenshot of the Analytics screen.":::
 
 - **Automate activities (preview)**: To streamline the automation process, you can use the **Automate activities** feature (currently in preview mode). This feature detects if the user performed actions using an application that has Power Automate actions available, such as Microsoft Outlook or Excel. Upon selecting **Automate activities**, a draft Power Automate process containing the relevant actions is generated. The user can then modify and customize the draft process to create the final automated process.
 
@@ -191,7 +168,7 @@ You can see that people spend a lot of their time entering the information in th
 
 1. Deselect **Var 1** by selecting any blank space within the **Variant by frequency** area.
 
-:::image type="content" source="media/task-mining-tutorial/variant-blank.png" alt-text="Screenshot of selecting a blank space.":::
+    :::image type="content" source="media/task-mining-tutorial/variant-blank.png" alt-text="Screenshot of selecting a blank space.":::
   
 2. Look at the top analytics data. The average process time is 1.47 minutes out of five recordings.  
 
@@ -209,8 +186,7 @@ You can see that people spend a lot of their time entering the information in th
 
 4. Select the **Application** tab to see details on which applications were used.
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/d064d124-464e-48a8-8e6d-cff32c4ab400)
-
+    :::image type="content" source="media/task-mining-tutorial/app-preview.png" alt-text="Screenshot of Application.":::
 
     It might take a while to load the reports.
 
@@ -220,19 +196,15 @@ You can see that people spend a lot of their time entering the information in th
 
     - Take time to get familiar with the different reports.
  
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/2748546b-aabe-4cf5-9746-c1560910070a)
-
+        :::image type="content" source="media/task-mining-tutorial/app-screen.png" alt-text="Screenshot of the Application screen.":::
 
 1. Go back to the process map by selecting **Process**.
-
-     :::image type="content" source="media/task-mining-tutorial/process-tab.png" alt-text="Screenshot of the Process tab.":::
 
 1. Look at the automate activities feature. From the process map, you can see that process advisor has highlighted several activities as potential candidates for automation based on applications.
 
 1. Start creating a flow for automation by selecting **Automate activities** at the top.
 
-  ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/f71fff66-0709-41ca-b6a1-f1952d3fa8f0)
-
+     :::image type="content" source="media/task-mining-tutorial/blue-circles.png" alt-text="Screenshot of process map with blue circles.":::
 
     A tab will open in the browser and show the flow designer. The recommended actions that match to the activities from the process map automatically appear on the right panel. For example, several email connectors are suggested for you to use in order to automate the **Download invoice attachment from email** activity.
 
