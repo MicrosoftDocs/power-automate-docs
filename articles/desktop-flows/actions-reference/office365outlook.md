@@ -4,8 +4,8 @@ description: Learn about the available Office 365 Outlook actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 29/06/2023
-ms.author: jpapadimitriou
+ms.date: 06/29/2023
+ms.author: dipapa
 ms.reviewer: 
 contributors:
 search.audienceType: 
