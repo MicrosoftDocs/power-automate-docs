@@ -9,6 +9,7 @@ ms.date: 11/24/2022
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -55,6 +56,14 @@ To declare variables in scripting actions and return results in Power Automate, 
     var variableName = "variableValue";
     WScript.Echo(variableName);
     ```
+
+- For .NET scripts, use the **Script Parameters** window, accessed through the [Run .NET script](#rundotnetscript) action's configuration card. You can set the type of the respective variable:
+
+:::image type="content" source="media\scripting\run-dotnet-script-action-scriptparameters1.png" alt-text="Screenshot of the Script Parameters window in Run .NET script action, setting the variable type":::
+
+as well as whether it is an input to .NET script (**In** option in Direction dropdown), an output of the script (**In** option in Direction dropdown) or both (**In-Out** option in Direction dropdown).
+
+:::image type="content" source="media\scripting\run-dotnet-script-action-scriptparameters2.png" alt-text="Screenshot of the Script Parameters window in Run .NET script action, setting the direction":::
 
 To use Power Automate variables in scripting actions, use the percentage notation (**%**) and handle the variables the same way as hardcoded values.
 
@@ -176,5 +185,29 @@ Executes Python 2 script code and retrieves its output.
 |-----|-----|
 |Failed to run Python script|Indicates a problem running the provided Python script|
 |Directory not found|Indicates that the directory wasn't found|
+
+## <a name="rundotnetscript"></a> Run .NET script
+
+Executes .NET (C#/VB.NET) script code and retrieves its output.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Language|N/A|C#/ VB.NET|C#|The language of the script|
+|.NET script imports|Yes|[Text value](../variable-data-types.md#text-value)||The .NET script imports to be included in the script|
+|References to be loaded|Yes|[Folder](../variable-data-types.md#files-and-folders)||The root path where .NET dynamic link libraries (.dll files) references are located|
+|Script parameters|Yes|Script Parameters as defined by the user||Setting the values of the parameters that will be defined in the script|
+|.NET code to run|No|[Text value](../variable-data-types.md#text-value)||The .NET code to run|
+
+### Variables produced
+
+This action might produce variables, depending on the configuration made by the user when using the **Script Parameters** window.
+
+### <a name="rundotnetscript_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to run the .NET script|Indicates a problem running the provided .NET script|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
