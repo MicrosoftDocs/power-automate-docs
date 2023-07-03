@@ -15,12 +15,12 @@ search.audienceType:
 
 # Cloud Connectors as Power Automate for desktop actions
 
-[Cloud Connectors available for Power Automate](https://learn.microsoft.com/connectors/connector-reference/connector-reference-powerautomate-connectors) are introduced for desktop flows. 
+[Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are gradually introduced for desktop flows as well. 
 
 ## Prerequisites and limitations
 
 - You need an Attended RPA license.
-- Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
+- Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
 - Sharing desktop flows with cloud connector actions isn't supported. Co-owners won't be able to run such desktop flows unless they overwrite the connection references with their own. **Users** with read access are unable to run such flows.
 
 
