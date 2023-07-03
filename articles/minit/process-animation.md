@@ -23,7 +23,7 @@ With process animation, you can visualize process development over time. You can
 
 Control animation speed, advanced settings, and more on the **Animation** screen.
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/394660ac-fd56-4e77-b427-ec58df7c1ffc)
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/24a8c9a0-08fd-420d-a8d0-7a72a77fefd2)
 
 
 Legend:
