@@ -219,7 +219,7 @@ If it is taking much longer than expected for your flow to trigger, here are the
 
    1. Acquire a per user or per flow license. After this is acquired, open and then save the flow, in order to refresh the entitlement associated with it, and to change the throttling mode.
 
-   1. Split the flow into several instances. If the flow processes data, you can divide this data into subsets (per country, per business area, etc.).
+   1. Split the flow into several instances. If the flow processes data, you can divide this data into subsets (per country/region, per business area, etc.).
 
    1. After this, you can use **Save As** on the flow to create several instances that will process their own data. Since the quota is per flow, this can be used as a workaround.
 
