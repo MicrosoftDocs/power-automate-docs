@@ -12,7 +12,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/30/2023
+ms.date: 07/04/2023
 ms.author: quseleba
 ---
 
@@ -30,7 +30,7 @@ You can access this page:
 
 The run details card displays all the parameters related to your run.
 
-  ![Screenshot of the run details card](media/run-details-card.png)
+  :::image type="content" source="media/monitor-run-details/run-details-card.png" alt-text="Screenshot of the run details card.":::
 
 - Parent cloud flow run: the name of the cloud flow that contains the executed desktop flow. The link redirects to the run details page of the parent cloud flow (for attended and unattended runs). If the run mode is local attended (flow triggered from Power Automate for desktop), the field remains empty.
 - Parent desktop flow run: if there's no parent desktop flow, the field remains empty. The link redirects to the run details page of the parent desktop flow.
@@ -49,9 +49,8 @@ The run status is a timeline that allows to understand how works a desktop flow 
 
 It might be critical for your orchestration to identify if a step took too much time or if a desktop flow always fails during the same step.
 
-  ![Screenshot of the run details timeline](media/Run-details-timeline.png)
+  :::image type="content" source="media/monitor-run-details/Run-details-timeline.png" alt-text="Screenshot of the run details timeline.":::
   
-
 ## Actions details 
 This card allows you to see information and status for each action of your desktop flow:
 - Start: timestamp when the action has started
@@ -62,9 +61,3 @@ This card allows you to see information and status for each action of your deskt
 - Status: this column gives you for each action the result of its run. 
 
 By default, the actions are sorted from the latest to the earliest. If you don’t see all the action in the card, select see all to view the full list of action details.
-
-
-
-
-
-
