@@ -23,7 +23,7 @@ The 'Inspect UI element' tool is a powerful feature in Power Automate for deskto
 
 To launch the 'Inspect UI element' tool, navigate to the designer component of Power Automate for desktop and go to the UI element repository. Click on the 'Add UI element' drop down and select the 'Inspect UI elements' option.
 
-:::image type="content" source="media/Repair selector/Repair_RepairButton_1.png" alt-text="Repair selector button.":::
+:::image type="content" source="media/Inspect UI Elements/InspectUIElements_1.png" alt-text="Launch Inspect UI elements tool":::
 
 ## Description of 'Inspect UI elements' tool
 
@@ -36,12 +36,17 @@ When you launch the 'Inspect UI elements' tool, you'll see a hierarchy tree with
 
 Selecting a UI element in the hierarchy tree will display its attributes and values on the right pane of the tool. These attributes and values can be used to create a custom selector in the UI element builder of the designer for the specific UI element. In order to edit the selector of a UI element you have to capture it and open it in the UI element selector builder window. 
 
+:::image type="content" source="media/Inspect UI Elements/InspectUIElements_Attributes.png" alt-text="Check UI element attributes":::
+
 Moreover, you can capture the selected UI element and store it in the UI element repository of the desktop flow by clicking on the ‘Add UI element’ button on the top of the tool. This UI element can then be used in a UI automation or Browser automation action respectively, depending on its type (desktop or web UI element). 
+
+:::image type="content" source="media/Inspect UI Elements/InspectUIElements_Addtoflow.png" alt-text="Add UI elememnt to flow":::
 
 The hierarchy tree is refreshed every time you expand a UI element, and you can refresh the whole tree by clicking on the ‘Refresh’ button on the top of the tool. 
 
 In addition, while the ‘Inspect UI elements’ tool is opened, the Power Automate for desktop highlighter is visible. You can navigate directly to a specific UI element by hovering with your mouse over the desired UI element and clicking a right click. This will open the context menu and then you select the ‘Inspect UI element’ option. It will navigate you to the specific UI element in the hierarchy tree of the tool and select it, displaying its attributes and the respective values.
 
+:::image type="content" source="media/Inspect UI Elements/InspectUIElements_ContextMenu.png" alt-text="Navigate to specific UI element":::
 
 ### See also
 
