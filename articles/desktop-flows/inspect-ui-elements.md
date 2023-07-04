@@ -25,7 +25,7 @@ To launch the 'Inspect UI element' tool, navigate to the designer component of P
 
 :::image type="content" source="media/Repair selector/Repair_RepairButton_1.png" alt-text="Repair selector button.":::
 
-## Description of 'Inspect UI elements' tool##
+## Description of 'Inspect UI elements' tool
 
 When you launch the 'Inspect UI elements' tool, you'll see a hierarchy tree with all available UI elements on your machine. This includes both web and desktop UI elements, which are separated by their respective icons. Moreover, the web UI elements are split into each browser for easier navigation, displaying each tab that is opened in your browser as a parent UI element. Note that the tabs are not actual UI elements. You can expand the tree by clicking on the expand icon next to a UI element, which will load and display all of its children UI elements. 
 
