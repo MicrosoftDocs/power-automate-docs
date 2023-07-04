@@ -48,6 +48,11 @@ In addition, while the ‘Inspect UI elements’ tool is opened, the Power Autom
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_ContextMenu.png" alt-text="Navigate to specific UI element":::
 
+## Known issues and limitations
+- **Issue:** Web browser UI element trees cannot be displayed if the browser window is minimized.
+
+    **Workaround:** Ensure that web browser window you desire inspect in not minimized in your machine.
+
 ### See also
 
 [Automate using UI elements](ui-elements.md)
