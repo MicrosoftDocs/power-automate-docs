@@ -46,8 +46,12 @@ In addition, while the ‘Inspect UI elements’ tool is opened, the Power Autom
 ### See also
 
 [Automate using UI elements](ui-elements.md)
+
 [Automate desktop applications](desktop-automation.md)
+
 [Automate webpages](automation-web.md)
+
 [Build a custom selector](build-custom-selectors.md)
+
 [Automate on virtual desktops](virtual-desktops.md)
 
