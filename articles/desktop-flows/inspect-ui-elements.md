@@ -32,7 +32,7 @@ When you launch the 'Inspect UI elements' tool, you'll see a hierarchy tree with
 > [!NOTE]
 > Please note you will be able to see the desktop UI elements of a virtual desktop in case a connection is opened between your machine and the Citrix virtual desktop or the virtual machine through RDP and Power Automate agent for virtual desktops is installed and running in the virtual desktop/machine. More information: [Automate on virtual desktops](virtual-desktops.md)
 
-:::image type="content" source="media/Repair selector/Repair_RepairButton_1.png" alt-text="Repair selector button.":::
+:::image type="content" source="media/Repair selector/InspectUIElements_BasicView.png" alt-text="Inspect UI elements tool":::
 
 Selecting a UI element in the hierarchy tree will display its attributes and values on the right pane of the tool. These attributes and values can be used to create a custom selector in the UI element builder of the designer for the specific UI element. In order to edit the selector of a UI element you have to capture it and open it in the UI element selector builder window. 
 
