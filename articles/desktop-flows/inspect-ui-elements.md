@@ -32,7 +32,7 @@ When you launch the 'Inspect UI elements' tool, you'll see a hierarchy tree with
 > [!NOTE]
 > Please note you will be able to see the desktop UI elements of a virtual desktop in case a connection is opened between your machine and the Citrix virtual desktop or the virtual machine through RDP and Power Automate agent for virtual desktops is installed and running in the virtual desktop/machine. More information: [Automate on virtual desktops](virtual-desktops.md)
 
-:::image type="content" source="media/Repair selector/InspectUIElements_BasicView.png" alt-text="Inspect UI elements tool":::
+:::image type="content" source="media/Inspect UI Elements/InspectUIElements_BasicView.png" alt-text="Inspect UI elements tool":::
 
 Selecting a UI element in the hierarchy tree will display its attributes and values on the right pane of the tool. These attributes and values can be used to create a custom selector in the UI element builder of the designer for the specific UI element. In order to edit the selector of a UI element you have to capture it and open it in the UI element selector builder window. 
 
@@ -43,6 +43,8 @@ Moreover, you can capture the selected UI element and store it in the UI element
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_Addtoflow.png" alt-text="Add UI elememnt to flow":::
 
 The hierarchy tree is refreshed every time you expand a UI element, and you can refresh the whole tree by clicking on the ‘Refresh’ button on the top of the tool. 
+
+### Navigate in hierarchy tree to a specific UI element in the screen
 
 In addition, while the ‘Inspect UI elements’ tool is opened, the Power Automate for desktop highlighter is visible. You can navigate directly to a specific UI element by hovering with your mouse over the desired UI element and clicking a right click. This will open the context menu and then you select the ‘Inspect UI element’ option. It will navigate you to the specific UI element in the hierarchy tree of the tool and select it, displaying its attributes and the respective values.
 
