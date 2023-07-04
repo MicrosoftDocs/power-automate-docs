@@ -17,24 +17,28 @@ search.audienceType:
 ---
 # Inspect a UI element (Preview)
 
-With the 'Inspect UI element' tool, you may explore the hierarchy tree of all UI elements that are available in your screen at the moment, check their attributes and their respective values and capture one or more UI elements for adding them into your desktop flow UI element repository.
+The 'Inspect UI element' tool is a powerful feature in Power Automate for desktop that allows you to explore the hierarchy tree of all UI elements on your screen, check their attributes and values, and capture them for use in your desktop flow through the UI and Browser automation actions. 
 
 ## How launch 'Inspect UI elements' tool
 
-You may launch the 'Inspect UI elements' tool by navigating to the designer component of Power Automate for desktop. There, you should go to the UI element repository and click on the 'Add UI element' drop down and select the respective option.
+To launch the 'Inspect UI element' tool, navigate to the designer component of Power Automate for desktop and go to the UI element repository. Click on the 'Add UI element' drop down and select the 'Inspect UI elements' option.
 
 :::image type="content" source="media/Repair selector/Repair_RepairButton_1.png" alt-text="Repair selector button.":::
 
 ## Description of 'Inspect UI elements' tool##
 
-Launching the ‘Inspect UI elements’ tool, you will see a hierarchy tree with all available UI elements in your machine. 
+When you launch the 'Inspect UI elements' tool, you'll see a hierarchy tree with all available UI elements on your machine. This includes both web and desktop UI elements, which are separated by their respective icons. Moreover, the web UI elements are split into each browser for easier navigation, displaying each tab that is opened in your browser as a parent UI element. Note that the tabs are not actual UI elements. You can expand the tree by clicking on the expand icon next to a UI element, which will load and display all of its children UI elements. 
 
 > [!NOTE]
 > Please note you will be able to see the desktop UI elements of a virtual desktop in case a connection is opened between your machine and the Citrix virtual desktop or the virtual machine through RDP and Power Automate agent for virtual desktops is installed and running in the virtual desktop/machine. More information: [Automate on virtual desktops](virtual-desktops.md)
 
-All UI elements are separated between web UI elements and desktop UI elements. You may observe their respective icons on the start of each element in the tool. Moreover, the web UI elements are split into each browser for easier navigation, displaying each tab that is opened in your browser as a parent UI element. Note that the tabs are not actual UI elements.
-
 :::image type="content" source="media/Repair selector/Repair_RepairButton_1.png" alt-text="Repair selector button.":::
+
+Selecting a UI element in the hierarchy tree will display its attributes and values on the right pane of the tool. These attributes and values can be used to create a custom selector in the UI element builder of the designer for the specific UI element. You can capture the selected UI element and store it in the UI element repository of the desktop flow by clicking on the ‘Add UI element’ button on the top of the tool. 
+
+The hierarchy tree is refreshed every time you expand a UI element, and you can refresh the whole tree by clicking on the ‘Refresh’ button on the top of the tool. 
+
+In addition, while the ‘Inspect UI elements’ tool is opened, the Power Automate for desktop highlighter is visible. You can navigate directly to a specific UI element by hovering with your mouse over the desired UI element and clicking a right click. This will open the context menu and then you select the ‘Inspect UI element’ option. It will navigate you to the specific UI element in the hierarchy tree of the tool and select it, displaying its attributes and the respective values.
 
 While you are expanding the tree by clicking on the expand icon next to a UI element, all UI elements in the next level (children UI elements) are loaded and then displayed. Selecting a UI element in the hierarchy tree, its attributes and the respective values are displayed on the right pane of the tool. The attributes and their values can be used to create a custom selector in the UI element builder of the designer for the specific UI element. Note that initially, you must capture the UI element and then edit it - manually set the selecctor of the UI element. 
 
