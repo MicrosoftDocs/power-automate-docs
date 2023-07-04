@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: georgiostrantzas
 ms.topic: conceptual
-ms.date: 02/20/2023
+ms.date: 07/04/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -235,6 +235,18 @@ You can use the following registry entry to prevent Power Automate for desktop f
 ***Value***
 
 - **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
+
+## Prevent Power Automate for desktop from uploading action logs after a desktop flow run through the console
+
+You can use the following registry entry to prevent Power Automate for desktop from uploading detailed logs per action for the respective run of the flow's run history, after a desktop flow run takes places through the console.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableFlowExecutionActionLogging|DWORD|
+
+***Value***
+
+- **1**: Power Automate for desktop won't upload detailed action logs for the respective run of the flow's run history, after the desktop flow runs through the console.
 
 ## Configure Power Automate for desktop notification settings
 
