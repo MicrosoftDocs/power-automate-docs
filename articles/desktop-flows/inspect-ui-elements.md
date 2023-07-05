@@ -51,13 +51,16 @@ In addition, while the ‘Inspect UI elements’ tool is opened, the Power Autom
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_ContextMenu.png" alt-text="Navigate to specific UI element":::
 
 ## Known issues and limitations
-- **Issue:** Web browser UI element trees cannot be displayed if the browser window is minimized.
+- **Issue:** Hierarchy tree of specific web browser pages cannot be displayed in the tool if the browser window containing them is minimized.
 
-    **Workaround:** Ensure that web browser window you desire inspect in not minimized in your machine.
-- **Issue:** Specific Web browser's UI elements cannot be displayed if Microsoft Power Automate web extension is not installed and enabled.
+    **Workaround:** Ensure that web browser window you desire to inspect in not minimized in your machine.
+- **Issue:** Specific Web browser's tree of UI elements cannot be displayed in the tool if Microsoft Power Automate web extension is not installed and enabled.
 
   **Workaround:** Ensure that Microsoft Power Automate web extension is installed and enabled in the respective web browser.
-- **Issue:** UI elements in a virtual desktop connected through Citrix or RDP, or in a Citrix virtual app or in a remote app are not displayed in the tool.
+- **Issue:** A specific desktop application is not displayed in the hierarchy tree in the tool.
+
+  **Workaround:** Check whether the desktop app is running with elevated rights. If yes, then restart Power Automate for desktop and run it with elevated rights and try again.
+- **Issue:** A virtual desktop connected through Citrix or RDP, or as a Citrix virtual app or as a remote app is not displayed in the tool.
 
   **Workaround:** Ensure that Power Automate agent for virtual desktops component is installed, up and running in the respective virtual machine.
 
