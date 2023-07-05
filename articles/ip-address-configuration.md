@@ -109,9 +109,9 @@ The following table lists endpoint data requirements for connectivity from a use
 | \*.gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud (GCC and GCCH). |
 | \*.gateway.gov.island.appsplatform.us | https | Needed for machine connectivity for US government cloud (DOD). |
 |tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
-| *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (mandatory for cloud connectors utilization in destkop flows) (U.S. Government - GCC only). |
-| *.api.high.powerplatform.microsoft.us | https | Access to several Power Platform APIs (mandatory for cloud connectors utilization in destkop flows) (U.S. Government - GCC High only). |
-| *.api.appsplatform.us | https | Access to several Power Platform APIs (mandatory for cloud connectors utilization in destkop flows) (U.S. Government - DoD only). |
+| *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (mandatory for cloud connector action in desktop flows) (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (U.S. Government - GCC High only). |
+| *.api.appsplatform.us | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (U.S. Government - DoD only). |
 | *.microsoftdynamics.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(U.S. Government - GCC High only). |
 | *.crm.appsplatform.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(U.S. Government - DoD only). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for public clouds). |
@@ -122,7 +122,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | ------- |  -------- | ---- |
 |crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
 |apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
-| *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (mandatory for cloud connectors utilization in destkop flows) (21Vinaet - China only). |
+| *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (21Vinaet - China only). |
 | *.dynamics.cn | https | Access to Dataverse tables (DesktopFlow modules feature)(21Vinaet - China only). |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
