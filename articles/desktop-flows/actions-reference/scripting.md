@@ -25,7 +25,7 @@ search.audienceType:
 
 Scripting actions enable you to run blocks of code and implement custom behavior in your desktop flows.
 
-All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, and JavaScript.
+All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, JavaScript and .NET (C#/VB.NET).
 
 To declare variables in scripting actions and return results in Power Automate, use the following commands:
 
