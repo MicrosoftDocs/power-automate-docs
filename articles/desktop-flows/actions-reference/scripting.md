@@ -6,7 +6,7 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 07/05/2023
-ms.author: marleon
+ms.author: dipapa
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
