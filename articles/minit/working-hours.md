@@ -64,7 +64,7 @@ On the **Non-Working days** tab, define special non-working days such as bank ho
 
     To switch the displayed year, select the arrows next to the year label above the calendar view.
 
-- **Holidays**: Simplify the definition of bank and national holidays by importing them all at once. To initialize the import, select **Import holidays** below the calendar view. A window opens where you can choose the specific calendar and specify the year range. Minit will automatically set holidays for the defined range and allows you to import as many countries as needed.
+- **Holidays**: Simplify the definition of bank and national holidays by importing them all at once. To initialize the import, select **Import holidays** below the calendar view. A window opens where you can choose the specific calendar and specify the year range. Minit will automatically set holidays for the defined range and allows you to import as many countries/regions as needed.
 
     If you imported a set of holidays by mistake, you can delete them from the calendar template by selecting **Remove holidays** below the calendar view.
 
