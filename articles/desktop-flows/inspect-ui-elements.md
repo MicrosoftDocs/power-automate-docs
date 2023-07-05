@@ -52,11 +52,14 @@ In addition, while the ‘Inspect UI elements’ tool is opened, the Power Autom
 
 ## Known issues and limitations
 - **Issue:** Web browser UI element trees cannot be displayed if the browser window is minimized.
+
     **Workaround:** Ensure that web browser window you desire inspect in not minimized in your machine.
 - **Issue:** Specific Web browser's UI elements cannot be displayed if Microsoft Power Automate web extension is not installed and enabled.
-    **Workaround:** Ensure that Microsoft Power Automate web extension is installed and enabled in the respective web browser.
+
+  **Workaround:** Ensure that Microsoft Power Automate web extension is installed and enabled in the respective web browser.
 - **Issue:** UI elements in a virtual desktop connected through Citrix or RDP, or in a Citrix virtual app or in a remote app are not displayed in the tool.
-    **Workaround:** Ensure that Power Automate agent for virtual desktops component is installed, up and running in the respective virtual machine.
+
+  **Workaround:** Ensure that Power Automate agent for virtual desktops component is installed, up and running in the respective virtual machine.
 
   
 ### See also
