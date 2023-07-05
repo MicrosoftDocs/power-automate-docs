@@ -25,7 +25,7 @@
   - name: Get help from the Power Virtual Agents bot
     href: contextual-help-bot.md
   - name: Find it with unified search
-    href: flows-unified-search.md
+    href: /power-apps/maker/search
   - name: Share a flow
     href: create-team-flows.md
   - name: Automated flows
