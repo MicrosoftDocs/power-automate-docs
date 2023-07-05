@@ -97,7 +97,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for machine connectivity. |
 |\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
 | emea.events.data.microsoft.com|https| Handles telemetry for EMEA users.|
-| *.api.powerplatform.com | https | Access to several Power Platform APIs (mandatory for cloud connectors utilization in destkop flows). |
+| *.api.powerplatform.com | https | Access to several Power Platform APIs (mandatory for cloud connectors utilization in desktop flows). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for GCC). |
 
 ### U.S. Government endpoints
