@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
+ms.date: 07/05/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -64,7 +64,7 @@ To declare variables in scripting actions and return results in Power Automate, 
 
 :::image type="content" source="media\scripting\run-dotnet-script-action-scriptparameters1.png" alt-text="Screenshot of the Script Parameters window in Run .NET script action, setting the variable type":::
 
-In addition, you can set whether it is an input to the .NET script (**In** option in Direction dropdown), an output of the script (**Out** option in Direction dropdown) or both (**In-Out** option in Direction dropdown).
+In addition, you can set whether it's an input to the .NET script (**In** option in Direction dropdown), an output of the script (**Out** option in Direction dropdown) or both (**In-Out** option in Direction dropdown).
 
 :::image type="content" source="media\scripting\run-dotnet-script-action-scriptparameters2.png" alt-text="Screenshot of the Script Parameters window in Run .NET script action, setting the direction":::
 
@@ -91,7 +91,7 @@ Executes a DOS command or console application in invisible mode and retrieves it
 |-----|-----|-----|
 |CommandOutput|[Text value](../variable-data-types.md#text-value)|The text output from the DOS command or application|
 |CommandErrorOutput|[Text value](../variable-data-types.md#text-value)|The text describing the errors occurred (if any) during the execution of the DOS command or application|
-|CommandExitCode|[Numeric value](../variable-data-types.md#numeric-value)|The command or application exit code. This value will be numeric|
+|CommandExitCode|[Numeric value](../variable-data-types.md#numeric-value)|The command or application exit code. This value is numeric|
 
 ### <a name="rundoscommand_onerror"></a> Exceptions
 
@@ -107,7 +107,7 @@ Executes some custom VBScript code and retrieves its output into a variable.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|VBScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The VBScript code to execute. Variables may be included within the script since they'll be evaluated prior to the execution of the VBScript|
+|VBScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The VBScript code to execute. Variables may be included within the script since they evaluate prior to the execution of the VBScript|
 
 ### Variables produced
 
@@ -128,7 +128,7 @@ Executes some custom JavaScript code and retrieves its output into a variable.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|JavaScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The JavaScript code to execute. Variables may be included within the script since they'll be evaluated prior to the JavaScript code's execution|
+|JavaScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The JavaScript code to execute. Variables may be included within the script since they evaluate prior to the JavaScript code's execution|
 
 ### Variables produced
 
@@ -149,7 +149,7 @@ Executes some custom PowerShell script and retrieves its output into a variable.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|PowerShell code to run|Yes|[Text value](../variable-data-types.md#text-value)||The PowerShell code to execute. Variables may be included within the script since they'll be evaluated prior to the execution of the PowerShell code|
+|PowerShell code to run|Yes|[Text value](../variable-data-types.md#text-value)||The PowerShell code to execute. Variables may be included within the script since they evaluate prior to the execution of the PowerShell code|
 
 ### Variables produced
 
@@ -200,7 +200,7 @@ Executes .NET (C#/VB.NET) script code and retrieves its output.
 |Language|N/A|C#/ VB.NET|C#|The language of the script|
 |.NET script imports|Yes|[Text value](../variable-data-types.md#text-value)||The .NET script imports to be included in the script|
 |References to be loaded|Yes|[Folder](../variable-data-types.md#files-and-folders)||The root path where .NET dynamic link libraries (.dll files) references are located|
-|Script parameters|Yes|Script Parameters as defined by the user||Setting the values of the parameters that will be defined in the script|
+|Script parameters|Yes|Script Parameters as defined by the user||Setting the values of the parameters that are defined in the script|
 |.NET code to run|No|[Text value](../variable-data-types.md#text-value)||The .NET code to run|
 
 ### Variables produced
