@@ -1,61 +1,70 @@
 ---
-title: Work queues actions (Preview)
-description: Manage work queues in Power Automate.
+title: Work queues actions (preview)
+description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
-ms.date: 5/1/2023
+ms.date: 7/04/2023
 ms.author: dbekirop
 ms.reviewer: 
 contributors:
+ - DBEKI
+ - tapanm-msft
 author: DBEKI
 ---
-# Work queues actions (Preview)
+# Work queues actions (preview)
 
 [This article is prerelease documentation and is subject to change.]
+
+[Work Queues](../work-queues.md) in Power Automate can be used to store process-relevant data and provide a way to decouple complex processes and automations, allowing them to communicate asynchronously. 
+
+Work queues can play a crucial role in improving the efficiency, scalability and resiliency of automations and help prioritize work. Work queues allow you to complete highest-priority items first, regardless of whether they're processed by digital workers, human workers, or through integrations.
 
 > [!IMPORTANT]
 >
 > - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](../../../articles/includes/cc-preview-features-definition.md)]
+> - Work queue actions in Power Automate for desktop is a premium feature which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
+> - Work queue actions in Power Automate for desktop can be classified in Data Loss Prevention policies. Note that cloud flow-based usage of work queues cannot be restricted by DLP policies.
 
-[Work Queues](https://learn.microsoft.com/power-automate/desktop-flows/work-queues) in Power Automate can be used to store process-relevant data and provide a way to decouple complex processes and automations, allowing them to communicate asynchronously. 
-
-Work queues can play a crucial role in improving the efficiency, scalability and resiliency of automations and help prioritize work, with the highest-priority items being completed first, regardless of whether they have been processed by digital workers, human workers, or through integrations.
-
-> [!NOTE]
-> Work queue actions in Power Automate for desktop is a premium feature which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
-
-## Process work queue items (Preview)
+## Process work queue items (preview)
 
 The **Process work queue items (Preview)** action indicates to the queue orchestrator that the machine is ready to process one or more work queue items. The user context requesting a new item needs to have sufficient privileges on the work queue and work queue items table in order to process work queues. 
 
 :::image type="content" source="media\workqueues\ProcessWorkQueueItems.png" alt-text="Screenshot of the Process Work Queue Item action." lightbox="media\workqueues\ProcessWorkQueueItems.png":::
 
-The **work queue** referenced in the above action is used by the queue orchestrator to determine the next available items in that work queue that are in **Queued** state. As the desktop flow steps through the actions within the Process work queue items loop which this action renders, you can call on the value by utilizing the variable you have designated for the action along with the property ‘.Value’.  In this case, you could call the value of the work queue item using the variable %WorkQueueItem.Value% 
+The **work queue** referenced in the above action is used by the queue orchestrator to determine the next available items in that work queue that are in **Queued** state. As the desktop flow steps through the actions within the Process work queue items loop that this action renders, you can call on the value by utilizing the variable you have designated for the action along with the property `.Value`.  In this case, you could call the value of the work queue item using the variable %WorkQueueItem.Value% 
 
-### Inputs Parameters 
+### processworkqueueitemaction
+
+The **processworkqueueitemaction** action requires the following arguments.
+
+#### Input Parameters 
 
   | Argument       | Optional | Accepts | Default Value | Description     |
   |-----|-----|-----|---------------|-----------------|
-  | **Work queue** |No    |Text |               |The work queue ID of the work queue which contains items to process|
+  | **Work queue** |No    |Text |               |The work queue ID of the work queue that contains items to process|
 
-### Variables produced
+#### Variables produced
 
   | Argument       | Type | Description     |
   |----------      |------|-----------------|
-  | **Work queue** |No   |Information stored in the work queue item being processed |
+  | **WorkQueueItem** |No   |Information stored in the work queue item being processed |
 
-### Exceptions
+#### Exceptions
 
   | Exception       | Description     |
   |----------      |-----------------|
   | **Work queue not found** |The value entered into the work queue parameter is invalid|
 |**Failed to process work queue**| Bad request - error in query syntax |
 
-## Update work queue item (Preview)
+## Update work queue item (preview)
 
 The **Update work queue item (Preview)** action allows users to change the status and processing results of the selected work queue item.
 
-:::image type="content" source="media\workqueues\UpdateWorkQueueItem.png" alt-text="Screenshot of the Process Work Queue Item action." lightbox="media\workqueues\UpdateWorkQueueItem.png":::
+:::image type="content" source="media\workqueues\UpdateWorkQueueItem.png" alt-text="Screenshot of the Update Work Queue Item action." lightbox="media\workqueues\UpdateWorkQueueItem.png":::
+
+### updateworkqueueitemaction
+
+The **updateworkqueueitemaction** action requires the following arguments.
 
 | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
@@ -63,18 +72,52 @@ The **Update work queue item (Preview)** action allows users to change the statu
 | **Status** |No    |Processed, Generic Exception| Processed |Update the work queue item being processed using a status from the list of options.|
 | **Processing result** | Yes | Text| | Custom processing notes or value to set append  to the queue item being processed |
 
-### Exceptions
+#### Exceptions
 
 | Argument       | Description |
 |----------------|----------|
-| **Work queue item not found** | The work queue item being processed has either been deleted or  no longer belongs to the queue which it was called from
-| **Work queue item on hold** | The work queue item being processed contains a status of ‘on hold’ in the queue orchestrator and can no longer be updated
-| **Failed to update work queue item** | The work queue item being updated has encountered an unexpected error, please check the error message for more details
+| **Work queue item not found** | The work queue item being processed has either been deleted or  no longer belongs to the queue that it was called from
+| **Work queue item on hold** | The work queue item being processed contains a status of `on hold` in the queue orchestrator and can no longer be updated
+| **Failed to update work queue item** | The work queue item being updated has encountered an unexpected error, check the error message for more details
+
+## Add work queue item (Preview)
+
+The **Add work queue item (Preview)** action allows users to change the status and processing results of the selected work queue item.
+
+:::image type="content" source="media\workqueues\AddWorkQueueItem.png" alt-text="Screenshot of the Update Work Queue Item action." lightbox="media\workqueues\AddWorkQueueItem.png":::
+
+### enqueueworkqueueitemaction
+
+The **addworkqueueitem** action requires the following arguments.
+
+#### Input Parameters
+
+| Argument       | Optional | Accepts | Default Value | Description     |
+  |----------      |----------|---------|---------------|-----------------|
+  | **Work queue** |No    |Text value |               |The work queue item to add the item into|
+| **Priority** |No    |High, Normal, Low| Normal |The priority to set the work queue item to|
+| **Name** | No | Text value, Numeric value| | Custom name or ID for the new work queue item|
+| **Input** | No | Text value, Numeric value| | The data which belongs to the value column to be processed|
+| **Expires** | Yes | Datetime| | The datetime value set to expire the queue item, otherwise adopts the default value set for the queue|
+| **Processing notes** | Yes | Text value, Numeric value| | Custom notes to be added to the new queue item|
+
+#### Variables produced
+
+  | Argument       | Type | Description     |
+  |----------      |------|-----------------|
+  | **WorkQueueItem** |No   |Information stored for the work queue item being added |
+
+#### Exceptions
+
+| Argument       | Description |
+|----------------|----------|
+| **Work queue not found** | The value entered into the work queue parameter is invalid|
+| **Failed to add item into work queue** | The work queue item could not be added into the work queue.  Bad reques - error in query syntax |
 
 ### See also
 
-- [Work queue overview](work-queues.md)
-- [Manage work queues](work-queues-manage.md)
-- [Bulk-import work queue data](work-queues-bulk-import.md)
-- [Trigger work queues](work-queues-trigger.md)
-- [Process work queues](work-queues-process.md)
+- [Work queue overview](../work-queues.md)
+- [Manage work queues](../work-queues-manage.md)
+- [Bulk-import work queue data](../work-queues-bulk-import.md)
+- [Trigger work queues](../work-queues-trigger.md)
+- [Process work queues](../work-queues-process.md)
