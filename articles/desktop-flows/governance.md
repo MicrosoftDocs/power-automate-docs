@@ -4,7 +4,7 @@ description: Learn how to configure Power Automate for desktop using Windows reg
 author: georgiostrantzas
 ms.topic: conceptual
 ms.date: 07/04/2023
-ms.author: marleon
+ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
