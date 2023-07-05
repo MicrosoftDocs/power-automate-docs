@@ -671,8 +671,10 @@
       href: ./desktop-flows/actions-reference/ibmcognitive.md
     - name: Microsoft cognitive
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
-    - name: SharePoint (preview)
+    - name: SharePoint
       href: ./desktop-flows/actions-reference/sharepoint.md
+    - name: Office 365 Outlook (preview)
+      href: ./desktop-flows/actions-reference/office365outlook.md
     - name: Workqueues (preview)
       href: ./desktop-flows/actions-reference/workqueues.md
     - name: Custom actions (preview)
