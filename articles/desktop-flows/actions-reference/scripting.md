@@ -27,6 +27,9 @@ Scripting actions enable you to run blocks of code and implement custom behavior
 
 All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, JavaScript and C#/VB.NET.
 
+> [!NOTE]
+> Supported version for **C#:** v 5.0. For **VB.NET**: v 11.0
+
 To declare variables in scripting actions and return results in Power Automate, use the following commands:
 
 - To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate, use the **Write-Output** command.
@@ -61,7 +64,7 @@ To declare variables in scripting actions and return results in Power Automate, 
 
 :::image type="content" source="media\scripting\run-dotnet-script-action-scriptparameters1.png" alt-text="Screenshot of the Script Parameters window in Run .NET script action, setting the variable type":::
 
-as well as whether it is an input to .NET script (**In** option in Direction dropdown), an output of the script (**In** option in Direction dropdown) or both (**In-Out** option in Direction dropdown).
+In addition, you can set whether it is an input to the .NET script (**In** option in Direction dropdown), an output of the script (**Out** option in Direction dropdown) or both (**In-Out** option in Direction dropdown).
 
 :::image type="content" source="media\scripting\run-dotnet-script-action-scriptparameters2.png" alt-text="Screenshot of the Script Parameters window in Run .NET script action, setting the direction":::
 
@@ -203,6 +206,8 @@ Executes .NET (C#/VB.NET) script code and retrieves its output.
 ### Variables produced
 
 This action might produce variables, depending on the configuration made by the user when using the **Script Parameters** window.
+> [!NOTE] 
+> In the case the action is configured to produce output parameters (using the **Out** direction when configuring them), you should always ensure that the parameter inside the script is set to a value other than null. Otherwise, the script execution will result in an error since the output parameter has not been set.
 
 ### <a name="rundotnetscript_onerror"></a> Exceptions
 
