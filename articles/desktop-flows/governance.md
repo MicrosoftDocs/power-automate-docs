@@ -3,8 +3,8 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: georgiostrantzas
 ms.topic: conceptual
-ms.date: 02/20/2023
-ms.author: marleon
+ms.date: 07/04/2023
+ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -82,7 +82,7 @@ To restrict access to Power Automate for desktop on a workstation with Windows 1
 
 You can use the following registry entry to allow users to sign in to Power Automate for desktop using Windows Web Account Manager (WAM).
 
-WAM enables certain features that aren't available through the default login process, such as single sign-on (SSO).
+WAM enables certain features that aren't available through the default sign in process, such as single sign-on (SSO).
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -139,11 +139,11 @@ You can use the following registry entry to allow users to select the region the
 
 - **0**: The user can select the region to connect to through another option in the sign-in screen.
 - **1**: The user is automatically connected to the first available region they're registered to.
-- **2**: The user will connect to the global public region.
-- **3**: The user will connect to the US Government GCC region.
-- **4**: The user will connect to the US Government GCC High region.
-- **5**: The user will connect to the US Government DoD region.
-- **6**: The user will connect to the China (operated by 21Vianet) region.
+- **2**: The user connects to the global public region.
+- **3**: The user connects to the US Government GCC region.
+- **4**: The user connects to the US Government GCC High region.
+- **5**: The user connects to the US Government DoD region.
+- **6**: The user connects to the China (operated by 21Vianet) region.
 
 ## Configure Power Automate for desktop to interact with a corporate proxy server
 
@@ -198,7 +198,7 @@ IT administrators may set the following registry key to configure Power Automate
 
 ## Configure Power Automate for desktop to bypass a set of addresses while interacting with a corporate proxy server
 
-IT administrators may set the following registry key to configure a list of IP addresses that will be bypassed while Power Automate interacts with a corporate proxy server. 
+IT administrators may set the following registry key to configure a list of IP addresses that are bypassed while Power Automate interacts with a corporate proxy server. 
 
 > [!NOTE]
 > To use this registry key, it’s a prerequisite to first configure the proxy server’s address and port through the **ProxyServer** registry key.
@@ -235,6 +235,18 @@ You can use the following registry entry to prevent Power Automate for desktop f
 ***Value***
 
 - **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
+
+## Prevent Power Automate for desktop from uploading action logs after a desktop flow runthrough the console
+
+You can use the following registry entry to prevent Power Automate for desktop from uploading detailed logs per action for the respective run of the flow's run history, after a desktop flow run takes places through the console.
+
+|Hive|Key|Name|Type|
+|---|---|---|---|
+|HKEY_LOCAL_MACHINE|SOFTWARE\Microsoft\Power Automate Desktop\Global|DisableFlowExecutionActionLogging|DWORD|
+
+***Value***
+
+- **1**: Power Automate for desktop won't upload detailed action logs for the respective run of the flow's run history, after the desktop flow runs through the console.
 
 ## Configure Power Automate for desktop notification settings
 
