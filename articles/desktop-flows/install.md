@@ -3,7 +3,7 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: georgiostrantzas
 ms.topic: how-to
-ms.date: 02/24/2023
+ms.date: 06/15/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -18,6 +18,11 @@ ms.custom: bap-template
 # Install Power Automate
 
 Before you install Power Automate on your device, make sure that it meets the [system requirements](requirements.md).
+
+> [!WARNING]
+> - There's an issue with Power Automate for desktop where your runs may fail with the errors “CredentialAuthenticationFailed” or “GeneralScriptExecutionError” after installing the Windows update for June 2023. This issue impacts all Power Automate for desktop versions 2.28 or later version. More information: [.NET Framework June 2023 Security and Quality Rollup - .NET Blog ](https://devblogs.microsoft.com/dotnet/dotnet-framework-june-2023-security-and-quality-rollup/)
+> - To fix this issue, upgrade Power Automate for desktop to the latest version: [2.33]( https://go.microsoft.com/fwlink/?linkid=2102613) 
+> - If you have a requirement to use an older version, patched updates are provided for the versions [2.28](https://go.microsoft.com/fwlink/?linkid=2239808), [2.29](https://go.microsoft.com/fwlink/?linkid=2239591), [2.30](https://go.microsoft.com/fwlink/?linkid=2239716), [2.31](https://go.microsoft.com/fwlink/?linkid=2239809), and [2.32](https://go.microsoft.com/fwlink/?linkid=2239592).
 
 > [!IMPORTANT]
 >
@@ -69,7 +74,7 @@ By default, Power Automate for desktop honors the proxy settings specified in Wi
 ## Install an on-premises data gateway
 
 > [!NOTE]
-> Gateways for desktop flows are deprecated except for China region. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated. This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 Power Automate enables you to [trigger your desktop flows from cloud flows](trigger-desktop-flows.md). To take advantage of this feature, you need to install an on-premises data gateway on your device.
 

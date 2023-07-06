@@ -4,7 +4,7 @@ description: Learn about how to create custom actions in Power Automate for desk
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/15/2023
+ms.date: 05/26/2023
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors: 
@@ -658,7 +658,7 @@ SelectorName_Summary
 This can also be done in the selector with the WithDescription and WithSummary methods.
 
 > [!IMPORTANT]
-> .dll files describing the custom actions, their .dll dependencies and the .cab file containing everything should be properly signed with a digital certificate trusted by your organization. The certificate should also be installed on each machine on which a desktop flow with custom action dependencies is executed, present under the Trusted Root Certification Authorities.
+> .dll files describing the custom actions, their .dll dependencies and the .cab file containing everything should be properly signed with a digital certificate trusted by your organization. The certificate should also be installed on each machine on which a desktop flow with custom action dependencies is authored/ modified/ executed, present under the Trusted Root Certification Authorities.
 
 ## Creating and importing a self-signed certificate
 
@@ -676,7 +676,7 @@ To create a self-signed certificate with exportable private key and code sign ca
     ```
 1. After the certificate has been created and exported, import it to your trust root.
 1. Double-click on the exported certificate.
-1. Select Current user.
+1. Select Current User for a single user, or select Local Machine to include the certificate for all users on the respective machine.
 
     :::image type="content" source="media/custom-actions/create-custom-actions/wizard.png" alt-text="Screenshot of Certificate Import Wizard" border="true":::
 
@@ -751,14 +751,19 @@ This Windows PowerShell Script can then be used for creating the .cab file by in
 - The directory to the .dll files to be compressed.
 - The target directory to place the generated .cab file.
 
-Example:
+Invoke the script using the following syntax:
 
 ```PowerShell
-.\makeCabFromDirectory.ps1 "{source dir to compress dlls}" "{target dir to save cab}" {cabName}.cab
+.\{name of script containing the .cab compression directions}.ps1 "{absolute path  to the source directory containing the .dll files}" "{target dir to save cab}" {cabName}.cab
 ```
 
+Example: 
+```PowerShell
+.\makeCabFile.ps1 "C:\Users\Username\source\repos\MyCustomModule\bin\Release\net472" "C:\Users\Username\MyCustomActions" MyCustomActions.cab
+```
 > [!NOTE]
-> The .cab file must also be signed. Unsigned .cab files and/or unsigned .dlls contained in them will not be usable in desktop flows and will result in error during inclusion.
+> - Make sure that the the actual custom actions .dll file is in the root level of the targetted path when creating the .cab file and not in a subfolder.
+> - The .cab file must also be signed. Unsigned .cab files and/or unsigned .dlls contained in them will not be usable in desktop flows and will result in error during inclusion.
 
 ## Next steps
 

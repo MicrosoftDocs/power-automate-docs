@@ -8,7 +8,7 @@ author: msftman
 
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 06/09/2022
+ms.date: 06/05/2023
 ms.author: deonhe
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -41,7 +41,12 @@ Follow these steps to move your solution and its dependencies to a new environme
     - **Version number** - Power Automate automatically increments your solution version. You can accept the default version or enter your own.
     - **Export as** - Select the package type, either **Managed** or **Unmanaged**. More information: [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 
-The export can take several minutes to complete. After the export finishes, the exported solution zip file is available in the downloads folder for your web browser.
+    > [!NOTE]
+    > The export can take several minutes to complete.
+
+1.  After the solution file export succeeds, you'll see a success notification on top of the screen. Select **Download** from the top-right side of this notification to download the solution zip file.
+
+The downloaded solution zip file is available in the downloads folder for your web browser.
 
 Find the flows within the **Workflows** folder in the solution zip file. Each exported workflow is represented as a JSON file. Flow definitions were traditionally a compact block of JSON in a single line, but in February 2022 the export format was changed to multi-line formatted JSON to make them easier to read and make them friendlier to revision tracking in source control.
 
