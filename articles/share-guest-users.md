@@ -55,4 +55,4 @@ Some connectors don't support this capability.
 
 ## Grant access to a guest user
 
-To provide access to a guest user, go to [Assign Azure roles to external guest users using the Azure portal](/azure/role-based-access-control/role-assignments-external-users).
+To provide access to a guest user, go to [Steps to grant guest access](/power-apps/maker/canvas-apps/share-app-guests#steps-to-grant-guest-access).
