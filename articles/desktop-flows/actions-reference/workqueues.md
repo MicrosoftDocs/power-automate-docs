@@ -84,9 +84,9 @@ The **updateworkqueueitemaction** action requires the following arguments.
 
 The **Add work queue item (preview)** action allows users to change the status and processing results of the selected work queue item.
 
-:::image type="content" source="media\workqueues\AddWorkQueueItem.png" alt-text="Screenshot of the Update Work Queue Item action." lightbox="media\workqueues\AddWorkQueueItem.png":::
+:::image type="content" source="media\workqueues\AddWorkQueueItem.png" alt-text="Screenshot of the add work queue item action." lightbox="media\workqueues\AddWorkQueueItem.png":::
 
-### enqueueworkqueueitemaction
+### addworkqueueitem action
 
 The **addworkqueueitem** action requires the following arguments.
 
