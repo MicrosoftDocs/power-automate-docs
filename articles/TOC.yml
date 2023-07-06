@@ -24,6 +24,8 @@
     href: triggers-introduction.md
   - name: Get help from the Power Virtual Agents bot
     href: contextual-help-bot.md
+  - name: Find it with unified search
+    href: /power-apps/maker/search
   - name: Share a flow
     href: create-team-flows.md
   - name: Automated flows
@@ -671,8 +673,10 @@
       href: ./desktop-flows/actions-reference/ibmcognitive.md
     - name: Microsoft cognitive
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
-    - name: SharePoint (preview)
+    - name: SharePoint
       href: ./desktop-flows/actions-reference/sharepoint.md
+    - name: Office 365 Outlook (preview)
+      href: ./desktop-flows/actions-reference/office365outlook.md
     - name: Workqueues (preview)
       href: ./desktop-flows/actions-reference/workqueues.md
     - name: Custom actions (preview)
