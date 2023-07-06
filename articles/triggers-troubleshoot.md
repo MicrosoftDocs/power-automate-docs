@@ -1,21 +1,16 @@
 ---
 title: Troubleshoot common issues with triggers | Microsoft Docs
 description: Find and fix issues when your flows won't run.
-services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/26/2022
 ms.author: DeonHe
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowadmin
 ---
@@ -149,7 +144,7 @@ If everything looks good but your flow is still not triggering, verify if your f
 
 ## My trigger is firing for old events
 
-There are two types of triggers&mdash;polling triggers or Webhook triggers.
+There are two types of triggers&mdash;polling triggers and Webhook triggers.
 
 If you turned off your flow and then turned it back on, depending on your trigger type, your old triggers may be processed.
 
