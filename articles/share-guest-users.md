@@ -51,8 +51,4 @@ A guest user can create, manage, or run flows using widgets in apps like SharePo
 
 A nonguest user can search for, find, and select a guest user in a trigger or action. While they’re typing the name of the guest user, they see the full name of the guest user as an option and don’t need to type the full name.
 
-Some connectors don't support this capability.
-
-## Grant access to a guest user
-
-To provide access to a guest user, go to [Steps to grant guest access](/power-apps/maker/canvas-apps/share-app-guests#steps-to-grant-guest-access).
+Some connectors don't support this capability. For a list, go to [Which connectors support guest access](/power-apps/maker/canvas-apps/share-app-guests#which-connectors-support-guest-access).
