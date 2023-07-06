@@ -30,6 +30,14 @@ This video gives an overview of cloud flows.
 | [Instant flows](./mobile/mobile-create-flow.md)              | Start an automation with a click of a button. You can automate for repetitive tasks from your desktop or mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.                      |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.       |
 | [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule. |
 
+## Find your flows easily
+
+You might have a need to find a flow within a large number of flows. Finding your flows is easy&mdash;just use the search box on the **My flows**, **Team flows**, **Connections**, or **Solutions** screen to display only flows that match the search terms you enter.
+
+![Filter or search flows.](media/overview-cloud/filter-search-box.png)
+ 
+> [!NOTE]
+> The search filter only finds flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
 If you're ready to start your Power Automate project, go to [Introduction: Planning a Power Automate project](./guidance/planning/introduction.md) to get up and running quickly.
 
 
