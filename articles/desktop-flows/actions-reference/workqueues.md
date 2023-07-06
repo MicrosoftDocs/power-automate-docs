@@ -98,8 +98,8 @@ The **addworkqueueitem** action requires the following arguments.
 | **Priority** |No    |High, Normal, Low| Normal |The priority to set the work queue item to|
 | **Name** | No | Text value, Numeric value| | Custom name or ID for the new work queue item|
 | **Input** | No | Text value, Numeric value| | The data which belongs to the value column to be processed|
-| **Expires** | Yes | Datetime| | The datetime value set to expire the queue item, otherwise adopts the default value set for the queue|
-| **Processing notes** | Yes | Text value, Numeric value| | Custom notes to be added to the new queue item|
+| **Expires** | Yes | Datetime| | The datetime value set to expire the queue item, otherwise adopts the default value if one is set for the queue|
+| **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
 
 #### Variables produced
 
