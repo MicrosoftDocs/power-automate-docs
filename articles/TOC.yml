@@ -26,6 +26,8 @@
     href: contextual-help-bot.md
   - name: Share a flow
     href: create-team-flows.md
+  - name: Support for guest users
+    href: share-guest-users.md  
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
