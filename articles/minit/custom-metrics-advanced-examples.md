@@ -301,7 +301,7 @@ The limitation for 'C->C' edge describes the domain requirement and why country 
 
 ### Calculation for example 6
 
- Why not calculate the result for all countries? At first, re-think the original question. It's possible to generate results per attribute value (for example, for attribute country), but there's no way (except for business rules) to create a calculation for a single attribute value. In your using business rules, you can skip this section. Knowing this, you can update the original question to generic form:
+ Why not calculate the result for all countries/regions? At first, re-think the original question. It's possible to generate results per attribute value (for example, for attribute country), but there's no way (except for business rules) to create a calculation for a single attribute value. In your using business rules, you can skip this section. Knowing this, you can update the original question to generic form:
 
 *How many cases contains C->C edge per country?*
 
