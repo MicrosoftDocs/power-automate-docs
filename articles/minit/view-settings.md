@@ -1,6 +1,6 @@
 ---
 title: View settings
-description: Learn how to define various settings valid for the current process in the Process Mining desktop app.
+description: Learn how to define various settings valid for the current process in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
@@ -69,7 +69,7 @@ The **Activity label** tab allows you to do the following:
 
 Select an existing calendar in the **Calendar** dropdown menu. If the menu options don't include the calendar template that you want to use, select the ellipses (**...**) to define a new template. If an existing calendar is close to what you want, select it in the **Calendar** dropdown menu, and then select (**...**) > **Edit**.
 
-Calendar templates can be shared across the Process Mining desktop app projects. To manage all calendar templates, select **Settings** > **Working hours**. To learn more, go to [Settings](settings.md).
+Calendar templates can be shared across Power Automate Process Mining projects. To manage all calendar templates, select **Settings** > **Working hours**. To learn more, go to [Settings](settings.md).
 
 ### See also
 

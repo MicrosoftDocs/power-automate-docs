@@ -1,6 +1,6 @@
 ---
 title: Manage settings with process context
-description: Learn about the process settings you can change in the Process Mining desktop app.
+description: Learn about the process settings you can change in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
@@ -28,7 +28,7 @@ There are two ways to open the **Process context** screen depending on where you
 
     :::image type="content" source="media/process-context-icon.png" alt-text="Screenshot of the process context icon.":::
 
-- **From any other screen in the desktop application:** On the menu bar in the upper right corner, select **Process context**.
+- **From any other screen in Power Automate Process Mining:** On the menu bar in the upper right corner, select **Process context**.
 
 ## Launch process mining capabilities
 

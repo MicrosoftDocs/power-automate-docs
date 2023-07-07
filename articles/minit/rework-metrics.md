@@ -1,6 +1,6 @@
 ---
 title: Rework metrics
-description: Learn about rework metrics types and more in the Process Mining desktop app.
+description: Learn about rework metrics types and more in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm

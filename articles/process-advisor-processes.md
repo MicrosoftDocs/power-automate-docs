@@ -1,6 +1,6 @@
 ---
-title: Prepare processes and recordings in process advisor (contains videos) | Microsoft Docs
-description: Before you can use process advisor task mining, learn how to create a process, record the activities, and prepare the recording for analysis.
+title: Prepare processes and recordings (contains videos)
+description: Learn how to create a process, record the activities, and prepare the recording for analysis.
 author: donums
 contributors:
   - donums
@@ -15,16 +15,16 @@ search.audienceType:
   - enduser
 ---
 
-# Prepare processes and recordings in process advisor
+# Prepare processes and recordings
 
-Before you can use process advisor task mining to visualize and analyze your processes, you need to:
+Before you can use the task mining capability to visualize and analyze your processes, you need to:
 
-- [Create your process](#create-a-process) in process advisor.
+- [Create your process](#create-a-process) in the process mining capability in Power Automate.
 - [Record the activities](#record-your-process) that make up the process using the Power Automate recorder.
 - [Prepare the recording for analysis](#prepare-a-recording-for-analysis).
 - (Optional) [Create recommended activity names](#create-recommended-activity-names) to make it easier for you and others to prepare the recording for analysis.
 
-Learn more about process advisor processes in the following video.<br>
+Learn more about processes in the following video.<br>
 </br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKx7r]
 
@@ -34,7 +34,7 @@ In general, processes you think might be inefficient or repetitive are good cand
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. On the left-side navigation pane, select **Process advisor** .
+1. On the left-side navigation pane, select **Process mining** .
 
 1. In the **Create a new process** section, select the **Start here** tile.
 
@@ -57,15 +57,11 @@ After you create a process, you'll see a screen with two options as next steps.
 
 ### Create a recording from the process details screen
 
-1. Select **Process advisor** > **All processes** below the tiles to the right.
-
-    :::image type="content" source="media/all-processes-recording.png" alt-text="Screenshot of the 'process advisor home screen with the 'All processes' button.":::
+1. Select **Process mining** > **All processes** below the tiles to the right.
 
 1. Select the name of the process to go to the process details screen.
 
 1. On the menu at the top, select **New recording**.
-
-    :::image type="content" source="media/new-rec-button.png" alt-text="Screenshot of the 'New recording' button.":::
 
 1. Select **Open recorder**.
 
@@ -122,11 +118,11 @@ Once the recording is finished, the recorded actions can be viewed on the record
 
 *What does this mean?*
 
-- This means that the actions that were recorded during the process can be very detailed and specific. In order to make sense of them and create a clear process map, these actions need to be grouped together into larger activities. Process advisor now has the ability to automatically group similar actions into activities.
+- This means that the actions that were recorded during the process can be very detailed and specific. In order to make sense of them and create a clear process map, these actions need to be grouped together into larger activities. The process mining capabilitiy is now able to automatically group similar actions into activities.
 
-- It's important to ensure that any sensitive information is removed from the recording before analysis. This can be done to protect data privacy and security. For more information on how to protect your data in process advisor visit [Protect your data in process advisor](process-advisor-protect.md).
+- It's important to ensure that any sensitive information is removed from the recording before analysis. This can be done to protect data privacy and security. For more information on how to protect your data, go to [Protect your data](process-advisor-protect.md).
 
-Here's a short video on how to prepare a recording for analysis with process advisor.</br>
+Here's a short video on how to prepare a recording for analysis.</br>
 </br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6PQ]
 
@@ -166,7 +162,7 @@ To analyze, you need at least two activities. Otherwise, the process map wouldn'
 
 1. When you finish grouping, select **Save and analyze** on the top right.
 
-1. Once analyzed, select **View analytics** in the notification bar to go to the analytics page. For more information, go to [Analyze processes in process advisor](process-advisor-analyze.md).
+1. Once analyzed, select **View analytics** in the notification bar to go to the analytics page. For more information, go to [Analyze processes](process-advisor-analyze.md).
 
     :::image type="content" source="./media/view-analytics-button.png" alt-text="Screenshot of the 'View analytics' button.":::
 

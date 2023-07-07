@@ -1,6 +1,6 @@
 ---
 title: Process map overview
-description: Learn how to use a process map for process mining in the Process Mining desktop app.
+description: Learn how to use a process map for process mining in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
@@ -135,7 +135,7 @@ Map clustering allows you to visually encapsulate activities in the process map 
 
 1. In the **Clustering attribute** dropdown menu, select an attribute.
 
-The map clustering attribute selection control is populated automatically by the Process Mining desktop app. The attributes must fulfill the following premises:
+The map clustering attribute selection control is populated automatically by Power Automate Process Mining. The attributes must fulfill the following premises:
 
 - **Process map:** Each value of the attribute Activity must have exactly one corresponding value of the clustering attribute. It can also be an empty value. In this case, the activity is placed on canvas outside of any cluster. For example, approval must have always value **Management** in clustering attribute and PO archival must always have value Accounting.
 

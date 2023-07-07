@@ -1,6 +1,6 @@
 ---
-title: Get started with task mining in process advisor  | Microsoft Docs
-description: Walk through a tutorial with demo data to experience task mining in the process advisor feature of Power Automate.
+title: Get started with the task mining capability
+description: Learn how to use the task mining capability with sample data in a tutorial.
 author: donums
 contributors:
   - donums
@@ -15,9 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Tutorial: Get started with task mining
+# Tutorial: Get started with the task mining capability
 
-This tutorial with sample data allows you to experience task mining in the process advisor feature. In this tutorial, you will:
+This tutorial with sample data allows you to experience task mining in the process mining capability. In this tutorial, you will:
 
 - [Import a solution](#import-a-solution)
 - [View sample recordings](#view-sample-recordings)
@@ -28,13 +28,13 @@ This tutorial with sample data allows you to experience task mining in the proce
 
 For the task mining tutorial, download [User recording demo data](https://go.microsoft.com/fwlink/?linkid=2175600). For the process mining tutorial, go to [Tutorial: Get started with process mining](process-mining-tutorial.md).
 
-## Get process advisor ready
+## Get the process mining capability ready
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. Select your environment.
 
-1. On the navigation pane to the left, select **Process advisor** > **Processes**.
+1. On the navigation pane to the left, select **Process mining** > **Processes**.
 
 ## Import a solution
 
@@ -58,12 +58,12 @@ In this tutorial, we'll import a solution which already has sample recordings.
 
 ## View sample recordings
 
-1. Once you've successfully imported the .zip file, on the navigation pane to the left, select **Process advisor** > **All processes** below the process cards.
+1. Once you've successfully imported the .zip file, on the navigation pane to the left, select **Process mining** > **All processes** below the process cards.
 
 1. Select the **Invoice submission process**.
 
    > [!NOTE]
-   > If this is the first time you're accessing process advisor, make sure you've selected **Processes** at least once and waited until the **Getting things ready** loading spinner has disappeared before importing. If you try to import the RPAinaDayProcessAdvisor_1_0_0_7.zip solution without first initializing the **Processes** section of process advisor, you'll see only a couple of recordings in the imported solution.
+   > If this is the first time you're accessing the process mining capability, make sure you've selected **Processes** at least once and waited until the **Getting things ready** loading spinner has disappeared before importing. If you try to import the RPAinaDayProcessAdvisor_1_0_0_7.zip solution without first initializing the **Processes** section of the process mining capability, you see only a couple of recordings in the imported solution.
    >
    > You can see some of the existing recordings under **Recordings**.
 
@@ -200,7 +200,7 @@ You can see that people spend a lot of their time entering the information in th
 
 1. Go back to the process map by selecting **Process**.
 
-1. Look at the automate activities feature. From the process map, you can see that process advisor has highlighted several activities as potential candidates for automation based on applications.
+1. Look at the automate activities feature. From the process map, you can see that the process mining capability has highlighted several activities as potential candidates for automation based on applications.
 
 1. Start creating a flow for automation by selecting **Automate activities** at the top.
 

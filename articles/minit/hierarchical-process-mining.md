@@ -1,6 +1,6 @@
 ---
 title: Hierarchical process mining
-description: Learn how to define the hierarchy in the process map and social chart in the Process Mining desktop app.
+description: Learn how to define the hierarchy in the process map and social chart in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm

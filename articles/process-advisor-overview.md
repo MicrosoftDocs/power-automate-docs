@@ -83,7 +83,7 @@ Process mining is licensed as part of Power Automate per-user licenses. If you d
 **Process mining capability:** A *Power Automate per-user license with attended RPA* enables a user to create a process, connect to an event log using data flows, analyze a process from data, and view the analytics report in the web.
 
 **Process Mining add-on:** A separately purchasable add-on is required to do the following:
-- Use the [Process Mining desktop app](minit/minit-desktop-application-overview.md), which provides many features to get deep insights into your process.
+- Use [Power Automate Process Mining](minit/minit-desktop-application-overview.md), which provides many features to get deep insights into your process.
 - Customize the analytics report by publishing it into your own Power BI workspace.
 
 For inquiries about add-on capability licensing, contact [minitq@microsoft.com](mailto:minitq@microsoft.com).
@@ -94,7 +94,7 @@ For inquiries about add-on capability licensing, contact [minitq@microsoft.com](
 
 **Preview:** Some features are in preview, denoted by the preview tag. For process templates that are still in preview, license and trial aren't needed.
 
-**Dataverse capacity:** The Process Mining add-on provides 2 GB of database capacity, 1 TB of file capacity, and 250,000 Power Platform requests per 24 hours. Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, ask your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store uses mostly file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
+**Dataverse capacity:** The Power Automate Process Mining add-on provides 2 GB of database capacity, 1 TB of file capacity, and 250,000 Power Platform requests per 24 hours. Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, ask your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store uses mostly file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
 
 ## Prerequisites
 
@@ -112,7 +112,7 @@ Before you start using the process mining capability, make sure you have the fol
 
 Additional considerations for specific capabilities:
 
-- For the process mining desktop application, download the [Process Mining desktop app](minit/how-to-start-with-minit-desktop-application.md).
+- For the process mining desktop application, install [Power Automate Process Mining](minit/how-to-start-with-minit-desktop-application.md).
 
 - To customize your report, you need to [set up your Power BI workspace](process-mining-pbi-workspace.md) and [register the process mining service principal in Azure AD](process-mining-pbi-workspace.md#install-azure-tools).
 

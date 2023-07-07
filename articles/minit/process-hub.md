@@ -1,6 +1,6 @@
 ---
 title: Explore the home page in the Process Mining desktop app
-description: Learn how to use the home page so that you can get started using the Process Mining desktop app. 
+description: Learn how to use the home page so that you can get started using Power Automate Process Mining. 
 author: rosikm
 contributors:
   - rosikm
@@ -18,7 +18,7 @@ search.audienceType:
 
 # Explore the home page
 
-The **Processes** screen is the the Process Mining desktop app's home page. It's where you'll find an overview of your processes and views. It's also where you can dig deeper into your processes by creating different views, or ways of analyzing your processes.
+The **Processes** screen is the Power Automate Process Mining home page. It's where you'll find an overview of your processes and views. It's also where you can dig deeper into your processes by creating different views, or ways of analyzing your processes.
 
 ## Launch the application
 

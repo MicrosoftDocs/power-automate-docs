@@ -1,6 +1,6 @@
 ---
 title: Process animation overview
-description: Learn how to visualize the development of the process over time in the Process Mining desktop app.
+description: Learn how to visualize the development of the process over time in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm

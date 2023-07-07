@@ -30,7 +30,7 @@ A retail company can use the task mining capability to analyze the order fulfill
 
 The task mining capability can automatically produce a process map that visualizes the order fulfillment process, allowing the organization to identify which activities take the longest, how many variations of the order fulfillment process exist, and which variations and actions take the most time.
 
-In addition, the application analytics report can show which applications teams spend the most time in and which activities can be optimized. With this information, the organization can create flows with automation recommendations that reveal which connectors to use based on the process advisor analysis.
+In addition, the application analytics report can show which applications teams spend the most time in and which activities can be optimized. With this information, the organization can create flows with automation recommendations that reveal which connectors to use based on the analysis done with the process mining capability.
 
 Using insights from the task mining capability, the retail company can streamline the order fulfillment process, reduce errors, and improve customer satisfaction. The company can also automate repetitive tasks, freeing employees to focus on more value-added activities such as customer service and inventory management.
 

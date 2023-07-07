@@ -1,6 +1,6 @@
 ---
 title: Statistics overview
-description: Get an overview of the properties of the process undergoing analysis in the Process Mining desktop app.
+description: Get an overview of the properties of the process undergoing analysis in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
@@ -91,7 +91,7 @@ You can sort the statistics grid by selecting the up or down arrow in the header
 
 ## Case duration influence
 
-Case duration influence is a complex analytical insight that evaluates the influence of case-level attributes (including financial) on the mean case duration. The Process Mining desktop app takes all case-level attribute values and, based on the mean duration of the cases having the specific case-level attribute value weighted by the volume of cases having this value, calculates the percentile influence of cases having this value on the overall mean case duration.
+Case duration influence is a complex analytical insight that evaluates the influence of case-level attributes (including financial) on the mean case duration. Power Automate Process Mining takes all case-level attribute values and, based on the mean duration of the cases having the specific case-level attribute value weighted by the volume of cases having this value, calculates the percentile influence of cases having this value on the overall mean case duration.
 
 For example, if the Article is Software Licenses, the mean duration is longer than for article Hardware, but the influence on the overall case duration is not so strong. This is because the case frequency is much smaller for Software Licenses than it is for Hardware.
 

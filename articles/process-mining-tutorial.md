@@ -86,9 +86,9 @@ When the analysis process is complete, you’ll see a process map and a dashboar
 
 ## Analyze a process
 
-Let’s take the analysis of our process beyond KPIs. We'll use the Power Automate Process Mining desktop app, where you can edit and analyze your processes created in the process mining capability.
+Let’s take the analysis of our process beyond KPIs. We'll use Power Automate Process Mining, where you can edit and analyze your processes created in the process mining capability.
 
-1. From the command bar of the analytics report page, select **Download Process Mining desktop app** to download it.
+1. From the command bar of the analytics report page, select **Download Power Automate Process Mining** to download it.
 
 1. On the toolbar, select the environment from the top right.
 
@@ -96,7 +96,7 @@ Let’s take the analysis of our process beyond KPIs. We'll use the Power Automa
 
 1. Select **Default** to display the default view.
 
-    You’re ready to use the advanced capabilities of the Process Mining desktop app.
+    You’re ready to use the advanced capabilities of Power Automate Process Mining.
 
 1. On the **Customize** panel toolbar, select **Frequency** (the first icon), and then select **Case count** in the **Metric** dropdown menu.
 
@@ -216,4 +216,4 @@ An organization should focus on using standard vouchers versus special vouchers 
 
 An organization should do further analysis to determine why using the standard invoice often causes invoice rejection. If they're able to uncover a remedy for this, the organization can implement this to further improve the process.
 
-To learn more about how to take advantage of the advanced capabilities of the Process Mining desktop app, go to [Overview of the Process Mining desktop app](minit/minit-desktop-application-overview.md).
+To learn more about how to take advantage of the advanced capabilities of Power Automate Process Mining, go to [Overview of Power Automate Process Mining](minit/minit-desktop-application-overview.md).
