@@ -1,21 +1,16 @@
 ---
 title: Troubleshoot common issues with triggers | Microsoft Docs
 description: Find and fix issues when your flows won't run.
-services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/26/2022
 ms.author: DeonHe
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowadmin
 ---
@@ -149,7 +144,7 @@ If everything looks good but your flow is still not triggering, verify if your f
 
 ## My trigger is firing for old events
 
-There are two types of triggers&mdash;polling triggers or Webhook triggers.
+There are two types of triggers&mdash;polling triggers and Webhook triggers.
 
 If you turned off your flow and then turned it back on, depending on your trigger type, your old triggers may be processed.
 
@@ -196,7 +191,7 @@ For example, your flows may run every 15 minutes if you’re on the **Free** lic
 
 And, if your license is the **Flow for Office 365** plan (from your Enterprise license E3, E5, etc.) or the **Flow for Dynamics 365** plan, your flow won't run again until five minutes have elapsed. So, it may be a few minutes between the time the triggering event occurs and the time the flow begins.
 
-Follow these steps to check the trigger wake up frequency:
+Follow these steps to check the trigger wake-up frequency:
 
 1. Go to your flow trigger, and then select the … (ellipsis).
 1. Select **Peek code**.
@@ -207,9 +202,9 @@ Follow these steps to check the trigger wake up frequency:
 
    ![A screenshot of the frequency element.](./media/triggers-introduction/frequency.png)
 
-If it is taking much longer than expected for your flow to trigger, here are the two likeliest reasons:
+If it's taking much longer than expected for your flow to trigger, here are the two likeliest reasons:
 
-1. There has been too many calls to the connector or flow, causing it to be throttled. To verify if your flow is being throttled, manually test the flow to see if it triggers immediately. If it triggers immediately, it is not throttled.
+1. There have been too many calls to the connector or flow, causing it to be throttled. To verify if your flow is being throttled, manually test the flow to see if it triggers immediately. If it triggers immediately, it is not throttled.
 
    Further, you can check the [Power Automate analytics](./admin-analytics-report.md) to learn more about your flows.
 
