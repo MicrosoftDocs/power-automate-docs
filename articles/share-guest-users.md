@@ -2,7 +2,7 @@
 title: Support for guest users
 description: Learn support scenarios for guest users, including how to create, share, and approve flows.
 author: natalie-pienkowska
-ms.date: 07/06/2023
+ms.date: 07/09/2023
 ms.custom: 
 ms.topic: conceptual
 ms.author: lali
@@ -13,7 +13,7 @@ ms.reviewer: angieandrews
 
 The Power Automate experience for guest users is the same as it is for nonguest users, with some stipulations. A guest user can be a vendor or customer in a tenant of their own organization who needs access to a tenant in another organization. Guest users have the same experience in both the Power Automate portal and the Power Automate mobile app. They're sometimes referred to as external users.
 
-Read this article to help you understand the scenarios that are supported for guest users.
+This article should help you understand the scenarios that are supported for guest users.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ A guest user must meet the following criteria:
 A user can become a guest user if both these criteria are met:
 
 - They're invited to a tenant through the Azure Active Directory (Azure AD) admin portal.
-- An Office 365 plan or any plan with a Power Automate license is assigned to the guest user.
+- An Office 365 plan, or any plan with a Power Automate license is assigned to the guest user.
 
 ## Supported capabilities
 
@@ -49,6 +49,15 @@ A guest user can create, manage, or run flows using widgets in apps like SharePo
 
 ### Search for a guest user
 
-A nonguest user can search for, find, and select a guest user in a trigger or action. While they’re typing the name of the guest user, they see the full name of the guest user as an option and don’t need to type the full name.
+A nonguest user can search for, find, and select a guest user in a trigger or action. As they start typing the name of the guest user, they see a list of names to choose from in the dropdown list. When they see the name of the guest user, they can select it. This saves the nonguest user time because they don't need to finish typing the entire name.
 
 Some connectors don't support this capability.
+
+## Set up Business to Business (B2B) collaboration
+
+To set up B2B collaboration between tenants in different clouds, both guest user and nonguest user tenants need to configure their Microsoft cloud settings to enable collaboration with the other cloud. Then, each tenant must configure inbound and outbound cross-tenant access with the tenant in the other cloud. To learn more, go to [Configure Microsoft cloud settings for B2B collaboration](/azure/active-directory/external-identities/cross-cloud-settings).
+
+### See also
+
+- [Azure AD B2B in government and national clouds](/azure/active-directory/external-identities/b2b-government-national-clouds)
+- [Assign Azure roles to external guest users using the Azure portal](/azure/role-based-access-control/role-assignments-external-users)
