@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -88,7 +88,7 @@ When the analysis process is complete, you’ll see a process map and a dashboar
 
 Let’s take the analysis of our process beyond KPIs. We'll use Power Automate Process Mining, where you can edit and analyze your processes created in the process mining capability.
 
-1. From the command bar of the analytics report page, select **Download Power Automate Process Mining** to download it.
+1. From the command bar of the analytics report page, select **Download Process Mining app** to download it.
 
 1. On the toolbar, select the environment from the top right.
 

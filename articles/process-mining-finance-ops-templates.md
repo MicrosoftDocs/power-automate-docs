@@ -1,13 +1,13 @@
 ---
 title: Finance and operations templates for process mining
-description: Learn how to use Finance and operations templates for process mining in Power Automate process mining.
+description: Learn how to use finance and operations templates for process mining in the Power Automate process mining capability.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Finance and operations templates for process mining
 
-If you're interested in analyzing your finance and operation process easily, onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights by enabling you to connect to your system of record and surfacing contextual insights. You'll avoid the data identification and manipulation that's required with traditional process mining tools and reach process rich insights on analysis.
+If you're interested in analyzing your finance and operation process easily, onboard your data for process mining with a template using the process mining capability. Templates help you start mining your processes for insights by enabling you to connect to your system of record and surfacing contextual insights. You'll avoid the data identification and manipulation that's required with traditional process mining tools and reach process rich insights on analysis.
 
 ## Accounts payable template
 
@@ -44,7 +44,7 @@ For the template ingestion to work, the required tables must be found in the dat
 
 ### Create and run the Accounts payable template
 
-To see the available templates, select **Process advisor** on the left.
+To see the available templates, select **Process mining** on the left.
 
 1. Under the **Start with a popular template** heading, select the **Finance & Operations** tab, and then select **Accounts payable**.
 
@@ -109,7 +109,7 @@ For the template ingestion to work, the required tables must be found in the dat
 
 ### Create and run the Procure to pay (P2P) template
 
-To see the available templates, select **Process advisor** on the left.
+To see the available templates, select **Process mining** on the left.
 
 1. Under the **Start with a popular template** heading, select the **Finance & Operations** tab, and then select **Procure to pay (P2P)**.
 
@@ -123,7 +123,7 @@ Once the analysis is done, there will be a custom report to visualize your P2P p
 
 ## Visualizations and KPIs
 
-P2P templates have additional KPIs and visualizations built on top of the standard report. To learn more about the process map and filters, go to [Visualize and gain insights from processes in process advisor](process-mining-visualize.md).
+P2P templates have additional KPIs and visualizations built on top of the standard report. To learn more about the process map and filters, go to [Visualize and gain insights from processes](process-mining-visualize.md).
 
 - **PO items**: The PO line item is the **Case ID** for this report. Every unique PO line item is represented as a case.
 

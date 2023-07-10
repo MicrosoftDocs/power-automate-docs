@@ -8,7 +8,7 @@ contributors:
   - tatn
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 search.audienceType: 
   - flowmaker
@@ -82,11 +82,11 @@ Process mining is licensed as part of Power Automate per-user licenses. If you d
 
 **Process mining capability:** A *Power Automate per-user license with attended RPA* enables a user to create a process, connect to an event log using data flows, analyze a process from data, and view the analytics report in the web.
 
-**Process Mining add-on:** A separately purchasable add-on is required to do the following:
+**Power Automate Process Mining add-on:** A separately purchasable add-on is required to do the following:
 - Use [Power Automate Process Mining](minit/minit-desktop-application-overview.md), which provides many features to get deep insights into your process.
 - Customize the analytics report by publishing it into your own Power BI workspace.
 
-For inquiries about add-on capability licensing, contact [minitq@microsoft.com](mailto:minitq@microsoft.com).
+For inquiries about add-on capability licensing, contact [Microsoft Process and Task Mining Questions](mailto:minitq@microsoft.com).
 
 **Trial license:** You can start a free 90 day Power Automate premium trial, which provides access to all available capabilities listed previously, including the add-on capability. There's a process size limit of 200 cases for processes created while on the trial.
 

@@ -1,6 +1,6 @@
 ---
-title: Power Platform templates for process mining in process mining
-description: Learn how to use Power Platform templates for process mining in Power Automate.
+title: Power Platform templates for process mining
+description: Learn how to use Power Platform templates for  use with the process mining capability in Power Automate.
 author: donums
 contributors:
   - donums
@@ -8,7 +8,7 @@ contributors:
   - tatn 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -16,13 +16,13 @@ search.audienceType:
   - enduser
 ---
 
-# Power Platform templates for process mining 
+# Power Platform templates for process mining
 
-Process Advisor templates make it easy for organizations to onboard their data for process mining and gain insights with just a few selections. Unlike traditional process mining tools, templates eliminate the need for data identification and manipulation.
+Templates designed to work with the process mining capability make it easy for organizations to onboard their data for process mining and gain insights with just a few selections. Unlike traditional process mining tools, Power Platform templates eliminate the need for data identification and manipulation.
 
 Templates are available for [Desktop flows](#desktop-flows-template), [Power Virtual Agents](#power-virtual-agents-template), and [Power Apps insights](#power-apps-insights-template). Each template provides insights that help identify automation opportunities and address performance and compliance issues in workflows.
 
-By using Process Advisor templates, organizations can quickly and easily start mining their processes for insights and streamline their workflows. Templates simplify the process and allow organizations to focus on the insights and opportunities that matter most, rather than getting bogged down in data manipulation and processing.
+By using templates in the process mining capability, organizations can quickly and easily start mining their processes for insights and streamline their workflows. Templates simplify the process and allow organizations to focus on the insights and opportunities that matter most, rather than getting bogged down in data manipulation and processing.
 
 ## Desktop flows template
 
@@ -34,7 +34,7 @@ Overall, the Desktop Flows template is a powerful tool that can help organizatio
 
 ### Create and run the Desktop flows template
 
-1. In Power Automate in the left panel, select **Process advisor**.
+1. In Power Automate in the left panel, select **Process mining**.
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Desktop flows** tile.
 
@@ -55,7 +55,7 @@ Overall, the Desktop Flows template is a powerful tool that can help organizatio
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
-Process advisor will analyze your process. It may take up to two minutes for the analytics to appear.
+The process mining capability will analyze your process. It might take up to two minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -65,7 +65,7 @@ The Power Virtual Agents template is designed to analyze the performance and usa
 
 ### Create and run the Power Virtual Agents template
 
-1. In Power Automate on the left panel, select **Process advisor**.
+1. In Power Automate on the left panel, select **Process mining**.
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Virtual Agents** tile.
 
@@ -81,7 +81,7 @@ The Power Virtual Agents template is designed to analyze the performance and usa
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It might take several minutes for the analytics to appear.
+The process mining capability will analyze your process. It might take several minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -129,7 +129,7 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
 ### Create and run the Power Apps insights template
 
-1. In Power Automate on the left panel, select **Process advisor**.
+1. In Power Automate on the left panel, select **Process mining**.
 
 1. In the **Start with a popular template** section, select the **Power Platform** tab, and then select the **Power Apps insights** tile.
 
@@ -147,19 +147,19 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
-1. Go back to the process advisor **Create a new process** screen and paste it in the **Power apps application insights app Id** field.
+1. Go back to the **Create a new process** screen in the process mining capability and paste it in the **Power apps application insights app Id** field.
 
 1. Identify the parameter that you want to analyze from your app and enter it in the **Case Id field name** and **Activity field name** fields in the **Create a new process** screen.
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It might take up to two minutes for the analytics to appear. You can leave the page and return later.
+The process mining capability will analyze your process. It might take up to two minutes for the analytics to appear. You can leave the page and return later.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
 ### See also
 
-[Introduction to desktop flows](desktop-flows/introduction.md)  
-[Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)<br/>
-[Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)<br/>
-[What is Power Apps?](/power-apps/powerapps-overview)
+- [Introduction to desktop flows](desktop-flows/introduction.md)  
+- [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)
+- [Azure Monitor Application Insights](/azure/azure-monitor/app/app-insights-overview)
+- [What is Power Apps?](/power-apps/powerapps-overview)

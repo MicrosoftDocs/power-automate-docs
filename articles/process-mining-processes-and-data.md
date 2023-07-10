@@ -1,13 +1,13 @@
 ---
-title: Prepare processes and data with process mining in the process mining feature in Power Automate (contains video)
-description: Learn how to prepare processes and data with process mining in Power Automate.
+title: Prepare processes and data (contains video)
+description: Learn how to prepare processes and data with the process mining capability in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,17 +15,15 @@ search.audienceType:
   - enduser
 ---
 
-# Prepare processes and data in process mining
+# Prepare processes and data
 
-Before you can use process mining effectively, you need to understand:
+Before you can use the process mining capability in Power Automate effectively, you need to understand:
 
 - [Data requirements](#data-requirements).
-
 - [Where to get log data from your application](#where-to-get-log-data-from-your-application).
-
 - How to [connect to a data source](#connect-to-a-data-source).
 
-Here's a short video on how to upload data for process mining:<br>
+Here's a short video on how to upload data for use with the process mining capability:<br>
 </br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5b4UA]
 
@@ -47,24 +45,24 @@ Event logs and activity logs are tables stored in your system of record that doc
 
 ## Where to get log data from your application
 
-Process advisor needs event log data to perform process mining. While many tables that exist in your application’s database contain the current state of the data, they might not contain a historical record of the events that happened, which is the required event log format. Fortunately, in many larger applications, this historical record or log is often stored in a specific table. For example, many Dynamics applications keep this record in the Activities table. Other applications, like SAP or Salesforce, have similar concepts, but the name may be different.
+The process mining capability needs event log data to perform process mining. While many tables that exist in your application’s database contain the current state of the data, they might not contain a historical record of the events that happened, which is the required event log format. Fortunately, in many larger applications, this historical record or log is often stored in a specific table. For example, many Dynamics applications keep this record in the Activities table. Other applications, like SAP or Salesforce, have similar concepts, but the name may be different.
 
 In these tables that log historical records, the data structure can be complex. You might need to join the log table with other tables in the application database to get specific IDs or names. Also, not all events that you're interested in are logged. You may need to determine what events should be kept or filtered out. If you need help, you should contact the IT team that manages this application to understand more.
 
 ## Connect to a data source
 
-The benefit of connecting to a database directly is keeping process advisor up to date with the latest data from the data source.
+The benefit of connecting to a database directly is keeping the process mining capability up to date with the latest data from the data source.
 
-[Power Query](/power-query/power-query-what-is-power-query) supports a large variety of connectors that provide a way for process advisor to connect and import data from the corresponding data source. Common connectors include Text/CSV, Microsoft Dataverse, and SQL Server database. If you're using an application like SAP or Salesforce, you might be able to connect to those data sources directly via their connectors. For information on supported connectors and how to use them, go to [Connectors in Power Query](/power-query/connectors/).
+[Power Query](/power-query/power-query-what-is-power-query) supports a large variety of connectors that provide a way for the process mining capability to connect and import data from the corresponding data source. Common connectors include Text/CSV, Microsoft Dataverse, and SQL Server database. If you're using an application like SAP or Salesforce, you might be able to connect to those data sources directly via their connectors. For information on supported connectors and how to use them, go to [Connectors in Power Query](/power-query/connectors/).
 
-### Try out process advisor with the Text/CSV connector
+### Try out the process mining capability with the Text/CSV connector
 
-One easy way to try out process advisor regardless of where your data source is located is with the Text/CSV connector. You might need to work with your database admin to export a small sample of the event log as a CSV file. Once you have the CSV file, you can import it into process advisor using the following steps in the data source selection screen.
+One easy way to try out the process mining capability regardless of where your data source is located is with the Text/CSV connector. You might need to work with your database admin to export a small sample of the event log as a CSV file. Once you have the CSV file, you can import it into the process mining capability using the following steps in the data source selection screen.
 
 > [!NOTE]
-> You must have OneDrive for Business to use the **Text/CSV** connector. If you don't have OneDrive for Business, consider using **Blank table** instead of **Text/CSV**, as in step 3. You won't be able to import as many records in **Blank table**.
+> You must have OneDrive for Business to use the **Text/CSV** connector. If you don't have OneDrive for Business, consider using **Blank table** instead of **Text/CSV**, as in the followng step 3. You won't be able to import as many records in **Blank table**.
 
-1. On the process advisor home page, create a process by selecting **Start here**.
+1. On the process mining capability home page, create a process by selecting **Start here**.
 
 1. Enter a process name and select **Create**.
 

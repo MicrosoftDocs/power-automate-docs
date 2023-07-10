@@ -1,5 +1,5 @@
 ---
-title: Overview of the task mining capability in Power Automate
+title: Overview of the task mining capability
 description: Learn about using the task mining capability to help you better understand workflows and begin automating to reclaim time.
 author: donums
 contributors:
@@ -8,7 +8,7 @@ contributors:
   - tatn
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -22,7 +22,14 @@ Task mining is a technology that enables organizations to capture detailed steps
 
 By analyzing recorded user actions, the task mining capability in Power Automate allows organizations to gain insights into how they perform tasks, identify common mistakes made during task performance, and pinpoint tasks that can be automated, all of which can help optimize their business processes.
 
-The task mining capability is a powerful tool for streamlining workflows, identifying inefficiencies and bottlenecks in workflows, reducing costs, and fostering a culture of continuous improvement where employees are encouraged to optimize their work processes.
+## Benefits of the task mining capability
+
+The task mining capability helps busunesses to: 
+
+- Streamline workflows.
+- Identify inefficiencies and bottlenecks in workflows.
+- Reduce costs.
+- Foster a culture of continuous improvement where employees are encouraged to optimize their work processes.
 
 ## Business example
 
@@ -39,13 +46,9 @@ Using insights from the task mining capability, the retail company can streamlin
 Following are the main components for the task mining capability:
 
 - [Prepare processes and recordings](process-advisor-processes.md)
-
 - [Analyze processes](process-advisor-analyze.md)
-
 - [Visualize processes](process-advisor-visualize.md)
-
 - [Identify automation recommendations](process-advisor-automation.md)
-
 - [Share processes](process-advisor-share.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Improve cloud flows with process insights (preview)
-description: Learn how to improve your cloud flows with process insights in the process advisor feature in Power Automate.
+description: Learn how to improve your cloud flows with process insights in the process mining capability in Power Automate.
 author: donums
 contributors:
   - donums
@@ -8,7 +8,7 @@ contributors:
   - tatn
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
