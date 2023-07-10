@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/17/2023
-ms.author: marleon
+ms.author: appapaio
 ms.reviewer: gtrantzas
 contributor:
 search.audienceType: 
