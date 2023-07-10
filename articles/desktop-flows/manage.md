@@ -116,8 +116,7 @@ In this page, you can:
 
 > [!NOTE]
 >
-> - Users of an environment with a Dataverse security role that provides them **Read** access to all the records of the **Process** Dataverse table are co-owners of all desktop flows created in this environment and can't be removed.
-> - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
+> > - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
 ## Learn more
 
