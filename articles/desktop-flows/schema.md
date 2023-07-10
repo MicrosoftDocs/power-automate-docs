@@ -16,7 +16,7 @@ search.audienceType:
 # Power Automate v2 schema
 
 > [!NOTE]
-> The following article applies only to users with paid Power Automate subscriptions.
+> The Power Automate Dataverse feature described in this article is applicable to users who log in [with work, or school accounts, or organization premium accounts](https://learn.microsoft.com/en-us/power-automate/desktop-flows/requirements#sign-in-account-comparison). 
 
 Power Automate stores desktop flows in Microsoft Dataverse, which lets you securely store and manage data used by business applications.
 
