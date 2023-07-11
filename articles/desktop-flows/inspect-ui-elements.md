@@ -1,10 +1,10 @@
 ---
-title: Inspect a UI element (Preview)
-description: Inspect a UI element
+title: Inspect a UI element (preview)
+description: Inspect a UI element in Power Automate for desktop that allows you to explore the hierarchy tree of all UI elements on your screen.
 author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/03/2023
+ms.date: 07/11/2023
 ms.author: nimoutzo
 ms.reviewer: ndoelman, matp, angieandrews
 contributors:
@@ -15,55 +15,60 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Inspect a UI element (Preview)
+# Inspect a UI element (preview)
 
-The 'Inspect UI element' tool is a powerful feature in Power Automate for desktop that allows you to explore the hierarchy tree of all UI elements on your screen, check their attributes and values, and capture them for use in your desktop flow through the UI and Browser automation actions. 
+[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-## How launch 'Inspect UI elements' tool
+The 'Inspect UI element' tool is a powerful feature in Power Automate for desktop that allows you to explore the hierarchy tree of all UI elements on your screen, check their attributes and values, and capture them for use in your desktop flow through the UI and Browser automation actions.
 
-To launch the 'Inspect UI element' tool, navigate to the designer component of Power Automate for desktop and go to the UI element repository. Click on the 'Add UI element' drop down and select the 'Inspect UI elements' option.
+> [!IMPORTANT]
+> This is a preview feature.
 
-:::image type="content" source="media/Inspect UI Elements/InspectUIElements_1.png" alt-text="Launch Inspect UI elements tool":::
+## Open the inspect UI elements tool
+
+To open the 'Inspect UI element' tool, navigate to the designer component of Power Automate for desktop and then go to the UI element repository. Select the **Add UI element** in the dropdown list and then select the **Inspect UI elements** option.
+
+:::image type="content" source="media/Inspect UI Elements/InspectUIElements_1.png" alt-text="Open the inspect UI elements tool":::
 
 ## Description of 'Inspect UI elements' tool
 
-When you launch the 'Inspect UI elements' tool, you'll see a hierarchy tree with all available UI elements on your machine. This includes both web and desktop UI elements, which are separated by their respective icons. Moreover, the web UI elements are split into each browser for easier navigation, displaying each tab that is opened in your browser as a parent UI element. Note that the tabs are not actual UI elements. You can expand the tree by clicking on the expand icon next to a UI element, which will load and display all of its children UI elements. 
+When you open the inspect UI elements tool, you'll see a hierarchy tree with all available UI elements on your machine. This includes both web and desktop UI elements, which are separated by their respective icons. Moreover, the web UI elements are split into each browser for easier navigation, displaying each tab that is opened in your browser as a parent UI element. Note that the tabs are not actual UI elements. You can expand the tree by selecting the expand icon next to a UI element, which loads and displays all of its children UI elements.
 
 > [!NOTE]
-> Please note you will be able to see the desktop UI elements of a virtual desktop in case a connection is opened between your machine and the Citrix virtual desktop or the virtual machine through RDP and Power Automate agent for virtual desktops is installed and running in the virtual desktop/machine. More information: [Automate on virtual desktops](virtual-desktops.md)
+> You'll see the desktop UI elements of a virtual desktop when a connection is opened between your machine and the Citrix virtual desktop or the virtual machine through Remote Desktop Services (RDS) and Power Automate agent for virtual desktops is installed and running in the virtual desktop or machine. More information: [Automate on virtual desktops](virtual-desktops.md)
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_BasicView.png" alt-text="Inspect UI elements tool":::
 
-Selecting a UI element in the hierarchy tree will display its attributes and values on the right pane of the tool. These attributes and values can be used to create a custom selector in the UI element builder of the designer for the specific UI element. In order to edit the selector of a UI element you have to capture it and open it in the UI element selector builder window. 
+Selecting a UI element in the hierarchy tree displays its attributes and values on the right pane of the tool. These attributes and values can be used to create a custom selector in the UI element builder of the designer for the specific UI element. In order to edit the selector of a UI element you have to capture it and open it in the UI element selector builder window. 
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_Attributes.png" alt-text="Check UI element attributes":::
 
-Moreover, you can capture the selected UI element and store it in the UI element repository of the desktop flow by clicking on the ‘Add UI element’ button on the top of the tool. This UI element can then be used in a UI automation or Browser automation action respectively, depending on its type (desktop or web UI element). 
+Moreover, you can capture the selected UI element and store it in the UI element repository of the desktop flow by selecting **Add UI element** on the top of the tool. This UI element can then be used in a UI automation or browser automation action respectively, depending on its type (desktop or web UI element).
 
-:::image type="content" source="media/Inspect UI Elements/InspectUIElements_Addtoflow.png" alt-text="Add UI elememnt to flow":::
+:::image type="content" source="media/Inspect UI Elements/InspectUIElements_Addtoflow.png" alt-text="Add UI element to flow":::
 
-The hierarchy tree is refreshed every time you expand a UI element, and you can refresh the whole tree by clicking on the ‘Refresh’ button on the top of the tool. 
+The hierarchy tree is refreshed every time you expand a UI element. You can refresh the whole tree by selecting **Refresh** on the top of the tool.
 
 ### Navigate in hierarchy tree to a specific UI element in the screen
 
-In addition, while the ‘Inspect UI elements’ tool is opened, the Power Automate for desktop highlighter is visible. You can navigate directly to a specific UI element by hovering with your mouse over the desired UI element and clicking a right click. This will open the context menu and then you select the ‘Inspect UI element’ option. It will navigate you to the specific UI element in the hierarchy tree of the tool and select it, displaying its attributes and the respective values.
+While the inspect UI elements tool is opened, the Power Automate for desktop highlighter is visible. Go directly to a specific UI element by hovering with your mouse over the desired UI element and then right-click. This opens the context menu. Select the **Inspect UI element** option that takes you to the specific UI element in the hierarchy tree of the tool. Select the UI element to display the attributes and the respective values.
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_ContextMenu.png" alt-text="Navigate to specific UI element":::
 
 ## Known issues and limitations
-- **Issue:** Hierarchy tree of specific web browser pages cannot be displayed in the tool if the browser window containing them is minimized.
+
+- **Issue:** Hierarchy tree of specific web browser pages can't be displayed in the tool when the browser window containing them is minimized.
 
     **Workaround:** Ensure that web browser window you desire to inspect in not minimized in your machine.
-- **Issue:** Specific Web browser's tree of UI elements cannot be displayed in the tool if Microsoft Power Automate web extension is not installed and enabled.
+- **Issue:** Specific web browser's tree of UI elements can't be displayed in the tool if the Microsoft Power Automate web extension is not installed and enabled.
 
-  **Workaround:** Ensure that Microsoft Power Automate web extension is installed and enabled in the respective web browser.
-- **Issue:** A specific desktop application is not displayed in the hierarchy tree in the tool.
+  **Workaround:** Ensure that the Microsoft Power Automate web extension is installed and enabled in the respective web browser.
+- **Issue:** A specific desktop application isn't displayed in the hierarchy tree in the tool.
 
-  **Workaround:** Check whether the desktop app is running with elevated rights. If yes, then restart Power Automate for desktop and run it with elevated rights and try again.
-- **Issue:** A virtual desktop connected through Citrix or RDP, or as a Citrix virtual app or as a remote app is not displayed in the tool.
+  **Workaround:** Check whether the desktop app is running with elevated rights. If yes, restart Power Automate for desktop and run it with elevated rights. And then try again.
+- **Issue:** A virtual desktop connected through Citrix or RDS, or as a Citrix virtual app or as a remote app is not displayed in the tool.
 
   **Workaround:** Ensure that Power Automate agent for virtual desktops component is installed, up and running in the respective virtual machine.
-
   
 ### See also
 
