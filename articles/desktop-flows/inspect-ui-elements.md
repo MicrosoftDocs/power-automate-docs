@@ -19,20 +19,20 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The 'Inspect UI element' tool is a powerful feature in Power Automate for desktop that allows you to explore the hierarchy tree of all UI elements on your screen, check their attributes and values, and capture them for use in your desktop flow through the UI and Browser automation actions.
+The inspect UI element tool is a powerful feature in Power Automate for desktop that allows you to explore the hierarchy tree of all UI elements on your screen, check their attributes and values, and capture them for use in your desktop flow through the UI and browser automation actions.
 
 > [!IMPORTANT]
 > This is a preview feature.
 
 ## Open the inspect UI elements tool
 
-To open the 'Inspect UI element' tool, navigate to the designer component of Power Automate for desktop and then go to the UI element repository. Select the **Add UI element** in the dropdown list and then select the **Inspect UI elements** option.
+To open the inspect UI element tool, locate the designer component of Power Automate for desktop, and then go to the UI element repository. Select the **Add UI element** from the dropdown list, and then select the **Inspect UI elements** option.
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_1.png" alt-text="Open the inspect UI elements tool":::
 
-## Description of 'Inspect UI elements' tool
+## Description of inspect UI elements tool
 
-When you open the inspect UI elements tool, you see a hierarchy tree with all available UI elements on your machine. This includes both web and desktop UI elements, which are separated by their respective icons. Moreover, the web UI elements are split into each browser for easier navigation, displaying each tab that is opened in your browser as a parent UI element. Note that the tabs aren't actual UI elements. You can expand the tree by selecting the expand icon next to a UI element, which loads and displays all of its children UI elements.
+When you open the inspect UI elements tool, a hierarchy tree with all available UI elements on your machine is displayed. This includes both web and desktop UI elements, which are separated by their respective icons. Moreover, the web UI elements are split into each browser for easier navigation, displaying each tab that is opened in your browser as a parent UI element. Note that the tabs aren't actual UI elements. You can expand the tree by selecting the expand icon next to a UI element, which loads and displays all of its children UI elements.
 
 > [!NOTE]
 > You see the desktop UI elements of a virtual desktop when a connection is opened between your machine and the Citrix virtual desktop or the virtual machine through Remote Desktop Services (RDS) and Power Automate agent for virtual desktops is installed and running in the virtual desktop or machine. More information: [Automate on virtual desktops](virtual-desktops.md)
@@ -43,7 +43,7 @@ Selecting a UI element in the hierarchy tree displays its attributes and values 
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_Attributes.png" alt-text="Check UI element attributes":::
 
-Moreover, you can capture the selected UI element and store it in the UI element repository of the desktop flow by selecting **Add UI element** on the top of the tool. This UI element can then be used in a UI automation or browser automation action respectively, depending on its type (desktop or web UI element).
+You can capture the selected UI element and store it in the UI element repository of the desktop flow by selecting **Add UI element** on the top of the tool. This UI element can then be used in a UI automation or browser automation action respectively, depending on its type (desktop or web UI element).
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_Addtoflow.png" alt-text="Add UI element to flow":::
 
