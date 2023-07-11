@@ -2,11 +2,10 @@
 title: Browser automation actions reference
 description: See all the available browser automation actions.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/27/2023
-ms.author: marleon
+ms.date: 07/11/2023
+ms.author: nimoutzo
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -16,7 +15,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Browser automation actions
 
 Browser automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle.
@@ -52,8 +50,8 @@ For more information on how to use this action, go to [Web data extraction](../a
 |UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to extract data from|
 |Extraction parameters|No|[Datatable](../variable-data-types.md#datatable)||The parameters to use when extracting data. Depending on the extraction mode, this parameter accepts different data.|
 |Max web pages to process|No|[Numeric value](../variable-data-types.md#numeric-value)||The maximum number of web pages to process|
-|Send physical click for next page|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the pager prior to clicking. A physical click is required for cases where emulated clicks to the pager don't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it to the foreground.|
-|Pager CSS selector|No|[Text value](../variable-data-types.md#text-value)||The pager CSS selector|
+|Send physical click for next page|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the page prior to clicking. A physical click is required for cases where emulated clicks to the page don't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it to the foreground.|
+|Page CSS selector|No|[Text value](../variable-data-types.md#text-value)||The page CSS selector|
 |Extraction mode|N/A|Undefined, Single value, Handpicked values, List, Table, Entire HTML table|Single value|Specify what to extract from the web page|
 |Use paging|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to use paging|
 |Get all web pages|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to get all web pages|
