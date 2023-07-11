@@ -4,7 +4,7 @@ description: Learn about the Power Automate v2 schema.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/24/2023
+ms.date: 07/11/2023
 ms.author: dbekirop
 ms.reviewer: gtrantzas
 contributors:
@@ -12,11 +12,10 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Power Automate v2 schema
 
 > [!NOTE]
-> The following article applies only to users with paid Power Automate subscriptions.
+> The Power Automate and Dataverse feature described in this article is applicable to users who sign in [with work, or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison). 
 
 Power Automate stores desktop flows in Microsoft Dataverse, which lets you securely store and manage data used by business applications.
 
