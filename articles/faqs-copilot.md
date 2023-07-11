@@ -1,22 +1,22 @@
 ---
-title: Transparency note for Copilot in Power Automate
-description: The transparency note discusses Copilot and the key considerations for making use of this technology responsibly.
+title: FAQ for Copilot in Power Automate
+description: This FAQ discusses Copilot and the key considerations for making use of this technology responsibly.
 ms.date: 05/23/2023
 ms.custom: 
-  - transparency-note
+  - responsible-ai-faqs
 ms.topic: article
 author: kisubedi
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ---
 
-# Transparency note for Copilot in Power Automate
+# FAQ for Copilot in Power Automate
 
-This transparency note describes the AI impact of Power Automate's Copilot feature.
+These frequently asked questions (FAQ) describe the AI impact of Power Automate's Copilot feature.
 
 ## What is Copilot in Power Automate?
 
-The AI powered editing experience in Power Automate is a new way to build automations (at this time cloud flows specifically) with the help of an AI assistant&mdash;the Copilot. The Copilot in Power Automate stays with you in your flow building journey and helps you build, set up, and run an automation on your behalf through a chat experience. It helps answer flow and product questions, too. It takes your input and provides either documentation, links, or answers in the Copilot chat pane. As an alternative, it makes changes to the flow per your natural language description.
+The AI powered editing experience in Power Automate is a new way to build automation (at this time cloud flows specifically) with the help of an AI assistant&mdash;the Copilot. The Copilot in Power Automate stays with you in your flow building journey and helps you build, set up, and run an automation on your behalf through a chat experience. It helps answer flow and product questions, too. It takes your input and provides either documentation, links, or answers in the Copilot chat pane. As an alternative, it makes changes to the flow per your natural language description.
 
 ## What are the system’s capabilities?
 
@@ -36,7 +36,7 @@ The Copilot also provides buttons to prompt you to save or test your flow occasi
 
 ## What is the system’s intended use?
 
-The system's intended use is to help you build automations easily and quickly, to start getting value out of automations as soon as possible.
+The system's intended use is to help you build automation easily and quickly, to start getting value out of automation as soon as possible.
 
 ## How was Copilot in Power Automate evaluated? What metrics are used to measure performance?
 
@@ -60,7 +60,7 @@ As an Azure OpenAI powered feature, the tenant admin can choose to disable it us
 
 ## See also
 
-- [Get started with Copilot ](get-started-with-copilot.md)
-- [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
+- [Get started with Copilot](get-started-with-copilot.md)
+- [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
