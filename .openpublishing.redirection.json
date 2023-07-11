@@ -711,6 +711,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/transparency-note.md",
+      "redirect_url": "/power-automate/responsible-ai-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/transparency-note-copilot.md",
+      "redirect_url": "/power-automate/faqs-copilot",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/mobile-monitor-activity.md",
       "redirect_url": "/power-automate/mobile/manage-cloud-flows",
       "redirect_document_id": false
