@@ -32,14 +32,14 @@ To open the 'Inspect UI element' tool, navigate to the designer component of Pow
 
 ## Description of 'Inspect UI elements' tool
 
-When you open the inspect UI elements tool, you'll see a hierarchy tree with all available UI elements on your machine. This includes both web and desktop UI elements, which are separated by their respective icons. Moreover, the web UI elements are split into each browser for easier navigation, displaying each tab that is opened in your browser as a parent UI element. Note that the tabs are not actual UI elements. You can expand the tree by selecting the expand icon next to a UI element, which loads and displays all of its children UI elements.
+When you open the inspect UI elements tool, you see a hierarchy tree with all available UI elements on your machine. This includes both web and desktop UI elements, which are separated by their respective icons. Moreover, the web UI elements are split into each browser for easier navigation, displaying each tab that is opened in your browser as a parent UI element. Note that the tabs aren't actual UI elements. You can expand the tree by selecting the expand icon next to a UI element, which loads and displays all of its children UI elements.
 
 > [!NOTE]
-> You'll see the desktop UI elements of a virtual desktop when a connection is opened between your machine and the Citrix virtual desktop or the virtual machine through Remote Desktop Services (RDS) and Power Automate agent for virtual desktops is installed and running in the virtual desktop or machine. More information: [Automate on virtual desktops](virtual-desktops.md)
+> You see the desktop UI elements of a virtual desktop when a connection is opened between your machine and the Citrix virtual desktop or the virtual machine through Remote Desktop Services (RDS) and Power Automate agent for virtual desktops is installed and running in the virtual desktop or machine. More information: [Automate on virtual desktops](virtual-desktops.md)
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_BasicView.png" alt-text="Inspect UI elements tool":::
 
-Selecting a UI element in the hierarchy tree displays its attributes and values on the right pane of the tool. These attributes and values can be used to create a custom selector in the UI element builder of the designer for the specific UI element. In order to edit the selector of a UI element you have to capture it and open it in the UI element selector builder window. 
+Selecting a UI element in the hierarchy tree displays its attributes and values on the right pane of the tool. These attributes and values can be used to create a custom selector in the UI element builder of the designer for the specific UI element. In order to edit the selector of a UI element, you have to capture it and open it in the UI element selector builder window. 
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_Attributes.png" alt-text="Check UI element attributes":::
 
@@ -59,14 +59,14 @@ While the inspect UI elements tool is opened, the Power Automate for desktop hig
 
 - **Issue:** Hierarchy tree of specific web browser pages can't be displayed in the tool when the browser window containing them is minimized.
 
-    **Workaround:** Ensure that web browser window you desire to inspect in not minimized in your machine.
-- **Issue:** Specific web browser's tree of UI elements can't be displayed in the tool if the Microsoft Power Automate web extension is not installed and enabled.
+    **Workaround:** Ensure the web browser window that you desire to inspect isn't minimized on your machine.
+- **Issue:** Specific web browser's tree of UI elements can't be displayed in the tool if the Microsoft Power Automate web extension isn't installed and enabled.
 
   **Workaround:** Ensure that the Microsoft Power Automate web extension is installed and enabled in the respective web browser.
 - **Issue:** A specific desktop application isn't displayed in the hierarchy tree in the tool.
 
   **Workaround:** Check whether the desktop app is running with elevated rights. If yes, restart Power Automate for desktop and run it with elevated rights. And then try again.
-- **Issue:** A virtual desktop connected through Citrix or RDS, or as a Citrix virtual app or as a remote app is not displayed in the tool.
+- **Issue:** A virtual desktop connected through Citrix or RDS, or as a Citrix virtual app or as a remote app isn't displayed in the tool.
 
   **Workaround:** Ensure that Power Automate agent for virtual desktops component is installed, up and running in the respective virtual machine.
   
