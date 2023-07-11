@@ -18,4 +18,4 @@ ms.reviewer: angieandrews
 
 - [Get started with Copilot (preview)](get-started-with-copilot.md)
 - [FAQs for Copilot in Power Automate](faqs-copilot.md)
-- [FAQs for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
+- [FAQs for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
