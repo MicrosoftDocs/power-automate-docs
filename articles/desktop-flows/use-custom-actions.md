@@ -22,6 +22,9 @@ search.audienceType:
 > [!NOTE]
 > An Attended RPA license is required to include and use custom actions in desktop flows.
 
+> [!IMPORTANT]
+> - Ensure the .dll files describing Custom actions (preview), their dependency .dll files, and the .cab files are properly signed with a digital certificate trusted by your organization. The certificate should also be installed on the device under the trusted root certificate authority where the desktop flow with custom action dependencies is modified and/or executed.
+
 You can include custom actions in desktop flows through the [Assets library (preview)](assets-library.md) using Power Automate for desktop's designer.
 
 To use Assets library, select **Assets library (preview)** in the designer.

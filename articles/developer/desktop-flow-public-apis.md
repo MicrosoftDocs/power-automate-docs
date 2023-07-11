@@ -7,10 +7,8 @@ ms.date: 12/01/2022
 ms.author: nabena
 ms.reviewer: gtrantzas
 ms.subservice: developer
-search.audienceType: 
-  - developer
 ---
-# Work with desktop flows using APIs
+# Work with desktop flows using code
 
 Developers can add [desktop flows](/power-automate/desktop-flows/introduction) functionality to their applications, including programmatically triggering and canceling desktop flows. These capabilities are offered as part of the Microsoft Dataverse platform.
 

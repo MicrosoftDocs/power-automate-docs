@@ -113,15 +113,6 @@ You don't need to be a developer to create flows; however, Power Automate does p
 
     ![Peek code details.](media/getting-started/peek-code-details.png)
 
-## Find your flows easily
-
-When your creative juices start *flowing*, you might create many flows. Don't worry, finding your flows is easy - just use the search box on the **My flows**, **Team flows**, **Connections**, or **Solutions** screen to display only flows that match the search terms you enter.
-
-![Filter or search flows.](media/getting-started/filter-search-box.png)
- 
-> [!NOTE]
-> The search filter only finds flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
-
 ## Get notifications when something's wrong
 
 Visit the cloud flow activity page to see the list of cloud flows that recently ran, sent notifications, or have failed.
