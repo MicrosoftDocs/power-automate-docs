@@ -153,7 +153,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ## Links
 
-Use HTTPS links, which will be redered as links in all clients. Non-HTTPS links (for example, FTP, HTTP, and mail) can be rendered as regular text.
+Use HTTPS links, which are rendered as links in all clients. Non-HTTPS links (for example, FTP, HTTP, and mail) can be rendered as regular text.
 
 You can set text hyperlinks for your URL using the standard markdown link syntax:
 
