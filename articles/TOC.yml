@@ -1109,9 +1109,9 @@
 - name: Responsible AI
   items:
   - name: Overview
-    href: transparency-note.md
-  - name: Transparency note for Copilot
-    href: transparency-note-copilot.md
+    href: responsible-ai-overview.md
+  - name: FAQ for Copilot
+    href: faqs-copilot.md
 
 
 
