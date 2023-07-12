@@ -17,5 +17,5 @@ ms.reviewer: angieandrews
 [!INCLUDE[responsible-ai-features](./includes/responsible-ai-features.md)]
 
 - [Get started with Copilot (preview)](get-started-with-copilot.md)
-- [FAQs for Copilot in Power Automate](faqs-copilot.md)
-- [FAQs for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+- [FAQ for Copilot in Power Automate](faqs-copilot.md)
+- [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy/)
