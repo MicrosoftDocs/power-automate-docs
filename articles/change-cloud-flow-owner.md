@@ -31,6 +31,7 @@ The flow owner plays a vital role in the management, control, and maintenance of
 In cases where ownership needs to be transferred, such as when a flow owner leaves the organization or changes roles, providing a new flow owner ensures a smooth transition. The previous flow owner can transfer ownership to another user to maintain continuity and avoid disruptions in flow management.
 
 If an administrator wants to make changes to a flow, they must first make themselves an owner or co-owner.
+Flows are usually owned by [regular users](/power-platform/admin/create-users#user-types), but if you need to change the owner to a Service Principal application user instead, see [Change the owner of a cloud flow to a Service Principal application user](Change-the-owner-of-a-cloud-flow-to-a-service-principal-application-user)
 
 ## Change the owner of a solution-aware cloud flow
 
@@ -92,7 +93,7 @@ The flow can still be assigned to the new owner. The flow continues to run for 3
 ## Change the owner of a cloud flow to a service principal application user
 
 ### Service Principal application users
-A Service Principal is a non-human security identity that represents an application or service that can own and manage resources within Azure and the Power Platform. To use a Service Principal within the Power Platform, a Service Principal application user needs to be created that represents the service principal [via the portal](/power-platform/admin/create-users#create-an-application-user) or [via API](/power-platform/admin/manage-application-users). An application user can have connections shared with them and own resources such as flows.
+A [Service Principal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is a non-human security identity that represents an application or service that can own and manage resources within Azure and the Power Platform. To use a Service Principal within the Power Platform, a Service Principal application user needs to be created that represents the service principal [via the portal](/power-platform/admin/create-users#create-an-application-user) or [via API](/power-platform/admin/manage-application-users). An application user can have connections shared with them and own resources such as flows.
 A Service Principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account), so it cannot have a user license associated with it and it is subject to [non-licensed user limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits). 
 
 ### Service Principal application user ownership of flows
