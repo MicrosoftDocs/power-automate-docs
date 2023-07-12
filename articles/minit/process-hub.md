@@ -1,5 +1,5 @@
 ---
-title: Explore the home page in the Process Mining desktop app
+title: Explore the home page in Power Automate Process Mining
 description: Learn how to use the home page so that you can get started using Power Automate Process Mining. 
 author: rosikm
 contributors:
@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template

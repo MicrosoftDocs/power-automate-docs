@@ -1,13 +1,13 @@
 ---
 title: Variants filter
-description: Learn how to restrict the mining in the process only to the cases following a certain scenario in the Process Mining desktop app.
+description: Learn how to restrict the mining in the process only to the cases following a certain scenario in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:

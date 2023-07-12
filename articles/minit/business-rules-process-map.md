@@ -1,13 +1,13 @@
 ---
 title: Business rules for process maps
-description: Learn how to display business rules in the process map in the Process Mining desktop app.
+description: Learn how to display business rules in the process map in Power Automate Process Mining.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
 ms.custom: bap-template

@@ -1,13 +1,13 @@
 ---
 title: Case attributes filter
-description: Learn how to use the case attributes filter in the Process Mining desktop app.
+description: Learn how to use the case attributes filter in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template

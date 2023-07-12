@@ -6,8 +6,8 @@ contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
-ms.topic: conceptuaL
-ms.date: 11/15/2022
+ms.topic: conceptual
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template

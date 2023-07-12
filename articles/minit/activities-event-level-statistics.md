@@ -1,13 +1,13 @@
 ---
 title: Customize activities (event-level) statistics
-description: Learn about statistics for process activities (events) in the Process Mining desktop app.
+description: Learn about statistics for process activities (events) in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -18,7 +18,7 @@ search.audienceType:
 
 # Customize activities (event-level) statistics
 
-The Process Mining desktop app provides statistics at the level of activities, or events, in both chart and table form. You can customize many aspects of the chart and the tabular data.
+Power Automate Process Mining provides statistics at the level of activities, or events, in both chart and table form. You can customize many aspects of the chart and the tabular data.
 
 1. On the left panel in the **Processes** screen, select **Statistics**.
 

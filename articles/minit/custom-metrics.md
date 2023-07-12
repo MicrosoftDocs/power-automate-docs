@@ -1,13 +1,13 @@
 ---
 title: Custom metrics overview
-description: Learn how to use predefined metrics to define your own metrics in the Process Mining desktop app.
+description: Learn how to use predefined metrics to define your own metrics in Power Automate Process Mining.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType:

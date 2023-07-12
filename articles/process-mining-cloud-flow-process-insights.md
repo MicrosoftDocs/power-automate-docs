@@ -20,7 +20,7 @@ search.audienceType:
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-Process mining can help you gain valuable insights and optimize your cloud flows. You can visualize your flow's performance, identify bottlenecks and opportunities for improvement, and monitor for performance drifts. By utilizing process advisor to analyze your flow's run history with process mining techniques, you can generate these insights directly from the flow details page.
+The process mining capability can help you gain valuable insights and optimize your cloud flows. You can visualize your flow's performance, identify bottlenecks and opportunities for improvement, and monitor for performance drifts. By utilizing the process mining capability to analyze your flow's run history with process mining techniques, you can generate these insights directly from the flow details page.
 
 > [!IMPORTANT]
 >
@@ -76,4 +76,4 @@ On your flow details page, you can see the **Process insights** card. To see you
 1. Select time analysis report to drill down into bottlenecks based on cases, variants, and time.
 
 > [!NOTE]
-> To re-analyze the process based on your latest flow runs, go to the process advisor analytics page and select **Refresh**. This will update your data and re-analyze the process. You can continue viewing the analytics while the analysis is processing.
+> To re-analyze the process based on your latest flow runs, go to the analytics page and select **Refresh**. This updates your data and re-analyzes the process. You can continue viewing the analytics while the analysis is processing.

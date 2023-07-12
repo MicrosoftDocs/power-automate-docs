@@ -1,13 +1,13 @@
 ---
 title: Business rule scope 
-description: Learn about the mandatory field scope in business rule definition in the Process Mining desktop app.
+description: Learn about the mandatory field scope in business rule definition in Power Automate Process Mining.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
 ms.custom: bap-template

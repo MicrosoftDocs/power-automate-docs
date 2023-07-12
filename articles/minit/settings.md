@@ -1,13 +1,13 @@
 ---
 title: Settings overview
-description: Learn how to set the general options and default configuration, define the working hours calendar templates, and update the application or license in the Process Mining desktop app.
+description: Learn how to set the general options and default configuration, define the working hours calendar templates, and update the application or license in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Settings overview
 
-The **Settings** in options allow you to set the general options and default configuration of the Process Mining desktop app, define the working hours calendar templates, and update the application or license.
+The **Settings** in options allow you to set the general options and default configuration of Power Automate Process Mining, define the working hours calendar templates, and update the application or license.
 
 ## Set options
 

@@ -1,13 +1,13 @@
 ---
 title: Export and import filters
-description: Learn how to export existing filters in the view and re-use them in another view or process in the Process Mining desktop app.
+description: Learn how to export existing filters in the view and re-use them in another view or process in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Export and import filters
 
-The Process Mining desktop app offers an option to export existing set of filters in the view and re-use them in another view or process. To export or import filters, select (**...**) in the menu at the top of the **Filtering** screen.
+Power Automate Process Mining offers an option to export existing set of filters in the view and re-use them in another view or process. To export or import filters, select (**...**) in the menu at the top of the **Filtering** screen.
 
 :::image type="content" alt-text="Screenshot of the export filters option." source="media/import-export-filter.png":::
 

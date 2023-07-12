@@ -1,13 +1,13 @@
 ---
 title: List of data types - custom metrics
-description: Get a list of data types in the Process Mining desktop app.
+description: Get a list of data types in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:

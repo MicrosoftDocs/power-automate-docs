@@ -1,13 +1,13 @@
 ---
 title: Compare process views for compliance
-description: Learn how to compare various process views in the Process Mining desktop app.
+description: Learn how to compare various process views in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -23,7 +23,7 @@ You can also change the complexity of the map, zoom, or nodes offset in the **Cu
 
 :::image type="content" alt-text="Screenshot of the panel for adding views." source="media/process-compare.png":::
 
-You can compare in detail values of metrics and attributes at the level of activities and edges. You can also compare the views of various processes or different views generated from a single process (for example, for different periods of time) by selecting a process in the **Compare** box. 
+You can compare in detail values of metrics and attributes at the level of activities and edges. You can also compare the views of various processes or different views generated from a single process (for example, for different periods of time) by selecting a process in the **Compare** box.
 
 ## Add views
 

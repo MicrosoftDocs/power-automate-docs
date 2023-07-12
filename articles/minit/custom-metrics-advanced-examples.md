@@ -1,13 +1,13 @@
 ---
 title: Advanced examples
-description: Get complex examples of custom operators in the Process Mining desktop app.
+description: Get complex examples of custom operators in Power Automate Process Mining.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType:
@@ -134,7 +134,7 @@ As you have single result per case,​ results are available only in screens tha
 
 Usage of case level metric (aggregated or non-aggregated) in **Statistics Case overview**, **Root cause analysis** or **Case metric filter** is no surprise.
 
-To answer why there is an indication for usage for **Event metrics**, it doesn't offer any advanced setting to switch to case level. The answer is in the expression formula, which uses `Duration()` operator. The Process Mining desktop app offers the same operator `Duration()` on event and on case level. Therefore, the same expression is applicable on both the case and event level.
+To answer why there is an indication for usage for **Event metrics**, it doesn't offer any advanced setting to switch to case level. The answer is in the expression formula, which uses `Duration()` operator. Power Automate Process Mining offers the same operator `Duration()` on event and on case level. Therefore, the same expression is applicable on both the case and event level.
 
 ## 3 Edge aggregation
 

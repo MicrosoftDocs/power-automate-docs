@@ -1,13 +1,13 @@
 ---
 title: Sequence filter
-description: Learn how to define the sequence in which two events with specific attribute values are performed and specify further requirements in the Process Mining desktop app.
+description: Learn how to define the sequence in which two events with specific attribute values are performed and specify further requirements in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:

@@ -1,13 +1,13 @@
 ---
 title: List of aggregations
-description: Learn about the aggregations you can use in custom metrics in the Process Mining desktop app.
+description: Learn about the aggregations you can use in custom metrics in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template

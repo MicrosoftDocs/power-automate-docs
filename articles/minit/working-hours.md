@@ -1,13 +1,13 @@
 ---
 title: Working hours
-description: Learn how to define calendar templates in the Process Mining desktop app.
+description: Learn how to define calendar templates in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -64,7 +64,7 @@ On the **Non-Working days** tab, define special non-working days such as bank ho
 
     To switch the displayed year, select the arrows next to the year label above the calendar view.
 
-- **Holidays**: Simplify the definition of bank and national holidays by importing them all at once. To initialize the import, select **Import holidays** below the calendar view. A window opens where you can choose the specific calendar and specify the year range. The Process Mining desktop app will automatically set holidays for the defined range. You can import as many countries as needed.
+- **Holidays**: Simplify the definition of bank and national holidays by importing them all at once. To initialize the import, select **Import holidays** below the calendar view. A window opens where you can choose the specific calendar and specify the year range. Power Automate Process Mining automatically sets holidays for the defined range. You can import as many countries as needed.
 
     If you imported a set of holidays by mistake, you can delete them from the calendar template by selecting **Remove holidays** below the calendar view.
 

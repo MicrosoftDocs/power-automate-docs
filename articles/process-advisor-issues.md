@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Known issues in process advisor
+# Known issues in the process mining capability
 
 We'll continue to add issues here. If you're experiencing an issue not mentioned, check the **Process advisor community forums**.
 

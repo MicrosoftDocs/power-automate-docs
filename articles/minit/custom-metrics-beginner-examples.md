@@ -1,13 +1,13 @@
 ---
 title: Basic examples
-description: Get examples of various calculation methods for custom metrics with a focus on proper context and aggregation selection in the Process Mining desktop app.
+description: Get examples of various calculation methods for custom metrics with a focus on proper context and aggregation selection in Power Automate Process Mining.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType:
@@ -45,7 +45,7 @@ We need to run across all available events in the view. Assignment of events to 
 
 ### Usage for example 1
 
-The custom metric editor indicates the result is applicable everywhere in the Process Mining desktop app. The reason is that a single result is a numerical constant, which can be used in any expression and any place where the metric is displayed. Such metric - returning single value may be displayed in process map, statistics for case overview, statistics for attributes, filters, or root cause analysis.
+The custom metric editor indicates the result is applicable everywhere in Power Automate Process Mining. The reason is that a single result is a numerical constant, which can be used in any expression and any place where the metric is displayed. Such metric - returning single value may be displayed in process map, statistics for case overview, statistics for attributes, filters, or root cause analysis.
 
 ## ​2. Event level aggregation (process)
 

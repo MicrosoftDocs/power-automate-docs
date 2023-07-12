@@ -18,7 +18,7 @@ search.audienceType:
 
 # Overview of process mining and task mining in Power Automate
 
-Process mining and task mining in Power Automate allow you to gain a better understanding of your business processes so you can optimize them. They share the same goal of improving process efficiency. The main difference is their area of focus.
+Process mining and task mining in Power Automate allow you to gain a better understanding of your business processes so you can optimize them.
 
 - **Process mining:** The process mining capability in Power Automate is better suited for discovery of inefficiencies in organization-wide processes. It enables you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). The process mining capability displays maps of your processes with data and metrics to recognize performance issues. Example processes suitable for the process mining capability include *accounts receivable* and *order-to-cash*.
 
@@ -39,6 +39,8 @@ Here are some reasons to help you decide to use the process mining capability.
 - Discover automation opportunities.
 
 - Compare processes.
+
+- Find mistakes.
 
 - Understand where and why problems occur.
 

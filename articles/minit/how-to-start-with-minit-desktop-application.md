@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -26,7 +26,7 @@ Before you can start using Power Automate Process Mining, you need to download i
 
 1. At the top of the process mining screen, select **Download app**.
   
-    :::image type="content" source="media/minit-install-a1.png" alt-text="Screenshot of the Download app option in Power Automate Process Mining.":::
+    :::image type="content" source="media/minit-install-a1.png" alt-text="Screenshot of the'Download app' option in Power Automate Process Mining.":::
 
 1. After the installer file downloads, select **Install** when prompted to run the installer.
 
@@ -46,6 +46,6 @@ Before you can start using Power Automate Process Mining, you need to download i
 
 1. Start process mining from the **Processes** screen.
 
-## Next step
+### See also
 
 [Explore the home page](process-hub.md)

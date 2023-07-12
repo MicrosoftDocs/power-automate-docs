@@ -1,13 +1,13 @@
 ---
 title: Filtering overview
-description: Learn how to adjust which cases will be included in the process analysis in the Process Mining desktop app.
+description: Learn how to adjust which cases will be included in the process analysis in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -21,7 +21,7 @@ Use filters to adjust which cases will be included in the process analysis. For 
 
 ## Filter components
 
-A filter is a rule or a set of rules determining which cases and/or events from the process will be later included in process mining. There are two groups of filters available in the Process Mining desktop app: event level and case level. To learn more about each filter, select the link.
+A filter is a rule or a set of rules determining which cases and/or events from the process will be later included in process mining. There are two groups of filters available in Power Automate Process Mining: event level and case level. To learn more about each filter, select the link.
 
 ### Event level filters
 

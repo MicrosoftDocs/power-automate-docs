@@ -1,13 +1,13 @@
 ---
 title: Custom metrics calculation methods
-description: Learn the calculation methods used to define the desired calculation scope for custom metrics in the Process Mining desktop app.
+description: Learn the calculation methods used to define the desired calculation scope for custom metrics in Power Automate Process Mining.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType:
@@ -17,9 +17,9 @@ search.audienceType:
 
 # Custom metrics calculation methods
 
-Use this article if you're already familiar with the basic functionality of the Process Mining desktop app and understand the basics of process mining. It offers a methodical introduction to the calculation methods after which you'll be able to define the desired calculation scope.
+Use this article if you're already familiar with the basic functionality of Power Automate Process Mining and understand the basics of process mining. It offers a methodical introduction to the calculation methods after which you'll be able to define the desired calculation scope.
 
-## Metrics in the Process Mining desktop app
+## Metrics in Power Automate Process Mining
 
 The Process Mining desktop app offers a wide set of predefined standard metrics (for example, number of events, number of cases, average duration of cases, number of variants, and more). These metrics might be separated in two basic groups: ​
 

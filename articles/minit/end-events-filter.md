@@ -1,13 +1,13 @@
 ---
 title: End events filter
-description: Learn how to restrict cases according to the property of the event that occurred at the beginning or at the end of the case in the Process Mining desktop app.
+description: Learn how to restrict cases according to the property of the event that occurred at the beginning or at the end of the case in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:

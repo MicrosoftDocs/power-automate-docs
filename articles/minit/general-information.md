@@ -1,13 +1,13 @@
 ---
 title: Tips and examples
-description: Get tips on how to define a metric formula, reference an attribute name, and more in the Process Mining desktop app.
+description: Get tips on how to define a metric formula, reference an attribute name, and more in the Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:

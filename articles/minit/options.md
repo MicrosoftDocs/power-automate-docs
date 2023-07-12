@@ -1,13 +1,13 @@
 ---
 title: Application settings
-description: Learn how to change application settings such as user interface language or set where the exported files will be stored in the Process Mining desktop app.
+description: Learn how to change application settings such as user interface language or set where the exported files will be stored in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:

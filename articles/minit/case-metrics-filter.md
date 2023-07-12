@@ -1,13 +1,13 @@
 ---
 title: Case metrics filter
-description: Learn how to filter cases based on metrics in the Process Mining desktop app.
+description: Learn how to filter cases based on metrics in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -25,7 +25,7 @@ This case-level filter can be used to filter cases based on various metrics. The
 
 - **Edge metric:** Evaluation of the case when at least one or all edges meet the edge metric.
 
-In all types of metrics, you can select between standard default metrics found in the Process Mining desktop app and custom metrics created within the process context.
+In all types of metrics, you can select between standard default metrics found in Power Automate Process Mining and custom metrics created within the process context.
 
 ## Select the case metric
 

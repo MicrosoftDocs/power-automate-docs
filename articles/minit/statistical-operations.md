@@ -1,13 +1,13 @@
 ---
 title: List of statistical operations
-description: Learn about the statistical operations in the Process Mining desktop app.
+description: Learn about the statistical operations in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -17,7 +17,7 @@ search.audienceType:
 
 # List of statistical operations
 
-This article lists statistical operations in the Process Mining desktop app.
+This article lists statistical operations in the Power Automate Process Mining.
 
 ## START()
 
