@@ -124,7 +124,7 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
 
 ### How do I disable Copilot in Power Automate?
 
-You can disable Copilot in Power Automate by contacting MS Support.
+You can disable Copilot in Power Automate by contacting Microsoft Support.
 
 ### What are the limitations of Copilot in Power Automate during preview?
 
