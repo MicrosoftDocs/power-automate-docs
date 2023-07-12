@@ -1,5 +1,5 @@
 ---
-title: Diagnostic data collection in Power Automate
+title: Diagnostic data collection
 description: Learn how to make informed choices about protecting your privacy with required and optional data classifications.
 author: nijemcevic
 contributors:
@@ -8,14 +8,14 @@ contributors:
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/09/2023
-ms.author: tatn
+ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# Diagnostic data collection in Power Automate
+# Diagnostic data collection
 
 We use diagnostic data to keep Power Automate client software secure and up-to-date; to detect, diagnose, and fix problems; and to make product improvements. This data doesn't include a user's name or email address, the content of the user's data, files, or information about apps unrelated to the product.
 

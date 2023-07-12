@@ -119,7 +119,7 @@ We support only up to 150,000 rows of data. To learn how to fix this issue using
 
 ### "Analysis failed, please try again."
 
-You might have run into other analyze issues. For more ways that we can support you, go to [Support](https://make.powerautomate.com/support/), or post your issue in the [Community Forums](https://community.dynamics.com/f).
+You might have run into other analyze issues. For more ways that we can support you, go to [Support](https://make.powerautomate.com/support/), or post your issue in the [Community Forums](https://community.dynamics.com/forums/thread/).
 
 ## Issues with your own Power BI workspace
 
