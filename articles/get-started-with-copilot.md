@@ -1,5 +1,5 @@
 ---
-title: Get started with Copilot (preview)
+title: Get started with Copilot in Power Automate (preview)
 description: Learn how to access and use Copilot in Power Automate.
 ms.date: 05/23/2023
 ms.custom: 
@@ -10,7 +10,7 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ---
 
-# Get started with Copilot (preview)
+# Get started with Copilot in Power Automate (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -33,7 +33,10 @@ Copilot can perform the following actions:
 
 ## Prerequisites
 
-In this preview, a Power Platform environment in a **Preview (United States)** region is required in Power Automate. If you don't have an environment in this region, go to [Frequently asked questions](#why-dont-i-see-copilot-in-power-automate-in-my-power-automate-experience) in this article to create it.
+You need a Power Platform environment in the United States or Preview (United States) region for Copilot in Power Automate.
+
+> [!NOTE]
+> If your environment is in the United States or Preview (United States) region and you still don’t see the copilot experience, contact Microsoft Support.
 
 ## Create a flow using Copilot
 
@@ -110,9 +113,7 @@ Use this section to find answers to frequently asked questions.
 
 ### Why don’t I see Copilot in Power Automate in my Power Automate experience?
 
-There are several possibilities.
-
-- Check if the environment you’re using is in preview region or not. Your Power Platform admin can help review and verify.
+- Check if the environment you’re using is in the United States or Preview (United States) region. Your Power Platform admin can help review and verify.
 - Check with your Power Platform admin if the tenant setting or environment setting for Copilot is or isn't enabled.
 
 ### How do I create a Power Platform environment in preview region?
@@ -120,6 +121,10 @@ There are several possibilities.
 Go to [Create a Power Platform environment](/power-platform/admin/create-environment#create-an-environment-without-a-database). When creating the environment, ensure that you choose the region as **Preview (United States)**. If you need help with creating a preview environment, contact your Power Platform administrator.
 
 To learn more, go to [Power Platform regions](/power-platform/admin/regions-overview).
+
+### How do I disable Copilot in Power Automate?
+
+You can disable Copilot in Power Automate by contacting MS Support.
 
 ### What are the limitations of Copilot in Power Automate during preview?
 
