@@ -145,7 +145,6 @@ You can disable Copilot in Power Automate by contacting Microsoft Support.
 
 ### See also
 
-- [Transparency notes for Power Automate](transparency-note.md)
-- [Transparency note for Copilot in Power Automate](transparency-note-copilot.md) 
-- [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
-
+- [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
+- [FAQ for Copilot in Power Automate](faqs-copilot.md) 
+- [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
