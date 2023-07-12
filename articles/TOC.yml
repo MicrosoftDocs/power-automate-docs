@@ -446,6 +446,8 @@
       href: ./desktop-flows/variable-manipulation.md
     - name: Automate using UI elements
       href: ./desktop-flows/ui-elements.md
+    - name: Inspect a UI element (preview)
+      href: ./desktop-flows/inspect-ui-elements.md  
     - name: Automate using images
       href: ./desktop-flows/images.md
     - name: Handle errors in desktop flows
@@ -1107,9 +1109,9 @@
 - name: Responsible AI
   items:
   - name: Overview
-    href: transparency-note.md
-  - name: Transparency note for Copilot
-    href: transparency-note-copilot.md
+    href: responsible-ai-overview.md
+  - name: FAQ for Copilot
+    href: faqs-copilot.md
 
 
 
