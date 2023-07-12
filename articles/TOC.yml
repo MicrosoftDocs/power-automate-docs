@@ -484,6 +484,8 @@
       href: ./desktop-flows/use-custom-actions.md
     - name: Actions SDK for .NET reference (preview)
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
+  - name: Troubleshooter (preview)
+    href: ./desktop-flows/troubleshooter.md
   - name: How to
     items:
     - name: Handle and manipulate variables
