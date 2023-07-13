@@ -1,6 +1,6 @@
 ---
 title: App Maker learning catalog
-description: Find all the training options for Power Automate.
+description: Find the training options by category for Power Automate.
 author: msftman
 ms.topic: article
 ms.date: 03/17/2020
