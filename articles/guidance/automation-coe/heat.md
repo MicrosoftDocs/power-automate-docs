@@ -1,5 +1,5 @@
 ---
-title: Holistic enterprise automation techniques (HEAT) | Microsoft Docs
+title: Holistic enterprise automation techniques (HEAT)
 description: HEAT is guidance to help you deploy the automation platform and manage the lifecycle of an automation project. Use these best practices and tools to achieve your automation goals. 
 author: kathyos
 
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 09/28/2022
 ms.subservice: guidance
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ---
@@ -60,7 +60,7 @@ Watch the video: [Empower, discover, & plan"](https://youtu.be/94Lq15PNDDg)
 
 Resources for determining ROI, process discovery, and setting up Power Automate environment:
 
-- Discover which process to automate using [process advisor](https://make.powerautomate.com/process-advisor/)
+- Discover which process to automate using [the process mining capability](https://make.powerautomate.com/process-advisor/)
 - Use the [Automation Project app](/power-automate/guidance/automation-kit/overview/introduction) for curating and managing ideas
 - [Power Automate for desktop](/power-automate/desktop-flows/introduction)
 - [Power Automate IP address configuration](/power-automate/limits-and-config)

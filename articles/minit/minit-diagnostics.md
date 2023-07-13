@@ -23,7 +23,7 @@ Microsoft is dedicated to being transparent with our customers about the data we
 
 Power Automate client software doesn't collect optional diagnostic data by default unless the user specified otherwise during the initial installation process or later in the product's settings.
 
-This article provides an overview of the types of diagnostic data that are required and optional, and the specific categories of diagnostic data that are collected by minit.
+This article provides an overview of the types of diagnostic data that are required and optional, and the specific categories of diagnostic data that are collected by Power Automate Process Mining.
 
 ## Required data
 
