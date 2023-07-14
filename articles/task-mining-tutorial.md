@@ -28,7 +28,7 @@ This tutorial with sample data allows you to experience task mining in the proce
 
 For the task mining tutorial, download [User recording demo data](https://go.microsoft.com/fwlink/?linkid=2175600). For the process mining tutorial, go to [Tutorial: Get started with the process mining capability](process-mining-tutorial.md).
 
-## Get the process mining capability ready
+## Get ready for task mining
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
