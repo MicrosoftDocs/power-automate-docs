@@ -59,9 +59,9 @@ On your flow details page, you can see the **Process insights** card. To see you
 
 1. Generate flow runs if the flow hasn't run in the last 28 days.
 
-    :::image type="content" source="media/process-mining-cloud-flow-process-insights/cloud-flow-details.png" alt-text="Screenshot of the flow details page.":::
+1. On the **Process mining (preview)** tile, select **Improve your flows**.
 
-1. On the process advisor tile, select **improve your workflows**.
+    :::image type="content" source="media/process-mining-cloud-flow-process-insights/improve-flow.png" alt-text="Screenshot of the flow details page.":::
 
 1. Wait for analysis to complete.
 

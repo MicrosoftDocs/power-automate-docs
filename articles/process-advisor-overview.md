@@ -83,7 +83,7 @@ Explore topics in [process mining](process-mining-overview.md) and [task minin
 
 ## Licensing
 
-Process mining is licensed as part of Power Automate per-user licenses. If you don’t have a license, you can start a Power Automate premium trial to try the process mining capability. The per-user licenses enable users to analyze processes and view the analytics report.
+Process mining is licensed as part of Power Automate per-user licenses. If you don’t have a license, you can start a Power Automate trial to try the process mining capability. The per-user licenses enable users to analyze processes and view the analytics report.
 
 **Task mining capability:** A *Power Automate per-user license* enables a user to analyze a recorded process and view the analytics report. Contributing recordings to a process doesn't need the per-user license.
 

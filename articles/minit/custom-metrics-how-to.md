@@ -17,7 +17,7 @@ search.audienceType:
 
 # Custom metrics calculation methods
 
-Use this article if you're already familiar with the basic functionality of Power Automate Process Mining and understand the basics of process mining. It offers a methodical introduction to the calculation methods after which you'll be able to define the desired calculation scope.
+Use this article if you're already familiar with the basic functionality of the Power Automate Process Mining desktop app and understand the basics of process mining. It offers a methodical introduction to the calculation methods after which you'll be able to define the desired calculation scope.
 
 ## Metrics in Power Automate Process Mining
 

@@ -25,7 +25,7 @@ This case-level filter can be used to filter cases based on various metrics. The
 
 - **Edge metric:** Evaluation of the case when at least one or all edges meet the edge metric.
 
-In all types of metrics, you can select between standard default metrics found in Power Automate Process Mining and custom metrics created within the process context.
+In all types of metrics, you can select between standard default metrics found in the Power Automate Process Mining desktop app and custom metrics created within the process context.
 
 ## Select the case metric
 

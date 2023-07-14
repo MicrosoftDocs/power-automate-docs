@@ -17,7 +17,7 @@ search.audienceType:
 
 # Finance and operations templates for process mining
 
-If you're interested in analyzing your finance and operation process easily, onboard your data for process mining with a template using the process mining capability. Templates help you start mining your processes for insights by enabling you to connect to your system of record and surfacing contextual insights. You'll avoid the data identification and manipulation that's required with traditional process mining tools and reach process rich insights on analysis.
+If you're interested in analyzing your finance and operation process easily, onboard your data with templates in the process mining capability. Templates help you start mining your processes for insights by enabling you to connect to your system of record and surfacing contextual insights. You'll avoid the data identification and manipulation that's required with traditional process mining tools and reach process rich insights on analysis.
 
 ## Accounts payable template
 

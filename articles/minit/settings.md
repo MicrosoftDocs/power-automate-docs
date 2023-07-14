@@ -17,7 +17,7 @@ search.audienceType:
 
 # Settings overview
 
-The **Settings** in options allow you to set the general options and default configuration of Power Automate Process Mining, define the working hours calendar templates, and update the application or license.
+The **Settings** in options allow you to set the general options and default configuration of the Power Automate Process Mining desktop app, define the working hours calendar templates, and update the application or license.
 
 ## Set options
 

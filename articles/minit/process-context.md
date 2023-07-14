@@ -22,7 +22,7 @@ The **Process context** page is where you can create and manage process level se
 
 ## Open the Process context screen
 
-There are two ways to open the **Process context** screen depending on where you are in Power Automate Process Mining.
+There are two ways to open the **Process context** screen depending on where you are in the Power Automate Process Mining desktop app.
 
 - **From the Processes screen:** Select **Process context**.
 

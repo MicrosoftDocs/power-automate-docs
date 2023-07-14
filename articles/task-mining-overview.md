@@ -1,6 +1,6 @@
 ---
-title: Overview of the task mining capability
-description: Learn about using the task mining capability to help you better understand workflows and begin automating to reclaim time.
+title: Overview of task mining
+description: Learn about task mining to help you better understand workflows and begin automating to reclaim time.
 author: donums
 contributors:
   - donums
@@ -16,7 +16,7 @@ search.audienceType:
   - enduser
 ---
 
-# Overview of the task mining capability
+# Overview of task mining
 
 Task mining is a technology that enables organizations to capture detailed steps for tasks performed on users' desktops, either independently or collaboratively with colleagues.
 

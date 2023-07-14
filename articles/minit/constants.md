@@ -17,7 +17,7 @@ search.audienceType:
 
 # List of constants
 
-The following table lists the constants in Power Automate Process Mining.
+The following table lists the constants in the Power Automate Process Mining desktop app.
 
 | Constant | Data type | Description |
 | - | - | - |

@@ -18,7 +18,7 @@ search.audienceType:
 
 # Explore the home page
 
-The **Processes** screen is the Power Automate Process Mining home page. It's where you'll find an overview of your processes and views. It's also where you can dig deeper into your processes by creating different views, or ways of analyzing your processes.
+The **Processes** screen is the Power Automate Process Mining desktop app home page. It's where you'll find an overview of your processes and views. It's also where you can dig deeper into your processes by creating different views, or ways of analyzing your processes.
 
 ## Launch the application
 
@@ -42,11 +42,11 @@ You can organize your processes and views in a way that works best for you.
 
 - **My processes** > **Process name:** List processes by name, with their associated views displayed as tiles below them. Select the caret to the left of the process name to show or hide the views. This view is the default when you open the Process Mining desktop app.
 
-- **Shared with me** > **Process name:** 
+- **Shared with me** > **Process name:**
 
 - **Sort by:** Select an option in this dropdown menu to sort views in ascending or descending order by name, or by most recent or oldest.
 
-- **Refresh:** Refresh the list of processes from the process mining capability. For example, if you create a process in the process mining capability, select **Refresh** to update the list in the **Processes** screen.
+- **Refresh:** Refresh the list of processes from process mining in Power Automate. For example, if you create a process in the process mining portal of Power Automate, select **Refresh** to update the list in the **Processes** screen.
 
 - **Search in processes and views:** Search for a process or view by name.
 

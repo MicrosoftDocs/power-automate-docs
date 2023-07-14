@@ -21,7 +21,7 @@ Use filters to adjust which cases will be included in the process analysis. For 
 
 ## Filter components
 
-A filter is a rule or a set of rules determining which cases and/or events from the process will be later included in process mining. There are two groups of filters available in Power Automate Process Mining: event level and case level. To learn more about each filter, select the link.
+A filter is a rule or a set of rules determining which cases and/or events from the process will be later included in process mining. There are two groups of filters available in the Power Automate Process Mining desktop app: event level and case level. To learn more about each filter, select the link.
 
 ### Event level filters
 

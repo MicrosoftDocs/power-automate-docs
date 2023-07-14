@@ -2,7 +2,6 @@
 title: Holistic enterprise automation techniques (HEAT)
 description: HEAT is guidance to help you deploy the automation platform and manage the lifecycle of an automation project. Use these best practices and tools to achieve your automation goals. 
 author: kathyos
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/28/2022
@@ -60,7 +59,7 @@ Watch the video: [Empower, discover, & plan"](https://youtu.be/94Lq15PNDDg)
 
 Resources for determining ROI, process discovery, and setting up Power Automate environment:
 
-- Discover which process to automate using [the process mining capability](https://make.powerautomate.com/process-advisor/)
+- Discover which process to automate using [process mining](https://make.powerautomate.com/process-advisor/)
 - Use the [Automation Project app](/power-automate/guidance/automation-kit/overview/introduction) for curating and managing ideas
 - [Power Automate for desktop](/power-automate/desktop-flows/introduction)
 - [Power Automate IP address configuration](/power-automate/limits-and-config)
@@ -73,7 +72,6 @@ Resources for determining ROI, process discovery, and setting up Power Automate 
 Building robust automation solutions require well-defined design principles that will build the foundation for scale, security, and compliance.
 
 Watch the video: [Design phase](https://youtu.be/ur1-y0lrexU)
-
 :::image type="content" source="media/rpadesign.png" alt-text="Slide from the Design phase video, showing core design principles of intuitive user experience, intelligent process automation, and accessible to everybody" link="https://youtu.be/ur1-y0lrexU":::
 
 Some other design principles (not a comprehensive list) to consider are:

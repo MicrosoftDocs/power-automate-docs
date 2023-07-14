@@ -17,7 +17,7 @@ search.audienceType:
 
 # List of statistical operations
 
-This article lists statistical operations in the Power Automate Process Mining.
+This article lists statistical operations in the Power Automate Process Mining desktop app.
 
 ## START()
 

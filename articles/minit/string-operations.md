@@ -17,7 +17,7 @@ search.audienceType:
 
 # List of string operations
 
-Following are the string operations that you can use in Power Automate Process Mining.
+Following are the string operations that you can use in the Power Automate Process Mining desktop app.
 
 ## CONCAT([string1],...,[stringN])
 

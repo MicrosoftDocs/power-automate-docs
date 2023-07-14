@@ -18,7 +18,7 @@ search.audienceType:
 
 # Overview of Power Automate Process Mining
 
-Take advantage of additional enterprise process mining capabilities with Power Automate Process Mining. For example, there are many ways to break down your process cycles into smaller pieces for analysis. With the Power Automate Process Mining desktop app, you can easily delve into the details of your processes.
+Take advantage of additional enterprise process mining capabilities with the Power Automate Process Mining desktop app. For example, there are many ways to break down your process cycles into smaller pieces for analysis. With the Power Automate Process Mining desktop app, you can easily delve into the details of your processes.
 
 To fully use the Process Mining desktop app, you need an add-on to unblock the enterprise process mining capabilities. To learn how to install the Process Mining desktop app, go to [Install Power Automate Process Mining](how-to-start-with-minit-desktop-application.md).
 

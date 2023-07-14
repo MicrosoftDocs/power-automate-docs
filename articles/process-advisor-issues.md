@@ -17,7 +17,7 @@ search.audienceType:
 
 # Known issues in the process mining capability
 
-We'll continue to add issues here. If you're experiencing an issue not mentioned, check the **Process advisor community forums**.
+We'll continue to add issues here. If you're experiencing an issue not mentioned, check the [Process Mining community forums](https://powerusers.microsoft.com/t5/Process-Advisor/bd-p/ProcessAdvisor).
 
 ## Unable to access the process mining capability
 

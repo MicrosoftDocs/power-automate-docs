@@ -33,4 +33,4 @@ To define the values using an expression, select the **Expression** tab, selec
 
 ## Create a custom metric
 
-You can choose between standard default metrics found in Power Automate Process Mining and custom metrics created in the process context. To create a custom metric, select (**...**) > **Add**.
+You can choose between standard default metrics found in the Power Automate Process Mining desktop app and custom metrics created in the process context. To create a custom metric, select (**...**) > **Add**.

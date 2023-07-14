@@ -17,7 +17,7 @@ search.audienceType:
 
 # Find hidden connections
 
-Find hidden connections in your data with root cause analysis (RCA) in Power Automate Process Mining.
+Find hidden connections in your data with root cause analysis (RCA) in the Power Automate Process Mining desktop app.
 
 To create a new RCA, create an analysis.
 

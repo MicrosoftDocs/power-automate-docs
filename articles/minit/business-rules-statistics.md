@@ -18,7 +18,7 @@ search.audienceType:
 
 # Business rules statistics
 
-Along with statistics about your cases, activities, and edges, the Process Mining desktop app collects statistics on each of your business rules. You can view them in the **Statistics** screen.
+Along with statistics about your cases, activities, and edges, the Power Automate Process Mining desktop app collects statistics on each of your business rules. You can view them in the **Statistics** screen.
 
 1. In the left panel, select **Statistics**.
 

@@ -66,11 +66,11 @@ additionalContent:
           url: ./get-started-with-copilot.md#edit-a-flow-using-copilot
     - title: Plan with the process mining capability
       links:
-        - text: Understand your processes and identify opportunities with the process mining capability
+        - text: Understand your processes and identify opportunities with process mining
           url: process-mining-overview.md
         - text: Dig into the details with Power Automate Process Mining
           url: minit/minit-desktop-application-overview.md
-        - text: Streamline workflows and identify inefficiencies with the task mining capability
+        - text: Streamline workflows and identify inefficiencies with task mining
           url: task-mining-overview.md
     - title: Use solutions
       links:

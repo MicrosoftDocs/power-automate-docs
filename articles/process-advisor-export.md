@@ -17,7 +17,7 @@ search.audienceType:
 
 # Export and import your process
 
-You can copy or move processes in the process mining capability from one environment to another using Microsoft Power Platform solutions. You need to be an owner or co-owner of a process to export it.
+You can copy or move process mining processes from one environment to another using Microsoft Power Platform solutions. You need to be an owner or co-owner of a process to export it.
 
 > [!NOTE]
 >

@@ -42,7 +42,7 @@ The share action can be done by selecting **Share** on the **Processes** screen.
 
 - The system administrator in the environment.
 
-- Any security role that has share permissions on system entities in the process mining capability.
+- Any security role that has share permissions on system entities of the process mining capability.
 
 ## Share panel
 
