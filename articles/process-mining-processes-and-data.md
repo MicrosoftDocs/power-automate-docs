@@ -51,7 +51,7 @@ In these tables that log historical records, the data structure can be complex. 
 
 ## Connect to a data source
 
-The benefit of connecting to a database directly is keeping the process mining capability up to date with the latest data from the data source.
+The benefit of connecting to a database directly is keeping the process report up to date with the latest data from the data source.
 
 [Power Query](/power-query/power-query-what-is-power-query) supports a large variety of connectors that provide a way for the process mining capability to connect and import data from the corresponding data source. Common connectors include Text/CSV, Microsoft Dataverse, and SQL Server database. If you're using an application like SAP or Salesforce, you might be able to connect to those data sources directly via their connectors. For information on supported connectors and how to use them, go to [Connectors in Power Query](/power-query/connectors/).
 
@@ -62,7 +62,7 @@ One easy way to try out the process mining capability regardless of where your d
 > [!NOTE]
 > You must have OneDrive for Business to use the **Text/CSV** connector. If you don't have OneDrive for Business, consider using **Blank table** instead of **Text/CSV**, as in the followng step 3. You won't be able to import as many records in **Blank table**.
 
-1. On the process mining capability home page, create a process by selecting **Start here**.
+1. On the process mining home page, create a process by selecting **Start here**.
 
 1. Enter a process name and select **Create**.
 

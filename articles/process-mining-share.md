@@ -23,7 +23,7 @@ There are a few ways you can share your process.
 
 ## Share from process lists page
 
-1. On the process mining capability homepage, beneath the cards for the processes, select **All processes**.
+1. On the process mining homepage, beneath the cards for the processes, select **All processes**.
 
 1. Highlight a process, select the vertical ellipsis (&vellip;), and then select **Share**.
 
@@ -53,7 +53,7 @@ The share action is available on the **Processes** screen for the following:
 
 - The system administrator in the environment.
 
-- Any security role that has share permissions on the process mining capability system entities.
+- Any security role that has share permissions on the process mining system entities.
 
 The share action is also available on the process details page with the same conditions. For process mining, only the co-owner and viewer roles are available for sharing with others.
 

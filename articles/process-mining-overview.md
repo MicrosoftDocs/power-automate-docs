@@ -32,7 +32,7 @@ The business value of the process mining capability lies in its ability to help 
 
 - **Enhance customer experience:** By identifying process pain points and eliminating them, organizations can improve the customer experience and increase satisfaction.
 
-- **Optimize resources:** The process mining capability enables businesses to identify opportunities for automation, reducing the need for manual intervention and allowing resources to be allocated more effectively.
+- **Optimize resources:** Process mining enables businesses to identify opportunities for automation, reducing the need for manual intervention and allowing resources to be allocated more effectively.
 
 - **Ensure compliance:** Process mining can help organizations to identify non-compliant processes and take corrective action to avoid legal and financial risks.
 

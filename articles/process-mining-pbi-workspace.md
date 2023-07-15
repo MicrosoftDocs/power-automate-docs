@@ -52,7 +52,7 @@ If you haven't done this yet, install the Azure tools.
 
 1. Validate that you're signed in.
 
-1. Register the the process mining capability app service principal by typing this command:
+1. Register the process mining service principal by typing this command:
 
     **New-AzureADServicePrincipal -AppId dad3c6de-ed58-42ef-989f-9c0303aaeedc -DisplayName ‘Process Insights Prod’**
 
@@ -170,7 +170,7 @@ After completing these steps, return to the analytics page of your process in th
 
 You've successfully customized your Power BI workspace. Every time you refresh your process and reopen your Power BI report, your metrics and customizations are updated. Try out Power BI and customize your reports to learn how they can help you analyze your process effectively.
 
-Once this step is done, you see the report in your Power BI workspace with the report name that you entered. You can edit and save it. Your report on the process mining capability is updated with the changes that you made with Power BI.
+Once this step is done, you see the report in your Power BI workspace with the report name that you entered. You can edit and save it. Your report is updated with the changes that you made with Power BI.
 
 If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
 

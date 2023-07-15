@@ -1,6 +1,6 @@
 ---
 title: Power Platform templates for process mining
-description: Learn how to use Power Platform templates for  use with the process mining capability in Power Automate.
+description: Learn how to use Power Platform templates for process mining in Power Automate.
 author: donums
 contributors:
   - donums
@@ -147,7 +147,7 @@ The Power Apps insights template uses telemetry data from [Azure Monitor Applica
 
     If you're signed in, you'll see your credentials. You can switch to a different account if needed. If you're not signed in, select **Sign in** and sign in to your account.
 
-1. Go back to the **Create a new process** screen in the process mining capability and paste it in the **Power apps application insights app Id** field.
+1. Go back to the **Create a new process** screen in process mining and paste it in the **Power apps application insights app Id** field.
 
 1. Identify the parameter that you want to analyze from your app and enter it in the **Case Id field name** and **Activity field name** fields in the **Create a new process** screen.
 

@@ -131,21 +131,21 @@ You must be an admin of your Power BI workspace. To learn more about user access
 
 This is the same as the previous issue, but the error occurred during process analysis. Once you become an admin using the fix from the previous issue, reanalyze the report.
 
-### "The process mining capability service principal must be an admin of the Power BI workspace to refresh this report."
+### "The process mining service principal must be an admin of the Power BI workspace to refresh this report."
 
 Enable admin access for the process mining capability prod service principal. To learn how to give the service principal admin access, go to [Create your own custom Power BI workspace](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace).
 
-### "The process mining capability service principal must be an admin of the Power BI workspace to refresh this report. After the problem is fixed, try to reanalyze the report."
+### "The process mining service principal must be an admin of the Power BI workspace to refresh this report. After the problem is fixed, try to reanalyze the report."
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring the process mining capability service principal is the admin of the workspace, reanalyze the report.
 
-### "The process mining capability service principal cannot access the Power BI workspace."  
+### "The process mining service principal cannot access the Power BI workspace."  
 
 Set up the process mining capability service principal for your Power BI workspace. To learn how to set up, go to [Set up your workspace](process-mining-pbi-workspace.md#set-up-your-workspace).
 
-### "The process mining capability service principal cannot access the Power BI workspace. After the problem is fixed, try to reanalyze the report."
+### "The process mining service principal cannot access the Power BI workspace. After the problem is fixed, try to reanalyze the report."
 
-This is the same as the previous issue, but the error occurred during process analysis. After ensuring that the process mining capability service principal is added to the workspace and has admin access, reanalyze the report.
+This is the same as the previous issue, but the error occurred during process analysis. After ensuring that the process mining service principal is added to the workspace and has admin access, reanalyze the report.
 
 ### "The selected Power BI workspace needs premium capacity to work with this report."  
 

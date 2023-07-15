@@ -25,7 +25,7 @@ This tutorial allows you to experience the process mining capability with sample
 
 ## Download the sample data
 
-For the process mining capability tutorial, download the sample event log CSV file:  
+For the process mining tutorial, download the sample event log CSV file:  
 
 - [English version](https://go.microsoft.com/fwlink/?linkid=2181220)
 - [French version](https://go.microsoft.com/fwlink/?linkid=2226086)
@@ -86,17 +86,17 @@ When the analysis process is complete, you’ll see a process map and a dashboar
 
 ## Analyze a process
 
-Let’s take the analysis of our process beyond KPIs. We'll use Power Automate Process Mining, where you can edit and analyze your processes created in the process mining capability.
+Let’s take the analysis of our process beyond KPIs. We'll use the Power Automate Process Mining desktop app, where you can edit and analyze your processes created in the process mining capability.
 
 1. From the command bar of the analytics report page, select **Download Process Mining app** to download it.
 
 1. On the toolbar, select the environment from the top right.
 
-1. Search for the process that you created on with the prrocess mining capability in Power Automate (**AP Refunds Process**).
+1. Search for the process you created with the process mining capability in Power Automate (**AP Refunds Process**).
 
 1. Select **Default** to display the default view.
 
-    You’re ready to use the advanced capabilities of Power Automate Process Mining.
+    You’re ready to use the advanced capabilities of the Process Mining desktop app.
 
 1. On the **Customize** panel toolbar, select **Frequency** (the first icon), and then select **Case count** in the **Metric** dropdown menu.
 
