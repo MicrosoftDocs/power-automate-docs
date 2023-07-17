@@ -1,6 +1,6 @@
 ---
 title: Partner Sales and Marketing learning catalog
-description: Find training options for Power Automate.
+description: Find training options to help your customers buy the right Power Platform solution.
 author: msftman
 ms.topic: conceptual
 ms.date: 03/21/2020
