@@ -23,14 +23,13 @@ With process animation, you can visualize process development over time. You can
 
 Control animation speed, advanced settings, and more on the **Animation** screen.
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/24a8c9a0-08fd-420d-a8d0-7a72a77fefd2)
-
+:::image type="content" source="media/process-animation/animation-controls-resize.png" alt-text="<alt text>":::
 
 Legend:
 
-1. **Right arrow icon:** Select to open the **Animation** screen.
-
 1. **Animation speed slider:** Move the slider to adjust the animation playback speed. The information displayed in the animation frame remains unchanged.
+
+1. **Right arrow icon:** Select to open the **Animation** screen.
 
 1. **Animation level dropdown menu**: There are two options: Select **Immediate** to indicate that actual dynamics in the process will be shown during playback. Select **Aggregated** to indicate that the process dynamics aggregated in the time period around the currently monitored time point will be shown during playback.
 
@@ -59,10 +58,4 @@ The information about the actual time in the process appears to the right of **P
     When you select **Play animation**, the button turns into **Pause automation**.
 
 1. To temporarily stop the automation from playing, select **Pause automation**.
-
-<!-- remove instant animation level
-:::image type="content" alt-text="Screenshot of an instant animation level." source="media/image003-7.png"::: -->
-
-
-
 
