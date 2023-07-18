@@ -1,13 +1,13 @@
 ---
-title: Export and import your process in process advisor
-description: Learn how to import and export a process in the process advisor feature in Power Automate.
+title: Export and import your process
+description: Learn how to import and export a process in the process mining capability.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/11/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,9 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Export and import your process in process advisor
+# Export and import your process
 
-You can copy or move process advisor processes from one environment to another using Microsoft Power Platform solutions. You need to be an owner or co-owner of a process to export it.
+You can copy or move process mining processes from one environment to another using Microsoft Power Platform solutions. You need to be an owner or co-owner of a process to export it.
 
 > [!NOTE]
 >

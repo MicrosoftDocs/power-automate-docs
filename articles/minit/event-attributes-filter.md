@@ -1,13 +1,13 @@
 ---
 title: Event attributes filter
-description: Learn how to use the event attributes filter in minit.
+description: Learn how to use the event attributes filter in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -27,7 +27,6 @@ Use this event level filter to only select those events in cases that contain/do
 
 1. Select the **holds any of the values** field, and then select the attribute values in the **List** tab to the right. Your selections appear in the field.
 
-
 ## Use list and expression values
 
 There are two possibilities to define the values for filter criteria. This is done in the **List** or **Expression** tab.
@@ -36,5 +35,5 @@ There are two possibilities to define the values for filter criteria. This is do
 
 - **Expression:** Available for both string and numeric attributes. Specify an expression such as `„Starts with", „Contains"` for string and, an expression such as `„Greater than", „Equal"` for numeric attributes.
 
-    You can also select **fx** to use [custom metrics](custom-metrics.md).
+    You can also select ***fx*** to use [custom metrics](custom-metrics.md).
 

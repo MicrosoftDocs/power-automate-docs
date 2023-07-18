@@ -1,13 +1,13 @@
 ---
 title: Statistics overview
-description: Get an overview of the properties of the process undergoing analysis minit.
+description: Get an overview of the properties of the process undergoing analysis in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -81,7 +81,7 @@ To select case duration:
 
 ## Filtering in statistics charts
 
-You can filter selected values in the summary charts in the statistics of process instances and in the statistics of attributes by selecting each column. When you make a selection, the filter screen will open with the preset values of the filter.
+You can filter selected values in the summary charts in the statistics of process instances and in the statistics of attributes by selecting each column. When you make a selection, the Filtering screen opens with the preset values of the filter.
 
 :::image type="content" alt-text="Screenshot of the Filtering screen." source="media/chart-filtering.png":::
 
@@ -91,11 +91,11 @@ You can sort the statistics grid by selecting the up or down arrow in the header
 
 ## Case duration influence
 
-Case duration influence is a complex analytical insight that evaluates the influence of case-level attributes (including financial) on the mean case duration. Minit takes all case-level attribute values and, based on the mean duration of the cases having the specific case-level attribute value weighted by the volume of cases having this value, calculates the percentile influence of cases having this value on the overall mean case duration.
+Case duration influence is a complex analytical insight that evaluates the influence of case-level attributes (including financial) on the mean case duration. The Power Automate Process Mining desktop app takes all case-level attribute values and, based on the mean duration of the cases having the specific case-level attribute value weighted by the volume of cases having this value, calculates the percentile influence of cases having this value on the overall mean case duration.
 
 For example, if the Article is Software Licenses, the mean duration is longer than for article Hardware, but the influence on the overall case duration is not so strong. This is because the case frequency is much smaller for Software Licenses than it is for Hardware.
 
-A positive percentage number (in RED) means that the corresponding attribute value is slowing the process. A negative percentage number (in GREEN) is making the process faster. Its influence on the mean duration is represented by the percentage value.
+A positive percentage number in red means that the corresponding attribute value is slowing the process. A negative percentage number in green is making the process faster. Its influence on the mean duration is represented by the percentage value.
 
 To access the case duration influence, select **Case duration influence** statistics from the selection control in the top left corner.
 

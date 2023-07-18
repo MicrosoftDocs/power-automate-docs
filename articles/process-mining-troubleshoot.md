@@ -1,13 +1,13 @@
 ---
-title: Troubleshoot issues in process advisor
-description: Learn how to troubleshoot issues in the process advisor feature in Power Automate.
+title: Troubleshoot issues in the process mining capability
+description: Learn how to troubleshoot issues in the process mining capability in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 01/05/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,15 +15,15 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot issues in process advisor
+# Troubleshoot issues in the process mining capability
 
-This article explains common issues and error messages in process advisor. You'll find solutions to troubleshoot with procedures and helpful tips.
+This article explains common issues and error messages in the process mining capability. You'll find solutions to troubleshoot with procedures and helpful tips.
 
 ## Issues with dataflow refresh
 
 ### "There was an issue with a recent dataflow refresh, check your dataflow refresh history."
 
-When you go through setup, process advisor creates a dataflow that's tied to the process. Normally you don’t need to interact with the dataflow, but if there are issues with the dataflow refresh, you might need to troubleshoot them. Dataflow refresh is what reads the data source and makes it ready to be analyzed.
+When you go through setup, the process mining capability creates a dataflow that's tied to the process. Normally you don’t need to interact with the dataflow, but if there are issues with the dataflow refresh, you might need to troubleshoot them. Dataflow refresh is what reads the data source and makes it ready to be analyzed.
 
 To troubleshoot:
 
@@ -61,9 +61,9 @@ If you encounter an error message while attempting to create and analyze a proce
 
 Once you're done with setup, select **Analyze**. You'll be able to view the Analytics page when the analysis is complete. Analysis typically takes a few minutes but may be faster or slower depending on how much data needs to be analyzed.
 
->[!NOTE]
+> [!NOTE]
 >
->If you don't visit the Analytics page for 14 days, you'll need to re-analyze the process to access the Analytics page again.
+> If you don't visit the Analytics page for 14 days, you'll need to re-analyze the process to access the Analytics page again.
 
 For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
 
@@ -119,7 +119,7 @@ We support only up to 150,000 rows of data. To learn how to fix this issue using
 
 ### "Analysis failed, please try again."
 
-You might have run into other analyze issues. For more ways that we can support you, go to [Support](https://make.powerautomate.com/support/), or post your issue in the [Community Forums](https://community.dynamics.com/f).
+You might have run into other analyze issues. For more ways that we can support you, go to [Support](https://make.powerautomate.com/support/), or post your issue in the [Community Forums](https://community.dynamics.com/forums/thread/).
 
 ## Issues with your own Power BI workspace
 
@@ -131,21 +131,21 @@ You must be an admin of your Power BI workspace. To learn more about user access
 
 This is the same as the previous issue, but the error occurred during process analysis. Once you become an admin using the fix from the previous issue, reanalyze the report.
 
-### "The process advisor service principal must be an admin of the Power BI workspace to refresh this report."
+### "The process mining service principal must be an admin of the Power BI workspace to refresh this report."
 
-Enable admin access for the process advisor prod service principal. To learn how to give the service principal admin access, go to [Create your own custom Power BI workspace](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace).
+Enable admin access for the process mining capability prod service principal. To learn how to give the service principal admin access, go to [Create your own custom Power BI workspace](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace).
 
-### "The process advisor service principal must be an admin of the Power BI workspace to refresh this report. After the problem is fixed, try to reanalyze the report."
+### "The process mining service principal must be an admin of the Power BI workspace to refresh this report. After the problem is fixed, try to reanalyze the report."
 
-This is the same as the previous issue, but the error occurred during process analysis. After ensuring the process advisor service principal is the admin of the workspace, reanalyze the report.
+This is the same as the previous issue, but the error occurred during process analysis. After ensuring the process mining capability service principal is the admin of the workspace, reanalyze the report.
 
-### "The process advisor service principal cannot access the Power BI workspace."  
+### "The process mining service principal cannot access the Power BI workspace."  
 
-Set up the process advisor service principal for your Power BI workspace. To learn how to set up, go to [Set up your workspace](process-mining-pbi-workspace.md#set-up-your-workspace).
+Set up the process mining capability service principal for your Power BI workspace. To learn how to set up, go to [Set up your workspace](process-mining-pbi-workspace.md#set-up-your-workspace).
 
-### "The process advisor service principal cannot access the Power BI workspace. After the problem is fixed, try to reanalyze the report."
+### "The process mining service principal cannot access the Power BI workspace. After the problem is fixed, try to reanalyze the report."
 
-This is the same as the previous issue, but the error occurred during process analysis. After ensuring that the process advisor service principal is added to the workspace and has admin access, reanalyze the report.
+This is the same as the previous issue, but the error occurred during process analysis. After ensuring that the process mining service principal is added to the workspace and has admin access, reanalyze the report.
 
 ### "The selected Power BI workspace needs premium capacity to work with this report."  
 
