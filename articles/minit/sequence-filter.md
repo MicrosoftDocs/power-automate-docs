@@ -1,13 +1,13 @@
 ---
 title: Sequence filter
-description: Learn how to define the sequence in which two events with specific attribute values are performed and specify further requirements for the progress of events in a case in minit.
+description: Learn how to define the sequence in which two events with specific attribute values are performed and specify further requirements in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -38,7 +38,7 @@ The sequence filter doesn't take the waiting time into account. It takes into ac
 1. Select the **an event with the attribute value in** field, and then select the attribute values for the second event in sequence in the **List** tab to the right. Your selections appear in the field.
 
 1. In the next field, define other requirements for the same or different properties of the first and second event. For example, select if the given property (attribute) is to be the same or different.
- 
+
     If you leave the setting as **[the same/different]**, this condition won't be taken into consideration.
 
 1. From the the **values of attribute** dropdown menu, select which event attribute should have the same/different value.

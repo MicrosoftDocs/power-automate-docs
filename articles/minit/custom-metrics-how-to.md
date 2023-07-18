@@ -1,13 +1,13 @@
 ---
 title: Custom metrics calculation methods
-description: Learn the calculation methods used to define the desired calculation scope for custom metrics in minit.
+description: Learn the calculation methods used to define the desired calculation scope for custom metrics in Power Automate Process Mining.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType:
@@ -17,19 +17,19 @@ search.audienceType:
 
 # Custom metrics calculation methods
 
-This article is for users who are already familiar with the basic functionality of minit and understand the basics of process mining. It offers a methodical introduction to the calculation methods after which you'll be able to define the desired calculation scope.
+Use this article if you're already familiar with the basic functionality of the Power Automate Process Mining desktop app and understand the basics of process mining. It offers a methodical introduction to the calculation methods after which you'll be able to define the desired calculation scope.
 
-## Metrics in minit
+## Metrics in Power Automate Process Mining
 
-Minit offers a wide set of predefined standard metrics (for example, number of events, number of cases, average duration of cases, number of variants, and more). These metrics might be separated in two basic groups: ​
+The Process Mining desktop app offers a wide set of predefined standard metrics (for example, number of events, number of cases, average duration of cases, number of variants, and more). These metrics might be separated in two basic groups: ​
 
-- **Aggregated metrics:** Most common result. Display calculated values grouped by selected context across minit.
+- **Aggregated metrics:** Most common result. Display calculated values grouped by selected context across the Process Mining desktop app.
 
 - **Non-aggregated metrics:** Display values per individual data element like event, edge, or case.
 
 ## Aggregated metrics
 
-Aggregation or calculation is done over certain calculation scope or context.  Scope is defined by different analytical views in minit.​ This example uses the process map.
+Aggregation or calculation is done over certain calculation scope or context.  Scope is defined by different analytical views in the Process Mining desktop app.​ This example uses the process map.
 
 Process map is the most common type of display for process mining analysis. Each element of the map - node (activity) or path (edge) displays an aggregated value for all events with the same activity value. In the example below, you see the representation of two activities: *Assemble bicycle* and *Send parts to engineering*. For both nodes, the displayed value represents 109 single events in the data set and displays the aggregated value for all of it. In this case, it's the total number of events.
 
@@ -41,7 +41,7 @@ When you select another metric (**maximum duration**) in the right panel, the pr
 
 The statistics panel per single attributes uses the same aggregation as the process map, which aggregates the results per attribute value. If you have a resource (for example, a user attribute in statistic panel), you're able to see result per each ​user occurred in actual view.
 
-Minit displays aggregated results in three main categories:
+The Process Mining desktop app displays aggregated results in three main categories:
 
 - **Single result:** Usually a single global value per actual data set, for example, number of cases. Input is a whole data set and output is a single result.
 
@@ -65,15 +65,15 @@ The major difference to aggregated metrics is that calculation is done per singl
 
 - Case/event metric filters are among a few places where non-aggregated values are displayed and available to user.​
 
-The **Event metrics** filter is a good example of where duration of single events is displayed and evaluated. Event filters take each event individually and evaluate its attribute or metric value as it is. All other standard visualizations in minit display event duration in some aggregated way (for example, mean, total, minimum, or maximum).
+The **Event metrics** filter is a good example of where duration of single events is displayed and evaluated. Event filters take each event individually and evaluate its attribute or metric value as it is. All other standard visualizations in the Process Mining desktop app display event duration in some aggregated way (for example, mean, total, minimum, or maximum).
 
 ## Custom metrics
 
-Custom metric is a named calculation formula defined by user per process. This custom metric is applied by the standard ways how minit displays the data. Minit displays standard metrics in an aggregated and non-aggregated way. Custom metrics must follow the same rule. Therefore, there are two main different types of custom metrics:
+Custom metric is a named calculation formula defined by user per process. This custom metric is applied by the standard ways for how the Process Mining desktop app displays the data. It displays standard metrics in an aggregated and non-aggregated way. Custom metrics must follow the same rule. Therefore, there are two main different types of custom metrics:
 
 - **Scalar (non-aggregated) formulas&mdash;Calculation over single element like case, edge or event:** Simple scalar formulas don't contain aggregation operation in its formula. In more complex examples, it's possible to use aggregation as part of nested expression (for example, compare event duration to average duration of all events). The important rule is the result of scalar formula is generated per single case, edge or event. Individual results aren't further grouped nor processed by application into aggregated results.
 
-- **Aggregated formulas&mdash;Calculation over certain calculation scope or ‘context'. User can alternate context in formula:** Aggregated formulas contain aggregation operator (for example, `AVG`) at a top evaluation level. Minit offers a set of standard aggregation operators - see Custom metrics help for reference. Aggregation operation as first argument takes calculation scope. This determines two properties:
+- **Aggregated formulas&mdash;Calculation over certain calculation scope or ‘context'. User can alternate context in formula:** Aggregated formulas contain aggregation operator (for example, `AVG`) at a top evaluation level. The Process Mining desktop app offers a set of standard aggregation operators - see Custom metrics help for reference. Aggregation operation as first argument takes calculation scope. This determines two properties:
 
     - Input set of data taken into account
 
@@ -102,8 +102,8 @@ The following table provides examples and descriptions of custom metrics.
 | Example  | Description    | 
 | --- | --- |
 | Aggregation​ | Aggregation converts multiple results (for example, per case) into a single value. ​If the aggregation part is missing, we have scalar, non-aggregated metric.​ |
-| Calculation | Standard calculations in minit are: `Total(sum)`, `Mean(avg)`, `min`, `max. ​Advanced calculations like ratio of two attributes need to be done with custom metrics.​ |
-| Data filtration | Filtration in minit can be done with filters, custom metrics with conditional operators, or business rules with filters.      |
+| Calculation | Standard calculations in the Process Mining desktop app are: `Total(sum)`, `Mean(avg)`, `min`, `max. ​Advanced calculations like ratio of two attributes need to be done with custom metrics.​ |
+| Data filtration | Filtration in the Process Mining desktop app can be done with filters, custom metrics with conditional operators, or business rules with filters.      |
 
 The example shows the possibility to perform advanced filtering in custom metrics. To make the example easier, we'll focus on the aggregation and calculation part. When we create the view, filters which fit the requirements of **"order number was entered manually, and invoice status was never rejected"** we might simplify the task.​
 
@@ -118,7 +118,7 @@ The following table provides examples and descriptions of custom metrics.
 | Example  | Description    | 
 | --- | --- |
 | Aggregation | Aggregation converts multiple results (for example, per case) into a single value. Scope of aggregation is defined by context definition.​​ |
-| Calculation | Standard calculations in minit are: `Total(sum)`, `Mean(avg)`, `min`, `max`.​Advanced calculations like ratio of two attributes need to be done with custom metrics.​ |
+| Calculation | Standard calculations in the Process Mining desktop app are: `Total(sum)`, `Mean(avg)`, `min`, `max`.​Advanced calculations like ratio of two attributes need to be done with custom metrics.​ |
 | Data filtration | Simplified filtering means the scope or context definition.​ |
 
 #### ​Generic formula for aggregated custom metrics​

@@ -1,13 +1,13 @@
 ---
 title: Understand process animation controls
-description: Learn about the various animation controls.
+description: Learn about the various animation controls in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
