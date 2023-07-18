@@ -29,15 +29,13 @@ To troubleshoot:
 
 1. Make a note of the environment in the environment display on the upper-right corner of the page.
 
-    :::image type="content" source="media/process-mining-troubleshoot/environment.png" alt-text="Screenshot of the environment name.":::
-
 1. Make a note of the value of **Name** in the Data Source card below the Details card.
 
-1. Sign in to https://powerapps.microsoft.com/.
+1. Sign in to [Power Apps](https://make.powerapps.com).
 
 1. Select the same environment that you noted in step 1.
 
-1. Select **Dataverse** > **Dataflows**.
+1. Select **More** > **Dataflows**.
 
 1. Find the dataflow name that you noted in step 2.
 
