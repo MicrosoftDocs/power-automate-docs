@@ -1,13 +1,13 @@
 ---
-title: Visualize processes in process advisor  | Microsoft Docs
-description: Learn how to use the process map and application analytics to gain understanding of app usage and insight into where opportunities for improvement exist.
+title: Visualize processes
+description: Learn how to use the process map and application analytics to gain an understanding of app usage and insight into where opportunities for improvement exist.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType:
@@ -15,11 +15,13 @@ search.audienceType:
   - enduser
 ---
 
-# Visualize processes in process advisor
+# Visualize processes
+
+The process map is a powerful tool that can help you visualize and analyze your business processes. It provides a graphical representation of how your processes are performed, making it easier to identify areas for improvement.
 
 ## Process map
 
-The process map is a powerful tool that can help you visualize and analyze your business processes. It provides a graphical representation of how your processes are performed, making it easier to identify areas for improvement. You can access the process map by selecting the **Analytics** > **Process** tab. From there, you'll be able to see a detailed view of your processes, including each step in the process and how they are connected. The process map can help you identify inefficiencies or bottlenecks in your processes, allowing you to make improvements that can save time and resources.
+You can access the process map by selecting the **Analytics** > **Process** tab. From there, you can see a detailed view of your processes, including each step in the process and how they are connected. The process map can help you identify inefficiencies or bottlenecks in your processes, allowing you to make improvements that can save time and resources.
 
 :::image type="content" source="./media/automation-reco-1.png" alt-text="Screenshot of the process map.":::
 
@@ -29,7 +31,7 @@ The process map displays different combinations of activities as separate proces
 
 There are various filters available for you to drill down into the process:
 
-- **Variant selector**: You can activate this filter by clicking one or multiple bars in the **Variants** bar graph. It allows you to select one variant or a set of process variants to visualize in your process map.
+- **Variant selector**: You can activate this filter by selecting one or multiple bars in the **Variants** bar graph. It allows you to select one variant or a set of process variants to visualize in your process map.
 
 - **Recording selector**: You can activiate this filter by clicking one or multiple bars in the **Recording by time** bar graph. It allows you to select one recording or a set of recordings to visualize in your process map.
 
@@ -75,7 +77,7 @@ Application analytics allow you to gain more insights from recordings by underst
 
 - **Number (#) of times accessed**: The number of app accesses. Times accessed is when an app comes back into focus.
 
-- **Time spent**: The amount of time spent using apps. This does not count time spent when not focused on an app—for example, desktop.
+- **Time spent**: The amount of time spent using apps. This doesn't count time spent when not focused on an app—for example, desktop.
 
 - **Actions**: The count of actions within apps.
 
@@ -83,7 +85,7 @@ Application analytics allow you to gain more insights from recordings by underst
 
 - **Application usage**: This scatter plot shows the time spent and times accessed for each app used, with the size of the circles representing how many recordings use that app. The goal of this plot is to understand usage patterns. Some apps may be used frequently but only for short periods, indicating the recorder is jumping back and forth between this application and others. Other applications may be used for a longer period of time, and the process relies heavily on actions occurring within that application, without requiring extensive of other applications.
 
-The size of the circles in the scatter plot indicates the frequency of usage of each application across all recordings. Applications that are used in most or all recordings will have larger circles. This information can be helpful in identifying essential applications in a process that may require optimization or automation to improve overall efficiency.
+The size of the circles in the scatter plot indicates the frequency of usage of each application across all recordings. Applications that are used in most or all recordings have larger circles. This information can be helpful in identifying essential applications in a process that may require optimization or automation to improve overall efficiency.
 
 - **Application switching**: This bar chart is used to display the frequency of pairs of applications used together. It complements the application usage scatter plot by providing additional information on what two applications are most frequently used in conjunction. The insights gained from this chart can help identify any data transfers or manual input between these applications, which is important to consider when optimizing or automating the process.
 

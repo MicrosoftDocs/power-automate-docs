@@ -1,13 +1,13 @@
 ---
-title: Share task mining processes in process advisor (contains video)
-description: Share a task mining process with others so that they can offer input and additional insights. You can share a task mining process with a co-owner or a contributor.
+title: Share task mining processes (contains video)
+description: Share a task mining process with others so that they can offer input and additional insights. You can share a process with a co-owner or a contributor.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,19 +15,19 @@ search.audienceType:
   - enduser
 ---
 
-# Share task mining processes in process advisor
+# Share task mining processes
 
-When you create a process in process advisor, only you can see it. But getting input from others is a key to understanding different ways to accomplish the process you've created. Share your processes with others in your organization so they can also manage or contribute to them.
+When you create a process in the process mining capability, only you can see it. But getting input from others is a key to understanding different ways to accomplish the process you've created. Share your processes with others in your organization so they can also manage or contribute to them.
 
-Here's a short video on how to share a process in process advisor.<br>
+Here's a short video on how to share a process.<br>
 </br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6PP]
 
-There are two primary ways to share a process in process advisor.
+There are two primary ways to share a process:
 
-- Share a process with a co-owner
+- Share a process with a co-owner.
 
-- Share a process with a contributor
+- Share a process with a contributor.
 
 If you're the co-owner or contributor of a process, you'll find it listed on the **Processes** screen.
 </br>
@@ -36,17 +36,17 @@ If you're the co-owner or contributor of a process, you'll find it listed on the
 
 ## Share action
 
-The share action can be done using the **Share** button the **Processes** screen or using the **Manage** button on the **Details** screen for the following.
+The share action can be done by selecting **Share** on the **Processes** screen. Alternatively, select **Manage** on the **Details** screen for the following:
 
 - Each process where you're an owner or co-owner.
 
 - The system administrator in the environment.
 
-- Any security role that has share permissions on process advisor system entities.
+- Any security role that has share permissions on system entities of the process mining capability.
 
 ## Share panel
 
-After selecting the share action, a share panel will appear where you can select Microsoft Dataverse users within your organization to share your process with. You can search for any user within the Dataverse tenant and invite them to your process.
+After selecting the share action, a share panel appear. This is where you can select Microsoft Dataverse users within your organization to share your process with. You can search for any user within the Dataverse tenant and invite them to your process.
 
 When sharing a process with others, an option to automatically send an email invitation is available. Co-owners or contributors will be asked to help manage the process or add new recordings, respectively. The email invitation will contain a link to the shared process.
 
@@ -78,7 +78,7 @@ When you add a co-owner to a process, you enable them to assist you in labeling 
 
 - [Delete the process](process-advisor-security.md)
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
 >- Only the owners of a process can analyze it.
 >- Removing all process roles from a user (such as co-owner and contributor) doesn't remove that process from the user's process list view. They can't perform any actions on the process.

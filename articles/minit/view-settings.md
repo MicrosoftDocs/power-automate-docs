@@ -1,6 +1,6 @@
 ---
 title: View settings
-description: Learn how to define various settings valid for the current process in minit.
+description: Learn how to define various settings valid for the current process in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
@@ -49,9 +49,9 @@ Since the length of months and years vary, they are converted to days using thei
 
 Use the **Time format precision** dropdown menu to define how many time units will displayedFor example, when you select **Year** in the **Max time unit** dropdown menu, and then select **2** in the **Time format precision**, only years and months will display. If you select **3**, years, months, and weeks will display.
 
->[!NOTE]
+> [!NOTE]
 >
->The values of the units that aren't displayed aren't converted into larger ones but are completely omitted. For example, 15 days will display as 2 weeks and not 2.07 weeks.
+> The values of the units that aren't displayed aren't converted into larger ones but are completely omitted. For example, 15 days will display as 2 weeks and not 2.07 weeks.
 
 The **Show duration in working hours**checkbox automatically sets the max time unit to "hour" and time format precision to "unlimited".
 
@@ -69,7 +69,7 @@ The **Activity label** tab allows you to do the following:
 
 Select an existing calendar in the **Calendar** dropdown menu. If the menu options don't include the calendar template that you want to use, select the ellipses (**...**) to define a new template. If an existing calendar is close to what you want, select it in the **Calendar** dropdown menu, and then select (**...**) > **Edit**.
 
-Calendar templates can be shared across minit projects. To manage all calendar templates, select **Settings** > **Working hours**. To learn more, go to [Settings](settings.md).
+Calendar templates can be shared across Power Automate Process Mining projects. To manage all calendar templates, select **Settings** > **Working hours**. To learn more, go to [Settings](settings.md).
 
 ### See also
 

@@ -1,13 +1,13 @@
 ---
 title: Categorize cases
-description: Learn how to categorize cases in the Power Automate Process Mining desktop app for Power Automate.
+description: Learn how to categorize cases in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
-ms.topic: conceptuaL
-ms.date: 11/15/2022
+ms.topic: conceptual
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -46,7 +46,7 @@ Following is an example of the simple mode, which appears when **Advanced mode**
 
         :::image type="content" source="media/process-context-icon.png" alt-text="Screenshot of the process context icon.":::
 
-    - **From any other screen in the desktop application:** On the menu bar in the upper right corner, select **Process context**.
+    - **From any other screen in the Power Automate Process Mining desktop app:** On the menu bar in the upper right corner, select **Process context**.
 
 1. Set rules for categorizing cases as directed in the following sections.
 
