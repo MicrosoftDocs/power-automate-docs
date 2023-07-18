@@ -181,7 +181,7 @@ IT administrators may set the following registry key to configure how Power Auto
 
 - **1**: Power Automate for desktop authenticates to the corporate proxy server using the current user's credentials.
 
-## Configure Power Automate for desktop to authenticate to a corporate proxy server using Windows Credentials
+## Configure Power Automate for desktop to authenticate to a corporate proxy server using Windows credentials
 
 IT administrators may set the following registry key to configure Power Automate to use a generic credential from Windows’ Credential Manager to authenticate to a corporate proxy server. 
 
@@ -323,7 +323,7 @@ You can use the following registry entry to disable the execution of flows conta
 
 - **1**: The machine can't run desktop flows containing cloud connectors. An error message informs users about the limitation.
 
-## Enable improved debuggability functionality to be used via Power Automate's troubleshooter
+## Improve troubleshooting of the Power Automate troubleshooter
 
 You can use the following registry entry to permit the use of the verbose logging functionality in the troubleshooter.
 
