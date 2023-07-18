@@ -20,7 +20,7 @@ search.audienceType:
 
 The troubleshooter in Power Automate for desktop is a component that allows you to diagnose, and in certain cases, troubleshoot, potential issues that you might face in the desktop application of Power Automate.
 
-:::image type="content" source="media/troubleshooter/Troubleshooter window.png" alt-text="Troubleshooter main screen" border="false":::
+:::image type="content" source="media/troubleshooter/troubleshooter-window.png" alt-text="Troubleshooter main screen" border="false":::
 
 > [!IMPORTANT]
 > This is a preview feature.
@@ -32,7 +32,7 @@ The troubleshooter includes two categories of diagnostics, for connectivity and 
 >[!NOTE]
 >The existing categories don't require you to be logged in to use the troubleshooter.
 
-The troubleshooter can be manually opened via the console and the flow designer, through the dedicated menu option under **Help**. It can also be opened via the process file ‘PAD.Troubleshooter.exe’, found in the installation folder of Power Automate for desktop.
+The troubleshooter can be manually opened via the console and the flow designer, through the dedicated menu under **Help** > **Troubleshooter**. It can also be opened via the process file PAD.Troubleshooter.exe, found in the installation folder of Power Automate for desktop.
 
 <!-- :::image type="content" source="media/troubleshooter/Troubleshooter option under Help menu.png" alt-text="Troubleshooter option under Help menu" border="false":::  -->
 
@@ -46,7 +46,7 @@ On a high level, there are three steps that are checked one after the other:
 * Proxy server
 * Required services
 
-:::image type="content" source="media/troubleshooter/Steps of connectivity issues diagnostic.png" alt-text="Steps of connectivity issues diagnostic" border="false":::
+:::image type="content" source="media/troubleshooter/steps-of-connectivity-issues-diagnostic.png" alt-text="All steps of diagnostic with no issues detected" border="false":::
 
 For the **internet connection**, the troubleshooter checks in sequence:
 
@@ -59,7 +59,7 @@ For the **proxy server**, the troubleshooter checks if there's any proxy related
 
 If one step fails with an error, the following steps aren't checked at all, as the success of one check on connectivity issues is a requirement to proceed to the following step.
 
-:::image type="content" source="media/troubleshooter/Connectivity error detected.png" alt-text="Connectivity error detected" border="false":::
+:::image type="content" source="media/troubleshooter/connectivity-error-detected.png" alt-text="Connectivity error detected during step" border="false":::
 
 > [!NOTE]
 > In case of one or more errors, the respective details are displayed in the troubleshooter screen, after expanding the corresponding error.
@@ -68,7 +68,7 @@ After a category is checked for issues end to end, there’s always the option t
 
 Τhere can be relevant connectivity errors while using Power Automate for desktop. In those cases, you're prompted to launch the troubleshooter directly, through a link in the error dialog. Doing so automatically opens and runs the connectivity issues category.
 
-:::image type="content" source="media/troubleshooter/Error dialog with troubleshooter link.png" alt-text="Error dialog with troubleshooter link" border="false":::
+:::image type="content" source="media/troubleshooter/error-dialog-with-troubleshooter-link.png" alt-text="Connection error detected dialog with troubleshooter link" border="false":::
 
 ## Improve troubleshooting
 
@@ -80,7 +80,7 @@ There are two registry entries related to verbose logging, as explained in [Impr
 
 When verbose logging is enabled, the corresponding info banner appears in the console and all the flow designers that are open at the same time. This is so you know that you're in a state that shouldn't be used permanently. You can turn off the functionality directly through that banner.
 
-:::image type="content" source="media/troubleshooter/Verbose logging banner.png" alt-text="Verbose logging banner" border="false":::
+:::image type="content" source="media/troubleshooter/verbose-logging-banner.png" alt-text="Verbose logging banner" border="false":::
 
 The console and the designer are affected immediately, when verbose logging is enabled. This means that from that point on, your actions produce verbose logs.
 
@@ -93,3 +93,7 @@ When you turn off verbose logging, the **Export logs** button becomes available 
 ### Known issues and limitations
 
 When **Export logs** is used when at least one flow designer is open, not all files may be saved in the .zip file, as some of them are used in the designer process. Those files can’t be automatically deleted.
+
+## See also
+
+[Troubleshoot desktop flows](troubleshoot.md)
