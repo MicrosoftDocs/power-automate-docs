@@ -56,8 +56,8 @@ Entities with questions about eligibility for Power Automate US Government shoul
 
 Access to Power Automate US Government plans is restricted to the offerings described in the following section; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- Power Automate per flow plan for Government
-- Power Automate per user plan for Government
+- Power Automate Process plan for Government
+- Power Automate Premium plan for Government
 
 - In addition to the standalone plans, Microsoft 365 US Government and Dynamics 365 US Government plans also include the Power Apps and Power Automate capabilities, allowing customers to extend and customize Microsoft 365 and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation). 
 

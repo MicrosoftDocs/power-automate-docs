@@ -65,7 +65,7 @@ Resources for determining ROI, process discovery, and setting up Power Automate 
 - [Power Automate IP address configuration](/power-automate/limits-and-config)
 - [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](/power-platform/admin/use-service-admin-role-manage-tenant)
 - [Assign Power Automate RPA attended user plan through Microsoft 365 admin center](/power-automate/organization-q-and-a#power-automate-rpa-license)
-- [Manage unattended RPA add-on capacity](/power-platform/admin/capacity-add-on) in [Power Platform admin center](https://aka.ms/ppac)
+- [Manage Power Automate Process add-on capacity](/power-platform/admin/capacity-add-on) in [Power Platform admin center](https://aka.ms/ppac)
 
 ## Design
 

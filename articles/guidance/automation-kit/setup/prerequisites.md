@@ -73,9 +73,9 @@ All users must have one of the following licenses:
 
 - Microsoft 365 license (E3, E5).
 
-- Power Automate per user with attended RPA license (non-trial).
+- Power Automate Premium license (non-trial).
 
-- Optional Power Automate per user with unattended RPA license (non-trial).
+- Optional Power Automate Premium license (non-trial).
 
 - Power App Pay As You Go, Per User or Per App license (non-trial).
 

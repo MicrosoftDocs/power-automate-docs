@@ -153,7 +153,7 @@ Power Automate allows you to create data zones for business and non-business dat
 
 Follow these steps to apply unattended RPA licenses to your flows.
 
-1. The tenant admin must purchase or get trial a version of the unattended RPA add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
+1. The tenant admin must purchase or get trial a version of the Power Automate Process add-on capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
 
    ![get unattended license.](./media/RPA-license/unattended-license-M365.JPG)
 
@@ -171,7 +171,7 @@ Follow these steps to apply unattended RPA licenses to your flows.
 
 - An environment that has Dataverse enabled.
 - You must have a work or school account. You can't start a trial with a personal account.
-- The admin needs a paid or trial attended plan or a per flow plan before they can turn on to start an unattended trial.
+- The admin needs a paid or trial attended plan or a Power Automate Process plan before they can turn on to start an unattended trial.
 
 ### How can I check which license I'm currently using?
 
@@ -191,7 +191,7 @@ Yes. Tenant admins can use PowerShell to disable all trials activations for a te
 
    ![Purchase add-on for licensing.](./media/rpa-license/purchase-services-add-ons.png)
 
-1. Select **Power Automate unattended RPA add-on Trial**. 
+1. Select **Power Automate Process add-on Trial**. 
 
    ![Add on trial selection.](./media/rpa-license/unattended-rpa-add-on-trial.png)
 
@@ -204,7 +204,7 @@ You'll now see that the unattended trial is now active in your list of add-ons.
    ![List of add-ons.](./media/rpa-license/list-add-ons.png)
 
 
-### Assign unattended RPA add-on capacity to an environment
+### Assign Power Automate Process add-on capacity to an environment
 
 Before you can assign add-ons, such as trial licenses, you must [get the add-ons](#how-to-start-an-unattended-trial).
 

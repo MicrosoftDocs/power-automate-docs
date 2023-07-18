@@ -212,7 +212,7 @@ If it's taking much longer than expected for your flow to trigger, here are the 
 
    Additional tips:
 
-   1. Acquire a per user or per flow license. After this is acquired, open and then save the flow, in order to refresh the entitlement associated with it, and to change the throttling mode.
+   1. Acquire a per user or Power Automate Process license. After this is acquired, open and then save the flow, in order to refresh the entitlement associated with it, and to change the throttling mode.
 
    1. Split the flow into several instances. If the flow processes data, you can divide this data into subsets (per country/region, per business area, etc.).
 
@@ -222,7 +222,6 @@ If it's taking much longer than expected for your flow to trigger, here are the 
 
 ## Power Apps trigger issues
 
-<!--todo: steps are not clear-->
 Unable to rename actions in a cloud flow – This is a known issue for flows that use Power Apps triggers. As a workaround to rename actions, remove the trigger. Rename the actions, add your Power Apps trigger, and then configure variables wherever needed.
 
 After an app is published, make copies of the flows used by that app to make any updates. Any update to a cloud flow that's referenced by a published app can break existing users. Do not delete or turn off existing flows until all users have been upgraded to the new published version of the app.
@@ -241,7 +240,7 @@ You can try one of the following:
 
 1. Confirm the user has the appropriate license for the connections in the flow.
 
-   A Power Automate license is required for the user to perform any actions like save, turn off, etc. A Power Apps, Dynamics 365, or Microsoft 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate **Per User** or **Per Flow** license to edit or manually trigger the flow. If the user was previously able to save or modify the flow, it's possible that their license has expired.
+   A Power Automate license is required for the user to perform any actions like save, turn off, and more. A Power Apps, Dynamics 365, or Microsoft 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate Premium or Power Automate Process license to edit or manually trigger the flow. If the user was previously able to save or modify the flow, it's possible that their license has expired.
 
    Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run or edit flows that use premium connectors. See the [licensing page](https://make.powerautomate.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
 

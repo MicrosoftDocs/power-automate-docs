@@ -34,7 +34,7 @@ Key capabilities:
 
 To use hosted machines, you need the following licensing option:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate hosted RPA add-on**.
+- Use your existing **Power Automate Premium plan** or **Power Automate Process plan** and the **Power Automate hosted RPA add-on**.
 
    Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
@@ -48,19 +48,17 @@ You'll also need the following prerequisite licenses: Windows, Intune, Azure Act
 
 To use hosted machines during the grace period, you need one of the following licensing options:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on**.
+- Use your existing **Power Automate Premium** or **Power Automate Process plan** and the **Power Automate Process add-on**.
 
     During the grace period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
-- Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trial**.
+- Use the **Power Automate Premium trial** and the **Power Automate Process add-on trial**.
 
-    The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the unattended RPA add-on to the targeted environments.
+    The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the Power Automate Process add-on to the targeted environments.
 
 - Use the **90-days self-assisted premium trial.**
 
     Trial users are granted the capacity of one hosted machine per environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
-
-
 
 ## Prerequisites
 

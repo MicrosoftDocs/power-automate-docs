@@ -82,9 +82,8 @@ You can work around this issue by putting all the filtering you need into the tr
 ## Licenses that can submit support tickets in Power Automate
 
 If you have one of the following licenses, you can [submit a support ticket in Power Automate](https://make.powerautomate.com/support/)
-* Power Automate per flow plan 
-* Power Automate per user plan
-* Power Automate per user with Attended RPA plan
+* Power Automate Process plan 
+* Power Automate Premium plan
 * PowerApps per user plan
 * Dynamics Enterprise plan
 * Dynamics Professional plan

@@ -24,11 +24,11 @@ The following prerequisites need to be met before you can start automating your 
 
 To build RPA solutions with Power Automate, you'll need one or more of the following licenses or add-ons:
 
-- Power Automate **per user plan** with **attended** RPA (or trial)
+- Power Automate Premium (or trial)
 
-- Power Automate **per user plan** with **attended** RPA + **unattended** RPA add-on
+- Power Automate Premium + Power Automate Process add-on
 
-- Power Automate **per flow plan** + **unattended** RPA add-on
+- Power Automate Process plan + Power Automate Process add-on
 
 ## Software requirements
 
