@@ -1,13 +1,13 @@
 ---
-title: Prepare processes and recordings in process advisor (contains videos) | Microsoft Docs
-description: Before you can use process advisor task mining, learn how to create a process, record the activities, and prepare the recording for analysis.
+title: Prepare processes and recordings (contains videos)
+description: Learn how to create a process, record the activities, and prepare the recording for analysis with the task mining capability in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,16 +15,16 @@ search.audienceType:
   - enduser
 ---
 
-# Prepare processes and recordings in process advisor
+# Prepare processes and recordings
 
-Before you can use process advisor task mining to visualize and analyze your processes, you need to:
+Before you can use the task mining capability to visualize and analyze your processes, you need to:
 
-- [Create your process](#create-a-process) in process advisor.
+- [Create your process](#create-a-process) in the process mining capability in Power Automate.
 - [Record the activities](#record-your-process) that make up the process using the Power Automate recorder.
 - [Prepare the recording for analysis](#prepare-a-recording-for-analysis).
 - (Optional) [Create recommended activity names](#create-recommended-activity-names) to make it easier for you and others to prepare the recording for analysis.
 
-Learn more about process advisor processes in the following video.<br>
+Learn more about processes in the following video.<br>
 </br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKx7r]
 
@@ -34,7 +34,7 @@ In general, processes you think might be inefficient or repetitive are good cand
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. On the left-side navigation pane, select **Process advisor** .
+1. On the left-side navigation pane, select **Process mining**.
 
 1. In the **Create a new process** section, select the **Start here** tile.
 
@@ -47,43 +47,41 @@ In general, processes you think might be inefficient or repetitive are good cand
 Create a recording in one of two ways:
 
 - [Right after process creation](#create-a-recording-right-after-process-creation).
-- [From the process details page](#create-a-recording-from-the-process-details-screen)
+- [From the process details page](#create-a-recording-from-the-process-details-screen).
 
 ### Create a recording right after process creation
 
-After you create a process, you'll see a screen with two options as next steps.
+After you create a process, you see a screen with two options as next steps.
 
 - Select **Add a recording**.
 
 ### Create a recording from the process details screen
 
-1. Select **Process advisor** > **All processes** below the tiles to the right.
+To create a recording from the details screen, find and select your process.
 
-    :::image type="content" source="media/all-processes-recording.png" alt-text="Screenshot of the 'process advisor home screen with the 'All processes' button.":::
+1. Select **Process mining** > **All processes** below the tiles to the right.
 
 1. Select the name of the process to go to the process details screen.
 
 1. On the menu at the top, select **New recording**.
 
-    :::image type="content" source="media/new-rec-button.png" alt-text="Screenshot of the 'New recording' button.":::
-
 1. Select **Open recorder**.
 
-### Launching the recorder in Power Automate
+### Launch the recorder in Power Automate
 
-1. By using any of the methods described previously, you should receive a message that says **Launching the recorder in Power Automate**.
+By using any of the methods described previously, you should receive a message that says **Launching the recorder in Power Automate**.
 
-    > [!NOTE]
-    >
-    > You should've [downloaded Power Automate](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can also select **Get the app** to install it.
+1. You should've [downloaded Power Automate](https://go.microsoft.com/fwlink/?linkid=2102613) before you started. However, you can also select **Get the app** to install it.
 
 1. If you've installed Power Automate, you should see an **Open Power Automate** browser pop-up window. Select it to open the app.
 
 1. If Power Automate is installed but doesn’t open correctly, select **Open again**.
 
-    :::image type="content" source="./media/launch-recorder.png" alt-text="Screenshot of the 'Launching the recorder in Power Automate Desktop' screen.":::
+    :::image type="content" source="./media/launch-recorder.png" alt-text="Screenshot of the 'Launching the recorder in Power Automate Desktop's screen.":::
 
-## Power Automate recorder
+## Use the Power Automate recorder
+
+Start recording your process in just one step.
 
 1. On the Desktop recorder screen, select **Record**.
 
@@ -95,14 +93,15 @@ After you create a process, you'll see a screen with two options as next steps.
 
    > [!NOTE]
    >
-   > Depending on the length of the recording, it may take some time before the actions will be available.
+   > Depending on the length of the recording, it might take some time before the actions are available.
 
 ### Recorder features
 
-As you record your actions, the action descriptions will be listed in the recorder screen.
+As you record your actions, the action descriptions are listed on the recorder screen.
+
 - To delete any action from your recording, select the trash can icon.
 
-- To temporarily stop recording, select **Pause recording** at any time during the recording.
+- To temporarily stop recording, select **Pause recording** at any time.
 
 - To continue recording from where you left off, select **Start recording again**.
 
@@ -110,47 +109,49 @@ As you record your actions, the action descriptions will be listed in the record
 
 ### Recording tips
 
-- To improve the readability of the recording, it is important to be methodical in your actions. This includes waiting for the red box to focus on the item you're trying to interact with before selecting it, as there may be a slight delay.
+Use these tips to improve your recording experience.
+
+- Be methodical in your actions. This includes waiting for the red box to focus on the item you're trying to interact with before selecting it, as there may be a slight delay.
 
 - If there were any selections made by mistake, delete the action in the recorder screen.
 
-- If you record steps that is not intended to be a part of the process, delete the step using the trash icon.
+- If you record a step that's not intended to be a part of the process, delete the step with the trash icon.
 
 ## Prepare a recording for analysis
 
-Once the recording is finished, the recorded actions can be viewed on the recording details screen. However, it is important to prepare the recording for analysis before proceeding.
+Once the recording is finished, the recorded actions can be viewed on the recording details screen. It's important to prepare the recording for analysis before proceeding.
 
-*What does this mean?*
+The actions that were recorded during the process can be very detailed and specific. In order to make sense of them and create a clear process map, these actions need to be grouped together into larger activities. The process mining capabilitiy is now able to automatically group similar actions into activities.
 
-- This means that the actions that were recorded during the process can be very detailed and specific. In order to make sense of them and create a clear process map, these actions need to be grouped together into larger activities. Process advisor now has the ability to automatically group similar actions into activities.
+Ensure that any sensitive information is removed from the recording before analysis. This can be done to protect data privacy and security. For more information on how to protect your data, go to [Protect your data](process-advisor-protect.md).
 
-- It's important to ensure that any sensitive information is removed from the recording before analysis. This can be done to protect data privacy and security. For more information on how to protect your data in process advisor visit [Protect your data in process advisor](process-advisor-protect.md).
-
-Here's a short video on how to prepare a recording for analysis with process advisor.</br>
+Here's a short video on how to prepare a recording for analysis.</br>
 </br>
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6PQ]
 
 ### Grouping actions into activities
 
-Once you have completed the recording process, you may notice that some activities have already been automatically created for you. You have the option to keep these activities as they are, or you can modify them to better suit your needs.
+Once you have completed the recording process, you might notice that some activities have already been automatically created for you. You have the option to keep these activities as they are, or you can modify them to better suit your needs.
 
 #### Edit an existing activity
 
-1. If you want to change the starting action of an activity, simply drag the header of the activity up or down the list of actions to the desired starting point.
+Here are some tips on editing an existing activity.
 
-2. To change the name of an activity, select it and a combo box will appear on the right side of the screen.
+1. To change the starting action of an activity, drag the header of the activity up or down the list of actions to the desired starting point.
 
-3. You can choose from existing activity names in the dropdown list or create your own if needed.
+2. To change the name of an activity, select it and a combo box appears on the right.
+
+3. You can choose from existing activity names in the dropdown menu, or create your own if needed.
 
 #### Add a new activity
+
+You can add an activity to a process after you recorded it.
 
 1. Select **Add activity** to add an activity header. All actions below the header and before the next activity header are part of the group.
 
 1. Move the activity header up or down the actions list to where you want the activity to start.
 
-1. Name the activity on the right side of the screen, using the dropdown list to find existing activity names or create a new one.
-
-    :::image type="content" source="./media/group-actions.png" alt-text="Screenshot of grouping actions into activities.":::
+1. Name the activity on the right, using the dropdown menu to find existing activity names or create a new one.
 
 #### Delete an activity
 
@@ -166,9 +167,9 @@ To analyze, you need at least two activities. Otherwise, the process map wouldn'
 
 1. When you finish grouping, select **Save and analyze** on the top right.
 
-1. Once analyzed, select **View analytics** in the notification bar to go to the analytics page. For more information, go to [Analyze processes in process advisor](process-advisor-analyze.md).
+1. Once analyzed, select **View analytics** in the notification bar to go to the analytics page.
 
-    :::image type="content" source="./media/view-analytics-button.png" alt-text="Screenshot of the 'View analytics' button.":::
+    To learn more, go to [Analyze processes](process-advisor-analyze.md).
 
 1. Alternatively, you can save without analyzing by selecting the caret next to **Save and analyze**, and then select **Save**.  
 
@@ -178,7 +179,7 @@ To analyze, you need at least two activities. Otherwise, the process map wouldn'
 
 Here are some tips to group actions into activities, which may be helpful for your use case.
 
-1. **Use existing activity name**: This creates a more consistent and accurate process map. Activity names will be available in the dropdown list whenever a recording is saved. To remove an activity name from the  list after it was removed from all recordings that used that name, you need to analyze the recording.
+1. **Use existing activity name**: This creates a more consistent and accurate process map. Activity names are available in the dropdown menu whenever a recording is saved. To remove an activity name from the menu after it's removed from all recordings that use that name, you need to analyze the recording.
 
 2. **Look for patterns**: Analyze the recorded actions for patterns that occur frequently, such as similar steps taken to complete a task or common applications used. Grouping these actions together can help identify common activities.
 
@@ -192,16 +193,14 @@ Here are some tips to group actions into activities, which may be helpful for yo
 
 ### Create recommended activity names
 
-As a process owner or co-owner, you can create recommended activity names for a process. This will ensure more consistency in naming across recordings.
+As a process owner or co-owner, you can create recommended activity names for a process. This ensures more consistency in naming across recordings.
 
-1. On the process details screen, select **Create activity names** to bring up the panel.
-
-    :::image type="content" source="./media/create-act-names.png" alt-text="Screenshot of the 'Create activity names' button.":::
+1. On the process details screen, select **Create activity names**.
 
 1. To add a new activity name entry to the recommended list, select **New name**.
 
 1. When you're done, select **Save**.
 
-The activity names you added will now show up under **Recommended names** in the dropdown list when grouping actions for a recording. Any activities that aren't defined in the recommended list will show up under **Custom names**.
+The activity names you added now appear under **Recommended names** in the dropdown menu when grouping actions for a recording. Any activities that aren't defined in the recommended list appear under **Custom names**.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

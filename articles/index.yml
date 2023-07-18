@@ -64,11 +64,11 @@ additionalContent:
           url: ./get-started-with-copilot.md
         - text: Edit a flow using copilot (preview)
           url: ./get-started-with-copilot.md#edit-a-flow-using-copilot
-    - title: Plan with process advisor
+    - title: Plan with the process mining capability
       links:
         - text: Understand your processes and identify opportunities with process mining
           url: process-mining-overview.md
-        - text: Dig into the details with minit
+        - text: Dig into the details with Power Automate Process Mining
           url: minit/minit-desktop-application-overview.md
         - text: Streamline workflows and identify inefficiencies with task mining
           url: task-mining-overview.md

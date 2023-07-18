@@ -1,13 +1,13 @@
 ---
 title: Working hours
-description: Learn how to define calendar templates in minit.
+description: Learn how to define calendar templates in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -22,7 +22,6 @@ The **Working hours** tab allows you to define calendar templates, which can be 
 You can define a new calendar template by selecting **Create new calendar template** in the upper right corner. You can also define a new calendar by duplicating an existing calendar by selecting the ellipses (**...**) > **Create duplicate** to the right of the calendar template name.
 
 To edit the calendar template, select the template name. After you make changes, remember to select **Save**.
-
 
 ## Define basic parameters
 
@@ -64,7 +63,7 @@ On the **Non-Working days** tab, define special non-working days such as bank ho
 
     To switch the displayed year, select the arrows next to the year label above the calendar view.
 
-- **Holidays**: Simplify the definition of bank and national holidays by importing them all at once. To initialize the import, select **Import holidays** below the calendar view. A window opens where you can choose the specific calendar and specify the year range. Minit will automatically set holidays for the defined range and allows you to import as many countries/regions as needed.
+- **Holidays**: Simplify the definition of bank and national holidays by importing them all at once. To initialize the import, select **Import holidays** below the calendar view. A window opens where you can choose the specific calendar and specify the year range. The Power Automate Process Mining desktop app automatically sets holidays for the defined range. You can import as many countries as needed.
 
     If you imported a set of holidays by mistake, you can delete them from the calendar template by selecting **Remove holidays** below the calendar view.
 

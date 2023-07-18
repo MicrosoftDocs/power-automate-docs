@@ -1,13 +1,13 @@
 ---
 title: Process animation overview
-description: Learn how to visualize the development of the process over time.
+description: Learn how to visualize the development of the process over time in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -19,20 +19,17 @@ search.audienceType:
 
 With process animation, you can visualize process development over time. You can watch the animation play over your process map or social graph on the **Animation** screen.
 
-<!--remove
-:::image type="content" alt-text="Screenshot of Animation setting button." source="media/image001-v53-1.png"::: -->
-
 ## Adjust animation control settings
 
 Control animation speed, advanced settings, and more on the **Animation** screen.
 
-:::image type="content" alt-text="Screenshot of the animation controls settings screen." source="media/process-animation/animation-controls-resize.png":::
+:::image type="content" source="media/process-animation/animation-controls-resize.png" alt-text="<alt text>":::
 
 Legend:
 
-1. **Right arrow icon:** Select to open the **Animation** screen.
-
 1. **Animation speed slider:** Move the slider to adjust the animation playback speed. The information displayed in the animation frame remains unchanged.
+
+1. **Right arrow icon:** Select to open the **Animation** screen.
 
 1. **Animation level dropdown menu**: There are two options: Select **Immediate** to indicate that actual dynamics in the process will be shown during playback. Select **Aggregated** to indicate that the process dynamics aggregated in the time period around the currently monitored time point will be shown during playback.
 
@@ -61,10 +58,4 @@ The information about the actual time in the process appears to the right of **P
     When you select **Play animation**, the button turns into **Pause automation**.
 
 1. To temporarily stop the automation from playing, select **Pause automation**.
-
-<!-- remove instant animation level
-:::image type="content" alt-text="Screenshot of an instant animation level." source="media/image003-7.png"::: -->
-
-
-
 

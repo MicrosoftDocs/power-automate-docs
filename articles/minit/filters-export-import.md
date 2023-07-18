@@ -1,13 +1,13 @@
 ---
 title: Export and import filters
-description: Learn how to export existing filters in the view and re-use them in another view or process in minit.
+description: Learn how to export existing filters in the view and re-use them in another view or process in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -17,13 +17,13 @@ search.audienceType:
 
 # Export and import filters
 
-Minit offers an option to export existing set of filters in the view and re-use them in another view or process. To export or import filters, select (**...**) in the menu at the top of the **Filtering** screen.
+The Power Automate Process Mining desktop app offers an option to export existing set of filters in the view and re-use them in another view or process. To export or import filters, select (**...**) in the menu at the top of the **Filtering** screen.
 
 :::image type="content" alt-text="Screenshot of the export filters option." source="media/import-export-filter.png":::
 
 ## Filter export
 
-Filter export saves filter definitions into a file on a disk. The file extension is **mfltr**. The exported file can be re-used by another user on different Minit installation.
+Filter export saves filter definitions into a file on a disk. The file extension is **mfltr**. The exported file can be re-used by another user on different Process Mining desktop app installation.
 
 All the filter types are exportable, except for the variant filters which are dependent on the actual data set (Variant 1 in two different processes may mean totally different process variants). Only enabled view filters are exported, so it's possible to manage the set of filters for export without deleting any filter.
 
@@ -34,9 +34,7 @@ Filter import enables you to load previously exported filters and apply them int
 There are three categories of filters in terms of import mappings:
 
 - No dependencies to data structure
-
 - Attribute references
-
 - Custom metric references
 
 ## No dependencies to data structure
@@ -49,19 +47,16 @@ A filter using references to process attributes requires the user mapping of whi
 
 If straightforward mapping between attributes isn't possible, the option to delete attribute reference is available. After such import, the filter will be saved in the view with a missing reference to any attribute.
 
-Minit notifies you of the missing attribute reference and the filter is marked with **asterisk**.
+The Process Mining desktop app notifies you of the missing attribute reference and the filter is marked with **asterisk**.
 
 The filter definition is saved in the view, but all the original values from filter are lost, just as is the missing attribute reference. You'll need to assign the relevant attribute and relevant filter values to create working filter again.
 
 ## Custom metrics references
 
-<!--From this section to the end, I removed all screenshots. I wasn't able to verify if any of this functionality exists.-->
 Filters using references to custom metrics require two-step mapping. First, you need to map the custom metric, then the referenced attributes within the custom metric. The attributes mapping is the same as previously described. Custom metric mapping offers three options:
 
 - Custom metric mapping to existing one.
-
 - Create new custom metric.
-
 - Delete custom metric reference.
 
 ### Custom metric mapping to existing one
@@ -82,6 +77,6 @@ If you select to create a new custom metric, yet are unable to map referenced at
 
 The last option is to delete reference to the custom metric in original filter.
 
-Minit notifies you of the missing custom metric reference in the filter. In the filter, the original custom metric reference is empty. Also, the filter values are lost. Until a new metric and filter values are selected by the user, the filter isn't valid.
+The Process Mining desktop app notifies you of the missing custom metric reference in the filter. In the filter, the original custom metric reference is empty. Also, the filter values are lost. Until a new metric and filter values are selected by the user, the filter isn't valid.
 
 
