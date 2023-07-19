@@ -114,7 +114,7 @@ To have a Service Principal own and run a flow, follow these steps.
 1. [Turn on the flow](/power-automate/disable-flow) so it's ready to run.
 1. Adjust licensing to deal with [request limit implications](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits) as needed.
 
-    Examples are turning on [Pay As You Go](/power-platform/admin/power-automate-licensing/types#power-platform-requests-pay-as-you-go), [associating the flow to an app](/power-automate/associate-flow-to-app), or [considering a Power Automate Process license](/power-platform/admin/power-automate-licensing/types#what-can-i-do-if-my-flow-is-above-limits).
+    Examples are turning on [Pay As You Go](/power-platform/admin/power-automate-licensing/types#power-platform-requests-pay-as-you-go), [associating the flow to an app](/power-automate/associate-flow-to-app), or [considering a Power Automate Process license (previously Power Automate per flow)](/power-platform/admin/power-automate-licensing/types#what-can-i-do-if-my-flow-is-above-limits).
 
 ### See also
 
