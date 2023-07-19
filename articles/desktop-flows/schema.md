@@ -39,7 +39,7 @@ Convert desktop flows stored in the v1 schema to the v2 schema by Q1 2024, as th
 
 Starting in October 2023, we will turn on schema v2 on all environments. If you don't want to have schema v2 enabled on your environment, you can opt-out for this change by turning on the opt-out toggle in Power Platform Admin Center.
 
-:::image type="content" source="media/schema/schema-v2-on.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
+:::image type="content" source="media/schema/schema-v2-off.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
 
 In 2024, we will force schema v2 to be turn on for all environments, we recommend to enable schema v2 as soon as possible to benefit from product enhancements.
 
