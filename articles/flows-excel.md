@@ -1,7 +1,7 @@
 ---
 title: Use flows with Excel for the web
 description: Learn how to use the flows feature in Excel for the web.
-ms.date: 06/30/2023
+ms.date: 07/20/2023
 author: sbasi19
 contributors:
   - sbasi19
@@ -29,7 +29,7 @@ Here are some of the prebuilt templates you can use in Excel for the web:
 Get started using Power Automate in Excel for the web by following these steps.
 
 1. Open your Excel workbook in Excel for the web.
-1. Select **Automate** > **Automate a Task** on the toolbar. 
+1. On the toolbar, select **Automate** > **Automate Work**.
 
     :::image type="content" source="media/flows-excel/open-workbook.png" alt-text="Screnshot of the Automate a Task button on the Excel for the web toolbar.":::
 
