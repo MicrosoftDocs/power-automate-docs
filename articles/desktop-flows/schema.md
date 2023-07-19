@@ -31,9 +31,17 @@ There's no immediate need to act, although we recommend you to enable future pro
 
 Power Platform administrators can choose when to enable the v2 storage schema. To enable it, go to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) > **Environments** > **Settings** > **Product** > **Features** > **Enable storage of desktop flow files into v2 schema**. This setting applies at the environment level.
 
-:::image type="content" source="media/schema/schema-v2-option.png" alt-text="The option in the Power Platform Admin Center to enable the new schema.":::
+:::image type="content" source="media/schema/schema-v2-on.png" alt-text="The option in the Power Platform Admin Center to enable the new schema.":::
 
 Convert desktop flows stored in the v1 schema to the v2 schema by Q1 2024, as then the v1 schema will be deprecated. You need Power Automate for desktop v2.29 or later to author and run desktop flows using environments where the v2 schema is enabled. This requirement ensures desktop flow makers and attended and unattended users can take advantage of the new functionality.
+
+## Schema v2 enabled by default
+
+Starting in October 2023, we will turn on schema v2 on all environments. If you don't want to have schema v2 enabled on your environment, you can opt-out for this change by turning on the opt-out toggle in Power Platform Admin Center.
+
+:::image type="content" source="media/schema/schema-v2-on.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
+
+In 2024, we will force schema v2 to be turn on for all environments, we recommend to enable schema v2 as soon as possible to benefit from product enhancements.
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
