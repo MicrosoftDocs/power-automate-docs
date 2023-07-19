@@ -179,7 +179,7 @@ Now that prerequisites are set, you are on your way to get the free solutions th
 
 1. Save the cloud flow. Go back to Dynamics 365 portal and trigger the agent script action to test. You'll see your customization automation running.
 
-1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode and switch it to run in [unattended mode](run-unattended-desktop-flows.md). This way every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a [Power Automate Process plan](/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center).
+1. Once you finished testing, you can share the cloud flow with everyone in the organization with run-only mode and switch it to run in [unattended mode](run-unattended-desktop-flows.md). This way every agent will be able to reuse the same automation. License wise, the cloud flow should be put under a [Power Automate Process plan (previously Power Automate per flow)](/power-platform-release-plan/2019wave2/power-automate/new-licensing-options-power-automate-standalone-paid-plans#allocating-the-per-flow-plan-in-the-admin-center).
 
 ## Troubleshooting and known issues
 
