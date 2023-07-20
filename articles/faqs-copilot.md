@@ -56,8 +56,6 @@ Copilot is available only in the new designer. When editing a flow, you can choo
 
 If you're using the new designer, all changes done by Copilot should be reviewed in the designer. You can undo your changes.
 
-As an Azure OpenAI powered feature, the tenant admin can choose to disable it using a PowerShell script. If you open the new designer with Copilot, you can choose to hide it.
-
 ## See also
 
 - [Get started with Copilot](get-started-with-copilot.md)
