@@ -53,7 +53,7 @@ The following are prerequisites for installing the Power Automate AVD integratio
 
 -   Environment with a Dataverse instance, where the user installing the solution has the System Administrator security role.
 
--   If you are using this starter kit in Production environment with a Dataverse, premium licenses are required for all users interacting with the Power Automate AVD integration starter kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app or Power Automate Premium or Power Automate Process license or a combination of these licenses.
+-   If you're using this starter kit in Production environment with a Dataverse, premium licenses are required for all users interacting with the Power Automate AVD integration starter kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app, or Power Automate Premium (previously Power Automate per user) or Power Automate Process (previously Power Automate per flow) license, or a combination of these licenses.
 
 ### Azure Automation and Key vaults
 
