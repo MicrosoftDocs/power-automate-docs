@@ -171,7 +171,7 @@ Follow these steps to apply unattended RPA licenses to your flows.
 
 - An environment that has Dataverse enabled.
 - You must have a work or school account. You can't start a trial with a personal account.
-- The admin needs a paid or trial Power Automate Premium attended plan (formerly Power Automate per user with attended RPA) or a Power Automate Process plan (previously Power Automate per flow) before they can turn on to start an unattended trial.
+- The admin needs a paid or trial Power Automate Premium attended plan (previously Power Automate per user with attended RPA) or a Power Automate Process plan (previously Power Automate per flow) before they can turn on to start an unattended trial.
 
 ### How can I check which license I'm currently using?
 
