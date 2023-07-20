@@ -7,7 +7,6 @@ author: Grant-Archibald-MS
 contributors:
   - Grant-Archibald-MS
   - v-aangie
-editor: ''
 ms.custom: guidance
 ms.devlang: na
 ms.topic: article
@@ -75,7 +74,7 @@ All users must have one of the following licenses:
 
 - Power Automate Premium license (non-trial, previously Power Automate per user with attended RPA).
 
-- Optional Power Automate Premium license (non-trial, previously Power Automate per user with unattended RPA).
+- Optional Power Automate Process license (non-trial, previously Power Automate with unattended RPA).
 
 - Power App Pay As You Go, Per User or Per App license (non-trial).
 
