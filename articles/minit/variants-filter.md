@@ -1,13 +1,13 @@
 ---
 title: Variants filter
-description: Learn how to restrict the mining in the process only to the cases following a certain scenario in minit.
+description: Learn how to restrict the mining in the process only to the cases following a certain scenario in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -19,7 +19,7 @@ search.audienceType:
 
 Use this filter to restrict the mining in the process only to the cases following a certain scenario (variant).
 
-In the **Values**, there's the visualization of the dependence of the number of variants on the number of cases falling in each variant.
+In the **Values** pane, there's the visualization of the dependence of the number of variants on the number of cases falling in each variant.
 
 :::image type="content" alt-text="Screenshot of the variants on Variants filter." source="media/variants-filter.png":::
 
@@ -41,5 +41,5 @@ The following example show the results of one variant containing 50% of all case
 
 :::image type="content" alt-text="Screenshot of one variant selected." source="media/variant-filter-example-2.png":::
 
-To select a discontinuous group of variants or to select variants by their number, you can select specific variants on the right. Select a variant to select/remove it from the list. To make the selection of variants easier, use the selection buttons to select all variants, and to cancel the selection of all variants.
+To select a discontinuous group of variants or to select variants by their number, you can select specific variants on the right. Select a variant to select and remove it from the list. To make the selection of variants easier, use the selection buttons to select all variants, and to cancel the selection of all variants.
 

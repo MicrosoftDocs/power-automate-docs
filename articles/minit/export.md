@@ -1,13 +1,13 @@
 ---
 title: Export process data
-description: Learn how to export process data to an external file in minit.
+description: Learn how to export process data to an external file in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -31,9 +31,9 @@ Export process data to an external file. After you choose your export type, you 
 
 1. If you want to use a delimiter other than the default comma, enter it in the **Delimiter** field.
 
-1. Select **Export**. 
+1. Select **Export**.
 
-    :::image type="content" alt-text="Screenshot of Export screen." source="media/export-screen.png":::
+    :::image type="content" alt-text="Screenshot of the Export screen." source="media/export-screen.png":::
 
 ## Export option details
 

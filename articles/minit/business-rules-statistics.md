@@ -1,6 +1,6 @@
 ---
 title: Business rules statistics
-description: Learn about the statistics available for business rules in minit.
+description: Learn about the statistics available for business rules in the Process Mining desktop app.
 author: janPidych
 contributors:
   - janPidych
@@ -18,7 +18,7 @@ search.audienceType:
 
 # Business rules statistics
 
-Along with statistics about your cases, activities, and edges, minit collects statistics on each of your business rules. You can view them in the **Statistics** screen.
+Along with statistics about your cases, activities, and edges, the Power Automate Process Mining desktop app collects statistics on each of your business rules. You can view them in the **Statistics** screen.
 
 1. In the left panel, select **Statistics**.
 
@@ -50,9 +50,7 @@ Event scope and edge scope business rules calculate results per event or edge. T
 
 1. In the dropdown menu, select a business rule.
 
-    :::image type="content" source="media/br-stats-detail.png" alt-text="Screenshot of a single business rule selected for detailed display.":::
-
-The table shows metrics for each activity or edge in the data set of the selected business rule.
+    The table shows metrics for each activity or edge in the data set of the selected business rule.
 
 ### See also
 

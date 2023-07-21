@@ -1,13 +1,13 @@
 ---
 title: Requirements for application
-description: Learn how where your metrics are applicable in minit.
+description: Learn where your metrics are applicable in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
