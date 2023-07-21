@@ -128,7 +128,10 @@ You can disable Copilot in Power Automate by contacting Microsoft Support.
 
 ### How is Copilot in Power Automate different from the text generation model in AI Builder?
 
-With Copilot in Power Automate, you're creating a flow. With the text generation prebuilt model in AI Builder, you're building AI-powered applications that use text that's generated from your input.
+Copilot in Power Automate is designed to help you create and edit Power Automate flows just by describing them in everyday language, providing helpful guidance along the way.
+
+The text generation model in AI Builder lets you use the GPT model directly in your Power Automate flows and Power Apps apps for various scenarios such as text summarization, draft responses, classify text, and more.  
+
 
 To learn more, go to [Text generation model overview (preview)](/ai-builder/prebuilt-azure-openai).
 
