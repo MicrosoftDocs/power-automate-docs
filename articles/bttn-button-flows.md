@@ -118,13 +118,5 @@ Now that you've registered and configured your bttn, let's get started creating 
 
 * You can also drill into the run activity on the Power Automate site and check for error messages.
 
-### See also
-
-* [Share button flows](share-buttons.md)
-* [Button trigger tokens](introduction-to-button-trigger-tokens.md)
-* [Install the Power Automate app for Android](https://aka.ms/flowmobiledocsandroid)
-* [Install the Power Automate app for iOS](https://aka.ms/flowmobiledocsios)
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

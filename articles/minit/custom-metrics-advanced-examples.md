@@ -1,13 +1,13 @@
 ---
 title: Advanced examples
-description: Get complex examples of custom operators in minit.
+description: Get complex examples of custom operators in Power Automate Process Mining.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType:
@@ -62,7 +62,7 @@ Per each event:
 
 :::image type="content" alt-text="Screenshot of the expression for event level non-aggregation." source="media/image-6.jpg":::
 
-### Usage in minit for example 1
+### Usage for example 1
 
 As we have a single result per each event in the current view,​ results are available only in screens that display and process an event metric:
 
@@ -120,7 +120,7 @@ Per each event:
 
 :::image type="content" alt-text="Screenshot of the expression metric formula." source="media/image-8.jpg":::
 
-### Usage in minit for example 2
+### Usage for example 2
 
 As you have single result per case,​ results are available only in screens that display results per case:
 
@@ -134,7 +134,7 @@ As you have single result per case,​ results are available only in screens tha
 
 Usage of case level metric (aggregated or non-aggregated) in **Statistics Case overview**, **Root cause analysis** or **Case metric filter** is no surprise.
 
-To answer why there is an indication for usage for **Event metrics**, it doesn't offer any advanced setting to switch to case level. The answer is in the expression formula, which uses `Duration()` operator. Minit offers the same operator `Duration()` on event and on case level. Therefore, the same expression is applicable on both the case and event level.
+To answer why there is an indication for usage for **Event metrics**, it doesn't offer any advanced setting to switch to case level. The answer is in the expression formula, which uses `Duration()` operator. The Power Automate Process Mining desktop app offers the same operator `Duration()` on event and on case level. Therefore, the same expression is applicable on both the case and event level.
 
 ## 3 Edge aggregation
 
@@ -163,7 +163,7 @@ You're evaluating how often you've changed when case was progressing though even
 
 Operators `TARGET()` and `SOURCE()` return values of the requested attribute for ending and starting node to the actual edge.
 
-### Usage in minit for example 3
+### Usage for example 3
 
 Defined custom metrics generates result per edge (attribute) value, so it's applicable everywhere when aggregated results per edge are used:
 
@@ -199,7 +199,7 @@ Run across all available events within its case. Get the first and last activity
 
 This time the expression is little more complicated but shows how to combine multiple aggregations into single formula. Operators `FIRSTIF()` and `LASTIF()` are aggregation operators, which return first/last event based on input criteria over defined calculation scope (this time `CaseEvents`).
 
-### Usage in minit for example 4
+### Usage for example 4
 
 Application of custom metric follows the standard requirements for single case aggregation (regardless complexity of expression).
 
@@ -225,7 +225,7 @@ Run across all available events within its case. Get the first and last activity
 
 To calculate duration over working hours, the `DURATIONCALENDAR()` operators have been used. Operators to find first and last events are used as operator arguments creating a nested expression. Notice the complexity of the expression doesn't affect or modify the selected calculation scopes.
 
-### Usage in minit for example 4.1
+### Usage for example 4.1
 
 Application of custom metric follows the standard requirements for single case aggregation regardless complexity of expression.
 
@@ -253,7 +253,7 @@ Run across all available edges within its case. If case contains C->C edge, it p
 
 Operator `ANY()` returns boolean true/false value when at least one element in a given context meets the criteria. See also operator `ALL()`*k, which returns a true value when all elements in the given context meets the criteria.
 
-### Usage in minit for example 5
+### Usage for example 5
 
 Application of custom metric follows the standard requirements for single case aggregation: ​
 
@@ -269,7 +269,7 @@ Application of custom metric follows the standard requirements for single case a
 
 :::image type="content" alt-text="Screenshot of categorical versus quantitative results alternative." source="media/03-data-set-1.png":::
 
-## Calculation in example 5.1
+### Calculation in example 5.1
 
 Run across all edges within its case. Count any edges C->C found. If no such edge is found, count is zero for given case.
 
@@ -287,11 +287,11 @@ Run across all edges within its case. Count any edges C->C found. If no such edg
 
 In comparison to the previous formula, you've just replaced operator `ANY()` with `COUNTIF()`.
 
-### Usage in minit
+### Usage for example 5.1
 
 Application of custom metric follows the standard requirements for single case aggregation.
 
-## 6 Event or edge case aggregation using case-wide context
+## 6 Event or edge-case aggregation using case-wide context
 
 *How many cases in DE contains edge C->C?* This request contains two values. The first one is the value of country attribute 'DE' and second one is the value for edge 'C->C'.
 
@@ -301,7 +301,7 @@ The limitation for 'C->C' edge describes the domain requirement and why country 
 
 ### Calculation for example 6
 
- Why not calculate the result for all countries? At first, re-think the original question. It's possible to generate results per attribute value (for example, for attribute country), but there's no way (except for business rules) to create a calculation for a single attribute value. In your using business rules, you can skip this section. Knowing this, you can update the original question to generic form:
+ Why not calculate the result for all countries/regions? At first, re-think the original question. It's possible to generate results per attribute value (for example, for attribute country), but there's no way (except for business rules) to create a calculation for a single attribute value. In your using business rules, you can skip this section. Knowing this, you can update the original question to generic form:
 
 *How many cases contains C->C edge per country?*
 
@@ -322,7 +322,7 @@ Both cases for country attribute 'SK' contain 'C->C' edge, so the result for 'SK
 
 The nested formula contains a two-step aggregation. The inner one runs over all edges within case. The outer one aggregates cases by attribute value. The outer aggregation uses context *CasesPerAttribute* because the result per case is exactly one. The context *EventsPerAttribute* also groups the result per attribute value, but it may involve the same case multiple times (per each involved event) into the result.
 
-### Usage in minit
+### Usage for example 6
 
 Custom metric is applicable on every screen where values are displayed per attribute value. Attribute value may be grouped using event level (*EventsPerAttribute*) or case level (*CasesPerAttribute*) context. These two calculation contexts provide a different calculation, but share the same applicability of the calculation (custom metric):
 
@@ -332,9 +332,9 @@ Custom metric is applicable on every screen where values are displayed per attri
 
 - Attribute and edge conditional filters.
 
-For an expression with nested aggregations, the most outer aggregation context determines the application in minit.
+For an expression with nested aggregations, the most outer aggregation context determines the application in the Process Mining desktop app.
 
-## 6.1 Event oe edge-case aggregation (alternative)
+## 6.1 Event or edge-case aggregation (alternative)
 
 Convert the previous example from categorical evaluation to quantitative.
 
@@ -361,7 +361,7 @@ Both cases for country attribute 'SK' contains 'C->C' edges. The result for 'SK'
 
 The expression again contains two step (nested) aggregation. The inner one runs over all edges within case and the outer one aggregates cases by attribute value.
 
-### Usage in minit in example 6.1
+### Usage for example 6.1
 
 Custom metric is applicable on every screen where values display per attribute value.
 
@@ -395,7 +395,7 @@ In terms of aggregation, it's nothing new. We generate results per attribute val
 
 The expression is simple, but uses the important operator `CASE()`, which allows you to switch context for case level. This is the only way how to calculate event level metrics and ask for metrics (values) from its case.
 
-### Usage in minit for example 7
+### Usage for example 7
 
 Application of custom metric follows the standard requirements for aggregation per attribute value. Because the expression uses *Duration()* and not attribute value, it's also applicable on edges (both in process map and statistics).
 
@@ -427,11 +427,11 @@ Event is valid for this question, if it's within case, where there's at least on
 
 Expression is short but requires some knowledge to understand it. The most inner part *Any(CaseEvents, user=="Peter")* is a simple result per single case. It evaluates if case contains user 'Peter' or not. The most outer part *COUNTIF()* does simple aggregation by attribute value. The requirement is to do aggregation on event level attribute user, but the calculated value is case level metric. Switch between these two contexts is done by *CASE()* operator in the middle.
 
->[!NOTE]
+> [!NOTE]
 >
->In this example, the *EventsPerAttribute* context isn't specified. Custom metric then applied implicit calculation context.
+> In this example, the *EventsPerAttribute* context isn't specified. Custom metric then applied implicit calculation context.
 
-### Usage in minit in example 8
+### Usage for example 8
 
 Application of custom metric follows the standard requirements for aggregation per attribute value.
 
@@ -467,7 +467,7 @@ Two step (nested) aggregation&mdash;inner one evaluates the single case, the out
 
 Operator `OCCURRENCE()` returns occurrence index of a given event attribute value within the case.
 
-### Usage in minit for example 8.1
+### Usage for example 8.1
 
 Application of custom metric follows the standard requirements for aggregation per attribute value.
 

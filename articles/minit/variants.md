@@ -1,13 +1,13 @@
 ---
 title: Analyze processes with variants
-description: Learn about the process performance variants in minit.
+description: Learn about the process performance variants in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -47,7 +47,6 @@ To open the **Variants** screen, go to the open view and select **Variants** on 
 
 - [Legend](#legend-panel)
 
-
 ### Attribute panel
 
 In the first panel next to the menu, you'll see a list of process variants. This is sorted by the count of occurrences of cases under the variant by default.
@@ -86,7 +85,7 @@ Lists the full names of the abbreviations in the **Variants overview** panel.
 
 ## Search for case specific data
 
-You can get specific data for an variant. When you select a variant in the left panel **Case Count** column, you'll see three tabs:
+You can get specific data for a variant. When you select a variant in the left panel **Case Count** column, you'll see three tabs:
 
 :::image type="content" alt-text="Screenshot of a list of cases." source="media/variant-overview-tab.png"::: 
 
@@ -109,8 +108,6 @@ To see the details of its development, select a case number in the **Case ID** c
 ### Cases gantt tab
 
 Development of the case on a timeline in the **Cases gantt** tab. The following information about each case is available:
-
-<!--this list doesn't correspond with what I see.-->
 
 1. Start and end time for the case
 

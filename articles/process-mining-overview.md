@@ -1,6 +1,6 @@
 ---
-title: Overview of process mining in process advisor
-description: This topic is an overview of process mining in the process advisor feature in Power Automate.
+title: Overview of process mining in Power Automate
+description: Get an overview of process mining to help you understand your real processes, how they're operated, identify opportunities for improvement, and more.
 author: donums
 contributors:
   - donums
@@ -8,7 +8,7 @@ contributors:
   - tatn
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -20,13 +20,13 @@ search.audienceType:
 
 Process mining is a research area and technology that helps businesses understand their real processes, how they're operated, and identify opportunities for improvement, automation, and digitization.
 
-In the context of process advisor, process mining works with the existing Microsoft platform and ecosystem to provide end-to-end solutions and enable faster business decisions. By extracting event data from your system of records, it visualizes the processes happening in your organization, allowing you to customize your process mining reports, compare processes, determine the root cause of inefficiencies, and monitor KPIs.
+The process mining capability in Power Automate works with the existing Microsoft platform and ecosystem to provide end-to-end solutions and enable faster business decisions. By extracting event data from your system of records, it visualizes the processes happening in your organization, allowing you to customize your process mining reports, compare processes, determine the root cause of inefficiencies, and monitor KPIs.
 
-Overall, process mining in process advisor is a valuable tool for businesses seeking to improve their operational efficiency and make informed decisions.
+Overall, the process mining capability is a valuable tool for businesses seeking to improve their operational efficiency and make informed decisions.
 
-## Benefits of process mining
+## Benefits of the process mining capability
 
-The business value of process mining lies in its ability to help organizations gain insights into their operational processes and identify areas for improvement. By analyzing event data from various sources, process mining provides a clear view of how processes are actually being executed in practice. This helps businesses to:
+The business value of the process mining capability lies in its ability to help organizations gain insights into their operational processes and identify areas for improvement. By analyzing event data from various sources, the process mining capability provides a clear view of how processes are actually being executed in practice. This helps businesses to:
 
 - **Improve operational efficiency:** Process mining can help identify bottlenecks and inefficiencies in processes, allowing organizations to streamline their operations and improve productivity.
 
@@ -35,6 +35,8 @@ The business value of process mining lies in its ability to help organizations g
 - **Optimize resources:** Process mining enables businesses to identify opportunities for automation, reducing the need for manual intervention and allowing resources to be allocated more effectively.
 
 - **Ensure compliance:** Process mining can help organizations to identify non-compliant processes and take corrective action to avoid legal and financial risks.
+
+- **Improve supply chain management processes:** Create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. This can help improve the performance of the warehouse. To learn more, go to [Analyze warehouse material movement through process mining](/dynamics365/supply-chain/warehousing/warehouse-material-movement-analysis).
 
 ## Business examples
 
@@ -67,6 +69,8 @@ Overall, process mining provides valuable insights that can help organizations i
 These areas represent key challenges and opportunities for businesses to improve their operations, stay competitive, and meet the needs of their customers.
 
 ## Components
+
+Following are the main components for the process mining capability:
 
 - [Data requirements](process-mining-processes-and-data.md#data-requirements)
 

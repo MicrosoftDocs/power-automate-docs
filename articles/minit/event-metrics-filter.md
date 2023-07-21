@@ -1,13 +1,13 @@
 ---
 title: Event metrics filter
-description: Learn how to filter events based on various metrics in minit.
+description: Learn how to filter events based on various metrics in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -33,4 +33,4 @@ To define the values using an expression, select the **Expression** tab, selec
 
 ## Create a custom metric
 
-You can choose between standard default metrics found in minit and custom metrics created in the process context. To create a custom metric, select (**...**) > **Add**.
+You can choose between standard default metrics found in the Power Automate Process Mining desktop app and custom metrics created in the process context. To create a custom metric, select (**...**) > **Add**.

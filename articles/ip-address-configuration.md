@@ -1,43 +1,31 @@
 ---
-title: IP address configuration | Microsoft Docs
-description: IP address configuration
-services: ''
-suite: flow
-documentationcenter: na
+title: IP address configuration
+description: Learn about IP address configuration, the services that Power Automate connect to, various endpoints, and more.
 author: masisley
-editor: ''
-tags: ''
-ms.devlang: na
-ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 04/17/2023
-ms.author: deonhe
-ms.reviewer: gtrantzas
-Contributors:
-  - georgiostrantzas
+contributors:
+  - v-aangie
   - jpapadimitriou
-search.audienceType: 
-  - flowmaker
-  - enduser
+ms.subservice: cloud-flow
+ms.topic: conceptual
+ms.date: 04/17/2023
+ms.author: laumar
+ms.reviewer: angieandrews
 ---
 
 # IP address configuration
 
-The [IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from which Power Automate requests are sent depends on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
+The [IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from which Power Automate requests are sent depend on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs available for flow scenarios.
 
->[!IMPORTANT]
-> Some calls a cloud flow makes may come from IP addresses that are listed in the [Logic apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) documentation. Some examples of these calls include HTTP or HTTP + OpenAPI.
+Some calls a cloud flow makes may come from IP addresses that are listed in the [Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) documentation. Some examples of these calls include HTTP or HTTP + OpenAPI.
 
 You should also consult the [Limits and Configuration](limits-and-config.md) article for a supplemental listing for known IP addresses that Power Automate uses.
 
->[!NOTE]
-> Starting May 2022, Azure Logic Apps begins to enable availability zones in select regions for new Consumption logic apps. To support this capability, new IP addresses have been published for the Azure Logic Apps service and managed connectors. If you are restricting inbound or outbound IP addresses on your network (via a firewall, for example), to ensure flows continue to work after this date, update your network configuration to allow both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. For more information, see [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones).
+> [!NOTE]
+> If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), to ensure flows continue to work, update your network configuration to allow both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. To learn more, go to [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones).
 
 ## Logic Apps
 
-Calls made from a cloud flow go directly through the Azure Logic App service. Some examples of these calls include HTTP or HTTP + Open API. Refer to [the Logic apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) for which IP addresses are used by that service.
+Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + Open API. To learn which IP addresses are used by that service, go to the [Logic Apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags).
 
 ## Connectors
 
@@ -47,7 +35,7 @@ If you must authorize IP addresses for your Azure SQL database, you should use t
 
 ## Required services
 
-The following table lists the services to which Power Automate connects. Ensure none of these services are blocked on your network.
+The following table lists the services to which Power Automate connects. Ensure none of these services is blocked on your network.
 
 | Domains | Protocols | Uses |
 | --------|  ---------| ---- |
@@ -73,6 +61,16 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.api.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
 | *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vinaet - China only). |
 
+### Endpoints needed to use Power Automate mobile app
+
+The following table lists the additional endpoints you need when using Power Automate mobile app.
+
+| Domains | Protocols | Uses |
+| --------|  ---------| ---- |
+| *mobile.events.data.microsoft.com   | https   | Send telemetry for all production regions and supported US sovereign clouds from the mobile app. |
+| collector.azure.cn   | https  |  Send telemetry for the Mooncake region from the mobile app. |
+| officeapps.live.com   | https   | Access to authentication and authorization endpoints for the mobile app.
+
 ## Approval email delivery
 
 Refer to the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
@@ -89,7 +87,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Microsoft Edge and Google Chrome).|
 
 > [!NOTE]
-> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. To find more information about namespace endpoints, go to [Allow list of namespaces endpoints required for runtime](limits-and-config.md#allow-list-of-namespaces-endpoints-required-for-runtime).
+> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. To learn more about namespace endpoints, go to [Allow list of namespaces endpoints required for runtime](limits-and-config.md#allow-list-of-namespaces-endpoints-required-for-runtime).
 
 ### Public endpoints
 
@@ -99,7 +97,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | \*.servicebus.windows.net | https | Listens on Service Bus Relay over TCP.<br>Needed for machine connectivity. |
 |\*.gateway.prod.island.powerapps.com | https | Needed for machine connectivity. |
 | emea.events.data.microsoft.com|https| Handles telemetry for EMEA users.|
-| *.api.powerplatform.com | https | Access to several Power Platform APIs. |
+| *.api.powerplatform.com | https | Access to several Power Platform APIs (mandatory for cloud connectors utilization in desktop flows). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for GCC). |
 
 ### U.S. Government endpoints
@@ -111,9 +109,9 @@ The following table lists endpoint data requirements for connectivity from a use
 | \*.gateway.gov.island.powerapps.us | https | Needed for machine connectivity for US government cloud (GCC and GCCH). |
 | \*.gateway.gov.island.appsplatform.us | https | Needed for machine connectivity for US government cloud (DOD). |
 |tb.events.data.microsoft.com|https|Handles telemetry for U.S. government users.|
-| *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
-| *.api.high.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
-| *.api.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
+| *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (mandatory for cloud connector action in desktop flows) (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (U.S. Government - GCC High only). |
+| *.api.appsplatform.us | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (U.S. Government - DoD only). |
 | *.microsoftdynamics.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(U.S. Government - GCC High only). |
 | *.crm.appsplatform.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(U.S. Government - DoD only). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for public clouds). |
@@ -124,7 +122,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | ------- |  -------- | ---- |
 |crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
 |apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
-| *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vinaet - China only). |
+| *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (21Vinaet - China only). |
 | *.dynamics.cn | https | Access to Dataverse tables (DesktopFlow modules feature)(21Vinaet - China only). |
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
