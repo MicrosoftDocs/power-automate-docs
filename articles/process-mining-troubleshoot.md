@@ -10,6 +10,7 @@ ms.topic: conceptual
 ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.audienceType: 
   - flowmaker
   - enduser
@@ -29,15 +30,15 @@ To troubleshoot:
 
 1. Make a note of the environment in the environment display on the upper-right corner of the page.
 
-    :::image type="content" source="media/process-mining-troubleshoot/environment.png" alt-text="Screenshot of the environment name.":::
-
 1. Make a note of the value of **Name** in the Data Source card below the Details card.
 
-1. Sign in to https://powerapps.microsoft.com/.
+1. Sign in to [Power Apps](https://make.powerapps.com).
 
 1. Select the same environment that you noted in step 1.
 
-1. Select **Dataverse** > **Dataflows**.
+1. Select **More** > **Dataflows**.
+
+     :::image type="content" source="media/process-mining-troubleshoot/dataflows.png" alt-text="Screenshot of the Dataflows screen.":::
 
 1. Find the dataflow name that you noted in step 2.
 
@@ -47,9 +48,7 @@ To troubleshoot:
 
 1. Download the report by selecting the **Download** icon in the **Actions** column.
 
-     :::image type="content" source="media/process-mining-troubleshoot/download.png" alt-text="Screenshot of the Download icon.":::
-
-9.	Open the report to see details of the issue.
+1. Open the report to see details of the issue.
 
 ## Issues with analyze
 
@@ -92,8 +91,6 @@ One possibility is that although the *timestamp* column has a valid datetime for
     :::image type="content" source="media/process-mining-troubleshoot/changed-column.png" alt-text="Screenshot of Changed columns.":::
 
 1. On the toolbar, select **Options** > **Project options**.
-
-    :::image type="content" source="media/process-mining-troubleshoot/project-options.png" alt-text="Screenshot of Options, Project options.":::
 
 1. On the **Locale** dropdown list, select the correct locale and then select **OK**.
 
