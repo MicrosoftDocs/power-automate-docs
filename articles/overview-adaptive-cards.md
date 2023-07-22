@@ -35,30 +35,51 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
 > [!NOTE]
 > Adaptive Cards aren't available within the DoD environment.
  
-## Directing content to **Teams members or AAD users**
+## Directing content to Teams members or AAD users
  
 - **Post your own adaptive card as the Flow bot to a user**  
   This action posts an adaptive card as a Flow bot to a specific user. In this case, you will need to provide a recipient email address, and the card will show up in the recipient's chat and/or activity feeds during the flow run. There is no requirement for the user to be part of a Teams instance to receive these types of Adaptive Cards. In this case, only the URL buttons function by redirecting to the URL that's configured within the flow.
 
+    When you configure adaptive cards, your flow opens in either the current designer or the copilot-powered editing designer, currently in preview. The instructions for how to set the parameters are slightly different for each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, select the **Current designer** or **Copilot-powered editing (preview)** tab for instructions.
+
+    # [Current designer](#tab/current-designer)
+
     ![Samples of adaptive cards.](media/adaptive-cards/top.png)
- 
+
+    ---
+
+    # [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
+
+    [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+    ---
+
 - **Post an adaptive card as the Flow bot to a Teams user, and wait for a response**  
   This action posts an adaptive card as a Flow bot to a specific user, like the case presented earlier in this article. However, in this case the flow run will not continue after the post until the recipient responds to inputs that are required within the card. The flow continues after the recipient responds. The flow returns dynamic content for one (1) response per recipient and per card.
- 
-## Directing content to **Teams channels**
+---
+
+## Directing content to Teams channels
  
 - **Post your own adaptive card as the Flow bot to a channel**  
   This action posts an adaptive card as a Flow bot to a specific Teams channel. In this case, you will be prompted for Teams instance, and a channel where the card will be posted. The flow-maker will have to have access to the Teams instance in order to post an adaptive card there. In this case, only URL buttons function by redirecting to the URL configured within the flow.
  
 - **Post an adaptive card as the Flow bot to a Teams channel, and wait for a response**  
   This action posts an adaptive card as a Flow bot to a specific Teams channel as in the case above. However, in this case the flow will not continue until someone on the channel has responded to any inputs required within the card. The flow will continue once the anyone in the Teams channel responds but will only return dynamic content for one (1) response per responder and per card.
- 
-     ![Post an adaptive card as the Flow bot to a Teams channel, and wait for a response.](media/adaptive-cards/bottom.png)
 
-     >[!TIP]
-     >When you use this card, the flow waits for a response from any Teams member.
+    When you use this card, the flow waits for a response from any Teams member.
  
- 
+When you configure an adaptive card, your flow opens in either the current designer or the copilot-powered editing designer, currently in preview. The instructions for how to set the parameters are slightly different for each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, select the **Current designer** or **Copilot-powered editing (preview)** tab for instructions.
+
+# [Current designer](#tab/current-designer)
+
+![Post an adaptive card as the Flow bot to a Teams channel, and wait for a response.](media/adaptive-cards/bottom.png)
+---
+
+# [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+
 ## Known issues
  
 - It is not possible to collect data from Adaptive Cards unless they are created using one of the "wait for a response" actions. Adaptive Cards that don't wait return an error for all button actions except OpenURL. Learn more on [OpenURL buttons](https://adaptivecards.io/explorer/Action.OpenUrl.html). 
@@ -75,16 +96,16 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
  
    ![Update message.](media/adaptive-cards/update-message.png) 
  
->[!TIP]
->The **Update Message** and the **Should update card** inputs must be configured if a replacement card is desired.
+
+The **Update Message** and the **Should update card** inputs must be configured if a replacement card is desired.
  
 - Power Automate uses Microsoft Adaptive Cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building Adaptive Cards](/adaptive-cards/).
  
-## Learn more 
+### See also 
  
-- Create your [first adaptive card](./create-adaptive-cards.md)
-- Full documentation for the [Microsoft Teams connector](/connectors/teams/)
-- Full documentation on [Adaptive Cards IO](/adaptive-cards) 
+- [Create your first adaptive card](./create-adaptive-cards.md)
+- [Microsoft Teams connector](/connectors/teams/)
+- [Adaptive Cards IO](/adaptive-cards) 
 
 
 

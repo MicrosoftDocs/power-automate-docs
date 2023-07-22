@@ -14,68 +14,79 @@ search.audienceType:
 
 Use the **List rows** action to retrieve multiple rows at once from Microsoft Dataverse with a structured query.
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to use lists of rows in flows are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+When you create a cloud flow, your flow opens in either the current designer or the copilot-powered designer. The instructions for how to use lists of rows in flows are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the copilot-powered designer. In this article, select the **Current designer** or **Copilot-powered designer** tab for instructions.
 
 ## Get a list of rows
 
-Follow these steps to add the **List rows** action to your flow to return [up to 5000 accounts](/powerapps/developer/common-data-service/webapi/query-data-web-api) from the **Accounts** table in Dataverse.
+Follow these steps to add the **List rows** action to your flow to return [up to 5,000 accounts](/powerapps/developer/common-data-service/webapi/query-data-web-api) from the **Accounts** table in Dataverse.
 
 # [Current designer](#tab/current-designer)
 
 1. Select **New step** to add an action to your flow.
-
-1. Enter **list row** into the **Search connectors and actions** search box on the **Choose an operation** card.
-
+1. Enter **list rows** into the **Search connectors and actions** search box on the **Choose an operation** card.
 1. Select **Microsoft Dataverse** to filter the search results to display only actions and triggers for Microsoft Dataverse.
-
 1. Select **List rows**.
-
-   ![Filter to list rows actions.](../media/list-rows/list-rows-action.png "Filter to list rows actions")
-
 1. Select the **Accounts** table from the **Table name** list.
-
-   ![Select the Accounts table.](../media/list-rows/select-accounts.png "Select the Accounts table")
-
 1. Save and run your flow to confirm that no more than 5,000 rows are returned.
+---
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Select the plus sign (**+**) > **Add an action**.
+1. In the **Add an action** sceen, enter **list rows** into the **Search** field.
+1. Under **Microsoft Dataverse**, select **List rows (Preview)**.
+1. On the **Parameters** tab to the left, select **Accounts** in the **Table Name** dropdown menu.
+1. Close the screen by selecting (**<<**).
 ---
 
 ## Turn on pagination to request more than 5,000 rows
 
-To get more than 5,000 rows from a query automatically, turn on the **Pagination** feature from **Settings** as the following steps indicate:
+To get more than 5,000 rows from a query automatically, turn on the **Pagination** feature from **Settings**.
 
 # [Current designer](#tab/current-designer)
 
 1. In the upper-right corner of the **List rows** card, select the menu (...).
 
 1. Select **Settings**.
+---
 
-      ![Settings for List rows card.](../media/list-rows/select-settings.png)
+# [Copilot-powered designer](#tab/copilot-powered-designer)
 
-1. Move the **Pagination** slider to the **On** position if it's not already turned on.
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000. Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
+1. Select the **List rows** card.
+1. On the pane to the left, select the **Settings** tab > **Networking**.
+---
+
+3. Move the **Pagination** slider to the **On** position if it's not already turned on.
+
+4. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000. Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
 
     When pagination is set and the amount of rows exceeds that number of the threshold configured, the response won't include the **_@odata.nextLink_** parameter to request the next set of rows. Turn pagination off so that the response includes the **_@odata.nextLink_** parameter that can be used to request the next set of rows. Go to [Skip token](#skip-token) to learn how to use it.
 
-   ![Pagination settings for the List rows card.](../media/list-rows/pagination-settings.png "Pagination settings for the List rows card")
-
-> [!NOTE]
-> [Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
-
-# [AI-powered designer](#tab/ai-powered-designer)
-
----
+    [Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
 
 ## Advanced options
 
-The advanced options for the **List Rows** action allow you to sort, filter, arrange, and extend the results of a query. Here's an example of how they can be put together:
+The advanced options for the **List Rows** action allow you to sort, filter, arrange, and extend the results of a query.
 
 # [Current designer](#tab/current-designer)
 
-![Advanced options example for List Rows action.](../media/list-rows/advanced-list-rows.png)
+You can set advanced options directly on the **List rows** card. To see the options, select **Show advanced options**.
+
+:::image type="content" source="../media/list-rows/advanced-list-rows.png" alt-text="Screenshot of advanced options in the List rows card.":::
+---
+
+# [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+You can set options inthe Action configuration pane. To see the options, select the **List rows** card. In the **Paraameters** tab, select an advanced option in the **Add new parameters** dropdown menu.
+
+:::image type="content" source="../media/list-rows/ai-advanced-list-rows.png" alt-text="Screenshot of advanced options for the List rows action in the Configuration action pane.":::
+---
 
 ### Select columns
 
@@ -145,10 +156,6 @@ Example FetchXML query for the Account table:
 ```
 
 As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
-
-# [AI-powered designer](#tab/ai-powered-designer)
-
----
 
 ### Skip token
 
