@@ -45,13 +45,13 @@ When you trigger flows, your flow opens in either the current designer or the co
 # [Current designer](#tab/current-designer)
 
 :::image type="content" source="../media/create-update-delete-trigger/trigger-current.png" alt-text="Screenshot of ":::
----
 
 # [Copilot-powered editing (preview)](#tab/copilot-powered-editing-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 :::image type="content" source="../media/create-update-delete-trigger/trigger-ai.png" alt-text="Screenshot of ":::
+
 ---
 
 ## Trigger condition
@@ -90,7 +90,6 @@ You can set additional properties to define more granularly when the flow runs a
 To access the advanced options, select **Show advanced options**.
 
 :::image type="content" source="../media/create-update-delete-trigger/advanced-current.png" alt-text="Screenshot of the advanced options.":::
----
 
 # [Copilot-powered editing (preview)](#tab/copilot-powered-editing-preview)
 
@@ -99,6 +98,7 @@ To access the advanced options, select **Show advanced options**.
 To access the advanced options, select the **List rows** card. In the **Paraameters** tab, select **Add new parameters** from the dropdown menu.
 
 :::image type="content" source="../media/create-update-delete-trigger/advanced-ai.png" alt-text="Screenshot of the advanced options in the Add new parameters field.":::
+
 ---
 
 ## Filter conditions
