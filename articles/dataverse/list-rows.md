@@ -77,7 +77,6 @@ The advanced options for the **List Rows** action allow you to sort, filter, arr
 You can set advanced options directly on the **List rows** card. To see the options, select **Show advanced options**.
 
 :::image type="content" source="../media/list-rows/advanced-list-rows.png" alt-text="Screenshot of advanced options in the List rows card.":::
----
 
 # [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
 

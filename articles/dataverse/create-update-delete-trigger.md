@@ -146,7 +146,7 @@ Follow these steps to impersonate a user:
 
 # [Current designer](#tab/current-designer)
 
-For each Dataverse action that you want to run as a different user, select the menu in the upper-right corner (**...***) and then select the **Use invoker’s connection** setting.
+For each Dataverse action that you want to run as a different user, select the menu in the upper-right corner (**...**) and then select the **Use invoker’s connection** setting.
 
 # [Copilot-powered editing (preview)](#tab/copilot-powered-editing-preview)
 
@@ -156,7 +156,7 @@ For each Dataverse action that you want to run as a different user, select an op
 
 ---
 
- For the steps in which it is not selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
+ For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
 
 Here are the other options:
 
