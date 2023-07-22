@@ -28,7 +28,6 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 1. Select **List rows**.
 1. Select the **Accounts** table from the **Table name** list.
 1. Save and run your flow to confirm that no more than 5,000 rows are returned.
----
 
 # [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
 
@@ -39,6 +38,7 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 1. Under **Microsoft Dataverse**, select **List rows (Preview)**.
 1. On the **Parameters** tab to the left, select **Accounts** in the **Table Name** dropdown menu.
 1. Close the screen by selecting (**<<**).
+
 ---
 
 ## Turn on pagination to request more than 5,000 rows
@@ -50,7 +50,6 @@ To get more than 5,000 rows from a query automatically, turn on the **Pagination
 1. In the upper-right corner of the **List rows** card, select the menu (...).
 
 1. Select **Settings**.
----
 
 # [Copilot-powered designer](#tab/copilot-powered-designer)
 
@@ -58,6 +57,7 @@ To get more than 5,000 rows from a query automatically, turn on the **Pagination
 
 1. Select the **List rows** card.
 1. On the pane to the left, select the **Settings** tab > **Networking**.
+
 ---
 
 3. Move the **Pagination** slider to the **On** position if it's not already turned on.
@@ -85,6 +85,7 @@ You can set advanced options directly on the **List rows** card. To see the opti
 You can set options inthe Action configuration pane. To see the options, select the **List rows** card. In the **Paraameters** tab, select an advanced option in the **Add new parameters** dropdown menu.
 
 :::image type="content" source="../media/list-rows/ai-advanced-list-rows.png" alt-text="Screenshot of advanced options for the List rows action in the Configuration action pane.":::
+
 ---
 
 ### Select columns
