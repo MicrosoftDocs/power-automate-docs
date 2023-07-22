@@ -179,3 +179,4 @@ Mentions are a great way to get the attention of a user in Teams. You can combin
 - The **Get @mention token for a user** can only be used for mentioning users, mentioning channels/teams is currently not supported.
 
 - Sending a message in private channels isn't supported.
+

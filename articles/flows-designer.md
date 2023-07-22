@@ -1,5 +1,5 @@
 ---
-title: Understand the cloud flows designer (preview)
+title: Understand AI-powered cloud flows designer (preview)
 description: Learn about the components in the cloud flows designer.
 services: ''
 suite: flow
@@ -11,7 +11,7 @@ editor: ''
 tags: ''
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06/30/2023
+ms.date: 06/28/2023
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -19,32 +19,35 @@ search.audienceType:
 ms.reviewer: angieandrews
 ---
 
-# Understand the cloud flows designer (preview)
+# Understand AI-powered cloud flows designer (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-## Overview of the cloud flows designer
+You can create, configure, and customize your cloud flows with the current designer or the AI-powered cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
-Use the designer to create, configure, and customize your cloud flows. The legend below the following screenshot describes the features of the designer.
+## Overview of the AI-powered cloud flows designer
 
-:::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer.":::
+The legend below the following screenshot describes the features of the AI-powered cloud flows designer (preview).
+
+:::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the AI-powered cloud flows designer.":::
 
 Legend:
 
 1. **Left arrow:** Return to the previous screen.
-1. [**Send Feedback button:**](#send-feedback) Send us feedback on your flow creation experience, or general comments on the designer.
+1. [**Send Feedback button:**](#send-feedback) Send us feedback on your flow creation experience, or general comments on the AI-powered designer.
 1. **Action/trigger name:** The action or trigger card that's selected in your flow on the center of the screen.
 1. [**More commands:**](#more-commands) Add a note to the selected card or delete it.
 1. **Collapse:** Hide this pane. When it's collapsed, the **Expand** icon (**>>**) appears in the upper-left corner. To show the panel again, select **>>**.
-1. [**Copilot button:**](get-started-with-copilot.md) Show or hide the Copilot pane. The Copilot pane appears by default when the designer opens.
+1. [**Copilot button:**](get-started-with-copilot.md) Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
 1. [**Save button:**](#save-button) Save your flow.
 1. [**Test button:**](#test-button) Test your flow to make sure it works as you intended.
-1. [**Action configuration pane:**](#action-configuration-pane) Once you select an action card to configure in the canvas, the action configuration pane opens to the left of the designer.
+1. [**Action configuration pane:**](#action-configuration-pane) Once you select an action card to configure in the canvas, the Action configuration pane opens to the left of the AI-powered designer.
 1. [**Canvas**](#canvas): The canvas is where you build your flow. It's free-flowing, which allows for easier navigation.
 1. [**Copilot pane:**](get-started-with-copilot.md) Copilot stays by you in your flow editing and fit-and-finish journey. It can help you update and make changes to your flow based on your conversational style prompt. It can also help answer flow and product related  questions.
 
 > [!IMPORTANT]
-> - This is a preview feature.
+> - This feature might not be available in your region or environment yet.
+> - To use and learn about the availability of AI-powered cloud flows designer, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
@@ -56,15 +59,15 @@ We want to hear from you to help us measure and improve our impact. To provide y
 
 ## More commands
 
-Select **More commands** (**...**) to either add a note to or delete the selected card in your flow. Select **Add a note** to describe the purpose of the card in your flow. When you add a note, you'll see a note icon in the bottom right of the card. Hover over the icon to see the note.
+Select **More commands** (**...**) to either add a note to or delete the selected card in your flow. Select **Add a note** to describe the purpose of the card in your flow. When you add a note, you see a note icon on the bottom right of the card. Hover over the icon to see the note.
 
 :::image type="content" source="media/flows-designer/designer-note.png" alt-text="Screenshot of adding a note.":::
 
 ## Save button
 
-Select **Save** to save your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in in the upper left with a green check.
+Select **Save** to save your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in the upper left with a green check.
 
-:::image type="content" source="media/flows-designer/designer-save.png" alt-text="Screenshot of a sucessful save.":::
+:::image type="content" source="media/flows-designer/designer-save.png" alt-text="Screenshot of a successful save.":::
 
 If an error is found, a description of the error appears in the upper left with a red **X**. The following screenshot is an example of an error.
 
@@ -78,19 +81,19 @@ After your flow is saved successfully, **Test** becomes active. To test your flo
 
 :::image type="content" source="media/flows-designer/test-manually.png" alt-text="Screenshot of manually testing your flow.":::
 
-You'll see instructions on what you need to do to test your flow, as in the following example.
+You see instructions on what you need to do to test your flow, as in the following example.
 
 :::image type="content" source="media/flows-designer/test-prompt.png" alt-text="Screenshot of the prompt telling you what to do to test your flow.":::
 
-Test you flow by following the instructions. In this example, you need to send an email and then the the flow test will run. When the test has completed, a green check appears in each card and the number of seconds it took to process appear in your flow.
+Test you flow by following the instructions. In this example, you need to send an email and then the flow test will run. When the test has completed, a green check appears in each card and the number of seconds it took to process appear in your flow.
 
-:::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of thw test results.":::
+:::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of the test results.":::
 
 Testing is part of planning a Power Automate project. To learn more, go to [Introduction: Planning a Power Automate project](guidance/planning/introduction.md).
 
 ## Action configuration pane
 
-The action configuration pane allows you to customize parameters, settings, and code for the selected card on your flow.
+The Action configuration pane allows you to customize parameters, settings, and code for the selected card on your flow.
 
 ### Parameters
 
@@ -122,7 +125,7 @@ The **Settings** tab allows you to set the action timeout, network retry policy,
 
 See the code behind any card in your flow by selecting it in the canvas, and then selecting **Code View** in the action configuration pane. As you customize the code in the [Parameters](#parameters) tab, you can see the new code in the  **Code View** tab.
 
-The following screenshot is an exmple of the code for the **Compose** action card.
+The following screenshot is an example of the code for the **Compose** action card.
 
 :::image type="content" source="media/flows-designer/compose.png" alt-text="Screenshot of the code view of the Compose action card.":::
 
@@ -132,13 +135,13 @@ For easy navigation, you can drag your flow on the canvas. You configure the act
 
 ### Drop zones
 
-The canvas contains designer drop zones indicated by a blue dashed line. The drop zones help you to easily drag and drop cloud flow actions.
+The canvas contains AI-powered designer drop zones indicated by a blue dashed line. The drop zones help you to easily drag and drop cloud flow actions.
 
 :::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
 ### Zooming icons
 
-Adjust the size of your flow on the canvas. Depending on the size and complexity of your flow, you might want to adjust its size as you're building it. The zooming icons allow you to zoom in, zoom out, fit to screen, and toggle a *minimap*.
+Adjust the size of your flow on the canvas. Depending on the size and complexity of your flow, you might want to adjust its size as you're building it. The zooming icons allow you to zoom in, zoom out, fit to screen, and toggle a *minimap*. These icons appear when the Action configuration pane is closed.
 
 The last option in the zooming icons is the minimap. Select this icon to focus on a particular section of a large flow.
 

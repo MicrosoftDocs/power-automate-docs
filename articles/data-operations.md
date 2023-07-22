@@ -207,4 +207,5 @@ To do this, follow the steps in the previous **Use the create CSV table action**
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.
 
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,13 +1,13 @@
 ---
 title: Azure templates for process mining
-description: Learn how to use Azure templates for process mining in Power Automate.
+description: Learn how to use Azure templates for use with the process mining capability in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -17,9 +17,9 @@ search.audienceType:
 
 # Azure templates for process mining
 
-Easily onboard your data for process mining with a process advisor template. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps (work tracking)](#azure-devops-work-tracking-template), [Azure DevOps (pipelines)](#azure-devops-pipelines-template), [Logic Apps (standard plan)](#logic-apps-standard-plan-template), [Logic Apps (consumption plan)](#logic-apps-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
+Easily onboard your process mining data with process mining templates. Templates help you start mining your processes for insights with just a few selections. You'll avoid the data identification and manipulation that's required with traditional process mining tools. [Azure DevOps (work tracking)](#azure-devops-work-tracking-template), [Azure DevOps (pipelines)](#azure-devops-pipelines-template), [Logic Apps (standard plan)](#logic-apps-standard-plan-template), [Logic Apps (consumption plan)](#logic-apps-consumption-plan-template), and [Durable Functions](#durable-functions-template) templates provide insights that help you identify opportunities and optimize your development processes.
 
-Creating and running a template is similar for all the process advisor Azure templates.
+Creating and running a template is similar for all the Azure templates.
 
 ## Azure DevOps (work tracking) template
 
@@ -39,7 +39,7 @@ The Azure DevOps (work tracking) template uses data from your Azure Boards to an
 
 ### Create and run the Azure DevOps (work Tracking) template
 
-1. In Power Automate in the left panel, select **Process advisor**.
+1. In Power Automate in the left panel, select **Process mining**.
 
 1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps (work tracking** tile.
 
@@ -57,7 +57,7 @@ The Azure DevOps (work tracking) template uses data from your Azure Boards to an
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
+The process mining capability will analyze your process. It might take a few minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -77,7 +77,7 @@ The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze you
 
 ### Create and run the Azure DevOps (pipelines) template
 
-1. In Power Automate in the left panel, select **Process advisor**.
+1. In Power Automate in the left panel, select **Process mining**.
 
 1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Azure DevOps (pipelines)** tile.
 
@@ -95,7 +95,7 @@ The Azure DevOps (pipelines) template uses data from Azure DevOps to analyze you
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
+The process mining capability will analyze your process. It might take a few minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -125,7 +125,7 @@ The Logic Apps with App (standard plan) template uses telemetry data from [Azure
 
 ### Create and run the Logic Apps (standard plan) template
 
-1. In Power Automate in the left panel, select **Process advisor**.
+1. In Power Automate in the left panel, select **Process mining**.
 
 1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic Apps (standard plan)** tile.
 
@@ -143,7 +143,7 @@ The Logic Apps with App (standard plan) template uses telemetry data from [Azure
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It might take up to two minutes for the analytics to appear.
+The process mining capability will analyze your process. It might take up to two minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -151,19 +151,19 @@ Learn how to [visualize and gain insights from processes](process-mining-visuali
 
 The Logic Apps (consumption plan) template analyzes the execution of your Logic Apps to help you identify opportunities and optimize your Logic Apps (consumption plan) usage. To learn more, go to [Usage metering, billing, and pricing models for Azure Logic Apps](/azure/logic-apps/logic-apps-pricing).
 
-The process advisor **Logic Apps (consumption plan)** template will enable you to visualize the execution and orchestration of your Logic Apps. Insights will allow you to maximize your automated processes and manage dependencies.
+The **Logic Apps (consumption plan)** template enables you to visualize the execution and orchestration of your Logic Apps. Insights allow you to maximize your automated processes and manage dependencies.
 
 To learn more about Logic Apps, go to the [Azure Logic Apps documentation](/azure/logic-apps/).
 
 ### Prerequisite
 
-Before you can visualize your Logic Apps, you must have an Azure Logic Apps Consumption Plan (Multi-tenant) license. Find out more, go to [Logic Apps pricing](https://azure.microsoft.com/pricing/details/logic-apps/).
+Before you can visualize your Logic Apps, you must have an Azure Logic Apps Consumption Plan (Multi-tenant) license. To learn more, go to [Logic Apps pricing](https://azure.microsoft.com/pricing/details/logic-apps/).
 
 ### Create and run the Logic Apps (consumption plan) template
 
 1. To deploy a template, you need to create an Application Insights resource. For instructions, go to [Create an Application Insights resource](/azure/azure-monitor/app/create-new-resource).
 
-The Logic App Consumption Plan template uses data from Azure DevOps to analyze your consumption. You'll need to gather some information from ADO before you can run the template.
+The Logic App Consumption Plan template uses data from Azure DevOps to analyze your consumption. You need to gather some information from ADO before you can run the template.
 
 ### Gather information from ADO Logic Apps
 
@@ -175,7 +175,7 @@ The Logic App Consumption Plan template uses data from Azure DevOps to analyze y
 
 ### Create and run the Logic Apps (consumption plan) template
 
-1. In Power Automate in the left panel, select **Process advisor**.
+1. In Power Automate in the left panel, select **Process mining**.
 
 1. In the **Start with a popular template** section, select the **Azure** tab, and then select the **Logic Apps (consumption plan)** tile.
 
@@ -193,7 +193,7 @@ The Logic App Consumption Plan template uses data from Azure DevOps to analyze y
 
 1. Select **Save**.
 
-Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
+The process mining capability will analyze your process. It might take a few minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
@@ -205,9 +205,9 @@ The Durable Functions template uses data from your Azure Durable Functions stora
 
 ### Create and run the Durable Functions template
 
-1. Have both Power Automate process advisor and Azure portal open in separate browser tabs.
+1. Have both the process mining capability in Power Automate and the Azure portal open in separate browser tabs.
 
-1. In Power Automate process advisor, in the **Start with a popular template** section, select the **Azure** tab, and then select the **Durable Functions** tile.
+1. In the process mining capability, in the **Start with a popular template** section, select the **Azure** tab, and then select the **Durable Functions** tile.
 
 1. In the **Process name** field, enter a name for your process.
 
@@ -215,11 +215,11 @@ The Durable Functions template uses data from your Azure Durable Functions stora
 
     :::image type="content" source="media/process-mining-azure-templates/durable-functions-tables.png" alt-text="Screenshot of the Azure storage account Tables page with two table names highlighted.":::
 
-1. In process advisor, paste the **Instances** table name in the **Instance Table Storage Name** field and the **History** table name in the **History Table Storage Name** field.
+1. In the process mining capability, paste the **Instances** table name in the **Instance Table Storage Name** field and the **History** table name in the **History Table Storage Name** field.
 
 1. In Azure portal, copy the value in the **Url** column.
 
-1. In process advisor, paste the URL in the **Table Storage Account URL** field.
+1. In the process mining capability, paste the URL in the **Table Storage Account URL** field.
 
 1. (Optional) In the **Description** field, enter a description of the process.
 
@@ -233,11 +233,11 @@ The Durable Functions template uses data from your Azure Durable Functions stora
 
 1. Select **Show keys**. Copy the value of **Key1** or **Key2**.
 
-1. In process advisor, paste the key value in the **Account key** field.
+1. In the process mining capability, paste the key value in the **Account key** field.
 
 1. Once the connection credentials are established, select **Save**.
 
-Process advisor will analyze your process. It might take a few minutes for the analytics to appear.
+The process mining capability will analyze your process. It might take a few minutes for the analytics to appear.
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 

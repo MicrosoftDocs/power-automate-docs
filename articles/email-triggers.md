@@ -166,4 +166,3 @@ Test the flow by sending an email that gets routed to the folder you selected ea
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-

@@ -139,7 +139,7 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 > [!NOTE]
 > You can have up to 600 flows in your account. If you already have 600 flows, delete one before you create another flow.
 
-### See also
+## Next steps
 
 * [Add steps](multi-step-logic-flow.md), such as different ways to be notified, to your flow.
 * [Run tasks on a schedule](run-scheduled-tasks.md), when you want an action to occur daily, on a certain date, or after a certain number of minutes.

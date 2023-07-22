@@ -10,12 +10,12 @@ tags: ''
 
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/13/2020
 ms.author: deonhe
-ms.reviewer: angieandrews
+ms.reviewer: gtrantzas
 ms.collection: get-started
 search.audienceType: 
   - flowmaker

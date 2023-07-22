@@ -88,7 +88,7 @@ When you create a cloud flow, your flow opens in either the current designer or 
 
     ![Provide credentials for the connection.](./media/getting-started/full-flow.png)
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Copilot-powered designer](#tab/copilot-powered-designer)
 
 ---
 
@@ -122,7 +122,7 @@ You don't need to be a developer to create flows; however, Power Automate does p
 
     ![Peek code details.](media/getting-started/peek-code-details.png)
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Copilot-powered designer](#tab/Copilot-powered-designer)
 
 ---
 

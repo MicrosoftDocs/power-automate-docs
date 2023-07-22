@@ -228,7 +228,7 @@ View all instances that are currently being worked under the **Active** tab. Fro
 
 Select an instance to open it in a new tab, or select it to copy a link, share a link via email, abandon, or delete the instance.
   
-### See also
+## Next steps
 
 - [Business process flows overview](business-process-flows-overview.md)  
 - [Enhance business process flows with branching](enhance-business-process-flows-branching.md)

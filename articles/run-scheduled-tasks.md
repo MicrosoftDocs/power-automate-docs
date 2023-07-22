@@ -95,4 +95,3 @@ When you create a cloud flow, your flow opens in either the current designer or 
 [Advanced options in Azure Logic Apps](/azure/connectors/connectors-native-recurrence)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-

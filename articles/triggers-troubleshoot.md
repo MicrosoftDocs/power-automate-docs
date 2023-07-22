@@ -1,21 +1,16 @@
 ---
 title: Troubleshoot common issues with triggers | Microsoft Docs
 description: Find and fix issues when your flows won't run.
-services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/26/2022
 ms.author: DeonHe
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowadmin
 ---
@@ -124,7 +119,7 @@ When you create a cloud flow, your flow opens in either the current designer or 
 
    ![A screenshot that shows trigger conditions.](./media/triggers-introduction/trigger-conditions.png)
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Copilot-powered designer](#tab/copilot-powered-designer)
 
 ---
 
@@ -157,7 +152,7 @@ If everything looks good but your flow is still not triggering, verify if your f
 
 ## My trigger is firing for old events
 
-There are two types of triggers&mdash;polling triggers or Webhook triggers.
+There are two types of triggers&mdash;polling triggers and Webhook triggers.
 
 If you turned off your flow and then turned it back on, depending on your trigger type, your old triggers may be processed.
 
@@ -182,7 +177,7 @@ Follow these steps to determine the type of trigger that your flow uses.
 
    ![A screenshot of the recurrence section.](./media/triggers-introduction/frequency.png)
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Copilot-powered designer](#tab/copilot-powered-designer)
 
 ---
 
@@ -223,7 +218,7 @@ Follow these steps to check the trigger wake up frequency.
 
    ![A screenshot of the frequency element.](./media/triggers-introduction/frequency.png)
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Copilot-powered designer](#tab/copilot-powered-designer)
 
 ---
 
@@ -239,7 +234,7 @@ If it's taking much longer than expected for your flow to trigger, here are the 
 
    1. Acquire a per user or per flow license. After this is acquired, open and then save the flow, in order to refresh the entitlement associated with it, and to change the throttling mode.
 
-   1. Split the flow into several instances. If the flow processes data, you can divide this data into subsets (per country, per business area, etc.).
+   1. Split the flow into several instances. If the flow processes data, you can divide this data into subsets (per country/region, per business area, etc.).
 
    1. After this, you can use **Save As** on the flow to create several instances that will process their own data. Since the quota is per flow, this can be used as a workaround.
 

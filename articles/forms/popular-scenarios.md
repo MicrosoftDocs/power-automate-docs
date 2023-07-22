@@ -304,4 +304,3 @@ Here's an example:
 ---
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

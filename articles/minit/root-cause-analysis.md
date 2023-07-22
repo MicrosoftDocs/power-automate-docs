@@ -1,13 +1,13 @@
 ---
 title: Find hidden connections
-description: Learn how to find hidden connections in your data in minit.
+description: Learn how to find hidden connections in your data in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Find hidden connections
 
-Find hidden connections in your data with root cause analysis (RCA) in minit.
+Find hidden connections in your data with root cause analysis (RCA) in the Power Automate Process Mining desktop app.
 
 To create a new RCA, create an analysis.
 

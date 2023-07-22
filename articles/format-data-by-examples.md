@@ -105,4 +105,3 @@ Just provide an example and Power Automate suggests the right expression to achi
 ### See also
 
 [PROSE](https://www.microsoft.com/research/project/prose-framework/), a technology that enables programming by example, powers format data by examples.
-

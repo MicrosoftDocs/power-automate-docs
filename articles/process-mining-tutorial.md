@@ -1,13 +1,13 @@
 ---
-title: Get started with process mining
-description: This topic is a process mining tutorial in Power Automate using sample data.
+title: Get started with the process mining capbility
+description: Learn how to use the process mining capability with sample data in a tutorial.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,9 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Tutorial: Get started with process mining
+# Tutorial: Get started with the process mining capability
 
-This tutorial allows you to experience process mining with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
+This tutorial allows you to experience the process mining capability with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
 
 > [!NOTE]
 >
@@ -42,7 +42,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select your environment.
 
-1. On the navigation pane to the left, select **Process advisor**.
+1. On the navigation pane to the left, select **Process mining**.
 
 1. In the **Create new process** section, select **Start here**.
 
@@ -80,23 +80,23 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select **Save and analyze**. The analysis might take a few minutes to run.
 
-When the analysis process is complete, you’ll see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that will help you analyze your process. To learn how to analyze the process map and metrics, go to [Visualize and gain insights from processes in process advisor](process-mining-visualize.md).
+When the analysis process is complete, you’ll see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that will help you analyze your process. To learn how to analyze the process map and metrics, go to [Visualize and gain insights from processes in the process mining capability](process-mining-visualize.md).
 
 :::image type="content" source="media/process-mining-tutorial/process-map-dash.png" alt-text="Screenshot of the process map and dashboard.":::
 
 ## Analyze a process
 
-Let’s take the analysis of our process beyond KPIs. We'll use minit, where you can edit and analyze your processes created in process advisor.
+Let’s take the analysis of our process beyond KPIs. We'll use the Power Automate Process Mining desktop app, where you can edit and analyze your processes created in the process mining capability.
 
-1. From the command bar of the analytics report page, select **Download minit** to download minit.
+1. From the command bar of the analytics report page, select **Download Process Mining app** to download it.
 
-1. On the minit toolbar, select the environment from the top right.
+1. On the toolbar, select the environment from the top right.
 
-1. Search for the process that you created on process advisor (**AP Refunds Process**).
+1. Search for the process you created with the process mining capability in Power Automate (**AP Refunds Process**).
 
 1. Select **Default** to display the default view.
 
-    You’re ready to use the advanced capabilities of minit in process advisor.
+    You’re ready to use the advanced capabilities of the Process Mining desktop app.
 
 1. On the **Customize** panel toolbar, select **Frequency** (the first icon), and then select **Case count** in the **Metric** dropdown menu.
 
@@ -216,4 +216,4 @@ An organization should focus on using standard vouchers versus special vouchers 
 
 An organization should do further analysis to determine why using the standard invoice often causes invoice rejection. If they're able to uncover a remedy for this, the organization can implement this to further improve the process.
 
-To learn more about how to take advantage of the advanced capabilities of the minit desktop application, go to [Minit overview](minit/minit-desktop-application-overview.md).
+To learn more about how to take advantage of the advanced capabilities of Power Automate Process Mining, go to [Overview of Power Automate Process Mining](minit/minit-desktop-application-overview.md).

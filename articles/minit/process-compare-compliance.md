@@ -1,13 +1,13 @@
 ---
 title: Compare process views for compliance
-description: Learn how to compare various process views in minit.
+description: Learn how to compare various process views in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -23,7 +23,7 @@ You can also change the complexity of the map, zoom, or nodes offset in the **Cu
 
 :::image type="content" alt-text="Screenshot of the panel for adding views." source="media/process-compare.png":::
 
-You can compare in detail values of metrics and attributes at the level of activities and edges. You can also compare the views of various processes or different views generated from a single process (for example, for different periods of time) by selecting a process in the **Compare** box. 
+You can compare in detail values of metrics and attributes at the level of activities and edges. You can also compare the views of various processes or different views generated from a single process (for example, for different periods of time) by selecting a process in the **Compare** box.
 
 ## Add views
 
@@ -41,7 +41,6 @@ To add a layer:
 
 List of all available layers is shown in the **Compare** box. The individual layers can be switched on and off by checking or unchecking them. The currently open view and the **Compare** layer are switched on by default. Unchecking the currently open view will highlight those activities and transitions which are common in both compared layers. Select (**-**) to remove the layer from the list.
 
-![Screenshot of changing the view](https://user-images.githubusercontent.com/38796638/225362435-ed00ad69-9917-4480-9c51-cc5aed42ac70.png)
 :::image type="content" alt-text="Screenshot of changing the view." source="media/comparison2.png":::
 
 Each layer/view has an associated color. Activities and edges that form an intersection of the compared layers/views are colored as the **Compare** key.
