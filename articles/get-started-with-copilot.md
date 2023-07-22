@@ -36,7 +36,7 @@ Copilot can perform the following actions:
 You need a Power Platform environment in the United States or Preview (United States) region for Copilot in Power Automate.
 
 > [!NOTE]
-> If your environment is in the United States or Preview (United States) region and you still don’t see the copilot experience, contact Microsoft Support.
+> If your environment is in the United States or Preview (United States) region and you still don’t see the copilot experience, contact your admin. Ask if they've requested Microsoft Support to disable Copilot in Power Automate.
 
 ## Create a flow using Copilot
 
@@ -114,7 +114,7 @@ Use this section to find answers to frequently asked questions.
 ### Why don’t I see Copilot in Power Automate in my Power Automate experience?
 
 - Check if the environment you’re using is in the United States or Preview (United States) region. Your Power Platform admin can help review and verify.
-- Check with your Power Platform admin if the tenant setting or environment setting for Copilot is or isn't enabled.
+- Ask your admin if they've requested Microsoft Support to disable Copilot in Power Automate.
 
 ### How do I create a Power Platform environment in preview region?
 
@@ -125,6 +125,15 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
 ### How do I disable Copilot in Power Automate?
 
 You can disable Copilot in Power Automate by contacting Microsoft Support.
+
+### How is Copilot in Power Automate different from the text generation model in AI Builder?
+
+Copilot in Power Automate is designed to help you create and edit Power Automate flows just by describing them in everyday language, providing helpful guidance along the way.
+
+The text generation model in AI Builder lets you use the GPT model directly in your Power Automate flows and Power Apps apps for various scenarios such as text summarization, draft responses, classify text, and more.  
+
+
+To learn more, go to [Text generation model overview (preview)](/ai-builder/prebuilt-azure-openai).
 
 ### What are the limitations of Copilot in Power Automate during preview?
 
