@@ -14,7 +14,7 @@ search.audienceType:
 
 Use the **List rows** action to retrieve multiple rows at once from Microsoft Dataverse with a structured query.
 
-When you create a cloud flow, your flow opens in either the current designer or the copilot-powered designer. The instructions for how to use lists of rows in flows are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the copilot-powered designer. In this article, select the **Current designer** or **Copilot-powered designer** tab for instructions.
+Your Power Automate version uses either the current designer or the copilot-powered editing designer (preview). Working with a flow is slightly different in each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, can select the **Current designer** or **Copilot-powered editing (preview)** tab.
 
 ## Get a list of rows
 
@@ -34,7 +34,7 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 1. Select the plus sign (**+**) > **Add an action**.
-1. In the **Add an action** sceen, enter **list rows** into the **Search** field.
+1. On the **Add an action** sceen, enter **list rows** in the **Search** field.
 1. Under **Microsoft Dataverse**, select **List rows (Preview)**.
 1. On the **Parameters** tab to the left, select **Accounts** in the **Table Name** dropdown menu.
 1. Close the screen by selecting (**<<**).
@@ -108,7 +108,7 @@ Use to define an OData-style expression that defines the order in which items ar
 
 ### Expand query
 
-Use to specify an OData-style expression that defines the data that Dataverse returns from the related tables, such as "primarycontactid($select=contactid,fullname)" to use the account's **primarycontactid** to retrieve the **fullname** column from the related contact with ID **contactid** in the response.
+Use to specify an OData-style expression that defines the data that Dataverse returns from the related tables, such as `primarycontactid($select=contactid,fullname)` to use the account's **primarycontactid** to retrieve the **fullname** column from the related contact with ID **contactid** in the response.
 
 There are two types of navigation properties that you can use in **Expand Query**:
 
@@ -118,9 +118,7 @@ There are two types of navigation properties that you can use in **Expand Query*
 
 If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/retrieve-related-entities-query).
 
-To use it in a flow step, enter an Odata expression as shown in the following image. This example shows how to get the *contactid* and *fullname* columns for the *primarycontactid* of each *account*.
-
-![Screenshot of an image that displays how to get the contactid and fullname](../media/list-rows/contactid-fullname-query.png)
+To use it in a flow step, enter this Odata expression in the **Expand Query** field: `primarycontactid(contactid,fullname)`. This is how to get the *contactid* and *fullname* columns for the *primarycontactid* of each *account*.
 
 ### Row count
 
@@ -131,11 +129,23 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 > [!IMPORTANT]
 > [Aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) aren't currently supported when using the List rows action with FetchXML queries. However, the distinct operator is supported.
 
-Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML for the same filters and sort conditions as the previous example:
+Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
+
+# [Current designer](#tab/current-designer)
+
+Type the following in the **Fetch Qml Query** field.
 
 ![List accounts example with FetchXML.](../media/list-rows/fetch-sml-example.png)
 
-Example FetchXML query for the Account table: 
+# [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+<!--Matt: Please list steps for how to get there. Might not need a screenshot.-->
+
+---
+
+Example FetchXML query for the Account table:
 
 ```xml
 <fetch count="10">

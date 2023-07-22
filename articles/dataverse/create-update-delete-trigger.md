@@ -40,15 +40,19 @@ The following information is required to use the **When a row is added, modified
 - Table name
 - Scope
 
-When you trigger flows, your flow opens in either the current designer or the copilot-powered editing designer, currently in preview. The instructions for how to set the parameters are slightly different for each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, select the **Current designer** or **Copilot-powered editing (preview)** tab for instructions.
+Your Power Automate version uses either the current designer or the copilot-powered editing designer (preview). Working with a flow is slightly different in each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, can select the **Current designer** or **Copilot-powered editing (preview)** tab.
 
 # [Current designer](#tab/current-designer)
+
+Set the parameters directly on the card for the **When a row is added, modified or deleted** trigger.
 
 :::image type="content" source="../media/create-update-delete-trigger/trigger-current.png" alt-text="Screenshot of ":::
 
 # [Copilot-powered editing (preview)](#tab/copilot-powered-editing-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+In your flow, select the card for the **When a row is added, modified or deleted** trigger. A pane opens on the left with the **Parameters** tab selected.
 
 :::image type="content" source="../media/create-update-delete-trigger/trigger-ai.png" alt-text="Screenshot of ":::
 
@@ -95,7 +99,7 @@ To access the advanced options, select **Show advanced options**.
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-To access the advanced options, select the **List rows** card. In the **Paraameters** tab, select **Add new parameters** from the dropdown menu.
+To access the advanced options, select the **List rows** card. In the **Parameters** tab, select **Add new parameters** from the dropdown menu.
 
 :::image type="content" source="../media/create-update-delete-trigger/advanced-ai.png" alt-text="Screenshot of the advanced options in the Add new parameters field.":::
 
