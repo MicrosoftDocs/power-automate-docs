@@ -14,7 +14,7 @@ search.audienceType:
 
 Use the **List rows** action to retrieve multiple rows at once from Microsoft Dataverse with a structured query.
 
-Your Power Automate version uses either the current designer or the copilot-powered editing designer (preview). Working with a flow is slightly different in each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, can select the **Current designer** or **Copilot-powered editing (preview)** tab.
+Your Power Automate version uses either the current designer or the copilot-powered editing designer (preview). Working with a flow is slightly different in each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, you can select the **Current designer** or **Copilot-powered editing (preview)** tab.
 
 ## Get a list of rows
 

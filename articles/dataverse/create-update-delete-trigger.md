@@ -40,7 +40,7 @@ The following information is required to use the **When a row is added, modified
 - Table name
 - Scope
 
-Your Power Automate version uses either the current designer or the copilot-powered editing designer (preview). Working with a flow is slightly different in each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, can select the **Current designer** or **Copilot-powered editing (preview)** tab.
+Your Power Automate version uses either the current designer or the copilot-powered editing designer (preview). Working with a flow is slightly different in each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, you can select the **Current designer** or **Copilot-powered editing (preview)** tab.
 
 # [Current designer](#tab/current-designer)
 
