@@ -569,7 +569,7 @@ Set the value of a new or existing variable, create a new variable or overwrite 
 |NewVar|*|The name of the variable to set|
 
 >[!NOTE]
-> Produced variable names can't contain special characters, white spaces, and non-latin characters. Also, they can't start with arithmetic characters.
+> Produced variable names can't contain special characters, and white spaces. Also, they can't start with arithmetic characters.
 
 ##### <a name="assign_onerror"></a> Exceptions
 
