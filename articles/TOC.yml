@@ -806,6 +806,8 @@
       href: ./minit/process-compare-compliance.md
     - name: Export process data
       href: ./minit/export.md
+    - name: Connect to SAP ERP from process mining
+      href: process-advisor-sap-erp.md
     - name: Filtering
       items:
       - name: Overview
