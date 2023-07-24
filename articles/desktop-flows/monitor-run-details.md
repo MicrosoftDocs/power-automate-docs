@@ -59,11 +59,12 @@ It might be critical for your orchestration to identify if a step took too much 
   
 ## Actions details 
 This card allows you to see information and status for each action of your desktop flow:
-- **Start**: timestamp when the action has started
+- **Start**: timestamp when the action has started.
 - **Subflow**: your flow can be composed of one or several subflows. By default, your actions are in the main subflow. This information helps you to quickly identify in which subflows the action is to fix potential errors.
-- **Action index**: in the desktop flow script, each action is linked to an action index (this corresponds to the number of the line.
+- **Action index**: in the desktop flow script, each action is linked to an action index (this corresponds to the number of the line).
 - **Action name**
 - **Duration**
+- **Log level**: indicates the severity level (Info/Warning/Error) of the logged action. The only action that is associated with a log level is the **Log message** action. For any other logged action, the column remains empty.
 - **Status**: this column gives you for each action the result of its run. 
 
 By default, the actions are sorted from the latest to the earliest. If you don’t see all the action in the card, select see all to view the full list of action details.
