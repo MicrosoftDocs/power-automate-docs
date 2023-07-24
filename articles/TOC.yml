@@ -808,8 +808,6 @@
       href: ./minit/process-compare-compliance.md
     - name: Export process data
       href: ./minit/export.md
-    - name: Connect to SAP ERP from process mining
-      href: process-mining-sap-erp.md
     - name: Filtering
       items:
       - name: Overview
@@ -896,6 +894,8 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
+  - name: Connect to SAP ERP from process mining
+    href: process-mining-sap-erp.md
   - name: Task mining capability
     items:
     - name: Overview

@@ -15,7 +15,7 @@ ms.reviewer: angieandrews
 
 # Connect to SAP ERP from process mining
 
-The SAP ERP (enterprise resource planning) connector in beta enables you to extract data from your SAP system. It allows you to invoke remote function calls (RFC) and business application programming interface (BAPI) functions using an on-premises data gateway. This SAP RFC connector is supported by Power Platform Dataflows within Microsoft Supply Chain Center.
+The SAP ERP (enterprise resource planning) connector in beta enables you to extract data from your SAP system. It allows you to invoke remote function calls (RFC) and business application programming interface (BAPI) functions using an on-premises data gateway. This SAP RFC connector is supported by Power Platform dataflows within Microsoft Supply Chain Center.
 
 ## Prerequisites
 
@@ -43,9 +43,9 @@ The following installers must exist in the desktop or virtual machine before usi
 
 1. Download and install the Power Query [On-premises data gateway installation](https://go.microsoft.com/fwlink/?LinkId=2116849&clcid=0x4090). To learn more about the gateway requirements or for support, go to [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
-## Connection settings for SAP ERP <!--Should it be RFC (title and first paragraph), as in the Word doc?-->
+## Connection settings for SAP ERP
 
-To instantiate <!--Can we use a simpler term?--> your dataflow connection to the SAP ERP connector, you need to create a connection string with the following parameters.
+To instantiate your dataflow connection to the SAP ERP connector, you need to create a connection string with the following parameters.
 
 |  Name             |  Key         | Required       |   Type  |  Description     |
 |-------------------|--------------|----------------|---------|------------------|
@@ -152,4 +152,3 @@ The **MQuery Logic** template defines and extracts data from SAP. If the data is
 
 ### See also
 
-<!--Heather: Do you want to link to any docs?-->
