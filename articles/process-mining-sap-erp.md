@@ -74,7 +74,7 @@ Although **Data gateway** isn't marked as a requirement in connection settings, 
 
 1. Connection string template: `{"MessageServerHost": "<message server>", "MessageServerService":"<message server service name/port>", "LogonType": "Group", "SystemID": "<system id>", "Client": "<client id>", "LogonGroup":"<logon group>"}`. 
 
-1. Replace everything in `<>` with your message server system settings noting that you might or might not require both MessageServerService and SystemID. For example, for a server 10.0.0.1 with messge server port 3333 and client id 800 and logon group COTO: `{"MessageServerHost": "10.0.0.1", "MessageServerService":"3333", "LogonType": "Group", "Client": "800", "LogonGroup":"COTO"}`.`
+1. Replace everything in `<>` with your message server system settings noting that you might or might not require both MessageServerService and SystemID. For example, for server 10.0.0.1 with message server port 3333 and client id 800 and logon group COTO: `{"MessageServerHost": "10.0.0.1", "MessageServerService":"3333", "LogonType": "Group", "Client": "800", "LogonGroup":"COTO"}`.`
 
 ## Enable function parsing
 
