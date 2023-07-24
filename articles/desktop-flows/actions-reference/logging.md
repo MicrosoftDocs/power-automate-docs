@@ -21,13 +21,14 @@ The **Log message** action enables you to log a custom text message with a sever
 
 > [!IMPORTANT]
 >
-> - The Log message action in Power Automate for desktop is a premium feature, which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
+> The Log message action in Power Automate for desktop is a premium feature, which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
 
 ![Screenshot of the Log message action.](media/logging/log-message-example.png)
 
 At runtime, all action logs are uploaded to the Power Automate service, and are visible in the [flow run action details](../monitor-run-details.md#actions-details) view of the Power Automate portal.
 
 >[!NOTE]
+>
 > Action logs are not uploaded to the Power Automate service when they are executed through the Power Automate for desktop designer. 
 
 ## <a name="logmessage"></a> Log message
