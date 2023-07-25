@@ -63,7 +63,7 @@ additionalContent:
         - text: Get started with copilot-powered editing (preview)
           url: ./get-started-with-copilot.md
         - text: Edit a flow using copilot-powered editing (preview)
-          url: ./get-started-with-copilot.md#edit-a-flow-using-copilot-powered editing
+          url: ./get-started-with-copilot.md#edit-a-flow-using-copilot-powered-editing
     - title: Plan with the process mining capability
       links:
         - text: Understand your processes and identify opportunities with process mining
