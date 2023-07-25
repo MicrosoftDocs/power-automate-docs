@@ -6,7 +6,7 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 12/21/2022
-ms.author: marleon
+ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -68,13 +68,22 @@ To decide whether Microsoft may collect diagnostic data to improve user experien
 >[!IMPORTANT]
 >Only admins can change data collection settings.
 
-## Desktop flow details
+## Desktop flow properties
 
-To review the details of a desktop flow, right-click on it and select **Details**. Through the **Details** pane, you can edit the name and description of the flow, as well as see the owner, the creation and last modification dates, and the flow ID.
+To review the properties of a desktop flow, right-click on it and select **Properties**. In the **General** tab, you can edit the name and description of the flow, set up a keyboard shortcut to trigger the flow locally, and define the **On error** behavior of the flow run.
 
-Additionally, there's a **Run URL** that you can use to run the flow through many different sources, such as browsers, the Windows Run application, and the Command Prompt. You can find more information regarding this functionality in [Run desktop flows via URL or desktop shortcuts](run-desktop-flows-url-shortcuts.md).
+If the **Add screenshot to logs** option is enabled, a screenshot is captured upon flow run failure and is uploaded to the [flow run action details](monitor-run-details.md#actions-details).
 
-:::image type="content" source="media/console/desktop-flow-details.png" alt-text="Screenshot of the details of a desktop flow.":::
+> [!NOTE]
+> The **Add screenshot to logs** property applies only to flows stored in [Power Automate v2 schema](schema.md).
+
+In the **Details** tab, you can see the owner, the creation and last modification dates, the flow ID and the flow’s storage schema version in Dataverse. For more information on the enhanced desktop flows schema, go to [Power Automate v2 schema](schema.md).
+
+Additionally, there's the **Run URL** that you can use to run the flow through many different sources, such as browsers, the Windows Run application, and the Command Prompt. You can find more information regarding this functionality in [Run desktop flows via URL or desktop shortcuts](run-desktop-flows-url-shortcuts.md).
+
+:::image type="content" source="media/console/desktop-flow-general-properties.png" alt-text="Screenshot of the general properties of a desktop flow.":::
+
+:::image type="content" source="media/console/desktop-flow-details-properties.png" alt-text="Screenshot of the details of a desktop flow.":::
 
 ## Update Power Automate for desktop
 
