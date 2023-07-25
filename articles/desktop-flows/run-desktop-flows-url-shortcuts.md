@@ -64,7 +64,7 @@ To generate a URL that triggers a desktop flow, use one of the following formats
 ```
 
 > [!NOTE]
-> You can find an automatically created run URL consisting of the environment and flow IDs on the details page of the desktop flow. You can find more information about flow details in [Desktop flow details](console.md#desktop-flow-details).
+> You can find an automatically created run URL consisting of the environment and flow IDs on the properties section of the desktop flow. You can find more information about flow properties in [Desktop flow properties](console.md#desktop-flow-properties).
 
 The first two formats don't define a specific environment, so Power Automate automatically uses the currently selected console environment. The command will be neglected if either flow ID or flow name isn’t specified.
 
