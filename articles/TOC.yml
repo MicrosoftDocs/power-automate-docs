@@ -605,6 +605,8 @@
       href: ./desktop-flows/actions-reference/conditionals.md
     - name: Loops
       href: ./desktop-flows/actions-reference/loops.md
+    - name: Log message action
+      href: ./desktop-flows/actions-reference/logging.md      
     - name: Flow control
       href: ./desktop-flows/actions-reference/flowcontrol.md
     - name: Run flow
