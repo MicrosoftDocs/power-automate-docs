@@ -1,17 +1,20 @@
 ---
 title: Variables actions reference
 description: See all the available variables actions.
-author: georgiostrantzas
+author: kenseongtan
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
-ms.author: marleon
+ms.date: 07/25/2023
+ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+ms.contributors:
+ - kenseongtan
+ - dipapa
 search.audienceType: 
   - flowmaker
   - enduser
