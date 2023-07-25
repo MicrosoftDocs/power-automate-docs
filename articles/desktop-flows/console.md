@@ -77,7 +77,7 @@ If the **Add screenshot to logs** option is enabled, a screenshot is captured up
 > [!NOTE]
 > The **Add screenshot to logs** property applies only to flows stored in [Power Automate v2 schema](schema.md).
 
-In the **Details** tab, you can see the owner, the creation and last modification dates, the flow ID and the flow’s storage schema version in Dataverse. For more information, go to [Power Automate v2 schema](schema.md).
+In the **Details** tab, you can see the owner, the creation and last modification dates, the flow ID and the flow’s storage schema version in Dataverse. For more information on the enhanced desktop flows schema, go to [Power Automate v2 schema](schema.md).
 
 Additionally, there's the **Run URL** that you can use to run the flow through many different sources, such as browsers, the Windows Run application, and the Command Prompt. You can find more information regarding this functionality in [Run desktop flows via URL or desktop shortcuts](run-desktop-flows-url-shortcuts.md).
 
