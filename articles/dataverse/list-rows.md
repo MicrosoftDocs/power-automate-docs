@@ -14,7 +14,7 @@ search.audienceType:
 
 Use the **List rows** action to retrieve multiple rows at once from Microsoft Dataverse with a structured query.
 
-Your Power Automate version uses either the current designer or the copilot-powered editing designer (preview). Working with a flow is slightly different in each designer. If you see the Copilot pane on the right, you're using the copilot-powered editing designer (preview). In this article, you can select the **Current designer** or **Copilot-powered editing (preview)** tab.
+Power Automate uses either the current designer or the copilot-powered editing designer (preview). To identify which designer you’re using, go to the Note section in [Understand the copilot-powered editing designer (preview)](/power-automate/flows-designer?branch=pr-en-us-2200).
 
 ## Get a list of rows
 
@@ -45,28 +45,27 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 
 To get more than 5,000 rows from a query automatically, turn on the **Pagination** feature from **Settings**.
 
+When pagination is set and the amount of rows exceeds that number of the threshold configured, the response won't include the **_@odata.nextLink_** parameter to request the next set of rows. Turn pagination off so that the response includes the **_@odata.nextLink_** parameter that can be used to request the next set of rows. Go to [Skip token](#skip-token) to learn how to use it.
+
+[Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
+
 # [Current designer](#tab/current-designer)
 
 1. In the upper-right corner of the **List rows** card, select the menu (...).
-
 1. Select **Settings**.
+1. Move the **Pagination** slider to the **On** position if it's not already turned on.
+1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000. Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
 
-# [Copilot-powered designer](#tab/copilot-powered-designer)
+# [Copilot-powered designer (preview)](#tab/copilot-powered-designer)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 1. Select the **List rows** card.
 1. On the pane to the left, select the **Settings** tab > **Networking**.
+1. Move the **Pagination** slider to the **On** position if it's not already turned on.
+1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000. Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
 
 ---
-
-3. Move the **Pagination** slider to the **On** position if it's not already turned on.
-
-4. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000. Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
-
-    When pagination is set and the amount of rows exceeds that number of the threshold configured, the response won't include the **_@odata.nextLink_** parameter to request the next set of rows. Turn pagination off so that the response includes the **_@odata.nextLink_** parameter that can be used to request the next set of rows. Go to [Skip token](#skip-token) to learn how to use it.
-
-    [Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
 
 ## Advanced options
 
