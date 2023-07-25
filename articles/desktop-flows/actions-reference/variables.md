@@ -570,7 +570,7 @@ Set the value of a new or existing variable, create a new variable or overwrite 
 
 >[!NOTE]
 > Variable names must start with either a letter or an underscore (_). After the first character, variable names can contain letters, underscores, and digits (0-9). Names are not case-sensitive, meaning myVar, myvar, and MYVAR are considered the same variable.
-The following reserved keywords cannot be used as variable names: if, then, else, switch, case, default, loop, from, to, step, foreach, in, while, next, exit, label, goto, call, output, function, block, end, error, wait, for, set, main, and, or, xor, not, true, false, yes, no, disable, on, repeat, times, throw, action, mod, global, input, import
+>The following reserved keywords cannot be used as variable names: if, then, else, switch, case, default, loop, from, to, step, foreach, in, while, next, exit, label, goto, call, output, function, block, end, error, wait, for, set, main, and, or, xor, not, true, false, yes, no, disable, on, repeat, times, throw, action, mod, global, input, import
 
 ##### <a name="assign_onerror"></a> Exceptions
 
