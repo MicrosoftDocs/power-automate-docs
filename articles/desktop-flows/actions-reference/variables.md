@@ -7,7 +7,7 @@ ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 07/25/2023
 ms.author: kenseongtan
-ms.reviewer: gtrantzas
+ms.reviewer: dipapa
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
