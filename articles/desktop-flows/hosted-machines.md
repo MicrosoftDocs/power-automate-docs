@@ -52,9 +52,9 @@ To use hosted machines during the grace period, you need one of the following li
 
     During the grace period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
-- Use the **Power Automate Premium trial** (previously Power Automate per user plan with attended RPA trial) and the **Power Automate Process add-on trial** (previously Power Automate unattended RPA add-on trial).
+- Use the **Power Automate Premium trial** (previously Power Automate per user plan with attended RPA trial) and the **Power Automate Process** plan (previously Power Automate per flow).
 
-    The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the Power Automate Process add-on (previouisly Power Automate unattended RPA) to the targeted environments.
+    The plans mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the **Power Automate Process** plan (previously Power Automate per flow) to the targeted environments.
 
 - Use the **90-days self-assisted premium trial.**
 

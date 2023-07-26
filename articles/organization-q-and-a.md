@@ -77,8 +77,8 @@ If a user was assigned a Power Automate license, you can remove the license for 
 
 Bulk removal of licenses is also possible through PowerShell. To learn more, go to [Remove licenses from user accounts with Office 365 PowerShell](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) and [Disable access to services with Office 365 PowerShell](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell).
 
->[!NOTE]
->This action removes the Power Automate tile by default. A user may still choose to use Power Automate as an individual.
+> [!NOTE]
+> This action removes the Power Automate tile by default. A user might still choose to use Power Automate as an individual.
 
 ### Why did 10,000 licenses for Power Automate show up in my Office 365 tenant?
 
@@ -125,12 +125,12 @@ If a new tenant was created by Power Automate, then you can claim and manage tha
 1. Join the tenant by signing up for Power Automate using an email address domain that matches the tenant domain you want to manage. For example, if Microsoft created the contoso.com tenant, then join the tenant with an email address ending with @contoso.com.
 1. Claim admin control by verifying domain ownership: once you're in the tenant, you can promote yourself to the admin role by verifying domain ownership. To do so, follow these steps:
 
-   1. Go to [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
-   1. Select the app launcher icon in the upper-left and choose Admin.
+   1. Go to [https://admin.microsoft.com](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fadmin.microsoft.com%2FStart%3Fsku%3Dflow_free&data=05%7C01%7Cangieandrews%40microsoft.com%7Cd5a8f4965448458f16d108db8c2db640%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638257900217814787%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=OtGZGB%2F4LBQiEYbgNBS%2BoCqmERbCPqDBsz3m4HOvowQ%3D&reserved=0).
+   1. Select the app launcher icon in the upper-left and choose **Admin**.
    1. Read the instructions on the **Become the admin** page, and then choose **Yes, I want to be the admin**.  
 
-       >[!TIP]
-       >If this option doesn’t appear, an Office 365 administrator is already in place.
+       > [!TIP]
+       > If this option doesn’t appear, an Office 365 administrator is already in place.
 
 ### If I have multiple domains, can I control the Office 365 tenant that users are added to?
 
@@ -138,14 +138,12 @@ If you do nothing, a tenant is created for each user email domain and subdomain.
 
 If you want all users to be in the same tenant regardless of their email address extensions, you can create a target tenant ahead of time or use an existing tenant. Add all the existing domains and subdomains that you want consolidated within that tenant. Then all the users with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
 
->[!IMPORTANT]
->There isn't a supported automated way to move users across tenants. To learn about adding domains to a single Office 365 tenant, go to [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+> [!IMPORTANT]
+> There isn't a supported automated way to move users across tenants. To learn about adding domains to a single Office 365 tenant, go to [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
 ### How can I restrict my users' ability to access my organization's business data?
 
-Power Automate allows you to create data zones for business and non-business data, as shown below. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combines business and non-business data. To learn more, go to [Data loss prevention (DLP) policies](prevent-data-loss.md).
-
-  ![Data loss prevention image.](./media/organization-q-and-a/data-loss-prevention-policy.png "Data loss prevention image")
+Power Automate allows you to create data zones for business and non-business data. Once these data loss prevention policies are implemented, users are prevented from designing or running Power Automate that combines business and non-business data. To learn more, go to [Data loss prevention (DLP) policies](prevent-data-loss.md).
 
 ## Power Automate RPA license
 
@@ -153,9 +151,7 @@ Power Automate allows you to create data zones for business and non-business dat
 
 Follow these steps to apply unattended RPA licenses to your flows.
 
-1. The tenant admin must purchase or get trial a version of the Power Automate Process add-on (previously Power Automate unattended RPA) capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
-
-   ![get unattended license.](./media/RPA-license/unattended-license-M365.JPG)
+1. The tenant admin must purchase or get trial a version of the **Power Automate Process** plan (previously Power Automate per flow) capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the add-on.
 
 1. The environment admin must assign the available (paid or trial) unattended add-on capacities to a specific environment.
 
@@ -177,9 +173,8 @@ Follow these steps to apply unattended RPA licenses to your flows.
 
 A user can press CTRL+ALT+A from Power Automate to check their license status.
 
->[!NOTE]
->There isn't a user interface available to check license status.
-
+> [!NOTE]
+> There isn't a user interface available to check license status.
 
 ### Can trials be disabled for a tenant?
 
@@ -189,22 +184,13 @@ Yes. Tenant admins can use PowerShell to disable all trials activations for a te
 
 1. Select **Purchase services** in the Microsoft 365 admin center, and then select **Add-ons**.
 
-   ![Purchase add-on for licensing.](./media/rpa-license/purchase-services-add-ons.png)
-
-1. Select **Power Automate Process add-on Trial** (previously **Power Automate unattended RPA add-on Trial**). 
-
-   ![Add on trial selection.](./media/rpa-license/unattended-rpa-add-on-trial.png)
+1. Select **Power Automate Process plan** (previously **Power Automate per flow**).
 
 1. Select **Get free trial**.
 
-   ![The free trial button.](./media/rpa-license/get-free-trial.png)
+    You now see that the unattended trial is now active in your list of add-ons.
 
-You'll now see that the unattended trial is now active in your list of add-ons.
-
-   ![List of add-ons.](./media/rpa-license/list-add-ons.png)
-
-
-### Assign Power Automate Process add-on (previously Power Automate unattended RPA add-on) capacity to an environment
+### Assign Power Automate Process plan (previously Power Automate process flow) capacity to an environment
 
 Before you can assign add-ons, such as trial licenses, you must [get the add-ons](#how-to-start-an-unattended-trial).
 
@@ -218,7 +204,7 @@ Before you can assign add-ons, such as trial licenses, you must [get the add-ons
 
    ![Assign unattended license to environment.](./media/rpa-license/assign-to-environment.png)
 
->[!NOTE]
+> [!NOTE]
 >
 >- You'll need to assign add-on capacity to each environment that needs to run RPA unattended.
 >- You'll need to ensure you assign enough capacity if you'll run desktop flows in parallel.

@@ -24,9 +24,7 @@ To build RPA solutions with Power Automate, you'll need one or more of the follo
 
 - Power Automate Premium (or trial, previously Power Automate per user plan with attended RPA)
 
-- Power Automate Premium (previously Power Automate per user plan with attended RPA) + Power Automate Process add-on (previously Power Automate unattended RPA add-on)
-
-- Power Automate Process plan (previously Power Automate per flow) + Power Automate Process add-on (previously Power Automate unattended RPA add-on)
+- Power Automate Process plan (previously Power Automate per flow and Power Automate unattended RPA add-on)
 
 ## Software requirements
 

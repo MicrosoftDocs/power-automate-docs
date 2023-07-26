@@ -45,7 +45,7 @@ This article lists the premium robotic process automation (RPA) features and ben
 
 > [!IMPORTANT]
 >
-> - Unattended desktop flow executions require the Power Automate Process add-on (previouisly Power Automate unattended RPA add-on), which can be applied against a qualifying base license.
+> - Unattended desktop flow executions require the **Power Automate Process** plan (previously Power Automate per flow), which can be applied against a qualifying base license.
 > - AI Builder is licensed as an add-on for existing subscription plans. A certain number of AI Builder credits are included in the Power Automate Premium plan (previously Power Automate per user with attended RPA).
 
 ## Plans that provide entitlements for the premium RPA features
