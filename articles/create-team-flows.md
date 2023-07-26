@@ -165,7 +165,7 @@ To change the ownership of a non-solution-aware cloud flow, you must create a ne
 ### Share ownership of a solution-aware cloud flow with a user who isn't in Dataverse
 When you share ownership of a solution-aware cloud flow with a user who isn't in Dataverse, that user gets added into Dataverse automatically to facilitate sharing. In a default environment, Azure Active Directory (AAD) users have the EnvironmentMaker role. In a non-default environment, AAD users and groups are added into Dataverse but they aren't assigned the EnvironmentMaker role automatically. Therefore, they may only be able to run the flow until an administrator assigns them a role. If the user doesn't have an appropriate role, they will see a detailed error message.
 
-### Can connections be provided by user that runs the flow? 
+### Can connections be provided by the user that runs the flow? 
 Yes. When a connection is configured to be **Provided by run-only user** then that connection is provided by the user that runs (or "invokes") the flow.
 
 ### Can a connection provided by run-only user be used by another user?
