@@ -1,17 +1,20 @@
 ---
 title: Variables actions reference
 description: See all the available variables actions.
-author: georgiostrantzas
+author: kenseongtan
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 07/25/2023
+ms.author: kenseongtan
+ms.reviewer: dipapa
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+ms.contributors:
+ - kenseongtan
+ - dipapa
 search.audienceType: 
   - flowmaker
   - enduser
@@ -569,7 +572,8 @@ Set the value of a new or existing variable, create a new variable or overwrite 
 |NewVar|*|The name of the variable to set|
 
 >[!NOTE]
-> Produced variable names can't contain special characters, white spaces, and non-latin characters. Also, they can't start with arithmetic characters.
+> Variable names must start with either a letter or an underscore (_). After the first character, variable names can contain letters, underscores, and digits (0-9). Names are not case-sensitive, meaning myVar, myvar, and MYVAR are considered the same variable.
+> The following reserved keywords cannot be used as variable names: if, then, else, switch, case, default, loop, from, to, step, foreach, in, while, next, exit, label, goto, call, output, function, block, end, error, wait, for, set, main, and, or, xor, not, true, false, yes, no, disable, on, repeat, times, throw, action, mod, global, input, import
 
 ##### <a name="assign_onerror"></a> Exceptions
 
