@@ -15,7 +15,7 @@ ms.reviewer: angieandrews
 
 # Connect to SAP ERP from process mining
 
-The SAP ERP (enterprise resource planning) connector in beta enables you to extract data from your SAP system. It allows you to invoke remote function calls (RFC) and business application programming interface (BAPI) functions using an on-premises data gateway. This SAP RFC connector is supported by Power Platform dataflows within Microsoft Supply Chain Center.
+The SAP ERP (enterprise resource planning) connector in beta enables you to extract data from your SAP system. It allows you to invoke remote function calls (RFC) and business application programming interface (BAPI) functions using an on-premises data gateway. This SAP RFC connector is supported by Power Platform dataflows within Microsoft Power Automate Process Mining.
 
 ## Prerequisites
 
@@ -84,36 +84,7 @@ The function parsing mode for the connector understands contracts of two widely 
 
 ## Authentication
 
-The SAP ERP connector only supports basic SAP authentication. Because the connector is designed to be used by multiple users of an app, the connections aren't shared. Each user authenticates with the SAP system.  
-
-## Known issues and limitations
-
-The following are some of the known issues and limitations of the SAP ERP connector.
-
-- The connector supports only RFCs and BAPIs.
-- The connector doesn't support receiving messages from SAP Server.
-- Transactional RFCs (tRFCs) aren't supported.
-- The gateway has a 2 MB payload limit for write operations and an 8 MB compressed data response limit for read operations.
-
-## FAQ
-
-### The SAP ERP beta connector is labeled as third party. Is this connector not created or managed by Microsoft?
-
-The connector was created by Microsoft and is managed by Microsoft. As a beta connector, it holds a third party label until it becomes generally available.
-
-### I'm getting the following error when attempting to connect: “The given data source kind is not supported Data source kind SAPERP”. How do I address this?  
-
-As a custom connector, by default we save the connection in your [System Drive]\Windows\ServiceProfiles\PBIEqwService\Documents\Power BI Desktop\Custom Connectors folder. If this folder doesn't exist, or if the gateway is configured to use a different custom connector folder, you get this error. To fix this, copy the **SAPERP.mez** connector file from [System Drive]\Windows\ServiceProfiles\PBIEqwService\Documents\Power BI Desktop\Custom Connectors and into the folder that you configured in your gateway.  
-
-:::image type="content" source="media/process-mining-sap-erp/faq-mez.png" alt-text="<alt text>":::
-
-### Do I always need to identify a Data gateway in connection settings?
-
-As part of connection setting you must identify a data gateway to successfully connect through the SAP ERP connector.
-
-### My connection continues to fail, what can I do to remediate?
-
-Make sure to check that installers described in this article are current. Reinstalling drivers might solve your connection issues.  
+The SAP ERP connector only supports basic SAP authentication. Because the connector is designed to be used by multiple users of an app, the connections aren't shared. Each user authenticates with the SAP system.
 
 ## SAP template
 
@@ -149,6 +120,37 @@ You can also scope the data extracted by defining your data range.
 - Company codes
 
 The **MQuery Logic** template defines and extracts data from SAP. If the data isn't complete, or you're interested in making changes to the logic, go to the process details page, select **SetUp** <!--Where is this?--> and reparse RFC.
+
+
+## Known issues and limitations
+
+The following are some of the known issues and limitations of the SAP ERP connector.
+
+- The connector supports only RFCs and BAPIs.
+- The connector doesn't support receiving messages from SAP Server.
+- Transactional RFCs (tRFCs) aren't supported.
+- The gateway has a 2 MB payload limit for write operations and an 8 MB compressed data response limit for read operations.
+
+## FAQ
+
+### The SAP ERP beta connector is labeled as third party. Is this connector not created or managed by Microsoft?
+
+The connector was created by Microsoft and is managed by Microsoft. As a beta connector, it holds a third party label until it becomes generally available.
+
+### I'm getting the following error when attempting to connect: “The given data source kind is not supported Data source kind SAPERP”. How do I address this?  
+
+As a custom connector, by default we save the connection in your [System Drive]\Windows\ServiceProfiles\PBIEqwService\Documents\Power BI Desktop\Custom Connectors folder. If this folder doesn't exist, or if the gateway is configured to use a different custom connector folder, you get this error. To fix this, copy the **SAPERP.mez** connector file from [System Drive]\Windows\ServiceProfiles\PBIEqwService\Documents\Power BI Desktop\Custom Connectors and into the folder that you configured in your gateway.  
+
+:::image type="content" source="media/process-mining-sap-erp/faq-mez.png" alt-text="<alt text>":::
+
+### Do I always need to identify a Data gateway in connection settings?
+
+As part of connection setting you must identify a data gateway to successfully connect through the SAP ERP connector.
+
+### My connection continues to fail, what can I do to remediate?
+
+Make sure to check that installers described in this article are current. Reinstalling drivers might solve your connection issues.  
+
 
 ### See also
 
