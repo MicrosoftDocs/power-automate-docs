@@ -180,7 +180,7 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 | Name | Limit | Notes |
 |------|-------|-------|
-| Message size | 100 MB | To work around this limit, consider allowing chunking under the action content transfer settings. However, some connectors and APIs might not support chunking or even the default limit.|
+| Message size | 100 MB | To work around this limit, consider allowing chunking under the action content transfer settings. However, some connectors and APIs might not support chunking or even the default limit. <br />**Note**: When sending files through a connector, the overall size of the payload and not just the file needs to be under 100 MB.|
 | Message size with chunking | 1 GB | This limit applies to actions that either natively support chunking or let you enable chunking in their runtime configuration. |
 
 ### Character limits
