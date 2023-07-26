@@ -88,7 +88,6 @@ The SAP ERP connector only supports basic SAP authentication. Because the connec
 
 ## SAP template
 
-The following sections apply only to process mining.
 
 ### Connecting to SAP ERP through process mining templates
 
