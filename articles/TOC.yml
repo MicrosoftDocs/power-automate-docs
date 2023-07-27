@@ -744,6 +744,8 @@
         href: process-mining-templates.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
+    - name: Connect to SAP ERP from process mining (preview)
+      href: process-mining-sap-erp.md    
     - name: Transform and map data
       href: process-mining-transform.md
     - name: Visualize and gain insights from processes
@@ -894,8 +896,6 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
-  - name: Connect to SAP ERP from process mining
-    href: process-mining-sap-erp.md
   - name: Task mining capability
     items:
     - name: Overview

@@ -1,5 +1,5 @@
 ---
-title: Connect to SAP ERP from process mining
+title: Connect to SAP ERP from process mining (preview)
 description: Learn how to extract data from your SAP system and invoke RFC and BAPI functions using an on-premises data gateway.
 author: donums
 contributors:
@@ -13,9 +13,14 @@ ms.author: heortaol
 ms.reviewer: angieandrews
 ---
 
-# Connect to SAP ERP from process mining
+# Connect to SAP ERP from process mining (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 The SAP ERP (enterprise resource planning) connector in beta enables you to extract data from your SAP system. It allows you to invoke remote function calls (RFC) and business application programming interface (BAPI) functions using an on-premises data gateway. This SAP RFC connector is supported by Power Platform dataflows within Microsoft Power Automate Process Mining.
+
+> [!IMPORTANT]
+> [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
@@ -118,7 +123,7 @@ You can also scope the data extracted by defining your data range.
 - Client code
 - Company codes
 
-The **MQuery Logic** template defines and extracts data from SAP. If the data isn't complete, or you're interested in making changes to the logic, go to the process details page, select **SetUp** <!--Where is this?--> and reparse RFC.
+The **MQuery Logic** template defines and extracts data from SAP. If the data isn't complete, or you're interested in making changes to the logic, go to the process details page, select **SetUp** and reparse RFC.
 
 
 ## Known issues and limitations
