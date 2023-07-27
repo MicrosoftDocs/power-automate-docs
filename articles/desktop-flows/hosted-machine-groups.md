@@ -28,7 +28,7 @@ Here are some of the key features of hosted machine group:
 
 To use hosted machine group, you need the following licensing option:
 
-Use your existing **Power Automate Premium plan** (formerly, Power Automate per user plan with attended RPA**, or **Power Automate Process plan** (formerly, Power Automate per flow plan) and the **Power Automate hosted RPA add-on**.
+Use your existing **Power Automate Premium** plan (formerly, Power Automate per user plan with attended RPA), or **Power Automate Process** plan (formerly, Power Automate per flow plan) and the **Power Automate hosted RPA add-on**.
 
 You need to assign to your environment as many add-ons as the number of hosted bots you want to run in parallel in your environment.
 
@@ -36,7 +36,7 @@ You need to assign to your environment as many add-ons as the number of hosted b
 
 To evaluate the hosted machine group, you need one of the following trial licensing options:
 
-- Use the **Power Automate Premium plan** (previously Power Automate per user with attended RPA) and the **Power Automate hosted RPA add-on trials**.
+- Use the **Power Automate Premium** plan (previously Power Automate per user with attended RPA) and the **Power Automate hosted RPA add-on trials**.
 
     The Power Automate hosted RPA add-ons mentioned before have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), and assign the hosted RPA add-ons to the targeted environments.
 

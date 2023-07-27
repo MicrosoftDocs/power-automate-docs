@@ -125,7 +125,7 @@ If a new tenant was created by Power Automate, then you can claim and manage tha
 1. Join the tenant by signing up for Power Automate using an email address domain that matches the tenant domain you want to manage. For example, if Microsoft created the contoso.com tenant, then join the tenant with an email address ending with @contoso.com.
 1. Claim admin control by verifying domain ownership: once you're in the tenant, you can promote yourself to the admin role by verifying domain ownership. To do so, follow these steps:
 
-   1. Go to [https://admin.microsoft.com](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fadmin.microsoft.com%2FStart%3Fsku%3Dflow_free&data=05%7C01%7Cangieandrews%40microsoft.com%7Cd5a8f4965448458f16d108db8c2db640%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638257900217814787%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=OtGZGB%2F4LBQiEYbgNBS%2BoCqmERbCPqDBsz3m4HOvowQ%3D&reserved=0).
+   1. Go to [https://admin.microsoft.com](https://admin.microsoft.com).
    1. Select the app launcher icon in the upper-left and choose **Admin**.
    1. Read the instructions on the **Become the admin** page, and then choose **Yes, I want to be the admin**.  
 

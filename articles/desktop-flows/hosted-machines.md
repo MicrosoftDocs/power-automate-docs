@@ -48,7 +48,7 @@ You'll also need the following prerequisite licenses: Windows, Intune, Azure Act
 
 To use hosted machines during the grace period, you need one of the following licensing options:
 
-- Use your existing **Power Automate Premium** (previously Power Automate per user plan with attended RPA) or **Power Automate Process plan** (previously Power Automate per flow plan) and the **Power Automate Process add-on** (previously Power Automate unattended RPA add-on).
+- Use your existing **Power Automate Premium** (previously Power Automate per user plan with attended RPA) or **Power Automate Process** plan (previously Power Automate per flow plan) and the **Power Automate Process add-on** (previously Power Automate unattended RPA add-on).
 
     During the grace period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
