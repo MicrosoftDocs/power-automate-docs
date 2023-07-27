@@ -210,9 +210,11 @@ This example flow will be used for demo purposes.  In short, this mimics a proce
    
 2.	Using the PAD designer, the flow was run in up to action 3 using the **run next action** option in the designer console.  The **WorkQueueItem** variable is opened by double clicking the populated value under **Flow variables** and this shows all the properties associated with the work queue item being processed.
 
+   :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction.png":::
+
    :::image type="content" source="media/work-queues/work-queue-pad-wqvarvalue.png" alt-text="Screenshot of the WorkQueueItem variable in the variable viewer." lightbox="media/work-queues/work-queue-pad-wqvarvalue.png":::
    
-3. In action 2 of the flow, I converted JSON, which in this case is %WorkQueueItem.Value% into a custom object.  The reason for this is because it helps parse the JSON and use the values downstream in your flow.  In this hypothetical case, the info would be used to make entries into Farbrikams finance portal.
+3. In action 2 of the flow, the JSON imported into the desktop flow when retrieving the work queue item, which in this case is **%WorkQueueItem.Value%**, has been converted into a custom object.  The reason for this is because it helps parse the JSON and use the values downstream in your flow.  In this hypothetical case, the info would be used to make entries into Farbrikams finance portal.
 
    ```json
    {
@@ -235,15 +237,15 @@ For instance, let's say there was a requirement to enter the invoice ID into a f
 
    :::image type="content" source="media/work-queues/work-queue-pad-updatewqi.png" alt-text="Screenshot example of **update work queue item** action inputs." lightbox="media/work-queues/work-queue-pad-updatewqi.png":::
  
-5.	If some issue was determined during the course of processing the data of the work queue item into the data entry system, the item could alternatively be assigned a status of **generic exception, IT exception, or busineses exception**.  It’s up to you to decide what events are required to be met to warrant such alternatives, but here is a way that you can use PAD actions to seprate such items which may have been impacted. 
+5.	If some issue was determined during the course of processing the data of the work queue item into the data entry system, the item could alternatively be assigned a status of **generic exception, IT exception, or busineses exception**.  It’s up to you to decide what events are required to be met to warrant such alternatives, but here is a way that you can use PAD actions to separate such items that may have been impacted. 
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqiconditional.png" alt-text="Screenshot example of conditional statement used to update the current work queue item in the desktop flow and add a new queue item into an alternative queue to handle exceptions." lightbox="media/work-queues/work-queue-pad-wqiconditional.png":::
 
-In each condition, a value for the variable scenario is determined when processing the queue item.  Let’s say that while processing the queue item, scenario 2 was met.  In this case the queue item is marked as generic exception in the originating queue and optionally have chosen to add the queue item into a subsequent queue called Demo PAD Queue – Generic Exception.  This subsequent queue can be linked to a clean-up process to handle such instances, or simply parked for human intervention.
+In each condition, a value for the variable scenario is determined when processing the queue item.  Let’s say that while processing the queue item, scenario 2 was met.  In this case, the queue item is marked as generic exception in the originating queue and optionally have chosen to add the queue item into a subsequent queue called Demo PAD Queue – Generic Exception.  This subsequent queue can be linked to a clean-up process to handle such instances, stored for human intervention.
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqiresults.png" alt-text="Screenshot example of updated status for work queue items processed in the flow portal." lightbox="media/work-queues/work-queue-pad-wqiresults.png":::
 
-Note that variable values from the origination work queue item have been used to enter data into the subsequent work queue item which include the name and value fields.  Be creative with the processing notes and enter what makes sense for somebody, or some other process that will pick the item up downstream.
+Note that variable values from the origination work queue item have been used to enter data into the subsequent work queue item, which include the name and value fields.  Be creative with the processing notes and enter what makes sense for somebody, or some other process that will pick up the item downstream.
 
    :::image type="content" source="media/work-queues/work-queue-pad-addwqi.png" alt-text="Screenshot of the add work queue item action configured in the desktop flow designer." lightbox="media/work-queues/work-queue-pad-addwqi.png":::
 
