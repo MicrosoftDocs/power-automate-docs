@@ -112,7 +112,7 @@ As a custom connector, by default we save the connection in your [System Drive]\
 
 :::image type="content" source="media/process-mining-sap-erp/faq-mez.png" alt-text="<alt text>":::
 
-### Do I always need to identify a Data gateway in connection settings?
+### Do I always need to identify a data gateway in connection settings?
 
 As part of connection setting you must identify a data gateway to successfully connect through the SAP ERP connector.
 
