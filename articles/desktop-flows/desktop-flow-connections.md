@@ -32,13 +32,13 @@ There is two different methods to connect Power Automate with your machines (or 
 
 With this option, you need to provide the machine (or on-premises data gateway) information and device credentials:
 
-   - **Connect**: Select if you want to connect to a machine, a machine group or an on-premises data gateway.
+   - **Connect**: Select if you want to connect to a machine or a machine group.
 
-      To connect to a machine or a machine group, select **Directly to machine**, and choose the appropriate machine or machine group in  **Machine or machine group**.
+      To connect to a machine or a machine group, select **Connect with username and password**, and choose the appropriate machine or machine group in  **Machine or machine group**.
 
       :::image type="content" source="media/desktop-flows-setup/choose-machine.png" alt-text="Screenshot of the Directly to machine option in the Connect field.":::
 
-   - **Domain and Username**: Provide your device account. To use a local account, populate the name of the user (for example, **MACHINENAME\\User** or **local\\User**) or an Active Directory account, such as **DOMAIN\\User**.
+   - **Domain and Username**: Provide your device account. To use a local account, populate the name of the user (for example, **MACHINENAME\\User** or **local\\User**) or an Active Directory account, such as **DOMAIN\\User** or **username@domain.com**
 
    - **Password**: Your account’s password.
 
