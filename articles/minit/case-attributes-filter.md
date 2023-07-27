@@ -1,13 +1,13 @@
 ---
 title: Case attributes filter
-description: Learn how to use the case attributes filter in minit.
+description: Learn how to use the case attributes filter in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -53,7 +53,6 @@ Use the filter to select cases that include an expression. You can include both 
 ## Enter a custom expression
 
 You can switch between a constant value and a custom expression by selecting **Fx** in the **Expression** tab.
-
 
 To learn how to use a custom expression, go to [Custom metrics overview](custom-metrics.md).
 
