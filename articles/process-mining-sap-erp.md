@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 06/27/2023
+ms.date: 07/27/2023
 ms.custom: bap-template
 ms.author: heortaol
 ms.reviewer: angieandrews
@@ -91,41 +91,6 @@ The function parsing mode for the connector understands contracts of two widely 
 
 The SAP ERP connector only supports basic SAP authentication. Because the connector is designed to be used by multiple users of an app, the connections aren't shared. Each user authenticates with the SAP system.
 
-## SAP template
-
-
-### Connecting to SAP ERP through process mining templates
-
-Use process mining templates for **Procure to Pay** or **Accounts Payable** to visualize the financial processes that sit in your SAP instance.
-
-Once you select a template and select to connect to SAP through the RFC connector, fill out the following information.
-
-#### Application server
-
-- **Process Name:** Name your process so you can easily identify your analysis.
-- **Server Name:** Identify the name of the server you're looking to connect to.
-- **Client ID:** Identify the client ID.  
-- **System Number:** Identify the system number.  
-- **(Optional) Process Description**
-
-#### Message server
-
-- **Process Name:** Name your process so you can easily identify your analysis
-- **Server**
-- **System ID**
-- **Client ID**
-- **logonggroup**
-- **(Optional) Process Description**
-
-You can also scope the data extracted by defining your data range.
-
-- Start and end time of the data extracted
-- Client code
-- Company codes
-
-The **MQuery Logic** template defines and extracts data from SAP. If the data isn't complete, or you're interested in making changes to the logic, go to the process details page, select **SetUp** and reparse RFC.
-
-
 ## Known issues and limitations
 
 The following are some of the known issues and limitations of the SAP ERP connector.
@@ -155,6 +120,4 @@ As part of connection setting you must identify a data gateway to successfully c
 
 Make sure to check that installers described in this article are current. Reinstalling drivers might solve your connection issues.  
 
-
-### See also
 
