@@ -192,7 +192,7 @@ For this scenario, we extend the previous one by adding a desktop flow processin
 
 Well done, you just completed a more advanced scenario that included hybrid work queue processing!
 
-### Work Queues actions in Power Automate desktop
+### Work Queues actions in Power Automate desktop (PAD)
 
 The first step to using work queue actions in Power Automate desktop is to create a work queue in the environment that you are working in and load some queue items with data to be consumed downstream.  Queue items can be loaded into a work queue through a desktop flow, cloud flow or in bulk as outlined here which populates queue times.  In this example, some queue items have been added manually into a work queue to explain how actions in Power Automate desktop can be used.
 
@@ -208,7 +208,7 @@ This example flow will be used for demo purposes.  In short, this mimics a proce
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqirocessing.png" alt-text="Screenshot of work queue item in in **processing** state." lightbox="media/work-queues/work-queue-pad-wqirocessing.png":::
    
-2.	Using the PAD designer, the flow was run in up to action 3 using the **run next action** option in the designer console.  The **WorkQueueItem** variable is opened by double clicking the populated value under **Flow variables** and this shows all the properties associated with the work queue item being processed.
+2.	Using the PAD designer, the flow was run up to action 3 using the **run next action** option in the designer console.  The **WorkQueueItem** variable is opened by double clicking the populated value under **Flow variables** and this shows all the properties associated with the work queue item being processed.
 
    :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction.png":::
 
