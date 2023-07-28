@@ -24,7 +24,7 @@ For machines with an installation of Outlook, you can manage your mailboxes with
 After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder.
 
 > [!NOTE]
-> When filtering the retrieved results by modifying the **From contains** or **To contains** argument in the **Retrieve email messages from Outlook** action, use email addresses in plain display format (SMTP) as x.500 formatted ones are not recognized.
+> When filtering the retrieved results by modifying the **From contains** or **To contains** argument in the **Retrieve email messages from Outlook** action, it's important to note that using email addresses in plain display format (SMTP) will not yield any data if the email addresses are stored in x.500 format.
 
 
 The following example retrieves all the email messages from the folder **Tickets**, a subfolder of the Inbox. The specified filters limit the results to messages from a specific sender that contain particular words in their subject and body.
