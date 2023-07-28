@@ -2,10 +2,9 @@
 title: Outlook actions reference
 description: See all the available Outlook actions.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
+ms.date: 07/28/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -23,9 +22,8 @@ For machines with an installation of Outlook, you can manage your mailboxes with
 
 After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder.
 
-> [!NOTE]
-> When filtering the retrieved results by modifying the **From contains** or **To contains** argument in the **Retrieve email messages from Outlook** action, it's important to note that using email addresses in plain display format (SMTP) will not yield any data if the email addresses are stored in x.500 format.
-
+> [!IMPORTANT]
+> When you filter the retrieved results by modifying the **From contains** or **To contains** argument in the **Retrieve email messages from Outlook** action,  using email addresses in plain display format (SMTP) won't yield any data if the email addresses are stored in x.500 format.
 
 The following example retrieves all the email messages from the folder **Tickets**, a subfolder of the Inbox. The specified filters limit the results to messages from a specific sender that contain particular words in their subject and body.
 
@@ -74,7 +72,7 @@ Retrieve email messages from an Outlook account.
 |To contains|Yes|[Text value](../variable-data-types.md#text-value)||The full email address(es) of the recipient(s) (separated by space or semicolon if more than one) for the messages to retrieve. Leave this attribute blank to retrieve all messages regardless of the recipient(s)|
 |Subject contains|Yes|[Text value](../variable-data-types.md#text-value)||The key phrase to find within the email subject. Leave this attribute blank to retrieve all email messages regardless of their subject|
 |Body contains|Yes|[Text value](../variable-data-types.md#text-value)||The key phrase to find within the email body. Leave this attribute blank to retrieve all email messages regardless of their content|
-|Attachments|N/A|Save attachments, Do not save attachments|Do not save attachments|Specifies whether to save the attachments of the email messages retrieved or not|
+|Attachments|N/A|Save attachments, Don't save attachments|Don't save attachments|Specifies whether to save the attachments of the email messages retrieved or not|
 |Save attachments into|No|[Folder](../variable-data-types.md#files-and-folders)||The path to save the attachments of the retrieved emails into|
 
 ### Variables produced
