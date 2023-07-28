@@ -192,19 +192,19 @@ For this scenario, we extend the previous one by adding a desktop flow processin
 
 Well done, you just completed a more advanced scenario that included hybrid work queue processing!
 
-### Work Queues actions in Power Automate desktop (PAD)
+### Desktop flow-based work queue processing in Power Automate desktop (PAD)
 
-The first step to using work queue actions in Power Automate desktop is to create a work queue in the environment that you are working in and load some queue items with data to be consumed downstream.  Queue items can be loaded into a work queue through a desktop flow, cloud flow or in bulk as outlined here which populates queue times.  In this example, some queue items have been added manually into a work queue to explain how actions in Power Automate desktop can be used.
+The first step to using work queue actions in Power Automate desktop is to create a work queue in the environment that you are working in and load some queue items with data to be consumed downstream.  Queue items can be loaded into a work queue through a desktop flow, cloud flow or in bulk as outlined [here](https://learn.microsoft.com/power-automate/desktop-flows/work-queues-bulk-import) which populates queue times.  In this example, some queue items have been added manually into a work queue to explain how actions in Power Automate desktop can be used.
 
 The work queue items have been created and the value field includes text in JSON format that will be used downstream in the desktop flow.
 
    :::image type="content" source="media/work-queues/work-queue-padwqitems.png" alt-text="Screenshot of work queue items available to be processed in Power Automate desktop." lightbox="media/work-queues/work-queue-padwqitems.png":::
 
-This example flow will be used for demo purposes.  In short, this mimics a process that would consume a work queue item from the cloud, process the data included in the value field and convert it to a custom object to be processed downstream.  Note that you do not need to use JSON, or custom objects, but it is a convenient way to pack and sort data stored in the value field.
+The example flow we will be using to demonstrate work queue action usage mimics a process that would consume a work queue item from the cloud, process the data included in the value field and convert it to a custom object to be processed downstream. Note that  it is not mandatory to use JSON  or custom objects as values for your work queue items, but it can be a useful method for organizing values that have multiple properties and follow a specific schema.
 
    :::image type="content" source="media/work-queues/work-queue-pad-df.png" alt-text="Screenshot of desktop flow process used for this tutorial." lightbox="media/work-queues/work-queue-pad-df.png":::
    
-1. **The Process work queue items (Preview)** action is used to designate which work queue to consume items from and process in your desktop flow.  The action can be configured to select a work queue from a list using the dropdown arrow, pass a variable, or type in the name.  When run, this action works by bringing in the first (oldest) item from the work queue into your flow which contains a status of **queued**. Once the queue item begins processing in your flow, the status of the queue item automatically changes to **processing**.
+1. The **Process work queue items (Preview)** action is used to designate which work queue to consume items from and process in your desktop flow.  The action can be configured to select a work queue from a list using the dropdown arrow, pass a variable including the queue name. When run, this action works by bringing in the first (oldest) item from the work queue into your flow which contains a status of **queued**. Once the queue item begins processing in your flow, its status automatically changes to **processing**. 
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqirocessing.png" alt-text="Screenshot of work queue item in in **processing** state." lightbox="media/work-queues/work-queue-pad-wqirocessing.png":::
    
@@ -214,7 +214,7 @@ This example flow will be used for demo purposes.  In short, this mimics a proce
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqvarvalue.png" alt-text="Screenshot of the WorkQueueItem variable in the variable viewer." lightbox="media/work-queues/work-queue-pad-wqvarvalue.png":::
    
-3. In action 2 of the flow, the JSON imported into the desktop flow when retrieving the work queue item, which in this case is **%WorkQueueItem.Value%**, has been converted into a custom object.  The reason for this is because it helps parse the JSON and use the values downstream in your flow.  In this hypothetical case, the info would be used to make entries into Farbrikams finance portal.
+3. In action 2 of the flow, I converted the returned JSON value, which in this case is accessed via %WorkQueueItem.Value% into a custom object.  The reason for this is because it helps parse the JSON and use the JSON properties downstream in your flow.  In this hypothetical case, the info would be used to make entries into Farbrikam’s finance portal.
 
    ```json
    {
@@ -233,9 +233,13 @@ This example flow will be used for demo purposes.  In short, this mimics a proce
 
 For instance, let's say there was a requirement to enter the invoice ID into a field of a finance system as part of a process where you are automating the UI of a web or desktop app – you can call that value using **%JsonAsCustomObject.InvoiceId%** to populate a text field and push a button.
    
-4.	Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the Update work queue item (Preview) is used to change the status of the work queue item to Processed and the processing result can be used to input some optional notes.
+4.	Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the Update work queue item (Preview) is used to change the status of the work queue item to Processed and the processing result can be used to input some optional notes. If the **expires** field is left blank, the new queue item will retain the default time to live defined in the work queue properties. 
 
-   :::image type="content" source="media/work-queues/work-queue-pad-updatewqi.png" alt-text="Screenshot example of **update work queue item** action inputs." lightbox="media/work-queues/work-queue-pad-updatewqi.png":::
+   :::image type="content" source="media/work-queues/work-queue-pad-updatewqi.png" alt-text="Screenshot example of update work queue item action inputs." lightbox="media/work-queues/work-queue-pad-updatewqi.png":::
+
+Exception handling options can be configured by clicking **on error** in the **update work queue item** action configuration window.  Three options are available for customization under the advanced tab.  **Work queue item not found** may occurr if the work queue item is removed from the queue, either manually or through another systematic process, before it finishes processing in PAD.  **Work queue item on hold** may occur if an automated process, or somebody changes the status of the work queue item being processed to **on hold** in the flow portal while the queue item is being processed.  **Failed to update work queue item** may occur if the queue item no longer exists in the queue, or has been placed into the status **on hold**.  All the above are edge cases which may occur - [learn more about handling errors in desktop flows here](https://learn.microsoft.com/en-us/power-automate/desktop-flows/errors).
+
+   :::image type="content" source="media/work-queues/work-queue-pad-updatewqiexc.png" alt-text="Screenshot example of update work queue item action exception handling." lightbox="media/work-queues/work-queue-pad-updatewqiexc.png":::
  
 5.	If some issue was determined during the course of processing the data of the work queue item into the data entry system, the item could alternatively be assigned a status of **generic exception, IT exception, or busineses exception**.  It’s up to you to decide what events are required to be met to warrant such alternatives, but here is a way that you can use PAD actions to separate such items that may have been impacted. 
 
