@@ -157,7 +157,7 @@ Follow these steps to apply unattended RPA licenses to your flows.
 
    ![manage unattended license.](./media/RPA-license/assign-process-license-environment.png)
 
-1. Makers can now run unattended desktop flows within the environment that has the unattended capacity. 
+1. Makers can now run unattended desktop flows within the environment that has the Process license assigned. 
 
 > [!NOTE]
 > The Process license is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign licenes to each of them.
@@ -169,7 +169,7 @@ Follow these steps to apply unattended RPA licenses to your flows.
 
 - An environment that has Dataverse enabled.
 - You must have a work or school account. You can't start a trial with a personal account.
-- The admin needs a paid or trial Power Automate Premium attended plan (previously Power Automate per user with attended RPA) or a Power Automate Process plan (previously Power Automate per flow) before they can turn on to start an unattended trial.
+- The admin needs a paid or trial Power Automate Premium (previously Power Automate per user with attended RPA) or a Power Automate Process plan (previously Power Automate per flow) before they can turn on to start an unattended trial.
 
 ### How can I check which license I'm currently using?
 
