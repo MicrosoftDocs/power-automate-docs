@@ -83,25 +83,39 @@ Explore topics in [process mining](process-mining-overview.md) and [task minin
 
 ## Licensing
 
-Process mining is licensed as part of Power Automate per-user licenses. If you don’t have a license, you can start a Power Automate trial to try the process mining capability. The per-user licenses enable users to analyze processes and view the analytics report.
+Process mining is licensed as part of Microsoft Power Automate. There are three Power Automate licenses that are related to process mining and a Power BI license required for Power BI report customization. 
 
-**Task mining capability:** A *Power Automate per-user license* enables a user to analyze a recorded process and view the analytics report. Contributing recordings to a process doesn't need the per-user license.
+### Power Automate trial license  
 
-**Process mining capability:** A *Power Automate per-user license with attended RPA* enables a user to create a process, connect to an event log using data flows, analyze a process from data, and view the analytics report in the web.
+For a limited time of *90 days*, the Power Automate trial license offers: 
 
-**Power Automate Process Mining add-on license:** A separately purchasable add-on is required to do the following:
-- Use [Power Automate Process Mining](minit/minit-desktop-application-overview.md), which provides many features to get deep insights into your process.
-- Customize the analytics report by publishing it into your own Power BI workspace.
+- **Task mining capabilities** Enable you to analyze a recorded process and view the analytics report. You can invite others to contribute recordings to the process for richer insights. 
 
-For inquiries about add-on capability licensing, contact [Microsoft Process and Task Mining Questions](mailto:minitq@microsoft.com).
+- **Process mining capabilities** Enable you to create a process, connect to an event log using data flows, analyze a process from data, view the analytics report in the web, and perform advanced analytics in the desktop application. The trial offers limited process mining capacity of *100 MB* per process. Therefore, to process more data. we highly recommend that you purchase the **Power Automate Premium** license and the **Power Automate Process Mining** add-on. To learn more, go [here](https://github.com/MicrosoftDocs/power-automate-docs-pr/edit/main/articles/process-advisor-overview.md#power-automate-process-mining-add-on). 
 
-**Trial license:** You can start a free 90 day Power Automate premium trial, which provides access to all available capabilities listed previously, including the add-on capability. There's a process size limit of 200 cases for processes created while on the trial.
+### Power Automate Premium license  
 
-**Power BI license:** To customize your report, you need to link the process to your own Power BI workspace, and a Power BI premium per-user license (or better) is needed. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
+The **Power Automate Premium** license is a per-user license with the following offerings: 
 
-**Preview:** Some features are in preview, denoted by the preview tag. For process templates that are still in preview, license and trial aren't needed.
+- **Task mining capabilities:** Enables you to analyze a recorded process and view the analytics report. You can invite others to contribute recordings to the process for richer insights. 
 
-**Dataverse capacity:** The Power Automate Process Mining add-on provides 2 GB of database capacity, 1 TB of file capacity, and 250,000 Power Platform requests per 24 hours. Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, ask your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store uses mostly file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
+- **Process mining capabilities:** Enables you to create a process, connect to an event log using data flows, analyze a process from data, view the analytics report in the web, and perform advanced analytics in the desktop application. Each *Power Automate Premium* license adds *50 MB* of process mining capacity to a tenant wide capacity pool up to a total of *100 GB*. When you reach 100 GB,  you need to purchase the **Power Automate Process Mining add-on** to process additional data. To learn more, go  [here](https://github.com/MicrosoftDocs/power-automate-docs-pr/edit/main/articles/process-advisor-overview.md#power-automate-process-mining-add-on). 
+
+- Additional *250 MB* of Dataverse database capacity. 
+
+- Additional *2 GB* of Dataverse file capacity. 
+
+### Power Automate Process Mining add-on 
+- The **Process Mining add-on** is a tenant wide license that adds *100 GB* of process mining capacity to the capacity pool from which users with the Power Automate Premium license can consume.
+
+Get Power Automate pricing details at [Power Automate pricing](https://powerautomate.microsoft.com/en-us/pricing/). For inquiries about add-on capability licensing, contact [Microsoft Process and Task Mining Questions](mailto:minitq@microsoft.com). 
+
+### Power BI license
+- To customize your report, you need to link the process to your own Power BI workspace, and a **Power BI Premium* license. To learn more about Power BI licensing, go to [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/). 
+
+**Preview:** Some features are in preview, denoted by the preview tag. For process templates that are still in preview, licenses and trials aren't needed.
+
+**Dataverse capacity:** Depending on the size of the process data you import, you might run out of Dataverse storage capacity. If this happens, ask your admin about purchasing more storage capacity, or delete existing processes to free up storage. The process data we store uses mostly file capacity. To learn more about Dataverse storage capacity, go to [New Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage).
 
 ## Prerequisites
 
