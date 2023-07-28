@@ -1,13 +1,13 @@
 ---
 title: List of calculation context
-description: Learn how to define the data scope that's used as the source for an aggregation function in minit.
+description: Learn how to define the data scope that's used as the source for an aggregation function in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -18,7 +18,7 @@ search.audienceType:
 
 # List of calculation context
 
-In aggregation functions, the calculation context defines the data scope that's used as the source for the aggregation. Minit provides several data calculation modes, which are described in [Requirements for application](requirements-for-application.md).
+In aggregation functions, the calculation context defines the data scope that's used as the source for the aggregation. The Power Automate Process Mining desktop app provides several data calculation modes, which are described in [Requirements for application](requirements-for-application.md).
 
 Custom metrics can include nested aggregations, or aggregations used in an expression. For example, the expression `AVG(DURATION()/AVG(AllInView, DURATION()))` returns the ratio of the average duration of certain activities or edges to the average duration of all activities or edges.
 
