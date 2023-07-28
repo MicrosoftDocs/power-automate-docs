@@ -208,7 +208,7 @@ The example flow we will be using to demonstrate work queue action usage mimics 
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqirocessing.png" alt-text="Screenshot of work queue item in in **processing** state." lightbox="media/work-queues/work-queue-pad-wqirocessing.png":::
    
-2.	Using the PAD designer, the flow was run up to action 3 using the **run next action** option in the designer console.  The **WorkQueueItem** variable is opened by double clicking the populated value under **Flow variables** and this shows all the properties associated with the work queue item being processed.
+2.	A breakpoint (red dot) was set by clicking next to aciton 3 in the flow and then run through the PAD console.  When the process pauses at the breakpoint, the **WorkQueueItem** variable can be opened by double clicking the populated value under **Flow variables** and this shows all the properties associated with the work queue item being processed.
 
    :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction.png":::
 
