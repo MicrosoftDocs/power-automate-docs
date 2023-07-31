@@ -112,7 +112,7 @@ Machine registration arguments:
 ## Silently join a machine group
 
 >[!NOTE]
->You cannot create a machine group silently. You'll need to create it from the portal before adding machines silently.
+>You cannot create a machine group silently. You'll need to create it from the portal (and share it with your application user if you're using a service principal) before adding machines silently.
 
 To join a group silently with the service principal account, use the join group operation -joinmachinegroup  with the following arguments:
 
@@ -141,7 +141,7 @@ You have two options to provide a secure input:
    - Redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
   
      ```PowerShell
-         echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+         echo clientsecret mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -applicationid appid -clientsecret -groupid groupid -grouppassword -tenantid tenantid
      ```
   
    - Redirect file:
