@@ -29,4 +29,4 @@ When you install the managed Power Platform scheduler solution, make sure you fo
 
     To learn how to import, go to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions).
 
-Once you have installed the solution you can follow the [Control Center Configuration](../control-)
+Once you have installed the solution, you can follow the [Control Center Configuration](../control-)

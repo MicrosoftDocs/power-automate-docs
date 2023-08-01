@@ -32,30 +32,30 @@ The Automation Kit Control Center offers two powerful options for historical dat
 
 When you need to monitor Desktop flows at scale and deal with voluminous historical data, the "Historical Analytics Dashboard" is an excellent choice. This option requires a set of prerequisites to be completed:
 
-1. **Synapse Link Setup**: Configure the Synapse link to connect your Data Warehouse with the Control Center.
+- **Synapse Link Setup**: Configure the Azure Synapse Link to connect your Data Warehouse with the Control Center.
 
-2. **Storage Compression using Delta Lake**: Choose Delta Lake as the storage compression option for efficient data management.
+- **Storage Compression using Delta Lake**: Choose Delta Lake as the storage compression option for efficient data management.
 
-3. **Azure Resource Configuration with ARM Deployment**: Automate the setup and deployment of all Azure resources required for the monitoring.
+- **Azure Resource Configuration with ARM Deployment**: Automate the setup and deployment of all Azure resources required for the monitoring.
 
 ### Historical Analytics Dashboard
 
 >[!div class="mx-imgBorder"]
 > ![Screenshot of Automation Kit - Control Center Publish Power BI](./media/control-center-desktop-flow-publish-power-bi.png)
 
-To further enhance the monitoring capabilities, the Power BI dashboard of the `BYODL_FlowMonitoring_MMYYYY` report should be published with an SQL endpoint and scheduled refresh.
+To further enhance the monitoring capabilities, the Power BI dashboard of the `BYODL_FlowMonitoring_MMYYYY` report should be published with an SQL endpoint and configured with a refresh schedule.
 
 ### Customized SQL View Script
 
 The wizard provides a customized SQL view script, which, when run in the Synapse SQL DB, enhances performance and reduces the burden of query processing and cost. This optimization is crucial when dealing with vast amounts of historical data.
 
-### Synapse SQL Endpoint
+### Azure Synapse SQL Endpoint
 
-With the power of Synapse Link and the efficient BI reporting, the Automation Kit Control Center empowers you to make data-driven decisions and monitor your Desktop flows with ease and accuracy.
+With the power of Azure Synapse Link and the efficient BI reporting, the Automation Kit Control Center empowers you to make data-driven decisions and monitor your Desktop flows with ease and accuracy.
 
 ### Power BI Dashboard
 
-The setup wizard simplifies the installation of Azure resources, configuration of Synapse link, and customizes the SQL view script to optimize performance and reduce query processing costs.
+The setup wizard simplifies the installation of Azure resources, configuration of Azure Synapse Link, and customizes the SQL view script to optimize performance and reduce query processing costs.
 
 ## TDS Desktop Flows Monitoring
 
