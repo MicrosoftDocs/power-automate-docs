@@ -25,6 +25,6 @@ When you install the managed Power Platform scheduler solution, make sure you fo
 
 1. In the **Assets** section in the latest GitHub release of the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) file, download **AutomationKitControlCenter_*_managed.zip** by selecting it.
 
-1. Import the downloaded AutomationKitScheduler_*_managed.zip file.
+1. Import the downloaded AutomationKitControlCenter_*_managed.zip file.
 
     To learn how to import, go to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions).
