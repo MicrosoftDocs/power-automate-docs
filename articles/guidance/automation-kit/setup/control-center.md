@@ -1,6 +1,6 @@
 ---
-title: Set up the automation kit scheduler
-description: Learn how to set up the automation kit scheduler.
+title: Set up the automation kit control center
+description: Learn how to set up the automation kit control center.
 suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
@@ -15,7 +15,7 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Set up the automation kit scheduler
+# Set up the automation kit control center
 
 When you install the managed Power Platform scheduler solution, make sure you follow these required steps.
 
@@ -28,3 +28,5 @@ When you install the managed Power Platform scheduler solution, make sure you fo
 1. Import the downloaded AutomationKitControlCenter_*_managed.zip file.
 
     To learn how to import, go to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions).
+
+Once you have installed the solution you can follow the [Control Center Configuration](../control-)
