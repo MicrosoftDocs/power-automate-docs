@@ -2,12 +2,13 @@
 title: Billing and metering questions | Microsoft Docs
 description: Answers to frequently asked questions regarding billing and metering in Power Automate
 services: ''
+author: kenseongtan
 suite: flow
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 03/30/2022
-ms.author: deonhe
+ms.author: kenseongtan
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
