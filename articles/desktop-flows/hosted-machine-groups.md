@@ -129,7 +129,7 @@ Custom VM images must meet the following requirements:
  - Generation 2 images
  - Generalized VM image
  - 127 GB limit on VM image size
- - Microsft Edge version 80 or higher
+ - Microsoft Edge version 80 or higher
  
 Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
 
@@ -456,7 +456,7 @@ The following features aren't supported in sovereign clouds:
 
 | Feature not supported | Sovereign cloud(s)|
 | ----------| --------------|
-| Work or school acount | GCC, GCC High, DoD |
+| Work or school account | GCC, GCC High, DoD |
 | Custom VM images | GCC, DoD |
 
 ### Network limitations for hosted machine groups

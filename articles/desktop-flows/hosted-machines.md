@@ -312,7 +312,7 @@ You can connect to your own virtual network (vNET) with your hosted machines to 
 
 ### General network requirement
 
-To use your own network and provision Azure Azure AD joined hosted machines, you must meet the following requirements:
+To use your own network and provision Azure AD joined hosted machines, you must meet the following requirements:
 
 - You must have a virtual network (vNET) in your Azure subscription in the same region where you've created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).

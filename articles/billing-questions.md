@@ -3,28 +3,18 @@ title: Billing and metering questions | Microsoft Docs
 description: Answers to frequently asked questions regarding billing and metering in Power Automate
 services: ''
 suite: flow
-documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 03/30/2022
 ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ---
 # Billing and metering questions
 
 This article answers frequently asked questions regarding billing and metering in Power Automate.
-
->[!NOTE]
-> Power Apps and Power Automate started to use a [new licensing model](/power-platform/admin/powerapps-flow-licensing-faq) on October 1, 2019.
 
 ## Where can I find out what pricing plans are available?
 
@@ -36,10 +26,8 @@ See this [subscription page](https://portal.office.com/account/#subscriptions).
 
 ## How do I switch plans?
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
-1. In the top right of the screen select **?** > **Pricing**, and then select the plan to which you want to switch.
-
-![Help > Pricing.](./media/billing-questions/help-pricing.png)
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. On the top right of the screen, select **?** > **Pricing**, and then select the plan to which you want to switch.
 
 ## What happens if my usage exceeds the limits?
 

@@ -184,8 +184,7 @@ Commercial version | US Government version
 [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors (GCC)](https://gov.flow.microsoft.us/connectors), [https://high.flow.microsoft.us/connectors (GCC High)](https://high.flow.microsoft.us/connectors), [https://flow.appsplatform.us/connectors/](https://flow.appsplatform.us/connectors/) (DoD)
 |[https://make.powerautomate.com](https://make.powerautomate.com)|[https://make.gov.powerautomate.us (GCC)](https://make.gov.powerautomate.us), [https://make.high.powerautomate.us (GCC High)](https://make.high.powerautomate.us), and [https://make.powerautomate.appsplatform.us (DoD)](https://make.powerautomate.appsplatform.us)
 
-
-For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users’ access points:
+For those customers who implement network restrictions, ensure access to the following domains is made available to your end-users’ access points:
 
 ### GCC Customers:
 * .microsoft.us
