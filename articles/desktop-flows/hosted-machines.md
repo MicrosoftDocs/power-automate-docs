@@ -6,7 +6,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 05/22/2023
 ms.author: kenseongtan
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
 contributors:
 ---
 
@@ -34,7 +34,7 @@ Key capabilities:
 
 To use hosted machines, you need the following licensing option:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate hosted RPA add-on**.
+- Use your existing **Power Automate Premium plan** (previously Power Automate per user plan with attended RPA) or **Power Automate Process plan** (previously Power Automate per flow) and the **Power Automate hosted RPA add-on**.
 
    Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
@@ -48,19 +48,17 @@ You'll also need the following prerequisite licenses: Windows, Intune, Azure Act
 
 To use hosted machines during the grace period, you need one of the following licensing options:
 
-- Use your existing **Power Automate per user plan with attended RPA** or **per flow plan** and the **Power Automate unattended RPA add-on**.
+- Use your existing **Power Automate Premium** (previously Power Automate per user plan with attended RPA) and the **Power Automate Process** plan (previously Power Automate unattended RPA add-on).
 
     During the grace period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
 
-- Use the **Power Automate per user plan with attended RPA trial** and the **Power Automate unattended RPA add-on trial**.
+- Use the **Power Automate Premium trial** (previously Power Automate per user plan with attended RPA trial) and the **Power Automate Process** plan (previously Power Automate unattended RPA add-on).
 
-    The plans and add-ons mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those attended RPA trials to 25 individual makers, and assign the unattended RPA add-on to the targeted environments.
+    The plans mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the **Power Automate Process** plan (previously Power Automate unattended RPA add-on) to the targeted environments.
 
 - Use the **90-days self-assisted premium trial.**
 
-    Trial users are granted the capacity of one hosted machine per environment. To start a trial, select **Try free** under **Per-user plan with attended RPA** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
-
-
+    Trial users are granted the capacity of one hosted machine per environment. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
 ## Prerequisites
 
@@ -314,7 +312,7 @@ You can connect to your own virtual network (vNET) with your hosted machines to 
 
 ### General network requirement
 
-To use your own network and provision Azure Azure AD joined hosted machines, you must meet the following requirements:
+To use your own network and provision Azure AD joined hosted machines, you must meet the following requirements:
 
 - You must have a virtual network (vNET) in your Azure subscription in the same region where you've created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
