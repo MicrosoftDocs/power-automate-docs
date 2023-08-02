@@ -99,7 +99,7 @@ The **Power Automate Premium** license is a per-user license with the following 
 
 The **Process Mining add-on** is a tenant wide license that is available for the Power Automate Premium license. It offers:
 
-- And addition *100 GB* of process mining capacity to the capacity pool from which users with the Power Automate Premium license can consume.
+- Additional *100 GB* of process mining capacity to the capacity pool, from which users with the Power Automate Premium license can consume.
   
 - Additional *2 GB* of Dataverse database capacity.
 
