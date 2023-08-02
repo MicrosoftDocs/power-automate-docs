@@ -203,25 +203,25 @@ Modify a numeric value:
 
 Open the variable that requires editing, place the cursor on the input field and manually edit the numeric value.  Alternatively, there are buttons to count up, or down from the current value on the right hand side of the input in the variable viewer.  Note, you cannot change the value to something other than numeric.
 
-![Screenshot of numeric variable being modified in the variable viewer.](media\sensitive-variables\pad-edit-numeric-value.png)
+![Screenshot of numeric variable being modified in the variable viewer.](media\variables-pane\pad-edit-numeric-value.png)
 
 Modify a text value:
 
 Open the variable that requires editing, place the cursor on the input field and manually edit the text value.  There is a checkbox to wrap text within the input field, which makes it easier for you to view in the editor.  Text value variables accept numbers as inputs, but keep in mind that if you modify this value and try to pass it to an action with an input parameter that only accepts numeric value – the flow will throw an exception error when it reaches that point.
 
-![Screenshot of text variable being modified in the variable viewer.](media\sensitive-variables\pad-edit-text-value.png)
+![Screenshot of text variable being modified in the variable viewer.](media\variables-pane\pad-edit-text-value.png)
 
 Modify boolean value:
 
 Open the variable that requires editing, place the cursor on the input field and manually edit the boolean value.  Use the drop-down menu to select true or false.
 
-![Screenshot of boolean variable being modified in the variable viewer.](media\sensitive-variables\pad-edit-bool-value.png)
+![Screenshot of boolean variable being modified in the variable viewer.](media\variables-pane\pad-edit-bool-value.png)
 
 Modify datetime value:
 
 Open the variable that requires editing, place the cursor on the input field and manually edit the datetime value.  There is a warning message that will appear in the variable viewer if you enter something that is not acceptable.
 
-![Screenshot of datetime variable being modified in the variable viewer.](media\sensitive-variables\pad-edit-datetime-value.png)
+![Screenshot of datetime variable being modified in the variable viewer.](media\variables-pane\pad-edit-datetime-value.png)
 
 ### Known issues and limitations
 
