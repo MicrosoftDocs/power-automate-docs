@@ -40,7 +40,7 @@ As noted only cloud flows that are included as part of a solution. The recent [h
 ## Day, Week, Month Views
 
 >[!div class="mx-imgBorder"]
-> ![Screen shot of new Button "Open Grid View" on home page to navigate to desktop flows runs page in Power Automate portal](./media/control-center-desktop-flow-scheduler-calendar.png)
+> ![Screen shot of Scheduler Calendar view with Month selected](./media/control-center-desktop-flow-scheduler-calendar.png)
 
 The day, week, month views display information on Desktop Cloud flow runs that are color coded as follows:
 
@@ -62,7 +62,7 @@ The schedule view includes a set of cloud flows based on time from the current t
 ## Run Now
 
 >[!div class="mx-imgBorder"]
-> ![Screenshot of Automation Kit - Control Center Desktop Flow Scheduler](./media/control-center-desktop-flow-scheduler-run-now.png)
+> ![Screenshot of Automation Kit - Control Center Desktop Flow Scheduler run now dialog](./media/control-center-desktop-flow-scheduler-run-now.png)
 
 The current version of Run Now executes the selected Power Automate desktop flow. It's assumed that there's no parameters required to execute the desktop flow.
 

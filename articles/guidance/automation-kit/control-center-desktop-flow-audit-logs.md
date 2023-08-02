@@ -42,7 +42,7 @@ By default, the Audit Logs load data for the last one week. However, you have th
 
 To learn more about configuring auditing and utilizing Control Center Desktop Flow Audit Logs, check out the following Microsoft documentation:
 
-- [Configure Auditing for an Environment](https://learn.microsoft.com/en-us/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-an-environment)
+- [Configure Auditing for an Environment](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-an-environment)
 
 - [Configure Auditing for Tables and Columns in Power Apps](/power-platform/admin/manage-dataverse-auditing#configure-auditing-for-one-or-more-tables-and-columns-in-power-apps)
 
