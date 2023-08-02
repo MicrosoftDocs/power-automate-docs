@@ -146,6 +146,8 @@
               href: ./automation-kit/control-center-desktop-flow-audit-logs.md
             - name: Desktop flow monitoring
               href: ./automation-kit/control-center-desktop-flow-monitoring.md
+            - name: Desktop flow scheduler
+              href: ./automation-kit/control-center-desktop-flow-scheduler.md
             - name: Historical voluminous data monitoring
               href: ./automation-kit/control-center-historical-voluminous-data-monitoring.md
         - name: Test an end-to-end scenario
