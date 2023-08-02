@@ -1,6 +1,6 @@
 ﻿---
 title: Use your own Azure Data Lake Storage Gen2 (preview)
-description: Learn how to extract data from your SAP system and invoke RFC and BAPI functions using an on-premises data gateway.
+description: Learn how to store and read event log data directly from Azure Data Lake Storage Gen2.
 author: HeatherOrt
 contributors:
   - HeatherOrt
@@ -12,6 +12,7 @@ ms.custom: bap-template
 ms.author: heortaol
 ms.reviewer: angieandrews
 ---
+
 # Use your own Azure Data Lake Storage Gen2 (preview)
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
