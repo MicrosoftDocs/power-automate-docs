@@ -29,7 +29,8 @@ At runtime, all action logs are uploaded to the Power Automate service, and are 
 
 >[!NOTE]
 >
-> Action logs are not uploaded to the Power Automate service when they are executed through the Power Automate for desktop designer. 
+> - The text message should contain a maximum of 128 characters.
+> - Action logs are not uploaded to the Power Automate service when they are executed through the Power Automate for desktop designer. 
 
 ## <a name="logmessage"></a> Log message
 
