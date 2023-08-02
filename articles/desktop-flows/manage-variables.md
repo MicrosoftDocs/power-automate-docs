@@ -190,6 +190,39 @@ The eye icon to reveal the value isn't available unless you delete the default t
 
 ![Screenshot of the flow inputs dialog with a sensitive variable.](media\sensitive-variables\flow-inputs-dialog-sensitive-variable.png)
 
+## Edit variables while debugging a desktop flow in the design console
+
+Power Automate desktop supports editing common variable types while running the flow in the debugger.  Currently supported data types include, text, numeric, datetime and boolean values.  Lists, data tables, and data rows will be included in one of the upcoming releases.
+
+### How to edit variables while running a flow in the debugger
+
+There are two methods you can employ to begin manually modifying flow variable values in the design console.  
+Place a breakpoint at some point before you want to change the value of flow variable.  Run the flow and wait until the flow pauses at the selected breakpoint.  The flow variables pane is in the bottom right corner of the console – find the variable name in the list and double click next to it to open the variable viewer. 
+
+Modify a numeric value:
+
+Open the variable that requires editing, place the cursor on the input field and manually edit the numeric value.  Alternatively, there are buttons to count up, or down from the current value on the right hand side of the input in the variable viewer.  Note, you cannot change the value to something other than numeric.
+
+![Screenshot of numeric variable being modified in the variable viewer.](media\sensitive-variables\pad-edit-numeric-value.png)
+
+Modify a text value:
+
+Open the variable that requires editing, place the cursor on the input field and manually edit the text value.  There is a checkbox to wrap text within the input field, which makes it easier for you to view in the editor.  Text value variables accept numbers as inputs, but keep in mind that if you modify this value and try to pass it to an action with an input parameter that only accepts numeric value – the flow will throw an exception error when it reaches that point.
+
+![Screenshot of text variable being modified in the variable viewer.](media\sensitive-variables\pad-edit-text-value.png)
+
+Modify boolean value:
+
+Open the variable that requires editing, place the cursor on the input field and manually edit the boolean value.  Use the drop-down menu to select true or false.
+
+![Screenshot of boolean variable being modified in the variable viewer.](media\sensitive-variables\pad-edit-bool-value.png)
+
+Modify datetime value:
+
+Open the variable that requires editing, place the cursor on the input field and manually edit the datetime value.  There is a warning message that will appear in the variable viewer if you enter something that is not acceptable.
+
+![Screenshot of datetime variable being modified in the variable viewer.](media\sensitive-variables\pad-edit-datetime-value.png)
+
 ### Known issues and limitations
 
 - **Issue:** Flows built or edited with Power Automate for desktop version 2.14 or above are incompatible with older versions of Power Automate for desktop. You can't use older versions of Power Automate for desktop to open or run these flows.
