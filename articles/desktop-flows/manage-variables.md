@@ -2,11 +2,10 @@
 title: Manage variables and the variables pane
 description: See how to manage variables and the variables pane
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/18/2022
-ms.author: marleon
+ms.date: 08/02/2023
+ms.author: dbekirop
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -151,7 +150,7 @@ Additionally, if you've logged in with an organization premium account, the valu
 
 Any variable can become sensitive, independently of its type. Sensitivity applies at the variable level, so lists, datarows, datatables, and custom objects, get sensitive as a whole. There's no way to mark a list item, a datatable column, or a variable property as sensitive in an otherwise non-sensitive variable.
 
-You can use, manipulate and process sensitive variables in every action without any limitation, like every other variable. Additionally, you can combine them with other variables and include them in expressions. In this case, logs will handle the whole expression as sensitive.
+You can use, manipulate and process sensitive variables in every action without any limitation, like every other variable. Additionally, you can combine them with other variables and include them in expressions. In this case, logs handle the whole expression as sensitive.
 
 The flow designer handles sensitivity as a mask that you can set on and off. Thus, you can unmask sensitive variables to see their values and mask them again to hide their values.
 
@@ -190,36 +189,36 @@ The eye icon to reveal the value isn't available unless you delete the default t
 
 ![Screenshot of the flow inputs dialog with a sensitive variable.](media\sensitive-variables\flow-inputs-dialog-sensitive-variable.png)
 
-## Edit variables while debugging a desktop flow in the design console
+## Edit variables while debugging a desktop flow
 
-Power Automate desktop supports editing common variable types while running the flow in the debugger.  Currently supported data types include, text, numeric, datetime and boolean values.  Lists, data tables, and data rows will be included in one of the upcoming releases.
+In the design console, Power Automate desktop supports editing common variable types while running the flow in the debugger. Currently, supported data types include, text, numeric, datetime, and boolean values.
 
 ### How to edit variables while running a flow in the debugger
 
 There are two methods you can employ to begin manually modifying flow variable values in the design console.  
-Place a breakpoint at some point before you want to change the value of flow variable.  Run the flow and wait until the flow pauses at the selected breakpoint.  The flow variables pane is in the bottom right corner of the console – find the variable name in the list and double click next to it to open the variable viewer. 
+Place a breakpoint at some point before you want to change the value of flow variable. Run the flow and then wait until the flow pauses at the selected breakpoint.  The flow variables pane is in the bottom right corner of the console – find the variable name in the list and double-click next to it to open the variable viewer.
 
 Modify a numeric value:
 
-Open the variable that requires editing, place the cursor on the input field and manually edit the numeric value.  Alternatively, there are buttons to count up, or down from the current value on the right hand side of the input in the variable viewer.  Note, you cannot change the value to something other than numeric.
+Open the variable that requires editing, place the cursor on the input field and manually edit the numeric value.  Alternatively, there are buttons to count up, or down from the current value on the right side of the input in the variable viewer.  Note, you can't change the value to something other than numeric.
 
 ![Screenshot of numeric variable being modified in the variable viewer.](media\variables-pane\pad-edit-numeric-value.png)
 
 Modify a text value:
 
-Open the variable that requires editing, place the cursor on the input field and manually edit the text value.  There is a checkbox to wrap text within the input field, which makes it easier for you to view in the editor.  Text value variables accept numbers as inputs, but keep in mind that if you modify this value and try to pass it to an action with an input parameter that only accepts numeric value – the flow will throw an exception error when it reaches that point.
+Open the variable that requires editing, place the cursor on the input field and manually edit the text value.  There's a checkbox to wrap text within the input field, which makes it easier for you to view in the editor.  Text value variables accept numbers as inputs, but keep in mind that if you modify this value and try to pass it to an action with an input parameter that only accepts numeric value, the flow throws an exception error when it reaches that point.
 
 ![Screenshot of text variable being modified in the variable viewer.](media\variables-pane\pad-edit-text-value.png)
 
-Modify boolean value:
+Modify a boolean value:
 
-Open the variable that requires editing, place the cursor on the input field and manually edit the boolean value.  Use the drop-down menu to select true or false.
+Open the variable that requires editing, place the cursor on the input field, and then manually edit the boolean value.  Use the drop-down list to select true or false.
 
 ![Screenshot of boolean variable being modified in the variable viewer.](media\variables-pane\pad-edit-bool-value.png)
 
-Modify datetime value:
+Modify a datetime value:
 
-Open the variable that requires editing, place the cursor on the input field and manually edit the datetime value.  There is a warning message that will appear in the variable viewer if you enter something that is not acceptable.
+Open the variable that requires editing, place the cursor on the input field and manually edit the datetime value.  There's a warning message that appears in the variable viewer if you enter a value that isn't acceptable.
 
 ![Screenshot of datetime variable being modified in the variable viewer.](media\variables-pane\pad-edit-datetime-value.png)
 
