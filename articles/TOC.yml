@@ -604,9 +604,7 @@
     - name: Conditionals
       href: ./desktop-flows/actions-reference/conditionals.md
     - name: Loops
-      href: ./desktop-flows/actions-reference/loops.md
-    - name: Log message action
-      href: ./desktop-flows/actions-reference/logging.md      
+      href: ./desktop-flows/actions-reference/loops.md  
     - name: Flow control
       href: ./desktop-flows/actions-reference/flowcontrol.md
     - name: Run flow
@@ -683,6 +681,8 @@
       href: ./desktop-flows/actions-reference/ibmcognitive.md
     - name: Microsoft cognitive
       href: ./desktop-flows/actions-reference/microsoftcognitive.md
+    - name: Logging
+      href: ./desktop-flows/actions-reference/logging.md 
     - name: SharePoint
       href: ./desktop-flows/actions-reference/sharepoint.md
     - name: Office 365 Outlook (preview)
