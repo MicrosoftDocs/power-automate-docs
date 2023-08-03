@@ -56,6 +56,8 @@ When you go through setup, the process mining capability creates a dataflow that
 
 To troubleshoot, system administrators can review the privileges on the dataflow tables for the environment Maker role, and ensure they have the default privileges at the **Organization** level set.
 
+<img width="1856" alt="MicrosoftTeams-image (2)" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/27f62b40-5c67-4c18-aa36-5781a10ef4db">
+
 ## Issues with analyze
 
 ### Failure when analyzing
