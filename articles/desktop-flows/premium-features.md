@@ -19,7 +19,7 @@ search.audienceType:
 
 # Premium RPA features
 
-This article lists the premium robotic process automation (RPA) features and benefits that are included in the Power Automate per user with attended RPA plan and are available to [organization premium accounts](getting-started-org.md).
+This article lists the premium robotic process automation (RPA) features and benefits that are included in the Power Automate Premium plan (previously Power Automate per user with attended RPA) and are available to [organization premium accounts](getting-started-org.md).
 
 ## Premium feature list
 
@@ -45,8 +45,8 @@ This article lists the premium robotic process automation (RPA) features and ben
 
 > [!IMPORTANT]
 >
-> - Unattended desktop flow executions require the unattended RPA add-on, which can be applied against a qualifying base license.
-> - AI Builder is licensed as an add-on for existing subscription plans. A certain number of AI Builder credits are included in the Power Automate per user with attended RPA plan.
+> - Unattended desktop flow executions require the **Power Automate Process** plan (previously Power Automate per flow), which can be applied against a qualifying base license.
+> - AI Builder is licensed as an add-on for existing subscription plans. A certain number of AI Builder credits are included in the Power Automate Premium plan (previously Power Automate per user with attended RPA).
 
 ## Plans that provide entitlements for the premium RPA features
 
@@ -56,7 +56,7 @@ The Power Automate for desktop free trial plan is available for 90 days. Free us
 
 ### Standalone plan
 
-The Power Automate per user with attended RPA plan (paid or trial) gives full access to all RPA premium features and benefits. Both Power Platform admins and individual users and makers can purchase licenses for Power Automate. You can find more information about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
+The Power Automate Premium plan (paid or trial, previously Power Automate per user with attended RPA) gives full access to all RPA premium features and benefits. Both Power Platform admins and individual users and makers can purchase licenses for Power Automate. You can find more information about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
 
 ### Pay-as-you-go plan
 
