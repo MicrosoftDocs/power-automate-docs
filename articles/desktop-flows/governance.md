@@ -92,17 +92,22 @@ WAM enables certain features that aren't available through the default sign in p
 
 - **1**: Power Automate for desktop authenticates users using the WAM functionality.
 
-## Allow users with invalid certificates to sign in to Power Automate for desktop
+## Configure Power Automate for desktop to check for revoked certificates
 
-You can use the following registry entry to allow users with invalid certificates to sign in to Power Automate for desktop.
+Certificates ensure the security of your connections to online data sources. You can use the following registry entry to configure the level of certificate check, based on the certificates’ revocation information status.
+
+> [!NOTE]
+> The default configuration when no registry entry is set is **Basic check**.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | DisableCheckCertificateRevocationList | DWORD |
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global | CertificateRevocationCheck | DWORD |
 
 ***Values***
 
-- **1**: Users with invalid certificates can sign in to Power Automate for desktop.
+- **0**: No check - Power Automate for desktop doesn't check the revocation information. All valid certificates are allowed through.
+- **1**: Basic check (default) - Power Automate for desktop rejects only certificates that are revoked. Certificates without revocation information are allowed through. This is important for some organizations with corporate proxy services.
+- **2**: Comprehensive check – Power Automate for desktop rejects both certificates that are revoked and certificates without revocation information.
 
 ## Allow users to select an organization in Power Automate for desktop
 
