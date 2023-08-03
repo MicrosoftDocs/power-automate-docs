@@ -767,7 +767,7 @@ Example:
 Sign the .cab file using a trusted certificate by running the following command in a Developer Command Prompt for Visual Studio:
 
 ```
-Signtool sign /fds /f {your certificate name}.pfx /p {your password for exporting the certificate} {path to the .cab you want to sign}.dll
+Signtool sign /fds /f {your certificate name}.pfx /p {your password for exporting the certificate} {path to the .cab you want to sign}.ca
 ```
 
 
