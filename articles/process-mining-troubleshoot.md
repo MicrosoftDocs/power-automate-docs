@@ -50,6 +50,12 @@ To troubleshoot:
 
 1. Open the report to see details of the issue.
 
+### "There was an issue with your Dataverse access privileges for dataflows"
+
+When you go through setup, the process mining capability creates a dataflow that's tied to the process. A dataflow requires certain sets of Dataverse privileges. If these privileges are revoked or altered, it may result in this issue.
+
+To troubleshoot, system administrators can review the privileges on the dataflow tables for the environment Maker role, and ensure they have the default privileges at the **Organization** level set.
+
 ## Issues with analyze
 
 ### Failure when analyzing
