@@ -18,8 +18,23 @@ search.audienceType:
 ---
 
 # Set screen resolution on unattended mode
-
 In some scenarios, Power Automate may run unattended flows in a lower resolution than the one used to develop the flows. As a result, some UI elements could be hidden from the screen and cause flows to fail.
+
+## With Registry (starting with version 2.35)
+
+> [!NOTE]
+> Setting the **ScreenResolutionEnabled** registry key to 1 will override the settings in the UIFlowService.exe.config file. The registry settings for screen resolution will persist after an upgrade of Power Automate Desktop, the **UIFlowService.exe.config** file is overwritten with default values during upgrades.
+
+Open the registry editor (windows key + R, and type 'regedit') and set the following values.
+
+| Hive | Key | Name | Type | Description |
+|---|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Screen | ScreenResolutionEnabled | DWORD | If set to '1', will enable the custom resolution settings. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Screen | Width | DWORD | Set the screen resolution width. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Screen | Height | DWORD | Set the screen resolution height. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Screen | Scale | DWORD | Set the screen resolution scale. |
+
+## With UIFlowService.exe.config file
 
 To change the resolution in which unattended flows are run:
 
