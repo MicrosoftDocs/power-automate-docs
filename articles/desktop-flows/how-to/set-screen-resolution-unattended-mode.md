@@ -5,7 +5,7 @@ author: fredgGitHub
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 08/04/2023
-ms.author: Yiannismavridis
+ms.author: iomavrid
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
