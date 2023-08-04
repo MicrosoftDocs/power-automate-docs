@@ -56,13 +56,13 @@ When you go through setup, the process mining capability creates a dataflow that
 
 To troubleshoot, system administrators can review the privileges on the dataflow tables for the environment Maker role, and ensure they have the default privileges at the **Organization** level set.
 
-<img width="1856" alt="MicrosoftTeams-image (2)" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/27f62b40-5c67-4c18-aa36-5781a10ef4db">
+:::image type="content" source="media/process-mining-troubleshoot/tables.png" alt-text="Screenshot of the privileges on the dataflow tables for the environment Maker role.":::
 
 ## Issues with analyze
 
 ### Failure when analyzing
 
-If you encounter an error message while attempting to create and analyze a process, it may be due to a missing security role. To resolve this, please contact the administrator of your environment and request that they assign you the **Environment Maker** security role.
+If you encounter an error message while attempting to create and analyze a process, it may be due to a missing security role. To resolve this, contact the administrator of your environment and request that they assign you the **Environment Maker** security role.
 
 ### Analyze a process
 
@@ -70,13 +70,13 @@ Once you're done with setup, select **Analyze**. You'll be able to view the Anal
 
 > [!NOTE]
 >
-> If you don't visit the Analytics page for 14 days, you'll need to re-analyze the process to access the Analytics page again.
+> If you don't visit the Analytics page for 14 days, you need to re-analyze the process to access the Analytics page again.
 
 For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
 
 ### "You must have one case with at least two activities to analyze your process. Please change your data."
 
-Process mining will normally not be helpful when there's only one activity name in the data. This is because the process map visualizes the flow of the process from one activity to the next. In this case, you should do the following:
+Process mining isn't normally helpful when there's only one activity name in the data. This is because the process map visualizes the flow of the process from one activity to the next. In this case, you should do the following:
 
 - Check the column that's been mapped to activity name.
 - Confirm that there's only one value for that column.
@@ -88,7 +88,7 @@ The *case ID* and *activity name* columns should be of the **Text** data type. T
 
 :::image type="content" source="media/process-mining-troubleshoot/timestamp.png" alt-text="Screenshot of the Date/Time data type for StartTimestamp.":::
 
-If the format is incorrect, you'll see something like this:
+If the format is incorrect, you see something like this:
 
 :::image type="content" source="media/process-mining-troubleshoot/timestamp-error.png" alt-text="Screenshot of errors in StartTimestamp.":::
 
