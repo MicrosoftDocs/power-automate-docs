@@ -72,6 +72,14 @@ The current version of Run Now executes the selected Power Automate desktop flow
 
 Users can navigate to desktop flows runs page in power automate portal from our Control Center Home page.
 
+## Security
+
+To see scheduled desktop flows the following me be setup:
+
+1. The Cloud flow and desktop flow must be part of a solution
+1. The the user be an owner or have the had the flow shared with them
+1. Belong to a Security role like the **System Customizer** to see all flows in the environment
+
 ## Error messages
 
 Possible error messages that could occur when executing run flow.

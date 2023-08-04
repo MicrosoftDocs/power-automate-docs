@@ -21,6 +21,14 @@ In the Automation Kit, the Control Center offers comprehensive desktop flow moni
 
 :::image type="content" source="./media/control-center-desktop-flow-monitoring.png" alt-text="Screenshot of Automation Kit Control Center desktop flow monitoring.":::
 
+## Security
+
+To see desktop flows monitoring data the following me be setup:
+
+1. The Cloud flow and desktop flow must be part of a solution
+1. The the user be an owner or have the had the flow shared with them
+1. Belong to a Security role like the **System Customizer** to see all flows in the environment
+
 ## Access desktop flow monitoring
 
 To access the desktop flow monitoring features, follow these steps:
