@@ -142,6 +142,8 @@
           href: ./automation-kit/use-automation-kit.md
         - name: Control center
           items:
+            - name: Overview
+              href: ./automation-kit/control-center-overview.md
             - name: Desktop flow audit logs
               href: ./automation-kit/control-center-desktop-flow-audit-logs.md
             - name: Desktop flow monitoring
