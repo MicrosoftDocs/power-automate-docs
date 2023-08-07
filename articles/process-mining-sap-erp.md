@@ -85,7 +85,7 @@ Although **Data gateway** isn't marked as a requirement in connection settings, 
 
 After connections, the RFC shows up as a function with the parameter metadata and an optional **Enable Function Parsing** option. Fill in the parameters and select **Invoke** to get the data. You should rely on your SAP produced documentation or custom documentation for RFC parameters.  
 
-The function parsing mode for the connector understands contracts of two widely used RFCs: `RFC_READ_TABLE` and `/SAPDS/RFC_READ_TABLE2`. They'll take this interpretation and parse out the output in an easy to read format instead of requiring you to do so in M script. Function parsing can be enabled not only for the above mentioned RFCs, but also for RFCs with the same contract such as `BBP_RFC_READ_TABLE` or `/BODS/RFC_READ_TABLE2`. This includes custom RFCS deployed by the customer to the SAP system.
+The function parsing mode for the connector understands contracts of two widely used RFCs: `RFC_READ_TABLE` and `/SAPDS/RFC_READ_TABLE2`. They'll take this interpretation and parse out the output in an easy to read format instead of requiring you to do so in M script. Function parsing can be enabled not only for the previously mentioned RFCs, but also for RFCs with the same contract such as `BBP_RFC_READ_TABLE` or `/BODS/RFC_READ_TABLE2`. This includes custom RFCS deployed by the customer to the SAP system.
 
 ## Authentication
 
