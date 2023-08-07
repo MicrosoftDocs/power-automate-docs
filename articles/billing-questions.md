@@ -2,29 +2,20 @@
 title: Billing and metering questions | Microsoft Docs
 description: Answers to frequently asked questions regarding billing and metering in Power Automate
 services: ''
+author: kenseongtan
 suite: flow
-documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 03/30/2022
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.author: kenseongtan
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ---
 # Billing and metering questions
 
 This article answers frequently asked questions regarding billing and metering in Power Automate.
-
->[!NOTE]
-> Power Apps and Power Automate started to use a [new licensing model](/power-platform/admin/powerapps-flow-licensing-faq) on October 1, 2019.
 
 ## Where can I find out what pricing plans are available?
 
@@ -36,10 +27,8 @@ See this [subscription page](https://portal.office.com/account/#subscriptions).
 
 ## How do I switch plans?
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
-1. In the top right of the screen select **?** > **Pricing**, and then select the plan to which you want to switch.
-
-![Help > Pricing.](./media/billing-questions/help-pricing.png)
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. On the top right of the screen, select **?** > **Pricing**, and then select the plan to which you want to switch.
 
 ## What happens if my usage exceeds the limits?
 
@@ -82,9 +71,8 @@ You can work around this issue by putting all the filtering you need into the tr
 ## Licenses that can submit support tickets in Power Automate
 
 If you have one of the following licenses, you can [submit a support ticket in Power Automate](https://make.powerautomate.com/support/)
-* Power Automate per flow plan 
-* Power Automate per user plan
-* Power Automate per user with Attended RPA plan
+* Power Automate Process plan (previously Power Automate per flow)
+* Power Automate Premium plan (previously Power Automate per user and Power Automate per user with attended RPA) 
 * PowerApps per user plan
 * Dynamics Enterprise plan
 * Dynamics Professional plan

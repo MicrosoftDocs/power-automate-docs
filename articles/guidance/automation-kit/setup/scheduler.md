@@ -17,14 +17,14 @@ ms.reviewer: angieandrews
 
 # Set up the automation kit scheduler
 
-When you install the managed Power Platform scheduler solution, make sure you follow these required steps. <!--Are steps part of installation, or are they done before or after? Link to installing managed scheduler solution.-->
+When you install the managed Power Platform scheduler solution, make sure you follow these required steps.
 
 1. Ensure the Power Apps component framework is enabled by following the steps in [Enable the Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature").
 
 1. Install the [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1) from App Source into the target environment.
 
-1. In the **Assets** section in the latest GitHub release of the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) file, download **AutomationKitScheduler_*_managed.zip** by selecting it.
+1. In the **Assets** section in the latest GitHub release of the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) file, download **AutomationKitControlCenter_*_managed.zip** by selecting it.
 
-1. Import the downloaded AutomationKitScheduler_*_managed.zip file.
+1. Import the downloaded AutomationKitControlCenter_*_managed.zip file.
 
     To learn how to import, go to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions).
