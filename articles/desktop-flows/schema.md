@@ -41,7 +41,7 @@ Starting in October 2023, v2 schema will be automatically enabled for all enviro
 
 :::image type="content" source="media/schema/schema-v2-off.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
 
-In 2024, v2 schema will be turned on for all environments without the option to disable the feature and as best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come along with it.
+In 2024, v2 schema will be turned on for all environments without the option to disable the feature. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
