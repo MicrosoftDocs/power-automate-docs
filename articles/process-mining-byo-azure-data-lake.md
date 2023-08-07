@@ -37,17 +37,16 @@ Power Automate Process Mining gives you the option to store and read event log d
 
 -   Data in your Data Lake Storage should meet the following CSV file format requirements:
 
-    -   **Compression type:** None
-    -   **Column delimeter:** Comma (,)
-    -   **Row delimeter:** Default and encoding. For example, Default (\r,\n, or \r\n) 
+    - **Compression type:** None
+    - **Column delimeter:** Comma (,)
+    - **Row delimeter:** Default and encoding. For example, Default (\r,\n, or \r\n) 
 
     :::image type="content" source="media/process-mining-byo-azure-data-lake/csv.png" alt-text="Screenshot of the File format settings screen.":::
 
-- All data must be in final event log format and meet data requirements listed [**here**](https://learn.microsoft.com/en-us/power-automate/process-mining-processes-and-data#data-requirements). Data should be ready to be mapped to the Process Mining schema. No data transformation is available post ingestion.
+- All data must be in final event log format and meet therequirements listed in [Data requirements](process-mining-processes-and-data#data-requirements). Data should be ready to be mapped to the process mining schema. No data transformation is available post ingestion.
 
 > [!IMPORTANT]
-> Ensure that time stamp represented in your CSV file follows standard ISO 8601 format, i.e. `YYYY-MM-DD HH:MM:SS.sss` or `YYYY-MM-DDTHH:MM:SS.sss`.
-
+> Ensure that time stamp represented in your CSV file follows the ISO 8601 standard format (for example, `YYYY-MM-DD HH:MM:SS.sss` or `YYYY-MM-DDTHH:MM:SS.sss`.
 
 ## Connect to Azure Data Lake Storage
 
