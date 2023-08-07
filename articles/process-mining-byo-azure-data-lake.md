@@ -70,7 +70,10 @@ Power Automate Process Mining gives you the option to store and read event log d
 You can refresh a process from Azure Data Lake on a schedule, either through a full or incremental refresh. Though there are no retention policies, you can ingest data incrementally using one of the following methods:
 
 - Add incremental files to the selected folder.
-- Add more data to the selected file.
+- Append more data to the selected file.
+
+> [!IMPORTANT]
+> When adding incremental files to a selected folder or subfolder ensure to indicate increment order by naming files with dates such as YYYMMDD.csv or YYYYMMDDHHMMSS.csv
 
 To refresh a process:
 
