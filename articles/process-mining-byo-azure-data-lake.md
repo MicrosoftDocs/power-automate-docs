@@ -43,7 +43,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 
     :::image type="content" source="media/process-mining-byo-azure-data-lake/csv.png" alt-text="Screenshot of the File format settings screen.":::
 
-- All data must be in final event log format and meet therequirements listed in [Data requirements](process-mining-processes-and-data#data-requirements). Data should be ready to be mapped to the process mining schema. No data transformation is available post ingestion.
+- All data must be in final event log format and meet therequirements listed in [Data requirements](process-mining-processes-and-data.md#data-requirements). Data should be ready to be mapped to the process mining schema. No data transformation is available post ingestion.
 
 > [!IMPORTANT]
 > Ensure that time stamp represented in your CSV file follows the ISO 8601 standard format (for example, `YYYY-MM-DD HH:MM:SS.sss` or `YYYY-MM-DDTHH:MM:SS.sss`.
