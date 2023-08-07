@@ -122,9 +122,9 @@ Go to [Create a Power Platform environment](/power-platform/admin/create-environ
 
 To learn more, go to [Power Platform regions](/power-platform/admin/regions-overview).
 
-### How do I disable copilot-powered editing (preview)?
+### How do I disable Edit with Copilot (preview)?
 
-You can disable copilot-powered editing (preview) by contacting Microsoft Support.
+You can disable Edit with Copilot (preview) by contacting Microsoft Support.
 
 ### How is copilot-powered editing (preview) different from the text generation model in AI Builder?
 

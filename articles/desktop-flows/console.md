@@ -74,8 +74,10 @@ To review the properties of a desktop flow, right-click on it and select **Prope
 
 If the **Add screenshot to logs** option is enabled, a screenshot is captured upon flow run failure and is uploaded to the [flow run action details](monitor-run-details.md#actions-details).
 
-> [!NOTE]
-> The **Add screenshot to logs** property applies only to flows stored in [Power Automate v2 schema](schema.md).
+> [!IMPORTANT]
+>
+> - Access to the flow run logs is a premium feature, which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
+> - The **Add screenshot to logs** property applies only to flows stored in [Power Automate v2 schema](schema.md).
 
 In the **Details** tab, you can see the owner, the creation and last modification dates, the flow ID and the flow’s storage schema version in Dataverse. For more information on the enhanced desktop flows schema, go to [Power Automate v2 schema](schema.md).
 
