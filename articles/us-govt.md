@@ -7,7 +7,7 @@ author: kenseongtan
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/27/2022
+ms.date: 08/03/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -144,9 +144,9 @@ Power Automate US Government provides the ability to integrate third-party appli
 
 ## Configure mobile clients
 
-Here are the steps that you must take to sign in with the Power Automate mobile client.  Currently, only the iOS version of the mobile client supports connecting to GCC environments.
+Here are the steps that you must take to sign in with the Power Automate mobile client.
 
-1. On the sign-in page, select the gear icon in the lower-right corner.
+1. On the sign-in page, select ![Wifi icon with a gear sign.](media/us-govt/icon-wifi-gear.png) (a wifi icon with a gear sign) in the upper-right corner.
 1. Select **Region settings**.
 1. Select GCC: US Government GCC
 1. Select OK.
