@@ -1,16 +1,17 @@
 ---
-title: Setup the Power Automate Azure Virtual Desktop integration starter kit
+title: Set up the Power Automate Azure Virtual Desktop integration starter kit
 description: Setup instructions
 services: ''
-author: georgiostrantzas
+author: kenseongtan
 editor: ''
 tags: ''
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 10/28/2021
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: kenseongtan
+ms.reviewer: angieandrews
 contributors:
+- kenseongtan
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -25,11 +26,11 @@ The Power Automate AVD integration starter kit is shipped as a solution which ca
 
 The starter kit solution includes:
 
--   An application, that will help with configuring your scale strategy and collecting the necessary information to interact with both your Azure Virtual Desktop deployment and the Power Platform.
+- An application, that will help with configuring your scale strategy and collecting the necessary information to interact with both your Azure Virtual Desktop deployment and the Power Platform.
 
--   A sample orchestration flow that will be used as a template to generate new flows with your own configurations.
+- A sample orchestration flow that will be used as a template to generate new flows with your own configurations.
 
--   Other helpful flows that either enable the configuration application or help generating the customized orchestration flows.
+- Other helpful flows that either enable the configuration application or help generating the customized orchestration flows.
 
 ## Prerequisites
 
@@ -53,7 +54,7 @@ The following are prerequisites for installing the Power Automate AVD integratio
 
 -   Environment with a Dataverse instance, where the user installing the solution has the System Administrator security role.
 
--   If you are using this starter kit in Production environment with a Dataverse, premium licenses are required for all users interacting with the Power Automate AVD integration starter kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app or Power Automate per user or per flow license or a combination of these licenses.
+-   If you're using this starter kit in Production environment with a Dataverse, premium licenses are required for all users interacting with the Power Automate AVD integration starter kit. Depending on what components you will use, your organization size and the existing licenses available in your organization, you will require either a Power Apps per user or per app, or Power Automate Premium (previously Power Automate per user) or Power Automate Process (previously Power Automate per flow) license, or a combination of these licenses.
 
 ### Azure Automation and Key vaults
 
@@ -67,7 +68,7 @@ The following are prerequisites for installing the Power Automate AVD integratio
 
 -   An Azure Key Vault where you can store the secrets for your app registrations and machine group passwords.
 
-## Setup the Power Automate AVD integration starter kit
+## Set up the Power Automate AVD integration starter kit
 
 ### Import the solution into a Production environment
 
@@ -96,18 +97,17 @@ The following are prerequisites for installing the Power Automate AVD integratio
 
 1.  Select **Import**.
 
-> [!NOTE]
-> The import can take up to 10 minutes to be completed.
+    The import can take up to 10 minutes to be completed.
 
 
 ### Update the Flow Sample Environment Variable
->[!NOTE]
->You can't update the values for environment variables from within the solution.
 
-Once the solution import is competed, click on the VM Orchestration Sample Flow, navigate to its details page and copy the Flow Id.
+You can't update the values for environment variables from within the solution.
 
-> [!NOTE]
-> You can find the flow Id by navigating to the details page of your flow and then copying the value in the address bar of your browser:
+Once the solution import is competed, select the VM Orchestration Sample Flow, navigate to its details page, and copy the Flow Id.
+
+You can find the flow Id by navigating to the details page of your flow and then copying the value in the address bar of your browser:
+
 ``https://make.powerautomate.com/manage/environments/<environmentId>/solutions/<solutionId>/flows/<flow-Id>``
 
 To update Environment Variables:
@@ -143,40 +143,37 @@ To update Environment Variables:
 
 ### Import the Runbook script
 
-1.  Sign in to the Azure portal.
+1. Sign in to the Azure portal.
 
-1.  Search for and select Automation Accounts.
+1. Search for and select Automation Accounts.
 
-1.  On the Automation Accounts page, select your Automation account from the list.
+1. On the Automation Accounts page, select your Automation account from the list.
 
-1.  From the Automation account, select Runbooks under Process Automation to open the list of runbooks.
+1. From the Automation account, select Runbooks under Process Automation to open the list of runbooks.
 
-1.  Click **Import a runbook** and then **Select a file.**
+1. Select **Import a runbook** > **Select a file.**
 
-1.  Select the runbook from the File Explorer (runbookWorkflow.ps1)
+1. Select the runbook from the File Explorer (runbookWorkflow.ps1)
 
-1.  Rename the runbook if needed and select **PowerShell** in the **Runbook type** dropdown.
+1. Rename the runbook if needed and select **PowerShell** in the **Runbook type** dropdown.
 
-1.  Click **Create**. The new runbook appears in the list of runbooks for the Automation account.
+1. Select **Create**. The new runbook appears in the list of runbooks for the Automation account.
 
-1.  You have to [publish the runbook](/azure/automation/manage-runbooks#publish-a-runbook) before you can run it.
+1. You have to [publish the runbook](/azure/automation/manage-runbooks#publish-a-runbook) before you can run it.
 
 ### Create an Azure AD app registration to connect to Azure Service Management APIs and to the Power Platform
 
--   [Create an app registration to register your VMs and add them to machine groups](machines-silent-registration.md#using-a-service-principal-account)
->[!NOTE]
->The application user should at least have maker role in the environment.
+1. Make sure you follow these steps to create an application user in the Power Platform admin center: [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users#create-an-application-user).
 
-> [!IMPORTANT]
-> Make sure you follow these steps to create an application user in the Power Platform Admin Center: [Manage application users in         the Power Platform admin center](/power-platform/admin/manage-application-users#create-an-application-user)
+1. [Create an app registration to register your VMs and add them to machine groups](machines-silent-registration.md#using-a-service-principal-account).
 
+    The application user should at least have the **Maker** role in the environment.
 
--   [Create an app registration with Azure Service Management permission](/azure/active-directory/develop/quickstart-register-app)
+1. [Create an app registration with Azure Service Management permission](/azure/active-directory/develop/quickstart-register-app).
 
     ![Screenshot of the App Registration dialog.](media/avd-starter-kit/AppRegistration.png)
 
-> [!NOTE]
->The AAD application needs to have read permission on the subscription.
+The AAD application needs to have read permission on the subscription.
 
 > [!IMPORTANT]
 >You need to save the App registration secrets in the Key Vault in order to use them within the starter kit.
@@ -197,8 +194,8 @@ To do the later, browse to the default solution, filter to connection references
 
 ## Supported languages
 
-The Power Automate Azure Virtual Desktop integration starter kit is currently available only in English. Add the English language pack to your environment to make sure all apps and flows work. Read more in the [regional and language options for your environment.](/power-platform/admin/enable-languages)
+The Power Automate Azure Virtual Desktop integration starter kit is currently available only in English. Add the English language pack to your environment to make sure all apps and flows work. To learn more, go to [regional and language options for your environment.](/power-platform/admin/enable-languages)
 
 ## Multi-tenant App registrations
 
-If your Dataverse tenant is different from the AVD one, there are additional steps and validation you need to go through to let your application interact with your Dataverse tenant. Read more on [how to use multi-tenant server-to-server authentication](/powerapps/developer/data-platform/use-multi-tenant-server-server-authentication)
+If your Dataverse tenant is different from the AVD one, there are additional steps and validation you need to go through to let your application interact with your Dataverse tenant. To learn more, go to [How to use multi-tenant server-to-server authentication](/powerapps/developer/data-platform/use-multi-tenant-server-server-authentication)
