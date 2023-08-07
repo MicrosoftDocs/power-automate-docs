@@ -40,7 +40,7 @@ The following information is required to use the **When a row is added, modified
 - Table name
 - Scope
 
-Power Automate uses either the current designer or the copilot-powered editing designer (preview). To identify which designer you’re using, go to the Note section in [Understand the copilot-powered editing designer (preview)](/power-automate/flows-designer?branch=pr-en-us-2200).
+Power Automate uses either the current designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](/power-automate/flows-designer?branch=pr-en-us-2200).
 
 # [Current designer](#tab/current-designer)
 
@@ -48,7 +48,7 @@ Set the parameters directly on the card for the **When a row is added, modified 
 
 :::image type="content" source="../media/create-update-delete-trigger/trigger-current.png" alt-text="Screenshot of ":::
 
-# [Copilot-powered editing (preview)](#tab/copilot-powered-editing-preview)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -95,7 +95,7 @@ To access the advanced options, select **Show advanced options**.
 
 :::image type="content" source="../media/create-update-delete-trigger/advanced-current.png" alt-text="Screenshot of the advanced options.":::
 
-# [Copilot-powered editing (preview)](#tab/copilot-powered-editing-preview)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -152,7 +152,7 @@ Follow these steps to impersonate a user:
 
 For each Dataverse action that you want to run as a different user, select the menu in the upper-right corner (**...**) and then select the **Use invoker’s connection** setting.
 
-# [Copilot-powered editing (preview)](#tab/copilot-powered-editing-preview)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
