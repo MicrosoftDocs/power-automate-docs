@@ -76,9 +76,9 @@ To find the ID of an environment, navigate to the [Power Automate portal](https:
 
 :::image type="content" source="media/run-flow-url/find-environment-id.png" alt-text="Screenshot of the environment ID in the address line.":::
 
-To find the ID of a desktop flow, launch the Power Automate console, select or right-click the appropriate flow, and select **Details**.
+To find the ID of a desktop flow, launch the Power Automate console, select or right-click the appropriate flow, and select **Properties**.
 
-:::image type="content" source="media/run-flow-url/find-desktop-flow-id.png" alt-text="Screenshot of the desktop flow details.":::
+:::image type="content" source="media/console/desktop-flow-details-properties.png" alt-text="Screenshot of the details of a desktop flow.":::
 
 ## Save logs for desktop flows run via URL
 
@@ -97,7 +97,7 @@ A URL containing the **runId** input parameter should have the following structu
 
 ## Use a run URL in the command prompt
 
-To trigger a flow using the command prompt, use a command with the following syntax:
+To trigger a flow using the command prompt, use a command with the following syntax (applies to MSI installations):
 
 ```
 "C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe" "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"
@@ -113,15 +113,26 @@ To trigger a flow using the Task Scheduler application of Windows:
 1. Create a new task, navigate to the **Actions** tab of the **Create Task** dialog, and add a new action.
 
 1. Populate the following value in the **Program/script** field.
-
+   
+   - For MSI installations:
     ```
     C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe
     ```
 
+   - For Microsoft Store installations:
+    ```
+    C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe
+    ```
+
 1. Populate the following value in the **Add arguments** field.
 
+   - For MSI installations:
     ```
     ms-powerautomate:/console/flow/run?workflowName=[workflowName]
+    ```
+    - For Microsoft Store installations:
+    ```
+    -Command "Start-Process \"ms-powerautomate:/console/flow/run?workflowName=[workflowName]""
     ```
 
     >[!NOTE]
