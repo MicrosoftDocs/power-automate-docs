@@ -73,7 +73,7 @@ You can refresh a process from Azure Data Lake on a schedule, either through a f
 - Append more data to the selected file.
 
 > [!IMPORTANT]
-> When adding incremental files to a selected folder or subfolder ensure to indicate increment order by naming files with dates such as YYYMMDD.csv or YYYYMMDDHHMMSS.csv
+> When you add incremental files to a selected folder or subfolder, make sure you indicate the increment order by naming files with dates such as YYYMMDD.csv or YYYYMMDDHHMMSS.csv.
 
 To refresh a process:
 
