@@ -17,7 +17,7 @@ To give permissions on the machine:
 4. Search for the Application User in your Dataverse instance.
 5. Once selected, choose **User** and click on **Save**.
 
-:::image type="content" source="/media/share-sp.png" alt-text="Screenshot of share panel for a machine":::
+:::image type="content" source="./media/share-sp.png" alt-text="Screenshot of share panel for a machine":::
 
 ## Create a connection with a Service Principal
 Once you have share the machine with the application user, we can create the connection. We need to create the connection as the service principal, therefore we cannot use the Portal.
@@ -30,9 +30,10 @@ To create a connection, you need to send an HTTP PUT to PowerApps API to create 
 
 ```HTTP
 Content-Type: application/json
-Host: https://{ENVIRONMENT_ID}.environment.api.powerplatform.com
+Host: https://{ENVIRONMENT_ID_URL}.environment.api.powerplatform.com
 Accept: application/json
-POST https://{ENVIRONMENT_ID}.environment.api.powerplatform.com/connectivity/connectors/shared_uiflow/connections/{CONNECTION_ID}?api-version=1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJu...
+PUT https://{ENVIRONMENT_ID_URL}.environment.api.powerplatform.com/connectivity/connectors/shared_uiflow/connections/{CONNECTION_ID}?api-version=1
 BODY:
 {
     "properties":
@@ -55,7 +56,13 @@ BODY:
     }
 }
 ```
+The above example contains placeholders:
+- ENVIRONMENT_ID_URL: It is environment id url.
+- ENVIRONMENT_ID: The environment id.
+- CONNECTION_ID: It will be the connection id use to create the connection. It need to be a valid Guid.
+- MACHINE_ACCOUNT: The username of the account used to open a Windows session.
+- MACHINE_PASSWORD: The password the account.
+- MACHINE_OR_GROUP_ID: The machine or groupe id we want to create the connection for.
 
-
-### Capture the connection id.
+Once the request is completed, note the connection id that you use above.
 
