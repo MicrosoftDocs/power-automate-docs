@@ -111,3 +111,4 @@ For the current release, the following notes apply:
 
 1. Only Power Automate Desktop and Power Automate solutions contained within a solution are displayed.
 1. At least one Power Automate Desktop has been registered and executed.
+
