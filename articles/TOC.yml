@@ -770,6 +770,9 @@
       items:
       - name: Explore the home page
         href: ./minit/process-hub.md
+      - name: Copilot in process mining analysis (preview)
+        href: ./minit/copilot-in-process-mining-analysis.md
+      
       - name: Manage settings with process context
         href: ./minit/process-context.md
       - name: Categorize cases
