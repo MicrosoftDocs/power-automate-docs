@@ -17,7 +17,8 @@ search.audienceType:
 
 # Copilot in process mining analysis (preview)
 
-[This article is prerelease documentation and is subject to change.]
+[INCLUDE[cc_preview_features_top_note](../includes/cc-preview-features-top-note.md)]
+
 
 ## Add heading here
 
