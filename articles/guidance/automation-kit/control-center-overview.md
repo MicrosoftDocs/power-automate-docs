@@ -1,5 +1,5 @@
 ---
-title: Control Center Overview
+title: Overview of the Control Center
 description: Learn how control fits with your environment and within the Automation Kit
 suite: flow
 documentationcenter: na
@@ -15,7 +15,7 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Overview of the control center
+# Overview of the Control Center
 
 The Automation Kit control center has been designed to complement the existing [Monitor desktop flow runs](../../desktop-flows/monitor-desktop-flow-runs.md). The key focus of the control center is an orchestrator view for support analysts and organizations to monitor, take action and alert if necessary.
 

@@ -53,38 +53,35 @@ The status and run information is available with long touch or hover mouse on th
 
 ### Schedule
 
->[!div class="mx-imgBorder"]
-> ![Screenshot of Automation Kit - Control Center Desktop Flow Scheduler](./media/control-center-desktop-flow-scheduler.png)
+:::image type="content" source="./media/control-center-desktop-flow-scheduler.png" alt-text="Screenshot of Automation Kit - Control Center Desktop Flow Scheduler.":::
 
 The schedule view includes a set of cloud flows based on time from the current time and future scheduled flows over the next days.
 
 ## Run Now
 
->[!div class="mx-imgBorder"]
-> ![Screenshot of Automation Kit - Control Center Desktop Flow Scheduler run now dialog](./media/control-center-desktop-flow-scheduler-run-now.png)
+:::image type="content" source="./media/control-center-desktop-flow-scheduler-run-now.png" alt-text="Screenshot of Automation Kit - Control Center Desktop Flow Scheduler run now dialog.":::
 
 The current version of Run Now executes the selected Power Automate desktop flow. It's assumed that there's no parameters required to execute the desktop flow.
 
-## Open Grid view
+## Open Grid View
 
->[!div class="mx-imgBorder"]
-> ![Screenshot of new Button "Open Grid View" on home page to navigate to desktop flows runs page in Power Automate portal](./media/control-center-desktop-flow-scheduler-open-grid-view.png)
+:::image type="content" source="./media/control-center-desktop-flow-scheduler-open-grid-view.png" alt-text="Screenshot of new Button "Open Grid View" on home page to navigate to desktop flows runs page in Power Automate portal.":::
 
 Users can navigate to desktop flows runs page in power automate portal from our Control Center Home page.
 
 ## Security
 
-To see scheduled desktop flows the following me be setup:
+To see scheduled desktop flows, the following must be set up:
 
 1. The Cloud flow and desktop flow must be part of a solution
-1. The the user be an owner or have the had the flow shared with them
+1. The user be an owner or have the had the flow shared with them
 1. Belong to a Security role like the **System Customizer** to see all flows in the environment
 
 ## Error messages
 
 Possible error messages that could occur when executing run flow.
 
-### Error Message: "InvalidArgument - Cannot find a valid connection associated with the provided connection reference."
+### Error message: "InvalidArgument - Cannot find a valid connection associated with the provided connection reference."
 
 #### Description
 

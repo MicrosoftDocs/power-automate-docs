@@ -19,16 +19,13 @@ ms.reviewer: angieandrews
 
 The Automation Kit Control Center offers two powerful options for historical data monitoring: "Historical Analytics Dashboard using Data Warehouse Approach" and "TDS Desktop Flows Monitoring." These options are suitable when monitoring Desktop flows at scale for large volumes of transactional logs.
 
->[!div class="mx-imgBorder"]
-> ![Screenshot of Automation Kit - Control Center Historical Voluminous Data Monitoring Setup](./media/control-center-desktop-flow-voluminous-data-monitoring.png)
+:::image type="content" source="./media/control-center-desktop-flow-voluminous-data-monitoring.png" alt-text="Screenshot of Scheduler Calendar view with month selected.":::
 
 ## Historical Analytics Dashboard using Data Warehouse Approach
 
->[!div class="mx-imgBorder"]
-> ![Screenshot of Automation Kit - Control Center Azure Synapse Link](./media/control-center-desktop-flow-configure-synapse-link.png)
+:::image type="content" source="./media/control-center-desktop-flow-configure-synapse-link.png" alt-text="Screenshot of Automation Kit - Control Center Azure Synapse Link.":::
 
->[!div class="mx-imgBorder"]
-> ![Screenshot of Automation Kit - Control Center Confirm Prerequisites](./media/control-center-desktop-flow-confirm-prerequisites.png)
+:::image type="content" source="./media/control-center-desktop-flow-confirm-prerequisites.png" alt-text="Screenshot of Automation Kit - Control Center Confirm Prerequisites.":::
 
 When you need to monitor Desktop flows at scale and deal with voluminous historical data, the "Historical Analytics Dashboard" is an excellent choice. This option requires a set of prerequisites to be completed:
 
@@ -40,8 +37,7 @@ When you need to monitor Desktop flows at scale and deal with voluminous histori
 
 ### Historical Analytics Dashboard
 
->[!div class="mx-imgBorder"]
-> ![Screenshot of Automation Kit - Control Center Publish Power BI](./media/control-center-desktop-flow-publish-power-bi.png)
+:::image type="content" source="./media/control-center-desktop-flow-publish-power-bi.png" alt-text="Screenshot of Automation Kit - Control Center Publish Power BI.":::
 
 To further enhance the monitoring capabilities, the Power BI dashboard of the `BYODL_FlowMonitoring_MMYYYY` report should be published with an SQL endpoint and configured with a refresh schedule.
 

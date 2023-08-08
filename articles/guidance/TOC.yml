@@ -116,7 +116,7 @@
               href: ./automation-kit/setup/setup-checklist.md
             - name: Install using the command line
               href: ./automation-kit/setup/command-line-install.md
-            - name: Set up the control center
+            - name: Set up the Control Center
               href: ./automation-kit/setup/control-center.md
             - name: Set up the main environment
               href: ./automation-kit/setup/main.md
@@ -140,7 +140,7 @@
               href: ./automation-kit/dlp-impact-analysis.md
         - name: Use the automation kit
           href: ./automation-kit/use-automation-kit.md
-        - name: Control center
+        - name: Control Center
           items:
             - name: Overview
               href: ./automation-kit/control-center-overview.md
