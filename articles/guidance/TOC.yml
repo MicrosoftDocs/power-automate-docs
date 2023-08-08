@@ -167,4 +167,16 @@
         - name: Automation Maturity Model details
           href: automation-coe/automation-maturity-model-details.md
     - name: Business approvals templates (preview)
-      href: ./business-approvals-templates/introduction.md
+      items:
+        - name: Introduction
+          href: ./business-approvals-templates/introduction.md
+        - name: Setup
+          href: ./business-approvals-templates/setup.md
+        - name: Configuring preset approvals
+          href: ./business-approvals-templates/configuring-preset-approvals.md
+        - name: Setting up Out of Office and delegation
+          href: ./business-approvals-templates/setup-out-of-office-and-delegation.md
+        - name: Processing approval requests
+          href: ./business-approvals-templates/processing-approval-requests.md
+        - name: Limitations
+          href: ./business-approvals-templates/limitations.md
