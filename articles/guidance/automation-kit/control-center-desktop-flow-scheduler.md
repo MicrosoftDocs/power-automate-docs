@@ -65,7 +65,7 @@ The current version of Run Now executes the selected Power Automate desktop flow
 
 ## Open Grid View
 
-:::image type="content" source="./media/control-center-desktop-flow-scheduler-open-grid-view.png" alt-text="Screenshot of new Button "Open Grid View" on home page to navigate to desktop flows runs page in Power Automate portal.":::
+:::image type="content" source="media/control-center-desktop-flow-scheduler-open-grid-view.png" alt-text="Screenshot of new Button "Open Grid View" on home page to navigate to desktop flows runs page in Power Automate portal.":::
 
 Users can navigate to desktop flows runs page in power automate portal from our Control Center Home page.
 
