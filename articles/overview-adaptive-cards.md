@@ -71,33 +71,30 @@ This action posts an adaptive card as a Flow bot to a specific user, like the ca
 
 ![Post an adaptive card as the Flow bot to a Teams channel, and wait for a response.](media/adaptive-cards/bottom.png)
 
----
-
 # [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-
 ## Known issues
- 
+
 - It is not possible to collect data from Adaptive Cards unless they are created using one of the "wait for a response" actions. Adaptive Cards that don't wait return an error for all button actions except OpenURL. Learn more on [OpenURL buttons](https://adaptivecards.io/explorer/Action.OpenUrl.html). 
 
 - Selecting Action.Submit buttons on a card which doesn't include the "wait for a response" suffix, will throw an error.
- 
+
 - Adaptive Cards created using the "wait for response" actions can only be submitted once per card. The flow run will continue after the first response, and any further submissions are ignored.
- 
+
 - Only the information within the ‘Update message’ input box (see image 3) will be shown on the replacement card after consumers submit the card.
 
   Additional details, such as the user id of the person submitting the card, will be available within the dynamic content in actions following the ‘wait for a response’ action. However, it may be necessary to include the Office 365 Users connector in order to complete desired profile information for the user who submitted the card.
- 
+
 - Once the "wait for a response" Adaptive Cards are submitted, the card resets and then appears exactly the same, unless the replacement/update message area is configured. Update messages are a best practice, and are recommended in order to update others, but also to prevent consumers from attempting to submit the card more than once.
- 
+
    ![Update message.](media/adaptive-cards/update-message.png) 
- 
+
 
 The **Update Message** and the **Should update card** inputs must be configured if a replacement card is desired.
  
-- Power Automate uses Microsoft Adaptive Cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building Adaptive Cards](/adaptive-cards/).
+- Power Automate uses Microsoft Adaptive Cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building Adaptive Cards.](/adaptive-cards/).
  
 ### See also 
  

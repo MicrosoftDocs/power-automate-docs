@@ -72,7 +72,7 @@ The SharePoint Online list you create must include the following columns:
 
 Make  note of the name and URL of the SharePoint Online list. We use these items later when you configure the **SharePoint - When a new item is created** trigger.
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
 
 ## Create your flow
 
@@ -355,7 +355,7 @@ The final approver gets the vacation request only after the request has been pre
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -367,7 +367,7 @@ The final approver gets the vacation request only after the request has been pre
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
