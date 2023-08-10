@@ -78,7 +78,15 @@ Good examples for prompts focused on general knowledge about process mining:
 ## Frequently asked questions
 Use this section to find answers to frequently asked questions.
 
+**How to create an environment woth Copilot?**
+- The environment you’re using need to be in the United States or Preview (United States)
 
+**Why don’t I see Copilot?**
+- Check if the environment you’re using is in the United States or Preview (United States) region
+- Ask your administrators if they turned off Copilot feature in Admin center for your environment
+
+**How do I disable Copilot?**
+- Ask your administrators to turn off Copilot feature in Admin Center for given environment.
 
 See also:
 
