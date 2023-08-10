@@ -39,9 +39,9 @@ We'll start with a pre-built template and customize it to help our managers plan
 
 1. Sign in to the connectors, if needed, and select **Continue**.
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for common ways to use a form in a flow are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. In the first step in the flow, "When a new response is submitted," select your form in the **Form Id** box.
 
@@ -61,7 +61,9 @@ When you create a cloud flow, your flow opens in either the current designer or 
 
 1. Save and test your flow.
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -69,13 +71,15 @@ When you create a cloud flow, your flow opens in either the current designer or 
 
 You can turn on email receipts for respondents in your form settings. If you want to customize the email they receive, use Power Automate.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 Follow the steps to [send an email when there's a new form response](#send-an-email-when-theres-a-new-form-response), but send the email to the responder.
 
 :::image type="content" source="../media/forms/responder-email-flow.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with the responder's email address highlighted.":::
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -87,7 +91,7 @@ In this example, we'll start with another pre-built template and customize it to
 
 1. Sign in to or create the connectors, as needed, and select **Continue**.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. In the first step in the flow, "When a new response is submitted," select your form in the **Form Id** box.
 
@@ -126,7 +130,9 @@ In this example, we'll start with another pre-built template and customize it to
 
 More examples of approval flows are in the [documentation](../sequential-modern-approvals.md).
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -138,7 +144,7 @@ In this example, you create a flow from blank. Continuing with the scenario from
 
     :::image type="content" source="../media/forms/excel-flow-table.png" alt-text="Screenshot of an Excel table with three columns titled Name, Vacation Start, and Return.":::
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. In Power Automate, create an automated cloud flow from blank. Select the Microsoft Forms "When a new response is submitted" trigger.
 
@@ -181,7 +187,9 @@ In this example, you create a flow from blank. Continuing with the scenario from
 
 You can use a template to [add an approval step before a form response is added to the Excel table](https://make.powerautomate.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/).
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -189,7 +197,7 @@ You can use a template to [add an approval step before a form response is added 
 
 In this example, we'll create another flow from blank. We'll use the flow to create a share link for a file that's uploaded on our summer vacation form, and then email the link.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 :::image type="content" source="../media/forms/attachment-flow-form-upload.png" alt-text="Screenshot of a file upload option on a form.":::
 
@@ -209,7 +217,9 @@ In this example, we'll create another flow from blank. We'll use the flow to cre
 
     :::image type="content" source="../media/forms/excel-flow-step2.png" alt-text="Screenshot of a Forms trigger and action in a flow under construction, with the form ID highlighted in each.":::
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -223,7 +233,7 @@ In this example, we'll create another flow from blank. We'll use the flow to cre
 
     :::image type="content" source="../media/forms/attachment-flow-run-history.png" alt-text="Screenshot of a flow's run history with a test run highlighted.":::
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Expand the "Get response details" step and copy the contents of the file upload output.
 
@@ -248,13 +258,15 @@ In this example, we'll create another flow from blank. We'll use the flow to cre
 
     :::image type="content" source="../media/forms/attachment-flow-json-schema.png" alt-text="Screenshot of the Parse JSON action with a JSON schema.":::
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
 ## Create a share link and email the URL
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Add a step to your flow:
 
@@ -273,7 +285,9 @@ In this example, we'll create another flow from blank. We'll use the flow to cre
 
         :::image type="content" source="../media/forms/attachment-flow-share-link-step-final.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with custom information and dynamic content highlighted.":::
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -293,13 +307,15 @@ In this example, you entered the following HTML in the email body, where text in
 
 Here's an example:
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 :::image type="content" source="../media/forms/attachment-flow-share-link-step-final2.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with custom information and dynamic content highlighted in HTML view.":::
 
  You can combine [getting an attachment from a form and creating an approval flow](../approval-attachments.md).
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 

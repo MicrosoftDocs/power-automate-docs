@@ -57,7 +57,11 @@ Here are the requirements for successfully performing the steps in this tutorial
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+
 ## Create a cloud flow
+
+# [Classic designer](#tab/classic-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -72,10 +76,6 @@ Here are the requirements for successfully performing the steps in this tutorial
 1. Select **Create**.
 
     :::image type="content" source="media/apply-to-each/foreach-3.png" alt-text="Screenshot of the options to set up a scheduled flow.":::
-
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to use the apply to each action are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
-
-# [Current designer](#tab/current-designer)
 
 1. Select **+ New step**.
 
@@ -93,13 +93,15 @@ When you create a cloud flow, your flow opens in either the current designer or 
     > [!NOTE]
     > So far, you've created a simple flow that gets some emails from your inbox. These emails will be returned in an array. The **Apply to each** action requires an array, so this is exactly what's needed.
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
 ## Add actions and conditions
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select **+ New step** > **Built-in** > **Apply to each** action.
 1. Select the field and then select **value** from the **Dynamic content** list to place it in the **Select an output from previous steps** field on the **Apply to each** card. This pulls in the body of the emails to be used in the **Apply to each** action.
@@ -168,12 +170,11 @@ Next, you'll define what should happen if the search condition (the email was se
 
 1. On the toolbar at the top, select **Save** to save your flow.
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
-
-
-
 
 ## Run the flow
 

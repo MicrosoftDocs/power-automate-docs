@@ -89,9 +89,9 @@ The **Send an email** action can send messages to an email-enabled security grou
 
 Alternatively, follow these steps if you want users to receive the email in their mailbox.
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to customize email in flows are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Add the [Get group members](/connectors/azuread/#get-group-members) action from the [Azure AD](/connectors/azuread/) connector, and then select the distribution list.
 
@@ -102,7 +102,9 @@ When you create a cloud flow, your flow opens in either the current designer or 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of a cloud flow that gets all group members and then sends email to each member.](./media/email/group-members-flow.png "Cloud flow that gets all group members and then sends email to each member")
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -126,7 +128,7 @@ You can do this in the web version of Outlook.
 
 By default, the email you receive shows the Coordinated Universal Time (UTC) time zone. However, your users might want to change it to their local time zone. For instructions, go to  [Converting time zone in Microsoft Power Automate](https://support.microsoft.com/help/4557244/converting-time-zone-in-microsoft-power-automate) to convert the time zone.
 
-### More information
+### See also
 
 [Overview of using email with flows](email-overview.md)  
 [Create flows to manage email](create-email-flows.md)  

@@ -27,9 +27,9 @@ search.audienceType:
 
 In this sample scenario, imagine that there's a Microsoft list with products that you've purchased. You want to send an email whenever the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but you'd like it to display as *September 18* in the email notification message. Let’s see how to change the format of the date with format data by examples.
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to format data by examples are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Edit your flow in the Power Automate designer.
 
@@ -64,7 +64,9 @@ When you create a cloud flow, your flow opens in either the current designer or 
 
 Congratulations! You’ve built an expression by providing an example.  
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -72,13 +74,15 @@ Congratulations! You’ve built an expression by providing an example.
 
 In this example, imagine you have a number that comes from a Microsoft Forms survey as 5958. You want to format the number as a currency value before you store it in an Excel file, like this $5,958. To direct your flow to format the number as a currency value, provide an example of how Microsoft Forms returns the number and an example of how you want your flow to format the number. 
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 Power Automate uses the information you provide and then it suggests the expression that does the transformation, as shown in the following screenshot.
 
 :::image type="content" source="media/format-data-by-examples/example-number.png" alt-text="Screenshot of how to format a number into a currency by providing an example. Power Automate suggests the expression to achieve this transformation.":::
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -86,13 +90,15 @@ Power Automate uses the information you provide and then it suggests the express
 
 In the following scenario, imagine you have a registration form in which participants provide their full name and you want to send a registration confirmation email with just the first name. Instead of greeting the person by their full name, for example Casey Jensen, we just want to say Casey.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 Just provide an example and Power Automate suggests the right expression to achieve this transformation, as the following screenshot displays.
 
 :::image type="content" source="media/format-data-by-examples/example-text.png" alt-text="Screenshot of how to format text from a person’s full name to only their first name. Power Automate suggests the expression to achieve this transformation.":::
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 

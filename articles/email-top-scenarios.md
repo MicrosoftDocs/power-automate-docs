@@ -27,6 +27,8 @@ Here are some of the top scenarios in which you can use Power Automate to manage
 
 - Send a daily digest email with a summary table.
 
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+
 ## Send email from your account
 
 To send email from your account, use the [Send an email (V2)](/connectors/office365/) action.
@@ -35,12 +37,22 @@ You can send the email to one or more recipients. You can use the rich text edit
 
 For example, if you have a cloud flow that sends you an email as soon as your item is approved, you can add the link of the approved item as an attachment.
 
+# [Classic designer](#tab/classic-designer)
+
 > [!div class="mx-imgBorder"]
 > ![Screenshot that displays an example of an email that uses dynamic content in the body of the email.](./media/email/dynamic-content.png "Email that uses dynamic content in the body of the email")
+
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+---
 
 ## Send email with voting options
 
 Use the **Send email with options** action to send an email with voting options using actionable email. Provide voting options in the **User Options** field.
+
+# [Classic designer](#tab/classic-designer)
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot showing a Send email with options card.](./media/email/email-options.png "Send email with options card")
@@ -52,14 +64,28 @@ The recipients receive an email similar to the following screenshot.
 
 In your flow, you must capture that response and save it somewhere. You might email it to yourself, save it to Excel, or post it to Microsoft Teams. Don't forget to save it, otherwise you won't know how people voted.
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Send an email from a distribution list or shared mailbox
 
 Use the [Send an email from a shared mailbox (V2)](/connectors/office365/) action, and specify the shared mailbox address to send email from a shared mailbox. 
+
+# [Classic designer](#tab/classic-designer)
 
 The distribution list admin must first give you [permissions](/microsoft-365/admin/manage/send-email-as-distribution-list?view=o365-worldwide) to the shared mailbox. When you use this action, email appears in the Sent folder of your shared mailbox because you're sending it from that account directly.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows the Send an email from a shared mailbox (V2) card.](./media/email/shared-mailbox.png "Send an email from a shared mailbox (V2) card")
+
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+---
 
 ## Build an approval process and send notifications via email
 
@@ -76,17 +102,14 @@ Here are three ways you can send a daily digest email with a table.
 - Use the [Data Operation – Select](./data-operations.md#use-the-select-action) action to create a table with the column names and data you'd like to appear in the email.
 You can further format the data by using expressions. In following example, the flow gets calendar events within a certain timeframe, converts the time zones, and then creates a table with the events.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of an example flow with a table that has column names and data you'd like to appear in the email.](./media/email/table.png "Example flow with a table")
-
 - Add the [Create HTML Table](./data-operations.md#use-the-create-html-table-action) action, and then add the output from the select action to the HTML action.
 
 - Add the [Send an email (V2)](/connectors/office365/) action, and then add the output from an HTML table into the body of the email.
 
-### More information
+### See also
 
-[Overview of using Outlook and Power Automate](email-overview.md)  
-[Create flows to manage email](create-email-flows.md)  
-[Customize email in flows](email-customization.md)  
+- [Overview of using Outlook and Power Automate](email-overview.md)  
+- [Create flows to manage email](create-email-flows.md)  
+- [Customize email in flows](email-customization.md)  
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

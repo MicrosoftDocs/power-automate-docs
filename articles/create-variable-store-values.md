@@ -44,17 +44,17 @@ When you reference a variable, use the variable's name as the token, not the act
 > [!NOTE]
 > Before you can add actions for creating and working with variables, your flow must start with a trigger. You can't use a mobile device to add variables.
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to store and manage values in variable are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
 ### Initialize a variable
 
 You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
 
+# [Classic designer](#tab/classic-designer)
+
 1. Sign in to [Power Automate](sign-up-sign-in.md).
 
 1. Create or open a cloud flow.
-
-# [Current designer](#tab/current-designer)
 
 1. Under the step where you want to add a variable, follow one of these steps.
 
@@ -88,6 +88,12 @@ You can create a variable and declare its data type and initial value all within
 
 > [!NOTE]
 > Although the **Initialize variable** action has a `variable` section structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
+
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
 
 Here are examples of other variable types:
 
@@ -124,10 +130,6 @@ Here are examples of other variable types:
    "value": ["red", "orange", "yellow"]
 ```
 
-# [AI-powered designer](#tab/ai-powered-designer)
-
----
-
 ## Get the variable's value
 
 To retrieve or reference a variable's contents, you can use the `variables()` function in the Power Automate designer.
@@ -145,7 +147,7 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 > [!IMPORTANT]
 > This action works only with integer and float variables.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. In the Power Automate designer, under the step where you want to increase an existing variable, select **New step**.
 
@@ -176,9 +178,17 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
 1. When you're done, on the designer toolbar, select **Save**.
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ### Example: Create loop counter
 
 Variables are commonly used for counting the number of times that a loop runs. This example shows how to create and use variables for this task by creating a loop that counts the attachments in an email.
+
+# [Classic designer](#tab/classic-designer)
 
 1. In Power Automate, create a cloud flow. Add a trigger that checks for new email and any attachments.
 
@@ -231,7 +241,9 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. On the designer toolbar, select **Save**.
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -285,6 +297,6 @@ Here are the properties for the **Append to...** actions:
 | **Value** | Yes | <*append-value*> | The value you want to append, which can have any type |
 |||||
 
-### More information
+### See also
 
-Learn about [Power Automate connectors](/connectors/connectors)
+[Power Automate connectors](/connectors/connectors)

@@ -61,9 +61,9 @@ In this tutorial, we create a cloud flow that sends a push notification to your 
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to trigger a cloud flow based on email properties are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select the folder that you'd like the flow to monitor for incoming emails, and then select **Show advanced options**.
 
@@ -89,7 +89,9 @@ When you create a cloud flow, your flow opens in either the current designer or 
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -97,7 +99,7 @@ Congratulations! You now receive a push notification each time you receive an em
 
 In this tutorial, you create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as Read.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
@@ -122,7 +124,9 @@ In this tutorial, you create a cloud flow that sends a push notification to your
     > [!div class="mx-imgBorder"]
     > ![Screenshot of creating a flow.](./media/email-triggers/email-triggers-sender-5.png "Create flow")
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -133,7 +137,7 @@ If you have rules that route emails to different folders based on certain proper
 > [!NOTE]
 > If you don't already have a rule that routes email to a folder other than your inbox, create such a rule and confirm it works by sending a test email.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
@@ -158,11 +162,11 @@ If you have rules that route emails to different folders based on certain proper
 
 Test the flow by sending an email that gets routed to the folder you selected earlier in this tutorial.
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
-
-
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

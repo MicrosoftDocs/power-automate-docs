@@ -80,14 +80,11 @@ Let's create the flow.
 
 1. Select the **Create** button to go to the next step.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of setting a schedule.](includes/media/modern-approvals/once-daily-schedule.png "Set schedule")
-
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to use expressions in conditions to check multiple values are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
 ## Select the spreadsheet and get all rows
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select **New step**.
 
@@ -105,13 +102,15 @@ When you create a cloud flow, your flow opens in either the current designer or 
     >[!div class="mx-imgBorder"]
     >![Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.](includes/media/new-step/select-table-to-search.png "List rows present in a table card")
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
 ## Check the status column of each row
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select **New step**.
 
@@ -141,13 +140,15 @@ When you create a cloud flow, your flow opens in either the current designer or 
     >[!div class="mx-imgBorder"]
     >![Screenshot of an 'or' expression.](./media/use-expressions-in-conditions/or-expression.png "'Or' expression")
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
 ## Delete matching rows from the spreadsheet
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select **Add an action** on the **If yes** branch of the condition.
 
@@ -169,7 +170,9 @@ When you create a cloud flow, your flow opens in either the current designer or 
 
 1. Save your flow.
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 

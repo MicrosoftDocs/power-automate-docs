@@ -75,11 +75,11 @@ To learn more about the different types of flows that you can create to automate
 
 Each template is designed for a specific purpose. For example, there are templates for sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg. They're intended to inspire you to create customized flows for the exact processes you need.
 
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+
 ## Create your first flow
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for this tutorial are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
-
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select a template that's useful for you. A simple template is [**Notify and Email when a new file is uploaded to OneDrive**](https://make.powerautomate.com/galleries/public/templates/ef6bf28037ca11e7870df906aa521b7a/notify-and-email-when-a-new-file-is-uploaded-to-onedrive/).
 1. Select **Continue**.
@@ -88,7 +88,10 @@ When you create a cloud flow, your flow opens in either the current designer or 
 
     ![Provide credentials for the connection.](./media/getting-started/full-flow.png)
 
-# [Copilot-powered designer](#tab/copilot-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -113,7 +116,7 @@ When you create a cloud flow from scratch, you control the entire workflow. Here
 
 You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**.
 1. Select **Peek code**.
@@ -122,7 +125,9 @@ You don't need to be a developer to create flows; however, Power Automate does p
 
     ![Peek code details.](media/getting-started/peek-code-details.png)
 
-# [Copilot-powered designer](#tab/Copilot-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -130,8 +135,6 @@ You don't need to be a developer to create flows; however, Power Automate does p
 
 When your creative juices start *flowing*, you might create many flows. Don't worry, finding your flows is easy - just use the search box on the **My flows**, **Team flows**, **Connections**, or **Solutions** screen to display only flows that match the search terms you enter.
 
-![Filter or search flows.](media/getting-started/filter-search-box.png)
- 
 > [!NOTE]
 > The search filter only finds flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
 

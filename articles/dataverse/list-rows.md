@@ -14,13 +14,13 @@ search.audienceType:
 
 Use the **List rows** action to retrieve multiple rows at once from Microsoft Dataverse with a structured query.
 
-Power Automate uses either the current designer or the copilot-powered editing designer (preview). To identify which designer you’re using, go to the Note section in [Understand the copilot-powered editing designer (preview)](/power-automate/flows-designer?branch=pr-en-us-2200).
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
 ## Get a list of rows
 
 Follow these steps to add the **List rows** action to your flow to return [up to 5,000 accounts](/powerapps/developer/common-data-service/webapi/query-data-web-api) from the **Accounts** table in Dataverse.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select **New step** to add an action to your flow.
 1. Enter **list rows** into the **Search connectors and actions** search box on the **Choose an operation** card.
@@ -29,7 +29,7 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 1. Select the **Accounts** table from the **Table name** list.
 1. Save and run your flow to confirm that no more than 5,000 rows are returned.
 
-# [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -49,14 +49,14 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 [Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. In the upper-right corner of the **List rows** card, select the menu (...).
 1. Select **Settings**.
 1. Move the **Pagination** slider to the **On** position if it's not already turned on.
 1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000. Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
 
-# [Copilot-powered designer (preview)](#tab/copilot-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -71,7 +71,7 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 The advanced options for the **List Rows** action allow you to sort, filter, arrange, and extend the results of a query.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 You can set advanced options directly on the **List rows** card. To see the options, select **Show advanced options**.
 
@@ -130,13 +130,13 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 
 Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 Type the following in the **Fetch Qml Query** field.
 
 ![List accounts example with FetchXML.](../media/list-rows/fetch-sml-example.png)
 
-# [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 

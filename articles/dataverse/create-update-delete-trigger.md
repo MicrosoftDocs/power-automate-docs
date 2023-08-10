@@ -40,9 +40,9 @@ The following information is required to use the **When a row is added, modified
 - Table name
 - Scope
 
-Power Automate uses either the current designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](/power-automate/flows-designer?branch=pr-en-us-2200).
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 Set the parameters directly on the card for the **When a row is added, modified or deleted** trigger.
 
@@ -89,7 +89,7 @@ Here’s what each scope means:
 
 You can set additional properties to define more granularly when the flow runs and the user profile under which it runs.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 To access the advanced options, select **Show advanced options**.
 
@@ -144,13 +144,15 @@ The flow owner must have the Microsoft Dataverse privilege **Act on Behalf of A
 
 When you create flows with the **When a row is added, modified or deleted** trigger, you can set each Microsoft Dataverse action in the flow to be performed using the context of a user, other than the flow owner.
 
-Follow these steps to impersonate a user:
+Follow these steps to impersonate a user.
+
+# [Classic designer](#tab/classic-designer)
 
 1. In the designer, select a value for **Run as** to tell Microsoft Dataverse which user’s context you intend to use for subsequent Dataverse actions.
 
-# [Current designer](#tab/current-designer)
+1. For each Dataverse action that you want to run as a different user, select the ellipses (**...**) in the upper-right corner and then select the **Use invoker’s connection** setting.
 
-For each Dataverse action that you want to run as a different user, select the menu in the upper-right corner (**...**) and then select the **Use invoker’s connection** setting.
+For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
@@ -158,9 +160,9 @@ For each Dataverse action that you want to run as a different user, select the m
 
 For each Dataverse action that you want to run as a different user, select an option in the **Run as** dropdown menu.
 
----
+For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
 
- For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
+---
 
 Here are the other options:
 

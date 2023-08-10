@@ -94,9 +94,9 @@ If you expect the flow to run but it didn’t run, see if it shows the trigger c
 
 Sometimes, the inputs and trigger conditions may cause failures. Follow these steps to verify your inputs and conditions.
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to verify inputs and trigger conditions are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Edit the flow.
@@ -117,7 +117,9 @@ When you create a cloud flow, your flow opens in either the current designer or 
 
    ![A screenshot that shows trigger conditions.](./media/triggers-introduction/trigger-conditions.png)
 
-# [Copilot-powered designer](#tab/copilot-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -165,7 +167,7 @@ See the following table to understand how your flow responds when it's turned ba
 
 Follow these steps to determine the type of trigger that your flow uses.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select the ellipsis (...) for your flow, and then select **Peek code**.
 
@@ -175,7 +177,9 @@ Follow these steps to determine the type of trigger that your flow uses.
 
    ![A screenshot of the recurrence section.](./media/triggers-introduction/frequency.png)
 
-# [Copilot-powered designer](#tab/copilot-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -205,7 +209,7 @@ And, if your license is the **Flow for Office 365** plan (from your Enterprise l
 
 Follow these steps to check the trigger wake up frequency.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Go to your flow trigger, and then select the ellipsis (...).
 1. Select **Peek code**.
@@ -216,7 +220,9 @@ Follow these steps to check the trigger wake up frequency.
 
    ![A screenshot of the frequency element.](./media/triggers-introduction/frequency.png)
 
-# [Copilot-powered designer](#tab/copilot-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 

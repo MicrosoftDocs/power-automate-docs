@@ -36,8 +36,6 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 
 ## Specify an event to start the flow
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for ho to create a flow are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
-
 First, select what event, or *trigger*, starts your flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
@@ -61,19 +59,13 @@ First, select what event, or *trigger*, starts your flow.
 
 1. If you haven't already connected your Twitter account to Power Automate, select **Sign in to Twitter**, and then provide your credentials.
 
-# [Current designer](#tab/current-designer)
+1. In the **Search text** box, type the keyword that you want to find.
 
-In the **Search text** box, type the keyword that you want to find.
-
-![Twitter keyword.](./media/get-started-logic-flow/twitter-keyword.png)
-
-# [AI-powered designer](#tab/ai-powered-designer)
-
----
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
 ## Specify an action
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Select **New step**.
 
@@ -97,6 +89,12 @@ In the **Search text** box, type the keyword that you want to find.
    Optionally, you can add more tokens, other text, or both to the body of the email.
 1. Near the top of the screen, select **Save**.
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Test your flow
 
 Send a tweet with the keyword that you indicated, or wait for someone else to post such a tweet.
@@ -106,9 +104,7 @@ Within a minute after the tweet is posted, an email message notifies you of the 
 > [!TIP]
 > Use the **Send email (V2)** action to format email in which you customize the font, use bold, italic or underline, customize the color and highlight, and create lists or links, and more.
 
-# [AI-powered designer](#tab/ai-powered-designer)
 
----
 
 ## Manage a cloud flow
 

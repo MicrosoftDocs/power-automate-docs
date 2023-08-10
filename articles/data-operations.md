@@ -35,13 +35,13 @@ Here's a quick video about data operations.
 * Access to Power Automate.
 * A tool such as [PostMan](https://www.getpostman.com/postman) to send HTTP POST requests with a JSON array to your flow.
 
-When you create a cloud flow, your flow opens in either the current designer or the AI-powered designer. The instructions for how to use data operations are slightly different for each designer. If you see the **Copilot** pane on the right, you're using the AI-powered designer. In this article, select the **Current designer** or **AI-powered designer** tab for instructions.
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
 
 ## Use the compose action
 
 Use the **Data Operation - Compose** action to save yourself from having to enter the same data multiple times as you're designing a cloud flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Search for **compose**, and then select the **Compose - Data Operation** action.
 
@@ -69,7 +69,9 @@ When you need to access the contents of the compose action, do so by following t
     >[!div class="mx-imgBorder"]
     >![Screenshot of using Outputs from the Compose action.](./media/data-operations/use-compose-output-2.png "Use Outputs from the Compose action")
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -77,7 +79,7 @@ When you need to access the contents of the compose action, do so by following t
 
 Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You'll use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Add a new action, search for **Join**, and then select **Data Operation - Join**.
 
@@ -96,7 +98,9 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
     >[!div class="mx-imgBorder"]
     >![Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.](./media/data-operations/join-output-2.png "Output of the Data Operation – Join action")
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -121,7 +125,7 @@ You want to reshape the incoming data by renaming `first` to `FirstName` and `la
 
 To do this:
 
-# [Current designer](#tab/current-designer)
+# [Classic designer](#tab/classic-designer)
 
 1. Add the **When an HTTP request is received** trigger to your flow.
 
@@ -140,7 +144,9 @@ To do this:
    > [!TIP]
    > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
 
-# [AI-powered designer](#tab/ai-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -161,7 +167,7 @@ In this example, you use the filter array action on this array:
 
 to create a new array that contains only objects in which `first` is set to `Eugenia`.
 
-Let's do this:
+# [Classic designer](#tab/classic-designer)
 
 1. Find, and then add, the **Filter array** action to your flow.
 2. Configure the filter array action as shown in the following screenshot.
@@ -177,6 +183,12 @@ Let's do this:
     [ { "first": "Eugenia", "last": "Lopez" }]
     ```
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Use the create CSV table action
 
 Use the **Create CSV table - Data Operation** action to change a JSON array input into a comma-separated value (CSV) table. You can keep the headers visible in the CSV output. In this example, you convert the following array into a CSV table:
@@ -184,6 +196,8 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 ``` JSON
 [ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
 ```
+
+# [Classic designer](#tab/classic-designer)
 
 1. Find, add, and then configure the **Create CSV table - Data Operation** action to resemble the following image.
 
@@ -197,6 +211,12 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the output from the create CSV table action, showing "first,last" in the first row followed by "Eugenia,Lopez" and "Elizabeth,Moore."](./media/data-operations/create-csv-table-output-2.png "CSV table output in the Body section")
+
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+---
 
 ## Use the create HTML table action
 

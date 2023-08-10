@@ -48,8 +48,8 @@ The flow performs the following steps:
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
->[!IMPORTANT]
->Always follow the [best practices for SharePoint security](/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
+> [!IMPORTANT]
+> Always follow the [best practices for SharePoint security](/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
 
 ## Prerequisites
 
@@ -74,7 +74,11 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+
 ## Add a trigger
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
@@ -82,7 +86,15 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 ![SharePoint info.](./media/modern-approvals/select-sharepoint-site-info.png)
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Add a profile action
+
+# [Classic designer](#tab/classic-designer)
 
 1. Select **New step**, and then type **profile** into the **Choose an action** search box.
 
@@ -94,7 +106,15 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 1. Select the fields from your profile that you want to include in your flow, and then select **Create** to save the work you've done so far.
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Add an approval action
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
@@ -103,19 +123,43 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 >
 > If your scenario requires it, you can attach files to your approval requests that use Microsoft Dataverse.
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Add a condition
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Add an email action for approvals
 
-Follow these steps to send an email if the vacation request is approved:
+Follow these steps to send an email if the vacation request is approved.
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
    ![configure approved email template.](./media/modern-approvals/yes-email-config.png)
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Add an update action for approved requests
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
@@ -124,13 +168,29 @@ Follow these steps to send an email if the vacation request is approved:
 
 ![update item configuration.](./media/modern-approvals/configure-update-item.png)
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Add an email action for rejections
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
 ![configuration for rejected requests.](./media/modern-approvals/configure-rejected-email.png)
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Add update action for rejected requests
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
@@ -147,9 +207,23 @@ If you've followed along, your flow should resemble this screenshot:
 
 Now that we've created the flow, it's time to test it!
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
+
 ## Request an approval to test your flow
 
+# [Classic designer](#tab/classic-designer)
+
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
+
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+---
 
 ## Create long-running approvals
 
@@ -157,7 +231,7 @@ If it's likely that your flow will run for more than 30 days, consider storing y
 
 To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
 
->[!TIP]
+> [!TIP]
 > If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval request is completed.
 
 ## Cancel an approval request
@@ -167,10 +241,10 @@ Sometimes you might want to cancel an approval request that you've sent. Possibl
 1. Select the approval
 1. Select **Cancel approval** in the side pane.
 
->[!TIP]
->You can always select the **History** tab to view the approval requests that you've canceled.
+> [!TIP]
+> You can always select the **History** tab to view the approval requests that you've canceled.
 
->[!NOTE]
+> [!NOTE]
 > The cancel feature is supported on the **Create an approval (v2)** action.
 
 ## Request approvals from guest users
