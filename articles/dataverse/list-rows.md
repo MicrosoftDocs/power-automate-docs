@@ -77,7 +77,7 @@ You can set advanced options directly on the **List rows** card. To see the opti
 
 :::image type="content" source="../media/list-rows/advanced-list-rows.png" alt-text="Screenshot of advanced options in the List rows card.":::
 
-# [Copilot-powered editing (preview)](#tab/copilot-powered-designer)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -139,8 +139,6 @@ Type the following in the **Fetch Qml Query** field.
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-<!--Matt: Please list steps for how to get there. Might not need a screenshot.-->
 
 ---
 

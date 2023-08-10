@@ -44,7 +44,7 @@ When you reference a variable, use the variable's name as the token, not the act
 > [!NOTE]
 > Before you can add actions for creating and working with variables, your flow must start with a trigger. You can't use a mobile device to add variables.
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](./flows-designer.md).
 
 ### Initialize a variable
 

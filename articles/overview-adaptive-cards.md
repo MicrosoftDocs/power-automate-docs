@@ -28,7 +28,7 @@ Since Adaptive Cards adapt to their host, they are perfect vehicles for sharing 
 
   ![A screenshot of Adaptive Cards.](media/adaptive-cards/multi-adaptive-cards.png)
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
 
 ## Currently available actions for flows
  
@@ -49,7 +49,7 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -67,11 +67,10 @@ This action posts an adaptive card as a Flow bot to a specific user, like the ca
 
     When you use this card, the flow waits for a response from any Teams member.
 
-
-
 # [Classic designer](#tab/classic-designer)
 
 ![Post an adaptive card as the Flow bot to a Teams channel, and wait for a response.](media/adaptive-cards/bottom.png)
+
 ---
 
 # [Copilot-powered editing (preview)](#tab/copilot-powered-designer)

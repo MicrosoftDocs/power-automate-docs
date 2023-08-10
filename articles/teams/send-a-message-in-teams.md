@@ -58,6 +58,8 @@ The **Post a message in a chat or channel** action can send a message in the fol
 
 The **Post as** and **Post in** options within the action control all the different combinations of how messages can be posted in Teams.
 
+---
+
 ## Post a message as the Flow bot in a Teams channel
 
 To send a message as the Flow bot in a Teams Channel select the **Post as** option as **Flow bot** and the **Post in** option as Channel. Once you do two more dynamic inputs show up, which allows you to specify the Team and Channel in which to send the message and add your message in the message field.
