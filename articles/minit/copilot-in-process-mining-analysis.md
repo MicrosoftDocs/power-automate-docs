@@ -58,7 +58,7 @@ Copilot in desktop leverages knowledge of opened view(process) statistics and ca
 
 Copilot feature is started by clicking on Copilot icon in right side of top status bar and is available across all Desktop application screens for opened view. Copilot feature is not available in Process Hub, because no process/view is selected.
 
-## How to write a good prompt
+## How to write a good prompt in process mining
 For more general information about writing prompts with generative AI, go to The art of the prompt: [How to get the best out of generative AI](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/)
 
 For general information about writing prompts in Power Automate, go to: [How to write a good prompt in Power Automate](https://learn.microsoft.com/en-us/power-automate/get-started-with-copilot#how-to-write-a-good-prompt)
