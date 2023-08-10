@@ -50,7 +50,7 @@ BODY:
             {
                 "username":{"value":"{MACHINE_ACCOUNT}"},
                 "password":{"value":"{MACHINE_PASSWORD}"},
-                "targetId":{"value":"{MACHINE_OR_GROUP_ID}"}
+                "targetId":{"value":"{GROUP_ID}"}
             }
         }
     }
@@ -62,7 +62,10 @@ The above example contains placeholders:
 - CONNECTION_ID: It will be the connection id use to create the connection. It need to be a valid Guid.
 - MACHINE_ACCOUNT: The username of the account used to open a Windows session.
 - MACHINE_PASSWORD: The password the account.
-- MACHINE_OR_GROUP_ID: The machine or groupe id we want to create the connection for.
+- GROUP_ID: The machine or groupe id we want to create the connection for.
 
-Once the request is completed, note the connection id that you use above.
+Once the request is completed, note the connection id that you use above, we will use it in the next step.
+
+### Next
+- [Pre-populate connection references for automated deployment](/power-platform/alm/conn-ref-env-variables-build-tools)
 

@@ -11,6 +11,8 @@ We will cover how to setup an healthy ALM (Application Lifecycle Management) str
 
 We recommend to take advantages of [Power Platform ALM resources](/power-platform/alm/).
 
+Follow the list of tasks below to properly configured and use your ALM with you Desktop Flow and Cloud Flow. To benefit from the latest feature of Desktop Flow, we recommend following those steps on a environment with [schema v2 activated](/power-automate/desktop-flows/schema).
+
 
 | Task  |  Description  | Links |
 |-------|---------------|-------|
@@ -20,4 +22,5 @@ We recommend to take advantages of [Power Platform ALM resources](/power-platfor
 | 4. Configure ADO pipeline to export and commit into repository | Learn how to setup your ADO pipeline to export and commit changes into your repository. | [Build pipeline](/power-platform/alm/devops-build-tool-tasks#build-pipeline-export-solution-from-development)|
 | 5. Diff your changes | Learn how to compare changes between two version of your solution | [Use AzureDevOps to see diff](./alm-diff.md) |
 | 6. Share a machine with a Service Principal and create a connection | Learn how to share a machine with a Service Principal and create a connection to the machine | [Share a machine with a Service Principal and create a connection](./alm-connection.md)|
-| 7. Build and deploy | Learn how to build your application and deploy it | [Build your solution](/power-platform/alm/devops-build-tool-tasks#build-pipeline-build-a-managed-solution) <br> [Deploy your solution](/power-platform/alm/devops-build-tool-tasks#release-pipeline-deploy-to-a-production-environment-prod)|
+| 7. Create setting file and configure connection reference | Learn how to create a setting file for your deployment and set the connection id used by the connection reference. | [Pre-populate connection references for automated deployment](/power-platform/alm/conn-ref-env-variables-build-tools)
+| 8. Build and deploy | Learn how to build your application and deploy it | [Build your solution](/power-platform/alm/devops-build-tool-tasks#build-pipeline-build-a-managed-solution) <br> [Deploy your solution](/power-platform/alm/devops-build-tool-tasks#release-pipeline-deploy-to-a-production-environment-prod)|
