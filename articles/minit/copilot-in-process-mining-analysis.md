@@ -36,6 +36,7 @@ Both copilots also response to user requests about generic process mining for ea
 You need a Power Platform environment in the United States or Preview (United States) region for Copilot in Process Mining. 
 
  **Note**
+ 
 If your environment is in the United States or Preview (United States) region and you still don’t see the copilot experience, contact your admin. Ask if they've requested Microsoft Support to disable Copilot in Power Automate.
 
 ## Copilot in data ingestion
@@ -46,11 +47,12 @@ Heather TODOs
 
 Copilot in Desktop application helps users to generate process insights. Copilot offers ability to summarize findings quantitatively and qualitatively. User can choose prepared suggestions for easy start.
 
-<picture>
+![Screenshot of Copilot in Desktop application.](media/copilot-desktop-app.png)
 
 User can continue in conversation with Copilot by selecting subsequent suggestions or turn to ask own questions at any time.
 
-<picture 2>
+![Screenshot of Copilot asnwering custom prompt by user.](media/copilot-custom-prompt.png)
+
 
 Copilot in desktop leverages knowledge of opened view(process) statistics and can communicate the various statistical information. Without Copilot user need to find out this information on various Statistics or Variants screens in the application.
 
