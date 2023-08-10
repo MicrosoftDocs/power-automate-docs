@@ -9,7 +9,7 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: napienko
+ms.author: kisubedi
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
@@ -61,7 +61,7 @@ In this tutorial, we create a cloud flow that sends a push notification to your 
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
 
 # [Classic designer](#tab/classic-designer)
 
@@ -91,7 +91,7 @@ Congratulations! You now receive a push notification each time you receive an em
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -126,7 +126,7 @@ In this tutorial, you create a cloud flow that sends a push notification to your
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -164,7 +164,7 @@ Test the flow by sending an email that gets routed to the folder you selected ea
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 

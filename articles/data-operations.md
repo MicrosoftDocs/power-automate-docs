@@ -35,7 +35,7 @@ Here's a quick video about data operations.
 * Access to Power Automate.
 * A tool such as [PostMan](https://www.getpostman.com/postman) to send HTTP POST requests with a JSON array to your flow.
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
 
 ## Use the compose action
 
@@ -71,7 +71,7 @@ When you need to access the contents of the compose action, do so by following t
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -100,7 +100,7 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -146,7 +146,7 @@ To do this:
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -185,7 +185,7 @@ to create a new array that contains only objects in which `first` is set to `Eug
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -214,7 +214,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 

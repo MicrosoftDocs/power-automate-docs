@@ -27,7 +27,7 @@ Here are some of the top scenarios in which you can use Power Automate to manage
 
 - Send a daily digest email with a summary table.
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
 
 ## Send email from your account
 
@@ -44,7 +44,7 @@ For example, if you have a cloud flow that sends you an email as soon as your it
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
@@ -76,14 +76,14 @@ Use the [Send an email from a shared mailbox (V2)](/connectors/office365/) actio
 
 # [Classic designer](#tab/classic-designer)
 
-The distribution list admin must first give you [permissions](/microsoft-365/admin/manage/send-email-as-distribution-list?view=o365-worldwide) to the shared mailbox. When you use this action, email appears in the Sent folder of your shared mailbox because you're sending it from that account directly.
+The distribution list admin must first give you [permissions](/microsoft-365/admin/manage/send-email-as-distribution-list?) to the shared mailbox. When you use this action, email appears in the Sent folder of your shared mailbox because you're sending it from that account directly.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows the Send an email from a shared mailbox (V2) card.](./media/email/shared-mailbox.png "Send an email from a shared mailbox (V2) card")
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
 
