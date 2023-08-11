@@ -29,7 +29,7 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-When you build automation with Power Automate, it might take valuable time to learn which actions and triggers you need, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can just write a description of what you want to automate in everyday language. Power Automate then uses OpenAI Codex to translate your description into code, and then provides a corresponding flow that you can create instantly.
+When you build automation with Power Automate, it might take valuable time to learn which actions and triggers you need, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can just write a description of what you want to automate in everyday language. Power Automate then uses OpenAI Codex to translate your description into code, and then provides a corresponding flow that you can create instantly across most of the connectors.
 
 > [!IMPORTANT]
 >
@@ -95,18 +95,6 @@ In the following example, we'll build an automated cloud flow that sends a notif
 - Cloud flows are the only type of flow that you can create from a description.
 
 - In the current version, the AI might not fill in some parameters automatically, even if you provide them in the description.
-
-- The AI model that transforms a description into a cloud flow is optimized to automate the main actions for the following applications.
-
-  - Microsoft Excel
-  - Microsoft Forms
-  - Microsoft 365 Outlook
-  - Microsoft OneDrive for Business
-  - Microsoft Planner
-  - Microsoft SharePoint
-  - Microsoft Teams
-  - Approvals
-  - Microsoft Dataverse
   
 ### See also
 
