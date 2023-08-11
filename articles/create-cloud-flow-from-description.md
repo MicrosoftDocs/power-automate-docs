@@ -56,7 +56,7 @@ In the following example, we'll build an automated cloud flow that sends a notif
 
     :::image type="content" source="media/easy-flow/describe-it-main.png" alt-text="Screenshot of the Describe it to design it (preview) tile.":::
 
-   A screen opens where you can enter a description of what you want to automate. You'll also get an example you can use for inspiration and try it out right away.
+   A screen opens where you can enter a description of what you want to automate. You'll also get an example you can use for inspiration and try it out right away. As an alternate, you can also go to **Home** and start describing your requirement. More information: [Create a flow using Copilot](get-started-with-copilot.md)
 
 1. For this example, enter **Every time someone responds to a Microsoft Forms survey, post a message to Teams and send an email**.
 
