@@ -15,7 +15,7 @@ search.audienceType:
 - enduser
 ---
 
-# Copilot in process mining (preview)
+# Copilot in process mining analysis (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
