@@ -4,7 +4,7 @@ description: Learn about the Power Automate v2 schema.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/24/2023
+ms.date: 07/11/2023
 ms.author: dbekirop
 ms.reviewer: gtrantzas
 contributors:
@@ -12,11 +12,10 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Power Automate v2 schema
 
 > [!NOTE]
-> The following article applies only to users with paid Power Automate subscriptions.
+> The Power Automate and Dataverse feature described in this article is applicable to users who sign in [with work, or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison). 
 
 Power Automate stores desktop flows in Microsoft Dataverse, which lets you securely store and manage data used by business applications.
 
@@ -32,9 +31,17 @@ There's no immediate need to act, although we recommend you to enable future pro
 
 Power Platform administrators can choose when to enable the v2 storage schema. To enable it, go to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) > **Environments** > **Settings** > **Product** > **Features** > **Enable storage of desktop flow files into v2 schema**. This setting applies at the environment level.
 
-:::image type="content" source="media/schema/schema-v2-option.png" alt-text="The option in the Power Platform Admin Center to enable the new schema.":::
+:::image type="content" source="media/schema/schema-v2-on.png" alt-text="The option in the Power Platform Admin Center to enable the new schema.":::
 
 Convert desktop flows stored in the v1 schema to the v2 schema by Q1 2024, as then the v1 schema will be deprecated. You need Power Automate for desktop v2.29 or later to author and run desktop flows using environments where the v2 schema is enabled. This requirement ensures desktop flow makers and attended and unattended users can take advantage of the new functionality.
+
+## Schema v2 enabled by default
+
+Starting October 2023, v2 schema will be automatically enabled for all environments. Although not recommended, the option to opt-out of the auto-enablement is available in the Power Platform admin center.
+
+:::image type="content" source="media/schema/schema-v2-off.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
+
+In 2024, v2 schema will be turned on for all environments without the option to disable the feature. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
 
 ## Manage desktop flows in environments with the v2 schema enabled
 

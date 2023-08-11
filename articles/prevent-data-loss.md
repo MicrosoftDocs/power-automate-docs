@@ -28,7 +28,7 @@ To learn more about protecting your data, go to [Data loss prevention policies](
 Power Automate allows you to create and enforce DLP policies that classify desktop flows modules (or individual module actions) as **business**, **non-business**, or **blocked** categories. This categorization prevents makers from combining modules and actions from different categories into a desktop flow, or between a cloud flow and the desktop flows it uses.
 
 >[!IMPORTANT]
-> - Enforcement of DLP policies will be available for [managed environments](/power-platform/admin/managed-environment-overview) only. Effective September 2023, only desktop flows that are located in Managed Environments will be evaluated by DLP policies. 
+> - Enforcement of DLP policies will be available for [managed environments](/power-platform/admin/managed-environment-overview) only. Effective end of 2023, only desktop flows that are located in Managed Environments will be evaluated by DLP policies. 
 > - DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall and update to the latest version.
 
 ### View desktop flows actions groups in Power Platform admin center
@@ -70,7 +70,7 @@ There are other options to govern desktop flow:
 
 1. **Ability to govern desktop flow orchestration**: the desktop flow connector can still be governed in your policies like any other connector in all environments.
 
-1. **Ability to govern usage of Power Automate for desktop**: you can govern Power Automate for desktop flows through GPO. This governance allows you to turn on or off the usage of Power Automate for desktop flows for actions such as to restrict to a set of environments or regions, limit use of account types, restrict manual update. You can [learn more about Governance in Power Automate](/power-automate/desktop-flows/governance).
+1. **Ability to govern usage of Power Automate for desktop**: you can govern Power Automate for desktop flows through GPO. This governance allows you to turn on or off the usage of Power Automate for desktop flows for actions such as to restrict to a set of organizations (tenants) or regions, limit use of account types, restrict manual update. You can [learn more about Governance in Power Automate](/power-automate/desktop-flows/governance).
 
 ### Desktop flow modules in DLP
 
@@ -238,7 +238,7 @@ The following is a list of DLP enforcement changes and the date the changes were
 |May 2022 | Delegated authorization background job enforcement | DLP policies enforced are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Full |June 2, 2022|July 21, 2022|
 |May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have **type=Request** and **kind=apiConnection**. Many of the affected triggers are instant triggers, which are used in instant (manually triggered) flows. The affected triggers include the following. <br>- [Power BI](/connectors/powerbi/) - Power BI button clicked  <br>- [Teams](/connectors/teams/) - From the compose box (V2)<br>- [OneDrive for Business](/connectors/onedriveforbusiness/) - For a selected file  <br>- [Dataverse](/connectors/commondataserviceforapps/) - When a flow step is run from a business process flow <br>- [Dataverse (legacy)](/connectors/commondataservice/) - When a record is selected <br>- [Excel Online (Business)](/connectors/excelonlinebusiness/) - For a selected row <br>- [SharePoint](/connectors/sharepointonline/) - For a selected item <br>- [Power Virtual Agents](/connectors/powervirtualagents/) - When Power Virtual Agents calls a flow (V2) | Full |June 2, 2022|August 25, 2022|
 |July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with full enforcement of DLP policies on child flows. Once full enforcement is available, the enforcement will include child desktop flows. | Full |February 14, 2023|March 2023|
-|January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Full | - |March 2023|
+|January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Learning | - |October 2023|
 
 *Availability schedule might change and depends on the rollout.
 

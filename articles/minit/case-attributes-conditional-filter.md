@@ -1,13 +1,13 @@
 ---
 title: Case attributes conditional filter
-description: Learn how to use the case attributes conditional filter in minit.
+description: Learn how to use the case attributes conditional filter in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -39,7 +39,6 @@ The **Attributes (conditional)** filter adds conditions to the **Attribute** fil
 1. Select **Apply**.
 
    :::image type="content" alt-text="Screenshot of specifying the additional criteria type." source="media/attributes-conditional-filter.png":::
-
 
 ## Process metric
 

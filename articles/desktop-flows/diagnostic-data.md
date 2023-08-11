@@ -4,7 +4,7 @@ description: Learn about the diagnostic data Microsoft collects in Power Automat
 author: georgiostrantzas
 ms.topic: conceptual
 ms.date: 01/10/2023
-ms.author: marleon
+ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
 - PetrosFeleskouras

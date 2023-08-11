@@ -1,15 +1,15 @@
 ---
 title: Power Automate US Government
-description: Provides information about Power Automate US Government service description, plans, and limitations
+description: Learn about Power Automate US Government service description, plans, and limitations.
 services: ''
 suite: flow
-author: msftman
+author: kenseongtan
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
-ms.date: 09/27/2022
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.topic: conceptual
+ms.date: 08/03/2023
+ms.author: kenseongtan
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ---
@@ -56,8 +56,8 @@ Entities with questions about eligibility for Power Automate US Government shoul
 
 Access to Power Automate US Government plans is restricted to the offerings described in the following section; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
-- Power Automate per flow plan for Government
-- Power Automate per user plan for Government
+- Power Automate Process plan (previously Power Automate per flow) for Government
+- Power Automate Premium plan (Power Automate per user) for Government
 
 - In addition to the standalone plans, Microsoft 365 US Government and Dynamics 365 US Government plans also include the Power Apps and Power Automate capabilities, allowing customers to extend and customize Microsoft 365 and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation). 
 
@@ -144,9 +144,9 @@ Power Automate US Government provides the ability to integrate third-party appli
 
 ## Configure mobile clients
 
-Here are the steps that you must take to sign in with the Power Automate mobile client.  Currently, only the iOS version of the mobile client supports connecting to GCC environments.
+Here are the steps that you must take to sign in with the Power Automate mobile client.
 
-1. On the sign-in page, select the gear icon in the lower-right corner.
+1. On the sign-in page, select ![Wifi icon with a gear sign.](media/us-govt/icon-wifi-gear.png) (a wifi icon with a gear sign) in the upper-right corner.
 1. Select **Region settings**.
 1. Select GCC: US Government GCC
 1. Select OK.
@@ -184,8 +184,7 @@ Commercial version | US Government version
 [https://flow.microsoft.com/connectors](https://flow.microsoft.com/connectors) | [https://gov.flow.microsoft.us/connectors (GCC)](https://gov.flow.microsoft.us/connectors), [https://high.flow.microsoft.us/connectors (GCC High)](https://high.flow.microsoft.us/connectors), [https://flow.appsplatform.us/connectors/](https://flow.appsplatform.us/connectors/) (DoD)
 |[https://make.powerautomate.com](https://make.powerautomate.com)|[https://make.gov.powerautomate.us (GCC)](https://make.gov.powerautomate.us), [https://make.high.powerautomate.us (GCC High)](https://make.high.powerautomate.us), and [https://make.powerautomate.appsplatform.us (DoD)](https://make.powerautomate.appsplatform.us)
 
-
-For those customers that implement network restrictions, please ensure access to the following domains are made available to your end-users’ access points:
+For those customers who implement network restrictions, ensure access to the following domains is made available to your end-users’ access points:
 
 ### GCC Customers:
 * .microsoft.us
