@@ -126,9 +126,9 @@ To learn more, go to [Power Platform regions](/power-platform/admin/regions-over
 
 You can disable Edit with Copilot (preview) by contacting Microsoft Support.
 
-### How is copilot-powered editing (preview) different from the text generation model in AI Builder?
+### How is Edit with Copilot (preview) different from the text generation model in AI Builder?
 
-Copilot-powered editing (preview) is designed to help you create and edit Power Automate flows just by describing them in everyday language, providing helpful guidance along the way.
+Edit with Copilot (preview) is designed to help you create and edit Power Automate flows just by describing them in everyday language, providing helpful guidance along the way.
 
 The text generation model in AI Builder lets you use the GPT model directly in your Power Automate flows and Power Apps apps for various scenarios such as text summarization, draft responses, classify text, and more.  
 

@@ -16,11 +16,11 @@ These frequently asked questions (FAQ) describe the AI impact of Power Automate'
 
 ## What is Edit with Copilot (preview)?
 
-The AI powered editing experience in Power Automate is a new way to build automation (at this time cloud flows specifically) with the help of an AI assistant&mdash;the Copilot. The Copilot in Power Automate stays with you in your flow building journey and helps you build, set up, and run an automation on your behalf through a chat experience. It helps answer flow and product questions, too. It takes your input and provides either documentation, links, or answers in the Copilot chat pane. As an alternative, it makes changes to the flow per your natural language description.
+The Edit with Copilot experience in Power Automate is a new way to build automation (at this time cloud flows specifically) with the help of an AI assistant&mdash;the Copilot. The Copilot in Power Automate stays with you in your flow building journey and helps you build, set up, and run an automation on your behalf through a chat experience. It helps answer flow and product questions, too. It takes your input and provides either documentation, links, or answers in the Copilot chat pane. As an alternative, it makes changes to the flow per your natural language description.
 
 ## What are the system’s capabilities?
 
-The system is a copilot embedded in the cloud flows AI-powered designer. It helps you create or edit your flow. The system can:
+The system is a copilot embedded in the cloud flows Edit with Copilot designer. It helps you create or edit your flow. The system can:
 
 - Create a new flow from scratch.
 
