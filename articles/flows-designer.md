@@ -19,12 +19,17 @@ ms.reviewer: angieandrews
 
 # Understand the Edit with Copilot designer (preview)
 
-[This article is prerelease documentation and is subject to change.]
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-You can create, configure, and customize your cloud flows with the current designer or the Edit with Copilot designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
+You can create, configure, and customize your cloud flows with the classic designer or the Edit with Copilot designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
 > [!NOTE]
-> If you see the Copilot pane on the right, you're using the Edit with Copilot designer. Other ways you can identify this deisgner are if the cards in the flow are small, and there's a standalone configuration pane on the left when you select a card.
+> Here are some visual queues that tell you that you're using the Edit with Copilot designer:
+> - The Copilot pane appears on the right.
+> - The cards in the flow are small.
+> - The standalone Action configuration pane appears on the left when you select a card.
+>
+> To learn more about the classic designiner versus the Edit with Copilot designer, go to [Differences between the classic and Edit with Copilot (preview) designers](#differences-between-the-classic-and-edit-with-copilot-preview-designers) in this article.
 
 ## Overview
 
@@ -48,7 +53,7 @@ Legend:
 
 > [!IMPORTANT]
 > - This feature might not be available in your region or environment yet.
-> - To use and learn about the availability of the Edit with Copilot designer, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
+> - To use and learn about the availability of the Edit with Copilot (preview) designer, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
@@ -148,3 +153,17 @@ The last option in the zooming icons is the minimap. Select this icon to focus o
 
 :::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot of the four zoom icons.":::
 
+## Differences between the classic and Edit with Copilot (preview) designers
+
+With the Edit with Copilot designer, you can use natural language to tell Copilot what you want to do and it will help you get started.
+
+For example, Copilot can help you with the following tasks:
+- Create a flow from scratch
+- Edit and improve a flow
+- Learn about how your flow works
+
+Your cards on a flow that uses the Edit with Copilot designer are smaller than the cards on a flow that uses the classic designer. One of the reasons is that smaller cards allow you a larger canvas area to display complex flows. To allow for the small cards, the configuration items associated with each card are available in the standalone Action configuration pane on the left when you select a card.
+
+To compare this view to the classic designing, you can get the same configuration items directly on the card.  
+
+To learn more, go to (get-started-with-copilot.md).
