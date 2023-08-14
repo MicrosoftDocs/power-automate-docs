@@ -1,6 +1,6 @@
 ---
-title: Associate flows to apps
-description: Learn how to associate automated and scheduled flows with Power Apps and Dynamics 365 apps.
+title: Associate flows with apps
+description: Learn how to associate automated and scheduled flows with apps in Power Apps and with Dynamics 365 apps.
 author: PriyaKodukula
 contributors:
   - PriyaKodukula
@@ -12,101 +12,89 @@ ms.date: 05/08/2023
 ms.custom:
 ---
 
-# Associate flows to apps
+# Associate flows with apps
 
-You can associate automated and scheduled flows with Power Apps and Dynamics 365 apps from the Power Automate portal. This feature allows you to manage flows and apps together, which makes it easier to keep track of dependencies. If the associated Power Apps or Dynamics 365 app is missing in any environment, the flow will alert you about the missing dependency. It also ensures that apps are always up to date.
+From the Power Automate portal, you can associate automated and scheduled flows with apps in Power Apps and with Dynamics 365 apps. You can then manage flows and apps together and more easily keep track of dependencies. If the associated app is missing in any environment, the flow alerts you about the missing dependency. This feature also ensures that apps are always up to date.
 
-This feature can provide relief to makers who often struggle to keep track of which flows are being used by which apps. Without this association, flows can break if the corresponding app isn't present in the environment. This can cause frustration and delays.
+This feature can provide relief to makers who often struggle to keep track of which flows are used by which apps. Without the association, flows can break if the corresponding app isn't present in the environment. The result can be frustration and delays.
 
 ## Add an association
 
-Once you've made the association between a flow and an app with the following steps, it will be preserved as the flow is deployed in other environments. This consistency and continuity will help to reduce errors and speed up the development process.
+To make an association between a flow and an app, follow these steps. For consistency and continuity, the association is then preserved as the flow is deployed in other environments. In this way, it helps reduce errors and speed up the development process.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. On the left navigation pane, select **My flows**.
+1. Find and select the flow that you want to associate with an app.
+1. On the **Associated Apps** tile in the lower right, select **Edit**.
 
-1. On the panel to the left, select **My flows**.
-
-1. Find and select the flow you want to associate.
-
-1. On the **Associated apps** tile at the bottom-right, select **Edit**.
-
-    :::image type="content" source="./media/associate-flow-to-app/edit-apps.png" alt-text="Screenshot of the Edit button in the Associated Apps tab.":::
+    :::image type="content" source="./media/associate-flow-to-app/edit-apps.png" alt-text="Screenshot that shows the Edit button on the Associated Apps tile.":::
 
 1. On the **Associated Apps** page, select **Add association**.
+1. By default, the **Power Apps** tab is selected and shows the apps in Power Apps that use the same data sources as the flow. To find Dynamics 365 apps, select the **Dynamics 365** tab.
 
-    You'll find the apps in Power Apps that are using the same data sources as the flow.
+    :::image type="content" source="./media/associate-flow-to-app/add-apps.png" alt-text="Screenshot that shows the Power Apps and Dynamics 365 tabs.":::
 
-1. To find Dynamics 365 apps, select the **Dynamics 365** tab.
+    > [!NOTE]
+    > If you can't find your app, go to [Why can't I find my app in the list of apps?](#why-cant-i-find-my-app-in-the-list-of-apps) in the "FAQ" section of this article.
 
-    :::image type="content" source="./media/associate-flow-to-app/ADD-apps.png" alt-text="Screenshot of the Power Apps and Dynamics 365 tabs.":::
+1. Select one or more apps, and then select **Save**.
+1. To view the associated apps, go back to the flow details.
 
->[!NOTE]
->
-> If you're unable to find your app, go to [Why can't I find my app in the list of apps?](#why-cant-i-find-my-app-in-the-list-of-apps) in the *FAQ* section of this article.
-
-1. On the **Associated Apps** page, select one or more apps, and then select **Save**.
-
-1. To see the associated apps, go back to flow details.  
-
-    :::image type="content" source="./media/associate-flow-to-app/assoc-apps.png" alt-text="Screenshot of the associated apps list.":::
+    :::image type="content" source="./media/associate-flow-to-app/assoc-apps.png" alt-text="Screenshot of the associated app list.":::
 
 ## Remove an association
 
 To remove an association between a flow and an app, follow these steps.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-
-1. On the **Associated apps** tile at the bottom-right, select **Edit**.
-
-1. Select the app you want to delete.
-
-1. When a trash can appears next to the app name, select it.
-
-1. On the **Remove app association** screen, select **Remove**.
+1. On the **Associated Apps** tile in the lower right, select **Edit**.
+1. Select the app that you want to delete.
+1. When a trash can symbol appears next to the app name, select it.
+1. On the **Remove app association** page, select **Remove**.
 
 ## FAQ
 
 ### Why can't I find my app in the list of apps?
 
-It could be due to one of the following reasons:
+Your app might not be listed for one of the following reasons:
 
-- You don’t have access to the app.
+- You don't have access to the app.
 - The app isn't installed in the environment.
-- The app doesn't use the same data sources as the flow.  
+- The app doesn't use the same data sources as the flow.
 
-### I associated 10 apps, but why do I see only four apps in the flow details page?
+### I associated 10 apps. So why are only four apps shown on the flow details page?
 
-The **Associated apps** tile in the flow details page shows only the top four apps. If you want to see the entire list, select **Edit**. All apps will then appear on the **Associated apps** page.  
+The **Associated Apps** tile on the flow details page shows only the top four apps. To view the whole list, select **Edit**. All apps then appear on the **Associated Apps** page.
 
-### I'm deploying the flow into production. Will I need to associate again, once the flow is in production?
+### I'm deploying the flow into production. Will I have to associate again after the flow is in production?
 
-You need to make the association only once in the lower environments. The association is preserved as the flow is deployed in other environments.  
+You need to make the association only once in the lower environments. The association is then preserved as the flow is deployed in other environments.
 
-### Why does my app association status display as failed?
+### Why is the status of my app association shown as failed?
 
-You'll see the status of your apps in the **Associated Apps**  screen.
+The **Associated Apps** page shows the status of your apps.
 
-:::image type="content" source="./media/associate-flow-to-app/failed.png" alt-text="Screenshot of the status of your apps in the Associated Apps screen.":::
+:::image type="content" source="./media/associate-flow-to-app/failed.png" alt-text="Screenshot that shows the status of apps on the Associated Apps page.":::
 
-The **Association failed** status could be due to one of the following reasons:
+The *Association failed* status might be caused by one of the following reasons:
 
-- The app is removed from the environment.  
-- The app is edited and is no longer using the same data sources as the flow.
+- The app is removed from the environment.
+- The app is edited and no longer uses the same data sources as the flow.
 - You no longer have access to the app.
 
-### My flow has a Power Apps trigger, but why is the associated apps tile empty?
+### My flow has a Power Apps trigger. So why is the Associated Apps tile blank?
 
-This is a known issue. We don't automatically display the apps that are using the flow when the flow has a Power Apps trigger. We plan to implement it soon.  
+This is a known issue. If a flow has a Power Apps trigger, the apps that use that flow aren't automatically shown. We plan to implement the functionality soon.
 
-### I have a Power Apps per app license. How can I ensure the in-context flows run?
+### I have a Power Apps per app license. How can I ensure that the in-context flows run?
 
-A Power Apps per app license allows a limited set of Power Automate capabilities. If the flow is supporting an app in Power Apps, associate the flow to the app. Once the association is done, users with Power Apps per app license can use the flow.  
+A Power Apps per app license allows for a limited set of Power Automate capabilities. If the flow is supporting an app in Power Apps, associate the flow with the app. After the association is made, users who have a Power Apps per app license can use the flow.
 
 ### I'm an admin and want to associate flows and apps in bulk. Is there an admin command?
 
-Use the PowerShell command in [How can I associate in context flows to apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps) in the *FAQs about licenses* article.
+Use the PowerShell command in [How can I associate in context flows to Power Apps/Dynamics365 apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps) in the *Frequently asked questions about Power Automate licensing* article.
 
 ### See also
 
-- [How can I associate in context flows to apps?](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps)
+- [How can I associate in context flows to Power Apps/Dynamics365 apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps)
 - [Can I use service principal in flows, and does it count against my request limits?](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits)

@@ -29,7 +29,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 - The **Owner** role must be attributed to the user performing the initial container setup for the environment for the following users in the same environment. These users are connecting to the same container and must have the **Storage Account Contributor** role assigned.
 
 - The Cross-Origin Resource Sharing (CORS) rule is established to share with Power Automate Process Mining.
-    - Allowed origins must be established to `make.powerautomate.com`.
+    - Allowed origins must be established to `https://make.powerapps.com`.
     - Allowed methods must include: `get`, `options`, `put`.
     - Allowed headers should be as flexible as possible. We recommend defining them as `\*`.
     - Exposed headers should be as flexible as possible. We recommend defining them as `\*`.
