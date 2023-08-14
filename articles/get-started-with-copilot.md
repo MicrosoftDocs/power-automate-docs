@@ -98,12 +98,11 @@ You can use Edit with Copilot (preview) to change your existing flows. You donâ€
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the left panel, select **My flows**.
-1. Find your flow, and then select the vertical ellipses (**&vellip;**).
-1. Select **Edit** . **Edit with Copilot (preview)**.
+1. Find your flow, and then select the vertical ellipses (**&vellip;**) > **Edit with Copilot (preview)**.
   
     :::image type="content" source="./media/get-started-with-copilot/copilot-edit.png" alt-text="Screenshot of how to edit an existing flow.":::
 
-    Alternatively, access Edit with Copilot (preview) from the flow **Details** page of your existing flow by selecting the flow name from **My flows** > **Edit** > **Edit with Copilot (preview)**.
+    Alternatively, access Edit with Copilot (preview) from the flow **Details** page of your existing flow by selecting the flow name from **My flows** > **Edit with Copilot (preview)**.
 
     Your flow opens. You can now edit your flow using Edit with Copilot (preview).
 
