@@ -88,27 +88,34 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
     ![Provide credentials for the connection.](./media/getting-started/full-flow.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-1. From homepage or Create -> Describe it to design it, you can simply write a prompt explaining your automation requirement. Write 'Notify and Email when a new file is uploaded to OneDrive' in the Copilot box.
-2. Ensure the returned flow structure (Trigger-Action) fits your needs.
-3. Select 'Next Step'
-   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/9308442f-7b74-4ccd-9de3-7a93196245b1)
-
-5. Review the connections and select 'Create flow'
-6. You will land on the new designer with copilot. Copilot calls out missing parameters in your flow.
-   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/04f234f5-be34-4fbe-aa99-85fbcf138688)
-7. Use the folder icon in Onedrive action to choose the folder where you are checking for new file.
-   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/8d552fcf-33f2-4b92-b90a-dbbe490b8588)
-9. Provide the email addresses you want to send to, with a brief description in the Email body. You can choose to include the Onedrive filename in the email body description by clicking on the first blue 'Dynamic content' skittle and choose Filename token. Finally, save your flow.
-<img width="314" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/860afbdc-3920-4fa7-a21a-69036678595c">
-
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/225f4fd5-730c-4de0-8731-4bf2a031db7e)
-
-
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/ca326f32-b07b-48d3-80c7-95fcd052cc8b)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+1. From the homepage, or by selecting **Create** + **Describe it to design it**, you can simply write a prompt explaining your automation requirement. To do this, type **Notify and Email when a new file is uploaded to OneDrive** in the Copilot box and select **Submit**.
+1. Ensure the returned flow structure (trigger-actions) fits your needs.
+
+    :::image type="content" source="media/getting-started/suggested-flow.png" alt-text="Screenshot of the suggested flow.":::
+
+1. Select **Next**.
+
+1. Review the connections and select **Create flow**.
+
+    You land on the new designer with Copilot. Copilot calls out missing parameters in your flow.
+
+    :::image type="content" source="media/getting-started/missing-parameters.png" alt-text="Screenshot of the Copilot designer.":::
+
+1. Use the folder icon in the Onedrive action to choose the folder where you're checking for new file.
+
+    :::image type="content" source="media/getting-started/folder-icon.png" alt-text="Screenshot of the folder icon in the OneDrive action.":::
+
+1. Provide the recipient's email addresses and a brief description in the email body. You can choose to include the OneDrive file name in the email body description by selecting the top blue Dynamic content (the lightning rod) and select the **File name** token. Finally, save your flow.
+
+    :::image type="content" source="media/getting-started/lightning-rod.png" alt-text="Screenshot of the Dynamic content lighning rod icon.":::
+
+    The completed body of the email should look like the following screenshot.
+
+    :::image type="content" source="media/getting-started/email-body.png" alt-text="Screenshot of the Dynamic content lighning rod icon.":::
 
 ---
 
