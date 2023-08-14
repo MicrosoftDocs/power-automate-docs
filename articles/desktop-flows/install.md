@@ -3,7 +3,7 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: georgiostrantzas
 ms.topic: how-to
-ms.date: 02/24/2023
+ms.date: 06/15/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -19,17 +19,24 @@ ms.custom: bap-template
 
 Before you install Power Automate on your device, make sure that it meets the [system requirements](requirements.md).
 
-> [!IMPORTANT]
->
-> - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
-> - Windows recorder (V1) is deprecated and no longer works.
-> - Migrate your flows created with these solutions to Power Automate for desktop or delete them.
+> [!WARNING]
+> - There's an issue with Power Automate for desktop where your runs may fail with the errors “CredentialAuthenticationFailed” or “GeneralScriptExecutionError” after installing the Windows update for June 2023. This issue impacts all Power Automate for desktop versions 2.28 or later version. More information: [.NET Framework June 2023 Security and Quality Rollup - .NET Blog ](https://devblogs.microsoft.com/dotnet/dotnet-framework-june-2023-security-and-quality-rollup/)
+> - To fix this issue, upgrade Power Automate for desktop to the latest version: [2.33]( https://go.microsoft.com/fwlink/?linkid=2102613) 
+> - If you have a requirement to use an older version, patched updates are provided for the versions [2.28](https://go.microsoft.com/fwlink/?linkid=2239808), [2.29](https://go.microsoft.com/fwlink/?linkid=2239591), [2.30](https://go.microsoft.com/fwlink/?linkid=2239716), [2.31](https://go.microsoft.com/fwlink/?linkid=2239809), and [2.32](https://go.microsoft.com/fwlink/?linkid=2239592).
 
 You can download and install Power Automate [using an MSI installer](#install-power-automate-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). Microsoft Store installation doesn't require you to have admin rights on your device.
 
 You should choose one option only. Duplicate installations on the same machine may cause issues and isn't recommended.
 
 By default, Power Automate for desktop honors the proxy settings specified in Windows. To override this configuration, refer to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server).
+
+> [!IMPORTANT]
+>
+> - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
+> - Windows recorder (V1) is deprecated and no longer works.
+> - Migrate your flows created with these solutions to Power Automate for desktop or delete them.
+
+
 
 ## Install Power Automate using the MSI installer
 
@@ -69,7 +76,7 @@ By default, Power Automate for desktop honors the proxy settings specified in Wi
 ## Install an on-premises data gateway
 
 > [!NOTE]
-> Gateways for desktop flows are deprecated except for China region. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+> Gateways for desktop flows are now deprecated. This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 Power Automate enables you to [trigger your desktop flows from cloud flows](trigger-desktop-flows.md). To take advantage of this feature, you need to install an on-premises data gateway on your device.
 

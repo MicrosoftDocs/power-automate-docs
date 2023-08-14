@@ -10,14 +10,19 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/21/2023
+ms.date: 08/04/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
 # Set up the automation kit scheduler
 
-When you install the managed Power Platform scheduler solution, make sure you follow these required steps. <!--Are steps part of installation, or are they done before or after? Link to installing managed scheduler solution.-->
+The Automation Kit scheduler was included up to the May 2023 release.
+
+> [!NOTE]
+> After the June 2023 release the scheduler, functionality has been moved to the new [Control Center](./control-center.md).
+
+When you install the managed Power Platform scheduler solution, make sure you follow these required steps.
 
 1. Ensure the Power Apps component framework is enabled by following the steps in [Enable the Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature").
 

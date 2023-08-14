@@ -1,13 +1,13 @@
 ---
 title: Tips and examples
-description: Get tips on how to define a metric formula, reference an attribute name, and more in minit.
+description: Get tips on how to define a metric formula, reference an attribute name, and more in the Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -40,13 +40,9 @@ A metric formula can return one of the [supported data types](data-types-custom
 [Aggregation operations](aggregations.md) are the basis of each metric. The most commonly used aggregation operations are:
 
 - **COUNT:** Returns the number of aggregated values (`incl. COUNTIF, COUNTUNIQUE`).
-
 - **SUM:** Returns the sum of aggregated values (`incl. SUMIF`).
-
 - **AVG:** Returns the average of aggregated values.
-
 - **MIN:** Returns the minimum of aggregated values.
-
 - **MAX:** Returns the maximum of aggregated values.
 
 The voluntary parameter of the aggregation operations will be the operation context and the scalar operation for modification of the input value. The complete list of supported calculation contexts is described in [**Calculation context**](calculation-context.md).
@@ -55,15 +51,11 @@ The voluntary parameter of the aggregation operations will be the operation cont
 
 The purpose of scalar operations is to get one value and its transformation to the desired state. Currently supported operations can be divided into several types:
 
-- [**Mathematical**](mathematical-operations.md) - this includes operations to obtain the absolute value of a number, rounding, etc.
-
-- [**Date and Time**](date-and-time-operations.md) - includes operations to work with the date, such as getting part of the date, adding up dates, etc.
-
-- [**String**](string-operations.md) - this includes operations to work with string data, such as getting a substring, splitting strings, etc.
-
-- [**Statistical**](statistical-operations.md) – includes operations to get different statistics such as number of cases, case waiting time, etc.
-
-- [**Other**](other-operations.md) - includes other operations, eg. operations accessing event, case, derived statistics, etc.
+- [**Mathematical:**](mathematical-operations.md) Includes operations to obtain the absolute value of a number, rounding, and more.
+- [**Date and Time:**](date-and-time-operations.md) -Includes operations to work with the date, such as getting part of the date, adding up dates, and more.
+- [**String**:](string-operations.md) - Includes operations to work with string data, such as getting a substring, splitting strings, and more.
+- [**Statistical:**](statistical-operations.md) Includes operations to get different statistics such as number of cases, case waiting time, and more.
+- [**Other:**](other-operations.md) Includes other operations, for example, operations accessing event, case, derived statistics, and more.
 
 ## Attribute names
 
@@ -107,7 +99,6 @@ To calculate the relative duration of activity in a map:
 
 ```
 AVG (DURATION()) / AVG (VIEWCASES, DURATION())
-
 
 ```
 

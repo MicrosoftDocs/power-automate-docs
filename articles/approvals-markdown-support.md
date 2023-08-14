@@ -1,37 +1,27 @@
 ---
-title: Use markdown to format Power Automate approvals | Microsoft Docs
-description: Learn to use markdown to format Power Automate approval requests.
-services: ''
+title: Use Markdown language to format Power Automate approvals
+description: Learn how to use markdown to format Power Automate approval requests.
 suite: flow
-documentationcenter: na
 author: hamenon-ms
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 02/27/2023
 ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Use Markdown in Power Automate approval requests
+# Use Markdown language in Power Automate approval requests
 
-
-This article teaches you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting to your approval requests.
+This article shows you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown syntax to add rich formatting to your approval requests.
 
 > [!IMPORTANT]
 >
-> - Approval request emails are *actionable messages*. If your [Microsoft Outlook client](/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) doesn't support actionable messages, it displays approval requests in HTML format. 
-> - All Markdown renderers have implementation differences. Review the [Client Support](#client-support) section for details.
-> - Markdown is not currently supported for the Approvals app on Microsoft Teams.
-> - Markdown is not currently supported for [GCC and GCC High customers](./us-govt.md).
+> - Approval request emails are *actionable messages*. If your [Microsoft Outlook client](/outlook/actionable-messages/#outlook-version-requirements-for-actionable-messages) doesn't support actionable messages, it displays approval requests in HTML format.
+> - All markdown renderers have implementation differences. For details, review the [Client Support](#client-support) section.
+> - Markdown isn't currently supported for the **Approvals** app on Microsoft Teams.
 
 ## Client Support
 
@@ -39,19 +29,19 @@ Markdown support among clients is inconsistent. The Power Automate team works to
 
 | Feature | Power Automate | Power Automate mobile app | Outlook | Outlook Web | Teams | Teams mobile app | Approvals Teams App |   
 |---------|--------|---------------|-----------------|-------------|-------|--------------|--------------|
-| **Headers** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
-| **Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
-| **Nested Numbered Lists** | Yes | Yes | **_No_** | Yes | Yes | Yes | **_No_** |
-| **Tables** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
-| **Images** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** | **_No_** |
-| **Forced Line Breaks** | Yes* | Yes* | **_No_** (use a blank line instead) | Yes* | Yes* | Yes* | **_No_** |
-| **Blank Lines** | **_No_** | **_No_** | Yes | Yes | **_No_** | Yes | **_No_** |
-| **Emphasis** | Yes | Yes | Yes | Yes | **_No_** | **_No_** | **_No_** |
+| **Headers** | Yes | Yes | Yes | Yes | No | No | No |
+| **Numbered Lists** | Yes | Yes | No | Yes | Yes | Yes | No |
+| **Nested Numbered Lists** | Yes | Yes | No | Yes | Yes | Yes | Yes |
+| **Tables** | Yes | Yes | Yes | Yes | No | No | No |
+| **Images** | No | No | No | No | No | No | No |
+| **Forced Line Breaks** | Yes* | Yes* | No (use a blank line instead) | Yes* | Yes* | Yes* | No |
+| **Blank Lines** | No | No | Yes | Yes | No | Yes | No |
+| **Emphasis** | Yes | Yes | Yes | Yes | No | No | No |
 
-*Forced line breaks *within table cells* are not supported for Power Automate, the Power Automate mobile app, Outlook Web, Teams, and the Teams mobile app.
+*Forced line breaks within table cells aren't supported for Power Automate, the Power Automate mobile app, Outlook Web, Teams, and the Teams mobile app.
 
 > [!NOTE]
-> For Outlook Mobile, the previous parameters can vary depending on the Outlook client app and version that you are using.
+> For Outlook Mobile, the previous parameters can vary depending on the Outlook client app and version that you're using.
 
 ## Headers
 
@@ -108,9 +98,9 @@ Ordered lists start with a number followed by a period for each list item. Unord
 **Example:**
 
 ```Markdown
-0. First item.
-0. Second item.
-0. Third item.
+1. First item.
+1. Second item.
+1. Third item.
 ```
 
 **Result:**  
@@ -163,7 +153,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ## Links
 
-HTTP and HTTPS URLs are automatically formatted as links. 
+Use HTTPS links, which are rendered as links in all clients. Non-HTTPS links (for example, FTP, HTTP, and mail) can be rendered as regular text.
 
 You can set text hyperlinks for your URL using the standard markdown link syntax:
 
@@ -191,10 +181,10 @@ Organize structured data with tables.
 
 **Example:**  
 ```Markdown
-| Heading 1 | Heading 2 | Heading 3 |  
-|-----------|-----------|-----------|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3 |  
+| Heading 1 | Heading 2 | Heading 3 |
+|-----------|-----------|-----------|
+| Cell A1 | Cell A2 | Cell A3 |
+| Cell B1 | Cell B2 | Cell B3 |
 ```
 
 
@@ -203,12 +193,13 @@ Organize structured data with tables.
 | Heading 1 | Heading 2 | Heading 3 |  
 |-----------|-----------|-----------|  
 | Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br>second line of text |  
+| Cell B1 | Cell B2 | Cell B3 |  
 
  
 ## Emphasis (bold, italics, strikethrough)  
 
-You can emphasize text by applying bold, italics, or strikethrough to characters:
+You can emphasize text by applying bold, italics, or strikethrough to characters.
+
 - To apply italics: surround the text with an asterisk `*` or underscore `_`
 - To apply bold: surround the text with double asterisks `**`.    
 - To apply strikethrough: surround the text with double tilde characters `~~`.

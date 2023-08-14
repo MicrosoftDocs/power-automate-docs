@@ -1,5 +1,5 @@
 ---
-title: Get started with Copilot (preview)
+title: Get started with Copilot in Power Automate (preview)
 description: Learn how to access and use Copilot in Power Automate.
 ms.date: 05/23/2023
 ms.custom: 
@@ -10,7 +10,7 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ---
 
-# Get started with Copilot (preview)
+# Get started with Copilot in Power Automate (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -33,7 +33,10 @@ Copilot can perform the following actions:
 
 ## Prerequisites
 
-In this preview, a Power Platform environment in a US preview region is required to use Copilot in Power Automate. If you don't have an environment in the preview region, go to [Frequently asked questions](#why-dont-i-see-copilot-in-power-automate-in-my-power-automate-experience) in this article to create it.
+You need a Power Platform environment in the United States or Preview (United States) region for Copilot in Power Automate.
+
+> [!NOTE]
+> If your environment is in the United States or Preview (United States) region and you still don’t see the copilot experience, contact your admin. Ask if they've requested Microsoft Support to disable Copilot in Power Automate.
 
 ## Create a flow using Copilot
 
@@ -110,10 +113,8 @@ Use this section to find answers to frequently asked questions.
 
 ### Why don’t I see Copilot in Power Automate in my Power Automate experience?
 
-There are several possibilities.
-
-- Check if the environment you’re using is in preview region or not. Your Power Platform admin can help review and verify.
-- Check with your Power Platform admin if the tenant setting or environment setting for Copilot is or isn't enabled.
+- Check if the environment you’re using is in the United States or Preview (United States) region. Your Power Platform admin can help review and verify.
+- Ask your admin if they've requested Microsoft Support to disable Copilot in Power Automate.
 
 ### How do I create a Power Platform environment in preview region?
 
@@ -121,29 +122,38 @@ Go to [Create a Power Platform environment](/power-platform/admin/create-environ
 
 To learn more, go to [Power Platform regions](/power-platform/admin/regions-overview).
 
+### How do I disable Copilot in Power Automate?
+
+Have your tenant admin ask the MS Support team to disable Copilot in your tenant.
+
+### How is Copilot in Power Automate different from the text generation model in AI Builder?
+
+Copilot in Power Automate is designed to help you create and edit Power Automate flows just by describing them in everyday language, providing helpful guidance along the way.
+
+The text generation model in AI Builder lets you use the GPT model directly in your Power Automate flows and Power Apps apps for various scenarios such as text summarization, draft responses, classify text, and more.  
+
+
+To learn more, go to [Text generation model overview (preview)](/ai-builder/prebuilt-azure-openai).
+
 ### What are the limitations of Copilot in Power Automate during preview?
 
 - You can’t edit flows with the Copilot experience if your flow has any of the following flows capabilities:
-    - A flow with AI Builder, SAP or desktop flow connector.
+    - A flow with an AI Builder or SAP connector, desktop flow, or a child flow component.
     - A non-Open API flow (older connection format).
-    - A flow with comment.
-    - A child flow.
+    - A flow with a comment.
     - A solution flow using connections instead of a connection reference.
-    - A flow contains a desktop flow action.
-    - A flow contains an unsupported hybrid trigger. Hybrid triggers do not require connections and are triggered manually from outside of Power Automate. Examples of hybrid trigger: "for a selected item" or "for a selected row".
+    - A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. Examples of hybrid triggers are *for a selected item* and *for a selected row*.
     - A flow contains a Power Apps V1 trigger.
     - A flow contains a Power Pages component.
-    - A flow contains a child flow component.
-    - A flow contains a response component. 
+    - A flow contains a response component.
 - Copilot has limited parameterization support currently. It might not be able to implicitly fill in parameters for all your actions, but it should be available in select connectors.
-- Copilot has limited support to create looping constructs (for example, Apply to each, do until).
+- Copilot has limited support to create looping constructs (for example, *Apply to each* and *do until*).
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
 - You can’t use Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
 - Copilot supports English language only for models.
 
 ### See also
 
-- [Transparency notes for Power Automate](transparency-note.md)
-- [Transparency note for Copilot in Power Automate](transparency-note-copilot.md) 
-- [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
-
+- [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
+- [FAQ for Copilot in Power Automate](faqs-copilot.md) 
+- [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)

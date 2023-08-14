@@ -1,13 +1,13 @@
 ---
 title: List of statistical operations
-description: Learn about the statistical operations in minit.
+description: Learn about the statistical operations in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -17,7 +17,7 @@ search.audienceType:
 
 # List of statistical operations
 
-This article lists statistical operations in the minute desktop application.
+This article lists statistical operations in the Power Automate Process Mining desktop app.
 
 ## START()
 
@@ -375,15 +375,10 @@ Returns calculated process statistics according to the selected aggregation and 
 Following are the allowed aggregation types:
 
 - Sum
-
 - Avg
-
 - Min
-
 - Max
-
 - Range
-
 - Stdev
 
 ## Types of Statistics
