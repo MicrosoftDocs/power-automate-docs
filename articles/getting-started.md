@@ -115,7 +115,7 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
     The completed body of the email should look like the following screenshot.
 
-    :::image type="content" source="media/getting-started/email-body.png" alt-text="Screenshot of the Dynamic content lighning rod icon.":::
+    :::image type="content" source="media/getting-started/email-body.png" alt-text="Screenshot of the completed email body.":::
 
 ---
 
@@ -138,9 +138,9 @@ When you create a cloud flow from scratch, you control the entire workflow. Here
 
 ## Peek at the code
 
-You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer.
-
 # [Classic designer](#tab/classic-designer)
+
+You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer.
 
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**.
 1. Select **Peek code**.
@@ -152,6 +152,8 @@ You don't need to be a developer to create flows; however, Power Automate does p
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer.
 
 ---
 
