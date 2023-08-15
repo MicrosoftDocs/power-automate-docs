@@ -17,8 +17,9 @@ You have multiple options to process approval requests you have received and als
 Approvals Kit has the standard Approve and Decline and several other options to accommodate complex approval scenarios. Review the table to understand the meanings and how the system handles the approval request based on results.
 
 |Icon|Status|Description|
+|----|------|-----------|
 |![Icon for Approval Request Approve](./media/approval-request-approved.png)|Approve|Approves the request. Approvals Kit will automatically request the next approval for approval, or will complete the approval with status set to Approved.|
-|![Icon for Approval Request Approve with condition](./media/approval-request-approve-with-condition.png)|Approve with condition|Approves the request with condition. Approvals Kit will automatically request the next approval for approval, or will complete the approval with status set to Approved with condition.|
+|![Icon for Approval Request Approve with condition](./media/approval-request-approved-with-condition.png)|Approve with condition|Approves the request with condition. Approvals Kit will automatically request the next approval for approval, or will complete the approval with status set to Approved with condition.|
 |![Icon for Approval Request Reject](./media/approval-request-reject.png)|Reject|Declines the request. The Approvals Kit automatically terminates the approval request, and sets the approval statues to Declined|
 |![Icon for Approval Request Send Back](./media/approval-request-send-back.png)|Send back|Sends back the request to the previous approver. Approvals Kit sets the current approval request status back to Not Started, and look up the previous approval request to override existing result to Pending again for the previous approval to look at the request again. If two or more requests occur in the previous step simultaneously, all of the previous steps are processed in the same way.|
 ||Reassign|Reassigns the approval request to whoever you specify. Approval request remains to be Pending
@@ -26,6 +27,7 @@ Approvals Kit has the standard Approve and Decline and several other options to 
 In addition to your decisions, there are also three other statuses that can be shown in the approval status.
 
 |Icon|Status|Description|
+|----|------|-----------|
 |![Icon for Approval Request No Started](./media/approval-request-not-started.png)|Not Started|This status means that the approval request hasn't started, and is awaiting previous request to complete.
 |![Icon for Approval Request Pending](./media/approval-request-pending.png)|Pending|The approval status shows as pending if the approval request is pending decision from the approver.
 |![Icon for Approval Request Pending Timeout](./media/approval-request-pending-timeout.png)|Pending (Timeout)|This status means that the approval request hasn't responded by the approver with in the first 30 days, and the Power Automate cloud flow run that is managing this request is restarted automatically. Once restarted, the status changes back to Pending again.
