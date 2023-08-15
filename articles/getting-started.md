@@ -92,7 +92,10 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-1. From the homepage, or by selecting **Create** > **Describe it to design it**, you can simply write a prompt explaining your automation requirement. To do this, type **Notify and Email when a new file is uploaded to OneDrive** in the Copilot box and select **Submit**.
+
+
+1. From the homepage, or by selecting **Create** &gt; **Describe it to design it**, you can simply write a prompt explaining your automation requirement. To do this, type **Notify and Email when a new file is uploaded to OneDrive** in the Copilot box and select **Submit**.
+
 1. Ensure the returned flow structure (trigger-actions) fits your needs.
 
     :::image type="content" source="media/getting-started/suggested-flow.png" alt-text="Screenshot of the suggested flow.":::
