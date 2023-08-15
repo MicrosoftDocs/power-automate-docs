@@ -105,7 +105,7 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
     :::image type="content" source="media/getting-started/missing-parameters.png" alt-text="Screenshot of the Copilot designer.":::
 
-1. Use the folder icon in the Onedrive action to choose the folder where you're checking for new file.
+1. Use the folder icon in the OneDrive action to choose the folder where you're checking for new file.
 
     :::image type="content" source="media/getting-started/folder-icon.png" alt-text="Screenshot of the folder icon in the OneDrive action.":::
 
