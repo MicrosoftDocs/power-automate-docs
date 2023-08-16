@@ -1,23 +1,16 @@
----
-title: Get started with Power Automate (contains video) | Microsoft Docs
-description: Learn quick ways to start automating your work and life with Power Automate.
-services: ''
-suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+﻿---
+title: Get started with Power Automate (contains video)
+description: Learn how to navigate the Power automate home page.
+author: jamiemwork
 contributors:
-  - natalie-pienkowska
-  - kisubedi
+  - jamiemwork
   - v-aangie
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2021
-ms.author: napienko
+ms.date: 09/06/2023
+ms.author: jamiller
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -27,106 +20,142 @@ ms.collection: get-started
 
 # Get started with Power Automate
 
-Welcome! What can you expect from Power Automate? Here are a few examples of what you can do with Power Automate.
+The Power Automate home page offers you various options for creating your own flows, and learning about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
 
-* Automate business processes
-* Send automatic reminders for past due tasks
-* Move business data between systems on a schedule
-* Connect to more than 500 data sources or any publicly available API
-* You can even automate tasks on your local computer like computing data in Excel.
+If your organization has AI enabled then it also includes the new Copilot features.
 
-Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
+To learn more, select the links below.
 
-<br/>
+:::image type="content" source="media/getting-started/home-full.png" alt-text="Screenshot of the new look of the home screen.":::
 
-The following video shows you how to get started building your first flow.
+## 1 – Left navigation pane
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKUx1]
+Find what you need with the left navigation pane. When you sign in to [Power Automate home page](https://make.powerautomate.com), the left navigation pane shows the following menu items:
 
-## Power Automate is for everyone
+:::image type="content" source="media/getting-started/left-nav-menu.png" alt-text="Screenshot of the new look of the home screen.":::
 
-Anyone from a basic business user to an IT professional can create automated processes using Power Automate's no-code/low-code platform.
+Legend:
 
-Check out how some companies implemented Microsoft Power Platform solutions using Power Automate in:
+1. **Home**: Takes you to the Power Automate home page.
 
-  * [Banking](https://customers.microsoft.com/story/821782-illimity-bank-banking-power-automate)
-  * [Retail](https://customers.microsoft.com/story/drivetime-retail-consumer-goods-azure)
-  * [Manufacturing](https://customers.microsoft.com/story/810656-hexion-manufacturing-power-platform)
-  * [Insurance](https://customers.microsoft.com/story/811345-aioi-nissay-dowa-insurance-microsoft-power-platform)
-  * [Healthcare](https://customers.microsoft.com/story/vnshs-health-provider-microsoft-flow) 
+1. **Create**: Create flows by using Copilot, templates or build your own.
 
-Find [examples from your industry](https://customers.microsoft.com/en-us/search?sq=%22Power%20Automate%22&ff=story_product_categories%26%3EPower%20Automate&p=0&so=story_publish_date%20desc)
+1. **Templates**: View and search for templates you can use to create flows.
 
-The first step in creating an automation is to [sign up](sign-up-sign-in.md), or, if you already have an account with Power Automate, [sign in](https://make.powerautomate.com/signin).
+1. **Learn**: Learn experience takes you to the Power Automate product documentation.
 
-### Limitations for guest users
+1. **My Flows**: If you've created a flow, or someone else has created one and shared it with you, you can view or edit it.
 
-Guest users can trigger flows with automatic triggers.  For example, a guest could trigger a flow that uses the **When an item is created** trigger in SharePoint. Guests can't trigger manual (instant) flows, like the **For a selected item** trigger.
+1. **Your most used pages**: When you first sign in, items such as **Approvals**, **Solutions**, **Process mining**, **AI models**, and **Desktop Flow Activity** appear in the left navigation menu by default. Use the **More** menu item to [unpin](#pin-and-unpin) any of these items and [pin](#pin-and-unpin) something else.
 
-Guests users can participate in approvals. They can't create and edit flows.
+1. **More**: [Pin](#pin-and-unpin) your most used items to the left navigation pane, such as **Tables**, **Cloud flow activity**, **Connections**, and more.
 
-## What are the different types of flows?
+1. **Power Platform**: Explore other Power Platform products.
 
-To learn more about the different types of flows that you can create to automate your tasks, go to the [flow types](flow-types.md) article.
+### Pin and unpin
 
-## Check out the Home page
+Pin your most used pages in the navigation pane so you can quickly access features that you use frequently. Links to other pages are available through the **More** menu item. When you pin an item, it appears in the middle section above **More**.
 
-[On the Home page](https://make.powerautomate.com) for Power Automate, you can [explore a diverse set of templates](https://make.powerautomate.com/templates) and learn about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate could help your business and your life.
+When you sign in, the left navigation pane is populated with **Templates**, **Approvals**, **Solutions**, **Process mining**, **AI models**, and **Desktop Flow Activity**. However, you can pin and unpin pages to customize it to your preference.
 
-Each template is designed for a specific purpose. For example, there are templates for sending you a text message when your boss emails you, adding Twitter leads to Dynamics 365, or backing up your files. These templates are just the tip of the iceberg. They're intended to inspire you to create customized flows for the exact processes you need.
+To pin or unpin an item from the left navigation pane, do one of the following:
 
-## Create your first flow
 
-1. Select a template that's useful for you. A simple template is [**Notify and Email when a new file is uploaded to OneDrive**](https://make.powerautomate.com/galleries/public/templates/ef6bf28037ca11e7870df906aa521b7a/notify-and-email-when-a-new-file-is-uploaded-to-onedrive/).
-1. Select **Continue**.
-1. Select the OneDrive folder that you want to monitor.
-1. Select **Save**.
+|To do this  |Select this |
+|---------|---------|
+|Pin an item to the menu    | **More** > ![Screenshot of the Pin icon.](media/getting-started/pin.png) (Pin icon) |
+|Unpin an item from the menu       | **More** > ![Screenshot of the Unpin icon.](media/getting-started/unpin.png) (Unpin icon)       |
 
-    ![Provide credentials for the connection.](./media/getting-started/full-flow.png)
+You can also unpin an item by selecting the vertical ellipsis (**&vellip;**) next to the item > **Unpin**.
 
-  >[!NOTE]
-  >- You can explore the conditions that trigger the flow and the action that results from that event. Play around with the settings to make the flow your own. You can even add or delete actions.
->
->- [Follow this tutorial](get-started-logic-template.md) to learn more about creating flows from templates.
+### Discover all
 
-## Get creative
+Select **Discover all** to see the **Discover** page on the left navigation pane. 
 
-Now that you've created your first flow from a template, use any of the more than [500 data sources](https://make.powerautomate.com/connectors/) that Power Automate supports to [create your own flows from scratch](get-started-logic-flow.md).
+:::image type="content" source="media/getting-started/discover-all.png" alt-text="Screenshot of all applications.":::
 
-When you create a cloud flow from scratch, you control the entire workflow. Here are a few ideas to get your started:
+To keep it pinned, select ![Screenshot of the Pin icon.](media/getting-started/pin.png). <!--I don't see the Pin icon.-->
 
-- [Flows with many steps](multi-step-logic-flow.md).
-- [Run tasks on a schedule](run-scheduled-tasks.md).
-- [Create an approval flow](wait-for-approvals.md).
-- [Watch a cloud flow in action](see-a-flow-run.md).
-- [Publish a template](publish-a-template.md).
-- [Create flows from a Microsoft Teams template](https://make.powerautomate.com/connectors/shared_teams/microsoft-teams/).
+### Move up or move down
 
-## Peek at the code
+When you have some pages pinned in the navigation pane, you can move them up or down.
 
-You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer:
+To move a page up or down, select the vertical ellipsis (**&vellip;**) next to the menu item that you want to move, and then select **Move up** or **Move down**.
 
-1. Select the **...** menu item at the top right corner of any **action** or **trigger**.
-1. Select **Peek code**.
+:::image type="content" source="media/getting-started/move.png" alt-text="Screenshot of all applications.":::
 
-1. Notice the full JSON representation of the actions and triggers. This includes all inputs, such as the text you enter directly, and expressions used. You can select expressions here and then paste them into the **Dynamic Content** expression editor. This can also give you a way to verify the data you expect is present in the flow.
+### Power Platform
 
-    ![Peek code details.](media/getting-started/peek-code-details.png)
+From the left navigation pane, select **Power Platform** to access Power Platform services such as Power Platform admin center, Power BI, and Power Apps.
 
-## Get notifications when something's wrong
+:::image type="content" source="media/getting-started/power-platform.png" alt-text="Screenshot of Power Platform services.":::
 
-Visit the cloud flow activity page to see the list of cloud flows that recently ran, sent notifications, or have failed.
+## 2 – Search
 
-1. Sign into [Power Automate](https://powerautomate.com).
-1. Select **Monitor** on the left side of the screen.
-1. Select **Cloud flow activity**.
+Use the **Search** field at the top of the screen to create flows. <!--I don't see how you can find flows or find help documentation, as previously described.-->
 
-## Get help planning your Power Automate projects
+When you select the **Search** field, you can select **Start with a template** to search by task or app to find prebuilt flows, and then you can customize then as needed. You can also select **Describe it to design it (preview)** to describe the flow you want and have AI Builder build it for you.
 
-If you're ready to start your Power Automate project, visit the [guidance and planning article](./guidance/planning/introduction.md) to get up and running quickly.
+Alternatively, you can start typing to search for a specific list. For example, type **t** for templates, or **c** for connectors. <!---This seems very limited. Is it just bcause it's in test?-->
 
-## We're here to help
+## 3 – Environment information and settings
 
-We're excited to see what you do with Power Automate, and we want to ensure you have a great experience. Be sure to check out our [guided learning](https://make.powerautomate.com/guided-learning/) tutorials and [join our community](https://go.microsoft.com/fwlink/?LinkID=787467) to ask questions and share your ideas. [Contact support](https://go.microsoft.com/fwlink/?LinkID=787479) if you run into any issues.
+View your environment information and settings.
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+### Choose an environment
+
+For best results, start by ensuring that the home page is set to the correct environment. If you have multiple environments, you can quickly find an environment by typing it in the **Search** field. You can also filter by your role, data platform, or environment type. <!--I added this. Is it OK to keep?-->
+
+:::image type="content" source="media/getting-started/environment.png" alt-text="Screenshot of Power Platform services.":::
+
+Environments can be managed using [Power Platform admin center](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
+
+### Settings
+
+Select the gear icon to perform tasks such as identify your Power Automate licenses, and open the page where you can perform administrative tasks.
+
+- **Admin Center**: Opens the Power Platform admin center.
+
+- **View All Power Automate settings**: View or update your language and time settings, notifications, or access directories.
+
+- **View My Licenses**: View your licenses. More information: Licensing overview
+
+- **Themes**: From the list of themes, select a theme for your organization.
+
+- **Password**: Change your password.
+
+- **Contact preferences**: Update your contact information.
+
+:::image type="content" source="media/getting-started/settings.png" alt-text="Screenshot of Power Automate settings.":::
+
+### Help
+
+In the header, select the question mark icon to find more information about Power Automate.
+
+:::image type="content" source="media/getting-started/help.png" alt-text="Screenshot of the Help icon.":::
+
+You find links to documentation, Power Automate training on Microsoft Learn, the Power Automate Community where you can share information with users in other organizations, and the Power Automate blog where the newest features are announced.
+
+## 4 - AI Copilot
+
+If your organization has AI enabled, then you see **Start building your flow with Copilot** on the Power Automate Home screen.
+
+:::image type="content" source="media/getting-started/copilot.png" alt-text="Screenshot of Power Automate settings.":::
+
+To learn more, go to [Get started with Copilot in Power Automate (preview)](get-started-with-copilot.md).
+
+## 5 – Learning tools and more
+
+The Home page gives you access to learning tools, videos, community forums, and more. Scroll down the screen to view all the product related tools.
+
+Here's the list of the main categories:
+
+- **Learning for every level:** Discover learning modules you can take to learn how to use Power Automate.
+
+- **More to explore in Power Automate:** Discover all that Power Automate has to offer such as video how-tos and the Power Automate Community forum.
+
+- **What's new:** Learn about upcoming events as well as new and updated product features.
+
+### Ask a virtual agent
+
+Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Power Virtual Agents bot](contextual-help-bot.md)
