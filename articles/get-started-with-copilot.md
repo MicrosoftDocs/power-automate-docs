@@ -1,7 +1,7 @@
 ---
 title: Get started with Edit with Copilot (preview)
 description: Learn how to access and use Edit with Copilot (preview).
-ms.date: 05/23/2023
+ms.date: 08/16/2023
 ms.custom: 
   - transparency-note
 ms.topic: conceptual
@@ -74,7 +74,7 @@ Follow these steps to create a flow using Edit with Copilot.
 
 ## How to write a good prompt
 
-Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. Edit with Copilot lets you to try out different variations of prompts to help you evaluate what works best. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again.
+Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. Edit with Copilot lets you try out different variations of prompts to help you evaluate what works best. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again.
 
 - For better and more accurate results, provide prompts in *When X happens, do Y* format.
 - Be as specific as possible. Instead of a generic prompt like, *I want to process an email*, try this prompt instead: *When an email arrives, I want to post the subject of the email to ‘Contoso’ Teams General channel*.
