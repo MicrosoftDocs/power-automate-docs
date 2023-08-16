@@ -44,13 +44,10 @@ When you reference a variable, use the variable's name as the token, not the act
 > [!NOTE]
 > Before you can add actions for creating and working with variables, your flow must start with a trigger. You can't use a mobile device to add variables.
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](./flows-designer.md).
 
 ### Initialize a variable
 
 You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
-
-# [Classic designer](#tab/classic-designer)
 
 1. Sign in to [Power Automate](sign-up-sign-in.md).
 
@@ -88,12 +85,6 @@ You can create a variable and declare its data type and initial value all within
 
 > [!NOTE]
 > Although the **Initialize variable** action has a `variable` section structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
 
 Here are examples of other variable types:
 
