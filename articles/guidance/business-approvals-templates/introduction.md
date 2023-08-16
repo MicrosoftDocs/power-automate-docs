@@ -32,3 +32,6 @@ These templates cover some of the typical requirements in most organizations, in
 - Delegate others to approve
 - View approvals progress and history
 - Manage out of office for employees
+- Support for versions of approval process
+- Publish version approval workflow
+- Handling of work days and public holidays
