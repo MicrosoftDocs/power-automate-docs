@@ -1,4 +1,4 @@
-﻿---
+---
 title: Get started with Power Automate
 description: Learn how to navigate the Power automate home page.
 author: jamiemwork
