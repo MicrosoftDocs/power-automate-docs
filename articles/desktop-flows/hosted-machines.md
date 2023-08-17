@@ -230,13 +230,14 @@ You can personalize your hosted machines by providing your own Windows image dir
 
 Custom VM images must meet the following requirements:
 
-- Windows 10 Enterprise version 20H2 or later.
-- Windows 11 Enterprise 21H2 or later.
-- Generation 2 images.
-- Generalized VM image.
-- Single Session VM images (multi-session isn’t supported).
+- Windows 10 Enterprise version 20H2 or later
+- Windows 11 Enterprise 21H2 or later
+- Generation 2 image
+- Generalized VM image
+- Single Session VM images (multi-session isn’t supported)
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition).
-- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to the size specified in SKU description of the Windows 365 license.
+- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to the size specified in SKU description of the Windows 365 license
+- The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
 
