@@ -1,19 +1,17 @@
 ---
-title: Prerequisites for automating SAP GUI-based workloads | Microsoft Docs
+title: Prerequisites for automating SAP GUI-based workloads
 description: These prerequisites need to be met before you can start automating your SAP GUI-based workloads with Power Automate.
 suite: flow
 documentationcenter: na
 author: kathyos
-editor: ''
 ms.custom: guidance
-
 ms.devlang: na
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/01/2021
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Prerequisites for automating SAP GUI-based workloads
@@ -24,11 +22,9 @@ The following prerequisites need to be met before you can start automating your 
 
 To build RPA solutions with Power Automate, you'll need one or more of the following licenses or add-ons:
 
-- Power Automate **per user plan** with **attended** RPA (or trial)
+- Power Automate Premium (or trial, previously Power Automate per user plan with attended RPA)
 
-- Power Automate **per user plan** with **attended** RPA + **unattended** RPA add-on
-
-- Power Automate **per flow plan** + **unattended** RPA add-on
+- Power Automate Process plan (previously Power Automate per flow and Power Automate unattended RPA add-on)
 
 ## Software requirements
 
