@@ -41,7 +41,7 @@ Legend:
 
 Find what you need with the left navigation pane. When you sign in to [Power Automate home page](https://make.powerautomate.com), the left navigation pane shows the following menu items:
 
-:::image type="content" source="media/getting-started/left-nav-menu-num.png" alt-text="Screenshot of the new look of the home screen.":::
+:::image type="content" source="media/getting-started/left-nav-menu-num.png" alt-text="Screenshot of the left navigation menu.":::
 
 Legend:
 
@@ -85,7 +85,7 @@ When you have some pages pinned in the navigation pane, you can move them up or 
 
 To move a page up or down, select the vertical ellipsis (**&vellip;**) next to the menu item that you want to move, and then select **Move up** or **Move down**.
 
-:::image type="content" source="media/getting-started/move.png" alt-text="Screenshot of all applications.":::
+:::image type="content" source="media/getting-started/move.png" alt-text="Screenshot of options to move up or down.":::
 
 ### Power Platform
 
@@ -107,9 +107,9 @@ View your environment information and settings.
 
 For best results, start by ensuring that the home page is set to the correct environment. If you have multiple environments, you can quickly find an environment by typing it in the **Search** field. You can also filter by your role, data platform, or environment type.
 
-:::image type="content" source="media/getting-started/environment.png" alt-text="Screenshot of Power Platform services.":::
+:::image type="content" source="media/getting-started/environment.png" alt-text="Screenshot of the 'Select environment' screen.":::
 
-Environments can be managed using [Power Platform admin center](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
+Environments can be managed using [Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
 
 ### Settings
 
@@ -146,7 +146,7 @@ Here are some examples of what you can find with the help feature:
 
 If your organization has AI enabled, then you see **Start building your flow with Copilot** on the Power Automate Home screen.
 
-:::image type="content" source="media/getting-started/copilot.png" alt-text="Screenshot of Power Automate settings.":::
+:::image type="content" source="media/getting-started/copilot.png" alt-text="Screenshot of Copilot field.":::
 
 To learn more, go to [Get started with Copilot in Power Automate (preview)](get-started-with-copilot.md).
 
