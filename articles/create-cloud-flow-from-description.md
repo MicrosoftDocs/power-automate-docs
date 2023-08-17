@@ -29,7 +29,7 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-When you build automation with Power Automate, it might take valuable time to learn which actions and triggers you need, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can just write a description of what you want to automate in everyday language. Power Automate then uses OpenAI Codex to translate your description into code, and then provides a corresponding flow that you can create instantly.
+When you build automation with Power Automate, it might take valuable time to learn which actions and triggers you need, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can now just write a description of what you want to automate in everyday language. Supporting most of the connectors, Power Automate then uses OpenAI Codex to translate your description into code, and then provides a corresponding flow that you can create instantly.
 
 > [!IMPORTANT]
 >
@@ -56,7 +56,7 @@ In the following example, we'll build an automated cloud flow that sends a notif
 
     :::image type="content" source="media/easy-flow/describe-it-main.png" alt-text="Screenshot of the Describe it to design it (preview) tile.":::
 
-   A screen opens where you can enter a description of what you want to automate. You'll also get an example you can use for inspiration and try it out right away.
+   A screen opens where you can enter a description of what you want to automate. You'll also get an example you can use for inspiration and try it out right away. As an alternate, you can also go to **Home** and start describing your requirement. More information: [Create a flow using Copilot](get-started-with-copilot.md)
 
 1. For this example, enter **Every time someone responds to a Microsoft Forms survey, post a message to Teams and send an email**.
 
@@ -95,18 +95,6 @@ In the following example, we'll build an automated cloud flow that sends a notif
 - Cloud flows are the only type of flow that you can create from a description.
 
 - In the current version, the AI might not fill in some parameters automatically, even if you provide them in the description.
-
-- The AI model that transforms a description into a cloud flow is optimized to automate the main actions for the following applications.
-
-  - Microsoft Excel
-  - Microsoft Forms
-  - Microsoft 365 Outlook
-  - Microsoft OneDrive for Business
-  - Microsoft Planner
-  - Microsoft SharePoint
-  - Microsoft Teams
-  - Approvals
-  - Microsoft Dataverse
   
 ### See also
 
