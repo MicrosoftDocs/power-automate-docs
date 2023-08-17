@@ -9,21 +9,21 @@ ms.subservice: desktop-flow
 # Add Cloud Flow, Desktop Flow and connection reference
 At this point you have created a solution. Let's add a Desktop Flow and a Cloud Flow to this solution.
 
-> Please note that in order for a Cloud Flow to be added in a solution, it needs to be created in the solution, you cannot add a Cloud Flow created outside a solution inside a solution.
+> Please note that in order for a Cloud Flow to be added in a solution, it needs to be created in the solution, you cannot add a Cloud Flow created outside a solution to a solution.
 
 ## Create a Desktop Flow
 Follow those steps:
 - **Solution** > **my solution name**
 - **New** > **Automation** > **Desktop Flow**
 
-You will be redirect to Power Automate Desktop, once you have finish editing your Desktop Flow, go back to the solution page, you should see your Desktop Flow appears.
+You will be redirected to Power Automate Desktop, once you have finished editing your Desktop Flow, go back to the solution page, you should see your Desktop Flow appear.
 
 :::image type="content" source="./media/desktopflow-solution.png" alt-text="Screenshot of a Desktop Flow in a solution":::
 
 ## Create a Cloud Flow
 From within the solution: **New** > **Automation** > **Cloud flow** > **Scheduled**
 
-You will be redirect to the Cloud flow designer, edit to add an action with Desktop Flow, if needed create a connection. You need to use the **Unattended** run mode.
+You will be redirected to the Cloud flow designer, edit to add an action with Desktop Flow, if needed create a connection. You need to use the **Unattended** run mode.
 
 > Please note that the connection you use here will not be the connection that will be used in your Production environment.
 
