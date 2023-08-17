@@ -16,9 +16,9 @@
   items:
   - name: Get started with cloud flows
     href: overview-cloud.md
-  - name: Get started with Copilot (preview)
+  - name: Get started with Edit with Copilot (preview)
     href: get-started-with-copilot.md
-  - name: Understand AI-powered cloud flows designer (preview)
+  - name: Understand the Edit with Copilot designer (preview)
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
@@ -1127,7 +1127,7 @@
   items:
   - name: Overview
     href: responsible-ai-overview.md
-  - name: FAQ for Copilot
+  - name: FAQ for Edit with Copilot
     href: faqs-copilot.md
 
 
