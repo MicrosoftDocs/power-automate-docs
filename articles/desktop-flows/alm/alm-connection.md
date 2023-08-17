@@ -29,10 +29,10 @@ First step is to request an access token to interact with Power Platform API usi
 To be able to create the connection, we need to get the group id associated with our machine or machine group.
 
 - If it's a group, you can go to **Monitor** > **Machines** > **Machine groups** and click on the group. You can then get the group id from the url.
-- If it's a machine, you need to go to **Data** > **Tables** > **All** > **Flow Machine  Group**. Search for your machine in the list and display the column **Flow Machine Group**, it is the group id associated with your machine. 
+- If it's a machine, you need to go to **Data** > **Tables** > **All** > **Flow Machine  Group**. Search for your machine in the list and display the column **Flow Machine Group**, it's the group id associated with your machine. 
 
 ### Create a connection using your Service Principal.
-To create a connection, you need to send an HTTP PUT to PowerApps API to create the connection, using the access token that we obtain earlier.
+To create a connection, you need to send an HTTP PUT to Power Apps API to create the connection, using the access token that we obtain earlier.
 
 ```HTTP
 Content-Type: application/json
@@ -63,14 +63,14 @@ BODY:
 }
 ```
 The above example contains placeholders:
-- ENVIRONMENT_ID_URL:The environment id, with all separator removed, and the last character separated by a dot.  (Example: 41a2170d78d5ebfd8c7ec78fe561c67.c)
+- ENVIRONMENT_ID_URL: The environment id, with all separator removed, and the last character separated by a dot.  (Example: 41a2170d78d5ebfd8c7ec78fe561c67.c)
 - ENVIRONMENT_ID: The environment id.
 - CONNECTION_ID: The connection id use to create the connection. It needs to be a valid Guid. (You can use the `New-Guid` PowerShell command).
 - MACHINE_ACCOUNT: The username of the account used to open a Windows session.
 - MACHINE_PASSWORD: The password the account.
-- GROUP_ID: The group id we want to create the connection for. Please refer to the section `Get the group id of the machine or group`.
+- GROUP_ID: The group id we want to create the connection for. Refer to the section `Get the group id of the machine or group`.
 
-Once the request is completed, save the connection id that you use in your request, we will use it in the next step.
+Once the request is completed, save the connection id that you use in your request, we'll use it in the next step.
 
 ### Next
 - [Prepopulate connection references for automated deployment](/power-platform/alm/conn-ref-env-variables-build-tools)
