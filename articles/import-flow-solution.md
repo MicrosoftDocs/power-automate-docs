@@ -51,6 +51,12 @@ After you've exported your solution, you can import it into any environment that
 > [!NOTE]
 > You cannot import a solution into an environment in which the solution already exists.
 
+## FAQ
+
+### What will the flow state be after import?
+
+When importing a solution containing flows, the import process will attempt to restore them to the state they were in when exported. If the flows were on when exported and any connection references get connections, then the flows should be turned on as part of the import process.
+
 ## Learn more
 
 - [Create a solution](./overview-solution-flows.md)
