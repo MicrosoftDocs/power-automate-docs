@@ -745,7 +745,7 @@
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
     - name: Copilot in Process Mining ingestion (preview)
-      href: peocess-mining-copilot-in-ingestion.md 
+      href: process-mining-copilot-in-ingestion.md 
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
     - name: Use your own Azure Data Lake Storage Gen2 (preview)
@@ -772,9 +772,6 @@
       items:
       - name: Explore the home page
         href: ./minit/process-hub.md
-      - name: Copilot in process mining (preview)
-        href: ./minit/copilot-in-process-mining-analysis.md
-      
       - name: Manage settings with process context
         href: ./minit/process-context.md
       - name: Categorize cases
@@ -848,7 +845,7 @@
       - name: Filters export and import
         href: ./minit/filters-export-import.md
     - name: Copilot in Process Mining process analytics (preview)
-      href: ./minit/copilot-in-process-mining-analysis.md
+      href: ./minit/process-mining-copilot-in-process-analytics.md
     - name: Settings
       items:
       - name: Overview
@@ -1128,7 +1125,7 @@
   - name: FAQ for Edit with Copilot
     href: faqs-copilot.md
   - name: FAQ for Copilot in Process Mining
-    href: faqs-copilot-in-process-mining
+    href: faqs-copilot-in-process-mining.md
 
 
 

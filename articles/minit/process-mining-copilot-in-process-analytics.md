@@ -28,7 +28,7 @@ Copilot can perform the following actions:
 > - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 >- This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
->- More information: [Transparency notes for Power Automate](transparency-note.md), [Transparency note for Copilot data security and privacy in Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
+>- More information: [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md), [FAQ for Copilot data security and privacy in Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisites
 
@@ -69,7 +69,7 @@ Follow these steps to analyze the process with Copilot.
 
 1. (Optional) You can continue in conversation with Copilot by selecting subsequent suggestions. Alternatively, you can ask your own questions at any time using the text field in bottom part of the Copilot pane.
 
-    :::image type="content" source="media/process-mining-copilot-in-process-analytics/copilot-question.png" alt-text="Screenshot of the Copilot pane.":::
+    :::image type="content" source="media/process-mining-copilot-in-process-analytics/copilot-question.png" alt-text="Screenshot of questions in the Copilot pane.":::
 
 Copilot in the Process Mining desktop app leverages knowledge of the open process statistics. It communicates the various statistical information.
 
@@ -102,7 +102,7 @@ Use this section to find answers to frequently asked questions.
 ### How do I create an environment with Copilot?
 
 1. Go to Create a Power Platform environment.
-1. [Create a Power Platform environment](https://learn.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-without-a-database).
+1. [Create a Power Platform environment](/power-platform/admin/create-environment#create-an-environment-without-a-database).
 
     - When creating the environment, ensure that you choose the region as **Preview (United States)**.
     - If you need help with creating a preview environment, ask your Power Platform admin.
@@ -134,6 +134,6 @@ Have your tenant admin ask the MS Support team to disable Copilot in your tenant
 
 ### See also
 
-- [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
-- [FAQ for Copilot in Power Automate Process Mining](../faqs-copilot-in-process-mining.md)
+- [Responsible AI FAQs for Power Automate](../responsible-ai-overview.md)
+- [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
