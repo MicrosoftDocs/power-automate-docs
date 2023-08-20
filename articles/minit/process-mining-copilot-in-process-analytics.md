@@ -25,10 +25,7 @@ Copilot can perform the following actions:
 - Answer your questions about your process data.
 - Answer your general questions about process mining.
 
-[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
->- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
->- This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
->- More information: [FAQ for Copilot in Power Automate Process Mining](../faqs-copilot-in-process-mining.md), [FAQ for Copilot data security and privacy in Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+[!INCLUDE[cc_preview_features_definition_copilot_process_mining](../includes/cc-preview-features-definition-copilot-process-mining.md)]
 
 ## Prerequisites
 
