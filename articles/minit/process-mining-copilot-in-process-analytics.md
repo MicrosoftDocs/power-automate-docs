@@ -125,7 +125,7 @@ Have your tenant admin ask the MS Support team to disable Copilot in your tenant
 - You can't use Copilot in Process Mining ingestion on processes created with dataflows.
 - You can't use Copilot in task mining processes.
 - Copilot has a limited view of your ingested data in the ingestion experience. This limits the questions it might be able to answer for your data and process, such as the longest running activity or amount of rework in process.
-- (Applies only to Copilot in process analysis) Copilot can't be used in a web report of Process Mining.
+- (Applies only to Copilot in process analytics) Copilot can't be used in a web report of Process Mining.
 - You can't use Copilot if you're using a personal Microsoft account. For example, you can't use `someone@live.com`. Use a work or school account like `someone@contoso.com` instead.
 - Copilot supports English language only for models.
 
