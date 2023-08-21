@@ -1,14 +1,13 @@
 ---
-title: Holistic enterprise automation techniques (HEAT) | Microsoft Docs
+title: Holistic enterprise automation techniques (HEAT)
 description: HEAT is guidance to help you deploy the automation platform and manage the lifecycle of an automation project. Use these best practices and tools to achieve your automation goals. 
 author: kathyos
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/28/2022
 ms.subservice: guidance
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ---
@@ -60,20 +59,19 @@ Watch the video: [Empower, discover, & plan"](https://youtu.be/94Lq15PNDDg)
 
 Resources for determining ROI, process discovery, and setting up Power Automate environment:
 
-- Discover which process to automate using [process advisor](https://make.powerautomate.com/process-advisor/)
+- Discover which process to automate using [process mining](https://make.powerautomate.com/process-advisor/)
 - Use the [Automation Project app](/power-automate/guidance/automation-kit/overview/introduction) for curating and managing ideas
 - [Power Automate for desktop](/power-automate/desktop-flows/introduction)
 - [Power Automate IP address configuration](/power-automate/limits-and-config)
 - [Service administrator roles (Microsoft 365 Global / Power Platform/ Dynamics 365/ Azure/ Power BI admin)](/power-platform/admin/use-service-admin-role-manage-tenant)
-- [Assign Power Automate RPA attended user plan through Microsoft 365 admin center](/power-automate/organization-q-and-a#power-automate-rpa-license)
-- [Manage unattended RPA add-on capacity](/power-platform/admin/capacity-add-on) in [Power Platform admin center](https://aka.ms/ppac)
+- [Assign Power Automate Premium (previously Power Automate per user plan with attended RPA) through Microsoft 365 admin center](https://admin.microsoft.com)
+- [Manage Power Automate Process plan (previously Power Automate unattended RPA add-on)](/power-platform/admin/power-automate-licensing/buy-licenses) capacity in [Power Platform admin center](https://aka.ms/ppac)
 
 ## Design
 
 Building robust automation solutions require well-defined design principles that will build the foundation for scale, security, and compliance.
 
 Watch the video: [Design phase](https://youtu.be/ur1-y0lrexU)
-
 :::image type="content" source="media/rpadesign.png" alt-text="Slide from the Design phase video, showing core design principles of intuitive user experience, intelligent process automation, and accessible to everybody" link="https://youtu.be/ur1-y0lrexU":::
 
 Some other design principles (not a comprehensive list) to consider are:

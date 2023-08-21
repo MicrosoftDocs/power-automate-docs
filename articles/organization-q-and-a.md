@@ -74,6 +74,9 @@ If a user was assigned a Power Automate license, unassign the user's license to 
 
 You can also [use PowerShell to remove licenses in bulk](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) and [use PowerShell to disable access to services](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell).
 
+> [!NOTE]
+> This action removes the Power Automate tile by default. A user might still choose to use Power Automate as an individual.
+
 ### Why did 10,000 licenses for Power Automate show up in my Microsoft 365 tenant?
 
 Any person can try out Power Automate for free. These licenses represent the available capacity for new Power Automate users in your tenant. There isn't a charge for these licenses.
@@ -124,6 +127,9 @@ First, join the tenant. Then, promote yourself to the admin role, if it hasn't a
 
    If this option doesn't appear, a Microsoft 365 administrator is already in place.
 
+       > [!TIP]
+       > If this option doesn’t appear, an Office 365 administrator is already in place.
+
 ### If I have multiple domains, can I control the Microsoft 365 tenant that users are added to?
 
 If you do nothing, a tenant is created for each user email domain and subdomain.
@@ -138,6 +144,8 @@ If you want all users to be in the same tenant regardless of their email domain,
 Power Automate allows you to create data zones for business and nonbusiness data, as shown in the following screenshot. After you implement these [data loss prevention policies](prevent-data-loss.md), users can't design or run Power Automate flows that combine business and nonbusiness data.
 
 :::image type="content" source="media/organization-q-and-a/data-loss-prevention-policy.png" alt-text="Screenshot of an organization's data loss prevention policy.":::
+
+> There isn't a supported automated way to move users across tenants. To learn about adding domains to a single Office 365 tenant, go to [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
 ## Manage Power Automate RPA licenses
 
@@ -155,6 +163,18 @@ The unattended add-on is environment-specific. If you have multiple environments
 
 Also, if you need to run multiple unattended desktop flows in parallel in a single environment, you need to assign the right number of unattended add-ons to the environment to support the flow runs.
 
+1. The tenant admin must purchase or get trial a version of the **Power Automate Process** plan (previously Power Automate Unattended RPA add-on) capacity for the tenant. The tenant admin can do this from the [Microsoft 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/catalog). Just search the purchase services page for the license.
+
+1. The environment admin must assign the available (paid or trial) capacities to a specific environment.
+
+   ![manage unattended license.](./media/RPA-license/assign-process-license-environment.png)
+
+1. Makers can now run unattended desktop flows within the environment that has the Process license assigned. 
+
+> [!NOTE]
+> The Process license is environment-specific. So, if you have multiple environments that need to run unattended RPA, you need to assign licenes to each of them.
+> You need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
+
 ### What are the prerequisites for using RPA?
 
 - You must have an environment that has Microsoft Dataverse enabled.
@@ -164,6 +184,7 @@ Also, if you need to run multiple unattended desktop flows in parallel in a sing
 ### How can I check which license I'm using?
 
 Press Ctrl+Alt+A in Power Automate to check your license status. There isn't a way to check license status in the user interface.
+The admin needs a paid or trial Power Automate Premium (previously Power Automate per user with attended RPA) or a Power Automate Process plan (previously Power Automate per flow) before they can turn on to start an unattended trial.
 
 ### Can trials be disabled for a tenant?
 
@@ -171,7 +192,7 @@ Tenant admins can use PowerShell to disable all trial activations for a tenant.
 
 ### How can I start an unattended trial?
 
-1. Select **Purchase services** in the Microsoft 365 admin center, and then select **Add-ons**.
+1. Select **Purchase services** in the Microsoft 365 admin center, and then search for  **Power Automate Process**.
 
 1. Select **Power Automate unattended RPA add-on Trial**.
 
@@ -185,6 +206,26 @@ Only admins can assign unattended trial capacity. Assign add-on capacity to each
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
+1. Select **Power Automate Process plan**
+
+1. Select **Get free trial**.
+
+### Assign Power Automate Process plan (previously Power Automate process flow) capacity to an environment
+
+Before you can assign capacity, such as trial licenses, you must [get the Process licences](#how-to-start-an-unattended-trial).
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
 1. Select **Resources** > **Capacity** > **Manage**.
 
-1. Select the environment to which you want to assign the unattended RPA licenses, assign the capacity, and then select **Save**.
+   ![Display the manage add-ons screen.](./media/rpa-license/manage-add-ons.png)
+
+1. Select the environment to which you want to assign the Power Automate Process licenses, assign the capacity, and then select **Save**. 
+
+   ![Assign unattended license to environment.](./media/rpa-license/assign-process-license-environment.png)
+
+> [!NOTE]
+>
+>- You'll need to assign capacity to each environment that needs to run unattended RPA.
+>- You'll need to ensure you assign enough capacity if you'll run desktop flows in parallel.
+>- Only admins can assign the capacity.

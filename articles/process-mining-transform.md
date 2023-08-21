@@ -1,13 +1,13 @@
 ---
-title: Transform and map data in process mining
-description: Learn how to transform and map data with process mining in Power Automate.
+title: Transform and map data
+description: Learn how to transform and map data with the process mining capability in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Transform and map data in process advisor
+# Transform and map data
 
 After you select the data source you want to use, you're taken to the Power Query Editor. The Query Editor is a powerful tool to transform your data. To learn more, go to [The Power Query user interface](/power-query/power-query-ui).
 
@@ -83,7 +83,7 @@ You can use **Ctrl** + **click** to select multiple columns that you want to com
 
 ## Map data
 
-Mapping tells process advisor what columns represent case ID, activity name, or timestamp.
+Mapping tells the process mining capability what columns represent case ID, activity name, or timestamp.
 
 1. In the toolbar, select **Map to entity**.
 

@@ -1,13 +1,13 @@
 ---
 title: Rework metrics
-description: Learn about rework metrics types and more in minit.
+description: Learn about rework metrics types and more in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 03/31/2013
+ms.date: 07/08/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -79,11 +79,9 @@ To display the rework information:
 
 1. On the panel on the right, select **Customize** (the top icon).
 
-1. On the **Customize** toolbar, select **Rework**. 
+1. On the **Customize** toolbar, select **Rework**.
 
     You can select if one metric is used both for activities and edges, or each metric is set separately. To switch between count and percentage for each metric, select **%**.
-
-    :::image type="content" alt-text="Screenshot of the fields in the Rework metrics screen." source="media/rework-customize.png":::
 
 The list of metrics is the same for both activities and edges, with one exception. Metric **Net Loop Gain** is available only for activities.
 

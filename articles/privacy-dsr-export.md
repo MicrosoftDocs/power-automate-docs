@@ -17,15 +17,15 @@ ms.date: 04/18/2023
 
 [!INCLUDE [gdpr-dsr-export-note](~/../shared-content/shared/privacy-includes/gdpr-dsr-export-note.md)]
 
-The right of data portability allows data subjects to request a copy of their personal data in an electronic format that may be transmitted to another data controller.
+The right of data portability allows data subjects to request a copy of their personal data in an electronic format that can be transmitted to another data controller.
 
-The following table summarizes where to find and export the personal data of a user who authenticates using Azure Active Directory (Azure AD) in Power Automate.
+The following table summarizes where to find and export the personal data of a user who authenticates by using Azure Active Directory (Azure AD) in Power Automate.
 
-- **Website access:** Sign in to the [Power Apps admin center](https://admin.powerapps.com/) or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-- **PowerShell access:** [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell)
+- **Website access:** Sign in to the [Power Apps admin center](https://admin.powerapps.com/) or [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+- **PowerShell access:** Use [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell).
 
 | Customer data | Website access | PowerShell access |
-| ----------------- | ------------------ | -------------------|
+|---|---|---|
 | System-generated logs | [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/) |
 | Run history | Power Automate maker portal | |
 | Flows | Power Automate maker portal | |
@@ -45,33 +45,33 @@ The following table summarizes where to find and export the personal data of a u
 1. Select a flow, select **&hellip; More**, and then select **Export**.
 1. Select **Package (.zip)**.
 
-    Your flow is downloaded as a zipped archive.
+    The flow is downloaded as a zipped archive.
 
 ## Export run history
 
-Run history lists all executions of a cloud flow, including a run's status, start time, duration, and inputs and outputs.
+Run history lists all executions of a cloud flow. It includes a run's status, start time, duration, inputs, and outputs.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com/).
 1. On the left navigation pane, select **My flows**.
 1. Select a flow.
-1. In the **RUN HISTORY** pane, select **See all**.
+1. In the **Run history** pane, select **See all**.
 1. At the top of the page, select **Download CSV**.
 
-The run history is downloaded as a .csv file so that you can open it in Microsoft Excel or a text editor and analyze the results.
+    The run history is downloaded as a .csv file, so that you can open it in Microsoft Excel or a text editor and analyze the results.
 
 ## Export a user's activity feed
 
 The activity feed shows a history of a user's activities, flow execution failures, and notifications.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com/).
-1. Select the bell icon in the upper-right corner of the page, and then select **Show all activity**.
-1. Copy the contents of the **Activity** page and paste them into a document editor such as Microsoft Word.
+1. Select the bell symbol in the upper-right corner of the page, and then select **Show all activity**.
+1. Copy the contents of the **Activity** page, and paste them into a document editor such as Microsoft Word.
 
 ## Export a user's connections
 
 1. Sign in to [Power Automate](https://make.powerautomate.com/).
-1. On the upper-right corner of the page, select the gear icon, and then select **Connections**.
-1. Copy the list, and then paste it into a document editor such as Microsoft Word.
+1. Select the gear symbol in the upper-right corner of the page, and then select **Connections**.
+1. Copy the list, and paste it into a document editor such as Word.
 
 ## Export a user's connections using a PowerShell cmdlet
 
@@ -103,10 +103,8 @@ Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | 
 ## Export a user's custom connectors
 
 1. Sign in to [Power Automate](https://flow.microsoft.com).
-
-1. Select the gear icon in the upper-right corner of the page, and then select **Custom Connectors**.
-
-1. Copy the list, and then paste it into a document editor such as Microsoft Word.
+1. Select the gear symbol in the upper-right corner of the page, and then select **Custom Connectors**.
+1. Copy the list, and paste it into a document editor such as Word.
 
 ## Export a user's custom connectors using PowerShell cmdlets
 
@@ -143,18 +141,19 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | O
 ## Export a user's approval history
 
 1. On the web or desktop, open [Microsoft Teams](https://teams.microsoft.com).
-1. Go to the **Approvals** app in Teams. Do this in one or two ways:
-    - From the main search bar in Teams, search for **Approvals**, or 
-    - On the left panel in Teams, select the ellipses (...), and then search for or select **Approvals**.
+1. In Teams, follow one of these steps to open the **Approvals** app:
 
-1. On the **Received** tab, select **Export** in the top right corner to export received approvals.
+    - From the main search bar, search for **Approvals**. 
+    - In the left pane, select the ellipsis (**&hellip;**), and then search for or select **Approvals**.
+
+1. On the **Received** tab, select **Export** in the upper-right corner to export received approvals.
 1. Select the export dates, and then select **Export**.
-1. Select the **Sent** tab, and then select **Export** in the top right corner to export sent approvals.
+1. On the **Sent** tab, select **Export** in the upper-right corner to export sent approvals.
 1. Select the export dates, and then select **Export**.
 
-Repeat the previous process for all environments that the user is part of by switching environments in the top right of the Approvals app page.
+Repeat the previous procedure for every environment that the user is part. Use the environment switcher in the upper right of the **Approvals** app page to  switch environments.
 
-Alternatively, you can go to [Power Automate](https://make.powerautomate.com), select **Approvals** in the left panel, and select the **History** tab. Then, you can manually copy approval contents for received and sent approvals. To make sure you get both, select the appropriate filter (**Received** or **Sent**) in the top right corner.
+Alternatively, open [Power Automate](https://make.powerautomate.com), select **Approvals** on the left navigation pane, and select the **History** tab. You can then manually copy approval contents for received and sent approvals. To ensure that you get the contents for both types of approvals, select the appropriate filter (**Received** or **Sent**) in the upper-right corner.
 
 ## Export a user's details using a PowerShell cmdlet
 
@@ -166,6 +165,6 @@ Get-AdminFlowUserDetails -UserId {userID}
 
 ## Export gateway settings
 
-[Learn more about responding to data export requests for on-premises data gateways](/power-bi/service-gateway-onprem#tenant-level-administration).
+[Learn more about responding to data export requests for on-premises data gateways.](/power-bi/service-gateway-onprem#tenant-level-administration)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

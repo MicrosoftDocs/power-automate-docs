@@ -1,6 +1,6 @@
 ---
-title:  Glossary in process advisor
-description: Terminology used in the process advisor feature in Power Automate.
+title:  Glossary in the process mining capability
+description: Terminology used in the process mining capability in Power Automate.
 author: donums
 contributors:
   - donums
@@ -8,7 +8,7 @@ contributors:
   - tatn
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 11/15/2022
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -16,9 +16,9 @@ search.audienceType:
   - enduser
 ---
 
-# Glossary in process advisor
+# Glossary in the process mining capability
 
-Activity — An activity in Process Advisor refers to a specific task or action that is part of a business process. These activities can be carried out by either humans or machines, and the sequence of these activities leads to the completion of a business process.
+Activity — An activity in the process mining capability refers to a specific task or action that is part of a business process. These activities can be carried out by either humans or machines, and the sequence of these activities leads to the completion of a business process.
 
 Attributes — Attributes refer to the dimensions or columns in your data.
 

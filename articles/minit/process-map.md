@@ -1,13 +1,13 @@
 ---
 title: Process map overview
-description: Learn how to use a process map for process mining in minit.
+description: Learn how to use a process map for process mining in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -109,7 +109,7 @@ By default, the process map displays based on the **Activity** attribute, which 
 
 Mining attribute selections shows only relevant event log attributes and by selecting a different attribute, the process map is recalculated including the available metrics used in frequency, performance, finance, or rework analysis.
 
-The selection of the mining attribute has an impact on the process map view and included metrics, but it does not influence the other process view screens, which are still calculated using the Activity attribute.
+The selection of the mining attribute has an impact on the process map view and included metrics, but it doesn't influence the other process view screens, which are still calculated using the Activity attribute.
 
 Variant analysis screen is available also for other mining attributes. A separate selection must be used. To learn more, go to [Variant mining attribute](variants.md#variant-mining-attribute).
 
@@ -135,9 +135,7 @@ Map clustering allows you to visually encapsulate activities in the process map 
 
 1. In the **Clustering attribute** dropdown menu, select an attribute.
 
-    :::image type="content" alt-text="Screenshot of the Clustering attribute dropdown menu." source="media/cluster-attribute.png":::
-
-The map clustering attribute selection control is populated automatically by minit. The attributes must fulfill the following premises:
+The map clustering attribute selection control is populated automatically by Power Automate Process Mining. The attributes must fulfill the following premises:
 
 - **Process map:** Each value of the attribute Activity must have exactly one corresponding value of the clustering attribute. It can also be an empty value. In this case, the activity is placed on canvas outside of any cluster. For example, approval must have always value **Management** in clustering attribute and PO archival must always have value Accounting.
 

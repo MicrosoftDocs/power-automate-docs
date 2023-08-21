@@ -1,13 +1,13 @@
 ---
 title: List of other operations
-description: Learn about operations and what they return in minit.
+description: Learn about operations and what they return in Power Automate Process Mining.
 author: rosikm
 contributors:
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -16,6 +16,8 @@ search.audienceType:
 ---
 
 # List of other operations
+
+Following are other operations that you can use in Power Automate Process Mining.
 
 ## attributeName
 

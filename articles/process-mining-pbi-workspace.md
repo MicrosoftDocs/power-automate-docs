@@ -1,13 +1,13 @@
 ---
 title: Customize a report with your own Power BI workspace
-description: Learn how to use your own custom Power BI workspace and leverage a higher capacity to analyze processes with process mining.
+description: Learn how to use your own custom Power BI workspace and leverage a higher capacity to analyze processes with the process mining capability.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 06/02/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -21,9 +21,9 @@ You can use your own custom Power BI workspace and leverage a higher capacity to
 
 ## Set up your workspace
 
-You need to set up your Power BI workspace to connect it to process advisor and then customize it. The following sections in this article walk you through how to set up your workspace.
+You need to set up your Power BI workspace to connect it to the process mining capability and then customize it. The following sections in this article walk you through how to set up your workspace.
 
-### Connect your Power BI workspace to process advisor
+### Connect your Power BI workspace to the process mining capability
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
@@ -33,8 +33,8 @@ You need to set up your Power BI workspace to connect it to process advisor and 
 
 1. Select **User settings** and review the **App registrations** selection.
 
-    - If **App registrations** is **Yes**, any user can register process advisor as an app.
-    - If **App registrations** is **No**,  only admins can register apps. If you're an admin, you can choose to turn this on to allow others to register process advisor as an app.
+    - If **App registrations** is **Yes**, any user can register the process mining capability as an app.
+    - If **App registrations** is **No**,  only admins can register apps. If you're an admin, you can choose to turn this on to allow others to register the process mining capability as an app.
 
 1. On the Windows taskbar, select **Search**.
 
@@ -52,7 +52,7 @@ If you haven't done this yet, install the Azure tools.
 
 1. Validate that you're signed in.
 
-1. Register the process advisor app service principal by typing this command:
+1. Register the process mining service principal by typing this command:
 
     **New-AzureADServicePrincipal -AppId dad3c6de-ed58-42ef-989f-9c0303aaeedc -DisplayName ‘Process Insights Prod’**
 
@@ -64,15 +64,14 @@ If you haven't done this yet, install the Azure tools.
 
 1. Scroll down to **Developer settings** and do the following steps:
 
-    1. Select the dropdown menu for **Allow service principals to use Power BI APIs**.
-
-    1. Enable it by toggling the slider.
+    1. Expand the dropdown menu for **Embed content in apps** and enable it by toggling the slider.
+    2. Expand the dropdown menu for **Allow service principals to use Power BI APIs** and enable it by toggling the slider.
 
 1. Return to the Power BI home page.
 
 ### Create your own custom Power BI workspace
 
-Now that you've connected your Power BI workspace to process advisor and installed the Microsoft Azure tools, you can create your own custom Power BI workspace.
+Now that you've connected your Power BI workspace to the process mining capability and installed the Microsoft Azure tools, you can create your own custom Power BI workspace.
 
 1. On the left panel, select **Workspaces** > **Create a Workspace**.
 
@@ -100,25 +99,25 @@ Load your process analytics in Power BI to start customizing your report.
 1. In the **Power BI Workspace (optional)** dropdown menu, select a workspace of your choice.
 1. If you select a workspace, give the report a unique name in the required **Report name** field.
 
-    We recommend that you use a unique name. If you use a name of a report that already exists, process advisor overwrites the existing report of another process. This could lead to loss of custom reports and composite datasets of that process. After refreshing the process, if you decide to change the report name, you'll need to publish a new report.
+    We recommend that you use a unique name. If you use a name of a report that already exists, the process mining capability overwrites the existing report of another process. This could lead to loss of custom reports and composite datasets of that process. After refreshing the process, if you decide to change the report name, you'll need to publish a new report.
 
 1. You might then toggle the **Update report when refreshing data** option between **on** and **off**.
 
-    If the toggle is **on**, a new report is published in Power BI and is embedded in the analytics page of process advisor. If the toggle is **off** after refreshing the data, the existing report isn't updated in process advisor.
+    If the toggle is **on**, a new report is published in Power BI and is embedded in the analytics page of the process mining capability. If the toggle is **off** after refreshing the data, the existing report isn't updated in the process mining capability.
 
 ## Customize reports in Power BI workspace
 
-With process advisor’s powerful integration with Power BI, you can customize your process reports in an attached Power BI workspace. In this example, you perform a simple customization of the Power BI report to include a card that holds or tracks one of the analytic measures.
+With the powerful integration of the process mining capability with Power BI, you can customize your process reports in an attached Power BI workspace. In this example, you perform a simple customization of the Power BI report to include a card that holds or tracks one of the analytic measures.
 
  To be able to do this, make sure you've completed these steps in this article:
 
-- [Connect your Power BI workspace to process advisor](#connect-your-power-bi-workspace-to-process-advisor)
+- [Connect your Power BI workspace to the process mining capability](#connect-your-power-bi-workspace-to-the-process-mining-capability)
 
 - [Create your own custom Power BI workspace](#create-your-own-custom-power-bi-workspace)
 
 - [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi)
 
-After completing these steps, return to the analytics page of your process in process advisor.
+After completing these steps, return to the analytics page of your process in the process mining capability.
 
 1. Refresh and reanalyze the process by selecting **Refresh**.
 
@@ -170,7 +169,7 @@ After completing these steps, return to the analytics page of your process in pr
 
 You've successfully customized your Power BI workspace. Every time you refresh your process and reopen your Power BI report, your metrics and customizations are updated. Try out Power BI and customize your reports to learn how they can help you analyze your process effectively.
 
-Once this step is done, you see the report in your Power BI workspace with the report name that you entered. You can edit and save it. Your report on process advisor is updated with the changes that you made with Power BI.
+Once this step is done, you see the report in your Power BI workspace with the report name that you entered. You can edit and save it. Your report is updated with the changes that you made with Power BI.
 
 If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
 
