@@ -229,3 +229,5 @@ Before you can assign capacity, such as trial licenses, you must [get the Proces
 >- You'll need to assign capacity to each environment that needs to run unattended RPA.
 >- You'll need to ensure you assign enough capacity if you'll run desktop flows in parallel.
 >- Only admins can assign the capacity.
+
+
