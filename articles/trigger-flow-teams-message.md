@@ -9,7 +9,7 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: kisubedi
+ms.author: napienko
 ms.reviewer: angieandrews
 editor: ''
 tags: ''

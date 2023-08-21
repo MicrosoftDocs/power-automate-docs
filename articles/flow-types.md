@@ -14,7 +14,7 @@ ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/05/2023
-ms.author: kisubedi
+ms.author: napienko
 ms.reviewer: angieandrews
 ---
 # Overview of the different types of flows
