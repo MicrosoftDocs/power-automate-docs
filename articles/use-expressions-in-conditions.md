@@ -104,6 +104,25 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+Ask copilot to create a flow for you. Please type the following prompt to copilot. 
+
+Every week, list rows in a Excel table and if the Status column equals Succeded or claim maangers email is jake@contoso.com, delete Excel row
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/d4ef3af0-11ae-4195-9776-52618c4413b8)
+
+Alternatively, you can follow the below steps to create the same flow manually:
+
+1. Select **New step**.
+2. Search for **rows**, and then select **Excel Online (Business)**.
+    Select the "get a row" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
+
+1. Select the **List rows present in a table** action.
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/c8d7131d-026c-4d79-a1e1-ee77bbf9ee0b)
+
+1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/7cd0f2b1-d0de-4124-87fa-1c7334b2caa3)
+
+   
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
@@ -142,9 +161,36 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+1. Select **New step**.
 
----
+1. Search for **apply to each**, and then select the **Apply to each - Control**.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/7200f279-1f1d-4e15-854e-9d86f4e8213b)
+
+
+1. Add the **value** token to the **Select an output from previous steps** box.
+
+   This **value** token represents the spreadsheet table and all of its data.
+
+ ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/92b1c871-1006-4fbb-aab3-186d3dcfac64)
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/bf9958f4-24b2-438e-a890-7e55a02ff45a)
+
+
+1. Select **Add an action** on the **Apply to each** card.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/3a669cfe-b2ec-4837-a7e2-d533e2e7f290)
+
+
+1. Search for **condition**, and then select the **Condition** control.
+
+
+1. Add the following **Or** expression. This **Or** expression checks the value of each row in the table. If the value of the **Status** column is *completed* **Or** *unnecessary*, the **Or** expression evaluates to "true".
+
+    Here's an example of a **Condition** card.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/406eb4f9-2031-4354-aed5-de0464a77e16)
+
 
 ## Delete matching rows from the spreadsheet
 
@@ -171,6 +217,20 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 1. Save your flow.
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+1. Select **Add an action** on the **If yes** branch of the condition.
+   The **If yes** branch runs if the **Or** condition evaluates to **true**.
+
+1. Search for **Delete a row**, select ** Excel Online (Business)**, and then select **Delete a row**.
+     ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/40c0bf07-22fb-4439-bb45-76eb465a2f84)
+   
+1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
+
+1. In the **Key Column** dropdown list, select **\_PowerAppsId_**.
+
+1. In the **Key Value** field, insert the **\_PowerAppsId_** dynamic value.
+
+1. Save your flow.
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
