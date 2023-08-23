@@ -42,7 +42,7 @@ If you've opted for the public preview, the **Desktop flow actions in DLP** sett
 1. On the **Tenant settings** page, select **Desktop flow actions in DLP**.
 1. Turn on **Show desktop flow actions in DLP policies**, and then select **Save**.
 
-    :::image type="content" source="media/prevent-data-loss/dlp-desktop-flows.png" alt-text="Screenshot of the DLP for desktop flows setting in the Power Platform admin center.":::<!-- EDITOR'S NOTE: Please highlight the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
+    :::image type="content" source="media/prevent-data-loss/dlp-desktop-flows.png" alt-text="Screenshot of the DLP for desktop flows setting in the Power Platform admin center.":::
 
 You can now classify desktop flow action groups when you create a data policy.
 
