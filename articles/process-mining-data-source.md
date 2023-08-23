@@ -1,13 +1,13 @@
 ---
-title: Edit and refresh processes in process mining
-description: Learn how to edit and refresh processes with process mining in Power Automate.
+title: Edit and refresh processes
+description: Learn how to edit and refresh processes with the process mining capability in Power Automate.
 author: donums
 contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Edit and refresh processes in process mining
+# Edit and refresh processes
 
 Process mining is a technique used to extract insights from event logs of a process. During the process, it is common to make edits to the mapping or query of an existing process. The following are some of the reasons why you might want to edit your process:
 

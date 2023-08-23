@@ -1,10 +1,11 @@
 ---
 title: Functional Application Consultant learning catalog
-description: Find all the training options for Power Automate.
+description: Find training options for implementation experts in Power Automate.
 author: msftman
-ms.topic: article
+ms.topic: conceptual
 ms.date: 03/21/2020
 ms.author: deonhe
+ms.reviewer: angieandrews
 
 ---
 
@@ -29,10 +30,10 @@ For functional consultants, our job-task analysis research showed that everyone 
 | [Introduction to business process flows in Power Automate](/training/modules/intro-business-process-flows/)	|Do you want to create business process flows? This module will discuss what business process flows are and how to use them to solve business solutions. You will discover why automating the business process is important to organizations and how to build business process flow solutions by using Microsoft Power Platform and Dataverse. Additionally, you will learn how business process flows differ from regular Power Automate workflows and when to use each.|	Free, self-paced online learning path|	31 minutes |
 | [Power Automate documentation](../index.yml)  | Power Automate documentation. Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more. | Website landing page |      |
 | [Power Automate Frequently Asked Questions](../frequently-asked-questions.yml)     | Power Automate Frequently Asked Questions   | Documentation   | 5 minutes to read  |
-## Process advisor<a name="process-advisor"></a>
+## Process mining<a name="process-advisor"></a>
 | Content   | Description  | Format  | Length    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
-| [Optimize your business process with process advisor](/training/modules/business-process-optimization-process-advisor/)	|Power Automate's process advisor allows you to record existing business processes and analyze them in order to increase the efficacy by tracking time to complete tasks and mapping out the various actions involved. Understanding a process is the first step to automating a solution, and process advisor simplifies that exercise. 	|Free, self-paced online learning module | 24 minutes |
+| [Optimize your business process with process mining](/training/modules/business-process-optimization-process-advisor/)	|Power Automate's process mining capability allows you to record existing business processes and analyze them in order to increase the efficacy by tracking time to complete tasks and mapping out the various actions involved. Understanding a process is the first step to automating a solution, and the process mining capability simplifies that exercise. 	|Free, self-paced online learning module | 24 minutes |
 ## Administer<a name="administer"></a>
 | Content  | Description  | Format | Length    |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------|

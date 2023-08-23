@@ -1,5 +1,5 @@
 ---
-title: Share process mining processes in process mining
+title: Share process mining processes in the process mining capability
 description: Learn how to share a process mining process with others so that they can glean insights to make decisions.
 author: donums
 contributors:
@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -17,15 +17,15 @@ search.audienceType:
 
 # Share process mining processes
 
-When you create a process in process advisor, only you can see it. But you may want to share the analytics and insights with others. Share your process mining processes with others in your organization so they can also glean insights to make decisions.
+When you create a process in the process mining capability, only you can see it. But you might want to share the analytics and insights with others. Share your process mining processes with others in your organization so they can also glean insights to make decisions.
 
 There are a few ways you can share your process.
 
 ## Share from process lists page
 
-1. On the process advisor homepage, beneath the cards for the processes, select **All processes**.
+1. On the process mining homepage, beneath the cards for the processes, select **All processes**.
 
-1. Highlight a process, select **More commands** (the vertical ellipsis <span>&#8942;</span>), and then select **Share**.
+1. Highlight a process, select the vertical ellipsis (&vellip;), and then select **Share**.
 
     :::image type="content" source="media/process-mining-share/more-share.png" alt-text="Screenshot of the More commands dropdown menu.":::
 
@@ -53,7 +53,7 @@ The share action is available on the **Processes** screen for the following:
 
 - The system administrator in the environment.
 
-- Any security role that has share permissions on process advisor system entities.
+- Any security role that has share permissions on the process mining system entities.
 
 The share action is also available on the process details page with the same conditions. For process mining, only the co-owner and viewer roles are available for sharing with others.
 
@@ -75,8 +75,8 @@ Adding a co-owner to the process allows the owner to include other people who ca
 
 - [View the process analytics](process-mining-visualize.md).
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
 >- The admin experience for processes they don't own isn't supported.
 >
->- Removing all process roles from a user (such as viewer) does not remove that process from the user's process list view. They can't perform any actions on the process.
+>- Removing all process roles from a user (such as viewer) doesn't remove that process from the user's process list view. They can't perform any actions on the process.

@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: georgiostrantzas
 ms.topic: conceptual
-ms.date: 07/04/2023
+ms.date: 07/12/2023
 ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
@@ -92,17 +92,22 @@ WAM enables certain features that aren't available through the default sign in p
 
 - **1**: Power Automate for desktop authenticates users using the WAM functionality.
 
-## Allow users with invalid certificates to sign in to Power Automate for desktop
+## Configure Power Automate for desktop to check for revoked certificates
 
-You can use the following registry entry to allow users with invalid certificates to sign in to Power Automate for desktop.
+Certificates ensure the security of your connections to online data sources. You can use the following registry entry to configure the level of certificate check, based on the certificates’ revocation information status.
+
+> [!NOTE]
+> The default configuration when no registry entry is set is **Basic check**.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | DisableCheckCertificateRevocationList | DWORD |
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global | CertificateRevocationCheck | DWORD |
 
 ***Values***
 
-- **1**: Users with invalid certificates can sign in to Power Automate for desktop.
+- **0**: No check - Power Automate for desktop doesn't check the revocation information. All valid certificates are allowed through.
+- **1**: Basic check (default) - Power Automate for desktop rejects only certificates that are revoked. Certificates without revocation information are allowed through. This is important for some organizations with corporate proxy services.
+- **2**: Comprehensive check – Power Automate for desktop rejects both certificates that are revoked and certificates without revocation information.
 
 ## Allow users to select an organization in Power Automate for desktop
 
@@ -181,7 +186,7 @@ IT administrators may set the following registry key to configure how Power Auto
 
 - **1**: Power Automate for desktop authenticates to the corporate proxy server using the current user's credentials.
 
-## Configure Power Automate for desktop to authenticate to a corporate proxy server using Windows Credentials
+## Configure Power Automate for desktop to authenticate to a corporate proxy server using Windows credentials
 
 IT administrators may set the following registry key to configure Power Automate to use a generic credential from Windows’ Credential Manager to authenticate to a corporate proxy server. 
 
@@ -236,7 +241,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 - **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
 
-## Prevent Power Automate for desktop from uploading action logs after a desktop flow runthrough the console
+## Prevent Power Automate for desktop from uploading action logs after a desktop flow runs through the console
 
 You can use the following registry entry to prevent Power Automate for desktop from uploading detailed logs per action for the respective run of the flow's run history, after a desktop flow run takes places through the console.
 
@@ -246,7 +251,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ***Value***
 
-- **1**: Power Automate for desktop won't upload detailed action logs for the respective run of the flow's run history, after the desktop flow runs through the console.
+- **1**: Power Automate for desktop won't upload detailed action logs for the respective run of the flow's run history, after a desktop flow runs through the console.
 
 ## Configure Power Automate for desktop notification settings
 
@@ -322,6 +327,30 @@ You can use the following registry entry to disable the execution of flows conta
 ***Value***
 
 - **1**: The machine can't run desktop flows containing cloud connectors. An error message informs users about the limitation.
+
+## Improve troubleshooting of the Power Automate troubleshooter
+
+You can use the following registry entry to permit the use of the verbose logging functionality in the troubleshooter.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | AllowVerboseLogging | DWORD |
+
+***Value***
+
+- **1**: The verbose logging feature will be available to use via the troubleshooter of Power Automate for desktop.
+
+## Turn on verbose logging state in Power Automate for desktop
+
+You can use the following registry entry to turn on the verbose logging state for Power Automate for desktop.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_CURRENT_USER | SOFTWARE\Microsoft\Power Automate Desktop | UseVerboseLogging | DWORD |
+
+***Value***
+
+- **1**: The verbose logging state will be turned on for Power Automate for desktop.
 
 ## Allow users to register their machine to a different tenant in Power Automate machine-runtime app
 

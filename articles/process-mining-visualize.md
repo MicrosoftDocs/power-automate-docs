@@ -1,13 +1,13 @@
 ---
-title: Visualize and gain insights from processes in process mining (contains video)
-description: This topic explains how to visualize and gain insights from processes with process mining.
+title: Visualize and gain insights from processes (contains video)
+description: This topic explains how to visualize and gain insights from processes in the process mining capability.
 author: donums
 contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/03/2023
+ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,18 +15,18 @@ search.audienceType:
   - enduser
 ---
 
-# Visualize and gain insights from processes in process mining
+# Visualize and gain insights from processes
 
-This topic explains metrics and visuals, and what they could tell you about your process.
+This article explains metrics and visuals, and what they could tell you about your process.
 
 Some of the metrics and visuals are only available in setup with your own Power BI workspace. These metrics and visuals are clearly marked in the text as **Premium**. 
 To be able to access them and gain full insights, make sure you've completed steps in the following articles:
 
-- [Connect your Power BI workspace to process advisor](process-mining-pbi-workspace.md#connect-your-power-bi-workspace-to-process-advisor)
+- [Connect your Power BI workspace to the process mining capability](process-mining-pbi-workspace.md#connect-your-power-bi-workspace-to-the-process-mining-capability)
 - [Create your own custom Power BI workspace](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace)
 - [Load your process analytics in Power BI](process-mining-pbi-workspace.md#load-your-process-analytics-in-power-bi)
 
-After completing these steps, return to the analytics page of your process in process advisor.
+After completing these steps, return to the analytics page of your process in the process mining capability.
 
 ## Process map
 
@@ -62,17 +62,17 @@ The metrics for following layers visualize the same metric on both nodes and tra
 
     Select different metrics to be visualized on nodes and on transitions to get better insights. If you select the link icon between them, the selection to the same metrics both for nodes and transitions is locked. You can switch between the absolute value and relative ratio to the process level metric by selecting the % icon next to the metric.
 
-  - **Rework count**: Rework count represents the sum of all self-loops and loops.
+  - **Rework count:** Rework count represents the sum of all self-loops and loops.
 
-  - **Self-loop count**: Self-loop represents a specific repetition where an activity is directly followed by the same activity. In terms of edges/transitions, the starting and ending activity of edge is the same.
+  - **Self-loop count:** Self-loop represents a specific repetition where an activity is directly followed by the same activity. In terms of edges/transitions, the starting and ending activity of edge is the same.
 
-  - **Loop inflow**: Loop inflow represents the repetitions of an activity's predecessors.
+  - **Loop inflow:** Loop inflow represents the repetitions of an activity's predecessors.
 
-  - **Loop outflow**: Loop outflow represents the repetitions of an activity's successors.
+  - **Loop outflow:** Loop outflow represents the repetitions of an activity's successors.
 
-  - **Loop count**: Loop represents specific repetition where activity is followed by the same activity, but not directly. For example, at least one additional activity is always involved.
+  - **Loop count:** Loop represents specific repetition where activity is followed by the same activity, but not directly. For example, at least one additional activity is always involved.
 
-  - **Net loop gain** (available for activities only): This activity metric represents the difference between Loop outflow and Loop inflow. If the value is positive, the activity is directly followed by more repeated activities than it was preceded. Such activities start new loops in processes. If the value is negative, the activity is directly followed by less repeated activities than it was preceded. Such activities end, close, or exit loops in processes. The halo effect color also helps us see positive and negative trends in the process - red color represents a problem (start of new loops); the blue color represents a favorable change (end of loops).
+  - **Net loop gain:** Available for activities only. This activity metric represents the difference between Loop outflow and Loop inflow. If the value is positive, the activity is directly followed by more repeated activities than it was preceded. Such activities start new loops in processes. If the value is negative, the activity is directly followed by less repeated activities than it was preceded. Such activities end, close, or exit loops in processes. The halo effect color also helps us see positive and negative trends in the process - red color represents a problem (start of new loops); the blue color represents a favorable change (end of loops).
 
 To learn more about the process map visual, go to [Process map overview](minit/process-map.md).
 
@@ -104,8 +104,6 @@ These KPIs are the same metrics that you see at the top of your report.
 
 To enlarge the view so you can dig deeper into your process, select the **Map** tab.
 
-:::image type="content" source="media/process-mining-visualize/map-tab.png" alt-text="Screenshot of the 'Map' tab.":::
-
 ### Filters pane
 
 To drill down into the process, use the filters in the filters dialog. To see the filters, select **Filters** in the upper-right side of the **Summary** tab.
@@ -121,10 +119,6 @@ The filters dialog contains the following filters:
 - **Custom attribute filters (Premium)**: Allows you to filter on both your event and case level custom attributes for your process.
 
 To select multiple activities or cases, you can use **Ctrl** + **click** .
-
-The following screenshot is an example of the **Filters** pane that you'll see in the premium version.
-
-:::image type="content" source="media/process-mining-visualize/filter-panel.png" alt-text="Screenshot of the Filters pane in the premium version.":::
 
 If you didn't purchase the premium version, you'll have access to the default version. The **Filters** pane shows only the activity selector. You won't have access to the other filters listed in this section with **(Premium)** in the title.
 
