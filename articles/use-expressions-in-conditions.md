@@ -126,6 +126,8 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
     :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table.":::
 
+---
+
 ## Check the status column of each row
 
 # [Classic designer](#tab/classic-designer)
@@ -171,6 +173,8 @@ Alternatively, you can follow the below steps to create the same flow manually:
     Here's an example of a **Condition** card.
 
     :::image type="content" source="./media/use-expressions-in-conditions/condition-card.png" alt-text="Screenshot of selecting the value from the previous step.":::
+
+---
 
 ## Delete matching rows from the spreadsheet
 
@@ -234,12 +238,9 @@ Here's an example of a **Condition** card.
 
 If you've followed the steps in this tutorial, your spreadsheet should look similar to the following screenshot.
 
-:::image type="content" source="../media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png" alt-text="Screenshot of the spreadsheet before your flow runs.":::
+:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png" alt-text="Screenshot of the spreadsheet before your flow runs.":::
 
 After your flow runs, your spreadsheet should look similar to the following screenshot.
-
->[!div class="mx-imgBorder"]
->![Screenshot of the spreadsheet after your flow runs.](./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png "Spreadsheet after the flow runs")
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png" alt-text="Screenshot of the spreadsheet after your flow runs.":::
 
