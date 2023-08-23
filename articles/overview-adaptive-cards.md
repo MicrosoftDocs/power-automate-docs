@@ -75,6 +75,8 @@ This action posts an adaptive card as a Flow bot to a specific user, like the ca
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
+---
+
 ## Known issues
 
 - It is not possible to collect data from Adaptive Cards unless they are created using one of the "wait for a response" actions. Adaptive Cards that don't wait return an error for all button actions except OpenURL. Learn more on [OpenURL buttons](https://adaptivecards.io/explorer/Action.OpenUrl.html). 
