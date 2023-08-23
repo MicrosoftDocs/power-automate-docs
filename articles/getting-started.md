@@ -16,7 +16,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/01/2021
+ms.date: 09/01/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -36,12 +36,6 @@ Welcome! What can you expect from Power Automate? Here are a few examples of wha
 * You can even automate tasks on your local computer like computing data in Excel.
 
 Just think about time saved once you automate repetitive manual tasks simply by recording mouse clicks, keystrokes and copy paste steps from your desktop! Power Automate is all about automation.
-
-<br/>
-
-The following video shows you how to get started building your first flow.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKUx1]
 
 ## Power Automate is for everyone
 
@@ -92,8 +86,6 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-
-
 1. From the homepage, or by selecting **Create** &gt; **Describe it to design it**, you can simply write a prompt explaining your automation requirement. To do this, type **Notify and Email when a new file is uploaded to OneDrive** in the Copilot box and select **Submit**.
 
 1. Ensure the returned flow structure (trigger-actions) fits your needs.
@@ -141,24 +133,12 @@ When you create a cloud flow from scratch, you control the entire workflow. Here
 
 ## Peek at the code
 
-# [Classic designer](#tab/classic-designer)
-
 You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer.
 
 1. Select the **...** menu item at the top right corner of any **action** or **trigger**.
 1. Select **Peek code**.
 
 1. Notice the full JSON representation of the actions and triggers. This includes all inputs, such as the text you enter directly, and expressions used. You can select expressions here and then paste them into the **Dynamic Content** expression editor. This can also give you a way to verify the data you expect is present in the flow.
-
-    ![Peek code details.](media/getting-started/peek-code-details.png)
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
-You don't need to be a developer to create flows; however, Power Automate does provide a **Peek code** feature that allows anyone to take a closer look at the code that's generated for all actions and triggers in a cloud flow. Peeking at the code could give you a clearer understanding of the data that's being used by triggers and actions. Follow these steps to peek at the code that's generated for your flows from within the Power Automate designer.
-
----
 
 ## Find your flows easily
 
