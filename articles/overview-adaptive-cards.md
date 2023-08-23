@@ -51,6 +51,8 @@ The following actions enable makers to create Adaptive Cards for Microsoft Teams
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
+---
+
 ### Post an adaptive card as the Flow bot to a Teams user, and wait for a response
 
 This action posts an adaptive card as a Flow bot to a specific user, like the case presented earlier in this article. However, in this case the flow run will not continue after the post until the recipient responds to inputs that are required within the card. The flow continues after the recipient responds. The flow returns dynamic content for one (1) response per recipient and per card.
@@ -89,17 +91,14 @@ This action posts an adaptive card as a Flow bot to a specific user, like the ca
 
    ![Update message.](media/adaptive-cards/update-message.png) 
 
-
 The **Update Message** and the **Should update card** inputs must be configured if a replacement card is desired.
- 
+
 - Power Automate uses Microsoft Adaptive Cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building Adaptive Cards.](/adaptive-cards/).
- 
-### See also 
- 
+
+### See also
+
 - [Create your first adaptive card](./create-adaptive-cards.md)
 - [Microsoft Teams connector](/connectors/teams/)
 - [Adaptive Cards IO](/adaptive-cards) 
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
