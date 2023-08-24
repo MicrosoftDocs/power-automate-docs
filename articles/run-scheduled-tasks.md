@@ -85,6 +85,16 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+The steps to follow in the new designer is identical to the classic designer. However, if you have access to copilot, you can simply ask copilot to create a scheduled flow. For e.g Ask 'Create a flow that runs Monday every two weeks starting 09/25/2023 which sends an email to contoso@gmail.com that their MPR doc is due'
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/1bf66d43-55d9-4eab-bc7b-2a9e87a0bfa5)
+
+
+You can ask the same prompt in the copilot within the designer as well.
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/a275b78f-a271-4a7f-a6a0-040c1b2b99a3)
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/3b8e5576-f5f0-4b90-bb48-83a39545e13c)
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
