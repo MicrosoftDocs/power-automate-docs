@@ -1,35 +1,31 @@
 ---
-title: Limits and configuration
-description: Learn about limits and configuration.
-services: ''
-suite: flow
-documentationcenter: na
+title: Limits of automated, scheduled, and instant flows
+description: Learn about the limits that apply to automated, scheduled, and instant flows in Microsoft Power Automate.
 author: ChrisGarty
+ms.author: CGarty
+ms.reviewer: angieandrews
 Contributors:
   - ChrisGarty
   - PriyaKodukula
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
+services: ''
+suite: flow
 ms.date: 05/01/2023
-ms.author: CGarty
-ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: bap-template
 ---
 
-# Limits for automated, scheduled, and instant flows
+# Limits of automated, scheduled, and instant flows
 
-This topic contains information about the current limits and configuration details for automated, scheduled, and instant flows.
-
-Check out the [pricing](https://make.powerautomate.com/pricing) for details on the different plans.
+This article contains information about the limits that apply to automated, scheduled, and instant flows, depending on which [Power Automate license](https://make.powerautomate.com/pricing) you have.
 
 ## Performance profiles
 
-Flows have different limits depending on their *performance profile*. There are four possible values, depending on the flow owner's plan.
+A flow's *performance profile* determines its Power Platform request limits. The following table describes the plans that are associated with each of the four performance profiles.
 
 | Performance profile | Plans |
 |---------------------|-------|
@@ -38,54 +34,54 @@ Flows have different limits depending on their *performance profile*. There are 
 | High                | - Power Automate Process plan (previously Power Automate per flow plan) |
 | Unlimited Extended  | - Pay-as-you-go flows, Dynamics in context flows running under service principal  
 
-If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow will have the performance profile of the higher of the two plans. For the exact set of plans that include Power Automate, go to the Microsoft [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow has the performance profile of the higher of the plans. For the exact set of plans that include Power Automate, refer to the [Power Platform licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
-If needed, users can review their current plan by opening the session debugging information by pressing **Ctrl** + **Alt** + **A** in the maker portal. The plan being used will have **isCurrent=true**.
+Users can determine which plan they have by pressing Ctrl+Alt+A in the maker portal. The plan in use has **isCurrent=true**.
 
-The flow uses the plan of the owner of a cloud flow. If a cloud flow has been shared with multiple people, then generally the owner is the original creator. If you're unsure, you can change the owner of a cloud flow using the [Web API](web-api.md). At this time, if the original owner leaves an organization, the flow will be reverted to the **Low** performance profile.
+A cloud flow uses the plan of its owner. If a cloud flow has been shared with multiple people, then generally the owner is the flow's creator. If you're unsure, you can use the [Web API](web-api.md) to change the owner. If the original owner leaves the organization, the flow reverts to the Low performance profile.
 
 ## Flow definition limits
 
-The following table contains the limits for a single flow definition.
+The following table describes the limits for a single flow definition.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
-| Actions per workflow | 500 | You can add child flows to extend this limit, as needed. Flows with a large number of actions may encounter performance issues while you edit them, even if they have fewer than 500 actions. If you encounter performance issues while you edit your flow, consider using child flows to reduce the number of actions in a single flow. |
-| Allowed nesting depth for actions | 8 | To extend this limit, you can add child flows as needed. |
+| Actions per workflow | 500 | Flows with a large number of actions may encounter performance issues while you edit them, even if they have fewer than 500. Consider using child flows to reduce the number of actions in a single flow or if you need more than 500. |
+| Allowed nesting depth for actions | 8 | Add child flows if you need more than eight levels of nesting. |
 | Switch scope cases limit | 25 | |
 | Variables per workflow | 250 | |
-| Name for `action` or `trigger` | 80 characters | |
+| Length of `action` or `trigger` name | 80 characters | |
 | Characters per expression | 8,192 | |
 | Length of `description` | 256 characters | |
-| Maximum size for `trackedProperties` | 16,000 characters | |
+| Maximum size of `trackedProperties` | 16,000 characters | |
 
 ## My flows limit
 
-The following table contains the limit for the My flows and Team flows tab.
+The following table describes the limit for the My flows and Team flows tabs.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
-| Number of flows owned by a single user | 600 | To extend this limit, use flows under solutions. |
+| Number of flows owned by a single user | 600 | Use flows under solutions if you need more than 600. |
 
 ## Duration and retention limits
 
-The following tables contain the duration and retention limits.
+The following tables describe the duration and retention limits.
 
 ### Duration limits
 
-The following table contains the duration limits for a single flow run.
+The following table describes the duration limits for a single flow run.
 
 | Name | Limit | Notes |
 |------|-------|-------|
-| Run duration | 30 days |  Run duration is calculated by using a run's start time. Includes flows with pending steps like approvals. After 30 days, any pending steps time-out.|
-| Run retention in storage | 30 days |  Run retention is calculated by using a run's start time. |
+| Run duration | 30 days | Run duration is calculated using a run's start time and includes flows with pending steps like approvals. After 30 days, any pending steps time out.|
+| Run retention in storage | 30 days | Run retention is calculated using a run's start time. |
 | Minimum recurrence interval | 60 seconds |
 | Maximum recurrence interval | 500 days |
-| Minimum postpone interval | 5 seconds for Low, 1 second for all others |
+| Minimum postpone interval | 5 seconds for Low, 1 second for all other performance profiles |
 
 ### Retention limits
 
-The following table contains the limits on how long flows will remain turned on before they expire and get turned off.
+The following table describes the limits on how long flows remain turned on before they expire and get turned off.
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
@@ -100,7 +96,7 @@ The following table contains the limits on how long flows will remain turned on 
 
 ## Concurrency, looping, and debatching limits
 
-The following table contains the limits for a single flow run.
+The following table describes the concurrency, looping, and debatching limits for a single flow run.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
@@ -114,46 +110,52 @@ The following table contains the limits for a single flow run.
 
 ## Throughput limits
 
-Here are the time-bound limits for a single version of a cloud flow definition. These limits apply across all runs of the flow version, and are calculated on sliding windows.
+The following sections describe the time-bound limits for a single version of a cloud flow definition. These limits apply across all runs of the flow version and are calculated on sliding windows.
 
-If a cloud flow exceeds one of the limits, activity for the flow will be slowed and will automatically resume when the sliding window has activity below the limit. However, if a cloud flow consistently remains above the limits for 14 days, it will be turned off (see above duration limits). Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you'll need to update the flow to remain below the limits to prevent it from being turned off.
+If a cloud flow exceeds one of the limits, flow activity is slowed. It automatically resumes when the sliding window has activity below the limit. However, if a cloud flow [consistently remains above the limits](#duration-and-retention-limits) for 14 days, it's turned off. Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you need to revise it to remain below the limits to prevent it from being turned off.
 
 >[!TIP]
->Because these limits are for a single version, if you update your flow it will reset these limits.
+>Because these limits are for a single version, if you update your flow it resets the limits.
 
-### Power platform request limits
+### Power Platform request limits
 
-Power platform request limits are limits to the number of requests a cloud flow can run. To learn more about Power platform requests, go to [Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests). These requests are counted for all types of actions, including connector actions, HTTP actions, and built-in actions from initializing variables to a simple compose action. Both succeeded and failed actions count towards these limits. Additionally, retries and additional requests from pagination count as action runs. You can see the number of actions your flow has run by selecting **Analytics** from the flow details page and reviewing the **Actions** tab.
+As of October 2019, there are limits on the number of [Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests) an account can make across all its flows, Power Apps, and any applications that call Dataverse. No performance is guaranteed above these limits, although enforcement of the limits isn't as strict during the [licensing transition period](/power-platform/admin/power-automate-licensing/types#transition-period). [Learn more about request limits and allocations](/power-platform/admin/api-request-limits-allocations).
+
+These requests are counted for all types of actions, including connector actions, HTTP actions, and built-in actions, from initializing variables to a simple compose action. Both successful and failed actions count toward the limits. Retries and requests from pagination also count as action runs.
+
+To view the number of actions your flow has run, select **Analytics** on the flow details page and check the **Actions** tab.
+
+The following table describes the limits on requests.
 
 | Name | Transition period limit | Notes |
 | ---- | ----- |----- |
 | Power platform requests per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
-| Power platform requests per 24 hours|10,000 for Low, 100,000 for Medium, 500,000 for High, up to 10,000,000 for Unlimited Extended | Because of the current [transition period](/power-platform/admin/power-automate-licensing/types#transition-period), these limits are less strict than the values called out in [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations). These limits represent approximations of how many requests will be allowed daily. They aren't guarantees. Actual amounts may be smaller, but will be greater than the documented requests limits and allocations during the transition period. The documented limits were substantially increased in late 2021. For public preview reporting for Power Platform requests, go to [View detailed Power Platform request usage information in the Power Platform admin center (preview)](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). Any potential high usage enforcement based on these [limits](/power-platform/admin/api-request-limits-allocations) wouldn't start until six months after reports have been made generally available. Distribute the workload across more than one flow as necessary. | 
-| Concurrent outbound calls | 500 for Low, 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
-
-As of October 2019, there are limits on the number of Microsoft Power Platform requests an account can make across all of their flows, Power Apps, or any applications calling into the Microsoft Dataverse. No performance is guaranteed above these limits, although enforcement of these limits isn't as strict during the transition period. To learn more, go to [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations).
+| Power platform requests per 24 hours |10,000 for Low; 100,000 for Medium; 500,000 for High; 10,000,000 for Unlimited Extended | These limits represent approximations of how many requests are allowed daily. They aren't guarantees. Actual amounts may be smaller, but will be greater than the [documented request limits and allocations](/power-platform/admin/api-request-limits-allocations) during the [licensing transition period](/power-platform/admin/power-automate-licensing/types#transition-period). The documented limits were substantially increased in late 2021. [View detailed Power Platform request usage information in the Power Platform admin center (preview)](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). Any potential enforcement of high usage based on the [documented limits](/power-platform/admin/api-request-limits-allocations) wouldn't start until six months after reports have been made generally available. Distribute the workload across more than one flow as necessary. |
+| Concurrent outbound calls | 500 for Low; 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
 
 >[!TIP]
->Individual connectors have their own limits, which often will be reached before the limits mentioned earlier. Be sure to check the documentation for your connector on [Power Platform and Azure Logic Apps connectors documentation](/connectors/).
+>Individual connectors have their own limits, which often are reached before the limits mentioned earlier. Be sure to check the [documentation for your connector](/connectors/).
 
 ### Runtime endpoint request limits
 
 The runtime endpoint is the direct access URL for a given flow. It starts with something like: `https://prod-00.westus.logic.azure.com:443/`.
 
+The following table describes the limits on runtime endpoint requests.
+
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Concurrent inbound calls | ~1,000 | You can reduce the number of concurrent requests or reduce the duration as necessary. |
-| Read calls per 5 minutes  | 6,000 for Low, 60,000 for all others | This limit applies to calls that get the raw inputs and outputs from a cloud flow's run history. You can distribute the workload across more than one flow as necessary. |
-| Invoke calls per 5 minutes | 4,500 for Low, 45,000 for all others | You can distribute workload across more than one flow as necessary. |
+| Read calls per 5 minutes  | 6,000 for Low; 60,000 for all others | This limit applies to calls that get the raw inputs and outputs from a cloud flow's run history. You can distribute the workload across more than one flow as necessary. |
+| Invoke calls per 5 minutes | 4,500 for Low; 45,000 for all others | You can distribute workload across more than one flow as necessary. |
 
 ### Content throughput limits
 
-The content throughput limits refer to the amount of data that's read from or written to the run history of the cloud flow.
+The following table describes the content throughput limits, which refer to the amount of data that's read from or written to the run history of the cloud flow.
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
-| Content throughput per 5 minutes | 600 MB for Low, 6 GB for all others | You can distribute workload across more than one flow as necessary. |
-| Content throughput per 24 hours | 1 GB for Low, 10 GB for Medium, 50 GB for High | You can distribute workload across more than one flow as necessary. |
+| Content throughput per 5 minutes | 600 MB for Low; 6 GB for all others | You can distribute workload across more than one flow as necessary. |
+| Content throughput per 24 hours | 1 GB for Low; 10 GB for Medium; 50 GB for High | You can distribute workload across more than one flow as necessary. |
 
 ## Gateway limits
 
@@ -161,22 +163,25 @@ Power Automate supports write operations, including inserts and updates, through
 
 ## HTTP limits
 
-Here are the limits for a single outgoing or incoming HTTP call:
+The following sections describe the limits for a single outgoing or incoming HTTP call.
 
 ### Timeout
 
-Some connector operations make asynchronous calls or listen for webhook requests, so the timeout for these operations might be longer than these limits. For more information, see the technical details for the specific connector.
+Some connector operations make asynchronous calls or listen for webhook requests, so the timeout for these operations might be longer than these limits. For more information, refer to the technical details for the specific connector.
+
+The following table describes the timeout limits.
 
 | Name | Limit | Notes |
 |------|-------|-------|
-| Outbound synchronous request | 120 seconds <br>(2 minutes) | Examples of outbound requests include calls made by HTTP triggers. <br />**Tip**: For longer running operations, use an asynchronous polling pattern or an until loop. To work around timeout limits when you call another flow that has a callable endpoint, you can use the built-in action instead, which you can find in the connector picker under **Built-in**. |
+| Outbound synchronous request | 120 seconds (2 minutes) | Examples of outbound requests include calls made by HTTP triggers.<br/>**Tip**: For longer-running operations, use an asynchronous polling pattern or an "Until" loop. To work around timeout limits when you call another flow that has a callable endpoint, use the built-in action instead, which you can find in the connector picker under **Built-in**. |
 | Outbound asynchronous request | Configurable up to 30 days |  |
-| Inbound request | 120 seconds <br>(2 minutes) | Examples of inbound requests include calls received by request triggers and webhook triggers. <br />**Note**: For the original caller to get the response, all steps in the response must finish within the limit unless you call another flow as a child flow. |
+| Inbound request | 120 seconds (2 minutes) | Examples of inbound requests include calls received by request triggers and webhook triggers.<br/>**Note**: For the original caller to get the response, all steps in the response must finish within the limit unless you call another flow as a child flow. |
 
->[!NOTE]
->If you test a cloud flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, re-open the view to receive the current status.
+If you test a cloud flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status.
 
 ### Message size
+
+The following table describes the limits on message size.
 
 | Name | Limit | Notes |
 |------|-------|-------|
@@ -185,23 +190,31 @@ Some connector operations make asynchronous calls or listen for webhook requests
 
 ### Character limits
 
+The following table describes the limits on the number of characters in expressions and request URLs.
+
 | Name | Limit | Notes |
 |------|-------|-------|
-| Expression evaluation limit | 131,072 characters | The `@concat()`, `@base64()`, `@string()` expressions can't be longer than this limit. |
+| Expression evaluation limit | 131,072 characters | The `@concat()`, `@base64()`, and `@string()` expressions can't be longer than this limit. |
 | Request URL character limit | 16,384 characters |
 
 ### Retry policy
 
+The following sections describe the limits on retries when a flow fails.
+
 #### Default retry policy
+
+The following table describes the default retry limits.
 
 | Performance profile | Description |
 | ------------------- | ----------- |
 | Low | This policy sends up to two retries at *exponentially increasing* intervals, which scale by 5 minutes up to an interval of approximately 10 minutes for the last retry. |
-| Medium, High | This policy sends up to eight retries at *exponentially increasing* intervals, which scale by seven (7) seconds up to an interval of approximately 15 minutes for the last retry. |
+| Medium, High | This policy sends up to eight retries at *exponentially increasing* intervals, which scale by 7 seconds up to an interval of approximately 15 minutes for the last retry. |
 
 #### Retry setting limits
 
-To change the default settings, use the retry policy parameter. Here are the limits for the retry settings.
+The following table describes the limits on retry settings.
+
+To change the default settings, use the retry policy parameter.
 
 | Name | Limit |
 | ---- | ----- |
@@ -209,25 +222,24 @@ To change the default settings, use the retry policy parameter. Here are the lim
 | Retry maximum delay | 1 day |
 | Retry minimum delay | 5 seconds |
 
-For more information on other retry policies, go to **Handle errors and exceptions in Azure Logic Apps**, [Retry policies](/azure/logic-apps/logic-apps-exception-handling#retry-policies).
+[Learn more about retry policies](/azure/logic-apps/logic-apps-exception-handling#retry-policies).
 
-## Turning off or deleting flows
+## Turn off or delete flows
 
-When you turn off a cloud flow, no new runs are instantiated. All in-progress and pending runs continue until they finish, which might take time to complete.
+When you turn off a cloud flow, no new runs are started. All in-progress and pending runs continue until they finish.
 
-When you delete a cloud flow, no new runs are instantiated. All in-progress and pending runs are canceled. If you have thousands of runs, cancellation might take significant time to complete.
+When you delete a cloud flow, no new runs are started. All in-progress and pending runs are canceled. If you have thousands of runs, cancellation might take significant time to complete.
 
 ## Custom connector limits
 
-Here are the limits for custom connectors that you can create from web APIs.
+The following table describes the limits on custom connectors that you can create from web APIs.
 
 | Name | Limit |  Notes |
 |------|-------|-------|
-| Number of custom connectors | 50 per user ||
-| Number of requests per minute for a custom connector | 500 requests per minute per connection |  |
+| Number of custom connectors | 50 per user | |
+| Number of requests per minute for a custom connector | 500 requests per minute per connection | |
 
->[!NOTE]
->You must have a premium or trial license to run any flow that has a custom connector.
+You must have a premium or trial license to run any flow that uses a custom connector.
 
 ## SharePoint limits
 
@@ -239,16 +251,14 @@ There are [limitations](/connectors/sharepointonline/#limits) on how you can use
 
 Requests from Power Automate use IP addresses that are associated with the region of the [environment](./environments-overview-maker.md) in which your flow exists.
 
-Calls made from connectors in cloud flows come from [these IP addresses](/connectors/common/outbound-ip-addresses#power-platform). Add them to your network's allow list to facilitate communications from Power Automate.
+Calls made from connectors in cloud flows come from [these IP addresses](/connectors/common/outbound-ip-addresses#power-platform). Add them to your network's allowlist to facilitate communications from Power Automate.
 
-## Allow list of namespaces endpoints required for runtime
+## Allowlist of namespaces endpoints required for runtime
 
-By default, administrators need to authorize endpoints, including **\*.servicebus.windows.net**, to allow desktop flow runs.
-
-If you don’t want to authorize this public endpoint, you can alternatively allow all the following namespace endpoints.
+By default, administrators need to authorize endpoints, including **\*.servicebus.windows.net**, to allow desktop flow runs. If you don't want to authorize this public endpoint, you can alternatively allow all the following namespace endpoints.
 
 > [!NOTE]
-> This list of namespace endpoints can evolve. Therefore, ensure that you regularly check this page to keep the list of authorized endpoints up to date.
+> This list of namespace endpoints can evolve. Therefore, you should regularly check this page to keep your authorized endpoints up to date.
 
 | **URI**                                                                   | **Power Platform Region** | **Is preview** |
 |---------------------------------------------------------------------------|----------------------|-----|
@@ -473,15 +483,15 @@ If you don’t want to authorize this public endpoint, you can alternatively all
 | produaecentralmmrns-1-6v46fkb43e56k.servicebus.windows.net                | United Arab Emirates |  No |
 | produaenorthmmrns-1-6rlrfzdyg6y2s.servicebus.windows.net                  | United Arab Emirates |  No |
 
-## Other configuration
+## Other configuration details
 
-For additional details on how to permit access to automated, scheduled, and instant flows, including required endpoints, go to [IP address configuration](ip-address-configuration.md).
+For information about how to permit access to automated, scheduled, and instant flows, including required endpoints, refer to [IP address configuration](ip-address-configuration.md).
 
 ## Flow suspension because of runtime limits
 
-Suspended flows will be shown as suspended in the Power Automate maker portal and the Power Platform Admin Center. When a flow is returned through API, PowerShell, or the [Power Automate Management connector list flows as admin action](/connectors/flowmanagement/#list-flows-as-admin), the flow will be **State=Suspended**, and have appropriate **FlowSuspensionReason** and **FlowSuspensionTime** values.
+Suspended flows are shown as suspended in the Power Automate maker portal and the Power Platform admin center. When a flow is returned through an API, PowerShell, or a [Power Automate Management connector list flows "as Admin" action](/connectors/flowmanagement/#list-flows-as-admin), the flow has **State=Suspended** with appropriate **FlowSuspensionReason** and **FlowSuspensionTime** values.
 
-FlowSuspensionReason values for runtime limits:
+The following are the FlowSuspensionReason values for runtime limits:
 
 - AllActionsFailingDetected
 - AlwaysFailingDetected
@@ -490,4 +500,4 @@ FlowSuspensionReason values for runtime limits:
 - BillingConsumptionMissingRPALicense
 - NeverTriggeringDetected
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]
