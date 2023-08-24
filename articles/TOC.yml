@@ -768,6 +768,8 @@
       href: ./minit/minit-desktop-application-overview.md
     - name: Download Process Mining desktop app
       href: ./minit/how-to-start-with-minit-desktop-application.md
+    - name: Copilot in Process Mining process analytics (preview)
+      href: ./minit/process-mining-copilot-in-process-analytics.md      
     - name: Get started
       items:
       - name: Explore the home page
@@ -844,8 +846,6 @@
         href: ./minit/event-metrics-filter.md
       - name: Filters export and import
         href: ./minit/filters-export-import.md
-    - name: Copilot in Process Mining process analytics (preview)
-      href: ./minit/process-mining-copilot-in-process-analytics.md
     - name: Settings
       items:
       - name: Overview
