@@ -44,6 +44,7 @@ When you reference a variable, use the variable's name as the token, not the act
 > [!NOTE]
 > Before you can add actions for creating and working with variables, your flow must start with a trigger. You can't use a mobile device to add variables.
 
+**Classic**
 
 ### Initialize a variable
 
@@ -81,6 +82,44 @@ You can create a variable and declare its data type and initial value all within
     >[!div class="mx-imgBorder"]
     >![Screenshot of the Initialize variable example.](./media/create-variables-store-values/initialize-variable.png "Initialize variable example")
 
+1. Now, add the other actions that you want. When you're done, select **Save**.
+
+**Edit with copilot**  -----------
+### Initialize a variable
+
+You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
+
+1. Sign in to [Power Automate](sign-up-sign-in.md).
+
+1. Create or open a cloud flow.
+
+1. Under the step where you want to add a variable, follow one of these steps.
+
+   * To add an action under the last step, select **New step**.
+
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/607afd12-c3c7-430d-9487-eaba1e75e673)
+
+
+   * To add an action between steps, move your input device pointer over the connecting arrow so that the plus sign (**+**) appears. Select the plus sign, and then select **Add an action**.
+
+1. In the search box under **Choose an operation**, enter **initialize variable** as your filter. From the **Actions** list, select **Initialize variable - Variable**.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/6b498c83-55d0-46d0-8edd-5d039b445958)
+
+
+1. Provide the following information about your variable.
+
+   | Property | Required | Value |  Description |
+   |----------|----------|-------|--------------|
+   | **Name** | Yes | <*variable-name*> | The name for the variable to initialize |
+   | **Type** | Yes | <*variable-type*> | The data type for the variable |
+   | **Value** | No | <*start-value*> | The initial value for your variable <p><p>**Tip**: Although optional, set this value as a best practice so you always know the start value for your variable. |
+   |||||
+
+    For example:
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/86eda1bf-2605-4cb4-bb66-0d5594987ccc)
+
+-----------
 1. Now, add the other actions that you want. When you're done, select **Save**.
 
 > [!NOTE]
@@ -171,6 +210,37 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+1. In the Power Automate designer, under the step where you want to increase an existing variable, select **New step**.
+
+   For example, this cloud flow already has a trigger and an action that created a variable. So, add a new action under these steps:
+
+    >[!div class="mx-imgBorder"]
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/b2fbc783-fac2-4190-b031-d6556e6e5556)
+
+
+   To add an action between existing steps, move your mouse over the connecting arrow so that the plus sign (+) appears. Select the plus sign, and then select **Add an action**.
+
+1. In the search box, enter **increment variable** as your filter. In the **Actions** list, select **Increment variable - Variable**.
+
+    >[!div class="mx-imgBorder"]
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/13e126ca-7340-42fe-b9d5-67f0d2470cf0)
+
+
+1. Provide this information for incrementing your variable:
+
+   | Property | Required | Value |  Description |
+   |----------|----------|-------|--------------|
+   | **Name** | Yes | <*variable-name*> | The name for the variable to increment |
+   | **Value** | No | <*increment-value*> | The value used for incrementing the variable. The default value is one. <p><p>**Tip**: Although optional, set this value as a best practice so you always know the specific value for incrementing your variable. |
+   ||||
+
+   For example:
+
+    >[!div class="mx-imgBorder"]
+    ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/4ead6aac-6da2-4a5d-b324-7f1986c4978c)
+
+
+1. When you're done, on the designer toolbar, select **Save**.
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
@@ -234,6 +304,65 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+1. In Power Automate, create a cloud flow. Add a trigger that checks for new email and any attachments.
+
+   This example uses the Office 365 Outlook trigger for **When a new email arrives**. You can set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
+
+1. In the trigger, to check for attachments and pass those attachments into your flow, select **Yes** for these properties:
+
+   * **Include Attachments**
+   * **Only with Attachments**
+
+    >[!div class="mx-imgBorder"]
+    ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/50ee6395-cb42-431e-b621-e62294705215)
+
+    <img width="319" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/d0eb65c1-936f-43ec-bb38-7a162f1ffb90">
+
+
+
+1. Add the **Initialize variable** action. Create an integer variable named **Count** that has a zero start value.
+    >[!div class="mx-imgBorder"]
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/e6f42fec-c8f5-442a-aeff-abfb971fe58c)
+
+
+1. Add an *apply to each* loop to cycle through the attachments.
+
+   1. Under the **Initialize variable** action, select **New step**.
+
+   1. Under **Choose an action**, select **Built-in**.
+   
+   1. In the search box, enter **apply to each** as your search filter, and select **Apply to each**.
+   
+    >[!div class="mx-imgBorder"]
+    ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/d77e6892-1c14-4d73-bbef-cb867f9e367f)
+
+
+1. In the loop, select inside the **Select an output from previous steps** box. When the dynamic content list appears, select **Attachments**.
+
+  ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/47f2dc47-0c06-46cc-8178-7319bf7cce7f)
+
+
+   The **Attachments** property passes an array, which has all email attachments from the email, into your loop.
+
+1. In the **Apply to each** loop, select **Add an action**.
+
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/cc2bf87a-3234-4227-875c-041ba7f19c1d)
+
+
+1. In the search box, enter "increment variable" as your filter. From the actions list, select **Increment variable**.
+
+   > [!NOTE]
+   > The **Increment variable** action must appear inside the loop.
+
+1. In the **Increment variable** action, from the **Name** list, select the **Count** variable.
+
+1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable, for example:
+
+    >[!div class="mx-imgBorder"]
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/d9272d31-d688-4cf2-b4de-8821c636ddb1)
+
+
+1. On the designer toolbar, select **Save**.
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
