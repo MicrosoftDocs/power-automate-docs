@@ -97,8 +97,6 @@ From the left navigation pane, select **Power Platform** to access Power Platf
 
 Use the **Search** field at the top of the screen to create flows.
 
-Use the **Search** field to find flows, create flows, or find help documentation.
-
 ## 3 – Environment information and settings
 
 View your environment information and settings.
