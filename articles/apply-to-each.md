@@ -95,6 +95,19 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+Try asking this prompt to copilot: 
+
+Every 15 minutes, Get top 10 unread emails and get my manager. If the email is from my manager OR the email is Important and subject contains 'meet now', send me a push notification to my phone.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/982aae71-46f5-40e4-bc4d-a67e31c70cd1)
+
+Click 'Next', review the connections and when you click 'Next', you will land with a flow on the designer.
+
+The flow is preconfigured with all the required fields in the designer:
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/1d50b23f-6018-498f-bc2f-60d1cdebfa88)
+
+Simply save the flow and the flow is good to go!
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
