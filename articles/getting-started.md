@@ -103,7 +103,7 @@ View your environment information and settings.
 
 ### Choose an environment
 
-For best results, start by ensuring that the home page is set to the correct environment. If you have multiple environments, you can quickly find an environment by typing it in the **Search** field. You can also filter by your role, data platform, or environment type.
+For best results, start by ensuring that the home page is set to the correct environment.
 
 :::image type="content" source="media/getting-started/environment.png" alt-text="Screenshot of the 'Select environment' screen.":::
 

@@ -9,7 +9,7 @@ contributors:
   - natalie-pienkowska
   - kisubedi
   - v-aangie
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
@@ -62,8 +62,6 @@ To complete this example, you'll need accounts with access to the following:
 1. After you confirm your connections, select **Continue**.
 
     Your flow appears, showing each action with an orange title bar.
-
-    ![Default events and actions from template.](./media/get-started-logic-template/template-default.png)
 
 ## Customize your flow
 

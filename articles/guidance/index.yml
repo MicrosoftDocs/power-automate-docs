@@ -93,7 +93,7 @@ landingContent:
        - linkListType: overview
          links:          
           - text: Create your first flow
-            url: ../getting-started.md#create-your-first-flow
+            url: ../getting-started.md
           - text: What is desktop flow?
             url: ../desktop-flows/overview.md
           - text: Power Platform Center of Excellence (CoE) kit
