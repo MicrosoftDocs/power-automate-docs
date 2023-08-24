@@ -1,21 +1,13 @@
 ---
-title: Learn how to import a solution | Microsoft Docs
+title: Import a solution
 description: Learn how to import a solution.
-services: ''
-suite: flow
-documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
+author: ChrisGarty
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 04/07/2022
-ms.author: deonhe
+ms.author: cgarty
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.audienceType: 
   - flowmaker
   - enduser
@@ -23,41 +15,36 @@ search.audienceType:
 
 # Import a solution
 
+After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution.
+
 > [!TIP]
 > If you want to have your flows start automatically after you import a solution, use the Microsoft Dataverse connector in your flow when you create it.
 
-After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution.
-
-1. Sign into [Power Automate](https://make.powerautomate.com), and then select **Solutions** from the navigation bar on the left side of the screen.
-
-   ![A image showing "Solutions" selected in the navigation bar](./media/import-flow-solution/select-solutions-from-left-nav.png)
-
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. On the navigation bar to the left, select **Solutions**.
 1. Select **Import**.
-
-   ![A image showing "import" selected.](./media/import-flow-solution/select-import.png)
-
-1. Select **Browse** from the **Import a solution** page that opens.
-1. Find, and then select the solution that you want to import.
+1. On the **Import a solution** page that opens, select **Browse**.
+1. Find and select the solution that you want to import.
 1. Select **Open**.
 
    You should now see the **Import a Solution** page similar to the following image.
 
-   ![Screenshot of the Import a solution dialog box.](./media/import-flow-solution/import-solution.png)
+    :::image type="content" source="./media/import-flow-solution/import-solution.png" alt-text="Screenshot of the 'Import a solution' dialog box.":::
 
 1. Select **Next**.
 
    If there are no errors, the importation completes within a few moments.
 
 > [!NOTE]
-> You cannot import a solution into an environment in which the solution already exists.
+> You can't import a solution into an environment in which the solution already exists.
 
 ## FAQ
 
 ### What will the flow state be after import?
 
-When importing a solution containing flows, the import process will attempt to restore them to the state they were in when exported. If the flows were on when exported and any connection references get connections, then the flows should be turned on as part of the import process.
+When you import a solution containing flows, the import process attempts to restore them to the state they were in when exported. If the flows were on when exported and any connection references get connections, then the flows should be turned on as part of the import process.
 
-## Learn more
+### See also
 
 - [Create a solution](./overview-solution-flows.md)
 - [Create a cloud flow in a solution](./create-flow-solution.md)
