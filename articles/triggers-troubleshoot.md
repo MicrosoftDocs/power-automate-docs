@@ -119,6 +119,25 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Edit the flow.
+1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
+
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/d117da1a-a8ed-4de1-98c4-5e3ad72fd7c8)
+
+
+1. Select **Settings**.
+
+
+1. Find **Trigger conditions**.
+
+   If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
+
+   If there are additional customizations in **Trigger Conditions**, confirm that you are using the expected or correct inputs to trigger the flow.
+
+   
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/54ee28c1-35fe-444a-ae1f-6a8ee41629a6)
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
@@ -179,6 +198,11 @@ Follow these steps to determine the type of trigger that your flow uses.
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+1. Select the 'Code view' tab in the action pane.
+2. Find the recurrence section with an interval frequency element. If this section is available, the trigger is a polling trigger.
+
+   <img width="693" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/ccfc6c38-1063-417f-9e88-a72ceb788f28">
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
@@ -221,6 +245,17 @@ Follow these steps to check the trigger wake up frequency.
    ![A screenshot of the frequency element.](./media/triggers-introduction/frequency.png)
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+1. Go to your flow trigger.
+1. Select **Code view**.
+
+   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/7f914087-91d1-483d-b150-2cc786a251d8)
+
+
+1. Find the interval frequency.
+
+<img width="656" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/14be4e9b-a059-4848-8317-34d140dc5a7c">
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
