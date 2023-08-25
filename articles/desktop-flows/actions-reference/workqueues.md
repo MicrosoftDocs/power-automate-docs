@@ -2,7 +2,7 @@
 title: Work queues actions (preview)
 description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
-ms.date: 7/04/2023
+ms.date: 08/23/2023
 ms.author: dbekirop
 ms.reviewer: 
 contributors:
@@ -82,7 +82,7 @@ The **updateworkqueueitemaction** action requires the following arguments.
 
 ## Add work queue item (preview)
 
-The **Add work queue item (preview)** action allows users to change the status and processing results of the selected work queue item.
+The **Add work queue item (preview)** action allows users to populate work queue items into a work queue, which has been set up in the flow portal.
 
 :::image type="content" source="media\workqueues\AddWorkQueueItem.png" alt-text="Screenshot of the add work queue item action." lightbox="media\workqueues\AddWorkQueueItem.png":::
 
