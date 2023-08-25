@@ -154,4 +154,4 @@ To download the template:
 
 - There's no migration of your changes between template versions.
 
--  The Power BI model doesn't adjust the timezone based on a user's location or locale. A value of 09:00 loaded into the model in the USA displays as 09:00 wherever the report is opened or viewed.
+-  The Power BI model doesn't adjust the timezone based on a user's location or locale and will be displayed in UTC timezone.
