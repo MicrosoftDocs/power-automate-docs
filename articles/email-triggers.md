@@ -91,6 +91,13 @@ Congratulations! You now receive a push notification each time you receive an em
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+Simply ask the following prompt to copilot:
+
+When I receive an email that contains the word 'lottery' in the subject, send me a push notification and mark the email as Read.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/c9271183-14c6-4bf8-b148-9986cbfc881a)
+
+Review the connections, and parameters on the designer and save the flow.
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
@@ -126,6 +133,14 @@ In this tutorial, you create a cloud flow that sends a push notification to your
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+Simply ask the following prompt to copilot:
+
+When I receive an email from jake@contoso.com, send me a push notification and mark the email as Read.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/15a35d43-0fef-475f-9c6b-480c7cdecc2b)
+
+
+Review the connections, and parameters on the designer and save the flow.
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
@@ -163,6 +178,17 @@ If you have rules that route emails to different folders based on certain proper
 Test the flow by sending an email that gets routed to the folder you selected earlier in this tutorial.
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+Simply ask the following prompt to copilot:
+
+When I receive an email in Sync Issues folder, send me a push notification and mark the email as Read.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/e0d90c36-d27a-44a9-ae74-51b422710eca)
+
+Make sure the folder is selected in email trigger, if it is not already applied by copilot. 
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/ed1fbecd-6160-487c-8db8-6636bc3edc3f)
+
+Your flow is ready to go. Simply save the flow and your automation is running. Try testing your flow by sending an email to the folder you specified.
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
