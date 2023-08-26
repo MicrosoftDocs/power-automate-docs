@@ -27,10 +27,6 @@ search.audienceType:
 
 In this sample scenario, imagine that there's a Microsoft list with products that you've purchased. You want to send an email whenever the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but you'd like it to display as *September 18* in the email notification message. Let’s see how to change the format of the date with format data by examples.
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
-
-# [Classic designer](#tab/classic-designer)
-
 1. Edit your flow in the Power Automate designer.
 
 1. Select the action into which you want to insert the formatted date, and then select any text field on the card.
@@ -64,43 +60,21 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 Congratulations! You’ve built an expression by providing an example.  
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Format numbers by examples
 
 In this example, imagine you have a number that comes from a Microsoft Forms survey as 5958. You want to format the number as a currency value before you store it in an Excel file, like this $5,958. To direct your flow to format the number as a currency value, provide an example of how Microsoft Forms returns the number and an example of how you want your flow to format the number. 
-
-# [Classic designer](#tab/classic-designer)
 
 Power Automate uses the information you provide and then it suggests the expression that does the transformation, as shown in the following screenshot.
 
 :::image type="content" source="media/format-data-by-examples/example-number.png" alt-text="Screenshot of how to format a number into a currency by providing an example. Power Automate suggests the expression to achieve this transformation.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Format text by examples
 
 In the following scenario, imagine you have a registration form in which participants provide their full name and you want to send a registration confirmation email with just the first name. Instead of greeting the person by their full name, for example Casey Jensen, we just want to say Casey.
 
-# [Classic designer](#tab/classic-designer)
-
 Just provide an example and Power Automate suggests the right expression to achieve this transformation, as the following screenshot displays.
 
 :::image type="content" source="media/format-data-by-examples/example-text.png" alt-text="Screenshot of how to format text from a person’s full name to only their first name. Power Automate suggests the expression to achieve this transformation.":::
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
 
 ## Limitations
 

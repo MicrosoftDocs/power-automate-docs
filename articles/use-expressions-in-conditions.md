@@ -10,7 +10,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/01/2023
+ms.date: 09/08/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -93,7 +93,7 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 1. Select the **List rows present in a table** action.
 
-    :::image type="content" source="includes/media/new-step/get-excel-rows.png" alt-text="Screenshot of getting rows in a spreadsheet.":::
+    :::image type="content" source="includes/media/new-step/get-excel-rows.png" alt-text="Screenshot of listing rows in a table.":::
 
 1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
 
@@ -120,11 +120,11 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 1. Select the **List rows present in a table** action.
 
-    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action.png" alt-text="Screenshot of the 'Add an action' screen.":::
+    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action.png" alt-text="Screenshot of listing rows in a table in Copilot.":::
 
 1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
 
-    :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table.":::
+    :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
 
 ---
 
