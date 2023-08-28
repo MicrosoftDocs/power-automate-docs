@@ -87,7 +87,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Microsoft Edge and Google Chrome).|
 
 > [!NOTE]
-> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. To learn more about namespace endpoints, go to [Allow list of namespaces endpoints required for runtime](limits-and-config.md#allow-list-of-namespaces-endpoints-required-for-runtime).
+> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. To learn more about namespace endpoints, go to [Allow list of namespaces endpoints required for runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-runtime).
 
 ### Public endpoints
 
