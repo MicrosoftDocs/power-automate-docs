@@ -7,9 +7,9 @@ ms.subservice: desktop-flow
 ---
 
 # Add cloud flow, desktop flow and connection reference
-At this point you have created a solution. Let's add a Desktop Flow and a Cloud Flow to this solution. If you haven't created a solution yet, [create a solution and a publisher](/power-platform/alm/solution-concepts-alm#solution-lifecycle)
+At this point you have created a solution. Let's add a desktop Flow and a cloud flow to this solution. If you haven't created a solution yet, [create a solution and a publisher](/power-platform/alm/solution-concepts-alm#solution-lifecycle)
 
-> Please note that in order for a Cloud Flow to be added in a solution, it needs to be created in the solution, you cannot add a cloud flow to a solution after its creation.
+> Please note that in order for a cloud flow to be added in a solution, it needs to be created in the solution, you cannot add a cloud flow to a solution after its creation.
 
 ## Create a desktop flow
 Follow those steps:
@@ -20,16 +20,16 @@ You will be redirected to Power Automate Desktop, once you have finished editing
 
 :::image type="content" source="./media/desktopflow-solution.png" alt-text="Screenshot of a desktop flow in a solution":::
 
-## Create a Cloud Flow
+## Create a cloud flow
 From within the solution: **New** > **Automation** > **Cloud flow** > **Scheduled**
 
-You will be redirected to the Cloud flow designer, edit to add an action with desktop flow, if needed create a connection. You need to use the **Unattended** run mode.
+You will be redirected to the cloud flow designer, edit to add an action with desktop flow, if needed create a connection. You need to use the **Unattended** run mode.
 
 > Please note that the connection you use here will not be the connection that will be used in your Production environment.
 
-:::image type="content" source="./media/cloudflow-solution.png" alt-text="Screenshot of a desktop flow, a Cloud flow and connection reference in a solution":::
+:::image type="content" source="./media/cloudflow-solution.png" alt-text="Screenshot of a desktop flow, a cloud flow and connection reference in a solution":::
 
-You should see the Cloud flow in your solution as well as a connection reference.
+You should see the cloud flow in your solution as well as a connection reference.
 
 ### Next
 - [Configure your build pipeline to export your solution](/power-platform/alm/devops-build-tool-tasks#build-pipeline-export-solution-from-development)
