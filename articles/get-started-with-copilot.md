@@ -25,7 +25,7 @@ Edit with Copilot can perform the following actions:
 - Answer questions about your flow and product. For example, you can ask Copilot questions about your flow like, *What does my flow do?* You can also ask Copilot product questions like, *How do I access child flows?* and *How do I access licenses?*
 
 > [!IMPORTANT]
-> - This is a preview feature.
+
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 >- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 >- This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
