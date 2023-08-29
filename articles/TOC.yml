@@ -732,7 +732,7 @@
     href: bpf-add-on-demand-workflow.md
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
-- name: Process mining
+- name: Process Mining
   items:
   - name: Overview
     href: process-advisor-overview.md
@@ -753,6 +753,8 @@
         href: process-mining-templates.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
+    - name: Copilot in Process Mining ingestion (preview)
+      href: process-mining-copilot-in-ingestion.md 
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
     - name: Use your own Azure Data Lake Storage Gen2 (preview)
@@ -775,6 +777,8 @@
       href: ./minit/minit-desktop-application-overview.md
     - name: Download Process Mining desktop app
       href: ./minit/how-to-start-with-minit-desktop-application.md
+    - name: Copilot in Process Mining process analytics (preview)
+      href: ./minit/process-mining-copilot-in-process-analytics.md      
     - name: Get started
       items:
       - name: Explore the home page
@@ -1129,6 +1133,8 @@
     href: responsible-ai-overview.md
   - name: FAQ for Edit with Copilot
     href: faqs-copilot.md
+  - name: FAQ for Copilot in Process Mining
+    href: faqs-copilot-in-process-mining.md
 
 
 
