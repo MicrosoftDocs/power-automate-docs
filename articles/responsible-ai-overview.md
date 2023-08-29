@@ -18,4 +18,7 @@ ms.reviewer: angieandrews
 
 - [Get started with Edit with Copilot (preview)](get-started-with-copilot.md)
 - [FAQ for Edit with Copilot](faqs-copilot.md)
+- [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
+- [Copilot in Process Mining process analytics (preview)](./minit/process-mining-copilot-in-process-analytics.md)
+- [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy/)
