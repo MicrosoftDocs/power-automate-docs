@@ -4,7 +4,7 @@ description: Learn to use the Desktop flow activity in the Power Automate portal
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/22/2023
+ms.date: 08/29/2023
 ms.author: quseleba
 ms.reviewer: gtrantzas
 search.audienceType: 
@@ -154,4 +154,4 @@ To download the template:
 
 - There's no migration of your changes between template versions.
 
--  The Power BI model doesn't adjust the timezone based on a user's location or locale and will be displayed in UTC timezone.
+- The Power BI model doesn't adjust the timezone based on a user's location or locale. Time is displayed in UTC timezone.
