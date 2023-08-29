@@ -86,22 +86,24 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 So far, you've created a simple flow that gets some emails from your inbox. These emails will be returned in an array. The **Apply to each** action requires an array, so this is exactly what's needed.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-1. Try asking Copilot to create a flow by typing this prompt: **Every 15 minutes, Get top 10 unread emails and get my manager. If the email is from my manager OR the email is Important and subject contains 'meet now', send me a push notification to my phone.**
+1. Try asking Copilot to create a flow by typing this prompt: 
+
+    **Every 15 minutes, Get top 10 unread emails and get my manager. If the email is from my manager OR the email is Important and subject contains 'meet now', send me a push notification to my phone.**
 
     Copilot suggests a flow based on your prompt:
 
-    :::image type="content" source="./media/apply-to-each/copilot-apply-to-each-prompt.png" alt-text="Screenshot of a configured email card.":::
+    :::image type="content" source="./media/apply-to-each/copilot-apply-to-each-prompt.png" alt-text="Screenshot of a flow suggestion from Copilot.":::
 
 1. Select **Next** and review the connections.
 1. Select **Next** and your flow appears on the designer.
 
-    The flow is preconfigured with all the required fields in the designer:
+    The flow is preconfigured with all the required fields in the designer.
 
-    :::image type="content" source="./media/apply-to-each/copilot-configured-flow.png" alt-text="Screenshot of a configured email card.":::
+    :::image type="content" source="./media/apply-to-each/copilot-configured-flow.png" alt-text="Screenshot of a flow created by Copilot based on your prompt.":::
 
 1. Save the flow and it's ready to use.
 

@@ -162,10 +162,9 @@ For example, this expression gets the items from the array variable by using the
 
 To increase or *increment* a variable by a constant value, add the **Increment variable** action to your flow.
 
-> [!IMPORTANT]
-> This action works only with integer and float variables.
-
 # [Classic designer](#tab/classic-designer)
+
+This action works only with integer and float variables.
 
 1. In the Power Automate designer, under the step where you want to increase an existing variable, select **New step**.
 
@@ -186,9 +185,11 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
 1. When you're done, on the designer toolbar, select **Save**.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+This action works only with integer and float variables.
 
 1. In the Power Automate designer, under the step where you want to increase an existing variable, select the plus sign (**+**).
 
@@ -259,7 +260,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. On the designer toolbar, select **Save**.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -343,7 +344,7 @@ For variables that store strings or arrays, you can insert or *append* a variabl
 1. Find and select one of these actions based on whether your variable is a string or an array. 
 
    * **Append to string variable**
-   * **Append to array variable** 
+   * **Append to array variable**
 
 1. Provide the value to append as the last item in the string or array. This value is required.
 

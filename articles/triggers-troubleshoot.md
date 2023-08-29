@@ -4,9 +4,13 @@ description: Learn how to find and fix issues when your flows won't run.
 suite: flow
 documentationcenter: na
 author: kenseongtan
+contributors:
+  - kisubedi
+  - kenseongtan
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 08/26/2022
+ms.date: 09/08/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -29,15 +33,14 @@ Sometimes, you might need to [Identify specific flow runs](./fix-flow-failures.m
 
    If your flow violates a DLP policy, it's suspended, causing the trigger to not fire. To know if your flow is suspended, try to edit the flow and save it. The flow checker will report it if the flow violates a DLP policy. Your admin can change the DLP policy.
 
-1. The trigger may be failing.
-
+1. The trigger may be failing. 
    Follow these steps to confirm:
 
    1. Sign in to [Power Automate](https://make.powerautomate.com).
    1. Go to **My flows**, and then select your flow.
    1. Do you see the following error in the **Details**?
 
-      ![Screenshot of an error message about the flow's trigger.](./media/triggers-introduction/fix-trigger.png)
+       :::image type="content" source="./media/triggers-introduction/fix-trigger.png" alt-text="Screenshot of an error message about the flow's trigger.":::
 
    This error means that Power Automate tried multiple times to establish a connection to register the trigger and failed. Your flow won't trigger until this problem is resolved.
 
@@ -67,7 +70,7 @@ Follow these steps to verify if your connections are broken:
 1. Edit your flow to find the connector name for the trigger.
 1. Go to the [list of connectors](https://make.powerautomate.com/connectors) and then search for that connector. If the connector is a premium connector, **PREMIUM** displays below the name of the connector.
 
-   ![A screenshot of a premium connector.](./media/triggers-introduction/premium-connector.png)
+    :::image type="content" source="./media/triggers-introduction/premium-connector.png" alt-text="Screenshot of a premium connector.":::
 
 A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. You can [purchase licenses](https://make.powerautomate.com/pricing) at any time.
 
@@ -86,7 +89,7 @@ You just completed an event. For example, you added a new list item or sent an e
 
 Go to **My flows** in the left pane, and then select the flow. In the **28-day run history**, select **All runs**.
 
-![A screenshot showing all runs.](./media/triggers-introduction/all-runs.png)
+:::image type="content" source="./media/triggers-introduction/all-runs.png" alt-text="Screenshot showing all runs.":::
 
 If you expect the flow to run but it didn’t run, see if it shows the trigger check was skipped at that time. If the trigger check was skipped, it means that the trigger condition wasn’t met for the flow to trigger. Verify the flow the inputs and trigger conditions to confirm if you are using the latest configuration to trigger the flow.
 
@@ -101,44 +104,33 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Edit the flow.
 1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
-1. Select the ellipses (…) on the card.
-
-   ![A screenshot that shows how to access the settings.](./media/triggers-introduction/settings.png)
-
-1. Select **Settings**.
-
-   ![A screenshot that shows settings.](./media/triggers-introduction/display-settings.png)
-
+1. On the card, select the ellipses (**…**) > **Settings**.
 1. Find **Trigger conditions**.
 
    If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
 
-   If there are additional customizations in **Trigger Conditions**, confirm that you are using the expected or correct inputs to trigger the flow.
+   If there are additional customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
 
-   ![A screenshot that shows trigger conditions.](./media/triggers-introduction/trigger-conditions.png)
+    :::image type="content" source="./media/triggers-introduction/trigger-conditions.png" alt-text="Screenshot that shows trigger conditions.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Edit the flow.
-1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
+1. Expand the first card to see what folders, sites, mailboxes, and others are used in the trigger.
 
-   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/d117da1a-a8ed-4de1-98c4-5e3ad72fd7c8)
-
+    :::image type="content" source="./media/triggers-introduction/copilot-triggers.png" alt-text="Screenshot that shows trigger site in Copilot.":::
 
 1. Select **Settings**.
-
-
 1. Find **Trigger conditions**.
 
    If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
 
    If there are additional customizations in **Trigger Conditions**, confirm that you are using the expected or correct inputs to trigger the flow.
 
-   
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/54ee28c1-35fe-444a-ae1f-6a8ee41629a6)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+    :::image type="content" source="./media/triggers-introduction/copilot-trigger-conditions.png" alt-text="Screenshot that shows trigger conditions in Copilot.":::
 
 ---
 
@@ -181,29 +173,29 @@ See the following table to understand how your flow responds when it's turned ba
 
 | Trigger type|Description|
 |---|---|
-| Polling, such as the **recurrence** trigger | When the flow is turned on again, all unprocessed or pending events are processed. Delete, and then recreate your flow if you don't want to process pending items when you turn your flow back on. |
-| Webhook                                 | When the flow is turned on again, it processes new events that are generated after the flow is turned on.                               |
+| Polling, such as the `recurrence` trigger | When the flow is turned on again, all unprocessed or pending events are processed. If you don't want to process pending items when you turn your flow back on, delete and then recreate your flow. |
+| Webhook  | When the flow is turned on again, it processes new events that are generated after the flow is turned on. |
 
 Follow these steps to determine the type of trigger that your flow uses.
 
 # [Classic designer](#tab/classic-designer)
 
-1. Select the ellipsis (...) for your flow, and then select **Peek code**.
+1. On the title bar, select the ellipsis (**...**) > **Peek code**.
 
-   ![A screenshot of peekcode.](./media/triggers-introduction/peek-code.png)
+    :::image type="content" source="./media/triggers-introduction/peek-code.png" alt-text="Screenshot of peek code.":::
 
-1. Find the recurrence section with an interval frequency element. If this section is available, the trigger is a polling trigger.
+1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
 
-   ![A screenshot of the recurrence section.](./media/triggers-introduction/frequency.png)
+    :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the recurrence section.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-1. Select the 'Code view' tab in the action pane.
-2. Find the recurrence section with an interval frequency element. If this section is available, the trigger is a polling trigger.
-
-   <img width="693" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/ccfc6c38-1063-417f-9e88-a72ceb788f28">
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+1. In the action configfuration pane to the left, select **Code View**.
+1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
+
+    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="Screenshot of the recurrence section in Copilot.":::
 
 ---
 
@@ -235,29 +227,23 @@ Follow these steps to check the trigger wake up frequency.
 
 # [Classic designer](#tab/classic-designer)
 
-1. Go to your flow trigger, and then select the ellipsis (...).
-1. Select **Peek code**.
+1. Go to your flow trigger, and then select the ellipsis (**...**) > **Peek code**.
 
-   ![A screenshot of the peek code setting.](./media/triggers-introduction/peek-code.png)
-
-1. Find the interval frequency.
-
-   ![A screenshot of the frequency element.](./media/triggers-introduction/frequency.png)
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-1. Go to your flow trigger.
-1. Select **Code view**.
-
-   ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/7f914087-91d1-483d-b150-2cc786a251d8)
-
+    :::image type="content" source="./media/triggers-introduction/peek-code.png" alt-text="Screenshot of the peek code setting.":::
 
 1. Find the interval frequency.
 
-<img width="656" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/14be4e9b-a059-4848-8317-34d140dc5a7c">
+    :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the frequency element.":::
 
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+1. On your flow, select your flow trigger.
+1. Select **Code View**.
+1. Find the interval frequency.
+
+    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="[Screenshot of the frequency element in Copilot.":::
 
 ---
 

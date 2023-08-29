@@ -1,24 +1,17 @@
 ---
-title: Trigger a cloud flow based on email properties in Power Automate | Microsoft Docs
-description: Learn how to start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email
-services: ''
+title: Trigger a cloud flow based on email properties in Power Automate
+description: Learn how to start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email.
 suite: flow
-documentationcenter: na
 author: natalie-pienkowska
 contributors:
-  - natalie-pienkowska
+  - kisubedi
   - kartikraop
   - v-aangie
-ms.author: kisubedi
+ms.author: hamenon
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 01/13/2023
+ms.date: 09/08/2023
 search.audienceType: 
   - flowmaker
   - enduser
@@ -73,15 +66,13 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
      In this example, we're interested in any email that has the word "lottery" in the subject.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of advanced options.](./media/email-triggers/email-triggers-subject-text.png "Advanced options")
+    :::image type="content" source="./media/email-triggers/email-triggers-subject-text.png" alt-text="Screenshot of advanced options.":::
 
 [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 1. Enter the details for the mobile notification you want to receive when you receive an email that matches the **Subject Filter** you specified earlier.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot that displays the details of a notification.](./media/email-triggers/email-triggers-4.png "Details of a notification")
+    :::image type="content" source="./media/email-triggers/email-triggers-4.png" alt-text="Screenshot that displays the details of a notification.":::
 
 [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
@@ -89,16 +80,17 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
-Simply ask the following prompt to copilot:
-
-When I receive an email that contains the word 'lottery' in the subject, send me a push notification and mark the email as Read.
-
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/c9271183-14c6-4bf8-b148-9986cbfc881a)
-
-Review the connections, and parameters on the designer and save the flow.
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Simply ask Copilot to create your flow by typing the following prompt:
+
+    **When I receive an email that contains the word 'lottery' in the subject, send me a push notification and mark the email as Read.**
+
+    :::image type="content" source="./media/email-triggers/copilot-lottery.png" alt-text="Screenshot of triggering a cloud flow based on an email's subject in Copilot.":::
+
+1. Review the connections and parameters on the designer, and then save the flow.
 
 ---
 
@@ -114,34 +106,27 @@ In this tutorial, you create a cloud flow that sends a push notification to your
 
      Your flow takes action on any emails that are sent from this address.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of email property.](./media/email-triggers/email-triggers-from.png "Email property")
-
 [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 3. Enter the details for the mobile notification you'd like to receive whenever a message arrives from the email address that you entered earlier.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of mobile notification details.](./media/email-triggers/email-triggers-sender-notification.png "Mobile notification details")
+    :::image type="content" source="./media/email-triggers/email-triggers-sender-notification.png" alt-text="Screenshot of mobile notification details.":::
 
 [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of creating a flow.](./media/email-triggers/email-triggers-sender-5.png "Create flow")
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-Simply ask the following prompt to copilot:
-
-When I receive an email from jake@contoso.com, send me a push notification and mark the email as Read.
-
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/15a35d43-0fef-475f-9c6b-480c7cdecc2b)
-
-
-Review the connections, and parameters on the designer and save the flow.
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Simply ask Copilot to create your flow by typing the following prompt:
+
+    **When I receive an email from jake@contoso.com, send me a push notification and mark the email as Read.**
+
+    :::image type="content" source="./media/email-triggers/copilot-email.png" alt-text="Screenshot of triggering a cloud flow based on an email's sender in Copilot.":::
+
+1. Review the connections, and parameters on the designer and save the flow.
 
 ---
 
@@ -158,39 +143,36 @@ If you have rules that route emails to different folders based on certain proper
 
 5. Select the folder to which you're routing specific emails. To display all email folders, first select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **when a new email arrives (V3)** card.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of selecting a folder.](./media/email-triggers/email-triggers-2.png "Select folder")
+    :::image type="content" source="./media/email-triggers/email-triggers-2.png" alt-text="Screenshot of selecting a folder.":::
 
 [!INCLUDE [add-mobile-notification-action](includes/add-mobile-notification-action.md)]
 
 3. Enter the details for the mobile notification you'd like to receive when an email arrives in the folder you selected earlier. If you haven't already, enter the credentials for the notifications service.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of notification details.](./media/email-triggers/email-triggers-folder-notification.png "Notification details")
+    :::image type="content" source="./media/email-triggers/email-triggers-folder-notification.png" alt-text="Screenshot of notification details.":::
 
 [!INCLUDE [add-mark-as-read-action](includes/add-mark-as-read-action.md)]
 
 4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the option to save the cloud flow.](./media/email-triggers/email-triggers-7.png "Save the cloud flow")
-
 Test the flow by sending an email that gets routed to the folder you selected earlier in this tutorial.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-Simply ask the following prompt to copilot:
-
-When I receive an email in Sync Issues folder, send me a push notification and mark the email as Read.
-
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/e0d90c36-d27a-44a9-ae74-51b422710eca)
-
-Make sure the folder is selected in email trigger, if it is not already applied by copilot. 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/ed1fbecd-6160-487c-8db8-6636bc3edc3f)
-
-Your flow is ready to go. Simply save the flow and your automation is running. Try testing your flow by sending an email to the folder you specified.
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Simply ask Copilot to create your flow by typing the following prompt:
+
+    **When I receive an email in Sync Issues folder, send me a push notification and mark the email as Read.**
+
+    :::image type="content" source="./media/email-triggers/copilot-folder.png" alt-text="Screenshot of triggering a cloud flow when emails arrive in a specific folder in Copilot.":::
+
+1. Make sure the folder is selected in email trigger, if it isn't already applied by Copilot.
+
+    :::image type="content" source="./media/email-triggers/copilot-parameters-folder.png" alt-text="Screenshot of a selected folder in Copilot.":::
+
+1. Your flow is ready to be used. Simply save the flow and your automation is running.
+1. Test your flow by sending an email to the folder you specified.
 
 ---
 
