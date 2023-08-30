@@ -63,6 +63,18 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
 
+Ask the following prompt to copilot:
+
+When a new MS Forms response is submitted, send an email. 
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/fb4124b7-9ea8-4f9a-9688-b560c2c20564)
+
+Click 'Next' and review the connections and click 'Create flow' to land on the designer. 
+
+On the designer, please provide the missing fields in the email action if copilot has not automatically populated it for you.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/37ddec47-2bbb-4516-aadc-1c83d59b5c60)
+
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 ---
@@ -78,6 +90,16 @@ Follow the steps to [send an email when there's a new form response](#send-an-em
 :::image type="content" source="../media/forms/responder-email-flow.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with the responder's email address highlighted.":::
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+Ask copilot the following prompt:
+'Send email to the responder along with their response' 
+
+Copilot tries configuring most of the parameters in the email action as follows:
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/86ece570-fc6f-466f-9cfb-04cd66437c9f)
+
+Manually fill the rest of the parameters in email action (Email body) as follows. Finally save the flow:
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/0a0cdf28-5a92-4981-a57c-1221ab9f8431)
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -131,6 +153,17 @@ In this example, we'll start with another pre-built template and customize it to
 More examples of approval flows are in the [documentation](../sequential-modern-approvals.md).
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+Ask the following prompt to copilot:
+
+When a new response is submitted, start an approval with megan@contoso.com and if it succeeds, send email to the responder. 
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/dbade18e-7ac5-4334-85c7-21e6a5117035)
+
+Click 'Next' to review the connections. Click 'Create flow' and you will land on the designer. Provide the forms ID, approver's email and configure the email action and finally save your flow.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/4b8118fb-f89d-4082-acfd-516a92b08790)
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -188,6 +221,14 @@ In this example, you create a flow from blank. Continuing with the scenario from
 You can use a template to [add an approval step before a form response is added to the Excel table](https://make.powerautomate.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/).
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+You need to create an Excel sheet if it doesn't already exist. Now, from within the designer, simply ask copilot the following prompt:
+
+If approved, add the forms response to excel sheet.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/182fd341-5149-4cdd-b3bd-37734d0eef6b)
+
+Choose the Excel sheet of your choice. Also, in respective column fields, choose the response token from MS forms Trigger. For e.g. Choose vacation start token in Vacation start field of Excel action and so on. 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
