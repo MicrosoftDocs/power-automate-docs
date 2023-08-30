@@ -1,12 +1,13 @@
 ---
-title: Create flows for popular email scenarios in Power Automate | Microsoft Docs
-description: Top scenarios where you can use Power Automate to manage your email.
+title: Create flows for popular email scenarios in Power Automate
+description: Learn about top scenarios where you can use Power Automate to manage your email.
 author: msftman
 ms.subservice: cloud-flow
-ms.topic: article
-ms.date: 05/10/2022
+ms.topic: conceptual
+ms.date: 09/08/2023
 ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
+ms.custom: bap-template
 search.audienceType: 
   - flowmaker
   - enduser
@@ -16,18 +17,11 @@ search.audienceType:
 Here are some of the top scenarios in which you can use Power Automate to manage your email.
 
 - Send an email from your account.
-
 - Send an email from a distribution list or shared mailbox.
-
 - Send an email with voting options.
-
 - Build an approval process and notify colleagues via email.
-
 - Send a reminder email to approvers.
-
 - Send a daily digest email with a summary table.
-
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
 
 ## Send email from your account
 
@@ -37,55 +31,28 @@ You can send the email to one or more recipients. You can use the rich text edit
 
 For example, if you have a cloud flow that sends you an email as soon as your item is approved, you can add the link of the approved item as an attachment.
 
-# [Classic designer](#tab/classic-designer)
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot that displays an example of an email that uses dynamic content in the body of the email.](./media/email/dynamic-content.png "Email that uses dynamic content in the body of the email")
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
+:::image type="content" source="./media/email/dynamic-content.png" alt-text="Screenshot that displays an example of an email that uses dynamic content in the body of the email.":::
 
 ## Send email with voting options
 
 Use the **Send email with options** action to send an email with voting options using actionable email. Provide voting options in the **User Options** field.
 
-# [Classic designer](#tab/classic-designer)
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing a Send email with options card.](./media/email/email-options.png "Send email with options card")
+:::image type="content" source="./media/email/email-options.png" alt-text="Screenshot showing a 'Send email with options' card.":::
 
 The recipients receive an email similar to the following screenshot.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of an email with voting buttons.](./media/email/voting-buttons.png "Email with voting buttons")
+:::image type="content" source="./media/email/voting-buttons.png" alt-text="Screenshot of an email with voting buttons.":::
 
 In your flow, you must capture that response and save it somewhere. You might email it to yourself, save it to Excel, or post it to Microsoft Teams. Don't forget to save it, otherwise you won't know how people voted.
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
 
 ## Send an email from a distribution list or shared mailbox
 
 Use the [Send an email from a shared mailbox (V2)](/connectors/office365/) action, and specify the shared mailbox address to send email from a shared mailbox. 
 
-# [Classic designer](#tab/classic-designer)
-
 The distribution list admin must first give you [permissions](/microsoft-365/admin/manage/send-email-as-distribution-list?) to the shared mailbox. When you use this action, email appears in the Sent folder of your shared mailbox because you're sending it from that account directly.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that shows the Send an email from a shared mailbox (V2) card.](./media/email/shared-mailbox.png "Send an email from a shared mailbox (V2) card")
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
+:::image type="content" source="./media/email/shared-mailbox.png" alt-text="Screenshot that shows the Send an email from a shared mailbox (V2) card.":::
 
 ## Build an approval process and send notifications via email
 
