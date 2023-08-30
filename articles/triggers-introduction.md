@@ -126,16 +126,48 @@ Your flow can generate expressions for you.
 
 1. Remove the **Filter array** action.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+# [New designer and Copilot (preview)](#tab/new-designer-and-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+To set a trigger condition:
 
----
+1. Select the trigger of the flow.
 
-## Secure trigger inputs and outputs
+1. Select **Settings**.  
 
-You might also need to secure the trigger inputs and outputs in the run history of a cloud flow. To do this, you can turn on the secure input or secure output setting in the trigger.
+1. Under **Trigger Conditions**, select **Add**.
 
-:::image type="content" source="./media/triggers-introduction/secure-trigger-input-output.png" alt-text="A screenshot that shows secure input turned on.":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/62632876-2565-4956-83aa-612903a8c9c0)
+
+
+1. Add an expression and then select **Done**.
+
+    >[!NOTE]
+    >
+    > Every trigger condition must start with a the **@** symbol.
+    
+    ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/c4b0da48-7758-4399-abab-9e330166f1f0)
+
+
+    As an alternative, follow the instructions in [Easily create expressions](#easily-create-expressions).
+
+1. If you have multiple filter conditions to add, Select **+ Add** and add expressions.
+
+    By default, all conditions must be met for the condition to be true. If any condition is optional, you will need **OR**, and then use the syntax  `@or (test1, test2,test3)`.
+
+### Easily create expressions
+
+Your flow can generate expressions for you.
+
+1. On your flow, select the **+** sign in the down arrow, and then select **Add an action**.
+
+1. Search for and select the **Filter array** action.
+
+1. On the **Filter array** card, create your condition.
+
+1. Select **Edit in advanced mode** and copy the expression.
+
+1. Paste the expression into the trigger condition.
+
+1. Remove the **Filter array** action.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
