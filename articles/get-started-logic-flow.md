@@ -34,6 +34,9 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 * A Twitter account
 * Office 365 credentials
 
+
+# [Classic designer](#tab/classic-designer)
+
 ## Specify an event to start the flow
 
 First, select what event, or *trigger*, starts your flow.
@@ -65,8 +68,6 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 ## Specify an action
 
-# [Classic designer](#tab/classic-designer)
-
 1. Select **New step**.
 
 1. In the box that shows **Search connectors and actions**, enter **send email**, and then select **Send an email (V2)**.
@@ -90,6 +91,14 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 1. Near the top of the screen, select **Save**.
 
 # [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
+Using copilot, you can simply use natural language to create a flow. Please ask the following prompt to copilot:
+
+When a tweet is posted with keyword 'Contoso Company' , send an email to jack@contoso.com along with the tweet and username of who tweeted.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/3608c294-fa7c-4966-853d-f2fc4d9b39ff)
+
+Review/provide the necessary connections to Twitter and Outlook connector and you will land on the designer with the flow. Simply save your flow and your flow is ready to go! It will trigger when any new tweets that mention the keyword 'Contoso Company' are posted and the flow will send an email to the specified email address in the 'Send an email' action.
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
