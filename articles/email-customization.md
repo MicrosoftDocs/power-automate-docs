@@ -38,6 +38,9 @@ Here are the top how-to scenarios for email in Microsoft Power Automate, with ex
 
 You can use HTML to beautify your email. Following are two options that you can use to beautify your messages with HTML.
 
+# [Classic designer](#tab/classic-designer)
+
+
 ### Option 1: Write HTML directly into the flow
 
 1. Select the **\</\>** button inside the rich text editor in the Power Automate designer. 
@@ -67,6 +70,13 @@ Alternatively, if you don't know—or don't feel like playing with—HTML, follo
 1. Select **Save** at the bottom of the flow steps to save your flow.
 1. Be sure to test your flow to confirm that it works as intended.
 
+# [New designer and Copilot (preview)](#tab/new-designer-and-copilot) 
+
+In the new designer, you can simply format the email body with rich controls like Bold/Italicize/Headers, etc.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/9e5649ef-3d3c-4217-8ca1-178d3ad55dd3)
+
+
 ## Add an image to your email
 
 Outlook takes the image you included in your email and converts it to plain text. Instead of copying/pasting the plain text into Power Automate, follow these steps: 
@@ -91,7 +101,7 @@ Alternatively, follow these steps if you want users to receive the email in thei
 
 Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
 
-# [Classic designer](#tab/classic-designer)
+
 
 1. Add the [Get group members](/connectors/azuread/#get-group-members) action from the [Azure AD](/connectors/azuread/) connector, and then select the distribution list.
 
@@ -102,7 +112,7 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
     > [!div class="mx-imgBorder"]
     > ![Screenshot of a cloud flow that gets all group members and then sends email to each member.](./media/email/group-members-flow.png "Cloud flow that gets all group members and then sends email to each member")
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
+
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
