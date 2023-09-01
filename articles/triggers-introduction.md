@@ -143,7 +143,7 @@ To set a trigger condition:
     > [!NOTE]
     > Every trigger condition must start with a the **@** symbol.
 
-     :::image type="content" source="./media/triggers-introduction/copilot-trigger-example.png" alt-text="Screenshot that shows trigger site in Copilot.":::
+     :::image type="content" source="./media/triggers-introduction/copilot-trigger-example.png" alt-text="Screenshot that shows an expression example in Copilot.":::
 
     As an alternative, follow the instructions in [Easily create expressions](#easily-create-expressions).
 
