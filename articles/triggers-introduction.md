@@ -4,10 +4,11 @@ description: Learn about triggers in Power Automate.
 author: PriyaKodukula
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 05/05/2023
+ms.date: 09/08/2023
 ms.author: prkoduku
 contributors:
   - prkoduku
+  - kisubedi
   - v-aangie
 ms.reviewer: angieandrews
 ms.collection: get-started
@@ -46,13 +47,13 @@ When you edit a trigger in an existing flow, the new trigger must be the first s
 
 1. Edit the flow and delete the existing trigger.
 
-1. After deleting the trigger, Power Automate will prompt you to select a new trigger.
+1. After deleting the trigger, Power Automate prompts you to select a new trigger.
 
 1. Search for the connector and then select the app icon. The following screenshot shows the results if you search for **Share**.
 
     :::image type="content" source="./media/triggers-introduction/connectors.png" alt-text="A screenshot that shows a search for a connector.":::
 
-1. When you select the app icon, the corresponding triggers and actions will be listed. Select the trigger that best suits your needs.
+1. When you select the app icon, the corresponding triggers and actions are listed. Select the trigger that best suits your needs.
 
 ## Licensing for premium connectors
 
@@ -78,7 +79,7 @@ Trigger conditions can help streamline your flows and reduce the number of unnec
 
 For example, you need to create a flow that processes every approved invoice. Without trigger conditions, your flow would trigger every time an invoice email is received, even if the invoice is not approved. This can result in the flow running 1,000 times for 1,000 invoices, even though only 50 of them are approved.
 
-By adding a trigger condition to trigger only when an invoice has been approved, the flow will run only 50 times. This means it will consume fewer Power Platform requests. If the trigger condition isn't met, the flow won't be triggered, and no run history will be logged.
+By adding a trigger condition to trigger only when an invoice has been approved, the flow runs only 50 times. This means it consumes fewer Power Platform requests. If the trigger condition isn't met, the flow isn't triggered, and no run history is logged.
 
 This is especially important in pay-as-you-go environments, where every flow run is charged. By reducing the number of runs, you can keep your costs low while still achieving your desired outcomes.
 
@@ -98,17 +99,16 @@ To set a trigger condition:
 
 1. Add an expression and then select **Done**.
 
-    >[!NOTE]
-    >
+    > [!NOTE]
     > Every trigger condition must start with a the **@** symbol.
-    
+
     :::image type="content" source="./media/triggers-introduction/add-another-condition.png" alt-text="Screenshot of an expression.":::
 
     As an alternative, follow the instructions in [Easily create expressions](#easily-create-expressions).
 
 1. If you have multiple filter conditions to add, Select **+ Add** and add expressions.
 
-    By default, all conditions must be met for the condition to be true. If any condition is optional, you will need **OR**, and then use the syntax  `@or (test1, test2,test3)`.
+    By default, all conditions must be met for the condition to be true. If any condition is optional, you need **OR**, and then use the syntax  `@or (test1, test2,test3)`.
 
 ### Easily create expressions
 
@@ -126,33 +126,30 @@ Your flow can generate expressions for you.
 
 1. Remove the **Filter array** action.
 
-# [New designer and Copilot (preview)](#tab/new-designer-and-copilot)
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 To set a trigger condition:
 
 1. Select the trigger of the flow.
-
 1. Select **Settings**.  
+1. Next to **Trigger conditions**, select **Add**.
 
-1. Under **Trigger Conditions**, select **Add**.
+     :::image type="content" source="./media/triggers-introduction/copilot-trigger-add.png" alt-text="Screenshot that shows trigger site in Copilot.":::
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/62632876-2565-4956-83aa-612903a8c9c0)
+1. Add an expression.
 
-
-1. Add an expression and then select **Done**.
-
-    >[!NOTE]
-    >
+    > [!NOTE]
     > Every trigger condition must start with a the **@** symbol.
-    
-    ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/c4b0da48-7758-4399-abab-9e330166f1f0)
 
+     :::image type="content" source="./media/triggers-introduction/copilot-trigger-example.png" alt-text="Screenshot that shows trigger site in Copilot.":::
 
     As an alternative, follow the instructions in [Easily create expressions](#easily-create-expressions).
 
 1. If you have multiple filter conditions to add, Select **+ Add** and add expressions.
 
-    By default, all conditions must be met for the condition to be true. If any condition is optional, you will need **OR**, and then use the syntax  `@or (test1, test2,test3)`.
+    By default, all conditions must be met for the condition to be true. If any condition is optional, you need **OR**, and then use the syntax  `@or (test1, test2,test3)`.
 
 ### Easily create expressions
 
@@ -169,5 +166,7 @@ Your flow can generate expressions for you.
 1. Paste the expression into the trigger condition.
 
 1. Remove the **Filter array** action.
+
+---
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

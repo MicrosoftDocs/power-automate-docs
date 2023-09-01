@@ -89,7 +89,8 @@ Congratulations! You now receive a push notification each time you receive an em
 
     :::image type="content" source="./media/email-triggers/copilot-lottery.png" alt-text="Screenshot of triggering a cloud flow based on an email's subject in Copilot.":::
 
-1. Review the connections and parameters on the designer, and then save the flow.
+1. Review the connections and parameters on the designer.
+1. Save the flow.
 
 ---
 
@@ -125,7 +126,8 @@ In this tutorial, you create a cloud flow that sends a push notification to your
 
     :::image type="content" source="./media/email-triggers/copilot-email.png" alt-text="Screenshot of triggering a cloud flow based on an email's sender in Copilot.":::
 
-1. Review the connections, and parameters on the designer and save the flow.
+1. Review the connections and parameters on the designer.
+1. Save the flow.
 
 ---
 
@@ -160,7 +162,7 @@ Test the flow by sending an email that gets routed to the folder you selected ea
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-1. Simply ask Copilot to create your flow by typing the following prompt:
+1. Simply ask Copilot to create your flow by typing :
 
     **When I receive an email in Sync Issues folder, send me a push notification and mark the email as Read.**
 
