@@ -7,7 +7,7 @@ ms.subservice: desktop-flow
 ---
 
 # Create a connection with a Service Principal
-To be able to create a connection with a Service Principal, you first need to give permissions to the Service Principal on the machine or the machine group. Alternatively, you can register the machine using a [Service Principal with silent registration](/power-automate/desktop-flows/machines-silent-registration#using-a-service-principal-account).
+To create a connection with a Service Principal, the best approach is to use the register the machine using a [Service Principal with silent registration](/power-automate/desktop-flows/machines-silent-registration#using-a-service-principal-account). Alternatively, you can give permissions to the Service Principal on the machine or the machine group and then create a connection using the Service Principal.
 
 ## Give permissions on the machine or machine group
 To give permissions on the machine:
