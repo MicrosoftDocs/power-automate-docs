@@ -59,13 +59,13 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
       Power Automate returns a suggested flow that corresponds to what you've entered.
 
-    :::image type="content" source="../media/forms/copilot-ms-forms.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with custom information highlighted.":::
+    :::image type="content" source="../media/forms/copilot-ms-forms.png" alt-text="Screenshot of a prompt to send an email in Copilot.":::
 
 1. Select **Next**.
 1. Review the connections and select **Create flow** to land on the designer.
-1. On the designer, provide the missing fields in the email action if Copilot didn't automatically populate it for you.
+1. On the designer, provide the missing fields in the *Send an email** action if Copilot didn't automatically populate it for you.
 
-    :::image type="content" source="../media/forms/copilot-missing-fields.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with custom information highlighted.":::
+    :::image type="content" source="../media/forms/copilot-missing-fields.png" alt-text="Screenshot of populating fields to send an email action in Copilot.":::
 
 ---
 
@@ -156,7 +156,7 @@ For more examples of approval flows, go to [Manage sequential approvals](../sequ
 1. Review the connections and select **Create flow** to land on the designer.
 1. On the designer, provide the forms ID, approver's email, and configure the email action.
 
-    :::image type="content" source="../media/forms/copilot-approval-parameters.png" alt-text="Screenshot of a flow to start an approval request with Copilot.":::
+    :::image type="content" source="../media/forms/copilot-approval-parameters.png" alt-text="Screenshot of configuring the email action with Copilot.":::
 
 1. Save your flow.
 
