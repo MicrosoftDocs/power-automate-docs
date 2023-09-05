@@ -112,10 +112,8 @@ content hosted in Power Automate US Governments (GCC, GCC High, and DoD).
 
 Power Automate US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This program infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can peruse these artifacts in support of their review to grant an Authority to Operate (ATO).
 
->[!NOTE]
->Power Automate is authorized as a service within the Azure Government FedRAMP ATO. For more information, including how to access the FedRAMP documents, review the [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government).
-
-
+> [!NOTE]
+> Power Automate is authorized as a service within the Azure Government FedRAMP ATO. For more information, including how to access the FedRAMP documents, review the [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government).
 
 Power Automate US Government has features designed to support customers' CJIS Policy requirements for law enforcement agencies. Visit the Power Automate US Government products page in the Trust Center for more detailed information related to certifications and accreditations.
 
