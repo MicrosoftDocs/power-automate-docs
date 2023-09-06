@@ -4,9 +4,13 @@ description: This section describes how to add your cloud flow, desktop flow and
 author: nvigne
 ms.author: nvigne
 ms.subservice: desktop-flow
+ms.reviewer: matp
+ms.topic: how-to
+ms.date: 09/06/2023
 ---
 
 # Add cloud flow, desktop flow and connection reference
+
 At this point you have created a solution. Let's add a desktop Flow and a cloud flow to this solution. If you haven't created a solution yet, [create a solution and a publisher](/power-platform/alm/solution-concepts-alm#solution-lifecycle)
 
 > Please note that in order for a cloud flow to be added in a solution, it needs to be created in the solution, you cannot add a cloud flow to a solution after its creation.
