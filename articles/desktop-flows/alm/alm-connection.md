@@ -25,7 +25,7 @@ To give permissions on the machine:
 
 ## Create the connection using a service principal
 
-Once you have shared the machine with the application user, create the connection. You need to create the connection as the service principal. Creating a connection as a service principal isnt supported by the Power Automate web portal. This is currently only supported by a direct call to the Web API.
+Once you have shared the machine with the application user, create the connection. You need to create the connection as the service principal. Creating a connection as a service principal isn't supported with the Power Automate web portal. This is currently only supported with a direct call to the Web API.
 
 ### Request an access token
 
@@ -78,7 +78,7 @@ The above example contains placeholders:
 - CONNECTION_ID: The connection ID used to create the connection. It needs to be a valid GUID. (You can use the `New-Guid` PowerShell command to get this).
 - `MACHINE_ACCOUNT`: The username of the account used to open a Windows session.
 - `MACHINE_PASSWORD`: The password for the account.
-- `GROUP_ID`: The group id you want to create the connection for. More information: [Get the group ID of the machine or group](#get-the-group-id-of-the-machine-or-group)
+- `GROUP_ID`: The group ID you want to create the connection for. More information: [Get the group ID of the machine or group](#get-the-group-id-of-the-machine-or-group)
 
 Once the request is completed, save the connection ID that you used in your request. You'll use it in the next step to [Prepopulate connection references for automated deployment](/power-platform/alm/conn-ref-env-variables-build-tools).
 

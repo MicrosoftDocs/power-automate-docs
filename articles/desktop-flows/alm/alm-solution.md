@@ -11,29 +11,32 @@ ms.date: 09/06/2023
 
 # Add cloud flow, desktop flow and connection reference
 
-At this point you have created a solution. Let's add a desktop Flow and a cloud flow to this solution. If you haven't created a solution yet, [create a solution and a publisher](/power-platform/alm/solution-concepts-alm#solution-lifecycle)
+If you've followed the article [for configuring ALM for desktop flows](alm-intro.md), at this point you've created a solution. Now, add a desktop flow and a cloud flow to this solution. If you haven't created a solution yet, [create a publisher and a solution](/power-platform/alm/solution-concepts-alm#solution-lifecycle)
 
-> Please note that in order for a cloud flow to be added in a solution, it needs to be created in the solution, you cannot add a cloud flow to a solution after its creation.
+> [!IMPORTANT]
+> In order for a cloud flow to be added to a solution, the cloud flow has to be created in the solution. You can't add a cloud flow to a solution after it's been created.
 
 ## Create a desktop flow
-Follow those steps:
-- **Solution** > **my solution name**
-- **New** > **Automation** > **Desktop Flow**
 
-You will be redirected to Power Automate Desktop, once you have finished editing your desktop flow, go back to the solution page, you should see your desktop flow appear.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and then go to **Solutions**, and then open the unmanaged solution you want or select **New solution** to [create a solution](/power-apps/maker/data-platform/create-solution).
+1. Select **New** > **Automation** > **Desktop flow**.
+
+You're redirected to Power Automate desktop, once you have finished editing your desktop flow, go back to the solution page to see your desktop flow appear.
 
 :::image type="content" source="./media/desktopflow-solution.png" alt-text="Screenshot of a desktop flow in a solution":::
 
 ## Create a cloud flow
-From within the solution: **New** > **Automation** > **Cloud flow** > **Scheduled**
 
-You will be redirected to the cloud flow designer, edit to add an action with desktop flow, if needed create a connection. You need to use the **Unattended** run mode.
+From within the solution, select **New** > **Automation** > **Cloud flow** > **Scheduled**.
 
-> Please note that the connection you use here will not be the connection that will be used in your Production environment.
+You're redirected to the cloud flow designer. Edit to add an action with a desktop flow, and if needed, create a connection. You need to use the **Unattended** run mode.
 
-:::image type="content" source="./media/cloudflow-solution.png" alt-text="Screenshot of a desktop flow, a cloud flow and connection reference in a solution":::
+The connection you use won't be the connection that is used in your production environment.
 
-You should see the cloud flow in your solution as well as a connection reference.
+:::image type="content" source="./media/cloudflow-solution.png" alt-text="Screenshot of a desktop flow, a cloud flow, and connection reference in a solution":::
 
-### Next
+You see the cloud flow in your solution and a connection reference.
+
+### Next steps
+
 - [Configure your build pipeline to export your solution](/power-platform/alm/devops-build-tool-tasks#build-pipeline-export-solution-from-development)
