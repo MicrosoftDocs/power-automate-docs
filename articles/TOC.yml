@@ -2,12 +2,12 @@
   href: ./index.yml
 - name: Overview
   items:
-  - name: Get started
-    href: getting-started.md
   - name: Types of flows
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
+  - name: Get started with Power Automate
+    href: getting-started.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -696,7 +696,7 @@
       href: ./desktop-flows/actions-reference/sharepoint.md
     - name: Office 365 Outlook (preview)
       href: ./desktop-flows/actions-reference/office365outlook.md
-    - name: Workqueues (preview)
+    - name: Work queues (preview)
       href: ./desktop-flows/actions-reference/workqueues.md
     - name: Custom actions (preview)
       href: ./desktop-flows/actions-reference/custommodule.md
