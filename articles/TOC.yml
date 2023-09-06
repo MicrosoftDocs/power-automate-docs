@@ -599,7 +599,7 @@
   - name: ALM for desktop flows
     items:
     - name: Overview for configuring ALM for desktop flows
-      href: ./desktop-flows/alm-intro.md
+      href: ./desktop-flows/alm/alm-intro.md
     - name: Create a flow in a solution
       href: ./desktop-flows/alm/alm-solution.md
     - name: Compare your desktop flow changes
