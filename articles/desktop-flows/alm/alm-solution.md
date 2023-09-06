@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 09/06/2023
 ---
 
-# Add cloud flow, desktop flow and connection reference
+# Add a cloud flow, desktop flow and connection reference to a solution
 
 If you've followed the article [for configuring ALM for desktop flows](alm-intro.md), at this point you've created a solution. Now, add a desktop flow and a cloud flow to this solution. If you haven't created a solution yet, [create a publisher and a solution](/power-platform/alm/solution-concepts-alm#solution-lifecycle)
 
@@ -37,6 +37,6 @@ The connection you use won't be the connection that is used in your production e
 
 You see the cloud flow in your solution and a connection reference.
 
-### Next steps
+## Next steps
 
 - [Configure your build pipeline to export your solution](/power-platform/alm/devops-build-tool-tasks#build-pipeline-export-solution-from-development)

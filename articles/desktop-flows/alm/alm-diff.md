@@ -15,7 +15,7 @@ When you commit a change to your repository by running your export pipeline, you
 
 ## Compare the desktop flow definition
 
-The desktop flow definition is stored in the **Workflow** folder in a file with the extension `.json.data.xml`. From Azure DevOps, you can open the file on the **History** tab to observe the difference.
+The desktop flow definition is stored in the **Workflow** folder in a file with the extension `.json.data.xml`. From [Azure DevOps](https://azure.microsoft.com/products/devops/), you can open the file on the **History** tab to observe the difference.
 
 :::image type="content" source="./media/desktopflow-diff.png" alt-text="Screenshot of the diff tool in Azure DevOps on the desktop flow definition":::
 

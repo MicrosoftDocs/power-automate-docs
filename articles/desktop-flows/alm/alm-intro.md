@@ -16,7 +16,7 @@ This article provides an overview for the tasks involved in how to set up a heal
 Follow the list of tasks described in this article to set up your ALM strategy for cloud flows and desktop flows. To benefit from the latest features of desktop flows, we recommend following those steps in an environment with [schema v2 activated](/power-automate/desktop-flows/schema).
 
 
-| Task  |  Description  | Links |
+| Task  |  Description  | More information |
 |-------|---------------|-------|
 |1. Set up your DevOps project | Create your Azure DevOps or GitHub repository | [Continuous integration](/power-platform/alm/basics-alm#continuous-integration-and-deployment) <br> [Create a project](/azure/devops/pipelines/get-started/pipelines-sign-up#create-a-project) |
 | 2. Create and configure a service principal | How to create a Service Principal in Azure and link it to your environment as an Application User | [Create a Service Principal](/power-automate/desktop-flows/machines-silent-registration) <br>[Configure service connection using Service Principal](/power-platform/alm/devops-build-tools#configure-service-connections-using-a-service-principal)
