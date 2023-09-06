@@ -35,7 +35,7 @@ The **work queue** referenced in the above action is used by the queue orchestra
 
 ### processworkqueueitemaction
 
-The **Process workq ueue item action** action requires the following arguments.
+The **Process work queue item action** action requires the following arguments.
 
 #### Input Parameters 
 
