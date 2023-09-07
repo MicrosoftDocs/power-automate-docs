@@ -4,15 +4,15 @@ description: Get an overview of the Microsoft Power Automate mobile app, includi
 services: ''
 suite: flow
 documentationcenter: na
-author: natalie-pienkowska
+author: jamiemwork
 contributors:
-  - natalie-pienkowska
+  - jamiemwork
   - kartikraop
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 06/05/2023
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
