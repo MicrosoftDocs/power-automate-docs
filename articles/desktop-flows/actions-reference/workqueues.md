@@ -35,7 +35,7 @@ The **work queue** referenced in the above action is used by the queue orchestra
 
 ### processworkqueueitemaction
 
-The **processworkqueueitemaction** action requires the following arguments.
+The **Process work queue item action** action requires the following arguments.
 
 #### Input Parameters 
 
@@ -64,7 +64,7 @@ The **Update work queue item (Preview)** action allows users to change the statu
 
 ### updateworkqueueitemaction
 
-The **updateworkqueueitemaction** action requires the following arguments.
+The **Update work queue item action** action requires the following arguments.
 
 | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
@@ -88,7 +88,7 @@ The **Add work queue item (preview)** action allows users to populate work queue
 
 ### addworkqueueitem action
 
-The **addworkqueueitem** action requires the following arguments.
+The **Add work queue item** action requires the following arguments.
 
 #### Input Parameters
 
@@ -113,6 +113,34 @@ The **addworkqueueitem** action requires the following arguments.
 |----------------|----------|
 | **Work queue not found** | The value entered into the work queue parameter is invalid|
 | **Failed to add item into work queue** | The work queue item couldn't be added into the work queue.  Bad request - error in query syntax |
+
+## Requeue item and add delay (preview)
+
+The **Requeue item and add delay (preview)** action allows users to to re-add a queue item being processed in the desktop flow, back into it's originating queue.  In addition, the queued item can be held and released until a defined time.
+
+:::image type="content" source="media\workqueues\Requeueworkqueueitem.png" alt-text="Screenshot of the requeue work queue item action." lightbox="media\workqueues\Requeueworkqueueitem.png":::
+
+### requeueworkqueueitemaction
+
+The **Requeue item and add delay** action requires the following arguments.
+
+#### Input Parameters
+
+| Argument       | Optional | Accepts | Default Value | Description     |
+  |----------      |----------|---------|---------------|-----------------|
+  | **Work queue item** |No    |Work queue item |               |The work queue item to add the item into|
+| **Delay until** |No    |Datetime value| Normal |The dateetime value applied to delay the queue item until|
+| **Expires** | Yes | Datetime value| | Custom expiration time for the item being requeued|
+
+| **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
+
+#### Exceptions
+
+| Argument       | Description |
+|----------------|----------|
+| **Work queue not found** | The value entered into the work queue parameter is invalid|
+| **Work queue item not found** | The queue item value is invalid|
+| **Failed to requeue work queue item** | The work queue item couldn't be added into the work queue.  Bad request - error in query syntax |
 
 ### See also
 
