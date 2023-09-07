@@ -58,11 +58,7 @@ You might have different environments to work in depending on the purpose of you
 
 ## Limitations
 
-The Power Automate mobile app  has a few limitations:
-
-- Geofencing, or using location-based triggers, isn't supported in the mobile app.
-
-- There's no camera option to upload files with the mobile app.
+Power Automate mobile app doesn't support geofencing (using location-based triggers).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
