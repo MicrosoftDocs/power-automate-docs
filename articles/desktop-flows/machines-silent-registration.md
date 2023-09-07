@@ -101,6 +101,11 @@ Machine registration arguments:
    1. Machine name (optional): The name of the registered machine.
 
    1. Machine description (optional): The description of the registered machine.
+     
+   1. `force` (optional): The force flag used to override an existing registration. Overriding a registration will break existing connections to the machine.
+
+>[!NOTE]
+> "force" argument can be really useful in case your existing machine is in a bad state with no other available environment to unregister / re-register your machine. 
 
         ```CMD
         .\PAD.MachineRegistration.Silent.exe -register -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid 
