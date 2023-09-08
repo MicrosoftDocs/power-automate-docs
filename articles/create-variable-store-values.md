@@ -31,16 +31,13 @@ When you reference a variable, use the variable's name as the token, not the act
 
 ## Prerequisites
 
-* Access to [Power Automate](https://make.powerautomate.com).
+Before you can add actions for creating and working with variables, your flow must start with a trigger. You can't use a mobile device to add variables.
 
-* A cloud flow in which you want to create the variable.
+- Access to [Power Automate](https://make.powerautomate.com).
+- A cloud flow in which you want to create the variable.
+- If you're new to Power Automate, review [Getting started with Power Automate](getting-started.md) and [Overview of cloud flows](overview-cloud.md).
 
-  If you're new to Power Automate, review [Getting started with Power Automate](getting-started.md) and [Overview of cloud flows](overview-cloud.md).
-
-> [!NOTE]
-> Before you can add actions for creating and working with variables, your flow must start with a trigger. You can't use a mobile device to add variables.
-
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](./flows-designer.md).
+[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
 ## Initialize a variable
 

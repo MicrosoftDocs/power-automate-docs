@@ -97,7 +97,7 @@ If you expect the flow to run but it didn’t run, see if it shows the trigger c
 
 Sometimes, the inputs and trigger conditions may cause failures. Follow these steps to verify your inputs and conditions.
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
+[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
 # [Classic designer](#tab/classic-designer)
 

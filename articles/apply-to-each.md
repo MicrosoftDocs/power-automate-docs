@@ -45,14 +45,14 @@ This diagram shows the details of the flow we'll create.
 
 Here are the requirements for successfully performing the steps in this tutorial.
 
-* An account that's registered to use [Power Automate](https://make.powerautomate.com).
-* A Microsoft 365 Outlook account.
-* The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
-* Connections to Microsoft 365 Outlook and the push notification service.
+- An account that's registered to use [Power Automate](https://make.powerautomate.com).
+- A Microsoft 365 Outlook account.
+- The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+- Connections to Microsoft 365 Outlook and the push notification service.
 
-[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+For detailed information about using SharePoint with Power Automate, go to the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
+[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
 ## Create a cloud flow
 

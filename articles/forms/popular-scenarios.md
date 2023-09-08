@@ -26,15 +26,15 @@ If you're not sure where to start, these are some of the most common ways people
 
 You can turn on email notifications for the form's owners in your form settings. If you want someone else to be notified when a response is submitted, create a custom email notification with Power Automate.
 
+[!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
+
+# [Classic designer](#tab/classic-designer)
+
 We start with a prebuilt template and customize it to help our managers plan for employees' summer vacations.
 
 1. Search for **Microsoft Forms** in the [Power Automate template gallery](https://make.powerautomate.com/templates/), and then select the template named **Notify me in Outlook when a student completes a quiz**.
 
 1. If needed, sign in to the connectors, and then select **Continue**.
-
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
-
-# [Classic designer](#tab/classic-designer)
 
 1. In the first step in the flow, **When a new response is submitted**, select your form in the **Form Id** box.
 1. In the next step in the flow, **Apply to each**, select your form again in the **Form Id** field. Leave everything else as it is.

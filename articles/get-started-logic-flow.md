@@ -27,7 +27,7 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 - A Twitter account
 - Office 365 credentials
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](./flows-designer.md).
+[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
 # [Classic designer](#tab/classic-designer)
 
@@ -59,8 +59,6 @@ First, select what event, or *trigger*, starts your flow.
 1. If you haven't already connected your Twitter account to Power Automate, select **Sign in to Twitter**, and then provide your credentials.
 1. In the **Search text** box, type the keyword that you want to find.
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
-
 ## Specify an action
 
 1. Select **New step**.
@@ -83,7 +81,7 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-Using Edit with Copilot, you can use natural language to create a flow.
+Using Copilot, you can use natural language to create a flow.
 
 1. Simply ask Copilot to create your flow by typing the following prompt:
 

@@ -28,7 +28,7 @@ Here are the top how-to scenarios for email in Microsoft Power Automate, with ex
 
 You can use HTML to beautify your email. Following are two options that you can use to beautify your messages with HTML.
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
+[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
 # [Classic designer](#tab/classic-designer)
 
