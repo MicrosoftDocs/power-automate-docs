@@ -71,168 +71,77 @@ Power Automate uses either the classic designer or the Edit with Copilot (previe
 
 ## Create your flow
 
-# [Classic designer](#tab/classic-designer)
-
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
 1. On the **When an item is created** card, select the **Site Address** and the **List Name** for the SharePoint list that you created earlier.
 
-   ![sharepoint info.](./media/sequential-modern-approvals/select-sharepoint-site-info.png)
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Get the manager for the person who created the vacation request
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-get-manager-action](includes/add-get-manager-action.md)]
 
    > [!NOTE]
    > It's a good idea to periodically save changes to your flow as you go.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add an approval action for pre-approvals
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
 This action sends the pre-approval request to the email address in the **Assigned To** box.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add a condition
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 > [!NOTE]
 > This condition checks the response from the **Start and wait for an approval** action.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add an email action for pre-approvals
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
    ![configure pre-approved email template.](./media/sequential-modern-approvals/yes-email-config.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add an update action for pre-approved requests
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
    ![update an item configuration.](./media/sequential-modern-approvals/update-item-preapproval.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Get the pre-approver's manager
-
-# [Classic designer](#tab/classic-designer)
 
 1. Use the [Get the manager for the person who created the vacation request](sequential-modern-approvals.md#get-the-manager-for-the-person-who-created-the-vacation-request) steps we did earlier to add, and then configure another **Get manager** action. This time we get the pre-approver's manager.
 2. The **Get manager 2** card should resemble this image when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow** card.
 
    ![get pre-approver's manager.](includes/media/modern-approvals/get-pre-approver-manager.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add the final approval action
-
-# [Classic designer](#tab/classic-designer)
 
 1. Use the [add an approval action for pre-approvals](sequential-modern-approvals.md#add-an-approval-action-for-pre-approvals) steps we did earlier to add, and then configure another **Start and wait for an approval** action. This action sends an email request for final approval.
 2. When you're done, the card should resemble this image:
-   
+
     ![configure the approval.](./media/sequential-modern-approvals/provide-approval-config-info.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
 ## Add the final approval condition
 
-# [Classic designer](#tab/classic-designer)
-
-1. Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-condition) to add, and then configure a **Condition** that checks the final approver's decision.
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
+Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-condition) to add, and then configure a **Condition** that checks the final approver's decision.
 
 ## Send email with final approval
 
-# [Classic designer](#tab/classic-designer)
-
 1. Use the steps from [Add an email action for pre-approvals](sequential-modern-approvals.md#add-an-email-action-for-pre-approvals) to add, and then configure an action that sends an email when vacation requests are approved.
 2. When you're finished, your card should resemble this image:
-   
+
    ![final approval email template.](./media/sequential-modern-approvals/vacatioin-request-approved-email-template.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Update SharePoint with approval
-
-# [Classic designer](#tab/classic-designer)
 
 1. Use the steps from [Add an update action for pre-approved requests](sequential-modern-approvals.md#add-an-update-action-for-pre-approved-requests) to add, and then configure an action that updates SharePoint when the vacation request is approved.
 2. When you're finished, the card should resemble this image:
    
     ![update item configuration card.](./media/sequential-modern-approvals/configure-update-item-approved.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Send email with pre-approval rejection
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
@@ -240,29 +149,13 @@ This action sends the pre-approval request to the email address in the **Assigne
 
 This action must be added to the **IF NO, DO NOTHING** branch below the **Condition** card.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Update SharePoint with pre-approval rejection
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
    ![update sharepoint for rejected requests.](./media/sequential-modern-approvals/update-sharepoint-with-rejection.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Send email with final rejection
-
-# [Classic designer](#tab/classic-designer)
 
 1. Use the steps from [Send email with pre-approval rejection](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) to add, and then configure an action that sends an email when the vacation request is rejected by the final approver.
 
@@ -272,15 +165,7 @@ This action must be added to the **IF NO, DO NOTHING** branch below the **Condit
 
    ![Screenshot of the configuration for rejected requests.](./media/sequential-modern-approvals/final-rejection-email-card.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Update SharePoint with final rejection
-
-# [Classic designer](#tab/classic-designer)
 
 1. Use the steps from [Update SharePoint with pre-approval rejection](sequential-modern-approvals.md#update-sharepoint-with-pre-approval-rejection) to add, and then configure an action that updates SharePoint if the final approver rejects the vacation request.
 1. When you're finished, the card should resemble this image:
@@ -294,15 +179,7 @@ If you've followed along, your flow should resemble this image:
 
 Now that you've created the flow, let's see it in action.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Request an approval
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
@@ -310,61 +187,23 @@ Your request should resemble this image:
 
 ![vacation request.](./media/sequential-modern-approvals/vacation-request.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## View pending approval requests
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Pre-approve a request
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [approve-request-from-different-locations](includes/approve-request-from-different-locations.md)]
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Approve the request
-
-# [Classic designer](#tab/classic-designer)
 
 The steps to approve a request are identical to the steps to [pre-approve a request](sequential-modern-approvals.md#pre-approve-a-request)
 
 The final approver gets the vacation request only after the request has been pre-approved.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Reject a request
 
-# [Classic designer](#tab/classic-designer)
-
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
 
 ### See also
 

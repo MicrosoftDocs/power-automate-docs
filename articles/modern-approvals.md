@@ -74,11 +74,7 @@ Make note of the name and URL of the SharePoint Online list. You'll need these i
 
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](./flows-designer.md).
-
 ## Add a trigger
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
@@ -86,15 +82,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 ![SharePoint info.](./media/modern-approvals/select-sharepoint-site-info.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add a profile action
-
-# [Classic designer](#tab/classic-designer)
 
 1. Select **New step**, and then type **profile** into the **Choose an action** search box.
 
@@ -106,15 +94,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 1. Select the fields from your profile that you want to include in your flow, and then select **Create** to save the work you've done so far.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add an approval action
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
@@ -123,43 +103,15 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 >
 > If your scenario requires it, you can attach files to your approval requests that use Microsoft Dataverse.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
-## Add a condition
-
-# [Classic designer](#tab/classic-designer)
-
-[!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add an email action for approvals
 
 Follow these steps to send an email if the vacation request is approved.
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
    ![configure approved email template.](./media/modern-approvals/yes-email-config.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add an update action for approved requests
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
@@ -168,29 +120,13 @@ Follow these steps to send an email if the vacation request is approved.
 
 ![update item configuration.](./media/modern-approvals/configure-update-item.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add an email action for rejections
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
 ![configuration for rejected requests.](./media/modern-approvals/configure-rejected-email.png)
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Add update action for rejected requests
-
-# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
@@ -207,23 +143,9 @@ If you've followed along, your flow should resemble this screenshot:
 
 Now that we've created the flow, it's time to test it!
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
-
 ## Request an approval to test your flow
 
-# [Classic designer](#tab/classic-designer)
-
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
----
 
 ## Create long-running approvals
 

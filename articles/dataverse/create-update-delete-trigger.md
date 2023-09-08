@@ -1,22 +1,15 @@
 ---
-title: Trigger flows when a row is added, modified, or deleted | Microsoft Docs
+title: Trigger flows when a row is added, modified, or deleted
 description: Learn how to trigger flows by using the When a row is added, modified, or deleted trigger.
-services: ''
 suite: flow
-documentationcenter: na
 author: radioblazer
 contributors:
   - radioblazer
   - v-aangie
 ms.author: matow
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 12/20/2022
+ms.date: 09/08/2023
 search.app: 
   - Flow
   - Powerplatform
@@ -40,7 +33,7 @@ The following information is required to use the **When a row is added, modified
 - Table name
 - Scope
 
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](../flows-designer.md).
+[!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
 
 # [Classic designer](#tab/classic-designer)
 
@@ -99,9 +92,10 @@ To access the advanced options, select **Show advanced options**.
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-To access the advanced options, select the **List rows** card. In the **Parameters** tab, select **Add new parameters** from the dropdown menu.
+1. To access the advanced options, select the **List rows** card.
+1. In the **Parameters** tab, select **Add new parameters** from the dropdown menu.
 
-:::image type="content" source="../media/create-update-delete-trigger/advanced-ai.png" alt-text="Screenshot of the advanced options in the Add new parameters field.":::
+    :::image type="content" source="../media/create-update-delete-trigger/advanced-ai.png" alt-text="Screenshot of the advanced options in the Add new parameters field.":::
 
 ---
 
@@ -149,7 +143,6 @@ Follow these steps to impersonate a user.
 # [Classic designer](#tab/classic-designer)
 
 1. In the designer, select a value for **Run as** to tell Microsoft Dataverse which user’s context you intend to use for subsequent Dataverse actions.
-
 1. For each Dataverse action that you want to run as a different user, select the ellipses (**...**) in the upper-right corner and then select the **Use invoker’s connection** setting.
 
 For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
