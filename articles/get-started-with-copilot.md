@@ -1,7 +1,7 @@
 ---
-title: Get started with Edit with Copilot (preview)
-description: Learn how to access and use Edit with Copilot (preview).
-ms.date: 08/16/2023
+title: Get started with Copilot in cloud flows (preview)
+description: Learn how to access and use Copilot in cloud flows.
+ms.date: 09/08/2023
 ms.custom: 
   - transparency-note
 ms.topic: conceptual
@@ -10,13 +10,13 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ---
 
-# Get started with Edit with Copilot (preview)
+# Get started with Copilot in cloud flows (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Edit with Copilot allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. You can create a flow by describing what you need through multiple steps of conversation. Edit with Copilot is always available.
+The cloud flows designer with Copilot allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. You can create a flow by describing what you need through multiple steps of conversation. Copilot in cloud flows is always available.
 
-Edit with Copilot can perform the following actions:
+The cloud flows designer with Copilot can perform the following actions:
 
 - Understand your intent, and create a flow based on the scenario prompt you provide.
 - Set up connections on your behalf.
@@ -33,19 +33,19 @@ Edit with Copilot can perform the following actions:
 
 ## Prerequisites
 
-You need a Power Platform environment in the United States or Preview (United States) region for Edit with Copilot (preview).
+You need a Power Platform environment in the United States or Preview (United States) region for the cloud flows designer with Copilot (preview).
 
 > [!NOTE]
-> If your environment is in the United States or Preview (United States) region and you still don’t see the Edit with Copilot experience, contact your admin. Ask if they've requested Microsoft Support to disable Edit with Copilot (preview).
+> If your environment is in the United States or Preview (United States) region and you still don’t see the Copilot in cloud flows experience, contact your admin. Ask if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
 
-## Create a flow using Edit with Copilot
+## Create a flow using the cloud flows designer with Copilot
 
-Follow these steps to create a flow using Edit with Copilot.
+Follow these steps to create a flow using the cloud flows designer with Copilot.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Start describing your automation scenario.
 
-    As you're typing, Edit with Copilot shows you a list of AI generated suggested flow descriptions.
+    As you're typing, the cloud flows designer with Copilot shows you a list of AI generated suggested flow descriptions.
 
     Alternatively, you can select **Create** > **Describe it to design it (preview)**.
 
@@ -62,9 +62,9 @@ Follow these steps to create a flow using Edit with Copilot.
 
 1. To finalize your flow, configure the required settings, and then select **Create flow**.
 
-    The Edit with Copilot (preview) designer opens with your flow.
+    The cloud flows designer with Copilot opens with your flow.
 
-    :::image type="content" source="./media/get-started-with-copilot/designer.png" alt-text="Screenshot of the Power Automate designer with your flow.":::
+    :::image type="content" source="./media/get-started-with-copilot/designer.png" alt-text="Screenshot of the cloud flows designer with Copilot that shows your flow.":::
 
 1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, or make edits to your flow using Edit with Copilot.
 
@@ -74,7 +74,7 @@ Follow these steps to create a flow using Edit with Copilot.
 
 ## How to write a good prompt
 
-Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. Edit with Copilot lets you try out different variations of prompts to help you evaluate what works best. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again.
+Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. Copilot lets you try out different variations of prompts to help you evaluate what works best. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again.
 
 - For better and more accurate results, provide prompts in *When X happens, do Y* format.
 - Be as specific as possible. Instead of a generic prompt like, *I want to process an email*, try this prompt instead: *When an email arrives, I want to post the subject of the email to ‘Contoso’ Teams General channel*.
@@ -102,18 +102,18 @@ You can use Edit with Copilot (preview) to change your existing flows. You don�
   
     :::image type="content" source="./media/get-started-with-copilot/copilot-edit.png" alt-text="Screenshot of how to edit an existing flow.":::
 
-    Alternatively, access Edit with Copilot (preview) from the flow **Details** page of your existing flow by selecting the flow name from **My flows** > **Edit with Copilot (preview)**.
+    Alternatively, access the cloud flows designer with Copilot from the flow **Details** page of your existing flow by selecting the flow name from **My flows** > **Edit with Copilot (preview)**.
 
-    Your flow opens. You can now edit your flow using Edit with Copilot (preview).
+    Your flow opens. You can now edit your flow using the cloud flows designer with Copilot.
 
 ## Frequently asked questions
 
 Use this section to find answers to frequently asked questions.
 
-### Why don’t I see Edit with Copilot (preview) in my Power Automate experience?
+### Why don’t I see the cloud flow designer with Copilot (preview) in my Power Automate experience?
 
 - Check if the environment you’re using is in the United States or Preview (United States) region. Your Power Platform admin can help review and verify.
-- Ask your admin if they've requested Microsoft Support to disable Edit with Copilot (preview).
+- Ask your admin if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
 
 ### How do I create a Power Platform environment in preview region?
 
@@ -121,21 +121,21 @@ Go to [Create a Power Platform environment](/power-platform/admin/create-environ
 
 To learn more, go to [Power Platform regions](/power-platform/admin/regions-overview).
 
-### How do I disable Edit with Copilot (preview)?
+### How do I disable the cloud flows designer with Copilot?
 
-You can disable Edit with Copilot (preview) by contacting Microsoft Support.
+You can disable the cloud flows designer with Copilot by contacting Microsoft Support.
 
-### How is Edit with Copilot (preview) different from the text generation model in AI Builder?
+### How is Copilot in cloud flows different from the text generation model in AI Builder?
 
-Edit with Copilot (preview) is designed to help you create and edit Power Automate flows just by describing them in everyday language, providing helpful guidance along the way.
+Copilot in cloud flows is designed to help you create and edit Power Automate flows just by describing them in everyday language, providing helpful guidance along the way.
 
 The text generation model in AI Builder lets you use the GPT model directly in your Power Automate flows and Power Apps apps for various scenarios such as text summarization, draft responses, classify text, and more.  
 
 To learn more, go to [Text generation model overview (preview)](/ai-builder/prebuilt-azure-openai).
 
-### What are the limitations of Edit with Copilot during preview?
+### What are the limitations of the cloud flows designer with Copilot during preview?
 
-- You can’t edit flows with the Edit with Copilot experience if your flow has any of the following flows capabilities:
+- You can’t edit flows in the cloud flows designer with Copilot experience if your flow has any of the following flows capabilities:
     - A flow with an AI Builder or SAP connector, desktop flow, or a child flow component.
     - A non-Open API flow (older connection format).
     - A flow with a comment.
@@ -147,11 +147,11 @@ To learn more, go to [Text generation model overview (preview)](/ai-builder/preb
 - Copilot has limited parameterization support currently. It might not be able to implicitly fill in parameters for all your actions, but it should be available in select connectors.
 - Copilot has limited support to create looping constructs (for example, *Apply to each* and *do until*).
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
-- You can’t use Edit with Copilot (preview) if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
-- Edit with Copilot (preview) supports English language only for models.
+- You can’t use the cloud flows designer with Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
+- The cloud flows designer with Copilot supports English language only for models.
 
 ### See also
 
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
-- [FAQ for Edit with Copilot](faqs-copilot.md) 
+- [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
