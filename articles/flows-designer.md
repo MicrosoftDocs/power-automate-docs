@@ -56,7 +56,7 @@ Legend:
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature might not be available in your region or environment yet.
 > - To use and learn about the availability of the Edit with Copilot (preview) designer, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
-> - [!INCLUDE [cross-geo-support](~/../shared-content/shared/preview-includes/cross-geo-support.md)]
+> - [!INCLUDE [cross-geo-support](~/../shared-content/shared/cross-geo-support.md)]
 > - For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
 ## Send feedback
