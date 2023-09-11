@@ -60,7 +60,7 @@ additionalContent:
           url: ./desktop-flows/create-flow.md
     - title: AI copilot capabilities
       links:
-        - text: Get started with Edit with Copilot (preview)
+        - text: Get started with Copilot in cloud flows (preview)
           url: ./get-started-with-copilot.md
         - text: Edit a flow using Edit with Copilot (preview)
           url: ./get-started-with-copilot.md#edit-a-flow-using-edit-with-copilot-preview
