@@ -750,7 +750,7 @@ This action doesn't include any exceptions.
 
 ### Using Excel files synchronized through OneDrive/ SharePoint
 
-Interaction with Excel files that are contained in folders synchronized in OneDrive/ SharePoint might result in an erroneous flow. Power Automate for desktop utilizes COM technology for Microsoft Excel interactions. OneDrive/ SharePoint is not fully compatible with Excel instances launched through COM. 
+Interaction with Excel files that are contained in folders synchronized in OneDrive/ SharePoint might result in an erroneous flow. Power Automate for desktop utilizes COM objects for Microsoft Excel interactions. OneDrive/ SharePoint is not fully compatible with Excel instances launched through COM. 
 
 In case you face such an error, use either one of the following workarounds: 
 
@@ -760,7 +760,8 @@ In case you face such an error, use either one of the following workarounds:
 
 or 
 
-*  Launch a new instance of Excel using the "Run application" action. The action should wait to complete and use a timeout that allows the Excel process to load completely, including any add-ins.
+* Launch a new instance of Excel using the "Run application" action. The action should wait to complete and use a timeout that allows the Excel process to load completely, including any add-ins.
+
 * Use the action "Attach to Excel" to attach to the new process
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
