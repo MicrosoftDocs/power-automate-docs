@@ -65,40 +65,15 @@ To set up the triggering approvals, follow these steps:
 
 1. Select **+New step**
 
-1. From list of connectors, select Microsoft Dataverse
+1. From list of connectors, select **Custom** then select **Approvals Kit**
 
-1. Select **Get a row by ID**
+1. Select **Start business approval process**
 
-1. Set **Table name** to **Approval Scenarios**
+1. Sign in to create a connection
 
-1. Set **Row ID** to the **Scenario ID** you have copied when setting a
-    new Approval Scenario.\
+1. Select the Workflow Process you want to start
 
-1. Select **+New step**
-
-1. From list of connectors, select Microsoft Dataverse
-
-1. Select **Add a** **new row**
-
-1. Set **Table name** to **Approval Core**
-
-1. Expand **Show advanced** **options**
-
-1. Set **Approval Scenario** to **OData Id** by selecting **OData Id**
-    from the dynamic content list
-
-1. Set **Request Amount** to **Amount** by selecting **Amount** from
-    the dynamic content list
-
-1. Set **Request Details** to **Details** by selecting **Details** from
-    the dynamic content list
-
-1. Set **Request Title** to **Name** by selecting **Name** from the
-    dynamic content list\
-    ![Graphical user interface, text, application, email Description
-    automatically
-    generated](media/image33.png){width="6.260416666666667in"
-    height="7.510416666666667in"}
+1. Set values for any application data (variables) required by the workflow
 
 1. Set the name of the flow where it's titled Untitled
 

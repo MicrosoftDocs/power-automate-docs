@@ -37,7 +37,7 @@ The Approvals Kit is a collection of components that are designed to help you ge
 
     - Administer approval processes
 
-  - Power Automate per user or per user with Attended RPA for:
+  - Power Automate Process license for:
   
     - Approve requests but DO NOT need to check progress between each approval step using the template
 
@@ -60,6 +60,8 @@ The Approvals Kit is a collection of components that are designed to help you ge
     - [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/)
 
     - [Office 365 Users](https://docs.microsoft.com/connectors/office365users/)
+    
+    - Approvals Kit custom connector
 
     - More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
 
