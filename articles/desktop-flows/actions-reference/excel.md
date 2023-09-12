@@ -746,4 +746,21 @@ Gets the name of the column.
 
 This action doesn't include any exceptions.
 
+## Known limitations
+
+### Using Excel files synchronized through OneDrive/ SharePoint
+
+Interaction with Excel files that are contained in folders synchronized in OneDrive/ SharePoint might result in an erroneous flow. Power Automate for desktop utilizes COM technology for Microsoft Excel interactions. OneDrive/ SharePoint is not fully compatible with Excel instances launched through COM. 
+
+In case you face such an error, use either one of the following workarounds: 
+
+* Make a local copy of the respective Excel file
+* Modify the local copy of the Excel file, using Power Automate for desktop's Excel automation actions
+* Override the Excel file copy synchronized through OneDrive/ Sharepoint with the local copy that includes the latest changes
+
+or 
+
+*  Launch a new instance of Excel using the "Run application" action. The action should wait to complete and use a timeout that allows the Excel process to load completely, including any add-ins.
+* Use the action "Attach to Excel" to attach to the new process
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
