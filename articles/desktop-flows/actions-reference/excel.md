@@ -5,7 +5,7 @@ author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 09/13/2023
-ms.author: marleon
+ms.author: dipapa
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
