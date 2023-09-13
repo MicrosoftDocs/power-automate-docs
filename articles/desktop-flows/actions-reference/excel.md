@@ -752,7 +752,7 @@ This action doesn't include any exceptions.
 
 Interaction with Excel files that are contained in folders synchronized in OneDrive/ SharePoint might result in an erroneous flow. Power Automate for desktop utilizes COM objects for Microsoft Excel interactions. OneDrive/ SharePoint is not fully compatible with Excel instances launched through COM. 
 
-In case you face such an error, use either one of the following workarounds: 
+For this reason, in case you try to open an Excel file stored under an OneDrive/ SharePoint directory you may face a **file not found** error. To resolve it, use either one of the following workarounds: 
 
 * Make a local copy of the respective Excel file
 * Modify the local copy of the Excel file, using Power Automate for desktop's Excel automation actions
