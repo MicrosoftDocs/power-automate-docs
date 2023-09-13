@@ -74,7 +74,7 @@ BODY:
 
 The above example contains placeholders:
 
-- `ENVIRONMENT_ID_URL`: The environment ID, with all separators removed, and the last character separated by a period. (Example: *37520647-dbdf-49fa-ba01-6134c14680c4 -> 37520647dbdf49faba016134c14680c.4*).
+- `ENVIRONMENT_ID_URL`: The environment ID, with all separators removed, and the last two characters separated by a period. (Example: *37520647-dbdf-49fa-ba01-6134c14680c4 -> 37520647dbdf49faba016134c14680.c4*).
 - `ENVIRONMENT_ID`: The environment ID.
 - CONNECTION_ID: The connection ID used to create the connection. It needs to be a valid GUID. (You can use the `New-Guid` PowerShell command to get this).
 - `MACHINE_ACCOUNT`: The username of the account used to open a Windows session.
