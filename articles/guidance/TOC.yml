@@ -170,6 +170,8 @@
       items:
         - name: Introduction
           href: ./business-approvals-templates/introduction.md
+        - name: Comparison
+          href: ./business-approvals-templates/approvals-kit-comparison.md
         - name: Setup
           href: ./business-approvals-templates/setup.md
         - name: Configuring preset approvals
