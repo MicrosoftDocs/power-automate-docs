@@ -25,11 +25,11 @@ The cloud flows designer with Copilot can perform the following actions:
 - Answer questions about your flow and product. For example, you can ask Copilot questions about your flow like, *What does my flow do?* You can also ask Copilot product questions like, *How do I access child flows?* and *How do I access licenses?*
 
 > [!IMPORTANT]
-
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
->- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
->- This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
->- More information: [Transparency notes for Power Automate](transparency-note.md), [Transparency note for Copilot data security and privacy in Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
+> - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
+> - More information: [Transparency notes for Power Automate](transparency-note.md), [Transparency note for Copilot data security and privacy in Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
 
 ## Prerequisites
 
@@ -43,17 +43,17 @@ You need a Power Platform environment in the United States or Preview (United St
 Follow these steps to create a flow using the cloud flows designer with Copilot.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Start describing your automation scenario.
+1. Start to describe your automation scenario.
 
-    As you're typing, the cloud flows designer with Copilot shows you a list of AI generated suggested flow descriptions.
+    As you type, the cloud flows designer with Copilot shows you a list of AI generated suggested flow descriptions.
 
     Alternatively, you can select **Create** > **Describe it to design it (preview)**.
 
-    :::image type="content" source="./media/get-started-with-copilot/copilot-home-example.png" alt-text="Screenshot of the 'Home' screen, where you can start building your flow with Copilot.":::
+    :::image type="content" source="./media/get-started-with-copilot/copilot-home-example.png" alt-text="Screenshot of the Home page, where you can start building your flow with Copilot.":::
 
     To learn how to write a good prompt, go to [How to write a good prompt](#how-to-write-a-good-prompt) in this article.
 
-1. Select a suggestion or use the scenario you created in step 1.
+1. Select a suggestion, or use the scenario you created in step 2.
 1. To accept the flow that Copilot created for you, select **Next**.
 
    If you want to see different suggestions, you can update your prompt in this step. Alternatively, if you want to see other options, select **This isn't what I'm looking for**.
@@ -97,14 +97,14 @@ This section describes some example scenarios of how you can interact with Copil
 You can use Edit with Copilot (preview) to change your existing flows. You don’t need to re-create a flow from scratch to take advantage of Edit with Copilot.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the left panel, select **My flows**.
-1. Find your flow, and then select the vertical ellipses (**&vellip;**) > **Edit with Copilot (preview)**.
+1. On the left navigation pane, select **My flows**.
+1. Find your flow, select the vertical ellipses (**&vellip;**), and then select **Edit with Copilot (preview)**.
   
-    :::image type="content" source="./media/get-started-with-copilot/copilot-edit.png" alt-text="Screenshot of how to edit an existing flow.":::
+    :::image type="content" source="./media/get-started-with-copilot/copilot-edit.png" alt-text="Screenshot that shows how to edit an existing flow.":::
 
     Alternatively, access the cloud flows designer with Copilot from the flow **Details** page of your existing flow by selecting the flow name from **My flows** > **Edit with Copilot (preview)**.
 
-    Your flow opens. You can now edit your flow using the cloud flows designer with Copilot.
+    Your flow opens. You can now edit your flow by using the cloud flows designer with Copilot.
 
 ## Frequently asked questions
 
@@ -112,7 +112,7 @@ Use this section to find answers to frequently asked questions.
 
 ### Why don’t I see the cloud flow designer with Copilot (preview) in my Power Automate experience?
 
-- Check if the environment you’re using is in the United States or Preview (United States) region. Your Power Platform admin can help review and verify.
+- Check if the environment you’re using is in the United States or Preview (United States) region. Your Microsoft Power Platform admin can help review and verify the region.
 - Ask your admin if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
 
 ### How do I create a Power Platform environment in preview region?
