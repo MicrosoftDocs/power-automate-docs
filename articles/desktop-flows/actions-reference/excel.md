@@ -760,7 +760,7 @@ In case you face such an error, use either one of the following workarounds:
 
 or 
 
-*  Launch a new instance of Excel using the **Run application** action. Make sure that you provide enough time in the **Timeout** property after choosing the option **Wait for application to load** in the **After application launch** property, allowing the Excel process to load completely, including any add-ins.
+*  Launch a new Excel instance using the **Run application** action. Make sure that you provide enough wait time between actions, allowing the Excel process to load completely, including any add-ins.
 * Use the action "Attach to Excel" to attach to the new process
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
