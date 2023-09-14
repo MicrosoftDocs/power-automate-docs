@@ -22,19 +22,19 @@ The Approvals Kit takes the solid foundation of the Approvals connector and enha
 - Handling employee absence
 - Accommodating various approval process versions
 - Publishing versioned workflows
-- Accounting for workdays and public holidays 
+- Accounting for workdays and public holidays
 
 Whether you're a seasoned workflow expert or just getting started, the Approvals Kit serves as a valuable resource to streamline your approval processes effectively.
 
 ## Feature Comparison
 
-|                    |Approvals Connector|Approvals Kit|
+|                    |[Approvals Connector](/connectors/approvals/)|Approvals Kit|
 |--------------------|-------------------|-------------|
 |Core use case       |Simple approvals without need for advance approval features|No code workflow designer with advanced features|
 |Core Product Feature|Yes                |No, requires install|
 |Trigger via Power Automate|Yes          |Yes|
 |Requires Azure Application Registration|No|Yes|
-|Premium Connector   |Yes                |Yes, requires custom connector|
+|Premium Connector(s)   |No                 |Yes, requires Dataverse and Custom connector|
 |Requires Dataverse  |No                 |Yes|
 |Requires Power App License|No           |Yes, to build and manage Approvals workflows|
 |Multi stage approvals|Not by default, requires multiple Cloud Flows or other custom implementation|Yes|

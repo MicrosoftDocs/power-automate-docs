@@ -49,18 +49,18 @@ The Approvals Kit is a collection of components that are designed to help you ge
   
   - Data Loss Prevention Policy categorized to be usable for the following connectors:
 
-    - [Approvals](https://docs.microsoft.com/connectors/approvals/)
+    - [Approvals](/connectors/approvals/)
 
-    - [Microsoft Dataverse](https://docs.microsoft.com/connectors/commondataserviceforapps/)
+    - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
 
-    - [Microsoft Teams](https://docs.microsoft.com/connectors/teams/)
+    - [Microsoft Teams](/connectors/teams/)
 
-    - [Office 365 Groups](https://docs.microsoft.com/connectors/office365groups/)
+    - [Office 365 Groups](/connectors/office365groups/)
 
-    - [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/)
+    - [Office 365 Outlook](/connectors/office365/)
 
-    - [Office 365 Users](https://docs.microsoft.com/connectors/office365users/)
-    
+    - [Office 365 Users](/connectors/office365users/)
+
     - Approvals Kit custom connector
 
     - More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
