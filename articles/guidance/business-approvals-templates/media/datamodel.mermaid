@@ -1,0 +1,25 @@
+%% ---------
+%%  https://mermaid.live/edit
+%% ---------
+erDiagram
+    "Business Approval Process" ||--o{ "Business Approval Data" : "input data"
+    "Business Approval Process" ||--o{ "Business Approval Stage" : stages
+    "Business Approval Stage" ||--o{ "Business Approval Node" : nodes
+    "Business Approval Stage" ||--1 "Business Approval Condition" : condition
+    "Business Approval Process" ||--o{ "Business Approval Version" : versions
+    "Business Approval Version" ||--o{ "Business Approval Published Workflow" : published
+
+    "Business Approval Version" ||--o{ "Business Approval Workflow" : instance
+    "Business Approval Version" ||--o{ "Business Approval Runtime Data" : data
+
+    "Business Approval Workflow" ||--o{ "Business Approval Runtime Stage Instance" : stages
+    "Business Approval Workflow" ||--o{ "Business Approval Runtime Data Instance" : data
+
+    "Business Approval Runtime Stage Instance" ||--o{ "Business Approval Runtime Node Instance" : nodes
+    "Business Approval Runtime Node Instance" ||--o{ "Business Approval Instance" : approvals
+
+    "Business Approval Instance" ||--o{ "Business Approval Instance Log" : logs
+    "Business Approval Instance" ||--o{ "Business Approval Instance Override" : overrides
+
+    "Business Approval Version" ||--o{ "Business Approval Runtime Stage" : stages
+    "Business Approval Runtime Stage" ||--o{ "Business Approval Runtime Node" : nodes

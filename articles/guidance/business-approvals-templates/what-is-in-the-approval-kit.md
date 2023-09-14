@@ -12,6 +12,15 @@ ms.reviewer: angieandrews
 
 # What’s in the Approvals Kit
 
+The Approvals Kit builds on the out of the box [Approvals Connector](/connectors/approvals/). The Power Platform solution includes a set of Power Apps, Power Automate and Dataverse components to make creating business approvals processed easier to author and trigger.
+
+Key components of the kit:
+
+- Process Designer: A Power App that allows Business users to create and version approval workflows with input application data, stages and conditions
+- Custom Connector: Provides a simple way for makers to use a Power Automate Trigger to start the process of a business approval based on the Power Platform connectors and actions
+- Dataverse: A set of custom tables that allow workflows to be defined and monitored
+- Power Automate Flows: A set of cloud flows that react to changes in the dataverse tables to manage the end to end approval process
+
 ## Custom Connector
 
 The Approvals Kit includes a custom connector to help the process of starting a new business approval process.
@@ -22,7 +31,7 @@ The custom connector provided as part of the kit uses [Custom code support](/con
 
 ### Dynamic Parameters
 
-The custom connector makes use of multiple code actions to provide the ability to get published workflows, get data fields and start a business approval process.
+The custom connector makes use of multiple open api actions to provide the ability to get published workflows, get data fields and start a business approval process.
 
 #### Get Published Workflows
 
