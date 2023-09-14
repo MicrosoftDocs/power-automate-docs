@@ -190,26 +190,24 @@ The template includes multiple core components that are used to manage the appro
 
   i.  Turn on: BACore \| Child \| Evaluate Rule
 
-  j.  Turn on: BACore \| Cleanup \-\- Remove Deactivated Records
+  j.  Turn on: BACore \| Daily \| Calculate Approval Timeouts
 
-  k.  Turn on: BACore \| Daily \| Calculate Approval Timeouts
+  k.  Turn on: BACore \| Publish Process
 
-  l.  Turn on: BACore \| Publish Process
+  l.  Turn on: BACore \| Runtime \-\- Start Approval
 
-  m.  Turn on: BACore \| Runtime \-\- Start Approval
+  m.  Turn on: BACore \| Runtime \-\- Start Node
 
-  n.  Turn on: BACore \| Runtime \-\- Start Node
+  n.  Turn on: BACore \| Runtime \-\- Start Stage
 
-  o.  Turn on: BACore \| Runtime \-\- Start Stage
+  o.  Turn on: BACore \| Runtime \-\- Start Workflow
 
-  p.  Turn on: BACore \| Runtime \-\- Start Workflow
+  p.  Turn on: BACore \| Runtime \-\- Update Approval
 
-  q.  Turn on: BACore \| Runtime \-\- Update Approval
+  q.  Turn on: BACore \| Runtime \-\- Update Node Instance
 
-  r.  Turn on: BACore \| Runtime \-\- Update Node Instance
+  r.  Turn on: BACore \| Runtime \-\- Update Stage Instance
 
-  s.  Turn on: BACore \| Runtime \-\- Update Stage Instance
-
-  t.  Turn on: BACore \| Sync Approver OOF
+  s.  Turn on: BACore \| Sync Approver OOF
 
 1. You have completed installing the core components. Your next step is to set up the approval processes in How to use Approvals Kit section.
