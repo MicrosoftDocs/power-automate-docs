@@ -51,9 +51,19 @@ To enable the WAM functionality in Power Automate for desktop, modify the [appro
 
 ## Resolve failed connection between Power Automate components
 
-In some cases, Power Automate may display an error indicating that the connection between its components couldn't be established.
+On startup, Power Automate shows the following error message:
 
-The cause of this error can be another process running a named pipes server in the same machine. This process probably runs with elevated rights using the localhost endpoint. As a result, it blocks other applications from using the endpoint.
+**Connection error: The connection between Power Automate components couldn't be established. A required named pipe is in use by another application. Contact your IT administrator.**
+
+This issue could occur because there are two (2) Power Automate for desktop applications installed on the machine (one installed from Microsoft Store and one from the MSI installer), and each one is on a different version. This is not a supported scenario due to conflicts between the installations.
+
+If your version of Power Automate for desktop is **2.34.176.23181 or higher** (Microsoft Store version **10.0.7118.0 or higher**), then follow the steps below to uninstall either one of the two apps and resolve the issue:
+
+1. Go to Windows Start Menu > Settings > Apps > Installed apps
+1. Search for **Power Automate**
+1. Uninstall either one of the two – either Power Automate (Microsoft Store installation) or Power Automate for desktop (MSI installation)
+
+If your version of Power Automate for desktop is **less than 2.34.176.23181** (Microsoft Store version **less than 10.0.7118.0**), then this error may occur because another process is running a named pipes server in the same machine. This process probably runs with elevated rights using the localhost endpoint. As a result, it blocks other applications from using the endpoint.
 
 To identify whether another process is indeed the issue:
 
