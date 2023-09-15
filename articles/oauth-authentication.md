@@ -27,7 +27,7 @@ You can use the **When an HTTP request is received** trigger to trigger workflow
 The trigger has three modes for the authentication parameter:
 
 1. **Any user in my tenant**: Ensures that any user in the same tenant as the maker is able to trigger this workflow. This is the default setting for any new flows.
-1. **Specific users in my tenant**: Ensures that only specific user IDs from the same tenant can only trigger this workflow. You can provide email addresses of the specific users in the **Allowed users** field. You can also provide object IDs of service principal users if you intend to use this flow to be triggered only by SPN (service pricipal name) users.
+1. **Specific users in my tenant**: Ensures that only specific user IDs from the same tenant can only trigger this workflow. You can provide email addresses of the specific users in the **Allowed users** field. You can also provide object IDs of service principal users if you intend to use this flow to be triggered only by SPN (service principal name) users.
 1. **Anyone**: Legacy setting for this trigger that has open access without any additional authentication support. Anyone can trigger this workflow if they have access to the URL and the associated JSON schema.
 
 > [!NOTE]
@@ -41,11 +41,11 @@ Depending on whether you're using the classic cloud flow designer or the new clo
 
 If you're using the classic cloud flow designer, the parameter shows on the card.
 
-:::image type="content" source="./media/oauth-authentication/classic-oauth-parameter.png" alt-text="<alt text>":::
+:::image type="content" source="./media/oauth-authentication/classic-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the classic designer.":::
 
 If you're using the new cloud flow designer with Copilot, the parameter shows on the configuration panel to the left.
 
-:::image type="content" source="./media/oauth-authentication/v3-oauth-parameter.png" alt-text="<alt text>":::
+:::image type="content" source="./media/oauth-authentication/v3-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the designer with Copilot.":::
 
 ### See also
 
