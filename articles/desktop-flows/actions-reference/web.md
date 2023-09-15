@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
+ms.date: 09/15/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -89,7 +89,7 @@ Downloads text or a file from the web and stores it.
 |Download from web error|Indicates a problem downloading from web|
 
 ### Known issues
-- NTLM Authentication is not currently supported for web requests in Power Automate for desktop (PAD)
+- NTLM Authentication is currently not supported for web requests in Power Automate for desktop.
 
 ## <a name="invokesoapserviceaction"></a> Invoke SOAP web service
 
@@ -141,7 +141,7 @@ Invokes a method from a SOAP web service.
 |Invalid header in custom headers|Indicates that some custom headers were invalid|
 
 ### Known issues
-- NTLM Authentication is not currently supported for web requests in Power Automate for desktop (PAD)
+- NTLM Authentication is currently not supported for web requests in Power Automate for desktop.
 
 ## <a name="invokewebservicebase"></a> Invoke web service
 
@@ -191,6 +191,6 @@ Invokes a web service by sending data and retrieves the response from the web se
 |Invalid header in custom headers|Indicates that some custom headers were invalid|
 
 ### Known issues
-- NTLM Authentication is not currently supported for web requests in Power Automate for desktop (PAD)
+- NTLM Authentication is currently not supported for web requests in Power Automate for desktop.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
