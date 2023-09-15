@@ -129,14 +129,14 @@ Once you have defined your first stage, you optionally can add the first node.
     a.  **User** - you can select a specific user/employee
 
     b.  **Dynamic** - the user information is automatically retrieved and set as approver
+    
+    - **Manager of Initiator** - Information of whoever started the approval request will be used to identify the manager automatically and be assigned as approver
 
-        i.  **Manager of Initiator** - Information of whoever started the approval request will be used to identify the manager automatically and be assigned as approver
+    - **Manager of \[Request data field\]** - Email address of a field you specified in Application Data step will be used to identify the manager automatically and be assigned as approver. The field must be defined as Email type to select this option.
 
-        ii. **Manager of \[Request data field\]** - Email address of a field you specified in Application Data step will be used to identify the manager automatically and be assigned as approver. The field must be defined as Email type to select this option.
+    - **Manager of Last Approver** - Information of the last approver is automatically retrieved to identify the manager automatically and be assigned as approver.
 
-        iii. **Manager of Last Approver** - Information of the last approver is automatically retrieved to identify the manager automatically and be assigned as approver.
-
-        iv. **Use Request Data Field** - Email address of a field you specified in Application Data step will be used directly.
+    - **Use Request Data Field** - Email address of a field you specified in Application Data step will be used directly.
 
 ![Screenshot of Process Advisor approver](./media/process-designer-approver.png)
 
@@ -198,9 +198,9 @@ After adding the first stage of the workflow, you can add conditional approval b
 
     a.  Select either **Static value** or **Request Data**
 
-        i.  **Static value** - you must define the condition yourself
+    - **Static value** - you must define the condition yourself
 
-        ii. **Request Data** - the system will compare the Request
+    - **Request Data** - the system will compare the Request
             Data defined in step 5 against what request data you define
             here
 
@@ -236,9 +236,9 @@ After adding the first stage of the workflow, you can add conditional approval b
 
     a.  Select either **Static value** or **Request Data**
 
-        i.  **Static value** - you must define the condition yourself
+    - **Static value** - you must define the condition yourself
 
-        ii. **Request Data** - the system will compare the Request
+    - **Request Data** - the system will compare the Request
             Data defined in step 4 against what request data you define
             here
 
