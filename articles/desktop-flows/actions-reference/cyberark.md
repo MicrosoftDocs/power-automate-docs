@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
+ms.date: 09/15/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -73,6 +73,6 @@ Retrieves a password for a specific application from CyberArk.
 |Error response from web request|Indicates that the web request returned an error response|
 
 ### Known issues
-- NTLM Authentication is not currently supported for web requests in Power Automate for desktop
+- NTLM Authentication is currently not supported for web requests in Power Automate for desktop.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
