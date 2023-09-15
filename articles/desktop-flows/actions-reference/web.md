@@ -87,6 +87,9 @@ Downloads text or a file from the web and stores it.
 |Directory doesn't exist|Indicates that a required directory doesn't exist|
 |Download from web error|Indicates a problem downloading from web|
 
+### Known issues
+- NTLM Authentication is not currently supported for web requests in Power Automate for desktop (PAD)
+
 ## <a name="invokesoapserviceaction"></a> Invoke SOAP web service
 
 Invokes a method from a SOAP web service.
@@ -136,6 +139,9 @@ Invokes a method from a SOAP web service.
 |Invoke SOAP service error|Indicates a problem invoking the SOAP service|
 |Invalid header in custom headers|Indicates that some custom headers were invalid|
 
+### Known issues
+- NTLM Authentication is not currently supported for web requests in Power Automate for desktop (PAD)
+
 ## <a name="invokewebservicebase"></a> Invoke web service
 
 Invokes a web service by sending data and retrieves the response from the web service.
@@ -182,5 +188,8 @@ Invokes a web service by sending data and retrieves the response from the web se
 |Invoke web service error|Indicates a problem invoking the web service|
 |Directory doesn't exist|Indicates that a required directory doesn't exist|
 |Invalid header in custom headers|Indicates that some custom headers were invalid|
+
+### Known issues
+- NTLM Authentication is not currently supported for web requests in Power Automate for desktop (PAD)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -71,4 +71,7 @@ Retrieves a password for a specific application from CyberArk.
 |Timeout expired|Indicates that the request timed out|
 |Error response from web request|Indicates that the web request returned an error response|
 
+### Known issues
+- NTLM Authentication is not currently supported for web requests in Power Automate for desktop
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
