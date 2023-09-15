@@ -22,6 +22,8 @@
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
+  - name: Add OAuth authentication for HTTP request triggers
+    href: oauth-authentication.md
   - name: Get help from the Power Virtual Agents bot
     href: contextual-help-bot.md
   - name: Find it with unified search
