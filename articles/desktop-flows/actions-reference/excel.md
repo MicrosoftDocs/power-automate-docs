@@ -4,13 +4,14 @@ description: See all the available Excel actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/13/2023
+ms.date: 09/15/2023
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+- AntoniosDanas 
 search.audienceType: 
   - flowmaker
   - enduser
