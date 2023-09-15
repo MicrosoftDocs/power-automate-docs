@@ -1,12 +1,12 @@
 ---
 title: HTTP actions reference
 description: See all the available HTTP actions.
-author: georgiostrantzas
+author: jpapadimitriou
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 09/15/2023
-ms.author: marleon
+ms.author: dipapa
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
