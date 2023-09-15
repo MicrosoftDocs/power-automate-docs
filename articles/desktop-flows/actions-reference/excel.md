@@ -4,13 +4,14 @@ description: See all the available Excel actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/13/2023
+ms.date: 09/15/2023
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+- AntoniosDanas 
 search.audienceType: 
   - flowmaker
   - enduser
@@ -760,7 +761,8 @@ For this reason, when you try to open an Excel file stored under a OneDrive or S
 * Override the Excel file copy synchronized through OneDrive/ Sharepoint with the local copy that includes the latest changes.
 
 #### Workaround 2
-
+>[!NOTE]
+> This workaround can be used in general when the **Launch Excel** action fails to execute.
 * Open a new Excel instance using the **Run application** action. Make sure that you provide enough wait time between actions, allowing the Excel process to load completely, including any add-ins.
 * Use the action **Attach to Excel** to attach to the new process.
 
