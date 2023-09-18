@@ -37,15 +37,23 @@ If you're restricting the workflow to be triggered only by authenticated users, 
 
 ## View the parameter in the designer
 
-Depending on whether you're using the classic cloud flows designer or the new cloud flows designer with Copilot, the parameter appears in a different location. To identify which designer you’re using, go to the **Note** section in [Understand the new cloud flows designer with Copilot (preview)](flows-designer.md).
+Depending on your designer version, parameters appear in different locations.
 
-If you're using the classic cloud flows designer, the parameter shows on the card.
+[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+
+# [Classic designer](#tab/classic-designer)
+
+The parameter shows on the card.
 
 :::image type="content" source="./media/oauth-authentication/classic-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the classic designer.":::
 
-If you're using the new cloud flows designer with Copilot, the parameter shows on the configuration panel to the left.
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+
+The parameter shows on the configuration panel to the left.
 
 :::image type="content" source="./media/oauth-authentication/v3-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the designer with Copilot.":::
+
+---
 
 ### See also
 
