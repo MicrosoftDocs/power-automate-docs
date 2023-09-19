@@ -1,6 +1,6 @@
 ---
-title: Understand the new cloud flows designer with Copilot (preview)
-description: Learn about the components in the cloud flows designer with Copilot (preview) designer.
+title: Understand the cloud flows designer 
+description: Learn about the components in the cloud flows designer.
 services: ''
 suite: flow
 author: kisubedi
@@ -9,7 +9,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 09/08/2023
+ms.date: 10/01/2023
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -17,47 +17,37 @@ search.audienceType:
 ms.reviewer: angieandrews
 ---
 
-# Understand the new cloud flows designer with Copilot (preview)
+# Understand the cloud flows designer
 
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
-
-You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer with Copilot. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
+You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer with copilot capabilities. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
 > [!NOTE]
-> Here are some visual queues that tell you that you're using the cloud flows designer with Copilot:
-> - The Copilot pane appears on the right.
+> Here are some visual queues that tell you that you're using the cloud flows designer with copilot capabilities:
 > - The cards in the flow are small.
 > - The standalone action configuration pane appears on the left when you select a card.
 >
-> More information: [Differences between the classic cloud flows designer and the new cloud flows designer with Copilot](#differences-between-the-classic-cloud-flows-designer-and-the-new-cloud-flows-designer-with-copilot)
+> More information: [Identify differences between the classic cloud flows designer and the designer with copilot capabilities](#identify-differences-between-the-classic-cloud-flows-designer-and-the-designer-with-copilot-capabilities)
 
 ## Overview
 
-The legend below the following screenshot describes the features of the cloud flows designer with Copilot.
+The legend below the following screenshot describes the features of the cloud flows designer with copilot capabilities.
 
 :::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer with Copilot.":::
 
 Legend:
 
 1. **Left arrow:** Return to the previous screen.
-1. [**Send Feedback button:**](#send-feedback) Send us feedback on your flow creation experience, or general comments for the cloud flows designer with Copilot.
+1. [**Send Feedback button:**](#send-feedback) Send us feedback on your flow creation experience, or general comments for the cloud flows designer with copilot capabilities.
 1. **Action/trigger name:** The action or trigger card that's selected in your flow on the center of the screen.
 1. [**More commands:**](#more-commands) Add a note to the selected card or delete it.
 1. **Collapse:** Hide this pane. When it's collapsed, the **Expand** icon (**>>**) appears in the upper-left corner. To show the panel again, select **>>**.
-1. [**Copilot button:**](get-started-with-copilot.md) Show or hide the Copilot pane. The Copilot pane appears by default when the cloud flows designer with Copilot opens.
+1. [**Copilot button:**](get-started-with-copilot.md) Show or hide the **Copilot** pane. It appears by default when the cloud flows designer with copilot capabilities opens.
 1. [**Save button:**](#save-button) Save your flow.
 1. [**Test button:**](#test-button) Test your flow to make sure it works as you intended.
-1. [**Action configuration pane:**](#action-configuration-pane) Once you select an action card to configure in the canvas, the action configuration pane opens to the left of the cloud flows designer with Copilot.
+1. [**Action configuration pane:**](#action-configuration-pane) Once you select an action card to configure in the canvas, the action configuration pane opens to the left of the cloud flows designer with copilot capabilities.
 1. [**Canvas**](#canvas): The canvas is where you build your flow. It's free-flowing, which allows for easier navigation.
 1. [**Copilot pane:**](get-started-with-copilot.md) Copilot stays by you in your flow editing and fit-and-finish journey. It can help you update and make changes to your flow based on your conversational style prompt. It can also help answer flow and product related  questions.
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature might not be available in your region or environment yet.
-> - To use and learn about the availability of the Edit with Copilot (preview) designer, go to [Prerequisites](get-started-with-copilot.md#prerequisites).
-> - [!INCLUDE [cross-geo-support](~/../shared-content/shared/cross-geo-support.md)]
-> - For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
 ## Send feedback
 
@@ -155,20 +145,25 @@ The last option in the zooming icons is the minimap. Select this icon to focus o
 
 :::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot of the four zoom icons.":::
 
-## Differences between the classic cloud flows designer and the new cloud flows designer with Copilot
+## Identify differences between the classic cloud flows designer and the designer with copilot capabilities
 
-With the cloud flows designer with Copilot, you can use natural language to tell Copilot what you want to do and it will help you get started.
+To quickly identify which designer version you're using, ask yourself the following questions:
 
-For example, Copilot can help you with the following tasks:
-- Create a flow from scratch
-- Edit and improve a flow
-- Learn about how your flow works
+- Are the action cards on the flow  small or large?
+- Is the action configuration pane inline or in a separate pane?
 
-Your cards on a flow that uses the cloud flows designer with Copilot are smaller than the cards on a flow that uses the classic cloud flows designer. One of the reasons is that smaller cards allow you a larger canvas area to display complex flows. To allow for the small cards, the configuration items associated with each card are available in the standalone Action configuration pane on the left when you select a card.
+The cloud flow designer with copilot capabilities has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
 
-To compare this view to the classic cloud flows designer, you can get the same configuration items directly on the card.  
+## Limitation
+
+You might notice that some functionalities that were in the classic designer aren't availabile in the cloud flows designer with copilot capabilities. For example, the designer doesn't support constructs such as SAP connector, hybrid triggers (for a selected *X*), a comment, Power Pages, or a Power Apps v1 trigger in your flow.
+
+If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the designer with copilot capabilities.
+
+:::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the four zoom icons.":::
 
 ### See also
 
 To learn more, go to [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md).
+
 
