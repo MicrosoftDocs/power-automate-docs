@@ -1,7 +1,6 @@
 ---
-title: Understand the cloud flows designer 
-description: Learn about the components in the cloud flows designer.
-services: ''
+title: Understand the cloud flows designer with copilot capabilities
+description: Learn about the components in the cloud flows designer with copilot capabilities.
 suite: flow
 author: kisubedi
 contributors:
@@ -9,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/01/2023
+ms.date: 10/02/2023
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -17,7 +16,7 @@ search.audienceType:
 ms.reviewer: angieandrews
 ---
 
-# Understand the cloud flows designer
+# Understand the cloud flows designer with copilot capabilities
 
 You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer with copilot capabilities. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
@@ -47,7 +46,6 @@ Legend:
 1. [**Action configuration pane:**](#action-configuration-pane) Once you select an action card to configure in the canvas, the action configuration pane opens to the left of the cloud flows designer with copilot capabilities.
 1. [**Canvas**](#canvas): The canvas is where you build your flow. It's free-flowing, which allows for easier navigation.
 1. [**Copilot pane:**](get-started-with-copilot.md) Copilot stays by you in your flow editing and fit-and-finish journey. It can help you update and make changes to your flow based on your conversational style prompt. It can also help answer flow and product related  questions.
-
 
 ## Send feedback
 
@@ -160,10 +158,10 @@ You might notice that some functionalities that were in the classic designer are
 
 If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the designer with copilot capabilities.
 
-:::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the four zoom icons.":::
+:::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the 'Switch to classic designer' button below the menu.":::
 
 ### See also
 
-To learn more, go to [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md).
+To learn more, go to [Get started with Copilot in cloud flows](get-started-with-copilot.md).
 
 
