@@ -2,14 +2,14 @@
 title: Get started with triggers
 description: Learn about triggers in Power Automate.
 author: PriyaKodukula
+contributors:
+  - PriyaKodukula
+  - kisubedi
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 10/02/2023
 ms.author: prkoduku
-contributors:s
-  - prkoduku
-  - kisubedi
-  - v-aangie
 ms.reviewer: angieandrews
 ms.collection: get-started
 ---
