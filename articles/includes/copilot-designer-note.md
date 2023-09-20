@@ -1,2 +1,2 @@
 > [!NOTE]
-> Power Automate uses either the classic cloud flows designer or the cloud flows designer with Copilot. To identify which designer you’re using, go to the **Note** section in [Understand the new cloud flows designer with Copilot (preview)](../flows-designer.md).
+> Power Automate uses either the classic cloud flows designer or the cloud flows designer with Copilot. To identify which designer you’re using, go to the **Note** section in [Understand the cloud flows designer with copilot capabilities](../flows-designer.md).

@@ -4,9 +4,9 @@ description: Learn about triggers in Power Automate.
 author: PriyaKodukula
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 ms.author: prkoduku
-contributors:
+contributors:s
   - prkoduku
   - kisubedi
   - v-aangie
@@ -126,7 +126,7 @@ Your flow can generate expressions for you.
 
 1. Remove the **Filter array** action.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
