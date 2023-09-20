@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/18/2023
+ms.date: 10/02/2023
 ms.author: rakrish
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -47,7 +47,7 @@ The parameter shows on the card.
 
 :::image type="content" source="./media/oauth-authentication/classic-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the classic designer.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 The parameter shows on the configuration panel to the left.
 
