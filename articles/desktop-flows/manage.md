@@ -58,7 +58,7 @@ Follow these steps to share a desktop flow:
 1. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 
     - **Co-owner**: This access level gives the co-owner full permissions to the desktop flow. They can edit, share, and delete the desktop flow.
-    - **User**: This access level gives permission to only use that desktop flow in a cloud flow. No edit, rename, delete or share permissions are possible with this access. Alternatively, those users can create a copy of the desktop flow using the **Save as** option, and work independently.
+    - **User**: This access level gives permission to only use that desktop flow in a cloud flow and run it locally with Power Automate for desktop. No edit, rename, delete or share permissions are possible with this access. Alternatively, those users can create a copy of the desktop flow using the **Save as** option, and work independently.
 
 1. Select **Save**.
 

@@ -9,7 +9,7 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: napienko
+ms.author: kisubedi
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
@@ -48,8 +48,8 @@ The flow performs the following steps:
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
->[!IMPORTANT]
->Always follow the [best practices for SharePoint security](/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
+> [!IMPORTANT]
+> Always follow the [best practices for SharePoint security](/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
 
 ## Prerequisites
 
@@ -103,13 +103,9 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 >
 > If your scenario requires it, you can attach files to your approval requests that use Microsoft Dataverse.
 
-## Add a condition
-
-[!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
-
 ## Add an email action for approvals
 
-Follow these steps to send an email if the vacation request is approved:
+Follow these steps to send an email if the vacation request is approved.
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
@@ -157,7 +153,7 @@ If it's likely that your flow will run for more than 30 days, consider storing y
 
 To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
 
->[!TIP]
+> [!TIP]
 > If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval request is completed.
 
 ## Cancel an approval request
@@ -167,10 +163,10 @@ Sometimes you might want to cancel an approval request that you've sent. Possibl
 1. Select the approval
 1. Select **Cancel approval** in the side pane.
 
->[!TIP]
->You can always select the **History** tab to view the approval requests that you've canceled.
+> [!TIP]
+> You can always select the **History** tab to view the approval requests that you've canceled.
 
->[!NOTE]
+> [!NOTE]
 > The cancel feature is supported on the **Create an approval (v2)** action.
 
 ## Request approvals from guest users
