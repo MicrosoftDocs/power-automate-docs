@@ -1,7 +1,7 @@
 ---
 title: Use flows with Excel for the web
 description: Learn how to use the flows feature in Excel for the web.
-ms.date: 07/20/2023
+ms.date: 09/20/2023
 author: sbasi19
 contributors:
   - sbasi19
