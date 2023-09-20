@@ -23,7 +23,7 @@ ms.date: 09/18/2023
 
 # Use the Power Automate plugin for ChatGPT
 
-The **Power Automate plugin for ChatGPT** allows you to create, list, and run  cloud flows directly from ChatGPT conversations. You can use the plugin to create instant, automated, or scheduled flows that run outside of ChatGPT, or use it to run flows that have the  **Run from Copilot** trigger from the **Copilot Plugins** connector.
+The **Power Automate plugin for ChatGPT** allows you to create, list, and run  cloud flows directly from ChatGPT conversations. You can use the plugin to create instant, automated, or scheduled flows that run outside of ChatGPT, or use it to run flows that have the  **Run from Copilot** trigger from the **Skills Plugins** connector.
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ When you use a prompt that mentions creating a flow or automation, ChatGPT uses 
 * Help me create an automation where I get notified when my manager sends me a high profile email
 * Create a flow that sends me an email when an item is added to a folder in SharePoint
 
-![A screenshot of a conversation with ChatGPT where the Power Automate plugin is being used to create a flow that sends a notification when the user's manager sends them a high priority email.](image-2.png)
+![A screenshot of a conversation with ChatGPT where the Power Automate plugin is being used to create a flow that sends a notification when the user's manager sends them a high priority email.](./media/chatGPT/Create-flow.png)
 
 ## Create flows to run from ChatGPT conversations
 
@@ -61,11 +61,11 @@ Use the Copilot connector's **Run from Copilot** trigger in a cloud flow to crea
 1. Select **Create** from the left-pane, and then, select **Instant cloud flow**.
 1. Select the **Run from Copilot** trigger and select **Create**. If you've added another trigger to your flow, you can delete it and search for **Run from Copilot** to replace it.
 1. Add actions to your flow such as the Outlook connector's [Send an email (V2)](/connectors/office365/#send-an-email-(v2)).
-1. Save the flow and test or run it at least once. The flow is now available from ChatGPT. ChatGPT uses the title and description of the flow to determine which flow you're referring to from a prompt.
+1. Save the flow and test or run it at least once. The flow is now available from ChatGPT. ChatGPT uses the title and description of the flow to determine which flow you're referring to from a prompt. Note only tested flows show up on ChatGPT so please ensure the flow runs before trying it in ChatGPT
 
 The following screenshot shows an example flow that sends an email using the Outlook connector:
 
-![Example flow using the "Run from Copilot" trigger, the Outlook connector's "Send an email (V2)" action, and the "Respond to Copilot" action.](image-3.png)
+![Example flow using the "Run from Copilot" trigger, the Outlook connector's "Send an email (V2)" action, and the "Respond to Copilot" action.](./media/chatGPT/Skill-flow.png)
 
 ## Use the plugin to list and run flows
 
@@ -84,15 +84,13 @@ Considerations for control and privacy for cloud flows being invoked from ChatGP
 
 ## Environment support
 
-Currently the flows that are created and run need to be in the tenants default environment. We're working on a setup experience for the plugin that will allow users to choose nondefault environments to associate the plugin with.
+Currently the flows that are created and run need to be in the tenants default environment. We're working on a setup experience for the plugin that will allow users to choose non-default environments to associate the plugin with.
 
 
 ## Frequently asked questions
 
-* What is the Copilot Plugins connector?
-  * The Copilot Plugins connector is a new built-in connector that includes the **Run from Copilot** trigger and **Respond to Copilot** action. It enables ChatGPT and Microsoft Copilots to discover and run cloud flows separately from your other flows.
-* Can I run long-running flows from ChatGPT?
-  * When using **Run from Copilot** trigger to run flows from ChatGPT and the **Respond to Copilot** action is also used, the actions executing before the response must complete within two minutes. Flows that run asynchronously without a response back to Copilot don't have a time limitation.
+* What is the Skills Plugins connector?
+  * The Skills Plugins connector is a new built-in connector that includes the **Run from Copilot** trigger and **Respond to Copilot** action. It enables ChatGPT and Microsoft Copilots to discover and run cloud flows separately from your other flows.
 * How can I manage what connectors and actions are available to flows run from ChatGPT?
   * [Power Platform data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention) provide control over which connectors and actions can be used by cloud flows, including flows with the **Run from Copilot** trigger. Admins can manage these policies from the [Power Platform Admin Center](https://admin.powerplatform.com).
 * Are all the flows in my tenant and Power Platform environments shared with ChatGPT?
