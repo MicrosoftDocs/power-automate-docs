@@ -103,8 +103,6 @@ You will need a solution with two flows.
 
 We are working to address the following known issues and limitations.
 
-1. If you block the HTTP Request connector via data loss prevention (DLP), child flows are also blocked because child flows are implemented using the HTTP connector. Work is underway to separate DLP enforcement for child flows so that they are treated like other cloud flows.
-
-1. You must create the parent flow and all child flows **directly** in the same solution. If you import a flow into a solution, you will get unexpected results.
+1. You should create the parent flow and all child flows **directly** in the same solution. If you import a flow into a solution, you may get unexpected results.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
