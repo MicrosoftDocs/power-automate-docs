@@ -55,7 +55,7 @@ When you use a prompt that mentions creating a flow or automation, ChatGPT uses 
 
 ## Create flows to run from ChatGPT conversations
 
-Use the Copilot connector's **Run from Copilot** trigger in a cloud flow to create a flow that you can run from a ChatGPT conversation.
+ The **Run from copilot**  trigger provides a way for you to create the equivalent of plugins for ChatGPT which can use any of the over 1000+ connectors in the Power Automate ecosystem. To create a flow that can be used from a ChatGPT conversation use the following steps: 
 
 1. Go to [Power Automate](https://make.powerautomate.com).
 1. Select **Create** from the left-pane, and then, select **Instant cloud flow**.
