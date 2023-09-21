@@ -78,7 +78,7 @@ When you use a prompt that mentions creating a flow or automation, ChatGPT uses 
 
 The following screenshot shows an example flow that sends an email using the Outlook connector:
 
-:::image type="content" source="media/use-chatgpt-plugin/skill-flow.png" alt-text="Example flow using the "Run from Copilot" trigger, the Outlook connector's "Send an email (V2)" action, and the "Respond to Copilot" action." border="true":::
+:::image type="content" source="media/use-chatgpt-plugin/skill-flow.png" alt-text="Example flow using the Run from Copilot trigger, the Outlook connector's Send an email V2 action, and the Respond to Copilot action." border="true":::
 
 ## Use the plugin to list and run flows
 
