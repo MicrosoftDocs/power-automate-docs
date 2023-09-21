@@ -102,9 +102,14 @@ Currently the flows that are created and run need to be in the tenants default e
 
 ## Frequently asked questions
 
-* What is the Skills Plugins connector?
-  * The Skills Plugins connector is a new built-in connector that includes the **Run from Copilot** trigger and **Respond to Copilot** action. It enables ChatGPT and Microsoft Copilots to discover and run cloud flows separately from your other flows.
-* How can I manage what connectors and actions are available to flows run from ChatGPT?
-  * [Power Platform data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention) provide control over which connectors and actions can be used by cloud flows, including flows with the **Run from Copilot** trigger. Admins can manage these policies from the [Power Platform Admin Center](https://admin.powerplatform.com).
-* Are all the flows in my tenant and Power Platform environments shared with ChatGPT?
-  * No, only flows that use the **Run from Copilot** trigger are visible to ChatGPT. Even with those flows only the name and description of the flow are accessible in order for ChatGPT to determine when to invoke the flow.
+### What is the Skills Plugins connector?
+
+The Skills Plugins connector is a new built-in connector that includes the **Run from Copilot** trigger and **Respond to Copilot** action. It enables ChatGPT and Microsoft Copilots to discover and run cloud flows separately from your other flows.
+
+### How can I manage what connectors and actions are available to flows run from ChatGPT?
+
+[Power Platform data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention) provide control over which connectors and actions can be used by cloud flows, including flows with the **Run from Copilot** trigger. Admins can manage these policies from the [Power Platform Admin Center](https://admin.powerplatform.com).
+
+### Are all the flows in my tenant and Power Platform environments shared with ChatGPT?
+
+No, only flows that use the **Run from Copilot** trigger are visible to ChatGPT. Even with those flows only the name and description of the flow are accessible in order for ChatGPT to determine when to invoke the flow.
