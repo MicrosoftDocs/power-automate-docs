@@ -1,12 +1,12 @@
 ---
 title: Silent registration for machines
 description: This article describes how to use a mass deployment tool that allows you to easily install Power Automate on multiple machines.
-author: georgiostrantzas
+author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/13/2023
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 09/07/2023
+ms.author: quseleba
+ms.reviewer: quseleba
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -88,37 +88,42 @@ To silently register your machine in Power Automate with the service principal a
 
 Connection arguments (for service principal account):
 
-   1. Applicationid: The application to use.
+   1. `Applicationid`: The application to use.
 
-   1. Clientsecret: The secret of the applicationid (you can also use the certificateThumbprint). You shouldn't use this input as an input to the command line. See the “Secure input” section to see options you can choose to provide it.
+   1. `Clientsecret`: The secret of the `applicationid` (you can also use the certificateThumbprint). You shouldn't use this input as an input to the command line. See the “Secure input” section to see options you can choose to provide it.
 
-   1. Tenantid: The tenant identifier to use.  
+   1. `Tenantid`: The tenant identifier to use.  
 
 Machine registration arguments:
 
-   1. Environmentid (optional): The environment where the machine will be registered. If not provided, the machine is registered in the default environment. You can retrieve it in the URL of Power Automate.
+   1. `Environmentid` (optional): The environment where the machine will be registered. If not provided, the machine is registered in the default environment. You can retrieve it in the URL of Power Automate.
 
    1. Machine name (optional): The name of the registered machine.
 
    1. Machine description (optional): The description of the registered machine.
+     
+   1. `force` (optional): The force flag used to override an existing registration. Overriding a registration will break existing connections to the machine.
 
-        ```CMD
-        .\PAD.MachineRegistration.Silent.exe -register -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid 
-        ```
+      >[!NOTE]
+      > "force" argument can be really useful in case your existing machine is in a bad state with no other available environment to unregister/re-register your machine.
+
+      ```CMD
+      .\PAD.MachineRegistration.Silent.exe -register -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid 
+      ```
 
 >[!NOTE]
 >If you decide to use an Azure AD account, you can specify the username: -username [UPN] instead of service principal account arguments
 
 ## Silently join a machine group
 
->[!NOTE]
->You cannot create a machine group silently. You'll need to create it from the portal before adding machines silently.
+> [!NOTE]
+> You can't create a machine group silently. You'll need to create it from the portal (and share it with your application user if you're using a service principal) before adding machines silently.
 
-To join a group silently with the service principal account, use the join group operation -joinmachinegroup  with the following arguments:
+To join a group silently with the service principal account, use the join group operation -`joinmachinegroup`  with the following arguments:
 
-1. Environmentid: The environment where the machine group is registered. You can retrieve it in the URL of Power Automate.
-1. Groupid: The ID of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
-1. Grouppassword: The password of your machine. If this machine is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. You shouldn't use this input as an input to the command line. Go to the “Secure input” section to see options you can choose to provide it.
+1. `Environmentid`: The environment where the machine group is registered. You can retrieve it in the URL of Power Automate.
+1. `Groupid`: The ID of the machine group you want to join. You can retrieve it in the URL of Power Automate when you are in the machine group details page.
+1. `Grouppassword`: The password of your machine. If this machine is the first machine of the group, you need to define it. If not, you need to provide the defined password of the group. You shouldn't use this input as an input to the command line. Go to the “Secure input” section to see options you can choose to provide it.
 
 ![Screenshot of the environment ID in the Power Automate portal URL.](./media/machines-silent-registration/environment-id.png)
 
@@ -141,7 +146,7 @@ You have two options to provide a secure input:
    - Redirect string (if you need to input multiple strings, you can do it easily in PowerShell):
   
      ```PowerShell
-         echo mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+         echo clientsecret mypassword | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -applicationid appid -clientsecret -groupid groupid -grouppassword -tenantid tenantid
      ```
   
    - Redirect file:

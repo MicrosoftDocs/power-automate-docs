@@ -7,7 +7,7 @@ author: kenseongtan
 ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/27/2022
+ms.date: 08/03/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -112,10 +112,8 @@ content hosted in Power Automate US Governments (GCC, GCC High, and DoD).
 
 Power Automate US Government is designed to support the Federal Risk and Authorization Management Program (FedRAMP) accreditation at a High Impact level. This program infers alignment to DoD DISA IL2. FedRAMP artifacts are available for review by federal customers who are required to comply with FedRAMP. Federal agencies can peruse these artifacts in support of their review to grant an Authority to Operate (ATO).
 
->[!NOTE]
->Power Automate is authorized as a service within the Azure Government FedRAMP ATO. For more information, including how to access the FedRAMP documents, review the [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government).
-
-
+> [!NOTE]
+> Power Automate is authorized as a service within the Azure Government FedRAMP ATO. For more information, including how to access the FedRAMP documents, review the [FedRAMP Marketplace](https://marketplace.fedramp.gov/#!/product/azure-government-includes-dynamics-365?sort=productName&productNameSearch=azure%20government).
 
 Power Automate US Government has features designed to support customers' CJIS Policy requirements for law enforcement agencies. Visit the Power Automate US Government products page in the Trust Center for more detailed information related to certifications and accreditations.
 
@@ -144,9 +142,9 @@ Power Automate US Government provides the ability to integrate third-party appli
 
 ## Configure mobile clients
 
-Here are the steps that you must take to sign in with the Power Automate mobile client.  Currently, only the iOS version of the mobile client supports connecting to GCC environments.
+Here are the steps that you must take to sign in with the Power Automate mobile client.
 
-1. On the sign-in page, select the gear icon in the lower-right corner.
+1. On the sign-in page, select ![Wifi icon with a gear sign.](media/us-govt/icon-wifi-gear.png) (a wifi icon with a gear sign) in the upper-right corner.
 1. Select **Region settings**.
 1. Select GCC: US Government GCC
 1. Select OK.
@@ -241,7 +239,7 @@ focusing attention on AzureCloud.usgovtexas, and AzureCloud.usgovvirginia, and/o
 
 Install an [on-premises data gateway](./gateway-manage.md) to transfer data quickly and securely between a canvas app that's built in Power Automate and a data source that isn't in the cloud. Examples include on-premises SQL Server databases or on-premises SharePoint sites.
 
-If your organization (tenant) has configured and successfully connected the nn-premises data gateway for PowerBI US Government, then the process your organization followed to enable that also enables on-premises connectivity for Power Automate.
+If your organization (tenant) has configured and successfully connected the on-premises data gateway for PowerBI US Government, then the process your organization followed to enable that also enables on-premises connectivity for Power Automate.
 
 Formerly, US Government customers needed to contact support before configuring their first on-premises data gateway, because support would need to give permission to the tenant to allow gateway use. This is no longer necessary. If you encounter any issues configuring or using the on-premises data gateway, you may contact support for assistance.
 

@@ -2,12 +2,12 @@
   href: ./index.yml
 - name: Overview
   items:
-  - name: Get started
-    href: getting-started.md
   - name: Types of flows
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
+  - name: Get started with Power Automate
+    href: getting-started.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -16,12 +16,14 @@
   items:
   - name: Get started with cloud flows
     href: overview-cloud.md
-  - name: Get started with Copilot (preview)
+  - name: Get started with Copilot in cloud flows (preview)
     href: get-started-with-copilot.md
-  - name: Understand AI-powered cloud flows designer (preview)
+  - name: Understand the new cloud flows designer with Copilot (preview)
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
+  - name: Add OAuth authentication for HTTP request triggers
+    href: oauth-authentication.md
   - name: Get help from the Power Virtual Agents bot
     href: contextual-help-bot.md
   - name: Find it with unified search
@@ -150,6 +152,8 @@
         href: email-customization.md
       - name: Troubleshoot issues with email in flows
         href: email-troubleshooting.md
+    - name: Use flows with Excel for the web
+      href: flows-excel.md    
     - name: Use flows with SharePoint
       items:
       - name: Overview
@@ -596,6 +600,16 @@
       href: ./desktop-flows/how-to/passing-datatable.md
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
+  - name: ALM for desktop flows
+    items:
+    - name: Overview for configuring ALM for desktop flows
+      href: ./desktop-flows/alm/alm-intro.md
+    - name: Create a flow in a solution
+      href: ./desktop-flows/alm/alm-solution.md
+    - name: Compare your desktop flow changes
+      href: ./desktop-flows/alm/alm-diff.md
+    - name: Create a connection with a service principal
+      href: ./desktop-flows/alm/alm-connection.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -687,7 +701,7 @@
       href: ./desktop-flows/actions-reference/sharepoint.md
     - name: Office 365 Outlook (preview)
       href: ./desktop-flows/actions-reference/office365outlook.md
-    - name: Workqueues (preview)
+    - name: Work queues (preview)
       href: ./desktop-flows/actions-reference/workqueues.md
     - name: Custom actions (preview)
       href: ./desktop-flows/actions-reference/custommodule.md
@@ -723,7 +737,7 @@
     href: bpf-add-on-demand-workflow.md
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
-- name: Process mining
+- name: Process Mining
   items:
   - name: Overview
     href: process-advisor-overview.md
@@ -744,8 +758,12 @@
         href: process-mining-templates.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
+    - name: Copilot in Process Mining ingestion (preview)
+      href: process-mining-copilot-in-ingestion.md 
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
+    - name: Use your own Azure Data Lake Storage Gen2 (preview)
+      href: process-mining-byo-azure-data-lake.md
     - name: Transform and map data
       href: process-mining-transform.md
     - name: Visualize and gain insights from processes
@@ -764,6 +782,8 @@
       href: ./minit/minit-desktop-application-overview.md
     - name: Download Process Mining desktop app
       href: ./minit/how-to-start-with-minit-desktop-application.md
+    - name: Copilot in Process Mining process analytics (preview)
+      href: ./minit/process-mining-copilot-in-process-analytics.md      
     - name: Get started
       items:
       - name: Explore the home page
@@ -1116,8 +1136,10 @@
   items:
   - name: Overview
     href: responsible-ai-overview.md
-  - name: FAQ for Copilot
+  - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
+  - name: FAQ for Copilot in Process Mining
+    href: faqs-copilot-in-process-mining.md
 
 
 
