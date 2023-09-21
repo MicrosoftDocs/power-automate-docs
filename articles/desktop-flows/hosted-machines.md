@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/22/2023
+ms.date: 09/21/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -235,8 +235,8 @@ Custom VM images must meet the following requirements:
 - Generation 2 image
 - Generalized VM image
 - Single Session VM images (multi-session isn’t supported)
-- No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition).
-- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to the size specified in SKU description of the Windows 365 license
+- No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
+- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to the size specified in the SKU description of the Windows 365 license
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
