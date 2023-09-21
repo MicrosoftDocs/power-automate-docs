@@ -101,6 +101,8 @@
       href: format-data-by-examples.md
   - name: Popular cloud flows scenarios
     items:
+    - name: Use the Power Automate plugin for ChatGPT
+      href: ./use-chatgpt-plugin.md
     - name: Use flows with approvals
       items:
       - name: Get started with approvals
