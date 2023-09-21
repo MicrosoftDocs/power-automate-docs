@@ -33,14 +33,23 @@ The **Power Automate plugin for ChatGPT** allows you to create, list, and run  c
 ## Get the plugin
 
 1. Log in to [ChatGPT](https://chat.openai.com).
+
 1. If you haven't used Plugins before, go to **Settings** ->  **Beta features** and enable the **Plugins** toggle.
+
 1. Start a new chat with ChatGPT and select **GPT-4** using the model selector at the top.
+
 1. Hover over GPT-4 and select **Plugins**.
+
 1. At the top of the chat, select **No plugins enabled** then **Plugin store**.
+
 1. In the Plugin store window that opens, search **Power Automate**.
+
 1. Select **Install** on the Power Automate plugin:
-    ![A screenshot of the ChatGPT Plugin store and the Power Automate plugin](image-1.png)
+
+    :::image type="content" source="media/use-chatgpt-plugin/plugin-store.png" alt-text="A screenshot of the ChatGPT Plugin store and the Power Automate plugin" border="true":::
+
 1. Log in with your Power Automate account.
+
 1. Select **Allow** to authorize OpenAI to connect to your Microsoft account.
 
 ## Use the plugin to create flows from a prompt
@@ -51,21 +60,25 @@ When you use a prompt that mentions creating a flow or automation, ChatGPT uses 
 * Help me create an automation where I get notified when my manager sends me a high profile email
 * Create a flow that sends me an email when an item is added to a folder in SharePoint
 
-![A screenshot of a conversation with ChatGPT where the Power Automate plugin is being used to create a flow that sends a notification when the user's manager sends them a high priority email.](./media/chatGPT/Create-flow.png)
+:::image type="content" source="media/use-chatgpt-plugin/create-flow.png" alt-text="A screenshot of a conversation with ChatGPT where the Power Automate plugin is being used to create a flow that sends a notification when the user's manager sends them a high priority email." border="true":::
 
 ## Create flows to run from ChatGPT conversations
 
- The **Run from copilot**  trigger provides a way for you to create the equivalent of plugins for ChatGPT which can use any of the over 1000+ connectors in the Power Automate ecosystem. To create a flow that can be used from a ChatGPT conversation use the following steps: 
+ The **Run from copilot**  trigger provides a way for you to create the equivalent of plugins for ChatGPT that can use any of the 1000+ connectors in the Power Automate ecosystem. To create a flow that can be used from a ChatGPT conversation use the following steps: 
 
 1. Go to [Power Automate](https://make.powerautomate.com).
+
 1. Select **Create** from the left-pane, and then, select **Instant cloud flow**.
+
 1. Select the **Run from Copilot** trigger and select **Create**. If you've added another trigger to your flow, you can delete it and search for **Run from Copilot** to replace it.
+
 1. Add actions to your flow such as the Outlook connector's [Send an email (V2)](/connectors/office365/#send-an-email-(v2)).
-1. Save the flow and test or run it at least once. The flow is now available from ChatGPT. ChatGPT uses the title and description of the flow to determine which flow you're referring to from a prompt. Note only tested flows show up on ChatGPT so please ensure the flow runs before trying it in ChatGPT
+
+1. Save the flow and test or run it at least once. The flow is now available from ChatGPT. ChatGPT uses the title and description of the flow to determine which flow you're referring to from a prompt. Ensure flows run as only tested flows show up on ChatGPT.
 
 The following screenshot shows an example flow that sends an email using the Outlook connector:
 
-![Example flow using the "Run from Copilot" trigger, the Outlook connector's "Send an email (V2)" action, and the "Respond to Copilot" action.](./media/chatGPT/Skill-flow.png)
+:::image type="content" source="media/use-chatgpt-plugin/skill-flow.png" alt-text="Example flow using the "Run from Copilot" trigger, the Outlook connector's "Send an email (V2)" action, and the "Respond to Copilot" action." border="true":::
 
 ## Use the plugin to list and run flows
 
@@ -73,9 +86,9 @@ You can run flows that use the **Run from Copilot** trigger from ChatGPT with pr
 
 To retrieve a list of all flows available to ChatGPT, use prompts such as **List my flows**, **Show my flows**, or **What are all my flows**. ChatGPT returns a table of flows that use the **Run from copilot** trigger and their details.
 
-## Control and Privacy
+## Control and privacy
 
-Considerations for control and privacy for cloud flows being invoked from ChatGPT and other Copilot experiences built on Large Language Models (LLMs):
+The following considerations apply when invoking cloud flows from ChatGPT and other Copilot experiences based on Large Language Models (LLMs):
 
 1. ChatGPT doesn't immediately create the flow that the user wants. Instead, it returns a link to a possible flow based on the provided prompt. The flow creation happens on the Power Automate portal after human review. Users need to review the flow and go through the creation steps to complete the process, including confirming the actions and connections in the flow.
 1. Only flows created by the user with the **Run from Copilot** trigger are discoverable from ChatGPT. Shared flows aren't yet discoverable from ChatGPT.
@@ -84,7 +97,7 @@ Considerations for control and privacy for cloud flows being invoked from ChatGP
 
 ## Environment support
 
-Currently the flows that are created and run need to be in the tenants default environment. We're working on a setup experience for the plugin that will allow users to choose non-default environments to associate the plugin with.
+Currently the flows that are created and run need to be in the tenants default environment. We're working on a setup experience for the plugin that will allow users to choose nondefault environments to associate the plugin with.
 
 
 ## Frequently asked questions
