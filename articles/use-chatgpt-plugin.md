@@ -18,7 +18,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/18/2023
+ms.date: 09/21/2023
 ---
 
 # Use the Power Automate plugin for ChatGPT
