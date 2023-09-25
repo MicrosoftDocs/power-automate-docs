@@ -29,10 +29,17 @@ The cloud flows copilot can perform the following actions:
 
 ## Prerequisites
 
-You need a Power Platform environment in the United States region for the cloud flows designer with copilot capabilities.
+The capability is not available worldwide. You need to a Power Platform environment in the following regions to use copilot in Power Automate  cloud flows.
+
+| Countries | Copilot Enabled ? |
+| ------------- | ------------- |
+| Countries with copilot GPUs or exemption (US, Switzerland, Sweden, Netherlands, Ireland)  | Copilot is enabled by default as of Oct 18, 2023 unless turned off by admin |
+| EU | Copilot is enabled in Create scenario as of Oct 16, 2023 unless turned off by admin  |
+| France | Copilot is enabled in Create scenario as of Oct 17, 2023 unless turned off by admin|
+| Canada | Copilot is enabled by default Oct 17, 2023 unless turned off by admin |
 
 > [!NOTE]
-> If your environment is in the United States region and you still don’t see the Copilot in cloud flows experience, contact your admin. Ask if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
+> If your environment is in the region listed above and you still don’t see the Copilot in cloud flows experience, contact your admin. Ask if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
 
 ## Create a flow using the cloud flows designer with Copilot
 
