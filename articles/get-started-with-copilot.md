@@ -27,6 +27,7 @@ The cloud flows designer with Copilot can perform the following actions:
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - Copilot is new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
 > - For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - More information: [Transparency notes for Power Automate](transparency-note.md), [Transparency note for Copilot data security and privacy in Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
