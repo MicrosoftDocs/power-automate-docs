@@ -101,6 +101,8 @@
       href: format-data-by-examples.md
   - name: Popular cloud flows scenarios
     items:
+    - name: Use the Power Automate plugin for ChatGPT
+      href: ./use-chatgpt-plugin.md
     - name: Use flows with approvals
       items:
       - name: Get started with approvals
@@ -152,6 +154,8 @@
         href: email-customization.md
       - name: Troubleshoot issues with email in flows
         href: email-troubleshooting.md
+    - name: Use flows with Excel for the web
+      href: flows-excel.md    
     - name: Use flows with SharePoint
       items:
       - name: Overview
