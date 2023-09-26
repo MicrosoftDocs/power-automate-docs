@@ -4,7 +4,7 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 06/20/2023
+ms.date: 09/21/2023
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
@@ -183,7 +183,7 @@ If the agent for virtual desktops can't communicate with Power Automate for desk
     ```
 
     ``` PowerShell
-    regsvr32  .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll"
+    regsvr32  .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll
     ```
 
 ## Troubleshoot missing on-premises data gateway
@@ -209,14 +209,6 @@ Hosted machine provisioning errors:
 
 | Error code | Short Summary | Description | Learn more |
 | ----------| --------------|-------------|------------|
-| joinDomainFailed | Check and update Active Directory domain credentials for your on-premises network connection, then retry. | Joining the (%AdDomainName%) domain failed. During %brandName% provisioning, an Active Directory domain join is triggered for the %AdDomainName% domain. This action has failed. Possible causes for this issue may include: Incorrect domain join credentials, insufficient access to the domain/domain controller using the defined vNet, or internal DNS related issues. Ensure the AD domain join will be successful and retry provisioning. | [Troubleshoot errors when joining computers to a domain](/troubleshoot/windows-server/identity/troubleshoot-errors-join-computer-to-domain) |
-| domainJoin_AccountQuotaExceeded | This domain account has exceeded the maximum number of computer accounts allowed to create in this domain. | The domain join account maximum exceeded. The user %DomainJoinUser% has exceeded the maximum number of computer accounts allowed to join this domain. Raise the limit, or provide a different domain join user account and retry provisioning. | [Default limit to workstation number](/troubleshoot/windows-server/identity/default-workstation-numbers-join-domain) |
-| domainJoin_AccountLockedOut | This domain account is currently locked out and can't be used to join the domain. | The domain join account is locked. The user %DomainJoinUser% is currently locked out. Ensure the user isn't locked out and retry provisioning. | [Set the account lockout threshold to the recommended value](/services-hub/health/remediation-steps-ad/set-the-account-lockout-threshold-to-the-recommended-value) |
-| domainJoin_AccountNameOrPasswordIncorrect | This domain account name or password is incorrect. | Domain join account incorrect password. The provided password for %DomainJoinUser% is incorrect. Update the password in the associated on-premises network connection and retry provisioning. | [Edit Azure network connection](/windows-365/enterprise/edit-azure-network-connection)                |
-| domainJoin_DomainNotExistOrCouldNotBeContacted | The specified domain either doesn't exist or couldn't be contacted. | The specified domain doesn't exist or couldn't be contacted. The %domainName% domain couldn't be contacted during domain join. Ensure the domain name provided is correct and available for domain join on the vNet supplied on your on-premises network connection. |               |
-| domainJoin_AlreadyCloudDomainJoined | The provided custom image is already domain joined. | The provided custom image is already domain joined. The custom image provided may not have been sysprepped correctly, as it appears to be a member of a domain already. Ensure the custom image is removed from the domain and sysprepped successfully before uploading to Windows 365. | [Sysprep (System Preparation) overview](/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview)                |
-| domainJoin_AccountDisabled | This domain account is currently disabled and can't be used to join the domain | The domain join account is disabled. The user account %DomainJoinUser% is disabled. Enable the account in Active Directory and retry provisioning.| |
-| domainJoin_NetworkConnectivityIssue | The domain network location can't be reached.| The domain network location you're trying can't be reached. Ensure your Cloud PCs can use your on-premises DNS servers to resolve Azure or Hybrid Azure AD domain join types and that your connectivity isn't restricted to these domain join types.| [Network requirements](/windows-365/enterprise/requirements-network?tabs=enterprise%2Cent)                |
 | intuneEnrollFailed | We can’t complete MEM enrollment of this Cloud PC. Check MEM policy settings and retry. If that doesn’t work, contact Customer support. | Intune MDM enrollment has failed. During %brandName% provisioning, an Intune MDM enrollment occurs. This action has failed. Possible causes for this issue include: Windows enrollment is blocked in Intune, the Intune endpoints can’t be reached on your vNet, or your Intune tenant isn’t in a healthy state. Ensure the Intune MDM enrollment will be successful and retry provisioning. | [Troubleshooting Windows enrollment errors](/troubleshoot/mem/intune/device-enrollment/troubleshoot-windows-enrollment-errors) |
 | intuneEnroll_BlockedByEnrollmentRestriction | An Intune enrollment restriction exists for this user/tenant, causing MDM enrollment to fail. Ensure Windows enrollment is allowed in your Intune tenant. | Intune enrollment restriction blocking enrollment. An Intune enrollment restriction exists for this user/tenant, causing MDM enrollment to fail. Ensure Windows enrollment is allowed in your Intune tenant. | [Intune enrollment failed](/windows-365/enterprise/provisioning-errors#intune-enrollment-failed) |
 | intuneEnroll_BlockedByGroupPolicyOrConfigMgr | A group policy or ConfigMgr is blocking Intune enrollment. This issue could be caused by the ConfigMgr client installing on the Cloud PC before provisioning is complete. Ensure the device can successfully perform an MDM enrollment into Intune by delaying the ConfigMgr client installation until provisioning completes. | Intune enrollment has been blocked. A group policy or ConfigMgr is blocking Intune enrollment. This issue could be caused by the ConfigMgr client installing on the %brandName% before provisioning is complete. Ensure the device can successfully perform an MDM enrollment into Intune by delaying the ConfigMgr client installation until provisioning completes. | [Configure automatic MDM enrollment](/mem/intune/enrollment/windows-enroll#configure-automatic-mdm-enrollment) |
