@@ -33,10 +33,12 @@ The capability is not available worldwide. You need to a Power Platform environm
 
 | Countries | Copilot Enabled ? |
 | ------------- | ------------- |
-| Countries with copilot GPUs or exemption (US, Switzerland, Sweden, Netherlands, Ireland)  | Copilot is enabled by default as of Oct 18, 2023 unless turned off by admin |
-| EU | Copilot is enabled in Create scenario as of Oct 16, 2023 unless turned off by admin  |
-| France | Copilot is enabled in Create scenario as of Oct 17, 2023 unless turned off by admin|
-| Canada | Copilot is enabled by default Oct 17, 2023 unless turned off by admin |
+| Preview region | Copilot is enabled by default by beginning of Oct 2023 unless turned off by admin | 
+| Countries with copilot GPUs (US, Switzerland and later Sweden, Netherlands, Ireland)  | Copilot is enabled by default as of Oct 18, 2023 unless turned off by admin |
+| EU | Copilot is enabled in the Create scenario only unless turned off by admin. Copilot for edit scenario (inside the designer) can be enabled by admins from PPAC by opting to allow cross geo data sharing setting by end of Oct 2023| 
+| All other regions, including France and Canada, but except Solveigh clouds | Copilot can be enabled by admins from PPAC by opting to allow cross geo data sharing setting by end of Oct 2023 | 
+| Sovereign clouds, MSA users | No access for MSA users or Sovereign cloud users to copilot features, you need to use an organization ID and in a non- Sovereign cloud region | 
+
 
 > [!NOTE]
 > If your environment is in the region listed above and you still don’t see the Copilot in cloud flows experience, contact your admin. Ask if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
