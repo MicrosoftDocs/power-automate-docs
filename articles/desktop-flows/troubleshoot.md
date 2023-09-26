@@ -183,7 +183,7 @@ If the agent for virtual desktops can't communicate with Power Automate for desk
     ```
 
     ``` PowerShell
-    regsvr32  .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll"
+    regsvr32  .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll
     ```
 
 ## Troubleshoot missing on-premises data gateway
