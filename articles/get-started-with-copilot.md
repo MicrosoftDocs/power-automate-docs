@@ -29,7 +29,7 @@ The cloud flows copilot can perform the following actions:
 
 ## Prerequisites
 
-The capability isn't available worldwide. You need to a Power Platform environment in the following regions to use copilot in Power Automate cloud flows.
+The capability isn't available worldwide. You need a Power Platform environment in the following regions to use copilot in Power Automate cloud flows.
 
 | Countries | Copilot enabled? |
 | ------------- | ------------- |
