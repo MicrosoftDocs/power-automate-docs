@@ -2,7 +2,7 @@
 title: Get started with Copilot in cloud flows
 description: Learn how to access and use Copilot in cloud flows.
 ms.date: 10/02/2023
-ms.custom: 
+ms.custom: bap-template
   - transparency-note
 ms.topic: conceptual
 author: kisubedi
@@ -29,16 +29,15 @@ The cloud flows copilot can perform the following actions:
 
 ## Prerequisites
 
-The capability is not available worldwide. You need to a Power Platform environment in the following regions to use copilot in Power Automate  cloud flows.
+The capability isn't available worldwide. You need to a Power Platform environment in the following regions to use copilot in Power Automate cloud flows.
 
-| Countries | Copilot Enabled ? |
+| Countries | Copilot enabled? |
 | ------------- | ------------- |
-| Preview region | Copilot is enabled by default by beginning of Oct 2023 unless turned off by admin | 
-| Countries with copilot GPUs (US, Switzerland and later Sweden, Netherlands, Ireland)  | Copilot is enabled by default as of Oct 18, 2023 unless turned off by admin |
-| EU | Copilot is enabled in the Create scenario only unless turned off by admin. Copilot for edit scenario (inside the designer) can be enabled by admins from PPAC by opting to allow cross geo data sharing setting by end of Oct 2023| 
-| All other regions, including France and Canada, but except Solveigh clouds | Copilot can be enabled by admins from PPAC by opting to allow cross geo data sharing setting by end of Oct 2023 | 
-| Sovereign clouds, MSA users | No access for MSA users or Sovereign cloud users to copilot features, you need to use an organization ID and in a non- Sovereign cloud region | 
-
+| Preview region | Copilot is enabled by default at the beginning of October 2023, unless it's turned off by an admin. |
+| Countries with copilot GPUs (US, Switzerland, and later Sweden, Netherlands, and Ireland)  | Copilot is enabled by default as of October 18, 2023, unless turned off by an admin. |
+| EU | Copilot is enabled in the create scenario, unless it's turned off by an admin. Copilot for the edit scenario (inside the designer) can be enabled by admins from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by opting to allow cross geo data sharing setting by the end of October 2023. |
+| All other regions, including France and Canada, with the exception of Solveigh clouds | Copilot can be enabled by admins from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by opting to allow the cross geo data sharing setting by end of October 2023. | 
+| Sovereign clouds, MSA users | There's no access for MSA users or Sovereign cloud users to copilot features. You need to use an organization ID and in a non-Sovereign cloud region. **More information**: [Enable copilots and generative AI features outside United States and Switzerland](/power-platform/admin/geographical-availability-copilot) |
 
 > [!NOTE]
 > If your environment is in the region listed above and you still don’t see the Copilot in cloud flows experience, contact your admin. Ask if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
