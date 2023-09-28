@@ -16,9 +16,14 @@ search.audienceType:
 
 # AI Builder actions (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 The AI Builder group contains the **Create text with GPT** action that creates text using the GPT language model.
 
-> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality.
+> - These features are available before an official release so that customers can get early access and provide feedback.
 >
 > Further strengthening our commitment to [responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai) we're introducing some updates related to the utilization of **Create text with GPT** action in the Power Automate for desktop October 2023 update.
 > Specifically: 
