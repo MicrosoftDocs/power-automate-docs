@@ -462,7 +462,7 @@ Power Automate enables you to trigger desktop flows on your hosted machines as y
 To find more information about triggering desktop flows from cloud flows, go to [Trigger desktop flows from cloud flows](link-pad-flow-portal.md).
 
 > [!NOTE]
-> If you intent to run unattended desktop flows on your hosted machine using the default VM image option, you will need to [disable Network Level Authentication](/troubleshoot/power-platform/power-automate/ui-flows-run-failed-with-aadlogonfailure-error) on your machine.
+> If you intend to run unattended desktop flows on your hosted machine using the default VM image option, you will need to [disable Network Level Authentication](/troubleshoot/power-platform/power-automate/ui-flows-run-failed-with-aadlogonfailure-error) on your machine.
 
 ## Permissions based on security roles
 
