@@ -37,7 +37,7 @@ The trigger has three modes for the authentication parameter:
 
 If you're restricting the workflow to be triggered only by authenticated users, you need to ensure that the HTTP request contains the correct claims. The required claims are in the following list:
 
-- `"aud":` https://service.flow.microsoft.com
+- `"aud":` [https://service.flow.microsoft.com](https://service.flow.microsoft.com)
 - `"iss":` \<Issuer of the requestor>
 - `"tid":` \<tenant id of the requestor>
 - `"oid":` \<object id of the requestor>. Optional. This field is required only if you have configured the trigger to restrict to specific users within the tenant.
@@ -56,7 +56,7 @@ The parameter shows on the card.
 
 :::image type="content" source="./media/oauth-authentication/classic-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the classic designer.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 The parameter shows on the configuration panel to the left.
 
