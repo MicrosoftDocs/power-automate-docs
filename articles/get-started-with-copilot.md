@@ -25,7 +25,8 @@ The cloud flows copilot can perform the following actions:
 > [!IMPORTANT]
 > - Copilot is new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
-> - More information: [Transparency notes for Power Automate](transparency-note.md), [Transparency note for Copilot data security and privacy in Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
+> - [!INCLUDE [cross-geo-support](~/../shared-content/shared/cross-geo-support.md)]
+> - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [Responsible AI FAQ for Copilot in cloud flows](faqs-copilot.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Availability by region
 
