@@ -33,7 +33,16 @@ The trigger has three modes for the authentication parameter:
 > [!NOTE]
 > If you select the **Specific users in my tenant** option and leave the allowed users blank, the authentication scope is limited to the tenant. This means any user in the tenant can trigger this workflow.
 
-If you're restricting the workflow to be triggered only by authenticated users, you need to ensure that the HTTP request contains the correct claims (for example, tenant id, user id, or object id).
+## Choose the claims for your HTTP request
+
+If you're restricting the workflow to be triggered only by authenticated users, you need to ensure that the HTTP request contains the correct claims. The required claims are in the following list:
+
+- `"aud":` https://service.flow.microsoft.com
+- `"iss":` \<Issuer of the requestor>
+- `"tid":` \<tenant id of the requestor>
+- `"oid":` \<object id of the requestor>. Optional. This field is required only if you have configured the trigger to restrict to specific users within the tenant.
+
+You can check the claims of your request by pasting the bearer token within the authorization header at https://jwt.io. For more information on extracting the tokens programmatically, go to the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 
 ## View the parameter in the designer
 
