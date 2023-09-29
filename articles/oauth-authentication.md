@@ -52,8 +52,8 @@ The following table shows the audience values across different clouds:
 |Cloud type  |Audience value  |
 |---------|---------|
 |Public cloud    | `https://service.flow.microsoft.com/`    |
-|Government Community Cloud (GCC)    |         |
-|Government Community Cloud High (GCCH)     |         |
+|Government Community Cloud (GCC)    | `https://gov.service.flow.microsoft.us/`        |
+|Government Community Cloud High (GCCH)    | `https://high.service.flow.microsoft.us/`    |
 |China     | `https://service.powerautomate.cn/`        |
 |Department of Defense (DOD)   | `https://service.flow.appsplatform.us/`        |
 
