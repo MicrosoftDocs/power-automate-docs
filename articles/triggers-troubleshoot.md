@@ -10,7 +10,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -113,9 +113,7 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
 
     :::image type="content" source="./media/triggers-introduction/trigger-conditions.png" alt-text="Screenshot that shows trigger conditions.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Edit the flow.
@@ -188,9 +186,7 @@ Follow these steps to determine the type of trigger that your flow uses.
 
     :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the recurrence section.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. In the action configfuration pane to the left, select **Code View**.
 1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
@@ -235,9 +231,7 @@ Follow these steps to check the trigger wake up frequency.
 
     :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the frequency element.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. On your flow, select your flow trigger.
 1. Select **Code View**.

@@ -16,9 +16,9 @@
   items:
   - name: Get started with cloud flows
     href: overview-cloud.md
-  - name: Get started with Copilot in cloud flows (preview)
+  - name: Get started with Copilot in cloud flows
     href: get-started-with-copilot.md
-  - name: Understand the new cloud flows designer with Copilot (preview)
+  - name: Understand the cloud flows designer with copilot capabilities
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
