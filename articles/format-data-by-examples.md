@@ -80,7 +80,7 @@ Just provide an example and Power Automate suggests the right expression to achi
 
 - Format data by examples can format one text, number, or date at a time. More complex structures like arrays aren't supported.
 
-- Format data by examples isn't available in environments based in South Africa, GCC, GCC High, and DoD.
+- Format data by examples isn't available in environments based in South Africa, GCC High, and DoD.
 
 ### See also
 
