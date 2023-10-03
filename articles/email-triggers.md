@@ -10,7 +10,7 @@ ms.author: hamenon
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 search.audienceType: 
   - flowmaker
   - enduser
@@ -78,9 +78,7 @@ Although this tutorial sends a push notification, you're free to use any other a
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Simply ask Copilot to create your flow by typing the following prompt:
 
@@ -115,9 +113,7 @@ In this tutorial, you create a cloud flow that sends a push notification to your
 
 4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Simply ask Copilot to create your flow by typing the following prompt:
 
@@ -157,9 +153,7 @@ If you have rules that route emails to different folders based on certain proper
 
 Test the flow by sending an email that gets routed to the folder you selected earlier in this tutorial.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Simply ask Copilot to create your flow by typing :
 
