@@ -6,7 +6,7 @@ documentationcenter: na
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -59,7 +59,7 @@ Alternatively, if you don't know&mdash;or don't feel like playing with&mdash;HTM
 1. Select **Save** at the bottom of the flow steps to save your flow.
 1. Be sure to test your flow to confirm that it works as intended.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview) 
+# [Edit with Copilot](#tab/edit-with-copilot) 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 

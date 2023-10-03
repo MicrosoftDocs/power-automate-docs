@@ -2,14 +2,14 @@
 title: Get started with triggers
 description: Learn about triggers in Power Automate.
 author: PriyaKodukula
-ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 09/08/2023
-ms.author: prkoduku
 contributors:
-  - prkoduku
+  - PriyaKodukula
   - kisubedi
   - v-aangie
+ms.subservice: cloud-flow
+ms.topic: conceptual
+ms.date: 10/02/2023
+ms.author: prkoduku
 ms.reviewer: angieandrews
 ms.collection: get-started
 ---
@@ -126,7 +126,7 @@ Your flow can generate expressions for you.
 
 1. Remove the **Filter array** action.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 

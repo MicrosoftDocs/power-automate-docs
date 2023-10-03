@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -77,9 +77,7 @@ First, select what event, or *trigger*, starts your flow.
    Optionally, you can add more tokens, other text, or both to the body of the email.
 1. Near the top of the screen, select **Save**.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 Using Copilot, you can use natural language to create a flow.
 
