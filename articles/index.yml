@@ -60,10 +60,10 @@ additionalContent:
           url: ./desktop-flows/create-flow.md
     - title: AI copilot capabilities
       links:
-        - text: Get started with Copilot in cloud flows (preview)
+        - text: Get started with Copilot in cloud flows
           url: ./get-started-with-copilot.md
-        - text: Edit a flow using Edit with Copilot (preview)
-          url: ./get-started-with-copilot.md#edit-a-flow-using-edit-with-copilot-preview
+        - text: Edit a flow using the designer with copilot capabilities
+          url: ./get-started-with-copilot.md#edit-a-flow-using-the-designer-with-copilot-capabilities
     - title: Plan with the process mining capability
       links:
         - text: Understand your processes and identify opportunities with process mining

@@ -40,6 +40,9 @@ Depending on the provider you're using, select the appropriate HLLAPI DLL file l
 - MicroFocus Rumba: **System/ehlapi32.Dll**
 - Cybelesoft zScope: **zHllap32.dll**
 
+> [!NOTE]
+> The Windows HLLAPI DLL (WinHLLAPI) is not currently supported.
+
 :::image type="content" source="media/terminalemulation/open-terminal-session-action-hllapi.png" alt-text="Screenshot of the Open terminal session action with the HLLAPI option selected.":::
 
 After opening a terminal session and completing all the wanted operations, terminate the connection using the **Close terminal session** action. If you don't close the connection, some providers won't let you connect again to the already open session without restarting the software or the connection.
