@@ -71,8 +71,6 @@ The parameter shows on the card.
 
 # [Edit with Copilot](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
 The parameter shows on the configuration panel to the left.
 
 :::image type="content" source="./media/oauth-authentication/v3-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the designer with Copilot.":::
