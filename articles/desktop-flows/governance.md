@@ -21,6 +21,9 @@ You can use the Windows registry to control who can do what with Power Automate 
 > [!CAUTION]
 > Modifying Windows registry settings incorrectly can cause serious problems that may prevent your computer from booting properly. Microsoft cannot guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
 
+> [!NOTE]
+> If a registry key does not exist in Windows registry, first create the key and then add the registry value.
+
 ## Prevent users manually updating Power Automate for desktop
 
 You can use the following registry entry to keep users from manually updating Power Automate for desktop and receiving update notifications.
