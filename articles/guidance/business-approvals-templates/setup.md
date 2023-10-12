@@ -87,7 +87,20 @@ The Approvals Kit is a collection of components that are designed to help you ge
 
 ## Enabling Power Automate approvals capability
 
-Approvals Kit relies on the out of the box approvals functionality from Power Automate. If you're using the approvals function for the first time, it needs to be enabled first. In new environments, the Power Automate Approvals feature is configured on-demand the first time any approval flow runs in an environment. The on-demand setup is performed either the **Create an Approval** or **Start and wait for an approval** cloud flow actions execute. To enable the approvals feature, proceed with the following steps.
+Approvals Kit relies on the out of the box approvals functionality from Power Automate. If you're using the approvals function for the first time, it needs to be enabled first. This can be done using the power platform command line interface or manually by running a cloud flow that includes an approval
+
+### Command Line Setup
+
+To use the power platform command line to install the flow approvals solution into the environment that the Approvals Kit will be installed you can use the following PowerShell commands as a starter script
+
+```pwsh
+$envs = (pac admin list --json | ConvertFrom-Json) | Where-Object { $_.DisplayName -eq "Your Environment Name"  }
+pac application install --environment $envs[0].EnvironmentId --application-name "msdyn_FlowApprovals"
+```
+
+### Manual Setup
+
+In new environments, the Power Automate Approvals feature is configured on-demand the first time any approval flow runs in an environment. The on-demand setup is performed either the **Create an Approval** or **Start and wait for an approval** cloud flow actions execute. To enable the approvals feature, proceed with the following steps.
 
 *Note: Only run these steps for the first time you're using Approvals connector in the environment you're going to install the template on. If you have already previously used the Approvals connector in the same environment, you can omit this section.*
 
@@ -166,7 +179,63 @@ Importing the solution is the first step of the installation process and is requ
 
 *Note: The import may take up to 10 minutes to be completed.*
 
-### Activate the core cloud flows
+### Post Import Steps
+
+Once Approvals kit solution is imported to an environment successfully, there is a need to update Approvals kit custom connector to point out to the target tenant Identity provider and turn on cloud flows
+
+#### Update Custom Connector
+
+As the custom connector for approvals kit work on delegation permission, it is necessary to have a app registered to interact with Dataverse table and Custom API.
+
+##### App Registeration
+
+Follow the steps below to perform the app registration
+
+1. Login to https://entra.microsoft.com/
+
+1. Select **App Registration** from Application section under **Identity**.
+
+![App Registration](./media/app-registration.png)
+
+1. Click New registration and provide a name, e.g. Approvals kit App. Click **Register**.
+
+1. Under **API permission**, select **Add a permission** and select **Dynamic CRM**.
+
+![App Registration adding API permissions for Dynamics CRM](./media/app-registration-dynamics-crm.png)
+
+1. Choose **Delegated permission** and select user_impersonation. Click **Add Permissions**.
+
+![App Registration adding API permissions for Dynamics CRM](./media/app-registration-dynamics-crm-delegated-permissions.png)
+
+1. Create Secret by moving to **Certificates and Secrets** section and click **New client secret**.
+
+1. Add description and select an appropriate expiry date. Click **Add**.
+
+1. Copy the secret value and save it. This will be required to configure custom connector in the next section.
+
+1. Also make a note of Client ID from Overview section.
+
+#### Update Approvals kit - Custom Connector
+
+1. Edit the **Approvals kit** custom connector present inside Business Approval solution
+
+1. Under **Security** tab, Modify the following
+
+- Select Authentication type as **OAuth 2.0**.
+- Enter the Client ID, Secret noted in previous section.
+- Specify the environment URL under Resource URL section.
+
+1. Select Update connector.
+
+1. Under **Test** tab, create a **New connection**.
+
+1. Specify the account details for the connection and allow access if prompted.
+
+1. Edit the **Custom connector** again and under **Test** section, Test the **GetPublishedWorkflow** operation.
+
+1. The operation should run successfully with Status as 200.
+
+#### Activate the core cloud flows
 
 The template includes multiple core components that are used to manage the approval experience. To use the template, you need to turn on the cloud flows that came with the template.
 
