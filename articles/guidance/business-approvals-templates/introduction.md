@@ -2,7 +2,7 @@
 title: Overview of the business approvals templates (preview) | Microsoft Docs
 description: Overview of the business approvals templates.
 documentationcenter: na
-author: author: Grant-Archibald-MS
+author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
 ms.date: 9/29/2023

@@ -2,7 +2,7 @@
 title: Approvals Kit User Journey | Microsoft Docs
 description: Approvals Kit User Journey
 documentationcenter: na
-author: author: Grant-Archibald-MS
+author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
 ms.date: 9/29/2023

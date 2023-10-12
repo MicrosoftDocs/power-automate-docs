@@ -2,7 +2,7 @@
 title: Setup of the business approvals kit | Microsoft Docs
 description: Setup of the business approvals kit and templates.
 documentationcenter: na
-author: author: Grant-Archibald-MS
+author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
 ms.date: 9/29/2023

@@ -2,7 +2,7 @@
 title: What’s in the Approvals Kit | Microsoft Docs
 description: What’s in the Approvals Kit
 documentationcenter: na
-author: author: Grant-Archibald-MS
+author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
 ms.date: 9/29/2023

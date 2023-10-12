@@ -2,7 +2,7 @@
 title: Setting up Out of Office and delegation | Microsoft Docs
 description: Setting up Out of Office and delegation
 documentationcenter: na
-author: author: Grant-Archibald-MS
+author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
 ms.date: 9/29/2023
