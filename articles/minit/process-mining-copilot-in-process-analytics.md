@@ -41,7 +41,7 @@ Copilot in Process Mining process analytics helps you generate process insights 
 Make sure you've done the following:
 
 - Finished the process import and see the imported process on the Process Mining web page.
-- Downloaded and installed the Process Mining desktop application on your local machine.
+- If you plan to use Copilot on the Process Mining desktop application, download and install the Process Mining desktop application on your local machine.
 
     For instructions, go to [Download Power Automate Process Mining desktop app](how-to-start-with-minit-desktop-application.md).
 
@@ -49,10 +49,21 @@ Make sure you've done the following:
 
 Follow these steps to analyze the process with Copilot.
 
+### Analyze your process in Power Automate Process Mining web page
+
+1. Open the Power Automate Process Mining home page.
+2. Select your process mining environment with an imported process.
+3. Open imported process.
+
+
+### Analyze your process in Process Mining desktop application
+   
 1. Open the Process Mining desktop application.
 1. In the **My processes** tab, select your process mining environment with an imported process.
 
     :::image type="content" source="media/process-mining-copilot-in-process-analytics/desktop-app-processes.png" alt-text="Screenshot of the 'My proceses' tab in the Process Mining deskop app.":::
+
+After opened process analysis:
 
 1. In process map view, select **Copilot** on the command bar to the right. The Copilot pane opens.
 
