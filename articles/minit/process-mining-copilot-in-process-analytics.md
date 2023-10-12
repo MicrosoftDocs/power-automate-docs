@@ -55,6 +55,7 @@ Follow these steps to analyze the process with Copilot.
 2. Select your process mining environment with an imported process.
 3. Open imported process.
 
+    :::image type="content" source="media/copilot-web.png" alt-text="Screenshot of the 'Opened process'.":::
 
 ### Analyze your process in Process Mining desktop application
    
