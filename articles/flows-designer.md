@@ -158,7 +158,8 @@ You might notice that some functionalities that were in the classic designer are
 
 If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the designer with copilot capabilities.
 
-Note: The new Power Automate cloud flows designer is not yet available in integration surfaces such as Power Apps, Teams, etc. 
+> [!NOTE!]
+> The new Power Automate cloud flows designer is not yet available in integration surfaces such as Power Apps, Teams, etc.
 
 :::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the 'Switch to classic designer' button below the menu.":::
 
