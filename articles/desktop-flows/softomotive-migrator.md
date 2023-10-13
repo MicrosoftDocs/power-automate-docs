@@ -21,7 +21,11 @@ search.audienceType:
 
 <!-- ProcessRobot users are now able to export .prp files into folders and --> 
 > [!IMPORTANT]
-> From January 1st 2022, WinAutomation and ProcessRobot will no longer be supported. Learn more about the Softomotive products deprecation [here](/previous-versions/troubleshoot/winautomation/softomotive-useful-information/softomotive-products-end-of-support-announcement). You may migrate your flows to Power Automate.
+> From November 3rd 2023, the Process migrator for Softomotive products (preview) will be deprecated and no longer supported.  “Deprecated” means we intend to remove the feature or capability from a future release.  The feature or capability will continue to work until it is officially removed.  This deprecation notification can span a few months or years.  After removal, the feature or capability will no longer work.  This notice is to allow you sufficient time to plan, migrate and update your code before the feature or capability is removed.  
+
+
+> [!IMPORTANT]
+> From January 1st 2022, WinAutomation and ProcessRobot will no longer be supported. Learn more about the Softomotive products deprecation [here](/previous-versions/troubleshoot/winautomation/softomotive-useful-information/softomotive-products-end-of-support-announcement). You may migrate your flows to Power Automate until the deprecation date of the Process migrator for Softomotive products.
 
 
 Process migrator for Softomotive products (preview) enables users to convert automations into desktop flows for use in Power Automate.
@@ -55,7 +59,9 @@ ProcessRobot users:
 After successfully [downloading the setup file](https://go.microsoft.com/fwlink/?linkid=2151571) of the Process migrator for Softomotive products (preview), run it to install it on your machine.  
 
 > [!NOTE]
-> - Make sure you are performing a clean installation of Process migrator for Softomotive products (preview).  
+> - Make sure you are performing a clean installation of Process migrator for Softomotive products (preview). 
+ Also, the migrator will only function as intended when migrating into an evironment with V1 schema enabled.  If the enviroment you are attempting to migrate into has V2 schema enabled, the migration utlity will not function as intended.  If you require an environment with V1 schema enabled, please contact your Power Platform administrator.
+  
 > - Uninstall any previous installations of the application. 
 > - Remove any previous installation residue (empty installation folders etc.) 
 > - Install the latest version of the application. 
