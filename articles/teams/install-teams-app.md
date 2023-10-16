@@ -20,6 +20,8 @@ ms.reviewer: gtrantzas
 
 # Install the Power Automate app in Microsoft Teams
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 The Power Automate app lets you automate your Microsoft Teams activities or and connect Microsoft Teams to other apps and services. 
 
 1. Sign into [Microsoft Teams](https://teams.microsoft.com).
