@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 16/10/2023
+ms.date: 10/16/2023
 ms.author: rakrish
 ms.reviewer: angieandrews
 ms.custom: bap-template
