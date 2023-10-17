@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: georgiostrantzas
 ms.topic: conceptual
-ms.date: 07/12/2023
+ms.date: 10/17/2023
 ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
@@ -22,7 +22,7 @@ You can use the Windows registry to control who can do what with Power Automate 
 > Modifying Windows registry settings incorrectly can cause serious problems that may prevent your computer from booting properly. Microsoft cannot guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
 
 > [!NOTE]
-> If a registry key does not exist in Windows registry, first create the key and then add the registry value.
+> If a registry key doesn't exist in the Windows registry, first create the key and then add the registry value.
 
 ## Prevent users manually updating Power Automate for desktop
 
@@ -155,7 +155,7 @@ You can use the following registry entry to allow users to select the region the
 
 ## Configure Power Automate for desktop to interact with a corporate proxy server
 
-IT administrators may set the following registry key to configure how Power Automate interacts with a corporate proxy server.
+IT administrators can set the following registry key to configure how Power Automate interacts with a corporate proxy server.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -167,7 +167,7 @@ IT administrators may set the following registry key to configure how Power Auto
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
-IT administrators may set the following registry key to configure the Power Automate's bypassing of a corporate proxy server.
+IT administrators can set the following registry key to configure the Power Automate's bypassing of a corporate proxy server.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -179,7 +179,7 @@ IT administrators may set the following registry key to configure the Power Auto
 
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using the current user's credentials
 
-IT administrators may set the following registry key to configure how Power Automate authenticates with a corporate proxy server.
+IT administrators can set the following registry key to configure how Power Automate authenticates with a corporate proxy server.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -191,7 +191,7 @@ IT administrators may set the following registry key to configure how Power Auto
 
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using Windows credentials
 
-IT administrators may set the following registry key to configure Power Automate to use a generic credential from Windows’ Credential Manager to authenticate to a corporate proxy server. 
+IT administrators can set the following registry key to configure Power Automate to use a generic credential from Windows’ Credential Manager to authenticate to a corporate proxy server. 
 
 > [!NOTE]
 > To use this registry key, it’s a prerequisite to first configure the proxy server’s address and port through the **ProxyServer** registry key. 
@@ -206,7 +206,7 @@ IT administrators may set the following registry key to configure Power Automate
 
 ## Configure Power Automate for desktop to bypass a set of addresses while interacting with a corporate proxy server
 
-IT administrators may set the following registry key to configure a list of IP addresses that are bypassed while Power Automate interacts with a corporate proxy server. 
+IT administrators can set the following registry key to configure a list of IP addresses that are bypassed while Power Automate interacts with a corporate proxy server. 
 
 > [!NOTE]
 > To use this registry key, it’s a prerequisite to first configure the proxy server’s address and port through the **ProxyServer** registry key.
