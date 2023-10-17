@@ -475,11 +475,11 @@ The AssemblyTitle in the project settings specifies the module ID. It can only h
 
 ## Signing a custom module
 > [!IMPORTANT]
-> It is mandatory to have all of the .dll files tha comprise a custom module (generated assembly and all its dependencies) signed with a trusted certificate.
+> It is mandatory to have all of the .dll files tha comprise a custom module (generated assembly and all its dependencies) signed with a trusted certificate
 
 To finalize the creation of the custom module, all generated .dll files, which can be found under the bin/release or bin/Debug folder of the project, must be signed.
 
-Sign the .dlls files using a trusted certificate by running the following command (for each .dll file) in a Developer Command Prompt for Visual Studio:
+Sign the .dll files using a trusted certificate by running the following command (for each .dll file) in a Developer Command Prompt for Visual Studio:
 
 ```
 Signtool sign /f {your certificate name}.pfx /p {your password for exporting the certificate} /fd 
