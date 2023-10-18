@@ -32,7 +32,7 @@ The updated actions and triggers with the Environment parameter are rolling out 
 2. Create a new cloud flow such as an instant flow with the **Manually trigger a flow** trigger, or open an existing flow.
 3. In the flow designer, click the plus sign to add a new action.
 4. Search for **Dataverse** and click **See more** on the Microsoft Dataverse connector to see all available actions. 
-   * If the Microsoft Dataverse connector is not shown, switch to another environment that has Dataverse as a data store using the Environments selector at the top right of the page.
+   * If the Microsoft Dataverse connector isn't shown, switch to another environment that has Dataverse as a data store using the Environments selector at the top right of the page.
 5. Add one of actions that end in **selected environment (preview)**, such as **List rows from selected environment (preview)**.
 6. Use the Environment parameter in the action card to choose the environment to connect to. 
    * The connection you use for the action must have permissions to perform the operation in the other environment. 
@@ -53,14 +53,14 @@ The following actions support connecting to other environments.
 * Upload a file or image to selected environment (preview)
 * Download a file or image from selected environment (preview)
 
-The actions to **Search rows** and **Perform a changeset** request do not yet have preview actions with the Environment parameter.
+The actions to **Search rows** and **Perform a changeset** request don't yet have preview actions with the Environment parameter.
 
-The following triggers will support connecting connecting to other environments but have not yet been released: 
+The following triggers will support connecting to other environments but have not yet been released: 
 
 * When a row is added, modified or deleted
 * When an action is performed
 
-The following triggers will not support the Environment parameter since they are only applicable to the same environment the flow is located in. 
+The following triggers will not support the Environment parameter since they're only applicable to the same environment the flow is located in. 
 * When a flow step is run from a business process flow
 * When a row is selected
 
@@ -72,10 +72,10 @@ The following triggers will not support the Environment parameter since they are
   * To set the Environment parameter manually, select **Enter custom value** at the end of the Environment parameter selector and provide the root URL of a Power Platform environment in the format **https://\<yourenvironmentid\>.crm.dynamics.com/**. 
   * The environment can be provided as a string, expression, environment variable, or as dynamic content from other actions or triggers in the flow.
   * To get the root URL of an environment, you can open the details page of the environment from the [Power Platform Admin Center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management] connector](/connectors/flowmanagement/).
-  * For actions like **Add a row** that depend on the table schema from a specific environment, the schema will not be automatically retrieved when using an expression, dynamic content, or environment variable. The request must be manually created using the LogicalCollectionName of the table and the body for the request in JSON format similar to a [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api). For example, **accounts** and  **{ "name": "Contoso Marketing" }**.
+  * For actions like **Add a row** that depend on the table schema from a specific environment, the schema won't be automatically retrieved when using an expression, dynamic content, or environment variable to specify the environment. The request must be manually created using the LogicalCollectionName of the table and the body for the request in JSON format similar to a [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api). For example, **accounts** and  **{ "name": "Contoso Marketing" }**.
   * Service principal connections can be used to connect to other environments. 
 
 ### Limitations
-* The triggers **When a row is added, modified or deleted** and **When an action is performed** do not yet support the Environment parameter. 
-* The actions to **Search rows** and **Perform a changeset** request do not yet have preview actions with the Environment parameter. 
-* Using instant flows with the Dataverse connection set to **Provided by run-only user** is not yet supported.
+* The triggers **When a row is added, modified or deleted** and **When an action is performed** don't yet support the Environment parameter. Support is planned for November 2023. 
+* The actions to **Search rows** and **Perform a changeset** request don't yet have preview actions with the Environment parameter.
+* Using instant flows with the Dataverse connection set to **Provided by run-only user** isn't supported yet.
