@@ -32,7 +32,7 @@ search.audienceType:
 - [Office 365 Outlook (preview)](/connectors/office365)
 - [OneDrive](/connectors/onedrive)
 - [OneDrive for Business](/connectors/onedriveforbusiness)
-- [OneNote (Business)](/connectors/onenote)
+- [OneNote (Business) (preview)](/connectors/onenote)
 - [RSS](/connectors/rss)
 - [Word Online (Business)](/connectors/wordonlinebusiness)
 
