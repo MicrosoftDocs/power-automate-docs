@@ -20,6 +20,8 @@ ms.reviewer: gtrantzas
 
 # Create flows in Microsoft Teams
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 There are multiple ways in which you can create flows within Microsoft Teams.
 
 - Power Automate flow templates - The Microsoft Teams store has templates directly integrated, making it easy for you to get flow templates to get started quickly.
