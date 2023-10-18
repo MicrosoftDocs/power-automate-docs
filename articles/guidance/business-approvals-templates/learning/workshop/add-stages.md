@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Add Stages | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Add Stages
+title: Approvals Kit workshop add stages | Microsoft Docs
+description: Approvals Kit workshop add stages
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

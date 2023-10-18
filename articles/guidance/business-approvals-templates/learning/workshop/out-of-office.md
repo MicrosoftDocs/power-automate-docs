@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Out Of Office | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Out Of Office
+title: Approvals Kit workshop out of office | Microsoft Docs
+description: Approvals Kit workshop out of office
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

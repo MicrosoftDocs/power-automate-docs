@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit First Approval | Microsoft Docs
-description: Automate an approval process in the Approvals Kit First Approval
+title: Approvals Kit Workshop first approval | Microsoft Docs
+description: Approvals Kit Workshop first approval
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

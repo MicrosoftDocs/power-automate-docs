@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Instructor Guide Monitor Progress | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Instructor Guide Monitor Progress
+title: Approvals Kit instructor guide monitoring progress started | Microsoft Docs
+description: Approvals Kit instructor guide monitoring progress
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

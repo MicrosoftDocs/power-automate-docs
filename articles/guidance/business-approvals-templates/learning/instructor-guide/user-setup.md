@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Instructor Guide User Setup | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Instructor Guide User Setup
+title: Approvals Kit instructor user setup | Microsoft Docs
+description: Approvals Kit instructor user setup
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

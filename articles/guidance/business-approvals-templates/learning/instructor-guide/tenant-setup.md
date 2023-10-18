@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Instructor Guide Tenant Setup | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Instructor Guide Tenant Setup
+title: Approvals Kit instructor tenant setup | Microsoft Docs
+description: Approvals Kit instructor tenant setup
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

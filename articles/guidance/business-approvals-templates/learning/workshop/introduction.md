@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Introduction | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Introduction
+title: Approvals Kit workshop introduction | Microsoft Docs
+description: Approvals Kit workshop introduction
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

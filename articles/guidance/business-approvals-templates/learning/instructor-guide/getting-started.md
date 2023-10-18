@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Instructor Guide Getting Started | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Instructor Guide Getting Started
+title: Approvals Kit instructor guide getting started | Microsoft Docs
+description: Approvals Kit instructor guide getting started
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

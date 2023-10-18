@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Trigger Approval | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Trigger Approval
+title: Approvals Kit workshop trigger approval | Microsoft Docs
+description: Approvals Kit workshop trigger approval
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

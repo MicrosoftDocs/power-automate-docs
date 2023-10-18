@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Add Conditional | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Add Conditional
+title: Approvals Kit workshop add conditional | Microsoft Docs
+description: Approvals Kit workshop add conditional
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

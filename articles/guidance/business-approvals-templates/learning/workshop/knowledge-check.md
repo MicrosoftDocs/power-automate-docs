@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Knowledge Check | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Knowledge Check
+title: Approvals Kit workshop add knowledge check | Microsoft Docs
+description: Approvals Kit workshop add knowledge check
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

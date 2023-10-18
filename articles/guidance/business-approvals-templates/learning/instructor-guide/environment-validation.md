@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Instructor Guide Environment Validation | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Instructor Guide Environment Validation
+title: Approvals Kit instructor guide environment validation | Microsoft Docs
+description: Approvals Kit instructor guide environment validation
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

@@ -1,6 +1,6 @@
 ---
-title: Automate an approval process in the Approvals Kit Comparison | Microsoft Docs
-description: Automate an approval process in the Approvals Kit Comparison
+title: Approvals Kit Workshop Contoso coffee scenario | Microsoft Docs
+description: Approvals Kit Workshop Contoso coffee scenario
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
