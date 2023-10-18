@@ -1,0 +1,65 @@
+---
+title: Approvals Kit Workshop import Contoso coffee solution | Microsoft Learn
+description: Approvals Kit Workshop Contoso coffee solution
+documentationcenter: na
+author: Grant-Archibald-MS
+ms.custom: guidance
+ms.topic: article
+ms.date: 11/10/2023
+ms.author: grarchib
+ms.reviewer: angieandrews
+---
+
+Follow the steps below, if you did not complete already imported or have an environment with the Contoso Coffee solution available to you.
+
+# Task 1: Create a new environment
+
+1. Open a new browser tab, navigate to [Power Platform admin portal](https://aka.ms/ppac) select Environments and click New Environment.
+
+1. Provide an Environment Name, select **Developer** for Type, select Region and click Next.
+
+![Screenshot of new developer environment](media/new-developer-environment.png)
+
+1. Select Language, URL, and Currency. Select No for Deploy sample apps and data and then click Save.
+
+1. Wait for the environment to be created.
+
+# Task 2: Import the solution
+
+In this task, you will import the completed App in a day module 2 solution.
+
+1. Navigate to [Power Apps maker portal](https://make.powerapps.com/)
+
+1. Make sure you are in the **Contoso** Test Environment you created.
+
+1. Select **Solutions** and click **Import**.
+
+1. Select Browse.
+
+1. Select the **ContosoCoffee_1_0_0_2.zip** Contso Coffee solution zip file located in **Completed Lab Solution for students** and **Module 2** folder and click Open.
+
+> NOTE: The English language version Contoso Coffee Module 2 solution can be located in the [AppinaDay Trainer Package.zip](https://aka.ms/appinadayTrainer) or [Other Languages](https://aka.ms/AIADLocalTrainer)
+
+1. Select Next.
+
+1. Select Import.
+
+1. Wait for the solution import to complete.
+
+1. Once the import is complete, Select **Publish All Customizations** and wait for the publishing to complete.
+
+1. Select **Apps**, click on the … button of the **Machine Ordering App** and select **Play**.
+
+1. When the application opens select **Allow** for the Office 365 Users connection.
+
+1. Select a few machines and select **Compare**.
+
+1. Select one of the machines and select **Submit**.
+
+1. Once you have reviewed the machine request select **OK** to close the request.
+
+1. Close the application.
+
+1. Select **Tables**, search for **Machine Order** and select on it.
+
+1. Select the Data tab and make sure you have at least one record in the table.
