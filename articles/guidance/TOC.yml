@@ -196,7 +196,43 @@
               href: ./business-approvals-templates/whats-in-the-approval-kit/custom-connector.md
         - name: Learning
           items:
-            - name: Learning Path
-              href: ./business-approvals-templates/learning/learning-module/overview.md
+            - name: Workshop
+              items:
+                - name: Overview
+                  href: ./business-approvals-templates/learning/workshop/overview.md              
+                - name: Introduction
+                  href: ./business-approvals-templates/learning/workshop/introduction.md
+                - name: Working with Contoso Coffee
+                  href: ./business-approvals-templates/learning/workshop/contoso-coffee-scenario.md
+                - name: First approval
+                  href: ./business-approvals-templates/learning/workshop/first-approval.md
+                - name: Trigger approval
+                  href: ./business-approvals-templates/learning/workshop/trigger-approval.md
+                - name: Add conditional
+                  href: ./business-approvals-templates/learning/workshop/add-conditional.md
+                - name: Add stages
+                  href: ./business-approvals-templates/learning/workshop/add-stages.md
+                - name: Out of office
+                  href: ./business-approvals-templates/learning/workshop/out-of-office.md
+                - name: Summary
+                  href: ./business-approvals-templates/learning/workshop/summary.md
+                - name: Knowledge Check
+                  href: ./business-approvals-templates/learning/workshop/knowledge-check.md
             - name: Instructor Guide
-              href: ./business-approvals-templates/learning/instructor-guide/overview.md
+              items:
+                - name: Overview
+                  href: ./business-approvals-templates/learning/instructor-guide/overview.md
+                - name: Getting started
+                  href: ./business-approvals-templates/learning/instructor-guide/getting-started.md
+                - name: Tenant setup
+                  href: ./business-approvals-templates/learning/instructor-guide/tenant-setup.md
+                - name: User setup
+                  href: ./business-approvals-templates/learning/instructor-guide/user-setup.md
+                - name: Environment setup
+                  href: ./business-approvals-templates/learning/instructor-guide/environment-setup.md
+                - name: Environment validation
+                  href: ./business-approvals-templates/learning/instructor-guide/environment-validation.md
+                - name: Monitor progress
+                  href: ./business-approvals-templates/learning/instructor-guide/monitor-progress.md
+                - name: Get feedback
+                  href: ./business-approvals-templates/learning/instructor-guide/get-feedback.md

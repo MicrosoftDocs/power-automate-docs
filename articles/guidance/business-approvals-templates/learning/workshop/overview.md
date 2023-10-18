@@ -17,7 +17,6 @@ When it comes to handling business processes that require multiple levels of app
 ## Learning Objectives
 
 - Gain insights on what the Approvals Kit is and the benefits it offers
-- Determine when you should use the Approvals Connector or the Approvals Kit
 - Define a business approval process with a single stage and node
 - Trigger a business approval process from a Power Automate Cloud flow
 - Extend the approvals process with conditional logic
@@ -25,17 +24,13 @@ When it comes to handling business processes that require multiple levels of app
 - Handle cases when approvers are out of office
 - review the known issues and limits of the Approvals Kit.
 
-## Prerequisites
-
-A Power Platform environment with the the Automation Kit installed.
-
-## This module is part of these learning paths
+## This workshop has the following modules
 
 ### [Introduction](./introduction.md)
 
 2 mins
 
-### [Approvals Connector or the Approvals Kit](./comparison.md)
+### [Working With Contoso Coffee](./contoso-coffee-scenario.md)
 
 4 mins
 
