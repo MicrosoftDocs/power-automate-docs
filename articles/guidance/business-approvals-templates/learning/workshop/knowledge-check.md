@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit workshop add knowledge check | Microsoft Docs
+title: Approvals Kit workshop add knowledge check | Microsoft Learn
 description: Approvals Kit workshop add knowledge check
 documentationcenter: na
 author: Grant-Archibald-MS

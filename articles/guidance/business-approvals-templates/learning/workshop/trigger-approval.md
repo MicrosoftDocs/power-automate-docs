@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit workshop trigger approval | Microsoft Docs
+title: Approvals Kit workshop trigger approval | Microsoft Learn
 description: Approvals Kit workshop trigger approval
 documentationcenter: na
 author: Grant-Archibald-MS

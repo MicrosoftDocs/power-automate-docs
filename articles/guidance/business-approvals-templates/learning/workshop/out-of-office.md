@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit workshop out of office | Microsoft Docs
+title: Approvals Kit workshop out of office | Microsoft Learn
 description: Approvals Kit workshop out of office
 documentationcenter: na
 author: Grant-Archibald-MS

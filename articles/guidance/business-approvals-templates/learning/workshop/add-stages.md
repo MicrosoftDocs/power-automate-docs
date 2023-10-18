@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit workshop add stages | Microsoft Docs
+title: Approvals Kit workshop add stages | Microsoft Learn
 description: Approvals Kit workshop add stages
 documentationcenter: na
 author: Grant-Archibald-MS

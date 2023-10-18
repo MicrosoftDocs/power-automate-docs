@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit workshop summary | Microsoft Docs
+title: Approvals Kit workshop summary | Microsoft Learn
 description: Approvals Kit workshop summary
 documentationcenter: na
 author: Grant-Archibald-MS

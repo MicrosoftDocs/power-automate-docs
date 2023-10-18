@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit instructor guide environment validation | Microsoft Docs
+title: Approvals Kit instructor guide environment validation | Microsoft Learn
 description: Approvals Kit instructor guide environment validation
 documentationcenter: na
 author: Grant-Archibald-MS

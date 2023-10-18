@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit instructor guide monitoring progress started | Microsoft Docs
+title: Approvals Kit instructor guide monitoring progress started | Microsoft Learn
 description: Approvals Kit instructor guide monitoring progress
 documentationcenter: na
 author: Grant-Archibald-MS

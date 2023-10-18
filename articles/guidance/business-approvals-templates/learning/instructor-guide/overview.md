@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit instructor guide overview | Microsoft Docs
+title: Approvals Kit instructor guide overview | Microsoft Learn
 description: Approvals Kit instructor guide overview
 documentationcenter: na
 author: Grant-Archibald-MS

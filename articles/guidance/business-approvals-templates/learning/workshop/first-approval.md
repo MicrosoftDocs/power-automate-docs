@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit Workshop first approval | Microsoft Docs
+title: Approvals Kit Workshop first approval | Microsoft Learn
 description: Approvals Kit Workshop first approval
 documentationcenter: na
 author: Grant-Archibald-MS

@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit workshop add conditional | Microsoft Docs
+title: Approvals Kit workshop add conditional | Microsoft Learn
 description: Approvals Kit workshop add conditional
 documentationcenter: na
 author: Grant-Archibald-MS

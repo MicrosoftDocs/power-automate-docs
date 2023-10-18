@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit instructor tenant setup | Microsoft Docs
+title: Approvals Kit instructor tenant setup | Microsoft Learn
 description: Approvals Kit instructor tenant setup
 documentationcenter: na
 author: Grant-Archibald-MS

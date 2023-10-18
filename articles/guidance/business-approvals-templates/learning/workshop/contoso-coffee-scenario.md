@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit Workshop Contoso coffee scenario | Microsoft Docs
+title: Approvals Kit Workshop Contoso coffee scenario | Microsoft Learn
 description: Approvals Kit Workshop Contoso coffee scenario
 documentationcenter: na
 author: Grant-Archibald-MS

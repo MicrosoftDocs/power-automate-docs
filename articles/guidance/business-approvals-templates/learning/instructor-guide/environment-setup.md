@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit instructor guide environment setup | Microsoft Docs
+title: Approvals Kit instructor guide environment setup | Microsoft Learn
 description: Approvals Kit instructor guide environment setup
 documentationcenter: na
 author: Grant-Archibald-MS

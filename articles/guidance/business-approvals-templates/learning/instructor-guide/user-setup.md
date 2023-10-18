@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit instructor user setup | Microsoft Docs
+title: Approvals Kit instructor user setup | Microsoft Learn
 description: Approvals Kit instructor user setup
 documentationcenter: na
 author: Grant-Archibald-MS

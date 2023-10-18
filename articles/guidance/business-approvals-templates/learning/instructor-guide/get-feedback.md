@@ -1,5 +1,5 @@
 ---
-title: Approvals Kit instructor guide getting feedback | Microsoft Docs
+title: Approvals Kit instructor guide getting feedback | Microsoft Learn
 description: Approvals Kit instructor guide getting feedback
 documentationcenter: na
 author: Grant-Archibald-MS
