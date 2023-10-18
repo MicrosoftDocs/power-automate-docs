@@ -21,7 +21,7 @@ search.audienceType:
 
 # Connect to other environments using the Microsoft Dataverse connector
 
-You can use the Microsoft Dataverse connector to automate and respond to activity from apps and data in other Power Platform environments through the actions and triggers that support the Environment parameter.
+You can automate apps, data, and processes across Power Platform environments through supported actions and triggers in Microsoft Dataverse connector. 
 
 [!IMPORTANT]
 The updated actions and triggers with the Environment parameter are rolling out as a public preview to all [Power Platform regions](/power-automate/regions-overview) by the end of October 2023.
