@@ -50,6 +50,8 @@ By completing the App In a Day module 2 or having the Contoso Coffee Application
 
 Now that you have verified that Contoso Coffee machine request can be successfully created lets create a simple one stage and one node approval process that you can self approve.
 
+> NOTE: If you do not have the Approvals Kit installed in your environment the [Approvals Kit Setup Guide](../../setup.md) or the [Instructor Guide](../instructor-guide/overview.md) could help your Center of Excellence team or Trainer provide an environment so that you can follow this workshop module
+
 1. Select **Apps**, select the … button of the **Business Approval Management** and select **Play**.
 
 1. If prompted select your account and enter your account password.
@@ -108,4 +110,4 @@ In this module you stepped through the process of creating a Contoso Coffee Mach
 
 The publish task created an active version of you work flow. As you change and adapt a workflow you can publish new versions to react to changing business rules or revert back to an earlier version.
 
-The next module will build on these two elements to use a Power Automate Cloud flow to begin a approval workflow every time a Machine request is submitted.
+The next [Trigger Approval](./trigger-approval.md) module will build on these two elements to use a Power Automate Cloud flow to begin a approval workflow every time a Machine request is submitted.
