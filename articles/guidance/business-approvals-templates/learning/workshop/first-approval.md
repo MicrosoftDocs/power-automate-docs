@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 
 # Creating First Approval Kit workflow
 
-## Task 1 - Creating a Contoso Coffee Machine Request
+## Task 1 - Create a Contoso Coffee Machine Request
 
 By completing the App In a Day module 2 or having the Contoso Coffee Application imported into your environment you will have the ability create a machine request. Lets review the the request process before you proceed with creating the Business Approval for this process.
 
@@ -45,3 +45,67 @@ By completing the App In a Day module 2 or having the Contoso Coffee Application
 ![Screenshot of Contoso Coffee Machine Ordering app for submit screen request](./media/machine-order-table-select.png)
 
 1. Select the Data tab and make sure you have at least one record in the table.
+
+## Task 2 - Create Approvals Kit Workflow
+
+Now that you have verified that Contoso Coffee machine request can be successfully created lets create a simple one stage and one node approval process that you can self approve.
+
+1. Select **Apps**, select the … button of the **Business Approval Management** and select **Play**.
+
+1. If prompted select your account and enter your account password.
+
+1. Select **Continue** to close the welcome screen if it appears
+
+1. Select **Configure a Workflow** from the Home navigation item
+
+![Screenshot of Approvals Kit Home screen](./media/approvals-kit-home-screen.png)
+
+1. Enter the name of your workflow. For example "My First Approval"
+
+![Screenshot of Approvals Kit new workflow](./media/approvals-kit-new-workflow.png)
+
+1. Select the + button to create the first approval stage.
+
+1. Enter a name for the stage and then select **Save**
+
+![Screenshot of Approvals Kit add first stage to approval](./media/approvals-kit-create-first-stage.png)
+
+1. Wait for the the stage to be created. Select the gray + button to create a node for the created stage
+
+![Screenshot of Approvals Kit first stage with no node defined](./media/approvals-kit-first-stage-no-node.png)
+
+1. Create a first node with name and select your user account from the Approver list
+
+![Screenshot of Approvals Kit add node stage to stage](./media/approvals-kit-create-first-node.png)
+
+1. Select **Save** to save the first node
+
+1. Wait for the node to be created
+
+![Screenshot of Approvals Kit first stage with no node defined](./media/approvals-kit-first-stage-node-created.png)
+
+1. Select the Save button to save you workflow
+
+![Screenshot of Approvals Kit workflow process saved successfully](./media/approvals-kit-workflow-saved.png)
+
+## Task 3 - Publish Approval Workflow
+
+Having created the definition of you work flow the next step is to publish the workflow so that you can trigger a approval when a Machine request is created.
+
+1. Select **Publish**.
+
+1. Verify that the workflow can be published and select **Publish**.
+
+![Screenshot of Approvals Kit workflow process saved successfully](./media/approvals-kit-workflow-publish.png).
+
+1. Wait for the workflow to be published. You can use the **Refresh** to update the publish status.
+
+![Screenshot of Approvals Kit workflow process after successfull publish](./media/approvals-kit-workflow-published.png).
+
+## Summary
+
+In this module you stepped through the process of creating a Contoso Coffee Machine request, defined a simple Approval workflow and published the first version of this workflow.
+
+The publish task created an active version of you work flow. As you change and adapt a workflow you can publish new versions to react to changing business rules or revert back to an earlier version.
+
+The next module will build on these two elements to use a Power Automate Cloud flow to begin a approval workflow every time a Machine request is submitted.

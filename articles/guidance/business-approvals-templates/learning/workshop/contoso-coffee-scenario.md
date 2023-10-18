@@ -28,14 +28,14 @@ It is assumed before you start this module that you have the following in a Powe
 
 - The Contoso Coffee solution has been imported.
 - A current version of the Approvals Kit has been installed and configured
-- You have an assign role of [Environment Maker](https://learn.microsoft.com/en-us/power-platform/admin/database-security#environments-with-a-dataverse-database) so that you can add a new Business Approvals Cloud flow to integrate with Contoso Coffee.
+- You have an assign role of [Environment Maker](https://learn.microsoft.com/power-platform/admin/database-security#environments-with-a-dataverse-database) so that you can add a new Business Approvals Cloud flow to integrate with Contoso Coffee.
 
 ## Missing Prerequisites?
 
-If you have missing prerequisites for this workshop the following links could be useful to assist you getting ready.
-
-1. Review the Module 2 instructor guide downloaded from the [Instructor Led training](https://powerplatform.microsoft.com/instructor-led-training/) App in a Day course.
-
-1. Install or have your administration team install the Approvals Kit using the [Setup guide](../../setup.md)
+If you have any missing prerequisites for this workshop the following links could be useful to assist you getting ready.
 
 1. Create or request access to a shared development environment. If you don't have access to a shared development environment consider [Creating a developer environment with the Power Apps Developer Plan](https://learn.microsoft.com/power-platform/developer/create-developer-environment)
+
+1. Review the [Import Contoso Coffee](./import-contoso-coffee.md) workshop guide.
+
+1. Install or have your administration team install the Approvals Kit using the [Setup guide](../../setup.md)

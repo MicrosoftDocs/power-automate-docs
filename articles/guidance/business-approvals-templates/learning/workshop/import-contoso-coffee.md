@@ -48,7 +48,7 @@ In this task, you will import the completed App in a day module 2 solution.
 
 1. Once the import is complete, Select **Publish All Customizations** and wait for the publishing to complete.
 
-1. Select **Apps**, click on the … button of the **Machine Ordering App** and select **Play**.
+1. Select **Apps**, select the … button of the **Machine Ordering App** and select **Play**.
 
 1. When the application opens select **Allow** for the Office 365 Users connection.
 
@@ -63,3 +63,20 @@ In this task, you will import the completed App in a day module 2 solution.
 1. Select **Tables**, search for **Machine Order** and select on it.
 
 1. Select the Data tab and make sure you have at least one record in the table.
+
+## Summary
+
+In this module task you stepped through the process of manually importing the Contoso Coffee Power Platform solution into an environment.
+
+## Troubleshooting
+
+This module assumed that you have the ability to create a new Developer environment is one has not been assigned to you. Organizations may [Control environment creation](https://learn.microsoft.com/power-platform/admin/control-environment-creation). If you are unable to create a new environment you will need to request a development environment.
+
+To import the Contoso Coffee solution you will need a role of [Environment Maker](https://learn.microsoft.com/power-platform/admin/database-security#environments-with-a-dataverse-database) assigned in the assigned environment.
+
+To use the Contoso Coffee solution the following connectors must be enabled in the [Data Loss Prevention Policy](https://learn.microsoft.com/power-platform/admin/prevent-data-loss) applied to your environment.
+
+|Connector| Description |
+|---------|-------------|
+|[Microsoft Dataverse](https://learn.microsoft.com/connectors/commondataserviceforapps/)| Load and save Machine requests |
+|[Office 365 Users](https://learn.microsoft.com/connectors/office365users/) | Used to   perform various actions such as get your user profile |
