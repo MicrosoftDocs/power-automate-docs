@@ -71,7 +71,7 @@ The following triggers will not support the Environment parameter since they're 
 * Specify the environment dynamically 
   * To set the Environment parameter manually, select **Enter custom value** at the end of the Environment parameter selector and provide the root URL of a Power Platform environment in the format **https://\<yourenvironmentid\>.crm.dynamics.com/**. 
   * The environment can be provided as a string, expression, environment variable, or as dynamic content from other actions or triggers in the flow.
-  * To get the root URL of an environment, you can open the details page of the environment from the [Power Platform Admin Center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management] connector](/connectors/flowmanagement/).
+  * To get the root URL of an environment, you can open the details page of the environment from the [Power Platform Admin Center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management connector](/connectors/flowmanagement/).
   * For actions like **Add a row** that depend on the table schema from a specific environment, the schema won't be automatically retrieved when using an expression, dynamic content, or environment variable to specify the environment. The request must be manually created using the LogicalCollectionName of the table and the body for the request in JSON format similar to a [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api). For example, **accounts** and  **{ "name": "Contoso Marketing" }**.
 * Service principal connections can be used to connect to other environments. 
 
