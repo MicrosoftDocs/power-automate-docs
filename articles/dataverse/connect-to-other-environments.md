@@ -21,16 +21,18 @@ search.audienceType:
 
 # Connect to other environments using the Microsoft Dataverse connector
 
-You can automate apps, data, and processes across Power Platform environments through supported actions and triggers in Microsoft Dataverse connector. 
+You can automate apps, data, and processes across Power Platform environments through supported actions and triggers in the Microsoft Dataverse connector. 
 
-[!IMPORTANT]
-The updated actions and triggers with the Environment parameter are rolling out as a public preview to all [Power Platform regions](/power-automate/regions-overview) by the end of October 2023.
+
+Previously, the Microsoft Dataverse connector supported the flow's current environment, and the Dynamic 365 (deprecated) and Microsoft Dataverse (legacy) connectors were the available ways to connect to Dataverse in other environments from cloud flows. With the addition of the Environment parameter, the Microsoft Dataverse connector's triggers and action have the same flexibility of connecting to either the flow's current environment or choosing another. 
+
+During the preview of this capability, separate actions and triggers with names ending in **selected environment (preview)** will be available to add to both new and existing flows. After the preview, Dataverse connector actions in existing flows will be automatically updated to include the Environment parameters. There's no action needed from flow owners or changes to existing flow behavior as part of this update.
+
+[!IMPORTANT] The updated actions and triggers with the Environment parameter are rolling out as a public preview to all [Power Platform regions](/power-automate/regions-overview) by the end of October 2023.
 
 ![A diagram of a Power Automate cloud flow being triggered when a row changes in the Contoso Support environment, and taking actions in other Contoso Services and Contoso Field Service environments to List rows, Add a row, and Perform an action in the example Contoso Corporation Microsoft Entra tenant.. ](<Connecting to other environments-1.png>)
 
 ### How to add actions that connect to other environments
-
-
 
 1. Sign in to Power Automate at https://make.powerautomate.com 
 2. Create a new cloud flow such as an instant flow with the **Manually trigger a flow** trigger, or open an existing flow.
