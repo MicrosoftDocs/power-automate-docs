@@ -15,6 +15,8 @@ search.audienceType:
 
 # Use flows in teams created from templates
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 Microsoft Teams templates are pre-built definitions of a team's structure that are designed around a specific business need or project.
 
 Power Automate templates and team templates are meant to address similar business scenarios. When you create a team with a Microsoft-provided team template, you get a curated selection of flow templates that are specific to your team scenario.

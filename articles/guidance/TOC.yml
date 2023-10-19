@@ -116,8 +116,8 @@
               href: ./automation-kit/setup/setup-checklist.md
             - name: Install using the command line
               href: ./automation-kit/setup/command-line-install.md
-            - name: Set up the scheduler
-              href: ./automation-kit/setup/scheduler.md
+            - name: Set up the Control Center
+              href: ./automation-kit/setup/control-center.md
             - name: Set up the main environment
               href: ./automation-kit/setup/main.md
             - name: Set up the satellite environments
@@ -140,6 +140,18 @@
               href: ./automation-kit/dlp-impact-analysis.md
         - name: Use the automation kit
           href: ./automation-kit/use-automation-kit.md
+        - name: Control Center
+          items:
+            - name: Overview
+              href: ./automation-kit/control-center-overview.md
+            - name: Desktop flow audit logs
+              href: ./automation-kit/control-center-desktop-flow-audit-logs.md
+            - name: Desktop flow monitoring
+              href: ./automation-kit/control-center-desktop-flow-monitoring.md
+            - name: Desktop flow scheduler
+              href: ./automation-kit/control-center-desktop-flow-scheduler.md
+            - name: Historical voluminous data monitoring
+              href: ./automation-kit/control-center-historical-voluminous-data-monitoring.md
         - name: Test an end-to-end scenario
           href: ./automation-kit/test-end-to-end.md
         - name: Limitations

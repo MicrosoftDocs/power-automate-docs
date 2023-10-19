@@ -10,12 +10,17 @@ ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/21/2023
+ms.date: 08/04/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
 # Set up the automation kit scheduler
+
+The Automation Kit scheduler was included up to the May 2023 release.
+
+> [!NOTE]
+> After the June 2023 release the scheduler, functionality has been moved to the new [Control Center](./control-center.md).
 
 When you install the managed Power Platform scheduler solution, make sure you follow these required steps.
 
@@ -23,8 +28,8 @@ When you install the managed Power Platform scheduler solution, make sure you fo
 
 1. Install the [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1) from App Source into the target environment.
 
-1. In the **Assets** section in the latest GitHub release of the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) file, download **AutomationKitControlCenter_*_managed.zip** by selecting it.
+1. In the **Assets** section in the latest GitHub release of the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) file, download **AutomationKitScheduler_*_managed.zip** by selecting it.
 
-1. Import the downloaded AutomationKitControlCenter_*_managed.zip file.
+1. Import the downloaded AutomationKitScheduler_*_managed.zip file.
 
     To learn how to import, go to [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions).

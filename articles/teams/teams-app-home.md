@@ -21,6 +21,8 @@ ms.reviewer: gtrantzas
 
 # Manage flows in Microsoft Teams
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 The **Home** tab provides an overview of your flows from your organization's default environment.
 
 By default, the **Home** tab is filtered to display flows that use Microsoft Teams triggers and actions. You can select **Microsoft Teams flows** to change the filter to display all your flows.

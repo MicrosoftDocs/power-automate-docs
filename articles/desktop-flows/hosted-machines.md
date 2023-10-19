@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/22/2023
+ms.date: 09/21/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -30,35 +30,32 @@ Key capabilities:
 
 - **Connect to your own virtual network**: Securely communicate with each other, the Internet, and your on-premises networks.
 
+    > [!NOTE]
+    > Sign-in access is only available to the creator of the hosted machine.
+
+
 ## Licensing requirements
 
 To use hosted machines, you need the following licensing option:
 
-- Use your existing **Power Automate Premium plan** (previously Power Automate per user plan with attended RPA) or **Power Automate Process plan** (previously Power Automate per flow) and the **Power Automate hosted RPA add-on**.
+- Use your existing **Power Automate Premium plan** (previously Power Automate per user plan with attended RPA) and the **Power Automate hosted RPA add-on**.
 
-   Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
+   Assign to your environment as many add-ons as the number of hosted machines you want to run in your environment.
 
 You'll also need the following prerequisite licenses: Windows, Intune, Azure Active Directory.
 
 
-### Licensing requirements during grace period
+### Trial licenses for evaluation
 
-> [!IMPORTANT]
-> To enable a smooth transition for customers using the hosted machines feature during the preview phase, a grace period will be provided to enable customers to procure the appropriate hosted RPA add-on in order to continue using the feature. Entitlements for using the hosted machines during the preview phase will be extended until August 31st, 2023. After this date, you'll need the hosted RPA add-on to continue using the hosted machine group feature.
+To evaluate hosted machines, you need one of the following trial licensing options:
 
-To use hosted machines during the grace period, you need one of the following licensing options:
+- Use the **Power Automate Premium** plan (previously Power Automate per user plan with attended RPA ) and the **Power Automate hosted RPA add-on trials**.
 
-- Use your existing **Power Automate Premium** (previously Power Automate per user plan with attended RPA) and the **Power Automate Process** plan (previously Power Automate unattended RPA add-on).
-
-    During the grace period, hosted machines will be available for the existing licenses. Assign to your environment as many add-ons as the number of hosted machines you want to run in parallel in your environment.
-
-- Use the **Power Automate Premium trial** (previously Power Automate per user plan with attended RPA trial) and the **Power Automate Process** plan (previously Power Automate unattended RPA add-on).
-
-    The plans mentioned above have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the **Power Automate Process** plan (previously Power Automate unattended RPA add-on) to the targeted environments.
+    The Power Automate hosted RPA add-on have trial versions that last 30 days and can be extended once to a total of 60 day. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the hosted RPA add-ons to the targeted environment.
 
 - Use the **90-days self-assisted premium trial.**
 
-    Trial users are granted the capacity of one hosted machine per environment. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
+    Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
 ## Prerequisites
 
@@ -188,9 +185,6 @@ To create a hosted machine:
 
 1. A new tab in the browser should open and load the hosted machine access. Sign in with your work or school account.
 
-    > [!NOTE]
-    > Sign-in access is only available to the creator of the hosted machine.
-
 1. The hosted machine is preregistered into the Power Automate environment.
 
     :::image type="content" source="media/hosted-machines/power-automate-machine-runtime.png" alt-text="Screenshot of the Power Automate machine runtime application.":::
@@ -230,13 +224,14 @@ You can personalize your hosted machines by providing your own Windows image dir
 
 Custom VM images must meet the following requirements:
 
-- Windows 10 Enterprise version 20H2 or later.
-- Windows 11 Enterprise 21H2 or later.
-- Generation 2 images.
-- Generalized VM image.
-- Single Session VM images (multi-session isn’t supported).
-- No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition).
-- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to the size specified in SKU description of the Windows 365 license.
+- Windows 10 Enterprise version 20H2 or later
+- Windows 11 Enterprise 21H2 or later
+- Generation 2 image
+- Generalized VM image
+- Single Session VM images (multi-session isn’t supported)
+- No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
+- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to 256-GB
+- The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
 
@@ -466,6 +461,9 @@ You can share your hosted machines with other users so they can run desktop flow
 Power Automate enables you to trigger desktop flows on your hosted machines as you do on standard machines. To implement this functionality, you need a [desktop flow connection](desktop-flow-connections.md) to your hosted machine.
 
 To find more information about triggering desktop flows from cloud flows, go to [Trigger desktop flows from cloud flows](link-pad-flow-portal.md).
+
+> [!NOTE]
+> If you intend to run unattended desktop flows on your hosted machine using the default virtula machine (VM) image option, you'll need to [disable Network Level Authentication](/troubleshoot/power-platform/power-automate/ui-flows-run-failed-with-aadlogonfailure-error) on your machine.
 
 ## Permissions based on security roles
 
