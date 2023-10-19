@@ -436,7 +436,7 @@
     items:
     - name: Configure actions and the actions pane
       href: ./desktop-flows/actions-pane.md
-    - name: Assets library (preview)
+    - name: Assets library
       href: ./desktop-flows/assets-library.md
     - name: Manage the flow designer workspace
       href: ./desktop-flows/designer-workspace.md
@@ -478,7 +478,7 @@
       href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
-  - name: Custom actions (preview)
+  - name: Custom actions
     items:
     - name: Custom actions
       href: ./desktop-flows/custom-actions.md
@@ -488,7 +488,7 @@
       href: ./desktop-flows/upload-custom-actions.md
     - name: Use custom actions
       href: ./desktop-flows/use-custom-actions.md
-    - name: Actions SDK for .NET reference (preview)
+    - name: Actions SDK for .NET reference
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
   - name: Troubleshooter (preview)
     href: ./desktop-flows/troubleshooter.md
