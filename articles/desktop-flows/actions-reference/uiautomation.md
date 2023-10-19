@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/19/2023
-ms.author: NikosMoutzourakis
+ms.author: nimoutzo
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
