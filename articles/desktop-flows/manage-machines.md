@@ -192,7 +192,7 @@ Although you can't delete a machine from the Power Automate machine runtime, you
 ## Switch from gateways to direct connectivity
 
 > [!IMPORTANT]
-> Gateways for desktop flows are now deprecated. This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities.
+> Gateways for desktop flows are no longer supported. Switch to our machine-management capabilities.
 
 > [!NOTE]
 > To determine which desktop flow connections that are still using a gateway:

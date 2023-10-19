@@ -20,6 +20,8 @@ ms.reviewer: gtrantzas
 
 # Create an approval from the approvals app
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 You can trigger an approval at any time from the approvals app in Teams.
 
 ## Start an approval from the approvals app
