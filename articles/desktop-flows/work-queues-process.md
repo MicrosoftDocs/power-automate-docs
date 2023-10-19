@@ -11,9 +11,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Process work queues (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Process work queues
 
 Work queue processing refers to the management of a list of work items that need to be completed in a particular order. This list contains information about each item, such as its name, priority, expiration date, status, and the actual value to be processed.
 
@@ -216,7 +214,7 @@ Well done, you just completed a more advanced scenario that included hybrid work
 
 ### Desktop flow-based work queue processing in Power Automate desktop (PAD)
 
-#### Process work queue items (Preview) & Update work queue item (Preview) action examples
+#### Process work queue items & Update work queue item action examples
 
 The first step to using work queue actions in Power Automate desktop is to create a work queue in the environment that you're working in and load some queue items with data to be consumed downstream.  Queue items can be loaded into a work queue through a desktop flow, cloud flow or in bulk as outlined [here](work-queues-bulk-import.md) which populates queue items.  In this example, some queue items have been added manually into a work queue to explain how actions in Power Automate desktop can be used.
 
@@ -228,7 +226,7 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
    :::image type="content" source="media/work-queues/work-queue-pad-df.png" alt-text="Screenshot of desktop flow process used for this tutorial." lightbox="media/work-queues/work-queue-pad-df.png":::
 
-1. The **Process work queue items (Preview)** action is used to designate which work queue to consume items from and process in your desktop flow.  The action can be configured to select a work queue from a list using the dropdown arrow, pass a variable including the queue name. When run, this action works by bringing in the first (oldest) item from the work queue into your flow that contains a status of **queued**. Once the queue item begins processing in your flow, its status automatically changes to **processing**.
+1. The **Process work queue items** action is used to designate which work queue to consume items from and process in your desktop flow.  The action can be configured to select a work queue from a list using the dropdown arrow, pass a variable including the queue name. When run, this action works by bringing in the first (oldest) item from the work queue into your flow that contains a status of **queued**. Once the queue item begins processing in your flow, its status automatically changes to **processing**.
 
    :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction.png":::
 
@@ -258,7 +256,7 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
    For instance, let's say there was a requirement to enter the invoice ID into a field of a finance system as part of a process where you're automating the UI of a web or desktop app – you can call that value using **%JsonAsCustomObject.InvoiceId%** to populate a text field and push a button.
 
-1. Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the **Update work queue item (Preview)** action is used to change the status of the work queue item to **Processed** and the **processing result** field can be used to input some optional notes. If the **expires** field is left blank, the new queue item will retain the default time to live defined in the work queue properties.
+1. Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the **Update work queue item** action is used to change the status of the work queue item to **Processed** and the **processing result** field can be used to input some optional notes. If the **expires** field is left blank, the new queue item will retain the default time to live defined in the work queue properties.
 
    :::image type="content" source="media/work-queues/work-queue-pad-updatewqi.png" alt-text="Screenshot example of update work queue item action inputs." lightbox="media/work-queues/work-queue-pad-updatewqi.png":::
 
@@ -274,9 +272,9 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqiresults.png" alt-text="Screenshot example of updated status for work queue items processed in the flow portal." lightbox="media/work-queues/work-queue-pad-wqiresults.png":::
 
-#### Add work queue item (Preview) example
+#### Add work queue item example
 
-The **Add work queue item (Preview)** enables desktop flow users to populate work queue items into a work queue which has been set up in the flow portal.
+The **Add work queue item** enables desktop flow users to populate work queue items into a work queue which has been set up in the flow portal.
 
 In this example an excel file in .csv is dropped into a directory on a daily basis and each row needs to be added to a work queue.
 
@@ -294,7 +292,7 @@ Action 5 introduces the **For each** loop which is used to iterate through each 
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqidatarow.png" alt-text="Screenshot example for data row generated by the for each loop." lightbox="media/work-queues/work-queue-pad-wqidatarow.png":::
 
-All of the preceding actions in this example desktop flow are now incorporated into setting the values for the **Add work queue item (Preview)** action.
+All of the preceding actions in this example desktop flow are now incorporated into setting the values for the **Add work queue item** action.
 
    :::image type="content" source="media/work-queues/work-queue-pad-addwqi.png" alt-text="Screenshot example of add work queue item action configured in the desktop flow." lightbox="media/work-queues/work-queue-pad-addwqi.png":::
 
@@ -315,6 +313,30 @@ When the process is run, each data row in the imported CSV will create a work qu
    :::image type="content" source="media/work-queues/work-queue-pad-addwqiinportal.png" alt-text="Screenshot example of work queue items visible in the portal containing a queued status." lightbox="media/work-queues/work-queue-pad-addwqiinportal.png":::
 
 These are just some of many ways that work queue actions can be used in PAD.  Take some time to explore and find creative uses to incorporate work queues into your Power Automate flows!
+
+#### Requeue item with delay example
+
+The **Requeue item with delay** action enables desktop flow users to requeue items and set a delay period at which time the item it can be released again for processing.
+
+In this example, there is a work queue loaded with items which are set to expire in 24 hours, but they cannot be processed in time because there is some ongoing routine system maintenance being performed by IT and the items need to be requeued.  The maintenance will be completed overnight, so we will proceed to delay each queue item by 24 hours and then set them to expire 24 hours after the release period.
+
+   :::image type="content" source="media/work-queues/work-queue-requeue-process.png" alt-text="Screenshot example of process utilizing requeue item and add delay action." lightbox="media/work-queues/work-queue-requeue-datetime.png":::
+
+The first three actions of this example process are date time actions. The 'Get current date and time' action captures the system datetime at the moment the action is run.  Next we used the 'Add to datetime' action to cover two requirements, first we need to define the delay time by adding 24 hours to the current datetime - then we need to add 48 hours to the current datetime as an expiry.
+
+   :::image type="content" source="media/work-queues/work-queue-requeue-datetime.png" alt-text="Screenshot example of capturing system datetime." lightbox="media/work-queues/work-queue-requeue-datetime.png":::
+
+   :::image type="content" source="media/work-queues/work-queue-requeue-delay.png" alt-text="Screenshot example of adding to the datetime to create a delay." lightbox="media/work-queues/work-queue-requeue-delay.png":::
+
+   :::image type="content" source="media/work-queues/work-queue-requeue-expire.png" alt-text="Screenshot example of adding to the datetime to create an expiry time." lightbox="media/work-queues/work-queue-requeue-expire.png":::
+
+Next in the example, the 'Process work queue items' action is configured to point to the loaded work queue and the 'Requeue item with delay' is placed within the loop.
+
+   :::image type="content" source="media/work-queues/work-queue-requeue.png" alt-text="Screenshot example of requeue item with delay." lightbox="media/work-queues/work-queue-requeue.png":::
+
+The values generated for the delay and the expiry can now be passed into the 'Requeue item with delay' action.  The 'work queue item' field is populated by the variable produced by the loop - this instructs which queue item to requeue.  Next we plugged in the values created using the datetime actions for the 'delay until' and 'expires' fields.  The 'delay until' is mandatory, but you can use 'expires' and 'processing result' at your discretion.  
+
+With this simple process, you can requeue all available items in a queue, delay them for a certain time, with options to also set an expiration date and processing result.
 
 ## Next steps
 

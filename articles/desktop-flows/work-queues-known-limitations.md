@@ -9,9 +9,7 @@ contributors:
 author: rpapostolis
 ---
 
-# Known limitations for work queues (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Known limitations for work queues
 
 The following table lists known limitations for work queues in Power Automate for desktop.
 
