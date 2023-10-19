@@ -4,7 +4,7 @@ description: Learn about how to create custom actions in Power Automate for desk
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/26/2023
+ms.date: 10/19/2023
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors: 
@@ -129,7 +129,7 @@ In order to separate custom actions in categories, subcategories, modify the **[
 
 The Order property dictates the order by which actions are previewed in the designer.
 
-Action1 belongs in the category "TestCategory" and it's the first action of the module (this way you explain Order and category with an example).
+`Action1` belongs in the category "TestCategory" and it's the first action of the module (this way you explain Order and category with an example).
 
 ```csharp
 [Action(Id = "Action1", Order = 1, Category = "TestCategory")]

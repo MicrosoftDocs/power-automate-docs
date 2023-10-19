@@ -5,7 +5,7 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 06/20/2023
+ms.date: 10/19/2023
 ms.author: dipapa
 ms.reviewer: 
 contributors:

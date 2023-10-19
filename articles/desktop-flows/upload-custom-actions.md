@@ -4,7 +4,7 @@ description: Learn about how to upload custom developed actions for desktop flow
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/23/2023
+ms.date: 10/19/2023
 ms.author: dipapa
 ms.reviewer: jpapadimitriou
 contributors:
