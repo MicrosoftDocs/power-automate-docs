@@ -1,12 +1,11 @@
 ---
 title: Power Automate for desktop architecture
 description: Power Automate for desktop architecture
-author: georgiostrantzas
-
+author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/24/2023
-ms.author: marleon
+ms.author: matp
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
