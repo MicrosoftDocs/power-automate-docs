@@ -4,7 +4,7 @@ description: Learn about the available AI Builder action.
 author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/26/2023
+ms.date: 10/19/2023
 ms.author: matp
 ms.reviewer: cochamos
 contributors:
@@ -45,7 +45,7 @@ Learn more about the Text generation model (preview) in [the Text generation mod
 :::image type="content" source="media/aibuilder/create-text-with-gpt.png" alt-text="Screenshot of the Create instructions button in the Create text with GPT action.":::
 
 >[!IMPORTANT]
->It is mandatory that you add either a **Display input dialog** or **Display message** action and pass either of the generated outputs of the **Create text with GPT (preview)** action (**PredictV2Response**, **PredictV2TextResponse**) in its body. This will require a human review of the generated messages.  If either of those steps is omitted, the respective flow(s) will result in an error.
+>It's mandatory that you add either a **Display input dialog** or **Display message** action and pass either of the generated outputs of the **Create text with GPT (preview)** action (**PredictV2Response**, **PredictV2TextResponse**) in its body. This will require a human review of the generated messages.  If either of those steps is omitted, the respective flow(s) will result in an error.
 
 Example approach: Add a Display message action with Yes - No buttons to require a human review of the generated content. An error appears when this action doesn't exist. Learn more about the Display message action in [Message boxes actions](display.md).
 
