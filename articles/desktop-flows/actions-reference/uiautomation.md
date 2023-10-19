@@ -2,11 +2,10 @@
 title: UI automation actions reference
 description: See all the available UI automation actions.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/27/2023
-ms.author: marleon
+ms.date: 10/19/2023
+ms.author: NikosMoutzourakis
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -221,7 +220,8 @@ Fills a text box in a window with the specified text.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text box|No|[UI element](../ui-elements.md)||The text box to populate|
-|Text to fill-in|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to fill in the text field|
+|Text to fill in|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to fill in the text field|
+|Simulate action|N/A|Boolean value|False|Simulate the keystrokes programmatically when populating text to UI text field elements. This option doesn't require the UI element's screen to be focused, it will not automatically bring it to the foreground. Note this option can be applied only to left click action and it might not be applicable to every UI element.
 |If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
 |Click before populating|Yes|Left click, Double click, No|Left click|Specify whether a left mouse click is performed before populating the text field or not.|
 
@@ -317,7 +317,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Failed to select the specified options in the drop down list|Indicates a problem selecting the specified options in the drop down list|
+|Failed to select the specified options in the drop-down list|Indicates a problem selecting the specified options in the drop-down list|
 
 ## <a name="getwindowbase"></a> Get window
 
@@ -358,7 +358,7 @@ Activates and brings to the foreground a specific window.
 |Window|No|[UI element](../ui-elements.md)||The window UI element|
 |Window title|Yes|[Text value](../variable-data-types.md#text-value)||The window title. Wildcards can be used, like '?' or '*'.|
 |Window instance|No|[Numeric value](../variable-data-types.md#numeric-value)||The instance or handle of the window to focus|
-|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to use.|
+|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class might help differentiate between them. In this case, enter the class of the window to use.|
 
 ### Variables produced
 
@@ -370,7 +370,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
 |Can't focus window|Indicates a problem focusing the specified window|
-|Can't perform window-related action in non interactive mode|Indicates a problem performing window-related action in non-interactive mode|
+|Can't perform window-related action in noninteractive mode|Indicates a problem performing window-related action in non-interactive mode|
 
 ## <a name="setwindowstatebase"></a> Set window state
 
@@ -384,7 +384,7 @@ Restores, maximizes or minimizes a specific window.
 |Window|No|[UI element](../ui-elements.md)||The window UI element|
 |Window title|Yes|[Text value](../variable-data-types.md#text-value)||The window title. Wildcards can be used, like '?' or '*'.|
 |Window instance|No|[Numeric value](../variable-data-types.md#numeric-value)||The instance or handle of the window to set the state of|
-|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to use.|
+|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class might help differentiate between them. In this case, enter the class of the window to use.|
 |Window state|N/A|Restored, Maximized, Minimized|Restored|Choose in which state to display the window|
 
 ### Variables produced
@@ -397,7 +397,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
 |Can't set window state|Indicates a problem setting the window state of the specified window|
-|Can't perform window-related action in non interactive mode|Indicates a problem performing window-related action in non-interactive mode|
+|Can't perform window-related action in noninteractive mode|Indicates a problem performing window-related action in non-interactive mode|
 
 ## <a name="setwindowvisibilitybase"></a> Set window visibility
 
@@ -411,7 +411,7 @@ Shows a hidden window or hides a visible window.
 |Window|No|[UI element](../ui-elements.md)||The window UI element|
 |Window title|Yes|[Text value](../variable-data-types.md#text-value)||The window title. Wildcards can be used, like '?' or '*'.|
 |Window instance|No|[Numeric value](../variable-data-types.md#numeric-value)||The instance or handle of the window to set the visibility of|
-|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to use.|
+|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class might help differentiate between them. In this case, enter the class of the window to use.|
 |Visibility|N/A|Visible, Hidden|Hidden|Choose in which state to set the window visibility to|
 
 ### Variables produced
@@ -424,7 +424,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
 |Can't set window visibility|Indicates a problem setting the visibility of the specified window|
-|Can't perform window-related action in non interactive mode|Indicates a problem performing window-related action in non-interactive mode|
+|Can't perform window-related action in noninteractive mode|Indicates a problem performing window-related action in non-interactive mode|
 
 ## <a name="movewindowbase"></a> Move window
 
@@ -438,7 +438,7 @@ Sets the position of a specific window.
 |Window|No|[UI element](../ui-elements.md)||The window UI element|
 |Window title|Yes|[Text value](../variable-data-types.md#text-value)||The window title. Wildcards can be used, like '?' or '*'.|
 |Window instance|No|[Numeric value](../variable-data-types.md#numeric-value)||The instance or handle of the window to move|
-|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If you have two windows with the same title, Window Class may help differentiate between them. In this case, enter the class of the window to use.|
+|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If you have two windows with the same title, Window Class might help differentiate between them. In this case, enter the class of the window to use.|
 |Position X|No|[Numeric value](../variable-data-types.md#numeric-value)||The X position of the window|
 |Position Y|No|[Numeric value](../variable-data-types.md#numeric-value)||The Y position of the window|
 
@@ -452,7 +452,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
 |Can't move window|Indicates a problem moving the specified window|
-|Can't perform window-related action in non interactive mode|Indicates a problem performing window-related action in non-interactive mode|
+|Can't perform window-related action in noninteractive mode|Indicates a problem performing window-related action in non-interactive mode|
 
 ## <a name="resizewindowbase"></a> Resize window
 
@@ -466,7 +466,7 @@ Sets the size of a specific window.
 |Window|No|[UI element](../ui-elements.md)||The window UI element|
 |Window title|Yes|[Text value](../variable-data-types.md#text-value)||The window title. Wildcards can be used, like '?' or '*'.|
 |Window instance|No|[Numeric value](../variable-data-types.md#numeric-value)||The instance or handle of the window to resize|
-|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to use|
+|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class might help differentiate between them. In this case, enter the class of the window to use|
 |Width|No|[Numeric value](../variable-data-types.md#numeric-value)||The new width, in pixels|
 |Height|No|[Numeric value](../variable-data-types.md#numeric-value)||The new height, in pixels|
 
@@ -480,7 +480,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
 |Can't resize window|Indicates a problem resizing the specified window|
-|Can't perform window-related action in non interactive mode|Indicates a problem performing window-related action in non-interactive mode|
+|Can't perform window-related action in noninteractive mode|Indicates a problem performing window-related action in non-interactive mode|
 
 ## <a name="closewindowbase"></a> Close window
 
@@ -494,7 +494,7 @@ Closes a specific window.
 |Window|No|[UI element](../ui-elements.md)||The window UI element|
 |Window title|Yes|[Text value](../variable-data-types.md#text-value)||The window title. Wildcards can be used, like '?' or '*'.|
 |Window instance|No|[Numeric value](../variable-data-types.md#numeric-value)||The instance or handle of the window to close|
-|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to use.|
+|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class might help differentiate between them. In this case, enter the class of the window to use.|
 
 ### Variables produced
 
@@ -506,7 +506,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |Window wasn't found|Indicates that the specified window wasn't found|
 |Can't close window|Indicates a problem closing the specified window|
-|Can't perform window-related action in non interactive mode|Indicates a problem performing window-related action in non-interactive mode|
+|Can't perform window-related action in noninteractive mode|Indicates a problem performing window-related action in non-interactive mode|
 
 ## <a name="ifwindowcontainsaction"></a> If window contains
 
@@ -584,7 +584,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Can't check image in non interactive mode|Indicates that an image can't be identified in non-interactive mode|
+|Can't check image in noninteractive mode|Indicates that an image can't be identified in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
 
 ## <a name="usedesktop"></a> Use desktop
@@ -597,7 +597,7 @@ Performs desktop and taskbar related operations.
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to perform a click on|
 |Click type|N/A|Left click, Right click, Double click|Left click|The kind of click to perform|
-|Launch new application when left-clicking on the taskbar|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|When this parameter is set to 'true', it ensures that a new window of an application will be created when left-clicking on its icon in the 'quick launch' bar, aka the taskbar of Windows 7 or above. Uncheck this option to bring an already running instance of the application to the foreground.|
+|Launch new application when left-clicking on the taskbar|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|When this parameter is set to 'true', it ensures that a new window of an application will be created when left-clicking on its icon in the 'quick launch' bar, also known as the taskbar of Windows 7 or above. Uncheck this option to bring an already running instance of the application to the foreground.|
 
 ### Variables produced
 
@@ -662,7 +662,7 @@ This action waits until a specific image appears on the screen or on the foregro
 |Exception|Description|
 |-----|-----|
 |Wait for image failed|Indicates that the wait operation failed|
-|Can't check image in non interactive mode|Indicates that an image can't be identified in non-interactive mode|
+|Can't check image in noninteractive mode|Indicates that an image can't be identified in non-interactive mode|
 |Invalid subregion coordinates|Indicates that the coordinates of the given subregion were invalid|
 
 ## <a name="hoveronelement"></a> Hover mouse over UI element in window
@@ -695,6 +695,7 @@ Clicks on any UI element of a window.
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to click on|
 |Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The kind of click to perform|
+|Simulate action|N/A|Boolean value|False|Specify whether to simulate the move of the mouse cursor over the element prior to clicking. This option does not require the UI element's screen to be focused, it will not automatically bring it to the foreground. Note this option can be applied only to left click action and it might not be applicable to every UI element.|
 |Mouse position relative to UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element the mouse will be moved to prior to clicking|
 |Offset X|Yes|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels to the right|
 |Offset Y|Yes|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels down|
@@ -797,7 +798,7 @@ This action marks the beginning of a conditional block of actions depending on w
 |Window title|Yes|[Text value](../variable-data-types.md#text-value)||The window title. Wildcards can be used, like '?' or '*'.|
 |Window|No|[UI element](../ui-elements.md)||The window UI element|
 |Window instance|No|[Numeric value](../variable-data-types.md#numeric-value)||The instance or handle of the window to check|
-|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to be used.|
+|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class might help differentiate between them. In this case, enter the class of the window to be used.|
 |Check if window|N/A|Is open, Isn't open, Is focused, Isn't focused|Is open|The state of the window to be checked|
 
 ### Variables produced
@@ -820,7 +821,7 @@ Suspends the execution or the process until a specific window opens, closes, get
 |Window title|Yes|[Text value](../variable-data-types.md#text-value)||The window title. Wildcards can be used, like '?' or '*'.|
 |Window|No|[UI element](../ui-elements.md)||The window UI element|
 |Window instance|No|[Numeric value](../variable-data-types.md#numeric-value)||The instance or handle of the window to check|
-|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class may help differentiate between them. In this case, enter the class of the window to be used|
+|Window class|Yes|[Text value](../variable-data-types.md#text-value)||If there are two windows with the same title, window class might help differentiate between them. In this case, enter the class of the window to be used|
 |Wait for window to|N/A|Open, Close, Become focused, Lose focus|Open|Whether to wait for a specific window to open, close, become focused (i.e become the foreground window), or lose focus (i.e stop being the foreground window).|
 |Focus window after it opens|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Bring the window to the front after it opens, so later actions are directed at this window|
 
@@ -834,6 +835,6 @@ This action doesn't produce any variables.
 |-----|-----|
 |Can't focus window|Indicates a problem focusing the specified window|
 |Wait for window failed|Indicates that the wait operation failed|
-|Can't perform window-related action in non interactive mode|Indicates a problem performing window-related action in non-interactive mode|
+|Can't perform window-related action in noninteractive mode|Indicates a problem performing window-related action in non-interactive mode|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
