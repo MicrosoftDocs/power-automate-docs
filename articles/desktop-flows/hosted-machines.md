@@ -229,7 +229,7 @@ Custom VM images must meet the following requirements:
 - Generalized VM image
 - Single Session VM images (multi-session isn’t supported)
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
-- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to the size specified in the SKU description of the Windows 365 license
+- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to 256-GB
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
