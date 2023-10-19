@@ -23,6 +23,8 @@ ms.reviewer: angieandrews
 
 # Create your first adaptive card
 
+[!INCLUDE[teams-rebranding](includes/teams-rebranding.md)]
+
 Adaptive cards within Power Automate may either share blocks of information or collect data via a form for a given data source.
 
 In either case, you'll need to sketch out which datasets you'll share, and/or what data the form will need to collect.

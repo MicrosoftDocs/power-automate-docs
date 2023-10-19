@@ -15,6 +15,8 @@ search.audienceType:
 
 # Use flows in Microsoft Teams
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 Power Automate flows can be used in three scenarios with Teams.
 
 Scenario|Description

@@ -26,7 +26,13 @@ search.audienceType:
 
 ## List of Cloud Connectors currently available in Power Automate for desktop
 - [SharePoint](/connectors/sharepointonline)
-- [OneDrive for business](/connectors/onedriveforbusiness)
+- [Excel Online (Business)](/connectors/excelonline)
+- [Microsoft Forms](/connectors/microsoftforms)
+- [Microsoft Teams](/connectors/teams)
 - [Office 365 Outlook (preview)](/connectors/office365)
-
+- [OneDrive](/connectors/onedrive)
+- [OneDrive for Business](/connectors/onedriveforbusiness)
+- [OneNote (Business) (preview)](/connectors/onenote)
+- [RSS](/connectors/rss)
+- [Word Online (Business)](/connectors/wordonlinebusiness)
 
