@@ -30,6 +30,10 @@ Key capabilities:
 
 - **Connect to your own virtual network**: Securely communicate with each other, the Internet, and your on-premises networks.
 
+    > [!NOTE]
+    > Sign-in access is only available to the creator of the hosted machine.
+
+
 ## Licensing requirements
 
 To use hosted machines, you need the following licensing option:
@@ -180,9 +184,6 @@ To create a hosted machine:
 1. Select **Open in browser**.
 
 1. A new tab in the browser should open and load the hosted machine access. Sign in with your work or school account.
-
-    > [!NOTE]
-    > Sign-in access is only available to the creator of the hosted machine.
 
 1. The hosted machine is preregistered into the Power Automate environment.
 
