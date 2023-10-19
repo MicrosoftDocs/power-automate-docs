@@ -59,14 +59,14 @@ Follow these steps to analyze the process with Copilot. You can analyze your pro
 
     There are two ways to open the process:
 
-    - if you wait until the import operation finishes, the process open automatically after the import. OR
-
+    - If you wait until the import operation finishes, the process open automatically after the import, OR
     - After steps 1 and 2, you see the Process Mining environment home page. Processes display as tiles. Select a process tile, or select the **All processes** link to list all processes. To open a process, select its name.
 
 ### Analyze your process in the Process Mining desktop app
 
-1. Open the Process Mining desktop app with the following steps:
-   1. Select the  Windows **Start** icon and enter **process mining** in the search bar.
+1. Open the Process Mining desktop app:
+   1. On the taskbar, select the  Windows **Start** icon.
+   1. In the search bar, enter **process mining**.
    1. On the right panel, select **Power Automate Process Mining** app.
 1. In the **My processes** tab, select your process mining environment with an imported process.
 1. Select the process to analyze.
