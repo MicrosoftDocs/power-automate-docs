@@ -20,6 +20,8 @@ ms.reviewer: gtrantzas
 
 # Manage your approvals from the approvals app in Teams
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 The approvals app in Teams gives you an overview of all the approvals that you have sent or received in your organization's default tenant. This includes approvals you might have received through chat or channel messages, direct approvals, and even approvals that come in through a flow.
 
 From here you can either approve or reject an approval you have received, or cancel an approval you have sent out.

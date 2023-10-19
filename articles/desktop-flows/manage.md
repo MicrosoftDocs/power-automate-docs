@@ -4,7 +4,7 @@ description: Learn how to manage desktop flows in the Power Automate portal.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/17/2023
+ms.date: 10/17/2023
 ms.author: appapaio
 ms.reviewer: gtrantzas
 contributor:
@@ -55,12 +55,17 @@ Follow these steps to share a desktop flow:
 1. Go to **My flows** > **Desktop flows**.
 1. Select the desktop flow you want to share, and then **Share**.
 1. Select **Add people**, and then enter the name of the person in your organization with whom you'd like to share the desktop flow.
-1. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
+
+   > [!NOTE]
+   >
+   > You can also enter a Microsoft Dataverse team name instead of the name of the person. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
+   
+5. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 
     - **Co-owner**: This access level gives the co-owner full permissions to the desktop flow. They can edit, share, and delete the desktop flow.
     - **User**: This access level gives permission to only use that desktop flow in a cloud flow and run it locally with Power Automate for desktop. No edit, rename, delete or share permissions are possible with this access. Alternatively, those users can create a copy of the desktop flow using the **Save as** option, and work independently.
 
-1. Select **Save**.
+6. Select **Save**.
 
    :::image type="content" source="media/manage-desktop-flows/sharing-ux.png" alt-text="Screenshot of the Share button.":::
 

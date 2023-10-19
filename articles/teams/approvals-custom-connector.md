@@ -25,6 +25,8 @@ search.audienceType:
 ---
 # Microsoft Teams approvals with custom connectors
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 You can use the approvals hub in Microsoft Teams to quickly integrate approvals workflows into existing line of business apps that do not have their own approvals system. You achieve this by using a custom connector to 'connect' to the existing line of business apps. 
 
 >[!TIP]
