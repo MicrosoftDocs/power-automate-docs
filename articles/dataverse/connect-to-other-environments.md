@@ -58,16 +58,16 @@ The below Microsoft Dataverse connector actions support connecting to other envi
 * [Upload a file or image](/power-automate/dataverse/upload-download-file)
 * [Download a file or image](/power-automate/dataverse/upload-download-file)
 
-The actions to **Search rows** and **Perform a changeset** request don't yet have preview actions with the Environment parameter.
+The actions to [Search rows](/power-automate/dataverse/search) and [Perform a changeset request](/power-automate/dataverse/change-set) don't yet have preview actions with the Environment parameter.
 
 The following triggers will support connecting to other environments but have not yet been released: 
 
-* When a row is added, modified or deleted
-* When an action is performed
+* [When a row is added, modified or deleted](/power-automate/dataverse/create-update-delete-trigger)
+* [When an action is performed](/power-automate/dataverse/action-trigger)
 
 The following triggers will not support the Environment parameter since they're only applicable to the same environment the flow is located in. 
 * When a flow step is run from a business process flow
-* When a row is selected
+* [When a row is selected](/power-automate/connection-cds#initiate-a-cloud-flow-from-dataverse)
 
 ### What is supported by the Environment parameter in the preview actions and triggers?
 * Connect to other environments in the same tenant as the connection used with the action or trigger.
@@ -78,9 +78,9 @@ The following triggers will not support the Environment parameter since they're 
   * The environment can be provided as a string, expression, environment variable, or as dynamic content from other actions or triggers in the flow.
   * To get the root URL of an environment, you can open the details page of the environment from the [Power Platform Admin Center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management connector](/connectors/flowmanagement/).
   * For actions like **Add a row** that depend on the table schema from a specific environment, the schema won't be automatically retrieved when using an expression, dynamic content, or environment variable to specify the environment. The request must be manually created using the LogicalCollectionName of the table and the body for the request in JSON format similar to a [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api). For example, **accounts** and  **{ "name": "Contoso Marketing" }**.
-* Service principal connections can be used to connect to other environments. 
+* Service principal connections can be used to connect to other environments.
 
 ### Limitations
+* Using instant flows with the Dataverse connection set to **Provided by run-only user** isn't supported yet.
 * The triggers **When a row is added, modified or deleted** and **When an action is performed** don't yet support the Environment parameter. Support is planned for November 2023. 
 * The actions to **Search rows** and **Perform a changeset** request don't yet have preview actions with the Environment parameter.
-* Using instant flows with the Dataverse connection set to **Provided by run-only user** isn't supported yet.
