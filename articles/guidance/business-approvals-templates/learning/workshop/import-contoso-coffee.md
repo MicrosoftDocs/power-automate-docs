@@ -18,7 +18,8 @@ Follow the steps below, if you did not complete already imported or have an envi
 
 1. Provide an Environment Name, select **Developer** for Type, select Region and click Next.
 
-![Screenshot of new developer environment](media/new-developer-environment.png)
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of new developer environment](media/new-developer-environment.png)
 
 1. Select Language, URL, and Currency. Select No for Deploy sample apps and data and then click Save.
 

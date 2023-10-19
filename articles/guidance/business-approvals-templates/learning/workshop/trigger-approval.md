@@ -62,7 +62,8 @@ In your created solution perform these steps:
 
 > NOTE: For more information on Datavere trigger parameters you can reference [Trigger flows when a row is added, modified, or deleted](/dataverse/create-update-delete-trigger)
 
-![Screenshot of Power Automate Dataverse trigger when Machine Order is Added](./media/power-automate-cloud-flow-dataverse-trigger.png)
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of Power Automate Dataverse trigger when Machine Order is Added](./media/power-automate-cloud-flow-dataverse-trigger.png)
 
 1. Select **New Step**.
 
@@ -70,11 +71,13 @@ In your created solution perform these steps:
 
 1. Select **Start business approval process** action.
 
-![Screenshot of adding Approvals kit start business approvals process inside Power Automate Cloud Flow](./media/power-automate-approvals-kit-custom-connector.png)
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of adding Approvals kit start business approvals process inside Power Automate Cloud Flow](./media/power-automate-approvals-kit-custom-connector.png)
 
 1. Select the workflow process that you published in the [First Approval](./first-approval.md) module.
 
-![Screenshot of adding Approvals kit start business approvals process inside Power Automate Cloud Flow](./media/power-automate-approvals-kit-connector-select-workflow.png)
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of adding Approvals kit start business approvals process inside Power Automate Cloud Flow](./media/power-automate-approvals-kit-connector-select-workflow.png)
 
 1. Select **Save**
 
@@ -84,23 +87,28 @@ Now that a cloud flow trigger has been defined for the **Machine Order** table p
 
 1. Select **Apps** and select the **Machine Ordering App**
 
-![Screenshot of starting the Contoso Coffee Machine Ordering app](./media/machine-ordering-app-play.png)
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of starting the Contoso Coffee Machine Ordering app](./media/machine-ordering-app-play.png)
 
 1. If prompted select Allow for the Office 365 users connector.
 
-![Screenshot of Power Platform Office 365 USers connection consent dialog](./media/office-365-users-connection-allow.png)
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of Power Platform Office 365 USers connection consent dialog](./media/office-365-users-connection-allow.png)
 
 1. Select a few machines and click **Compare**.
 
-![Screenshot of Contoso Coffee Machine Ordering app with multiple machines selected](./media/contoso-coffee-select-machines.png)
+  > [!div class="mx-imgBorder"]
+ ![Screenshot of Contoso Coffee Machine Ordering app with multiple machines selected](./media/contoso-coffee-select-machines.png)
 
 1. Select one of the machines and select **Submit**
 
-![Screenshot of Contoso Coffee Machine Ordering app for submit screen request](./media/contoso-coffee-submit-request.png)
+  > [!div class="mx-imgBorder"]
+ ![Screenshot of Contoso Coffee Machine Ordering app for submit screen request](./media/contoso-coffee-submit-request.png)
 
 1. Select OK to close the submitted Machine Request
 
-![Screenshot of Contoso Coffee Machine Ordering app for submit screen request](./media/contoso-coffee-submitted-request.png)
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of Contoso Coffee Machine Ordering app for submit screen request](./media/contoso-coffee-submitted-request.png)
 
 1. Close the application.
 
@@ -122,11 +130,13 @@ After submitting the Machine request the cloud flow should be triggered and begi
 
 1. Select **Approve**.
 
-![Screenshot of selecting an Approval in the Power Automate web portal](./media/power-automate-approvals-select.png)
+  > [!div class="mx-imgBorder"]
+ ![Screenshot of selecting an Approval in the Power Automate web portal](./media/power-automate-approvals-select.png)
 
 1. Select **Confirm** to approve the approval.
 
-![Screenshot of selecting an Approval in the Power Automate web portal](./media/power-automate-approvals-approve-confirm.png)
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of selecting an Approval in the Power Automate web portal](./media/power-automate-approvals-approve-confirm.png)
 
 1. Select **Done** to close the Approval once confirmed.
 
@@ -148,11 +158,13 @@ In this task use the Business Approval Management application of the Approvals K
 
 1. Select the completed approval.
 
-![Screenshot of active Business Approval Instances](./media/business-approval-management-approval-instances.png).
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of active Business Approval Instances](./media/business-approval-management-approval-instances.png).
 
 1. Review the details and outcome of the Approval
 
-![Screenshot of active Business Approval Details view](./media/business-approval-management-approval-instance-info.png).
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of active Business Approval Details view](./media/business-approval-management-approval-instance-info.png).
 
 ## Summary
 
