@@ -30,6 +30,10 @@ Key capabilities:
 
 - **Connect to your own virtual network**: Securely communicate with each other, the Internet, and your on-premises networks.
 
+    > [!NOTE]
+    > Sign-in access is only available to the creator of the hosted machine.
+
+
 ## Licensing requirements
 
 To use hosted machines, you need the following licensing option:
@@ -181,9 +185,6 @@ To create a hosted machine:
 
 1. A new tab in the browser should open and load the hosted machine access. Sign in with your work or school account.
 
-    > [!NOTE]
-    > Sign-in access is only available to the creator of the hosted machine.
-
 1. The hosted machine is preregistered into the Power Automate environment.
 
     :::image type="content" source="media/hosted-machines/power-automate-machine-runtime.png" alt-text="Screenshot of the Power Automate machine runtime application.":::
@@ -229,7 +230,7 @@ Custom VM images must meet the following requirements:
 - Generalized VM image
 - Single Session VM images (multi-session isn’t supported)
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
-- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to the size specified in the SKU description of the Windows 365 license
+- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to 256-GB
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
