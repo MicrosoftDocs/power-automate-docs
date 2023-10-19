@@ -62,7 +62,7 @@ To share a work queue:
 
 ## View advanced fields of a work queue
 
-If you are ingesting or programmatically interacting with work queue data through the Dataverse connector or APIs, it is helpful to quickly identify internal field values that may be required for your use-case.
+If you're ingesting or programmatically interacting with work queue data through the Dataverse connector or APIs, it's helpful to quickly identify internal field values that might be required for your use-case.
 
 To view advanced work queue details:
 
@@ -124,7 +124,7 @@ Status transitions rules have been established in order to optimize the lifecycl
 | **Queued**      | This is the default state when items enter the work queue, and the only state under which work queue item dequeuing is allowed. | Processing          |
 | **Processing**  | Indicating that the item is currently being processed.                                       | Processed, Exception|
 | **Processed**   | Indicating that the item is currently processing.                                             | Queued, On hold     |
-| **Exception**   | An exception has been raised during work item processing. Depending on your exception scenarios, you have the option to chose between **Generic**, **IT** and **Business** **exceptions**.                                 | Queued, On hold     |
+| **Exception**   | An exception has been raised during work item processing. Depending on your exception scenarios, you have the option to choose between **Generic**, **IT** and **Business** **exceptions**.                                 | Queued, On hold     |
 | **On hold**    | A business or IT user has picked an item to review, assess, and potentially remediate issues.     | Queued              |
 
 ## Next steps

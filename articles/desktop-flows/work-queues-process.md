@@ -216,13 +216,13 @@ Well done, you just completed a more advanced scenario that included hybrid work
 
 #### Process work queue items & Update work queue item action examples
 
-The first step to using work queue actions in Power Automate desktop is to create a work queue in the environment that you're working in and load some queue items with data to be consumed downstream.  Queue items can be loaded into a work queue through a desktop flow, cloud flow or in bulk as outlined [here](work-queues-bulk-import.md) which populates queue items.  In this example, some queue items have been added manually into a work queue to explain how actions in Power Automate desktop can be used.
+The first step to using work queue actions in Power Automate desktop is to create a work queue in the environment that you're working in and load some queue items with data to be consumed downstream. Queue items can be loaded into a work queue through a desktop flow, cloud flow or in bulk as outlined [here](work-queues-bulk-import.md), which populates queue items. In this example, some queue items have been added manually into a work queue to explain how actions in Power Automate desktop can be used.
 
 The work queue items have been created and the value field includes text in JSON format that will be used downstream in the desktop flow.
 
    :::image type="content" source="media/work-queues/work-queue-padwqitems.png" alt-text="Screenshot of work queue items available to be processed in Power Automate desktop." lightbox="media/work-queues/work-queue-padwqitems.png":::
 
-The example flow we'll be using to demonstrate work queue action usage mimics a process that would consume a work queue item from the cloud, process the data included in the value field and convert it to a custom object to be processed downstream. Note that  it isn't mandatory to use JSON  or custom objects as values for your work queue items, but it can be a useful method for organizing values that have multiple properties and follow a specific schema.
+The example flow we'll be using to demonstrate work queue action usage mimics a process that would consume a work queue item from the cloud, process the data included in the value field and convert it to a custom object to be processed downstream. Note that it isn't mandatory to use JSON or custom objects as values for your work queue items, but it can be a useful method for organizing values that have multiple properties and follow a specific schema.
 
    :::image type="content" source="media/work-queues/work-queue-pad-df.png" alt-text="Screenshot of desktop flow process used for this tutorial." lightbox="media/work-queues/work-queue-pad-df.png":::
 
@@ -256,31 +256,31 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
    For instance, let's say there was a requirement to enter the invoice ID into a field of a finance system as part of a process where you're automating the UI of a web or desktop app – you can call that value using **%JsonAsCustomObject.InvoiceId%** to populate a text field and push a button.
 
-1. Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the **Update work queue item** action is used to change the status of the work queue item to **Processed** and the **processing result** field can be used to input some optional notes. If the **expires** field is left blank, the new queue item will retain the default time to live defined in the work queue properties.
+1. Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the **Update work queue item** action is used to change the status of the work queue item to **Processed** and the **processing result** field can be used to input some optional notes. If the **expires** field is left blank, the new queue item retains the default time to live defined in the work queue properties.
 
    :::image type="content" source="media/work-queues/work-queue-pad-updatewqi.png" alt-text="Screenshot example of update work queue item action inputs." lightbox="media/work-queues/work-queue-pad-updatewqi.png":::
 
-   Exception handling options can be configured by clicking **on error** in the **update work queue item** action configuration window.  Three options are available for customization under the advanced tab.  **Work queue item not found** may occur if the work queue item is removed from the queue, either manually or through another systematic process, before it finishes processing in PAD.  **Work queue item on hold** may occur if an automated process, or somebody changes the status of the work queue item being processed to **on hold** in the flow portal while the queue item is being processed.  **Failed to update work queue item** may occur if the queue item no longer exists in the queue, or has been placed into the status **on hold**.  All the above are edge cases which may occur - [learn more about handling errors in desktop flows here](errors.md).
+   Exception handling options can be configured by clicking **on error** in the **update work queue item** action configuration window.  Three options are available for customization under the advanced tab.  **Work queue item not found** might occur if the work queue item is removed from the queue, either manually or through another systematic process, before it finishes processing in PAD.  **Work queue item on hold** might occur if an automated process, or somebody changes the status of the work queue item being processed to **on hold** in the flow portal while the queue item is being processed.  **Failed to update work queue item** might occur if the queue item no longer exists in the queue, or has been placed into the status **on hold**. All the above are edge cases, which might occur - [learn more about handling errors in desktop flows here](errors.md).
 
    :::image type="content" source="media/work-queues/work-queue-pad-updatewqiexc.png" alt-text="Screenshot example of update work queue item action exception handling." lightbox="media/work-queues/work-queue-pad-updatewqiexc.png":::
 
-1. If some issue was determined during the course of processing the data of the work queue item into the data entry system, the item could alternatively be assigned a status of **generic exception, IT exception, or business exception**.  These exceptions statuses are available to be used when, or if, your automated use case meets criteria which may apply.
+1. If some issue was determined during processing the data of the work queue item into the data entry system, the item could alternatively be assigned a status of **generic exception, IT exception, or business exception**.  These exceptions statuses are available to be used when, or if, your automated use case meets criteria, which might apply.
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqiconditional.png" alt-text="Screenshot example of conditional statement used to update the current work queue item in the desktop flow and add a new queue item into an alternative queue to handle exceptions." lightbox="media/work-queues/work-queue-pad-wqiconditional.png":::
 
-   Let’s say that while processing a queue item, scenario 2 was met.  In this case, the queue item is marked as generic exception in the originating queue.  Depending on the scenario, you might decide to change the status of queue items which could not be processed successfully as one of the alternative status options. From there, you can decide whether human intervention is required, or build a subsequent process with the logic required to manage each exception status.
+   Let’s say that while processing a queue item, scenario 2 was met.  In this case, the queue item is marked as generic exception in the originating queue.  Depending on the scenario, you might decide to change the status of queue items, which couldn't be processed successfully as one of the alternative status options. From there, you can decide whether human intervention is required, or build a subsequent process with the logic required to manage each exception status.
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqiresults.png" alt-text="Screenshot example of updated status for work queue items processed in the flow portal." lightbox="media/work-queues/work-queue-pad-wqiresults.png":::
 
 #### Add work queue item example
 
-The **Add work queue item** enables desktop flow users to populate work queue items into a work queue which has been set up in the flow portal.
+The **Add work queue item** enables desktop flow users to populate work queue items into a work queue, which has been set up in the flow portal.
 
-In this example an excel file in .csv is dropped into a directory on a daily basis and each row needs to be added to a work queue.
+In this example, an Excel file in .csv is dropped into a directory on a daily basis and each row needs to be added to a work queue.
 
    :::image type="content" source="media/work-queues/work-queue-pad-addwqiprocesspng.png" alt-text="Screenshot example of process incorporating the add work queue item action." lightbox="media/work-queues/work-queue-pad-addwqiprocesspng.png":::
 
-The first couple of actions in this sample process map a folder where the daily Contoso Invoices.csv file is dropped - when the process runs it begins by reading the data table from the CSV file.  The **CSVTable variable** contains the data which has been imported and will be processed to new queue items.
+The first couple of actions in this sample process map a folder where the daily Contoso Invoices.csv file is dropped - when the process runs it begins by reading the data table from the CSV file.  The **CSVTable variable** contains the data, which has been imported and will be processed to new queue items.
 
    :::image type="content" source="media/work-queues/work-queue-pad-CSVtable.png" alt-text="Screenshot example of data imported from a CSV file." lightbox="media/work-queues/work-queue-pad-CSVtable.png":::
 
@@ -288,9 +288,9 @@ Actions 3 and 4 generate the time at which we choose the new queue items to expi
 
    :::image type="content" source="media/work-queues/work-queue-pad-addtodatetime.png" alt-text="Screenshot example for adding to the current datetime to set an expiry datetime." lightbox="media/work-queues/work-queue-pad-addtodatetime.png":::
 
-Action 5 introduces the **For each** loop which is used to iterate through each row of data in the imported **CSVTable** - this action renders a data row for the current item being processed.
+Action 5 introduces the **For each** loop, which is used to iterate through each row of data in the imported **CSVTable** - this action renders a data row for the current item being processed.
 
-   :::image type="content" source="media/work-queues/work-queue-pad-wqidatarow.png" alt-text="Screenshot example for data row generated by the for each loop." lightbox="media/work-queues/work-queue-pad-wqidatarow.png":::
+   :::image type="content" source="media/work-queues/work-queue-pad-wqidatarow.png" alt-text="Screenshot example for data row generated for each loop." lightbox="media/work-queues/work-queue-pad-wqidatarow.png":::
 
 All of the preceding actions in this example desktop flow are now incorporated into setting the values for the **Add work queue item** action.
 
@@ -302,13 +302,13 @@ The **Priority** parameter is left at the default, **Normal**, but options for *
 
 The **Name** parameter has been set with a static prefix along with the variable value **CurrentItem['ID']** - which contains the value from the ID cell of the data row being processed.  This is optional but can be useful depending on your use case.
 
-Using the values from the data row in the variable **CurrentItem** the **Input** parameter was entered in JSON format.  Note each header name was appended to the **currentitem** varible using the notation **['name of header']**
+Using the values from the data row in the variable **CurrentItem** the **Input** parameter was entered in JSON format.  Note each header name was appended to the **currentitem** variable using the notation **['name of header']**
 
 The **Expires** field is populated with the datetime variable we added 7 days onto in the previous steps.  When left blank, the work queue item being added will contain the default time to live set for the work queue.
 
 **Processing notes** are optional - use as deemed necessary.
 
-When the process is run, each data row in the imported CSV will create a work queue item containing a **Queued** status, which means it is available for processing.  
+When the process is run, each data row in the imported CSV creates a work queue item containing a **Queued** status, which means it's available for processing.  
 
    :::image type="content" source="media/work-queues/work-queue-pad-addwqiinportal.png" alt-text="Screenshot example of work queue items visible in the portal containing a queued status." lightbox="media/work-queues/work-queue-pad-addwqiinportal.png":::
 
@@ -318,7 +318,7 @@ These are just some of many ways that work queue actions can be used in PAD.  Ta
 
 The **Requeue item with delay** action enables desktop flow users to requeue items and set a delay period at which time the item it can be released again for processing.
 
-In this example, there is a work queue loaded with items which are set to expire in 24 hours, but they cannot be processed in time because there is some ongoing routine system maintenance being performed by IT and the items need to be requeued.  The maintenance will be completed overnight, so we will proceed to delay each queue item by 24 hours and then set them to expire 24 hours after the release period.
+In this example, there's a work queue loaded with items, which are set to expire in 24 hours, but they can't be processed in time because there's some ongoing routine system maintenance being performed by IT and the items need to be requeued.  The maintenance will be completed overnight, so we'll proceed to delay each queue item by 24 hours and then set them to expire 24 hours after the release period.
 
    :::image type="content" source="media/work-queues/work-queue-requeue-process.png" alt-text="Screenshot example of process utilizing requeue item and add delay action." lightbox="media/work-queues/work-queue-requeue-datetime.png":::
 
