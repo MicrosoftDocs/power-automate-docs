@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/27/2023
+ms.date: 10/19/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -222,6 +222,7 @@ Fills a text box in a window with the specified text.
 |-----|-----|-----|-----|-----|
 |Text box|No|[UI element](../ui-elements.md)||The text box to populate|
 |Text to fill-in|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to fill in the text field|
+|Simulate action|N/A|Boolean value|False|Simulate the keystrokes programmatically when populating text to UI text field elements. This option does not require the UI element's screen to be focused, it will not automatically bring it to the foreground. Note this option can be applied only to left click action and it may not be applicable to every UI element.
 |If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
 |Click before populating|Yes|Left click, Double click, No|Left click|Specify whether a left mouse click is performed before populating the text field or not.|
 
@@ -695,6 +696,7 @@ Clicks on any UI element of a window.
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to click on|
 |Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The kind of click to perform|
+|Simulate action|N/A|Boolean value|False|Specify whether to simulate the move of the mouse cursor over the element prior to clicking. This option does not require the UI element's screen to be focused, it will not automatically bring it to the foreground. Note this option can be applied only to left click action and it may not be applicable to every UI element.|
 |Mouse position relative to UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element the mouse will be moved to prior to clicking|
 |Offset X|Yes|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels to the right|
 |Offset Y|Yes|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels down|
