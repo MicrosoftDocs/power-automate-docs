@@ -26,32 +26,37 @@ You can automate apps, data, and processes across Power Platform environments th
 [!IMPORTANT]
 The updated actions and triggers with the Environment parameter are rolling out as a public preview to all [Power Platform regions](/power-automate/regions-overview) by the end of October 2023.
 
-### Add an action that connects to another environment
+![A diagram of a Power Automate cloud flow being triggered when a row changes in the Contoso Support environment, and taking actions in other Contoso Services and Contoso Field Service environments to List rows, Add a row, and Perform an action in the example Contoso Corporation Microsoft Entra tenant.. ](<Connecting to other environments-1.png>)
+
+### How to add actions that connect to other environments
+
+
 
 1. Sign in to Power Automate at https://make.powerautomate.com 
 2. Create a new cloud flow such as an instant flow with the **Manually trigger a flow** trigger, or open an existing flow.
 3. In the flow designer, click the plus sign to add a new action.
-4. Search for **Dataverse** and click **See more** on the Microsoft Dataverse connector to see all available actions. 
-   * If the Microsoft Dataverse connector isn't shown, switch to another environment that has Dataverse as a data store using the Environments selector at the top right of the page.
-5. Add one of actions that end in **selected environment (preview)**, such as **List rows from selected environment (preview)**.
-6. Use the Environment parameter in the action card to choose the environment to connect to. 
-   * The connection you use for the action must have permissions to perform the operation in the other environment. 
-   * To connect to Dataverse in the same environment as the flow, select **(Current)** in the Environment parameter.
+4. Search for **Dataverse** and click **See more** on the Microsoft Dataverse connector to see all available actions.
+![A screenshot of the Microsoft Dataverse connector actions including the new actions for Add a new row to selected environment (preview) and Delete a row from selected environment (preview).](<Cross env - add a preview action.png>)
+1. Add one of actions that end in **selected environment (preview)**, such as **List rows from selected environment (preview)**.
+2. Use the Environment parameter in the action card to choose the environment to connect to. The connection you use for the action must have permissions to perform the operation in the other environment. 
+3. To connect to Dataverse in the same environment as the flow, select **(Current)** in the Environment parameter.
+![A screenshot showing the Environment parameter set to "(Current)" to connect to the current environment.](<Cross environment - current environment-1.png>)
+
 
 ### Which actions and triggers can connect to other environments?
-The following actions support connecting to other environments.
+The below Microsoft Dataverse connector actions support connecting to other environments. In the flow designer, the preview actions with the environment parameter have names ending in **selected environment (preview)** for each of the below actions.
 
-* Add a new row to selected environment (preview)
-* Update a row from selected environment (preview)
-* Delete a row from selected environment (preview)
-* List rows from selected environment (preview)
-* Get a row by ID from selected environment (preview)
-* Perform a bound action in selected environment (preview)
-* Perform an unbound action in selected environment (preview)
-* Relate rows in selected environment (preview)
-* Unrelate rows in selected environment (preview)
-* Upload a file or image to selected environment (preview)
-* Download a file or image from selected environment (preview)
+* [Add a new row](/power-automate/dataverse/create)
+* [Update a row](/power-automate/dataverse/update)
+* [Delete a row](/power-automate/dataverse/delete-row)
+* [List rows](/power-automate/dataverse/list-rows)
+* [Get a row by ID](/power-automate/dataverse/get-row-id)
+* [Perform a bound action](/power-automate/dataverse/bound-unbound)
+* [Perform an unbound action](/power-automate/dataverse/bound-unbound)
+* [Relate rows](/power-automate/dataverse/relate-unrelate-rows)
+* [Unrelate rows](/power-automate/dataverse/relate-unrelate-rows)
+* [Upload a file or image](/power-automate/dataverse/upload-download-file)
+* [Download a file or image](/power-automate/dataverse/upload-download-file)
 
 The actions to **Search rows** and **Perform a changeset** request don't yet have preview actions with the Environment parameter.
 
