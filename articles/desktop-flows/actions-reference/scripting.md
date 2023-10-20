@@ -5,8 +5,8 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/05/2023
-ms.author: dipapa
+ms.date: 10/20/2023
+ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
@@ -102,6 +102,8 @@ Executes a DOS command or console application in invisible mode and retrieves it
 ## <a name="runvbscript"></a> Run VBScript
 
 Executes some custom VBScript code and retrieves its output into a variable.
+
+You can use this action to include your own custom VBScript code in the desktop flow, while also having the ability to use variables therein, to generate dynamic VBScript content if needed.
 
 ### Input parameters
 
