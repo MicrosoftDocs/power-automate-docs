@@ -41,6 +41,7 @@ During the preview of this capability, separate actions and triggers with names 
 ![A screenshot of the Microsoft Dataverse connector actions including the new actions for Add a new row to selected environment (preview) and Delete a row from selected environment (preview).](<Cross env - add a preview action.png>)
 1. Add one of actions that end in **selected environment (preview)**, such as **List rows from selected environment (preview)**.
 2. Use the Environment parameter in the action card to choose the environment to connect to. The connection you use for the action must have permissions to perform the operation in the other environment. 
+![A screenshot of the List rows from selected environment (preview) action in the Microsoft Dataverse connector with the Environment parameter being used to select either the current environment, another environment, or enter a custom value for the environment. ](<List flows.png>)
 3. To connect to Dataverse in the same environment as the flow, select **(Current)** in the Environment parameter.
 ![A screenshot showing the Environment parameter set to "(Current)" to connect to the current environment.](<Cross environment - current environment-1.png>)
 
