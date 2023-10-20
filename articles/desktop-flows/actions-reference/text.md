@@ -9,6 +9,7 @@ ms.date: 11/24/2022
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -363,6 +364,11 @@ This action doesn't include any exceptions.
 ## <a name="jointext"></a> Join text
 
 Converts a list into a text value by separating its items with a specified delimiter.
+
+To join all contents of a list into a single text value, use the **Join text** action. Begin by specifing the respective list to use in the **Specify list to join** property. You can choose the delimiters to separate the list items in the joined text by making the respective choice in the **Delimiter to separate list items** property dropdown menu. 
+- **None** will create a single, joined literal by combining all the items in the list without separating them with a delimiter. 
+- **Standard** allows you to set the delimiter as a space, tab or new line by selecting the respective option in the **Standard delimiter** property dropdown menu. You can also choose how many times the delimiter is presented between each list item by modifying the **Times** property.
+- **Custom** allows you to set your own delimiter.
 
 ### Input parameters
 
