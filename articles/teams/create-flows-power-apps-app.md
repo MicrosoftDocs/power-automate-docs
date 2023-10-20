@@ -17,6 +17,8 @@ search.audienceType:
 
 # Create flows using the Power Apps app in Microsoft Teams
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 You can build flows to customize and add further value to Teams from within the new Power Apps app in Teams. You can create [instant](../mobile/mobile-create-flow.md), [scheduled](../run-scheduled-tasks.md), and [automated](../get-started-logic-flow.md) flows, with access to over 350 connectors. This includes a connector to work with [Microsoft Dataverse for Teams tables](/powerapps/teams/overview-data-platform#tables-in-dataverse-for-teams) within Teams.
 
 > [!NOTE]

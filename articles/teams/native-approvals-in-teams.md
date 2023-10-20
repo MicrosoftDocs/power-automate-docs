@@ -20,6 +20,8 @@ ms.reviewer: gtrantzas
 
 # Approvals in Microsoft Teams
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 Approvals in Microsoft Teams is a native Teams application that lets you easily create, manage, and share approvals from your hub for teamwork.
 
 You can quickly start an approval flow from the same place you send a chat, a channel conversation, or from the approvals app itself. Just select an approval type, add details, attach files, and choose approvers. Once submitted, approvers are notified and can review and act on the request.
