@@ -4,7 +4,7 @@ description: Learn how to manage desktop flows in the Power Automate portal.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/17/2023
+ms.date: 10/20/2023
 ms.author: appapaio
 ms.reviewer: gtrantzas
 contributor:
@@ -121,7 +121,9 @@ In this page, you can:
 
 > [!NOTE]
 >
-> > - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
+> - Users of an environment with a Dataverse security role that grants them **Read** access to **all records** in the **Process** table (where different types of flows are stored), will be listed as **Co-owners** of **any desktop flows** created in that environment. They can't be removed as co-owners unless you change privileges and access level in the underlying security role.
+> An example of a security role with environment wide **Read** privileges for desktop flows is the **System Customizer** role, which has **Process** table **Read** permission set to **Organization**, which essentially allows users with this role to view all desktop flows in the environment and be marked as co-owner. We therefore highly recommended reviewing each security role before assigning them to users to ensure that the privilege set and access level is appropriate for the intended use case.
+> - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You're notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
 ## Learn more
 
