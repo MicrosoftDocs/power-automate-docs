@@ -214,6 +214,15 @@ This action doesn't produce any variables.
 
 Selects a range of cells in the active worksheet of an Excel instance.
 
+You have three options when it comes to retrieving a range of cells through Excel with the **Select cells in Excel worksheet** action. 
+To begin you need a valid **Excel instance** which you can create by using the **Launch Excel** action and providing the respective inputs.
+
+- To select a **range of cells** by explicitly providing the coordinates of the range, select the option **Range of cells** in the **Select** property and then provide range by inputting the number or letter of the cells defining its start and end in the following properties: **Start column**, **Start row**, **End column**, **End row**
+
+- To select a **range of cells**, relative to the currently active cell, first select the option **Range of cells relative to active cell** in the **Select** property. Then define the direction in the X and Y axis based on the position of the currently active cell, as well as the offset from the active cell in the two axis by modifying the properties **X-axis direction**, **X-axis offset**, **Y-axis direction** and **Y-axis offset**
+
+- To select a **range of cells** using the range's name, select the option **Names cells** in the property **Select**
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
