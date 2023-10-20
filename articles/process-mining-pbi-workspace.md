@@ -67,7 +67,7 @@ If you haven't done this yet, install the Azure tools.
     1. Expand the dropdown menu for **Embed content in apps** and enable it by toggling the slider.
     2. Expand the dropdown menu for **Allow service principals to use Power BI APIs** and enable it by toggling the slider.
   
-      ![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/f109b0c6-ebe3-44a5-9994-f13d20f6f4ad)
+    :::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles.png" alt-text="Screenshot of the developer settings.":::
 
 1. Return to the Power BI home page.
 
