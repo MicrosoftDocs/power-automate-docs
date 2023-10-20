@@ -18,6 +18,10 @@ By completing the App In a Day module 2 or having the Contoso Coffee Application
 
 > NOTE: If you do not have the Contoso Coffee Machine Ordering app imported in your environment follow the [Import Contoso Coffee](./import-contoso-coffee.md) guide to get started.
 
+1. Sign in to [Power Apps](https://make.powerapps.com)
+
+1. Select the assigned Approvals Kit environment for this workshop content
+
 1. Select **Apps** and select the **Machine Ordering App**
 
   > [!div class="mx-imgBorder"]
@@ -76,7 +80,7 @@ Now that you have verified that Contoso Coffee machine request can be successful
 
 1. Select the + button to create the first approval stage.
 
-1. Enter a name for the stage and then select **Save**
+1. Enter a name **Self Approval** for the stage and then select **Save**
 
   > [!div class="mx-imgBorder"]
   ![Screenshot of Approvals Kit add first stage to approval](./media/approvals-kit-create-first-stage.png)
@@ -86,7 +90,7 @@ Now that you have verified that Contoso Coffee machine request can be successful
   > [!div class="mx-imgBorder"]
   ![Screenshot of Approvals Kit first stage with no node defined](./media/approvals-kit-first-stage-no-node.png)
 
-1. Create a first node with name and select your user account from the Approver list
+1. Create a first node with name **Submit** and select your user account from the Approver list
 
   > [!div class="mx-imgBorder"]
   ![Screenshot of Approvals Kit add node stage to stage](./media/approvals-kit-create-first-node.png)

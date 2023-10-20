@@ -28,9 +28,9 @@ The first task is to create a Power Platform solution to create a container to y
 
 1. Select **New Solution**
 
-1. Enter a Solution display name. For example Contoso Coffee Approvals.
+1. Enter a Solution display name of **Contoso Coffee Approvals**.
 
-1. Select a publisher. You can either create a new publisher or select one of the existing publishers for your environment.
+1. Select publisher **Contoso**.
 
 > The Power Apps create solution guidance includes information on the [Solution Publisher](/power-apps/maker/data-platform/create-solution#solution-publisher). On how to select or create a solution publisher.
 
@@ -74,12 +74,20 @@ In your created solution perform these steps:
   > [!div class="mx-imgBorder"]
   ![Screenshot of adding Approvals kit start business approvals process inside Power Automate Cloud Flow](./media/power-automate-approvals-kit-custom-connector.png)
 
+1. Select **Sign in** if prompted and select your account.
+
+1. If prompted select **Allow access** to confirm creation of Approvals Kit connection.
+
+  ![Screenshot of adding Approvals kit connection confirmation](./media/approvals-kit-connector-confirmation.png)
+
 1. Select the workflow process that you published in the [First Approval](./first-approval.md) module.
 
   > [!div class="mx-imgBorder"]
   ![Screenshot of adding Approvals kit start business approvals process inside Power Automate Cloud Flow](./media/power-automate-approvals-kit-connector-select-workflow.png)
 
-1. Select **Save**
+1. Select **Save**.
+
+1. Wait for the Cloud flow to be saved.
 
 ## Task 3 - Creating a new Machine Request
 
