@@ -60,11 +60,11 @@ Follow these steps to ingest data with Copilot.
 
 ## Frequently asked questions
 
-For the list of questions for Copilot in Process Mining ingestion, go to [Frequently asked questions](./minit/process-mining-copilot-in-process-analytics.md#frequently-asked-questions).
+For the list of questions for Copilot in Process Mining ingestion, go to [Frequently asked questions](process-mining-copilot-in-process-analytics.md#frequently-asked-questions).
 
 ## Limitations of Copilot in Power Automate
 
-For a list of limitations of Copilot in Power Automate, go to [Limitations of Copilot in Power Automate](./minit/process-mining-copilot-in-process-analytics.md#limitations-of-copilot-in-power-automate).
+For a list of limitations of Copilot in Power Automate, go to [Limitations of Copilot in Power Automate](process-mining-copilot-in-process-analytics.md#limitations-of-copilot-in-power-automate).
 
 ### See also
 
