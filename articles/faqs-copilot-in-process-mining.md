@@ -51,5 +51,5 @@ Copilot is only available in the Azure Data Lake ingestion experience and within
 ## See also
 
 - [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
-- [Copilot in Process Mining process analytics (preview)](./minit/process-mining-copilot-in-process-analytics.md)
+- [Copilot in Process Mining process analytics (preview)](process-mining-copilot-in-process-analytics.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
