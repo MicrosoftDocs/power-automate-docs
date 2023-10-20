@@ -2,11 +2,10 @@
 title: Database actions reference
 description: See all the available database actions.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
+ms.date: 10/20/2023
+ms.author: matp
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
@@ -82,7 +81,7 @@ Open a new connection to a database.
 
 Connect to a database and execute a SQL statement.
 
-To execute an SQL query use the **Execute SQL statement** action. Begin by providing a valid connection to the respective database. Select the desired option in the **Get connection by** property. You can either provide an **SQL connection variable** (you can create one by using the **Open SQL connection** action) or by providing the **Connection string**. Then input the SQL query you want to execute in the **SQL statement** property. You can also modify the timeout seconds of the action or leave the default option (30 seconds).
+To execute an SQL query, use the **Execute SQL statement** action. Begin by providing a valid connection to the respective database. Select the desired option in the **Get connection by** property. You can either provide an **SQL connection variable** (you can create one by using the **Open SQL connection** action) or by providing the **Connection string**. Then input the SQL query you want to execute in the **SQL statement** property. You can also modify the timeout seconds of the action or leave the default option (30 seconds).
 
 ### Input parameters
 

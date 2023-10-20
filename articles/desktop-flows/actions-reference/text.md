@@ -2,11 +2,10 @@
 title: Text actions reference
 description: See all the available text actions.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
-ms.author: marleon
+ms.date: 10/20/2023
+ms.author: matp
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
@@ -65,10 +64,10 @@ The following table displays various examples of entities that the **Recognize e
 |Date time   |I'll go back 04th Jan 2019                                            |**Value:** 1/4/2019 12:00:00 AM </br> **Original text:** 04th Jan 2019             |
 |Date time   |Schedule a meeting tonight at 7pm                                     |**Value:** 9/30/2021 7:00:00 PM </br> **Original text:** tonight at 7pm            |
 |Dimension   |You weight 200 lbs                                                     |**Value:** 200 </br> **Unit:** Pound </br> **Original text:** 200 lbs               |
-|Dimension   |Α twister roared through an area about ten miles long there           |**Value:** 10 </br> **Unit:** Mile </br> **Original text:** ten miles              |
+|Dimension   |Α twister roared through an area about 10 miles long there           |**Value:** 10 </br> **Unit:** Mile </br> **Original text:** ten miles              |
 |Temperature |The temperature outside is 40 deg celsius                             |**Value:** 40 </br> **Unit:** C </br> **Original text:** 40 deg celsius            |
 |Currency    |Net interest income sank 27 percent in the quarter to /$ 254 million  |**Value:** 254000000 </br> **Unit:** Dollar </br> **Original text:** $ 254 million |
-|Number range|This number is larger than twenty and less or equal than thirty five  |**From:** 20 </br> **To:** 35 </br> **Original text:** larger than twenty and less or equal than thirty five |
+|Number range|This number is larger than 20 and less or equal than 35  |**From:** 20 </br> **To:** 35 </br> **Original text:** larger than 20 and less or equal than 35 |
 |Number range|From 5 to 10                                                          |**From:** 5 </br> **To:** 10 </br> **Original text:** From 5 to 10                 |
 |Number range|Less than 4.565                                                       |**From:** 0 </br> **To:** 4.565 </br> **Original text:** Less than 4.565           |
 |Number      |A dozen                                                               |**Value:** 12 </br> **Original text:** A dozen                                     |
@@ -298,7 +297,7 @@ Converts a text representation of a date and/or time value to a datetime value.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Text to convert|No|[Text value](../variable-data-types.md#text-value)||The text to convert to a datetime value. This text must be in a recognizably datetime value format|
-|Date is represented in custom format|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the text to convert contains a representation of the date and time in a non-standard, non-recognizable format|
+|Date is represented in custom format|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the text to convert contains a representation of the date and time in a nonstandard, nonrecognizable format|
 |Custom format|No|[Text value](../variable-data-types.md#text-value)||The format in which the date is stored in the text. A custom format can be expressed as, for example, yyyyMMdd for date and hhmmss for time|
 
 ### Variables produced
@@ -365,9 +364,10 @@ This action doesn't include any exceptions.
 
 Converts a list into a text value by separating its items with a specified delimiter.
 
-To join all contents of a list into a single text value, use the **Join text** action. Begin by specifing the respective list to use in the **Specify list to join** property. You can choose the delimiters to separate the list items in the joined text by making the respective choice in the **Delimiter to separate list items** property dropdown menu. 
-- **None** will create a single, joined literal by combining all the items in the list without separating them with a delimiter. 
-- **Standard** allows you to set the delimiter as a space, tab or new line by selecting the respective option in the **Standard delimiter** property dropdown menu. You can also choose how many times the delimiter is presented between each list item by modifying the **Times** property.
+To join all contents of a list into a single text value, use the **Join text** action. Begin by specifying the respective list to use in the **Specify list to join** property. You can choose the delimiters to separate the list items in the joined text by making the respective choice in the **Delimiter to separate list items** property dropdown list:
+
+- **None** creates a single, joined literal by combining all the items in the list without separating them with a delimiter.
+- **Standard** allows you to set the delimiter as a space, tab, or new line by selecting the respective option in the **Standard delimiter** property dropdown list. You can also choose how many times the delimiter is presented between each list item by modifying the **Times** property.
 - **Custom** allows you to set your own delimiter.
 
 ### Input parameters
