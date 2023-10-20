@@ -38,7 +38,7 @@ To evaluate the hosted machine group, you need one of the following trial licens
 
 - Use the **Power Automate Premium** plan (previously Power Automate per user with attended RPA) and the **Power Automate hosted RPA add-on trials**.
 
-    The Power Automate hosted RPA add-ons mentioned before have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), and assign the hosted RPA add-ons to the targeted environments.
+    The Power Automate hosted RPA add-ons have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), and assign the hosted RPA add-ons to the targeted environment.
 
 - Use the 90-days self-assisted premium trial.
 
@@ -130,6 +130,8 @@ Custom VM images must meet the following requirements:
  - Generalized VM image
  - 127 GB limit on VM image size
  - Microsoft Edge version 80 or higher
+ - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
+
  
 Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
 

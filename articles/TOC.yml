@@ -2,12 +2,12 @@
   href: ./index.yml
 - name: Overview
   items:
-  - name: Get started
-    href: getting-started.md
   - name: Types of flows
     href: flow-types.md
   - name: Sign up
     href: sign-up-sign-in.md
+  - name: Get started with Power Automate
+    href: getting-started.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -16,12 +16,14 @@
   items:
   - name: Get started with cloud flows
     href: overview-cloud.md
-  - name: Get started with Copilot (preview)
+  - name: Get started with Copilot in cloud flows
     href: get-started-with-copilot.md
-  - name: Understand AI-powered cloud flows designer (preview)
+  - name: Understand the cloud flows designer with copilot capabilities
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
+  - name: Add OAuth authentication for HTTP request triggers
+    href: oauth-authentication.md
   - name: Get help from the Power Virtual Agents bot
     href: contextual-help-bot.md
   - name: Find it with unified search
@@ -99,6 +101,8 @@
       href: format-data-by-examples.md
   - name: Popular cloud flows scenarios
     items:
+    - name: Use the Power Automate plugin for ChatGPT
+      href: ./use-chatgpt-plugin.md
     - name: Use flows with approvals
       items:
       - name: Get started with approvals
@@ -150,6 +154,8 @@
         href: email-customization.md
       - name: Troubleshoot issues with email in flows
         href: email-troubleshooting.md
+    - name: Use flows with Excel for the web
+      href: flows-excel.md    
     - name: Use flows with SharePoint
       items:
       - name: Overview
@@ -432,7 +438,7 @@
     items:
     - name: Configure actions and the actions pane
       href: ./desktop-flows/actions-pane.md
-    - name: Assets library (preview)
+    - name: Assets library
       href: ./desktop-flows/assets-library.md
     - name: Manage the flow designer workspace
       href: ./desktop-flows/designer-workspace.md
@@ -474,7 +480,7 @@
       href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
-  - name: Custom actions (preview)
+  - name: Custom actions
     items:
     - name: Custom actions
       href: ./desktop-flows/custom-actions.md
@@ -484,7 +490,7 @@
       href: ./desktop-flows/upload-custom-actions.md
     - name: Use custom actions
       href: ./desktop-flows/use-custom-actions.md
-    - name: Actions SDK for .NET reference (preview)
+    - name: Actions SDK for .NET reference
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
   - name: Troubleshooter (preview)
     href: ./desktop-flows/troubleshooter.md
@@ -598,6 +604,16 @@
       href: ./desktop-flows/how-to/passing-datatable.md
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
+  - name: ALM for desktop flows
+    items:
+    - name: Overview for configuring ALM for desktop flows
+      href: ./desktop-flows/alm/alm-intro.md
+    - name: Create a flow in a solution
+      href: ./desktop-flows/alm/alm-solution.md
+    - name: Compare your desktop flow changes
+      href: ./desktop-flows/alm/alm-diff.md
+    - name: Create a connection with a service principal
+      href: ./desktop-flows/alm/alm-connection.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -689,7 +705,7 @@
       href: ./desktop-flows/actions-reference/sharepoint.md
     - name: Office 365 Outlook (preview)
       href: ./desktop-flows/actions-reference/office365outlook.md
-    - name: Workqueues (preview)
+    - name: Work queues (preview)
       href: ./desktop-flows/actions-reference/workqueues.md
     - name: Custom actions (preview)
       href: ./desktop-flows/actions-reference/custommodule.md
@@ -725,7 +741,7 @@
     href: bpf-add-on-demand-workflow.md
   - name: Best practices for business process flow columns
     href: best-practices-entity-attributes.md
-- name: Process mining
+- name: Process Mining
   items:
   - name: Overview
     href: process-advisor-overview.md
@@ -746,6 +762,10 @@
         href: process-mining-templates.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
+    - name: Copilot in Process Mining ingestion (preview)
+      href: process-mining-copilot-in-ingestion.md
+    - name: Copilot in Process Mining process analytics (preview)
+      href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
     - name: Use your own Azure Data Lake Storage Gen2 (preview)
@@ -1120,8 +1140,10 @@
   items:
   - name: Overview
     href: responsible-ai-overview.md
-  - name: FAQ for Copilot
+  - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
+  - name: FAQ for Copilot in Process Mining
+    href: faqs-copilot-in-process-mining.md
 
 
 
