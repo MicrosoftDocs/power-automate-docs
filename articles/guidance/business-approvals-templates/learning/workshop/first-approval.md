@@ -16,7 +16,7 @@ ms.reviewer: angieandrews
 
 By completing the App In a Day module 2 or having the Contoso Coffee Application imported into your environment you will have the ability create a machine request. Lets review the the request process before you proceed with creating the Business Approval for this process.
 
-> NOTE: If you do not have the Contoso Coffee Machine Ordering app follow the [Import Contoso Coffee](./import-contoso-coffee.md) guide to get started.
+> NOTE: If you do not have the Contoso Coffee Machine Ordering app imported in your environment follow the [Import Contoso Coffee](./import-contoso-coffee.md) guide to get started.
 
 1. Select **Apps** and select the **Machine Ordering App**
 

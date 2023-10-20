@@ -16,9 +16,12 @@ The Approvals Kit learning workshop builds on module two of the App in a Day wor
 
 ## Workshop Scenario
 
-We have been asked by a business owner to help remove the manual work around the business approval process. The current process conditionally involves multiple stages of approval depending on the machines requested, which has resulted in delays and inefficiencies. Our objective for today is to help you build an approval process that extend the current low code Contoso Coffee request process with an automated business approvals process that is streamlined and efficient.
+We have been asked by a business owner to help remove the manual work around the business approval process at Contoso Coffee. The current process conditionally involves multiple stages of approval depending on the machines requested, which has resulted in delays and inefficiencies. Our objective for today is to help you build an approval process that extend the current low code Contoso Coffee request process with an automated business approvals process that is streamlined and efficient.
 
-This workshop will build on the skills and knowledge gained from the last App in a Day workshop, which covered how to build a canvas app and store data in Dataverse. In this workshop, we will use the data stored in Dataverse to trigger the defined business approval process.
+  > [!div class="mx-imgBorder"]
+  ![Screenshot of starting the Contoso Coffee Machine Ordering app](./media/machine-ordering-app-play.png)
+
+This workshop will build on the skills and knowledge gained from the App in a Day workshop, which covered how to build a canvas app and store data in Dataverse. In this workshop, we will use the data stored in Dataverse to trigger the defined business approval process.
 
 By the end of this workshop, you will be able to identify the different levels of approval required for each machine request, determine the appropriate level of approval based on the value of the machine, and create an automated workflow that will facilitate the approvals process.
 
