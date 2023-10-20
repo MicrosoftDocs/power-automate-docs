@@ -73,7 +73,7 @@ Now that you have verified that Contoso Coffee machine request can be successful
   > [!div class="mx-imgBorder"]
   ![Screenshot of Approvals Kit Home screen](./media/approvals-kit-home-screen.png)
 
-1. Enter the name of your workflow. For example "My First Approval"
+1. Enter the name of your workflow as **Machine Requests**
 
   > [!div class="mx-imgBorder"]
   ![Screenshot of Approvals Kit new workflow](./media/approvals-kit-new-workflow.png)
@@ -85,7 +85,7 @@ Now that you have verified that Contoso Coffee machine request can be successful
   > [!div class="mx-imgBorder"]
   ![Screenshot of Approvals Kit add first stage to approval](./media/approvals-kit-create-first-stage.png)
 
-1. Wait for the the stage to be created. Select the gray + button to create a node for the created stage
+1. Wait for the the stage to be created. Select the gray + button to create a node for the created stage named **Self Approval**
 
   > [!div class="mx-imgBorder"]
   ![Screenshot of Approvals Kit first stage with no node defined](./media/approvals-kit-first-stage-no-node.png)

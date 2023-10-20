@@ -60,7 +60,7 @@ In your created solution perform these steps:
 
 1. Select the scope of the change. For example **Organization** read more on [Scope](/dataverse/create-update-delete-trigger#scope)
 
-> NOTE: For more information on Datavere trigger parameters you can reference [Trigger flows when a row is added, modified, or deleted](/dataverse/create-update-delete-trigger)
+> NOTE: For more information on Dataverse trigger parameters you can reference [Trigger flows when a row is added, modified, or deleted](/dataverse/create-update-delete-trigger)
 
   > [!div class="mx-imgBorder"]
   ![Screenshot of Power Automate Dataverse trigger when Machine Order is Added](./media/power-automate-cloud-flow-dataverse-trigger.png)
@@ -80,7 +80,7 @@ In your created solution perform these steps:
 
   ![Screenshot of adding Approvals kit connection confirmation](./media/approvals-kit-connector-confirmation.png)
 
-1. Select the workflow process that you published in the [First Approval](./first-approval.md) module.
+1. Select the **Machine Requests (v1)** workflow process that you published in the [First Approval](./first-approval.md) module.
 
   > [!div class="mx-imgBorder"]
   ![Screenshot of adding Approvals kit start business approvals process inside Power Automate Cloud Flow](./media/power-automate-approvals-kit-connector-select-workflow.png)

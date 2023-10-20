@@ -42,11 +42,7 @@ When it comes to handling business processes that require multiple levels of app
 
 5 mins
 
-### [Add conditionals](./add-conditional.md)
-
-10 mins
-
-### [Add stages](./add-stages.md)
+### [Add conditional stages](./add-conditional-stages.md)
 
 10 mins
 
