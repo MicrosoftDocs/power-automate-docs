@@ -61,6 +61,8 @@ This action doesn't include any exceptions.
 
 Retrieve the list of files in a folder.
 
+To retrieve all the files in a specific folder, use the action **Get files in folder**, specifie the folder path in the **Folder** property and then use the * character in the **File filter** property (included by defaulf for convenience). In case you want to also include all the files included in the subfolder inside the specified folder, enable the **Include subfolders** toggle. The retrieved filepaths are then stored in the output of the action. 
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
