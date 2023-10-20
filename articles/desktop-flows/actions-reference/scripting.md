@@ -147,6 +147,8 @@ This action doesn't include any exceptions.
 
 Executes some custom PowerShell script and retrieves its output into a variable.
 
+You can use this action to include your own custom PowerShell code in the desktop flow, while also having the ability to use variables therein, to generate dynamic PowerShell content if needed.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
