@@ -33,9 +33,9 @@ To create a work queue:
 3. Select **Work queue** and then select **+ New work queue**.
 4. In the **New work queue** side-panel, enter a **name** for the work queue.
 5. (Optional) Enter a **description** for the work queue.
-6. (Optional) Enter a default lifespan value for work queue items in the **Item default time to live (in minutes)** field.
+6. (Optional) Enter a default lifespan value for work queue items in the **Items expire after** field.
    > [!NOTE]
-   > If you set a default time to go live for a work queue, any item added without an explicit expiration date will expire after the default time has elapsed. So if you set the **Item default time to live** to 30 minutes, an item added at 2:00 PM will expire at 2:30 PM.
+   > If you set an *Items expire after* value for a work queue, any item added without an explicit expiration date will expire after the entered *Items expire value* has elapsed. So if you set the *Items expire after* to 30 minutes, an item added at 2:00 PM will expire at 2:30 PM.
 
 ## Edit a work queue
 

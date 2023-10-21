@@ -256,7 +256,7 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
    For instance, let's say there was a requirement to enter the invoice ID into a field of a finance system as part of a process where you're automating the UI of a web or desktop app – you can call that value using **%JsonAsCustomObject.InvoiceId%** to populate a text field and push a button.
 
-1. Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the **Update work queue item** action is used to change the status of the work queue item to **Processed** and the **processing result** field can be used to input some optional notes. If the **expires** field is left blank, the new queue item retains the default time to live defined in the work queue properties.
+1. Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the **Update work queue item** action is used to change the status of the work queue item to **Processed** and the **processing result** field can be used to input some optional notes. If the **expires** field is left blank, the new queue item retains the *Items expire after* value defined in the work queue properties.
 
    :::image type="content" source="media/work-queues/work-queue-pad-updatewqi.png" alt-text="Screenshot example of update work queue item action inputs." lightbox="media/work-queues/work-queue-pad-updatewqi.png":::
 
@@ -304,7 +304,7 @@ The **Name** parameter has been set with a static prefix along with the variable
 
 Using the values from the data row in the variable **CurrentItem** the **Input** parameter was entered in JSON format.  Note each header name was appended to the **currentitem** variable using the notation **['name of header']**
 
-The **Expires** field is populated with the datetime variable we added 7 days onto in the previous steps.  When left blank, the work queue item being added will contain the default time to live set for the work queue.
+The **Expires** field is populated with the datetime variable we added 7 days onto in the previous steps.  When left blank, the work queue item being added will contain the *Items expire after* value set for the work queue.
 
 **Processing notes** are optional - use as deemed necessary.
 
