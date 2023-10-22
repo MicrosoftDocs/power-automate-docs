@@ -2,11 +2,10 @@
 title: Connect to other environments using the Microsoft Dataverse connector (preview)
 description: Learn how to use the Microsoft Dataverse connector for actions and triggers across Power Platform environments.
 suite: flow
-documentationcenter: na
-author: matow
+author: radioblazer
 ms.author: matow
 ms.reviewer: angieandrews
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 10/23/2023
 search.audienceType: 
   - maker
@@ -67,7 +66,7 @@ The following Microsoft Dataverse connector actions support connecting to other 
 - [Upload a file or image](/power-automate/dataverse/upload-download-file)
 - [Download a file or image](/power-automate/dataverse/upload-download-file)
 
-The actions to [Search rows](/power-automate/dataverse/search) and [Perform a changeset request](/power-automate/dataverse/change-set) don't have preview actions with the Environment parameter yet.
+The actions to [search rows](/power-automate/dataverse/search) and [perform a changeset request](/power-automate/dataverse/change-set) don't have preview actions with the Environment parameter yet.
 
 The following triggers support connecting to other environments but haven't been released yet:
 
@@ -82,11 +81,11 @@ The following triggers won't support the Environment parameter since they're onl
 
 - Connect to other environments in the same tenant as the connection used with the action or trigger.
 - Connect to environments in other tenants when using a connection to another tenant.
-  - To restrict connections to other tenants from the Microsoft Dataverse connector and other connectors, you can configure [Power Platform tenant isolation policies](/power-platform/admin/cross-tenant-restrictions).
+  - To restrict connections to other tenants from the Microsoft Dataverse connector and other connectors, you can configure Power Platform tenant isolation policies. To learn more, go to [Cross-tenant inbound and outbound restrictions](/power-platform/admin/cross-tenant-restrictions).
 -  Specify the environment dynamically.
   - To set the Environment parameter manually, select **Enter custom value** at the end of the Environment parameter selector and provide the root URL of a Power Platform environment in the format `https://\<yourenvironmentid\>.crm.dynamics.com/`. 
   - The environment can be provided as a string, expression, environment variable, or as dynamic content from other actions or triggers in the flow.
-  - To get the root URL of an environment, you can open the details page of the environment from the [Power Platform admin center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management connector](/connectors/flowmanagement/).
+  - To get the root URL of an environment, you can open the details page of the environment from the [Power Platform admin center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management](/connectors/flowmanagement/) connector.
   - For actions like **Add a row** that depend on the table schema from a specific environment, the schema won't be automatically retrieved when using an expression, dynamic content, or environment variable to specify the environment. The request must be manually created using the `LogicalCollectionName` of the table and the body for the request in JSON format, similar to a [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api). For example, **accounts** and  **{ "name": "Contoso Marketing" }**.
 - Service principal connections can be used to connect to other environments.
 
