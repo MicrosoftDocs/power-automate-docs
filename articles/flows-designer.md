@@ -154,7 +154,7 @@ The cloud flow designer with copilot capabilities has smaller cards to facilitat
 
 ## Limitation
 
-You might notice that some functionalities that were in the classic designer aren't availabile in the cloud flows designer with copilot capabilities. For example, the designer doesn't support non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow), and constructs such as some hybrid triggers (for a selected message (v2 Teams), TeamsoncomposeMesage (teams), Teams card trigger, Microsoft 365 Compliance Connector), a comment, Power Pages connector, or a Power Apps v1 trigger in your flow.
+You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer with copilot capabilities. For example, the designer doesn't support non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow), and constructs such as some hybrid triggers (for a selected message (v2 Teams), TeamsoncomposeMesage (teams), Teams card trigger, Microsoft 365 Compliance Connector), a comment, Power Pages connector, or a Power Apps v1 trigger in your flow.
 
 If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the designer with copilot capabilities.
 
