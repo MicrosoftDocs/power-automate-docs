@@ -20,6 +20,8 @@ ms.reviewer: gtrantzas
 
 # Respond to an approval from a chat or channel
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 If a user sends you an approval in a chat or channel message or from the approvals app, you can respond to it directly from within the Teams chat or channel or from the approvals app.
 
 The approvals app also shows you any approvals that were sent using a flow in the same environment. So, you can use the approvals app in Teams to manage all your approvals.

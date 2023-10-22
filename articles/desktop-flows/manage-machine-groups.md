@@ -1,12 +1,11 @@
 ---
 title: Manage machine groups
 description: Group multiple machines together to help distribute your automation workload and optimize productivity.
-author: georgiostrantzas
-
+author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/08/2023
-ms.author: marleon
+ms.author: matp
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -222,5 +221,5 @@ Environment admins can also restrict machine registration to a specific set of u
 
 ## Other known limitations
 
-- Machine groups aren't available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud [using an on-premises data gateway](install.md#install-an-on-premises-data-gateway).
+- Machine groups aren't available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows using machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 - When you trigger multiple desktop flows in parallel on a machine group, machine selection may take up to 50 seconds before assigning the desktop flow to an available machine. In these rare cases, desktop flow runs might seem to be running sequentially, if they have short run durations.
