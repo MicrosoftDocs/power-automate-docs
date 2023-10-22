@@ -181,9 +181,9 @@ The simplest way to dequeue a work queue item and process it is as follows:
   | --------- | ----- | ------------------------------ |
   | **Table name** | Work Queues | The name of the work queue table. |
   | **Action name** | Dequeue | The action, which gets the next available item from the queue.|
-  | **Row ID** | *[Work Queue ID]* | The work queue ID (GUID) of the queue you'd like to dequeue from. You can get to this value by navigating to the work queue details page of your queue and copying the GUID from your browser URL. |
+  | **Row ID** | *[Work Queue ID]* | The work queue ID (GUID) of the queue you'd like to dequeue from. You can get to this value by navigating to the work queue details page of your queue and opening the **Advanced details** panel. |
   
-  :::image type="content" source="media/work-queues/work-queue-get-guid.png" alt-text="Screenshot of a work queue details page with the work queue ID highlighted in the browser URL bar." lightbox="media/work-queues/work-queue-get-guid.png":::
+  :::image type="content" source="media/work-queues/work-queue-advanced-fields.png" alt-text="Screenshot of a work queue details page with the work queue ID highlighted in the browser URL bar." lightbox="media/work-queues/work-queue-advanced-fields.png":::
 
   > [!NOTE]
   > A bound action is a Dataverse action that is defined on a specific table (work queues in our example) and can only be executed on records of that table. Bound actions are used by the platform to perform custom business logic or operations on a specific record.
