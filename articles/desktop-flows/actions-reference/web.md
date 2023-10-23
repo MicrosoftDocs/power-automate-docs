@@ -46,7 +46,7 @@ If the web server requires authentication, populate your credentials in the appr
 
 A variable named **WebPageText** stores the downloaded text is stored. If you use this action to download files, you can select to save them locally on your desktop.
 
-Moreover, user can download a file from the web through the **Click download link on web page** action, part of the **Browser automation** group of actions. Note the specific action works only in the Internet Explorer web browser. To find more information about Click download link on web page action, go to [Click download link on web page]((https://learn.microsoft.com/power-automate/desktop-flows/actions-reference/webautomation#clickdownloadlink)).
+Moreover, user can download a file from the web through the **Click download link on web page** action, part of the **Browser automation** group of actions. Note the specific action works only in the Internet Explorer web browser. To find more information about Click download link on web page action, go to [Click download link on web page](webautomation.md#input-parameters-19).
 
 > [!NOTE]
 > Apart from the HTTP actions, Power Automate enables generally users to interact with web application through the browser automation actions. To find more information about browser automation actions, go to [Browser automation](webautomation.md).
