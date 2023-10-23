@@ -4,7 +4,7 @@ description: See all the available browser automation actions.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/11/2023
+ms.date: 10/23/2023
 ms.author: nimoutzo
 ms.reviewer: gtrantzas
 contributors:
@@ -17,24 +17,24 @@ search.audienceType:
 ---
 # Browser automation actions
 
-Browser automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle.
+Browser automation actions enable users to interact with web applications and components through UI elements. Web UI elements aka Web elements describe uniquely the web components that the action is going to handle.
 
 To add a new UI element, select **Add UI element** through the deployed browser automation action or the UI elements pane of the flow designer.
 
 :::image type="content" source="media/webautomation/create-ui-element.png" alt-text="Screenshot of the options to create a new UI element.":::
 
-All web-related UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
+All web-related UI elements are specified by one or more CSS selectors - web selectors - that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
 
-Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you can edit an existing selector or build one from scratch.
+Although web selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom web selector is needed, you can edit an existing selector or build one from scratch.
 
 :::image type="content" source="media/webautomation/create-selector.png" alt-text="Screenshot of the options to edit and create selectors.":::
 
-To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
+To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a web selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
 
 :::image type="content" source="media\webautomation\selector-operators.png" alt-text="Screenshot of the available operators in the selector builder.":::
 
 >[!NOTE]
-> To find more information about developing web flows and creating custom selectors, go to [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md).
+> To find more information about developing web flows and creating custom web selectors for Web elemements, go to [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md).
 
 ## <a name="extractdata"></a> Extract data from web page
 
