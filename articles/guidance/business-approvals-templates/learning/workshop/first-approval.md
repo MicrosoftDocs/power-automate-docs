@@ -58,7 +58,7 @@ By completing the App In a Day module 2 or having the Contoso Coffee Application
 
 ## Task 2 - Create Approvals Kit Workflow
 
-Now that you have verified that Contoso Coffee machine request can be successfully created lets create a simple one stage and one node approval process that you can self approve.
+Now that you have verified that Contoso Coffee machine request can be successfully created lets create a simple one stage and one node approval process that you can self approve the Machine Request.
 
 > NOTE: If you do not have the Approvals Kit installed in your environment the [Approvals Kit Setup Guide](../../setup.md) or the [Instructor Guide](../instructor-guide/overview.md) could help your Center of Excellence team or Trainer provide an environment so that you can follow this workshop module
 

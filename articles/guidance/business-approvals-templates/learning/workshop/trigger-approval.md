@@ -12,7 +12,23 @@ ms.reviewer: angieandrews
 
 # Triggering a defined Approval
 
-The prior [First approval module](./first-approval.md) provided tasks and steps required to create a Contoso Coffee machine request and a simple Approval workflow that when triggered will send an Approval to you for approval. This module extended this functionality by using a Power Automate Cloud flow to begin a business approval process when a Machine Request is created in Dataverse.
+The prior [First approval module](./first-approval.md) provided tasks and steps required to create a Contoso Coffee machine request and a simple Approval workflow that when triggered will send an Approval to you for approval. This module will extend this functionality by using a Power Automate Cloud flow to begin a business approval process when a Machine Request is created in Dataverse.
+
+> NOTE: If you are not familiar with what Approvals are in Power Platform the [Get started with approvals](/power-automate/get-started-approvals) provides some examples of what can be achieved with the Standard Power Platform Approvals Connector. The Approvals Kit extends Approvals scenarios with additional features discussed below.
+
+## Give me an example
+
+As a example in the Contoso Coffee scenario we will start with a simple self-approval, based data getting added to Dataverse. In the later modules we will extend this workflow where a second manager approval is created when the value of the machine request is greater than $400. This combined scenario could be built using multiple Power Automate Cloud Flows and the Approvals Kit. By using the Approvals Kit you can model the same process and focus on the business approvals process rather then combining multiple components together to achieve the same goal.
+
+## Tell me more
+
+Given the goal of this workshop is designed to incrementally build you knowledge of the Approvals Kit the first modules are intentionally simple, to get you started and it provides very similar to the functionality provided by the out of the box Approvals connector. In fact the Approvals kt also builds on the out of the box Approvals connector enhancing it with Power Platform solution that is made up of a set of Power Automate Cloud flows and Dataverse tables.
+
+To explore what this provides you is the Approvals Kit gives a no code way of defining [Muti stage approvals and conditions](./add-conditional-stages.md) like we will cover in the next module. From a data point of view by storing data Approval workflow sin Dataverse, it enables you to rapidly make changes without the need to update or deploy a power platform solution. This also allows for variations for just one Approval, which can be done on a case by case basis rather than changing the approval process for all Approvals. Additionally, using Dataverse gives the ability to use the Auditing features of Dataverse to record Approvals process.
+
+In later modules of this workshop we will also demonstrate feature like handling for Delegated approvals and out of office support make it easy for you to build complicated Approvals process easily without needing to build these features using Power Platform solutions yourself.
+
+> NOTE: If you want to dive deeper you can read the [Approvals Kit Comparison](../../approvals-kit-comparison.md) for more information.
 
 ## Task 1 - Creating a solution
 
