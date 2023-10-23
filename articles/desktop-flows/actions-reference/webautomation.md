@@ -589,7 +589,7 @@ This action doesn't produce any variables.
 
 ## <a name="clickdownloadlink"></a> Click download link on web page
 
-Click on a link in a web page that results in downloading a file.
+Click on a link in a web page that results in downloading a file. Note the specific action works only in the Internet Explorer web browser. 
 
 ### Input parameters
 
