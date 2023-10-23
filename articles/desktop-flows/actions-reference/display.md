@@ -23,10 +23,6 @@ You can use message boxes in your desktop flows to interact with users, request 
 
 To display a message to the user while a flow runs, use the **Display message** action. You have to specify the title of the message box, its content, the icon and the buttons in the box to be displayed. Moreover, you may set a default button to be preselected as well as to indicate if the message box shuld always be always on top of all other windows in your machine and whether the message box to be closed automatically after a certain amount of time.
 
-In addition to this, yoy may create a custom form for displaying a message as part of your flow with the use of the **Display custom form** action. Custom form accepts multiple elements, and you can create custom forms that contain various input types and buttons. To find more information about custom forms, go to [Create custom forms](../custom-forms.md).
-
-:::image type="content" source="media/display/custom-form-designer.png" alt-text="Screenshot of the custom form designer.":::
-
 The example below displays a message box that informs the user that parsing is complete and asks whether to parse another file. The message box displays a question icon and always is on top of other windows. The **ButtonPressed** variable will store the user's selection.
 
 :::image type="content" source="media/display/display-message-example.png" alt-text="Screenshot of the Display message action.":::
@@ -34,6 +30,10 @@ The example below displays a message box that informs the user that parsing is c
 The created message box should look like the following example:
 
 :::image type="content" source="media/display/message-box-example.png" alt-text="Screenshot of the displayed message box.":::
+
+In addition to this, yoy may create a custom form for displaying a message as part of your flow with the use of the **Display custom form** action. Custom form accepts multiple elements, and you can create custom forms that contain various input types and buttons. To find more information about custom forms, go to [Create custom forms](../custom-forms.md).
+
+:::image type="content" source="media/display/custom-form-designer.png" alt-text="Screenshot of the custom form designer.":::
 
 To request input data using a dialog, deploy the **Display input dialog** action. This action requires a title for the dialog and a message as a prompt for the user. Optionally, you can set a default value and an input type (single line, multiline, or password).
 
