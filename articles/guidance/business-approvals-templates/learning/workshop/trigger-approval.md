@@ -14,7 +14,7 @@ ms.reviewer: angieandrews
 
 The prior [First approval module](./first-approval.md) provided tasks and steps required to create a Contoso Coffee machine request and a simple Approval workflow that when triggered will send an Approval to you for approval. This module will extend this functionality by using a Power Automate Cloud flow to begin a business approval process when a Machine Request is created in Dataverse.
 
-> NOTE: If you are not familiar with what Approvals are in Power Platform the [Get started with approvals](/power-automate/get-started-approvals) provides some examples of what can be achieved with the Standard Power Platform Approvals Connector. The Approvals Kit extends Approvals scenarios with additional features discussed below.
+> NOTE: If you are not familiar with what Approvals are in Power Automate the [Get started with approvals](/power-automate/get-started-approvals) provides some examples of what can be achieved with the Standard Power Platform Approvals Connector together with Power Automate. The Approvals Kit extends Approvals scenarios like these with additional features discussed below.
 
 ## Give me an example
 
