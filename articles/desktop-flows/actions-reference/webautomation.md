@@ -25,7 +25,7 @@ To add a new UI element, select **Add UI element** through the deployed browser 
 
 All web-related UI elements are specified by one or more CSS selectors - web selectors - that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
 
-Although web selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom web selector is needed, you can edit an existing selector or build one from scratch.
+Although web selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom web selector is needed, you can create your own by either editing an existing selector or building one from scratch.
 
 :::image type="content" source="media/webautomation/create-selector.png" alt-text="Screenshot of the options to edit and create selectors.":::
 
