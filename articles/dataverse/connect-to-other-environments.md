@@ -25,7 +25,7 @@ Previously, the Microsoft Dataverse connector supported the flow's current envir
 During the preview of this capability, separate actions and triggers with names ending in **selected environment (preview)** are available to add to both new and existing flows. After the preview, Dataverse connector actions in existing flows will be automatically updated to include the **Environment** parameter. There's no action needed from flow owners or changes to existing flow behavior as part of this update.
 
 > [!IMPORTANT]
-> The updated actions and triggers with the **Environment** parameter are rolling out as a public preview to all [Power Platform regions](/power-automate/regions-overview) by the end of October 2023.
+> The updated actions with the **Environment** parameter are rolling out as a public preview to all [Power Platform regions](/power-automate/regions-overview) by the end of October 2023.
 
 The following diagram shows a Power Automate cloud flow being triggered when a row changes in the Contoso Support environment. It takes actions in other Contoso Services and Contoso Field Service environments to list rows, add a row, and perform an action in the example Contoso Corporation's Microsoft Entra tenant.
 
