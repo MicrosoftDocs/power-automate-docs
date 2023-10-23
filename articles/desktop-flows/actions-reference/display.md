@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
+ms.date: 10/23/2023
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -21,7 +21,11 @@ search.audienceType:
 
 You can use message boxes in your desktop flows to interact with users, request input, and provide an output.
 
-To display a message to the user while a flow runs, use the **Display message** action.
+To display a message to the user while a flow runs, use the **Display message** action. You have to specify the title of the message box, its content, the icon and the buttons in the box to be displayed. Moreover, you may set a default button to be preselected as well as to indicate if the message box shuld always be always on top of all other windows in your machine and whether the message box to be closed automatically after a certain amount of time.
+
+In addition to this, yoy may create a custom form for displaying a message as part of your flow with the use of the **Display custom form** action. Custom form accepts multiple elements, and you can create custom forms that contain various input types and buttons. To find more information about custom forms, go to [Create custom forms](../custom-forms.md).
+
+:::image type="content" source="media/display/custom-form-designer.png" alt-text="Screenshot of the custom form designer.":::
 
 The example below displays a message box that informs the user that parsing is complete and asks whether to parse another file. The message box displays a question icon and always is on top of other windows. The **ButtonPressed** variable will store the user's selection.
 
@@ -40,10 +44,6 @@ Use the **Display select file dialog** action to prompt users to browse for a fi
 The created file dialog should look like the following example. You can see the specified filter in the bottom right corner of the dialog.
 
 :::image type="content" source="media/display/select-file-example.png" alt-text="Screenshot of a Select file dialog.":::
-
-To create a custom form that accepts multiple elements, use the **Display custom form** action. Using this action, you can create custom forms that contain various input types and buttons. To find more information about custom forms, go to [Create custom forms](../custom-forms.md).
-
-:::image type="content" source="media/display/custom-form-designer.png" alt-text="Screenshot of the custom form designer.":::
 
 ## <a name="showmessagedialog"></a> Display message
 
