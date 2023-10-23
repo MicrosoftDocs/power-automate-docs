@@ -22,7 +22,7 @@ You can automate apps, data, and processes across Power Platform environments th
 
 Previously, the Microsoft Dataverse connector supported the flow's current environment. The Dynamic 365 (deprecated) and Microsoft Dataverse (legacy) connectors were the available ways to connect to Dataverse in other environments from cloud flows. With the addition of the **Environment** parameter, the Microsoft Dataverse connector's triggers and action have the same flexibility of connecting to either the flow's current environment or choosing another.
 
-During the preview of this capability, separate actions and triggers with names ending in **selected environment (preview)** are available to add to both new and existing flows. After the preview, Dataverse connector actions in existing flows will be automatically updated to include the **Environment** parameters. There's no action needed from flow owners or changes to existing flow behavior as part of this update.
+During the preview of this capability, separate actions and triggers with names ending in **selected environment (preview)** are available to add to both new and existing flows. After the preview, Dataverse connector actions in existing flows will be automatically updated to include the **Environment** parameter. There's no action needed from flow owners or changes to existing flow behavior as part of this update.
 
 > [!IMPORTANT]
 > The updated actions and triggers with the **Environment** parameter are rolling out as a public preview to all [Power Platform regions](/power-automate/regions-overview) by the end of October 2023.
@@ -82,15 +82,27 @@ The following triggers won't support the Environment parameter since they're onl
 - Connect to other environments in the same tenant as the connection used with the action or trigger.
 - Connect to environments in other tenants when using a connection to another tenant.
   - To restrict connections to other tenants from the Microsoft Dataverse connector and other connectors, you can configure Power Platform tenant isolation policies. To learn more, go to [Cross-tenant inbound and outbound restrictions](/power-platform/admin/cross-tenant-restrictions).
--  Specify the environment dynamically.
-  - To set the Environment parameter manually, select **Enter custom value** at the end of the Environment parameter selector and provide the root URL of a Power Platform environment in the format `https://\<yourenvironmentid\>.crm.dynamics.com/`. 
-  - The environment can be provided as a string, expression, environment variable, or as dynamic content from other actions or triggers in the flow.
-  - To get the root URL of an environment, you can open the details page of the environment from the [Power Platform admin center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management](/connectors/flowmanagement/) connector.
-  - For actions like **Add a row** that depend on the table schema from a specific environment, the schema won't be automatically retrieved when using an expression, dynamic content, or environment variable to specify the environment. The request must be manually created using the `LogicalCollectionName` of the table and the body for the request in JSON format, similar to a [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api). For example, **accounts** and  **{ "name": "Contoso Marketing" }**.
+- [Specify the environment dynamically](#add-actions-that-connect-to-other-environments-dynamically).
 - Service principal connections can be used to connect to other environments.
+
+
+## Add actions that connect to other environments dynamically
+
+To set the Environment parameter dynamically instead of selecting a specific environment, select **Enter custom value** at the end of the Environment parameter selector and provide the root URL of a Power Platform environment in the format `https://<yourenvironmentid>.crm.dynamics.com/`. The URL can be provided as a string, expression, environment variable, or as dynamic content from the trigger or other actions in the flow.
+
+To get the root URL of an environment, you can open the details page of the environment from the [Power Platform admin center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management](/connectors/flowmanagement/) connector.
+
+For actions like **Add a row** that depend on the specific table schema from one environment, the schema won't be automatically retrieved when specifying the environment dynamically. The request must be manually created using the `LogicalCollectionName` of the table and the body for the request in JSON format, similar to a [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api). For example, **accounts** and  **{ "name": "Contoso Marketing" }**.
 
 ## Limitations
 
 - Using instant flows with the Dataverse connection set to **Provided by run-only user** isn't supported yet.
 - The triggers **When a row is added, modified or deleted** and **When an action is performed** don't support the Environment parameter yet.
 - The actions to **Search rows** and **Perform a changeset** request don't have preview actions with the Environment parameter yet.
+
+## Best practices
+
+- For best performance, deploy flows using the Microsoft Dataverse connector to the same Power Platform environment as the data and apps they are connecting to.
+  - The Microsoft Dataverse connector in Power Automate is optimized to directly connect to Dataverse through a native integration when the Environment parameter is set to `(Current)`.
+  - When connecting to other environments, it connects through the [Power Platform Connectors platform](/connectors/connectors).
+- Review recommended admin and governance practices around your [Power Platform environment strategy](/power-platform/guidance/adoption/environment-strategy) when planning solutions that connect to other environments, including staging flows in separate development, test, and production environments for specific business groups and applications.
