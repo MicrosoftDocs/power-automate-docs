@@ -5,8 +5,8 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
+ms.date: 10/10/2023
+ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -261,6 +261,8 @@ This action doesn't produce any variables.
 ## <a name="readfromcsvfile"></a> Read from CSV file
 
 Read a CSV file into a data table.
+
+You can use the **Read from CSV file** action to create a datatable variable with the file's contents. You need to define the path to the CSV file and the encoding to use for reading it, while you can also trim any whitespaces from the extracted cells, handle the first line as column headers, and specify the columns separator.
 
 ### Input parameters
 
