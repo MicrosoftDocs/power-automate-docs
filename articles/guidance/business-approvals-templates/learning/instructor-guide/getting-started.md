@@ -47,13 +47,13 @@ dotnet tool install --global SecureStore.Client
 1. Clone the Approvals Kit GitHub repository
 
 ```bash
-git clone https://www.github/microsoft/powercat-approvals-kit.git
+git clone https://www.github/microsoft/powercat-business-approvals-kit.git
 ```
 
 1. Build the .Net library and playwright on Windows
 
 ```pwsh
-cd .\powercat-approvals-kit\src\installer
+cd .\powercat-business-approvals-kit\Workshop\src\installer
 dotnet build
 ./bin/Debug/net7.0/playwright.ps1 install
 ```
@@ -159,13 +159,13 @@ EOF
 1. Clone the Approvals Kit GitHub repository
 
 ```bash
-git clone https://www.github/microsoft/powercat-approvals-kit.git
+git clone https://www.github/microsoft/powercat-business-approvals-kit.git
 ```
 
 1. Setup the installer app and install dependencies
 
 ```pwsh
-cd powercat-approvals-kit\src\installer
+cd powercat-business-approvals-kit\Workshop\src\installer
 dotnet build
 pwsh ./bin/Debug/net7.0/playwright.ps1 install
 pwsh ./bin/Debug/net7.0/playwright.ps1 install-deps
@@ -173,7 +173,7 @@ pwsh ./bin/Debug/net7.0/playwright.ps1 install-deps
 
 ## Verifying Install
 
-Independent of which method you selected each of the following commands should be able to run to verify successfull install of components needed to get started
+Independent of which method you selected each of the following commands should be able to run to verify successful install of components needed to get started.
 
 1. Power Platform CLI is installed
 
