@@ -145,7 +145,7 @@ You can optionally create users via the automated scripts for demonstration tena
 . .\src\scripts\users.ps1
 ```
 
-2. Setup a user with known password
+2. Setup a user with the value that is securely stored in the value **DEMO_PASSWORD**
 
 ```pwsh
 Reset-User "first.last@contoso.OnMicrosoft.com"

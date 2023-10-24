@@ -86,7 +86,7 @@ This approach includes a summary of how to use create a small Azure Linux based 
 
 ### Why is this important?
 
-If you want to setup a class size of 20+ students each environment setup could take up to 20 minutes. By using an Azure Cloud based Virtual Machine you could automate a set of machines without the need to have an active PC connected to the Internet.
+If you want to setup a class size of 20+ students each environment setup could take up to 20 minutes for each user environment. By using an Azure Cloud based Virtual Machine you could automate a set of machines without the need to have an active PC connected to the Internet.
 
 ### Installation Steps
 
@@ -94,9 +94,10 @@ If you want to setup a class size of 20+ students each environment setup could t
 
 > NOTE: If Azure Cloud Shell is new to you [Overview of Azure Cloud Shell](https://learn.microsoft.com/azure/cloud-shell/overview) an the [Quickstart](https://learn.microsoft.com/azure/cloud-shell/quickstart) could be useful starting points.
 
-2. Use the following Bash script inside the Azure Cloud Shell to create a resource group, create and start a Virtual Machine
+2. Use the following Bash script inside the Azure Cloud Shell to create a resource group, create and start a Virtual Machine (VM)
 
 ```bash
+vmName="ApprovalsKitSetupVM"
 exists=`az group exists --name ApprovalsKitSetup`
 if [ $exists = 'false' ];
 then
@@ -104,25 +105,26 @@ then
 else
   echo 'Group already exists'
 fi
-match=`az vm list -d -o table --query "[?name=='ApprovalsKitSetupVM']"`
+match=`az vm list -d -o table --query "[?name=='$vmName']"`
 if [ "$match" = "" ];
 then
-  az vm create --resource-group ApprovalsKitSetup --name "ApprovalsKitSetupVM" --image "Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest" --size "Standard_B2s" --storage-sku Standard_LRS --os-disk-size-gb 63 --public-ip-sku Standard --admin-username accadmin --generate-ssh-keys --ssh-key-value ~/.ssh/azurevm.pub --storage-sku Standard_LRS
+  az vm create --resource-group ApprovalsKitSetup --name "$vmName" --image "Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest" --size "Standard_B2s" --storage-sku Standard_LRS --os-disk-size-gb 63 --public-ip-sku Standard --admin-username accadmin --generate-ssh-keys --ssh-key-value ~/.ssh/azurevm-$vmName.pub --storage-sku Standard_LRS
 else
   echo 'VM Already exists'
 fi
-$running=`az vm list -d --query "[?powerState=='VM running' && name=='ApprovalsKitSetupVM']" -o table`
+$running=`az vm list -d --query "[?powerState=='VM running' && name=='$vmName']" -o table`
 if [  "$running" = "" ];
 then
-    az vm start  --resource-group ApprovalsKitSetup --name "ApprovalsKitSetupVM"
+    az vm start  --resource-group ApprovalsKitSetup --name "$vmName"
 fi
 ```
 
 1. Create ssh session to get command line to your virtual machine
 
 ```bash
-ip=`az vm list-ip-addresses --resource-group ApprovalsKitSetup --name ApprovalsKitSetupVM --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" --output tsv`
-ssh -i ~/.ssh/azurevm "accadmin@$ip" -t -l bash
+vmName="ApprovalsKitSetupVM"
+ip=`az vm list-ip-addresses --resource-group ApprovalsKitSetup --name $vmName --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" --output tsv`
+ssh -i ~/.ssh/azurevm-$vmName "accadmin@$ip" -t -l bash
 ```
 
 1. Install the Azure CLI using the following script inside the SSH connection of your linux VM.
@@ -131,16 +133,19 @@ ssh -i ~/.ssh/azurevm "accadmin@$ip" -t -l bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
-1. Restart you VM
+1. Restart you virtual machine.
+
+1. Wait for your machine to start again and have a status of running.
 
 1. In the Azure Cloud Shell login to virtual machine using ssh
 
 ```bash
-ip=`az vm list-ip-addresses --resource-group ApprovalsKitSetup --name ApprovalsKitSetupVM --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" --output tsv`
-ssh -i ~/.ssh/azurevm "accadmin@$ip" -t -l bash
+vmName="ApprovalsKitSetupVM"
+ip=`az vm list-ip-addresses --resource-group ApprovalsKitSetup --name $vmName --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" --output tsv`
+ssh -i ~/.ssh/azurevm-$vmName "accadmin@$ip" -t -l bash
 ```
 
-1. Install the required tools
+1. Install the required tools inside the Virtual Machine bash shell
 
 ```bash
 sudo apt remove -y 'dotnet*' 'aspnet*' 'netstandard*'
@@ -162,14 +167,18 @@ EOF
 git clone https://www.github/microsoft/powercat-business-approvals-kit.git
 ```
 
+> NOTE: If git clone is not an option, you could download the repository as a zip file upload the zip file to your Cloud Shell. Then use ```scp -i ~/.ssh/azurevm-$vmName powercat-business-approvals-kit-main.zip "accadmin@$ip":/home/accadmin```
+
 1. Setup the installer app and install dependencies
 
 ```pwsh
-cd powercat-business-approvals-kit\Workshop\src\installer
+cd powercat-business-approvals-kit/Workshop/src/install
 dotnet build
 pwsh ./bin/Debug/net7.0/playwright.ps1 install
 pwsh ./bin/Debug/net7.0/playwright.ps1 install-deps
 ```
+
+> NOTE: If you are using zip file copied via scp use the command ```unzip powercat-business-approvals-kit-main.zip``` and move the folder name ```mv powercat-business-approvals-kit-main powercat-business-approvals-kit```
 
 ## Verifying Install
 
@@ -198,3 +207,7 @@ pwsh --version
 ```powershell
 SecureStore --version
 ```
+
+## Summary
+
+In this section you have have the option of installing and verify that you have the tools required to use the automated setup scripts that can assist you with setup of a workshop.
