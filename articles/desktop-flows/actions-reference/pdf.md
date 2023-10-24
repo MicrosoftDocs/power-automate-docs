@@ -5,8 +5,8 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
-ms.author: marleon
+ms.date: 10/20/2023
+ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -168,6 +168,8 @@ Extract pages from a PDF file to a new PDF file.
 ## <a name="mergefiles"></a> Merge PDF files
 
 Merges multiple PDF files into a new one.
+
+You can use the **Merge PDF files** action to take two or more PDF files and merge them into a single file. The files to be merged can be provided either in the form of a list, or enclosed in double quotes and separated by a delimiter. You can also provide passwords for the PDF files, in case they are password-protected.
 
 ### Input parameters
 
