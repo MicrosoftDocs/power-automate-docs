@@ -2,7 +2,6 @@
 title: Process migrator for Softomotive products (preview)
 description: Process migrator for Softomotive products (preview)
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 12/16/2020
@@ -21,11 +20,8 @@ search.audienceType:
 
 <!-- ProcessRobot users are now able to export .prp files into folders and --> 
 > [!IMPORTANT]
-> From November 3rd 2023, the Process migrator for Softomotive products (preview) will be deprecated and no longer supported.  “Deprecated” means we intend to remove the feature or capability from a future release.  The feature or capability will continue to work until it is officially removed.  This deprecation notification can span a few months or years.  After removal, the feature or capability will no longer work.  This notice is to allow you sufficient time to plan, migrate and update your code before the feature or capability is removed.  
-
-
-> [!IMPORTANT]
-> From January 1st 2022, WinAutomation and ProcessRobot will no longer be supported. Learn more about the Softomotive products deprecation [here](/previous-versions/troubleshoot/winautomation/softomotive-useful-information/softomotive-products-end-of-support-announcement). You may migrate your flows to Power Automate until the deprecation date of the Process migrator for Softomotive products.
+> - On November 3 2023, the Process migrator for Softomotive products (preview) was deprecated and is no longer supported.  
+> - Effective January 1 2022, WinAutomation and ProcessRobot are not longer supported. Learn more about the Softomotive products deprecation [here](/previous-versions/troubleshoot/winautomation/softomotive-useful-information/softomotive-products-end-of-support-announcement).
 
 
 Process migrator for Softomotive products (preview) enables users to convert automations into desktop flows for use in Power Automate.
