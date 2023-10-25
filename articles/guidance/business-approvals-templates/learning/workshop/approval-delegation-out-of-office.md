@@ -32,7 +32,7 @@ Using the step-by-step instructions, you will define a delegated approver and th
 
 1. Review the settings screen to get familiar with the information that you can provide
 
-   ![Screenshot of basic settings inside the Business Approval Management application](./media/business-approval-management-configure-basic-settings.png)
+   ![Screenshot of basic settings inside the Business Approval Management application](./media/business-approval-management-basic-settings.png)
 
 ## Task 2 - Define approval delegate and set out of office
 
@@ -44,7 +44,7 @@ Using the step-by-step instructions, you will define a delegated approver and th
 
 1. Select **Save**
 
-   ![Screenshot of basic settings inside the Business Approval Management application with sample delegate and outof office](./media/business-approval-management-configure-basic-settings.png)
+   ![Screenshot of basic settings inside the Business Approval Management application with sample delegate and outof office](./media/business-approval-management-basic-settings-sample.png)
 
 ## Task 3 - Create a new Machine Request
 
