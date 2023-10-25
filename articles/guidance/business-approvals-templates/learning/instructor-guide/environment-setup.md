@@ -32,7 +32,7 @@ To create the developer environment, we will be using a set of PowerShell functi
 
 By running these PowerShell functions, you will have a fully functional environment for learning and practicing the Power Platform Business Approvals kit.
 
-## Setup steps
+## Single user setup (Bash Script)
 
 1. Copy start script
 
@@ -50,4 +50,50 @@ chmod +x ~/setup.sh
 
 ```bash
 ~/setup.sh adelev
+```
+
+1. Monitor the background task
+
+```bash
+tail -100 nohup.out
+```
+
+## Multiple user setup (Bash Script)
+
+1. Create a new text file with users names on each new line
+
+```bash
+cat << \EOF > ~/users.txt
+AdeleV
+AlexW
+AllanD
+BrianJ
+CameronW
+ChristieC
+DebraB
+DiegoS
+GradyA
+IrvinS
+IsaiahL
+JohannaL
+JoniS
+LeeG
+LidiaH
+LynneR
+MeganB
+MiriamG
+NestorW
+PattiF
+PradeepG
+EOF 
+```
+
+1. Start setup for users passing in the name of the file containing users to setup
+
+```bash
+~/setup.sh ~/users.txt
+```
+
+```bash
+tail -100 nohup.out
 ```
