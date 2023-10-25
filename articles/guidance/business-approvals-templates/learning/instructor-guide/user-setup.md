@@ -32,7 +32,13 @@ One way of managing access to power platform resources is via a Security group. 
 
 > NOTE: For instructions on how to download and setup the instructor guide automation scripts follow the [Setup Instructor Guide Scripts](./setup-instructor-scripts.md)
 
-1. Import the security PowerShell commands
+1. Start a PowerShell session
+
+```bash
+pwsh
+```
+
+1. Import the security PowerShell commands from where you have installed the Approvals Kit Workshop scripts
 
 ```pwsh
 . .\src\scripts\security.ps1
@@ -44,7 +50,7 @@ One way of managing access to power platform resources is via a Security group. 
 Invoke-AzureLogin
 ```
 
-2. Create Makers security group
+1. Create Makers security group
 
 ```pwsh
 Add-SecurityMakersGroup
@@ -52,11 +58,15 @@ Add-SecurityMakersGroup
 
 > NOTE: Review the [How are role-assignable groups protected](https://learn.microsoft.com/entra/identity/role-based-access-control/groups-concept#how-are-role-assignable-groups-protected) for security roles that the logged in Azure Login account will require.
 
-3. Assign Microsoft Developer Plan to the Makers group using guidance from https://learn.microsoft.com/azure/active-directory/enterprise-users/licensing-ps-examples
+1. Assign Microsoft Developer Plan to the Makers group using guidance from https://learn.microsoft.com/azure/active-directory/enterprise-users/licensing-ps-examples
 
 ```pwsh
 Add-SecurityMakersGroupAssignDeveloperPlan
 ```
+
+> NOTE: Sign up links for developer / trial
+> - [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/)
+> - [Power Automate pricing](https://powerautomate.microsoft.com/pricing/)
 
 ## Microsoft Entry ID Applications
 
@@ -70,13 +80,19 @@ The Automation Kit application is used by the Approvals Kit custom connector to 
 
 1. Create a new Application following [Register an application with microsoft entra id and create a service principal](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
 
-1. The default redirect URL should be **https://global.consent.azure-apim.net/redirect**.
+1. The default URI of type **Web** and value of **https://global.consent.azure-apim.net/redirect**.
 
 > NOTE: This value could change depending on the environment you deploy your custom connector within.
 
-1. In the API Permissions section ensure that Delegated Dynamics (user_impersonation) have been granted with administrator consent.
+1. Select **Register**
+
+1. In the API Permissions for **https://global.consent.azure-apim.net/redirect** select **Dataverse** and ensure that Delegated Dynamics (user_impersonation) have been granted with administrator consent.
 
   ![Screenshot of adding Delegated Dynamics CRM Permissions](../../media/app-registration-dynamics-crm-delegated-permissions.png)
+
+1. Select **Add permissions**
+
+1. Select grant admin consent for the application by selecting text similar to **Grant admin consent for Contoso**
 
 1. Create Secret by moving to **Certificates and Secrets** section and click **New client secret**.
 
@@ -88,11 +104,19 @@ The Automation Kit application is used by the Approvals Kit custom connector to 
 
 ### Install Administration Application
 
-The Install Administration application is used by the instructir gudie setup scripts to provide user administration. The results of this process should be stored in the **ADMIN_APP_ID** and **ADMIN_APP_SECRET** secure variables.
+The Install Administration application is used by the instructor guide setup scripts to provide user administration. The results of this process should be stored in the **ADMIN_APP_ID** and **ADMIN_APP_SECRET** secure variables.
 
 1. Create a new Application named **Approvals Kit Instructor Admin** following [Register an application with Microsoft Entra id and create a service principal](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
 
-1. Ensure that API perssions of type **application** for **User.ReadWrite.Add** and **UserAuthenticationMethod.ReadWrite.All** have been allocated admin consent granted
+1. Select **Register**
+
+1. Select **Microsoft.Graph**
+
+1. Ensure that API permissions of type **application** for **User.ReadWrite.Add** and **UserAuthenticationMethod.ReadWrite.All** 
+
+1. Select grant admin consent for the application by selecting text similar to **Grant admin consent for Contoso**
+
+  ![Screenshot of Microsoft Graph permissions for Approvals Kit Instructor Admin app](./media/approvals-kit-instructor-admin-app-api-permissions.png)
 
 1. Create Secret by moving to **Certificates and Secrets** section and click **New client secret**.
 
@@ -130,7 +154,7 @@ SecureStore create secrets.json --keyfile secret.key
 ```pwsh
 SecureStore set DEMO_PASSWORD "SomePassword" --keyfile secret.key
 SecureStore set CLIENT_ID "Azure Client id" --keyfile secret.key
-SecureStore set CLIENT_SECRET "Azure Client secret" "--keyfile secret.key
+SecureStore set CLIENT_SECRET "Azure Client secret" --keyfile secret.key
 SecureStore set ADMIN_APP_ID "Azure Admin Client id" --keyfile secret.key
 SecureStore set ADMIN_APP_SECRET "Azure Admin Client secret value" --keyfile secret.key
 ```
@@ -165,6 +189,18 @@ Reset-User "first.last@contoso.OnMicrosoft.com"
 }
 ```
 
+## Install Creator Kit
+
+1. Login to [Power Platform Admin Center](https://aka.ms/ppac) an environment administrator
+
+1. Install [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1) from app source 
+
+1. Select an environment to install the Creator Kit
+
+1. Review and Agree to the Terms and conditions and privacy policy
+
+1. Select **Install**
+
 ## Summary
 
 Before starting the [Environment Setup](./environment-setup.md) the following should be in place
@@ -176,3 +212,5 @@ Before starting the [Environment Setup](./environment-setup.md) the following sh
 - Microsoft Entra ID Applications have been created that will be used for the custom connector and to assist with automated setup.
 
 - Setup variables are configured in SecureStore
+
+- The Creator Kit installed into one environment

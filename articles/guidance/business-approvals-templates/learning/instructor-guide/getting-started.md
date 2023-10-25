@@ -172,10 +172,12 @@ git clone https://www.github/microsoft/powercat-business-approvals-kit.git
 1. Setup the installer app and install dependencies
 
 ```pwsh
+Push-Location
 cd powercat-business-approvals-kit/Workshop/src/install
 dotnet build
 pwsh ./bin/Debug/net7.0/playwright.ps1 install
 pwsh ./bin/Debug/net7.0/playwright.ps1 install-deps
+Pop-Location
 ```
 
 > NOTE: If you are using zip file copied via scp use the command ```unzip powercat-business-approvals-kit-main.zip``` and move the folder name ```mv powercat-business-approvals-kit-main powercat-business-approvals-kit```

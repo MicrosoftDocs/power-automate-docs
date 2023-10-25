@@ -11,3 +11,43 @@ ms.reviewer: angieandrews
 ---
 
 # Environment Setup
+
+This section of the Power Platform Business Approvals kit focuses on creating an isolated development environment for the learner. Before proceeding, make sure you have completed the previous section [User setup](./user-setup.md), which focused on creating the Microsoft Entra ID users, groups, and assigned licenses.
+
+To create the developer environment, we will be using a set of PowerShell functions that automate the following steps:
+
+1. Creating a developer environment for the learner
+
+1. Set the required environment settings.
+
+1. Import the Creator Kit.
+
+1. Import dependent solutions and components.
+
+1. Import the Contoso Coffee Application from the Power Platform App in a day instructor downloads.
+
+1. Install and set up the Approvals Kit.
+
+1. Perform post-install steps of publishing applications and enabling flows.
+
+By running these PowerShell functions, you will have a fully functional environment for learning and practicing the Power Platform Business Approvals kit.
+
+## Setup steps
+
+1. Copy start script
+
+```bash
+cp ~/powercat-business-approvals-kit/Workshop/src/scripts/start.sh .
+```
+
+1. Enable execution of setup
+
+```bash
+chmod +x ~/setup.sh
+```
+
+1. Setup user
+
+```bash
+~/setup.sh adelev
+```
