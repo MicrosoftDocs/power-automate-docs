@@ -147,6 +147,19 @@ ssh -i ~/.ssh/azurevm-$vmName "accadmin@$ip" -t -l bash
 
 1. Install the required tools inside the Virtual Machine bash shell
 
+> **NOTES:**
+>
+> 1. `sudo`: This command is used to run a command with elevated privileges. It allows a user to execute a command as the root user or another user with higher privileges
+>
+> 2. `apt remove`: This command is used to remove a package from your system. It removes all the files associated with the package, as well as any configuration files that were created when the package was installed
+>
+> 3. `apt remove`: This command is used to remove a package from your system. It removes all the files associated with the package, as well as any configuration files that were created when the package was installed
+>
+> 4. The `dotnet tool install` command is used to install a .NET Core global tool. Global tools are .NET Core console applications that are installed on your system and can be accessed from any directory in the command prompt.
+>
+> 5. The `.bash_profile` file is a script that is executed whenever a new terminal session is started in Bash. It is used to set environment variables, define aliases, and perform other customizations to the shell environment.
+>
+
 ```bash
 sudo apt remove -y 'dotnet*' 'aspnet*' 'netstandard*'
 sudo rm -f /etc/apt/sources.list.d/microsoft-prod.list
@@ -170,6 +183,8 @@ git clone https://www.github/microsoft/powercat-business-approvals-kit.git
 > NOTE: If git clone is not an option, you could download the repository as a zip file upload the zip file to your Cloud Shell. Then use ```scp -i ~/.ssh/azurevm-$vmName powercat-business-approvals-kit-main.zip "accadmin@$ip":/home/accadmin```
 
 1. Setup the installer app and install dependencies
+
+> **NOTE:** Playwright is an open-source solution for automating web browsers. It is used by the installer to automate interactive tasks as a workshop user account. [Playwright documentation](https://playwright.dev/docs/intro) provides official documentation for Playwright. It provides a comprehensive guide to using the library, including installation instructions, API reference, and examples
 
 ```pwsh
 Push-Location

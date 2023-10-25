@@ -46,7 +46,7 @@ When it comes to handling business processes that require multiple levels of app
 
 10 mins
 
-### [Handle out of office](./out-of-office.md)
+### [Handle approval delegation and out of office](./approval-delegation-out-of-office.md)
 
 10 mins
 

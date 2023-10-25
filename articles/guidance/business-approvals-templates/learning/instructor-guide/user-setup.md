@@ -16,7 +16,7 @@ Now that you have completed the [Tenant Setup](./tenant-setup.md) section of the
 
 ## Development / Trial Licenses
 
-If the tenant that has been selected does not have access to [Power Apps licenses](https://powerapps.microsoft.com/pricing/) on option for development / test of the Approvals Kit for non production scenarios is the [Power Apps Devloper Plan](https://learn.microsoft.com/power-platform/developer/plan). The learn page has more information on the Power Apps Developer Plan and how to signup for a Developer Plan.
+If the tenant that has been selected does not have access to [Power Apps licenses](https://powerapps.microsoft.com/pricing/) one option for development / test of the Approvals Kit for non production scenarios is the [Power Apps Devloper Plan](https://learn.microsoft.com/power-platform/developer/plan). The learn page has more information on the Power Apps Developer Plan and how to signup for a Developer Plan.
 
 If learners do not have access to [Power Automate licenses](https://powerautomate.microsoft.com/pricing/) then you could explore the **Try it for free** option from Power Automate pricing page.
 

@@ -154,12 +154,10 @@ After submitting the Machine request the cloud flow should be triggered and begi
 
 1. Select **Approve**.
 
-  > [!div class="mx-imgBorder"]
  ![Screenshot of selecting an Approval in the Power Automate web portal](./media/power-automate-approvals-select.png)
 
 1. Select **Confirm** to approve the approval.
 
-  > [!div class="mx-imgBorder"]
   ![Screenshot of selecting an Approval in the Power Automate web portal](./media/power-automate-approvals-approve-confirm.png)
 
 1. Select **Done** to close the Approval once confirmed.
@@ -182,12 +180,10 @@ In this task use the Business Approval Management application of the Approvals K
 
 1. Select the completed approval.
 
-  > [!div class="mx-imgBorder"]
   ![Screenshot of active Business Approval Instances](./media/business-approval-management-approval-instances.png).
 
 1. Review the details and outcome of the Approval
 
-  > [!div class="mx-imgBorder"]
   ![Screenshot of active Business Approval Details view](./media/business-approval-management-approval-instance-info.png).
 
 ## Summary
