@@ -16,6 +16,8 @@ One key element of the Approvals kit is the ability to specify delegate approver
 
 This workshop module will provide step-by-step instructions for defining delegated approvers and handling out of office approvers. You will learn how to configure the basic settings of the Business Approval Management application to set delegate approvers, as well as how to handle out of office approvers using the Approvals kit. By the end of this module, you should have a good understanding of how to manage delegate approvers and out of office settings using the Power Platform Approvals Kit.
 
+> NOTE: Further information on [out of office and delegation](../../setup-out-of-office-and-delegation.md) is available for reference.
+
 ## Delegation
 
 One key element of the Approvals kit is the ability to specify delegate approvers in the event that you are out of the office or on holiday. This ensures that the approval process can continue smoothly even if the primary approver is unavailable.
@@ -54,15 +56,9 @@ Using the step-by-step instructions, you will define a delegated approver and th
 
 1. Select **Apps** and select the **Machine Ordering App**
 
-  ![Screenshot of starting the Contoso Coffee Machine Ordering app](./media/machine-ordering-app-play.png)
-
 1. If prompted select Allow for the Office 365 users connector.
 
-  ![Screenshot of Power Platform Office 365 USers connection consent dialog](./media/office-365-users-connection-allow.png)
-
 1. Select a few machines **below $400** and click **Compare**.
-
-  ![Screenshot of Contoso Coffee Machine Ordering app with multiple machines selected](./media/contoso-coffee-select-machines.png)
 
 1. Select one of the machines  and select **Submit**
 
@@ -76,7 +72,7 @@ Using the step-by-step instructions, you will define a delegated approver and th
 
 1. From the left navigation select **Approvals**.
 
-1. Wait for a new minutes and refresh and verify that you have not been sent an approval.
+1. Wait for a few minutes and refresh and verify that you have not been sent an approval.
 
 ## Summary
 

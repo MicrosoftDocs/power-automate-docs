@@ -38,6 +38,8 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 1. Select the **+ Add** button to add Field Name of **Name** of Data Type **Text** and Field Name **Price** of Data Type **Number**.
 
+> NOTE: The [Define Application Data](../../configuring-preset-approvals?#define-application-data) of the Configuring preset approvals guide provides more information on each of the Data Types.
+
   ![Screenshot of starting the Business Approvals Management process designer with single stage and node](./media/process-designer-set-variables.png)
 
 1. Select the **X** on the same horizontal lin as Set Variables heading to close the variables.
@@ -68,6 +70,8 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 1. Select the **+** under the **TRUE** node.
 
 1. In the Create Node dialog enter the following information:
+
+> NOTE: The [Define the first node](../../configuring-preset-approvals?#define-the-first-node) provides more information on allowable node values.
 
    |Field|Value|
    |Name|Above $400 Approval|
