@@ -222,8 +222,8 @@
                   href: ./business-approvals-templates/learning/workshop/trigger-approval.md
                 - name: Add conditional stages
                   href: ./business-approvals-templates/learning/workshop/add-conditional-stages.md
-                - name: Out of office
-                  href: ./business-approvals-templates/learning/workshop/out-of-office.md
+                - name: Approval delegation and out of office
+                  href: ./business-approvals-templates/learning/workshop/approval-delegation-out-of-office.md
                 - name: Summary
                   href: ./business-approvals-templates/learning/workshop/summary.md
                 - name: Knowledge Check
