@@ -34,7 +34,7 @@ By the end of this module, you should have a good understanding of how to manage
 
 ## Task 2 - Define approval delegate and set out of office
 
-1. In the **Approval Delegate** field search for another user who can act as an approver or enter the auto-approver test user that yor instructor has configured in Power Platform for workshop users.
+1. In the **Approval Delegate** field search for another user who can act as an approver or enter the auto-approver test user that your instructor has configured in Power Platform for workshop users.
 
 1. Select the **Out of Office** so that is displays Enabled
 

@@ -74,6 +74,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 > NOTE: The [Define the first node](../../configuring-preset-approvals?#define-the-first-node) provides more information on allowable node values.
 
    |Field|Value|
+   |-----|-----|
    |Name|Above $400 Approval|
    |Approver|Select your user account from the selection list|
    |Add|Select the **Add** button to add your user account as the the manager approver|
@@ -117,6 +118,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 1. Enter the following information into the card
 
    |Field|Value|
+   |-----|-----|
    |Workflow Process|Machine Requests (v2)|
    |Name|Select **Machine Name** from Dynamic content|
    |Price|Select **Price** from Dynamic content|
