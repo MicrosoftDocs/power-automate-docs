@@ -10,25 +10,28 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Triggering a defined Approval
+# Triggering a defined approval
 
-The prior [First approval module](./first-approval.md) provided tasks and steps required to create a Contoso Coffee machine request and a simple Approval workflow that when triggered will send an Approval to you for approval. This module will extend this functionality by using a Power Automate Cloud flow to begin a business approval process when a Machine Request is created in Dataverse.
+The prior [first approval module](./first-approval.md) provided tasks and steps required to create a Contoso Coffee machine request and a simple Approval workflow that when triggered will send an Approval to you for approval. This module will extend this functionality by using a Power Automate Cloud flow to begin a business approval process when a Machine Request is created in Dataverse.
 
-> NOTE: If you are not familiar with what Approvals are in Power Automate the [Get started with approvals](/power-automate/get-started-approvals) provides some examples of what can be achieved with the Standard Power Platform Approvals Connector together with Power Automate. The Approvals Kit extends Approvals scenarios like these with additional features discussed below.
+> NOTE: If you are not familiar with what Approvals are in Power Automate [get started with approvals](/power-automate/get-started-approvals) section provides some examples of what can be achieved with the Standard Power Platform Approvals Connector together with Power Automate. The Approvals Kit extends Approvals scenarios like these with additional features discussed below.
 
-## Give me an example
+## Example process
 
-As a example in the Contoso Coffee scenario we will start with a simple self-approval, based data getting added to Dataverse. In the later modules we will extend this workflow where a second manager approval is created when the value of the machine request is greater than $400. This combined scenario could be built using multiple Power Automate Cloud Flows and the Approvals Kit. By using the Approvals Kit you can model the same process and focus on the business approvals process rather then combining multiple components together to achieve the same goal.
+As a example, we will start with a simple self-approval using the Contoso Coffee scenario, where a request is triggered when a new request data is added to Dataverse. In the later modules, we will extend this workflow where a second manager approval is requested when the value of the machine request is greater than $400. 
 
-## Tell me more
+This combined scenario could be built using multiple Power Automate Cloud Flows but may take some time to develop. By using the Approvals Kit, you can model the same process quickly and focus on configuring the business approvals process.
 
-Given the goal of this workshop is designed to incrementally build you knowledge of the Approvals Kit the first modules are intentionally simple, to get you started and it provides very similar to the functionality provided by the out of the box Approvals connector. In fact the Approvals kt also builds on the out of the box Approvals connector enhancing it with Power Platform solution that is made up of a set of Power Automate Cloud flows and Dataverse tables.
+## How this workshop is structured
 
-To explore what this provides you is the Approvals Kit gives a no code way of defining [Multi stage approvals and conditions](./add-conditional-stages.md) like we will cover in the next module. From a data point of view by storing data Approval workflow sin Dataverse, it enables you to rapidly make changes without the need to update or deploy a power platform solution. This also allows for variations for just one Approval, which can be done on a case by case basis rather than changing the approval process for all Approvals. Additionally, using Dataverse gives the ability to use the Auditing features of Dataverse to record Approvals process.
+The goal of this workshop is designed to incrementally build you knowledge of the Approvals Kit. The first module is intentionally simple to help you get familiar with the kit. 
+
+Approvals Kit provides a no-code way of defining [multi stage approvals and conditions](./add-conditional-stages.md) like we will cover in the next module. 
 
 In later modules of this workshop we will also demonstrate feature like handling for Delegated approvals and out of office support make it easy for you to build complicated Approvals process easily without needing to build these features using Power Platform solutions yourself.
 
 > NOTE: If you want to dive deeper you can read the [Approvals Kit Comparison](../../approvals-kit-comparison.md) for more information.
+
 
 ## Task 1 - Creating a solution
 
@@ -103,11 +106,11 @@ In your created solution perform these steps:
 
 1. Select **Save**.
 
-1. Wait for the Cloud flow to be saved.
+1. Wait for the cloud flow to be saved.
 
 ## Task 3 - Creating a new Machine Request
 
-Now that a cloud flow trigger has been defined for the **Machine Order** table peform these steps to create a new Machine request that should trigger an Approval workflow.
+Now that a cloud flow trigger has been defined for the **Machine Order** table, peform these steps to create a new Machine request that will trigger an approval workflow.
 
 1. Select **Apps** and select the **Machine Ordering App**
 
@@ -138,11 +141,11 @@ Now that a cloud flow trigger has been defined for the **Machine Order** table p
 
 ## Task 4 - Approve the request
 
-After submitting the Machine request the cloud flow should be triggered and begin your defined business approval process. Use these steps to approve the request in the Power Automate web portal.
+After submitting the Machine request, the cloud flow is triggered and will begin your defined business approval process. Use these steps to approve the request in the Power Automate portal.
 
-> NOTE: This workshop guide performs in the Approval inside the Power Automate Portal. If the user is configured with an Office 365 license the the approval will also be available via Outlook or in [Microsoft Teams](/teams/native-approvals-in-teams).
+> NOTE: This workshop guide performs in the Approval inside the Power Automate portal. If the user is configured with an Office 365 license, the the approval will also be available via Outlook or in [Microsoft Teams](/teams/native-approvals-in-teams).
 
-1. Open the [Power Automate Portal](https://make.powerautomate.com)
+1. Open the [Power Automate portal](https://make.powerautomate.com)
 
 1. Select the assigned Approvals Kit environment for this workshop content.
 
@@ -154,11 +157,11 @@ After submitting the Machine request the cloud flow should be triggered and begi
 
 1. Select **Approve**.
 
- ![Screenshot of selecting an Approval in the Power Automate web portal](./media/power-automate-approvals-select.png)
+ ![Screenshot of selecting an Approval in the Power Automate portal](./media/power-automate-approvals-select.png)
 
 1. Select **Confirm** to approve the approval.
 
-  ![Screenshot of selecting an Approval in the Power Automate web portal](./media/power-automate-approvals-approve-confirm.png)
+  ![Screenshot of selecting an Approval in the Power Automate portal](./media/power-automate-approvals-approve-confirm.png)
 
 1. Select **Done** to close the Approval once confirmed.
 
@@ -188,6 +191,9 @@ In this task use the Business Approval Management application of the Approvals K
 
 ## Summary
 
-In this module we combined the Contoso Coffee Machine Request solution with the business approval created in the [First approval](./first-approval.md) module. A Power Automate Cloud flow was created combing a Dataverse trigger for the Machine Order table and the Approvals kit connector to begin a selected business approval process.
+In this module, we combined the Contoso Coffee Machine Request solution with the business approval created in the [first approval](./first-approval.md) module. A Power Automate cloud flow was created combining a Dataverse trigger for the Machine Order table and the Approvals kit connector to begin a selected business approval process.
 
-The **Business Approval Manager** application was used to view the results of the completed Business Approval. If there was an error in the process or the stage was not completed the Instance status would be **Running** or **Error**.
+The **Business Approval Manager** application was used to view the results of the completed Business Approval. If there was an error in the process or the stage was not completed, the instance status would be **Running** or **Error**.
+
+> [!div class="nextstepaction"]
+> [Next step: Add conditions and stages](add-conditional-stages.md)

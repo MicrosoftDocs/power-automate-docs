@@ -216,11 +216,13 @@
                   href: ./business-approvals-templates/learning/workshop/introduction.md
                 - name: Working with Contoso Coffee
                   href: ./business-approvals-templates/learning/workshop/contoso-coffee-scenario.md
+                - name: Import Contoso Coffee solution
+                  href: ./business-approvals-templates/learning/workshop/import-contoso-coffee.md
                 - name: First approval
                   href: ./business-approvals-templates/learning/workshop/first-approval.md
                 - name: Trigger approval
                   href: ./business-approvals-templates/learning/workshop/trigger-approval.md
-                - name: Add conditional stages
+                - name: Add conditions and stages
                   href: ./business-approvals-templates/learning/workshop/add-conditional-stages.md
                 - name: Approval delegation and out of office
                   href: ./business-approvals-templates/learning/workshop/approval-delegation-out-of-office.md

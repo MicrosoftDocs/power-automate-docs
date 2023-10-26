@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 
 # Working with Contoso Coffee
 
-The Approvals Kit learning workshop builds on module two of the App in a Day workshop from the [Power Platform Training Worhshops](https://powerplatform.microsoft.com/training-workshops/) site.
+The Approvals Kit learning workshop builds on module two of the App in a Day workshop from the [Power Platform Training Workshops](https://powerplatform.microsoft.com/training-workshops/) site.
 
 ## Workshop Scenario
 
@@ -42,3 +42,6 @@ If you have any missing prerequisites for this workshop the following links coul
 1. Review the [Import Contoso Coffee](./import-contoso-coffee.md) workshop guide.
 
 1. Install or have your administration team install the Approvals Kit using the [Setup guide](../../setup.md)
+
+> [!div class="nextstepaction"]
+> [Next step: First approval](./first-approval.md)

@@ -10,7 +10,7 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Adding a conditional and stages
+# Add conditionals and stages
 
 The prior [Trigger approval module](./trigger-approval.md) provided tasks and steps required to create a Contoso Coffee machine request and begin the self approval of the machine request. In this module you will add additional input information into the Business approval process so that the workflow includes a Manager approval stage when the value of the Machine request is above $400.
 
@@ -127,7 +127,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 1. Select **Save** to update the Cloud Flow with the new workflow version and request data variables.
 
-## Task 6 - Test Mult-Stage with new Machine Request
+## Task 6 - Test multi-stage approval with a new Machine Request
 
 1. Open the **Machine Ordering App**
 
@@ -139,7 +139,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 1. Select **OK** to close the confirmation.
 
-## Task 6 - Approve first Stage
+## Task 7 - Approve first Stage
 
 1. Open the [Power Automate Portal](https://make.powerautomate.com) you had open earlier.
 
@@ -155,7 +155,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 1. Select **Done** to close the approval response.
 
-## Task 7 - Approve manager approval
+## Task 8 - Approve manager approval
 
 1. Refresh the **Approvals** tab
 
@@ -167,7 +167,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 1. Select **Done** to close the approval response.
 
-## Task 8 - View approved multi-stage approval
+## Task 9 - View approved multi-stage approval
 
 1. Open the **Business Approval Management** application
 
@@ -180,3 +180,6 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 ## Summary
 
 In this module you published new version of the business approval workflow. The first step was to add new request data variables for name and price. The price variable was used in a new Manager approval stage where the price was above $400 to request and additional approval. The module then edited the **Machine request** cloud flow to use the new v2 workflow that includes the name and price variables. The **Machine Name** and **Price** where mapped as request data so that they could be used to supply data required by the workflow.
+
+> [!div class="nextstepaction"]
+> [Next step: Approvals delegation and out of office](./approval-delegation-out-of-office.md)
