@@ -23,15 +23,17 @@ The process mining capability relies on environment security and Microsoft Datav
 
 Some privileges are set by default in Dataverse. This allows built-in security roles to use the process mining capability without further actions from system administrators. Specifically:
 
-- A user in the process mining capability can create, share, and contribute to processes. This role has a restricted set of privileges that are only meant to be used by the process mining capability. If you need to provide access to other Power Platform features, make sure to assign less restrictive security roles on top of the user role for the process mining capability.
-
-- Environment makers can use the process mining capability to create, share, and contribute to processes.
+- The **Environment maker** role can use the process mining capabilities to create, share, and contribute to processes.
 
 - Administrators and system customizers can access all processes created in the environment.
 
+- The **Process Mining User** security role can only view created process reports.
+
 > [!IMPORTANT]
-> The process advisor **Application** is an *internal security role* that process mining uses. (Process mining was formerly named *process advisor*). Don't assign this security role to users. Don't modify the set of privileges in the process advisor **User** or process advisor **Application** security roles.
+> The **Process Mining Application** is an *internal security role* that process mining uses. (Process mining was formerly named *process advisor*). Don't assign this security role to users. Don't modify the set of privileges in the **Process Mining User** or **Process Mining Application** security roles.
 >
+> The **Process Mining User** security role will not suffice to create, share, and contribute to processes.
+> 
 > If you’re using Conditional Access polices to limit access to Power Automate and its features, the following apps must be included in **Cloud apps** policy application:
 >
 > - Power Apps
