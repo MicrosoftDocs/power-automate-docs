@@ -20,6 +20,8 @@ ms.reviewer: gtrantzas
 
 # Create an approval from a chat or channel
 
+[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+
 With the new approvals experience in Teams, you can create an approval from any chat or channel from the compose box.
 
 ## Start an approval in a chat or channel

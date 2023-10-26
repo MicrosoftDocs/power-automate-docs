@@ -259,6 +259,8 @@
       href: ./dataverse/delete-row.md
     - name: Use lists of rows in flows
       href: ./dataverse/list-rows.md
+    - name: Connect to other environments
+      href: ./dataverse/connect-to-other-environments.md
     - name: Use wait conditions to delay flows
       href: ./dataverse/wait-conditions.md
     - name: Perform bound or unbound actions in flows
@@ -436,7 +438,7 @@
     items:
     - name: Configure actions and the actions pane
       href: ./desktop-flows/actions-pane.md
-    - name: Assets library (preview)
+    - name: Assets library
       href: ./desktop-flows/assets-library.md
     - name: Manage the flow designer workspace
       href: ./desktop-flows/designer-workspace.md
@@ -478,7 +480,7 @@
       href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
-  - name: Custom actions (preview)
+  - name: Custom actions
     items:
     - name: Custom actions
       href: ./desktop-flows/custom-actions.md
@@ -488,7 +490,7 @@
       href: ./desktop-flows/upload-custom-actions.md
     - name: Use custom actions
       href: ./desktop-flows/use-custom-actions.md
-    - name: Actions SDK for .NET reference (preview)
+    - name: Actions SDK for .NET reference
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
   - name: Troubleshooter (preview)
     href: ./desktop-flows/troubleshooter.md
@@ -761,7 +763,9 @@
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
     - name: Copilot in Process Mining ingestion (preview)
-      href: process-mining-copilot-in-ingestion.md 
+      href: process-mining-copilot-in-ingestion.md
+    - name: Copilot in Process Mining process analytics (preview)
+      href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
     - name: Use your own Azure Data Lake Storage Gen2 (preview)
@@ -784,8 +788,6 @@
       href: ./minit/minit-desktop-application-overview.md
     - name: Download Process Mining desktop app
       href: ./minit/how-to-start-with-minit-desktop-application.md
-    - name: Copilot in Process Mining process analytics (preview)
-      href: ./minit/process-mining-copilot-in-process-analytics.md      
     - name: Get started
       items:
       - name: Explore the home page

@@ -2,13 +2,13 @@
 title: Date time actions reference
 description: See all the available date time actions.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/09/2022
-ms.author: marleon
+ms.date: 10/20/2023
+ms.author: matp
 ms.reviewer: gtrantzas
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -52,6 +52,8 @@ This action doesn't include any exceptions.
 ## <a name="subtract"></a> Subtract dates
 
 Finds the time difference between two given dates in days, hours, minutes, or seconds.
+
+To subtract a given date from another one use the **Subtract dates** action. Input a valid date in the **From date** property to use as a base to subtract the other date from. Then populate the **Subtract date** property to calculate the difference. Make sure to use a valid `Datetime` type of variable here (to create one use the **Get current date and time** action). You can specify how the returned difference should be represented (in days/ hours/ minutes/ seconds) by selecting the respective option in the **Get difference in** property.
 
 ### Input parameters
 
