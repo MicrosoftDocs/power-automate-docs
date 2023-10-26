@@ -405,7 +405,7 @@
         href: ./desktop-flows/avd-use-starter-kit.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
-  - name: Work queues (preview)
+  - name: Work queues
     items:
     - name: Overview
       href: ./desktop-flows/work-queues.md
