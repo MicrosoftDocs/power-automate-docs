@@ -68,8 +68,6 @@ Now that you have verified that Contoso Coffee machine request can be successful
 
 1. Enter the name of your workflow as **Machine Requests**
 
-  ![Screenshot of Approvals Kit new workflow](./media/approvals-kit-new-workflow.png)
-
 1. Select the + button to create the first approval stage.
 
 1. Enter a name **Self Approval** for the stage and then select **Save**
