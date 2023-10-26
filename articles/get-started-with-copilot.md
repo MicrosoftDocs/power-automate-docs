@@ -29,7 +29,7 @@ The cloud flows copilot can perform the following actions:
 
 ## Availability by region
 
-You need a Power Platform environment in the following regions to use copilot in Power Automate cloud flows.
+You need a Power Platform environment in the following regions to use Copilot in Power Automate cloud flows.
 
 | Region | Copilot availability |
 | ------------- | ------------- |
@@ -121,9 +121,14 @@ Use this section to find answers to frequently asked questions.
 
 ### Why don’t I see the cloud flow designer with Copilot in my Power Automate experience?
 
-- Check if the environment you’re using is in the United States region. Your Microsoft Power Platform admin can help review and verify the region.
-- Ask your admin if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
-- Ask your admin if they've turned on copilot in your tenant/environment.
+- Check if the environment you’re using is in the copilot available region in the table in the [Availability by region](#availability-by-region) section of this article. Your Microsoft Power Platform admin can help review and verify the region.
+- Ask your admin if they've requested Microsoft Support to disable the Copilot, if the region is supposed to enable Copilot by default.
+- Ask your admin if they've enabled Copilot by toggling on **Allow data movement for generative AI features** from the Power Platform admin center. To learn more, go to [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+
+### How do I enable Copilot?
+
+Admins can enable Copilot for an environment from the Power Platform admin center by consenting to data movement. To learn more, go to [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+
 
 ### How do I disable the cloud flows designer with Copilot?
 
