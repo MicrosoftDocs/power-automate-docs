@@ -12,19 +12,15 @@ ms.reviewer: angieandrews
 
 # Approvals delegation and out of office
 
-One key element of the Approvals kit is the ability to specify delegate approvers in the event that you are out of the office or on holiday. This ensures that the approval process can continue smoothly even if the primary approver is unavailable. In the "Configure basic settings" section of the Business Approval Management application, you can easily set these delegate approver values.
+One key element of Approvals kit is the ability to specify delegate approvers in the event that you are out of the office or on holiday. This ensures that the approval process can continue smoothly even if the primary approver is unavailable. In the "Configure basic settings" section of the Business Approval Management application, you can easily set these delegate approver values.
 
-This workshop module will provide step-by-step instructions for defining delegated approvers and handling out of office approvers. You will learn how to configure the basic settings of the Business Approval Management application to set delegate approvers, as well as how to handle out of office approvers using the Approvals kit. By the end of this module, you should have a good understanding of how to manage delegate approvers and out of office settings using the Power Platform Approvals Kit.
+This workshop module will provide step-by-step instructions for defining delegated approvers and handling out of office approvers. You will learn how to configure the basic settings of the Business Approval Management application to set delegate approvers, as well as how to handle out of office approvers using the Approvals kit. 
+
+By the end of this module, you should have a good understanding of how to manage delegate approvers and out of office settings using the Power Platform Approvals Kit.
 
 > NOTE: Further information on [out of office and delegation](../../setup-out-of-office-and-delegation.md) is available for reference.
 
-## Delegation
-
-One key element of the Approvals kit is the ability to specify delegate approvers in the event that you are out of the office or on holiday. This ensures that the approval process can continue smoothly even if the primary approver is unavailable.
-
-Using the step-by-step instructions, you will define a delegated approver and that can be used when handling out of office approvals.
-
-### Task 1 - Open the basic settings configuration
+## Task 1 - Open the basic settings configuration
 
 1. Open the **Business Approval Management** application in the workshop environment assigned to you.
 

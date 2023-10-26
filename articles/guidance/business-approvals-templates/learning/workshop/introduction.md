@@ -20,7 +20,7 @@ As a business leader or a low code maker supporting the business, you need to re
 
 1. Use a combination of [Power Apps](https://powerapps.microsoft.com/), [Dataverse](https://powerplatform.microsoft.com/dataverse/) and [Power Automate](https://flow.microsoft.com/) to define and integrate you approval process.
 
-1. With Microsoft Dataverse, you’ll enable your line-of-business specialists to easily bring your data together and quickly create powerful approvals using a compliant and scalable data service and app platform integrated right into Power Apps.
+1. Enable your line-of-business specialists to easily bring your data together and quickly create powerful approvals using a compliant and scalable data service and app platform integrated right into Power Apps.
 
 1. Automate and optimize your business approval processes. With Power Automate as your business service, your line-of-business specialists and IT professionals can build automated approvals workflows intuitively.
 

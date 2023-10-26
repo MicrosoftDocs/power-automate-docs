@@ -96,7 +96,7 @@ Now that you have verified that Contoso Coffee machine request can be successful
 
 ## Task 3 - Publish Approval Workflow
 
-Having created the definition of you work flow the next step is to publish the workflow so that you can trigger a approval when a Machine request is created.
+Having created the definition of your workflow, the next step is to publish the workflow so that you can trigger a approval when a Machine request is created. Everytime you publish the workflow, a new version is created.
 
 1. Select **Publish**.
 
@@ -114,4 +114,7 @@ In this module you stepped through the process of creating a Contoso Coffee Mach
 
 The publish task created an active version of you work flow. As you change and adapt a workflow you can publish new versions to react to changing business rules or revert back to an earlier version.
 
-The next [Trigger Approval](./trigger-approval.md) module will build on these two elements to use a Power Automate Cloud flow to begin a approval workflow every time a Machine request is submitted.
+The next [Trigger Approval](./trigger-approval.md) module will build on these two elements to use a Power Automate cloud flow to begin a approval workflow every time a Machine request is submitted.
+
+> [!div class="nextstepaction"]
+> [Next step: Setup trigger approvals](./trigger-approval.md)
