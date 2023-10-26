@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/13/2023
-ms.author: napienko
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ---
 
@@ -34,7 +34,7 @@ In either case, you'll need to sketch out which datasets you'll share, and/or wh
 
 ## Prerequisites
 
-- Microsoft Teams with the Power Automate app installed.
+- Microsoft Teams with Workflows installed.
 
 ## Add an action
 
