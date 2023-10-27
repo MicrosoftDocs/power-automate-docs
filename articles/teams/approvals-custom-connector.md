@@ -9,15 +9,10 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: napienko
+ms.author: kewaiss
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: teams
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 01/13/2021
 search.audienceType: 
   - flowmaker
@@ -130,8 +125,8 @@ Now that you've created your custom connector, it's time to create your approval
 
 1. Update the condition with the desired result.
 
-   >[!IMPORTANT]
-   >The "Approve" or "Reject" approval responses are case sensitive.
+   > [!IMPORTANT]
+   > The "Approve" or "Reject" approval responses are case sensitive.
 
    ![Completed condition card.](../media/approvals-custom-connector/a5cb9748124b88f42e5234616028ea3b.png)
 

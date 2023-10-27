@@ -182,7 +182,7 @@ The most common problems that you will encounter when creating adaptive cards ar
 
 -   Flow run errors are often caused by one of the following factors:
 
-    -  The Flow App is not installed in Microsoft Teams – Please [install the Flow App](https://make.powerautomate.com/blog/microsoft-flow-in-microsoft-teams) into Teams. 
+    -  Workflows isn't installed in Microsoft Teams – [Install Workflows in Microsoft Teams into Teams](teams/install-teams-app.md).
     
     In this case the error may resemble this screenshot:  
 

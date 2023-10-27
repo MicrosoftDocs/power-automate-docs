@@ -44,7 +44,7 @@ From the **Home** tab, you can [create](./teams-app-create.md) and [manage](./te
 
 :::image type="content" source="media/install-teams-app/workflows-home.png" alt-text="Screenshot of the default home screen.":::
 
-## Pin the Power Automate app
+## Pin Workflows
 
 To allow you to access Workflows easily at a later time, you can pin it in Microsoft Teams.
 

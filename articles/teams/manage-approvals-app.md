@@ -5,10 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: teams
 ms.topic: article
 ms.tgt_pltfrm: na
