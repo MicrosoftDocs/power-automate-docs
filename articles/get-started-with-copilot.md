@@ -127,12 +127,11 @@ Use this section to find answers to frequently asked questions.
 
 ### How do I enable Copilot?
 
-If you are not in the region (listed above in Availability table) where copilot is enabled by default, your admin can enable Copilot for an environment from the Power Platform admin center by consenting to data movement. To learn more, go to [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+If you're not in the region (listed in the previous [Availability table](#availability-by-region)) where Copilot is enabled by default, your admin can enable Copilot for an environment from the Power Platform admin center by consenting to data movement. To learn more, go to [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
 
+### How do I disable Copilot in the cloud flows designer?
 
-### How do I disable Copilot in the cloud flows designer ?
-
-You can disable copilot for your tenant by contacting Microsoft Support. 
+You can disable Copilot for your tenant by contacting Microsoft Support.
 
 ### How is Copilot in cloud flows different from the text generation model in AI Builder?
 
