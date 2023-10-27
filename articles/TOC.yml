@@ -705,7 +705,7 @@
       href: ./desktop-flows/actions-reference/sharepoint.md
     - name: Office 365 Outlook (preview)
       href: ./desktop-flows/actions-reference/office365outlook.md
-    - name: Work queues (preview)
+    - name: Work queues
       href: ./desktop-flows/actions-reference/workqueues.md
     - name: Custom actions (preview)
       href: ./desktop-flows/actions-reference/custommodule.md
