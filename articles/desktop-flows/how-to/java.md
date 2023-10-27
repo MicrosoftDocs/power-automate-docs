@@ -5,8 +5,8 @@ author: mariosleon
 
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 10/08/2021
-ms.author: marleon
+ms.date: 10/27/2023
+ms.author: NikosMoutzourakis
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -17,6 +17,12 @@ search.audienceType:
   - enduser
 ---
 # Automate Java applications
+
+Currently, Power Automate for desktop supports the use of UI automation in all Java apps and applets for the following Java versions:
+- Java apps: Java version 7 and above.
+- Java applets: Java version 7 and version 8.
+
+For enabling the UI automation in Java applets, the following are applied:
 
 ## Installing Java configuration
 
