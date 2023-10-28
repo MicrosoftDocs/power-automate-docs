@@ -1027,7 +1027,7 @@
     href: introduction-to-data-groups.md
   - name: View sharing and connectors analytics reports
     href: admin-analytics-report.md
-  - name: Respond to personal data requests (Azure AD)
+  - name: Respond to personal data requests (Microsoft Entra ID)
     items:
     - name: Summary
       href: privacy-dsr-summary.md
@@ -1146,10 +1146,3 @@
     href: faqs-copilot.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
-
-
-
-
-
-    
-

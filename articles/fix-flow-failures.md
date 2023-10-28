@@ -54,7 +54,7 @@ Follow these steps to add one or more columns to your run history view.
 
 ## Repair tips in email
 
-Repair tips are sent to flow owners via email whenever a cloud flow fails. These repair tips emails contain specific, actionable feedback about certain errors. For example, one common error is setting up a cloud flow that attempts to get a person’s manager in Office 365—but there is no manager configured in Azure Active Directory (Azure AD). If this or several other conditions cause your flow to fail, you get a repair tips email like this:
+Repair tips are sent to flow owners via email whenever a cloud flow fails. These repair tips emails contain specific, actionable feedback about certain errors. For example, one common error is setting up a cloud flow that attempts to get a person’s manager in Office 365—but there is no manager configured in Microsoft Entra ID. If this or several other conditions cause your flow to fail, you get a repair tips email like this:
 
 ![Repair tips.](media/fix-flow-failures/repair-tips-email-2.png)
 

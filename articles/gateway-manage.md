@@ -33,7 +33,7 @@ With a gateway, you can connect to on-premises data over the following connectio
 * DB2
 * Desktop flows
 * File System
-* Http with Azure AD
+* Http with Microsoft Entra ID
 * Informix
 * MySQL
 * Oracle Database
