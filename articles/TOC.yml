@@ -31,7 +31,9 @@
   - name: Share a flow
     href: create-team-flows.md
   - name: Support for guest users
-    href: share-guest-users.md  
+    href: share-guest-users.md
+  - name: Support for service principal owned flows
+    href: service-principal-support.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
