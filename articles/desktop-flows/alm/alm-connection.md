@@ -19,7 +19,7 @@ To give permissions on the machine:
 
 1. Sign into [Power Automate](https://make.powerautomate.com), and then select **Machines** on the left navigation pane. If the item isn’t in the left navigation pane, select **… More** and then select the item you want.
 1. Select the machine or machine group you want to share.
-1. Select **Share**, and then search for and select the **Application User AAD** in your Dataverse instance.
+1. Select **Share**, and then search for and select the **Application User Microsoft Entra ID** in your Dataverse instance.
 1. Select **User**, and then select **Save**.
 
 :::image type="content" source="./media/share-sp.png" alt-text="Screenshot of share panel for a machine":::

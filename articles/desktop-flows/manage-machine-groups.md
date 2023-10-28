@@ -88,7 +88,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 > [!IMPORTANT]
 >
 > - If you use local Windows accounts, all machines in the group must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
->- If you use Active Directory or Azure Active Directory joined machines, confirm that the user account in the desktop flow connection can access all the machines in the cluster.
+>- If you use Active Directory or Microsoft Entra joined machines, confirm that the user account in the desktop flow connection can access all the machines in the cluster.
 
 ## Maintenance mode for machine groups
 

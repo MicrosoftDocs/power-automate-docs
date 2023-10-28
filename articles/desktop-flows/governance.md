@@ -360,7 +360,7 @@ You can use the following registry entry to turn on the verbose logging state fo
 > [!NOTE]
 > This registry entry applies to Power Automate desktop version 2.24 and later.
 
-You can use the following registry entry to allow machine registrations to tenants that are different from the machine joined Azure Active Directory tenant.
+You can use the following registry entry to allow machine registrations to tenants that are different from the machine joined Microsoft Entra tenant.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -379,7 +379,7 @@ You can use the following registry entry to allow machine registrations to any t
 
  | Hive | Key | Name | Type |
 |---|---|---|---|
-| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration | AllowRegisteringOutsideOfAADJoinedTenant | DWORD |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration | AllowRegisteringOutsideOfMicrosoft Entra IDJoinedTenant | DWORD |
 
 ***Value***
 
