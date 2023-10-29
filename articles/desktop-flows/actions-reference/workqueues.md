@@ -68,7 +68,7 @@ The **Update work queue item action** action requires the following arguments.
   |----------      |----------|---------|---------------|-----------------|
   | **Work queue item** |No    |Text |               |Work queue item variable that has been previously returned by the queue orchestrator|
 | **Status** |No    |Processed, Generic Exception| Processed |Update the work queue item being processed using a status from the list of options.|
-| **Processing result** | Yes | Text| | Custom processing notes or value to set append  to the queue item being processed |
+| **Processing result** | Yes | Text| | Custom processing result or value to set append  to the queue item being processed |
 
 #### Exceptions
 
@@ -129,8 +129,7 @@ The **Requeue item with delay** action requires the following arguments.
   | **Work queue item** |No    |Work queue item |               |The work queue item to add the item into|
 | **Delay until** |No    |Datetime value| Normal |The datetime value applied to delay the queue item until|
 | **Expires** | Yes | Datetime value| | Custom expiration time for the item being requeued|
-
-| **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
+| **Processing result** | Yes | Text value, Numeric value| | Custom processing result to be added to the new queue item|
 
 #### Exceptions
 
