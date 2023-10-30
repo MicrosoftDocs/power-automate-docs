@@ -39,7 +39,7 @@ On the analytics report page, you can share the process by selecting **Share** i
 
 ## Share panel
 
-When you select the share action, a share panel displays. The share panel is where you select users in your Azure Active Directory (which may include external users) and share your process with them. You can search for any user to invite to your process in the **Dataverse** tenant.  
+When you select the share action, a share panel displays. The share panel is where you select users in your Microsoft Entra (which may include external users) and share your process with them. You can search for any user to invite to your process in the **Dataverse** tenant.  
 
 When you share a process with others, the option to send an email invitation is automatically selected for convenience. Viewers are invited to view the process's analytics. There's a link in the email invitation that leads them to the shared process's analytics.
 

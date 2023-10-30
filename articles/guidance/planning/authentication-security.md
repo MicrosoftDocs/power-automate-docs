@@ -34,18 +34,18 @@ or when using [desktop flows](../../desktop-flows/introduction.md).
 For desktop and website automation, an on-premises data gateway is required so that programs that are installed on the on-premises computers (for example, browser extensions and Power Automate Desktop) can be accessed from the Power Automate cloud-based
 service. More information: [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install)
 
-## Authentication by using Microsoft 365 and Azure AD
+## Authentication by using Microsoft 365 and Microsoft Entra ID
 
 This is the authentication for any automation that you use with Microsoft
 services. When the automation is run, it runs on behalf of the user
 who's running the automation and not the user who set up the automation originally.
 
-![Azure AD sign-in screen.](media/azure-ad-login.png "Azure AD sign-in screen")
+![Microsoft Entra sign-in screen.](media/azure-ad-login.png "Microsoft Entra sign-in screen")
 
 ## Authentication by using a username and password
 
 This type of authentication is used for systems and services that have an
-independent system other than what's used with Microsoft 365 and Azure Active Directory (Azure AD), with a separate username and password. Sign-ins for services such as Google, Facebook, and
+independent system other than what's used with Microsoft 365 and Microsoft Entra ID, with a separate username and password. Sign-ins for services such as Google, Facebook, and
 Twitter all have their own methods for authentication. Some enterprise systems provide
 [single sign-on (SSO)](/azure/active-directory/manage-apps/what-is-single-sign-on).
 
@@ -55,7 +55,7 @@ In the expense reporting example, the online banking system has its own sign-in 
 
 ## Authentication by using an on-premises system or Windows sign-in
 
-This type of authentication will be required if you're planning to automate with the Power Automate Desktop application or desktop flows. It's separate from Microsoft 365 or Azure AD. If a computer is connected to a corporate
+This type of authentication will be required if you're planning to automate with the Power Automate Desktop application or desktop flows. It's separate from Microsoft 365 or Microsoft Entra ID. If a computer is connected to a corporate
 network, it's highly likely that it uses Windows Server Active Directory.
 
 ![Windows sign-in screen.](media/windows-login.jpg "Windows sign-in screen")

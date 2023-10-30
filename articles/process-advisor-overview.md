@@ -139,6 +139,6 @@ Additional considerations for specific capabilities:
 
 - For the Power Automate Process Mining desktop app, download and install [Power Automate Process Mining desktop app](minit/how-to-start-with-minit-desktop-application.md).
 
-- To customize your report, you need to [set up your Power BI workspace](process-mining-pbi-workspace.md) and [register the process mining service principal in Azure AD](process-mining-pbi-workspace.md#install-azure-tools).
+- To customize your report, you need to [set up your Power BI workspace](process-mining-pbi-workspace.md) and [register the process mining service principal in Microsoft Entra ID](process-mining-pbi-workspace.md#install-azure-tools).
 
 - For task mining, download and install [Power Automate for desktop](desktop-flows/install.md).
