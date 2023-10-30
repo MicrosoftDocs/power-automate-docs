@@ -25,9 +25,9 @@ This article explains the built-in security roles that are available for Power A
 
 To access an environment, a user must meet the following criteria:
 
-1. Be enabled for sign-in in Azure Active Directory (Azure AD).
+1. Be enabled for sign-in in Microsoft Entra ID.
 2. Have a valid license that has a Microsoft Power Platform or Dynamics 365 recognized service plan.
-3. Be a member of the environment's Azure AD group (if one has been associated with the environment).
+3. Be a member of the environment's Microsoft Entra group (if one has been associated with the environment).
 4. Have at least one Dataverse security role assigned directly to them or to a group team they're a member of.
 
 If you have difficulties connecting to Dataverse, review this troubleshooting page for [Common user access issues.](/power-platform/admin/troubleshooting-user-needs-read-write-access-organization)
