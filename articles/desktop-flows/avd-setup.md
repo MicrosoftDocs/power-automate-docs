@@ -161,7 +161,7 @@ To update Environment Variables:
 
 1. You have to [publish the runbook](/azure/automation/manage-runbooks#publish-a-runbook) before you can run it.
 
-### Create an Azure AD app registration to connect to Azure Service Management APIs and to the Power Platform
+### Create a Microsoft Entra app registration to connect to Azure Service Management APIs and to the Power Platform
 
 1. Make sure you follow these steps to create an application user in the Power Platform admin center: [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users#create-an-application-user).
 
@@ -173,7 +173,7 @@ To update Environment Variables:
 
     ![Screenshot of the App Registration dialog.](media/avd-starter-kit/AppRegistration.png)
 
-The AAD application needs to have read permission on the subscription.
+The Microsoft Entra application needs to have read permission on the subscription.
 
 > [!IMPORTANT]
 >You need to save the App registration secrets in the Key Vault in order to use them within the starter kit.
