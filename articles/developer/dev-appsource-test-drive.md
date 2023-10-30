@@ -4,10 +4,10 @@ description: Use AppSource to share apps with customers, and generate leads for 
 author: MSFTMAN
 ms.devlang: na
 ms.subservice: developer
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/09/2017
-ms.author: Deonhe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: angieandrews
 search.audienceType: 
   - developer
 ---

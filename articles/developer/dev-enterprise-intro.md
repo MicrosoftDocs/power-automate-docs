@@ -3,10 +3,10 @@ title: Power Automate for enterprise developers, ISVs, and partners
 description: An introduction to developing solutions for Power Automate.
 author: MSFTMan
 ms.subservice: developer
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/10/2021
-ms.author: Deonhe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: angieandrews
 search.audienceType: 
   - developer
 ---

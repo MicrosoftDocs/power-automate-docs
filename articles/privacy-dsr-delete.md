@@ -72,7 +72,7 @@ The following table summarizes where to find and delete a user's personal data i
 1. [Delete or reassign environments created by the user.](#delete-or-reassign-environments-created-by-the-user)
 1. [Delete gateway settings.](#delete-gateway-settings)
 1. [Delete the user's details.](#delete-the-users-details)
-1. [Delete the user from Microsoft Entra ID.](#delete-the-user-from-azure-ad)
+1. [Delete the user from Microsoft Entra ID.](#delete-the-user-from-microsoft-entra-id)
 
 ### Reassign and copy the user's flows
 
