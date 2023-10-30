@@ -379,7 +379,7 @@ You can use the following registry entry to allow machine registrations to any t
 
  | Hive | Key | Name | Type |
 |---|---|---|---|
-| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration | AllowRegisteringOutsideOfMicrosoft Entra IDJoinedTenant | DWORD |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Registration | AllowRegisteringOutsideOfAADJoinedTenant | DWORD |
 
 ***Value***
 
