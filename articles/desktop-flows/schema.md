@@ -33,15 +33,15 @@ Power Platform administrators can choose when to enable the v2 storage schema. T
 
 :::image type="content" source="media/schema/schema-v2-on.png" alt-text="The option in the Power Platform Admin Center to enable the new schema.":::
 
-Convert desktop flows stored in the v1 schema to the v2 schema by Q1 2024, as then the v1 schema will be deprecated. You need Power Automate for desktop v2.29 or later to author and run desktop flows using environments where the v2 schema is enabled. This requirement ensures desktop flow makers and attended and unattended users can take advantage of the new functionality.
+Convert desktop flows stored in the v1 schema to the v2 schema by end of 2024, as then the v1 schema will be deprecated. You need Power Automate for desktop v2.29 or later to author and run desktop flows using environments where the v2 schema is enabled. This requirement ensures desktop flow makers and attended and unattended users can take advantage of the new functionality.
 
 ## Schema v2 enabled by default
 
-Starting October 2023, v2 schema will be automatically enabled for all environments. Although not recommended, the option to opt-out of the auto-enablement is available in the Power Platform admin center.
+Starting January 2024, v2 schema will be automatically enabled for all environments. Although not recommended, the option to opt-out of the auto-enablement is available in the Power Platform admin center. By turning the opt-out on, we will delay the enablement of v2 schema on this particular environment.
 
 :::image type="content" source="media/schema/schema-v2-off.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
 
-In 2024, v2 schema will be turned on for all environments without the option to disable the feature. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
+Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
@@ -74,3 +74,14 @@ Then, you can import the updated v2 schema version of the same process to the ma
 |**Can edit/save v1 desktop flows into v1 schema in environments with the v2 schema enabled?** |Yes|No (flows are upconverted and saved in the v2 schema)|
 |**Can edit/save v2 desktop flows into z1 schema in environments with the v2 schema disabled?** |No (user notified of error)|Yes (flows are downgraded to and saved in the v1 schema)|
 |**Can edit/save v2 desktop flows into v2 schema in environments with the v2 schema enabled?** |No (user notified of error)|Yes|
+
+## Dataverse schema
+With v2 schema, we change the data model stored in Dataverse. In addition to the workflow entity, we use the desktop flow binary entity to store data related to the desktop flow including images and metadata.
+
+:::image type="content" source="media/schema/desktopflowbinaries-v2.png" alt-text="Desktop flow in v2 schema with desktop flow binaries.":::
+
+> [!IMPORTANT]
+> The desktop flow binaries objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. 
+
+The number of desktop flow binaries might vary depending on the size of the desktop flow.
+
