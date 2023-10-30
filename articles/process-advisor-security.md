@@ -32,7 +32,7 @@ Some privileges are set by default in Dataverse. This allows built-in security r
 > [!IMPORTANT]
 > The **Process Mining Application** is an *internal security role* that process mining uses. (Process mining was formerly named *process advisor*). Don't assign this security role to users. Don't modify the set of privileges in the **Process Mining User** or **Process Mining Application** security roles.
 >
-> The **Process Mining User** security role will not suffice to create, share, and contribute to processes.
+> The **Process Mining User** security role won't suffice to create, share, and contribute to processes.
 > 
 > If you’re using Conditional Access polices to limit access to Power Automate and its features, the following apps must be included in **Cloud apps** policy application:
 >
