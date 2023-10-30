@@ -74,3 +74,14 @@ Then, you can import the updated v2 schema version of the same process to the ma
 |**Can edit/save v1 desktop flows into v1 schema in environments with the v2 schema enabled?** |Yes|No (flows are upconverted and saved in the v2 schema)|
 |**Can edit/save v2 desktop flows into z1 schema in environments with the v2 schema disabled?** |No (user notified of error)|Yes (flows are downgraded to and saved in the v1 schema)|
 |**Can edit/save v2 desktop flows into v2 schema in environments with the v2 schema enabled?** |No (user notified of error)|Yes|
+
+## Dataverse schema
+With v2 schema, we change the data model stored in Dataverse. In addition to the workflow entity, we use the desktop flow binary entity to store data related to the desktop flow including images and metadata.
+
+:::image type="content" source="media/schema/desktopflowbinaries-v2.png" alt-text="Desktop flow in v2 schema with desktop flow binaries.":::
+
+> [!IMPORTANT]
+> The desktop flow binaries objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. 
+
+The number of desktop flow binaries might vary depending on the size of the desktop flow.
+
