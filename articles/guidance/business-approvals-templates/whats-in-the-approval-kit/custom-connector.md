@@ -10,7 +10,7 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Overview
+# Custom Connector Overview
 
 The Approvals Kit includes a custom connector to help the process of starting a new business approval process.
 

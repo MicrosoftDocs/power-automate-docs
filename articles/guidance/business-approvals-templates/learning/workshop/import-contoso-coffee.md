@@ -10,9 +10,11 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
+# Import Contoso coffee solution
+
 Follow the steps below, if you did not complete already imported or have an environment with the Contoso Coffee solution available to you.
 
-# Task 1: Create a new environment
+## Task 1: Create a new environment
 
 1. Open a new browser tab, navigate to [Power Platform admin portal](https://aka.ms/ppac) select Environments and click New Environment.
 
@@ -25,7 +27,7 @@ Follow the steps below, if you did not complete already imported or have an envi
 
 1. Wait for the environment to be created.
 
-# Task 2: Import the solution
+## Task 2: Import the solution
 
 In this task, you will import the completed App in a day module 2 solution.
 

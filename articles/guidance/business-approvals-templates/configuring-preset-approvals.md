@@ -50,8 +50,6 @@ First step of configuring preset approvals is to set up Processes. Processes are
 
 1. In the **Default Approver,** start typing the name and select from list
 
-![Screenshot of select default approver](./media/select-default-approver.png)
-
 1. Select **Save**
 
 ## Define Application Data

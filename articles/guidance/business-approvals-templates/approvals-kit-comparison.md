@@ -30,7 +30,7 @@ Whether you're a seasoned workflow expert or just getting started, the Approvals
 
 This table provides a comparison between the Approvals Connector action and the Approvals Kit. It highlights the core use case, core product features, triggers, premium connectors, and other requirements for each option. This information can help users determine which option is best suited for their specific needs and requirements.
 
-|                    |[Approvals Connector](/connectors/approvals/)|Approvals Kit|
+|Feature |[Approvals Connector](/connectors/approvals/)|Approvals Kit|
 |--------------------|-------------------|-------------|
 |Core use case       |Simple approvals without need for advance approval features|No code workflow designer with extra features|
 |Core Product Feature|Yes                |No, requires install|

@@ -10,7 +10,7 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Overview
+# Setup Instructor Scripts
 
 It is assumed that you have completed the [Getting Started](./getting-started.md) guide and have an installation of the required tools. To start a session the following steps an be used to perform various automation tasks contained within the available PowerShell scripts
 

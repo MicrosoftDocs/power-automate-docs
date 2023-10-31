@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 
 # Overview of the Approvals Kit Instructor Guide
 
-This instructor guide is designed to provide you instructions on how to setup and provide support for the [Approvals Kit worshop](../learning-module/overview.md) learning module.
+This instructor guide is designed to provide you instructions on how to setup and provide support for the [Approvals Kit workshop](../workshop/overview.md) learning module.
 
 ## Context
 

@@ -1,6 +1,6 @@
 ---
 title: What’s in the Approvals Kit | Microsoft Docs
-description: What’s in the Approvals Kit
+description: What’s in the Approvals Kit - Power Automate
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
