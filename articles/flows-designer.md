@@ -18,14 +18,14 @@ ms.reviewer: angieandrews
 
 # Understand the cloud flows designer
 
-You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer with copilot capabilities. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
+You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
 > [!NOTE]
-> Here are some visual queues that tell you that you're using the cloud flows designer with copilot capabilities:
+> Here are some visual queues that tell you that you're using the cloud flows designer (not the classic designer):
 > - The cards in the flow are small.
 > - The standalone action configuration pane appears on the left when you select a card.
 >
-> More information: [Identify differences between the classic cloud flows designer and the designer with copilot capabilities](#identify-differences-between-the-classic-cloud-flows-designer-and-the-designer-with-copilot-capabilities)
+> More information: [Identify differences between the classic designer and the cloud flows designer](#identify-differences-between-the-classic-designer-and-the-cloud-flows-designer)
 
 The following screenshot shows the features of the AI-powered cloud flows designer.
 
@@ -143,23 +143,23 @@ The bottom button is for the minimap. Use it to focus on a specific section of a
 
 :::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot of the four zoom buttons.":::
 
-## Identify differences between the classic cloud flows designer and the designer with copilot capabilities
+## Identify differences between the classic designer and the cloud flows designer
 
 To quickly identify which designer version you're using, ask yourself the following questions:
 
-- Are the action cards on the flow  small or large?
+- Are the action cards on the flow small or large?
 - Is the action configuration pane inline or in a separate pane?
 
-The cloud flow designer with copilot capabilities has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
+The cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
 
 ## Limitation
 
-You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer with copilot capabilities. For example, the designer doesn't support non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow), and constructs such as some hybrid triggers (for a selected message (v2 Teams), TeamsoncomposeMesage (teams), Teams card trigger, Microsoft 365 Compliance Connector), a comment, Power Pages connector, or a Power Apps v1 trigger in your flow.
+You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer. For example, the designer doesn't support non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow), and constructs such as some hybrid triggers (for a selected message (v2 Teams), TeamsoncomposeMesage (teams), Teams card trigger, Microsoft 365 Compliance Connector), a comment, Power Pages connector, or a Power Apps v1 trigger in your flow.
 
-If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the designer with copilot capabilities.
+If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the cloud flows designer.
 
 > [!NOTE]
-> The new Power Automate cloud flows designer is not yet available in integration surfaces such as Power Apps, Teams, etc.
+> The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
 
 :::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the 'Switch to classic designer' button below the menu.":::
 
