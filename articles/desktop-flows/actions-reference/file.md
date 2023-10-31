@@ -5,7 +5,7 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/10/2023
+ms.date: 10/24/2023
 ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
@@ -292,6 +292,8 @@ You can use the **Read from CSV file** action to create a datatable variable wit
 ## <a name="writetocsvfile"></a> Write to CSV file
 
 Write a data table, data row or list to a CSV file.
+
+Use the **Write to CSV file** action to write a data table, data row or list variable to a target CSV file. In the **File path** parameter, specify the file path or variable containing a file or textual path where the data will be exported to.
 
 ### Input parameters
 
