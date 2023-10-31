@@ -81,7 +81,7 @@ The Approvals Kit is a collection of components that are designed to help you ge
 
     e.  Select **Save**
 
-1. Go to your new environment
+1. Go to your new environment so that you can setup the Approvals Kit solution for a manual install.
 
     a.  Go to [make.powerapps.com](https://make.powerapps.com)
 
@@ -144,7 +144,7 @@ After the flow is successfully run, a **email** requesting for approval is sent.
 
 ## Installing the core components
 
-Setting up a designated environment for Approvals Kit is recommended as all users within your organization that need to access the Business Approvals process. Further information on environments is available in [environments overview](/power-platform/admin/environments-overview). If you're a business user, creating an environment typically requires a person with administrative access to Power Platform. Reach out to your IT department to ask for assistance on environment setup.
+Setting up a designated environment for Approvals Kit is recommended for all users within your organization that need to access the Business Approvals process. Further information on environments is available in [environments overview](/power-platform/admin/environments-overview). If you're a business user, creating an environment typically requires a person with administrative access to Power Platform. Reach out to your IT department to ask for assistance on environment setup.
 
 > Note: Approvals Kit uses [solution management capabilities](/power-apps/developer/data-platform/introduction-solutions) of Dataverse to package up all assets. To ensure consistency and same experience for every customer, the template is provided as [managed solutions](/power-platform/alm/solution-concepts-alm). If you would like to extend this template, you will need to use a separate [unmanaged solution](/power-platform/alm/solution-concepts-alm) layer as you cannot directly modify this template.
 
@@ -187,7 +187,7 @@ Once Approvals kit solution is imported to an environment successfully, there is
 
 As the custom connector for approvals kit work on delegation permission, it is necessary to have a app registered to interact with Dataverse table and Custom API.
 
-##### App Registeration
+##### App Registration
 
 Follow the steps below to perform the app registration
 
@@ -241,42 +241,42 @@ The template includes multiple core components that are used to manage the appro
 
 1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Business Approvals Kit** solution to view the flows. Activate cloud flows using in the list to ensure no errors occur as there are dependencies across the flows. Some cloud flows may be enabled when importing the solution in the previous steps.
 
-  a.  Turn on: BACore \| Approval Time-out
+    a.  Turn on: BACore \| Approval Time-out
 
-  b.  Turn on: BACore \| Approver OOF
+    b.  Turn on: BACore \| Approver OOF
 
-  c.  Turn on: BACore \| Cascade Process Status
+    c.  Turn on: BACore \| Cascade Process Status
 
-  d.  Turn on: BACore \| Cascade Publishing Activation
+    d.  Turn on: BACore \| Cascade Publishing Activation
 
-  e.  Turn on: BACore \| Child \| Get Dynamic Approver
+    e.  Turn on: BACore \| Child \| Get Dynamic Approver
 
-  f.  Turn on: BACore \| Child \| Get Dynamic Data Instance
+    f.  Turn on: BACore \| Child \| Get Dynamic Data Instance
 
-  g.  Turn on: BACore \| Child \| Get Default Settings
+    g.  Turn on: BACore \| Child \| Get Default Settings
 
-  h.  Turn on: BACore \| Child \| Log Runs
+    h.  Turn on: BACore \| Child \| Log Runs
 
-  i.  Turn on: BACore \| Child \| Evaluate Rule
+    i.  Turn on: BACore \| Child \| Evaluate Rule
 
-  j.  Turn on: BACore \| Daily \| Calculate Approval Timeouts
+    j.  Turn on: BACore \| Daily \| Calculate Approval Timeouts
 
-  k.  Turn on: BACore \| Publish Process
+    k.  Turn on: BACore \| Publish Process
 
-  l.  Turn on: BACore \| Runtime \-\- Start Approval
+    l.  Turn on: BACore \| Runtime \-\- Start Approval
 
-  m.  Turn on: BACore \| Runtime \-\- Start Node
+    m.  Turn on: BACore \| Runtime \-\- Start Node
 
-  n.  Turn on: BACore \| Runtime \-\- Start Stage
+    n.  Turn on: BACore \| Runtime \-\- Start Stage
 
-  o.  Turn on: BACore \| Runtime \-\- Start Workflow
+    o.  Turn on: BACore \| Runtime \-\- Start Workflow
 
-  p.  Turn on: BACore \| Runtime \-\- Update Approval
+    p.  Turn on: BACore \| Runtime \-\- Update Approval
 
-  q.  Turn on: BACore \| Runtime \-\- Update Node Instance
+    q.  Turn on: BACore \| Runtime \-\- Update Node Instance
 
-  r.  Turn on: BACore \| Runtime \-\- Update Stage Instance
+    r.  Turn on: BACore \| Runtime \-\- Update Stage Instance
 
-  s.  Turn on: BACore \| Sync Approver OOF
+    s.  Turn on: BACore \| Sync Approver OOF
 
 1. You have completed installing the core components. Your next step is to set up the approval processes in How to use Approvals Kit section.

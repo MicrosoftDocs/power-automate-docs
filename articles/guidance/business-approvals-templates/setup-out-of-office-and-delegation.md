@@ -14,6 +14,8 @@ ms.reviewer: angieandrews
 
 Approvals Kit has settings to manage you're out of office and approval delegations so that approval requests while you're away can be delegated to somebody else to make the approval decisions.
 
+## Out of office setup steps
+
 To set up the out of office and delegation, follow these steps:
 
 1. Open Approvals Manager app

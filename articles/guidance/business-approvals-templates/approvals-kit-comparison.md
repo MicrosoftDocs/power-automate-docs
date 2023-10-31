@@ -32,7 +32,7 @@ This table provides a comparison between the Approvals Connector action and the 
 
 |                    |[Approvals Connector](/connectors/approvals/)|Approvals Kit|
 |--------------------|-------------------|-------------|
-|Core use case       |Simple approvals without need for advance approval features|No code workflow designer with advanced features|
+|Core use case       |Simple approvals without need for advance approval features|No code workflow designer with extra features|
 |Core Product Feature|Yes                |No, requires install|
 |Trigger via Power Automate|Yes          |Yes|
 |Requires Azure Application Registration|No|Yes|

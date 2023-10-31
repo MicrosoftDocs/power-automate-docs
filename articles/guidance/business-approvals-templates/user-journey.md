@@ -14,19 +14,19 @@ ms.reviewer: angieandrews
 
 There are three major personas of Approver, Approvals Administrator and Power Platform Administrator as part of user journey using the Approvals kit.
 
-![Persona graphic overview with name and role](./media/persona-overview.png)
+![Persona graphic overview with name and role](./media/persona-overview.svg)
 
 |Persona |Example Role |User Type    |Description|
 |--------|-------------|-------------|-----------|
-|Approver|Sales Manager|Business User|Receives and approval to Accept for Decline|
+|Power Platform Admin|IT Manager|Pro Developer|Creates / Assigns Environments and import Approvals Kit solution as System Adminitrator or System Customizer|
 |Approvals Administrator|Sales Director|Power User|Configures the kit to match the business requirements. Analyzes the approval processes for improvement opportunities|
-|Power Platform Admin|IT Manager|Pro Developer|Environment Admin or System Customizer|
+|Approver|Sales Manager|Business User|Receives an approval to Accept for Decline|
 
 ## Example User Journey
 
 An example user journey can be illustrated in the following series of steps
 
-![Illustration of example user journey](./media/approvals-kit-user-journey.png)
+![Illustration of example user journey](./media/approvals-kit-user-journey.svg)
 
 |Role|Actions|
 |----|-------|
@@ -42,13 +42,13 @@ An example user journey can be illustrated in the following series of steps
 
 Gibson can review the [Setup Guide](./setup.md) to ensure the prerequisites are in place. Using [System administrator](/power-platform/admin/database-security#environments-with-a-dataverse-database) or [System customizer](/power-platform/admin/database-security#environments-with-a-dataverse-database) permissions the Approvals Kit Power Platform solution has been installed into an environment and Approvals Administrators have access to the application.
 
-![Illustration of example user journey with install stage highlighted](./media/experience-install.png)
+![Illustration of example user journey with install stage highlighted](./media/experience-install.svg)
 
 ### Configure Business Approval Process
 
 Charlotte uses the Process Designer to create a new business approval workflow, define approval stages and conditions and approval steps within each stage that matches the business requirements within the Sales department.
 
-![Illustration of example user journey with configure stage highlighted](./media/experience-configure.png)
+![Illustration of example user journey with configure stage highlighted](./media/experience-configure.svg)
 
 The [Configuring preset approvals](./configuring-preset-approvals.md) an example of how to configure key elements inside the Process Designer.
 
@@ -58,9 +58,9 @@ Gibson or another maker or professional developers within organization can easil
 
 The rest of the approval processes are then automatically handled and managed in the Business Approvals kit.
 
-![Illustration of example user journey with trigger stage highlighted](./media/experience-triggers.png)
+![Illustration of example user journey with trigger stage highlighted](./media/experience-triggers.svg)
 
-The [Triggering approvals](./triggering-approvals.md) includes more information on 
+The [Triggering approvals](./triggering-approvals.md) includes more information on how to create a Power Automate cloud flow to begin an approval workflow.
 
 #### Integration with business applications
 
@@ -70,11 +70,11 @@ Common approval scenarios require integrations with business applications such a
 
 Using desktop flows allow streamlining of your approval processes with legacy systems, automating your approval experiences in a modern way.
 
-### Make Approvals
+### Process approval requests
 
 Rebecca and other configured approvers are sent messages as adaptive cards in Microsoft Outlook and Microsoft Teams. These approvals include details provided by Charlotte as the business approval designer to help determine if the request should be approved or declined.
 
-![Illustration of example user journey with approvals stage highlighted](./media/experience-approvals.png)
+![Illustration of example user journey with approvals stage highlighted](./media/experience-approvals.svg)
 
 Review the [Processing Approval Request](./processing-approval-requests.md) for more information on the approvals process.
 
