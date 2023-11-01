@@ -16,7 +16,7 @@ Once complete with the [Tenant Setup](./tenant-setup.md) section of the workshop
 
 ## Development / Trial Licenses
 
-If you select a tenant that doesn't have access to [Power Apps licenses](https://powerapps.microsoft.com/pricing/) one option for development / test of the Approvals Kit for nonproduction scenarios is the [Power Apps Developer Plan](https://learn.microsoft.com/power-platform/developer/plan). The learn page has more information on the Power Apps Developer Plan and how to sign up for a Developer Plan.
+If you select a tenant that doesn't have access to [Power Apps licenses](https://powerapps.microsoft.com/pricing/) one option for development / test of the Approvals Kit for nonproduction scenarios is the [Power Apps Developer Plan](/power-platform/developer/plan). The learn page has more information on the Power Apps Developer Plan and how to sign up for a Developer Plan.
 
 For learners that don't have access to [Power Automate licenses](https://powerautomate.microsoft.com/pricing/) then you could explore the **Try it for free** option from Power Automate pricing page.
 
@@ -58,7 +58,7 @@ Add-SecurityMakersGroup
 
 > NOTE: Review the [How are role-assignable groups protected](/entra/identity/role-based-access-control/groups-concept#how-are-role-assignable-groups-protected) for security roles that the logged in Azure Login account will require.
 
-1. Assign Microsoft Developer Plan to the Makers group using guidance from https://learn.microsoft.com/azure/active-directory/enterprise-users/licensing-ps-examples
+1. Assign Microsoft Developer Plan to the Makers group. More information: [PowerShell and Microsoft Graph examples for group-based licensing in Microsoft Entra ID](/azure/active-directory/enterprise-users/licensing-ps-examples)
 
 ```pwsh
 Add-SecurityMakersGroupAssignDeveloperPlan
