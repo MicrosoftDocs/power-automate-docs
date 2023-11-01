@@ -12,7 +12,9 @@ ms.reviewer: angieandrews
 
 # Getting started
 
-To help remove the manual setup process that is time consuming and repetitive when you have a set of users to deliver the workshop to the Automation kit includes a set of automation scripts to help you set up isolated environments for each attendee. This approach is taken so that each learner is isolated from each other and doesn't get impacted by other learners. This instructor guide assumes that you use one of the following methods to set up and run the automation scripts:
+The Automation kit includes a set of automation scripts to help you set up isolated environments for each attendee, reducing the amount of time required for setup. 
+
+This guide assumes that you use one of the following methods to set up and run the automation scripts:
 
 - **Local install** - you have the ability to install the required components on your local environment.
 - **Docker install** - You have the ability to run and build a docker image to install components for learners.
@@ -151,10 +153,10 @@ ssh -i ~/.ssh/azurevm-$vmName "accadmin@$ip" -t -l bash
 |Command  |Description  |
 |---------|---------|
 |`sudo`    |This command is used to run a command with elevated privileges. It allows a user to execute a command as the root user or another user with higher privileges.      |
-|`apt remove`     |This command is used to remove a package from your system. It removes all the files associated with the package, as well as any configuration files that were created when the package was installed.        |
-|`apt remove`     |This command is used to remove a package from your system. It removes all the files associated with the package, as well as any configuration files that were created when the package was installed.       |
+|`apt remove`     |This command is used to remove a package from your system. It removes all the files associated with the package, and any configuration files that were created when the package was installed.        |
+|`apt remove`     |This command is used to remove a package from your system. It removes all the files associated with the package, and any configuration files that were created when the package was installed.       |
 |`dotnet tool install`    |This command is used to install a .NET Core global tool. Global tools are .NET Core console applications that are installed on your system and can be accessed from any directory in the command prompt.         |
-|`.bash_profile`| This file is a script that is executed whenever a new terminal session is started in Bash. It is used to set environment variables, define aliases, and perform other customizations to the shell environment.|
+|`.bash_profile`| This file is a script that is executed whenever a new terminal session is started in Bash. Use it to set environment variables, define aliases, and perform other customizations to the shell environment.|
 
 ```bash
 sudo apt remove -y 'dotnet*' 'aspnet*' 'netstandard*'
