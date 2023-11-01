@@ -78,7 +78,7 @@ If you're new to the Power Platform CLI, Microsoft offers several learning resou
 
 The Azure CLI is a command-line tool that allows you to manage Azure resources from your local computer. It provides a set of commands that you can use to create, update, and delete Azure resources, as well as manage Azure subscriptions and resource groups.
 
-The instructor guide setup scripts make use the Azure CLI to sign in, provide authentication tokens and automate steps of the setup process. These lower level command line tools are wrapped in PowerShell or bash scripts. When new to the Azure CLI, use the [Azure CLI documentation](https://docs.microsoft.com/cli/azure/)[https://docs.microsoft.com/cli/azure/](/cli/azure/) to provide a comprehensive guide to using the CLI, including installation instructions, command reference, and examples.
+The instructor guide setup scripts make use the Azure CLI to sign in, provide authentication tokens and automate steps of the setup process. These lower level command line tools are wrapped in PowerShell or bash scripts. When new to the Azure CLI, use the [Azure CLI documentation](/cli/azure/) to provide a comprehensive guide to using the CLI, including installation instructions, command reference, and examples.
 
 ## Optional Azure Components
 
