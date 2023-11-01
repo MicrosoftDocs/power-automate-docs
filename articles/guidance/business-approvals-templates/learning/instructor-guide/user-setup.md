@@ -12,13 +12,13 @@ ms.reviewer: angieandrews
 
 # User Setup
 
-Now that you have completed the [Tenant Setup](./tenant-setup.md) section of the workshop, the next stage is to get ready to create user account setup. In this section, we'll cover how to set up users to create Power Platform Developer environments. It's important to ensure that licenses are assigned via a security group to ensure that users have the appropriate access to the Power Platform. Additionally, if you are creating a demo environment where Power Apps and Power Automate licenses are not available, you will need to sign up for the Power Platform Developer Plan and the Power Automate Free licenses. Let's dive in and get started!
+Once complete with the [Tenant Setup](./tenant-setup.md) section of the workshop, the next stage is to get ready to create user account setup. In this section, we cover how to set up users to create Power Platform Developer environments. It's important to ensure that licenses are assigned via a security group to ensure that users have the appropriate access to the Power Platform. Let's dive in and get started!
 
 ## Development / Trial Licenses
 
-If the tenant that has been selected does not have access to [Power Apps licenses](https://powerapps.microsoft.com/pricing/) one option for development / test of the Approvals Kit for non production scenarios is the [Power Apps Devloper Plan](https://learn.microsoft.com/power-platform/developer/plan). The learn page has more information on the Power Apps Developer Plan and how to signup for a Developer Plan.
+If you select a tenant that doesn't have access to [Power Apps licenses](https://powerapps.microsoft.com/pricing/) one option for development / test of the Approvals Kit for nonproduction scenarios is the [Power Apps Developer Plan](https://learn.microsoft.com/power-platform/developer/plan). The learn page has more information on the Power Apps Developer Plan and how to sign up for a Developer Plan.
 
-If learners do not have access to [Power Automate licenses](https://powerautomate.microsoft.com/pricing/) then you could explore the **Try it for free** option from Power Automate pricing page.
+For learners that don't have access to [Power Automate licenses](https://powerautomate.microsoft.com/pricing/) then you could explore the **Try it for free** option from Power Automate pricing page.
 
 > NOTE: The Associated setup scripts assume that the Power Apps Developer Plan and the Power Automate Free licenses are available in the selected learner tenant.
 
@@ -38,13 +38,13 @@ One way of managing access to power platform resources is via a Security group. 
 pwsh
 ```
 
-1. Import the security PowerShell commands from where you have installed the Approvals Kit Workshop scripts
+1. Import the security PowerShell commands from where you install the Approvals Kit Workshop scripts
 
 ```pwsh
 . .\src\scripts\security.ps1
 ```
 
-1. Login to Azure as the Administrator of the Entra Id tenant. This command uses the Azure CLI to login
+1. Sign in to Azure as the Administrator of the Entra ID tenant. Use the PowerShell script to call Azure CLI to sign in
 
 ```pwsh
 Invoke-AzureLogin
@@ -70,7 +70,7 @@ Add-SecurityMakersGroupAssignDeveloperPlan
 
 ## Microsoft Entry ID Applications
 
-The instructor guide assumes that two Microsoft Entra applications have been created.
+The instructor guide assumes that two Microsoft Entra applications are created.
 
 > NOTE: To learn more about [Create a Microsoft Entra application and service principal that can access resources](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal) for guidance on  permissions required to register an app.
 
@@ -78,7 +78,7 @@ The instructor guide assumes that two Microsoft Entra applications have been cre
 
 The Automation Kit application is used by the Approvals Kit custom connector to provide delegated permissions to access Microsoft Dataverse. The results of this process should be stored in the **CLIENT_ID** and **CLIENT_SECRET** secure variables.
 
-1. Create a new Application following [Register an application with microsoft entra id and create a service principal](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
+1. Create a new Application following [Register an application with Microsoft Entra ID and create a service principal](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
 
 1. The default URI of type **Web** and value of **https://global.consent.azure-apim.net/redirect**.
 
@@ -86,7 +86,7 @@ The Automation Kit application is used by the Approvals Kit custom connector to 
 
 1. Select **Register**
 
-1. In the API Permissions for **https://global.consent.azure-apim.net/redirect** select **Dataverse** and ensure that Delegated Dynamics (user_impersonation) have been granted with administrator consent.
+1. In the API Permissions, select **Dataverse** and ensure that Delegated Dynamics (user_impersonation) with granted with administrator consent.
 
   ![Screenshot of adding Delegated Dynamics CRM Permissions](../../media/app-registration-dynamics-crm-delegated-permissions.png)
 
@@ -94,9 +94,9 @@ The Automation Kit application is used by the Approvals Kit custom connector to 
 
 1. Select grant admin consent for the application by selecting text similar to **Grant admin consent for Contoso**
 
-1. Create Secret by moving to **Certificates and Secrets** section and click **New client secret**.
+1. Create Secret by moving to **Certificates and Secrets** section and select **New client secret**.
 
-1. Add description and select an appropriate expiry date. Click **Add**.
+1. Add description and select an appropriate expiry date. Select **Add**.
 
 1. Copy the secret value and save it in **CLIENT_SECRET**.
 
@@ -106,21 +106,21 @@ The Automation Kit application is used by the Approvals Kit custom connector to 
 
 The Install Administration application is used by the instructor guide setup scripts to provide user administration. The results of this process should be stored in the **ADMIN_APP_ID** and **ADMIN_APP_SECRET** secure variables.
 
-1. Create a new Application named **Approvals Kit Instructor Admin** following [Register an application with Microsoft Entra id and create a service principal](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
+1. Create a new Application named **Approvals Kit Instructor Admin** following [Register an application with Microsoft Entra ID and create a service principal](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
 
 1. Select **Register**
 
 1. Select **Microsoft.Graph**
 
-1. Ensure that API permissions of type **application** for **User.ReadWrite.Add** and **UserAuthenticationMethod.ReadWrite.All** 
+1. Ensure that API permissions are of type **application** for **User.ReadWrite.Add** and **UserAuthenticationMethod.ReadWrite.All**
 
 1. Select grant admin consent for the application by selecting text similar to **Grant admin consent for Contoso**
 
   ![Screenshot of Microsoft Graph permissions for Approvals Kit Instructor Admin app](./media/approvals-kit-instructor-admin-app-api-permissions.png)
 
-1. Create Secret by moving to **Certificates and Secrets** section and click **New client secret**.
+1. Create Secret by moving to **Certificates and Secrets** section and select **New client secret**.
 
-1. Add description and select an appropriate expiry date. Click **Add**.
+1. Add description and select an appropriate expiry date. Select **Add**.
 
 1. Copy the secret value and save it in **ADMIN_APP_SECRET**.
 
@@ -128,7 +128,7 @@ The Install Administration application is used by the instructor guide setup scr
 
 ## Setting up secure install variables
 
-To run the following:
+Run the following inside PowerShell:
 
 1. Change to the workshop folder for the approvals kit
 
@@ -136,7 +136,7 @@ To run the following:
 cd ~/powercat-business-approvals-kit/Workshop
 ```
 
-1. Create a and move to new folder named secure
+1. Create and move to new folder named secure
 
 ```pwsh
 mkdir secure
@@ -163,21 +163,21 @@ SecureStore set ADMIN_APP_SECRET "Azure Admin Client secret value" --keyfile sec
 
 You can optionally create users via the automated scripts for demonstration tenants.
 
-1. Ensure that you have the users scripts imported
+1. Ensure that you have the scripts imported
 
 ```pwsh
 . .\src\scripts\users.ps1
 ```
 
-2. Setup a user with the value that is securely stored in the value **DEMO_PASSWORD**
+1. Setup a user with the value that is securely stored in the value **DEMO_PASSWORD**
 
 ```pwsh
 Reset-User "first.last@contoso.OnMicrosoft.com"
 ```
 
-> NOTE: Either delegated scope **User.ReadWrite.All** or **Directory.AccessAsUser.All** is required to reset a user's password. In addition to the correct scope, the signed-in user would need sufficient privileges to reset another user's password.
+  > NOTE: Either delegated scope **User.ReadWrite.All** or **Directory.AccessAsUser.All** is required to reset a user's password. In addition to the correct scope, the signed-in user would need sufficient privileges to reset another user's password.
 
-3. (Optional) To setup a group of users, assuming they have the same password the following PowerShell could be used
+1. (Optional) To setup a group of users, assuming they have the same password the following PowerShell could be used
 
 ```pwsh
 "LidiaH","LynneR" | Foreach-Object { 
@@ -191,9 +191,9 @@ Reset-User "first.last@contoso.OnMicrosoft.com"
 
 ## Install Creator Kit
 
-1. Login to [Power Platform Admin Center](https://aka.ms/ppac) an environment administrator
+1. Sign in to [Power Platform Admin Center](https://aka.ms/ppac) an environment administrator
 
-1. Install [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1) from app source 
+1. Install [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1) from app source
 
 1. Select an environment to install the Creator Kit
 
@@ -203,13 +203,13 @@ Reset-User "first.last@contoso.OnMicrosoft.com"
 
 ## Summary
 
-Before starting the [Environment Setup](./environment-setup.md) the following should be in place
+Continue with [Environment Setup](./environment-setup.md) one you gave ensured following is in place
 
 - Users should be created in the Microsoft Entra ID tenant
 
 - They should have licenses for the workshop assigned directly or inherited via a security group membership
 
-- Microsoft Entra ID Applications have been created that will be used for the custom connector and to assist with automated setup.
+- Microsoft Entra ID Application is created that is used for the custom connector and to assist with automated setup.
 
 - Setup variables are configured in SecureStore
 

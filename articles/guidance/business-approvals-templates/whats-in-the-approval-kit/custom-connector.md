@@ -38,7 +38,7 @@ The create workflow instance action saves the business approval workflow data as
 
 ## Operations
 
-This connector depends on three operations mentioned below:
+This connector depends on three operations:
 
 * GetPublishedWorkflows
 * GetApprovalDataFields
@@ -58,7 +58,7 @@ This operation helps in fetching the list of dynamic schemas applicable for the 
 
 `/api/data/v9.2/cat_GetDynamicParameters(ProcessID={processID})`
 
-> **_NOTE:_** The return values of the API, which are of type Entity, are further modified using custom code for custom connector to support and align with the Open API schema. Refer `ModifySchema()` method in the Script.csx file for more information.
+> **_NOTE:_** The return values of the API, which are of type Entity, are further modified using custom code for custom connector to support and align with the Open API schema. Refer **ModifySchema()** method in the Script.csx file for more information.
 
 ![Image of start Business Approval connector with schema paremeters read from dataverse](../media/start-business-approval-with-parameters.png)
 
@@ -68,9 +68,11 @@ This operation helps in creating a record in `businessapprovalworkflowqueues` by
 
 `/api/data/v9.2/cat_businessapprovalworkflowqueues`
 
-Here, we use a `CreateWorkflowQueue()` method using custom code for the custom connector to prepare and parse JSON, which holds all the parameter values and the Workflow ID (aka ProcessID). This also performs the final POST call to create the record.
+Here, we use a `CreateWorkflowQueue()` method using custom code for the custom connector to prepare and parse JSON, which holds all the parameter values and the Workflow ID (also known as ProcessID). 
 
-Below are the two values which are updated during the post call:
+> NOTE: This operation performs the final POST call to create the record.
+
+Here are the two values, which are updated during the post call:
 
 ```json
      "cat_runtimedata": "[{"id":"9a664958-c656-ee11-be6f-0022482a97de","value":"True"},{"id":"7ddc1057-c656-ee11-be6f-0022482a91f4","value":"123"},{"id":"49dc1057-c656-ee11-be6f-0022482a91f4","value":""},{"id":"9b664958-c656-ee11-be6f-0022482a97de","value":"10/11/2023 8:49:51 AM"},{"id":"7cdc1057-c656-ee11-be6f-0022482a91f4","value":"Another title"}]",

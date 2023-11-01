@@ -14,7 +14,7 @@ ms.reviewer: angieandrews
 
 ## Task 1 - Create a Contoso Coffee Machine Request
 
-By completing the App In a Day module 2 or having the Contoso Coffee Application imported into your environment you will have the ability create a machine request. Lets review the the request process before you proceed with creating the Business Approval for this process.
+By completing the second module of App In a Day workshop or having the Contoso Coffee Application imported into your environment, you have the ability create a machine request. Lets review the request process before you proceed with creating the Business Approval for this process.
 
 > NOTE: If you do not have the Contoso Coffee Machine Ordering app imported in your environment follow the [Import Contoso Coffee](./import-contoso-coffee.md) guide to get started.
 
@@ -30,7 +30,7 @@ By completing the App In a Day module 2 or having the Contoso Coffee Application
 
   ![Screenshot of Power Platform Office 365 USers connection consent dialog](./media/office-365-users-connection-allow.png)
 
-1. Select a few machines and click **Compare**.
+1. Select a few machines and select **Compare**.
 
   ![Screenshot of Contoso Coffee Machine Ordering app with multiple machines selected](./media/contoso-coffee-select-machines.png)
 
@@ -52,7 +52,7 @@ By completing the App In a Day module 2 or having the Contoso Coffee Application
 
 ## Task 2 - Create Approvals Kit Workflow
 
-Now that you have verified that Contoso Coffee machine request can be successfully created lets create a simple one stage and one node approval process that you can self approve the Machine Request.
+Having verified that Contoso Coffee machine request can be successfully created lets create a one stage and one node approval process that you can self approve the Machine Request.
 
 > NOTE: If you do not have the Approvals Kit installed in your environment the [Approvals Kit Setup Guide](../../setup.md) or the [Instructor Guide](../instructor-guide/overview.md) could help your Center of Excellence team or Trainer provide an environment so that you can follow this workshop module
 
@@ -74,7 +74,7 @@ Now that you have verified that Contoso Coffee machine request can be successful
 
   ![Screenshot of Approvals Kit add first stage to approval](./media/approvals-kit-create-first-stage.png)
 
-1. Wait for the the stage to be created. Select the gray + button to create a node for the created stage named **Self Approval**
+1. Wait for the stage to be created. Select the gray + button to create a node for the created stage named **Self Approval**
 
   ![Screenshot of Approvals Kit first stage with no node defined](./media/approvals-kit-first-stage-no-node.png)
 
@@ -88,13 +88,13 @@ Now that you have verified that Contoso Coffee machine request can be successful
 
   ![Screenshot of Approvals Kit first stage with node created](./media/approvals-kit-first-stage-node-created.png)
 
-1. Select the Save button to save you workflow
+1. Select the Save button to save your workflow
 
   ![Screenshot of Approvals Kit workflow process saved successfully](./media/approvals-kit-workflow-saved.png)
 
 ## Task 3 - Publish Approval Workflow
 
-Having created the definition of your workflow, the next step is to publish the workflow so that you can trigger a approval when a Machine request is created. Everytime you publish the workflow, a new version is created.
+Having created the definition of your workflow, the next step is to publish the workflow so that you can trigger an approval when a Machine request is created. Everytime you publish the workflow, a new version is created.
 
 1. Select **Publish**.
 
@@ -112,7 +112,7 @@ In this module you stepped through the process of creating a Contoso Coffee Mach
 
 The publish task created an active version of you work flow. As you change and adapt a workflow you can publish new versions to react to changing business rules or revert back to an earlier version.
 
-The next [Trigger Approval](./trigger-approval.md) module will build on these two elements to use a Power Automate cloud flow to begin a approval workflow every time a Machine request is submitted.
+The next [Trigger Approval](./trigger-approval.md) module will build on these two elements to use a Power Automate cloud flow to begin an approval workflow every time a Machine request is submitted.
 
 > [!div class="nextstepaction"]
 > [Next step: Setup trigger approvals](./trigger-approval.md)

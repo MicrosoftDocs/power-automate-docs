@@ -78,13 +78,13 @@ Approvals Kit allows you to use these types of data from Power Platform, other a
 
 1. Select **+ Add**
 
-1. Repeat steps until you have added all application data
+1. Repeat steps until you add all required application data
 
 ![Screenshot application data](./media/application-data.png)
 
 ## Define Workflow Stages and Nodes
 
-In Approvals Kit, you can define stages in a workflow process. Each stage then a minimum of one stage is required even for a simple workflow. Each stage then includes at least one _node_. Node is where you define who is going to be the actual approver. You may define multiple nodes within one stage, and each node is run sequentially.
+In Approvals Kit, you can define stages in a workflow process. Each stage then a minimum of one stage is required even for a simple workflow. Each stage then includes at least one _node_. Node is where you define who is going to be the actual approver. You can define multiple nodes within one stage, and each node is run sequentially.
 
 After the first stage is defined, you can add more stages that have conditions where you can branch out to different nodes for sophisticated scenarios.
 
@@ -102,7 +102,7 @@ After the first stage is defined, you can add more stages that have conditions w
 
 ### Define the first node
 
-Once you have defined your first stage, you optionally can add the first node.
+Once you define your first stage, you optionally can add the first node.
 
 1. Select the (**+)** sign.
 
@@ -127,14 +127,14 @@ Once you have defined your first stage, you optionally can add the first node.
     a.  **User** - you can select a specific user/employee
 
     b.  **Dynamic** - the user information is automatically retrieved and set as approver
-    
-    - **Manager of Initiator** - Information of whoever started the approval request will be used to identify the manager automatically and be assigned as approver
 
-    - **Manager of \[Request data field\]** - Email address of a field you specified in Application Data step will be used to identify the manager automatically and be assigned as approver. The field must be defined as Email type to select this option.
+    - **Manager of Initiator** - Information of whoever started the approval request is used to identify the manager automatically and be assigned as approver
+
+    - **Manager of \[Request data field\]** - Email address of a field you specified in Application Data step can be used to identify the manager automatically and be assigned as approver. The field must be defined as Email type for the option.
 
     - **Manager of Last Approver** - Information of the last approver is automatically retrieved to identify the manager automatically and be assigned as approver.
 
-    - **Use Request Data Field** - Email address of a field you specified in Application Data step will be used directly.
+    - **Use Request Data Field** - Email address of a field you specified in Application Data step can be used directly.
 
 ![Screenshot of Process Advisor approver](./media/process-designer-approver.png)
 
@@ -156,15 +156,15 @@ Once you have defined your first stage, you optionally can add the first node.
 
 1. Select **Time Out Setting**
 
-    a.  ***Actual Days*** - The timeout calculation is the actual number of days since the node has started, and doesn't take holidays into consideration.
+    a.  **Actual Days** - The timeout calculation is the actual number of days since the node is started, and doesn't take holidays into consideration.
 
-    b.  ***Business Days*** - The timeout calculation considers the number of business days that has passed based on the approvers work profile settings, and company holiday settings.
+    b. **Business Days** - The timeout calculation considers the number of business days passed based on the approvers work profile settings, and company holiday settings.
 
 1. Select **Save & Back**
 
 1. Repeat steps if you would like to add more nodes in the same Stage.
 
-*Note: You don't need to specify only one approver in each node and may add multiple approvers together in a single node.*
+*Note: You don't need to specify only one approver in each node and can add multiple approvers together in a single node.*
 
 ![Screenshot of Process Advisor approval example](./media/process-designer-approval-example.png)
 
@@ -172,7 +172,7 @@ Example screenshot showing a scenario where only one response either from Alan S
 
 ### Adding conditional stage - Switch Condition
 
-After adding the first stage of the workflow, you can add conditional approval by defining conditions in stages. Switch condition is where you may have 2-5 different paths that flow to depending on the condition.
+After adding the first stage of the workflow, you can add conditional approval by defining conditions in stages. Switch condition is where you can have 2-5 different paths that flow to depending on the condition.
 
 1. Select **Add Stage**
 
@@ -198,11 +198,11 @@ After adding the first stage of the workflow, you can add conditional approval b
 
     - **Static value** - you must define the condition yourself
 
-    - **Request Data** - the system will compare the Request
+    - **Request Data** - the system compares the Request
             Data defined in step 5 against what request data you define
             here
 
-#### Example
+#### Switch example
 
 Example here shows a scenario where expense approval branches off to different nodes depending on what expense reimbursement category was selected in the original request.
 
@@ -214,7 +214,7 @@ Once defined, the Process Configurator shows three paths to add Nodes to. Below 
 
 ### Adding conditional stage - If/Else Condition
 
-After adding the first stage of the workflow, you can add conditional approval by defining conditions in stages. If/Else condition is where you may have specific requirement (For example amount greater than 5000 USD, company code starts with 10 etc.)
+After adding the first stage of the workflow, you can add conditional approval by defining conditions in stages. If/Else condition is where you can have specific requirement (For example amount greater than 5000 USD, company code starts with 10 etc.)
 
 1. Select **Add Stage**
 
@@ -236,11 +236,11 @@ After adding the first stage of the workflow, you can add conditional approval b
 
     - **Static value** - you must define the condition yourself
 
-    - **Request Data** - the system will compare the Request
+    - **Request Data** - the system compares the Request
             Data defined in step 4 against what request data you define
             here
 
-#### Example
+#### If/Else example
 
 Example here shows a scenario where expense approval branches off to two paths depending on the amount of expense reimbursement requested is greater than or equal to 5000 USD.
 
@@ -248,9 +248,7 @@ Example here shows a scenario where expense approval branches off to two paths d
 
 ## Publishing workflow
 
-Once you have finished configuring workflows, you need to publish the
-workflow to be able to use it. The system automatically checks and
-validates that you have configured the workflows without any errors.
+Once finished configuring workflows, you need to publish the workflow to be able to use it. The system automatically checks and validates that the workflow doesn't have any errors.
 
 1. Open process you want to publish
 

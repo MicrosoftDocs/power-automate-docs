@@ -12,9 +12,9 @@ ms.reviewer: angieandrews
 
 # What’s in Approvals Kit
 
-Approvals Kit builds on the out of the box [Approvals connector](/connectors/approvals/). The kit is built using a Power Platform solution that includes a set of Power Apps, Power Automate and Dataverse components to make creating business approvals processed easier to author and trigger.
+The Approvals kit is built on the out of the box [Approvals connector](/connectors/approvals/) using a Power Platform solution. The solution includes a set of Power Apps, Power Automate and Dataverse components to make creating business approvals processed easier to author and trigger.
 
-It enables you to rapidly make changes without the need to update or deploy a Power Platform solution. This also allows you to create variations for one Approval without the need of effecting other approval processes. Additionally, using Dataverse gives the ability to use the Auditing features of Dataverse to record Approvals process.
+The kit enables you to rapidly make changes without the need to update or deploy a Power Platform solution. You can create variations for one Approval without the need of effecting other approval processes. Additionally, using Dataverse gives the ability to use the Auditing features of Dataverse to record Approvals process.
 
 ## Overview
 

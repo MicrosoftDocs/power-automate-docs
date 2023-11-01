@@ -26,7 +26,7 @@ Business approvals templates as part of the Approvals Kit provide no-code templa
 
 Organizations often need approvals for key business processes. These processes could include expense reporting, time sheet management, business travel requests, procurement orders and sales discounts as examples.
 
-With Power Platform, you can automate approvals needs by combining components from [Power Apps](https://make.powerapps.com) and [Power Automate](https://make.powerautomate.com). However, as the complexity of your approvals increases, so does your configuration and need to assemble multiple low code components together. The business approvals templates are available with as a pre configured collection of components and tools that are designed to help organizations automate their approvals processes quickly.
+With Power Platform, you can automate approvals needs by combining components from [Power Apps](https://make.powerapps.com) and [Power Automate](https://make.powerautomate.com). However, as the complexity of your approvals increases, so does your configuration and need to assemble multiple low code components together. The business approvals templates are available with as a configured collection of components and tools that are designed to help organizations automate their approvals processes quickly.
 
 These templates cover some of the typical requirements in most organizations, including:
 

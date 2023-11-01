@@ -29,7 +29,7 @@ Review the table to compare relative advantages and disadvantages for each of da
 |Creating a form                    |Need to create your own form and parts|Can use existing apps created that records data to Dataverse|Can use out of the box forms|
 |Using attachments                  |Can't use attachments directly with canvas app trigger. Consider using a separate Data source trigger instead|Can use out of the box attachment|Can use out of the box attachment
 |Granularity of data access control |App level control|Row/record level control|Site/list level control
-|Power Automate [request limits](/power-platform/admin/api-request-limits-allocations#request-limits-based-on-user-licenses)|Request limit is spread across each user as Power Apps canvas app trigger runs on the context of the user using the canvas app.|Spread across each user submitting  as “Run as” can be defined explicitly in the trigger.|Request limits all count towards the user creating the cloud flow for the request triggering flow you create. In a large organization or organizations with many approval requests, this limit may easily be reached.
+|Power Automate [request limits](/power-platform/admin/api-request-limits-allocations#request-limits-based-on-user-licenses)|Request limit is spread across each user as Power Apps canvas app trigger runs on the context of the user using the canvas app.|Spread across each user submitting  as “Run as” can be defined explicitly in the trigger.|Request limits all count towards the user creating the cloud flow for the request triggering flow you create. In a large organization or organizations with many approval requests, this limit can easily be reached.
 
 > *Note: Approvals Kit has been created in such way that all flows contained inside the template will be run on the context of the approval requestor to minimize the impact of Power Automate request limits. If you are facing request limits, make sure you have reviewed how you have set up your cloud flow. Details of the limits for each of type of license can be found in [requests limits and allocations](/power-platform/admin/api-request-limits-allocations#request-limits-based-on-user-licenses).*
 
@@ -75,9 +75,8 @@ To set up the triggering approvals, follow these steps:
 
 1. Set values for any application data (variables) required by the workflow
 
-1. Set the name of the flow where it's titled Untitled
+1. Set the name of the flow where the title is **Untitled**
 
 1. Select **Save**
 
-1. You have successfully completed your set-up of advanced approval
-    flows triggering from Microsoft Dataverse.
+Completing these steps should complete your set-up of advanced approval flows triggering from Microsoft Dataverse.

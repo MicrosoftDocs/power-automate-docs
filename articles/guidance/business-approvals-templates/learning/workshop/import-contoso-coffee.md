@@ -12,34 +12,34 @@ ms.reviewer: angieandrews
 
 # Import Contoso coffee solution
 
-Follow the steps below, if you did not complete already imported or have an environment with the Contoso Coffee solution available to you.
+Follow the steps, if you didn't complete already imported or have an environment with the Contoso Coffee solution available to you.
 
 ## Task 1: Create a new environment
 
-1. Open a new browser tab, navigate to [Power Platform admin portal](https://aka.ms/ppac) select Environments and click New Environment.
+1. Open a new browser tab, navigate to [Power Platform admin portal](https://aka.ms/ppac) select Environments and select New Environment.
 
-1. Provide an Environment Name, select **Developer** for Type, select Region and click Next.
+1. Provide an Environment Name, select **Developer** for Type, select Region and select Next.
 
   > [!div class="mx-imgBorder"]
   ![Screenshot of new developer environment](media/new-developer-environment.png)
 
-1. Select Language, URL, and Currency. Select No for Deploy sample apps and data and then click Save.
+1. Select Language, URL, and Currency. Select No for Deploy sample apps and data and then select Save.
 
 1. Wait for the environment to be created.
 
 ## Task 2: Import the solution
 
-In this task, you will import the completed App in a day module 2 solution.
+In this task, you import the completed second module solution from the App in a day workshop:
 
 1. Navigate to [Power Apps maker portal](https://make.powerapps.com/)
 
 1. Make sure you are in the **Contoso** Test Environment you created.
 
-1. Select **Solutions** and click **Import**.
+1. Select **Solutions** and select **Import**.
 
 1. Select Browse.
 
-1. Select the **ContosoCoffee_1_0_0_2.zip** Contso Coffee solution zip file located in **Completed Lab Solution for students** and **Module 2** folder and click Open.
+1. Select the **ContosoCoffee_1_0_0_2.zip** Contso Coffee solution zip file located in **Completed Lab Solution for students** and **Module 2** folder and select Open.
 
 > NOTE: The English language version Contoso Coffee Module 2 solution can be located in the [AppinaDay Trainer Package.zip](https://aka.ms/appinadayTrainer) or [Other Languages](https://aka.ms/AIADLocalTrainer)
 
@@ -59,7 +59,7 @@ In this task, you will import the completed App in a day module 2 solution.
 
 1. Select one of the machines and select **Submit**.
 
-1. Once you have reviewed the machine request select **OK** to close the request.
+1. Review the machine request select **OK** to close the request.
 
 1. Close the application.
 
@@ -69,13 +69,13 @@ In this task, you will import the completed App in a day module 2 solution.
 
 ## Summary
 
-In this module task you stepped through the process of manually importing the Contoso Coffee Power Platform solution into an environment.
+In this module, you stepped through the process of manually importing the Contoso Coffee Power Platform solution into an environment.
 
 ## Troubleshooting
 
-This module assumed that you have the ability to create a new Developer environment is one has not been assigned to you. Organizations may [Control environment creation](https://learn.microsoft.com/power-platform/admin/control-environment-creation). If you are unable to create a new environment you will need to request a development environment.
+This module assumed that you have the ability to create a new Developer environment is one hasn't been assigned to you. Organizations can [Control environment creation](https://learn.microsoft.com/power-platform/admin/control-environment-creation). If you're unable to create a new environment you need to request a development environment.
 
-To import the Contoso Coffee solution you will need a role of [Environment Maker](https://learn.microsoft.com/power-platform/admin/database-security#environments-with-a-dataverse-database) assigned in the assigned environment.
+To import the Contoso Coffee solution, you need a role of [Environment Maker](https://learn.microsoft.com/power-platform/admin/database-security#environments-with-a-dataverse-database) assigned in the environment.
 
 To use the Contoso Coffee solution the following connectors must be enabled in the [Data Loss Prevention Policy](https://learn.microsoft.com/power-platform/admin/prevent-data-loss) applied to your environment.
 

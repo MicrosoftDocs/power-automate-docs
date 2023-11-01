@@ -1,6 +1,6 @@
 ---
-title: Approvals Kit workshop add conditional | Microsoft Learn
-description: Approvals Kit workshop add conditional
+title: Approvals Kit workshop - Add conditional | Microsoft Learn
+description: Approvals Kit workshop - Add conditional
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 
 # Add conditionals and stages
 
-The prior [Trigger approval module](./trigger-approval.md) provided tasks and steps required to create a Contoso Coffee machine request and begin the self approval of the machine request. In this module you will add additional input information into the Business approval process so that the workflow includes a Manager approval stage when the value of the Machine request is above $400.
+The prior [Trigger approval module](./trigger-approval.md) provided tasks and steps required to create a Contoso Coffee machine request and begin the self approval of the machine request. This module involves changing the input information of the Business approval process so that the workflow includes a Manager approval stage when the value of the Machine request is more than $400.
 
 ## Task 1 - Open the Business Approval Process
 
@@ -28,11 +28,11 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 ## Task 2 - Add new business approval data
 
-1. With the Business Approval process open select **Process Designer** from the command bar.
+1. With the workflow open, select **Process Designer** from the command bar.
 
   ![Screenshot of starting the Business Approvals Management editing process](./media/business-approval-management-approval-process-start-process-designer.png)
 
-1. In the Process Designer select the **Variables** button to add new business approval data
+1. In the Process Designer, select the **Variables** button to add new business approval data
 
   ![Screenshot of starting the Business Approvals Management process designer with single stage and node](./media/process-designer-single-stage-and-node.png)
 
@@ -46,7 +46,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 ## Task 3 - Add a new conditional stage
 
-1. In the Process Designer select the **+** icon to add a new stage.
+1. In the Process Designer, select the **+** icon to add a new stage.
 
 1. using Create Stage dialog enter the following information
 
@@ -75,9 +75,9 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
    |Field|Value|
    |-----|-----|
-   |Name|Above $400 Approval|
+   |Name|More than $400 Approval|
    |Approver|Select your user account from the selection list|
-   |Add|Select the **Add** button to add your user account as the the manager approver|
+   |Add|Select the **Add** button to add your user account as the manager approver|
 
    ![Screenshot of starting the Business Approvals Management process designer create stage](./media/process-designer-create-node.png)
 
@@ -103,7 +103,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 1. Select **Solutions** in the Power Apps or Power Automate Portal
 
-1. Ensure that the you have selected the environment where you are performing this workshop
+1. Ensure that you select the environment where you're performing this workshop
 
 1. Open the **Contoso Coffee Approvals** solution
 
@@ -133,7 +133,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 1. Open the **Machine Ordering App**
 
-1. Select two machines of value greater than $400. For example the **Smart Brew 300**.
+1. Select two machines of value greater than $400. For example, the **Smart Brew 300**.
 
 1. Select **Compare 2 items**.
 
@@ -145,7 +145,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 1. Open the [Power Automate Portal](https://make.powerautomate.com) you had open earlier.
 
-1. Ensure that the you have selected the environment where you are performing this workshop.
+1. Ensure that selected the environment where you're performing this workshop.
 
 1. Select **Approvals** from the left navigation.
 
@@ -161,7 +161,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 1. Refresh the **Approvals** tab
 
-1. Select the new **Machine Requests Approval - Above $400 Approval** received and select **Approve**.
+1. Select the new **Machine Requests Approval - More than $400 Approval** received and select **Approve**.
 
   ![Screenshot of starting the Power Automate Approvals request for above $400](./media/power-automate-approval-select-above-400.png)
 
@@ -181,7 +181,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 ## Summary
 
-In this module you published new version of the business approval workflow. The first step was to add new request data variables for name and price. The price variable was used in a new Manager approval stage where the price was above $400 to request and additional approval. The module then edited the **Machine request** cloud flow to use the new v2 workflow that includes the name and price variables. The **Machine Name** and **Price** where mapped as request data so that they could be used to supply data required by the workflow.
+In this module, you published new version of the business approval workflow. The first step was to add new request data variables for name and price. The price variable was used in a new Manager approval stage where the price was more than $400 to request and extra approval. The module then edited the **Machine request** cloud flow to use the new v2 workflow that includes the name and price variables. The **Machine Name** and **Price** were mapped as request data so that they could be used to supply data required by the workflow.
 
 > [!div class="nextstepaction"]
 > [Next step: Approvals delegation and out of office](./approval-delegation-out-of-office.md)

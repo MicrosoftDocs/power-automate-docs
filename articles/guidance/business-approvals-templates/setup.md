@@ -10,10 +10,9 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Business Approvals Kit setup
+# Business Approvals Kit manual setup
 
-This Approvals Kit and guidance is targeted towards the person or department responsible for setting up approval system in their
-organization. The goal of this guidance is to help you walking you through the prerequisites, setup instructions, and individual components of the Approvals Kit.
+The Approvals Kit and guidance is targeted towards the person or department responsible for setting up approval system in your organization. Key sections walk you through the prerequisites, setup instructions, and individual components of the Approvals Kit.
 
 ## Overview
 
@@ -43,7 +42,7 @@ The Approvals Kit is a collection of components that are designed to help you ge
 
     - Create approval requests but DO NOT need to check progress between each approval step using the template
 
-  - Power Apps and Power Automate pay as you go plans as alternatives to per user licenses
+  - Power Apps and Power Automate pay as you go plans offer alternatives to monthly user, application or flow licenses
   
   - More information: [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus#power-appspower-automate-for-microsoft-365)
   
@@ -81,17 +80,17 @@ The Approvals Kit is a collection of components that are designed to help you ge
 
     e.  Select **Save**
 
-1. Go to your new environment so that you can setup the Approvals Kit solution for a manual install.
+1. Go to your new environment so that you can import the Approvals Kit solution for a manual install.
 
     a.  Go to [make.powerapps.com](https://make.powerapps.com)
 
 ## Enabling Power Automate approvals capability
 
-Approvals Kit relies on the out of the box approvals functionality from Power Automate. If you're using the approvals function for the first time, it needs to be enabled first. This can be done using the power platform command line interface or manually by running a cloud flow that includes an approval
+Approvals Kit relies on the out of the box approvals functionality from Power Automate. If you're using the approvals function for the first time, it needs to be enabled first. Enabling approvals can be done using the power platform command line interface or manually by running a cloud flow that includes an approval
 
 ### Command Line Setup
 
-To use the power platform command line to install the flow approvals solution into the environment that the Approvals Kit will be installed you can use the following PowerShell commands as a starter script
+Using the power platform command line can be used install the flow approvals solution into the environment. In the environment allocated for the Approvals Kit, use the following PowerShell commands as a starter script
 
 ```pwsh
 $envs = (pac admin list --json | ConvertFrom-Json) | Where-Object { $_.DisplayName -eq "Your Environment Name"  }
@@ -102,7 +101,7 @@ pac application install --environment $envs[0].EnvironmentId --application-name 
 
 In new environments, the Power Automate Approvals feature is configured on-demand the first time any approval flow runs in an environment. The on-demand setup is performed either the **Create an Approval** or **Start and wait for an approval** cloud flow actions execute. To enable the approvals feature, proceed with the following steps.
 
-*Note: Only run these steps for the first time you're using Approvals connector in the environment you're going to install the template on. If you have already previously used the Approvals connector in the same environment, you can omit this section.*
+*Note: Only run these steps for the first time you're using Approvals connector in the environment you're going to install the template on. When an Approvals connector is already in the same environment, you can omit this section.*
 
 1. Select the environment you're going to deploy the Approvals Kit on
 
@@ -128,7 +127,7 @@ In new environments, the Power Automate Approvals feature is configured on-deman
 
    ![Screenshot of start and wait for an approval assigned to email](./media/start-and-wait-for-an-approval-assigned-to.png)
 
-1. Select **Save**. It may prompt you with a warning *No Microsoft Dataverse database for this environment has been provisioned*. The  warning is normal and is the exact reason why you're running these prerequisite steps
+1. Select **Save**. It might prompt you with a warning *No Microsoft Dataverse database for this environment has been provisioned*. The  warning is normal and is the exact reason why you're running these prerequisite steps
 
 1. Select **Test** and choose **Manually**, and select **Test** again
 
@@ -136,7 +135,7 @@ In new environments, the Power Automate Approvals feature is configured on-deman
 
 1. Select **Done** and it transfers you to another screen with a message "Your flow is running..."
 
-> *Note: **[It will take around 10 minutes for this to run for the first time]{.ul}**. If you are having problems running this flow, read the support article [Power Automate Approvals Provisioning Overview and Troubleshooting](https://support.microsoft.com/topic/power-automate-approvals-provisioning-overview-and-troubleshooting-2306313a-49fa-efde-c716-a34c573ec942) and reach out to your IT administrator or contact Microsoft support.*
+> *Note: **[It will take around 10 minutes to run for the first time]{.ul}**. If you are having problems running this flow, read the support article [Power Automate Approvals Provisioning Overview and Troubleshooting](https://support.microsoft.com/topic/power-automate-approvals-provisioning-overview-and-troubleshooting-2306313a-49fa-efde-c716-a34c573ec942) and reach out to your IT administrator or contact Microsoft support.*
 
 ![Screenshot of Business Approvals templates initial setup](./media/business-approvals-templates-initial-setup.png)
 
@@ -146,7 +145,7 @@ After the flow is successfully run, a **email** requesting for approval is sent.
 
 Setting up a designated environment for Approvals Kit is recommended for all users within your organization that need to access the Business Approvals process. Further information on environments is available in [environments overview](/power-platform/admin/environments-overview). If you're a business user, creating an environment typically requires a person with administrative access to Power Platform. Reach out to your IT department to ask for assistance on environment setup.
 
-> Note: Approvals Kit uses [solution management capabilities](/power-apps/developer/data-platform/introduction-solutions) of Dataverse to package up all assets. To ensure consistency and same experience for every customer, the template is provided as [managed solutions](/power-platform/alm/solution-concepts-alm). If you would like to extend this template, you will need to use a separate [unmanaged solution](/power-platform/alm/solution-concepts-alm) layer as you cannot directly modify this template.
+> Note: Approvals Kit uses [solution management capabilities](/power-apps/developer/data-platform/introduction-solutions) of Dataverse to package up all assets. To ensure consistency and same experience for every customer, the template is provided as [managed solutions](/power-platform/alm/solution-concepts-alm). If you would like to extend the template, you will need to use a separate [unmanaged solution](/power-platform/alm/solution-concepts-alm) layer as you cannot directly modify this template.
 
 ### Import the solution
 
@@ -165,7 +164,7 @@ Importing the solution is the first step of the installation process and is requ
 1. Select the Approvals Kit core components solution from File Explorer
     (BusinessApprovalsCoreComponents\_*x_x\_x_xx*\_managed.zip)
 
-1. When the compressed (.zip) file has been loaded, select **Next**
+1. Once the compressed (.zip) value is available, select **Next**
 
 1. Review the information, and then select **Next**
 
@@ -177,41 +176,41 @@ Importing the solution is the first step of the installation process and is requ
 
 1. Once import is complete, you should see Business Approvals Kit in the list of solutions
 
-*Note: The import may take up to 10 minutes to be completed.*
+*Note: The import can take up to 10 minutes to be completed.*
 
 ### Post Import Steps
 
-Once Approvals kit solution is imported to an environment successfully, there is a need to update Approvals kit custom connector to point out to the target tenant Identity provider and turn on cloud flows
+Once Approvals kit solution is imported to an environment successfully, there's a need to update Approvals kit custom connector to point out to the target tenant Identity provider and turn on cloud flows
 
 #### Update Custom Connector
 
-As the custom connector for approvals kit work on delegation permission, it is necessary to have a app registered to interact with Dataverse table and Custom API.
+As the custom connector for approvals kit work on delegation permission, it's necessary to have an app registered to interact with Dataverse table and Custom API.
 
 ##### App Registration
 
-Follow the steps below to perform the app registration
+Follow these steps to perform the app registration
 
-1. Login to https://entra.microsoft.com/
+1. Sign in to https://entra.microsoft.com/
 
 1. Select **App Registration** from Application section under **Identity**.
 
 ![App Registration](./media/app-registration.png)
 
-1. Click New registration and provide a name, e.g. Approvals kit App. Click **Register**.
+1. Select New registration and provide a name, for example **Approvals kit App**. select **Register**.
 
 1. Under **API permission**, select **Add a permission** and select **Dynamic CRM**.
 
 ![App Registration adding API permissions for Dynamics CRM](./media/app-registration-dynamics-crm.png)
 
-1. Choose **Delegated permission** and select user_impersonation. Click **Add Permissions**.
+1. Choose **Delegated permission** and select user_impersonation. Select **Add Permissions**.
 
 ![App Registration adding API permissions for Dynamics CRM with delegated user_impersonation](./media/app-registration-dynamics-crm-delegated-permissions.png)
 
-1. Create Secret by moving to **Certificates and Secrets** section and click **New client secret**.
+1. Create Secret by moving to **Certificates and Secrets** section and select **New client secret**.
 
-1. Add description and select an appropriate expiry date. Click **Add**.
+1. Add description and select an appropriate expiry date. Select **Add**.
 
-1. Copy the secret value and save it. This will be required to configure custom connector in the next section.
+1. Copy the secret value and save it. You'll use the copied value when configuring custom connector in the next section.
 
 1. Also make a note of Client ID from Overview section.
 
@@ -239,7 +238,7 @@ Follow the steps below to perform the app registration
 
 The template includes multiple core components that are used to manage the approval experience. To use the template, you need to turn on the cloud flows that came with the template.
 
-1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Business Approvals Kit** solution to view the flows. Activate cloud flows using in the list to ensure no errors occur as there are dependencies across the flows. Some cloud flows may be enabled when importing the solution in the previous steps.
+1. Go to [make.powerapps.com](https://make.powerapps.com/), select **Solutions**, and then open the **Business Approvals Kit** solution to view the flows. Activate cloud flows using in the list to ensure no errors occur as there are dependencies across the flows. Some cloud flows can be enabled when importing the solution in the previous steps.
 
     a.  Turn on: BACore \| Approval Time-out
 
@@ -279,4 +278,4 @@ The template includes multiple core components that are used to manage the appro
 
     s.  Turn on: BACore \| Sync Approver OOF
 
-1. You have completed installing the core components. Your next step is to set up the approval processes in How to use Approvals Kit section.
+1. Once installation is complete for the core components, your next step is to set up the approval processes in How to use Approvals Kit section.

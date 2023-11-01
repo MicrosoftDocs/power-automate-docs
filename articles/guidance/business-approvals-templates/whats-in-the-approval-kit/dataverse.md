@@ -18,7 +18,7 @@ This page summarizes the Dataverse components that make up the Approvals Kit
 
 There are mainly two types of tables used in approval templates.
 
-- Process Definition Tables - Define the approval processes. This is used to look up and configures approval processes to your business needs
+- Process Definition Tables - Define the approval processes. These tables are used to look up and configures approval processes to your business needs
 - Version Tables - Define the versions of published processes
 - Reference Tables - Define approvers, work profile and calendar dates
 - Runtime Tables - Store the results/status of the approvals
@@ -30,8 +30,8 @@ The following tables are used for definition
 |Name|Description|Example(s)|
 |----|----------|-------|
 |Business Approvals Process|One record per approval scenarios that the Approvals Kit manages|Invoice Approval
-|Business Approval Data|One record per data item used to define the input fields of what will be used within the approval process|"Request Amount", "Transportation Method" and "Department"
-|Business Approval Stage |On record per stage within the approval process|"Manager Approval" or "Line Manager Approval"
+|Business Approval Data|One record per data item used to define the input fields of that are used within the approval process|For example Request Amount, Transportation Method and Department
+|Business Approval Stage |One record per stage within the approval process|"Manager Approval" or "Line Manager Approval"
 |Business Approval Condition|Define optional condition for a stage|None, If, Switch
 |Business Approval Node|Defines each step of the approval including the type of approval of that step and the approver|
 
@@ -56,14 +56,14 @@ The following tables are used for definition
 
 ### Runtime Tables
 
-Each time a new approval request is made, data is stored into runtime instance tables based on the configuration of the definition version tables.
+For each approval request that is made, data is stored into runtime instance tables. These entries are based on the configuration of the definition version tables.
 
 |Name|Description|Notes|
 |----|----------|-------|
 |Business Approval Workflow|Used to manage all incoming approval requests and the related tables used for the request|Created approval generated from data in your source triggered system. Created for a version of a published business approval process
-|Business Approval Runtime Data Instance|Is used to store the metadata of what is defined in approval data|For example, if you have defined "Request Amount" in Approval Data table, the Instance Data would store the actual request amount for the request
-|Business Approval Runtime Stage Instance|creates a working copy of Business Approval Stage version. It's used to hold each transactional stage of the approval|Any changes made during runtime are saved here
-|Business Approval Runtime Node Instance|creates a working copy of Nodes transactional reference to the approval request. It's used to hold each transactional step of the approval including the type of approval of that step and the approver|Any changes made during runtime are saved here
+|Business Approval Runtime Data Instance|Is used to store the metadata of what is defined in approval data|For example, if you define "Request Amount" in Approval Data table, the Instance Data would store the actual request amount for the request
+|Business Approval Runtime Stage Instance|Creates a working copy of Business Approval Stage version. The record is used to hold each transactional stage of the approval|Any changes made during runtime are saved here
+|Business Approval Runtime Node Instance|creates a working copy of Nodes transactional reference to the approval request. Used to hold each transactional step of the approval including the type of approval of that step and the approver|Any changes made during runtime are saved here
 |Business Approval Instance|Stores a transactional reference of Approval for a specific node instance|
 |Business Approval Instance Log|Stores a transactional reference of Approval reference and outcome|
 |Business Approval Instance Override|Stores a transactional a new approver that overrides the original approval instance|

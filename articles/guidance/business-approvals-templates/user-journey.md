@@ -18,7 +18,7 @@ There are three major personas of Approver, Approvals Administrator and Power Pl
 
 |Persona |Example Role |User Type    |Description|
 |--------|-------------|-------------|-----------|
-|Power Platform Admin|IT Manager|Pro Developer|Creates / Assigns Environments and import Approvals Kit solution as System Adminitrator or System Customizer|
+|Power Platform Admin|IT Manager|Pro Developer|Creates / Assigns Environments and import Approvals Kit solution as System Administrator or System Customizer|
 |Approvals Administrator|Sales Director|Power User|Configures the kit to match the business requirements. Analyzes the approval processes for improvement opportunities|
 |Approver|Sales Manager|Business User|Receives an approval to Accept for Decline|
 
@@ -40,7 +40,7 @@ An example user journey can be illustrated in the following series of steps
 
 ### Install
 
-Gibson can review the [Setup Guide](./setup.md) to ensure the prerequisites are in place. Using [System administrator](/power-platform/admin/database-security#environments-with-a-dataverse-database) or [System customizer](/power-platform/admin/database-security#environments-with-a-dataverse-database) permissions the Approvals Kit Power Platform solution has been installed into an environment and Approvals Administrators have access to the application.
+Gibson can review the [Setup Guide](./setup.md) to ensure the prerequisites are in place. Using [System administrator](/power-platform/admin/database-security#environments-with-a-dataverse-database) or [System customizer](/power-platform/admin/database-security#environments-with-a-dataverse-database) permissions the Approvals Kit Power Platform can be installed into an environment and provide access for Approvals Administrators to access the application.
 
 ![Illustration of example user journey with install stage highlighted](./media/experience-install.svg)
 

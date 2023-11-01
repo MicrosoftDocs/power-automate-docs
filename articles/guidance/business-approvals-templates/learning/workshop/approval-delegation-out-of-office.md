@@ -12,9 +12,9 @@ ms.reviewer: angieandrews
 
 # Approvals delegation and out of office
 
-One key element of Approvals kit is the ability to specify delegate approvers in the event that you are out of the office or on holiday. This ensures that the approval process can continue smoothly even if the primary approver is unavailable. In the "Configure basic settings" section of the Business Approval Management application, you can easily set these delegate approver values.
+One key element of Approvals kit is the ability to specify delegate approvers when you're out of the office or on holiday. These settings ensure that the approval process can continue smoothly even if the primary approver is unavailable. In the "Configure basic settings" section of the Business Approval Management application, you can easily set these delegate approver values.
 
-This workshop module will provide step-by-step instructions for defining delegated approvers and handling out of office approvers. You will learn how to configure the basic settings of the Business Approval Management application to set delegate approvers, as well as how to handle out of office approvers using the Approvals kit. 
+This workshop module provides step-by-step instructions for defining delegated approvers and handling out of office approvers. You learn how to configure the basic settings of the Business Approval Management application to set delegate approvers, and how to handle out of office approvers using the Approvals kit.
 
 By the end of this module, you should have a good understanding of how to manage delegate approvers and out of office settings using the Power Platform Approvals Kit.
 
@@ -24,7 +24,7 @@ By the end of this module, you should have a good understanding of how to manage
 
 1. Open the **Business Approval Management** application in the workshop environment assigned to you.
 
-1. From the **Home** page select the **Configure basic settings** panel
+1. From the Home page, select the **Configure basic settings** panel
 
    ![Screenshot of Configure basic settings from the Home page of Business Approval Management application](./media/business-approval-management-configure-basic-settings.png)
 
@@ -34,7 +34,7 @@ By the end of this module, you should have a good understanding of how to manage
 
 ## Task 2 - Define approval delegate and set out of office
 
-1. In the **Approval Delegate** field search for another user who can act as an approver or enter the auto-approver test user that your instructor has configured in Power Platform for workshop users.
+1. In the **Approval Delegate** field search for another user who can act as an approver or enter the auto-approver test user that your instructor configured in Power Platform for workshop users.
 
 1. Select the **Out of Office** so that is displays Enabled
 
@@ -54,7 +54,7 @@ By the end of this module, you should have a good understanding of how to manage
 
 1. If prompted select Allow for the Office 365 users connector.
 
-1. Select a few machines **below $400** and click **Compare**.
+1. Select a few machines that have a price less than **$400** and select **Compare**.
 
 1. Select one of the machines  and select **Submit**
 
@@ -66,12 +66,12 @@ By the end of this module, you should have a good understanding of how to manage
 
 1. Select the assigned Approvals Kit environment for this workshop content.
 
-1. From the left navigation select **Approvals**.
+1. From the left navigation, select **Approvals**.
 
-1. Wait for a few minutes and refresh and verify that you have not been sent an approval.
+1. Wait for a few minutes and refresh and verify that an approval haven't been generated.
 
 ## Summary
 
-This workshop module covered the basic out of office scenario for the Approvals kit. It provided step-by-step instructions for defining and testing delegated approvers when your are out of office.
+This workshop module covered the basic out of office scenario for the Approvals kit. It provided step-by-step instructions for defining and testing delegated approvers when you're out of office.
 
-The workshop demonstrated how to configure the basic settings of the Business Approval Management application to set delegate approvers, as well as how to handle out of office approvers using the Approvals kit. You could extend workshop to testing your work define work profile or public holidays as examples of when delegation can be used.
+The workshop demonstrated how to configure the basic settings of the Business Approval Management application to set delegate approvers. It also included how to handle out of office approvers using the Approvals kit. You could extend workshop to testing your work define work profile or public holidays as examples of when delegation can be used.

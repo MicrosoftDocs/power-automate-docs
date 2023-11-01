@@ -57,6 +57,11 @@ To set up the out of office and delegation, follow these steps:
 
 1. Select **Submit**
 
-The delegation and out of office settings have been completed. While your out of office settings are enabled, any new approval requests are delegated to whoever you specified within the date and time you selected.
+The delegation and out of office settings changes are saved. While your out of office settings are enabled, any new approval requests are delegated to whoever you specified within the date and time you selected.
 
-*Note: Delegation doesn't occur if you set your out of office settings off, or if the out of office date and times don't fall in the time you specified.*
+> *NOTE:* Delegation doesn't occur if you:
+>
+> - Set your out of office settings off
+>
+> - Out of office date and times don't fall in the time you specified.
+>

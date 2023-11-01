@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 
 # Setup Instructor Scripts
 
-It is assumed that you have completed the [Getting Started](./getting-started.md) guide and have an installation of the required tools. To start a session the following steps an be used to perform various automation tasks contained within the available PowerShell scripts
+Ensure that the [Getting Started](./getting-started.md) is complete and you have an installation of the required tools. Start a session using the following steps so that you can perform various automation tasks contained within the available PowerShell scripts
 
 1. Start a PowerShell session
 
@@ -20,7 +20,7 @@ It is assumed that you have completed the [Getting Started](./getting-started.md
 pwsh
 ```
 
-1. Change location to where you have cloned or unzipped the Business approvals kit GitHub repository. For example
+1. Change location to where you cloned or unzipped the Business approvals kit GitHub repository. For example
 
 ```pwsh
 Set-Location powercat-business-approvals-kit
