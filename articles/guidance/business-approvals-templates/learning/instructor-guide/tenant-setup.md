@@ -25,7 +25,7 @@ The following table outlines possible options for tenant selection
 |Existing Tenant|The organization already has an existing Microsoft Entra ID tenant||
 |[Microsoft 365 Developer Plan](https://developer.microsoft.com/microsoft-365/dev-program)|Get an instant sandbox preconfigured with sample data, including Teams Developer Portal, and start developing on the Microsoft 365 platform.|Requires credit card and phone number for registration|
 |[Microsoft Customer Digital Experiences](https://cdx.transform.microsoft.com/)|Experience the latest Demo content, Customer Immersion and Labs. Demo environments give you a hands on opportunity to explore Microsoft 365 and Dynamics product and features.|Available to Microsoft Partner Network and limited how tenants can be used. Consult terms and conditions for acceptable use|
-|[Get a Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)|Requires an Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).|Doesn't provide the required Office 365 license. You can explore purchasing or adding a trial license to complete the workshop|
+|[Get a Microsoft Entra tenant](/entra/identity-platform/quickstart-create-new-tenant)|Requires an Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).|Doesn't provide the required Office 365 license. You can explore purchasing or adding a trial license to complete the workshop|
 
 ## Summary
 
