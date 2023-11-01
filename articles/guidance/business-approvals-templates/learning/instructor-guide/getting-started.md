@@ -92,7 +92,7 @@ Setting up a class size of 20+ students each environment setup could take up to 
 
 1. Inside the [Azure portal](https://portal.azure.com), start a new bash based Azure Cloud Shell.
 
-> NOTE: If Azure Cloud Shell is new to you can use [Overview of Azure Cloud Shell](https://learn.microsoft.com/azure/cloud-shell/overview) an the [Quickstart](https://learn.microsoft.com/azure/cloud-shell/quickstart) as useful starting points.
+> NOTE: If Azure Cloud Shell is new to you can use [Overview of Azure Cloud Shell](/azure/cloud-shell/overview)an the [Quickstart](/azure/cloud-shell/quickstart) as useful starting points.
 
 2. Use the following Bash script inside the Azure Cloud Shell to create a resource group, create and start a Virtual Machine (VM)
 
