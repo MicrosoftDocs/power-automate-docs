@@ -66,9 +66,9 @@ dotnet build
 
 ## Docker Install
 
-A Docker setup is a way to run your application with a known set of tools in a contained environment. By using Docker, it ensures that your application runs consistently across different systems. For example, it helps provide isolation from underlying infrastructure like operating system or library versions.
+A Docker setup is a way to run your application with a known set of tools in a contained environment. Using Docker ensures that your application runs consistently across different systems. For example, it helps provide isolation from underlying infrastructure like operating system or library versions.
 
-Using a Docker setup also means you don't need to install all the tools on your local computer, as everything is contained within the Docker container.
+You don't need to install all the tools on your local computer because everything is contained within the Docker container.
 
 Another benefit of a Docker setup is that you can run multiple installations at the same time, as each installation is isolated within its own container. Multiple containers can improve efficiency and reduce the time needed to perform installations or updates.
 
@@ -147,18 +147,14 @@ ssh -i ~/.ssh/azurevm-$vmName "accadmin@$ip" -t -l bash
 
 1. Install the required tools inside the Virtual Machine bash shell
 
-> **NOTES:**
->
-> 1. `sudo`: This command is used to run a command with elevated privileges. It allows a user to execute a command as the root user or another user with higher privileges
->
-> 2. `apt remove`: This command is used to remove a package from your system. It removes all the files associated with the package, as well as any configuration files that were created when the package was installed
->
-> 3. `apt remove`: This command is used to remove a package from your system. It removes all the files associated with the package, as well as any configuration files that were created when the package was installed
->
-> 4. The `dotnet tool install` command is used to install a .NET Core global tool. Global tools are .NET Core console applications that are installed on your system and can be accessed from any directory in the command prompt.
->
-> 5. The `.bash_profile` file is a script that is executed whenever a new terminal session is started in Bash. It is used to set environment variables, define aliases, and perform other customizations to the shell environment.
->
+
+|Command  |Description  |
+|---------|---------|
+|`sudo`    |This command is used to run a command with elevated privileges. It allows a user to execute a command as the root user or another user with higher privileges.      |
+|`apt remove`     |This command is used to remove a package from your system. It removes all the files associated with the package, as well as any configuration files that were created when the package was installed.        |
+|`apt remove`     |This command is used to remove a package from your system. It removes all the files associated with the package, as well as any configuration files that were created when the package was installed.       |
+|`dotnet tool install`    |This command is used to install a .NET Core global tool. Global tools are .NET Core console applications that are installed on your system and can be accessed from any directory in the command prompt.         |
+|`.bash_profile`| This file is a script that is executed whenever a new terminal session is started in Bash. It is used to set environment variables, define aliases, and perform other customizations to the shell environment.|
 
 ```bash
 sudo apt remove -y 'dotnet*' 'aspnet*' 'netstandard*'
@@ -180,11 +176,13 @@ EOF
 git clone https://www.github/microsoft/powercat-business-approvals-kit.git
 ```
 
-> NOTE: If git clone is not an option, you could download the repository as a zip file upload the zip file to your Cloud Shell. Then use ```scp -i ~/.ssh/azurevm-$vmName powercat-business-approvals-kit-main.zip "accadmin@$ip":/home/accadmin```
+> [!NOTE]
+> If git clone is not an option, you could download the repository as a zip file upload the zip file to your Cloud Shell. Then use ```scp -i ~/.ssh/azurevm-$vmName powercat-business-approvals-kit-main.zip "accadmin@$ip":/home/accadmin```
 
 1. Set up the installer app and install dependencies
 
-> **NOTE:** Playwright is an open-source solution for automating web browsers. It is used by the installer to automate interactive tasks as a workshop user account. [Playwright documentation](https://playwright.dev/docs/intro) provides official documentation for Playwright. It provides a comprehensive guide to using the library, including installation instructions, API reference, and examples
+> [!NOTE]
+> Playwright is an open-source solution for automating web browsers. It is used by the installer to automate interactive tasks as a workshop user account. [Playwright documentation](https://playwright.dev/docs/intro) provides official documentation for Playwright. It provides a comprehensive guide to using the library, including installation instructions, API reference, and examples
 
 ```pwsh
 Push-Location
@@ -195,7 +193,8 @@ pwsh ./bin/Debug/net7.0/playwright.ps1 install-deps
 Pop-Location
 ```
 
-> NOTE: If you are using zip file copied via scp use the command ```unzip powercat-business-approvals-kit-main.zip``` and move the folder name ```mv powercat-business-approvals-kit-main powercat-business-approvals-kit```
+> [!NOTE]
+> If you are using zip file copied via scp use the command ```unzip powercat-business-approvals-kit-main.zip``` and move the folder name ```mv powercat-business-approvals-kit-main powercat-business-approvals-kit```
 
 ## Verifying Install
 
