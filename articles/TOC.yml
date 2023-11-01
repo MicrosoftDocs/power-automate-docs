@@ -18,7 +18,7 @@
     href: overview-cloud.md
   - name: Get started with Copilot in cloud flows
     href: get-started-with-copilot.md
-  - name: Understand the cloud flows designer with copilot capabilities
+  - name: Understand the cloud flows designer
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
@@ -31,7 +31,9 @@
   - name: Share a flow
     href: create-team-flows.md
   - name: Support for guest users
-    href: share-guest-users.md  
+    href: share-guest-users.md
+  - name: Support for service principal owned flows
+    href: service-principal-support.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -259,6 +261,8 @@
       href: ./dataverse/delete-row.md
     - name: Use lists of rows in flows
       href: ./dataverse/list-rows.md
+    - name: Connect to other environments
+      href: ./dataverse/connect-to-other-environments.md
     - name: Use wait conditions to delay flows
       href: ./dataverse/wait-conditions.md
     - name: Perform bound or unbound actions in flows
@@ -403,7 +407,7 @@
         href: ./desktop-flows/avd-use-starter-kit.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
-  - name: Work queues (preview)
+  - name: Work queues
     items:
     - name: Overview
       href: ./desktop-flows/work-queues.md
@@ -703,7 +707,7 @@
       href: ./desktop-flows/actions-reference/sharepoint.md
     - name: Office 365 Outlook (preview)
       href: ./desktop-flows/actions-reference/office365outlook.md
-    - name: Work queues (preview)
+    - name: Work queues
       href: ./desktop-flows/actions-reference/workqueues.md
     - name: Custom actions (preview)
       href: ./desktop-flows/actions-reference/custommodule.md
@@ -761,7 +765,9 @@
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
     - name: Copilot in Process Mining ingestion (preview)
-      href: process-mining-copilot-in-ingestion.md 
+      href: process-mining-copilot-in-ingestion.md
+    - name: Copilot in Process Mining process analytics (preview)
+      href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
     - name: Use your own Azure Data Lake Storage Gen2 (preview)
@@ -784,8 +790,6 @@
       href: ./minit/minit-desktop-application-overview.md
     - name: Download Process Mining desktop app
       href: ./minit/how-to-start-with-minit-desktop-application.md
-    - name: Copilot in Process Mining process analytics (preview)
-      href: ./minit/process-mining-copilot-in-process-analytics.md      
     - name: Get started
       items:
       - name: Explore the home page
@@ -1023,7 +1027,7 @@
     href: introduction-to-data-groups.md
   - name: View sharing and connectors analytics reports
     href: admin-analytics-report.md
-  - name: Respond to personal data requests (Azure AD)
+  - name: Respond to personal data requests (Microsoft Entra ID)
     items:
     - name: Summary
       href: privacy-dsr-summary.md
@@ -1142,10 +1146,3 @@
     href: faqs-copilot.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
-
-
-
-
-
-    
-

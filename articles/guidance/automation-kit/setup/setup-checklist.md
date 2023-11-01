@@ -36,7 +36,7 @@ The following checklist provides an overview of the key steps, to assist you in 
 
 - Import the Power Platform Creator Kit (CreatorKitCore_x.x.x.x _managed).
 - Verify Creator Kit is installed correctly.
-- Created Azure AD app registration (Dataverse API) for each satellite.
+- Created Microsoft Entra app registration (Dataverse API) for each satellite.
 - Defined satellite environments (new or existing).
 - Created application users in all satellite environments.
 - Imported AutomationCoESatellite_x_x_x_x_managed.

@@ -5,8 +5,8 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
+ms.date: 10/24/2023
+ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -262,6 +262,8 @@ This action doesn't produce any variables.
 
 Read a CSV file into a data table.
 
+You can use the **Read from CSV file** action to create a datatable variable with the file's contents. You need to define the path to the CSV file and the encoding to use for reading it, while you can also trim any whitespaces from the extracted cells, handle the first line as column headers, and specify the columns separator.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
@@ -290,6 +292,8 @@ Read a CSV file into a data table.
 ## <a name="writetocsvfile"></a> Write to CSV file
 
 Write a data table, data row or list to a CSV file.
+
+Use the **Write to CSV file** action to write a data table, data row or list variable to a target CSV file. In the **File path** parameter, specify the file path or variable containing a file or textual path where the data will be exported to.
 
 ### Input parameters
 

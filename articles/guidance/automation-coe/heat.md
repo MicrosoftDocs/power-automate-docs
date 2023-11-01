@@ -130,7 +130,7 @@ Some resources for deploying, monitoring, and managing automations:
 
 ## Secure & govern
 
-In this stage, the Automation CoE can use security controls to establish guard rails to scale RPA across their organization. They can leverage Azure Active Directory, a key foundation that allows admins to create and manage access controls on users and resources centrally. Power Automate provides rich governance and security controls to ensure that you can run your business-critical processes in a trusted and compliant manner.
+In this stage, the Automation CoE can use security controls to establish guard rails to scale RPA across their organization. They can leverage Microsoft Entra ID, a key foundation that allows admins to create and manage access controls on users and resources centrally. Power Automate provides rich governance and security controls to ensure that you can run your business-critical processes in a trusted and compliant manner.
 
 The platform provides a rich set of auditing logs that help admins keep track of what happened in the system. The deep integration of Microsoft Power Platform with Azure and Microsoft 365 allows IT admins to define reactive and proactive policies and procedures to track automation activity.
 

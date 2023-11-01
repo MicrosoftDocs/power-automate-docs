@@ -42,7 +42,7 @@ To use hosted machines, you need the following licensing option:
 
    Assign to your environment as many add-ons as the number of hosted machines you want to run in your environment.
 
-You'll also need the following prerequisite licenses: Windows, Intune, Azure Active Directory.
+You'll also need the following prerequisite licenses: Windows, Intune, Microsoft Entra ID.
 
 
 ### Trial licenses for evaluation
@@ -61,12 +61,12 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 
 This section presents all the prerequisites to create and use hosted machines.
 
-### Azure Active Directory and Intune requirements
+### Microsoft Entra and Intune requirements
 
-- A valid and working Intune and Azure Active Directory tenant.
+- A valid and working Intune and Microsoft Entra tenant.
 - Ensure that Intune device type enrollment restrictions are set to **Allow Windows (MDM) platform for corporate enrollment**.
 
-To find more information about the Azure Active Directory and Intune requirements, go to [Windows 365 requirements](/windows-365/enterprise/requirements?tabs=enterprise%2Cent#azure-active-directory-and-intune-requirements).
+To find more information about the Microsoft Entra and Intune requirements, go to [Windows 365 requirements](/windows-365/enterprise/requirements?tabs=enterprise%2Cent#azure-active-directory-and-intune-requirements).
 
 ### Windows 365 Cloud PC and Azure Virtual Desktop service principal
 
@@ -77,15 +77,15 @@ To find more information about the Azure Active Directory and Intune requirement
 
     1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-    1. Navigate to **Azure Active Directory** > **Enterprise applications** > **All applications**.
+    1. Navigate to **Microsoft Entra** > **Enterprise applications** > **All applications**.
 
     1. Remove filter **Application type == Enterprise Applications**.
 
     1. Fill filter **Application ID starts with** with the Windows 365 application ID **0af06dc6-e4b5-4f28-818e-e78e62d137a5**.
 
-        If the service principal is provisioned in your Azure Active Directory, the page should look like the following screenshot:
+        If the service principal is provisioned in your Microsoft Entra, the page should look like the following screenshot:
 
-        :::image type="content" source="media/hosted-machines/azure-portal.png" alt-text="Screenshot of the Enterprise applications in Azure Active Directory.":::
+        :::image type="content" source="media/hosted-machines/azure-portal.png" alt-text="Screenshot of the Enterprise applications in Microsoft Entra ID.":::
 
         If the application is like the presented screenshot, you don't need to perform any extra steps. However, you must create the service principal if the application isn't showing up.
 
@@ -154,7 +154,7 @@ To create a hosted machine:
 
         Alternatively, you can select a [custom VM image](#use-custom-vm-images-for-your-hosted-machine) that has been shared with your account.
 
-    1. Optionally, select the [custom network connection](#use-custom-vnet-for-your-hosted-machines) you want your hosted machine to be provisioned with Azure Active Directory (Azure AD). Otherwise, you'll automatically connect to the Microsoft Hosted Network.
+    1. Optionally, select the [custom network connection](#use-custom-vnet-for-your-hosted-machines) you want your hosted machine to be provisioned with Microsoft Entra ID. Otherwise, you'll automatically connect to the Microsoft Hosted Network.
 
     1. Review and create your hosted machine.
 
@@ -307,7 +307,7 @@ You can connect to your own virtual network (vNET) with your hosted machines to 
 
 ### General network requirement
 
-To use your own network and provision Azure AD joined hosted machines, you must meet the following requirements:
+To use your own network and provision Microsoft Entra joined hosted machines, you must meet the following requirements:
 
 - You must have a virtual network (vNET) in your Azure subscription in the same region where you've created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
