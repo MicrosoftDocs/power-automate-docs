@@ -56,7 +56,7 @@ Invoke-AzureLogin
 Add-SecurityMakersGroup
 ```
 
-> NOTE: Review the [How are role-assignable groups protected](https://learn.microsoft.com/entra/identity/role-based-access-control/groups-concept#how-are-role-assignable-groups-protected) for security roles that the logged in Azure Login account will require.
+> NOTE: Review the [How are role-assignable groups protected](/entra/identity/role-based-access-control/groups-concept#how-are-role-assignable-groups-protected) for security roles that the logged in Azure Login account will require.
 
 1. Assign Microsoft Developer Plan to the Makers group using guidance from https://learn.microsoft.com/azure/active-directory/enterprise-users/licensing-ps-examples
 
@@ -72,13 +72,13 @@ Add-SecurityMakersGroupAssignDeveloperPlan
 
 The instructor guide assumes that two Microsoft Entra applications are created.
 
-> NOTE: To learn more about [Create a Microsoft Entra application and service principal that can access resources](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal) for guidance on  permissions required to register an app.
+> NOTE: To learn more about [Create a Microsoft Entra application and service principal that can access resources](/entra/identity-platform/howto-create-service-principal-portal) for guidance on  permissions required to register an app.
 
 ### Automation Kit Application
 
 The Automation Kit application is used by the Approvals Kit custom connector to provide delegated permissions to access Microsoft Dataverse. The results of this process should be stored in the **CLIENT_ID** and **CLIENT_SECRET** secure variables.
 
-1. Create a new Application following [Register an application with Microsoft Entra ID and create a service principal](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
+1. Create a new Application following [Register an application with Microsoft Entra ID and create a service principal](/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
 
 1. The default URI of type **Web** and value of **https://global.consent.azure-apim.net/redirect**.
 
@@ -106,7 +106,7 @@ The Automation Kit application is used by the Approvals Kit custom connector to 
 
 The Install Administration application is used by the instructor guide setup scripts to provide user administration. The results of this process should be stored in the **ADMIN_APP_ID** and **ADMIN_APP_SECRET** secure variables.
 
-1. Create a new Application named **Approvals Kit Instructor Admin** following [Register an application with Microsoft Entra ID and create a service principal](https://learn.microsoft.com/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
+1. Create a new Application named **Approvals Kit Instructor Admin** following [Register an application with Microsoft Entra ID and create a service principal](/entra/identity-platform/howto-create-service-principal-portal#register-an-application-with-microsoft-entra-id-and-create-a-service-principal)
 
 1. Select **Register**
 
