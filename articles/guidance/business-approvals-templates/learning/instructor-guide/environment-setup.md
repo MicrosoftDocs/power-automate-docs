@@ -1,6 +1,6 @@
 ---
-title: Approvals Kit instructor guide environment setup | Microsoft Learn
-description: Approvals Kit instructor guide environment setup
+title: Environment setup for Approvals Kit
+description: Learn how to setup Approvals Kit environments to facilitate workshops.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
@@ -10,13 +10,19 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Environment Setup
+# Environment setup
 
-This section of the Power Platform Business Approvals kit focuses on creating an isolated development environment for the learner. Before proceeding, make sure you to complete the previous section [User setup](./user-setup.md), which focused on creating the Microsoft Entra ID users, groups, and assigned licenses.
+This section of the Power Platform Business Approvals kit focuses on creating isolated development environments for learners. 
 
-To create the developer environment, use these steps automate setup:
+## Prerequisites
 
-1. Creating a developer environment for the learner.
+- Complete the previous section [User setup](./user-setup.md), which explains how to create the Microsoft Entra ID users, groups, and assigned licenses.
+
+## Create developer environments
+
+To create the developer environment, use these steps to automate setup:
+
+1. Create a developer environment for the learner.
 
 1. Set the required environment settings.
 

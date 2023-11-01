@@ -56,7 +56,7 @@ This learning guide has the following assumptions:
 
 - Each person completing the learning guide has an isolated development environment so that they're unaffected by other users.
 
-- Each user has access Office 365 mailbox to use the [Office 365 Users Connector](https://learn.microsoft.com/connectors/office365users/).
+- Each user has access Office 365 mailbox to use the [Office 365 Users Connector](/connectors/office365users/).
 
 ## Automation Tool Selection
 
@@ -72,7 +72,7 @@ The Power Platform CLI is a command-line tool that allows you to manage Power Pl
 
 The Power Platform CLI is available for Windows, macOS, and Linux, and can be installed using various methods, including package managers, installers, and source code.
 
-If you're new to the Power Platform CLI, Microsoft offers several learning resources to help you get started from [Microsoft Power Platform CLI documentation](https://learn.microsoft.com/power-platform/developer/cli/introduction). The documentation provides a comprehensive guide to using the CLI, including installation instructions, command reference, and examples.
+If you're new to the Power Platform CLI, Microsoft offers several learning resources to help you get started from [Microsoft Power Platform CLI documentation](/power-platform/developer/cli/introduction). The documentation provides a comprehensive guide to using the CLI, including installation instructions, command reference, and examples.
 
 ## Azure Command Line Interface
 
@@ -84,11 +84,11 @@ The instructor guide setup scripts make use the Azure CLI to sign in, provide au
 
 Optional guides to help understand Azure Cloud Shell and Virtual Machines to help with setup of the workshop:
 
-- [Introduction to Azure Cloud Shell](https://learn.microsoft.com/training/modules/intro-to-azure-cloud-shell/)
+- [Introduction to Azure Cloud Shell](/training/modules/intro-to-azure-cloud-shell/)
 
-- [Introduction to Linux on Azure](https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/)
+- [Introduction to Linux on Azure](/training/modules/intro-to-linux-on-azure/)
 
-- [Get started with the Linux command line and the Shell](https://learn.microsoft.com/training/paths/shell/)
+- [Get started with the Linux command line and the Shell](/training/paths/shell/)
 
 ## This instructor guide has the following sections
 
