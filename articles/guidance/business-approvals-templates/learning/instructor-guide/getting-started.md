@@ -1,6 +1,6 @@
 ---
-title: Approvals Kit instructor guide getting started | Microsoft Learn
-description: Approvals Kit instructor guide getting started
+title: Get started guide for Approvals Kit workshop facilitators
+description: Install and verify the tools required to use automated setup scripts for facilitating a workshop.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
@@ -10,7 +10,7 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Getting started
+# Get started
 
 The Automation kit includes a set of automation scripts to help you set up isolated environments for each attendee, reducing the amount of time required for setup. 
 
@@ -86,9 +86,9 @@ docker build . -t automation-kit-setup
 
 One approach to allow you to create development environments for learners is to use a small Azure Linux based Virtual machine to assist you.
 
-### Setting up for scale
+### Setup for scale
 
-Setting up a class size of 20+ students each environment setup could take up to 20 minutes for each user environment. When using an Azure Cloud based Virtual Machine, you can automate a setup of machines without the need to have an active PC connected to the Internet.
+Setup for a class of 20 + students could take up to 20 minutes for each user environment. Using an Azure Cloud based Virtual Machine, you can automate a setup of machines without the need to have an active PC connected to the Internet.
 
 ### Installation steps
 
@@ -121,7 +121,7 @@ then
 fi
 ```
 
-1. Create ssh session to get command line to your virtual machine
+1. Create an ssh session to get command line to your virtual machine
 
 ```bash
 vmName="ApprovalsKitSetupVM"
@@ -226,6 +226,3 @@ pwsh --version
 SecureStore --version
 ```
 
-## Summary
-
-In this section, you have the option of installing and verifying that you have the tools required to use the automated setup scripts that can assist you with setup of a workshop.
