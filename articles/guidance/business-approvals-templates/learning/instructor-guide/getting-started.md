@@ -10,17 +10,17 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Getting Started
+# Getting started
 
 To help remove the manual setup process that is time consuming and repetitive when you have a set of users to deliver the workshop to the Automation kit includes a set of automation scripts to help you set up isolated environments for each attendee. This approach is taken so that each learner is isolated from each other and doesn't get impacted by other learners. This instructor guide assumes that you use one of the following methods to set up and run the automation scripts:
 
-- **Local Install** - you have the ability to install the required components on your local environment.
-- **Docker Install** - You have the ability to run and build a docker image to install components for learners.
+- **Local install** - you have the ability to install the required components on your local environment.
+- **Docker install** - You have the ability to run and build a docker image to install components for learners.
 - **Azure Cloud Virtual Machine** - Use Azure Cloud Shell and Azure Virtual Machine to install setup components.
 
 The installer components are based on cross platform tools. The required tools include PowerShell, Azure CLI, Power Platform CLI and the .NET SDK you could make your choice from supported Windows, macOS or Linux based operating systems.
 
-## Local Install
+## Local install
 
 Perform a local install using the following steps:
 
@@ -64,7 +64,7 @@ dotnet build
 ./bin/Debug/net7.0/playwright.ps1 install-deps
 ```
 
-## Docker Install
+## Docker install
 
 A Docker setup is a way to run your application with a known set of tools in a contained environment. Using Docker ensures that your application runs consistently across different systems. For example, it helps provide isolation from underlying infrastructure like operating system or library versions.
 
@@ -74,7 +74,7 @@ Another benefit of a Docker setup is that you can run multiple installations at 
 
 Overall, the Docker based install is a helpful tool for developers and system administrators who need to manage complex software environments across multiple systems.
 
-### Setup Steps
+### Setup steps
 
 ```pwsh
 docker build . -t automation-kit-setup
@@ -88,7 +88,7 @@ One approach to allow you to create development environments for learners is to 
 
 Setting up a class size of 20+ students each environment setup could take up to 20 minutes for each user environment. When using an Azure Cloud based Virtual Machine, you can automate a setup of machines without the need to have an active PC connected to the Internet.
 
-### Installation Steps
+### Installation steps
 
 1. Inside the [Azure portal](https://portal.azure.com), start a new bash based Azure Cloud Shell.
 
@@ -196,7 +196,7 @@ Pop-Location
 > [!NOTE]
 > If you are using zip file copied via scp use the command ```unzip powercat-business-approvals-kit-main.zip``` and move the folder name ```mv powercat-business-approvals-kit-main powercat-business-approvals-kit```
 
-## Verifying Install
+## Verify install
 
 Independent of which method you selected each of the following commands should be able to run to verify successful install of components needed to get started.
 
@@ -226,4 +226,4 @@ SecureStore --version
 
 ## Summary
 
-In this section, you have the option of installing and verify that you have the tools required to use the automated setup scripts that can assist you with setup of a workshop.
+In this section, you have the option of installing and verifying that you have the tools required to use the automated setup scripts that can assist you with setup of a workshop.
