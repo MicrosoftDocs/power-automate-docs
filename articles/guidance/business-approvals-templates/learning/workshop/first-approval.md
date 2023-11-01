@@ -40,13 +40,13 @@ By completing the App In a Day module 2 or having the Contoso Coffee Application
 
 1. Select OK to close the submitted Machine Request
 
-  ![Screenshot of Contoso Coffee Machine Ordering app for submit screen request](./media/contoso-coffee-submitted-request.png)
+  ![Screenshot of Contoso Coffee Machine Ordering app for submit screen request submitted](./media/contoso-coffee-submitted-request.png)
 
 1. Close the application.
 
 1. select **Tables**, search for **Machine Order** and select it.
 
-  ![Screenshot of Contoso Coffee Machine Ordering app for submit screen request](./media/machine-order-table-select.png)
+  ![Screenshot of Contoso Coffee Machine Ordering table selected](./media/machine-order-table-select.png)
 
 1. Select the Data tab and make sure you have at least one record in the table.
 
@@ -86,7 +86,7 @@ Now that you have verified that Contoso Coffee machine request can be successful
 
 1. Wait for the node to be created
 
-  ![Screenshot of Approvals Kit first stage with no node defined](./media/approvals-kit-first-stage-node-created.png)
+  ![Screenshot of Approvals Kit first stage with node created](./media/approvals-kit-first-stage-node-created.png)
 
 1. Select the Save button to save you workflow
 
@@ -100,11 +100,11 @@ Having created the definition of your workflow, the next step is to publish the 
 
 1. Verify that the workflow can be published and select **Publish**.
 
- ![Screenshot of Approvals Kit workflow process saved successfully](./media/approvals-kit-workflow-publish.png).
+ ![Screenshot of Approvals Kit workflow publish](./media/approvals-kit-workflow-publish.png).
 
 1. Wait for the workflow to be published. You can use the **Refresh** to update the publish status.
 
- ![Screenshot of Approvals Kit workflow process after successfull publish](./media/approvals-kit-workflow-published.png).
+ ![Screenshot of Approvals Kit workflow process after successful publish](./media/approvals-kit-workflow-published.png).
 
 ## Summary
 

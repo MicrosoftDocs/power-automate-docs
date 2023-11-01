@@ -40,7 +40,7 @@ The prior [Trigger approval module](./trigger-approval.md) provided tasks and st
 
 > NOTE: The [Define Application Data](../../configuring-preset-approvals.md?#define-application-data) of the Configuring preset approvals guide provides more information on each of the Data Types.
 
-  ![Screenshot of starting the Business Approvals Management process designer with single stage and node](./media/process-designer-set-variables.png)
+  ![Screenshot of starting the Business Approvals Management process designer with defining application data](./media/process-designer-set-variables.png)
 
 1. Select the **X** on the same horizontal lin as Set Variables heading to close the variables.
 

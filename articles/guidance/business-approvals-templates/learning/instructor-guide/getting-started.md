@@ -12,33 +12,33 @@ ms.reviewer: angieandrews
 
 # Getting Started
 
-To help remove the manual setup process which is time consuming and repetitive when you have a set of users to deliver the workshop to the Automation kit includes a set of automation scripts to help you setup isolated environments for each attendee. This approach is taken so that each learner is isolated from each other and does not get impacted by other learners. This instructor guide assumes that you will use one of the following methods to setup and run the automation scripts:
+To help remove the manual setup process that is time consuming and repetitive when you have a set of users to deliver the workshop to the Automation kit includes a set of automation scripts to help you set up isolated environments for each attendee. This approach is taken so that each learner is isolated from each other and doesn't get impacted by other learners. This instructor guide assumes that you use one of the following methods to set up and run the automation scripts:
 
 - **Local Install** - you have the ability to install the required components on your local environment.
 - **Docker Install** - You have the ability to run and build a docker image to install components for learners.
-- **Azure Cloud Virtual Machine** - You will use Azure Cloud Shell and Azure Virtual Machine to install setup components.
+- **Azure Cloud Virtual Machine** - Use Azure Cloud Shell and Azure Virtual Machine to install setup components.
 
-Given the installer components are based on cross platform tools including PowerShell, Azure CLI, Power Platform CLI and the .Net SDK you could make your choice from supported Windows, Mac OS or Linux based operating systems to install the required components.
+The installer components are based on cross platform tools. The required tools include PowerShell, Azure CLI, Power Platform CLI and the .NET SDK you could make your choice from supported Windows, macOS or Linux based operating systems.
 
 ## Local Install
 
-To perform a local install the following steps can be followed:
+Perform a local install using the following steps:
 
-1. Install .Net SDK 7.0 from [Download .NET](https://dotnet.microsoft.com/download)
+1. Install .NET SDK 7.0 from [Download .NET](https://dotnet.microsoft.com/download)
 
-1. Azure CLI is installed. One option using .Net is
+1. Azure CLI is installed. One option using .NET is
 
 ```pwsh
 dotnet tool install Microsoft.PowerApps.CLI.Tool
 ```
 
-1. PowerShell is installed one option using .Net is
+1. PowerShell is installed one option using .NET is
 
 ```pwsh
 dotnet tool install --global PowerShell
 ```
 
-1. Install SecureStore one option using .Net is
+1. Install SecureStore one option using .NET is
 
 ```pwsh
 dotnet tool install --global SecureStore.Client
@@ -50,7 +50,7 @@ dotnet tool install --global SecureStore.Client
 git clone https://www.github/microsoft/powercat-business-approvals-kit.git
 ```
 
-1. Build the .Net library and playwright on Windows
+1. Build the .NET library and playwright on Windows
 
 ```pwsh
 cd .\powercat-business-approvals-kit\Workshop\src\installer
@@ -66,13 +66,13 @@ dotnet build
 
 ## Docker Install
 
-A Docker setup is a way to run your application with a known set of tools in a contained environment. This ensures that your application runs consistently across different systems, without being affected by differences in the underlying infrastructure like operating system versions or library dependencies.
+A Docker setup is a way to run your application with a known set of tools in a contained environment. By using Docker, it ensures that your application runs consistently across different systems. For example, it helps provide isolation from underlying infrastructure like operating system or library versions.
 
-Using a Docker setup also means you don't need to install all the tools on your local computer, as everything is contained within the Docker container. This makes it easier to manage dependencies and avoid conflicts with other tools you may have installed.
+Using a Docker setup also means you don't need to install all the tools on your local computer, as everything is contained within the Docker container.
 
-Another benefit of a Docker setup is that you can run multiple installations at the same time, as each installation is isolated within its own container. This can improve efficiency and reduce the time needed to perform installations or updates.
+Another benefit of a Docker setup is that you can run multiple installations at the same time, as each installation is isolated within its own container. Multiple containers can improve efficiency and reduce the time needed to perform installations or updates.
 
-Overall, the Docker based install install is a helpful tool for developers and system administrators who need to manage complex software environments across multiple systems.
+Overall, the Docker based install is a helpful tool for developers and system administrators who need to manage complex software environments across multiple systems.
 
 ### Setup Steps
 
@@ -82,17 +82,17 @@ docker build . -t automation-kit-setup
 
 ## Azure Cloud Virtual Machine
 
-This approach includes a summary of how to use create a small Azure Linux based Virtual machine to assist you with the setup of development environments that wil be used by learners.
+One approach to allow you to create development environments for learners is to use a small Azure Linux based Virtual machine to assist you.
 
-### Why is this important?
+### Setting up for scale
 
-If you want to setup a class size of 20+ students each environment setup could take up to 20 minutes for each user environment. By using an Azure Cloud based Virtual Machine you could automate a set of machines without the need to have an active PC connected to the Internet.
+Setting up a class size of 20+ students each environment setup could take up to 20 minutes for each user environment. When using an Azure Cloud based Virtual Machine, you can automate a setup of machines without the need to have an active PC connected to the Internet.
 
 ### Installation Steps
 
-1. Inside the [Azure Portal](https://portal.azure.com) start a new bash based Azure Cloud Shell.
+1. Inside the [Azure portal](https://portal.azure.com), start a new bash based Azure Cloud Shell.
 
-> NOTE: If Azure Cloud Shell is new to you [Overview of Azure Cloud Shell](https://learn.microsoft.com/azure/cloud-shell/overview) an the [Quickstart](https://learn.microsoft.com/azure/cloud-shell/quickstart) could be useful starting points.
+> NOTE: If Azure Cloud Shell is new to you can use [Overview of Azure Cloud Shell](https://learn.microsoft.com/azure/cloud-shell/overview) an the [Quickstart](https://learn.microsoft.com/azure/cloud-shell/quickstart) as useful starting points.
 
 2. Use the following Bash script inside the Azure Cloud Shell to create a resource group, create and start a Virtual Machine (VM)
 
@@ -137,7 +137,7 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 1. Wait for your machine to start again and have a status of running.
 
-1. In the Azure Cloud Shell login to virtual machine using ssh
+1. In the Azure Cloud Shell sign in to virtual machine using ssh.
 
 ```bash
 vmName="ApprovalsKitSetupVM"
@@ -182,7 +182,7 @@ git clone https://www.github/microsoft/powercat-business-approvals-kit.git
 
 > NOTE: If git clone is not an option, you could download the repository as a zip file upload the zip file to your Cloud Shell. Then use ```scp -i ~/.ssh/azurevm-$vmName powercat-business-approvals-kit-main.zip "accadmin@$ip":/home/accadmin```
 
-1. Setup the installer app and install dependencies
+1. Set up the installer app and install dependencies
 
 > **NOTE:** Playwright is an open-source solution for automating web browsers. It is used by the installer to automate interactive tasks as a workshop user account. [Playwright documentation](https://playwright.dev/docs/intro) provides official documentation for Playwright. It provides a comprehensive guide to using the library, including installation instructions, API reference, and examples
 
@@ -227,4 +227,4 @@ SecureStore --version
 
 ## Summary
 
-In this section you have have the option of installing and verify that you have the tools required to use the automated setup scripts that can assist you with setup of a workshop.
+In this section, you have the option of installing and verify that you have the tools required to use the automated setup scripts that can assist you with setup of a workshop.

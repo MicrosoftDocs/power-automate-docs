@@ -12,9 +12,9 @@ ms.reviewer: angieandrews
 
 # Environment Validation
 
-In this section, you'll learn how to verify that the environments you've set up are working as expected and ready for your workshop learners.
+In this section, learn how to verify that the environments set up are working as expected and ready for your workshop learners.
 
-Setting up the necessary environments is a crucial part of preparing for any project. However, it's equally important to ensure that these environments are fully functional before moving forward. This section will guide you through the process of validating your environment, with a particular focus on confirming that your custom connector is registered and running as expected. Additionally, we'll cover how to verify that your Business Approval Management application is running smoothly, and that your workshop users are loaded and ready for monitoring. By the end of this section, you'll have the confidence to move forward with your workshop, knowing that your learner environments are fully functional and ready to go.
+Setting up the necessary environments is a crucial part of preparing for any project. However, it's equally important to ensure that these environments are fully functional before moving forward. This section guides you through the process of validating your environment, with a particular focus on confirming that your custom connector is registered and running as expected. Additionally, it covers how to verify that your Business Approval Management application is running smoothly, and that your workshop users are loaded and ready for monitoring. By the end of this section, have the confidence to move forward with your workshop, knowing that your learner environments are fully functional and ready to go.
 
 ## Learning Environments
 
@@ -24,7 +24,7 @@ Use the following command to validate that user environments are imported and ru
 Invoke-ValidateEnvironments users.txt
 ```
 
-The validation checks that will be performed:
+The validation checks that are performed:
 
 - Creator Kit installed
 
@@ -52,7 +52,7 @@ Use the Approvals Kit manager Data Flow to load a list of learners and configure
 
 ## Verifying Monitoring
 
-To verify that the dashboard to ready to provide feedback on learner progress perform the following checks.
+Verify the monitoring dashboard to ready to provide feedback on learner progress perform the following checks.
 
 1. The **Approvals Kit Manager** application can be started
 
@@ -64,10 +64,10 @@ To verify that the dashboard to ready to provide feedback on learner progress pe
 
    ![Screenshot of Approvals Kit checking environments for progess updates](./media/approvals-kit-manager-update.png)
 
-1. The **Workshop Users** page provides you the status of loaded Workshop users
+1. The **Workshop Users** page provides you with the status of loaded Workshop users
 
    ![Screenshot of Approvals Kit Manager Workshop users](./media/approvals-kit-manager-workshop-users.png)
 
 ## Summary
 
-By following these steps you should be ready and have verified that environments are ready and can be monitored as you run the workshop and after the workshop to track progress and completion rates.
+These steps should verify that the environments are ready and can be monitored as you run the workshop and after the workshop to track progress and completion rates.

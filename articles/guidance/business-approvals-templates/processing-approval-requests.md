@@ -18,7 +18,7 @@ Approvals Kit has the standard Approve and Decline and several other options to 
 
 ## Approving from Microsoft Teams
 
-You can directly respond to an approval request from Microsoft Teams. A notification is sent to you in Teams if you receive a request. You can also respond by checking the Teams Approvals app. For further information on how to process requests from Microsoft Teams, follow the steps in [Respond to an approval in Microsoft Teams](../../teams/respond-to-approvals-in-teams.md#approve-or-reject-an-request-in-teams)
+You can directly respond to an approval request from Microsoft Teams. A notification is sent to you in Teams if you receive a request. You can also respond by checking the Teams Approvals app. For further information on how to process requests from Microsoft Teams, follow the steps in [Respond to an approval in Microsoft Teams](../../teams/respond-to-approvals-in-teams.md#approve-or-reject-a-request-in-teams)
 
 ![Teams Approval request screenshot](media/teams-approval.png)
 

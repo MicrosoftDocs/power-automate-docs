@@ -63,7 +63,7 @@ In your created solution perform these steps:
 
 1. Select **New** > **Automation** > **Cloud flow** > **Automated**
 
-> For more guidance on create a Cloud flow with solutions you can reference [Create a cloud flow in a solution](/create-flow-solution).
+> For more guidance on create a Cloud flow with solutions you can reference [Create a cloud flow in a solution](../../../../create-flow-solution.md).
 
 1. Enter Flow name of **Machine request**
 
@@ -77,9 +77,9 @@ In your created solution perform these steps:
 
 1. Select Table name of **Machine Orders**.
 
-1. Select the scope of the change. For example **Organization** read more on [Scope](/dataverse/create-update-delete-trigger#scope)
+1. Select the scope of the change. For example **Organization** read more on [Scope](../../../../dataverse/create-update-delete-trigger.md#scope)
 
-> NOTE: For more information on Dataverse trigger parameters you can reference [Trigger flows when a row is added, modified, or deleted](/dataverse/create-update-delete-trigger)
+> NOTE: For more information on Dataverse trigger parameters you can reference [Trigger flows when a row is added, modified, or deleted](../../../../dataverse/create-update-delete-trigger.md)
 
   > [!div class="mx-imgBorder"]
   ![Screenshot of Power Automate Dataverse trigger when Machine Order is Added](./media/power-automate-cloud-flow-dataverse-trigger.png)
@@ -90,7 +90,6 @@ In your created solution perform these steps:
 
 1. Select **Start business approval process** action.
 
-  > [!div class="mx-imgBorder"]
   ![Screenshot of adding Approvals kit start business approvals process inside Power Automate Cloud Flow](./media/power-automate-approvals-kit-custom-connector.png)
 
 1. Select **Sign in** if prompted and select your account.
@@ -101,8 +100,7 @@ In your created solution perform these steps:
 
 1. Select the **Machine Requests (v1)** workflow process that you published in the [First Approval](./first-approval.md) module.
 
-  > [!div class="mx-imgBorder"]
-  ![Screenshot of adding Approvals kit start business approvals process inside Power Automate Cloud Flow](./media/power-automate-approvals-kit-connector-select-workflow.png)
+  ![Screenshot of adding Approvals kit connector with a selected workflow](./media/power-automate-approvals-kit-connector-select-workflow.png)
 
 1. Select **Save**.
 
@@ -114,28 +112,24 @@ Now that a cloud flow trigger has been defined for the **Machine Order** table, 
 
 1. Select **Apps** and select the **Machine Ordering App**
 
-  > [!div class="mx-imgBorder"]
   ![Screenshot of starting the Contoso Coffee Machine Ordering app](./media/machine-ordering-app-play.png)
 
 1. If prompted select Allow for the Office 365 users connector.
 
-  > [!div class="mx-imgBorder"]
   ![Screenshot of Power Platform Office 365 USers connection consent dialog](./media/office-365-users-connection-allow.png)
 
 1. Select a few machines and click **Compare**.
 
-  > [!div class="mx-imgBorder"]
  ![Screenshot of Contoso Coffee Machine Ordering app with multiple machines selected](./media/contoso-coffee-select-machines.png)
 
 1. Select one of the machines and select **Submit**
 
-  > [!div class="mx-imgBorder"]
  ![Screenshot of Contoso Coffee Machine Ordering app for submit screen request](./media/contoso-coffee-submit-request.png)
 
 1. Select OK to close the submitted Machine Request
 
   > [!div class="mx-imgBorder"]
-  ![Screenshot of Contoso Coffee Machine Ordering app for submit screen request](./media/contoso-coffee-submitted-request.png)
+  ![Screenshot of Contoso Coffee Machine Ordering app for submitted request](./media/contoso-coffee-submitted-request.png)
 
 1. Close the application.
 
@@ -143,7 +137,7 @@ Now that a cloud flow trigger has been defined for the **Machine Order** table, 
 
 After submitting the Machine request, the cloud flow is triggered and will begin your defined business approval process. Use these steps to approve the request in the Power Automate portal.
 
-> NOTE: This workshop guide performs in the Approval inside the Power Automate portal. If the user is configured with an Office 365 license, the the approval will also be available via Outlook or in [Microsoft Teams](/teams/native-approvals-in-teams).
+> NOTE: This workshop guide performs in the Approval inside the Power Automate portal. If the user is configured with an Office 365 license, the the approval will also be available via Outlook or in [Microsoft Teams](../../../../teams/native-approvals-in-teams.md).
 
 1. Open the [Power Automate portal](https://make.powerautomate.com)
 
@@ -161,7 +155,7 @@ After submitting the Machine request, the cloud flow is triggered and will begin
 
 1. Select **Confirm** to approve the approval.
 
-  ![Screenshot of selecting an Approval in the Power Automate portal](./media/power-automate-approvals-approve-confirm.png)
+  ![Screenshot of selecting an Approval in the Power Automate portal approval confirm](./media/power-automate-approvals-approve-confirm.png)
 
 1. Select **Done** to close the Approval once confirmed.
 

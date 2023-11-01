@@ -126,7 +126,7 @@ In new environments, the Power Automate Approvals feature is configured on-deman
 
 1. Set Assigned to as **User email** from the list of Dynamic content available
 
-   ![Screenshot of start and wait for an approval](./media/start-and-wait-for-an-approval-assigned-to.png)
+   ![Screenshot of start and wait for an approval assigned to email](./media/start-and-wait-for-an-approval-assigned-to.png)
 
 1. Select **Save**. It may prompt you with a warning *No Microsoft Dataverse database for this environment has been provisioned*. The  warning is normal and is the exact reason why you're running these prerequisite steps
 
@@ -205,7 +205,7 @@ Follow the steps below to perform the app registration
 
 1. Choose **Delegated permission** and select user_impersonation. Click **Add Permissions**.
 
-![App Registration adding API permissions for Dynamics CRM](./media/app-registration-dynamics-crm-delegated-permissions.png)
+![App Registration adding API permissions for Dynamics CRM with delegated user_impersonation](./media/app-registration-dynamics-crm-delegated-permissions.png)
 
 1. Create Secret by moving to **Certificates and Secrets** section and click **New client secret**.
 
