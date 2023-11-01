@@ -34,13 +34,13 @@ Before you start this module, ensure that you have the following in a Power Plat
 
 - A current version of the Approvals Kit is installed and configured
 
-- You have an assign role of [Environment Maker](https://learn.microsoft.com/power-platform/admin/database-security#environments-with-a-dataverse-database) so that you can add a new Business Approvals Cloud flow to integrate with Contoso Coffee.
+- You have an assign role of [Environment Maker](/power-platform/admin/database-security#environments-with-a-dataverse-database) so that you can add a new Business Approvals Cloud flow to integrate with Contoso Coffee.
 
 ## Missing Prerequisites?
 
 Are you missing prerequisites for this workshop, the following links could be useful to assist you getting ready:
 
-1. Create or request access to a shared development environment. When you don't have access to a shared development environment, consider [Creating a developer environment with the Power Apps Developer Plan](https://learn.microsoft.com/power-platform/developer/create-developer-environment)
+1. Create or request access to a shared development environment. When you don't have access to a shared development environment, consider [Creating a developer environment with the Power Apps Developer Plan](/power-platform/developer/create-developer-environment)
 
 1. Review the [Import Contoso Coffee](./import-contoso-coffee.md) workshop guide.
 
