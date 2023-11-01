@@ -26,20 +26,21 @@ Review the table to compare relative advantages and disadvantages for each of da
 
 |                                   |Power Apps canvas app trigger|Dataverse|SharePoint lists|
 |-----------------------------------|-----------------------------|---------|----------------|
-|Creating a form                    |Need to create your own form and parts|Can use existing apps created that records data to Dataverse|Can use out of the box forms|
-|Using attachments                  |Can't use attachments directly with canvas app trigger. Consider using a separate Data source trigger instead|Can use out of the box attachment|Can use out of the box attachment
+|Create a form                    |Need to create your own form and parts|Can use existing apps created that records data to Dataverse|Can use out of the box forms|
+|Use attachments                  |Can't use attachments directly with canvas app trigger. Consider using a separate Data source trigger instead|Can use out of the box attachment|Can use out of the box attachment
 |Granularity of data access control |App level control|Row/record level control|Site/list level control
 |Power Automate [request limits](/power-platform/admin/api-request-limits-allocations#request-limits-based-on-user-licenses)|Request limit is spread across each user as Power Apps canvas app trigger runs on the context of the user using the canvas app.|Spread across each user submitting  as “Run as” can be defined explicitly in the trigger.|Request limits all count towards the user creating the cloud flow for the request triggering flow you create. In a large organization or organizations with many approval requests, this limit can easily be reached.
 
-> *Note: Approvals Kit has been created in such way that all flows contained inside the template will be run on the context of the approval requestor to minimize the impact of Power Automate request limits. If you are facing request limits, make sure you have reviewed how you have set up your cloud flow. Details of the limits for each of type of license can be found in [requests limits and allocations](/power-platform/admin/api-request-limits-allocations#request-limits-based-on-user-licenses).*
+> [!NOTE]
+> Approvals Kit has been created in such way that all flows contained inside the template will be run on the context of the approval requestor to minimize the impact of Power Automate request limits. If you are facing request limits, make sure you have reviewed how you have set up your cloud flow. Details of the limits for each of type of license can be found in [requests limits and allocations](/power-platform/admin/api-request-limits-allocations#request-limits-based-on-user-licenses).*
 
-### Triggering approvals from Microsoft Dataverse
+### Trigger approvals from Microsoft Dataverse
 
-Approvals Kit can be used with your existing Power Apps applications by
+The Approvals Kit can be used with your existing Power Apps applications by
 setting up a Power Automate cloud flow that triggers from Microsoft
 Dataverse.
 
-To set up the triggering approvals, follow these steps:
+To set up the trigger approvals, follow these steps:
 
 1. Go to [Power Automate](https://flow.microsoft.com) website
 
@@ -79,4 +80,4 @@ To set up the triggering approvals, follow these steps:
 
 1. Select **Save**
 
-Completing these steps should complete your set-up of advanced approval flows triggering from Microsoft Dataverse.
+These steps should complete your setup of advanced approval flows triggering from Microsoft Dataverse.
