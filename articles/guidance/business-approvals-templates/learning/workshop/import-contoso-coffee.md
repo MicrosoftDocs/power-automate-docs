@@ -73,13 +73,13 @@ In this module, you stepped through the process of manually importing the Contos
 
 ## Troubleshooting
 
-This module assumed that you have the ability to create a new Developer environment is one hasn't been assigned to you. Organizations can [Control environment creation](https://learn.microsoft.com/power-platform/admin/control-environment-creation). If you're unable to create a new environment you need to request a development environment.
+This module assumed that you have the ability to create a new Developer environment is one hasn't been assigned to you. Organizations can [Control environment creation](/power-platform/admin/control-environment-creation). If you're unable to create a new environment you need to request a development environment.
 
-To import the Contoso Coffee solution, you need a role of [Environment Maker](https://learn.microsoft.com/power-platform/admin/database-security#environments-with-a-dataverse-database) assigned in the environment.
+To import the Contoso Coffee solution, you need a role of [Environment Maker](/power-platform/admin/database-security#environments-with-a-dataverse-database) assigned in the environment.
 
-To use the Contoso Coffee solution the following connectors must be enabled in the [Data Loss Prevention Policy](https://learn.microsoft.com/power-platform/admin/prevent-data-loss) applied to your environment.
+To use the Contoso Coffee solution the following connectors must be enabled in the [Data Loss Prevention Policy](/power-platform/admin/prevent-data-loss) applied to your environment.
 
 |Connector| Description |
 |---------|-------------|
-|[Microsoft Dataverse](https://learn.microsoft.com/connectors/commondataserviceforapps/)| Load and save Machine requests |
-|[Office 365 Users](https://learn.microsoft.com/connectors/office365users/) | Used to   perform various actions such as get your user profile |
+|[Microsoft Dataverse](/connectors/commondataserviceforapps/)| Load and save Machine requests |
+|[Office 365 Users](/connectors/office365users/) | Used to   perform various actions such as get your user profile |
