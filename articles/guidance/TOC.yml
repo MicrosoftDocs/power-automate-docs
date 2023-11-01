@@ -188,11 +188,11 @@
           href: ./business-approvals-templates/approvals-kit-comparison.md
         - name: Setup
           href: ./business-approvals-templates/setup.md
-        - name: Configuring preset approvals
+        - name: Configure preset approvals
           href: ./business-approvals-templates/configuring-preset-approvals.md
-        - name: Setting up Out of Office and delegation
+        - name: Set up out of office and delegation
           href: ./business-approvals-templates/setup-out-of-office-and-delegation.md
-        - name: Processing approval requests
+        - name: Process approval requests
           href: ./business-approvals-templates/processing-approval-requests.md
         - name: Limitations
           href: ./business-approvals-templates/limitations.md
@@ -214,7 +214,7 @@
                   href: ./business-approvals-templates/learning/workshop/overview.md              
                 - name: Introduction
                   href: ./business-approvals-templates/learning/workshop/introduction.md
-                - name: Working with Contoso Coffee
+                - name: Work with Contoso Coffee
                   href: ./business-approvals-templates/learning/workshop/contoso-coffee-scenario.md
                 - name: Import Contoso Coffee solution
                   href: ./business-approvals-templates/learning/workshop/import-contoso-coffee.md
