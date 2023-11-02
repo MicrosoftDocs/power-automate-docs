@@ -196,6 +196,7 @@ For those customers who implement network restrictions, ensure access to the fol
 * .azure.net
 * .crm9.dynamics.com
 * .powerautomate.us
+* gov.api.flow.microsoft.us
 
 Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Dataverse instances that users and administrators may create within your Tenant. 
 
@@ -211,6 +212,7 @@ Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id
 * *.high.dynamics365portals.us (GCC High)
 * *.crm.appsplatform.us (DoD)
 * *.appsplatformportals.us (DoD)
+* high.api.flow.microsoft.us
 
 Also, refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable you to access other Dataverse environments that users and administrators may create within your tenant and other Azure services that the platform leverages, including:
 
