@@ -1,6 +1,6 @@
 ---
 title: Create an approval from the approvals app | Microsoft Docs
-description: Learn how to create an approval from a chat or channel.
+description: Learn how to create an approval from the approvals app in Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -9,7 +9,7 @@ contributors:
   - kewaiss
   - v-aangie
 ms.subservice: teams
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2020
