@@ -40,7 +40,7 @@ You need a Power Platform environment in the following regions to use Copilot in
 | Sovereign clouds and personal Microsoft account (MSA) users | There's no access for MSA users or Sovereign cloud users to copilot features. You need to use an organization ID and in a non-Sovereign cloud region. |
 
 > [!NOTE]
-> If your environment is in the region listed above and you still don’t see the Copilot in cloud flows experience, contact your admin. Ask if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
+> If your environment is in the region previously listed and you still don’t see the Copilot in cloud flows experience, contact your admin. Ask if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
 
 ## Create a flow using the cloud flows designer with Copilot
 
@@ -151,7 +151,7 @@ You can’t edit flows in the cloud flows designer with the copilot experience i
     > If there's Peek code on an action and if you see the `methods` parameter, it's a non-Open API flow.
 
 - A flow with a comment.
-- A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers which won't be supported are: For a selected message (v2 Teams), Teams On Compose Message (teams), Teams card trigger, and Microsoft 365 Compliance Connector.
+- A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers, which won't be supported are: For a selected message (v2 Teams), Teams On Compose Message (teams), Teams card trigger, and Microsoft 365 Compliance Connector.
 - A flow contains a Power Apps V1 trigger.
 - A flow contains a Power Pages component.
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
