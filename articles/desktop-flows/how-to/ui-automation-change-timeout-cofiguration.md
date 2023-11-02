@@ -9,6 +9,7 @@ ms.date: 11/02/2023
 ms.author: NikosMoutzourakis
 ms.reviewer: NikosMoutzourakis
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -17,7 +18,7 @@ search.audienceType:
   - enduser
 ---
 
-# UI Automation Configuration
+# Timeout configuration for UI/browser automation
 
 Power Automate for Desktop provides various components, including the Designer, Recorder, Power Automate agent for virtual desktops, and actions from UI automation and Browser automation groups. However, in some cases, these components may fail due to time-out constraints. To overcome this issue, users can now adjust the time-out settings for distinct desktop and web automation scenarios. By modifying a configuration file and adding the appropriate key/value pairs for the desired scenarios, users can customize the time-out duration for specific operations based on the specified configuration value.
 

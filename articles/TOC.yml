@@ -606,6 +606,8 @@
       href: ./desktop-flows/how-to/passing-datatable.md
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
+    - name: Timeout configuration for UI/browser automation
+      href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
   - name: ALM for desktop flows
     items:
     - name: Overview for configuring ALM for desktop flows
