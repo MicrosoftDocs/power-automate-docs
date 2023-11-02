@@ -5,22 +5,19 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
+contributors:
+  - kewaiss
+  - v-aangie
 ms.subservice: teams
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2020
-ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.author: kewaiss
+ms.reviewer: angieandrews
 ---
 
 # Approvals in Microsoft Teams
-
-[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
 
 Approvals in Microsoft Teams is a native Teams application that lets you easily create, manage, and share approvals from your hub for teamwork.
 

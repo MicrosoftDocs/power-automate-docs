@@ -1,21 +1,22 @@
 ---
 title: Manage flows in Microsoft Teams
-description: Learn how to manage flows using Workflows in Microsoft Teams
+description: Learn how to manage flows using the Workflows app in Microsoft Teams
 suite: flow
 author: msftman
+contributors:
+  - kewaiss
+  - v-aangie
 ms.collection: get-started
 ms.subservice: teams
 ms.topic: conceptual
 ms.date: 10/27/2023
-ms.author: hamenon
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ---
 
 # Manage flows in Microsoft Teams
 
 The **Home** tab provides an overview of your flows from your organization's default environment.
-
-[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
 
 By default, the **Home** tab is filtered to display flows that use Microsoft Teams triggers and actions. You can select **Microsoft Teams flows** to change the filter to display all your flows.
 
@@ -37,9 +38,9 @@ Column | Description
 
 :::image type="content" source="media/teams-app-home/details.png" alt-text="Screenshot of details for the selected flow.":::
 
-## Known issues
+## Known issue
 
-Workflows in Microsoft Teams shows your flows that are located only in your organization's default environment.
+the Workflows app in Microsoft Teams shows your flows that are located only in your organization's default environment.
 
 ### See also
 

@@ -1,10 +1,13 @@
 ---
 title: Create flows in Microsoft Teams
-description: Learn how to create flows using Workflows in Microsoft Teams
+description: Learn how to create flows using the Workflows app in Microsoft Teams
 services: ''
 suite: flow
 documentationcenter: na
 author: msftman
+contributors:
+  - kewaiss
+  - v-aangie
 ms.subservice: teams
 ms.topic: conceptual
 ms.date: 10/27/2023
@@ -18,15 +21,13 @@ There are multiple ways in which you can create flows within Microsoft Teams.
 
 - **Power Automate flow templates**: The Microsoft Teams store has templates directly integrated, making it easy for you to get flow templates to get started quickly.
 - **Team overflow messages**: You can create flows from the overflow menu of Teams message.
-- **Workflows**: You can use [Workflows](./install-teams-app.md) to create flows from a template or from scratch.
+- **Workflows**: You can use [the Workflows app](./install-teams-app.md) to create flows from a template or from scratch.
 
-You can manage all flows you create from any of these entry points directly within Power Automate or from within [Workflows](./install-teams-app.md) in Teams.
-
-[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
+You can manage all flows you create from any of these entry points directly within Power Automate or from within [the Workflows app](./install-teams-app.md) in Teams.
 
 ## Prerequisites
 
-To use Workflows, you need an account with access to [Microsoft Teams](https://teams.microsoft.com).
+To use the Workflows app, you need an account with access to [Microsoft Teams](https://teams.microsoft.com).
 
 ## Create a cloud flow from the Microsoft Teams store
 
@@ -48,7 +49,7 @@ Follow these steps to create a flow from the Microsoft Teams store.
     A confirmation page that states that your flow was created successfully appears.
 
 1. To complete flow creation, select **Done**.
-1. You can manage your flows from Workflows in Teams or in Power Automate. To open Workflows in Teams to manage your flows, select **Manage workflows** in the **Save time with Workflows** section.
+1. You can manage your flows from the Workflows app in Teams or in Power Automate. To open the Workflows app in Teams to manage your flows, select **Manage workflows** in the **Save time with Workflows** section.
 
     :::image type="content" source="media/teams-app-create/save-time.png" alt-text="Screenshot of the 'Save time with Workflows' section.":::
 
@@ -71,9 +72,9 @@ Follow these steps to create a manually triggered flow from the Microsoft Teams 
 
     :::image type="content" source="media/teams-app-create/create-new-action.png" alt-text="Screenshot of a confirmation message that says 'Worflow added successfully'.":::
 
-## Create a cloud flow from a template in Workflows
+## Create a cloud flow from a template in the Workflows app
 
-By default, Workflows shows you templates that have been created for Microsoft Teams. You can switch filters on the top right to view all Power Automate templates.
+By default, the Workflows app shows you templates that have been created for Microsoft Teams. You can switch filters on the top right to view all Power Automate templates.
 
 Follow these steps to create a cloud flow from a Microsoft Teams template.
 
@@ -96,22 +97,22 @@ Follow these steps to create a cloud flow from a Microsoft Teams template.
 1. You're all set! You'll get a confirmation that your flow was successfully created. After you create your flow, you can find it on the **Home** tab.
 
     > [!IMPORTANT]
-    > When you create flows from within Workflows in Microsoft Teams, they're always created in your organization's default environment. You can also access these flows from [Power Automate](https://make.powerautomate.com).
+    > When you create flows from within the Workflows app in Microsoft Teams, they're always created in your organization's default environment. You can also access these flows from [Power Automate](https://make.powerautomate.com).
 
 ## Create a cloud flow from scratch
 
 If you want full control over the flow that you create, select **Create a flow** from the top right side of the screen, instead of using a template.
 
-:::image type="content" source="media/teams-app-create/create-a-flow.png" alt-text="Screenshot of the 'Create a flow' button in Workflows.":::
+:::image type="content" source="media/teams-app-create/create-a-flow.png" alt-text="Screenshot of the 'Create a flow' button in the Workflows app.":::
 
 This opens the full Power Automate designer experience within Microsoft Teams where you can [create a fully customized flow](../get-started-logic-flow.md).
 
-:::image type="content" source="media/teams-app-create/designer.png" alt-text="Screenshot of the 'Create' tab in Workflows.":::
+:::image type="content" source="media/teams-app-create/designer.png" alt-text="Screenshot of the 'Create' tab in the Workflows app.":::
 
 ## Known issues
 
-- All flows that you create from within Workflows are located in your organization's default environment.
-- Workflows must be enabled in the [Microsoft Teams admin center](https://admin.teams.microsoft.com/policies/manage-apps) in order for this functionality to work.
+- All flows that you create from within the Workflows app are located in your organization's default environment.
+- the Workflows app must be enabled in the [Microsoft Teams admin center](https://admin.teams.microsoft.com/policies/manage-apps) in order for this functionality to work.
 
 ### See also
 
