@@ -67,7 +67,7 @@ Let's look at an example:
 
 ## A look behind the scenes
 
-The Copilot uses the [Azure Open AI](/azure/ai-services/openai/overview) service to translate natural language into valid Dataverse fetchXml queries. It then executes these queries against the Dataverse backend to retrieve matching data, all while taking into account the current user's security context. Initially, these queries are focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but we'll extend these to many more areas of the automation suite. The Copilot also determines the most suitable output visualization (table, pie, bar or line chart) to be returned to the user. [Learn more](/articles/faqs-copilot-automation-activity.md)
+The Copilot uses the [Azure Open AI](/azure/ai-services/openai/overview) service to translate natural language into valid Dataverse fetchXml queries. It then executes these queries against the Dataverse backend to retrieve matching data, all while taking into account the current user's security context. Initially, these queries are focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but we'll extend these to many more areas of the automation suite. The Copilot also determines the most suitable output visualization (table, pie, bar or line chart) to be returned to the user. [Learn more](./faqs-copilot-automation-activity.md)
 
 ## Before You Start  
 
