@@ -32,7 +32,13 @@ Copilot can be used for basic questions like *"How many flows failed yesterday?"
 > [!NOTE]
 > In the context of AI, a **multi-turn** prompt means you're having an ongoing conversation with the AI, where the AI remembers the context of the previous messages in the conversation. It's not just answering one-off questions, it's engaging in a dialogue with you, where each response is based on what's been said before.
 
-Let's look at an example:
+## Prerequisites
+
+- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
+- During the initial preview, you need to have an environment in United States region in order to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform Admin Center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
+- Check [**known limitations**](#known-issues-and-limitations) for more information.
+
+### Copilot example
 
 - **User:** Show me a distribution of successful vs failed flows during last quarter
 - **Copilot:**
@@ -55,19 +61,9 @@ Let's look at an example:
 
 Read the [responsible AI FAQs for Copilot in desktop flow activity](./faqs-copilot-automation-activity.md) to learn more about this new Copilot experience.
 
-## A look behind the scenes
+### A look behind the scenes
 
 The Copilot uses the [Azure Open AI](/azure/ai-services/openai/overview) service to translate natural language into valid Dataverse fetchXml queries. It then executes these queries against the Dataverse backend to retrieve matching data, all while taking into account the current user's security context. Initially, these queries are focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but we'll extend these to many more areas of the automation suite. The Copilot also determines the most suitable output visualization (table, pie, bar or line chart) to be returned to the user. [Learn more](./faqs-copilot-automation-activity.md)
-
-## Prerequisites
-
-- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
-- Check [**known limitations**](#known-issues-and-limitations) for more information.
-
-  > [!NOTE]
-  >
-  > - During the initial preview, you need to have an environment in United States region in order to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform Admin Center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
-  > - While the initial release focuses on desktop flow specific activities, we continually extended its reach to other Power Automate product areas as well.
 
 ## What are fetchXml queries?
 
