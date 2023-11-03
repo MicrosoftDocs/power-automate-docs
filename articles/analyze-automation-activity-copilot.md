@@ -21,13 +21,13 @@ search.audienceType:
 
 Understanding automation performance is key to achieving your operational excellence and reliability goals, regardless of the size of your automation landscape, team or your role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
-To further support you on this journey, we're providing industry-leading new **generative AI Copilot capabilities** available (initially) under [Desktop flow activity](/articles/desktop-flows/desktop-flow-activity.md) that will allow you to ask the Copilot automation-specific questions using natural language and get the dynamic insights you're looking for.
+To further support you on this journey, we're providing industry-leading new **generative AI Copilot capabilities** available (initially) under [Desktop flow activity](./desktop-flows/desktop-flow-activity.md) that will allow you to ask the Copilot automation-specific questions using natural language and get the dynamic insights you're looking for.
 
   > [!IMPORTANT]
   >
   > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
   > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
-  > - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [Responsible AI FAQ for Copilot in desktop flow activity](faqs-copilot-automation-activity.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+  > - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [Responsible AI FAQ for Copilot in desktop flow activity](./faqs-copilot-automation-activity.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisites
 
