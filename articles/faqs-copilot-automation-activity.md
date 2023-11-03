@@ -10,7 +10,7 @@ ms.author: appapaio
 ms.reviewer: 
 ---
 
-# FAQ for Copilot in desktop flow activity
+# FAQ for Copilot in desktop flow activity (preview)
 
 Copilot in desktop flow activity enables administrators, CoE teams, business users, and makers to easily retrieve information about past flow runs by asking questions in natural language. For example, users can ask about the number of flows that ran yesterday, which machine has run the most flows, or how many flows are currently queued. In response, the copilot generates outputs that provide insights and answers to the questions asked.
 
@@ -40,7 +40,7 @@ Effective and responsible use of copilot in desktop flow activity can be achieve
 
 ## See also
 
-- [Get started with Copilot in desktop flow activity](analyze-automation-activity-copilot.md)
+- [Get started with Copilot in desktop flow activity (preview)](analyze-automation-activity-copilot.md#get-started-with-copilot-in-desktop-flow-activity-preview)
 - [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)

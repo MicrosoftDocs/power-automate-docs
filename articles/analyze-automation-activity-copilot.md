@@ -13,32 +13,17 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Analyze desktop flow activity with Copilot (preview)
+# Analyze automation activity with Copilot (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
+> [!IMPORTANT]
 > [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 Understanding automation performance is key to achieving your operational excellence and reliability goals, regardless of the size of your automation landscape, team or your role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
 To further support you on this journey, we're providing industry-leading new **generative AI Copilot capabilities** available (initially) under [Desktop flow activity](./desktop-flows/desktop-flow-activity.md) that will allow you to ask the Copilot automation-specific questions using natural language and get the dynamic insights you're looking for.
 
-  > [!IMPORTANT]
-  >
-  > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
-  > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
-  > - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [Responsible AI FAQ for Copilot in desktop flow activity](./faqs-copilot-automation-activity.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
-
-## Prerequisites
-
-- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
-- Check [**known limitations**](#known-issues-and-limitations) for more information.
-
-  > [!NOTE]
-  >
-  > - During the initial preview, you need to have an environment in United States region in order to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform Admin Center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
-  > - While the initial release focuses on desktop flow specific activities, we continually extended its reach to other Power Automate product areas as well.
-  
 ## Get started with Copilot in desktop flow activity (preview)
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-overview.png" alt-text="Screenshot of a Copilot experience as part of desktop flow activity page." lightbox="media/analyze-automation-activity-copilot/copilot-overview.png":::
@@ -62,8 +47,11 @@ Let's look at an example:
 - **Copilot:**
     :::image type="content" source="media/analyze-automation-activity-copilot/copilot-multi-turn-4.png" alt-text="Screenshot of a Copilot responding with the average run duration of the flows that succeeded during the last quarter." lightbox="media/analyze-automation-activity-copilot/copilot-multi-turn-4.png":::
 
-> [!NOTE]
-> In this initial release, Copilot will only keep context of the last 5 questions you've asked.
+  > [!IMPORTANT]
+  >
+  > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
+  > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
+  > - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [Responsible AI FAQ for Copilot in desktop flow activity](./faqs-copilot-automation-activity.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 Read the [responsible AI FAQs for Copilot in desktop flow activity](./faqs-copilot-automation-activity.md) to learn more about this new Copilot experience.
 
@@ -71,9 +59,15 @@ Read the [responsible AI FAQs for Copilot in desktop flow activity](./faqs-copil
 
 The Copilot uses the [Azure Open AI](/azure/ai-services/openai/overview) service to translate natural language into valid Dataverse fetchXml queries. It then executes these queries against the Dataverse backend to retrieve matching data, all while taking into account the current user's security context. Initially, these queries are focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but we'll extend these to many more areas of the automation suite. The Copilot also determines the most suitable output visualization (table, pie, bar or line chart) to be returned to the user. [Learn more](./faqs-copilot-automation-activity.md)
 
-## Before You Start  
+## Prerequisites
 
-Ensure that you're in the same environment that was used by Copilot to generate the fetchXML query and that you have necessary privileges to create new Power Automate cloud flows in this environment.
+- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
+- Check [**known limitations**](#known-issues-and-limitations) for more information.
+
+  > [!NOTE]
+  >
+  > - During the initial preview, you need to have an environment in United States region in order to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform Admin Center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
+  > - While the initial release focuses on desktop flow specific activities, we continually extended its reach to other Power Automate product areas as well.
 
 ## What are fetchXml queries?
 

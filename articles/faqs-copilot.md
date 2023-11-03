@@ -59,7 +59,7 @@ If you're using the new designer, all changes done by Copilot should be reviewed
 ## See also
 
 - [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
-- [Get started with Copilot in desktop flow activity (preview)](analyze-automation-activity-copilot.md)
+- [Get started with Copilot in desktop flow activity (preview)](analyze-automation-activity-copilot.md#get-started-with-copilot-in-desktop-flow-activity-preview)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]
