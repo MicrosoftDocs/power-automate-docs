@@ -22,7 +22,7 @@ ms.reviewer: angieandrews
 The Workflows app lets you automate your Microsoft Teams activities or and connect Microsoft Teams to other apps and services.
 
 > [!NOTE]
-> The Power Automate app in Teams is now called the Workflows app. If you still see the Power Automate app, you might need to update the app manually to get the latest changes. To learn how to do this, go to [Update an app in Microsoft Teams](https://support.microsoft.com/office/update-an-app-in-microsoft-teams-3d53d136-5c5d-4dfa-9602-01e6fdd8015b).
+> The Power Automate app in Teams is now called Workflows. If you still see the Power Automate app, you might need to update the app manually to get the latest changes. To learn how to do this, go to [Update an app in Microsoft Teams](https://support.microsoft.com/office/update-an-app-in-microsoft-teams-3d53d136-5c5d-4dfa-9602-01e6fdd8015b).
 
 1. Sign in to [Microsoft Teams](https://teams.microsoft.com).
 1. Select **View more apps** (**...**), and then search for the **workflows** app.

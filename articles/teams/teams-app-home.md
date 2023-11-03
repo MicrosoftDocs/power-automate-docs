@@ -40,7 +40,7 @@ Column | Description
 
 ## Known issue
 
-the Workflows app in Microsoft Teams shows your flows that are located only in your organization's default environment.
+The Workflows app in Microsoft Teams shows your flows that are located only in your organization's default environment.
 
 ### See also
 
