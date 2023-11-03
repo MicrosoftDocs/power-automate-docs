@@ -18,10 +18,10 @@ search.audienceType:
   - enduser
 ---
 
-> [!IMPORTANT] 
-> Azure is retiring [Azure Cognitive Services Text Analytics v2.x on 29 February 2024](https://azure.microsoft.com/en-us/updates/we-are-retiring-azure-cognitive-services-text-analytics-v2x-on-29-february-2024/). This library is in use by the **Microsoft cognitive Text analytics actions**, meaning that after the 29 of February 2024 those actions will no longer be supported in desktop flows and will not be operational.
-
 # Microsoft cognitive actions
+
+> [!IMPORTANT] 
+> Azure is retiring [Azure Cognitive Services Text Analytics v2.x on 29 February 2024](https://azure.microsoft.com/updates/we-are-retiring-azure-cognitive-services-text-analytics-v2x-on-29-february-2024/). This library is in use by the **Microsoft cognitive Text analytics actions**, meaning that after the 29 of February 2024 those actions will no longer be supported in desktop flows and will not be operational.
 
 Microsoft cognitive services enable you to accelerate decision-making using artificial intelligence without requiring machine learning expertise.
 
