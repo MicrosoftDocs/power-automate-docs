@@ -23,11 +23,11 @@ search.audienceType:
 
 Understanding automation performance is key to achieving operational excellence and reliability goals, regardless of the size of your automation landscape, team or your role within the organization. Reaching those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
-The latest advancements in **AI** provide us with tremendous opportunities to explore new automation health monitoring use-cases that could include anything from simple data exploration, anomaly detection to intelligent recommendations and even self-healing bots. With the **Copilot in [desktop flow activity](./desktop-flows/desktop-flow-activity.md) (preview)** we're making the first step towards this new direction, allowing you to ask the Copilot desktop flow activity-specific questions using natural language.
-
 ## Get started with Copilot in desktop flow activity (preview)
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-overview.png" alt-text="Screenshot of a Copilot experience as part of desktop flow activity page." lightbox="media/analyze-automation-activity-copilot/copilot-overview.png":::
+
+The latest advancements in **AI** provide us with tremendous opportunities to explore new automation health monitoring use-cases, that could potentially include anything from simple data exploration to anomaly detection, smart recommendations and even self-healing bots. With the new Copilot in desktop flow activity (preview) we're making the first step towards this new direction, allowing you to democratize access to insights by simply asking the Copilot desktop flow activity-specific questions using natural language.
 
 The Copilot can be used for basic ad-hoc activity questions like *"How many flows failed yesterday?"* or engage in a more conversation-like (*multi-turn*) experience where the Copilot maintains context of the previous conversation, allowing you to ask follow-up questions.
 
