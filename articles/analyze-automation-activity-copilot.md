@@ -17,10 +17,9 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-> [!IMPORTANT]
 > [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-Understanding automation performance is key to achieving your operational excellence and reliability goals, regardless of the size of your automation landscape, team or your role within the organization. Reaching those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
+Understanding automation performance is key to achieving your operational excellence and reliability goals, regardless of the size of your automation landscape, team or your role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
 To further support you on this journey, we're providing industry-leading new **generative AI Copilot capabilities** available (initially) under [Desktop flow activity](/articles/desktop-flows/desktop-flow-activity.md) that will allow you to ask the Copilot automation-specific questions using natural language and get the dynamic insights you're looking for.
 
@@ -59,7 +58,7 @@ Let's look at an example:
 - **User:** on which machine names did they fail the most?
 - **Copilot:**
     :::image type="content" source="media/analyze-automation-activity-copilot/copilot-multi-turn-3.png" alt-text="Screenshot of a Copilot responding with the machine names where the flows failed the most during the last quarter." lightbox="media/analyze-automation-activity-copilot/copilot-multi-turn-3.png":::
-- **User:** of those that succeeded what where their average run duration?
+- **User:** of those that succeeded what were their average run duration?
 - **Copilot:**
     :::image type="content" source="media/analyze-automation-activity-copilot/copilot-multi-turn-4.png" alt-text="Screenshot of a Copilot responding with the average run duration of the flows that succeeded during the last quarter." lightbox="media/analyze-automation-activity-copilot/copilot-multi-turn-4.png":::
 
@@ -68,7 +67,7 @@ Let's look at an example:
 
 ## A look behind the scenes
 
-The Copilot uses the [Azure Open AI](/azure/ai-services/openai/overview) service to translate natural language into valid Dataverse fetchXml queries. It then executes these queries against the Dataverse backend to retrieve matching data, all while taking into account the current user's security context. Initially, these queries are focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but we will extend these to many more areas of the automation suite. The Copilot also determines the most suitable output visualization (table, pie, bar or line chart) to be returned to the user. [Learn more](/articles/faqs-copilot-automation-activity.md)
+The Copilot uses the [Azure Open AI](/azure/ai-services/openai/overview) service to translate natural language into valid Dataverse fetchXml queries. It then executes these queries against the Dataverse backend to retrieve matching data, all while taking into account the current user's security context. Initially, these queries are focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but we'll extend these to many more areas of the automation suite. The Copilot also determines the most suitable output visualization (table, pie, bar or line chart) to be returned to the user. [Learn more](/articles/faqs-copilot-automation-activity.md)
 
 ## Before You Start  
 
@@ -88,11 +87,11 @@ This guide helps you validate (and reuse) [fetchXml](/power-apps/developer/data-
 
 ### Step 1: Make a copy of the fetchXml output
 
-After submitting your query to the system, you will receive a reply that includes a link labeled "Show code." Click on this link and then select the copy icon located in the upper right corner of the fetchXml box to copy the fetchXml code.
+After submitting your query to the system, you'll get a reply that includes a link labeled "Show code." Select this link and then select the copy icon located in the upper right corner of the fetchXml box to copy the fetchXml code.
 
 ### Step 2: Create a new cloud flow
   
-1. Open the the [Power Automate portal](https://make.powerautomate.com) and select **My flows** from the left-navigation menu.
+1. Open the [Power Automate portal](https://make.powerautomate.com) and select **My flows** from the left-navigation menu.
 2. Continue by selecting **+ New flow** on the command bar and then select **Instant cloud flow** option from the dropdown menu.
 3. Enter a flow name and choose **Manually trigger a flow**, then select **Create**.
 4. The cloud flow designer appears. Here, look for and select the **+ New Step** button.
@@ -108,7 +107,7 @@ After submitting your query to the system, you will receive a reply that include
   
 ## Understanding the Results  
   
-If data matches the given fetchXml query, the **List rows** action will return data in a format called [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation), which is essentially a method used to present data in a well-organized manner, making it easy to read and write digitally.
+If data matches the given fetchXml query, the **List rows** action returns data in a format called [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation), which is essentially a method used to present data in a well-organized manner, making it easy to read and write digitally.
   
 Now, let's assume we'd ask the Copilot '*how many failed vs succeeded flows did we have last month?'* This would produce a [fetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) query similar to the following:
 
@@ -124,26 +123,26 @@ Now, let's assume we'd ask the Copilot '*how many failed vs succeeded flows did 
 </fetch>
 ```
 
-For distribution-based questions like above, data will be grouped by one or more field (`statuscode`), together with an aggregation (`count`) that returns the number for each group (i.e. `failed`, `succeeded` etc.).
+For distribution-based questions like above, data will be grouped by one or more fields (`statuscode`), together with an aggregation (`count`) that returns the number for each group (that is, `failed`, `succeeded` etc.).
 
 Each of the returned records contains fields such as:  
   
 - `flowsession_count`: The number of times the workflow has been run.  
 - `flowsession_regardingobjectid`: The unique identifier for the flow run.  
-- `flowsession_statuscode`: The status of the flow run (e.g., "Failed").  
+- `flowsession_statuscode`: The status of the flow run (for example, "Failed").  
 - `workflow_name`: The name of the flow.  
   
 So, if you wanted to know how many times a specific flow has been run, you would look at the flowsession_count field of the record where workflow_name is *your flow name*.
   
 ## Prompting best-practices
 
-- **Be specific:** The more specific you are with your prompt, the better the AI will understand and respond. If the AI is not producing the desired output, don't worry, simply try again by adjusting your prompt.
+- **Be specific:** The more specific you are with your prompt, the better the AI will understand and respond. If the AI isn't producing the desired output, don't worry, try again by adjusting your prompt.
 - **Experiment with prompts:** If you're not getting the results you were expecting, try rephrasing your prompt or provide more context.
-- **Provide feedback:** If the AI produced great or unsatisfactory responses, don't hesitate to let us know by selecting the thumps up or down with an option to provide even more verbose feedback via the *Tell Microsoft what you liked about this feature* link that appears below.
+- **Provide feedback:** If the AI produced great or unsatisfactory responses, don't hesitate to let us know by selecting the thumps up or down with an option to provide even more verbose feedback via the *Tell Microsoft what you liked about this feature* link that appears underneath.
 
 ## Prompt examples
 
-The list below provides some example prompts that can be used as prompt starters for your own use-cases. However, please note that some of these prompts may not be applicable or return incorrect results, which is influenced by the AI model, actual prompt and the activity data available to you based on your permissions. We therefore recommend that you review and validate the returned results and fetchXml query as outlined [here](#validate-fetchxml-query-results-generated-by-copilot).
+The following list provides some example prompts that can be used as prompt starters for your own use-cases. However, please note that some of these prompts may not be applicable or return incorrect results, since the accuracy may be influenced model understanding, the actual prompt and the activity data available to you based on your permissions. We therefore recommend that you review and validate the returned results and fetchXml query as outlined [here](#validate-fetchxml-query-results-generated-by-copilot).
 
 ### Runs
 
@@ -175,15 +174,15 @@ You can also influence Copilot's output format by asking for explicit chart type
 
 ### Clearing previous prompt context to start over
 
-If you wish to reset the conversation with Copilot you can select the three dots `...` next to it's name and select **New chat**.
+If you wish to reset the conversation with Copilot you can select the three dots `...` next to its name and select **New chat**.
 
-:::image type="content" source="media/analyze-automation-activity-copilot/copilot-new-chat.png" alt-text="Screenshot of a Copilot 'New chat' option to reset a conversations." lightbox="media/analyze-automation-activity-copilot/copilot-new-chat.png":::
+:::image type="content" source="media/analyze-automation-activity-copilot/copilot-new-chat.png" alt-text="Screenshot of a Copilot 'New chat' option to reset a conversation." lightbox="media/analyze-automation-activity-copilot/copilot-new-chat.png":::
 
 ## Known issues and limitations
 
 The following list contains known limitations of the **Analyze automation activity Copilot** in Power Automate.
 
-- Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
+- Copilot is a new technology that is still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
 - This Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot may return wrong or incomplete data and fetchXml queries.
 - Copilot is initially only capable to answer questions about desktop flow activity such as errors, machines, past and current runs.
