@@ -18,6 +18,7 @@ search.audienceType:
 [This article is pre-release documentation and is subject to change.]
 
 > [!IMPORTANT]
+>
 > [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 Understanding automation performance is key to achieving your operational excellence and reliability goals, regardless of the size of your automation landscape, team or your role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
@@ -188,7 +189,7 @@ The following list contains known limitations of the **Analyze automation activi
 ## See also
 
 - [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
-- [FAQ for Copilot in desktop flow activity](faqs-copilot-automation-activity) (this Copilot experience)
+- [FAQ for Copilot in desktop flow activity](faqs-copilot-automation-activity.md) (this Copilot experience)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
