@@ -170,6 +170,7 @@ The list below provides some example prompts that can be used as prompt starters
 - When and by whom were desktop flows modified last week?
 
 You can also influence Copilot's output format by asking for explicit chart types like *"show me failed vs. succeeded flow run distribution **as bar chart**"*. This will likely produce the following outcome:
+
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-influence-output-format.png" alt-text="Screenshot of a Copilot reply that responded to a user prompt with a pie chart." lightbox="media/analyze-automation-activity-copilot/copilot-influence-output-format.png":::
 
 ### Clearing previous prompt context to start over
