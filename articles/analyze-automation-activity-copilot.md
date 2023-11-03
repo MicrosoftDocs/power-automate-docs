@@ -17,8 +17,6 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-> [!IMPORTANT]
->
 > [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 Understanding automation performance is key to achieving operational excellence and reliability goals, regardless of the size of your automation landscape, team or your role within the organization. Reaching those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
@@ -29,9 +27,10 @@ Understanding automation performance is key to achieving operational excellence 
 
 The latest advancements in **AI** provide us with tremendous opportunities to explore new automation health monitoring use-cases, that could potentially include anything from simple data exploration to anomaly detection, smart recommendations and even self-healing bots. With the new Copilot in desktop flow activity (preview) we're making the first step towards this new direction, allowing you to democratize access to insights by simply asking the Copilot desktop flow activity-specific questions using natural language.
 
-The Copilot can be used for basic ad-hoc activity questions like *"How many flows failed yesterday?"* or engage in a more conversation-like (*multi-turn*) experience where the Copilot maintains context of the previous conversation, allowing you to ask follow-up questions.
+Copilot can be used for basic questions like *"How many flows failed yesterday?"* or engage in a more conversation-like (*multi-turn*) experience where the Copilot maintains context of the previous conversation, allowing you to ask follow-up questions.
 
-In the context of AI, a **multi-turn** prompt means you're having an ongoing conversation with the AI, where the AI remembers the context of the previous messages in the conversation. It's not just answering one-off questions, it's engaging in a dialogue with you, where each response is based on what's been said before.
+> [!NOTE]
+> In the context of AI, a **multi-turn** prompt means you're having an ongoing conversation with the AI, where the AI remembers the context of the previous messages in the conversation. It's not just answering one-off questions, it's engaging in a dialogue with you, where each response is based on what's been said before.
 
 Let's look at an example:
 
