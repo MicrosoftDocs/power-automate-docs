@@ -13,7 +13,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Analyze automation activity with Copilot (preview)
+# Analyze desktop flow activity with Copilot (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -39,7 +39,7 @@ To further support you on this journey, we're providing industry-leading new **g
   > - During the initial preview, you need to have an environment in United States region in order to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform Admin Center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
   > - While the initial release focuses on desktop flow specific activities, we continually extended its reach to other Power Automate product areas as well.
   
-## Get started with Copilot
+## Get started with Copilot in desktop flow activity (preview)
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-overview.png" alt-text="Screenshot of a Copilot experience as part of desktop flow activity page." lightbox="media/analyze-automation-activity-copilot/copilot-overview.png":::
 
@@ -64,6 +64,8 @@ Let's look at an example:
 
 > [!NOTE]
 > In this initial release, Copilot will only keep context of the last 5 questions you've asked.
+
+Read the [responsible AI FAQs for Copilot in desktop flow activity](./faqs-copilot-automation-activity.md) to learn more about this new Copilot experience.
 
 ## A look behind the scenes
 
@@ -188,3 +190,13 @@ The following list contains known limitations of the **Analyze automation activi
 - Copilot is initially only capable to answer questions about desktop flow activity such as errors, machines, past and current runs.
 - In multi-turn conversations we keep the last 5 question only. Consider resetting the conversation by following these [steps](#clearing-previous-prompt-context-to-start-over).
 - For queries that return large result-sets, Copilot might not be able return or render these.
+
+## See also
+
+- [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
+- [FAQ for Copilot in desktop flow activity](faqs-copilot-automation-activity)
+- [FAQ for Copilot in cloud flows](faqs-copilot.md)
+- [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
+- [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+
+[!INCLUDE[footer-include](./includes/footer-banner.md)]
