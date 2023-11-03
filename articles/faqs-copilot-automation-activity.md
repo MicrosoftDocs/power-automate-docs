@@ -5,7 +5,7 @@ ms.date: 08/25/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
-author: rapostolis
+author: rpapostolis
 ms.author: appapaio
 ms.reviewer: 
 ---
