@@ -1,6 +1,6 @@
 ---
-title: FAQ for Analyzing Automation Activity with Copilot in Desktop flow activity
-description: This FAQ discusses Copilot used in Desktop flow activity and the key considerations for making use of this technology responsibly.
+title: FAQ for Copilot in desktop flow activity (preview)
+description: This FAQ discusses Copilot used in desktop flow activity and the key considerations for making use of this technology responsibly.
 ms.date: 08/25/2023
 ms.custom: 
   - responsible-ai-faqs
@@ -36,7 +36,7 @@ One of the limitations of copilot in desktop flow activity is that it currently 
 
 **What operational factors and settings allow for effective and responsible use of copilot in desktop flow activity?**
 
-Effective and responsible use of copilot in desktop flow activity can be achieved by ensuring that the user has the appropriate rights to access the desktop flow activity data on Dataverse. This means that the copilot will only answer questions based on the data that the user has permission to access. Additionally, it is important for users to understand the scope and limitations of the copilot, and to phrase their queries accordingly. 
+Effective and responsible use of copilot in desktop flow activity can be achieved by ensuring that the user has the appropriate rights to access the desktop flow activity data on Dataverse. This means that the copilot will only answer questions based on the data that the user has permission to access. Additionally, it is important for users to understand the scope and limitations of the copilot, and to phrase their queries accordingly.
 
 ## See also
 

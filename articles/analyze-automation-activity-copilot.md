@@ -13,15 +13,13 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Analyze automation activity with Copilot (preview)
+# Get started with Copilot in desktop flow activity (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
 > [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-Understanding automation performance is key to achieving operational excellence and reliability goals, regardless of the size of your automation landscape, team or your role within the organization. Reaching those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
-
-## Get started with Copilot in desktop flow activity (preview)
+Understanding automation performance is key to achieving operational excellence and reliability goals, regardless of the size of your automation estate, team or your role within the organization. Reaching those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-overview.png" alt-text="Screenshot of a Copilot experience as part of desktop flow activity page." lightbox="media/analyze-automation-activity-copilot/copilot-overview.png":::
 
@@ -32,42 +30,26 @@ Copilot can be used for basic questions like *"How many flows failed yesterday?"
 > [!NOTE]
 > In the context of AI, a **multi-turn** prompt means you're having an ongoing conversation with the AI, where the AI remembers the context of the previous messages in the conversation. It's not just answering one-off questions, it's engaging in a dialogue with you, where each response is based on what's been said before.
 
+> [!IMPORTANT]
+>
+> - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
+> - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
+> - Read the [responsible AI FAQs for Copilot in desktop flow activity (preview)](./faqs-copilot-automation-activity.md) to learn more about this new Copilot experience.
+> - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md),[FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+
 ## Prerequisites
 
 - A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
 - During the initial preview, you need to have an environment in United States region in order to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform Admin Center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
 - Check [**known limitations**](#known-issues-and-limitations) for more information.
 
-### Copilot example
+## How does it work?
 
-- **User:** Show me a distribution of successful vs failed flows during last quarter
-- **Copilot:**
-    :::image type="content" source="media/analyze-automation-activity-copilot/copilot-multi-turn-1.png" alt-text="Screenshot of a Copilot responding with the distribution of successful vs failed flows during the last quarter." lightbox="media/analyze-automation-activity-copilot/copilot-multi-turn-1.png":::
-- **User:** what was the top error of those that failed?
-- **Copilot:**
-    :::image type="content" source="media/analyze-automation-activity-copilot/copilot-multi-turn-2.png" alt-text="Screenshot of a Copilot responding with the top error of those that failed during the last quarter." lightbox="media/analyze-automation-activity-copilot/copilot-multi-turn-1.png":::
-- **User:** on which machine names did they fail the most?
-- **Copilot:**
-    :::image type="content" source="media/analyze-automation-activity-copilot/copilot-multi-turn-3.png" alt-text="Screenshot of a Copilot responding with the machine names where the flows failed the most during the last quarter." lightbox="media/analyze-automation-activity-copilot/copilot-multi-turn-3.png":::
-- **User:** of those that succeeded what were their average run duration?
-- **Copilot:**
-    :::image type="content" source="media/analyze-automation-activity-copilot/copilot-multi-turn-4.png" alt-text="Screenshot of a Copilot responding with the average run duration of the flows that succeeded during the last quarter." lightbox="media/analyze-automation-activity-copilot/copilot-multi-turn-4.png":::
-
-> [!IMPORTANT]
->
-> - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
-> - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
-> - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [Responsible AI FAQ for Copilot in desktop flow activity](./faqs-copilot-automation-activity.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
-
-Read the [responsible AI FAQs for Copilot in desktop flow activity](./faqs-copilot-automation-activity.md) to learn more about this new Copilot experience.
-
-### A look behind the scenes
-
-The Copilot uses the [Azure Open AI](/azure/ai-services/openai/overview) service to translate natural language into valid Dataverse fetchXml queries. It then executes these queries against the Dataverse backend to retrieve matching data, all while taking into account the current user's security context. Initially, these queries are focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but we'll extend these to many more areas of the automation suite. The Copilot also determines the most suitable output visualization (table, pie, bar or line chart) to be returned to the user. [Learn more](./faqs-copilot-automation-activity.md)
+The Copilot is powered by the [Azure Open AI](/azure/ai-services/openai/overview) service and is capable of translating user prompts into valid [Dataverse FetchXml queries](/power-apps/developer/data-platform/use-fetchxml-construct-query). Once a valid FetchXml query is generated by the Copilot, we execute the query against the Dataverse backend to retrieve matching data, all under the current user's security context. Initially, these queries will be focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but we'll extend to more areas of the automation suite in future. Copilot also determines the most suitable output visualization (table, pie, bar or line chart) to be returned to the user. [Learn more](./faqs-copilot-automation-activity.md)
 
 ## What are fetchXml queries?
 
-Dataverse [fetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) queries are a way to retrieve information from a Microsoft Dataverse database. Dataverse is designed to operate at a global enterprise scale and serves as key data foundation for Power Automate and various other products across Microsoft Power Platform and Dynamics 365.
+Dataverse [FetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) queries are a way to retrieve information from a Microsoft Dataverse database. Dataverse is designed to operate at a global enterprise scale and serves as key data foundation for Power Automate and various other products across Microsoft Power Platform and Dynamics 365.
 
 [FetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. It's designed to be easy to create, use and understand.
 
@@ -75,7 +57,7 @@ For example, you might ask Dataverse to give you all the runs of a flow during l
 
 ## Validate fetchXml query results generated by Copilot
   
-This guide helps you validate (and reuse) [fetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) queries using Power Automate cloud flows.
+This guide helps you validate (and reuse) [FetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) queries using Power Automate cloud flows.
 
 ### Step 1: Make a copy of the fetchXml output
 
@@ -125,7 +107,7 @@ Each of the returned records contains fields such as:
 - `workflow_name`: The name of the flow.  
   
 So, if you wanted to know how many times a specific flow has been run, you would look at the flowsession_count field of the record where workflow_name is *your flow name*.
-  
+
 ## Prompting best-practices
 
 - **Be specific:** The more specific you are with your prompt, the better the AI will understand and respond. If the AI isn't producing the desired output, don't worry, try again by adjusting your prompt.
@@ -134,7 +116,7 @@ So, if you wanted to know how many times a specific flow has been run, you would
 
 ## Prompt examples
 
-The following list provides some example prompts that can be used as prompt starters for your own use-cases. However, please note that some of these prompts may not be applicable or return incorrect results, since the accuracy may be influenced model understanding, the actual prompt and the activity data available to you based on your permissions. We therefore recommend that you review and validate the returned results and fetchXml query as outlined [here](#validate-fetchxml-query-results-generated-by-copilot).
+The following list provides some examples of prompts that can be used as starter prompt for your own use-cases. However, please note that some of these prompts may not be applicable or return incorrect results, since the accuracy may be influenced by model understanding, actual prompt and the data available to you based on your permissions. We therefore recommend that you review and validate the returned results and fetchXml query as outlined [here](#validate-fetchxml-query-results-generated-by-copilot).
 
 ### Runs
 
@@ -146,7 +128,7 @@ The following list provides some example prompts that can be used as prompt star
 
 - Show me the most frequent run errors during last month
 - Show me a distribution of successful vs failed flows during last quarter
-- What were the number of failed runs during the weekend prior to the last one?
+- What were the number of failed runs during the week prior to the last one?
 
 ### Machines
 
@@ -160,6 +142,18 @@ The following list provides some example prompts that can be used as prompt star
 - Who were the top 10 users running flows during last month?
 - When and by whom were desktop flows modified last week?
 
+### Multi-turn prompt example
+
+> **Initial prompt**: Show me a distribution of successful vs failed flows during last quarter
+
+> **Follow-up 1**: what was the top error of those that failed?
+
+> **Follow-up 2**: on which machine names did they fail the most?
+
+> **Follow-up 3**: of those that succeeded what were their average run duration?
+
+### Influencing the output format
+
 You can also influence Copilot's output format by asking for explicit chart types like *"show me failed vs. succeeded flow run distribution **as bar chart**"*. This will likely produce the following outcome:
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-influence-output-format.png" alt-text="Screenshot of a Copilot reply that responded to a user prompt with a pie chart." lightbox="media/analyze-automation-activity-copilot/copilot-influence-output-format.png":::
@@ -170,9 +164,22 @@ If you wish to reset the conversation with Copilot you can select the three dots
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-new-chat.png" alt-text="Screenshot of a Copilot 'New chat' option to reset a conversation." lightbox="media/analyze-automation-activity-copilot/copilot-new-chat.png":::
 
+## Understanding default Copilot replies
+
+The following table lists known limitations for work queues in Power Automate for desktop.
+
+| **Copilot reply** | **Details**
+|-------------------------|-------------------------|
+| *Sorry, something went wrong. Please try again.* |  Indicating that an unexpected error occurred, please rephrase your question and try again. |
+| *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicating that your question couldn't be translated into a valid fetchXml query. Rephrase your question and try again. |
+| *Sorry, Copilot is at capacity and temporarily unavailable — please try again in a little while.* |  Indicating that there are resource constraints on the backend. Please retry your prompt after a short time. |
+| *Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.* |  Indicates that your prompt may include potentially harmful content and has been blocked by the backend service. Please remove any potentially harmful content from your prompt and try again. |
+| *Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the generated fetchXml is invalid or that the query failed failed when we tried to execute it. Rephrase your question and try again. |
+| *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by the Copilot, visit our {0}. [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXml](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
+
 ## Known issues and limitations
 
-The following list contains known limitations of the **Analyze automation activity Copilot** in Power Automate.
+The following list contains known limitations of the Copilot in desktop flow activity (preview).
 
 - Copilot is a new technology that is still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
 - This Copilot is currently only available in Dataverse environments based in the United States.
@@ -184,7 +191,7 @@ The following list contains known limitations of the **Analyze automation activi
 ## See also
 
 - [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
-- [FAQ for Copilot in desktop flow activity](faqs-copilot-automation-activity.md) (this Copilot experience)
+- [FAQ for Copilot in desktop flow activity (preview)](faqs-copilot-automation-activity.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
