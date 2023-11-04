@@ -35,7 +35,7 @@ Copilot can be used for basic questions like *"How many flows failed yesterday?"
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
 > - Read the [responsible AI FAQs for Copilot in desktop flow activity (preview)](../faqs-copilot-automation-activity.md) to learn more about this new Copilot experience.
-> - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md),[FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+> - More information: [Responsible AI FAQs for Power Automate](../responsible-ai-overview.md),[FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisites
 
@@ -192,7 +192,7 @@ The following list contains known limitations of the Copilot in desktop flow act
 
 - [Get started with Copilot in cloud flows (preview)](../get-started-with-copilot.md)
 - [FAQ for Copilot in desktop flow activity (preview)](../faqs-copilot-automation-activity.md)
-- [FAQ for Copilot in cloud flows](faqs-copilot.md)
+- [FAQ for Copilot in cloud flows](../faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](../faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
