@@ -16,6 +16,12 @@ Approvals Kit is created to address some of the most common approval patterns. H
 
 There are some technical limitations this template, and the following sections describe limitations of the Approvals Kit
 
+## Business Approval Management
+
+The following limits apply to to the Business Approval Management application
+
+- Conditions cannot be applied to the first stage of a workflow.
+
 ## Power Automate action request limits
 
 To help ensure service levels, availability, and quality, there are entitlement limits to the number of requests users can make each day across Power Apps, Power Automate.
