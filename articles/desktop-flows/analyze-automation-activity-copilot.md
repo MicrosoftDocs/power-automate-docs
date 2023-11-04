@@ -164,18 +164,18 @@ If you wish to reset the conversation with Copilot you can select the three dots
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-new-chat.png" alt-text="Screenshot of a Copilot 'New chat' option to reset a conversation." lightbox="media/analyze-automation-activity-copilot/copilot-new-chat.png":::
 
-## Understanding default Copilot replies
+## Understanding Copilot replies on problematic prompts
 
-The following table lists known limitations for work queues in Power Automate for desktop.
+The following table shows default responses that are returned when the Copilot is unable to understand your question, intent or generate a valid answer.
 
 | **Copilot reply** | **Details**
 |-------------------------|-------------------------|
-| *Sorry, something went wrong. Please try again.* |  Indicating that an unexpected error occurred, please rephrase your question and try again. |
-| *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicating that your question couldn't be translated into a valid fetchXml query. Rephrase your question and try again. |
+| *Sorry, something went wrong. Please try again.* |  Indicates that an unexpected error occurred, please rephrase your question and try again. |
+| *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that your question couldn't be translated into a valid fetchXml query. Rephrase your question and try again. |
 | *Sorry, Copilot is at capacity and temporarily unavailable — please try again in a little while.* |  Indicating that there are resource constraints on the backend. Please retry your prompt after a short time. |
 | *Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.* |  Indicates that your prompt may include potentially harmful content and has been blocked by the backend service. Please remove any potentially harmful content from your prompt and try again. |
 | *Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the generated fetchXml is invalid or that the query failed failed when we tried to execute it. Rephrase your question and try again. |
-| *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by the Copilot, visit our {0}. [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXml](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
+| *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by the Copilot, visit our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXml](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
 
 ## Known issues and limitations
 
