@@ -5,22 +5,19 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
+contributors:
+  - kewaiss
+  - v-aangie
 ms.subservice: teams
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/30/2022
-ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.author: kewaiss
+ms.reviewer: angieandrews
 ---
 
 # Respond to an approval from a chat or channel
-
-[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
 
 If a user sends you an approval in a chat or channel message or from the approvals app, you can respond to it directly from within the Teams chat or channel or from the approvals app.
 
