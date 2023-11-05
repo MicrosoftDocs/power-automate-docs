@@ -40,7 +40,7 @@ Effective and responsible use of copilot in desktop flow activity can be achieve
 
 ## See also
 
-- [Get started with Copilot in desktop flow activity (preview)](analyze-automation-activity-copilot.md#get-started-with-copilot-in-desktop-flow-activity-preview)
+- [Get started with Copilot in desktop flow activity (preview)](./desktop-flows/analyze-automation-activity-copilot.md#get-started-with-copilot-in-desktop-flow-activity-preview)
 - [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
