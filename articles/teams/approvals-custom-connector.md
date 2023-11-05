@@ -9,15 +9,10 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: napienko
+ms.author: kewaiss
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: teams
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 01/13/2021
 search.audienceType: 
   - flowmaker
@@ -25,12 +20,10 @@ search.audienceType:
 ---
 # Microsoft Teams approvals with custom connectors
 
-[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
-
 You can use the approvals hub in Microsoft Teams to quickly integrate approvals workflows into existing line of business apps that do not have their own approvals system. You achieve this by using a custom connector to 'connect' to the existing line of business apps. 
 
->[!TIP]
->When you use the approvals hub, you get to manage all your approvals in a central location. 
+> [!TIP]
+> When you use the approvals hub, you get to manage all your approvals in a central location. 
 
 This article shows you how to:
 
@@ -130,8 +123,8 @@ Now that you've created your custom connector, it's time to create your approval
 
 1. Update the condition with the desired result.
 
-   >[!IMPORTANT]
-   >The "Approve" or "Reject" approval responses are case sensitive.
+   > [!IMPORTANT]
+   > The "Approve" or "Reject" approval responses are case sensitive.
 
    ![Completed condition card.](../media/approvals-custom-connector/a5cb9748124b88f42e5234616028ea3b.png)
 

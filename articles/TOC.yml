@@ -18,7 +18,7 @@
     href: overview-cloud.md
   - name: Get started with Copilot in cloud flows
     href: get-started-with-copilot.md
-  - name: Understand the cloud flows designer with copilot capabilities
+  - name: Understand the cloud flows designer
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
@@ -172,7 +172,7 @@
       - name: Overview
         href: ./teams/overview.md
         displayName: Use flows with Microsoft Teams
-      - name: Install the Power Automate app
+      - name: Install the Workflows app
         href: ./teams/install-teams-app.md
       - name: Create flows in Teams
         href: ./teams/teams-app-create.md
@@ -711,7 +711,7 @@
       href: ./desktop-flows/actions-reference/office365outlook.md
     - name: Work queues
       href: ./desktop-flows/actions-reference/workqueues.md
-    - name: Custom actions (preview)
+    - name: Custom actions
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
       href: ./desktop-flows/actions-reference/cloudconnectors.md  
@@ -1029,7 +1029,7 @@
     href: introduction-to-data-groups.md
   - name: View sharing and connectors analytics reports
     href: admin-analytics-report.md
-  - name: Respond to personal data requests (Azure AD)
+  - name: Respond to personal data requests (Microsoft Entra ID)
     items:
     - name: Summary
       href: privacy-dsr-summary.md
@@ -1146,15 +1146,7 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
-  - name: FAQ for Copilot in desktop flow activity
+  - name: FAQ for Copilot in desktop flow activity (preview)
     href: faqs-copilot-automation-activity.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
-
-
-
-
-
-
-    
-

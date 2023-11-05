@@ -52,10 +52,10 @@ With this option, you don't need to provide session credentials. This might be v
 
 To use connection with sign-in, you need to meet the following pre-requisites:
 
-  - Azure AD users must be in the same tenant as the selected environment in Power Automate portal.
-  - The target (machine / group) should be Azure AD or AD joined. In case of a AD joined target, AD must be synchronized with Azure AD (What is Azure AD Connect and Connect Health. - Microsoft Entra | Microsoft Learn).
-  - The Azure AD user account must be granted right to open a Windows session on the target machine(s) (interactive logon). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it is today for existing connections).
-  - The tenant of the target Azure AD account is configured to use modern authentication [Authentication with Azure AD - Microsoft Azure Well-Architected Framework](/azure/well-architected/).
+  - Microsoft Entra users must be in the same tenant as the selected environment in Power Automate portal.
+  - The target (machine / group) should be Microsoft Entra ID or AD joined. In case of a AD joined target, AD must be synchronized with Microsoft Entra ID (What is Microsoft Entra Connect and Connect Health. - Microsoft Entra | Microsoft Learn).
+  - The Microsoft Entra user account must be granted right to open a Windows session on the target machine(s) (interactive logon). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it is today for existing connections).
+  - The tenant of the target Microsoft Entra account is configured to use modern authentication [Authentication with Microsoft Entra ID - Microsoft Azure Well-Architected Framework](/azure/well-architected/).
 
 
 ### Setup the connection with sign-in
@@ -63,11 +63,11 @@ To use connection with sign-in, you need to meet the following pre-requisites:
 - Select **Connect with Sign-in** in the Connect dropdown
 - Select the target (machine or machine group)
 - Select **Sign in**
-- Pick or provide an **Azure AD account** in the sign in pop up 
+- Pick or provide an **Microsoft Entra account** in the sign in pop up 
 - The desktop flow connect is automatically created
 
 ### How it works
-- An access / refresh token is created during the Azure AD authentication.
+- An access / refresh token is created during the Microsoft Entra authentication.
 - The token scope is limited to executing a desktop flow.
 - The Power Platform services manage the refreshment of those tokens.
 
