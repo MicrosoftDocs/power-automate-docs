@@ -19,11 +19,11 @@ search.audienceType:
 
 > [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
-Understanding automation performance is key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team or role within the organization. Reaching those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
+Understanding automation performance is key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights, allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-overview.png" alt-text="Screenshot of a Copilot experience as part of desktop flow activity page." lightbox="media/analyze-automation-activity-copilot/copilot-overview.png":::
 
-The latest advancements in **AI** provide us with unprecedented opportunities to explore new automation health monitoring use-cases, that could include anything from simple data exploration to anomaly detection, smart recommendations and even self-healing bots.
+The latest advancements in **AI** provide us with unprecedented opportunities to explore new automation health monitoring use-cases that could include anything from simple data exploration to anomaly detection smart recommendations and even self-healing bots.
 
 With the **Copilot in desktop flow activity (preview)** we're making the first step towards a new direction, allowing you to **democratize access to insights** by simply asking the Copilot desktop flow activity-specific questions using natural language.
 
@@ -46,8 +46,8 @@ This Copilot experience is powered by the [Azure Open AI](/azure/ai-services/ope
 
 ### High-level process
 
-1. Once the user inputs a valid prompt, Copilot will try to generate a valid [FetchXml](#what-are-fetchxml-queries) query based on it.
-2. If the generated FetchXml is valid, the query is then executed against the Dataverse backend under the current user's security context to retrieve matching data. This ensures that users only see data that they are already authorized to access.
+1. Once the user inputs a valid prompt, Copilot tries to generate a valid [FetchXml](#what-are-fetchxml-queries) query based on it.
+2. If the generated FetchXml is valid, the query is then executed against the Dataverse backend under the current user's security context to retrieve matching data. This ensures that users only see data that they're already authorized to access.
 3. Copilot then determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and data to the user.
 
 ### What are fetchXml queries?
@@ -62,12 +62,12 @@ Microsoft Dataverse [FetchXml](/power-apps/developer/data-platform/use-fetchxml-
 
 ## Prompt examples
 
-The following list provides some examples of prompts that can be used as starter prompt for your own use-cases. However, please note that some of these prompts may not be applicable or return incorrect results, since the accuracy may be influenced by model understanding, actual prompt and the data available to you based on your permissions. We therefore recommend that you review and validate the returned results and fetchXml query as outlined [here](#validate-fetchxml-query-results-generated-by-copilot).
+The following list provides some examples of prompts that can be used as starter prompt for your own use-cases. However, note that some of these prompts might not be applicable or return incorrect results, since the accuracy might be influenced by model understanding, actual prompt and the data available to you based on your permissions. We therefore recommend that you review and validate the returned results and fetchXml query as outlined [here](#validate-fetchxml-query-results-generated-by-copilot).
 
 ### Runs
 
 - Which flows ran the most last week?
-- What were yesterday’s top 5 flows by number of completed runs?
+- What were yesterday’s top five flows by number of completed runs?
 - What was the average run duration of the *'[insert your flow name here]'* flow during last semester?
 
 ### Errors
@@ -93,7 +93,7 @@ The following list provides some examples of prompts that can be used as starter
 *Multi-turn* prompt means you're having an ongoing conversation with the Copilot, where it remembers the context of the previous messages in the conversation. It's not just answering one-off questions, it's engaging in a dialogue with you, where each response is based on what's been said before.
 
 > [!NOTE]
-> When engaging in a multi-turn conversations, note that we currently keep track of the 5 most recent questions only. This means that we will start clearing the prompts that were entered first and only keep the latest 5. To improve response quality, we suggest limiting your follow-up questions to 4 and then restarting the chat by following the steps provided [here](#clearing-previous-prompt-context-to-start-over).
+> When engaging in a multi-turn conversations, note that we currently keep track of the five most recent questions only. This means that we will start clearing the prompts that were entered first and only keep the latest five. To improve response quality, we suggest limiting your follow-up questions to four and then restarting the chat by following the steps provided [here](#clearing-previous-prompt-context-to-start-over).
 
 #### Example
 
@@ -108,7 +108,7 @@ The following list provides some examples of prompts that can be used as starter
 |:::image type="icon" source="media/analyze-automation-activity-copilot/4.png":::| **User**: of those that succeeded what were their average run duration?|
 ||**Copilot**: *Here is the average run duration of the flows that succeeded.*|
 
-:::image type="content" border="false" source="media/analyze-automation-activity-copilot/copilot-multi-turn-chat.png" alt-text="Screenshot of a Copilot multi-turn chat with different output data data and visualizations." lightbox="media/analyze-automation-activity-copilot/copilot-multi-turn-chat.png":::
+:::image type="content" border="false" source="media/analyze-automation-activity-copilot/copilot-multi-turn-chat.png" alt-text="Screenshot of a Copilot multi-turn chat with different output data and visualizations." lightbox="media/analyze-automation-activity-copilot/copilot-multi-turn-chat.png":::
 
 ### Influencing the output format
 
@@ -124,7 +124,7 @@ If you wish to reset the conversation with Copilot you can select the three dots
 
 ## Validate fetchXml query results generated by Copilot
   
-The following steps will guide you through the process to validate (and potentially reuse) [FetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) queries in Power Automate cloud flows.
+The following steps guide you through the process to validate (and potentially reuse) [FetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) queries in Power Automate cloud flows.
 
 ### Step 1: Make a copy of the FetchXml query
 
@@ -160,7 +160,7 @@ Let's assume we had asked the Copilot '*how many failed vs succeeded flows did w
 </fetch>
 ```
 
-If data matches the given FetchXml query, the **List rows** Dataverse action configured in [step 2](#step-2-create-a-new-cloud-flow) returns data in a format called [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation), which is essentially a method used to present data in a well-organized manner, making it easy to read and write digitally.
+If data matches the given FetchXml query, the **List rows** Dataverse action configured in [step 2](#step-2-create-cloud-flow-and-test-fetchxml-query) returns data in a format called [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation), which is essentially a method used to present data in a well-organized manner, making it easy to read and write digitally.
   
 For distribution-based questions like above, data will be grouped by one or more fields (`statuscode`), together with an aggregation (`count`) that returns the number for each group (that is, `failed`, `succeeded` etc.).
 
@@ -182,7 +182,7 @@ The following table shows default responses that are returned when the Copilot i
 | *Sorry, something went wrong. Please try again.* |  Indicates that an unexpected error occurred, please rephrase your question and try again. |
 | *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that your question couldn't be translated into a valid fetchXml query. Rephrase your question and try again. |
 | *Sorry, Copilot is at capacity and temporarily unavailable — please try again in a little while.* |  Indicating that there are resource constraints on the backend. Please retry your question after a short time. |
-| *Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.* |  Indicates that your question may include potentially harmful content and has been blocked by the backend service. Please remove any potentially harmful content from your question and try again. |
+| *Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.* |  Indicates that your question might include potentially harmful content and has been blocked by the backend service. Remove any potentially harmful content from your question and try again. |
 | *Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the generated fetchXml is invalid or that the query failed when we tried to execute it. Rephrase your question and try again. |
 | *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by the Copilot, visit our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXml](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
 
@@ -194,7 +194,7 @@ The following list contains known limitations of the Copilot in desktop flow act
 - This Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot may return wrong or incomplete data and fetchXml queries.
 - Copilot is initially only capable to answer questions about desktop flow activity such as errors, machines, past and current runs.
-- In multi-turn conversations we keep context of the last 5 question only. If you encounter wrong or incomplete results, consider resetting the conversation by following these [steps](#clearing-previous-prompt-context-to-start-over).
+- In multi-turn conversations we keep context of the last five question only. If you encounter wrong or incomplete results, consider resetting the conversation by following these [steps](#clearing-previous-prompt-context-to-start-over).
 - For queries that return large result-sets, Copilot might not be able return or render these.
 
 ## See also
