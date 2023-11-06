@@ -1,11 +1,11 @@
 ---
 title: SAP GUI actions reference
 description: Learn about the available SAP GUI actions in desktop flows.
-author: nikosmoutzourakis
+author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/06/2023
-ms.author: Nikosmoutzourakis
+ms.author: NikosMoutzourakis
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
