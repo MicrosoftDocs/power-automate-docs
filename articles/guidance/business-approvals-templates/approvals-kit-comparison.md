@@ -10,7 +10,7 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Approvals Kit Comparison
+# Approvals kit comparison
 
 When navigating the landscape of approval workflows, it's important to understand the differences between the Power Platform Approvals connector and the Approvals Kit. The Approvals kit is a low code innovative enhancement that seamlessly integrates the Approvals connector with a user-friendly, no-code configurable power platform solution components.
 
