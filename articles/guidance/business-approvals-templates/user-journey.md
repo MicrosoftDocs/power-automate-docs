@@ -12,7 +12,24 @@ ms.reviewer: angieandrews
 
 # User Journey
 
-There are three major personas of Approver, Approvals Administrator and Power Platform Administrator as part of user journey using the Approvals kit.
+To explore a possible user journey using the Business Approvals Kit the following example will be used to discuss a possible end to end process.
+
+Charlotte is a business user who wants to make approvals that has the following components to consider
+
+| Scenario | Notes |
+|----------|-------|
+| SAP Invoices | When SAP invoices are submitted based on data inside the invoice a manual approval is required |
+| Manager Approvals | Manager approval is required for SAP invoices above the line manager approval limits |
+| Approver availability | Depending on where the approver is in the world there are different holiday schedules or working schedules. Waiting for approvals can cause delays until an approver returns |
+| Handling holidays | Approvers may be on holiday when a request is submitted. In this case there could be delays in processing the approval request or confusion on who is an alternate approver |
+| Power Platform permissions | Charlotte has limited permissions to build and deploy approvals solutions to test and production environments |
+| COE Team Support | Charlotte works with Gibson as her technical contact and mentor to help install solutions and as a mentor when creating low code Power Platform solutions |
+
+Given these factors the Business Approvals Kit is selected by Charlotte as it provides support for multi level approvals and handling for different approver available scenarios. Working together with Gibson from the Center of Excellence team Charlotte navigates the process of installing the Business Approvals Kit into an environment. Once the kit is installed, Charlotte is then able to model the approval process. Given SAP Power Automate is a newer area for Charlotte she works with Gibson to build the required triggers to obtain the SAP data and then trigger the Approval Workflow. Using the created workflow and Power Automate Cloud flow together Approvals are generated for Approvers like Rebecca to accept and decline requests.
+
+## User Journey Persona Summary
+
+Reviewing this user journey example there are three major personas of Approver, Approvals Administrator and Power Platform Administrator as part of user journey using the Approvals kit.
 
 ![Persona graphic overview with name and role](./media/persona-overview.svg)
 
@@ -22,9 +39,9 @@ There are three major personas of Approver, Approvals Administrator and Power Pl
 |Approvals Administrator|Sales Director|Power User|Configures the kit to match the business requirements. Analyzes the approval processes for improvement opportunities|
 |Approver|Sales Manager|Business User|Receives an approval to Accept for Decline|
 
-## Example User Journey
+## Example
 
-An example user journey can be illustrated in the following series of steps
+An example user journey can be illustrated as a summarized diagram in the following series of steps
 
 ![Illustration of example user journey](./media/approvals-kit-user-journey.svg)
 

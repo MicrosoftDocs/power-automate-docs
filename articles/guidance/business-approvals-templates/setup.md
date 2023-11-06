@@ -99,47 +99,27 @@ pac application install --environment $envs[0].EnvironmentId --application-name 
 
 ### Manual Setup
 
-In new environments, the Power Automate Approvals feature is configured on-demand the first time any approval flow runs in an environment. The on-demand setup is performed either the **Create an Approval** or **Start and wait for an approval** cloud flow actions execute. To enable the approvals feature, proceed with the following steps.
+In new environments, the Power Automate Approvals feature can be installed into an environment using the Power Platform Admin center with the following steps.
 
-*Note: Only run these steps for the first time you're using Approvals connector in the environment you're going to install the template on. When an Approvals connector is already in the same environment, you can omit this section.*
+1. Open the [Power Platform Admin center](https://aka.ms/ppac)
 
-1. Select the environment you're going to deploy the Approvals Kit on
+1. In the left nagivation select **Resources**
 
-1. Go to [make.powerautomate.com](https://make.powerapps.com/), select **Create**, and select "Instant cloud flow"
+1. Select **Dynamics 365 apps**
 
-   ![Screenshot of create instance cloud flow](./media/create-instant-cloud-flow.png)
+1. From the list select **Microsoft Flow Approvals**
 
-1. Name the flow "Approvals Kit" or any name of your choice that you can remember
+1. Select the **...** menu for Microsoft Flow Approvals
 
-1. Select **Manually trigger a flow** and select **Create**
+1. Select **Install** from the menu
 
-1. Select **+ New step** and search "approvals"
+1. Select the environment that the Approvals Kit will be installed in
 
-1. Select **Start and wait for an approval**
+1. Review the terms of service
 
-   ![Screenshot of start and wait for an approval](./media/start-and-wait-for-an-approval.png)
+1. Agree to the terms of service and select **Install**
 
-1. Select **Approve/Reject \-\- First to respond**
-
-1. Enter the title as "Approvals Kit initial setup" or any name of your choice that you can remember
-
-1. Set Assigned to as **User email** from the list of Dynamic content available
-
-   ![Screenshot of start and wait for an approval assigned to email](./media/start-and-wait-for-an-approval-assigned-to.png)
-
-1. Select **Save**. It might prompt you with a warning *No Microsoft Dataverse database for this environment has been provisioned*. The  warning is normal and is the exact reason why you're running these prerequisite steps
-
-1. Select **Test** and choose **Manually**, and select **Test** again
-
-1. It prompts you to sign in. Select **Continue**, then select **Run flow**
-
-1. Select **Done** and it transfers you to another screen with a message "Your flow is running..."
-
-> *Note: **[It will take around 10 minutes to run for the first time]{.ul}**. If you are having problems running this flow, read the support article [Power Automate Approvals Provisioning Overview and Troubleshooting](https://support.microsoft.com/topic/power-automate-approvals-provisioning-overview-and-troubleshooting-2306313a-49fa-efde-c716-a34c573ec942) and reach out to your IT administrator or contact Microsoft support.*
-
-![Screenshot of Business Approvals templates initial setup](./media/business-approvals-templates-initial-setup.png)
-
-After the flow is successfully run, a **email** requesting for approval is sent. You can select either approve or reject as the main purpose is to just run a flow with Approvals component included. Selecting either doesn't affect the later set-up steps. You're now ready to install the core components of Approvals Kit.
+> *Note:* It can take around 10 minutes to install
 
 ## Installing the core components
 
