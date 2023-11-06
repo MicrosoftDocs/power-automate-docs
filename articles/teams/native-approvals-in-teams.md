@@ -5,28 +5,29 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
+contributors:
+  - kewaiss
+  - v-aangie
 ms.subservice: teams
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/09/2020
-ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.author: kewaiss
+ms.reviewer: angieandrews
 ---
 
 # Approvals in Microsoft Teams
-
-[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
 
 Approvals in Microsoft Teams is a native Teams application that lets you easily create, manage, and share approvals from your hub for teamwork.
 
 You can quickly start an approval flow from the same place you send a chat, a channel conversation, or from the approvals app itself. Just select an approval type, add details, attach files, and choose approvers. Once submitted, approvers are notified and can review and act on the request.
 
-These approvals are triggered directly with the Power Automate infrastructure and don't require a flow with an approvals action. Though, if you wish to modify your approvals, by creating custom pre-approval or post-approvals actions, you can create a flow for your approval. 
+These approvals are triggered directly with the Power Automate infrastructure and don't require a flow with an approvals action. Though, if you wish to modify your approvals, by creating custom pre-approval or post-approvals actions, you can create a flow for your approval.
+
+Learn more about how to use approvals in Teams in the following video.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL2mp]
 
 ## Use the approvals app in Teams
 
