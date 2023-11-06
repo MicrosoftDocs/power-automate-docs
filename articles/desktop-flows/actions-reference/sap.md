@@ -5,7 +5,7 @@ author: nimoutzo
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/06/2023
-ms.author: nimoutzo
+ms.author: NikosMoutzourakis
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
