@@ -133,7 +133,7 @@ Open [https://make.powerapps.com](https://make.powerapps.com). Go to the environ
 
 Importing the solution is the first step of the installation process and is required for every other component in the Approvals Kit to work. Import needs either a new created environment or import in the existing environment (excluding the Default environment) in which to installed.
 
-1. Download the Approvals Kit ZIP file ([aka.ms/businessapprovals/download](https://aka.ms/businessapprovals/download)).
+1. From the expanded section **Assets** for the latest release, download the Approvals Kit file **BusinessApprovalsKit_*_managed.zip** from [aka.ms/businessapprovals/download](https://aka.ms/businessapprovals/download).
 
 1. Go to <https://make.powerapps.com>
 
@@ -142,7 +142,7 @@ Importing the solution is the first step of the installation process and is requ
 1. Select **Import**, and then **Browse**
 
 1. Select the Approvals Kit core components solution from File Explorer
-    (BusinessApprovalsCoreComponents\_*x_x\_x_xx*\_managed.zip)
+    (BusinessApprovalsKit_*_managed.zip)
 
 1. Once the compressed (.zip) value is available, select **Next**
 
