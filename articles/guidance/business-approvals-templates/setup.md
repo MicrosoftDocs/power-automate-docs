@@ -127,6 +127,28 @@ Setting up a designated environment for Approvals Kit is recommended for all use
 
 > Note: Approvals Kit uses [solution management capabilities](/power-apps/developer/data-platform/introduction-solutions) of Dataverse to package up all assets. To ensure consistency and same experience for every customer, the template is provided as [managed solutions](/power-platform/alm/solution-concepts-alm). If you would like to extend the template, you will need to use a separate [unmanaged solution](/power-platform/alm/solution-concepts-alm) layer as you cannot directly modify this template.
 
+### Enable the Power Apps component framework
+
+Once Microsoft Flow Approvals has been for the environment, enable the Power Apps component framework using these steps.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. Select an environment where you want to enable this feature.
+
+    You need to do this for **main** and all **satellite** environments.
+
+1. On the top pane, select **Settings**.
+
+1. Select **Product** > **Features**.
+
+1. Turn on **Allow publishing of canvas apps with code components**.
+
+1. Select **Save**.
+
+### Import the Creator Kit
+
+Next, install the creator kit using one of the options in [Install the Creator Kit](/power-platform/guidance/creator-kit/setup)
+
 ### Import the solution
 
 Open [https://make.powerapps.com](https://make.powerapps.com). Go to the environment you either created or been allocated, in which the Approvals Kit should be hosted.
