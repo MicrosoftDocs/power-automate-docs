@@ -37,14 +37,14 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
 
 You can access the generative answers capability from the console by clicking the Copilot button, located in the top right corner of the console window, as shown in the image below: 
 
-:::image type="content" source=".media/pad_generative_answers/copilot_console1.png" alt-text="Screenshot that shows the generative answwers in Power Automate for desktop console.":::
+:::image type="content" source="media/pad_generative_answers/copilot_console1.png" alt-text="Screenshot that shows the generative answwers in Power Automate for desktop console.":::
 
 In addition, you can also access the generative answers capability from the designer’s vertical menu on the right, as shown in the image below: 
 
-:::image type="content" source=".media/pad_generative_answers/copilot_designer1.png" alt-text="Screenshot that shows the generative answwers in Power Automate for desktop designer.":::
+:::image type="content" source="media/pad_generative_answers/copilot_designer1.png" alt-text="Screenshot that shows the generative answwers in Power Automate for desktop designer.":::
 
 In the Copilot window, you can ask any product-related questions or use one of our pre-made prompts to get you started. 
-:::image type="content" source=".media/pad_generative_answers/copilot_designer_2.gif" alt-text="Animated gif that shows the Copilot answering a user's question from the designer.":::
+:::image type="content" source="media/pad_generative_answers/copilot_designer_2.gif" alt-text="Animated gif that shows the Copilot answering a user's question from the designer.":::
 
 The answer generated will contain a link to the documentation page that you can refer to if you need additional information. Make sure that you always review AI-generated content.
 
@@ -57,7 +57,7 @@ To prevent your users from using the Copilot’s generative answers capability, 
 ## Help us improve this feature
 
 You can send feedback by pressing the thumbs-up or thumbs-down icons underneath the AI-generated content. Once you do, a feedback dialog will appear, which you can use to submit feedback to Microsoft.
-:::image type="content" source=".media/pad_generative_answers/feedback_dialog1.png" alt-text="Animated gif that shows the Copilot answering a user's question from the designer.":::
+:::image type="content" source="/media/pad_generative_answers/feedback_dialog1.png" alt-text="Animated gif that shows the Copilot answering a user's question from the designer.":::
 
 **Note:** If you cannot see the dialog, your tenant admin might have turned it off.
 
@@ -71,6 +71,6 @@ Organization administrators can view, export, and delete the feedback from their
 
 ### See also
 
-- [FAQ for Generative Answers in Power Automate for desktop](/faqs-copilot-generative-answers-power-automate-desktop.md)
-- [Responsible AI FAQs for Power Automate](/responsible-ai-overview.md)
+- [FAQ for Generative Answers in Power Automate for desktop](../faqs-copilot-generative-answers-power-automate-desktop.md)
+- [Responsible AI FAQs for Power Automate](../responsible-ai-overview.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
