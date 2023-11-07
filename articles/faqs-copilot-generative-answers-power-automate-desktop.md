@@ -47,6 +47,6 @@ The intended use of Copilot's generative answers is to help users find quick and
 - When you're interacting with Copilot, it's essential to keep in mind that the structure of the questions can significantly affect the response that Copilot gives. To interact with Copilot effectively, is crucial to ask clear and specific questions and provide context to help the AI better understand your intent.
 
 ## See also
-- [Copilot generative answers in Power Automate for desktop](/desktop-flows/copilot-in-power-automate-for-desktop.md)
+- [Copilot generative answers in Power Automate for desktop](desktop-flows/copilot-in-power-automate-for-desktop.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
