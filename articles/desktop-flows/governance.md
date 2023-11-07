@@ -400,6 +400,19 @@ You can use the following registry entry to allow switching machine registration
 
 - **1**: Machine registration can switch to another tenant.
 
+## Prevent your users from using the Copilot's generative answers capability
+
+To prevent your users from using the Copilot’s generative answers capability, you can toggle off the “Copilot help assistance in Power Automate via Bing” setting in the power platform admin center. 
+**Note:** You need to be a tenant administrator to access the settings
+
+## Prevent users from sending Copilot related feedback 
+As a tenant admin you can prevent your users from sending feedback to Microsoft by disabling the “disableSurveyFeedback” Tenant setting. You can find more information about viewing and setting tenant settings here: 
+- [List tenant settings (preview)](https://learn.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](https://learn.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+
+## Prevent your users from using any Copilot capability
+To prevent your users from using any Copilot capability please contact support to disable all Copilot functionality in your tenant.
+
 ### See also
 
 - [Create Power Automate desktop flows](create-flow.md).
