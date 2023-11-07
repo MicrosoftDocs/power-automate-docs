@@ -2,11 +2,10 @@
 title: Share/export a desktop flow
 description: Share/export a desktop flow
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 09/06/2021
-ms.author: marleon
+ms.author: quseleba
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -32,7 +31,11 @@ If you've signed in with an organization premium account, you can also choose on
 
     To share a desktop flow with other users in your organization, give them specific permissions to access the flow. You can find more information regarding sharing flows through Power Automate portal in [Share desktop flows](../manage.md#share-desktop-flows).
 
-1. Export a solution that contains the desktop flow.
+  > [!NOTE]
+  > Desktop flows connection cannot be shared with other users.
+
+2. Export a solution that contains the desktop flow.
 
     To move a desktop flow from one environment to another, host it in a solution. For more information about importing flows into solutions and building solution-aware flows, see [Overview of solution-aware flows](../../overview-solution-flows.md).
+
 
