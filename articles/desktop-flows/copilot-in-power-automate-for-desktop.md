@@ -49,7 +49,7 @@ In the Copilot window, you can ask any product-related questions or use one of o
 The answer generated will contain a link to the documentation page that you can refer to if you need additional information. Make sure that you always review AI-generated content.
 
 
-## Governance
+## Prevent your users from using the Copilot's generative answers capability
 
 To prevent your users from using the Copilot’s generative answers capability, you can toggle off the “Copilot help assistance in Power Automate via Bing” setting in the power platform admin center. 
 **Note:** You need to be a tenant administrator to access the settings
