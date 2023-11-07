@@ -72,5 +72,5 @@ Organization administrators can view, export, and delete the feedback from their
 ### See also
 
 - [FAQ for Generative Answers in Power Automate for desktop](./faqs-copilot-generative-answers-power-automate-desktop.md)
-- [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
+- [Responsible AI FAQs for Power Automate](./responsible-ai-overview.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
