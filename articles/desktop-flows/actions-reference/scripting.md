@@ -30,17 +30,30 @@ All scripting actions follow the basic structure of the respective programming o
 > [!NOTE]
 > Supported version for **C#:** v 5.0. For **VB.NET**: v 11.0
 
-## Natural language to code powered by Copilot (preview)
+## Natural language to script powered by Copilot (preview)
 Natural language to code is a new Copilot capability added in Power Automate for desktop. It lets you quickly generate code used in the scripting actions by describing it. This feature is available in the following scripting actions:
 - **Run PowerShell**
 - **Run VBScript**
 - **Run DOS command**
 - **Run Python** and
 - **Run JavaScript**
+  
+## Availability by region
 
-### Generating code using natural language
+Currently, Copilot in Power Automate for desktop is only available in environments located in the US.
 
-To generate code in one of the 
+## Availability by account type
+
+Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
+
+**Note:** If your environment is in the region listed above and you still need to see the Copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the Copilot functionality.
+
+### How to generate scripts using Copilot and natural language
+
+To generate scripts in one of the supported scripting actions just drag and drop the action in the designer and press the "Generated script with Copilot" button as shown in the image below:
+
+:::image type="content" source="media\nl2script\powershell_action.png" alt-text="Screenshot of the run PowerShell action with the Generate script with Copilot button highlighted":::
+
 
 
 ## Working with variables in scripting actions
