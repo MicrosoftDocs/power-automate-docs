@@ -1,5 +1,5 @@
 ---
-title: Use Copilot to analyze automation activity
+title: Use Copilot to analyze desktop flow activity (preview)
 description: Use Copilot to analyze flow runs, errors, machines and more by asking questions in natural language. 
 ms.topic: conceptual
 ms.date: 10/30/2023
@@ -13,7 +13,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Get started with Copilot in desktop flow activity (preview)
+# Use Copilot to analyze desktop flow activity (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
@@ -25,7 +25,7 @@ Understanding automation performance is key to achieving operational excellence 
 
 The latest advancements in **AI** provide us with unprecedented opportunities to explore new automation health monitoring use-cases that could include anything from simple data exploration to anomaly detection smart recommendations and even self-healing bots.
 
-With the **Copilot in desktop flow activity (preview)** we're making the first step towards a new direction, allowing you to **democratize access to insights** by simply asking the Copilot desktop flow activity-specific questions using natural language.
+With **Copilot now able to analyze desktop flow activity (preview)** we're making the first step in a new direction, allowing you to **democratize access to insights** by simply asking copilot desktop flow activity-specific questions using natural language.
 
 > [!IMPORTANT]
 >
@@ -42,7 +42,7 @@ With the **Copilot in desktop flow activity (preview)** we're making the first s
 
 ## How does it work?
 
-This Copilot experience is powered by the [Azure Open AI](/azure/ai-services/openai/overview) service and is capable of translating user prompts into valid [Dataverse FetchXml queries](#what-are-fetchxml-queries). Initially, these queries are focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but extension to more areas of the automation suite will follow.
+This copilot experience is powered by the [Azure Open AI](/azure/ai-services/openai/overview) service and is capable of translating user prompts into valid [Dataverse FetchXml queries](#what-are-fetchxml-queries). Initially, these queries are focused on and optimized for **desktop flow activity**, such as runs, flows, errors, and machines but extension to more areas of the automation suite will follow.
 
 ### High-level process
 
@@ -90,7 +90,7 @@ The following list provides some examples of prompts that can be used as starter
 
 ### Multi-turn prompts
 
-*Multi-turn* prompt means you're having an ongoing conversation with the Copilot, where it remembers the context of the previous messages in the conversation. It's not just answering one-off questions, it's engaging in a dialogue with you, where each response is based on what's been said before.
+In the context of AI, *multi-turn* prompts allow you to have an ongoing conversation with the copilot, where it remembers the context of the previous messages in the conversation. It's not just answering one-off questions, it's engaging in a dialogue with you, where each response is based on what's been said before.
 
 > [!NOTE]
 > When engaging in a multi-turn conversations, note that we currently keep track of the five most recent questions only. This means that we will start clearing the prompts that were entered first and only keep the latest five. To improve response quality, we suggest limiting your follow-up questions to four and then restarting the chat by following the steps provided [here](#clearing-previous-prompt-context-to-start-over).
@@ -99,7 +99,7 @@ The following list provides some examples of prompts that can be used as starter
 
 | **Turn** | **Prompt and reply**
 |-------------------------|-------------------------|
-|:::image type="icon" source="media/analyze-automation-activity-copilot/1.png":::| **User**: Show me a distribution of successful vs failed flows during last quarter|
+|:::image type="icon" source="media/analyze-automation-activity-copilot/1.png":::| **User**: show me a distribution of successful vs failed flows during last quarter|
 ||**Copilot**: *Here is the distribution of successful vs failed flows during the last quarter.*|
 |:::image type="icon" source="media/analyze-automation-activity-copilot/2.png":::| **User**: what was the top error of those that failed?|
 ||**Copilot**: *Here is the top error of those that failed.*|
@@ -118,7 +118,7 @@ You can influence Copilot's output format by asking for explicit output types li
 
 ### Clearing previous prompt context to start over
 
-If you wish to reset the conversation with Copilot you can select the three dots `...` next to the Copilot name and select **New chat**.
+If you wish to reset the conversation with Copilot you can select the three dots `...` next to the copilot name and select **New chat**.
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-new-chat.png" alt-text="Screenshot of a Copilot 'New chat' option to reset a conversation." lightbox="media/analyze-automation-activity-copilot/copilot-new-chat.png":::
 
@@ -128,7 +128,7 @@ The following steps guide you through the process to validate (and potentially r
 
 ### Step 1: Make a copy of the FetchXml query
 
-After submitting your query to the Copilot, you'll get a reply that includes a link labeled "Show code." Select this link and then select the copy icon located in the upper right corner of the FetchXml box to copy the code.
+After submitting your query to the copilot, you'll get a reply that includes a link labeled "Show code." Select this link and then select the copy icon located in the upper right corner of the FetchXml box to copy the code.
 
 ### Step 2: Create cloud flow and test FetchXml query
   
@@ -146,7 +146,7 @@ After submitting your query to the Copilot, you'll get a reply that includes a l
   
 ### Step 3: Understanding the results  
 
-Let's assume we had asked the Copilot '*how many failed vs succeeded flows did we have last month?'* This would produce a [FetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) query similar to the following:
+Let's assume we had asked the copilot '*how many failed vs succeeded flows did we have last month?'* This would produce a [FetchXml](/power-apps/developer/data-platform/use-fetchxml-construct-query) query similar to the following:
 
 ```xml
 <fetch version="1.0" mapping="logical" aggregate="true" count="3" page="1">
@@ -175,23 +175,23 @@ So, if you wanted to know how many times a specific flow has been run, you would
 
 ## Understanding Copilot replies on problematic prompts
 
-The following table shows default responses that are returned when the Copilot is unable to understand your question, intent or generate a valid answer.
+The following table shows default responses that are returned when the copilot is unable to understand your question, intent or generate a valid answer.
 
 | **Copilot reply** | **Details**
 |-------------------------|-------------------------|
 | *Sorry, something went wrong. Please try again.* |  Indicates that an unexpected error occurred, please rephrase your question and try again. |
-| *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that your question couldn't be translated into a valid fetchXml query. Rephrase your question and try again. |
+| *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that your question couldn't be translated into a valid fetchXml query. Rephrase your question and try again. |
 | *Sorry, Copilot is at capacity and temporarily unavailable — please try again in a little while.* |  Indicating that there are resource constraints on the backend. Please retry your question after a short time. |
 | *Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.* |  Indicates that your question might include potentially harmful content and has been blocked by the backend service. Remove any potentially harmful content from your question and try again. |
-| *Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the generated fetchXml is invalid or that the query failed when we tried to execute it. Rephrase your question and try again. |
-| *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by the Copilot, visit our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXml](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
+| *Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the generated fetchXml is invalid or that the query failed when we tried to execute it. Rephrase your question and try again. |
+| *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by the copilot, visit our [documentation page](#get-started-with-copilot-in-desktop-flow-activity-preview).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXml](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
 
 ## Known issues and limitations
 
-The following list contains known limitations of the Copilot in desktop flow activity (preview).
+The following list contains known limitations of the copilot in desktop flow activity (preview).
 
 - Copilot is a new technology that is still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
-- This Copilot is currently only available in Dataverse environments based in the United States.
+- Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot may return wrong or incomplete data and fetchXml queries.
 - Copilot is initially only capable to answer questions about desktop flow activity such as errors, machines, past and current runs.
 - In multi-turn conversations we keep context of the last five question only. If you encounter wrong or incomplete results, consider resetting the conversation by following these [steps](#clearing-previous-prompt-context-to-start-over).
