@@ -30,6 +30,21 @@ All scripting actions follow the basic structure of the respective programming o
 > [!NOTE]
 > Supported version for **C#:** v 5.0. For **VB.NET**: v 11.0
 
+## Natural language to code powered by Copilot (preview)
+Natural language to code is a new Copilot capability added in Power Automate for desktop. It lets you quickly generate code used in the scripting actions by describing it. This feature is available in the following scripting actions:
+- **Run PowerShell**
+- **Run VBScript**
+- **Run DOS command**
+- **Run Python** and
+- **Run JavaScript**
+
+### Generating code using natural language
+
+To generate code in one of the 
+
+
+## Working with variables in scripting actions
+
 To declare variables in scripting actions and return results in Power Automate, use the following commands:
 
 - To declare new variables in PowerShell scripts, use the **$** notation. To return values from [Run PowerShell script](#runpowershellscript) actions to Power Automate, use the **Write-Output** command.
