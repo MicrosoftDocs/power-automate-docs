@@ -38,7 +38,6 @@ The intended use of Copilot's generative answers is to help users find quick and
   
 ### What operational factors and settings allow for effective and responsible use of Copilot's generative answers capability?
 
-- Always review results from Copilot
 - You should constantly review the answers provided by the Copilot's generative answers capability before using them.
 
 
