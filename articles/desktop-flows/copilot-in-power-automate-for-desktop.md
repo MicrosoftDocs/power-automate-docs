@@ -67,7 +67,7 @@ As a tenant admin you can prevent your users from sending feedback to Microsoft 
 - [Set TenantSettings](https://learn.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
 
 ## Data subject rights requests on user feedback
-Organization administrators can view, export, and delete the feedback from their users by signing in to the [M365 admin center](admin.microsoft.com) and navigating to the “Health > Product feedback” menu. 
+Organization administrators can view, export, and delete the feedback from their users by signing in to the [M365 admin center](https:\\admin.microsoft.com) and navigating to the “Health > Product feedback” menu. 
 
 ### See also
 
