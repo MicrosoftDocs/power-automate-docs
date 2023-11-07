@@ -4,7 +4,7 @@ description: See all the available text actions.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/20/2023
+ms.date: 10/24/2023
 ms.author: matp
 ms.reviewer: gtrantzas
 contributors:
@@ -185,6 +185,11 @@ This action doesn't include any exceptions.
 ## <a name="trim"></a> Trim text
 
 Removes all occurrences of white space characters (such as space, tab, or new line) from the beginning and/or end of an existing text.
+
+The **Trim text** action receives a text value as an input and produces a text output according to the **What to trim** parameter. The available options of the **What to trim** parameter are the following:
+- whitespace characters from the beginning
+- whitespace characters from the end
+- whitespace characters from the beginning and end
 
 ### Input parameters
 
