@@ -57,7 +57,7 @@ To prevent your users from using the Copilot’s generative answers capability, 
 ## Help us improve this feature
 
 You can send feedback by pressing the thumbs-up or thumbs-down icons underneath the AI-generated content. Once you do, a feedback dialog will appear, which you can use to submit feedback to Microsoft.
-:::image type="content" source="/media/pad_generative_answers/feedback_dialog1.png" alt-text="Animated gif that shows the Copilot answering a user's question from the designer.":::
+:::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Animated gif that shows the Copilot answering a user's question from the designer.":::
 
 **Note:** If you cannot see the dialog, your tenant admin might have turned it off.
 
