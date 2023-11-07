@@ -8,7 +8,7 @@ ms.author: cochamos
 ms.reviewer: pending
 ---
 
-# Copilot in Power Automate for desktop
+# Copilot in Power Automate for desktop (preview)
 
 
 [This article is prerelease documentation and is subject to change.]
