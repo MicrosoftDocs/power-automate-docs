@@ -17,19 +17,14 @@ search.audienceType:
 
 ## Prerequisites
 
-> [!IMPORTANT]
-> Gateways for desktop flows are no longer supported. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
-
 - A registered [machine](manage-machines.md) or [machine group](manage-machine-groups.md) that will run the triggered desktop flows. Machines are the physical or virtual devices you use to automate desktop processes. Machine groups allow you to handle multiple machines as one entity and distribute your automation workload.
 
 - A work or school account.
 
-   >[!IMPORTANT]
-   >You must use the same work or school account to sign in to Power Automate and to sign in to your Windows device.
-
 - A configured [desktop flow connection](desktop-flow-connections.md).
 
-- To run the triggered desktop flows in attended mode, you need an active Windows user session that matches the user's name of your desktop flow connection. In addition, the session must be unlocked. When an attended desktop flow starts on the target machine, avoid interacting with your device until the run completes.
+- To run the triggered desktop flows, you need to have the appropriate license (for attended runs) or an unattended add-on (for unattended runs). The user who needs to have the appropriate license is the creator of the connection.
+  
 
 ## Trigger a desktop flow from a cloud flow
 
