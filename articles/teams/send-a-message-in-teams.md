@@ -3,20 +3,18 @@ title: Send a message in Teams using Power Automate
 description: Learn the different ways in which you can send a message in Microsoft Teams
 author: natalie-pienkowska
 contributors:
-  - natalie-pienkowska
+  - kewaiss
   - kartikraop
   - hamenon-ms
   - v-aangie
-ms.author: kisubedi
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 01/12/2023
 ---
 
 # Send a message in Teams using Power Automate
-
-[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
 
 This article covers different ways in which you can send a message in Teams.
 
