@@ -27,7 +27,7 @@ You need to set up your Power BI workspace to connect it to the process mining c
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-1. Search for **azure active directory** in the search bar and select **Azure Active Directory**.
+1. Search for **azure active directory** in the search bar and select **Microsoft Entra ID**.
 
 1. Under **Manage**, select **Users**.
 
@@ -66,6 +66,8 @@ If you haven't done this yet, install the Azure tools.
 
     1. Expand the dropdown menu for **Embed content in apps** and enable it by toggling the slider.
     2. Expand the dropdown menu for **Allow service principals to use Power BI APIs** and enable it by toggling the slider.
+  
+    :::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles.png" alt-text="Screenshot of the developer settings.":::
 
 1. Return to the Power BI home page.
 
@@ -176,5 +178,3 @@ If you encounter issues or error messages, go to [Issues with your own Power BI 
 ### See also
 
 [Workspaces in Power BI](/power-bi/collaborate-share/service-new-workspaces)
-
-

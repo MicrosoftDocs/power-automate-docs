@@ -724,6 +724,11 @@
       "source_path": "articles/mobile-monitor-activity.md",
       "redirect_url": "/power-automate/mobile/manage-cloud-flows",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/minit/process-mining-copilot-in-process-analytics.md",
+      "redirect_url": "/power-automate/process-mining-copilot-in-process-analytics",
+      "redirect_document_id": false
     }
   ]
 }

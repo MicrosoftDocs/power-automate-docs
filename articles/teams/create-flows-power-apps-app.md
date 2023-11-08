@@ -2,14 +2,16 @@
 title: Create flows using the Power Apps app in Microsoft Teams | Microsoft Docs
 description: Create flows using the Power Apps app in Teams.
 author: msftman
-ms.devlang: na
+contributors:
+  - kewaiss
+  - v-aangie
 ms.subservice: teams
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/16/2020
-ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.author: kewaiss
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser

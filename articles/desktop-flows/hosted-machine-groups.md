@@ -130,6 +130,8 @@ Custom VM images must meet the following requirements:
  - Generalized VM image
  - 127 GB limit on VM image size
  - Microsoft Edge version 80 or higher
+ - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
+
  
 Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
 
@@ -174,7 +176,7 @@ To use the image in Power Automate, you need to share the image with Power Autom
 
 > [!NOTE]
 > If you can't find the application above, verify that the application exists in your tenant and provision it if necessary.
-> To verify that the application exists, go to [Azure portal](https://portal.azure.com/) > **Azure Active Directory** > **Enterprise applications** > **All applications**, and search for application id: **51699864-8078-4c9e-a688-09a1db1b2e09**. If you can't find the application, provision it using the following command:
+> To verify that the application exists, go to [Azure portal](https://portal.azure.com/) > **Microsoft Entra** > **Enterprise applications** > **All applications**, and search for application id: **51699864-8078-4c9e-a688-09a1db1b2e09**. If you can't find the application, provision it using the following command:
 > ```
 > az ad sp create --id 51699864-8078-4c9e-a688-09a1db1b2e09
 > ```
@@ -383,7 +385,7 @@ The **Desktop Flows Machine Image Admin** role only brings full privileges on th
 
 Hosted machine groups supports work and school accounts. If you use your work or school account, your hosted machine group will have access to your resources that are part of the business plan linked to your organization, such as Office, SharePoint, Azure, and more.
 
-When you register a hosted machine group with this access option, you won't be prompted for credentials. Instead, the machine will be registered to your Azure Active Directory (Azure AD), and you'll be able to sign in with your Azure AD credentials. To [create a desktop flow connection](desktop-flow-connections.md) to target the hosted machine group, enter your work or school account email address and the associated password.
+When you register a hosted machine group with this access option, you won't be prompted for credentials. Instead, the machine will be registered to your Microsoft Entra, and you'll be able to sign in with your Microsoft Entra credentials. To [create a desktop flow connection](desktop-flow-connections.md) to target the hosted machine group, enter your work or school account email address and the associated password.
 
 :::image type="content" source="media/hosted-machine-groups/use-work-school-account-option.png" alt-text="Screenshot of the Use your work or school account option in the hosted machine group creation wizard.":::
 

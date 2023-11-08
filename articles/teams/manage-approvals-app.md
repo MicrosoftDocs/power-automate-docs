@@ -5,17 +5,13 @@ services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: teams
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2020
-ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.author: kewaiss
+ms.reviewer: angieandrews
 ---
 
 # Manage your approvals from the approvals app in Teams

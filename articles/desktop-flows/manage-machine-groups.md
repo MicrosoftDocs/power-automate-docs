@@ -1,12 +1,11 @@
 ---
 title: Manage machine groups
 description: Group multiple machines together to help distribute your automation workload and optimize productivity.
-author: georgiostrantzas
-
+author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/08/2023
-ms.author: marleon
+ms.author: matp
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -89,7 +88,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 > [!IMPORTANT]
 >
 > - If you use local Windows accounts, all machines in the group must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
->- If you use Active Directory or Azure Active Directory joined machines, confirm that the user account in the desktop flow connection can access all the machines in the cluster.
+>- If you use Active Directory or Microsoft Entra joined machines, confirm that the user account in the desktop flow connection can access all the machines in the cluster.
 
 ## Maintenance mode for machine groups
 
@@ -222,5 +221,5 @@ Environment admins can also restrict machine registration to a specific set of u
 
 ## Other known limitations
 
-- Machine groups aren't available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows from the cloud [using an on-premises data gateway](install.md#install-an-on-premises-data-gateway).
+- Machine groups aren't available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows using machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 - When you trigger multiple desktop flows in parallel on a machine group, machine selection may take up to 50 seconds before assigning the desktop flow to an available machine. In these rare cases, desktop flow runs might seem to be running sequentially, if they have short run durations.

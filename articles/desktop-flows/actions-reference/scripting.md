@@ -5,8 +5,8 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/05/2023
-ms.author: dipapa
+ms.date: 10/20/2023
+ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
@@ -103,6 +103,8 @@ Executes a DOS command or console application in invisible mode and retrieves it
 
 Executes some custom VBScript code and retrieves its output into a variable.
 
+You can use this action to include your own custom VBScript code in the desktop flow, while also having the ability to use variables therein, to generate dynamic VBScript content if needed.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
@@ -144,6 +146,8 @@ This action doesn't include any exceptions.
 ## <a name="runpowershellscript"></a> Run PowerShell script
 
 Executes some custom PowerShell script and retrieves its output into a variable.
+
+You can use this action to include your own custom PowerShell code in the desktop flow, while also having the ability to use variables therein, to generate dynamic PowerShell content if needed.
 
 ### Input parameters
 
