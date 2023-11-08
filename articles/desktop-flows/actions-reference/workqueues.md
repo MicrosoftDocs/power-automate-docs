@@ -68,7 +68,7 @@ The **Update work queue item action** action requires the following arguments.
   |----------      |----------|---------|---------------|-----------------|
   | **Work queue item** |No    |Text |               |Work queue item variable that has been previously returned by the queue orchestrator|
 | **Status** |No    |Processed, Generic Exception| Processed |Update the work queue item being processed using a status from the list of options.|
-| **Processing result** | Yes | Text| | Custom processing notes or value to set append  to the queue item being processed |
+| **Processing result** | Yes | Text| | Custom processing result or value to set append  to the queue item being processed |
 
 #### Exceptions
 
@@ -112,25 +112,24 @@ The **Add work queue item** action requires the following arguments.
 | **Work queue not found** | The value entered into the work queue parameter is invalid|
 | **Failed to add item into work queue** | The work queue item couldn't be added into the work queue.  Bad request - error in query syntax |
 
-## Requeue item and add delay
+## Requeue item with delay
 
-The **Requeue item and add delay** action allows users to to re-add a queue item being processed in the desktop flow, back into it's originating queue.  In addition, the queued item can be held and released until a defined time.
+The **Requeue item with delay** action allows users to to re-add a queue item being processed in the desktop flow, back into it's originating queue.  In addition, the queued item can be held and released until a defined time.
 
-:::image type="content" source="media\workqueues\Requeueworkqueueitem.png" alt-text="Screenshot of the requeue work queue item action." lightbox="media\workqueues\Requeueworkqueueitem.png":::
+:::image type="content" source="media\workqueues\RequeueWorkQueueItemWithDelay.png" alt-text="Screenshot of the requeue work queue item action." lightbox="media\workqueues\RequeueWorkQueueItemWithDelay.png":::
 
 ### requeueworkqueueitemaction
 
-The **Requeue item and add delay** action requires the following arguments.
+The **Requeue item with delay** action requires the following arguments.
 
 #### Input Parameters
 
 | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
   | **Work queue item** |No    |Work queue item |               |The work queue item to add the item into|
-| **Delay until** |No    |Datetime value| Normal |The dateetime value applied to delay the queue item until|
+| **Delay until** |No    |Datetime value| Normal |The datetime value applied to delay the queue item until|
 | **Expires** | Yes | Datetime value| | Custom expiration time for the item being requeued|
-
-| **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
+| **Processing result** | Yes | Text value, Numeric value| | Custom processing result to be added to the new queue item|
 
 #### Exceptions
 
