@@ -172,7 +172,7 @@
       - name: Overview
         href: ./teams/overview.md
         displayName: Use flows with Microsoft Teams
-      - name: Install the Power Automate app
+      - name: Install the Workflows app
         href: ./teams/install-teams-app.md
       - name: Create flows in Teams
         href: ./teams/teams-app-create.md
@@ -711,7 +711,7 @@
       href: ./desktop-flows/actions-reference/office365outlook.md
     - name: Work queues
       href: ./desktop-flows/actions-reference/workqueues.md
-    - name: Custom actions (preview)
+    - name: Custom actions
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
       href: ./desktop-flows/actions-reference/cloudconnectors.md  
