@@ -48,7 +48,7 @@ A variable named **WebPageText** stores the downloaded text is stored. If you us
 Moreover, users can download a file from the web through the **Click download link on web page** action, part of the **Browser automation** group of actions.
 
 > [!IMPORTANT]
-> The **Click download link on web page** action only works in the Internet Explorer web browser, which has reached the end of its product lifecycle. To find more information about the **Click download link on web page** action, go to [Click download link on web page](webautomation.md#input-parameters-19).
+> The **Click download link on web page** action only works in the Internet Explorer web browser, which has reached the end of its product lifecycle. To find more information about the **Click download link on web page** action, go to [Click download link on web page](webautomation.md).
 
 Apart from the HTTP actions, Power Automate enables users to interact with the web application through the browser automation actions. To find more information about browser automation actions, go to [Browser automation](webautomation.md).
 
