@@ -589,7 +589,10 @@ This action doesn't produce any variables.
 
 ## <a name="clickdownloadlink"></a> Click download link on web page
 
-Click on a link in a web page that results in downloading a file. Note the specific action works only in the Internet Explorer web browser. 
+Select a link in a web page that results in downloading a file.
+
+> [!IMPORTANT]
+> The **Click download link on web page** action only works in the Internet Explorer web browser, which has reached the end of its product lifecycle. We don't recommend you use this action, use [HTTP actions](web.md#downloadfromweb) instead.
 
 ### Input parameters
 

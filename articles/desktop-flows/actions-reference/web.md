@@ -2,7 +2,6 @@
 title: HTTP actions reference
 description: See all the available HTTP actions.
 author: jpapadimitriou
-
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/23/2023
@@ -46,10 +45,12 @@ If the web server requires authentication, populate your credentials in the appr
 
 A variable named **WebPageText** stores the downloaded text is stored. If you use this action to download files, you can select to save them locally on your desktop.
 
-Moreover, user can download a file from the web through the **Click download link on web page** action, part of the **Browser automation** group of actions. Note the specific action works only in the Internet Explorer web browser. To find more information about Click download link on web page action, go to [Click download link on web page](webautomation.md#input-parameters-19).
+Moreover, users can download a file from the web through the **Click download link on web page** action, part of the **Browser automation** group of actions.
 
-> [!NOTE]
-> Apart from the HTTP actions, Power Automate enables generally users to interact with web application through the browser automation actions. To find more information about browser automation actions, go to [Browser automation](webautomation.md).
+> [!IMPORTANT]
+> The **Click download link on web page** action only works in the Internet Explorer web browser, which has reached the end of its product lifecycle. To find more information about the **Click download link on web page** action, go to [Click download link on web page](webautomation.md#input-parameters-19).
+
+Apart from the HTTP actions, Power Automate enables users to interact with the web application through the browser automation actions. To find more information about browser automation actions, go to [Browser automation](webautomation.md).
 
 ## <a name="downloadfromweb"></a> Download from web
 
