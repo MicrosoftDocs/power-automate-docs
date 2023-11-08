@@ -84,7 +84,7 @@ Each XML configuration item follows these rules:
   - `RDP.Client.ConnectTimeOut`: The timeout period for a Power Automate for desktop client module, running on the host, such as the designer or robot, to establish a connection with the Remote Desktop agent that is running on the remote machine. This setting might be useful in case a Remote Desktop automation is performed and an error that indicates that a connection with the Remote Desktop Agent couldn't be established for a specific period of time. Increasing the default timeout value of this setting might resolve the issue.
   - `RDP.Client.CallTimeOut`: The timeout period for a Power Automate for desktop client module, running on the host, such as the designer or robot, to send or receive messages through a connection with the Remote Desktop agent that is running on the remote machine. This setting might be useful in case a Remote Desktop automation is performed and an error that indicates a connection with the Remote Desktop Agent that a message couldn't be sent or received for a specific period of time. Increasing the default timeout value of this setting might resolve the issue.
   - `Recorder.LaunchBrowserTimeout`: The timeout period for the launch browser option inside the recorder. Increasing this might avoid issues with extension installation popup windows appearing when choosing the option in the recorder.
-- **value**: The timeout value. The value should be in the format HH:MM:SS. For example, if you want to set the timeout to five seconds then use 00:00:05 as value.  
+- `value`: The timeout value. The value should be in the format HH:MM:SS. For example, if you want to set the timeout to five seconds then use 00:00:05 as value.  
 
 ## Sample XML configuration file
 
