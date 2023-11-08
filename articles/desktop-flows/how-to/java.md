@@ -2,11 +2,10 @@
 title: Automate Java applications
 description: Automate Java applications 
 author: mariosleon
-
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 10/08/2021
-ms.author: marleon
+ms.date: 10/27/2023
+ms.author: nimoutzo
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -18,13 +17,20 @@ search.audienceType:
 ---
 # Automate Java applications
 
+Currently, Power Automate for desktop supports the use of UI automation in all Java apps and applets for the following Java versions:
+
+- Java apps: Java version 7 and above.
+- Java applets: Java version 7 and version 8.
+
+The following sections include information for enabling the UI automation in Java applets.
+
 ## Installing Java configuration
 
 In order to automate Java applications, particular settings must be in place. 
 
 To install the Java configuration manually, after Power Automate for desktop has been installed, navigate to the installation folder (**C:\Program Files (x86)\Power Automate Desktop**) and run the **PAD.Java.Installer.exe** as an administrator. 
 
-Logs for Java automation with Power Automate for desktop can be found in the **%temp%/ java_automation_log** folder (e.g. **C:\Users\username\AppData\Local\Temp\java_automation_log**). 
+Logs for Java automation with Power Automate for desktop can be found in the **%temp%/ java_automation_log** folder (for example, **C:\Users\username\AppData\Local\Temp\java_automation_log**). 
 
 ## Utilization of the default UI automation instead of Java UI automation 
 
