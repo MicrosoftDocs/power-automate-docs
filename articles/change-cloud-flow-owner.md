@@ -108,7 +108,7 @@ To change the owner of a flow to a Service Principal application user:
 
 To have a Service Principal own and run a flow, follow these steps.
 
-1. [Create a Service Principal application user](/power-platform/admin/create-users#create-an-application-user) representing the AAD Service Principal.
+1. [Create a Service Principal application user](/power-platform/admin/create-users#create-an-application-user) representing the Microsoft Entra Service Principal.
 1. [Share connections](/power-apps/maker/canvas-apps/share-app-resources#connections) with the Service Principal application user.
 1. Change the owner of the flow to the Service Principal application user using the steps detailed here: **Details** > **Edit** > **Owner**.
 1. [Turn on the flow](/power-automate/disable-flow) so it's ready to run.
@@ -120,5 +120,3 @@ To have a Service Principal own and run a flow, follow these steps.
 
 - [(Video) Microsoft Power Automate Tutorial - Export Import](https://www.youtube.com/watch?v=K7_xWJvEPUc)
 - [The owner of a flow left the organization. How can we ensure it works without interruptions?](/power-platform/admin/power-automate-licensing/faqs#the-owner-of-a-flow-left-the-company-how-can-we-ensure-it-works-without-interruptions#the-owner-of-a-flow-left-the-company-how-can-we-ensure-it-works-without-interruptions)
-
-
