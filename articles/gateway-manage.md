@@ -10,11 +10,11 @@ tags: ''
 
 ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/27/2022
-ms.author: deonhe
+ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -33,7 +33,7 @@ With a gateway, you can connect to on-premises data over the following connectio
 * DB2
 * Desktop flows
 * File System
-* Http with Azure AD
+* Http with Microsoft Entra ID
 * Informix
 * MySQL
 * Oracle Database
