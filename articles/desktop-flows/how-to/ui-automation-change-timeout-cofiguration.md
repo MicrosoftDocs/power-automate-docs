@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 11/02/2023
-ms.author: NikosMoutzourakis
+ms.author: nimoutzo
 ms.reviewer: NikosMoutzourakis
 contributors:
 - jpapadimitriou
@@ -16,7 +16,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Timeout configuration for UI and browser automation
 
 Power Automate for desktop provides various components, including the designer, recorder, Power Automate agent for virtual desktops, and actions from UI automation and browser automation groups. However, in some cases, these components might fail due to time-out constraints. To overcome this issue, users can adjust the time-out settings for distinct desktop and web automation scenarios. When you modify a configuration file and add the appropriate key or value pairs for the desired scenarios, users can customize the timeout duration for specific operations based on the specified configuration value.
@@ -32,7 +31,7 @@ If you need to stop the 'PAD.BrowserNativeMessageHost' process, you should first
 1. In File Explorer, go to the `%LOCALAPPDATA%\Microsoft\Power Automate Desktop` folder.
 1. Check if a folder named **Configurations** exists. If not, create it.
 1. Create a new file with name *UIAutomationTimeOut.config* inside the **Configurations** folder.
-1. Copy the below XML code inside the file. Add the key and value pairs you need, inside the <appSettings> section as shown in the following example.
+1. Copy the below XML code inside the file. Add the key and value pairs you need, inside the `appSettings` section as shown in the following example.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
