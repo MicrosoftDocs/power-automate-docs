@@ -481,7 +481,7 @@ Power Automate enables you to restart your hosted machines from the Power Automa
 1. Select **Restart machine**.
 
 > [!NOTE]
-> The hosted machine is restart may take a few minutes to complete, please wait for a few minutes before trying to [access the hosted machine](#access-a-hosted-machine).
+> The hosted machine is restart may take a few minutes to complete. Please wait for a few minutes before trying to [access the hosted machine](#access-a-hosted-machine).
 
 :::image type="content" source="media/hosted-machines/restart-hosted-machine.png" alt-text="Screenshot of the restart hosted machine capability.":::
 
