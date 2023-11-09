@@ -356,11 +356,26 @@ For instance, you may have two groups of bots, one for your sales automations an
 
 ## Update VM Image used by the hosted machine group
 
-You can update the VM image that is used by your hosted machine group. This feature allows you to update the VM image to be used when creating new hosted bots in your hosted machine group without needed to delete and recreate it.
+"You can update the VM image that is used by your hosted machine group. This is beneficial in situations where a custom VM image requires software updates and/or additional customization to run desktop flows. This feature allows you to update the VM image to be used when creating new hosted bots in your hosted machine group, eliminating the need to delete and recreate it
 
-:::image type="content" source="media/hosted-machine-groups/vm-image-update-button.png" alt-text="Screenshot of the VM image update button on the hosted machine group details page.":::
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. Select **Monitor** > **Machines**.
+
+1. Select **Machine groups**.
+
+1. Select one of your hosted machine groups.
+
+1. Select **Update VM image** at the top of the page.
+   
+1. From the drop  down list, select the updated VM image to be used by the hosted machine group.
+
+Upon updating of VM image, all existing bots (if any) will complete their ongoing desktop flow runs prior to being reprovisioned with the new VM image.
+
 
 :::image type="content" source="media/hosted-machine-groups/vm-image-update-select.png" alt-text="Screenshot of the VM image update action on the hosted machine group details page.":::
+   
+
 
 ## Permissions based on security roles
 
