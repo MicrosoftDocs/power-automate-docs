@@ -21,7 +21,7 @@ Here are some of the key features of hosted machine group:
 - Run unattended desktop flows at scale.
 - Auto-scale the number of bots in your hosted machine group based on current workloads.
 - Load balance bots across all hosted machine groups in an environment.
-- Work or school account integration (preview): Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
+- Work or school account integration: Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
 - Vanilla or Custom VM images: Use a vanilla VM image provided by Microsoft or personalize your hosted machine group by providing your own Windows image directly from your Azure Compute Gallery.
 
 ## Licensing requirements
@@ -63,7 +63,7 @@ To create a hosted machine group, you need access to the default VM image that i
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to  **Monitor** > **Machines** > **VM images (preview)**.
+1. Go to  **Monitor** > **Machines** > **VM images**.
 
 1. Select the default windows desktop image from the list, and then **Manage access**.
 
@@ -201,21 +201,23 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines**.
+1. Select **New** > **VM image**.
 
-1. Select **New > VM image (preview)**.
-
-1. Enter an image name and a description.
+1. Enter an image name, a description, and the usage.
 
     - **Image name:** A unique name to identify the image.
     - **Image description:** An optional description for the image.
+    - **Use with:** Select either **Hosted machine group** or **Both**, if you want the image to work with both hosted machines and hosted machine groups.
 
-1. Select one of the images that you've access from the Azure Compute Gallery.
+1. Select one of the images that you have access to from the Azure Compute Gallery.
 
-    :::image type="content" source="media/hosted-machine-groups/new-custom-vm-image.png" alt-text="Screenshot of dialog to create a new custom VM image.":::
+    :::image type="content" source="media/hosted-machine-groups/new-custom-vm-image.png" alt-text="Screenshot of a new VM image.":::
 
-> [!NOTE]
-> The image needs to be replicated in the same Azure region as the hosted machine.
+    > [!NOTE]
+    >
+    > - The image needs to be replicated in the same Azure region as the hosted machine group.
+    > - The list of images available may vary depending on the usage you are selecting.
+
 
 ### Share the image
 
