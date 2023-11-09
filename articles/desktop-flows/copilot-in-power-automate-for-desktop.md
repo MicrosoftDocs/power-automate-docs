@@ -1,6 +1,6 @@
 ---
 title: Get started with Copilot in Power Automate for desktop
-description: Learn how to access and use Copilot in desktop flows.
+description: Learn how to access and use Copilot in Power Automate for desktop flows.
 ms.date: 11/01/2023
 ms.topic: Copilot
 author: cochamos
@@ -10,66 +10,69 @@ ms.reviewer: pending
 
 # Copilot in Power Automate for desktop (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-[This article is prerelease documentation and is subject to change.]
-
-
-Copilot’s generative answers capability in Power Automate for desktop provides answers to product-related questions. Just type your question or select one from the predefined prompts, and the Copilot will find the answer for you. You can access this feature from both the console and the designer.
-
+The copilot generative answers capability in Power Automate for desktop provides answers to product-related questions. Just type your question or select one from the predefined prompts, and the copilot finds the answer for you. You can access this feature from both the console and the designer.
 
 > [!IMPORTANT]
-> - This feature is in preview. 
+>
+> - This feature is in preview.
 > - Copilot is a new technology that is still in development. It is optimized for use with the English language and has limited support with other languages.
 > - Copilot’s generative answers capability is powered by the Azure OpenAI Service and Bing Search.
 > - To understand the capabilities and limitations of this feature, see [Responsible AI FAQ for Copilot in Power Automate for desktop](faqs-copilot.md)
 
 ## Availability by region
 
-Currently, Copilot in Power Automate for desktop is only available in environments located in the US.
+Currently, copilot in Power Automate for desktop is only available in environments located in the US.
 
 ## Availability by account type
 
-Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
+Currently, copilot in Power Automate for desktop is only available for users with a work or school account.
 
-**Note:** If your environment is in the region listed above, you are signed in with a work or school account, and you still cannot see the Copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the Copilot functionality.
+> [!NOTE]
+> If your environment is in the region listed above, you are signed in with a work or school account, and you still can't see the copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the copilot functionality.
 
-## How to use Copilot to get answers to product-related questions 
+## How to use Copilot to get answers to product-related questions
 
-You can access the generative answers capability from the console by clicking the Copilot button, located in the top right corner of the console window, as shown in the image below: 
+You can access the generative answers capability from the console by selecting the copilot button, located in the top right corner of the console window, as shown in here.
 
-:::image type="content" source="media/pad_generative_answers/copilot_console1.png" alt-text="Screenshot that shows the generative answwers in Power Automate for desktop console.":::
+:::image type="content" source="media/pad_generative_answers/copilot_console1.png" alt-text="Screenshot that shows where to select the copilot in Power Automate for desktop button.":::
 
-In addition, you can also access the generative answers capability from the designer’s vertical menu on the right, as shown in the image below: 
+In addition, you can also access the generative answers capability from the designer’s vertical menu on the right, as shown in here.
 
-:::image type="content" source="media/pad_generative_answers/copilot_designer1.png" alt-text="Screenshot that shows the generative answwers in Power Automate for desktop designer.":::
+:::image type="content" source="media/pad_generative_answers/copilot_designer1.png" alt-text="Screenshot that shows the alternative location to use copilot in Power Automate for desktop designer.":::
 
-In the Copilot window, you can ask any product-related questions or use one of our pre-made prompts to get you started. 
+In the copilot window, ask any product-related questions or use one of the premade prompts to get you started.
+
 :::image type="content" source="media/pad_generative_answers/copilot_designer_2.gif" alt-text="Animated gif that shows the Copilot answering a user's question from the designer.":::
 
-The answer generated will contain a link to the documentation page that you can refer to if you need additional information. Make sure that you always review AI-generated content.
+The answer generated contains a link to the documentation page to refer you to additional information. Make sure that you always review AI-generated content.
 
+## Prevent your users from using the copilot's generative answers capability
 
-## Prevent your users from using the Copilot's generative answers capability
-
-To prevent your users from using the Copilot’s generative answers capability, you can toggle off the “Copilot help assistance in Power Automate via Bing” setting in the power platform admin center. 
-**Note:** You need to be a tenant administrator to access the settings
+To prevent users from using the copilot’s generative answers capability, Power Platform administrators toggle off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
 
 ## Help us improve this feature
 
-You can send feedback by pressing the thumbs-up or thumbs-down icons underneath the AI-generated content. Once you do, a feedback dialog will appear, which you can use to submit feedback to Microsoft.
-:::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Animated gif that shows the Copilot answering a user's question from the designer.":::
+You can send feedback by selecting the thumbs-up or thumbs-down icons underneath the AI-generated content. Once you do, a feedback dialog appears, which you can use to submit feedback to Microsoft.
 
-**Note:** If you cannot see the dialog, your tenant admin might have turned it off.
+:::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Image that shows where you can send your feedback about copilot in Power Automate for desktop.":::
+
+> [!NOTE]
+> If you cannot see the dialog, your tenant admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
 
 ## Disabling the user feedback functionality
-As a tenant admin you can prevent your users from sending feedback to Microsoft by disabling the “disableSurveyFeedback” Tenant setting. You can find more information about viewing and setting tenant settings here: 
-- [List tenant settings (preview)](https://learn.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
-- [Set TenantSettings](https://learn.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+
+As a tenant admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting. Find more information about viewing and setting tenant settings here:
+
+- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
 
 ## Data subject rights requests on user feedback
-Organization administrators can view, export, and delete the feedback from their users by signing in to the [M365 admin center](https:\\admin.microsoft.com) and navigating to the “Health > Product feedback” menu. 
 
-### See also
+Organization administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https:\\admin.microsoft.com) and then go to **Health** > **Product feedback**.
+
+## See also
 
 - [FAQ for Generative Answers in Power Automate for desktop](../faqs-copilot-generative-answers-power-automate-desktop.md)
 - [Responsible AI FAQs for Power Automate](../responsible-ai-overview.md)
