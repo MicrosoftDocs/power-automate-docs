@@ -223,7 +223,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines** > **VM images (preview)**.
+1. Go to **Monitor** > **Machines** > **VM images**.
 
 1. Select the image you've created.
 
@@ -262,13 +262,14 @@ Once you've created your hosted machine group in an environment, you can view it
 
     Selecting a hosted machine group in the list will take you to the machine group's details page where you can:
 
-    - View and edit the details of the machine group.
+    - View and edit the details of the hosted machine group.
+    - Update the VM image used by the hosted machine group.
     - Monitor the machine group's run queue.
     - View past runs.
-    - List existing connections referencing the machine group.
-    - View provisioning errors on the machine group, if any.
-    - Manage access by sharing (or not) the machine group.
-    - Delete the machine group.
+    - List existing connections referencing the hosted machine group.
+    - View provisioning errors on the hosted machine group, if any.
+    - Manage access by sharing (or not) the hosted machine group.
+    - Delete the hosted machine group.
 
 ## Share hosted machine groups
 
