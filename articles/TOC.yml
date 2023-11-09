@@ -18,7 +18,7 @@
     href: overview-cloud.md
   - name: Get started with Copilot in cloud flows
     href: get-started-with-copilot.md
-  - name: Understand the cloud flows designer with copilot capabilities
+  - name: Understand the cloud flows designer
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
@@ -172,7 +172,7 @@
       - name: Overview
         href: ./teams/overview.md
         displayName: Use flows with Microsoft Teams
-      - name: Install the Power Automate app
+      - name: Install the Workflows app
         href: ./teams/install-teams-app.md
       - name: Create flows in Teams
         href: ./teams/teams-app-create.md
@@ -407,6 +407,8 @@
         href: ./desktop-flows/avd-setup.md
       - name: Use the starter kit
         href: ./desktop-flows/avd-use-starter-kit.md
+  - name: Use credentials in desktop flow connections (preview)
+    href: ./desktop-flows/manage-credentials.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Work queues
@@ -608,6 +610,8 @@
       href: ./desktop-flows/how-to/passing-datatable.md
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
+    - name: Timeout configuration for UI/browser automation
+      href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
   - name: ALM for desktop flows
     items:
     - name: Overview for configuring ALM for desktop flows
@@ -711,7 +715,7 @@
       href: ./desktop-flows/actions-reference/office365outlook.md
     - name: Work queues
       href: ./desktop-flows/actions-reference/workqueues.md
-    - name: Custom actions (preview)
+    - name: Custom actions
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
       href: ./desktop-flows/actions-reference/cloudconnectors.md  
