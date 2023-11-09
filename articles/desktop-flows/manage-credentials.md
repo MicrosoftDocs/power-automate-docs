@@ -40,7 +40,7 @@ In a nutshell, admin needs to ensure:
 1. Users who create the environment variable have appropriate permissions to the Azure Key Vault resource.
 1. The Power Automate environment and the Azure subscription must be on the same tenant
 
-To configure Azure Key Vault, follow the steps described in [this page](https://learn.microsoft.com/power-apps/maker/data-platform/environmentvariables#configure-azure-key-vault).
+To configure Azure Key Vault, follow the steps described in [this page](/power-apps/maker/data-platform/environmentvariables#configure-azure-key-vault).
 
 ## Create a credential
 
@@ -55,8 +55,8 @@ In the credentials page, you can now create your first credential.
 To create your credential, you need to provide the following information:
 - **Credential name**: Enter a name for the credential
 - **Description** (optional)
-- **Username**: credential usernames must be **text environment variables**. To select a variable, you can use the dropdown. If you don’t have any environment variables, you must [create a text variable from the solutions page](https://learn.microsoft.com/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution).
-- **Password**: the password must use a **secret environment variables**. To select a variable, you can use the dropdown. If you don’t have any secret environment variables, you must [create a secret variable from the solutions page](https://learn.microsoft.com/power-apps/maker/data-platform/environmentvariables#create-a-new-environment-variable-for-the-key-vault-secret).
+- **Username**: credential usernames must be **text environment variables**. To select a variable, you can use the dropdown. If you don’t have any environment variables, you must [create a text variable from the solutions page](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution).
+- **Password**: the password must use a **secret environment variables**. To select a variable, you can use the dropdown. If you don’t have any secret environment variables, you must [create a secret variable from the solutions page](/power-apps/maker/data-platform/environmentvariables#create-a-new-environment-variable-for-the-key-vault-secret).
 
 > [!NOTE]
 > Secret environment variables reference secrets stored in Azure Key Vault. 
@@ -103,11 +103,11 @@ Note: Credentials (preview) are only supported in the desktop flow connections f
 ## Update a secret (password rotation)
 
 ### Prerequisites: 
-- Ensure Event Grid is registered as a Resource provider in Azure. [Learn more about resource providers](https://learn.microsoft.com/azure/azure-resource-manager/management/resource-providers-and-types).
-- Ensure users who use Event Grid trigger in Power Automate have Event Grid Contributor permissions. [Learn more](https://learn.microsoft.com/azure/event-grid/security-authorization)
+- Ensure Event Grid is registered as a Resource provider in Azure. [Learn more about resource providers](/azure/azure-resource-manager/management/resource-providers-and-types).
+- Ensure users who use Event Grid trigger in Power Automate have Event Grid Contributor permissions. [Learn more](/azure/event-grid/security-authorization)
 
->[!Note]
->This section requires specific permissions such as system admin of the organization otherwise only your own desktop flow connections will be updated. 
+> [!Note]
+> This section requires specific permissions such as system admin of the organization otherwise only your own desktop flow connections will be updated. 
 
 ### Create a cloud flow using EventGrid trigger
 When you edit secrets in your Azure Key Vault, you want to ensure that the credentials and connections using these secrets are always up to date to avoid breaking your automations.
@@ -144,7 +144,7 @@ From Solutions page, you can retrieve all the dependencies of secret environment
 
 ## Export a desktop flow connection using credential
 >[!NOTE]
->You should read first the article about [ALM for desktop flows](https://learn.microsoft.com/power-automate/desktop-flows/alm/alm-solution)
+>You should read first the article about [ALM for desktop flows](/power-automate/desktop-flows/alm/alm-solution)
 
 You can export a cloud flow with a desktop flow connection using credential. 
 You should import the solution containing the credential and the related environment variables first then import the one containing the cloud flow and the desktop flow. 
