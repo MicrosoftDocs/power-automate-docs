@@ -18,7 +18,7 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-The new Credentials page (preview) in Power Automate allows you to create, edit, share login credentials using Azure Key Vault and use them in desktop flow connections. The following table provides the feature availability information in various regions. 
+The new **Credentials** page (preview) in Power Automate allows you to create, edit, and share login credentials using Azure Key Vault and use them in desktop flow connections. The following table provides the feature availability information in various regions. 
 
   |Regions|Feature availability (preview)|
   |---|---|
@@ -43,9 +43,9 @@ To configure Azure Key Vault, follow the steps described in [Configure Azure Key
 
 ## Create a credential
 
-To create your credentials, go to Credentials page. 
-1. Select **more** in the left nav, then select Discover all
-2. In Data, select **Credentials (preview)**. You can pin the page in the left nav to make it more accessible.
+To create your credentials, go to the **Credentials** page. 
+1. Select **more** in the left nav, then select **Discover all**.
+2. Under **Data**, select **Credentials (preview)**. You can pin the page in the left nav to make it more accessible.
 
 In the credentials page, you can now create your first credential.
 
@@ -72,7 +72,7 @@ You can share the credential(s) you own with other users in your organization an
     - **Co-owner** (can edit). This access level gives full permission to that credential. Co-owners can use the credential, share it with others, edit its details, and delete it.
     - **User** (can view only). This access level only gives permission to use the credential. No edit, share, or delete permissions are possible with this access.
     - **User** (can view and share). Same as above, but it gives permission to share.
--	Select **Save**
+-	Select **Save**.
 
 >[!NOTE]
 > By sharing your credential, all the environment variables used in the credential are shared as well. Removing permissions on a credential don't remove permissions on the environment variables.
@@ -88,7 +88,7 @@ You can share the credential(s) you own with other users in your organization an
 
 ## Create desktop flow connections using a credential
 Note: Credentials (preview) are only supported in the desktop flow connections for now.
-1.	Sign in to Power Automate.
+1.	Sign in to [Power Automate](https://make.powerautomate.com).
 2.	Create or edit a cloud flow.
 3.	Add or edit a Desktop flow action (run a flow built with Power Automate for desktop)
 4.	Select **Add new connection**:
@@ -127,8 +127,8 @@ This cloud flow contains one trigger and one action:
 
 If you use one Key Vault for all your secrets, you need only one cloud flow. If you have several Key Vaults, you need to duplicate the cloud flow and update the resource name.
 To ensure that your cloud flow is working correctly with Azure Key Vault:
--	Go to your Key Vault
--	Select **Events**
+-	Go to your Key Vault.
+-	Select **Events**.
 -	In **Events subscriptions**, check if you can see a LogicApps webhook.
 
 :::image type="content" source="./media/manage-machines/KeyVaultUpdates.png" alt-text="Screenshot of Event subscriptions in AKV.":::
@@ -150,7 +150,7 @@ You can export a cloud flow with a desktop flow connection using credential.
 You should import the solution containing the credential and the related environment variables first then import the one containing the cloud flow and the desktop flow. 
 
 ## Limitations
--	Credentials (preview) are only available for desktop flow connections for now. 
+-	Currently, this feature is available only for desktop flow connections. 
 -	Creating credentials in the new designer isn't available yet. 
 -	You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the AKV secret.
 -	Update of connections using credentials is asynchronous but shouldn't exceed 1 minute. 
