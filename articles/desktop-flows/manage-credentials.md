@@ -27,6 +27,9 @@ The new Credentials page (preview) in the Power Automate portal allows you to cr
   |All regions|December 2023|
   |US Government Clouds|Second half of 2024|
 
+> [!NOTE]
+> Currently, this feature isn't available for US Government Clouds.
+
 ## Prerequisites
 
 Credentials use secrets stored in Azure Key Vault. To allow you to create credentials, your administrator needs to configure Azure Key Vault first.
