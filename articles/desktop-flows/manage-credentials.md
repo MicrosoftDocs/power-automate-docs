@@ -18,7 +18,7 @@ search.audienceType:
 
 [This article is pre-release documentation and is subject to change.]
 
-The new Credentials page (preview) in the Power Automate portal allows you to create, edit, share login credentials using Azure Key Vault and use them in desktop flow connections. 
+The new Credentials page (preview) in the Power Automate portal allows you to create, edit, share login credentials using Azure Key Vault and use them in desktop flow connections. The following table provides the feature availability information in various regions. 
 
   |Regions|Feature availability (preview)|
   |---|---|
