@@ -405,6 +405,8 @@
         href: ./desktop-flows/avd-setup.md
       - name: Use the starter kit
         href: ./desktop-flows/avd-use-starter-kit.md
+  - name: Use credentials in desktop flow connections (preview)
+    href: ./dektop-flows/manage-credentials.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Work queues
