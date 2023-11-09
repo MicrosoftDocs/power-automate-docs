@@ -29,7 +29,7 @@ The new Credentials page (preview) in the Power Automate portal allows you to cr
 
 ## Prerequisites
 
-Credentials (preview) use secrets stored in Azure Key Vault. To allow you to create credentials, your administrator needs to configure Azure Key Vault first.
+Credentials use secrets stored in Azure Key Vault. To allow you to create credentials, your administrator needs to configure Azure Key Vault first.
 In a nutshell, admin needs to ensure:
 1. Microsoft Power Platform resource provider is registered in Azure subscription
 1. There is an Azure Key Vault that contains the secrets to be used in the credentials.
