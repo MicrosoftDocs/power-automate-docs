@@ -5,7 +5,7 @@ author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 11/09/2023
-ms.author: QuentinSele
+ms.author: quseleba
 ms.reviewer: 
 contributors:
 search.audienceType: 
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Use credentials in desktop flow connections (preview)
 
-[This article is pre-release documentation and is subject to change.]
+[This article is prerelease documentation and is subject to change.]
 
 The new Credentials page (preview) in the Power Automate portal allows you to create, edit, share login credentials using Azure Key Vault and use them in desktop flow connections. The following table provides the feature availability information in various regions. 
 
@@ -40,7 +40,7 @@ In a nutshell, admin needs to ensure:
 1. Users who create the environment variable have appropriate permissions to the Azure Key Vault resource.
 1. The Power Automate environment and the Azure subscription must be on the same tenant
 
-To configure Azure Key Vault, follow the steps described in [this page](/power-apps/maker/data-platform/environmentvariables#configure-azure-key-vault).
+To configure Azure Key Vault, follow the steps described in [Configure Azure Key Vault](/power-apps/maker/data-platform/environmentvariables#configure-azure-key-vault).
 
 ## Create a credential
 
@@ -79,7 +79,7 @@ You can share the credential(s) you own with other users in your organization an
 > By sharing your credential, all the environment variables used in the credential are shared as well. Removing permissions on a credential don't remove permissions on the environment variables.
 
 ## Delete a credential
-1. Sign in to the Power Automate portal.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 2. Go to **Credentials (preview)**.
 3. From the list, select the credential you want to delete.
 4. Select Delete machine in the command bar.
@@ -96,7 +96,7 @@ Note: Credentials (preview) are only supported in the desktop flow connections f
     -	Select Connect with username and password.
     -	Select the machine or the machine group.
 5.	Select **Switch to credentials**.
-6. You can now select the credential you want to use on the selected machine and click on **Create**.
+6. You can now select the credential you want to use on the selected machine and select **Create**.
 
 :::image type="content" source="./media/manage-machines/CreateConnection.png" alt-text="Screenshot of the connection using credentials.":::
 
@@ -124,9 +124,9 @@ This cloud flow contains one trigger and one action:
     -	KeyVaultUrl: **Topic**
     -	Secret name: **Subject**
   
-:::image type="content" source="./media/manage-machines/UpdateEnvVariable.png" alt-text="Screenshot of the Dataverse action.":::
+:::image type="content" source="./media/manage-machines/UpdateEnvVariables.png" alt-text="Screenshot of the Dataverse action.":::
 
-If you use one Key Vault for all your secrets, you need only one cloud flow. If you have several Key Vaults, you need to duplicate the cloud flow and simply update the resource name.
+If you use one Key Vault for all your secrets, you need only one cloud flow. If you have several Key Vaults, you need to duplicate the cloud flow and update the resource name.
 To ensure that your cloud flow is working correctly with Azure Key Vault:
 -	Go to your Key Vault
 -	Select **Events**
@@ -139,19 +139,20 @@ From Solutions page, you can retrieve all the dependencies of secret environment
 -	Select one environment variable.
 -	Select the **advanced** option and select **Show dependencies**.
 -	You can see:
-      -	The credentials using this environment variable.
+    -	The credentials using this environment variable.
     -	The connections using this environment variable.
 
 ## Export a desktop flow connection using credential
+
 >[!NOTE]
->You should read first the article about [ALM for desktop flows](/power-automate/desktop-flows/alm/alm-solution)
+>You should first read the article about [ALM for desktop flows](/power-automate/desktop-flows/alm/alm-solution)
 
 You can export a cloud flow with a desktop flow connection using credential. 
 You should import the solution containing the credential and the related environment variables first then import the one containing the cloud flow and the desktop flow. 
 
 ## Limitations
 -	Credentials (preview) are only available for desktop flow connections for now. 
--	Creating credentials in the new designer is not available yet. 
--	You cannot edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the AKV secret.
--	Update of connections using credentials is asynchronous but should not exceed 1 minute. 
+-	Creating credentials in the new designer isn't available yet. 
+-	You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the AKV secret.
+-	Update of connections using credentials is asynchronous but shouldn't exceed 1 minute. 
 
