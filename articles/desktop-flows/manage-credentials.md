@@ -25,8 +25,7 @@ The new Credentials page (preview) in Power Automate allows you to create, edit,
   |Preview, Canada|Available|
   |All regions except Europe and US|November 2023|
   |All regions|December 2023|
-  |US Government Clouds|Second half of 2024|
-
+  
 > [!NOTE]
 > Currently, this feature isn't available for US Government Clouds.
 
