@@ -23,7 +23,7 @@ The new Credentials page (preview) in the Power Automate portal allows you to cr
   |Regions|Feature availability (preview)|
   |---|---|
   |Preview, Canada|Available|
-  |All regions except Europe and US|End of November 2023|
+  |All regions except Europe and US|November 2023|
   |All regions|December 2023|
   |US Government Clouds|Second half of 2024|
 
