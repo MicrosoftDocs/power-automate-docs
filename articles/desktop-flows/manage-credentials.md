@@ -1,5 +1,5 @@
 ---
-title: Use credentials in desktop flow connections 
+title: Use credentials in desktop flow connections (preview)
 description: Use credentials in desktop flow connections 
 author: QuentinSele
 ms.subservice: desktop-flow
@@ -16,14 +16,16 @@ search.audienceType:
 
 # Use credentials in desktop flow connections (preview)
 
+[This article is pre-release documentation and is subject to change.]
+
 The new Credentials page (preview) in the Power Automate portal allows you to create, edit, share login credentials using Azure Key Vault and use them in desktop flow connections. 
 
   |Regions|Feature availability (preview)|
   |---|---|
   |Preview, Canada|Available|
-  |All regions except Europe and US|End of November 23|
-  |All regions|Mid December 23|
-  |Gov clouds|Second semester 24|
+  |All regions except Europe and US|End of November 2023|
+  |All regions|December 2023|
+  |US Government Clouds|Second half of 2024|
 
 ## Prerequisites
 
