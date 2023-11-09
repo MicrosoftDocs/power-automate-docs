@@ -4,7 +4,7 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/22/2023
+ms.date: 11/09/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -356,7 +356,7 @@ For instance, you may have two groups of bots, one for your sales automations an
 
 ## Update VM Image used by the hosted machine group
 
-You can update the VM image that is used by your hosted machine group. This is beneficial in situations where a custom VM image requires software updates and/or additional customization to run desktop flows. This feature allows you to update the VM image to be used when creating new hosted bots in your hosted machine group, eliminating the need to delete and recreate it. To update VM image:
+You can update the VM image that is used by your hosted machine group. This is beneficial in situations where a custom VM image requires software updates and additional customization to run desktop flows. This feature allows you to update the VM image to be used when creating new hosted bots in your hosted machine group, eliminating the need to delete and recreate it. To update VM image:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
