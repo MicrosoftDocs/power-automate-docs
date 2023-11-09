@@ -164,9 +164,9 @@ The cloud flows Copilot supports English language only for models.
 
 If you want to work with missing functionalities in the designer, go to [Limitation](flows-designer.md#limitation) for details.
 
-### What licenses do I need to access copilot in Power Automate Cloud Flows?
+### What licenses do I need to access Copilot in Power Automate cloud flows?
 
-You would need a standalone Power Automate license, or a seeded M365 license, or PowerApps/Dynamics license, to access and use copilot. MSA users (@microsoft.com) without an org id will not be able to use the experience.
+You need a standalone Power Automate license, or a seeded M365 license, or PowerApps/Dynamics license, to access and use Copilot. MSA users (@microsoft.com) without an org id won't be able to use the experience.
 
 
 ### See also
