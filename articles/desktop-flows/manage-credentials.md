@@ -18,7 +18,7 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-The new Credentials page (preview) in the Power Automate portal allows you to create, edit, share login credentials using Azure Key Vault and use them in desktop flow connections. The following table provides the feature availability information in various regions. 
+The new Credentials page (preview) in Power Automate allows you to create, edit, share login credentials using Azure Key Vault and use them in desktop flow connections. The following table provides the feature availability information in various regions. 
 
   |Regions|Feature availability (preview)|
   |---|---|
@@ -64,7 +64,7 @@ To create your credential, you need to provide the following information:
 
 ## Share a credential
 You can share the credential(s) you own with other users in your organization and give those users specific permissions to access it.
-- Sign-in to the Power Automate portal.
+- Sign-in to [Power Automate](https://make.powerautomate.com).
 -	Go to **Credentials (preview)**.
 -	Select your credential from the list of credentials.
 -	In the command bar, select **Share**.
