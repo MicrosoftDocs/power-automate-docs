@@ -4,7 +4,7 @@ description: See all the available browser automation actions.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/11/2023
+ms.date: 10/23/2023
 ms.author: nimoutzo
 ms.reviewer: gtrantzas
 contributors:
@@ -17,24 +17,24 @@ search.audienceType:
 ---
 # Browser automation actions
 
-Browser automation actions enable users to interact with web applications and components through UI elements. UI elements describe uniquely the web components that the action is going to handle.
+Browser automation actions enable users to interact with web applications and components through UI elements. Web UI elements, also called Web elements, describe uniquely the web components that the action is going to handle.
 
 To add a new UI element, select **Add UI element** through the deployed browser automation action or the UI elements pane of the flow designer.
 
 :::image type="content" source="media/webautomation/create-ui-element.png" alt-text="Screenshot of the options to create a new UI element.":::
 
-All web-related UI elements are specified by one or more CSS selectors that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
+All web-related UI elements are specified by one or more CSS selectors - web selectors - that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
 
-Although selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom selector is needed, you can edit an existing selector or build one from scratch.
+Although web selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When a custom web selector is needed, you can create your own by either editing an existing selector or building one from scratch.
 
 :::image type="content" source="media/webautomation/create-selector.png" alt-text="Screenshot of the options to edit and create selectors.":::
 
-To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
+To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a web selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
 
 :::image type="content" source="media\webautomation\selector-operators.png" alt-text="Screenshot of the available operators in the selector builder.":::
 
 >[!NOTE]
-> To find more information about developing web flows and creating custom selectors, go to [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md).
+> To find more information about developing web flows and creating custom web selectors for Web elemements, go to [Automate web flows](../automation-web.md) and [Build a custom selector](../build-custom-selectors.md).
 
 ## <a name="extractdata"></a> Extract data from web page
 
@@ -64,7 +64,7 @@ For more information on how to use this action, go to [Web data extraction](../a
 |Argument|Type|Description|
 |-----|-----|-----|
 |ExcelInstance|[Excel instance](../variable-data-types.md#instances)|The Excel instance with the extracted data. Use this instance to manipulate the spreadsheet (or save and close it) by using the dedicated Excel actions.|
-|DataFromWebPage|[Datatable](../variable-data-types.md#datatable)|The extracted data in the form of a single value, list, datarow, or datatable|
+|DataFromWebPage|[Datatable](../variable-data-types.md#datatable)|The extracted data in the form of a single value, list, data row, or data table. |
 
 ### <a name="extractdata_onerror"></a> Exceptions
 
@@ -189,7 +189,7 @@ Fill a text field in a web page with the specified text.
 |If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
 |Populate text using physical keystrokes|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Emulate using physical keystrokes when populating text to UI text field elements. Physical keystrokes are required for cases that emulated text population doesn't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it in the foreground.|
 |Emulate typing|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to fill the text field at once by setting the value of the text box, or emulate a user typing by sending characters one by one. The latter method is slower, but required in some complex web pages.|
-|Unfocus text box after filling it|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Choose whether to unfocus the text box right after this action fills it with the specified text. If scraping autocompletion lists, this parameter should be set to "False".|
+|Unfocus text box after filling it|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Choose whether to unfocus the text box right after this action fills it with the specified text. If scraping autocompletion lists, this parameter should be set to **False**.|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after populating the text field|
 |Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears after populating the text field|
@@ -347,7 +347,7 @@ Suspend the flow until a specific piece of text or web page element appears or d
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
-|Wait for web page to|N/A|Contain element, Not contain element, Contain text, Not contain text|Contain element|Specify whether to wait for a specific text or web page element to (dis)appear in a web page|
+|Wait for web page to|N/A|Contain element, Not contain element, Contain text, Not contain text|Contain element|Specify whether to wait for a specific text or web page element to appear or disappear in a web page|
 |UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to check for|
 |Text|No|[Text value](../variable-data-types.md#text-value)||Enter the text on web page to check for|
 
@@ -477,11 +477,11 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Edge or attach to an existing one|
-|Attach to Edge tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to an Edge tab by its title, URL, or attach to the active tab of Edge running as the foreground window|
+|Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Microsoft Edge or attach to an existing one|
+|Attach to Microsoft Edge tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to an Microsoft Edge tab by its title, URL, or attach to the active tab of Microsoft Edge running as the foreground window|
 |Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
-|Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Edge tab to attach to|
-|Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Edge tab to attach to|
+|Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Microsoft Edge tab to attach to|
+|Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Microsoft Edge tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
@@ -495,18 +495,18 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|[Web browser instance](../variable-data-types.md#instances)|The Edge instance to use with browser automation actions|
+|Browser|[Web browser instance](../variable-data-types.md#instances)|The Microsoft Edge instance to use with browser automation actions|
 
 ### <a name="launchedgebase_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Failed to launch Edge|Indicates a problem launching Edge|
+|Failed to launch Microsoft Edge|Indicates a problem launching Microsoft Edge|
 |Invalid URL|Indicates that the provided URL was invalid|
 
 ## <a name="createnewtabbase"></a> Create new tab
 
-Create a new tab and navigate to the given URL (supported in Edge, Chrome, and Firefox).
+Create a new tab and navigate to the given URL (supported in Microsoft Edge, Chrome, and Firefox).
 
 ### Input parameters
 

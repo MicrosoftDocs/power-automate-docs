@@ -407,6 +407,8 @@
         href: ./desktop-flows/avd-setup.md
       - name: Use the starter kit
         href: ./desktop-flows/avd-use-starter-kit.md
+  - name: Use credentials in desktop flow connections (preview)
+    href: ./desktop-flows/manage-credentials.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Work queues
@@ -608,6 +610,8 @@
       href: ./desktop-flows/how-to/passing-datatable.md
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
+    - name: Timeout configuration for UI/browser automation
+      href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
   - name: ALM for desktop flows
     items:
     - name: Overview for configuring ALM for desktop flows
