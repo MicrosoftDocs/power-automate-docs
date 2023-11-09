@@ -265,10 +265,10 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Select **New** > **VM image**.
 
-1. Enter an image name, a description, and the usage.
+1. Enter a VM image name, a description, and the usage.
 
-    - **Image name:** A unique name to identify the image.
-    - **Image description:** An optional description for the image.
+    - **VM Image name:** A unique name to identify the image.
+    - **VM Image description:** An optional description for the image.
     - **Use with:** Select either **Hosted machine** or **Both**, if you want the image to work with both hosted machines and hosted machine groups.
 
 1. Select one of the images that you have access to from the Azure Compute Gallery.
