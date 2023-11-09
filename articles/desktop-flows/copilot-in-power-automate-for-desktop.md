@@ -19,7 +19,7 @@ The copilot generative answers capability in Power Automate for desktop provides
 > - This feature is in preview.
 > - Copilot is a new technology that is still in development. It is optimized for use with the English language and has limited support with other languages.
 > - Copilot’s generative answers capability is powered by the Azure OpenAI Service and Bing Search.
-> - To understand the capabilities and limitations of this feature, see [Responsible AI FAQ for Copilot in Power Automate for desktop](faqs-copilot.md)
+> - To understand the capabilities and limitations of this feature, go to [FAQ for copilot generative answers in Power Automate for desktop](../faqs-copilot-generative-answers-power-automate-desktop.md)
 
 ## Availability by region
 
@@ -70,7 +70,7 @@ As a tenant admin you can prevent users from sending feedback to Microsoft by di
 
 ## Data subject rights requests on user feedback
 
-Organization administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https:\\admin.microsoft.com) and then go to **Health** > **Product feedback**.
+Organization administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage) and then go to **Health** > **Product feedback**.
 
 ## See also
 

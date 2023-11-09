@@ -1155,4 +1155,4 @@
   - name: FAQ for Copilot generative answers in Power Automate for desktop
     href: faqs-copilot-generative-answers-power-automate-desktop.md
   - name: FAQ for Generating code with natural language
-    href: faqs-copilot-nl-to-code
+    href: faqs-copilot-nl-to-code.md

@@ -84,8 +84,8 @@ You can send feedback by selecting the thumbs-up or thumbs-down icons underneath
 
 As a tenant admin you can prevent your users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Find more information about viewing and setting tenant settings:
 
-- [List tenant settings (preview)](https://learn.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
-- [Set TenantSettings](https://learn.microsoft.com/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
 
 ### Data subject rights requests on user feedback
 
@@ -93,7 +93,7 @@ Organization administrators can view, export, and delete the feedback from their
 
 ### AI with Power Automate resources
 
-- [FAQ for Generating scripts with natural language](../../faqs-copilot-nl-to-code)
+- [FAQ for Generating scripts with natural language](../../faqs-copilot-nl-to-code.md)
 - [Responsible AI FAQs for Power Automate](../../responsible-ai-overview.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
