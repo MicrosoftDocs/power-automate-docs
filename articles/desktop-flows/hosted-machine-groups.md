@@ -356,16 +356,12 @@ For instance, you may have two groups of bots, one for your sales automations an
 
 ## Update VM Image used by the hosted machine group
 
+You can update the VM image that is used by your hosted machine group. This feature allows you to update the VM image to be used when creating new hosted bots in your hosted machine group without needed to delete and recreate it.
 
 Update the VM image used by the hosted machine group
 
 The number of hosted bots that can run in your environment is equal to the number of hosted RPA add-on you've assigned to your environment. This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot configuration that enables you to set the maximum number of hosted bots that can be allocated to the hosted machine group.
 
-The hosted machine group will request to scale out when there aren't enough hosted bots to run desktop flows. It will take into consideration the maximum bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group will scale-in when there are no desktop flows allocated to an available hosted bot. This capacity then becomes available to other hosted machine groups in the environment.
-
-One key feature of hosted machine groups is the ability to reassign them to different groups and hence be able to balance your automation resources seamlessly between your different workloads.
-
-For instance, you may have two groups of bots, one for your sales automations and one for finance, in the same environment with 10 bots assigned. You can add more to one of the groups at any time by editing the hosted machine group and using the max number of available bots.
 
 
 :::image type="content" source="media/hosted-machine-groups/vm-image-update-button.png" alt-text="Screenshot of the VM image update button on the hosted machine group details page.":::
