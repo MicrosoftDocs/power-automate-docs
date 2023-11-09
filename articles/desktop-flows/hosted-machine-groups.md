@@ -4,7 +4,7 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/22/2023
+ms.date: 11/09/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -21,7 +21,7 @@ Here are some of the key features of hosted machine group:
 - Run unattended desktop flows at scale.
 - Auto-scale the number of bots in your hosted machine group based on current workloads.
 - Load balance bots across all hosted machine groups in an environment.
-- Work or school account integration (preview): Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
+- Work or school account integration: Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
 - Vanilla or Custom VM images: Use a vanilla VM image provided by Microsoft or personalize your hosted machine group by providing your own Windows image directly from your Azure Compute Gallery.
 
 ## Licensing requirements
@@ -50,7 +50,7 @@ This section presents all the prerequisites to create and use hosted machine gro
 
 ### Get access to the default VM image
 
-To create a hosted machine group, you need access to the default VM image that is part of your environment. You can view the default image in **Monitor** > **Machines** > **VM images (preview)**.
+To create a hosted machine group, you need access to the default VM image that is part of your environment. You can view the default image in **Monitor** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machine-groups/vm-images-preview.png" alt-text="Screenshot of the VM images tab in the Power Automate portal.":::
 
@@ -63,7 +63,7 @@ To create a hosted machine group, you need access to the default VM image that i
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to  **Monitor** > **Machines** > **VM images (preview)**.
+1. Go to  **Monitor** > **Machines** > **VM images**.
 
 1. Select the default windows desktop image from the list, and then **Manage access**.
 
@@ -201,27 +201,29 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines**.
+1. Select **New** > **VM image**.
 
-1. Select **New > VM image (preview)**.
-
-1. Enter an image name and a description.
+1. Enter an image name, a description, and the usage.
 
     - **Image name:** A unique name to identify the image.
     - **Image description:** An optional description for the image.
+    - **Use with:** Select either **Hosted machine group** or **Both**, if you want the image to work with both hosted machines and hosted machine groups.
 
-1. Select one of the images that you've access from the Azure Compute Gallery.
+1. Select one of the images that you have access to from the Azure Compute Gallery.
 
-    :::image type="content" source="media/hosted-machine-groups/new-custom-vm-image.png" alt-text="Screenshot of dialog to create a new custom VM image.":::
+    :::image type="content" source="media/hosted-machine-groups/new-custom-vm-image.png" alt-text="Screenshot of a new VM image.":::
 
-> [!NOTE]
-> The image needs to be replicated in the same Azure region as the hosted machine.
+    > [!NOTE]
+    >
+    > - The image needs to be replicated in the same Azure region as the hosted machine group.
+    > - The list of images available may vary depending on the usage you are selecting.
+
 
 ### Share the image
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. Go to **Monitor** > **Machines** > **VM images (preview)**.
+1. Go to **Monitor** > **Machines** > **VM images**.
 
 1. Select the image you've created.
 
@@ -260,13 +262,14 @@ Once you've created your hosted machine group in an environment, you can view it
 
     Selecting a hosted machine group in the list will take you to the machine group's details page where you can:
 
-    - View and edit the details of the machine group.
+    - View and edit the details of the hosted machine group.
+    - Update the VM image used by the hosted machine group.
     - Monitor the machine group's run queue.
     - View past runs.
-    - List existing connections referencing the machine group.
-    - View provisioning errors on the machine group, if any.
-    - Manage access by sharing (or not) the machine group.
-    - Delete the machine group.
+    - List existing connections referencing the hosted machine group.
+    - View provisioning errors on the hosted machine group, if any.
+    - Manage access by sharing (or not) the hosted machine group.
+    - Delete the hosted machine group.
 
 ## Share hosted machine groups
 
@@ -347,9 +350,33 @@ For instance, you may have two groups of bots, one for your sales automations an
 
 1. Select one of your hosted machine groups.
 
-1. Select **Edit details** at the top of the page.
+1. Select **Settings** at the top of the page.
 
     :::image type="content" source="media/hosted-machine-groups/edit-hosted-machine-group.png" alt-text="Screenshot of the Edit details of a hosted machine group.":::
+
+## Update VM Image used by the hosted machine group
+
+You can update the VM image that is used by your hosted machine group. This is beneficial in situations where a custom VM image requires software updates and additional customization to run desktop flows. This feature allows you to update the VM image to be used when creating new hosted bots in your hosted machine group, eliminating the need to delete and recreate it. To update VM image:
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. Select **Monitor** > **Machines**.
+
+1. Select **Machine groups**.
+
+1. Select one of your hosted machine groups.
+
+1. Select **Update VM image** at the top of the page.
+   
+1. From the drop  down list, select the updated VM image to be used by the hosted machine group.
+
+> [!NOTE]
+> Upon updating of VM image, all existing bots (if any) will complete their ongoing desktop flow runs prior to being reprovisioned with the new VM image.
+
+
+:::image type="content" source="media/hosted-machine-groups/vm-image-update-select.png" alt-text="Screenshot of the VM image update action on the hosted machine group details page.":::
+   
+
 
 ## Permissions based on security roles
 
