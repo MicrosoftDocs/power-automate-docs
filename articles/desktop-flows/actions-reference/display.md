@@ -1,12 +1,11 @@
 ---
 title: Message boxes actions reference
 description: See all the available message boxes actions.
-author: georgiostrantzas
-
+author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
+ms.date: 10/23/2023
+ms.author: nimoutzo
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -21,15 +20,19 @@ search.audienceType:
 
 You can use message boxes in your desktop flows to interact with users, request input, and provide an output.
 
-To display a message to the user while a flow runs, use the **Display message** action.
+To display a message to the user while a flow runs, use the **Display message** action. You must specify the title of the message box, its content, the icon and the buttons in the box to be displayed. Moreover, you might set a default button to be preselected as well as to indicate if the message box should always be on top of all other windows on your machine and whether the message box is to be closed automatically after a certain amount of time.
 
-The example below displays a message box that informs the user that parsing is complete and asks whether to parse another file. The message box displays a question icon and always is on top of other windows. The **ButtonPressed** variable will store the user's selection.
+The example here displays a message box that informs the user that parsing is complete and asks whether to parse another file. The message box displays a question icon and always is on top of other windows. The **ButtonPressed** variable will store the user's selection.
 
 :::image type="content" source="media/display/display-message-example.png" alt-text="Screenshot of the Display message action.":::
 
 The created message box should look like the following example:
 
 :::image type="content" source="media/display/message-box-example.png" alt-text="Screenshot of the displayed message box.":::
+
+In addition to this, you might create a custom form for displaying a message as part of your flow with the use of the **Display custom form** action. A custom form accepts multiple elements, and you can create a custom form that contains various input types and buttons. More information: [Create custom forms](../custom-forms.md).
+
+:::image type="content" source="media/display/custom-form-designer.png" alt-text="Screenshot of the custom form designer.":::
 
 To request input data using a dialog, deploy the **Display input dialog** action. This action requires a title for the dialog and a message as a prompt for the user. Optionally, you can set a default value and an input type (single line, multiline, or password).
 
@@ -40,10 +43,6 @@ Use the **Display select file dialog** action to prompt users to browse for a fi
 The created file dialog should look like the following example. You can see the specified filter in the bottom right corner of the dialog.
 
 :::image type="content" source="media/display/select-file-example.png" alt-text="Screenshot of a Select file dialog.":::
-
-To create a custom form that accepts multiple elements, use the **Display custom form** action. Using this action, you can create custom forms that contain various input types and buttons. To find more information about custom forms, go to [Create custom forms](../custom-forms.md).
-
-:::image type="content" source="media/display/custom-form-designer.png" alt-text="Screenshot of the custom form designer.":::
 
 ## <a name="showmessagedialog"></a> Display message
 
@@ -73,7 +72,7 @@ Displays a message box.
 |Exception|Description|
 |-----|-----|
 |Failed to display message box|Indicates a problem displaying the message dialog|
-|Can't display message box in non interactive mode|Indicates a problem displaying the message dialog in non-interactive mode|
+|Can't display message box in noninteractive mode|Indicates a problem displaying the message dialog in non-interactive mode|
 
 ## <a name="inputdialog"></a> Display input dialog
 
@@ -113,7 +112,7 @@ Displays a dialog box that prompts the user to enter a date or date range.
 |-----|-----|-----|-----|-----|
 |Dialog title|Yes|[Text value](../variable-data-types.md#text-value)||The dialog title|
 |Dialog message|Yes|[Text value](../variable-data-types.md#text-value)||The dialog message|
-|Dialog type|N/A|Single date, Date range (2 Dates)|Single date|Whether the user will enter a single date or two dates as the endpoints of a range of dates|
+|Dialog type|N/A|Single date, Date range (two Dates)|Single date|Whether the user will enter a single date or two dates as the endpoints of a range of dates|
 |Prompt for|N/A|Date only, Date and time|Date only|Specify whether the user will enter the date only or the date and time|
 |Default value|Yes|[Datetime](../variable-data-types.md#dates-and-time)||The default value for the date|
 |Default value for second date|Yes|[Datetime](../variable-data-types.md#dates-and-time)||The default value for the end date in a range|
@@ -148,7 +147,7 @@ Displays a dialog box with options that lets the user select from a list.
 |Keep select dialog always on top|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the select dialog should always remain on top of all other windows|
 |Limit to list|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Whether to allow the user to enter their own answer outside of the list being displayed|
 |Allow empty selection|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Allow the user to not select anything, creating an empty selected item output|
-|Allow multiple selection|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Allow the user to select more than one choice. The selected item and selected index variables will hold a list of items|
+|Allow multiple selections|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Allow the user to select more than one choice. The selected item and selected index variables will hold a list of items|
 |Preselect items starting with a + sign|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the items with a prepended '+' sign will appear automatically preselected|
 
 ### Variables produced
@@ -166,7 +165,7 @@ Displays a dialog box with options that lets the user select from a list.
 |Exception|Description|
 |-----|-----|
 |Failed to display select dialog|Indicates a problem displaying the select dialog|
-|Can't display select dialog in non interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
+|Can't display select dialog in noninteractive mode|Indicates a problem displaying the input dialog in non-interactive mode|
 
 ## <a name="selectfiledialog"></a> Display select  file dialog
 
@@ -180,7 +179,7 @@ Displays the select file dialog and prompts the user to select one or more files
 |Initial folder|Yes|[Folder](../variable-data-types.md#files-and-folders)||The initial folder to open when browsing for a file. This folder is where the select file dialog action will start the user looking for the file(s)|
 |File filter|Yes|[Text value](../variable-data-types.md#text-value)||A filter to limit the files retrieved. This parameter allows wild cards, for example "*.txt" or "document?.doc" (without the quotes). To allow the user to choose from multiple file filters, separate the choices with a semi-colon, for example "*.txt;*.exe"|
 |Keep file selection dialog always on top|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether the file selection dialog should always remain on top of all other windows|
-|Allow multiple selection|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether the user will be able to select more than one file or not|
+|Allow multiple selections|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether the user will be able to select more than one file or not|
 |Check if file exists|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether only files that already exist will be accepted|
 
 ### Variables produced
@@ -196,7 +195,7 @@ Displays the select file dialog and prompts the user to select one or more files
 |Exception|Description|
 |-----|-----|
 |Failed to display select file dialog|Indicates a problem displaying the select file dialog|
-|Can't display select file dialog in non interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
+|Can't display select file dialog in noninteractive mode|Indicates a problem displaying the input dialog in non-interactive mode|
 
 ## <a name="selectfolder"></a> Display select folder dialog
 
@@ -222,7 +221,7 @@ Displays the select folder dialog and prompts the user to select a folder.
 |Exception|Description|
 |-----|-----|
 |Failed to display select folder dialog|Indicates a problem displaying the select folder dialog|
-|Can't display select folder dialog in non interactive mode|Indicates a problem displaying the input dialog in non-interactive mode|
+|Can't display select folder dialog in noninteractive mode|Indicates a problem displaying the input dialog in non-interactive mode|
 
 ## <a name="showcustomdialog"></a> Display custom form
 

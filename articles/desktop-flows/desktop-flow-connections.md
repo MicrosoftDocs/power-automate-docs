@@ -26,6 +26,9 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 
 1. Search for **Desktop flows**, and then select the appropriate result.
 
+> [!NOTE]
+> Desktop flows connection cannot be shared with other users.
+
 There is two different methods to connect Power Automate with your machines (or groups).
 
 ## Connect with username and password
