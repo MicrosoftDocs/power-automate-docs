@@ -22,7 +22,7 @@ Approvals are a key use case present across every industry, organization, and de
 
 Business approvals templates as part of the Approvals Kit provide no-code templates that are built on top of Microsoft Power Platform components. Use these templates to accelerate the speed at which your organization creates sophisticated approvals workflows that include conditional branching, delegation, administrative overrides, and more. Since the templates are no-code, almost anyone in your organization can use them to meet your approval needs.
 
-![Business approvals templates screenshot](media/business-approvals-templates.png)
+:::image type="content" source="media/business-approvals-templates.png" alt-text="A screenshot of the Business Approvals Process Manager with the Designer view selected and a process flow displayed.":::
 
 Organizations often need approvals for key business processes. These processes might include expense reporting, time sheet management, business travel requests, procurement orders and sales discounts.
 
