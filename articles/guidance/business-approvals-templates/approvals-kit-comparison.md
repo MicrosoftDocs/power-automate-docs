@@ -1,6 +1,6 @@
 ---
-title: Approvals Kit Comparison | Microsoft Docs
-description: Approvals Kit Comparison.
+title: Business Approvals Templates Approvals kit comparison
+description: Learn the differences between the Business Approvals Templates Approvals kit and the Power Platform Approvals connector.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
@@ -10,7 +10,7 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Approvals kit comparison
+# Business Approvals Templates Approvals kit comparison
 
 When navigating the landscape of approval workflows, it's important to understand the differences between the Power Platform Approvals connector and the Approvals kit. The Approvals kit is a low-code innovative enhancement that seamlessly integrates the Approvals connector with a user-friendly, no-code configurable Power Platform solution components.
 
