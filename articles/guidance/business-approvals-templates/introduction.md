@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 
 # Business approvals templates overview (preview)
 
-Approvals are a key use case that's present across every industry, organization, and department. You can use Power Automate to streamline your business processes by digitalizing the approvals experience.
+Approvals are a key use case present across every industry, organization, and department. Use Power Automate to streamline your business processes by digitalizing the approvals experience.
 
 > [!IMPORTANT]
 >
