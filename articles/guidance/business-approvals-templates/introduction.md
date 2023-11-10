@@ -1,5 +1,5 @@
 ---
-title: Overview of the business approvals templates (preview) | Microsoft Docs
+title: Business approvals templates overview (preview) | Microsoft Docs
 description: Overview of the business approvals templates.
 documentationcenter: na
 author: Grant-Archibald-MS
@@ -10,7 +10,7 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Overview of the business approvals templates
+# Business approvals templates overview (preview)
 
 Approvals are a key use case that's present across every industry, organization, and department. You can use Power Automate to streamline your business processes by digitalizing the approvals experience.
 
