@@ -20,15 +20,15 @@ Approvals are a key use case that's present across every industry, organization,
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available in your region.
 
-Business approvals templates as part of the Approvals Kit provide no-code templates that are built on top of Microsoft Power Platform components. Your organization can use these templates to accelerate the speed at which it creates sophisticated approvals workflows that include conditional branching, delegation, administrative overrides, and more. Since the templates are no-code, almost anyone in your organization can use them to meet your approval needs.
+Business approvals templates as part of the Approvals Kit provide no-code templates that are built on top of Microsoft Power Platform components. Use these templates to accelerate the speed at which your organization creates sophisticated approvals workflows that include conditional branching, delegation, administrative overrides, and more. Since the templates are no-code, almost anyone in your organization can use them to meet your approval needs.
 
 ![Business approvals templates screenshot](media/business-approvals-templates.png)
 
-Organizations often need approvals for key business processes. These processes could include expense reporting, time sheet management, business travel requests, procurement orders and sales discounts as examples.
+Organizations often need approvals for key business processes. These processes might include expense reporting, time sheet management, business travel requests, procurement orders and sales discounts.
 
-With Power Platform, you can automate approvals needs by combining components from [Power Apps](https://make.powerapps.com) and [Power Automate](https://make.powerautomate.com). However, as the complexity of your approvals increases, so does your configuration and need to assemble multiple low code components together. The business approvals templates are available with as a configured collection of components and tools that are designed to help organizations automate their approvals processes quickly.
+With Power Platform, you can automate approvals needs by combining components from [Power Apps](https://make.powerapps.com) and [Power Automate](https://make.powerautomate.com). As the complexity of your approvals increases, so does your configuration and need to assemble multiple low code components together. The business approvals templates are available with as a configured collection of components and tools that are designed to help organizations automate their approvals processes quickly.
 
-These templates cover some of the typical requirements in most organizations, including:
+These templates cover many of the typical requirements in most organizations, including:
 
 - The ability to configure multi-stage approvals
 - Delegate others to approve
