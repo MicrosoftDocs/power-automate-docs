@@ -43,7 +43,7 @@ Reviewing this user journey example there are three major personas of Approver, 
 
 An example user journey can be illustrated as a summarized diagram in the following series of steps
 
-:::image type="content" source="media/approvals-kit-user-journey.svg" alt-text="Visual representation of the sample user journey outlined in the documentation.":::
+:::image type="content" source="media/approvals-kit-user-journey.svg" alt-text="Visual representation of the sample user journey in chronological order displayed on tiles in timeline format.":::
 
 |Role|Actions|
 |----|-------|
@@ -59,13 +59,9 @@ An example user journey can be illustrated as a summarized diagram in the follow
 
 Gibson reviews the [Setup Guide](./setup.md) to ensure the prerequisites are in place. Using [System administrator](/power-platform/admin/database-security#environments-with-a-dataverse-database) or [System customizer](/power-platform/admin/database-security#environments-with-a-dataverse-database) permissions, the approvals kit can be installed into an environment and provide access for Approvals Administrators to access the application.
 
-:::image type="content" source="media/experience-install.svg" alt-text="A visual representation of the example user journey from this document with the install stage highlighted.":::
-
 ### Configure the business approval process
 
 Charlotte uses the Process Designer to create a new business approval workflow and define approval stages, conditions, and approval steps within each stage that match the business requirements within the Sales department.
-
-:::image type="content" source="media/experience-configure.svg" alt-text="A visual representation of the example user journey from this document with the configure stage highlighted.":::
 
 See [Configuring preset approvals](./configuring-preset-approvals.md) for an example of how to configure key elements inside the Process Designer.
 
@@ -74,8 +70,6 @@ See [Configuring preset approvals](./configuring-preset-approvals.md) for an exa
 Gibson, another maker, or professional developers within organization can easily integrate their existing solutions and IT systems. Triggers can include connections such as SQL server, Azure Functions. These individuals can start the approvals process by adding a new cloud flow or modifying existing cloud flow actions.
 
 The rest of the approval processes are automatically handled and managed in the approvals kit.
-
-:::image type="content" source="media/experience-triggers.svg" alt-text="A visual representation of the user journey from this document with the trigger stage highlighted.":::
 
 See [Triggering approvals](./triggering-approvals.md) for information on how to create a Power Automate cloud flow to begin an approval workflow.
 
@@ -90,8 +84,6 @@ Use desktop flows to streamline your approval processes with legacy systems, aut
 ### Process approval requests
 
 Rebecca and other configured approvers receive messages as adaptive cards in Microsoft Outlook and Microsoft Teams. These approvals include details provided by the business approval designer, Charlotte, to determine if the request should be approved or declined.
-
-:::image type="content" source="media/experience-approvals.svg" alt-text="A visual representation of the user journey from this document with the approvals stage highlighted.":::
 
 See [Processing Approval Requests](./processing-approval-requests.md) for more information on the approvals process.
 
