@@ -24,7 +24,7 @@ This docs section includes how-to steps for you to be able to trigger from most 
 
 Review the table to compare relative advantages and disadvantages for each of data sources.
 
-|                                   |Power Apps canvas app trigger|Dataverse|SharePoint lists|
+|Trigger                           |Power Apps canvas app trigger|Dataverse|SharePoint lists|
 |-----------------------------------|-----------------------------|---------|----------------|
 |Create a form                    |Need to create your own form and parts|Can use existing apps created that records data to Dataverse|Can use out of the box forms|
 |Use attachments                  |Can't use attachments directly with canvas app trigger. Consider using a separate Data source trigger instead|Can use out of the box attachment|Can use out of the box attachment
