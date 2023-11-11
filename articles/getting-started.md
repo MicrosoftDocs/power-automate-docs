@@ -134,7 +134,7 @@ Environments where you have either system administrator and/or system customizer
 > - Every member in an organization can access the [default environment](/power-platform/admin/environments-overview#the-default-environment). Like any environment, users can see flows where they have sufficient privileges to access a flow.
 > - When you create a flow in one environment, you won't be able to see it from another environment. 
 
-For more information, see [Environments overview](/power-platform/admin/environments-overview).
+For more information, see [Environments overview](/power-platform/admin/environments-overview)
 
 #### Frequently asked questions about environments
 
