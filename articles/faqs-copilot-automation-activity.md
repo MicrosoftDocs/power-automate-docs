@@ -1,13 +1,13 @@
 ---
 title: FAQ for copilot in desktop flow activity (preview)
 description: This FAQ discusses copilot used in desktop flow activity and the key considerations for making use of this technology responsibly.
-ms.date: 08/25/2023
+ms.date: 11/13/2023
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
 author: rpapostolis
 ms.author: appapaio
-ms.reviewer: 
+ms.reviewer: matp
 ---
 
 # FAQ for copilot in desktop flow activity (preview)
@@ -16,7 +16,7 @@ Copilot in desktop flow activity enables administrators, CoE teams, business use
 
 ## What can copilot in desktop flow activity do?
 
-Copilot in desktop flow activity is capable of translating natural language queries into Microsoft Dataverse FetchXML query syntax, specifically optimized for desktop flow activity such as desktop flow runs, machines, and errors. This allows users to easily retrieve information about their automation data by asking questions in a natural language. Additionally, copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
+Copilot in desktop flow activity is capable of translating natural language queries into Microsoft Dataverse fetchXML query syntax, specifically optimized for desktop flow activity such as desktop flow runs, machines, and errors. This allows users to easily retrieve information about their automation data by asking questions in a natural language. Additionally, copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
 
 ## What is copilot in desktop flow activity’s intended use?
 
@@ -28,7 +28,7 @@ The systems intended use is to help you ingest your data into process mining and
 
 ## How was copilot in desktop flow activity evaluated? What metrics are used to measure performance?
 
-The performance of copilot in desktop flow activity was evaluated using a comprehensive set of metrics. The copilot interface includes thumbs up and thumbs down gestures, allowing users to submit feedback on the AI outputs. This feedback is closely monitored to ensure that the copilot remains compliant, appropriate, and free of bias.
+The performance of copilot in desktop flow activity was evaluated using a comprehensive set of metrics. The copilot interface includes thumb up and thumb down gestures, allowing users to submit feedback on the AI outputs. This feedback is closely monitored to ensure that the copilot remains compliant, appropriate, and free of bias.
 
 ## What are the limitations of copilot in desktop flow activity? How can users minimize the impact of copilot in desktop flow activity’s limitations when using the system?
 
@@ -36,7 +36,7 @@ One of the limitations of copilot in desktop flow activity is that it currently 
 
 ## What operational factors and settings allow for effective and responsible use of copilot in desktop flow activity?
 
-Effective and responsible use of copilot in desktop flow activity can be achieved by ensuring that the user has the appropriate rights to access the desktop flow activity data on Dataverse. This means that the copilot only answers questions based on the data the user has permission to access. Additionally, it's important for users to understand the scope and limitations of the copilot, and to phrase their queries accordingly.
+Effective and responsible use of copilot in desktop flow activity can be achieved by ensuring that the user has the appropriate rights to access the desktop flow activity data in Dataverse. This means that the copilot only answers questions based on the data the user has permission to access. Additionally, it's important for users to understand the scope and limitations of the copilot, and to phrase their queries accordingly.
 
 ## See also
 
