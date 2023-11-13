@@ -74,6 +74,22 @@ Once you're done with setup, select **Analyze**. You'll be able to view the Anal
 
 For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
 
+### "The process can't be analyzed because there are too many processes in this environment. To fix this, delete some of the processes or use a different environment."
+
+At present, Dataverse-managed PowerBI workspaces allow only 1000 reports for each environment so you would have delete a few processes from the current environment or create a new environment to analyze the process in. For more information about limitations got to [Workspaces in Power BI - Considerations and Limitations](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces#considerations-and-limitations)
+
+To delete a process follow these steps:
+
+1. Select **Processes** from the breadcrumbs on the analytics or details page or select **All procesess** from the process mining homepage.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/9a55dbef-cc34-4985-a967-7bd342d9d8c1)
+
+2. Select the vertical ellipses for the process you would like to delete and select **Delete process** from the dropdown.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/6210a988-1b20-4e90-9295-ebd7b3e4c76e)
+
+3. Select **Confirm** to delete the process.
+
 ### "You must have one case with at least two activities to analyze your process. Please change your data."
 
 Process mining isn't normally helpful when there's only one activity name in the data. This is because the process map visualizes the flow of the process from one activity to the next. In this case, you should do the following:
