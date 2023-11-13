@@ -1,6 +1,6 @@
 ---
-title: Configuring preset approvals | Microsoft Docs
-description: Configuring preset approvals.
+title: Configure preset approvals
+description: Learn how to configure preset approvals for the Business approvals kit.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
@@ -10,57 +10,56 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Configuring preset approvals
+# Configure preset approvals
 
-Approvals Kit allows you to predefine approval workflows so that you don't need to set up each approver manually.
+The Approvals kit allows you to predefine approval workflows so that you don't need to set up each approver manually.
 
-To configure preset approvals, you must set up the:
+To configure preset approvals, you must set up:
 
-- Approvals Process
+- The Approvals Process
 
-- Application Data
+- The Application Data
 
-- Stage
+- The Stage
 
-- Condition (Optional)
+- The Condition (Optional)
 
-- Node
+- The Node
 
-- Approver
+- The Approver
 
-## Define Processes
+## Define processes
 
 First step of configuring preset approvals is to set up Processes. Processes are where all information related to the particular approval process is defined.
 
-1. Go to **make.powerapps.com**
+1. Go to [Power Apps](https://make.preview.powerapps.com/).
 
-1. Select **Apps** and select **Business Approval Management**
+1. Select **Apps**, then choose **Business Approval Management**.
 
-1. Opening the application for the first time prompts you to give consent to the Office 365 connector
+    >[!NOTE]
+    > When you open the application for the first time, it prompts you to give consent to the Office 365 connector.
 
-1. Switch to Approvals Designer on bottom left corner of the screen
+1. Switch to Approvals Designer on bottom left corner of the screen.
 
-   ![Screenshot of switch to approvals designer](./media/switch-approvals-designer.png)
+1. Select **Processes**.
 
-1. Select **Processes**
+1. Select **New (Process Designer)**.
 
-1. Select **New (Process Designer)**
+1. Enter the **Name** of the process, the **Category** (optional), and the **Description** (optional).
 
-1. Enter the **Name** of the process, **Category** (optional) and **Description** (optional)
+1. In the **Default Approver,** start typing the name and select from list.
 
-1. In the **Default Approver,** start typing the name and select from list
+1. Select **Save**.
 
-1. Select **Save**
+## Define application data
 
-## Define Application Data
+In a typical approval request, you often need to also submit information about the approval. For example amount, project category, department, accommodation, chart of account number, cost center code, etc.
 
-In a typical approval request, you often need to also submit information about the approval. For example amount, project category, department, accommodation, chart of account number, cost center code etc.
+The Approvals kit allows you to use these types of data from Power Platform, other applications, and systems. Use data retrieved via connectors or manually enter the data when you make the request. To use the data in your approval process, define them in Application Data.
 
-Approvals Kit allows you to use these types of data from Power Platform, other applications and systems. You use data retrieved from via connectors or manually enter the data when making the actual request. To use the data in your approval process, you can define them in Application Data.
+1. Enter the **Field Name**
 
-1. Enter **Field Name**
-
-1. Select **Data Type** from the following:
+1. Select the **Data Type** from the following:
 
    - Text
 
@@ -72,129 +71,108 @@ Approvals Kit allows you to use these types of data from Power Platform, other a
 
    - User (Email) - Can be used as approval user
 
-1. Enter **Default Value** (optional)
+1. Enter the **Default Value** (optional).
 
-1. Enter **Description** (optional)
+1. Enter the **Description** (optional).
 
-1. Select **+ Add**
+1. Select **+ Add**.
 
-1. Repeat steps until you add all required application data
+Repeat these steps until you add all required application data.
 
-![Screenshot application data](./media/application-data.png)
+:::image type="content" source="media/application-data.png" alt-text="A screenshot of the Process Designer in Power Apps.":::
 
-## Define Workflow Stages and Nodes
+## Define workflow stages and nodes
 
-In Approvals Kit, you can define stages in a workflow process. Each stage then a minimum of one stage is required even for a simple workflow. Each stage then includes at least one _node_. Node is where you define who is going to be the actual approver. You can define multiple nodes within one stage, and each node is run sequentially.
+In the Approvals kit, you can define stages in a workflow process. A minimum of one stage is required even for a simple workflow. Each stage then includes at least one _node_. The node is where you define who is going to be the actual approver. You can define multiple nodes within one stage, and each node is run sequentially.
 
-After the first stage is defined, you can add more stages that have conditions where you can branch out to different nodes for sophisticated scenarios.
+After the first stage is defined, you can add more stages with conditions, which allows you to branch out to different nodes for sophisticated scenarios.
 
 ### Define the first workflow stage
 
-1. Select **Workflow**
+1. Select **Workflow**.
 
-1. Select **New Stage**
+1. Select **New Stage**.
 
-1. Enter **Name** and **Description**
+1. Enter a **Name** and **Description**.
 
-1. Select **Save & Back**
-
-![Screenshot of adding first task in Process Designer](./media/process-designer-first-task.png)
+1. Select **Save & Back**.
 
 ### Define the first node
 
 Once you define your first stage, you optionally can add the first node.
 
-1. Select the (**+)** sign.
+1. Select the **+** sign.
 
-![Screenshot of adding stage in process designer](./media/process-designer-add-stage.png)
+1. Enter a **Name** and **Description**.
 
-1. Enter **Name** and **Description**
+1. Select the **Approval Type**.
 
-1. Select the **Approval Type**
+    |Approval type |Description  |
+    |---------|---------|
+    |Approve/Reject - Everyone must approve   | Every person included in this node has to approve to proceed to the next steps.        |
+    |Approve/Reject - First to respond    | Only a single person included in this node has to approve to proceed to the next steps.        |
+    |Custom Responses - Wait for all responses    | Define multiple responses beyond the Approve/Decline. Every person included in this node has to respond to proceed to the next steps.        |
+    |Custom Responses - Wait for one response   | Define multiple responses beyond the Approve/Decline. Only a single person included in this node has to respond to proceed to the next steps.        |
 
-    a.  **Approve/Reject - Everyone must approve** When choosing this option, every person included in this node has to approve to proceed to the next steps.
+1. Select either **User** or **Dynamic**.
 
-    b.  **Approve/Reject - First to respond** When choosing this option, only a single person included in this node has to approve to proceed to the next steps.
+    - **User** - you can select a specific user/employee
 
-    c.  **Custom Responses - Wait for all responses** When choosing this option, you can define multiple responses beyond the Approve/Decline. Every person included in this node has to respond to proceed to the next steps.
+    - **Dynamic** - the user information is automatically retrieved and set as approver
 
-    d.  **Custom Responses - Wait for one response** When choosing this option, you can define multiple responses beyond the Approve/Decline. Only a single person included in this node has to respond to proceed to the next steps.
-
-![Screenshot of Process Advisor approval type](./media/process-designer-approval-type.png)
-
-1. Select either **User** or **Dynamic**
-
-    a.  **User** - you can select a specific user/employee
-
-    b.  **Dynamic** - the user information is automatically retrieved and set as approver
-
-    - **Manager of Initiator** - Information of whoever started the approval request is used to identify the manager automatically and be assigned as approver
-
-    - **Manager of \[Request data field\]** - Email address of a field you specified in Application Data step can be used to identify the manager automatically and be assigned as approver. The field must be defined as Email type for the option.
-
-    - **Manager of Last Approver** - Information of the last approver is automatically retrieved to identify the manager automatically and be assigned as approver.
-
-    - **Use Request Data Field** - Email address of a field you specified in Application Data step can be used directly.
-
-![Screenshot of Process Advisor approver](./media/process-designer-approver.png)
-
-1. Select **Notification**
+1. Select **Notification**.
 
     a.  Default
 
     b.  None
 
-1. Select **Delegation Rule**
+1. Select a **Delegation Rule**.
+        
+    |Delegation rule |Description |
+    |---------|---------|
+    |None    |   No delegation settings set by the approver are applied to this workflow.      |
+    |Time-out    |  Delegation settings set by the approver are automatically be applied if the approver assigned doesn't respond within the number of days defined.       |
+    |Out of Office    |  Delegation settings set by the approver are automatically applied if the approver is out of office at the time the approval is received       |
+    |Time-out or Out of Office     |    Delegation settings set by the approver are automatically applied if the approver assigned doesn't respond within the number of days defined, or if the approver is out of office at the time the approval is received.    |
 
-    a.  **None** - No delegation settings set by the approver are applied to this workflow
+1. Select a **Time Out Setting**.
 
-    b.  **Time-out** - Delegation settings set by the approver are automatically be applied if the approver assigned doesn't respond within the number of days defined
+    - **Actual Days** - The timeout calculation is the actual number of days since the node is started, and doesn't take holidays into consideration.
 
-    c.  **Out of Office** - Delegation settings set by the approver are automatically applied if the approver is out of office at the time the approval is received
+    - **Business Days** - The timeout calculation considers the number of business days passed based on the approvers work profile settings, and company holiday settings.
 
-    d.  **Time-out or Out of Office** - Delegation settings set by the approver are automatically applied either if the approver assigned doesn't respond within the number of days defined, or if the approver is out of office at the time the approval is received
+1. Select **Save & Back**.
 
-1. Select **Time Out Setting**
+Repeat steps if you would like to add more nodes in the same stage.
 
-    a.  **Actual Days** - The timeout calculation is the actual number of days since the node is started, and doesn't take holidays into consideration.
+> [!NOTE]
+> You don't need to specify only one approver in each node and can add multiple approvers together in a single node.
 
-    b. **Business Days** - The timeout calculation considers the number of business days passed based on the approvers work profile settings, and company holiday settings.
+### Add a conditional stage with a switch condition
 
-1. Select **Save & Back**
+After adding the first stage of the workflow, you can add conditional approval by defining conditions in stages. A switch condition allows you to have 2-5 different paths that flow to depending on the condition you set.
 
-1. Repeat steps if you would like to add more nodes in the same Stage.
+1. Select **Add Stage**.
 
-*Note: You don't need to specify only one approver in each node and can add multiple approvers together in a single node.*
+1. Enter a **Name** and **Description**.
 
-![Screenshot of Process Advisor approval example](./media/process-designer-approval-example.png)
+1. Change the **Condition** to **Switch**.
 
-Example screenshot showing a scenario where only one response either from Alan Steiner, Manager of Initiator or Alicia Thomber is required
+1. Select the number of **Paths**.
 
-### Adding conditional stage - Switch Condition
+1. Select a **Source**.
 
-After adding the first stage of the workflow, you can add conditional approval by defining conditions in stages. Switch condition is where you can have 2-5 different paths that flow to depending on the condition.
-
-1. Select **Add Stage**
-
-1. Enter **Name** and **Description**
-
-1. Change **Condition** to Switch
-
-1. Select the number of **Paths**
-
-1. Select **Source**
-
-    a.  **Request Data** - the system automatically retrieves the
+    - **Request Data** - the system automatically retrieves the
         application data from the approval request to use as condition
 
-    b.  **Previous Node Outcome** - the system automatically
+    - **Previous Node Outcome** - the system automatically
         retrieves the outcome of the previous node (such as
         Approve/Reject or any custom options you defined) to use as
         condition
 
-1. Fill in the options for each path
+1. Fill in the options for each path.
 
-    a.  Select either **Static value** or **Request Data**
+    .Select either **Static value** or **Request Data**.
 
     - **Static value** - you must define the condition yourself
 
@@ -204,66 +182,65 @@ After adding the first stage of the workflow, you can add conditional approval b
 
 #### Switch example
 
-Example here shows a scenario where expense approval branches off to different nodes depending on what expense reimbursement category was selected in the original request.
+The example shown here's a scenario where the expense approval branches off to different nodes depending on what expense reimbursement category was selected in the original request.
 
-![Screenshot of Process Designer branch condition](./media/process-designer-approval-branch-example.png)
+:::image type="content" source="media/process-designer-approval-branch-example.png" alt-text="A screenshot of a Process Designer branch condition.'":::
 
-Once defined, the Process Configurator shows three paths to add Nodes to. Below shows if Gift is selected, Jamie from General Affairs is the approver, and if Equipment is selected, Karen from Procurement is the first approver, followed by her manager (Procurement Director). If neither option is selected, it will go to the next stage
+Once defined, the Process Configurator shows three paths to add nodes to. Below shows if Gift is selected, Jamie from General Affairs is the approver, and if Equipment is selected, Karen from Procurement is the first approver, followed by her manager (Procurement Director). If neither option is selected, it will go to the next stage.
 
-![Screenshot of Process Designer branch condition completed](./media/process-designer-approval-branch-example-completed.png)
+:::image type="content" source="media/process-designer-approval-branch-example-completed.png" alt-text="A screenshot of the Process Designer branch condition in completed form.":::
 
-### Adding conditional stage - If/Else Condition
+### Add a conditional stage with an If/Else Condition
 
-After adding the first stage of the workflow, you can add conditional approval by defining conditions in stages. If/Else condition is where you can have specific requirement (For example amount greater than 5000 USD, company code starts with 10 etc.)
+After adding the first stage of the workflow, you can add conditional approval by defining conditions in stages. An If/Else condition allows you to outline a specific requirement (for example, an amount greater than 5000 USD, a company code starts with 10, etc.)
 
-1. Select **Add Stage**
+1. Select **Add Stage**.
 
-2. Enter **Name** and **Description**
+2. Enter a **Name** and **Description**
 
-3. Change **Condition** to If/Else
+3. Change the **Condition** to If/Else.
 
-4. Select **Source**
+4. Select a **Source**.
 
-    a.  ***Request Data*** - the system automatically retrieves the application data from the approval request to use as condition
+    - **Request Data** - the system automatically retrieves the application data from the approval request to use as condition
 
-    b.  ***Previous Node Outcome*** - the system automatically retrieves the outcome of the previous node (such as Approve/Reject or any custom options you defined) to use as condition
+    - **Previous Node Outcome** - the system automatically retrieves the outcome of the previous node (such as Approve/Reject or any custom options you defined) to use as condition
 
-5. Select Operand - Changes depending on what type of data you select in step 4.
+5. Select an operand.
 
-6. Fill in the condition
+    > [!NOTE]
+    > This will depend on what type of data you select in step 4.
 
-    a.  Select either **Static value** or **Request Data**
+6. Fill in the condition.
 
-    - **Static value** - you must define the condition yourself
+    Select either **Static Value** or **Request Data**
+
+    - **Static Value** - you must define the condition yourself.
 
     - **Request Data** - the system compares the Request
             Data defined in step 4 against what request data you define
-            here
+            here.
 
 #### If/Else example
 
-Example here shows a scenario where expense approval branches off to two paths depending on the amount of expense reimbursement requested is greater than or equal to 5000 USD.
+The example shown here's a scenario where expense approval branches off to two paths depending on the amount of expense reimbursement requested.  The condition is for expenses greater than or equal to 5000 USD.
 
-![Screenshot of Process Designer if condition](./media/process-designer-approval-if-example.png)
+:::image type="content" source="media/process-designer-approval-if-example.png" alt-text="A screenshot of the Process Designer showing an if condition.":::
 
 ## Publishing workflow
 
-Once finished configuring workflows, you need to publish the workflow to be able to use it. The system automatically checks and validates that the workflow doesn't have any errors.
+Once you finish configuring workflows, you must publish the workflow to be able to use it. The system automatically checks and validates that the workflow doesn't have any errors.
 
-1. Open process you want to publish
+1. Open process you want to publish.
 
-1. Select Workflows
+1. Select **Workflows**.
 
-1. Select **Publish**
+1. Select **Publish**.
 
-1. Select **Yes** for **Activate process when published**
+1. Select **Yes** for **Activate process when published**.
 
-1. Select **Publish**
-
-![Screenshot Process Designer publish validation](./media/process-designer-publish-validation.png)
+1. Select **Publish**.
 
 Once you select publish, a new version is stored and the system begins the publishing process. When complete, the system shows the **Activation status** as **Active**.
 
-![Screenshot Process Designer process active](./media/process-designer-active.png)
-
-You're now ready to take in approval requests.
+You're now ready to take approval requests.
