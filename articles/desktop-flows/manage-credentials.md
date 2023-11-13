@@ -144,7 +144,7 @@ From Solutions page, you can retrieve all the dependencies of secret environment
 ## Export a desktop flow connection using credential
 
 >[!NOTE]
->You should first read the article about [ALM for desktop flows](/power-automate/desktop-flows/alm/alm-solution)
+>You should first read the article about [ALM for desktop flows](/power-automate/desktop-flows/alm/alm-solution).
 
 You can export a cloud flow with a desktop flow connection using credential. 
 You should import the solution containing the credential and the related environment variables first then import the one containing the cloud flow and the desktop flow. 
