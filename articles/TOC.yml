@@ -359,7 +359,7 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
-  - name: Get started with Copilot in Power Automate for desktop
+  - name: Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Run desktop flows
     items:

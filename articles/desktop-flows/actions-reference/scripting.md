@@ -29,9 +29,9 @@ All scripting actions follow the basic structure of the respective programming o
 > [!NOTE]
 > Supported version for **C#:** v 5.0. For **VB.NET**: v 11.0
 
-## Natural language to script powered by Copilot (preview)
+## Natural language to script powered by copilot (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Natural language to code is a new copilot capability added in Power Automate for desktop. It lets you quickly generate code used in the scripting actions by describing it. This feature is available in the following scripting actions:
 
@@ -41,12 +41,11 @@ Natural language to code is a new copilot capability added in Power Automate for
 - **Run Python** and
 - **Run JavaScript**
 
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+[!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 ### Availability by region
 
-Currently, copilot in Power Automate for desktop is only available in environments located in the US.
+Currently, copilot in Power Automate for desktop is only available in environments located in the United States.
 
 ### Availability by account type
 
@@ -57,7 +56,7 @@ Currently, copilot in Power Automate for desktop is only available for users wit
 
 ### How to generate scripts using copilot and natural language
 
-To generate scripts in one of the supported scripting actions just drag and drop the action in the designer and select **Generated script with Copilot** as shown in the image here.
+To generate scripts in one of the supported scripting actions drag and drop the action in the designer and select **Generated script with Copilot**.
 
 :::image type="content" source="media\scripting\powershell_action.png" alt-text="Screenshot of the run PowerShell action with the Generate script with Copilot button highlighted":::
 
@@ -74,8 +73,8 @@ To create a script, write your prompt and select **Generate**. If you need to re
 
 ### Help us improve this feature
 
-You can send feedback by selecting the thumbs-up or thumbs-down icons underneath the AI-generated content. Once you do, a feedback dialog appears, which you can use to submit feedback to Microsoft.
-:::image type="content" source="media\scripting\feedback_dialog1.png" alt-text="Animated gif that shows the Copilot answering a user's question from the designer.":::
+Send feedback by selecting the thumb up or thumb down icon underneath the AI-generated content. Once you do, a feedback dialog appears, which you can use to submit feedback to Microsoft.
+:::image type="content" source="media\scripting\feedback_dialog1.png" alt-text="Animated gif that shows the copilot answering a user's question from the designer.":::
 
 > [!NOTE]
 > If you can't see the dialog, your tenant admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
@@ -89,7 +88,7 @@ As a tenant admin you can prevent your users from sending feedback to Microsoft 
 
 ### Data subject rights requests on user feedback
 
-Organization administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), then go to **Health** > **Product feedback**. 
+Organization administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), then go to **Health** > **Product feedback**.
 
 ### AI with Power Automate resources
 
