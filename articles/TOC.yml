@@ -718,7 +718,9 @@
     - name: Custom actions
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
-      href: ./desktop-flows/actions-reference/cloudconnectors.md  
+      href: ./desktop-flows/actions-reference/cloudconnectors.md
+    - name: SAP GUI
+      href: ./desktop-flows/actions-reference/sap.md
   - name: Troubleshoot desktop flows
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
