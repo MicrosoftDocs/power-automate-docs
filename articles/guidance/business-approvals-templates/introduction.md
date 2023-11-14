@@ -20,7 +20,7 @@ Approvals are a key use case present across every industry, organization, and de
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available in your region.
 
-Business approvals templates as part of the Approvals Kit provide no-code templates that are built on top of Microsoft Power Platform components. Use these templates to accelerate the speed at which your organization creates sophisticated approvals workflows that include conditional branching, delegation, administrative overrides, and more. Since the templates are no-code, almost anyone in your organization can use them to meet your approval needs.
+Business approvals templates as part of the approvals kit provide no-code templates that are built on top of Microsoft Power Platform components. Use these templates to accelerate the speed at which your organization creates sophisticated approvals workflows that include conditional branching, delegation, administrative overrides, and more. Since the templates are no-code, almost anyone in your organization can use them to meet your approval needs.
 
 :::image type="content" source="media/business-approvals-templates.png" alt-text="A screenshot of the Business Approvals Process Manager with the Designer view selected and a process flow displayed.":::
 
