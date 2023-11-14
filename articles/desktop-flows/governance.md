@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: georgiostrantzas
 ms.topic: conceptual
-ms.date: 10/17/2023
+ms.date: 11/13/2023
 ms.author: iomavrid
 ms.reviewer: gtrantzas
 contributors:
@@ -13,7 +13,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Governance in Power Automate for desktop
 
 You can use the Windows registry to control who can do what with Power Automate for desktop.
@@ -399,6 +398,21 @@ You can use the following registry entry to allow switching machine registration
 ***Value***
 
 - **1**: Machine registration can switch to another tenant.
+
+## Prevent users from using the copilot's generative answers capability
+
+To prevent your users from using the copilot’s generative answers capability, Power Platform administrators turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
+
+## Prevent users from sending copilot related feedback
+
+As a Power Platform admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting. Find more information about viewing and setting tenant settings here:
+
+- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+
+## Prevent your users from using any copilot capability
+
+To prevent your users from using any copilot capability contact Microsoft Customer Support to disable all copilot functionality in your tenant. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
 ### See also
 
