@@ -160,7 +160,7 @@ Similarly, if you want to see how your flow reacts if a certain action fails wit
 
 When static outputs are disabled, the toggle label is **Enable Static Result**. When static outputs are enabled, the toggle label is **Disable Static Result**.
 
-:::image type="content" source="media/flows-designer/static-result.png" alt-text="Screenshot of the 'Disable Static Result' toggle in the Testing tab.":::
+:::image type="content" source="media/flows-designer/static-result.png" alt-text="Screenshot of the 'Enable or Disable Static Result' toggle in the Testing tab.":::
 
 ## Identify differences between the classic designer and the cloud flows designer
 
