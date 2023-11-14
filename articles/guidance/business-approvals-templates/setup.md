@@ -67,9 +67,9 @@ The business approvals kit is a collection of components that are designed to he
 
 ## Setup a new environment to install (optional)
 
-1. Create an environment in which to set up the Approvals Kit
+1. Create an environment in which to set up the approvals kit.
 
-    a.  Go to the Power Platform admin center
+    a.  Go to the Power Platform Admin Center.
 
     b.  Select **Environments**, then **+ New** and enter a name, type, and purpose.
 
@@ -98,7 +98,7 @@ pac application install --environment $envs[0].EnvironmentId --application-name 
 
 In new environments, use the Power Platform Admin Center to install the Power Automate Approvals feature:
 
-1. Open the [Power Platform Admin center](https://aka.ms/ppac)
+1. Open the [Power Platform Admin center](https://aka.ms/ppac).
 
 1. In the left nagivation, select **Resources**.
 
@@ -159,15 +159,15 @@ The first step of the installation process is to install the solution. This step
 
 1. From the expanded section **Assets** for the latest release, download the Approvals Kit file **BusinessApprovalsKit_*_managed.zip**.
 
-1. Go to <https://make.powerapps.com>
+1. Go to [Power Apps](https://make.powerapps.com).
 
 1. On the left pane, select **Solutions**.
 
-1. Select **Import**, then choose **Browse**
+1. Select **Import**, then choose **Browse**.
 
 1. Select the Approvals Kit core components solution from File Explorer.
 
-1. Once the compressed (.zip) value is available, select **Next**
+1. Once the compressed (.zip) value is available, select **Next**.
 
 1. Review the information, and then select **Next**.
 
@@ -179,7 +179,7 @@ The first step of the installation process is to install the solution. This step
 
 1. Select **Import**.
 
-Once import is complete, you should see Business Approvals Kit in the list of solutions
+Once import is complete, you should see business approvals kit in the list of solutions
 
 > [!NOTE]
 > The import can take up to 10 minutes to complete.
@@ -204,12 +204,12 @@ Follow these steps to perform the app registration.
 
 1. Under **API permission**, select **Add a permission** and choose **Dynamic CRM**.
     
-    :::image type="content" source="media/app-registration-dynamics-crm.png" alt-text="A screenshot fo the Request API permissions options within the Approvals kit App.":::
+    :::image type="content" source="media/app-registration-dynamics-crm.png" alt-text="A screenshot of the Request API permissions options within the Approvals kit App.":::
 
 1. Choose **Delegated permission** and select user_impersonation. 
 1. Select **Add Permissions**.
 
-![App Registration adding API permissions for Dynamics CRM with delegated user_impersonation](./media/app-registration-dynamics-crm-delegated-permissions.png)
+:::image type="content" source="media/app-registration-dynamics-crm-delegated-permissions.png" alt-text="A screenshot of the Approvals kit App API permissions with the Request API permissions panel open.":::
 
 1. Create a secret by moving to **Certificates and Secrets** section and select **New client secret**.
 
