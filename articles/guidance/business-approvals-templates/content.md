@@ -95,7 +95,7 @@ The following tables are used for definition.
 
 #### Version tables
 
-|Name|Description|Example(s)|
+|Name|Description|
 |----|----------|
 |Business Approval Version|A saved version of a business approval process.|
 |Business Approval Published Workflow|Defined a published approval process version.|
