@@ -16,7 +16,7 @@ Copilot in desktop flow activity enables administrators, CoE teams, business use
 
 ## What can copilot in desktop flow activity do?
 
-Copilot in desktop flow activity is capable of translating natural language queries into Microsoft Dataverse fetchXML query syntax, specifically optimized for desktop flow activity such as desktop flow runs, machines, and errors. This allows users to easily retrieve information about their automation data by asking questions in a natural language. Additionally, copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
+Copilot in desktop flow activity is capable of translating natural language queries into Microsoft Dataverse FetchXML query syntax, specifically optimized for desktop flow activity such as desktop flow runs, machines, and errors. This allows users to easily retrieve information about their automation data by asking questions in a natural language. Additionally, copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
 
 ## What is copilot in desktop flow activity’s intended use?
 

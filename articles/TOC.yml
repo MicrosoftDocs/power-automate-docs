@@ -321,7 +321,7 @@
     href: ./desktop-flows/introduction.md
   - name: Get started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
-  - name: Use Copilot to analyze desktop flow activity (preview)
+  - name: Use copilot to analyze desktop flow activity (preview)
     href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md 
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
@@ -1154,7 +1154,7 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
-  - name: FAQ for Copilot in desktop flow activity (preview)
+  - name: FAQ for copilot in desktop flow activity (preview)
     href: faqs-copilot-automation-activity.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
