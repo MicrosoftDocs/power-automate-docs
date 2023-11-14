@@ -45,7 +45,7 @@ Once you download the app:
 >[!NOTE]
 > The screens on Android, iOS and Windows Phone may differ slightly; however, the functionality is the same on all devices.
 
-## Approve from Power Automate Approvals center
+## Approve from Power Automate approvals center
 
 You can approve a request from Power Automate approvals center. To make an approval, following the following steps:
 
@@ -63,7 +63,7 @@ You can approve a request from Power Automate approvals center. To make an appro
 
 :::image type="content" source="media/power-automate-approval.png" alt-text="A screenshot of the Power Automate approval response panel.":::
 
-## Approvals Status Reference
+## Approvals status reference
 
 The Business Approval Management app uses icons as a visual guide to approval status.
 
