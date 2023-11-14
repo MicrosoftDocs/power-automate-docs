@@ -359,6 +359,8 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
+  - name: Copilot in Power Automate for desktop (preview)
+    href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Run desktop flows
     items:
     - name: Run unattended and attended desktop flows from the cloud
@@ -1152,3 +1154,7 @@
     href: faqs-copilot.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
+  - name: FAQ for copilot generative answers in Power Automate for desktop
+    href: faqs-copilot-generative-answers-power-automate-desktop.md
+  - name: FAQ for generating code with natural language
+    href: faqs-copilot-nl-to-code.md
