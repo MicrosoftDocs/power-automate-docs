@@ -16,11 +16,11 @@ The approvals kit is built on the out of the box [approvals connector](/connecto
 
 The kit enables you to rapidly make changes without the need to update or deploy a Power Platform solution. You can create variations for one approval without impacting other approval processes. Additionally, Dataverse provides auditing features to record approvals processes.
 
-![Diagram of High level architecture of Approvals Kit](../media/approvals-kit-high-level-architecture.png)
+:::image type="content" source="media/approvals-kit-high-level-architecture.png" alt-text="A diagram of the high-level architecture for the approvals kit.":::
 
 Key components of the kit:
 
-- **Process designer**: A Power App that allows Bbusiness users to create and version approval workflows with input application data, stages and conditions. Data used by the process designer is stored in Dataverse design time tables.
+- **Process designer**: A Power App that allows business users to create and version approval workflows with input application data, stages and conditions. Data used by the process designer is stored in Dataverse design time tables.
 - **Custom connector**: Provides a simple way for makers to use a Power Automate trigger to start the process of a business approval based on the Power Platform connectors and actions.
 - **Dataverse**: A set of custom tables that allow workflows to be defined and monitored.
 - **Power Automate cloud flows**: A set of cloud flows that react to changes in the Dataverse tables to manage the end to end approval process.
@@ -40,7 +40,7 @@ The table represents a list of flows and processes related to a business approva
 |BACore \| Approver OOF                           | This flow subscribes to a Dataverse trigger on business approvers and listens for changes in a specific entity. When a change occurs, it retrieves a list of delegates and their out-of-office status. It then selects an available delegate and creates an override for any running approval instances assigned to the original approver who is out of office. The override sets the delegate as the new approver and provides a reason for the override.|
 |BACore \| Cascade Process Status                 | Cascades process status from business approval process handling application data, stage status, node status and conditions.|
 |BACore \| Cascade Publishing Activation          | Updates the associated runtime data status. When triggered, it retrieves all associated runtime data records for a specific process version and updates their state code to match the trigger's state code. |
-|BACore \| Child \| Activate Published Workflow   | Copies business approval runtime data to create business appprovals published workflows and business approval published runtime data.|
+|BACore \| Child \| Activate Published Workflow   | Copies business approval runtime data to create business approval published workflows and business approval published runtime data.|
 |BACore \| Child \| Evaluate Rule                 | Evaluates a business approval node condition. |
 |BACore \| Child \| Get Default Settings          | Gets the business approval settings or default values if none are set. |
 |BACore \| Child \| Get Dynamic Approver          | Looks up user or manager from the office graph to add approvers to business approvals. |
@@ -50,17 +50,17 @@ The table represents a list of flows and processes related to a business approva
 |BACore \| Daily \| Calculate Approval Timeouts   | This flow decrements the timeout counter of business approval instances. The counter is decrements down one day for each business if the timeout mode is set to business days and it's a workday with no holidays. Otherwise, the counter decremented by one actual day.
 |BACore \| Publish Process                        | Copies the process definition, stages, conditions and nodes. |
 |BACore \| Runtime \-\- Initialize Workflow Queue | Subscribes to a Dataverse trigger on business approval workflow queues and creates a new workflow instance for a business approval process. It retrieves data from a runtime data instance and creates a new record for each item in the data instance. The flow also retrieves the active version of the business approval process and creates a new record for the workflow instance.
-|BACore \| Runtime \-\- Start Approval            | Subscribes to a dataverse trigger on business approval instance and creates a new workflow instance for a business approval process. It retrieves data from a runtime data instance and creates a new record for each item in the data instance. The flow also retrieves the active version of the business approval process and creates a new record for the workflow instance.
+|BACore \| Runtime \-\- Start Approval            | Subscribes to a Dataverse trigger on business approval instance and creates a new workflow instance for a business approval process. It retrieves data from a runtime data instance and creates a new record for each item in the data instance. The flow also retrieves the active version of the business approval process and creates a new record for the workflow instance.
 |BACore \| Runtime \-\- Start Node                | Subscribes to a Dataverse trigger on business runtime node approval instance that creates approvals, stage, conditions. It includes the ability to move to new stage based on conditions. A node can complete a business approval workflow or a defined stage.
 |BACore \| Runtime \-\- Start Stage               | Subscribes to a Dataverse trigger on business approval runtime stage instance. It sets the first node to process in the workflow if nodes defined or complete the stage if no nodes defined.
 |BACore \| Runtime \-\- Start Workflow            | Subscribes to a Dataverse trigger on business approval workflow. It initializes the first stage or saves and error isn't stages defined.
 |BACore \| Runtime \-\- Update Approval           | Subscribes to a Dataverse trigger on business approval instance. When a change occurs, it checks the status of the instance and performs different actions based on the outcome. If the outcome is **Approve**, it cancels other running instances and updates the node instance status. If the outcome is **Reject**, it cancels other running instances and updates the node instance status to **Canceled**.
 |BACore \| Runtime \-\- Update Node Instance      | Subscribes to a Dataverse trigger on business approval runtime node instance. When a change occurs, it checks the instance status field and performs different actions based on its value. It either creates a new node instance or completes the runtime stage instance status or it cancels the runtime stage instance status.
-|BACore \| Runtime \-\- Update Stage Instance     |  Subscribes to a Dataverse trigger on ausiness approval runtime stage instance. Depending on the status, it either creates a new stage instance or updates the workflow instance to complete.
+|BACore \| Runtime \-\- Update Stage Instance     |  Subscribes to a Dataverse trigger on business approval runtime stage instance. Depending on the status, it either creates a new stage instance or updates the workflow instance to complete.
 |BACore \| Sync Approver OOF                      | Runs a daily task to set or clear the out of office state.
 |BACore \| Update Active Published Workflow       | Subscribes to a Dataverse trigger on business approval version and calls child flow activate published workflow.
 
-## Davaverse
+## Dataverse
 This section summarizes the Dataverse components that make up the approvals kit.
 
 ### Tables
@@ -127,14 +127,13 @@ Notes:
 - Tables in blue are the related tables that save information about a version of a process
 - Tables in black are the related tables that save transactional information for a specific approval process
 
-![Entity Relationship diagram that shows the relationships between key tables](../media/datamodel.png)
-[Open diagram](../media/datamodel.png)
+:::image type="content" source="media/datamodel.png" alt-text="An entity relationship diagram that shows the relationships between key tables.":::
 
 ## Custom connector
 
 The Approvals Kit includes a custom connector to help the process of starting a new business approval process.
 
-![Example custom connector to start a business approval](../media/custom-connector-example.png)
+:::image type="content" source="media/custom-connector-example.png" alt-text="An example of a custom connector to start a business approval.":::
 
 The custom connector provided as part of the kit uses [Custom code support](/connectors/custom-connectors/write-code) to query the defined workflow processes and application data (variables) required by the workflow.
 
@@ -170,7 +169,7 @@ This operation helps in listing all the published business approval templates by
 
 `/api/data/v9.2/cat_businessapprovalpublishedworkflows`
 
-![Image of start Business Approval connector](../media/start-business-approval.png)
+:::image type="content" source="media/start-business-approval.png" alt-text="A depiction of the start business approval connector.":::
 
 #### GetApprovalDataFields
 
@@ -178,9 +177,10 @@ This operation helps in fetching the list of dynamic schemas applicable for the 
 
 `/api/data/v9.2/cat_GetDynamicParameters(ProcessID={processID})`
 
-> **_NOTE:_** The return values of the API, which are of type Entity, are further modified using custom code for custom connector to support and align with the Open API schema. Refer **ModifySchema()** method in the Script.csx file for more information.
+> [!NOTE]
+> The return values of the API, which are of type Entity, are further modified using custom code for custom connector to support and align with the Open API schema. For more information, see the **ModifySchema()** method in the Script.csx file.
 
-![Image of start Business Approval connector with schema paremeters read from dataverse](../media/start-business-approval-with-parameters.png)
+![Image of start Business Approval connector with schema paremeters read from dataverse](../media/start-business-approval-with-parameters.png):::image type="content" source="media/start-business-approval-with-parameters.png" alt-text="A depiction of the start business approval connector with schema parameters read from Dataverse.":::
 
 #### CreateWorkflowInstance
 
@@ -188,9 +188,10 @@ This operation helps in creating a record in `businessapprovalworkflowqueues` by
 
 `/api/data/v9.2/cat_businessapprovalworkflowqueues`
 
-Here, we use a `CreateWorkflowQueue()` method using custom code for the custom connector to prepare and parse JSON, which holds all the parameter values and the Workflow ID (also known as ProcessID). 
+Here we use a `CreateWorkflowQueue()` method using custom code for the custom connector to prepare and parse JSON, which holds all the parameter values and the Workflow ID (also known as ProcessID). 
 
-> NOTE: This operation performs the final POST call to create the record.
+> [!NOTE]
+> This operation performs the final POST call to create the record.
 
 Here are the two values, which are updated during the post call:
 
