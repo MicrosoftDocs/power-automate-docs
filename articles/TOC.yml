@@ -496,7 +496,7 @@
       href: ./desktop-flows/use-custom-actions.md
     - name: Actions SDK for .NET reference
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
-  - name: Troubleshooter (preview)
+  - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
   - name: How to
     items:
