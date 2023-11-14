@@ -28,12 +28,12 @@ Organizations often need approvals for key business processes. These processes m
 
 With Power Platform, you can automate approvals needs by combining components from [Power Apps](https://make.powerapps.com) and [Power Automate](https://make.powerautomate.com). As the complexity of your approvals increases, so does your configuration and need to assemble multiple low code components together. The business approvals templates are available with as a configured collection of components and tools that are designed to help organizations automate their approvals processes quickly.
 
-These templates cover many of the typical requirements in most organizations, including:
+These templates cover many of the typical requirements in most organizations, such as the ability to:
 
-- The ability to configure multi-stage approvals
+- Configure multi-stage approvals
 - Delegate others to approve
 - View approvals progress and history
 - Manage out of office for approvers
 - Support for versions of approval process
 - Publish version approval workflow
-- Handling of work days and public holidays
+- Handle of work days and public holidays
