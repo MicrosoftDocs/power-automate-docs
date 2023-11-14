@@ -10,13 +10,13 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Business Approvals Kit manual setup
+# Business approvals kit manual setup
 
-The Approvals Kit and guidance is targeted towards the person or department responsible for setting up approval system in your organization. Key sections walk you through the prerequisites, setup instructions, and individual components of the Approvals Kit.
+The business approvals kit and guidance is targeted towards the person or department responsible for setting up approval system in your organization. Key sections walk you through the prerequisites, setup instructions, and individual components of the Approvals Kit.
 
 ## Overview
 
-The Approvals Kit is a collection of components that are designed to help you get started with digitalizing your organization's approval processes using Microsoft Power Platform. More information about individual components can be found in the Approvals Kit.
+The business approvals kit is a collection of components that are designed to help you get started with digitalizing your organization's approval processes using Microsoft Power Platform. More information about individual components can be found in the business approvals kit.
 
 > [!NOTE:
 > ]The Approvals Kit can only be used currently in Dataverse environments, and setting up in Dataverse for Teams environments and default environments are not supported.*
@@ -83,7 +83,7 @@ The Approvals Kit is a collection of components that are designed to help you ge
 
 ## Enable Power Automate approvals capability
 
-Approvals Kit relies on out of the box approvals functionality from Power Automate. If you're using the approvals function for the first time, you must enable the function first either by using the Power Platform Command Line interface or manually by running a cloud flow that includes an approval
+The approvals kit relies on out of the box approvals functionality from Power Automate. If you're using the approvals function for the first time, you must enable the function first either by using the Power Platform Command Line interface or manually by running a cloud flow that includes an approval
 
 ### Command Line Setup
 
@@ -186,7 +186,7 @@ Once import is complete, you should see Business Approvals Kit in the list of so
 
 ### After import steps
 
-Once Approvals kit solution is imported to an environment successfully, you must update the  Approvals kit custom connector to point to the target tenant Identity provider and turn on cloud flows.
+Once the approvals kit solution is imported to an environment successfully, you must update the  Approvals kit custom connector to point to the target tenant Identity provider and turn on cloud flows.
 
 #### Update Custom Connector
 
