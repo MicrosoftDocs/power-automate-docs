@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 
 # Triggering approvals
 
-The next step after [configuring your Approvals](./configuring-preset-approvals.md) is to link the Approvals Kit with some system. Some examples include Power Apps application, Microsoft Forms, SharePoint list, SQL Database to trigger the Approval request from.
+The next step after [configuring your approvals](./configure-preset-approvals.md) is to link the Approvals Kit with some system. Some examples include Power Apps application, Microsoft Forms, SharePoint list, SQL Database to trigger the Approval request from.
 
 ## Choosing your ways to trigger approval requests
 
@@ -20,7 +20,7 @@ Power Automate cloud flows provides hundreds of options to choose from to cause 
 
 This docs section includes how-to steps for you to be able to trigger from most popular data sources and use it to link with Approvals Kit.
 
-### Trigger Comparison
+### Trigger comparison
 
 Review the table to compare relative advantages and disadvantages for each of data sources.
 
