@@ -14,7 +14,7 @@ ms.reviewer: angieandrews
 
 This document outlines the differences between the business approvals templates approvals kit and the Power Platform approvals connector. The approvals kit is a low-code innovative enhancement that seamlessly integrates the approvals connector with a user-friendly, no-code configurable Power Platform solution components.
 
-The approvals kit enhances the Approvals connector significantly, offering a range of features to help manage complex approval processes efficiently. Use the Approvals kit to:
+The approvals kit enhances the approvals connector significantly, offering a range of features to help manage complex approval processes efficiently. Use the Approvals kit to:
 
 - Configure multi-stage approvals
 - Delegate decision-making authority
