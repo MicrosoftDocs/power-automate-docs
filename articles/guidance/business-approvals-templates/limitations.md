@@ -12,13 +12,13 @@ ms.reviewer: angieandrews
 
 # Limitations
 
-The Approvals kit is created to address some of the most common approval patterns; however, there are limits to what a template can do to accommodate every possible approval scenario. The kit is intended to act as a base solution to what you could use for approvals. Some requirements might not fit for your organization, and which you can tailor to your needs by customizing the template.
+The approvals kit is created to address some of the most common approval patterns; however, there are limits to what a template can do to accommodate every possible approval scenario. The kit is intended to act as a base solution to what you could use for approvals. Some requirements might not fit for your organization, and which you can tailor to your needs by customizing the template.
 
 There are some technical limitations this template, and the following sections describe limitations of the Approvals kit.
 
 ## Business approval management
 
-The following limits apply to the Business Approval Management application:
+The following limits apply to the business approval management application:
 
 - Conditions can't be applied to the first stage of a workflow.
 
