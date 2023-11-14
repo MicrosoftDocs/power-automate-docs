@@ -189,11 +189,11 @@
         - name: Setup
           href: ./business-approvals-templates/setup.md
         - name: Configure preset approvals
-          href: ./business-approvals-templates/configuring-preset-approvals.md
+          href: ./business-approvals-templates/configure-preset-approvals.md
         - name: Set up out of office and delegation
           href: ./business-approvals-templates/setup-out-of-office-and-delegation.md
         - name: Process approval requests
-          href: ./business-approvals-templates/processing-approval-requests.md
+          href: ./business-approvals-templates/process-approval-requests.md
         - name: Limitations
           href: ./business-approvals-templates/limitations.md
         - name: What's in the approval kit
