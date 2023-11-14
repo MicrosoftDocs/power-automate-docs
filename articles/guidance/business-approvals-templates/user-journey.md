@@ -63,7 +63,7 @@ Gibson reviews the [Setup Guide](./setup.md) to ensure the prerequisites are in 
 
 Charlotte uses the Process Designer to create a new business approval workflow and define approval stages, conditions, and approval steps within each stage that match the business requirements within the Sales department.
 
-See [Configure preset approvals](./configure-preset-approvals.md) for an example of how to configure key elements inside the Process Designer.
+More information: [Configure preset approvals](./configure-preset-approvals.md)
 
 ### Approval triggers
 
@@ -71,7 +71,7 @@ Gibson, another maker, or professional developers within organization can easily
 
 The rest of the approval processes are automatically handled and managed in the approvals kit.
 
-See [trigger approvals](./trigger-approvals.md) for information on how to create a Power Automate cloud flow to begin an approval workflow.
+More information: [Trigger approvals](./trigger-approvals.md) 
 
 ### Integration with business applications
 
@@ -85,6 +85,4 @@ Use desktop flows to streamline your approval processes with legacy systems, aut
 
 Rebecca and other configured approvers receive messages as adaptive cards in Microsoft Outlook and Microsoft Teams. These approvals include details provided by the business approval designer, Charlotte, to determine if the request should be approved or declined.
 
-See [process approval requests](./process-approval-requests.md) for more information on the approvals process.
-
-Approvers can also use [setup out of office and delegation](./setup-out-of-office-and-delegation.md).
+More information: [Process approval requests](./process-approval-requests.md), [Setup out of office and delegation](./setup-out-of-office-and-delegation.md).
