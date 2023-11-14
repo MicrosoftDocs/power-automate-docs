@@ -197,12 +197,4 @@
         - name: Limitations
           href: ./business-approvals-templates/limitations.md
         - name: What's in the approval kit
-          items:
-            - name: Overview
-              href: ./business-approvals-templates/whats-in-the-approval-kit/overview.md
-            - name: Power Automate
-              href: ./business-approvals-templates/whats-in-the-approval-kit/power-automate.md
-            - name: Dataverse
-              href: ./business-approvals-templates/whats-in-the-approval-kit/dataverse.md
-            - name: Custom Connector
-              href: ./business-approvals-templates/whats-in-the-approval-kit/custom-connector.md
+          href: ./business-approvals-templates/content.md
