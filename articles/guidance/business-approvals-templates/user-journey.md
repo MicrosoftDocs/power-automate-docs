@@ -29,14 +29,14 @@ Charlotte evaluates these considerations and chooses to use the business approva
 
 ## User journey persona summary
 
-Reviewing this user journey example there are three major personas of Approver, Approvals Administrator and Power Platform Administrator as part of user journey using the Approvals kit.
+Reviewing this user journey example there are three major personas of approver, approvals administrator and Power Platform administrator as part of user journey using the Approvals kit.
 
 ![Persona graphic overview with name and role](./media/persona-overview.svg)
 
 |Persona |Role |User type    |Description|
 |--------|-------------|-------------|-----------|
-|Power Platform Admin|IT Manager|Pro Developer|Creates / assigns environments and import approvals kit solution as system administrator or system customizer.|
-|Approvals Administrator|Sales Director|Power User|Configures the kit to match the business requirements. Analyzes the approval processes for improvement opportunities.|
+|Power Platform administrator|IT Manager|Pro Developer|Creates / assigns environments and import approvals kit solution as system administrator or system customizer.|
+|Approvals administrator|Sales Director|Power User|Configures the kit to match the business requirements. Analyzes the approval processes for improvement opportunities.|
 |Approver|Sales Manager|Business User|Receives approvals to accept or decline.|
 
 ## Example
