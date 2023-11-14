@@ -76,19 +76,19 @@ For more information and a short video of analytics, go to [Use KPIs and visuali
 
 ### "The process can't be analyzed because there are too many processes in this environment. To fix this, delete some of the processes or use a different environment."
 
-At present, Dataverse-managed PowerBI workspaces allow only 1000 reports for each environment so you would have delete a few processes from the current environment or create a new environment to analyze the process in. For more information about limitations got to [Workspaces in Power BI - Considerations and Limitations](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces#considerations-and-limitations)
+At present, Dataverse-managed Power BI workspaces allow only 1,000 reports for each environment. This means you need to delete a few processes from the current environment, or create a new environment to analyze the process in. To learn more about limitations, go to [Workspaces in Power BI&mdash;Considerations and limitations](/power-bi/collaborate-share/service-new-workspaces#considerations-and-limitations).
 
 To delete a process follow these steps:
 
-1. Select **Processes** from the breadcrumbs on the analytics or details page or select **All procesess** from the process mining homepage.
+1. Select **Processes** from the breadcrumbs on the analytics or details page, or select **All procesess** from the **Process mining** homepage.
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/9a55dbef-cc34-4985-a967-7bd342d9d8c1)
+    :::image type="content" source="media/process-mining-troubleshoot/processes-breadcrumbs.png" alt-text="Screenshot of 'processes' in the breadcrumbs.":::
 
-2. Select the vertical ellipses for the process you would like to delete and select **Delete process** from the dropdown.
+1. Select the vertical ellipses (**&vellip;**) for the process you want to delete, and then select **Delete process** from the dropdown menu.
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/113051637/6210a988-1b20-4e90-9295-ebd7b3e4c76e)
+    :::image type="content" source="media/process-mining-troubleshoot/delete-process.png" alt-text="Screenshot of the privileges on the dataflow tables for the environment Maker role.":::
 
-3. Select **Confirm** to delete the process.
+1. To delete the process, select **Confirm**.
 
 ### "You must have one case with at least two activities to analyze your process. Please change your data."
 
