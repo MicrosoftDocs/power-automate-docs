@@ -180,7 +180,7 @@ This operation helps in fetching the list of dynamic schemas applicable for the 
 > [!NOTE]
 > The return values of the API, which are of type Entity, are further modified using custom code for custom connector to support and align with the Open API schema. For more information, see the **ModifySchema()** method in the Script.csx file.
 
-![Image of start Business Approval connector with schema paremeters read from dataverse](../media/start-business-approval-with-parameters.png):::image type="content" source="media/start-business-approval-with-parameters.png" alt-text="A depiction of the start business approval connector with schema parameters read from Dataverse.":::
+:::image type="content" source="media/start-business-approval-with-parameters.png" alt-text="A depiction of the start business approval connector with schema parameters read from Dataverse.":::
 
 #### CreateWorkflowInstance
 
