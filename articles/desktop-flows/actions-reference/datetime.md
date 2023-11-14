@@ -84,7 +84,7 @@ Retrieves the current date or the current date and time.
 |Retrieve|N/A|Current date and time, Current date only|Current date and time|Specify whether to get the date and time, or just the date. If the latter is chosen, the time value will be stored as midnight (0:00:00)|
 |Time zone|N/A|System time zone, Specific time zone **(to be deprecated)**, Windows time zone, Custom input|System time zone|Specify whether to use the system's time zone or select a specific one or set up a time zone manually|
 |Country/region|No|[Text value](../variable-data-types.md#text-value)|Europe/Bucharest|The country/region to get the time of or add a numeric value as the hours that will be added in the UTC time zone|
-|Windows time zone|No|Available [Windows time zones](https://learn.microsoft.com/windows-hardware/manufacture/desktop/default-time-zones#time-zones)|(UTC) Coordinated Universal Time|Specify the country/region to obtain the time zone from|
+|Windows time zone|No|Available [Windows time zones](/windows-hardware/manufacture/desktop/default-time-zones#time-zones)|(UTC) Coordinated Universal Time|Specify the country/region to obtain the time zone from|
 |Input Type|No|Offset, Windows time zone|Offset|Choose whether to set the offset via a numeric value or by providing a Windows format time zone|
 |Offset|No|[Numeric value](../variable-data-types.md#numeric-value)|N/A|Specify the number of hours the offset is going to be. Time format is UTC.|
 |Time zone|No|[Text value](../variable-data-types.md#text-value)|N/A|Specify the time zone (Windows time zone)|
