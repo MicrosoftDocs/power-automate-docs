@@ -1,5 +1,5 @@
 ---
-title: Setting up Out of Office and delegation
+title: Set up out of office and delegation
 description: Learn how to set up out of fffice and delegation.
 documentationcenter: na
 author: Grant-Archibald-MS
