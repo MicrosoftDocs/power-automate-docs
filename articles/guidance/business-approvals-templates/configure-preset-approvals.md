@@ -1,6 +1,6 @@
 ---
 title: Configure preset approvals
-description: Learn how to configure preset approvals for the Business approvals kit.
+description: Learn how to configure preset approvals for the business approvals kit.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 
 # Configure preset approvals
 
-The Approvals kit allows you to predefine approval workflows so that you don't need to set up each approver manually.
+The business approvals kit allows you to predefine approval workflows so that you don't need to set up each approver manually.
 
 To configure preset approvals, you must set up:
 
@@ -55,7 +55,7 @@ First step of configuring preset approvals is to set up Processes. Processes are
 
 In a typical approval request, you often need to also submit information about the approval. For example amount, project category, department, accommodation, chart of account number, cost center code, etc.
 
-The Approvals kit allows you to use these types of data from Power Platform, other applications, and systems. Use data retrieved via connectors or manually enter the data when you make the request. To use the data in your approval process, define them in Application Data.
+The approvals kit allows you to use these types of data from Power Platform, other applications, and systems. Use data retrieved via connectors or manually enter the data when you make the request. To use the data in your approval process, define them in Application Data.
 
 1. Enter the **Field Name**
 
