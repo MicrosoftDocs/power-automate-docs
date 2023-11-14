@@ -80,7 +80,7 @@ At present, Dataverse-managed Power BI workspaces allow only 1,000 reports for e
 
 To delete a process follow these steps:
 
-1. Select **Processes** from the breadcrumbs on the analytics or details page, or select **All procesess** from the **Process mining** homepage.
+1. Select **Processes** from the breadcrumbs on the analytics or details page, or select **All procesess** from the **Process mining** home page.
 
     :::image type="content" source="media/process-mining-troubleshoot/processes-breadcrumbs.png" alt-text="Screenshot of 'processes' in the breadcrumbs.":::
 
