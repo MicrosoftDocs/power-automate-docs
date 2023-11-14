@@ -14,7 +14,7 @@ ms.reviewer: angieandrews
 
 There are multiple options to process approval requests and multiple results to choose from.
 
-The Approvals kit has standard approve and decline options and several other options to accommodate complex approval scenarios. Review this content to understand how the system handles the approval request based on results.
+The approvals kit has standard approve and decline options and several other options to accommodate complex approval scenarios. Review this content to understand how the system handles the approval request based on results.
 
 ## Approve from Microsoft Teams
 
