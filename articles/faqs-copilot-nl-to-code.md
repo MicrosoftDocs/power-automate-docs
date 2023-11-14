@@ -25,17 +25,17 @@ The intended use is to allow users to create scripts quickly and with ease, by j
 
 ## How was natural language to code in scripting actions evaluated? What metrics are used to measure performance?
 
-- We have a robust set of metrics we're tracking to measure the model's performance and resulting customer experience. We track the feature's SLA to make sure it's always available to you. We track the telemetry of thumbs-up and thumbs-down gestures present in the UI experience for each AI output that you can submit feedback for.
+- There's a robust set of metrics we're tracking to measure the model's performance and resulting customer experience. We track the feature's SLA to make sure it's always available to you. We track the telemetry of thumbs-up and thumbs-down gestures present in the UI experience for each AI output that you can submit feedback for.
 - You can provide feedback on this functionality when the results are biased or inappropriate. We track this feedback to ensure that copilot is compliant, appropriate, and bias-free.
-- We have meticulously tested the AI model through various internal processes and reviews to make sure that we provided the best possible quality and adhere to the highest of standards when it comes to security and reliability.
+- We tested the AI model through various internal processes and reviews to make sure that we provided the best possible quality and adhere to the highest of standards when it comes to security and reliability.
 
 ## What are the limitations of natural language to code in scripting actions? How can users minimize the impact of natural language to code in scripting action's limitations when using the system?
 
-The natural language to code in scripting actions capability can only generate scripts. It can't answer general questions or anything unrelated to the specific scripting language where the user launched the functionality. Currently, all the scripting actions are supported, but they run .NET action.
+The natural language to code in scripting actions capability can only generate scripts. It can't answer general questions or anything unrelated to the specific scripting language where the user launched the functionality. Currently, all the scripting actions are supported, but they run a .NET action.
 
 ## What operational factors and settings allow for effective and responsible use of natural language to code in scripting actions?
 
-- Natural language to code in scripting actions is only available and can only be accessed from the following scripting actions in Power Automate for desktop's designer: Run PowerShell, Run VBScript, Run DOS command, Run Python, and Run JavaScript actions.
+- Natural language to code in scripting actions is only available and can only be accessed from these scripting actions in Power Automate for desktop's designer: Run PowerShell, Run VBScript, Run DOS command, Run Python, and Run JavaScript actions.
 - Always review results from copilot.
 
 ## Get the best out of copilot

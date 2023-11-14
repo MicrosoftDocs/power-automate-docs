@@ -38,7 +38,7 @@ Natural language to code is a new copilot capability added in Power Automate for
 - **Run PowerShell**
 - **Run VBScript**
 - **Run DOS command**
-- **Run Python** and
+- **Run Python**
 - **Run JavaScript**
 
 [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]

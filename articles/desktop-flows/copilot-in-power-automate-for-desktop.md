@@ -20,11 +20,13 @@ The copilot generative answers capability in Power Automate for desktop provides
 > - Copilot’s generative answers capability is powered by the Azure OpenAI Service and Bing Search.
 > - To understand the capabilities and limitations of this feature, go to [FAQ for copilot generative answers in Power Automate for desktop](../faqs-copilot-generative-answers-power-automate-desktop.md)
 
-## Availability by region
+## Prerequisites
+
+### Availability by region
 
 Currently, copilot in Power Automate for desktop is only available in environments located in the United States.
 
-## Availability by account type
+### Availability by account type
 
 Currently, copilot in Power Automate for desktop is only available for users with a work or school account.
 
@@ -33,7 +35,7 @@ Currently, copilot in Power Automate for desktop is only available for users wit
 
 ## How to use copilot to get answers to product-related questions
 
-You can access the generative answers capability from the console by selecting the copilot button, located on the top right corner of the console window.
+Access the generative answers capability from the console by selecting **Copilot** located on the top right corner of the console window.
 
 :::image type="content" source="media/pad_generative_answers/copilot_console1.png" alt-text="Screenshot that shows where to select the copilot in Power Automate for desktop button.":::
 
@@ -41,7 +43,7 @@ Alternatively, you can also access the generative answers capability from the de
 
 :::image type="content" source="media/pad_generative_answers/copilot_designer1.png" alt-text="Screenshot that shows the alternative location to use copilot in Power Automate for desktop designer.":::
 
-In the copilot window, ask any product-related questions or use one of the premade prompts to get you started.
+In the **Copilot** pane, ask any product-related questions or use one of the proposed prompts to get you started.
 
 :::image type="content" source="media/pad_generative_answers/copilot_designer_2.gif" alt-text="Animated gif that shows the copilot answering a user's question from the designer.":::
 
