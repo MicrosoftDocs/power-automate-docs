@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/02/2023
+ms.date: 11/14/2023
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -143,23 +143,24 @@ The bottom button is for the minimap. Use it to focus on a specific section of a
 
 :::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot of the four zoom buttons.":::
 
-### New expression editor and token picker
+### Expression editor and token picker
 
-The expression editor in the new designer is multi-line, allowing easy creating and editing of long, complex expressions. A gripper allows you to temporarily expand the box by 1-2 lines as needed. If that is not enough, You can always expand the popup to a full page view too. A search box allows searching of tokens or functions both in the Dynamic content view or Expression view. 
+The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the Dynamic content view and Function view.
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/a928dc02-bab4-4bf4-9e14-ad72d308a7e8)
+:::image type="content" source="media/flows-designer/expression-editor.png" alt-text="Screenshot of the expression editor.":::
 
-Note: You can use '/' keyboard shortcut to invoke the token picker/expression editor popup when you are on an action field.
+> [!TIP]
+> You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
 
-### Disable an action or enable Static Results on an action 
+### Disable an action or enable static results on an action
 
-On the designer, if you want to disable an action rather than remove it entirely, navigate to _Testing_ tab of the action and enable ‘Static Outputs’. When the flow runs, this essentially treats the action as successful without actually running the action.
+On the designer, if you want to disable an action rather than remove it entirely, go to the **Testing** tab of the action and enable static outputs by turning on the **Enable Static Result** toggle. When the flow runs, this essentially treats the action as successful, without actually running the action.
 
-Similarly, if you want to see how your flow reacts if a certain action fails with a code/succeeds with a code, you can use the same capability of ‘Static outputs’ available on the action to mock the action execution to your needs.
+Similarly, if you want to see how your flow reacts if a certain action fails with a code or succeeds with a code, you can use the same capability of static outputs available on the action to mock the action execution to your needs.
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/7fb60798-2a06-47f4-8a42-af5626a67eda)
+When static outputs are disabled, the toggle label is **Enable Static Result**. When static outputs are enabled, the toggle label is **Disable Static Result**.
 
-
+:::image type="content" source="media/flows-designer/static-result.png" alt-text="Screenshot of the 'Disable Static Result' toggle in the Testing tab.":::
 
 ## Identify differences between the classic designer and the cloud flows designer
 
