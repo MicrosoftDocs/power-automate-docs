@@ -1,6 +1,6 @@
 ---
-title: Setting up Out of Office and delegation | Microsoft Docs
-description: Setting up Out of Office and delegation
+title: Setting up Out of Office and delegation
+description: Learn how to set up out of fffice and delegation.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
