@@ -1,5 +1,5 @@
 ---
-title: Set up out of office and delegation
+title: Setup out of office and delegation
 description: Learn how to set up out of fffice and delegation.
 documentationcenter: na
 author: Grant-Archibald-MS
@@ -10,9 +10,9 @@ ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
-# Setting up Out of Office and delegation
+# Setup out of office and delegation
 
-Approvals Kit has settings to manage you're out of office and approval delegations so that approval requests while you're away can be delegated to somebody else to make the approval decisions.
+The approvals kit has settings to manage you're out of office and approval delegations so that approval requests while you're away can be delegated to somebody else to make the approval decisions.
 
 ## Out of office setup steps
 

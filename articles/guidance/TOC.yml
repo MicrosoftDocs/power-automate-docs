@@ -190,7 +190,7 @@
           href: ./business-approvals-templates/setup.md
         - name: Configure preset approvals
           href: ./business-approvals-templates/configure-preset-approvals.md
-        - name: Set up out of office and delegation
+        - name: Setup out of office and delegation
           href: ./business-approvals-templates/setup-out-of-office-and-delegation.md
         - name: Process approval requests
           href: ./business-approvals-templates/process-approval-requests.md
