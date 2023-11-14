@@ -86,7 +86,7 @@ To delete a process follow these steps:
 
 1. Select the vertical ellipses (**&vellip;**) for the process you want to delete, and then select **Delete process** from the dropdown menu.
 
-    :::image type="content" source="media/process-mining-troubleshoot/delete-process.png" alt-text="Screenshot of the privileges on the dataflow tables for the environment Maker role.":::
+    :::image type="content" source="media/process-mining-troubleshoot/delete-process.png" alt-text="Screenshot of deleting a process from the dropdown menu.":::
 
 1. To delete the process, select **Confirm**.
 
