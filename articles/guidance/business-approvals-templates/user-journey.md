@@ -5,7 +5,7 @@ documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
-ms.date: 9/29/2023
+ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
 ---
@@ -47,7 +47,7 @@ An example user journey can be illustrated as a summarized diagram in the follow
 
 |Role|Actions|
 |----|-------|
-|Pro Developer/Admin|Gibson creates or nominates an environment to install Business Approvals kit. The approvals kit is installed|
+|Pro Developer/Admin|Gibson creates or nominates an environment to install Business Approvals kit. Requires a role of **System Customizer** for the approvals kit to be installed|
 |Approvals Administrator|Charlotte configures the kit to match the business requirements within sales dept.|
 |Maker|Gibson or another Power Platform maker creates a flow to trigger approvals integrated with SAP and internal systems.
 |Approver|Rebecca can use the Microsoft Teams to approve requests without extra training.|

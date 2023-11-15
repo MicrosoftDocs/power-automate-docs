@@ -5,7 +5,7 @@ documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
-ms.date: 9/29/2023
+ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
 ---
@@ -18,8 +18,8 @@ The business approvals kit and guidance is targeted towards the person or depart
 
 The business approvals kit is a collection of components that are designed to help you get started with digitalizing your organization's approval processes using Microsoft Power Platform. More information about individual components can be found in the business approvals kit.
 
-> [!NOTE:
-> ]The Approvals Kit can only be used currently in Dataverse environments, and setting up in Dataverse for Teams environments and default environments are not supported.*
+> [!NOTE:]
+> The Approvals Kit can only be used currently in Dataverse environments, and setting up in Dataverse for Teams environments and default environments are not supported.*
 
 ## Prerequisites
 
@@ -45,25 +45,32 @@ The business approvals kit is a collection of components that are designed to he
 
   - Power Apps and Power Automate pay as you go plans offer alternatives to monthly user, application or flow licenses. More information: [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus#power-appspower-automate-for-microsoft-365)
   
-  - Data Loss Prevention Policy categorized to be usable for the following connectors:
+  - Data Loss Prevention Policy categorized to be usable for the following connectors in the same grouping (Business or Non Business):
 
     - [Approvals](/connectors/approvals/)
 
     - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
 
-    - [Microsoft Teams](/connectors/teams/)
-
-    - [Office 365 Groups](/connectors/office365groups/)
-
-    - [Office 365 Outlook](/connectors/office365/)
-
     - [Office 365 Users](/connectors/office365users/)
 
-    - Approvals Kit custom connector
+    - Custom connectors with allowed pattern https://*.crm.dynamics.com (For multiple environment policy)
 
-    - More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
+    - Approvals Kit custom connector (For environment level policy)
+
+  - More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
 
   - Power Automate approvals connector capability enabled (see section on enabling Power Automate approvals capability for steps)
+
+## Persona Licenses
+
+Mapping persons from the [User journey](./user-journey.md) to licenses
+
+| Persona                   | User Journey Reference | License |
+|---------------------------|------------------------|---------|
+| Approver                  | Rebecca | Microsoft Office 365 (For Office 365 or Microsoft Teams ) or Power Platform standard user license (For Power Automate Maker Portal) |
+| Approval Administrator    | Charlotte | Microsoft Power Apps license |
+| Maker                     | Charlotte or Gibson | Power Automate Premium to author Cloud Flows |
+| Environment Administrator | Gibson | Assigned Power Automate Service to execute Cloud Flows |
 
 ## Setup a new environment to install (optional)
 
@@ -129,33 +136,17 @@ We recommend that you set up a designated Approvals Kit environment for all user
 > - To ensure consistency and same experience for every customer, the template is provided as [managed solutions](/power-platform/alm/solution-concepts-alm). 
 > - If you would like to extend the template, you will need to use a separate [unmanaged solution](/power-platform/alm/solution-concepts-alm) because you can't directly modify this template.
 
-### Enable the Power Apps component framework
-
-Once Microsoft Flow Approvals has been set up for the environment, enable the Power Apps component framework using these steps.
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-
-1. Select an environment where you want to enable this feature.
-
-    You need to do this for **main** and all **satellite** environments.
-
-1. On the top pane, select **Settings**.
-
-1. Select **Product**, then choose **Features**.
-
-1. Turn on **Allow publishing of canvas apps with code components**.
-
-1. Select **Save**.
-
 ### Import the Creator Kit
 
-Next, install the creator kit using one of the options in [Install the Creator Kit](/power-platform/guidance/creator-kit/setup).
+Install the creator kit using one of the options in [Install the Creator Kit](/power-platform/guidance/creator-kit/setup).
 
 ### Import the solution
 
 Open [https://make.powerapps.com](https://make.powerapps.com). Go to the environment you either created or been allocated, in which the Approvals Kit should be hosted.
 
 The first step of the installation process is to install the solution. This step is required for every other component in the Approvals Kit to work. You'll either need to create a environment or to import into the existing environment (excluding the Default environment).
+
+1. Open [https://aka.ms/approvals-kit/releases](https://aka.ms/approvals-kit/releases) for the Power CAT Business approvals kit GitHub releases site.
 
 1. From the expanded section **Assets** for the latest release, download the Approvals Kit file **BusinessApprovalsKit_*_managed.zip**.
 
@@ -171,7 +162,7 @@ The first step of the installation process is to install the solution. This step
 
 1. Review the information, and then select **Next**.
 
-1. Establish connections to activate your solution. If the connections don't exist, create new connections to proceed with import. 
+1. Establish connections to activate your solution. If the connections don't exist, create new connections to proceed with import.
     > [!NOTE]
     > If you create a new connection, you must select **Refresh**.
 
@@ -216,7 +207,7 @@ Follow these steps to perform the app registration.
 1. Add a description and select an appropriate expiry date. Select **Add**.
 
 > [!IMPORTANT]
-> 
+>
 > - Copy the secret value and save it. You'll use the copied value when configuring custom connector in the next section.
 > - You'll also need the Client ID from Overview section.
 

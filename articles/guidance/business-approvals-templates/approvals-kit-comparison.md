@@ -5,7 +5,7 @@ documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
-ms.date: 9/29/2023
+ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
 ---
@@ -47,7 +47,7 @@ This table provides a comparison between the approvals connector action and the 
 
 ## Flow comparison
 
-This table summarizes different approaches to construct approval processes using the Power Platform. The options range from using out-of-the-box copilot features and interactive designers to custom solutions creations with business process flows. 
+This table summarizes different approaches to construct approval processes using the Power Platform. The options range from using out-of-the-box copilot features and interactive designers to custom solutions creations with business process flows.
 
 |Approach|Notes|
 |--------|-----|

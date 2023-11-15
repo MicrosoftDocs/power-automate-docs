@@ -5,7 +5,7 @@ documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
-ms.date: 9/29/2023
+ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
 ---
@@ -37,3 +37,5 @@ These templates cover many of the typical requirements in most organizations, su
 - Support for versions of approval process
 - Publish version approval workflow
 - Handle of work days and public holidays
+
+> [!NOTE] Depending on your role in the organization, you may need an assigned Microsoft 365 license and a Premium Power Platform license to design, store, and run the cloud services related to the business approvals template. Refer to the [setup guide](./setup.md) for specific license requirements.

@@ -5,7 +5,7 @@ documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
-ms.date: 9/29/2023
+ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
 ---
@@ -18,15 +18,13 @@ The approvals kit has standard approve and decline options and several other opt
 
 ## Approve from Microsoft Teams
 
-You can respond directly to an approval request from Microsoft Teams. A notification is sent in Teams if you receive a request. You can also respond by checking the Teams Approvals app. 
+You can respond directly to an approval request from Microsoft Teams. A notification is sent in Teams if you receive a request. You can also respond by checking the Teams Approvals app.
 
 More information: [Respond to an approval in Microsoft Teams](../../teams/respond-to-approvals-in-teams.md#approve-or-reject-a-request-in-teams)
 
 ## Approve from Outlook
 
-You can approve requests directly from Outlook or Outlook
-online. When an approval request is received, a request is
-sent to the approver.
+You can approve requests directly from Outlook or Outlook online. When an approval request is received, a request is sent to the approver.
 
 ## Approve from Power Automate mobile app
 
@@ -83,4 +81,3 @@ In addition to your decisions, there are also three other statuses that can be s
 |:::image type="content" source="media/approval-request-pending.png" alt-text="Icon for Approval request pending.":::|Pending|The approval status shows as pending if the approval request is pending decision from the approver.
 |:::image type="content" source="media/approval-request-pending-timeout.png" alt-text="Icon for Approval request pending timeout.":::|Pending (Timeout)|This status means that the approval request hasn't responded by the approver with in the first 30 days, and the Power Automate cloud flow run that is managing this request is restarted automatically. Once restarted, the status changes back to Pending again.
 |:::image type="content" source="media/approval-request-system-processing.png" alt-text="Icon for Approval request system processing.":::|System Processing|This status shows if the cloud flow is still processing the results.|
-
