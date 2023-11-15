@@ -18,8 +18,8 @@ The business approvals kit and guidance is targeted towards the person or depart
 
 The business approvals kit is a collection of components that are designed to help you get started with digitalizing your organization's approval processes using Microsoft Power Platform. More information about individual components can be found in the business approvals kit.
 
-> [!NOTE:]
-> The Approvals Kit can only be used currently in Dataverse environments, and setting up in Dataverse for Teams environments and default environments are not supported.*
+> [!NOTE]
+> The approvals kit can only be used currently in Dataverse environments, and setting up in Dataverse for Teams environments and default environments is not supported.
 
 ## Prerequisites
 
