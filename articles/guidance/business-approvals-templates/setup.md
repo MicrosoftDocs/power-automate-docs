@@ -146,7 +146,7 @@ Open [https://make.powerapps.com](https://make.powerapps.com). Go to the environ
 
 The first step of the installation process is to install the solution. This step is required for every other component in the Approvals Kit to work. You'll either need to create a environment or to import into the existing environment (excluding the Default environment).
 
-1. Open [https://aka.ms/approvals-kit/releases](https://aka.ms/approvals-kit/releases) for the Power CAT Business approvals kit GitHub releases site.
+1. Open [the Power CAT business approvals kit Github release site](https://github.com/microsoft/powercat-business-approvals-kit/releases).
 
 1. From the expanded section **Assets** for the latest release, download the Approvals Kit file **BusinessApprovalsKit_*_managed.zip**.
 
