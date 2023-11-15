@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/02/2023
+ms.date: 11/14/2023
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -117,7 +117,7 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.
 
-### Code
+### Code View
 
 To view the code behind any card in your flow, select the card on the canvas, and then select **Code View** in the action configuration pane. As you customize the code on the [Parameters](#parameters) tab, you can view the new code on the **Code View** tab.
 
@@ -142,6 +142,25 @@ Depending on the size and complexity of your flow, you might want to adjust its 
 The bottom button is for the minimap. Use it to focus on a specific section of a large flow.
 
 :::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot of the four zoom buttons.":::
+
+### Expression editor and token picker
+
+The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the Dynamic content view and Function view.
+
+:::image type="content" source="media/flows-designer/expression-editor.png" alt-text="Screenshot of the expression editor.":::
+
+> [!TIP]
+> You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
+
+### Disable an action or enable static results on an action
+
+On the designer, if you want to disable an action rather than remove it entirely, go to the **Testing** tab of the action and enable static outputs by turning on the **Enable Static Result** toggle. When the flow runs, this essentially treats the action as successful, without actually running the action.
+
+Similarly, if you want to see how your flow reacts if a certain action fails with a code or succeeds with a code, you can use the same capability of static outputs available on the action to mock the action execution to your needs.
+
+When static outputs are disabled, the toggle label is **Enable Static Result**. When static outputs are enabled, the toggle label is **Disable Static Result**.
+
+:::image type="content" source="media/flows-designer/static-result.png" alt-text="Screenshot of the 'Enable or Disable Static Result' toggle in the Testing tab.":::
 
 ## Identify differences between the classic designer and the cloud flows designer
 
