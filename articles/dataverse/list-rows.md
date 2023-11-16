@@ -99,6 +99,8 @@ Use to define an OData-style filter expression to narrow down the set of rows th
 Learn how to use [standard filter operators](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-filter-operators) and [query functions](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-query-functions)
 to construct **Filter Query** expressions.
 
+Certain characters, such as **&**, **#**, and **+** need to be replaced with their URL-encoded equivalent. More information: [URL encode special characters](/powerapps/developer/data-platform/webapi/query-data-web-api#url-encode-special-characters)
+
 > [!IMPORTANT]
 > Filter expressions can't contain this string, **\$filter=**, because it only applies when you use the APIs directly.
 
