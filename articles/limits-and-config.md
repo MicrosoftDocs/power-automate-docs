@@ -6,7 +6,7 @@ ms.author: CGarty
 ms.reviewer: angieandrews
 Contributors:
   - ChrisGarty
-  - PriyaKodukula
+  - Radioblazer
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
@@ -27,7 +27,7 @@ This article contains information about the limits that apply to automated, sche
 
 A flow's *performance profile* determines its Power Platform request limits. The following table describes the plans that are associated with each of the four performance profiles.
 
- To learn more about how Power Automate consumes Power Platform requests, go to [Types of Power Automate licences - Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests).
+ To learn more about how Power Automate consumes Power Platform requests, go to [Types of Power Automate licenses - Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests).
 
 | Performance profile | Plans |
 |---------------------|-------|
@@ -104,8 +104,8 @@ The following table describes the concurrency, looping, and debatching limits fo
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Concurrent runs | - Unlimited for flows with Concurrency Control turned off<br />- 1 to 100 when Concurrency Control is turned on (defaults to 25) | This is the limit for how many runs a flow can have at the same time. <br />**Note**: Concurrency Control is set in the flow's trigger settings and is off by default. Turning on Concurrency Control can't be undone without deleting and re-adding the trigger.
-| Waiting runs | - Not applicable when Concurrency Control is off  <br /> - 10 plus the degree of parallelism (1-100) when Concurrency Control is on| This limit describes the highest number of flow runs that can be queued when the flow is at its maximum number of concurrent runs. <br />**Note**: Additional triggers that arrive while the waiting runs limit is met might be re-tried by the connector. However, the retry attempts might not succeed if the maximum waiting limit continues to be met for an extended period of time. To ensure all triggers result in flow runs, leave the Concurrency Control setting off in in the flow's trigger.
-| Apply to each array items | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that an "apply to each" loop can process. <br />To filter larger arrays, you can use the query action. |
+| Waiting runs | - Not applicable when Concurrency Control is off  <br /> - 10 plus the degree of parallelism (1-100) when Concurrency Control is on| This limit describes the highest number of flow runs that can be queued when the flow is at its maximum number of concurrent runs. <br />**Note**: Additional triggers that arrive while the waiting runs limit is met might be re-tried by the connector. However, the retry attempts might not succeed if the maximum waiting limit continues to be met for an extended period of time. To ensure all triggers result in flow runs, leave the Concurrency Control setting off in the flow's trigger.
+| Apply to each array item | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that an "apply to each" loop can process. <br />To filter larger arrays, you can use the query action. |
 | Apply to each concurrency | 1 is the default limit. You can change the default to a value between 1 and 50 inclusively. | This limit is highest number of "apply to each" loop iterations that can run at the same time, or in parallel. |
 | Split on items | - 5,000 for Low without trigger concurrency  <br />- 100,000 for all others without trigger concurrency <br />- 100 with trigger concurrency | For triggers that return an array, you can specify an expression that uses a 'SplitOn' property that splits or debatches array items into multiple workflow instances for processing, rather than use a "Foreach" loop. This expression references the array to use for creating and running a workflow instance for each array item. <br />**Note**: When concurrency is turned on, the Split on limit is reduced to 100 items. |
 | Until iterations | - Default: 60 <br />- Maximum: 5,000 | |
@@ -164,7 +164,7 @@ The following table describes the content throughput limits, which refer to the 
 
 Power Automate supports write operations, including inserts and updates, through the gateway. However, these operations have [limits on their payload size](/data-integration/gateway/service-gateway-onprem#considerations).
 
-## HTTP limits
+## Request limits
 
 The following sections describe the limits for a single outgoing or incoming HTTP call.
 
@@ -178,7 +178,7 @@ The following table describes the timeout limits.
 |------|-------|-------|
 | Outbound synchronous request | 120 seconds (2 minutes) | Examples of outbound requests include calls made by HTTP triggers.<br/>**Tip**: For longer-running operations, use an asynchronous polling pattern or an "Until" loop. To work around timeout limits when you call another flow that has a callable endpoint, use the built-in action instead, which you can find in the connector picker under **Built-in**. |
 | Outbound asynchronous request | Configurable up to 30 days |  |
-| Inbound request | 120 seconds (2 minutes) | Examples of inbound requests include calls received by request triggers and webhook triggers.<br/>**Note**: For the original caller to get the response, all steps in the response must finish within the limit unless you call another flow as a child flow. |
+| Inbound request | 120 seconds (2 minutes) | Examples of inbound requests include requests to trigger instant flows and flows with the **HTTP Request** trigger.<br/>Flows that contain a response action including **Respond to Copilot**, **HTTP Response**, and **Respond to a PowerApp or flow** will always return a response within this limit.<br/>Child flows that are started before the response action will continue running separately, and actions after the response action will continue running beyond this limit, enabling a flow to respond and continue running other operations. |
 
 If you test a cloud flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status.
 

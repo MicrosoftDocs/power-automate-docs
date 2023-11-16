@@ -18,8 +18,8 @@ The business approvals kit and guidance is targeted towards the person or depart
 
 The business approvals kit is a collection of components that are designed to help you get started with digitalizing your organization's approval processes using Microsoft Power Platform. More information about individual components can be found in the business approvals kit.
 
-> [!NOTE:]
-> The Approvals Kit can only be used currently in Dataverse environments, and setting up in Dataverse for Teams environments and default environments are not supported.*
+> [!NOTE]
+> The approvals kit can only be used currently in Dataverse environments, and setting up in Dataverse for Teams environments and default environments is not supported.
 
 ## Prerequisites
 
@@ -146,7 +146,7 @@ Using an account with System Customizer permissions in an environment. Open [htt
 
 The first step of the installation process is to install the solution. This step is required for every other component in the Approvals Kit to work. You'll either need to create a environment or to import into the existing environment (excluding the Default environment).
 
-1. Open [https://aka.ms/approvals-kit/releases](https://aka.ms/approvals-kit/releases) for the Power CAT Business approvals kit GitHub releases site.
+1. Open [the Power CAT business approvals kit Github release site](https://github.com/microsoft/powercat-business-approvals-kit/releases).
 
 1. From the expanded section **Assets** for the latest release, download the Approvals Kit file **BusinessApprovalsKit_*_managed.zip**.
 
