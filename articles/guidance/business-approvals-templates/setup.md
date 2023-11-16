@@ -132,8 +132,8 @@ We recommend that you set up a designated Approvals Kit environment for all user
 
 > [!NOTE]
 >
-> - The Approvals Kit uses [solution management capabilities](/power-apps/developer/data-platform/introduction-solutions) of Dataverse to package up all assets. 
-> - To ensure consistency and same experience for every customer, the template is provided as [managed solutions](/power-platform/alm/solution-concepts-alm). 
+> - The Approvals Kit uses [solution management capabilities](/power-apps/developer/data-platform/introduction-solutions) of Dataverse to package up all assets.
+> - To ensure consistency and same experience for every customer, the template is provided as [managed solutions](/power-platform/alm/solution-concepts-alm).
 > - If you would like to extend the template, you will need to use a separate [unmanaged solution](/power-platform/alm/solution-concepts-alm) because you can't directly modify this template.
 
 ### Import the Creator Kit
@@ -142,7 +142,7 @@ Install the creator kit using one of the options in [Install the Creator Kit](/p
 
 ### Import the solution
 
-Open [https://make.powerapps.com](https://make.powerapps.com). Go to the environment you either created or been allocated, in which the Approvals Kit should be hosted.
+Using an account with System Customizer permissions in an environment. Open [https://make.powerapps.com](https://make.powerapps.com). Go to the environment you either created or been allocated, in which the Approvals Kit should be hosted.
 
 The first step of the installation process is to install the solution. This step is required for every other component in the Approvals Kit to work. You'll either need to create a environment or to import into the existing environment (excluding the Default environment).
 

@@ -39,3 +39,13 @@ These templates cover many of the typical requirements in most organizations, su
 - Handle of work days and public holidays
 
 > [!NOTE] Depending on your role in the organization, you may need an assigned Microsoft 365 license and a Premium Power Platform license to design, store, and run the cloud services related to the business approvals template. Refer to the [setup guide](./setup.md) for specific license requirements.
+
+## Disclaimer
+
+Although the underlying features and components used to build the kit (such as Dataverse, Power Apps, Power Automate and connectors) are fully supported, the kit itself which is managed by [Power CAT](https://aka.ms/whoispowercat) represents sample implementations of these features. Our customers and community can use and customize these features to implement approvals workflows in their organizations.
+
+If you face issues with:
+
+- Using the kit: Report your issue at [aka.ms/approvals-kit/issues](https://aka.ms/approvals-kit/issues). Microsoft Support won't help you with issues related to this kit, but they'll help with related, underlying platform and feature issues.
+
+- The core features in Microsoft Power Platform: Use your standard channel to contact Support.

@@ -71,7 +71,7 @@ Gibson, another maker, or professional developers within organization can easily
 
 The rest of the approval processes are automatically handled and managed in the approvals kit.
 
-More information: [Trigger approvals](./trigger-approvals.md) 
+More information: [Trigger approvals](./trigger-approvals.md)
 
 ### Integration with business applications
 
