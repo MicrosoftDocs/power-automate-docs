@@ -321,6 +321,8 @@
     href: ./desktop-flows/introduction.md
   - name: Get started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
+  - name: Use copilot to analyze desktop flow activity (preview)
+    href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md 
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
@@ -359,6 +361,8 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
+  - name: Copilot in Power Automate for desktop (preview)
+    href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Run desktop flows
     items:
     - name: Run unattended and attended desktop flows from the cloud
@@ -496,7 +500,7 @@
       href: ./desktop-flows/use-custom-actions.md
     - name: Actions SDK for .NET reference
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
-  - name: Troubleshooter (preview)
+  - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
   - name: How to
     items:
@@ -716,7 +720,9 @@
     - name: Custom actions
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
-      href: ./desktop-flows/actions-reference/cloudconnectors.md  
+      href: ./desktop-flows/actions-reference/cloudconnectors.md
+    - name: SAP GUI
+      href: ./desktop-flows/actions-reference/sap.md
   - name: Troubleshoot desktop flows
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
@@ -1148,5 +1154,11 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
+  - name: FAQ for copilot in desktop flow activity
+    href: faqs-copilot-automation-activity.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
+  - name: FAQ for copilot generative answers in Power Automate for desktop
+    href: faqs-copilot-generative-answers-power-automate-desktop.md
+  - name: FAQ for generating code with natural language
+    href: faqs-copilot-nl-to-code.md

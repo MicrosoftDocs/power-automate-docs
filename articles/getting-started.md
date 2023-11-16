@@ -10,7 +10,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/06/2023
+ms.date: 11/10/2023
 ms.author: jamiller
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -104,11 +104,57 @@ View your environment information and settings.
 
 ### Choose an environment
 
-For best results, start by ensuring that the home page is set to the correct environment.
+Environments create boundaries between different types of work. For example, an organization might have separate environments for different departments. Many organizations use environments to separate flows that are still being developed from those that are ready for widespread use. You might have access to multiple environments or only one. If you have the appropriate permissions, you might even be able to create your own environments.
 
-:::image type="content" source="media/getting-started/environment.png" alt-text="Screenshot of the 'Select environment' screen.":::
+To verify which environment you're in, find the environment switcher near the right side of the header.
 
-Environments can be managed using [Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
+:::image type="content" source="media/getting-started/environment-picker.png" alt-text="Environment switcher.":::
+
+With the environment selector, environments are grouped into two categories: **Build Flows** and **Other environments**. Select **Filter** to filter the list of environments by your role, data platform (Dataverse or none), and environment type, such as production or sandbox.
+
+:::image type="content" source="media/getting-started/environments-list.png" alt-text="Environment selector to filter and select an environment.":::
+
+Environments where you have either system administrator and/or system customizer security role membership appear under **Build flows.** The **Other environments** list displays environments where you have read-only permissions, and can access approvals.
+
+> [!TIP]
+> Hover over an environment in the list to view the details of the environment.
+
+**Filter environments by role**
+
+| **Filter role** | **Power Platform role or description** |
+|-------------------------|-------------------------|
+| Admin | System administrator<br /></br>Environment administrator |
+| Maker with data access | System administrator<br /></br>System customizer |
+| Maker without full data access | Environment maker (with or without Dataverse) |
+| Run only user | User without maker-level access |
+
+> [!NOTE]
+> - To view the environment list in the environment switcher in Power Automate, you must have the Environment Maker, System Customizer, or System Administrator security role in the environment. For information about predefined security roles, see [Predefined security roles](/power-platform/admin/database-security#predefined-security-roles) in the Microsoft Power Platform admin guide.
+> - Make sure that you're in the correct environment *before* you create a flow, an app, or a similar component. You can't easily move components from one environment to another.
+> - Every member in an organization can access the [default environment](/power-platform/admin/environments-overview#the-default-environment). Like any environment, users can see flows where they have sufficient privileges to access a flow.
+> - When you create a flow in one environment, you won't be able to see it from another environment. 
+
+For more information, see [Environments overview](/power-platform/admin/environments-overview)
+
+#### Frequently asked questions about environments
+
+**Why does Power Automate show different environments compared to Power Apps?**
+
+Power Automate and Power Apps will both show environments with administrator access and environment maker access.
+
+Power Apps will show environments with app contributor access, when users without a maker-level security role assigned but with edit permission to at least one canvas app in the environment. More information: [Choose an environment in Power Apps](/power-apps/maker/canvas-apps/sign-in-to-power-apps#choose-an-environment)
+
+Power Automate will show environments user can approve approvals. User will be granted read access to environments have approvals.
+
+Since approvals are frequently used in Power Automate, users could have read access to many environments.
+
+**How do I get access to environments?**
+
+You can view access in the Power Platform admin center, by logging in using an account with environment administrator permissions. If you don't have administrator privileges, contact your administrator to obtain access.
+
+Once in admin center, select the **Users** and **Teams** options under the access panel, environment admin could find everyone/teams has access to the environment. Environment admin could also change the security roles for a particular user.
+
+More information: [Manage environments in Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
 
 ### Settings
 
