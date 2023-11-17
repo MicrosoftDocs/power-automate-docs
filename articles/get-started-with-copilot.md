@@ -131,7 +131,7 @@ If you're not in the region (listed in the previous [Availability table](#availa
 
 ### How do I disable Copilot in the cloud flows designer?
 
-If you're in the region with native GPUs (infrastructure to support Copilot, go to the [table in Availability by region](#availability-by-region)). You can disable Copilot for your tenant by contacting Microsoft Support. You can disable and re-enable at tenant level easily using a PowerShell script. However, If you aren't in the region with GPUs, you can simply toggle off the cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+Please refer to the [table in Availability by region](#availability-by-region) - If you aren't in the region with GPUs (infrastructure to support Copilot), you can simply toggle off the cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). However, If you're in the region with native GPUs with Copilot on by default, you can disable Copilot for your tenant by contacting Microsoft Support. You can disable and re-enable at tenant level easily using a PowerShell script.
 
 ### How is Copilot in cloud flows different from the text generation model in AI Builder?
 
