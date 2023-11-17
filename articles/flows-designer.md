@@ -186,6 +186,7 @@ You might notice that some functionalities that were in the classic designer are
 4. Power Pages connector,
 5. Power Apps v1 trigger 
 6. Perform a changeset request action (Dataverse)
+7. A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
 
 If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the cloud flows designer.
 
