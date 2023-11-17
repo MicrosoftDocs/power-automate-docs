@@ -221,6 +221,18 @@ Now you'll edit the **Approvals kit** custom connector present inside Business A
     - Enter the Client ID, Secret noted in previous section.
     - Specify the environment URL under Resource URL section.
 
+1. Copy the Redirect URL
+
+1. Open the created Entra App Registration
+
+1. Select **Authentication**
+
+1. In the Web Redirect URIs add the Redirect URL
+
+1. Select **Save** to update the App Registration
+
+1. Switch back to the custom connnector.
+
 1. Select **Update connector**.
 
 1. Under the **Test** tab, create a **New connection**.
@@ -235,7 +247,7 @@ The operation should run successfully with status as 200.
 The template includes multiple core components that are used to manage the approval experience. To use the template, you must turn on the cloud flows that came with the template.
 
 1. Go to [make.powerapps.com](https://make.powerapps.com/).
-1. Select **Solutions**, and open open the **Business Approvals Kit** solution to view the flows. 
+1. Select **Solutions**, and open open the **Business Approvals Kit** solution to view the flows.
 1. Activate cloud flows using in the list to ensure no errors occur as there are dependencies across the flows. Some cloud flows can be enabled when importing the solution in the previous steps.
 
     a.  Turn on: BACore \| Approval Time-out
