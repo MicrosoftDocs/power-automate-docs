@@ -173,20 +173,20 @@ The cloud flows designer has smaller cards to facilitate easy navigation. It als
 
 ## Limitation
 
-You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer. For example, the designer doesn't support 
+You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer. For example, the designer doesn't support the following:
 1. Non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow),
-2. Some hybrid triggers:
+1. Some hybrid triggers:
    1. When a record is selected (Dataverse),
-   2. When a flow is run from business process flow (Dataverse),
-   3.  For a selected message (v2 Teams),
-   4. TeamsOnComposeMessage (Teams),
-   5. Teams card trigger,
-   6.  Microsoft 365 Compliance Connector
-3.  A comment,
-4. Power Pages connector,
-5. Power Apps v1 trigger 
-6. Perform a changeset request action (Dataverse)
-7. A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
+   1. When a flow is run from business process flow (Dataverse),
+   1. For a selected message (v2 Teams),
+   1. TeamsOnComposeMessage (Teams),
+   1. Teams card trigger,
+   1. Microsoft 365 Compliance Connector
+1. A comment,
+1. Power Pages connector,
+1. Power Apps v1 trigger 
+1. Perform a changeset request action (Dataverse)
+1. A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
 
 If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the cloud flows designer.
 
