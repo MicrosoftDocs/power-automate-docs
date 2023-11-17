@@ -192,10 +192,10 @@
           href: ./business-approvals-templates/configure-preset-approvals.md
         - name: Setup out of office and delegation
           href: ./business-approvals-templates/setup-out-of-office-and-delegation.md
-        - name: Nurture
-          href: ./business-approvals-templates/nurture.md
         - name: Process approval requests
           href: ./business-approvals-templates/process-approval-requests.md
+        - name: Nurture
+          href: ./business-approvals-templates/nurture.md
         - name: Frequently asked questions
           href: ./business-approvals-templates/frequently-asked-questions.md
         - name: Limitations
