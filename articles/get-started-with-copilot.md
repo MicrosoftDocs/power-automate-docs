@@ -131,7 +131,7 @@ If you're not in the region (listed in the previous [Availability table](#availa
 
 ### How do I disable Copilot in the cloud flows designer?
 
-If you're in the region with native GPUs (infrastructure to support Copilot, go to the [table in Availability by region](#availability-by-region)). You can disable Copilot for your tenant by contacting Microsoft Support. You can disable and re-enable at tenant level easily using a PowerShell script. However, If you aren't in the region with GPUs, you can simply toggle off the cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+Please refer to the [table in Availability by region](#availability-by-region) - If you aren't in the region with GPUs (infrastructure to support Copilot), you can simply toggle off the cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). However, If you're in the region with native GPUs with Copilot on by default, you can disable Copilot for your tenant by contacting Microsoft Support. You can disable and re-enable at tenant level easily using a PowerShell script.
 
 ### How is Copilot in cloud flows different from the text generation model in AI Builder?
 
@@ -151,8 +151,9 @@ You can’t edit flows in the cloud flows designer with the copilot experience i
     > If there's Peek code on an action and if you see the `methods` parameter, it's a non-Open API flow.
 
 - A flow with a comment.
-- A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers, which won't be supported are: For a selected message (v2 Teams), Teams On Compose Message (teams), Teams card trigger, and Microsoft 365 Compliance Connector.
+- A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers, which won't be supported are: When a record is selected (Dataverse), When a flow step is run from business process flows (Dataverse), For a selected message (v2 Teams), Teams On Compose Message (teams), Teams card trigger, and Microsoft 365 Compliance Connector.
 - A flow contains a Power Apps V1 trigger.
+- A flow contains Perform a Changeset Request (Dataverse)
 - A flow contains a Power Pages component.
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
 
