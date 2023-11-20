@@ -1,10 +1,10 @@
 ---
-title: SAP GUI actions reference for Power Automate for desktop
-description: Learn about the available SAP GUI actions in Power Automate for desktop flows.
+title: SAP GUI automation actions reference for Power Automate for desktop
+description: Learn about the available SAP automation actions in Power Automate for desktop flows.
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/06/2023
+ms.date: 11/20/2023
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -15,9 +15,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# SAP GUI actions
+# SAP automation actions
 
-Our group of actions for SAP GUI automation provides a set of tools to help streamline and automate your SAP workflows. With these actions, you can easily launch the SAP GUI app, create new sessions, select menu items, start and end transactions, and more.
+Our group of actions for SAP automation provides a set of tools to help streamline and automate your SAP workflows. With these actions, you can easily launch the SAP GUI app, create new sessions, select menu items, start and end transactions, and more.
 
 Additionally, these actions can be seamlessly integrated with the other actions available in Power Automate for desktop, including the UI automation group of actions. This group of actions enables you to interact with all SAP GUI UI elements, such as clicking, inserting text, and extracting data. By combining our SAP GUI automation actions with the UI automation group of actions, you create powerful RPA workflows that automate even the most complex SAP processes.
 
