@@ -1,6 +1,6 @@
 ---
 title: Setup out of office and delegation
-description: Learn how to set up out of fffice and delegation.
+description: Learn how to set up out of office and delegation.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance

@@ -42,7 +42,7 @@ The table represents a list of flows and processes related to a business approva
 |BACore \| Cascade Publishing Activation          | Updates the associated runtime data status. When triggered, it retrieves all associated runtime data records for a specific process version and updates their state code to match the trigger's state code. |
 |BACore \| Child \| Activate Published Workflow   | Copies business approval runtime data to create business approval published workflows and business approval published runtime data.|
 |BACore \| Child \| Evaluate Rule                 | Evaluates a business approval node condition. |
-|BACore \| Child \| Get Default Settings          | Gets the business approval settings or default values if none are set. |
+|BACore \| Child \| Get Default Settings          | Gets the business approval settings or default values if none is set. |
 |BACore \| Child \| Get Dynamic Approver          | Looks up user or manager from the office graph to add approvers to business approvals. |
 |BACore \| Child \| Get Dynamic Data Instance     | Get Approver or business approval data instance data. |
 |BACore \| Child \| Log Runs                      | Log data to business approval instance logs. |

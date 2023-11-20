@@ -67,7 +67,7 @@ Mapping persons from the [User journey](./user-journey.md) to licenses
 
 | Persona                   | User Journey Reference | License |
 |---------------------------|------------------------|---------|
-| Approver                  | Rebecca | Microsoft Office 365 (For Office 365 or Microsoft Teams ) or Power Platform standard user license (For Power Automate Maker Portal) |
+| Approver                  | Rebecca | Microsoft Office 365 (For Office 365 or Microsoft Teams) or Power Platform standard user license (For Power Automate Maker Portal) |
 | Approval Administrator    | Charlotte | Microsoft Power Apps license |
 | Maker                     | Charlotte or Gibson | Power Automate Premium to author Cloud Flows |
 | Environment Administrator | Gibson | Assigned Power Automate Service to execute Cloud Flows |
@@ -107,7 +107,7 @@ In new environments, use the Power Platform Admin Center to install the Power Au
 
 1. Open the [Power Platform Admin center](https://aka.ms/ppac).
 
-1. In the left nagivation, select **Resources**.
+1. In the left navigation, select **Resources**.
 
 1. Select **Dynamics 365 apps**.
 
@@ -144,9 +144,9 @@ Install the creator kit using one of the options in [Install the Creator Kit](/p
 
 Using an account with System Customizer permissions in an environment. Open [https://make.powerapps.com](https://make.powerapps.com). Go to the environment you either created or been allocated, in which the Approvals Kit should be hosted.
 
-The first step of the installation process is to install the solution. This step is required for every other component in the Approvals Kit to work. You'll either need to create a environment or to import into the existing environment (excluding the Default environment).
+The first step of the installation process is to install the solution. This step is required for every other component in the Approvals Kit to work. You'll either need to create an environment or to import into the existing environment (excluding the Default environment).
 
-1. Open [the Power CAT business approvals kit Github release site](https://github.com/microsoft/powercat-business-approvals-kit/releases).
+1. Open [the Power CAT business approvals kit GitHub release site](https://github.com/microsoft/powercat-business-approvals-kit/releases).
 
 1. From the expanded section **Assets** for the latest release, download the Approvals Kit file **BusinessApprovalsKit_*_managed.zip**.
 
@@ -231,7 +231,7 @@ Now you'll edit the **Approvals kit** custom connector present inside Business A
 
 1. Select **Save** to update the App Registration
 
-1. Switch back to the custom connnector.
+1. Switch back to the custom connector.
 
 1. Select **Update connector**.
 
@@ -247,7 +247,7 @@ The operation should run successfully with status as 200.
 The template includes multiple core components that are used to manage the approval experience. To use the template, you must turn on the cloud flows that came with the template.
 
 1. Go to [make.powerapps.com](https://make.powerapps.com/).
-1. Select **Solutions**, and open open the **Business Approvals Kit** solution to view the flows.
+1. Select **Solutions**, and open the **Business Approvals Kit** solution to view the flows.
 1. Activate cloud flows using in the list to ensure no errors occur as there are dependencies across the flows. Some cloud flows can be enabled when importing the solution in the previous steps.
 
     a.  Turn on: BACore \| Approval Time-out

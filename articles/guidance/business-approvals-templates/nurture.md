@@ -22,7 +22,7 @@ Example learning levels
 
 | Level | Description | Related content |
 |-------|-------------|------------------|
-| Level 100 | Typically involves learning what the Approvals Kit is and how it's setup and applied to your organization | [User Journey](./user-journey.md), [Setup Guide](./setup.md)
+| Level 100 | Typically involves learning what the Approvals Kit is and how it's set up and applied to your organization | [User Journey](./user-journey.md), [Setup Guide](./setup.md)
 | Level 200 | Involves getting hands on and using the Approvals kit. Once you have mastery of the key concepts applying the learnings to automating your approvals process | [Approvals Kit in Power Automate workshop overview](/training/modules/approvals-kit-workshop/)
 | Level 300 | Scale and nurture others in the organization to adopt and use the approvals kit | [Instructor Guide](https://aka.ms/approvals-kit/instructor)
 

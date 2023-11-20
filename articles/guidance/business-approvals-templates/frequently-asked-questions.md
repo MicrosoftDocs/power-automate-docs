@@ -28,7 +28,7 @@ License costs depend on, the number of environments that you install the Approva
 
 ## What permissions are required for the Approvals Kit?
 
-Refer to the [Setup guide](./setup.md) for user permissions and Microsoft Entra application permissions to setup and use the kit.
+Refer to the [Setup guide](./setup.md) for user permissions and Microsoft Entra application permissions to set up and use the kit.
 
 ## Are there limitations in terms of how many stages can be created?
 
