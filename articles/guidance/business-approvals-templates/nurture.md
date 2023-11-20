@@ -14,7 +14,7 @@ ms.reviewer: angieandrews
 
 Are you looking to streamline your organization's approval processes and reduce manual effort? Look no further than the Approvals Kit, a low-code solution that allows you to automate approvals across various platforms. In this article, we discuss the setup the Approvals Kit, aligning it with your environments and scaling adoption. Once you're up and running, we show you how to take advantage of the Automation Kit learn module. Using the learn module you can learn and apply automated approvals processes either individually or as a group. Finally, we discuss how to scale your automated approvals with the help of workshop instructor guides and mentors from earlier cohorts of learning. Let's get started!
 
-## Learning Levels
+## Learning levels
 
 Example learning levels
 
@@ -23,12 +23,12 @@ Example learning levels
 | Level | Description | Related content |
 |-------|-------------|------------------|
 | Level 100 | Typically involves learning what the Approvals Kit is and how it's setup and applied to your organization | [User Journey](./user-journey.md), [Setup Guide](./setup.md)
-| Level 200 | Involves getting hands on and using the Approvals kit. Once you have mastery of the key concepts applying the learnings to automating your approvals process | [Approvals Kit in Power Automate workshop overview](https://learn.microsoft.com/training/modules/approvals-kit-workshop/)
+| Level 200 | Involves getting hands on and using the Approvals kit. Once you have mastery of the key concepts applying the learnings to automating your approvals process | [Approvals Kit in Power Automate workshop overview](/training/modules/approvals-kit-workshop/)
 | Level 300 | Scale and nurture others in the organization to adopt and use the approvals kit | [Instructor Guide](https://aka.ms/approvals-kit/instructor)
 
 It's not enough to simply set-up the Approvals Kit and expect everyone to start using it. To truly reap the benefits of this low-code solution, it's important to create a process to nurture and educate both the user community and the technical community. In addition, it's important to involve the governance team to ensure that the Approvals Kit aligns with your organization's policies and regulations. Microsoft provides a set of [best practices for nurturing adoption](/power-platform/guidance/adoption/nurture-best-practices) of Power Platform solutions, which can be extended to the Approvals Kit. These best practices include creating a center of excellence, identifying champions, providing training and support, and measuring success. By following these best practices and tailoring them to the Approvals Kit, you can ensure that your organization fully embraces this powerful tool.
 
-## Learning Personas
+## Learning personas
 
 To effectively nurture and support the approvals [user journey](./user-journey.md), it's important to consider the needs of each persona involved.
 
@@ -42,31 +42,31 @@ Finally, for the instructor persona, the focus should be on setting up, provisio
 
 By creating a learning path tailored to each persona's needs, you can ensure that everyone involved in the approvals process is equipped with the knowledge and skills they need to succeed.
 
-## Factors to Consider
+## Factors to consider
 
 The Approvals Kit as part of your low-code solution, there are several factors to consider to ensure a successful implementation. As a starter for discussion with your user and center of excellence community include three key points to consider for each factor.
 
 By considering these factors and addressing them appropriately, you can ensure a successful adoption of the Approvals Kit as part of your low-code solution.
 
-### Environment Strategy
+### Environment strategy
 
 - Determine the appropriate number of environments across development, test and production for approvals process.
 - Access to data and isolation requirements for approval workflows.
 - Setup of security roles and permissions for different personas.
 
-### Data Loss Prevention Policy
+### Data loss prevention policy
 
 - Understand how the data that needs to be integrated with the Approvals Kit and how data is protected.
 - Consider the impact of data loss prevention policies on the approvals process and ensure that they're properly configured.
 - Ensure that data is properly classified and labeled to prevent data leakage.
 
-### Automation Skills and Patterns
+### Automation skills and patterns
 
 - Determine the appropriate level of automation for your approvals processes.
 - Identify common patterns and use cases for approval automation and develop reusable components.
 - Ensure that automation is properly tested and validated to prevent errors and ensure reliability.
 
-### Exception Management
+### Exception management
 
 - Develop a process for handling exceptions and errors in the approvals process.
 - Ensure that exceptions are properly logged and tracked for analysis and improvement.

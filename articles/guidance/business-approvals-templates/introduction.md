@@ -3,14 +3,19 @@ title: Business approvals templates overview (preview) | Microsoft Docs
 description: Overview of the business approvals templates.
 documentationcenter: na
 author: Grant-Archibald-MS
+contributors:
+  - Grant-Archibald-MS
+  - v-aangie
 ms.custom: guidance
 ms.topic: article
-ms.date: 11/15/2023
+ms.date: 11/20/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
 ---
 
 # Business approvals templates overview (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Approvals are a key use case present across every industry, organization, and department. Use Power Automate to streamline your business processes by digitalizing the approvals experience.
 
@@ -47,6 +52,6 @@ Although the underlying features and components used to build the kit (such as D
 
 If you face issues with:
 
-- Using the kit: Report your issue at [aka.ms/approvals-kit/issues](https://aka.ms/approvals-kit/issues). Microsoft Support won't help you with issues related to this kit, but they'll help with related, underlying platform and feature issues.
+- Using the kit: Report your issue on the [Power CAT Business Approvals Kit](https://aka.ms/approvals-kit/issues) forum. Microsoft Support won't help you with issues related to this kit, but they'll help with related, underlying platform and feature issues.
 
 - The core features in Microsoft Power Platform: Use your standard channel to contact Support.

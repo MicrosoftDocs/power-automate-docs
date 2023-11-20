@@ -5,7 +5,7 @@ documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
 ms.topic: article
-ms.date: 11/15/2023
+ms.date: 11/20/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
 ---
@@ -61,7 +61,7 @@ The business approvals kit is a collection of components that are designed to he
 
   - Power Automate approvals connector capability enabled (see section on enabling Power Automate approvals capability for steps)
 
-## Persona Licenses
+## Persona licenses
 
 Mapping persons from the [User journey](./user-journey.md) to licenses
 
@@ -72,11 +72,11 @@ Mapping persons from the [User journey](./user-journey.md) to licenses
 | Maker                     | Charlotte or Gibson | Power Automate Premium to author Cloud Flows |
 | Environment Administrator | Gibson | Assigned Power Automate Service to execute Cloud Flows |
 
-## Setup a new environment to install (optional)
+## (Optional) Set up a new environment to install
 
 1. Create an environment in which to set up the approvals kit.
 
-    a.  Go to the Power Platform Admin Center.
+    a.  Go to the Power Platform admin center.
 
     b.  Select **Environments**, then **+ New** and enter a name, type, and purpose.
 
@@ -92,7 +92,7 @@ Mapping persons from the [User journey](./user-journey.md) to licenses
 
 The approvals kit relies on out of the box approvals functionality from Power Automate. If you're using the approvals function for the first time, you must enable the function first either by using the Power Platform Command Line interface or manually by running a cloud flow that includes an approval
 
-### Command Line Setup
+### Command line setup
 
 Use Power Platform Command Line to install the flow approvals solution into the environment. In the environment allocated for the Approvals Kit, use the following PowerShell commands as a starter script:
 
@@ -101,7 +101,7 @@ $envs = (pac admin list --json | ConvertFrom-Json) | Where-Object { $_.DisplayNa
 pac application install --environment $envs[0].EnvironmentId --application-name "msdyn_FlowApprovals"
 ```
 
-### Manual Set up
+### Manual Setup
 
 In new environments, use the Power Platform Admin Center to install the Power Automate Approvals feature:
 
@@ -179,7 +179,7 @@ Once import is complete, you should see business approvals kit in the list of so
 
 Once the approvals kit solution is imported to an environment successfully, you must update the  Approvals kit custom connector to point to the target tenant Identity provider and turn on cloud flows.
 
-#### Update Custom Connector
+#### Update custom connector
 
 You must have an app registered to interact with Dataverse table and Custom API.
 
