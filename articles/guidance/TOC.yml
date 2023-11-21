@@ -178,5 +178,7 @@
           href: automation-coe/automation-maturity-model-overview.md
         - name: Automation Maturity Model details
           href: automation-coe/automation-maturity-model-details.md
+        - name: Building custom action for Power Automate for desktop
+          href: ./articles/guidance/how-to/build-custom-action/buildcustomaction.md
     - name: Business approvals templates (preview)
       href: ./business-approvals-templates/introduction.md
