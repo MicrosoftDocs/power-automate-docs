@@ -15,12 +15,14 @@ The Power Automate experience for guest users is the same as it is for nonguest 
 
 This article should help you understand the scenarios that are supported for guest users.
 
+Note: Guest Users are currently not supported in Process Mining.
+
 ## Prerequisites
 
 A guest user must meet the following criteria:
 
 - Have a Power Automate license assigned through either the tenant that hosts the flow, or the home tenant of the guest user. To learn more about licensing implications, go to [FAQs about licenses](/power-platform/admin/power-automate-licensing/faqs#do-guest-users-not-from-your-tenant-need-a-license-to-use-power-automate).  
-- Sign in and consent to Power Automate.
+- Sign in and consent to Power Automate. To sign in to the guest tenant, navigate to https://make.powerautomate.com/?loginTenant=tenantID where tenantID is the tenant the guest user needs access.
 
 ## Licensing requirements
 
