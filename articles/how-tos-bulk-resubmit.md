@@ -71,7 +71,7 @@ Follow these steps to cancel flow runs using a template:
     1. In the **Base Resource URL** field, enter `https://api.flow.microsoft.com`.
     1. In the **Azure AD Resource URI (Application ID URI)** field, enter `https://service.flow.microsoft.com`.
 
-    :::image type="content" source="./media/cancel-resubmit-how-to/http-with-microsoft.png" alt-text="Screenshot that displays the selected runs for your flow.":::
+    :::image type="content" source="./media/cancel-resubmit-how-to/http-with-microsoft.png" alt-text="Screenshot that displays the parameters for your flow.":::
 
 1. Select **Sign in**.
 1. Sign in to **Power Automate Management**.
