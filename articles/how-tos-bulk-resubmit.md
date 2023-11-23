@@ -17,7 +17,7 @@ search.audienceType:
 
 # Cancel or resubmit flow runs in bulk
 
-You can cancel runs in batches of 20 runs. If you have hundreds of runs to cancel, you can use a template.
+You can cancel or resubmit your flow runs in bulk instead of one at a time, which can be a huge time saver.
 
 ## Resubmit flow runs
 
@@ -44,36 +44,41 @@ You can resubmit previous runs of a flow in bulk. To do this, follow these steps
 
 ## Cancel flow runs
 
+You can cancel flow runs either through the Run history page or by using a template. If you need to cancel up to 20 runs, use the Run history page. If you need to cancel more than 20 (even hundreds), use the template. Procedures for both methods are detailed in the following sections.
+
+### Cancel up to 20 flow runs
+
 To cancel flow runs that are in progress, follow the steps outlined previously in [Resubmit flow runs](#resubmit-flow-runs) with one exception: In step 6, select **Cancel flow run(s)**, as shown in the following screenshot.
 
 :::image type="content" source="./media/cancel-resubmit-how-to/cancel-runs.png" alt-text="Screenshot that displays the Cancel flow run(s) button.":::
 
-> [!TIP]
-> You can resubmit or cancel up to 20 flows at a time.
+### Cancel more than 20 flow runs
 
-This template cancels runs at approximately five (5) runs per minute. You might be subject to throttling if you change the delay period in the template flow.
+The template cancels runs at approximately five (5) runs per minute. You might be subject to throttling if you change the delay period in the template flow.
 
-This template isn't available for sovereign cloud customers.
+> [!NOTE]
+> This template isn't available for sovereign cloud customers.
 
-Follow these steps to cancel flow runs using a template: 
+Follow these steps to cancel flow runs using a template:
 
-1. Obtain the **Environment ID** and **Flow ID**. Ask your administrator to find these IDs in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. Obtain the **Environment Id** and **Flow Id**.
+
+    To find the environment Id, ask your administrator to go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) Details section. To learn more, go to [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id).
+
+    To find the Flow Id, edit the flow and look at the URL in your browser's address bar. Everything between `flows/` and `/details` is the Flow Id:
+    
+    :::image type="content" source="media/cancel-resubmit-how-to/find-flow-id.png" alt-text="Screenshot of a flow URL with the Flow Id highlighted.":::
+
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Access the [Cancel all my flow runs template](https://aka.ms/cancelAllMyRunsTemplate).
-1. Select **Continue** to sign in to **HTTP with Microsoft Entra ID (preauthorized)** <!--still says Azure AD. Explain "preauthorized".-->
-1. Add an action by selecting the plus sign (**+**), and then select **Add an action**.
-1. In the search field, start to type **HTTP with Microsoft Entra ID (preauthorized)**, and then select **Invokee an HTTP request** when you see it in the list.
-
-    The action configuration pane appears on the left with the **Parameters** tab selected.
-
-1. Enter the following parameters:
+1. Sign in to **HTTP with Microsoft Entra ID (preauthorized)**.
+1. Enter the following parameters, and then select **Sign in**:
     1. Leave the **Gateways** box unchecked.
     1. In the **Base Resource URL** field, enter `https://api.flow.microsoft.com`.
     1. In the **Azure AD Resource URI (Application ID URI)** field, enter `https://service.flow.microsoft.com`.
 
-    :::image type="content" source="./media/cancel-resubmit-how-to/http-with-microsoft.png" alt-text="Screenshot that displays the parameters for your flow.":::
+    :::image type="content" source="./media/cancel-resubmit-how-to/http-with-microsoft.png" alt-text="Screenshot that displays parameters for your flow.":::
 
-1. Select **Sign in**.
 1. Sign in to **Power Automate Management**.
 1. In the **Authentication Type** field, select **First Party** from the dropdown menu.
 1. Select **Sign in**. The designer opens.
@@ -82,12 +87,12 @@ Follow these steps to cancel flow runs using a template:
 
 1. In the designer, select **Save** to save the flow.
 1. Select **Run** > **Continue**.
-1. In the **Environment ID** and **Flow ID** fields, enter the environment ID and flow ID.
+1. In the **Environment Id** and **Flow Id** fields, enter the Environment Id and Flow Id you obtained in step 1.
 1. Select **Run Flow**. All flow runs are canceled.  
 
-    :::image type="content" source="./media/cancel-resubmit-how-to/run-flow.png" alt-text="Screenshot of the Rob flow screen that displays the Environment Id and Flow ID.":::
+    :::image type="content" source="./media/cancel-resubmit-how-to/run-flow.png" alt-text="Screenshot of the Rob flow screen that displays the Environment Id and Flow Id.":::
 
-1. To verify, view the **Run history** page.
+1. To verify the cancellation, view the **Run history** page.
 
  
 [!INCLUDE[footer-include](includes/footer-banner.md)]
