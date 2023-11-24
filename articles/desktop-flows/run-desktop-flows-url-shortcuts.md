@@ -104,6 +104,7 @@ For example, the below run URL invokes a desktop flow with text, numeric and boo
 > - Only Text, Numeric and Boolean data types are supported.
 > - The Boolean values are case sensitive, and the value can be either **true** or **false**.
 > - If there are additional flow inputs that are not included in the **inputArguments** parameter, then during the flow run the Power Automate console asks for user input.
+> - The source that invokes the run URL may have a limit of maximum allowed characters, which will cause the flow to fail if that limit is exceeded.
 
 > [!IMPORTANT]
 > - To trigger the run URL through a web browser, **unescape** the **inputArguments** parameter's JSON string value and use **URL encoding** to convert the characters into a valid ASCII format.
