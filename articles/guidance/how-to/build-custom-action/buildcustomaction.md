@@ -2,7 +2,7 @@
 title: How to build custom actions in Power Automate for desktop  | Microsoft Docs
 description: Building custom actions in Power Automate for desktop 
 author: jpad5
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/20/2023
 ms.subservice: guidance
 ms.author: jaypadimiti
@@ -12,31 +12,22 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
-
 ---
 # How to build custom actions in Power Automate for desktop
 
-Enhance Productivity, Reusability, and Extensibility with custom actions in Power Automate for desktop.
-
-This article discusses how [custom actions in Power Automate for desktop](../../../desktop-flows/custom-actions.md) can help makers create their own reusable actions that can be used across multiple flows. Makers can create custom actions by composing a sequence of steps or functions into a new action. Custom actions can be created using the Power Automate for desktop Actions SDK, which provides a set of APIs that allow makers to create custom actions using .NET language C#. Custom actions can also be shared with other users through the custom actions section in Power Automate portal. The article covers detailed walkthroughs of how to create, build, deploy, use, and update custom actions.
+Enhance productivity, reusability, and extensibility with custom actions in Power Automate for desktop. This article discusses how [custom actions in Power Automate for desktop](../../../desktop-flows/custom-actions.md) can help makers create their own reusable actions that can be used across multiple flows. Makers create custom actions by composing a sequence of steps or functions into a new action. Custom actions are created using the Power Automate for desktop actions SDK, which provides a set of APIs that allow makers to create custom actions using .NET language C#. Custom actions can also be shared with other users through the custom actions section in Power Automate (make.powerautomate.com). In this article you'll find detailed walkthroughs of how to create, build, deploy, use, and update custom actions.
 
 ## Overview
 
-Custom actions capability in Power Automate for desktop allows you to create your own reusable actions that can be used across multiple desktop flows. Custom actions can save you time and effort by allowing you to reuse complex or frequently used actions without having to recreate them each time you build a new flow. Makers can apply their existing skills and knowledge to create custom actions that integrate with other systems and services. Additionally, pro-developers can wrap the existing functions or code libraries to make a new custom action that results in increased reusability of organizational assets.
+Custom actions capability in Power Automate for desktop allows you to create your own reusable actions that can be used across multiple desktop flows. Custom actions save you time and effort by allowing you to reuse complex or frequently used actions without having to re-create them each time you build a new flow. Makers can apply their existing skills and knowledge to create custom actions that integrate with other systems and services. Additionally, pro-developers can wrap the existing functions or code libraries to make a new custom action that results in increased reusability of organizational assets.
 
-You create custom actions by composing a sequence of methods or functions into a new action.  Once you create a custom action, you can use it in any desktop flow by dragging and dropping it onto the Power Automate desktop designer canvas.
-Custom actions can also be shared with other users through the custom actions section in Power Automate portal, which provides a central repository for sharing and discovering custom actions. This means that users can benefit from the expertise and knowledge of others in the organization and can easily find and use custom actions created by other makers.
+You create custom actions by composing a sequence of methods or functions into a new action. Once you create a custom action, use it in any desktop flow by dragging and dropping it onto the Power Automate desktop designer canvas.
+
+Custom actions can be shared with other users through the custom actions section in Power Automate, which provides a central repository for sharing and discovering custom actions. This means that users can benefit from the expertise and knowledge of others in the organization and can easily find and use custom actions created by other makers.
 
 Overall, custom actions in Power Automate for desktop provide a powerful way to extend the functionality of the product, streamline the flow-building process, and foster collaboration and innovation within the organization.
 
-### What is covered in this article
-
-1. Create your own custom action
-2. Build the package and deploy your custom action
-3. Use your custom action activity in desktop flow using Power Automate for desktop
-4. Update the activity and redeploy the custom action to reflect the updated capability.
-
-### What you need to get started
+## Prerequisites
 
 - Latest version of Power Automate for desktop – [Install Power Automate – Power Automate | Microsoft Learn](../../../desktop-flows/install.md#install-power-automate-using-the-msi-installer)
 - C# Authoring Tool such as [Visual Studio Community/Professional/Enterprise 2022](https://visualstudio.microsoft.com/vs/) with the .NET desktop development workload
@@ -51,31 +42,29 @@ Overall, custom actions in Power Automate for desktop provide a powerful way to 
   
 ## Create your own custom action
 
-**Step 1**: Open Visual Studio to create a new project using template of Class Library (.NET Framework).
+1. Open Visual Studio to create a new project using template of **Class Library (.NET Framework)**.
+   :::image type="content" source="media/padca-1.png" alt-text="Screenshot of Create C# project dialog box." lightbox="media/padca-1.png" border="true":::
 
-:::image type="content" source="media/padca-1.png" alt-text="Screenshot of Create C# project dialog box." lightbox="media/padca-1.png" border="true":::
+1. Configure your new project with a project name, file location, and set the **Framework** as **.NET Framework 4.7.2**.
+   > [!NOTE]
+   > Make sure to follow the naming conventions. More information:[Custom module name conventions](../../../desktop-flows/create-custom-actions.md#custom-module-name-conventions)
 
-**Step 2**: Configure your new project with project name and location and set the Framework as .NET Framework 4.7.2.
+   :::image type="content" source="media/padca-2.png" alt-text="Screenshot of Create C# class library details." lightbox="media/padca-2.png" border="true":::
 
-Note: Make sure to follow the naming conventions as described in the documentation – [Create custom actions](../../../desktop-flows/create-custom-actions.md)
+1. In Visual Studio, select **Tools** > **NuGet Package Manager** > **Package Manager console**.
 
-:::image type="content" source="media/padca-2.png" alt-text="Screenshot of Create C# class library details." lightbox="media/padca-2.png" border="true":::
+   :::image type="content" source="media/padca-3.png" alt-text="Screenshot of .NET Package Manager." lightbox="media/padca-3.png" border="true":::
 
-**Step 3**: Open Visual Studio’s NuGet Package Manager console
+1. Open a PowerShell window and install NuGet package **PowerAutomate.Desktop.Actions.SDK** using this PowerShell command.
 
-:::image type="content" source="media/padca-3.png" alt-text="Screenshot of .NET Package Manager." lightbox="media/padca-3.png" border="true":::
+   ```powershell
+   Find-Package Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK
+   NuGet\Install-Package Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK
+   ```
 
-**Step 4**: Install NuGet package PowerAutomate.Desktop.Actions.SDK using command.
+1. Follow the steps in the documentation [Create custom actions](../../../desktop-flows/create-custom-actions.md) to create the Class file for your custom action.
 
-```powershell
-Find-Package Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK
-NuGet\Install-Package Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK
-```
-
-:::image type="content" source="media/padca-4-0.png" alt-text="Screenshot of Command to install Actions SDK" lightbox="media/padca-4-0.png" border="true":::
-
-**Step 5**: Follow the steps laid out in the documentation [Create custom actions](../../../desktop-flows/create-custom-actions.md) to create the Class file for your custom action.
-Use the information as reference for your action.
+## Information you can use as reference for your action
 
 Reference solution archive: [.NET Module Solution](https://github.com/jpad5/pad-customaction-logevent/blob/main/ModulesLogEvent.zip)
 
@@ -128,26 +117,26 @@ namespace ModulesLogEvent
 ```
 
 **Resources**:
+<!-- This needs to be, at least in part, in text as screenshots aren't accessible -->
 :::image type="content" source="media/padca-6.png" alt-text="Screenshot of Resources.resx file for a custom module" lightbox="media/padca-6.png" border="true":::
 
 ## Build the package and deploy your custom action
 
-In this part, we'll create the package and deploy it to the Power Automate Portal.
+Create the package and deploy it to Power Automate.
 
-**Step 1**: Acquire the digital certificate so the custom action DLL file can be signed.
+1. Acquire the digital certificate so the custom action DLL file can be signed.
+   > [!NOTE]
+   > Self-signed certificates are only for TEST purposes and are not recommended for production use. For organizational deployment of custom actions in your environment, it is strongly recommended to use a trusted digital certificate as per your organizational > guidelines.
 
-> [!NOTE]
-> Self-signed certificates are only for TEST purposes and are not recommended for production use. For organizational deployment of custom actions in your environment, it is strongly recommended to use a trusted digital certificate as per your organizational > guidelines.
+   > [!TIP]
+   > To streamline the process of developing and using custom actions for Power Automate for desktop across your organization, you can bundle a trusted digital certificate with the Power Automate for desktop installer that is distributed through SCCM/Appstore. > This will enable the certificate to be installed automatically on both makers and unattended runtime machines that require Power Automate for desktop, without any need for additional actions.
 
-> [!TIP]
-> To streamline the process of developing and using custom actions for Power Automate for desktop across your organization, you can bundle a trusted digital certificate with the Power Automate for desktop installer that is distributed through SCCM/Appstore. > This will enable the certificate to be installed automatically on both makers and unattended runtime machines that require Power Automate for desktop, without any need for additional actions.
+   For this example a self-signed certificate is used.
 
-For illustrative purposes, we'll use a self-signed certificate.
+   **Refer**: Sample reference script – [CreateAndImportCertToStore.ps1](https://github.com/jpad5/pad-customaction-logevent/blob/main/CreateAndImportCertToStore.ps1)
 
-**Refer**: Sample reference script – [CreateAndImportCertToStore.ps1](https://github.com/jpad5/pad-customaction-logevent/blob/main/CreateAndImportCertToStore.ps1)
-
-a. Create a self-signed certificate
-
+   1. Create a self-signed certificate.
+<!-- All the screenshots that contain commands from here on need to be replaced with text and preferably with code tags (') surrounding the code. -->
 :::image type="content" source="media/padca-8.png" alt-text="Screenshot of Steps to create self-signed certificate" lightbox="media/padca-8.png" border="true":::
 
 b. Import the certificate into Certificate store
