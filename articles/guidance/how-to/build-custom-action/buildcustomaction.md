@@ -160,8 +160,6 @@ $mypwd = ConvertTo-SecureString -String <YOUR CERT PASSWORD GOES HERE> -Force -A
 ##Export certificate
 $certPFXFile = Export-PfxCertificate -Cert $cert -FilePath $certPFXFileName -Password $mypwd
 $certCERFile = Export-Certificate -Cert $cert -FilePath $certCERFileName -Type CERT -Verbose -Force
-##Import certificate
-Import-Certificate -CertStoreLocation $certStoreLocation -FilePath $certCERFile
 ```
 
    b. Import the certificate into Certificate store
