@@ -15,7 +15,7 @@ search.audienceType:
 ---
 # How to build custom actions in Power Automate for desktop
 
-Enhance productivity, reusability, and extensibility with custom actions in Power Automate for desktop. This article discusses how [custom actions in Power Automate for desktop](../../../desktop-flows/custom-actions.md) can help makers create their own reusable actions that can be used across multiple flows. Makers create custom actions by composing a sequence of steps or functions into a new action. Custom actions are created using the Power Automate for desktop actions SDK, which provides a set of APIs that allow makers to create custom actions using .NET language C#. Custom actions can also be shared with other users through the custom actions section in Power Automate (make.powerautomate.com). In this article you'll find detailed walkthroughs of how to create, build, deploy, use, and update custom actions.
+Enhance productivity, reusability, and extensibility with custom actions in Power Automate for desktop. This article discusses how [custom actions in Power Automate for desktop](../../../desktop-flows/custom-actions.md) can help makers create their own reusable actions that can be used across multiple flows. Makers create custom actions by composing a sequence of steps or functions into a new action. Custom actions are created using the Power Automate for desktop actions SDK, which provides a set of APIs that allow makers to create custom actions using .NET language C#. Custom actions can also be shared with other users through the custom actions section in Power Automate (make.powerautomate.com). In this article, find detailed walkthroughs of how to create, build, deploy, use, and update custom actions.
 
 > [!IMPORTANT]
 > While the essential features utilized in creating custom actions are supported, the provided solutions, assets, and sample scripts mentioned here serve as an example implementation of these features and don't include support.
@@ -32,15 +32,15 @@ Overall, custom actions in Power Automate for desktop provide a powerful way to 
 
 ## Prerequisites
 
-- Latest version of Power Automate for desktop – [Install Power Automate – Power Automate | Microsoft Learn](../../../desktop-flows/install.md#install-power-automate-using-the-msi-installer)
+- Latest version of Power Automate for desktop – [Install Power Automate](../../../desktop-flows/install.md#install-power-automate-using-the-msi-installer)
 - C# Authoring Tool such as [Visual Studio Community/Professional/Enterprise 2022](https://visualstudio.microsoft.com/vs/) with the .NET desktop development workload
 - Custom Actions SDK – [NuGet Gallery | Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK](https://www.nuget.org/packages/Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK/)
 - Digital certificate
-  - Generate a self-signed certificate – [Generate Self-Signed Certificates Overview – .NET | Microsoft Learn](/dotnet/core/additional-tools/self-signed-certificates-guide#with-powershell)
-  - Enterprise deployment – Your organization’s trusted certificate from certificate authority – [Digital signatures and certificates – Office Support (microsoft.com)](https://support.microsoft.com/office/digital-signatures-and-certificates-8186cd15-e7ac-4a16-8597-22bd163e8e96)
+  - Generate a self-signed certificate – [Generate Self-Signed Certificates Overview – .NET](/dotnet/core/additional-tools/self-signed-certificates-guide#with-powershell)
+  - Enterprise deployment – Your organization’s trusted certificate from certificate authority – [Digital signatures and certificates – Office Support](https://support.microsoft.com/office/digital-signatures-and-certificates-8186cd15-e7ac-4a16-8597-22bd163e8e96)
 - SignTool
-  - [Using SignTool to Sign a File – Win32 apps | Microsoft Learn](/windows/win32/seccrypto/using-signtool-to-sign-a-file)
-  - [SignTool | Microsoft Learn](/windows-hardware/drivers/devtest/signtool)
+  - [Using SignTool to Sign a File – Win32 apps](/windows/win32/seccrypto/using-signtool-to-sign-a-file)
+  - [SignTool](/windows-hardware/drivers/devtest/signtool)
 - Windows PowerShell Script (.ps1) – [Create custom actions – Power Automate | Microsoft Learn](../../../desktop-flows/create-custom-actions.md#packaging-everything-in-a-cabinet-file)
   
 ## Create your own custom action
@@ -50,7 +50,7 @@ Overall, custom actions in Power Automate for desktop provide a powerful way to 
 
 1. Configure your new project with a project name, file location, and set the **Framework** as **.NET Framework 4.7.2**.
    > [!NOTE]
-   > Make sure to follow the naming conventions. More information:[Custom module name conventions](../../../desktop-flows/create-custom-actions.md#custom-module-name-conventions)
+   > Make sure to follow the naming conventions. More information: [Custom module name conventions](../../../desktop-flows/create-custom-actions.md#custom-module-name-conventions)
 
    :::image type="content" source="media/padca-2.png" alt-text="Screenshot of Create C# class library details." lightbox="media/padca-2.png" border="true":::
 
@@ -146,7 +146,7 @@ Create the package and deploy to Power Automate.
    > [!TIP]
    > To streamline the process of developing and using custom actions for Power Automate for desktop across your organization, you can bundle a trusted digital certificate with the Power Automate for desktop installer that is distributed through SCCM/Appstore. > This will enable the certificate to be installed automatically on both makers and unattended runtime machines that require Power Automate for desktop, without any need for additional actions.
 
-   For this example a self-signed certificate is used.
+   For this example, a self-signed certificate is used.
 
    1. Create a self-signed certificate using this  script.
 
@@ -212,7 +212,7 @@ More information: [Upload custom actions](../../../desktop-flows/upload-custom-a
 
 1. Inspect the custom action available in the assets library. Notice the action previously created and uploaded to the custom actions section of Power Automate.
 
-   Select **Add** to add this custom action to the Actions section of the designer.
+   Select **Add** to add this custom action to the **Actions** section of the designer.
 
    :::image type="content" source="media/padca-15-new.png" alt-text="Screenshot of Add custom action from Asset Library" lightbox="media/padca-15-new.png" border="true":::
 
@@ -232,10 +232,10 @@ More information: [Upload custom actions](../../../desktop-flows/upload-custom-a
 
 1. Test the flow to see the custom action working in real time.
 
-![Test custom action in Desktop flow](media/PADCustomActionDesktopflowDemo-gif.gif)
+   ![Test custom action in Desktop flow](media/PADCustomActionDesktopflowDemo-gif.gif)
 
 > [!NOTE]
-> Import the certificate used to sign the Cabinet file to the machine used to build desktop flows with custom actions and to each of the runtime machines that will run the desktop flows.
+> Import the certificate used to sign the cabinet file to the machine used to build desktop flows with custom actions and to each of the runtime machines that will run the desktop flows.
 
 Following these steps, a custom action was created, the module packaged into a cabinet file, signed with a trusted certificate, uploaded to the custom action library in Power Automate, a desktop flow to use the custom action created and tested for a successful run.
 
@@ -290,13 +290,7 @@ Update the functionality of the custom action  to reflect the updated capability
    }
    ```
 
-1. Sign the DLL file.
-
-1. Create the cabinet file.
-
-1. Sign the cabinet file.
-
-1. Upload the cabinet file to custom actions section in Power Automate.
+1. Use similar steps described earlier where you sign the DLL file, create the cabinet file, sign the cabinet file, and upload the cabinet file to custom actions section in Power Automate. More information: [Build the package and deploy your custom action](#build-the-package-and-deploy-your-custom-action)
    > [!NOTE]
    > Before uploading the updated custom action cabinet file, make sure to analyze the impact of this change as desktop flows with this action will be updated with new capabilities.
 
@@ -312,6 +306,6 @@ Update the functionality of the custom action  to reflect the updated capability
 
 1. Test the flow to see the updated custom action working in real time.
 
-![Retest the updated custom action in Desktop flow](media/padcustomaction-update-gif.gif)
+   ![Retest the updated custom action in Desktop flow](media/padcustomaction-update-gif.gif)
 
-In this section, we have successfully updated the underlying functionality of the custom action, built the package, deployed to Power Automate portal, refactored the desktop flow, and validated the functionality by running the desktop flow with updated capabilities of the custom action in Power Automate for desktop.
+In this section, you updated the underlying functionality of the custom action, built the package, deployed to Power Automate, refactored the desktop flow, and validated the functionality by running the desktop flow with updated capabilities of the custom action in Power Automate for desktop.
